@@ -1,41 +1,99 @@
 export default function Home() {
+  const navItems = [
+    { label: "Home", href: "#home" },
+    { label: "Industries", href: "#industries" },
+    { label: "Solutions", href: "#solutions" },
+    { label: "About", href: "#about" },
+    { label: "Contact", href: "#contact" },
+  ];
+
+  const cards = [
+    {
+      title: "X-AGRO DRONE",
+      description: "Aerial crop monitoring and mapping",
+      price: "$2,500",
+    },
+    {
+      title: "JETSON MODULE",
+      description: "Edge AI processing power",
+      price: "$799",
+    },
+    {
+      title: "SOIL SENSORS",
+      description: "Climate and soil data sensors",
+      price: "$299",
+    },
+  ];
+
   return (
-    <main className="min-h-screen bg-[#f5f5f2] text-[#111827]">
-      <div className="mx-auto max-w-7xl px-6 py-8">
-        <div className="rounded-[28px] border border-[#e7e5e4] bg-white">
-          <header className="flex items-center justify-between px-8 py-6 md:px-12">
-            <div className="text-lg font-bold tracking-tight">BLACK SCARAB</div>
+    <main className="min-h-screen bg-[#f6f4ef] text-[#111827]">
+      <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+        <div className="overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <header
+            id="home"
+            className="sticky top-0 z-20 border-b border-[#efeae1] bg-white/92 backdrop-blur"
+          >
+            <div className="flex items-center justify-between px-6 py-5 md:px-10">
+              <a href="#home" className="text-base font-bold tracking-tight">
+                BLACK SCARAB
+              </a>
 
-            <nav className="hidden gap-8 text-sm text-[#6b7280] md:flex">
-              <a href="#">Home</a>
-              <a href="#">Industries</a>
-              <a href="#">Solutions</a>
-              <a href="#">About</a>
-              <a href="#">Contact</a>
-            </nav>
+              <nav className="hidden items-center gap-7 text-sm text-[#6b7280] md:flex">
+                {navItems.map((item) => (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="transition hover:text-[#111827]"
+                  >
+                    {item.label}
+                  </a>
+                ))}
+              </nav>
 
-            <a
-              href="#"
-              className="rounded-full border border-[#e5e7eb] px-5 py-3 text-sm font-medium text-[#111827]"
-            >
-              Get Started
-            </a>
+              <a
+                href="#contact"
+                className="rounded-full border border-[#e5e7eb] px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#111827] hover:text-white"
+              >
+                Get Started
+              </a>
+            </div>
           </header>
 
-          <div className="border-t border-[#ececec]" />
-
-          <section className="px-8 py-16 text-center md:px-12 md:py-20">
-            <h1 className="text-4xl font-semibold tracking-tight md:text-6xl">
+          <section className="relative overflow-hidden px-6 py-18 text-center md:px-10 md:py-24">
+            <div className="absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_top,rgba(217,229,210,0.5),transparent_70%)]" />
+            <p className="relative text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
+              Edge AI Systems
+            </p>
+            <h1 className="relative mx-auto mt-5 max-w-4xl text-4xl font-semibold tracking-tight md:text-6xl">
               AI Infrastructure for Industry
             </h1>
-            <p className="mx-auto mt-5 max-w-2xl text-lg text-[#6b7280]">
-              Advanced Edge AI Systems Tailored for Your Business Needs.
+            <p className="relative mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#6b7280]">
+              Advanced Edge AI systems tailored for agriculture, manufacturing,
+              and modern industrial operations.
             </p>
+
+            <div className="relative mt-10 flex flex-wrap items-center justify-center gap-4">
+              <a
+                href="#solutions"
+                className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
+              >
+                Explore Solutions
+              </a>
+              <a
+                href="#contact"
+                className="rounded-full border border-[#e5e7eb] px-6 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
+              >
+                Talk to Us
+              </a>
+            </div>
           </section>
 
-          <section className="border-y border-[#ececec] px-8 py-4 md:px-12">
+          <section
+            id="industries"
+            className="border-y border-[#efeae1] px-6 py-4 md:px-10"
+          >
             <div className="flex flex-wrap items-center justify-center gap-3 text-sm">
-              <div className="rounded-full border border-[#dcdcdc] px-4 py-2 font-medium text-[#111827]">
+              <div className="rounded-full border border-[#d8d4cc] bg-white px-4 py-2 font-medium text-[#111827] shadow-sm">
                 Agriculture
               </div>
               <div className="px-3 py-2 text-[#6b7280]">Manufacturing</div>
@@ -45,67 +103,128 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="px-8 py-14 md:px-12">
+          <section id="solutions" className="px-6 py-14 md:px-10 md:py-18">
             <div className="text-center">
-              <h2 className="text-3xl font-semibold tracking-tight">
+              <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
+                Featured Industry
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
                 Agriculture Technology
               </h2>
               <p className="mt-3 text-lg text-[#6b7280]">
-                Optimize Your Farming Operations.
+                Optimize your farming operations with modular AI infrastructure.
               </p>
             </div>
 
-            <div className="mt-10 overflow-hidden rounded-[22px] border border-[#d9e5d2]">
+            <div className="mt-10 overflow-hidden rounded-[28px] border border-[#dde7d7] bg-[#edf4e8] shadow-[0_14px_40px_rgba(15,23,42,0.08)]">
               <img
                 src="/agriculture-hero.jpg"
                 alt="Agriculture technology system"
-                className="h-[280px] w-full object-cover"
+                className="h-[240px] w-full object-cover sm:h-[320px] lg:h-[360px]"
               />
             </div>
 
-
-            <div className="mt-10 text-center">
-              <h3 className="text-2xl font-semibold">Precision Farming System</h3>
+            <div className="mx-auto mt-10 max-w-3xl text-center">
+              <h3 className="text-2xl font-semibold md:text-3xl">
+                Precision Farming System
+              </h3>
               <p className="mt-3 text-[#6b7280]">
-                Advanced drone, AI computer, and smart sensors for crop monitoring.
+                Advanced drone, AI computer, and smart sensors for crop
+                monitoring, environmental analysis, and intelligent field
+                operations.
               </p>
             </div>
 
-            <div className="mt-8 grid gap-5 md:grid-cols-3">
-              <div className="rounded-2xl border border-[#e5e7eb] bg-white p-6">
-                <p className="text-sm font-bold">X-AGRO DRONE</p>
-                <p className="mt-3 text-sm text-[#6b7280]">
-                  Aerial crop monitoring and mapping
-                </p>
-                <p className="mt-5 text-2xl font-bold">$2,500</p>
-              </div>
-
-              <div className="rounded-2xl border border-[#e5e7eb] bg-white p-6">
-                <p className="text-sm font-bold">JETSON MODULE</p>
-                <p className="mt-3 text-sm text-[#6b7280]">
-                  Edge AI processing power
-                </p>
-                <p className="mt-5 text-2xl font-bold">$799</p>
-              </div>
-
-              <div className="rounded-2xl border border-[#e5e7eb] bg-white p-6">
-                <p className="text-sm font-bold">SOIL SENSORS</p>
-                <p className="mt-3 text-sm text-[#6b7280]">
-                  Climate and soil data sensors
-                </p>
-                <p className="mt-5 text-2xl font-bold">$299</p>
-              </div>
+            <div className="mt-10 grid gap-5 md:grid-cols-3">
+              {cards.map((card) => (
+                <div
+                  key={card.title}
+                  className="rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(15,23,42,0.08)]"
+                >
+                  <p className="text-sm font-bold tracking-wide">{card.title}</p>
+                  <p className="mt-3 text-sm leading-6 text-[#6b7280]">
+                    {card.description}
+                  </p>
+                  <p className="mt-6 text-3xl font-bold tracking-tight">
+                    {card.price}
+                  </p>
+                </div>
+              ))}
             </div>
 
             <div className="mt-10 text-center">
               <a
-                href="#"
-                className="inline-block rounded-full bg-[#1f2937] px-7 py-4 text-sm font-medium text-white"
+                href="#contact"
+                className="inline-block rounded-full bg-[#111827] px-7 py-4 text-sm font-medium text-white transition hover:bg-[#1f2937]"
               >
                 Design My System
               </a>
             </div>
           </section>
+
+          <section
+            id="about"
+            className="grid gap-8 border-t border-[#efeae1] px-6 py-14 md:grid-cols-2 md:px-10"
+          >
+            <div>
+              <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
+                About
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight">
+                Built for real-world industrial deployment
+              </h2>
+            </div>
+
+            <div className="space-y-4 text-[#6b7280]">
+              <p>
+                Black Scarab develops AI infrastructure systems designed for
+                industries that need reliable edge computing, intelligent
+                sensing, and scalable deployment.
+              </p>
+              <p>
+                Instead of generic software, we focus on practical systems that
+                connect hardware, AI, and operations into one deployable
+                solution.
+              </p>
+            </div>
+          </section>
+
+          <section
+            id="contact"
+            className="border-t border-[#efeae1] bg-[#faf8f3] px-6 py-14 md:px-10"
+          >
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
+                Contact
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
+                Start planning your system
+              </h2>
+              <p className="mt-4 text-lg text-[#6b7280]">
+                Ready to build a tailored AI infrastructure solution for your
+                business? Let&apos;s start the conversation.
+              </p>
+
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+                <a
+                  href="mailto:info@blackscarab.ai"
+                  className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
+                >
+                  info@blackscarab.ai
+                </a>
+                <a
+                  href="#home"
+                  className="rounded-full border border-[#ddd7cc] px-6 py-3 text-sm font-medium text-[#111827] transition hover:bg-white"
+                >
+                  Back to Top
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <footer className="border-t border-[#efeae1] px-6 py-6 text-center text-sm text-[#6b7280] md:px-10">
+            © 2026 Black Scarab. AI infrastructure for modern industry.
+          </footer>
         </div>
       </div>
     </main>
