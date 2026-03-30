@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import SiteHeader from "@/components/site-header";
 import { initialIntakeForm, type IntakeForm } from "@/lib/intake";
 
 const STORAGE_KEY = "black-scarab-intake";
@@ -321,27 +321,15 @@ export default function IntakePage() {
   return (
     <main className="min-h-screen bg-[#f6f4ef] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
-        <header className="border-b border-[#efeae1] px-6 py-6 md:px-10">
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <Link href="/" className="flex items-center gap-3">
-              <img
-                src="/black-scarab-mark.png"
-                alt="Black Scarab logo"
-                className="h-8 w-8 object-contain"
-              />
-              <span className="text-base font-bold tracking-tight">
-                BLACK SCARAB
-              </span>
-            </Link>
-
-            <Link
-              href="/"
-              className="rounded-full border border-[#e5e7eb] px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#111827] hover:text-white"
-            >
-              Back to Home
-            </Link>
-          </div>
-        </header>
+        <SiteHeader
+          homeHref="/"
+          navLinks={[
+            { label: "Insights", href: "/insights", isPage: true },
+            { label: "About", href: "/#about", isPage: true },
+          ]}
+          ctaLabel="Back to Home"
+          ctaHref="/"
+        />
 
         <section className="border-b border-[#efeae1] bg-[#faf8f3] px-6 py-10 md:px-10">
           <div className="mx-auto max-w-3xl text-center">

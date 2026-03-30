@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { insights } from "./insights-data";
 import { industries } from "@/lib/industries";
+import SiteHeader from "@/components/site-header";
 
 export default function Home() {
   const navItems = [
@@ -18,76 +19,14 @@ export default function Home() {
     <main className="min-h-screen bg-[#f6f4ef] text-[#111827]">
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
         <div className="overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
-          <header
-            id="home"
-            className="sticky top-0 z-20 border-b border-[#efeae1] bg-white/92 backdrop-blur"
-          >
-            <div className="flex items-center justify-between px-6 py-5 md:px-10">
-              <a href="#home" className="flex items-center gap-3">
-                <img
-                  src="/black-scarab-mark.png"
-                  alt="Black Scarab logo"
-                  className="h-8 w-8 object-contain"
-                />
-                <span className="text-base font-bold tracking-tight">
-                  BLACK SCARAB
-                </span>
-              </a>
-
-              <nav className="hidden items-center gap-7 text-sm text-[#6b7280] md:flex">
-                <div className="group relative">
-                  <button
-                    type="button"
-                    className="flex items-center gap-1.5 transition hover:text-[#111827]"
-                  >
-                    Industries
-                    <span className="text-sm leading-none text-[#8b9385]">⌄</span>
-                  </button>
-
-                  <div className="invisible absolute left-1/2 top-full z-30 mt-4 w-72 -translate-x-1/2 rounded-[20px] border border-[#e8e4dc] bg-white p-3 opacity-0 shadow-[0_18px_44px_rgba(15,23,42,0.08)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
-                    <div className="grid gap-1">
-                      {industries.map((industry) => (
-                        <Link
-                          key={industry.slug}
-                          href={`/industries/${industry.slug}`}
-                          className="rounded-2xl px-4 py-3 text-left text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
-                        >
-                          {industry.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                {navItems.map((item) => (
-                  item.isPage ? (
-                    <Link
-                      key={item.label}
-                      href={item.href}
-                      className="transition hover:text-[#111827]"
-                    >
-                      {item.label}
-                    </Link>
-                  ) : (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    className="transition hover:text-[#111827]"
-                  >
-                    {item.label}
-                  </a>
-                  )
-                ))}
-              </nav>
-
-              <a
-                href="/intake"
-                className="rounded-full border border-[#e5e7eb] px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#111827] hover:text-white"
-              >
-                Get Started
-              </a>
-            </div>
-          </header>
+          <div id="home">
+            <SiteHeader
+              homeHref="/"
+              navLinks={navItems}
+              ctaLabel="Get Started"
+              ctaHref="/intake"
+            />
+          </div>
 
           <section className="relative overflow-hidden px-6 py-18 text-center md:px-10 md:py-24">
             <div className="absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_top,rgba(217,229,210,0.5),transparent_70%)]" />

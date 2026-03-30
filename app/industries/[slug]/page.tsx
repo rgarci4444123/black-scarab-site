@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import SiteHeader from "@/components/site-header";
 import { getIndustryBySlug, industries } from "@/lib/industries";
 
 type Props = {
@@ -38,59 +39,15 @@ export default async function IndustryPage({ params }: Props) {
   return (
     <main className="min-h-screen bg-[#f6f4ef] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
-        <header className="border-b border-[#efeae1] px-6 py-6 md:px-10">
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <Link href="/" className="flex items-center gap-3">
-              <img
-                src="/black-scarab-mark.png"
-                alt="Black Scarab logo"
-                className="h-8 w-8 object-contain"
-              />
-              <span className="text-base font-bold tracking-tight">
-                BLACK SCARAB
-              </span>
-            </Link>
-
-            <div className="flex flex-wrap items-center gap-3">
-              <div className="group relative hidden md:block">
-                <button
-                  type="button"
-                  className="flex items-center gap-2 rounded-full border border-[#ddd7cc] px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
-                >
-                  Industries
-                  <span className="text-xs">▼</span>
-                </button>
-
-                <div className="invisible absolute right-0 top-full z-30 mt-4 w-72 rounded-[20px] border border-[#e8e4dc] bg-white p-3 opacity-0 shadow-[0_18px_44px_rgba(15,23,42,0.08)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
-                  <div className="grid gap-1">
-                    {industries.map((item) => (
-                      <Link
-                        key={item.slug}
-                        href={`/industries/${item.slug}`}
-                        className="rounded-2xl px-4 py-3 text-left text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
-                      >
-                        {item.label}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              <Link
-                href="/insights"
-                className="rounded-full border border-[#ddd7cc] px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
-              >
-                Insights
-              </Link>
-              <Link
-                href="/intake"
-                className="rounded-full bg-[#111827] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
-              >
-                Get Started
-              </Link>
-            </div>
-          </div>
-        </header>
+        <SiteHeader
+          homeHref="/"
+          navLinks={[
+            { label: "Insights", href: "/insights", isPage: true },
+            { label: "About", href: "/#about", isPage: true },
+          ]}
+          ctaLabel="Get Started"
+          ctaHref="/intake"
+        />
 
         <section className="border-b border-[#efeae1] bg-[#faf8f3] px-6 py-14 md:px-10 md:py-18">
           <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
