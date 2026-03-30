@@ -35,7 +35,7 @@ export default function CatalogPage() {
               {products.length} seeded products
             </div>
             <div className="rounded-full border border-[#ddd7cc] bg-white px-4 py-2 text-sm font-medium text-[#111827]">
-              4 infrastructure categories
+              5 infrastructure categories
             </div>
             <div className="rounded-full border border-[#ddd7cc] bg-white px-4 py-2 text-sm font-medium text-[#111827]">
               Industry-based evaluation
