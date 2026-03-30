@@ -153,13 +153,6 @@ export default function CatalogClient() {
                     </span>
                   ))}
                 </div>
-
-                <p className="mt-6 text-sm font-medium text-[#111827]">
-                  View product brief
-                </p>
-                <p className="mt-2 text-xs text-[#6b7280]">
-                  Outbound link ready for affiliate routing later
-                </p>
               </div>
             </Link>
           ))}
