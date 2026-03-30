@@ -50,10 +50,23 @@ export default function SiteHeader({
             <div className="group relative">
               <button
                 type="button"
-                className="flex items-center gap-1 transition hover:text-[#111827]"
+                className="inline-flex items-center gap-1 align-middle transition hover:text-[#111827]"
               >
                 <span>Industries</span>
-                <span className="text-xs leading-none text-[#8b9385]">⌄</span>
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 10 6"
+                  className="mt-px h-[5px] w-[9px] text-[#8b9385]"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L5 5L9 1"
+                    stroke="currentColor"
+                    strokeWidth="1.25"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </button>
 
               <div className="invisible absolute left-1/2 top-full z-30 mt-4 w-72 -translate-x-1/2 rounded-[20px] border border-[#e8e4dc] bg-white p-3 opacity-0 shadow-[0_18px_44px_rgba(15,23,42,0.08)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
