@@ -10,6 +10,7 @@ export default function InsightsPage() {
           homeHref="/"
           navLinks={[
             { label: "Catalog", href: "/catalog", isPage: true },
+            { label: "Models", href: "/models", isPage: true },
             { label: "About", href: "/#about", isPage: true },
           ]}
           ctaLabel="Get Started"

@@ -18,6 +18,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
+      url: `${baseUrl}/models`,
+      lastModified: new Date(),
+    },
+    {
       url: `${baseUrl}/intake`,
       lastModified: new Date(),
     },
