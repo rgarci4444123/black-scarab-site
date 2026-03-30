@@ -1,7 +1,8 @@
 export type IndustryCard = {
   title: string;
   description: string;
-  price: string;
+  detail: string;
+  href: string;
 };
 
 export type IndustryDevice = {
@@ -59,19 +60,22 @@ export const industries: IndustryData[] = [
     cta: "Design My System",
     cards: [
       {
-        title: "X-AGRO DRONE",
-        description: "Aerial crop monitoring and mapping",
-        price: "$2,500",
+        title: "DJI Mavic 3M",
+        description: "Multispectral aerial intelligence for crop monitoring and field analysis.",
+        detail: "Aerial",
+        href: "/catalog/dji-mavic-3m",
       },
       {
-        title: "JETSON MODULE",
-        description: "Edge AI processing power",
-        price: "$799",
+        title: "NVIDIA Jetson Orin NX",
+        description: "Compact edge compute for on-site inference in agricultural deployments.",
+        detail: "Compute",
+        href: "/catalog/nvidia-jetson-orin-nx",
       },
       {
-        title: "SOIL SENSORS",
-        description: "Climate and soil data sensors",
-        price: "$299",
+        title: "Soil Sensor Network",
+        description: "Continuous soil and environmental telemetry for precision agriculture.",
+        detail: "Sensors",
+        href: "/catalog/soil-sensor-network",
       },
     ],
     overview:
@@ -139,19 +143,22 @@ export const industries: IndustryData[] = [
     cta: "Design My Logistics Stack",
     cards: [
       {
-        title: "FLEET EDGE NODE",
-        description: "Vehicle-side compute for real-time decisions",
-        price: "$1,250",
+        title: "Dell Edge Gateway 5200",
+        description: "Industrial edge gateway for telemetry, device integration, and local processing.",
+        detail: "Compute",
+        href: "/catalog/dell-edge-gateway-5200",
       },
       {
-        title: "SMART VISION CAMERA",
-        description: "On-route monitoring and event detection",
-        price: "$480",
+        title: "Starlink Terminal",
+        description: "Satellite backhaul for remote routes and distributed logistics sites.",
+        detail: "Connectivity",
+        href: "/catalog/starlink-terminal",
       },
       {
-        title: "OPERATIONS DASHBOARD",
-        description: "Centralized fleet intelligence and alerts",
-        price: "$899",
+        title: "Cradlepoint 5G Router",
+        description: "Resilient WAN connectivity for mobile and branch logistics systems.",
+        detail: "Connectivity",
+        href: "/catalog/cradlepoint-5g-router",
       },
     ],
     overview:
@@ -219,19 +226,22 @@ export const industries: IndustryData[] = [
     cta: "Design My Factory Stack",
     cards: [
       {
-        title: "VISION INSPECTION UNIT",
-        description: "Real-time quality control at the edge",
-        price: "$1,499",
+        title: "Basler ace Camera",
+        description: "Industrial machine vision for quality inspection and production monitoring.",
+        detail: "Vision",
+        href: "/catalog/basler-ace-camera",
       },
       {
-        title: "INDUSTRIAL AI NODE",
-        description: "Localized inference for robotics and sensors",
-        price: "$1,099",
+        title: "NVIDIA Jetson AGX Orin",
+        description: "High-throughput embedded AI compute for demanding factory workloads.",
+        detail: "Compute",
+        href: "/catalog/nvidia-jetson-agx-orin",
       },
       {
-        title: "LINE ANALYTICS SUITE",
-        description: "Production visibility and operational alerts",
-        price: "$950",
+        title: "Intel RealSense D455",
+        description: "Depth sensing for spatial analytics, robotics, and workstation awareness.",
+        detail: "Vision",
+        href: "/catalog/intel-realsense-d455",
       },
     ],
     overview:
@@ -299,19 +309,22 @@ export const industries: IndustryData[] = [
     cta: "Design My Healthcare System",
     cards: [
       {
-        title: "PORTABLE AI DEVICE",
-        description: "On-device inference for remote diagnostics",
-        price: "$1,350",
+        title: "NVIDIA Jetson AGX Orin",
+        description: "Embedded AI platform for portable diagnostics and advanced local inference.",
+        detail: "Compute",
+        href: "/catalog/nvidia-jetson-agx-orin",
       },
       {
-        title: "SMART HEALTH SENSOR",
-        description: "Continuous vital monitoring at the edge",
-        price: "$420",
+        title: "Bosch Environmental Sensor Suite",
+        description: "Low-power sensor context for room conditions and distributed monitoring.",
+        detail: "Sensors",
+        href: "/catalog/bosch-environmental-sensor-suite",
       },
       {
-        title: "CARE RESPONSE PORTAL",
-        description: "Clinical insights and distributed coordination",
-        price: "$780",
+        title: "FLIR Boson Thermal",
+        description: "Specialized thermal sensing for safety, screening, and low-visibility environments.",
+        detail: "Vision",
+        href: "/catalog/flir-boson-thermal",
       },
     ],
     overview:
@@ -379,19 +392,22 @@ export const industries: IndustryData[] = [
     cta: "Design My Retail Stack",
     cards: [
       {
-        title: "STORE VISION NODE",
-        description: "Foot traffic and in-store movement awareness",
-        price: "$1,150",
+        title: "Intel RealSense D455",
+        description: "Depth-aware vision for occupancy, movement, and in-store analytics.",
+        detail: "Vision",
+        href: "/catalog/intel-realsense-d455",
       },
       {
-        title: "SMART SENSOR GRID",
-        description: "Localized monitoring for real-time operations",
-        price: "$520",
+        title: "Bosch Environmental Sensor Suite",
+        description: "Sensor context for climate, motion, and store operating conditions.",
+        detail: "Sensors",
+        href: "/catalog/bosch-environmental-sensor-suite",
       },
       {
-        title: "RETAIL INTELLIGENCE HUB",
-        description: "Actionable insights across storefronts",
-        price: "$890",
+        title: "Cradlepoint 5G Router",
+        description: "Reliable connectivity for distributed storefront systems and branch deployments.",
+        detail: "Connectivity",
+        href: "/catalog/cradlepoint-5g-router",
       },
     ],
     overview:

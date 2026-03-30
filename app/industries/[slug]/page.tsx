@@ -131,18 +131,19 @@ export default async function IndustryPage({ params }: Props) {
 
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {industry.cards.map((card) => (
-              <div
+              <Link
                 key={card.title}
+                href={card.href}
                 className="rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]"
               >
                 <p className="text-sm font-bold tracking-wide">{card.title}</p>
                 <p className="mt-3 text-sm leading-6 text-[#6b7280]">
                   {card.description}
                 </p>
-                <p className="mt-6 text-3xl font-bold tracking-tight">
-                  {card.price}
+                <p className="mt-6 text-sm font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">
+                  {card.detail}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
