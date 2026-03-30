@@ -464,7 +464,24 @@ export default function Home() {
           </section>
 
           <footer className="border-t border-[#efeae1] px-6 py-6 text-center text-sm text-[#6b7280] md:px-10">
-            © 2026 Black Scarab. AI infrastructure for modern industry.
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <span>© 2026 Black Scarab. AI infrastructure for modern industry.</span>
+              <span className="text-[#c9c1b5]">|</span>
+              <span>Based in Miami, FL</span>
+              <span className="text-[#c9c1b5]">|</span>
+              <a href="mailto:info@blackscarab.ai" className="transition hover:text-[#111827]">
+                info@blackscarab.ai
+              </a>
+              <span className="text-[#c9c1b5]">|</span>
+              <a
+                href="https://www.linkedin.com/company/black-scarab/"
+                target="_blank"
+                rel="noreferrer"
+                className="transition hover:text-[#111827]"
+              >
+                LinkedIn
+              </a>
+            </div>
           </footer>
         </div>
       </div>
