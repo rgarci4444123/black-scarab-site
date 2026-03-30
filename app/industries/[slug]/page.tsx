@@ -52,6 +52,30 @@ export default async function IndustryPage({ params }: Props) {
             </Link>
 
             <div className="flex flex-wrap items-center gap-3">
+              <div className="group relative hidden md:block">
+                <button
+                  type="button"
+                  className="flex items-center gap-2 rounded-full border border-[#ddd7cc] px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
+                >
+                  Industries
+                  <span className="text-xs">▼</span>
+                </button>
+
+                <div className="invisible absolute right-0 top-full z-30 mt-4 w-72 rounded-[20px] border border-[#e8e4dc] bg-white p-3 opacity-0 shadow-[0_18px_44px_rgba(15,23,42,0.08)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
+                  <div className="grid gap-1">
+                    {industries.map((item) => (
+                      <Link
+                        key={item.slug}
+                        href={`/industries/${item.slug}`}
+                        className="rounded-2xl px-4 py-3 text-left text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
               <Link
                 href="/insights"
                 className="rounded-full border border-[#ddd7cc] px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"

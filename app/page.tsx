@@ -8,7 +8,6 @@ import { industries } from "@/lib/industries";
 export default function Home() {
   const navItems = [
     { label: "Home", href: "#home" },
-    { label: "Industries", href: "#industries" },
     { label: "Solutions", href: "#solutions" },
     { label: "About", href: "#about" },
     { label: "Contact", href: "#contact" },
@@ -38,6 +37,30 @@ export default function Home() {
               </a>
 
               <nav className="hidden items-center gap-7 text-sm text-[#6b7280] md:flex">
+                <div className="group relative">
+                  <button
+                    type="button"
+                    className="flex items-center gap-2 transition hover:text-[#111827]"
+                  >
+                    Industries
+                    <span className="text-xs">▼</span>
+                  </button>
+
+                  <div className="invisible absolute left-1/2 top-full z-30 mt-4 w-72 -translate-x-1/2 rounded-[20px] border border-[#e8e4dc] bg-white p-3 opacity-0 shadow-[0_18px_44px_rgba(15,23,42,0.08)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
+                    <div className="grid gap-1">
+                      {industries.map((industry) => (
+                        <Link
+                          key={industry.slug}
+                          href={`/industries/${industry.slug}`}
+                          className="rounded-2xl px-4 py-3 text-left text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
+                        >
+                          {industry.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
                 {navItems.map((item) => (
                   <a
                     key={item.label}
@@ -138,12 +161,6 @@ export default function Home() {
               <p className="mt-3 text-[#6b7280]">
                 {activeIndustry.solutionDescription}
               </p>
-              <Link
-                href={`/industries/${activeIndustry.slug}`}
-                className="mt-5 inline-block text-sm font-medium text-[#111827] underline-offset-4 transition hover:underline"
-              >
-                View {activeIndustry.label} industry page
-              </Link>
             </div>
 
             <div className="mt-10 grid gap-5 md:grid-cols-3">
