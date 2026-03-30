@@ -3,183 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { insights } from "./insights-data";
-
-type IndustryCard = {
-  title: string;
-  description: string;
-  price: string;
-};
-
-type Industry = {
-  key: string;
-  label: string;
-  eyebrow: string;
-  title: string;
-  subtitle: string;
-  image: string;
-  imageAlt: string;
-  solutionTitle: string;
-  solutionDescription: string;
-  cta: string;
-  cards: IndustryCard[];
-};
-
-const industries: Industry[] = [
-  {
-    key: "agriculture",
-    label: "Agriculture",
-    eyebrow: "Featured Industry",
-    title: "Agriculture Technology",
-    subtitle: "Optimize your farming operations with modular AI infrastructure.",
-    image: "/agriculture-hero.jpg",
-    imageAlt: "Agriculture technology system",
-    solutionTitle: "Precision Farming System",
-    solutionDescription:
-      "Advanced drone, AI computer, and smart sensors for crop monitoring, environmental analysis, and intelligent field operations.",
-    cta: "Design My System",
-    cards: [
-      {
-        title: "X-AGRO DRONE",
-        description: "Aerial crop monitoring and mapping",
-        price: "$2,500",
-      },
-      {
-        title: "JETSON MODULE",
-        description: "Edge AI processing power",
-        price: "$799",
-      },
-      {
-        title: "SOIL SENSORS",
-        description: "Climate and soil data sensors",
-        price: "$299",
-      },
-    ],
-  },
-  {
-    key: "logistics",
-    label: "Transportation & Logistics",
-    eyebrow: "Featured Industry",
-    title: "Transportation & Logistics",
-    subtitle:
-      "Improve fleet responsiveness with localized intelligence at the edge.",
-    image: "/logistics-hero.jpg",
-    imageAlt: "Transportation and logistics edge AI illustration",
-    solutionTitle: "Reflexive Fleet System",
-    solutionDescription:
-      "Edge AI systems for routing visibility, fleet monitoring, and real-time decision support across logistics networks.",
-    cta: "Design My Logistics Stack",
-    cards: [
-      {
-        title: "FLEET EDGE NODE",
-        description: "Vehicle-side compute for real-time decisions",
-        price: "$1,250",
-      },
-      {
-        title: "SMART VISION CAMERA",
-        description: "On-route monitoring and event detection",
-        price: "$480",
-      },
-      {
-        title: "OPERATIONS DASHBOARD",
-        description: "Centralized fleet intelligence and alerts",
-        price: "$899",
-      },
-    ],
-  },
-  {
-    key: "manufacturing",
-    label: "Manufacturing",
-    eyebrow: "Featured Industry",
-    title: "Manufacturing Intelligence",
-    subtitle:
-      "Bring edge AI directly onto the factory floor for faster operational insight.",
-    image: "/manufacturing-hero.jpg",
-    imageAlt: "Manufacturing edge AI system",
-    solutionTitle: "Autonomous Factory Stack",
-    solutionDescription:
-      "Machine vision, edge compute, and industrial monitoring systems built for nearshoring-era factories across LatAm.",
-    cta: "Design My Factory Stack",
-    cards: [
-      {
-        title: "VISION INSPECTION UNIT",
-        description: "Real-time quality control at the edge",
-        price: "$1,499",
-      },
-      {
-        title: "INDUSTRIAL AI NODE",
-        description: "Localized inference for robotics and sensors",
-        price: "$1,099",
-      },
-      {
-        title: "LINE ANALYTICS SUITE",
-        description: "Production visibility and operational alerts",
-        price: "$950",
-      },
-    ],
-  },
-  {
-    key: "healthcare",
-    label: "Healthcare",
-    eyebrow: "Featured Industry",
-    title: "Decentralized Healthcare Systems",
-    subtitle:
-      "Push intelligence closer to care with portable, edge-powered medical systems.",
-    image: "/healthcare-hero.jpg",
-    imageAlt: "Healthcare edge AI system",
-    solutionTitle: "Mobile Diagnostics Platform",
-    solutionDescription:
-      "Edge AI for handheld diagnostics, rural monitoring, and decentralized care delivery where connectivity is limited.",
-    cta: "Design My Healthcare System",
-    cards: [
-      {
-        title: "PORTABLE AI DEVICE",
-        description: "On-device inference for remote diagnostics",
-        price: "$1,350",
-      },
-      {
-        title: "SMART HEALTH SENSOR",
-        description: "Continuous vital monitoring at the edge",
-        price: "$420",
-      },
-      {
-        title: "CARE RESPONSE PORTAL",
-        description: "Clinical insights and distributed coordination",
-        price: "$780",
-      },
-    ],
-  },
-  {
-    key: "retail",
-    label: "Retail",
-    eyebrow: "Featured Industry",
-    title: "Responsive Retail Infrastructure",
-    subtitle:
-      "Make physical storefronts smarter with localized intelligence and faster operational feedback.",
-    image: "/retail-hero.jpg",
-    imageAlt: "Retail edge AI system",
-    solutionTitle: "Responsive Storefront Platform",
-    solutionDescription:
-      "Edge AI for occupancy awareness, storefront intelligence, and real-time retail operations across distributed locations.",
-    cta: "Design My Retail Stack",
-    cards: [
-      {
-        title: "STORE VISION NODE",
-        description: "Foot traffic and in-store movement awareness",
-        price: "$1,150",
-      },
-      {
-        title: "SMART SENSOR GRID",
-        description: "Localized monitoring for real-time operations",
-        price: "$520",
-      },
-      {
-        title: "RETAIL INTELLIGENCE HUB",
-        description: "Actionable insights across storefronts",
-        price: "$890",
-      },
-    ],
-  },
-];
+import { industries } from "@/lib/industries";
 
 export default function Home() {
   const navItems = [
@@ -314,6 +138,12 @@ export default function Home() {
               <p className="mt-3 text-[#6b7280]">
                 {activeIndustry.solutionDescription}
               </p>
+              <Link
+                href={`/industries/${activeIndustry.slug}`}
+                className="mt-5 inline-block text-sm font-medium text-[#111827] underline-offset-4 transition hover:underline"
+              >
+                View {activeIndustry.label} industry page
+              </Link>
             </div>
 
             <div className="mt-10 grid gap-5 md:grid-cols-3">
