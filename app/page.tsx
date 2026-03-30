@@ -1,5 +1,185 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 import { insights } from "./insights-data";
+
+type IndustryCard = {
+  title: string;
+  description: string;
+  price: string;
+};
+
+type Industry = {
+  key: string;
+  label: string;
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  image: string;
+  imageAlt: string;
+  solutionTitle: string;
+  solutionDescription: string;
+  cta: string;
+  cards: IndustryCard[];
+};
+
+const industries: Industry[] = [
+  {
+    key: "agriculture",
+    label: "Agriculture",
+    eyebrow: "Featured Industry",
+    title: "Agriculture Technology",
+    subtitle: "Optimize your farming operations with modular AI infrastructure.",
+    image: "/agriculture-hero.jpg",
+    imageAlt: "Agriculture technology system",
+    solutionTitle: "Precision Farming System",
+    solutionDescription:
+      "Advanced drone, AI computer, and smart sensors for crop monitoring, environmental analysis, and intelligent field operations.",
+    cta: "Design My System",
+    cards: [
+      {
+        title: "X-AGRO DRONE",
+        description: "Aerial crop monitoring and mapping",
+        price: "$2,500",
+      },
+      {
+        title: "JETSON MODULE",
+        description: "Edge AI processing power",
+        price: "$799",
+      },
+      {
+        title: "SOIL SENSORS",
+        description: "Climate and soil data sensors",
+        price: "$299",
+      },
+    ],
+  },
+  {
+    key: "logistics",
+    label: "Transportation & Logistics",
+    eyebrow: "Featured Industry",
+    title: "Transportation & Logistics",
+    subtitle:
+      "Improve fleet responsiveness with localized intelligence at the edge.",
+    image: "/article-images/logistics-latam.png",
+    imageAlt: "Transportation and logistics edge AI illustration",
+    solutionTitle: "Reflexive Fleet System",
+    solutionDescription:
+      "Edge AI systems for routing visibility, fleet monitoring, and real-time decision support across logistics networks.",
+    cta: "Design My Logistics Stack",
+    cards: [
+      {
+        title: "FLEET EDGE NODE",
+        description: "Vehicle-side compute for real-time decisions",
+        price: "$1,250",
+      },
+      {
+        title: "SMART VISION CAMERA",
+        description: "On-route monitoring and event detection",
+        price: "$480",
+      },
+      {
+        title: "OPERATIONS DASHBOARD",
+        description: "Centralized fleet intelligence and alerts",
+        price: "$899",
+      },
+    ],
+  },
+  {
+    key: "manufacturing",
+    label: "Manufacturing",
+    eyebrow: "Featured Industry",
+    title: "Manufacturing Intelligence",
+    subtitle:
+      "Bring edge AI directly onto the factory floor for faster operational insight.",
+    image: "/article-images/manufacturing-latam.png",
+    imageAlt: "Manufacturing edge AI system",
+    solutionTitle: "Autonomous Factory Stack",
+    solutionDescription:
+      "Machine vision, edge compute, and industrial monitoring systems built for nearshoring-era factories across LatAm.",
+    cta: "Design My Factory Stack",
+    cards: [
+      {
+        title: "VISION INSPECTION UNIT",
+        description: "Real-time quality control at the edge",
+        price: "$1,499",
+      },
+      {
+        title: "INDUSTRIAL AI NODE",
+        description: "Localized inference for robotics and sensors",
+        price: "$1,099",
+      },
+      {
+        title: "LINE ANALYTICS SUITE",
+        description: "Production visibility and operational alerts",
+        price: "$950",
+      },
+    ],
+  },
+  {
+    key: "healthcare",
+    label: "Healthcare",
+    eyebrow: "Featured Industry",
+    title: "Decentralized Healthcare Systems",
+    subtitle:
+      "Push intelligence closer to care with portable, edge-powered medical systems.",
+    image: "/article-images/healthcare-latam.png",
+    imageAlt: "Healthcare edge AI system",
+    solutionTitle: "Mobile Diagnostics Platform",
+    solutionDescription:
+      "Edge AI for handheld diagnostics, rural monitoring, and decentralized care delivery where connectivity is limited.",
+    cta: "Design My Healthcare System",
+    cards: [
+      {
+        title: "PORTABLE AI DEVICE",
+        description: "On-device inference for remote diagnostics",
+        price: "$1,350",
+      },
+      {
+        title: "SMART HEALTH SENSOR",
+        description: "Continuous vital monitoring at the edge",
+        price: "$420",
+      },
+      {
+        title: "CARE RESPONSE PORTAL",
+        description: "Clinical insights and distributed coordination",
+        price: "$780",
+      },
+    ],
+  },
+  {
+    key: "retail",
+    label: "Retail",
+    eyebrow: "Featured Industry",
+    title: "Responsive Retail Infrastructure",
+    subtitle:
+      "Make physical storefronts smarter with localized intelligence and faster operational feedback.",
+    image: "/article-images/retail-latam.png",
+    imageAlt: "Retail edge AI system",
+    solutionTitle: "Responsive Storefront Platform",
+    solutionDescription:
+      "Edge AI for occupancy awareness, storefront intelligence, and real-time retail operations across distributed locations.",
+    cta: "Design My Retail Stack",
+    cards: [
+      {
+        title: "STORE VISION NODE",
+        description: "Foot traffic and in-store movement awareness",
+        price: "$1,150",
+      },
+      {
+        title: "SMART SENSOR GRID",
+        description: "Localized monitoring for real-time operations",
+        price: "$520",
+      },
+      {
+        title: "RETAIL INTELLIGENCE HUB",
+        description: "Actionable insights across storefronts",
+        price: "$890",
+      },
+    ],
+  },
+];
 
 export default function Home() {
   const navItems = [
@@ -10,25 +190,8 @@ export default function Home() {
     { label: "Contact", href: "#contact" },
   ];
 
-  const cards = [
-    {
-      title: "X-AGRO DRONE",
-      description: "Aerial crop monitoring and mapping",
-      price: "$2,500",
-    },
-    {
-      title: "JETSON MODULE",
-      description: "Edge AI processing power",
-      price: "$799",
-    },
-    {
-      title: "SOIL SENSORS",
-      description: "Climate and soil data sensors",
-      price: "$299",
-    },
-  ];
-
   const featuredInsights = insights.slice(0, 3);
+  const [activeIndustry, setActiveIndustry] = useState(industries[0]);
 
   return (
     <main className="min-h-screen bg-[#f6f4ef] text-[#111827]">
@@ -108,52 +271,59 @@ export default function Home() {
             className="border-y border-[#efeae1] px-6 py-4 md:px-10"
           >
             <div className="flex flex-wrap items-center justify-center gap-3 text-sm">
-              <div className="px-3 py-2 text-[#6b7280]">
-                Transportation &amp; Logistics
-              </div>
-              <div className="rounded-full border border-[#d8d4cc] bg-white px-4 py-2 font-medium text-[#111827] shadow-sm">
-                Agriculture
-              </div>
-              <div className="px-3 py-2 text-[#6b7280]">Manufacturing</div>
-              <div className="px-3 py-2 text-[#6b7280]">Healthcare</div>
-              <div className="px-3 py-2 text-[#6b7280]">Retail</div>
+              {industries.map((industry) => {
+                const isActive = industry.key === activeIndustry.key;
+
+                return (
+                  <button
+                    key={industry.key}
+                    type="button"
+                    onClick={() => setActiveIndustry(industry)}
+                    className={
+                      isActive
+                        ? "rounded-full border border-[#d8d4cc] bg-white px-4 py-2 font-medium text-[#111827] shadow-sm"
+                        : "px-3 py-2 text-[#6b7280] transition hover:text-[#111827]"
+                    }
+                  >
+                    {industry.label}
+                  </button>
+                );
+              })}
             </div>
           </section>
 
           <section id="solutions" className="px-6 py-14 md:px-10 md:py-18">
             <div className="text-center">
               <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-                Featured Industry
+                {activeIndustry.eyebrow}
               </p>
               <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-                Agriculture Technology
+                {activeIndustry.title}
               </h2>
               <p className="mt-3 text-lg text-[#6b7280]">
-                Optimize your farming operations with modular AI infrastructure.
+                {activeIndustry.subtitle}
               </p>
             </div>
 
             <div className="mt-10 overflow-hidden rounded-[28px] border border-[#dde7d7] bg-[#edf4e8] shadow-[0_14px_40px_rgba(15,23,42,0.08)]">
               <img
-                src="/agriculture-hero.jpg"
-                alt="Agriculture technology system"
+                src={activeIndustry.image}
+                alt={activeIndustry.imageAlt}
                 className="h-[240px] w-full object-cover sm:h-[320px] lg:h-[360px]"
               />
             </div>
 
             <div className="mx-auto mt-10 max-w-3xl text-center">
               <h3 className="text-2xl font-semibold md:text-3xl">
-                Precision Farming System
+                {activeIndustry.solutionTitle}
               </h3>
               <p className="mt-3 text-[#6b7280]">
-                Advanced drone, AI computer, and smart sensors for crop
-                monitoring, environmental analysis, and intelligent field
-                operations.
+                {activeIndustry.solutionDescription}
               </p>
             </div>
 
             <div className="mt-10 grid gap-5 md:grid-cols-3">
-              {cards.map((card) => (
+              {activeIndustry.cards.map((card) => (
                 <div
                   key={card.title}
                   className="rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(15,23,42,0.08)]"
@@ -174,7 +344,7 @@ export default function Home() {
                 href="#contact"
                 className="inline-block rounded-full bg-[#111827] px-7 py-4 text-sm font-medium text-white transition hover:bg-[#1f2937]"
               >
-                Design My System
+                {activeIndustry.cta}
               </a>
             </div>
           </section>
@@ -248,18 +418,18 @@ export default function Home() {
                     />
                   ) : null}
                   <div className="p-6">
-                  <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
-                    {insight.published}
-                  </p>
-                  <h3 className="mt-4 text-2xl font-semibold tracking-tight">
-                    {insight.title}
-                  </h3>
-                  <p className="mt-4 text-sm leading-6 text-[#6b7280]">
-                    {insight.summary}
-                  </p>
-                  <p className="mt-6 text-sm font-medium text-[#111827]">
-                    Read on LinkedIn
-                  </p>
+                    <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
+                      {insight.published}
+                    </p>
+                    <h3 className="mt-4 text-2xl font-semibold tracking-tight">
+                      {insight.title}
+                    </h3>
+                    <p className="mt-4 text-sm leading-6 text-[#6b7280]">
+                      {insight.summary}
+                    </p>
+                    <p className="mt-6 text-sm font-medium text-[#111827]">
+                      Read on LinkedIn
+                    </p>
                   </div>
                 </a>
               ))}
