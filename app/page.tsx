@@ -108,13 +108,15 @@ export default function Home() {
             className="border-y border-[#efeae1] px-6 py-4 md:px-10"
           >
             <div className="flex flex-wrap items-center justify-center gap-3 text-sm">
+              <div className="px-3 py-2 text-[#6b7280]">
+                Transportation &amp; Logistics
+              </div>
               <div className="rounded-full border border-[#d8d4cc] bg-white px-4 py-2 font-medium text-[#111827] shadow-sm">
                 Agriculture
               </div>
               <div className="px-3 py-2 text-[#6b7280]">Manufacturing</div>
-              <div className="px-3 py-2 text-[#6b7280]">Smart Cities</div>
-              <div className="px-3 py-2 text-[#6b7280]">Energy</div>
               <div className="px-3 py-2 text-[#6b7280]">Healthcare</div>
+              <div className="px-3 py-2 text-[#6b7280]">Retail</div>
             </div>
           </section>
 
