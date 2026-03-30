@@ -7,9 +7,15 @@ export default function InsightsPage() {
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
         <header className="border-b border-[#efeae1] px-6 py-6 md:px-10">
           <div className="flex flex-wrap items-center justify-between gap-4">
-            <Link href="/" className="text-base font-bold tracking-tight">
-              BLACK SCARAB
+            <Link href="/" className="flex items-center gap-3">
+              <img
+                src="/black-scarab-mark.png"
+                alt="Black Scarab logo"
+                className="h-8 w-8 object-contain"
+              />
+              <span className="text-base font-bold tracking-tight">BLACK SCARAB</span>
             </Link>
+
             <Link
               href="/#contact"
               className="rounded-full border border-[#e5e7eb] px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#111827] hover:text-white"
