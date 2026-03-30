@@ -1,4 +1,9 @@
-export type ProductCategory = "Compute" | "Vision" | "Sensors" | "Connectivity";
+export type ProductCategory =
+  | "Compute"
+  | "Vision"
+  | "Sensors"
+  | "Connectivity"
+  | "Aerial";
 export type ProductIndustry =
   | "Agriculture"
   | "Manufacturing"
@@ -371,6 +376,7 @@ export const productCategories: ProductCategory[] = [
   "Vision",
   "Sensors",
   "Connectivity",
+  "Aerial",
 ];
 
 export const productIndustries: ProductIndustry[] = [
