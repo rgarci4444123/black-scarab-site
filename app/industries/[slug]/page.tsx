@@ -42,9 +42,9 @@ export default async function IndustryPage({ params }: Props) {
         <SiteHeader
           homeHref="/"
           navLinks={[
-            { label: "Catalog", href: "/catalog", isPage: true },
-            { label: "Insights", href: "/insights", isPage: true },
+            { label: "Products", href: "/catalog", isPage: true },
             { label: "Models", href: "/models", isPage: true },
+            { label: "Insights", href: "/insights", isPage: true },
             { label: "About", href: "/#about", isPage: true },
           ]}
           ctaLabel="Get Started"
