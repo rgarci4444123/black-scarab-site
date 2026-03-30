@@ -7,6 +7,7 @@ import { industries } from "@/lib/industries";
 
 export default function Home() {
   const navItems = [
+    { label: "Insights", href: "/insights", isPage: true },
     { label: "About", href: "#about" },
   ];
 
@@ -40,7 +41,7 @@ export default function Home() {
                     className="flex items-center gap-2 transition hover:text-[#111827]"
                   >
                     Industries
-                    <span className="text-xs">▼</span>
+                    <span className="text-base leading-none">⌄</span>
                   </button>
 
                   <div className="invisible absolute left-1/2 top-full z-30 mt-4 w-72 -translate-x-1/2 rounded-[20px] border border-[#e8e4dc] bg-white p-3 opacity-0 shadow-[0_18px_44px_rgba(15,23,42,0.08)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
@@ -59,6 +60,15 @@ export default function Home() {
                 </div>
 
                 {navItems.map((item) => (
+                  item.isPage ? (
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      className="transition hover:text-[#111827]"
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
                   <a
                     key={item.label}
                     href={item.href}
@@ -66,10 +76,8 @@ export default function Home() {
                   >
                     {item.label}
                   </a>
+                  )
                 ))}
-                <Link href="/insights" className="transition hover:text-[#111827]">
-                  Insights
-                </Link>
               </nav>
 
               <a
