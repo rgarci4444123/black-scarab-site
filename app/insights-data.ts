@@ -48,10 +48,11 @@ export const insights: Insight[] = [
     image: "/article-images/healthcare-latam.png",
   },
   {
-    title: "Next Article Coming Tomorrow",
+    title: "The Responsive Storefront: Edge AI & The Future of Retail in LatAm",
     summary:
-      "The next installment in the series is on the way and will be added here as soon as it is published.",
-    published: "Coming soon",
-    href: "https://www.linkedin.com/",
+      "An exploration of how edge AI can transform retail operations through smarter storefronts, localized intelligence, and more responsive customer experiences.",
+    published: "Published on LinkedIn",
+    href: "https://www.linkedin.com/pulse/responsive-storefront-edge-ai-future-retail-latam-black-scarab-bzaae/",
+    image: "/article-images/retail-latam.png",
   },
 ];
