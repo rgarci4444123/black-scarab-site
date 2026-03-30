@@ -257,12 +257,6 @@ export default function Home() {
               >
                 Explore Solutions
               </a>
-              <a
-                href="#contact"
-                className="rounded-full border border-[#e5e7eb] px-6 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
-              >
-                Talk to Us
-              </a>
             </div>
           </section>
 
