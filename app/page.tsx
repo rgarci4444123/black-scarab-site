@@ -39,8 +39,15 @@ export default function Home() {
             className="sticky top-0 z-20 border-b border-[#efeae1] bg-white/92 backdrop-blur"
           >
             <div className="flex items-center justify-between px-6 py-5 md:px-10">
-              <a href="#home" className="text-base font-bold tracking-tight">
-                BLACK SCARAB
+              <a href="#home" className="flex items-center gap-3">
+                <img
+                  src="/black-scarab-mark.png"
+                  alt="Black Scarab logo"
+                  className="h-8 w-8 object-contain"
+                />
+                <span className="text-base font-bold tracking-tight">
+                  BLACK SCARAB
+                </span>
               </a>
 
               <nav className="hidden items-center gap-7 text-sm text-[#6b7280] md:flex">
