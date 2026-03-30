@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { insights } from "./insights-data";
+
 export default function Home() {
   const navItems = [
     { label: "Home", href: "#home" },
@@ -25,6 +28,8 @@ export default function Home() {
     },
   ];
 
+  const featuredInsights = insights.slice(0, 3);
+
   return (
     <main className="min-h-screen bg-[#f6f4ef] text-[#111827]">
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
@@ -48,6 +53,9 @@ export default function Home() {
                     {item.label}
                   </a>
                 ))}
+                <Link href="/insights" className="transition hover:text-[#111827]">
+                  Insights
+                </Link>
               </nav>
 
               <a
@@ -186,6 +194,66 @@ export default function Home() {
                 connect hardware, AI, and operations into one deployable
                 solution.
               </p>
+            </div>
+          </section>
+
+          <section className="border-t border-[#efeae1] px-6 py-14 md:px-10">
+            <div className="flex flex-col gap-6 text-center md:flex-row md:items-end md:justify-between md:text-left">
+              <div className="max-w-2xl">
+                <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
+                  Insights
+                </p>
+                <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
+                  Research, perspective, and market intelligence
+                </h2>
+                <p className="mt-4 text-lg leading-8 text-[#6b7280]">
+                  A curated selection of Black Scarab articles exploring edge AI,
+                  industrial deployment, and the sectors reshaping Latin America.
+                </p>
+              </div>
+
+              <div>
+                <Link
+                  href="/insights"
+                  className="inline-block rounded-full border border-[#ddd7cc] px-6 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
+                >
+                  View All Articles
+                </Link>
+              </div>
+            </div>
+
+            <div className="mt-10 grid gap-5 md:grid-cols-3">
+              {featuredInsights.map((insight) => (
+                <a
+                  key={insight.title}
+                  href={insight.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="overflow-hidden rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(15,23,42,0.08)]"
+                >
+                  {insight.image ? (
+                    <img
+                      src={insight.image}
+                      alt={insight.title}
+                      className="h-56 w-full object-cover object-top"
+                    />
+                  ) : null}
+                  <div className="p-6">
+                  <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
+                    {insight.published}
+                  </p>
+                  <h3 className="mt-4 text-2xl font-semibold tracking-tight">
+                    {insight.title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-6 text-[#6b7280]">
+                    {insight.summary}
+                  </p>
+                  <p className="mt-6 text-sm font-medium text-[#111827]">
+                    Read on LinkedIn
+                  </p>
+                  </div>
+                </a>
+              ))}
             </div>
           </section>
 
