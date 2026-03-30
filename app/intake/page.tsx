@@ -324,6 +324,7 @@ export default function IntakePage() {
         <SiteHeader
           homeHref="/"
           navLinks={[
+            { label: "Catalog", href: "/catalog", isPage: true },
             { label: "Insights", href: "/insights", isPage: true },
             { label: "About", href: "/#about", isPage: true },
           ]}
