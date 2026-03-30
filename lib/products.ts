@@ -46,7 +46,7 @@ export const products: ProductData[] = [
     industries: ["Agriculture", "Manufacturing", "Retail"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Indoor", "Mobile", "Industrial"],
-    image: "/article-images/jetson-latam.png",
+    image: "/product-images/nvidia-jetson-orin-nx.jpg",
     imageAlt: "Edge computing visualization for NVIDIA Jetson Orin NX",
     summary:
       "A compact edge AI module for high-performance inference in constrained environments where latency and power draw matter.",
@@ -70,7 +70,7 @@ export const products: ProductData[] = [
     blackScarabPov:
       "Ideal for mid-scale deployments where cloud latency is unacceptable and space or power constraints limit larger edge servers. A strong fit when video inference must happen on site.",
     officialUrl:
-      "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/",
+      "https://www.amazon.com/seeed-studio-reComputer-J4012-Edge-Pre-Installed/dp/B0C88V4CB7/ref=sr_1_2_sspa?crid=M6H4B3299BKG&dib=eyJ2IjoiMSJ9.9gCJw-kXE2J0rq1kTcqrwfYe3oQivJmNLtSFRVf-T5G4os2LtUtr05KSBAT2iGCBHM0Ygw1334KvtuLxVTXzzBSncLpigHcVs9Mu6ZaFKFlOtigBHli3XcXuWJobbw2u2Liyd7HsotjW_rpf0vI8nx-4RupX81B8Jqq_L7TytA1RUs8oMcI1YaiG-jS_xAFBnTftsO1bVXGuokn00jqtKihNqkCBAqe_xxbDe3CUb7Q.aIKnYOUQ4GGI7Qvg3dWBqw7Bfjc2Q_kSaYyynCxZEqg&dib_tag=se&keywords=nvidia%2Bjetson%2Borin&qid=1774900805&sprefix=nvidia%2Bjetson%2Borin%2Caps%2C145&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1",
   },
   {
     slug: "nvidia-jetson-agx-orin",
@@ -79,7 +79,7 @@ export const products: ProductData[] = [
     industries: ["Manufacturing", "Transportation & Logistics", "Healthcare"],
     powerProfile: "Medium (25–200W)",
     deploymentTypes: ["Indoor", "Industrial", "Mobile"],
-    image: "/manufacturing-hero.jpg",
+    image: "/product-images/nvidia-jetson-agx-orin-nx.jpg",
     imageAlt: "Manufacturing environment representing Jetson AGX Orin deployments",
     summary:
       "A higher-performance Jetson platform for advanced edge workloads, robotics, and sensor-heavy deployments that need significant local AI throughput.",
@@ -103,7 +103,7 @@ export const products: ProductData[] = [
     blackScarabPov:
       "Best when the deployment needs embedded flexibility but the workload starts looking like a small GPU server. We like it for advanced proofs of concept that may later become hardened products.",
     officialUrl:
-      "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/",
+      "https://www.amazon.com/dp/B0BYGB3WV4?utm_source=nvidia&th=1",
   },
   {
     slug: "dell-edge-gateway-5200",
@@ -112,7 +112,7 @@ export const products: ProductData[] = [
     industries: ["Transportation & Logistics", "Manufacturing", "Retail"],
     powerProfile: "Medium (25–200W)",
     deploymentTypes: ["Indoor", "Industrial"],
-    image: "/logistics-hero.jpg",
+    image: "/product-images/dell-edge-gateway-5200.jpg",
     imageAlt: "Logistics environment representing Dell Edge Gateway deployments",
     summary:
       "An industrial gateway-style platform for bringing local analytics, device integration, and edge processing into operational environments.",
@@ -135,7 +135,8 @@ export const products: ProductData[] = [
     ],
     blackScarabPov:
       "A practical choice when the problem is not just AI inference, but also secure device integration and operational reliability across multiple sites.",
-    officialUrl: "https://www.dell.com/en-us/dt/edge-computing/index.htm",
+    officialUrl:
+      "https://www.netsolutionworks.com/egw-5200.asp?utm_term=dell%20edge%20gateway%205200&utm_campaign=Dell+Networking+*123&utm_source=adwords&utm_medium=ppc&hsa_tgt=kwd-2268790644929&hsa_grp=159319808804&hsa_src=g&hsa_net=adwords&hsa_mt=e&hsa_ver=3&hsa_ad=687494048780&hsa_acc=9041622380&hsa_kw=dell%20edge%20gateway%205200&hsa_cam=361999621&gad_source=1&gad_campaignid=361999621&gbraid=0AAAAAD_vIyaTNW7Z7AnIp-zXb9o-h5H8p&gclid=CjwKCAjwvqjOBhAGEiwAngeQnW7H2Epf8n3KizG69kAdWcEMudGmTawqmwHJ9i87zikd0kwlQ5TlnBoCM4gQAvD_BwE",
   },
   {
     slug: "intel-realsense-d455",
@@ -144,7 +145,7 @@ export const products: ProductData[] = [
     industries: ["Manufacturing", "Retail", "Healthcare"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Indoor", "Mobile", "Industrial"],
-    image: "/article-images/manufacturing-latam.png",
+    image: "/product-images/intel-realsense-d455.jpg",
     imageAlt: "Machine vision scene representing Intel RealSense D455",
     summary:
       "A depth camera suited for perception, measurement, and spatial understanding in edge AI systems.",
@@ -167,7 +168,8 @@ export const products: ProductData[] = [
     ],
     blackScarabPov:
       "Useful when the decision system needs geometry, not just classification. It adds real value in constrained indoor environments where spatial context is part of the workflow.",
-    officialUrl: "https://www.intelrealsense.com/depth-camera-d455/",
+    officialUrl:
+      "https://www.amazon.com/Intel-RealSense-D455-Webcam-3-1-1280/dp/B08KJCRCGG",
   },
   {
     slug: "basler-ace-camera",
@@ -176,7 +178,7 @@ export const products: ProductData[] = [
     industries: ["Manufacturing", "Healthcare", "Retail"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Indoor", "Industrial"],
-    image: "/article-images/manufacturing-latam.png",
+    image: "/product-images/basler-aca1920-25uc.jpg",
     imageAlt: "Industrial camera deployment representing Basler ace",
     summary:
       "An industrial-grade machine vision camera family built for consistent image quality in production and inspection environments.",
@@ -199,7 +201,7 @@ export const products: ProductData[] = [
     ],
     blackScarabPov:
       "A strong option when reliability and repeatability matter more than consumer-grade affordability. We’d favor this for production environments that must stay stable over time.",
-    officialUrl: "https://www.baslerweb.com/en/products/cameras/area-scan-cameras/ace/",
+    officialUrl: "https://www.baslerweb.com/en-us/shop/aca1920-25uc/",
   },
   {
     slug: "flir-boson-thermal",
@@ -208,7 +210,7 @@ export const products: ProductData[] = [
     industries: ["Agriculture", "Healthcare", "Transportation & Logistics"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Outdoor", "Mobile", "Industrial"],
-    image: "/healthcare-hero.jpg",
+    image: "/product-images/flir-boson-plus-320.jpg",
     imageAlt: "Thermal sensing scene representing FLIR Boson thermal camera",
     summary:
       "A thermal camera module for deployments where heat signatures and environmental conditions matter as much as visible imagery.",
@@ -231,7 +233,7 @@ export const products: ProductData[] = [
     ],
     blackScarabPov:
       "Thermal should be used selectively, but when the environment is harsh or visibility is limited, it creates a clear edge over RGB-only systems.",
-    officialUrl: "https://www.flir.com/products/boson/",
+    officialUrl: "https://oem.flir.com/products/boson-plus/?vertical=lwir&segment=oem",
   },
   {
     slug: "soil-sensor-network",
@@ -240,7 +242,7 @@ export const products: ProductData[] = [
     industries: ["Agriculture", "Other"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Outdoor"],
-    image: "/agriculture-hero.jpg",
+    image: "/product-images/stevens-hydraprobe.jpg",
     imageAlt: "Agriculture field sensor deployment",
     summary:
       "A distributed sensor layer for moisture, climate, and soil telemetry in precision agriculture environments.",
@@ -263,7 +265,7 @@ export const products: ProductData[] = [
     ],
     blackScarabPov:
       "On their own, sensors rarely solve the business problem. Their real value comes when combined with edge compute and vision into one operational loop.",
-    officialUrl: "https://www.metergroup.com/",
+    officialUrl: "https://stevenswater.com/products/hydraprobe/",
   },
   {
     slug: "bosch-environmental-sensor-suite",
@@ -272,7 +274,7 @@ export const products: ProductData[] = [
     industries: ["Manufacturing", "Retail", "Healthcare"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Indoor", "Industrial"],
-    image: "/healthcare-hero.jpg",
+    image: "/product-images/bosch-sensortec.jpg",
     imageAlt: "Environmental sensing concept for Bosch sensor suite",
     summary:
       "A class of compact sensors that capture temperature, humidity, air quality, and motion signals for local monitoring systems.",
@@ -295,7 +297,7 @@ export const products: ProductData[] = [
     ],
     blackScarabPov:
       "These sensors become much more strategic when they’re not treated as standalone gadgets but as supporting context for edge AI workflows.",
-    officialUrl: "https://www.bosch-sensortec.com/",
+    officialUrl: "https://www.bosch-sensortec.com/en/products",
   },
   {
     slug: "starlink-terminal",
@@ -304,7 +306,7 @@ export const products: ProductData[] = [
     industries: ["Agriculture", "Transportation & Logistics", "Other"],
     powerProfile: "Medium (25–200W)",
     deploymentTypes: ["Outdoor", "Mobile"],
-    image: "/logistics-hero.jpg",
+    image: "/product-images/starlink.jpg",
     imageAlt: "Remote connectivity environment representing Starlink terminal",
     summary:
       "A satellite connectivity option for remote operations where terrestrial networks are limited or unreliable.",
@@ -327,7 +329,8 @@ export const products: ProductData[] = [
     ],
     blackScarabPov:
       "We see this less as the brain of the system and more as the reliability layer that keeps remote infrastructure usable when terrestrial connectivity falls short.",
-    officialUrl: "https://www.starlink.com/",
+    officialUrl:
+      "https://www.amazon.com/Starlink-Standard-Band-Wi-Fi-System/dp/B0D5SGXQCD/ref=sr_1_1?adgrpid=192200860051&dib=eyJ2IjoiMSJ9.KbReg8vEO1K4F2si491f0xZGJMANrZqG2S3-XhLZL7bgxg8rb1oH4iQfzcwarZGlx9uzKnf6KPwE0LyaMYx3MhaIVCMVfVLEJVRLu3UtO_1dnfN5Y0PuNGLp1-NocBBvAJIyNTPsl7Vo3v1o66mST9ySxvzhpX9_z8Tzr_vYlo171tNmI1tWWraU42p0DrdMUugBR5CADPVOaN5C4h26dMFlAnTfIqKgDDX6q0qzJ7k.Ng5RFsRrJ3v66CIS96VZpL2oNiziG22IIX64_mL9izQ&dib_tag=se&hvadid=779546295340&hvdev=c&hvexpln=0&hvlocphy=9011905&hvnetw=g&hvocijid=2528214540987618556--&hvqmt=e&hvrand=2528214540987618556&hvtargid=kwd-1146699698059&hydadcr=19107_13375052_8668&keywords=starlink+terminal&mcid=f22e165049a33f7c91d47d31821d7f99&qid=1774901888&sr=8-1",
   },
   {
     slug: "cradlepoint-5g-router",
@@ -336,7 +339,7 @@ export const products: ProductData[] = [
     industries: ["Transportation & Logistics", "Retail", "Healthcare"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Indoor", "Mobile", "Industrial"],
-    image: "/retail-hero.jpg",
+    image: "/product-images/ericsson-cradlepoint-e300.jpg",
     imageAlt: "Retail and mobile connectivity scene representing Cradlepoint router",
     summary:
       "A cellular connectivity layer for mobile and distributed edge systems that need resilient WAN access.",
@@ -359,7 +362,7 @@ export const products: ProductData[] = [
     ],
     blackScarabPov:
       "A strong fit when uptime matters across multiple sites and the network layer has to be treated as part of the deployment strategy from day one.",
-    officialUrl: "https://cradlepoint.com/",
+    officialUrl: "https://cradlepoint.com/product/endpoints/e300/",
   },
 ];
 
