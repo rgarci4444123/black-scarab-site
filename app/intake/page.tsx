@@ -71,7 +71,13 @@ const deploymentOptions = [
   "Not sure",
 ];
 
-const budgetOptions = ["<$10K", "$10K–$50K", "$50K–$150K", "$150K+"];
+const budgetOptions = [
+  "Under $25K",
+  "$25K–$100K",
+  "$100K–$250K",
+  "$250K+",
+  "Not sure yet",
+];
 
 const timelineOptions = ["ASAP", "1–3 months", "3–6 months", "Just exploring"];
 
