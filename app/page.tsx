@@ -38,10 +38,10 @@ export default function Home() {
                 <div className="group relative">
                   <button
                     type="button"
-                    className="flex items-center gap-2 transition hover:text-[#111827]"
+                    className="flex items-center gap-1.5 transition hover:text-[#111827]"
                   >
                     Industries
-                    <span className="text-base leading-none">⌄</span>
+                    <span className="text-sm leading-none text-[#8b9385]">⌄</span>
                   </button>
 
                   <div className="invisible absolute left-1/2 top-full z-30 mt-4 w-72 -translate-x-1/2 rounded-[20px] border border-[#e8e4dc] bg-white p-3 opacity-0 shadow-[0_18px_44px_rgba(15,23,42,0.08)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
@@ -98,8 +98,7 @@ export default function Home() {
               AI Infrastructure for Industry
             </h1>
             <p className="relative mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#6b7280]">
-              Advanced Edge AI systems tailored for agriculture, manufacturing,
-              and modern industrial operations.
+              Advanced Edge AI systems designed for real-world operations.
             </p>
 
             <div className="relative mt-10 flex flex-wrap items-center justify-center gap-4">
