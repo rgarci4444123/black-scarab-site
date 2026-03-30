@@ -2,54 +2,9 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-
-type IntakeForm = {
-  industry: string;
-  companySize: string;
-  country: string;
-  locations: string;
-  objectives: string[];
-  primaryUseCase: string;
-  environment: string;
-  currentInfrastructure: string[];
-  internetReliability: string;
-  dataAvailability: string;
-  aiExperience: string;
-  currentStage: string;
-  deploymentSetup: string;
-  budget: string;
-  timeline: string;
-  additionalContext: string;
-  fullName: string;
-  companyName: string;
-  email: string;
-  phone: string;
-};
+import { initialIntakeForm, type IntakeForm } from "@/lib/intake";
 
 const STORAGE_KEY = "black-scarab-intake";
-
-const initialForm: IntakeForm = {
-  industry: "",
-  companySize: "",
-  country: "",
-  locations: "",
-  objectives: [],
-  primaryUseCase: "",
-  environment: "",
-  currentInfrastructure: [],
-  internetReliability: "",
-  dataAvailability: "",
-  aiExperience: "",
-  currentStage: "",
-  deploymentSetup: "",
-  budget: "",
-  timeline: "",
-  additionalContext: "",
-  fullName: "",
-  companyName: "",
-  email: "",
-  phone: "",
-};
 
 const industries = [
   "Agriculture",
@@ -168,24 +123,26 @@ function toggleValue(values: string[], value: string) {
 export default function IntakePage() {
   const [form, setForm] = useState<IntakeForm>(() => {
     if (typeof window === "undefined") {
-      return initialForm;
+      return initialIntakeForm;
     }
 
     const saved = window.localStorage.getItem(STORAGE_KEY);
 
     if (!saved) {
-      return initialForm;
+      return initialIntakeForm;
     }
 
     try {
-      return { ...initialForm, ...JSON.parse(saved) };
+      return { ...initialIntakeForm, ...JSON.parse(saved) };
     } catch {
       window.localStorage.removeItem(STORAGE_KEY);
-      return initialForm;
+      return initialIntakeForm;
     }
   });
   const [step, setStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   useEffect(() => {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(form));
@@ -232,15 +189,50 @@ export default function IntakePage() {
   const updateField = <K extends keyof IntakeForm>(key: K, value: IntakeForm[K]) =>
     setForm((current) => ({ ...current, [key]: value }));
 
-  const nextStep = () => {
+  const nextStep = async () => {
     if (!stepValid) return;
     if (step < steps.length - 1) {
       setStep((current) => current + 1);
       return;
     }
 
-    setSubmitted(true);
-    window.localStorage.removeItem(STORAGE_KEY);
+    setSubmitError("");
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/intake", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      const payload = (await response.json()) as {
+        error?: string;
+        details?: string;
+      };
+
+      if (!response.ok) {
+        throw new Error(
+          payload.details
+            ? `${payload.error || "Submission failed."} ${payload.details}`
+            : payload.error ||
+              "We couldn't submit your intake just yet. Please try again.",
+        );
+      }
+
+      setSubmitted(true);
+      window.localStorage.removeItem(STORAGE_KEY);
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error
+          ? error.message
+          : "We couldn't submit your intake just yet. Please try again.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const previousStep = () => {
@@ -249,9 +241,11 @@ export default function IntakePage() {
   };
 
   const resetForm = () => {
-    setForm(initialForm);
+    setForm(initialIntakeForm);
     setStep(0);
     setSubmitted(false);
+    setSubmitError("");
+    setIsSubmitting(false);
     window.localStorage.removeItem(STORAGE_KEY);
   };
 
@@ -368,8 +362,8 @@ export default function IntakePage() {
                 Your intake has been saved
               </h2>
               <p className="mt-4 text-lg leading-8 text-[#6b7280]">
-                Thanks. This phase-one intake flow stores your answers locally in
-                your browser while we wire up full submission and notifications.
+                Thanks. We&apos;ve received your intake and will review your
+                project details before following up with next steps.
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <a
@@ -760,18 +754,26 @@ export default function IntakePage() {
                   </button>
 
                   <div className="text-sm text-[#6b7280]">
-                    {stepValid
+                    {submitError ? (
+                      <span className="text-[#9c4f3d]">{submitError}</span>
+                    ) : stepValid
                       ? "Looks good — continue when you're ready."
                       : "Complete the required fields to continue."}
                   </div>
 
                   <button
                     type="button"
-                    onClick={nextStep}
-                    disabled={!stepValid}
+                    onClick={() => {
+                      void nextStep();
+                    }}
+                    disabled={!stepValid || isSubmitting}
                     className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937] disabled:cursor-not-allowed disabled:opacity-40"
                   >
-                    {step === steps.length - 1 ? "Design My System" : "Next →"}
+                    {step === steps.length - 1
+                      ? isSubmitting
+                        ? "Submitting..."
+                        : "Design My System"
+                      : "Next →"}
                   </button>
                 </div>
               </div>
