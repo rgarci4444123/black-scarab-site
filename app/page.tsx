@@ -451,7 +451,7 @@ export default function Home() {
                   href="/intake"
                   className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
                 >
-                  Start Intake
+                  Design My System
                 </a>
                 <a
                   href="#home"
