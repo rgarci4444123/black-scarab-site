@@ -62,7 +62,7 @@ const industries: Industry[] = [
     title: "Transportation & Logistics",
     subtitle:
       "Improve fleet responsiveness with localized intelligence at the edge.",
-    image: "/article-images/logistics-latam.png",
+    image: "/logistics-hero.jpg",
     imageAlt: "Transportation and logistics edge AI illustration",
     solutionTitle: "Reflexive Fleet System",
     solutionDescription:
@@ -93,7 +93,7 @@ const industries: Industry[] = [
     title: "Manufacturing Intelligence",
     subtitle:
       "Bring edge AI directly onto the factory floor for faster operational insight.",
-    image: "/article-images/manufacturing-latam.png",
+    image: "/manufacturing-hero.jpg",
     imageAlt: "Manufacturing edge AI system",
     solutionTitle: "Autonomous Factory Stack",
     solutionDescription:
@@ -124,7 +124,7 @@ const industries: Industry[] = [
     title: "Decentralized Healthcare Systems",
     subtitle:
       "Push intelligence closer to care with portable, edge-powered medical systems.",
-    image: "/article-images/healthcare-latam.png",
+    image: "/healthcare-hero.jpg",
     imageAlt: "Healthcare edge AI system",
     solutionTitle: "Mobile Diagnostics Platform",
     solutionDescription:
@@ -155,7 +155,7 @@ const industries: Industry[] = [
     title: "Responsive Retail Infrastructure",
     subtitle:
       "Make physical storefronts smarter with localized intelligence and faster operational feedback.",
-    image: "/article-images/retail-latam.png",
+    image: "/retail-hero.jpg",
     imageAlt: "Retail edge AI system",
     solutionTitle: "Responsive Storefront Platform",
     solutionDescription:
