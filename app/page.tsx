@@ -7,10 +7,7 @@ import { industries } from "@/lib/industries";
 
 export default function Home() {
   const navItems = [
-    { label: "Home", href: "#home" },
-    { label: "Solutions", href: "#solutions" },
     { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
   ];
 
   const featuredInsights = insights.slice(0, 3);
