@@ -49,7 +49,7 @@ export const industries: IndustryData[] = [
     key: "agriculture",
     slug: "agriculture",
     label: "Agriculture",
-    eyebrow: "Featured Industry",
+    eyebrow: "Featured System",
     title: "Agriculture Technology",
     subtitle: "Optimize your farming operations with modular AI infrastructure.",
     image: "/agriculture-hero.jpg",
@@ -131,7 +131,7 @@ export const industries: IndustryData[] = [
     key: "logistics",
     slug: "transportation-logistics",
     label: "Transportation & Logistics",
-    eyebrow: "Featured Industry",
+    eyebrow: "Featured System",
     title: "Transportation & Logistics",
     subtitle:
       "Improve fleet responsiveness with localized intelligence at the edge.",
@@ -214,7 +214,7 @@ export const industries: IndustryData[] = [
     key: "manufacturing",
     slug: "manufacturing",
     label: "Manufacturing",
-    eyebrow: "Featured Industry",
+    eyebrow: "Featured System",
     title: "Manufacturing Intelligence",
     subtitle:
       "Bring edge AI directly onto the factory floor for faster operational insight.",
@@ -297,7 +297,7 @@ export const industries: IndustryData[] = [
     key: "healthcare",
     slug: "healthcare",
     label: "Healthcare",
-    eyebrow: "Featured Industry",
+    eyebrow: "Featured System",
     title: "Decentralized Healthcare Systems",
     subtitle:
       "Push intelligence closer to care with portable, edge-powered medical systems.",
@@ -380,7 +380,7 @@ export const industries: IndustryData[] = [
     key: "retail",
     slug: "retail",
     label: "Retail",
-    eyebrow: "Featured Industry",
+    eyebrow: "Featured System",
     title: "Responsive Retail Infrastructure",
     subtitle:
       "Make physical storefronts smarter with localized intelligence and faster operational feedback.",
