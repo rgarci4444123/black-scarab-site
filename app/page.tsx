@@ -229,7 +229,7 @@ export default function Home() {
               </nav>
 
               <a
-                href="#contact"
+                href="/intake"
                 className="rounded-full border border-[#e5e7eb] px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#111827] hover:text-white"
               >
                 Get Started
@@ -335,7 +335,7 @@ export default function Home() {
 
             <div className="mt-10 text-center">
               <a
-                href="#contact"
+                href="/intake"
                 className="inline-block rounded-full bg-[#111827] px-7 py-4 text-sm font-medium text-white transition hover:bg-[#1f2937]"
               >
                 {activeIndustry.cta}
@@ -448,10 +448,10 @@ export default function Home() {
 
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <a
-                  href="mailto:info@blackscarab.ai"
+                  href="/intake"
                   className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
                 >
-                  info@blackscarab.ai
+                  Start Intake
                 </a>
                 <a
                   href="#home"
