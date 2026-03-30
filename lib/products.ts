@@ -369,6 +369,70 @@ export const products: ProductData[] = [
       "A strong fit when uptime matters across multiple sites and the network layer has to be treated as part of the deployment strategy from day one.",
     officialUrl: "https://cradlepoint.com/product/endpoints/e300/",
   },
+  {
+    slug: "dji-mavic-3m",
+    name: "DJI Mavic 3M",
+    category: "Aerial",
+    industries: ["Agriculture", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Outdoor", "Mobile"],
+    image: "/product-images/dji-mavic-3m.jpg",
+    imageAlt: "DJI Mavic 3M agricultural drone",
+    summary:
+      "A multispectral drone platform built for crop monitoring, field intelligence, and precision agriculture workflows.",
+    whyItMatters:
+      "It compresses aerial imaging, spectral analysis, and operational speed into a deployable field asset that can inform decisions faster than manual scouting.",
+    specs: [
+      { label: "Platform Type", value: "Multispectral agricultural drone" },
+      { label: "Power Profile", value: "Battery-powered mobile aerial system" },
+      { label: "Deployment", value: "Field-ready rapid launch platform" },
+    ],
+    bestFor: [
+      "Crop health mapping",
+      "Precision monitoring",
+      "Fast aerial data collection",
+    ],
+    usedIn: [
+      "Field scouting programs",
+      "Irrigation and crop stress analysis",
+      "Agricultural intelligence workflows",
+    ],
+    blackScarabPov:
+      "This is strong when you need to shorten the loop between observation and action in the field. It becomes especially valuable when paired with edge compute and sensor data instead of operating as an isolated drone workflow.",
+    officialUrl: "https://ag.dji.com/mavic-3-m",
+  },
+  {
+    slug: "dji-agras-t50",
+    name: "DJI Agras T50",
+    category: "Aerial",
+    industries: ["Agriculture", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Outdoor", "Mobile"],
+    image: "/product-images/dji-agras-t50.jpg",
+    imageAlt: "DJI Agras T50 agricultural spraying drone",
+    summary:
+      "A heavy-duty agricultural drone built for spraying, spreading, and high-throughput field operations.",
+    whyItMatters:
+      "It shifts the aerial system from intelligence gathering into direct operational execution, making it relevant for large-scale agricultural deployment workflows.",
+    specs: [
+      { label: "Platform Type", value: "Heavy-lift agricultural drone" },
+      { label: "Power Profile", value: "High-power battery system" },
+      { label: "Deployment", value: "Large-scale outdoor field operations" },
+    ],
+    bestFor: [
+      "Spraying and spreading operations",
+      "Large field execution",
+      "Aerial task automation",
+    ],
+    usedIn: [
+      "Crop treatment operations",
+      "Large-acreage deployment workflows",
+      "Integrated precision agriculture stacks",
+    ],
+    blackScarabPov:
+      "The value here is less about sensing alone and more about closing the loop between aerial intelligence and aerial execution. For the right grower, this turns insight into action at scale.",
+    officialUrl: "https://ag.dji.com/t50?site=ag&from=nav",
+  },
 ];
 
 export const productCategories: ProductCategory[] = [
