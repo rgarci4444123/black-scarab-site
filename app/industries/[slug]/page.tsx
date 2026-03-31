@@ -74,14 +74,12 @@ export default async function IndustryPage({ params }: Props) {
                 >
                   {industry.cta}
                 </Link>
-                <a
+                <Link
                   href={industry.relatedInsightHref}
-                  target="_blank"
-                  rel="noreferrer"
                   className="rounded-full border border-[#ddd7cc] px-6 py-3 text-sm font-medium text-[#111827] transition hover:bg-white"
                 >
-                  Read Related Insight
-                </a>
+                  {industry.relatedInsightCtaLabel ?? "Read Related Insight"}
+                </Link>
               </div>
             </div>
 
@@ -220,20 +218,38 @@ export default async function IndustryPage({ params }: Props) {
 
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {industry.caseStudies.map((caseStudy) => (
-              <div
-                key={caseStudy.title}
-                className="rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]"
-              >
-                <p className="text-xl font-semibold tracking-tight">
-                  {caseStudy.title}
-                </p>
-                <p className="mt-3 text-sm leading-6 text-[#6b7280]">
-                  {caseStudy.summary}
-                </p>
-                <p className="mt-5 text-sm font-medium text-[#111827]">
-                  {caseStudy.impact}
-                </p>
-              </div>
+              caseStudy.href ? (
+                <Link
+                  key={caseStudy.title}
+                  href={caseStudy.href}
+                  className="rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(15,23,42,0.08)]"
+                >
+                  <p className="text-xl font-semibold tracking-tight">
+                    {caseStudy.title}
+                  </p>
+                  <p className="mt-3 text-sm leading-6 text-[#6b7280]">
+                    {caseStudy.summary}
+                  </p>
+                  <p className="mt-5 text-sm font-medium text-[#111827]">
+                    {caseStudy.impact}
+                  </p>
+                </Link>
+              ) : (
+                <div
+                  key={caseStudy.title}
+                  className="rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]"
+                >
+                  <p className="text-xl font-semibold tracking-tight">
+                    {caseStudy.title}
+                  </p>
+                  <p className="mt-3 text-sm leading-6 text-[#6b7280]">
+                    {caseStudy.summary}
+                  </p>
+                  <p className="mt-5 text-sm font-medium text-[#111827]">
+                    {caseStudy.impact}
+                  </p>
+                </div>
+              )
             ))}
           </div>
         </section>
@@ -250,14 +266,12 @@ export default async function IndustryPage({ params }: Props) {
               Explore the broader market perspective behind this industry page.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <a
+              <Link
                 href={industry.relatedInsightHref}
-                target="_blank"
-                rel="noreferrer"
                 className="rounded-full border border-[#ddd7cc] px-6 py-3 text-sm font-medium text-[#111827] transition hover:bg-white"
               >
-                Read on LinkedIn
-              </a>
+                {industry.relatedInsightCtaLabel ?? "Read on LinkedIn"}
+              </Link>
               <Link
                 href="/intake"
                 className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"

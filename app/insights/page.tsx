@@ -35,11 +35,11 @@ export default function InsightsPage() {
         <section className="border-t border-[#efeae1] px-6 py-12 md:px-10">
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {insights.map((insight) => (
-              <a
+              <Link
                 key={insight.title}
                 href={insight.href}
-                target="_blank"
-                rel="noreferrer"
+                target={insight.kind === "external" ? "_blank" : undefined}
+                rel={insight.kind === "external" ? "noreferrer" : undefined}
                 className="overflow-hidden rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(15,23,42,0.08)]"
               >
                 {insight.image ? (
@@ -60,10 +60,10 @@ export default function InsightsPage() {
                   {insight.summary}
                 </p>
                 <p className="mt-6 text-sm font-medium text-[#111827]">
-                  Read on LinkedIn
+                  {insight.ctaLabel}
                 </p>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
 

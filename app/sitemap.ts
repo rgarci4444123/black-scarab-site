@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { caseStudies } from "@/lib/case-studies";
 import { products } from "@/lib/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -13,6 +14,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/insights`,
       lastModified: new Date(),
     },
+    ...caseStudies.map((article) => ({
+      url: `${baseUrl}/insights/${article.slug}`,
+      lastModified: new Date(article.publishedDate),
+    })),
     {
       url: `${baseUrl}/catalog`,
       lastModified: new Date(),

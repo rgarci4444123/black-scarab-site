@@ -20,6 +20,7 @@ export type IndustryCaseStudy = {
   title: string;
   summary: string;
   impact: string;
+  href?: string;
 };
 
 export type IndustryData = {
@@ -42,6 +43,7 @@ export type IndustryData = {
   caseStudies: IndustryCaseStudy[];
   relatedInsightTitle: string;
   relatedInsightHref: string;
+  relatedInsightCtaLabel?: string;
 };
 
 export const industries: IndustryData[] = [
@@ -116,16 +118,19 @@ export const industries: IndustryData[] = [
     ],
     caseStudies: [
       {
-        title: "Precision Harvest Pilot",
+        title:
+          "Case Study #1 — The $20-per-Acre Advantage: How Edge AI Solved Agriculture's Chemical Waste Problem",
         summary:
-          "A regional grower deployed edge vision and environmental sensing to create faster crop visibility across multiple plots.",
-        impact: "Shorter response times and better operational awareness during critical growth windows.",
+          "A real-world look at how John Deere's See & Spray platform used onboard edge AI to cut herbicide use nearly in half in connectivity-limited farm environments.",
+        impact:
+          "Per-acre savings, lower chemical waste, and a strong proof point for offline-first agriculture systems.",
+        href: "/insights/case-study-agriculture-chemical-waste",
       },
     ],
     relatedInsightTitle:
-      "The Precision Harvest: Edge AI Compute - Agriculture in LatAm",
-    relatedInsightHref:
-      "https://www.linkedin.com/pulse/precision-harvest-edge-ai-compute-agriculture-latam-black-scarab-y8m8c/?trackingId=80skTvOUFJOjo5yxFXHHfw%3D%3D",
+      "Case Study #1 — The $20-per-Acre Advantage: How Edge AI Solved Agriculture's Chemical Waste Problem",
+    relatedInsightHref: "/insights/case-study-agriculture-chemical-waste",
+    relatedInsightCtaLabel: "Read Case Study",
   },
   {
     key: "logistics",
