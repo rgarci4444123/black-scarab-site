@@ -36,6 +36,21 @@ export default async function CaseStudyPage({ params }: Props) {
     notFound();
   }
 
+  const formattedDate = new Date(`${article.publishedDate}T12:00:00`).toLocaleDateString(
+    "en-US",
+    {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    },
+  );
+  const industryHref =
+    article.industry === "Manufacturing"
+      ? "/industries/manufacturing"
+      : article.industry === "Agriculture"
+        ? "/industries/agriculture"
+        : "/insights";
+
   return (
     <main className="min-h-screen bg-[#f6f4ef] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
@@ -65,13 +80,13 @@ export default async function CaseStudyPage({ params }: Props) {
                   {article.summary}
                 </p>
                 <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-[#6b7280]">
-                  <span>Published March 31, 2026</span>
+                  <span>Published {formattedDate}</span>
                   <span className="text-[#c9c1b5]">|</span>
                   <Link
-                    href="/industries/agriculture"
+                    href={industryHref}
                     className="transition hover:text-[#111827]"
                   >
-                    Agriculture page
+                    {article.industry} page
                   </Link>
                 </div>
                 <div className="mt-8 flex flex-wrap items-center gap-4">

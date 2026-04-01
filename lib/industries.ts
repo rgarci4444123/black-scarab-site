@@ -287,16 +287,19 @@ export const industries: IndustryData[] = [
     ],
     caseStudies: [
       {
-        title: "Autonomous Factory Assessment",
+        title:
+          "Case Study #2 — The Zero-Defect Advantage: How Edge AI Revolutionized Automotive Quality Control",
         summary:
-          "A manufacturing group evaluated machine vision and edge compute to improve inspection reliability during expansion.",
-        impact: "Better readiness for scalable quality monitoring and faster diagnostics.",
+          "A real-world look at how Audi's automated weld spot inspection used localized edge compute to achieve 100% quality transparency.",
+        impact:
+          "100% inspection coverage, a 95% reduction in manual ultrasound testing, and stronger control over rework costs.",
+        href: "/insights/case-study-manufacturing-zero-defect-advantage",
       },
     ],
     relatedInsightTitle:
-      "The Autonomous Factory: Edge AI and the Nearshoring Gold Rush",
-    relatedInsightHref:
-      "https://www.linkedin.com/pulse/autonomous-factory-edge-ai-nearshoring-gold-rush-black-scarab-ria9e/?trackingId=y%2FyXzdJtuCc%2FgZasfy%2FU4w%3D%3D",
+      "Case Study #2 — The Zero-Defect Advantage: How Edge AI Revolutionized Automotive Quality Control",
+    relatedInsightHref: "/insights/case-study-manufacturing-zero-defect-advantage",
+    relatedInsightCtaLabel: "Read Case Study",
   },
   {
     key: "healthcare",

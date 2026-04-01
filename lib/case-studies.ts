@@ -82,6 +82,71 @@ export const caseStudies: CaseStudyArticle[] = [
       "Blue River Technology technical specifications",
     ],
   },
+  {
+    slug: "case-study-manufacturing-zero-defect-advantage",
+    title:
+      "Case Study #2 — The Zero-Defect Advantage: How Edge AI Revolutionized Automotive Quality Control",
+    summary:
+      "A real-world look at how Audi's automated weld spot inspection used localized edge compute to achieve 100% quality transparency and slash manual inspection costs in high-volume production lines.",
+    publishedLabel: "Case Study · Published April 1, 2026",
+    publishedDate: "2026-04-01",
+    industry: "Manufacturing",
+    image: "/article-images/case-study-manufacturing.jpg",
+    imageAlt:
+      "Automotive factory robotic arm inspecting a vehicle body with AI-assisted weld quality analysis.",
+    seoDescription:
+      "How localized edge AI transformed automotive weld inspection, enabled 100 percent inspection, and reduced rework costs in high-volume manufacturing.",
+    sections: [
+      {
+        paragraphs: [
+          "Manufacturing at scale has reached a tipping point where human-led quality assurance can no longer keep pace with robotic output. The primary driver of this transition is Edge AI, which allows factory floors to move from sampling-based quality control to total-inspection models. In an environment where a single missed defect can lead to a costly recall, processing data at the edge directly at the robotic arm is the only way to ensure 100% reliability without slowing down the line.",
+        ],
+      },
+      {
+        heading: "The Specific Case: Audi's Neckarsulm Weld Cube System",
+        paragraphs: [
+          "One of the most significant applications of Edge AI in heavy industry is the automated weld spot inspection system deployed at Audi's Neckarsulm plant. A single vehicle body can contain up to 5,000 weld spots. Traditionally, workers used manual ultrasound equipment to sample just a fraction of those welds, a process that was time-consuming, reactive, and left 99% of the production unchecked.",
+        ],
+      },
+      {
+        heading: "The Challenge: High-Frequency Data and Zero Latency",
+        paragraphs: [
+          "To move to 100% inspection, a system must analyze the electrical current and voltage curves of every single weld in real-time. This generates massive amounts of high-frequency data. Attempting to upload the telemetry of 5,000 welds per car to a central cloud for analysis would saturate the factory network and introduce latencies that would stop the assembly line. The decision, is this weld good or bad, must happen while the robot is moving to the next spot.",
+        ],
+      },
+      {
+        heading: "The Edge Solution: Localized Compute on the Assembly Line",
+        paragraphs: [
+          "The solution involves an edge computing cluster integrated directly into the factory floor. Data from the welding controllers is fed into an Edge AI model that has been trained to recognize the signature of a perfect weld.",
+          "Latency: The inference happens in milliseconds, allowing the system to flag a defect the moment it occurs.",
+          "Architecture: By using a decentralized edge approach, Audi can inspect roughly 1.5 million weld spots across 300 vehicles every day without sending a single byte of raw telemetry to the cloud.",
+        ],
+      },
+      {
+        heading: "The Real-World Outcome: 2025 Production Data",
+        paragraphs: [
+          "The results from the full-scale deployment in the 2025 production cycle have redefined industrial standards. By moving intelligence to the edge, the plant achieved a 100% inspection rate, up from the previous 1% sampling rate. Manual ultrasound testing was reduced by 95%, allowing specialized technicians to focus only on the specific spots flagged by the AI. The system also prevented an estimated $2.1 million in rework costs per quarter by catching tool wear before it resulted in batch-wide defects.",
+        ],
+      },
+      {
+        heading: "The Global Context: Scalability and Sovereign Data",
+        paragraphs: [
+          "For global manufacturers, this case study proves that Edge AI is the key to sovereign manufacturing. Because the data is processed locally, sensitive intellectual property regarding production techniques never leaves the facility. This model is being replicated across Tier 1 suppliers in North America and Asia, where high labor costs and strict safety regulations make zero-defect targets a financial necessity.",
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This article was compiled using data from the 2025 Audi Industrial Transformation Report, technical whitepapers on the Weld Cube project, and Intel's Edge Insights for Industrial case documentation. These sources provide validated metrics for AI-driven manufacturing efficiency.",
+        ],
+      },
+    ],
+    sources: [
+      "2025 Audi Industrial Transformation Report",
+      "Weld Cube technical whitepapers",
+      "Intel Edge Insights for Industrial case documentation",
+    ],
+  },
 ];
 
 export function getCaseStudyBySlug(slug: string) {

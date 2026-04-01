@@ -73,7 +73,13 @@ const externalInsights: Insight[] = [
   },
 ];
 
-const internalInsights: Insight[] = caseStudies.map((article) => ({
+const internalInsights: Insight[] = [...caseStudies]
+  .sort(
+    (a, b) =>
+      new Date(`${b.publishedDate}T12:00:00`).getTime() -
+      new Date(`${a.publishedDate}T12:00:00`).getTime(),
+  )
+  .map((article) => ({
   title: article.title,
   summary: article.summary,
   published: article.publishedLabel,
