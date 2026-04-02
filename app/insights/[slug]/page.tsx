@@ -50,6 +50,26 @@ export default async function CaseStudyPage({ params }: Props) {
       : article.industry === "Agriculture"
         ? "/industries/agriculture"
         : "/insights";
+  const industryLinkLabel =
+    industryHref === "/insights" ? "Insights index" : `${article.industry} page`;
+  const ctaTitle =
+    article.industry === "Agriculture"
+      ? "Design an agriculture system around your own field conditions"
+      : article.industry === "Manufacturing"
+        ? "Design a manufacturing system around your own production line"
+        : "Scope an edge AI system around your own urban operations";
+  const ctaDescription =
+    article.industry === "Agriculture"
+      ? "If you are evaluating edge AI for agricultural operations, we can help scope the right combination of compute, sensors, aerial systems, and field connectivity."
+      : article.industry === "Manufacturing"
+        ? "If you are evaluating edge AI for industrial inspection or production monitoring, we can help scope the right combination of machine vision, edge compute, and plant-floor infrastructure."
+        : "If you are evaluating edge AI for traffic systems, public safety, or urban sensing, we can help scope the right mix of edge compute, connectivity, and field-ready devices.";
+  const secondaryCtaLabel =
+    article.industry === "Agriculture"
+      ? "Explore Agriculture"
+      : article.industry === "Manufacturing"
+        ? "Explore Manufacturing"
+        : "Back to Insights";
 
   return (
     <main className="min-h-screen bg-[#f6f4ef] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
@@ -86,7 +106,7 @@ export default async function CaseStudyPage({ params }: Props) {
                     href={industryHref}
                     className="transition hover:text-[#111827]"
                   >
-                    {article.industry} page
+                    {industryLinkLabel}
                   </Link>
                 </div>
                 <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -176,12 +196,10 @@ export default async function CaseStudyPage({ params }: Props) {
                 Next Step
               </p>
               <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-                Design an agriculture system around your own field conditions
+                {ctaTitle}
               </h2>
               <p className="mt-4 text-lg leading-8 text-[#6b7280]">
-                If you are evaluating edge AI for agricultural operations, we can
-                help scope the right combination of compute, sensors, aerial
-                systems, and field connectivity.
+                {ctaDescription}
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <Link
@@ -191,10 +209,10 @@ export default async function CaseStudyPage({ params }: Props) {
                   Design My System
                 </Link>
                 <Link
-                  href="/industries/agriculture"
+                  href={industryHref}
                   className="rounded-full border border-[#ddd7cc] px-6 py-3 text-sm font-medium text-[#111827] transition hover:bg-white"
                 >
-                  Explore Agriculture
+                  {secondaryCtaLabel}
                 </Link>
               </div>
             </div>

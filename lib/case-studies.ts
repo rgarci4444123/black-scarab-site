@@ -147,6 +147,71 @@ export const caseStudies: CaseStudyArticle[] = [
       "Intel Edge Insights for Industrial case documentation",
     ],
   },
+  {
+    slug: "case-study-smart-cities-lamppost-platform",
+    title:
+      "Case Study #3: Singapore's Smart Nation – The Lamppost-as-a-Platform (LaaP)",
+    summary:
+      "A real-world look at how Singapore turned lampposts into edge-computing hubs to manage traffic, public safety, and environmental sensing without overwhelming centralized networks.",
+    publishedLabel: "Case Study · Published April 2, 2026",
+    publishedDate: "2026-04-02",
+    industry: "Smart Cities",
+    image: "/article-images/case-study-smart-cities.jpg",
+    imageAlt:
+      "Singapore skyline with smart city connectivity overlays, transit traffic, and edge-connected urban infrastructure.",
+    seoDescription:
+      "How Singapore's Lamppost-as-a-Platform project used edge AI for smart city traffic optimization, privacy-preserving analytics, and urban resilience.",
+    sections: [
+      {
+        paragraphs: [
+          "In the push to become the world's first truly Smart Nation, the Government of Singapore has turned its most basic urban infrastructure, the humble street light, into a distributed network of edge-computing hubs. Managed by GovTech and the Land Transport Authority, the Lamppost-as-a-Platform project is a masterclass in using Edge AI to manage a dense, high-traffic city-state.",
+        ],
+      },
+      {
+        heading: "1. The Challenge: Urban Density and Data Overload",
+        paragraphs: [
+          "Singapore is one of the most densely populated cities on earth. Managing traffic flow, pedestrian safety, and environmental health requires constant monitoring.",
+          "The bandwidth crisis: Streaming 4K video from 100,000 lampposts to a central cloud for analysis would paralyze the city's fiber networks and require astronomical spending on data storage.",
+          "The privacy mandate: Under Singapore's strict data governance, the government needed a way to extract insights without storing identities in a central database.",
+        ],
+      },
+      {
+        heading: "2. The Solution: Intelligence at the Curb",
+        paragraphs: [
+          "Singapore began retrofitting its streetlights with Edge AI-enabled sensors and localized processing units.",
+          "Real-time video analytics: Instead of sending video feeds to a server, the lampposts use onboard AI to count vehicles, identify license plates of speeding cars, and even detect near-miss accidents.",
+          "Environmental edge sensing: Beyond cameras, the poles house sensors that process noise levels and air quality data locally, triggering alerts for pollution spikes without needing human intervention.",
+          "The virtual twin integration: The processed data is fed into Virtual Singapore, a 3D digital twin of the city. This allows planners to run real-time simulations of how a sudden rainstorm might impact traffic.",
+        ],
+      },
+      {
+        heading: "3. Key Outcomes and Impact",
+        paragraphs: [
+          "By moving the brain of the city to the edge of the sidewalk, Singapore has achieved unprecedented urban agility.",
+          "Optimized traffic flow: The Land Transport Authority uses edge insights to adjust traffic light timings in real-time, reducing commute times by responding to actual road conditions.",
+          "Enhanced public safety: Edge AI can detect a person falling or a crowd gathering in an unusual pattern and alert emergency services within seconds, all while blurring faces locally.",
+          "Disaster preparedness: During flash floods, sensors detect rising water levels and automatically push warnings to navigation apps, rerouting drivers.",
+        ],
+      },
+      {
+        heading: "4. The Edge Advantage",
+        paragraphs: [
+          "Singapore's LaaP project proves that Edge AI is the only way to scale a Smart City. By processing 99% of the data at the lamppost, the city saves on cloud costs, protects citizen privacy by deleting raw footage instantly, and ensures critical safety systems stay online even if the central network experiences a hiccup.",
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This article was compiled using data from the Smart Nation Singapore Urban Living initiative reports, GovTech Singapore technical whitepapers on the Lamppost-as-a-Platform project, and NVIDIA Metropolis case documentation for smart city deployments. These sources provide validated metrics for AI-driven urban efficiency and public safety.",
+        ],
+      },
+    ],
+    sources: [
+      "Smart Nation Singapore Urban Living initiative reports",
+      "GovTech Singapore Lamppost-as-a-Platform technical whitepapers",
+      "NVIDIA Metropolis case documentation for smart city deployments",
+    ],
+  },
 ];
 
 export function getCaseStudyBySlug(slug: string) {
