@@ -456,16 +456,19 @@ export const industries: IndustryData[] = [
     ],
     caseStudies: [
       {
-        title: "Responsive Storefront Pilot",
+        title:
+          "Case Study #4: Walmart's Intelligent Retail Lab – Edge AI for Real-Time Inventory",
         summary:
-          "A multi-site retailer explored edge intelligence to improve visibility into store traffic and operational responsiveness.",
-        impact: "Higher confidence in staffing and in-store monitoring decisions.",
+          "A real-world look at how Walmart used store-edge AI to detect stockouts, improve forecast accuracy, and accelerate in-store response.",
+        impact:
+          "Improved forecast accuracy, fewer stockouts, and faster associate action inside the store.",
+        href: "/insights/case-study-retail-real-time-inventory",
       },
     ],
     relatedInsightTitle:
-      "The Responsive Storefront: Edge AI & The Future of Retail in LatAm",
-    relatedInsightHref:
-      "https://www.linkedin.com/pulse/responsive-storefront-edge-ai-future-retail-latam-black-scarab-bzaae/",
+      "Case Study #4: Walmart's Intelligent Retail Lab – Edge AI for Real-Time Inventory",
+    relatedInsightHref: "/insights/case-study-retail-real-time-inventory",
+    relatedInsightCtaLabel: "Read Case Study",
   },
 ];
 
