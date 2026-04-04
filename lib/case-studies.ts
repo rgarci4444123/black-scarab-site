@@ -277,6 +277,66 @@ export const caseStudies: CaseStudyArticle[] = [
       "Operational reports on AI-driven supply chain optimization",
     ],
   },
+  {
+    slug: "case-study-logistics-smart-sorting-hubs",
+    title:
+      "Case Study #5: FedEx's Smart Sorting Hubs – Edge AI for High-Velocity Logistics",
+    summary:
+      "A real-world look at how FedEx integrated edge AI, robotics, and six-sided scanning into major sorting hubs to sustain high package throughput without sacrificing reliability.",
+    publishedLabel: "Case Study · Published April 4, 2026",
+    publishedDate: "2026-04-04",
+    industry: "Transportation & Logistics",
+    image: "/article-images/case-study-logistics.jpg",
+    imageAlt:
+      "High-volume logistics facility with robotic sorting arms, FedEx packages on conveyors, and AI-assisted operational screens.",
+    seoDescription:
+      "How FedEx used edge AI and robotics in smart sorting hubs to improve package throughput, reduce downtime, and maintain high-velocity logistics performance.",
+    sections: [
+      {
+        paragraphs: [
+          "In this case study, we examine how FedEx has integrated Edge AI and robotics into its global sorting facilities, such as the Memphis World Hub and its automated facility in Cologne, Germany, to manage the explosive growth of e-commerce. By processing package data directly on the sorting floor, FedEx has eliminated the latency involved in traditional manual or cloud-dependent systems.",
+        ],
+      },
+      {
+        heading: "1. The Challenge: Processing 56,000 Packages per Hour",
+        paragraphs: [
+          "As global shipping volumes surge, traditional sorting methods face critical bottlenecks.",
+          "The velocity gap: Human sorters cannot keep pace with the 56,000 packages per hour required at major hubs without increasing error rates.",
+          "Label variability: Packages arrive with damaged, obscured, or non-standard labels. A cloud-based AI system would struggle to provide the millisecond-level recognition needed to route a package moving at high speed on a conveyor belt.",
+          "Physical strain: Sorting small parcels and documents is a repetitive, high-volume task that leads to significant physical strain and labor turnover.",
+        ],
+      },
+      {
+        heading: "2. The Solution: AI-Powered Eyes and Robotic Arms",
+        paragraphs: [
+          "FedEx deployed Edge AI-driven robotic systems, such as the DexR truck-loading robot and AI-supported sorting arms, to handle the heavy lifting of package induction.",
+          "Computer vision at the edge: In facilities like FedEx Singapore, robotic arms use AI eyes to instantly identify and orient packages. Because the AI processes images locally, it can cover up to 100 different destinations simultaneously without waiting for a server response.",
+          "Autonomous final-mile integration: FedEx has collaborated with QuikBot Technologies to test autonomous delivery robots that navigate commercial buildings and elevators, extending edge intelligence from the warehouse to the customer's door.",
+          "Six-sided scanning: The new 1.4 million square foot Memphis Hub facility uses over 1,000 cameras and six-sided scanning technology to read barcodes on moving items regardless of their orientation, ensuring continuous flow.",
+        ],
+      },
+      {
+        heading: "3. Key Outcomes and Impact",
+        paragraphs: [
+          "The shift to edge-based automation has fundamentally changed the operational ceiling for FedEx logistics.",
+          "Zero unplanned downtime: By moving to condition-based maintenance, logistics leaders can reduce unplanned outages by 20 to 30%.",
+          "Increased throughput: Robotic arms in Cologne and Singapore process up to 1,000 pieces per hour, handling high-volume tasks that allow human employees to focus on more complex operational duties.",
+          "Cost and fuel savings: AI-driven route and sort optimization can lead to transportation cost reductions of 15% and fuel savings of 10 to 20% by minimizing idle miles and missed connections.",
+        ],
+      },
+      {
+        heading: "4. The Edge Advantage",
+        paragraphs: [
+          "For FedEx, the edge is the sorting belt. By embedding intelligence into the hardware itself, the company has built a smart logistics network capable of operating around the clock, ensuring that overnight delivery remains a reality even as global package volumes continue to climb.",
+        ],
+      },
+    ],
+    sources: [
+      "FedEx operational materials on Memphis World Hub and Cologne automation",
+      "FedEx Singapore robotic sorting references",
+      "Materials on DexR, QuikBot collaborations, and edge-enabled package operations",
+    ],
+  },
 ];
 
 export function getCaseStudyBySlug(slug: string) {

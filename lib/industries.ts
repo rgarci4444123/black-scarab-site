@@ -204,16 +204,19 @@ export const industries: IndustryData[] = [
     ],
     caseStudies: [
       {
-        title: "Reflexive Fleet Rollout",
+        title:
+          "Case Study #5: FedEx's Smart Sorting Hubs – Edge AI for High-Velocity Logistics",
         summary:
-          "A logistics operator deployed edge nodes and vision systems to improve visibility across a high-volume route network.",
-        impact: "Faster awareness of route disruptions and stronger operations response.",
+          "A real-world look at how FedEx used edge AI, robotics, and high-speed scanning to increase throughput and reduce latency on the sorting floor.",
+        impact:
+          "Higher throughput, fewer bottlenecks, and stronger real-time decision-making across large logistics hubs.",
+        href: "/insights/case-study-logistics-smart-sorting-hubs",
       },
     ],
     relatedInsightTitle:
-      "The Reflexive Fleet: Edge AI Compute - Transportation & Logistics in LatAm",
-    relatedInsightHref:
-      "https://www.linkedin.com/pulse/reflexive-fleet-edge-ai-compute-transportation-logistics-xcbze/?trackingId=DFssRfEFEY1RF3lkp2kHag%3D%3D",
+      "Case Study #5: FedEx's Smart Sorting Hubs – Edge AI for High-Velocity Logistics",
+    relatedInsightHref: "/insights/case-study-logistics-smart-sorting-hubs",
+    relatedInsightCtaLabel: "Read Case Study",
   },
   {
     key: "manufacturing",
