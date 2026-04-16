@@ -337,6 +337,72 @@ export const caseStudies: CaseStudyArticle[] = [
       "Materials on DexR, QuikBot collaborations, and edge-enabled package operations",
     ],
   },
+  {
+    slug: "case-study-healthcare-point-of-care-diagnostics",
+    title:
+      "Case Study #6: Mount Sinai & Butterfly Network – Edge AI for Point-of-Care Diagnostics",
+    summary:
+      "A real-world look at how Mount Sinai and Butterfly Network used handheld, edge-enabled imaging to extend diagnostic capability into rural, low-resource, and emergency care environments.",
+    publishedLabel: "Case Study · Published April 16, 2026",
+    publishedDate: "2026-04-16",
+    industry: "Healthcare",
+    image: "/article-images/case-study-healthcare.png",
+    imageAlt:
+      "Handheld ultrasound device in use with overlaid medical AI visualization representing point-of-care diagnostics.",
+    seoDescription:
+      "How Mount Sinai and Butterfly Network used edge AI in handheld ultrasound devices to bring faster diagnostics to rural and low-resource healthcare settings.",
+    sections: [
+      {
+        paragraphs: [
+          "In this study, we explore how Mount Sinai Hospital and Butterfly Network have utilized Edge AI to bring advanced medical imaging to rural and low-resource environments. By embedding AI directly into handheld ultrasound devices, they have enabled non-specialist health workers to perform complex diagnostic screenings without a connection to a central hospital or the cloud.",
+        ],
+      },
+      {
+        heading: "1. The Challenge: The Radiologist Gap in Rural Areas",
+        paragraphs: [
+          "Traditional medical imaging, such as ultrasound, requires two things often missing in remote areas: bulky, expensive machinery and a highly trained radiologist to interpret the images.",
+          "Connectivity barriers: In rural regions like Assam, India, unstable electricity and lack of high-speed internet make cloud-based AI analysis impossible.",
+          "Expertise scarcity: There are often not enough specialists to go around, meaning critical conditions like fetal abnormalities or internal organ issues go undetected until they become emergencies.",
+          "Time-sensitive diagnostics: For conditions like stroke or trauma, waiting hours for a specialist to review a scan can be the difference between recovery and permanent disability.",
+        ],
+      },
+      {
+        heading: "2. The Solution: A Radiologist in Your Pocket",
+        paragraphs: [
+          "Mount Sinai deployed the Butterfly iQ, a handheld ultrasound scanner that uses an Edge AI chip to interpret images on the fly.",
+          "On-device inference: The device runs compressed neural networks locally. Instead of sending raw video to a server, the device sees the internal organs and provides immediate diagnostic suggestions to the operator.",
+          "Guidance for non-specialists: The Edge AI provides real-time visual feedback, helping paramedics or nurses position the probe correctly to capture the best possible image, effectively teaching them as they work.",
+          "Privacy-first processing: Because the medical data is processed entirely on the handheld unit, sensitive patient information never leaves the room, ensuring compliance with strict privacy regulations even in the field.",
+        ],
+      },
+      {
+        heading: "3. Key Outcomes and Impact",
+        paragraphs: [
+          "The shift to portable, edge-powered diagnostics has significantly expanded the reach of preventative medicine.",
+          "9% referral rate: In a pilot program involving 3,000 patients, the system flagged over 280 cases, such as kidney cysts and gallstones, for urgent hospital referral that would have otherwise been missed.",
+          "Zero-latency triage: In emergency settings, AI-enabled ambulances can now detect strokes in real-time, allowing paramedics to begin life-saving treatment before the patient even reaches the ER.",
+          "Increased accuracy: In related trials at the Mayo Clinic, bedside edge devices for ECG analysis identified abnormal heart rhythms with over 92% accuracy, allowing for instant intervention.",
+        ],
+      },
+      {
+        heading: "4. The Edge Advantage",
+        paragraphs: [
+          "For Mount Sinai, the edge is the bedside. By putting expert-level intelligence into a battery-operated, rugged device, they have decoupled life-saving diagnostics from the four walls of the hospital, proving that Edge AI can be a critical tool for global health equity.",
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This article was compiled using publicly available material on Butterfly iQ deployments, Mount Sinai point-of-care imaging work, and clinical references tied to rural ultrasound pilots and bedside AI-assisted diagnostics.",
+        ],
+      },
+    ],
+    sources: [
+      "Butterfly Network materials on Butterfly iQ deployments",
+      "Mount Sinai point-of-care imaging references",
+      "Clinical references on rural ultrasound pilots and bedside AI-assisted diagnostics",
+    ],
+  },
 ];
 
 export function getCaseStudyBySlug(slug: string) {

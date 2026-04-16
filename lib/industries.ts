@@ -376,16 +376,19 @@ export const industries: IndustryData[] = [
     ],
     caseStudies: [
       {
-        title: "Life-Saving Reflex Concept Deployment",
+        title:
+          "Case Study #6: Mount Sinai & Butterfly Network – Edge AI for Point-of-Care Diagnostics",
         summary:
-          "A healthcare operator explored decentralized edge diagnostics to reduce the distance between medical expertise and point-of-care decisions.",
-        impact: "Stronger potential access to care in lower-connectivity environments.",
+          "A real-world look at how handheld, edge-enabled imaging expanded diagnostic reach in rural and low-resource healthcare settings.",
+        impact:
+          "Faster triage, improved referral detection, and stronger point-of-care decision support without cloud dependence.",
+        href: "/insights/case-study-healthcare-point-of-care-diagnostics",
       },
     ],
     relatedInsightTitle:
-      "The Life-Saving Reflex: Edge AI & Decentralized Healthcare in LatAm",
-    relatedInsightHref:
-      "https://www.linkedin.com/pulse/life-saving-reflex-edge-ai-decentralized-healthcare-latam-5ggce/?trackingId=y%2BRddqMXGj2DCeZSlxT5bg%3D%3D",
+      "Case Study #6: Mount Sinai & Butterfly Network – Edge AI for Point-of-Care Diagnostics",
+    relatedInsightHref: "/insights/case-study-healthcare-point-of-care-diagnostics",
+    relatedInsightCtaLabel: "Read Case Study",
   },
   {
     key: "retail",
