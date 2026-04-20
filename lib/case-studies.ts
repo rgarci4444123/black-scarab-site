@@ -402,7 +402,67 @@ export const caseStudies: CaseStudyArticle[] = [
       "Mount Sinai point-of-care imaging references",
       "Clinical references on rural ultrasound pilots and bedside AI-assisted diagnostics",
     ],
-  },
+  },,
+  {
+    slug: "case-study-smart-cities-urban-deterrence",
+    title:
+      "Case Study #7: Las Vegas Valley – Solar-Powered Edge AI for Urban Deterrence",
+    summary:
+      "A real-world look at how solar-powered, edge-enabled surveillance trailers gave cities a fast, off-grid way to monitor temporary crime hotspots and reduce false alarms.",
+    publishedLabel: "Case Study · Published April 20, 2026",
+    publishedDate: "2026-04-20",
+    industry: "Smart Cities",
+    image: "/article-images/case-study-urban-deterrence.jpg",
+    imageAlt:
+      "Solar-powered mobile surveillance trailer with cameras and edge AI overlooking Las Vegas at dusk.",
+    seoDescription:
+      "How solar-powered edge AI surveillance trailers helped cities deploy flexible urban deterrence systems without permanent infrastructure.",
+    sections: [
+      {
+        paragraphs: [
+          "In this study we examine how the Las Vegas Valley has deployed portable solar powered surveillance trailers to combat crime hotspots without the need for permanent infrastructure. By utilizing LiveView Technologies units equipped with Edge AI these systems act as a 24/7 force multiplier for law enforcement and private security.",
+        ],
+      },
+      {
+        heading: "1. The Challenge: Managing Dark Zones Without Power",
+        paragraphs: [
+          "Urban environments often have transient crime hotspots, such as sprawling parking lots or temporary event spaces, where installing traditional hardwired cameras is too slow and expensive.",
+          "Infrastructure dead zones: Many high-crime areas like construction sites or overflow parking lack the electrical grid access needed for standard security systems.",
+          "Staffing gaps: With local police departments facing labor shortages they cannot station officers at every potential hotspot 24/7.",
+          "The reaction gap: Traditional CCTV only records crime for later review. By the time a human monitors the footage the suspect is often long gone.",
+        ],
+      },
+      {
+        heading: "2. The Solution: Autonomous Sentry Trailers",
+        paragraphs: [
+          "The deployment involves mobile LVT trailers topped with high-efficiency solar panels and telescoping masts equipped with sophisticated Edge AI hardware.",
+          "Edge-based behavioral analysis: The heart of the unit is an NVIDIA Jetson edge AI platform. Rather than just recording, the processor analyzes video locally to distinguish between normal foot traffic and suspicious dwell time. This allows the system to ignore a shopper but instantly flag a person lingering near a loading dock.",
+          "The LVT hardware suite: Each unit typically features high-definition PTZ cameras and thermal sensors. Because the AI processes data on-device, it can trigger a talk-down speaker system or high-intensity strobe lights the millisecond a perimeter breach is detected, functioning entirely without a cloud connection.",
+          "Thermal and LPR integration: Many units include edge-powered Automatic License Plate Recognition. By using dedicated OCR algorithms running on the edge, the trailer can cross-reference vehicle plates against hot lists in real time, alerting authorities to stolen vehicles before a crime occurs.",
+        ],
+      },
+      {
+        heading: "3. Key Outcomes and Impact",
+        paragraphs: [
+          "The integration of solar-powered autonomy and edge intelligence has created a mobile safety net that adapts to a city's shifting needs.",
+          "30% to 40% crime reduction: Departments in cities like Perth Amboy and Dallas reported significant drops in property crime and vehicle theft after deploying these visible autonomous units in parking lots.",
+          "99% false alarm reduction: By processing data at the edge the system can filter out swaying trees or animals locally only alerting human operators when a genuine threat is detected.",
+          "Rapid deployment: Unlike permanent cameras which take months to permit and wire these trailers can be dropped and active in less than 20 minutes for emergency response or public events like the MLB All-Star game.",
+        ],
+      },
+      {
+        heading: "4. The Edge Advantage",
+        paragraphs: [
+          "For urban safety the edge is the parking lot corner. By combining solar energy with local intelligence cities have created a flexible deterrent that operates entirely off-grid ensuring that even the most remote or temporary locations remain under a watchful AI eye.",
+        ],
+      },
+    ],
+    sources: [
+      "LiveView Technologies materials on mobile solar surveillance systems",
+      "Public references on Las Vegas Valley and comparable municipal deterrence deployments",
+      "Materials on Jetson-powered behavioral analysis, ALPR, and rapid-deployment urban security systems",
+    ],
+  }
 ];
 
 export function getCaseStudyBySlug(slug: string) {
