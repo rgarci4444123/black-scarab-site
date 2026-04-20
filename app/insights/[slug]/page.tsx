@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import SiteHeader from "@/components/site-header";
@@ -7,6 +8,46 @@ import { caseStudies, getCaseStudyBySlug } from "@/lib/case-studies";
 type Props = {
   params: Promise<{ slug: string }>;
 };
+
+const baseUrl = "https://www.blackscarab.ai";
+const publisherName = "Black Scarab";
+const publisherLogoUrl = `${baseUrl}/icon.png`;
+const authorUrl = `${baseUrl}/about`;
+
+function getArticleUrl(slug: string) {
+  return `${baseUrl}/insights/${slug}`;
+}
+
+function getIndustryHref(industry: string) {
+  if (industry === "Manufacturing") {
+    return "/industries/manufacturing";
+  }
+
+  if (industry === "Agriculture") {
+    return "/industries/agriculture";
+  }
+
+  return "/insights";
+}
+
+function getRelatedArticles(slug: string, industry: string) {
+  return [...caseStudies]
+    .filter((candidate) => candidate.slug !== slug)
+    .sort((left, right) => {
+      const leftIndustryScore = left.industry === industry ? 1 : 0;
+      const rightIndustryScore = right.industry === industry ? 1 : 0;
+
+      if (leftIndustryScore !== rightIndustryScore) {
+        return rightIndustryScore - leftIndustryScore;
+      }
+
+      return (
+        new Date(`${right.publishedDate}T12:00:00`).getTime() -
+        new Date(`${left.publishedDate}T12:00:00`).getTime()
+      );
+    })
+    .slice(0, 3);
+}
 
 export async function generateStaticParams() {
   return caseStudies.map((article) => ({ slug: article.slug }));
@@ -22,9 +63,35 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const articleUrl = getArticleUrl(article.slug);
   return {
-    title: `${article.title} | Black Scarab`,
+    title: article.title,
     description: article.seoDescription,
+    alternates: {
+      canonical: articleUrl,
+    },
+    openGraph: {
+      type: "article",
+      url: articleUrl,
+      title: article.title,
+      description: article.seoDescription,
+      siteName: publisherName,
+      publishedTime: `${article.publishedDate}T12:00:00.000Z`,
+      authors: [publisherName],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.seoDescription,
+    },
+    keywords: [
+      article.industry,
+      "edge AI",
+      "AI infrastructure",
+      "case study",
+      "Latin America",
+      "Black Scarab",
+    ],
   };
 }
 
@@ -36,20 +103,14 @@ export default async function CaseStudyPage({ params }: Props) {
     notFound();
   }
 
-  const formattedDate = new Date(`${article.publishedDate}T12:00:00`).toLocaleDateString(
-    "en-US",
-    {
-      month: "long",
-      day: "numeric",
-      year: "numeric",
-    },
-  );
-  const industryHref =
-    article.industry === "Manufacturing"
-      ? "/industries/manufacturing"
-      : article.industry === "Agriculture"
-        ? "/industries/agriculture"
-        : "/insights";
+  const formattedDate = new Date(
+    `${article.publishedDate}T12:00:00`,
+  ).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+  const industryHref = getIndustryHref(article.industry);
   const industryLinkLabel =
     industryHref === "/insights" ? "Insights index" : `${article.industry} page`;
   const ctaTitle =
@@ -70,9 +131,69 @@ export default async function CaseStudyPage({ params }: Props) {
       : article.industry === "Manufacturing"
         ? "Explore Manufacturing"
         : "Back to Insights";
+  const relatedArticles = getRelatedArticles(article.slug, article.industry);
+  const articleUrl = getArticleUrl(article.slug);
+  const imageUrl = `${baseUrl}${article.image}`;
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: baseUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Insights",
+        item: `${baseUrl}/insights`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: article.title,
+        item: articleUrl,
+      },
+    ],
+  };
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    mainEntityOfPage: articleUrl,
+    headline: article.title,
+    description: article.seoDescription,
+    image: [imageUrl],
+    datePublished: `${article.publishedDate}T12:00:00.000Z`,
+    dateModified: `${article.publishedDate}T12:00:00.000Z`,
+    author: {
+      "@type": "Organization",
+      name: publisherName,
+      url: authorUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: publisherName,
+      logo: {
+        "@type": "ImageObject",
+        url: publisherLogoUrl,
+      },
+    },
+    articleSection: article.industry,
+    keywords: ["edge AI", article.industry, "case study", "AI infrastructure"],
+    citation: article.sourceLinks?.map((source) => source.url) ?? [],
+  };
 
   return (
     <main className="min-h-screen bg-[#f6f4ef] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([articleSchema, breadcrumbSchema]),
+        }}
+      />
+
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
         <SiteHeader
           homeHref="/"
@@ -80,7 +201,7 @@ export default async function CaseStudyPage({ params }: Props) {
             { label: "Products", href: "/catalog", isPage: true },
             { label: "Models", href: "/models", isPage: true },
             { label: "Insights", href: "/insights", isPage: true },
-            { label: "About", href: "/#about", isPage: true },
+            { label: "About", href: "/about", isPage: true },
           ]}
           ctaLabel="Get Started"
           ctaHref="/intake"
@@ -90,6 +211,23 @@ export default async function CaseStudyPage({ params }: Props) {
           <section className="border-b border-[#efeae1] bg-[#faf8f3] px-6 py-14 md:px-10 md:py-18">
             <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
               <div>
+                <nav
+                  aria-label="Breadcrumb"
+                  className="mb-5 flex flex-wrap items-center gap-2 text-sm text-[#6b7280]"
+                >
+                  <Link href="/" className="transition hover:text-[#111827]">
+                    Home
+                  </Link>
+                  <span className="text-[#c9c1b5]">/</span>
+                  <Link
+                    href="/insights"
+                    className="transition hover:text-[#111827]"
+                  >
+                    Insights
+                  </Link>
+                  <span className="text-[#c9c1b5]">/</span>
+                  <span className="text-[#111827]">{article.title}</span>
+                </nav>
                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
                   Case Study · {article.industry}
                 </p>
@@ -125,12 +263,15 @@ export default async function CaseStudyPage({ params }: Props) {
                 </div>
               </div>
 
-              <div className="overflow-hidden rounded-[28px] border border-[#dde7d7] bg-[#edf4e8] shadow-[0_14px_40px_rgba(15,23,42,0.08)]">
-                <img
+              <div className="relative overflow-hidden rounded-[28px] border border-[#dde7d7] bg-[#edf4e8] shadow-[0_14px_40px_rgba(15,23,42,0.08)]">
+                <Image
                   src={article.image}
                   alt={article.imageAlt}
-                  className="h-[320px] w-full object-cover lg:h-[440px]"
+                  fill
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  className="object-cover"
                 />
+                <div className="h-[320px] lg:h-[440px]" />
               </div>
             </div>
           </section>
@@ -177,18 +318,71 @@ export default async function CaseStudyPage({ params }: Props) {
                   </div>
                   <div>
                     <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">
+                      Published
+                    </p>
+                    <p className="mt-2 text-sm font-medium text-[#111827]">
+                      {formattedDate}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">
                       Sources
                     </p>
                     <ul className="mt-2 space-y-2 text-sm leading-6 text-[#6b7280]">
-                      {article.sources.map((source) => (
-                        <li key={source}>{source}</li>
-                      ))}
+                      {article.sourceLinks?.length
+                        ? article.sourceLinks.map((source) => (
+                            <li key={source.url}>
+                              <a
+                                href={source.url}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="transition hover:text-[#111827] hover:underline"
+                              >
+                                {source.label}
+                              </a>
+                            </li>
+                          ))
+                        : article.sources.map((source) => (
+                            <li key={source}>{source}</li>
+                          ))}
                     </ul>
                   </div>
                 </div>
               </aside>
             </div>
           </section>
+
+          {relatedArticles.length > 0 ? (
+            <section className="border-t border-[#efeae1] px-6 py-14 md:px-10">
+              <div className="mx-auto max-w-6xl">
+                <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
+                  Related Case Studies
+                </p>
+                <div className="mt-6 grid gap-5 md:grid-cols-3">
+                  {relatedArticles.map((relatedArticle) => (
+                    <Link
+                      key={relatedArticle.slug}
+                      href={`/insights/${relatedArticle.slug}`}
+                      className="rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(15,23,42,0.08)]"
+                    >
+                      <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">
+                        {relatedArticle.industry}
+                      </p>
+                      <h2 className="mt-4 text-xl font-semibold tracking-tight">
+                        {relatedArticle.title}
+                      </h2>
+                      <p className="mt-4 text-sm leading-6 text-[#6b7280]">
+                        {relatedArticle.summary}
+                      </p>
+                      <p className="mt-6 text-sm font-medium text-[#111827]">
+                        Read related case study
+                      </p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </section>
+          ) : null}
 
           <section className="border-t border-[#efeae1] bg-[#faf8f3] px-6 py-14 md:px-10">
             <div className="mx-auto max-w-4xl text-center">

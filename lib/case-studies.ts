@@ -3,6 +3,11 @@ export type CaseStudySection = {
   paragraphs: string[];
 };
 
+export type CaseStudySourceLink = {
+  label: string;
+  url: string;
+};
+
 export type CaseStudyArticle = {
   slug: string;
   title: string;
@@ -16,6 +21,7 @@ export type CaseStudyArticle = {
   linkedinUrl?: string;
   sections: CaseStudySection[];
   sources: string[];
+  sourceLinks?: CaseStudySourceLink[];
 };
 
 export const caseStudies: CaseStudyArticle[] = [
@@ -80,6 +86,20 @@ export const caseStudies: CaseStudyArticle[] = [
       "2025 John Deere Impact Report",
       "2024 Iowa State University field study",
       "Blue River Technology technical specifications",
+    ],
+    sourceLinks: [
+      {
+        label: "John Deere See & Spray Gen 2",
+        url: "https://www.deere.com/SeeAndSpray",
+      },
+      {
+        label: "John Deere See & Spray herbicide savings release",
+        url: "https://www.deere.com/en/news/all-news/see-spray-herbicide-savings/",
+      },
+      {
+        label: "John Deere sprayer updates and See & Spray improvements",
+        url: "https://www.deere.com/en/news/all-news/sprayer-updates-maximize-yields/",
+      },
     ],
   },
   {
@@ -146,6 +166,20 @@ export const caseStudies: CaseStudyArticle[] = [
       "Weld Cube technical whitepapers",
       "Intel Edge Insights for Industrial case documentation",
     ],
+    sourceLinks: [
+      {
+        label: "Audi AI quality control for spot welds",
+        url: "https://www.audi-mediacenter.com/en/press-releases/audi-begins-roll-out-of-artificial-intelligence-for-quality-control-of-spot-welds-15443",
+      },
+      {
+        label: "Intel customer spotlight on Audi manufacturing transformation",
+        url: "https://www.intel.com/content/www/us/en/customer-spotlight/stories/audi-automated-factory.html",
+      },
+      {
+        label: "Audi production AI scale-up",
+        url: "https://www.audi-mediacenter.com/en/press-releases/audi-scales-up-deployment-of-artificial-intelligence-in-production-17002",
+      },
+    ],
   },
   {
     slug: "case-study-smart-cities-lamppost-platform",
@@ -210,6 +244,20 @@ export const caseStudies: CaseStudyArticle[] = [
       "Smart Nation Singapore Urban Living initiative reports",
       "GovTech Singapore Lamppost-as-a-Platform technical whitepapers",
       "NVIDIA Metropolis case documentation for smart city deployments",
+    ],
+    sourceLinks: [
+      {
+        label: "LTA intelligent transport systems overview",
+        url: "https://www.lta.gov.sg/content/ltagov/en/getting_around/driving_in_singapore/intelligent_transport_systems.html",
+      },
+      {
+        label: "LTA smart street light article",
+        url: "https://www.lta.gov.sg/content/ltagov/en/who_we_are/statistics_and_publications/Connect/streetlights.html",
+      },
+      {
+        label: "LTA smart transport initiatives",
+        url: "https://www.lta.gov.sg/content/ltaweb/en/public-transport/smart-transport-initiatives.html",
+      },
     ],
   },
   {
@@ -276,6 +324,20 @@ export const caseStudies: CaseStudyArticle[] = [
       "Walmart Global Tech technical blogs",
       "Operational reports on AI-driven supply chain optimization",
     ],
+    sourceLinks: [
+      {
+        label: "Walmart Intelligent Retail Lab announcement",
+        url: "https://corporate.walmart.com/news/2019/04/25/walmarts-new-intelligent-retail-lab-shows-a-glimpse-into-the-future-of-retail-irl",
+      },
+      {
+        label: "Walmart technology overview",
+        url: "https://corporate.walmart.com/about/technology",
+      },
+      {
+        label: "Walmart Scintilla In-Store launch",
+        url: "https://corporate.walmart.com/news/2026/02/23/introducing-scintilla-in-store-the-future-of-third-party-retail-execution-at-walmart",
+      },
+    ],
   },
   {
     slug: "case-study-logistics-smart-sorting-hubs",
@@ -335,6 +397,20 @@ export const caseStudies: CaseStudyArticle[] = [
       "FedEx operational materials on Memphis World Hub and Cologne automation",
       "FedEx Singapore robotic sorting references",
       "Materials on DexR, QuikBot collaborations, and edge-enabled package operations",
+    ],
+    sourceLinks: [
+      {
+        label: "FedEx automated sorting facility at Memphis World Hub",
+        url: "https://newsroom.fedex.com/newsroom/global-english/fedex-unveils-new-automated-sorting-facility-at-memphis-world-hub",
+      },
+      {
+        label: "FedEx AI-powered sorting robot in Cologne",
+        url: "https://newsroom.fedex.com/newsroom/europe-english/fedex-improves-operational-processes-at-its-air-network-location-in-cologne-with-ai-powered-sorting-robot",
+      },
+      {
+        label: "FedEx Cologne automated hub background",
+        url: "https://newsroom.fedex.com/newsroom/global-english/fedex-inaugurates-new-solar-powered-hub-at-cologne-bonn-airport",
+      },
     ],
   },
   {
@@ -402,6 +478,20 @@ export const caseStudies: CaseStudyArticle[] = [
       "Mount Sinai point-of-care imaging references",
       "Clinical references on rural ultrasound pilots and bedside AI-assisted diagnostics",
     ],
+    sourceLinks: [
+      {
+        label: "Butterfly iQ3 FDA clearance",
+        url: "https://www.butterflynetwork.com/press-releases/fda-clearance-butterfly-iq3",
+      },
+      {
+        label: "Butterfly iQ3 launch",
+        url: "https://www.butterflynetwork.com/press-releases/butterfly-network-launches-butterfly-iq3",
+      },
+      {
+        label: "Mount Sinai point-of-care ultrasound reporting",
+        url: "https://www.mountsinai.org/about/newsroom/2012/pointofcare-ultrasound-is-more-accurate-than-the-stethoscope-in-diagnosing-pneumonia-in-children",
+      },
+    ],
   },
   {
     slug: "case-study-smart-cities-urban-deterrence",
@@ -467,6 +557,16 @@ export const caseStudies: CaseStudyArticle[] = [
       "LiveView Technologies materials on mobile solar surveillance systems",
       "Public references on Las Vegas Valley and comparable municipal deterrence deployments",
       "Materials on Jetson-powered behavioral analysis, ALPR, and rapid-deployment urban security systems",
+    ],
+    sourceLinks: [
+      {
+        label: "LVT mobile security solutions",
+        url: "https://www.lvt.com/hardware/mobile-security-cameras",
+      },
+      {
+        label: "LVT license plate recognition release",
+        url: "https://www.lvt.com/press/lvt-releases-license-plate-recognition-powered-by-insight-lpr",
+      },
     ],
   }
 ];
