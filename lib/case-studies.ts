@@ -568,6 +568,94 @@ export const caseStudies: CaseStudyArticle[] = [
         url: "https://www.lvt.com/press/lvt-releases-license-plate-recognition-powered-by-insight-lpr",
       },
     ],
+  },
+  {
+    slug: "case-study-burro-autonomous-farming",
+    title:
+      "Case Study #8: Burro's Edge AI Robots for Autonomous Farming in Table Grapes and Berries",
+    summary:
+      "A real-world look at how Burro uses onboard edge AI, computer vision, and Pop-Up Autonomy to reduce harvest walking, ease labor strain, and improve crew productivity in specialty crops.",
+    publishedLabel: "Case Study · Published April 28, 2026",
+    publishedDate: "2026-04-28",
+    industry: "Agriculture",
+    image: "/article-images/case-study-burro-autonomous-farming.png",
+    imageAlt:
+      "Autonomous agricultural robots assisting vineyard workers during grape harvest in a row-crop field.",
+    seoDescription:
+      "How Burro uses edge AI and autonomous farming robots to improve harvest productivity in vineyards and berry operations without new infrastructure.",
+    sections: [
+      {
+        paragraphs: [
+          "In this case study, we examine how Burro has deployed collaborative autonomous robots to solve the walking problem in table grape and berry harvests. By using Edge AI and what Burro calls Pop-Up Autonomy, these robotic helpers can navigate changing outdoor environments alongside human crews without requiring a central command system or new infrastructure.",
+        ],
+      },
+      {
+        heading: "1. The Challenge: Solving the Labor Crisis in Specialty Crops",
+        paragraphs: [
+          "In high-value specialty crops, labor-intensive tasks like harvesting involve a significant amount of non-productive movement.",
+          "The Mobility Gap: During harvest, skilled pickers often spend a meaningful share of their day walking fruit from the row to a central collection point instead of picking.",
+          "Physical Strain: Repetitive hauling in heat and uneven field conditions accelerates fatigue and makes retention harder during peak harvest windows.",
+          "Connectivity Dead Zones: Many vineyards, berry farms, and orchards operate in areas where cellular coverage is weak and canopy conditions can make cloud-dependent navigation unreliable.",
+          "Dynamic Environments: Agricultural rows are never static. The system must detect workers, bins, equipment, and obstacles in real time to operate safely.",
+        ],
+      },
+      {
+        heading: '2. The Solution: "Pop-Up Autonomy" via Edge AI',
+        paragraphs: [
+          "Burro positions the robot as an autonomous conveyor belt for the field, combining onboard compute, cameras, and mission software to reduce low-value walking.",
+          "On-Device Computer Vision: Burro states that its robots process data locally on the machine, using computer vision, AI, and onboard computing rather than relying on a constant cloud link.",
+          "High-Volume Local Sensing: The Burro platform highlights up to 1 terabyte of data collection per hour, with cameras, GPS, and local storage supporting row navigation and obstacle handling in changing outdoor conditions.",
+          'Follow and Teach-and-Repeat Modes: With Pop-Up Autonomy and BOSS mission software, a worker can quickly train a route once and have the robot repeat it, reducing setup time and avoiding the need for new site infrastructure.',
+          "Multi-Modal Navigation: Burro also emphasizes indoor and outdoor navigation modes, including semantic mapping and LiDAR-assisted precision in environments where GPS is limited or unavailable.",
+        ],
+      },
+      {
+        heading: "3. Key Outcomes and Impact",
+        paragraphs: [
+          "The result is a people-plus-robots workflow that helps farms scale output without scaling physical strain at the same rate.",
+          "Productivity Gains: Burro says its harvest-assist workflows help automate logistics for 4 to 8 person teams in crops like table grapes, blueberries, raspberries, and blackberries.",
+          "Lower Labor Dependency: Burro positions the platform as a way to reduce labor dependency by automating the grunt work that pulls crews away from high-value tasks.",
+          "Rapid Return on Investment: Burro markets a less-than-one-year ROI profile for many deployments, driven by productivity improvements and reduced dependence on traditional transport labor.",
+          "Proven Reliability: Burro reports more than 800,000 autonomous hours across its fleet, reinforcing that edge-based autonomy can survive the variability of real farm operations.",
+        ],
+      },
+      {
+        heading: "4. The Edge Advantage in Agriculture",
+        paragraphs: [
+          'For Burro, the edge is the space between the picker and the packing station. By embedding intelligence onboard, the robot can be put to work quickly, adapt to real field conditions, and extend the effectiveness of human crews through a practical "people-plus-robots" model.',
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This article was compiled using Burro product, harvest-assist, and technology materials describing Pop-Up Autonomy, onboard sensing, autonomous harvest workflows, labor reduction positioning, and cumulative field operating hours.",
+        ],
+      },
+    ],
+    sources: [
+      "Burro product overview and specifications",
+      "Burro harvest-assist materials for permanent crops",
+      "Burro technology materials on Pop-Up Autonomy and navigation",
+      "Burro company homepage operating metrics",
+    ],
+    sourceLinks: [
+      {
+        label: "Burro product overview and specifications",
+        url: "https://burro.ai/burro/",
+      },
+      {
+        label: "Burro harvest assist for permanent crops",
+        url: "https://burro.ai/harvest-assist/",
+      },
+      {
+        label: "Burro technology overview",
+        url: "https://burro.ai/technology/",
+      },
+      {
+        label: "Burro homepage and operating metrics",
+        url: "https://burro.ai/",
+      },
+    ],
   }
 ];
 
