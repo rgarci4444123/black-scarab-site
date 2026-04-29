@@ -656,6 +656,93 @@ export const caseStudies: CaseStudyArticle[] = [
         url: "https://burro.ai/",
       },
     ],
+  },
+  {
+    slug: "case-study-medtronic-gi-genius-edge-ai-colonoscopy",
+    title:
+      "Case Study #9: Medtronic GI Genius and Edge AI for Real-Time Colonoscopy Detection",
+    summary:
+      "A real-world look at how Medtronic's GI Genius intelligent endoscopy module uses edge AI to support real-time polyp detection, improve adenoma detection rates, and reduce missed lesions during colonoscopy.",
+    publishedLabel: "Case Study · Published April 29, 2026",
+    publishedDate: "2026-04-29",
+    industry: "Healthcare",
+    image: "/article-images/case-study-medtronic-gi-genius.png",
+    imageAlt:
+      "Endoscopy procedure monitor highlighting a suspected colorectal lesion with AI assistance during colonoscopy.",
+    seoDescription:
+      "How Medtronic GI Genius uses edge AI and real-time computer vision during colonoscopy to support colorectal lesion detection and improve adenoma detection rates.",
+    sections: [
+      {
+        paragraphs: [
+          "In this case study, we examine how Medtronic has integrated Edge AI into gastrointestinal care through its GI Genius intelligent endoscopy module. The platform uses real-time computer vision to assist gastroenterologists in identifying potential colorectal lesions during colonoscopy, processing the video stream locally to provide immediate procedural support.",
+        ],
+      },
+      {
+        heading: '1. The Challenge: The "Human Gap" in Detection',
+        paragraphs: [
+          "Colorectal cancer is one of the clearest examples of where better detection changes outcomes, but colonoscopy remains highly operator dependent.",
+          "The Miss Rate Problem: Medtronic cites clinical literature showing that colorectal neoplasia can still be missed during standard procedures, especially when lesions are small, flat, or visually subtle.",
+          "Variable Performance: Adenoma detection rates can vary significantly from one endoscopist to another, and consistency can be affected by fatigue, workload, and procedure complexity.",
+          "The Latency Constraint: If AI is going to be useful inside a live procedure, it has to respond while the lesion is still on screen. That makes local, edge-based inference fundamentally more practical than cloud-dependent processing.",
+        ],
+      },
+      {
+        heading: '2. The Solution: Real-Time "AI Eyes" at the Edge',
+        paragraphs: [
+          "Medtronic positions GI Genius as an always-on second observer that operates directly in the procedure room.",
+          "Hardware at the Edge: The module sits in the local endoscopy hardware chain and overlays visual markers on the live colonoscopy video without replacing the clinician's judgment.",
+          "Deep Learning on the Video Stream: Medtronic says the system is trained on a dataset of 13 million polyp images and is designed to detect polyps of different sizes, shapes, and morphologies in real time.",
+          "Clinical Workflow Fit: Because GI Genius is designed as an accessory to standard white-light colonoscopy and integrates with major endoscopy brands, hospitals can add AI assistance without replacing their full installed base.",
+          "Real-Time Visual Marking: When the system detects a potential lesion, it places a graphical marker on screen immediately, keeping the decision support at the exact point of care.",
+        ],
+      },
+      {
+        heading: "3. Key Outcomes and Impact",
+        paragraphs: [
+          "The deployment of Edge AI in endoscopy shifts AI from retrospective analysis into the live procedural moment where it can change outcomes.",
+          "14% Absolute Increase in ADR: Medtronic highlights studies showing GI Genius can improve adenoma detection rate by an absolute value of up to 14%.",
+          "High Sensitivity: Medtronic reports an overall sensitivity per lesion of 99.7% with less than 1% false positives in cited performance data.",
+          "Efficiency Without Changing Withdrawal Time: Medtronic also states the system can reduce the risk of undetected polyps without requiring a change in withdrawal time, helping fit AI into existing endoscopy workflows.",
+          "Real-World Scale: On November 25, 2024, Medtronic announced a three-year VA contract that added almost 100 GI Genius units across VA medical centers, extending AI-assisted colonoscopy access to veterans nationwide.",
+        ],
+      },
+      {
+        heading: "4. The Edge Advantage",
+        paragraphs: [
+          'For Medtronic, the edge is the procedural monitor itself. By embedding intelligence directly into the live video stream, GI Genius creates a digital safety net that supports the physician at the exact moment a subtle lesion appears, where speed, reliability, and local inference matter most.',
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This article was compiled using Medtronic GI Genius product materials, Medtronic educational documentation on AI-assisted colonoscopy, the public GI Genius information page, and Medtronic's November 25, 2024 VA contract announcement.",
+        ],
+      },
+    ],
+    sources: [
+      "Medtronic GI Genius product overview",
+      "Medtronic educational material on AI-assisted colonoscopy",
+      "Medtronic GI Genius public information page",
+      "Medtronic VA expansion announcement from November 25, 2024",
+    ],
+    sourceLinks: [
+      {
+        label: "Medtronic GI Genius product overview",
+        url: "https://www.medtronic.com/en-us/healthcare-professionals/products/digestive-gastrointestinal/gastrointestinal-artificial-intelligence/gi-genius-intelligent-endoscopy-module.html",
+      },
+      {
+        label: "Medtronic AI in gastroenterology educational page",
+        url: "https://www.medtronic.com/en-us/healthcare-professionals/education-training/genius-academy/artificial-intelligence-in-gastroenterology.html",
+      },
+      {
+        label: "GI Genius public information page",
+        url: "https://www.medtronic.com/genius",
+      },
+      {
+        label: "Medtronic awarded VA contract on November 25, 2024",
+        url: "https://news.medtronic.com/Medtronic-awarded-VA-contract-to-expand-GI-Genius-TM-AI-technology-to-enhance-colorectal-cancer-detection-in-veterans",
+      },
+    ],
   }
 ];
 
