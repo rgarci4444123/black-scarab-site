@@ -743,6 +743,97 @@ export const caseStudies: CaseStudyArticle[] = [
         url: "https://news.medtronic.com/Medtronic-awarded-VA-contract-to-expand-GI-Genius-TM-AI-technology-to-enhance-colorectal-cancer-detection-in-veterans",
       },
     ],
+  },
+  {
+    slug: "case-study-coca-cola-hbc-ar-edge-ai-warehouse-logistics",
+    title:
+      "Case Study #10: Coca-Cola HBC Warehouse Logistics with AR Picking and Edge AI",
+    summary:
+      "A real-world look at how Coca-Cola HBC used AR smart glasses, edge-enabled picking workflows, and TeamViewer Frontline to improve warehouse picking accuracy, reduce training time, and support hands-free logistics operations.",
+    publishedLabel: "Case Study · Published May 1, 2026",
+    publishedDate: "2026-05-01",
+    industry: "Transportation & Logistics",
+    image: "/article-images/case-study-coca-cola-hbc-ar-picking.png",
+    imageAlt:
+      "Warehouse worker using AR smart glasses for hands-free beverage picking and logistics guidance inside a distribution center.",
+    seoDescription:
+      "How Coca-Cola HBC improved warehouse logistics with AR picking, smart glasses, and edge-enabled workflows to boost accuracy and productivity.",
+    sections: [
+      {
+        paragraphs: [
+          "In this case study, we examine how Coca-Cola HBC modernized warehouse logistics by replacing paper-based and handheld picking workflows with augmented reality and edge-enabled wearable systems. By combining smart glasses, local device logic, and TeamViewer Frontline vision picking, the bottler created a hands-free process that improves speed, accuracy, and worker ergonomics in high-volume beverage operations.",
+        ],
+      },
+      {
+        heading: "1. What It Solved",
+        paragraphs: [
+          "Coca-Cola HBC's warehouse teams were dealing with the familiar limitations of pick-by-paper and handheld RF scanner workflows in mixed pallet environments.",
+          "Accuracy Bottlenecks: Manual picking methods increased the risk of quantity and product errors, leading to returns, rework, and customer dissatisfaction.",
+          "Safety and Ergonomics: Handheld scanners and paper lists forced workers to dedicate a hand and part of their attention to the device instead of the physical movement of heavy crates and packs.",
+          "Training Time: New workers had to learn warehouse routes, SKUs, and pick logic the hard way. The AR interface reduced training time by 30% by showing step-by-step visual instructions in context.",
+        ],
+      },
+      {
+        heading: "2. Process Improvements",
+        paragraphs: [
+          "The shift to AR-supported picking changed both the accuracy profile and the pace of warehouse execution.",
+          "Accuracy Peak: TeamViewer reports that Coca-Cola HBC reached 99.99% picking accuracy after roughly two months of deployment.",
+          "Productivity Boost: TeamViewer also says picking performance increased by 6% to 10% because workers located items faster and no longer depended on paper workflows.",
+          "Real-Time Inventory Flow: Because the AR workflow is integrated with warehouse systems, confirmation data can flow back immediately as items are picked, improving inventory visibility and reducing fulfillment friction.",
+          "CAPEX Efficiency: TeamViewer's case study notes that the solution was cost-effective relative to maintaining or renewing traditional rugged handheld hardware fleets.",
+        ],
+      },
+      {
+        heading: "3. Hardware and Software Used",
+        paragraphs: [
+          "The deployment depends on specialized wearable hardware and a warehouse software layer that keeps instructions with the worker instead of on a distant terminal.",
+          "Hardware: Smart Glasses: Coca-Cola HBC used industrial AR smart glasses for vision picking workflows, giving warehouse staff a hands-free interface directly in their field of view.",
+          "On-Device Scanning and Guidance: The wearable setup supports immediate confirmation and visual navigation without forcing the operator back to separate paper or handheld tools.",
+          "Software: TeamViewer Frontline Pick: The vision picking application delivers the AR picking interface and workflow logic used in the warehouse.",
+          "Enterprise Integration: TeamViewer states the system integrates with warehouse management systems so task data flows to the glasses and confirmations flow back into logistics operations in real time.",
+        ],
+      },
+      {
+        heading: "4. The Edge Advantage",
+        paragraphs: [
+          'For Coca-Cola HBC, the edge is the worker\'s line of sight on the warehouse floor. By putting instructions, confirmations, and navigation cues directly into a wearable interface, the company reduced friction at the exact moment a picker needs to act. That creates a practical "hands-free logistics" model where speed, ergonomics, and accuracy reinforce each other.',
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This article was compiled using TeamViewer's official Coca-Cola HBC customer success material, TeamViewer Frontline platform pages describing warehouse picking performance, and Coca-Cola HBC's 2022 Hungary logistics announcement about AI-supported warehouse operations.",
+        ],
+      },
+    ],
+    sources: [
+      "TeamViewer Coca-Cola HBC customer success story",
+      "TeamViewer Frontline platform and vision picking materials",
+      "Coca-Cola HBC Hungary logistics AI announcement",
+      "RealWear HMT-1 product overview for rugged hands-free wearable context",
+    ],
+    sourceLinks: [
+      {
+        label: "TeamViewer Coca-Cola HBC customer success story",
+        url: "https://www.teamviewer.com/en-us/success-stories/coca-cola/",
+      },
+      {
+        label: "TeamViewer Frontline platform page",
+        url: "https://www.teamviewer.com/en-ca/products/frontline/platform/",
+      },
+      {
+        label: "TeamViewer vision picking overview",
+        url: "https://www.teamviewer.com/en/solutions/use-cases/vision-picking/",
+      },
+      {
+        label: "Coca-Cola HBC Hungary logistics AI announcement",
+        url: "https://hu.coca-colahellenic.com/en/media/news/corporate/2022/robot-picking-coca-cola-hbc-hungary",
+      },
+      {
+        label: "RealWear HMT-1 product overview",
+        url: "https://support.realwear.com/knowledge/realwear-hmt-1-product-overview",
+      },
+    ],
   }
 ];
 
