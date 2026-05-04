@@ -843,8 +843,8 @@ export const caseStudies: CaseStudyArticle[] = [
       "The Edge AI Roadmap: 10 Platforms Shaping the Future of Edge Computing",
     summary:
       "A practical guide to the 10 edge AI platforms, chips, and deployment stacks shaping modern robotics, vision systems, local LLMs, industrial automation, and connected devices.",
-    publishedLabel: "Guide · Published May 4, 2026",
-    publishedDate: "2026-05-04",
+    publishedLabel: "Guide · Published May 2, 2026",
+    publishedDate: "2026-05-02",
     typeLabel: "Guide",
     formatLabel: "Website-native platform guide",
     industry: "Cross-Industry",
