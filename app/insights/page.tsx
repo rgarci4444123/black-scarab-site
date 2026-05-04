@@ -27,7 +27,7 @@ export default function InsightsPage() {
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#6b7280]">
             Perspectives on edge AI, industrial deployment, and the sectors
-            shaping the future of Latin America.
+            shaping the future of real-world operations.
 
           </p>
         </section>

@@ -131,7 +131,7 @@ export default function AboutPage() {
             <p>
               Our articles and case studies reflect that same lens: practical,
               deployment-oriented, and grounded in real examples from the
-              industries reshaping Latin America and beyond.
+              industries adopting edge AI across global markets.
             </p>
           </div>
         </section>

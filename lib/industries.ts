@@ -230,7 +230,7 @@ export const industries: IndustryData[] = [
     imageAlt: "Manufacturing edge AI system",
     solutionTitle: "Autonomous Factory Stack",
     solutionDescription:
-      "Machine vision, edge compute, and industrial monitoring systems built for nearshoring-era factories across LatAm.",
+      "Machine vision, edge compute, and industrial monitoring systems built for nearshoring-era factories and globally distributed production environments.",
     cta: "Design My Factory Stack",
     cards: [
       {

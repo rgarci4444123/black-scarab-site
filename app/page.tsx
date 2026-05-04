@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "smart cities",
     "agriculture AI",
     "manufacturing AI",
-    "Latin America",
+    "global deployment",
     "Black Scarab",
   ],
 };

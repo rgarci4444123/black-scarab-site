@@ -74,7 +74,7 @@ export const models: ModelData[] = [
     edgeFit:
       "Well suited when teams need broad utility and multilingual support without relying entirely on cloud-hosted APIs.",
     blackScarabPov:
-      "This is attractive for LatAm-facing deployments because it helps bridge language flexibility with practical local deployment options.",
+      "This is attractive for globally distributed deployments because it helps bridge language flexibility with practical local deployment options.",
     officialUrl: "https://qwenlm.github.io/",
   },
   {

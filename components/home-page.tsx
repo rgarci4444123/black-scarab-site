@@ -39,7 +39,8 @@ export default function HomePage() {
               AI Infrastructure for Industry
             </h1>
             <p className="relative mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#6b7280]">
-              Advanced Edge AI systems designed for real-world operations.
+              Advanced edge AI systems designed for real-world operations across
+              global industries.
             </p>
 
             <div className="relative mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -179,7 +180,8 @@ export default function HomePage() {
                 </h2>
                 <p className="mt-4 text-lg leading-8 text-[#6b7280]">
                   A curated selection of Black Scarab articles exploring edge AI,
-                  industrial deployment, and the sectors reshaping Latin America.
+                  industrial deployment, and the systems reshaping global
+                  operations.
                 </p>
               </div>
 

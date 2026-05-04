@@ -90,7 +90,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "edge AI",
       "AI infrastructure",
       typeLabel.toLowerCase(),
-      "Latin America",
+      "real-world deployment",
       "Black Scarab",
     ],
   };
