@@ -998,6 +998,122 @@ export const caseStudies: CaseStudyArticle[] = [
         url: "https://docs.luxonis.com/hardware/products/OAK-D",
       },
     ],
+  },
+  {
+    slug: "nvidia-jetson-agx-orin-edge-ai-guide",
+    title:
+      "Why NVIDIA Jetson AGX Orin Leads Edge AI in 2026",
+    summary:
+      "A practical guide to why NVIDIA Jetson AGX Orin remains a top platform for edge AI, robotics, multimodal vision, generative AI, and industrial deployment.",
+    publishedLabel: "Guide · Published May 3, 2026",
+    publishedDate: "2026-05-03",
+    typeLabel: "Guide",
+    formatLabel: "Website-native platform deep dive",
+    industry: "Cross-Industry",
+    image: "/article-images/nvidia-jetson-agx-orin-guide.png",
+    imageAlt:
+      "NVIDIA Jetson AGX Orin board visualized as the central processor for robotics, vision, healthcare, autonomous vehicles, and agricultural edge AI applications.",
+    seoDescription:
+      "Learn why NVIDIA Jetson AGX Orin leads edge AI in 2026 with high compute, CUDA software maturity, industrial I/O, generative AI support, and deployment flexibility.",
+    sections: [
+      {
+        paragraphs: [
+          "Edge AI in 2026 has moved far beyond basic object detection. The most valuable systems now combine vision, sensor fusion, language interfaces, and real-time decision-making directly on the device. In that environment, NVIDIA Jetson AGX Orin continues to stand out as one of the most capable edge AI platforms available.",
+          "This is not just a development board. It is a high-performance embedded compute platform that gives robotics teams, industrial operators, and edge AI developers a practical path to run advanced models locally without relying on the cloud for every critical decision.",
+        ],
+      },
+      {
+        heading: "1. Raw Compute That Expands What the Edge Can Do",
+        paragraphs: [
+          "One of the clearest reasons Jetson AGX Orin leads the category is its compute ceiling. NVIDIA positions the platform at up to 275 TOPS, giving developers enough headroom to run multiple demanding workloads on a single embedded system.",
+          "The Difference: Many edge AI devices are designed for narrower inference tasks. Orin is attractive when the job involves several concurrent pipelines instead of one isolated model.",
+          "Real-World Impact: That performance profile makes it possible to combine multi-camera perception, LiDAR or depth processing, tracking, and higher-level reasoning in robotics, industrial inspection, or autonomous machine deployments.",
+        ],
+      },
+      {
+        heading: "2. The CUDA Advantage: One Software Stack from Cloud to Edge",
+        paragraphs: [
+          "Hardware alone does not create platform dominance. NVIDIA's biggest structural advantage is the software ecosystem around Jetson.",
+          "The CUDA-X Stack: Jetson inherits the same CUDA-oriented development model that many teams already use in larger NVIDIA environments, making the path from training to deployment more straightforward than on fragmented stacks.",
+          "Library Maturity: TensorRT, DeepStream, Isaac ROS, and related tooling give developers an unusually mature set of components for robotics, video analytics, and accelerated inference.",
+          "Why It Matters: Teams can spend more time optimizing applications and less time rebuilding basic infrastructure around drivers, runtimes, and model deployment.",
+        ],
+      },
+      {
+        heading: "3. Industrial I/O and Sensor Integration for Real Machines",
+        paragraphs: [
+          "Edge AI systems only matter when they can interact reliably with the physical world. Jetson AGX Orin is strong not just because of inference performance, but because it is built to sit inside larger machine architectures.",
+          "Sensor Fusion Readiness: NVIDIA highlights support for high-throughput camera interfaces, PCIe Gen4, and high-speed networking that matter in multi-sensor deployments.",
+          "The Use Case: In an autonomous robot or inspection platform, Orin can act as the local fusion point for cameras, depth sensors, LiDAR, and control logic, keeping latency close to the machine instead of a distant server.",
+        ],
+      },
+      {
+        heading: "4. Generative AI and Multimodal Workloads at the Edge",
+        paragraphs: [
+          "Another reason Orin holds the top spot is that edge AI now includes local language and multimodal workloads, not just classical computer vision.",
+          "Memory and Bandwidth: Jetson AGX Orin configurations with large unified memory and high memory bandwidth give developers more room to experiment with compact generative AI and multimodal inference locally.",
+          "Privacy and Latency: For teams building local copilots, voice interfaces, or document-aware devices, keeping inference on-device can reduce latency and avoid sending sensitive data off the machine.",
+          "Why It Matters in 2026: Edge AI is increasingly about systems that can see, understand, and respond in one local loop. Orin is one of the few embedded platforms positioned well for that transition.",
+        ],
+      },
+      {
+        heading: "5. Power Flexibility for Different Deployment Profiles",
+        paragraphs: [
+          "Performance is only useful if it can be tuned to the environment. Jetson AGX Orin gives developers multiple power envelopes, making it relevant for both stationary and mobile systems.",
+          "Scalability: NVIDIA supports configurable power modes, allowing teams to balance throughput, thermals, and battery demands depending on the application.",
+          "Thermal and Field Considerations: This matters in the real world, where the same AI stack might be deployed in a factory enclosure, a mobile robot, or a field system with tight power and cooling constraints.",
+        ],
+      },
+      {
+        heading: "6. A Deployment Ecosystem That Reduces Friction",
+        paragraphs: [
+          "Jetson also leads because the surrounding ecosystem is deep. Carrier boards, rugged enclosures, robotics integrations, third-party peripherals, and community support all reduce the cost of moving from prototype to deployment.",
+          "For developers and integrators, that ecosystem means less custom hardware work, faster troubleshooting, and more reference designs for real-world builds.",
+        ],
+      },
+      {
+        heading: "Summary: Why Orin Still Sits at the Top",
+        paragraphs: [
+          "Jetson AGX Orin is not the cheapest path into edge AI, and it is not always the right fit for ultra-low-power deployments. But when the job requires serious local compute, mature software, strong sensor integration, and a realistic path to deployment, it remains one of the strongest options in the market.",
+          "That is why it still earns the top spot. In 2026, Orin continues to offer one of the best combinations of performance ceiling, software maturity, hardware integration, and ecosystem support available at the edge.",
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This guide was compiled using NVIDIA's official Jetson AGX Orin platform materials, Jetson generative AI resources, TensorRT and DeepStream references, and Isaac ROS documentation describing the software and deployment ecosystem around the platform.",
+        ],
+      },
+    ],
+    sources: [
+      "NVIDIA Jetson AGX Orin platform materials",
+      "NVIDIA Jetson generative AI resources",
+      "NVIDIA TensorRT documentation",
+      "NVIDIA DeepStream documentation",
+      "NVIDIA Isaac ROS documentation",
+    ],
+    sourceLinks: [
+      {
+        label: "NVIDIA Jetson AGX Orin platform",
+        url: "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/",
+      },
+      {
+        label: "NVIDIA generative AI at the edge",
+        url: "https://developer.nvidia.com/embedded/jetson-generative-ai-playground",
+      },
+      {
+        label: "NVIDIA TensorRT",
+        url: "https://developer.nvidia.com/tensorrt",
+      },
+      {
+        label: "NVIDIA DeepStream SDK",
+        url: "https://developer.nvidia.com/deepstream-sdk",
+      },
+      {
+        label: "NVIDIA Isaac ROS",
+        url: "https://developer.nvidia.com/isaac/ros",
+      },
+    ],
   }
 ];
 
