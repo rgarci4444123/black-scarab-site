@@ -14,6 +14,8 @@ export type CaseStudyArticle = {
   summary: string;
   publishedLabel: string;
   publishedDate: string;
+  typeLabel?: string;
+  formatLabel?: string;
   industry: string;
   image: string;
   imageAlt: string;
@@ -832,6 +834,168 @@ export const caseStudies: CaseStudyArticle[] = [
       {
         label: "RealWear HMT-1 product overview",
         url: "https://support.realwear.com/knowledge/realwear-hmt-1-product-overview",
+      },
+    ],
+  },
+  {
+    slug: "edge-ai-roadmap-top-10-platforms",
+    title:
+      "The Edge AI Roadmap: 10 Platforms Shaping the Future of Edge Computing",
+    summary:
+      "A practical guide to the 10 edge AI platforms, chips, and deployment stacks shaping modern robotics, vision systems, local LLMs, industrial automation, and connected devices.",
+    publishedLabel: "Guide · Published May 4, 2026",
+    publishedDate: "2026-05-04",
+    typeLabel: "Guide",
+    formatLabel: "Website-native platform guide",
+    industry: "Cross-Industry",
+    image: "/article-images/edge-ai-roadmap-top-10-platforms.png",
+    imageAlt:
+      "Composite visualization of edge AI platforms including robotics, drones, smart cameras, autonomous vehicles, industrial compute, and a central AI processor.",
+    seoDescription:
+      "Explore the top 10 edge AI platforms shaping the future of edge computing, from NVIDIA Jetson and Hailo to OpenVINO, Kria, Coral, MLX, and Luxonis.",
+    sections: [
+      {
+        paragraphs: [
+          "The AI industry is moving beyond a cloud-only mindset. Over the next decade, many of the most important breakthroughs will happen at the edge, inside robots, cameras, vehicles, handheld devices, local servers, and industrial machines that need real-time intelligence where work actually happens.",
+          "For anyone trying to master this space, the challenge is not just learning models or writing code. It is understanding which silicon, software stack, and deployment pattern fits the mission. That is why we are launching a 10-part series focused on the hardware, toolchains, and real-world applications behind the industry's most important edge AI platforms.",
+        ],
+      },
+      {
+        heading: "1. NVIDIA Jetson: The High-Performance Edge Benchmark",
+        paragraphs: [
+          "NVIDIA Jetson remains the reference platform for high-performance edge AI, especially in robotics, industrial vision, and autonomous systems. Jetson AGX Orin is widely used when teams need substantial local inference in a compact form factor.",
+          "The Series Deep Dive: We will explore TensorRT optimization, power modes, and thermal management in field and factory deployments.",
+          "Application: Autonomous mobile robots, machine vision cells, and automated factory floors.",
+        ],
+      },
+      {
+        heading: "2. Tesla's In-House AI Silicon Track: The Vertical Integration Model",
+        paragraphs: [
+          "Tesla's in-house automotive AI silicon strategy is one of the clearest examples of how vertical integration can reshape edge AI performance. Whether in self-driving systems or future robotics, the lesson is not just the chip itself, but what happens when hardware, software, and training stack are designed together.",
+          "The Series Deep Dive: We will look at vertical integration, system-level efficiency, and why custom AI silicon matters when latency and power budgets are tightly constrained.",
+          "Application: Advanced driver assistance, autonomy stacks, and humanoid robotics roadmaps.",
+        ],
+      },
+      {
+        heading: "3. Raspberry Pi 5 + Hailo-8: The Developer On-Ramp",
+        paragraphs: [
+          "The Raspberry Pi 5 paired with Hailo acceleration has become one of the most accessible entry points into practical edge AI. It gives developers a realistic path from Python prototyping to dedicated neural acceleration without jumping directly into high-cost industrial hardware.",
+          "The Series Deep Dive: We will examine the Hailo software stack, model deployment flow, and how to bridge standard application logic with NPU acceleration.",
+          "Application: Smart traffic monitoring, maker-grade automation, and low-cost computer vision pilots.",
+        ],
+      },
+      {
+        heading: "4. Google Coral: The Efficiency Specialist",
+        paragraphs: [
+          "Google Coral and the Edge TPU remain important reference points for low-power inference, especially when quantized vision workloads matter more than general-purpose flexibility.",
+          "The Series Deep Dive: We will unpack post-training quantization and what developers gain and lose when targeting a highly efficient inference path.",
+          "Application: Sorting systems, remote sensors, and battery-sensitive vision deployments.",
+        ],
+      },
+      {
+        heading: "5. Apple Mac Mini with M-Series Silicon: The Private AI Hub",
+        paragraphs: [
+          "Apple Silicon has made the Mac Mini a compelling local AI node for teams running private inference, local LLM experiments, and on-premise knowledge workflows. Unified memory and the MLX ecosystem make it especially interesting for local model serving.",
+          "The Series Deep Dive: We will explore Apple MLX, memory behavior, and when the Mac Mini makes sense as a private AI workstation or small office inference hub.",
+          "Application: Privacy-focused healthcare assistants, local document analysis, and internal research copilots.",
+        ],
+      },
+      {
+        heading: "6. Qualcomm Robotics RB5: The Connected Edge Platform",
+        paragraphs: [
+          "The Qualcomm Robotics RB5 stands out where AI, multimedia, and connectivity need to move together. It is especially relevant for devices that rely on onboard inference while staying deeply networked.",
+          "The Series Deep Dive: We will examine the Qualcomm AI Stack and what connected AI means for mobile robots, drones, and field devices.",
+          "Application: Agricultural drones, delivery systems, and connected robotics platforms.",
+        ],
+      },
+      {
+        heading: "7. Arduino Pro and TinyML: Intelligence at the Sensor Layer",
+        paragraphs: [
+          "Not every edge AI deployment needs a GPU or a large NPU. Platforms like Arduino Pro Nicla Vision represent the TinyML frontier, where intelligence runs close to the sensor itself on extremely constrained hardware.",
+          "The Series Deep Dive: We will cover DSP, TinyML workflows, and how Edge Impulse-style pipelines turn sound, motion, and vibration into useful predictive signals.",
+          "Application: Predictive maintenance, anomaly detection, and smart wearables.",
+        ],
+      },
+      {
+        heading: "8. Intel Movidius and OpenVINO: The Enterprise Deployment Layer",
+        paragraphs: [
+          "Intel's Movidius lineage and the OpenVINO toolkit remain central to enterprise-grade cross-platform deployment. For many practitioners, OpenVINO is less about one chip and more about a repeatable way to move models across CPUs, GPUs, and dedicated accelerators.",
+          "The Series Deep Dive: We will focus on cross-platform deployment, model conversion, and how to keep one edge AI application portable across heterogeneous Intel hardware.",
+          "Application: Medical imaging systems, retail analytics, and enterprise smart cameras.",
+        ],
+      },
+      {
+        heading: "9. AMD Xilinx Kria: Adaptive Hardware for Low-Latency Systems",
+        paragraphs: [
+          "The Kria line matters because it brings FPGA-style adaptability into more approachable edge AI workflows. When the job demands extremely low latency, deterministic behavior, or domain-specific acceleration, adaptive hardware becomes a serious advantage.",
+          "The Series Deep Dive: We will demystify hardware logic, adaptive compute, and what it really takes to deploy sub-millisecond inference paths.",
+          "Application: Telecom signal optimization, industrial control, and aerospace-grade edge systems.",
+        ],
+      },
+      {
+        heading: "10. Luxonis OAK-D: Spatial AI for Machines That Need Depth",
+        paragraphs: [
+          "Luxonis OAK-D is more than a camera. It is one of the clearest examples of spatial AI becoming accessible to developers who need vision plus depth plus local perception in one stack.",
+          "The Series Deep Dive: We will cover stereo vision, 3D perception, and how to teach machines to reason about distance, volume, and movement in physical space.",
+          "Application: Construction safety, robotic perception, and virtual boundary systems.",
+        ],
+      },
+      {
+        heading: "Why This Roadmap Matters",
+        paragraphs: [
+          "The future of edge AI will not be built on a single winning platform. It will be built on a landscape of specialized compute stacks, each optimized for a different mix of latency, power, cost, sensing, mobility, and deployment complexity.",
+          "That is why this roadmap matters. It is not just a top-10 list. It is a field guide for understanding how edge AI is actually being deployed across robotics, healthcare, logistics, industrial automation, security, and local inference infrastructure.",
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This guide was compiled using official platform documentation from NVIDIA Jetson, Hailo, Google Coral, Apple MLX, Qualcomm Robotics RB5, OpenVINO, AMD Kria, and Luxonis, along with product references that describe how these systems are positioned for real-world edge AI workloads.",
+        ],
+      },
+    ],
+    sources: [
+      "NVIDIA Jetson AGX Orin official platform materials",
+      "Hailo Raspberry Pi AI Kit and Hailo-8 materials",
+      "Google Coral Edge TPU official documentation",
+      "Apple MLX official repository",
+      "Qualcomm Robotics RB5 official materials",
+      "Intel OpenVINO official documentation",
+      "AMD Kria official platform materials",
+      "Luxonis OAK-D official documentation",
+    ],
+    sourceLinks: [
+      {
+        label: "NVIDIA Jetson AGX Orin developer page",
+        url: "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/",
+      },
+      {
+        label: "Hailo Raspberry Pi AI Kit",
+        url: "https://hailo.ai/products/ai-accelerators/raspberry-pi-ai-kit/",
+      },
+      {
+        label: "Google Coral products and documentation",
+        url: "https://coral.ai/products/",
+      },
+      {
+        label: "Apple MLX official repository",
+        url: "https://github.com/ml-explore/mlx",
+      },
+      {
+        label: "Qualcomm Robotics RB5 platform",
+        url: "https://www.qualcomm.com/developer/hardware/robotics-rb5-development-kit",
+      },
+      {
+        label: "Intel OpenVINO toolkit",
+        url: "https://docs.openvino.ai/",
+      },
+      {
+        label: "AMD Kria adaptive SoM portfolio",
+        url: "https://www.amd.com/en/products/system-on-modules/kria.html",
+      },
+      {
+        label: "Luxonis OAK cameras and spatial AI platform",
+        url: "https://docs.luxonis.com/hardware/products/OAK-D",
       },
     ],
   }

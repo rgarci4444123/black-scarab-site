@@ -64,6 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const articleUrl = getArticleUrl(article.slug);
+  const typeLabel = article.typeLabel ?? "Case Study";
   return {
     title: article.title,
     description: article.seoDescription,
@@ -88,7 +89,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       article.industry,
       "edge AI",
       "AI infrastructure",
-      "case study",
+      typeLabel.toLowerCase(),
       "Latin America",
       "Black Scarab",
     ],
@@ -110,6 +111,7 @@ export default async function CaseStudyPage({ params }: Props) {
     day: "numeric",
     year: "numeric",
   });
+  const typeLabel = article.typeLabel ?? "Case Study";
   const industryHref = getIndustryHref(article.industry);
   const industryLinkLabel =
     industryHref === "/insights" ? "Insights index" : `${article.industry} page`;
@@ -118,19 +120,43 @@ export default async function CaseStudyPage({ params }: Props) {
       ? "Design an agriculture system around your own field conditions"
       : article.industry === "Manufacturing"
         ? "Design a manufacturing system around your own production line"
-        : "Scope an edge AI system around your own urban operations";
+        : article.industry === "Healthcare"
+          ? "Design a healthcare system around your own care environment"
+          : article.industry === "Transportation & Logistics"
+            ? "Design a logistics system around your own operational flow"
+            : article.industry === "Retail"
+              ? "Design a retail system around your own store operations"
+              : article.industry === "Smart Cities"
+                ? "Scope an edge AI system around your own urban operations"
+                : "Design an edge AI roadmap around your own operational priorities";
   const ctaDescription =
     article.industry === "Agriculture"
       ? "If you are evaluating edge AI for agricultural operations, we can help scope the right combination of compute, sensors, aerial systems, and field connectivity."
       : article.industry === "Manufacturing"
         ? "If you are evaluating edge AI for industrial inspection or production monitoring, we can help scope the right combination of machine vision, edge compute, and plant-floor infrastructure."
-        : "If you are evaluating edge AI for traffic systems, public safety, or urban sensing, we can help scope the right mix of edge compute, connectivity, and field-ready devices.";
+        : article.industry === "Healthcare"
+          ? "If you are evaluating edge AI for diagnostics, monitoring, or care delivery, we can help scope the right combination of devices, compute, and deployment strategy."
+          : article.industry === "Transportation & Logistics"
+            ? "If you are evaluating edge AI for warehousing, fleet visibility, or logistics automation, we can help scope the right combination of vision systems, compute, and field-ready infrastructure."
+            : article.industry === "Retail"
+              ? "If you are evaluating edge AI for in-store operations, inventory awareness, or loss prevention, we can help scope the right combination of sensors, compute, and deployment architecture."
+              : article.industry === "Smart Cities"
+                ? "If you are evaluating edge AI for traffic systems, public safety, or urban sensing, we can help scope the right mix of edge compute, connectivity, and field-ready devices."
+                : "If you are evaluating edge AI across multiple workflows, we can help map the right mix of compute, connectivity, sensors, and deployment strategy for the environments that matter most.";
   const secondaryCtaLabel =
     article.industry === "Agriculture"
       ? "Explore Agriculture"
       : article.industry === "Manufacturing"
         ? "Explore Manufacturing"
-        : "Back to Insights";
+        : article.industry === "Healthcare"
+          ? "Back to Insights"
+          : article.industry === "Transportation & Logistics"
+            ? "Back to Insights"
+            : article.industry === "Retail"
+              ? "Back to Insights"
+              : article.industry === "Smart Cities"
+                ? "Back to Insights"
+                : "Back to Insights";
   const relatedArticles = getRelatedArticles(article.slug, article.industry);
   const articleUrl = getArticleUrl(article.slug);
   const imageUrl = `${baseUrl}${article.image}`;
@@ -181,7 +207,7 @@ export default async function CaseStudyPage({ params }: Props) {
       },
     },
     articleSection: article.industry,
-    keywords: ["edge AI", article.industry, "case study", "AI infrastructure"],
+    keywords: ["edge AI", article.industry, typeLabel.toLowerCase(), "AI infrastructure"],
     citation: article.sourceLinks?.map((source) => source.url) ?? [],
   };
 
@@ -229,7 +255,7 @@ export default async function CaseStudyPage({ params }: Props) {
                   <span className="text-[#111827]">{article.title}</span>
                 </nav>
                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-                  Case Study · {article.industry}
+                  {typeLabel} · {article.industry}
                 </p>
                 <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
                   {article.title}
@@ -313,7 +339,7 @@ export default async function CaseStudyPage({ params }: Props) {
                       Format
                     </p>
                     <p className="mt-2 text-sm font-medium text-[#111827]">
-                      Website-native case study
+                      {article.formatLabel ?? `Website-native ${typeLabel.toLowerCase()}`}
                     </p>
                   </div>
                   <div>
@@ -356,7 +382,7 @@ export default async function CaseStudyPage({ params }: Props) {
             <section className="border-t border-[#efeae1] px-6 py-14 md:px-10">
               <div className="mx-auto max-w-6xl">
                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-                  Related Case Studies
+                  {typeLabel === "Case Study" ? "Related Case Studies" : "Related Insights"}
                 </p>
                 <div className="mt-6 grid gap-5 md:grid-cols-3">
                   {relatedArticles.map((relatedArticle) => (
@@ -375,7 +401,7 @@ export default async function CaseStudyPage({ params }: Props) {
                         {relatedArticle.summary}
                       </p>
                       <p className="mt-6 text-sm font-medium text-[#111827]">
-                        Read related case study
+                        Read related insight
                       </p>
                     </Link>
                   ))}
