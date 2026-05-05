@@ -54,7 +54,7 @@ export default async function ProductPage({ params }: Props) {
             { label: "About", href: "/about", isPage: true },
           ]}
           ctaLabel="Get Started"
-          ctaHref="/intake"
+          ctaHref="/intake?track=advanced"
         />
 
         <section className="border-b border-[#efeae1] bg-[#faf8f3] px-6 py-14 md:px-10 md:py-18">
@@ -91,7 +91,7 @@ export default async function ProductPage({ params }: Props) {
                   View product
                 </a>
                 <Link
-                  href="/intake"
+                  href="/intake?track=advanced"
                   className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
                 >
                   Design My System
