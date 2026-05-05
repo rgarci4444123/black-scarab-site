@@ -1135,68 +1135,55 @@ export const caseStudies: CaseStudyArticle[] = [
     sections: [
       {
         paragraphs: [
-          "Tesla AI5, also called HW5 or Hardware 5, is shaping up to be one of the most closely watched edge AI chips in the market. Search interest is likely to rise because the chip sits at the center of several Tesla narratives at once: Full Self-Driving, Optimus humanoid robotics, Cybercab, and Tesla's broader attempt to behave more like an AI systems company than a traditional automaker.",
-          "The challenge is that public information about AI5 is still incomplete. Tesla has described its in-house AI hardware strategy at a high level, and Elon Musk has discussed production and foundry plans publicly, but Tesla has not released a full public spec sheet for HW5. That means the right way to understand Tesla AI5 in 2026 is not as a finalized consumer product, but as a next-generation custom inference platform with unusually high strategic importance.",
+          'The Tesla AI5, formerly referred to as Hardware 5, represents one of the biggest architectural shifts in Tesla\'s AI hardware roadmap. While previous generations relied on more constrained or redundant chip designs, AI5 is positioned as a ground-up custom silicon platform meant to unify Tesla\'s ecosystem across vehicles, robotics, and internal compute systems.',
+          'As of mid-2026, AI5 stands out not just as a faster successor to earlier Tesla hardware, but as the chip that could push Tesla further from being viewed as only an automaker and closer to being treated as a vertically integrated AI company.',
         ],
       },
       {
-        heading: "1. What Is Tesla AI5 or HW5?",
+        heading: "1. Architectural Leap and Performance",
         paragraphs: [
-          "Tesla AI5 is the company's next-generation in-house AI inference chip platform, intended to succeed the hardware used in Tesla's current autonomy stack. For searchers looking for the simplest answer, Tesla AI5 and Tesla HW5 generally refer to the same next-step custom silicon track in Tesla's AI hardware roadmap.",
-          "Why It Matters: Tesla already designs AI inference hardware around its Full Self-Driving software. What makes AI5 especially important is that it appears positioned to support more than one Tesla product line, including vehicles, robotics, and internal AI infrastructure.",
-          "Ground-Up Design Direction: Tesla's own AI and robotics recruiting materials emphasize efficient inference hardware built specifically for vision and planning. That vertical-integration model is what gives AI5 its strategic value even before Tesla publishes final public specifications.",
+          "The jump from AI4 to AI5 appears much larger than the earlier transition from HW3. Public reporting and industry commentary suggest that Tesla is targeting a substantial step up in both raw throughput and usable inference efficiency.",
+          "Raw Compute: Reports around AI5 point to a major improvement in compute headroom, with Tesla aiming for a far more capable platform than the dual-SoC AI4 setup used previously.",
+          "Memory and Bandwidth: AI5 is also discussed as a response to the bottlenecks of earlier hardware, especially around memory capacity and bandwidth, which matter when large vision and planning workloads need to run locally and continuously.",
+          "Consolidated Design: Tesla also appears to be moving away from the older redundant dual-chip structure, suggesting greater confidence in the platform's reliability and a stronger focus on efficiency per watt.",
         ],
       },
       {
-        heading: "2. Tesla AI5 Specs and Performance: What Is Public So Far?",
+        heading: "2. Strategic Use Cases: More Than Just Cars",
         paragraphs: [
-          "Tesla has not published a detailed official HW5 specification sheet with finalized public numbers for memory, bandwidth, or compute in the same way a merchant silicon vendor might. That makes many circulating Tesla AI5 spec claims best treated as directional rather than confirmed.",
-          "What Public Reporting Suggests: Reuters-linked coverage and semiconductor reporting indicate that Tesla views AI5 as a major step beyond the current generation, with Musk publicly describing an aggressive performance roadmap and a new manufacturing strategy around the chip.",
-          "What Searchers Should Keep in Mind: If you are specifically looking for Tesla AI5 TOPS, memory size, or exact bandwidth, the safest answer today is that Tesla has not yet released a complete official consumer-facing spec sheet. The more durable takeaway is that AI5 is being treated as a major custom silicon upgrade, not a minor revision.",
+          "In a break from the usual assumption that new Tesla hardware begins with mass-market vehicles, the earliest strategic importance of AI5 may extend well beyond cars like the Model 3 or Model Y.",
+          "Optimus and Supercomputers: Public commentary around Tesla's AI roadmap suggests that Optimus humanoid robots and internal AI systems are likely to be among the earliest important destinations for AI5. That makes sense given the chip's role in real-time inference, motion planning, and complex physical interaction.",
+          "The Cybercab: While Tesla's Cybercab robotaxi is often discussed alongside AI5, rollout timing suggests that early units may still rely on transitional hardware while AI5 scales toward broader production availability.",
         ],
       },
       {
-        heading: "3. Tesla AI5 Release Date and Rollout Timeline",
+        heading: "3. Installation and Rollout Timeline",
         paragraphs: [
-          "The most useful search term after 'Tesla AI5' may be 'Tesla AI5 release date,' and here the answer is nuanced. Public comments tied to Reuters reporting indicate Tesla expects samples and perhaps a small number of units in 2026, while high-volume production looks more like a 2027 event.",
-          "That distinction matters. Early samples, validation hardware, or low-volume internal deployments are very different from a broad consumer rollout across Tesla vehicle lines.",
-          "Foundry Strategy: Public reporting indicates Tesla is pursuing a dual-foundry approach involving both TSMC and Samsung for AI5-related manufacturing paths. That suggests Tesla is optimizing not only for performance, but also for volume, resilience, and long-term supply security.",
+          "At this stage, AI5 appears limited to low-volume validation efforts and internal deployment tracks rather than broad consumer installation.",
+          "Volume Production: Public production commentary suggests Tesla is targeting broader manufacturing in the late-2026 to 2027 window, with supply strategy spread across multiple foundry relationships.",
+          "Dual-Sourcing Strategy: Tesla's manufacturing approach around AI5 points to both TSMC and Samsung playing roles in the chip's production path, reinforcing the idea that Tesla is optimizing for scale, resilience, and long-term supply security as much as pure performance.",
+          "Retrofits: There is currently no official public retrofit path for HW3 or HW4 owners to move to AI5. Tesla's position around current hardware suggests it does not view AI5 as an automatic upgrade requirement for every vehicle already on the road.",
         ],
       },
       {
-        heading: "4. Will Tesla AI5 Show Up First in Cars, Optimus, or Cybercab?",
+        heading: "4. Custom Features: Efficiency and Power",
         paragraphs: [
-          "One of the biggest reasons Tesla AI5 draws attention is that the chip could matter as much for robotics and internal AI systems as it does for consumer vehicles.",
-          "Optimus and Internal AI Infrastructure: Tesla's AI positioning and public commentary strongly suggest that Optimus and internal compute efforts are central to the company's custom chip strategy. That makes AI5 relevant not only to self-driving cars, but also to real-time robotic inference and future Tesla AI infrastructure.",
-          "Cybercab and Vehicle Questions: It is still unclear exactly which Tesla vehicle programs will receive AI5 first at production scale. For now, the safer interpretation is that AI5 may arrive in stages, with internal validation, selective deployments, and product-by-product rollout rather than one overnight switchover across the fleet.",
+          "Tesla AI5 appears engineered around the same principle that has shaped much of Tesla's AI strategy: maximize useful performance while stripping away the overhead that comes with more general-purpose silicon.",
+          "Power Optimization: Even with a far more ambitious performance target, the chip is being discussed in terms of balancing compute density with the energy and thermal limits of mobile systems such as robots and vehicles.",
+          'Vertical Integration: Tesla\'s broader manufacturing ambitions, including discussion around large-scale chip production initiatives, reinforce how central custom silicon has become to the company\'s long-term autonomy and robotics strategy.',
         ],
       },
       {
-        heading: "5. Can Current Tesla Owners Upgrade to HW5?",
+        heading: "Summary: The Verdict",
         paragraphs: [
-          "For many searchers, the practical question is whether Tesla AI5 or HW5 will be available as a retrofit. At the moment, there is no official public retrofit program for current HW3 or HW4 owners to move to AI5.",
-          "Tesla's support documentation today is clear about earlier upgrade paths, such as eligible customers moving from older FSD computers to Hardware 3.0. That is not the same thing as an announced AI5 retrofit path.",
-          "What That Means: If you are searching for 'Tesla HW5 retrofit,' the current answer is that no broad official retrofit program has been announced publicly.",
-        ],
-      },
-      {
-        heading: "6. Why Tesla AI5 Matters Beyond the Spec Sheet",
-        paragraphs: [
-          "The real significance of Tesla AI5 is not just whether it lands at a certain performance number. It is that Tesla appears to be building a shared AI hardware strategy across vehicles, robotics, and internal compute systems.",
-          "That matters because it turns AI5 into more than a car chip. It becomes part of Tesla's attempt to own the full stack: model development, training infrastructure, inference silicon, robotics, and autonomous products. Even without a finalized public spec sheet, that strategic direction alone makes AI5 one of the most important edge AI stories to watch in 2026 and 2027.",
-        ],
-      },
-      {
-        heading: "Summary: What to Watch Next for Tesla AI5",
-        paragraphs: [
-          "If you want the clearest SEO-friendly answer to 'What is Tesla AI5?', it is this: Tesla AI5, or HW5, is Tesla's next-generation custom AI chip platform, and the most important open questions are not only raw specs, but when it reaches volume production, where Tesla deploys it first, and whether it changes the economics of autonomy and robotics.",
-          "For now, the most reliable things to watch are Tesla's public AI and robotics materials, production commentary around TSMC and Samsung, any concrete HW5 timeline updates, and signs of whether Optimus, Cybercab, or future Tesla vehicles become the first large-scale AI5 story.",
+          'AI5 is not just another Tesla hardware revision. It appears to be the foundation for Tesla\'s longer-term push toward unsupervised autonomy, large-scale robotics, and tighter control over its own AI stack.',
+          "By designing the chip primarily for its own systems, Tesla is pursuing the kind of full-stack optimization that few companies can realistically attempt. That makes AI5 one of the most consequential custom silicon stories in edge AI, whether its first large impact lands in vehicles, humanoid robots, or Tesla's internal compute infrastructure.",
         ],
       },
       {
         heading: "Sourcing & Verification",
         paragraphs: [
-          "This guide was compiled using Tesla's official AI and robotics materials, Tesla's support documentation on AI computer installations, and current public reporting on Tesla AI5 production timing, foundry strategy, and rollout expectations. Where Tesla has not published complete official specifications, this article intentionally treats public claims as directional rather than final.",
+          "This guide was compiled using Tesla's official AI and robotics materials, Tesla's support documentation on AI computer installations, and current public reporting on Tesla AI5 production timing, foundry strategy, and rollout expectations.",
         ],
       },
     ],
