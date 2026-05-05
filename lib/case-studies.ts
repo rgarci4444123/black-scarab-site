@@ -1135,49 +1135,47 @@ export const caseStudies: CaseStudyArticle[] = [
     sections: [
       {
         paragraphs: [
-          'The Tesla AI5, formerly referred to as Hardware 5, represents one of the biggest architectural shifts in Tesla\'s AI hardware roadmap. While previous generations relied on more constrained or redundant chip designs, AI5 is positioned as a ground-up custom silicon platform meant to unify Tesla\'s ecosystem across vehicles, robotics, and internal compute systems.',
-          'As of mid-2026, AI5 stands out not just as a faster successor to earlier Tesla hardware, but as the chip that could push Tesla further from being viewed as only an automaker and closer to being treated as a vertically integrated AI company.',
+          "Because Tesla has not yet released a full official specification sheet for Tesla AI5 (HW5), the details below are based on public reporting, industry discussion, and unofficial source aggregation around Tesla's next-generation AI chip.",
+          'Tesla AI5 (formerly referred to as Hardware 5 or HW5) represents the most significant architectural shift in Tesla\'s history. While previous generations relied on adapted or redundant chip designs, AI5 is a ground-up custom silicon solution designed to unify Tesla\'s ecosystem across vehicles, robotics, and supercomputers. As of mid-2026, it is the "monster" chip that could move Tesla from an automaker to a pure-play AI powerhouse.',
         ],
       },
       {
         heading: "1. Architectural Leap and Performance",
         paragraphs: [
-          "The jump from AI4 to AI5 appears much larger than the earlier transition from HW3. Public reporting and industry commentary suggest that Tesla is targeting a substantial step up in both raw throughput and usable inference efficiency.",
-          "Raw Compute: Reports around AI5 point to a major improvement in compute headroom, with Tesla aiming for a far more capable platform than the dual-SoC AI4 setup used previously.",
-          "Memory and Bandwidth: AI5 is also discussed as a response to the bottlenecks of earlier hardware, especially around memory capacity and bandwidth, which matter when large vision and planning workloads need to run locally and continuously.",
-          "Consolidated Design: Tesla also appears to be moving away from the older redundant dual-chip structure, suggesting greater confidence in the platform's reliability and a stronger focus on efficiency per watt.",
+          "The jump from AI4 to AI5 is far larger than the previous transition from HW3. According to official reports, a single AI5 chip delivers roughly 5 times the useful compute power of the dual-SoC AI4 setup found in earlier models.",
+          "Raw Compute: Early benchmarks suggest up to an 8x increase in raw compute and nearly 40x improvement in specific neural network efficiency.",
+          "Memory and Bandwidth: Tesla has addressed the critical bottlenecks of AI4 by moving to a massive 144GB of unified memory (a 9x increase from AI4's 16GB).",
+          "Consolidated Design: Tesla is reportedly moving away from the redundant dual-chip design of previous generations, signaling a new level of confidence in the hardware's reliability and focusing on maximizing efficiency per watt.",
         ],
       },
       {
         heading: "2. Strategic Use Cases: More Than Just Cars",
         paragraphs: [
-          "In a break from the usual assumption that new Tesla hardware begins with mass-market vehicles, the earliest strategic importance of AI5 may extend well beyond cars like the Model 3 or Model Y.",
-          "Optimus and Supercomputers: Public commentary around Tesla's AI roadmap suggests that Optimus humanoid robots and internal AI systems are likely to be among the earliest important destinations for AI5. That makes sense given the chip's role in real-time inference, motion planning, and complex physical interaction.",
-          "The Cybercab: While Tesla's Cybercab robotaxi is often discussed alongside AI5, rollout timing suggests that early units may still rely on transitional hardware while AI5 scales toward broader production availability.",
+          "In a departure from tradition, the initial focus for AI5 is not consumer vehicles like the Model 3 or Model Y.",
+          "Optimus and Supercomputers: The primary recipients of early AI5 production are the Optimus humanoid robots and Tesla's internal AI training clusters. The chip's design is optimized for the real-time inference required for bipedal movement and complex manipulation.",
+          "The Cybercab: While the upcoming Cybercab robotaxi was initially expected to launch on AI5, current production timelines suggest early 2026 units may still utilize AI4.1 (AI4+) hardware due to volume constraints.",
         ],
       },
       {
         heading: "3. Installation and Rollout Timeline",
         paragraphs: [
-          "At this stage, AI5 appears limited to low-volume validation efforts and internal deployment tracks rather than broad consumer installation.",
-          "Volume Production: Public production commentary suggests Tesla is targeting broader manufacturing in the late-2026 to 2027 window, with supply strategy spread across multiple foundry relationships.",
-          "Dual-Sourcing Strategy: Tesla's manufacturing approach around AI5 points to both TSMC and Samsung playing roles in the chip's production path, reinforcing the idea that Tesla is optimizing for scale, resilience, and long-term supply security as much as pure performance.",
-          "Retrofits: There is currently no official public retrofit path for HW3 or HW4 owners to move to AI5. Tesla's position around current hardware suggests it does not view AI5 as an automatic upgrade requirement for every vehicle already on the road.",
+          'The "installation" of AI5 is currently limited to low-volume validation units and internal projects.',
+          "Volume Production: High-volume production is targeted for late 2026 or mid-2027. Tesla is utilizing a dual-sourcing strategy, partnering with TSMC (2nm/3nm process) in Taiwan and Arizona, as well as Samsung in Taylor, Texas.",
+          "Retrofits: There is currently no official retrofit path for HW3 or HW4 owners to upgrade to AI5. Tesla has indicated that AI4 is already capable of achieving safety levels significantly better than human drivers, potentially making an AI5 upgrade unnecessary for current vehicles to achieve unsupervised autonomy.",
         ],
       },
       {
         heading: "4. Custom Features: Efficiency and Power",
         paragraphs: [
-          "Tesla AI5 appears engineered around the same principle that has shaped much of Tesla's AI strategy: maximize useful performance while stripping away the overhead that comes with more general-purpose silicon.",
-          "Power Optimization: Even with a far more ambitious performance target, the chip is being discussed in terms of balancing compute density with the energy and thermal limits of mobile systems such as robots and vehicles.",
-          'Vertical Integration: Tesla\'s broader manufacturing ambitions, including discussion around large-scale chip production initiatives, reinforce how central custom silicon has become to the company\'s long-term autonomy and robotics strategy.',
+          "AI5 is engineered for maximum performance per dollar by stripping away unnecessary legacy components found in general-purpose chips.",
+          "Power Optimization: Despite its massive power, the chip can be optimized down to nearly 250W, balancing the high-performance needs of a robot or vehicle with the limitations of mobile battery systems.",
+          'Terafab Project: Tesla is moving toward total vertical integration with its "Terafab Project," a dedicated facility for manufacturing custom AI and memory chips to ensure supply chain resilience against geopolitical risks.',
         ],
       },
       {
         heading: "Summary: The Verdict",
         paragraphs: [
-          'AI5 is not just another Tesla hardware revision. It appears to be the foundation for Tesla\'s longer-term push toward unsupervised autonomy, large-scale robotics, and tighter control over its own AI stack.',
-          "By designing the chip primarily for its own systems, Tesla is pursuing the kind of full-stack optimization that few companies can realistically attempt. That makes AI5 one of the most consequential custom silicon stories in edge AI, whether its first large impact lands in vehicles, humanoid robots, or Tesla's internal compute infrastructure.",
+          'The AI5 isn\'t just an "upgrade"; it is the foundation for Tesla\'s long-term push toward unsupervised autonomy and mass-market robotics. By designing for a single customer—itself—Tesla has eliminated the bloat of third-party silicon to deliver what is likely the most efficient AI inference engine in existence.',
         ],
       },
       {
