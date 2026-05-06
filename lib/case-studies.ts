@@ -1214,6 +1214,110 @@ export const caseStudies: CaseStudyArticle[] = [
       },
     ],
   }
+  ,
+  {
+    slug: "raspberry-pi-5-hailo-8-guide",
+    title:
+      "Raspberry Pi 5 + Hailo-8: Why the AI HAT+ Is a Top Edge AI Platform in 2026",
+    summary:
+      "A practical guide to Raspberry Pi 5 plus Hailo-8 acceleration, covering the Raspberry Pi AI HAT+, dedicated NPU performance, software stack, model deployment flow, and real-world edge AI use cases.",
+    publishedLabel: "Guide · Published May 6, 2026",
+    publishedDate: "2026-05-06",
+    typeLabel: "Guide",
+    formatLabel: "Website-native platform deep dive",
+    industry: "Cross-Industry",
+    image: "/article-images/raspberry-pi-5-hailo-8-guide.jpg",
+    imageAlt:
+      "Raspberry Pi 5 paired with a Hailo AI accelerator for local computer vision, robotics, and edge AI development.",
+    seoDescription:
+      "Learn why Raspberry Pi 5 plus Hailo-8 acceleration, especially through the Raspberry Pi AI HAT+, has become one of the most accessible edge AI platforms in 2026.",
+    sections: [
+      {
+        paragraphs: [
+          "For years, developers were forced to choose between the low-cost Raspberry Pi and much more expensive industrial AI hardware. Raspberry Pi 5 plus Hailo acceleration has finally created a practical middle ground. It gives developers a realistic path from Python prototyping to dedicated neural inference without abandoning the Raspberry Pi ecosystem they already know.",
+          "One important distinction matters here. Raspberry Pi's original AI Kit used the 13 TOPS Hailo-8L and is now discontinued for new designs, while the newer AI HAT+ line includes both 13 TOPS and 26 TOPS options. When people search for Raspberry Pi 5 plus Hailo-8 in 2026, they are usually looking for the more capable 26 TOPS Raspberry Pi AI HAT+ configuration built around the Hailo-8 accelerator.",
+        ],
+      },
+      {
+        heading: "1. The Power of Dedicated Acceleration",
+        paragraphs: [
+          "Raspberry Pi 5 is a strong general-purpose computer, but heavy vision workloads can quickly overwhelm a CPU-only setup. Adding Hailo acceleration changes that equation by offloading inference to a dedicated neural processing unit.",
+          "Performance: The 26 TOPS Raspberry Pi AI HAT+ is built around the Hailo-8 accelerator, giving Raspberry Pi 5 a much more serious local AI inference profile than CPU-only deployments can deliver.",
+          "Efficiency: By moving neural inference onto the NPU, the Raspberry Pi 5 CPU stays available for application logic, web services, robotics control, or local orchestration tasks.",
+          "Latency: This architecture is designed for real-time edge AI workloads, especially object detection and camera-based pipelines, without forcing every workload back into the cloud.",
+        ],
+      },
+      {
+        heading: "2. The Hailo Software Stack: Moving Beyond Hello World",
+        paragraphs: [
+          "The real value of this pairing is not just the silicon. It is the software path that makes the hardware usable by developers.",
+          "Model Access: Raspberry Pi and Hailo provide access to supported example models and software tooling that help developers move from demos into more realistic pipelines.",
+          'TAPPAS and Pipelines: Hailo\'s application tooling makes it easier to stand up more complete workflows such as detection, tracking, and camera-based post-processing instead of stopping at a toy example.',
+          "Python Integration: Because the surrounding stack works with common Linux, camera, and media workflows, developers can connect accelerated inference into familiar Python, GStreamer, and OpenCV-style pipelines.",
+        ],
+      },
+      {
+        heading: "3. Practical Model Deployment Flow",
+        paragraphs: [
+          "Getting a model onto Hailo hardware follows a more structured deployment path than CPU-only experimentation, but that structure is part of why the platform is attractive for real edge AI work.",
+          "Translation: Models trained in common frameworks can be brought into the Hailo toolchain for conversion into an accelerator-friendly format.",
+          "Optimization: The Hailo workflow includes analysis and optimization steps that help developers evaluate model behavior before deployment.",
+          "Compilation: The final output is a binary optimized for the NPU so the accelerator can execute inference efficiently with low power draw and predictable runtime behavior.",
+        ],
+      },
+      {
+        heading: "4. Real-World Applications",
+        paragraphs: [
+          "This Raspberry Pi 5 plus Hailo combination is not just for hobbyist demos. It is a strong fit for low-cost pilots and developer-led deployments where local inference matters.",
+          "Smart Traffic Monitoring: The platform is well suited to local counting, detection, and lightweight roadside or municipal computer vision experiments where cloud dependence adds latency and cost.",
+          "Maker-Grade Automation: Small manufacturers and integrators can use Raspberry Pi 5 plus Hailo acceleration for quality checks, detection tasks, and low-cost automation pilots.",
+          "Low-Cost Vision at the Edge: The platform is attractive in drones, remote monitoring, camera-based robotics, and environmental sensing use cases where power, cost, and local inference all matter.",
+        ],
+      },
+      {
+        heading: "Summary: The Verdict",
+        paragraphs: [
+          "Raspberry Pi 5 plus Hailo-8 acceleration gives developers a missing middle ground. It offers professional-grade local AI acceleration on top of one of the most familiar and accessible computing platforms in the market.",
+          "That is why it matters. For teams trying to prove an edge AI concept before moving into more expensive industrial hardware, the Raspberry Pi AI HAT+ on Raspberry Pi 5 has become one of the strongest on-ramps available in 2026.",
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This guide was compiled using Raspberry Pi's official AI HAT+, AI Kit, and AI software documentation along with official Hailo and Raspberry Pi materials describing the accelerator options, software flow, and supported edge AI use cases.",
+        ],
+      },
+    ],
+    sources: [
+      "Raspberry Pi AI HAT+ official documentation",
+      "Raspberry Pi AI Kit reference documentation",
+      "Raspberry Pi AI software documentation",
+      "Raspberry Pi AI HAT+ official announcement",
+      "Hailo Raspberry Pi partnership announcement",
+    ],
+    sourceLinks: [
+      {
+        label: "Raspberry Pi AI HAT+ documentation",
+        url: "https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html",
+      },
+      {
+        label: "Raspberry Pi AI Kit reference documentation",
+        url: "https://www.raspberrypi.com/documentation/accessories/ai-kit.html",
+      },
+      {
+        label: "Raspberry Pi AI software documentation",
+        url: "https://www.raspberrypi.com/documentation/computers/ai.html",
+      },
+      {
+        label: "Introducing the Raspberry Pi AI HAT+ with up to 26 TOPS",
+        url: "https://www.raspberrypi.com/news/raspberry-pi-ai-hat/",
+      },
+      {
+        label: "Hailo partnership announcement for Raspberry Pi 5 AI Kit",
+        url: "https://hailo.ai/company-overview/newsroom/news/raspberry-pi-selects-hailo-to-enable-advanced-ai-capabilities-for-raspberry-pi-5/",
+      },
+    ],
+  }
 ];
 
 export function getCaseStudyBySlug(slug: string) {
