@@ -1,44 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import SiteHeader from "@/components/site-header";
 import { initialIntakeForm, type IntakeForm } from "@/lib/intake";
 
-const ADVANCED_STORAGE_KEY = "black-scarab-intake-advanced";
-const LEAD_CAPTURE_STORAGE_KEY = "black-scarab-intake-lead-capture";
-
-type WorkTrack = "advanced" | "lead-capture";
-
-type LeadCaptureForm = {
-  fullName: string;
-  companyName: string;
-  email: string;
-  phone: string;
-  website: string;
-  country: string;
-  companySize: string;
-  leadSources: string[];
-  responseFlow: string;
-  desiredOutcomes: string[];
-  timeline: string;
-  notes: string;
-};
-
-const initialLeadCaptureForm: LeadCaptureForm = {
-  fullName: "",
-  companyName: "",
-  email: "",
-  phone: "",
-  website: "",
-  country: "",
-  companySize: "",
-  leadSources: [],
-  responseFlow: "",
-  desiredOutcomes: [],
-  timeline: "",
-  notes: "",
-};
+const STORAGE_KEY = "black-scarab-intake";
 
 const industries = [
   "Agriculture",
@@ -50,31 +16,6 @@ const industries = [
 ];
 
 const companySizes = ["1–10 employees", "10–50", "50–200", "200+"];
-
-const leadSourceOptions = [
-  "Website form",
-  "WhatsApp",
-  "Instagram / Facebook",
-  "Phone calls",
-  "Email",
-  "Multiple channels",
-];
-
-const responseFlowOptions = [
-  "I respond manually",
-  "My team responds manually",
-  "We often respond late",
-  "We do not have a clear process",
-];
-
-const leadOutcomeOptions = [
-  "Instant lead response",
-  "Automated follow-up",
-  "Call booking flow",
-  "Lead tracking",
-];
-
-const leadTimelineOptions = ["This week", "This month", "Just exploring"];
 
 const locationOptions = [
   "Single location",
@@ -186,13 +127,12 @@ function toggleValue(values: string[], value: string) {
 }
 
 export default function IntakePage() {
-  const searchParams = useSearchParams();
   const [form, setForm] = useState<IntakeForm>(() => {
     if (typeof window === "undefined") {
       return initialIntakeForm;
     }
 
-    const saved = window.localStorage.getItem(ADVANCED_STORAGE_KEY);
+    const saved = window.localStorage.getItem(STORAGE_KEY);
 
     if (!saved) {
       return initialIntakeForm;
@@ -201,74 +141,22 @@ export default function IntakePage() {
     try {
       return { ...initialIntakeForm, ...JSON.parse(saved) };
     } catch {
-      window.localStorage.removeItem(ADVANCED_STORAGE_KEY);
+      window.localStorage.removeItem(STORAGE_KEY);
       return initialIntakeForm;
     }
   });
-  const [leadForm, setLeadForm] = useState<LeadCaptureForm>(() => {
-    if (typeof window === "undefined") {
-      return initialLeadCaptureForm;
-    }
-
-    const saved = window.localStorage.getItem(LEAD_CAPTURE_STORAGE_KEY);
-
-    if (!saved) {
-      return initialLeadCaptureForm;
-    }
-
-    try {
-      return { ...initialLeadCaptureForm, ...JSON.parse(saved) };
-    } catch {
-      window.localStorage.removeItem(LEAD_CAPTURE_STORAGE_KEY);
-      return initialLeadCaptureForm;
-    }
-  });
-  const [selectedTrack, setSelectedTrack] = useState<WorkTrack | null>(null);
   const [step, setStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
 
   useEffect(() => {
-    window.localStorage.setItem(ADVANCED_STORAGE_KEY, JSON.stringify(form));
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(form));
   }, [form]);
-
-  useEffect(() => {
-    window.localStorage.setItem(
-      LEAD_CAPTURE_STORAGE_KEY,
-      JSON.stringify(leadForm),
-    );
-  }, [leadForm]);
-
-  useEffect(() => {
-    const track = searchParams.get("track");
-
-    if (track === "advanced" || track === "lead-capture") {
-      setSelectedTrack(track);
-      return;
-    }
-
-    setSelectedTrack(null);
-  }, [searchParams]);
 
   const progress = useMemo(
     () => Math.round(((step + 1) / steps.length) * 100),
     [step],
-  );
-
-  const leadStepValid = useMemo(
-    () =>
-      Boolean(
-        leadForm.fullName.trim() &&
-          leadForm.companyName.trim() &&
-          leadForm.email.trim() &&
-          leadForm.country.trim() &&
-          leadForm.leadSources.length > 0 &&
-          leadForm.responseFlow &&
-          leadForm.desiredOutcomes.length > 0 &&
-          leadForm.timeline,
-      ),
-    [leadForm],
   );
 
   const stepValid = useMemo(() => {
@@ -307,11 +195,6 @@ export default function IntakePage() {
   const updateField = <K extends keyof IntakeForm>(key: K, value: IntakeForm[K]) =>
     setForm((current) => ({ ...current, [key]: value }));
 
-  const updateLeadField = <K extends keyof LeadCaptureForm>(
-    key: K,
-    value: LeadCaptureForm[K],
-  ) => setLeadForm((current) => ({ ...current, [key]: value }));
-
   const nextStep = async () => {
     if (!stepValid) return;
     if (step < steps.length - 1) {
@@ -346,7 +229,7 @@ export default function IntakePage() {
       }
 
       setSubmitted(true);
-      window.localStorage.removeItem(ADVANCED_STORAGE_KEY);
+      window.localStorage.removeItem(STORAGE_KEY);
     } catch (error) {
       setSubmitError(
         error instanceof Error
@@ -363,96 +246,13 @@ export default function IntakePage() {
     setStep((current) => current - 1);
   };
 
-  const submitLeadCapture = async () => {
-    if (!leadStepValid) return;
-
-    setSubmitError("");
-    setIsSubmitting(true);
-
-    const timelineMap: Record<string, IntakeForm["timeline"]> = {
-      "This week": "ASAP",
-      "This month": "1–3 months",
-      "Just exploring": "Just exploring",
-    };
-
-    const requestBody: IntakeForm = {
-      ...initialIntakeForm,
-      industry: "Lead Capture Systems",
-      companySize: leadForm.companySize,
-      country: leadForm.country,
-      locations: "Single location",
-      objectives: leadForm.desiredOutcomes,
-      primaryUseCase: leadForm.responseFlow,
-      environment: "Digital lead capture",
-      currentInfrastructure: leadForm.leadSources,
-      internetReliability: "Strong / stable",
-      dataAvailability: "We collect limited data",
-      aiExperience: "No",
-      currentStage:
-        leadForm.timeline === "Just exploring"
-          ? "Evaluating vendors"
-          : "Ready to deploy",
-      deploymentSetup: "Cloud only",
-      budget: "Under $25K",
-      timeline: timelineMap[leadForm.timeline],
-      additionalContext: [
-        leadForm.website ? `Website: ${leadForm.website}` : "",
-        leadForm.notes ? `Notes: ${leadForm.notes}` : "",
-      ]
-        .filter(Boolean)
-        .join("\n"),
-      fullName: leadForm.fullName,
-      companyName: leadForm.companyName,
-      email: leadForm.email,
-      phone: leadForm.phone,
-    };
-
-    try {
-      const response = await fetch("/api/intake", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(requestBody),
-      });
-
-      const responseBody = (await response.json()) as {
-        error?: string;
-        details?: string;
-      };
-
-      if (!response.ok) {
-        throw new Error(
-          responseBody.details
-            ? `${responseBody.error || "Submission failed."} ${responseBody.details}`
-            : responseBody.error ||
-                "We couldn't submit your request just yet. Please try again.",
-        );
-      }
-
-      setSubmitted(true);
-      window.localStorage.removeItem(LEAD_CAPTURE_STORAGE_KEY);
-    } catch (error) {
-      setSubmitError(
-        error instanceof Error
-          ? error.message
-          : "We couldn't submit your request just yet. Please try again.",
-      );
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   const resetForm = () => {
     setForm(initialIntakeForm);
-    setLeadForm(initialLeadCaptureForm);
     setStep(0);
     setSubmitted(false);
     setSubmitError("");
     setIsSubmitting(false);
-    setSelectedTrack(null);
-    window.localStorage.removeItem(ADVANCED_STORAGE_KEY);
-    window.localStorage.removeItem(LEAD_CAPTURE_STORAGE_KEY);
+    window.localStorage.removeItem(STORAGE_KEY);
   };
 
   const inputClassName =
@@ -536,15 +336,14 @@ export default function IntakePage() {
         <section className="border-b border-[#efeae1] bg-[#faf8f3] px-6 py-10 md:px-10">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-              Ways to Work With Black Scarab
+              Client Intake
             </p>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-              Choose the system that fits your next step
+              Tell us what you&apos;re building
             </h1>
             <p className="mt-4 text-lg leading-8 text-[#6b7280]">
-              Black Scarab works on two levels: advanced operational AI systems
-              for complex environments, and fast lead capture systems for
-              businesses that want faster response and higher conversion.
+              This takes about 2–3 minutes. We&apos;ll use your answers to scope
+              the right AI infrastructure system for your business.
             </p>
           </div>
         </section>
@@ -556,14 +355,11 @@ export default function IntakePage() {
                 Received
               </p>
               <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-                {selectedTrack === "lead-capture"
-                  ? "Your lead capture request has been saved"
-                  : "Your intake has been saved"}
+                Your intake has been saved
               </h2>
               <p className="mt-4 text-lg leading-8 text-[#6b7280]">
-                {selectedTrack === "lead-capture"
-                  ? "Thanks. We have your details and will follow up about your lead capture system and next steps."
-                  : "Thanks. We&apos;ve received your intake and will review your project details before following up with next steps."}
+                Thanks. We&apos;ve received your intake and will review your
+                project details before following up with next steps.
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <a
@@ -581,297 +377,9 @@ export default function IntakePage() {
                 </button>
               </div>
             </div>
-          ) : selectedTrack === null ? (
-            <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-2">
-              <div className="rounded-[28px] border border-[#e7e3da] bg-white p-8 shadow-[0_12px_32px_rgba(15,23,42,0.05)]">
-                <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-                  Advanced Systems
-                </p>
-                <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-                  Custom edge AI for real-world operations
-                </h2>
-                <p className="mt-4 text-base leading-7 text-[#6b7280]">
-                  For manufacturing, agriculture, logistics, and other
-                  environments where real-time decisions, sensing, and reliable
-                  deployment matter.
-                </p>
-                <ul className="mt-6 space-y-3 text-sm leading-6 text-[#4b5563]">
-                  <li>Custom edge AI architecture and deployment planning</li>
-                  <li>Operational systems for industrial and field settings</li>
-                  <li>Best for teams evaluating larger or more technical builds</li>
-                </ul>
-                <button
-                  type="button"
-                  onClick={() => setSelectedTrack("advanced")}
-                  className="mt-8 rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
-                >
-                  Plan an Advanced System
-                </button>
-              </div>
-
-              <div className="rounded-[28px] border border-[#dde7d7] bg-[#edf4e8] p-8 shadow-[0_12px_32px_rgba(15,23,42,0.05)]">
-                <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-                  Lead Capture Systems
-                </p>
-                <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-                  AI-powered lead response in days, not weeks
-                </h2>
-                <p className="mt-4 text-base leading-7 text-[#55634b]">
-                  For businesses that want instant lead response, automated
-                  follow-up, cleaner lead tracking, and faster call booking
-                  without adding more manual work.
-                </p>
-                <ul className="mt-6 space-y-3 text-sm leading-6 text-[#46533f]">
-                  <li>Instant lead response and automated follow-up</li>
-                  <li>Fast setup with a focused, repeatable delivery model</li>
-                  <li>Built using the same operational thinking behind our larger systems</li>
-                </ul>
-                <button
-                  type="button"
-                  onClick={() => setSelectedTrack("lead-capture")}
-                  className="mt-8 rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
-                >
-                  Set Up Lead Capture
-                </button>
-              </div>
-            </div>
-          ) : selectedTrack === "lead-capture" ? (
-            <div className={`${sectionCard} mx-auto max-w-4xl`}>
-              <div className="flex flex-wrap items-start justify-between gap-4">
-                <div>
-                  <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-                    Lead Capture Systems
-                  </p>
-                  <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-                    Set up AI lead response in days, not weeks
-                  </h2>
-                  <p className="mt-4 max-w-2xl text-lg leading-8 text-[#6b7280]">
-                    Tell us how leads come in today and what you want to
-                    automate. This path is designed for a fast turnaround and a
-                    simple setup conversation.
-                  </p>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setSelectedTrack(null)}
-                  className="rounded-full border border-[#ddd7cc] px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
-                >
-                  Switch Path
-                </button>
-              </div>
-
-              <div className="mt-8 grid gap-6">
-                <div className="grid gap-6 md:grid-cols-2">
-                  <div>
-                    <label className="mb-2 block text-sm font-medium text-[#111827]">
-                      Full Name <span className="text-[#9c4f3d]">*</span>
-                    </label>
-                    <input
-                      value={leadForm.fullName}
-                      onChange={(event) =>
-                        updateLeadField("fullName", event.target.value)
-                      }
-                      placeholder="Your full name"
-                      className={inputClassName}
-                    />
-                  </div>
-
-                  <div>
-                    <label className="mb-2 block text-sm font-medium text-[#111827]">
-                      Business Name <span className="text-[#9c4f3d]">*</span>
-                    </label>
-                    <input
-                      value={leadForm.companyName}
-                      onChange={(event) =>
-                        updateLeadField("companyName", event.target.value)
-                      }
-                      placeholder="Business name"
-                      className={inputClassName}
-                    />
-                  </div>
-                </div>
-
-                <div className="grid gap-6 md:grid-cols-2">
-                  <div>
-                    <label className="mb-2 block text-sm font-medium text-[#111827]">
-                      Email <span className="text-[#9c4f3d]">*</span>
-                    </label>
-                    <input
-                      value={leadForm.email}
-                      onChange={(event) =>
-                        updateLeadField("email", event.target.value)
-                      }
-                      placeholder="you@business.com"
-                      type="email"
-                      className={inputClassName}
-                    />
-                  </div>
-
-                  <div>
-                    <label className="mb-2 block text-sm font-medium text-[#111827]">
-                      Phone / WhatsApp
-                    </label>
-                    <input
-                      value={leadForm.phone}
-                      onChange={(event) =>
-                        updateLeadField("phone", event.target.value)
-                      }
-                      placeholder="+1 ..."
-                      className={inputClassName}
-                    />
-                  </div>
-                </div>
-
-                <div className="grid gap-6 md:grid-cols-2">
-                  <div>
-                    <label className="mb-2 block text-sm font-medium text-[#111827]">
-                      Website
-                    </label>
-                    <input
-                      value={leadForm.website}
-                      onChange={(event) =>
-                        updateLeadField("website", event.target.value)
-                      }
-                      placeholder="https://yourbusiness.com"
-                      className={inputClassName}
-                    />
-                  </div>
-
-                  <div>
-                    <label className="mb-2 block text-sm font-medium text-[#111827]">
-                      Country / Market <span className="text-[#9c4f3d]">*</span>
-                    </label>
-                    <input
-                      value={leadForm.country}
-                      onChange={(event) =>
-                        updateLeadField("country", event.target.value)
-                      }
-                      placeholder="United States, Mexico, Colombia..."
-                      className={inputClassName}
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="mb-3 block text-sm font-medium text-[#111827]">
-                    Company Size
-                  </label>
-                  {renderOptions(
-                    "lead-company-size",
-                    leadForm.companySize,
-                    companySizes,
-                    (next) => updateLeadField("companySize", next),
-                  )}
-                </div>
-
-                <div>
-                  <label className="mb-3 block text-sm font-medium text-[#111827]">
-                    How do leads come in now?{" "}
-                    <span className="text-[#9c4f3d]">*</span>
-                  </label>
-                  {renderMultiSelect(
-                    leadForm.leadSources,
-                    leadSourceOptions,
-                    (next) => updateLeadField("leadSources", next),
-                  )}
-                </div>
-
-                <div>
-                  <label className="mb-3 block text-sm font-medium text-[#111827]">
-                    What happens after someone contacts you?{" "}
-                    <span className="text-[#9c4f3d]">*</span>
-                  </label>
-                  {renderOptions(
-                    "lead-response-flow",
-                    leadForm.responseFlow,
-                    responseFlowOptions,
-                    (next) => updateLeadField("responseFlow", next),
-                  )}
-                </div>
-
-                <div>
-                  <label className="mb-3 block text-sm font-medium text-[#111827]">
-                    What do you want us to set up?{" "}
-                    <span className="text-[#9c4f3d]">*</span>
-                  </label>
-                  {renderMultiSelect(
-                    leadForm.desiredOutcomes,
-                    leadOutcomeOptions,
-                    (next) => updateLeadField("desiredOutcomes", next),
-                  )}
-                </div>
-
-                <div>
-                  <label className="mb-3 block text-sm font-medium text-[#111827]">
-                    Preferred timeline <span className="text-[#9c4f3d]">*</span>
-                  </label>
-                  {renderOptions(
-                    "lead-timeline",
-                    leadForm.timeline,
-                    leadTimelineOptions,
-                    (next) => updateLeadField("timeline", next),
-                  )}
-                </div>
-
-                <div>
-                  <label className="mb-2 block text-sm font-medium text-[#111827]">
-                    Notes
-                  </label>
-                  <textarea
-                    value={leadForm.notes}
-                    onChange={(event) =>
-                      updateLeadField("notes", event.target.value)
-                    }
-                    rows={4}
-                    placeholder="Anything we should know about your lead flow, follow-up process, or booking setup?"
-                    className={inputClassName}
-                  />
-                </div>
-              </div>
-
-              <div className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-[#efeae1] pt-6">
-                <button
-                  type="button"
-                  onClick={() => setSelectedTrack(null)}
-                  className="rounded-full border border-[#ddd7cc] px-6 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
-                >
-                  Back
-                </button>
-
-                <div className="text-sm text-[#6b7280]">
-                  {submitError ? (
-                    <span className="text-[#9c4f3d]">{submitError}</span>
-                  ) : leadStepValid ? (
-                    "Looks good — submit when you're ready."
-                  ) : (
-                    "Complete the required fields to continue."
-                  )}
-                </div>
-
-                <button
-                  type="button"
-                  onClick={() => {
-                    void submitLeadCapture();
-                  }}
-                  disabled={!leadStepValid || isSubmitting}
-                  className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937] disabled:cursor-not-allowed disabled:opacity-40"
-                >
-                  {isSubmitting ? "Submitting..." : "Get My System Set Up"}
-                </button>
-              </div>
-            </div>
           ) : (
             <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[280px_1fr]">
               <aside className={`${sectionCard} h-fit`}>
-                <div className="flex justify-end">
-                  <button
-                    type="button"
-                    onClick={() => setSelectedTrack(null)}
-                    className="rounded-full border border-[#ddd7cc] px-4 py-2 text-xs font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
-                  >
-                    Switch Path
-                  </button>
-                </div>
                 <div className="flex items-center justify-between">
                   <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
                     Progress

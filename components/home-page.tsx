@@ -45,82 +45,11 @@ export default function HomePage() {
 
             <div className="relative mt-10 flex flex-wrap items-center justify-center gap-4">
               <a
-                href="#how-we-work"
+                href="#solutions"
                 className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
               >
-                See Ways to Work
+                Explore Solutions
               </a>
-            </div>
-          </section>
-
-          <section
-            id="how-we-work"
-            className="border-t border-[#efeae1] px-6 py-14 md:px-10"
-          >
-            <div className="mx-auto max-w-3xl text-center">
-              <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-                How We Work
-              </p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-                One brand, two entry points
-              </h2>
-              <p className="mt-4 text-lg leading-8 text-[#6b7280]">
-                Black Scarab helps clients at different levels of operational
-                complexity, from fast lead capture systems to advanced edge AI
-                deployments.
-              </p>
-            </div>
-
-            <div className="mt-10 grid gap-6 lg:grid-cols-2">
-              <div className="rounded-[28px] border border-[#e8e4dc] bg-[#fffdfa] p-8 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
-                <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-                  Advanced Systems
-                </p>
-                <h3 className="mt-4 text-2xl font-semibold tracking-tight md:text-3xl">
-                  Custom edge AI for real-world operations
-                </h3>
-                <p className="mt-4 text-base leading-7 text-[#6b7280]">
-                  We design advanced systems for manufacturing, agriculture,
-                  logistics, and other environments where latency, sensing, and
-                  operational reliability matter.
-                </p>
-                <ul className="mt-6 space-y-3 text-sm leading-6 text-[#4b5563]">
-                  <li>Custom system architecture and deployment planning</li>
-                  <li>Edge AI, sensing, and real-time operational workflows</li>
-                  <li>Best for complex, technical, or large-scale environments</li>
-                </ul>
-                <Link
-                  href="/intake?track=advanced"
-                  className="mt-8 inline-block rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
-                >
-                  Discuss Your System
-                </Link>
-              </div>
-
-              <div className="rounded-[28px] border border-[#dde7d7] bg-[#edf4e8] p-8 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
-                <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-                  Lead Capture Systems
-                </p>
-                <h3 className="mt-4 text-2xl font-semibold tracking-tight md:text-3xl">
-                  AI-powered lead response for growing businesses
-                </h3>
-                <p className="mt-4 text-base leading-7 text-[#55634b]">
-                  We set up simple systems that respond instantly to leads,
-                  automate follow-up, and help businesses book more calls
-                  without adding more manual work.
-                </p>
-                <ul className="mt-6 space-y-3 text-sm leading-6 text-[#46533f]">
-                  <li>Setup from $1,000</li>
-                  <li>Ongoing support from $50/month</li>
-                  <li>Built using the same principles behind our larger systems</li>
-                </ul>
-                <Link
-                  href="/intake?track=lead-capture"
-                  className="mt-8 inline-block rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
-                >
-                  Get Your System Set Up
-                </Link>
-              </div>
             </div>
           </section>
 
@@ -200,7 +129,7 @@ export default function HomePage() {
 
             <div className="mt-10 text-center">
               <a
-                href="/intake?track=advanced"
+                href="/intake"
                 className="inline-block rounded-full bg-[#111827] px-7 py-4 text-sm font-medium text-white transition hover:bg-[#1f2937]"
               >
                 {activeIndustry.cta}
@@ -319,7 +248,7 @@ export default function HomePage() {
 
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <a
-                  href="/intake?track=advanced"
+                  href="/intake"
                   className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
                 >
                   Get Started

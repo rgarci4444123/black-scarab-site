@@ -15,7 +15,7 @@ export default function InsightsPage() {
             { label: "About", href: "/about", isPage: true },
           ]}
           ctaLabel="Get Started"
-          ctaHref="/intake?track=advanced"
+          ctaHref="/intake"
         />
 
         <section className="px-6 py-14 text-center md:px-10 md:py-18">
@@ -69,7 +69,7 @@ export default function InsightsPage() {
 
           <div className="mt-10 text-center">
             <Link
-              href="/intake?track=advanced"
+              href="/intake"
               className="inline-block rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
             >
               Contact Black Scarab

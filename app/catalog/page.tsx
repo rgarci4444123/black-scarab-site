@@ -15,7 +15,7 @@ export default function CatalogPage() {
             { label: "About", href: "/about", isPage: true },
           ]}
           ctaLabel="Get Started"
-          ctaHref="/intake?track=advanced"
+          ctaHref="/intake"
         />
 
         <section className="border-b border-[#efeae1] bg-[#faf8f3] px-6 py-14 text-center md:px-10 md:py-18">
@@ -61,7 +61,7 @@ export default function CatalogPage() {
             </p>
             <div className="mt-8">
               <a
-                href="/intake?track=advanced"
+                href="/intake"
                 className="inline-block rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
               >
                 Design My System

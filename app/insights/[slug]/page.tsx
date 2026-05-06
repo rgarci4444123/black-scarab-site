@@ -230,7 +230,7 @@ export default async function CaseStudyPage({ params }: Props) {
             { label: "About", href: "/about", isPage: true },
           ]}
           ctaLabel="Get Started"
-          ctaHref="/intake?track=advanced"
+          ctaHref="/intake"
         />
 
         <article>
@@ -275,7 +275,7 @@ export default async function CaseStudyPage({ params }: Props) {
                 </div>
                 <div className="mt-8 flex flex-wrap items-center gap-4">
                   <Link
-                    href="/intake?track=advanced"
+                    href="/intake"
                     className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
                   >
                     Design My System
@@ -423,7 +423,7 @@ export default async function CaseStudyPage({ params }: Props) {
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <Link
-                  href="/intake?track=advanced"
+                  href="/intake"
                   className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
                 >
                   Design My System
