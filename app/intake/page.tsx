@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import SiteHeader from "@/components/site-header";
 import { initialIntakeForm, type IntakeForm } from "@/lib/intake";
 
@@ -186,7 +185,6 @@ function toggleValue(values: string[], value: string) {
 }
 
 export default function IntakePage() {
-  const searchParams = useSearchParams();
   const [form, setForm] = useState<IntakeForm>(() => {
     if (typeof window === "undefined") {
       return initialIntakeForm;
@@ -241,7 +239,11 @@ export default function IntakePage() {
   }, [leadForm]);
 
   useEffect(() => {
-    const track = searchParams.get("track");
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const track = new URLSearchParams(window.location.search).get("track");
 
     if (track === "advanced" || track === "lead-capture") {
       setSelectedTrack(track);
@@ -249,7 +251,7 @@ export default function IntakePage() {
     }
 
     setSelectedTrack(null);
-  }, [searchParams]);
+  }, []);
 
   const progress = useMemo(
     () => Math.round(((step + 1) / steps.length) * 100),
