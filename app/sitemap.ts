@@ -30,6 +30,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/intake`,
       lastModified: new Date(),
     },
+    {
+      url: `${baseUrl}/lead-capture`,
+      lastModified: new Date(),
+    },
     ...products.map((product) => ({
       url: `${baseUrl}/catalog/${product.slug}`,
       lastModified: new Date(),
