@@ -1516,6 +1516,97 @@ export const caseStudies: CaseStudyArticle[] = [
       },
     ],
   }
+  ,
+  {
+    slug: "qualcomm-robotics-rb5-guide",
+    title:
+      "Qualcomm Robotics RB5: Why It Matters for 5G Robotics, Drones, and Edge AI in 2026",
+    summary:
+      "A practical guide to the Qualcomm Robotics RB5 platform, covering the QRB5165 processor, Qualcomm AI Stack, built-in 5G, and the edge AI use cases where connected robotics and autonomous drones benefit most.",
+    publishedLabel: "Guide · Published May 9, 2026",
+    publishedDate: "2026-05-09",
+    typeLabel: "Guide",
+    formatLabel: "Website-native platform deep dive",
+    industry: "Cross-Industry",
+    image: "/article-images/qualcomm-robotics-rb5-guide.png",
+    imageAlt:
+      "Qualcomm Robotics RB5 represented as a connected autonomous drone and robotics edge AI platform with 5G infrastructure.",
+    seoDescription:
+      "Learn why Qualcomm Robotics RB5 is a key 5G robotics and edge AI platform for drones, autonomous delivery systems, and connected robotic devices in 2026.",
+    sections: [
+      {
+        paragraphs: [
+          "In autonomous robotics, connectivity is not an accessory. It is part of the system architecture. That is what makes Qualcomm Robotics RB5 different from many edge AI platforms that focus mostly on local compute. RB5 is designed around the idea that modern robots, drones, and mobile machines need to see, reason, move, and stay connected at the same time.",
+          "That is why the platform matters. Qualcomm Robotics RB5 combines on-device AI, heterogeneous compute, camera and sensor support, and 5G-ready connectivity in a way that is especially relevant for autonomous drones, connected robots, and edge AI systems that operate outside a fixed indoor environment.",
+        ],
+      },
+      {
+        heading: "1. The Power of Integrated Connectivity",
+        paragraphs: [
+          "The RB5 is built around the QRB5165 processor, which Qualcomm positions specifically for robotics, drones, and intelligent edge devices rather than general-purpose desktop inference.",
+          "Why 5G Matters: Connected robotics workloads often need more than local inference. Native support for advanced wireless connectivity matters in applications such as beyond visual line of sight drone operations, remote supervision, fleet coordination, and event-driven uplink of telemetry or sensor data.",
+          "Heterogeneous Computing: The RB5 combines CPU, GPU, and Qualcomm's AI acceleration architecture so developers can balance perception, control, and inference workloads without depending on a single compute path.",
+        ],
+      },
+      {
+        heading: "2. Deep Dive: The Qualcomm AI Stack",
+        paragraphs: [
+          "The hardware is only part of the story. The real value of the RB5 platform comes from the Qualcomm AI Stack, which helps connect trained models to deployment on Qualcomm robotics and edge hardware.",
+          "Unified Deployment Path: Qualcomm positions the AI Stack as a way to support common frameworks and streamline model deployment across supported Qualcomm silicon.",
+          "Connected Edge AI: In high-speed robotics and drone systems, not every task should be processed in the same place. Some decisions, like obstacle avoidance, must stay local. Other tasks, like larger map synchronization or fleet-level coordination, may benefit from network connectivity. That split is exactly the kind of deployment logic RB5 is built to support.",
+          "Optimization and Compression: As with other edge AI platforms, model optimization, quantization, and efficient sensor fusion are central to getting useful performance within real mobile power budgets.",
+        ],
+      },
+      {
+        heading: "3. Application: 5G Agricultural Drones",
+        paragraphs: [
+          "Agricultural drones are one of the clearest examples of why Qualcomm Robotics RB5 matters. These systems do not just need onboard intelligence. They also need to move through large outdoor environments, capture data continuously, and remain connected to operators or downstream systems.",
+          "Real-Time Analysis: A drone platform built around RB5 can combine onboard perception with remote workflow coordination, making it useful for crop inspection, anomaly detection, and large-area monitoring.",
+          "Connected Field Operations: Instead of treating flight and analysis as completely separate steps, a 5G-ready robotics platform makes it easier to stream selected data products, alerts, or metadata while operations are still underway.",
+        ],
+      },
+      {
+        heading: "4. Application: Autonomous Delivery and Mobile Robotics",
+        paragraphs: [
+          "The same platform logic applies to autonomous delivery and connected ground robotics. Mobile robots do not just need perception. They also need reliable coordination, remote oversight, and a path for handling edge cases.",
+          "Urban Navigation: Delivery robots and outdoor mobile systems often need to process multiple camera feeds and sensor inputs locally while still maintaining a connection to broader fleet-management systems.",
+          "Fleet Supervision: Connected robotics platforms make it easier to monitor deployments at scale, escalate unusual events, and manage the boundary between local autonomy and remote intervention.",
+        ],
+      },
+      {
+        heading: "Summary: The Verdict",
+        paragraphs: [
+          "Qualcomm Robotics RB5 proves that in robotics and mobile edge AI, being smart is only part of the problem. A real autonomous system also has to stay connected, coordinate with other systems, and keep making safe decisions while moving through the world.",
+          "That is why RB5 matters in 2026. For teams building 5G robotics, autonomous drones, and connected edge AI systems, Qualcomm Robotics RB5 remains one of the clearest examples of a platform built for both inference and mobility.",
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This guide was compiled using Qualcomm's official Robotics RB5 and QRB5165 platform materials, together with official Qualcomm AI Stack documentation and product positioning around robotics, drones, and connected edge AI deployment.",
+        ],
+      },
+    ],
+    sources: [
+      "Qualcomm Robotics RB5 official platform documentation",
+      "Qualcomm QRB5165 processor platform information",
+      "Qualcomm AI Stack official documentation",
+    ],
+    sourceLinks: [
+      {
+        label: "Qualcomm Robotics RB5 Development Kit",
+        url: "https://www.qualcomm.com/developer/hardware/robotics-rb5-development-kit",
+      },
+      {
+        label: "Qualcomm QRB5165 processor",
+        url: "https://www.qualcomm.com/products/application/industrial-and-embedded/qrb5165",
+      },
+      {
+        label: "Qualcomm AI Stack",
+        url: "https://www.qualcomm.com/developer/software/qualcomm-ai-stack",
+      },
+    ],
+  }
 ];
 
 export function getCaseStudyBySlug(slug: string) {
