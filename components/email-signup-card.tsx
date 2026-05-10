@@ -10,8 +10,8 @@ const defaultAction = "https://formsubmit.co/info@blackscarab.ai";
 
 export default function EmailSignupCard({
   source,
-  title = "Get new edge AI guides in your inbox",
-  description = "Get Black Scarab updates on edge AI platforms, case studies, and deployment insights as new articles go live.",
+  title = "Stay current on edge AI and physical AI",
+  description = "Get thoughtful Black Scarab updates on edge AI platforms, real-world deployments, and the systems moving AI into the physical world.",
   compact = false,
 }: EmailSignupCardProps) {
   const formAction = process.env.NEWSLETTER_FORM_ACTION ?? defaultAction;
@@ -67,12 +67,12 @@ export default function EmailSignupCard({
           type="submit"
           className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
         >
-          Get Updates
+          Stay Updated
         </button>
       </form>
 
       <p className={compact ? "mt-3 text-xs leading-6 text-[#6b7280]" : "mt-4 text-center text-xs leading-6 text-[#6b7280]"}>
-        Practical updates on edge AI platforms, deployment strategy, and new Black Scarab research.
+        No hype. Just useful updates on real-world AI systems.
       </p>
     </section>
   );

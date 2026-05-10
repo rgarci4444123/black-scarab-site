@@ -35,7 +35,7 @@ export default function SubscribeThanksPage() {
             You&apos;re on the list
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#6b7280]">
-            You&apos;ll get new Black Scarab updates on edge AI platforms, case studies, and deployment insights as new articles go live.
+            You&apos;ll get thoughtful updates on edge AI, physical AI, and real-world systems as new Black Scarab research goes live.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link

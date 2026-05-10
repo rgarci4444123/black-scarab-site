@@ -80,11 +80,7 @@ export default function InsightsPage() {
 
         <section className="border-t border-[#efeae1] px-6 py-14 md:px-10">
           <div className="mx-auto max-w-5xl">
-            <EmailSignupCard
-              source="insights-index"
-              title="Get new Black Scarab edge AI updates"
-              description="Subscribe for new platform guides, deployment insights, and real-world case studies as soon as they are published."
-            />
+            <EmailSignupCard source="insights-index" />
           </div>
         </section>
 
