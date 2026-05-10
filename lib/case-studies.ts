@@ -1119,9 +1119,9 @@ export const caseStudies: CaseStudyArticle[] = [
   {
     slug: "tesla-ai5-hw5-guide",
     title:
-      "Tesla AI5 (HW5): What to Know About Tesla's Next-Generation AI Chip in 2026",
+      "Tesla AI5 (HW5) Latest Update: Release Timeline, Specs, and Production Outlook for 2026",
     summary:
-      "A practical guide to Tesla AI5, also called HW5 or Hardware 5, covering the chip's likely specs, rollout timeline, Optimus and Cybercab use cases, foundry strategy, and what current Tesla owners should expect.",
+      "A practical guide to the latest Tesla AI5 and HW5 updates, covering the expected release timeline, likely specs, production outlook, Optimus and Cybercab use cases, foundry strategy, and what current Tesla owners should expect.",
     publishedLabel: "Guide · Published May 5, 2026",
     publishedDate: "2026-05-05",
     typeLabel: "Guide",
@@ -1131,7 +1131,7 @@ export const caseStudies: CaseStudyArticle[] = [
     imageAlt:
       "Concept illustration of Tesla AI5 silicon connecting Tesla vehicles, Optimus robotics, and AI infrastructure.",
     seoDescription:
-      "Learn what Tesla AI5, also called HW5 or Hardware 5, could mean for Tesla vehicles, Optimus, Cybercab, and Tesla's custom AI chip roadmap in 2026.",
+      "Get the latest Tesla AI5 (HW5) update, including the expected 2026 release timeline, likely specs, production outlook, and what the chip could mean for Tesla vehicles, Optimus, and Cybercab.",
     sections: [
       {
         paragraphs: [
