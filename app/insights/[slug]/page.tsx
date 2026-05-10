@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
 import { caseStudies, getCaseStudyBySlug } from "@/lib/case-studies";
 
@@ -375,6 +376,16 @@ export default async function CaseStudyPage({ params }: Props) {
                   </div>
                 </div>
               </aside>
+            </div>
+          </section>
+
+          <section className="px-6 pb-14 md:px-10">
+            <div className="mx-auto max-w-6xl">
+              <EmailSignupCard
+                source={`insight:${article.slug}`}
+                title="Get new edge AI platform guides and case studies"
+                description="If this article was useful, get future Black Scarab updates on edge AI platforms, real-world deployments, and new research as soon as they go live."
+              />
             </div>
           </section>
 
