@@ -1606,6 +1606,96 @@ export const caseStudies: CaseStudyArticle[] = [
         url: "https://www.qualcomm.com/developer/software/qualcomm-ai-stack",
       },
     ],
+  },
+  {
+    slug: "arduino-nicla-vision-guide",
+    title:
+      "Arduino Nicla Vision: Why It Matters for TinyML, Edge Impulse, and Edge AI in 2026",
+    summary:
+      "A practical guide to the Arduino Nicla Vision, covering TinyML, Edge Impulse workflows, low-power computer vision, predictive maintenance, and why microcontroller-based edge AI still matters in 2026.",
+    publishedLabel: "Guide · Published May 11, 2026",
+    publishedDate: "2026-05-11",
+    typeLabel: "Guide",
+    formatLabel: "Website-native platform deep dive",
+    industry: "Cross-Industry",
+    image: "/article-images/arduino-nicla-vision-guide.png",
+    imageAlt:
+      "Arduino Nicla Vision represented as a TinyML and low-power edge AI board for predictive maintenance and industrial sensing.",
+    seoDescription:
+      "Learn why the Arduino Nicla Vision is a key TinyML and Edge Impulse platform for low-power edge AI, predictive maintenance, and on-device computer vision in 2026.",
+    sections: [
+      {
+        paragraphs: [
+          "In edge AI, bigger is not always better. While larger accelerators and GPUs dominate conversation around language models, many of the most important real-world decisions happen on tiny devices at the sensor level. That is exactly where the Arduino Nicla Vision stands out.",
+          "The Nicla Vision has become one of the most interesting TinyML boards in the market because it brings a camera, onboard sensors, wireless connectivity, and a capable microcontroller into a form factor designed for always-on edge intelligence. For teams exploring low-power computer vision, predictive maintenance, or embedded sensing, it is a practical entry point into microcontroller-based edge AI.",
+        ],
+      },
+      {
+        heading: "1. Intelligence at the Millimeter Scale",
+        paragraphs: [
+          "The Arduino Nicla Vision is a tiny 22.86 x 22.86 mm board built around the STM32H747 dual-core microcontroller, with a 2 MP color camera, microphone, distance sensor, and 6-axis motion sensing packed into one compact platform.",
+          "Why TinyML Matters: TinyML is about running useful machine learning models on hardware with tight memory, power, and thermal budgets. That means the model lives on the device itself, without depending on a cloud connection or a high-power host system.",
+          "Low-Power Edge AI: Because the Nicla Vision is built on a microcontroller instead of a desktop-class processor, it opens up edge AI use cases where milliwatts matter, including battery-powered visual inspection, sensor monitoring, and continuous local inference.",
+        ],
+      },
+      {
+        heading: "2. Deep Dive: Edge Impulse, DSP, and TinyML Workflows",
+        paragraphs: [
+          "To make AI work on a board this small, the workflow matters as much as the silicon. That is why the Nicla Vision pairs so naturally with Edge Impulse, which has become one of the most recognizable development environments for TinyML and constrained edge AI deployment.",
+          "Signal Processing Before Inference: On microcontroller hardware, you cannot afford to push noisy raw data straight into a model and hope for the best. Digital signal processing helps reduce the problem into something the model can actually handle efficiently.",
+          "Feature Extraction: In audio and vibration workflows, that often means turning a raw signal into a spectrogram or another compact feature representation. In vision workflows, it means aggressively controlling image size and model complexity so inference remains practical on-device.",
+          "Why This Matters on Nicla Vision: Edge Impulse gives developers a more realistic path from sensor data collection to deployment on the Nicla Vision, especially for embedded classification, anomaly detection, and lightweight object detection approaches such as FOMO on microcontrollers.",
+        ],
+      },
+      {
+        heading: "3. Application: Predictive Maintenance",
+        paragraphs: [
+          "Predictive maintenance is one of the clearest use cases for the Arduino Nicla Vision because many industrial failures begin as subtle shifts in sound, motion, or visual appearance rather than a dramatic system breakdown.",
+          "Machine Monitoring at the Edge: Mounted near a motor, bearing, or mechanical assembly, the Nicla Vision can help capture vibration patterns, acoustic signatures, or compact visual signals that indicate whether a machine is behaving normally.",
+          "Earlier Intervention: A TinyML model running locally can flag unusual changes before a failure becomes obvious to a human operator, which makes the board useful for low-cost condition monitoring and edge-first maintenance pilots.",
+        ],
+      },
+      {
+        heading: "4. Application: Smart Wearables and Embedded Sensing",
+        paragraphs: [
+          "The same strengths make the Nicla Vision relevant in compact sensing and wearable-style systems, where low power, local processing, and small physical size matter more than raw model scale.",
+          "On-Body or Near-Body Processing: A small embedded board can help classify movement patterns, monitor environmental conditions, or process compact visual or audio signals directly on the device.",
+          "Privacy by Design: Because inference can stay local, TinyML systems built around the Nicla Vision reduce the need to send raw sensor streams, audio, or images into external cloud workflows for every decision.",
+        ],
+      },
+      {
+        heading: "Summary: The Verdict",
+        paragraphs: [
+          "The Arduino Nicla Vision proves that edge AI does not have to start with a large accelerator board or an industrial PC. In many real deployments, the smarter move is to place lightweight intelligence directly where the signal originates.",
+          "That is why the Nicla Vision matters in 2026. For teams working in TinyML, Edge Impulse, predictive maintenance, and low-power computer vision, it remains one of the clearest examples of how microcontroller-based edge AI can move intelligence into the physical world.",
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This guide was compiled using Arduino's official Nicla Vision hardware documentation and Edge Impulse's official Nicla Vision and FOMO documentation, with emphasis on the board's TinyML, sensing, and low-power deployment characteristics.",
+        ],
+      },
+    ],
+    sources: [
+      "Arduino Nicla Vision official hardware documentation",
+      "Edge Impulse Arduino Nicla Vision official documentation",
+      "Edge Impulse FOMO official documentation",
+    ],
+    sourceLinks: [
+      {
+        label: "Arduino Nicla Vision",
+        url: "https://docs.arduino.cc/hardware/nicla-vision/",
+      },
+      {
+        label: "Edge Impulse Arduino Nicla Vision",
+        url: "https://docs.edgeimpulse.com/hardware/boards/arduino-nicla-vision",
+      },
+      {
+        label: "Edge Impulse FOMO",
+        url: "https://docs.edgeimpulse.com/studio/projects/learning-blocks/blocks/object-detection/fomo",
+      },
+    ],
   }
 ];
 
