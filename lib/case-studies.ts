@@ -1696,6 +1696,110 @@ export const caseStudies: CaseStudyArticle[] = [
         url: "https://docs.edgeimpulse.com/studio/projects/learning-blocks/blocks/object-detection/fomo",
       },
     ],
+  },
+  {
+    slug: "intel-openvino-movidius-guide",
+    title:
+      "Intel OpenVINO: Cross-Platform Edge AI for CPUs, GPUs, NPUs, and Movidius in 2026",
+    summary:
+      "A practical guide to Intel OpenVINO for edge AI, covering model conversion, graph optimization, Intel CPU and GPU deployment, Intel NPUs, and how the Movidius legacy still informs enterprise computer vision workflows.",
+    publishedLabel: "Guide · Published May 13, 2026",
+    publishedDate: "2026-05-13",
+    typeLabel: "Guide",
+    formatLabel: "Website-native platform deep dive",
+    industry: "Cross-Industry",
+    image: "/article-images/intel-openvino-movidius-guide.png",
+    imageAlt:
+      "Intel OpenVINO represented as an enterprise edge AI deployment stack spanning industrial cameras, servers, robotics, and localized inference hardware.",
+    seoDescription:
+      "Learn why Intel OpenVINO remains a key edge AI deployment stack for CPUs, GPUs, NPUs, and Movidius-style computer vision workflows in 2026.",
+    sections: [
+      {
+        paragraphs: [
+          "Intel's edge AI strategy has always been more software-centric than many competing hardware platforms. Instead of tying developers to one accelerator family, Intel positioned OpenVINO as a deployment layer that can carry the same model across standard CPUs, integrated GPUs, Intel NPUs, and legacy Movidius-style vision acceleration paths.",
+          "That is what still makes OpenVINO important in 2026. For many enterprise teams, the real problem is not finding one fast chip. It is keeping an inference pipeline portable across multiple hardware targets, product generations, and deployment environments without rewriting the application every time the silicon changes.",
+        ],
+      },
+      {
+        heading: "1. Why OpenVINO Still Matters for Edge AI",
+        paragraphs: [
+          "OpenVINO remains one of the clearest examples of software-driven hardware abstraction in edge AI. The toolkit is designed to help developers bring trained models into a runtime that can target Intel CPUs, GPUs, and NPUs using one common deployment path.",
+          "Enterprise Portability: In real deployments, software often outlives any single accelerator generation. That is why OpenVINO matters so much in industrial and enterprise settings where teams want a stable inference layer that can survive hardware refresh cycles.",
+          "The Movidius Connection: Search interest around Intel Movidius still matters because many practitioners first encountered OpenVINO through Movidius VPUs and smart-camera workflows. Today, that legacy still points people toward the broader OpenVINO stack rather than one isolated device family.",
+        ],
+      },
+      {
+        heading: "2. Model Conversion and the OpenVINO IR Pipeline",
+        paragraphs: [
+          "One of OpenVINO's defining strengths is the model conversion workflow. Developers can start from common framework exports such as PyTorch, TensorFlow, or ONNX and convert models into OpenVINO's optimized representation for deployment.",
+          "Intermediate Representation: OpenVINO has long used an Intermediate Representation made up of an .xml file for model structure and a .bin file for weights, giving teams a standardized artifact for inference deployment.",
+          "Optimization Before Runtime: During conversion and optimization, developers can prepare models for lower-precision execution paths such as FP16 or INT8, which is one of the biggest reasons OpenVINO remains attractive for edge AI systems with tight memory and power budgets.",
+        ],
+      },
+      {
+        heading: "3. Graph Optimization, Quantization, and Runtime Efficiency",
+        paragraphs: [
+          "OpenVINO is not just a loader for exported models. The value comes from the optimization path between the training framework and the target device.",
+          "Graph-Level Optimization: OpenVINO applies graph transformations that can reduce memory movement, fuse compatible operations, and make the execution path more efficient for Intel hardware back ends.",
+          "Quantization and Compression: Through OpenVINO's optimization ecosystem, including post-training quantization flows, teams can reduce model memory footprint and improve performance while keeping accuracy within acceptable bounds for many vision workloads.",
+          "Why This Matters at the Edge: In industrial AI, smart cameras, and compact inference nodes, memory bandwidth and thermal budgets are often the real bottlenecks. Optimization is what turns a general model into something deployable.",
+        ],
+      },
+      {
+        heading: "4. CPU, GPU, NPU, and Heterogeneous Deployment",
+        paragraphs: [
+          "Once a model is optimized, OpenVINO Runtime becomes the common interface layer for inference across supported Intel devices.",
+          "CPU and iGPU Deployment: On traditional industrial PCs or embedded x86 systems, OpenVINO can target the CPU or integrated GPU without forcing teams to redesign the full application around a discrete accelerator.",
+          "Intel NPU Relevance: As Intel NPUs become more visible in Core Ultra platforms, OpenVINO matters even more because it gives developers a direct path to experiment with low-power local inference on newer Intel client hardware.",
+          "Automatic and Heterogeneous Execution: OpenVINO supports device selection and heterogeneous execution modes, allowing teams to balance where different parts of the inference workload run instead of hard-binding every deployment to one processor type.",
+        ],
+      },
+      {
+        heading: "5. Real-World Edge AI Applications",
+        paragraphs: [
+          "Portable Medical Imaging: In compact ultrasound or point-of-care imaging systems, OpenVINO gives developers a way to target existing Intel hardware inside the device while keeping thermal and battery constraints under control.",
+          "Retail and Smart Camera Analytics: OpenVINO is also a natural fit for enterprise computer vision deployments such as occupancy analytics, queue monitoring, and loss-prevention systems where one software stack may need to scale from a single device to a back-office edge server.",
+          "Industrial Gateways and Inspection Systems: In manufacturing environments, OpenVINO's portability makes it easier to keep one inference application running across different hardware tiers, from a standard IPC to a newer NPU-enabled edge box.",
+        ],
+      },
+      {
+        heading: "Summary: The Verdict",
+        paragraphs: [
+          "Intel OpenVINO remains one of the most important edge AI toolkits to understand because it solves a problem many teams underestimate: keeping deployment portable across changing hardware.",
+          "That is why OpenVINO still matters in 2026. For developers working with Intel CPUs, integrated GPUs, NPUs, and even legacy Movidius-adjacent computer vision workflows, it offers one of the clearest paths to repeatable enterprise edge AI deployment.",
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This guide was compiled using Intel's official OpenVINO documentation, including the current OpenVINO model conversion, model optimization, and inference-device documentation for CPU, GPU, NPU, automatic device selection, and heterogeneous execution.",
+        ],
+      },
+    ],
+    sources: [
+      "Intel OpenVINO official documentation",
+      "OpenVINO model conversion official documentation",
+      "OpenVINO inference devices and modes official documentation",
+      "OpenVINO quantization and optimization documentation",
+    ],
+    sourceLinks: [
+      {
+        label: "OpenVINO documentation",
+        url: "https://docs.openvino.ai/2026/index.html",
+      },
+      {
+        label: "Convert to OpenVINO model",
+        url: "https://docs.openvino.ai/2026/openvino-workflow/model-preparation.html",
+      },
+      {
+        label: "Inference devices and modes",
+        url: "https://docs.openvino.ai/2026/openvino-workflow/running-inference/inference-devices-and-modes.html",
+      },
+      {
+        label: "Post-training quantization",
+        url: "https://docs.openvino.ai/2026/openvino-workflow/model-optimization-guide/quantizing-models-post-training.html",
+      },
+    ],
   }
 ];
 
