@@ -1959,6 +1959,117 @@ export const caseStudies: CaseStudyArticle[] = [
         url: "https://sambanova.ai/products/",
       },
     ],
+  },
+  {
+    slug: "amd-kria-k26-guide",
+    title:
+      "AMD Xilinx Kria K26: Adaptive Edge AI for Vitis AI, Robotics, and Vision in 2026",
+    summary:
+      "A practical guide to AMD Xilinx Kria K26, covering adaptive SoMs, FPGA logic, Vitis AI, deterministic inference, and why Kria still matters for robotics, industrial vision, and low-latency edge systems.",
+    publishedLabel: "Guide · Published May 14, 2026",
+    publishedDate: "2026-05-14",
+    typeLabel: "Guide",
+    formatLabel: "Website-native platform deep dive",
+    industry: "Cross-Industry",
+    image: "/article-images/amd-kria-k26-guide.png",
+    imageAlt:
+      "AMD Kria K26 adaptive system-on-module represented across robotics, industrial vision, 5G infrastructure, and neural network acceleration pipelines.",
+    seoDescription:
+      "Learn why AMD Xilinx Kria K26 still matters for adaptive edge AI in 2026, including Vitis AI, FPGA logic, deterministic latency, robotics, and industrial vision.",
+    sections: [
+      {
+        paragraphs: [
+          "Fixed-silicon processors like standard CPUs, GPUs, and ASICs are designed around hardware that cannot be re-wired after manufacturing. Their arithmetic units, memory hierarchies, and execution paths are fixed from the factory. When a new computer vision or sensor-fusion workload emerges that does not map cleanly onto that architecture, software layers have to absorb the mismatch through extra scheduling, memory movement, and overhead.",
+          "That is why AMD Xilinx Kria still matters in 2026. Kria is one of the clearest mainstream paths into adaptive edge AI, where the hardware can be shaped more directly around the workload instead of forcing the workload to conform to fixed silicon assumptions. For Black Scarab, Kria is important because it sits at the intersection of low-latency inference, robotics, industrial vision, and deterministic edge execution.",
+        ],
+      },
+      {
+        heading: "1. Why AMD Kria Still Matters for Edge AI",
+        paragraphs: [
+          "The Kria product line was created to make adaptive computing more accessible outside traditional FPGA teams. Instead of asking every edge AI developer to start with raw hardware design, AMD packaged the core technology into Kria System-on-Modules and starter kits such as the K26 SOM, the KV260 Vision AI Starter Kit, and the KR260 Robotics Starter Kit.",
+          "That matters because many edge deployments do not fail on raw TOPS alone. They fail because the system has to connect cameras, sensors, control loops, and inference paths under tight latency and power constraints. Kria is attractive in those environments because it is not just an accelerator. It is an adaptive compute platform that can sit directly inside a real deployment architecture.",
+          "Search interest around AMD Xilinx Kria also tends to cluster around the K26 family, KV260, KR260, and Vitis AI. Those are the practical on-ramps for teams trying to evaluate whether adaptive hardware can outperform a more conventional CPU, GPU, or ASIC stack in a specialized edge application.",
+        ],
+      },
+      {
+        heading: "The Series Deep Dive: Demystifying Hardware Logic",
+        paragraphs: [
+          "The core of the Kria story is not just that it uses FPGA technology. It is that it pushes AI execution below the level of ordinary operating-system scheduling and standard software pipelines.",
+          "Instead of compiling ordinary application code into sequential instructions for a fixed processor core, FPGA-based systems expose configurable logic blocks, routing fabric, and DSP resources that can be arranged into hardware-level execution paths. That is why adaptive systems behave differently from standard processors. You are not simply running the model on the chip. You are shaping parts of the chip around the model and the data path.",
+          "In the Kria ecosystem, that design complexity is partially abstracted through AMD's software and acceleration stack. But the underlying advantage remains the same: the closer data movement, sensor interfaces, and inference logic are pulled into dedicated hardware paths, the more predictable the system becomes.",
+        ],
+      },
+      {
+        heading: "2. Vitis AI and the Kria Deployment Path",
+        paragraphs: [
+          "Kria becomes practical for edge AI largely because of Vitis AI. Instead of leaving teams to hand-build every hardware block from scratch, AMD provides a deployment path where trained neural networks can be compiled into execution targets built around its Deep Learning Processor Unit, or DPU, architecture.",
+          "That matters for search and for deployment. Many teams looking at AMD Xilinx Kria are really asking whether Kria plus Vitis AI provides a usable path into FPGA-backed inference without becoming a full custom hardware shop. In many cases, that is exactly the value proposition.",
+          "Vitis AI gives developers a way to bring common AI models into an AMD-specific acceleration flow, optimize them, and target deployable hardware in the Kria family. It does not eliminate FPGA complexity entirely, but it narrows the gap between software-centric edge AI teams and adaptive hardware deployment.",
+        ],
+      },
+      {
+        heading: "3. Custom Data Pipelines and Deterministic Latency",
+        paragraphs: [
+          "One of the biggest advantages of Kria is that it can reduce the amount of overhead between the physical sensor and the inference pipeline.",
+          "Custom Data Pipelines: In a Kria-based system, camera interfaces, radar feeds, LiDAR streams, or other sensor inputs can be wired much more directly into the processing path than in a general-purpose software stack. That reduces host-memory copies, operating-system overhead, and unnecessary movement through layers of generic abstraction.",
+          "Deterministic Execution Latency: Standard operating systems introduce jitter because background tasks, interrupts, and thread scheduling can shift execution timing. Adaptive logic paths are valuable because they make timing much more predictable. In real edge deployments such as robotics, industrial control, or communications infrastructure, deterministic latency can matter as much as raw throughput.",
+          "Hardware Parallelism: Kria also matters because it enables true spatial parallelism. Instead of rapidly context-switching across shared processor resources, separate physical pipelines can be instantiated across the fabric to handle independent operations at the same time. That is a very different model from simply adding more CPU threads or leaning on a general GPU runtime.",
+        ],
+      },
+      {
+        heading: "4. Why Adaptive Edge AI Is Different from Fixed Silicon",
+        paragraphs: [
+          "The reason adaptive SoMs deserve a place in the edge AI conversation is that they occupy a middle ground that fixed processors often struggle to match.",
+          "CPUs are flexible but often too slow or too variable for specialized low-latency loops. GPUs are strong general accelerators but can introduce power, thermal, and software-stack overhead that is hard to justify in tightly constrained embedded systems. ASICs are efficient but locked into a fixed hardware design once manufactured.",
+          "Kria matters because it offers a more adaptable hardware path for deployments where the data path itself is part of the optimization problem. That makes it especially relevant when inference has to be tightly coupled with sensors, control systems, communications interfaces, or industrial timing constraints.",
+        ],
+      },
+      {
+        heading: "Real-World Applications",
+        paragraphs: [
+          "5G Signal Optimization: As radio infrastructure moves deeper into dense, high-frequency 5G environments, local optimization loops become more important. Beamforming, channel estimation, and radio adaptation all benefit from low-latency processing paths close to the antenna system. Kria is attractive here because adaptive logic can help process local signal data and execute time-sensitive optimization loops without relying on a heavy server-class accelerator stack.",
+          "Industrial Vision and Robotics: The KV260 and KR260 matter because they give teams concrete development platforms for machine vision and robotics. In a factory or warehouse, a system may need to ingest multiple cameras, run low-latency inference, and coordinate physical motion or safety logic in one tightly controlled loop. Kria is well positioned for these cases because the hardware can be shaped around that exact deployment pattern.",
+          "Aerospace and Defense Systems: In avionics, radar, and unmanned systems, unpredictable latency can be just as dangerous as insufficient compute. Adaptive SoMs like the K26 are useful when optical, thermal, radar, or telemetry streams must be processed under tight power and timing constraints. The ability to build direct sensor-to-inference-to-control pipelines is one of the reasons FPGA-derived platforms remain relevant in these environments.",
+        ],
+      },
+      {
+        heading: "Summary: The Verdict",
+        paragraphs: [
+          "AMD Xilinx Kria is not the easiest edge AI platform to understand, but that is also why it matters. It represents a different design philosophy from CPU, GPU, and ASIC-first systems: rather than treating the hardware as fixed and asking software to adapt, Kria gives developers a path toward adapting the hardware around the workload.",
+          "That is why Kria still matters in 2026. For teams working in robotics, industrial vision, communications infrastructure, and other low-latency edge environments, the K26 family remains one of the clearest mainstream examples of adaptive edge AI in practice.",
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This guide was compiled using AMD's official Kria product pages, starter-kit documentation, and official Vitis AI documentation, with emphasis on the K26, KV260, KR260, and the software path used to bring adaptive AI workloads into deployment.",
+        ],
+      },
+    ],
+    sources: [
+      "AMD Kria K26 official product documentation",
+      "AMD Kria KV260 Vision AI Starter Kit official documentation",
+      "AMD Kria KR260 Robotics Starter Kit official documentation",
+      "AMD Vitis AI official documentation",
+    ],
+    sourceLinks: [
+      {
+        label: "Kria K26 product brief",
+        url: "https://www.amd.com/content/dam/amd/en/documents/products/som/kria/k26/k26-product-brief.pdf",
+      },
+      {
+        label: "Kria KV260 Vision AI Starter Kit",
+        url: "https://www.amd.com/en/products/system-on-modules/kria/k26/kv260-vision-starter-kit.html",
+      },
+      {
+        label: "Kria KR260 Robotics Starter Kit",
+        url: "https://www.amd.com/en/products/system-on-modules/kria/k26/robotics.html",
+      },
+      {
+        label: "Vitis AI overview",
+        url: "https://docs.amd.com/r/en-US/ug1414-vitis-ai/Vitis-AI-Overview",
+      },
+    ],
   }
 ];
 
