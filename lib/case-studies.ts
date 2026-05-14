@@ -1801,6 +1801,165 @@ export const caseStudies: CaseStudyArticle[] = [
       },
     ],
   }
+  ,
+  {
+    slug: "cerebras-wse-3-guide",
+    title:
+      "Cerebras WSE-3: Why Wafer-Scale AI Matters for Inference, Physical AI, and Edge Infrastructure in 2026",
+    summary:
+      "A Black Scarab deep dive on the Cerebras WSE-3, covering wafer-scale AI, the memory wall, on-chip SRAM, inference throughput, and why centralized reasoning infrastructure could matter more for physical AI and edge systems than most edge-device comparisons suggest.",
+    publishedLabel: "Guide · Published May 13, 2026",
+    publishedDate: "2026-05-13",
+    typeLabel: "Guide",
+    formatLabel: "Website-native platform deep dive",
+    industry: "Cross-Industry",
+    image: "/article-images/cerebras-wse-3-guide.png",
+    imageAlt:
+      "Cerebras wafer-scale AI processor represented as a giant monolithic silicon surface lit across a high-performance circuit board.",
+    seoDescription:
+      "A Black Scarab deep dive on Cerebras WSE-3, wafer-scale AI, and why the 2026 Cerebras IPO matters for inference, physical AI, and the future of edge infrastructure.",
+    sections: [
+      {
+        paragraphs: [
+          "With Cerebras scheduled to begin trading on May 14, 2026, the conversation around wafer-scale computing is moving from technical curiosity to strategic infrastructure question. The important issue is not just whether Cerebras can challenge NVIDIA at the top of the AI compute market. It is whether wafer-scale inference changes the economics of reasoning, orchestration, and model deployment across the wider physical AI stack.",
+          "For Black Scarab, that is the real lens. Cerebras is not edge hardware in the usual sense. A wafer-scale system does not sit inside a camera, a drone, or a portable medical device. But it may become part of the centralized infrastructure layer that edge AI and physical AI increasingly depend on.",
+        ],
+      },
+      {
+        heading: "1. Why Cerebras Exists: The Memory Wall Problem",
+        paragraphs: [
+          "The fundamental bottleneck in modern large-model inference is not always raw compute. It is memory movement.",
+          "For an autoregressive model to generate a new token, the system must repeatedly multiply the live context state against massive model weight tensors. In conventional accelerators, those weights cannot live entirely inside local cache. They must be pulled out of external memory systems, moved across buses and interconnects, and fed back into the compute fabric over and over again.",
+          "That is the memory wall. Even when compute cores are fast, the system still loses time and energy moving parameters between memory and execution units.",
+          "Cerebras attacked that bottleneck by discarding one of the basic assumptions of chip design. Instead of cutting a wafer into many separate dies, it built a single processor across the whole wafer.",
+        ],
+      },
+      {
+        heading: "2. What the WSE-3 Actually Is",
+        paragraphs: [
+          "The Cerebras Wafer-Scale Engine 3, or WSE-3, is fabricated on TSMC 5nm and spans 46,225 square millimeters, making it dramatically larger than a conventional accelerator die. Cerebras uses cross-reticle stitching to preserve a continuous execution surface across the entire silicon wafer rather than dividing it into many individual chips.",
+          "The result is a platform built around 900,000 independently programmable AI cores, 44 GB of on-chip SRAM, and 21 petabytes per second of memory bandwidth.",
+          "That architecture matters because it shifts the system closer to a world where more of the model stays physically near the compute. Instead of repeatedly paying the latency and energy penalties of off-chip memory access, the processor keeps more of the inference loop local to the wafer.",
+          "This is the central Cerebras thesis: if memory movement is the true bottleneck, then the fastest path is not necessarily more distributed silicon. It may be more locality.",
+        ],
+      },
+      {
+        heading: "3. The Real Advantage: Inference, Not Just Spectacle",
+        paragraphs: [
+          "The wafer is the headline, but inference is the story.",
+          "Cerebras is not interesting simply because it built the largest chip. It is interesting because the architecture is designed to reduce one of the most important pain points in AI infrastructure: how slowly and expensively large models can reason when every token requires repeated weight streaming from external memory.",
+          "That is why Cerebras talks so much about token throughput and reasoning-heavy workloads. For frontier inference, especially workloads that require repeated multi-step generation rather than one-shot classification, throughput is not a vanity metric. It affects whether the architecture is operationally usable.",
+          "This becomes even more important in the emerging agentic and reasoning era, where models are increasingly asked to call tools, evaluate intermediate outputs, hand tasks to other models, coordinate multi-step plans, and stay responsive inside time-sensitive systems.",
+        ],
+      },
+      {
+        heading: "4. Why Edge AI People Should Care",
+        paragraphs: [
+          "Cerebras is not an edge device platform, but edge AI is no longer just about what runs on-device. It is increasingly about how multiple compute layers work together.",
+          "A modern physical AI stack may include low-power on-device inference, gateway or local server orchestration, regional edge nodes, centralized reasoning infrastructure, and model training and distillation pipelines.",
+          "That makes Cerebras relevant for edge AI in at least three ways: centralized reasoning for distributed systems, faster multi-agent physical AI loops, and upstream training and distillation pipelines that feed smaller deployment targets downstream.",
+        ],
+      },
+      {
+        heading: "5. Centralized Reasoning for Distributed Systems",
+        paragraphs: [
+          "Many edge systems do not need to run massive models locally. They need to sense, react, and stay safe locally while escalating planning, orchestration, or language-heavy reasoning upstream.",
+          "That could apply to robotics fleets, industrial automation systems, multi-camera facility intelligence, autonomous inspection systems, and distributed field deployments.",
+          "If the centralized layer is too slow, the overall system becomes brittle. Cerebras matters because it is one of the clearest attempts to reduce that centralized reasoning bottleneck.",
+        ],
+      },
+      {
+        heading: "6. Multi-Agent Physical AI Loops",
+        paragraphs: [
+          "Physical AI increasingly depends on iterative reasoning loops rather than isolated inference events. One model interprets the environment, another proposes an action, another validates the action against policy or safety constraints, and another coordinates across a fleet or workflow.",
+          "That architecture breaks down quickly if token generation is too slow. High-speed centralized inference changes the economics of those loops, especially when many small edge systems need to share a higher-order reasoning layer.",
+          "For robotics, industrial automation, delivery fleets, and autonomy stacks, inference speed is not cosmetic. It changes whether a multi-agent control architecture is practical in production.",
+        ],
+      },
+      {
+        heading: "7. Training, Distillation, and Deployment Pipelines",
+        paragraphs: [
+          "The future of edge AI will not be shaped only by which chips sit inside edge devices. It will also be shaped by how quickly large centralized systems can train, adapt, distill, and push optimized models downstream.",
+          "Large centralized systems can train foundation or domain-specific models, adapt them to enterprise or sovereign environments, distill them into smaller edge-deployable variants, and push optimized models downstream to lower-power platforms.",
+          "That means systems like Cerebras can have second-order influence over the entire edge ecosystem even when the final inference target is a tiny device running OpenVINO, TensorFlow Lite, or another edge runtime.",
+        ],
+      },
+      {
+        heading: "8. Cerebras vs. NVIDIA vs. SambaNova",
+        paragraphs: [
+          "The strategic value of Cerebras becomes clearer when it is compared to the other major architectural philosophies in the AI compute market.",
+          "Cerebras WSE-3 bets on monolithic wafer-scale integration, extreme memory locality, and enormous on-chip bandwidth. NVIDIA Blackwell bets on a mature software moat, multi-die acceleration, and broad enterprise adoption through CUDA and a vast surrounding ecosystem. SambaNova bets on reconfigurable dataflow and a more layered memory approach that trades some locality for more flexible scaling across large models.",
+          "Each approach answers the same core question differently: how do you move model parameters and activations fast enough to support the next generation of AI workloads?",
+          "For Black Scarab, the key point is not to declare an absolute winner. It is to understand that AI infrastructure is fragmenting into competing physical design philosophies, and those differences will shape the systems that physical AI builders depend on.",
+        ],
+      },
+      {
+        heading: "9. Why the IPO Actually Matters",
+        paragraphs: [
+          "The Cerebras IPO matters because public markets are not just evaluating a company. They are evaluating an infrastructure thesis.",
+          "That thesis is that inference is now as strategically important as training, memory movement is one of the most important bottlenecks in AI, alternative architectures can create real performance advantages in reasoning-heavy workloads, and physical AI and sovereign AI may require infrastructure that looks different from the standard multi-GPU cluster model.",
+          "There are still obvious questions around software moat, developer adoption, customer concentration, and whether wafer-scale systems become a repeatable enterprise standard rather than a specialized niche. Those questions are real, and they matter more than the novelty of the wafer itself.",
+          "But the reason Cerebras deserves attention is that it forces the market to re-evaluate the physical assumptions behind AI compute at exactly the moment when inference demand, reasoning workloads, and physical AI orchestration are all becoming more important.",
+        ],
+      },
+      {
+        heading: "The Black Scarab View",
+        paragraphs: [
+          "At Black Scarab, the long-term opportunity in AI is not only better models. It is better systems.",
+          "That means thinking across the full stack: local sensing, edge inference, gateway orchestration, centralized reasoning, model distillation, and fleet-wide deployment.",
+          "Cerebras matters because it may become part of the upstream infrastructure that supports those systems, especially where fast centralized reasoning is more valuable than trying to push every capability down to the endpoint.",
+          "The WSE-3 is too large to live inside the edge. But it may still shape what the edge can become.",
+        ],
+      },
+      {
+        heading: "Summary: The Verdict",
+        paragraphs: [
+          "Cerebras WSE-3 is not an edge AI platform in the traditional sense. It is something more strategic: an attempt to solve the inference and memory bottlenecks that increasingly constrain the entire physical AI stack.",
+          "If edge AI is about putting intelligence closer to the world, Cerebras is a reminder that some of the most important breakthroughs may still happen upstream, in the systems that train, coordinate, and reason on behalf of distributed physical deployments.",
+          "The wafer is the spectacle. The real story is whether wafer-scale inference becomes one of the infrastructure layers that edge AI and physical AI increasingly rely on.",
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This guide was compiled using Cerebras official materials on the WSE-3 and CS-3 platform, current public reporting on the Cerebras IPO, and broader industry reporting on inference infrastructure, NVIDIA Blackwell, and competing AI compute architectures.",
+        ],
+      },
+    ],
+    sources: [
+      "Cerebras WSE-3 and CS-3 official materials",
+      "Cerebras IPO official announcement",
+      "Reuters and market reporting on the Cerebras IPO",
+      "NVIDIA Blackwell official materials",
+      "SambaNova platform and architecture materials",
+    ],
+    sourceLinks: [
+      {
+        label: "Cerebras WSE-3",
+        url: "https://www.cerebras.ai/product-chip",
+      },
+      {
+        label: "Cerebras CS-3",
+        url: "https://www.cerebras.ai/product-system",
+      },
+      {
+        label: "Cerebras IPO announcement",
+        url: "https://www.cerebras.ai/press-release/cerebras-systems-announces-launch-of-initial-public-offering",
+      },
+      {
+        label: "Reuters market coverage",
+        url: "https://www.investing.com/news/stock-market-news/cerebras-prices-ipo-at-185-per-share-to-raise-555-billion-sources-say-4686852",
+      },
+      {
+        label: "NVIDIA Blackwell platform",
+        url: "https://www.nvidia.com/en-us/data-center/blackwell-platform/",
+      },
+      {
+        label: "SambaNova platform",
+        url: "https://sambanova.ai/products/",
+      },
+    ],
+  }
 ];
 
 export function getCaseStudyBySlug(slug: string) {
