@@ -305,7 +305,7 @@ export default async function CaseStudyPage({ params }: Props) {
 
           <section className="px-6 py-14 md:px-10">
             <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_280px]">
-              <div className="space-y-10">
+              <div className="min-w-0 space-y-10">
                 {article.sections.map((section, index) => (
                   <section key={`${section.heading ?? "intro"}-${index}`}>
                     {section.heading ? (
@@ -330,7 +330,36 @@ export default async function CaseStudyPage({ params }: Props) {
                                 {table.title}
                               </p>
                             </div>
-                            <div className="overflow-x-auto">
+                            <div className="md:hidden">
+                              <div className="divide-y divide-[#efeae1]">
+                                {table.rows.map((row) => (
+                                  <div
+                                    key={row.join("|")}
+                                    className="space-y-3 px-4 py-4"
+                                  >
+                                    <p className="text-sm font-semibold leading-6 text-[#111827]">
+                                      {row[0]}
+                                    </p>
+                                    <div className="space-y-3">
+                                      {row.slice(1).map((cell, cellIndex) => (
+                                        <div
+                                          key={`${cell}-${cellIndex}`}
+                                          className="rounded-[14px] bg-[#f6f4ef] p-3"
+                                        >
+                                          <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#6b7280]">
+                                            {table.columns[cellIndex + 1]}
+                                          </p>
+                                          <p className="mt-1 break-words text-sm leading-6 text-[#4b5563]">
+                                            {cell}
+                                          </p>
+                                        </div>
+                                      ))}
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                            <div className="hidden overflow-x-auto md:block">
                               <table className="w-full min-w-[640px] border-collapse text-left text-sm">
                                 <thead>
                                   <tr className="border-b border-[#e8e4dc] bg-[#f6f4ef] text-[#111827]">
@@ -378,7 +407,7 @@ export default async function CaseStudyPage({ params }: Props) {
                         {section.barCharts.map((chart) => (
                           <div
                             key={chart.title}
-                            className="rounded-[18px] border border-[#e1ddd2] bg-[#111827] p-5 text-white shadow-[0_14px_32px_rgba(17,24,39,0.12)]"
+                            className="rounded-[18px] border border-[#e1ddd2] bg-[#111827] p-4 text-white shadow-[0_14px_32px_rgba(17,24,39,0.12)] md:p-5"
                           >
                             <p className="text-sm font-semibold tracking-tight">
                               {chart.title}
@@ -386,8 +415,8 @@ export default async function CaseStudyPage({ params }: Props) {
                             <div className="mt-5 space-y-4">
                               {chart.bars.map((bar) => (
                                 <div key={bar.label}>
-                                  <div className="flex items-baseline justify-between gap-4 text-sm">
-                                    <span className="font-medium text-[#f9fafb]">
+                                  <div className="flex flex-col gap-1 text-sm sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+                                    <span className="break-words font-medium text-[#f9fafb]">
                                       {bar.label}
                                     </span>
                                     <span className="text-[#b8c2cc]">
