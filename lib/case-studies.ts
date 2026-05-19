@@ -3,11 +3,18 @@ export type CaseStudySection = {
   paragraphs: string[];
   tables?: CaseStudyTable[];
   barCharts?: CaseStudyBarChart[];
+  links?: CaseStudyInlineLink[];
 };
 
 export type CaseStudySourceLink = {
   label: string;
   url: string;
+};
+
+export type CaseStudyInlineLink = {
+  label: string;
+  href: string;
+  description: string;
 };
 
 export type CaseStudyTable = {
@@ -41,13 +48,1339 @@ export type CaseStudyArticle = {
   image: string;
   imageAlt: string;
   seoDescription: string;
+  tags?: string[];
   linkedinUrl?: string;
   sections: CaseStudySection[];
   sources: string[];
   sourceLinks?: CaseStudySourceLink[];
 };
 
+const localAiHobbyistGuide = (): CaseStudyArticle => ({
+    slug: "local-ai-hobbyist-budget-guide",
+    title: "Local AI for Hobbyists: The Best Low-Budget Setup",
+    summary:
+      "A practical buying and setup guide for hobbyists building a low-budget local AI box, covering used RTX 3090 builds, RTX 4060 Ti 16GB systems, RTX 4070 Ti Super and RTX 4080 Super options, Apple unified memory, and beginner software stacks.",
+    publishedLabel: "Guide · Published May 19, 2026",
+    publishedDate: "2026-05-19",
+    typeLabel: "Guide",
+    formatLabel: "Budget local AI buying guide",
+    industry: "Cross-Industry",
+    image: "/images/insights/local-ai-hobbyist-budget-guide.png",
+    imageAlt:
+      "Budget local AI workstation with a desktop GPU, compact server, and local model workflow.",
+    seoDescription:
+      "A low-budget local AI guide for hobbyists comparing used RTX 3090 desktops, RTX 4060 Ti 16GB builds, RTX 4070 Ti Super and RTX 4080 Super systems, Apple unified memory, Ollama, LM Studio, Open WebUI, and llama.cpp.",
+    tags: [
+      "local AI",
+      "budget AI server",
+      "RTX 3090",
+      "Ollama",
+      "LM Studio",
+      "Open WebUI",
+      "llama.cpp",
+      "AI hardware",
+    ],
+    sections: [
+      {
+        paragraphs: [
+          "The hobbyist local AI build is not about pretending a basement desktop is a hyperscale cluster. It is about getting useful private inference, document chat, coding help, image generation, and model experimentation without turning the project into an expensive science fair volcano. The right hobbyist system should be affordable, repairable, loud only when it needs to be, and simple enough that you spend more time using models than debugging drivers.",
+          "The realistic budget range is $500 to $2,500. Below that, the best answer is usually an existing computer plus Ollama or LM Studio. Above that, the build starts drifting into small-business territory. The key tradeoff is straightforward: you are buying VRAM first, memory bandwidth second, and convenience third. CPU cores matter, but they are not the center of the system unless you are intentionally building a CPU-heavy llama.cpp box.",
+        ],
+        links: localAiInternalLinks,
+      },
+      {
+        heading: "1. Reader Profile",
+        paragraphs: [
+          "This guide is for the person who wants local AI at home for learning, privacy, experimentation, coding, writing, document search, and maybe image generation. You care about cost, model fit, electricity, noise, resale value, and whether the machine can run common open models without constantly falling back to cloud tools.",
+          "The hobbyist should avoid enterprise instincts. You do not need Kubernetes, rackmount redundancy, complex identity, or a separate storage fabric. You need one dependable box, a small set of models, a simple UI, and a clean backup habit. If the machine becomes too complicated to maintain, the local AI project usually dies before it becomes useful.",
+        ],
+      },
+      {
+        heading: "2. Budget Range",
+        paragraphs: [
+          "The practical hobbyist budget range is $500 to $2,500. At the low end, the right path is often to use a computer you already own and install Ollama or LM Studio. In the middle, an RTX 4060 Ti 16GB or used RTX 3090 build becomes attractive. At the upper end, a cleaner RTX 4070 Ti Super, RTX 4080 Super, or Apple unified-memory option can make the setup quieter and more reliable, but not always better value.",
+          "All pricing should be manually verified before purchase. GPU prices, used workstation prices, Apple configurations, and power costs move constantly. Treat the ranges below as planning numbers, not quotes.",
+        ],
+        tables: [
+          {
+            title: "Hobbyist Budget Bands",
+            columns: ["Budget", "Likely Setup", "What It Buys", "Main Risk"],
+            rows: [
+              [
+                "$500-$900",
+                "Existing PC or used desktop plus modest GPU",
+                "Basic 7B and 13B experimentation, local chat, small coding models.",
+                "Limited VRAM, inconsistent used parts, weak upgrade path.",
+              ],
+              [
+                "$900-$1,500",
+                "RTX 4060 Ti 16GB build or used RTX 3090 desktop",
+                "A real local AI starter box with enough VRAM for useful quantized models.",
+                "4060 Ti bandwidth is limited; RTX 3090 power and thermals need respect.",
+              ],
+              [
+                "$1,500-$2,500",
+                "RTX 4070 Ti Super, RTX 4080 Super, better used RTX 3090 workstation, or Apple unified-memory option",
+                "Cleaner daily machine, stronger image generation, better reliability.",
+                "Diminishing returns if the use case is only occasional chat.",
+              ],
+            ],
+            note: "If this is your first local AI machine, do not spend the top of the range until you know what you actually run every week.",
+          },
+        ],
+      },
+      {
+        heading: "3. Configuration Options",
+        paragraphs: [
+          "The hobbyist market has five realistic paths. The used RTX 3090 desktop is the value king when you can tolerate power draw, heat, and used-hardware risk. The RTX 4060 Ti 16GB build is calmer and cheaper to run, but its memory bandwidth is not in the same class. The RTX 4070 Ti Super and RTX 4080 Super builds are cleaner gaming-plus-AI systems. Apple unified memory is quiet and simple, but not the fastest path for CUDA-heavy workflows. The cheapest path is still an existing gaming PC plus Ollama or LM Studio.",
+        ],
+        tables: [
+          {
+            title: "Hobbyist Configuration Comparison",
+            columns: ["Configuration", "Approx. Cost", "Advantages", "Disadvantages"],
+            rows: [
+              [
+                "Used NVIDIA RTX 3090 desktop build",
+                "$900-$1,600",
+                "24GB VRAM, strong bandwidth, good value for 13B, 34B, and some 70B quantized experimentation.",
+                "Used card risk, high power draw, heat, noise, larger case and PSU requirements.",
+              ],
+              [
+                "NVIDIA RTX 4060 Ti 16GB build",
+                "$800-$1,300",
+                "Newer card, lower power, 16GB VRAM, simple beginner build for 7B and 13B models.",
+                "Narrow memory bus and lower bandwidth make it feel weaker than the VRAM number suggests.",
+              ],
+              [
+                "RTX 4070 Ti Super / RTX 4080 Super build",
+                "$1,500-$2,500",
+                "Good all-around desktop, strong image generation, better thermals than used 3090 builds.",
+                "Usually 16GB VRAM, so larger models are limited despite strong compute.",
+              ],
+              [
+                "Apple Mac mini or Mac Studio unified-memory option",
+                "$1,400-$3,000+",
+                "Quiet, compact, efficient, simple for local chat and document workflows.",
+                "Not CUDA, slower than high-end discrete GPU VRAM for many decode and image-generation workflows.",
+              ],
+              [
+                "Existing gaming PC plus Ollama / LM Studio",
+                "$0-$300 software and storage upgrades",
+                "Fastest path to learning; no new machine required.",
+                "Limited by whatever GPU, RAM, thermals, and storage you already own.",
+              ],
+            ],
+            note: "RTX 5090-class pricing is intentionally excluded from the hobbyist default because it usually pushes the build out of low-budget territory. Verify all street prices before buying.",
+          },
+        ],
+      },
+      {
+        heading: "4. Cost Table",
+        paragraphs: [
+          "A useful hobbyist cost model should include more than the GPU. Storage, power, cooling, and maintenance matter because the box will sit in your room, not a datacenter. The local system becomes cheaper than cloud when you use it often, care about privacy, or run enough experimentation that subscriptions and API bills become annoying.",
+        ],
+        tables: [
+          {
+            title: "Hobbyist Local AI Cost Model",
+            columns: ["Cost Area", "Typical Range", "What to Verify", "Cloud Alternative"],
+            rows: [
+              [
+                "Hardware upfront cost",
+                "$500-$2,500",
+                "Used GPU condition, PSU quality, case airflow, warranty, return policy.",
+                "No upfront cost, but recurring subscription or API spend.",
+              ],
+              [
+                "GPU / accelerator cost",
+                "$250-$1,200+",
+                "VRAM, memory bandwidth, CUDA support, card length, power connectors.",
+                "Included in provider pricing, but not owned by you.",
+              ],
+              [
+                "Storage cost",
+                "$80-$250",
+                "At least 1TB SSD; 2TB is more comfortable for models and datasets.",
+                "Provider stores model infrastructure; your files still need a workflow.",
+              ],
+              [
+                "Networking cost",
+                "$0-$150",
+                "Gigabit Ethernet is fine for one user; Wi-Fi is acceptable for casual use.",
+                "Cloud requires reliable internet every time.",
+              ],
+              [
+                "Power estimate",
+                "100W-500W under load",
+                "Local electricity rate and GPU power limit settings.",
+                "Cloud shifts power cost into subscription or usage pricing.",
+              ],
+              [
+                "Cooling considerations",
+                "$0-$200",
+                "Airflow, room heat, GPU temperature, fan noise.",
+                "Provider handles cooling.",
+              ],
+              [
+                "Software cost",
+                "$0 for core stack",
+                "Ollama, LM Studio, Open WebUI, llama.cpp, ComfyUI licensing and update cadence.",
+                "Cloud tools are polished but recurring.",
+              ],
+              [
+                "Maintenance burden",
+                "Low to medium",
+                "Driver updates, model storage, backups, dust, failed used components.",
+                "Cloud maintenance is mostly outsourced.",
+              ],
+              [
+                "When local becomes cheaper",
+                "Often after 6-24 months",
+                "Depends on hardware cost, cloud subscriptions replaced, and API usage avoided.",
+                "Cloud remains cheaper for rare or bursty use.",
+              ],
+            ],
+            note: "For hobbyists, the financial case is strongest when the machine is also useful as a normal desktop, gaming PC, coding box, or media workstation.",
+          },
+        ],
+      },
+      {
+        heading: "5. Component Breakdown",
+        paragraphs: [
+          "The best-value hobbyist build is usually boring: a modern 6-core or 8-core CPU, one NVIDIA GPU, 64GB of system RAM if the budget allows, 1TB to 2TB of NVMe storage, a reliable PSU, and a case that can breathe. The GPU matters most, but a cheap power supply or cramped case can ruin the whole system.",
+        ],
+        tables: [
+          {
+            title: "Main Configuration Component Breakdown",
+            columns: ["Component", "Used RTX 3090 Build", "RTX 4060 Ti 16GB Build", "Apple Unified-Memory Option"],
+            rows: [
+              [
+                "CPU",
+                "Ryzen 5/7 or Intel Core i5/i7; avoid overspending.",
+                "Modern Ryzen 5/7 or Intel Core i5/i7.",
+                "Apple Silicon integrated CPU.",
+              ],
+              [
+                "GPU / accelerator",
+                "RTX 3090 24GB, used condition manually verified.",
+                "RTX 4060 Ti 16GB, new or lightly used.",
+                "Integrated Apple GPU and Neural Engine.",
+              ],
+              [
+                "VRAM / unified memory",
+                "24GB VRAM.",
+                "16GB VRAM.",
+                "32GB-96GB+ unified memory depending on configuration.",
+              ],
+              [
+                "System RAM",
+                "32GB minimum, 64GB preferred.",
+                "32GB minimum, 64GB preferred.",
+                "Unified memory is shared by system and model.",
+              ],
+              [
+                "Storage",
+                "1TB minimum, 2TB preferred NVMe.",
+                "1TB minimum, 2TB preferred NVMe.",
+                "1TB preferred if storing multiple models locally.",
+              ],
+              [
+                "Networking",
+                "1GbE is enough; 2.5GbE optional.",
+                "1GbE is enough; 2.5GbE optional.",
+                "Wi-Fi or Ethernet; 10GbE only if moving large datasets.",
+              ],
+              [
+                "Power supply",
+                "850W quality PSU preferred.",
+                "550W-650W quality PSU usually enough.",
+                "External Apple power design.",
+              ],
+              [
+                "Cooling",
+                "High airflow case; watch GPU memory temperatures.",
+                "Standard airflow is usually fine.",
+                "Quiet integrated cooling.",
+              ],
+              [
+                "Operating system",
+                "Ubuntu, Windows, or dual boot.",
+                "Ubuntu or Windows.",
+                "macOS.",
+              ],
+              [
+                "AI runtime stack",
+                "Ollama, LM Studio, Open WebUI, llama.cpp, ComfyUI.",
+                "Ollama, LM Studio, Open WebUI.",
+                "Ollama, LM Studio, MLX, Open WebUI.",
+              ],
+              [
+                "Management layer",
+                "Local browser UI and simple backups.",
+                "Local browser UI and simple backups.",
+                "Local apps plus Time Machine or external backup.",
+              ],
+            ],
+          },
+        ],
+      },
+      {
+        heading: "6. Model Capability Table",
+        paragraphs: [
+          "Hobbyist machines live in the quantized-model world. FP16 and BF16 are useful reference points, but 4-bit and 5-bit quants are what make larger models practical on consumer hardware. Context length is the hidden tax: a model that fits at short context can fail or slow dramatically when you push long conversations, document chat, or agent workflows.",
+        ],
+        tables: [
+          {
+            title: "What Hobbyist Setups Can Realistically Run",
+            columns: ["Model Class", "16GB VRAM", "24GB VRAM", "Apple Unified Memory", "Practical Notes"],
+            rows: [
+              [
+                "7B",
+                "Comfortable in FP16/BF16 or quantized formats.",
+                "Comfortable with room for longer context.",
+                "Comfortable on most serious configurations.",
+                "Best beginner class for speed, experimentation, and daily chat.",
+              ],
+              [
+                "13B",
+                "Usually comfortable with INT8 or 4-bit quantization.",
+                "Comfortable with stronger quant choices and more context.",
+                "Comfortable if memory is configured high enough.",
+                "Good balance for writing, coding help, and private assistants.",
+              ],
+              [
+                "34B",
+                "Possible only with aggressive quantization and context discipline.",
+                "Realistic in 4-bit with careful settings.",
+                "Often realistic on larger unified-memory systems.",
+                "Quality improves, but speed and memory pressure become obvious.",
+              ],
+              [
+                "70B",
+                "Generally not a good target.",
+                "Possible in aggressive 4-bit, but slow and constrained.",
+                "Possible on high-memory Apple configurations, usually slower than GPU decode.",
+                "Treat as experimentation, not the default daily model.",
+              ],
+              [
+                "100B+",
+                "Avoid.",
+                "Avoid for normal hobbyist use.",
+                "Only high-memory systems can experiment; speed may disappoint.",
+                "Use cloud or a larger architecture.",
+              ],
+            ],
+            note: "Single-user chat is much easier than multi-user concurrency. A hobbyist box should optimize for one good user experience before pretending to be a server.",
+          },
+        ],
+      },
+      {
+        heading: "7. Advantages, Disadvantages, and Upgrade Paths",
+        paragraphs: [
+          "Every hobbyist configuration has a personality. The RTX 3090 build is the practical lab machine. The RTX 4060 Ti 16GB build is the efficient learner. The RTX 4070 Ti Super and RTX 4080 Super build is the gaming-plus-AI desktop. Apple unified memory is the quiet personal AI workstation. The existing gaming PC is the no-excuses starting point.",
+        ],
+        tables: [
+          {
+            title: "Who Should Choose or Avoid Each Setup",
+            columns: ["Setup", "Best Use Case", "Who Should Avoid It", "Upgrade Path"],
+            rows: [
+              [
+                "Used RTX 3090 desktop",
+                "Best-value local AI lab with 24GB VRAM.",
+                "Anyone who cannot tolerate heat, fan noise, used hardware risk, or PSU upgrades.",
+                "Add storage and RAM first; later move to newer 24GB+ or 32GB+ GPUs.",
+              ],
+              [
+                "RTX 4060 Ti 16GB build",
+                "Quiet beginner system for 7B and 13B local AI.",
+                "Users expecting strong 34B or 70B performance.",
+                "Upgrade GPU when larger models become the bottleneck.",
+              ],
+              [
+                "RTX 4070 Ti Super / RTX 4080 Super",
+                "Good daily desktop for gaming, image generation, and local chat.",
+                "Users who prioritize VRAM capacity above all else.",
+                "Move to 24GB+ or 32GB+ GPU tier when model fit matters more.",
+              ],
+              [
+                "Apple unified memory",
+                "Quiet personal AI and document workflows.",
+                "CUDA-heavy image generation users or benchmark-driven GPU buyers.",
+                "Buy enough unified memory up front; upgrades later are limited.",
+              ],
+              [
+                "Existing gaming PC",
+                "Learning local AI before spending serious money.",
+                "Users who need reliable daily throughput immediately.",
+                "Add RAM, SSD, then GPU in that order if the base machine is worth keeping.",
+              ],
+            ],
+          },
+        ],
+      },
+      {
+        heading: "8. Step-by-Step Setup Instructions",
+        paragraphs: [
+          "Step 1: choose hardware. If you already have a gaming PC, start there. If buying, choose between a used RTX 3090 build for best VRAM value, an RTX 4060 Ti 16GB build for lower power, or Apple unified memory for quiet simplicity.",
+          "Step 2: install the operating system. Windows is acceptable for LM Studio and beginner workflows. Ubuntu is better if you want a more server-like setup. macOS is the default for Apple Silicon.",
+          "Step 3: install NVIDIA drivers if using a GPU. Use the recommended stable driver path for your operating system, confirm the GPU appears correctly, and avoid stacking random CUDA tutorials until the basic driver works.",
+          "Step 4: install Ollama. Use it as the simplest local runtime and confirm you can pull and run a small model.",
+          "Step 5: install LM Studio or Open WebUI. LM Studio is the easiest desktop app. Open WebUI is better if you want a browser interface and a more server-like experience.",
+          "Step 6: download the first model. Start with a 7B or 8B instruct model before chasing 34B or 70B. The first win is a fast, stable local chat loop.",
+          "Step 7: test local chat. Ask normal writing, coding, and summarization questions. Then test a long prompt and watch memory behavior.",
+          "Step 8: optional document chat or RAG setup. Add Open WebUI document features or a simple vector database only after basic chat is stable.",
+          "Step 9: backup and maintenance. Keep model names, settings, and important prompts documented. Back up documents and configuration files before experimenting heavily.",
+        ],
+      },
+      {
+        heading: "9. Software Stack Recommendations",
+        paragraphs: [
+          "The hobbyist stack should be simple. Use Ollama as the default runtime, LM Studio if you want the cleanest desktop path, Open WebUI if you want a browser interface, llama.cpp when you need portability and tight control, and ComfyUI only if image generation is part of the plan. Do not install five runtimes on day one.",
+          "A sensible progression is Ollama first, LM Studio or Open WebUI second, then ComfyUI or document retrieval later. The goal is to build a stable local workflow, not collect software names.",
+        ],
+      },
+      {
+        heading: "Black Scarab Final Recommendation",
+        paragraphs: [
+          "If we had to recommend only one configuration, this is the one.",
+          "For hobbyists, the best default is a used RTX 3090 desktop build with 24GB VRAM, 64GB system RAM, 2TB NVMe storage, a quality 850W power supply, and Ubuntu or Windows running Ollama plus Open WebUI. The approximate total cost is $1,100 to $1,700, depending heavily on used GPU and workstation pricing. Manually verify the GPU condition, return policy, PSU quality, and local electricity cost before buying.",
+          "This setup is the best default because 24GB VRAM is the first consumer tier where local AI stops feeling constantly squeezed. It can realistically run 7B and 13B models comfortably, 34B models in quantized formats, and some 70B models experimentally with compromises. It is also useful for image generation, coding workflows, and document chat.",
+          "It cannot do high-concurrency serving, painless 70B-class workflows, or enterprise reliability. Upgrade beyond it when you need multiple users, better noise and power behavior, larger models without aggressive quantization, or a system that must be treated as production infrastructure rather than a personal lab.",
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "The guidance here is based on current local AI software documentation, public GPU and system specifications, and practical VRAM and bandwidth planning rules. Used GPU pricing, RTX 5090 availability, Apple configuration pricing, and workstation listings should be manually verified at the time of purchase.",
+        ],
+      },
+    ],
+    sources: [
+      "Ollama official documentation",
+      "Open WebUI official documentation",
+      "LM Studio documentation",
+      "llama.cpp official repository",
+      "NVIDIA GeForce and RTX product specifications",
+      "Apple Mac mini and Mac Studio specifications",
+    ],
+    sourceLinks: localAiSourceLinks,
+  });
+
+const localAiInternalLinks: CaseStudyInlineLink[] = [
+  {
+    label: "Foundation: Build Your First Local AI Server",
+    href: "/insights/local-ai-server-guide",
+    description:
+      "The broader Black Scarab guide to local AI infrastructure, VRAM math, bandwidth, and inference software.",
+  },
+  {
+    label: "AI Hardware Roadmap",
+    href: "/insights/edge-ai-roadmap-top-10-platforms",
+    description:
+      "A wider view of the hardware platforms shaping edge AI, local AI, and physical AI deployments.",
+  },
+  {
+    label: "Intel OpenVINO Deployment Guide",
+    href: "/insights/intel-openvino-movidius-guide",
+    description:
+      "A deeper look at model optimization, cross-platform inference, and enterprise edge deployment patterns.",
+  },
+];
+
+const localAiSourceLinks: CaseStudySourceLink[] = [
+  {
+    label: "Ollama docs",
+    url: "https://docs.ollama.com/",
+  },
+  {
+    label: "Open WebUI docs",
+    url: "https://docs.openwebui.com/",
+  },
+  {
+    label: "LM Studio docs",
+    url: "https://lmstudio.ai/docs",
+  },
+  {
+    label: "llama.cpp",
+    url: "https://github.com/ggml-org/llama.cpp",
+  },
+  {
+    label: "vLLM docs",
+    url: "https://docs.vllm.ai/",
+  },
+  {
+    label: "SGLang docs",
+    url: "https://docs.sglang.ai/",
+  },
+  {
+    label: "TensorRT-LLM docs",
+    url: "https://nvidia.github.io/TensorRT-LLM/",
+  },
+  {
+    label: "NVIDIA GeForce RTX 5090",
+    url: "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/",
+  },
+  {
+    label: "NVIDIA RTX PRO 6000 Blackwell",
+    url: "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000-family/",
+  },
+  {
+    label: "Apple Mac mini specs",
+    url: "https://www.apple.com/mac-mini/specs/",
+  },
+  {
+    label: "Apple Mac Studio",
+    url: "https://www.apple.com/shop/buy-mac/mac-studio",
+  },
+  {
+    label: "NVIDIA DGX Spark",
+    url: "https://marketplace.nvidia.com/en-us/developer/dgx-spark/",
+  },
+  {
+    label: "NVIDIA DGX Station",
+    url: "https://www.nvidia.com/en-us/products/workstations/dgx-station/",
+  },
+];
+
+const localAiSmallBusinessGuide = (): CaseStudyArticle => ({
+  slug: "local-ai-small-business-guide",
+  title: "Local AI for a One-Person Startup or Small Business",
+  summary:
+    "A practical local AI infrastructure guide for founders and small teams comparing RTX 4090 and RTX 5090 workstations, Apple Mac Studio, DGX Spark-class appliances, rackmount GPU servers, and workstation-plus-NAS architectures.",
+  publishedLabel: "Guide · Published May 19, 2026",
+  publishedDate: "2026-05-19",
+  typeLabel: "Guide",
+  formatLabel: "Small business local AI buying guide",
+  industry: "Cross-Industry",
+  image: "/images/insights/local-ai-small-business-guide.png",
+  imageAlt:
+    "Small business local AI workstation with GPU compute, NAS storage, and private document workflow.",
+  seoDescription:
+    "A local AI guide for one-person startups and small businesses comparing RTX 4090 workstations, RTX 5090 workstations, Apple Mac Studio, NVIDIA DGX Spark-class appliances, rackmount GPU servers, NAS storage, Ollama, vLLM, Open WebUI, and document retrieval.",
+  tags: [
+    "local AI for business",
+    "small business AI",
+    "RTX 4090 workstation",
+    "RTX 5090 workstation",
+    "Mac Studio AI",
+    "DGX Spark",
+    "vLLM",
+    "private AI",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "A one-person startup or small business does not need enterprise theater. It needs a private AI system that can help with documents, writing, coding, research, sales material, customer support drafts, internal knowledge search, and repeatable workflows without turning every prompt into a cloud dependency. The system has to be reliable enough for work, but not so complex that it requires a full-time infrastructure engineer.",
+        "The realistic budget range is $3,000 to $15,000. Below $3,000, this is usually still a hobbyist build. Above $15,000, the discussion starts becoming server architecture, procurement, and support contracts. The best default for most small businesses is a high-end single-GPU workstation with simple storage and a clean software layer.",
+      ],
+      links: localAiInternalLinks,
+    },
+    {
+      heading: "1. Reader Profile",
+      paragraphs: [
+        "This guide is for founders, consultants, small agencies, technical solo operators, and small teams that want private AI capability for real work. The priority is not winning a benchmark. The priority is getting a dependable machine that can run useful models, serve one to ten people, retrieve internal documents, and stay understandable when something breaks.",
+        "The tradeoffs are different from hobbyist builds. Used hardware can still be attractive, but downtime costs more. Noise and heat matter if the system sits in an office. Access control matters if more than one person uses it. Backups matter because business documents are involved. The software stack should be boring, visible, and recoverable.",
+      ],
+    },
+    {
+      heading: "2. Budget Range",
+      paragraphs: [
+        "The realistic budget range is $3,000 to $15,000. At the low end, a single RTX 4090 workstation or high-memory Mac Studio can cover a serious one-person operation. In the middle, an RTX 5090 workstation, DGX Spark-class appliance, or workstation-plus-NAS architecture becomes viable. At the high end, a small rackmount GPU server makes sense only if multiple users or always-on workloads justify the complexity.",
+        "RTX 5090, DGX Spark, Mac Studio, and rackmount pricing should be manually verified before purchase. Availability, reseller markups, warranty terms, and memory/storage configurations can move the final price materially.",
+      ],
+      tables: [
+        {
+          title: "Small Business Budget Bands",
+          columns: ["Budget", "Likely Setup", "What It Buys", "Main Risk"],
+          rows: [
+            [
+              "$3,000-$5,500",
+              "RTX 4090 workstation or high-memory Mac mini / Mac Studio",
+              "Strong single-user local AI, document workflows, and coding support.",
+              "Limited concurrency and limited upgrade headroom.",
+            ],
+            [
+              "$5,500-$9,000",
+              "RTX 5090 workstation, Mac Studio high-memory configuration, or workstation plus NAS",
+              "More headroom for larger models, better storage discipline, and better daily reliability.",
+              "Pricing and availability require verification; software architecture still matters.",
+            ],
+            [
+              "$9,000-$15,000",
+              "DGX Spark-class appliance or small rackmount GPU server",
+              "Cleaner appliance path or server-style expansion for multiple users.",
+              "Can become overkill if the business has not defined workflows clearly.",
+            ],
+          ],
+          note: "The buyer should define the workflows before buying the machine. Hardware cannot fix an unclear use case.",
+        },
+      ],
+    },
+    {
+      heading: "3. Configuration Options",
+      paragraphs: [
+        "The small-business buyer should compare systems by reliability and workflow fit, not only VRAM. An RTX 4090 workstation remains a strong practical baseline. An RTX 5090 workstation may be appropriate where pricing, availability, power, and software support are verified. A high-memory Mac Studio is attractive for quiet private workflows. DGX Spark-class appliances are interesting for teams that want NVIDIA coherence without assembling a workstation. A small rackmount GPU server only makes sense when the business is ready to manage a server. A workstation plus NAS is often the least glamorous but most useful architecture.",
+      ],
+      tables: [
+        {
+          title: "Small Business Configuration Comparison",
+          columns: ["Configuration", "Approx. Cost", "Advantages", "Disadvantages"],
+          rows: [
+            [
+              "NVIDIA RTX 4090 workstation",
+              "$3,500-$6,000",
+              "24GB VRAM, mature CUDA support, strong image generation and local inference.",
+              "Single-card VRAM ceiling; not ideal for many simultaneous users.",
+            ],
+            [
+              "NVIDIA RTX 5090 workstation",
+              "$5,000-$8,500+",
+              "Approximate 32GB-class consumer GPU path with stronger headroom if pricing is reasonable.",
+              "Pricing, availability, thermals, driver maturity, and exact configuration must be verified.",
+            ],
+            [
+              "Apple Mac Studio high-memory configuration",
+              "$4,000-$10,000+",
+              "Quiet, compact, high unified memory options, good private knowledge workflows.",
+              "Not CUDA; lower raw GPU serving throughput than high-end discrete NVIDIA cards.",
+            ],
+            [
+              "NVIDIA DGX Spark-class appliance",
+              "$3,000-$5,000+ depending on channel and configuration",
+              "NVIDIA software path, coherent memory, compact developer appliance model.",
+              "Not a raw bandwidth monster; category and street pricing should be verified.",
+            ],
+            [
+              "Small rackmount GPU server",
+              "$8,000-$15,000+",
+              "Server form factor, remote management, better multi-user path.",
+              "Noise, heat, rack power, and administration burden.",
+            ],
+            [
+              "Workstation plus NAS storage",
+              "$4,500-$9,000",
+              "Separates compute from business documents, improves backup discipline.",
+              "More moving parts than one local machine.",
+            ],
+          ],
+          note: "For a one-person startup, a workstation plus disciplined storage is usually better than a small server bought too early.",
+        },
+      ],
+    },
+    {
+      heading: "4. Cost Table",
+      paragraphs: [
+        "Small-business cost math changes because downtime, support, and document loss matter. A local system becomes cheaper than cloud when it replaces multiple subscriptions, handles sensitive files, supports repeat daily workflows, or reduces API usage. It is not cheaper if the team only asks a few casual questions per week.",
+      ],
+      tables: [
+        {
+          title: "Small Business Local AI Cost Model",
+          columns: ["Cost Area", "Typical Range", "What to Verify", "Cloud Alternative"],
+          rows: [
+            [
+              "Hardware upfront cost",
+              "$3,000-$15,000",
+              "Warranty, support, return policy, workstation class, and business continuity needs.",
+              "Subscriptions and API usage with no hardware ownership.",
+            ],
+            [
+              "GPU / accelerator cost",
+              "$1,500-$6,000+",
+              "VRAM, memory bandwidth, CUDA support, driver stability, replacement availability.",
+              "Provider handles accelerators, but you depend on provider pricing and policies.",
+            ],
+            [
+              "Storage cost",
+              "$300-$2,500",
+              "2TB-8TB SSD/NAS capacity, redundancy, backup drive, snapshot support.",
+              "Cloud storage and hosted document tools remain separate line items.",
+            ],
+            [
+              "Networking cost",
+              "$150-$1,000",
+              "2.5GbE or 10GbE if using NAS or shared office access.",
+              "Cloud only needs stable internet but every workflow depends on it.",
+            ],
+            [
+              "Power estimate",
+              "200W-800W under load",
+              "Electricity rate, duty cycle, UPS sizing, and office heat.",
+              "Power cost is embedded in hosted pricing.",
+            ],
+            [
+              "Cooling considerations",
+              "$100-$1,000",
+              "Office noise, case airflow, server closet ventilation.",
+              "Provider handles thermals.",
+            ],
+            [
+              "Software cost",
+              "$0-$2,000+",
+              "Core stack can be free; budget for backup, monitoring, remote access, or paid support.",
+              "Hosted tools include product polish and support.",
+            ],
+            [
+              "Maintenance burden",
+              "Medium",
+              "One technical owner must handle updates, backups, access, and model changes.",
+              "Cloud maintenance is easier but less private.",
+            ],
+            [
+              "When local becomes cheaper",
+              "Often after 9-24 months",
+              "Depends on subscriptions replaced, API usage avoided, and employee time saved.",
+              "Cloud wins for rare, bursty, or frontier-only use.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "5. Component Breakdown",
+      paragraphs: [
+        "The default small-business build should be a workstation, not a fragile hobby machine. That means a reliable CPU platform, one high-end NVIDIA GPU or high-memory Apple system, 64GB to 128GB system RAM where applicable, 2TB to 4TB fast local storage, optional NAS for business documents, a UPS, and a backup path that is tested before the system holds important files.",
+      ],
+      tables: [
+        {
+          title: "Small Business Component Breakdown",
+          columns: ["Component", "RTX 4090 / 5090 Workstation", "Mac Studio High-Memory", "Rackmount / Appliance Path"],
+          rows: [
+            [
+              "CPU",
+              "Modern Ryzen 9, Intel Core i9, Threadripper, or workstation CPU.",
+              "Apple Silicon integrated CPU.",
+              "Server CPU or appliance-integrated processor.",
+            ],
+            [
+              "GPU / accelerator",
+              "RTX 4090 24GB or RTX 5090-class card if verified.",
+              "Integrated Apple GPU.",
+              "NVIDIA GPU, Grace Blackwell-class appliance, or server GPU depending on SKU.",
+            ],
+            [
+              "VRAM / unified memory",
+              "24GB to 32GB-class VRAM depending on GPU.",
+              "64GB to 512GB unified memory depending on configuration.",
+              "Varies widely; verify exact memory architecture.",
+            ],
+            [
+              "System RAM",
+              "64GB minimum, 128GB preferred.",
+              "Unified memory shared by system and model.",
+              "128GB+ depending on user count and retrieval stack.",
+            ],
+            [
+              "Storage",
+              "2TB NVMe minimum; 4TB preferred.",
+              "2TB+ internal plus external backup or NAS.",
+              "NVMe for models plus NAS or server storage for documents.",
+            ],
+            [
+              "Networking",
+              "2.5GbE minimum if shared; 10GbE for NAS-heavy workflows.",
+              "10GbE recommended when using shared storage.",
+              "10GbE+ depending on users and storage architecture.",
+            ],
+            [
+              "Power supply",
+              "Quality 1000W class for high-end NVIDIA workstations.",
+              "Integrated Apple power design.",
+              "Server-rated redundant power where appropriate.",
+            ],
+            [
+              "Cooling",
+              "Quiet high-airflow workstation cooling.",
+              "Integrated quiet cooling.",
+              "Server room or closet ventilation required.",
+            ],
+            [
+              "Operating system",
+              "Ubuntu preferred for server-like use; Windows acceptable for desktop workflows.",
+              "macOS.",
+              "Ubuntu Server, enterprise Linux, or vendor appliance OS.",
+            ],
+            [
+              "AI runtime stack",
+              "Ollama for simplicity; vLLM for concurrency; Open WebUI for users.",
+              "Ollama, MLX, LM Studio, Open WebUI.",
+              "vLLM, SGLang, TensorRT-LLM, containers where appropriate.",
+            ],
+            [
+              "Management layer",
+              "Open WebUI, user accounts, backups, basic monitoring.",
+              "Local apps, Open WebUI, macOS backup tooling.",
+              "Remote management, logging, authentication, monitoring, backup policy.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "6. Model Capability Table",
+      paragraphs: [
+        "A small business should decide whether it needs one strong single-user experience or shared access. A 24GB card can run many useful quantized models, but concurrency changes the math. Long context, document retrieval, and multiple users increase KV cache and memory pressure. For production-like shared use, model size is only one part of the architecture.",
+      ],
+      tables: [
+        {
+          title: "Small Business Model Capability",
+          columns: ["Model Class", "Single-GPU Workstation", "High-Memory Mac Studio", "Small Server / Appliance", "Practical Notes"],
+          rows: [
+            [
+              "7B",
+              "Comfortable, fast, good for shared lightweight workflows.",
+              "Comfortable.",
+              "Comfortable.",
+              "Best for fast assistants, routing, classification, and low-cost internal tools.",
+            ],
+            [
+              "13B",
+              "Comfortable with quantization; often the daily sweet spot.",
+              "Comfortable if memory is sufficient.",
+              "Comfortable.",
+              "Good quality-speed balance for writing, support drafts, and coding help.",
+            ],
+            [
+              "34B",
+              "Realistic on 24GB/32GB GPUs with 4-bit quantization and context discipline.",
+              "Realistic on high-memory systems, speed varies.",
+              "Realistic depending on accelerator memory.",
+              "Stronger reasoning, but less forgiving for multiple users.",
+            ],
+            [
+              "70B",
+              "Possible with compromises; not the default for concurrency.",
+              "Possible on large unified-memory configurations, usually slower.",
+              "More realistic on server or appliance systems.",
+              "Use selectively for high-value tasks, not every internal prompt.",
+            ],
+            [
+              "100B+",
+              "Generally not appropriate on one GPU.",
+              "Possible only on very high-memory configs with speed tradeoffs.",
+              "Requires serious architecture planning.",
+              "Cloud or enterprise infrastructure may be more rational.",
+            ],
+          ],
+          note: "FP16/BF16 is usually unrealistic for larger models on small-business hardware. INT8 and 4-bit quantization make local deployments practical, but quality and speed depend on the model and runtime.",
+        },
+      ],
+    },
+    {
+      heading: "7. Advantages, Disadvantages, and Upgrade Paths",
+      paragraphs: [
+        "The RTX 4090 workstation is the mature default. The RTX 5090 workstation may become a better high-end path if real pricing and availability cooperate. The Mac Studio is a strong quiet-office choice. DGX Spark-class systems are attractive if the buyer values appliance simplicity. Rackmount servers are a commitment, not a casual upgrade.",
+      ],
+      tables: [
+        {
+          title: "Small Business Configuration Decision Table",
+          columns: ["Setup", "Best Use Case", "Who Should Avoid It", "Upgrade Path"],
+          rows: [
+            [
+              "RTX 4090 workstation",
+              "Founder or small team needing strong private AI and image workflows.",
+              "Teams needing many concurrent users or 70B-class models as the default.",
+              "Move to RTX 5090-class, RTX PRO, or server when concurrency grows.",
+            ],
+            [
+              "RTX 5090 workstation",
+              "Higher-budget workstation buyer who verifies pricing and support.",
+              "Cost-sensitive buyers or anyone buying during inflated availability windows.",
+              "Move to RTX PRO or multi-GPU server if memory and uptime become limiting.",
+            ],
+            [
+              "Mac Studio high-memory",
+              "Quiet office, local documents, coding, private writing, and large unified-memory workflows.",
+              "CUDA-dependent image-generation or NVIDIA-serving teams.",
+              "Buy memory up front; later move to GPU server for serving needs.",
+            ],
+            [
+              "DGX Spark-class appliance",
+              "Developer appliance buyer wanting NVIDIA local AI with less assembly.",
+              "Buyers expecting it to behave like a top-end discrete GPU server.",
+              "Cluster or migrate to server architecture if users and workloads grow.",
+            ],
+            [
+              "Small rackmount GPU server",
+              "Office with defined shared AI workloads and technical administration.",
+              "Solo operators without a server closet, UPS, or admin time.",
+              "Scale storage, networking, and GPUs as utilization justifies it.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "8. Step-by-Step Setup Instructions",
+      paragraphs: [
+        "Step 1: define use cases. Write down the top five workflows: document search, writing, coding, customer support drafts, sales research, image generation, or internal automation.",
+        "Step 2: choose workstation or appliance. Pick a workstation unless the team has a reason to manage server hardware.",
+        "Step 3: configure storage. Use fast local NVMe for models and a NAS or external backup for business documents.",
+        "Step 4: install Ubuntu or a suitable OS. Ubuntu is the clean default for server-like use. Windows and macOS are acceptable when the workflow is more desktop-oriented.",
+        "Step 5: install NVIDIA drivers and CUDA where applicable. Confirm the GPU is visible and stable before adding inference software.",
+        "Step 6: install Ollama or vLLM. Use Ollama for simplicity. Use vLLM when multiple users and higher concurrency matter.",
+        "Step 7: install Open WebUI. Put a clean browser interface in front of the runtime so the system feels usable.",
+        "Step 8: add document retrieval. Start with a small curated folder before indexing every file the business owns.",
+        "Step 9: configure user access. Create separate accounts where possible and avoid shared admin credentials.",
+        "Step 10: create a backup strategy. Back up documents, configuration, prompts, and model lists.",
+        "Step 11: monitor usage. Track memory pressure, disk use, common prompts, and failure points.",
+        "Step 12: decide when to move to server architecture. Upgrade when multiple people depend on the system daily, not when a spec sheet looks tempting.",
+      ],
+    },
+    {
+      heading: "9. Software Stack Recommendations",
+      paragraphs: [
+        "For small businesses, the simple stack is Ollama, Open WebUI, a small set of vetted models, basic document retrieval, and backups. The more serious stack adds vLLM for concurrency, SearXNG for controlled search, Firecrawl for extraction, a vector database for retrieval, and access controls around the UI.",
+        "The stack should be observable enough that the owner can answer basic questions: who is using it, which model is running, how much storage is consumed, what files are indexed, and what must be restored if the machine fails.",
+      ],
+    },
+    {
+      heading: "Black Scarab Final Recommendation",
+      paragraphs: [
+        "If we had to recommend only one configuration, this is the one.",
+        "For a one-person startup or small business, the best default is a high-end single-GPU NVIDIA workstation built around an RTX 4090-class card, 128GB system RAM, 4TB NVMe storage, optional NAS backup, Ubuntu, Ollama for simple workflows, Open WebUI for access, and vLLM only when concurrency becomes real. The approximate total cost is $4,500 to $7,500 depending on workstation quality, storage, UPS, and support. If RTX 5090 pricing and availability are favorable, it can be evaluated as an upgrade, but it should be manually verified rather than assumed.",
+        "This is the best default because it is powerful enough to be useful, simple enough to maintain, and not yet trapped in server complexity. It can realistically run 7B and 13B models very comfortably, 34B models in quantized formats, some 70B workloads with compromise, document retrieval, image generation, and private internal workflows for a small team.",
+        "It cannot do large multi-user concurrency, painless 100B+ models, enterprise governance, or high-availability production serving. Upgrade beyond it when the system becomes a shared business dependency, when multiple users need reliable access at the same time, or when retrieval, logging, backup, and access control start mattering more than the workstation itself.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "The pricing and specifications in this guide use public product information and practical planning ranges. RTX 5090 workstation pricing, DGX Spark-class availability, Mac Studio configurations, NAS pricing, and rackmount server quotes should be manually verified before purchase.",
+      ],
+    },
+  ],
+  sources: [
+    "Ollama official documentation",
+    "Open WebUI official documentation",
+    "vLLM official documentation",
+    "SearXNG official documentation",
+    "Firecrawl official documentation",
+    "NVIDIA GeForce and workstation product information",
+    "Apple Mac Studio specifications",
+    "NVIDIA DGX Spark information",
+  ],
+  sourceLinks: localAiSourceLinks,
+});
+
+const localAiEnterpriseGuide = (): CaseStudyArticle => ({
+  slug: "local-ai-enterprise-guide",
+  title: "Local AI for Large Enterprises: Private AI Infrastructure at Scale",
+  summary:
+    "A practical enterprise guide to private local AI infrastructure, comparing DGX-class systems, multi-GPU rackmount servers, private inference clusters, hybrid local-cloud architecture, security, storage, monitoring, identity, backup, and model governance.",
+  publishedLabel: "Guide · Published May 19, 2026",
+  publishedDate: "2026-05-19",
+  typeLabel: "Guide",
+  formatLabel: "Enterprise private AI infrastructure guide",
+  industry: "Cross-Industry",
+  image: "/images/insights/local-ai-enterprise-guide.png",
+  imageAlt:
+    "Enterprise private AI infrastructure with GPU servers, storage, networking, monitoring, and governed model deployment.",
+  seoDescription:
+    "An enterprise local AI infrastructure guide covering DGX-class systems, multi-GPU rackmount servers, private inference clusters, hybrid cloud escalation, storage, networking, identity, monitoring, security, backups, vLLM, SGLang, TensorRT-LLM, and model governance.",
+  tags: [
+    "enterprise local AI",
+    "private AI infrastructure",
+    "DGX",
+    "multi-GPU server",
+    "vLLM",
+    "SGLang",
+    "TensorRT-LLM",
+    "AI governance",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Enterprise local AI is not a bigger hobbyist box. It is private AI infrastructure with governance, identity, storage, monitoring, logging, backup, security controls, and a clear escalation path to cloud when the local system is the wrong tool. The hardware matters, but the architecture matters more.",
+        "The realistic budget range is $50,000 to $500,000+. That range includes pilot systems, DGX-class workstations, multi-GPU servers, storage, networking, deployment labor, monitoring, security review, and operational overhead. Hardware quotes, support contracts, datacenter costs, and GPU availability should always be manually verified.",
+      ],
+      links: localAiInternalLinks,
+    },
+    {
+      heading: "1. Reader Profile",
+      paragraphs: [
+        "This guide is for enterprise technical leaders, AI platform teams, infrastructure teams, security teams, and business units trying to deploy private AI without sending sensitive data into unmanaged external systems. The reader cares about risk, uptime, compliance, procurement, integration, utilization, supportability, and total cost of ownership.",
+        "The enterprise tradeoff is not local versus cloud in a simplistic sense. The real decision is which workloads must remain private, which workloads benefit from local latency or data gravity, which workloads can burst to cloud, and which controls must exist before any model touches production data.",
+      ],
+    },
+    {
+      heading: "2. Budget Range",
+      paragraphs: [
+        "Enterprise local AI usually starts around $50,000 for a serious pilot and can move past $500,000 quickly once multiple GPUs, storage, networking, support contracts, monitoring, security tooling, and deployment services are included. The correct first step is not buying the biggest GPU system. It is scoping workloads, data sensitivity, user count, latency needs, compliance obligations, and operational ownership.",
+      ],
+      tables: [
+        {
+          title: "Enterprise Budget Bands",
+          columns: ["Budget", "Likely Setup", "What It Buys", "Main Risk"],
+          rows: [
+            [
+              "$50,000-$100,000",
+              "Pilot multi-GPU server, DGX Spark cluster, or DGX Station-class system",
+              "Controlled pilot for internal documents, secure inference, and model evaluation.",
+              "Pilot may be over-scoped or under-governed.",
+            ],
+            [
+              "$100,000-$250,000",
+              "Production private inference server plus storage, networking, monitoring, and access control",
+              "Real shared service for defined departments or workloads.",
+              "Utilization and ownership must be managed.",
+            ],
+            [
+              "$250,000-$500,000+",
+              "Private inference cluster or hybrid on-prem plus cloud architecture",
+              "Scaled internal AI platform with governance and lifecycle management.",
+              "Complex procurement, operations, security, and model-management burden.",
+            ],
+          ],
+          note: "These are planning ranges, not quotes. Enterprise pricing depends heavily on vendor support, GPU generation, storage, networking, facilities, and service contracts.",
+        },
+      ],
+    },
+    {
+      heading: "3. Configuration Options",
+      paragraphs: [
+        "Enterprise teams should compare systems by workload isolation, uptime, governance, performance, and support model. DGX Spark clusters can be useful for pilots and developer groups. DGX Station or DGX-class systems make sense where vendor-integrated hardware and software matter. Multi-GPU rackmount servers are the flexible workhorse. Private inference clusters are the platform path. Hybrid local plus cloud architecture is often the most rational end state.",
+      ],
+      tables: [
+        {
+          title: "Enterprise Configuration Comparison",
+          columns: ["Configuration", "Approx. Cost", "Advantages", "Disadvantages"],
+          rows: [
+            [
+              "NVIDIA DGX Spark cluster",
+              "$50,000-$150,000+ depending on count and support",
+              "Compact NVIDIA-aligned developer/pilot environment; useful for distributed teams.",
+              "Not a replacement for high-throughput datacenter GPU clusters.",
+            ],
+            [
+              "NVIDIA DGX Station or DGX-class system",
+              "$100,000-$500,000+ depending on system and support",
+              "Integrated vendor platform, enterprise support path, strong AI workstation/server positioning.",
+              "High cost, vendor dependency, procurement lead time.",
+            ],
+            [
+              "Multi-GPU rackmount server",
+              "$50,000-$250,000+",
+              "Flexible, expandable, datacenter-friendly private inference building block.",
+              "Requires infrastructure team, cooling, power, monitoring, and lifecycle management.",
+            ],
+            [
+              "Private inference cluster",
+              "$150,000-$500,000+",
+              "Shared internal platform with routing, concurrency, governance, and workload isolation.",
+              "Operational complexity and utilization risk.",
+            ],
+            [
+              "Hybrid local plus cloud architecture",
+              "Variable",
+              "Keeps sensitive/default workloads local while bursting frontier or elastic workloads to cloud.",
+              "Requires routing policy, data classification, identity, logging, and vendor management.",
+            ],
+            [
+              "On-prem deployment with storage, networking, monitoring, identity, backup, and security controls",
+              "$100,000-$500,000+",
+              "Enterprise-grade control plane around private AI.",
+              "The control plane can cost as much attention as the GPUs.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "4. Cost Table",
+      paragraphs: [
+        "Enterprise local AI becomes cheaper than cloud only when utilization, data sensitivity, compliance, latency, or predictable workload volume justify the capital and operational burden. A poorly utilized GPU cluster is not strategic infrastructure. It is expensive furniture with fans.",
+      ],
+      tables: [
+        {
+          title: "Enterprise Local AI Cost Model",
+          columns: ["Cost Area", "Typical Range", "What to Verify", "Cloud Alternative"],
+          rows: [
+            [
+              "Hardware upfront cost",
+              "$50,000-$500,000+",
+              "GPU generation, support contract, warranty, lead time, vendor lock-in, rack compatibility.",
+              "Cloud avoids CapEx but shifts cost to usage and data governance tradeoffs.",
+            ],
+            [
+              "GPU / accelerator cost",
+              "$25,000-$300,000+",
+              "VRAM, interconnect, power, cooling, software support, model compatibility.",
+              "Cloud provides burst access to larger accelerator pools.",
+            ],
+            [
+              "Storage cost",
+              "$10,000-$150,000+",
+              "NVMe cache, NAS/SAN, object storage, snapshots, encryption, retention.",
+              "Cloud storage can be easier but may complicate data residency.",
+            ],
+            [
+              "Networking cost",
+              "$5,000-$100,000+",
+              "10/25/100GbE, VLANs, segmentation, firewall policy, datacenter topology.",
+              "Cloud networking is elastic but requires governance and egress planning.",
+            ],
+            [
+              "Power estimate",
+              "1kW-20kW+",
+              "Rack power density, UPS, generator policy, datacenter cooling limits.",
+              "Cloud embeds power cost in usage pricing.",
+            ],
+            [
+              "Cooling considerations",
+              "$5,000-$100,000+",
+              "Airflow, liquid cooling needs, room heat load, rack placement.",
+              "Provider handles cooling.",
+            ],
+            [
+              "Software cost",
+              "$0-$250,000+",
+              "Open-source stack, enterprise support, monitoring, logging, identity, secrets, governance tooling.",
+              "Managed cloud AI includes some platform services but not necessarily compliance fit.",
+            ],
+            [
+              "Maintenance burden",
+              "High",
+              "Platform owner, security owner, model owner, backup owner, incident process.",
+              "Cloud lowers hardware maintenance but does not remove governance work.",
+            ],
+            [
+              "When local becomes cheaper",
+              "Usually at sustained high utilization or sensitive recurring workloads",
+              "Compare three-year TCO against subscriptions, API spend, egress, compliance, and operational staff.",
+              "Cloud wins for irregular burst, frontier-only, or rapidly changing workloads.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "5. Component Breakdown",
+      paragraphs: [
+        "Enterprise component planning must include the pieces hobbyists ignore: identity, secrets, logging, network segmentation, backup, disaster recovery, monitoring, model registry, data classification, patching, and procurement support. The GPU server is only the visible part of the system.",
+      ],
+      tables: [
+        {
+          title: "Enterprise Component Breakdown",
+          columns: ["Component", "Private Multi-GPU Server", "DGX-Class System", "Hybrid Local + Cloud"],
+          rows: [
+            [
+              "CPU",
+              "Server CPU with enough PCIe lanes and memory channels.",
+              "Vendor-integrated CPU/GPU architecture.",
+              "Local server CPU plus cloud accelerator access.",
+            ],
+            [
+              "GPU / accelerator",
+              "Multiple NVIDIA datacenter or workstation GPUs.",
+              "DGX-class integrated accelerators.",
+              "Local GPUs for private/default workloads; cloud GPUs for burst.",
+            ],
+            [
+              "VRAM / unified memory",
+              "Depends on GPU count and interconnect; verify per-system behavior.",
+              "Vendor-specific memory architecture.",
+              "Local memory plus cloud model capacity.",
+            ],
+            [
+              "System RAM",
+              "256GB-1TB+ depending on retrieval and serving stack.",
+              "Vendor-configured.",
+              "Sized for local workloads and routing services.",
+            ],
+            [
+              "Storage",
+              "NVMe scratch plus NAS/SAN/object storage.",
+              "Vendor storage plus enterprise storage integration.",
+              "Local sensitive data store plus cloud policy boundary.",
+            ],
+            [
+              "Networking",
+              "10/25/100GbE, segmentation, firewall rules.",
+              "Vendor recommendations plus enterprise network design.",
+              "Private networking, VPN, cloud interconnect, egress policy.",
+            ],
+            [
+              "Power supply",
+              "Redundant server PSUs and UPS.",
+              "Vendor-defined power requirements.",
+              "On-prem power plus cloud dependency.",
+            ],
+            [
+              "Cooling",
+              "Rack airflow or liquid cooling plan.",
+              "Vendor-defined facilities requirements.",
+              "Local cooling sized for baseline workloads.",
+            ],
+            [
+              "Operating system",
+              "Enterprise Linux or Ubuntu Server with hardening.",
+              "Vendor-supported software image.",
+              "Hardened local OS plus cloud IAM standards.",
+            ],
+            [
+              "AI runtime stack",
+              "vLLM, SGLang, TensorRT-LLM, containers.",
+              "Vendor-supported NVIDIA stack plus chosen serving layer.",
+              "Local vLLM/SGLang plus cloud provider APIs.",
+            ],
+            [
+              "Management layer",
+              "Kubernetes or containers, monitoring, logging, IAM, secrets, backups.",
+              "Vendor tools plus enterprise control plane.",
+              "Policy router, audit logging, identity, cloud escalation rules.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "6. Model Capability Table",
+      paragraphs: [
+        "Enterprise model planning should distinguish development, pilot, and production serving. A model that fits is not automatically supportable. Production systems need concurrency, scheduling, isolation, monitoring, and a decision about where 70B and 100B+ models belong in the stack.",
+      ],
+      tables: [
+        {
+          title: "Enterprise Model Capability",
+          columns: ["Model Class", "Pilot Server", "Private Inference Cluster", "Hybrid Architecture", "Practical Notes"],
+          rows: [
+            [
+              "7B",
+              "Easy, high concurrency possible.",
+              "Easy, useful for routing and low-cost tasks.",
+              "Keep local by default.",
+              "Good for classification, extraction, routing, and fast internal tools.",
+            ],
+            [
+              "13B",
+              "Comfortable for many users with the right runtime.",
+              "Comfortable.",
+              "Keep local unless frontier quality is required.",
+              "Strong default for internal assistants and document workflows.",
+            ],
+            [
+              "34B",
+              "Possible, but watch concurrency and context.",
+              "Realistic with multi-GPU planning.",
+              "Local for sensitive workloads; cloud for burst.",
+              "Often a strong quality step without full frontier cost.",
+            ],
+            [
+              "70B",
+              "Possible on high-end pilot hardware with compromise.",
+              "Realistic with serious GPUs, quantization, and scheduling.",
+              "Hybrid routing recommended.",
+              "Use for high-value tasks, not every prompt.",
+            ],
+            [
+              "100B+",
+              "Usually not the pilot default.",
+              "Requires dedicated architecture and high memory.",
+              "Cloud escalation often rational unless data cannot leave.",
+              "Model governance and workload selection matter more than enthusiasm.",
+            ],
+          ],
+          note: "FP16/BF16 serving is expensive at scale. INT8, FP8, and 4-bit approaches can reduce memory pressure, but the enterprise must validate quality, latency, safety, and audit requirements for each model.",
+        },
+      ],
+    },
+    {
+      heading: "7. Advantages, Disadvantages, and Upgrade Paths",
+      paragraphs: [
+        "Enterprise options should be judged by operational fit. A DGX-class system is attractive when vendor integration and support matter. A multi-GPU rackmount server is flexible but requires internal competence. A private inference cluster is the platform path. Hybrid local plus cloud is often the most realistic production architecture because it avoids treating every workload as identical.",
+      ],
+      tables: [
+        {
+          title: "Enterprise Decision Table",
+          columns: ["Setup", "Best Use Case", "Who Should Avoid It", "Upgrade Path"],
+          rows: [
+            [
+              "DGX Spark cluster",
+              "Developer pilots, local experimentation, controlled departmental trials.",
+              "Teams needing high-throughput central production serving immediately.",
+              "Graduate to DGX Station, rackmount server, or private cluster.",
+            ],
+            [
+              "DGX Station / DGX-class",
+              "Enterprise buyers wanting integrated vendor-supported AI infrastructure.",
+              "Teams without budget, facilities, or defined workloads.",
+              "Scale into cluster or hybrid architecture.",
+            ],
+            [
+              "Multi-GPU rackmount server",
+              "Private inference service for defined internal workloads.",
+              "Organizations without infrastructure ownership or datacenter readiness.",
+              "Add more servers behind a routing and monitoring layer.",
+            ],
+            [
+              "Private inference cluster",
+              "Shared internal AI platform with governance and workload isolation.",
+              "Teams trying to skip discovery and pilot phases.",
+              "Add capacity, model registry, autoscaling, and cloud escalation.",
+            ],
+            [
+              "Hybrid local plus cloud",
+              "Enterprises with mixed sensitive and non-sensitive workloads.",
+              "Teams that cannot classify data or enforce routing policy.",
+              "Improve policy automation, audit logs, and workload placement.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "8. Enterprise Deployment Phases",
+      paragraphs: [
+        "Phase 1: discovery. Identify workloads, data classes, users, current cloud spend, latency requirements, and compliance constraints.",
+        "Phase 2: security and compliance review. Decide what data can leave, what must remain local, and what audit controls are required.",
+        "Phase 3: pilot architecture. Build a limited system around one or two real workflows, not a generic AI sandbox.",
+        "Phase 4: hardware selection. Choose DGX-class, rackmount, appliance, or hybrid architecture based on workloads and support model.",
+        "Phase 5: networking and storage design. Plan segmentation, bandwidth, document stores, snapshots, retention, and data residency.",
+        "Phase 6: deployment stack. Select vLLM, SGLang, TensorRT-LLM, containers, and orchestration only where they match the workload.",
+        "Phase 7: identity and access management. Integrate authentication, groups, roles, secrets, and least-privilege access.",
+        "Phase 8: monitoring and logging. Track utilization, latency, errors, model versions, user activity, and safety events.",
+        "Phase 9: backup and disaster recovery. Define what gets backed up, how restore is tested, and what happens when hardware fails.",
+        "Phase 10: production rollout. Expand only after the pilot proves value, reliability, and governance.",
+        "Phase 11: governance and model lifecycle management. Track model approvals, data sources, evaluations, deprecations, and update cadence.",
+        "Phase 12: scaling strategy. Add capacity only after utilization and workflow evidence justify the next purchase.",
+      ],
+    },
+    {
+      heading: "9. Software Stack Recommendations",
+      paragraphs: [
+        "Enterprise stacks should start with serving and governance, not UI polish. vLLM is a strong general serving baseline. SGLang is useful for more complex routing, long-context, and systems-heavy workloads. TensorRT-LLM matters when NVIDIA-specific performance optimization is worth the reduced portability. Kubernetes or container orchestration is appropriate when the organization already has the operational maturity to support it.",
+        "The required control plane includes monitoring, logging, authentication, secrets management, network segmentation, audit controls, model governance, backup, disaster recovery, and a hybrid cloud escalation path. If those pieces are missing, the enterprise has a demo, not a production system.",
+      ],
+    },
+    {
+      heading: "Black Scarab Final Recommendation",
+      paragraphs: [
+        "If we had to recommend only one configuration, this is the one.",
+        "For large enterprises, the best default is a private multi-GPU rackmount inference server deployed as a governed pilot, paired with enterprise storage, 10/25GbE networking, identity integration, monitoring, logging, backup, and a hybrid cloud escalation path. The approximate starting cost is $100,000 to $250,000 for a serious pilot-to-production architecture, depending on GPU choice, storage, networking, vendor support, and facilities readiness. All pricing should be manually quoted and verified.",
+        "This is the best default because it avoids both extremes: it is more serious than a desktop appliance, but less risky than jumping immediately into a full private cluster. It can realistically run 7B and 13B models at useful internal concurrency, 34B models for higher-quality workflows, and 70B-class workloads with careful scheduling, quantization, and capacity planning.",
+        "It cannot replace every frontier cloud model, solve governance by itself, or run 100B+ workloads cheaply without serious architecture. Upgrade beyond it when utilization proves demand, when multiple departments depend on the system, when high availability is required, or when model lifecycle governance becomes a platform function rather than a project task.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "Enterprise GPU systems, DGX-class hardware, RTX PRO configurations, storage, networking, support contracts, and facilities requirements should be quoted directly from vendors or integrators. Public specs are useful for planning, but enterprise purchase decisions require current quotes, validated support terms, and security review.",
+      ],
+    },
+  ],
+  sources: [
+    "vLLM official documentation",
+    "SGLang official documentation",
+    "TensorRT-LLM official documentation",
+    "NVIDIA DGX and RTX PRO product information",
+    "Ollama and Open WebUI documentation",
+    "Enterprise storage, networking, and security deployment best practices",
+  ],
+  sourceLinks: localAiSourceLinks,
+});
+
 export const caseStudies: CaseStudyArticle[] = [
+  localAiEnterpriseGuide(),
+  localAiSmallBusinessGuide(),
+  localAiHobbyistGuide(),
   {
     slug: "case-study-agriculture-chemical-waste",
     title:

@@ -87,6 +87,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: article.seoDescription,
     },
     keywords: [
+      ...(article.tags ?? []),
       article.industry,
       "edge AI",
       "AI infrastructure",
@@ -208,7 +209,13 @@ export default async function CaseStudyPage({ params }: Props) {
       },
     },
     articleSection: article.industry,
-    keywords: ["edge AI", article.industry, typeLabel.toLowerCase(), "AI infrastructure"],
+    keywords: [
+      "edge AI",
+      article.industry,
+      typeLabel.toLowerCase(),
+      "AI infrastructure",
+      ...(article.tags ?? []),
+    ],
     citation: article.sourceLinks?.map((source) => source.url) ?? [],
   };
 
@@ -449,6 +456,24 @@ export default async function CaseStudyPage({ params }: Props) {
                               </p>
                             ) : null}
                           </div>
+                        ))}
+                      </div>
+                    ) : null}
+                    {section.links?.length ? (
+                      <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                        {section.links.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            className="rounded-[18px] border border-[#e1ddd2] bg-[#fffdfa] p-5 shadow-[0_12px_28px_rgba(17,24,39,0.05)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(17,24,39,0.08)]"
+                          >
+                            <p className="text-sm font-semibold text-[#111827]">
+                              {link.label}
+                            </p>
+                            <p className="mt-2 text-sm leading-6 text-[#6b7280]">
+                              {link.description}
+                            </p>
+                          </Link>
                         ))}
                       </div>
                     ) : null}
