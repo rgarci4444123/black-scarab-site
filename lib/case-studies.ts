@@ -65,7 +65,7 @@ const localAiHobbyistGuide = (): CaseStudyArticle => ({
     typeLabel: "Guide",
     formatLabel: "Budget local AI buying guide",
     industry: "Cross-Industry",
-    image: "/images/insights/local-ai-hobbyist-budget-guide.png",
+    image: "/images/insights/local-ai-hobbyist-budget-guide-v2.png",
     imageAlt:
       "Budget local AI workstation with a desktop GPU, compact server, and local model workflow.",
     seoDescription:
@@ -551,7 +551,7 @@ const localAiSmallBusinessGuide = (): CaseStudyArticle => ({
   typeLabel: "Guide",
   formatLabel: "Small business local AI buying guide",
   industry: "Cross-Industry",
-  image: "/images/insights/local-ai-small-business-guide.png",
+  image: "/images/insights/local-ai-small-business-guide-v2.png",
   imageAlt:
     "Small business local AI workstation with GPU compute, NAS storage, and private document workflow.",
   seoDescription:
@@ -971,7 +971,7 @@ const localAiEnterpriseGuide = (): CaseStudyArticle => ({
   typeLabel: "Guide",
   formatLabel: "Enterprise private AI infrastructure guide",
   industry: "Cross-Industry",
-  image: "/images/insights/local-ai-enterprise-guide.png",
+  image: "/images/insights/local-ai-enterprise-guide-v2.png",
   imageAlt:
     "Enterprise private AI infrastructure with GPU servers, storage, networking, monitoring, and governed model deployment.",
   seoDescription:
