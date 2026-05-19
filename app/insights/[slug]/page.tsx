@@ -318,6 +318,111 @@ export default async function CaseStudyPage({ params }: Props) {
                         <p key={paragraph}>{paragraph}</p>
                       ))}
                     </div>
+                    {section.tables?.length ? (
+                      <div className="mt-6 space-y-6">
+                        {section.tables.map((table) => (
+                          <div
+                            key={table.title}
+                            className="overflow-hidden rounded-[18px] border border-[#e1ddd2] bg-[#fffdfa] shadow-[0_12px_28px_rgba(17,24,39,0.05)]"
+                          >
+                            <div className="border-b border-[#e8e4dc] bg-[#111827] px-5 py-4 text-white">
+                              <p className="text-sm font-semibold tracking-tight">
+                                {table.title}
+                              </p>
+                            </div>
+                            <div className="overflow-x-auto">
+                              <table className="w-full min-w-[640px] border-collapse text-left text-sm">
+                                <thead>
+                                  <tr className="border-b border-[#e8e4dc] bg-[#f6f4ef] text-[#111827]">
+                                    {table.columns.map((column) => (
+                                      <th
+                                        key={column}
+                                        scope="col"
+                                        className="px-5 py-3 font-semibold"
+                                      >
+                                        {column}
+                                      </th>
+                                    ))}
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {table.rows.map((row) => (
+                                    <tr
+                                      key={row.join("|")}
+                                      className="border-b border-[#efeae1] last:border-0"
+                                    >
+                                      {row.map((cell, cellIndex) => (
+                                        <td
+                                          key={`${cell}-${cellIndex}`}
+                                          className="px-5 py-4 align-top leading-6 text-[#4b5563]"
+                                        >
+                                          {cell}
+                                        </td>
+                                      ))}
+                                    </tr>
+                                  ))}
+                                </tbody>
+                              </table>
+                            </div>
+                            {table.note ? (
+                              <p className="border-t border-[#efeae1] px-5 py-3 text-xs leading-5 text-[#6b7280]">
+                                {table.note}
+                              </p>
+                            ) : null}
+                          </div>
+                        ))}
+                      </div>
+                    ) : null}
+                    {section.barCharts?.length ? (
+                      <div className="mt-6 space-y-6">
+                        {section.barCharts.map((chart) => (
+                          <div
+                            key={chart.title}
+                            className="rounded-[18px] border border-[#e1ddd2] bg-[#111827] p-5 text-white shadow-[0_14px_32px_rgba(17,24,39,0.12)]"
+                          >
+                            <p className="text-sm font-semibold tracking-tight">
+                              {chart.title}
+                            </p>
+                            <div className="mt-5 space-y-4">
+                              {chart.bars.map((bar) => (
+                                <div key={bar.label}>
+                                  <div className="flex items-baseline justify-between gap-4 text-sm">
+                                    <span className="font-medium text-[#f9fafb]">
+                                      {bar.label}
+                                    </span>
+                                    <span className="text-[#b8c2cc]">
+                                      {bar.value.toLocaleString()} {chart.unit}
+                                    </span>
+                                  </div>
+                                  <div className="mt-2 h-3 overflow-hidden rounded-full bg-white/10">
+                                    <div
+                                      className="h-full rounded-full bg-[#6fb7c8]"
+                                      style={{
+                                        width: `${Math.max(
+                                          8,
+                                          Math.min(
+                                            100,
+                                            (bar.value / chart.maxValue) * 100,
+                                          ),
+                                        )}%`,
+                                      }}
+                                    />
+                                  </div>
+                                  <p className="mt-2 text-xs leading-5 text-[#b8c2cc]">
+                                    {bar.detail}
+                                  </p>
+                                </div>
+                              ))}
+                            </div>
+                            {chart.note ? (
+                              <p className="mt-5 border-t border-white/10 pt-4 text-xs leading-5 text-[#b8c2cc]">
+                                {chart.note}
+                              </p>
+                            ) : null}
+                          </div>
+                        ))}
+                      </div>
+                    ) : null}
                   </section>
                 ))}
               </div>

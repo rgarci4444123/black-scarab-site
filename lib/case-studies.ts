@@ -1,11 +1,32 @@
 export type CaseStudySection = {
   heading?: string;
   paragraphs: string[];
+  tables?: CaseStudyTable[];
+  barCharts?: CaseStudyBarChart[];
 };
 
 export type CaseStudySourceLink = {
   label: string;
   url: string;
+};
+
+export type CaseStudyTable = {
+  title: string;
+  columns: string[];
+  rows: string[][];
+  note?: string;
+};
+
+export type CaseStudyBarChart = {
+  title: string;
+  maxValue: number;
+  unit: string;
+  bars: {
+    label: string;
+    value: number;
+    detail: string;
+  }[];
+  note?: string;
 };
 
 export type CaseStudyArticle = {
@@ -2068,6 +2089,414 @@ export const caseStudies: CaseStudyArticle[] = [
       {
         label: "Vitis AI overview",
         url: "https://docs.amd.com/r/en-US/ug1414-vitis-ai/Vitis-AI-Overview",
+      },
+    ],
+  },
+  {
+    slug: "local-ai-server-guide",
+    title:
+      "How to Build Your First Local AI Server in 2026: Hardware, VRAM, Bandwidth, and Software",
+    summary:
+      "A practical Black Scarab guide to building your first local AI server, covering what local AI is, local vs cloud tradeoffs, VRAM math, memory bandwidth, hardware strategy, inference engines, and the software stack that makes self-hosted AI useful in 2026.",
+    publishedLabel: "Guide · Published May 19, 2026",
+    publishedDate: "2026-05-19",
+    typeLabel: "Guide",
+    formatLabel: "Website-native implementation guide",
+    industry: "Cross-Industry",
+    image: "/article-images/local-ai-server-guide.png",
+    imageAlt:
+      "Local AI workstation with GPU, server, edge devices, and AI system components connected around a private inference setup.",
+    seoDescription:
+      "Learn how to build your first local AI server in 2026 with practical guidance on local vs cloud AI, VRAM math, bandwidth, hardware, inference engines, Ollama, Open WebUI, and self-hosted software.",
+    sections: [
+      {
+        paragraphs: [
+          "Local AI in 2026 is no longer just a hobbyist side quest. It has become a practical way to run private chat models, local document workflows, image generation, and even lightweight agent systems without sending every request to a cloud provider. But most first-time builders still start in the wrong place. They compare model names, benchmark screenshots, or random YouTube builds before they understand the three constraints that actually shape the experience: how much of the model fits, how fast the box can move data, and which runtime is sitting on top of the hardware.",
+          "For Black Scarab, that is the right way to frame the problem. A good local AI server is not just a powerful machine. It is a hardware strategy, a software stack, and a workflow design that match the way you actually want to use AI. The goal of this guide is to help you build that first system without getting lost in GPU folklore, spec-sheet marketing, or forum posts optimized for people who enjoy troubleshooting more than using the machine.",
+        ],
+      },
+      {
+        heading: "1. What Local AI Actually Means",
+        paragraphs: [
+          "Local AI means running AI models on hardware you control instead of sending every prompt, document, image, or code snippet to a remote provider. In the simplest version, you type a question into a local app, the model runs on your own CPU, GPU, or unified-memory system, and the response comes back without your data leaving the machine.",
+          "That includes more than chatbot-style text. A local AI setup can run large language models for writing and reasoning, code-specialized models for development, multimodal models for image understanding, embedding models for document search, and image-generation systems for creative workflows. The important distinction is not the task. It is where inference happens and who controls the data path.",
+          "Cloud AI still has obvious advantages: the best frontier models, easier setup, managed updates, and huge infrastructure you do not have to maintain. Local AI wins when privacy, offline operation, unlimited experimentation, predictable cost, or direct system control matter more than always having the newest hosted model.",
+        ],
+      },
+      {
+        heading: "2. Why Run AI Locally at All?",
+        paragraphs: [
+          "There are four reasons people build local AI systems in the first place: privacy, control, latency, and repeat usage. If your data is sensitive, if you want to work offline, if you do not want a provider rate limit or policy change sitting between you and your workflow, or if you plan to hit the system every day, local inference starts making real sense.",
+          "There is also a cost logic. Local AI has an upfront hardware cost, but the marginal cost of each additional prompt is mostly electricity and wear on your own machine. That makes it attractive for builders who run many small experiments, analyze private files, generate draft content, or want an always-available assistant without watching usage meters.",
+          "That does not mean local AI replaces the cloud in every situation. Frontier-scale models, bursty high-concurrency serving, and certain multimodal workloads are still often easier in hosted environments. But for an individual user, a small team, or a serious lab setup, local AI is now good enough to become infrastructure rather than an experiment.",
+        ],
+      },
+      {
+        heading: "3. Local AI vs. Cloud AI",
+        paragraphs: [
+          "The local-versus-cloud decision is not ideological by default. It is architectural. Cloud AI gives you instant access to powerful hosted models, managed uptime, automatic updates, long-context tools, and polished product interfaces. Local AI gives you privacy, offline operation, no provider-side usage limits, more control over model choice, and the ability to build workflows around your own hardware.",
+          "For most users, the right answer will be hybrid. Use local AI for private drafts, internal notes, sensitive documents, repeatable workflows, experimentation, and offline work. Use cloud AI when you need the strongest available reasoning model, massive context windows, current web-connected research, or a task that does not justify local hardware.",
+          "The Black Scarab view is simple: local AI becomes most valuable when it is part of a system. A private model by itself is useful. A private model connected to your documents, local search, coding tools, image workflow, and automation layer becomes infrastructure.",
+        ],
+        tables: [
+          {
+            title: "Local AI vs. Cloud AI: Practical Tradeoffs",
+            columns: ["Decision Factor", "Local AI", "Cloud AI"],
+            rows: [
+              [
+                "Privacy",
+                "Prompts, files, and outputs can stay on hardware you control.",
+                "Data is processed by a third-party provider according to that provider's policies.",
+              ],
+              [
+                "Cost Model",
+                "Higher upfront hardware cost, low marginal cost per prompt.",
+                "Low upfront cost, recurring subscription or usage-based billing.",
+              ],
+              [
+                "Connectivity",
+                "Can work offline once models and tools are installed.",
+                "Requires an internet connection and service availability.",
+              ],
+              [
+                "Model Quality",
+                "Strong for many daily tasks, but depends on local hardware and model choice.",
+                "Best for frontier reasoning, very long context, and constantly updated hosted tools.",
+              ],
+              [
+                "Control",
+                "High control over models, runtimes, data paths, and update cadence.",
+                "Provider controls model behavior, availability, and product changes.",
+              ],
+            ],
+            note: "A serious local setup does not eliminate the cloud. It gives you a private default and lets cloud models become an intentional escalation path.",
+          },
+        ],
+      },
+      {
+        heading: "4. The Core Mental Model: Weights, VRAM, Bandwidth, and Overhead",
+        paragraphs: [
+          "The cleanest first-pass rule for model fit is simple: VRAM in gigabytes is roughly equal to parameters in billions multiplied by effective bits per weight divided by 8. In practical terms, FP16 and BF16 land near 2 GB per 1 billion parameters, FP8 and INT8 land near 1 GB per 1 billion parameters, and 4-bit formats land near roughly 0.5 GB per 1 billion parameters. That is why a 7B model in FP16 feels very different from the same model in 4-bit, and why a 70B model only becomes realistic on a single box once quantization gets aggressive.",
+          "GGUF-style quants are useful, but they are not magic. A Q6_K file, a Q5_K file, and a Q4_K file all trade fidelity for fit in slightly different ways, and the memory story they tell is runtime-specific. A model that fits comfortably in one llama.cpp-style workflow does not automatically fit the same way in a different engine that handles dequantization, cache allocation, or batching differently.",
+          "The second half of the problem is speed. Capacity decides whether a model fits. Memory bandwidth decides whether the box feels alive or like it is decoding through wet cement. That is why discrete GPUs still dominate when the model fits inside VRAM: they can push far more memory bandwidth than most unified-memory systems. At the same time, unified-memory boxes such as Apple Silicon systems, NVIDIA DGX Spark, and Ryzen AI Max platforms have become interesting because they let you fit larger models in one coherent memory pool even when the raw tokens-per-second ceiling is lower.",
+          "And then there is the tax nobody should ignore. The model weights are only part of the memory bill. KV cache grows with context length, activations can spike depending on runtime and optimization path, batching and concurrency multiply requirements quickly, and framework overhead can reserve a meaningful amount of memory before your first useful token appears. A good rule of thumb is to budget an extra 10 to 30 percent beyond the weight math, and even more if you care about long context, many simultaneous users, or agent loops that keep multiple jobs in flight.",
+        ],
+        tables: [
+          {
+            title: "VRAM Math for Common Model Sizes",
+            columns: ["Model Size", "FP16 / BF16", "FP8 / INT8", "4-bit Quantized", "Practical Read"],
+            rows: [
+              [
+                "7B",
+                "~14 GB",
+                "~7 GB",
+                "~3.5-4 GB",
+                "Runs on many modern laptops or entry local AI boxes when quantized.",
+              ],
+              [
+                "13B",
+                "~26 GB",
+                "~13 GB",
+                "~6-7 GB",
+                "Comfortable on 16 GB GPUs when quantized, stronger with 24 GB.",
+              ],
+              [
+                "34B",
+                "~68 GB",
+                "~34 GB",
+                "~18-22 GB",
+                "A strong reason to value 24 GB VRAM or larger unified-memory systems.",
+              ],
+              [
+                "70B",
+                "~140 GB",
+                "~70 GB",
+                "~35-45 GB",
+                "Usually needs multi-GPU, large unified memory, or aggressive quantization.",
+              ],
+            ],
+            note: "These are first-pass weight estimates. Long context, KV cache, batching, and runtime overhead can push real memory requirements higher.",
+          },
+        ],
+        barCharts: [
+          {
+            title: "Memory Bandwidth Classes for Local AI Hardware",
+            maxValue: 1800,
+            unit: "GB/s",
+            bars: [
+              {
+                label: "Thin-and-light AI PC class",
+                value: 150,
+                detail:
+                  "Useful for small local models and assistants, but not a serious high-throughput local server tier.",
+              },
+              {
+                label: "Unified-memory starter class",
+                value: 275,
+                detail:
+                  "Interesting for one-box local AI when capacity matters more than raw decode speed.",
+              },
+              {
+                label: "Workstation unified-memory class",
+                value: 650,
+                detail:
+                  "More useful for larger local workflows when the model needs a large coherent memory pool.",
+              },
+              {
+                label: "High-end unified-memory class",
+                value: 819,
+                detail:
+                  "Strong one-box capacity and respectable bandwidth, but still different from discrete GPU VRAM.",
+              },
+              {
+                label: "High-end discrete GPU class",
+                value: 1800,
+                detail:
+                  "Best when the model fits in VRAM and raw tokens, batching, or image generation speed matter.",
+              },
+            ],
+            note: "Bandwidth numbers should be treated as approximate classes, not universal tokens-per-second predictions. Runtime and model architecture still matter.",
+          },
+        ],
+      },
+      {
+        heading: "5. Pick a Hardware Strategy Before You Pick a Model",
+        paragraphs: [
+          "Most builders waste time asking which model is best before they decide what kind of local AI machine they are actually building. In practice, there are four sensible starting paths. The first, and still the default answer for most people, is a single NVIDIA GPU inside a normal x86 desktop or workstation. This is the easiest path if you want the broadest compatibility with local model tooling, strong image-generation support, and fewer surprises when moving between runtimes.",
+          "The second path is Apple Silicon. A Mac mini or Mac Studio makes sense when you value silence, compactness, and one-box simplicity more than maximum raw throughput. Apple’s unified memory architecture can make larger models usable on a single quiet machine, but the tradeoff is that the system often feels slower than a high-bandwidth discrete GPU once token generation, concurrency, or heavier agent loops become the priority.",
+          "The third path is the new unified-memory x86 and appliance category. Framework Desktop with Ryzen AI Max and NVIDIA DGX Spark both represent a newer idea: keep a large coherent memory pool close to the processor and make local AI accessible without a traditional multi-card workstation. These systems are interesting because they reduce setup complexity and can expose more memory to the model, but they are not the same thing as a top-end discrete GPU tower when raw serving speed matters.",
+          "The fourth path is the used workstation route. Older HP, Dell, and Lenovo towers with lots of RAM channels and plenty of PCIe room can still be excellent enthusiast boxes, especially if you know how to evaluate BIOS support, power delivery, cooling, and GPU fitment. But that path is better treated as a second-system or lab strategy, not as the cleanest first build for someone who wants a dependable daily machine instead of a hardware project.",
+        ],
+        tables: [
+          {
+            title: "Local AI Hardware Strategy Matrix",
+            columns: ["Path", "Best For", "What It Buys", "Main Tradeoff"],
+            rows: [
+              [
+                "Single NVIDIA GPU desktop",
+                "Most first serious local AI builds",
+                "CUDA compatibility, image generation support, strong local inference ergonomics.",
+                "Limited by the VRAM on one card unless you move into multi-GPU complexity.",
+              ],
+              [
+                "Apple Silicon",
+                "Quiet personal systems and large unified-memory workflows",
+                "Simple one-box setup, low noise, large memory options on higher-end systems.",
+                "Lower raw bandwidth than high-end discrete GPUs for many serving-style workloads.",
+              ],
+              [
+                "DGX Spark / Ryzen AI Max class",
+                "Coherent-memory developer appliances",
+                "More memory available to the model without a traditional GPU tower.",
+                "Newer category with more platform-specific tradeoffs and less commodity flexibility.",
+              ],
+              [
+                "Used workstation build",
+                "Enthusiasts who enjoy hardware optimization",
+                "Budget RAM, PCIe expansion, and multi-GPU experimentation.",
+                "Sourcing, BIOS, cooling, power, and support complexity.",
+              ],
+              [
+                "Cloud rental",
+                "Bursty access to very large GPUs",
+                "No hardware ownership and access to larger accelerator classes.",
+                "No private owned baseline and ongoing usage cost.",
+              ],
+            ],
+            note: "For a first dependable box, Black Scarab would bias toward a clean single-GPU desktop or a quiet unified-memory system before recommending scavenged multi-GPU builds.",
+          },
+        ],
+      },
+      {
+        heading: "6. Your First Box Should Be Boring in the Right Ways",
+        paragraphs: [
+          "For a first local AI server, the best design goal is not maximum cleverness. It is minimum regret. That usually means one machine, one primary inference path, one UI, and one or two model families you understand well. A modern laptop with 8 GB to 16 GB of RAM can run useful small models, especially through beginner-friendly tools. But if you are building a dedicated box rather than just experimenting, the floor should be higher.",
+          "On x86, a single-GPU setup with at least 16 GB of VRAM, 64 GB of system RAM, and 2 TB of storage is a reasonable starting target for a serious local AI machine. If you can stretch to 24 GB of VRAM, the experience improves noticeably because you unlock room for larger or less aggressively quantized models without falling immediately into compromise mode. If image generation is part of the goal, NVIDIA CUDA support still makes life much easier than most alternatives.",
+          "If you are on Apple Silicon, the practical move is to treat the machine as a coherent personal AI box rather than a GPU server. It can be great for local chat, document workflows, coding, and smaller multimodal tasks, especially when paired with MLX-native or Ollama-friendly workflows. If you are choosing between categories rather than exact SKUs, the right beginner question is not which machine wins a benchmark. It is whether you care more about fit, speed, silence, portability, or future expandability.",
+        ],
+      },
+      {
+        heading: "7. You Do Not Pick an Inference Engine First. You Pick a Hardware Strategy, Then the Engine Follows",
+        paragraphs: [
+          "This is one of the most important local-AI lessons to internalize early. The runtime is not the strategy. It is the layer that cashes out the hardware decision. If you want maximum portability across CPUs, GPUs, Macs, and oddball boxes, llama.cpp remains one of the most important foundations in the ecosystem. If you want the easiest path to actually running local models without thinking too hard about internals, Ollama is the simplest modern answer and has become one of the cleanest on-ramps into self-hosted inference.",
+          "If you want a desktop-friendly local app with strong usability for individuals, LM Studio is still one of the easiest ways to make local models feel approachable. If you want a browser-based control plane that can sit in front of local or OpenAI-compatible backends, Open WebUI is one of the most useful pieces in the current stack. For Apple-first workflows, MLX matters because it is built around Apple Silicon rather than pretending every machine is a CUDA tower.",
+          "Once you move past the single-user or small-team stage, the answer changes. vLLM and SGLang are not beginner tools so much as serving systems. They matter when batching, throughput, long context, or more complex routing patterns become part of the problem. If the goal is maximum NVIDIA-specific serving performance, TensorRT-LLM sits further down the optimization path. The pattern is consistent: consumer-friendly local workflows tend to start with Ollama, llama.cpp, LM Studio, MLX, and Open WebUI. Larger serving workflows tend to graduate into vLLM, SGLang, or TensorRT-LLM once the architecture demands it.",
+        ],
+        tables: [
+          {
+            title: "Inference Engine Cheat Sheet",
+            columns: ["Engine / Tool", "Best Fit", "Hardware Bias", "Use It When"],
+            rows: [
+              [
+                "Ollama",
+                "Beginner-friendly local model runtime",
+                "Mac, Windows, Linux, CPU/GPU",
+                "You want fast setup, simple model management, and a clean local API.",
+              ],
+              [
+                "Open WebUI",
+                "Browser control layer",
+                "Backend-agnostic",
+                "You want a polished chat and document interface in front of local models.",
+              ],
+              [
+                "llama.cpp",
+                "Portable low-level inference",
+                "CPU, GPU, Mac, edge systems",
+                "You care about GGUF, portability, hybrid offload, or tight memory control.",
+              ],
+              [
+                "MLX",
+                "Apple Silicon workflows",
+                "Apple unified memory",
+                "You want Apple-native local inference and development ergonomics.",
+              ],
+              [
+                "ComfyUI",
+                "Image generation workflows",
+                "Mostly GPU-driven",
+                "You want controllable local image generation rather than only text chat.",
+              ],
+              [
+                "vLLM / SGLang",
+                "Production-style serving",
+                "CUDA, ROCm, larger systems",
+                "You need batching, higher concurrency, long context, or infrastructure-grade serving.",
+              ],
+              [
+                "TensorRT-LLM",
+                "Maximum NVIDIA optimization",
+                "NVIDIA CUDA stack",
+                "You are optimizing for throughput on NVIDIA hardware and accept lower portability.",
+              ],
+            ],
+            note: "The beginner stack can be simple. The serving stack only matters once multiple users, long context, batching, or serious uptime expectations enter the picture.",
+          },
+        ],
+      },
+      {
+        heading: "8. A Practical First Local AI Stack",
+        paragraphs: [
+          "The most sensible first stack is intentionally boring. Start with a stable operating system, one local runtime, one browser UI, one chat model, one stronger reasoning or coding model, and an optional image-generation path. On Windows or Linux x86, that often means a CUDA-capable NVIDIA machine running Ollama plus Open WebUI, with ComfyUI added only if image generation is part of the goal. On Apple Silicon, the same logic can hold, but MLX becomes a more interesting part of the story if you want to stay closer to the hardware.",
+          "For the first week, do not chase the biggest model you can technically force into memory. Run something small enough to be fast, useful, and stable. Learn what context length does to performance. Learn what happens when you upload documents. Learn how the local API works. Learn what your machine sounds like under load. The first local AI server succeeds when it becomes a dependable tool, not when it barely survives a single benchmark screenshot.",
+          "There is also a good operational reason to keep the first stack simple. Once you know the base works, you can add image generation, code execution, vector retrieval, or a shared endpoint for tools and apps. But if you start with every moving part at once, you will never know whether your problem comes from the hardware, the model, the runtime, the UI, or the workflow you piled on top of it.",
+        ],
+      },
+      {
+        heading: "9. What to Use Local AI For First",
+        paragraphs: [
+          "The first useful local AI workflows are usually not exotic. They are writing, rewriting, summarizing, coding help, private brainstorming, document review, and basic research organization. Those tasks benefit immediately from privacy and unlimited experimentation, and they do not require a complicated infrastructure layer to feel useful.",
+          "The next layer is more specialized. Developers can use local coding models for explanation, refactoring, boilerplate generation, and private code review. Operators can use document-aware workflows to query manuals, policies, contracts, or internal notes. Creators can use image-generation tools for draft visuals and style exploration. Small teams can use a local model as a private assistant for recurring internal workflows.",
+          "The important boundary is expectation-setting. Local AI is excellent when the task lives inside the data and tools you give it. It is weaker when the task depends on current events, external facts, hidden proprietary databases, or frontier-grade reasoning that only the strongest cloud systems can currently provide.",
+        ],
+      },
+      {
+        heading: "10. Documents, Search, and Agent Workflows Are Where Local AI Gets More Interesting",
+        paragraphs: [
+          "A plain chat model is only the beginning. Local AI becomes much more useful when it can work with your own files, your own APIs, and a controlled path to the open web. For many users, the first upgrade is straightforward document retrieval: upload PDFs, notes, or internal references and let the local system answer against them. For more advanced setups, the system starts to look less like one app and more like a small architecture.",
+          "That is where retrieval engines, routing layers, and search tools start to matter. Some builders split web work into separate jobs: search for candidate sources, extract or crawl the pages that matter, and only then hand clean evidence to the model. SearXNG is useful for the search layer, Firecrawl is useful for extraction and crawling, and OpenAI-compatible local endpoints make it easier to plug the same backends into different clients, automations, or agent systems. Once you reach that stage, local AI stops being just a model box and starts becoming a knowledge and automation surface.",
+        ],
+      },
+      {
+        heading: "11. First-Week Setup Path",
+        paragraphs: [
+          "A good first week is simple. Day one is hardware assessment: check RAM, storage, GPU, operating system, and available disk space. Day two is software: install Ollama or LM Studio, run one small model, and confirm the machine can answer basic prompts reliably. Day three is comparison: try a second model and notice the difference in speed, answer quality, and memory pressure.",
+          "Days four and five are where the system becomes useful. Add Open WebUI if you want a browser-based interface, test document upload or retrieval if that is part of the goal, and create a few real prompts based on your own work instead of generic demos. By the end of the week, you should know which model you actually use, where the machine slows down, and whether the next upgrade should be more VRAM, more system RAM, faster storage, or a cleaner software workflow.",
+        ],
+      },
+      {
+        heading: "12. The Mistakes That Ruin First Builds",
+        paragraphs: [
+          "The first mistake is confusing capacity with speed. A machine that fits a model is not automatically a machine that serves it well. The second mistake is budgeting only for weights and forgetting KV cache, context growth, framework overhead, and concurrency. The third mistake is picking software by trend instead of by hardware strategy. The fourth mistake is building an advanced lab machine before building a useful one.",
+          "That last point matters more than people admit. Mixed GPU stacks, improvised datacenter-card cooling, obscure BIOS tweaks, and scavenged workstation builds can all be valid enthusiast moves. But they are bad defaults for a first system unless the project itself is the point. If your actual goal is to learn local AI, run models every day, and build toward a useful personal or small-team setup, the best first box is the one that works consistently enough for you to keep using it.",
+        ],
+      },
+      {
+        heading: "Summary: The Verdict",
+        paragraphs: [
+          "The best local AI server in 2026 is not a universal hardware winner. It is the machine that matches your bottleneck. Capacity decides what fits. Bandwidth decides how hard the box can breathe. The runtime decides how much of the spec sheet you can actually cash out. Once you understand that, the local AI world gets much less confusing.",
+          "For most people, the right first move is still a simple one: one stable machine, one clean local runtime, one browser UI, one small fast model, and a path to grow into documents, images, and automation later. That is how you move from local AI as a fascination to local AI as infrastructure.",
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This guide was compiled using current official documentation for Ollama, Open WebUI, LM Studio, llama.cpp, Apple MLX, vLLM, SGLang, TensorRT-LLM, Apple Mac mini, Framework Desktop, NVIDIA DGX Spark, SearXNG, Firecrawl, and ComfyUI, combined with up-to-date community-local mental models around VRAM sizing, quantization, bandwidth, and self-hosted local AI workflows.",
+        ],
+      },
+    ],
+    sources: [
+      "Ollama official documentation",
+      "Open WebUI official documentation",
+      "LM Studio documentation",
+      "llama.cpp official repository",
+      "Apple MLX official repository",
+      "vLLM official documentation",
+      "SGLang official documentation",
+      "TensorRT-LLM official documentation",
+      "Apple Mac mini technical specifications",
+      "Framework Desktop machine learning page",
+      "NVIDIA DGX Spark official listing",
+      "SearXNG official documentation",
+      "Firecrawl official documentation",
+      "ComfyUI documentation",
+    ],
+    sourceLinks: [
+      {
+        label: "Ollama docs",
+        url: "https://docs.ollama.com/",
+      },
+      {
+        label: "Open WebUI docs",
+        url: "https://docs.openwebui.com/",
+      },
+      {
+        label: "LM Studio docs",
+        url: "https://lmstudio.ai/docs",
+      },
+      {
+        label: "llama.cpp",
+        url: "https://github.com/ggml-org/llama.cpp",
+      },
+      {
+        label: "Apple MLX",
+        url: "https://github.com/ml-explore/mlx",
+      },
+      {
+        label: "vLLM docs",
+        url: "https://docs.vllm.ai/",
+      },
+      {
+        label: "SGLang docs",
+        url: "https://docs.sglang.ai/",
+      },
+      {
+        label: "TensorRT-LLM docs",
+        url: "https://nvidia.github.io/TensorRT-LLM/",
+      },
+      {
+        label: "Apple Mac mini specs",
+        url: "https://www.apple.com/mac-mini/specs/",
+      },
+      {
+        label: "Framework Desktop machine learning",
+        url: "https://frame.work/desktop?tab=machine-learning",
+      },
+      {
+        label: "NVIDIA DGX Spark",
+        url: "https://marketplace.nvidia.com/en-us/enterprise/personal-ai-supercomputers/dgx-spark/",
+      },
+      {
+        label: "SearXNG docs",
+        url: "https://docs.searxng.org/",
+      },
+      {
+        label: "Firecrawl docs",
+        url: "https://docs.firecrawl.dev/introduction",
+      },
+      {
+        label: "ComfyUI docs",
+        url: "https://docs.comfy.org/",
       },
     ],
   },
