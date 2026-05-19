@@ -2070,6 +2070,106 @@ export const caseStudies: CaseStudyArticle[] = [
         url: "https://docs.amd.com/r/en-US/ug1414-vitis-ai/Vitis-AI-Overview",
       },
     ],
+  },
+  {
+    slug: "luxonis-oak-d-guide",
+    title:
+      "Luxonis OAK-D / DepthAI: Spatial AI, Stereo Depth, and Edge Computer Vision in 2026",
+    summary:
+      "A practical guide to the Luxonis OAK-D, covering DepthAI, stereo depth, spatial AI, on-device computer vision, and why OAK-D remains one of the most interesting edge cameras for robotics, safety systems, and retail analytics in 2026.",
+    publishedLabel: "Guide · Published May 19, 2026",
+    publishedDate: "2026-05-19",
+    typeLabel: "Guide",
+    formatLabel: "Website-native platform deep dive",
+    industry: "Cross-Industry",
+    image: "/article-images/luxonis-oak-d-guide.png",
+    imageAlt:
+      "Luxonis OAK-D camera and board shown across spatial AI, stereo depth, construction safety, and retail analytics scenes.",
+    seoDescription:
+      "Learn why the Luxonis OAK-D and DepthAI matter for spatial AI, stereo depth, and edge computer vision in 2026.",
+    sections: [
+      {
+        paragraphs: [
+          "Most standard AI cameras see the world in two dimensions. They can detect a person, a pallet, or a shelf item inside a flat video frame, but they still struggle with one of the questions that matters most in the physical world: how far away is it, and where exactly is it in space?",
+          "That is why the Luxonis OAK-D still matters in 2026. Instead of treating AI perception and depth as separate systems, the OAK-D combines stereo vision, on-device compute, and the DepthAI software stack into one edge camera platform. For Black Scarab, that makes it one of the clearest examples of spatial AI at the sensor level.",
+        ],
+      },
+      {
+        heading: "The Hardware: Processing on the Edge",
+        paragraphs: [
+          "At the hardware level, the OAK-D is designed to handle both vision processing and depth estimation on the device rather than pushing raw workloads back onto the host system. Luxonis' current OAK-D documentation centers on the RVC2 architecture, which gives the camera local AI and vision-processing capability while keeping the host system comparatively light.",
+          "The sensor array includes a central color camera and two synchronized monochrome global-shutter cameras used for stereo depth. The device can then output processed depth, detections, and spatial coordinates to a Raspberry Pi, embedded controller, or laptop without forcing the host CPU or GPU to do all the heavy lifting.",
+          "That is one of the real advantages of the OAK-D. In practical deployments, the camera is not just a data source. It becomes a compact perception node that can deliver higher-level spatial information to the rest of the system.",
+        ],
+      },
+      {
+        heading: "The Tech Stack: Demystifying Stereo Vision",
+        paragraphs: [
+          "To understand why the OAK-D is different from a normal AI camera, you have to understand stereo depth. Two cameras with a known baseline observe the same scene from slightly different positions. The system rectifies the images, computes disparity, and then triangulates the result into real-world depth values.",
+          "Luxonis exposes this through DepthAI, which gives developers a way to work with stereo depth, RGB-depth alignment, object tracking, and higher-level spatial pipelines without having to build the entire stack from scratch.",
+          "This matters because spatial AI is more than just generating a depth map. With nodes such as StereoDepth and SpatialDetectionNetwork, the OAK-D can combine object detection with depth so the system does not merely detect a person or object. It can estimate where that object sits in 3D space and output practical X, Y, and Z information.",
+          "That is the shift from flat vision to spatial perception. Instead of asking whether an object exists in frame, the system can ask where it is, how far away it is, and whether it is entering a hazardous or commercially meaningful zone.",
+        ],
+      },
+      {
+        heading: "Industrial Application: Construction Site Safety and Virtual Fencing",
+        paragraphs: [
+          "Heavy industrial environments and construction sites are inherently dangerous, especially when large moving equipment and human workers share the same space. Traditional safety cameras can record incidents or trigger generic alarms, but they often lack the spatial understanding needed to judge whether a situation is actually becoming dangerous.",
+          "The OAK-D changes that by enabling virtual fencing backed by real depth information. A system can detect a worker, estimate the distance between that worker and a machine, and continuously monitor whether the worker is stationary, moving away, or stepping into a high-risk zone.",
+          "In practice, that means the camera can support a multi-step safety loop: detect people and equipment, calculate depth, evaluate boundary conditions, and trigger alerts or control actions when a worker breaches a defined safety perimeter. Because the spatial pipeline runs at the edge, response times stay far lower than a cloud-based video workflow would allow.",
+          "For Black Scarab, this is where the OAK-D becomes more than a camera. It becomes a localized spatial sensor that can feed real operational logic into a physical safety system.",
+        ],
+      },
+      {
+        heading: "Commercial Application: Retail Analytics",
+        paragraphs: [
+          "The same spatial intelligence that improves job-site safety can also improve how stores understand movement, dwell, and shelf interaction inside physical retail environments.",
+          "A conventional video analytics stack can tell you that people were present in a scene. A spatial camera can go further. It can help estimate where shoppers stand relative to fixtures, how long they remain in a zone, whether they move toward a display, and whether an interaction likely involved actual product contact rather than simple visual attention.",
+          "That makes the OAK-D useful for tasks such as zone-based traffic flow, dwell-time analysis, fixture engagement, and shelf monitoring. When combined with depth-aware tracking, it becomes easier to distinguish a shopper passing by from a shopper physically interacting with an item or self-checkout area.",
+          "The edge-processing model also matters commercially. Instead of streaming full-resolution video everywhere, the system can reduce more of the workflow to metadata, detections, and coordinates at the device level, which can help with both bandwidth efficiency and privacy-sensitive deployment design.",
+        ],
+      },
+      {
+        heading: "Financial Viability: Cost Efficiency Analysis",
+        paragraphs: [
+          "Integrating stereo depth and on-device AI into one camera chassis can simplify deployment compared with architectures that separate the camera, depth subsystem, and host inference node.",
+          "In some deployments, the OAK-D reduces the need for a heavier edge compute box at every sensing point because part of the perception workload is already being handled inside the camera. That does not mean the rest of the system disappears, but it can reduce host requirements and simplify distributed rollouts.",
+          "There is also a network-level advantage. Instead of sending every raw stream upstream for analysis, an OAK-D-based system can push more processed outputs such as detections, tracks, disparity-derived depth, and spatial events. That cuts bandwidth pressure and makes the architecture more attractive in environments where real-time decisions matter more than continuous raw-video transport.",
+        ],
+      },
+      {
+        heading: "Conclusion",
+        paragraphs: [
+          "The Luxonis OAK-D represents a meaningful shift in how edge hardware interacts with the physical world. By combining stereo depth, spatial AI, and on-device processing in one compact platform, it moves intelligence closer to the sensor and reduces the historical tradeoff between latency, cost, and system complexity.",
+          "That is why the OAK-D still matters in 2026. Whether the goal is construction-site safety, robotics perception, or retail analytics, the platform shows what happens when a camera stops being just an image source and starts behaving like an independent spatial processor.",
+        ],
+      },
+      {
+        heading: "Sourcing & Verification",
+        paragraphs: [
+          "This guide was compiled using Luxonis' official OAK-D hardware documentation together with DepthAI's official StereoDepth and SpatialDetectionNetwork documentation, with emphasis on stereo depth, spatial AI pipelines, and on-device edge computer vision.",
+        ],
+      },
+    ],
+    sources: [
+      "Luxonis OAK-D official documentation",
+      "DepthAI StereoDepth official documentation",
+      "DepthAI SpatialDetectionNetwork official documentation",
+    ],
+    sourceLinks: [
+      {
+        label: "Luxonis OAK-D",
+        url: "https://docs.luxonis.com/hardware/products/OAK-D",
+      },
+      {
+        label: "DepthAI StereoDepth",
+        url: "https://docs.luxonis.com/software-v3/depthai/depthai-components/nodes/stereo_depth/",
+      },
+      {
+        label: "DepthAI SpatialDetectionNetwork",
+        url: "https://docs.luxonis.com/software-v3/depthai/depthai-components/nodes/spatial_detection_network/",
+      },
+    ],
   }
 ];
 
