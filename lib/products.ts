@@ -1,12 +1,18 @@
 export type ProductCategory =
-  | "Compute"
-  | "Vision"
+  | "CPUs"
+  | "GPUs & Accelerators"
+  | "Edge Computers"
+  | "Boards & Microcontrollers"
+  | "Cameras & Vision"
   | "Sensors"
-  | "Connectivity"
+  | "Networking & Connectivity"
+  | "Storage & Memory"
+  | "Power & Enclosures"
   | "Drones"
   | "Robotics"
-  | "Local AI Systems"
-  | "Software";
+  | "AI Models"
+  | "Software & Runtimes"
+  | "Solution Kits";
 export type ProductIndustry =
   | "Agriculture"
   | "Manufacturing"
@@ -50,7 +56,7 @@ export const products: ProductData[] = [
   {
     slug: "nvidia-jetson-orin-nx",
     name: "NVIDIA Jetson Orin NX",
-    category: "Compute",
+    category: "Edge Computers",
     industries: ["Agriculture", "Manufacturing", "Retail"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Indoor", "Mobile", "Industrial"],
@@ -83,7 +89,7 @@ export const products: ProductData[] = [
   {
     slug: "nvidia-jetson-agx-orin",
     name: "NVIDIA Jetson AGX Orin",
-    category: "Compute",
+    category: "Edge Computers",
     industries: ["Manufacturing", "Transportation & Logistics", "Healthcare"],
     powerProfile: "Medium (25–200W)",
     deploymentTypes: ["Indoor", "Industrial", "Mobile"],
@@ -116,7 +122,7 @@ export const products: ProductData[] = [
   {
     slug: "dell-edge-gateway-5200",
     name: "Dell Edge Gateway 5200",
-    category: "Compute",
+    category: "Edge Computers",
     industries: ["Transportation & Logistics", "Manufacturing", "Retail"],
     powerProfile: "Medium (25–200W)",
     deploymentTypes: ["Indoor", "Industrial"],
@@ -149,7 +155,7 @@ export const products: ProductData[] = [
   {
     slug: "intel-realsense-d455",
     name: "Intel RealSense D455",
-    category: "Vision",
+    category: "Cameras & Vision",
     industries: ["Manufacturing", "Retail", "Healthcare"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Indoor", "Mobile", "Industrial"],
@@ -182,7 +188,7 @@ export const products: ProductData[] = [
   {
     slug: "basler-ace-camera",
     name: "Basler ace Camera",
-    category: "Vision",
+    category: "Cameras & Vision",
     industries: ["Manufacturing", "Healthcare", "Retail"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Indoor", "Industrial"],
@@ -214,7 +220,7 @@ export const products: ProductData[] = [
   {
     slug: "flir-boson-thermal",
     name: "FLIR Boson Thermal",
-    category: "Vision",
+    category: "Cameras & Vision",
     industries: ["Agriculture", "Healthcare", "Transportation & Logistics"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Outdoor", "Mobile", "Industrial"],
@@ -310,7 +316,7 @@ export const products: ProductData[] = [
   {
     slug: "starlink-terminal",
     name: "Starlink Terminal",
-    category: "Connectivity",
+    category: "Networking & Connectivity",
     industries: ["Agriculture", "Transportation & Logistics", "Other"],
     powerProfile: "Medium (25–200W)",
     deploymentTypes: ["Outdoor", "Mobile"],
@@ -343,7 +349,7 @@ export const products: ProductData[] = [
   {
     slug: "cradlepoint-5g-router",
     name: "Cradlepoint 5G Router",
-    category: "Connectivity",
+    category: "Networking & Connectivity",
     industries: ["Transportation & Logistics", "Retail", "Healthcare"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Indoor", "Mobile", "Industrial"],
@@ -439,77 +445,125 @@ export const products: ProductData[] = [
 ];
 
 export const productCategories: ProductCategory[] = [
-  "Compute",
-  "Vision",
+  "CPUs",
+  "GPUs & Accelerators",
+  "Edge Computers",
+  "Boards & Microcontrollers",
+  "Cameras & Vision",
   "Sensors",
-  "Connectivity",
+  "Networking & Connectivity",
+  "Storage & Memory",
+  "Power & Enclosures",
   "Drones",
   "Robotics",
-  "Local AI Systems",
-  "Software",
+  "AI Models",
+  "Software & Runtimes",
+  "Solution Kits",
 ];
 
 export const productCategoryGuides: {
   category: ProductCategory;
   description: string;
   examples: string[];
-  status: "Seeded" | "Expansion area";
+  commercePath: string;
 }[] = [
   {
-    category: "Compute",
+    category: "CPUs",
     description:
-      "Edge computers, embedded GPU modules, industrial gateways, and local inference workstations.",
-    examples: ["NVIDIA Jetson", "industrial gateways", "local AI workstations"],
-    status: "Seeded",
+      "Host processors for workstations, servers, industrial PCs, and local inference boxes.",
+    examples: ["Ryzen", "Xeon", "EPYC"],
+    commercePath: "Component sales and workstation BOMs",
   },
   {
-    category: "Vision",
+    category: "GPUs & Accelerators",
     description:
-      "RGB, depth, thermal, stereo, and industrial camera systems for physical-world perception.",
+      "Discrete GPUs, embedded accelerators, NPUs, TPUs, DPUs, and cards that move AI workloads.",
+    examples: ["RTX", "Edge TPU", "BlueField"],
+    commercePath: "High-ticket affiliate and integration margin",
+  },
+  {
+    category: "Edge Computers",
+    description:
+      "Ready compute boxes, embedded modules, and gateways that sit near machines, cameras, and sensors.",
+    examples: ["Jetson", "industrial gateways", "rugged PCs"],
+    commercePath: "Core architecture component",
+  },
+  {
+    category: "Boards & Microcontrollers",
+    description:
+      "Microcontrollers, single-board computers, and prototyping boards for small edge AI and control loops.",
+    examples: ["Arduino", "Raspberry Pi", "ESP32"],
+    commercePath: "Low-cost parts volume and starter kits",
+  },
+  {
+    category: "Cameras & Vision",
+    description:
+      "RGB, depth, stereo, thermal, event, and industrial camera systems for physical-world perception.",
     examples: ["depth cameras", "machine vision cameras", "thermal modules"],
-    status: "Seeded",
+    commercePath: "Use-case specific sensing layer",
   },
   {
     category: "Sensors",
     description:
-      "Environmental, soil, motion, telemetry, and context sensors that support edge AI decisions.",
-    examples: ["soil probes", "air-quality sensors", "condition telemetry"],
-    status: "Seeded",
+      "Environmental, soil, motion, vibration, LiDAR, and telemetry devices that make AI context-aware.",
+    examples: ["soil probes", "LiDAR", "air-quality sensors"],
+    commercePath: "Tiny parts, large solution leverage",
   },
   {
-    category: "Connectivity",
+    category: "Networking & Connectivity",
     description:
-      "5G, satellite, branch networking, and backhaul products that keep distributed systems reachable.",
-    examples: ["5G routers", "satellite terminals", "edge gateways"],
-    status: "Seeded",
+      "Ethernet, 5G, satellite, Wi-Fi, InfiniBand, DPUs, switches, and backhaul infrastructure.",
+    examples: ["5G routers", "InfiniBand", "Starlink"],
+    commercePath: "Multi-category infrastructure layer",
+  },
+  {
+    category: "Storage & Memory",
+    description:
+      "NVMe drives, NAS systems, ECC memory, and model storage components for local AI deployments.",
+    examples: ["NVMe", "NAS", "ECC RAM"],
+    commercePath: "Attachment sales for every compute build",
+  },
+  {
+    category: "Power & Enclosures",
+    description:
+      "Power supplies, DIN rail hardware, cooling, cases, mounts, and environmental protection.",
+    examples: ["PSUs", "fans", "rugged cases"],
+    commercePath: "Small parts that complete real deployments",
   },
   {
     category: "Drones",
     description:
       "Aerial sensing and execution platforms for agriculture, inspection, logistics, and field operations.",
     examples: ["multispectral drones", "spraying drones", "inspection drones"],
-    status: "Seeded",
+    commercePath: "High-value vertical solution layer",
   },
   {
     category: "Robotics",
     description:
       "Autonomous mobile robots, robotic arms, quadrupeds, warehouse robots, and field robotics platforms.",
     examples: ["AMRs", "robot arms", "quadrupeds"],
-    status: "Expansion area",
+    commercePath: "Future high-ticket comparison category",
   },
   {
-    category: "Local AI Systems",
+    category: "AI Models",
     description:
-      "Ready-to-run local inference boxes, GPU workstations, NAS-backed AI systems, and private AI appliances.",
-    examples: ["RTX workstations", "Mac Studio setups", "DGX Spark-class boxes"],
-    status: "Expansion area",
+      "Open-weight and commercial models that determine what the hardware stack must support.",
+    examples: ["Llama", "Qwen", "DeepSeek"],
+    commercePath: "Decision layer for hardware fit",
   },
   {
-    category: "Software",
+    category: "Software & Runtimes",
     description:
       "Runtimes, model serving layers, retrieval systems, orchestration tools, and deployment software.",
     examples: ["Ollama", "Open WebUI", "vLLM"],
-    status: "Expansion area",
+    commercePath: "Implementation pathway and managed setup",
+  },
+  {
+    category: "Solution Kits",
+    description:
+      "Use-case bundles that combine components into deployable bills of materials.",
+    examples: ["inspection kit", "local AI kit", "retail vision kit"],
+    commercePath: "Bundled margin and checkout path",
   },
 ];
 

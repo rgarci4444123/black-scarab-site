@@ -1,5 +1,6 @@
 import SiteHeader from "@/components/site-header";
 import CatalogClient from "@/components/catalog-client";
+import { catalogRoadmapItems } from "@/lib/catalog-roadmap";
 import { products } from "@/lib/products";
 
 export default function CatalogPage() {
@@ -22,23 +23,23 @@ export default function CatalogPage() {
             Product Catalog
           </p>
           <h1 className="mx-auto mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:text-5xl">
-            The decision layer for edge AI infrastructure
+            The bill-of-materials catalog for edge AI systems
           </h1>
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-[#6b7280]">
-            Explore the compute, cameras, sensors, connectivity, drones,
-            robotics, local AI systems, and software layers that become the
-            ingredients for practical edge AI deployments.
+            Explore the CPUs, GPUs, accelerators, cameras, sensors, networking,
+            models, robotics, drones, software, power, storage, and kits needed
+            to build practical edge AI deployments.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <div className="rounded-full border border-[#ddd7cc] bg-white px-4 py-2 text-sm font-medium text-[#111827]">
-              {products.length} seeded products
+              {products.length} detailed product pages
             </div>
             <div className="rounded-full border border-[#ddd7cc] bg-white px-4 py-2 text-sm font-medium text-[#111827]">
-              8 architecture categories
+              {catalogRoadmapItems.length} starter catalog targets
             </div>
             <div className="rounded-full border border-[#ddd7cc] bg-white px-4 py-2 text-sm font-medium text-[#111827]">
-              Industry-based evaluation
+              Component-to-solution evaluation
             </div>
           </div>
         </section>
