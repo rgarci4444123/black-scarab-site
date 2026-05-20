@@ -10,7 +10,6 @@ export default function CatalogPage() {
           homeHref="/"
           navLinks={[
             { label: "Products", href: "/catalog", isPage: true },
-            { label: "Models", href: "/models", isPage: true },
             { label: "Insights", href: "/insights", isPage: true },
             { label: "About", href: "/about", isPage: true },
           ]}
@@ -26,9 +25,9 @@ export default function CatalogPage() {
             The decision layer for edge AI infrastructure
           </h1>
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-[#6b7280]">
-            Explore the hardware, vision systems, sensors, and connectivity
-            layers that shape practical edge AI deployments across real-world
-            industries.
+            Explore the compute, cameras, sensors, connectivity, drones,
+            robotics, local AI systems, and software layers that become the
+            ingredients for practical edge AI deployments.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -36,7 +35,7 @@ export default function CatalogPage() {
               {products.length} seeded products
             </div>
             <div className="rounded-full border border-[#ddd7cc] bg-white px-4 py-2 text-sm font-medium text-[#111827]">
-              5 infrastructure categories
+              8 architecture categories
             </div>
             <div className="rounded-full border border-[#ddd7cc] bg-white px-4 py-2 text-sm font-medium text-[#111827]">
               Industry-based evaluation

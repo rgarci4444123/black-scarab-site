@@ -64,7 +64,7 @@ export const industries: IndustryData[] = [
       {
         title: "DJI Mavic 3M",
         description: "Multispectral aerial intelligence for crop monitoring and field analysis.",
-        detail: "Aerial",
+        detail: "Drones",
         href: "/catalog/dji-mavic-3m",
       },
       {

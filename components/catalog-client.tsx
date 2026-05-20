@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import {
   products,
+  productCategoryGuides,
   productCategories,
   productIndustries,
   type ProductCategory,
@@ -27,6 +28,26 @@ export default function CatalogClient() {
       return categoryMatch && industryMatch;
     });
   }, [activeCategory, activeIndustry]);
+  const productCountByCategory = useMemo(() => {
+    return productCategories.reduce<Record<ProductCategory, number>>(
+      (counts, category) => {
+        counts[category] = products.filter(
+          (product) => product.category === category,
+        ).length;
+        return counts;
+      },
+      {
+        Compute: 0,
+        Vision: 0,
+        Sensors: 0,
+        Connectivity: 0,
+        Drones: 0,
+        Robotics: 0,
+        "Local AI Systems": 0,
+        Software: 0,
+      },
+    );
+  }, []);
 
   const pillClass = (active: boolean) =>
     active
@@ -36,6 +57,54 @@ export default function CatalogClient() {
   return (
     <>
       <section className="border-t border-[#efeae1] px-6 py-8 md:px-10">
+        <div className="mb-10">
+          <div className="flex flex-col gap-4 text-center md:flex-row md:items-end md:justify-between md:text-left">
+            <div>
+              <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
+                Architecture Catalog
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight">
+                Product categories are the building blocks
+              </h2>
+            </div>
+            <p className="max-w-2xl text-sm leading-6 text-[#6b7280]">
+              Black Scarab treats products as system ingredients: compute,
+              cameras, sensors, connectivity, drones, robots, local AI boxes,
+              and software layers that can be combined into deployable
+              solutions.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {productCategoryGuides.map((guide) => (
+              <button
+                key={guide.category}
+                type="button"
+                onClick={() => setActiveCategory(guide.category)}
+                className="rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-5 text-left shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(15,23,42,0.08)]"
+              >
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="rounded-full bg-[#f4f1ea] px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">
+                    {guide.status}
+                  </span>
+                  <span className="rounded-full border border-[#e3ddd1] px-3 py-1 text-xs font-medium text-[#111827]">
+                    {productCountByCategory[guide.category]} listed
+                  </span>
+                </div>
+                <h3 className="mt-4 text-xl font-semibold tracking-tight">
+                  {guide.category}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-[#6b7280]">
+                  {guide.description}
+                </p>
+                <p className="mt-4 text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">
+                  {guide.examples.join(" · ")}
+                </p>
+              </button>
+            ))}
+          </div>
+        </div>
+
         <div className="grid gap-8 lg:grid-cols-3">
           <div>
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">

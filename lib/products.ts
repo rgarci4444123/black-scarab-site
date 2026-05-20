@@ -3,7 +3,10 @@ export type ProductCategory =
   | "Vision"
   | "Sensors"
   | "Connectivity"
-  | "Aerial";
+  | "Drones"
+  | "Robotics"
+  | "Local AI Systems"
+  | "Software";
 export type ProductIndustry =
   | "Agriculture"
   | "Manufacturing"
@@ -372,7 +375,7 @@ export const products: ProductData[] = [
   {
     slug: "dji-mavic-3m",
     name: "DJI Mavic 3M",
-    category: "Aerial",
+    category: "Drones",
     industries: ["Agriculture", "Other"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Outdoor", "Mobile"],
@@ -404,7 +407,7 @@ export const products: ProductData[] = [
   {
     slug: "dji-agras-t50",
     name: "DJI Agras T50",
-    category: "Aerial",
+    category: "Drones",
     industries: ["Agriculture", "Other"],
     powerProfile: "High (200W+)",
     deploymentTypes: ["Outdoor", "Mobile"],
@@ -440,7 +443,74 @@ export const productCategories: ProductCategory[] = [
   "Vision",
   "Sensors",
   "Connectivity",
-  "Aerial",
+  "Drones",
+  "Robotics",
+  "Local AI Systems",
+  "Software",
+];
+
+export const productCategoryGuides: {
+  category: ProductCategory;
+  description: string;
+  examples: string[];
+  status: "Seeded" | "Expansion area";
+}[] = [
+  {
+    category: "Compute",
+    description:
+      "Edge computers, embedded GPU modules, industrial gateways, and local inference workstations.",
+    examples: ["NVIDIA Jetson", "industrial gateways", "local AI workstations"],
+    status: "Seeded",
+  },
+  {
+    category: "Vision",
+    description:
+      "RGB, depth, thermal, stereo, and industrial camera systems for physical-world perception.",
+    examples: ["depth cameras", "machine vision cameras", "thermal modules"],
+    status: "Seeded",
+  },
+  {
+    category: "Sensors",
+    description:
+      "Environmental, soil, motion, telemetry, and context sensors that support edge AI decisions.",
+    examples: ["soil probes", "air-quality sensors", "condition telemetry"],
+    status: "Seeded",
+  },
+  {
+    category: "Connectivity",
+    description:
+      "5G, satellite, branch networking, and backhaul products that keep distributed systems reachable.",
+    examples: ["5G routers", "satellite terminals", "edge gateways"],
+    status: "Seeded",
+  },
+  {
+    category: "Drones",
+    description:
+      "Aerial sensing and execution platforms for agriculture, inspection, logistics, and field operations.",
+    examples: ["multispectral drones", "spraying drones", "inspection drones"],
+    status: "Seeded",
+  },
+  {
+    category: "Robotics",
+    description:
+      "Autonomous mobile robots, robotic arms, quadrupeds, warehouse robots, and field robotics platforms.",
+    examples: ["AMRs", "robot arms", "quadrupeds"],
+    status: "Expansion area",
+  },
+  {
+    category: "Local AI Systems",
+    description:
+      "Ready-to-run local inference boxes, GPU workstations, NAS-backed AI systems, and private AI appliances.",
+    examples: ["RTX workstations", "Mac Studio setups", "DGX Spark-class boxes"],
+    status: "Expansion area",
+  },
+  {
+    category: "Software",
+    description:
+      "Runtimes, model serving layers, retrieval systems, orchestration tools, and deployment software.",
+    examples: ["Ollama", "Open WebUI", "vLLM"],
+    status: "Expansion area",
+  },
 ];
 
 export const productIndustries: ProductIndustry[] = [

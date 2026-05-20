@@ -43,7 +43,6 @@ export default async function IndustryPage({ params }: Props) {
           homeHref="/"
           navLinks={[
             { label: "Products", href: "/catalog", isPage: true },
-            { label: "Models", href: "/models", isPage: true },
             { label: "Insights", href: "/insights", isPage: true },
             { label: "About", href: "/about", isPage: true },
           ]}
