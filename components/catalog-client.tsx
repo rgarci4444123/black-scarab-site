@@ -86,17 +86,16 @@ export default function CatalogClient() {
           <div className="flex flex-col gap-4 text-center md:flex-row md:items-end md:justify-between md:text-left">
             <div>
               <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-                Architecture Catalog
+                Deployment Map
               </p>
               <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-                Start with the bill of materials
+                Choose the right layer of the stack
               </h2>
             </div>
             <p className="max-w-2xl text-sm leading-6 text-[#6b7280]">
-              Products here means every ingredient required to build: CPUs,
-              GPUs, DPUs, cameras, sensors, networking, models, software,
-              robots, drones, power supplies, enclosures, and finished solution
-              kits.
+              Browse products by the role they play in a real deployment:
+              perception, compute, connectivity, model runtime, robotics,
+              power, storage, and complete solution kits.
             </p>
           </div>
 

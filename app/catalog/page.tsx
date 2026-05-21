@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SiteHeader from "@/components/site-header";
 import CatalogClient from "@/components/catalog-client";
 import { catalogRoadmapItems } from "@/lib/catalog-roadmap";
@@ -20,15 +21,15 @@ export default function CatalogPage() {
 
         <section className="border-b border-[#efeae1] bg-[#faf8f3] px-6 py-14 text-center md:px-10 md:py-18">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-            Product Catalog
+            Product Intelligence
           </p>
           <h1 className="mx-auto mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:text-5xl">
-            The bill-of-materials catalog for edge AI systems
+            Edge AI products worth building around
           </h1>
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-[#6b7280]">
-            Explore the CPUs, GPUs, accelerators, cameras, sensors, networking,
-            models, robotics, drones, software, power, storage, and kits needed
-            to build practical edge AI deployments.
+            Compare the compute platforms, sensors, cameras, robotics,
+            networking, software, and deployment kits that turn edge AI ideas
+            into systems ready for the physical world.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -41,6 +42,21 @@ export default function CatalogPage() {
             <div className="rounded-full border border-[#ddd7cc] bg-white px-4 py-2 text-sm font-medium text-[#111827]">
               Component-to-solution evaluation
             </div>
+          </div>
+
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <Link
+              href="/models"
+              className="inline-flex rounded-full border border-[#111827] bg-white px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#111827] hover:text-white"
+            >
+              Explore Model Layer
+            </Link>
+            <Link
+              href="/intake"
+              className="inline-flex rounded-full bg-[#111827] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
+            >
+              Design My System
+            </Link>
           </div>
         </section>
 
