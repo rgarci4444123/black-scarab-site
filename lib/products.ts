@@ -65,6 +65,240 @@ export type ProductData = {
 
 export const products: ProductData[] = [
   {
+    slug: "amd-ryzen-9-9950x",
+    name: "AMD Ryzen 9 9950X",
+    vendor: "AMD",
+    category: "CPUs",
+    industries: ["Manufacturing", "Retail", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor"],
+    price: "Price to verify",
+    priceStatus: "Research needed",
+    priceNote:
+      "AMD lists retailer and AMD.com purchase paths, but current pricing should be verified from the selected checkout source before publishing as exact.",
+    image: "/product-images/amd-ryzen-9-9950x.jpg",
+    imageAlt: "AMD Ryzen 9 9950X processor retail box",
+    summary:
+      "A 16-core Zen 5 desktop processor for local AI workstations, creator PCs, and high-performance CPU-heavy edge development systems.",
+    whyItMatters:
+      "Local AI builds often need strong host compute around the GPU or accelerator layer. The Ryzen 9 9950X gives builders a high-end AM5 CPU foundation for data prep, orchestration, multitasking, and workstation-class experimentation.",
+    specs: [
+      { label: "CPU Cores / Threads", value: "16 cores / 32 threads" },
+      { label: "Boost / Base Clock", value: "Up to 5.7 GHz / 4.3 GHz" },
+      { label: "Platform", value: "AM5, DDR5, PCIe 5.0, 170W TDP" },
+    ],
+    bestFor: [
+      "Local AI workstation builds",
+      "CPU-heavy data preparation",
+      "High-performance AM5 desktop systems",
+    ],
+    usedIn: [
+      "Private AI lab workstations",
+      "Creator and engineering desktops",
+      "GPU-backed local inference setups",
+    ],
+    blackScarabPov:
+      "This is not the AI accelerator by itself, but it is a strong host CPU for serious local AI boxes. Pair it with enough DDR5 memory, fast NVMe storage, a capable GPU, and cooling that can handle sustained workstation loads.",
+    officialUrl:
+      "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "intel-core-ultra-9-285k",
+    name: "Intel Core Ultra 9 285K",
+    vendor: "Intel",
+    category: "CPUs",
+    industries: ["Manufacturing", "Retail", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor"],
+    price: "$589.00-$599.00",
+    priceStatus: "Starts at",
+    priceNote:
+      "Intel recommended customer price range from the official specifications page. Retail checkout pricing can vary by seller, region, and promotion.",
+    image: "/product-images/intel-core-ultra-9-285k.png",
+    imageAlt: "Intel Core Ultra 9 product badge",
+    summary:
+      "A flagship Intel desktop processor with CPU, GPU, and NPU AI acceleration for high-performance local AI PCs, workstations, and development systems.",
+    whyItMatters:
+      "The Core Ultra 9 285K is useful for local AI builds where the CPU, integrated graphics, and NPU can share lightweight AI, media, and development tasks while a discrete GPU handles larger inference workloads.",
+    specs: [
+      { label: "CPU Cores / Threads", value: "24 cores / 24 threads" },
+      { label: "AI / Max Turbo", value: "36 platform TOPS / up to 5.7 GHz" },
+      { label: "Platform", value: "FCLGA1851, DDR5-6400, 125W base / 250W turbo" },
+    ],
+    bestFor: [
+      "Local AI desktop builds",
+      "OpenVINO development workflows",
+      "High-performance creator and workstation PCs",
+    ],
+    usedIn: [
+      "AI-enabled desktop workstations",
+      "Edge prototype development PCs",
+      "Media and computer vision development systems",
+    ],
+    blackScarabPov:
+      "This is a strong desktop host option when Intel platform features, OpenVINO, and onboard NPU acceleration matter. For heavier local inference, it still wants to sit beside a serious discrete GPU or accelerator.",
+    officialUrl:
+      "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "intel-xeon-w9-3595x",
+    name: "Intel Xeon W9-3595X",
+    vendor: "Intel",
+    category: "CPUs",
+    industries: ["Manufacturing", "Healthcare", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor", "Industrial"],
+    price: "$6,478",
+    priceStatus: "Exact",
+    priceNote:
+      "Intel recommended customer price from the official specifications page. Final workstation pricing depends on reseller, motherboard, memory, cooling, and system integration.",
+    image: "/product-images/intel-xeon-w9-3595x.png",
+    imageAlt: "Intel Xeon W9 product badge",
+    summary:
+      "A 60-core Intel Xeon W workstation processor for professional AI development, simulation, rendering, and high-memory desktop infrastructure.",
+    whyItMatters:
+      "The Xeon W9-3595X gives workstation builders a high-core Intel platform with ECC memory support, wide PCIe capacity, AVX-512, AMX, and DL Boost for CPU-side AI and professional compute workloads.",
+    specs: [
+      { label: "CPU Cores / Threads", value: "60 cores / 120 threads" },
+      { label: "Max Turbo / Cache", value: "Up to 4.8 GHz / 112.5MB cache" },
+      { label: "Platform", value: "FCLGA4677, 8-channel DDR5, 112 PCIe 5.0 lanes" },
+    ],
+    bestFor: [
+      "Professional AI workstations",
+      "High-memory workstation builds",
+      "Simulation, rendering, and engineering workloads",
+    ],
+    usedIn: [
+      "Enterprise workstation deployments",
+      "CPU-heavy AI development environments",
+      "Multi-GPU professional desktops",
+    ],
+    blackScarabPov:
+      "This sits in the serious workstation tier. It is most compelling when the buyer needs Intel platform manageability, ECC memory capacity, AMX/AVX-512 support, and enough PCIe lanes for accelerator-heavy builds.",
+    officialUrl:
+      "https://www.intel.com/content/www/us/en/products/sku/240482/intel-xeon-w93595x-processor-112-5m-cache-2-00-ghz/specifications.html",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "amd-threadripper-pro-7995wx",
+    name: "AMD Threadripper PRO 7995WX",
+    vendor: "AMD",
+    category: "CPUs",
+    industries: ["Manufacturing", "Healthcare", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor"],
+    price: "$8,787.99",
+    priceStatus: "Distributor listing",
+    priceNote:
+      "Amazon listing price from the provided product page. Workstation CPU pricing can move quickly, so verify before using in a final basket.",
+    image: "/product-images/amd-threadripper-pro-7995wx.png",
+    imageAlt: "AMD Threadripper PRO processor close-up",
+    summary:
+      "A 96-core workstation processor for extreme multithreaded workloads, high-end local AI workstations, simulation, rendering, and data-heavy development systems.",
+    whyItMatters:
+      "Some AI infrastructure builds are limited by more than GPU throughput. The Threadripper PRO 7995WX gives workstation builders a massive CPU platform for data preparation, parallel processing, multi-GPU host duties, and professional workloads that need huge I/O capacity.",
+    specs: [
+      { label: "CPU Cores / Threads", value: "96 cores / 192 threads" },
+      { label: "Max Boost / Cache", value: "Up to 5.1 GHz / 320MB cache" },
+      { label: "Platform", value: "WRX90, eight-channel DDR5 RDIMM, 350W TDP" },
+    ],
+    bestFor: [
+      "Extreme local AI workstations",
+      "CPU-heavy simulation and rendering",
+      "Multi-GPU professional desktop builds",
+    ],
+    usedIn: [
+      "Research and engineering workstations",
+      "High-end private AI labs",
+      "Professional content and simulation pipelines",
+    ],
+    blackScarabPov:
+      "This is a specialist part, not a default local AI CPU. It belongs in serious workstation baskets where CPU parallelism, memory capacity, and PCIe bandwidth justify the platform cost.",
+    officialUrl:
+      "https://www.amazon.com/AMD-RyzenTM-ThreadripperTM-PRO-7995WX/dp/B0CK2ZQJZ6",
+    sourceLabel: "Distributor listing",
+  },
+  {
+    slug: "amd-epyc-9654",
+    name: "AMD EPYC 9654",
+    vendor: "AMD",
+    category: "CPUs",
+    industries: ["Manufacturing", "Healthcare", "Transportation & Logistics"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor", "Industrial"],
+    price: "$8,452",
+    priceStatus: "Exact",
+    priceNote:
+      "AMD official 1kU pricing from the EPYC 9654 product page. Actual server build pricing depends on channel, motherboard, memory, chassis, and support contract.",
+    image: "/product-images/amd-epyc-9654.png",
+    imageAlt: "AMD EPYC logo on a dark background",
+    summary:
+      "A 96-core EPYC 9004 Series server processor for dense infrastructure, private AI servers, virtualization, and data-heavy enterprise workloads.",
+    whyItMatters:
+      "AI infrastructure does not stop at GPUs. EPYC 9654 gives server builders high CPU parallelism, large memory bandwidth, and PCIe capacity for systems that host accelerators, storage, networking, and many simultaneous workloads.",
+    specs: [
+      { label: "CPU Cores / Threads", value: "96 cores / 192 threads" },
+      { label: "Boost / Cache", value: "Up to 3.7 GHz / 384MB L3 cache" },
+      { label: "Platform", value: "SP5, PCIe 5.0 x128, 12-channel DDR5, 360W TDP" },
+    ],
+    bestFor: [
+      "Private AI server infrastructure",
+      "Virtualization and multi-tenant workloads",
+      "Data-heavy enterprise compute nodes",
+    ],
+    usedIn: [
+      "On-prem AI infrastructure",
+      "Enterprise data processing clusters",
+      "GPU server host platforms",
+    ],
+    blackScarabPov:
+      "This is a server foundation piece for serious infrastructure baskets. It makes sense when the build needs memory bandwidth, PCIe lanes, and reliability around accelerators rather than a desktop-style local AI box.",
+    officialUrl:
+      "https://www.amd.com/en/products/processors/server/epyc/4th-generation-9004-and-8004-series/amd-epyc-9654.html",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "ampere-altra-max-m128-30",
+    name: "Ampere Altra Max M128-30",
+    vendor: "Ampere",
+    category: "CPUs",
+    industries: ["Manufacturing", "Transportation & Logistics", "Other"],
+    powerProfile: "Medium (25–200W)",
+    deploymentTypes: ["Indoor", "Industrial"],
+    price: "Request quote",
+    priceStatus: "Quote required",
+    priceNote:
+      "Ampere routes purchasing through sales and platform partners. Pricing depends on processor channel, server platform, memory, storage, and integration path.",
+    image: "/product-images/ampere-altra-max-m128-30.png",
+    imageAlt: "Ampere Altra Max processor package",
+    summary:
+      "A 128-core Arm server processor built for cloud-native, power-efficient infrastructure, edge compute installations, and dense multi-tenant workloads.",
+    whyItMatters:
+      "The Altra Max M128-30 gives infrastructure builders a high-core-count Arm option for predictable single-threaded cores, strong performance per watt, and dense server deployments where power and rack efficiency matter.",
+    specs: [
+      { label: "CPU Cores / Frequency", value: "128 cores / sustained 3.0 GHz" },
+      { label: "Power / ISA", value: "183W usage power / Armv8.2+" },
+      { label: "Platform", value: "8-channel DDR4-3200 ECC, up to 4TB, 128 PCIe Gen4 lanes" },
+    ],
+    bestFor: [
+      "Cloud-native infrastructure",
+      "Power-efficient server clusters",
+      "Arm-based edge compute platforms",
+    ],
+    usedIn: [
+      "Dense private infrastructure",
+      "Edge data center nodes",
+      "Scale-out cloud-native services",
+    ],
+    blackScarabPov:
+      "This is a useful counterweight to x86 server CPUs in the catalog. It belongs in baskets where Arm compatibility, predictable cores, and performance per watt matter more than maximum single-socket x86 ecosystem familiarity.",
+    officialUrl:
+      "https://amperecomputing.com/briefs/ampere-altra-family-product-brief",
+    sourceLabel: "Official product brief",
+  },
+  {
     slug: "nvidia-jetson-orin-nx",
     name: "NVIDIA Jetson Orin NX",
     vendor: "NVIDIA / Seeed Studio",
