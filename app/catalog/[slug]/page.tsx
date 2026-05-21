@@ -69,6 +69,28 @@ export default async function ProductPage({ params }: Props) {
                 {product.summary}
               </p>
 
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                <div className="rounded-[20px] border border-[#e8e4dc] bg-white px-5 py-4">
+                  <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
+                    Vendor
+                  </p>
+                  <p className="mt-2 text-base font-semibold tracking-tight">
+                    {product.vendor}
+                  </p>
+                </div>
+                <div className="rounded-[20px] border border-[#e8e4dc] bg-white px-5 py-4">
+                  <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
+                    Price
+                  </p>
+                  <p className="mt-2 text-base font-semibold tracking-tight">
+                    {product.price}
+                  </p>
+                  <p className="mt-1 text-xs text-[#6b7280]">
+                    {product.priceStatus}
+                  </p>
+                </div>
+              </div>
+
               <div className="mt-6 flex flex-wrap gap-2">
                 {product.industries.map((industry) => (
                   <span
@@ -234,16 +256,51 @@ export default async function ProductPage({ params }: Props) {
             </div>
           </div>
 
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            <div className="rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
+              <p className="text-sm font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
+                Vendor
+              </p>
+              <p className="mt-4 text-xl font-semibold tracking-tight">
+                {product.vendor}
+              </p>
+            </div>
+            <div className="rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
+              <p className="text-sm font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
+                Price
+              </p>
+              <p className="mt-4 text-xl font-semibold tracking-tight">
+                {product.price}
+              </p>
+              <p className="mt-2 text-sm leading-6 text-[#6b7280]">
+                {product.priceStatus}
+              </p>
+            </div>
+            <div className="rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
+              <p className="text-sm font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
+                Source
+              </p>
+              <p className="mt-4 text-xl font-semibold tracking-tight">
+                {product.sourceLabel ?? "Official product page"}
+              </p>
+            </div>
+          </div>
+
+          {product.priceNote ? (
+            <div className="mt-8 rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 text-sm leading-6 text-[#6b7280] shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
+              {product.priceNote}
+            </div>
+          ) : null}
+
           <div className="mt-8 rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
             <p className="text-sm font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
-              Commercial Link Logic
+              Link Strategy
             </p>
             <p className="mt-4 text-sm leading-6 text-[#6b7280]">
-              This catalog is already structured so affiliate links can be added
-              later without changing the page design. Once a product gets an
-              affiliate URL, the main outbound button can automatically switch
-              from the official manufacturer site to that tracked commercial
-              link.
+              This catalog starts with official product and distributor links.
+              Affiliate links can be added later without changing the page
+              design; once a product gets an affiliate URL, the main outbound
+              button can automatically use that tracked commercial link.
             </p>
           </div>
         </section>

@@ -305,6 +305,11 @@ export default function CatalogClient() {
                 <h3 className="mt-4 text-2xl font-semibold tracking-tight">
                   {product.name}
                 </h3>
+                <div className="mt-3 flex flex-wrap items-center gap-2 text-xs font-medium text-[#6b7280]">
+                  <span>{product.vendor}</span>
+                  <span className="text-[#c9c1b5]">|</span>
+                  <span>{product.price}</span>
+                </div>
                 <p className="mt-4 text-sm leading-6 text-[#6b7280]">
                   {product.summary}
                 </p>
