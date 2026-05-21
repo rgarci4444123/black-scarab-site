@@ -1377,7 +1377,291 @@ const localAiEnterpriseGuide = (): CaseStudyArticle => ({
   sourceLinks: localAiSourceLinks,
 });
 
+const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
+  slug: "top-10-robots-edge-ai-automation-humanoid-robotics",
+  title:
+    "Top 10 Robots Transforming the World in 2026: Edge AI, Humanoids, Cobots, and Autonomous Systems",
+  summary:
+    "An introductory guide to the 10 robots shaping real-world AI, robotics, automation, and edge computing, from Boston Dynamics Spot, Figure 03, and Tesla Optimus to Amazon Proteus and da Vinci 5.",
+  publishedLabel: "Robotics Series · Published May 21, 2026",
+  publishedDate: "2026-05-21",
+  typeLabel: "Robotics Series",
+  formatLabel: "Introductory top-10 robotics guide",
+  industry: "Cross-Industry",
+  image: "/article-images/top-10-robots-edge-ai-automation.png",
+  imageAlt:
+    "Composite visualization of humanoid robots, quadruped robots, drones, robotic arms, and autonomous mobile robots.",
+  seoDescription:
+    "Explore the top 10 robots transforming the world in 2026, including humanoid robots, industrial inspection robots, cobots, warehouse robots, surgical robots, and edge AI robotics platforms.",
+  tags: [
+    "top robots 2026",
+    "edge AI robots",
+    "humanoid robots",
+    "industrial robotics",
+    "cobots",
+    "warehouse automation",
+    "robotics series",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Robotics is entering a new phase. The most important robots are no longer just factory arms behind safety cages or research demos walking across a stage. They are mobile inspection systems, collaborative arms, autonomous warehouse machines, surgical platforms, humanoids, and edge AI devices that sense the physical world, make local decisions, and turn software into action.",
+        "This article introduces a new Black Scarab robotics series. The goal of the series is not to rank robots by hype, social media attention, or how human they look. The goal is to understand which robots matter commercially, which ones reveal where edge AI is going, and which hardware stacks will shape the next decade of automation.",
+        "Each robot below will become the subject of a deeper article. Those follow-up pieces will examine the robot's business logic, sensors, onboard compute, autonomy stack, deployment model, and the components someone would need to build or evaluate a similar system.",
+      ],
+    },
+    {
+      heading: "How We Chose the Top 10",
+      paragraphs: [
+        "The selection criteria are deliberately practical. A robot earns a place on this list if it shows clear technical importance, real deployment potential, commercial relevance, or a major shift in how machines interact with human environments.",
+        "That is why this is not a humanoid-only list. Humanoids are important, but the edge AI robotics market is broader. The robots changing the world include quadrupeds inspecting refineries, cobots handling repetitive manufacturing tasks, warehouse robots moving inventory, and surgical systems extending the precision of trained clinicians.",
+      ],
+      tables: [
+        {
+          title: "The Top 10 Robots in This Series",
+          columns: ["Rank", "Robot", "Category", "Why It Matters"],
+          rows: [
+            [
+              "1",
+              "Boston Dynamics Spot",
+              "Quadruped inspection robot",
+              "A commercial benchmark for mobile inspection, hazardous response, and edge data collection.",
+            ],
+            [
+              "2",
+              "ANYbotics ANYmal",
+              "Industrial inspection quadruped",
+              "A rugged autonomy platform built around routine inspection in energy, mining, chemicals, and heavy industry.",
+            ],
+            [
+              "3",
+              "Agility Robotics Digit",
+              "Logistics humanoid",
+              "One of the clearest examples of humanoid robotics moving from demo videos into warehouse operations.",
+            ],
+            [
+              "4",
+              "Figure 03",
+              "General-purpose humanoid",
+              "A high-profile embodied AI platform built around vision-language-action intelligence and dexterous manipulation.",
+            ],
+            [
+              "5",
+              "Boston Dynamics Atlas",
+              "All-electric humanoid",
+              "A mobility and manipulation benchmark for the next generation of industrial humanoid robots.",
+            ],
+            [
+              "6",
+              "Tesla Optimus",
+              "Vertically integrated humanoid",
+              "A strategic robotics bet that could connect robot hardware, AI training, manufacturing scale, and real factory use.",
+            ],
+            [
+              "7",
+              "Unitree G1",
+              "Affordable humanoid platform",
+              "A lower-cost humanoid that can expand research, education, and embodied AI experimentation.",
+            ],
+            [
+              "8",
+              "Universal Robots UR Series",
+              "Collaborative robot arms",
+              "The cobot standard for accessible automation in machine tending, packaging, assembly, and small manufacturers.",
+            ],
+            [
+              "9",
+              "Amazon Proteus",
+              "Autonomous mobile warehouse robot",
+              "A practical example of computer vision and autonomy reshaping logistics inside human-filled facilities.",
+            ],
+            [
+              "10",
+              "Intuitive da Vinci 5",
+              "Surgical robotics platform",
+              "A mature robotics category showing how precision machines can transform high-value professional work.",
+            ],
+          ],
+          note: "This list is designed as an editorial roadmap for the Black Scarab robotics series, not a claim that every robot is equally mature, available, or deployed at the same scale.",
+        },
+      ],
+    },
+    {
+      heading: "1. Boston Dynamics Spot",
+      paragraphs: [
+        "Spot is one of the most important commercial robots because it makes the value of mobile autonomy obvious. It is not trying to look human. It is trying to go where people do not want to go, capture data repeatedly, and bring inspection workflows into dangerous or inconvenient environments.",
+        "For Black Scarab, Spot is especially relevant because it is an edge AI platform wrapped in a mobile robot. Cameras, thermal payloads, acoustic sensors, autonomy software, wireless connectivity, docking, fleet management, and industrial inspection workflows all come together in one product category.",
+        "The business logic is straightforward: reduce the cost and risk of inspection while improving the frequency and quality of operational data. In factories, power plants, construction sites, and hazardous facilities, the robot becomes a mobile sensor carrier.",
+        "The deep dive will cover Spot's inspection payloads, autonomy modes, docking workflow, fleet software, and the edge compute stack behind remote facility monitoring. It will also break down what a Spot-like inspection basket would need: cameras, thermal sensing, acoustic sensing, connectivity, charging, ruggedization, and inspection analytics.",
+      ],
+    },
+    {
+      heading: "2. ANYbotics ANYmal",
+      paragraphs: [
+        "ANYmal belongs near the top because it is purpose-built for the industrial environments where edge AI can create immediate value. The robot is designed for autonomous inspection in sectors such as oil and gas, chemicals, power, utilities, mining, metals, and transportation.",
+        "This makes ANYmal a useful counterpoint to Spot. Both are quadrupeds, but ANYmal's positioning is heavily tied to routine inspection, harsh environments, and operational reliability. That is exactly where robotics can move from interesting demo to recurring business asset.",
+        "In the deeper article, the key question will be how autonomous inspection robots convert sensors into operational decisions. Thermal readings, acoustic anomalies, gauge readings, and visual changes only matter if the robot can capture them consistently and feed useful information back into maintenance workflows.",
+        "The deep dive will focus on harsh-environment deployment: autonomous routes, docking stations, explosion-risk environments, inspection payloads, thermal and acoustic anomaly detection, and the economics of replacing manual inspection rounds with robotic data collection.",
+      ],
+    },
+    {
+      heading: "3. Agility Robotics Digit",
+      paragraphs: [
+        "Digit is one of the strongest examples of a humanoid being designed around a narrow operational problem rather than a science-fiction fantasy. Its core logic is warehouse work: moving totes, handling bulk material flow, and operating in spaces already built for people.",
+        "Agility's agreement with GXO is important because it points toward revenue-generating humanoid deployments rather than pure laboratory demos. That does not mean humanoids are solved. It means logistics is one of the first places where the economic case can be tested seriously.",
+        "For Black Scarab, Digit is a useful robot to study because it connects perception, balance, manipulation, fleet software, safety, and facility integration. The value is not just the robot body. It is the whole system that lets the robot fit into warehouse operations.",
+        "The deep dive will cover tote movement, warehouse management integration, bipedal mobility, manipulation limits, safety workflows, charging and fleet orchestration, and why logistics is one of the first serious tests for humanoid labor.",
+      ],
+    },
+    {
+      heading: "4. Figure 03",
+      paragraphs: [
+        "Figure 03 represents the embodied AI side of the robotics race. Figure describes it as a third-generation humanoid with a redesigned sensory suite and hand system built to support Helix, the company's vision-language-action AI.",
+        "That matters because the future of general-purpose robotics will not be won by hardware alone. The robot has to interpret the scene, understand the task, manipulate objects, and recover when the real world behaves differently than the training environment.",
+        "The business case is still developing, but Figure 03 is worth studying because it sits at the center of the AI-to-robotics transition. The deeper article should focus on whether vision-language-action systems can turn humanoids from scripted machines into useful workers.",
+        "The deep dive will look at Figure 03's sensory redesign, hand system, Helix AI model, teleoperation and data collection loop, home-versus-workplace positioning, and what has to be proven before a general-purpose humanoid can become a dependable product.",
+      ],
+    },
+    {
+      heading: "5. Boston Dynamics Atlas",
+      paragraphs: [
+        "The new all-electric Atlas is less about near-term mass deployment and more about defining the upper edge of humanoid mobility, balance, and manipulation. Boston Dynamics has spent years proving that legged robots can move through complex physical environments, and Atlas is the humanoid continuation of that work.",
+        "Atlas matters for Black Scarab because it shows what happens when advanced control, perception, simulation, and mechanical design are fused into a single machine. It is not the cheapest path to automation. It is a benchmark for what industrial humanoids may eventually become.",
+        "The deeper Atlas article should avoid treating every demo as proof of commercial readiness. The more useful question is which capabilities can migrate from advanced demos into repeatable manufacturing, logistics, and field-service work.",
+        "The deep dive will cover all-electric actuation, dynamic balance, simulation-based training, manipulation, safety, Hyundai and factory-use positioning, and the gap between a world-class robotics demo and a repeatable industrial product.",
+      ],
+    },
+    {
+      heading: "6. Tesla Optimus",
+      paragraphs: [
+        "Tesla Optimus belongs on the list because of strategy, not because it is the most proven commercial robot today. Tesla is attempting to connect humanoid robotics with its existing strengths in AI training, manufacturing, batteries, motors, cameras, and vertical integration.",
+        "That makes Optimus important even if many claims around humanoid timelines deserve skepticism. If Tesla can eventually produce robots at automotive-style scale, the economics of humanoid robotics could change. If it cannot, Optimus will still be a useful case study in how hard general-purpose robotics really is.",
+        "The Black Scarab angle should be clear: Optimus is not just a robot to watch. It is a test of whether one company can integrate hardware, AI, supply chain, and deployment tightly enough to make humanoids commercially plausible.",
+        "The deep dive will cover Tesla's vertical integration thesis, camera-first perception, actuator and battery implications, factory deployment path, training data problem, teleoperation questions, and the difference between search-driving hype and verified robotic capability.",
+      ],
+    },
+    {
+      heading: "7. Unitree G1",
+      paragraphs: [
+        "Unitree G1 earns a place because accessibility changes markets. A lower-cost humanoid platform can help universities, labs, developers, and startups experiment with embodied AI without needing the budget of a major robotics company.",
+        "The G1 is not on this list because it is the most capable humanoid in every category. It is here because cost and availability matter. Robotics ecosystems grow when more people can test locomotion, perception, reinforcement learning, teleoperation, and manipulation on real hardware.",
+        "For the series, Unitree G1 should be treated as the research-and-developer on-ramp. The deeper article should ask what lower-cost humanoids make possible, and what compromises buyers need to understand before treating them like enterprise-ready labor.",
+        "The deep dive will cover the developer ecosystem, onboard compute options, locomotion and manipulation tradeoffs, education and lab use cases, reinforcement learning research, and where a low-cost humanoid fits compared with industrial robots built for uptime.",
+      ],
+    },
+    {
+      heading: "8. Universal Robots UR Series",
+      paragraphs: [
+        "Universal Robots deserves a place because the company helped make collaborative robot arms feel approachable for real businesses. The UR Series is not as viral as a humanoid, but cobots are already doing useful work in manufacturing, packaging, machine tending, welding support, and inspection workflows.",
+        "The business logic is mature: automate repetitive tasks without rebuilding the entire factory around traditional industrial robots. That is powerful for small and midsize manufacturers that need flexible automation but cannot afford years of integration complexity.",
+        "For Black Scarab, UR robots are important because they show how robotics adoption often starts: not with a general-purpose humanoid, but with a focused machine that solves one repetitive workflow safely and repeatably.",
+        "The deep dive will cover end effectors, force sensing, machine vision, safety-rated deployment, programming workflow, ROI for small manufacturers, and how cobots become more valuable when paired with cameras, grippers, and edge AI inspection models.",
+      ],
+    },
+    {
+      heading: "9. Amazon Proteus",
+      paragraphs: [
+        "Proteus is important because warehouse robotics is one of the most commercially grounded robotics markets. Amazon describes Proteus as its first fully autonomous mobile robot that can operate safely around employees, using computer vision and machine learning inside real fulfillment operations.",
+        "That makes Proteus a strong edge AI example. The robot has to perceive people, navigate dynamic spaces, move inventory, and integrate with a larger warehouse system. The hardware matters, but the workflow orchestration matters just as much.",
+        "The deeper article should focus on why warehouse robots are often more commercially meaningful than viral humanoids. They have clear routes to ROI, measurable throughput improvements, and defined operating environments.",
+        "The deep dive will cover autonomous mobile robot navigation, worker-aware safety, computer vision, inventory movement, containerized storage, warehouse orchestration software, and why logistics robots can scale faster than more general-purpose humanoids.",
+      ],
+    },
+    {
+      heading: "10. Intuitive da Vinci 5",
+      paragraphs: [
+        "Da Vinci 5 represents a different kind of robotics transformation. It is not a mobile autonomous robot roaming a factory. It is a high-precision surgical platform that extends human capability in a controlled medical environment.",
+        "Its inclusion matters because robotics is not only about replacing labor. In surgery, the machine becomes an interface between expert human judgment and extremely precise physical execution. That is a different but equally important model for robotics economics.",
+        "For Black Scarab, da Vinci 5 is a reminder that the best robot is not always the most autonomous one. Sometimes the most valuable robot is the one that gives a trained professional more control, better feedback, and a safer way to perform complex work.",
+        "The deep dive will cover surgeon-in-the-loop control, robotic arms, imaging, force feedback, hospital economics, regulatory constraints, training requirements, and why medical robotics shows a different path to value than fully autonomous labor replacement.",
+      ],
+    },
+    {
+      heading: "Why We Did Not Make This a Humanoid-Only List",
+      paragraphs: [
+        "Humanoids will get a lot of attention, and several belong in this series. But a humanoid-only list would miss the bigger robotics story. Edge AI is already showing up in quadrupeds, cobots, warehouse AMRs, agricultural machines, medical robots, smart cameras, drones, and sensor-rich industrial systems.",
+        "That broader view is more useful for Black Scarab because our long-term catalog is about components, systems, and deployment logic. A real robotics buyer needs cameras, LiDAR, edge compute, motors, batteries, networking, safety systems, software, docks, and service plans. The robot body is only one part of the stack.",
+      ],
+    },
+    {
+      heading: "Honorable Mentions",
+      paragraphs: [
+        "Several robots deserve future coverage even though they did not make this first top 10. 1X NEO is important to watch as a home humanoid concept. Engineered Arts Ameca is a useful human-robot interaction platform. Burro, DJI agricultural drones, autonomous security robots, and field robotics platforms also fit Black Scarab's edge AI lens.",
+        "That is why this article should be read as the beginning of a robotics map, not the final word. The series will evolve as public deployments, Reddit practitioner feedback, product availability, and technical evidence improve.",
+      ],
+    },
+    {
+      heading: "Conclusion: The Real Robotics Story Is the Stack",
+      paragraphs: [
+        "The top robots transforming the world are not important simply because they move. They are important because they combine sensors, onboard compute, autonomy software, mechanical design, energy systems, fleet management, and business logic into machines that can produce measurable outcomes.",
+        "That is the Black Scarab lens for this series. We will look past the headline and ask practical questions: what problem does the robot solve, what hardware makes it possible, what edge AI workload runs onboard, what infrastructure supports it, and what would a real buyer need to deploy something similar?",
+        "The future of robotics will not be one machine. It will be an ecosystem of specialized robots, humanoid platforms, edge AI devices, and automation systems that each win when their hardware matches the job.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This article was compiled using official product and company materials from Boston Dynamics, ANYbotics, Agility Robotics, Figure AI, Tesla, Unitree Robotics, Universal Robots, Amazon Robotics, and Intuitive, with emphasis on current product positioning, deployment context, and publicly stated use cases as of May 21, 2026.",
+      ],
+    },
+  ],
+  sources: [
+    "Boston Dynamics Spot and Atlas official materials",
+    "ANYbotics ANYmal official materials",
+    "Agility Robotics Digit and GXO deployment announcement",
+    "Figure 03 official announcement",
+    "Tesla AI and Robotics official materials",
+    "Unitree G1 official product materials",
+    "Universal Robots cobot materials",
+    "Amazon Robotics Proteus overview",
+    "Intuitive da Vinci official materials",
+  ],
+  sourceLinks: [
+    {
+      label: "Boston Dynamics Spot",
+      url: "https://bostondynamics.com/products/spot/",
+    },
+    {
+      label: "ANYbotics ANYmal",
+      url: "https://www.anybotics.com/robotics/",
+    },
+    {
+      label: "Agility Robotics and GXO Digit agreement",
+      url: "https://www.agilityrobotics.com/content/gxo-signs-industry-first-multi-year-agreement-with-agility-robotics",
+    },
+    {
+      label: "Figure 03 announcement",
+      url: "https://www.figure.ai/news/introducing-figure-03?id=Figure03",
+    },
+    {
+      label: "Boston Dynamics Atlas",
+      url: "https://bostondynamics.com/atlas",
+    },
+    {
+      label: "Tesla AI and Robotics",
+      url: "https://www.tesla.com/AI",
+    },
+    {
+      label: "Unitree G1",
+      url: "https://unitree-robot.com/mobile/g1/",
+    },
+    {
+      label: "Universal Robots cobots",
+      url: "https://www.universal-robots.com/default.aspx?ID=2",
+    },
+    {
+      label: "Amazon robotics in operations",
+      url: "https://www.aboutamazon.com/news/operations/how-amazon-deploys-robots-in-its-operations-facilities",
+    },
+    {
+      label: "Intuitive da Vinci systems",
+      url: "https://www.intuitive.com/en-us/products-and-services/da-vinci",
+    },
+  ],
+});
+
 export const caseStudies: CaseStudyArticle[] = [
+  topRobotsEdgeAiGuide(),
   localAiEnterpriseGuide(),
   localAiSmallBusinessGuide(),
   localAiHobbyistGuide(),
