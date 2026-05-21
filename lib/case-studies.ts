@@ -1577,20 +1577,6 @@ const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
       ],
     },
     {
-      heading: "Why We Did Not Make This a Humanoid-Only List",
-      paragraphs: [
-        "Humanoids will get a lot of attention, and several belong in this series. But a humanoid-only list would miss the bigger robotics story. Edge AI is already showing up in quadrupeds, cobots, warehouse AMRs, agricultural machines, medical robots, smart cameras, drones, and sensor-rich industrial systems.",
-        "That broader view is more useful for Black Scarab because our long-term catalog is about components, systems, and deployment logic. A real robotics buyer needs cameras, LiDAR, edge compute, motors, batteries, networking, safety systems, software, docks, and service plans. The robot body is only one part of the stack.",
-      ],
-    },
-    {
-      heading: "Honorable Mentions",
-      paragraphs: [
-        "Several robots deserve future coverage even though they did not make this first top 10. 1X NEO is important to watch as a home humanoid concept. Engineered Arts Ameca is a useful human-robot interaction platform. Burro, DJI agricultural drones, autonomous security robots, and field robotics platforms also fit Black Scarab's edge AI lens.",
-        "That is why this article should be read as the beginning of a robotics map, not the final word. The series will evolve as public deployments, Reddit practitioner feedback, product availability, and technical evidence improve.",
-      ],
-    },
-    {
       heading: "Conclusion: The Real Robotics Story Is the Stack",
       paragraphs: [
         "The top robots transforming the world are not important simply because they move. They are important because they combine sensors, onboard compute, autonomy software, mechanical design, energy systems, fleet management, and business logic into machines that can produce measurable outcomes.",
