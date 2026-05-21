@@ -21,26 +21,26 @@ export default function CatalogPage() {
 
         <section className="border-b border-[#efeae1] bg-[#faf8f3] px-6 py-14 text-center md:px-10 md:py-18">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-            Product Intelligence
+            AI Infrastructure Catalog
           </p>
           <h1 className="mx-auto mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:text-5xl">
-            Edge AI products worth building around
+            Source the stack behind real-world AI systems
           </h1>
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-[#6b7280]">
-            Compare the compute platforms, sensors, cameras, robotics,
-            networking, software, and deployment kits that turn edge AI ideas
-            into systems ready for the physical world.
+            Find the compute, sensors, cameras, networking, storage, power,
+            software, and deployment products needed to assemble edge AI, local
+            AI, and industry-specific systems from one growing catalog.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <div className="rounded-full border border-[#ddd7cc] bg-white px-4 py-2 text-sm font-medium text-[#111827]">
-              {products.length} detailed product pages
+              {products.length} sourced product pages
             </div>
             <div className="rounded-full border border-[#ddd7cc] bg-white px-4 py-2 text-sm font-medium text-[#111827]">
-              {catalogRoadmapItems.length} starter catalog targets
+              {catalogRoadmapItems.length}-product first milestone
             </div>
             <div className="rounded-full border border-[#ddd7cc] bg-white px-4 py-2 text-sm font-medium text-[#111827]">
-              Component-to-solution evaluation
+              Official links and pricing fields
             </div>
           </div>
 
