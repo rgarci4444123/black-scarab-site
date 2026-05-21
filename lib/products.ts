@@ -299,6 +299,626 @@ export const products: ProductData[] = [
     sourceLabel: "Official product brief",
   },
   {
+    slug: "nvidia-l40s",
+    name: "NVIDIA L40S",
+    vendor: "NVIDIA",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Healthcare", "Transportation & Logistics", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor", "Industrial"],
+    price: "Request quote",
+    priceStatus: "Quote required",
+    priceNote:
+      "NVIDIA positions L40S as a data-center GPU sold through server OEMs, integrators, and channel partners. Final pricing depends on server platform, quantity, support, and deployment configuration.",
+    image: "/product-images/nvidia-l40s.png",
+    imageAlt: "NVIDIA L40S passive data center GPU",
+    summary:
+      "A 48GB Ada Lovelace data-center GPU for generative AI inference and training, 3D graphics, rendering, video, and virtual workstation infrastructure.",
+    whyItMatters:
+      "The L40S is built for 24/7 enterprise data-center operation rather than a desktop tower. It gives private AI infrastructure buyers 48GB of ECC memory, strong Tensor Core throughput, media acceleration, and a passive thermal design meant for server chassis airflow.",
+    specs: [
+      { label: "GPU Memory", value: "48GB GDDR6 with ECC" },
+      { label: "CUDA / Tensor Performance", value: "18,176 CUDA cores / 733-1,466 FP8 TFLOPS" },
+      { label: "Server Profile", value: "864 GB/s bandwidth / 350W max power / passive cooling" },
+    ],
+    bestFor: [
+      "Private AI inference servers",
+      "Generative AI and visual computing infrastructure",
+      "Virtual workstation and rendering clusters",
+    ],
+    usedIn: [
+      "Enterprise AI server builds",
+      "GPU-backed VDI and visualization platforms",
+      "On-prem rendering and media acceleration systems",
+    ],
+    blackScarabPov:
+      "This is not a drop-in desktop GPU. It belongs in server baskets where chassis airflow, power delivery, support, and uptime matter. For Black Scarab, it is a useful bridge between workstation GPUs and heavier data-center accelerators.",
+    officialUrl: "https://www.nvidia.com/en-us/data-center/l40s/",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "nvidia-h100-nvl",
+    name: "NVIDIA H100 NVL",
+    vendor: "NVIDIA",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Healthcare", "Transportation & Logistics", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor", "Industrial"],
+    price: "Request quote",
+    priceStatus: "Quote required",
+    priceNote:
+      "NVIDIA positions H100 NVL for partner and NVIDIA-Certified PCIe server systems. Pricing depends on server vendor, GPU count, support, software subscription, and deployment configuration.",
+    image: "/product-images/nvidia-h100-nvl.png",
+    imageAlt: "NVIDIA H100 NVL PCIe data center accelerator",
+    summary:
+      "A PCIe-based H100 NVL data-center accelerator for large language model inference, enterprise AI servers, and multi-GPU private AI infrastructure.",
+    whyItMatters:
+      "H100 NVL is the PCIe H100 variant built around large-model inference. It pairs 94GB of HBM3 memory per GPU with NVLink bridging and NVIDIA AI Enterprise, giving server builders a powerful path for LLM workloads without moving to SXM/HGX-only platforms.",
+    specs: [
+      { label: "GPU Memory", value: "94GB HBM3 per GPU / 188GB with NVLink pair" },
+      { label: "AI / HPC Performance", value: "3,341 FP8 TFLOPS / 835 TF32 Tensor TFLOPS" },
+      { label: "PCIe Server Profile", value: "3.9 TB/s bandwidth / 350-400W TDP / dual-slot air-cooled" },
+    ],
+    bestFor: [
+      "Large language model inference",
+      "PCIe-based enterprise AI servers",
+      "Multi-GPU private AI infrastructure",
+    ],
+    usedIn: [
+      "NVIDIA-Certified AI servers",
+      "Private LLM inference clusters",
+      "Enterprise generative AI deployments",
+    ],
+    blackScarabPov:
+      "This is the H100 to list first because the NVL/PCIe form factor is easier to explain as a component than H100 SXM. It still belongs in certified server baskets with serious airflow, power, software, and support planning, not in a normal desktop workstation.",
+    officialUrl: "https://www.nvidia.com/en-us/data-center/h100/",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "nvidia-h200-sxm",
+    name: "NVIDIA H200 SXM",
+    vendor: "NVIDIA",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Healthcare", "Transportation & Logistics", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor", "Industrial"],
+    price: "Request quote",
+    priceStatus: "Quote required",
+    priceNote:
+      "NVIDIA positions H200 SXM through HGX H200 and partner server platforms rather than standalone retail cards. Pricing depends on 4-GPU or 8-GPU platform, server vendor, networking, support, and deployment scale.",
+    image: "/product-images/nvidia-h200-sxm.png",
+    imageAlt: "NVIDIA HGX H200 SXM server platform with eight GPUs",
+    summary:
+      "An SXM-based H200 data-center accelerator platform for generative AI, large language model inference, high-performance computing, and multi-GPU AI servers.",
+    whyItMatters:
+      "H200 SXM upgrades the Hopper platform with 141GB of HBM3e memory and 4.8TB/s of bandwidth per GPU, giving HGX-class servers more room for large model inference, HPC datasets, and memory-intensive AI workloads.",
+    specs: [
+      { label: "GPU Memory", value: "141GB HBM3e per GPU" },
+      { label: "AI / HPC Performance", value: "3,958 FP8 TFLOPS / 989 TF32 Tensor TFLOPS" },
+      { label: "SXM Platform Profile", value: "4.8 TB/s bandwidth / up to 700W TDP / HGX 4-GPU or 8-GPU systems" },
+    ],
+    bestFor: [
+      "Large language model inference at scale",
+      "HGX-class AI and HPC servers",
+      "Memory-intensive enterprise AI workloads",
+    ],
+    usedIn: [
+      "HGX H200 server platforms",
+      "Enterprise AI factories",
+      "HPC and scientific computing clusters",
+    ],
+    blackScarabPov:
+      "This is not a PCIe card and should not be presented like one. H200 SXM belongs in full HGX server baskets where the GPU, baseboard, NVLink fabric, cooling, power, networking, and support are purchased as an integrated platform.",
+    officialUrl: "https://www.nvidia.com/en-us/data-center/h200/",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "nvidia-rtx-pro-6000-blackwell-server-edition",
+    name: "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    vendor: "NVIDIA",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Healthcare", "Transportation & Logistics", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor", "Industrial"],
+    price: "Request quote",
+    priceStatus: "Quote required",
+    priceNote:
+      "NVIDIA routes this data center GPU through partners and marketplace channels. Final pricing depends on server platform, cooling, support, and system configuration.",
+    image: "/product-images/nvidia-rtx-pro-6000-blackwell-server-edition.png",
+    imageAlt: "NVIDIA RTX PRO 6000 Blackwell Server Edition passive GPU",
+    summary:
+      "A 96GB Blackwell data center GPU for enterprise AI servers, multi-GPU inference, industrial AI, rendering, simulation, and virtual workstation infrastructure.",
+    whyItMatters:
+      "The RTX PRO 6000 Blackwell Server Edition bridges professional graphics and enterprise AI infrastructure with 96GB of ECC GDDR7 memory, high AI throughput, MIG partitioning, and server-ready thermal options.",
+    specs: [
+      { label: "GPU Memory", value: "96GB GDDR7 with ECC" },
+      { label: "AI / CUDA Performance", value: "24,064 CUDA cores / 2 PFLOPS FP8" },
+      { label: "Server Profile", value: "Up to 600W configurable power / MIG up to 4 instances" },
+    ],
+    bestFor: [
+      "Enterprise AI inference servers",
+      "Multi-GPU private AI infrastructure",
+      "Industrial simulation and visual computing",
+    ],
+    usedIn: [
+      "Private AI server builds",
+      "Virtual workstation infrastructure",
+      "Enterprise rendering and simulation clusters",
+    ],
+    blackScarabPov:
+      "This is a serious infrastructure GPU for baskets that need enterprise memory capacity, server thermals, and workload partitioning. It belongs closer to private AI server design than hobbyist local AI.",
+    officialUrl:
+      "https://www.nvidia.com/en-us/data-center/rtx-pro-6000-blackwell-server-edition/",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "nvidia-rtx-pro-6000-blackwell-workstation-edition",
+    name: "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+    vendor: "NVIDIA",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Healthcare", "Retail", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor"],
+    price: "Request quote",
+    priceStatus: "Quote required",
+    priceNote:
+      "NVIDIA routes workstation-class RTX PRO purchasing through partners and marketplace channels. Final pricing depends on channel, workstation vendor, support, and configuration.",
+    image: "/product-images/nvidia-rtx-pro-6000-blackwell-workstation-edition.png",
+    imageAlt: "NVIDIA RTX PRO 6000 Blackwell Workstation Edition GPU",
+    summary:
+      "A 96GB Blackwell professional desktop GPU for premium AI workstations, data science, rendering, simulation, and local model development.",
+    whyItMatters:
+      "The RTX PRO 6000 Blackwell Workstation Edition brings large-memory professional AI performance to the desktop, giving advanced users 96GB of ECC GDDR7 and Blackwell Tensor Core acceleration without moving every workload to a data center.",
+    specs: [
+      { label: "GPU Memory", value: "96GB GDDR7 with ECC" },
+      { label: "AI / FP32 Performance", value: "4000 AI TOPS / 125 TFLOPS FP32" },
+      { label: "Workstation Profile", value: "1792 GB/s bandwidth / 600W max power" },
+    ],
+    bestFor: [
+      "Premium AI workstations",
+      "Large local model development",
+      "Professional rendering and simulation",
+    ],
+    usedIn: [
+      "High-end desktop AI systems",
+      "Data science and visualization workstations",
+      "Engineering simulation and rendering pipelines",
+    ],
+    blackScarabPov:
+      "This is the workstation sibling to the server edition. It should anchor premium desktop baskets where 96GB of VRAM, professional drivers, and workstation integration matter more than consumer GPU pricing.",
+    officialUrl:
+      "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000/",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "nvidia-rtx-pro-6000-blackwell-max-q-workstation-edition",
+    name: "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    vendor: "NVIDIA",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Healthcare", "Retail", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor"],
+    price: "Request quote",
+    priceStatus: "Quote required",
+    priceNote:
+      "NVIDIA routes RTX PRO Max-Q workstation purchasing through partners and marketplace channels. Final pricing depends on workstation vendor, GPU count, support, and system configuration.",
+    image: "/product-images/nvidia-rtx-pro-6000-blackwell-max-q-workstation-edition.png",
+    imageAlt: "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition GPU",
+    summary:
+      "A density-optimized 96GB Blackwell professional GPU for scalable multi-GPU workstations, AI development, data science, simulation, and rendering.",
+    whyItMatters:
+      "The Max-Q Workstation Edition trades maximum single-card power for density and efficiency, enabling up to four RTX PRO 6000 GPUs in one workstation for large local datasets, multi-GPU AI, and demanding creative pipelines.",
+    specs: [
+      { label: "GPU Memory", value: "96GB GDDR7 with ECC" },
+      { label: "AI / FP32 Performance", value: "3511 AI TOPS / 110 TFLOPS FP32" },
+      { label: "Dense Workstation Profile", value: "1792 GB/s bandwidth / 300W max power" },
+    ],
+    bestFor: [
+      "Dense multi-GPU workstations",
+      "Large local AI development",
+      "Scalable data science and rendering",
+    ],
+    usedIn: [
+      "Four-GPU workstation builds",
+      "High-memory AI development systems",
+      "Professional simulation and creative pipelines",
+    ],
+    blackScarabPov:
+      "This is the efficient scaling member of the RTX PRO 6000 family. It matters when a buyer wants workstation-local GPU density and 96GB-per-card memory without jumping straight to rack server infrastructure.",
+    officialUrl:
+      "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000-max-q/",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "amd-radeon-pro-w7900",
+    name: "AMD Radeon PRO W7900",
+    vendor: "AMD",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Healthcare", "Retail", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor"],
+    price: "Price to verify",
+    priceStatus: "Research needed",
+    priceNote:
+      "AMD provides official specifications and workstation positioning, but current channel pricing should be verified through authorized retailers, workstation vendors, or distributors before using in a basket.",
+    image: "/product-images/amd-radeon-pro-w7900.png",
+    imageAlt: "AMD Radeon PRO W7900 professional workstation graphics card",
+    summary:
+      "A 48GB RDNA 3 professional workstation GPU for visualization, rendering, media, simulation, CAD, and AMD-based pro workstation builds.",
+    whyItMatters:
+      "The Radeon PRO W7900 gives workstation buyers a large 48GB ECC memory option outside the NVIDIA ecosystem. It is especially relevant for visualization, media, CAD, and OpenCL/ROCm-aware workflows, while CUDA-heavy local AI stacks may still favor NVIDIA cards.",
+    specs: [
+      { label: "GPU Memory", value: "48GB GDDR6 with ECC" },
+      { label: "Compute / AI Hardware", value: "96 compute units / 192 AI accelerators" },
+      { label: "Workstation Profile", value: "61.3 TFLOPS FP32 / 864 GB/s bandwidth / 295W TBP" },
+    ],
+    bestFor: [
+      "Professional visualization workstations",
+      "Large-memory AMD GPU workflows",
+      "CAD, rendering, media, and simulation systems",
+    ],
+    usedIn: [
+      "Engineering and design workstations",
+      "Media production and rendering systems",
+      "AMD-based professional desktop builds",
+    ],
+    blackScarabPov:
+      "This is a strong non-NVIDIA pro workstation option when memory size, display capability, AMD drivers, and visualization workloads matter. For AI baskets, it should be matched carefully against the user's software stack because many popular local AI tools still assume CUDA first.",
+    officialUrl:
+      "https://www.amd.com/en/products/graphics/workstations/radeon-pro/w7900.html",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "amd-radeon-ai-pro-r9700",
+    name: "AMD Radeon AI PRO R9700",
+    vendor: "AMD",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Healthcare", "Retail", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor"],
+    price: "Not yet available",
+    priceStatus: "Research needed",
+    priceNote:
+      "AMD notes the current product image is an artist render and the card is not available for purchase yet. Recheck official availability, partner designs, and channel pricing before adding it to purchasable baskets.",
+    image: "/product-images/amd-radeon-ai-pro-r9700.png",
+    imageAlt: "AMD Radeon AI PRO R9700 professional AI graphics card render",
+    summary:
+      "A 32GB RDNA 4 professional AI GPU for local AI inference, development, memory-intensive desktop workloads, and ROCm-oriented AMD workstations.",
+    whyItMatters:
+      "The Radeon AI PRO R9700 is AMD's more explicitly AI-branded workstation card, pairing 32GB of GDDR6 memory with RDNA 4 AI acceleration and PCIe 5.0 for developers who want an AMD path for local inference and AI experimentation.",
+    specs: [
+      { label: "GPU Memory", value: "32GB GDDR6 / ECC on Linux" },
+      { label: "Compute / AI Hardware", value: "64 compute units / 128 AI accelerators" },
+      { label: "AI Workstation Profile", value: "383 FP8 TFLOPS / 640 GB/s bandwidth / 300W TBP" },
+    ],
+    bestFor: [
+      "AMD local AI development",
+      "ROCm-oriented inference experiments",
+      "32GB professional desktop workloads",
+    ],
+    usedIn: [
+      "AI developer workstations",
+      "Memory-intensive AMD desktop builds",
+      "Visualization and inference prototype systems",
+    ],
+    blackScarabPov:
+      "This should be tracked as AMD's AI-focused pro desktop alternative, but it needs an availability check before buyers rely on it. It could become compelling for ROCm-aware local AI stacks, while CUDA-first software still points many users toward NVIDIA.",
+    officialUrl:
+      "https://www.amd.com/en/products/graphics/workstations/radeon-ai-pro/ai-9000-series/amd-radeon-ai-pro-r9700.html",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "intel-arc-pro-b60-24gb",
+    name: "Intel Arc Pro B60 24GB",
+    vendor: "Intel",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Healthcare", "Retail", "Other"],
+    powerProfile: "Medium (25–200W)",
+    deploymentTypes: ["Indoor"],
+    price: "Price to verify",
+    priceStatus: "Research needed",
+    priceNote:
+      "Intel's Arc Pro B-Series overview was unable to load live pricing at the time of catalog entry. Verify availability and pricing through listed retailers or workstation OEMs before using in a basket.",
+    image: "/product-images/intel-arc-pro-b60-24gb.png",
+    imageAlt: "Intel Arc Pro B60 24GB workstation GPU",
+    summary:
+      "A 24GB Intel Xe2 workstation GPU for AI-capable professional desktops, larger local model execution, multi-display workflows, and scalable Linux workstation builds.",
+    whyItMatters:
+      "The Arc Pro B60 gives the catalog a serious Intel GPU option with 24GB of memory, XMX AI engines, and Gen 5 PCIe. It is useful for users exploring Intel-optimized local AI, media, visualization, and multi-GPU Linux workflows outside the CUDA-first path.",
+    specs: [
+      { label: "GPU Memory", value: "24GB" },
+      { label: "AI / Xe Hardware", value: "20 Xe-cores / 197 pTOPS" },
+      { label: "Workstation Profile", value: "456 GB/s bandwidth / 120-200W TBP / PCIe Gen 5 x8" },
+    ],
+    bestFor: [
+      "Intel local AI workstations",
+      "Power-efficient 24GB GPU builds",
+      "Professional visualization and media workflows",
+    ],
+    usedIn: [
+      "AI developer workstations",
+      "Linux multi-GPU inference systems",
+      "Design, engineering, and content creation desktops",
+    ],
+    blackScarabPov:
+      "This is a good third-ecosystem card to track. It will not replace NVIDIA for CUDA-native stacks, but it may be compelling where Intel drivers, media engines, Linux multi-GPU support, and 24GB of VRAM fit the user's software plan.",
+    officialUrl:
+      "https://www.intel.com/content/www/us/en/products/docs/discrete-gpus/arc/workstations/b-series/overview.html",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "google-coral-usb-accelerator",
+    name: "Google Coral USB Accelerator",
+    vendor: "Google Coral",
+    category: "GPUs & Accelerators",
+    industries: ["Agriculture", "Manufacturing", "Retail", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Mobile", "Industrial"],
+    price: "$59.99",
+    priceStatus: "Starts at",
+    priceNote:
+      "Coral lists the USB Accelerator starting at $59.99 with multiple distributor links, while noting that some Coral products may face stock delays. Verify live stock before adding to a deployment basket.",
+    image: "/product-images/google-coral-usb-accelerator.png",
+    imageAlt: "Google Coral USB Accelerator connected by USB-C",
+    summary:
+      "A compact USB Edge TPU accelerator for low-power TensorFlow Lite inference on existing Linux, macOS, Windows, and Raspberry Pi systems.",
+    whyItMatters:
+      "The Coral USB Accelerator is the opposite end of the AI hardware spectrum from H100-class GPUs. It gives edge builders a cheap, low-power way to add dedicated INT8 inference to cameras, kiosks, prototypes, and small embedded systems.",
+    specs: [
+      { label: "ML Accelerator", value: "Google Edge TPU coprocessor" },
+      { label: "AI Performance", value: "4 TOPS INT8 / 2 TOPS per watt" },
+      { label: "Edge Profile", value: "USB 3.0 Type-C / 65 mm x 30 mm / TensorFlow Lite" },
+    ],
+    bestFor: [
+      "Low-power edge inference",
+      "Raspberry Pi and small Linux prototypes",
+      "TensorFlow Lite computer vision workloads",
+    ],
+    usedIn: [
+      "Smart camera prototypes",
+      "Retail and kiosk inference",
+      "Agriculture and industrial edge sensors",
+    ],
+    blackScarabPov:
+      "This is a useful catalog anchor for tiny edge AI. It will not run general LLM workloads, but it is excellent for cost-sensitive INT8 TensorFlow Lite models where low power, simple USB setup, and local inference matter.",
+    officialUrl: "https://www.coral.ai/products/accelerator",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "nvidia-rtx-6000-ada-generation",
+    name: "NVIDIA RTX 6000 Ada Generation",
+    vendor: "NVIDIA",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Healthcare", "Retail", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor"],
+    price: "Request quote",
+    priceStatus: "Quote required",
+    priceNote:
+      "NVIDIA routes RTX 6000 Ada workstation purchasing through partners and system builders. Final pricing depends on channel, workstation vendor, support, and configuration.",
+    image: "/product-images/nvidia-rtx-6000-ada-generation.png",
+    imageAlt: "NVIDIA RTX 6000 Ada Generation professional GPU",
+    summary:
+      "A 48GB Ada-generation professional GPU for AI workstations, rendering, simulation, visualization, and virtual workstation infrastructure.",
+    whyItMatters:
+      "The RTX 6000 Ada Generation is an important professional workstation baseline: it pairs 48GB of ECC memory with NVIDIA's pro driver ecosystem, strong Tensor Core throughput, and broad software support for AI, design, and simulation workloads.",
+    specs: [
+      { label: "GPU Memory", value: "48GB GDDR6 with ECC" },
+      { label: "AI / FP32 Performance", value: "1457 AI TOPS / 91.1 TFLOPS FP32" },
+      { label: "Workstation Profile", value: "960 GB/s bandwidth / 300W max power" },
+    ],
+    bestFor: [
+      "Professional AI workstations",
+      "Rendering and simulation pipelines",
+      "Virtual workstation infrastructure",
+    ],
+    usedIn: [
+      "Data science workstations",
+      "Engineering visualization systems",
+      "Professional rendering and simulation builds",
+    ],
+    blackScarabPov:
+      "This is a useful previous-generation pro reference point against the RTX PRO 6000 Blackwell family. It remains relevant for buyers who want 48GB of professional VRAM and mature workstation integration without moving to the newest 96GB Blackwell cards.",
+    officialUrl:
+      "https://www.nvidia.com/en-us/products/workstations/rtx-6000/",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "nvidia-geforce-rtx-4060-ti",
+    name: "NVIDIA GeForce RTX 4060 Ti",
+    vendor: "NVIDIA",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Retail", "Other"],
+    powerProfile: "Medium (25–200W)",
+    deploymentTypes: ["Indoor"],
+    price: "Price to verify",
+    priceStatus: "Research needed",
+    priceNote:
+      "NVIDIA's official product page shows specifications and buying options, but the exposed shop price is a placeholder. Verify current 8GB or 16GB board-partner pricing before using in a basket.",
+    image: "/product-images/nvidia-geforce-rtx-4060-ti.png",
+    imageAlt: "NVIDIA GeForce RTX 4060 Ti graphics card on a green and black background",
+    summary:
+      "A power-efficient Ada Lovelace GeForce GPU for budget local AI experiments, creator PCs, lightweight inference, and GPU-backed development workstations.",
+    whyItMatters:
+      "The RTX 4060 Ti is not a large-model powerhouse, but the 16GB version gives budget builders an accessible CUDA GPU with enough VRAM for smaller local AI workflows, prototyping, and model experimentation.",
+    specs: [
+      { label: "GPU Memory", value: "16GB or 8GB GDDR6" },
+      { label: "CUDA / AI Performance", value: "4,352 CUDA cores / 353 AI TOPS" },
+      { label: "Power Guidance", value: "160W graphics card power / 550W required system power" },
+    ],
+    bestFor: [
+      "Budget local AI experiments",
+      "Lightweight inference and prototyping",
+      "Creator and development desktops",
+    ],
+    usedIn: [
+      "Entry local AI workstations",
+      "Computer vision prototype PCs",
+      "CUDA development and testing systems",
+    ],
+    blackScarabPov:
+      "This belongs in the catalog as the accessible NVIDIA option, especially in its 16GB form. It should be positioned for learning, prototyping, and smaller workloads, not as a substitute for the RTX 4090, RTX 5090, or professional RTX cards in serious production baskets.",
+    officialUrl:
+      "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4060-4060ti/",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "nvidia-geforce-rtx-4070-ti-super",
+    name: "NVIDIA GeForce RTX 4070 Ti Super",
+    vendor: "NVIDIA",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Healthcare", "Retail", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor"],
+    price: "$999.99",
+    priceStatus: "Distributor listing",
+    priceNote:
+      "Amazon listing price from the provided ASUS TUF Gaming RTX 4070 Ti Super page. Verify current seller, condition, shipping, and availability before using in a final basket.",
+    image: "/product-images/nvidia-geforce-rtx-4070-ti-super.png",
+    imageAlt: "ASUS TUF Gaming GeForce RTX 4070 Ti Super graphics card and retail box",
+    summary:
+      "A 16GB Ada Lovelace GeForce GPU for serious local AI workstations, creator systems, rendering, simulation, and CUDA-backed development without stepping up to flagship pricing.",
+    whyItMatters:
+      "The RTX 4070 Ti Super is one of the cleaner consumer GPU choices for local AI because it combines 16GB of GDDR6X memory, strong Tensor Core throughput, and manageable workstation-class power requirements.",
+    specs: [
+      { label: "GPU Memory", value: "16GB GDDR6X" },
+      { label: "CUDA / AI Performance", value: "8,448 CUDA cores / 706 AI TOPS" },
+      { label: "Power Guidance", value: "285W total graphics power" },
+    ],
+    bestFor: [
+      "Mid/high-tier local AI workstations",
+      "16GB VRAM inference and experimentation",
+      "Creator, rendering, and simulation PCs",
+    ],
+    usedIn: [
+      "Private AI desktop builds",
+      "CUDA development workstations",
+      "GPU-backed content and engineering systems",
+    ],
+    blackScarabPov:
+      "This is the sensible step between the RTX 4060 Ti and RTX 4090. It gives buyers a meaningful 16GB VRAM tier for local AI and pro workloads while keeping power, cooling, and budget more approachable than the flagship cards.",
+    officialUrl:
+      "https://www.amazon.com/ASUS-Graphics-RTX4070Ti-DisplayPort-TUF-RTX4070TIS-O16G-GAMING/dp/B0CS3X3DTG/ref=sr_1_1?dib=eyJ2IjoiMSJ9.97q8KjMhSlxGgtorvgfN7DDyUlU_TveKcspa3XvJokw8Y6OcmG-Ta03B6Q3AwRqaCUmhzZ-eLIbr-blQoQvVjA94esF4mma0pWOrwPUiwczZM8Wuzcht4MWBLB4r-PTjrUnyTik55I_GymIyMr7R7gbV6RyAA4CgUqEv3UUGWCVnynl6n8SgFIE6ZsSzpg9OSM5vuu1c5A8z_gh-u4kkTsOtL6TFEokwamJYpOwxL7Q.g0BSyQ3RS-a5C0VRRmKDMgw5qNt1m5ZcXLEA8DlqrBg&dib_tag=se&keywords=geforce+rtx%E2%84%A2+4070+ti+super&qid=1779370718&sr=8-1",
+    sourceLabel: "Distributor listing",
+  },
+  {
+    slug: "nvidia-geforce-rtx-4080-super",
+    name: "NVIDIA GeForce RTX 4080 Super",
+    vendor: "NVIDIA",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Healthcare", "Retail", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor"],
+    price: "Price to verify",
+    priceStatus: "Research needed",
+    priceNote:
+      "Amazon requires cart or sign-in flow for current price visibility on the provided ASUS TUF Gaming RTX 4080 Super listing. Verify live seller, condition, shipping, and availability before using in a final basket.",
+    image: "/product-images/nvidia-geforce-rtx-4080-super.png",
+    imageAlt: "ASUS TUF Gaming GeForce RTX 4080 Super graphics card and retail box",
+    summary:
+      "A high-end 16GB Ada Lovelace GeForce GPU for premium local AI workstations, rendering, simulation, creator workloads, and CUDA-backed development systems.",
+    whyItMatters:
+      "The RTX 4080 Super sits just below flagship consumer GPUs while keeping the same 16GB VRAM tier as the RTX 4070 Ti Super. It offers more compute headroom for users who need stronger local AI and rendering performance without moving to RTX 4090-class power and pricing.",
+    specs: [
+      { label: "GPU Memory", value: "16GB GDDR6X" },
+      { label: "CUDA / AI Performance", value: "10,240 CUDA cores / 836 AI TOPS" },
+      { label: "Power Guidance", value: "320W total graphics power" },
+    ],
+    bestFor: [
+      "Premium 16GB local AI workstations",
+      "High-throughput inference and development",
+      "Rendering, simulation, and creator systems",
+    ],
+    usedIn: [
+      "Private AI workstation builds",
+      "CUDA-heavy development desktops",
+      "GPU-backed visualization and content systems",
+    ],
+    blackScarabPov:
+      "This is the upper 16GB consumer GPU tier. It makes sense when a buyer wants more compute than the RTX 4070 Ti Super but does not need or cannot justify the VRAM, power draw, and cost profile of the RTX 4090 or RTX 5090.",
+    officialUrl:
+      "https://www.amazon.com/ASUS-Gaming-GeForce-Graphics-DisplayPort/dp/B0CQPZTRL3?th=1",
+    sourceLabel: "Distributor listing",
+  },
+  {
+    slug: "nvidia-geforce-rtx-5090",
+    name: "NVIDIA GeForce RTX 5090",
+    vendor: "NVIDIA",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Healthcare", "Retail", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor"],
+    price: "Price to verify",
+    priceStatus: "Research needed",
+    priceNote:
+      "NVIDIA's official product page shows specifications and buying options, but the page text exposes placeholder pricing. Verify live board-partner pricing before using in a final basket.",
+    image: "/product-images/nvidia-geforce-rtx-5090.png",
+    imageAlt: "NVIDIA GeForce RTX 5090 graphics card over a green wave pattern",
+    summary:
+      "A 32GB Blackwell-generation GeForce RTX GPU for premium local AI workstations, high-end inference, rendering, simulation, and creator workloads.",
+    whyItMatters:
+      "The RTX 5090 pushes the consumer workstation tier forward with 32GB of GDDR7 memory, 5th-generation Tensor Cores, and significantly higher AI throughput, making it a major candidate for serious local AI baskets.",
+    specs: [
+      { label: "GPU Memory", value: "32GB GDDR7" },
+      { label: "CUDA / AI Performance", value: "21,760 CUDA cores / 3352 AI TOPS" },
+      { label: "Power Guidance", value: "575W graphics card power / 1000W required system power" },
+    ],
+    bestFor: [
+      "Premium local AI workstations",
+      "High-end inference and experimentation",
+      "Rendering, simulation, and creator workloads",
+    ],
+    usedIn: [
+      "Private AI workstation builds",
+      "Local model experimentation systems",
+      "GPU-heavy creator and engineering desktops",
+    ],
+    blackScarabPov:
+      "This should become one of the headline local AI workstation GPUs in the catalog. The extra VRAM over the RTX 4090 matters, but the power and cooling requirements mean it should be treated as a full-system design choice, not just a drop-in part.",
+    officialUrl:
+      "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/",
+    sourceLabel: "Official product page",
+  },
+  {
+    slug: "nvidia-geforce-rtx-4090",
+    name: "NVIDIA GeForce RTX 4090",
+    vendor: "NVIDIA",
+    category: "GPUs & Accelerators",
+    industries: ["Manufacturing", "Healthcare", "Retail", "Other"],
+    powerProfile: "High (200W+)",
+    deploymentTypes: ["Indoor"],
+    price: "Price to verify",
+    priceStatus: "Research needed",
+    priceNote:
+      "NVIDIA's official product page provides specifications and where-to-buy paths, but current market pricing varies by board partner, seller, inventory, and region.",
+    image: "/product-images/nvidia-geforce-rtx-4090.png",
+    imageAlt: "NVIDIA GeForce RTX 4090 graphics card on a green and black background",
+    summary:
+      "A 24GB GeForce RTX GPU for high-end local AI workstations, model experimentation, rendering, simulation, and GPU-backed development systems.",
+    whyItMatters:
+      "The RTX 4090 became a defining local AI card because its 24GB of VRAM, CUDA ecosystem, and strong Tensor Core performance make it practical for serious inference, fine-tuning experiments, and creator workloads outside a data center.",
+    specs: [
+      { label: "GPU Memory", value: "24GB GDDR6X" },
+      { label: "CUDA / AI Performance", value: "16,384 CUDA cores / 1321 AI TOPS" },
+      { label: "Power Guidance", value: "450W graphics card power / 850W minimum system power" },
+    ],
+    bestFor: [
+      "High-end local AI workstations",
+      "GPU-backed model experimentation",
+      "Rendering, simulation, and creator workloads",
+    ],
+    usedIn: [
+      "Private AI workstations",
+      "Local LLM inference boxes",
+      "GPU development and prototyping systems",
+    ],
+    blackScarabPov:
+      "This is one of the most important consumer GPUs to track for local AI. It is not a data center card, but the 24GB VRAM and CUDA software stack make it a practical anchor for serious workstation baskets when enterprise GPUs are over budget.",
+    officialUrl:
+      "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4090/",
+    sourceLabel: "Official product page",
+  },
+  {
     slug: "nvidia-jetson-orin-nx",
     name: "NVIDIA Jetson Orin NX",
     vendor: "NVIDIA / Seeed Studio",
