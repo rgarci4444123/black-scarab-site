@@ -1646,7 +1646,372 @@ const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
   ],
 });
 
+const bostonDynamicsSpotDeepDive = (): CaseStudyArticle => ({
+  slug: "boston-dynamics-spot-robot-industrial-inspection-guide",
+  title:
+    "Boston Dynamics Spot Robot Deep Dive: Industrial Inspection, Pricing, ROI, and Edge AI Use Cases",
+  summary:
+    "A business-focused deep dive on Boston Dynamics Spot, covering industrial inspection use cases, pricing context, enterprise deployment patterns, payloads, fleet software, ROI logic, and when the robot actually makes sense.",
+  publishedLabel: "Robotics Series · Published May 22, 2026",
+  publishedDate: "2026-05-22",
+  typeLabel: "Robotics Series",
+  formatLabel: "Robot deep dive for business leaders",
+  industry: "Cross-Industry",
+  image: "/article-images/boston-dynamics-spot-industrial-inspection-guide.png",
+  imageAlt:
+    "Boston Dynamics Spot-style quadruped inspection robot in an industrial facility.",
+  seoDescription:
+    "A 2026 business guide to Boston Dynamics Spot for industrial inspection, including pricing context, use cases, ROI, payloads, autonomous missions, Orbit fleet software, and edge AI deployment strategy.",
+  tags: [
+    "Boston Dynamics Spot",
+    "Spot robot",
+    "industrial inspection robot",
+    "robotics ROI",
+    "edge AI robotics",
+    "predictive maintenance",
+    "quadruped robot",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Boston Dynamics Spot is not a consumer robot dog, and it is not a humanoid replacement for human labor. Spot is best understood as a mobile inspection platform: a four-legged robot that can walk through complex industrial environments, carry sensors, repeat inspection routes, and send structured data back to teams that manage equipment, safety, and uptime.",
+        "This is the first deep dive in Black Scarab's robotics series. The audience is the industry leader who keeps hearing about robots but does not yet know which systems are commercially useful, which are still demos, and which pieces of the hardware stack matter. Spot is a good place to start because it is one of the clearest examples of a robot moving from viral video into real industrial workflows.",
+        "The simple business question is this: can a mobile robot collect better operational data than a human walking the same route, a fixed camera, or thousands of fixed sensors? In the right facility, the answer can be yes. In the wrong facility, Spot can become an expensive demonstration. The difference is workflow design.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Spot matters because it solves a specific problem: many facilities need regular inspection data from places that are hot, remote, hazardous, repetitive, or difficult to instrument permanently. A robot that can walk, climb stairs, avoid obstacles, carry payloads, dock, and run autonomous missions becomes a flexible data collector.",
+        "Boston Dynamics says Spot is already in the hands of more than 1,500 customers. That does not make it a universal automation answer, but it does make Spot one of the most mature commercial quadruped platforms available to enterprise buyers.",
+        "For executives, the buying decision should not begin with the robot. It should begin with the inspection route. If the route is repetitive, valuable, measurable, and difficult for people or fixed sensors, Spot deserves a serious look. If the route is vague or the data will not trigger operational action, the project is not ready.",
+      ],
+      tables: [
+        {
+          title: "Spot at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "A quadruped mobile robot for inspection, sensing, teleoperation, and autonomous data collection.",
+            ],
+            [
+              "Who is it for?",
+              "Industrial, energy, construction, mining, manufacturing, utilities, public safety, and research teams.",
+            ],
+            [
+              "What does it replace?",
+              "Some manual inspection rounds, some hazardous walkdowns, and some expensive fixed-sensor deployments.",
+            ],
+            [
+              "What does it not replace?",
+              "Skilled maintenance crews, engineers, safety programs, or a clear asset-management process.",
+            ],
+            [
+              "How should leaders evaluate it?",
+              "By route value, safety risk, downtime risk, data quality, integration effort, and repeatability.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What Spot Actually Does",
+      paragraphs: [
+        "Spot is a legged mobile base with onboard perception, autonomy software, a tablet control interface, APIs, and a payload ecosystem. Its core job is mobility. It can move through environments that are awkward for wheels: stairs, uneven flooring, cluttered mechanical rooms, construction sites, tunnels, substations, and industrial plants.",
+        "That mobility only becomes valuable when the robot carries useful sensors. Boston Dynamics positions Spot for thermal inspection, acoustic inspection, gauge reading, laser scanning, site documentation, hazardous response, and autonomous sensing. The robot is the platform; the payload and workflow determine the business case.",
+        "Spot's official specifications describe a 14 kg payload limit, roughly 90 minutes of runtime, object avoidance, stair and complex-terrain navigation, IP54 rating, manual and autonomous operation, and a flexible API. For a business buyer, the key point is not the spec sheet by itself. The point is whether those capabilities let the organization capture data that would otherwise be missed, delayed, unsafe, or too expensive to collect.",
+      ],
+    },
+    {
+      heading: "Where Spot Is Being Used",
+      paragraphs: [
+        "Spot is strongest in asset-intensive environments. These are places where downtime is expensive, inspections are recurring, and safety risk is real. Boston Dynamics' own industry materials emphasize power and utilities, nuclear power, oil and gas, mining, manufacturing, construction, and public safety.",
+        "In power and utilities, Spot can perform thermal inspections of pumps, motors, electrical connections, and substations. In oil and gas, it can support leak detection, thermal anomaly detection, gas sensing, and routine site awareness. In mining, it can inspect tunnels, build digital twins, and gather data without sending people into higher-risk areas.",
+        "Manufacturing is one of the clearest business cases because facilities often contain thousands of assets but not every asset justifies a fixed sensor. A mobile robot can move between inspection points, collect data periodically, and help teams build predictive maintenance workflows without wiring every machine.",
+      ],
+      tables: [
+        {
+          title: "Industries Where Spot Fits Best",
+          columns: ["Industry", "Likely Use Case", "Why It Matters"],
+          rows: [
+            [
+              "Manufacturing",
+              "Predictive maintenance, gauge reading, thermal checks, digital twins.",
+              "Keeps production moving by finding equipment issues before they become downtime.",
+            ],
+            [
+              "Power and utilities",
+              "Substation inspection, thermal anomalies, remote facility patrols.",
+              "Reduces exposure around energized assets and improves inspection consistency.",
+            ],
+            [
+              "Oil and gas",
+              "Gas leaks, acoustic leaks, thermal anomalies, facility awareness.",
+              "Supports safer monitoring in hazardous or remote operating environments.",
+            ],
+            [
+              "Mining",
+              "Tunnel inspection, laser scanning, environmental sensing.",
+              "Improves visibility in areas where human inspection can be dangerous or slow.",
+            ],
+            [
+              "Construction",
+              "Progress capture, site documentation, laser scanning, BIM comparison.",
+              "Turns jobsite walks into repeatable data collection and digital-twin updates.",
+            ],
+            [
+              "Public safety and hazardous response",
+              "Remote situational awareness, hazmat inspection, suspicious package inspection.",
+              "Gets eyes and sensors into dangerous situations before people enter.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Pricing and Total Cost",
+      paragraphs: [
+        "The public pricing reference most buyers know is the 2020 Spot Explorer launch price: $74,500 for the developer kit. That figure is useful as historical context, but it should not be treated as the full cost of an enterprise deployment in 2026.",
+        "A serious Spot program can include the robot, batteries, charger, tablet, payloads, Spot CAM or thermal payloads, Spot Arm if manipulation is needed, Spot Dock for remote operation, Orbit fleet software, integration services, training, support, and internal change-management time. The most important number is not the base robot price. It is the total cost to turn a robot walk into useful operational data.",
+        "For Black Scarab's buyer lens, Spot should be evaluated like a mobile inspection system, not like a single hardware purchase. The right budget conversation is: what downtime, safety exposure, inspection labor, missed anomaly, or fixed-sensor cost is this system meant to reduce?",
+      ],
+      tables: [
+        {
+          title: "Spot Cost Areas to Budget For",
+          columns: ["Cost Area", "What It Covers", "Buyer Note"],
+          rows: [
+            [
+              "Base robot",
+              "Spot platform, batteries, controller, cases, and core mobility.",
+              "The historical public launch price was $74,500, but current pricing should be verified with Boston Dynamics or partners.",
+            ],
+            [
+              "Payloads",
+              "Thermal cameras, acoustic sensors, gas sensors, laser scanners, pan-tilt-zoom cameras, or custom sensor packages.",
+              "Payload choice determines whether the robot creates business value or only video.",
+            ],
+            [
+              "Docking and remote operations",
+              "Spot Dock, remote mission launch, charging, and long-running site coverage.",
+              "Important when the goal is unattended repeat inspection rather than occasional teleoperation.",
+            ],
+            [
+              "Software and integration",
+              "Orbit, APIs, mission scheduling, EAM/CMMS integration, dashboards, alerts, and data storage.",
+              "Most ROI depends on getting robot observations into maintenance and operations systems.",
+            ],
+            [
+              "Training and support",
+              "Operator training, safety planning, support, maintenance, and internal process rollout.",
+              "A robot program fails if only one enthusiastic operator knows how it works.",
+            ],
+          ],
+          note: "Treat public base pricing as a starting reference only. A production deployment should be quoted as a full inspection system.",
+        },
+      ],
+    },
+    {
+      heading: "Why Companies Integrate Spot",
+      paragraphs: [
+        "The strongest reason to integrate Spot is not novelty. It is consistency. Human inspection rounds vary with staffing, shift changes, safety constraints, weather, attention, and access. A robot can repeat the same route, capture the same view, and timestamp the same asset over time.",
+        "That consistency is what enables predictive maintenance. In the GlobalFoundries case study, the company compared installing thousands of fixed sensors against using Spot as a mobile suite of sensors. Their conclusion was that periodic mobile inspection was more practical for a facility with long-life equipment and many inspection points.",
+        "The larger trend is that mobile robots are being connected to enterprise systems. Boston Dynamics' Orbit software centralizes mission data, supports fleet management, and can be integrated through APIs and webhooks. The 2025 IFS and Boston Dynamics collaboration points in the same direction: robots collecting field data, AI analyzing it, and enterprise systems turning anomalies into maintenance actions.",
+      ],
+    },
+    {
+      heading: "The ROI Logic",
+      paragraphs: [
+        "Spot does not save money merely by walking around a facility. It saves money only when the data it collects changes decisions. That is the executive filter.",
+        "The clearest ROI paths are avoided downtime, faster anomaly detection, fewer hazardous entries, reduced need for fixed sensors, better inspection consistency, and richer asset history. These are not equally valuable in every business. A semiconductor fab, refinery, mine, utility substation, and construction site will measure value differently.",
+        "A good first Spot project should have a narrow ROI hypothesis. For example: reduce manual thermal inspection time on a defined route, detect overheating motors earlier, document construction progress daily, inspect energized substations without sending people into unnecessary risk, or monitor gas and acoustic anomalies in a remote facility.",
+      ],
+      tables: [
+        {
+          title: "Spot ROI Checklist",
+          columns: ["Question", "Why It Matters"],
+          rows: [
+            [
+              "Is the route repetitive?",
+              "Repeatability is what turns a robot mission into comparable data over time.",
+            ],
+            [
+              "Is the asset valuable?",
+              "The higher the downtime or safety cost, the easier it is to justify robotic inspection.",
+            ],
+            [
+              "Can Spot physically access the route?",
+              "Stairs and rough terrain are strengths; ladders, confined spaces, and some surfaces may still be limitations.",
+            ],
+            [
+              "Will the data trigger action?",
+              "If anomalies do not create alerts, work orders, or engineering review, the robot is only documenting problems.",
+            ],
+            [
+              "Who owns the program?",
+              "Successful deployments need operations, maintenance, safety, IT, and site leadership aligned.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Edge AI Stack Behind Spot",
+      paragraphs: [
+        "Spot is a useful Black Scarab case study because it shows that robotics is a stack, not a single product. The robot has mobility, perception, autonomy, power, compute, payload interfaces, APIs, and operator software. The enterprise deployment adds networking, data storage, dashboards, integrations, safety procedures, and maintenance workflows.",
+        "At the sensing layer, Spot can carry cameras, thermal imagers, acoustic imagers, gas sensors, and laser scanners. At the autonomy layer, it can run programmed routes and adapt around obstacles within defined mission logic. At the operations layer, Orbit can centralize fleet data, mission history, teleoperation sessions, and integrations.",
+        "For leaders evaluating robots, this matters because the robot body is only the visible part of the investment. The invisible parts are what determine whether the system produces value: sensor selection, mission design, alerting, data governance, integration with maintenance systems, and ownership inside the organization.",
+      ],
+      tables: [
+        {
+          title: "What a Spot Deployment Really Includes",
+          columns: ["Layer", "Examples", "Business Question"],
+          rows: [
+            [
+              "Robot platform",
+              "Spot, batteries, controller, charging, payload mounts.",
+              "Can the robot reliably travel the route and survive the environment?",
+            ],
+            [
+              "Sensing",
+              "Thermal, acoustic, gas, visual, LiDAR, gauges, 360 imaging.",
+              "What data do we need to capture to make better decisions?",
+            ],
+            [
+              "Autonomy",
+              "Programmed missions, obstacle avoidance, remote operation, docking.",
+              "Can the route be repeated safely without constant manual driving?",
+            ],
+            [
+              "Software",
+              "Orbit, APIs, dashboards, EAM/CMMS integrations, work orders.",
+              "Will the robot's observations enter the systems the business already uses?",
+            ],
+            [
+              "Operations",
+              "Training, safety rules, maintenance ownership, support plan.",
+              "Who is accountable for making the robot useful every week?",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "When Spot Is a Bad Fit",
+      paragraphs: [
+        "Spot is not the right answer for every company interested in robotics. If the job is simple indoor material movement on flat floors, an autonomous mobile robot may be cheaper and easier. If the task is repetitive manipulation at a fixed workstation, a cobot arm may create faster ROI. If the route can be covered with one fixed thermal camera, a mobile robot may be unnecessary.",
+        "Spot is also a bad fit when leadership buys the robot before defining the workflow. The first question should not be, 'What can we do with Spot?' It should be, 'Which inspection route is expensive, dangerous, inconsistent, or strategically important enough to automate?'",
+        "The best early deployments are narrow. Start with one facility, one route, one sensor package, and one operational outcome. If that route produces value, expand. If it does not, the organization learns before turning a robot trial into an expensive fleet program.",
+      ],
+    },
+    {
+      heading: "Implementation Roadmap for a First Pilot",
+      paragraphs: [
+        "A realistic Spot pilot should be designed like an operations project, not a marketing event. The goal is not to prove that the robot can walk. The goal is to prove that it can collect useful data repeatedly and trigger better decisions.",
+        "The first pilot should identify a high-value route, baseline the current human process, choose payloads, define success metrics, run supervised missions, then gradually move toward autonomous repeatability. Only after that should the buyer evaluate docks, fleet software, multiple robots, or enterprise-wide integration.",
+      ],
+      tables: [
+        {
+          title: "First Spot Pilot Plan",
+          columns: ["Step", "Action", "Success Signal"],
+          rows: [
+            [
+              "1",
+              "Choose one inspection route with clear asset value.",
+              "The route has measurable downtime, safety, or labor relevance.",
+            ],
+            [
+              "2",
+              "Define the data product before buying payloads.",
+              "The team knows whether it needs thermal readings, gauge readings, images, acoustic data, gas sensing, or laser scans.",
+            ],
+            [
+              "3",
+              "Run supervised missions.",
+              "Operators can complete the route safely and consistently.",
+            ],
+            [
+              "4",
+              "Automate repeat missions.",
+              "The robot captures comparable data across time without constant manual driving.",
+            ],
+            [
+              "5",
+              "Integrate alerts or work orders.",
+              "Robot observations become maintenance actions, not isolated media files.",
+            ],
+            [
+              "6",
+              "Review ROI before scaling.",
+              "The pilot shows enough value to justify dock, payload, software, or fleet expansion.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Black Scarab Takeaway",
+      paragraphs: [
+        "Boston Dynamics Spot is the right kind of robot for executives to study because it makes the robotics business case concrete. It is not promising to replace every worker. It is promising to send a mobile sensor platform into places where repeatable data collection is valuable.",
+        "The lesson for industry leaders is bigger than Spot itself. The future of robotics will be built around complete stacks: robot bodies, sensors, onboard compute, fleet software, enterprise integrations, charging, safety, service, and workflow design. The winners will not be the companies that buy the most impressive robot. They will be the companies that connect the robot to the right operational problem.",
+        "For Black Scarab's catalog vision, Spot is a model of what we eventually need to help buyers understand: not just which robot to buy, but which cameras, sensors, compute, networking, software, charging, and support systems make the robot useful in a real business.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using Boston Dynamics product materials, Spot specifications, Boston Dynamics industry pages, GlobalFoundries' Spot predictive-maintenance case study, Boston Dynamics developer documentation for Orbit and Spot Arm, and reporting on the original public Spot Explorer launch price. Current enterprise pricing and configurations should be verified directly with Boston Dynamics or an authorized partner before procurement.",
+      ],
+    },
+  ],
+  sources: [
+    "Boston Dynamics Spot official product materials",
+    "Boston Dynamics Spot specifications",
+    "Boston Dynamics Energy & Natural Resources industry page",
+    "GlobalFoundries predictive maintenance case study",
+    "Boston Dynamics Orbit documentation",
+    "Boston Dynamics Spot Arm documentation",
+    "VentureBeat coverage of the original Spot Explorer launch price",
+    "Professional Engineering coverage of the Boston Dynamics and IFS industrial inspection collaboration",
+  ],
+  sourceLinks: [
+    {
+      label: "Boston Dynamics Spot",
+      url: "https://bostondynamics.com/products/spot/",
+    },
+    {
+      label: "Spot specifications",
+      url: "https://bostondynamics.com/wp-content/uploads/2020/10/spot-specifications.pdf",
+    },
+    {
+      label: "Boston Dynamics Energy & Natural Resources",
+      url: "https://bostondynamics.com/industry/energy-natural-resources/",
+    },
+    {
+      label: "GlobalFoundries predictive maintenance case study",
+      url: "https://resources.bostondynamics.com/hubfs/Content%20Files/Global_Foundries_Case_Study%20%282%29.pdf",
+    },
+    {
+      label: "Boston Dynamics Orbit documentation",
+      url: "https://dev.bostondynamics.com/docs/concepts/orbit/about_orbit.html",
+    },
+    {
+      label: "Boston Dynamics Spot Arm documentation",
+      url: "https://dev.bostondynamics.com/docs/concepts/arm/arm_specification",
+    },
+    {
+      label: "VentureBeat Spot Explorer launch price coverage",
+      url: "https://venturebeat.com/ai/boston-dynamics-buy-spot-robot-74500",
+    },
+    {
+      label: "Professional Engineering on Spot and IFS industrial inspections",
+      url: "https://www.imeche.org/news/news-article/boston-dynamics-spot-robot-gets-ai-upgrade-for-fully-automated-industrial-inspections",
+    },
+  ],
+});
+
 export const caseStudies: CaseStudyArticle[] = [
+  bostonDynamicsSpotDeepDive(),
   topRobotsEdgeAiGuide(),
   localAiEnterpriseGuide(),
   localAiSmallBusinessGuide(),
