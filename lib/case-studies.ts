@@ -2010,8 +2010,387 @@ const bostonDynamicsSpotDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const anyboticsAnymalDeepDive = (): CaseStudyArticle => ({
+  slug: "anybotics-anymal-industrial-inspection-robot-guide",
+  title:
+    "ANYbotics ANYmal Deep Dive: Industrial Inspection Robots for Energy, Mining, Chemicals, and Heavy Industry",
+  summary:
+    "A business-focused deep dive on ANYbotics ANYmal, covering autonomous industrial inspection, ANYmal X for Ex-zones, pricing context, ROI logic, sensors, onboarding, enterprise integration, and where quadruped robots make operational sense.",
+  publishedLabel: "Robotics Series · Published May 23, 2026",
+  publishedDate: "2026-05-23",
+  typeLabel: "Robotics Series",
+  formatLabel: "Robot deep dive for business leaders",
+  industry: "Cross-Industry",
+  image: "/article-images/anybotics-anymal-industrial-inspection-robot-guide.png",
+  imageAlt:
+    "ANYbotics ANYmal-style quadruped inspection robot operating in a wet industrial plant.",
+  seoDescription:
+    "A 2026 business guide to ANYbotics ANYmal and ANYmal X for autonomous industrial inspection in energy, mining, chemicals, oil and gas, power, utilities, and heavy industry.",
+  tags: [
+    "ANYbotics ANYmal",
+    "ANYmal X",
+    "industrial inspection robot",
+    "quadruped robot",
+    "Ex-zone robot",
+    "chemical plant inspection",
+    "mining robotics",
+    "edge AI robotics",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "ANYbotics ANYmal is a four-legged industrial inspection robot built for the places where routine inspection is still expensive, hazardous, inconsistent, or trapped in paper-based workflows. It is not a consumer robot and it is not trying to be a general humanoid worker. It is a rugged mobile inspection system for complex plants.",
+        "This is the second deep dive in Black Scarab's robotics series. The goal is to help industry leaders understand what is actually available, what the robot does, where it fits, and whether it can help a business. ANYmal matters because it is designed around one of the clearest robotics use cases: autonomous inspection in energy, mining, chemicals, power, utilities, transport, and heavy industry.",
+        "The core question is not whether ANYmal can walk. The core question is whether a robot can collect better inspection data, more often, in places where people are exposed to heat, gas, stairs, weather, noise, height, remote access, or explosive-atmosphere restrictions.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "ANYmal is best understood as a recurring inspection coworker. It travels through brownfield industrial facilities, carries a standard sensor suite, captures visual, thermal, acoustic, LiDAR, and optional gas data, and sends that data into software systems where teams can identify anomalies and take action.",
+        "ANYbotics offers two main inspection platforms. ANYmal is the rugged industrial-grade robot for demanding facilities. ANYmal X is the Ex-certified variant built for explosive atmospheres, including Zone 1 environments under ATEX and IECEx standards. That distinction matters for chemicals, oil and gas, and other facilities where ordinary electronics cannot simply walk into classified areas.",
+        "For executives, ANYmal should be evaluated as an inspection program, not a robot purchase. The robot only creates value when inspection routes, data models, alerts, maintenance workflows, and site operations are designed around it.",
+      ],
+      tables: [
+        {
+          title: "ANYmal at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "A rugged autonomous quadruped robot for industrial inspection and data collection.",
+            ],
+            [
+              "What is ANYmal X?",
+              "An Ex-certified version for explosive atmospheres, including Zone 1 IIB use cases.",
+            ],
+            [
+              "Who is it for?",
+              "Chemicals, oil and gas, power and utilities, mining, metals, minerals, transport, and complex industrial sites.",
+            ],
+            [
+              "What does it collect?",
+              "Visual, thermal, acoustic, LiDAR, and optional gas or acoustic-imaging data.",
+            ],
+            [
+              "What does it need to succeed?",
+              "Defined inspection routes, docking, onboarding, integration, safety process, and maintenance-system ownership.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What ANYmal Actually Does",
+      paragraphs: [
+        "ANYmal's job is to automate recurring inspection rounds in complex industrial facilities. It can navigate multi-floor plants, stairs, wet or bumpy terrain, cramped positions, and low-light environments while carrying sensors that collect information operators normally gather manually.",
+        "The standard ANYmal payload includes visual and thermal cameras, a pan-tilt unit, spotlight, ultrasonic microphone, and LiDAR. ANYbotics also describes custom sensor options for gas sensing and acoustic imaging. This makes the robot useful for more than video: it can monitor temperature, detect acoustic anomalies, help localize leaks, document reality, and support predictive maintenance.",
+        "The hardware specs are business-relevant because they describe operational rhythm. ANYbotics lists roughly 90 minutes of battery run time, 100 minutes for a 70 percent quick charge, three hours for a full charge, a 2 km walking range, 0.75 m/s normal walking speed, built-in Wi-Fi and 4G/LTE, IP67 ruggedization, 360-degree LiDAR, six depth cameras, and onboard edge compute powered by dual Intel i7 processors.",
+      ],
+    },
+    {
+      heading: "Where ANYmal Is Being Used",
+      paragraphs: [
+        "ANYmal is strongest in industries where routine inspection intersects with safety risk and asset uptime. ANYbotics explicitly positions the platform for oil and gas, chemicals, power and utilities, mining, metals and minerals, railway, transportation, construction, and other heavy industrial environments.",
+        "In chemicals, ANYmal can monitor assets, identify thermal anomalies, detect gas presence, create 3D reality capture, and reduce operator exposure in corrosive, gaseous, high-temperature, and ATEX-classified areas. The ANYmal X version is especially important because many chemical and oil and gas facilities have Zone 1 areas where certified equipment is required.",
+        "In power and utilities, the robot can inspect substations and equipment without requiring a human to walk every route. In mining and metals, the value is visibility in environments that can be remote, uneven, dusty, wet, or difficult to access. In transport and rail, the logic is similar: recurring inspection points, safety concerns, asset continuity, and the need to turn visual checks into operational data.",
+      ],
+      tables: [
+        {
+          title: "Industries Where ANYmal Fits Best",
+          columns: ["Industry", "Likely Use Case", "Why It Matters"],
+          rows: [
+            [
+              "Chemicals",
+              "Thermal inspection, gas presence, anomaly detection, ATEX and non-ATEX inspection rounds.",
+              "Reduces exposure in hazardous areas and helps teams detect avoidable failures earlier.",
+            ],
+            [
+              "Oil and gas",
+              "Offshore and onshore inspection, gas sensing, acoustic monitoring, remote site checks.",
+              "Supports inspection in dangerous, remote, or explosive-atmosphere environments.",
+            ],
+            [
+              "Power and utilities",
+              "Substation monitoring, thermal checks, asset inspection, remote facility patrols.",
+              "Improves inspection consistency while reducing unnecessary human exposure.",
+            ],
+            [
+              "Mining, metals, and minerals",
+              "Tunnel and plant inspection, harsh-terrain mobility, environmental sensing.",
+              "Provides routine visibility in sites where access can be difficult or risky.",
+            ],
+            [
+              "Transportation and rail",
+              "Infrastructure inspection, facility monitoring, recurring condition checks.",
+              "Turns repeated walkdowns into structured digital inspection data.",
+            ],
+            [
+              "Data centers and large facilities",
+              "Thermal monitoring, equipment checks, remote operations support.",
+              "Helps operators monitor critical assets with repeatable routes and sensor data.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Pricing and Total Cost",
+      paragraphs: [
+        "ANYbotics does not publish a simple retail price for ANYmal or ANYmal X. That is normal for enterprise inspection robotics. The robot is usually sold as part of a configured deployment that depends on site requirements, safety classification, payloads, docking, software, onboarding, support, and integration scope.",
+        "Business leaders should avoid asking only, 'How much does the robot cost?' A better question is, 'What does it cost to turn inspection rounds into reliable operational data?' The total program can include the robot, docking stations, sensor configuration, Data Navigator, mission design, CAD or digital-twin setup, site validation, training, support, cloud or enterprise integration, and internal maintenance-process changes.",
+        "ANYmal X can also change the cost discussion because Ex-certified deployments are more specialized. If the alternative is sending people into Zone 1 environments, issuing permits, limiting inspection frequency, or missing early signs of failure, the economics are not comparable to buying a generic robot for a clean warehouse.",
+      ],
+      tables: [
+        {
+          title: "ANYmal Cost Areas to Budget For",
+          columns: ["Cost Area", "What It Covers", "Buyer Note"],
+          rows: [
+            [
+              "Robot platform",
+              "ANYmal or ANYmal X, base mobility, onboard compute, batteries, tablet, charger, and core autonomy.",
+              "Current pricing should be quoted directly through ANYbotics or partners.",
+            ],
+            [
+              "Inspection payloads",
+              "Visual, thermal, acoustic, LiDAR, gas sensing, acoustic imaging, or specialized sensors.",
+              "Sensor selection determines whether the robot produces useful data or only media.",
+            ],
+            [
+              "Docking and route coverage",
+              "Docking station, charging strategy, range extension, multi-floor route planning.",
+              "Important for repeat autonomous inspection rather than occasional manual operation.",
+            ],
+            [
+              "Software and data layer",
+              "Data Navigator, cloud services, dashboards, APIs, enterprise integrations.",
+              "The value comes from turning robot observations into maintenance actions.",
+            ],
+            [
+              "Onboarding and support",
+              "Virtual setup, CAD/BIM route validation, field engineering, operator training, safety process.",
+              "ANYbotics emphasizes onboarding because plant deployment is an operational change, not a plug-in gadget.",
+            ],
+          ],
+          note: "For procurement, treat ANYmal as an inspection solution quote rather than a retail hardware SKU.",
+        },
+      ],
+    },
+    {
+      heading: "Why Companies Integrate ANYmal",
+      paragraphs: [
+        "The strongest reason to integrate ANYmal is to make inspection more frequent, safer, and more digital. In many industrial plants, inspection still depends on humans walking routes, reading gauges, listening for abnormal sounds, taking thermal readings, writing notes, and deciding what to escalate.",
+        "ANYmal changes the inspection model by giving facilities a repeatable mobile data collector. It can follow planned routes, collect the same categories of data over time, and support trend analysis. The value is not just remote walking. The value is repeatable condition monitoring.",
+        "ANYbotics highlights chemical-industry examples where thermal, visual, and acoustic data helped identify avoidable failures. On its chemicals page, ANYbotics quotes Grace's automation and robotics team saying extrapolated savings showed about a 1.5 percent increase in production uptime for one plant directly attributable to ANYmal. That is the kind of business signal leaders should look for: not robot novelty, but measurable uptime impact.",
+      ],
+    },
+    {
+      heading: "The ROI Logic",
+      paragraphs: [
+        "ANYmal's ROI does not come from replacing every human inspector. It comes from improving inspection frequency, safety, data quality, early anomaly detection, and the ability to document plant conditions consistently.",
+        "The best ROI cases are facilities where downtime is expensive, environments are hazardous, inspection routes are repetitive, and there are many assets that do not justify fixed sensors at every point. A robot can move between assets and bring the sensor package to the inspection point.",
+        "The wrong ROI case is vague curiosity. If leadership cannot name the route, the asset class, the anomaly, the safety exposure, or the action that follows detection, the project is not ready. Robots do not create value just by existing in a plant.",
+      ],
+      tables: [
+        {
+          title: "ANYmal ROI Checklist",
+          columns: ["Question", "Why It Matters"],
+          rows: [
+            [
+              "Is the inspection route repetitive?",
+              "Repeatability lets the business compare conditions over time.",
+            ],
+            [
+              "Is the environment hazardous, remote, or hard to access?",
+              "Safety and access constraints make mobile robotics more valuable.",
+            ],
+            [
+              "Are fixed sensors too expensive or incomplete?",
+              "A mobile robot can inspect multiple assets with one sensor suite.",
+            ],
+            [
+              "Can the robot data trigger action?",
+              "Alerts, work orders, and maintenance review are where data becomes ROI.",
+            ],
+            [
+              "Does the site need Ex certification?",
+              "For Zone 1 and explosive atmospheres, ANYmal X may matter more than generic quadruped capability.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Edge AI Stack Behind ANYmal",
+      paragraphs: [
+        "ANYmal is useful for Black Scarab's audience because it makes the edge AI stack visible. The robot is not only a walking machine. It is a package of locomotion, sensing, onboard compute, autonomy, connectivity, docking, software, cloud services, enterprise integration, and safety design.",
+        "At the sensing layer, ANYmal can collect visual, thermal, acoustic, ultrasonic, LiDAR, and gas data. At the autonomy layer, it can navigate complex multi-floor environments, including industrial stairs, wet terrain, and low-light areas. At the software layer, Data Navigator turns inspection data into actionable insights, while ANYbotics' AWS-backed infrastructure supports fleet data, telemetry, mission control, and customer access.",
+        "For a buyer, this means the robot should be specified around the data product. A route that needs thermal anomaly detection requires a different payload and alert workflow than a route focused on gas presence, acoustic leak detection, gauge reading, or 3D reality capture.",
+      ],
+      tables: [
+        {
+          title: "What an ANYmal Deployment Really Includes",
+          columns: ["Layer", "Examples", "Business Question"],
+          rows: [
+            [
+              "Robot platform",
+              "ANYmal or ANYmal X, legs, onboard compute, batteries, rugged tablet, docking.",
+              "Can the robot physically and safely operate in our site conditions?",
+            ],
+            [
+              "Sensing",
+              "Visual camera, thermal camera, ultrasonic microphone, LiDAR, gas sensors, acoustic imaging.",
+              "What condition data do we need to collect?",
+            ],
+            [
+              "Autonomy",
+              "Route execution, stair navigation, low-light operation, docking, connectivity fallback.",
+              "Can the inspection be repeated without constant manual driving?",
+            ],
+            [
+              "Software",
+              "Data Navigator, cloud data, telemetry, mission management, enterprise integrations.",
+              "Will the data reach the teams and systems that act on it?",
+            ],
+            [
+              "Operations",
+              "Onboarding, route validation, field engineering, safety rules, training, support.",
+              "Who owns the robot program after the first demo?",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Deployment Pattern: Why Onboarding Matters",
+      paragraphs: [
+        "ANYbotics' onboarding process is worth paying attention to because it reveals the reality of industrial robotics. Deployment is not only about shipping a robot. It requires task selection, route definition, virtual setup, site validation, integration, training, safety process, and continuing support.",
+        "ANYbotics describes using CAD, BIM, or site data to virtually set up and validate inspection missions before deployment. That matters for brownfield plants because robots need to work around existing stairs, equipment, routes, lighting, surfaces, and safety zones.",
+        "This is where many robotics projects succeed or fail. A good pilot has a specific route and a clear operational owner. A weak pilot asks the robot to wander around and impress people. The first version might look more exciting, but the second version is the one that can become a business system.",
+      ],
+    },
+    {
+      heading: "When ANYmal Is a Bad Fit",
+      paragraphs: [
+        "ANYmal is not the right answer for every site. If the environment is clean, flat, predictable, and mostly about moving goods, an autonomous mobile robot may be cheaper. If the job is a fixed manipulation task, a cobot arm may be better. If the inspection point can be covered by one fixed sensor, a walking robot may be unnecessary.",
+        "It is also a bad fit when the company does not have a maintenance workflow ready to receive the data. If thermal readings, gas alerts, or acoustic anomalies do not create review, escalation, or work orders, the robot is only producing another stream of files.",
+        "ANYmal is strongest where mobility, ruggedness, repeatability, safety, and multi-sensor inspection are all required. If only one of those matters, there may be a simpler answer.",
+      ],
+    },
+    {
+      heading: "Implementation Roadmap for a First Pilot",
+      paragraphs: [
+        "A first ANYmal pilot should be designed around one inspection program, not broad robotics excitement. The goal is to prove that the robot can capture useful data repeatedly, safely, and in a way that operations teams can act on.",
+        "The best starting point is usually a route with clear pain: recurring manual inspection, safety exposure, hard-to-reach equipment, thermal or acoustic anomaly risk, gas concerns, or downtime history. Once that route is understood, the robot, payloads, docking, and software can be specified around it.",
+      ],
+      tables: [
+        {
+          title: "First ANYmal Pilot Plan",
+          columns: ["Step", "Action", "Success Signal"],
+          rows: [
+            [
+              "1",
+              "Select one high-value inspection route.",
+              "The route has safety, downtime, labor, or compliance relevance.",
+            ],
+            [
+              "2",
+              "Define the inspection data product.",
+              "The team knows whether it needs thermal, acoustic, visual, LiDAR, gas, or gauge data.",
+            ],
+            [
+              "3",
+              "Validate the route virtually and on site.",
+              "Stairs, lighting, surfaces, connectivity, doors, and safety zones are understood.",
+            ],
+            [
+              "4",
+              "Run supervised missions.",
+              "Operators can complete the route safely and collect consistent data.",
+            ],
+            [
+              "5",
+              "Automate and integrate.",
+              "Robot data flows into dashboards, maintenance review, or work-order logic.",
+            ],
+            [
+              "6",
+              "Scale only after proving the workflow.",
+              "The pilot shows enough value to justify docks, more routes, or multi-site rollout.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Black Scarab Takeaway",
+      paragraphs: [
+        "ANYbotics ANYmal is one of the clearest examples of robotics becoming an industrial data strategy. The robot is valuable because it carries sensors through hard environments and makes inspection repeatable.",
+        "For industry leaders, the right lesson is not that every facility needs a quadruped robot. The lesson is that inspection is becoming mobile, autonomous, and software-connected. The winning deployments will be the ones where the robot is tied to asset performance, safety, maintenance planning, and plant uptime.",
+        "For Black Scarab's catalog vision, ANYmal reinforces the same pattern we saw with Spot: the robot body is only one part of the basket. A real deployment needs cameras, thermal sensing, acoustic sensing, gas detection, LiDAR, edge compute, wireless connectivity, docking, dashboards, integrations, and support.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using ANYbotics product pages for ANYmal and ANYmal X, ANYbotics industry materials for chemicals and industrial inspection, onboarding documentation, AWS's ANYbotics robotics infrastructure case study, SAP's 2026 coverage of ANYbotics industrial inspection integration, and public ANYbotics customer materials related to BASF, PETRONAS, RTE, Grace, and Digital Realty. Current pricing and deployment configuration should be verified directly with ANYbotics or an authorized partner before procurement.",
+      ],
+    },
+  ],
+  sources: [
+    "ANYbotics ANYmal official product materials",
+    "ANYbotics ANYmal X official product materials",
+    "ANYbotics chemicals industry inspection page",
+    "ANYbotics onboarding documentation",
+    "AWS Robotics Blog on ANYbotics global robot workforce infrastructure",
+    "SAP News coverage of ANYbotics industrial inspection integration",
+    "ANYbotics PETRONAS offshore inspection deployment article",
+    "ANYbotics BASF ANYmal X deployment article",
+    "Data Center Dynamics coverage of Digital Realty ANYmal deployment",
+  ],
+  sourceLinks: [
+    {
+      label: "ANYbotics ANYmal",
+      url: "https://www.anybotics.com/robotics/anymal/",
+    },
+    {
+      label: "ANYbotics ANYmal X",
+      url: "https://www.anybotics.com/robotics/anymal-x/",
+    },
+    {
+      label: "ANYbotics chemicals inspection use cases",
+      url: "https://www.anybotics.com/industries/robotic-inspection-for-chemicals/",
+    },
+    {
+      label: "ANYmal onboarding process",
+      url: "https://www.anybotics.com/get-started/onboarding/",
+    },
+    {
+      label: "AWS Robotics Blog: ANYbotics robot workforce",
+      url: "https://aws.amazon.com/blogs/robotics/anybotics-uses-aws-to-deploy-a-global-robot-workforce-for-industrial-inspections/",
+    },
+    {
+      label: "SAP News: ANYbotics industrial inspections into business insights",
+      url: "https://news.sap.com/2026/03/anybotics-industrial-inspections-into-business-insights/",
+    },
+    {
+      label: "ANYmal robots inspecting PETRONAS offshore platform",
+      url: "https://www.anybotics.com/anymal-robots-inspecting-petronas-offshore-platform/",
+    },
+    {
+      label: "ANYmal X deployment at BASF",
+      url: "https://www.anybotics.com/news/anymal-x-basf-ludwigshafen-deployment/",
+    },
+    {
+      label: "Digital Realty ANYmal data center deployment coverage",
+      url: "https://www.datacenterdynamics.com/en/news/digital-realty-deploying-anybotics-robot-dogs-in-swiss-data-center/",
+    },
+  ],
+});
+
 export const caseStudies: CaseStudyArticle[] = [
   bostonDynamicsSpotDeepDive(),
+  anyboticsAnymalDeepDive(),
   topRobotsEdgeAiGuide(),
   localAiEnterpriseGuide(),
   localAiSmallBusinessGuide(),
