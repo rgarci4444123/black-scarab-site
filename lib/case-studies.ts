@@ -2388,7 +2388,367 @@ const anyboticsAnymalDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const agilityRoboticsDigitDeepDive = (): CaseStudyArticle => ({
+  slug: "agility-robotics-digit-logistics-humanoid-robot-guide",
+  title:
+    "Agility Robotics Digit Deep Dive: Logistics Humanoid Robots, Warehouse Automation, Pricing, ROI, and Deployment Strategy",
+  summary:
+    "A business-focused deep dive on Agility Robotics Digit, covering warehouse logistics use cases, tote handling, GXO and Amazon activity, pricing context, Robotics-as-a-Service, ROI logic, fleet software, and how leaders should evaluate humanoid robots for operations.",
+  publishedLabel: "Robotics Series · Published May 26, 2026",
+  publishedDate: "2026-05-26",
+  typeLabel: "Robotics Series",
+  formatLabel: "Robot deep dive for business leaders",
+  industry: "Logistics",
+  image: "/article-images/agility-robotics-digit-logistics-humanoid-robot-guide.png",
+  imageAlt:
+    "Agility Robotics Digit-style humanoid robot walking through a warehouse aisle near storage totes.",
+  seoDescription:
+    "A 2026 business guide to Agility Robotics Digit, the logistics humanoid robot for warehouse tote handling, material movement, Robotics-as-a-Service, ROI, pricing context, and edge AI deployment strategy.",
+  tags: [
+    "Agility Robotics Digit",
+    "Digit robot",
+    "logistics humanoid",
+    "warehouse automation",
+    "humanoid robot",
+    "Robotics-as-a-Service",
+    "GXO robotics",
+    "edge AI robotics",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Agility Robotics Digit is one of the clearest examples of humanoid robotics moving from demo videos into warehouse operations. It is not a household assistant, and it is not a general-purpose robot that can suddenly do every human job. Digit is a bipedal, two-armed logistics robot built around repetitive material handling in facilities designed for people.",
+        "This is the third deep dive in Black Scarab's robotics series. Spot and ANYmal showed how mobile robots can collect inspection data. Digit shows a different business case: using humanoid mobility and manipulation to connect warehouse workflows that are still awkward for fixed automation, conveyors, forklifts, autonomous mobile robots, and human teams.",
+        "The executive question is simple: can a humanoid robot take over specific repetitive logistics movements in a way that improves throughput, reduces ergonomic strain, fills hard-to-staff roles, and integrates with the warehouse systems that already run the building? In narrow workflows, Digit is one of the first platforms making that question practical.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Digit is best understood as a logistics worker for structured warehouse tasks. It can walk, balance, carry totes, manipulate containers, and work in environments built around human-sized aisles, racks, carts, and workstations. Its early value is not that it looks human. Its value is that it can operate in spaces where conventional automation would require expensive redesign.",
+        "Agility Robotics has positioned Digit for tasks such as tote handling, goods movement, trailer and container workflows, and repetitive warehouse processes. The strongest commercial signal so far is the multi-year agreement with GXO Logistics, where Digit moved from pilot activity into a formal Robotics-as-a-Service deployment path. Agility has also reported Digit moving more than 100,000 totes in a live GXO operation.",
+        "For executives, Digit should be evaluated as a warehouse automation program, not as a humanoid spectacle. The robot only matters if it can fit a repeatable workflow, connect to systems of record, meet safety requirements, operate for enough hours, and produce labor, throughput, or resilience value that justifies the deployment.",
+      ],
+      tables: [
+        {
+          title: "Digit at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "A bipedal humanoid logistics robot designed for repetitive material movement and tote-handling workflows.",
+            ],
+            [
+              "Who is it for?",
+              "Warehouses, fulfillment centers, third-party logistics providers, retailers, manufacturers, and distribution operators.",
+            ],
+            [
+              "What does it replace?",
+              "Some repetitive walking, carrying, tote transfer, container handling, and low-value material movement tasks.",
+            ],
+            [
+              "What does it not replace?",
+              "Warehouse supervisors, process engineers, maintenance teams, skilled exception handling, or full warehouse design.",
+            ],
+            [
+              "How should leaders evaluate it?",
+              "By workflow repeatability, pick-and-place accuracy, runtime, safety, WMS integration, staffing pain, and facility fit.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What Digit Actually Does",
+      paragraphs: [
+        "Digit is a mobile manipulation platform. Its legs let it move through human-oriented warehouse layouts, and its arms let it interact with totes and containers. That combination matters because many logistics sites are not greenfield automated factories. They are full of racks, carts, bins, pallets, people, dock doors, and pathways originally designed for human workers.",
+        "The early target is not every possible warehouse job. Digit is aimed at repetitive movement and container handling: moving totes between carts, conveyors, shelves, and work cells; supporting return logistics; moving empty containers; and bridging gaps between other automation systems. In other words, Digit is strongest where the workflow is physical, repetitive, structured, and currently depends on human walking and lifting.",
+        "Agility's business pitch is that humanoid form can reduce the need for infrastructure redesign. A humanoid can use existing aisles, work heights, tote dimensions, and facility layouts more easily than a custom fixed automation project. That does not make deployment easy, but it explains why logistics is one of the first serious markets for humanoids.",
+      ],
+    },
+    {
+      heading: "Where Digit Is Being Used",
+      paragraphs: [
+        "Digit's most important market signal is logistics. Agility Robotics and GXO announced a multi-year agreement to deploy Digit through a Robotics-as-a-Service model, and Agility later said Digit had moved more than 100,000 totes at GXO's Spanx facility. For a still-young humanoid market, that matters because tote movement is a real warehouse task, not a stage demo.",
+        "Amazon has also publicly discussed testing Digit for moving empty totes after inventory has been picked. That use case is revealing. Empty tote movement is repetitive, physically annoying, and operationally necessary, but it is not the highest judgment task in the building. That is exactly the kind of work early humanoids should attack first.",
+        "The broader pattern is that Digit fits distribution centers, e-commerce fulfillment, third-party logistics, manufacturing logistics, returns operations, and warehouses where labor availability, repetitive strain, throughput bottlenecks, or flexible automation gaps are real concerns.",
+      ],
+      tables: [
+        {
+          title: "Industries Where Digit Fits Best",
+          columns: ["Industry", "Likely Use Case", "Why It Matters"],
+          rows: [
+            [
+              "Third-party logistics",
+              "Tote movement, returns handling, container transfer, repetitive material movement.",
+              "3PLs run many customer workflows and need flexible automation that can adapt across contracts.",
+            ],
+            [
+              "E-commerce fulfillment",
+              "Empty tote movement, goods-to-person support, handoffs between automation zones.",
+              "High volume and labor intensity make small workflow improvements meaningful.",
+            ],
+            [
+              "Retail distribution",
+              "Cart-to-conveyor, tote staging, store replenishment support.",
+              "Facilities often need flexible labor around peaks, returns, and seasonal demand.",
+            ],
+            [
+              "Manufacturing logistics",
+              "Line-side material movement, kitting support, component tote handling.",
+              "Digit can help bridge warehouse automation and production-area material flow.",
+            ],
+            [
+              "Returns operations",
+              "Reusable container movement, sorting support, repetitive transfer tasks.",
+              "Returns are messy, labor-heavy, and difficult to automate with one fixed system.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Pricing and Total Cost",
+      paragraphs: [
+        "Agility Robotics does not publish a simple retail price for Digit. That is expected. Early enterprise humanoids are usually sold through pilots, commercial agreements, Robotics-as-a-Service, support contracts, and site-specific deployment programs rather than a public checkout page.",
+        "The GXO relationship is important because Agility describes it as a Robotics-as-a-Service deployment. That model can make sense for buyers because the robot is not the only cost. A production deployment includes robot availability, fleet software, safety validation, workflow engineering, training, maintenance, support, spare parts, charging, connectivity, and system integration.",
+        "A leader should not ask only, 'How much does Digit cost?' The better question is, 'What does it cost to automate this repeatable warehouse motion reliably?' If the task is high-volume, physically tiring, hard to staff, and easy to define, a service model can be easier to evaluate than buying hardware outright.",
+      ],
+      tables: [
+        {
+          title: "Digit Cost Areas to Budget For",
+          columns: ["Cost Area", "What It Covers", "Buyer Note"],
+          rows: [
+            [
+              "Robot access",
+              "Digit robot capacity through purchase, pilot, or Robotics-as-a-Service terms.",
+              "Current commercial pricing should be verified directly with Agility Robotics or deployment partners.",
+            ],
+            [
+              "Fleet software",
+              "Agility Arc, robot orchestration, monitoring, mission assignment, telemetry, updates.",
+              "The robot needs operational software to become a repeatable warehouse resource.",
+            ],
+            [
+              "Workflow engineering",
+              "Task design, tote dimensions, path planning, workcell layout, handoff points.",
+              "The business case depends on choosing the right task and making it robot-ready.",
+            ],
+            [
+              "Safety and operations",
+              "Risk assessment, human-robot work rules, training, supervision, exception handling.",
+              "Humanoids in warehouses need clear operating zones and escalation procedures.",
+            ],
+            [
+              "Integration and support",
+              "WMS/WES connections, APIs, maintenance, spare parts, uptime support, reporting.",
+              "The robot's work has to connect to warehouse systems and site performance metrics.",
+            ],
+          ],
+          note: "Treat Digit as a workflow automation deployment, not a one-line equipment purchase.",
+        },
+      ],
+    },
+    {
+      heading: "Why Companies Integrate Digit",
+      paragraphs: [
+        "The strongest reason to integrate Digit is not that it is humanoid. It is that many warehouses still have repetitive physical gaps between existing automation systems. Conveyors move goods along fixed routes. AMRs move carts or shelves. Sorters, shuttles, and goods-to-person systems handle certain flows. Humans still bridge many of the awkward handoffs.",
+        "Digit is built for those handoffs. It can walk to a location, pick up or place a tote, and move material without requiring every path to be rebuilt around fixed automation. That is why logistics humanoids are most interesting in brownfield facilities where full redesign is expensive or unrealistic.",
+        "The labor case is also real, but it should be framed carefully. Digit is not just a headcount story. It is an ergonomics, consistency, uptime, and peak-demand story. If a workflow requires repetitive lifting and walking across long shifts, the value may come from reducing strain, stabilizing throughput, and letting people focus on exceptions, supervision, quality, and higher-value tasks.",
+      ],
+    },
+    {
+      heading: "The ROI Logic",
+      paragraphs: [
+        "Digit's ROI depends on task density. A humanoid robot becomes easier to justify when the same physical movement happens thousands of times per week and the facility already knows the labor minutes, error rates, ergonomic risk, and bottleneck cost tied to that movement.",
+        "The best first use cases are narrow: move empty totes from one defined point to another, transfer containers between carts and conveyors, support returns processing, or bridge a known material-flow gap. The wrong starting point is asking Digit to roam a warehouse and 'help where needed.' That may be the long-term dream, but it is not the practical first deployment.",
+        "The strongest ROI signals should include reduced manual walking, fewer repetitive lifts, more predictable throughput, better peak coverage, fewer workflow interruptions, and measurable robot utilization. If the robot is idle most of the day or constantly waiting on exceptions, the workflow design needs work before the fleet scales.",
+      ],
+      tables: [
+        {
+          title: "Digit ROI Checklist",
+          columns: ["Question", "Why It Matters"],
+          rows: [
+            [
+              "Is the task repeated at high volume?",
+              "Humanoid economics improve when the same movement happens many times per shift.",
+            ],
+            [
+              "Is the work physically tiring or hard to staff?",
+              "Ergonomic and labor-availability pressure can strengthen the business case.",
+            ],
+            [
+              "Are the containers standardized?",
+              "Digit is easier to deploy around predictable tote sizes, weights, and handoff points.",
+            ],
+            [
+              "Can the workflow tolerate robot speed and exceptions?",
+              "Early humanoids need task design, supervision, and exception handling.",
+            ],
+            [
+              "Will robot work connect to warehouse systems?",
+              "WMS, WES, dashboards, and operational reporting turn robot motion into business performance data.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Edge AI Stack Behind Digit",
+      paragraphs: [
+        "Digit is useful for Black Scarab's audience because it makes the logistics robotics stack visible. The robot body is only the beginning. A deployable humanoid needs perception, balance control, manipulation, onboard compute, battery management, fleet software, cloud monitoring, site networking, safety controls, and integration with warehouse systems.",
+        "Agility's Arc platform is central to the commercial story because it manages deployment, robot orchestration, monitoring, and workflow connection. For a buyer, this is important. A humanoid that cannot be assigned, monitored, updated, and measured like an operational asset will not scale beyond pilot theater.",
+        "The edge AI stack also includes the physical environment. Tote geometry, lighting, aisle width, flooring, labels, Wi-Fi coverage, handoff station design, battery strategy, and exception zones all influence whether the robot performs reliably. Humanoid automation is both software and site engineering.",
+      ],
+      tables: [
+        {
+          title: "What a Digit Deployment Really Includes",
+          columns: ["Layer", "Examples", "Business Question"],
+          rows: [
+            [
+              "Robot platform",
+              "Digit body, legs, arms, grippers, batteries, sensors, onboard compute.",
+              "Can the robot safely perform the physical task for enough hours?",
+            ],
+            [
+              "Perception and manipulation",
+              "Object detection, tote localization, grasping, placement, balance, path execution.",
+              "Can the robot handle the container and handoff reliably?",
+            ],
+            [
+              "Fleet software",
+              "Agility Arc, monitoring, assignment, telemetry, updates, workflow orchestration.",
+              "Can the site run the robot as part of operations instead of a one-off demo?",
+            ],
+            [
+              "Warehouse integration",
+              "WMS, WES, conveyors, AMRs, carts, scanners, dashboards, exception workflows.",
+              "Will robot activity connect to the systems that control the building?",
+            ],
+            [
+              "Operations",
+              "Safety process, worker training, maintenance, support, shift planning, KPIs.",
+              "Who owns the robot's performance after launch?",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Deployment Pattern: Why the First Task Matters",
+      paragraphs: [
+        "Digit's first task should be narrow enough to measure and important enough to matter. The best early deployments look almost boring: one container type, one route, one handoff process, one set of KPIs, and a clear owner inside operations.",
+        "That focus is not a lack of ambition. It is how robotics matures. Once Digit can repeatedly perform one useful job, the site can add adjacent routes, additional shifts, better integrations, and more robots. A vague pilot that tries to show every possible capability usually teaches less than a practical pilot built around one painful workflow.",
+        "Agility's commercial strategy points in this direction. Digit is not being framed only as a robot sale. It is being framed as an operational system with Arc, service, deployment support, and manufacturing scale through RoboFab.",
+      ],
+    },
+    {
+      heading: "When Digit Is a Bad Fit",
+      paragraphs: [
+        "Digit is not the right answer for every warehouse automation problem. If the task is simple point-to-point cart movement on a flat route, an AMR may be cheaper and more mature. If the task is high-speed fixed picking, a conveyor, shuttle, sorter, or robotic arm may be better. If the workflow changes every few minutes and has no standard container, early humanoids may struggle.",
+        "Digit is also a bad fit when leadership buys the idea of a humanoid before defining the job. The first question should not be, 'Where can we put a humanoid?' It should be, 'Which repetitive material movement task is expensive, tiring, constrained, measurable, and realistic for the robot's current abilities?'",
+        "The best near-term use cases are not glamorous. They are repetitive, physical, structured, and frequent. That is where a logistics humanoid can move from novelty into operations.",
+      ],
+    },
+    {
+      heading: "Implementation Roadmap for a First Pilot",
+      paragraphs: [
+        "A first Digit pilot should be designed like a warehouse process-improvement project. The goal is not to prove that a humanoid can walk. The goal is to prove that it can complete a useful logistics motion repeatedly, safely, and with enough utilization to matter.",
+        "The buyer should begin with workflow mapping. Identify the container, route, handoff points, task frequency, labor minutes, ergonomic risk, throughput constraint, safety zones, and system integration points. Then design the pilot around those facts.",
+      ],
+      tables: [
+        {
+          title: "First Digit Pilot Plan",
+          columns: ["Step", "Action", "Success Signal"],
+          rows: [
+            [
+              "1",
+              "Choose one repetitive material-handling task.",
+              "The task has clear volume, labor time, ergonomics, or throughput relevance.",
+            ],
+            [
+              "2",
+              "Standardize the physical workflow.",
+              "Tote type, weight, pickup point, drop-off point, and route conditions are defined.",
+            ],
+            [
+              "3",
+              "Validate safety and site readiness.",
+              "People, pathways, charging, Wi-Fi, lighting, and exception zones are understood.",
+            ],
+            [
+              "4",
+              "Run supervised operations.",
+              "Digit completes the task consistently with human oversight and measurable uptime.",
+            ],
+            [
+              "5",
+              "Integrate with warehouse systems.",
+              "Robot work is visible in dashboards, WMS/WES workflows, or operational reporting.",
+            ],
+            [
+              "6",
+              "Scale only after proving utilization.",
+              "The site has evidence for more routes, more hours, or more robots.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Black Scarab Takeaway",
+      paragraphs: [
+        "Agility Robotics Digit is important because it shows where humanoid robotics is likely to become practical first: not in open-ended general labor, but in repetitive logistics workflows that happen inside human-designed facilities.",
+        "For industry leaders, the lesson is to evaluate humanoids through operations, not imagination. The right question is not whether Digit looks impressive. The right question is whether it can perform one repeatable job with enough safety, uptime, integration, and measurable value to justify expansion.",
+        "For Black Scarab's catalog vision, Digit reinforces the component stack behind robotics adoption: cameras, depth sensors, edge compute, batteries, grippers, networking, fleet software, warehouse APIs, safety systems, charging, support, and integration services. The robot is the visible product. The deployment basket is much larger.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using Agility Robotics product and company materials, Agility's GXO deployment announcements, Agility's tote-handling milestone materials, Amazon's public discussion of Digit testing, RoboFab manufacturing information, and public coverage of humanoid robot economics. Current pricing, Robotics-as-a-Service terms, technical specifications, and deployment requirements should be verified directly with Agility Robotics or an authorized deployment partner before procurement.",
+      ],
+    },
+  ],
+  sources: [
+    "Agility Robotics Digit official product materials",
+    "Agility Robotics Arc platform materials",
+    "Agility Robotics and GXO multi-year deployment agreement",
+    "Agility Robotics Digit 100,000 tote-handling milestone",
+    "Amazon operations coverage of Digit testing",
+    "Agility Robotics RoboFab manufacturing materials",
+    "Public reporting on Digit economics and commercial deployment",
+  ],
+  sourceLinks: [
+    {
+      label: "Agility Robotics Digit",
+      url: "https://www.agilityrobotics.com/products/digit",
+    },
+    {
+      label: "Agility Robotics Arc",
+      url: "https://www.agilityrobotics.com/products/arc",
+    },
+    {
+      label: "Agility Robotics and GXO multi-year agreement",
+      url: "https://www.agilityrobotics.com/content/agility-robotics-and-gxo-sign-multi-year-agreement-to-begin-humanoid-robot-deployment",
+    },
+    {
+      label: "Digit moves over 100,000 totes",
+      url: "https://www.agilityrobotics.com/content/digit-moves-over-100k-totes",
+    },
+    {
+      label: "Amazon operations coverage of Digit testing",
+      url: "https://www.aboutamazon.com/news/operations/amazon-introduces-new-robotics-solutions",
+    },
+    {
+      label: "Agility Robotics RoboFab",
+      url: "https://www.agilityrobotics.com/content/introducing-robofab-the-worlds-first-factory-for-building-humanoid-robots",
+    },
+  ],
+});
+
 export const caseStudies: CaseStudyArticle[] = [
+  agilityRoboticsDigitDeepDive(),
   bostonDynamicsSpotDeepDive(),
   anyboticsAnymalDeepDive(),
   topRobotsEdgeAiGuide(),
