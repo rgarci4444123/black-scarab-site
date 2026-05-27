@@ -2388,6 +2388,413 @@ const anyboticsAnymalDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const figure03DeepDive = (): CaseStudyArticle => ({
+  slug: "figure-03-general-purpose-humanoid-robot-guide",
+  title:
+    "Figure 03 Deep Dive: General-Purpose Humanoid Robots, Helix AI, Dexterous Manipulation, Pricing, ROI, and Deployment Strategy",
+  summary:
+    "A business-focused deep dive on Figure 03, covering Figure AI's general-purpose humanoid strategy, Helix vision-language-action intelligence, dexterous manipulation, BMW learnings, BotQ manufacturing scale, pricing context, ROI logic, and what industry leaders should verify before adopting humanoid robots.",
+  publishedLabel: "Robotics Series · Published May 27, 2026",
+  publishedDate: "2026-05-27",
+  typeLabel: "Robotics Series",
+  formatLabel: "Robot deep dive for business leaders",
+  industry: "Cross-Industry",
+  image: "/article-images/figure-03-general-purpose-humanoid-robot-guide.png",
+  imageAlt:
+    "Figure 03-style humanoid robot standing in an industrial robotics lab.",
+  seoDescription:
+    "A 2026 business guide to Figure 03, Figure AI's general-purpose humanoid robot, including Helix VLA AI, dexterous manipulation, manufacturing and logistics use cases, pricing context, ROI, risks, and deployment strategy.",
+  tags: [
+    "Figure 03",
+    "Figure AI",
+    "general-purpose humanoid",
+    "Helix AI",
+    "vision-language-action",
+    "embodied AI",
+    "dexterous manipulation",
+    "humanoid robot",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Figure 03 is one of the highest-profile humanoid robots because it sits at the intersection of two markets that are moving very quickly: physical robotics and foundation-model AI. Figure AI describes it as a third-generation humanoid designed around Helix, the company's vision-language-action system for controlling robots from perception, language, and learned motion.",
+        "This is the fourth deep dive in Black Scarab's robotics series. Spot, ANYmal, and Digit are easiest to understand through narrow operational jobs: inspection, inspection, and logistics. Figure 03 is different. It is a bet that a humanoid robot can become more general over time by learning from fleet data, human motion, teleoperation, simulation, and real-world tasks.",
+        "That makes Figure 03 exciting, but also harder to evaluate. The business question is not, 'Can it look human?' The real question is whether Figure can turn impressive embodied-AI demonstrations into reliable, measurable work in factories, warehouses, homes, and service environments without creating more supervision burden than value.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Figure 03 is a general-purpose humanoid platform built around the idea that hardware and AI should be designed together. Its redesigned vision system, palm cameras, tactile fingertips, wireless charging, battery safety work, soft goods, and manufacturing-oriented architecture are all meant to support a robot that can learn and operate across more than one narrow task.",
+        "The commercial evidence is still early, but not empty. Figure's previous generation, Figure 02, completed an 11-month deployment at BMW Group Plant Spartanburg according to Figure's own reporting, including sheet-metal loading on an active assembly line. Figure says those learnings informed Figure 03 operational readiness. Figure has also shown logistics and home-task demonstrations that point toward the broader promise of Helix.",
+        "For industry leaders, Figure 03 should be studied as a frontier platform, not a mature procurement category. It may become important in manufacturing, logistics, and eventually home or service work, but the right buying posture is disciplined: define one use case, demand real uptime and intervention data, verify safety, and compare against simpler automation.",
+      ],
+      tables: [
+        {
+          title: "Figure 03 at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "A third-generation general-purpose humanoid robot from Figure AI designed around Helix vision-language-action intelligence.",
+            ],
+            [
+              "Who is it for?",
+              "Early enterprise adopters in manufacturing, logistics, warehouse operations, research, and eventually home/service environments.",
+            ],
+            [
+              "What makes it different?",
+              "Hardware built for embodied AI: improved cameras, tactile fingertips, palm cameras, safer battery design, and data offload for fleet learning.",
+            ],
+            [
+              "What is proven?",
+              "Figure has reported production learnings from Figure 02 at BMW and has shown Figure 03/Helix demonstrations, but broad commercial reliability still needs buyer verification.",
+            ],
+            [
+              "How should leaders evaluate it?",
+              "By task readiness, intervention rate, cycle time, safety, supervision burden, integration cost, and whether a simpler robot would solve the same problem.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What Figure 03 Actually Does",
+      paragraphs: [
+        "Figure 03 is a humanoid robot with a published height of 5 feet 8 inches, 20 kg payload, 61 kg weight, 5-hour runtime, 1.2 m/s speed, and an all-electric system. Those specs matter because they put the robot near human scale, which is the core argument for humanoids: they can operate in environments built for people.",
+        "The deeper story is the sensor and hand redesign. Figure says Figure 03 uses a next-generation camera architecture with higher frame rate, lower latency, and a wider field of view than prior models. It also adds embedded palm cameras for close-range visual feedback during grasps and tactile fingertip sensing designed to detect small forces.",
+        "That matters because manipulation is where humanoid robots usually fail. Walking is impressive, but business value comes from picking up parts, placing objects accurately, carrying items, opening fixtures, handling packages, loading machines, sorting materials, and recovering when the real world does not match the plan.",
+      ],
+    },
+    {
+      heading: "Helix: The AI System Behind the Story",
+      paragraphs: [
+        "Figure 03 is really a Helix story. Helix is Figure's vision-language-action model, meaning it is designed to connect what the robot sees, what a person asks, and what the robot physically does. This is the central thesis behind modern embodied AI: instead of hand-programming every behavior, a robot should learn reusable physical intelligence.",
+        "Figure's original Helix writeup described a two-system architecture. One part reasons about the scene and language at a slower rate. Another part turns that understanding into fast continuous robot action. In January 2026, Figure introduced Helix 02, extending the model toward full-body autonomy: walking, balancing, and manipulating as one continuous system.",
+        "For executives, the key point is not the AI branding. It is the difference between scripted automation and learned autonomy. If Helix works as intended, Figure robots should get better as the fleet collects data and the model improves. If it does not work reliably in messy operations, the humanoid may still require too much human supervision to justify deployment.",
+      ],
+      tables: [
+        {
+          title: "Why Helix Matters for Buyers",
+          columns: ["Capability", "Business Meaning", "What to Verify"],
+          rows: [
+            [
+              "Vision-language-action control",
+              "The robot can connect spoken or assigned tasks to physical motion.",
+              "Can it perform the task repeatedly without custom scripting every edge case?",
+            ],
+            [
+              "Dexterous manipulation",
+              "The robot can handle varied objects, parts, packages, or tools.",
+              "What is the success rate by object type, weight, orientation, and lighting condition?",
+            ],
+            [
+              "Whole-body autonomy",
+              "Walking and manipulation are controlled together instead of stitched as separate steps.",
+              "Does the robot stay stable while carrying, reaching, turning, or recovering from mistakes?",
+            ],
+            [
+              "Fleet learning",
+              "More robots generate more training and reliability data.",
+              "Does fleet data improve customer task performance, or only internal demos?",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Where Figure 03 Could Be Used",
+      paragraphs: [
+        "Figure 03 is positioned more broadly than Digit. Digit is mainly a logistics humanoid. Figure 03 is being framed as a general-purpose platform for home, commercial, logistics, and manufacturing work. That breadth is why the upside is large and the procurement risk is higher.",
+        "The strongest near-term business cases are still industrial and logistics tasks. Figure's BMW work with Figure 02 focused on sheet-metal loading: picking parts from racks or bins and placing them onto fixtures for downstream welding. That kind of task has a clear cycle, measurable accuracy target, and operational value.",
+        "Logistics is another natural proving ground. Figure has published Helix logistics work around package handling and sorting, where the robot has to perceive varied parcels, orient them, and interact with conveyors or workcells. Home tasks like dishwashers, laundry, and tidying are strategically important, but they are harder to turn into near-term enterprise ROI unless the buyer is in home services, elder care, hospitality, or consumer robotics.",
+      ],
+      tables: [
+        {
+          title: "Likely Figure 03 Use-Case Zones",
+          columns: ["Use-Case Zone", "Likely Task", "Why It Matters"],
+          rows: [
+            [
+              "Automotive manufacturing",
+              "Part loading, fixture loading, material handling, repetitive pick-and-place.",
+              "Factories already have structured processes and high-value throughput metrics.",
+            ],
+            [
+              "Warehousing and logistics",
+              "Package sorting, tote handling, container movement, conveyor handoffs.",
+              "High-volume physical workflows create measurable cycle-time and labor-utilization cases.",
+            ],
+            [
+              "Light industrial work",
+              "Machine tending, kitting, parts movement, inspection support.",
+              "Human-scale form can help in brownfield sites without full redesign.",
+            ],
+            [
+              "Home and service environments",
+              "Dishes, laundry, tidying, basic assistance, household task learning.",
+              "Large future market, but more variable and harder to validate than factories.",
+            ],
+            [
+              "Internal robot manufacturing",
+              "Material handling and assembly support at BotQ.",
+              "Figure can use its own factory as a learning environment for robots building robots.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Pricing and Total Cost",
+      paragraphs: [
+        "Figure does not publish a simple Figure 03 retail price. That is expected for a frontier humanoid platform. Early deployments are likely to be structured as pilots, enterprise agreements, service models, internal programs, or partner deployments rather than a straightforward product purchase.",
+        "The total cost is not just the robot. A Figure deployment would include workflow engineering, task data collection, safety validation, training, supervision, maintenance, spare parts, charging, connectivity, monitoring, software updates, integration with factory or warehouse systems, and support.",
+        "Because Figure 03 is a general-purpose platform, buyers should be especially careful with cost assumptions. A robot that can theoretically do many tasks is only valuable if it can perform the first paid task reliably. Until then, the correct budget lens is proof-of-value, not fleet procurement.",
+      ],
+      tables: [
+        {
+          title: "Figure 03 Cost Areas to Budget For",
+          columns: ["Cost Area", "What It Covers", "Buyer Note"],
+          rows: [
+            [
+              "Robot access",
+              "Figure 03 hardware through pilot, enterprise deployment, service agreement, or future purchase model.",
+              "Current pricing and availability should be verified directly with Figure AI.",
+            ],
+            [
+              "Workflow engineering",
+              "Task definition, workcell design, object handling, cycle-time targets, route design.",
+              "General-purpose robots still need specific first workflows.",
+            ],
+            [
+              "AI and data loop",
+              "Data collection, model updates, validation, exception analysis, fleet learning.",
+              "The data flywheel is part of the product, not a side project.",
+            ],
+            [
+              "Safety and supervision",
+              "Human-robot rules, risk assessment, monitoring, emergency stop logic, operator training.",
+              "Humanoid deployments need clear boundaries before scaling.",
+            ],
+            [
+              "Integration and support",
+              "MES, WMS, ERP, dashboards, APIs, maintenance support, spare parts, uptime reporting.",
+              "The robot must connect to operational systems to become more than a demo.",
+            ],
+          ],
+          note: "Treat Figure 03 as an early enterprise automation program. Do not compare it only to hourly labor or only to hardware cost.",
+        },
+      ],
+    },
+    {
+      heading: "Why Companies Would Integrate Figure 03",
+      paragraphs: [
+        "The strongest reason to study Figure 03 is flexibility. Many facilities have thousands of physical tasks that are too variable for fixed automation but too repetitive, tiring, or low-value to remain manual forever. A humanoid promises to reduce the cost of automating those middle-ground tasks.",
+        "The second reason is brownfield compatibility. Warehouses, plants, and homes are already designed around human reach, human walking paths, human tools, and human work heights. A humanoid form factor is an attempt to fit into that installed base without rebuilding everything around a custom machine.",
+        "The third reason is the data flywheel. Figure's production ramp matters because more robots can create more fleet hours, more failures, more manipulation attempts, and more training data for Helix. In robotics, scale is not only manufacturing volume. It is also the amount of real-world experience the system can absorb.",
+      ],
+    },
+    {
+      heading: "The ROI Logic",
+      paragraphs: [
+        "Figure 03 ROI should be measured at the task level, not the dream level. A broad humanoid vision is useful for strategy, but the first buyer decision should focus on one workflow: one part, one package family, one handoff, one line-side movement, one station, or one service task.",
+        "The best early ROI cases are tasks with clear cycle time, clear quality target, defined workspace, repeated volume, ergonomic pain, staffing difficulty, and measurable cost of failure. BMW's reported Figure 02 use case is a useful model because it involved cycle time, placement accuracy, and intervention targets.",
+        "The wrong ROI case is vague labor replacement. A humanoid that requires constant attention, frequent resets, or a separate engineer nearby may be technically impressive but operationally expensive. Leaders should demand intervention rates, uptime, task success rate, cycle-time distribution, safety incidents, and supervision ratio before considering scale.",
+      ],
+      tables: [
+        {
+          title: "Figure 03 ROI Checklist",
+          columns: ["Question", "Why It Matters"],
+          rows: [
+            [
+              "Is the first task specific?",
+              "General-purpose robots still need a measurable first job.",
+            ],
+            [
+              "Is the task high-volume or high-value?",
+              "Humanoid economics improve when the same workflow produces many repetitions or avoids expensive bottlenecks.",
+            ],
+            [
+              "Can the robot meet cycle-time and accuracy requirements?",
+              "A robot that is safe but too slow may not fit production operations.",
+            ],
+            [
+              "How often does a human intervene?",
+              "Intervention rate is one of the most important hidden costs in early robotics.",
+            ],
+            [
+              "Would a simpler system solve it?",
+              "A cobot, AMR, conveyor, fixture, camera, or fixed robot may beat a humanoid for narrow tasks.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Edge AI Stack Behind Figure 03",
+      paragraphs: [
+        "Figure 03 is a useful Black Scarab case study because it shows the full embodied-AI stack. The visible product is a humanoid robot, but the deployment basket includes cameras, tactile sensors, palm cameras, actuators, batteries, onboard compute, wireless charging, high-speed data offload, fleet infrastructure, model training, simulation, safety systems, and enterprise software.",
+        "BotQ also matters to the stack. Figure has discussed PLM, ERP, WMS, custom MES, IoT monitoring, genealogy tracking, in-process quality checks, and end-of-line tests. That tells us humanoid robotics is not only about AI breakthroughs. It is also a manufacturing, reliability, supply-chain, and quality-control problem.",
+        "For a buyer, this means the right question is not just whether Figure 03 can complete a demo task. The question is whether the full system can be supported at production rhythm: parts, updates, monitoring, maintenance, replacement units, data governance, cybersecurity, support response, and integration with existing operations.",
+      ],
+      tables: [
+        {
+          title: "What a Figure 03 Deployment Really Includes",
+          columns: ["Layer", "Examples", "Business Question"],
+          rows: [
+            [
+              "Robot platform",
+              "Figure 03 body, hands, tactile sensors, cameras, actuators, battery, wireless charging.",
+              "Can the hardware survive daily operations with acceptable maintenance?",
+            ],
+            [
+              "Embodied AI",
+              "Helix, Helix 02, vision-language-action control, full-body autonomy, model updates.",
+              "Can the robot adapt without needing every behavior hand-coded?",
+            ],
+            [
+              "Data infrastructure",
+              "Fleet data upload, training data, simulation, failure analysis, diagnostics.",
+              "Does the system improve from real deployment data?",
+            ],
+            [
+              "Enterprise integration",
+              "MES, WMS, ERP, station controls, dashboards, APIs, quality systems.",
+              "Will robot activity connect to how the business actually runs?",
+            ],
+            [
+              "Operations",
+              "Safety, supervision, maintenance, operator training, uptime support, spare parts.",
+              "Who owns the robot's performance after the pilot starts?",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Deployment Pattern: How to Pilot Figure 03",
+      paragraphs: [
+        "A first Figure 03 pilot should not try to prove the entire humanoid future. It should prove one operational workflow. The first project should be narrow enough to measure and valuable enough that success matters.",
+        "A manufacturing buyer might start with fixture loading, parts transfer, or kitting. A logistics buyer might start with package singulation, tote movement, or conveyor handoffs. A service buyer might start with a constrained room setup and a small set of repeated tasks. The common pattern is the same: define the work, measure the baseline, run the robot, count interventions, and compare.",
+        "The most important pilot metric may be the supervision burden. If one person must babysit one robot, the case is weak. If one operator can supervise several robots across a defined workflow with limited interventions, the economics begin to look different.",
+      ],
+      tables: [
+        {
+          title: "First Figure 03 Pilot Plan",
+          columns: ["Step", "Action", "Success Signal"],
+          rows: [
+            [
+              "1",
+              "Choose one repeated physical task.",
+              "The task has clear volume, cycle time, accuracy, safety, or labor relevance.",
+            ],
+            [
+              "2",
+              "Define task boundaries.",
+              "Objects, weights, workspace, lighting, tools, handoff points, and exceptions are known.",
+            ],
+            [
+              "3",
+              "Set measurable KPIs.",
+              "Cycle time, success rate, intervention rate, uptime, and safety thresholds are defined.",
+            ],
+            [
+              "4",
+              "Run supervised operations.",
+              "The robot completes real work while teams collect failure and intervention data.",
+            ],
+            [
+              "5",
+              "Integrate with business systems.",
+              "Robot output is visible in MES, WMS, dashboards, quality checks, or work-order systems.",
+            ],
+            [
+              "6",
+              "Scale only after proof.",
+              "The buyer has evidence for additional tasks, shifts, robots, or sites.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "When Figure 03 Is a Bad Fit",
+      paragraphs: [
+        "Figure 03 is a bad fit when the task is already solved by simpler automation. If the job is fixed high-speed pick-and-place, a traditional industrial robot may win. If the job is moving goods on a flat route, an AMR may win. If the job is visual inspection, a camera system may win. Humanoid form should be justified, not assumed.",
+        "It is also a bad fit when the buyer wants a general worker without defining the first job. The more general the robot appears, the more disciplined the pilot has to be. Otherwise the project becomes an expensive tour of impressive edge cases instead of an operations tool.",
+        "The final bad fit is organizational. If safety, maintenance, IT, operations, process engineering, and finance are not aligned, a frontier humanoid deployment will create friction quickly. The technology may be advanced, but the operating model still has to be ordinary and accountable.",
+      ],
+    },
+    {
+      heading: "Black Scarab Takeaway",
+      paragraphs: [
+        "Figure 03 is important because it represents the embodied-AI version of the robotics race. Spot and ANYmal show mobile inspection. Digit shows logistics humanoids. Figure 03 asks a bigger question: can a robot learn enough physical intelligence to become useful across many human environments?",
+        "For industry leaders, the right posture is interest without gullibility. Figure 03 is worth watching closely because the hardware, Helix AI, BMW learnings, BotQ production ramp, and fleet-data strategy are all meaningful. But procurement should still be grounded in one workflow, real metrics, and total deployment cost.",
+        "For Black Scarab's catalog vision, Figure 03 is a reminder that future robotics baskets will not only include robot bodies. They will include sensors, tactile systems, actuators, batteries, chargers, edge compute, networking, data pipelines, simulation, fleet software, safety tooling, and enterprise integrations.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using Figure AI's official Figure 03 page, Figure 03 launch materials, Helix and Helix 02 technical writeups, BMW deployment reporting from Figure and BMW, BotQ manufacturing materials, Figure's April 2026 production ramp update, Figure logistics materials, and public reporting on recent Figure demonstrations. Current pricing, availability, service terms, deployment requirements, and real-world performance should be verified directly with Figure AI before procurement.",
+      ],
+    },
+  ],
+  sources: [
+    "Figure 03 official product page",
+    "Figure 03 official launch announcement",
+    "Figure Helix vision-language-action technical writeup",
+    "Figure Helix 02 full-body autonomy writeup",
+    "Figure BMW deployment results",
+    "BMW Group Figure 02 manufacturing test coverage",
+    "Figure BotQ manufacturing materials",
+    "Figure 03 production ramp update",
+    "Figure Helix logistics materials",
+    "Public reporting on Figure 03 demonstrations",
+  ],
+  sourceLinks: [
+    {
+      label: "Figure 03 official page",
+      url: "https://www.figure.ai/figure",
+    },
+    {
+      label: "Introducing Figure 03",
+      url: "https://www.figure.ai/news/introducing-figure-03?id=Figure03",
+    },
+    {
+      label: "Helix VLA model",
+      url: "https://www.figure.ai/news/helix",
+    },
+    {
+      label: "Helix 02 full-body autonomy",
+      url: "https://www.figure.ai/news/helix-02",
+    },
+    {
+      label: "Figure 02 BMW deployment results",
+      url: "https://www.figure.ai/news/production-at-bmw",
+    },
+    {
+      label: "BMW Group humanoid robot test",
+      url: "https://www.bmwgroup.com/en/news/general/2024/humanoid-robots.html",
+    },
+    {
+      label: "Figure BotQ manufacturing facility",
+      url: "https://www.figure.ai/news/botq",
+    },
+    {
+      label: "Ramping Figure 03 production",
+      url: "https://www.figure.ai/news/ramping-figure-03-production",
+    },
+    {
+      label: "Scaling Helix in logistics",
+      url: "https://www.figure.ai/news/scaling-helix-logistics",
+    },
+    {
+      label: "TechRadar coverage of Figure 03 package-sorting livestream",
+      url: "https://www.techradar.com/ai-platforms-assistants/figure-ai-streamed-humanoid-robots-sorting-packages-for-8-hours-straight-and-not-everyone-is-convinced-it-was-fully-real",
+    },
+  ],
+});
+
 const agilityRoboticsDigitDeepDive = (): CaseStudyArticle => ({
   slug: "agility-robotics-digit-logistics-humanoid-robot-guide",
   title:
@@ -2748,6 +3155,7 @@ const agilityRoboticsDigitDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  figure03DeepDive(),
   agilityRoboticsDigitDeepDive(),
   bostonDynamicsSpotDeepDive(),
   anyboticsAnymalDeepDive(),
