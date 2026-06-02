@@ -6,7 +6,7 @@ type EmailSignupCardProps = {
 };
 
 const baseUrl = "https://www.blackscarab.ai";
-const defaultAction = "https://formsubmit.co/info@blackscarab.ai";
+const defaultAction = "https://formsubmit.co/1c179ad3f02289bf528f05df1ea25c3a";
 
 export default function EmailSignupCard({
   source,
