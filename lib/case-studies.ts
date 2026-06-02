@@ -2388,6 +2388,365 @@ const anyboticsAnymalDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const bostonDynamicsAtlasDeepDive = (): CaseStudyArticle => ({
+  slug: "boston-dynamics-atlas-industrial-humanoid-robot-guide",
+  title:
+    "Boston Dynamics Atlas Deep Dive: All-Electric Humanoid Robots, Industrial Mobility, Manipulation, Pricing, ROI, and Deployment Strategy",
+  summary:
+    "A business-focused deep dive on Boston Dynamics Atlas, covering the all-electric industrial humanoid, material handling, part sequencing, mobility and manipulation benchmarks, pricing context, ROI logic, Orbit integration, Hyundai deployment plans, and what leaders should verify before adopting humanoid robots.",
+  publishedLabel: "Robotics Series · Published June 2, 2026",
+  publishedDate: "2026-06-02",
+  typeLabel: "Robotics Series",
+  formatLabel: "Robot deep dive for business leaders",
+  industry: "Manufacturing",
+  image: "/article-images/boston-dynamics-atlas-industrial-humanoid-robot-guide.png",
+  imageAlt:
+    "Boston Dynamics Atlas-style humanoid robot walking through an industrial manufacturing facility.",
+  seoDescription:
+    "A 2026 business guide to Boston Dynamics Atlas, the all-electric industrial humanoid robot for material handling, part sequencing, mobility, manipulation, Orbit fleet integration, pricing context, ROI, and deployment strategy.",
+  tags: [
+    "Boston Dynamics Atlas",
+    "Atlas robot",
+    "industrial humanoid",
+    "all-electric humanoid",
+    "humanoid robot",
+    "robotics ROI",
+    "manufacturing automation",
+    "edge AI robotics",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Boston Dynamics Atlas is one of the most important humanoid robots to study because it defines the high end of what mobility and manipulation can look like in an industrial humanoid. The new Atlas is all-electric, built for enterprise applications, and positioned around material handling, part sequencing, machine tending, order building, and other physical work in human-designed environments.",
+        "This is the fifth deep dive in Black Scarab's robotics series. Spot and ANYmal showed mobile inspection. Digit showed logistics humanoids. Figure 03 showed the embodied-AI race. Atlas is different again: it is a benchmark platform from the company that made dynamic legged robotics credible long before humanoids became a boardroom topic.",
+        "The executive question is not whether Atlas can move impressively. Boston Dynamics has already proven that. The real question is whether its mobility, strength, perception, safety systems, and workflow integration can turn into reliable work in factories and warehouses at a cost that beats simpler automation.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Atlas is best understood as an industrial humanoid built for workstations and workflows that were originally designed around people. Boston Dynamics describes the current Atlas as an enterprise-grade, industrial humanoid with 56 degrees of freedom, tactile sensing, 360-degree camera view, autonomous battery swapping, Orbit integration, and the ability to work in existing manufacturing environments.",
+        "The strongest near-term business case is manufacturing material handling. Boston Dynamics and Hyundai have pointed to part sequencing as an early application, with Hyundai planning Atlas deployment at Hyundai Motor Group Metaplant America beginning in 2028 after process-by-process validation. Boston Dynamics also says Atlas is taking first steps into Hyundai customer facilities for real-world sequencing tasks and that the product version is moving through early deployment activity.",
+        "For industry leaders, Atlas should be treated as a serious but early industrial humanoid category. It deserves attention because Boston Dynamics has unusual depth in mobility, safety, field robotics, controls, and enterprise deployment. It still needs disciplined evaluation around cycle time, uptime, intervention rate, safety, integration, and total cost before any buyer assumes broad ROI.",
+      ],
+      tables: [
+        {
+          title: "Atlas at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "An all-electric industrial humanoid robot from Boston Dynamics built around mobility, manipulation, and enterprise workflow integration.",
+            ],
+            [
+              "Who is it for?",
+              "Early enterprise adopters in manufacturing, automotive, logistics, order building, machine tending, and material handling.",
+            ],
+            [
+              "What makes it different?",
+              "Atlas combines advanced whole-body mobility, 56 degrees of freedom, high payload capacity, tactile sensing, 360-degree vision, and self-swappable batteries.",
+            ],
+            [
+              "What is the first commercial focus?",
+              "Material handling and manufacturing workflows such as part sequencing, with Hyundai as the most visible early deployment path.",
+            ],
+            [
+              "How should leaders evaluate it?",
+              "By workflow fit, intervention rate, safety case, payload needs, cycle time, integration with MES/WMS, and whether a simpler robot would solve the same problem.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What Atlas Actually Does",
+      paragraphs: [
+        "Atlas is a human-scale mobile manipulation platform. Boston Dynamics lists a height of 1.9 m, weight of 90 kg, 56 degrees of freedom, 2.3 m reach, 4-hour battery life, 50 kg instant weight capacity, 30 kg sustained capacity, 20 kg one-handed capacity, IP67 rating, and operation from -20 C to 40 C.",
+        "Those numbers matter because they place Atlas in a different class from smaller research humanoids. A 30 kg sustained payload and 50 kg instant capacity can matter in manufacturing, where parts, kits, containers, and fixtures are often too heavy or awkward for smaller robots. The self-swappable battery is also commercially important because robot uptime is one of the hidden costs in every deployment.",
+        "The deeper capability is whole-body work. Atlas is not just a torso with arms on a wheeled base. The robot can use its legs, torso, arms, perception, and balance together. That is why it is a benchmark for the next generation of humanoids: the body is part of the manipulation system.",
+      ],
+    },
+    {
+      heading: "Why the All-Electric Redesign Matters",
+      paragraphs: [
+        "The old hydraulic Atlas was famous, but it was not a commercial product. Boston Dynamics retired that generation and rebuilt Atlas as an all-electric robot for industrial use. That shift matters because electric actuation can reduce complexity, improve serviceability, quiet operation, and fit enterprise maintenance expectations better than a research hydraulic platform.",
+        "The all-electric Atlas is also designed around field service. Boston Dynamics emphasizes modular components, field replaceability, customer self-repair certification, predictable performance, cleaning, servicing, and maintaining the robot in real environments. That sounds less exciting than a backflip, but it is the difference between a demo robot and an operations asset.",
+        "For a buyer, the lesson is simple: Atlas should be evaluated less like a viral humanoid and more like a machine that must survive shifts, cleaning, maintenance, safety audits, software updates, and daily operations.",
+      ],
+    },
+    {
+      heading: "Where Atlas Could Be Used",
+      paragraphs: [
+        "Atlas is most likely to matter first in manufacturing and logistics. Boston Dynamics names material handling, order fulfillment, part sequencing, machine tending, order building, and related applications. Hyundai has identified part sequencing as the first validated path and plans expansion to component assembly over time.",
+        "Part sequencing is a useful starting point because it is not vague. Automotive plants need the right parts staged in the right order at the right time. If a humanoid can move through existing workstations, handle varied parts, and integrate with plant systems, the value can be tied to quality, flow, ergonomic relief, and reduced disruption.",
+        "Atlas could eventually matter in broader industrial work because it is strong, mobile, and designed for human-scale equipment. But broad does not mean immediate. The first good use cases should be structured enough to measure and complex enough that simpler automation is not obviously better.",
+      ],
+      tables: [
+        {
+          title: "Likely Atlas Use-Case Zones",
+          columns: ["Use-Case Zone", "Likely Task", "Why It Matters"],
+          rows: [
+            [
+              "Automotive manufacturing",
+              "Part sequencing, component handling, fixture support, machine tending.",
+              "High-value production environments create clear quality, safety, and throughput metrics.",
+            ],
+            [
+              "Industrial material handling",
+              "Moving bins, kits, parts, tools, or containers between human-scale stations.",
+              "Atlas can work around existing workstations without rebuilding every process around fixed automation.",
+            ],
+            [
+              "Order building",
+              "Building or staging orders from mixed parts and containers.",
+              "Combines mobility, object handling, and workflow sequencing.",
+            ],
+            [
+              "Warehouse and logistics",
+              "Material transfer, order fulfillment support, handoffs between automation zones.",
+              "Useful when wheeled automation cannot handle the full physical workflow.",
+            ],
+            [
+              "Field-service-like industrial work",
+              "Mobile manipulation in environments where strength, reach, and balance matter.",
+              "Potentially valuable, but likely later than structured factory work.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Pricing and Total Cost",
+      paragraphs: [
+        "Boston Dynamics does not publish a simple public price for Atlas. That is expected. Atlas is aimed at qualified enterprise prospects and early deployment paths, not a consumer checkout model. Pricing will likely depend on use case, support scope, software, deployment services, training, and integration requirements.",
+        "The total cost is much larger than the robot body. A production Atlas deployment would include workflow assessment, application training, Orbit integration, MES or WMS connectivity, charging and battery-swap planning, safety validation, spare parts, field maintenance, operator training, support, cybersecurity, and ongoing performance review.",
+        "The most important budget question is not, 'How much is Atlas?' It is, 'What does it cost to make this physical workflow autonomous enough to matter?' If the task needs a humanoid's reach, strength, mobility, and dynamic manipulation, Atlas may be worth evaluating. If the job can be solved with a fixed arm, conveyor, AMR, or cobot, Atlas may be the expensive answer to the wrong question.",
+      ],
+      tables: [
+        {
+          title: "Atlas Cost Areas to Budget For",
+          columns: ["Cost Area", "What It Covers", "Buyer Note"],
+          rows: [
+            [
+              "Robot access",
+              "Atlas hardware through early enterprise deployment or future commercial agreement.",
+              "Current pricing and availability should be verified directly with Boston Dynamics.",
+            ],
+            [
+              "Application development",
+              "Part sequencing, machine tending, order building, material handling workflow design.",
+              "Humanoids still need a specific first job with measurable outcomes.",
+            ],
+            [
+              "Software and integration",
+              "Orbit, MES, WMS, dashboards, fleet metrics, workflow integrations, barcode scanning.",
+              "Atlas only becomes useful when it plugs into the systems that run the facility.",
+            ],
+            [
+              "Safety and operations",
+              "Fenceless guarding, human detection, risk assessment, procedures, worker training.",
+              "A strong humanoid in a workplace needs an unusually strong safety case.",
+            ],
+            [
+              "Maintenance and support",
+              "Field-replaceable parts, serviceability, cleaning, repairs, updates, spare batteries.",
+              "The robot must stay working across shifts, not only in demonstrations.",
+            ],
+          ],
+          note: "Treat Atlas as an industrial automation program, not a retail hardware purchase.",
+        },
+      ],
+    },
+    {
+      heading: "Why Companies Would Integrate Atlas",
+      paragraphs: [
+        "The strongest reason to integrate Atlas is flexibility in human-designed industrial spaces. Factories and warehouses are full of stations, tools, parts, shelves, carts, fixtures, and pathways built around human reach and movement. A humanoid tries to use that existing environment instead of requiring a full facility redesign.",
+        "The second reason is physical capability. Atlas has the reach, payload, balance, and dexterous manipulation profile to attempt tasks that are awkward for smaller humanoids or simple arms. That includes handling parts, moving objects while balancing, and working near existing equipment.",
+        "The third reason is Boston Dynamics' enterprise robotics experience. Spot and Stretch gave the company real experience with customer operations, field support, safety, fleet management, and workflow software. Atlas benefits from that operating history, especially through Orbit integration.",
+      ],
+    },
+    {
+      heading: "The ROI Logic",
+      paragraphs: [
+        "Atlas ROI should be measured task by task. A humanoid can be impressive as a platform, but the first procurement decision should focus on one workflow with clear baseline data. Examples include part sequencing, material transfer, machine tending, order building, or a defined handoff between existing automation systems.",
+        "The best ROI cases have high repetition, meaningful ergonomic burden, measurable throughput constraints, quality risk, and enough variability that a fixed automation system would be expensive or brittle. Atlas is strongest when the job requires mobility, strength, reach, perception, and manipulation together.",
+        "The weakest ROI case is buying Atlas because humanoids are strategically fashionable. If the workflow is not defined, cycle time is unknown, intervention rate is high, or a simpler robot can do the job, the business case is not ready.",
+      ],
+      tables: [
+        {
+          title: "Atlas ROI Checklist",
+          columns: ["Question", "Why It Matters"],
+          rows: [
+            [
+              "Does the task require human-scale mobility and reach?",
+              "Atlas is most justified when existing workstations and equipment matter.",
+            ],
+            [
+              "Is payload a meaningful requirement?",
+              "Atlas' strength matters only if the task benefits from it.",
+            ],
+            [
+              "Can the task be measured?",
+              "Cycle time, quality, intervention rate, uptime, and safety data should be tracked from day one.",
+            ],
+            [
+              "Does the robot integrate with plant systems?",
+              "MES, WMS, Orbit, barcode scans, and fleet metrics turn robot motion into operational value.",
+            ],
+            [
+              "Would a simpler automation system work?",
+              "A fixed robot, AMR, conveyor, cobot, or process redesign may be cheaper for narrow tasks.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Edge AI Stack Behind Atlas",
+      paragraphs: [
+        "Atlas is a strong Black Scarab case study because the robot makes the physical AI stack visible. The visible machine includes legs, arms, grippers, tactile sensors, cameras, batteries, actuators, and ruggedized components. The invisible system includes perception, control, fleet software, workflow integration, model training, simulation, safety systems, and field support.",
+        "Boston Dynamics and Toyota Research Institute have also demonstrated Large Behavior Models powering Atlas for whole-body manipulation and locomotion. The key idea is that a single learned behavior system can coordinate hands, feet, body, perception, and task execution rather than separating walking and manipulation into disconnected control problems.",
+        "For buyers, the practical question is not whether the AI is advanced. It is whether the AI reduces programming burden, intervention burden, and time-to-deploy for the target task. If learning lets one Atlas skill scale across a fleet, that is valuable. If every site still needs heavy custom engineering, the economics remain difficult.",
+      ],
+      tables: [
+        {
+          title: "What an Atlas Deployment Really Includes",
+          columns: ["Layer", "Examples", "Business Question"],
+          rows: [
+            [
+              "Robot platform",
+              "Atlas body, electric actuators, arms, grippers, batteries, tactile sensing, cameras.",
+              "Can the hardware perform the physical task safely across shifts?",
+            ],
+            [
+              "Mobility and manipulation",
+              "Walking, balancing, reaching, lifting, grasping, rotating, placing, recovering.",
+              "Does the task require whole-body capability or only simple handling?",
+            ],
+            [
+              "AI and controls",
+              "Perception, reinforcement learning, foundation models, Large Behavior Models, simulation.",
+              "Can the robot learn and generalize without constant custom programming?",
+            ],
+            [
+              "Enterprise software",
+              "Orbit, MES, WMS, barcode scanning, fleet metrics, dashboards.",
+              "Will robot activity connect to how the operation is managed?",
+            ],
+            [
+              "Operations",
+              "Safety, maintenance, field repair, training, support, spare parts, cleaning.",
+              "Who owns the robot's daily performance after deployment?",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Deployment Pattern: How to Pilot Atlas",
+      paragraphs: [
+        "A first Atlas pilot should be built around a real industrial task, not a movement demonstration. The goal is not to prove that Atlas can walk, lift, or rotate in impressive ways. The goal is to prove that it can complete useful work repeatedly with acceptable safety, uptime, and supervision.",
+        "Part sequencing is a good example of the right kind of first task. It is specific, measurable, tied to production flow, and relevant to human-scale workstations. A buyer should define the parts, containers, sequence logic, pickup points, drop-off points, safety zones, cycle-time targets, quality thresholds, and exception process before the robot arrives.",
+        "The pilot should also compare Atlas against simpler alternatives. If a process can be solved by a cobot, fixture, AMR, conveyor, or better scheduling, that may be the better answer. Atlas should win because the task needs its combined mobility, manipulation, strength, and enterprise integration.",
+      ],
+      tables: [
+        {
+          title: "First Atlas Pilot Plan",
+          columns: ["Step", "Action", "Success Signal"],
+          rows: [
+            [
+              "1",
+              "Choose one manufacturing or material-handling workflow.",
+              "The task has clear volume, pain, safety, quality, or throughput relevance.",
+            ],
+            [
+              "2",
+              "Define the physical work.",
+              "Parts, weights, workstations, reach, route, lighting, handoff points, and exceptions are known.",
+            ],
+            [
+              "3",
+              "Set operational KPIs.",
+              "Cycle time, intervention rate, uptime, successful placements, and safety thresholds are defined.",
+            ],
+            [
+              "4",
+              "Run supervised operations.",
+              "Atlas completes real work while teams collect failure and intervention data.",
+            ],
+            [
+              "5",
+              "Integrate with systems of record.",
+              "Robot activity is visible in Orbit, MES, WMS, dashboards, or workflow reporting.",
+            ],
+            [
+              "6",
+              "Scale only after validation.",
+              "The site has evidence for more tasks, shifts, robots, or facilities.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "When Atlas Is a Bad Fit",
+      paragraphs: [
+        "Atlas is a bad fit when the task is simple, fixed, and already well served by mature automation. High-speed fixed picking, simple cart movement, conveyor transfer, and basic machine tending may be better served by existing robot arms, AMRs, conveyors, or cobots.",
+        "Atlas is also a bad fit if the buyer cannot define the first job. The more capable the robot appears, the easier it is to blur the business case. A serious humanoid deployment should start with a narrow workflow and measurable outcomes.",
+        "Finally, Atlas is a bad fit when the organization is not ready for cross-functional ownership. Safety, maintenance, IT, operations, engineering, finance, and workforce communication all matter. A powerful humanoid robot is not just a technology purchase. It is an operating model change.",
+      ],
+    },
+    {
+      heading: "Black Scarab Takeaway",
+      paragraphs: [
+        "Boston Dynamics Atlas is important because it marks the point where humanoid robotics stops being only a lab benchmark and starts becoming an industrial product category. Atlas still needs proof in real deployments, but its combination of mobility, strength, self-swappable batteries, tactile sensing, safety systems, and enterprise software makes it one of the most serious humanoids to watch.",
+        "For industry leaders, the right posture is disciplined interest. Atlas deserves attention, especially in manufacturing and material handling. But the first question should always be operational: which task, which metric, which integration, which safety case, and which simpler alternatives were considered?",
+        "For Black Scarab's catalog vision, Atlas shows how large the robotics basket becomes. A real humanoid deployment needs actuators, batteries, tactile sensing, cameras, onboard compute, charging, spare parts, safety systems, fleet software, plant integration, support, and data infrastructure. The robot body is the headline, but the deployment stack is the business.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using Boston Dynamics' official Atlas product page, the Atlas specification sheet, Boston Dynamics' Atlas evolution materials, Toyota Research Institute's Large Behavior Model announcement with Boston Dynamics, and Hyundai Motor Group's CES 2026 AI robotics strategy announcement. Current pricing, availability, pilot access, deployment timelines, technical specifications, and production readiness should be verified directly with Boston Dynamics before procurement.",
+      ],
+    },
+  ],
+  sources: [
+    "Boston Dynamics Atlas official product page",
+    "Boston Dynamics Atlas specification sheet",
+    "Boston Dynamics Atlas evolution materials",
+    "Toyota Research Institute and Boston Dynamics Large Behavior Model announcement",
+    "Hyundai Motor Group CES 2026 AI robotics strategy announcement",
+    "Boston Dynamics Orbit integration materials",
+  ],
+  sourceLinks: [
+    {
+      label: "Boston Dynamics Atlas",
+      url: "https://bostondynamics.com/products/atlas/",
+    },
+    {
+      label: "Atlas specification sheet",
+      url: "https://bostondynamics.com/wp-content/uploads/2026/01/atlas-spec-sheet.pdf",
+    },
+    {
+      label: "Atlas evolution from research robot to industrial humanoid",
+      url: "https://bostondynamics.com/blog/atlas-evolution-from-research-robot-to-industrial-humanoid/",
+    },
+    {
+      label: "Toyota Research Institute and Boston Dynamics Large Behavior Model announcement",
+      url: "https://pressroom.toyota.com/ai-powered-robot-by-boston-dynamics-and-toyota-research-institute-takes-a-key-step-towards-general-purpose-humanoids/",
+    },
+    {
+      label: "Hyundai Motor Group CES 2026 AI robotics strategy",
+      url: "https://www.hyundai.com/content/hyundai/worldwide/en/newsroom/detail/hyundai-motor-group-announces-ai-robotics-strategy-to-lead-human-centered-robotics-era-at-ces-2026-0000001100.html",
+    },
+    {
+      label: "Boston Dynamics Orbit documentation",
+      url: "https://dev.bostondynamics.com/docs/concepts/orbit/about_orbit.html",
+    },
+  ],
+});
+
 const figure03DeepDive = (): CaseStudyArticle => ({
   slug: "figure-03-general-purpose-humanoid-robot-guide",
   title:
@@ -3155,6 +3514,7 @@ const agilityRoboticsDigitDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  bostonDynamicsAtlasDeepDive(),
   figure03DeepDive(),
   agilityRoboticsDigitDeepDive(),
   bostonDynamicsSpotDeepDive(),
