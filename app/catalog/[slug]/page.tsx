@@ -12,6 +12,8 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+const baseUrl = "https://www.blackscarab.ai";
+
 export async function generateStaticParams() {
   return products.map((product) => ({ slug: product.slug }));
 }
@@ -29,6 +31,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${product.name} Catalog`,
     description: product.summary,
+    alternates: {
+      canonical: `/catalog/${product.slug}`,
+    },
+    openGraph: {
+      type: "website",
+      url: `${baseUrl}/catalog/${product.slug}`,
+      title: `${product.name} Catalog`,
+      description: product.summary,
+      images: [
+        {
+          url: product.image,
+          alt: product.imageAlt,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.name} Catalog`,
+      description: product.summary,
+      images: [product.image],
+    },
   };
 }
 

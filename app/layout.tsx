@@ -44,9 +44,6 @@ export const metadata: Metadata = {
     template: "%s | Black Scarab",
   },
   description: "AI infrastructure and edge intelligence for real-world industries",
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     siteName: "Black Scarab",

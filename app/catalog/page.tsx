@@ -1,8 +1,33 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "@/components/site-header";
 import CatalogClient from "@/components/catalog-client";
 import { catalogRoadmapItems } from "@/lib/catalog-roadmap";
 import { products } from "@/lib/products";
+
+const baseUrl = "https://www.blackscarab.ai";
+
+export const metadata: Metadata = {
+  title: "AI Infrastructure Catalog",
+  description:
+    "Source compute, sensors, cameras, networking, storage, power, software, and deployment products for edge AI, local AI, and physical AI systems.",
+  alternates: {
+    canonical: "/catalog",
+  },
+  openGraph: {
+    type: "website",
+    url: `${baseUrl}/catalog`,
+    title: "Black Scarab AI Infrastructure Catalog",
+    description:
+      "A growing catalog of hardware and software products for edge AI, local AI, robotics, and real-world AI deployments.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Black Scarab AI Infrastructure Catalog",
+    description:
+      "A growing catalog of hardware and software products for edge AI, local AI, robotics, and real-world AI deployments.",
+  },
+};
 
 export default function CatalogPage() {
   return (

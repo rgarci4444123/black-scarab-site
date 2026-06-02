@@ -1,5 +1,30 @@
+import type { Metadata } from "next";
 import ModelsClient from "@/components/models-client";
 import SiteHeader from "@/components/site-header";
+
+const baseUrl = "https://www.blackscarab.ai";
+
+export const metadata: Metadata = {
+  title: "AI Models",
+  description:
+    "Explore open-source and commercial AI models by deployment style, model type, and practical fit for edge AI, local AI, and industrial systems.",
+  alternates: {
+    canonical: "/models",
+  },
+  openGraph: {
+    type: "website",
+    url: `${baseUrl}/models`,
+    title: "Black Scarab AI Models",
+    description:
+      "A practical model layer for comparing AI models across edge, local, and cloud deployment strategies.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Black Scarab AI Models",
+    description:
+      "A practical model layer for comparing AI models across edge, local, and cloud deployment strategies.",
+  },
+};
 
 export default function ModelsPage() {
   return (

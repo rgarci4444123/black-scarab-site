@@ -8,6 +8,8 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+const baseUrl = "https://www.blackscarab.ai";
+
 export async function generateStaticParams() {
   return industries.map((industry) => ({ slug: industry.slug }));
 }
@@ -25,6 +27,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${industry.label} | Black Scarab`,
     description: industry.subtitle,
+    alternates: {
+      canonical: `/industries/${industry.slug}`,
+    },
+    openGraph: {
+      type: "website",
+      url: `${baseUrl}/industries/${industry.slug}`,
+      title: `${industry.label} | Black Scarab`,
+      description: industry.subtitle,
+      images: [
+        {
+          url: industry.image,
+          alt: industry.imageAlt,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${industry.label} | Black Scarab`,
+      description: industry.subtitle,
+      images: [industry.image],
+    },
   };
 }
 

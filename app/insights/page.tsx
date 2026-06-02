@@ -1,7 +1,32 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
 import { insights } from "../insights-data";
+
+const baseUrl = "https://www.blackscarab.ai";
+
+export const metadata: Metadata = {
+  title: "Insights",
+  description:
+    "Black Scarab insights on edge AI, robotics, local AI, industrial deployment, and the infrastructure behind real-world AI systems.",
+  alternates: {
+    canonical: "/insights",
+  },
+  openGraph: {
+    type: "website",
+    url: `${baseUrl}/insights`,
+    title: "Black Scarab Insights",
+    description:
+      "Articles and guides on edge AI, robotics, local AI, industrial deployment, and real-world AI infrastructure.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Black Scarab Insights",
+    description:
+      "Articles and guides on edge AI, robotics, local AI, industrial deployment, and real-world AI infrastructure.",
+  },
+};
 
 export default function InsightsPage() {
   return (
