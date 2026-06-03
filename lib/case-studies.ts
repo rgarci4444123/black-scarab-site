@@ -2388,6 +2388,403 @@ const anyboticsAnymalDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const teslaOptimusDeepDive = (): CaseStudyArticle => ({
+  slug: "tesla-optimus-vertically-integrated-humanoid-robot-guide",
+  title:
+    "Tesla Optimus Deep Dive: Vertically Integrated Humanoid Robots, Factory AI, Pricing, ROI, and Deployment Strategy",
+  summary:
+    "A business-focused deep dive on Tesla Optimus, covering Tesla's vertically integrated humanoid strategy, AI training loop, factory deployment logic, manufacturing scale, pricing context, ROI risks, and what industry leaders should verify before adopting general-purpose humanoid robots.",
+  publishedLabel: "Robotics Series · Published June 3, 2026",
+  publishedDate: "2026-06-03",
+  typeLabel: "Robotics Series",
+  formatLabel: "Robot deep dive for business leaders",
+  industry: "Manufacturing",
+  image:
+    "/article-images/tesla-optimus-vertically-integrated-humanoid-robot-guide.png",
+  imageAlt:
+    "Tesla Optimus-style humanoid robot carrying a parts bin on an automotive factory floor.",
+  seoDescription:
+    "A 2026 business guide to Tesla Optimus, the vertically integrated humanoid robot strategy connecting robot hardware, AI training, factory deployment, manufacturing scale, pricing context, ROI, and deployment risk.",
+  tags: [
+    "Tesla Optimus",
+    "Optimus robot",
+    "Tesla Bot",
+    "humanoid robot",
+    "factory AI",
+    "vertical integration",
+    "manufacturing automation",
+    "edge AI robotics",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Tesla Optimus is one of the most important humanoid robots to study because the project is not only about a robot body. It is a strategic attempt to connect robot hardware, AI training, inference compute, battery systems, motors, sensors, manufacturing capacity, and real factory deployment inside one vertically integrated company.",
+        "This is the sixth deep dive in Black Scarab's robotics series. Spot and ANYmal showed inspection. Digit showed logistics humanoids. Figure 03 showed embodied AI. Atlas showed industrial mobility and manipulation. Optimus is different because Tesla is trying to make the robot part of a much larger company-wide AI and manufacturing system.",
+        "The executive question is not whether Optimus will eventually become the largest robotics product in the world. That is still unproven. The practical question is whether Tesla can convert its strengths in vehicle AI, factory automation, supply chain scale, battery manufacturing, custom silicon, and internal deployment into a humanoid robot that performs useful work repeatedly.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Optimus is Tesla's general-purpose, bipedal humanoid robot program. Tesla says the goal is a robot capable of performing unsafe, repetitive, or boring tasks, with software stacks for balance, navigation, perception, and interaction with the physical world.",
+        "The reason Optimus matters is vertical integration. Tesla is not just building a robot prototype. It is building AI training infrastructure, inference hardware, robot electrical systems, validation processes, factory lines, battery supply, and internal use cases. In its Q1 2026 update, Tesla said preparations for a first large-scale Optimus factory would begin shortly in Q2, with a first-generation Fremont line designed for 1 million robots per year and a second-generation Texas line designed for long-term annual capacity of 10 million robots.",
+        "Those capacity targets should not be confused with proven production or customer delivery. They are strategic intent and factory planning signals. For business leaders, the correct posture is serious interest with disciplined skepticism. Optimus could reshape humanoid economics if Tesla scales it. But until deployment data is public, buyers should evaluate real tasks, intervention rates, safety, uptime, and total cost before assuming ROI.",
+      ],
+      tables: [
+        {
+          title: "Optimus at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "Tesla's vertically integrated general-purpose humanoid robot program, also known as Tesla Bot or Optimus.",
+            ],
+            [
+              "Who is it for?",
+              "Near term: Tesla factories and controlled industrial tasks. Long term: manufacturing, material handling, service work, and possibly home environments.",
+            ],
+            [
+              "What makes it different?",
+              "Tesla can connect robot hardware, AI models, fleet data, inference chips, batteries, motors, manufacturing lines, and internal factory deployment.",
+            ],
+            [
+              "What is proven?",
+              "Tesla has shown prototypes, factory-oriented work, and major production-line planning. Broad commercial reliability and customer deployment remain unproven.",
+            ],
+            [
+              "How should leaders evaluate it?",
+              "By task readiness, cycle time, intervention rate, safety, uptime, cost per useful hour, and whether Tesla can scale beyond internal factories.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What Tesla Optimus Actually Does",
+      paragraphs: [
+        "Optimus is designed as a human-scale bipedal robot for physical-world tasks. Tesla's official AI & Robotics page describes the project as a general-purpose humanoid aimed at unsafe, repetitive, or boring work. The key software problems include balance, navigation, perception, and physical interaction.",
+        "In plain business terms, Optimus is meant to become a mobile worker for tasks that are currently too variable for fixed automation but too repetitive to remain permanently manual. That could include moving components, sorting parts, carrying containers, supporting line-side logistics, handling factory material flow, and eventually domestic or service tasks.",
+        "The important caveat is maturity. Optimus should not be judged like a mature industrial robot arm or a deployed AMR fleet. It should be judged as a frontier humanoid program moving toward production readiness. The difference matters: a demo can show potential, but a buyer needs uptime, repeatability, safety, serviceability, and measurable work output.",
+      ],
+    },
+    {
+      heading: "Why Tesla's Vertical Integration Matters",
+      paragraphs: [
+        "The core Optimus thesis is not that Tesla is the only company that can build a humanoid robot. The core thesis is that Tesla may be unusually positioned to industrialize one if it can connect enough pieces of the stack internally.",
+        "Tesla already has large-scale manufacturing, battery packs, motor and actuator know-how, vehicle perception, AI training infrastructure, custom AI inference work, factory automation experience, supply-chain leverage, and real factories where robots can be tested before external sale. That gives Tesla a closed loop that many robotics startups do not have.",
+        "This does not guarantee success. Humanoid robots require dexterous hands, safe whole-body control, durable actuators, low-cost serviceability, and a supply chain that is different from cars. But if Tesla can use its factories as both the customer and the training environment, Optimus could improve through the same flywheel Tesla wants for vehicles: real-world data, model iteration, hardware revision, and manufacturing scale.",
+      ],
+      tables: [
+        {
+          title: "Tesla's Potential Optimus Advantages",
+          columns: ["Advantage", "Why It Matters", "What Still Needs Proof"],
+          rows: [
+            [
+              "Internal factories",
+              "Tesla can test robots in its own manufacturing environments before selling externally.",
+              "Whether Optimus performs useful work at meaningful scale without heavy supervision.",
+            ],
+            [
+              "AI training infrastructure",
+              "Tesla can apply vision, planning, data, simulation, and inference work across vehicles and robots.",
+              "Whether vehicle autonomy learnings transfer cleanly to manipulation and humanoid control.",
+            ],
+            [
+              "Manufacturing scale",
+              "Tesla can design production lines and supply chains around high-volume robot production.",
+              "Whether humanoid actuators, hands, sensors, and service parts can scale like vehicle components.",
+            ],
+            [
+              "Custom hardware",
+              "Tesla works on inference compute and electrical systems for vehicles and robots.",
+              "Whether the robot's onboard compute hits the right cost, power, latency, and reliability targets.",
+            ],
+            [
+              "Vertical integration",
+              "Tesla can coordinate hardware, software, data, factory deployment, and service inside one company.",
+              "Whether integration reduces cost and complexity enough to beat specialized competitors.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Where Optimus Could Be Used",
+      paragraphs: [
+        "The most credible first environment for Optimus is Tesla itself. A Tesla factory gives the company structured tasks, controlled processes, internal operators, engineering support, and direct access to failure data. That is a more realistic starting point than sending a humanoid into an unknown customer site on day one.",
+        "Near-term factory work could include material movement, parts sorting, line-side replenishment, simple machine tending, repetitive handoffs, component transport, and other defined tasks where a humanoid form can operate around human-designed workstations.",
+        "Longer term, Tesla positions Optimus more broadly: unsafe, repetitive, or boring work in many environments. The public imagination jumps quickly to home assistance, elder care, and general labor. For Black Scarab's buyer lens, the better sequence is factory first, then structured commercial sites, then broader service or home tasks only after reliability improves.",
+      ],
+      tables: [
+        {
+          title: "Likely Optimus Use-Case Zones",
+          columns: ["Use-Case Zone", "Likely Task", "Why It Matters"],
+          rows: [
+            [
+              "Tesla factories",
+              "Parts movement, sorting, line-side logistics, component handling, repetitive factory support.",
+              "Tesla can control the environment and collect the data needed to improve the robot.",
+            ],
+            [
+              "Automotive manufacturing",
+              "Material handling, kitting, simple machine tending, fixture support.",
+              "Human-scale factories are a natural proving ground for humanoid work.",
+            ],
+            [
+              "Warehousing",
+              "Container movement, tote handling, sorting, handoffs between automation zones.",
+              "Logistics provides repetitive workflows and measurable cycle-time targets.",
+            ],
+            [
+              "Industrial service work",
+              "Routine physical tasks in controlled facilities.",
+              "Potentially valuable once safety, dexterity, uptime, and support models are proven.",
+            ],
+            [
+              "Home and personal assistance",
+              "Domestic chores, basic assistance, object movement, household task execution.",
+              "Large long-term market, but much less controlled than factories and harder to validate early.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Pricing and Total Cost",
+      paragraphs: [
+        "Tesla has not published a commercial Optimus price or buyer-ready purchase program. Public statements and investor narratives around future affordability should be treated as targets or ambitions, not procurement quotes.",
+        "For the next few years, the more realistic cost model is internal deployment and early enterprise validation. The cost includes robot hardware, charging, spare parts, software updates, monitoring, safety validation, maintenance, task engineering, operator training, and support staff. A humanoid that needs frequent intervention can become expensive even if the hardware eventually gets cheaper.",
+        "For business leaders, the right question is not only 'What will Optimus cost?' It is 'What will Optimus cost per useful hour of completed work?' That metric includes uptime, cycle time, supervision ratio, intervention rate, service cost, energy, integration, and the value of the task performed.",
+      ],
+      tables: [
+        {
+          title: "Optimus Cost Areas to Budget For",
+          columns: ["Cost Area", "What It Covers", "Buyer Note"],
+          rows: [
+            [
+              "Robot access",
+              "Future Optimus hardware, internal deployment, pilot access, or commercial purchase model.",
+              "No public commercial price should be treated as available procurement pricing today.",
+            ],
+            [
+              "Task engineering",
+              "Workflow definition, objects, route design, workcell layout, handoff points, exception handling.",
+              "General-purpose robots still need specific first jobs.",
+            ],
+            [
+              "Safety and supervision",
+              "Human-robot safety process, monitoring, emergency procedures, training, intervention handling.",
+              "The supervision burden can dominate early humanoid economics.",
+            ],
+            [
+              "Service and parts",
+              "Actuators, hands, batteries, sensors, electronics, repairs, uptime support.",
+              "Humanoid durability is a major cost variable.",
+            ],
+            [
+              "Systems integration",
+              "Factory systems, MES, WMS, dashboards, task assignment, robot telemetry.",
+              "Robot work must connect to operations data to become measurable.",
+            ],
+          ],
+          note: "Until public deployment data is available, model Optimus as a proof-of-value program rather than a simple hardware purchase.",
+        },
+      ],
+    },
+    {
+      heading: "Why Companies Would Care About Optimus",
+      paragraphs: [
+        "The strongest reason to care about Optimus is not that Tesla has the most polished humanoid demo. The strongest reason is that Tesla may be able to attack cost and scale differently than smaller robotics companies.",
+        "If Tesla can build Optimus with vehicle-style manufacturing discipline, use its own factories as the first customer, improve the robot through internal data, and eventually produce large volumes, the unit economics of humanoid robotics could change. That is the strategic bull case.",
+        "The bear case is just as important: cars are not humanoids. Driving autonomy is not the same as dexterous manipulation. Factory demo work is not full deployment. Low hardware cost does not guarantee low operational cost. The gap between a robot moving in a video and a robot doing paid work every shift remains large.",
+      ],
+    },
+    {
+      heading: "The ROI Logic",
+      paragraphs: [
+        "Optimus ROI should be measured on one task at a time. A broad humanoid narrative can be useful for investors, but operators need a practical workflow: one container type, one part family, one line-side movement, one machine-tending job, or one material-flow bottleneck.",
+        "The best ROI cases will be repetitive, physically simple enough for the robot, valuable enough to matter, and structured enough to measure. The task should have a baseline human process, known labor minutes, known ergonomic risk, known quality requirements, and known cycle-time expectations.",
+        "The wrong ROI case is vague labor replacement. If a robot requires constant human rescue, frequent teleoperation, or a robotics engineer nearby, the business case is not automation yet. It is R&D. That may still be valuable for Tesla internally, but it is different from commercial deployment.",
+      ],
+      tables: [
+        {
+          title: "Optimus ROI Checklist",
+          columns: ["Question", "Why It Matters"],
+          rows: [
+            [
+              "Is the first task specific?",
+              "Humanoids only become measurable when the workflow is narrow enough to track.",
+            ],
+            [
+              "Does the task happen often?",
+              "High repetition creates more data, better utilization, and clearer ROI.",
+            ],
+            [
+              "Can the robot complete it without constant intervention?",
+              "Intervention rate is one of the most important hidden costs.",
+            ],
+            [
+              "Can Tesla or the buyer service the robot cheaply?",
+              "Actuator, hand, battery, and sensor durability determine cost per useful hour.",
+            ],
+            [
+              "Would a simpler system solve it?",
+              "A conveyor, AMR, cobot, fixture, or process change may beat a humanoid for narrow tasks.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Edge AI Stack Behind Optimus",
+      paragraphs: [
+        "Optimus is a strong Black Scarab case study because it shows physical AI as a complete stack. The visible robot is only one part. The real system includes cameras, sensors, actuators, hands, batteries, embedded compute, inference chips, training compute, simulation, telemetry, software updates, factory systems, safety logic, and fleet operations.",
+        "Tesla's AI & Robotics page links Optimus to the same broader autonomy strategy used in vehicles: vision, planning, efficient inference hardware, neural networks, autonomy algorithms, code foundations, and evaluation infrastructure. Tesla's Q1 2026 update also ties Optimus to AI training compute, custom silicon, and semiconductor supply strategy.",
+        "For a business buyer, the key question is whether this stack reduces deployment friction. If Tesla's vertical integration makes robots cheaper, more reliable, and easier to improve, Optimus becomes strategically important. If the robot still needs heavy customization at every site, the advantage is weaker.",
+      ],
+      tables: [
+        {
+          title: "What an Optimus Deployment Really Includes",
+          columns: ["Layer", "Examples", "Business Question"],
+          rows: [
+            [
+              "Robot platform",
+              "Humanoid body, actuators, hands, sensors, batteries, electrical systems.",
+              "Can the robot survive daily physical work with acceptable maintenance?",
+            ],
+            [
+              "AI inference",
+              "Onboard compute, perception, planning, balance, navigation, manipulation.",
+              "Can the robot act fast and safely in the real world?",
+            ],
+            [
+              "Training loop",
+              "Factory data, simulation, model iteration, fleet learning, evaluation infrastructure.",
+              "Does more deployment data make the robot better over time?",
+            ],
+            [
+              "Manufacturing scale",
+              "Fremont and Texas production-line plans, supply chain, validation, quality systems.",
+              "Can Tesla produce reliable humanoids at lower cost than competitors?",
+            ],
+            [
+              "Operations",
+              "Safety, task assignment, monitoring, maintenance, support, integration.",
+              "Who owns robot performance after the first deployment?",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Deployment Pattern: How to Pilot Optimus",
+      paragraphs: [
+        "A first Optimus pilot should be designed like an industrial automation test, not a technology spectacle. The goal is not to prove that Optimus can walk or wave. The goal is to prove that it can complete one useful task repeatedly, safely, and with measurable labor, throughput, or ergonomics value.",
+        "The ideal first task is boring: move the same type of part, sort a small set of items, replenish a defined workstation, handle a standardized container, or perform a simple machine-side support job. The boring task is the serious task because it produces comparable data.",
+        "For external buyers, the biggest question will be support. Tesla can support internal factory pilots with its own engineers. A customer needs to know what happens when the robot fails at 2 a.m., misses a grasp, damages a part, loses localization, or needs hardware service.",
+      ],
+      tables: [
+        {
+          title: "First Optimus Pilot Plan",
+          columns: ["Step", "Action", "Success Signal"],
+          rows: [
+            [
+              "1",
+              "Choose one repeatable factory or logistics task.",
+              "The task has clear volume, labor time, ergonomic relevance, or throughput impact.",
+            ],
+            [
+              "2",
+              "Define physical boundaries.",
+              "Objects, weights, pickup points, drop-off points, route, lighting, and exceptions are known.",
+            ],
+            [
+              "3",
+              "Set operational metrics.",
+              "Cycle time, task success rate, intervention rate, uptime, and safety thresholds are defined.",
+            ],
+            [
+              "4",
+              "Run supervised operations.",
+              "The robot completes real work while teams collect failure and intervention data.",
+            ],
+            [
+              "5",
+              "Connect to operations systems.",
+              "Robot work is visible in dashboards, factory systems, or production reporting.",
+            ],
+            [
+              "6",
+              "Scale only after proof.",
+              "The pilot shows enough useful work per hour to justify more tasks or more robots.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "When Optimus Is a Bad Fit",
+      paragraphs: [
+        "Optimus is a bad fit when the task is already solved by mature automation. If a fixed industrial arm, AMR, conveyor, sorting machine, fixture, or simple process redesign can solve the problem, a humanoid may be unnecessary.",
+        "It is also a bad fit when leadership wants a robot because humanoids are strategically exciting but cannot name the first task. A general-purpose robot still needs a specific first job. Without that, the project becomes a demo program, not an operations program.",
+        "The final bad fit is an organization that cannot support robotics operations. Safety, IT, maintenance, operations, process engineering, and finance all need to be involved. A humanoid is not just a device. It is a new operating asset.",
+      ],
+    },
+    {
+      heading: "Black Scarab Takeaway",
+      paragraphs: [
+        "Tesla Optimus belongs in this series because it is the cleanest example of humanoid robotics as a vertical-integration bet. The robot is not only hardware. It is a bet on AI models, training infrastructure, manufacturing scale, factory deployment, supply chain, custom electronics, batteries, and data loops.",
+        "For industry leaders, the right posture is neither hype nor dismissal. Optimus is strategically important because Tesla has the resources and internal deployment environment to push humanoids hard. But buyers should still demand proof: task output, uptime, intervention rate, safety performance, support model, and total cost per useful hour.",
+        "For Black Scarab's catalog vision, Optimus is a reminder that the robotics basket includes far more than the robot body. Real deployments require batteries, actuators, sensors, cameras, inference compute, networking, charging, safety systems, dashboards, factory integration, service parts, and training data infrastructure.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using Tesla's official AI & Robotics page, Tesla's Q1 2026 and Q4 2025 investor update materials, Tesla Optimus engineering job descriptions, Tesla impact and regulatory materials, Associated Press reporting on Tesla's robotics manufacturing plans, and public reporting around Optimus production targets and factory strategy. Current pricing, commercial availability, deployment terms, and real-world performance should be verified directly with Tesla before procurement.",
+      ],
+    },
+  ],
+  sources: [
+    "Tesla AI & Robotics official page",
+    "Tesla Q1 2026 investor update",
+    "Tesla Q4 2025 investor update",
+    "Tesla Optimus hardware and validation engineering roles",
+    "Tesla 2024 Impact Report",
+    "Associated Press reporting on Tesla robot manufacturing plans",
+  ],
+  sourceLinks: [
+    {
+      label: "Tesla AI & Robotics",
+      url: "https://www.tesla.com/AI",
+    },
+    {
+      label: "Tesla Q1 2026 update",
+      url: "https://ir.tesla.com/_flysystem/s3/sec/000162828026026551/tsla-20260422-gen.pdf",
+    },
+    {
+      label: "Tesla Q4 2025 update",
+      url: "https://ir.tesla.com/_flysystem/s3/sec/000162828026003837/tsla-20260128-gen.pdf",
+    },
+    {
+      label: "Tesla Optimus hardware validation role",
+      url: "https://www.tesla.com/careers/search/job/electrical-hardware-validation-engineer-optimus-252030",
+    },
+    {
+      label: "Tesla AI inference hardware role for Optimus",
+      url: "https://www.tesla.com/careers/search/job/electrical-engineer-ai-inference-hardware-optimus-264544",
+    },
+    {
+      label: "Tesla 2024 Impact Report",
+      url: "https://www.tesla.com/ns_videos/2024-tesla-impact-report.pdf",
+    },
+    {
+      label: "AP News on Tesla robot manufacturing plans",
+      url: "https://apnews.com/article/shanghai-china-tesla-robots-electric-cars-musk-a05b41ae0d32fa391eaae1512871670a",
+    },
+  ],
+});
+
 const bostonDynamicsAtlasDeepDive = (): CaseStudyArticle => ({
   slug: "boston-dynamics-atlas-industrial-humanoid-robot-guide",
   title:
@@ -3514,6 +3911,7 @@ const agilityRoboticsDigitDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  teslaOptimusDeepDive(),
   bostonDynamicsAtlasDeepDive(),
   figure03DeepDive(),
   agilityRoboticsDigitDeepDive(),
