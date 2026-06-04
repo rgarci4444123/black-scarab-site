@@ -2785,6 +2785,394 @@ const teslaOptimusDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const unitreeG1DeepDive = (): CaseStudyArticle => ({
+  slug: "unitree-g1-affordable-humanoid-robot-research-platform-guide",
+  title:
+    "Unitree G1 Deep Dive: Affordable Humanoid Robots, Embodied AI Research, Pricing, ROI, and Deployment Strategy",
+  summary:
+    "A business-focused deep dive on Unitree G1, covering the lower-cost humanoid platform, research and education use cases, embodied AI experimentation, pricing context, developer access, ROI logic, and what leaders should verify before treating affordable humanoids as operational automation.",
+  publishedLabel: "Robotics Series · Published June 4, 2026",
+  publishedDate: "2026-06-04",
+  typeLabel: "Robotics Series",
+  formatLabel: "Robot deep dive for business leaders",
+  industry: "Research & Education",
+  image:
+    "/article-images/unitree-g1-affordable-humanoid-robot-research-platform-guide.png",
+  imageAlt:
+    "Unitree G1-style humanoid robot testing object manipulation in a robotics lab.",
+  seoDescription:
+    "A 2026 business guide to Unitree G1, the affordable humanoid robot platform for embodied AI research, education, developer experimentation, pricing, ROI, and deployment strategy.",
+  tags: [
+    "Unitree G1",
+    "affordable humanoid robot",
+    "humanoid research platform",
+    "embodied AI",
+    "robotics education",
+    "developer robotics",
+    "robotics ROI",
+    "edge AI robotics",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Unitree G1 matters because affordability changes who gets to participate in humanoid robotics. Most humanoid systems are priced, sold, or deployed like enterprise programs. G1 is different: it pushes humanoid access closer to universities, labs, developers, startups, AI researchers, and technical teams that want a real bipedal platform without the budget of an automotive manufacturer or a major robotics company.",
+        "This is the seventh deep dive in Black Scarab's robotics series. Spot and ANYmal showed industrial inspection. Digit showed logistics humanoids. Figure 03 showed embodied AI. Atlas showed high-end industrial mobility. Optimus showed vertical integration. Unitree G1 shows another force entirely: lower-cost hardware that can expand experimentation.",
+        "The executive question is not whether G1 should replace workers in a factory today. That is the wrong frame. The practical question is what lower-cost humanoids make possible for research, education, developer ecosystems, AI training, simulation-to-real testing, and early embodied AI pilots.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Unitree G1 is a compact humanoid robot platform from Unitree Robotics, positioned around research, education, entertainment, development, and embodied AI experimentation. Unitree lists G1 from $13.5K, with price excluding tax and shipping. That is dramatically lower than the enterprise humanoid systems usually discussed in boardrooms.",
+        "The official product page lists a height of about 1320 mm when standing, weight of about 35 kg, 23 to 43 joint motors depending on configuration, a depth camera and 3D LiDAR, a microphone array, Wi-Fi 6 and Bluetooth 5.2, and about 2 hours of battery life. The EDU configuration is the more serious developer option, with secondary development support, additional degrees of freedom, and NVIDIA Jetson Orin listed in the materials.",
+        "For business leaders, the right posture is clear: Unitree G1 is best understood as a lower-cost humanoid development platform, not a proven enterprise labor system. It can help teams learn, test, train, recruit, prototype, and explore embodied AI. It should not be evaluated with the same assumptions as a mature industrial robot arm, an AMR fleet, or a fully supported enterprise humanoid deployment.",
+      ],
+      tables: [
+        {
+          title: "Unitree G1 at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "A lower-cost humanoid robot platform from Unitree Robotics for research, education, development, entertainment, and embodied AI experimentation.",
+            ],
+            [
+              "Who is it for?",
+              "Universities, robotics labs, AI researchers, developers, startups, educators, and technical teams exploring humanoid software and control.",
+            ],
+            [
+              "What makes it different?",
+              "Price accessibility. Unitree lists G1 from $13.5K, which lowers the entry point for hands-on humanoid experimentation.",
+            ],
+            [
+              "What is proven?",
+              "The platform is commercially listed and documented for developer use, but enterprise reliability, service model, and labor ROI should still be validated carefully.",
+            ],
+            [
+              "How should leaders evaluate it?",
+              "By research value, developer access, safety, support, secondary development needs, durability, training use, and whether it is being bought for learning or operations.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What Unitree G1 Actually Does",
+      paragraphs: [
+        "G1 is a humanoid platform built for motion, perception, developer experimentation, and embodied AI work. The robot is smaller and lighter than many enterprise humanoids, but it includes the core ingredients teams need to work on humanoid autonomy: legs, arms, joint motors, sensing, batteries, onboard electronics, wireless connectivity, and developer tooling in the right configuration.",
+        "In plain business terms, G1 is best treated as a robot for learning and building, not a robot for immediate plant-floor productivity. A lab can use it to test locomotion, teleoperation, imitation learning, perception, reinforcement learning, human-robot interaction, and early manipulation workflows. A university can use it to teach modern robotics with a physical humanoid instead of only simulation.",
+        "That distinction matters. A $13.5K starting price can make G1 feel approachable, but approachable is not the same as turnkey. The buyer still needs robotics knowledge, safety practices, technical ownership, support planning, and clarity on whether they are buying a research platform or an operational asset.",
+      ],
+    },
+    {
+      heading: "Why Affordability Matters",
+      paragraphs: [
+        "In robotics, lower cost can create a bigger market long before the robot is ready to replace labor. Affordable platforms allow more students, developers, AI teams, and labs to work directly with humanoid hardware. That expands talent, accelerates software experimentation, and gives more organizations a realistic path into embodied AI.",
+        "This is the same pattern that helped other technology categories grow. Cheap developer boards did not replace data centers, but they expanded the developer base. Lower-cost drones did not immediately replace aircraft, but they created a huge experimentation layer. G1 could play a similar role for humanoids: not the final enterprise robot, but the on-ramp.",
+        "For Black Scarab, this is important because the catalog vision is not only about finished systems. It is also about the components, compute, sensors, batteries, actuators, cameras, developer tools, and training workflows that make a robotics ecosystem possible.",
+      ],
+      tables: [
+        {
+          title: "What Lower-Cost Humanoids Unlock",
+          columns: ["Buyer Type", "What G1 Can Enable", "Main Risk"],
+          rows: [
+            [
+              "Universities",
+              "Hands-on humanoid robotics courses, capstone projects, locomotion research, embodied AI labs.",
+              "Faculty and lab teams still need technical support and safety processes.",
+            ],
+            [
+              "AI research teams",
+              "Real-world testing for imitation learning, teleoperation, perception, and simulation-to-real work.",
+              "The robot may be a research tool, not a reliable production worker.",
+            ],
+            [
+              "Startups",
+              "Prototype applications, collect early data, test user experiences, demonstrate embodied AI concepts.",
+              "A prototype demo can be mistaken for a scalable product too early.",
+            ],
+            [
+              "Enterprises",
+              "Internal learning, innovation labs, robotics literacy, evaluation of humanoid workflows.",
+              "Operations teams may overestimate near-term automation value.",
+            ],
+            [
+              "Developers",
+              "SDK work, control experiments, software integration, robot behavior testing.",
+              "Developer access depends on buying the right configuration and understanding limitations.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Where G1 Could Be Used",
+      paragraphs: [
+        "The best first use cases for G1 are research, education, developer experimentation, demonstrations, and controlled pilots. It belongs in labs, classrooms, innovation centers, robotics accelerators, AI teams, and early-stage product groups that need physical humanoid hardware to learn from.",
+        "A company could also use G1 for internal robotics literacy. Executives, operations leaders, and engineering teams often understand automation better after seeing real constraints: balance, battery life, object handling, perception failures, safety planning, and the difference between a scripted demo and a repeatable workflow.",
+        "The weaker use case is immediate labor substitution. If the business problem is moving pallets, loading machines, running warehouse shifts, or handling high-throughput manufacturing, G1 should not be treated as a direct substitute for industrial automation. It may help the organization learn what humanoids can become, but that is different from running production.",
+      ],
+      tables: [
+        {
+          title: "Likely Unitree G1 Use-Case Zones",
+          columns: ["Use-Case Zone", "Likely Task", "Why It Matters"],
+          rows: [
+            [
+              "Research labs",
+              "Locomotion, manipulation, perception, teleoperation, imitation learning, control experiments.",
+              "G1 gives researchers a physical humanoid platform at a lower entry price.",
+            ],
+            [
+              "Universities",
+              "Robotics curriculum, embodied AI labs, student projects, competition preparation.",
+              "Students can work with modern humanoid constraints instead of only simulation.",
+            ],
+            [
+              "AI developer teams",
+              "Collect real-world data, test policies, connect perception models to robot action.",
+              "Embodied AI needs contact with physical uncertainty.",
+            ],
+            [
+              "Corporate innovation labs",
+              "Executive education, prototype workflows, technical scouting, robotics strategy.",
+              "The organization can learn before committing to larger enterprise humanoid programs.",
+            ],
+            [
+              "Entertainment and demonstrations",
+              "Shows, content, events, public demos, interactive experiences.",
+              "A lower-cost humanoid can create engagement, but safety and expectations still matter.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Pricing and Total Cost",
+      paragraphs: [
+        "Unitree lists G1 from $13.5K, with tax and shipping excluded. The official store also separates the standard G1 from the EDU-oriented configurations. Unitree's own materials indicate that secondary development is not supported on the basic configuration and that buyers interested in EDU should contact sales.",
+        "That price is the headline, but it is not the full cost of a useful robotics program. A serious buyer should budget for accessories, shipping, taxes, spare parts, batteries, repairs, developer time, lab space, safety procedures, computing infrastructure, software integration, staff training, and downtime.",
+        "The key cost question is therefore different from enterprise humanoids. With G1, the buyer is often not asking, 'Can this robot pay for itself by replacing labor?' The better question is, 'Can this robot accelerate learning, research, hiring, experimentation, and technical readiness enough to justify the program?'",
+      ],
+      tables: [
+        {
+          title: "G1 Cost Areas to Budget For",
+          columns: ["Cost Area", "What It Covers", "Buyer Note"],
+          rows: [
+            [
+              "Robot purchase",
+              "Standard G1 or EDU configuration, depending on development needs.",
+              "Confirm configuration, secondary development access, warranty, taxes, and shipping before purchase.",
+            ],
+            [
+              "Developer setup",
+              "SDKs, control software, ROS or ROS 2 work, model training, simulation, integration.",
+              "The technical team often costs more than the robot over time.",
+            ],
+            [
+              "Safety and lab operations",
+              "Test area, procedures, supervision, storage, charging, emergency handling.",
+              "A research robot still needs a real safety process.",
+            ],
+            [
+              "Maintenance and spares",
+              "Actuators, batteries, sensors, cables, repairs, downtime, support.",
+              "Lower hardware price does not eliminate lifecycle costs.",
+            ],
+            [
+              "Compute and data",
+              "Training systems, logging, cameras, datasets, simulation, cloud or local AI infrastructure.",
+              "Embodied AI work often depends on the surrounding AI stack.",
+            ],
+          ],
+          note: "Treat the starting price as hardware entry cost, not total program cost.",
+        },
+      ],
+    },
+    {
+      heading: "Why Companies Would Care About G1",
+      paragraphs: [
+        "The strongest reason companies should care about G1 is capability-building. Many executives want to understand humanoids, but their teams have never owned, programmed, tested, repaired, or operated one. G1 can make that learning concrete.",
+        "The second reason is developer ecosystem growth. If lower-cost humanoids spread across universities and labs, more engineers will become comfortable with humanoid control, perception, data collection, and safety constraints. That talent base matters for the entire robotics industry.",
+        "The third reason is experimentation speed. A company does not need to wait for a million-dollar enterprise humanoid program to start learning. It can use a lower-cost platform to explore workflows, understand edge compute requirements, evaluate robot data pipelines, test human-robot interaction, and identify which tasks are realistic.",
+      ],
+    },
+    {
+      heading: "The ROI Logic",
+      paragraphs: [
+        "G1 ROI should be measured differently from industrial automation ROI. For a mature automation system, ROI is usually about labor savings, throughput, uptime, quality, and reduced downtime. For G1, the near-term ROI is more often learning ROI.",
+        "Learning ROI includes the value of building internal robotics literacy, training students or staff, attracting technical talent, testing embodied AI models, accelerating prototypes, and avoiding expensive strategic mistakes. If a $13.5K platform helps an organization learn that a much larger humanoid deployment is not ready, that can still be a good investment.",
+        "The wrong ROI case is pretending that low purchase price automatically means low operational cost. If a robot requires constant troubleshooting, engineering time, repair, and supervision, its real cost can rise quickly. The right buyer knows whether the goal is research, education, demo value, or operational automation.",
+      ],
+      tables: [
+        {
+          title: "Unitree G1 ROI Checklist",
+          columns: ["Question", "Why It Matters"],
+          rows: [
+            [
+              "Is the goal learning or operations?",
+              "G1 is strongest when the buyer is explicit that the first return is knowledge, not labor replacement.",
+            ],
+            [
+              "Do we need secondary development?",
+              "Developer access and configuration choice determine how useful the robot is for serious software work.",
+            ],
+            [
+              "Do we have technical ownership?",
+              "A humanoid platform needs people who can troubleshoot, program, test, and maintain it.",
+            ],
+            [
+              "Can we define experiments?",
+              "The value improves when teams have clear research questions, demos, curricula, or pilot workflows.",
+            ],
+            [
+              "Could simulation answer the question first?",
+              "Physical robots are valuable, but not every research question needs hardware immediately.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Edge AI Stack Behind G1",
+      paragraphs: [
+        "G1 is a useful Black Scarab case study because it makes the developer-side robotics stack visible. The robot body is only the start. A useful program may include onboard compute, depth sensing, LiDAR, cameras, microphones, wireless networking, batteries, SDKs, simulation, teleoperation tools, datasets, model training, logging, and safety monitoring.",
+        "The EDU materials list NVIDIA Jetson Orin, and third-party developer documentation such as Hugging Face LeRobot support points to the kind of workflow researchers care about: teleoperation, data collection, training, simulation, and policy deployment. That is the bridge between AI research and physical robot behavior.",
+        "For business leaders, the lesson is that affordable humanoids are not only a robot purchase. They are an AI infrastructure decision. The organization needs to understand compute, data, software, and robot operations if it wants meaningful results.",
+      ],
+      tables: [
+        {
+          title: "What a G1 Program Really Includes",
+          columns: ["Layer", "Examples", "Business Question"],
+          rows: [
+            [
+              "Robot platform",
+              "Humanoid body, joint motors, arms, legs, battery, sensors, wireless connectivity.",
+              "Is the physical platform enough for the experiments we want to run?",
+            ],
+            [
+              "Sensing",
+              "Depth camera, 3D LiDAR, microphones, optional external cameras.",
+              "What does the robot need to perceive for the target task?",
+            ],
+            [
+              "Compute",
+              "Onboard compute, Jetson Orin on EDU, external workstations, local or cloud training.",
+              "Where will perception, control, data collection, and model training run?",
+            ],
+            [
+              "Developer tools",
+              "SDKs, ROS or ROS 2, simulation, teleoperation, LeRobot-style workflows.",
+              "Can the technical team build and test the behaviors it actually needs?",
+            ],
+            [
+              "Operations",
+              "Safety, charging, lab procedures, maintenance, spares, supervision.",
+              "Can the organization operate the robot responsibly over time?",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Deployment Pattern: How to Pilot G1",
+      paragraphs: [
+        "A first G1 pilot should be designed as a learning program. The goal is not to prove that a lower-cost humanoid can replace a worker. The goal is to build robotics fluency, test a specific software question, and understand how physical AI behaves outside a video.",
+        "A strong first pilot might be a university lab building a semester-long humanoid robotics course, a corporate AI team testing teleoperation and imitation learning, a startup evaluating manipulation workflows, or an innovation team mapping which internal tasks are too hard for current humanoids.",
+        "The pilot should produce artifacts: recorded failures, datasets, safety notes, control experiments, task videos, cost logs, maintenance notes, and a clear recommendation about what to test next. If the pilot produces only a cool demo, it is leaving value on the table.",
+      ],
+      tables: [
+        {
+          title: "First G1 Pilot Plan",
+          columns: ["Step", "Action", "Success Signal"],
+          rows: [
+            [
+              "1",
+              "Decide whether the goal is education, research, demo, or workflow scouting.",
+              "The team knows what kind of return it expects.",
+            ],
+            [
+              "2",
+              "Choose the correct configuration.",
+              "Secondary development, compute, warranty, support, and SDK needs are confirmed before purchase.",
+            ],
+            [
+              "3",
+              "Create a safe test environment.",
+              "The robot has a controlled space, supervision, charging plan, and shutdown procedure.",
+            ],
+            [
+              "4",
+              "Define three to five experiments.",
+              "The team has concrete tasks such as teleoperation, perception, balance, grasping, or data collection.",
+            ],
+            [
+              "5",
+              "Log everything.",
+              "Failures, interventions, battery life, repairs, software issues, and task success are recorded.",
+            ],
+            [
+              "6",
+              "Convert learning into strategy.",
+              "The pilot informs what hardware, compute, safety, and talent the organization needs next.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "When G1 Is a Bad Fit",
+      paragraphs: [
+        "G1 is a bad fit when the buyer expects turnkey industrial automation. If the business needs reliable material handling, inspection, machine tending, or production work today, a mature robot arm, AMR, cobot, quadruped, or integrator-led automation project may be the better path.",
+        "It is also a bad fit when the organization has no technical owner. Lower cost does not remove the need for robotics engineering, software debugging, safety planning, maintenance, and experiment design. A humanoid without technical ownership quickly becomes a very expensive conversation piece.",
+        "Finally, G1 is a bad fit if the buyer does not understand configuration tradeoffs. The basic version and EDU-oriented version are not the same buying decision. If the goal is development, the team must verify secondary development support, compute, SDK access, warranty, and support before ordering.",
+      ],
+    },
+    {
+      heading: "Black Scarab Takeaway",
+      paragraphs: [
+        "Unitree G1 belongs in this series because it represents the democratization layer of humanoid robotics. Atlas and Optimus tell us where high-end industrial humanoids may go. G1 tells us how more people may start building, testing, and learning with humanoid platforms today.",
+        "For industry leaders, the right posture is practical curiosity. G1 may not be the robot that runs your warehouse or factory, but it may be the robot that helps your team understand humanoids before the category matures. That learning can shape better procurement decisions later.",
+        "For Black Scarab's catalog vision, G1 reinforces why the component stack matters. Affordable humanoid programs need sensors, compute, batteries, actuators, SDKs, data tooling, simulation, safety systems, spare parts, and support. The lower the robot price gets, the more important the surrounding ecosystem becomes.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using Unitree's official G1 product page, Unitree's official store listing, Unitree G1 developer documentation, Unitree SDK and secondary-development materials, and Hugging Face LeRobot documentation for Unitree G1. Current pricing, configuration availability, warranty, shipping, developer access, safety requirements, and support terms should be verified directly with Unitree before procurement.",
+      ],
+    },
+  ],
+  sources: [
+    "Unitree G1 official product page",
+    "Unitree G1 official store listing",
+    "Unitree G1 developer documentation",
+    "Unitree G1 SDK and secondary development materials",
+    "Hugging Face LeRobot Unitree G1 documentation",
+  ],
+  sourceLinks: [
+    {
+      label: "Unitree G1 official product page",
+      url: "https://www.unitree.com/g1/",
+    },
+    {
+      label: "Unitree G1 official store listing",
+      url: "https://shop.unitree.com/products/unitree-g1",
+    },
+    {
+      label: "Unitree G1 developer documentation",
+      url: "https://support.unitree.com/home/en/G1_developer",
+    },
+    {
+      label: "Unitree SDK2 Python documentation",
+      url: "https://support.unitree.com/home/en/developer/Basic_services",
+    },
+    {
+      label: "Hugging Face LeRobot Unitree G1 guide",
+      url: "https://huggingface.co/docs/lerobot/unitree_g1",
+    },
+  ],
+});
+
 const bostonDynamicsAtlasDeepDive = (): CaseStudyArticle => ({
   slug: "boston-dynamics-atlas-industrial-humanoid-robot-guide",
   title:
@@ -3911,6 +4299,7 @@ const agilityRoboticsDigitDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  unitreeG1DeepDive(),
   teslaOptimusDeepDive(),
   bostonDynamicsAtlasDeepDive(),
   figure03DeepDive(),
