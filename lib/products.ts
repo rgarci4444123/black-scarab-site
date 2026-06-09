@@ -963,6 +963,51 @@ export const products: ProductData[] = [
     sourceLabel: "Official product page",
   },
   {
+    slug: "advantech-mic-733-ao",
+    name: "Advantech MIC-733-AO",
+    vendor: "Advantech",
+    category: "Edge Computers",
+    industries: [
+      "Manufacturing",
+      "Transportation & Logistics",
+      "Healthcare",
+      "Retail",
+    ],
+    powerProfile: "Medium (25–200W)",
+    deploymentTypes: ["Indoor", "Mobile", "Industrial"],
+    price: "Request quote",
+    priceStatus: "Quote required",
+    priceNote:
+      "Advantech lists the MIC-733-AO through its official product and sales channels, but public checkout pricing was not shown on the official product page. Final pricing depends on Jetson AGX Orin memory configuration, PoE, GMSL, storage, expansion, and regional sales terms.",
+    image: "/product-images/advantech-mic-733-ao.png",
+    imageAlt:
+      "Advantech MIC-733-AO fanless Jetson AGX Orin edge AI computer with front I/O",
+    summary:
+      "A compact fanless edge AI computer based on NVIDIA Jetson AGX Orin, built for industrial vision, robotics, remote monitoring, and high-throughput on-site inference.",
+    whyItMatters:
+      "The MIC-733-AO packages Jetson AGX Orin compute into a deployable industrial box with PoE-capable Ethernet, USB, serial, SIM, GMSL, NVMe, and optional PCIe expansion for sensor-heavy edge AI systems.",
+    specs: [
+      { label: "AI Compute", value: "NVIDIA Jetson AGX Orin, up to 275 TOPS" },
+      { label: "I/O", value: "4x GbE with optional PoE, USB 3.2 Gen 2, RS-232/422/485, 4-ch DI/DO" },
+      { label: "Expansion", value: "mPCIe, dual Nano SIM, M.2 3052, M.2 2280 NVMe, optional PCIe x8" },
+    ],
+    bestFor: [
+      "Industrial computer vision systems",
+      "AMR and robotics edge compute",
+      "PoE camera and sensor hubs",
+    ],
+    usedIn: [
+      "Factory inspection and machine vision",
+      "Warehouse robotics and fleet intelligence",
+      "Smart facility and healthcare edge monitoring",
+    ],
+    blackScarabPov:
+      "This is a strong Jetson-based edge computer when a project needs more deployment-ready industrial I/O than a developer kit. The appeal is the combination of AGX Orin AI performance, fanless packaging, PoE-ready networking, cellular expansion paths, GMSL camera support, and optional PCIe expansion in one fieldable platform.",
+    officialUrl:
+      "https://www.advantech.com/en-us/products/965e4edb-fb98-429e-89ed-9a0a8435a7be/mic-733/mod_09861425-4950-46ab-ad39-1b5522881218",
+    sourceLabel: "Official product page",
+  },
+  {
     slug: "seeed-studio-recomputer-j4012",
     name: "Seeed Studio reComputer J4012",
     vendor: "Seeed Studio / NVIDIA Jetson",
