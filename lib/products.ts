@@ -1218,17 +1218,18 @@ export const products: ProductData[] = [
     deploymentTypes: ["Indoor", "Industrial"],
     price: "Request quote",
     priceStatus: "Quote required",
-    priceNote: "Industrial gateways are often quoted through Dell partners or resellers.",
-    image: "/product-images/dell-edge-gateway-5200.jpg",
-    imageAlt: "Logistics environment representing Dell Edge Gateway deployments",
+    priceNote:
+      "Dell publishes system specifications and support documentation for the Edge Gateway 5200, but public checkout pricing was not shown on the official manual page. Final pricing depends on CPU, memory, storage, wireless, expansion, service, and partner procurement terms.",
+    image: "/product-images/dell-edge-gateway-5200.png",
+    imageAlt: "Dell EMC Edge Gateway 5200 industrial gateway with ribbed black chassis",
     summary:
-      "An industrial gateway-style platform for bringing local analytics, device integration, and edge processing into operational environments.",
+      "An industrial edge gateway with Intel Core i3/i5/i7 TE processor options, wired and wireless connectivity, industrial I/O, and support for Windows IoT, Ubuntu, and Dell NativeEdge.",
     whyItMatters:
-      "It offers a practical bridge between enterprise infrastructure and field-level device networks where reliability matters more than minimal size.",
+      "The Edge Gateway 5200 is useful when an AI or automation deployment needs a rugged on-site compute and integration layer between enterprise systems, machine networks, field devices, and local analytics workloads.",
     specs: [
-      { label: "Compute Style", value: "Industrial edge gateway" },
-      { label: "Power Profile", value: "Moderate operational footprint" },
-      { label: "Form Factor", value: "Facility or cabinet-mounted gateway" },
+      { label: "Processor / Memory", value: "Intel Core i7-9700TE, i5-9500TE, or i3-9100TE; up to 64GB DDR4" },
+      { label: "Industrial I/O", value: "3x Intel GbE, 6x external USB, COM ports, 8-ch DI/DO, WiFi 6E, Bluetooth 5.3" },
+      { label: "Rugged Platform", value: "12-24 VDC input, IP30, 0C to 60C operation with airflow, wall mount support" },
     ],
     bestFor: [
       "Industrial networking environments",
@@ -1241,10 +1242,10 @@ export const products: ProductData[] = [
       "Factory network edge aggregation",
     ],
     blackScarabPov:
-      "A practical choice when the problem is not just AI inference, but also secure device integration and operational reliability across multiple sites.",
+      "This is a practical edge gateway when the system problem is not only inference, but also device integration, remote operations, industrial I/O, and repeatable multi-site deployment. It is best positioned as the reliable operations layer around sensors, machines, networks, and smaller local analytics workloads.",
     officialUrl:
-      "https://www.netsolutionworks.com/egw-5200.asp?utm_term=dell%20edge%20gateway%205200&utm_campaign=Dell+Networking+*123&utm_source=adwords&utm_medium=ppc&hsa_tgt=kwd-2268790644929&hsa_grp=159319808804&hsa_src=g&hsa_net=adwords&hsa_mt=e&hsa_ver=3&hsa_ad=687494048780&hsa_acc=9041622380&hsa_kw=dell%20edge%20gateway%205200&hsa_cam=361999621&gad_source=1&gad_campaignid=361999621&gbraid=0AAAAAD_vIyaTNW7Z7AnIp-zXb9o-h5H8p&gclid=CjwKCAjwvqjOBhAGEiwAngeQnW7H2Epf8n3KizG69kAdWcEMudGmTawqmwHJ9i87zikd0kwlQ5TlnBoCM4gQAvD_BwE",
-    sourceLabel: "Partner listing",
+      "https://www.dell.com/support/manuals/en-hn/dell-edge-gateway-5200/egw-5200-users-guide/egw-5200-system-specifications?guid=guid-08a269b0-16fa-4e6e-b3cf-2194de9f924f&lang=en-us",
+    sourceLabel: "Official manual",
   },
   {
     slug: "intel-realsense-d455",
