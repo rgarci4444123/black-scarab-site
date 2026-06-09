@@ -1212,6 +1212,45 @@ export const products: ProductData[] = [
     sourceLabel: "Official product page",
   },
   {
+    slug: "arduino-portenta-h7",
+    name: "Arduino Portenta H7",
+    vendor: "Arduino",
+    category: "Boards, SBCs & Microcontrollers",
+    industries: ["Manufacturing", "Healthcare", "Retail", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Mobile", "Industrial"],
+    price: "$114.00",
+    priceStatus: "Exact",
+    priceNote:
+      "Arduino Store USA lists Portenta H7 at $114.00 before taxes, shipping, and regional availability changes. Verify the live checkout price before using it in a purchasable basket.",
+    image: "/product-images/arduino-portenta-h7.png",
+    imageAlt: "Arduino Portenta H7 dual-core microcontroller board with USB-C and wireless module",
+    summary:
+      "A high-performance Arduino board with a dual-core STM32H747 processor, Wi-Fi, Bluetooth, USB-C, DisplayPort, expansion connectors, and TensorFlow Lite support for advanced embedded and industrial prototypes.",
+    whyItMatters:
+      "Portenta H7 bridges microcontroller control and embedded-computer behavior, letting builders run high-level code and real-time tasks in parallel for robotics, machine interfaces, lab equipment, and connected industrial systems.",
+    specs: [
+      { label: "Processor", value: "STM32H747XI dual Cortex-M7 at 480MHz and Cortex-M4 at 240MHz" },
+      { label: "Connectivity", value: "Wi-Fi 802.11b/g/n, Bluetooth, USB-C, DisplayPort over USB-C, 10/100 Ethernet via expansion" },
+      { label: "Expansion / Range", value: "Two 80-pin high-density connectors, MKR headers, -40C to 85C operating range" },
+    ],
+    bestFor: [
+      "Industrial control prototypes",
+      "Embedded AI and TensorFlow Lite experiments",
+      "Robotics and machine-interface controllers",
+    ],
+    usedIn: [
+      "Industrial machinery controllers",
+      "Laboratory and medical device prototypes",
+      "Computer vision and robotics control systems",
+    ],
+    blackScarabPov:
+      "This is a strong control-layer board when a project needs more capability than a basic microcontroller but does not need a Jetson-class edge computer. It fits around the AI stack as the deterministic control, connectivity, and expansion layer for sensors, actuators, interfaces, and lightweight TinyML workloads.",
+    officialUrl:
+      "https://store-usa.arduino.cc/collections/portenta-family/products/portenta-h7",
+    sourceLabel: "Official product page",
+  },
+  {
     slug: "nvidia-jetson-orin-nx",
     name: "NVIDIA Jetson Orin NX",
     vendor: "NVIDIA / Seeed Studio",

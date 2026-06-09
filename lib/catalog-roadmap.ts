@@ -171,14 +171,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Best for compact models, not modern LLM workloads.",
   },
   {
-    name: "Arduino Portenta H7",
-    category: "Boards, SBCs & Microcontrollers",
-    componentType: "Industrial microcontroller",
-    buyerFit: ["Manufacturing", "Other"],
-    role: "Industrial-grade microcontroller board for control loops and edge prototypes.",
-    note: "Useful in automation stacks that need deterministic control.",
-  },
-  {
     name: "Arduino Portenta X8",
     category: "Boards, SBCs & Microcontrollers",
     componentType: "Linux-capable industrial board",
