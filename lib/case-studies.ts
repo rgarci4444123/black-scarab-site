@@ -3223,6 +3223,393 @@ const universalRobotsUrSeriesDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const amazonProteusDeepDive = (): CaseStudyArticle => ({
+  slug: "amazon-proteus-autonomous-mobile-warehouse-robot-guide",
+  title:
+    "Amazon Proteus Deep Dive: Autonomous Mobile Warehouse Robots, Computer Vision, Logistics ROI, Safety, and Deployment Strategy",
+  summary:
+    "A business-focused deep dive on Amazon Proteus, covering autonomous mobile warehouse robots, computer vision, human-filled logistics facilities, cart movement, safety, operational ROI, natural-language tasking, and what leaders should learn from Amazon's robotics strategy.",
+  publishedLabel: "Robotics Series · Published June 9, 2026",
+  publishedDate: "2026-06-09",
+  typeLabel: "Robotics Series",
+  formatLabel: "Robot deep dive for business leaders",
+  industry: "Transportation & Logistics",
+  image: "/article-images/amazon-proteus-autonomous-mobile-warehouse-robot-guide.png",
+  imageAlt:
+    "Amazon Proteus-style autonomous mobile warehouse robot carrying a yellow tote through a fulfillment center aisle.",
+  seoDescription:
+    "A 2026 business guide to Amazon Proteus, the autonomous mobile warehouse robot using computer vision, autonomy, and AI to move carts through human-filled logistics facilities.",
+  tags: [
+    "Amazon Proteus",
+    "autonomous mobile robot",
+    "warehouse robotics",
+    "logistics automation",
+    "computer vision",
+    "AMR",
+    "fulfillment center automation",
+    "edge AI robotics",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Amazon Proteus belongs in this robotics series because it is one of the clearest examples of autonomy moving from controlled robot zones into human-filled logistics facilities. It is not a humanoid, not a lab robot, and not a general-purpose assistant. It is a practical autonomous mobile robot built around a specific logistics job: moving heavy carts and material through fulfillment operations.",
+        "This is the ninth deep dive in Black Scarab's robotics series. Spot and ANYmal showed inspection. Digit, Figure, Atlas, Optimus, and G1 showed different humanoid paths. Universal Robots showed collaborative arms. Proteus shows another important category: autonomous movement inside warehouses, where computer vision, routing, safety, and workflow integration can reshape logistics without needing a robot that looks human.",
+        "The executive question is not whether every company can buy Proteus. Proteus is an Amazon Robotics system built for Amazon's own operations. The practical question is what business leaders can learn from it about AMRs, human-robot collaboration, warehouse flow, safety, and the stack required to make mobile autonomy useful at scale.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Proteus is Amazon's autonomous mobile warehouse robot. Amazon describes it as its first autonomous mobile robot, designed to navigate safely around people and move carts through fulfillment-center environments. The original Proteus operates in dock areas, and Amazon says it is currently deployed at 25 fulfillment centers in the United States.",
+        "The business logic is simple: warehouses contain long walks, heavy carts, repetitive transfers, and constant material movement. Amazon says Proteus transports heavy carts that can weigh close to 400 kilograms, reducing the need for employees to push carts, lift heavy items, and cover long distances during a shift.",
+        "Proteus is also evolving. In 2026, Amazon introduced a next-generation Proteus designed to operate beyond dock areas and understand natural-language commands from employees. Amazon says European deployment is planned for the first half of 2027 as part of a broader fulfillment-network investment.",
+      ],
+      tables: [
+        {
+          title: "Proteus at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "Amazon's autonomous mobile warehouse robot for moving carts and material inside fulfillment operations.",
+            ],
+            [
+              "Who is it for?",
+              "Proteus is built for Amazon's internal fulfillment network, but it is a useful benchmark for logistics leaders evaluating AMRs.",
+            ],
+            [
+              "What makes it different?",
+              "It is designed to operate around employees in open warehouse areas using safety, perception, navigation, computer vision, and autonomy.",
+            ],
+            [
+              "What is proven?",
+              "Amazon says the original Proteus is deployed at 25 U.S. fulfillment centers and works in dock areas moving heavy carts.",
+            ],
+            [
+              "How should leaders evaluate the category?",
+              "By route fit, payload, safety case, human interaction, fleet orchestration, uptime, integration with warehouse systems, and labor-distance reduction.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What Proteus Actually Does",
+      paragraphs: [
+        "Proteus is an autonomous mobile robot, not a picking arm or humanoid worker. Its job is material movement. It moves carts through fulfillment-center workflows, especially in dock areas where employees and equipment share the same operating space.",
+        "Amazon has described Proteus as using advanced safety, perception, and navigation technology. In practical terms, that means the robot needs to understand its surroundings, detect people and obstacles, plan routes, move carts, stop safely, and continue operating in a busy facility where conditions change constantly.",
+        "This is why Proteus matters. Many warehouse jobs are not one dramatic manipulation task. They are thousands of small movement tasks: carts, containers, totes, pallets, packages, workstations, docks, and handoffs. If autonomy can remove some of that travel and pushing burden, the value is operational, ergonomic, and measurable.",
+      ],
+    },
+    {
+      heading: "Why AMRs Matter in Human-Filled Facilities",
+      paragraphs: [
+        "Traditional warehouse automation often separated robots and people. Amazon's older mobile drive units worked in restricted areas, moving inventory pods inside structured robotic fields. Proteus points toward a different operating model: mobile robots sharing more space with people and moving through open facility workflows.",
+        "That shift is important because warehouses are not only shelves and conveyors. They are dynamic environments with workers, carts, forklifts, conveyors, dock doors, staging areas, traffic patterns, product surges, and exception handling. A useful AMR needs more than wheels. It needs perception, autonomy, safety logic, route planning, fleet coordination, and integration with the work itself.",
+        "For executives, the lesson is that AMRs are not just transportation devices. They are workflow devices. The robot only creates value when it reduces wasted walking, heavy pushing, idle time, congestion, injuries, handoff delays, or trailer-loading friction.",
+      ],
+      tables: [
+        {
+          title: "Why Proteus Is Business-Relevant",
+          columns: ["Operational Problem", "Proteus Logic", "What Still Needs Proof"],
+          rows: [
+            [
+              "Heavy cart movement",
+              "Autonomous robots can move carts that would otherwise require employee pushing and long-distance travel.",
+              "The routes, cart types, docking points, and exception handling must be reliable.",
+            ],
+            [
+              "Human-filled facilities",
+              "Proteus is designed to navigate safely around employees instead of only operating in isolated robot zones.",
+              "Safety cases must be proven under real traffic, lighting, congestion, and peak-volume conditions.",
+            ],
+            [
+              "Dock-area flow",
+              "Robots can transfer carts from sortation or packing workflows toward outbound loading areas.",
+              "The system must coordinate with conveyors, people, carts, trailers, and priority changes.",
+            ],
+            [
+              "Ergonomic burden",
+              "Robots can take on physically strenuous movement work so employees focus on higher-skill tasks.",
+              "ROI depends on measurable safety, productivity, and staffing impacts.",
+            ],
+            [
+              "Network scale",
+              "A large logistics network can turn one proven process into many deployments.",
+              "Scaling requires standardization, support, maintenance, software, and training.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Where Proteus Fits in Amazon's Robotics Stack",
+      paragraphs: [
+        "Proteus is not an isolated invention. It sits inside Amazon's broader robotics system, which includes mobile robots, robotic handling systems, inventory storage redesign, AI, computer vision, and operations software. Amazon has said it has deployed more than 750,000 mobile robots across its worldwide operations.",
+        "Proteus also works near other Amazon systems. Amazon has described testing Proteus with Cardinal on an outbound dock, where Cardinal packs packages into carts and Proteus moves those carts autonomously toward delivery trucks. That pairing matters because the future of warehouse robotics is not one robot. It is task-specialized systems connected into a larger flow.",
+        "This is a major Black Scarab point: the robot body is only part of the basket. Mobile autonomy requires carts, charging, facility mapping, sensors, safety systems, network connectivity, fleet software, maintenance, facility redesign, operator training, and integration with warehouse execution logic.",
+      ],
+      tables: [
+        {
+          title: "Proteus in the Warehouse Automation Flow",
+          columns: ["Layer", "Example", "Business Question"],
+          rows: [
+            [
+              "Material movement",
+              "Proteus moves heavy carts through dock and facility workflows.",
+              "Which movement tasks are repetitive, heavy, frequent, and routeable?",
+            ],
+            [
+              "Robotic handling",
+              "Systems such as Cardinal or Sparrow handle packages and sortation tasks.",
+              "How does physical handling connect to mobile movement?",
+            ],
+            [
+              "Inventory systems",
+              "Containerized Storage and other workflows change how inventory reaches employees.",
+              "Does the facility design reduce walking, lifting, and searching?",
+            ],
+            [
+              "AI and perception",
+              "Computer vision, machine learning, navigation, and safety logic.",
+              "Can robots safely understand the facility in real time?",
+            ],
+            [
+              "Operations software",
+              "Task assignment, priority, route planning, fleet management, maintenance.",
+              "Can the robot work be coordinated with human work and customer promises?",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Pricing and Total Cost",
+      paragraphs: [
+        "Proteus is not a public product with a simple procurement price. It is an Amazon Robotics system built for Amazon's internal fulfillment network. That means an outside warehouse cannot evaluate Proteus the way it would evaluate a commercially available AMR from a robotics vendor.",
+        "The more useful pricing lesson is category-level. For a company evaluating AMRs, the robot is only one line item. Total cost includes the robot, carts or payload adapters, charging, mapping, fleet-management software, WMS or WES integration, safety validation, facility changes, network coverage, maintenance, spare parts, operator training, and process redesign.",
+        "The economic question is not 'How much does Proteus cost?' It is 'What does autonomous material movement cost per avoided manual move, per reduced footstep, per safer cart transfer, or per improved dock-flow hour?' That is how logistics leaders should model this category.",
+      ],
+      tables: [
+        {
+          title: "AMR Cost Areas Proteus Helps Reveal",
+          columns: ["Cost Area", "What It Covers", "Buyer Note"],
+          rows: [
+            [
+              "Robot platform",
+              "AMR hardware, sensors, batteries, safety systems, payload interface.",
+              "Payload and facility environment determine the real robot requirement.",
+            ],
+            [
+              "Workflow integration",
+              "WMS, WES, dock management, task assignment, priority rules, exception handling.",
+              "A robot that cannot receive useful tasks becomes a moving demo.",
+            ],
+            [
+              "Facility readiness",
+              "Routes, floor quality, traffic patterns, staging zones, cart standards, Wi-Fi or private network.",
+              "Warehouse layout often determines AMR performance.",
+            ],
+            [
+              "Safety and training",
+              "Risk assessment, human interaction rules, signage, stops, operator procedures.",
+              "Human-filled facilities require a stronger safety case than isolated robot zones.",
+            ],
+            [
+              "Support and maintenance",
+              "Charging, batteries, cleaning, repairs, telemetry, spares, uptime monitoring.",
+              "Fleet uptime determines whether AMRs reduce friction or create it.",
+            ],
+          ],
+          note: "Proteus itself is Amazon-internal. Use it as a reference architecture for AMR evaluation, not as a direct purchase target.",
+        },
+      ],
+    },
+    {
+      heading: "Why Companies Would Care About Proteus",
+      paragraphs: [
+        "Companies should care about Proteus because it shows where logistics automation is moving: away from isolated robot islands and toward collaborative, human-aware systems that fit into active operations.",
+        "The first reason is safety and ergonomics. Heavy cart movement, long walking distances, and repetitive pushing can create fatigue and injury risk. If robots handle more of that movement, employees can spend more time on quality control, exception handling, inventory flow, and higher-skill work.",
+        "The second reason is throughput. Dock areas and internal material movement are often invisible bottlenecks. A facility can have fast picking and packing but still lose time if carts, totes, or containers are not where they need to be. AMRs can turn internal logistics into a measurable, optimizable flow.",
+      ],
+    },
+    {
+      heading: "The ROI Logic",
+      paragraphs: [
+        "Proteus-style ROI should be measured through movement economics. How many cart moves happen per shift? How far do employees walk? How much time is spent pushing, staging, waiting, or searching? How often does outbound flow slow down because carts or containers are in the wrong place?",
+        "The strongest ROI cases are repetitive, heavy, routeable, and tied to a clear operational constraint. Dock-to-trailer movement, sortation-to-staging transfers, workstation replenishment, container movement, and long internal routes are better first candidates than chaotic one-off errands.",
+        "The weakest ROI case is buying AMRs because the facility wants to look modern. If routes are constantly blocked, carts are inconsistent, warehouse systems cannot assign tasks, employees do not trust the robots, or maintenance ownership is unclear, the business case weakens fast.",
+      ],
+      tables: [
+        {
+          title: "Proteus-Style AMR ROI Checklist",
+          columns: ["Question", "Why It Matters"],
+          rows: [
+            [
+              "Is the movement task frequent?",
+              "AMRs create value when they absorb enough repeated travel to justify the fleet.",
+            ],
+            [
+              "Is the payload standardized?",
+              "Consistent carts, totes, containers, or adapters reduce integration risk.",
+            ],
+            [
+              "Are routes clear enough?",
+              "Human-filled spaces can work, but traffic patterns and blocked paths must be understood.",
+            ],
+            [
+              "Can the WMS or WES assign tasks?",
+              "Autonomy needs operational instructions, priorities, and exception handling.",
+            ],
+            [
+              "Can safety be measured?",
+              "Near misses, stops, interventions, speed zones, and operator feedback should be tracked.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Edge AI Stack Behind Proteus",
+      paragraphs: [
+        "Proteus is a strong Black Scarab case study because it shows edge AI in motion. The robot needs onboard perception, safety logic, localization, route planning, obstacle detection, and control. It must make decisions locally because warehouse traffic changes second by second.",
+        "The next-generation Proteus also points toward a new layer: natural-language tasking. Amazon says employees will be able to direct the robot using conversational language rather than technical commands or a programming interface. If that works reliably, it changes how frontline teams interact with robot fleets.",
+        "For business leaders, the lesson is not that every AMR needs a chatbot. The lesson is that robot interfaces are becoming operational interfaces. The more natural the assignment layer becomes, the easier it may be for employees to work with robots without becoming robotics programmers.",
+      ],
+      tables: [
+        {
+          title: "What a Proteus-Like Deployment Really Includes",
+          columns: ["Layer", "Examples", "Business Question"],
+          rows: [
+            [
+              "Robot hardware",
+              "Mobile base, batteries, drive system, sensors, cart interface, safety-rated components.",
+              "Can the robot move the required payload safely and reliably?",
+            ],
+            [
+              "Perception",
+              "Computer vision, obstacle detection, people detection, localization, mapping.",
+              "Can the robot understand a changing facility in real time?",
+            ],
+            [
+              "Autonomy",
+              "Route planning, traffic handling, docking, recovery, rerouting, safe stops.",
+              "Can it complete work without constant human rescue?",
+            ],
+            [
+              "Fleet software",
+              "Task assignment, priority, route orchestration, maintenance, telemetry.",
+              "Can multiple robots coordinate with people and operations systems?",
+            ],
+            [
+              "Human interface",
+              "Operator prompts, natural language, dashboards, alerts, training.",
+              "Can frontline employees assign and trust robot work?",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Deployment Pattern: How to Pilot Proteus-Style AMRs",
+      paragraphs: [
+        "A first AMR pilot should focus on one material-movement lane, not the entire warehouse. Pick a route with repeated demand, known payloads, measurable manual effort, and enough operational pain to matter.",
+        "The right pilot might be dock-area cart movement, transfer from packing to outbound staging, replenishment between two fixed zones, or movement of standardized containers between workstations. The more standardized the payload and the clearer the route, the easier it is to learn.",
+        "The pilot should measure movement before and after. Steps, push distance, cart moves, labor minutes, safety events, interventions, stopped time, blocked routes, and employee feedback all matter. AMRs are not judged only by whether they move. They are judged by whether they improve flow.",
+      ],
+      tables: [
+        {
+          title: "First AMR Pilot Plan",
+          columns: ["Step", "Action", "Success Signal"],
+          rows: [
+            [
+              "1",
+              "Choose one high-frequency movement lane.",
+              "The route has enough manual travel, pushing, or staging friction to justify automation.",
+            ],
+            [
+              "2",
+              "Standardize the payload.",
+              "Carts, totes, containers, or adapters are consistent enough for reliable robot handling.",
+            ],
+            [
+              "3",
+              "Map the human environment.",
+              "Traffic, intersections, blind spots, blocked-path patterns, and peak-volume periods are understood.",
+            ],
+            [
+              "4",
+              "Integrate task logic.",
+              "The AMR receives clear task assignments from WMS, WES, dock systems, or operators.",
+            ],
+            [
+              "5",
+              "Measure safety and flow.",
+              "Interventions, stops, route completion, employee feedback, and throughput impact are tracked.",
+            ],
+            [
+              "6",
+              "Scale by lane, not hype.",
+              "New routes are added only after the first lane proves useful and maintainable.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "When Proteus-Style AMRs Are a Bad Fit",
+      paragraphs: [
+        "AMRs are a bad fit when the facility has no repeatable movement patterns. If every trip is unique, payloads are inconsistent, and routes change constantly without a clear task system, the robot will spend too much time in exceptions.",
+        "They are also a bad fit when facility basics are weak. Poor floor conditions, unreliable network coverage, unmanaged traffic, inconsistent carts, blocked routes, and unclear ownership can ruin an AMR deployment before the robot has a fair chance.",
+        "Finally, AMRs are a bad fit when leadership expects automation to fix a broken process. Mobile robots can improve movement, but they cannot replace disciplined warehouse design, standard work, training, maintenance, and data visibility.",
+      ],
+    },
+    {
+      heading: "Black Scarab Takeaway",
+      paragraphs: [
+        "Amazon Proteus belongs in this series because it shows autonomy becoming practical inside logistics. It is not the flashiest robot, but it is strategically important: heavy movement, human-aware navigation, computer vision, AI, and workflow integration are exactly where warehouse automation is heading.",
+        "For industry leaders, the lesson is to look for the movement bottleneck. Before buying a humanoid, ask whether an AMR can remove repeated travel, cart pushing, staging friction, or dock congestion. The less glamorous robot may be the one with the faster business case.",
+        "For Black Scarab's catalog vision, Proteus is a reminder that logistics automation baskets are broad. A real AMR deployment needs robot hardware, batteries, charging, sensors, cameras, safety systems, carts, network connectivity, fleet software, warehouse-system integration, maintenance, and training. The robot is only valuable when the whole movement system works.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using Amazon's official Proteus and robotics operations materials, Amazon's next-generation Proteus announcement, Amazon's collaborative robotics deployment materials, and Amazon fulfillment-center robotics fact sheets. Proteus is an Amazon-internal system, so commercial availability, pricing, specifications, and deployment terms are not public procurement data. Companies evaluating AMRs should verify product details directly with commercial AMR vendors and integrators.",
+      ],
+    },
+  ],
+  sources: [
+    "Amazon Proteus official robotics story",
+    "Amazon collaborative robotics operations article",
+    "Amazon next-generation Proteus announcement",
+    "Amazon fulfillment center robotics fact sheet",
+    "Amazon next-generation fulfillment center materials",
+  ],
+  sourceLinks: [
+    {
+      label: "Amazon Proteus robotics story",
+      url: "https://www.aboutamazon.com/stories/amazon-robotics-autonomous-robot-proteus-warehouse-packages",
+    },
+    {
+      label: "Amazon collaborative robots in operations facilities",
+      url: "https://www.aboutamazon.com/news/operations/how-amazon-deploys-robots-in-its-operations-facilities",
+    },
+    {
+      label: "Amazon next-generation Proteus announcement",
+      url: "https://www.aboutamazon.com/news/operations/amazon-proteus-robot-europe-investment-employee-support",
+    },
+    {
+      label: "Amazon Delivering the Future robotics fact sheet",
+      url: "https://assets.aboutamazon.com/11/d9/f4aaa67e48ed802c0bb4f2908c10/amz-df23-factsheet-final.pdf",
+    },
+    {
+      label: "Amazon next-generation fulfillment center materials",
+      url: "https://assets.aboutamazon.com/52/41/83c12c624800be72adb1499bc69e/amazons-next-generation-fulfillment-center.pdf",
+    },
+  ],
+});
+
 const unitreeG1DeepDive = (): CaseStudyArticle => ({
   slug: "unitree-g1-affordable-humanoid-robot-research-platform-guide",
   title:
@@ -4737,6 +5124,7 @@ const agilityRoboticsDigitDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  amazonProteusDeepDive(),
   universalRobotsUrSeriesDeepDive(),
   unitreeG1DeepDive(),
   teslaOptimusDeepDive(),
