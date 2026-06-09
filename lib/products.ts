@@ -919,6 +919,52 @@ export const products: ProductData[] = [
     sourceLabel: "Official product page",
   },
   {
+    slug: "seeed-studio-recomputer-j4012",
+    name: "Seeed Studio reComputer J4012",
+    vendor: "Seeed Studio / NVIDIA Jetson",
+    category: "Edge Computers",
+    industries: [
+      "Agriculture",
+      "Manufacturing",
+      "Transportation & Logistics",
+      "Retail",
+    ],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Mobile", "Industrial"],
+    price: "$949.00",
+    priceStatus: "Exact",
+    priceNote:
+      "Seeed Studio lists the reComputer J4012 at $949.00 before taxes, shipping, and reseller variation. Verify the live Amazon checkout price before using it in a purchasable basket.",
+    image: "/product-images/seeed-studio-recomputer-j4012.png",
+    imageAlt:
+      "Seeed Studio reComputer J4012 edge AI computer with Jetson Orin NX enclosure",
+    summary:
+      "A compact Jetson Orin NX 16GB edge AI computer for local inference, robotics prototypes, smart cameras, machine vision, and low-power physical AI deployments.",
+    whyItMatters:
+      "The J4012 packages NVIDIA Jetson Orin NX compute into a deployable mini edge computer, making it easier to move from module-level experimentation into a ruggedized on-site AI box with useful I/O, storage, and pre-installed software.",
+    specs: [
+      { label: "AI Compute", value: "NVIDIA Jetson Orin NX 16GB, up to 100 TOPS" },
+      { label: "Memory / Storage", value: "16GB LPDDR5 / 128GB NVMe SSD" },
+      { label: "I/O", value: "4x USB 3.2, HDMI, Gigabit Ethernet, CAN, 40-pin GPIO, M.2 expansion" },
+    ],
+    bestFor: [
+      "Edge AI vision boxes",
+      "Robotics and AMR prototypes",
+      "Low-power local inference deployments",
+    ],
+    usedIn: [
+      "Factory machine vision",
+      "Smart retail camera analytics",
+      "Robotics perception and sensor hubs",
+    ],
+    blackScarabPov:
+      "This is a practical catalog item because buyers get a complete Jetson-based edge computer instead of sourcing a module, carrier board, storage, enclosure, and cooling separately. It belongs in early baskets for vision inspection, robotics labs, and compact on-site AI systems.",
+    officialUrl: "https://www.seeedstudio.com/reComputer-J4012-p-5586.html",
+    sourceLabel: "Official product page",
+    affiliateUrl:
+      "https://www.amazon.com/seeed-studio-reComputer-J4012-Edge-Pre-Installed/dp/B0C88V4CB7/ref=sr_1_1_sspa?adgrpid=186021838763&dib=eyJ2IjoiMSJ9.x9SygZYg5g3zrc77UfsxHxVK2z1lnBG63wyHQPfUhgswM1ErCqz_lUnQV5Lspl2LkTlsGfqy3aeG-B5x6sP4YnbODm0v5FwqA-v9kIuFQp2ZG7s8HlWGmg2Sb5WQOMSj8j2cfbDTPrMScnnJbuVCSquyf5H_vLdPqFOqLejMpJjz8tBJpNNEamF_Csl0ym0ZCa7_3c1lWhzcPEu16XJVJtSKMYbCwNEF73BwyAWGASU.ATdnPUNRrLfyxO_rn2IylMgRL-ORNP2x-aMFZhdMQUU&dib_tag=se&hvadid=779581331944&hvdev=c&hvexpln=0&hvlocphy=9011905&hvnetw=g&hvocijid=1304425388795434517--&hvqmt=e&hvrand=1304425388795434517&hvtargid=kwd-2432736111329&hydadcr=24139_13533938_2335427&keywords=recomputer%2Bsuper%2Bj4012&mcid=302820366c3c30e39cffdc6626c389ef&qid=1781017235&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1",
+  },
+  {
     slug: "nvidia-jetson-orin-nx",
     name: "NVIDIA Jetson Orin NX",
     vendor: "NVIDIA / Seeed Studio",
@@ -928,7 +974,8 @@ export const products: ProductData[] = [
     deploymentTypes: ["Indoor", "Mobile", "Industrial"],
     price: "Price to verify",
     priceStatus: "Research needed",
-    priceNote: "Current link points to a distributor listing; confirm live price before publishing as exact.",
+    priceNote:
+      "Module and carrier-board pricing varies by distributor, memory configuration, and whether the buyer is sourcing a complete edge computer or only the Jetson module.",
     image: "/product-images/nvidia-jetson-orin-nx.jpg",
     imageAlt: "Edge computing visualization for NVIDIA Jetson Orin NX",
     summary:
@@ -953,8 +1000,8 @@ export const products: ProductData[] = [
     blackScarabPov:
       "Ideal for mid-scale deployments where cloud latency is unacceptable and space or power constraints limit larger edge servers. A strong fit when video inference must happen on site.",
     officialUrl:
-      "https://www.amazon.com/seeed-studio-reComputer-J4012-Edge-Pre-Installed/dp/B0C88V4CB7/ref=sr_1_2_sspa?crid=M6H4B3299BKG&dib=eyJ2IjoiMSJ9.9gCJw-kXE2J0rq1kTcqrwfYe3oQivJmNLtSFRVf-T5G4os2LtUtr05KSBAT2iGCBHM0Ygw1334KvtuLxVTXzzBSncLpigHcVs9Mu6ZaFKFlOtigBHli3XcXuWJobbw2u2Liyd7HsotjW_rpf0vI8nx-4RupX81B8Jqq_L7TytA1RUs8oMcI1YaiG-jS_xAFBnTftsO1bVXGuokn00jqtKihNqkCBAqe_xxbDe3CUb7Q.aIKnYOUQ4GGI7Qvg3dWBqw7Bfjc2Q_kSaYyynCxZEqg&dib_tag=se&keywords=nvidia%2Bjetson%2Borin&qid=1774900805&sprefix=nvidia%2Bjetson%2Borin%2Caps%2C145&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1",
-    sourceLabel: "Distributor listing",
+      "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/",
+    sourceLabel: "Official product page",
   },
   {
     slug: "nvidia-jetson-agx-orin",
