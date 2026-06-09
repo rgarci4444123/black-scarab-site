@@ -171,14 +171,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Best for compact models, not modern LLM workloads.",
   },
   {
-    name: "Arduino Nicla Vision",
-    category: "Boards, SBCs & Microcontrollers",
-    componentType: "TinyML vision board",
-    buyerFit: ["Manufacturing", "Healthcare"],
-    role: "TinyML board for compact vision, sensor fusion, and low-power inspection concepts.",
-    note: "Best for learning and constrained embedded use cases.",
-  },
-  {
     name: "Arduino Portenta H7",
     category: "Boards, SBCs & Microcontrollers",
     componentType: "Industrial microcontroller",

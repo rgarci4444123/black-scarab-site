@@ -1174,6 +1174,44 @@ export const products: ProductData[] = [
       "https://www.amazon.com/Waveshare-Official-Raspberry-CM5108000-Wireless/dp/B0DY1513GQ/ref=sr_1_3?adgrpid=192062292851&dib=eyJ2IjoiMSJ9.1eTJAe3q218znRpyNRFxZ2W7JTkcbAJrS1pACGtIiBmtz9fg5oiLc4gpb9UYcHiyRikjESDUc4GQ6LI7cLRug8CYMi811g-qpQOocEJ6DfLzTfY-F27NFqhhAdajoXHh7zHhLEHTkoMOdEq9_3JQs4gKMkxyTTCWEV3OAdDK5cvYzlh5uZLPq3qzRgWlpYhYNDcTya3I0t2CIC5sMnDP-5P6dyURVHEU7ybu_DWglqk.AtcAuadle-9eQ2ZJR7gUCmqIOC8BdifU3cSKS57280M&dib_tag=se&hvadid=779544499890&hvdev=c&hvexpln=0&hvlocphy=9011905&hvnetw=g&hvocijid=10037798709126297364--&hvqmt=e&hvrand=10037798709126297364&hvtargid=kwd-1379718175646&hydadcr=24366_13859585_2335234&keywords=raspberry+pi+compute+module+5&mcid=8481e353659e39cba1498d16a69d7fc6&qid=1781018993&sr=8-3",
   },
   {
+    slug: "arduino-nicla-vision",
+    name: "Arduino Nicla Vision",
+    vendor: "Arduino",
+    category: "Boards, SBCs & Microcontrollers",
+    industries: ["Agriculture", "Manufacturing", "Healthcare", "Retail"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Mobile", "Industrial"],
+    price: "$80.20",
+    priceStatus: "Exact",
+    priceNote:
+      "Arduino Store USA lists Nicla Vision at $80.20 before taxes, shipping, and regional availability changes. Verify the live checkout price before using it in a purchasable basket.",
+    image: "/product-images/arduino-nicla-vision.png",
+    imageAlt: "Arduino Nicla Vision tiny machine vision board with camera and sensors",
+    summary:
+      "A tiny Arduino vision AI board with a 2MP camera, dual-core STM32 processor, IMU, microphone, distance sensor, Wi-Fi, and Bluetooth LE for TinyML and low-power edge perception projects.",
+    whyItMatters:
+      "Nicla Vision makes on-device sensing and image processing accessible in a board small enough for embedded prototypes, smart cameras, predictive maintenance nodes, asset tracking, and battery-powered machine vision experiments.",
+    specs: [
+      { label: "Processor", value: "STM32H747AII6 dual Arm Cortex-M7 up to 480MHz and Cortex-M4 up to 240MHz" },
+      { label: "Sensors", value: "2MP color camera, 6-axis IMU, microphone, and time-of-flight distance sensor" },
+      { label: "Connectivity / Size", value: "Wi-Fi, Bluetooth LE 4.2, MicroPython support, 22.86 x 22.86 mm" },
+    ],
+    bestFor: [
+      "TinyML vision prototypes",
+      "Battery-powered sensor nodes",
+      "Low-cost machine vision experiments",
+    ],
+    usedIn: [
+      "Predictive maintenance sensing",
+      "Smart agriculture and garden monitoring",
+      "Retail kiosks and gesture interfaces",
+    ],
+    blackScarabPov:
+      "This is not a Jetson-class computer, but it is exactly the kind of small perception board that belongs around an edge AI stack. Use it when the project needs a compact camera-plus-sensor node for detection, telemetry, or TinyML decisions before data ever reaches a larger gateway.",
+    officialUrl: "https://store-usa.arduino.cc/products/nicla-vision",
+    sourceLabel: "Official product page",
+  },
+  {
     slug: "nvidia-jetson-orin-nx",
     name: "NVIDIA Jetson Orin NX",
     vendor: "NVIDIA / Seeed Studio",
