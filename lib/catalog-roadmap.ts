@@ -171,14 +171,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Best for compact models, not modern LLM workloads.",
   },
   {
-    name: "Raspberry Pi Pico 2 W",
-    category: "Boards, SBCs & Microcontrollers",
-    componentType: "Microcontroller board",
-    buyerFit: ["Other"],
-    role: "Low-cost wireless microcontroller for sensors, control, and educational edge projects.",
-    note: "Tiny price point makes it valuable for parts-volume content.",
-  },
-  {
     name: "Espressif ESP32-S3-DevKitC-1",
     category: "Boards, SBCs & Microcontrollers",
     componentType: "Wireless MCU dev kit",

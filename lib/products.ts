@@ -1134,6 +1134,46 @@ export const products: ProductData[] = [
     sourceLabel: "Official product page",
   },
   {
+    slug: "raspberry-pi-pico-2-w",
+    name: "Raspberry Pi Pico 2 W",
+    vendor: "Raspberry Pi",
+    category: "Boards, SBCs & Microcontrollers",
+    industries: ["Agriculture", "Manufacturing", "Retail", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Mobile", "Industrial"],
+    price: "Starts at $5",
+    priceStatus: "Starts at",
+    priceNote:
+      "Raspberry Pi lists Pico 2 family pricing as available from $5. Amazon checkout pricing can vary by seller, headers, bundles, shipping, and regional availability, so verify the live listing before using it in a purchasable basket.",
+    image: "/product-images/raspberry-pi-pico-2-w.png",
+    imageAlt: "Raspberry Pi Pico 2 W wireless microcontroller board",
+    summary:
+      "A low-cost wireless microcontroller board based on RP2350, with dual Arm Cortex-M33 or dual Hazard3 RISC-V cores, 520KB SRAM, Wi-Fi, Bluetooth 5.2, and MicroPython support.",
+    whyItMatters:
+      "Pico 2 W is a useful control and sensing node around edge AI systems because it can handle inexpensive wireless telemetry, GPIO, simple automation, and local device coordination without needing a full Linux computer.",
+    specs: [
+      { label: "Processor", value: "RP2350 with dual Arm Cortex-M33 or dual Hazard3 RISC-V cores at 150MHz" },
+      { label: "Wireless / Memory", value: "2.4GHz 802.11n Wi-Fi, Bluetooth 5.2, 520KB on-chip SRAM" },
+      { label: "I/O", value: "2x UART, 2x SPI, 2x I2C, 16x PWM, 3x ADC, USB 1.1, 12x PIO state machines" },
+    ],
+    bestFor: [
+      "Wireless sensor nodes",
+      "Low-cost control loops",
+      "Educational embedded projects",
+    ],
+    usedIn: [
+      "Smart agriculture telemetry",
+      "Factory sensor and button panels",
+      "Retail displays and simple automation nodes",
+    ],
+    blackScarabPov:
+      "This is a tiny parts-volume item, not the main AI computer. It belongs in Black Scarab baskets when a deployment needs cheap wireless endpoints around cameras, gateways, robots, or industrial PCs for sensing, signaling, and simple control.",
+    officialUrl: "https://www.raspberrypi.com/products/raspberry-pi-pico-2/",
+    sourceLabel: "Official product page",
+    affiliateUrl:
+      "https://www.amazon.com/Pico-Microcontroller-Bluetooth-MicroPython-CircuitPython/dp/B0DPF9N1MN/ref=sr_1_3?adgrpid=186693556695&dib=eyJ2IjoiMSJ9.7d6_m1tsztCdlAW3krBD2_-ewta9Cyyq8jdoFC8IpQ_9Dd7AnY7myA7PDpn2xy3TEbnMclMdUltViKYwndTdxomumJdM9CmzdPumTNRfO4rYi6OievAxSz13MgjFeY3ZV0bp-zrz4pt-XTq0fLFYvYsoz_R7v8n4rfnkTzp0lTdlKRZliyZY9vIknFKBEmEjTkjU0v6gxyC6xhwa4ROmlxP5VIDfF8EJWZ45L3wDD8w.MU5Vak91oy2qzieP4fX-hLATMxx_rJ4U0TNcQhgVUAU&dib_tag=se&hvadid=779544697095&hvdev=c&hvexpln=0&hvlocphy=9011905&hvnetw=g&hvocijid=16385299997376883644--&hvqmt=e&hvrand=16385299997376883644&hvtargid=kwd-1596993059240&hydadcr=24358_13533861_2334967&keywords=raspberry%2Bpi%2Bpico%2B2%2Bw&mcid=a75717bce4f73afb92ccdbf4558a97d4&qid=1781040901&sr=8-3&th=1",
+  },
+  {
     slug: "raspberry-pi-compute-module-5",
     name: "Raspberry Pi Compute Module 5",
     vendor: "Raspberry Pi",
