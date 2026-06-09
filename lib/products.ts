@@ -1216,6 +1216,45 @@ export const products: ProductData[] = [
       "https://www.amazon.com/Espressif-ESP32-S3-DevKitC-1-N8R8-Development-Board/dp/B09MHP42LY",
   },
   {
+    slug: "stmicroelectronics-nucleo-h753zi",
+    name: "STMicroelectronics NUCLEO-H753ZI",
+    vendor: "STMicroelectronics",
+    category: "Boards, SBCs & Microcontrollers",
+    industries: ["Manufacturing", "Healthcare", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Industrial"],
+    price: "$40.25",
+    priceStatus: "Exact",
+    priceNote:
+      "ST eStore lists NUCLEO-H753ZI at $40.25 for a 1-unit purchase, with possible quantity savings shown on the product page. Verify live checkout pricing, availability, shipping, and regional terms before using it in a purchasable basket.",
+    image: "/product-images/stmicroelectronics-nucleo-h753zi.png",
+    imageAlt:
+      "STMicroelectronics NUCLEO-H753ZI STM32 Nucleo-144 development board",
+    summary:
+      "An STM32 Nucleo-144 development board with the STM32H753ZI MCU, integrated ST-LINK debugger/programmer, Arduino/ST Zio and ST morpho expansion, and STM32Cube support for industrial control and embedded prototypes.",
+    whyItMatters:
+      "NUCLEO-H753ZI replaces the obsolete H743ZI2 target with an active STM32H7 development board for teams building control loops, sensor interfaces, industrial firmware, and low-level embedded pieces around larger edge AI systems.",
+    specs: [
+      { label: "MCU", value: "STM32H753ZI high-performance STM32H7 microcontroller" },
+      { label: "Expansion", value: "Arduino Uno V3 / ST Zio expansion plus ST morpho headers" },
+      { label: "Development", value: "Integrated ST-LINK debugger/programmer, STM32Cube support, USB and Ethernet-capable Nucleo-144 platform" },
+    ],
+    bestFor: [
+      "Industrial control firmware",
+      "STM32H7 embedded prototypes",
+      "Sensor and actuator interface development",
+    ],
+    usedIn: [
+      "Factory control and test benches",
+      "Medical or lab device prototypes",
+      "Edge AI support controllers",
+    ],
+    blackScarabPov:
+      "This belongs in the catalog as a control-layer development board, not as an AI accelerator. It is useful when a deployment needs deterministic STM32 firmware around sensors, actuators, gateways, or edge computers, and it is the current active substitute for the obsolete H743ZI2 target.",
+    officialUrl: "https://estore.st.com/en/nucleo-h753zi-cpn.html",
+    sourceLabel: "Official product page",
+  },
+  {
     slug: "raspberry-pi-compute-module-5",
     name: "Raspberry Pi Compute Module 5",
     vendor: "Raspberry Pi",

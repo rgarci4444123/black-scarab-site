@@ -171,14 +171,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Best for compact models, not modern LLM workloads.",
   },
   {
-    name: "STMicroelectronics STM32 Nucleo-H743ZI2",
-    category: "Boards, SBCs & Microcontrollers",
-    componentType: "MCU development board",
-    buyerFit: ["Manufacturing", "Other"],
-    role: "High-performance MCU development board for industrial control and embedded AI experiments.",
-    note: "Good for serious embedded developers rather than casual beginners.",
-  },
-  {
     name: "PJRC Teensy 4.1",
     category: "Boards, SBCs & Microcontrollers",
     componentType: "Microcontroller board",
