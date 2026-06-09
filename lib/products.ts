@@ -1251,6 +1251,45 @@ export const products: ProductData[] = [
     sourceLabel: "Official product page",
   },
   {
+    slug: "arduino-portenta-x8",
+    name: "Arduino Portenta X8",
+    vendor: "Arduino",
+    category: "Boards, SBCs & Microcontrollers",
+    industries: ["Agriculture", "Manufacturing", "Retail", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Mobile", "Industrial"],
+    price: "$200.00",
+    priceStatus: "Exact",
+    priceNote:
+      "Arduino Store USA lists Portenta X8 at $200.00 before taxes, shipping, and regional availability changes. Verify the live checkout price before using it in a purchasable basket.",
+    image: "/product-images/arduino-portenta-x8.png",
+    imageAlt: "Arduino Portenta X8 industrial Linux SOM board with USB-C and wireless module",
+    summary:
+      "An industrial Arduino system-on-module with Linux, container-based application deployment, secure OTA updates, hardware security, and a 9-core heterogeneous architecture for edge and automation systems.",
+    whyItMatters:
+      "Portenta X8 gives embedded teams a bridge between Arduino-style real-time I/O and Linux-based application deployment, making it useful for secure gateways, smart agriculture controllers, AGVs, kiosks, and industrial edge prototypes.",
+    specs: [
+      { label: "Compute", value: "NXP i.MX 8M Mini quad Cortex-A53 up to 1.8GHz, Cortex-M4 up to 400MHz, plus STM32H747 dual Cortex-M7/M4" },
+      { label: "Software / Security", value: "Linux OS, container architecture, OTA updates, PSA Certified, NXP SE050C2 secure element" },
+      { label: "Connectivity", value: "Wi-Fi, Bluetooth LE, Portenta ecosystem carriers, USB-C, high-density expansion" },
+    ],
+    bestFor: [
+      "Industrial Linux edge prototypes",
+      "Secure gateways and OTA-managed devices",
+      "Smart agriculture and automation controllers",
+    ],
+    usedIn: [
+      "Connected edge computers for manufacturing",
+      "Autonomous guided vehicle controllers",
+      "Secure kiosks and digital signage",
+    ],
+    blackScarabPov:
+      "This is the Arduino board to consider when the project needs Linux containers, security, OTA maintenance, and real-time control in a compact module. It sits between tiny microcontroller boards and heavier edge computers, especially when a carrier board can provide the physical I/O the deployment needs.",
+    officialUrl:
+      "https://store-usa.arduino.cc/collections/portenta-family/products/portenta-x8",
+    sourceLabel: "Official product page",
+  },
+  {
     slug: "nvidia-jetson-orin-nx",
     name: "NVIDIA Jetson Orin NX",
     vendor: "NVIDIA / Seeed Studio",

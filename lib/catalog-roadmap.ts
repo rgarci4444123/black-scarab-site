@@ -171,14 +171,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Best for compact models, not modern LLM workloads.",
   },
   {
-    name: "Arduino Portenta X8",
-    category: "Boards, SBCs & Microcontrollers",
-    componentType: "Linux-capable industrial board",
-    buyerFit: ["Manufacturing", "Other"],
-    role: "Hybrid microcontroller/Linux board for secure industrial edge applications.",
-    note: "Position for buyers needing more than a basic microcontroller.",
-  },
-  {
     name: "Raspberry Pi Pico 2 W",
     category: "Boards, SBCs & Microcontrollers",
     componentType: "Microcontroller board",
