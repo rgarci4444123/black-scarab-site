@@ -1003,6 +1003,46 @@ export const products: ProductData[] = [
     sourceLabel: "Official product page",
   },
   {
+    slug: "raspberry-pi-compute-module-5",
+    name: "Raspberry Pi Compute Module 5",
+    vendor: "Raspberry Pi",
+    category: "Boards & Microcontrollers",
+    industries: ["Agriculture", "Manufacturing", "Retail", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Mobile", "Industrial"],
+    price: "$253.99",
+    priceStatus: "Distributor listing",
+    priceNote:
+      "The Amazon listing provided shows this Waveshare-sold Compute Module 5 configuration as buy-new from $253.99. Raspberry Pi lists base Compute Module 5 variants from $67.50, but pricing varies heavily by RAM, eMMC, wireless, reseller, and whether accessories or carrier boards are included.",
+    image: "/product-images/raspberry-pi-compute-module-5.png",
+    imageAlt: "Raspberry Pi Compute Module 5 embedded compute module board",
+    summary:
+      "An embedded Raspberry Pi 5-class compute module for custom carrier boards, industrial prototypes, edge controllers, kiosks, and productized IoT or robotics systems.",
+    whyItMatters:
+      "Compute Module 5 gives builders the Raspberry Pi 5 processor platform in a smaller embedded form factor with configurable memory, optional eMMC, optional wireless, PCIe, USB, Ethernet support through carrier boards, and MIPI interfaces for cameras and displays.",
+    specs: [
+      { label: "Processor", value: "Broadcom BCM2712 quad-core Arm Cortex-A76 at 2.4GHz" },
+      { label: "Memory / Storage", value: "2GB-16GB LPDDR4X, optional 0GB-64GB eMMC" },
+      { label: "Form Factor", value: "55 x 40 x 4.7 mm, 200-pin board-to-board connectors" },
+    ],
+    bestFor: [
+      "Custom edge products",
+      "Industrial carrier-board designs",
+      "Embedded robotics and IoT controllers",
+    ],
+    usedIn: [
+      "Smart camera appliances",
+      "Kiosks and retail devices",
+      "Custom industrial gateways",
+    ],
+    blackScarabPov:
+      "This is the better Raspberry Pi option when a buyer is moving from prototype to product. The standard Pi 5 is convenient for development; Compute Module 5 is for builders who need a custom carrier board, embedded storage options, and a cleaner path toward repeatable hardware.",
+    officialUrl: "https://www.raspberrypi.com/products/compute-module-5/",
+    sourceLabel: "Official product page",
+    affiliateUrl:
+      "https://www.amazon.com/Waveshare-Official-Raspberry-CM5108000-Wireless/dp/B0DY1513GQ/ref=sr_1_3?adgrpid=192062292851&dib=eyJ2IjoiMSJ9.1eTJAe3q218znRpyNRFxZ2W7JTkcbAJrS1pACGtIiBmtz9fg5oiLc4gpb9UYcHiyRikjESDUc4GQ6LI7cLRug8CYMi811g-qpQOocEJ6DfLzTfY-F27NFqhhAdajoXHh7zHhLEHTkoMOdEq9_3JQs4gKMkxyTTCWEV3OAdDK5cvYzlh5uZLPq3qzRgWlpYhYNDcTya3I0t2CIC5sMnDP-5P6dyURVHEU7ybu_DWglqk.AtcAuadle-9eQ2ZJR7gUCmqIOC8BdifU3cSKS57280M&dib_tag=se&hvadid=779544499890&hvdev=c&hvexpln=0&hvlocphy=9011905&hvnetw=g&hvocijid=10037798709126297364--&hvqmt=e&hvrand=10037798709126297364&hvtargid=kwd-1379718175646&hydadcr=24366_13859585_2335234&keywords=raspberry+pi+compute+module+5&mcid=8481e353659e39cba1498d16a69d7fc6&qid=1781018993&sr=8-3",
+  },
+  {
     slug: "nvidia-jetson-orin-nx",
     name: "NVIDIA Jetson Orin NX",
     vendor: "NVIDIA / Seeed Studio",
