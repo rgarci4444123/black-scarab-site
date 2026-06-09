@@ -15,12 +15,41 @@ import {
 const normalizeCatalogName = (value: string) =>
   value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 
-const liveProductNames = new Set(
-  products.map((product) => normalizeCatalogName(product.name)),
+const equivalentNameWords = new Set(["generation", "nvl", "pcie"]);
+
+const simplifyCatalogName = (value: string) =>
+  normalizeCatalogName(value)
+    .split(" ")
+    .filter((word) => !equivalentNameWords.has(word) && !/^\d+gb$/.test(word))
+    .join(" ");
+
+const containsComparableName = (name: string, candidate: string) =>
+  candidate.length >= 8 && name.includes(candidate);
+
+const liveProductNames = products.map((product) =>
+  normalizeCatalogName(product.name),
 );
 
+const isRoadmapTargetLive = (targetName: string) => {
+  const target = normalizeCatalogName(targetName);
+  const simplifiedTarget = simplifyCatalogName(targetName);
+
+  return liveProductNames.some((productName) => {
+    const simplifiedProduct = simplifyCatalogName(productName);
+
+    return (
+      target === productName ||
+      simplifiedTarget === simplifiedProduct ||
+      containsComparableName(productName, target) ||
+      containsComparableName(target, productName) ||
+      containsComparableName(simplifiedProduct, simplifiedTarget) ||
+      containsComparableName(simplifiedTarget, simplifiedProduct)
+    );
+  });
+};
+
 const roadmapTargets = catalogRoadmapItems.filter(
-  (item) => !liveProductNames.has(normalizeCatalogName(item.name)),
+  (item) => !isRoadmapTargetLive(item.name),
 );
 
 export default function CatalogClient() {
