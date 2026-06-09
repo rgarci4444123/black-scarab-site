@@ -171,14 +171,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Best for compact models, not modern LLM workloads.",
   },
   {
-    name: "PJRC Teensy 4.1",
-    category: "Boards, SBCs & Microcontrollers",
-    componentType: "Microcontroller board",
-    buyerFit: ["Other"],
-    role: "Fast microcontroller board for real-time audio, signal processing, and compact control systems.",
-    note: "Useful in DIY and prototyping guides.",
-  },
-  {
     name: "Luxonis OAK-D Pro",
     category: "Cameras & Vision",
     componentType: "Depth AI camera",

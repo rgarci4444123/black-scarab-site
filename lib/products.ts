@@ -1255,6 +1255,46 @@ export const products: ProductData[] = [
     sourceLabel: "Official product page",
   },
   {
+    slug: "pjrc-teensy-4-1-with-pins",
+    name: "PJRC Teensy 4.1 with Pins",
+    vendor: "PJRC",
+    category: "Boards, SBCs & Microcontrollers",
+    industries: ["Manufacturing", "Retail", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Mobile", "Industrial"],
+    price: "$47.03",
+    priceStatus: "Distributor listing",
+    priceNote:
+      "Amazon listing price from the provided Teensy 4.1 with Pins page at the time checked. PJRC notes SparkFun is now manufacturing Teensy products, and live pricing can vary by seller, headers, shipping, and availability.",
+    image: "/product-images/pjrc-teensy-4-1-with-pins.png",
+    imageAlt: "PJRC Teensy 4.1 microcontroller board with header pins",
+    summary:
+      "A compact, high-speed Teensy microcontroller board with a 600MHz Arm Cortex-M7, 8MB flash, 1024KB RAM, native microSD, USB device and host support, Ethernet capability, and rich I/O for real-time embedded work.",
+    whyItMatters:
+      "Teensy 4.1 is a strong fit when an edge AI deployment needs fast deterministic control, audio, signal processing, sensor fusion, or custom I/O without adding another Linux computer.",
+    specs: [
+      { label: "Processor", value: "Arm Cortex-M7 at 600MHz with floating-point and DSP acceleration" },
+      { label: "Memory", value: "8MB flash, 1024KB RAM, emulated EEPROM, and QSPI expansion locations" },
+      { label: "I/O", value: "55 total I/O pins, 35 PWM pins, 18 analog inputs, 8 serial ports, USB host/device, CAN, microSD, and 10/100 Ethernet capability" },
+    ],
+    bestFor: [
+      "Real-time control firmware",
+      "Audio and signal-processing prototypes",
+      "Custom sensor and actuator interfaces",
+    ],
+    usedIn: [
+      "Machine control sidecars",
+      "Interactive retail hardware",
+      "Robotics and motion experiments",
+    ],
+    blackScarabPov:
+      "This is not the main AI box; it is the fast control-layer board beside one. Teensy 4.1 belongs in baskets where timing, pins, audio, CAN, USB host, or custom peripheral glue matter more than running a full operating system.",
+    officialUrl: "https://www.pjrc.com/store/teensy41.html",
+    sourceLabel: "Official product page",
+    affiliateUrl:
+      "https://www.amazon.com/PJRC-Teensy-4-1-with-Pins/dp/B08CTM3279",
+  },
+  {
     slug: "raspberry-pi-compute-module-5",
     name: "Raspberry Pi Compute Module 5",
     vendor: "Raspberry Pi",
