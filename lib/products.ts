@@ -1008,6 +1008,48 @@ export const products: ProductData[] = [
     sourceLabel: "Official product page",
   },
   {
+    slug: "nvidia-jetson-orin-nano-super-developer-kit",
+    name: "NVIDIA Jetson Orin Nano Super Developer Kit",
+    vendor: "NVIDIA",
+    category: "Edge Computers",
+    industries: ["Agriculture", "Manufacturing", "Retail", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Mobile", "Industrial"],
+    price: "$249",
+    priceStatus: "Exact",
+    priceNote:
+      "NVIDIA lists the Jetson Orin Nano Super Developer Kit at $249 USD through authorized distributors. Amazon checkout pricing can vary by seller, inventory, shipping, and regional availability, so verify the live listing before using it in a purchasable basket.",
+    image: "/product-images/nvidia-jetson-orin-nano-super-developer-kit.png",
+    imageAlt:
+      "NVIDIA Jetson Orin Nano Super Developer Kit with cooling fan and carrier board",
+    summary:
+      "A compact Jetson developer kit with up to 67 INT8 TOPS for robotics, vision AI, generative AI experiments, and low-power edge inference prototypes.",
+    whyItMatters:
+      "The Jetson Orin Nano Super Developer Kit gives builders an affordable CUDA-capable edge AI computer with enough GPU, memory bandwidth, and JetPack ecosystem support to prototype robots, smart cameras, visual agents, and small local AI systems.",
+    specs: [
+      { label: "AI Compute", value: "67 INT8 TOPS" },
+      { label: "GPU / CPU", value: "NVIDIA Ampere GPU with 1024 CUDA cores and 32 Tensor Cores; 6-core Arm Cortex-A78AE CPU" },
+      { label: "Memory / Power", value: "8GB 128-bit LPDDR5 at 102 GB/s; 7W-25W" },
+    ],
+    bestFor: [
+      "Jetson AI prototyping",
+      "Robotics and smart camera development",
+      "Low-power generative AI at the edge",
+    ],
+    usedIn: [
+      "Educational AI labs",
+      "Robot perception prototypes",
+      "Retail, agriculture, and maker vision systems",
+    ],
+    blackScarabPov:
+      "This is the right entry Jetson product for buyers who want the NVIDIA edge AI ecosystem without jumping straight to Orin NX, AGX Orin, or an industrial enclosure. It belongs in starter baskets for robotics, vision AI, and local model experiments, with the understanding that production deployments may later need a rugged carrier, enclosure, power design, and camera or sensor integration.",
+    officialUrl:
+      "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/",
+    sourceLabel: "Official product page",
+    affiliateUrl:
+      "https://www.amazon.com/NVIDIA-Jetson-Orin-Nano-Developer/dp/B0BZJTQ5YP/ref=sr_1_1?adgrpid=190077213241&dib=eyJ2IjoiMSJ9.Im0a4F6pyjbDvCc3Rs1VH_ckVhzfFEsxRmkINtrk679fXF99s51_J0TnUZSeuNOMFJjxg73Bwm9-2WYdf1l6vzrxySLWrW6aL-7z2bkYuETAkNArt5ukmHQtg0J1rrHmxdyGUWjictvDQleFQGDVqC_w-ljK3YZ3ze7bxbJTpaGlw6ahmmC78XEl9qBoOITAuBnyQdFBe5Zmk5fwf_rELPKzEDTcSBKPaE2pAd48qho.JQCGvgXmvui80g7m8OyFj4m7A0iCVdlegtlSbngC_IE&dib_tag=se&hvadid=779544412932&hvdev=c&hvexpln=0&hvlocphy=9011905&hvnetw=g&hvocijid=1175338068675014701--&hvqmt=e&hvrand=1175338068675014701&hvtargid=kwd-1774738221519&hydadcr=24360_13517583_2334893&keywords=nvidia+jetson+orin+nano&mcid=ab36144e5d4c3e188645cac639d41b76&qid=1781040212&sr=8-1",
+  },
+  {
     slug: "seeed-studio-recomputer-j4012",
     name: "Seeed Studio reComputer J4012",
     vendor: "Seeed Studio / NVIDIA Jetson",

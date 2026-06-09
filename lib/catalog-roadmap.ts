@@ -171,14 +171,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Best for compact models, not modern LLM workloads.",
   },
   {
-    name: "NVIDIA Jetson Orin Nano",
-    category: "Edge Computers",
-    componentType: "Embedded AI computer",
-    buyerFit: ["Retail", "Manufacturing", "Agriculture"],
-    role: "Entry Jetson platform for edge vision, robotics prototypes, and low-power inference.",
-    note: "Great starter module when CUDA ecosystem matters at the edge.",
-  },
-  {
     name: "Arduino Nicla Vision",
     category: "Boards, SBCs & Microcontrollers",
     componentType: "TinyML vision board",
