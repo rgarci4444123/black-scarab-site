@@ -2,7 +2,7 @@ export type ProductCategory =
   | "CPUs"
   | "GPUs & Accelerators"
   | "Edge Computers"
-  | "Boards & Microcontrollers"
+  | "Boards, SBCs & Microcontrollers"
   | "Cameras & Vision"
   | "Sensors"
   | "Networking & Connectivity"
@@ -1057,7 +1057,7 @@ export const products: ProductData[] = [
     slug: "raspberry-pi-5",
     name: "Raspberry Pi 5",
     vendor: "Raspberry Pi",
-    category: "Boards & Microcontrollers",
+    category: "Boards, SBCs & Microcontrollers",
     industries: ["Agriculture", "Manufacturing", "Retail", "Other"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Indoor", "Mobile"],
@@ -1095,7 +1095,7 @@ export const products: ProductData[] = [
     slug: "raspberry-pi-compute-module-5",
     name: "Raspberry Pi Compute Module 5",
     vendor: "Raspberry Pi",
-    category: "Boards & Microcontrollers",
+    category: "Edge Computers",
     industries: ["Agriculture", "Manufacturing", "Retail", "Other"],
     powerProfile: "Low (<25W)",
     deploymentTypes: ["Indoor", "Mobile", "Industrial"],
@@ -1588,7 +1588,7 @@ export const productCategories: ProductCategory[] = [
   "CPUs",
   "GPUs & Accelerators",
   "Edge Computers",
-  "Boards & Microcontrollers",
+  "Boards, SBCs & Microcontrollers",
   "Cameras & Vision",
   "Sensors",
   "Networking & Connectivity",
@@ -1629,10 +1629,10 @@ export const productCategoryGuides: {
     commercePath: "Core architecture component",
   },
   {
-    category: "Boards & Microcontrollers",
+    category: "Boards, SBCs & Microcontrollers",
     description:
-      "Microcontrollers, single-board computers, and prototyping boards for small edge AI and control loops.",
-    examples: ["Arduino", "Raspberry Pi", "ESP32"],
+      "Single-board computers, microcontrollers, and prototyping boards for small edge AI, control loops, and sensor projects.",
+    examples: ["Raspberry Pi 5", "Raspberry Pi Pico", "Arduino"],
     commercePath: "Low-cost parts volume and starter kits",
   },
   {

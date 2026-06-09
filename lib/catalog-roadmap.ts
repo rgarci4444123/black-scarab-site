@@ -244,7 +244,7 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
   },
   {
     name: "Arduino Nicla Vision",
-    category: "Boards & Microcontrollers",
+    category: "Boards, SBCs & Microcontrollers",
     componentType: "TinyML vision board",
     buyerFit: ["Manufacturing", "Healthcare"],
     role: "TinyML board for compact vision, sensor fusion, and low-power inspection concepts.",
@@ -252,7 +252,7 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
   },
   {
     name: "Arduino Portenta H7",
-    category: "Boards & Microcontrollers",
+    category: "Boards, SBCs & Microcontrollers",
     componentType: "Industrial microcontroller",
     buyerFit: ["Manufacturing", "Other"],
     role: "Industrial-grade microcontroller board for control loops and edge prototypes.",
@@ -260,7 +260,7 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
   },
   {
     name: "Arduino Portenta X8",
-    category: "Boards & Microcontrollers",
+    category: "Boards, SBCs & Microcontrollers",
     componentType: "Linux-capable industrial board",
     buyerFit: ["Manufacturing", "Other"],
     role: "Hybrid microcontroller/Linux board for secure industrial edge applications.",
@@ -268,7 +268,7 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
   },
   {
     name: "Raspberry Pi Pico 2 W",
-    category: "Boards & Microcontrollers",
+    category: "Boards, SBCs & Microcontrollers",
     componentType: "Microcontroller board",
     buyerFit: ["Other"],
     role: "Low-cost wireless microcontroller for sensors, control, and educational edge projects.",
@@ -276,7 +276,7 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
   },
   {
     name: "Espressif ESP32-S3-DevKitC-1",
-    category: "Boards & Microcontrollers",
+    category: "Boards, SBCs & Microcontrollers",
     componentType: "Wireless MCU dev kit",
     buyerFit: ["Retail", "Agriculture", "Other"],
     role: "Wi-Fi/Bluetooth microcontroller for connected sensors, low-cost cameras, and edge nodes.",
@@ -284,7 +284,7 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
   },
   {
     name: "STMicroelectronics STM32 Nucleo-H743ZI2",
-    category: "Boards & Microcontrollers",
+    category: "Boards, SBCs & Microcontrollers",
     componentType: "MCU development board",
     buyerFit: ["Manufacturing", "Other"],
     role: "High-performance MCU development board for industrial control and embedded AI experiments.",
@@ -292,7 +292,7 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
   },
   {
     name: "PJRC Teensy 4.1",
-    category: "Boards & Microcontrollers",
+    category: "Boards, SBCs & Microcontrollers",
     componentType: "Microcontroller board",
     buyerFit: ["Other"],
     role: "Fast microcontroller board for real-time audio, signal processing, and compact control systems.",
