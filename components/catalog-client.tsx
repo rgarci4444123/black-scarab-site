@@ -12,6 +12,17 @@ import {
   type ProductIndustry,
 } from "@/lib/products";
 
+const normalizeCatalogName = (value: string) =>
+  value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+
+const liveProductNames = new Set(
+  products.map((product) => normalizeCatalogName(product.name)),
+);
+
+const roadmapTargets = catalogRoadmapItems.filter(
+  (item) => !liveProductNames.has(normalizeCatalogName(item.name)),
+);
+
 export default function CatalogClient() {
   const [activeCategory, setActiveCategory] = useState<ProductCategory | "All">(
     "All",
@@ -45,7 +56,7 @@ export default function CatalogClient() {
   const roadmapCountByCategory = useMemo(() => {
     return productCategories.reduce<Record<ProductCategory, number>>(
       (counts, category) => {
-        counts[category] = catalogRoadmapItems.filter(
+        counts[category] = roadmapTargets.filter(
           (item) => item.category === category,
         ).length;
         return counts;
@@ -56,7 +67,7 @@ export default function CatalogClient() {
     );
   }, []);
   const visibleRoadmapItems = useMemo(() => {
-    return catalogRoadmapItems.filter((item) => {
+    return roadmapTargets.filter((item) => {
       const categoryMatch =
         activeCategory === "All" || item.category === activeCategory;
       const industryMatch =
@@ -203,13 +214,13 @@ export default function CatalogClient() {
               100-Item Buildout Map
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-              {visibleRoadmapItems.length} starter targets matched
+              {visibleRoadmapItems.length} future targets matched
             </h2>
           </div>
           <p className="max-w-2xl text-sm leading-6 text-[#6b7280]">
             This is the working expansion list: components, models, software,
-            robots, drones, and solution kits that can become full product
-            pages once images, links, pricing, and affiliate paths are added.
+            robots, drones, and solution kits that still need full product
+            pages, images, links, pricing, and affiliate paths.
           </p>
         </div>
 
