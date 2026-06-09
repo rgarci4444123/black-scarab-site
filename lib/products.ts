@@ -965,6 +965,44 @@ export const products: ProductData[] = [
       "https://www.amazon.com/seeed-studio-reComputer-J4012-Edge-Pre-Installed/dp/B0C88V4CB7/ref=sr_1_1_sspa?adgrpid=186021838763&dib=eyJ2IjoiMSJ9.x9SygZYg5g3zrc77UfsxHxVK2z1lnBG63wyHQPfUhgswM1ErCqz_lUnQV5Lspl2LkTlsGfqy3aeG-B5x6sP4YnbODm0v5FwqA-v9kIuFQp2ZG7s8HlWGmg2Sb5WQOMSj8j2cfbDTPrMScnnJbuVCSquyf5H_vLdPqFOqLejMpJjz8tBJpNNEamF_Csl0ym0ZCa7_3c1lWhzcPEu16XJVJtSKMYbCwNEF73BwyAWGASU.ATdnPUNRrLfyxO_rn2IylMgRL-ORNP2x-aMFZhdMQUU&dib_tag=se&hvadid=779581331944&hvdev=c&hvexpln=0&hvlocphy=9011905&hvnetw=g&hvocijid=1304425388795434517--&hvqmt=e&hvrand=1304425388795434517&hvtargid=kwd-2432736111329&hydadcr=24139_13533938_2335427&keywords=recomputer%2Bsuper%2Bj4012&mcid=302820366c3c30e39cffdc6626c389ef&qid=1781017235&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1",
   },
   {
+    slug: "raspberry-pi-5",
+    name: "Raspberry Pi 5",
+    vendor: "Raspberry Pi",
+    category: "Boards & Microcontrollers",
+    industries: ["Agriculture", "Manufacturing", "Retail", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Mobile"],
+    price: "Starts at $50",
+    priceStatus: "Starts at",
+    priceNote:
+      "Raspberry Pi lists pricing by memory configuration, with entry pricing starting at $50. Verify the selected RAM size, power supply, case, storage, HATs, and reseller availability before using it in a deployment basket.",
+    image: "/product-images/raspberry-pi-5.png",
+    imageAlt: "Raspberry Pi 5 single-board computer with official product artwork",
+    summary:
+      "A versatile single-board computer for prototyping, lightweight edge workloads, robotics education, sensors, control systems, and low-cost local automation projects.",
+    whyItMatters:
+      "Raspberry Pi 5 is not an AI accelerator by itself, but it is one of the most useful low-cost control and prototyping boards around the edge AI stack. It can coordinate sensors, cameras, I/O, networking, dashboards, and automation workflows, especially when paired with accelerator HATs or external devices.",
+    specs: [
+      { label: "Processor", value: "Broadcom BCM2712 quad-core Arm Cortex-A76 at 2.4GHz" },
+      { label: "Memory Options", value: "2GB, 4GB, 8GB, or 16GB LPDDR4X" },
+      { label: "Expansion", value: "Dual 4-lane MIPI camera/display, PCIe 2.0 x1, 40-pin GPIO" },
+    ],
+    bestFor: [
+      "Robotics and sensor prototypes",
+      "Low-cost edge controllers",
+      "Education and developer labs",
+    ],
+    usedIn: [
+      "Camera and sensor gateways",
+      "Robotics control experiments",
+      "Smart retail and building automation prototypes",
+    ],
+    blackScarabPov:
+      "This belongs in the catalog because many real edge AI projects still need a cheap controller around the expensive AI hardware. Raspberry Pi 5 is best treated as the coordination and prototyping layer, not the main accelerator for heavy model inference.",
+    officialUrl: "https://www.raspberrypi.com/products/raspberry-pi-5/",
+    sourceLabel: "Official product page",
+  },
+  {
     slug: "nvidia-jetson-orin-nx",
     name: "NVIDIA Jetson Orin NX",
     vendor: "NVIDIA / Seeed Studio",
