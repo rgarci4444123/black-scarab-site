@@ -919,6 +919,50 @@ export const products: ProductData[] = [
     sourceLabel: "Official product page",
   },
   {
+    slug: "onlogic-karbon-804",
+    name: "OnLogic Karbon 804",
+    vendor: "OnLogic",
+    category: "Edge Computers",
+    industries: [
+      "Agriculture",
+      "Manufacturing",
+      "Transportation & Logistics",
+      "Healthcare",
+    ],
+    powerProfile: "Medium (25–200W)",
+    deploymentTypes: ["Indoor", "Mobile", "Industrial"],
+    price: "Starts at $4,051.00",
+    priceStatus: "Starts at",
+    priceNote:
+      "OnLogic configure-and-buy pricing varies by processor, memory, storage, ModBay, PCIe, wireless, and mounting options. Verify the final configuration price before using it in a deployment basket.",
+    image: "/product-images/onlogic-karbon-804.png",
+    imageAlt:
+      "OnLogic Karbon 804 rugged edge computer with orange front I/O panel and expansion bay",
+    summary:
+      "A rugged industrial edge computer with 12th or 13th Gen Intel Core processing, dual ModBay, PCIe Gen 4 expansion, and high-density I/O for automation, machine learning, and field AI deployments.",
+    whyItMatters:
+      "The Karbon 804 gives edge AI projects a flexible industrial compute platform that can connect cameras, sensors, PoE devices, cellular links, storage, and accelerator cards in one rugged system near the physical operation.",
+    specs: [
+      { label: "Processor", value: "Intel 12th or 13th Gen Core up to 24-core i9" },
+      { label: "Expansion", value: "Dual ModBay plus PCIe Gen 4 x16 or dual x8" },
+      { label: "Rugged I/O", value: "Up to 22x LAN or 30x USB, -40C to 70C operating range" },
+    ],
+    bestFor: [
+      "Industrial edge AI gateways",
+      "Machine vision and inspection systems",
+      "Sensor-heavy field deployments",
+    ],
+    usedIn: [
+      "Factory automation and quality inspection",
+      "Fleet, rail, and logistics edge systems",
+      "Remote agriculture or infrastructure monitoring",
+    ],
+    blackScarabPov:
+      "This is the strongest Karbon 800 choice for Black Scarab because it combines ModBay I/O flexibility with PCIe expansion. It is the right flagship rugged edge computer when a deployment may need PoE cameras, extra LAN, cellular connectivity, local storage, or GPU acceleration without changing platforms.",
+    officialUrl: "https://www.onlogic.com/store/k804/",
+    sourceLabel: "Official product page",
+  },
+  {
     slug: "seeed-studio-recomputer-j4012",
     name: "Seeed Studio reComputer J4012",
     vendor: "Seeed Studio / NVIDIA Jetson",
