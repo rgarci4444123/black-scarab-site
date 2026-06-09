@@ -1174,6 +1174,48 @@ export const products: ProductData[] = [
       "https://www.amazon.com/Pico-Microcontroller-Bluetooth-MicroPython-CircuitPython/dp/B0DPF9N1MN/ref=sr_1_3?adgrpid=186693556695&dib=eyJ2IjoiMSJ9.7d6_m1tsztCdlAW3krBD2_-ewta9Cyyq8jdoFC8IpQ_9Dd7AnY7myA7PDpn2xy3TEbnMclMdUltViKYwndTdxomumJdM9CmzdPumTNRfO4rYi6OievAxSz13MgjFeY3ZV0bp-zrz4pt-XTq0fLFYvYsoz_R7v8n4rfnkTzp0lTdlKRZliyZY9vIknFKBEmEjTkjU0v6gxyC6xhwa4ROmlxP5VIDfF8EJWZ45L3wDD8w.MU5Vak91oy2qzieP4fX-hLATMxx_rJ4U0TNcQhgVUAU&dib_tag=se&hvadid=779544697095&hvdev=c&hvexpln=0&hvlocphy=9011905&hvnetw=g&hvocijid=16385299997376883644--&hvqmt=e&hvrand=16385299997376883644&hvtargid=kwd-1596993059240&hydadcr=24358_13533861_2334967&keywords=raspberry%2Bpi%2Bpico%2B2%2Bw&mcid=a75717bce4f73afb92ccdbf4558a97d4&qid=1781040901&sr=8-3&th=1",
   },
   {
+    slug: "espressif-esp32-s3-devkitc-1-n8r8",
+    name: "Espressif ESP32-S3-DevKitC-1-N8R8",
+    vendor: "Espressif",
+    category: "Boards, SBCs & Microcontrollers",
+    industries: ["Agriculture", "Manufacturing", "Retail", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Mobile", "Industrial"],
+    price: "$15.00",
+    priceStatus: "Distributor listing",
+    priceNote:
+      "Amazon listing price from the provided product page, sold by Espressif Systems at the time checked. Verify live checkout pricing, seller, shipping, and inventory before using it in a purchasable basket.",
+    image: "/product-images/espressif-esp32-s3-devkitc-1-n8r8.png",
+    imageAlt:
+      "Espressif ESP32-S3-DevKitC-1-N8R8 development board with ESP32-S3-WROOM module",
+    summary:
+      "An entry-level ESP32-S3 development board with Wi-Fi, Bluetooth Low Energy, 8MB flash, 8MB PSRAM, exposed GPIO, USB, and support for neural network and signal-processing workloads.",
+    whyItMatters:
+      "ESP32-S3-DevKitC-1-N8R8 is a practical low-cost node for connected sensors, controls, simple vision peripherals, and edge-device prototypes that need wireless connectivity and enough memory for richer embedded firmware.",
+    specs: [
+      { label: "Module", value: "ESP32-S3-WROOM-1-N8R8 with Wi-Fi and Bluetooth Low Energy" },
+      { label: "Memory", value: "8MB Quad SPI flash and 8MB Octal SPI PSRAM" },
+      { label: "I/O", value: "Most module GPIO exposed to headers, USB OTG, USB-to-UART, RGB LED, boot and reset buttons" },
+    ],
+    bestFor: [
+      "Wireless MCU prototypes",
+      "Low-cost sensor and control nodes",
+      "ESP-IDF, Arduino, and MicroPython development",
+    ],
+    usedIn: [
+      "Connected agriculture sensors",
+      "Retail device telemetry",
+      "Factory status lights and control panels",
+    ],
+    blackScarabPov:
+      "This is a small but useful building block around larger edge AI systems. It belongs in baskets where the deployment needs inexpensive Wi-Fi/BLE endpoints for telemetry, buttons, LEDs, actuators, and lightweight local processing near machines or sensors.",
+    officialUrl:
+      "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/index.html",
+    sourceLabel: "Official documentation",
+    affiliateUrl:
+      "https://www.amazon.com/Espressif-ESP32-S3-DevKitC-1-N8R8-Development-Board/dp/B09MHP42LY",
+  },
+  {
     slug: "raspberry-pi-compute-module-5",
     name: "Raspberry Pi Compute Module 5",
     vendor: "Raspberry Pi",

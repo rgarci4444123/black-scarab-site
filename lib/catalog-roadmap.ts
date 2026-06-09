@@ -171,14 +171,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Best for compact models, not modern LLM workloads.",
   },
   {
-    name: "Espressif ESP32-S3-DevKitC-1",
-    category: "Boards, SBCs & Microcontrollers",
-    componentType: "Wireless MCU dev kit",
-    buyerFit: ["Retail", "Agriculture", "Other"],
-    role: "Wi-Fi/Bluetooth microcontroller for connected sensors, low-cost cameras, and edge nodes.",
-    note: "A strong building block for inexpensive connected products.",
-  },
-  {
     name: "STMicroelectronics STM32 Nucleo-H743ZI2",
     category: "Boards, SBCs & Microcontrollers",
     componentType: "MCU development board",
