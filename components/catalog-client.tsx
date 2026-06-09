@@ -240,7 +240,7 @@ export default function CatalogClient() {
         <div className="flex flex-col gap-4 text-center md:flex-row md:items-end md:justify-between md:text-left">
           <div>
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-              100-Item Buildout Map
+              Buildout Map
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight">
               {visibleRoadmapItems.length} future targets matched
