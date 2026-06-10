@@ -1606,6 +1606,45 @@ export const products: ProductData[] = [
     sourceLabel: "Official product page",
   },
   {
+    slug: "luxonis-oak-d-lite",
+    name: "Luxonis OAK-D Lite",
+    vendor: "Luxonis",
+    category: "Cameras & Vision",
+    industries: ["Retail", "Manufacturing", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Mobile", "Industrial"],
+    price: "$169.00",
+    priceStatus: "Exact",
+    priceNote:
+      "Luxonis lists OAK-D Lite autofocus and fixed-focus variants at $169.00 on the official shop page. Verify live checkout pricing, focus variant, shipping, and regional availability before using it in a purchasable basket.",
+    image: "/product-images/luxonis-oak-d-lite.png",
+    imageAlt:
+      "Luxonis OAK-D Lite spatial AI camera with USB-C port and stereo depth cameras",
+    summary:
+      "A lower-cost DepthAI spatial AI camera with RVC2 processing, a 13MP RGB camera, stereo depth, USB-C power and data, a BMI270 6-axis IMU, and onboard neural network inference.",
+    whyItMatters:
+      "OAK-D Lite makes depth-aware edge vision easier to prototype. It gives builders a compact RGB-plus-stereo perception node for robotics, retail analytics, education, and spatial AI experiments without jumping straight to the higher-cost Pro camera line.",
+    specs: [
+      { label: "Vision / AI", value: "RVC2 architecture with 4 TOPS total processing, 1.4 TOPS for AI, DepthAI pipelines, and on-device neural network inferencing" },
+      { label: "Camera / Depth", value: "13MP IMX214 RGB camera variants, OV7251 stereo pair, 75mm baseline, and ideal depth range around 40cm to 8m" },
+      { label: "Deployment", value: "USB-C 3.2 Gen1 power/data, BMI270 6-axis IMU, 91 x 28 x 17.5mm body, 61g weight, and up to about 5W full-feature power draw" },
+    ],
+    bestFor: [
+      "Spatial AI prototypes",
+      "Robotics education and labs",
+      "Low-cost depth-aware vision",
+    ],
+    usedIn: [
+      "Robot perception experiments",
+      "Retail occupancy and fixture analytics",
+      "Developer and university vision projects",
+    ],
+    blackScarabPov:
+      "This is the starter OAK camera we would put in early depth-AI baskets. Choose it when cost, size, and developer access matter more than active IR stereo, low-light operation, or ruggedized enclosure features from the Pro line.",
+    officialUrl: "https://shop.luxonis.com/products/oak-d-lite-1",
+    sourceLabel: "Official product page",
+  },
+  {
     slug: "intel-realsense-d455",
     name: "Intel RealSense D455",
     vendor: "Intel RealSense",

@@ -171,14 +171,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Best for compact models, not modern LLM workloads.",
   },
   {
-    name: "Luxonis OAK-D Lite",
-    category: "Cameras & Vision",
-    componentType: "Depth AI camera",
-    buyerFit: ["Other", "Retail"],
-    role: "Lower-cost OAK-D option for spatial AI experiments and prototypes.",
-    note: "Good starter recommendation for depth AI buyers.",
-  },
-  {
     name: "Intel RealSense D455",
     category: "Cameras & Vision",
     componentType: "Depth camera",
