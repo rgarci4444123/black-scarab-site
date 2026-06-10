@@ -1567,6 +1567,45 @@ export const products: ProductData[] = [
     sourceLabel: "Official manual",
   },
   {
+    slug: "luxonis-oak-d-pro",
+    name: "Luxonis OAK-D Pro",
+    vendor: "Luxonis",
+    category: "Cameras & Vision",
+    industries: ["Manufacturing", "Transportation & Logistics", "Retail", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Outdoor", "Mobile", "Industrial"],
+    price: "Starts at $429.00",
+    priceStatus: "Starts at",
+    priceNote:
+      "Luxonis lists standard OAK-D Pro variants at $429.00 and the OV9782 fixed-focus special variant at $479.00. Verify live shop pricing, sensor variant, shipping, and regional availability before using it in a purchasable basket.",
+    image: "/product-images/luxonis-oak-d-pro.png",
+    imageAlt:
+      "Luxonis OAK-D Pro spatial AI camera with RGB camera, stereo cameras, IR dot projector, and IR illumination",
+    summary:
+      "A rugged spatial AI camera with stereo depth, a high-resolution RGB camera, onboard RVC2 processing, active IR stereo, night vision illumination, DepthAI support, USB-C connectivity, and an IP66-rated enclosure.",
+    whyItMatters:
+      "OAK-D Pro turns the camera into an edge perception node. Instead of sending every raw frame to a host computer, it can produce depth-aware detections, tracking, and spatial context close to the sensor for robots, safety systems, and retail analytics.",
+    specs: [
+      { label: "Vision / AI", value: "RVC2 architecture with 4 TOPS total processing, 1.4 TOPS for AI, DepthAI pipelines, and on-device neural network inferencing" },
+      { label: "Camera / Depth", value: "Up to 12MP RGB camera variants, OV9282 stereo pair, 75mm baseline, active IR dot projector, IR illumination, and ideal depth range around 70cm to 12m" },
+      { label: "Deployment", value: "USB-C power/data, IP66-rated aluminum enclosure, 1/4-inch tripod mount, 75mm M4 VESA mount, integrated 9-axis IMU, and up to about 7.5W typical full-feature power draw" },
+    ],
+    bestFor: [
+      "Depth-aware robot perception",
+      "Industrial safety zones",
+      "Retail spatial analytics",
+    ],
+    usedIn: [
+      "Mobile robots and AMRs",
+      "Factory workstation monitoring",
+      "Shelf, queue, and occupancy analytics",
+    ],
+    blackScarabPov:
+      "This belongs in the stack as the sensing and perception layer. It is especially useful when a project needs depth, low-light operation, and local spatial AI without adding a heavy edge computer at every camera point.",
+    officialUrl: "https://shop.luxonis.com/products/oak-d-pro",
+    sourceLabel: "Official product page",
+  },
+  {
     slug: "intel-realsense-d455",
     name: "Intel RealSense D455",
     vendor: "Intel RealSense",

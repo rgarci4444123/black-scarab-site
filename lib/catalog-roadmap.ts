@@ -171,14 +171,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Best for compact models, not modern LLM workloads.",
   },
   {
-    name: "Luxonis OAK-D Pro",
-    category: "Cameras & Vision",
-    componentType: "Depth AI camera",
-    buyerFit: ["Retail", "Manufacturing"],
-    role: "Stereo depth camera with onboard AI for spatial perception.",
-    note: "Good for robotics, retail analytics, and safety zones.",
-  },
-  {
     name: "Luxonis OAK-D Lite",
     category: "Cameras & Vision",
     componentType: "Depth AI camera",
