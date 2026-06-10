@@ -1683,8 +1683,8 @@ export const products: ProductData[] = [
     sourceLabel: "Distributor listing",
   },
   {
-    slug: "basler-ace-camera",
-    name: "Basler ace Camera",
+    slug: "basler-ace-2-camera-family",
+    name: "Basler ace 2 Camera Family",
     vendor: "Basler",
     category: "Cameras & Vision",
     industries: ["Manufacturing", "Healthcare", "Retail"],
@@ -1692,17 +1692,18 @@ export const products: ProductData[] = [
     deploymentTypes: ["Indoor", "Industrial"],
     price: "Request quote",
     priceStatus: "Quote required",
-    priceNote: "Exact configuration and lens/accessory choices affect total cost.",
-    image: "/product-images/basler-aca1920-25uc.jpg",
-    imageAlt: "Industrial camera deployment representing Basler ace",
+    priceNote:
+      "Basler ace 2 is a configurable industrial camera family, not a single SKU. Final pricing depends on sensor, resolution, frame rate, interface, mono/color choice, lens, lighting, cable, and accessory selections.",
+    image: "/product-images/basler-ace-2-camera-family.png",
+    imageAlt: "Basler ace 2 industrial machine vision camera family",
     summary:
-      "An industrial-grade machine vision camera family built for consistent image quality in production and inspection environments.",
+      "A configurable industrial machine vision camera family for production inspection, lab imaging, automation, and fixed vision systems that need repeatable image capture rather than a consumer or developer camera.",
     whyItMatters:
-      "When image reliability drives the business outcome, industrial cameras outperform commodity devices and simplify long-term scaling.",
+      "Basler ace 2 is better treated as a family-level buying decision. Teams choose the exact SKU after defining resolution, frame rate, interface, mono or color imaging, lensing, lighting, and mounting requirements for the vision stack.",
     specs: [
-      { label: "Camera Type", value: "Industrial machine vision" },
-      { label: "Power Profile", value: "Low-power camera system" },
-      { label: "Deployment", value: "Fixed production or inspection mounting" },
+      { label: "Family Type", value: "Configurable industrial area-scan machine vision camera family" },
+      { label: "Selection Variables", value: "Choose by resolution, frame rate, sensor, interface, mono/color output, lens mount, lighting, and accessories" },
+      { label: "Buying Path", value: "Use Basler's Vision System Configurator to match the camera model with lens, lighting, cables, and other vision components" },
     ],
     bestFor: [
       "Quality inspection",
@@ -1715,9 +1716,10 @@ export const products: ProductData[] = [
       "Structured retail vision nodes",
     ],
     blackScarabPov:
-      "A strong option when reliability and repeatability matter more than consumer-grade affordability. We’d favor this for production environments that must stay stable over time.",
-    officialUrl: "https://www.baslerweb.com/en-us/shop/aca1920-25uc/",
-    sourceLabel: "Official product page",
+      "A strong option when reliability and repeatability matter more than consumer-grade affordability. For Black Scarab stacks, this should be selected after the workload is known rather than as a generic camera add-on.",
+    officialUrl:
+      "https://www.baslerweb.com/en-us/tools/vision-system-configurator/?component=camera_selector#step=2;section=filter;gf=%7B%22a3s2q1_unit%22%3A%22mm%22%2C%22a3s2q2_unit%22%3A%22%CE%BCm%22%7D",
+    sourceLabel: "Official configurator",
   },
   {
     slug: "flir-boson-thermal",

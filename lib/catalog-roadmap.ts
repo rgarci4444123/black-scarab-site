@@ -179,14 +179,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Already covered and worth keeping as a comparison point.",
   },
   {
-    name: "Basler ace 2",
-    category: "Cameras & Vision",
-    componentType: "Industrial camera",
-    buyerFit: ["Manufacturing", "Healthcare"],
-    role: "Industrial camera family for repeatable machine vision capture.",
-    note: "Ideal for quality inspection buyer journeys.",
-  },
-  {
     name: "FLIR Boson+",
     category: "Cameras & Vision",
     componentType: "Thermal camera module",
