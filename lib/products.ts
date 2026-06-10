@@ -1763,6 +1763,45 @@ export const products: ProductData[] = [
     sourceLabel: "Official product page",
   },
   {
+    slug: "ids-ue-39b0xcp-e",
+    name: "IDS uEye XCP-E UE-39B0XCP-E",
+    vendor: "IDS Imaging",
+    category: "Cameras & Vision",
+    industries: ["Manufacturing", "Transportation & Logistics", "Healthcare"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Industrial"],
+    price: "Request quote",
+    priceStatus: "Quote required",
+    priceNote:
+      "IDS requires login or an enquiry flow for price display on the official webstore page. Final pricing depends on the selected variant, lens, cable, accessories, delivery terms, and regional account pricing.",
+    image: "/product-images/ids-ue-39b0xcp-e.png",
+    imageAlt:
+      "IDS uEye XCP-E UE-39B0XCP-E compact industrial event-based camera",
+    summary:
+      "A compact IDS uEye XCP-E event-based industrial camera with a 0.92MP Sony IMX636 sensor, 1280 x 720 resolution, USB 3 SuperSpeed connectivity, C-mount lens support, and Prophesee Metavision SDK integration.",
+    whyItMatters:
+      "Event-based vision only transmits relevant brightness changes at each pixel, which can reduce data volume and improve responsiveness for motion-heavy scenes. That makes this camera interesting for object tracking, robotics, traffic systems, sports analysis, and other workflows where changes over time matter more than conventional full-frame capture.",
+    specs: [
+      { label: "Sensor / Imaging", value: "Sony IMX636 1/2.5-inch CMOS event-based sensor, 1280 x 720 resolution, 0.92MP, 4.86um pixel size, and event-based shutter" },
+      { label: "Interface / Software", value: "USB 3 interface at 5.0Gbps, lockable USB-Micro-B connector, IDS HAL plugin, and Prophesee Metavision SDK support" },
+      { label: "Industrial Form Factor", value: "29 x 29 x 17mm housing, IP30 rating, C-mount lens compatibility, series production lifecycle, CE/FCC/UKCA certifications, and 3-year warranty" },
+    ],
+    bestFor: [
+      "Event-based object tracking",
+      "Robotics motion perception",
+      "Industrial motion analysis",
+    ],
+    usedIn: [
+      "Production line tracking",
+      "Robotic picking and handling",
+      "Traffic and transport monitoring",
+    ],
+    blackScarabPov:
+      "This is a specialist camera, not a general RGB replacement. It belongs in stacks where motion, latency, and sparse event streams are the point, especially when conventional frame cameras create too much irrelevant image data.",
+    officialUrl: "https://www.ids-imaging.us/store_us/ue-39b0xcp-e.html",
+    sourceLabel: "Official product page",
+  },
+  {
     slug: "intel-realsense-d455",
     name: "Intel RealSense D455",
     vendor: "Intel RealSense",

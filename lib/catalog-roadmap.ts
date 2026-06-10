@@ -187,14 +187,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Specialized but high-value when thermal data matters.",
   },
   {
-    name: "IDS uEye+ XCP",
-    category: "Cameras & Vision",
-    componentType: "Industrial camera",
-    buyerFit: ["Manufacturing", "Healthcare"],
-    role: "Compact industrial camera family for machine vision and embedded systems.",
-    note: "Useful for expanding beyond Basler in vision comparisons.",
-  },
-  {
     name: "Bosch BME688",
     category: "Sensors",
     componentType: "Environmental sensor",
