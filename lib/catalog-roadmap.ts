@@ -187,14 +187,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Specialized but high-value when thermal data matters.",
   },
   {
-    name: "Stereolabs ZED 2i",
-    category: "Cameras & Vision",
-    componentType: "Stereo depth camera",
-    buyerFit: ["Other", "Manufacturing"],
-    role: "Rugged stereo camera for robotics, spatial mapping, and 3D perception.",
-    note: "Use in robotics comparisons, and consider adding Robotics as a future buyer segment.",
-  },
-  {
     name: "IDS uEye+ XCP",
     category: "Cameras & Vision",
     componentType: "Industrial camera",

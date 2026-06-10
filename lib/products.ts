@@ -1724,6 +1724,45 @@ export const products: ProductData[] = [
     sourceLabel: "Official product page",
   },
   {
+    slug: "stereolabs-zed-2i",
+    name: "Stereolabs ZED 2i",
+    vendor: "Stereolabs",
+    category: "Cameras & Vision",
+    industries: ["Manufacturing", "Transportation & Logistics", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Outdoor", "Mobile", "Industrial"],
+    price: "Starts at $499.00",
+    priceStatus: "Starts at",
+    priceNote:
+      "Stereolabs lists the ZED 2i from $499 on its official store page. Final checkout pricing can vary by lens option, accessories, taxes, shipping, and regional availability.",
+    image: "/product-images/stereolabs-zed-2i.png",
+    imageAlt:
+      "Stereolabs ZED 2i stereo depth camera with dual front lenses",
+    summary:
+      "A stereo depth camera for robots, spatial mapping, and 3D perception, with dual 4MP sensors, neural stereo depth sensing, visual-inertial SLAM, USB-C connectivity, and ZED SDK support.",
+    whyItMatters:
+      "ZED 2i gives an edge AI stack richer geometry than a standard RGB camera. It can support depth maps, positional tracking, 3D object detection, and scene understanding for mobile robots, logistics automation, smart infrastructure, and field autonomy prototypes.",
+    specs: [
+      { label: "Depth / Sensors", value: "Dual 4MP sensors, neural stereo depth sensing, native-resolution depth in Ultra mode, up to 100Hz depth, and up to 20m or 35m max depth range depending on lens option" },
+      { label: "Video / Motion", value: "2K at 15fps, 1080p at 30/15fps, 720p at 60/30/15fps, visual-inertial stereo SLAM, accelerometer, gyroscope, barometer, magnetometer, and temperature sensors" },
+      { label: "Deployment", value: "175.25 x 30.25 x 43.10mm, 230g, 120mm baseline, -10C to 50C operation, USB 3.0 Type-C with dual locking screws, and 5V / 380mA USB power" },
+    ],
+    bestFor: [
+      "Robot perception and navigation",
+      "Spatial mapping and 3D analytics",
+      "Outdoor and mobile autonomy prototypes",
+    ],
+    usedIn: [
+      "AMRs and mobile robots",
+      "Logistics automation",
+      "Smart infrastructure sensing",
+    ],
+    blackScarabPov:
+      "This is the more serious step up from starter depth modules when a stack needs stereo geometry, SLAM, and SDK-level perception features. It is strongest when paired with a capable edge computer or Jetson-class system that can use the ZED SDK well.",
+    officialUrl: "https://www.stereolabs.com/store/products/zed-2i",
+    sourceLabel: "Official product page",
+  },
+  {
     slug: "intel-realsense-d455",
     name: "Intel RealSense D455",
     vendor: "Intel RealSense",
