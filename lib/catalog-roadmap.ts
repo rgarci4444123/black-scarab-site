@@ -187,14 +187,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Specialized but high-value when thermal data matters.",
   },
   {
-    name: "Raspberry Pi AI Camera",
-    category: "Cameras & Vision",
-    componentType: "AI camera module",
-    buyerFit: ["Other", "Retail"],
-    role: "Low-cost camera module with onboard AI sensor capabilities for Raspberry Pi projects.",
-    note: "Important for hobbyist and education traffic.",
-  },
-  {
     name: "Arducam ToF Camera",
     category: "Cameras & Vision",
     componentType: "Time-of-flight camera",

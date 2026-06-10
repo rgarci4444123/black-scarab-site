@@ -1645,6 +1645,45 @@ export const products: ProductData[] = [
     sourceLabel: "Official product page",
   },
   {
+    slug: "raspberry-pi-ai-camera",
+    name: "Raspberry Pi AI Camera",
+    vendor: "Raspberry Pi",
+    category: "Cameras & Vision",
+    industries: ["Retail", "Manufacturing", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Mobile"],
+    price: "$70.00",
+    priceStatus: "Exact",
+    priceNote:
+      "Raspberry Pi lists the AI Camera as available now for $70. Reseller availability, shipping, taxes, and regional pricing can vary, so verify live checkout terms before using it in a purchasable basket.",
+    image: "/product-images/raspberry-pi-ai-camera.png",
+    imageAlt:
+      "Raspberry Pi AI Camera module with Sony IMX500 Intelligent Vision Sensor",
+    summary:
+      "A Raspberry Pi camera module built around Sony's 12.3MP IMX500 Intelligent Vision Sensor, with an on-module neural network accelerator, RP2040 firmware management, and standard Raspberry Pi camera connector support.",
+    whyItMatters:
+      "The AI Camera gives Raspberry Pi builders a low-cost path to vision AI at the sensor level. It can run neural network workloads on the camera module itself, reducing host load for small robots, smart cameras, education projects, and prototype inspection nodes.",
+    specs: [
+      { label: "Sensor / AI", value: "12.3MP Sony IMX500 Intelligent Vision Sensor with integrated neural network accelerator" },
+      { label: "Imaging", value: "4056 x 3040 10-bit at 10fps full resolution, 2028 x 1520 10-bit at 30fps binned, and 1080p30 video mode" },
+      { label: "Module", value: "25 x 24 x 11.9mm module, 78.3 degree field of view, manual/mechanical focus, F1.79 lens, integrated RP2040, and compatibility with all Raspberry Pi computers" },
+    ],
+    bestFor: [
+      "Low-cost Raspberry Pi vision AI",
+      "Smart camera prototypes",
+      "Education and developer projects",
+    ],
+    usedIn: [
+      "Retail demo cameras",
+      "Robotics perception experiments",
+      "Small inspection and classification prototypes",
+    ],
+    blackScarabPov:
+      "This is a sensor-level AI product, not a replacement for a Jetson or industrial vision computer. It belongs in starter baskets where cost, Raspberry Pi compatibility, and quick IMX500 experimentation matter more than ruggedization or multi-camera industrial scale.",
+    officialUrl: "https://www.raspberrypi.com/products/ai-camera/",
+    sourceLabel: "Official product page",
+  },
+  {
     slug: "intel-realsense-d455",
     name: "Intel RealSense D455",
     vendor: "Intel RealSense",
