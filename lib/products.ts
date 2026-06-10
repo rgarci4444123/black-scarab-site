@@ -1684,6 +1684,46 @@ export const products: ProductData[] = [
     sourceLabel: "Official product page",
   },
   {
+    slug: "arducam-tof-camera-raspberry-pi",
+    name: "Arducam ToF Camera for Raspberry Pi",
+    vendor: "Arducam",
+    category: "Cameras & Vision",
+    industries: ["Manufacturing", "Retail", "Other"],
+    powerProfile: "Low (<25W)",
+    deploymentTypes: ["Indoor", "Mobile"],
+    price: "$49.99",
+    priceStatus: "Exact",
+    priceNote:
+      "Arducam lists the B0410 ToF camera at $49.99 on the official product page shown in the provided screenshot. Verify live checkout pricing, stock, shipping, and accessory requirements before using it in a purchasable basket.",
+    image: "/product-images/arducam-tof-camera-raspberry-pi.png",
+    imageAlt:
+      "Arducam B0410 time-of-flight camera module for Raspberry Pi with 70 degree field of view",
+    summary:
+      "A compact Arducam B0410 time-of-flight depth camera module for Raspberry Pi and NVIDIA Jetson projects, with 240 x 180 depth output, MIPI CSI-2 connectivity, OpenCV support, and a 70-degree diagonal field of view.",
+    whyItMatters:
+      "Time-of-flight sensing gives small Raspberry Pi and Jetson systems direct range data without relying only on RGB image inference. That makes it useful for prototyping occupancy sensing, obstacle awareness, simple measurement, and depth-triggered automation.",
+    specs: [
+      { label: "Depth / Imaging", value: "240 x 180 effective pixels, 120fps max sensor frame rate, and 30fps 4-phase max depth frame rate on Raspberry Pi and NVIDIA Jetson" },
+      { label: "Range / Optics", value: "70 degree diagonal viewing angle, 940nm VCSEL illuminator, 2m near mode, and 4m far mode measurement distance" },
+      { label: "Platform / Interface", value: "MIPI 2-lane interface, V4L2-based video kernel device, C/C++/Python SDK support, Raspberry Pi OS Bookworm/Bullseye support, and compatibility with Pi 5/4/3/CM3/4B/Zero W/Zero 2 W/CM4 and NVIDIA Jetson boards" },
+    ],
+    bestFor: [
+      "Raspberry Pi depth sensing",
+      "Robotics range experiments",
+      "Low-cost spatial prototypes",
+    ],
+    usedIn: [
+      "Obstacle-aware hobby robots",
+      "Short-range distance sensing",
+      "Prototype occupancy and interaction nodes",
+    ],
+    blackScarabPov:
+      "This belongs as an accessible depth-sensing module, not as a full industrial vision system. It is most useful when a builder needs simple range context around a Raspberry Pi or Jetson and wants a cheaper, smaller alternative to larger stereo or spatial AI cameras.",
+    officialUrl:
+      "https://www.arducam.com/time-of-flight-camera-for-raspberry-pi.html",
+    sourceLabel: "Official product page",
+  },
+  {
     slug: "intel-realsense-d455",
     name: "Intel RealSense D455",
     vendor: "Intel RealSense",

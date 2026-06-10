@@ -187,14 +187,6 @@ export const catalogRoadmapItems: CatalogRoadmapItem[] = [
     note: "Specialized but high-value when thermal data matters.",
   },
   {
-    name: "Arducam ToF Camera",
-    category: "Cameras & Vision",
-    componentType: "Time-of-flight camera",
-    buyerFit: ["Other", "Manufacturing"],
-    role: "Compact depth camera for range sensing and robotics experiments.",
-    note: "Good bridge between hobby and practical edge projects.",
-  },
-  {
     name: "Stereolabs ZED 2i",
     category: "Cameras & Vision",
     componentType: "Stereo depth camera",
