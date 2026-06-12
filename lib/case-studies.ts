@@ -1377,6 +1377,256 @@ const localAiEnterpriseGuide = (): CaseStudyArticle => ({
   sourceLinks: localAiSourceLinks,
 });
 
+const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
+  slug: "top-25-physical-ai-infrastructure-companies",
+  title: "Top 25 Physical AI Infrastructure Companies to Watch in 2026",
+  summary:
+    "A Black Scarab market map for investors, operators, and builders tracking the companies behind the physical AI stack: robot brains, perception, edge compute, safety, construction intelligence, digital twins, and real-world deployment software.",
+  publishedLabel: "Physical AI Series · Published June 12, 2026",
+  publishedDate: "2026-06-12",
+  typeLabel: "Physical AI Series",
+  formatLabel: "Investor ecosystem map",
+  industry: "Cross-Industry",
+  image: "/article-images/physical-ai-infrastructure-companies.png",
+  imageAlt:
+    "Layered physical AI stack with cameras, edge compute, sensors, robot arm, and industrial digital twin environment.",
+  seoDescription:
+    "A 2026 guide to 25 physical AI infrastructure companies investors and business leaders should watch, from robot foundation models and edge AI chips to cameras, sensors, digital twins, construction intelligence, and fleet software.",
+  tags: [
+    "physical AI",
+    "edge AI",
+    "robotics infrastructure",
+    "AI investing",
+    "computer vision",
+    "industrial AI",
+    "AI hardware",
+    "digital twins",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "The physical AI market is easy to misunderstand if every conversation starts with humanoid robots. Humanoids matter, but they are only one visible expression of a much larger shift: AI moving from screens and text into cameras, sensors, machines, vehicles, factories, warehouses, construction sites, hospitals, farms, and infrastructure.",
+        "For investors and business leaders, the useful question is not only which robot will win. The better question is which companies are building the stack that makes real-world AI deployable. That stack includes edge compute, robot foundation models, perception hardware, machine vision software, simulation, safety, fleet operations, digital twins, and the vertical applications that turn physical-world data into business value.",
+        "This Black Scarab map focuses on companies that could become important picks-and-shovels suppliers for physical AI. Some are obvious. Others are camera, sensor, construction intelligence, safety, or operations companies that may not be casually described as physical AI companies today but are already building parts of the real-world intelligence layer.",
+      ],
+    },
+    {
+      heading: "Why This Is Not Another Robotics List",
+      paragraphs: [
+        "Black Scarab already has a robotics series. That series studies robots as products: Spot, ANYmal, Digit, Figure 03, Atlas, Optimus, Unitree G1, Universal Robots, Amazon Proteus, and da Vinci 5. This article is different. It is about the infrastructure behind those machines and the companies that could matter even when they do not sell a robot body.",
+        "Physical AI systems need much more than a clever model. They need sensors that survive the real world, cameras that understand depth and motion, chips that run inference locally, software that connects hardware to workflows, fleet tools that keep machines online, and safety layers that let autonomous systems operate near people. That is where Black Scarab's catalog and future stack builder become useful.",
+        "The goal is not to predict stock prices or recommend investments. The goal is to create a structured map for people who want to understand where value may form as AI becomes embodied, spatial, and operational.",
+      ],
+    },
+    {
+      heading: "The Physical AI Stack",
+      paragraphs: [
+        "A useful physical AI company map starts with layers, not logos. Each company below becomes easier to evaluate when placed inside a stack layer: intelligence, perception, compute, operations, safety, or vertical deployment.",
+        "The most valuable companies may be the ones that sit at control points. A control point is a layer that many downstream systems depend on: a camera platform developers standardize around, a chip family that becomes common in edge devices, a fleet platform that keeps robots running, or a construction intelligence system that turns site imagery into operational truth.",
+      ],
+      tables: [
+        {
+          title: "Physical AI Stack Layers",
+          columns: ["Layer", "What It Does", "Why It Matters"],
+          rows: [
+            [
+              "Robot intelligence",
+              "Models, policies, planning, and control software that help machines understand tasks and act.",
+              "This is where AI moves from recognition to action.",
+            ],
+            [
+              "Perception hardware",
+              "RGB cameras, depth cameras, event cameras, LiDAR, thermal, and industrial machine vision.",
+              "Physical AI cannot reason about a world it cannot sense.",
+            ],
+            [
+              "Edge compute",
+              "Jetson-class modules, AI accelerators, embedded chips, rugged PCs, and inference runtimes.",
+              "Real-world systems need low-latency local decisions.",
+            ],
+            [
+              "Deployment software",
+              "MLOps, computer vision tooling, robot APIs, fleet monitoring, and device orchestration.",
+              "Pilots become businesses only when systems can be deployed and maintained.",
+            ],
+            [
+              "Safety and trust",
+              "Control, stop systems, cybersecurity, authorization, and operational safety layers.",
+              "Physical AI has to share space with people, assets, and regulated environments.",
+            ],
+            [
+              "Vertical intelligence",
+              "Construction, infrastructure, warehouse, security, inspection, and site intelligence platforms.",
+              "The most durable value often appears when AI attaches to a costly operational workflow.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Top 25 Companies to Watch",
+      paragraphs: [
+        "This is not a final ranking. It is a first Black Scarab watchlist for the infrastructure behind physical AI. The list intentionally mixes private companies, public companies, established hardware vendors, and emerging software platforms because the physical AI stack will not be built by one type of company.",
+      ],
+      tables: [
+        {
+          title: "Physical AI Infrastructure Watchlist",
+          columns: ["Company", "Stack Layer", "Why It Matters"],
+          rows: [
+            ["NVIDIA", "Edge compute, robotics software, simulation, world models", "Jetson, Isaac, Cosmos, GPUs, and developer tooling make NVIDIA one of the central infrastructure companies for physical AI."],
+            ["Physical Intelligence", "Robot foundation models", "The company is building generalist robot policies, which puts it near the AI-to-action layer of embodied intelligence."],
+            ["Skild AI", "General-purpose robot brain", "Skild is one of the companies trying to make robot intelligence reusable across many bodies, tasks, and environments."],
+            ["Viam", "Robot software platform", "Viam matters because it treats robot hardware as software-addressable infrastructure: APIs, data, deployment, and fleet operations."],
+            ["Formant", "Robot fleet operations", "Formant sits in the operations layer, where robotics companies need teleoperation, observability, data, and fleet management."],
+            ["Realtime Robotics", "Motion planning and industrial robot coordination", "Physical AI needs machines that can plan motion around people, equipment, and other robots without brittle manual programming."],
+            ["FORT Robotics", "Safety and control infrastructure", "As robots, vehicles, and autonomous machines spread, safety, access control, and secure command layers become more valuable."],
+            ["Edge Impulse", "Embedded ML and edge AI deployment", "Edge Impulse helps teams build, optimize, and deploy models onto constrained hardware, sensors, MCUs, gateways, and edge devices."],
+            ["Roboflow", "Computer vision data and deployment", "Computer vision remains one of the fastest ways for businesses to turn physical-world data into software workflows."],
+            ["Luxonis", "Spatial AI cameras", "OAK cameras combine cameras, depth, and onboard AI processing, making them useful building blocks for affordable physical AI prototypes."],
+            ["Stereolabs", "Stereo depth and spatial perception", "ZED cameras sit close to the robotics stack because they provide depth, tracking, mapping, and SDK-level spatial intelligence."],
+            ["Prophesee", "Event-based vision", "Event cameras are important for fast motion, low-latency perception, and sparse visual data in dynamic physical environments."],
+            ["IDS Imaging", "Industrial machine vision and event cameras", "IDS shows how traditional machine vision vendors can become part of the physical AI supply chain as factories add smarter perception."],
+            ["Hailo", "Edge AI accelerators", "Hailo's AI processors target efficient inference in cameras, gateways, robots, and edge devices where cloud latency is not acceptable."],
+            ["SiMa.ai", "Edge AI silicon and software", "SiMa.ai is relevant because physical AI deployments need purpose-built chips and software stacks for efficient edge inference."],
+            ["Axelera AI", "Edge inference acceleration", "Axelera targets high-performance, power-efficient AI acceleration for edge systems that need more local intelligence."],
+            ["Ouster", "Digital LiDAR and perception sensors", "LiDAR remains a core physical AI sensor for autonomy, mapping, industrial monitoring, robotics, and smart infrastructure."],
+            ["MicroVision", "Automotive and industrial LiDAR", "MicroVision is a watchlist company for investors tracking how perception sensors move from automotive ADAS into broader machine intelligence."],
+            ["DroneDeploy", "Reality capture and site intelligence", "DroneDeploy connects drones, cameras, maps, and site data, making it a practical physical AI layer for construction, energy, and industrial operations."],
+            ["OpenSpace", "Construction visual intelligence", "OpenSpace turns jobsite imagery into a searchable record of progress, risk, and field reality, which is exactly the kind of data physical AI needs."],
+            ["Buildots", "Construction progress intelligence", "Buildots applies computer vision to construction execution, connecting plans, field progress, and project risk."],
+            ["Doxel", "Construction reality analysis", "Doxel matters because construction is one of the biggest markets where physical-world data can reduce delay, rework, and budget drift."],
+            ["Gecko Robotics", "Infrastructure inspection and asset data", "Gecko combines robotics, sensors, and asset intelligence for industrial infrastructure, which fits the maintenance and inspection side of physical AI."],
+            ["NavVis", "Reality capture and digital twins", "NavVis builds spatial data infrastructure for facilities and sites, giving physical AI systems a richer map of the built world."],
+            ["Voxel AI", "Industrial safety and operations intelligence", "Voxel applies computer vision to warehouses and industrial sites, showing how physical AI can start with safety and operational visibility."],
+          ],
+          note: "The watchlist is designed as an ecosystem map, not a recommendation to buy securities or invest in any company.",
+        },
+      ],
+    },
+    {
+      heading: "What Investors Should Watch",
+      paragraphs: [
+        "The investor mistake is to treat physical AI like a single product category. It is closer to a supply chain. Different companies will win at different layers, and some of the most valuable outcomes may look boring at first: fleet telemetry, camera tooling, LiDAR data, safety control, construction progress tracking, and edge inference software.",
+        "The strongest signals are not always press releases. Watch for deployment volume, repeat customers, hardware attach rate, developer adoption, integration depth, vertical focus, and whether a company becomes difficult to remove once deployed.",
+      ],
+      tables: [
+        {
+          title: "Investor Signals by Layer",
+          columns: ["Layer", "Signal to Watch", "Why It Matters"],
+          rows: [
+            ["Robot brains", "Real customer tasks beyond demos", "A model only matters commercially if it can handle messy physical workflows repeatedly."],
+            ["Perception hardware", "Developer ecosystem and repeat design wins", "Cameras and sensors become valuable when builders standardize around them."],
+            ["Edge compute", "Power efficiency, software support, and availability", "Physical AI systems often fail when hardware is too hot, too expensive, or too hard to deploy."],
+            ["Fleet operations", "Robots or devices managed per customer", "Fleet software can become the daily operating layer for deployed machines."],
+            ["Vertical intelligence", "Measured ROI in delay reduction, uptime, safety, or throughput", "Business buyers need operational outcomes, not AI novelty."],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "How This Connects to Black Scarab",
+      paragraphs: [
+        "This is where the series becomes more than traffic. Black Scarab is building a catalog and, eventually, a stack intelligence layer for physical AI. That means company coverage should always answer a stack question: what layer does this company own, what products or capabilities does it influence, and what would a builder actually use?",
+        "For example, Luxonis, Stereolabs, IDS, Hailo, and NVIDIA connect directly to product categories already appearing in the Black Scarab catalog. Viam, Formant, Edge Impulse, and Roboflow connect to the software/runtime layer that will matter once Black Scarab moves from product pages to stack pages. OpenSpace, Buildots, Doxel, DroneDeploy, Gecko, and NavVis show which vertical workflows could eventually justify complete physical AI kits.",
+        "The real value of this article is that it teaches readers to think in systems. A physical AI stack is not one camera, one robot, or one GPU. It is a set of coordinated choices across sensing, compute, software, safety, integration, and business workflow.",
+      ],
+    },
+    {
+      heading: "First Deep Dives to Prioritize",
+      paragraphs: [
+        "The first supporting articles should avoid repeating the robotics series. The strongest early deep dives are the companies that help Black Scarab explain the stack: perception, deployment software, edge compute, and vertical intelligence.",
+      ],
+      tables: [
+        {
+          title: "Recommended Deep Dive Order",
+          columns: ["Order", "Company", "Reason"],
+          rows: [
+            ["1", "NVIDIA", "Sets the physical AI vocabulary through Jetson, Isaac, GPUs, simulation, and Cosmos."],
+            ["2", "Luxonis", "Connects directly to affordable spatial AI cameras already in the Black Scarab catalog."],
+            ["3", "Stereolabs", "Explains stereo depth, mapping, robotics perception, and the ZED camera ecosystem."],
+            ["4", "Edge Impulse", "Shows how edge AI models move from data collection to deployment on real devices."],
+            ["5", "Viam", "Explains robot software infrastructure without centering the article on a robot OEM."],
+            ["6", "Hailo", "Useful for explaining edge AI acceleration beyond GPUs."],
+            ["7", "Prophesee", "Gives Black Scarab a strong event-camera and high-speed perception article."],
+            ["8", "Gecko Robotics", "Connects robotics, infrastructure inspection, asset health, and industrial ROI."],
+            ["9", "OpenSpace", "Brings construction intelligence into the physical AI conversation."],
+            ["10", "FORT Robotics", "Adds the safety and trust layer, which will matter as physical AI moves near people."],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Conclusion",
+      paragraphs: [
+        "The companies leading physical AI will not all look like robot companies. Some will make cameras. Some will make chips. Some will manage fleets. Some will turn construction sites, warehouses, factories, and infrastructure into structured data. Some will become invisible software layers that make robots and edge devices easier to deploy.",
+        "That is why this watchlist matters for Black Scarab. It turns physical AI from a buzzword into a stack. Once readers understand the stack, product pages, reference builds, and future Black Scarab recommendations become easier to trust.",
+        "The next phase should be company-by-company deep dives that keep the same discipline: less hype, more stack relevance, more deployment logic, and a clear view of what each company teaches builders, operators, and investors about the real-world AI economy.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This article was compiled using official company materials and product pages from NVIDIA, Physical Intelligence, Skild AI, Viam, Formant, Realtime Robotics, FORT Robotics, Edge Impulse, Roboflow, Luxonis, Stereolabs, Prophesee, IDS Imaging, Hailo, SiMa.ai, Axelera AI, Ouster, MicroVision, DroneDeploy, OpenSpace, Buildots, Doxel, Gecko Robotics, NavVis, and Voxel AI, with emphasis on current product positioning and stack relevance as of June 12, 2026.",
+      ],
+    },
+  ],
+  sources: [
+    "NVIDIA Cosmos, Isaac, and Jetson official materials",
+    "Physical Intelligence official company materials",
+    "Skild AI official company materials",
+    "Viam official robotics platform materials",
+    "Formant official robot fleet management materials",
+    "Realtime Robotics official motion planning materials",
+    "FORT Robotics official safety and control materials",
+    "Edge Impulse official edge AI platform materials",
+    "Roboflow official computer vision platform materials",
+    "Luxonis official OAK and DepthAI materials",
+    "Stereolabs official ZED camera materials",
+    "Prophesee official event-based vision materials",
+    "IDS Imaging official uEye and event-based camera materials",
+    "Hailo official edge AI processor materials",
+    "SiMa.ai official edge AI platform materials",
+    "Axelera AI official edge inference materials",
+    "Ouster official LiDAR materials",
+    "MicroVision official LiDAR materials",
+    "DroneDeploy official reality capture materials",
+    "OpenSpace official construction intelligence materials",
+    "Buildots official construction intelligence materials",
+    "Doxel official construction analytics materials",
+    "Gecko Robotics official infrastructure intelligence materials",
+    "NavVis official reality capture and digital twin materials",
+    "Voxel AI official industrial safety materials",
+  ],
+  sourceLinks: [
+    { label: "NVIDIA Cosmos", url: "https://www.nvidia.com/en-us/ai/cosmos/" },
+    { label: "NVIDIA Jetson", url: "https://developer.nvidia.com/embedded-computing" },
+    { label: "Physical Intelligence", url: "https://www.physicalintelligence.company/" },
+    { label: "Skild AI", url: "https://www.skild.ai/" },
+    { label: "Viam", url: "https://www.viam.com/" },
+    { label: "Formant", url: "https://formant.io/" },
+    { label: "Realtime Robotics", url: "https://rtr.ai/" },
+    { label: "FORT Robotics", url: "https://www.fortrobotics.com/" },
+    { label: "Edge Impulse", url: "https://www.edgeimpulse.com/" },
+    { label: "Roboflow", url: "https://roboflow.com/" },
+    { label: "Luxonis", url: "https://www.luxonis.com/" },
+    { label: "Stereolabs", url: "https://www.stereolabs.com/" },
+    { label: "Prophesee", url: "https://www.prophesee.ai/" },
+    { label: "IDS Imaging", url: "https://www.ids-imaging.us/" },
+    { label: "Hailo", url: "https://hailo.ai/" },
+    { label: "SiMa.ai", url: "https://sima.ai/" },
+    { label: "Axelera AI", url: "https://www.axelera.ai/" },
+    { label: "Ouster", url: "https://ouster.com/" },
+    { label: "MicroVision", url: "https://microvision.com/" },
+    { label: "DroneDeploy", url: "https://www.dronedeploy.com/" },
+    { label: "OpenSpace", url: "https://www.openspace.ai/" },
+    { label: "Buildots", url: "https://buildots.com/" },
+    { label: "Doxel", url: "https://www.doxel.ai/" },
+    { label: "Gecko Robotics", url: "https://www.geckorobotics.com/" },
+    { label: "NavVis", url: "https://www.navvis.com/" },
+    { label: "Voxel AI", url: "https://www.voxelai.com/" },
+  ],
+});
+
 const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
   slug: "top-10-robots-edge-ai-automation-humanoid-robotics",
   title:
@@ -5507,6 +5757,7 @@ const intuitiveDaVinci5DeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  physicalAiInfrastructureCompaniesGuide(),
   intuitiveDaVinci5DeepDive(),
   amazonProteusDeepDive(),
   universalRobotsUrSeriesDeepDive(),
