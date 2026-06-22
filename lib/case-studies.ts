@@ -1962,6 +1962,362 @@ const prometheusPhysicalAiDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const physicalIntelligenceDeepDive = (): CaseStudyArticle => ({
+  slug: "physical-intelligence-generalist-robot-policy-guide",
+  title:
+    "Physical Intelligence Deep Dive: pi 0.7, Generalist Robot Policies, and the Robot Intelligence Layer",
+  summary:
+    "A business and investor deep dive on Physical Intelligence, the robot foundation model company building generalist vision-language-action policies that could become a reusable intelligence layer across robot arms, mobile manipulators, humanoids, and future physical AI systems.",
+  publishedLabel: "Physical AI Series · Published June 22, 2026",
+  publishedDate: "2026-06-22",
+  typeLabel: "Physical AI Series",
+  formatLabel: "Company deep dive",
+  industry: "Cross-Industry",
+  image: "/article-images/physical-intelligence-generalist-robot-policy-guide.png",
+  imageAlt:
+    "Robot foundation model scene with a humanoid, industrial arm, quadruped, mobile robot, and connected intelligence layer.",
+  seoDescription:
+    "A 2026 Physical Intelligence deep dive covering pi0, pi0.5, pi 0.7, vision-language-action robot policies, cross-embodiment learning, robot data, generalization, steerability, dexterity, deployment risks, and the future robot intelligence layer.",
+  tags: [
+    "Physical Intelligence",
+    "physical AI",
+    "robot intelligence",
+    "generalist robot policy",
+    "vision-language-action",
+    "VLA",
+    "pi0",
+    "pi 0.7",
+    "robot foundation models",
+    "embodied AI",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Physical Intelligence is one of the purest bets on robot intelligence because it is not trying to win the market by selling a single robot body. The company is trying to build the model layer that makes many robot bodies more useful. If NVIDIA is the compute and simulation gravity center of physical AI, and Prometheus is the engineering-model bet upstream of manufacturing, Physical Intelligence sits closer to the moment when a machine has to perceive, decide, and move.",
+        "That distinction matters. Robotics has never lacked interesting hardware. It has lacked reusable intelligence. A robot arm, a mobile base, a humanoid, a quadruped, and a bimanual workstation can all require different control stacks, training data, calibration rituals, safety assumptions, and failure-recovery playbooks. The dream behind Physical Intelligence is that a broad robot policy can absorb experience across those differences and make new robot deployments feel less like bespoke automation.",
+        "The company describes its mission as bringing general-purpose AI into the physical world and developing learning algorithms for a model that can control any robot to do any task. That is the right north star and also the dangerous part of the thesis. Physical behavior is not language. A model can write a plausible sentence without touching anything. A robot has to deal with friction, lighting, latency, object variation, compliance, collision risk, cheap plastic bins, reflective parts, wrinkled bags, overloaded grippers, and workstations that changed overnight.",
+        "Physical Intelligence should therefore be judged less by whether a demo looks magical and more by whether the same model gets deeper, more repeatable, more steerable, and more transferable over time. The latest public signal is pi 0.7, released in April 2026, which the company frames as a steerable robotic foundation model with a step-change in generalization. That makes Physical Intelligence one of the clearest companies to watch if physical AI becomes a platform market rather than a collection of custom robot projects.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Physical Intelligence is building generalist robot policies: software models that connect vision, language, and action so robots can follow instructions and perform physical tasks. Its early work began with pi0, a first generalist policy trained across multiple robots and dexterous tasks. The company then moved toward broader open-world generalization with pi0.5 and, most recently, pi 0.7, a steerable model designed to generalize across robot types, scenes, skills, and task instructions.",
+        "The investment thesis is that robot intelligence could become a horizontal layer. If a model can transfer across embodiments and tasks, robot developers may spend less time hand-engineering every behavior and more time adapting a shared capability layer to specific machines and workflows. That would make robotics economics look less like custom automation and more like a platform market.",
+        "The risk is that physical generalization is brutally hard. Every deployment introduces hardware-specific dynamics, sensor differences, end-effector constraints, latency budgets, safety requirements, and environmental messiness. A model that generalizes in a research setting may still require heavy adaptation in a factory, warehouse, hospital, lab, home, or construction site. The question is not whether Physical Intelligence can produce impressive videos. It is whether its models can make real deployments cheaper, faster, and more reliable.",
+      ],
+      tables: [
+        {
+          title: "Physical Intelligence at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "A robot intelligence company building general-purpose AI models for controlling physical robots.",
+            ],
+            [
+              "What layer does it target?",
+              "The robot policy and control layer: perception, language understanding, action generation, dexterity, and adaptation.",
+            ],
+            [
+              "Why does it matter?",
+              "Robotics has been fragmented by hardware and use case. Generalist policies could reduce the need to program every robot behavior from scratch.",
+            ],
+            [
+              "What is the latest public anchor?",
+              "pi 0.7, published April 16, 2026, a steerable generalist model focused on compositional generalization, dexterity, and cross-embodiment transfer.",
+            ],
+            [
+              "What is the core risk?",
+              "Real-world robot deployment may remain too hardware-specific, safety-sensitive, and data-hungry for a broad model to become a default platform quickly.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Why Robot Intelligence Is the Bottleneck",
+      paragraphs: [
+        "Industrial automation has been strong where the world can be controlled. A robot repeats the same weld. A gantry moves the same part. A conveyor presents objects in a predictable orientation. A cell is fenced, lit, and measured. In those settings, automation can be powerful because variability is engineered out of the environment.",
+        "Physical AI becomes interesting when variability comes back in. A general warehouse bin does not present the same object twice. A kitchen has drawers, clutter, tools, reflective surfaces, deformable packaging, and a thousand ways to fail. A hospital has people, carts, cables, privacy constraints, and safety requirements. A construction site changes by the hour. A factory line may be organized, but product mix, lighting, wear, supplier changes, and process drift still create long tails.",
+        "The old answer to variability was custom engineering. Write a new behavior. Add a sensor. Change the fixture. Tune the gripper. Collect more data. Hire an integrator. That can work, but it does not scale the way software platforms scale. Physical Intelligence is trying to attack that economic problem by turning robot behavior into something closer to learned capability.",
+        "If the company succeeds, the most important product may not be a single application. It may be a model that makes many applications less painful to build. That is why Physical Intelligence belongs near the top of a physical AI infrastructure map. It is not just another robotics company. It is a candidate for the reusable intelligence layer beneath many future robots.",
+      ],
+    },
+    {
+      heading: "From pi0 to pi 0.7",
+      paragraphs: [
+        "The cleanest way to understand Physical Intelligence is to follow the progression of its model work. pi0 was the first public anchor: a generalist policy that combined broad robot interaction data, vision-language pretraining, and dexterous manipulation tasks. The point was not that pi0 solved robotics. The point was that robot foundation models could start to inherit semantic understanding from internet-scale vision-language models while learning action from embodied robot data.",
+        "pi0.5 moved the story toward open-world generalization. Instead of only performing in familiar evaluation settings, the company focused on robots operating in new homes and messy environments where objects, layouts, and task context change. That is the right axis. In robotics, narrow dexterity is impressive, but generalization determines whether the system can survive outside a lab.",
+        "pi 0.7 is the more important current signal. Physical Intelligence describes it as a steerable generalist model that can perform dexterous tasks across robots, scenes, and skills. The company emphasizes diverse multimodal prompts: language, metadata, control modality labels, and visual subgoals. In plain English, the model is not only being told what to do. It is being conditioned on how the task should be done.",
+        "That matters because robot data is messy. Different operators perform the same task differently. Different robots use different controls. Some data is excellent, some is mediocre, and some comes from autonomous attempts that failed or only partially worked. A model that can use metadata, strategy hints, and visual subgoals has a better shot at learning from heterogeneous data without flattening all behavior into an average that works nowhere.",
+      ],
+      tables: [
+        {
+          title: "Physical Intelligence Model Progression",
+          columns: ["Milestone", "What It Signals", "What to Verify"],
+          rows: [
+            [
+              "pi0",
+              "A first generalist robot policy combining multi-robot data, vision-language pretraining, and action generation.",
+              "Whether broad pretraining can consistently reduce the data needed for new robot tasks.",
+            ],
+            [
+              "pi0.5",
+              "A push toward open-world generalization in new environments, especially messy household-style settings.",
+              "Whether environment generalization holds when objects, lighting, layouts, and task context change.",
+            ],
+            [
+              "pi 0.7",
+              "A steerable generalist model focused on compositional generalization, dexterity, diverse prompting, and cross-embodiment transfer.",
+              "Whether the same model can keep specialist-level performance while moving across robots, scenes, and task variations.",
+            ],
+            [
+              "Future releases",
+              "The likely next frontier is longer-horizon planning, self-improvement, deployment learning, and safer failure recovery.",
+              "Whether the model becomes easier for non-research customers to deploy in real workflows.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Control Layer Thesis",
+      paragraphs: [
+        "Physical Intelligence is important because it points toward a control layer that could sit above individual robot bodies. That layer would not replace low-level hardware control, safety systems, kinematics, or industrial integration. It would sit where task intent becomes embodied action: see the scene, understand the instruction, decide the next step, move the robot, observe the result, and adapt.",
+        "This is a different kind of software from classical robot programming. Traditional automation asks engineers to define the behavior carefully. A generalist policy tries to learn behaviors from broad experience and then adapt them to new contexts. The difference is subtle until you think about scale. If every robot deployment needs custom behavior design, robotics remains labor-intensive. If a broad policy can be specialized with modest data, robotics starts to compound.",
+        "The platform version of the thesis is that robot OEMs, integrators, and enterprise operators eventually want a model layer that travels across hardware. A humanoid company may build its own stack. A warehouse robot company may build vertical software. But many robot builders will not want to become foundation-model companies. They may want the equivalent of a robot intelligence provider: a model that can be adapted to their embodiment and workflow.",
+        "That is the opportunity Physical Intelligence is chasing. It does not need to own every robot body. It needs to become useful enough that many robot bodies become more capable with its model layer than without it.",
+      ],
+    },
+    {
+      heading: "Why Cross-Embodiment Transfer Is So Hard",
+      paragraphs: [
+        "Cross-embodiment transfer is the phrase that sounds simple and then becomes painful. A human can use different tools because the brain and body have a lifetime of physical intuition. Robots do not get that for free. A two-arm industrial setup, a small tabletop manipulator, a mobile base with one arm, and a future humanoid have different geometry, reach, inertia, sensors, grippers, control frequencies, and failure modes.",
+        "A folding behavior learned on one bimanual system may not transfer cleanly to another because the arms are heavier, the workspace is different, the gripper is less precise, or the cloth catches in a new way. A pick-and-place behavior may work on rigid objects and fail on bags. A mobile manipulation task may work in one room and fail when a cabinet handle is slightly different. The robot has to ground abstract intent in very specific physical affordances.",
+        "This is why Physical Intelligence's pi 0.7 work matters. The company highlights cross-embodiment transfer as one of the model's important capabilities. The investor question is how far that transfer goes. Is it mostly within related manipulation systems, or can it eventually span arms, mobile manipulators, humanoids, quadrupeds with manipulators, and specialized industrial hardware?",
+        "The answer will define the size of the opportunity. If transfer is shallow, Physical Intelligence may still build valuable tools for specific robotics classes. If transfer is deep, the company becomes more like a foundation-model provider for physical machines.",
+      ],
+    },
+    {
+      heading: "Steerability May Be the Practical Breakthrough",
+      paragraphs: [
+        "The word generalist can be misleading. A useful general robot model does not only need to know many tasks. It needs to be steerable. Operators need to specify speed, care, strategy, constraints, object preferences, safety boundaries, and recovery behavior. In real deployments, the difference between doing the task and doing the task the right way is often the difference between useful automation and a service ticket.",
+        "pi 0.7 is interesting because Physical Intelligence is explicitly pushing on steerability. The model uses richer context than a plain text instruction, including metadata, control modality labels, and visual subgoals. That suggests a future where robot policies are guided by a mixture of natural language, workflow rules, examples, subgoals, and learned operational preferences.",
+        "This matters commercially. A factory does not only ask a robot to move a part. It asks the robot to move the part without scratching it, without blocking a human path, without slowing the line, without violating a safety envelope, and without making a mess if the part is slightly misaligned. A home robot does not only clean the kitchen. It has to understand what belongs where, what is fragile, what is trash, and when to ask for help.",
+        "The better Physical Intelligence gets at steerability, the easier it becomes to imagine deployment by operators instead of researchers. The model does not need to be perfect. It needs to let humans guide behavior in ways that reduce custom engineering.",
+      ],
+    },
+    {
+      heading: "The Data Flywheel",
+      paragraphs: [
+        "The most important asset in robot intelligence may not be the model architecture. It may be the data flywheel. Language models had the internet. Robot models do not have an equivalent public ocean of action data. Useful robot data is expensive, slow, physical, safety-constrained, embodiment-specific, and often proprietary.",
+        "Physical Intelligence's early work points toward a broad mixture: open-source robot datasets, company-collected dexterous robot data, human videos, autonomous episodes, multimodal prompts, and partner data. The strategic question is whether that mixture compounds. Does every new robot, task, partner, and deployment improve the model for the next one? Or does every embodiment create a new local hill that must be climbed almost from scratch?",
+        "A strong flywheel would have several layers. More robot partners create more diverse data. More diverse data improves generalization. Better generalization reduces the data needed for new deployments. Easier deployments create more usage and more feedback. More feedback improves the model again. That is the platform dream.",
+        "The weak version is also possible. Data stays fragmented by robot type, task, customer, sensor, and environment. Safety restrictions limit what can be collected. Customers hesitate to share operational data. Models overfit to polished demos. Every new deployment still needs a research team. If that happens, robot foundation models may remain impressive but commercially narrow.",
+      ],
+      tables: [
+        {
+          title: "The Robot Data Flywheel",
+          columns: ["Flywheel Layer", "Why It Matters", "Failure Mode"],
+          rows: [
+            [
+              "Multi-robot data",
+              "Teaches the model that the same task can be performed by different bodies and control systems.",
+              "The model learns hardware-specific shortcuts instead of transferable physical concepts.",
+            ],
+            [
+              "Task diversity",
+              "Exposes the model to grasping, folding, wiping, opening, placing, sorting, routing, and recovery behaviors.",
+              "The model looks broad but fails on the long tail of real objects and edge cases.",
+            ],
+            [
+              "Human and language guidance",
+              "Adds semantic structure, strategy, and step-by-step correction beyond raw robot motion.",
+              "The model follows instructions loosely but cannot ground them reliably in action.",
+            ],
+            [
+              "Autonomous deployment data",
+              "Turns real attempts, partial failures, and recoveries into training signal.",
+              "Bad autonomous data teaches low-quality behavior unless it is labeled and conditioned correctly.",
+            ],
+            [
+              "Partner feedback",
+              "Connects model capability to real commercial workflows.",
+              "Customers keep data locked away, preventing the model from improving across deployments.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Demos Are Not Deployments",
+      paragraphs: [
+        "Physical Intelligence is good at showing why the field is exciting. The demos matter because robotics is visual. People need to see cloth folded, counters wiped, objects sorted, tools used, boxes assembled, and appliances operated before they believe a robot policy is doing anything meaningful. But a demo is only the beginning of diligence.",
+        "The useful question is task depth. Can the model perform the same task across hundreds or thousands of trials? Can it recover when a grasp slips? Can it recognize when it has made the scene worse? Can it ask for help? Can it explain uncertainty? Can it run inside a safety envelope? Can it work with cheaper sensors and imperfect hardware? Can it keep performance when lighting changes, objects are unfamiliar, or a human interrupts?",
+        "This distinction is especially important for investors. Breadth of demos creates attention. Depth of repeatable tasks creates revenue. A model that can do ten tasks one time each is a research milestone. A model that can do one messy workflow reliably enough to save labor is a business.",
+        "Physical Intelligence should be watched through that lens. The company's public progress on compositional generalization and cross-embodiment transfer is impressive, but the commercial breakthrough will be measured by repeatable work in real environments with tolerable support costs.",
+      ],
+    },
+    {
+      heading: "Where It Could First Become Commercial",
+      paragraphs: [
+        "The first valuable markets may not be the most futuristic ones. General-purpose home robots are a huge idea, but homes are chaotic, safety-sensitive, price-sensitive, and hard to support. Industrial and enterprise environments may offer better early economics because the tasks are valuable, the buyer has a budget, and the environment can be partially structured without becoming fully scripted.",
+        "Warehouse piece handling, lab automation, food preparation, retail back-of-house tasks, light manufacturing, kitting, inspection support, and facility operations all have workflows where dexterity and generalization matter. The model does not have to be human-level across everything. It has to reduce the number of edge cases that require manual programming or human intervention.",
+        "A likely path is partnership rather than direct robot manufacturing. Physical Intelligence could work with robot OEMs, fleet operators, industrial customers, and system integrators. The company may provide models, fine-tuning workflows, data infrastructure, simulation links, deployment support, or runtime components that make partner robots more capable.",
+        "The best early commercial wedge would be a task family that is hard enough to need learned intelligence but bounded enough to measure. Too easy, and classical automation wins. Too broad, and the product becomes a research project. The sweet spot is messy but repeatable work where incremental generalization has immediate operational value.",
+      ],
+      tables: [
+        {
+          title: "Possible Early Commercial Wedges",
+          columns: ["Wedge", "Why It Fits", "Hard Part"],
+          rows: [
+            [
+              "Warehouse item handling",
+              "High labor need, varied objects, clear productivity metrics, and strong buyer budgets.",
+              "Long-tail objects, packaging deformation, throughput, and integration with existing automation.",
+            ],
+            [
+              "Lab and light industrial automation",
+              "Structured workspaces with enough variability to benefit from learned policies.",
+              "Precision, reliability, safety, and process validation.",
+            ],
+            [
+              "Retail back-of-house",
+              "Repetitive restocking, sorting, and cleanup tasks with large multi-site potential.",
+              "Cost sensitivity, messy stores, and human interaction.",
+            ],
+            [
+              "Food and hospitality prep",
+              "Visible labor pain and rich manipulation tasks.",
+              "Hygiene, speed, object variation, and support burden.",
+            ],
+            [
+              "Home robotics",
+              "Massive long-term market if generalization becomes strong enough.",
+              "Unstructured environments, low tolerance for errors, and difficult unit economics.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Competitive Landscape",
+      paragraphs: [
+        "Physical Intelligence is not alone. NVIDIA is building robotics infrastructure through Isaac, Omniverse, Cosmos, Jetson, and GR00T. Skild AI is also pursuing general-purpose robot intelligence. Figure is building a vertically integrated humanoid stack. Tesla is trying to connect AI, manufacturing, robotics, and embodied deployment through Optimus. Google DeepMind's robotics work remains an important research reference point. Many robot OEMs will also build their own autonomy layers because control is too strategic to outsource casually.",
+        "The question is not simply who has the best demo. The question is which company gets the best learning loop. NVIDIA may win by becoming the infrastructure layer everyone uses. A humanoid company may win by tightly coupling model and body. A vertical robot company may win by owning a specific workflow. Physical Intelligence's possible advantage is horizontal intelligence: a model layer that becomes better because it sees many embodiments and tasks.",
+        "That horizontal strategy is powerful if customers trust it. It is fragile if customers view robot intelligence as too close to their product moat. A robot company may want the benefits of a generalist policy without giving away data, differentiation, or control. Physical Intelligence will need a business model that makes the model better while making partners feel protected.",
+        "This is where robotics differs from software APIs. A customer is not only plugging in a feature. It may be giving a third-party model influence over machines that move, manipulate, and create safety exposure. Trust, governance, deployment architecture, and failure accountability will matter as much as benchmark performance.",
+      ],
+    },
+    {
+      heading: "Business Model Possibilities",
+      paragraphs: [
+        "Physical Intelligence has not publicly laid out a mature commercial model, but several paths are plausible. It could license robot foundation models to OEMs. It could provide enterprise deployments for specific task families. It could build a hosted or private fine-tuning platform for robot data. It could sell runtime components, data pipelines, evaluation tools, and support around model adaptation. It could also form deep strategic partnerships where the model is co-developed with major hardware or industrial players.",
+        "The pure model-licensing path is attractive because it scales. The challenge is that robotics support does not feel like ordinary software support. A model failure can be caused by a camera angle, a gripper, calibration drift, task ambiguity, network latency, mechanical wear, lighting, or a bad training example. Customers will need help figuring out whether the model, hardware, data, or workflow is the real problem.",
+        "That suggests the early business may look more services-heavy than the long-term dream. The company may need to embed with partners, help design data collection, support teleoperation workflows, validate safety envelopes, and tune models to specific robot classes. Over time, the product can become more standardized if the underlying model generalizes.",
+        "The strongest long-term model would resemble an intelligence platform with deployment gravity. Robot partners bring data and hardware access. Physical Intelligence improves the model. Improved models help partners ship better robots. Better robots generate more data. If that loop works, revenue can come from software licenses, usage-based model access, deployment support, enterprise contracts, and potentially revenue share with robot fleets.",
+      ],
+    },
+    {
+      heading: "Investor Case",
+      paragraphs: [
+        "The bull case is that robot intelligence becomes a scarce layer. Hardware improves, sensors get cheaper, edge compute becomes more capable, and robot bodies proliferate. But the difficult question remains: what lets those machines do useful work without endless custom programming? Physical Intelligence is attacking that bottleneck directly.",
+        "If generalist policies work, the company could participate across many robotics categories without manufacturing every machine. That is a cleaner margin structure than hardware and a larger surface area than a single vertical robot business. The company could become a supplier to robot makers, industrial operators, and future physical AI platforms.",
+        "There is also an ecosystem timing argument. Foundation models changed expectations in software. Operators will increasingly ask why robots cannot be instructed, adapted, and improved more like AI systems. Physical Intelligence is positioned around that expectation before the commercial market is fully mature.",
+        "The bear case is equally serious. Robotics may remain too fragmented. Data may be too scarce. Safety and reliability may slow deployment. Hardware companies may build their own models. NVIDIA and other platform companies may absorb the model layer. Open-source robot models may compress pricing. Customers may love demos but refuse to pay until success rates are boringly high.",
+      ],
+      tables: [
+        {
+          title: "Physical Intelligence: Bull Case vs. Bear Case",
+          columns: ["View", "Argument", "Signal to Watch"],
+          rows: [
+            [
+              "Bull case",
+              "Generalist robot policies become the reusable intelligence layer across many robot bodies.",
+              "The same model performs well across arms, mobile manipulators, and future humanoid-class systems.",
+            ],
+            [
+              "Bull case",
+              "The company builds a data flywheel through partners, deployments, human guidance, and autonomous episodes.",
+              "Every new robot and task family improves the broader model instead of creating one-off customization.",
+            ],
+            [
+              "Bear case",
+              "Physical behavior remains too hardware-specific for broad transfer to reduce deployment cost meaningfully.",
+              "Customers still need heavy on-site engineering for each robot and workflow.",
+            ],
+            [
+              "Bear case",
+              "Robot OEMs, NVIDIA, Skild, Figure, Tesla, or open models capture the intelligence layer first.",
+              "Physical Intelligence is forced into narrow partnerships or task-specific tooling.",
+            ],
+            [
+              "Execution risk",
+              "Safety, reliability, and support costs prevent research performance from becoming commercial margin.",
+              "Demos expand faster than repeatable customer deployments.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What to Watch Next",
+      paragraphs: [
+        "First, watch the number and variety of embodiments. The more robot types Physical Intelligence can support without starting over, the stronger the platform thesis becomes. A model that works across related arms is useful. A model that transfers across arms, mobile manipulators, humanoids, and specialized industrial systems is much more valuable.",
+        "Second, watch task repeatability. The company should be judged by the depth of successful trials, recovery behavior, and performance under realistic variation. One beautiful video is marketing. Repeated performance under changed conditions is product evidence.",
+        "Third, watch steerability. The most useful robot model will not be the one that only accepts plain commands. It will accept strategy, constraints, quality targets, safety rules, visual subgoals, and human correction. pi 0.7 points in that direction, so future releases should be evaluated by how controllable the model becomes.",
+        "Fourth, watch commercial partnerships. Physical Intelligence needs access to real robot data and real deployment loops. Partners with fleets, factories, warehouses, labs, or robot bodies can tell us whether the model is moving from frontier research toward infrastructure.",
+        "Fifth, watch the support burden. A robot model that works but requires a research team beside every customer is not yet a platform. The strongest signal would be non-research operators adapting the system to useful workflows with predictable effort.",
+      ],
+    },
+    {
+      heading: "The Bottom Line",
+      paragraphs: [
+        "Physical Intelligence matters because it is trying to make robot capability reusable. That is the missing economic ingredient in much of robotics. Hardware can be built, but every new robot still needs intelligence that understands the world well enough to act inside it.",
+        "pi 0.7 makes the company more important to watch in 2026 because it moves the story from a first generalist policy toward a steerable, cross-embodiment model with early signs of compositional generalization. That does not mean the hard part is solved. It means the company is pushing on the right hard parts: data diversity, transfer, dexterity, instruction following, and the ability to adapt behavior without rebuilding the stack.",
+        "If Physical Intelligence works, the output is not just a smarter demo robot. It is a software layer that could make many future robots easier to train, easier to deploy, and more economically useful. If it fails, the reason will probably not be lack of ambition. It will be that the physical world refused to compress into a general policy as neatly as investors hoped.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled from Physical Intelligence's official site and model posts on pi0, pi0.5, and pi 0.7, plus current reporting on the company's funding and early positioning. Physical Intelligence is still an early private company, so claims about commercialization, customer adoption, pricing, and deployment architecture should be treated as analysis rather than confirmed product documentation.",
+      ],
+    },
+  ],
+  sources: [
+    "Physical Intelligence official company site and mission statement",
+    "Physical Intelligence pi0 generalist policy post",
+    "Physical Intelligence pi0.5 open-world generalization post",
+    "Physical Intelligence pi 0.7 steerable model post",
+    "Business Insider reporting on Physical Intelligence funding and early positioning",
+    "Black Scarab analysis of robot foundation models, cross-embodiment transfer, robot data, and physical AI commercialization",
+  ],
+  sourceLinks: [
+    {
+      label: "Physical Intelligence official site",
+      url: "https://www.pi.website/",
+    },
+    {
+      label: "Physical Intelligence pi0 generalist policy",
+      url: "https://www.pi.website/blog/pi0",
+    },
+    {
+      label: "Physical Intelligence pi0.5 open-world generalization",
+      url: "https://www.pi.website/blog/pi05",
+    },
+    {
+      label: "Physical Intelligence pi 0.7 steerable model",
+      url: "https://www.pi.website/blog/pi07",
+    },
+    {
+      label: "Business Insider on Physical Intelligence funding",
+      url: "https://www.businessinsider.com/jeff-bezos-invests-ai-robots-startup-physical-intelligence-2024-11",
+    },
+  ],
+});
+
 const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
   slug: "top-15-physical-ai-infrastructure-companies",
   title: "Top 15 Physical AI Infrastructure Companies to Watch in 2026",
@@ -6365,6 +6721,7 @@ const intuitiveDaVinci5DeepDive = (): CaseStudyArticle => ({
 export const caseStudies: CaseStudyArticle[] = [
   nvidiaPhysicalAiDeepDive(),
   prometheusPhysicalAiDeepDive(),
+  physicalIntelligenceDeepDive(),
   physicalAiInfrastructureCompaniesGuide(),
   intuitiveDaVinci5DeepDive(),
   amazonProteusDeepDive(),
