@@ -2318,6 +2318,386 @@ const physicalIntelligenceDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const skildAiDeepDive = (): CaseStudyArticle => ({
+  slug: "skild-ai-general-purpose-robot-brain-guide",
+  title:
+    "Skild AI Deep Dive: General-Purpose Robot Brain, Omni-Bodied Intelligence, and Physical AI Deployment",
+  summary:
+    "A business and investor deep dive on Skild AI, the physical AI company building an omni-bodied robot brain for warehouses, factories, mobile manipulators, humanoids, quadrupeds, and future general-purpose robotics.",
+  publishedLabel: "Physical AI Series · Published June 24, 2026",
+  publishedDate: "2026-06-24",
+  typeLabel: "Physical AI Series",
+  formatLabel: "Company deep dive",
+  industry: "Cross-Industry",
+  image: "/article-images/skild-ai-general-purpose-robot-brain-guide.png",
+  imageAlt:
+    "General-purpose robot brain connecting a humanoid, warehouse AMR, industrial robot arm, and quadruped robot across physical AI environments.",
+  seoDescription:
+    "A 2026 Skild AI deep dive covering the Skild Brain, omni-bodied robot intelligence, $1.4B Series C funding, ABB and Universal Robots partnerships, NVIDIA and Foxconn manufacturing, Zebra and Fetch warehouse robotics, robot data flywheels, and physical AI deployment risks.",
+  tags: [
+    "Skild AI",
+    "physical AI",
+    "robotics foundation models",
+    "Skild Brain",
+    "omni-bodied intelligence",
+    "robot intelligence",
+    "warehouse robotics",
+    "industrial robotics",
+    "NVIDIA",
+    "AI investing",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Skild AI sits in the same strategic neighborhood as Physical Intelligence, but its center of gravity is different. Physical Intelligence is easiest to read as a frontier robot-policy company. Skild is making a more explicit platform claim: a general-purpose, omni-bodied robot brain that can attach to many machines, many task families, and many real-world environments.",
+        "That phrase can sound like startup poetry until it is connected to the commercial problem. Robot hardware is unlikely to consolidate into one winner. There will be humanoids, industrial arms, cobots, AMRs, quadrupeds, warehouse systems, inspection robots, mobile manipulators, medical robots, construction machines, and forms we do not have clean categories for yet. If the hardware layer stays diverse, a reusable intelligence layer becomes more valuable, not less.",
+        "Skild matters because it is trying to build that layer while also forcing itself toward deployment. The company is not only writing about an abstract robot brain. In 2026, it announced a $1.4 billion Series C, partnerships with ABB Robotics, Universal Robots, MiR, NVIDIA, and Foxconn, and an acquisition of Zebra Technologies' robotics division, formerly Fetch Robotics. Those moves make the thesis easier to judge. Skild is now being pulled from research narrative into the harder world of factory lines, warehouse workflows, OEM integration, and customer economics.",
+        "That is where the real test begins. A warehouse does not buy generality as an abstract concept. It buys better unload time, pick rate, uptime, labor coverage, safety, and throughput. A factory buys cycle time, quality, reliability, and fewer engineering hours. Skild AI will be worth watching because the promise is broad, but the proof has to appear in narrow, measurable places first.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Skild AI is building the Skild Brain, a robotics foundation model the company describes as an omni-bodied brain for controlling different robot types across different tasks. Its public positioning is unusually direct: any robot, any task, one brain. The company argues that robot intelligence should not be locked to one embodiment or one workflow.",
+        "The strongest version of the Skild thesis is that robot intelligence becomes more valuable than many robot bodies because it can attach to many of them. If Skild can make arms, mobile robots, quadrupeds, humanoids, and hybrid machines easier to deploy, it can participate across robotics markets without manufacturing every machine itself.",
+        "The 2026 signals are important. Skild announced a $1.4 billion Series C led by SoftBank at a valuation above $14 billion. It also announced partnerships with ABB Robotics, Universal Robots, MiR, NVIDIA, and Foxconn, plus the acquisition of Zebra's robotics division to push into warehouses. Those are not proof of durable product-market fit, but they are proof that the company is trying to connect the foundation-model story to real deployments.",
+      ],
+      tables: [
+        {
+          title: "Skild AI at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "A physical AI company building a general-purpose robotics foundation model called the Skild Brain.",
+            ],
+            [
+              "What is the core thesis?",
+              "Robot intelligence should be omni-bodied: reusable across robot bodies, task families, and environments.",
+            ],
+            [
+              "Why does it matter?",
+              "The robot hardware market may stay fragmented, which makes a shared intelligence layer strategically valuable.",
+            ],
+            [
+              "What changed in 2026?",
+              "Skild announced major funding, industrial partnerships, NVIDIA/Foxconn work, and a Zebra/Fetch warehouse robotics acquisition.",
+            ],
+            [
+              "What is the main risk?",
+              "The model may look general in demos but still require too much custom engineering, support, and site-specific adaptation in production.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Why Skild Is Different",
+      paragraphs: [
+        "Skild is not just arguing that robots need better policies. It is arguing that robot intelligence should be trained across a much wider distribution of bodies and tasks than traditional robotics systems. The company uses the language of omni-bodied intelligence because it wants to avoid a common robotics trap: building a controller that is impressive on one machine and brittle everywhere else.",
+        "That is a subtle but important difference from a single robot-company thesis. A humanoid company can tightly couple one body, one data pipeline, one control stack, and one product roadmap. That can be powerful, but it narrows the learning loop. Skild's bet is that a model exposed to many morphologies can learn more transferable strategies and become useful across the hardware market.",
+        "The company is also unusually explicit about the data problem. There is no internet-scale public dataset of robot actions equivalent to the text and image data that powered language and vision models. Skild's answer is to combine large-scale simulation, internet videos of humans acting in the world, teleoperation, and data from real deployments.",
+        "The commercial idea is easy to understand. If the Skild Brain can lower the amount of task-by-task programming required to deploy robots, it becomes infrastructure. If it cannot, then the company risks becoming another impressive robotics research story trapped between demos and service-heavy deployments.",
+      ],
+    },
+    {
+      heading: "The Omni-Bodied Brain Thesis",
+      paragraphs: [
+        "The Skild Brain is built around a simple claim with difficult consequences: a robot brain should not need to know one exact body form before it can be useful. Skild describes support across quadrupeds, humanoids, tabletop arms, mobile manipulators, and other moving machines. The strategic ambition is not cross-embodiment as a feature. It is cross-embodiment as the whole product.",
+        "Skild's own technical framing points to a layered model. High-level policies handle manipulation, navigation, and task intent. Lower-level policies translate those instructions into the joint-level behavior and motor control needed by a specific body. That separation matters because the company is trying to make behavior transferable without pretending every robot body is mechanically identical.",
+        "The strongest evidence behind the thesis is not a single demo, but the idea of forcing the model to train across many possible bodies so it cannot simply memorize one morphology. Skild has described simulated training across 100,000 different robots, with the model adapting to unfamiliar bodies, damaged limbs, jammed wheels, payload changes, and other disruptions. The point is to teach adaptability instead of one perfect behavior.",
+        "That is exactly where investors should be careful. Adaptation in controlled demonstrations is not the same as adaptation in a warehouse, factory, hospital, or construction site. But the direction is right. If robots are going to work outside narrow cages, they need systems that recover, infer, and adapt when the physical world changes.",
+      ],
+      tables: [
+        {
+          title: "What Omni-Bodied Intelligence Is Trying to Solve",
+          columns: ["Problem", "Traditional Robotics Answer", "Skild-Style Answer"],
+          rows: [
+            [
+              "Different robot bodies",
+              "Build or tune a controller for each machine.",
+              "Train one foundation model across many morphologies and adapt to the target body.",
+            ],
+            [
+              "New workflows",
+              "Hand-program or integrate a task-specific automation cell.",
+              "Fine-tune or post-train the base model with targeted task data.",
+            ],
+            [
+              "Hardware failures",
+              "Stop, alarm, or rely on brittle fallback logic.",
+              "Use in-context adaptation and learned recovery behavior where possible.",
+            ],
+            [
+              "Data scarcity",
+              "Collect expensive robot demonstrations one deployment at a time.",
+              "Use simulation, human videos, teleoperation, and real deployments as a combined data engine.",
+            ],
+            [
+              "Fragmented robot market",
+              "Let every OEM build its own intelligence layer.",
+              "Offer a shared brain that can improve across many OEMs and sectors.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The 2026 Shift",
+      paragraphs: [
+        "The most important change in Skild's story is that 2026 moved it from an ambitious research narrative into a deployment narrative. In January, the company announced a $1.4 billion Series C led by SoftBank, valuing the company above $14 billion. The investor list included NVentures, Macquarie Capital, Bezos Expeditions, LG, Schneider Electric, CommonSpirit, Salesforce Ventures, and several existing investors.",
+        "That funding matters because physical AI is capital intensive. Robot data is expensive. Simulation infrastructure is expensive. Talent is expensive. Partnerships with major OEMs and industrial customers require deployment support, not just model training. The scale of the round tells us investors are underwriting Skild as a potential infrastructure company, not a narrow robotics vendor.",
+        "The March 2026 partnership announcement was even more important strategically. Skild said it was partnering with ABB Robotics, Universal Robots, Mobile Industrial Robots, NVIDIA, and Foxconn. The goal is to integrate the Skild Brain into widely deployed industrial robots and use NVIDIA's simulation and physical AI infrastructure to help train and deploy the model at scale.",
+        "The April 2026 Zebra/Fetch acquisition adds a second practical surface area: warehouses. Zebra's robotics division brings warehouse robots and orchestration software already connected to logistics operations. If Skild can use that footprint to turn warehouse deployments into data and product evidence, the general robot-brain thesis gets a much more credible commercial wedge.",
+      ],
+      tables: [
+        {
+          title: "Skild's 2026 Milestones",
+          columns: ["Milestone", "Why It Matters", "What to Watch"],
+          rows: [
+            [
+              "$1.4B Series C",
+              "Gives Skild capital to scale model training, robot data collection, deployment teams, and partnerships.",
+              "Whether the valuation is matched by real customer revenue and repeatable deployments.",
+            ],
+            [
+              "ABB Robotics and Universal Robots partnerships",
+              "Connects Skild to major industrial robot portfolios instead of one proprietary body.",
+              "Whether integration moves beyond demos into supported customer workflows.",
+            ],
+            [
+              "NVIDIA and Foxconn manufacturing work",
+              "Shows a high-precision factory assembly wedge tied to Blackwell production.",
+              "Whether end-to-end learned control can meet quality, cycle-time, and uptime requirements.",
+            ],
+            [
+              "Zebra/Fetch acquisition",
+              "Adds warehouse robotics, orchestration software, and a logistics deployment surface.",
+              "Whether warehouses become a data flywheel and revenue engine rather than an integration burden.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Data Flywheel",
+      paragraphs: [
+        "Skild's data story has four pieces. First is large-scale simulation, where the company can generate enormous variation in robot bodies, tasks, physics, and failures. Second is internet video, especially human action video, which gives the model exposure to how people manipulate objects and solve physical tasks. Third is teleoperation, which provides robot-native control data. Fourth is real-world deployments, which turn customer environments into ongoing learning surfaces.",
+        "This is the right architecture for the problem. Teleoperation alone is too slow and too tied to physical robot availability. Human video alone lacks forces, torques, tactile feedback, and robot actuation. Simulation alone risks sim-to-real gaps. Real-world deployment alone does not arrive early enough to train the first strong model. Skild is trying to make the four sources reinforce one another.",
+        "The flywheel is strongest if each deployment improves the base system in ways that help the next deployment. A factory arm teaches manipulation. A warehouse robot teaches navigation and human-robot coordination. A quadruped teaches recovery and terrain. A mobile manipulator teaches combined motion and task execution. The model becomes broader because the data is not trapped inside one robot type.",
+        "The weak version is that every customer creates its own data silo and support problem. Robotics companies love the phrase data flywheel because it sounds automatic. In practice, data can be noisy, proprietary, hard to label, safety-sensitive, and hard to reuse across machines. Skild's real moat will depend on how well it turns messy field data into model improvement without breaking customer trust.",
+      ],
+      tables: [
+        {
+          title: "Skild's Data Sources",
+          columns: ["Data Source", "Strategic Role", "Main Limitation"],
+          rows: [
+            [
+              "Large-scale simulation",
+              "Creates massive variation in bodies, physics, failures, and environments.",
+              "Can overteach patterns that do not transfer cleanly to real hardware.",
+            ],
+            [
+              "Internet human videos",
+              "Adds scale and diversity for object interaction, intent, and physical common sense.",
+              "Does not directly include robot forces, torques, proprioception, or tactile feedback.",
+            ],
+            [
+              "Teleoperation",
+              "Provides high-quality robot-native action data for post-training and task adaptation.",
+              "Expensive, slow, and difficult to scale to foundation-model levels by itself.",
+            ],
+            [
+              "Real deployments",
+              "Connects the model to customer workflows, failures, and operational feedback.",
+              "Data may be noisy, confidential, site-specific, and hard to generalize.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Why Warehouses Matter",
+      paragraphs: [
+        "The Zebra acquisition is strategically important because warehouses are messy enough to need intelligence and bounded enough to measure. They are not as unstructured as homes, but they are far more variable than a perfectly designed automation cell. Objects change. Labor availability changes. Order mix changes. Packaging changes. The environment is partially structured, but not clean.",
+        "Zebra's robotics division, formerly Fetch Robotics, gives Skild a warehouse platform and an orchestration layer. That matters because robot intelligence by itself is not a warehouse product. A warehouse buyer needs fleet coordination, worker coordination, safety, route planning, integration with warehouse systems, uptime reporting, and operational accountability. The intelligence layer has to plug into that reality.",
+        "The real opportunity is moving beyond classical warehouse automation. Navigation and routing are useful, but many fulfillment bottlenecks remain tied to object movement, exception handling, packing, induction, loading, unloading, and work that changes across SKUs and facilities. If Skild can make robots more useful in those variable zones, the business case becomes concrete.",
+        "This is also a data strategy. Warehouses generate repeatable task families at scale. If Skild can deploy across many facilities, it can collect the kind of operational variation that a lab cannot simulate completely. That is how a warehouse wedge could become more than a vertical application. It could become one of the company's data engines.",
+      ],
+    },
+    {
+      heading: "Why Factories Matter",
+      paragraphs: [
+        "The ABB, Universal Robots, MiR, NVIDIA, and Foxconn announcements point to a different wedge: industrial deployment through existing robot portfolios. This is powerful because major OEMs already have customer trust, installed bases, safety practices, integrator ecosystems, and real industrial channels. Skild does not need to build every robot if it can make widely deployed robots more capable.",
+        "The Foxconn example is especially telling because it is not a generic pick-and-place demo. Skild described a long-horizon assembly task for NVIDIA Blackwell GPU production involving multiple steps, precise manipulation, drilling, and recovery from disturbances. That is the kind of task classical automation can handle only with enough engineering, fixturing, and process control. The question is whether a learned model can reduce that engineering burden while still meeting factory standards.",
+        "Factories are unforgiving in a useful way. They care about cycle time, repeatability, quality, uptime, line balance, safety, and maintenance. A learned robot brain has to be not only clever but boringly dependable. The line does not care that a model is general if it misses takt time or scratches parts.",
+        "If Skild can prove value in factories, the credibility is enormous. Industrial customers are conservative because downtime is expensive. Winning there would suggest the model is moving from research novelty toward infrastructure. Failing there would not kill the company, but it would force the thesis back toward less demanding environments.",
+      ],
+    },
+    {
+      heading: "The Narrow-First Paradox",
+      paragraphs: [
+        "The paradox of general-purpose robot intelligence is that it has to win narrow workflows first. No serious customer buys a robot because the phrase general-purpose sounds exciting. They buy because a painful workflow becomes cheaper, safer, faster, or more reliable.",
+        "For Skild, this means the near-term product cannot be only a brain for every robot. It has to be a deployment advantage for specific use cases: inspection routes, packing, warehouse movement, assembly, loading, material handling, mobile manipulation, or industrial recovery behaviors. Generality becomes valuable only when it lowers the cost of building and expanding those applications.",
+        "This is why the company's site highlights practical applications such as security and inspection, mobile manipulation, and autonomous packing. Those are not side quests. They are the bridge from broad model promise to customer value. The model learns in general, but the buyer pays in specifics.",
+        "The companies that win physical AI will likely be the ones that manage this tension well. Too narrow, and they become traditional automation vendors. Too broad, and they never ship. Skild's challenge is to let narrow deployments compound into broader model capability.",
+      ],
+    },
+    {
+      heading: "Skild vs. Physical Intelligence",
+      paragraphs: [
+        "Skild and Physical Intelligence are often grouped together because both are working on robot intelligence beyond one robot body. That grouping is fair, but the differences matter. Physical Intelligence has centered much of its public narrative around generalist robot policies and model progression, including pi0, pi0.5, and pi 0.7. Skild has centered more explicitly on omni-bodied intelligence, simulated body diversity, human-video learning, and OEM or deployment partnerships.",
+        "Physical Intelligence feels like a frontier-model lab for robot policies. Skild feels more like an infrastructure company trying to attach a robot brain to the existing robotics market. That may change over time, and both companies can move toward each other. But for investors, the distinction helps frame diligence.",
+        "The key Skild question is whether the company can make robot intelligence portable enough for OEMs and useful enough for enterprise customers. The key Physical Intelligence question is whether generalist policies can become reliable and steerable enough for real deployment. Both questions converge on the same point: robot intelligence only matters commercially when it survives messy sites.",
+        "There may not be one winner. The market could split by embodiment, vertical, data access, deployment model, or integration style. NVIDIA could provide infrastructure beneath both. OEMs could internalize parts of the stack. Open-source models could pressure pricing. The field is too early to crown a default. But Skild is one of the companies making the strongest horizontal claim.",
+      ],
+      tables: [
+        {
+          title: "Skild AI and Physical Intelligence",
+          columns: ["Dimension", "Skild AI", "Physical Intelligence"],
+          rows: [
+            [
+              "Public thesis",
+              "Omni-bodied robot brain that can control many robot types.",
+              "Generalist robot policies for dexterous, steerable, cross-embodiment behavior.",
+            ],
+            [
+              "Recent emphasis",
+              "OEM partnerships, warehouse acquisition, simulation, human videos, deployment flywheel.",
+              "Model progression from pi0 to pi 0.7, steerability, dexterity, and compositional generalization.",
+            ],
+            [
+              "Commercial path",
+              "Attach to industrial robots, warehouses, mobile manipulation, and enterprise deployments.",
+              "Potential model layer for robots and task families, with deployment paths still emerging publicly.",
+            ],
+            [
+              "Primary diligence question",
+              "Can omni-bodied intelligence reduce real deployment cost across OEMs and sites?",
+              "Can generalist policies become repeatable enough for production workflows?",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Business Model Possibilities",
+      paragraphs: [
+        "Skild could make money several ways. The cleanest long-term model is software licensing to robot OEMs and enterprise operators. A robot manufacturer integrates the Skild Brain into its machines. An enterprise customer pays for capability, support, updates, and adaptation. Skild captures value without carrying the full burden of manufacturing every robot body.",
+        "The more realistic near-term model may be heavier. Robotics deployments need integration, training, tuning, safety validation, data pipelines, fleet monitoring, support, and workflow design. Skild may need to operate more like an enterprise infrastructure company than a pure model API company, especially while the market is immature.",
+        "The Zebra acquisition adds another path: owning more of the warehouse robotics stack. If Skild controls orchestration software, robot deployment surface area, and the intelligence layer, it can capture more value per site. The tradeoff is that operations become messier and more capital intensive.",
+        "A hybrid model is most likely. Skild licenses or embeds intelligence with OEM partners, builds vertical deployment wedges where it needs data and proof, and uses enterprise contracts to fund the flywheel. Over time, if the brain becomes more general, the software portion of revenue should become more important than services.",
+      ],
+    },
+    {
+      heading: "Investor Case",
+      paragraphs: [
+        "The bull case is that robot intelligence becomes the scarce layer in physical AI. Hardware will improve, sensors will get cheaper, and robot bodies will proliferate. But if every machine still requires custom programming and brittle integration, adoption remains slow. A reusable brain that reduces that friction could become one of the most valuable layers in robotics.",
+        "Skild's investor appeal is also tied to market structure. If the hardware market stays diverse, a horizontal brain becomes a way to benefit from that diversity. The company does not need to predict exactly which robot form factor wins. It needs to make many form factors more useful.",
+        "The 2026 funding round shows investors are underwriting a very large outcome. A valuation above $14 billion implies expectations far beyond a normal robotics startup. It implies a platform, not a product line. That creates pressure. Skild has to show that capital is turning into repeatable deployment advantage, not only research scale and impressive partnerships.",
+        "The bear case is straightforward. Robotics is hard, customers are conservative, and generality may not translate into uptime. OEMs may resist dependency on an outside brain. Integration costs may stay high. Data rights may be messy. NVIDIA, Physical Intelligence, Tesla, Figure, Google DeepMind, open models, or OEM-owned stacks could compress Skild's opportunity. The company has a strong thesis, but the burden of proof is now large.",
+      ],
+      tables: [
+        {
+          title: "Skild AI: Bull Case vs. Bear Case",
+          columns: ["View", "Argument", "Signal to Watch"],
+          rows: [
+            [
+              "Bull case",
+              "The Skild Brain becomes a reusable intelligence layer across robot bodies and industries.",
+              "OEM integrations produce real customer deployments, not only demos.",
+            ],
+            [
+              "Bull case",
+              "Warehouses and factories become data flywheels that improve the model across sectors.",
+              "Performance improves as deployment footprint expands across sites and robot types.",
+            ],
+            [
+              "Bull case",
+              "Robot intelligence becomes more valuable than many individual robot bodies.",
+              "Skild earns software-like economics while partners handle much of the hardware layer.",
+            ],
+            [
+              "Bear case",
+              "Generality does not survive production constraints.",
+              "Customers still need too much custom engineering, supervision, and support.",
+            ],
+            [
+              "Bear case",
+              "OEMs, platform companies, or vertical robot makers capture the intelligence layer.",
+              "Skild becomes a services-heavy integration partner instead of a platform.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What to Watch Next",
+      paragraphs: [
+        "First, watch deployment density. The strongest signal is not another broad demo. It is many robots, at many sites, performing measurable work with improving economics. Skild's warehouse and factory efforts should be judged by throughput, uptime, support load, and expansion within customer accounts.",
+        "Second, watch OEM depth. Partnerships with ABB Robotics, Universal Robots, MiR, and NVIDIA are strategically meaningful, but the value depends on integration depth. A press release is one thing. A supported product path with customers, updates, safety practices, and repeatable deployment is another.",
+        "Third, watch how Skild handles data rights. The company needs deployment data to improve its model, but customers need confidence that their operational data, factory processes, and warehouse workflows are protected. Data governance could become a real moat or a real blocker.",
+        "Fourth, watch whether the Zebra acquisition becomes a warehouse growth engine. If it gives Skild real logistics data and customer channels, it is a major move. If it becomes an operational distraction, it could make the company heavier just as it needs to scale.",
+        "Fifth, watch the gap between valuation and evidence. Skild has raised enough money to make the ambition credible, but also enough to make the expectations unforgiving. The next stage has to be less about the idea of a robot brain and more about proof that the brain changes deployment economics.",
+      ],
+    },
+    {
+      heading: "The Bottom Line",
+      paragraphs: [
+        "Skild AI is one of the defining companies to watch in physical AI because it attacks the central robotics question directly: can intelligence become reusable across bodies, tasks, and environments? If the answer is yes, the value of the robot brain may be larger than the value of many individual robots.",
+        "The company now has more than a research thesis. It has major capital, major investors, industrial partnerships, a warehouse robotics acquisition, and a public data-flywheel strategy. That makes the opportunity more concrete and the scrutiny more serious.",
+        "The best version of Skild becomes a shared intelligence layer for a fragmented robot hardware market. The weaker version becomes a company with brilliant demos and expensive deployments that still need too much human engineering. The difference will show up in warehouses and factories before it shows up in homes. Watch the narrow workflows first. That is where the general brain has to earn its right to become general.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled from Skild AI's official site and public company posts on its Skild Brain, omni-bodied model, human-video learning, Series C funding, industrial partnerships, and Zebra robotics acquisition. Skild is still a private company, so claims about revenue, deployment scale, customers, model performance, and commercialization should be treated as company-reported information and Black Scarab analysis rather than audited public financials.",
+      ],
+    },
+  ],
+  sources: [
+    "Skild AI official site and company positioning",
+    "Skild AI post on building a general-purpose robotic brain",
+    "Skild AI post on the case for an omni-bodied robot brain",
+    "Skild AI post on learning by watching human videos",
+    "Skild AI Series C funding announcement",
+    "Skild AI partnership announcement with ABB Robotics, Universal Robots, MiR, NVIDIA, and Foxconn",
+    "Skild AI Zebra Technologies robotics division acquisition announcement",
+    "Black Scarab analysis of physical AI deployment, robot foundation models, and industrial robotics economics",
+  ],
+  sourceLinks: [
+    {
+      label: "Skild AI official site",
+      url: "https://www.skild.ai/",
+    },
+    {
+      label: "Building the general-purpose robotic brain",
+      url: "https://www.skild.ai/blogs/building-the-general-purpose-robotic-brain",
+    },
+    {
+      label: "The case for an omni-bodied robot brain",
+      url: "https://www.skild.ai/blogs/omni-bodied",
+    },
+    {
+      label: "Learning by watching human videos",
+      url: "https://www.skild.ai/blogs/learning-by-watching",
+    },
+    {
+      label: "Skild AI Series C",
+      url: "https://www.skild.ai/blogs/series-c",
+    },
+    {
+      label: "Skild AI industrial partnerships",
+      url: "https://www.skild.ai/blogs/reindustrial-revolution",
+    },
+    {
+      label: "Skild AI Zebra robotics acquisition",
+      url: "https://www.skild.ai/blogs/skild-zebra",
+    },
+  ],
+});
+
 const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
   slug: "top-15-physical-ai-infrastructure-companies",
   title: "Top 15 Physical AI Infrastructure Companies to Watch in 2026",
@@ -6722,6 +7102,7 @@ export const caseStudies: CaseStudyArticle[] = [
   nvidiaPhysicalAiDeepDive(),
   prometheusPhysicalAiDeepDive(),
   physicalIntelligenceDeepDive(),
+  skildAiDeepDive(),
   physicalAiInfrastructureCompaniesGuide(),
   intuitiveDaVinci5DeepDive(),
   amazonProteusDeepDive(),
