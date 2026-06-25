@@ -2698,6 +2698,390 @@ const skildAiDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const viamDeepDive = (): CaseStudyArticle => ({
+  slug: "viam-robotics-software-platform-physical-ai-guide",
+  title:
+    "Viam Deep Dive: Robotics Software Infrastructure, Fleet Management, Edge AI, and Programmable Machines",
+  summary:
+    "A business and investor deep dive on Viam, the robotics software platform building the infrastructure layer for connecting hardware, deploying code, managing fleets, collecting data, running edge AI, and turning physical machines into programmable systems.",
+  publishedLabel: "Physical AI Series · Published June 25, 2026",
+  publishedDate: "2026-06-25",
+  typeLabel: "Physical AI Series",
+  formatLabel: "Company deep dive",
+  industry: "Cross-Industry",
+  image: "/article-images/viam-robotics-software-platform-physical-ai-guide.png",
+  imageAlt:
+    "Robotics software platform connecting cameras, sensors, edge devices, cloud infrastructure, dashboards, and robot fleets.",
+  seoDescription:
+    "A 2026 Viam deep dive covering robotics software infrastructure, fleet management, hardware abstraction, edge AI, data collection, OTA updates, machine security, Universal Robots, Tech Mahindra, Kongsberg Sonar AI, and the physical AI control plane.",
+  tags: [
+    "Viam",
+    "physical AI",
+    "robotics software",
+    "fleet management",
+    "edge AI",
+    "hardware abstraction",
+    "robotics infrastructure",
+    "machine data",
+    "industrial automation",
+    "AI investing",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Viam is one of the more important physical AI companies because it does not begin with the robot body. It begins with the infrastructure problem around the robot body: how hardware gets connected, how code gets deployed, how data gets captured, how models get updated, how machines get monitored, and how operators keep a physical fleet from turning into operational debt.",
+        "That makes Viam easy to underestimate. In early physical AI markets, attention naturally goes to the visible machine: the humanoid, the robot arm, the quadruped, the autonomous vehicle, the smart camera, the marine system, the factory cell. But as deployments scale, the less glamorous layer becomes unavoidable. Someone has to make cameras, motors, arms, sensors, microcontrollers, edge computers, models, logs, permissions, and cloud services behave like one manageable system.",
+        "Viam's argument is that robotics should be built more like modern software. Define the hardware, write application logic in familiar languages, connect machines securely, collect data, deploy updates, run models at the edge, and manage the fleet from a common platform. It is not trying to make one robot famous. It is trying to make many machines programmable.",
+        "That position becomes more valuable as physical AI leaves the prototype phase. A machine that cannot be monitored, patched, rolled back, debugged, permissioned, or updated remotely becomes a liability. The bigger the fleet, the more the control plane matters.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Viam is a robotics and physical AI software platform founded in 2020 by MongoDB co-founder and former CTO Eliot Horowitz. The company presents itself as a way for engineers, startups, and enterprises to build, deploy, and manage robotics applications across hardware, from first prototype to global fleet.",
+        "The strategic thesis is hardware abstraction plus machine operations. Viam sits between heterogeneous physical components and the developers or operators who need to control them. If it works, builders can treat motors, cameras, arms, sensors, bases, grippers, boards, and machine-learning services as addressable software resources rather than a pile of incompatible vendor SDKs.",
+        "Viam's 2026 positioning is increasingly enterprise-facing. The company announced a June 18, 2026 partnership with Tech Mahindra to scale advanced robotics and automation for global enterprise clients. Its newsroom also highlights Kongsberg Sonar AI, Universal Robots industrial automation, Viking Yachts sanding, UBS Arena computer vision, Canyon Runner fleet monitoring, and other customer examples. Those use cases are scattered across industries, but they point to the same underlying product: a software layer for making physical systems manageable.",
+      ],
+      tables: [
+        {
+          title: "Viam at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "A software platform for building, deploying, managing, and scaling robotics and physical AI applications.",
+            ],
+            [
+              "What layer does it target?",
+              "Hardware abstraction, machine connectivity, fleet management, data capture, edge inference, remote updates, and secure operations.",
+            ],
+            [
+              "Why does it matter?",
+              "Physical AI systems are heterogeneous. Viam tries to normalize that complexity so builders can ship applications faster.",
+            ],
+            [
+              "What is the latest strategic signal?",
+              "The June 2026 Tech Mahindra partnership frames Viam as an enterprise robotics platform for large-scale industrial automation.",
+            ],
+            [
+              "What is the core risk?",
+              "Cloud providers, OEMs, open-source robotics frameworks, and vertical platforms may each pull parts of the infrastructure market in different directions.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Why Infrastructure Matters",
+      paragraphs: [
+        "Physical AI does not fail only because the model is weak or the hardware is expensive. It often fails because the system around the machine is brittle. The camera works, but the data pipeline is improvised. The robot arm moves, but the driver stack is fragile. The model runs, but updating it across machines requires custom scripts. The customer has devices in the field, but no clean view of health, logs, errors, drift, or usage.",
+        "This is the part of robotics that looks boring until it breaks. A prototype can tolerate manual attention. A fleet cannot. Once machines are installed across factories, boats, arenas, restaurants, job sites, farms, or logistics nodes, the buyer expects the same basic operational discipline they get from modern IT systems: access control, status, telemetry, logs, alerts, updates, rollback, and integration with existing workflows.",
+        "Viam's opportunity lives in that transition. The company is not only selling robotics development convenience. It is selling the idea that physical devices should be operated with software discipline. That is a different and potentially larger market than one robot application.",
+        "The hidden lesson is that physical AI will need control planes. A control plane does not make the robot exciting. It makes the robot governable. In enterprise markets, governable often beats exciting.",
+      ],
+    },
+    {
+      heading: "Making Hardware Addressable",
+      paragraphs: [
+        "The first Viam layer is hardware abstraction. Physical systems are full of components from different manufacturers: cameras, arms, bases, motors, grippers, sensors, boards, GPS modules, edge computers, and custom electronics. Every component brings its own configuration style, driver quirks, SDK assumptions, and failure modes.",
+        "Viam tries to turn those pieces into consistent software resources. A developer can define components in configuration, use SDKs in Python, Go, or TypeScript, and call hardware through common APIs. In the company's framing, hardware becomes something closer to cloud infrastructure: a remote resource that can be configured, accessed, monitored, and controlled without standing next to the machine.",
+        "This matters because hardware diversity is not going away. Robotics will not standardize around one arm, one camera, one base, or one compute box. A platform that makes hardware swappable without forcing a full application rewrite can become valuable precisely because the physical world remains fragmented.",
+        "The difficult part is depth. Hardware abstraction is easy to promise and hard to make complete. The farther a system moves from basic commands into timing, safety, compliance, sensor fusion, calibration, motion planning, and field service, the more edge cases appear. Viam wins if it abstracts enough complexity without hiding the realities operators still need to understand.",
+      ],
+      tables: [
+        {
+          title: "Why Hardware Abstraction Matters",
+          columns: ["Layer", "What Viam Tries to Normalize", "Why It Matters"],
+          rows: [
+            [
+              "Components",
+              "Cameras, motors, arms, bases, grippers, sensors, and boards exposed through consistent APIs.",
+              "Developers can write application logic without rebuilding every driver integration.",
+            ],
+            [
+              "Configuration",
+              "Machine definitions, component settings, services, and modules managed through software configuration.",
+              "Hardware changes become less likely to force a full application rewrite.",
+            ],
+            [
+              "Connectivity",
+              "Remote access to machines without standing beside the device or opening inbound network paths.",
+              "Teams can test, debug, and operate machines across sites.",
+            ],
+            [
+              "Registry",
+              "Reusable modules, drivers, and ML models stored as deployable assets.",
+              "The ecosystem can compound instead of every team starting from scratch.",
+            ],
+            [
+              "Motion and services",
+              "Higher-level movement, vision, ML, SLAM, and data capabilities exposed through platform services.",
+              "Application builders can focus more on workflow value and less on plumbing.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Fleet Management Is the Business Layer",
+      paragraphs: [
+        "A single robot can be managed by a determined engineer. A fleet cannot. Once machines are deployed in the field, the operational questions multiply. Which devices are online? Which version is running? Which model is active? Which unit is drifting? Which customer site is failing? Which update caused the issue? Who has permission to access the machine? Can the team roll back safely?",
+        "Viam's fleet-management message is direct: machines should be managed like software. The company highlights OTA updates for software and models, canary testing, rollback, fleet-wide monitoring, live logs, alerts, diagnostics, and health visibility. This is not decorative. It is the difference between a robotics product and a robotics headache.",
+        "The most important idea is that physical AI changes after deployment. Models improve. Sensors drift. Customers request new features. Environments change. Operators discover edge cases. The machine that ships on day one is not the final machine. The platform has to support continuous updates without turning every improvement into a field-service operation.",
+        "That is why this layer may become more important than the first demo. Demos prove possibility. Fleet operations prove business durability.",
+      ],
+    },
+    {
+      heading: "The Data and AI Loop",
+      paragraphs: [
+        "Viam also sits in the data loop. Physical machines generate sensor data, images, video, logs, events, detections, failures, and operational context. In many deployments, that data is wasted because the pipeline was not built cleanly. It stays on devices, disappears during connectivity outages, or never becomes training signal.",
+        "Viam's AI and data positioning is that capture, training, model versioning, edge inference, and redeployment should live in the same operating loop. The platform can collect data from machines, queue locally during outages, sync to the cloud, support annotation and model training, store models as versioned assets, and run inference on device.",
+        "This is important because physical AI improves through contact with the world. A model trained in a lab rarely survives every lighting condition, object variation, sensor placement, and operator behavior in the field. The deployment needs a loop: capture the failure, label or inspect the data, improve the model, test the change, roll it out gradually, and roll back if needed.",
+        "The powerful version of Viam is not just a device dashboard. It is a learning system for machines. A fleet generates evidence, that evidence improves models, and those improvements deploy back into the fleet. That loop is where physical AI becomes compounding instead of one-off.",
+      ],
+      tables: [
+        {
+          title: "The Viam Data Loop",
+          columns: ["Step", "Why It Matters", "Operational Risk If Missing"],
+          rows: [
+            [
+              "Capture",
+              "Machines collect sensor data, images, logs, and events from real environments.",
+              "Failures remain anecdotal and cannot become training or debugging signal.",
+            ],
+            [
+              "Buffer and sync",
+              "Data survives unreliable connectivity and reaches the platform when possible.",
+              "Field deployments lose data exactly when conditions are most interesting.",
+            ],
+            [
+              "Annotate and train",
+              "Teams can turn field examples into better models or task-specific improvements.",
+              "Model updates depend on disconnected manual workflows.",
+            ],
+            [
+              "Version",
+              "Models become managed assets with traceable versions.",
+              "Operators cannot tell which model is running where.",
+            ],
+            [
+              "Deploy and rollback",
+              "Updated models can move fleet-wide with canaries and recovery paths.",
+              "Model changes become risky, slow, and hard to govern.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Security Becomes Product",
+      paragraphs: [
+        "The more physical AI enters real operations, the less security can be treated as an IT afterthought. A compromised dashboard is bad. A compromised machine that moves, senses, or controls physical processes is worse. Remote robotics operations need identity, encryption, access control, auditability, and sensible network architecture by default.",
+        "Viam's security posture is one of the more important parts of its enterprise argument. The company describes zero-trust identity, unique machine secrets, encrypted outbound connections, no default passwords, no open ports, and no VPN requirement for remote management. Its public materials also point to SOC 2 Type II, ISO 27001, and HIPAA compliance.",
+        "That matters because the buyer of physical AI is often not only an innovation team. It is an operations leader, plant manager, risk officer, compliance team, insurer, or enterprise IT group. The more a platform can look like managed infrastructure rather than a science project, the easier it is for large organizations to say yes.",
+        "There is also a data-sovereignty angle. Viam says customer data trains customer models, not Viam's platform-wide models. That framing may become critical as companies realize that operational telemetry, process logic, defect images, safety events, and machine behavior are competitive assets.",
+      ],
+    },
+    {
+      heading: "Enterprise Scale Through Partners",
+      paragraphs: [
+        "The June 2026 Tech Mahindra partnership is the clearest signal that Viam wants to scale through enterprise channels. Tech Mahindra brings global manufacturing and industrial customers, engineering services, integration capacity, and organizational reach. Viam brings the hardware-agnostic robotics platform.",
+        "This matters because platform companies do not scale physical deployments alone. Even if the software is strong, enterprise buyers need implementation help, site integration, security review, workflow mapping, change management, and support. Systems integrators can turn a platform into a deployable enterprise motion.",
+        "The partnership also frames Viam as more than a startup tool. It places Viam in the language of large industrial adoption: remote fleet management, predictive and preventive maintenance, OTA software updates, uptime, productivity, and integration with existing systems. That is exactly the level where physical AI becomes a CIO and operations conversation, not only a robotics team conversation.",
+        "The risk is that channel partnerships can hide product friction. A strong integrator can make weak software look deployable for a while. The signal to watch is whether Viam becomes easier to deploy as the partner ecosystem grows, or whether every engagement still requires too much custom work.",
+      ],
+    },
+    {
+      heading: "The Application Wedges",
+      paragraphs: [
+        "Viam's customer examples look scattered at first: marine sonar, yacht sanding, arena wait-time intelligence, autonomous restaurant operations, vessel monitoring, workplace safety, tennis robots, and industrial automation. The common thread is not the vertical. The common thread is a physical system that needed software, data, AI, and remote operations wrapped around existing or specialized hardware.",
+        "Kongsberg Sonar AI is a useful example because it is not a humanoid or warehouse robot. It is an AI layer on a physical sensing system used by fishing crews. The product watches sonar data, detects targets, alerts operators, and improves over time. That is physical AI without a robot body in the popular sense.",
+        "The Universal Robots partnership is a different wedge. Here, Viam is closer to industrial robotics, using cobots for surface finishing, sanding, polishing, and related manufacturing tasks. The value is not just that a robot arm moves. It is that Viam can combine software, perception, task logic, and hardware-agnostic control into a deployable manufacturing solution.",
+        "UBS Arena shows another pattern: existing cameras and infrastructure become a real-time computer vision product. That reinforces the broader point. Viam may be less about robotics as a narrow category and more about making physical operations programmable, observable, and intelligent.",
+      ],
+      tables: [
+        {
+          title: "Viam's Application Pattern",
+          columns: ["Wedge", "What It Shows", "Why It Matters"],
+          rows: [
+            [
+              "Kongsberg Sonar AI",
+              "AI applied to marine sensing and operator assistance.",
+              "Physical AI can live inside existing industrial products, not only new robot bodies.",
+            ],
+            [
+              "Universal Robots and surface finishing",
+              "Robotic automation for sanding, polishing, and high-mix manufacturing tasks.",
+              "Hardware-agnostic intelligence can make cobots useful in more demanding workflows.",
+            ],
+            [
+              "UBS Arena QuickQueue",
+              "Computer vision converts existing facility cameras into real-time operational intelligence.",
+              "Viam can turn physical infrastructure into software-addressable systems.",
+            ],
+            [
+              "Canyon Runner marine monitoring",
+              "Distributed assets become remotely monitored and data-connected.",
+              "Fleet management applies beyond robots to many physical machines and assets.",
+            ],
+            [
+              "Tennibot fleet operations",
+              "A robot product scales with cloud management and OTA update workflows.",
+              "Small robot companies need fleet infrastructure long before they feel like large enterprises.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Why Viam Is Not ROS",
+      paragraphs: [
+        "Viam will inevitably be compared with ROS because both live in the robotics software conversation. But the comparison can be misleading. ROS is a powerful open-source robotics framework and ecosystem. Viam is trying to be a productized platform for application development, remote operations, data, models, security, and fleet management.",
+        "In practice, serious robotics teams may use both kinds of tools. ROS can remain valuable inside research, prototyping, robot-specific software, and parts of the autonomy stack. Viam can matter above and around that layer: connecting machines, exposing hardware through APIs, managing deployments, collecting data, pushing updates, and making robots easier for software engineers and enterprises to operate.",
+        "The strategic question is where the developer center of gravity moves. If robot builders continue to prefer open frameworks and assemble their own operations stack, Viam's market is narrower. If physical AI teams decide they would rather buy the machine operations layer than rebuild it, Viam becomes much more important.",
+        "The same tension applies to cloud providers. AWS, Google Cloud, Azure, and industrial IoT platforms all have pieces of device management, data, AI, and edge deployment. Viam has to win by being more natural for physical machines, not just another cloud dashboard.",
+      ],
+    },
+    {
+      heading: "Business Model Possibilities",
+      paragraphs: [
+        "Viam's likely business model is platform software plus enterprise deployment. The company can monetize through machine management, usage, fleet size, data, model deployment, support, enterprise features, and partnerships. The free-builder motion helps developers experiment, but the real revenue likely comes when machines become production assets.",
+        "The company also has room to move vertically. Surface finishing, fiberglass sanding, marine AI, workplace safety, and venue intelligence are not only case studies. They can become repeatable solution packages where Viam captures more value than a pure horizontal platform would.",
+        "That creates a familiar platform-company tension. Horizontal infrastructure scales elegantly if the ecosystem adopts it. Vertical solutions prove value faster but can make the company look less like infrastructure and more like an automation vendor. Viam may need both: vertical wedges to generate revenue and proof, horizontal platform depth to become strategically important.",
+        "The best version is that each vertical deployment improves the underlying platform. A marine customer teaches distributed sensing. A factory customer teaches robotic surface finishing. An arena teaches computer vision operations. A robot fleet teaches OTA updates and diagnostics. The platform gets stronger because the use cases are different.",
+      ],
+    },
+    {
+      heading: "Competitive Landscape",
+      paragraphs: [
+        "Viam's competition is not one company. It is a stack of alternatives. Robot OEMs can build their own cloud and operations layers. Large enterprises can stitch together internal infrastructure. Cloud providers can extend IoT and edge AI services into robotics. ROS and open-source ecosystems can cover parts of development. Vertical automation companies can bundle software tightly with their hardware.",
+        "This fragmented competition is both the risk and the opportunity. It is risky because no buyer wakes up saying they need a new robotics platform category. It is attractive because the pain is scattered everywhere. Every physical AI deployment has integration, data, update, security, and observability problems. The market is large because the problem is not confined to one robot form factor.",
+        "Viam's advantage is focus. Unlike a generic cloud provider, it is built around machines. Unlike a single OEM, it is hardware agnostic. Unlike a research framework, it is aimed at production operations. Unlike a vertical automation vendor, it can move across sectors.",
+        "The challenge is proving that those advantages are strong enough to become a default. Infrastructure companies win when teams stop asking whether they need the layer and start assuming they do.",
+      ],
+    },
+    {
+      heading: "Investor Case",
+      paragraphs: [
+        "The bull case is that physical AI needs a control plane. As robots, sensors, cameras, edge computers, and intelligent machines spread across industries, every deployment will need connectivity, data, updates, security, observability, permissions, and fleet management. Viam is positioned directly in that layer.",
+        "The second bull case is that Viam's market is broader than robotics. The company's examples include arenas, marine sonar, vessel monitoring, workplace safety, manufacturing, logistics, entertainment, and climate-related deployments. That suggests the platform could apply to many physical systems that become software-defined.",
+        "The third bull case is founder-market fit. Eliot Horowitz helped build MongoDB around developer experience and infrastructure adoption. Viam's story has a similar shape: make a hard technical domain easier for software engineers, then let adoption compound through tools, APIs, modules, and managed services.",
+        "The bear case is that robotics infrastructure may fragment. OEMs may keep the valuable customer relationship. Cloud providers may absorb device management and AI deployment. Open-source robotics may satisfy technical users. Systems integrators may prefer custom stacks. Vertical automation vendors may hide the software inside finished solutions. Viam has to prove that a coherent platform is better than a stitched-together stack.",
+      ],
+      tables: [
+        {
+          title: "Viam: Bull Case vs. Bear Case",
+          columns: ["View", "Argument", "Signal to Watch"],
+          rows: [
+            [
+              "Bull case",
+              "Physical AI fleets need a software control plane for data, updates, security, and observability.",
+              "More enterprise deployments standardize on Viam for machine operations.",
+            ],
+            [
+              "Bull case",
+              "Hardware diversity makes a hardware-agnostic platform more valuable over time.",
+              "Customers swap components and scale fleets without rewriting application logic.",
+            ],
+            [
+              "Bull case",
+              "Vertical wedges become proof points that strengthen the horizontal platform.",
+              "Kongsberg, Universal Robots, Tech Mahindra, and other partnerships turn into repeatable revenue paths.",
+            ],
+            [
+              "Bear case",
+              "Cloud providers, OEMs, and open-source tools split the market.",
+              "Customers assemble their own stacks or stay inside vendor-specific ecosystems.",
+            ],
+            [
+              "Execution risk",
+              "Physical deployments remain services-heavy.",
+              "Viam grows through custom projects instead of scalable platform adoption.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What to Watch Next",
+      paragraphs: [
+        "First, watch enterprise partner throughput. The Tech Mahindra partnership is meaningful if it produces trained engineers, repeatable deployment playbooks, and customer rollouts across manufacturing and industrial environments. The signal is not the announcement. It is the number of machines and sites that come through the channel.",
+        "Second, watch vertical solution repeatability. Surface finishing, fiberglass sanding, marine sonar, and venue computer vision each provide a concrete wedge. The question is whether those wedges become reusable templates or remain custom stories.",
+        "Third, watch the Registry and ecosystem. If developers and hardware vendors publish useful modules, drivers, and models, Viam can compound like a platform. If the ecosystem stays thin, Viam has to do more of the integration itself.",
+        "Fourth, watch security and data governance. Enterprise physical AI buyers will care deeply about who can access machines, where telemetry goes, whether customer data trains shared models, and how updates are controlled. Viam's public data-sovereignty positioning is smart, but it has to hold under customer scrutiny.",
+        "Fifth, watch whether Viam becomes a default for smaller robot companies. Startups with real fleets often discover operations pain before they have infrastructure teams. If Viam becomes the standard path from first prototype to managed fleet, the company can win from the bottom up as well as through enterprise channels.",
+      ],
+    },
+    {
+      heading: "The Bottom Line",
+      paragraphs: [
+        "Viam matters because physical AI needs more than better models and better machines. It needs software infrastructure that can make messy hardware programmable, observable, updateable, secure, and scalable. That is the unglamorous layer that determines whether prototypes become fleets.",
+        "The company is not trying to own one robot body. It is trying to sit between many bodies, many sensors, many edge devices, and the software teams that need to build useful applications on top. If robotics and physical AI remain heterogeneous, that middle layer becomes strategically valuable.",
+        "The hard part is that infrastructure markets are won slowly. Viam has to prove that developers want it, enterprises trust it, integrators can deploy it, and customers get measurable operational value. If it does, Viam could become one of the default ways the physical world becomes programmable.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using Viam's official platform, fleet management, AI and data, control and motion, security, about, newsroom, customer story, and press release materials. Viam is a private company, so claims about revenue, customer scale, margins, and deployment economics should be treated as company-reported information and Black Scarab analysis rather than audited public financials.",
+      ],
+    },
+  ],
+  sources: [
+    "Viam official platform overview",
+    "Viam fleet management platform page",
+    "Viam AI and data platform page",
+    "Viam control and motion platform page",
+    "Viam security and compliance page",
+    "Viam about page and company origin story",
+    "Viam newsroom and customer stories",
+    "Viam press releases on Tech Mahindra, Universal Robots, and Kongsberg Sonar AI",
+    "Black Scarab analysis of physical AI infrastructure, machine operations, and robotics platform economics",
+  ],
+  sourceLinks: [
+    {
+      label: "Viam platform overview",
+      url: "https://www.viam.com/",
+    },
+    {
+      label: "Viam fleet management",
+      url: "https://www.viam.com/platform/fleet-management",
+    },
+    {
+      label: "Viam AI and data",
+      url: "https://www.viam.com/platform/ai-and-data",
+    },
+    {
+      label: "Viam control and motion",
+      url: "https://www.viam.com/platform/control-and-motion",
+    },
+    {
+      label: "Viam security",
+      url: "https://www.viam.com/platform/security",
+    },
+    {
+      label: "Viam about",
+      url: "https://www.viam.com/about",
+    },
+    {
+      label: "Viam customer stories",
+      url: "https://www.viam.com/customers",
+    },
+    {
+      label: "Tech Mahindra and Viam partnership",
+      url: "https://www.viam.com/press-releases/tech-mahindra-and-viam-partnership",
+    },
+    {
+      label: "Viam and Universal Robots partnership",
+      url: "https://www.viam.com/press-releases/viam-partners-with-universal-robots-on-industrial-automation-systems",
+    },
+    {
+      label: "Kongsberg Sonar AI powered by Viam",
+      url: "https://www.viam.com/press-releases/kongsberg-launches-sonar-ai",
+    },
+  ],
+});
+
 const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
   slug: "top-15-physical-ai-infrastructure-companies",
   title: "Top 15 Physical AI Infrastructure Companies to Watch in 2026",
@@ -7103,6 +7487,7 @@ export const caseStudies: CaseStudyArticle[] = [
   prometheusPhysicalAiDeepDive(),
   physicalIntelligenceDeepDive(),
   skildAiDeepDive(),
+  viamDeepDive(),
   physicalAiInfrastructureCompaniesGuide(),
   intuitiveDaVinci5DeepDive(),
   amazonProteusDeepDive(),
