@@ -3082,6 +3082,371 @@ const viamDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const fortRoboticsDeepDive = (): CaseStudyArticle => ({
+  slug: "fort-robotics-trust-layer-physical-ai-safety-guide",
+  title:
+    "FORT Robotics Deep Dive: The Trust Layer for Physical AI, Safety-Certified Control, and Supervised Autonomy",
+  summary:
+    "A business and investor deep dive on FORT Robotics, the safety and control infrastructure company building trusted communications, wireless emergency stop, access control, functional safety, remote supervision, and outside-in safety systems for physical AI deployments.",
+  publishedLabel: "Physical AI Series · Published June 28, 2026",
+  publishedDate: "2026-06-28",
+  typeLabel: "Physical AI Series",
+  formatLabel: "Company deep dive",
+  industry: "Cross-Industry",
+  image: "/article-images/fort-robotics-trust-layer-physical-ai-safety-guide.png",
+  imageAlt:
+    "Autonomous machines operating near workers with wireless emergency stop, safety envelope, access control, and remote supervision dashboard.",
+  seoDescription:
+    "A 2026 FORT Robotics deep dive covering physical AI safety, trusted robot control, wireless emergency stop, SIL 3 safety, FORT Manager, supervised autonomy, Mapless AI, NVIDIA Halos, Advantech MIC-735, NVIDIA IGX Thor, warehouses, construction sites, farms, ports, and industrial robot safety infrastructure.",
+  tags: [
+    "FORT Robotics",
+    "physical AI",
+    "robot safety",
+    "functional safety",
+    "wireless emergency stop",
+    "supervised autonomy",
+    "trusted control",
+    "NVIDIA Halos",
+    "industrial robotics",
+    "AI investing",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "FORT Robotics belongs in the physical AI infrastructure map because autonomy does not scale on intelligence alone. As machines become more capable, the deployment question changes from can this robot act to can this robot be trusted near people, assets, vehicles, and public environments.",
+        "That trust problem is practical before it is philosophical. Who is authorized to command the machine? How does it stop? How is control verified? Which devices are paired? What happens when wireless communication degrades? How does a human intervene without stepping into danger? How does a buyer explain the safety case to procurement, insurers, regulators, and workers?",
+        "FORT is building around those questions. Its platform combines safety-rated control hardware, wireless emergency stop, safe remote controls, endpoint controllers, embedded safety receivers, device management, permissions, and newer capabilities around remote supervision and active safety. The company calls itself the trust layer for physical AI, and the phrase is directionally right. This is the layer that turns capable machines into governable machines.",
+        "The market may not glamorize that layer, but industrial buyers will. A robot demo can win attention. A safety system wins permission. If physical AI moves from fenced labs into warehouses, construction sites, farms, ports, airports, mines, defense environments, and industrial yards, FORT's category becomes more important with every deployment.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "FORT Robotics provides safety, security, and control infrastructure for robots, autonomous vehicles, heavy equipment, and smart machines. The company's platform includes wireless emergency stop systems, safe remote control, vehicle safety controllers, endpoint controllers, embedded Nano Safety Controller Pro receivers, and FORT Manager software for onboarding devices, pairing systems, managing users, and configuring secure machine communication.",
+        "The company's strategic position became clearer in 2026. FORT launched the Wireless E-Stop Pro in January, announced an Advantech integration around the NVIDIA IGX Thor-based MIC-735 in March, acquired Mapless AI in May to add remote supervision and onboard active safety, and announced work with NVIDIA Halos for Robotics in June to extend safety beyond onboard sensors through outside-in infrastructure sensing.",
+        "The investor lens is simple. When machines become more autonomous, the value of trusted control rises. Safety and control are not optional enterprise features. They become procurement gates, insurance issues, operational procedures, training requirements, and sometimes certification pathways. If FORT becomes embedded in those workflows, it can become sticky infrastructure rather than a replaceable accessory.",
+      ],
+      tables: [
+        {
+          title: "FORT Robotics at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "A safety and control infrastructure company for robots, autonomous machines, heavy equipment, and physical AI systems.",
+            ],
+            [
+              "What layer does it target?",
+              "Trusted communications, emergency stop, access control, safe remote operation, device management, functional safety, and supervised autonomy.",
+            ],
+            [
+              "Why does it matter?",
+              "Capable autonomous machines still need clear authority, predictable stop behavior, secure communications, and a credible safety case.",
+            ],
+            [
+              "What changed in 2026?",
+              "FORT expanded from wireless safety and control into outside-in safety, supervised autonomy, edge AI safety integrations, and next-generation worksite emergency stop.",
+            ],
+            [
+              "What is the core risk?",
+              "Safety may fragment across OEM-built systems, industrial automation vendors, cloud/device platforms, and standards-driven procurement preferences.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Why Safety Becomes the Gating Layer",
+      paragraphs: [
+        "Physical AI is full of exciting bottlenecks: world models, robot policies, edge compute, perception, simulation, dexterity, batteries, sensors, and actuators. But one bottleneck sits closer to deployment than almost all of them: safety acceptance.",
+        "A warehouse can be excited about autonomous mobile robots and still hesitate if workers do not trust how the robots stop. A construction site can want autonomous equipment and still reject a system without reliable human override. A farm can benefit from autonomous machinery and still need long-distance stop control because the machine is large, heavy, and moving in open space. A factory can deploy smart equipment only if it fits safety procedures and audit expectations.",
+        "This is where FORT's category matters. Safety infrastructure rarely creates the headline demo, but it can decide whether the demo becomes a purchase order. Industrial buyers do not only ask whether the machine works. They ask whether the machine can be controlled, limited, interrupted, monitored, and trusted under fault conditions.",
+        "The more autonomy enters mixed human-machine environments, the more safety becomes a productivity layer. A weak safety case forces conservative operation, slowdowns, heavy supervision, or no deployment at all. A strong safety architecture can let machines operate closer to their useful performance envelope because the buyer has better guardrails.",
+      ],
+    },
+    {
+      heading: "The Trust Layer Thesis",
+      paragraphs: [
+        "FORT's strongest framing is the trust layer. That does not mean the company owns every part of safety. It means FORT is trying to sit where machine authority, secure communications, human intervention, emergency stop, and operational permissions meet.",
+        "In software, identity and permissions became fundamental infrastructure because companies needed to know who could access what. In physical AI, the equivalent question becomes more serious: who or what is allowed to command a machine that can move, carry, dig, lift, cut, transport, spray, inspect, or operate near people?",
+        "That control problem gets harder as machines become distributed. One site may have multiple robots, multiple operators, fleet supervisors, remote support teams, service vendors, autonomous modes, manual takeover modes, and emergency procedures. Pairing the right controller to the right machine is no longer enough. The system has to manage authority across people, devices, workflows, and environments.",
+        "FORT's opportunity is to make that authority layer dependable. If it becomes part of how customers define safe machine operations, the platform becomes harder to remove. Safety systems often end up inside standard operating procedures, training materials, risk assessments, insurance discussions, and certification packages. That is not glamorous, but it is durable.",
+      ],
+    },
+    {
+      heading: "The Product Stack",
+      paragraphs: [
+        "FORT's product ecosystem is built around several related jobs. Wireless E-Stop and Wireless E-Stop Pro provide remote stop capability. Safe Remote Control and Safe Remote Control Pro give operators trusted manual control and emergency-stop functionality. Vehicle Safety Controller and Endpoint Controller extend machine-to-machine and remote-control communication. Nano Safety Controller Pro provides an embedded receiver for Pro Series systems. FORT Manager adds the software layer for device onboarding, pairing, permissions, and configuration.",
+        "The pattern is important. FORT is not only selling a red button. It is building a connected safety architecture. That architecture has physical devices, embedded receivers, wireless communication, cloud configuration, device identity, user permissions, and workflows for integrating safety into machines.",
+        "Wireless E-Stop Pro is a good example of the direction. FORT positions it as a wearable safety device with SIL 3-certified safety, high-integrity Bluetooth, and up to 200 meters of stop-command range. The point is not simply distance. The point is that modern worksites are mobile. Workers, robots, and equipment are not always beside fixed emergency stop buttons.",
+        "FORT Manager shows the other side of the stack. As deployments scale, companies need to onboard and pair devices, create multi-point configurations, manage organizations, users, permissions, devices, and secure communication. That is the software operational layer beneath the hardware safety layer.",
+      ],
+      tables: [
+        {
+          title: "FORT Product Stack",
+          columns: ["Layer", "FORT Products", "Deployment Role"],
+          rows: [
+            [
+              "Emergency stop",
+              "Wireless E-Stop and Wireless E-Stop Pro.",
+              "Give operators a reliable way to stop machines from a distance in dynamic environments.",
+            ],
+            [
+              "Manual control",
+              "Safe Remote Control and Safe Remote Control Pro.",
+              "Let operators take temporary control or intervene when autonomy needs human authority.",
+            ],
+            [
+              "Machine integration",
+              "Vehicle Safety Controller, Endpoint Controller, and Nano Safety Controller Pro.",
+              "Bring trusted commands and embedded safety communication into robots, vehicles, and equipment.",
+            ],
+            [
+              "Software management",
+              "FORT Manager.",
+              "Configure devices, pair systems, manage users, set permissions, and scale secure deployments.",
+            ],
+            [
+              "Supervised autonomy",
+              "Mapless AI capabilities integrated into the FORT platform.",
+              "Adds remote human-in-the-loop teleoperation and onboard active safety.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "From Safe Control to Supervised Autonomy",
+      paragraphs: [
+        "The Mapless AI acquisition is one of the most important moves in FORT's recent history because it expands the company beyond distributed control into supervised autonomy. Mapless brought vehicle teleoperation and autonomy supervision capabilities. FORT framed the acquisition as adding remote human-in-the-loop teleoperation and onboard active safety.",
+        "That move matters because physical AI rarely jumps from manual control to full autonomy in one clean step. Many deployments need a middle state. Machines operate autonomously most of the time, but a human can supervise, intervene, approve edge cases, or recover the system when confidence drops.",
+        "This is especially important in environments where the economic value is high but the safety tolerance is low: construction, ports, yards, mines, warehouses, defense, agriculture, and autonomous vehicle testing. In those markets, remote supervision can be the bridge between a promising autonomous system and a product a buyer is willing to operate.",
+        "The investor read is that FORT is trying to own more of the operational trust stack. Emergency stop is necessary. Access control is necessary. Safe communications are necessary. But supervised autonomy is closer to the workflow layer where customers ask how machines will actually be operated day to day.",
+      ],
+    },
+    {
+      heading: "Outside-In Safety",
+      paragraphs: [
+        "FORT's June 2026 NVIDIA Halos announcement is strategically important because it moves the safety conversation beyond onboard sensors. Traditional mobile robot safety often starts with the sensors on the machine: lidar, cameras, bumpers, radar, safety scanners, encoders, and software limits. That is necessary, but it can be conservative and limited by what the robot itself can see.",
+        "Outside-in safety adds environmental infrastructure. External sensors and visual AI agents can observe the worksite around the robot and provide additional situational awareness. FORT says its work with NVIDIA Halos uses outside-in sensing to dynamically control robot behavior in real time, with the goal of improving both safety and throughput.",
+        "This is a big idea for physical AI. A robot operating only from its own perspective may slow down because it cannot confidently see around occlusions or understand broader site context. A system with site-level perception can potentially modulate machine behavior more intelligently. The result could be fewer unnecessary slowdowns and better human protection.",
+        "The hard part is certification and trust. Outside-in safety has to be reliable, validated, secure, and explainable enough for industrial buyers. If it works, FORT moves from emergency-stop infrastructure toward safety intelligence for dynamic environments.",
+      ],
+      tables: [
+        {
+          title: "Inside-Out vs. Outside-In Safety",
+          columns: ["Approach", "What It Sees", "Why It Matters"],
+          rows: [
+            [
+              "Inside-out safety",
+              "Sensors mounted on the robot or machine.",
+              "Essential for local protection but limited by onboard perspective and occlusions.",
+            ],
+            [
+              "Outside-in safety",
+              "External infrastructure sensors, visual AI agents, and worksite-level context.",
+              "Can help machines adapt to changing environments before the robot's own sensors see every risk.",
+            ],
+            [
+              "Combined safety",
+              "Robot sensors plus external site awareness plus trusted control commands.",
+              "Creates a richer safety envelope for mixed human-robot environments.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Edge AI Safety Integration",
+      paragraphs: [
+        "The Advantech partnership gives FORT another useful signal. Advantech announced the MIC-735, an industrial edge AI system powered by NVIDIA IGX Thor, with FORT's embedded safety architecture integrated through the Nano Safety Controller Pro. In practical terms, that means safety is being pushed into production-ready edge AI hardware rather than bolted on after a robotics project is already underway.",
+        "This is the right direction for physical AI. The edge computer is becoming a core deployment node for robots and autonomous systems. It handles sensor data, AI inference, control coordination, networking, and sometimes fleet connectivity. If safety has to be integrated separately every time, it slows deployment.",
+        "Embedding safety into edge AI platforms can reduce friction for builders. A robotics developer using an industrial AI box may get compute, sensor connectivity, functional safety integration, and a production hardware path in one architecture. That matters when buyers want fewer integration science projects and more deployable systems.",
+        "The broader thesis is that safety will move closer to the AI stack. Physical AI cannot have models, sensors, compute, and safety living in disconnected silos forever. The systems that win will connect intelligence and control without treating safety as an afterthought.",
+      ],
+    },
+    {
+      heading: "Markets Where FORT Matters",
+      paragraphs: [
+        "FORT's market expands wherever autonomous or remotely operated machines move in imperfect environments. Warehouses need AMRs, AGVs, forklifts, and storage systems to operate around people and inventory. Construction sites need heavy equipment to be stopped or controlled safely. Agriculture needs long-range control for large autonomous machinery. Mining needs remote operation for dangerous environments. Defense needs assured control for uncrewed systems. Delivery robots need public-environment safety.",
+        "These markets look different, but the control questions rhyme. A machine needs a trusted command channel. Operators need a stop path. Devices need pairing and authentication. Supervisors need permission models. Deployment teams need safety documentation. Buyers need confidence that a failure does not become a catastrophic incident.",
+        "FORT's home page says the company works with more than 600 customers across defense, agriculture, logistics, and other sectors. That breadth matters because safety infrastructure becomes more attractive when it is not tied to one robot category. A horizontal safety layer can benefit from the spread of autonomy across many machines.",
+        "The most important markets may be the mixed environments: places where humans and autonomous machines share space. Fully fenced automation can rely on older safety patterns. Mixed sites need dynamic, distributed, and sometimes wireless safety control. That is FORT's stronger arena.",
+      ],
+      tables: [
+        {
+          title: "Where FORT's Control Layer Applies",
+          columns: ["Market", "Why Safety Is Hard", "FORT-Style Value"],
+          rows: [
+            [
+              "Warehouses",
+              "AMRs, forklifts, people, inventory, and dynamic routes share the same floor.",
+              "Wireless stop, fleet-scale control, permissions, and mixed human-robot safety.",
+            ],
+            [
+              "Construction",
+              "Heavy equipment moves around changing sites and exposed workers.",
+              "Remote stop and trusted control for mobile machinery in high-risk environments.",
+            ],
+            [
+              "Agriculture",
+              "Large autonomous machines operate across distance, terrain, and low-infrastructure fields.",
+              "Long-range control, operator override, and fail-safe machine behavior.",
+            ],
+            [
+              "Mining",
+              "Equipment operates in dangerous, low-visibility, and remote environments.",
+              "Remote control and safety command channels that reduce human exposure.",
+            ],
+            [
+              "Defense",
+              "Uncrewed systems require assured control in mission-critical conditions.",
+              "Secure control, interoperability, and rugged safety infrastructure.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Standards, Certification, and Stickiness",
+      paragraphs: [
+        "Safety companies can become sticky because they do not only sell a device. They become part of the safety case. Once a customer trains workers, updates procedures, documents compliance, integrates devices into machines, and gets comfortable with a vendor's control layer, switching has real cost.",
+        "FORT repeatedly emphasizes functional safety, SIL 3-certified systems, safety standards, and certification acceleration. That language matters because industrial buyers evaluate risk differently from consumer buyers. They need to explain why the system is safe enough, who approved it, how it fails, and what procedures govern it.",
+        "The more autonomous machines enter regulated or insurance-sensitive environments, the more this matters. A robot policy company may sell intelligence. A safety platform sells permission to use intelligence in the real world.",
+        "This is also where durability can appear. Once safety infrastructure is embedded in operating procedures, fleet requirements, worker training, and procurement specifications, it can become a default standard for a customer or category. That is the quiet power of the layer.",
+      ],
+    },
+    {
+      heading: "Competitive Landscape",
+      paragraphs: [
+        "FORT's competition is not a single obvious peer. Traditional industrial safety vendors provide emergency stops, relays, scanners, safety PLCs, and certified components. Robot OEMs build their own safety systems. Industrial automation companies offer safety architectures. Cloud and fleet platforms may handle identity and device management. Autonomy companies may add remote supervision internally.",
+        "That fragmentation is both risk and opportunity. It is risk because buyers may prefer existing safety vendors or OEM-native systems. It is opportunity because physical AI is creating new safety patterns that older systems were not designed around: mobile robots, mixed sites, remote supervision, wireless control, edge AI perception, and dynamic worksite behavior.",
+        "FORT's advantage is focus. It is not trying to be a general robot company. It is trying to build the trust and control layer across many machines. That lets it partner with robot makers, edge AI hardware providers, autonomy companies, and industrial customers rather than competing with every machine maker directly.",
+        "The question is whether FORT can become a default horizontal layer before OEMs and incumbent safety vendors absorb the category. The answer will depend on certification credibility, product reliability, ecosystem partnerships, and whether customers treat safety control as independent infrastructure rather than a feature bundled into each machine.",
+      ],
+    },
+    {
+      heading: "Business Model Possibilities",
+      paragraphs: [
+        "FORT's business model likely combines hardware, software, enterprise configuration, support, and possibly recurring platform revenue. Safety devices and embedded controllers create a hardware revenue base. FORT Manager and fleet-scale configuration create software value. Supervised autonomy and outside-in safety could expand the platform into higher-value operational workflows.",
+        "The company can sell to machine builders, system integrators, and end users. Machine builders need safety components they can integrate into products. End users need control and supervision for mixed fleets. Integrators need a trusted safety layer that helps them get deployments accepted. Each buyer has different incentives, but all care about reducing deployment risk.",
+        "The most attractive version is a platform that expands over time. A customer starts with wireless emergency stop, adds device management, expands to supervised autonomy, connects external sensing, and eventually standardizes safety control across a fleet. That progression turns a hardware accessory into an account-level infrastructure layer.",
+        "The risk is that hardware revenue alone may not scale like software, while safety software has to clear a high trust bar. FORT needs to balance certification discipline with platform expansion. Moving too slowly limits market size. Moving too fast risks trust.",
+      ],
+    },
+    {
+      heading: "Investor Case",
+      paragraphs: [
+        "The bull case is that safety and trusted control become unavoidable infrastructure for physical AI. As robots and autonomous machines leave controlled spaces, buyers will need emergency stop, human override, device identity, access control, communication integrity, remote supervision, and safety-aware behavior. FORT is positioned directly in that demand path.",
+        "The second bull case is that FORT benefits from the whole physical AI market without betting on one robot body. Whether the winning machines are AMRs, humanoids, autonomous tractors, construction equipment, mining vehicles, delivery robots, forklifts, defense systems, or industrial arms, they all need trusted control if they operate near people and valuable assets.",
+        "The third bull case is stickiness. Safety systems often attach to procedures, compliance reviews, risk assessments, worker training, certifications, and procurement requirements. Once deployed, they may be harder to replace than a generic software tool.",
+        "The bear case is that the market fragments. OEMs may internalize safety. Incumbent industrial safety vendors may adapt quickly. Customers may prefer familiar certified suppliers. Some deployments may remain fenced or conservative enough that advanced dynamic safety is not needed. FORT has to show that its modern trust layer is meaningfully better than existing approaches.",
+      ],
+      tables: [
+        {
+          title: "FORT Robotics: Bull Case vs. Bear Case",
+          columns: ["View", "Argument", "Signal to Watch"],
+          rows: [
+            [
+              "Bull case",
+              "Trusted control becomes a required infrastructure layer for physical AI.",
+              "More OEMs and end users standardize FORT across mobile machines and mixed worksites.",
+            ],
+            [
+              "Bull case",
+              "Safety systems become sticky once embedded in certification, policy, training, and procurement.",
+              "Customers expand from emergency stop into FORT Manager, supervised autonomy, and outside-in safety.",
+            ],
+            [
+              "Bull case",
+              "FORT benefits from autonomy growth without needing to pick the winning robot body.",
+              "Adoption spreads across warehouses, construction, agriculture, mining, defense, and transportation.",
+            ],
+            [
+              "Bear case",
+              "OEMs and incumbents absorb safety as part of their own platforms.",
+              "FORT is limited to niche integrations or accessory-level deployments.",
+            ],
+            [
+              "Execution risk",
+              "Expanding into dynamic safety and supervised autonomy raises the trust bar.",
+              "Customers demand certification evidence, uptime, reliability, and clear fault behavior before scaling.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What to Watch Next",
+      paragraphs: [
+        "First, watch OEM and edge AI integrations. Advantech's MIC-735 integration is a useful signal because it embeds FORT safety into production-oriented edge AI hardware. More integrations like that would make FORT easier to adopt at design time instead of after the machine is already built.",
+        "Second, watch outside-in safety pilots. NVIDIA Halos gives FORT a path into more dynamic, sensor-rich safety architectures. The key question is whether outside-in safety can become certifiable and operationally trusted, not only impressive in demonstrations.",
+        "Third, watch Mapless AI integration. Remote supervision and onboard active safety can expand FORT's value, but only if they integrate cleanly with the existing control platform. The market wants fewer fragmented safety layers, not more.",
+        "Fourth, watch customer standardization. A single emergency-stop deployment is useful. A customer standardizing FORT across many robot types, sites, or equipment classes is more important.",
+        "Fifth, watch standards. As physical AI safety standards mature, FORT could benefit if its products map naturally to compliance expectations. It could also face pressure if standards favor incumbent architectures or OEM-native control systems.",
+      ],
+    },
+    {
+      heading: "The Bottom Line",
+      paragraphs: [
+        "FORT Robotics matters because physical AI needs a safety and control layer before it can become normal infrastructure. Better models and better robots create possibility. Trusted control creates permission.",
+        "The company sits in an unglamorous but important part of the stack: emergency stop, secure communication, access control, device pairing, remote supervision, functional safety, and dynamic worksite awareness. These are the things buyers care about when machines move near people and assets.",
+        "If physical AI spreads into mixed environments, FORT's trust layer can become more valuable with every deployment. The company wins if safety becomes a platform decision rather than an accessory purchase. It loses if OEMs, incumbents, and narrow compliance requirements fragment the market before a horizontal control layer becomes the default.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using FORT Robotics' official platform, products, FORT Manager, Wireless E-Stop Pro, NVIDIA Halos, Advantech IGX Thor, Mapless AI acquisition, and industry materials. FORT is a private company, so claims about revenue, customer scale, margins, and deployment economics should be treated as company-reported information and Black Scarab analysis rather than audited public financials.",
+      ],
+    },
+  ],
+  sources: [
+    "FORT Robotics official site and platform overview",
+    "FORT Robotics product ecosystem",
+    "FORT Manager product page",
+    "FORT Wireless E-Stop Pro announcement",
+    "FORT and NVIDIA Halos outside-in safety announcement",
+    "FORT acquisition of Mapless AI",
+    "FORT and Advantech NVIDIA IGX Thor safety partnership",
+    "Black Scarab analysis of physical AI safety, functional safety, trusted control, and robotics deployment economics",
+  ],
+  sourceLinks: [
+    {
+      label: "FORT Robotics official site",
+      url: "https://www.fortrobotics.com/",
+    },
+    {
+      label: "FORT Robotics platform",
+      url: "https://www.fortrobotics.com/platform",
+    },
+    {
+      label: "FORT product ecosystem",
+      url: "https://www.fortrobotics.com/products",
+    },
+    {
+      label: "FORT Manager",
+      url: "https://www.fortrobotics.com/fort-manager",
+    },
+    {
+      label: "Wireless E-Stop Pro",
+      url: "https://www.fortrobotics.com/news/introducing-the-wireless-e-stop-pro-next-generation-worksite-safety",
+    },
+    {
+      label: "FORT and NVIDIA Halos outside-in safety",
+      url: "https://www.fortrobotics.com/news/outside-in-safety-with-nvidia-halos-for-robotics",
+    },
+    {
+      label: "FORT acquires Mapless AI",
+      url: "https://www.fortrobotics.com/news/fort-acquires-mapless-ai",
+    },
+    {
+      label: "Advantech and FORT safety for physical AI",
+      url: "https://www.fortrobotics.com/news/advantech-fort-partner-on-safety-for-physical-ai-powered-by-nvidia-igx-thor",
+    },
+  ],
+});
+
 const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
   slug: "top-15-physical-ai-infrastructure-companies",
   title: "Top 15 Physical AI Infrastructure Companies to Watch in 2026",
@@ -7488,6 +7853,7 @@ export const caseStudies: CaseStudyArticle[] = [
   physicalIntelligenceDeepDive(),
   skildAiDeepDive(),
   viamDeepDive(),
+  fortRoboticsDeepDive(),
   physicalAiInfrastructureCompaniesGuide(),
   intuitiveDaVinci5DeepDive(),
   amazonProteusDeepDive(),
