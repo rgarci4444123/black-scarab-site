@@ -3447,6 +3447,354 @@ const fortRoboticsDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const edgeImpulseDeepDive = (): CaseStudyArticle => ({
+  slug: "edge-impulse-embedded-ai-mlops-physical-ai-guide",
+  title:
+    "Edge Impulse Deep Dive: Embedded AI MLOps, TinyML, and the Physical AI Deployment Layer",
+  summary:
+    "A business and investor deep dive on Edge Impulse, the embedded AI platform helping teams collect sensor data, train models, optimize them for constrained hardware, and deploy physical AI across microcontrollers, sensors, cameras, gateways, NPUs, CPUs, GPUs, and edge servers.",
+  publishedLabel: "Physical AI Series · Published June 29, 2026",
+  publishedDate: "2026-06-29",
+  typeLabel: "Physical AI Series",
+  formatLabel: "Company deep dive",
+  industry: "Cross-Industry",
+  image: "/article-images/edge-impulse-embedded-ai-mlops-physical-ai-guide.png",
+  imageAlt:
+    "Embedded AI collage with sensors, cameras, industrial robots, gateways, smart devices, environmental monitoring, and edge inference hardware.",
+  seoDescription:
+    "A 2026 Edge Impulse deep dive covering embedded AI MLOps, TinyML, edge deployment, sensor data, model optimization, microcontrollers, NPUs, gateways, cameras, predictive maintenance, quality inspection, anomaly detection, and physical AI deployment economics.",
+  tags: [
+    "Edge Impulse",
+    "edge AI",
+    "embedded AI",
+    "TinyML",
+    "MLOps",
+    "physical AI",
+    "microcontrollers",
+    "sensor data",
+    "predictive maintenance",
+    "Qualcomm",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Edge Impulse matters because most physical AI will not run in perfect data-center conditions. It will run where machines actually live: on microcontrollers, sensor boards, cameras, gateways, embedded processors, industrial PCs, battery-powered devices, and small edge servers that have limited power, memory, bandwidth, and thermal headroom.",
+        "That makes the company's layer less theatrical than a humanoid robot and more important than it first appears. Edge Impulse sits close to the conversion point where an AI idea becomes a deployable physical product. A model that works in a notebook is interesting. A model that fits on the target device, survives field noise, meets latency requirements, respects the power budget, and can be updated after installation is infrastructure.",
+        "The physical AI market will include large robots, but it will also include thousands of small, practical deployments: vibration monitoring on motors, audio classifiers for anomalies, low-power quality inspection, smart tools, medical devices, environmental sensing, agricultural monitoring, production-line vision, and embedded inference inside products that cannot send every signal to the cloud.",
+        "Edge Impulse is built around that reality. The company helps teams collect real-world data, design signal-processing and model pipelines, optimize models for constrained hardware, and deploy them across a wide range of edge targets. If physical AI is going to become operational instead of experimental, this is one of the layers that has to work.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Edge Impulse is an edge AI and embedded machine learning platform for building, optimizing, and deploying models on physical devices. The company positions its platform around the full edge AI workflow: data acquisition, signal processing, AI model development, optimization, and deployment.",
+        "The official site describes support across microcontrollers and CPUs, GPUs and NPUs, gateways and edge servers, containers, sensors, and cameras. That hardware breadth is strategically important because edge AI is fragmented by default. A team may prototype on one development board, validate on another, and ship on a production module with different memory, acceleration, and firmware constraints.",
+        "The company also claims a large developer and project base, listing more than 140,000 projects and more than 170,000 developers on its site. That matters because embedded AI markets often begin with developers, field engineers, data scientists, and product teams trying to prove a use case before the budget turns into a formal enterprise platform decision.",
+        "The investor lens is that Edge Impulse is not only selling model training. It is selling the operational bridge between sensor data and deployed intelligence. If physical AI spreads into devices that are smaller, cheaper, more numerous, and more power-constrained than robots, that bridge becomes a large market.",
+      ],
+      tables: [
+        {
+          title: "Edge Impulse at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "A platform for building, optimizing, and deploying embedded AI and edge machine learning applications.",
+            ],
+            [
+              "What layer does it target?",
+              "Data collection, signal processing, model training, model optimization, deployment, and edge AI workflow management.",
+            ],
+            [
+              "Why does it matter?",
+              "Physical AI has to run on real devices with hard constraints around latency, power, memory, bandwidth, heat, and reliability.",
+            ],
+            [
+              "Where does it fit?",
+              "Between raw sensor data and deployed intelligence on microcontrollers, cameras, gateways, embedded processors, and edge servers.",
+            ],
+            [
+              "What is the core risk?",
+              "Chip vendors, cloud providers, open-source tools, and vertical platforms may each pull parts of embedded AI development into their own ecosystems.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Why Edge Deployment Is the Conversion Point",
+      paragraphs: [
+        "The easiest version of AI development happens away from the machine. A team collects a clean dataset, trains in the cloud, tests on a workstation, and shows a demo that makes the model look ready. The harder version begins when the model has to run on the actual device inside the actual environment.",
+        "That is where edge AI becomes unforgiving. The target board may have a few megabytes of memory. The sensor stream may be noisy. The enclosure may trap heat. The network may be unreliable. The application may need an answer in milliseconds. The battery may need to last months. The device may need to work after dust, vibration, temperature swings, lighting changes, or operator abuse.",
+        "This is why Edge Impulse sits at an important point in the physical AI stack. It is not enough to build a model. The model has to become a deployable artifact that matches a device, a sensor, a duty cycle, and a business workflow.",
+        "A production-line camera model has to run at line speed. A vibration model has to distinguish early failure signals from normal operating variation. An audio model has to handle background noise. A medical or industrial device has to be repeatable and documented. These are not abstract AI problems. They are productization problems.",
+      ],
+    },
+    {
+      heading: "The Embedded AI MLOps Thesis",
+      paragraphs: [
+        "The phrase MLOps can become vague in cloud AI, but it becomes concrete at the edge. A team needs to know where the data came from, how it was labeled, which signal-processing steps were used, which model version was trained, what optimizations were applied, which device target was selected, and how the final artifact behaves on hardware.",
+        "Edge Impulse's value is that it packages much of that workflow for embedded teams. The practical pipeline is familiar: capture representative data, extract features, train a model, test it against held-out conditions, optimize it for the target device, generate deployment artifacts, and repeat as field data improves.",
+        "That workflow matters because embedded AI sits between disciplines. Data scientists may understand models but not microcontroller limits. Firmware engineers may understand devices but not training pipelines. Product teams may understand the use case but not the difference between a demo classifier and a robust field model. A platform that gives these groups a shared workflow can reduce the cost of getting to a real deployment.",
+        "The deeper opportunity is not one model. It is repeatability. If a company can build one vibration model for one motor, then another for a pump, then another for a compressor, and eventually create a repeatable deployment pattern, the edge AI program becomes an operating capability rather than a one-off experiment.",
+      ],
+      tables: [
+        {
+          title: "Edge AI Workflow",
+          columns: ["Step", "What Happens", "Why It Matters"],
+          rows: [
+            [
+              "Data acquisition",
+              "Capture sensor, audio, image, motion, or machine data from real devices and environments.",
+              "The quality of the field data usually determines whether the model survives deployment.",
+            ],
+            [
+              "Signal processing",
+              "Transform raw streams into features that expose the useful pattern.",
+              "Embedded systems often need efficient features before they need larger models.",
+            ],
+            [
+              "Model training",
+              "Train classifiers, anomaly detectors, vision models, or regression models for the application.",
+              "The model has to match the physical signal and the business decision.",
+            ],
+            [
+              "Optimization",
+              "Compress, quantize, or tune the model for target hardware.",
+              "A model that cannot fit, run fast enough, or stay within power limits is not deployable.",
+            ],
+            [
+              "Deployment",
+              "Generate artifacts for devices, containers, SDKs, or edge runtime environments.",
+              "The final output has to become part of a physical product or operational system.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Data Is the Real Starting Point",
+      paragraphs: [
+        "Edge AI is sometimes described as if the hard part is choosing the model architecture. In many physical deployments, the harder part is getting the right data. A machine-learning model trained on clean lab data can fail when the device is mounted differently, the operator changes behavior, the motor ages, the lighting shifts, the background noise changes, or the sensor is exposed to weather.",
+        "Edge Impulse's platform is valuable because it begins near the data collection layer. That is where embedded AI projects either become grounded or drift into simulation. A vibration model needs examples from healthy machines, failing machines, different loads, different speeds, and different mounting conditions. A camera model needs difficult lighting, occlusions, reflections, dirty lenses, and the weird corner cases that occur during a real shift.",
+        "This is especially important for small and medium deployments. A factory may not have a giant labeled dataset for a single quality defect. A medical-device company may need to collect controlled signals under strict conditions. A field sensor company may have to work with sparse events. A platform that makes data capture and iteration easier can unlock projects that would otherwise be too custom.",
+        "The hidden lesson is that physical AI starts before modeling. It starts with instrumentation. If a company does not capture the right signal, at the right sampling rate, from the right location, under the right operating conditions, the model layer cannot rescue the project.",
+      ],
+    },
+    {
+      heading: "Hardware Diversity Is the Market",
+      paragraphs: [
+        "Edge Impulse's hardware breadth is central to the thesis. The edge is not one compute environment. It includes tiny microcontrollers, larger microprocessors, AI accelerators, NPUs, GPUs, industrial PCs, gateways, smart cameras, sensors, and containers running on edge servers.",
+        "This diversity is why embedded AI is difficult to scale. Each hardware target brings different memory limits, supported operators, compilers, accelerators, firmware constraints, camera interfaces, audio pipelines, and power profiles. The market does not have one universal edge AI runtime that neatly solves every deployment.",
+        "A team trying to deploy a model across devices can get trapped in toolchain work. One model runs on a development board but not the production hardware. One accelerator supports part of the model but not all of it. One camera pipeline changes preprocessing. One firmware update changes timing. The business wanted anomaly detection. The engineering team ends up fighting portability.",
+        "Edge Impulse's opportunity is to reduce that friction. If the platform can help teams move from sensor to model to deployable artifact across many target classes, it becomes a portability layer for embedded intelligence.",
+      ],
+      tables: [
+        {
+          title: "Why Hardware Breadth Matters",
+          columns: ["Target Class", "Typical Constraint", "Physical AI Use Case"],
+          rows: [
+            [
+              "Microcontrollers",
+              "Very limited memory, compute, and power budget.",
+              "Wake-word detection, simple anomaly detection, motion sensing, smart tools, and battery-powered devices.",
+            ],
+            [
+              "Smart cameras",
+              "Real-time image processing, lighting variation, heat, and bandwidth limits.",
+              "Quality inspection, occupancy sensing, safety monitoring, and on-device vision.",
+            ],
+            [
+              "Gateways",
+              "Multiple sensor streams, local aggregation, security, and industrial connectivity.",
+              "Factory monitoring, predictive maintenance, fleet telemetry, and edge preprocessing.",
+            ],
+            [
+              "NPUs and GPUs",
+              "Model compatibility, accelerator utilization, and thermal design.",
+              "Higher-throughput vision, audio, multimodal sensing, and local inference for more complex tasks.",
+            ],
+            [
+              "Edge servers",
+              "Deployment management, containers, networking, and system integration.",
+              "Site-level inference, industrial analytics, multi-camera processing, and hybrid cloud-edge systems.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "TinyML Is Not Small Strategically",
+      paragraphs: [
+        "TinyML can sound like a niche because the devices are small. Strategically, the opposite may be true. Small models can reach places large models cannot: inside consumer products, industrial devices, medical instruments, farm equipment, meters, tools, appliances, wearables, and sensors that ship in large volumes.",
+        "The economics are different from robotics. A humanoid robot may be expensive, visible, and difficult to deploy. A tiny anomaly model on a sensor can be cheap, quiet, and invisible. It may not attract a viral video, but it can create real operating value if it prevents downtime, reduces inspection labor, catches defects, lowers cloud bandwidth, or adds intelligence to a product line.",
+        "This is why Edge Impulse belongs in a physical AI infrastructure map. It represents a version of physical AI that does not need a robot body. The intelligence is embedded directly into the device, the camera, the machine, or the sensor node.",
+        "The market could be broad precisely because many use cases are modest. A company may not approve a massive robotics program, but it may approve a sensor upgrade, a smart camera pilot, or an embedded model inside the next product revision. Edge AI adoption can accumulate through many small operational wins.",
+      ],
+    },
+    {
+      heading: "Industrial Use Cases",
+      paragraphs: [
+        "The most practical Edge Impulse use cases are the ones where local inference changes the operating equation. Predictive maintenance is a classic example. A vibration or audio model running near a motor, pump, fan, or compressor can identify abnormal behavior without streaming raw data continuously to the cloud.",
+        "Quality inspection is another strong category. A camera at the edge can classify defects, detect missing parts, flag packaging errors, or monitor surface conditions close to the production line. If inference happens locally, the system can reduce latency and bandwidth while keeping sensitive production images inside the facility.",
+        "Environmental and condition monitoring can also benefit. Sensors can detect air-quality changes, equipment misuse, abnormal motion, occupancy, temperature patterns, acoustic signatures, or field conditions. In agriculture, construction, logistics, healthcare, and energy, those signals can support alerts, automation, or better maintenance scheduling.",
+        "The common thread is not glamour. It is usefulness. Edge Impulse is strongest where a small model on a physical device can turn a raw signal into an action: inspect, alert, stop, classify, count, predict, or route.",
+      ],
+      tables: [
+        {
+          title: "Where Edge Impulse Can Matter",
+          columns: ["Use Case", "Signal", "Business Value"],
+          rows: [
+            [
+              "Predictive maintenance",
+              "Vibration, current, temperature, or audio signatures from machines.",
+              "Detect early failure, reduce downtime, prioritize maintenance, and avoid unnecessary inspections.",
+            ],
+            [
+              "Quality inspection",
+              "Images, video, or sensor readings from production lines.",
+              "Catch defects earlier, reduce manual inspection load, and improve consistency.",
+            ],
+            [
+              "Smart tools",
+              "Motion, force, audio, location, or usage patterns.",
+              "Detect misuse, improve training, validate process steps, and create differentiated products.",
+            ],
+            [
+              "Medical devices",
+              "Physiological, acoustic, motion, or optical signals.",
+              "Enable local classification or monitoring while reducing cloud dependence and latency.",
+            ],
+            [
+              "Environmental sensing",
+              "Air, sound, motion, temperature, humidity, or chemical signals.",
+              "Turn distributed sensors into local decision points for safety, operations, and compliance.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Qualcomm Angle",
+      paragraphs: [
+        "Edge Impulse now sits inside a broader Qualcomm edge AI orbit. The Edge Impulse site identifies the company c/o Qualcomm Incorporated, and public reporting around Qualcomm's 2025 Arduino acquisition framed Arduino, Foundries.io, and Edge Impulse as parts of a larger edge AI developer strategy.",
+        "That context matters because edge AI platforms are shaped by silicon ecosystems. A model deployment platform becomes more powerful when it is close to processors, accelerators, development boards, reference designs, firmware, and developer communities. Qualcomm has clear incentives to make AI easier to build on edge devices that use its chips and modules.",
+        "The strategic upside is distribution and hardware alignment. Edge Impulse could benefit from Qualcomm's embedded, industrial, IoT, automotive, and developer channels. It could also become part of a larger stack that connects devices, software, AI models, and commercialization pathways.",
+        "The risk is openness. Edge Impulse's value depends on broad hardware support. If customers perceive the platform as too closely tied to one silicon vendor, some may prefer neutral tooling, cloud-native workflows, or open-source deployment stacks. The most valuable version of Edge Impulse remains a practical bridge across many targets, not only one corporate ecosystem.",
+      ],
+    },
+    {
+      heading: "Competitive Landscape",
+      paragraphs: [
+        "Edge Impulse competes against fragmentation as much as it competes against any single company. Cloud providers have edge AI services. Chip vendors provide SDKs and model optimization tools. Open-source frameworks support training, quantization, and deployment. Embedded teams build internal toolchains. Vertical AI vendors package models for specific workflows such as inspection, maintenance, or audio analytics.",
+        "That makes the category hard to define. A customer may not wake up looking for an embedded AI MLOps platform. They may start with a defect problem, a downtime problem, a sensing problem, or a product feature. The platform has to become visible because it saves time, lowers engineering risk, or makes deployment feasible across target devices.",
+        "The best defense is workflow depth. If Edge Impulse can handle data capture, feature design, model training, hardware-aware optimization, deployment artifact generation, and team collaboration in one place, it is more than a utility. It becomes the environment where embedded AI projects are born and repeated.",
+        "The competitive threat is that parts of the workflow can be commoditized. Training tools improve. Model compression becomes easier. Chip SDKs get better. Cloud platforms extend further to the edge. Edge Impulse has to stay valuable by making the entire path from signal to deployed model faster and more reliable than stitching together alternatives.",
+      ],
+    },
+    {
+      heading: "Business Model Possibilities",
+      paragraphs: [
+        "Edge Impulse's business model can compound through three channels: developers, enterprises, and silicon ecosystems. Developers create adoption and project volume. Enterprises pay for collaboration, governance, security, deployment support, private workflows, and production use. Hardware partners benefit when their devices become easier AI deployment targets.",
+        "That mix is attractive because embedded AI often begins outside the formal buying center. An engineer proves a use case. A product team sees customer value. An operations leader wants a pilot. A hardware vendor wants an example project. Over time, those experiments can become enterprise standards or product features.",
+        "The enterprise opportunity is especially important. Serious deployments need more than a successful model. They need repeatable data pipelines, access control, versioning, documentation, target-device validation, deployment procedures, and support. That is where a platform can monetize beyond hobbyist or prototype usage.",
+        "The hardware ecosystem opportunity is also significant. If Edge Impulse makes certain boards, sensors, cameras, chips, or modules easier to use for AI, hardware vendors have an incentive to support the platform. That can turn Edge Impulse into a demand-generation layer for the embedded AI ecosystem.",
+      ],
+    },
+    {
+      heading: "Investor Case",
+      paragraphs: [
+        "The bull case is that edge AI becomes one of the most common forms of physical AI. Not every company will buy robots. Many companies will add intelligence to machines, tools, cameras, sensors, devices, and gateways they already use. Edge Impulse benefits if those projects need a practical way to move from data to deployable model.",
+        "The second bull case is volume. Physical AI at the edge can appear in many small use cases rather than a few huge programs. A tiny classifier in a product line, a vibration model on industrial equipment, a camera model in a factory, and an audio model in a medical device are all different deployments, but they rhyme technically. A platform that supports repeatability can benefit from that breadth.",
+        "The third bull case is ecosystem leverage. If Edge Impulse remains broadly supported while also benefiting from Qualcomm's edge AI strategy, it can sit near developers, device makers, chip vendors, and enterprises at the same time.",
+        "The bear case is commoditization and capture. Model optimization may become easier. Chip vendors may bundle enough tooling to reduce the need for an independent platform. Cloud platforms may own enterprise edge workflows. Vertical vendors may hide the model layer inside complete solutions. Edge Impulse has to prove that its workflow saves enough time and deployment pain to remain a platform rather than a feature.",
+      ],
+      tables: [
+        {
+          title: "Edge Impulse: Bull Case vs. Bear Case",
+          columns: ["View", "Argument", "Signal to Watch"],
+          rows: [
+            [
+              "Bull case",
+              "Embedded AI becomes a default way to add intelligence to sensors, cameras, tools, machines, and devices.",
+              "More companies move from pilots into production deployments across multiple device classes.",
+            ],
+            [
+              "Bull case",
+              "Hardware fragmentation makes a cross-target workflow valuable.",
+              "Edge Impulse expands supported targets and becomes the standard path for partner hardware.",
+            ],
+            [
+              "Bull case",
+              "Qualcomm's edge AI ecosystem gives Edge Impulse better distribution and silicon alignment.",
+              "Developer tools, hardware reference designs, and enterprise channels increasingly route through the platform.",
+            ],
+            [
+              "Bear case",
+              "Chip SDKs, cloud tools, and open-source workflows absorb enough of the platform's value.",
+              "Teams use Edge Impulse for prototypes but switch to internal or vendor-native tooling for production.",
+            ],
+            [
+              "Execution risk",
+              "Edge projects can be highly custom and field-data dependent.",
+              "The company has to show repeatability across industries, sensors, hardware targets, and deployment environments.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What to Watch Next",
+      paragraphs: [
+        "First, watch production conversion. Edge Impulse already has developer scale. The more important question is how many projects move from prototype to commercial deployment, enterprise standard, or embedded product feature.",
+        "Second, watch Qualcomm integration. The strongest version gives developers easier access to Qualcomm-powered edge AI hardware while preserving broad support for other target devices. Too much lock-in would narrow the platform's appeal.",
+        "Third, watch hardware target expansion. Physical AI will spread across MCUs, NPUs, GPUs, CPUs, cameras, gateways, edge servers, and containers. Each supported target expands the market, but only if deployment is reliable enough for real products.",
+        "Fourth, watch vertical templates. Predictive maintenance, audio anomaly detection, computer vision inspection, smart tools, medical devices, and environmental monitoring can each become repeatable starting points. A platform that turns use cases into templates can scale faster than one that starts from scratch every time.",
+        "Fifth, watch governance. As edge AI moves into regulated, industrial, and medical contexts, teams will care more about version control, data provenance, validation, access permissions, and update paths. Embedded AI MLOps becomes more valuable as deployment seriousness rises.",
+      ],
+    },
+    {
+      heading: "The Bottom Line",
+      paragraphs: [
+        "Edge Impulse matters because physical AI does not end at the robot, the GPU cluster, or the simulation environment. A large part of the market will live inside constrained devices that need to sense, classify, detect, and act locally.",
+        "That world needs a practical bridge between field data and deployed intelligence. Edge Impulse is trying to be that bridge for embedded teams, hardware vendors, enterprises, and developers who need AI to run where the physical signal is created.",
+        "The company's opportunity is broad but demanding. It has to stay useful across many hardware targets, many sensor types, many industries, and many levels of technical maturity. If it does, Edge Impulse could become one of the quiet infrastructure layers behind a large share of physical AI deployments.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using Edge Impulse's official site, official documentation, public technical materials on TinyML and embedded AI MLOps, and reporting on Qualcomm's broader edge AI developer strategy. Edge Impulse is not a standalone public company, so claims about revenue, margins, production deployment counts, and customer economics should be treated as company-reported information and Black Scarab analysis rather than audited public financials.",
+      ],
+    },
+  ],
+  sources: [
+    "Edge Impulse official site and platform positioning",
+    "Edge Impulse official documentation",
+    "Edge Impulse technical paper on MLOps for Tiny Machine Learning",
+    "Reporting on Qualcomm, Arduino, Foundries.io, and Edge Impulse as parts of Qualcomm's edge AI developer strategy",
+    "Black Scarab analysis of embedded AI, TinyML, edge deployment, hardware fragmentation, and physical AI economics",
+  ],
+  sourceLinks: [
+    {
+      label: "Edge Impulse official site",
+      url: "https://www.edgeimpulse.com/",
+    },
+    {
+      label: "Edge Impulse documentation",
+      url: "https://docs.edgeimpulse.com/",
+    },
+    {
+      label: "Edge Impulse TinyML MLOps paper",
+      url: "https://arxiv.org/abs/2212.03332",
+    },
+    {
+      label: "Qualcomm and Arduino edge AI developer strategy",
+      url: "https://www.theverge.com/news/794452/qualcomm-arduino-acquisition-uno-q",
+    },
+  ],
+});
+
 const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
   slug: "top-15-physical-ai-infrastructure-companies",
   title: "Top 15 Physical AI Infrastructure Companies to Watch in 2026",
@@ -7854,6 +8202,7 @@ export const caseStudies: CaseStudyArticle[] = [
   skildAiDeepDive(),
   viamDeepDive(),
   fortRoboticsDeepDive(),
+  edgeImpulseDeepDive(),
   physicalAiInfrastructureCompaniesGuide(),
   intuitiveDaVinci5DeepDive(),
   amazonProteusDeepDive(),
