@@ -4160,6 +4160,363 @@ const roboflowDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const luxonisDeepDive = (): CaseStudyArticle => ({
+  slug: "luxonis-oak-spatial-ai-cameras-physical-ai-guide",
+  title:
+    "Luxonis Deep Dive: OAK Cameras, Spatial AI, and the Edge Perception Computer",
+  summary:
+    "A business and investor deep dive on Luxonis, the company behind OAK spatial AI cameras, DepthAI, OAK 4, and Luxonis Hub, showing why smart cameras can become small perception computers for physical AI deployments.",
+  publishedLabel: "Physical AI Series · Published July 1, 2026",
+  publishedDate: "2026-07-01",
+  typeLabel: "Physical AI Series",
+  formatLabel: "Company deep dive",
+  industry: "Cross-Industry",
+  image: "/article-images/luxonis-oak-spatial-ai-cameras-physical-ai-guide.png",
+  imageAlt:
+    "Luxonis-style spatial AI camera with depth sensing across robotic arms, AMRs, retail aisles, quadrupeds, and 3D point cloud perception scenes.",
+  seoDescription:
+    "A 2026 Luxonis deep dive covering OAK spatial AI cameras, OAK-D Pro, OAK 4, DepthAI, Luxonis Hub, stereo depth, on-device inference, edge perception, robotics, AMRs, manufacturing, logistics, smart cities, and physical AI camera economics.",
+  tags: [
+    "Luxonis",
+    "OAK cameras",
+    "DepthAI",
+    "OAK 4",
+    "spatial AI",
+    "edge AI",
+    "stereo depth",
+    "computer vision",
+    "robotics",
+    "physical AI",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Luxonis represents a hardware pattern that will become common in physical AI: the sensor is no longer just a sensor. OAK cameras combine RGB imaging, stereo depth, onboard AI processing, and the DepthAI software stack, turning the camera into a small perception computer.",
+        "That matters because many edge systems cannot afford to send raw video everywhere or rely on a large host computer at every sensing point. A camera that can produce depth-aware detections, tracks, point clouds, and spatial coordinates locally changes the cost and architecture of a deployment.",
+        "The deeper idea is simple. The useful unit in physical AI is not always a robot, a GPU server, or a cloud model. Sometimes it is a smart camera mounted above a conveyor, on an AMR, inside a kiosk, near a doorway, on a farm machine, or at the edge of a production cell. If that camera can see, infer, measure, and report locally, it becomes part of the control fabric.",
+        "Luxonis is especially relevant at the prototype-to-pilot stage. Developers can build meaningful spatial AI systems without immediately buying industrial vision rigs or expensive robot platforms. That makes OAK cameras useful in robotics labs, retail analytics, safety systems, education, smart-city experiments, and early industrial deployments.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Luxonis builds AI depth cameras and edge vision systems under the OAK brand. The company describes its platform as hardware and software that gives machines real-time human perception. Its current product story centers on stereo depth, efficient edge vision, open-source DepthAI APIs, real-world data collection, self-healing calibration, sensor fusion, and easier system integration.",
+        "The older OAK-D Pro remains a clear example of the wedge: an accessible Series 2 camera with active stereo, IR illumination, a 12MP central RGB option, IP66 enclosure, and USB connectivity. The newer OAK 4 family pushes the platform upmarket with 52 TOPS AI processing, six-core CPU plus GPU, PoE and USB connectivity, IP67 ruggedization, wide temperature range, and Luxonis Hub management.",
+        "The strategic point is that Luxonis is not only selling cameras. It is selling a local perception node. That node can include RGB, stereo depth, IMU, audio, IR illumination, active stereo, onboard inference, model deployment, fleet management, remote debugging, data collection, and application updates.",
+        "For investors, the key question is whether Luxonis can move from developer enthusiasm into repeatable commercial design wins. The hardware is accessible, the software ecosystem is useful, and the category is right. The next question is how often spatial AI cameras become standard parts inside larger products and deployments.",
+      ],
+      tables: [
+        {
+          title: "Luxonis at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "A company building OAK AI depth cameras, edge vision systems, DepthAI software, and Luxonis Hub management tooling.",
+            ],
+            [
+              "What layer does it target?",
+              "The edge perception layer: RGB, depth, onboard inference, spatial coordinates, device management, and app deployment near the camera.",
+            ],
+            [
+              "Why does it matter?",
+              "Physical AI needs cheap, compact, deployable perception nodes that can understand scenes locally without always depending on a host computer or cloud service.",
+            ],
+            [
+              "What is the wedge?",
+              "Developer-friendly spatial AI hardware that can move from prototypes into pilots and eventually production systems.",
+            ],
+            [
+              "What is the core risk?",
+              "Developer adoption may not automatically translate into high-volume OEM design wins if industrial buyers choose incumbent vision vendors, custom sensor stacks, or competing depth platforms.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Sensor Becomes a Computer",
+      paragraphs: [
+        "The most important Luxonis idea is architectural. A normal camera sends images somewhere else. A smart perception camera can process the scene locally, reduce bandwidth, protect privacy, lower latency, and output higher-level information.",
+        "That shift matters because raw video is expensive to move and awkward to use. A factory with dozens of cameras, a warehouse with many aisles, or a robot fleet with multiple sensors does not want every pixel flowing to a central server forever. What the system really needs is a smaller set of derived facts: object class, location, depth, confidence, track ID, zone violation, empty shelf, person position, bin occupancy, or 3D coordinate.",
+        "OAK cameras are designed around that conversion. Stereo cameras provide depth. RGB cameras provide appearance. Onboard compute runs AI and computer vision. DepthAI provides the programming model. The result is a camera that can act like a small perception computer rather than a passive sensor.",
+        "This is the same pattern that will appear across physical AI. Sensors will become more intelligent because the economics demand it. Edge nodes will filter, infer, compress, and contextualize data before it moves upstream. Luxonis is one of the clearest examples in vision.",
+      ],
+    },
+    {
+      heading: "Why Spatial AI Matters",
+      paragraphs: [
+        "Computer vision becomes more useful when it understands space. A 2D bounding box can tell a system that a person, part, box, forklift, or vehicle is present. Spatial AI can add distance, position, and 3D context. That changes what the system can do.",
+        "For robotics, depth can support obstacle avoidance, grasping, navigation, docking, bin picking, hand tracking, human proximity, and scene understanding. For fixed infrastructure, depth can support occupancy, queue measurement, shelf analytics, safety-zone monitoring, vehicle positioning, and volumetric estimates. For industrial inspection, depth can help separate objects from backgrounds and add geometric constraints.",
+        "The key is not that every application needs perfect 3D reconstruction. Many applications only need enough spatial context to make a better decision. Is the worker inside the zone? Is the box close enough to pick? Is the object above the conveyor? Is the pallet too tall? Is the robot approaching an obstacle? Spatial data turns vision from recognition into situated perception.",
+        "Luxonis benefits because OAK cameras package that capability into developer-accessible hardware. A team can test spatial AI without assembling cameras, synchronization, accelerators, drivers, calibration, and software from scratch.",
+      ],
+      tables: [
+        {
+          title: "What Spatial AI Adds",
+          columns: ["Capability", "2D Vision Answer", "Spatial AI Answer"],
+          rows: [
+            [
+              "Detection",
+              "There is a person in this image.",
+              "There is a person 2.4 meters away, moving toward a restricted zone.",
+            ],
+            [
+              "Inventory",
+              "There are boxes on this shelf.",
+              "The boxes occupy this shelf area with approximate position and depth.",
+            ],
+            [
+              "Robotics",
+              "The object is in this part of the frame.",
+              "The object has a 3D location the robot can use for navigation, docking, or manipulation.",
+            ],
+            [
+              "Safety",
+              "A forklift is visible.",
+              "A forklift is inside the monitored zone and approaching a person.",
+            ],
+            [
+              "Inspection",
+              "A part is detected.",
+              "A part is detected with geometry, position, and scene context that can reduce false positives.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Product Stack",
+      paragraphs: [
+        "Luxonis has three important layers: hardware, software, and fleet operations. The hardware layer is the OAK device family. The software layer is DepthAI, with Python and C++ APIs, examples, model conversion paths, AI inference support, and integrations. The operations layer is Luxonis Hub, which manages devices, applications, remote sessions, data collection, models, and customer integrations.",
+        "OAK-D Pro shows the accessible developer and pilot side of the portfolio. It is priced at $429 on Luxonis' store at the time of writing, with active stereo, IR dot projector, IR illumination, RGB camera options, IP66 enclosure, and USB2 or USB3 for power and communication.",
+        "OAK 4 shows the direction of travel. Luxonis calls it a fully self-contained AI vision platform, with compute, perception, and cloud management unified into one system. The OAK 4 S, OAK 4 D Pro, and OAK 4 CS variants list 52 TOPS AI processing, six-core CPU plus GPU, PoE and USB, IMU support, and variant-specific features such as active stereo or swappable lenses.",
+        "That matters because the company is trying to move from camera modules toward a complete vision platform. The product is not only the device. It is the device plus runtime, APIs, model support, apps, deployment, remote operations, and data loops.",
+      ],
+      tables: [
+        {
+          title: "Luxonis Stack",
+          columns: ["Layer", "Products / Capabilities", "Strategic Role"],
+          rows: [
+            [
+              "Hardware",
+              "OAK cameras, OAK-D Pro, OAK 4 S, OAK 4 D Pro, OAK 4 CS, OAK modules.",
+              "Put RGB, depth, sensor fusion, and local AI compute at the sensing point.",
+            ],
+            [
+              "Software",
+              "DepthAI v3, Python and C++ APIs, examples, model conversion, inference, integrations.",
+              "Let developers build reusable perception pipelines without starting from bare drivers.",
+            ],
+            [
+              "Cloud / fleet layer",
+              "Luxonis Hub, OAK Agent, OAK Apps, device management, app lifecycle, remote sessions, data collection.",
+              "Move deployments from one developer desk to managed devices and customer-facing systems.",
+            ],
+            [
+              "Model ecosystem",
+              "Luxonis Models, supported model formats, YOLO examples, segmentation, pose, OCR, depth models.",
+              "Reduce time from camera purchase to working perception application.",
+            ],
+            [
+              "Industry applications",
+              "Robotics, AMRs, manufacturing, logistics, retail, smart cities, healthcare, agriculture.",
+              "Show the platform can serve multiple physical AI markets rather than one niche.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "DepthAI as the Developer Moat",
+      paragraphs: [
+        "DepthAI is the developer surface that makes OAK more than hardware. Luxonis' documentation describes DepthAI v3 as the API docs for OAK and OAK4 cameras, including installation, examples, Python and C++ references, components, AI inference, benchmarking, ROS, model conversion, and integrations.",
+        "That matters because spatial AI is a pipeline problem. A useful application may need multiple cameras, image streams, stereo depth, neural network inference, post-processing, synchronization, calibration, spatial coordinates, and host communication. If the software layer is painful, the hardware loses its advantage.",
+        "DepthAI lets developers compose perception pipelines in a way that feels closer to application development than sensor plumbing. It is not the only vision stack in the market, but it gives Luxonis a developer identity. People do not only buy an OAK camera. They learn an OAK workflow.",
+        "That workflow can become sticky if it travels with prototypes into production. A lab that builds on DepthAI may later choose OAK hardware for the pilot because the software already works. A robotics company may standardize on OAK because its team knows the pipeline. An integrator may prefer it because examples and APIs shorten the deployment cycle.",
+      ],
+    },
+    {
+      heading: "Luxonis Hub and the Fleet Layer",
+      paragraphs: [
+        "Luxonis Hub is strategically important because it addresses the gap between one working camera and a managed deployment. A prototype can run on a laptop. A customer deployment needs device status, app updates, logs, remote visualization, data collection, model management, and integration into the customer's backend.",
+        "Luxonis describes Hub as the OAK-centered control plane for connecting devices, managing applications, opening remote operator sessions, collecting snaps, and integrating workflows into customer software. Its docs frame the operating model around devices, OAK Agent, OAK Apps, and customer backend integrations.",
+        "This is where Luxonis becomes more interesting as a physical AI company. A smart camera is useful. A managed fleet of smart cameras is infrastructure. The buyer does not want to SSH into every device, manually update every app, or rebuild a device-management layer from scratch.",
+        "The limitation is that Hub is still a developing platform. Luxonis' own documentation notes that some rollout and management capabilities are not generally available today. That is normal for a growing platform, but it matters for enterprise buyers. The long-term value depends on how quickly Hub matures from helpful tooling into a dependable operating layer.",
+      ],
+    },
+    {
+      heading: "Prototype to Pilot",
+      paragraphs: [
+        "Luxonis' sweet spot is the prototype-to-pilot phase. A developer can buy an OAK device, run examples, test YOLO models, use depth, integrate ROS, build a small app, and prove that spatial AI can solve a real problem. That is a different buying motion from large industrial vision deployments that start with procurement, integrators, lighting studies, and custom hardware selection.",
+        "That accessibility matters because physical AI is still early. Many teams do not know whether they need a robot, a smart camera, a depth sensor, an edge computer, or a cloud workflow. OAK cameras let them test perception cheaply and quickly.",
+        "The challenge is moving beyond pilots. A working demo in a lab does not guarantee that the camera survives vibration, dust, wash-down, heat, cold, network instability, security requirements, mounting constraints, and maintenance expectations. OAK 4's ruggedization and Hub's management layer are Luxonis' answer to that production gap.",
+        "The company wins if it can convert developer experiments into repeatable design wins. That means cameras embedded in robots, smart kiosks, industrial inspection systems, AMRs, retail devices, medical devices, field equipment, and infrastructure deployments.",
+      ],
+    },
+    {
+      heading: "Where Luxonis Fits",
+      paragraphs: [
+        "Luxonis is most useful where RGB, depth, and local inference need to live close together. Robotics and AMRs are obvious fits because mobile machines need depth-aware perception for navigation, obstacle detection, docking, manipulation, and human awareness.",
+        "Manufacturing and automation are also strong candidates. Cameras can inspect parts, measure placement, count objects, monitor workcells, verify process steps, detect unsafe behavior, or provide depth-aware quality signals. OAK devices can be attractive when a full industrial vision stack is too expensive or too slow for early experimentation.",
+        "Warehousing and logistics can use spatial cameras for pallet detection, inventory visibility, zone monitoring, dock activity, package flow, and robot perception. Retail and commercial spaces can use them for shelf analytics, occupancy, queue measurement, checkout monitoring, and safety. Agriculture and industrial equipment can use them for machine perception in fields and outdoor environments.",
+        "The common thread is local perception. Luxonis is not trying to own the entire workflow in every market. It is trying to make the sensing point smarter, cheaper to develop on, and easier to manage.",
+      ],
+      tables: [
+        {
+          title: "Luxonis Use Cases",
+          columns: ["Market", "Spatial AI Role", "Operational Value"],
+          rows: [
+            [
+              "Robotics and AMRs",
+              "Depth-aware detection, navigation, docking, obstacle awareness, and manipulation support.",
+              "Gives robots local perception without requiring a large host computer for every sensor.",
+            ],
+            [
+              "Manufacturing",
+              "Part detection, process verification, defect screening, workcell monitoring, and safety zones.",
+              "Helps teams pilot vision systems before committing to heavier industrial vision architecture.",
+            ],
+            [
+              "Warehousing and logistics",
+              "Pallet detection, bin occupancy, dock monitoring, asset tracking, and human-machine awareness.",
+              "Turns camera points into local operational signals for large physical environments.",
+            ],
+            [
+              "Retail and commercial spaces",
+              "Occupancy, shelf state, queue depth, checkout activity, and spatial analytics.",
+              "Adds visual intelligence while reducing the need to stream raw video continuously.",
+            ],
+            [
+              "Agriculture and field equipment",
+              "Obstacle detection, crop or row sensing, equipment perception, and outdoor spatial awareness.",
+              "Brings perception to mobile equipment and outdoor systems where bandwidth and ruggedness matter.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Competitive Landscape",
+      paragraphs: [
+        "Luxonis competes in a crowded but expanding perception market. Intel RealSense, Stereolabs ZED, Basler, IDS, Orbbec, Sony, industrial machine-vision vendors, smart-camera companies, camera module suppliers, Jetson-based edge boxes, and custom sensor stacks can all overlap with parts of its value proposition.",
+        "The company's differentiation is the integrated developer experience: cameras, depth, onboard AI, DepthAI, examples, supported model formats, ROS and computer-vision ecosystem integrations, Hub management, and a product line that spans accessible developer devices and more rugged OAK 4 hardware.",
+        "The risk is that serious commercial deployments often standardize around incumbent vendors, procurement-approved hardware, long product lifecycles, custom optics, certified industrial protocols, and integrators. Luxonis has to prove that its developer momentum can translate into production trust.",
+        "The opportunity is that the physical AI market is expanding faster than traditional machine vision categories. New builders need cameras that can run AI locally, output spatial coordinates, integrate with robotics stacks, and move quickly. Luxonis is well positioned for that developer-led frontier.",
+      ],
+    },
+    {
+      heading: "Business Model Possibilities",
+      paragraphs: [
+        "Luxonis' business model can combine hardware margins, module sales, developer ecosystem pull, enterprise services, Hub software, support, and OEM design wins. The hardware sale starts the relationship, but the larger opportunity is recurring software and deployment support around managed perception fleets.",
+        "OAK devices can also act as a wedge into larger system designs. A robotics company may start with off-the-shelf cameras, then move to modules or custom configurations. An integrator may buy developer devices for prototyping, then standardize on rugged hardware for field projects. A product company may test an OAK camera and later embed a Luxonis module inside its own product.",
+        "Hub can become important if Luxonis turns device management, app deployment, remote operations, data collection, and model improvement into a commercial software layer. That would move the company from hardware vendor toward platform vendor.",
+        "The services question matters. Physical AI camera deployments often require optics, mounting, lighting, calibration, environmental testing, integration, and model tuning. Luxonis has to help customers succeed without becoming overly custom on every deployment.",
+      ],
+    },
+    {
+      heading: "Investor Case",
+      paragraphs: [
+        "The bull case is that smart spatial cameras become a standard building block for physical AI. If robots, factories, warehouses, retail sites, farms, smart cities, and medical devices need local perception, Luxonis can sell into many markets without betting on one robot body or one vertical application.",
+        "The second bull case is architectural. As edge systems try to reduce bandwidth, latency, cloud dependence, and host-compute cost, more inference will move into sensors. Luxonis is directly aligned with that shift.",
+        "The third bull case is developer adoption. OAK devices are accessible enough for labs, students, startups, and integrators, but the newer OAK 4 platform points toward rugged commercial use. That gives Luxonis a path from bottom-up adoption to production design wins.",
+        "The bear case is that the middle of the market gets squeezed. Low-cost camera modules can undercut basic use cases. Industrial vision vendors can win enterprise deployments. Jetson-class edge computers can handle heavier workloads. Robot OEMs can build custom perception stacks. Luxonis has to show that integrated spatial AI cameras are the best enough answer often enough.",
+      ],
+      tables: [
+        {
+          title: "Luxonis: Bull Case vs. Bear Case",
+          columns: ["View", "Argument", "Signal to Watch"],
+          rows: [
+            [
+              "Bull case",
+              "Spatial AI cameras become standard perception nodes for physical AI.",
+              "More robots, industrial systems, and infrastructure deployments embed OAK hardware or modules.",
+            ],
+            [
+              "Bull case",
+              "On-device inference reduces bandwidth, latency, privacy, and host-compute constraints.",
+              "Customers choose OAK because local perception simplifies system architecture.",
+            ],
+            [
+              "Bull case",
+              "DepthAI and Hub make Luxonis a platform rather than a camera vendor.",
+              "Developers move from examples to managed fleets, apps, data collection, and recurring workflows.",
+            ],
+            [
+              "Bear case",
+              "Production buyers prefer incumbent machine-vision vendors or custom sensor stacks.",
+              "OAK remains common in prototypes but less common in scaled commercial products.",
+            ],
+            [
+              "Execution risk",
+              "Hardware, software, cloud management, and support all have to mature together.",
+              "Luxonis must support developers while meeting enterprise reliability and lifecycle expectations.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What to Watch Next",
+      paragraphs: [
+        "First, watch OAK 4 adoption. The product line is a clear attempt to move from accessible developer cameras toward rugged, managed, self-contained AI vision systems. Commercial uptake will show whether that bridge is working.",
+        "Second, watch Luxonis Hub maturity. Device management, app lifecycle, remote operations, snaps, model management, and customer backend integration are the pieces that make camera fleets deployable. Hub is the difference between a camera ecosystem and an operating layer.",
+        "Third, watch OEM design wins. The strongest evidence will be OAK modules or cameras embedded inside robots, AMRs, kiosks, industrial systems, medical devices, field equipment, and other products that ship repeatedly.",
+        "Fourth, watch model and software support. DepthAI examples, model conversion, ROS support, OpenVINO, PyTorch, TensorFlow, Roboflow, MediaPipe, and other integrations keep the platform accessible. The easier it is to bring a useful model to OAK, the stronger the developer flywheel.",
+        "Fifth, watch competitive positioning against RealSense, Stereolabs, Orbbec, industrial vision vendors, and Jetson-based architectures. Luxonis does not need to win every perception workload. It needs to own enough of the spatial AI camera category to become a default choice for builders.",
+      ],
+    },
+    {
+      heading: "The Bottom Line",
+      paragraphs: [
+        "Luxonis matters because physical AI needs perception nodes that are smaller, cheaper, smarter, and easier to deploy than traditional camera-plus-host-computer architectures. OAK cameras show what happens when RGB, stereo depth, onboard AI, and developer software are packaged into the sensor itself.",
+        "The company is strongest where teams need to move quickly from idea to working spatial AI system. That makes it valuable in robotics labs, early industrial pilots, logistics experiments, smart infrastructure, education, and product teams that need perception without building a full camera stack from scratch.",
+        "The long-term question is production scale. If Luxonis turns OAK from a favorite developer camera into a standard component inside commercial physical AI systems, it becomes much more than an interesting hardware company. It becomes part of the edge perception infrastructure layer.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using Luxonis' official site, OAK 4 product materials, OAK-D Pro product page, DepthAI v3 documentation, Luxonis Hub documentation, and Black Scarab analysis of spatial AI, edge perception, and physical AI deployment economics. Luxonis is a private company, so claims about revenue, margins, commercial deployment counts, and customer economics should be treated as company-reported information and Black Scarab analysis rather than audited public financials.",
+      ],
+    },
+  ],
+  sources: [
+    "Luxonis official site and platform positioning",
+    "Luxonis OAK 4 product materials",
+    "Luxonis OAK-D Pro product page",
+    "Luxonis DepthAI v3 documentation",
+    "Luxonis Hub documentation",
+    "Black Scarab analysis of spatial AI cameras, edge perception, and physical AI deployment economics",
+  ],
+  sourceLinks: [
+    {
+      label: "Luxonis official site",
+      url: "https://www.luxonis.com/",
+    },
+    {
+      label: "Luxonis OAK 4",
+      url: "https://www.luxonis.com/oak4",
+    },
+    {
+      label: "OAK-D Pro",
+      url: "https://shop.luxonis.com/products/oak-d-pro",
+    },
+    {
+      label: "Luxonis documentation",
+      url: "https://docs.luxonis.com/",
+    },
+    {
+      label: "DepthAI v3 documentation",
+      url: "https://docs.luxonis.com/software-v3/depthai/",
+    },
+    {
+      label: "Luxonis Hub overview",
+      url: "https://docs.luxonis.com/cloud/hub/",
+    },
+  ],
+});
+
 const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
   slug: "top-15-physical-ai-infrastructure-companies",
   title: "Top 15 Physical AI Infrastructure Companies to Watch in 2026",
@@ -8569,6 +8926,7 @@ export const caseStudies: CaseStudyArticle[] = [
   fortRoboticsDeepDive(),
   edgeImpulseDeepDive(),
   roboflowDeepDive(),
+  luxonisDeepDive(),
   physicalAiInfrastructureCompaniesGuide(),
   intuitiveDaVinci5DeepDive(),
   amazonProteusDeepDive(),
