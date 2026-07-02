@@ -4517,6 +4517,408 @@ const luxonisDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const stereolabsDeepDive = (): CaseStudyArticle => ({
+  slug: "stereolabs-zed-spatial-perception-robotics-guide",
+  title:
+    "Stereolabs Deep Dive: ZED Cameras, Stereo Depth, and the Robotics Spatial Perception Stack",
+  summary:
+    "A business and investor deep dive on Stereolabs, the company behind ZED stereo cameras and the ZED SDK, covering stereo depth, positional tracking, spatial mapping, object detection, body tracking, robotics integrations, and physical AI perception economics.",
+  publishedLabel: "Physical AI Series · Published July 2, 2026",
+  publishedDate: "2026-07-02",
+  typeLabel: "Physical AI Series",
+  formatLabel: "Company deep dive",
+  industry: "Cross-Industry",
+  image: "/article-images/stereolabs-zed-spatial-perception-robotics-guide.png",
+  imageAlt:
+    "Stereolabs-style stereo camera mapping a warehouse scene with 3D point clouds, pallet geometry, path planning lines, and a robotic arm in the background.",
+  seoDescription:
+    "A 2026 Stereolabs deep dive covering ZED cameras, ZED 2i, ZED X, stereo depth, positional tracking, VSLAM, spatial mapping, object detection, body tracking, ROS 2, Isaac ROS, NVIDIA Jetson, robotics perception, and physical AI camera economics.",
+  tags: [
+    "Stereolabs",
+    "ZED cameras",
+    "stereo depth",
+    "spatial perception",
+    "robotics",
+    "VSLAM",
+    "mapping",
+    "ROS 2",
+    "NVIDIA Jetson",
+    "physical AI",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Stereolabs sits deeper in the robotics and spatial perception stack. Its ZED cameras provide stereo depth, positional tracking, mapping, and SDK-level capabilities that are useful for robots, autonomous systems, and 3D scene understanding.",
+        "Stereo perception is important because many physical AI systems need geometry, not just recognition. Knowing that a pallet exists is different from knowing where it is in 3D space, how far away it is, whether a machine can pass it, or how it relates to a map of the environment.",
+        "That is the Stereolabs wedge. The company is not only selling a pair of lenses in a housing. It is selling a geometry pipeline: stereo cameras, sensor data, depth maps, point clouds, positional tracking, spatial mapping, object detection, body tracking, fusion, and integrations into robotics and simulation frameworks.",
+        "The company's opportunity is to remain a practical default for teams that need spatial perception without building the entire 3D vision stack from scratch. The challenge is that the market has alternatives: LiDAR, time-of-flight sensors, event cameras, low-cost depth modules, industrial machine-vision systems, and multi-camera stacks built by OEMs.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Stereolabs builds ZED stereo cameras, embedded perception systems, and the ZED SDK. The official site positions the company around AI perception for automation, while the developer documentation shows a broad robotics-oriented stack: depth sensing, positional tracking, global localization, spatial mapping, plane detection, object detection, body tracking, fusion, camera tools, and integrations with ROS 2, Isaac ROS, Isaac Sim, Docker, OpenCV, PyTorch, Unity, Unreal Engine, GStreamer, YOLO, and NVIDIA Jetson.",
+        "The product family spans USB stereo cameras such as ZED 2i, GMSL2 cameras such as ZED X, monocular and stereo ZED X One configurations, and embedded systems such as ZED Box Mini and ZED Box Orin. That range matters because robotics teams often need different physical interfaces depending on whether they are prototyping on a desk, building an AMR, wiring a rugged vehicle, or deploying a multi-camera system.",
+        "The strategic point is that Stereolabs sells both hardware and software into a category where calibration, synchronization, depth quality, sensor fusion, and developer tooling matter. In robotics, a camera is only as useful as the pipeline around it. The SDK, documentation, integration path, and runtime behavior can be as important as the lens and sensor.",
+        "For investors, the Stereolabs question is whether stereo cameras become a durable middle layer in physical AI. They are more informative than ordinary RGB cameras, often cheaper and simpler than LiDAR-heavy systems, and useful across robots, automation, mapping, inspection, and mixed reality. But the category is competitive, and buyers will choose the sensor stack that best matches range, lighting, texture, accuracy, ruggedness, power, compute, and integration requirements.",
+      ],
+      tables: [
+        {
+          title: "Stereolabs at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "A stereo vision company building ZED cameras, ZED SDK software, embedded ZED boxes, and robotics perception integrations.",
+            ],
+            [
+              "What layer does it target?",
+              "The 3D perception layer: depth, point clouds, tracking, spatial mapping, object and body tracking, and geometry-aware camera data.",
+            ],
+            [
+              "Why does it matter?",
+              "Physical AI systems need spatial context, not only image recognition, when they navigate, avoid obstacles, map, inspect, or interact with people and objects.",
+            ],
+            [
+              "What is the wedge?",
+              "A practical stereo camera ecosystem that gives developers depth, tracking, mapping, and robotics integrations without building the full 3D vision stack themselves.",
+            ],
+            [
+              "What is the core risk?",
+              "LiDAR, ToF sensors, event cameras, low-cost depth modules, incumbent machine-vision vendors, and OEM-native multi-camera systems can each win parts of the perception stack.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Geometry Before Autonomy",
+      paragraphs: [
+        "Physical AI becomes much harder when the system cannot understand geometry. A detector can label an object, but a robot needs to know where that object is relative to itself, how far away it is, how it moves, and how the surrounding scene is structured.",
+        "This is why stereo depth remains relevant. Stereolabs' depth documentation explains the basic principle through binocular vision: two separated views of the world allow the system to estimate depth and motion by comparing the displacement between left and right images. The output can become a depth map, a 3D point cloud, or spatial coordinates that other software can use.",
+        "For an autonomous machine, geometry turns perception into action. A pallet becomes a 3D obstacle. A worker becomes a moving body in space. A wall becomes a boundary. A ramp becomes a traversable surface. A shelf becomes an object with position, depth, and volume. A map becomes a coordinate system for planning.",
+        "This is the difference between a camera seeing a scene and a machine understanding where it is inside that scene. Stereolabs' value is that it gives builders a ready path into that layer.",
+      ],
+      tables: [
+        {
+          title: "Recognition vs. Spatial Perception",
+          columns: ["Question", "Recognition Answer", "Spatial Perception Answer"],
+          rows: [
+            [
+              "Is there a pallet?",
+              "The model detects a pallet in the frame.",
+              "The system estimates the pallet's distance, position, and relationship to the machine's path.",
+            ],
+            [
+              "Can the robot pass?",
+              "The model sees an obstacle.",
+              "The system reasons about clearance, geometry, and local map context.",
+            ],
+            [
+              "Where is the person?",
+              "The camera detects a worker.",
+              "The system tracks the worker in 3D space and can estimate proximity to machines or zones.",
+            ],
+            [
+              "What changed in the scene?",
+              "A detector sees different objects.",
+              "The map, point cloud, or tracked scene state changes in measurable spatial terms.",
+            ],
+            [
+              "Can the machine act?",
+              "The object is classified.",
+              "The object has a position that can feed navigation, manipulation, safety, or inspection logic.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The ZED Product Stack",
+      paragraphs: [
+        "The ZED ecosystem has several hardware layers. ZED 2i is a USB 3 stereo camera used widely for development, robotics, and spatial perception projects. ZED X uses GMSL2 connectivity, which is more natural for embedded and rugged systems where longer cable runs, synchronization, and vehicle-style integration matter. ZED X One gives Stereolabs a modular monocular and stereo path. ZED Box Mini and ZED Box Orin extend the system into embedded computing.",
+        "That matters because camera architecture changes as a deployment matures. A lab may begin with a USB camera on a workstation. A robot company may move to GMSL2 cameras wired into a Jetson-based compute box. A vehicle platform may need multiple synchronized cameras. An integrator may need an embedded box that already knows how to work with the ZED SDK.",
+        "Stereolabs benefits if those product layers make it easier for customers to stay inside the ecosystem as they move from prototype to production. The danger is that each stage also opens the door to other suppliers: cheaper cameras during prototyping, industrial cameras during production, LiDAR for navigation, and custom multi-camera rigs for OEM-scale products.",
+        "The strongest version of Stereolabs is therefore not a single camera sale. It is a camera-plus-SDK-plus-integration path that follows the customer through multiple stages of a physical AI program.",
+      ],
+      tables: [
+        {
+          title: "ZED Hardware Layers",
+          columns: ["Layer", "Example Products", "Strategic Role"],
+          rows: [
+            [
+              "Developer stereo cameras",
+              "ZED 2i and USB ZED cameras.",
+              "Give teams a fast way to prototype stereo depth, tracking, and mapping on a workstation or robot.",
+            ],
+            [
+              "Embedded / rugged cameras",
+              "ZED X, ZED X Mini, ZED X Nano, and ZED X One.",
+              "Support robot, vehicle, and multi-camera deployments using GMSL2-style integration paths.",
+            ],
+            [
+              "Embedded compute",
+              "ZED Box Mini and ZED Box Orin.",
+              "Package ZED camera support with compute for field systems and embedded robotics workflows.",
+            ],
+            [
+              "Accessories and capture",
+              "ZED Link capture cards and GPIO triggering paths.",
+              "Help synchronize and integrate multiple cameras in more serious deployments.",
+            ],
+            [
+              "Software layer",
+              "ZED SDK, ZED tools, APIs, integrations, and samples.",
+              "Turn camera hardware into depth, tracking, mapping, object detection, and robotics-ready outputs.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The SDK Is the Product",
+      paragraphs: [
+        "Stereolabs' SDK is central to the company's value. The docs list modules for camera control, sensor data, depth sensing, positional tracking, global localization, spatial mapping, plane detection, object detection, body tracking, and fusion. They also include APIs for C++, Python, C#, and C, plus tutorials, samples, and tooling.",
+        "That breadth matters because robotics perception is not a single API call. A real robot may need camera calibration, synchronized sensor data, depth maps, point clouds, VSLAM, coordinate frames, object detections, body tracking, recorded replay, ROS 2 topics, diagnostics, and integration with visualization and simulation tools.",
+        "The SDK reduces the number of things the customer has to build from scratch. That can be the difference between a camera that sits on a shelf and a camera that becomes part of a robot's perception pipeline.",
+        "The risk is that SDK depth creates lock-in only if the outputs are reliable enough. If developers fight calibration, latency, drift, lighting failures, textureless surfaces, GPU requirements, or integration friction, the camera's theoretical capability does not matter. Stereolabs has to keep the developer experience as strong as the hardware story.",
+      ],
+    },
+    {
+      heading: "Depth, Tracking, and Mapping",
+      paragraphs: [
+        "The three most important Stereolabs capabilities are depth sensing, positional tracking, and spatial mapping. Depth tells the system how far scene points are from the camera. Positional tracking estimates camera movement and orientation over time. Spatial mapping builds a representation of the environment.",
+        "Together, those capabilities make ZED cameras useful for mobile robots, AR systems, autonomous vehicles, inspection platforms, drones, simulation workflows, and research systems. A robot can use depth to avoid obstacles, tracking to understand its own movement, and mapping to reason about where it has been.",
+        "The docs note both the strength and limitations of stereo. Stereolabs describes ZED depth as useful at longer ranges, up to 35 meters, with wide field of view and indoor/outdoor operation. It also notes that depth accuracy decreases with distance and can suffer on homogeneous, textureless, reflective, or visually feature-poor surfaces.",
+        "That honesty is important. Stereo is not magic. It is a tradeoff. It can be powerful, passive, wide-field, and cost-effective, but it depends on visual texture, calibration, lighting, lens geometry, compute, and algorithms. Buyers need to understand those tradeoffs before picking a sensor architecture.",
+      ],
+      tables: [
+        {
+          title: "Core ZED SDK Perception Modules",
+          columns: ["Capability", "What It Produces", "Why Physical AI Needs It"],
+          rows: [
+            [
+              "Depth sensing",
+              "Depth maps and 3D point clouds.",
+              "Lets machines estimate distance, geometry, and local scene structure.",
+            ],
+            [
+              "Positional tracking",
+              "Camera pose, motion, and coordinate-frame updates.",
+              "Helps robots and autonomous systems understand movement through space.",
+            ],
+            [
+              "Spatial mapping",
+              "A 3D representation of the environment.",
+              "Supports navigation, scene understanding, AR, inspection, and robot planning.",
+            ],
+            [
+              "Object detection",
+              "Detected objects with spatial context.",
+              "Turns recognition into geometry-aware perception.",
+            ],
+            [
+              "Body tracking",
+              "Human skeletons or body positions in space.",
+              "Supports safety, human-machine interaction, analytics, and mixed environments.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Robotics Integration",
+      paragraphs: [
+        "Stereolabs is especially relevant because it fits how robotics teams actually build. The docs include ROS, ROS 2, Isaac ROS, Isaac Sim, Docker, GStreamer, OpenCV, PyTorch, YOLO, Unity, Unreal Engine, and Foxglove integration paths. That is a signal about the customer base: developers need cameras to plug into broader robotics and simulation stacks.",
+        "ROS 2 support matters because it lets ZED outputs become robot messages: image streams, depth, pose, object detections, body tracking, and sensor data. Isaac ROS and Isaac Sim matter because NVIDIA's robotics ecosystem is increasingly important for simulation, perception acceleration, and deployment on Jetson-class hardware.",
+        "This is where Stereolabs can become a practical default. If a team can mount a ZED, install the SDK, connect ROS 2, visualize in RViz or Foxglove, run object detection, and test in simulation, the camera becomes part of the builder's workflow.",
+        "That workflow advantage can be more important than raw specifications. The best sensor is often the one that reaches useful data fastest, with enough accuracy and stability for the task.",
+      ],
+    },
+    {
+      heading: "Where Stereolabs Fits",
+      paragraphs: [
+        "Stereolabs fits best where 3D perception is needed but a full LiDAR-heavy architecture is too expensive, too complex, too large, or too early for the stage of development. That includes AMRs, drones, research robots, inspection systems, AR/VR capture, robotics labs, construction mapping, agriculture, smart spaces, and vehicle prototypes.",
+        "In robotics, ZED cameras can support navigation, obstacle detection, localization, mapping, object detection, body tracking, and human-machine awareness. In industrial automation, they can support depth-aware inspection, volume estimation, robot workcell awareness, and safety analytics. In spatial computing, they can support mixed-reality capture, body tracking, and 3D scene reconstruction.",
+        "The technology is not automatically the right fit for every case. Long-range outdoor autonomy, harsh industrial environments, low-texture scenes, reflective surfaces, high-speed motion, or safety-certified control may require LiDAR, radar, industrial cameras, thermal sensors, or redundant sensor fusion. Stereolabs wins when stereo provides the right balance of cost, range, field of view, integration, and useful geometry.",
+        "That balance is why the company belongs in the physical AI infrastructure list. It is not trying to own the robot. It is trying to own a practical perception layer that many robot and spatial AI builders can use.",
+      ],
+      tables: [
+        {
+          title: "Stereolabs Use Cases",
+          columns: ["Market", "Spatial Role", "Operational Value"],
+          rows: [
+            [
+              "Mobile robots and AMRs",
+              "Depth, obstacle awareness, pose, mapping, and object detection.",
+              "Helps robots navigate and understand scenes without building a custom stereo stack.",
+            ],
+            [
+              "Autonomous vehicles and machines",
+              "GMSL2 cameras, multi-camera setups, GNSS/VIO workflows, and spatial perception.",
+              "Supports rugged sensing and vehicle-style perception architectures.",
+            ],
+            [
+              "Industrial automation",
+              "Depth-aware inspection, workcell monitoring, robot guidance, and safety-zone perception.",
+              "Adds geometry to fixed-camera and robot-cell workflows.",
+            ],
+            [
+              "AR, VR, and simulation",
+              "Camera tracking, spatial mapping, body tracking, and mixed-reality capture.",
+              "Creates live spatial context for simulation, digital twins, and immersive systems.",
+            ],
+            [
+              "Research and education",
+              "Accessible stereo vision, SDK examples, and robotics framework integrations.",
+              "Lets teams experiment with 3D perception without building hardware and algorithms from scratch.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Sensor Tradeoff",
+      paragraphs: [
+        "The biggest strategic issue for Stereolabs is that perception is not winner-take-all. Different sensors win different jobs. LiDAR provides direct geometric measurement and can be strong for navigation and long-range mapping. Time-of-flight can be compact and useful at short ranges. Event cameras can capture fast motion and high dynamic range. Ordinary RGB cameras are cheap and everywhere. Industrial cameras offer precision and control. Radar works in conditions where cameras struggle.",
+        "Stereo vision's advantage is that it can produce dense visual depth using passive cameras, while also preserving rich RGB information. It can be cost-effective and flexible. It can work outdoors in ways active structured-light sensors may not. It can provide depth and point clouds for many robotics applications.",
+        "Stereo's weakness is that it depends on visual features and geometry. Textureless walls, reflective surfaces, low light, repeated patterns, distant objects, motion blur, and calibration issues can degrade depth. Compute requirements also matter, especially because ZED cameras often rely on host processing rather than fully onboard inference in the way some smart cameras do.",
+        "The business question is not whether stereo beats every alternative. It will not. The question is whether Stereolabs can make stereo the practical default often enough for robotics and spatial AI builders who want a strong balance of cost, RGB richness, depth, range, and software support.",
+      ],
+    },
+    {
+      heading: "Competitive Landscape",
+      paragraphs: [
+        "Stereolabs competes with multiple categories, not one simple peer set. Luxonis competes in developer-friendly spatial AI cameras with onboard AI. Intel RealSense and Orbbec compete in depth cameras. Basler and IDS compete in industrial vision. Ouster and other LiDAR companies compete where direct 3D range sensing is preferred. Event-camera vendors compete in fast-motion and high-dynamic-range perception. Robot OEMs can also build their own camera arrays and perception stacks.",
+        "The company's advantage is the ZED ecosystem: a known camera line, depth and tracking capabilities, robotics integrations, documentation, SDK tooling, and enough product variety to cover USB prototyping, GMSL2 embedded systems, and ZED Box deployments.",
+        "The competitive pressure is that perception buyers can be very pragmatic. They will switch sensors if another approach gives better range, latency, robustness, safety case, cost, power, ruggedness, or integration with their compute stack. In production, sensor loyalty is earned by performance and lifecycle reliability.",
+        "Stereolabs has to keep winning the practical builder decision: can this camera and SDK get my robot or spatial AI system to reliable geometry faster than the alternatives?",
+      ],
+    },
+    {
+      heading: "Business Model Possibilities",
+      paragraphs: [
+        "Stereolabs' business model likely combines hardware sales, embedded systems, accessories, SDK ecosystem pull, enterprise/OEM relationships, support, and developer adoption. Cameras create the initial sale. SDK familiarity and integration tooling create repeat purchases. Embedded systems and GMSL2 products create paths into more serious commercial deployments.",
+        "The attractive version is an OEM and platform model. A robotics company starts with ZED 2i, moves to ZED X or ZED X One, uses ZED SDK and ROS 2 in development, integrates with Jetson hardware, and ships repeated units with a stable Stereolabs perception configuration. That is much more valuable than one-off developer purchases.",
+        "The company can also benefit from accessories and compute. ZED Link capture cards, ZED Box Mini, ZED Box Orin, and multi-camera synchronization paths make the ecosystem more complete. The more the customer buys an architecture instead of just a camera, the stronger the account becomes.",
+        "The limit is that hardware-led businesses need volume, lifecycle management, support, and supply-chain discipline. Developer enthusiasm helps, but production customers need consistent availability, documentation, long-term compatibility, and support when deployments break in the field.",
+      ],
+    },
+    {
+      heading: "Investor Case",
+      paragraphs: [
+        "The bull case is that stereo depth remains a durable building block for robotics and spatial AI. Many physical systems need geometry, and Stereolabs gives teams a packaged way to get depth, pose, mapping, and tracking without building the entire stack.",
+        "The second bull case is ecosystem leverage. The ZED SDK, ROS 2, Isaac ROS, Isaac Sim, OpenCV, Docker, YOLO, Unity, Unreal, and Jetson integrations place Stereolabs inside the tools developers already use. That can turn cameras into default components in early-stage robotics projects.",
+        "The third bull case is product progression. ZED 2i can win prototypes. ZED X can win embedded and rugged designs. ZED Box can win integrated compute deployments. If customers stay with the ecosystem as projects mature, Stereolabs can capture more value than a simple camera vendor.",
+        "The bear case is sensor substitution. LiDAR may win navigation-heavy autonomy. Luxonis or smart cameras may win onboard AI applications. Industrial camera vendors may win quality inspection. OEMs may build custom rigs at scale. Stereolabs has to win enough of the middle: teams that need practical 3D perception, developer tooling, and robotics integrations now.",
+      ],
+      tables: [
+        {
+          title: "Stereolabs: Bull Case vs. Bear Case",
+          columns: ["View", "Argument", "Signal to Watch"],
+          rows: [
+            [
+              "Bull case",
+              "Stereo depth remains a practical default for many robotics and spatial AI systems.",
+              "More robots, AMRs, drones, and embedded systems ship with ZED cameras or ZED SDK workflows.",
+            ],
+            [
+              "Bull case",
+              "The ZED SDK becomes a durable developer moat.",
+              "Teams standardize on ZED outputs for depth, pose, mapping, ROS 2, Isaac, and simulation workflows.",
+            ],
+            [
+              "Bull case",
+              "Stereolabs moves from prototyping into commercial product design wins.",
+              "Customers progress from ZED 2i prototypes to ZED X, ZED X One, multi-camera, and ZED Box deployments.",
+            ],
+            [
+              "Bear case",
+              "Sensor categories fragment by use case.",
+              "LiDAR, ToF, smart cameras, industrial vision, and custom OEM rigs win important slices of demand.",
+            ],
+            [
+              "Execution risk",
+              "Stereo perception has real-world limitations.",
+              "Stereolabs must keep improving robustness across lighting, texture, calibration, motion, range, and integration constraints.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What to Watch Next",
+      paragraphs: [
+        "First, watch ZED X and ZED X One adoption. These products matter because they push Stereolabs beyond USB developer workflows and into embedded, vehicle, and multi-camera robotics systems.",
+        "Second, watch SDK depth. Depth sensing, positional tracking, spatial mapping, object detection, body tracking, fusion, and global localization should become easier, more reliable, and better integrated with the robotics ecosystem over time.",
+        "Third, watch NVIDIA Jetson and Isaac integration. If physical AI builders keep standardizing around Jetson, Isaac ROS, and simulation-first development, Stereolabs benefits from being close to that workflow.",
+        "Fourth, watch commercial design wins. The strongest signal is not a research demo. It is a robot, vehicle, inspection system, or product line that ships with ZED as a standard perception component.",
+        "Fifth, watch the competitive map. Stereolabs does not need to beat LiDAR, Luxonis, RealSense, Orbbec, Basler, IDS, and custom rigs everywhere. It needs to remain the practical default for enough 3D vision tasks where stereo depth plus SDK integration is the best tradeoff.",
+      ],
+    },
+    {
+      heading: "The Bottom Line",
+      paragraphs: [
+        "Stereolabs matters because physical AI needs geometry. Cameras that only recognize objects are useful, but robots and autonomous systems need distance, motion, maps, and coordinate frames before they can move intelligently through the world.",
+        "The ZED ecosystem gives builders a practical path into stereo depth, positional tracking, spatial mapping, object detection, body tracking, and robotics integrations. That makes Stereolabs a meaningful infrastructure company in the perception layer, even if it is less visible than robot makers or GPU vendors.",
+        "The company's future depends on whether ZED remains a default choice as projects mature. If Stereolabs converts developer adoption into commercial design wins, it can become a standard spatial perception supplier for physical AI. If sensor markets fragment faster than the ecosystem compounds, it risks staying strongest in prototypes, labs, and selective deployments.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using Stereolabs' official site, ZED documentation, ZED camera product documentation, ZED SDK module documentation, software integration documentation, and Black Scarab analysis of stereo depth, spatial perception, robotics sensing, and physical AI deployment economics. Stereolabs is a private company, so claims about revenue, margins, production deployment counts, and customer economics should be treated as company-reported information and Black Scarab analysis rather than audited public financials.",
+      ],
+    },
+  ],
+  sources: [
+    "Stereolabs official site and platform positioning",
+    "Stereolabs ZED camera product documentation",
+    "Stereolabs ZED SDK documentation",
+    "Stereolabs depth sensing, positional tracking, spatial mapping, object detection, and body tracking documentation",
+    "Stereolabs ROS 2, Isaac ROS, Isaac Sim, Docker, OpenCV, PyTorch, YOLO, Unity, Unreal, and GStreamer integration documentation",
+    "Black Scarab analysis of stereo depth, robotics perception, spatial AI, and physical AI deployment economics",
+  ],
+  sourceLinks: [
+    {
+      label: "Stereolabs official site",
+      url: "https://www.stereolabs.com/",
+    },
+    {
+      label: "Stereolabs documentation",
+      url: "https://www.stereolabs.com/docs",
+    },
+    {
+      label: "ZED camera products",
+      url: "https://www.stereolabs.com/docs/products/cameras",
+    },
+    {
+      label: "ZED 2i",
+      url: "https://www.stereolabs.com/store/products/zed-2i",
+    },
+    {
+      label: "ZED X documentation",
+      url: "https://www.stereolabs.com/docs/products/cameras/zedx",
+    },
+    {
+      label: "Depth sensing",
+      url: "https://www.stereolabs.com/docs/development/zed-sdk/modules/depth-sensing",
+    },
+    {
+      label: "Positional tracking",
+      url: "https://www.stereolabs.com/docs/development/zed-sdk/modules/positional-tracking",
+    },
+    {
+      label: "Spatial mapping",
+      url: "https://www.stereolabs.com/docs/development/zed-sdk/modules/spatial-mapping",
+    },
+    {
+      label: "Object detection",
+      url: "https://www.stereolabs.com/docs/development/zed-sdk/modules/object-detection",
+    },
+  ],
+});
+
 const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
   slug: "top-15-physical-ai-infrastructure-companies",
   title: "Top 15 Physical AI Infrastructure Companies to Watch in 2026",
@@ -8927,6 +9329,7 @@ export const caseStudies: CaseStudyArticle[] = [
   edgeImpulseDeepDive(),
   roboflowDeepDive(),
   luxonisDeepDive(),
+  stereolabsDeepDive(),
   physicalAiInfrastructureCompaniesGuide(),
   intuitiveDaVinci5DeepDive(),
   amazonProteusDeepDive(),
