@@ -4919,6 +4919,382 @@ const stereolabsDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const propheseeDeepDive = (): CaseStudyArticle => ({
+  slug: "prophesee-event-based-vision-physical-ai-guide",
+  title:
+    "Prophesee Deep Dive: Event-Based Vision, Neuromorphic Cameras, and the Motion Layer of Physical AI",
+  summary:
+    "A business and investor deep dive on Prophesee, the event-based vision company behind Metavision sensors, SDKs, and Mantara, showing why sparse visual events can become a specialist perception layer for robotics, automotive, industrial automation, AR devices, and high-speed monitoring.",
+  publishedLabel: "Physical AI Series · Published July 3, 2026",
+  publishedDate: "2026-07-03",
+  typeLabel: "Physical AI Series",
+  formatLabel: "Company deep dive",
+  industry: "Cross-Industry",
+  image: "/article-images/prophesee-event-based-vision-physical-ai-guide.png",
+  imageAlt:
+    "Event-based vision camera sensing fast robotic, drone, and vehicle motion with sparse blue and purple event trails across an industrial scene.",
+  seoDescription:
+    "A 2026 Prophesee deep dive covering event-based vision, neuromorphic cameras, Metavision sensors and SDK, Sony IMX636, GenX320, Mantara, Hearth, IDS industrial cameras, Raspberry Pi and AMD Kria kits, robotics, automotive, AR, industrial inspection, and physical AI perception economics.",
+  tags: [
+    "Prophesee",
+    "event-based vision",
+    "neuromorphic vision",
+    "Metavision",
+    "Mantara",
+    "robotics",
+    "industrial AI",
+    "computer vision",
+    "physical AI",
+    "AI investing",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Prophesee is one of the most interesting perception companies because event-based vision changes the data model of cameras. Instead of sending full frames at fixed intervals, event cameras respond to pixel-level changes. The camera reports what changed, when it changed, and where it changed.",
+        "That shift matters because many physical AI problems are not really about beautiful images. They are about motion: fast objects, vibration, tracking, gestures, industrial movement, robotics reflexes, automotive scenes, AR latency, drone navigation, or environments where conventional frame capture wastes bandwidth on unchanging background.",
+        "A normal camera asks the world to wait for the next frame. An event camera listens continuously for change. That can make event-based vision valuable for low latency, high dynamic range, sparse data, fast motion, and power-sensitive systems where the temporal signal matters more than the full image.",
+        "Prophesee's investor question is whether event cameras remain a specialist technology or become a standard companion sensor. They do not need to replace every RGB, stereo, LiDAR, radar, or ToF sensor. They need to own the jobs where motion, latency, dynamic range, and sparse visual data create a performance gap that conventional cameras cannot easily close.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Prophesee builds event-based vision sensors, software, and application tooling. Its Metavision platform includes sensors, evaluation kits, developer tools, SDKs, AI models, and application software. The company's technology is inspired by the way biological vision responds to change rather than full-frame refresh cycles.",
+        "The official materials describe three main value drivers: microsecond-level temporal resolution, high dynamic range, and sparse event data that can reduce bandwidth and processing load compared with conventional frame-based imaging. Those traits make Prophesee relevant to high-speed inspection, robotics, automotive sensing, AR and wearable devices, industrial monitoring, vibration analysis, and motion-centric computer vision.",
+        "The company has also become more application-oriented. In June 2026, Prophesee announced Mantara, built around its Hearth video-to-event conversion model and described as real-time event-based perception software for robotics, aerospace, industrial automation, and mobility. The company also announced EUR20 million in additional funding to support industrial and automotive rollout.",
+        "For physical AI, Prophesee represents a specialist perception layer. It is not the all-purpose camera. It is the motion camera. The bull case is that physical AI systems will increasingly combine sensors: RGB for appearance, stereo or LiDAR for geometry, radar for robustness, and event cameras for fast temporal change.",
+      ],
+      tables: [
+        {
+          title: "Prophesee at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "An event-based vision company building neuromorphic sensors, Metavision software, SDKs, kits, and application tools.",
+            ],
+            [
+              "What layer does it target?",
+              "The motion perception layer: sparse visual events, low latency, high dynamic range, fast tracking, and temporal signal capture.",
+            ],
+            [
+              "Why does it matter?",
+              "Physical AI often needs to react to change, not merely classify images, especially in robotics, automotive, industrial motion, AR, and high-speed inspection.",
+            ],
+            [
+              "What changed recently?",
+              "Prophesee announced Mantara, a real-time event-based perception software platform, and EUR20 million in additional funding in June 2026.",
+            ],
+            [
+              "What is the core risk?",
+              "Event cameras require software maturity, developer education, use-case clarity, and ecosystem support before they can move from specialist deployments to standard companion sensors.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "A Different Camera Data Model",
+      paragraphs: [
+        "The best way to understand Prophesee is to start with the data model. Conventional cameras capture full images at fixed frame rates. If nothing changes, they still send frames. If something moves quickly between frames, the system may miss it, blur it, or need higher frame rates and more bandwidth.",
+        "Event cameras work differently. Each pixel independently responds to changes in brightness. Instead of delivering a full image, the sensor emits asynchronous events. In practice, that creates a sparse stream of visual changes rather than a sequence of complete pictures.",
+        "That sparse stream can be strange for teams trained on normal computer vision. There is often no familiar RGB frame to inspect. The output looks like motion, edges, and change. But for certain problems, that is exactly the useful information.",
+        "This is why Prophesee belongs in the physical AI infrastructure map. Many physical systems do not need more pixels. They need better timing. They need to know that something moved, vibrated, crossed a boundary, accelerated, spun, flickered, or changed faster than a conventional image pipeline can comfortably handle.",
+      ],
+      tables: [
+        {
+          title: "Frame Camera vs. Event Camera",
+          columns: ["Question", "Frame-Based Camera", "Event-Based Camera"],
+          rows: [
+            [
+              "When does it output data?",
+              "At fixed frame intervals.",
+              "When individual pixels detect change.",
+            ],
+            [
+              "What does it send?",
+              "Full images, even if most of the scene is unchanged.",
+              "Sparse events that encode local visual changes over time.",
+            ],
+            [
+              "What is it strong at?",
+              "Appearance, texture, color, general object recognition, and human-readable images.",
+              "Motion, low latency, high dynamic range, fast tracking, sparse data, and temporal precision.",
+            ],
+            [
+              "What is harder?",
+              "Very fast motion, high contrast scenes, blur, and wasted bandwidth on static backgrounds.",
+              "Developer familiarity, visualization, model tooling, and integration with existing vision workflows.",
+            ],
+            [
+              "Physical AI role",
+              "Recognize what is in the scene.",
+              "Capture what is changing in the scene.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Why Motion Matters",
+      paragraphs: [
+        "The relevance to physical AI is easy to miss if every camera is evaluated like a normal RGB sensor. Some real-world problems are not primarily image problems. They are motion problems.",
+        "A robot arm moving quickly through a workcell, a drone stabilizing through changing light, an automotive system watching fast scene changes, a factory line inspecting high-speed parts, an AR headset tracking motion with low latency, or a vibration-monitoring setup observing tiny movements may all care more about temporal precision than image beauty.",
+        "Event-based vision can reduce the burden of seeing by ignoring what does not change. That does not make it universally better. It makes it different. In the right workload, a sparse event stream can be smaller, faster, and more directly aligned with the signal the system needs.",
+        "The strongest Prophesee use cases will likely be those where the performance gap is visible to the customer: motion blur disappears, latency drops, bandwidth falls, dynamic range improves, or a fast event becomes measurable where a frame camera would struggle.",
+      ],
+    },
+    {
+      heading: "The Metavision Stack",
+      paragraphs: [
+        "Prophesee's Metavision stack is the company's main bridge from sensor novelty to deployable systems. The stack includes event-based sensors, evaluation kits, software tools, SDKs, AI components, plugins, and developer documentation.",
+        "That matters because event-based vision is not plug-and-play for most computer vision teams. Developers need ways to visualize events, record data, convert video to event-style data, build algorithms, run samples, train models, deploy inference, and connect event cameras to broader robotics or industrial systems.",
+        "The Metavision SDK and documentation are therefore as important as the silicon. A new perception data model needs a software layer that teaches developers how to think, debug, and deploy. Without that layer, event cameras remain interesting sensors that are difficult to adopt.",
+        "Prophesee's long-term advantage depends on whether Metavision becomes the practical developer surface for event vision. If teams learn event vision through Prophesee tools, the company can shape how applications are built around the sensor.",
+      ],
+      tables: [
+        {
+          title: "Prophesee Stack",
+          columns: ["Layer", "Products / Capabilities", "Strategic Role"],
+          rows: [
+            [
+              "Sensors",
+              "Metavision event-based sensors, including Sony collaboration sensors and GenX320.",
+              "Capture sparse pixel-level brightness changes with high temporal precision.",
+            ],
+            [
+              "Evaluation kits",
+              "Starter kits for platforms such as Raspberry Pi and AMD Kria, plus camera modules and development kits.",
+              "Lower the barrier for developers and integrators to test event vision on real hardware.",
+            ],
+            [
+              "Software",
+              "Metavision SDK, Studio, APIs, plugins, samples, and documentation.",
+              "Turn raw event streams into usable developer workflows and applications.",
+            ],
+            [
+              "AI layer",
+              "Models, event-based perception algorithms, and video-to-event capabilities such as Hearth.",
+              "Help teams build applications without starting from sensor physics alone.",
+            ],
+            [
+              "Applications",
+              "Mantara and use-case software for robotics, industrial automation, mobility, aerospace, vibration, and monitoring.",
+              "Move Prophesee from component supplier toward application-enabling perception software.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Sensors and Hardware Ecosystem",
+      paragraphs: [
+        "Prophesee's hardware strategy is partly about its own sensor technology and partly about ecosystem partners. The company has worked with Sony on event-based vision sensors such as IMX636 and IMX637, and its materials highlight the GenX320 event-based sensor for compact, low-power use cases.",
+        "The hardware ecosystem matters because physical AI builders do not adopt sensors in isolation. They need modules, evaluation kits, interfaces, compute compatibility, industrial camera partners, software support, and a path from experiment to product.",
+        "Prophesee has pushed in that direction with starter kits and partner cameras. The GenX320 starter kit for Raspberry Pi targets low-cost embedded experimentation. The GenX320 starter kit for AMD Kria KR260 targets higher-throughput development on adaptive compute. IDS has also announced uEye EVS industrial cameras with Prophesee's event-based vision sensor technology.",
+        "Those moves are strategically important because they help event vision escape the lab. A sensor becomes more adoptable when it appears in camera modules, industrial housings, embedded kits, and software stacks that engineers already know how to evaluate.",
+      ],
+    },
+    {
+      heading: "Mantara and Hearth",
+      paragraphs: [
+        "Mantara is the clearest sign that Prophesee is trying to move up the stack. Announced in June 2026, Mantara is described by the company as the world's first real-time event-based vision perception software platform for machines, built on Hearth, Prophesee's video-to-event foundation model.",
+        "The framing is important. Event cameras can be powerful, but the training data and developer familiarity problem is real. Most visual datasets, annotation tools, and model workflows are frame-based. A video-to-event foundation model is a way to bridge existing video knowledge into event-style perception.",
+        "If Mantara works as advertised, it could reduce one of the biggest adoption barriers: teams may not need to build the entire event-based software pipeline from scratch. They could use Prophesee's models and software to turn event data into application-ready outputs in robotics, aerospace, automation, and mobility.",
+        "The risk is that platform claims are easier than production adoption. Customers will judge Mantara on latency, robustness, integration, supported hardware, model quality, developer experience, and whether it solves a problem better than frame-camera, LiDAR, radar, or conventional high-speed vision systems.",
+      ],
+    },
+    {
+      heading: "Where Prophesee Fits",
+      paragraphs: [
+        "Prophesee is best understood as a specialist sensor and perception layer. It is not trying to make every camera obsolete. It is trying to own the class of problems where temporal change is the useful signal.",
+        "In robotics, event vision can help with fast motion, low-latency reflexes, gesture recognition, tracking, and operation in challenging lighting. In automotive and mobility, it can help with high dynamic range, fast scene changes, and low-latency perception. In industrial automation, it can help with high-speed inspection, vibration, rotating parts, counting, tracking, and monitoring movement without full-frame data.",
+        "In AR, VR, and wearable systems, event cameras can be attractive because low latency, low power, and motion awareness matter. In scientific and medical applications, event-based sensing can capture fast dynamics that conventional imaging may miss or over-sample inefficiently.",
+        "The common thread is not replacement. It is complementarity. Prophesee likely wins when event vision sits beside other sensors and gives the system a temporal channel it did not have before.",
+      ],
+      tables: [
+        {
+          title: "Prophesee Use Cases",
+          columns: ["Market", "Event Vision Role", "Why It Matters"],
+          rows: [
+            [
+              "Robotics",
+              "Low-latency motion tracking, reflexes, gesture sensing, and fast object detection.",
+              "Helps machines react to change instead of waiting for full-frame updates.",
+            ],
+            [
+              "Industrial automation",
+              "High-speed inspection, vibration monitoring, counting, rotating parts, and motion analysis.",
+              "Captures fast temporal signals while ignoring static background data.",
+            ],
+            [
+              "Automotive and mobility",
+              "High dynamic range sensing, fast scene changes, low-latency perception, and companion sensing.",
+              "Adds a temporal channel for difficult driving and mobility perception workloads.",
+            ],
+            [
+              "AR, VR, and wearables",
+              "Low-latency motion awareness, eye or gesture tracking, and power-sensitive sensing.",
+              "Fits devices where latency, power, and sparse motion data are critical.",
+            ],
+            [
+              "Security and monitoring",
+              "Motion-centric detection, low-bandwidth monitoring, and change detection.",
+              "Lets systems focus on events rather than streaming unchanging scenes.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Companion Sensor Thesis",
+      paragraphs: [
+        "The most realistic Prophesee bull case is not that event cameras replace RGB cameras. It is that event cameras become standard companion sensors in systems that need fast temporal perception.",
+        "Physical AI stacks are becoming multimodal by default. Robots may use RGB cameras for appearance, depth cameras or LiDAR for geometry, IMUs for motion, force sensors for contact, microphones for audio, and radar or thermal sensors for robustness. Event cameras can add a motion-first channel to that stack.",
+        "That companion role is commercially attractive if it becomes standardized. A sensor that is optional in prototypes can become required in products once it solves a known failure mode. If event vision prevents missed fast motion, reduces latency, handles extreme lighting, or lowers bandwidth enough to change the architecture, it becomes easier to justify.",
+        "The challenge is proving that gap repeatedly. Event vision has to show customers where it is not just interesting, but necessary. The clearest wins will come from use cases where conventional frame cameras either fail or require expensive workarounds.",
+      ],
+    },
+    {
+      heading: "Software Is the Adoption Bottleneck",
+      paragraphs: [
+        "Event-based vision's main barrier is not only hardware cost. It is software maturity and developer familiarity. Most vision developers know images, frames, labels, segmentation masks, object detectors, video pipelines, and common datasets. Event streams require a different mental model.",
+        "That creates friction across the whole workflow. How do teams annotate events? How do they visualize them? Which models work? How do they train? How do they benchmark against frame cameras? How do they combine event streams with RGB, LiDAR, radar, IMU, or robot state? How do they debug failures?",
+        "Prophesee is attacking that bottleneck with Metavision SDK, documentation, evaluation kits, AI models, partner cameras, and now Mantara. The company needs to make event vision feel like a usable product category, not a research specialty.",
+        "The prize is meaningful. Once developers know how to use an event stream, the technology can become a repeatable tool. Until then, adoption depends on expert teams, narrow applications, and motivated early customers.",
+      ],
+    },
+    {
+      heading: "Competitive Landscape",
+      paragraphs: [
+        "Prophesee competes against multiple sensor categories. Conventional RGB cameras are cheap, familiar, high resolution, and supported by a massive software ecosystem. High-speed frame cameras can solve some fast-motion problems directly, though often with more bandwidth, cost, lighting, and compute requirements. LiDAR, radar, ToF, stereo cameras, thermal sensors, and IMUs each solve different perception problems.",
+        "The company also competes against inertia. If a buyer can solve the problem with a normal camera and existing software, it will often do that first. Event vision has to overcome a new hardware choice, a new data model, and a less familiar developer workflow.",
+        "Prophesee's advantage is specialization. Event cameras can be excellent when the temporal signal is the core signal. They can offer low latency, high dynamic range, sparse data, and motion sensitivity that conventional frame cameras struggle to match in some conditions.",
+        "The competitive question is therefore precise: can Prophesee identify enough high-value use cases where event-based perception is clearly better, then package the sensor, software, and integration path so customers can deploy it without becoming event-vision experts?",
+      ],
+    },
+    {
+      heading: "Business Model Possibilities",
+      paragraphs: [
+        "Prophesee's business model can combine sensor licensing, camera modules, evaluation kits, software, application platforms, partnerships, and design wins. The sensor sale or license is the entry point. The larger opportunity is becoming the event-vision standard inside products and systems that ship repeatedly.",
+        "Partnerships are central. Sony collaboration helps validate the sensor category. IDS industrial cameras help bring event vision into machine-vision channels. Raspberry Pi and AMD Kria starter kits help developers test event vision on accessible and embedded platforms. Mantara can create a software layer on top of that hardware ecosystem.",
+        "The attractive version is a platform flywheel. Developers try event vision through kits, build applications with Metavision, deploy through partner cameras or embedded modules, and use Prophesee software to turn event streams into production perception. The more examples and applications exist, the less exotic the technology feels.",
+        "The risk is that the company remains too tied to niche hardware adoption. If event vision does not become a standard design choice, revenue may depend on a limited number of specialist deployments, research programs, or customer-specific projects.",
+      ],
+    },
+    {
+      heading: "Investor Case",
+      paragraphs: [
+        "The bull case is that physical AI needs a motion-native sensor layer. As machines move faster, operate in harder lighting, and need lower latency, event cameras can become a standard companion sensor in robotics, automotive, industrial automation, aerospace, AR, and monitoring.",
+        "The second bull case is that Prophesee is building more than a sensor. Metavision, Mantara, Hearth, kits, partner cameras, and developer documentation are all attempts to make event vision deployable. If the software layer matures, the category becomes easier to adopt.",
+        "The third bull case is specialization. Prophesee does not need to win every camera socket. It needs to win the sockets where conventional cameras waste bandwidth, miss fast motion, struggle with dynamic range, or add too much latency.",
+        "The bear case is that event vision stays too unfamiliar. Conventional cameras and AI models keep improving. LiDAR, radar, ToF, stereo, and high-speed cameras cover enough use cases. Developers avoid new data models. Customers decide that the performance gain is not worth the integration effort. Prophesee has to turn technical elegance into obvious deployment value.",
+      ],
+      tables: [
+        {
+          title: "Prophesee: Bull Case vs. Bear Case",
+          columns: ["View", "Argument", "Signal to Watch"],
+          rows: [
+            [
+              "Bull case",
+              "Event cameras become a standard companion sensor for fast, low-latency physical AI.",
+              "More robotics, automotive, industrial, AR, and monitoring systems add event vision alongside conventional sensors.",
+            ],
+            [
+              "Bull case",
+              "Metavision and Mantara lower the software adoption barrier.",
+              "Developers move from demos to repeatable applications without needing deep event-vision research teams.",
+            ],
+            [
+              "Bull case",
+              "Specialist use cases create durable design wins.",
+              "Customers adopt Prophesee where motion blur, latency, dynamic range, or bandwidth are hard constraints.",
+            ],
+            [
+              "Bear case",
+              "The market stays niche.",
+              "Event vision remains concentrated in research, specialized industrial tasks, and a limited number of high-performance applications.",
+            ],
+            [
+              "Execution risk",
+              "New sensor data models require ecosystem maturity.",
+              "Prophesee must grow tools, models, datasets, partner hardware, and developer familiarity together.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What to Watch Next",
+      paragraphs: [
+        "First, watch Mantara adoption. If Mantara turns event data into application-ready perception for robotics, aerospace, automation, and mobility, it could be the bridge from sensor novelty to deployable software.",
+        "Second, watch industrial camera partnerships. IDS and similar machine-vision channels matter because industrial buyers need packaged cameras, support, and integration paths, not only bare sensors.",
+        "Third, watch embedded starter kits. Raspberry Pi and AMD Kria kits make event vision more accessible. The question is whether those kits produce real product prototypes and repeatable deployments.",
+        "Fourth, watch automotive and mobility design wins. Event vision's high dynamic range and low latency are compelling in theory. Commercial adoption will depend on qualification, cost, software integration, and clear safety or performance gains.",
+        "Fifth, watch developer tooling. Event-based perception needs better examples, annotation paths, model support, fusion workflows, benchmarking, and education. The easier it becomes to build with events, the larger the market can become.",
+      ],
+    },
+    {
+      heading: "The Bottom Line",
+      paragraphs: [
+        "Prophesee matters because it challenges the assumption that cameras should always be frame machines. Physical AI does not only need to see what the world looks like. It needs to know what is changing, how fast it is changing, and whether that change demands action.",
+        "Event-based vision will not replace every camera, and that is not the right benchmark. The better question is whether event cameras become the motion layer inside multimodal perception stacks. If Prophesee owns that layer, it can become a meaningful infrastructure company for robotics, automotive, industrial automation, AR, and high-speed monitoring.",
+        "The company has the right technical wedge and a growing software story. The next phase is proof of repeatability: clear use cases, partner hardware, developer adoption, and design wins where event vision is not merely interesting, but necessary.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using Prophesee's official site, Metavision product and developer materials, Prophesee announcements on Mantara, Hearth, GenX320 kits, IDS industrial cameras, Sony event-based sensors, and Black Scarab analysis of event-based vision, sensor fusion, robotics perception, and physical AI deployment economics. Prophesee is a private company, so claims about revenue, margins, deployment counts, and customer economics should be treated as company-reported information and Black Scarab analysis rather than audited public financials.",
+      ],
+    },
+  ],
+  sources: [
+    "Prophesee official site and event-based vision positioning",
+    "Prophesee Metavision SDK and developer documentation",
+    "Prophesee Mantara and Hearth announcement",
+    "Prophesee EUR20 million funding announcement",
+    "Prophesee GenX320 starter kit materials",
+    "Prophesee and IDS industrial event camera announcement",
+    "Prophesee and Sony IMX636 event-based vision sensor materials",
+    "Black Scarab analysis of event-based vision, motion perception, multimodal sensing, and physical AI deployment economics",
+  ],
+  sourceLinks: [
+    {
+      label: "Prophesee official site",
+      url: "https://www.prophesee.ai/",
+    },
+    {
+      label: "Metavision SDK documentation",
+      url: "https://docs.prophesee.ai/",
+    },
+    {
+      label: "Mantara and Hearth announcement",
+      url: "https://www.prophesee.ai/2026/06/17/prophesee-unveils-mantara-the-worlds-first-real-time-event-based-vision-perception-software-platform-for-machines/",
+    },
+    {
+      label: "Prophesee EUR20M funding announcement",
+      url: "https://www.prophesee.ai/2026/06/15/prophesee-accelerates-the-industrialization-of-its-revolutionary-vision-system-with-e20-million/",
+    },
+    {
+      label: "IDS uEye EVS with Prophesee event-based sensor",
+      url: "https://www.prophesee.ai/2026/05/06/ids-unveils-ueye-evs-with-prophesees-event-based-vision-sensors/",
+    },
+    {
+      label: "GenX320 starter kit for AMD Kria",
+      url: "https://www.prophesee.ai/2024/11/20/prophesee-announces-availability-of-its-genx320-starter-kit-for-amd-kria-kv260-vision-ai-starter-kit/",
+    },
+    {
+      label: "GenX320 event-based vision sensor",
+      url: "https://www.prophesee.ai/event-based-sensors/",
+    },
+    {
+      label: "Sony IMX636 event-based vision sensor",
+      url: "https://www.prophesee.ai/2021/09/09/sony-and-prophesee-collaborate-to-bring-event-based-vision-sensing-to-machine-vision-applications/",
+    },
+  ],
+});
+
 const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
   slug: "top-15-physical-ai-infrastructure-companies",
   title: "Top 15 Physical AI Infrastructure Companies to Watch in 2026",
@@ -9330,6 +9706,7 @@ export const caseStudies: CaseStudyArticle[] = [
   roboflowDeepDive(),
   luxonisDeepDive(),
   stereolabsDeepDive(),
+  propheseeDeepDive(),
   physicalAiInfrastructureCompaniesGuide(),
   intuitiveDaVinci5DeepDive(),
   amazonProteusDeepDive(),
