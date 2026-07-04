@@ -5295,6 +5295,402 @@ const propheseeDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const hailoDeepDive = (): CaseStudyArticle => ({
+  slug: "hailo-edge-ai-acceleration-physical-ai-guide",
+  title:
+    "Hailo Deep Dive: Edge AI Acceleration, Low-Power Inference, and the Physical AI Compute Layer",
+  summary:
+    "A business and investor deep dive on Hailo, the edge AI processor company behind Hailo-8, Hailo-8L, Hailo-10H, Hailo-15, and the Hailo AI Software Suite, showing why efficient local inference is becoming a core deployment layer for physical AI.",
+  publishedLabel: "Physical AI Series · Published July 4, 2026",
+  publishedDate: "2026-07-04",
+  typeLabel: "Physical AI Series",
+  formatLabel: "Company deep dive",
+  industry: "Cross-Industry",
+  image: "/article-images/hailo-edge-ai-acceleration-physical-ai-guide.png",
+  imageAlt:
+    "Edge AI accelerator module powering smart cameras, industrial gateways, robotic inspection, and embedded physical AI systems.",
+  seoDescription:
+    "A 2026 Hailo deep dive covering Hailo-8, Hailo-8L, Hailo-10H, Hailo-15, edge AI accelerators, TOPS per watt, low-power inference, smart cameras, industrial gateways, robotics, Raspberry Pi AI systems, software support, and physical AI deployment economics.",
+  tags: [
+    "Hailo",
+    "edge AI",
+    "AI accelerators",
+    "Hailo-8",
+    "Hailo-10H",
+    "Hailo-15",
+    "physical AI",
+    "smart cameras",
+    "robotics",
+    "AI investing",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Hailo is a key company in edge AI acceleration. Its processors are designed to run neural networks efficiently in devices such as cameras, gateways, industrial systems, embedded machines, and robotics platforms. That puts it directly in the power-and-cost battle that will shape physical AI deployment.",
+        "Not every edge device can use a large GPU. Many deployments need low power consumption, passive cooling, small form factors, predictable cost, low latency, and enough inference performance to run vision or sensor models locally. That is the world Hailo is built for.",
+        "The company's opportunity grows as AI moves into cameras and appliances rather than sitting beside them. A smart camera, inspection box, robot sensor module, retail sensor, industrial gateway, or medical device may need dedicated acceleration, but it cannot carry data-center economics.",
+        "The risk is that edge acceleration is crowded. NVIDIA, Qualcomm, Intel, AMD, Google Coral, Raspberry Pi ecosystem partners, Ambarella, NXP, MediaTek, and other chip companies all want pieces of this market. Hailo's moat depends on performance per watt, software support, module availability, and whether OEMs design it into products at volume.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Hailo sits in the dedicated edge AI processor category. The company sells neural network accelerators and AI vision processors that are meant to bring inference closer to sensors, cameras, gateways, and embedded systems. Its flagship Hailo-8 accelerator is positioned around high performance edge inference with low typical power consumption, while Hailo-8L targets cost-sensitive devices. Hailo-10H extends the story toward transformer and edge GenAI workloads, and Hailo-15 brings AI processing directly into smart camera architectures.",
+        "The practical thesis is simple: physical AI does not only need the biggest model. It needs the right model running in the right place at the right power envelope. If a camera has to detect people, vehicles, defects, pallets, safety risks, or anomalies in real time, sending every frame to the cloud can be too expensive, too slow, too unreliable, or too sensitive from a privacy perspective.",
+        "Hailo matters because efficient inference can change the architecture of a deployment. Instead of raw video moving through the system, an edge device can send detections, tracks, events, coordinates, alerts, or metadata. That can reduce bandwidth, lower latency, improve uptime, and make AI practical in environments that do not have perfect connectivity or large compute budgets.",
+        "For investors, the company is a bet on AI spreading into distributed physical infrastructure. The bull case is that more devices become AI-native and need efficient acceleration. The bear case is that edge AI becomes a feature absorbed by larger SoCs, GPUs, CPUs, and camera platforms, compressing the value available to independent accelerator companies.",
+      ],
+      tables: [
+        {
+          title: "Hailo at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "An edge AI processor company building dedicated accelerators, AI vision processors, modules, and software for local neural network inference.",
+            ],
+            [
+              "What layer does it target?",
+              "The embedded compute layer between sensors and applications: smart cameras, gateways, industrial PCs, robots, drones, appliances, and edge devices.",
+            ],
+            [
+              "Why does it matter?",
+              "Physical AI needs inference where the data is created. Efficient processors can make local vision, detection, tracking, and sensor intelligence economically viable.",
+            ],
+            [
+              "What is the flagship product family?",
+              "Hailo-8 and Hailo-8L for edge inference, Hailo-10H for transformer and edge GenAI workloads, and Hailo-15 for AI vision processing inside smart cameras.",
+            ],
+            [
+              "What is the core risk?",
+              "Edge acceleration is crowded, and the long-term winner may be determined by software tooling, OEM design wins, supply, cost, and ecosystem depth as much as raw TOPS.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Why Edge AI Acceleration Matters",
+      paragraphs: [
+        "The physical AI market will not look like one giant cloud workload. Some training and simulation will live in data centers, but deployment will be messy, distributed, and physically constrained. Cameras sit on poles. Sensors live inside machines. Gateways sit in control cabinets. Robots carry batteries. Retail systems need small boxes. Farms, yards, factories, and construction sites do not always have reliable network conditions.",
+        "That makes local inference important. A device may need to detect a defect before a part leaves the station, stop a robot before it reaches a worker, classify an anomaly before a motor overheats, count vehicles at an intersection, or identify a safety violation without sending sensitive video off site. In those cases, cloud AI is useful, but it is not always enough.",
+        "The constraint is that edge devices are not miniature data centers. Power draw matters. Heat matters. Enclosure size matters. Bill of materials matters. Maintenance matters. Procurement matters. A system that needs a large fan, a high-wattage power supply, and expensive host compute may work in a pilot but fail as a volume product.",
+        "Hailo's role is to make useful inference fit inside those constraints. The question is not whether Hailo can outperform the largest GPU. The question is whether it can deliver enough inference at low enough power and cost that AI becomes native to cameras, gateways, sensors, and embedded machines.",
+      ],
+    },
+    {
+      heading: "The Product Stack",
+      paragraphs: [
+        "Hailo's product family gives the company multiple entry points into edge AI. Hailo-8 is the high-performance edge accelerator, with company materials positioning it around up to 26 TOPS and typical power consumption of 2.5W. Hailo-8L lowers the envelope for cost-sensitive devices, with up to 13 TOPS and 1.5W typical power consumption.",
+        "Hailo-10H moves into a different workload class. It is positioned for transformer-based models and edge GenAI, with official materials listing up to 40 TOPS INT4 and 20 TOPS INT8. That matters because edge AI is no longer only object detection. The next phase includes vision-language interfaces, local assistants, multimodal sensor reasoning, and compressed transformer workloads that need more than classic CNN acceleration.",
+        "Hailo-15 brings the strategy directly into the camera. Instead of adding a separate accelerator beside a vision pipeline, the AI vision processor family integrates imaging and inference capabilities for smart cameras. The Hailo-15H page positions the part around 20 TOPS, AI ISP capabilities, camera input, video encoding, and advanced image processing features.",
+        "The software suite ties these parts together. Hailo's Dataflow Compiler, runtime software, Model Zoo, TAPPAS applications, and development tools are the difference between a chip that benchmarks well and a platform developers can actually deploy.",
+      ],
+      tables: [
+        {
+          title: "Hailo Product Layers",
+          columns: ["Layer", "Examples", "Physical AI Role"],
+          rows: [
+            [
+              "Edge AI accelerators",
+              "Hailo-8 and Hailo-8L.",
+              "Add dedicated neural inference to gateways, industrial PCs, embedded devices, developer boards, cameras, and edge systems.",
+            ],
+            [
+              "Transformer and edge GenAI acceleration",
+              "Hailo-10H.",
+              "Targets more demanding local AI workloads such as transformer-based models, multimodal interfaces, and edge GenAI applications.",
+            ],
+            [
+              "AI vision processors",
+              "Hailo-15H and the Hailo-15 family.",
+              "Bring AI processing into smart cameras, combining image processing, video handling, and neural inference in a camera-oriented SoC.",
+            ],
+            [
+              "Modules and form factors",
+              "M.2, Mini PCIe, BGA, and partner modules.",
+              "Make it easier for OEMs and developers to integrate Hailo acceleration into products without designing every board from scratch.",
+            ],
+            [
+              "Software stack",
+              "Dataflow Compiler, HailoRT, Model Zoo, TAPPAS, examples, and deployment tooling.",
+              "Converts trained models into deployable edge inference pipelines and supports the developer workflow around the hardware.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The TOPS-per-Watt Battle",
+      paragraphs: [
+        "Edge AI marketing often collapses into TOPS, but physical AI will be won on a more complicated metric: useful inference per watt, per dollar, per enclosure, per deployment. A large number on a spec sheet matters only if the model fits, latency is acceptable, thermals are manageable, the software path works, and the total system cost makes sense.",
+        "That is why Hailo's low-power positioning is strategically important. A 2.5W typical accelerator profile for Hailo-8 and a 1.5W typical profile for Hailo-8L put the company in applications where high-wattage compute is difficult to justify. A camera, traffic sensor, gateway, kiosk, inspection box, drone, or robot sensor module may care more about thermal predictability than peak benchmark results.",
+        "Power also affects product design. A low-power accelerator can reduce cooling needs, simplify enclosures, extend battery life, make passive designs more plausible, and lower installation complexity. In physical AI, those engineering details often determine whether a system can move beyond a demo.",
+        "The deeper point is that edge acceleration changes how businesses think about AI infrastructure. Data-center AI centralizes intelligence. Edge AI distributes it. Hailo is betting that a large amount of future inference will happen in thousands or millions of small devices that each need just enough intelligence to make local decisions.",
+      ],
+      tables: [
+        {
+          title: "Why Power Efficiency Becomes Strategic",
+          columns: ["Constraint", "Why It Matters in Physical AI"],
+          rows: [
+            [
+              "Thermals",
+              "Many cameras and embedded boxes cannot rely on large fans, high airflow, or easy maintenance access.",
+            ],
+            [
+              "Cost",
+              "Volume deployments need predictable hardware cost and cannot always absorb workstation-class compute.",
+            ],
+            [
+              "Latency",
+              "Local inference can support faster decisions than round-tripping every signal to cloud services.",
+            ],
+            [
+              "Bandwidth",
+              "Sending events, detections, and metadata can be far cheaper than streaming raw video continuously.",
+            ],
+            [
+              "Reliability",
+              "Local AI can keep operating when network connectivity is limited, expensive, or intermittent.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Cameras Become Compute Nodes",
+      paragraphs: [
+        "One of the most important Hailo themes is that cameras are becoming computers. A traditional camera captures images and sends them somewhere else. A smart camera detects, tracks, classifies, filters, compresses, and sometimes triggers actions locally.",
+        "That shift matters because computer vision is often the first form of physical AI a business adopts. Before a robot moves through a warehouse, a camera may monitor a line, detect a missing part, count products, flag a safety zone violation, classify a vehicle, watch a shelf, or inspect a package. The camera is where the real world first becomes machine-readable.",
+        "Hailo-15 is especially relevant here because it moves AI acceleration into the vision processor itself. That changes the architecture from camera plus host computer to camera as a local intelligence endpoint. For OEMs building smart cameras, the value is not only inference speed. It is the possibility of a simpler product stack.",
+        "If smart cameras become one of the largest physical AI categories, the winning compute layer will need to be small, efficient, reliable, and deeply integrated with imaging. Hailo is aiming at exactly that transition.",
+      ],
+    },
+    {
+      heading: "Gateways, Robots, and Embedded Machines",
+      paragraphs: [
+        "Hailo is not only a camera story. The same local inference logic applies to gateways, robots, embedded machines, industrial controllers, drones, appliances, and medical devices. These systems often sit close to sensors and need to make decisions without becoming cloud-dependent.",
+        "An industrial gateway might aggregate camera feeds and sensor streams from a production cell. A robot may need local perception for navigation, picking, inspection, or safety behavior. A drone may need lightweight object detection or tracking under battery constraints. A medical or retail device may need inference inside a compact enclosure. A traffic or smart-city deployment may need computer vision on poles, cabinets, or ruggedized boxes.",
+        "The common problem is that raw data is heavy and decisions need context. Hailo processors can help convert visual or sensor streams into higher-level outputs: detection events, classes, coordinates, counts, alerts, tracks, or confidence scores. That can make the rest of the system simpler and less bandwidth-intensive.",
+        "This is the edge AI version of infrastructure leverage. Hailo does not have to own the robot, camera, or industrial system. It can matter by becoming the inference engine inside many of them.",
+      ],
+      tables: [
+        {
+          title: "Where Hailo Can Fit",
+          columns: ["Deployment", "Hailo Role", "Why It Matters"],
+          rows: [
+            [
+              "Smart cameras",
+              "On-device vision inference, AI ISP support, video analytics, and camera-side decision logic.",
+              "Reduces the need for a separate host computer and can lower bandwidth requirements.",
+            ],
+            [
+              "Industrial gateways",
+              "Local inference near machines, sensors, and camera feeds.",
+              "Supports inspection, anomaly detection, safety monitoring, and automation without sending every signal to the cloud.",
+            ],
+            [
+              "Robotics",
+              "Low-power acceleration for perception, detection, tracking, and sensor processing.",
+              "Helps robots make local decisions under power, thermal, and latency constraints.",
+            ],
+            [
+              "Smart city and traffic systems",
+              "Vision inference in roadside or distributed infrastructure.",
+              "Useful where bandwidth, latency, privacy, and rugged deployment matter.",
+            ],
+            [
+              "Medical, retail, and appliances",
+              "Dedicated AI in compact products.",
+              "Lets OEMs add inference without turning every device into a high-power computer.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Software Is the Adoption Layer",
+      paragraphs: [
+        "The hardest part of edge acceleration is rarely the accelerator alone. It is the model workflow around it. Developers need to train, convert, quantize, compile, profile, deploy, update, monitor, and debug models on target hardware. If that path is painful, the chip becomes a science project instead of a product component.",
+        "Hailo's AI Software Suite is therefore strategically important. The official stack includes the Dataflow Compiler, runtime support, Model Zoo, TAPPAS, and related developer tooling. These pieces help teams move models from common machine learning frameworks into accelerator-friendly deployments.",
+        "The Model Zoo matters because customers often begin with familiar tasks: classification, object detection, segmentation, pose estimation, face detection, landmarking, and other vision workloads. TAPPAS matters because real applications need pipelines, not only one model running on one image.",
+        "Software maturity can become a moat because OEMs do not want to rebuild deployment infrastructure every time they add a model. The more predictable the Hailo toolchain becomes, the easier it is for teams to repeat the decision across products.",
+      ],
+    },
+    {
+      heading: "The Developer On-Ramp",
+      paragraphs: [
+        "Hailo also benefits from developer visibility. The Raspberry Pi AI Kit and AI HAT+ ecosystem gave many builders a low-cost way to experiment with Hailo acceleration on Raspberry Pi 5. That does not automatically create enterprise design wins, but it does increase familiarity.",
+        "Developer access matters because edge AI often begins as a prototype. A small manufacturer, integrator, robotics lab, student team, or product engineer may start with a developer board before moving to a more rugged module or OEM design. If Hailo becomes familiar during experimentation, it has a better chance of appearing in later product decisions.",
+        "This is similar to what NVIDIA achieved with Jetson, but in a different power and cost class. Jetson made GPU-based embedded AI accessible. Hailo is trying to make dedicated low-power acceleration accessible. Those are not identical markets, but they often meet in the same prototype labs and product roadmaps.",
+        "The key test is whether developer enthusiasm converts into repeatable deployment. A healthy developer ecosystem can create examples, tutorials, open-source integrations, and demand signals. But physical AI revenue ultimately depends on hardware shipping inside products, cameras, gateways, robots, and systems.",
+      ],
+    },
+    {
+      heading: "Competitive Landscape",
+      paragraphs: [
+        "Hailo's market is attractive because the need is real, but that also makes it crowded. NVIDIA has the Jetson ecosystem and CUDA gravity. Qualcomm brings mobile and embedded SoC strength. Intel has OpenVINO and edge CPU/NPU pathways. AMD has adaptive compute and embedded platforms. Google Coral helped define low-cost edge TPU development. Ambarella is strong in edge vision SoCs. NXP, MediaTek, and other embedded silicon companies can integrate AI acceleration into broader system chips.",
+        "The competitive pressure is not only performance. It is ecosystem power. If a customer already uses NVIDIA tools, it may choose Jetson. If an OEM already buys a camera SoC from another supplier, it may accept that supplier's integrated AI block. If a device needs a general-purpose application processor, a standalone accelerator may have to justify the extra component.",
+        "Hailo's opening is specialization. Dedicated acceleration can be attractive when the customer needs better performance per watt, a small form factor, an M.2 module, camera-side inference, or a specific deployment profile that larger platforms do not fit cleanly.",
+        "The company wins if customers decide that its efficiency and software are worth designing around. It loses if edge AI acceleration becomes a commodity feature bundled into every broader chip platform.",
+      ],
+      tables: [
+        {
+          title: "Competitive Pressure Map",
+          columns: ["Competitor Type", "Why It Matters", "Hailo Response"],
+          rows: [
+            [
+              "Embedded GPU platforms",
+              "Strong developer ecosystems and broad model support, especially around NVIDIA Jetson.",
+              "Compete on lower power, smaller form factor, dedicated inference efficiency, and camera/gateway design fit.",
+            ],
+            [
+              "Mobile and embedded SoCs",
+              "AI accelerators can be integrated directly into application processors.",
+              "Win where dedicated acceleration offers better performance per watt or easier modular integration.",
+            ],
+            [
+              "Vision SoCs",
+              "Camera chips can bundle ISP, video, and AI capabilities.",
+              "Use Hailo-15 to compete directly in AI camera architectures.",
+            ],
+            [
+              "Low-cost accelerators",
+              "Price-sensitive developers and OEMs may prioritize cost over maximum performance.",
+              "Use Hailo-8L, modules, and software support to target cost-sensitive deployments.",
+            ],
+            [
+              "Cloud AI",
+              "Some customers may prefer centralized inference if bandwidth and latency allow it.",
+              "Win where privacy, bandwidth, uptime, and real-time response make local inference necessary.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Business Model and Design Wins",
+      paragraphs: [
+        "Hailo's business can scale through chips, modules, software support, partner hardware, and OEM design wins. The most valuable outcome is not a one-time developer-board sale. It is being designed into products that ship repeatedly: cameras, gateways, industrial systems, robotics platforms, medical devices, smart city equipment, and appliances.",
+        "Design wins are especially important in hardware because product cycles are long. Once a company qualifies a chip, builds the board, writes the software, and ships a product around it, switching can be costly. That creates stickiness, but it also makes early product fit critical.",
+        "The company needs to support two audiences at once. Developers need tools, examples, documentation, and available modules. OEMs need supply confidence, thermal predictability, software support, long-term availability, security, certifications, and business terms that make sense at volume.",
+        "If Hailo can satisfy both, it can occupy a useful position: accessible enough for builders, serious enough for product companies, and efficient enough for edge deployments where GPUs are too expensive, too power-hungry, or too large.",
+      ],
+    },
+    {
+      heading: "Investor Case",
+      paragraphs: [
+        "The bull case for Hailo is that AI inference moves into the fabric of physical infrastructure. Cameras, gateways, vehicles, machines, robots, appliances, sensors, and embedded products become more intelligent, and many of them need dedicated neural acceleration that fits tight power and cost budgets.",
+        "The second bull case is that software and form factors create a practical moat. If Hailo's compiler, runtime, Model Zoo, TAPPAS applications, modules, and partner ecosystem reduce integration pain, the company can become more than a chip spec. It can become a repeatable edge AI deployment choice.",
+        "The third bull case is smart cameras. If cameras evolve from passive image collectors into local AI endpoints, Hailo-15 and Hailo-enabled camera architectures could become a major channel for physical AI.",
+        "The bear case is that edge AI acceleration gets absorbed into larger platforms. A customer may choose Jetson for ecosystem, Qualcomm for integration, Ambarella for cameras, Intel for existing infrastructure, AMD for embedded acceleration, or a general SoC with enough NPU performance. Hailo has to prove that dedicated edge inference is not only better, but better enough to win sockets.",
+      ],
+      tables: [
+        {
+          title: "Hailo: Bull Case vs. Bear Case",
+          columns: ["View", "Argument", "Signal to Watch"],
+          rows: [
+            [
+              "Bull case",
+              "AI moves into distributed physical devices, and efficient local inference becomes a standard requirement.",
+              "More cameras, gateways, robots, industrial systems, and appliances ship with dedicated edge AI acceleration.",
+            ],
+            [
+              "Bull case",
+              "Hailo's performance-per-watt profile makes it attractive where GPUs are too large or power-hungry.",
+              "OEMs adopt Hailo modules or chips in constrained products at volume.",
+            ],
+            [
+              "Bull case",
+              "The Hailo software suite lowers deployment friction.",
+              "Developers can convert, optimize, and deploy common models without treating the hardware as a research project.",
+            ],
+            [
+              "Bear case",
+              "Edge AI becomes a bundled feature inside larger SoCs and camera processors.",
+              "Customers decide that integrated NPUs are good enough and avoid adding standalone accelerators.",
+            ],
+            [
+              "Execution risk",
+              "Hardware markets require supply, support, and long product cycles.",
+              "Hailo must turn developer interest into durable OEM design wins and supported deployments.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What to Watch Next",
+      paragraphs: [
+        "First, watch OEM design wins. Hailo becomes more important if its accelerators appear inside shipping cameras, gateways, robots, smart city systems, industrial products, and appliances, not only developer kits.",
+        "Second, watch Hailo-15 adoption. Smart cameras are one of the most natural physical AI categories, and an AI vision processor can move Hailo closer to the product architecture rather than sitting beside it.",
+        "Third, watch Hailo-10H and edge GenAI. Transformer workloads at the edge are still early, but local multimodal assistants, vision-language interfaces, and compact generative models could expand what edge accelerators are expected to do.",
+        "Fourth, watch software maturity. The Dataflow Compiler, runtime, Model Zoo, TAPPAS, documentation, and examples will determine whether Hailo is easy enough for teams that are not chip experts.",
+        "Fifth, watch the Raspberry Pi and maker-to-prototype ecosystem. Developer familiarity can create long-term pull, but the important question is whether those experiments graduate into real deployments.",
+      ],
+    },
+    {
+      heading: "The Bottom Line",
+      paragraphs: [
+        "Hailo matters because physical AI has to fit inside the real world. That means power budgets, thermal limits, enclosures, wiring, cameras, gateways, industrial boxes, procurement constraints, and devices that need to keep working when the network is imperfect.",
+        "The company is not trying to own the entire physical AI stack. It is trying to own a critical compute layer inside that stack: efficient local inference. If AI moves into millions of cameras, gateways, robots, appliances, and embedded systems, that layer becomes valuable.",
+        "The core question is whether Hailo can convert a strong technical position into durable design wins. Performance per watt opens the door. Software, supply, partnerships, and OEM trust decide whether the company stays in the product.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using Hailo's official product materials for Hailo-8, Hailo-8L, Hailo-10H, Hailo-15H, the Hailo AI Software Suite, Hailo's physical AI and robotics materials, Raspberry Pi AI Kit and AI HAT+ context, and Black Scarab analysis of edge AI acceleration, smart cameras, embedded inference, robotics perception, and physical AI deployment economics. Hailo is a private company, so claims about revenue, margins, customer concentration, and shipment scale should be treated as company-reported information and Black Scarab analysis rather than audited public financials.",
+      ],
+    },
+  ],
+  sources: [
+    "Hailo official site and edge AI processor positioning",
+    "Hailo-8 AI Accelerator product materials",
+    "Hailo-8L AI Accelerator product materials",
+    "Hailo-10H AI Accelerator product materials",
+    "Hailo-15H AI Vision Processor product materials",
+    "Hailo AI Software Suite materials",
+    "Hailo physical AI and robotics materials",
+    "Raspberry Pi AI Kit and AI HAT+ materials",
+    "Black Scarab analysis of edge AI acceleration, smart cameras, embedded inference, and physical AI deployment economics",
+  ],
+  sourceLinks: [
+    {
+      label: "Hailo official site",
+      url: "https://hailo.ai/",
+    },
+    {
+      label: "Hailo-8 AI Accelerator",
+      url: "https://hailo.ai/products/ai-accelerators/hailo-8-ai-accelerator/",
+    },
+    {
+      label: "Hailo-8L AI Accelerator",
+      url: "https://hailo.ai/products/ai-accelerators/hailo-8l-ai-accelerator/",
+    },
+    {
+      label: "Hailo-10H AI Accelerator",
+      url: "https://hailo.ai/products/ai-accelerators/hailo-10h-ai-accelerator/",
+    },
+    {
+      label: "Hailo-15H AI Vision Processor",
+      url: "https://hailo.ai/products/ai-vision-processors/hailo-15h-ai-vision-processor/",
+    },
+    {
+      label: "Hailo AI Software Suite",
+      url: "https://hailo.ai/products/hailo-software/hailo-ai-software-suite/",
+    },
+    {
+      label: "Hailo physical AI and robotics",
+      url: "https://hailo.ai/applications/physical-ai/",
+    },
+    {
+      label: "Hailo Raspberry Pi AI Kit",
+      url: "https://hailo.ai/products/ai-accelerators/raspberry-pi-ai-kit/",
+    },
+  ],
+});
+
 const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
   slug: "top-15-physical-ai-infrastructure-companies",
   title: "Top 15 Physical AI Infrastructure Companies to Watch in 2026",
@@ -9707,6 +10103,7 @@ export const caseStudies: CaseStudyArticle[] = [
   luxonisDeepDive(),
   stereolabsDeepDive(),
   propheseeDeepDive(),
+  hailoDeepDive(),
   physicalAiInfrastructureCompaniesGuide(),
   intuitiveDaVinci5DeepDive(),
   amazonProteusDeepDive(),
