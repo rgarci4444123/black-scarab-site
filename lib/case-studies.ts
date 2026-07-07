@@ -6122,6 +6122,476 @@ const ousterDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const geckoRoboticsDeepDive = (): CaseStudyArticle => ({
+  slug: "gecko-robotics-asset-health-physical-ai-guide",
+  title:
+    "Gecko Robotics Deep Dive: Industrial Asset Health, Robotic Inspection, and the Physical AI Data Layer",
+  summary:
+    "A business and investor deep dive on Gecko Robotics, the industrial AI and robotics company building an asset-health data layer for tanks, boilers, pipelines, ships, power assets, defense sustainment, and critical infrastructure.",
+  publishedLabel: "Physical AI Series · Published July 7, 2026",
+  publishedDate: "2026-07-07",
+  typeLabel: "Physical AI Series",
+  formatLabel: "Company deep dive",
+  industry: "Industrial Infrastructure",
+  image: "/article-images/gecko-robotics-asset-health-physical-ai-guide.png",
+  imageAlt:
+    "Gecko Robotics-style industrial inspection robots, drones, tanks, ships, pipelines, and asset-health dashboards turning physical infrastructure data into maintenance decisions.",
+  seoDescription:
+    "A 2026 Gecko Robotics deep dive covering Cantilever, AIR technology, industrial robotic inspection, asset health, tanks, boilers, pipelines, ships, defense sustainment, U.S. Navy readiness, oil and gas, power, digital twins, and physical AI infrastructure economics.",
+  tags: [
+    "Gecko Robotics",
+    "industrial AI",
+    "robotic inspection",
+    "asset health",
+    "physical AI",
+    "infrastructure",
+    "defense sustainment",
+    "predictive maintenance",
+    "industrial robotics",
+    "AI investing",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "Gecko Robotics shows a different path into physical AI: start with dangerous, expensive physical assets and build the data layer around them. The company combines robots, sensors, inspections, and software to help industrial customers understand the condition of infrastructure such as tanks, boilers, pipelines, ships, power assets, manufacturing equipment, and defense systems.",
+        "This is physical AI with a business case that already makes sense. Asset owners care about uptime, safety, compliance, maintenance planning, capital allocation, and failure prevention. If a system can collect better data from hard-to-access surfaces and turn that data into decisions, the value is easier to justify than a broad claim about automation.",
+        "Gecko also illustrates why the future will not be only about general-purpose robots. Many valuable physical AI systems will be tightly attached to vertical workflows. The robot is part of the data acquisition layer. The deeper value may live in the asset model, inspection history, risk scoring, maintenance planning, and financial decisions that follow.",
+        "The investor signal to watch is whether Gecko becomes a system of record for industrial asset health. If customers use its data to plan maintenance, allocate capital, manage risk, and satisfy compliance, the company becomes more than an inspection vendor. It becomes an intelligence layer for critical infrastructure.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "Gecko Robotics operates at the intersection of robots, sensors, industrial inspection, artificial intelligence, and asset-management software. Its Cantilever platform is positioned as an operating platform for the built world, powered by what Gecko calls AIR: artificial intelligence plus robotics. The robots collect high-fidelity physical data, and the software turns that data into models, analytics, decisions, and lifecycle workflows.",
+        "That structure matters because industrial infrastructure is full of hidden risk. A tank can corrode before it fails. A boiler tube can thin before it forces an outage. A ship hull can create readiness problems before it is fully understood. A refinery, power plant, steel mill, paper mill, mine, or defense facility may have thousands of critical components, many of which are expensive, dangerous, slow, or inconsistent to inspect manually.",
+        "Gecko's wedge is not robotics as spectacle. It is robotics as measurement. The machine collects data humans could not easily collect at the same density, speed, or safety profile. The data then becomes a durable asset: a baseline, a history, a risk model, a repair plan, a budget input, and eventually a system-wide view of asset health.",
+        "For investors, Gecko is one of the clearest examples of vertical physical AI. The company is not trying to make a universal consumer robot. It is building intelligence around real assets, real maintenance budgets, real compliance obligations, and real downtime costs. That makes the business less glamorous than humanoids, but potentially more immediately tied to customer ROI.",
+      ],
+      tables: [
+        {
+          title: "Gecko Robotics at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "An industrial AI and robotics company using robots, drones, sensors, and software to inspect and model critical physical assets.",
+            ],
+            [
+              "What layer does it target?",
+              "The asset-health data layer: inspection data, condition history, risk modeling, maintenance planning, lifecycle analysis, and infrastructure intelligence.",
+            ],
+            [
+              "Why does it matter?",
+              "Industrial asset owners already pay for uptime, safety, compliance, maintenance, and failure prevention. Better physical data can directly affect operational and capital decisions.",
+            ],
+            [
+              "What is the product shape?",
+              "Cantilever operating platform, AIR technology, robotic inspections, aerial scans, sustainment workflows, and vertical solutions for defense, oil and gas, power, pulp and paper, steel, and mining.",
+            ],
+            [
+              "What is the core risk?",
+              "The company must turn difficult field inspections into repeatable software value while navigating long industrial sales cycles, safety requirements, integration complexity, and customer-specific workflows.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Why Gecko Belongs in Physical AI",
+      paragraphs: [
+        "Physical AI is often discussed through robots that act: arms, humanoids, mobile bases, drones, quadrupeds, and autonomous vehicles. Gecko is a reminder that physical AI can also begin with robots that measure.",
+        "Industrial customers frequently have an information problem before they have an automation problem. They may not know the true condition of a tank floor, a boiler wall, a ship hull, a pipe section, a pressure vessel, a silo, a deck, or a piece of production equipment. Without that information, maintenance becomes reactive, shutdowns become expensive, and capital allocation becomes guesswork.",
+        "Gecko's robots collect first-order data from the physical asset itself. That is different from relying only on periodic manual readings, sparse sampling, or historical assumptions. The company can build a more complete condition picture because the robot gets close to the surface and records detailed inspection layers.",
+        "That is the bridge into AI. A model trained on weak or incomplete physical data can create false confidence. A model trained on dense, repeated inspection data can become a decision tool. Gecko's pitch is that AI and robotics have to be implemented together because the quality of the physical data determines the quality of the intelligence.",
+      ],
+    },
+    {
+      heading: "Cantilever as the Operating Platform",
+      paragraphs: [
+        "Cantilever is Gecko's software center of gravity. The platform is meant to collect, unify, analyze, and operationalize asset-health data across fleets and facilities. Gecko's official materials position it around baseline asset health, predictive maintenance, capital allocation, operational risk modeling, and lifecycle decision-making.",
+        "That platform framing is important. A one-time inspection can produce a report. A platform can produce continuity. If a customer returns to the same asset year after year, the value shifts from isolated inspection findings to history, trend, risk, and prioritization. A corroded patch is useful to know. The rate of change, repair history, operating context, and fleet-wide comparison are more valuable.",
+        "Cantilever also pushes Gecko beyond the robot sale. The robot is a way to create proprietary data. The platform is where that data becomes useful to plant managers, reliability teams, maintenance planners, shipyard operators, engineers, finance leaders, and executives who decide where money should go.",
+        "The better Cantilever becomes at integrating inspection data, facility records, maintenance workflows, and risk models, the more Gecko can become embedded in how customers manage physical infrastructure.",
+      ],
+      tables: [
+        {
+          title: "Cantilever's Strategic Role",
+          columns: ["Layer", "What It Does", "Why It Matters"],
+          rows: [
+            [
+              "Data capture",
+              "Robots, drones, sensors, and inspection workflows collect condition data from physical assets.",
+              "Creates first-order asset data instead of relying only on manual sampling or legacy records.",
+            ],
+            [
+              "Data model",
+              "Inspection layers, asset history, facility records, and digital models are organized in one system.",
+              "Turns inspections into a persistent record of asset health.",
+            ],
+            [
+              "Analytics",
+              "AI and risk models surface patterns, degradation, repair priorities, and operational recommendations.",
+              "Helps teams move from finding defects to planning decisions.",
+            ],
+            [
+              "Workflow",
+              "Maintenance, repair, sustainment, budgeting, and capital planning can use the same asset-health context.",
+              "Makes the data relevant to daily operations and long-term planning.",
+            ],
+            [
+              "Enterprise value",
+              "Fleet-level visibility can support uptime, compliance, safety, and capital allocation.",
+              "Moves Gecko from inspection vendor toward infrastructure intelligence platform.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Robot Is the Data Acquisition Layer",
+      paragraphs: [
+        "The most useful way to think about Gecko's robots is not as autonomous machines replacing a worker one-for-one. They are mobile sensor platforms designed to collect better asset-health data in places where manual inspection is difficult, dangerous, or incomplete.",
+        "For tanks, boilers, pipes, ship hulls, confined spaces, and industrial surfaces, the challenge is access. Human inspectors may need scaffolding, rope access, confined-space entry, shutdown time, or sampling strategies that leave gaps. A robot that can climb, crawl, or scan surfaces can change the density and safety profile of the inspection.",
+        "That creates a different kind of data advantage. Many AI companies can access public text, images, or software logs. Fewer can access high-quality thickness readings, corrosion maps, surface scans, and historical inspection layers from critical industrial assets. Gecko's robots are a way to generate a proprietary physical dataset that can improve over time.",
+        "In that sense, Gecko's robots are closer to data infrastructure than automation theater. They collect the raw physical truth that lets software make better decisions later.",
+      ],
+      tables: [
+        {
+          title: "From Inspection Robot to Asset Intelligence",
+          columns: ["Step", "What Happens", "Value Created"],
+          rows: [
+            [
+              "Access",
+              "Robots, drones, or specialized tools reach surfaces and areas that are slow, risky, or expensive for people to inspect.",
+              "Reduces safety risk and can improve inspection coverage.",
+            ],
+            [
+              "Measurement",
+              "Sensors collect high-fidelity data such as thickness, surface condition, imagery, or spatial context.",
+              "Creates a denser view of the asset than sparse manual checks.",
+            ],
+            [
+              "Modeling",
+              "The asset is represented digitally with inspection layers and condition history.",
+              "Allows teams to compare assets, trend degradation, and reason about risk.",
+            ],
+            [
+              "Decision",
+              "Software supports repair planning, maintenance windows, risk scoring, budgeting, and compliance.",
+              "Turns inspection data into operational and financial decisions.",
+            ],
+            [
+              "Fleet learning",
+              "Repeated inspections across many assets create broader patterns.",
+              "Can improve benchmarking, forecasting, and predictive maintenance over time.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Why Industrial Asset Health Is a Strong Wedge",
+      paragraphs: [
+        "Industrial asset health is a powerful physical AI wedge because the pain is already budgeted. Refineries, power plants, ships, mills, mines, and manufacturing facilities already spend heavily on inspection, maintenance, downtime avoidance, safety, compliance, and capital planning.",
+        "That matters because many robotics companies have to convince customers that automation is worth trying. Gecko can attach itself to problems customers already know are expensive. A shutdown costs money. A failed asset can create safety risk. A compliance miss can create regulatory exposure. A surprise repair can distort budgets. A maintenance backlog can reduce readiness.",
+        "The value proposition is therefore more concrete than generic productivity. Better data can help a customer decide whether to repair now, defer safely, replace an asset, change operating conditions, prioritize a capital project, or schedule a shutdown differently. Those decisions can be worth far more than the inspection itself.",
+        "This is why Gecko is interesting for the future of physical AI. The company is not selling intelligence in the abstract. It is selling a better way to manage expensive physical systems.",
+      ],
+    },
+    {
+      heading: "Defense Sustainment",
+      paragraphs: [
+        "Defense may be Gecko's most strategically visible market. The company has positioned Cantilever for maritime sustainment, defense manufacturing, readiness, and modernization. Its official defense materials describe use cases across ships, hulls, confined spaces, maintenance planning, nuclear component manufacturing, POL storage, missile silos, and airframes.",
+        "The reason is simple: the U.S. defense industrial base has a physical asset problem. Ships need maintenance. Shipyards have bottlenecks. Components need inspection. Readiness depends on the condition of metal, coatings, welds, spaces, tanks, and structures that are not always easy to assess quickly.",
+        "Gecko announced a $71 million U.S. Navy deal in March 2026 aimed at reducing maintenance delays and improving readiness. Its defense page also lists company-reported impact metrics such as reduced inspection span and increased throughput. Those claims should be treated as company-reported, but they show the right kind of buyer problem: faster inspection, better planning, and more reliable sustainment.",
+        "The defense case is not only about robots crawling on ships. It is about turning the physical condition of assets into data the Navy and its suppliers can use to plan, prioritize, and execute work. If Gecko becomes trusted in that workflow, the company can become part of defense readiness infrastructure.",
+      ],
+      tables: [
+        {
+          title: "Defense Use Cases",
+          columns: ["Use Case", "Why It Matters"],
+          rows: [
+            [
+              "Maritime sustainment",
+              "Ships, hulls, decking, ballast tanks, confined spaces, and maintenance planning create inspection and readiness bottlenecks.",
+            ],
+            [
+              "Defense manufacturing",
+              "Forging, casting, welding, fitment, and component inspection can benefit from better production data and quality visibility.",
+            ],
+            [
+              "Nuclear component manufacturing",
+              "High-consequence parts require reliable inspection data and traceability.",
+            ],
+            [
+              "Missile silos and POL storage",
+              "Critical infrastructure needs condition awareness, risk scoring, and modernization planning.",
+            ],
+            [
+              "Airframes and extended reality workflows",
+              "Digital twins and remote inspection can support aircraft maintenance and readiness decisions.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Oil, Gas, Power, Steel, Pulp, and Mining",
+      paragraphs: [
+        "Gecko's private-sector markets are just as important as defense. Oil and gas, power, steel, pulp and paper, and mining all involve large, expensive, high-consequence assets that degrade over time. Tanks corrode. Pipes thin. Boilers wear. Pressure vessels age. Mines and mills run equipment in harsh environments. Power plants cannot afford unplanned outages.",
+        "These industries are not waiting for a futuristic robot vision. They already need better inspection and maintenance data. The opportunity is to replace fragmented, manual, episodic inspection records with a more complete condition history that can support predictive maintenance and capital planning.",
+        "Gecko's official materials show vertical pages across these industries, including power and oil and gas. The important investor question is not whether the company can perform an inspection. It is whether the data becomes useful enough that customers standardize asset-health decisions around the platform.",
+        "If that happens, Gecko can sell into a repeating workflow. Industrial assets are inspected repeatedly. Maintenance plans are revised repeatedly. Budgets are allocated repeatedly. Risk is reviewed repeatedly. A platform that becomes part of that rhythm has a stronger position than one that only performs a one-off service.",
+      ],
+      tables: [
+        {
+          title: "Industrial Markets",
+          columns: ["Market", "Asset-Health Problem", "Gecko Angle"],
+          rows: [
+            [
+              "Oil and gas",
+              "Tanks, piping, pressure equipment, corrosion, compliance, and shutdown planning.",
+              "Robotic inspection plus software can improve condition visibility and maintenance prioritization.",
+            ],
+            [
+              "Power",
+              "Boilers, generation assets, outage planning, reliability, and safety.",
+              "Better data can support uptime, risk reduction, and planned maintenance windows.",
+            ],
+            [
+              "Steel",
+              "Harsh operating environments, quality requirements, and critical production equipment.",
+              "Physical data can improve inspection coverage and production reliability.",
+            ],
+            [
+              "Pulp and paper",
+              "Tanks, vessels, corrosion, and aging infrastructure across large facilities.",
+              "Fleet-level asset health can support capital planning and failure prevention.",
+            ],
+            [
+              "Mining",
+              "Remote, rugged, high-utilization assets with safety and uptime constraints.",
+              "Robotics can collect data in difficult environments and feed maintenance decisions.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "From Reports to System of Record",
+      paragraphs: [
+        "The strategic leap for Gecko is moving from inspection reports to system of record. An inspection vendor tells a customer what was found. A system of record helps the customer manage what to do next, compare findings over time, and connect asset condition to budget, risk, and operations.",
+        "That transition is hard because industrial organizations are full of existing systems: maintenance management software, engineering records, ERP tools, compliance documents, spreadsheets, historical inspection PDFs, sensor logs, and local knowledge held by experienced workers. Gecko has to coexist with that reality while creating a better asset-health layer.",
+        "If it succeeds, the data becomes sticky. A customer that has years of Gecko inspection history, asset models, degradation trends, and maintenance decisions in Cantilever has less reason to start over with a different vendor. The platform becomes a memory of the physical plant.",
+        "This is where vertical physical AI can become durable. The robot creates the data. The software organizes the data. The workflow makes the data operational. The history makes the platform hard to replace.",
+      ],
+    },
+    {
+      heading: "The Data Moat",
+      paragraphs: [
+        "Gecko's potential moat is not just robotics hardware. It is the data produced by repeated inspection of real industrial assets. That data can include geometry, wall thickness, corrosion patterns, surface condition, spatial context, equipment metadata, maintenance history, and outcomes over time.",
+        "This kind of data is difficult to scrape from the internet. It lives in refineries, shipyards, power plants, tanks, mills, mines, and defense facilities. It is usually messy, proprietary, sensitive, and tied to physical access. A company that can collect and normalize it has a different kind of AI advantage.",
+        "The more assets Gecko inspects, the more it can understand common degradation patterns, asset classes, materials, operating environments, and maintenance outcomes. That does not automatically produce a defensible AI model, but it creates the raw material for one.",
+        "The big question is whether Gecko can convert inspection data into increasingly predictive intelligence. If the platform can help customers forecast risk, prioritize repairs, extend asset life, and justify capital spending, the data moat becomes more than a database. It becomes an operating advantage.",
+      ],
+    },
+    {
+      heading: "Business Model",
+      paragraphs: [
+        "Gecko's business model can combine inspection services, robotic data collection, software subscriptions, enterprise deployments, sustainment programs, vertical partnerships, and long-term platform contracts. The robot gets the customer into the data. The platform keeps the customer in the workflow.",
+        "The most attractive version is a land-and-expand model. Gecko inspects one asset or facility, proves value, expands across the site, then becomes part of fleet-wide asset-health management. That could work especially well where customers own many similar assets: tanks, boilers, ships, vessels, facilities, or production lines.",
+        "Defense and industrial markets can create large contracts, but they can also create long sales cycles. Customers may need pilots, safety approvals, procurement reviews, cybersecurity checks, integration planning, and internal change management. Gecko's execution depends on turning complex deployments into repeatable programs.",
+        "The company also has to balance services and software. Field work creates data and revenue, but services can be labor-intensive. Software can scale better, but it depends on data quality and customer adoption. The best outcome is a business where robotic inspection feeds recurring platform value.",
+      ],
+      tables: [
+        {
+          title: "Potential Revenue Layers",
+          columns: ["Layer", "Revenue Logic", "Strategic Value"],
+          rows: [
+            [
+              "Robotic inspections",
+              "Customer pays for asset scanning, data capture, and inspection execution.",
+              "Creates immediate ROI and produces proprietary physical data.",
+            ],
+            [
+              "Cantilever software",
+              "Customer uses the platform to manage asset health, analytics, risk, and decisions.",
+              "Can create recurring value and deeper workflow lock-in.",
+            ],
+            [
+              "Enterprise and fleet deployments",
+              "Large customers expand across multiple assets, sites, or classes of infrastructure.",
+              "Moves the business from projects toward account-wide standardization.",
+            ],
+            [
+              "Defense sustainment programs",
+              "Contracts support readiness, maintenance planning, shipbuilding, and modernization.",
+              "Can create large strategic relationships with high mission importance.",
+            ],
+            [
+              "Data and risk intelligence",
+              "Historical asset data supports forecasting, benchmarking, and capital planning.",
+              "Could become the highest-value layer if customers trust it for decisions.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Competitive Landscape",
+      paragraphs: [
+        "Gecko competes across several categories at once. Traditional inspection firms compete on relationships, certifications, field workforce, and installed trust. Industrial software platforms compete for asset-management workflows. Drone and robotics companies compete on data capture. Asset-performance-management vendors compete on analytics and reliability software. In-house teams compete because many asset owners already have inspection and maintenance processes.",
+        "The customer will not adopt Gecko because robots are interesting. The customer will adopt Gecko if the system lowers risk, improves uptime, shortens maintenance windows, reduces inspection burden, improves coverage, supports compliance, or makes capital planning more defensible.",
+        "That means Gecko's strongest moat may come from integration. A robot alone can be copied. A useful inspection dataset is harder. A platform embedded in planning and maintenance workflows is harder still. A trusted system of record for high-consequence assets is the strongest version of the business.",
+        "The biggest competitive risk is that customers treat Gecko as a service provider rather than a platform. If the output remains a report, procurement can compare it against other inspection vendors. If the output becomes the customer's operating memory for asset health, the comparison changes.",
+      ],
+      tables: [
+        {
+          title: "Competitive Pressure Map",
+          columns: ["Competitor Type", "Why It Competes", "Gecko Response"],
+          rows: [
+            [
+              "Traditional inspection firms",
+              "Existing relationships, certifications, field teams, and procurement familiarity.",
+              "Win through better coverage, safer access, richer data, and software-driven decisions.",
+            ],
+            [
+              "Industrial software vendors",
+              "Own maintenance, reliability, asset performance, or ERP workflows.",
+              "Become the high-quality physical data layer those systems lack.",
+            ],
+            [
+              "Drone and robotics inspection companies",
+              "Can collect data from difficult assets or areas.",
+              "Differentiate through vertical workflow, inspection history, analytics, and enterprise asset-health platform.",
+            ],
+            [
+              "In-house inspection teams",
+              "Customers already have processes, workers, and institutional knowledge.",
+              "Augment internal teams with denser data, safer access, and better asset-level visibility.",
+            ],
+            [
+              "Digital twin platforms",
+              "Can represent assets digitally but may lack fresh first-order condition data.",
+              "Use robotics to keep the twin grounded in physical reality.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Investor Case",
+      paragraphs: [
+        "The bull case for Gecko is that industrial asset health becomes one of the most practical forms of physical AI. Customers already have expensive assets, costly downtime, safety obligations, regulatory requirements, and maintenance budgets. A platform that helps manage those realities can justify itself without waiting for a speculative robotics future.",
+        "The second bull case is data. Gecko's robots can collect hard-to-access physical data that is scarce, proprietary, and directly tied to operational decisions. If repeated inspections improve predictive maintenance and risk modeling, the company can build a dataset that gets stronger with scale.",
+        "The third bull case is vertical depth. Rather than selling a generic robot into every market, Gecko can build around specific asset classes and workflows: maritime sustainment, defense manufacturing, tanks, boilers, pipelines, mills, mines, and power infrastructure. Vertical workflow depth can create stronger customer lock-in than broad automation demos.",
+        "The bear case is execution complexity. Industrial deployments are hard. Field operations are messy. Customers move slowly. Integration is tedious. Safety and compliance requirements matter. Software adoption may lag behind inspection services. The company has to prove that it can scale beyond impressive projects into repeatable, high-margin platform economics.",
+      ],
+      tables: [
+        {
+          title: "Gecko Robotics: Bull Case vs. Bear Case",
+          columns: ["View", "Argument", "Signal to Watch"],
+          rows: [
+            [
+              "Bull case",
+              "Industrial asset health is an immediate ROI market for physical AI.",
+              "Customers expand from individual inspections into site-wide and fleet-wide platform use.",
+            ],
+            [
+              "Bull case",
+              "Robots create proprietary first-order infrastructure data.",
+              "Repeated inspections improve risk modeling, predictive maintenance, and capital planning.",
+            ],
+            [
+              "Bull case",
+              "Defense sustainment creates strategic demand.",
+              "Large contracts and deployments support readiness, shipbuilding, maintenance, and modernization workflows.",
+            ],
+            [
+              "Bear case",
+              "The business remains too service-heavy.",
+              "Revenue grows through field work but software platform adoption and margins lag.",
+            ],
+            [
+              "Execution risk",
+              "Industrial sales and integration cycles are slow.",
+              "Watch repeat deployments, renewal behavior, enterprise expansion, software usage, and customer ROI evidence.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What to Watch Next",
+      paragraphs: [
+        "First, watch whether Gecko becomes a system of record. The strongest signal is not a new robot demo. It is customers using Cantilever as the place where asset health, maintenance planning, risk, and capital allocation converge.",
+        "Second, watch defense expansion. The U.S. Navy deal, Trident work, BPMI partnership, and defense industrial base positioning suggest Gecko could become a meaningful sustainment and manufacturing intelligence layer if execution continues.",
+        "Third, watch software depth. The critical question is how much of the business becomes recurring platform value rather than project-based inspection revenue.",
+        "Fourth, watch vertical repeatability. A tank inspection, boiler inspection, ship sustainment workflow, and power-asset program each have different requirements. Gecko needs enough product consistency to scale while still respecting the details of each market.",
+        "Fifth, watch data compounding. The company becomes more interesting if each inspection improves the asset model, each asset improves fleet benchmarking, and each fleet improves predictive intelligence across similar physical systems.",
+      ],
+    },
+    {
+      heading: "The Bottom Line",
+      paragraphs: [
+        "Gecko Robotics matters because it starts with one of the most practical questions in physical AI: what is the actual condition of the physical world we depend on?",
+        "The company is not just selling robots that inspect tanks, ships, boilers, and industrial assets. It is trying to turn hard-to-access physical truth into an operating layer for maintenance, reliability, risk, readiness, and capital planning.",
+        "If Gecko becomes the trusted data layer for industrial asset health, it could be one of the more durable physical AI companies. The robot gets the data. The platform stores the memory. The business value appears when customers use that memory to keep critical infrastructure running.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using Gecko Robotics' official materials for Cantilever, AIR technology, sustainment, defense, oil and gas, power, company news, and Black Scarab analysis of robotic inspection, industrial asset health, defense sustainment, predictive maintenance, digital twins, and physical AI deployment economics. Gecko Robotics is a private company, so claims about revenue, margins, customer concentration, and deployment economics should be treated as company-reported information and Black Scarab analysis rather than audited public financials.",
+      ],
+    },
+  ],
+  sources: [
+    "Gecko Robotics official site and company positioning",
+    "Gecko Robotics Cantilever operating platform materials",
+    "Gecko Robotics AIR technology materials",
+    "Gecko Robotics sustainment materials",
+    "Gecko Robotics defense materials",
+    "Gecko Robotics oil and gas and power industry materials",
+    "Gecko Robotics news and resources page",
+    "Black Scarab analysis of robotic inspection, asset health, industrial AI, defense sustainment, and physical AI deployment economics",
+  ],
+  sourceLinks: [
+    {
+      label: "Gecko Robotics official site",
+      url: "https://www.geckorobotics.com/",
+    },
+    {
+      label: "Gecko Cantilever",
+      url: "https://www.geckorobotics.com/cantilever",
+    },
+    {
+      label: "Gecko AIR technology",
+      url: "https://www.geckorobotics.com/air",
+    },
+    {
+      label: "Gecko Sustainment",
+      url: "https://www.geckorobotics.com/sustainment",
+    },
+    {
+      label: "Gecko Defense",
+      url: "https://www.geckorobotics.com/defense",
+    },
+    {
+      label: "Gecko Oil and Gas",
+      url: "https://www.geckorobotics.com/oil-and-gas",
+    },
+    {
+      label: "Gecko Power",
+      url: "https://www.geckorobotics.com/power",
+    },
+    {
+      label: "Gecko News",
+      url: "https://www.geckorobotics.com/news",
+    },
+  ],
+});
+
 const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
   slug: "top-15-physical-ai-infrastructure-companies",
   title: "Top 15 Physical AI Infrastructure Companies to Watch in 2026",
@@ -10536,6 +11006,7 @@ export const caseStudies: CaseStudyArticle[] = [
   propheseeDeepDive(),
   hailoDeepDive(),
   ousterDeepDive(),
+  geckoRoboticsDeepDive(),
   physicalAiInfrastructureCompaniesGuide(),
   intuitiveDaVinci5DeepDive(),
   amazonProteusDeepDive(),
