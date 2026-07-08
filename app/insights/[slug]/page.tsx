@@ -2,9 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Fragment } from "react";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
-import { caseStudies, getCaseStudyBySlug } from "@/lib/case-studies";
+import {
+  caseStudies,
+  type CaseStudyParagraph,
+  getCaseStudyBySlug,
+} from "@/lib/case-studies";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -48,6 +53,40 @@ function getRelatedArticles(slug: string, industry: string) {
       );
     })
     .slice(0, 3);
+}
+
+function getParagraphKey(paragraph: CaseStudyParagraph, index: number) {
+  if (typeof paragraph === "string") {
+    return paragraph;
+  }
+
+  return `${index}-${paragraph
+    .map((part) =>
+      typeof part === "string" ? part : `${part.text}:${part.href}`,
+    )
+    .join("|")}`;
+}
+
+function renderParagraph(paragraph: CaseStudyParagraph) {
+  if (typeof paragraph === "string") {
+    return paragraph;
+  }
+
+  return paragraph.map((part, index) => {
+    if (typeof part === "string") {
+      return <Fragment key={`${part}-${index}`}>{part}</Fragment>;
+    }
+
+    return (
+      <Link
+        key={`${part.href}-${index}`}
+        href={part.href}
+        className="font-semibold text-[#111827] underline decoration-[#7c8b6b]/40 underline-offset-[5px] transition hover:text-[#7c8b6b] hover:decoration-[#7c8b6b]"
+      >
+        {part.text}
+      </Link>
+    );
+  });
 }
 
 export async function generateStaticParams() {
@@ -320,8 +359,10 @@ export default async function CaseStudyPage({ params }: Props) {
                       </h2>
                     ) : null}
                     <div className="mt-4 space-y-5 text-base leading-8 text-[#4b5563] md:text-lg">
-                      {section.paragraphs.map((paragraph) => (
-                        <p key={paragraph}>{paragraph}</p>
+                      {section.paragraphs.map((paragraph, paragraphIndex) => (
+                        <p key={getParagraphKey(paragraph, paragraphIndex)}>
+                          {renderParagraph(paragraph)}
+                        </p>
                       ))}
                     </div>
                     {section.tables?.length ? (
