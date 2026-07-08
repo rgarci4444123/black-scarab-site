@@ -148,6 +148,71 @@ const intuitiveDaVinci5ArticleLink: CaseStudyParagraphLink = {
   href: "/insights/intuitive-da-vinci-5-surgical-robotics-platform-guide",
 };
 
+const edgeAiRoadmapArticleLink: CaseStudyParagraphLink = {
+  text: "Edge AI Roadmap",
+  href: "/insights/edge-ai-roadmap-top-10-platforms",
+};
+
+const nvidiaJetsonAgxOrinEdgeArticleLink: CaseStudyParagraphLink = {
+  text: "NVIDIA Jetson AGX Orin",
+  href: "/insights/nvidia-jetson-agx-orin-edge-ai-guide",
+};
+
+const teslaAi5EdgeArticleLink: CaseStudyParagraphLink = {
+  text: "Tesla AI5",
+  href: "/insights/tesla-ai5-hw5-guide",
+};
+
+const raspberryPiHailoEdgeArticleLink: CaseStudyParagraphLink = {
+  text: "Raspberry Pi 5 + Hailo-8",
+  href: "/insights/raspberry-pi-5-hailo-8-guide",
+};
+
+const googleCoralEdgeArticleLink: CaseStudyParagraphLink = {
+  text: "Google Coral Edge TPU",
+  href: "/insights/google-coral-edge-tpu-guide",
+};
+
+const appleMacMiniEdgeArticleLink: CaseStudyParagraphLink = {
+  text: "Apple Mac mini for local LLMs",
+  href: "/insights/apple-mac-mini-local-llm-guide",
+};
+
+const qualcommRb5EdgeArticleLink: CaseStudyParagraphLink = {
+  text: "Qualcomm Robotics RB5",
+  href: "/insights/qualcomm-robotics-rb5-guide",
+};
+
+const arduinoNiclaVisionEdgeArticleLink: CaseStudyParagraphLink = {
+  text: "Arduino Nicla Vision",
+  href: "/insights/arduino-nicla-vision-guide",
+};
+
+const intelOpenvinoEdgeArticleLink: CaseStudyParagraphLink = {
+  text: "Intel OpenVINO",
+  href: "/insights/intel-openvino-movidius-guide",
+};
+
+const cerebrasWse3EdgeArticleLink: CaseStudyParagraphLink = {
+  text: "Cerebras WSE-3",
+  href: "/insights/cerebras-wse-3-guide",
+};
+
+const amdKriaEdgeArticleLink: CaseStudyParagraphLink = {
+  text: "AMD Xilinx Kria K26",
+  href: "/insights/amd-kria-k26-guide",
+};
+
+const luxonisOakDEdgeArticleLink: CaseStudyParagraphLink = {
+  text: "Luxonis OAK-D",
+  href: "/insights/luxonis-oak-d-guide",
+};
+
+const localAiServerArticleLink: CaseStudyParagraphLink = {
+  text: "first local AI server guide",
+  href: "/insights/local-ai-server-guide",
+};
+
 export type CaseStudySourceLink = {
   label: string;
   url: string;
@@ -12903,86 +12968,118 @@ export const caseStudies: CaseStudyArticle[] = [
           "For anyone trying to master this space, the challenge is not just learning models or writing code. It is understanding which silicon, software stack, and deployment pattern fits the mission. That is why we are launching a 10-part series focused on the hardware, toolchains, and real-world applications behind the industry's most important edge AI platforms.",
         ],
       },
-      {
-        heading: "1. NVIDIA Jetson: The High-Performance Edge Benchmark",
-        paragraphs: [
-          "NVIDIA Jetson remains the reference platform for high-performance edge AI, especially in robotics, industrial vision, and autonomous systems. Jetson AGX Orin is widely used when teams need substantial local inference in a compact form factor.",
-          "The Series Deep Dive: We will explore TensorRT optimization, power modes, and thermal management in field and factory deployments.",
-          "Application: Autonomous mobile robots, machine vision cells, and automated factory floors.",
+    {
+      heading: "1. NVIDIA Jetson: The High-Performance Edge Benchmark",
+      paragraphs: [
+        [
+          nvidiaJetsonAgxOrinEdgeArticleLink,
+          " remains the reference platform for high-performance edge AI, especially in robotics, industrial vision, and autonomous systems. Jetson AGX Orin is widely used when teams need substantial local inference in a compact form factor.",
         ],
-      },
-      {
-        heading: "2. Tesla's In-House AI Silicon Track: The Vertical Integration Model",
-        paragraphs: [
-          "Tesla's in-house automotive AI silicon strategy is one of the clearest examples of how vertical integration can reshape edge AI performance. Whether in self-driving systems or future robotics, the lesson is not just the chip itself, but what happens when hardware, software, and training stack are designed together.",
-          "The Series Deep Dive: We will look at vertical integration, system-level efficiency, and why custom AI silicon matters when latency and power budgets are tightly constrained.",
-          "Application: Advanced driver assistance, autonomy stacks, and humanoid robotics roadmaps.",
+        "The Series Deep Dive: We will explore TensorRT optimization, power modes, and thermal management in field and factory deployments.",
+        "Application: Autonomous mobile robots, machine vision cells, and automated factory floors.",
+      ],
+    },
+    {
+      heading: "2. Tesla's In-House AI Silicon Track: The Vertical Integration Model",
+      paragraphs: [
+        [
+          teslaAi5EdgeArticleLink,
+          " represents one of the clearest examples of how vertical integration can reshape edge AI performance. Whether in self-driving systems or future robotics, the lesson is not just the chip itself, but what happens when hardware, software, and training stack are designed together.",
         ],
-      },
-      {
-        heading: "3. Raspberry Pi 5 + Hailo-8: The Developer On-Ramp",
-        paragraphs: [
-          "The Raspberry Pi 5 paired with Hailo acceleration has become one of the most accessible entry points into practical edge AI. It gives developers a realistic path from Python prototyping to dedicated neural acceleration without jumping directly into high-cost industrial hardware.",
-          "The Series Deep Dive: We will examine the Hailo software stack, model deployment flow, and how to bridge standard application logic with NPU acceleration.",
-          "Application: Smart traffic monitoring, maker-grade automation, and low-cost computer vision pilots.",
+        "The Series Deep Dive: We will look at vertical integration, system-level efficiency, and why custom AI silicon matters when latency and power budgets are tightly constrained.",
+        "Application: Advanced driver assistance, autonomy stacks, and humanoid robotics roadmaps.",
+      ],
+    },
+    {
+      heading: "3. Raspberry Pi 5 + Hailo-8: The Developer On-Ramp",
+      paragraphs: [
+        [
+          raspberryPiHailoEdgeArticleLink,
+          " has become one of the most accessible entry points into practical edge AI. It gives developers a realistic path from Python prototyping to dedicated neural acceleration without jumping directly into high-cost industrial hardware.",
         ],
-      },
-      {
-        heading: "4. Google Coral: The Efficiency Specialist",
-        paragraphs: [
-          "Google Coral and the Edge TPU remain important reference points for low-power inference, especially when quantized vision workloads matter more than general-purpose flexibility.",
-          "The Series Deep Dive: We will unpack post-training quantization and what developers gain and lose when targeting a highly efficient inference path.",
-          "Application: Sorting systems, remote sensors, and battery-sensitive vision deployments.",
+        "The Series Deep Dive: We will examine the Hailo software stack, model deployment flow, and how to bridge standard application logic with NPU acceleration.",
+        "Application: Smart traffic monitoring, maker-grade automation, and low-cost computer vision pilots.",
+      ],
+    },
+    {
+      heading: "4. Google Coral: The Efficiency Specialist",
+      paragraphs: [
+        [
+          googleCoralEdgeArticleLink,
+          " remains an important reference point for low-power inference, especially when quantized vision workloads matter more than general-purpose flexibility.",
         ],
-      },
-      {
-        heading: "5. Apple Mac Mini with M-Series Silicon: The Private AI Hub",
-        paragraphs: [
-          "Apple Silicon has made the Mac Mini a compelling local AI node for teams running private inference, local LLM experiments, and on-premise knowledge workflows. Unified memory and the MLX ecosystem make it especially interesting for local model serving.",
-          "The Series Deep Dive: We will explore Apple MLX, memory behavior, and when the Mac Mini makes sense as a private AI workstation or small office inference hub.",
-          "Application: Privacy-focused healthcare assistants, local document analysis, and internal research copilots.",
+        "The Series Deep Dive: We will unpack post-training quantization and what developers gain and lose when targeting a highly efficient inference path.",
+        "Application: Sorting systems, remote sensors, and battery-sensitive vision deployments.",
+      ],
+    },
+    {
+      heading: "5. Apple Mac Mini with M-Series Silicon: The Private AI Hub",
+      paragraphs: [
+        [
+          appleMacMiniEdgeArticleLink,
+          " has become a compelling local AI node for teams running private inference, local LLM experiments, and on-premise knowledge workflows. Unified memory and the MLX ecosystem make it especially interesting for local model serving.",
         ],
-      },
-      {
-        heading: "6. Qualcomm Robotics RB5: The Connected Edge Platform",
-        paragraphs: [
-          "The Qualcomm Robotics RB5 stands out where AI, multimedia, and connectivity need to move together. It is especially relevant for devices that rely on onboard inference while staying deeply networked.",
-          "The Series Deep Dive: We will examine the Qualcomm AI Stack and what connected AI means for mobile robots, drones, and field devices.",
-          "Application: Agricultural drones, delivery systems, and connected robotics platforms.",
+        "The Series Deep Dive: We will explore Apple MLX, memory behavior, and when the Mac Mini makes sense as a private AI workstation or small office inference hub.",
+        "Application: Privacy-focused healthcare assistants, local document analysis, and internal research copilots.",
+      ],
+    },
+    {
+      heading: "6. Qualcomm Robotics RB5: The Connected Edge Platform",
+      paragraphs: [
+        [
+          qualcommRb5EdgeArticleLink,
+          " stands out where AI, multimedia, and connectivity need to move together. It is especially relevant for devices that rely on onboard inference while staying deeply networked.",
         ],
-      },
-      {
-        heading: "7. Arduino Pro and TinyML: Intelligence at the Sensor Layer",
-        paragraphs: [
-          "Not every edge AI deployment needs a GPU or a large NPU. Platforms like Arduino Pro Nicla Vision represent the TinyML frontier, where intelligence runs close to the sensor itself on extremely constrained hardware.",
-          "The Series Deep Dive: We will cover DSP, TinyML workflows, and how Edge Impulse-style pipelines turn sound, motion, and vibration into useful predictive signals.",
-          "Application: Predictive maintenance, anomaly detection, and smart wearables.",
+        "The Series Deep Dive: We will examine the Qualcomm AI Stack and what connected AI means for mobile robots, drones, and field devices.",
+        "Application: Agricultural drones, delivery systems, and connected robotics platforms.",
+      ],
+    },
+    {
+      heading: "7. Arduino Pro and TinyML: Intelligence at the Sensor Layer",
+      paragraphs: [
+        [
+          "Not every edge AI deployment needs a GPU or a large NPU. Platforms like ",
+          arduinoNiclaVisionEdgeArticleLink,
+          " represent the TinyML frontier, where intelligence runs close to the sensor itself on extremely constrained hardware.",
         ],
-      },
-      {
-        heading: "8. Intel Movidius and OpenVINO: The Enterprise Deployment Layer",
-        paragraphs: [
-          "Intel's Movidius lineage and the OpenVINO toolkit remain central to enterprise-grade cross-platform deployment. For many practitioners, OpenVINO is less about one chip and more about a repeatable way to move models across CPUs, GPUs, and dedicated accelerators.",
-          "The Series Deep Dive: We will focus on cross-platform deployment, model conversion, and how to keep one edge AI application portable across heterogeneous Intel hardware.",
-          "Application: Medical imaging systems, retail analytics, and enterprise smart cameras.",
+        "The Series Deep Dive: We will cover DSP, TinyML workflows, and how Edge Impulse-style pipelines turn sound, motion, and vibration into useful predictive signals.",
+        "Application: Predictive maintenance, anomaly detection, and smart wearables.",
+      ],
+    },
+    {
+      heading: "8. Intel Movidius and OpenVINO: The Enterprise Deployment Layer",
+      paragraphs: [
+        [
+          "Intel's Movidius lineage and ",
+          intelOpenvinoEdgeArticleLink,
+          " remain central to enterprise-grade cross-platform deployment. For many practitioners, OpenVINO is less about one chip and more about a repeatable way to move models across CPUs, GPUs, and dedicated accelerators.",
         ],
-      },
-      {
-        heading: "9. AMD Xilinx Kria: Adaptive Hardware for Low-Latency Systems",
-        paragraphs: [
-          "The Kria line matters because it brings FPGA-style adaptability into more approachable edge AI workflows. When the job demands extremely low latency, deterministic behavior, or domain-specific acceleration, adaptive hardware becomes a serious advantage.",
-          "The Series Deep Dive: We will demystify hardware logic, adaptive compute, and what it really takes to deploy sub-millisecond inference paths.",
-          "Application: Telecom signal optimization, industrial control, and aerospace-grade edge systems.",
+        "The Series Deep Dive: We will focus on cross-platform deployment, model conversion, and how to keep one edge AI application portable across heterogeneous Intel hardware.",
+        "Application: Medical imaging systems, retail analytics, and enterprise smart cameras.",
+      ],
+    },
+    {
+      heading: "9. AMD Xilinx Kria: Adaptive Hardware for Low-Latency Systems",
+      paragraphs: [
+        [
+          amdKriaEdgeArticleLink,
+          " matters because it brings FPGA-style adaptability into more approachable edge AI workflows. When the job demands extremely low latency, deterministic behavior, or domain-specific acceleration, adaptive hardware becomes a serious advantage.",
         ],
-      },
-      {
-        heading: "10. Luxonis OAK-D: Spatial AI for Machines That Need Depth",
-        paragraphs: [
-          "Luxonis OAK-D is more than a camera. It is one of the clearest examples of spatial AI becoming accessible to developers who need vision plus depth plus local perception in one stack.",
-          "The Series Deep Dive: We will cover stereo vision, 3D perception, and how to teach machines to reason about distance, volume, and movement in physical space.",
-          "Application: Construction safety, robotic perception, and virtual boundary systems.",
+        "The Series Deep Dive: We will demystify hardware logic, adaptive compute, and what it really takes to deploy sub-millisecond inference paths.",
+        "Application: Telecom signal optimization, industrial control, and aerospace-grade edge systems.",
+      ],
+    },
+    {
+      heading: "10. Luxonis OAK-D: Spatial AI for Machines That Need Depth",
+      paragraphs: [
+        [
+          luxonisOakDEdgeArticleLink,
+          " is more than a camera. It is one of the clearest examples of spatial AI becoming accessible to developers who need vision plus depth plus local perception in one stack.",
         ],
-      },
+        "The Series Deep Dive: We will cover stereo vision, 3D perception, and how to teach machines to reason about distance, volume, and movement in physical space.",
+        "Application: Construction safety, robotic perception, and virtual boundary systems.",
+      ],
+    },
       {
         heading: "Why This Roadmap Matters",
         paragraphs: [
@@ -13063,6 +13160,19 @@ export const caseStudies: CaseStudyArticle[] = [
         paragraphs: [
           "Edge AI in 2026 has moved far beyond basic object detection. The most valuable systems now combine vision, sensor fusion, language interfaces, and real-time decision-making directly on the device. In that environment, NVIDIA Jetson AGX Orin continues to stand out as one of the most capable edge AI platforms available.",
           "This is not just a development board. It is a high-performance embedded compute platform that gives robotics teams, industrial operators, and edge AI developers a practical path to run advanced models locally without relying on the cloud for every critical decision.",
+          [
+            "This article belongs to the ",
+            edgeAiRoadmapArticleLink,
+            " series. Read it beside ",
+            hailoArticleLink,
+            ", ",
+            intelOpenvinoEdgeArticleLink,
+            ", ",
+            amdKriaEdgeArticleLink,
+            ", and ",
+            luxonisOakDEdgeArticleLink,
+            " to compare high-performance edge compute with efficient acceleration, portable deployment, adaptive hardware, and spatial AI cameras.",
+          ],
         ],
       },
       {
@@ -13180,6 +13290,19 @@ export const caseStudies: CaseStudyArticle[] = [
         paragraphs: [
           "Because Tesla has not yet released a full official specification sheet for Tesla AI5 (HW5), the details below are based on public reporting, industry discussion, and unofficial source aggregation around Tesla's next-generation AI chip.",
           'Tesla AI5 (formerly referred to as Hardware 5 or HW5) represents the most significant architectural shift in Tesla\'s history. While previous generations relied on adapted or redundant chip designs, AI5 is a ground-up custom silicon solution designed to unify Tesla\'s ecosystem across vehicles, robotics, and supercomputers. As of mid-2026, it is the "monster" chip that could move Tesla from an automaker to a pure-play AI powerhouse.',
+          [
+            "This article belongs to the ",
+            edgeAiRoadmapArticleLink,
+            " series. Read it beside ",
+            teslaOptimusArticleLink,
+            ", ",
+            nvidiaJetsonAgxOrinEdgeArticleLink,
+            ", ",
+            cerebrasWse3EdgeArticleLink,
+            ", and ",
+            qualcommRb5EdgeArticleLink,
+            " to compare Tesla's vertical silicon thesis against embedded AI, centralized inference, connected robotics, and the Optimus deployment path.",
+          ],
         ],
       },
       {
@@ -13279,6 +13402,19 @@ export const caseStudies: CaseStudyArticle[] = [
         paragraphs: [
           "For years, developers were forced to choose between the low-cost Raspberry Pi and much more expensive industrial AI hardware. Raspberry Pi 5 plus Hailo acceleration has finally created a practical middle ground. It gives developers a realistic path from Python prototyping to dedicated neural inference without abandoning the Raspberry Pi ecosystem they already know.",
           "One important distinction matters here. Raspberry Pi's original AI Kit used the 13 TOPS Hailo-8L and is now discontinued for new designs, while the newer AI HAT+ line includes both 13 TOPS and 26 TOPS options. When people search for Raspberry Pi 5 plus Hailo-8 in 2026, they are usually looking for the more capable 26 TOPS Raspberry Pi AI HAT+ configuration built around the Hailo-8 accelerator.",
+          [
+            "This article belongs to the ",
+            edgeAiRoadmapArticleLink,
+            " series. Read it beside ",
+            hailoArticleLink,
+            ", ",
+            googleCoralEdgeArticleLink,
+            ", ",
+            arduinoNiclaVisionEdgeArticleLink,
+            ", and ",
+            edgeImpulseArticleLink,
+            " to compare low-cost acceleration, ultra-efficient inference, TinyML, and the software workflow that turns edge data into deployable models.",
+          ],
         ],
       },
       {
@@ -13383,6 +13519,19 @@ export const caseStudies: CaseStudyArticle[] = [
         paragraphs: [
           "While the industry often chases raw compute, Google's Coral platform, powered by the Edge TPU, has always been about a different metric: performance per watt. It is designed for edge AI deployments where power is limited, heat is a constraint, and always-on inference matters more than chasing the largest headline number.",
           "That is what makes Coral important. Instead of trying to compete with high-power industrial AI modules on absolute horsepower, Google Coral focuses on efficient local inference through compact hardware such as the Coral USB Accelerator, M.2 modules, and Coral Dev Board family.",
+          [
+            "This article belongs to the ",
+            edgeAiRoadmapArticleLink,
+            " series. Read it beside ",
+            raspberryPiHailoEdgeArticleLink,
+            ", ",
+            arduinoNiclaVisionEdgeArticleLink,
+            ", ",
+            edgeImpulseArticleLink,
+            ", and ",
+            hailoArticleLink,
+            " to compare efficient edge inference, microcontroller AI, model deployment workflows, and newer low-power accelerator paths.",
+          ],
         ],
       },
       {
@@ -13490,6 +13639,19 @@ export const caseStudies: CaseStudyArticle[] = [
         paragraphs: [
           "In the race for AI infrastructure, the Apple Mac mini has carved out a unique niche. It is no longer just a compact desktop computer. For many developers, research teams, and privacy-sensitive businesses, it has become one of the most practical machines for running local LLMs and other on-device AI workloads without sending sensitive data into the cloud.",
           "That is the Mac mini's real appeal. It offers a relatively accessible path to private AI, especially for teams that want ChatGPT-style capabilities, local document analysis, or internal copilots while keeping the data inside their own building or network perimeter.",
+          [
+            "This article belongs to the ",
+            edgeAiRoadmapArticleLink,
+            " series. Read it beside the ",
+            localAiServerArticleLink,
+            ", ",
+            cerebrasWse3EdgeArticleLink,
+            ", ",
+            nvidiaJetsonAgxOrinEdgeArticleLink,
+            ", and ",
+            intelOpenvinoEdgeArticleLink,
+            " to compare private local inference, centralized reasoning infrastructure, embedded GPU compute, and portable enterprise deployment.",
+          ],
         ],
       },
       {
@@ -13581,6 +13743,19 @@ export const caseStudies: CaseStudyArticle[] = [
         paragraphs: [
           "In autonomous robotics, connectivity is not an accessory. It is part of the system architecture. That is what makes Qualcomm Robotics RB5 different from many edge AI platforms that focus mostly on local compute. RB5 is designed around the idea that modern robots, drones, and mobile machines need to see, reason, move, and stay connected at the same time.",
           "That is why the platform matters. Qualcomm Robotics RB5 combines on-device AI, heterogeneous compute, camera and sensor support, and 5G-ready connectivity in a way that is especially relevant for autonomous drones, connected robots, and edge AI systems that operate outside a fixed indoor environment.",
+          [
+            "This article belongs to the ",
+            edgeAiRoadmapArticleLink,
+            " series. Read it beside ",
+            nvidiaJetsonAgxOrinEdgeArticleLink,
+            ", ",
+            amdKriaEdgeArticleLink,
+            ", ",
+            viamArticleLink,
+            ", and ",
+            luxonisOakDEdgeArticleLink,
+            " to compare connected robotics compute, adaptive low-latency systems, robot software infrastructure, and spatial perception at the sensor layer.",
+          ],
         ],
       },
       {
@@ -13671,6 +13846,19 @@ export const caseStudies: CaseStudyArticle[] = [
         paragraphs: [
           "In edge AI, bigger is not always better. While larger accelerators and GPUs dominate conversation around language models, many of the most important real-world decisions happen on tiny devices at the sensor level. That is exactly where the Arduino Nicla Vision stands out.",
           "The Nicla Vision has become one of the most interesting TinyML boards in the market because it brings a camera, onboard sensors, wireless connectivity, and a capable microcontroller into a form factor designed for always-on edge intelligence. For teams exploring low-power computer vision, predictive maintenance, or embedded sensing, it is a practical entry point into microcontroller-based edge AI.",
+          [
+            "This article belongs to the ",
+            edgeAiRoadmapArticleLink,
+            " series. Read it beside ",
+            edgeImpulseArticleLink,
+            ", ",
+            googleCoralEdgeArticleLink,
+            ", ",
+            raspberryPiHailoEdgeArticleLink,
+            ", and ",
+            roboflowArticleLink,
+            " to connect TinyML hardware with embedded ML workflows, efficient acceleration, low-cost vision pilots, and computer vision dataset tooling.",
+          ],
         ],
       },
       {
@@ -13761,6 +13949,19 @@ export const caseStudies: CaseStudyArticle[] = [
         paragraphs: [
           "Intel's edge AI strategy has always been more software-centric than many competing hardware platforms. Instead of tying developers to one accelerator family, Intel positioned OpenVINO as a deployment layer that can carry the same model across standard CPUs, integrated GPUs, Intel NPUs, and legacy Movidius-style vision acceleration paths.",
           "That is what still makes OpenVINO important in 2026. For many enterprise teams, the real problem is not finding one fast chip. It is keeping an inference pipeline portable across multiple hardware targets, product generations, and deployment environments without rewriting the application every time the silicon changes.",
+          [
+            "This article belongs to the ",
+            edgeAiRoadmapArticleLink,
+            " series. Read it beside ",
+            nvidiaJetsonAgxOrinEdgeArticleLink,
+            ", ",
+            amdKriaEdgeArticleLink,
+            ", ",
+            googleCoralEdgeArticleLink,
+            ", and ",
+            hailoArticleLink,
+            " to compare portable enterprise deployment against GPU-first, adaptive, efficient, and dedicated accelerator approaches.",
+          ],
         ],
       },
       {
@@ -13866,6 +14067,19 @@ export const caseStudies: CaseStudyArticle[] = [
         paragraphs: [
           "With Cerebras scheduled to begin trading on May 14, 2026, the conversation around wafer-scale computing is moving from technical curiosity to strategic infrastructure question. The important issue is not just whether Cerebras can challenge NVIDIA at the top of the AI compute market. It is whether wafer-scale inference changes the economics of reasoning, orchestration, and model deployment across the wider physical AI stack.",
           "For Black Scarab, that is the real lens. Cerebras is not edge hardware in the usual sense. A wafer-scale system does not sit inside a camera, a drone, or a portable medical device. But it may become part of the centralized infrastructure layer that edge AI and physical AI increasingly depend on.",
+          [
+            "This article sits beside the ",
+            edgeAiRoadmapArticleLink,
+            " series. Read it with ",
+            nvidiaPhysicalAiArticleLink,
+            ", ",
+            nvidiaJetsonAgxOrinEdgeArticleLink,
+            ", ",
+            appleMacMiniEdgeArticleLink,
+            ", and the ",
+            localAiServerArticleLink,
+            " to compare centralized reasoning, embedded inference, private local AI, and the infrastructure layers that support distributed physical systems.",
+          ],
         ],
       },
       {
@@ -14024,6 +14238,19 @@ export const caseStudies: CaseStudyArticle[] = [
         paragraphs: [
           "Fixed-silicon processors like standard CPUs, GPUs, and ASICs are designed around hardware that cannot be re-wired after manufacturing. Their arithmetic units, memory hierarchies, and execution paths are fixed from the factory. When a new computer vision or sensor-fusion workload emerges that does not map cleanly onto that architecture, software layers have to absorb the mismatch through extra scheduling, memory movement, and overhead.",
           "That is why AMD Xilinx Kria still matters in 2026. Kria is one of the clearest mainstream paths into adaptive edge AI, where the hardware can be shaped more directly around the workload instead of forcing the workload to conform to fixed silicon assumptions. For Black Scarab, Kria is important because it sits at the intersection of low-latency inference, robotics, industrial vision, and deterministic edge execution.",
+          [
+            "This article belongs to the ",
+            edgeAiRoadmapArticleLink,
+            " series. Read it beside ",
+            intelOpenvinoEdgeArticleLink,
+            ", ",
+            nvidiaJetsonAgxOrinEdgeArticleLink,
+            ", ",
+            qualcommRb5EdgeArticleLink,
+            ", and ",
+            luxonisOakDEdgeArticleLink,
+            " to compare adaptive hardware with portable runtimes, embedded GPU compute, connected robotics, and depth-aware perception.",
+          ],
         ],
       },
       {
@@ -14543,6 +14770,19 @@ export const caseStudies: CaseStudyArticle[] = [
         paragraphs: [
           "Most standard AI cameras see the world in two dimensions. They can detect a person, a pallet, or a shelf item inside a flat video frame, but they still struggle with one of the questions that matters most in the physical world: how far away is it, and where exactly is it in space?",
           "That is why the Luxonis OAK-D still matters in 2026. Instead of treating AI perception and depth as separate systems, the OAK-D combines stereo vision, on-device compute, and the DepthAI software stack into one edge camera platform. For Black Scarab, that makes it one of the clearest examples of spatial AI at the sensor level.",
+          [
+            "This article belongs to the ",
+            edgeAiRoadmapArticleLink,
+            " series. Read it beside ",
+            luxonisArticleLink,
+            ", ",
+            stereolabsArticleLink,
+            ", ",
+            roboflowArticleLink,
+            ", and ",
+            nvidiaJetsonAgxOrinEdgeArticleLink,
+            " to connect OAK-D hardware with spatial AI cameras, stereo perception, computer vision workflows, and higher-performance edge compute.",
+          ],
         ],
       },
       {
