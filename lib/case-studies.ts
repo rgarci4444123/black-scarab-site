@@ -93,6 +93,61 @@ const openspaceArticleLink: CaseStudyParagraphLink = {
   href: "/insights/openspace-construction-reality-capture-physical-ai-guide",
 };
 
+const topRobotsArticleLink: CaseStudyParagraphLink = {
+  text: "Top 10 Robots Transforming the World in 2026",
+  href: "/insights/top-10-robots-edge-ai-automation-humanoid-robotics",
+};
+
+const bostonDynamicsSpotArticleLink: CaseStudyParagraphLink = {
+  text: "Boston Dynamics Spot",
+  href: "/insights/boston-dynamics-spot-robot-industrial-inspection-guide",
+};
+
+const anyboticsAnymalArticleLink: CaseStudyParagraphLink = {
+  text: "ANYbotics ANYmal",
+  href: "/insights/anybotics-anymal-industrial-inspection-robot-guide",
+};
+
+const agilityRoboticsDigitArticleLink: CaseStudyParagraphLink = {
+  text: "Agility Robotics Digit",
+  href: "/insights/agility-robotics-digit-logistics-humanoid-robot-guide",
+};
+
+const figure03ArticleLink: CaseStudyParagraphLink = {
+  text: "Figure 03",
+  href: "/insights/figure-03-general-purpose-humanoid-robot-guide",
+};
+
+const bostonDynamicsAtlasArticleLink: CaseStudyParagraphLink = {
+  text: "Boston Dynamics Atlas",
+  href: "/insights/boston-dynamics-atlas-industrial-humanoid-robot-guide",
+};
+
+const teslaOptimusArticleLink: CaseStudyParagraphLink = {
+  text: "Tesla Optimus",
+  href: "/insights/tesla-optimus-vertically-integrated-humanoid-robot-guide",
+};
+
+const unitreeG1ArticleLink: CaseStudyParagraphLink = {
+  text: "Unitree G1",
+  href: "/insights/unitree-g1-affordable-humanoid-robot-research-platform-guide",
+};
+
+const universalRobotsUrSeriesArticleLink: CaseStudyParagraphLink = {
+  text: "Universal Robots UR Series",
+  href: "/insights/universal-robots-ur-series-cobot-automation-guide",
+};
+
+const amazonProteusArticleLink: CaseStudyParagraphLink = {
+  text: "Amazon Proteus",
+  href: "/insights/amazon-proteus-autonomous-mobile-warehouse-robot-guide",
+};
+
+const intuitiveDaVinci5ArticleLink: CaseStudyParagraphLink = {
+  text: "Intuitive da Vinci 5",
+  href: "/insights/intuitive-da-vinci-5-surgical-robotics-platform-guide",
+};
+
 export type CaseStudySourceLink = {
   label: string;
   url: string;
@@ -7804,7 +7859,10 @@ const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
     {
       heading: "1. Boston Dynamics Spot",
       paragraphs: [
-        "Spot is one of the most important commercial robots because it makes the value of mobile autonomy obvious. It is not trying to look human. It is trying to go where people do not want to go, capture data repeatedly, and bring inspection workflows into dangerous or inconvenient environments.",
+        [
+          bostonDynamicsSpotArticleLink,
+          " is one of the most important commercial robots because it makes the value of mobile autonomy obvious. It is not trying to look human. It is trying to go where people do not want to go, capture data repeatedly, and bring inspection workflows into dangerous or inconvenient environments.",
+        ],
         "For Black Scarab, Spot is especially relevant because it is an edge AI platform wrapped in a mobile robot. Cameras, thermal payloads, acoustic sensors, autonomy software, wireless connectivity, docking, fleet management, and industrial inspection workflows all come together in one product category.",
         "The business logic is straightforward: reduce the cost and risk of inspection while improving the frequency and quality of operational data. In factories, power plants, construction sites, and hazardous facilities, the robot becomes a mobile sensor carrier.",
         "The deep dive will cover Spot's inspection payloads, autonomy modes, docking workflow, fleet software, and the edge compute stack behind remote facility monitoring. It will also break down what a Spot-like inspection basket would need: cameras, thermal sensing, acoustic sensing, connectivity, charging, ruggedization, and inspection analytics.",
@@ -7813,7 +7871,10 @@ const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
     {
       heading: "2. ANYbotics ANYmal",
       paragraphs: [
-        "ANYmal belongs near the top because it is purpose-built for the industrial environments where edge AI can create immediate value. The robot is designed for autonomous inspection in sectors such as oil and gas, chemicals, power, utilities, mining, metals, and transportation.",
+        [
+          anyboticsAnymalArticleLink,
+          " belongs near the top because it is purpose-built for the industrial environments where edge AI can create immediate value. The robot is designed for autonomous inspection in sectors such as oil and gas, chemicals, power, utilities, mining, metals, and transportation.",
+        ],
         "This makes ANYmal a useful counterpoint to Spot. Both are quadrupeds, but ANYmal's positioning is heavily tied to routine inspection, harsh environments, and operational reliability. That is exactly where robotics can move from interesting demo to recurring business asset.",
         "In the deeper article, the key question will be how autonomous inspection robots convert sensors into operational decisions. Thermal readings, acoustic anomalies, gauge readings, and visual changes only matter if the robot can capture them consistently and feed useful information back into maintenance workflows.",
         "The deep dive will focus on harsh-environment deployment: autonomous routes, docking stations, explosion-risk environments, inspection payloads, thermal and acoustic anomaly detection, and the economics of replacing manual inspection rounds with robotic data collection.",
@@ -7822,7 +7883,10 @@ const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
     {
       heading: "3. Agility Robotics Digit",
       paragraphs: [
-        "Digit is one of the strongest examples of a humanoid being designed around a narrow operational problem rather than a science-fiction fantasy. Its core logic is warehouse work: moving totes, handling bulk material flow, and operating in spaces already built for people.",
+        [
+          agilityRoboticsDigitArticleLink,
+          " is one of the strongest examples of a humanoid being designed around a narrow operational problem rather than a science-fiction fantasy. Its core logic is warehouse work: moving totes, handling bulk material flow, and operating in spaces already built for people.",
+        ],
         "Agility's agreement with GXO is important because it points toward revenue-generating humanoid deployments rather than pure laboratory demos. That does not mean humanoids are solved. It means logistics is one of the first places where the economic case can be tested seriously.",
         "For Black Scarab, Digit is a useful robot to study because it connects perception, balance, manipulation, fleet software, safety, and facility integration. The value is not just the robot body. It is the whole system that lets the robot fit into warehouse operations.",
         "The deep dive will cover tote movement, warehouse management integration, bipedal mobility, manipulation limits, safety workflows, charging and fleet orchestration, and why logistics is one of the first serious tests for humanoid labor.",
@@ -7831,7 +7895,10 @@ const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
     {
       heading: "4. Figure 03",
       paragraphs: [
-        "Figure 03 represents the embodied AI side of the robotics race. Figure describes it as a third-generation humanoid with a redesigned sensory suite and hand system built to support Helix, the company's vision-language-action AI.",
+        [
+          figure03ArticleLink,
+          " represents the embodied AI side of the robotics race. Figure describes it as a third-generation humanoid with a redesigned sensory suite and hand system built to support Helix, the company's vision-language-action AI.",
+        ],
         "That matters because the future of general-purpose robotics will not be won by hardware alone. The robot has to interpret the scene, understand the task, manipulate objects, and recover when the real world behaves differently than the training environment.",
         "The business case is still developing, but Figure 03 is worth studying because it sits at the center of the AI-to-robotics transition. The deeper article should focus on whether vision-language-action systems can turn humanoids from scripted machines into useful workers.",
         "The deep dive will look at Figure 03's sensory redesign, hand system, Helix AI model, teleoperation and data collection loop, home-versus-workplace positioning, and what has to be proven before a general-purpose humanoid can become a dependable product.",
@@ -7840,7 +7907,11 @@ const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
     {
       heading: "5. Boston Dynamics Atlas",
       paragraphs: [
-        "The new all-electric Atlas is less about near-term mass deployment and more about defining the upper edge of humanoid mobility, balance, and manipulation. Boston Dynamics has spent years proving that legged robots can move through complex physical environments, and Atlas is the humanoid continuation of that work.",
+        [
+          "The new all-electric ",
+          bostonDynamicsAtlasArticleLink,
+          " is less about near-term mass deployment and more about defining the upper edge of humanoid mobility, balance, and manipulation. Boston Dynamics has spent years proving that legged robots can move through complex physical environments, and Atlas is the humanoid continuation of that work.",
+        ],
         "Atlas matters for Black Scarab because it shows what happens when advanced control, perception, simulation, and mechanical design are fused into a single machine. It is not the cheapest path to automation. It is a benchmark for what industrial humanoids may eventually become.",
         "The deeper Atlas article should avoid treating every demo as proof of commercial readiness. The more useful question is which capabilities can migrate from advanced demos into repeatable manufacturing, logistics, and field-service work.",
         "The deep dive will cover all-electric actuation, dynamic balance, simulation-based training, manipulation, safety, Hyundai and factory-use positioning, and the gap between a world-class robotics demo and a repeatable industrial product.",
@@ -7849,7 +7920,10 @@ const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
     {
       heading: "6. Tesla Optimus",
       paragraphs: [
-        "Tesla Optimus belongs on the list because of strategy, not because it is the most proven commercial robot today. Tesla is attempting to connect humanoid robotics with its existing strengths in AI training, manufacturing, batteries, motors, cameras, and vertical integration.",
+        [
+          teslaOptimusArticleLink,
+          " belongs on the list because of strategy, not because it is the most proven commercial robot today. Tesla is attempting to connect humanoid robotics with its existing strengths in AI training, manufacturing, batteries, motors, cameras, and vertical integration.",
+        ],
         "That makes Optimus important even if many claims around humanoid timelines deserve skepticism. If Tesla can eventually produce robots at automotive-style scale, the economics of humanoid robotics could change. If it cannot, Optimus will still be a useful case study in how hard general-purpose robotics really is.",
         "The Black Scarab angle should be clear: Optimus is not just a robot to watch. It is a test of whether one company can integrate hardware, AI, supply chain, and deployment tightly enough to make humanoids commercially plausible.",
         "The deep dive will cover Tesla's vertical integration thesis, camera-first perception, actuator and battery implications, factory deployment path, training data problem, teleoperation questions, and the difference between search-driving hype and verified robotic capability.",
@@ -7858,7 +7932,10 @@ const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
     {
       heading: "7. Unitree G1",
       paragraphs: [
-        "Unitree G1 earns a place because accessibility changes markets. A lower-cost humanoid platform can help universities, labs, developers, and startups experiment with embodied AI without needing the budget of a major robotics company.",
+        [
+          unitreeG1ArticleLink,
+          " earns a place because accessibility changes markets. A lower-cost humanoid platform can help universities, labs, developers, and startups experiment with embodied AI without needing the budget of a major robotics company.",
+        ],
         "The G1 is not on this list because it is the most capable humanoid in every category. It is here because cost and availability matter. Robotics ecosystems grow when more people can test locomotion, perception, reinforcement learning, teleoperation, and manipulation on real hardware.",
         "For the series, Unitree G1 should be treated as the research-and-developer on-ramp. The deeper article should ask what lower-cost humanoids make possible, and what compromises buyers need to understand before treating them like enterprise-ready labor.",
         "The deep dive will cover the developer ecosystem, onboard compute options, locomotion and manipulation tradeoffs, education and lab use cases, reinforcement learning research, and where a low-cost humanoid fits compared with industrial robots built for uptime.",
@@ -7867,7 +7944,10 @@ const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
     {
       heading: "8. Universal Robots UR Series",
       paragraphs: [
-        "Universal Robots deserves a place because the company helped make collaborative robot arms feel approachable for real businesses. The UR Series is not as viral as a humanoid, but cobots are already doing useful work in manufacturing, packaging, machine tending, welding support, and inspection workflows.",
+        [
+          universalRobotsUrSeriesArticleLink,
+          " deserves a place because the company helped make collaborative robot arms feel approachable for real businesses. The UR Series is not as viral as a humanoid, but cobots are already doing useful work in manufacturing, packaging, machine tending, welding support, and inspection workflows.",
+        ],
         "The business logic is mature: automate repetitive tasks without rebuilding the entire factory around traditional industrial robots. That is powerful for small and midsize manufacturers that need flexible automation but cannot afford years of integration complexity.",
         "For Black Scarab, UR robots are important because they show how robotics adoption often starts: not with a general-purpose humanoid, but with a focused machine that solves one repetitive workflow safely and repeatably.",
         "The deep dive will cover end effectors, force sensing, machine vision, safety-rated deployment, programming workflow, ROI for small manufacturers, and how cobots become more valuable when paired with cameras, grippers, and edge AI inspection models.",
@@ -7876,7 +7956,10 @@ const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
     {
       heading: "9. Amazon Proteus",
       paragraphs: [
-        "Proteus is important because warehouse robotics is one of the most commercially grounded robotics markets. Amazon describes Proteus as its first fully autonomous mobile robot that can operate safely around employees, using computer vision and machine learning inside real fulfillment operations.",
+        [
+          amazonProteusArticleLink,
+          " is important because warehouse robotics is one of the most commercially grounded robotics markets. Amazon describes Proteus as its first fully autonomous mobile robot that can operate safely around employees, using computer vision and machine learning inside real fulfillment operations.",
+        ],
         "That makes Proteus a strong edge AI example. The robot has to perceive people, navigate dynamic spaces, move inventory, and integrate with a larger warehouse system. The hardware matters, but the workflow orchestration matters just as much.",
         "The deeper article should focus on why warehouse robots are often more commercially meaningful than viral humanoids. They have clear routes to ROI, measurable throughput improvements, and defined operating environments.",
         "The deep dive will cover autonomous mobile robot navigation, worker-aware safety, computer vision, inventory movement, containerized storage, warehouse orchestration software, and why logistics robots can scale faster than more general-purpose humanoids.",
@@ -7885,7 +7968,10 @@ const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
     {
       heading: "10. Intuitive da Vinci 5",
       paragraphs: [
-        "Da Vinci 5 represents a different kind of robotics transformation. It is not a mobile autonomous robot roaming a factory. It is a high-precision surgical platform that extends human capability in a controlled medical environment.",
+        [
+          intuitiveDaVinci5ArticleLink,
+          " represents a different kind of robotics transformation. It is not a mobile autonomous robot roaming a factory. It is a high-precision surgical platform that extends human capability in a controlled medical environment.",
+        ],
         "Its inclusion matters because robotics is not only about replacing labor. In surgery, the machine becomes an interface between expert human judgment and extremely precise physical execution. That is a different but equally important model for robotics economics.",
         "For Black Scarab, da Vinci 5 is a reminder that the best robot is not always the most autonomous one. Sometimes the most valuable robot is the one that gives a trained professional more control, better feedback, and a safer way to perform complex work.",
         "The deep dive will cover surgeon-in-the-loop control, robotic arms, imaging, force feedback, hospital economics, regulatory constraints, training requirements, and why medical robotics shows a different path to value than fully autonomous labor replacement.",
@@ -7991,6 +8077,19 @@ const bostonDynamicsSpotDeepDive = (): CaseStudyArticle => ({
       paragraphs: [
         "Boston Dynamics Spot is not a consumer robot dog, and it is not a humanoid replacement for human labor. Spot is best understood as a mobile inspection platform: a four-legged robot that can walk through complex industrial environments, carry sensors, repeat inspection routes, and send structured data back to teams that manage equipment, safety, and uptime.",
         "This is the first deep dive in Black Scarab's robotics series. The audience is the industry leader who keeps hearing about robots but does not yet know which systems are commercially useful, which are still demos, and which pieces of the hardware stack matter. Spot is a good place to start because it is one of the clearest examples of a robot moving from viral video into real industrial workflows.",
+        [
+          "This article belongs to the ",
+          topRobotsArticleLink,
+          " series. Read it beside ",
+          anyboticsAnymalArticleLink,
+          ", ",
+          geckoRoboticsArticleLink,
+          ", ",
+          fortRoboticsArticleLink,
+          ", and ",
+          ousterArticleLink,
+          " to understand how mobile inspection connects robot mobility, asset data, safety control, and spatial sensing.",
+        ],
         "The simple business question is this: can a mobile robot collect better operational data than a human walking the same route, a fixed camera, or thousands of fixed sensors? In the right facility, the answer can be yes. In the wrong facility, Spot can become an expensive demonstration. The difference is workflow design.",
       ],
     },
@@ -8356,6 +8455,19 @@ const anyboticsAnymalDeepDive = (): CaseStudyArticle => ({
       paragraphs: [
         "ANYbotics ANYmal is a four-legged industrial inspection robot built for the places where routine inspection is still expensive, hazardous, inconsistent, or trapped in paper-based workflows. It is not a consumer robot and it is not trying to be a general humanoid worker. It is a rugged mobile inspection system for complex plants.",
         "This is the second deep dive in Black Scarab's robotics series. The goal is to help industry leaders understand what is actually available, what the robot does, where it fits, and whether it can help a business. ANYmal matters because it is designed around one of the clearest robotics use cases: autonomous inspection in energy, mining, chemicals, power, utilities, transport, and heavy industry.",
+        [
+          "This article belongs to the ",
+          topRobotsArticleLink,
+          " series. Read it beside ",
+          bostonDynamicsSpotArticleLink,
+          ", ",
+          geckoRoboticsArticleLink,
+          ", ",
+          fortRoboticsArticleLink,
+          ", and ",
+          ousterArticleLink,
+          " to compare inspection robots, asset-health intelligence, trusted control, and 3D sensing in harsh environments.",
+        ],
         "The core question is not whether ANYmal can walk. The core question is whether a robot can collect better inspection data, more often, in places where people are exposed to heat, gas, stairs, weather, noise, height, remote access, or explosive-atmosphere restrictions.",
       ],
     },
@@ -8735,6 +8847,19 @@ const teslaOptimusDeepDive = (): CaseStudyArticle => ({
       paragraphs: [
         "Tesla Optimus is one of the most important humanoid robots to study because the project is not only about a robot body. It is a strategic attempt to connect robot hardware, AI training, inference compute, battery systems, motors, sensors, manufacturing capacity, and real factory deployment inside one vertically integrated company.",
         "This is the sixth deep dive in Black Scarab's robotics series. Spot and ANYmal showed inspection. Digit showed logistics humanoids. Figure 03 showed embodied AI. Atlas showed industrial mobility and manipulation. Optimus is different because Tesla is trying to make the robot part of a much larger company-wide AI and manufacturing system.",
+        [
+          "This article belongs to the ",
+          topRobotsArticleLink,
+          " series. Read it beside ",
+          figure03ArticleLink,
+          ", ",
+          bostonDynamicsAtlasArticleLink,
+          ", ",
+          agilityRoboticsDigitArticleLink,
+          ", and ",
+          nvidiaPhysicalAiArticleLink,
+          " to compare Tesla's vertical integration against other humanoid paths and the compute stack behind physical AI.",
+        ],
         "The executive question is not whether Optimus will eventually become the largest robotics product in the world. That is still unproven. The practical question is whether Tesla can convert its strengths in vehicle AI, factory automation, supply chain scale, battery manufacturing, custom silicon, and internal deployment into a humanoid robot that performs useful work repeatedly.",
       ],
     },
@@ -9131,6 +9256,19 @@ const universalRobotsUrSeriesDeepDive = (): CaseStudyArticle => ({
       paragraphs: [
         "Universal Robots UR Series belongs in this robotics series because it represents the practical side of automation. Humanoids get attention because they look like the future. Cobots matter because they are already helping factories, machine shops, packaging lines, assembly cells, and small manufacturers automate real work without rebuilding the entire facility.",
         "This is the eighth deep dive in Black Scarab's robotics series. Spot and ANYmal showed inspection. Digit, Figure, Atlas, Optimus, and G1 showed different versions of the humanoid race. Universal Robots is different: the UR Series is not trying to imitate a whole person. It focuses on one of the most useful pieces of industrial labor, the repeatable arm task.",
+        [
+          "This article belongs to the ",
+          topRobotsArticleLink,
+          " series. Read it beside ",
+          viamArticleLink,
+          ", ",
+          roboflowArticleLink,
+          ", ",
+          edgeImpulseArticleLink,
+          ", and ",
+          fortRoboticsArticleLink,
+          " to understand how cobots connect to robotics software, machine vision, embedded AI, and safety controls.",
+        ],
         "The executive question is not whether cobots are exciting enough. The question is whether they can automate a specific bottleneck with less risk, lower integration complexity, and faster payback than a large traditional industrial robot cell.",
       ],
     },
@@ -9569,6 +9707,19 @@ const amazonProteusDeepDive = (): CaseStudyArticle => ({
       paragraphs: [
         "Amazon Proteus belongs in this robotics series because it is one of the clearest examples of autonomy moving from controlled robot zones into human-filled logistics facilities. It is not a humanoid, not a lab robot, and not a general-purpose assistant. It is a practical autonomous mobile robot built around a specific logistics job: moving heavy carts and material through fulfillment operations.",
         "This is the ninth deep dive in Black Scarab's robotics series. Spot and ANYmal showed inspection. Digit, Figure, Atlas, Optimus, and G1 showed different humanoid paths. Universal Robots showed collaborative arms. Proteus shows another important category: autonomous movement inside warehouses, where computer vision, routing, safety, and workflow integration can reshape logistics without needing a robot that looks human.",
+        [
+          "This article belongs to the ",
+          topRobotsArticleLink,
+          " series. Read it beside ",
+          agilityRoboticsDigitArticleLink,
+          ", ",
+          viamArticleLink,
+          ", ",
+          fortRoboticsArticleLink,
+          ", and ",
+          roboflowArticleLink,
+          " to connect AMRs with humanoid logistics, fleet software, worker-aware safety, and warehouse computer vision.",
+        ],
         "The executive question is not whether every company can buy Proteus. Proteus is an Amazon Robotics system built for Amazon's own operations. The practical question is what business leaders can learn from it about AMRs, human-robot collaboration, warehouse flow, safety, and the stack required to make mobile autonomy useful at scale.",
       ],
     },
@@ -9957,6 +10108,19 @@ const unitreeG1DeepDive = (): CaseStudyArticle => ({
       paragraphs: [
         "Unitree G1 matters because affordability changes who gets to participate in humanoid robotics. Most humanoid systems are priced, sold, or deployed like enterprise programs. G1 is different: it pushes humanoid access closer to universities, labs, developers, startups, AI researchers, and technical teams that want a real bipedal platform without the budget of an automotive manufacturer or a major robotics company.",
         "This is the seventh deep dive in Black Scarab's robotics series. Spot and ANYmal showed industrial inspection. Digit showed logistics humanoids. Figure 03 showed embodied AI. Atlas showed high-end industrial mobility. Optimus showed vertical integration. Unitree G1 shows another force entirely: lower-cost hardware that can expand experimentation.",
+        [
+          "This article belongs to the ",
+          topRobotsArticleLink,
+          " series. Read it beside ",
+          figure03ArticleLink,
+          ", ",
+          bostonDynamicsAtlasArticleLink,
+          ", ",
+          physicalIntelligenceArticleLink,
+          ", and ",
+          skildAiArticleLink,
+          " to compare affordable humanoid hardware with frontier humanoids and the robot intelligence layer.",
+        ],
         "The executive question is not whether G1 should replace workers in a factory today. That is the wrong frame. The practical question is what lower-cost humanoids make possible for research, education, developer ecosystems, AI training, simulation-to-real testing, and early embodied AI pilots.",
       ],
     },
@@ -10344,6 +10508,19 @@ const bostonDynamicsAtlasDeepDive = (): CaseStudyArticle => ({
       paragraphs: [
         "Boston Dynamics Atlas is one of the most important humanoid robots to study because it defines the high end of what mobility and manipulation can look like in an industrial humanoid. The new Atlas is all-electric, built for enterprise applications, and positioned around material handling, part sequencing, machine tending, order building, and other physical work in human-designed environments.",
         "This is the fifth deep dive in Black Scarab's robotics series. Spot and ANYmal showed mobile inspection. Digit showed logistics humanoids. Figure 03 showed the embodied-AI race. Atlas is different again: it is a benchmark platform from the company that made dynamic legged robotics credible long before humanoids became a boardroom topic.",
+        [
+          "This article belongs to the ",
+          topRobotsArticleLink,
+          " series. Read it beside ",
+          figure03ArticleLink,
+          ", ",
+          agilityRoboticsDigitArticleLink,
+          ", ",
+          teslaOptimusArticleLink,
+          ", and ",
+          fortRoboticsArticleLink,
+          " to compare humanoid mobility, real factory workflows, and the safety layer that industrial robots need before scaling.",
+        ],
         "The executive question is not whether Atlas can move impressively. Boston Dynamics has already proven that. The real question is whether its mobility, strength, perception, safety systems, and workflow integration can turn into reliable work in factories and warehouses at a cost that beats simpler automation.",
       ],
     },
@@ -10703,6 +10880,21 @@ const figure03DeepDive = (): CaseStudyArticle => ({
       paragraphs: [
         "Figure 03 is one of the highest-profile humanoid robots because it sits at the intersection of two markets that are moving very quickly: physical robotics and foundation-model AI. Figure AI describes it as a third-generation humanoid designed around Helix, the company's vision-language-action system for controlling robots from perception, language, and learned motion.",
         "This is the fourth deep dive in Black Scarab's robotics series. Spot, ANYmal, and Digit are easiest to understand through narrow operational jobs: inspection, inspection, and logistics. Figure 03 is different. It is a bet that a humanoid robot can become more general over time by learning from fleet data, human motion, teleoperation, simulation, and real-world tasks.",
+        [
+          "This article belongs to the ",
+          topRobotsArticleLink,
+          " series. Read it beside ",
+          agilityRoboticsDigitArticleLink,
+          ", ",
+          bostonDynamicsAtlasArticleLink,
+          ", ",
+          teslaOptimusArticleLink,
+          ", ",
+          physicalIntelligenceArticleLink,
+          ", and ",
+          skildAiArticleLink,
+          " to connect the humanoid race with robot foundation models and reusable robot intelligence.",
+        ],
         "That makes Figure 03 exciting, but also harder to evaluate. The business question is not, 'Can it look human?' The real question is whether Figure can turn impressive embodied-AI demonstrations into reliable, measurable work in factories, warehouses, homes, and service environments without creating more supervision burden than value.",
       ],
     },
@@ -11110,6 +11302,19 @@ const agilityRoboticsDigitDeepDive = (): CaseStudyArticle => ({
       paragraphs: [
         "Agility Robotics Digit is one of the clearest examples of humanoid robotics moving from demo videos into warehouse operations. It is not a household assistant, and it is not a general-purpose robot that can suddenly do every human job. Digit is a bipedal, two-armed logistics robot built around repetitive material handling in facilities designed for people.",
         "This is the third deep dive in Black Scarab's robotics series. Spot and ANYmal showed how mobile robots can collect inspection data. Digit shows a different business case: using humanoid mobility and manipulation to connect warehouse workflows that are still awkward for fixed automation, conveyors, forklifts, autonomous mobile robots, and human teams.",
+        [
+          "This article belongs to the ",
+          topRobotsArticleLink,
+          " series. Read it beside ",
+          figure03ArticleLink,
+          ", ",
+          bostonDynamicsAtlasArticleLink,
+          ", ",
+          teslaOptimusArticleLink,
+          ", and ",
+          amazonProteusArticleLink,
+          " to compare warehouse humanoids, general-purpose humanoids, industrial humanoids, and mobile warehouse automation.",
+        ],
         "The executive question is simple: can a humanoid robot take over specific repetitive logistics movements in a way that improves throughput, reduces ergonomic strain, fills hard-to-staff roles, and integrates with the warehouse systems that already run the building? In narrow workflows, Digit is one of the first platforms making that question practical.",
       ],
     },
@@ -11469,6 +11674,19 @@ const intuitiveDaVinci5DeepDive = (): CaseStudyArticle => ({
       paragraphs: [
         "Intuitive da Vinci 5 belongs in this robotics series because it represents one of the most mature commercial robotics categories in the world: robot-assisted surgery. It is not a warehouse robot, not a humanoid, and not an autonomous machine replacing a professional. It is a precision platform that helps highly trained surgeons perform complex minimally invasive procedures through robotic instruments, 3D visualization, software, workflow design, and hospital support infrastructure.",
         "This is the final deep dive in Black Scarab's robotics series. Spot and ANYmal showed inspection. Digit, Figure, Atlas, Optimus, and G1 showed different humanoid paths. Universal Robots showed collaborative arms. Amazon Proteus showed autonomous movement inside logistics. da Vinci 5 shows a different lesson: some of the most valuable robots do not remove the expert from the loop. They amplify the expert.",
+        [
+          "This article belongs to the ",
+          topRobotsArticleLink,
+          " series. Read it beside ",
+          nvidiaPhysicalAiArticleLink,
+          ", ",
+          roboflowArticleLink,
+          ", ",
+          propheseeArticleLink,
+          ", and ",
+          hailoArticleLink,
+          " to connect surgical robotics with compute, vision, low-latency sensing, and efficient edge inference.",
+        ],
         "For business leaders, da Vinci 5 is useful because the buyer is not a hobbyist or a factory manager. The buyer is a hospital, health system, surgical department, or ambulatory surgery strategy team. The evaluation is not only technical. It involves capital planning, surgeon adoption, operating-room throughput, patient volume, clinical governance, service contracts, instrument utilization, training, credentialing, and long-term program economics.",
       ],
     },
