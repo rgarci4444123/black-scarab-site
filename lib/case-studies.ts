@@ -18,6 +18,81 @@ const physicalAiPillarArticleLink: CaseStudyParagraphLink = {
   href: "/insights/top-15-physical-ai-infrastructure-companies",
 };
 
+const nvidiaPhysicalAiArticleLink: CaseStudyParagraphLink = {
+  text: "NVIDIA's physical AI stack",
+  href: "/insights/nvidia-physical-ai-cosmos-isaac-jetson-omniverse-guide",
+};
+
+const prometheusPhysicalAiArticleLink: CaseStudyParagraphLink = {
+  text: "Prometheus and artificial general engineering",
+  href: "/insights/prometheus-industrial-ai-artificial-general-engineering-guide",
+};
+
+const physicalIntelligenceArticleLink: CaseStudyParagraphLink = {
+  text: "Physical Intelligence's generalist robot policies",
+  href: "/insights/physical-intelligence-generalist-robot-policy-guide",
+};
+
+const skildAiArticleLink: CaseStudyParagraphLink = {
+  text: "Skild AI's general-purpose robot brain",
+  href: "/insights/skild-ai-general-purpose-robot-brain-guide",
+};
+
+const viamArticleLink: CaseStudyParagraphLink = {
+  text: "Viam's robotics software platform",
+  href: "/insights/viam-robotics-software-platform-physical-ai-guide",
+};
+
+const fortRoboticsArticleLink: CaseStudyParagraphLink = {
+  text: "FORT Robotics' safety and control layer",
+  href: "/insights/fort-robotics-trust-layer-physical-ai-safety-guide",
+};
+
+const edgeImpulseArticleLink: CaseStudyParagraphLink = {
+  text: "Edge Impulse's embedded AI deployment layer",
+  href: "/insights/edge-impulse-embedded-ai-mlops-physical-ai-guide",
+};
+
+const roboflowArticleLink: CaseStudyParagraphLink = {
+  text: "Roboflow's computer vision platform",
+  href: "/insights/roboflow-computer-vision-platform-physical-ai-guide",
+};
+
+const luxonisArticleLink: CaseStudyParagraphLink = {
+  text: "Luxonis OAK spatial AI cameras",
+  href: "/insights/luxonis-oak-spatial-ai-cameras-physical-ai-guide",
+};
+
+const stereolabsArticleLink: CaseStudyParagraphLink = {
+  text: "Stereolabs ZED spatial perception",
+  href: "/insights/stereolabs-zed-spatial-perception-robotics-guide",
+};
+
+const propheseeArticleLink: CaseStudyParagraphLink = {
+  text: "Prophesee's event-based vision layer",
+  href: "/insights/prophesee-event-based-vision-physical-ai-guide",
+};
+
+const hailoArticleLink: CaseStudyParagraphLink = {
+  text: "Hailo's edge AI acceleration layer",
+  href: "/insights/hailo-edge-ai-acceleration-physical-ai-guide",
+};
+
+const ousterArticleLink: CaseStudyParagraphLink = {
+  text: "Ouster's LiDAR and 3D sensing layer",
+  href: "/insights/ouster-lidar-spatial-perception-physical-ai-guide",
+};
+
+const geckoRoboticsArticleLink: CaseStudyParagraphLink = {
+  text: "Gecko Robotics' asset-health data layer",
+  href: "/insights/gecko-robotics-asset-health-physical-ai-guide",
+};
+
+const openspaceArticleLink: CaseStudyParagraphLink = {
+  text: "OpenSpace's construction reality-capture layer",
+  href: "/insights/openspace-construction-reality-capture-physical-ai-guide",
+};
+
 export type CaseStudySourceLink = {
   label: string;
   url: string;
@@ -1426,6 +1501,15 @@ const nvidiaPhysicalAiDeepDive = (): CaseStudyArticle => ({
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
         ],
+        [
+          "The closest companion reads are ",
+          hailoArticleLink,
+          ", ",
+          edgeImpulseArticleLink,
+          ", and ",
+          viamArticleLink,
+          " because they show how NVIDIA's data-center and robotics platform can connect to edge acceleration, embedded deployment, and fleet software.",
+        ],
         "Physical AI needs training infrastructure, simulation, synthetic data, robot learning, vision models, sensor processing, edge inference, safety workflows, developer tools, and deployment partners. NVIDIA already touches most of that chain. Its advantage is not that every piece is finished. Its advantage is that builders can begin almost anywhere in the chain and still find themselves inside an NVIDIA orbit.",
         "That is why NVIDIA remains the gravitational center of physical AI. It can talk about massive data centers and embedded robots without switching categories. A world model trained in a cloud cluster, tested in simulation, optimized for inference, and deployed on an edge module can all pass through NVIDIA hardware, software, libraries, and developer communities.",
         "For investors and operators, the important question is no longer whether NVIDIA benefits from AI. That is obvious. The sharper question is whether physical AI becomes the next durable demand layer after language models: one that pulls compute into factories, fleets, warehouses, vehicles, hospitals, farms, energy sites, construction projects, and machines that have to understand the world before they act in it.",
@@ -1706,6 +1790,15 @@ const prometheusPhysicalAiDeepDive = (): CaseStudyArticle => ({
           "This deep dive is part of Black Scarab's ",
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
+        ],
+        [
+          "It is best read alongside ",
+          nvidiaPhysicalAiArticleLink,
+          ", ",
+          geckoRoboticsArticleLink,
+          ", and ",
+          openspaceArticleLink,
+          " because Prometheus sits upstream of the factories, assets, and jobsites that physical AI eventually has to design, inspect, or operate.",
         ],
         "That makes Prometheus one of the clearest examples of physical AI as infrastructure rather than robotics theater. The company is not being positioned as a chatbot company, a humanoid company, or a warehouse automation vendor. Current reporting frames it as an industrial AI company trying to build an artificial general engineer: a system that can help compress the time between a physical product idea and manufactured reality.",
         "The ambition is enormous because physical product development is slow for reasons software people often underestimate. Engineers do not only write requirements and ship code. They fight material behavior, thermal constraints, safety margins, supplier availability, certification rules, tooling costs, manufacturing tolerances, test failures, and the ugly gap between a clean simulation and a real machine.",
@@ -2020,6 +2113,15 @@ const physicalIntelligenceDeepDive = (): CaseStudyArticle => ({
           "This deep dive is part of Black Scarab's ",
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
+        ],
+        [
+          "The most useful comparisons are ",
+          skildAiArticleLink,
+          ", ",
+          viamArticleLink,
+          ", and ",
+          fortRoboticsArticleLink,
+          " because robot intelligence only becomes commercially durable when it can move through software platforms and trusted safety layers.",
         ],
         "That distinction matters. Robotics has never lacked interesting hardware. It has lacked reusable intelligence. A robot arm, a mobile base, a humanoid, a quadruped, and a bimanual workstation can all require different control stacks, training data, calibration rituals, safety assumptions, and failure-recovery playbooks. The dream behind Physical Intelligence is that a broad robot policy can absorb experience across those differences and make new robot deployments feel less like bespoke automation.",
         "The company describes its mission as bringing general-purpose AI into the physical world and developing learning algorithms for a model that can control any robot to do any task. That is the right north star and also the dangerous part of the thesis. Physical behavior is not language. A model can write a plausible sentence without touching anything. A robot has to deal with friction, lighting, latency, object variation, compliance, collision risk, cheap plastic bins, reflective parts, wrinkled bags, overloaded grippers, and workstations that changed overnight.",
@@ -2381,6 +2483,15 @@ const skildAiDeepDive = (): CaseStudyArticle => ({
           "This deep dive is part of Black Scarab's ",
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
+        ],
+        [
+          "The right cross-links are ",
+          physicalIntelligenceArticleLink,
+          ", ",
+          viamArticleLink,
+          ", and ",
+          fortRoboticsArticleLink,
+          " because Skild's robot-brain thesis has to be evaluated against model transfer, deployment operations, and safety controls.",
         ],
         "That phrase can sound like startup poetry until it is connected to the commercial problem. Robot hardware is unlikely to consolidate into one winner. There will be humanoids, industrial arms, cobots, AMRs, quadrupeds, warehouse systems, inspection robots, mobile manipulators, medical robots, construction machines, and forms we do not have clean categories for yet. If the hardware layer stays diverse, a reusable intelligence layer becomes more valuable, not less.",
         "Skild matters because it is trying to build that layer while also forcing itself toward deployment. The company is not only writing about an abstract robot brain. In 2026, it announced a $1.4 billion Series C, partnerships with ABB Robotics, Universal Robots, MiR, NVIDIA, and Foxconn, and an acquisition of Zebra Technologies' robotics division, formerly Fetch Robotics. Those moves make the thesis easier to judge. Skild is now being pulled from research narrative into the harder world of factory lines, warehouse workflows, OEM integration, and customer economics.",
@@ -2766,6 +2877,15 @@ const viamDeepDive = (): CaseStudyArticle => ({
           "This deep dive is part of Black Scarab's ",
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
+        ],
+        [
+          "It connects naturally to ",
+          physicalIntelligenceArticleLink,
+          ", ",
+          skildAiArticleLink,
+          ", and ",
+          fortRoboticsArticleLink,
+          " because smarter robots still need hardware abstraction, deployment management, and trusted control before they can operate as fleets.",
         ],
         "That makes Viam easy to underestimate. In early physical AI markets, attention naturally goes to the visible machine: the humanoid, the robot arm, the quadruped, the autonomous vehicle, the smart camera, the marine system, the factory cell. But as deployments scale, the less glamorous layer becomes unavoidable. Someone has to make cameras, motors, arms, sensors, microcontrollers, edge computers, models, logs, permissions, and cloud services behave like one manageable system.",
         "Viam's argument is that robotics should be built more like modern software. Define the hardware, write application logic in familiar languages, connect machines securely, collect data, deploy updates, run models at the edge, and manage the fleet from a common platform. It is not trying to make one robot famous. It is trying to make many machines programmable.",
@@ -3156,6 +3276,15 @@ const fortRoboticsDeepDive = (): CaseStudyArticle => ({
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
         ],
+        [
+          "Read it next to ",
+          viamArticleLink,
+          ", ",
+          ousterArticleLink,
+          ", and ",
+          geckoRoboticsArticleLink,
+          " because safe autonomy depends on fleet control, spatial awareness, and operational workflows that make machine behavior auditable.",
+        ],
         "That trust problem is practical before it is philosophical. Who is authorized to command the machine? How does it stop? How is control verified? Which devices are paired? What happens when wireless communication degrades? How does a human intervene without stepping into danger? How does a buyer explain the safety case to procurement, insurers, regulators, and workers?",
         "FORT is building around those questions. Its platform combines safety-rated control hardware, wireless emergency stop, safe remote controls, endpoint controllers, embedded safety receivers, device management, permissions, and newer capabilities around remote supervision and active safety. The company calls itself the trust layer for physical AI, and the phrase is directionally right. This is the layer that turns capable machines into governable machines.",
         "The market may not glamorize that layer, but industrial buyers will. A robot demo can win attention. A safety system wins permission. If physical AI moves from fenced labs into warehouses, construction sites, farms, ports, airports, mines, defense environments, and industrial yards, FORT's category becomes more important with every deployment.",
@@ -3526,6 +3655,15 @@ const edgeImpulseDeepDive = (): CaseStudyArticle => ({
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
         ],
+        [
+          "The closest neighboring layers are ",
+          hailoArticleLink,
+          ", ",
+          roboflowArticleLink,
+          ", and ",
+          luxonisArticleLink,
+          " because embedded AI usually needs efficient acceleration, usable model workflows, and sensors that can run perception close to the physical site.",
+        ],
         "That makes the company's layer less theatrical than a humanoid robot and more important than it first appears. Edge Impulse sits close to the conversion point where an AI idea becomes a deployable physical product. A model that works in a notebook is interesting. A model that fits on the target device, survives field noise, meets latency requirements, respects the power budget, and can be updated after installation is infrastructure.",
         "The physical AI market will include large robots, but it will also include thousands of small, practical deployments: vibration monitoring on motors, audio classifiers for anomalies, low-power quality inspection, smart tools, medical devices, environmental sensing, agricultural monitoring, production-line vision, and embedded inference inside products that cannot send every signal to the cloud.",
         "Edge Impulse is built around that reality. The company helps teams collect real-world data, design signal-processing and model pipelines, optimize models for constrained hardware, and deploy them across a wide range of edge targets. If physical AI is going to become operational instead of experimental, this is one of the layers that has to work.",
@@ -3878,6 +4016,15 @@ const roboflowDeepDive = (): CaseStudyArticle => ({
           "This deep dive is part of Black Scarab's ",
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
+        ],
+        [
+          "For the rest of the perception stack, read this beside ",
+          luxonisArticleLink,
+          ", ",
+          stereolabsArticleLink,
+          ", and ",
+          propheseeArticleLink,
+          " because visual AI becomes more useful when 2D detection, depth, motion, and edge deployment are understood together.",
         ],
         "That makes Roboflow important even when no robot is involved. A camera looking at a conveyor belt, rail yard, warehouse aisle, parking lot, production cell, clinic, field, loading dock, or sports court can become an operational sensor if the software can reliably convert pixels into events. That conversion is one of the foundations of physical AI.",
         "The company's value is not only labeling or training. It is the workflow around visual intelligence: datasets, annotation, model selection, model training, evaluation, deployment, monitoring, iteration, and the logic that turns predictions into action. In physical environments, iteration is not optional. Lighting changes, camera angles shift, products change packaging, workers behave unpredictably, weather changes scenes, and models decay when the world drifts.",
@@ -4249,6 +4396,15 @@ const luxonisDeepDive = (): CaseStudyArticle => ({
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
         ],
+        [
+          "Luxonis sits between ",
+          roboflowArticleLink,
+          ", ",
+          stereolabsArticleLink,
+          ", and ",
+          hailoArticleLink,
+          " because smart cameras need vision workflows, spatial depth, and efficient local inference to become deployable perception nodes.",
+        ],
         "That matters because many edge systems cannot afford to send raw video everywhere or rely on a large host computer at every sensing point. A camera that can produce depth-aware detections, tracks, point clouds, and spatial coordinates locally changes the cost and architecture of a deployment.",
         "The deeper idea is simple. The useful unit in physical AI is not always a robot, a GPU server, or a cloud model. Sometimes it is a smart camera mounted above a conveyor, on an AMR, inside a kiosk, near a doorway, on a farm machine, or at the edge of a production cell. If that camera can see, infer, measure, and report locally, it becomes part of the control fabric.",
         "Luxonis is especially relevant at the prototype-to-pilot stage. Developers can build meaningful spatial AI systems without immediately buying industrial vision rigs or expensive robot platforms. That makes OAK cameras useful in robotics labs, retail analytics, safety systems, education, smart-city experiments, and early industrial deployments.",
@@ -4610,6 +4766,15 @@ const stereolabsDeepDive = (): CaseStudyArticle => ({
           "This deep dive is part of Black Scarab's ",
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
+        ],
+        [
+          "Stereolabs is easiest to place beside ",
+          luxonisArticleLink,
+          ", ",
+          ousterArticleLink,
+          ", and ",
+          propheseeArticleLink,
+          " because robots often combine stereo depth, LiDAR, event vision, and onboard perception depending on range, speed, power, and environment.",
         ],
         "Stereo perception is important because many physical AI systems need geometry, not just recognition. Knowing that a pallet exists is different from knowing where it is in 3D space, how far away it is, whether a machine can pass it, or how it relates to a map of the environment.",
         "That is the Stereolabs wedge. The company is not only selling a pair of lenses in a housing. It is selling a geometry pipeline: stereo cameras, sensor data, depth maps, point clouds, positional tracking, spatial mapping, object detection, body tracking, fusion, and integrations into robotics and simulation frameworks.",
@@ -5018,6 +5183,15 @@ const propheseeDeepDive = (): CaseStudyArticle => ({
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
         ],
+        [
+          "The best adjacent reads are ",
+          stereolabsArticleLink,
+          ", ",
+          ousterArticleLink,
+          ", and ",
+          roboflowArticleLink,
+          " because event cameras are most useful when compared with depth, LiDAR, and conventional computer vision workflows.",
+        ],
         "That shift matters because many physical AI problems are not really about beautiful images. They are about motion: fast objects, vibration, tracking, gestures, industrial movement, robotics reflexes, automotive scenes, AR latency, drone navigation, or environments where conventional frame capture wastes bandwidth on unchanging background.",
         "A normal camera asks the world to wait for the next frame. An event camera listens continuously for change. That can make event-based vision valuable for low latency, high dynamic range, sparse data, fast motion, and power-sensitive systems where the temporal signal matters more than the full image.",
         "Prophesee's investor question is whether event cameras remain a specialist technology or become a standard companion sensor. They do not need to replace every RGB, stereo, LiDAR, radar, or ToF sensor. They need to own the jobs where motion, latency, dynamic range, and sparse visual data create a performance gap that conventional cameras cannot easily close.",
@@ -5398,6 +5572,15 @@ const hailoDeepDive = (): CaseStudyArticle => ({
           "This deep dive is part of Black Scarab's ",
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
+        ],
+        [
+          "To place Hailo in the compute stack, compare it with ",
+          nvidiaPhysicalAiArticleLink,
+          ", ",
+          edgeImpulseArticleLink,
+          ", and ",
+          luxonisArticleLink,
+          " because edge acceleration only matters when it fits the broader model, device, and sensor deployment path.",
         ],
         "Not every edge device can use a large GPU. Many deployments need low power consumption, passive cooling, small form factors, predictable cost, low latency, and enough inference performance to run vision or sensor models locally. That is the world Hailo is built for.",
         "The company's opportunity grows as AI moves into cameras and appliances rather than sitting beside them. A smart camera, inspection box, robot sensor module, retail sensor, industrial gateway, or medical device may need dedicated acceleration, but it cannot carry data-center economics.",
@@ -5799,6 +5982,15 @@ const ousterDeepDive = (): CaseStudyArticle => ({
           "This deep dive is part of Black Scarab's ",
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
+        ],
+        [
+          "The nearest perception and field-data articles are ",
+          stereolabsArticleLink,
+          ", ",
+          propheseeArticleLink,
+          ", and ",
+          openspaceArticleLink,
+          " because LiDAR is one route to spatial ground truth, but not the only way machines and operators make physical environments measurable.",
         ],
         "The company is especially interesting because LiDAR demand is not limited to passenger vehicles. The broader physical AI market includes robots, drones, ports, warehouses, security systems, traffic monitoring, mining, agriculture, facility mapping, and machines that need to understand geometry in messy environments.",
         "Ouster's opportunity is to become a sensor infrastructure company across autonomy and industrial intelligence. The more machines need to localize, map, avoid, count, measure, monitor, and operate in shared spaces, the more valuable reliable 3D sensing becomes.",
@@ -6235,6 +6427,17 @@ const geckoRoboticsDeepDive = (): CaseStudyArticle => ({
           "This deep dive is part of Black Scarab's ",
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
+        ],
+        [
+          "Gecko's vertical data thesis pairs naturally with ",
+          openspaceArticleLink,
+          ", ",
+          fortRoboticsArticleLink,
+          ", ",
+          ousterArticleLink,
+          ", and ",
+          prometheusPhysicalAiArticleLink,
+          " because inspection value depends on capture, safety, spatial sensing, and the engineering decisions that follow.",
         ],
         "This is physical AI with a business case that already makes sense. Asset owners care about uptime, safety, compliance, maintenance planning, capital allocation, and failure prevention. If a system can collect better data from hard-to-access surfaces and turn that data into decisions, the value is easier to justify than a broad claim about automation.",
         "Gecko also illustrates why the future will not be only about general-purpose robots. Many valuable physical AI systems will be tightly attached to vertical workflows. The robot is part of the data acquisition layer. The deeper value may live in the asset model, inspection history, risk scoring, maintenance planning, and financial decisions that follow.",
@@ -6710,6 +6913,17 @@ const openspaceDeepDive = (): CaseStudyArticle => ({
           "This deep dive is part of Black Scarab's ",
           physicalAiPillarArticleLink,
           " series, which maps the infrastructure layers behind physical AI: compute, robot intelligence, perception, safety, deployment software, and field data.",
+        ],
+        [
+          "OpenSpace belongs beside ",
+          geckoRoboticsArticleLink,
+          ", ",
+          prometheusPhysicalAiArticleLink,
+          ", ",
+          roboflowArticleLink,
+          ", and ",
+          ousterArticleLink,
+          " because construction intelligence depends on visual data, spatial context, asset records, and better decisions before automation ever arrives.",
         ],
         "OpenSpace uses visual capture and AI to create a searchable record of jobsites. That may sound like documentation, but the strategic value is bigger. A construction site is a changing physical environment where mistakes are expensive, delays cascade, and managers often lack current ground truth.",
         "The reason this matters for physical AI is that site intelligence can become the substrate for automation. Before machines can act intelligently on a jobsite, the site has to become legible. What has been installed? What is behind the wall? Which floor is behind schedule? Where is rework likely? Which trade created a blocker? The answers start with reality capture and structured visual data.",
@@ -7330,7 +7544,7 @@ const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
         [
           {
             text: "Stereolabs",
-            href: "/insights/stereolabs-zed-spatial-perception-physical-ai-guide",
+            href: "/insights/stereolabs-zed-spatial-perception-robotics-guide",
           },
           " sits deeper in the robotics and spatial perception stack. Its ZED cameras provide stereo depth, positional tracking, mapping, and SDK-level capabilities that are useful for robots, autonomous systems, and 3D scene understanding.",
         ],
