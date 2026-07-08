@@ -6592,6 +6592,444 @@ const geckoRoboticsDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const openspaceDeepDive = (): CaseStudyArticle => ({
+  slug: "openspace-construction-reality-capture-physical-ai-guide",
+  title:
+    "OpenSpace Deep Dive: Construction Reality Capture, Visual Intelligence, and the Built-World Data Layer",
+  summary:
+    "A business and investor deep dive on OpenSpace, the construction visual intelligence platform turning jobsites into searchable, measurable, AI-ready records for owners, general contractors, trades, insurers, and infrastructure operators.",
+  publishedLabel: "Physical AI Series · Published July 8, 2026",
+  publishedDate: "2026-07-08",
+  typeLabel: "Physical AI Series",
+  formatLabel: "Company deep dive",
+  industry: "Construction",
+  image: "/article-images/openspace-construction-reality-capture-physical-ai-guide.png",
+  imageAlt:
+    "OpenSpace-style construction reality capture with a worker scanning a jobsite, BIM overlays, floor plans, progress maps, and visual AI documentation.",
+  seoDescription:
+    "A 2026 OpenSpace deep dive covering construction reality capture, visual intelligence, OpenSpace Capture, Track, BIM+, Field, Air, jobsite documentation, progress tracking, owners, general contractors, trades, insurance, and physical AI for the built world.",
+  tags: [
+    "OpenSpace",
+    "construction AI",
+    "reality capture",
+    "visual intelligence",
+    "physical AI",
+    "built world",
+    "progress tracking",
+    "BIM",
+    "construction technology",
+    "AI investing",
+  ],
+  sections: [
+    {
+      paragraphs: [
+        "OpenSpace brings construction into the physical AI conversation. Construction is one of the largest markets in the world, but it remains full of delayed feedback loops. Plans, schedules, budgets, field conditions, subcontractor work, and reality on the ground often drift apart.",
+        "OpenSpace uses visual capture and AI to create a searchable record of jobsites. That may sound like documentation, but the strategic value is bigger. A construction site is a changing physical environment where mistakes are expensive, delays cascade, and managers often lack current ground truth.",
+        "The reason this matters for physical AI is that site intelligence can become the substrate for automation. Before machines can act intelligently on a jobsite, the site has to become legible. What has been installed? What is behind the wall? Which floor is behind schedule? Where is rework likely? Which trade created a blocker? The answers start with reality capture and structured visual data.",
+        "OpenSpace also demonstrates why physical AI can begin without autonomous robots. A company can create enormous value simply by making the physical world searchable, comparable, and measurable. That is a quieter form of real-world intelligence, but for owners, general contractors, insurers, and infrastructure operators, it can be more immediately useful than a futuristic machine.",
+      ],
+    },
+    {
+      heading: "Executive Summary",
+      paragraphs: [
+        "OpenSpace calls itself a visual intelligence platform for construction. The core idea is straightforward: capture the jobsite visually, map the imagery to plans and project context, make the site searchable, and use AI to help teams compare field reality against design intent, schedule, quality, safety, and coordination needs.",
+        "The company matters because construction has a ground-truth problem. A project can look healthy in a meeting while drifting in the field. A task can be marked complete while the physical work is incomplete. A subcontractor can cover a wall before another team verifies what is inside. A delay can be discovered only after it has already pushed the schedule. OpenSpace reduces that lag by creating a time-stamped visual record of what actually happened.",
+        "OpenSpace's product suite has expanded beyond basic 360-degree capture. Its current site lists Capture, Field, Air, BIM+, and Track, with use cases across documentation, QA/QC, coordination, insurance costs, general contractors, owners, trades, and data-center construction. The homepage also presents scale signals such as 69B square feet captured, 131 countries, and more than 100K projects.",
+        "For investors, OpenSpace is a vertical physical AI company hiding in plain sight. It does not need to build the robot that installs drywall. It can build the data layer that tells owners and builders what has been installed, where work is blocked, what changed, and where risk is accumulating.",
+      ],
+      tables: [
+        {
+          title: "OpenSpace at a Glance",
+          columns: ["Question", "Practical Answer"],
+          rows: [
+            [
+              "What is it?",
+              "A construction visual intelligence platform using reality capture, AI, BIM context, progress tracking, and field workflows to create a searchable record of jobsites.",
+            ],
+            [
+              "What layer does it target?",
+              "The built-world data layer: visual ground truth, site history, progress comparison, documentation, coordination, and field-to-office feedback.",
+            ],
+            [
+              "Why does it matter?",
+              "Construction decisions depend on knowing what is actually happening on site. Better visual data can reduce delays, rework, disputes, documentation gaps, and coordination failures.",
+            ],
+            [
+              "What is the product shape?",
+              "Capture, Field, Air, BIM+, Track, mobile apps, integrations, and solutions for general contractors, owners, and trades.",
+            ],
+            [
+              "What is the core risk?",
+              "The company must turn visual records into daily workflow value while competing with other construction platforms, reality-capture tools, BIM systems, drone workflows, and internal project controls.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Construction's Ground-Truth Problem",
+      paragraphs: [
+        "Construction is a physical coordination problem disguised as a management problem. Drawings, schedules, budgets, RFIs, submittals, punch lists, inspections, change orders, and payment applications are all attempts to synchronize a large number of people around a changing physical site.",
+        "The challenge is that the site changes faster than the office can fully see. Teams walk floors, take photos, update logs, attend meetings, and interpret reports, but the picture is often incomplete. By the time a problem is visible in the schedule or cost report, it may already be expensive.",
+        "OpenSpace attacks that problem by making reality easier to capture and revisit. A jobsite walkthrough becomes a spatially organized visual record. A manager can look back at a wall before it was closed. A team can compare floors. An owner can remotely understand progress. A dispute can be reviewed with evidence rather than memory.",
+        "That may sound mundane, but it is foundational. Physical AI needs a clean representation of the physical world before it can produce good decisions. In construction, OpenSpace's representation starts with what the site actually looked like on a given day.",
+      ],
+    },
+    {
+      heading: "The Product Stack",
+      paragraphs: [
+        "OpenSpace's product stack maps closely to the construction workflow. Capture creates a visual record of the site. Field brings site observations and field workflows closer to the visual record. Air extends capture into aerial and broader site contexts. BIM+ connects field reality to model context. Track focuses on automated progress tracking.",
+        "The strategic point is that each product turns visual documentation into a more operational data layer. Raw images are useful, but the deeper value comes when those images are mapped, compared, tagged, searched, quantified, and connected to project systems.",
+        "OpenSpace also integrates with common construction software ecosystems. That matters because construction teams do not want another isolated archive. The visual record becomes more valuable when it connects to issue tracking, project management, BIM workflows, and field coordination.",
+        "The company is therefore not only a camera workflow. It is a translation layer between the physical jobsite and the digital project stack.",
+      ],
+      tables: [
+        {
+          title: "OpenSpace Product Layers",
+          columns: ["Layer", "What It Does", "Why It Matters"],
+          rows: [
+            [
+              "Capture",
+              "Creates a time-stamped, spatially organized visual record of the jobsite.",
+              "Gives teams a searchable memory of field conditions and construction progress.",
+            ],
+            [
+              "Field",
+              "Connects field workflows, notes, observations, and mobile project context to visual capture.",
+              "Makes documentation useful at the point of work rather than only after meetings.",
+            ],
+            [
+              "Air",
+              "Adds aerial and broader site capture capabilities.",
+              "Helps teams understand large exterior sites, logistics, laydown areas, and site-wide progress.",
+            ],
+            [
+              "BIM+",
+              "Links reality capture with model context and design comparison.",
+              "Helps teams connect what was planned to what is visible in the field.",
+            ],
+            [
+              "Track",
+              "Supports progress tracking and comparison of installed work against project expectations.",
+              "Moves OpenSpace from documentation toward measurable construction intelligence.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Making Jobsites Searchable",
+      paragraphs: [
+        "The first major value of OpenSpace is memory. Construction projects generate a massive amount of information, but much of it is fragmented across photos, phone messages, reports, drawings, meeting notes, and personal recollection.",
+        "A searchable visual record changes that. It lets teams ask what a location looked like last week, what was behind a wall before close-up, whether equipment was installed, how a trade sequenced its work, or when a condition first appeared.",
+        "That matters for coordination, claims, quality, and owner trust. A project team can move from argument to evidence. A remote stakeholder can review progress without traveling. A superintendent can inspect conditions across multiple floors. A trade partner can understand a blocker without waiting for a site walk.",
+        "The AI opportunity begins with this searchability. Once the site is captured and organized, software can help classify, compare, measure, and flag changes that would otherwise require manual review.",
+      ],
+    },
+    {
+      heading: "Progress Tracking Becomes a Data Product",
+      paragraphs: [
+        "Progress tracking is one of the most valuable ways OpenSpace can move beyond documentation. Construction schedules depend on knowing what has actually been installed, not only what should have been installed.",
+        "Manual progress tracking is difficult because construction work is distributed, layered, and constantly changing. A floor may be partially complete. A trade may finish one zone but block another. A wall may look complete while hidden work remains unresolved. A schedule update may depend on subjective interpretation.",
+        "OpenSpace Track points toward a more structured version of field progress. The visual record can be compared across time and tied to project context, helping teams identify completed work, delayed areas, and exceptions.",
+        "The business value is not a prettier dashboard. It is earlier detection. If a team sees progress drift before the cost report catches it, the project has more time to respond.",
+      ],
+      tables: [
+        {
+          title: "Why Progress Tracking Matters",
+          columns: ["Problem", "OpenSpace Value"],
+          rows: [
+            [
+              "Delayed visibility",
+              "Visual capture gives teams a more current view of installed work and jobsite conditions.",
+            ],
+            [
+              "Schedule drift",
+              "Progress comparison can reveal where field reality is falling behind the plan.",
+            ],
+            [
+              "Trade coordination",
+              "Teams can see blockers, sequencing issues, and location-specific dependencies.",
+            ],
+            [
+              "Payment and claims",
+              "A visual record can support conversations about completed work, delays, and responsibility.",
+            ],
+            [
+              "Owner oversight",
+              "Owners can monitor project reality without relying only on periodic reports or site visits.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "BIM Meets Reality",
+      paragraphs: [
+        "Building Information Modeling created a richer digital representation of what should be built. OpenSpace's relevance is in connecting that model world to the messy, changing jobsite.",
+        "The model alone does not guarantee reality. A BIM coordination meeting can be excellent while field installation still diverges. Materials can arrive late. Trades can adjust sequencing. Conditions can force changes. Work can be hidden before it is verified.",
+        "BIM+ and reality capture help close that gap. When field imagery, plans, and model context connect, teams can review whether the jobsite matches the intended design, where deviations appear, and what needs attention before it becomes expensive.",
+        "This is one of the cleanest physical AI patterns: the digital twin becomes valuable only when it is updated by reality. OpenSpace's capture layer helps keep the construction model grounded in the field.",
+      ],
+    },
+    {
+      heading: "Owners, General Contractors, and Trades",
+      paragraphs: [
+        "OpenSpace has multiple buyer personas because construction has multiple centers of pain. General contractors care about schedule, coordination, quality, safety, documentation, and trade accountability. Owners care about visibility, risk, cost, asset handover, and confidence that the work matches expectations. Trades care about documenting completed work, resolving blockers, and reducing disputes.",
+        "That multi-stakeholder position is strategically useful. If OpenSpace becomes the shared visual source of truth, it can sit across the owner-GC-trade relationship instead of serving only one narrow user.",
+        "The risk is that each stakeholder values the platform differently. A superintendent may want fast capture and practical issue resolution. An owner may want portfolio visibility. A trade may want evidence of completed scope. An insurer may want risk documentation. The product has to be simple enough for the field and valuable enough for executives.",
+        "The strongest version of OpenSpace is therefore not a generic documentation repository. It is a collaboration layer where each stakeholder sees the same physical reality from a different business lens.",
+      ],
+      tables: [
+        {
+          title: "Stakeholder Value Map",
+          columns: ["Stakeholder", "What They Need", "OpenSpace Angle"],
+          rows: [
+            [
+              "General contractors",
+              "Progress visibility, coordination, documentation, QA/QC, schedule control, and dispute reduction.",
+              "Capture and AI help compare field reality against project expectations.",
+            ],
+            [
+              "Owners",
+              "Confidence in delivery, remote visibility, risk reduction, and better records for handover.",
+              "Searchable site history gives owners a more direct view of project status.",
+            ],
+            [
+              "Trades",
+              "Clear scope documentation, blocker visibility, and evidence of completed work.",
+              "Visual records can reduce ambiguity around who did what and when.",
+            ],
+            [
+              "Insurers and risk teams",
+              "Better documentation of incidents, site conditions, and construction quality.",
+              "Time-stamped visual data can support claims, underwriting, and risk review.",
+            ],
+            [
+              "Facilities and operations",
+              "Reliable records of what was built, where systems are located, and how the asset changed.",
+              "Reality capture can improve turnover from construction into operations.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Why Construction Is a Physical AI Market",
+      paragraphs: [
+        "Construction is not usually framed as physical AI because the conversation tends to jump toward humanoids, automated equipment, and robotic layout systems. Those may matter, but the first layer is simpler: make the jobsite machine-readable.",
+        "A construction site is a dense, changing physical system. It includes temporary structures, permanent work, people, tools, materials, equipment, weather exposure, logistics zones, safety hazards, and a constantly shifting sequence of trade work.",
+        "If that environment is not legible, automation is brittle. A machine cannot reason well about a site if the site is not represented accurately. A schedule model cannot predict risk if it does not see the field. A procurement plan cannot adapt if installed reality is invisible. A quality workflow cannot improve if defects are discovered too late.",
+        "OpenSpace's significance is that it makes site reality available to software. Once that exists, the path toward AI-assisted planning, quality review, progress prediction, claims analysis, and eventually more automated field systems becomes more practical.",
+      ],
+    },
+    {
+      heading: "The Data Moat",
+      paragraphs: [
+        "OpenSpace's potential moat is the accumulated visual history of construction execution. The company says its platform has captured 69B square feet across 131 countries and more than 100K projects. Those scale markers matter because construction AI needs field data, not just drawings.",
+        "Every captured project can become a record of how work actually unfolded: sequencing, delays, installed systems, rework patterns, coordination failures, safety context, and final conditions. That is not public internet data. It is private field reality.",
+        "The stronger the dataset becomes, the more OpenSpace can improve models for progress recognition, visual search, issue detection, work comparison, and risk patterns. But the moat is not automatic. Data has to be organized, permissioned, labeled, connected to project context, and useful enough that customers keep relying on it.",
+        "The best version of OpenSpace is a data flywheel: capture makes the site searchable, search creates workflow usage, workflow usage improves context, and better context improves AI-assisted construction intelligence.",
+      ],
+    },
+    {
+      heading: "Business Model",
+      paragraphs: [
+        "OpenSpace's business model can scale through project subscriptions, enterprise accounts, product modules, owner and contractor deployments, trade workflows, integrations, and expansion across portfolios. Construction projects are temporary, but customer relationships can become durable if the platform standardizes how teams document and manage progress.",
+        "The attractive land-and-expand path starts with capture on one project, expands into Track, BIM+, Field, and Air, then becomes a company-wide standard for documentation, progress tracking, QA/QC, and owner reporting.",
+        "The challenge is that construction software is competitive and adoption can be uneven. Field teams have limited patience for tools that slow them down. Executives want ROI. Owners want visibility. Trades want fewer disputes. OpenSpace has to create value at all of those levels without becoming another administrative burden.",
+        "If OpenSpace becomes the visual intelligence layer that teams open every week, the business can move beyond capture into higher-value workflow and analytics. If usage remains episodic, it risks being viewed as documentation insurance rather than operating intelligence.",
+      ],
+      tables: [
+        {
+          title: "Potential Revenue Layers",
+          columns: ["Layer", "Revenue Logic", "Strategic Value"],
+          rows: [
+            [
+              "Reality capture",
+              "Projects use OpenSpace to document jobsite conditions and create a visual record.",
+              "Creates the initial data asset and makes the site searchable.",
+            ],
+            [
+              "Progress tracking",
+              "Teams use AI-assisted comparison to understand installed work and schedule drift.",
+              "Moves OpenSpace closer to project controls and decision-making.",
+            ],
+            [
+              "BIM and model workflows",
+              "Customers connect field reality to design intent and coordination models.",
+              "Strengthens the bridge between digital plans and physical construction.",
+            ],
+            [
+              "Enterprise deployment",
+              "Owners, GCs, and trades standardize OpenSpace across multiple projects or portfolios.",
+              "Creates account expansion and recurring platform value.",
+            ],
+            [
+              "Risk and insurance use cases",
+              "Visual records support claims, documentation, safety review, and risk management.",
+              "Extends OpenSpace beyond construction operations into financial and legal workflows.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Competitive Landscape",
+      paragraphs: [
+        "OpenSpace competes in a crowded construction technology environment. Procore and Autodesk own major workflow surfaces. Reality-capture companies compete on site documentation and capture quality. Drone platforms compete on aerial visibility. Scheduling and project-controls tools compete for progress data. BIM coordination tools compete for model context. Some large contractors also build internal processes around photos, drones, and field reporting.",
+        "OpenSpace's advantage is focus. It is not trying to own every construction workflow. It is trying to make site reality easy to capture, search, compare, and operationalize. That position can become highly valuable if visual ground truth becomes a core input to the rest of the construction stack.",
+        "The company also benefits from being relatively hardware-light. Unlike a robotics company that needs to sell a machine into every site, OpenSpace can ride cameras, mobile devices, 360 capture workflows, drones, integrations, and cloud software. That can make deployment easier across many projects.",
+        "The risk is that visual capture becomes commoditized. If every construction platform adds acceptable reality capture and AI search, OpenSpace has to prove that its capture quality, project context, progress intelligence, field usability, and integrations are materially better.",
+      ],
+      tables: [
+        {
+          title: "Competitive Pressure Map",
+          columns: ["Competitor Type", "Why It Competes", "OpenSpace Response"],
+          rows: [
+            [
+              "Construction platforms",
+              "Large workflow platforms already own project management, documents, RFIs, and field coordination.",
+              "Become the visual ground-truth layer that integrates into those workflows.",
+            ],
+            [
+              "Reality-capture tools",
+              "Other companies can document sites with photos, 360 capture, scans, or walkthroughs.",
+              "Differentiate through ease of capture, AI search, progress tracking, BIM context, and workflow use.",
+            ],
+            [
+              "Drone platforms",
+              "Aerial capture can provide broader site visibility.",
+              "Use Air and integrated visual intelligence to combine aerial and interior project context.",
+            ],
+            [
+              "BIM and model tools",
+              "Design and coordination tools already hold the planned version of the project.",
+              "Connect planned models to captured reality and field progress.",
+            ],
+            [
+              "Manual field reporting",
+              "Teams already take photos, notes, and walkthroughs.",
+              "Automate organization, mapping, search, and comparison so field documentation becomes less painful.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Investor Case",
+      paragraphs: [
+        "The bull case for OpenSpace is that construction needs a persistent visual intelligence layer. If the platform becomes the default way project teams see, search, and compare reality, it can sit near the center of construction decision-making.",
+        "The second bull case is data. Construction sites produce valuable physical-world data that is hard to collect consistently. OpenSpace's scale gives it exposure to many project types, geographies, building systems, and execution patterns.",
+        "The third bull case is workflow expansion. Capture is the entry point, but Track, BIM+, Field, Air, integrations, owner use cases, and insurance workflows can move the company into higher-value software categories.",
+        "The bear case is that construction remains fragmented and difficult to standardize. Projects are temporary. Field adoption can be uneven. Data permissions are sensitive. Customers may use the platform for documentation but not deeper intelligence. Larger construction software platforms may bundle similar capabilities. OpenSpace has to prove that visual ground truth is not just useful, but central.",
+      ],
+      tables: [
+        {
+          title: "OpenSpace: Bull Case vs. Bear Case",
+          columns: ["View", "Argument", "Signal to Watch"],
+          rows: [
+            [
+              "Bull case",
+              "Reality capture becomes a default construction workflow.",
+              "Owners, GCs, and trades standardize visual capture across projects and portfolios.",
+            ],
+            [
+              "Bull case",
+              "OpenSpace moves from documentation to progress intelligence.",
+              "Track, BIM+, Field, and Air become daily project-management inputs rather than optional add-ons.",
+            ],
+            [
+              "Bull case",
+              "The visual dataset compounds into better AI.",
+              "AI search, comparison, issue detection, and progress recognition improve with project context.",
+            ],
+            [
+              "Bear case",
+              "Visual capture becomes commoditized.",
+              "Larger construction platforms or low-cost tools provide good-enough documentation.",
+            ],
+            [
+              "Execution risk",
+              "Field adoption and workflow integration are hard.",
+              "Watch active usage, expansion across accounts, product-module adoption, and customer ROI evidence.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What to Watch Next",
+      paragraphs: [
+        "First, watch whether OpenSpace becomes a daily operating tool or remains a documentation archive. The more teams use it to make decisions during construction, the more valuable the platform becomes.",
+        "Second, watch Track adoption. Progress tracking is where visual capture starts to influence project controls, scheduling, and financial decisions.",
+        "Third, watch BIM+ and integration depth. The more OpenSpace connects captured reality to model and project-management workflows, the harder it becomes to replace.",
+        "Fourth, watch owner adoption. Owners may become especially important because they care about visibility, risk, documentation, portfolio consistency, and handover records across multiple projects.",
+        "Fifth, watch AI product evolution. OpenSpace's long-term value depends on whether its visual dataset becomes a useful intelligence layer for QA/QC, claims, progress forecasting, rework detection, and project risk.",
+      ],
+    },
+    {
+      heading: "The Bottom Line",
+      paragraphs: [
+        "OpenSpace matters because construction cannot become truly intelligent until the jobsite becomes legible. Plans are not enough. Schedules are not enough. Status meetings are not enough. The physical site has to become searchable, comparable, and measurable.",
+        "The company represents a quieter form of physical AI: not a robot walking the site, but a visual intelligence layer that helps humans and software understand what is actually happening in the built world.",
+        "If OpenSpace becomes the shared memory of construction projects, it can become more than a reality-capture vendor. It can become part of how owners, contractors, trades, insurers, and operators turn field reality into decisions.",
+      ],
+    },
+    {
+      heading: "Sourcing & Verification",
+      paragraphs: [
+        "This guide was compiled using OpenSpace's official site, product materials for Capture, Field, Air, BIM+, and Track, solution pages for general contractors, owners, and trades, use-case materials for documentation, coordination, QA/QC, and insurance costs, and Black Scarab analysis of construction technology, reality capture, visual intelligence, BIM, project controls, and physical AI deployment economics. OpenSpace is a private company, so claims about revenue, margins, customer concentration, and deployment economics should be treated as company-reported information and Black Scarab analysis rather than audited public financials.",
+      ],
+    },
+  ],
+  sources: [
+    "OpenSpace official site and visual intelligence positioning",
+    "OpenSpace Capture product materials",
+    "OpenSpace Field product materials",
+    "OpenSpace Air product materials",
+    "OpenSpace BIM+ product materials",
+    "OpenSpace Track product materials",
+    "OpenSpace solutions for general contractors, owners, and trades",
+    "OpenSpace use-case materials for documentation, coordination, QA/QC, and insurance costs",
+    "Black Scarab analysis of construction reality capture, visual intelligence, BIM, project controls, and physical AI deployment economics",
+  ],
+  sourceLinks: [
+    {
+      label: "OpenSpace official site",
+      url: "https://www.openspace.ai/",
+    },
+    {
+      label: "OpenSpace Capture",
+      url: "https://www.openspace.ai/products/capture/",
+    },
+    {
+      label: "OpenSpace Field",
+      url: "https://www.openspace.ai/products/field/",
+    },
+    {
+      label: "OpenSpace Air",
+      url: "https://www.openspace.ai/products/air/",
+    },
+    {
+      label: "OpenSpace BIM+",
+      url: "https://www.openspace.ai/products/bimplus/",
+    },
+    {
+      label: "OpenSpace Track",
+      url: "https://www.openspace.ai/products/progress-tracking/",
+    },
+    {
+      label: "OpenSpace for general contractors",
+      url: "https://www.openspace.ai/solutions/general-contractors/",
+    },
+    {
+      label: "OpenSpace for owners",
+      url: "https://www.openspace.ai/solutions/owners/",
+    },
+  ],
+});
+
 const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
   slug: "top-15-physical-ai-infrastructure-companies",
   title: "Top 15 Physical AI Infrastructure Companies to Watch in 2026",
@@ -11007,6 +11445,7 @@ export const caseStudies: CaseStudyArticle[] = [
   hailoDeepDive(),
   ousterDeepDive(),
   geckoRoboticsDeepDive(),
+  openspaceDeepDive(),
   physicalAiInfrastructureCompaniesGuide(),
   intuitiveDaVinci5DeepDive(),
   amazonProteusDeepDive(),
