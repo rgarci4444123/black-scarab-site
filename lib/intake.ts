@@ -1,45 +1,33 @@
 export type IntakeForm = {
-  industry: string;
-  companySize: string;
+  inquiryType: string;
+  companyName: string;
+  website: string;
   country: string;
-  locations: string;
-  objectives: string[];
-  primaryUseCase: string;
-  environment: string;
-  currentInfrastructure: string[];
-  internetReliability: string;
-  dataAvailability: string;
-  aiExperience: string;
+  industry: string;
+  engagementInterests: string[];
+  opportunitySummary: string;
   currentStage: string;
-  deploymentSetup: string;
-  budget: string;
   timeline: string;
   additionalContext: string;
   fullName: string;
-  companyName: string;
+  jobTitle: string;
   email: string;
   phone: string;
 };
 
 export const initialIntakeForm: IntakeForm = {
-  industry: "",
-  companySize: "",
+  inquiryType: "",
+  companyName: "",
+  website: "",
   country: "",
-  locations: "",
-  objectives: [],
-  primaryUseCase: "",
-  environment: "",
-  currentInfrastructure: [],
-  internetReliability: "",
-  dataAvailability: "",
-  aiExperience: "",
+  industry: "",
+  engagementInterests: [],
+  opportunitySummary: "",
   currentStage: "",
-  deploymentSetup: "",
-  budget: "",
   timeline: "",
   additionalContext: "",
   fullName: "",
-  companyName: "",
+  jobTitle: "",
   email: "",
   phone: "",
 };
@@ -49,37 +37,42 @@ export function isValidEmail(email: string) {
 }
 
 export function validateIntakeForm(form: IntakeForm) {
-  if (!form.industry || !form.country.trim()) {
-    return "Business context is incomplete.";
-  }
-
   if (
-    form.objectives.length === 0 ||
-    !form.primaryUseCase.trim() ||
-    !form.environment
-  ) {
-    return "Operational objective is incomplete.";
-  }
-
-  if (
-    form.currentInfrastructure.length === 0 ||
-    !form.internetReliability ||
-    !form.dataAvailability
-  ) {
-    return "Current infrastructure details are incomplete.";
-  }
-
-  if (!form.aiExperience || !form.currentStage || !form.deploymentSetup) {
-    return "AI readiness details are incomplete.";
-  }
-
-  if (!form.budget || !form.timeline) {
-    return "Budget and timeline are incomplete.";
-  }
-
-  if (
-    !form.fullName.trim() ||
+    !form ||
+    typeof form.inquiryType !== "string" ||
+    typeof form.companyName !== "string" ||
+    typeof form.website !== "string" ||
+    typeof form.country !== "string" ||
+    typeof form.industry !== "string" ||
+    !form.inquiryType.trim() ||
     !form.companyName.trim() ||
+    !form.country.trim() ||
+    !form.industry.trim()
+  ) {
+    return "Organization details are incomplete.";
+  }
+
+  if (
+    !Array.isArray(form.engagementInterests) ||
+    form.engagementInterests.length === 0 ||
+    !form.engagementInterests.every((item) => typeof item === "string") ||
+    typeof form.opportunitySummary !== "string" ||
+    !form.opportunitySummary.trim() ||
+    typeof form.currentStage !== "string" ||
+    !form.currentStage.trim() ||
+    typeof form.timeline !== "string" ||
+    !form.timeline.trim() ||
+    typeof form.additionalContext !== "string"
+  ) {
+    return "Opportunity details are incomplete.";
+  }
+
+  if (
+    typeof form.fullName !== "string" ||
+    typeof form.jobTitle !== "string" ||
+    typeof form.email !== "string" ||
+    typeof form.phone !== "string" ||
+    !form.fullName.trim() ||
     !form.email.trim() ||
     !isValidEmail(form.email.trim())
   ) {
@@ -89,28 +82,36 @@ export function validateIntakeForm(form: IntakeForm) {
   return null;
 }
 
+function optionalLine(label: string, value: string) {
+  const normalized = value.trim();
+  return normalized ? `${label}: ${normalized}` : null;
+}
+
 export function airtableFieldsFromIntake(form: IntakeForm) {
+  const context = [
+    `Inquiry type: ${form.inquiryType.trim()}`,
+    optionalLine("Organization website", form.website),
+    optionalLine("Contact role", form.jobTitle),
+    optionalLine("Additional context", form.additionalContext),
+  ]
+    .filter((line): line is string => Boolean(line))
+    .join("\n");
+
+  // Keep the established Airtable column names so the new inquiry flow can use
+  // the existing base without a schema migration. Legacy deployment-only fields
+  // are intentionally omitted instead of filling them with misleading values.
   return {
     "Submitted At": new Date().toISOString(),
-    Industry: form.industry,
-    "Company Size": form.companySize,
-    "Country of Operation": form.country,
-    "Number of Locations / Sites": form.locations,
-    "Operational Objectives": form.objectives.join(", "),
-    "Primary Use Case": form.primaryUseCase,
-    "Operating Environment": form.environment,
-    "Current Infrastructure": form.currentInfrastructure.join(", "),
-    "Internet Reliability": form.internetReliability,
-    "Data Availability": form.dataAvailability,
-    "AI Experience": form.aiExperience,
+    Industry: form.industry.trim(),
+    "Country of Operation": form.country.trim(),
+    "Operational Objectives": form.engagementInterests.join(", "),
+    "Primary Use Case": form.opportunitySummary.trim(),
     "Current Stage": form.currentStage,
-    "Preferred Deployment Setup": form.deploymentSetup,
-    "Estimated Budget": form.budget,
     Timeline: form.timeline,
-    "Additional Context": form.additionalContext,
-    "Full Name": form.fullName,
-    "Company Name": form.companyName,
-    Email: form.email,
-    "Phone / WhatsApp": form.phone,
+    "Additional Context": context,
+    "Full Name": form.fullName.trim(),
+    "Company Name": form.companyName.trim(),
+    Email: form.email.trim(),
+    "Phone / WhatsApp": form.phone.trim(),
   };
 }

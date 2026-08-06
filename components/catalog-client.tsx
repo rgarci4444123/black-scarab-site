@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { catalogRoadmapItems } from "@/lib/catalog-roadmap";
 import {
   products,
   productCategoryGuides,
@@ -11,46 +10,6 @@ import {
   type ProductCategory,
   type ProductIndustry,
 } from "@/lib/products";
-
-const normalizeCatalogName = (value: string) =>
-  value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-
-const equivalentNameWords = new Set(["generation", "nvl", "pcie"]);
-
-const simplifyCatalogName = (value: string) =>
-  normalizeCatalogName(value)
-    .split(" ")
-    .filter((word) => !equivalentNameWords.has(word) && !/^\d+gb$/.test(word))
-    .join(" ");
-
-const containsComparableName = (name: string, candidate: string) =>
-  candidate.length >= 8 && name.includes(candidate);
-
-const liveProductNames = products.map((product) =>
-  normalizeCatalogName(product.name),
-);
-
-const isRoadmapTargetLive = (targetName: string) => {
-  const target = normalizeCatalogName(targetName);
-  const simplifiedTarget = simplifyCatalogName(targetName);
-
-  return liveProductNames.some((productName) => {
-    const simplifiedProduct = simplifyCatalogName(productName);
-
-    return (
-      target === productName ||
-      simplifiedTarget === simplifiedProduct ||
-      containsComparableName(productName, target) ||
-      containsComparableName(target, productName) ||
-      containsComparableName(simplifiedProduct, simplifiedTarget) ||
-      containsComparableName(simplifiedTarget, simplifiedProduct)
-    );
-  });
-};
-
-const roadmapTargets = catalogRoadmapItems.filter(
-  (item) => !isRoadmapTargetLive(item.name),
-);
 
 export default function CatalogClient() {
   const [activeCategory, setActiveCategory] = useState<ProductCategory | "All">(
@@ -82,38 +41,6 @@ export default function CatalogClient() {
       ) as Record<ProductCategory, number>,
     );
   }, []);
-  const roadmapCountByCategory = useMemo(() => {
-    return productCategories.reduce<Record<ProductCategory, number>>(
-      (counts, category) => {
-        counts[category] = roadmapTargets.filter(
-          (item) => item.category === category,
-        ).length;
-        return counts;
-      },
-      Object.fromEntries(
-        productCategories.map((category) => [category, 0]),
-      ) as Record<ProductCategory, number>,
-    );
-  }, []);
-  const visibleRoadmapItems = useMemo(() => {
-    return roadmapTargets.filter((item) => {
-      const categoryMatch =
-        activeCategory === "All" || item.category === activeCategory;
-      const industryMatch =
-        activeIndustry === "All" || item.buyerFit.includes(activeIndustry);
-
-      return categoryMatch && industryMatch;
-    });
-  }, [activeCategory, activeIndustry]);
-  const roadmapItemsByCategory = useMemo(() => {
-    return productCategories
-      .map((category) => ({
-        category,
-        items: visibleRoadmapItems.filter((item) => item.category === category),
-      }))
-      .filter((group) => group.items.length > 0);
-  }, [visibleRoadmapItems]);
-
   const pillClass = (active: boolean) =>
     active
       ? "rounded-full border border-[#111827] bg-[#111827] px-4 py-2 text-sm font-medium text-white"
@@ -126,16 +53,16 @@ export default function CatalogClient() {
           <div className="flex flex-col gap-4 text-center md:flex-row md:items-end md:justify-between md:text-left">
             <div>
               <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-                Deployment Map
+                Technology Layers
               </p>
               <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-                Choose the right layer of the stack
+                Navigate the physical AI stack
               </h2>
             </div>
             <p className="max-w-2xl text-sm leading-6 text-[#6b7280]">
-              Browse products by the role they play in a real deployment:
-              perception, compute, connectivity, model runtime, robotics,
-              power, storage, and complete solution kits.
+              Browse researched technologies by the role they may play in a
+              physical system: perception, compute, connectivity, model
+              runtime, robotics, power, storage, and complete platforms.
             </p>
           </div>
 
@@ -149,10 +76,7 @@ export default function CatalogClient() {
               >
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="rounded-full border border-[#e3ddd1] px-3 py-1 text-xs font-medium text-[#111827]">
-                    {productCountByCategory[guide.category]} live pages
-                  </span>
-                  <span className="rounded-full bg-[#f4f1ea] px-3 py-1 text-xs font-medium text-[#7c8b6b]">
-                    {roadmapCountByCategory[guide.category]} targets
+                    {productCountByCategory[guide.category]} profiles
                   </span>
                 </div>
                 <h3 className="mt-4 text-xl font-semibold tracking-tight">
@@ -164,9 +88,6 @@ export default function CatalogClient() {
                 <p className="mt-4 text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">
                   {guide.examples.join(" · ")}
                 </p>
-                <p className="mt-3 text-xs leading-5 text-[#6b7280]">
-                  {guide.commercePath}
-                </p>
               </button>
             ))}
           </div>
@@ -175,14 +96,14 @@ export default function CatalogClient() {
         <div className="grid gap-8 lg:grid-cols-3">
           <div>
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-              Buyer Context
+              Research Filters
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-              Refine by deployment need
+              Refine by operating context
             </h2>
             <p className="mt-4 text-sm leading-6 text-[#6b7280]">
-              Category selection now happens in the architecture map above.
-              This keeps the catalog from repeating the same filter twice.
+              Use the layer and industry filters to narrow the library. Final
+              suitability still requires provider-led technical diligence.
             </p>
           </div>
 
@@ -236,87 +157,20 @@ export default function CatalogClient() {
         </div>
       </section>
 
-      <section className="border-t border-[#efeae1] bg-[#faf8f3] px-6 py-10 md:px-10">
-        <div className="flex flex-col gap-4 text-center md:flex-row md:items-end md:justify-between md:text-left">
-          <div>
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-              Buildout Map
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-              {visibleRoadmapItems.length} future targets matched
-            </h2>
-          </div>
-          <p className="max-w-2xl text-sm leading-6 text-[#6b7280]">
-            This is the working expansion list: components, models, software,
-            robots, drones, and solution kits that still need full product
-            pages, images, links, pricing, and affiliate paths.
-          </p>
-        </div>
-
-        <div className="mt-10 grid gap-5 lg:grid-cols-2">
-          {roadmapItemsByCategory.map((group) => (
-            <div
-              key={group.category}
-              className="rounded-[24px] border border-[#e8e4dc] bg-white p-5 shadow-[0_10px_30px_rgba(15,23,42,0.04)]"
-            >
-              <div className="flex flex-wrap items-center justify-between gap-3">
-                <h3 className="text-xl font-semibold tracking-tight">
-                  {group.category}
-                </h3>
-                <span className="rounded-full bg-[#f4f1ea] px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">
-                  {group.items.length} targets
-                </span>
-              </div>
-              <div className="mt-5 space-y-4">
-                {group.items.map((item) => (
-                  <div
-                    key={`${item.category}-${item.name}`}
-                    className="rounded-[18px] border border-[#eee8dd] bg-[#fffdfa] p-4"
-                  >
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-[#111827]">
-                        {item.componentType}
-                      </span>
-                      {item.buyerFit.slice(0, 2).map((fit) => (
-                        <span
-                          key={fit}
-                          className="rounded-full border border-[#e3ddd1] px-3 py-1 text-xs font-medium text-[#6b7280]"
-                        >
-                          {fit}
-                        </span>
-                      ))}
-                    </div>
-                    <h4 className="mt-3 text-base font-semibold tracking-tight">
-                      {item.name}
-                    </h4>
-                    <p className="mt-2 text-sm leading-6 text-[#6b7280]">
-                      {item.role}
-                    </p>
-                    <p className="mt-2 text-xs leading-5 text-[#7c8b6b]">
-                      {item.note}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <section className="border-t border-[#efeae1] px-6 py-10 md:px-10">
         <div className="flex flex-col gap-4 text-center md:flex-row md:items-end md:justify-between md:text-left">
           <div>
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-              Live Product Library
+              Researched Technology Library
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-              {filteredProducts.length} detailed product pages matched
+              {filteredProducts.length} technology profiles matched
             </h2>
           </div>
           <p className="max-w-2xl text-sm leading-6 text-[#6b7280]">
-            These are the finished product records with images, deeper notes,
-            and outbound paths. The buildout map above is the backlog for what
-            should become this library over time.
+            Each profile consolidates public specifications, pricing context,
+            potential applications, and links to the relevant vendor or listed
+            source for further diligence.
           </p>
         </div>
 

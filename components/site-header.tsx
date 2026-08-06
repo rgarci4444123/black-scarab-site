@@ -13,6 +13,7 @@ type NavLink = {
 type SiteHeaderProps = {
   homeHref?: string;
   navLinks?: NavLink[];
+  showIndustries?: boolean;
   ctaLabel: string;
   ctaHref: string;
 };
@@ -20,6 +21,7 @@ type SiteHeaderProps = {
 export default function SiteHeader({
   homeHref = "/",
   navLinks = [],
+  showIndustries = true,
   ctaLabel,
   ctaHref,
 }: SiteHeaderProps) {
@@ -47,7 +49,7 @@ export default function SiteHeader({
           </Link>
 
           <nav className="hidden items-center gap-7 text-sm text-[#6b7280] md:flex">
-            <div className="group relative">
+            {showIndustries ? <div className="group relative">
               <button
                 type="button"
                 className="inline-flex items-center gap-1 align-middle transition hover:text-[#111827]"
@@ -82,7 +84,7 @@ export default function SiteHeader({
                   ))}
                 </div>
               </div>
-            </div>
+            </div> : null}
 
             {navLinks.map((item) =>
               item.isPage ? (
@@ -119,7 +121,7 @@ export default function SiteHeader({
 
         {mobileOpen ? (
           <div className="mt-4 rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-4 shadow-[0_12px_32px_rgba(15,23,42,0.05)] md:hidden">
-            <div className="space-y-2">
+            {showIndustries ? <div className="space-y-2">
               <p className="px-2 text-xs font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
                 Industries
               </p>
@@ -133,10 +135,10 @@ export default function SiteHeader({
                   {industry.label}
                 </Link>
               ))}
-            </div>
+            </div> : null}
 
             {navLinks.length > 0 ? (
-              <div className="mt-4 border-t border-[#efeae1] pt-4">
+              <div className={showIndustries ? "mt-4 border-t border-[#efeae1] pt-4" : ""}>
                 <div className="space-y-2">
                   {navLinks.map((item) =>
                     item.isPage ? (

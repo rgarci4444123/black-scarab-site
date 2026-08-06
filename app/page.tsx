@@ -4,33 +4,35 @@ import HomePage from "@/components/home-page";
 const baseUrl = "https://www.blackscarab.ai";
 
 export const metadata: Metadata = {
-  title: "Black Scarab",
+  title: "Physical AI Market Development for Mexico",
   description:
-    "Black Scarab designs AI infrastructure and edge intelligence systems for agriculture, manufacturing, logistics, healthcare, retail, and smart city operations.",
+    "Black Scarab helps physical AI companies understand the Mexican market, reach industrial stakeholders, and form qualified commercial opportunities.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     url: baseUrl,
-    title: "Black Scarab | AI Infrastructure for Industry",
+    title: "Black Scarab | Physical AI Market Development for Mexico",
     description:
-      "AI infrastructure and edge intelligence systems designed for real-world industrial deployment.",
+      "Market intelligence, stakeholder mapping, strategic introductions, and opportunity development for physical AI companies entering Mexico.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Black Scarab | AI Infrastructure for Industry",
+    title: "Black Scarab | Physical AI Market Development for Mexico",
     description:
-      "AI infrastructure and edge intelligence systems designed for real-world industrial deployment.",
+      "Connecting physical AI companies with qualified industrial opportunities in Mexico.",
   },
   keywords: [
-    "edge AI",
-    "AI infrastructure",
+    "physical AI Mexico",
+    "robotics market entry Mexico",
+    "industrial automation Mexico",
     "industrial AI",
-    "smart cities",
-    "agriculture AI",
-    "manufacturing AI",
-    "global deployment",
+    "robotics",
+    "autonomous systems",
+    "market development Latin America",
+    "strategic introductions Mexico",
+    "edge AI",
     "Black Scarab",
   ],
 };

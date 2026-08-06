@@ -67,8 +67,8 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const navLinks = [
-    { label: "Products", href: "/catalog", isPage: true },
+const navLinks = [
+  { label: "Technology", href: "/catalog", isPage: true },
     { label: "Insights", href: "/insights", isPage: true },
     { label: "About", href: "/about", isPage: true },
   ];
@@ -114,6 +114,7 @@ export default function AboutPage() {
         <SiteHeader
           homeHref="/"
           navLinks={navLinks}
+          showIndustries={false}
           ctaLabel="Discuss an Opportunity"
           ctaHref="/intake"
         />

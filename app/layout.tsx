@@ -11,6 +11,15 @@ const organizationSchema = {
   url: baseUrl,
   logo: `${baseUrl}/icon.png`,
   email: "info@blackscarab.ai",
+  description:
+    "A physical AI market-development firm connecting technology companies with industrial opportunities in Mexico.",
+  areaServed: ["Mexico", "Latin America"],
+  founder: {
+    "@type": "Person",
+    name: "Rodolfo Garcia Calderoni",
+    honorificSuffix: "CFA",
+    jobTitle: "Founder",
+  },
   sameAs: ["https://www.linkedin.com/company/black-scarab/"],
 };
 
@@ -43,18 +52,21 @@ export const metadata: Metadata = {
     default: "Black Scarab",
     template: "%s | Black Scarab",
   },
-  description: "AI infrastructure and edge intelligence for real-world industries",
+  description:
+    "Physical AI market development and strategic introductions for Mexico.",
   openGraph: {
     type: "website",
     siteName: "Black Scarab",
     url: baseUrl,
     title: "Black Scarab",
-    description: "AI infrastructure and edge intelligence for real-world industries",
+    description:
+      "Physical AI market development and strategic introductions for Mexico.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Black Scarab",
-    description: "AI infrastructure and edge intelligence for real-world industries",
+    description:
+      "Physical AI market development and strategic introductions for Mexico.",
   },
 };
 
@@ -72,7 +84,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify([organizationSchema, websiteSchema]),
+            __html: JSON.stringify([organizationSchema, websiteSchema]).replace(
+              /</g,
+              "\\u003c",
+            ),
           }}
         />
         {children}

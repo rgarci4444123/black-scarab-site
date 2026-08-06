@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${product.name} Catalog`,
+    title: `${product.name} Technology Research`,
     description: product.summary,
     alternates: {
       canonical: `/catalog/${product.slug}`,
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       type: "website",
       url: `${baseUrl}/catalog/${product.slug}`,
-      title: `${product.name} Catalog`,
+      title: `${product.name} | Black Scarab Technology Research`,
       description: product.summary,
       images: [
         {
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${product.name} Catalog`,
+      title: `${product.name} | Black Scarab Technology Research`,
       description: product.summary,
       images: [product.image],
     },
@@ -71,11 +71,12 @@ export default async function ProductPage({ params }: Props) {
         <SiteHeader
           homeHref="/"
           navLinks={[
-            { label: "Products", href: "/catalog", isPage: true },
+            { label: "Technology", href: "/catalog", isPage: true },
             { label: "Insights", href: "/insights", isPage: true },
             { label: "About", href: "/about", isPage: true },
           ]}
-          ctaLabel="Get Started"
+          showIndustries={false}
+          ctaLabel="Discuss an Opportunity"
           ctaHref="/intake"
         />
 
@@ -103,7 +104,7 @@ export default async function ProductPage({ params }: Props) {
                 </div>
                 <div className="rounded-[20px] border border-[#e8e4dc] bg-white px-5 py-4">
                   <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
-                    Price
+                    Pricing context
                   </p>
                   <p className="mt-2 text-base font-semibold tracking-tight">
                     {product.price}
@@ -132,13 +133,13 @@ export default async function ProductPage({ params }: Props) {
                   rel="noreferrer"
                   className="rounded-full border border-[#ddd7cc] px-6 py-3 text-sm font-medium text-[#111827] transition hover:bg-white"
                 >
-                  View product
+                  View official product
                 </a>
                 <Link
                   href="/intake"
                   className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
                 >
-                  Design My System
+                  Discuss a Relevant Use Case
                 </Link>
               </div>
             </div>
@@ -290,7 +291,7 @@ export default async function ProductPage({ params }: Props) {
             </div>
             <div className="rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
               <p className="text-sm font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
-                Price
+                Pricing Context
               </p>
               <p className="mt-4 text-xl font-semibold tracking-tight">
                 {product.price}
@@ -317,20 +318,23 @@ export default async function ProductPage({ params }: Props) {
 
           <div className="mt-8 rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
             <p className="text-sm font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
-              Link Strategy
+              Research Boundary
             </p>
             <p className="mt-4 text-sm leading-6 text-[#6b7280]">
-              This catalog starts with official product and distributor links.
-              Affiliate links can be added later without changing the page
-              design; once a product gets an affiliate URL, the main outbound
-              button can automatically use that tracked commercial link.
+              This page provides independent technology context and directs
+              readers to the vendor or listed source for current specifications,
+              availability, pricing, warranties, and support. Inclusion does not
+              imply that Black Scarab resells, certifies, installs, or endorses
+              the product for every operating environment.
             </p>
           </div>
         </section>
 
         <section className="border-t border-[#efeae1] px-6 py-6 text-center text-sm text-[#6b7280] md:px-10">
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <span>© 2026 Black Scarab. AI infrastructure for modern industry.</span>
+            <span>
+              © 2026 Black Scarab. Physical AI market development for Mexico.
+            </span>
             <span className="text-[#c9c1b5]">|</span>
             <span>Based in Miami, FL</span>
             <span className="text-[#c9c1b5]">|</span>
