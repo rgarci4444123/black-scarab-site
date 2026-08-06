@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: "Physical AI Technology Landscape",
   description:
     "Research the robotics, sensing, edge compute, connectivity, software, and infrastructure layers behind physical AI systems.",
+  robots: {
+    index: false,
+    follow: false,
+  },
   alternates: {
     canonical: "/catalog",
   },
@@ -35,7 +39,6 @@ export default function CatalogPage() {
         <SiteHeader
           homeHref="/"
           navLinks={[
-            { label: "Technology", href: "/catalog", isPage: true },
             { label: "Insights", href: "/insights", isPage: true },
             { label: "About", href: "/about", isPage: true },
           ]}

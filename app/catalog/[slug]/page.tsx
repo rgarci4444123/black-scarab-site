@@ -31,6 +31,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${product.name} Technology Research`,
     description: product.summary,
+    robots: {
+      index: false,
+      follow: false,
+    },
     alternates: {
       canonical: `/catalog/${product.slug}`,
     },
@@ -71,7 +75,6 @@ export default async function ProductPage({ params }: Props) {
         <SiteHeader
           homeHref="/"
           navLinks={[
-            { label: "Technology", href: "/catalog", isPage: true },
             { label: "Insights", href: "/insights", isPage: true },
             { label: "About", href: "/about", isPage: true },
           ]}

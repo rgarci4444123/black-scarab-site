@@ -4,7 +4,6 @@ import { insights } from "@/app/insights-data";
 import SiteHeader from "@/components/site-header";
 
 const navItems = [
-  { label: "Technology", href: "/catalog", isPage: true },
   { label: "Insights", href: "/insights", isPage: true },
   { label: "About", href: "/about", isPage: true },
 ];
@@ -284,44 +283,6 @@ export default function HomePage() {
                   </p>
                 </article>
               ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="px-6 py-14 md:px-10 md:py-20 lg:px-14">
-          <div className="mx-auto grid max-w-6xl gap-8 rounded-[30px] border border-[#20271f] bg-[#111810] p-7 text-white sm:p-10 lg:grid-cols-[1fr_0.82fr] lg:items-center lg:p-12">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#b8c7ab]">
-                Technology landscape
-              </p>
-              <h2 className="mt-5 text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">
-                Understand the stack behind physical AI.
-              </h2>
-              <p className="mt-5 max-w-2xl text-base leading-8 text-[#d1d8ce]">
-                Edge compute, perception, sensors, connectivity, robotics, and
-                software still matter. The Black Scarab technology library is a
-                research resource for understanding how those layers fit
-                together—not a claim that Black Scarab installs every product.
-              </p>
-              <Link
-                href="/catalog"
-                className="mt-8 inline-flex rounded-full bg-white px-6 py-3 text-sm font-medium text-[#111810] transition hover:bg-[#edf4e8]"
-              >
-                Explore Technology
-              </Link>
-            </div>
-
-            <div className="grid grid-cols-2 gap-3">
-              {["Robotics", "Perception", "Edge compute", "Sensors", "Connectivity", "Software"].map(
-                (layer) => (
-                  <div
-                    key={layer}
-                    className="rounded-2xl border border-white/12 bg-white/[0.05] px-4 py-5 text-sm font-medium text-[#e0e6dd]"
-                  >
-                    {layer}
-                  </div>
-                ),
-              )}
             </div>
           </div>
         </section>

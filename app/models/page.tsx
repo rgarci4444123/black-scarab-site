@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   title: "AI Model Landscape for Physical Systems",
   description:
     "Research open-source and commercial AI models by deployment style, model type, and potential fit within physical AI systems.",
+  robots: {
+    index: false,
+    follow: false,
+  },
   alternates: {
     canonical: "/models",
   },
@@ -34,7 +38,6 @@ export default function ModelsPage() {
         <SiteHeader
           homeHref="/"
           navLinks={[
-            { label: "Technology", href: "/catalog", isPage: true },
             { label: "Insights", href: "/insights", isPage: true },
             { label: "About", href: "/about", isPage: true },
           ]}

@@ -35,10 +35,10 @@ export default function InsightsPage() {
         <SiteHeader
           homeHref="/"
           navLinks={[
-            { label: "Products", href: "/catalog", isPage: true },
             { label: "Insights", href: "/insights", isPage: true },
             { label: "About", href: "/about", isPage: true },
           ]}
+          showIndustries={false}
           ctaLabel="Get Started"
           ctaHref="/intake"
         />

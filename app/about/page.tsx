@@ -68,7 +68,6 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
 const navLinks = [
-  { label: "Technology", href: "/catalog", isPage: true },
     { label: "Insights", href: "/insights", isPage: true },
     { label: "About", href: "/about", isPage: true },
   ];

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import {
   airtableFieldsFromIntake,
+  isLikelySpam,
   type IntakeForm,
   validateIntakeForm,
 } from "@/lib/intake";
@@ -15,6 +16,14 @@ export async function POST(request: Request) {
       { error: "Invalid request payload." },
       { status: 400 },
     );
+  }
+
+  if (
+    form &&
+    typeof form.companyFax === "string" &&
+    isLikelySpam(form)
+  ) {
+    return NextResponse.json({ ok: true });
   }
 
   const validationError = validateIntakeForm(form);
@@ -53,12 +62,11 @@ export async function POST(request: Request) {
 
   if (!response.ok) {
     const details = await response.text();
+    console.error("Airtable rejected an intake submission:", details);
 
     return NextResponse.json(
       {
-        error:
-          "Airtable rejected the submission. Double-check your table fields and environment variables.",
-        details,
+        error: "We couldn't send your message just yet. Please try again.",
       },
       { status: 502 },
     );

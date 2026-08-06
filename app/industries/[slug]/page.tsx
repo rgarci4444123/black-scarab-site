@@ -12,7 +12,6 @@ type Props = {
 const baseUrl = "https://www.blackscarab.ai";
 
 const navItems = [
-  { label: "Technology", href: "/catalog", isPage: true },
   { label: "Insights", href: "/insights", isPage: true },
   { label: "About", href: "/about", isPage: true },
 ];
