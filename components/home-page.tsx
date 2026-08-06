@@ -354,7 +354,7 @@ export default function HomePage() {
           <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[0.56fr_1.44fr] lg:items-center lg:gap-14">
             <div className="relative aspect-[4/5] max-w-sm overflow-hidden rounded-[26px] bg-[#171b17]">
               <Image
-                src="/rodolfo-garcia-founder.png"
+                src="/rodolfo-garcia-founder-portrait.png"
                 alt="Rodolfo Garcia Calderoni, founder of Black Scarab"
                 fill
                 quality={95}

@@ -165,7 +165,7 @@ const navLinks = [
             <aside className="lg:pl-4" aria-label="Founder profile">
               <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] border border-white/15 bg-[#171b17] shadow-[0_24px_60px_rgba(0,0,0,0.28)]">
                 <Image
-                  src="/rodolfo-garcia-founder.png"
+                  src="/rodolfo-garcia-founder-portrait.png"
                   alt="Rodolfo Garcia Calderoni, founder of Black Scarab"
                   fill
                   preload
