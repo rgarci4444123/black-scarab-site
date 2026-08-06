@@ -119,43 +119,39 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="relative overflow-hidden rounded-[28px] border border-white/15 bg-[#dfe7d8] p-6 text-[#10150f] shadow-[0_28px_80px_rgba(0,0,0,0.25)] sm:p-8">
-              <div className="absolute inset-0 bg-[linear-gradient(rgba(16,21,15,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(16,21,15,0.08)_1px,transparent_1px)] bg-[size:44px_44px]" />
-              <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-white/65 blur-3xl" />
-              <div className="relative">
-                <div className="flex items-center justify-between text-[11px] font-semibold uppercase tracking-[0.19em] text-[#586450]">
-                  <span>Black Scarab</span>
-                  <span>Commercial bridge</span>
-                </div>
-
-                <p className="mt-12 max-w-sm text-2xl font-semibold leading-tight tracking-[-0.025em] sm:text-3xl">
-                  A structured path from market signal to commercial next step.
-                </p>
-
-                <ol className="mt-8 space-y-3">
-                  {[
-                    "Technology fit",
-                    "Mexico use case",
-                    "Stakeholder map",
-                    "Qualified introduction",
-                  ].map((item, index) => (
-                    <li
-                      key={item}
-                      className="flex items-center gap-4 rounded-2xl border border-[#10150f]/10 bg-white/45 px-4 py-3"
-                    >
-                      <span className="font-mono text-xs font-semibold text-[#637157]">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="text-sm font-medium">{item}</span>
-                    </li>
-                  ))}
-                </ol>
-
-                <div className="mt-8 rounded-2xl bg-[#111810] px-5 py-4 text-sm leading-6 text-[#d7ddd4]">
-                  Technical validation and deployment remain with the provider
-                  and qualified implementation partners.
-                </div>
+            <div className="rounded-[24px] border border-white/15 bg-white p-6 text-[#10150f] shadow-[0_24px_70px_rgba(0,0,0,0.2)] sm:p-8">
+              <div className="flex items-center justify-between border-b border-[#e3e7e1] pb-5 text-[11px] font-semibold uppercase tracking-[0.19em] text-[#667060]">
+                <span>Black Scarab</span>
+                <span>Commercial bridge</span>
               </div>
+
+              <p className="mt-9 max-w-sm text-2xl font-semibold leading-tight tracking-[-0.025em] sm:text-3xl">
+                A structured path from market signal to commercial next step.
+              </p>
+
+              <ol className="mt-8 border-t border-[#dfe3dd]">
+                {[
+                  "Technology fit",
+                  "Mexico use case",
+                  "Stakeholder map",
+                  "Qualified introduction",
+                ].map((item, index) => (
+                  <li
+                    key={item}
+                    className="flex items-center gap-5 border-b border-[#dfe3dd] py-4"
+                  >
+                    <span className="w-7 shrink-0 font-mono text-xs font-semibold text-[#718064]">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <span className="text-sm font-medium">{item}</span>
+                  </li>
+                ))}
+              </ol>
+
+              <p className="mt-7 border-l-2 border-[#8fa086] pl-4 text-sm leading-6 text-[#626b60]">
+                Technical validation and deployment remain with the provider
+                and qualified implementation partners.
+              </p>
             </div>
           </div>
         </section>

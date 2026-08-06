@@ -95,11 +95,6 @@ export default function IntakePage() {
               <h1 className="mt-5 max-w-xl text-4xl font-semibold leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-[3.6rem]">
                 Tell me what you&apos;re working on.
               </h1>
-              <p className="mt-6 max-w-xl text-base leading-8 text-[#d7ddd4] sm:text-lg">
-                No formal brief is required. Share the opportunity, problem, or
-                introduction you are looking for. Rodolfo reviews every inquiry
-                directly.
-              </p>
 
               <div className="mt-9 rounded-[24px] border border-white/15 bg-white/[0.05] p-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#b8c7ab]">
@@ -158,13 +153,6 @@ export default function IntakePage() {
               >
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#647456]">
                   Start the conversation
-                </p>
-                <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">
-                  A few details are enough.
-                </h2>
-                <p className="mt-4 max-w-2xl text-sm leading-7 text-[#626b75] sm:text-base">
-                  No budget range, readiness stage, or technical specifications
-                  required.
                 </p>
 
                 <div className="mt-8 grid gap-6">
