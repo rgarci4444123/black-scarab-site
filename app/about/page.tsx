@@ -122,7 +122,7 @@ const navLinks = [
           <div className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-[#9eb18e]/15 blur-3xl" />
           <div className="pointer-events-none absolute -right-24 bottom-0 h-96 w-96 rounded-full bg-[#dce7d2]/10 blur-3xl" />
 
-          <div className="relative mx-auto grid max-w-6xl gap-14 lg:grid-cols-[minmax(0,1.08fr)_minmax(340px,0.72fr)] lg:items-start">
+          <div className="relative mx-auto grid max-w-6xl gap-14 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-16">
             <div className="lg:pt-4">
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b8c7ab]">
                 Meet the founder
@@ -162,16 +162,19 @@ const navLinks = [
               </div>
             </div>
 
-            <aside className="lg:pl-4" aria-label="Founder profile">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] border border-white/15 bg-[#171b17] shadow-[0_24px_60px_rgba(0,0,0,0.28)]">
+            <aside
+              className="w-full max-w-[320px] justify-self-center lg:justify-self-end"
+              aria-label="Founder profile"
+            >
+              <div className="relative aspect-square overflow-hidden rounded-[24px] border border-white/15 bg-[#f4f0ef] shadow-[0_24px_60px_rgba(0,0,0,0.24)]">
                 <Image
-                  src="/rodolfo-garcia-founder-portrait.png"
+                  src="/rodolfo-garcia-about-portrait.jpeg"
                   alt="Rodolfo Garcia Calderoni, founder of Black Scarab"
                   fill
                   preload
                   quality={95}
-                  sizes="(min-width: 1024px) 500px, (min-width: 640px) 70vw, calc(100vw - 48px)"
-                  className="object-cover object-center"
+                  sizes="(min-width: 1024px) 320px, (min-width: 640px) 320px, min(320px, calc(100vw - 48px))"
+                  className="object-cover object-[50%_55%]"
                 />
                 <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/10" />
               </div>
