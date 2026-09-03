@@ -67,11 +67,6 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-const navLinks = [
-    { label: "Insights", href: "/insights", isPage: true },
-    { label: "About", href: "/about", isPage: true },
-  ];
-
   const aboutSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
@@ -112,7 +107,6 @@ const navLinks = [
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
         <SiteHeader
           homeHref="/"
-          navLinks={navLinks}
           showIndustries={false}
           ctaLabel="Discuss an Opportunity"
           ctaHref="/intake"

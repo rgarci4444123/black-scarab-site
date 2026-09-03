@@ -8,11 +8,6 @@ import {
   type IntakeForm,
 } from "@/lib/intake";
 
-const navLinks = [
-  { label: "Insights", href: "/insights", isPage: true },
-  { label: "About", href: "/about", isPage: true },
-];
-
 const conversationGuide = [
   "Who you are and what your company does",
   "What you are trying to accomplish",
@@ -77,7 +72,6 @@ export default function IntakePage() {
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
         <SiteHeader
           homeHref="/"
-          navLinks={navLinks}
           showIndustries={false}
           ctaLabel="Back to Home"
           ctaHref="/"

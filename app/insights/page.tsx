@@ -9,7 +9,7 @@ const baseUrl = "https://www.blackscarab.ai";
 export const metadata: Metadata = {
   title: "Insights",
   description:
-    "Black Scarab insights on edge AI, robotics, local AI, industrial deployment, and the infrastructure behind real-world AI systems.",
+    "Deep analysis and practical guides on physical AI, industrial deployment, and the infrastructure behind intelligent machines.",
   alternates: {
     canonical: "/insights",
   },
@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     url: `${baseUrl}/insights`,
     title: "Black Scarab Insights",
     description:
-      "Articles and guides on edge AI, robotics, local AI, industrial deployment, and real-world AI infrastructure.",
+      "Deep analysis and practical guides on physical AI, industrial deployment, and intelligent machines.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Black Scarab Insights",
     description:
-      "Articles and guides on edge AI, robotics, local AI, industrial deployment, and real-world AI infrastructure.",
+      "Deep analysis and practical guides on physical AI, industrial deployment, and intelligent machines.",
   },
 };
 
@@ -34,10 +34,6 @@ export default function InsightsPage() {
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
         <SiteHeader
           homeHref="/"
-          navLinks={[
-            { label: "Insights", href: "/insights", isPage: true },
-            { label: "About", href: "/about", isPage: true },
-          ]}
           showIndustries={false}
           ctaLabel="Get Started"
           ctaHref="/intake"
@@ -48,11 +44,11 @@ export default function InsightsPage() {
             Insights
           </p>
           <h1 className="mx-auto mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:text-5xl">
-            Articles and ideas from Black Scarab
+            Deep analysis and practical guides
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#6b7280]">
-            Perspectives on edge AI, industrial deployment, and the sectors
-            shaping the future of real-world operations.
+            Evergreen perspectives on physical AI, industrial deployment, and
+            the systems shaping real world operations.
 
           </p>
         </section>

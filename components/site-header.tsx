@@ -3,16 +3,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import { industries } from "@/lib/industries";
-
-type NavLink = {
-  label: string;
-  href: string;
-  isPage?: boolean;
-};
+import { primaryNavLinks, type SiteNavLink } from "@/lib/site-navigation";
 
 type SiteHeaderProps = {
   homeHref?: string;
-  navLinks?: NavLink[];
+  navLinks?: SiteNavLink[];
   showIndustries?: boolean;
   ctaLabel: string;
   ctaHref: string;
@@ -20,7 +15,7 @@ type SiteHeaderProps = {
 
 export default function SiteHeader({
   homeHref = "/",
-  navLinks = [],
+  navLinks = primaryNavLinks,
   showIndustries = true,
   ctaLabel,
   ctaHref,
