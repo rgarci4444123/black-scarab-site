@@ -32,11 +32,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       type: "article",
       url: `${baseUrl}/news/${update.slug}`,
+      siteName: "Black Scarab",
       title: update.title,
       description: update.summary,
       publishedTime: update.publishedDate,
       authors: [update.author.name],
       images: update.image ? [{ url: update.image, alt: update.imageAlt }] : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: update.title,
+      description: update.summary,
+      images: update.image ? [update.image] : undefined,
     },
   };
 }

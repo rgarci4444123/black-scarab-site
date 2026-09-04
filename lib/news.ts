@@ -30,6 +30,127 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "lyte-raises-165-million-physical-ai-perception",
+    title:
+      "Lyte raises $165 million at $1.6 billion valuation as investors pile into physical AI",
+    summary:
+      "The former Apple and PrimeSense team is moving its integrated robot perception platform into production with fresh capital for silicon, sensors, software, and commercial expansion.",
+    category: "Physical AI News",
+    publishedDate: "2026-09-04",
+    publishedLabel: "September 4, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about",
+    },
+    image: "/images/news/lyte-series-c-physical-ai-perception.png",
+    imageAlt:
+      "Editorial visualization of a mobile robot and robotic arm sharing an integrated spatial perception field",
+    imageCaption:
+      "An editorial interpretation of the integrated sensing, custom silicon, and spatial software at the center of Lyte's platform.",
+    readingTime: "7 min read",
+    keyPoints: [
+      "Lyte raised a $165 million Series C led by Maverick Silicon at a $1.6 billion post money valuation.",
+      "The financing brings total capital raised to $272 million and comes eight months after the company emerged from stealth.",
+      "Lyte says it has entered production and is shipping its perception platform to robotics customers in inspection, logistics, and manufacturing.",
+    ],
+    sections: [
+      {
+        heading: "Lyte joins the unicorn club",
+        paragraphs: [
+          "Lyte just raised $165 million to solve a basic robotics problem: machines still struggle to see the world reliably.",
+          "Maverick Silicon led the Series C, with Fidelity Management and Research Company, Atreides Management, Key1 Capital, Ora Global, and other investors joining the round. The deal values Lyte at $1.6 billion after the investment and brings its total capital raised to $272 million.",
+          "Andrew Homan, managing partner at Maverick Silicon, is joining the board. Lyte says the money will help it produce more sensing silicon, expand its LyteVision platform, improve its perception software, and support more robotics customers.",
+          "The speed is hard to miss. Lyte emerged from stealth in January with $107 million in aggregate funding. Eight months later, it has a unicorn valuation and a much larger manufacturing assignment.",
+        ],
+      },
+      {
+        heading: "From Face ID to factory floors",
+        paragraphs: [
+          "The founding team knows a few things about teaching machines to see. Alexander Shpunt cofounded PrimeSense, whose depth technology powered the original Microsoft Kinect. Apple acquired PrimeSense in 2013, and Lyte's founders later worked on sensing systems connected to Apple's depth platform and Face ID.",
+          "Shpunt started Lyte with Arman Hajati and Yuval Gerson in 2021. Their bet is that the integrated approach used in consumer electronics can solve a growing headache for robot companies.",
+          "A robot does not experience a camera as one neat stream of truth. It has to coordinate optics, depth, color, motion, timing, inertial data, calibration, compute, and software. If those layers disagree, the robot can misunderstand where an object is or where it is heading. That is inconvenient for a warehouse robot and potentially dangerous for a machine working beside people.",
+        ],
+      },
+      {
+        heading: "What Lyte actually sells",
+        paragraphs: [
+          "The core product is LyteVision. It combines 4D coherent vision, high resolution color imaging, and an inertial measurement unit in one sensing platform. Lyte's custom silicon synchronizes and fuses those inputs at the edge before sending the result into the robot's control stack.",
+          "The fourth dimension is motion. Many perception systems estimate movement by comparing separate images after capture. Lyte says its system measures position and motion together, giving a robot a more immediate view of where something is and where it is going.",
+          "The broader platform is called Lyte Galaxy. It connects the sensing modules, custom compute, spatial software, and algorithms. Lyte is pitching that stack to makers of autonomous mobile robots, robot arms, delivery vehicles, quadrupeds, robotaxis, and humanoid robots.",
+          "In plain English, Lyte wants robot builders to spend less time getting sensors to agree and more time making the robot useful.",
+        ],
+      },
+      {
+        heading: "Why investors care",
+        paragraphs: [
+          "Robot perception is usually assembled from parts made by several suppliers. Each component can arrive with its own clock, coordinate system, interface, data format, and calibration routine. Engineers have to stitch everything together before they can tackle navigation, manipulation, or safety.",
+          "Lyte argues that one synchronized platform can remove much of that work. The possible benefits are lower latency, less calibration drift, cleaner data, fewer cables, and a faster path from prototype to production.",
+          "Owning the stack also gives Lyte more ways to build a durable business. Custom silicon can create technical differentiation. Software and developer tools can make the platform harder to replace. Production design wins can turn one customer relationship into years of repeat hardware shipments.",
+          "There is a catch. Building chips and sensors is expensive. It requires specialized teams, manufacturing partners, quality control, supply planning, and enough unit volume to spread those costs. The new round gives Lyte more room to prove that the integrated model works commercially.",
+        ],
+      },
+      {
+        heading: "The real signal is production",
+        paragraphs: [
+          "The valuation makes the headline, but production is the part worth watching. Lyte says it is already shipping to robotics customers in inspection, logistics, and manufacturing. That suggests LyteVision has moved beyond laboratory evaluation.",
+          "The company has not named those customers or disclosed shipment volumes, revenue, contract sizes, or how many production programs are active. So the claim is meaningful, but still difficult to measure from the outside.",
+          "The target industries fit the product. Logistics robots must track pallets, forklifts, workers, and changing aisle conditions. Manufacturing systems need precise vision for inspection and manipulation. Field inspection robots have to perceive through difficult lighting, terrain, and weather.",
+          "Lyte is also working with NVIDIA. Its platform can stream sensing data into GPU memory through NVIDIA Holoscan Sensor Bridge, creating a direct path from physical capture into simulation, training, and digital twins. It has also joined the NVIDIA Halos ecosystem, which focuses on safety systems for robots working around people.",
+        ],
+      },
+      {
+        heading: "What $165 million buys",
+        paragraphs: [
+          "First, manufacturing. Lyte plans to scale production of its sensing chips and complete LyteVision modules. That means more than ordering wafers. It includes assembly, calibration, testing, packaging, supply assurance, and field support.",
+          "Second, software. Clean sensor data only becomes valuable when robot developers can integrate it, inspect it, and trust it. Lyte will keep investing in perception algorithms, artificial intelligence, developer tools, and the software that connects physical capture to robot decisions.",
+          "Third, people. The company expects to hire across silicon, optics, software, manufacturing, operations, and commercial roles. This is what happens when your product spans everything from photons to a customer's factory floor.",
+        ],
+      },
+      {
+        heading: "Reality check",
+        paragraphs: [
+          "A $1.6 billion valuation shows that investors are confident. It does not show that Lyte has already won the market.",
+          "The company has not published pricing, annual revenue, gross margins, production yield, customer concentration, or field reliability. It also does not provide detailed public data sheets for the current product. Buyers still need to validate range, accuracy, field of view, update rate, power use, environmental protection, interfaces, and failure behavior for the exact module they plan to deploy.",
+          "Robot makers will also consider supplier dependence. One integrated module can save months of engineering, but it places sensing, processing, calibration, and software with a single company. Customers will want a stable product road map, dependable supply, safety evidence, strong support, clear data terms, and a credible service plan.",
+        ],
+      },
+      {
+        heading: "The bigger funding picture",
+        paragraphs: [
+          "Lyte is riding a much larger wave. Crunchbase reported that physical AI companies raised $47.4 billion across 521 deals during the first half of 2026. That was nearly four times the $12 billion raised during the second half of 2025. A few enormous rounds and a broad category definition can move those totals, but the direction is clear.",
+          "Most robotics attention goes to complete machines and foundation models. Lyte offers investors a different route. Every robot needs reliable information about geometry, color, and motion before any model can make a useful decision. A perception supplier can sell across many kinds of machines without building every robot itself.",
+          "What comes next: customer names, repeat orders, production volume, and evidence that LyteVision works outside controlled demonstrations. Lyte now has the capital. The harder job is turning perception into a standard component that robot makers keep buying.",
+        ],
+      },
+    ],
+    sources: [
+      {
+        label: "Lyte announcement of its $165 million Series C",
+        url: "https://lyte.ai/news/series-c",
+      },
+      {
+        label: "Lyte technology overview for LyteVision and Lyte Galaxy",
+        url: "https://lyte.ai/technology",
+      },
+      {
+        label: "Lyte announcement of its NVIDIA Halos participation",
+        url: "https://lyte.ai/news/safer-robots",
+      },
+      {
+        label: "Lyte news archive and emergence from stealth announcement",
+        url: "https://lyte.ai/news",
+      },
+      {
+        label: "Crunchbase News report on the funding round and physical AI investment",
+        url: "https://news.crunchbase.com/venture/robotics-ai-startup-lyte-seriesc-raise-maverick/",
+      },
+      {
+        label: "CTech report on Lyte's funding, founders, and perception platform",
+        url: "https://www.calcalistech.com/ctechnews/article/4dsejsrni",
+      },
+    ],
+  },
+  {
     slug: "xynova-prima-1-direct-drive-robotic-hand",
     title:
       "Xynova introduces Prima 1, a direct drive robotic hand with 22 degrees of freedom",
