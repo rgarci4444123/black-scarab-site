@@ -342,6 +342,38 @@ export default async function CaseStudyPage({ params }: Props) {
             </div>
           </section>
 
+          {article.referral ? (
+            <section className="px-6 py-8 md:px-10 md:py-10">
+              <div className="mx-auto grid max-w-6xl gap-6 overflow-hidden rounded-[28px] border border-[#d7e2d1] bg-[#111827] p-7 text-white shadow-[0_18px_44px_rgba(15,23,42,0.14)] md:grid-cols-[minmax(0,1fr)_auto] md:items-center md:p-9">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#b9c9ae]">
+                    Referral marketplace access
+                  </p>
+                  <h2 className="mt-3 text-2xl font-semibold tracking-tight md:text-3xl">
+                    {article.referral.title}
+                  </h2>
+                  <p className="mt-3 max-w-3xl text-sm leading-7 text-[#d1d5db] md:text-base">
+                    {article.referral.description}
+                  </p>
+                  <p className="mt-5 text-sm text-[#d1d5db]">
+                    Black Scarab referral code{" "}
+                    <span className="rounded-md border border-white/15 bg-white/10 px-2.5 py-1 font-mono font-semibold tracking-[0.08em] text-white">
+                      {article.referral.code}
+                    </span>
+                  </p>
+                </div>
+                <a
+                  href={article.referral.url}
+                  target="_blank"
+                  rel="sponsored noreferrer"
+                  className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#edf4e8] px-6 py-3 text-sm font-semibold text-[#111827] transition hover:bg-white"
+                >
+                  Access the Marketplace
+                </a>
+              </div>
+            </section>
+          ) : null}
+
           <section className="px-6 py-14 md:px-10">
             <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_280px]">
               <div className="min-w-0 space-y-10">
@@ -571,6 +603,19 @@ export default async function CaseStudyPage({ params }: Props) {
               </aside>
             </div>
           </section>
+
+          {article.affiliateDisclosure ? (
+            <section className="px-6 pb-10 md:px-10 md:pb-12">
+              <div className="mx-auto flex max-w-6xl flex-col gap-2 rounded-[20px] border border-[#dce6d6] bg-[#edf4e8] px-5 py-5 sm:flex-row sm:items-start sm:gap-5">
+                <p className="shrink-0 text-xs font-semibold uppercase tracking-[0.18em] text-[#526147]">
+                  Disclosure
+                </p>
+                <p className="text-sm leading-6 text-[#4b5563]">
+                  {article.affiliateDisclosure}
+                </p>
+              </div>
+            </section>
+          ) : null}
 
           <section className="px-6 pb-14 md:px-10">
             <div className="mx-auto max-w-6xl">

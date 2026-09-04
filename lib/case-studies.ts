@@ -264,6 +264,13 @@ export type CaseStudyArticle = {
   sections: CaseStudySection[];
   sources: string[];
   sourceLinks?: CaseStudySourceLink[];
+  affiliateDisclosure?: string;
+  referral?: {
+    code: string;
+    url: string;
+    title: string;
+    description: string;
+  };
 };
 
 const localAiHobbyistGuide = (): CaseStudyArticle => ({
@@ -12108,6 +12115,582 @@ const intuitiveDaVinci5DeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const computeExchangeDeepDive = (): CaseStudyArticle => ({
+  slug: "compute-exchange-gpu-marketplace-deep-dive",
+  title: "The Best Way to Source GPU Compute in 2026",
+  summary:
+    "Compute Exchange Deep Dive: How its marketplace helps organizations source reserved GPU capacity and future commitments, and how it compares with hyperscalers, specialist GPU clouds, and direct deals.",
+  publishedLabel: "Deep Dive · Published September 4, 2026",
+  publishedDate: "2026-09-04",
+  typeLabel: "Deep Dive",
+  formatLabel: "Marketplace, pricing, and procurement analysis",
+  industry: "Cross-Industry",
+  image: "/article-images/compute-exchange-gpu-marketplace-deep-dive.png",
+  imageAlt:
+    "Editorial visualization of GPU servers and physical accelerators being matched with university and enterprise buyers through a central digital marketplace.",
+  seoDescription:
+    "What is the best way to source GPU compute in 2026? This Compute Exchange deep dive compares its marketplace with hyperscalers, GPU clouds, and direct procurement.",
+  tags: [
+    "Compute Exchange",
+    "GPU marketplace",
+    "H100 rental",
+    "reserved GPU compute",
+    "AI compute procurement",
+  ],
+  author: {
+    name: "Rodolfo Garcia Calderoni, CFA",
+    href: "/about",
+  },
+  affiliateDisclosure:
+    "Black Scarab participates in the Compute Exchange Referral Partner Program and may receive compensation when an eligible referred customer completes a qualifying compute transaction. That relationship does not change the analytical standard used in this report.",
+  referral: {
+    code: "BLACKSCARAB",
+    url: "https://app.compute.exchange/?ref=BLACKSCARAB",
+    title: "Looking for GPU compute?",
+    description:
+      "Access the Compute Exchange marketplace with the Black Scarab referral code already attached. Define your GPU requirements, review available options, and compare each provider's architecture, pricing, availability, and contract terms before committing.",
+  },
+  sections: [
+    {
+      paragraphs: [
+        "GPU procurement has an unusual market structure. The product is expensive, capacity changes quickly, providers package technically different systems under similar GPU labels, and much of the real pricing still moves through private conversations. A buyer can know that it needs H100 capacity and still spend weeks comparing regions, cluster sizes, networking, contract terms, and the operating credibility of unfamiliar providers.",
+        "Compute Exchange is trying to turn that fragmented process into a market. It does not operate a cloud or own the GPUs offered through its platform. Instead, it gathers capacity from providers, structures buyer requirements, facilitates bids and quotations, and introduces matched counterparties. The selected provider supplies and operates the compute.",
+        "That distinction defines both the opportunity and the risk. Aggregation can reduce search costs, reveal pricing, and widen the field of available suppliers. It does not remove the need to evaluate the actual provider, cluster architecture, contract, data environment, and service level.",
+      ],
+    },
+    {
+      heading: "Executive View",
+      paragraphs: [
+        "Compute Exchange is best understood as an institutional procurement marketplace for reserved GPU compute and future dated capacity commitments. Buyers specify what they need, providers respond, and the platform helps normalize the options and record the match. The buyer then contracts directly with the selected provider.",
+        "Its strongest value is not simply a low advertised GPU price. It is the ability to compare multiple sources without rebuilding the procurement process for every provider. This is most useful when the buyer has a clear workload, a meaningful budget, and enough technical discipline to compare complete systems rather than GPU names alone.",
+        "The central caution is equally straightforward. Compute Exchange says it verifies counterparties, but its marketplace terms disclaim responsibility for the availability, performance, security, suitability, legality, and quality of the compute. The marketplace can improve discovery. The selected counterparty still determines whether the deployment succeeds.",
+      ],
+      tables: [
+        {
+          title: "Compute Exchange at a Glance",
+          columns: ["Dimension", "Marketplace Role", "Buyer Implication"],
+          rows: [
+            [
+              "Core function",
+              "Aggregates buyer demand and third party GPU supply through RFQs, listings, quotations, and auctions.",
+              "One request can reach more providers, but every response still needs technical and commercial review.",
+            ],
+            [
+              "Products",
+              "Reserved GPU compute and future dated capacity commitments across multiple providers.",
+              "The buyer can source a defined deployment window without purchasing and operating a permanent GPU cluster.",
+            ],
+            [
+              "Counterparty model",
+              "Compute Exchange facilitates the match but does not operate the capacity.",
+              "The buyer relies on the selected provider for provisioning, performance, security, and support.",
+            ],
+            [
+              "Buyer payment",
+              "The buyer signs directly with the selected provider and pays according to the accepted order and service agreement.",
+              "The complete quotation, deposit, payment timing, cancellation terms, and additional charges must be reviewed before acceptance.",
+            ],
+            [
+              "Best fit",
+              "Institutional buyers with defined GPU, term, region, configuration, and service requirements.",
+              "The marketplace is a sourcing tool, not a substitute for workload planning.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Who This Guide Is For",
+      paragraphs: [
+        "This report is written for the organization buying compute. The likely reader is a research lab, university, AI company, enterprise technology team, or infrastructure operator that needs meaningful GPU capacity and wants to compare more than one source before committing.",
+        "The marketplace is most relevant when the buyer can define a workload, GPU requirement, deployment window, region, technical configuration, and budget. It is particularly useful when capacity is difficult to find, the commitment is large enough to justify competitive sourcing, or the buyer wants an alternative to accepting the first quote from an incumbent cloud provider.",
+        "It is less useful for someone seeking a few unpredictable development hours or a fully managed application. Those buyers may be better served by ordinary on demand cloud access or a managed software service.",
+      ],
+      tables: [
+        {
+          title: "Buyer Fit by Use Case",
+          columns: ["Buyer", "Likely Product", "Why the Marketplace May Help"],
+          rows: [
+            ["University or research lab", "Short or medium term reserved compute", "Compare several capacity sources for a funded project without buying a permanent cluster."],
+            ["AI startup", "Reserved capacity or future commitment", "Secure a defined training or inference window while testing price and availability across providers."],
+            ["Enterprise AI team", "Reserved training or inference capacity", "Compare provider architecture, security, support, region, and contract terms through one process."],
+            ["Cloud or data center operator", "Reserved wholesale GPU capacity", "Compare external capacity when customer demand exceeds available infrastructure."],
+            ["Highly variable experiment", "Possibly on demand elsewhere", "A fixed commitment may create more idle cost than savings, so flexibility should take priority."],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Why This Marketplace Exists",
+      paragraphs: [
+        "GPU compute supply is distributed across hyperscalers, specialist clouds, data centers, infrastructure owners, and brokers. Each provider describes configurations and contracts differently. A buyer may have to repeat the same requirement across many sales conversations before it can make a defensible comparison.",
+        "Compute Exchange launched publicly in 2025 with auctions for A100, H100, and H200 capacity. Its current site advertises access to more than 100 verified providers. For buyers, the relevant idea is that one procurement workflow can reach a broader capacity market than a conversation with a single cloud provider.",
+        "The platform does not make every supplier or configuration interchangeable. Its purpose is to make discovery and comparison more structured, then connect the buyer directly with the provider responsible for delivery.",
+      ],
+      links: [
+        {
+          label: "Network World launch coverage",
+          href: "https://www.networkworld.com/article/3833062/compute-exchange-aims-to-disrupt-ai-compute-access-with-auction-based-platform.html",
+          description:
+            "Independent reporting on the February 2025 public launch and early auction mechanics.",
+        },
+      ],
+    },
+    {
+      heading: "The Marketplace Architecture",
+      paragraphs: [
+        "The platform can be mapped as eight connected layers. The buyer defines a requirement. Identity and business checks establish who can participate. Providers expose inventory or answer an RFQ. The platform structures bids and asks. Matching logic brings compatible orders together. A normalized comparison helps the buyer review options. The selected parties execute a direct contract. Finally, the provider provisions the compute environment.",
+        "This architecture matters because it separates market infrastructure from production infrastructure. Compute Exchange can improve how a buyer finds and compares supply without carrying the capital cost of operating its own fleet. The same separation means the quality of the final service depends on a third party that the buyer must underwrite.",
+      ],
+      tables: [
+        {
+          title: "How a Transaction Moves Through the Platform",
+          columns: ["Layer", "What Happens", "What the Buyer Must Confirm"],
+          rows: [
+            [
+              "1. Requirement",
+              "Buyer specifies GPU model, count, region, start date, duration, price, and technical constraints.",
+              "The request reflects the workload, not merely the preferred chip name.",
+            ],
+            [
+              "2. Verification",
+              "Compute Exchange says it checks corporate identity, beneficial ownership, authority, and provider operating history.",
+              "Verification scope and recency are adequate for the transaction value.",
+            ],
+            [
+              "3. Supply",
+              "Providers list available GPU capacity or respond to a buyer RFQ.",
+              "The offered inventory is real, available, and controlled by the responding party.",
+            ],
+            [
+              "4. Price discovery",
+              "Bids, asks, indicative prices, or direct quotations establish a market range.",
+              "Prices are compared on equivalent configurations and obligations.",
+            ],
+            [
+              "5. Match",
+              "Compatible demand and supply are paired through the platform workflow.",
+              "The match covers every material requirement, not only model and hourly rate.",
+            ],
+            [
+              "6. Comparison",
+              "Provider quotations and terms are presented in a more consistent format.",
+              "SLA exclusions, support, network, storage, software, and billing are normalized.",
+            ],
+            [
+              "7. Contract",
+              "The buyer contracts directly with the selected compute provider.",
+              "Liability, acceptance, remedies, security, tax, and termination are acceptable.",
+            ],
+            [
+              "8. Delivery",
+              "The selected provider provisions the compute environment.",
+              "Access, topology, performance, software, and acceptance tests match the order.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What Buyers Actually Configure",
+      paragraphs: [
+        "A GPU model is only the beginning of a usable specification. Compute Exchange documentation lets buyers define quantity, region, duration, and maximum price, then add preferences for interconnect, CPU, memory, local storage, virtualization, and data center bandwidth. Those fields reflect why one H100 hour is not automatically equivalent to another.",
+        "Distributed training may depend on SXM modules, NVSwitch, fast InfiniBand, a specific node topology, and storage that can keep the accelerators fed. Production inference may prioritize PCIe availability, geographic proximity, predictable latency, and operational support. Research workloads may require short terms and flexible images. A low hourly price can become expensive when the surrounding system cannot sustain the intended utilization.",
+      ],
+      tables: [
+        {
+          title: "The Minimum Serious GPU Compute Request",
+          columns: ["Requirement", "Why It Matters"],
+          rows: [
+            ["GPU and form factor", "H100 PCIe, H100 SXM, H200, B200, and MI300X are not interchangeable deployment units."],
+            ["GPU count and topology", "Eight GPUs in one node behave differently from eight GPUs spread across slower links."],
+            ["Network fabric", "Ethernet or InfiniBand choice and bandwidth can determine distributed training efficiency."],
+            ["Host resources", "CPU, memory, local storage, and data loading must support the accelerator workload."],
+            ["Region and latency", "Location affects user latency, data transfer, legal exposure, and disaster recovery."],
+            ["Software environment", "Drivers, CUDA or ROCm, orchestration, containers, and access model determine readiness."],
+            ["Term and utilization", "Reserved capacity saves money only when the committed resource will actually be used."],
+            ["Support and SLA", "Response time, uptime measurement, exclusions, credits, and escalation define operational protection."],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Reserved GPU Compute",
+      paragraphs: [
+        "Compute Exchange markets reserved capacity across terms from one to 36 months, with custom structures for larger commitments. The buyer locks a GPU count and price for a defined period. In return, the provider commits to making that capacity available according to the order and service agreement.",
+        "Reserved compute is strongest when demand is predictable. A production inference service, a scheduled training program, or a stable research environment can convert a discount into real savings. A sporadic experiment can do the opposite because the buyer pays for unused time. The relevant comparison is cost per useful workload outcome, not cost per nominal GPU hour.",
+        "Silicon Data's August 2026 neocloud index snapshot provides a complementary view of the rental market. Its reported values ranged from $1.65 per GPU hour for A100 capacity to $5.61 for B200 capacity. These are standardized market benchmarks, not Compute Exchange prices or executable offers, but the spread helps a buyer see the premium attached to newer generations.",
+        "The A100 is especially useful as a demand signal. Silicon Data described it as predominantly used for inference and reported that rental rates remained steady even as newer GPUs entered the market. For a buyer, the lesson is to match the accelerator to the workload instead of assuming the newest generation will produce the lowest total cost.",
+        "The public site advertises multiple turnaround expectations, including quotes in approximately two, six, or 24 hours depending on the page and workflow. Buyers should treat these as service targets rather than contractual delivery promises. The reserved capacity page says common configurations may provision within one to two weeks, while tighter supply and rack scale systems may require four to eight weeks or phased delivery.",
+      ],
+      tables: [
+        {
+          title: "Indicative Compute Pricing Published September 2026",
+          columns: ["GPU", "Published Range per GPU Hour", "Planning Interpretation"],
+          rows: [
+            ["NVIDIA H100", "$1.10 to $1.80", "Broadly available Hopper option for training and inference, subject to form factor and topology."],
+            ["NVIDIA H200", "$1.50 to $2.25", "Higher memory capacity and bandwidth, with provider and configuration differences."],
+            ["NVIDIA B200", "$2.60 to $4.30", "Newer Blackwell capacity with tighter allocation and a wider quoted range."],
+            ["AMD MI300X", "$1.49 to $2.50", "Large memory alternative where the software stack supports ROCm."],
+          ],
+          note:
+            "These are first party indicative ranges from the Compute Exchange GPU directory, not executable quotations. Transfer, storage, support, configuration, and utilization can change effective economics.",
+        },
+        {
+          title: "Illustrative Annual H100 Commitment",
+          columns: ["Configuration", "Annual GPU Hours", "Value at Published Range"],
+          rows: [
+            ["8 H100 GPUs", "70,080", "$77,088 to $126,144"],
+            ["32 H100 GPUs", "280,320", "$308,352 to $504,576"],
+            ["64 H100 GPUs", "560,640", "$616,704 to $1,009,152"],
+            ["256 H100 GPUs", "2,242,560", "$2,466,816 to $4,036,608"],
+          ],
+          note:
+            "Illustrative arithmetic assumes 8,760 committed hours per GPU and applies the published hourly range. It is not a quote and does not estimate achieved utilization.",
+        },
+      ],
+      barCharts: [
+        {
+          title: "Neocloud GPU Rental Index Snapshot, August 2026",
+          maxValue: 6,
+          unit: "USD per GPU hour",
+          bars: [
+            {
+              label: "NVIDIA B200",
+              value: 5.61,
+              detail:
+                "The newest generation carried the highest rental index value in the snapshot.",
+            },
+            {
+              label: "NVIDIA H200",
+              value: 3.28,
+              detail:
+                "Additional memory capacity and bandwidth commanded a premium over H100 capacity.",
+            },
+            {
+              label: "NVIDIA H100",
+              value: 2.74,
+              detail:
+                "A mature Hopper option positioned between the latest generation and older A100 capacity.",
+            },
+            {
+              label: "NVIDIA A100",
+              value: 1.65,
+              detail:
+                "The lowest index value in the group, with continued demand for inference workloads according to Silicon Data.",
+            },
+          ],
+          note:
+            "Source: Silicon Data Neocloud GPU Rental Price Indices, August 2026. Black Scarab recreated the supplied chart as a common scale comparison. Silicon Data standardizes observations across providers, configurations, regions, and rental terms. The index is not an executable Compute Exchange quotation. Silicon Data is connected to Compute Exchange through its leadership, so this chart should be treated as a related market indicator rather than independent validation.",
+        },
+      ],
+    },
+    {
+      heading: "Auctions, RFQs, and Binding Orders",
+      paragraphs: [
+        "Compute Exchange began with a structured auction model. Providers submit asks and buyers submit bids. Early in the auction, orders may be changed or cancelled. Once the no cancellation period begins, active orders become binding, buyers may only improve their price upward, and matching occurs when price and resource requirements align.",
+        "The broader platform now also uses RFQs, listings, and facilitated introductions. That flexibility is commercially useful because large GPU requirements rarely fit a perfectly standardized order book. It also means users should understand which workflow governs a particular request and exactly when an indicative inquiry becomes a binding offer.",
+        "A buyer should establish internal approval thresholds before entering a bid. Technical review, legal review, budget authority, and data governance should be complete before an order crosses into a binding phase. Speed is valuable only when it does not bypass institutional controls.",
+      ],
+    },
+    {
+      heading: "A Secondary Path: Buying Physical GPUs",
+      paragraphs: [
+        "This report focuses on sourcing rented GPU compute, but Compute Exchange also operates a marketplace for new, used, and refurbished data center GPUs. Ownership may be worth considering when utilization will remain high for several years and the buyer already has the facilities, power, cooling, networking, technical staff, and capital required to operate a cluster.",
+        "Buying hardware is a separate decision from reserving compute. Compute Exchange can introduce buyers and sellers, but it does not itself inspect, certify, refurbish, own, escrow, or guarantee the equipment. A buyer should compare the full installed cost, expected utilization, maintenance, component condition, acceptance testing, warranty, and obsolescence risk against a reserved compute quotation.",
+      ],
+      links: [
+        {
+          label: "Compute Exchange hardware market",
+          href: "https://compute.exchange/hardware-market",
+          description:
+            "The separate marketplace for organizations evaluating physical GPU ownership.",
+        },
+      ],
+    },
+    {
+      heading: "What the Buyer Actually Pays",
+      paragraphs: [
+        "The hourly GPU rate is only the visible starting point. A buyer may also pay for storage, data transfer, host resources, support, software, setup, taxes, deposits, cancellation obligations, and unused committed capacity.",
+        "Compute Exchange does not publish one universal buyer price because each provider and configuration can differ. The accepted quotation and direct provider agreement determine the final obligation. Buyers should therefore request a complete cost schedule and compare the cost of running the intended workload, not simply the advertised price of one GPU hour.",
+        "A lower rate can still produce a higher project cost if the cluster has slower networking, weak storage throughput, delayed provisioning, poor utilization, or inadequate support. The most useful marketplace comparison converts every offer into the same workload assumptions and contract period.",
+      ],
+      tables: [
+        {
+          title: "Buyer Total Cost Checklist",
+          columns: ["Cost Area", "What to Confirm", "Why It Changes the Comparison"],
+          rows: [
+            ["GPU service", "Exact GPU model, form factor, count, billing unit, minimum spend, and committed hours.", "A nominal H100 rate is meaningless if the form factor or usable capacity differs."],
+            ["Host and fabric", "CPU, memory, local storage, node topology, Ethernet or InfiniBand, and oversubscription.", "Weak surrounding infrastructure can extend training time and increase effective cost."],
+            ["Data", "Persistent storage, snapshots, ingress, egress, internal transfer, and deletion charges.", "Moving large training datasets can materially change the final bill."],
+            ["Operations", "Setup, support tier, monitoring, maintenance, service credits, and incident response.", "A cheaper cluster can become expensive when downtime threatens a fixed project window."],
+            ["Commitment", "Deposit, prepayment, cancellation, renewal, unused capacity, and termination rights.", "Reserved savings disappear when the workload does not consume the commitment."],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Contract Is Part of the Product",
+      paragraphs: [
+        "A marketplace comparison is incomplete without the legal terms. Compute Exchange is not a party to the standard compute service agreement between customer and provider. Its marketplace terms also state that it does not own, operate, provision, maintain, or guarantee the compute and disclaims related representations about performance, security, suitability, legality, and quality.",
+        "The published service agreement targets 99.5 percent uptime measured quarterly. Scheduled maintenance and broadly defined outside factors are excluded. Ordinary remedies are future service credits rather than cash refunds, with credits rising as uptime falls. A chronic service failure can create broader termination and refund rights, subject to the agreement.",
+        "The marketplace terms impose six months of noncircumvention after an applicable offering and allow Compute Exchange substantial control over procurement workflows. Buyers should also understand the payment schedule, cancellation deposit, binding order rules, liability cap, arbitration provisions, data processing terms, and export restrictions before accepting a quote.",
+      ],
+      tables: [
+        {
+          title: "Contract Terms Worth Negotiating or Confirming",
+          columns: ["Issue", "Published Baseline", "Buyer Focus"],
+          rows: [
+            ["Uptime", "99.5 percent quarterly target", "Measurement scope, exclusions, maintenance, workload impact, and stronger requirements if needed."],
+            ["Support", "Four hour target response for the most severe incidents", "Named contacts, 24 hour coverage, escalation, and restoration objectives."],
+            ["Remedy", "Future service credits for ordinary SLA misses", "Cash remedies, termination thresholds, and compensation for critical workloads."],
+            ["Counterparty", "Direct contract with provider", "Financial strength, ownership of capacity, subcontractors, and enforcement jurisdiction."],
+            ["Data", "Provider processes customer data under a standard addendum", "Residency, subprocessors, security controls, deletion, incident notice, and restricted datasets."],
+            ["Exit", "Fixed term plus contractual termination rules", "Workload portability, data extraction, transition support, and unused commitments."],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Buyer Diligence Checklist",
+      paragraphs: [
+        "The right way to use Compute Exchange is to let the marketplace widen discovery while keeping a disciplined approval process. A competitive quote is the beginning of diligence, not the end.",
+      ],
+      tables: [
+        {
+          title: "Before Committing to GPU Compute",
+          columns: ["Area", "Evidence to Request"],
+          rows: [
+            ["Capacity control", "Proof that the provider owns or controls the quoted capacity for the full term."],
+            ["Performance", "Topology, benchmark results relevant to the workload, oversubscription policy, and sustained utilization evidence."],
+            ["Operations", "Provisioning plan, monitoring, maintenance, incident history, support roster, and escalation path."],
+            ["Security", "Independent assurance reports, network architecture, access controls, logging, vulnerability process, and incident obligations."],
+            ["Data governance", "Location, subprocessors, retention, deletion, cross border transfers, and permitted workload data."],
+            ["Commercial", "Complete price, deposits, payment schedule, transfer charges, renewal, cancellation, taxes, and currency."],
+            ["Legal", "SLA, liability, indemnity, force majeure, remedies, noncircumvention, export controls, and dispute forum."],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "How It Compares With Other Buying Channels",
+      paragraphs: [
+        "Compute Exchange does not replace every other procurement route. It sits between self service cloud purchasing and a private sourcing exercise. The value depends on what the buyer already has, how specific the workload is, and whether competitive discovery matters more than staying inside one established vendor relationship.",
+        "A hyperscaler is often the natural choice when an organization already depends on its identity, networking, storage, security, billing, and managed services. AWS offers future dated GPU Capacity Blocks, Google Cloud offers committed use structures, and Azure combines reservations with separate capacity options. Those products can provide operational continuity and commercial discounts, but the buyer is evaluating the inventory and terms of one cloud ecosystem at a time.",
+        "A specialist GPU cloud can be attractive when the buyer wants infrastructure designed primarily for training and inference, direct access to an AI focused operations team, or a specific cluster topology. A direct provider negotiation can be even better when the buyer already knows the counterparty, has enough volume to create leverage, and wants a highly customized agreement. Neither route naturally creates a broad, repeatable comparison across the market.",
+        "The useful analogy is a commercial insurance broker. A business can approach one insurer directly, or it can give a broker one complete risk profile and ask the broker to canvass several carriers. Compute Exchange applies similar logic to GPU procurement. One structured requirement can produce competing responses from multiple providers, making price and terms easier to compare. The analogy is not exact because GPU systems are less standardized than insurance policies and the platform is not presented as a fiduciary adviser.",
+        "Potential savings come from competition, access to fragmented supply, and less procurement work. They are not guaranteed. A quote is only cheaper when GPU form factor, topology, network, storage, software, support, availability, and contract risk are comparable. Black Scarab can help turn a buyer's workload into that normalized request, while the buyer retains final responsibility for provider diligence and selection.",
+      ],
+      tables: [
+        {
+          title: "How the Main Buying Channels Compare",
+          columns: ["Channel", "Best When", "Cost Logic", "Main Constraint"],
+          rows: [
+            [
+              "Hyperscaler",
+              "The workload depends on an existing cloud architecture, managed services, enterprise controls, and consolidated billing.",
+              "On demand access plus discounts through commitments, reservations, or scheduled capacity products.",
+              "The buyer compares options inside one provider ecosystem and may pay for surrounding services it does not need.",
+            ],
+            [
+              "Specialist GPU cloud",
+              "AI performance, cluster topology, technical support, and rapid access matter more than a broad general purpose cloud stack.",
+              "Focused infrastructure can offer competitive GPU economics and more direct technical engagement.",
+              "Coverage, services, financial scale, and operational maturity vary by provider.",
+            ],
+            [
+              "Direct provider negotiation",
+              "The buyer knows the supplier, has meaningful volume, and needs custom technical or legal terms.",
+              "Volume and relationship leverage can produce a strong negotiated price without a marketplace layer.",
+              "Discovery and comparison are limited to providers the buyer already knows or can source independently.",
+            ],
+            [
+              "Compute Exchange",
+              "The buyer has a defined requirement and wants several qualified sources competing through one process.",
+              "Competition and access to fragmented inventory may improve price while reducing search and comparison work.",
+              "The final service is delivered by a third party, so technical normalization and counterparty diligence remain essential.",
+            ],
+          ],
+          note:
+            "These channels can be combined. A buyer may use a marketplace to establish a competitive range, then compare the best response with an incumbent cloud or direct provider offer.",
+        },
+      ],
+      links: [
+        {
+          label: "AWS Capacity Blocks for ML",
+          href: "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-blocks.html",
+          description:
+            "AWS documentation for reserving GPU capacity for a defined future period.",
+        },
+        {
+          label: "Google Cloud committed use discounts",
+          href: "https://docs.cloud.google.com/compute/docs/instances/committed-use-discounts-overview",
+          description:
+            "Google Cloud documentation for resource and spend based commitments, including eligible GPU resources.",
+        },
+        {
+          label: "Azure reservations and capacity",
+          href: "https://learn.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-overview",
+          description:
+            "Microsoft documentation explaining the difference between discounted reservations and guaranteed capacity.",
+        },
+      ],
+    },
+    {
+      heading: "A Hypothetical Buyer Journey",
+      paragraphs: [
+        "Consider Northstar Materials Lab, a fictional university affiliated research group preparing to train a molecular foundation model for battery discovery. Its grant gives the team one defined training window and a fixed budget. The researchers need 32 H100 GPUs for 12 weeks, but they do not want to purchase a permanent cluster that may sit idle after the project.",
+        "Northstar could ask its incumbent hyperscaler for capacity, contact specialist GPU clouds one by one, or issue a conventional procurement request. Instead, it uses Compute Exchange to turn the workload into one structured market request. The lab specifies H100 SXM GPUs, a 32 GPU cluster, high speed interconnect, 100 terabytes of working storage, an approved geographic region, the required software environment, a start date, a 12 week term, and a maximum total budget.",
+        "Compute Exchange verifies the buyer and circulates the requirement through its provider network. Interested providers return configurations, pricing, availability, service terms, and provisioning schedules. The useful output is not merely a list of hourly rates. It is a comparison of systems that are close enough to support the same workload.",
+      ],
+      tables: [
+        {
+          title: "Illustrative Northstar Quotations",
+          columns: ["Option", "Configuration", "GPU Rate", "Compute Cost", "Decision Signal"],
+          rows: [
+            [
+              "Provider A",
+              "32 H100 SXM GPUs with high speed fabric and standard support",
+              "$1.32 per GPU hour",
+              "$85,156",
+              "Strong technical fit and the lowest normalized cost for the requested architecture.",
+            ],
+            [
+              "Provider B",
+              "32 H100 PCIe GPUs with Ethernet networking",
+              "$1.08 per GPU hour",
+              "$69,673",
+              "Lowest headline rate, but not an equivalent cluster and potentially slower for distributed training.",
+            ],
+            [
+              "Provider C",
+              "32 H100 SXM GPUs with high speed fabric, stronger support, and tighter service terms",
+              "$1.48 per GPU hour",
+              "$95,478",
+              "Higher price with additional operational protection for a schedule sensitive project.",
+            ],
+          ],
+          note:
+            "This scenario and every quotation are fictional. Compute cost assumes 64,512 GPU hours, calculated as 32 GPUs operating continuously for 12 weeks. Storage, network transfer, software, tax, and implementation costs are excluded.",
+        },
+        {
+          title: "What the Process Looks Like",
+          columns: ["Step", "Northstar Action", "Compute Exchange Role", "Decision Gate"],
+          rows: [
+            [
+              "1. Define",
+              "Translate the research plan into GPU, topology, storage, region, term, security, and budget requirements.",
+              "Provide a structured request format that suppliers can answer consistently.",
+              "The specification must reflect the workload rather than a preferred chip name alone.",
+            ],
+            [
+              "2. Verify",
+              "Complete business identity and purchasing authority checks.",
+              "Confirm that the buyer and participating providers meet platform onboarding requirements.",
+              "Every legal entity and authorized signer is known before commercial commitments begin.",
+            ],
+            [
+              "3. Source",
+              "Submit one complete request and remain available for technical questions.",
+              "Expose the requirement to relevant providers and gather competing responses.",
+              "The response set includes enough credible supply to create a useful comparison.",
+            ],
+            [
+              "4. Normalize",
+              "Review configuration, benchmark, network, storage, support, service level, and total cost differences.",
+              "Present quotations in a common workflow and clarify material differences.",
+              "Nominally cheaper but technically different options are not treated as equivalent.",
+            ],
+            [
+              "5. Diligence",
+              "Validate provider control of capacity, security posture, operating history, contract terms, and references.",
+              "Facilitate the connection and transaction workflow without replacing buyer diligence.",
+              "The selected provider can actually deliver the cluster and support the research schedule.",
+            ],
+            [
+              "6. Contract",
+              "Negotiate and sign the service agreement directly with the selected provider.",
+              "Record the match and support the commercial process described by the marketplace terms.",
+              "Price, deposit, service level, liability, remedies, data terms, and exit rights are acceptable.",
+            ],
+            [
+              "7. Validate",
+              "Run acceptance tests before moving the full dataset and beginning the paid training window.",
+              "Maintain the transaction record while the provider provisions and operates the environment.",
+              "Topology, performance, access, storage, security, and support match the signed order.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Benefits and Tradeoffs",
+      paragraphs: [
+        "Compute Exchange can create real value by widening the provider field, reducing repetitive outreach, making price discovery more visible, and giving institutional buyers a common workflow for reserved GPU capacity. The direct contract model also preserves the buyer's ability to negotiate with the actual compute provider.",
+        "The tradeoff is that aggregation does not make heterogeneous compute perfectly fungible. Region, topology, software, network, storage, support, legal terms, and provider quality remain part of the product. The platform can make these dimensions easier to compare, but a market price is meaningful only after the underlying service has been normalized.",
+        "Public evidence supports the existence of the marketplace, its initial auctions, and its published legal and pricing framework. Public evidence does not establish audited transaction volume, median buyer savings, fill rate, or provider performance. Those gaps should remain visible in any serious evaluation.",
+      ],
+      tables: [
+        {
+          title: "Balanced Assessment",
+          columns: ["Potential Advantage", "Corresponding Tradeoff"],
+          rows: [
+            ["One request reaches a broader supply network.", "Provider breadth is a company claim and individual provider quality still varies."],
+            ["Indicative ranges improve budget planning.", "Published ranges are not live executable prices or complete cost comparisons."],
+            ["Normalized quotes reduce procurement work.", "Technical and contractual differences cannot be reduced to a single hourly number."],
+            ["Direct contracts preserve counterparty relationships.", "The buyer carries provider enforcement and performance risk."],
+            ["Binding auctions can accelerate execution.", "A buyer can become committed before every internal stakeholder is ready."],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Buyer Verdict",
+      paragraphs: [
+        "Compute Exchange is a credible sourcing option for institutional buyers that understand their workload and want a wider view of GPU supply. Its market design addresses a genuine problem: private, inconsistent, and slow procurement across a technically fragmented supplier base.",
+        "It should be used as a discovery and transaction tool, not as outsourced technical judgment. The best buyer will arrive with a complete requirement, compare total workload economics, investigate the selected counterparty, and negotiate terms that match the consequence of failure.",
+        "For a university seeking an H100 research cluster or a company reserving production inference capacity, the platform may shorten the path to viable compute providers. The final decision still depends on architecture, utilization, region, security, contract terms, and the people responsible for delivery.",
+      ],
+    },
+    {
+      heading: "Research Method",
+      paragraphs: [
+        "This report was prepared from current Compute Exchange product pages, platform documentation, fee terms, marketplace terms, compute service terms, referral terms, company materials, and independent reporting. First party statements about network size, savings, quote speed, supply value, and customer outcomes are identified as company claims or used only as directional context.",
+        "Public materials do not disclose provider level fill rates, realized buyer savings, workload performance, or incident history. Pricing shown here is time sensitive and should be replaced with a live quotation and provider specific diligence before any purchase decision.",
+      ],
+    },
+  ],
+  sources: [
+    "Compute Exchange official marketplace and product materials",
+    "Compute Exchange marketplace, service, fee, and referral terms",
+    "Compute Exchange platform documentation",
+    "Silicon Data GPU rental indices and market commentary",
+    "Independent launch and marketplace reporting",
+  ],
+  sourceLinks: [
+    { label: "Compute Exchange", url: "https://compute.exchange/" },
+    { label: "About Compute Exchange", url: "https://compute.exchange/about" },
+    { label: "Reserved GPU rental", url: "https://compute.exchange/reserved-gpu-rental" },
+    { label: "GPU directory", url: "https://compute.exchange/gpus" },
+    { label: "Hardware market", url: "https://compute.exchange/hardware-market" },
+    { label: "Forward contracts", url: "https://compute.exchange/forward-contracts" },
+    { label: "Auction mechanism", url: "https://app.compute.exchange/docs/documentation/intro/mechanism" },
+    { label: "Buyer bidding guide", url: "https://app.compute.exchange/docs/documentation/buyer/placing-a-bid" },
+    { label: "Marketplace terms", url: "https://compute.exchange/marketplace-terms" },
+    { label: "Compute service terms", url: "https://compute.exchange/compute-service-terms" },
+    { label: "Payment and fee terms", url: "https://compute.exchange/fees" },
+    { label: "Referral agreement", url: "https://compute.exchange/referral-agreement" },
+    { label: "Network World launch report", url: "https://www.networkworld.com/article/3833062/compute-exchange-aims-to-disrupt-ai-compute-access-with-auction-based-platform.html" },
+    { label: "SiliconANGLE hardware market report", url: "https://siliconangle.com/2026/07/17/compute-exchange-opens-secondary-market-used-nvidia-h100-a100-gpus/" },
+    { label: "Aventine compute marketplace analysis", url: "https://www.aventine.org/10-trends-ai-robotaxis-glp-1-compute/" },
+    { label: "AWS Capacity Blocks for ML", url: "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-blocks.html" },
+    { label: "Google Cloud committed use discounts", url: "https://docs.cloud.google.com/compute/docs/instances/committed-use-discounts-overview" },
+    { label: "Azure capacity reservations", url: "https://learn.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-overview" },
+    { label: "Silicon Data GPU rental indices", url: "https://www.silicondata.com/products/silicon-index" },
+    { label: "Silicon Data A100 market commentary", url: "https://x.com/Silicon_Data/status/2088322971735871581" },
+  ],
+});
+
 const flockSafetyDeepDive = (): CaseStudyArticle => ({
   slug: "flock-safety-platform-hardware-business-model-pricing",
   title:
@@ -12687,6 +13270,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  computeExchangeDeepDive(),
   flockSafetyDeepDive(),
   nvidiaPhysicalAiDeepDive(),
   prometheusPhysicalAiDeepDive(),
