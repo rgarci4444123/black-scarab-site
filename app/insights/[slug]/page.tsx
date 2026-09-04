@@ -104,10 +104,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const articleUrl = getArticleUrl(article.slug);
+  const imageUrl = `${baseUrl}${article.image}`;
+  const articleAuthor = article.author?.name ?? publisherName;
+  const articleAuthorUrl = article.author?.href
+    ? `${baseUrl}${article.author.href}`
+    : authorUrl;
   const typeLabel = article.typeLabel ?? "Case Study";
   return {
     title: article.title,
     description: article.seoDescription,
+    authors: [{ name: articleAuthor, url: articleAuthorUrl }],
     alternates: {
       canonical: articleUrl,
     },
@@ -118,12 +124,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: article.seoDescription,
       siteName: publisherName,
       publishedTime: `${article.publishedDate}T12:00:00.000Z`,
-      authors: [publisherName],
+      authors: [articleAuthor],
+      images: [{ url: imageUrl, alt: article.imageAlt }],
     },
     twitter: {
       card: "summary_large_image",
       title: article.title,
       description: article.seoDescription,
+      images: [imageUrl],
     },
     keywords: [
       ...(article.tags ?? []),
@@ -201,6 +209,10 @@ export default async function CaseStudyPage({ params }: Props) {
   const relatedArticles = getRelatedArticles(article.slug, article.industry);
   const articleUrl = getArticleUrl(article.slug);
   const imageUrl = `${baseUrl}${article.image}`;
+  const articleAuthor = article.author?.name ?? publisherName;
+  const articleAuthorUrl = article.author?.href
+    ? `${baseUrl}${article.author.href}`
+    : authorUrl;
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -235,9 +247,9 @@ export default async function CaseStudyPage({ params }: Props) {
     datePublished: `${article.publishedDate}T12:00:00.000Z`,
     dateModified: `${article.publishedDate}T12:00:00.000Z`,
     author: {
-      "@type": "Organization",
-      name: publisherName,
-      url: authorUrl,
+      "@type": article.author ? "Person" : "Organization",
+      name: articleAuthor,
+      url: articleAuthorUrl,
     },
     publisher: {
       "@type": "Organization",
@@ -306,6 +318,17 @@ export default async function CaseStudyPage({ params }: Props) {
                   {article.summary}
                 </p>
                 <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-[#6b7280]">
+                  {article.author ? (
+                    <>
+                      <Link
+                        href={article.author.href}
+                        className="font-medium text-[#111827] transition hover:text-[#526147]"
+                      >
+                        By {article.author.name}
+                      </Link>
+                      <span className="text-[#c9c1b5]">|</span>
+                    </>
+                  ) : null}
                   <span>Published {formattedDate}</span>
                   <span className="text-[#c9c1b5]">|</span>
                   <Link

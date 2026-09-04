@@ -2,21 +2,61 @@ import { readFile } from "node:fs/promises";
 
 const baseUrl = "https://www.blackscarab.ai";
 const key = "1236d5c01b7fa121d6e83700200c5e67";
-const requestedSlug = process.argv[2];
-const newsSource = await readFile(
-  new URL("../lib/news.ts", import.meta.url),
-  "utf8",
+const requestedEntry = process.argv[2];
+const [newsSource, insightsSource] = await Promise.all([
+  readFile(new URL("../lib/news.ts", import.meta.url), "utf8"),
+  readFile(new URL("../lib/case-studies.ts", import.meta.url), "utf8"),
+]);
+const newsSlugs = Array.from(
+  newsSource.matchAll(/slug:\s*"([^"]+)"/g),
+  (match) => match[1],
 );
-const slugs = Array.from(newsSource.matchAll(/slug:\s*"([^"]+)"/g), (match) => match[1]);
-const slug = requestedSlug ?? slugs[0];
+const insightSlugs = new Set(
+  Array.from(
+    insightsSource.matchAll(/slug:\s*"([^"]+)"/g),
+    (match) => match[1],
+  ),
+);
 
-if (!slug || !slugs.includes(slug)) {
+function resolvePaths(entry) {
+  if (!entry) {
+    return newsSlugs[0]
+      ? ["/news", `/news/${newsSlugs[0]}`]
+      : [];
+  }
+
+  const normalized = entry.startsWith("/") ? entry : null;
+
+  if (normalized?.startsWith("/news/")) {
+    const slug = normalized.slice("/news/".length);
+    return newsSlugs.includes(slug) ? ["/news", normalized] : [];
+  }
+
+  if (normalized?.startsWith("/insights/")) {
+    const slug = normalized.slice("/insights/".length);
+    return insightSlugs.has(slug) ? ["/insights", normalized] : [];
+  }
+
+  if (newsSlugs.includes(entry)) {
+    return ["/news", `/news/${entry}`];
+  }
+
+  if (insightSlugs.has(entry)) {
+    return ["/insights", `/insights/${entry}`];
+  }
+
+  return [];
+}
+
+const paths = resolvePaths(requestedEntry);
+
+if (paths.length === 0) {
   throw new Error(
-    `Unknown news slug: ${slug ?? "none"}. Pass a slug found in lib/news.ts.`,
+    `Unknown article: ${requestedEntry ?? "none"}. Pass a news slug, an insight slug, or a full article path.`,
   );
 }
 
-const urlList = [`${baseUrl}/news`, `${baseUrl}/news/${slug}`];
+const urlList = paths.map((path) => `${baseUrl}${path}`);
 const response = await fetch("https://api.indexnow.org/indexnow", {
   method: "POST",
   headers: { "Content-Type": "application/json; charset=utf-8" },
