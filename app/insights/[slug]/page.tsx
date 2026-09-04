@@ -164,34 +164,9 @@ export default async function CaseStudyPage({ params }: Props) {
   const industryHref = getIndustryHref(article.industry);
   const industryLinkLabel =
     industryHref === "/insights" ? "Insights index" : `${article.industry} page`;
-  const ctaTitle =
-    article.industry === "Agriculture"
-      ? "Design an agriculture system around your own field conditions"
-      : article.industry === "Manufacturing"
-        ? "Design a manufacturing system around your own production line"
-        : article.industry === "Healthcare"
-          ? "Design a healthcare system around your own care environment"
-          : article.industry === "Transportation & Logistics"
-            ? "Design a logistics system around your own operational flow"
-            : article.industry === "Retail"
-              ? "Design a retail system around your own store operations"
-              : article.industry === "Smart Cities"
-                ? "Scope an edge AI system around your own urban operations"
-                : "Design an edge AI roadmap around your own operational priorities";
+  const ctaTitle = "Explore a commercial opportunity in Mexico";
   const ctaDescription =
-    article.industry === "Agriculture"
-      ? "If you are evaluating edge AI for agricultural operations, we can help scope the right combination of compute, sensors, aerial systems, and field connectivity."
-      : article.industry === "Manufacturing"
-        ? "If you are evaluating edge AI for industrial inspection or production monitoring, we can help scope the right combination of machine vision, edge compute, and plant-floor infrastructure."
-        : article.industry === "Healthcare"
-          ? "If you are evaluating edge AI for diagnostics, monitoring, or care delivery, we can help scope the right combination of devices, compute, and deployment strategy."
-          : article.industry === "Transportation & Logistics"
-            ? "If you are evaluating edge AI for warehousing, fleet visibility, or logistics automation, we can help scope the right combination of vision systems, compute, and field-ready infrastructure."
-            : article.industry === "Retail"
-              ? "If you are evaluating edge AI for in-store operations, inventory awareness, or loss prevention, we can help scope the right combination of sensors, compute, and deployment architecture."
-              : article.industry === "Smart Cities"
-                ? "If you are evaluating edge AI for traffic systems, public safety, or urban sensing, we can help scope the right mix of edge compute, connectivity, and field-ready devices."
-                : "If you are evaluating edge AI across multiple workflows, we can help map the right mix of compute, connectivity, sensors, and deployment strategy for the environments that matter most.";
+    "If you are exploring how a physical AI technology could fit the Mexican market, Black Scarab can help assess the opportunity, map relevant stakeholders, and define a credible commercial next step.";
   const secondaryCtaLabel =
     article.industry === "Agriculture"
       ? "Explore Agriculture"
@@ -283,7 +258,7 @@ export default async function CaseStudyPage({ params }: Props) {
         <SiteHeader
           homeHref="/"
           showIndustries={false}
-          ctaLabel="Get Started"
+          ctaLabel="Discuss an Opportunity"
           ctaHref="/intake"
         />
 
@@ -343,7 +318,7 @@ export default async function CaseStudyPage({ params }: Props) {
                     href="/intake"
                     className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
                   >
-                    Design My System
+                    Discuss an Opportunity
                   </Link>
                   <Link
                     href="/insights"
@@ -651,7 +626,7 @@ export default async function CaseStudyPage({ params }: Props) {
                   href="/intake"
                   className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
                 >
-                  Design My System
+                  Discuss an Opportunity
                 </Link>
                 <Link
                   href={industryHref}

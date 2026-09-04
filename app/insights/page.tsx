@@ -35,7 +35,7 @@ export default function InsightsPage() {
         <SiteHeader
           homeHref="/"
           showIndustries={false}
-          ctaLabel="Get Started"
+          ctaLabel="Discuss an Opportunity"
           ctaHref="/intake"
         />
 

@@ -18,7 +18,7 @@ export default function SubscribeThanksPage() {
         <SiteHeader
           homeHref="/"
           showIndustries={false}
-          ctaLabel="Get Started"
+          ctaLabel="Discuss an Opportunity"
           ctaHref="/intake"
         />
 

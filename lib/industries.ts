@@ -59,7 +59,7 @@ export const industries: IndustryData[] = [
     solutionTitle: "Precision Farming System",
     solutionDescription:
       "Advanced drone, AI computer, and smart sensors for crop monitoring, environmental analysis, and intelligent field operations.",
-    cta: "Design My System",
+    cta: "Discuss an Agriculture Opportunity",
     cards: [
       {
         title: "DJI Mavic 3M",
@@ -145,7 +145,7 @@ export const industries: IndustryData[] = [
     solutionTitle: "Reflexive Fleet System",
     solutionDescription:
       "Edge AI systems for routing visibility, fleet monitoring, and real-time decision support across logistics networks.",
-    cta: "Design My Logistics Stack",
+    cta: "Discuss a Logistics Opportunity",
     cards: [
       {
         title: "Dell Edge Gateway 5200",
@@ -231,7 +231,7 @@ export const industries: IndustryData[] = [
     solutionTitle: "Autonomous Factory Stack",
     solutionDescription:
       "Machine vision, edge compute, and industrial monitoring systems built for nearshoring-era factories and globally distributed production environments.",
-    cta: "Design My Factory Stack",
+    cta: "Discuss a Manufacturing Opportunity",
     cards: [
       {
         title: "Basler ace Camera",
@@ -317,7 +317,7 @@ export const industries: IndustryData[] = [
     solutionTitle: "Mobile Diagnostics Platform",
     solutionDescription:
       "Edge AI for handheld diagnostics, rural monitoring, and decentralized care delivery where connectivity is limited.",
-    cta: "Design My Healthcare System",
+    cta: "Discuss a Healthcare Opportunity",
     cards: [
       {
         title: "NVIDIA Jetson AGX Orin",
@@ -403,7 +403,7 @@ export const industries: IndustryData[] = [
     solutionTitle: "Responsive Storefront Platform",
     solutionDescription:
       "Edge AI for occupancy awareness, storefront intelligence, and real-time retail operations across distributed locations.",
-    cta: "Design My Retail Stack",
+    cta: "Discuss a Retail Opportunity",
     cards: [
       {
         title: "Intel RealSense D455",
