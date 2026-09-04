@@ -10,7 +10,7 @@ const baseUrl = "https://www.blackscarab.ai";
 export const metadata: Metadata = {
   title: "Physical AI News",
   description:
-    "Timely, sourced reporting on the machines, models, infrastructure, and market signals shaping physical AI.",
+    "Timely, sourced reporting on the companies, machines, and markets shaping physical AI.",
   authors: [{ name: "Rodolfo Garcia Calderoni, CFA", url: "/about" }],
   alternates: {
     canonical: "/news",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: `${baseUrl}/news`,
     title: "Physical AI News | Black Scarab",
     description:
-      "Timely, sourced reporting on the machines, models, infrastructure, and market signals shaping physical AI.",
+      "Timely, sourced reporting on the companies, machines, and markets shaping physical AI.",
   },
 };
 
@@ -48,10 +48,15 @@ export default function NewsPage() {
                 Physical AI News
               </h1>
             </div>
-            <p className="max-w-xl text-sm leading-6 text-[#d3dbcf] sm:text-right">
-              Timely, sourced reporting on the machines, models,
-              infrastructure, and market signals moving AI into the physical world.
-            </p>
+            <div className="w-full max-w-md border-t border-[#53604e] pt-4 sm:mb-1">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#91a286]">
+                Coverage
+              </p>
+              <p className="mt-2 text-sm leading-6 text-[#d3dbcf] sm:text-base sm:leading-7">
+                Timely, sourced reporting on the companies, machines, and
+                markets shaping physical AI.
+              </p>
+            </div>
           </div>
         </section>
 

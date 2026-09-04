@@ -32,7 +32,7 @@ export function GET() {
   <channel>
     <title>Black Scarab Physical AI News</title>
     <link>${baseUrl}/news</link>
-    <description>Timely, sourced reporting on the machines, models, infrastructure, and market signals shaping physical AI.</description>
+    <description>Timely, sourced reporting on the companies, machines, and markets shaping physical AI.</description>
     <language>en-us</language>
     <lastBuildDate>${escapeXml(latestPublishedAt)}</lastBuildDate>
     <atom:link href="${feedUrl}" rel="self" type="application/rss+xml" />
