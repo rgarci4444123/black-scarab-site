@@ -12,7 +12,12 @@ export const metadata: Metadata = {
   description:
     "Timely, sourced reporting on the machines, models, infrastructure, and market signals shaping physical AI.",
   authors: [{ name: "Rodolfo Garcia Calderoni, CFA", url: "/about" }],
-  alternates: { canonical: "/news" },
+  alternates: {
+    canonical: "/news",
+    types: {
+      "application/rss+xml": "https://www.blackscarab.ai/news/feed.xml",
+    },
+  },
   openGraph: {
     type: "website",
     url: `${baseUrl}/news`,

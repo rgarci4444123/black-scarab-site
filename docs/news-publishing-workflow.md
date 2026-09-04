@@ -31,3 +31,19 @@ Use this workflow whenever Rodolfo provides a short news snippet.
 4. Search the published copy for dash punctuation.
 5. Run lint and the production build.
 6. Review the news index and article on desktop and mobile widths before considering the article published.
+7. Deploy the article before notifying external indexing services.
+8. Run `npm run submit:indexnow -- article-slug` after the production URL is live.
+9. Confirm the article appears in `/news-sitemap.xml` during its first two days and in `/news/feed.xml` permanently.
+
+## Discovery endpoints
+
+Submit these endpoints once in Google Search Console and Bing Webmaster Tools:
+
+* `https://www.blackscarab.ai/sitemap.xml`
+* `https://www.blackscarab.ai/news-sitemap.xml`
+
+The RSS feed is available for readers, monitoring tools, and aggregators at:
+
+* `https://www.blackscarab.ai/news/feed.xml`
+
+The Google News sitemap contains only stories published during the previous two days. The RSS feed retains the newest 50 stories.

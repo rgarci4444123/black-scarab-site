@@ -6,6 +6,9 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.blackscarab.ai/sitemap.xml",
+    sitemap: [
+      "https://www.blackscarab.ai/sitemap.xml",
+      "https://www.blackscarab.ai/news-sitemap.xml",
+    ],
   };
 }
