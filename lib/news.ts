@@ -30,6 +30,139 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "caterpillar-fieldai-industrial-ai-robots-digital-twins",
+    title:
+      "Caterpillar taps FieldAI to bring autonomous robots and digital twins to industrial sites",
+    summary:
+      "The heavy equipment leader is combining its industrial data and engineering expertise with FieldAI's robot foundation models and NVIDIA's simulation stack.",
+    category: "Physical AI News",
+    publishedDate: "2026-09-05",
+    publishedLabel: "September 5, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about",
+    },
+    image: "/images/news/caterpillar-fieldai-industrial-ai.png",
+    imageAlt:
+      "Editorial image of an autonomous inspection robot mapping a large yellow industrial machine",
+    imageCaption:
+      "An editorial interpretation of autonomous inspection and digital twin technology operating around heavy industrial equipment.",
+    readingTime: "7 min read",
+    keyPoints: [
+      "Caterpillar and FieldAI will work on autonomous inspections, live digital twins, situational awareness, and operational optimization.",
+      "FieldAI's software is designed to work across different robot bodies and make decisions at the edge in changing industrial environments.",
+      "The companies did not name specific machines, deployment sites, customer programs, pricing, or a commercial rollout date.",
+    ],
+    sections: [
+      {
+        heading: "Industrial muscle is getting a robot brain",
+        paragraphs: [
+          "Caterpillar is bringing another artificial intelligence specialist onto the jobsite. The heavy equipment company announced a collaboration with FieldAI on September 2 to develop autonomous robots, digital twins, and operational intelligence for factories and industrial sites.",
+          "The pairing is straightforward. Caterpillar brings more than a century of experience building equipment for construction, mining, energy, and manufacturing. It also brings engineering talent, operational data, customers, and a global dealer network. FieldAI brings software designed to help different kinds of robots understand and move through places that refuse to stay neat.",
+          "Those places are the point. A traditional robot works best when the floor, task, and traffic pattern are predictable. A mine, construction site, or active factory can change by the hour. Materials move, surfaces get dirty, people cross paths with machines, and yesterday's map can become obsolete before lunch.",
+          "Caterpillar says the collaboration is intended to improve safety, productivity, and operating efficiency. It is not announcing a finished product yet. The companies did not identify a specific Cat machine that will use FieldAI, a customer receiving the technology, or a date when it will become commercially available.",
+        ],
+      },
+      {
+        heading: "What the companies plan to build",
+        paragraphs: [
+          "The first area is autonomous inspection. A mobile robot could travel through a factory, equipment yard, construction site, or mine and collect visual, thermal, acoustic, depth, and other sensor data. That can give operators a more consistent view of equipment condition while reducing the need for people to enter hazardous or difficult areas.",
+          "The second area is digital twins. Instead of treating a digital twin as a model created once during design, FieldAI wants robots to update the virtual copy while they perform ordinary missions. A robot moving through the site becomes a roaming sensor that records how equipment, infrastructure, inventory, and working conditions are changing.",
+          "The third area is situational awareness. The companies want to turn those observations into warnings and useful context for human teams. Potential examples include identifying a blocked route, detecting an equipment anomaly, documenting construction progress, or noticing a developing safety risk sooner.",
+          "The fourth area is operational optimization. Once a site has current data and a usable digital model, teams can test layouts, study traffic, simulate changes, and look for bottlenecks before interrupting the real operation. Caterpillar has not said which of these applications will reach customers first or how the work will be packaged and sold.",
+        ],
+      },
+      {
+        heading: "FieldAI brings the autonomy layer",
+        paragraphs: [
+          "FieldAI does not build its business around one robot. Its Field Foundation Models are intended to provide a common autonomy layer across quadrupeds, wheeled robots, humanoids, and other mobile machines. The company calls this approach robot agnostic because the same underlying intelligence can be adapted to more than one hardware platform.",
+          "The models combine learned behavior with physics based reasoning and uncertainty awareness. In practical terms, FieldAI wants a robot to recognize when the environment does not match its expectations, estimate the risk, and choose a more conservative action. That might mean slowing down, finding another route, or stopping instead of confidently making the wrong move.",
+          "FieldAI says its systems can navigate without prior maps, GPS, fixed routes, or a constant cloud connection, with decisions made on the robot at the edge. Those capabilities matter in underground mines, remote energy facilities, and unfinished buildings where connectivity and mapping cannot be taken for granted.",
+          "The company announced $405 million across two funding rounds in August 2025. It also says its technology has been tested or deployed across hundreds of industrial environments on three continents. Those figures come from FieldAI, which does not publish a detailed site list, fleet count, or operating hour breakdown. Still, partnerships with Boston Dynamics, Big D Construction, DPR Construction, Certis, and now Caterpillar suggest the company is pushing beyond isolated demonstrations.",
+        ],
+      },
+      {
+        heading: "The digital twin is more than a polished rendering",
+        paragraphs: [
+          "A useful digital twin has to reflect the current site, not the version captured weeks ago. FieldAI says robots can gather vision, depth, LiDAR, and other sensor data during normal operations, then turn that information into a continuously evolving three dimensional record.",
+          "That record can serve two jobs. Operators can use it to understand the site today. Engineers can also use it as a realistic environment for testing how robots might behave tomorrow. The same unusual surface, reflective object, narrow passage, or changing light condition seen in the field can become part of the simulation and validation process.",
+          "FieldAI is using NVIDIA Omniverse technologies to support this loop. Omniverse NuRec helps reconstruct an environment from sensor data. Isaac Sim and Isaac Lab support simulation, testing, and robot learning. NVIDIA OSMO helps coordinate data processing and model development workflows.",
+          "The result is a useful flywheel if it works as described. Robots collect real operating data. That data improves the digital environment used for testing. Better tests improve the autonomy software. The updated software returns to the field and encounters more situations. Caterpillar's industrial footprint could give that loop far more variety than a controlled robotics lab ever could.",
+        ],
+      },
+      {
+        heading: "NVIDIA is already underneath the stack",
+        paragraphs: [
+          "The FieldAI agreement fits into a larger Caterpillar technology plan. At CES in January, Caterpillar expanded its collaboration with NVIDIA across intelligent machines, factory systems, supply chain operations, and digital twins.",
+          "Caterpillar is already using NVIDIA accelerated computing and Omniverse libraries to model factories and test operational changes. It has also introduced the Cat AI Assistant, which is designed to connect equipment knowledge, fleet information, service guidance, and future assistance inside the machine cab.",
+          "FieldAI adds a mobile autonomy layer to that foundation. NVIDIA provides much of the compute, simulation, and development infrastructure. FieldAI provides models that decide how robots perceive risk and move through changing environments. Caterpillar supplies the industrial context, equipment knowledge, operating data, and path to customers.",
+          "That division of labor is important. None of the three layers is enough by itself. A realistic simulation does not operate a robot. An autonomy model without industrial knowledge may miss what matters on a jobsite. A machine with excellent hardware still needs software that can understand the environment around it.",
+        ],
+      },
+      {
+        heading: "Inspection is the sensible place to start",
+        paragraphs: [
+          "The most practical early use case is inspection rather than fully autonomous heavy equipment. A robot that observes, maps, and reports can create value without immediately taking control of a machine that weighs tens or hundreds of tons.",
+          "Factories need repeated checks of gauges, motors, electrical equipment, safety conditions, and material flow. Construction teams need current documentation of progress and changing site conditions. Mines and energy facilities need visibility in areas that can be remote, unstable, hot, dark, dusty, or dangerous.",
+          "A mobile robot can perform the repetitive collection work while engineers, operators, and safety teams decide what action to take. The potential business case includes fewer manual rounds, more consistent documentation, earlier fault detection, better planning, and less exposure to hazardous areas.",
+          "That business case still needs evidence from the Caterpillar collaboration. The announcement provides no measured savings, inspection accuracy, incident reduction, deployment cost, or customer return. Buyers should watch for results from actual operating sites rather than assuming every proposed benefit will appear automatically.",
+        ],
+      },
+      {
+        heading: "Caterpillar gives FieldAI a serious proving ground",
+        paragraphs: [
+          "Caterpillar reported $67.6 billion in sales and revenue for 2025. Its products operate across construction sites, mines, factories, energy projects, and transportation systems. That reach gives FieldAI access to a much wider set of machines and operating conditions than a robotics startup could reproduce on its own.",
+          "The relationship can work in the other direction too. Caterpillar has decades of machine data and a long history with autonomy, particularly in mining. FieldAI may help the company apply that knowledge across more robot types and more flexible tasks without creating a separate autonomy stack for every machine.",
+          "The global dealer network could eventually become part of deployment and support, although Caterpillar has not said that dealers will sell or service FieldAI products. That distinction matters. Industrial buyers care about installation, training, maintenance, cybersecurity, spare parts, and response time just as much as model performance.",
+          "For now, the agreement should be read as a development and commercialization signal. Caterpillar believes FieldAI has performed well enough in complex environments to justify deeper work. FieldAI gains one of the strongest possible industrial partners. What neither company has provided is the operating plan that connects the announcement to a repeatable product.",
+        ],
+      },
+      {
+        heading: "What still needs to be answered",
+        paragraphs: [
+          "The biggest open question is scope. The release refers to jobsites, factories, autonomy, and robotics, but it does not say whether FieldAI will first run on inspection robots, Cat equipment, third party machines, or a combination of all three.",
+          "The safety case is another unknown. Risk aware behavior is an important design goal, but an industrial deployment also needs validation procedures, operating limits, human oversight, cybersecurity controls, incident response, and clear responsibility when the system encounters something unexpected.",
+          "Commercial details are missing as well. Caterpillar and FieldAI did not disclose investment terms, contract value, pricing, exclusivity, customer commitments, or revenue expectations. The announcement also provides no fleet target or implementation schedule.",
+          "What comes next: named pilot sites, the first supported robot platforms, evidence from daily operations, and metrics that show whether the system improves inspection speed, safety, equipment availability, or project execution. The partnership has the right ingredients. The next test is whether those ingredients become a product customers can deploy repeatedly.",
+        ],
+      },
+    ],
+    sources: [
+      {
+        label: "Caterpillar announcement of its collaboration with FieldAI",
+        url: "https://www.caterpillar.com/en/news/corporate-press-releases/h/caterpillar-and-fieldai-advance-ai-powered-industrial-innovation.html",
+      },
+      {
+        label: "FieldAI news archive and Caterpillar announcement",
+        url: "https://www.fieldai.com/news",
+      },
+      {
+        label: "FieldAI overview of its industrial applications",
+        url: "https://www.fieldai.com/solutions",
+      },
+      {
+        label: "FieldAI explanation of its NVIDIA Omniverse workflow",
+        url: "https://www.fieldai.com/news/fieldai-and-nvidia-omniverse-building-the-next-generation-of-industrial-ai",
+      },
+      {
+        label: "FieldAI announcement of $405 million in funding",
+        url: "https://www.fieldai.com/news/fieldai-announces-over-400m-in-funds-raised-to-advance-embodied-ai-at-scale",
+      },
+      {
+        label: "Caterpillar and NVIDIA industrial AI collaboration",
+        url: "https://www.caterpillar.com/en/news/corporate-press-releases/h/cat-nvidia-collab.html",
+      },
+      {
+        label: "Construction Dive coverage of the Caterpillar and FieldAI collaboration",
+        url: "https://www.constructiondive.com/news/caterpillar-partners-fieldai-equipment-automation/829708/",
+      },
+      {
+        label: "FieldAI and Boston Dynamics construction robotics partnership",
+        url: "https://www.fieldai.com/news/boston-dynamics-and-fieldai-partner-to-bring-robots-into-uncharted-and-dynamic-environments",
+      },
+    ],
+  },
+  {
     slug: "lyte-raises-165-million-physical-ai-perception",
     title:
       "Lyte raises $165 million at $1.6 billion valuation as investors pile into physical AI",
