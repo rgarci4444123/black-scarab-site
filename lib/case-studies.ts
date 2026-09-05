@@ -12115,6 +12115,1033 @@ const intuitiveDaVinci5DeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const fieldAiDeepDive = (): CaseStudyArticle => ({
+  slug: "fieldai-edge-robot-foundation-model-industrial-autonomy-deep-dive",
+  title:
+    "FieldAI Deep Dive: Robot Foundation Models, Hardware Stack, Customers, and Pricing",
+  summary:
+    "A complete analysis of FieldAI's EDGE robot brain, Field Foundation Models, hardware and sensor stack, digital twin pipeline, customers, business model, pricing, and deployment tradeoffs.",
+  publishedLabel: "Deep Dive · Published September 5, 2026",
+  publishedDate: "2026-09-05",
+  typeLabel: "Deep Dive",
+  formatLabel: "Technology, hardware, and commercial analysis",
+  industry: "Cross Industry",
+  image: "/article-images/fieldai-edge-robot-foundation-model-deep-dive.png",
+  imageAlt:
+    "Editorial visualization of a quadruped, wheeled rover, and humanoid sharing an industrial autonomy and digital twin system",
+  seoDescription:
+    "FieldAI deep dive covering the EDGE robot brain, Field Foundation Models, hardware and sensors, customers, business model, pricing, ROI, competitors, and deployment risks.",
+  tags: [
+    "FieldAI",
+    "Field Foundation Models",
+    "EDGE robot brain",
+    "industrial autonomy",
+    "physical AI",
+  ],
+  author: {
+    name: "Rodolfo Garcia Calderoni, CFA",
+    href: "/about",
+  },
+  sections: [
+    {
+      paragraphs: [
+        "FieldAI is trying to own one of the most valuable layers in industrial robotics without committing itself to a single robot body. Its product is an autonomy system that can be installed on machines made by other companies, then adapted across construction sites, factories, mines, energy facilities, security operations, and other places where fixed automation struggles.",
+        "The company calls its product EDGE. Underneath EDGE are Field Foundation Models, or FFMs, built around a predictive component called the Belief World Model. FieldAI says this architecture helps robots reason about physics, uncertainty, and risk while making decisions locally on the machine.",
+        "That is a more ambitious proposition than selling navigation software. FieldAI wants one intelligence layer to work across quadrupeds, wheeled rovers, tracked machines, flying systems, humanoids, sensors, missions, and customer workflows. The commercial question is whether that common core can scale without every deployment turning into a custom engineering project.",
+      ],
+      links: [
+        {
+          label: "Caterpillar and FieldAI news report",
+          href: "/news/caterpillar-fieldai-industrial-ai-robots-digital-twins",
+          description:
+            "Black Scarab's concise report on the September 2026 Caterpillar collaboration.",
+        },
+      ],
+    },
+    {
+      heading: "Executive View",
+      paragraphs: [
+        "FieldAI is best understood as a general purpose robot intelligence company with an enterprise deployment model. It combines an edge compute payload, risk aware autonomy software, robot and sensor integrations, mission applications, customer workflow connections, and a data pipeline for simulation and model improvement.",
+        "Its strongest evidence comes from construction. FieldAI and Boston Dynamics say customers using FieldAI on Spot have reduced inspection and documentation time by more than 90 percent. A DPR Construction case study reports more than 45,000 photos, more than 100 miles of autonomous travel, four mapped floors, and 125,000 square feet of roof documentation during one deployment phase. Those figures are meaningful, but they were published by FieldAI and its partners rather than an independent evaluator.",
+        "FieldAI does not publish pricing, hardware specifications for EDGE, recognized revenue, gross margin, renewal rates, or a complete customer list. A buyer can see evidence of deployments and large commercial interest, but still needs a direct quotation, technical validation, cybersecurity review, safety case, and reference calls before treating the platform as production infrastructure.",
+      ],
+      tables: [
+        {
+          title: "FieldAI at a Glance",
+          columns: ["Dimension", "Current Position", "Buyer Implication"],
+          rows: [
+            [
+              "Core product",
+              "EDGE, a general purpose robot brain powered by Field Foundation Models and a Belief World Model.",
+              "The buyer is purchasing an autonomy layer and deployment system, not only a robot body.",
+            ],
+            [
+              "Hardware model",
+              "FieldAI installs compute and sensors on third party robots across several form factors.",
+              "Robot selection, payload capacity, power, mobility, service, and warranty remain part of the procurement decision.",
+            ],
+            [
+              "Primary use cases",
+              "Inspection, mapping, documentation, monitoring, digital twins, anomaly detection, security, and material movement.",
+              "The clearest near term value comes from repetitive data collection in difficult environments.",
+            ],
+            [
+              "Commercial model",
+              "Enterprise pilots, deployment contracts, software licenses, and multiyear service agreements that can combine hardware, software, and AI services.",
+              "Pricing and contract structure are negotiated rather than selected from a public rate card.",
+            ],
+            [
+              "Public traction",
+              "$405 million raised, a reported $2 billion valuation, deployments across three continents, and several named strategic relationships.",
+              "Capital and partners support expansion, but do not replace product level diligence.",
+            ],
+            [
+              "Main risk",
+              "A broad promise across robots, sites, and missions can hide substantial integration and support work.",
+              "The buyer must verify how much of the solution is reusable and how much is specific to its site.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Company Behind the System",
+      paragraphs: [
+        "FieldAI was founded in 2023 by Ali Agha and a team with deep experience in field robotics. Agha previously spent seven years at NASA's Jet Propulsion Laboratory and led autonomy work connected to the DARPA Subterranean Challenge, off road autonomous vehicles, Mars cave exploration, and coordinated robot teams.",
+        "The broader team includes veterans of NASA JPL, DARPA programs, DeepMind, Google Brain, Tesla Autopilot, NVIDIA, Amazon, SpaceX, Zoox, Cruise, Boston Dynamics, and Toyota Research Institute. That background explains the company's emphasis on uncertainty, harsh environments, and systems that must keep working when the map or communications link disappears.",
+        "FieldAI stayed relatively quiet while building the product, then disclosed $405 million across two financing rounds in August 2025. Axios reported that the initial $91 million was raised at a $400 million valuation before the investment and that the later capital brought the company to a $2 billion valuation after the investment.",
+        "A June 2026 report said FieldAI had surpassed $100 million in combined revenue and customer contracts across roughly 30 accounts. The wording matters. Combined revenue and contract value is not the same as annual recurring revenue, recognized revenue, cash collected, or a recurring software run rate. FieldAI has not disclosed the mix.",
+      ],
+      tables: [
+        {
+          title: "Capital and Commercial Signals",
+          columns: ["Period", "Public Signal", "What It Establishes"],
+          rows: [
+            [
+              "2023",
+              "FieldAI begins operations after years of related field robotics work by the founding team.",
+              "The company itself is young even though its technical lineage is older.",
+            ],
+            [
+              "Initial financing",
+              "$91 million reported at a $400 million valuation before the investment.",
+              "Substantial early backing for a company building both research and deployment capacity.",
+            ],
+            [
+              "August 2025",
+              "$314 million additional financing, bringing disclosed funding to $405 million and reported valuation to $2 billion.",
+              "Investors funded global commercialization before detailed financial statements were public.",
+            ],
+            [
+              "June 2026",
+              "More than $100 million in combined revenue and customer contracts across approximately 30 accounts, according to reporting.",
+              "Evidence of customer budgets, but insufficient disclosure to calculate recurring revenue or average contract economics.",
+            ],
+            [
+              "September 2026",
+              "Collaboration with Caterpillar following work with Boston Dynamics, NVIDIA, Ouster, Certis, DPR, and Big D.",
+              "The partner network is expanding across hardware, sensing, compute, and industrial distribution.",
+            ],
+          ],
+          note:
+            "FieldAI is privately held. Funding, valuation, contract value, and deployment claims should not be interpreted as audited financial results.",
+        },
+      ],
+    },
+    {
+      heading: "What FieldAI Actually Sells",
+      paragraphs: [
+        "FieldAI's website presents EDGE as a general purpose robot brain. The buyer does not receive a disembodied model file and solve the rest alone. A production deployment brings together a robot, an onboard compute payload, sensors, FieldAI software, mission configuration, workflow integration, support, and the data systems that turn robot observations into an operational result.",
+        "The simplest public explanation came from Agha in an Axios interview. He said FieldAI needs a machine that a person can control with a joystick, then installs its own box to replace that human control loop. On a humanoid the box can resemble a backpack. On a quadruped it sits on the robot's back.",
+        "That description is useful, but incomplete. FieldAI does not publish the EDGE processor, memory, power draw, thermal envelope, dimensions, weight, ingress protection, safety certification, supported middleware, or interface list. Buyers should request the current hardware specification because those details determine which robots and environments are practical.",
+      ],
+      tables: [
+        {
+          title: "The Product Stack",
+          columns: ["Layer", "What FieldAI Provides", "What the Customer Still Needs"],
+          rows: [
+            [
+              "EDGE",
+              "The deployable robot brain that runs autonomy on the machine.",
+              "A supported robot, power, mounting, environmental protection, and an approved integration design.",
+            ],
+            [
+              "Field Foundation Models",
+              "The model family that connects perception, physical reasoning, uncertainty, navigation, and action.",
+              "Validation for the selected robot, mission, environment, and operating limits.",
+            ],
+            [
+              "Belief World Model",
+              "A predictive representation used to reason about uncertain observations and possible outcomes.",
+              "Clear thresholds for slowing, stopping, escalation, and human intervention.",
+            ],
+            [
+              "Mission applications",
+              "Inspection, mapping, monitoring, documentation, security, transport, and other configured workflows.",
+              "A precise definition of the task, expected outputs, frequency, and success criteria.",
+            ],
+            [
+              "Site intelligence",
+              "Three dimensional reconstruction, digital twin outputs, anomaly data, and connections into customer systems.",
+              "Data ownership, retention, cybersecurity, integration, and the people who act on the information.",
+            ],
+            [
+              "Deployment services",
+              "Integration, commissioning, customer success, support, and commercial terms.",
+              "Site readiness, safety governance, training, maintenance, and budget authority.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Complete Hardware Basket",
+      paragraphs: [
+        "FieldAI is hardware independent at the model level, but every deployment is still a physical system. The robot must carry the compute, sensors, payloads, power, communications equipment, and safety hardware needed for the mission. A buyer who budgets only for software will miss most of the operational design.",
+        "The exact basket changes by use case. A construction documentation robot may need a quadruped, color cameras, LiDAR, a stable mounting system, and a connection into BIM software. An energy inspection robot may add thermal imaging, acoustic sensing, gas detection, and gauge reading. A security deployment may require night vision, a command center connection, and procedures for human escalation.",
+        "Ouster announced in June 2026 that FieldAI is using its digital LiDAR and plans to integrate the Rev8 family. FieldAI also describes vision, depth, LiDAR, thermal, acoustic, and other sensor modalities across its public materials. It does not publish one mandatory sensor configuration, which is consistent with a platform designed for many robot types.",
+      ],
+      tables: [
+        {
+          title: "Hardware and Infrastructure Components",
+          columns: ["Component", "Typical Role", "Buyer Questions"],
+          rows: [
+            [
+              "Robot body",
+              "Provides mobility through a quadruped, wheeled, tracked, flying, or humanoid platform.",
+              "Can it traverse the terrain, stairs, doors, slopes, debris, and weather at the site?",
+            ],
+            [
+              "EDGE compute payload",
+              "Runs FieldAI models and the real time autonomy loop locally.",
+              "What processor, power, cooling, latency, redundancy, and environmental rating are included?",
+            ],
+            [
+              "Navigation sensors",
+              "Cameras, depth sensing, LiDAR, inertial data, and robot state establish location and traversability.",
+              "Which sensors are required, what happens when one degrades, and how are they calibrated?",
+            ],
+            [
+              "Inspection payloads",
+              "Thermal, acoustic, gas, gauge, or custom sensors collect task specific evidence.",
+              "Are measurements accurate, traceable, synchronized, and approved for the environment?",
+            ],
+            [
+              "Safety hardware",
+              "Emergency stop, lights, audible alerts, bump sensing, speed limits, and physical guards reduce exposure.",
+              "Which controls are independent of the AI system and who can stop the robot?",
+            ],
+            [
+              "Power and charging",
+              "Robot batteries and charging or docking determine mission duration and labor requirements.",
+              "How many missions fit between charges and can the robot dock without assistance?",
+            ],
+            [
+              "Connectivity",
+              "Local wireless, cellular, private networks, or delayed upload move data and support remote operations.",
+              "What works offline, what requires a network, and how does the system recover from interruption?",
+            ],
+            [
+              "Customer infrastructure",
+              "Storage, digital twin tools, BIM, asset systems, command software, and analytics turn observations into action.",
+              "Where does data live, which interfaces are supported, and who owns each integration?",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "How the System Fits Together",
+      paragraphs: [
+        "A FieldAI deployment begins with the mission rather than the model. The customer defines what must be observed or moved, where the robot will operate, which conditions are unacceptable, and which business process receives the result. The robot and sensor basket can then be selected around that requirement.",
+        "During operation, sensors observe the environment and the robot's own state. EDGE processes those inputs, updates the Belief World Model, evaluates possible actions, and sends commands to the robot controller. Mission outputs can remain local, move into the customer's software, or feed the digital twin and model development pipeline.",
+      ],
+      tables: [
+        {
+          title: "From Mission to Operational Result",
+          columns: ["Stage", "System Activity", "Control Point"],
+          rows: [
+            [
+              "1. Define",
+              "Customer specifies the route objective, inspection task, payload data, frequency, and success metric.",
+              "The mission has measurable value and a clear owner.",
+            ],
+            [
+              "2. Configure",
+              "FieldAI and the customer select a robot, EDGE payload, sensors, safety controls, and integrations.",
+              "Every component is approved for the site and task.",
+            ],
+            [
+              "3. Observe",
+              "Cameras, LiDAR, depth, inertial, robot state, and task sensors capture the current environment.",
+              "Sensor quality and failure states are monitored.",
+            ],
+            [
+              "4. Model",
+              "The Belief World Model estimates the state of the world and uncertainty around that estimate.",
+              "Confidence thresholds reflect the consequence of failure.",
+            ],
+            [
+              "5. Decide",
+              "Field Foundation Models evaluate movement, route, mission progress, and risk.",
+              "Operating limits determine when to continue, slow, stop, or request help.",
+            ],
+            [
+              "6. Act",
+              "EDGE sends commands through the robot controller while continuing to observe the result.",
+              "Independent emergency controls remain available.",
+            ],
+            [
+              "7. Deliver",
+              "Images, scans, readings, alerts, maps, or transport outcomes move into the customer workflow.",
+              "The output reaches the person or system responsible for action.",
+            ],
+            [
+              "8. Learn",
+              "Selected field data can support reconstruction, simulation, validation, and future model updates.",
+              "Data rights, privacy, security, and change control are governed contractually.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Field Foundation Models and the Belief World Model",
+      paragraphs: [
+        "Most robot autonomy systems combine perception, localization, mapping, planning, and control. FieldAI packages those functions inside a broader model architecture intended to transfer across machines and tasks. The company distinguishes its approach from systems that send raw sensor data through one large model and directly produce motor commands.",
+        "FieldAI describes FFMs as physics first. Learned models still matter, but they are combined with probabilistic reasoning about how the machine and environment may behave. The Belief World Model maintains estimates rather than pretending every observation is certain.",
+        "This is important because industrial sensing is imperfect. Dust can weaken LiDAR returns. Glare can confuse cameras. A wet floor changes traction. A hanging cable may move between observations. The useful question is not only what the robot sees, but how confident it should be and what could happen if that interpretation is wrong.",
+        "Risk aware behavior can mean slowing down, observing again, taking a different route, asking for human assistance, or stopping. That is a sound system principle. It is not the same as a regulatory approval, a safety integrity level, or a guarantee that the robot will never fail. Buyers must verify how FieldAI's internal risk estimates connect to independent safety controls and site procedures.",
+      ],
+    },
+    {
+      heading: "Robot Agnostic Does Not Mean Plug and Play",
+      paragraphs: [
+        "FieldAI's central product advantage is portability. If the same autonomy core can move from a quadruped to a wheeled rover or humanoid, the company can sell intelligence across hardware cycles and customers can avoid rebuilding every workflow around one machine.",
+        "The phrase robot agnostic should not be interpreted as instant compatibility. Every platform has different kinematics, control rates, payload limits, brakes, failure modes, batteries, network interfaces, and safety behavior. A machine that can be controlled manually provides a starting point, but the integration still requires an adapter, testing, tuning, and an approved operating envelope.",
+        "The real commercial test is reuse. A buyer should ask how much of the model, mission, dashboard, data pipeline, and safety case transfers from an existing deployment. If most elements transfer, FieldAI behaves like a scalable platform. If each site requires extensive custom engineering, it behaves more like a valuable systems integrator.",
+      ],
+      tables: [
+        {
+          title: "Robot Form Factors and Likely Roles",
+          columns: ["Form Factor", "Strength", "Typical FieldAI Mission", "Constraint"],
+          rows: [
+            [
+              "Quadruped",
+              "Stairs, uneven surfaces, narrow spaces, and mature inspection payloads.",
+              "Construction documentation, facility inspection, mapping, and overnight patrol.",
+              "Limited payload, battery duration, and manipulation without an added arm.",
+            ],
+            [
+              "Wheeled rover",
+              "Efficient travel, longer endurance, stable sensor mounting, and lower mechanical complexity.",
+              "Large floor inspection, security patrol, delivery, and data collection.",
+              "Stairs, debris, curbs, and rough ground can restrict access.",
+            ],
+            [
+              "Tracked vehicle",
+              "Traction and stability on rough or loose terrain.",
+              "Off road mapping, mining, federal, and hazardous environment observation.",
+              "Surface damage, speed, maneuverability, and maintenance.",
+            ],
+            [
+              "Flying robot",
+              "Rapid access to vertical, elevated, or inaccessible areas.",
+              "Mapping, inspection, search, and situational awareness.",
+              "Flight time, regulation, confined spaces, weather, and collision consequence.",
+            ],
+            [
+              "Humanoid",
+              "Potential access to spaces, tools, and workflows designed for people.",
+              "Mobile inspection today and broader manipulation as the hardware matures.",
+              "Cost, endurance, dexterity, stability, safety, and service maturity.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The NVIDIA Training and Digital Twin Pipeline",
+      paragraphs: [
+        "FieldAI's runtime autonomy is designed to operate at the edge, but its development and site intelligence workflow uses substantial external infrastructure. The company has built a close relationship with NVIDIA across simulation, reconstruction, synthetic data, and accelerated computing.",
+        "Robots gather vision, depth, LiDAR, and other data during ordinary missions. NVIDIA Omniverse NuRec can turn that information into a detailed three dimensional reconstruction. The reconstructed site can then move into Isaac Sim and Isaac Lab for scenario testing, policy training, and software validation.",
+        "FieldAI also uses NVIDIA OSMO to coordinate model development workflows and says it is adopting the NVIDIA Physical AI Data Factory Blueprint through Microsoft Azure, including NVIDIA Cosmos models. The goal is to combine real deployment data with synthetic variations so the autonomy system encounters more conditions before the next release reaches a customer site.",
+        "This creates a potential data flywheel. More robots produce more diverse field data. That data produces more realistic digital environments. Better environments expand testing and training. Improved models can support more deployments. The advantage depends on data rights, data quality, labeling, privacy, and whether experience from one customer can legally and technically benefit another.",
+      ],
+      tables: [
+        {
+          title: "NVIDIA Components in the FieldAI Workflow",
+          columns: ["Technology", "Role", "Buyer Relevance"],
+          rows: [
+            [
+              "Accelerated compute",
+              "Supports model development, simulation, and potentially selected edge configurations.",
+              "Compute requirements influence cost, release cadence, and hardware availability.",
+            ],
+            [
+              "Omniverse NuRec",
+              "Reconstructs interactive three dimensional environments from robot sensor data.",
+              "A routine robot mission can contribute to a current digital twin without a separate scanning project.",
+            ],
+            [
+              "Isaac Sim",
+              "Runs software tests and scenario evaluation inside reconstructed environments.",
+              "Customer conditions can become repeatable validation cases before updates return to the site.",
+            ],
+            [
+              "Isaac Lab",
+              "Supports parallel robot learning and policy development.",
+              "Synthetic variation can supplement scarce or dangerous field examples.",
+            ],
+            [
+              "OSMO",
+              "Coordinates data ingestion, reconstruction, training, and validation workflows.",
+              "Automation helps new deployment data move through the development pipeline consistently.",
+            ],
+            [
+              "Cosmos and Azure tooling",
+              "Supports world generation and synthetic data production.",
+              "The customer should understand which data leaves the site and which cloud services are involved.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Where FieldAI Is Being Applied",
+      paragraphs: [
+        "FieldAI's common thread is not one industry. It is work performed in changing environments where data collection is repetitive, access is difficult, or the consequence of sending a person is high. Inspection and documentation are the strongest current applications because they create value before the robot is trusted to manipulate critical equipment.",
+        "The platform can support several missions during one trip. A construction robot might capture progress imagery, scan the site, identify standing water, document blocked exits, and perform a security pass. Combining tasks improves utilization, but it also expands the validation and data integration burden.",
+      ],
+      tables: [
+        {
+          title: "Buyer Use Cases by Industry",
+          columns: ["Industry", "Mission", "Output", "Possible Value"],
+          rows: [
+            [
+              "Construction",
+              "Progress capture, mapping, safety observation, quality review, and material movement.",
+              "Images, scans, BIM comparison, deviations, and daily site records.",
+              "Less manual walking, fresher documentation, earlier rework detection, and broader coverage.",
+            ],
+            [
+              "Industrial and energy",
+              "Equipment rounds, thermal and acoustic inspection, gauge reading, and anomaly monitoring.",
+              "Condition readings, alerts, maps, and asset history.",
+              "Reduced exposure, more frequent inspection, and earlier maintenance decisions.",
+            ],
+            [
+              "Manufacturing",
+              "Facility mapping, critical equipment inspection, flow observation, and digital twin updates.",
+              "Current plant model, equipment data, and operating observations.",
+              "Better visibility, downtime prevention, and layout optimization.",
+            ],
+            [
+              "Mining",
+              "Underground mapping, survey, remote inspection, and situational awareness without GPS.",
+              "Three dimensional maps, imagery, hazards, and route intelligence.",
+              "Access to difficult areas with less worker exposure.",
+            ],
+            [
+              "Security and urban operations",
+              "Patrol, remote observation, delivery, perimeter monitoring, and escalation.",
+              "Events, images, maps, alerts, and teleoperation feeds.",
+              "Consistent coverage and coordination with human teams.",
+            ],
+            [
+              "Power and utilities",
+              "Hazardous area inspection, infrastructure mapping, and condition monitoring.",
+              "Thermal, visual, acoustic, and spatial evidence.",
+              "More frequent inspection and faster response to developing faults.",
+            ],
+            [
+              "Federal",
+              "Unmapped terrain navigation, observation, multi robot coordination, and remote data collection.",
+              "Maps, sensor intelligence, routes, and points of interest.",
+              "Operation in contested, remote, or communications limited environments.",
+            ],
+            [
+              "Agriculture",
+              "Large area observation, repetitive field work, mapping, and transport.",
+              "Crop and terrain data, routes, events, and task completion records.",
+              "Labor support and consistent coverage over large outdoor areas.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Customers, Partners, and Evidence",
+      paragraphs: [
+        "FieldAI says its systems have operated at hundreds of sites across North America, Europe, and Asia. It does not publish a complete customer list or a consistent definition of deployment. The most useful public evidence comes from named construction customers and strategic partners.",
+        "DPR provides the clearest workload details. Big D provides evidence of expansion beyond a single trial. Boston Dynamics confirms integration with Spot. Certis shows a model for combining robots with human command operations. Ouster confirms a production sensing relationship. Caterpillar creates a path into heavy equipment, factories, and customer jobsites, although no specific machine or deployment has been announced.",
+        "The evidence is promising but uneven. Most performance figures come from FieldAI or joint partner materials. Buyers should request reference calls, operating logs, mission completion rates, intervention data, incident history, and results from an environment that resembles their own.",
+      ],
+      tables: [
+        {
+          title: "Publicly Identified Relationships",
+          columns: ["Organization", "Relationship", "Public Evidence", "Remaining Question"],
+          rows: [
+            [
+              "DPR Construction",
+              "Construction deployment customer",
+              "More than 45,000 photos, more than 100 miles traveled, four floors mapped, and 125,000 square feet of roof documented during a deployment phase.",
+              "Contract size, intervention rate, time period, and independent return calculation are not public.",
+            ],
+            [
+              "Big D Construction",
+              "Construction customer expanding across its project portfolio",
+              "FieldAI describes movement from individual deployments toward wider company adoption.",
+              "Fleet count, commercial terms, and standardized rollout schedule are not public.",
+            ],
+            [
+              "Boston Dynamics",
+              "Robot platform and go to market partner",
+              "Joint integration of Field Foundation Models with Spot for inspection, mapping, and monitoring.",
+              "Division of support, software ownership, and customer contract responsibility should be confirmed.",
+            ],
+            [
+              "Caterpillar",
+              "Industrial technology collaborator",
+              "Work planned across autonomous inspection, digital twins, situational awareness, and operational optimization.",
+              "No product, customer site, robot count, price, or launch date has been disclosed.",
+            ],
+            [
+              "Certis",
+              "Security and operations partner",
+              "Integration with the Mozart command platform for robots working alongside human security teams.",
+              "Initial deployment scale and measured operating results are not public.",
+            ],
+            [
+              "Ouster",
+              "LiDAR sensing partner",
+              "FieldAI already uses Ouster digital LiDAR and plans Rev8 integration.",
+              "Sensor configuration, volume, unit economics, and supported robot list are not public.",
+            ],
+            [
+              "NVIDIA",
+              "Compute, simulation, reconstruction, and investor relationship",
+              "FieldAI uses Omniverse NuRec, Isaac Sim, Isaac Lab, OSMO, Cosmos tooling, and NVIDIA accelerated infrastructure.",
+              "Exact edge hardware and the cost of the complete development pipeline are not public.",
+            ],
+          ],
+          note:
+            "Relationships are not interchangeable. Some organizations are customers, some are technology suppliers, and others are strategic collaborators.",
+        },
+      ],
+    },
+    {
+      heading: "The Business Model",
+      paragraphs: [
+        "FieldAI appears to use a direct enterprise sales model supported by hardware and technology partners. The company develops the autonomy layer, integrates it with selected robots and sensors, configures missions, connects customer systems, and supports deployments over time.",
+        "A current FieldAI commercial legal role describes pilot programs, deployment contracts, software as a service licenses, and multiyear service agreements. It also refers to complex deals that combine hardware, software, and AI services. That is the clearest public evidence of how FieldAI structures revenue.",
+        "The likely commercial motion is to begin with one high value workflow, prove that the robot can operate reliably, and then expand across missions, robots, sites, or business units. FieldAI says several customers have moved from trials into fleet scale or longer term production deployments. That expansion creates recurring software and service potential if the integration can be reused.",
+        "The model can be attractive because FieldAI does not need to manufacture every robot. It can capture software economics across hardware platforms while partners carry much of the mechanical production and field service burden. The risk is that complex industrial deployments still require expensive engineers, site support, custom integration, and liability management.",
+      ],
+      tables: [
+        {
+          title: "How FieldAI Can Generate Revenue",
+          columns: ["Revenue Component", "Buyer Receives", "Recurring Potential"],
+          rows: [
+            [
+              "Pilot program",
+              "A bounded deployment used to validate mobility, mission completion, data quality, safety, and workflow value.",
+              "Low until the pilot converts into production.",
+            ],
+            [
+              "Deployment contract",
+              "Integration, commissioning, configured hardware, site setup, and acceptance testing.",
+              "Primarily project based, with expansion when more sites or robots are added.",
+            ],
+            [
+              "Software license",
+              "Access to EDGE autonomy, Field Foundation Models, mission capabilities, and updates.",
+              "Potentially recurring by robot, site, capability, usage, or enterprise agreement. FieldAI does not publish the unit.",
+            ],
+            [
+              "AI and data services",
+              "Model adaptation, digital twin workflows, analytics, simulation, and customer specific development.",
+              "Recurring when tied to ongoing data processing, model releases, or managed operations.",
+            ],
+            [
+              "Support and service",
+              "Monitoring, updates, maintenance coordination, customer success, training, and incident response.",
+              "Often structured as a recurring service obligation.",
+            ],
+            [
+              "Partner channel",
+              "A combined offer involving a robot maker, sensor company, industrial partner, or operations provider.",
+              "Can widen distribution while sharing economics and customer responsibility.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "How Much Does FieldAI Cost?",
+      paragraphs: [
+        "FieldAI does not publish a list price for EDGE, its software, deployment services, or support. There is no credible public rate that can be presented as a FieldAI subscription or a complete installed system price. The correct answer today is enterprise quotation only.",
+        "A buyer should expect the proposal to reflect robot type, robot count, sensor payload, mission complexity, environment, safety requirements, integrations, data volume, support coverage, travel, and contract length. A simple indoor documentation mission and an underground multi robot deployment are not comparable purchases.",
+        "The reported $100 million in combined revenue and contracts across approximately 30 customers should not be divided into an average price. Contract values are usually uneven, may include future commitments, and can combine hardware, services, software, and expansion options. Only a detailed quotation can establish the cost of a specific deployment.",
+      ],
+      tables: [
+        {
+          title: "The Cost Basket a Buyer Should Request",
+          columns: ["Cost Area", "Public Price", "What Must Be Quoted"],
+          rows: [
+            [
+              "Robot platform",
+              "Not published by FieldAI",
+              "Purchase or lease, accessories, batteries, charger, dock, warranty, spares, and manufacturer support.",
+            ],
+            [
+              "EDGE hardware",
+              "Not published",
+              "Compute payload, mounting, environmental protection, networking, installation, and replacement terms.",
+            ],
+            [
+              "Sensors and payloads",
+              "Not published as a bundle",
+              "Cameras, LiDAR, thermal, acoustic, gas, gauge, calibration, and application specific equipment.",
+            ],
+            [
+              "Software",
+              "Not published",
+              "License unit, included capabilities, update rights, usage limits, additional robots, and additional sites.",
+            ],
+            [
+              "Integration",
+              "Not published",
+              "Robot adapter, mission setup, BIM, digital twin, command software, asset systems, APIs, and acceptance tests.",
+            ],
+            [
+              "Deployment",
+              "Not published",
+              "Site survey, travel, commissioning, safety validation, training, documentation, and go live support.",
+            ],
+            [
+              "Recurring operations",
+              "Not published",
+              "Monitoring, customer success, model updates, cloud services, data storage, support hours, and service level.",
+            ],
+            [
+              "Internal ownership",
+              "Customer specific",
+              "Operator time, safety staff, network, cybersecurity, maintenance, workflow changes, insurance, and program management.",
+            ],
+          ],
+          note:
+            "A useful proposal separates one time deployment cost, recurring software and service cost, third party hardware, optional services, and the customer's internal operating cost.",
+        },
+      ],
+    },
+    {
+      heading: "The Buyer Economics",
+      paragraphs: [
+        "FieldAI should be evaluated against the cost and quality of the workflow it replaces, not against the cost of a person alone. A manual inspection may consume walking time, travel, safety preparation, data organization, upload, and later review. A delayed observation can also create rework, downtime, or missed maintenance that is far more expensive than the inspection itself.",
+        "A robot can improve the economics by collecting several data types during one mission and repeating the same coverage more often. The value grows when the resulting images, scans, and readings flow directly into systems the customer already uses. A robot that collects data nobody reviews is not automation. It is an expensive camera tour.",
+        "FieldAI and Boston Dynamics report more than 90 percent reductions in inspection and documentation time for some construction customers. FieldAI also cites an unnamed manufacturer that reduced a process from three and a half months to 12 hours. These are company supplied examples and should be verified against the exact workflow, labor baseline, and quality standard before they enter a business case.",
+      ],
+      tables: [
+        {
+          title: "Metrics That Determine Return",
+          columns: ["Metric", "Baseline", "Production Measure"],
+          rows: [
+            [
+              "Coverage",
+              "Area, assets, or routes inspected manually per shift.",
+              "Useful area, assets, or routes completed autonomously per shift.",
+            ],
+            [
+              "Intervention",
+              "Human time required to collect and organize the same evidence.",
+              "Remote assists, physical rescues, resets, and supervision hours per mission.",
+            ],
+            [
+              "Data quality",
+              "Missing images, inconsistent viewpoints, measurement error, and delayed upload.",
+              "Usable observations, repeatability, calibration quality, and time to customer system.",
+            ],
+            [
+              "Risk exposure",
+              "Human entries into hazardous, remote, elevated, hot, dark, or unstable areas.",
+              "Entries avoided and residual exposure created by robot recovery or maintenance.",
+            ],
+            [
+              "Issue detection",
+              "Time between condition change, observation, review, and corrective action.",
+              "Issues found earlier, avoided downtime, avoided rework, and false alert burden.",
+            ],
+            [
+              "Utilization",
+              "Current frequency and coverage limitations.",
+              "Productive missions per day, charging time, downtime, and unused capacity.",
+            ],
+            [
+              "Total cost",
+              "Labor, travel, tools, contractors, incidents, rework, and delay.",
+              "Hardware, software, integration, support, internal staff, maintenance, and residual manual work.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Competitive Positioning",
+      paragraphs: [
+        "FieldAI competes across several categories at once. A buyer can purchase a robot with its manufacturer's autonomy software, add a specialist navigation and mapping layer, work with a general robot foundation model company, or build a custom stack internally.",
+        "FieldAI's differentiation is the combination of cross robot portability, edge operation, physics based probabilistic reasoning, field deployment experience, and a growing industrial data pipeline. Its focus is broader than an inspection robot and more deployment oriented than a research model provider.",
+        "That breadth can be valuable for a company that wants a common autonomy layer across several machines. It can be unnecessary for a buyer that needs one proven inspection package from one manufacturer. The most advanced architecture is not always the lowest risk procurement choice.",
+        [
+          "Related Black Scarab analysis includes ",
+          physicalIntelligenceArticleLink,
+          ", ",
+          skildAiArticleLink,
+          ", ",
+          bostonDynamicsSpotArticleLink,
+          ", ",
+          anyboticsAnymalArticleLink,
+          ", and ",
+          ousterArticleLink,
+          ".",
+        ],
+      ],
+      tables: [
+        {
+          title: "FieldAI Versus the Main Alternatives",
+          columns: ["Approach", "Best Fit", "Advantage", "Tradeoff"],
+          rows: [
+            [
+              "FieldAI EDGE",
+              "Dynamic sites, multiple robot types, edge autonomy, and enterprise workflow integration.",
+              "One intelligence layer across several embodiments and missions.",
+              "Pricing and technical specifications are private, and integration depth must be verified.",
+            ],
+            [
+              "Robot maker software",
+              "A buyer standardizing on one mature robot and its supported applications.",
+              "Clearer ownership, warranty, support, and hardware integration.",
+              "Less portability across robot brands and possibly less flexibility in highly changing environments.",
+            ],
+            [
+              "Specialist autonomy and mapping",
+              "A defined navigation, survey, or mapping problem in a known vehicle category.",
+              "Focused capability with narrower evaluation criteria.",
+              "May not cover broader missions, manipulation, or cross robot intelligence.",
+            ],
+            [
+              "General robot foundation model",
+              "Organizations prioritizing broad learned skills, manipulation, or internal research.",
+              "Potential transfer across tasks and embodiments.",
+              "Many platforms remain early in commercial deployment or require significant integration.",
+            ],
+            [
+              "Vertical autonomy company",
+              "A customer buying a complete outcome for one industry task.",
+              "Hardware, workflow, and business value can arrive as one package.",
+              "The buyer is tied to one task architecture and may have limited reuse elsewhere.",
+            ],
+            [
+              "Internal development",
+              "A large operator with strategic scale, unique requirements, and a permanent robotics team.",
+              "Maximum control over data, safety, product direction, and integration.",
+              "High cost, slow deployment, hiring difficulty, and continuous maintenance burden.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Benefits of the FieldAI Approach",
+      paragraphs: [
+        "The most important benefit is faster access to places where automation normally fails. Removing the requirement for a perfect prior map, fixed route, or constant cloud connection can make deployment practical on sites that change every day.",
+        "A second benefit is hardware choice. Customers can select a robot around terrain, payload, cost, and service rather than accepting one body because it contains the only available intelligence. That flexibility becomes more valuable as robot hardware improves.",
+        "A third benefit is data reuse. One robot mission can support inspection, documentation, mapping, safety review, digital twin updates, and future model validation. The customer receives more value from each trip if the outputs integrate cleanly into operating systems and decisions.",
+      ],
+      tables: [
+        {
+          title: "Where the Platform Can Create Value",
+          columns: ["Benefit", "Mechanism", "Condition Required"],
+          rows: [
+            [
+              "Rapid site entry",
+              "Autonomy is designed to operate without building a precise map or route first.",
+              "The robot still needs safe physical access and a validated mission boundary.",
+            ],
+            [
+              "Resilience",
+              "Edge decisions reduce dependence on network availability and round trip latency.",
+              "Local compute, sensors, power, and fail safe behavior must remain healthy.",
+            ],
+            [
+              "Hardware flexibility",
+              "A shared autonomy layer can move across several robot types.",
+              "Adapters, performance, and safety validation are available for the chosen platform.",
+            ],
+            [
+              "Worker protection",
+              "Robots collect information in difficult or hazardous locations.",
+              "Recovery and maintenance procedures do not recreate the same exposure.",
+            ],
+            [
+              "Fresher site data",
+              "Routine missions update maps, images, and digital twins more often.",
+              "The information reaches business systems and responsible decision makers quickly.",
+            ],
+            [
+              "Fleet learning",
+              "Deployment data enriches simulation and model validation.",
+              "Data rights, quality, privacy, and release governance support responsible reuse.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Limitations and Risks",
+      paragraphs: [
+        "FieldAI's public materials are strong on architecture and use cases but limited on product specifications. Buyers cannot publicly compare EDGE compute, environmental ratings, latency, support levels, uptime, cybersecurity controls, or certified safety performance. These facts must be obtained during procurement.",
+        "The system also depends on several companies. The robot body, sensors, compute, FieldAI software, cloud or simulation tools, customer applications, and field service may come from different providers. A failure between layers can create a support dispute unless responsibility is defined before deployment.",
+        "Cross customer learning introduces data questions. Industrial maps, equipment images, production conditions, safety observations, and facility layouts can be commercially sensitive. The contract should define what FieldAI collects, where it is processed, how long it is retained, whether it trains shared models, and how deletion is verified.",
+        "Finally, risk aware AI does not remove product liability. Robots can collide, fall, block routes, miss conditions, or create new hazards. The customer needs independent emergency controls, operating procedures, trained personnel, insurance, incident investigation, and a change approval process for every model or hardware update.",
+      ],
+      tables: [
+        {
+          title: "Risk Register for a Production Deployment",
+          columns: ["Risk", "Failure Example", "Mitigation"],
+          rows: [
+            [
+              "Mobility",
+              "Robot slips, falls, becomes trapped, or cannot complete the route.",
+              "Terrain testing, exclusion zones, recovery plan, route analytics, and suitable robot selection.",
+            ],
+            [
+              "Perception",
+              "Dust, glare, weather, occlusion, or sensor degradation creates a false world estimate.",
+              "Sensor diversity, health monitoring, conservative thresholds, cleaning, calibration, and stop behavior.",
+            ],
+            [
+              "Decision",
+              "The model chooses an unsafe or ineffective action in an unfamiliar condition.",
+              "Operating envelope, simulation, field validation, human escalation, and independent safety controls.",
+            ],
+            [
+              "Data",
+              "Sensitive site information is exposed, retained, or reused beyond customer expectations.",
+              "Data map, encryption, access control, regional processing, retention limits, and contractual training restrictions.",
+            ],
+            [
+              "Cybersecurity",
+              "An attacker gains control, changes a mission, or extracts operational data.",
+              "Network segmentation, strong identity, signed software, logging, vulnerability management, and incident response.",
+            ],
+            [
+              "Integration",
+              "Robot outputs fail to reach BIM, asset management, command, or maintenance workflows.",
+              "End to end acceptance tests, interface ownership, monitoring, and manual fallback.",
+            ],
+            [
+              "Commercial",
+              "Pilot succeeds technically but the production price or support model does not scale.",
+              "Production option, unit economics, renewal limits, service obligations, and exit rights agreed before pilot.",
+            ],
+            [
+              "Vendor continuity",
+              "A robot, sensor, software release, or partner relationship changes during the contract.",
+              "Road map commitments, substitution rights, data export, transition assistance, and spare capacity.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Buyer Diligence Checklist",
+      paragraphs: [
+        "FieldAI should be evaluated as a complete operating system rather than an isolated model. The diligence process must cover the robot, sensors, edge hardware, autonomy, data, integrations, service organization, economics, and legal allocation of risk.",
+        "The strongest pilot is designed backward from a production decision. It uses representative terrain and conditions, defines a measurable baseline, includes difficult edge cases, records every intervention, and locks the commercial framework that would apply if the buyer expands.",
+      ],
+      tables: [
+        {
+          title: "Questions to Answer Before Signing",
+          columns: ["Area", "Evidence to Request"],
+          rows: [
+            [
+              "Product",
+              "Current EDGE data sheet, supported robot list, sensor list, release policy, environmental limits, power, weight, compute, and interface documentation.",
+            ],
+            [
+              "Autonomy",
+              "Mission completion, intervention, localization, recovery, latency, sensor degradation, and unfamiliar event results from comparable sites.",
+            ],
+            [
+              "Safety",
+              "Hazard analysis, risk assessment, operating envelope, emergency controls, validation plan, incident history, and responsibility matrix.",
+            ],
+            [
+              "Cybersecurity",
+              "Architecture, software update process, vulnerability program, identity controls, encryption, logging, assurance reports, and breach obligations.",
+            ],
+            [
+              "Data",
+              "Data inventory, ownership, processing locations, model training rights, retention, deletion, subprocessors, export, and customer access.",
+            ],
+            [
+              "Integration",
+              "Named interfaces, customer system owners, data formats, API limits, monitoring, acceptance tests, and change management.",
+            ],
+            [
+              "Operations",
+              "Support hours, response and restoration targets, spare equipment, field service, remote access, maintenance, training, and escalation.",
+            ],
+            [
+              "Economics",
+              "Complete one time and recurring price, internal staffing, utilization assumption, productivity baseline, value metric, and expansion price.",
+            ],
+            [
+              "Contract",
+              "Performance commitments, warranties, liability, indemnity, insurance, intellectual property, confidentiality, termination, and transition assistance.",
+            ],
+            [
+              "References",
+              "Customer conversations from the same industry, robot type, mission, environment, and deployment scale.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "A Practical Deployment Roadmap",
+      paragraphs: [
+        "A FieldAI deployment should begin with one valuable and observable workflow. Inspection, documentation, mapping, or monitoring usually creates a cleaner starting point than manipulation or direct control of critical equipment because the customer can compare robot output with human work before expanding authority.",
+        "The program should scale only after reliability, data quality, safety, integration, and economics meet predetermined thresholds. Adding robots before the workflow is stable multiplies problems as quickly as it multiplies coverage.",
+      ],
+      tables: [
+        {
+          title: "From Evaluation to Fleet",
+          columns: ["Phase", "Objective", "Exit Gate"],
+          rows: [
+            [
+              "1. Baseline",
+              "Measure the current workflow, cost, time, coverage, quality, risk exposure, and issue detection.",
+              "A credible baseline and named business owner exist.",
+            ],
+            [
+              "2. Site design",
+              "Select robot, sensors, mission, route boundaries, data flow, safety controls, and integrations.",
+              "Technical and safety design is approved.",
+            ],
+            [
+              "3. Controlled validation",
+              "Test mobility, perception, stopping, recovery, sensor failure, network loss, and data delivery.",
+              "The system remains inside the agreed operating envelope.",
+            ],
+            [
+              "4. Shadow operation",
+              "Run the robot alongside the existing process and compare results without depending on it.",
+              "Data quality and issue detection meet or exceed the baseline.",
+            ],
+            [
+              "5. Production pilot",
+              "Use the robot in a real workflow with monitored human escalation and complete cost tracking.",
+              "Reliability, intervention, safety, integration, and return thresholds are met.",
+            ],
+            [
+              "6. Expansion",
+              "Add routes, missions, robots, shifts, or sites using a standardized deployment package.",
+              "Reuse is proven and support capacity grows with the fleet.",
+            ],
+            [
+              "7. Governance",
+              "Review incidents, changes, model releases, cybersecurity, data rights, performance, and economics continuously.",
+              "Every update remains controlled and auditable.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Who Should Buy FieldAI",
+      paragraphs: [
+        "FieldAI is a strong candidate for organizations with large, changing, or hazardous sites and a repeatable need for mobile data collection. The buyer should have enough scale that one successful mission can expand across routes, facilities, or robot types.",
+        "It is especially relevant when traditional autonomy requires too much mapping or site preparation, connectivity is unreliable, several robot platforms are under consideration, or the organization wants to turn routine inspections into a current digital record.",
+        "FieldAI is a weaker fit when the environment is already structured enough for simpler automation, the workflow has low value or low frequency, the customer cannot support safety and integration work, or a complete robot package already solves the requirement with less commercial complexity.",
+        "It is also a poor fit when leadership wants a demonstration rather than an operating program. The platform produces value only when the robot's observations reach a decision, maintenance action, project correction, security response, or measurable reduction in worker exposure.",
+      ],
+      tables: [
+        {
+          title: "Fit Test",
+          columns: ["Strong Fit", "Weak Fit"],
+          rows: [
+            [
+              "Changing construction, mining, industrial, energy, utility, or security environments.",
+              "Stable and highly structured routes that conventional automation already handles well.",
+            ],
+            [
+              "Frequent inspection, mapping, documentation, monitoring, or observation missions.",
+              "Rare tasks with little measurable cost, risk, or decision value.",
+            ],
+            [
+              "Meaningful hazardous access, labor constraint, downtime, rework, or data freshness problem.",
+              "Technology interest without an accountable workflow owner or business case.",
+            ],
+            [
+              "Potential expansion across robots, tasks, shifts, or sites.",
+              "One small task better served by a simpler tool or service contractor.",
+            ],
+            [
+              "Customer can govern safety, cybersecurity, data, integration, operations, and procurement.",
+              "No internal team available to own field robotics after the demonstration.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Black Scarab Verdict",
+      paragraphs: [
+        "FieldAI has assembled a credible position in one of the hardest parts of robotics: reliable autonomy outside controlled environments. Its NASA JPL lineage, EDGE product, risk aware model architecture, construction deployments, and partner network give the company more substance than a foundation model story supported only by demonstrations.",
+        "The central strategic opportunity is becoming the intelligence layer that survives changes in robot hardware. If FieldAI can reuse its models, integrations, and operating tools across machines and customers, it can build a durable software and data business above a fragmented hardware market.",
+        "The central risk is that physical deployment remains stubbornly specific. Terrain, sensors, safety rules, customer software, maintenance, and support vary from site to site. Buyers should respect the ambition while demanding evidence at the complete system level. FieldAI may provide the brain, but production value depends on the whole body, the workflow around it, and the people responsible when reality surprises the model.",
+      ],
+    },
+    {
+      heading: "Research Method",
+      paragraphs: [
+        "This report was prepared from FieldAI product, technology, team, customer, hiring, funding, and partnership materials; partner announcements from Caterpillar, Boston Dynamics, NVIDIA, Ouster, and Certis; independent reporting from Axios, TechCrunch, and other industry publications; and current Black Scarab research on adjacent robot intelligence and industrial inspection platforms.",
+        "FieldAI is privately held and does not publish a price list, audited financial statements, a complete customer roster, EDGE hardware specifications, or independently verified fleet performance data. Company supplied deployment and productivity claims are identified as such and should be validated through direct diligence before procurement or investment decisions.",
+      ],
+    },
+  ],
+  sources: [
+    "FieldAI official product, technology, team, and industry materials",
+    "FieldAI customer case studies and partnership announcements",
+    "Caterpillar, Boston Dynamics, Ouster, NVIDIA, and Certis partner materials",
+    "Independent funding, valuation, and commercial reporting",
+  ],
+  sourceLinks: [
+    { label: "FieldAI EDGE and Field Foundation Models", url: "https://www.fieldai.com/" },
+    { label: "FieldAI industry solutions", url: "https://www.fieldai.com/solutions" },
+    { label: "FieldAI leadership team", url: "https://www.fieldai.com/team" },
+    { label: "FieldAI Research Institute", url: "https://www.fieldai.com/fairi" },
+    { label: "FieldAI risk aware model architecture", url: "https://www.fieldai.com/news/field-ai-nvidia-partnership" },
+    { label: "FieldAI and NVIDIA Omniverse workflow", url: "https://www.fieldai.com/news/fieldai-and-nvidia-omniverse-building-the-next-generation-of-industrial-ai" },
+    { label: "FieldAI NVIDIA collaboration", url: "https://www.fieldai.com/news/fieldai-accelerates-industrial-customers-adoption-of-ai-in-collaboration-with-nvidia" },
+    { label: "FieldAI funding announcement", url: "https://www.fieldai.com/news/fieldai-announces-over-400m-in-funds-raised-to-advance-embodied-ai-at-scale" },
+    { label: "FieldAI DPR Construction case study", url: "https://www.fieldai.com/news/unlocking-efficiency-through-robotic-ai-with-dpr-construction" },
+    { label: "FieldAI Big D Construction expansion", url: "https://www.fieldai.com/news/bringing-general-purpose-robots-to-every-construction-site-inside-big-d-constructions-expansion-with-fieldai" },
+    { label: "Boston Dynamics and FieldAI partnership", url: "https://bostondynamics.com/news/boston-dynamics-fieldai-partner-to-bring-robots-into-uncharted-dynamic-environments/" },
+    { label: "Caterpillar and FieldAI collaboration", url: "https://www.caterpillar.com/en/news/corporate-press-releases/h/caterpillar-and-fieldai-advance-ai-powered-industrial-innovation.html" },
+    { label: "Ouster and FieldAI sensing collaboration", url: "https://investors.ouster.com/news-releases/news-release-details/ouster-and-fieldai-collaborate-scale-autonomous-perception" },
+    { label: "Certis and FieldAI security partnership", url: "https://www.fieldai.com/news/certis-and-fieldai-form-strategic-partnership-to-deploy-autonomous-robotics-in-real-world-security-operations" },
+    { label: "FieldAI Federal", url: "https://www.fieldaifederal.com/" },
+    { label: "FieldAI enterprise commercial role", url: "https://jobs.lever.co/field-ai/d838dfa0-d9d6-4463-88c3-039dbb83475c" },
+    { label: "Axios FieldAI funding and product report", url: "https://www.axios.com/2025/08/20/fieldai-raises-over-400-million-to-make-robot-brains" },
+    { label: "TechCrunch FieldAI funding report", url: "https://techcrunch.com/2025/08/20/fieldai-raises-405m-to-build-universal-robot-brains/" },
+    { label: "A3 interview with FieldAI CEO Ali Agha", url: "https://www.automate.org/ai/industry-insights/fieldais-ceo-on-the-startups-physics-first-embodied-ai" },
+    { label: "FieldAI commercial milestone analysis", url: "https://runtimewire.com/article/fieldai-ali-agha-100m-robotics-contracts" },
+  ],
+});
+
 const computeExchangeDeepDive = (): CaseStudyArticle => ({
   slug: "compute-exchange-gpu-marketplace-deep-dive",
   title: "The Best Way to Source GPU Compute in 2026",
@@ -13270,6 +14297,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  fieldAiDeepDive(),
   computeExchangeDeepDive(),
   flockSafetyDeepDive(),
   nvidiaPhysicalAiDeepDive(),
