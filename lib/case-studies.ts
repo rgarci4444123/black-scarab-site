@@ -13314,6 +13314,791 @@ const huggingFaceDeepDive = (): CaseStudyArticle => ({
   ],
 });
 
+const personaAiDeepDive = (): CaseStudyArticle => ({
+  slug: "persona-ai-industrial-humanoid-robot-welding-shipbuilding-deep-dive",
+  title:
+    "Persona AI Deep Dive: Industrial Humanoid Robots for Welding and Shipbuilding",
+  summary:
+    "A complete analysis of Persona AI's industrial humanoid platform, hardware architecture, NASA hand technology, welding strategy, customers, leasing model, pricing, competitors, deployment process, and commercial risks.",
+  publishedLabel: "Deep Dive · Published September 7, 2026",
+  publishedDate: "2026-09-07",
+  typeLabel: "Deep Dive",
+  formatLabel: "Technology, hardware, and commercial analysis",
+  industry: "Industrial Robotics",
+  image: "/article-images/persona-ai-industrial-humanoid-welding-deep-dive.png",
+  imageAlt:
+    "Editorial visualization of an industrial humanoid robot welding a steel structure inside a shipyard",
+  seoDescription:
+    "Persona AI deep dive covering its industrial humanoid robot, hardware, NASA robotic hand technology, shipyard welding, customers, leasing model, pricing, competitors, ROI, and risks.",
+  tags: [
+    "Persona AI",
+    "industrial humanoid robots",
+    "robot welding",
+    "shipbuilding automation",
+    "physical AI",
+  ],
+  author: {
+    name: "Rodolfo Garcia Calderoni, CFA",
+    href: "/about",
+  },
+  sections: [
+    {
+      paragraphs: [
+        "Persona AI is building a humanoid robot for work that is expensive, skilled, hazardous, and difficult to automate with a fixed machine. Its first serious target is welding and fabrication inside shipyards, steel plants, and industrial shops where the workplace was designed around people rather than robots.",
+        "That focus separates Persona from much of the humanoid market. The company is not beginning with package movement or a general household assistant. It wants a machine that can walk to the work, hold conventional tools, fit through human spaces, and eventually perform valuable trades across changing industrial environments.",
+        "The strategy is commercially intelligent, but the product is still early. Persona has demonstrated a humanoid completing a welding sequence through expert teleoperation. It has announced development programs with HD Hyundai, POSCO, ABS, and SSE Steel Fabrication. It has not yet published evidence of a fully autonomous production robot completing customer shifts at scale.",
+      ],
+    },
+    {
+      heading: "Executive View",
+      paragraphs: [
+        "Persona AI should be understood as an industrial labor platform under development, not as a finished robot available from a public catalog. The company plans to combine a modular humanoid body, dexterous hands derived in part from NASA technology, task specific tooling, learned skills, remote operation, fleet software, and customer training inside a Robot as a Service model.",
+        "Its best strategic decision is the choice of skilled industrial work. A humanoid does not need to beat an inexpensive conveyor or warehouse robot. It needs to unlock production that is constrained by a shortage of qualified people, reduce exposure to dangerous environments, and avoid the cost of rebuilding a facility around fixed automation.",
+        "Its biggest risk is the distance between a controlled teleoperated weld and dependable autonomous work. Buyers must evaluate weld quality, mobility, uptime, intervention, safety, service, integration, and total cost as one system. Impressive hardware is only one part of the result.",
+      ],
+      tables: [
+        {
+          title: "Persona AI at a Glance",
+          columns: ["Dimension", "Current Position", "Buyer Implication"],
+          rows: [
+            [
+              "Company",
+              "Houston robotics company founded in 2024 by Nicolaus Radford, Jerry Pratt, and Jide Akinyode.",
+              "The company is young, while its leadership brings decades of humanoid and field robotics experience.",
+            ],
+            [
+              "Product",
+              "A modular bipedal humanoid designed for welding, fabrication, assembly, construction, mining, and inspection.",
+              "The first purchase decision should focus on one validated task rather than the full platform vision.",
+            ],
+            [
+              "Commercial stage",
+              "Development units and customer programs are underway, with broader leasing deployments targeted for 2027.",
+              "Buyers should treat current commitments as pilot and development programs until production evidence is available.",
+            ],
+            [
+              "Business model",
+              "Robot as a Service leasing with one year pilot, two to three year operational, and four to five year strategic terms.",
+              "The model can reduce initial capital expense, but recurring price and service obligations are not public.",
+            ],
+            [
+              "Named relationships",
+              "HD Hyundai, POSCO, ABS, SSE Steel Fabrication, ARC Specialties, and Vazil Company.",
+              "The partner set provides real industrial environments, welding expertise, standards support, and routes to deployment.",
+            ],
+            [
+              "Public funding",
+              "$27 million pre seed round announced in May 2025, followed by a disclosed $3 million POSCO Group investment.",
+              "Capital and strategic backing support development but do not establish product readiness or profitability.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Company and Its Robotics Lineage",
+      paragraphs: [
+        "Persona AI was founded in 2024 by chief executive Nicolaus Radford, chief technology officer Jerry Pratt, and chief operating officer Jide Akinyode. The company is headquartered in Houston and also maintains an office in Pensacola, Florida.",
+        "Radford worked on NASA humanoid systems including Robonaut and Valkyrie. NASA built Robonaut 2 with General Motors as a dexterous assistant for astronauts and manufacturing workers, and it became the first humanoid robot in space. Valkyrie was designed as a rugged electric humanoid for damaged environments built around people.",
+        "Pratt spent years at the Florida Institute for Human and Machine Cognition working on bipedal locomotion and later served as chief technology officer at Figure. That combination matters because Persona needs both manipulation and stable walking in environments that punish machines.",
+        "The company announced a $27 million pre seed round in May 2025. Unity Growth and Tides Ventures led the financing, with participation from a large group that included Mirae Asset Group, Embedded Ventures, Tola Capital, K2 Global, Goose Capital, and other investors. POSCO Group later disclosed that it invested a total of $3 million in Persona during 2025.",
+      ],
+      tables: [
+        {
+          title: "Why the Founding Team Matters",
+          columns: ["Capability", "Relevant Experience", "What It Must Become"],
+          rows: [
+            [
+              "Dexterous manipulation",
+              "Leadership experience with NASA humanoid programs and secured rights to use and evolve related robotic hand technology.",
+              "A reliable industrial hand that survives heat, dust, impact, tool vibration, and repeated service cycles.",
+            ],
+            [
+              "Bipedal mobility",
+              "Decades of research on walking robots and operation in human designed environments.",
+              "Stable movement across grating, stairs, slopes, cables, thresholds, and imperfect floors while carrying tools.",
+            ],
+            [
+              "Field deployment",
+              "Experience moving robots beyond controlled laboratories into space, marine, and industrial settings.",
+              "A repeatable service organization that can commission, maintain, recover, and improve a customer fleet.",
+            ],
+            [
+              "Commercial focus",
+              "Early agreements with large shipbuilding and steel organizations.",
+              "Paid production work with measurable quality, utilization, safety, and customer return.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Why Persona Chose Skilled Trades",
+      paragraphs: [
+        "The humanoid form is expensive and mechanically complex. Using it to move standardized boxes on a smooth floor can be difficult to justify when conveyors, autonomous mobile robots, forklifts, and fixed arms already perform that work well.",
+        "Shipbuilding changes the equation. Ships are assembled from enormous structures in spaces filled with ladders, catwalks, hatches, curved surfaces, confined areas, temporary fixtures, cables, smoke, and changing work. Moving every task into a fixed robot cell is often impractical because the product is the size of a building.",
+        "A humanoid can theoretically use the same access routes, tools, and work positions as a person. That reduces the need to redesign the site around the robot. The economic value can also be much higher when a shortage of welders delays an entire vessel or leaves expensive capacity unused.",
+        "Persona has therefore centered its near term plan on welding, fitting, fabrication, and material preparation. These jobs combine technical skill with heat, fumes, repetitive strain, awkward posture, and difficult access. They also produce outputs that can be measured against formal quality standards.",
+      ],
+      tables: [
+        {
+          title: "Why Welding Can Support Humanoid Economics",
+          columns: ["Factor", "Industrial Reality", "Potential Robot Value"],
+          rows: [
+            [
+              "Labor scarcity",
+              "Qualified welders and fitters are difficult to recruit and retain in several shipbuilding and fabrication markets.",
+              "A robot can add capacity where hiring alone cannot meet the schedule.",
+            ],
+            [
+              "Bottleneck value",
+              "An incomplete weld or delayed fit can hold up downstream work on a valuable structure.",
+              "The value may come from additional production rather than only lower labor cost.",
+            ],
+            [
+              "Human environment",
+              "Work occurs around stairs, decks, hatches, scaffolding, and changing assemblies.",
+              "A bipedal machine may reach tasks without extensive facility modification.",
+            ],
+            [
+              "Tool compatibility",
+              "Trades use portable torches, grinders, cutters, inspection tools, and controls.",
+              "Dexterous hands and modular tooling can reuse parts of the existing workflow.",
+            ],
+            [
+              "Quality evidence",
+              "Welds can be inspected for geometry, penetration, consistency, defects, and compliance.",
+              "A pilot can define objective acceptance criteria before production use.",
+            ],
+            [
+              "Worker exposure",
+              "Heat, fumes, awkward posture, confined spaces, and repetitive motion create risk.",
+              "A robot can move exposure away from the arc while keeping skilled people in control of the process.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Humanoid Hardware Stack",
+      paragraphs: [
+        "Persona describes its robot as modular, rugged, serviceable, and designed from the inside out for heavy industry. The platform uses a bipedal body because its target sites were built around human movement, and it emphasizes a quick change battery, replaceable components, protective coverings, readable status signals, and dexterous hands.",
+        "The public specification remains incomplete. Persona has not published the production robot's height, weight, total degrees of freedom, payload, reach, walking speed, battery duration, ingress rating, actuator design, processor, complete sensor suite, or certified safety performance.",
+        "That absence is understandable during development, but it limits procurement comparison. A buyer should request the specification for the exact generation being offered because a concept rendering, development unit, and production lease robot may differ materially.",
+      ],
+      tables: [
+        {
+          title: "Hardware Components and What Is Known",
+          columns: ["Component", "Persona Design Direction", "Information a Buyer Still Needs"],
+          rows: [
+            [
+              "Structural frame",
+              "Modular industrial architecture intended for component replacement and field service.",
+              "Mass, center of gravity, rated loads, structural life, inspection intervals, and repair procedures.",
+            ],
+            [
+              "Legs and feet",
+              "Bipedal stance with broad contact surfaces designed for uneven industrial terrain and stable work positions.",
+              "Walking speed, slope, stairs, grating, trip recovery, fall behavior, traction limits, and tool load performance.",
+            ],
+            [
+              "Arms and joints",
+              "Powered joints intended to combine reach, controlled force, and industrial tool use.",
+              "Degrees of freedom, reach, payload, force limits, repeatability, backlash, thermal limits, and actuator life.",
+            ],
+            [
+              "Hands",
+              "Dexterous manipulation based in part on robotic hand technology developed through NASA programs.",
+              "Finger count, degrees of freedom, grip force, tactile sensing, tool retention, glove life, and contamination tolerance.",
+            ],
+            [
+              "Perception",
+              "Vision and robot sensing support movement, work positioning, tool control, and supervision.",
+              "Camera, depth, inertial, force, torque, thermal, and environmental sensor specifications and redundancy.",
+            ],
+            [
+              "Compute and control",
+              "Onboard control and learning software coordinate mobility, manipulation, and task execution.",
+              "Processor, memory, latency, network dependence, safety controller separation, logging, and update architecture.",
+            ],
+            [
+              "Power",
+              "Quick change battery interface designed to reduce downtime and support multiple shifts.",
+              "Runtime by task, swap time, battery mass, cycle life, charging infrastructure, certification, and spare requirements.",
+            ],
+            [
+              "Protective exterior",
+              "Technical textile coverings intended to protect critical systems from ultraviolet exposure, metallic dust, saltwater, and weld spatter.",
+              "Ingress rating, temperature range, fire behavior, replacement interval, cleaning, and damage inspection.",
+            ],
+            [
+              "Task tooling",
+              "Interchangeable tooling for welding, fabrication, maintenance, inspection, and material handling.",
+              "Tool change method, supported brands, utilities, calibration, consumables, and responsibility for process certification.",
+            ],
+            [
+              "Safety interfaces",
+              "Lighting and sound are intended to communicate robot status and intent around workers.",
+              "Emergency stop, safe torque off, speed limits, protective separation, fault response, and applicable standards.",
+            ],
+          ],
+          note:
+            "Persona's public materials describe design objectives rather than a complete production data sheet. Contractual specifications should control any purchase or lease decision.",
+        },
+      ],
+    },
+    {
+      heading: "The NASA Hand Advantage",
+      paragraphs: [
+        "Persona says it has secured rights to use and evolve robotic hand technology developed through NASA programs. That lineage is relevant because NASA built Robonaut around dexterous manipulation. The objective was a machine that could use tools and assist people in environments created for human hands.",
+        "The commercial advantage is not the NASA name by itself. It is a starting body of engineering knowledge about compact actuation, tendon driven mechanisms, sensing, tool use, and manipulation. Persona still has to redesign that knowledge for industrial cost, maintainability, contamination, impact, and long duty cycles.",
+        "Welding also exposes a basic tradeoff. A highly dexterous hand can use many tools, but every additional joint adds cost, failure points, sealing challenges, and control complexity. For repeated production tasks, a simpler dedicated tool mount may outperform a human shaped hand.",
+        "Persona's modular strategy can support both approaches. A dexterous hand can handle changing tools and setup work, while a specialized end effector can secure a welding torch or other process tool when repeatability and safety matter more than general grip.",
+      ],
+    },
+    {
+      heading: "From Teleoperation to Autonomous Work",
+      paragraphs: [
+        "Persona published a 2026 demonstration in which a development humanoid walked to a workstation at ARC Specialties in Houston, squatted, struck an arc, completed a weld, stood, and walked away. The company has been direct that the sequence was teleoperated.",
+        "That distinction strengthens the analysis rather than weakening it. Teleoperation proves that the hardware can execute a coordinated sequence under human control. It does not prove that perception and autonomy can independently understand the workpiece, choose parameters, maintain quality, recover from variation, and manage safety.",
+        "Persona treats expert operation as the route to autonomy. A skilled welder demonstrates the task while the system records robot state, vision, motion, process conditions, and outcomes. Those demonstrations can train models and provide examples for later autonomous execution.",
+        "The challenge is the long tail. Weld preparation varies. Gaps and surfaces are imperfect. Smoke and arc light interfere with sensing. Cables move. Consumables wear. A successful autonomy system must detect when the job differs from training, adapt within approved limits, and hand control back to a person when confidence falls.",
+      ],
+      tables: [
+        {
+          title: "The Skill Development Loop",
+          columns: ["Stage", "What Happens", "Evidence Required"],
+          rows: [
+            [
+              "1. Expert demonstration",
+              "A qualified operator controls the robot through representative work.",
+              "Operator identity, task conditions, process parameters, robot state, and output quality are recorded.",
+            ],
+            [
+              "2. Data preparation",
+              "Useful demonstrations are synchronized, reviewed, labeled, and separated from unsafe or low quality examples.",
+              "The training set represents real variation rather than only ideal demonstrations.",
+            ],
+            [
+              "3. Skill learning",
+              "Models learn motion, perception, force, tool control, and task sequencing from demonstrations and simulation.",
+              "Offline tests show the skill remains within physical and process limits.",
+            ],
+            [
+              "4. Supervised execution",
+              "The robot performs portions of the task while a person monitors and intervenes.",
+              "Intervention rate, fault type, weld quality, cycle time, and recovery behavior are measured.",
+            ],
+            [
+              "5. Bounded autonomy",
+              "The robot completes approved work inside a defined operating envelope.",
+              "Acceptance results cover common variation, sensor degradation, process faults, and safe stopping.",
+            ],
+            [
+              "6. Fleet improvement",
+              "Field outcomes inform future models, tooling, procedures, and maintenance.",
+              "Updates pass change control and do not invalidate the safety case or process qualification.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "How a Persona Deployment Fits Together",
+      paragraphs: [
+        "A production deployment is larger than the humanoid. The robot needs a qualified task, tooling, utilities, communications, safety controls, trained supervisors, maintenance, data infrastructure, and a defined process for human intervention.",
+        "The best first task is repetitive enough to produce useful training data, valuable enough to support the lease cost, and bounded enough to validate safely. It should not require the robot to solve every mobility and manipulation problem at once.",
+      ],
+      tables: [
+        {
+          title: "From Workstation to Robot Fleet",
+          columns: ["Layer", "Role", "Owner Questions"],
+          rows: [
+            [
+              "Work definition",
+              "Drawings, weld procedure, materials, joint type, quality requirement, access, and cycle target define the job.",
+              "Who owns the process and what output counts as acceptable?",
+            ],
+            [
+              "Robot platform",
+              "The humanoid provides mobility, posture, manipulation, sensing, compute, and status communication.",
+              "Which hardware generation and specification will the customer receive?",
+            ],
+            [
+              "Tool package",
+              "Torch, wire, power source, gas, cable management, fixtures, cleaning, and inspection support the welding process.",
+              "Who integrates, certifies, services, and supplies each component?",
+            ],
+            [
+              "Autonomy and remote operation",
+              "Software executes learned skills while approved personnel monitor, assist, or assume control.",
+              "What triggers intervention and how much skilled supervision is required per robot?",
+            ],
+            [
+              "Safety system",
+              "Independent controls, zones, procedures, and communication protect workers and equipment.",
+              "Which standards apply and who signs the risk assessment?",
+            ],
+            [
+              "Quality system",
+              "Inspection connects robot work to weld acceptance and traceability.",
+              "How are defects detected, attributed, corrected, and prevented?",
+            ],
+            [
+              "Fleet operations",
+              "Charging, battery swaps, maintenance, spares, software releases, and support determine uptime.",
+              "What availability does Persona commit to and what happens after a failure?",
+            ],
+            [
+              "Customer workflow",
+              "Production planning, workforce scheduling, safety permits, and asset systems receive robot status and results.",
+              "Does the robot remove a bottleneck or create a new coordination burden?",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Customers, Partners, and Routes to Market",
+      paragraphs: [
+        "Persona's partner strategy covers several pieces of the commercialization problem. HD Hyundai brings shipyard access, production data, welding automation knowledge, and performance validation. Vazil Company develops mounted welding tools and test environments. Persona is responsible for humanoid hardware and AI based control and learning algorithms.",
+        "The partners targeted prototype completion by the end of 2026, followed by field demonstrations and commercialization beginning in 2027. Persona's current website separately says initial preproduction units are expected near the end of 2026, while its leasing brochure targets deployment in the third quarter of 2027.",
+        "ABS adds the standards and certification perspective. Its collaboration with Persona is focused on inspection technology, data collection during ship construction, and standards for information used in digital and remote surveys. This can help define how robot generated evidence becomes acceptable inside a regulated maritime workflow.",
+        "POSCO is testing a different job. Its steelworks program plans to use a humanoid alongside workers who attach crane belts to steel coils weighing 20 to 40 tons. POSCO identifies sites, POSCO DX designs the automation system, and Persona adapts the humanoid platform to the steel environment.",
+        "SSE Steel Fabrication in Louisiana provides a smaller production setting where fitting, tacking, cutting, deburring, material sorting, and welding can be studied without the scale of a global shipyard. ARC Specialties has supplied a practical environment for early welding demonstrations and data collection.",
+      ],
+      tables: [
+        {
+          title: "Commercial Relationships",
+          columns: ["Organization", "Role", "What Success Would Establish"],
+          rows: [
+            [
+              "HD Hyundai group companies",
+              "Shipyard use cases, welding automation, performance validation, field data, and future deployment.",
+              "Persona can execute qualified welding tasks in a major shipbuilding environment.",
+            ],
+            [
+              "Vazil Company",
+              "Mounted welding tools and an industrial test environment.",
+              "The robot, torch, utilities, and process controls operate as one reliable system.",
+            ],
+            [
+              "ABS",
+              "Maritime classification, inspection data, remote survey methods, and future standards.",
+              "Robot collected data can support trusted inspection and compliance workflows.",
+            ],
+            [
+              "POSCO and POSCO DX",
+              "Strategic investment, steelworks integration, coil logistics pilot, and automation design.",
+              "The platform can transfer from welding into heavy material handling around workers.",
+            ],
+            [
+              "SSE Steel Fabrication",
+              "Practical fabrication tasks in a changing small and midsize production shop.",
+              "Persona can deliver value outside the controlled scale and resources of a global industrial group.",
+            ],
+            [
+              "ARC Specialties",
+              "Welding expertise, test access, teleoperation demonstrations, and skill data.",
+              "The hardware can perform coordinated welding motions and generate data for autonomy development.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Business Model and Pricing",
+      paragraphs: [
+        "Persona plans to sell access through Robot as a Service rather than requiring every customer to purchase the machine. The company says the lease package can include the humanoid, autonomous perception and task execution software, industrial tooling modules, remote software updates, performance improvements, and training for employees who manage the fleet.",
+        "The program offers a one year pilot, a two to three year operational deployment, and a four to five year strategic deployment. Preorders are available for a targeted third quarter 2027 deployment, with some development units potentially reaching program members earlier.",
+        "Persona does not publish a dollar price for the robot, lease, installation, software, tooling, support, or intervention service. Any precise public price would therefore be speculation. Buyers need a complete quotation tied to the task, site, robot generation, utilization, and service level.",
+        "Leasing can align incentives if Persona remains responsible for uptime and improvement. It can also hide a large recurring commitment if the quote separates robot access from tooling, consumables, integration, remote operators, travel, spares, and internal customer staffing.",
+      ],
+      tables: [
+        {
+          title: "The Complete Cost Basket",
+          columns: ["Cost Area", "Public Price", "What Should Be Quoted"],
+          rows: [
+            [
+              "Robot lease",
+              "Not published",
+              "Monthly or annual rate, minimum term, robot generation, included hours, utilization limits, and end of term options.",
+            ],
+            [
+              "Tooling and welding package",
+              "Not published",
+              "Torch, power source, cable management, tool modules, fixtures, calibration, and replacement terms.",
+            ],
+            [
+              "Integration",
+              "Not published",
+              "Site survey, task engineering, software connections, safety design, workstation changes, and acceptance testing.",
+            ],
+            [
+              "Autonomy software",
+              "Included conceptually in the lease package, with no public rate.",
+              "Skill licenses, software releases, API access, data services, model changes, and additional task fees.",
+            ],
+            [
+              "Remote operation",
+              "Not published",
+              "Included supervision, operator location, coverage ratio, hours, response time, escalation, and overage charges.",
+            ],
+            [
+              "Service and maintenance",
+              "Not published",
+              "Availability target, preventive maintenance, field response, depot repair, spares, batteries, and replacement robot.",
+            ],
+            [
+              "Customer operations",
+              "Customer specific",
+              "Supervision, safety staff, welding engineers, networking, charging area, consumables, insurance, and program management.",
+            ],
+          ],
+          note:
+            "A credible proposal separates the recurring lease, one time deployment work, usage dependent charges, customer supplied equipment, and internal operating cost.",
+        },
+      ],
+    },
+    {
+      heading: "An Illustrative Buyer Case",
+      paragraphs: [
+        "Consider a fabrication company that produces large custom steel assemblies. It has enough welding work to support two shifts, but skilled hiring has not kept pace with its order book. The company wants to add capacity without building a fixed cell for every changing part.",
+        "The buyer selects one repetitive fillet welding task on assemblies that already have digital drawings and qualified procedures. Persona and the integrator map the work, choose the tooling, define safe zones, establish quality criteria, and collect expert teleoperation data across representative parts.",
+        "During the pilot, the robot works under direct supervision. The team measures setup time, weld length, quality, intervention, faults, battery swaps, recovery, maintenance, and skilled labor required. Human welders continue to handle complex joints and exceptions.",
+        "The pilot should expand only if the robot adds accepted weld output at a cost below the value of the bottleneck it removes. Labor savings may contribute, but the larger benefit can come from completing more assemblies, reducing delay, improving documentation, and shifting workers away from the most punishing positions.",
+      ],
+      tables: [
+        {
+          title: "Illustrative Pilot Scorecard",
+          columns: ["Metric", "Question", "Production Gate"],
+          rows: [
+            [
+              "Accepted output",
+              "How much weld length passes inspection without repair?",
+              "Quality meets the same standard required from the existing process.",
+            ],
+            [
+              "Intervention",
+              "How often and for how long does a skilled person take control?",
+              "Supervision falls to a level that supports the production economics.",
+            ],
+            [
+              "Cycle time",
+              "Does the complete setup, weld, reposition, and inspection cycle add useful capacity?",
+              "The robot relieves the bottleneck rather than moving it elsewhere.",
+            ],
+            [
+              "Availability",
+              "How much scheduled time is lost to faults, charging, maintenance, or recovery?",
+              "Measured uptime supports the lease case with an agreed service commitment.",
+            ],
+            [
+              "Safety",
+              "Can people work around the system without unacceptable new exposure?",
+              "The risk assessment is approved and every stop or incident is understood.",
+            ],
+            [
+              "Economics",
+              "What is the total cost per accepted unit of work?",
+              "The result is competitive after lease, integration, supervision, consumables, and internal labor.",
+            ],
+          ],
+          note:
+            "This example is illustrative. Persona has not published a customer price or enough production data to calculate a verified return.",
+        },
+      ],
+    },
+    {
+      heading: "Benefits of the Persona Approach",
+      paragraphs: [
+        "Persona's approach can create value when the work moves, the workplace cannot be rebuilt around fixed automation, and labor scarcity limits revenue. A mobile humanoid can bring the tool to the structure instead of bringing the structure to the robot.",
+        "The platform can also preserve the role of skilled workers. Expert welders can teach tasks, supervise more than one machine as autonomy improves, handle difficult exceptions, inspect results, and refine the process rather than spending every shift in the most hazardous positions.",
+        "A modular body and leasing model can reduce the risk of hardware obsolescence if Persona upgrades components during the contract. The same platform may support welding today and inspection, fitting, or material preparation later, improving utilization across a facility.",
+      ],
+      tables: [
+        {
+          title: "Where Persona Can Create Value",
+          columns: ["Benefit", "Mechanism", "Condition Required"],
+          rows: [
+            [
+              "Added capacity",
+              "Robots perform valuable work when qualified labor is unavailable.",
+              "The task is production ready and the robot delivers accepted output.",
+            ],
+            [
+              "Worker protection",
+              "People move away from heat, fumes, awkward posture, confined spaces, and repetitive strain.",
+              "Robot setup, recovery, maintenance, and supervision do not recreate the same exposure.",
+            ],
+            [
+              "Facility compatibility",
+              "A humanoid uses human routes, work positions, controls, and tools.",
+              "Mobility and manipulation are proven on the actual site rather than assumed from form factor.",
+            ],
+            [
+              "Flexible automation",
+              "One platform can receive different tooling and learned skills.",
+              "Changeover time, requalification, and software cost remain practical.",
+            ],
+            [
+              "Knowledge capture",
+              "Expert demonstrations become structured robot skill data.",
+              "The company retains access to experts and governs ownership and reuse of the data.",
+            ],
+            [
+              "Operating expense model",
+              "Leasing reduces the initial capital commitment and can tie payment to service.",
+              "The contract includes meaningful uptime, support, upgrade, and exit protections.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Competitive Positioning",
+      paragraphs: [
+        "Persona competes with more than other humanoids. A buyer can use fixed industrial arms, gantry systems, mobile manipulators, purpose built welding equipment, cobots, remote operation, workforce programs, or a different process design.",
+        "Its differentiation is the combination of heavy industry focus, skilled trade economics, NASA derived manipulation technology, bipedal access, a modular platform, strategic customer development, and a leasing model. Its disadvantage is maturity. Simpler machines already have established specifications, safety standards, service networks, and production references.",
+      ],
+      tables: [
+        {
+          title: "Persona Versus the Main Alternatives",
+          columns: ["Approach", "Best Fit", "Advantage", "Tradeoff"],
+          rows: [
+            [
+              "Persona humanoid",
+              "Changing heavy industrial sites with human access routes and scarce skilled labor.",
+              "Mobility, tool use, and potential reuse across several skilled tasks.",
+              "Early product maturity, undisclosed price, and substantial autonomy and service work still ahead.",
+            ],
+            [
+              "Fixed industrial robot",
+              "High volume repeated work with stable part presentation and a dedicated cell.",
+              "Proven speed, accuracy, reliability, safety engineering, and vendor support.",
+              "Requires fixtures, guarding, programming, and movement of work into the cell.",
+            ],
+            [
+              "Gantry or rail welding system",
+              "Large structures with predictable geometry and accessible seams.",
+              "Strong process control and reach without balancing a bipedal body.",
+              "Limited ability to move through the wider site or change task class.",
+            ],
+            [
+              "Mobile manipulator",
+              "Mostly level floors where a wheeled base and arm can reach the work.",
+              "Lower locomotion complexity and potentially longer endurance.",
+              "Cannot use every stair, hatch, ladder, or uneven route designed for people.",
+            ],
+            [
+              "Collaborative robot",
+              "Moderate payload work near people with controlled presentation.",
+              "Mature integration, easier programming, and clear application boundaries.",
+              "Usually stationary and constrained in reach, payload, and harsh environment tolerance.",
+            ],
+            [
+              "Other general humanoids",
+              "Organizations seeking a broader labor platform across manufacturing and logistics.",
+              "Potentially larger ecosystem, scale, and general skill investment.",
+              "May offer less specialization in welding, shipbuilding, ruggedization, and maritime standards.",
+            ],
+            [
+              "Human workforce",
+              "Complex, changing, judgment intensive tasks and low volume exceptions.",
+              "Exceptional adaptability, craftsmanship, communication, and recovery.",
+              "Hiring constraints, physical exposure, fatigue, training time, and retention pressure.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Limitations and Risks",
+      paragraphs: [
+        "The largest risk is readiness. Persona has shown teleoperated work and announced serious partnerships, but it has not published autonomous production hours, fleet size, intervention rates, uptime, weld acceptance, repair frequency, or customer return.",
+        "The second risk is system complexity. Bipedal locomotion, dexterous hands, welding equipment, high current power, cables, smoke, heat, protective textiles, batteries, perception, remote operation, and people must all work together. A failure in any layer can stop production or create a hazard.",
+        "The third risk is economics. A humanoid may fit the site yet still cost more than a fixed or mobile alternative. The buyer should compare complete output and total operating cost rather than assume human shape means better value.",
+        "Data and cybersecurity also matter. Teleoperation and model improvement may expose facility layouts, production methods, video, drawings, equipment, and worker activity. Contracts should define data ownership, model training rights, remote access, storage, deletion, software signing, incident response, and access by suppliers.",
+      ],
+      tables: [
+        {
+          title: "Production Risk Register",
+          columns: ["Risk", "Failure Example", "Mitigation"],
+          rows: [
+            [
+              "Mobility",
+              "The robot slips, falls, cannot reach the work, or needs frequent rescue.",
+              "Representative terrain testing, safe fall design, recovery equipment, route limits, and intervention tracking.",
+            ],
+            [
+              "Manipulation",
+              "The hand drops a tool, loses calibration, or cannot maintain the required torch pose.",
+              "Tool retention, force limits, calibration checks, dedicated mounts, inspection, and preventive replacement.",
+            ],
+            [
+              "Process quality",
+              "A weld looks complete but fails inspection or requires expensive repair.",
+              "Qualified procedures, process sensing, traceability, inspection, defect limits, and controlled rework.",
+            ],
+            [
+              "Autonomy",
+              "The robot misreads a joint, fixture, obstacle, or changed condition.",
+              "Defined operating envelope, uncertainty thresholds, human escalation, simulation, and acceptance tests.",
+            ],
+            [
+              "Safety",
+              "A fall, unexpected motion, hot tool, arc, or cable exposes a worker.",
+              "Independent safety controls, zones, procedures, training, hazard analysis, and incident review.",
+            ],
+            [
+              "Availability",
+              "Battery, actuator, hand, covering, sensor, or network faults interrupt the shift.",
+              "Service commitment, spares, rapid modules, planned maintenance, replacement unit, and manual fallback.",
+            ],
+            [
+              "Commercial",
+              "A technically successful pilot cannot support the production lease price.",
+              "Lock expansion pricing, measure complete cost, and define exit rights before the pilot begins.",
+            ],
+            [
+              "Data and security",
+              "Remote access or field data exposes sensitive industrial information.",
+              "Network segmentation, identity controls, encryption, logging, data limits, security testing, and breach obligations.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The Buyer Diligence Checklist",
+      paragraphs: [
+        "Persona should be evaluated as a complete industrial service. The robot, welding process, human supervision, maintenance, data, safety, and commercial contract all determine whether the deployment works.",
+        "The pilot should be designed backward from a production decision. It needs representative parts and conditions, a measured human baseline, predefined acceptance gates, and the same commercial structure that would apply after expansion.",
+      ],
+      tables: [
+        {
+          title: "Questions to Answer Before Signing",
+          columns: ["Area", "Evidence to Request"],
+          rows: [
+            [
+              "Hardware",
+              "Current robot data sheet, generation, payload, reach, mobility, battery, sensors, compute, environmental limits, component life, and service manuals.",
+            ],
+            [
+              "Task performance",
+              "Cycle time, accepted output, repeatability, intervention, fault, recovery, and comparable customer results.",
+            ],
+            [
+              "Weld quality",
+              "Qualified procedures, parameter control, traceability, inspection results, defect rates, and responsibility for rework.",
+            ],
+            [
+              "Autonomy",
+              "Exactly which steps are autonomous, remotely operated, scripted, or manually supervised in the proposed deployment.",
+            ],
+            [
+              "Safety",
+              "Hazard analysis, applicable standards, emergency functions, safe stopping, fall behavior, operating envelope, and incident history.",
+            ],
+            [
+              "Operations",
+              "Availability commitment, maintenance plan, support hours, field response, spares, batteries, replacement unit, training, and escalation.",
+            ],
+            [
+              "Data",
+              "Ownership, collection, video, drawings, remote access, processing locations, training rights, retention, deletion, and export.",
+            ],
+            [
+              "Cybersecurity",
+              "Architecture, access control, signed software, vulnerability process, logging, assurance testing, and incident response.",
+            ],
+            [
+              "Economics",
+              "Full recurring and one time price, utilization assumptions, internal staff, consumables, integration, expansion price, and return model.",
+            ],
+            [
+              "Contract",
+              "Acceptance, service credit, warranty, liability, insurance, intellectual property, change control, termination, and transition assistance.",
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Black Scarab Verdict",
+      paragraphs: [
+        "Persona AI has chosen one of the most credible openings for an industrial humanoid. Skilled welding and fabrication can carry far more value than moving a box, and shipyards provide a strong reason for a robot to have legs, arms, dexterous hands, and a human compatible shape.",
+        "The company also has unusually relevant leadership and partners for its age. NASA humanoid experience, HD Hyundai's shipbuilding scale, POSCO's steel operations, ABS standards expertise, and practical fabrication sites give Persona a path from hardware development to work that customers can measure.",
+        "The conclusion is still conditional. Persona has to convert teleoperated demonstrations into bounded autonomy, complete qualified work through real shifts, survive harsh environments, support customers quickly, and make the lease economic against simpler automation.",
+        "If it succeeds, Persona will not merely sell a humanoid. It will sell additional skilled industrial capacity in places where capacity is difficult to add. That is a serious business. The next evidence should come from accepted production output, intervention data, uptime, and customer economics rather than another cinematic demonstration.",
+      ],
+    },
+    {
+      heading: "Research Method",
+      paragraphs: [
+        "This report was prepared from Persona AI product, design, team, leasing, demonstration, and partnership materials; official announcements from HD Hyundai, POSCO, ABS, NASA, and Louisiana organizations; and independent industry reporting on the company's strategy and development stage.",
+        "Persona is privately held and does not publish audited financial statements, recognized revenue, a complete production specification, a public price list, autonomous fleet performance, or independently verified customer return. Company supplied goals and demonstrations are identified as such and should be validated through direct diligence.",
+      ],
+    },
+  ],
+  sources: [
+    "Persona AI product, design, leasing, team, and demonstration materials",
+    "Official customer and partner announcements from HD Hyundai, POSCO, ABS, and Louisiana Economic Development",
+    "NASA materials on Robonaut and Valkyrie humanoid technology",
+    "Persona AI funding announcement and current industry reporting",
+  ],
+  sourceLinks: [
+    {
+      label: "Persona AI industrial humanoid platform",
+      url: "https://persona.ai/",
+    },
+    {
+      label: "Persona AI industrial design and hardware direction",
+      url: "https://persona.ai/industrial-design-for-heavy-industry-humanoids/",
+    },
+    {
+      label: "Persona AI industrial humanoid leasing program",
+      url: "https://persona.ai/wp-content/uploads/PAI-RaaS-Brocure-04-2026-v1.pdf",
+    },
+    {
+      label: "Persona AI skilled welding strategy and teleoperation disclosure",
+      url: "https://persona.ai/news/why-skilled-industrial-labor-is-the-future-of-heavy-industrial-humanoids/",
+    },
+    {
+      label: "Persona AI funding announcement",
+      url: "https://www.prnewswire.com/news-releases/persona-ai-raises-27m-oversubscribed-pre-seed-to-deliver-the-future-of-humanoid-robotics-302455330.html",
+    },
+    {
+      label: "HD Hyundai shipyard welding collaboration",
+      url: "https://esg.hd.com/en/news/944",
+    },
+    {
+      label: "POSCO steelworks humanoid pilot",
+      url: "https://newsroom.posco.com/en/posco-group-to-implement-humanoid-robots-for-steel-product-logistics-management-at-steelworks/",
+    },
+    {
+      label: "POSCO strategic investment in Persona AI",
+      url: "https://newsroom.posco.com/en/posco-group-expands-humanoid-robots-specialized-in-heavy-duty-industrial-sites/",
+    },
+    {
+      label: "ABS and Persona AI shipyard inspection collaboration",
+      url: "https://ww2.eagle.org/en/newsdetail.ac73db19.html",
+    },
+    {
+      label: "Louisiana and SSE Steel Fabrication pilot",
+      url: "https://www.opportunitylouisiana.gov/news/state-of-louisiana-and-persona-ai-launch-humanoid-pilot-at-sse-steel-fabrication",
+    },
+    {
+      label: "NASA Robonaut 2 program",
+      url: "https://www.nasa.gov/robonaut2/",
+    },
+    {
+      label: "NASA Valkyrie fact sheet",
+      url: "https://www.nasa.gov/wp-content/uploads/2023/06/r5-fact-sheet.pdf",
+    },
+  ],
+});
+
 const fieldAiDeepDive = (): CaseStudyArticle => ({
   slug: "fieldai-edge-robot-foundation-model-industrial-autonomy-deep-dive",
   title:
@@ -15496,6 +16281,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  personaAiDeepDive(),
   huggingFaceDeepDive(),
   fieldAiDeepDive(),
   computeExchangeDeepDive(),
