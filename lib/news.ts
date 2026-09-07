@@ -30,6 +30,117 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "tuya-smart-doova-ai-companion-robot-seniors",
+    title:
+      "Tuya Smart unveils Doova, an AI home companion robot for seniors",
+    summary:
+      "The mobile robot combines voice assistance, room navigation, family alerts, smart home control, and companionship for older adults living independently.",
+    category: "Physical AI News",
+    publishedDate: "2026-09-07",
+    publishedLabel: "September 7, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about",
+    },
+    image: "/images/news/tuya-doova-ai-companion-robot-seniors.png",
+    imageAlt:
+      "Editorial illustration of a mobile AI companion robot assisting an older adult at home",
+    imageCaption:
+      "An original editorial interpretation of a mobile home companion helping an older adult stay connected, informed, and supported.",
+    readingTime: "7 min read",
+    keyPoints: [
+      "Doova can respond to a spoken request for help, move toward the user, and alert family through a live video call if the person does not respond within 60 seconds.",
+      "Tuya designed the robot to combine companionship, reminders, home monitoring, and smart device control in one mobile system.",
+      "Tuya has not disclosed pricing, availability, professional monitoring, medical certification, or detailed privacy controls for Doova.",
+    ],
+    sections: [
+      {
+        heading: "A robot designed around the first minute after a fall",
+        paragraphs: [
+          "Tuya Smart introduced Doova at IFA 2026 in Berlin as an AI home companion for older adults who want to continue living independently. The small mobile robot is designed to move through the home, hold conversations, manage connected devices, deliver reminders, and help family members stay informed.",
+          "The most important part of the announcement is not the friendly face or the conversational AI. It is a proposed emergency workflow built around the moments after a person asks for help.",
+          "When a user says, “Hey Tuya, help,” the robot is designed to determine where the voice came from, travel to the person, and use its cameras to assess the scene. If the user does not respond within 60 seconds, Doova can begin an emergency process and send a live two way video alert to family members.",
+          "That could give relatives more context than a simple alarm. Instead of receiving only a notification, a family member may be able to see the room, speak with the person, and decide what to do next. Tuya has not said that the service connects directly to professional emergency dispatch, so the system currently appears centered on family response.",
+        ],
+      },
+      {
+        heading: "How Doova finds its way around the home",
+        paragraphs: [
+          "Doova combines laser based mapping, vision, microphones, and a mobile base. Tuya says the robot uses LDS LiDAR to understand the layout of a home and four microphones to identify the direction of a voice. Its cameras use skeletal recognition to interpret posture and movement.",
+          "The robot moves on two powered wheels supported by caster wheels, a design intended to balance maneuverability and stability on ordinary indoor floors. It can return to its charging dock on its own when the battery runs low.",
+          "Tuya also describes a room monitoring feature. Doova can travel to defined points near the center of rooms, rotate for a complete visual scan, and send a safety report to a phone. A family could use that view to check whether something appears unusual without placing fixed cameras in every corner of the home.",
+          "The announcement does not establish that Doova can reliably detect a fall without hearing a request for help. Tuya says its vision system can assess posture, but it has not published detection accuracy, testing results, or details about how the robot performs when furniture blocks its view, rooms are dark, or the user cannot speak.",
+        ],
+      },
+      {
+        heading: "More than an alert device",
+        paragraphs: [
+          "Tuya is positioning Doova as a daily companion rather than a single purpose safety product. A multimodal language model supports conversations, questions, games, and suggestions related to meals, gardening, clothing, and other routines.",
+          "The robot can provide medication, weather, and schedule reminders. It can also help interpret bills and letters, explain how to use connected appliances, and flag language that may indicate a scam. Tuya says a future service may help users locate misplaced items around the home.",
+          "These functions address a wider reality of independent living. Safety is not limited to falls. Confusing documents, missed medication, social isolation, fraud, and difficulty managing a growing collection of connected devices can all make daily life harder.",
+          "The National Institute on Aging notes that older adults face an elevated risk of loneliness and social isolation, conditions associated with depression, cognitive decline, and other health problems. The Federal Trade Commission reported that adults aged 60 and older lost $2.4 billion to fraud in 2024. A robot cannot replace family, community, or professional care, but a well designed assistant could make routine support easier to access.",
+        ],
+      },
+      {
+        heading: "A moving control center for the smart home",
+        paragraphs: [
+          "Doova also acts as a Tuya smart home hub. Users can ask it to control compatible lights, curtains, and devices in kitchens and bathrooms. Because the robot can move, the interface follows the person instead of remaining fixed to a wall, phone, or speaker.",
+          "A 10.1 inch high definition display supports video calls, visual guidance, and animated facial expressions. The rounded body and simple face are intended to feel approachable inside a home rather than industrial or clinical.",
+          "This is where Tuya has an advantage over a startup building a companion robot from scratch. The company already supplies a large software platform for connected products. Doova can become a physical interface for that network, while the network gives the robot useful things to control.",
+          "The same connection creates new responsibilities. A mobile device with cameras and microphones can observe far more than a stationary speaker. Buyers will need clear answers about what data stays inside the home, what travels to the cloud, how long recordings are stored, who can access a live video session, and how permissions can be changed or revoked.",
+        ],
+      },
+      {
+        heading: "The business behind the robot",
+        paragraphs: [
+          "Doova arrives as Tuya expands beyond the software that connects smart devices. At IFA, the company placed the robot inside a broader portfolio spanning home automation, energy management, robotics, and the Matter standard for connected products.",
+          "Tuya reported $92.9 million in revenue for the second quarter of 2026, an increase of 16 percent from the prior year. Its platform as a service business produced $67.9 million, while smart home and robot product revenue reached $13.5 million, up 23.2 percent.",
+          "The company said it had more than 2.092 million registered AI developers as of June 30. That developer base could help Doova gain new skills and connect with more products, but the commercial model remains unclear.",
+          "Tuya has discussed subscriptions and other paid services across energy, pet care, and video understanding. It has not said whether Doova will require a subscription, whether emergency alerts will be included with the hardware, or whether families will pay separately for monitoring and future features.",
+        ],
+      },
+      {
+        heading: "The questions families should ask",
+        paragraphs: [
+          "Doova is still an announced product, not a proven care system. Tuya has not disclosed its price, release date, first markets, battery life, warranty, repair plan, or expected service life. It has also not shared independent trials showing how reliably the robot reaches a person during an emergency.",
+          "Families should ask what happens when internet service fails, the charging dock loses power, a door is closed, the robot is on another floor, or a user cannot say the activation phrase. They should also understand who receives an alert, how quickly that person is expected to respond, and whether a professional monitoring option exists.",
+          "Tuya has not described Doova as a medical device or announced a medical certification. Its reminders, posture assessment, and family alerts should not be treated as a replacement for medical care or a dedicated emergency response service unless future evidence and regulatory approvals support that role.",
+          "The best version of this product would make independence easier without making the home feel watched. Reaching that balance will depend as much on privacy controls, reliability, support, and thoughtful onboarding as it does on the quality of the AI model.",
+        ],
+      },
+      {
+        heading: "What comes next",
+        paragraphs: [
+          "Tuya has shown a coherent idea for a home robot. Mobility allows Doova to bring communication and smart home control to the user, while its sensors give family members more context when help may be needed.",
+          "The next step is evidence. A launch price will show which households Tuya expects to reach. Availability details will reveal whether Doova is a showcase for the company platform or a product intended for broad adoption. Independent testing will determine whether the emergency workflow works consistently in real homes.",
+          "If Tuya can answer those questions, Doova could occupy a useful space between a smart speaker, a mobile camera, and a personal emergency alert system. The company has assembled those functions into a friendly machine. Now it has to prove that families can trust it when the moment is not friendly at all.",
+        ],
+      },
+    ],
+    sources: [
+      {
+        label: "Tuya Smart announcement of Doova at IFA 2026",
+        url: "https://www.tuya.com/news-details/Kfx9813ozlbff",
+      },
+      {
+        label: "Tuya Smart overview of its IFA 2026 product showcase",
+        url: "https://www.tuya.com/news-details/Kfxbtt88aw2t0",
+      },
+      {
+        label: "Tuya Smart second quarter 2026 financial results",
+        url: "https://ir.tuya.com/news-releases/news-release-details/tuya-reports-second-quarter-2026-unaudited-financial-results",
+      },
+      {
+        label: "National Institute on Aging guidance on loneliness and social isolation",
+        url: "https://www.nia.nih.gov/health/loneliness-and-social-isolation/loneliness-and-social-isolation-tips-staying-connected",
+      },
+      {
+        label: "Federal Trade Commission report on fraud affecting older adults",
+        url: "https://www.ftc.gov/news-events/news/press-releases/2025/12/ftc-issues-annual-report-congress-agencys-actions-protect-older-adults",
+      },
+    ],
+  },
+  {
     slug: "physical-superintelligence-raises-58-million-ai-physics-lab",
     title:
       "Physical Superintelligence raises $58 million to build an AI native physics lab",
