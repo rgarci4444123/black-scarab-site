@@ -334,6 +334,7 @@ export default async function CaseStudyPage({ params }: Props) {
                   src={article.image}
                   alt={article.imageAlt}
                   fill
+                  loading="eager"
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover"
                 />
@@ -391,6 +392,24 @@ export default async function CaseStudyPage({ params }: Props) {
                         </p>
                       ))}
                     </div>
+                    {section.visual ? (
+                      <figure className="mt-7 overflow-hidden rounded-[22px] border border-[#e1ddd2] bg-[#f4f0e8] shadow-[0_14px_34px_rgba(17,24,39,0.08)]">
+                        <div className="relative aspect-[16/10] w-full">
+                          <Image
+                            src={section.visual.src}
+                            alt={section.visual.alt}
+                            fill
+                            sizes="(min-width: 1024px) 820px, (min-width: 768px) calc(100vw - 160px), calc(100vw - 48px)"
+                            className="object-cover"
+                          />
+                        </div>
+                        {section.visual.caption ? (
+                          <figcaption className="border-t border-[#e8e4dc] bg-[#fffdfa] px-5 py-3 text-xs leading-5 text-[#6b7280]">
+                            {section.visual.caption}
+                          </figcaption>
+                        ) : null}
+                      </figure>
+                    ) : null}
                     {section.tables?.length ? (
                       <div className="mt-6 space-y-6">
                         {section.tables.map((table) => (
@@ -436,9 +455,9 @@ export default async function CaseStudyPage({ params }: Props) {
                               <table className="w-full min-w-[640px] border-collapse text-left text-sm">
                                 <thead>
                                   <tr className="border-b border-[#e8e4dc] bg-[#f6f4ef] text-[#111827]">
-                                    {table.columns.map((column) => (
+                                    {table.columns.map((column, columnIndex) => (
                                       <th
-                                        key={column}
+                                        key={`${column}-${columnIndex}`}
                                         scope="col"
                                         className="px-5 py-3 font-semibold"
                                       >

@@ -1,6 +1,13 @@
+import { humanoidAnatomyDeepDive } from "@/lib/humanoid-anatomy";
+
 export type CaseStudySection = {
   heading?: string;
   paragraphs: CaseStudyParagraph[];
+  visual?: {
+    src: string;
+    alt: string;
+    caption?: string;
+  };
   tables?: CaseStudyTable[];
   barCharts?: CaseStudyBarChart[];
   links?: CaseStudyInlineLink[];
@@ -16281,6 +16288,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  humanoidAnatomyDeepDive(),
   personaAiDeepDive(),
   huggingFaceDeepDive(),
   fieldAiDeepDive(),
