@@ -30,6 +30,139 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "palladyne-ai-fanuc-industrial-robots-physical-ai",
+    title:
+      "Palladyne AI and FANUC pair adaptive software with industrial robots",
+    summary:
+      "Palladyne IQ will be optimized for FANUC robots as the companies pursue faster deployment, adaptive motion, teleoperation, simulation, and repeatable manufacturing workflows.",
+    category: "Physical AI News",
+    publishedDate: "2026-09-08",
+    publishedLabel: "September 8, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about",
+    },
+    image: "/images/news/palladyne-ai-fanuc-industrial-robots.png",
+    imageAlt:
+      "Editorial illustration of an adaptive industrial robot using machine vision to handle varied metal parts",
+    imageCaption:
+      "An original editorial interpretation of adaptive robot software guiding an industrial arm through a variable manufacturing task.",
+    readingTime: "8 min read",
+    keyPoints: [
+      "Palladyne AI and FANUC America plan to optimize Palladyne IQ for FANUC robots and develop adaptive motion, teleoperation, simulation, training, and deployment tools.",
+      "Palladyne previously demonstrated autonomous media blasting on a FANUC M710 robot for the United States Air Force, giving the collaboration a concrete technical starting point.",
+      "The companies did not disclose financial terms, exclusivity, customer deployments, pricing, supported launch models, performance benchmarks, or a commercial release date.",
+    ],
+    sections: [
+      {
+        heading: "FANUC is adding another intelligence layer",
+        paragraphs: [
+          "Palladyne AI and FANUC America announced a strategic collaboration on September 8 to bring Palladyne IQ to FANUC industrial robots. The companies want to make robotic automation easier to deploy, more adaptable when conditions change, and practical for a wider range of manufacturing, warehouse, and logistics work.",
+          "The factory robot is not getting a personality. It is getting a wider playbook. Traditional automation can be exceptionally fast and precise when the workpiece, fixture, path, and timing remain predictable. The cost and complexity rise when parts arrive in different positions, tasks change frequently, or a robot needs to respond to what its sensors are seeing in real time.",
+          "Palladyne IQ is designed to sit above the robot controller and add perception, task learning, motion planning, and adaptive behavior. FANUC provides the proven mechanical platform, controls, service network, and enormous installed base. Palladyne provides software intended to reduce the amount of custom programming required for variable work.",
+          "This is a development and commercialization agreement, not the launch of a finished FANUC product. Neither company identified the first customer, factory, robot model, commercial package, or deployment date.",
+        ],
+      },
+      {
+        heading: "What the two companies plan to build",
+        paragraphs: [
+          "The collaboration covers six practical areas. Palladyne IQ will be optimized for FANUC platforms. The companies will work on AI driven motion planning and adaptive behavior, teleoperation and learning from human demonstrations, simulation and model training, customer use case validation, and standardized deployment workflows for integrators and end users.",
+          "Those workstreams address a familiar problem in industrial automation. Buying a robot is only the beginning. A complete cell may require fixtures, cameras, safety equipment, end effectors, controls, process knowledge, programming, testing, and integration with factory systems. Every unusual part or workflow can create more engineering work.",
+          "A standardized workflow could make Palladyne IQ easier for FANUC integrators to quote, configure, validate, and support. That matters because most manufacturers do not want an AI experiment. They want a production system with a defined scope, an acceptance test, a service plan, and a credible payback period.",
+          "The announcement says the companies will jointly validate customer applications across manufacturing, warehousing, and logistics. It does not name those applications. Surface finishing, material handling, inspection, machine tending, kitting, parts sequencing, and variable assembly are reasonable candidates based on Palladyne materials and earlier demonstrations, but the first commercial focus remains undisclosed.",
+        ],
+      },
+      {
+        heading: "How Palladyne IQ changes the programming model",
+        paragraphs: [
+          "A conventional robot generally executes paths and logic defined in advance. Sensors can add flexibility, but a systems integrator still has to specify how the machine should respond to expected conditions. Palladyne is trying to move more of that burden into a software layer that can observe a task, learn from demonstrations, plan motion, and adjust when the real scene differs from the training example.",
+          "The company describes Palladyne IQ as edge based software. Autonomous operation does not require a cloud connection, according to its product brochure. Keeping the main control loop near the robot can reduce communications delay and may simplify deployments in factories where continuous external connectivity is undesirable.",
+          "Training can combine human demonstrations, teleoperation, a task description language, simulation, and language model input. A worker or integrator could show the system how to perform a process, then use software tools to refine the task rather than writing every motion from scratch.",
+          "That does not eliminate conventional controls. The FANUC controller still manages the robot hardware and certified motion environment. Palladyne lists FANUC motion streaming software and the R30iB family of controllers in its current technical materials. The value has to come from coordinating perception and behavior without compromising the reliability expected from the underlying robot.",
+        ],
+      },
+      {
+        heading: "There is already a FANUC proof point",
+        paragraphs: [
+          "Palladyne and FANUC are not starting with a blank workcell. In 2025, Palladyne reported an autonomous media blasting demonstration for the United States Air Force using its IQ software on a FANUC M710 robot mounted on a linear rail.",
+          "The system controlled the robot across seven degrees of freedom and adjusted process variables including tool distance, path width, angle, and speed. The job is a useful test because aircraft components can have complex geometry and surface preparation requires the tool to maintain a controlled relationship with the material.",
+          "Palladyne completed the work under a multi million dollar Air Force program focused on maintenance tasks at the Warner Robins Air Logistics Complex. The company also demonstrated automated sanding with a different commercial robot. Together, the projects show that its software has moved beyond a simulation and operated real equipment on variable surface work.",
+          "The evidence is still limited. Palladyne did not publish cycle time comparisons, defect rates, labor savings, availability, intervention frequency, or a complete cost analysis for the FANUC demonstration. A successful milestone under a development contract is meaningful, but it is not the same as sustained production across many customer sites.",
+        ],
+      },
+      {
+        heading: "Why FANUC changes the size of the opportunity",
+        paragraphs: [
+          "FANUC says more than one million of its robots have been installed worldwide. Its current catalog spans collaborative arms, articulated robots, delta systems, SCARA machines, painting platforms, palletizing equipment, and other configurations. Payloads extend from small part handling to systems rated for as much as 2,300 kilograms.",
+          "That breadth gives Palladyne something every robotics software company needs: access to machines customers already trust. A manufacturer may be more willing to add an intelligence layer to an established robot platform than adopt an entirely new machine with an unproven service model.",
+          "FANUC also brings integrators, training programs, spare parts, application expertise, and long term customer relationships. If the two companies create a repeatable offering, Palladyne could reach buyers through an existing automation ecosystem instead of building every sales and support function on its own.",
+          "The word if is doing important work. The announcement does not say that Palladyne IQ will be sold across the full FANUC catalog or through every FANUC channel. It says the companies will optimize the software, validate use cases, and develop deployment workflows. Distribution potential should not be mistaken for committed distribution.",
+        ],
+      },
+      {
+        heading: "FANUC is building a broader physical AI ecosystem",
+        paragraphs: [
+          "The Palladyne agreement fits into a much larger FANUC strategy. During 2026, FANUC announced physical AI work involving NVIDIA and Google, while also highlighting Amazon Web Services in its technology ecosystem. At IMTS, the company plans to show robots using multimodal reasoning, vision, force data, natural language programming, simulation, and autonomous recovery.",
+          "NVIDIA supplies accelerated computing and simulation tools. Google is contributing AI agents and multimodal models. Other specialists bring tracking, perception, programming, and process software. Palladyne enters this picture as an autonomy and task learning layer focused on adapting commercial robots to variable work.",
+          "That means the FANUC relationship does not appear exclusive. For customers, an open ecosystem can be useful because different jobs need different tools. For Palladyne, it creates a competitive test. Its software will have to earn a place beside larger AI platforms and specialized automation vendors on measurable deployment results.",
+          "The strategic question is whether Palladyne can become a reusable layer across many FANUC cells or remains a specialist for difficult applications such as surface preparation. Either outcome could support a business, but the market size and sales model would look very different.",
+        ],
+      },
+      {
+        heading: "The commercial stakes for Palladyne",
+        paragraphs: [
+          "Palladyne entered 2026 as a broader defense and industrial technology company after acquisitions expanded it into avionics, precision manufacturing, aerospace engineering, and autonomous systems. Palladyne IQ remains the core industrial robot software product, but the company now reports results across several business lines.",
+          "For 2025, Palladyne reported $5.2 million in revenue, an operating loss of $32.4 million, and $47 million in cash, cash equivalents, and marketable securities at year end. It guided to $24 million to $27 million in 2026 revenue and reported nearly $18 million in backlog by the middle of February.",
+          "Those numbers should not be read as Palladyne IQ revenue. The guidance and backlog include the wider company, including acquired operations and defense programs. Palladyne said IQ 2.0 had reached commercial release and signed an initial customer, but it has not disclosed software revenue, pricing, customer concentration, or recurring revenue for the product.",
+          "A formal FANUC collaboration can improve credibility with industrial buyers and integrators. The financial impact will depend on paid deployments, deployment time, gross margin, support requirements, and whether one trained task can be reproduced across multiple cells without extensive new engineering.",
+        ],
+      },
+      {
+        heading: "What still has to be proven",
+        paragraphs: [
+          "The most important missing detail is the first production use case. The partners have not announced a named customer, order, paid pilot, target industry, supported launch robot, or expected availability. Financial terms and exclusivity were also not disclosed.",
+          "Performance evidence is equally important. Buyers will want to know how long training takes, how much variation the system tolerates, what happens when perception is uncertain, how often a person must intervene, and whether cycle time remains competitive with a conventional cell.",
+          "Safety and responsibility will need clear boundaries. Adaptive software can propose or select actions, but industrial deployments still require risk assessment, operating limits, validated safety functions, cybersecurity controls, change management, and a defined process for approving updates.",
+          "The signals to watch are concrete: a packaged FANUC and Palladyne offering, named integrator support, the first customer application, measured deployment savings, and evidence that a learned task can run reliably through production variation. The partnership joins serious robot hardware with software that has already controlled a FANUC system. The next step is proving that the combination can be purchased and repeated, not merely demonstrated.",
+        ],
+      },
+    ],
+    sources: [
+      {
+        label: "Palladyne AI and FANUC America collaboration announcement",
+        url: "https://www.palladyneai.com/press-releases/palladyne-ai-and-fanuc-america-announce-strategic-collaboration-to-advance-intelligent-robotic-automation/",
+      },
+      {
+        label: "Palladyne IQ product brochure and supported system information",
+        url: "https://www.palladyneai.com/download/Palladyne_IQ_brochure.pdf",
+      },
+      {
+        label: "Palladyne AI Air Force program and FANUC M710 demonstration",
+        url: "https://investor.palladyneai.com/news-releases/news-release-details/palladyne-ai-corp-receives-additional-funding-us-air-force/",
+      },
+      {
+        label: "Palladyne AI 2025 results and 2026 financial guidance",
+        url: "https://investor.palladyneai.com/news-releases/news-release-details/palladyne-ai-reports-fourth-quarter-and-full-year-2025-results",
+      },
+      {
+        label: "FANUC America industrial robot portfolio and installed base",
+        url: "https://www.fanucamerica.com/products/robot",
+      },
+      {
+        label: "FANUC America physical AI program at IMTS 2026",
+        url: "https://www.fanucamerica.com/press-releases/fanuc-america-brings-robotics-automation-physical-ai-and-cnc-innovation-to-imts-2026",
+      },
+      {
+        label: "FANUC and NVIDIA physical AI collaboration",
+        url: "https://www.fanucamerica.com/press-releases/fanuc-accelerates-physical-ai-in-industrial-robotics-leveraging-nvidia-technologies",
+      },
+      {
+        label: "FANUC and Google physical AI collaboration",
+        url: "https://www.fanucamerica.com/press-releases/fanuc-accelerates-physical-ai-through-collaboration-with-google-ai-agent-powered-by-google-operates-robots",
+      },
+    ],
+  },
+  {
     slug: "tuya-smart-doova-ai-companion-robot-seniors",
     title:
       "Tuya Smart unveils Doova, an AI home companion robot for seniors",
