@@ -111,7 +111,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : authorUrl;
   const typeLabel = article.typeLabel ?? "Case Study";
   return {
-    title: article.title,
+    title: article.seoTitle ?? article.title,
     description: article.seoDescription,
     authors: [{ name: articleAuthor, url: articleAuthorUrl }],
     alternates: {

@@ -253,6 +253,7 @@ export type CaseStudyBarChart = {
 export type CaseStudyArticle = {
   slug: string;
   title: string;
+  seoTitle?: string;
   summary: string;
   publishedLabel: string;
   publishedDate: string;

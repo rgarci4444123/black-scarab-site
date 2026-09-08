@@ -5,7 +5,9 @@ const atlasCaption =
 
 export const humanoidAnatomyDeepDive = (): CaseStudyArticle => ({
   slug: "humanoid-robot-anatomy-components-suppliers-guide",
-  title: "Humanoid Robot Anatomy: The Complete Component and Supplier Guide",
+  title:
+    "Humanoid Robot Components and Suppliers: The Complete Hardware Anatomy Guide",
+  seoTitle: "Humanoid Robot Components and Suppliers Guide",
   summary:
     "A medical style dissection of the modern humanoid robot, from skeleton, joints, actuators, hands, batteries, and cable harnesses to vision, GPUs, tactile sensing, thermal management, safety, suppliers, failure modes, and service economics.",
   publishedLabel: "Deep Dive · Published September 7, 2026",
