@@ -1,4 +1,5 @@
 import { humanoidAnatomyDeepDive } from "@/lib/humanoid-anatomy";
+import { palladyneAiDeepDive } from "@/lib/palladyne-ai";
 
 export type CaseStudySection = {
   heading?: string;
@@ -16289,6 +16290,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  palladyneAiDeepDive(),
   humanoidAnatomyDeepDive(),
   personaAiDeepDive(),
   huggingFaceDeepDive(),
