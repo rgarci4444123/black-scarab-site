@@ -17,11 +17,22 @@ export const metadata: Metadata = {
     type: "website",
     url: `${baseUrl}/insights`,
     title: "Black Scarab Insights",
+    images: [{
+      url: `${baseUrl}/images/social/black-scarab-insights.png`,
+      width: 1200,
+      height: 630,
+      alt: "Black Scarab Insights. Intelligence. In the real world. Robotics, autonomy, and industrial AI.",
+    }],
     description:
       "Deep analysis and practical guides on physical AI, industrial deployment, and intelligent machines.",
   },
   twitter: {
     card: "summary_large_image",
+    site: "@BlackScarabAI",
+    images: [{
+      url: `${baseUrl}/images/social/black-scarab-insights.png`,
+      alt: "Black Scarab Insights. Intelligence. In the real world. Robotics, autonomy, and industrial AI.",
+    }],
     title: "Black Scarab Insights",
     description:
       "Deep analysis and practical guides on physical AI, industrial deployment, and intelligent machines.",
