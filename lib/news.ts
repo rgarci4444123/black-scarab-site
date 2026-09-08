@@ -30,6 +30,96 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "palantir-nebius-sovereign-ai-infrastructure-partnership",
+    title: "Palantir turns to Nebius for sovereign AI infrastructure",
+    summary: "The partnership connects enterprise AI software with dedicated compute capacity. Its commercial test will be whether customers gain useful control over their models without taking on an unmanageable operating burden.",
+    category: "Physical AI News",
+    publishedDate: "2026-09-08",
+    publishedLabel: "September 8, 2026",
+    author: { name: "Rodolfo Garcia Calderoni, CFA", href: "/about" },
+    image: "/images/news/palantir-nebius-sovereign-ai.png",
+    imageAlt: "Editorial illustration of charcoal server racks within a translucent enclosure connected to modular computing infrastructure",
+    imageCaption: "Original Black Scarab editorial illustration of controlled computing infrastructure. This conceptual scene does not depict an actual Palantir or Nebius facility.",
+    readingTime: "6 min read",
+    keyPoints: [
+      "Nebius becomes Palantir’s preferred sovereign AI infrastructure partner, with customer access following an integration period.",
+      "The opportunity is to connect proprietary operating knowledge with models a business can adapt and govern.",
+      "Buyers should evaluate access controls, deployment scope, measured results, and complete operating costs before treating sovereignty as a finished product.",
+    ],
+    sections: [
+      {
+        heading: "A partnership about control",
+        paragraphs: [
+          "Palantir and Nebius announced a partnership on September 8 to bring Nebius compute and inference services into Palantir’s enterprise environment for eligible commercial customers. Integration comes first; the announcement does not give a launch date.",
+          "The companies plan to let customers run open models, adapt them with proprietary data, and retain control over the resulting systems. They also intend to accelerate new capacity, including modular data centers at sites with available power. Contract value, committed capacity, pricing, and initial customers were not disclosed.",
+          "Black Scarab’s reading is that the real product being proposed is a more manageable relationship between a business and its AI. A company may want advanced models without surrendering the knowledge accumulated in maintenance records, production decisions, customer interactions, or engineering documents. Turning that preference into dependable infrastructure is the hard part.",
+        ],
+      },
+      {
+        heading: "What each side brings",
+        paragraphs: [
+          "Nebius supplies the computing environment. Training changes a model using examples; inference runs the model to produce an answer or prediction. Those jobs need processing capacity, memory, storage, networking, and software that keeps workloads running. Renting access to that system can be more practical than building an internal computing operation.",
+          "Palantir supplies software that connects AI to organizational data and workflows. Its AIP documentation describes tools for developing, evaluating, and deploying AI applications, including support for bringing external or internally hosted models into the platform. An enterprise still needs to decide which information a model can see and which actions its output can trigger.",
+          "The Ontology provides a useful way to understand that second job. Palantir describes it as a representation of an organization’s objects, relationships, and operations. A maintenance application might connect a machine to its service history, spare parts, open work orders, and authorized technicians. That example illustrates the concept; it is not a deployment announced under this agreement.",
+          "The partnership release places AIP, Ontology, Foundry, and Apollo within Palantir’s Sovereign AI Operating System. The intended authorization and isolation boundary is a software and infrastructure arrangement. It should not be read as evidence that every customer receives a physically isolated facility or an identical deployment configuration.",
+        ],
+      },
+      {
+        heading: "Sovereignty needs a practical definition",
+        paragraphs: [
+          "For a buyer, control should become a set of answerable questions. Who can administer the environment? Where are the data, backups, and model artifacts stored? Who holds the encryption keys? What can support personnel access? What happens if the customer wants to move its model somewhere else?",
+          "Location is only one part of that discussion. A system can operate nearby while leaving important permissions or dependencies with a supplier. Conversely, a cloud service may offer strong controls without the customer owning the building. The useful comparison is the actual allocation of access, responsibility, and exit rights.",
+          "The release does not establish a country by country deployment map, an air gap, or a universal compliance certification. Those details require the actual service documentation and contract. A sovereignty label cannot substitute for checking whether a proposed configuration meets the customer’s requirements.",
+          "Black Scarab would also ask how failures are handled. If an inference service becomes unavailable, does the workflow stop, queue work, use a simpler model, or return control to a person? Ownership of the model is valuable, but operational independence also depends on a tested recovery plan.",
+        ],
+      },
+      {
+        heading: "A model that knows the business",
+        paragraphs: [
+          "The partners argue that models adapted to a customer’s domain can beat general purpose closed models on that customer’s work. That is a company claim, not a published benchmark from this announcement.",
+          "The proposition is plausible enough to test. Consider a fictional equipment operator trying to classify maintenance reports. Its records may contain local abbreviations, recurring fault patterns, unusual asset names, and repair decisions that never appear in public training data. A system that uses that context could become more useful to a technician.",
+          "But access to records does not automatically make those records good training material. Old diagnoses may be wrong. Similar machines may use different component names. Sensitive information may need to be excluded. Teams need to distinguish information retrieval, which supplies relevant context at request time, from training that changes the model itself.",
+          "For this hypothetical operator, the acceptance test should measure correctly classified faults, missed urgent cases, review time, and the frequency with which a technician overrides the result. Testing should include unfamiliar equipment and incomplete records. A persuasive demonstration is a starting point; repeated performance on representative work is the evidence that matters.",
+          "The choice of an open model also leaves licensing, version management, security updates, and evaluation work to resolve. More control can be useful precisely because the customer can change the system. That flexibility comes with decisions someone has to own.",
+        ],
+      },
+      {
+        heading: "Power is part of the product",
+        paragraphs: [
+          "The reference to modular data centers points to a constraint that software agreements cannot remove: useful compute has to exist somewhere. Available electrical power helps, but a site also needs cooling, networking, equipment, commissioning, and an operating team. A powered location is not automatically ready to serve production workloads.",
+          "There is relevant context in Nebius’s July 15 infrastructure partnership announcement. Under that separate model, partners finance and own facilities and hardware, while Nebius provides its platform and brings capacity to customers. Nebius described several possible commercial arrangements, including licensing, revenue sharing, commissions, and committed capacity.",
+          "That earlier program shows how Nebius intends to expand beyond facilities it owns or leases itself. It does not disclose the financing structure of a future Palantir project. The September agreement should not be assumed to use any particular July commercial arrangement without further evidence.",
+          "For customers, the practical milestone is capacity that has been commissioned and is available under a service commitment. For the partners, repeatable deployment matters more than the appeal of a modular design in a presentation. Power, construction, hardware delivery, and software integration must all arrive in the right sequence.",
+        ],
+      },
+      {
+        heading: "The business case still needs numbers",
+        paragraphs: [
+          "Black Scarab sees a credible strategic fit. Nebius gains a potential route to enterprises with complex data and operating requirements. Palantir gains another infrastructure path for customers who want greater control over model execution. The commercial value depends on converting that fit into paid, sustained use.",
+          "A preferred designation is not a disclosed revenue commitment. Investors should watch for customers entering production, the scale and duration of their workloads, and whether the relationship creates repeatable sales. An announcement can improve market access before it makes a measurable contribution to revenue.",
+          "Buyers need a complete cost comparison. Compute is one line. Storage, data preparation, model adaptation, evaluation, integration, monitoring, support, and idle reserved capacity can also affect the result. A public cloud price for an individual service would not establish the price of this combined offering.",
+          "The alternative may be an existing model service, a simpler retrieval application, or a workload the customer already runs internally. The proposed system should earn its additional complexity through better results, stronger control, or a more suitable operating model. No partnership announcement resolves that comparison for every buyer.",
+        ],
+      },
+      {
+        heading: "What to watch next",
+        paragraphs: [
+          "The next useful disclosure is a concrete service definition: who qualifies, where it runs, which models are supported, how responsibilities are divided, and when access begins. Then comes a customer example with enough detail to distinguish a trial from routine production.",
+          "For the infrastructure program, watch commissioned capacity and delivery dates. For the AI applications, watch measured task results and the work required to maintain them. For the commercial relationship, watch commitments and recognized business rather than reading a preferred partner label as guaranteed demand.",
+          "The partnership addresses a real enterprise question: how to make AI more specific to the business while keeping authority over the knowledge that makes it valuable. The answer will be judged in deployed systems, operating costs, and demonstrable customer control.",
+        ],
+      },
+    ],
+    sources: [
+      { label: "Nebius: Palantir partnership announcement, September 8, 2026", url: "https://nebius.com/newsroom/palantir-and-nebius-partner-to-deliver-a-complete-sovereign-ai-stack-to-palantir-customers" },
+      { label: "SEC: Nebius report furnishing the partnership announcement", url: "https://www.sec.gov/Archives/edgar/data/1513845/000110465926105749/tm2624958d1_6k.htm" },
+      { label: "Palantir: AIP overview and model integration documentation", url: "https://www.palantir.com/docs/foundry/aip/overview/" },
+      { label: "Palantir: Ontology overview", url: "https://www.palantir.com/docs/foundry/ontology/overview/" },
+      { label: "Nebius: Infrastructure partnership model, July 15, 2026", url: "https://nebius.com/newsroom/nebius-introduces-business-model-to-scale-ai-cloud-globally-through-infrastructure-partnerships" },
+      { label: "Data Center Dynamics: Independent reporting on the agreement", url: "https://www.datacenterdynamics.com/en/news/palantir-selects-nebius-as-sovereign-ai-infrastructure-provider/" },
+    ],
+  },
+  {
     slug: "palladyne-ai-fanuc-industrial-robots-physical-ai",
     title:
       "Palladyne AI and FANUC pair adaptive software with industrial robots",
