@@ -1,6 +1,8 @@
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { EngagementAnalytics } from "@/components/engagement-analytics";
 import "./globals.css";
 
 const baseUrl = "https://www.blackscarab.ai";
@@ -91,7 +93,9 @@ export default function RootLayout({
           }}
         />
         {children}
+        <EngagementAnalytics />
         <Analytics />
+        <SpeedInsights />
       </body>
 
     </html>

@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { PageEvent } from "@/components/engagement-analytics";
 import SiteHeader from "@/components/site-header";
+
+type Props = {
+  searchParams: Promise<{ source?: string | string[] }>;
+};
 
 export const metadata: Metadata = {
   title: "Thanks for subscribing",
@@ -11,13 +16,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function SubscribeThanksPage() {
+export default async function SubscribeThanksPage({ searchParams }: Props) {
+  const { source } = await searchParams;
+  const analyticsSource = Array.isArray(source) ? source[0] : source;
+
   return (
     <main className="min-h-screen bg-[#f6f4ef] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
+      <PageEvent
+        name="Newsletter Signup"
+        properties={{ source: analyticsSource ?? "unknown" }}
+      />
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
         <SiteHeader
           homeHref="/"
-          showIndustries={false}
           ctaLabel="Discuss an Opportunity"
           ctaHref="/intake"
         />

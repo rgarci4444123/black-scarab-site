@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Fragment } from "react";
 import EmailSignupCard from "@/components/email-signup-card";
+import { InsightReadTracker } from "@/components/engagement-analytics";
 import SiteHeader from "@/components/site-header";
 import {
   caseStudies,
@@ -22,18 +23,6 @@ const authorUrl = `${baseUrl}/about`;
 
 function getArticleUrl(slug: string) {
   return `${baseUrl}/insights/${slug}`;
-}
-
-function getIndustryHref(industry: string) {
-  if (industry === "Manufacturing") {
-    return "/industries/manufacturing";
-  }
-
-  if (industry === "Agriculture") {
-    return "/industries/agriculture";
-  }
-
-  return "/insights";
 }
 
 function getRelatedArticles(slug: string, industry: string) {
@@ -161,9 +150,8 @@ export default async function CaseStudyPage({ params }: Props) {
     year: "numeric",
   });
   const typeLabel = article.typeLabel ?? "Case Study";
-  const industryHref = getIndustryHref(article.industry);
-  const industryLinkLabel =
-    industryHref === "/insights" ? "Insights index" : `${article.industry} page`;
+  const industryHref = "/insights";
+  const industryLinkLabel = "Insights index";
   const ctaTitle = "Explore a commercial opportunity in Mexico";
   const ctaDescription =
     "If you are exploring how a physical AI technology could fit the Mexican market, Black Scarab can help assess the opportunity, map relevant stakeholders, and define a credible commercial next step.";
@@ -257,12 +245,12 @@ export default async function CaseStudyPage({ params }: Props) {
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
         <SiteHeader
           homeHref="/"
-          showIndustries={false}
           ctaLabel="Discuss an Opportunity"
           ctaHref="/intake"
         />
 
-        <article>
+        <article data-insight-article>
+          <InsightReadTracker slug={article.slug} />
           <section className="border-b border-[#efeae1] bg-[#faf8f3] px-6 py-14 md:px-10 md:py-18">
             <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
               <div>
@@ -607,6 +595,8 @@ export default async function CaseStudyPage({ params }: Props) {
                                 href={source.url}
                                 target="_blank"
                                 rel="noreferrer"
+                                data-analytics-event="source-link"
+                                data-analytics-label={source.label}
                                 className="transition hover:text-[#111827] hover:underline"
                               >
                                 {source.label}
@@ -653,6 +643,8 @@ export default async function CaseStudyPage({ params }: Props) {
                     <Link
                       key={relatedArticle.slug}
                       href={`/insights/${relatedArticle.slug}`}
+                      data-analytics-event="related-insight"
+                      data-analytics-label={relatedArticle.slug}
                       className="rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(15,23,42,0.08)]"
                     >
                       <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">

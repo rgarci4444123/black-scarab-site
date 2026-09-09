@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { track } from "@vercel/analytics/react";
 import SiteHeader from "@/components/site-header";
 import {
   initialIntakeForm,
@@ -48,6 +49,9 @@ export default function IntakePage() {
         );
       }
 
+      track("Opportunity Submitted", {
+        inquiryType: form.inquiryType,
+      });
       setSubmitted(true);
     } catch (error) {
       setSubmitError(
@@ -72,7 +76,6 @@ export default function IntakePage() {
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
         <SiteHeader
           homeHref="/"
-          showIndustries={false}
           ctaLabel="Back to Home"
           ctaHref="/"
         />

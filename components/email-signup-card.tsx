@@ -41,6 +41,8 @@ export default function EmailSignupCard({
       <form
         action={formAction}
         method="POST"
+        data-analytics-event="newsletter-signup"
+        data-analytics-source={source}
         className={compact ? "mt-6 flex flex-col gap-3 sm:flex-row" : "mx-auto mt-8 flex max-w-2xl flex-col gap-3 sm:flex-row"}
       >
         <input type="hidden" name="_subject" value={subject} />
