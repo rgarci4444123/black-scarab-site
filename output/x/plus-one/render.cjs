@@ -66,7 +66,7 @@ async function main() {
   const inline = (value) => esc(value).replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g, '<a href="$2">$1</a>');
   const html = markdown.split(/\n\n+/).map((block) => {
     const image = block.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
-    if (image) return `<p>[FIGURE ${image[2].slice(0, 2)}]</p>`;
+    if (image) return "";
     if (block.startsWith("# ")) return "";
     if (block.startsWith("## ")) return `<h2>${inline(block.slice(3))}</h2>`;
     if (block.startsWith("*") && block.endsWith("*")) return `<p><em>${inline(block.slice(1, -1))}</em></p>`;
