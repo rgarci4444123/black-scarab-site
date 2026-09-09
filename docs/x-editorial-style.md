@@ -129,7 +129,7 @@ The user rejected the repetitive “Each entry lists” preamble and bullet-sepa
 
 Choose an editorial format that matches the information: short explanations with distinct failure notes for anatomy; annotated figures for physical relationships; compact tables for comparable attributes; evidence matrices for supplier relationships; causal diagrams for architecture; scenario comparisons for economics; direct questions for buyer checklists. Preserve technical substance, uncertainty, evidence classes, and sources. Do not simply replace every table with the same long prose template.
 
-A full twelve-system concept is saved at `output/x/humanoid-anatomy/format-redesign/preview.html`, with native text in `section.md` and editable reference graphics. It is a proposal, not a published revision. Live Article remains unchanged. Custom HTML callout styling is illustrative; X native content uses supported headings, paragraphs, and bold text, while embedded figures can carry exact typography and color.
+The twelve-system layout study remains available in its unpublished X draft recorded in the publishing log. It is a proposal, not a published revision. The live Article remains the canonical reference. X native content uses supported headings, paragraphs, and bold text, while embedded figures can carry exact typography and color.
 
 ## Approved native structure, September 8 afternoon
 

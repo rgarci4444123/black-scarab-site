@@ -11,7 +11,7 @@ Account: @BlackScarabAI. Never use the personal account for Black Scarab publica
 * Palladyne AI: website and LinkedIn already published. X adaptation prepared in `output/x/palladyne/`: approximately 1,800 words, original cover, three inline analytical graphics, captions, alt text, source links, and local HTML preview. Not published on X. The current company account has no visible Articles writing tool; its Premium offer explicitly includes Write Articles. User purchased Premium; Articles access verified September 8. Palladyne is deferred in favor of the anatomy guide. Do not silently switch to the personal account or a thread.
 * Draft validation: all four local images exist and were visually reviewed; hypothetical payback calculations independently recalculated; no en or em dash punctuation in article copy; existing website article returned HTTP 200 on September 8, 2026. X editor crop and final publication verification remain pending account access.
 
-* First native Article is now the September 7 complete humanoid anatomy guide. Full source adaptation saved in `output/x/humanoid-anatomy/`, retaining 26 sections, 33 tables as labeled entries, and 11 existing illustrations. Native publication completed; see the publication entry below.
+* First native Article is now the September 7 complete humanoid anatomy guide, retaining 26 sections, 33 tables as labeled entries, and 11 existing illustrations. The published X Article is the canonical native reference; the website source and production illustrations remain versioned in the repository. Native publication completed; see the publication entry below.
 
 ## Anatomy guide publication
 
@@ -33,7 +33,7 @@ User explicitly requested a separate draft to inspect native X formatting, with 
 * Draft: https://x.com/compose/articles/edit/2097368412611829760
 * Preview: https://x.com/compose/articles/edit/2097368412611829760/preview
 * Scope: twelve-system anatomy overview only, approximately 550 words, three chapter headings, native component headings and paragraphs, bold failure notes, italic author credit after the opening, and one inline motion reference graphic.
-* Source transfer: output/x/humanoid-anatomy/format-redesign/x-draft-transfer.html.
+* Source transfer completed and verified in the native editor. The unpublished X preview above is the canonical layout-study reference.
 * Save confirmed; X Preview inspected for image placement and native text hierarchy. No Publish action taken. Existing published Article unchanged. Do not publish this sample without a new explicit request.
 
 ## Anatomy readability revision, September 8
@@ -43,6 +43,6 @@ Updated the existing Article through X's Edit Article flow and republished at th
 * Replaced all 33 compressed table conversions with native headings and explicit field labels. Opening twelve systems use the approved three groups and explanatory prose with separate failure notes.
 * No new reference plate images added. Original cover and eleven anatomy illustrations retained, with each placement checked against adjoining source text.
 * Final editor audit: zero missing source paragraphs (allowing four table-reference wording adjustments), zero missing detailed table values, eleven inline image blocks, no temporary figure markers, no “Each entry lists” wording. Native preview visually checked. Saved editor count approximately 12,537 words.
-* Revision assets and audits: `output/x/humanoid-anatomy/readable-revision/`. Website unchanged. Layout study remains unpublished.
+* Final revision results are recorded above. Disposable transfer files and editor dumps were removed after verification. Website unchanged. Layout study remains unpublished.
 * A clipboard duplication during final wording edits was discarded by reloading the last saved revision. Final content audit passed afterward, before publication.
 * User subsequently reported removing their name from the first part. Preserve that user edit; do not restore the old opening byline from local transfer files. Local transfer/audit reflects the revision before this subsequent user edit.
