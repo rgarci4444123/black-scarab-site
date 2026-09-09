@@ -1,4 +1,6 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { getCaseStudyBySlug } from "@/lib/case-studies";
 
 export const alt = "Black Scarab insight social preview";
@@ -12,13 +14,21 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
-function getArticleImageSource(imagePath?: string) {
+async function getArticleImageSource(imagePath?: string) {
   if (!imagePath) {
     return null;
   }
 
-  const deploymentHost = process.env.VERCEL_URL ?? "www.blackscarab.ai";
-  return new URL(imagePath, `https://${deploymentHost}`).toString();
+  try {
+    const filePath = join(process.cwd(), "public", imagePath);
+    const image = await readFile(filePath);
+    const extension = imagePath.split(".").pop()?.toLowerCase();
+    const mimeType = extension === "jpg" || extension === "jpeg" ? "image/jpeg" : "image/png";
+
+    return `data:${mimeType};base64,${image.toString("base64")}`;
+  } catch {
+    return null;
+  }
 }
 
 function getTitleFontSize(title: string) {
@@ -72,7 +82,7 @@ function truncateText(text: string, maxLength: number) {
 export default async function Image({ params }: Props) {
   const { slug } = await params;
   const article = getCaseStudyBySlug(slug);
-  const articleImageSource = getArticleImageSource(article?.image);
+  const articleImageSource = await getArticleImageSource(article?.image);
   const typeLabel =
     article?.typeLabel ??
     (article?.publishedLabel.startsWith("Case Study") ? "Case Study" : "Insight");

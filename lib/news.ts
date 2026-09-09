@@ -38,7 +38,7 @@ export const newsUpdates: NewsUpdate[] = [
     publishedDate: "2026-09-09",
     publishedLabel: "September 9, 2026",
     author: { name: "Rodolfo Garcia Calderoni, CFA", href: "/about" },
-    image: "/images/news/neura-robotics-series-c-production-test.png",
+    image: "/images/news/neura-robotics-series-c-production-test.jpg",
     imageAlt:
       "Editorial illustration of a conceptual humanoid robot surrounded by an expanding industrial production system",
     imageCaption:
