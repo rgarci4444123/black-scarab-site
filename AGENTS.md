@@ -10,9 +10,9 @@ For every Black Scarab News report or Insights deep dive, use this publication s
 
 1. Publish and verify the complete article on `https://www.blackscarab.ai`.
 2. Publish and verify the LinkedIn post from the Black Scarab company page, company ID `111898269`, using the live website article link.
-3. Prepare and publish the X edition only after the website and LinkedIn publications are live and verified.
+3. Prepare the X edition only after the website and LinkedIn publications are live and verified. Give Rodolfo final copy and the exact image path so he can publish it himself.
 
-Never publish Black Scarab material from Rodolfo's personal LinkedIn profile or personal X account. Do not skip ahead in the sequence, and do not describe a channel as published until its live result has been verified. Prevent duplicate articles and social posts by checking the repository's publishing notes, the live site, and the destination profile or company page.
+Never publish Black Scarab material from Rodolfo's personal LinkedIn profile or personal X account. Do not take control of X or publish on X. Do not skip ahead in the sequence, and do not describe a channel as published until its live result has been verified. Prevent duplicate articles and social posts by checking the repository's publishing notes, the live site, and the destination profile or company page.
 
 ## Black Scarab research and editorial rules
 
@@ -50,6 +50,6 @@ Follow the label with an engaging hook, a useful summary, the verified live webs
 
 ## Black Scarab X publishing
 
-Before any X writing, design, or publishing work, read `docs/x-editorial-style.md` and `docs/x-publishing-log.md`. The user approved RoboStrategy as the editorial and visual reference on September 8, 2026. Apply the saved Black Scarab interpretation, use original writing and artwork, and publish exclusively as `@BlackScarabAI`. Check the log and live profile to prevent duplicate posts. Native X Articles are the preferred deep dive format when the account has access.
+Before any X writing or design work, read `docs/x-editorial-style.md` and `docs/x-publishing-log.md`. The user approved RoboStrategy as the editorial and visual reference on September 8, 2026. Apply the saved Black Scarab interpretation and use original writing and artwork. Check the log and live profile to prevent duplicate posts. Give Rodolfo polished copy to paste into `@BlackScarabAI` and the exact local image path to upload. Rodolfo publishes and verifies X himself. Native X Articles remain the preferred deep dive format when the account has access.
 
 The X edition is the third publication step. Adapt it from the verified website article rather than independently rewriting the research from scratch. Do not publish or draft the X edition as a substitute for completing the website and LinkedIn publications first.
