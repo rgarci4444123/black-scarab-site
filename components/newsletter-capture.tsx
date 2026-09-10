@@ -50,7 +50,7 @@ export default function NewsletterCapture() {
     const handleMouseOut = (event: MouseEvent) => {
       if (
         isDesktop &&
-        Date.now() - startedAt >= 20_000 &&
+        Date.now() - startedAt >= 5_000 &&
         event.clientY <= 8 &&
         !event.relatedTarget
       ) {
