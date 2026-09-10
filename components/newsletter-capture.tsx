@@ -112,44 +112,54 @@ export default function NewsletterCapture() {
   }
 
   return (
-    <aside
-      ref={promptRef}
-      role="dialog"
-      aria-labelledby="newsletter-capture-title"
-      aria-describedby="newsletter-capture-description"
-      className="fixed inset-x-3 bottom-3 z-50 mx-auto max-w-md rounded-[26px] border border-[#dce6d5] bg-[#f3f7ef] p-6 text-[#111827] shadow-[0_24px_80px_rgba(15,23,42,0.22)] sm:inset-x-auto sm:bottom-6 sm:right-6 sm:mx-0 sm:p-7"
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-[#111827]/35 p-4 backdrop-blur-[2px] sm:p-6"
+      onMouseDown={(event) => {
+        if (event.target === event.currentTarget) {
+          setIsOpen(false);
+        }
+      }}
     >
-      <button
-        type="button"
-        onClick={() => setIsOpen(false)}
-        aria-label="Close newsletter invitation"
-        className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full text-xl text-[#687164] transition hover:bg-white hover:text-[#111827] focus:outline-none focus:ring-2 focus:ring-[#7c8b6b]"
+      <aside
+        ref={promptRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="newsletter-capture-title"
+        aria-describedby="newsletter-capture-description"
+        className="relative w-full max-w-lg rounded-[28px] border border-[#d5e1ce] bg-[#f3f7ef] p-7 text-[#111827] shadow-[0_28px_90px_rgba(15,23,42,0.3)] sm:p-9"
       >
-        <span aria-hidden="true">×</span>
-      </button>
-      <p className="pr-10 text-xs font-semibold uppercase tracking-[0.2em] text-[#647456]">
-        Before you go
-      </p>
-      <h2
-        id="newsletter-capture-title"
-        className="mt-3 pr-8 text-2xl font-semibold leading-tight tracking-[-0.025em]"
-      >
-        Take the week in physical AI with you.
-      </h2>
-      <p
-        id="newsletter-capture-description"
-        className="mt-3 text-sm leading-6 text-[#59616b]"
-      >
-        Every new deep dive and news report, edited into one sharp Thursday briefing.
-      </p>
-      <div className="mt-5">
-        <NewsletterSignupForm
-          source={`capture:${pathname}`}
-          compact
-          buttonLabel="Join Black Scarab Weekly"
-          inputId="newsletter-capture-email"
-        />
-      </div>
-    </aside>
+        <button
+          type="button"
+          onClick={() => setIsOpen(false)}
+          aria-label="Close newsletter invitation"
+          className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full text-2xl text-[#687164] transition hover:bg-white hover:text-[#111827] focus:outline-none focus:ring-2 focus:ring-[#7c8b6b]"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+        <p className="pr-12 text-xs font-semibold uppercase tracking-[0.2em] text-[#647456]">
+          Before you go
+        </p>
+        <h2
+          id="newsletter-capture-title"
+          className="mt-3 pr-8 text-3xl font-semibold leading-tight tracking-[-0.035em] sm:text-4xl"
+        >
+          Keep up with physical AI.
+        </h2>
+        <p
+          id="newsletter-capture-description"
+          className="mt-4 text-base leading-7 text-[#59616b]"
+        >
+          Get every new Black Scarab deep dive and news report in one clear Thursday briefing.
+        </p>
+        <div className="mt-6">
+          <NewsletterSignupForm
+            source={`capture:${pathname}`}
+            compact
+            buttonLabel="Join Black Scarab Weekly"
+            inputId="newsletter-capture-email"
+          />
+        </div>
+      </aside>
+    </div>
   );
 }
