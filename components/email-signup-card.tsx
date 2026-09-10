@@ -9,37 +9,50 @@ type EmailSignupCardProps = {
 
 export default function EmailSignupCard({
   source,
-  title = "Make sense of the week in physical AI",
-  description = "Get every new Black Scarab deep dive and news report in one sharp Thursday briefing.",
+  title = "Catch up on physical AI in one email",
+  description = "Every new Black Scarab deep dive and news report, collected into one clear Thursday briefing.",
   compact = false,
 }: EmailSignupCardProps) {
   return (
     <section
       className={
         compact
-          ? "rounded-[24px] border border-[#e8e4dc] bg-[#faf8f3] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]"
-          : "rounded-[28px] border border-[#dde7d7] bg-[#edf4e8] p-8 shadow-[0_14px_40px_rgba(15,23,42,0.08)] md:p-10"
+          ? "rounded-[22px] border border-[#d9e4d3] bg-[#f1f6ed] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)] sm:p-7"
+          : "rounded-[28px] border border-[#d9e4d3] bg-[#edf4e8] p-7 shadow-[0_14px_40px_rgba(15,23,42,0.08)] md:p-10"
       }
     >
-      <div className={compact ? "max-w-2xl" : "mx-auto max-w-3xl text-center"}>
-        <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-          Black Scarab Weekly
-        </p>
-        <h2 className="mt-4 text-2xl font-semibold tracking-tight md:text-3xl">
-          {title}
-        </h2>
-        <p className="mt-4 text-base leading-7 text-[#6b7280] md:text-lg">
-          {description}
-        </p>
-      </div>
+      <div
+        className={
+          compact
+            ? "grid gap-6 sm:grid-cols-[minmax(0,1fr)_minmax(280px,0.9fr)] sm:items-center"
+            : "grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(340px,1.1fr)] lg:items-center"
+        }
+      >
+        <div>
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#647456]">
+            Black Scarab Weekly
+          </p>
+          <h2
+            className={`${compact ? "mt-3 text-2xl" : "mt-4 text-3xl md:text-4xl"} font-semibold tracking-[-0.03em]`}
+          >
+            {title}
+          </h2>
+          <p
+            className={`${compact ? "mt-3 text-sm leading-6" : "mt-4 text-base leading-7 md:text-lg"} text-[#606975]`}
+          >
+            {description}
+          </p>
+        </div>
 
-      <div className={compact ? "mt-6" : "mx-auto mt-8 max-w-2xl"}>
-        <NewsletterSignupForm source={source} inputId={`newsletter-${source}`} />
+        <div>
+          <NewsletterSignupForm
+            source={source}
+            inputId={`newsletter-${source}`}
+            buttonLabel="Join Black Scarab Weekly"
+            compact={compact}
+          />
+        </div>
       </div>
-
-      <p className={compact ? "mt-3 text-xs leading-6 text-[#6b7280]" : "mt-4 text-center text-xs leading-6 text-[#6b7280]"}>
-        Useful reporting on real world AI systems, delivered Thursdays.
-      </p>
     </section>
   );
 }

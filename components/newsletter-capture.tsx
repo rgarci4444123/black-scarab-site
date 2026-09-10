@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import NewsletterSignupForm from "@/components/newsletter-signup-form";
 
-const thirtyDays = 30 * 24 * 60 * 60 * 1000;
+const sevenDays = 7 * 24 * 60 * 60 * 1000;
 const promptTimestampKey = "black-scarab-newsletter-prompted-at";
 const subscribedKey = "black-scarab-newsletter-subscribed";
 
@@ -15,7 +15,7 @@ function canShowPrompt() {
   }
 
   const promptedAt = Number(window.localStorage.getItem(promptTimestampKey));
-  return !promptedAt || Date.now() - promptedAt > thirtyDays;
+  return !promptedAt || Date.now() - promptedAt > sevenDays;
 }
 
 export default function NewsletterCapture() {

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Fragment } from "react";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
 import { getNewsUpdateBySlug, newsUpdates } from "@/lib/news";
@@ -129,13 +130,23 @@ export default async function NewsArticlePage({ params }: Props) {
               </section>
 
               <div className="mt-12 space-y-11">
-                {update.sections.map((section) => (
-                  <section key={section.heading}>
-                    <h2 className="text-2xl font-semibold tracking-[-0.03em] sm:text-3xl">{section.heading}</h2>
-                    <div className="mt-5 space-y-5 text-base leading-8 text-[#3f4954] sm:text-lg">
-                      {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-                    </div>
-                  </section>
+                {update.sections.map((section, index) => (
+                  <Fragment key={section.heading}>
+                    <section>
+                      <h2 className="text-2xl font-semibold tracking-[-0.03em] sm:text-3xl">{section.heading}</h2>
+                      <div className="mt-5 space-y-5 text-base leading-8 text-[#3f4954] sm:text-lg">
+                        {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                      </div>
+                    </section>
+                    {index === 1 ? (
+                      <EmailSignupCard
+                        source={`news-inline:${update.slug}`}
+                        compact
+                        title="Get the next physical AI report"
+                        description="Keep reading now, then get every new report together in Thursday's briefing."
+                      />
+                    ) : null}
+                  </Fragment>
                 ))}
               </div>
 

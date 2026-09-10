@@ -367,19 +367,20 @@ export default async function CaseStudyPage({ params }: Props) {
             <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_280px]">
               <div className="min-w-0 space-y-10">
                 {article.sections.map((section, index) => (
-                  <section key={`${section.heading ?? "intro"}-${index}`}>
-                    {section.heading ? (
-                      <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
-                        {section.heading}
-                      </h2>
-                    ) : null}
-                    <div className="mt-4 space-y-5 text-base leading-8 text-[#4b5563] md:text-lg">
-                      {section.paragraphs.map((paragraph, paragraphIndex) => (
-                        <p key={getParagraphKey(paragraph, paragraphIndex)}>
-                          {renderParagraph(paragraph)}
-                        </p>
-                      ))}
-                    </div>
+                  <Fragment key={`${section.heading ?? "intro"}-${index}`}>
+                    <section>
+                      {section.heading ? (
+                        <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+                          {section.heading}
+                        </h2>
+                      ) : null}
+                      <div className="mt-4 space-y-5 text-base leading-8 text-[#4b5563] md:text-lg">
+                        {section.paragraphs.map((paragraph, paragraphIndex) => (
+                          <p key={getParagraphKey(paragraph, paragraphIndex)}>
+                            {renderParagraph(paragraph)}
+                          </p>
+                        ))}
+                      </div>
                     {section.visual ? (
                       <figure className="mt-7 overflow-hidden rounded-[22px] border border-[#e1ddd2] bg-[#f4f0e8] shadow-[0_14px_34px_rgba(17,24,39,0.08)]">
                         <div className="relative aspect-[16/10] w-full">
@@ -550,7 +551,16 @@ export default async function CaseStudyPage({ params }: Props) {
                         ))}
                       </div>
                     ) : null}
-                  </section>
+                    </section>
+                    {index === 1 ? (
+                      <EmailSignupCard
+                        source={`insight-inline:${article.slug}`}
+                        compact
+                        title="Get the next Black Scarab deep dive"
+                        description="Keep reading now, then get every new deep dive and news report in Thursday's briefing."
+                      />
+                    ) : null}
+                  </Fragment>
                 ))}
               </div>
 

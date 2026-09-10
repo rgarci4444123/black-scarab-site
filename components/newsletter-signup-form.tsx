@@ -84,7 +84,7 @@ export default function NewsletterSignupForm({
       className={
         compact
           ? "flex flex-col gap-3"
-          : "flex flex-col gap-3 sm:flex-row"
+          : "flex flex-col gap-3 md:flex-row md:flex-wrap"
       }
     >
       <label className="sr-only" htmlFor={inputId}>
@@ -97,7 +97,7 @@ export default function NewsletterSignupForm({
         required
         autoComplete="email"
         placeholder="Email address"
-        className="min-w-0 flex-1 rounded-full border border-[#d7d1c6] bg-white px-5 py-3 text-base text-[#111827] outline-none transition placeholder:text-[#9ca3af] focus:border-[#7c8b6b] focus:ring-2 focus:ring-[#7c8b6b]/20"
+        className="w-full min-w-0 flex-1 rounded-full border border-[#d7d1c6] bg-white px-5 py-3 text-base text-[#111827] outline-none transition placeholder:text-[#9ca3af] focus:border-[#7c8b6b] focus:ring-2 focus:ring-[#7c8b6b]/20 md:w-auto"
       />
       <input
         type="text"
@@ -110,7 +110,7 @@ export default function NewsletterSignupForm({
       <button
         type="submit"
         disabled={state === "submitting"}
-        className="rounded-full bg-[#111827] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#1f2937] focus:outline-none focus:ring-2 focus:ring-[#7c8b6b] focus:ring-offset-2 disabled:cursor-wait disabled:opacity-70"
+        className="shrink-0 rounded-full bg-[#111827] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#1f2937] focus:outline-none focus:ring-2 focus:ring-[#7c8b6b] focus:ring-offset-2 disabled:cursor-wait disabled:opacity-70"
       >
         {state === "submitting" ? "Saving..." : buttonLabel}
       </button>
