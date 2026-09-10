@@ -2,6 +2,7 @@ import { humanoidAnatomyDeepDive } from "@/lib/humanoid-anatomy";
 import { antiochDeepDive } from "@/lib/antioch";
 import { palladyneAiDeepDive } from "@/lib/palladyne-ai";
 import { plusOneRoboticsDeepDive } from "@/lib/plus-one-robotics";
+import { physicalAiVentureFundsDeepDive } from "@/lib/physical-ai-venture-funds";
 
 export type CaseStudySection = {
   heading?: string;
@@ -16292,6 +16293,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  physicalAiVentureFundsDeepDive(),
   antiochDeepDive(),
   plusOneRoboticsDeepDive(),
   palladyneAiDeepDive(),
