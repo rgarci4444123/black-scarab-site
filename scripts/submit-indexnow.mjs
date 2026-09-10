@@ -3,11 +3,12 @@ import { readFile } from "node:fs/promises";
 const baseUrl = "https://www.blackscarab.ai";
 const key = "1236d5c01b7fa121d6e83700200c5e67";
 const requestedEntry = process.argv[2];
-const [newsSource, insightsSource, palladyneSource, plusOneSource] = await Promise.all([
+const [newsSource, insightsSource, palladyneSource, plusOneSource, antiochSource] = await Promise.all([
   readFile(new URL("../lib/news.ts", import.meta.url), "utf8"),
   readFile(new URL("../lib/case-studies.ts", import.meta.url), "utf8"),
   readFile(new URL("../lib/palladyne-ai.ts", import.meta.url), "utf8"),
   readFile(new URL("../lib/plus-one-robotics.ts", import.meta.url), "utf8"),
+  readFile(new URL("../lib/antioch.ts", import.meta.url), "utf8"),
 ]);
 const newsSlugs = Array.from(
   newsSource.matchAll(/slug:\s*"([^"]+)"/g),
@@ -15,7 +16,7 @@ const newsSlugs = Array.from(
 );
 const insightSlugs = new Set(
   Array.from(
-    `${insightsSource}\n${palladyneSource}\n${plusOneSource}`.matchAll(
+    `${insightsSource}\n${palladyneSource}\n${plusOneSource}\n${antiochSource}`.matchAll(
       /slug:\s*"([^"]+)"/g,
     ),
     (match) => match[1],
