@@ -30,6 +30,115 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "antioch-series-a-physical-ai-simulation",
+    title: "Antioch raises $32 million to make robot testing run like software",
+    summary:
+      "Greylock is backing a young simulation company that wants autonomy teams to test hardware, sensors, models, and control software across thousands of virtual scenarios before changes reach a real machine.",
+    category: "Physical AI News",
+    publishedDate: "2026-09-10",
+    publishedLabel: "September 10, 2026",
+    author: { name: "Rodolfo Garcia Calderoni, CFA", href: "/about" },
+    image: "/images/news/antioch-series-a-simulation-platform.png",
+    imageAlt:
+      "Editorial illustration of an industrial robot and mobile robot mirrored inside a simulation environment",
+    imageCaption:
+      "Original Black Scarab editorial illustration of physical machines and their simulated counterparts. This image does not depict an Antioch product or customer installation.",
+    readingTime: "8 min read",
+    keyPoints: [
+      "Antioch announced a $32 million Series A led by Greylock, with A*, Category Ventures, BoxGroup, Icehouse Ventures, and individual investors participating.",
+      "The platform combines explicit models of geometry and hardware with learned representations of sensor behavior and physical effects, then runs evaluation scenarios on managed cloud infrastructure.",
+      "Amazon and Ring provide the strongest named customer evidence. NVIDIA and Nebius are described as technology and infrastructure partners, not disclosed customers.",
+    ],
+    sections: [
+      {
+        heading: "The round funds a different kind of robot company",
+        paragraphs: [
+          "Antioch announced a $32 million Series A on September 8, led by Greylock with participation from A*, Category Ventures, BoxGroup, Icehouse Ventures, and individual investors. Greylock general partner Saam Motamedi is joining the board.",
+          "The company is not building a robot body. It is building the environment in which robot and autonomy teams can test changes before those changes reach expensive hardware. Antioch describes the product as a verifier for physical AI: a development system intended to predict whether a proposed change improves the complete physical system.",
+          "Antioch says the new round brings total funding to $40.5 million when combined with the $8.5 million seed announced in April. That total does not separately add the $4.25 million preseed reported in December 2025. Public reporting does not clarify whether the earlier amount was incorporated into the later seed figure or excluded from the company's stated total, so $40.5 million remains the appropriate company supplied figure.",
+        ],
+      },
+      {
+        heading: "The bottleneck is the test loop",
+        paragraphs: [
+          "Software teams can change code, run automated tests, inspect a failure, and try again within minutes. A physical system is slower. Engineers may need to reserve a robot, prepare a test space, reset equipment, reproduce weather or lighting, gather people to act out scenarios, and repair whatever the test breaks.",
+          "The problem becomes harder when the important event is rare. A delivery robot can operate normally for thousands of trips before a damaged sensor, unusual obstacle, or confusing human interaction exposes a serious weakness. Waiting for that event in the field is expensive. Deliberately creating it can be unsafe.",
+          "Antioch wants teams to express those conditions as repeatable simulation scenarios, run many variations in parallel, and place the useful cases inside a regression suite. A model, planner, controller, sensor configuration, or mechanical design can then be checked against the same scenarios after every meaningful change.",
+        ],
+      },
+      {
+        heading: "Program what is known and learn what is not",
+        paragraphs: [
+          "Antioch presents its architecture as a hybrid between classical simulation and learned world models. Classical tools can encode geometry, kinematics, sensor placement, and physical constraints directly. They are controllable and interpretable, but they can miss the messy interactions that are difficult to specify by hand.",
+          "Learned models can absorb behavior from real data, including sensor noise and physical effects that an explicit model approximates poorly. Their weakness is the supply of representative data. Real operating data is expensive, failures are scarce, and information from the newest hardware version may not yet exist.",
+          "The company's proposed answer is continuous calibration. Start with known specifications and explicit physics, compare simulated output with real test results, then update the model where reality diverges. The phrase high fidelity should therefore be treated as a measured relationship for a particular system and task, not a permanent quality attached to the platform as a whole.",
+        ],
+      },
+      {
+        heading: "The public product is becoming more concrete",
+        paragraphs: [
+          "Antioch publishes a Python software development kit and command line interface for running Isaac simulations on managed cloud graphics processors. Developers can write ordinary Python locally, define repeatable scenarios, save parameters and telemetry, and dispatch work to remote machines without installing the full simulation engine on the local computer.",
+          "Current public materials reference NVIDIA Isaac Sim, Isaac Lab, Omniverse libraries, PhysX, and the Newton physics engine. The website also describes onboarding from CAD, BIM, STEP, URDF, and hardware specifications, along with models for cameras, LiDAR, radar, inertial sensors, robots, and environments.",
+          "Antioch Agent is intended to automate more of this work by importing a system, creating scenes and scenarios, running evaluations, and iterating on failures. Examples on the website illustrate that workflow, but their pass rates, run times, and estimated costs are interface demonstrations rather than independently documented customer results.",
+        ],
+      },
+      {
+        heading: "Amazon offers the strongest evidence so far",
+        paragraphs: [
+          "Antioch says it is partnering with Amazon across multiple product lines. Jason Mitura, an Amazon software executive and Ring's chief product officer, says Antioch simulations closely matched physical test results, including scenarios deliberately withheld from calibration. That is a meaningful endorsement because held out cases test whether the simulator can predict more than the data used to tune it.",
+          "The disclosure still leaves important details private. Amazon and Antioch do not identify the hardware, task, measurement method, error tolerance, number of scenarios, duration of use, or commercial terms. A close match for one perception system does not establish equal fidelity for contact rich manipulation, deformable materials, aerial dynamics, or every sensor class.",
+          "Launchpad Build AI is also named as a user for automated manufacturing development. NVIDIA is a platform integration partner, while Nebius supplies high performance cloud infrastructure. These relationships support the technology stack, but they should not all be counted as customer contracts.",
+        ],
+      },
+      {
+        heading: "The business case depends on avoided physical work",
+        paragraphs: [
+          "Simulation creates value when the cost of building and maintaining the virtual test system is lower than the physical testing, failures, delays, and engineering time it replaces. The strongest applications have expensive hardware, dangerous edge cases, repeated software releases, or enough deployments for one validated scenario library to be reused.",
+          "Antioch targets intelligent perception, industrial autonomy, ground vehicles, and aerial systems. Each has a different fidelity test. A security camera may care about sensor output across lighting and weather. A mobile robot may care about navigation, traffic, and recovery. An industrial cell may require contact, material behavior, process quality, and safety controls to agree.",
+          "The company does not publish a commercial rate card. A homepage example shows an estimated cost for a simulated batch, but it is a product illustration and not a contractual price. Buyers need separate numbers for onboarding, digital twin creation, model calibration, cloud execution, support, data storage, and continuing maintenance.",
+        ],
+      },
+      {
+        heading: "What the Series A still has to prove",
+        paragraphs: [
+          "The central technical question is not whether Antioch can run thousands of simulations. It is whether those runs predict the physical outcomes that matter closely enough to change an engineering decision. More compute increases coverage only after the model is trustworthy within a defined operating boundary.",
+          "The commercial question is repeatability. Customer specific calibration can produce a valuable services business. A scalable software platform requires significant reuse across machines, sensors, environments, and customers. Antioch will need to show that each new deployment benefits from a growing library without exposing one customer's sensitive designs or data to another.",
+          "The signals to watch are concrete: published calibration methods, error measurements on held out physical tests, named production use beyond perception, pricing that separates setup from recurring usage, and evidence that regression suites catch failures before release. The financing gives Antioch resources to build the verifier. The next test is whether physical AI teams will trust it as part of their release process.",
+        ],
+      },
+    ],
+    sources: [
+      {
+        label: "Antioch Series A announcement",
+        url: "https://antioch.com/blog/series-a",
+      },
+      {
+        label: "Greylock investment announcement",
+        url: "https://greylock.com/blog/introducing-antioch-the-simulation-platform-for-physical-ai/",
+      },
+      {
+        label: "Antioch simulation platform",
+        url: "https://antioch.com/",
+      },
+      {
+        label: "Antioch industrial autonomy product description",
+        url: "https://antioch.com/solutions/industrial",
+      },
+      {
+        label: "Antioch simulation software development kit",
+        url: "https://pypi.org/project/antioch-sim/",
+      },
+      {
+        label: "TechCrunch report on Antioch's seed financing and product",
+        url: "https://techcrunch.com/2026/04/16/this-simulation-startup-wants-to-be-the-cursor-for-physical-ai/",
+      },
+      {
+        label: "SiliconANGLE report on the Series A and customer evidence",
+        url: "https://siliconangle.com/2026/09/08/antioch-raises-32m-to-move-robot-testing-into-simulation/",
+      },
+    ],
+  },
+  {
     slug: "neura-robotics-series-c-production-test",
     title: "NEURA Robotics puts its $1.4 billion financing to the production test",
     summary:

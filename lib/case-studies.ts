@@ -1,4 +1,5 @@
 import { humanoidAnatomyDeepDive } from "@/lib/humanoid-anatomy";
+import { antiochDeepDive } from "@/lib/antioch";
 import { palladyneAiDeepDive } from "@/lib/palladyne-ai";
 import { plusOneRoboticsDeepDive } from "@/lib/plus-one-robotics";
 
@@ -16291,6 +16292,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  antiochDeepDive(),
   plusOneRoboticsDeepDive(),
   palladyneAiDeepDive(),
   humanoidAnatomyDeepDive(),
