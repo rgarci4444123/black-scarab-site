@@ -3,6 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { EngagementAnalytics } from "@/components/engagement-analytics";
+import NewsletterCapture from "@/components/newsletter-capture";
 import "./globals.css";
 
 const baseUrl = "https://www.blackscarab.ai";
@@ -93,6 +94,7 @@ export default function RootLayout({
           }}
         />
         {children}
+        <NewsletterCapture />
         <EngagementAnalytics />
         <Analytics />
         <SpeedInsights />
