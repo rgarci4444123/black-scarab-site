@@ -30,6 +30,121 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "maven-robotics-series-a-industrial-robots",
+    title: "Maven Robotics raises $100 million to automate warehouse work",
+    summary:
+      "The former Apple engineering team is emerging from stealth with customer deployments, a wheeled dual arm robot, and a task by task plan to build a broader industrial platform.",
+    category: "Physical AI News",
+    publishedDate: "2026-09-10",
+    publishedLabel: "September 10, 2026",
+    author: { name: "Rodolfo Garcia Calderoni, CFA", href: "/about" },
+    image: "/images/news/maven-robotics-series-a-industrial-robots.png",
+    imageAlt:
+      "Editorial illustration of a wheeled dual arm robot moving boxes beside a pallet in a distribution center",
+    imageCaption:
+      "Original Black Scarab editorial illustration of industrial robots handling boxes in a distribution center. The fictional scene does not depict a Maven product or customer facility.",
+    readingTime: "8 min read",
+    keyPoints: [
+      "Maven Robotics emerged from stealth with a $100 million Series A led by RoboStrategy, with LocalGlobe, Vine Ventures, and XTX Markets Ventures also participating.",
+      "The first disclosed application is mixed palletizing with a wheeled dual arm robot. Maven says as many as eight robots are working 16 hours a day with uptime above 99 percent, but the customer and measurement details remain private.",
+      "Maven plans to build 250 third generation robots while designing a fourth generation system, moving task by task toward a more general industrial platform.",
+    ],
+    sections: [
+      {
+        heading: "A large round and an operating claim",
+        paragraphs: [
+          "Maven Robotics emerged from stealth on September 10 with a $100 million Series A led by RoboStrategy. TechCrunch reports that LocalGlobe, Vine Ventures, and XTX Markets Ventures also participated. The company did not disclose its valuation, the amount contributed by each investor, or total funding before the round.",
+          "The financing is paired with a more important claim: Maven says its robots are already working at customer sites. Chief executive and cofounder Hamza Derbas told TechCrunch that as many as eight units are operating for 16 hours a day with uptime above 99 percent. Those figures come from the company. Maven has not identified the customer, published the measurement period, or provided independent operating data.",
+          "That distinction matters because industrial robotics is judged in production, not in a controlled demonstration. An active deployment can expose the company to irregular boxes, shifting schedules, damaged packaging, human traffic, software changes, and the maintenance demands that determine whether automation creates value.",
+        ],
+      },
+      {
+        heading: "The first job is mixed palletizing",
+        paragraphs: [
+          "Maven is beginning with mixed palletizing, the work of arranging boxes of different shapes and sizes onto pallets for transport. The task combines perception, manipulation, motion planning, and packing decisions inside facilities where products and order patterns can change throughout the day.",
+          "According to TechCrunch, the robot uses a wheeled base and two arms. The publication reports a maximum travel speed of 10 miles per hour and a combined lifting capacity of up to 30 kilograms. A demonstration at Maven's facility used vacuum tools to move boxes. These specifications and demonstrations describe the system shown to the publication, not independently tested performance across a customer fleet.",
+          "Palletizing is already a mature automation market when boxes arrive in predictable patterns and a fixed robot can repeat the same movement. Mixed loads are more difficult. The system must identify each item, choose a stable placement, avoid collisions, adapt its grip, and recover when reality differs from the plan.",
+          "A mobile base expands the operating area and may let one design serve multiple parts of a facility. It also adds navigation, localization, battery management, traffic coordination, and safety requirements. Maven is betting that controlling the mobile base, arms, perception, and software as one system will create more value than automating a single stationary cell.",
+        ],
+      },
+      {
+        heading: "Maven wants to own the complete workflow",
+        paragraphs: [
+          "The first customer relationship reportedly began with visits to factories and distribution centers operated by a large consumer goods and logistics company. Maven concluded that a useful deployment had to extend beyond one impressive manipulation task. The company wants its system to connect with warehouse management software and carry work through to the point where goods enter outbound trucks.",
+          "That approach can reduce the gaps between separate automation products. A robot may move boxes reliably while still leaving people to translate orders, position materials, clear exceptions, and coordinate the next stage. The buyer evaluates the complete labor, throughput, safety, and integration result rather than the performance of one motion.",
+          "It is also a demanding commercial promise. End to end responsibility makes Maven accountable for software integration, changing warehouse layouts, operational exceptions, fleet orchestration, field support, and the robot itself. That can deepen a customer relationship, but it also makes each deployment harder to standardize.",
+        ],
+      },
+      {
+        heading: "The data loop sits behind the hardware",
+        paragraphs: [
+          "Maven describes a rapid feedback loop between deployed robots and its engineering systems. Derbas told TechCrunch that operating data can return to the company within minutes or hours, allowing the team to retrain models, evaluate changes, compare alternatives, and redeploy improved software.",
+          "The hiring plan supports that systems view. Maven is recruiting across robot hardware, dexterous end effectors, perception and manipulation, behavior planning, simulation, embedded software, fleet operations, machine learning infrastructure, and field integration. The company appears to be building the tools required to learn from many machines, not only a single robot prototype.",
+          "Fast iteration is useful only if updates are validated before they reach production. A warehouse robot must preserve safety and reliability while its models improve. The strongest evidence would include controlled release procedures, regression testing, documented recovery behavior, and performance measured across changing products and sites. Maven has not yet published that level of technical detail.",
+        ],
+      },
+      {
+        heading: "Why Maven is avoiding humanoid legs",
+        paragraphs: [
+          "Maven's first system does not copy the complete human form. Derbas argues that legs introduce cost and complexity that are unnecessary for the company's initial warehouse tasks. A wheeled platform can be a practical choice on the flat floors already common in factories and distribution centers.",
+          "This is not a rejection of general purpose robotics. It is a sequencing decision. Maven says it will begin with a high value task, build dependable hardware and learning infrastructure around that task, then add manipulation capabilities that unlock adjacent work.",
+          "The tradeoff is physical reach. Wheels perform well on prepared surfaces but cannot naturally handle every stair, threshold, ladder, narrow passage, or irregular environment designed around people. Maven needs enough valuable work inside wheel friendly facilities to justify the platform before broader mobility becomes necessary.",
+        ],
+      },
+      {
+        heading: "RoboStrategy brings public market exposure to the round",
+        paragraphs: [
+          "Lead investor RoboStrategy is an unusual participant. The Nasdaq listed closed end fund, which trades under the ticker BOT, was created to give public investors concentrated exposure to private and public robotics and physical AI companies.",
+          "RoboStrategy said in August that it had invested $124 million across six companies since listing in May, including several rounds it led and one robotics company that was still in stealth at the time. Its Maven announcement adds a substantial industrial deployment thesis to that portfolio. The fund has not disclosed the size or terms of its individual Maven investment, so the full $100 million round should not be attributed to RoboStrategy alone.",
+          "For Maven, a specialist lead investor may bring a longer view of hardware development and deployment cycles. For RoboStrategy shareholders, Maven adds private company exposure but also the normal risks of concentrated holdings, limited private market disclosure, and uncertain valuation between financing events.",
+        ],
+      },
+      {
+        heading: "The commercial evidence is promising but incomplete",
+        paragraphs: [
+          "Maven says it is working with large global manufacturing and logistics organizations. The disclosed customer deployment and reported uptime make the company more concrete than a robotics launch supported only by laboratory video.",
+          "Several facts remain private. Maven has not named the operating customer, disclosed revenue, published pricing, described contract length, separated pilots from paid production, or provided the labor and throughput economics of a deployment. It also has not said how much human supervision, maintenance, or exception handling is required to sustain the reported uptime.",
+          "Uptime alone does not describe useful output. A robot can remain available while working more slowly than the surrounding process or while avoiding difficult items. Buyers need task completion rates, intervention frequency, cycle time, damage rates, deployment cost, service response, and performance across the full mix of goods.",
+          "The reported deployment should therefore be treated as encouraging early evidence, not proof that the system is ready for broad replication. A named customer describing measured economic results would materially strengthen the case.",
+        ],
+      },
+      {
+        heading: "The next test is repeatable production",
+        paragraphs: [
+          "Maven plans to build 250 third generation robots and begin designing a fourth generation system. That is the transition from an engineering program to a manufacturing and service operation. The company will need stable designs, qualified suppliers, test procedures, spare parts, field technicians, working capital, and enough customer demand to keep the fleet productively deployed.",
+          "Black Scarab will watch four signals. First, how many robots enter paid production and how many customers operate them. Second, whether reported reliability holds across longer periods and different product mixes. Third, whether deployment time and support requirements fall as the fleet grows. Fourth, whether the data loop produces new tasks that customers are willing to buy.",
+          "Maven has chosen a credible starting point. Mixed palletizing is repetitive, physically demanding, and economically visible. The $100 million round gives the team room to build hardware and field infrastructure at the same time. What it does not provide is a shortcut around industrial execution. The company now has to show that one demanding workflow can become a repeatable business and, eventually, a broader robot platform.",
+        ],
+      },
+    ],
+    sources: [
+      {
+        label: "Maven Robotics company overview",
+        url: "https://www.mavenrobotics.ai/",
+      },
+      {
+        label: "Maven Robotics careers and engineering roles",
+        url: "https://www.mavenrobotics.ai/join-us",
+      },
+      {
+        label: "TechCrunch report on Maven's financing and deployments",
+        url: "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
+      },
+      {
+        label: "RoboStrategy company and investment overview",
+        url: "https://robostrategy.co/",
+      },
+      {
+        label: "RoboStrategy August 2026 shareholder letter",
+        url: "https://robostrategy.co/news/shareholder-letter-aug-2026",
+      },
+      {
+        label: "Nasdaq announcement of the RoboStrategy listing",
+        url: "https://www.nasdaq.com/press-release/robostrategy-inc-lists-nasdaq-under-ticker-bot-enabling-investors-access-portfolio",
+      },
+    ],
+  },
+  {
     slug: "antioch-series-a-physical-ai-simulation",
     title: "Antioch raises $32 million to make robot testing run like software",
     summary:
