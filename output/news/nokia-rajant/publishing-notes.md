@@ -12,6 +12,10 @@ Published and verified: https://www.blackscarab.ai/news/nokia-rajant-cognitive-o
 
 The live article, cover, canonical metadata, Open Graph metadata, NewsArticle structured data, main sitemap, news sitemap, and RSS feed were verified. IndexNow accepted two URLs with HTTP 200; indexing is not guaranteed.
 
+Google Search Console follow-up completed September 11. The dedicated `news-sitemap.xml` was submitted to the verified `blackscarab.ai` domain property and returned Success with four discovered pages. URL Inspection showed this article as Discovered, currently not indexed, with the news sitemap as its discovery source. A single indexing request was accepted and Google confirmed that the URL was added to its priority crawl queue. Do not repeat the request because it will not change the queue position or priority.
+
+The sitewide news schema was then corrected to use timezone-aware publication timestamps and to separate CFA from the structured author name. Google's live Rich Results Test subsequently detected one valid Article with no warnings and one valid Organization.
+
 ## LinkedIn
 
 Published September 11, 2026 from the Black Scarab company page, company ID `111898269`.
@@ -58,4 +62,3 @@ https://www.blackscarab.ai/news/nokia-rajant-cognitive-operations-edge-ai
 Image: `public/images/news/nokia-rajant-cognitive-operations-edge-ai.png`
 
 Alt text: Black Scarab editorial illustration of connected mining vehicles and field edge computing nodes linked across a remote open pit mine at dawn.
-
