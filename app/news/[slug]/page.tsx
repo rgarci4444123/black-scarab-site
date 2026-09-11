@@ -36,7 +36,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: "Black Scarab",
       title: update.title,
       description: update.summary,
-      publishedTime: update.publishedDate,
+      publishedTime: update.publishedAt,
+      modifiedTime: update.modifiedAt ?? update.publishedAt,
       authors: [update.author.name],
       images: update.image ? [{ url: update.image, alt: update.imageAlt }] : undefined,
     },
@@ -56,17 +57,24 @@ export default async function NewsArticlePage({ params }: Props) {
   if (!update) notFound();
 
   const articleUrl = `${baseUrl}/news/${update.slug}`;
+  const authorName = update.author.name.replace(/,\s*CFA$/, "");
+  const hasCfaCredential = authorName !== update.author.name;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     headline: update.title,
     description: update.summary,
-    datePublished: update.publishedDate,
-    dateModified: update.publishedDate,
+    datePublished: update.publishedAt,
+    dateModified: update.modifiedAt ?? update.publishedAt,
     articleSection: update.category,
     mainEntityOfPage: articleUrl,
     image: update.image ? [`${baseUrl}${update.image}`] : undefined,
-    author: { "@type": "Person", name: update.author.name, url: `${baseUrl}${update.author.href}` },
+    author: {
+      "@type": "Person",
+      name: authorName,
+      honorificSuffix: hasCfaCredential ? "CFA" : undefined,
+      url: `${baseUrl}${update.author.href}`,
+    },
     publisher: {
       "@type": "Organization",
       name: "Black Scarab",

@@ -27,13 +27,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/news`,
-      lastModified: new Date(newsUpdates[0].publishedDate),
+      lastModified: new Date(newsUpdates[0].modifiedAt ?? newsUpdates[0].publishedAt),
       changeFrequency: "daily",
       priority: 0.9,
     },
     ...newsUpdates.map((update) => ({
       url: `${baseUrl}/news/${update.slug}`,
-      lastModified: new Date(update.publishedDate),
+      lastModified: new Date(update.modifiedAt ?? update.publishedAt),
       changeFrequency: "monthly" as const,
       priority: 0.85,
     })),

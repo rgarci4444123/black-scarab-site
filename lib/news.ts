@@ -14,6 +14,8 @@ export type NewsUpdate = {
   summary: string;
   category: string;
   publishedDate: string;
+  publishedAt: string;
+  modifiedAt?: string;
   publishedLabel: string;
   author: {
     name: string;
@@ -36,6 +38,7 @@ export const newsUpdates: NewsUpdate[] = [
       "Cognitive Operations combines rugged local computing, resilient communications, and a live operational picture for mines, emergency services, and other environments where the cloud may be too far away.",
     category: "Edge AI News",
     publishedDate: "2026-09-11",
+    publishedAt: "2026-09-11T10:26:59-04:00",
     publishedLabel: "September 11, 2026",
     author: { name: "Rodolfo Garcia Calderoni, CFA", href: "/about" },
     image: "/images/news/nokia-rajant-cognitive-operations-edge-ai.png",
@@ -153,6 +156,7 @@ export const newsUpdates: NewsUpdate[] = [
       "The former Apple engineering team is emerging from stealth with customer deployments, a wheeled dual arm robot, and a task by task plan to build a broader industrial platform.",
     category: "Physical AI News",
     publishedDate: "2026-09-10",
+    publishedAt: "2026-09-10T13:31:16-04:00",
     publishedLabel: "September 10, 2026",
     author: { name: "Rodolfo Garcia Calderoni, CFA", href: "/about" },
     image: "/images/news/maven-robotics-series-a-industrial-robots.png",
@@ -268,6 +272,7 @@ export const newsUpdates: NewsUpdate[] = [
       "Greylock is backing a young simulation company that wants autonomy teams to test hardware, sensors, models, and control software across thousands of virtual scenarios before changes reach a real machine.",
     category: "Physical AI News",
     publishedDate: "2026-09-10",
+    publishedAt: "2026-09-10T12:38:25-04:00",
     publishedLabel: "September 10, 2026",
     author: { name: "Rodolfo Garcia Calderoni, CFA", href: "/about" },
     image: "/images/news/antioch-series-a-simulation-platform.png",
@@ -377,6 +382,7 @@ export const newsUpdates: NewsUpdate[] = [
       "The German robotics company has assembled an unusually large investor group and is already adding manufacturing partners, training facilities, and acquired robot businesses. The harder question is how much capital is committed today and how quickly it can become dependable production.",
     category: "Physical AI News",
     publishedDate: "2026-09-09",
+    publishedAt: "2026-09-09T12:35:58-04:00",
     publishedLabel: "September 9, 2026",
     author: { name: "Rodolfo Garcia Calderoni, CFA", href: "/about" },
     image: "/images/news/neura-robotics-series-c-production-test.jpg",
@@ -504,6 +510,7 @@ export const newsUpdates: NewsUpdate[] = [
     summary: "The partnership connects enterprise AI software with dedicated compute capacity. Its commercial test will be whether customers gain useful control over their models without taking on an unmanageable operating burden.",
     category: "Physical AI News",
     publishedDate: "2026-09-08",
+    publishedAt: "2026-09-08T17:09:22-04:00",
     publishedLabel: "September 8, 2026",
     author: { name: "Rodolfo Garcia Calderoni, CFA", href: "/about" },
     image: "/images/news/palantir-nebius-sovereign-ai.png",
@@ -596,6 +603,7 @@ export const newsUpdates: NewsUpdate[] = [
       "Palladyne IQ will be optimized for FANUC robots as the companies pursue faster deployment, adaptive motion, teleoperation, simulation, and repeatable manufacturing workflows.",
     category: "Physical AI News",
     publishedDate: "2026-09-08",
+    publishedAt: "2026-09-08T09:08:34-04:00",
     publishedLabel: "September 8, 2026",
     author: {
       name: "Rodolfo Garcia Calderoni, CFA",
@@ -729,6 +737,7 @@ export const newsUpdates: NewsUpdate[] = [
       "The mobile robot combines voice assistance, room navigation, family alerts, smart home control, and companionship for older adults living independently.",
     category: "Physical AI News",
     publishedDate: "2026-09-07",
+    publishedAt: "2026-09-07T08:50:57-04:00",
     publishedLabel: "September 7, 2026",
     author: {
       name: "Rodolfo Garcia Calderoni, CFA",
@@ -840,6 +849,7 @@ export const newsUpdates: NewsUpdate[] = [
       "The new public benefit corporation is building virtual physicists to accelerate discovery, beginning with data center optimization and an ambitious mission to Alpha Centauri.",
     category: "Physical AI News",
     publishedDate: "2026-09-06",
+    publishedAt: "2026-09-06T11:50:34-04:00",
     publishedLabel: "September 6, 2026",
     author: {
       name: "Rodolfo Garcia Calderoni, CFA",
@@ -951,6 +961,7 @@ export const newsUpdates: NewsUpdate[] = [
       "The heavy equipment leader is combining its industrial data and engineering expertise with FieldAI's robot foundation models and NVIDIA's simulation stack.",
     category: "Physical AI News",
     publishedDate: "2026-09-05",
+    publishedAt: "2026-09-05T15:16:40-04:00",
     publishedLabel: "September 5, 2026",
     author: {
       name: "Rodolfo Garcia Calderoni, CFA",
@@ -1084,6 +1095,7 @@ export const newsUpdates: NewsUpdate[] = [
       "The former Apple and PrimeSense team is moving its integrated robot perception platform into production with fresh capital for silicon, sensors, software, and commercial expansion.",
     category: "Physical AI News",
     publishedDate: "2026-09-04",
+    publishedAt: "2026-09-04T10:49:25-04:00",
     publishedLabel: "September 4, 2026",
     author: {
       name: "Rodolfo Garcia Calderoni, CFA",
@@ -1205,6 +1217,7 @@ export const newsUpdates: NewsUpdate[] = [
       "The human scale hand combines independent joint actuation, precise force control, and visual touch sensing for demanding manipulation tasks.",
     category: "Physical AI News",
     publishedDate: "2026-09-03",
+    publishedAt: "2026-09-03T14:48:49-04:00",
     publishedLabel: "September 3, 2026",
     author: {
       name: "Rodolfo Garcia Calderoni, CFA",

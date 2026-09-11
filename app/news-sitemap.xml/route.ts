@@ -7,7 +7,7 @@ const twoDaysInMilliseconds = 2 * 24 * 60 * 60 * 1000;
 export function GET() {
   const now = Date.now();
   const recentUpdates = newsUpdates.filter((update) => {
-    const publishedAt = new Date(`${update.publishedDate}T00:00:00Z`).getTime();
+    const publishedAt = new Date(update.publishedAt).getTime();
     return publishedAt <= now && publishedAt >= now - twoDaysInMilliseconds;
   });
 
@@ -20,7 +20,7 @@ export function GET() {
         <news:name>Black Scarab</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>${escapeXml(update.publishedDate)}</news:publication_date>
+      <news:publication_date>${escapeXml(update.publishedAt)}</news:publication_date>
       <news:title>${escapeXml(update.title)}</news:title>
     </news:news>
   </url>`,

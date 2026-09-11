@@ -9,7 +9,7 @@ export function GET() {
     .slice(0, 50)
     .map((update) => {
       const articleUrl = `${baseUrl}/news/${update.slug}`;
-      const publishedAt = new Date(`${update.publishedDate}T12:00:00Z`).toUTCString();
+      const publishedAt = new Date(update.publishedAt).toUTCString();
 
       return `    <item>
       <title>${escapeXml(update.title)}</title>
@@ -24,7 +24,7 @@ export function GET() {
     .join("\n");
 
   const latestPublishedAt = newsUpdates[0]
-    ? new Date(`${newsUpdates[0].publishedDate}T12:00:00Z`).toUTCString()
+    ? new Date(newsUpdates[0].modifiedAt ?? newsUpdates[0].publishedAt).toUTCString()
     : new Date(0).toUTCString();
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
