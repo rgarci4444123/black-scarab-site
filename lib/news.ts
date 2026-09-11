@@ -30,6 +30,123 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "nokia-rajant-cognitive-operations-edge-ai",
+    title: "Nokia and Rajant bring distributed edge AI into the field",
+    summary:
+      "Cognitive Operations combines rugged local computing, resilient communications, and a live operational picture for mines, emergency services, and other environments where the cloud may be too far away.",
+    category: "Edge AI News",
+    publishedDate: "2026-09-11",
+    publishedLabel: "September 11, 2026",
+    author: { name: "Rodolfo Garcia Calderoni, CFA", href: "/about" },
+    image: "/images/news/nokia-rajant-cognitive-operations-edge-ai.png",
+    imageAlt:
+      "Editorial illustration of connected mining vehicles and edge computing nodes operating across a remote open pit mine",
+    imageCaption:
+      "Original Black Scarab editorial illustration of distributed edge intelligence in a remote mining operation. The fictional scene does not depict a Nokia or Rajant product or customer site.",
+    readingTime: "8 min read",
+    keyPoints: [
+      "Nokia says Cognitive Operations is commercially available for mining, with versions designed for emergency services and defense operations.",
+      "A rugged Cognitive Edge Node can combine several communications paths with local processing and optional graphics acceleration, while Rajant adds mobile mesh networking and distributed edge software.",
+      "The architecture addresses a real field problem, but Nokia has not disclosed pricing, named customers for the new platform, or measured operating results.",
+    ],
+    sections: [
+      {
+        heading: "A field platform instead of another cloud dashboard",
+        paragraphs: [
+          "Nokia launched Cognitive Operations on September 10 as a commercially available platform for organizations that need communications and computing far from a conventional data center. The initial focus is mining, public safety, and defense. A separate Rajant announcement describes how its mesh networking and distributed computing technology will connect with the Nokia platform.",
+          "The proposition is straightforward. A mine, emergency scene, port, or construction site can generate video, equipment telemetry, location data, and network information across a large moving operation. Sending every signal to a distant cloud introduces delay, consumes bandwidth, and leaves the operation exposed when backhaul becomes unreliable.",
+          "Cognitive Operations is designed to process more of that information near the machines and people producing it. Nokia says the platform combines AI assistance, video analytics, predictive maintenance, a live three dimensional operational view, and resilient communications. It can run with local information technology infrastructure or through Microsoft Azure Marketplace.",
+        ],
+      },
+      {
+        heading: "The edge node is both a computer and a communications hub",
+        paragraphs: [
+          "The physical anchor is Nokia's Cognitive Edge Node. Nokia describes it as a rugged device that can be installed on fixed infrastructure, vehicles, and other field assets. Available configurations support combinations of 5G, LTE, Wi Fi, communications prepared for satellite links, LoRaWAN, vehicle data through CANBus, and high precision satellite positioning.",
+          "The node can also run containerized applications and process data locally with embedded AI and optional graphics acceleration. That matters because a traditional router mainly moves information. An edge computer can inspect video, correlate sensor readings, monitor equipment, or trigger a local response without waiting for a remote service.",
+          "This does not mean every workload belongs on the vehicle. Central systems remain useful for fleet level coordination, historical analysis, model management, and workloads that need more compute. The design decision is about placement. Immediate perception and safety functions can remain close to the event, while slower analysis and broader coordination can happen elsewhere.",
+        ],
+      },
+      {
+        heading: "Rajant adds a network that moves with the operation",
+        paragraphs: [
+          "Rajant contributes Kinetic Mesh networking and its Cowbell distributed computing platform. In a conventional network, mobile equipment may depend on fixed access points and a central controller. Rajant says its system allows participating nodes to form direct connections, adapt routes as assets move, and continue operating when one path becomes unavailable.",
+          "Nokia had already integrated Rajant's InstaMesh technology into the Cognitive Edge Node. The new collaboration extends the relationship by bringing Rajant's Cowbell software into Cognitive Operations. Rajant describes Cowbell as a way to distribute applications, storage, and AI workloads across field nodes while retaining cloud based governance and lifecycle controls.",
+          "The combination is particularly relevant when the network topology changes during the work. Haul trucks move through a mine. Emergency vehicles arrive and leave an incident. Port equipment crosses large yards. A useful edge system has to preserve communications and computing services while those physical assets change position.",
+        ],
+      },
+      {
+        heading: "Mining shows what the architecture is for",
+        paragraphs: [
+          "Nokia presents mining as the first commercial application. Cognitive Operations for mining is intended to connect workers, vehicles, equipment, applications, and network performance inside one operational picture. Nokia says customers can deploy it locally or through Azure Marketplace and can bring a mine deployment online in days. That schedule is a company claim, and the release does not define the starting infrastructure or scope behind it.",
+          "The setting makes the edge case easy to understand. Mines cover wide areas, contain moving heavy equipment, and may extend deep underground where public communications and satellite positioning are unreliable. Cameras and sensors can produce more information than a constrained connection should continuously send off site. Local processing can preserve a safety or monitoring function even when the route to a central cloud is degraded.",
+          "Nokia has prior operating context in this market. At the Callio FutureMINE test site in Finland, Nokia and Boldyn Networks deployed private 5G across underground levels reaching 1.5 kilometers deep. The site has supported remote machinery, real time positioning, a mine digital twin, and autonomous vehicle testing. That project does not validate Cognitive Operations itself, but it shows that the underlying connectivity and operational problems are not hypothetical.",
+        ],
+      },
+      {
+        heading: "Emergency vehicles can become temporary edge infrastructure",
+        paragraphs: [
+          "For public safety, Nokia describes a Vehicle as a Node model. Police cars, fire engines, and ambulances equipped with the system could form a temporary network at an incident, share a live spatial view, and process video close to the scene across available 5G, Wi Fi, and satellite connections.",
+          "That approach can reduce dependence on infrastructure that may be congested, damaged, or absent. It also introduces serious operating requirements. Agencies would need clear rules for data access, evidence handling, cybersecurity, model validation, human authority, and the way information is shared between organizations.",
+          "The defense version extends the same architecture to tactical assets and contested communications. Nokia describes local sensor fusion, video analysis, and threat detection. Public materials do not identify a customer deployment, certification status, or tested performance for either the emergency services or defense versions.",
+        ],
+      },
+      {
+        heading: "A strategic shift sits behind the product",
+        paragraphs: [
+          "RCR Wireless notes that Cognitive Operations overlaps conceptually with parts of Nokia's earlier enterprise campus edge portfolio, including industrial computing and private wireless systems. That creates a strategic question because Nokia has been moving away from parts of its enterprise campus edge business.",
+          "One possible interpretation is that Nokia is separating the operational AI and computing layer from any single access network. A multi access node that works with Rajant mesh technology, cellular service, Wi Fi, and satellite connectivity can follow vehicles and field teams beyond the boundaries of a traditional private network installation.",
+          "Nokia has not publicly explained every product boundary, and the overlap should not be treated as a settled conclusion. Buyers will need to understand which components Nokia will own, which come from partners, how earlier systems connect with the new platform, and who provides long term support for the complete deployment.",
+        ],
+      },
+      {
+        heading: "The commercial evidence is still thin",
+        paragraphs: [
+          "The launch is more substantial than a concept announcement because Nokia describes the mining product as commercially available and publishes a detailed capability set for the Cognitive Edge Node. Rajant also sells Cowbell and its networking products today. The partnership therefore connects products that exist, rather than promising an undefined future research program.",
+          "Important commercial facts remain private. Nokia has not published a rate card, named a Cognitive Operations customer, disclosed order volume, or provided measured improvements in safety, downtime, network resilience, response time, or operating cost. The company also does not specify which AI models ship with each application and which require customer or partner development.",
+          "A live three dimensional view can improve coordination only when the underlying location, equipment, and network data are accurate. Predictive maintenance is useful only when alerts arrive early enough and avoid a flood of false positives. Resilient communications still require thoughtful coverage, power, device management, and security. A broad platform description does not remove those site specific engineering demands.",
+        ],
+      },
+      {
+        heading: "What to watch next",
+        paragraphs: [
+          "The first signal will be a named production customer using Cognitive Operations rather than one of Nokia's earlier connectivity products. A useful case study would identify the site, deployed nodes, applications, network conditions, integration time, and measured operational result.",
+          "The second will be evidence that Rajant's distributed computing layer does more than provide another communications option. Buyers should look for workloads that move or continue across nodes during an actual connection failure, along with clear recovery behavior when the wider network returns.",
+          "The third will be commercial clarity. Nokia and Rajant need to show how hardware, software, cloud services, integration, support, and continuing AI operations are packaged and priced. The architecture addresses a genuine problem at the operational edge. Its value will be proven when customers can buy the complete system, keep it running in difficult conditions, and measure a better outcome than the collection of tools it replaces.",
+        ],
+      },
+    ],
+    sources: [
+      {
+        label: "Nokia Cognitive Operations launch announcement",
+        url: "https://www.nokia.com/newsroom/nokia-launches-ai-and-edge-platform-to-help-mining-and-construction-industries-public-safety-and-defense-organizations-run-safer-more-resilient-field-operations/",
+      },
+      {
+        label: "Nokia Cognitive Edge Node product details",
+        url: "https://www.nokia.com/ip-networks/cognitive-edge-node/",
+      },
+      {
+        label: "Rajant and Nokia collaboration announcement",
+        url: "https://www.businesswire.com/news/home/20260910577329/en/",
+      },
+      {
+        label: "Rajant Cowbell distributed computing platform",
+        url: "https://rajant.com/products/cowbell/",
+      },
+      {
+        label: "RCR Wireless analysis of Nokia's edge strategy",
+        url: "https://rcrwireless.com/20260910/private-5g/nokia-hints-at-new-campus-ai-strategy-raises-questions-about-its-old-campus-5g",
+      },
+      {
+        label: "Nokia and Boldyn Networks Callio mine deployment",
+        url: "https://www.nokia.com/newsroom/nokia-and-boldyn-networks-power-the-future-of-mining-at-callio-pyhaejaervi-with-private-5g-network/",
+      },
+      {
+        label: "VTT research on private 5G and edge intelligence in mining",
+        url: "https://doi.org/10.1016/j.iot.2024.101238",
+      },
+    ],
+  },
+  {
     slug: "maven-robotics-series-a-industrial-robots",
     title: "Maven Robotics raises $100 million to automate warehouse work",
     summary:
