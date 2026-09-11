@@ -25,15 +25,17 @@ Use this workflow whenever Rodolfo provides a short news snippet.
 
 ## Publishing checks
 
-1. Add the article to `lib/news.ts` with a unique slug, publication date, summary, reading time, image, key points, sections, and sources.
+1. Add the article to `lib/news.ts` with a unique slug, publication date, evidence based publication timestamp, summary, reading time, image, key points, sections, and sources. Use an ISO 8601 timestamp with the correct timezone for `publishedAt`. Add `modifiedAt` only when the published article is materially updated.
 2. Confirm the article appears on `/news` and opens at its individual route.
-3. Confirm the title, description, author, canonical URL, image, and structured data are present.
+3. Confirm the title, description, author, canonical URL, image, and structured data are present. Keep professional credentials such as CFA outside `author.name` in structured data and use `honorificSuffix` instead.
 4. Search the published copy for dash punctuation.
 5. Run lint and the production build.
 6. Review the news index and article on desktop and mobile widths before considering the article published.
 7. Deploy the article before notifying external indexing services.
 8. Run `npm run submit:indexnow -- article-slug` after the production URL is live.
 9. Confirm the article appears in `/news-sitemap.xml` during its first two days and in `/news/feed.xml` permanently.
+10. Run Google's Rich Results Test against the live canonical URL. Confirm that Article and Organization are valid and resolve all date and timezone warnings.
+11. Use Google Search Console URL Inspection to request indexing once for the new canonical URL. Do not repeat the request because repeated submissions do not accelerate crawling.
 
 ## Discovery endpoints
 
@@ -47,3 +49,5 @@ The RSS feed is available for readers, monitoring tools, and aggregators at:
 * `https://www.blackscarab.ai/news/feed.xml`
 
 The Google News sitemap contains only stories published during the previous two days. The RSS feed retains the newest 50 stories.
+
+IndexNow notifies participating search engines but does not replace Google Search Console. Google discovers news through its normal crawl and submitted sitemaps, then determines Google News eligibility and placement automatically.
