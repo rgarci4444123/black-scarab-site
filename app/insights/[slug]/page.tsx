@@ -113,6 +113,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: article.seoDescription,
       siteName: publisherName,
       publishedTime: article.publishedAt ?? `${article.publishedDate}T12:00:00.000Z`,
+      ...(article.modifiedAt ? { modifiedTime: article.modifiedAt } : {}),
       authors: [articleAuthor],
       images: [{ url: imageUrl, alt: article.imageAlt }],
     },
@@ -208,7 +209,7 @@ export default async function CaseStudyPage({ params }: Props) {
     description: article.seoDescription,
     image: [imageUrl],
     datePublished: article.publishedAt ?? `${article.publishedDate}T12:00:00.000Z`,
-    dateModified: article.publishedAt ?? `${article.publishedDate}T12:00:00.000Z`,
+    dateModified: article.modifiedAt ?? article.publishedAt ?? `${article.publishedDate}T12:00:00.000Z`,
     author: {
       "@type": article.author ? "Person" : "Organization",
       name: articleAuthor.replace(/,\s*CFA$/, ""),
@@ -327,9 +328,9 @@ export default async function CaseStudyPage({ params }: Props) {
                   fill
                   loading="eager"
                   sizes="(min-width: 1024px) 50vw, 100vw"
-                  className="object-cover"
+                  className={article.imageFit === "contain" ? "object-contain bg-[#f6f4ef]" : "object-cover"}
                 />
-                <div className="h-[320px] lg:h-[440px]" />
+                <div className={article.imageFit === "contain" ? "aspect-video" : "h-[320px] lg:h-[440px]"} />
                 </div>
                 {article.imageCaption ? <figcaption className="border-t border-[#e8e4dc] bg-[#fffdfa] px-5 py-3 text-xs leading-5 text-[#6b7280]">{article.imageCaption}</figcaption> : null}
               </figure>

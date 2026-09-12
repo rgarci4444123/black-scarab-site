@@ -263,12 +263,14 @@ export type CaseStudyArticle = {
   publishedLabel: string;
   publishedDate: string;
   publishedAt?: string;
+  modifiedAt?: string;
   typeLabel?: string;
   formatLabel?: string;
   industry: string;
   image: string;
   imageAlt: string;
   imageCaption?: string;
+  imageFit?: "cover" | "contain";
   seoDescription: string;
   tags?: string[];
   linkedinUrl?: string;
