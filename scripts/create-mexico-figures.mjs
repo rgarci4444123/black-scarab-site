@@ -45,8 +45,8 @@ body+=text(88,827,'Equal output  •  10 years  •  10% discount rate  •  No 
 await save('economics',shell('The upgrade changes the benchmark','HYPOTHETICAL EXAMPLE  •  Present cost in USD millions  •  Lower is better',body,'Method: initial cost + annual operating cost × 6.144567. Not plant prices or a forecast.'));
 
 body=text(88,300,'DELAYED UPGRADES',29,ink,700)+text(855,300,'SUSTAINED UPGRADES',29,sage,700)+line(800,280,800,795);
-const left=[['01','Limited process improvement','Low labor cost carries more of the bid'],['02','Competitors improve faster','New programs become harder to win'],['03','Capacity is awarded elsewhere','Supplier learning can follow the work']];
-const right=[['01','Improve plants and suppliers','Build skill, service and useful uptime'],['02','Quality and cost improve','Existing capacity becomes more valuable'],['03','Expansion bids become stronger','Rebuilding elsewhere must clear a higher bar']];
+const left=[['01','Productivity falls behind','Production awards migrate elsewhere'],['02','Industrial clusters weaken','Suppliers lose work, skills and investment'],['03','Living standards face pressure','Weaker incomes and public finances']];
+const right=[['01','Sustain investment and adoption','Build skills alongside productive capacity'],['02','Industry keeps improving','Suppliers compete in evolving value chains'],['03','A stronger base for prosperity','More productive work and local capability']];
 for(let i=0;i<3;i++){
  const y=388+i*145;
  for(const [list,x,c] of [[left,88,ink],[right,855,sage]]){
@@ -54,7 +54,7 @@ for(let i=0;i<3;i++){
  }
 }
 body+=text(88,830,'Both paths remain exposed to demand, trade policy, utilities and execution.',29,muted);
-await save('futures',shell('Two paths through the investment cycle','CONDITIONAL SCENARIOS  •  No predicted crossover date or assigned probability',body,'Source: Black Scarab analysis. Sequences illustrate mechanisms, not measured causal estimates.'));
+await save('futures-long-term',shell('Two different economies in twenty years','CONDITIONAL SCENARIOS  •  Successive investment decisions shape the outcome',body,'Source: Black Scarab analysis. Sequences illustrate mechanisms, not measured causal estimates.'));
 const data={
   robotInstallations:{year:2024,source:'https://ifr.org/worldrobotics/report-2025',data:robotData},
   trade:{source:'https://www.ustr.gov/countries-regions/americas/mexico',year:2025,units:'USD billions',usImportsFromMexico:534.3,usExportsToMexico:337.3,mexicanExportShareToUS:{year:2024,value:'More than 80 percent'}},

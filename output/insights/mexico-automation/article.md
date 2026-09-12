@@ -16,6 +16,8 @@ Mexico will have a harder time defending its industrial position in the long run
 
 The danger begins with the next investment decision. Existing plants can remain open while new products, engineering work and additional capacity go elsewhere. By the time the loss becomes obvious in the industrial landscape, several investment cycles may already have passed. Mexico needs to strengthen its position while it still has the orders, relationships and operating base from which to do so.
 
+The horizon is twenty years. If production systems elsewhere keep improving while Mexico’s capabilities fall behind, the cumulative gap could change the country’s economic position. The stakes extend to how Mexico earns income, supports its industrial communities and finances its development. Its response needs to begin while it still has a strong manufacturing base from which to advance.
+
 That need creates an opening for robotics and physical AI companies across the world. Mexico has a large industrial base whose competitiveness increasingly depends on the capabilities they are building. A credible strategy for entering this market should be taking shape now, while customers are deciding which technologies and partners will underpin their next decade of production.
 
 ## A valuable relationship with unequal exposure
@@ -96,37 +98,47 @@ Black Scarab hypothetical investment model, not observed plant costs or a foreca
 
 Present cost equals initial investment plus annual operating cost multiplied by the ten year annuity factor. Lower present cost is preferred only under the equal output assumptions.
 
-## Two paths through the next investment cycle
+## Two different Mexican economies in twenty years
 
-In the first scenario, Mexico’s factories improve slowly while competing production systems become more capable and cheaper to deploy. Plants keep winning work that depends on labor intensive steps or existing relationships. Over time, the most attractive new lines are awarded to facilities with better automation, stronger quality data or more predictable delivery. The erosion begins in investment allocation, not necessarily in factory closures.
+In the first scenario, Mexico’s factories improve slowly while production systems across the world become dramatically more capable and cheaper to operate. Over twenty years, successive product generations and capacity expansions move toward those systems. Mexico retains some advantages in specialized or protected markets, but much of its industrial base loses the ability to compete on the economics that determine large production awards.
 
 Local suppliers then lose opportunities to learn the next process. Skilled technicians leave for better prospects. Maintenance and engineering networks grow elsewhere. The country can remain a significant exporter while losing bargaining power over the more valuable parts of the production system. A healthy current order book would not disprove that risk.
 
-In the second scenario, investment over the next five to ten years improves existing facilities and spreads capability through suppliers. Plants reduce scrap, increase useful machine hours and prove that they can introduce new products without rebuilding the process from scratch. Buyers still compare countries, but the Mexican operation enters that comparison with a stronger operating record and a lower cost of expansion.
+In the second scenario, Mexico starts investing heavily now and sustains that effort over decades. Each generation of sensing, robotics and industrial intelligence improves an operating base that is already producing for demanding customers. By the end of the twenty year horizon, Mexico combines proximity and industrial relationships with competitive automated production, capable suppliers and the expertise to keep upgrading them.
+
+The difference is the kind of economy that develops around the factories. One path risks concentrating Mexico in lower value work while technology ownership, engineering and productive investment accumulate elsewhere. The other builds a larger base of technical services, integration, tooling, maintenance and industrial businesses able to sell into the automated economy. The near term window matters because these capabilities accumulate over time.
 
 The choice will play out unevenly. A highly capable automotive or electronics plant can coexist with poorly equipped suppliers nearby. The national challenge is to broaden improvement beyond showcase facilities so that the surrounding production network becomes an advantage too. Deep adoption means carrying the technology through the supply chain, where many of the remaining bottlenecks sit.
 
 The timing comes from product cycles, equipment replacement and contract awards. Waiting for a definitive moment when robots become cheaper than workers is the wrong trigger. Each missed program can move customer knowledge and engineering experience elsewhere. The window is measured in opportunities to build capability before those commitments are made.
 
-![Two conditional paths: delayed upgrades lead to weaker bids and capacity awarded elsewhere; sustained upgrades lead to stronger performance and more competitive expansion bids. Both remain exposed to trade and demand risk.](../../../public/article-images/mexico-automation/futures.png)
+![Two twenty year scenarios: delayed adoption weakens industrial clusters and pressures incomes and public finances; sustained adoption builds competitive suppliers, productive work and local capability.](../../../public/article-images/mexico-automation/futures-long-term.png)
 
-Black Scarab scenario diagram. These are conditional mechanisms over successive investment cycles, not predicted dates, probabilities or GDP trajectories.
+Black Scarab scenarios over a twenty year horizon. The paths illustrate how successive investment decisions can change the economy; they are not forecasts or assigned probabilities.
 
-## The cost of missing the window
+## When an industrial advantage erodes, the whole country pays
 
-Mexico should treat underinvestment during this window as a serious threat to its future industrial strength. If competing locations keep improving while Mexican plants rely on their existing cost advantage, the country risks losing the work that would renew its manufacturing base. The first warning may be a product launch awarded elsewhere, an expansion postponed or a supplier excluded from the next program. Factories can look busy while their future is being allocated to other locations.
+Consider a country whose manufacturing proposition gradually loses its force. Competitors become better at producing the same goods, introducing new products and serving customers at a lower delivered cost. As that advantage grows and persists across investment cycles, customers gain a stronger reason to place production elsewhere. For Mexico, a sustained failure to keep pace would put one of the foundations of its economic development under pressure.
 
-The damage can compound through the supply chain. When a major production program moves, local tooling shops, component makers, maintenance providers and logistics businesses can lose both volume and the opportunity to develop new capabilities. Lower demand can make their own upgrades harder to finance. That, in turn, can weaken the economics of the plants that remain. A gap that begins with one investment decision can spread through an industrial cluster.
+Proximity remains useful, but its value has limits when the production gap becomes large. Saving time in transit or reducing freight expense must compensate for the disadvantage inside the factory. Existing contracts and qualifications can delay a sourcing change; they cannot indefinitely guarantee the next contract. As automation reduces the labor content of production, wage restraint offers a progressively weaker response. The plant needs a more productive system.
 
-Employment is exposed through more than outright job losses. Without stronger productivity, firms have less room to raise wages while remaining competitive. Communities can lose the next generation of engineering, maintenance and production management roles even before current assembly work disappears. Technical talent may follow the investment, leaving local companies with a smaller pool of people able to execute a recovery.
+The threat would reach both export plants and producers serving Mexico itself. International customers could award new programs to more efficient locations. Mexican customers could increasingly buy cheaper imported goods. Domestic manufacturers might seek protection, but high trade barriers would shift part of the burden onto households and businesses buying their products. Protecting a cost gap is an expensive substitute for closing it.
 
-The national consequences would extend to export earnings, taxable business activity and the resources available for infrastructure and training. Manufacturing’s roughly one fifth share of GDP makes persistent competitive erosion a broad economic problem. If lost industrial opportunities are replaced mainly by less productive work, the adjustment could leave households with weaker income prospects and the country with less capacity to finance its own modernization.
+As production migrates, the damage can compound through industrial clusters. Tooling shops, component makers, maintenance providers and logistics businesses can lose volume and investment. Lower demand makes their own upgrades harder to finance. Skilled workers move toward better opportunities, and customers grow comfortable with suppliers elsewhere. Over twenty years, Mexico could lose much of the ecosystem that once made it an attractive place to manufacture.
 
-There is also a strategic dependence problem. A country that buys finished systems but fails to develop integration, maintenance and process knowledge locally remains exposed when a supplier changes terms, a component becomes unavailable or outside expertise cannot arrive. Deep adoption should build the ability to operate and improve critical production systems inside Mexico. Otherwise, industrial complexity can grow while domestic control over it stays limited.
+The employment problem would be broader than displaced assembly jobs. Engineers, technicians, supervisors and local service businesses depend on the continued renewal of production. If the economy cannot develop equally productive alternatives, workers may move into lower paid or less stable activities. Industrial cities could face weaker household spending, falling demand for commercial property and a narrower base of viable local businesses. The risk is a prolonged loss of earning power across communities.
 
-Catching up later may require more than purchasing the equipment Mexico could have installed earlier. It may require rebuilding supplier capacity, recruiting lost expertise and persuading customers to qualify a production base they have already replaced. Those customers will have invested in their new arrangements. Delay can therefore turn a manageable modernization program into a much more expensive effort to win back business.
+That would put pressure on the country’s external finances. Weaker manufacturing exports would reduce one source of foreign earnings while Mexico continued to need imported equipment, technology and other goods. Adjustment could come through a weaker currency, lower imports, new exports or changes in capital flows. Currency depreciation can help some producers, but it also raises the domestic cost of imported machinery and other purchases. It cannot by itself recreate lost industrial capability.
 
-These are conditional risks whose severity will vary across industries. Their importance lies in the way they can reinforce one another. Mexico should invest heavily while it can still build from an operating industrial base, rather than wait for weaker orders and lost programs to force a response. The window is valuable precisely because the country still has something substantial to strengthen.
+Public finances would face pressure from both directions: weaker taxable income and business activity, alongside greater demands for worker support, retraining and regional recovery. Manufacturing’s current share of roughly one fifth of GDP shows the scale of the exposed economic base. The broader danger is that Mexico would have fewer resources to fund the infrastructure and education needed to rebuild its position, just when that investment becomes more urgent.
+
+Cheaper foreign production would also benefit consumers and businesses that use imported inputs. Mexico could develop new competitive activities, and the adjustment would depend on those opportunities. But cheaper goods do not automatically replace the incomes lost in a weakened industrial region. The national challenge would be to create productive ways to earn a share of the new economy, rather than participate mainly as a buyer of what other countries produce.
+
+The possibility of persistent divergence has a foundation in economic research. A [2020 IMF working paper](https://www.imf.org/en/publications/wp/issues/2020/09/11/will-the-ai-revolution-cause-a-great-divergence-49734) models how greater robot productivity can favor economies that already hold more robots and complementary capital. In one extension, a country relatively abundant in unskilled labor can experience a lasting deterioration in its terms of trade and GDP. It is a theoretical mechanism rather than a forecast for Mexico, but it explains why technological progress elsewhere can become a national development problem when domestic capabilities fail to keep up.
+
+The strategic consequence is diminished room to maneuver. Dependence on imported industrial systems becomes more difficult to manage when a country has also lost local integration, maintenance and process expertise. A supplier interruption, technology restriction or financing shock can then be harder to absorb. Economic independence requires the capability to operate, adapt and improve the systems on which production depends.
+
+Twenty years of divergence would be much harder to repair than today’s adoption gap. Recovery could require rebuilding suppliers, recruiting expertise, restoring infrastructure and persuading customers to qualify a production base they have already replaced. Mexico should invest heavily while it can build from its existing strength. The danger of waiting is that the country may eventually need the same modernization with less income, less expertise and fewer customers available to finance it.
 
 ## The first projects should solve expensive problems
 
@@ -213,6 +225,8 @@ Industrial resilience is therefore partly a question of retaining the capacity t
 
 ## Turning adoption into a durable advantage
 
+Automation can also expand the market for capable suppliers. [World Bank research summarized in 2019](https://blogs.worldbank.org/en/developmenttalk/what-does-rise-robots-mean-trade) found that robot adoption in advanced economies was associated with greater imports from developing countries, including intermediate goods. Mexico can participate in that growth by remaining a competitive part of the production network. The strategic risk is falling behind as that network becomes more demanding.
+
 If deployment and maintenance costs remain high, automation spreads more slowly. Highly variable, low volume processes may continue to favor people or simpler mechanization. If trade barriers rise enough, even a very efficient Mexican factory may lose access to a customer. If electricity, water or security deteriorate, better workcells may not offset the broader disadvantage.
 
 The priority is to improve the processes that decide whether a plant wins business. In some sectors, that means more reliable handling and inspection. In others, it means faster product changes, better process control or stronger supplier coordination. A national strategy becomes useful when it translates into these specific operating improvements.
@@ -223,7 +237,7 @@ Track awarded programs, expansion spending, supplier qualification, useful uptim
 
 ## Black Scarab verdict
 
-Mexico will find it increasingly difficult to defend its manufacturing position if its productivity rests primarily on the price of labor while competitors build more capable production systems. Deep adoption of physical AI should be treated as part of the country’s industrial strategy. The task is to combine its location, suppliers and workforce with technology that keeps improving what those assets can produce.
+Mexico’s challenge is to sustain an industrial economy that can support rising living standards twenty years from now. If productivity rests primarily on the price of labor while competitors build more capable production systems, defending that position will become increasingly difficult. Deep adoption of physical AI should be part of the country’s industrial strategy, combining its location, suppliers and workforce with technology that keeps improving what those assets can produce.
 
 That creates a significant opportunity for robotics and physical AI entrepreneurs around the world. Mexico should have a defined place in their growth plans, supported by target accounts, local partners, a financing approach and a service model. The companies that build those capabilities early will be better positioned to turn the need for modernization into repeatable commercial deployments.
 
@@ -250,3 +264,5 @@ The four supporting figures are original Black Scarab graphics. The cover is an 
 * [Hacienda, Plan México incentives, accessed September 12, 2026](https://www.estimulosfiscales.hacienda.gob.mx/es/efiscales_mediante_decreto/Plan_Mexico)
 * [INEGI, December 2024 labor release. October 2024 manufacturing employment](https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2024/IOE/IOE2024_12.pdf)
 * [World Bank, World Development Indicators, 2024 manufacturing value added; retrieved September 12, 2026](https://data.worldbank.org/indicator/NV.IND.MANF.ZS?locations=MX)
+* [Alonso, Berg, Kothari, Papageorgiou and Rehman, IMF Working Paper 20/184, September 11, 2020. Automation and economic divergence](https://www.imf.org/en/publications/wp/issues/2020/09/11/will-the-ai-revolution-cause-a-great-divergence-49734)
+* [Rijkers, Bastos and Artuc, World Bank, April 4, 2019. Robot adoption and trade](https://blogs.worldbank.org/en/developmenttalk/what-does-rise-robots-mean-trade)
