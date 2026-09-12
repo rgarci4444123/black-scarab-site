@@ -1,4 +1,5 @@
 import { humanoidAnatomyDeepDive } from "@/lib/humanoid-anatomy";
+import { mexicoAutomationDeepDive } from "@/lib/mexico-automation";
 import { antiochDeepDive } from "@/lib/antioch";
 import { palladyneAiDeepDive } from "@/lib/palladyne-ai";
 import { plusOneRoboticsDeepDive } from "@/lib/plus-one-robotics";
@@ -261,11 +262,13 @@ export type CaseStudyArticle = {
   summary: string;
   publishedLabel: string;
   publishedDate: string;
+  publishedAt?: string;
   typeLabel?: string;
   formatLabel?: string;
   industry: string;
   image: string;
   imageAlt: string;
+  imageCaption?: string;
   seoDescription: string;
   tags?: string[];
   linkedinUrl?: string;
@@ -16293,6 +16296,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  mexicoAutomationDeepDive(),
   physicalAiVentureFundsDeepDive(),
   antiochDeepDive(),
   plusOneRoboticsDeepDive(),

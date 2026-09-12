@@ -112,7 +112,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: article.title,
       description: article.seoDescription,
       siteName: publisherName,
-      publishedTime: `${article.publishedDate}T12:00:00.000Z`,
+      publishedTime: article.publishedAt ?? `${article.publishedDate}T12:00:00.000Z`,
       authors: [articleAuthor],
       images: [{ url: imageUrl, alt: article.imageAlt }],
     },
@@ -207,11 +207,12 @@ export default async function CaseStudyPage({ params }: Props) {
     headline: article.title,
     description: article.seoDescription,
     image: [imageUrl],
-    datePublished: `${article.publishedDate}T12:00:00.000Z`,
-    dateModified: `${article.publishedDate}T12:00:00.000Z`,
+    datePublished: article.publishedAt ?? `${article.publishedDate}T12:00:00.000Z`,
+    dateModified: article.publishedAt ?? `${article.publishedDate}T12:00:00.000Z`,
     author: {
       "@type": article.author ? "Person" : "Organization",
-      name: articleAuthor,
+      name: articleAuthor.replace(/,\s*CFA$/, ""),
+      ...(articleAuthor.endsWith(", CFA") ? { honorificSuffix: "CFA" } : {}),
       url: articleAuthorUrl,
     },
     publisher: {
@@ -285,8 +286,9 @@ export default async function CaseStudyPage({ params }: Props) {
                     <>
                       <Link
                         href={article.author.href}
-                        className="font-medium text-[#111827] transition hover:text-[#526147]"
+                        className="inline-flex items-center gap-3 font-medium text-[#111827] transition hover:text-[#526147]"
                       >
+                        <Image src="/rodolfo-garcia-about-portrait.jpeg" alt="" width={40} height={40} sizes="40px" className="h-10 w-10 rounded-full object-cover ring-1 ring-[#ded9cf]" />
                         By {article.author.name}
                       </Link>
                       <span className="text-[#c9c1b5]">|</span>
@@ -317,7 +319,8 @@ export default async function CaseStudyPage({ params }: Props) {
                 </div>
               </div>
 
-              <div className="relative overflow-hidden rounded-[28px] border border-[#dde7d7] bg-[#edf4e8] shadow-[0_14px_40px_rgba(15,23,42,0.08)]">
+              <figure className="overflow-hidden rounded-[28px] border border-[#dde7d7] bg-[#edf4e8] shadow-[0_14px_40px_rgba(15,23,42,0.08)]">
+                <div className="relative">
                 <Image
                   src={article.image}
                   alt={article.imageAlt}
@@ -327,7 +330,9 @@ export default async function CaseStudyPage({ params }: Props) {
                   className="object-cover"
                 />
                 <div className="h-[320px] lg:h-[440px]" />
-              </div>
+                </div>
+                {article.imageCaption ? <figcaption className="border-t border-[#e8e4dc] bg-[#fffdfa] px-5 py-3 text-xs leading-5 text-[#6b7280]">{article.imageCaption}</figcaption> : null}
+              </figure>
             </div>
           </section>
 
@@ -383,7 +388,7 @@ export default async function CaseStudyPage({ params }: Props) {
                       </div>
                     {section.visual ? (
                       <figure className="mt-7 overflow-hidden rounded-[22px] border border-[#e1ddd2] bg-[#f4f0e8] shadow-[0_14px_34px_rgba(17,24,39,0.08)]">
-                        <div className="relative aspect-[16/10] w-full">
+                        <a href={section.visual.src} target="_blank" rel="noreferrer" aria-label={`Open full size image: ${section.visual.alt}`} className="relative block aspect-[16/10] w-full">
                           <Image
                             src={section.visual.src}
                             alt={section.visual.alt}
@@ -391,10 +396,11 @@ export default async function CaseStudyPage({ params }: Props) {
                             sizes="(min-width: 1024px) 820px, (min-width: 768px) calc(100vw - 160px), calc(100vw - 48px)"
                             className="object-cover"
                           />
-                        </div>
+                        </a>
                         {section.visual.caption ? (
                           <figcaption className="border-t border-[#e8e4dc] bg-[#fffdfa] px-5 py-3 text-xs leading-5 text-[#6b7280]">
                             {section.visual.caption}
+                            <a href={section.visual.src} target="_blank" rel="noreferrer" className="ml-2 font-semibold text-[#526147] underline underline-offset-2">Open full size</a>
                           </figcaption>
                         ) : null}
                       </figure>
@@ -562,6 +568,17 @@ export default async function CaseStudyPage({ params }: Props) {
                     ) : null}
                   </Fragment>
                 ))}
+                {article.author ? (
+                  <section className="mt-12 grid gap-6 rounded-[24px] border border-[#e3ded5] bg-[#faf8f3] p-6 sm:grid-cols-[112px_minmax(0,1fr)] sm:p-8">
+                    <Image src="/rodolfo-garcia-about-portrait.jpeg" alt="Rodolfo Garcia Calderoni" width={112} height={112} sizes="112px" className="h-28 w-28 rounded-full object-cover" />
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#647456]">About the author</p>
+                      <h2 className="mt-3 text-xl font-semibold">{article.author.name}</h2>
+                      <p className="mt-3 text-sm leading-7 text-[#606975]">Rodolfo is the founder of Black Scarab, where he covers the technologies and commercial signals shaping physical AI adoption in Mexico and Latin America.</p>
+                      <Link href={article.author.href} className="mt-4 inline-block text-sm font-medium text-[#3f5137] underline decoration-[#b9c7b2] underline-offset-4">Meet Rodolfo</Link>
+                    </div>
+                  </section>
+                ) : null}
               </div>
 
               <aside className="h-fit rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">

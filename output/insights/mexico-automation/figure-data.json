@@ -1,0 +1,139 @@
+{
+  "robotInstallations": {
+    "year": 2024,
+    "source": "https://ifr.org/worldrobotics/report-2025",
+    "data": [
+      [
+        "China",
+        295000
+      ],
+      [
+        "United States",
+        34200
+      ],
+      [
+        "Mexico",
+        5600
+      ]
+    ]
+  },
+  "trade": {
+    "source": "https://www.ustr.gov/countries-regions/americas/mexico",
+    "year": 2025,
+    "units": "USD billions",
+    "usImportsFromMexico": 534.3,
+    "usExportsToMexico": 337.3,
+    "mexicanExportShareToUS": {
+      "year": 2024,
+      "value": "More than 80 percent"
+    }
+  },
+  "model": {
+    "hypothetical": true,
+    "units": "USD millions",
+    "years": 10,
+    "discountRate": 0.1,
+    "timing": "Initial investment at time zero; annual operating costs at year end",
+    "equalOutput": true,
+    "terminalValue": 0,
+    "exclusions": [
+      "Taxes",
+      "Financing structure",
+      "Ramp costs",
+      "Currency changes",
+      "Demand risk"
+    ],
+    "options": [
+      {
+        "name": "Continue in Mexico",
+        "initial": 0,
+        "annual": 1,
+        "presentCost": 6.144567105704685
+      },
+      {
+        "name": "Upgrade Mexico",
+        "initial": 1.2,
+        "annual": 0.7,
+        "presentCost": 5.50119697399328
+      },
+      {
+        "name": "New US capacity",
+        "initial": 3,
+        "annual": 0.55,
+        "presentCost": 6.379511908137577
+      },
+      {
+        "name": "Lower cost US build",
+        "initial": 2,
+        "annual": 0.55,
+        "presentCost": 5.379511908137577
+      }
+    ],
+    "sensitivity": [
+      {
+        "rate": 0.06,
+        "options": [
+          {
+            "name": "Continue in Mexico",
+            "presentCost": 7.360087051414703
+          },
+          {
+            "name": "Upgrade Mexico",
+            "presentCost": 6.352060935990292
+          },
+          {
+            "name": "New US capacity",
+            "presentCost": 7.048047878278087
+          },
+          {
+            "name": "Lower cost US build",
+            "presentCost": 6.048047878278087
+          }
+        ]
+      },
+      {
+        "rate": 0.1,
+        "options": [
+          {
+            "name": "Continue in Mexico",
+            "presentCost": 6.144567105704685
+          },
+          {
+            "name": "Upgrade Mexico",
+            "presentCost": 5.50119697399328
+          },
+          {
+            "name": "New US capacity",
+            "presentCost": 6.379511908137577
+          },
+          {
+            "name": "Lower cost US build",
+            "presentCost": 5.379511908137577
+          }
+        ]
+      },
+      {
+        "rate": 0.15,
+        "options": [
+          {
+            "name": "Continue in Mexico",
+            "presentCost": 5.018768625854228
+          },
+          {
+            "name": "Upgrade Mexico",
+            "presentCost": 4.713138038097959
+          },
+          {
+            "name": "New US capacity",
+            "presentCost": 5.760322744219826
+          },
+          {
+            "name": "Lower cost US build",
+            "presentCost": 4.760322744219826
+          }
+        ]
+      }
+    ],
+    "usBreakEvenInitial": 2.121685065855702
+  }
+}
