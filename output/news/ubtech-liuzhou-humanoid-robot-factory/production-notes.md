@@ -36,4 +36,20 @@ Website deployed from commit `666f6da`. The live canonical article, News index, 
 
 IndexNow accepted the article and News index with status 200. Google Rich Results Test crawled the live page successfully and detected two valid items, including Article. Result: https://search.google.com/test/rich-results/result?id=LorY3M2bxaIFv1zt8-cr0g . Indexing is not guaranteed.
 
-Google Search Console URL Inspection, LinkedIn, and X remain pending. LinkedIn requires Rodolfo's review and authorization before the final company page post action. X follows verified LinkedIn publication and is prepared for Rodolfo to publish himself.
+Google Search Console URL Inspection remains pending.
+
+## LinkedIn publication
+
+Published September 13, 2026, after Rodolfo reviewed the website article and explicitly authorized the final post action. The live post was verified from Black Scarab company ID 111898269 with the complete copy, five hashtags, and correct article preview. LinkedIn shortened the article link to `https://lnkd.in/e8MnPf-F`.
+
+https://www.linkedin.com/feed/update/urn:li:share:7504869432163475456/?actorCompanyId=111898269
+
+Opening: `NEWS | UBTECH`
+
+Hashtags: `#PhysicalAI #HumanoidRobotics #Manufacturing #IndustrialAutomation #UBTECH`
+
+No personal profile repost was made.
+
+## X handoff
+
+Prepared only after the website and LinkedIn publications were live and verified. Rodolfo publishes and verifies X himself. Copy and exact image path are saved in `output/x/ubtech-liuzhou-factory/publication.md`.

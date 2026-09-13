@@ -1,5 +1,13 @@
 # X publishing log
 
+## UBTECH Liuzhou factory post prepared, September 13, 2026
+
+* Website article published and verified: https://www.blackscarab.ai/news/ubtech-liuzhou-humanoid-robot-factory.
+* LinkedIn company post published and verified from Black Scarab company ID 111898269: https://www.linkedin.com/feed/update/urn:li:share:7504869432163475456/?actorCompanyId=111898269.
+* Concise X copy, descriptive alt text, and exact cover path saved in `output/x/ubtech-liuzhou-factory/publication.md`.
+* The cover is an original Black Scarab editorial illustration using generic humanoid forms. It does not depict the UBTECH factory or Walker robots.
+* No X publication was performed. Rodolfo publishes and verifies X himself. Check the live @BlackScarabAI profile before posting to prevent a duplicate.
+
 Account: @BlackScarabAI. Never use the personal account for Black Scarab publications.
 
 ## September 8, 2026
