@@ -32,6 +32,123 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "ubtech-liuzhou-humanoid-robot-factory",
+    title: "UBTECH opens a humanoid robot factory designed to build 10,000 units a year",
+    summary: "The Liuzhou plant is built around a ten minute line cadence and Siemens production software. The harder test is whether installed capacity becomes reliable output, customer deployments, and profit.",
+    category: "Robotics News",
+    publishedDate: "2026-09-13",
+    publishedAt: "2026-09-13T07:39:17-04:00",
+    publishedLabel: "September 13, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/ubtech-liuzhou-humanoid-robot-factory.png",
+    imageAlt: "Editorial illustration of humanoid robots moving through assembly and inspection stations inside a modern factory",
+    imageCaption: "Original Black Scarab editorial illustration of humanoid robot production. This conceptual scene does not depict the UBTECH factory, a Walker robot, or an actual production process.",
+    readingTime: "7 min read",
+    keyPoints: [
+      "UBTECH commissioned its Liuzhou factory on September 12 with planned annual capacity above 10,000 humanoid robots.",
+      "The reported design cadence of one robot every ten minutes describes line capability, not verified continuous output or annual deliveries.",
+      "UBTECH already reports meaningful humanoid sales, but production yield, sustained throughput, customer utilization, and profitability remain the decisive tests."
+    ],
+    sections: [
+      {
+        heading: "A new factory joins the humanoid race",
+        paragraphs: [
+          "UBTECH commissioned its Industrial Humanoid Robot Super Smart Factory in Liuzhou, Guangxi, on September 12. The Shenzhen headquartered robotics company says the plant is designed for annual output above 10,000 robots, with one unit able to leave the line every ten minutes at the planned production cadence.",
+          "The opening moves a capacity target into a working facility. Local reporting describes industrial simulation for production planning, a digital control system for factory wide scheduling, and a manufacturing setup developed with Siemens.",
+          "It also sharpens the question facing the humanoid industry. Building a convincing robot is difficult. Building thousands with consistent joints, wiring, sensing, batteries, software, and calibration is a different kind of engineering problem.",
+          "The milestone concerns UBTECH's Liuzhou operation, not a new factory in Shenzhen. UBTECH remains headquartered in Shenzhen, while its Liuzhou subsidiary and factory provide the production base at the center of this announcement."
+        ]
+      },
+      {
+        heading: "Ten minutes is a design claim, not a delivery count",
+        paragraphs: [
+          "The ten minute figure is easy to remember and easy to misunderstand. It describes the intended rhythm of the line when it is operating under its design assumptions. It does not mean the plant will make a robot every ten minutes of every day.",
+          "At that uninterrupted pace, a single line would produce more than 52,000 units in a year. UBTECH's stated annual plan is above 10,000. The difference leaves room for shifts, model changes, maintenance, component constraints, testing, rework, and the gradual process of increasing utilization.",
+          "A production line can therefore be installed and commissioned before it reaches its planned annual run rate. The relevant evidence will be accepted output over months, not the fastest interval demonstrated during an opening ceremony.",
+          "Quality is especially important for a humanoid. A finished unit combines many moving joints with cameras, control electronics, batteries, cabling, and software. Small variation in assembly can become unstable motion, inaccurate manipulation, or more service work at the customer site."
+        ]
+      },
+      {
+        heading: "Siemens supplies the digital production layer",
+        paragraphs: [
+          "UBTECH and Siemens announced their manufacturing partnership earlier in 2026. Siemens said its industrial software would connect product research, design, and production as UBTECH pursued output above 10,000 industrial humanoids during the year.",
+          "The factory announcement describes a dedicated digital manufacturing foundation designed with Siemens. In plain language, that means the plant is intended to manage product definitions, production steps, material movement, and changes through a connected system rather than a collection of isolated workstations.",
+          "That matters because humanoid designs are still changing quickly. A revised hand, actuator, cable route, or sensor can affect assembly instructions, tooling, inspection, and parts inventory. A useful digital thread helps those changes reach the floor without creating a fresh manufacturing mystery at every station.",
+          "The public material does not disclose the full Siemens software stack, implementation cost, automation rate, first pass yield, or the share of assembly completed by robots. The phrase robots building robots should therefore be read as the factory's production concept, not evidence of a fully autonomous plant."
+        ]
+      },
+      {
+        heading: "UBTECH has more than a capacity story",
+        paragraphs: [
+          "UBTECH entered this expansion with actual humanoid revenue. Its interim results report 921 full size embodied intelligent humanoid robots sold during the first half of 2026, up from 45 in the comparable period. Revenue from those products and services reached RMB 590.3 million, compared with RMB 38.2 million a year earlier.",
+          "Those figures cover full size humanoids across the company's product range and applications. They are not a count of industrial Walker robots produced at Liuzhou, and they should not be used as proof that the new plant is already running at its annual target.",
+          "The same filing says UBTECH is working on handling, loading, unloading, sorting, palletizing, assembly, and quality inspection. Its public application material names factory activity with companies including BYD, NIO, Geely, Dongfeng Liuzhou Motor, FAW Volkswagen, Foxconn, and SANY Renewable Energy.",
+          "The level of activity varies. Some descriptions concern training, testing, demonstrations, or particular production tasks. A named relationship does not by itself establish a large fleet, a repeat order, or a positive customer return."
+        ]
+      },
+      {
+        heading: "A factory can improve the product it builds",
+        paragraphs: [
+          "Higher production volume can do more than increase supply. Repeated assembly exposes which parts are difficult to install, which tolerances produce failures, and where testing takes too long. Those lessons can feed changes back into the robot design.",
+          "The result can be a useful manufacturing loop. A design that uses fewer unique fasteners, simpler cable routing, better access for service, or a more reliable calibration process may cost less to build and be easier to maintain. Those improvements are less theatrical than a robot demonstration, but they often determine whether a machine becomes a product.",
+          "Scale can also support suppliers. More predictable demand for actuators, hands, batteries, sensors, and electronic assemblies gives component makers a reason to improve dedicated processes. UBTECH's position in southern China and Liuzhou's automotive manufacturing base place the plant near relevant industrial skills and supply networks.",
+          "This benefit only appears when volume is real and reasonably stable. A large nominal capacity without corresponding orders can instead create underused equipment, inventory, and fixed costs."
+        ]
+      },
+      {
+        heading: "The reality check is on the income statement and the factory floor",
+        paragraphs: [
+          "UBTECH is growing, but it is not yet profitable. The company reported RMB 1.269 billion in total revenue for the first half of 2026 and a loss of RMB 338.8 million. Accounts receivable before provisions stood at RMB 2.225 billion at June 30, above the RMB 1.842 billion reported at the end of 2025.",
+          "A factory can lower unit cost as output rises, but only if demand, yield, supplier quality, and utilization rise with it. Investors should look for cash collection and gross profit that keep pace with deliveries, rather than treating installed capacity as revenue waiting to happen.",
+          "Robot capability remains another constraint. In its interim filing, UBTECH reported a 75 percent laboratory success rate for one vision language action system used in loading and unloading research. That disclosure is useful precisely because it shows the gap between an encouraging model result and the reliability expected in production.",
+          "The company attributes other capabilities to its Walker S2 platform, including autonomous battery exchange and multi robot coordination. Public announcements do not yet provide a common set of customer verified figures for operating hours, intervention rates, accepted task output, maintenance, or payback."
+        ]
+      },
+      {
+        heading: "What to watch as production increases",
+        paragraphs: [
+          "The first signal is monthly output from Liuzhou, followed by how many units are delivered and accepted by customers. A rising factory count matters most when it is connected to disclosed orders and payment.",
+          "The second is manufacturing quality. Useful evidence would include first pass yield, rework, component failures, final test time, and warranty experience. These figures would show whether the ten minute cadence produces dependable machines rather than faster queues for inspection.",
+          "The third is customer utilization. A humanoid that arrives at a plant still needs a task, integration, safety controls, supervision, and service. Sustained hours, accepted output, intervention frequency, and expansion at a second site would say more than another pilot video.",
+          "Black Scarab's assessment is that the Liuzhou opening is a credible industrial milestone because UBTECH already has reported sales and a growing commercial base. It is not proof that humanoid manufacturing has reached automotive scale. The next chapter will be written in factory yield, customer work, cash collection, and repeat deployments."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Liuzhou Media Center report on the September 12 factory commissioning",
+        url: "https://news.17173.com/content/09122026/220156733.shtml"
+      },
+      {
+        label: "Guangxi Daily report on the Liuzhou factory and the 1,000th Walker S2",
+        url: "https://www.gxzx.gov.cn/index.php?a=show&c=index&catid=22&id=58607&m=content"
+      },
+      {
+        label: "Guangxi regional report on the factory before commissioning",
+        url: "https://m.tv.gxnews.com.cn/article.php?id=21993217"
+      },
+      {
+        label: "UBTECH interim results for the six months ended June 30, 2026",
+        url: "https://owebsite-cdn.ubtrobot.com/resources/file/2026/09/02/844614814105669.pdf"
+      },
+      {
+        label: "Siemens Xcelerator overview of the UBTECH manufacturing partnership",
+        url: "https://community.xcelerator.siemens.com/en/public/blogs/industry-signals-robotics-2026-04-14"
+      },
+      {
+        label: "UBTECH industrial humanoid application overview",
+        url: "https://www.ubtrobot.com/en/humanoid/solutions/industry"
+      },
+      {
+        label: "UBTECH company profile and Shenzhen headquarters information",
+        url: "https://www.ubtrobot.com/en/about/company-profile"
+      }
+    ]
+  },
+  {
     slug: "samsung-sds-team-rex-robot-alliance",
     title: "Samsung SDS builds Team REX to bring ten robot companies onto the factory floor",
     summary: "The alliance brings together robot bodies, dexterous hands, learned behavior, data, and simulation. Samsung SDS wants to connect them to production through a robot orchestration platform planned for 2027.",
