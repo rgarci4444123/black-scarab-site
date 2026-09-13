@@ -28,8 +28,8 @@ export default function LocalAiImplementationCta({
       data-cta-placement={placement}
       className={
         isEndPlacement
-          ? "overflow-hidden rounded-[24px] border border-[#cfdcc7] bg-[#edf4e8] p-6 shadow-[0_14px_34px_rgba(17,24,39,0.06)] sm:p-8"
-          : "overflow-hidden rounded-[22px] border border-[#ded9cf] bg-[#faf8f3] p-6 sm:p-7"
+          ? "overflow-hidden rounded-[24px] border border-[#d9e4d3] bg-[#edf4e8] p-6 shadow-[0_14px_34px_rgba(17,24,39,0.06)] sm:p-8"
+          : "overflow-hidden rounded-[22px] border border-[#d9e4d3] bg-[#f1f6ed] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)] sm:p-7"
       }
       aria-label="Local AI implementation help"
     >

@@ -582,7 +582,7 @@ export default async function CaseStudyPage({ params }: Props) {
                         placement="end_of_article"
                       />
                     ) : null}
-                    {index === 1 ? (
+                    {index === 1 && !localAiPlacement ? (
                       <EmailSignupCard
                         source={`insight-inline:${article.slug}`}
                         compact
