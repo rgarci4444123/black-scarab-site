@@ -44,6 +44,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     })),
     {
+      url: `${baseUrl}/local-ai/deployment`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/intake`,
       lastModified: currentDate,
       changeFrequency: "monthly",

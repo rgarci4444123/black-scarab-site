@@ -5,12 +5,17 @@ import { notFound } from "next/navigation";
 import { Fragment } from "react";
 import EmailSignupCard from "@/components/email-signup-card";
 import { InsightReadTracker } from "@/components/engagement-analytics";
+import LocalAiImplementationCta from "@/components/local-ai-implementation-cta";
 import SiteHeader from "@/components/site-header";
 import {
   caseStudies,
   type CaseStudyParagraph,
   getCaseStudyBySlug,
 } from "@/lib/case-studies";
+import {
+  localAiArticlePlacements,
+  type LocalAiArticleSlug,
+} from "@/lib/local-ai-deployment";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -171,6 +176,12 @@ export default async function CaseStudyPage({ params }: Props) {
                 ? "Back to Insights"
                 : "Back to Insights";
   const relatedArticles = getRelatedArticles(article.slug, article.industry);
+  const localAiPlacement = Object.hasOwn(
+    localAiArticlePlacements,
+    article.slug,
+  )
+    ? localAiArticlePlacements[article.slug as LocalAiArticleSlug]
+    : null;
   const articleUrl = getArticleUrl(article.slug);
   const imageUrl = `${baseUrl}${article.image}`;
   const articleAuthor = article.author?.name ?? publisherName;
@@ -559,6 +570,18 @@ export default async function CaseStudyPage({ params }: Props) {
                       </div>
                     ) : null}
                     </section>
+                    {localAiPlacement?.earlyAfterSection === index ? (
+                      <LocalAiImplementationCta
+                        articleSlug={article.slug as LocalAiArticleSlug}
+                        placement="early_inline"
+                      />
+                    ) : null}
+                    {localAiPlacement?.endAfterSection === index ? (
+                      <LocalAiImplementationCta
+                        articleSlug={article.slug as LocalAiArticleSlug}
+                        placement="end_of_article"
+                      />
+                    ) : null}
                     {index === 1 ? (
                       <EmailSignupCard
                         source={`insight-inline:${article.slug}`}

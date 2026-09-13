@@ -1,6 +1,7 @@
 "use client";
 
 import { track } from "@vercel/analytics/react";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 
 type InsightReadTrackerProps = {
@@ -13,7 +14,16 @@ type PageEventProps = {
 };
 
 export function EngagementAnalytics() {
+  const pathname = usePathname();
+
   useEffect(() => {
+    const utmParameters = [
+      "utm_source",
+      "utm_medium",
+      "utm_campaign",
+      "utm_content",
+    ] as const;
+
     const handleClick = (event: MouseEvent) => {
       const target = event.target;
 
@@ -24,6 +34,28 @@ export function EngagementAnalytics() {
       const link = target.closest<HTMLAnchorElement>("a[href]");
 
       if (!link) {
+        return;
+      }
+
+      if (link.dataset.analyticsEvent === "local-ai-cta") {
+        const cta = link.closest<HTMLElement>("[data-local-ai-cta]");
+        const destination = new URL(link.href);
+        const currentParams = new URLSearchParams(window.location.search);
+
+        for (const parameter of utmParameters) {
+          const value = currentParams.get(parameter);
+
+          if (value) {
+            destination.searchParams.set(parameter, value);
+          }
+        }
+
+        link.href = destination.toString();
+        track("local_ai_cta_click", {
+          article_url: cta?.dataset.articleUrl ?? window.location.href,
+          article_identifier: cta?.dataset.articleIdentifier ?? "unknown",
+          cta_placement: cta?.dataset.ctaPlacement ?? "unknown",
+        });
         return;
       }
 
@@ -67,11 +99,46 @@ export function EngagementAnalytics() {
     document.addEventListener("click", handleClick);
     document.addEventListener("submit", handleSubmit);
 
+    const trackedCtas = new Set<string>();
+    const ctaObserver = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) {
+            continue;
+          }
+
+          const cta = entry.target as HTMLElement;
+          const articleIdentifier =
+            cta.dataset.articleIdentifier ?? "unknown";
+          const ctaPlacement = cta.dataset.ctaPlacement ?? "unknown";
+          const trackingKey = `${articleIdentifier}:${ctaPlacement}`;
+
+          if (trackedCtas.has(trackingKey)) {
+            continue;
+          }
+
+          trackedCtas.add(trackingKey);
+          track("local_ai_cta_view", {
+            article_url: cta.dataset.articleUrl ?? window.location.href,
+            article_identifier: articleIdentifier,
+            cta_placement: ctaPlacement,
+          });
+          ctaObserver.unobserve(cta);
+        }
+      },
+      { threshold: 0.35 },
+    );
+
+    document
+      .querySelectorAll<HTMLElement>("[data-local-ai-cta]")
+      .forEach((cta) => ctaObserver.observe(cta));
+
     return () => {
       document.removeEventListener("click", handleClick);
       document.removeEventListener("submit", handleSubmit);
+      ctaObserver.disconnect();
     };
-  }, []);
+  }, [pathname]);
 
   return null;
 }
