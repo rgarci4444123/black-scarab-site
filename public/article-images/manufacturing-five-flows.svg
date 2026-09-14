@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">The five flows every factory must coordinate</title>
+  <desc id="desc">Materials, work, information, energy, and money converge in a factory system to produce acceptable products repeatedly.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12Z" fill="#73826e"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#20231f" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" rx="42" fill="#f5f0e6"/>
+  <text x="800" y="92" text-anchor="middle" fill="#20231f" font-family="Georgia, serif" font-size="54">A factory coordinates five flows</text>
+  <text x="800" y="142" text-anchor="middle" fill="#6b6e66" font-family="Arial, sans-serif" font-size="24">Every machine, person, and software system supports one or more of them</text>
+
+  <g stroke="#73826e" stroke-width="8" fill="none" marker-end="url(#arrow)" opacity="0.82">
+    <path d="M420 290C560 300 600 370 690 430"/>
+    <path d="M1180 290C1040 300 1000 370 910 430"/>
+    <path d="M320 650C500 640 590 590 690 550"/>
+    <path d="M1280 650C1100 640 1010 590 910 550"/>
+    <path d="M800 820L800 650"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="620" y="400" width="360" height="250" rx="32" fill="#20231f"/>
+    <path d="M680 548V478L742 514V468L808 508V452H900V582H680Z" fill="#e9e4d8"/>
+    <rect x="713" y="538" width="34" height="44" fill="#73826e"/>
+    <rect x="774" y="528" width="34" height="54" fill="#73826e"/>
+    <rect x="835" y="516" width="34" height="66" fill="#73826e"/>
+    <text x="800" y="620" text-anchor="middle" fill="#f7f4ec" font-family="Arial, sans-serif" font-size="29" font-weight="700">Repeatable product</text>
+  </g>
+
+  <g font-family="Arial, sans-serif">
+    <g>
+      <rect x="130" y="215" width="310" height="160" rx="28" fill="#fffdf8" stroke="#d6d0c3" stroke-width="3"/>
+      <circle cx="205" cy="295" r="35" fill="#dce4d7"/>
+      <path d="M184 302H227M191 288H220M198 274H213" stroke="#52664f" stroke-width="8" stroke-linecap="round"/>
+      <text x="265" y="278" fill="#20231f" font-size="30" font-weight="700">Materials</text>
+      <text x="265" y="316" fill="#6b6e66" font-size="21">
+        <tspan x="265" dy="0">Parts and inventory</tspan>
+        <tspan x="265" dy="27">Scrap and rework</tspan>
+      </text>
+    </g>
+    <g>
+      <rect x="1160" y="215" width="310" height="160" rx="28" fill="#fffdf8" stroke="#d6d0c3" stroke-width="3"/>
+      <circle cx="1235" cy="295" r="35" fill="#ead8ca"/>
+      <path d="M1213 304L1228 318L1258 276" stroke="#915f45" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="1295" y="278" fill="#20231f" font-size="30" font-weight="700">Work</text>
+      <text x="1295" y="316" fill="#6b6e66" font-size="21">
+        <tspan x="1295" dy="0">People and machines</tspan>
+        <tspan x="1295" dy="27">Methods and sequence</tspan>
+      </text>
+    </g>
+    <g>
+      <rect x="80" y="590" width="360" height="160" rx="28" fill="#fffdf8" stroke="#d6d0c3" stroke-width="3"/>
+      <circle cx="155" cy="670" r="35" fill="#d7e2e4"/>
+      <path d="M134 681L154 659L169 673L180 652" stroke="#54727c" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="215" y="653" fill="#20231f" font-size="30" font-weight="700">Information</text>
+      <text x="215" y="691" fill="#6b6e66" font-size="21">
+        <tspan x="215" dy="0">Designs and schedules</tspan>
+        <tspan x="215" dy="27">Production data</tspan>
+      </text>
+    </g>
+    <g>
+      <rect x="1160" y="590" width="360" height="160" rx="28" fill="#fffdf8" stroke="#d6d0c3" stroke-width="3"/>
+      <circle cx="1235" cy="670" r="35" fill="#eee0b9"/>
+      <path d="M1242 632L1214 674H1235L1228 708L1258 662H1237Z" fill="#9b7623"/>
+      <text x="1295" y="653" fill="#20231f" font-size="30" font-weight="700">Energy</text>
+      <text x="1295" y="691" fill="#6b6e66" font-size="21">
+        <tspan x="1295" dy="0">Power and air</tspan>
+        <tspan x="1295" dy="27">Heat and water</tspan>
+      </text>
+    </g>
+    <g>
+      <rect x="620" y="790" width="360" height="150" rx="28" fill="#fffdf8" stroke="#d6d0c3" stroke-width="3"/>
+      <circle cx="695" cy="865" r="35" fill="#dce4d7"/>
+      <circle cx="695" cy="865" r="20" fill="none" stroke="#52664f" stroke-width="6"/>
+      <path d="M695 850V881M684 856C684 849 706 847 706 858C706 870 684 861 684 875C684 885 707 884 707 876" stroke="#52664f" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <text x="755" y="848" fill="#20231f" font-size="30" font-weight="700">Money</text>
+      <text x="755" y="886" fill="#6b6e66" font-size="21">
+        <tspan x="755" dy="0">Capital and cost</tspan>
+        <tspan x="755" dy="27">Cash and return</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
