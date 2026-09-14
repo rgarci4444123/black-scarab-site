@@ -11,8 +11,10 @@
 * Publication date: September 14, 2026
 * Website status: Published and verified
 * Live URL: `https://www.blackscarab.ai/insights/what-is-a-manufacturing-plant-factory-types-production-flow`
-* LinkedIn status: Copy to be prepared after website verification. Final publishing requires Rodolfo's approval.
-* X status: Not started. The X edition follows only after website and LinkedIn verification.
+* LinkedIn status: Published and verified from the Black Scarab company page
+* LinkedIn URL: `https://www.linkedin.com/feed/update/urn:li:share:7505335803628154881/?actorCompanyId=111898269`
+* X status: Concise edition prepared for Rodolfo to publish manually
+* X handoff: `output/x/manufacturing-plant-deep-dive/publication.md`
 
 ## Editorial Scope
 
@@ -73,6 +75,7 @@ Vendor material is identified as a description of the vendor's role or offering,
 * Insights index placement: Passed
 * Live canonical URL: Passed production verification
 * IndexNow submission: Accepted 2 URLs with status 200
-* LinkedIn company identity check: Pending
-* LinkedIn duplicate check: Pending
-* LinkedIn final post approval: Required
+* LinkedIn company identity check: Passed for Black Scarab company ID 111898269
+* LinkedIn duplicate check: Passed before publication
+* LinkedIn final post approval: Approved by Rodolfo
+* LinkedIn live copy, article link, and image preview: Passed verification

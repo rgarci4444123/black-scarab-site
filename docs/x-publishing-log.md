@@ -1,5 +1,13 @@
 # X publishing log
 
+## Manufacturing plant deep dive post prepared, September 14, 2026
+
+* Website article published and verified: https://www.blackscarab.ai/insights/what-is-a-manufacturing-plant-factory-types-production-flow.
+* LinkedIn company post published and verified from Black Scarab company ID 111898269: https://www.linkedin.com/feed/update/urn:li:share:7505335803628154881/?actorCompanyId=111898269.
+* Concise X copy, descriptive alt text, and exact cover path saved in `output/x/manufacturing-plant-deep-dive/publication.md`.
+* The cover is an original Black Scarab editorial illustration, not a photograph of a real plant or product.
+* No X publication was performed. Rodolfo publishes and verifies X himself. Check the live @BlackScarabAI profile before posting to prevent a duplicate.
+
 ## UBTECH Liuzhou factory post prepared, September 13, 2026
 
 * Website article published and verified: https://www.blackscarab.ai/news/ubtech-liuzhou-humanoid-robot-factory.
@@ -7,6 +15,15 @@
 * Concise X copy, descriptive alt text, and exact cover path saved in `output/x/ubtech-liuzhou-factory/publication.md`.
 * The cover is an original Black Scarab editorial illustration using generic humanoid forms. It does not depict the UBTECH factory or Walker robots.
 * No X publication was performed. Rodolfo publishes and verifies X himself. Check the live @BlackScarabAI profile before posting to prevent a duplicate.
+
+## Mexico native Article prepared, September 12, 2026
+
+* User requested a native X Article adaptation of the Mexico deep dive using the saved RoboStrategy editorial direction. No ordinary post or thread was prepared.
+* Local package: `output/x/mexico-physical-ai/`. Title: Mexico Cannot Afford to Lose the Physical AI Race. Approximately 2,600 words, one existing Mexico editorial cover and four original analytical figures, linked evidence, captions and alt text.
+* `preview.html` is a self contained reading preview; `article.md` is editable copy; `image-placement.json` supplies insertion positions and exact asset paths; `mexico-x-article.zip` contains the complete package.
+* Website and LinkedIn publication are verified. LinkedIn: https://www.linkedin.com/feed/update/urn:li:share:7504586491722067969/.
+* Local preview opened and visually inspected. Five images loaded in the browser. Copy checked for prohibited dash punctuation. Existing log contains no Mexico publication. A read only public profile fetch failed, so live X duplicate checking remains unverified.
+* Prepared locally for Rodolfo to publish. No native X draft created, no X account controlled and no publication performed. Native crop, saved formatting and live publication remain for Rodolfo to verify.
 
 Account: @BlackScarabAI. Never use the personal account for Black Scarab publications.
 
@@ -54,3 +71,25 @@ Updated the existing Article through X's Edit Article flow and republished at th
 * Final revision results are recorded above. Disposable transfer files and editor dumps were removed after verification. Website unchanged. Layout study remains unpublished.
 * A clipboard duplication during final wording edits was discarded by reloading the last saved revision. Final content audit passed afterward, before publication.
 * User subsequently reported removing their name from the first part. Preserve that user edit; do not restore the old opening byline from local transfer files. Local transfer/audit reflects the revision before this subsequent user edit.
+
+## September 9, 2026
+
+* NEURA Robotics financing News report published from `@BlackScarabAI`: https://x.com/BlackScarabAI/status/2097733544772603930.
+* Website article: https://www.blackscarab.ai/news/neura-robotics-series-c-production-test.
+* Published as a concise launch post with the website article link and the original Black Scarab editorial cover. The image includes descriptive alt text identifying it as a Black Scarab editorial illustration.
+* Live verification completed in the browser: correct company account, complete copy, working article link, attached image, and alt text were visible. Do not duplicate this post.
+
+## Mexico native Article published, September 12, 2026
+
+* Rodolfo explicitly requested agent publication, overriding the earlier manual X publishing preference for this Article. Native Article published and verified as @BlackScarabAI: https://x.com/BlackScarabAI/status/2098827114313134357
+* Title: Mexico Cannot Afford to Lose the Physical AI Race. Native headings, linked sources, four original inline analytical figures and fitted Mexico header verified. One leftover production marker was removed and the clean version republished at the same URL.
+* Header reframed using built in image generation to preserve the complete Mexico outline within the native 5:2 crop. Final asset: `output/x/mexico-physical-ai/assets/mexico-x-header-wide.png`. Native crop visually checked before publication.
+* X does not expose the caption field when republishing an existing Article. The approved caption was therefore published as a quote sharing the native Article: https://x.com/BlackScarabAI/status/2098828259332915525. Exact copy and attached Article card verified on the company profile. No duplicate Article created; existing Insights introduction remains pinned.
+
+Approved caption:
+
+What happens to Mexico when the world no longer needs its cheap labor?
+
+The risk reaches beyond factories: weaker incomes, hollowed out industrial cities and less money for schools, hospitals and infrastructure.
+
+Mexico cannot afford to miss the physical AI revolution.

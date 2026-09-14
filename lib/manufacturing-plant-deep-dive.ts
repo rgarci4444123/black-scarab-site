@@ -31,6 +31,8 @@ export const manufacturingPlantDeepDive = (): CaseStudyArticle => ({
     "factory layout",
     "physical AI",
   ],
+  linkedinUrl:
+    "https://www.linkedin.com/feed/update/urn:li:share:7505335803628154881/?actorCompanyId=111898269",
   author: {
     name: "Rodolfo Garcia Calderoni, CFA",
     href: "/about",
