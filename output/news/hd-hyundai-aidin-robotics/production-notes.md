@@ -36,4 +36,16 @@ Website deployed from commit `61f379e`. The live canonical article, News index, 
 
 IndexNow accepted the article and News index with status 200. Indexing is not guaranteed.
 
-Google Rich Results Test, Google Search Console URL Inspection, LinkedIn, and X handoff remain pending.
+Google Rich Results Test and Google Search Console URL Inspection remain pending.
+
+## LinkedIn publication
+
+Published and verified September 14, 2026 from the Black Scarab company page, company ID `111898269`. The complete approved copy, five hashtags, live website article link, and correct editorial cover preview were visible in the live post. LinkedIn shortened the article link to `https://lnkd.in/eMuDW3BJ`.
+
+https://www.linkedin.com/feed/update/urn:li:share:7505312014886555649/?actorCompanyId=111898269
+
+No personal profile repost was made.
+
+## X handoff
+
+Prepared only after the website and LinkedIn publications were live and verified. Rodolfo publishes and verifies X himself. Concise copy, descriptive alt text, and the exact cover path are saved in `output/x/hd-hyundai-aidin-robotics/publication.md`.
