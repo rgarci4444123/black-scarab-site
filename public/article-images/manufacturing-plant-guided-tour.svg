@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="940" viewBox="0 0 1600 940" role="img" aria-labelledby="title desc">
+  <title id="title">Guided tour through a manufacturing plant</title>
+  <desc id="desc">The main product route passes from receiving to shipping while support functions surround production.</desc>
+  <rect width="1600" height="940" fill="#f3efe5"/>
+  <text x="100" y="100" fill="#262823" font-family="Georgia, serif" font-size="52">Follow the product through the plant</text>
+  <text x="100" y="150" fill="#697065" font-family="Arial, sans-serif" font-size="24">The visible route depends on the systems around it</text>
+  <rect x="95" y="230" width="1410" height="430" rx="32" fill="#ded8ca" stroke="#9da698" stroke-width="3"/>
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(125 285)">
+      <rect width="190" height="250" rx="22" fill="#343832"/>
+      <path d="M45 70 H145 V145 H45Z M65 88 H125 M65 112 H125" stroke="#b9c3b1" stroke-width="8" fill="none"/>
+      <text x="95" y="190" text-anchor="middle" fill="#f3efe5" font-size="25">Receiving</text>
+      <text x="95" y="220" text-anchor="middle" fill="#cfd3cb" font-size="17">Verify and release</text>
+    </g>
+    <g transform="translate(355 285)">
+      <rect width="190" height="250" rx="22" fill="#aeb9a5"/>
+      <path d="M45 65 H145 V145 H45Z M45 92 H145 M78 65 V145 M112 65 V145" stroke="#343832" stroke-width="6" fill="none"/>
+      <text x="95" y="190" text-anchor="middle" fill="#262823" font-size="25">Storage</text>
+      <text x="95" y="220" text-anchor="middle" fill="#4c534a" font-size="17">Protect and locate</text>
+    </g>
+    <g transform="translate(585 285)">
+      <rect width="190" height="250" rx="22" fill="#343832"/>
+      <circle cx="95" cy="105" r="42" fill="none" stroke="#b9c3b1" stroke-width="9"/>
+      <path d="M65 105 H125 M95 75 V135" stroke="#b9c3b1" stroke-width="9"/>
+      <text x="95" y="190" text-anchor="middle" fill="#f3efe5" font-size="25">Fabrication</text>
+      <text x="95" y="220" text-anchor="middle" fill="#cfd3cb" font-size="17">Change the parts</text>
+    </g>
+    <g transform="translate(815 285)">
+      <rect width="190" height="250" rx="22" fill="#aeb9a5"/>
+      <path d="M50 118 H140 M70 80 V155 M120 80 V155" stroke="#343832" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="70" cy="74" r="15" fill="#343832"/><circle cx="120" cy="74" r="15" fill="#343832"/>
+      <text x="95" y="190" text-anchor="middle" fill="#262823" font-size="25">Assembly</text>
+      <text x="95" y="220" text-anchor="middle" fill="#4c534a" font-size="17">Create the system</text>
+    </g>
+    <g transform="translate(1045 285)">
+      <rect width="190" height="250" rx="22" fill="#343832"/>
+      <circle cx="88" cy="100" r="43" fill="none" stroke="#b9c3b1" stroke-width="8"/>
+      <path d="M119 133 L150 164" stroke="#b9c3b1" stroke-width="10" stroke-linecap="round"/>
+      <text x="95" y="190" text-anchor="middle" fill="#f3efe5" font-size="25">Quality</text>
+      <text x="95" y="220" text-anchor="middle" fill="#cfd3cb" font-size="17">Measure and decide</text>
+    </g>
+    <g transform="translate(1275 285)">
+      <rect width="190" height="250" rx="22" fill="#b2a88f"/>
+      <path d="M48 82 L95 58 L142 82 V145 L95 170 L48 145Z M48 82 L95 107 L142 82 M95 107 V170" stroke="#343832" stroke-width="6" fill="none"/>
+      <text x="95" y="190" text-anchor="middle" fill="#262823" font-size="25">Ship</text>
+      <text x="95" y="220" text-anchor="middle" fill="#4c534a" font-size="17">Protect and deliver</text>
+    </g>
+  </g>
+  <path d="M315 410 H350 M545 410 H580 M775 410 H810 M1005 410 H1040 M1235 410 H1270" stroke="#6f786d" stroke-width="8" stroke-linecap="round"/>
+  <g font-family="Arial, sans-serif" font-size="22" text-anchor="middle">
+    <rect x="170" y="730" width="250" height="85" rx="20" fill="#e7e1d3" stroke="#9da698" stroke-width="2"/>
+    <text x="295" y="782" fill="#343832">Maintenance and tools</text>
+    <rect x="480" y="730" width="250" height="85" rx="20" fill="#e7e1d3" stroke="#9da698" stroke-width="2"/>
+    <text x="605" y="782" fill="#343832">Utilities and waste</text>
+    <rect x="790" y="730" width="250" height="85" rx="20" fill="#e7e1d3" stroke="#9da698" stroke-width="2"/>
+    <text x="915" y="782" fill="#343832">Engineering and quality</text>
+    <rect x="1100" y="730" width="330" height="85" rx="20" fill="#e7e1d3" stroke="#9da698" stroke-width="2"/>
+    <text x="1265" y="782" fill="#343832">Planning, people, and safety</text>
+  </g>
+  <text x="100" y="885" fill="#697065" font-family="Arial, sans-serif" font-size="20">BLACK SCARAB  •  INSIDE THE PHYSICAL AI FACTORY</text>
+</svg>
