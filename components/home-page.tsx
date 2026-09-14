@@ -362,10 +362,9 @@ export default function HomePage() {
                 clear commercial positioning.
               </h2>
               <p className="mt-6 max-w-3xl text-base leading-8 text-[#606975] sm:text-lg">
-                Rodolfo Garcia Calderoni, CFA, founded Black Scarab to help
-                differentiated physical AI companies navigate the gap between
-                technical capability and market adoption in Latin America,
-                beginning with Mexico.
+                Rodolfo Garcia Calderoni, CFA, is the founder of Black Scarab,
+                where he covers the technologies and commercial signals shaping
+                physical AI adoption.
               </p>
               <Link
                 href="/about"

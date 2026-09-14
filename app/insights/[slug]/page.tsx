@@ -598,7 +598,7 @@ export default async function CaseStudyPage({ params }: Props) {
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#647456]">About the author</p>
                       <h2 className="mt-3 text-xl font-semibold">{article.author.name}</h2>
-                      <p className="mt-3 text-sm leading-7 text-[#606975]">Rodolfo is the founder of Black Scarab, where he covers the technologies and commercial signals shaping physical AI adoption in Mexico and Latin America.</p>
+                      <p className="mt-3 text-sm leading-7 text-[#606975]">Rodolfo is the founder of Black Scarab, where he covers the technologies and commercial signals shaping physical AI adoption.</p>
                       <Link href={article.author.href} className="mt-4 inline-block text-sm font-medium text-[#3f5137] underline decoration-[#b9c7b2] underline-offset-4">Meet Rodolfo</Link>
                     </div>
                   </section>

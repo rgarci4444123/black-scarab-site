@@ -47,7 +47,7 @@ const processSteps = [
 export const metadata: Metadata = {
   title: "About Black Scarab & Founder Rodolfo Garcia Calderoni",
   description:
-    "Meet Rodolfo Garcia Calderoni, CFA, founder of Black Scarab, a physical AI market-development firm connecting technology companies with industrial opportunities in Mexico.",
+    "Meet Rodolfo Garcia Calderoni, CFA, founder of Black Scarab, where he covers the technologies and commercial signals shaping physical AI adoption.",
   alternates: {
     canonical: "/about",
   },
@@ -56,13 +56,13 @@ export const metadata: Metadata = {
     url: `${baseUrl}/about`,
     title: "Meet the Founder | Black Scarab",
     description:
-      "Black Scarab connects physical AI companies with industrial opportunities in Mexico through research, market development, and strategic introductions.",
+      "Rodolfo Garcia Calderoni covers the technologies and commercial signals shaping physical AI adoption through Black Scarab.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Meet the Founder | Black Scarab",
     description:
-      "Physical AI market development and strategic introductions for Mexico.",
+      "Technologies and commercial signals shaping physical AI adoption.",
   },
 };
 
@@ -78,7 +78,7 @@ export default function AboutPage() {
       url: baseUrl,
       email: "info@blackscarab.ai",
       description:
-        "A physical AI market-development firm connecting technology companies with industrial opportunities in Mexico.",
+        "Black Scarab covers the technologies and commercial signals shaping physical AI adoption.",
       areaServed: ["Mexico", "Latin America"],
       founder: {
         "@type": "Person",
@@ -127,12 +127,11 @@ export default function AboutPage() {
 
               <div className="mt-8 max-w-2xl space-y-5 text-base leading-8 text-[#d7ddd4] sm:text-lg">
                 <p>
-                  Black Scarab was founded to help physical AI companies
-                  navigate Latin America: a high-potential but complex growth
-                  market.
+                  Black Scarab covers the technologies and commercial signals
+                  shaping physical AI adoption.
                 </p>
                 <p>
-                  Mexico is our initial focus. Relevant use cases span
+                  Mexico is our initial market development focus. Relevant use cases span
                   manufacturing, mining, energy, logistics, construction, and
                   infrastructure. But commercial adoption requires more than
                   outstanding engineering. It requires a clear business case,
@@ -180,6 +179,11 @@ export default function AboutPage() {
                   Founder
                 </p>
                 <div className="mt-6 space-y-4 text-[15px] leading-7 text-[#cbd3c7]">
+                  <p>
+                    Rodolfo is the founder of Black Scarab, where he covers the
+                    technologies and commercial signals shaping physical AI
+                    adoption.
+                  </p>
                   <p>
                     Rodolfo brings more than a decade of experience across
                     financial services, institutional relationships, and
