@@ -9,7 +9,8 @@
 * Slug: `what-is-a-manufacturing-plant-factory-types-production-flow`
 * Author: Rodolfo Garcia Calderoni, CFA
 * Publication date: September 14, 2026
-* Website status: Pending deployment and live verification
+* Website status: Published and verified
+* Live URL: `https://www.blackscarab.ai/insights/what-is-a-manufacturing-plant-factory-types-production-flow`
 * LinkedIn status: Copy to be prepared after website verification. Final publishing requires Rodolfo's approval.
 * X status: Not started. The X edition follows only after website and LinkedIn verification.
 
@@ -70,8 +71,8 @@ Vendor material is identified as a description of the vendor's role or offering,
 * Desktop rendering: Passed local visual review
 * Mobile rendering: Passed at 390 by 844 with no horizontal overflow
 * Insights index placement: Passed
-* Live canonical URL: Pending
-* IndexNow submission: Pending
+* Live canonical URL: Passed production verification
+* IndexNow submission: Accepted 2 URLs with status 200
 * LinkedIn company identity check: Pending
 * LinkedIn duplicate check: Pending
 * LinkedIn final post approval: Required
