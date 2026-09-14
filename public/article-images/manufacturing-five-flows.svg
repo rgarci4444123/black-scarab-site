@@ -35,20 +35,20 @@
       <rect x="130" y="215" width="310" height="160" rx="28" fill="#fffdf8" stroke="#d6d0c3" stroke-width="3"/>
       <circle cx="205" cy="295" r="35" fill="#dce4d7"/>
       <path d="M184 302H227M191 288H220M198 274H213" stroke="#52664f" stroke-width="8" stroke-linecap="round"/>
-      <text x="265" y="278" fill="#20231f" font-size="30" font-weight="700">Materials</text>
-      <text x="265" y="316" fill="#6b6e66" font-size="21">
-        <tspan x="265" dy="0">Parts and inventory</tspan>
-        <tspan x="265" dy="27">Scrap and rework</tspan>
+      <text x="260" y="278" fill="#20231f" font-size="30" font-weight="700">Materials</text>
+      <text x="260" y="316" fill="#6b6e66" font-size="20">
+        <tspan x="260" dy="0">Parts and stock</tspan>
+        <tspan x="260" dy="27">Scrap and rework</tspan>
       </text>
     </g>
     <g>
       <rect x="1160" y="215" width="310" height="160" rx="28" fill="#fffdf8" stroke="#d6d0c3" stroke-width="3"/>
       <circle cx="1235" cy="295" r="35" fill="#ead8ca"/>
       <path d="M1213 304L1228 318L1258 276" stroke="#915f45" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      <text x="1295" y="278" fill="#20231f" font-size="30" font-weight="700">Work</text>
-      <text x="1295" y="316" fill="#6b6e66" font-size="21">
-        <tspan x="1295" dy="0">People and machines</tspan>
-        <tspan x="1295" dy="27">Methods and sequence</tspan>
+      <text x="1290" y="278" fill="#20231f" font-size="30" font-weight="700">Work</text>
+      <text x="1290" y="316" fill="#6b6e66" font-size="20">
+        <tspan x="1290" dy="0">People and tools</tspan>
+        <tspan x="1290" dy="27">Tasks and methods</tspan>
       </text>
     </g>
     <g>
@@ -56,7 +56,7 @@
       <circle cx="155" cy="670" r="35" fill="#d7e2e4"/>
       <path d="M134 681L154 659L169 673L180 652" stroke="#54727c" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
       <text x="215" y="653" fill="#20231f" font-size="30" font-weight="700">Information</text>
-      <text x="215" y="691" fill="#6b6e66" font-size="21">
+      <text x="215" y="691" fill="#6b6e66" font-size="20">
         <tspan x="215" dy="0">Designs and schedules</tspan>
         <tspan x="215" dy="27">Production data</tspan>
       </text>
@@ -66,7 +66,7 @@
       <circle cx="1235" cy="670" r="35" fill="#eee0b9"/>
       <path d="M1242 632L1214 674H1235L1228 708L1258 662H1237Z" fill="#9b7623"/>
       <text x="1295" y="653" fill="#20231f" font-size="30" font-weight="700">Energy</text>
-      <text x="1295" y="691" fill="#6b6e66" font-size="21">
+      <text x="1295" y="691" fill="#6b6e66" font-size="20">
         <tspan x="1295" dy="0">Power and air</tspan>
         <tspan x="1295" dy="27">Heat and water</tspan>
       </text>
@@ -77,7 +77,7 @@
       <circle cx="695" cy="865" r="20" fill="none" stroke="#52664f" stroke-width="6"/>
       <path d="M695 850V881M684 856C684 849 706 847 706 858C706 870 684 861 684 875C684 885 707 884 707 876" stroke="#52664f" stroke-width="4" fill="none" stroke-linecap="round"/>
       <text x="755" y="848" fill="#20231f" font-size="30" font-weight="700">Money</text>
-      <text x="755" y="886" fill="#6b6e66" font-size="21">
+      <text x="755" y="886" fill="#6b6e66" font-size="20">
         <tspan x="755" dy="0">Capital and cost</tspan>
         <tspan x="755" dy="27">Cash and return</tspan>
       </text>
