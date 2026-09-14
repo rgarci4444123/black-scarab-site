@@ -32,6 +32,131 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "hd-hyundai-aidin-robotics-tactile-sensors-shipyards",
+    title: "HD Hyundai backs AIDIN Robotics to bring touch sensing into shipyard robots",
+    summary: "A KRW 13 billion investment connects force and tactile sensing with robot hands, surface finishing, and future humanoid work in shipyards. The commercial test will come on steel, not in a laboratory.",
+    category: "Robotics News",
+    publishedDate: "2026-09-14",
+    publishedAt: "2026-09-14T12:48:43-04:00",
+    publishedLabel: "September 14, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/hd-hyundai-aidin-robotic-touch-shipyard.png",
+    imageAlt: "Editorial illustration of a robotic hand controlling a surface finishing tool against a curved steel ship section",
+    imageCaption: "Original Black Scarab editorial illustration of tactile robotic work in a shipyard. This conceptual scene does not depict an AIDIN product, an HD Hyundai robot, or an actual customer installation.",
+    readingTime: "7 min read",
+    keyPoints: [
+      "HD Hyundai Robotics invested KRW 13 billion in AIDIN Robotics, while Samsung Venture Investment contributed another KRW 3 billion.",
+      "The companies plan to combine force and tactile sensors with robot platforms, including a five finger robot hand for shipbuilding and heavy industry.",
+      "The partnership targets surface finishing work such as grinding and polishing, but no customer order, deployment schedule, or operating result has been disclosed."
+    ],
+    sections: [
+      {
+        heading: "A strategic investment in robotic touch",
+        paragraphs: [
+          "In a press release published September 14, HD Hyundai Robotics said it had invested KRW 13 billion in AIDIN Robotics, a South Korean developer of force, torque, and tactile sensors. The investment gives HD Hyundai an undisclosed equity stake and creates a development partnership around robot hands and industrial surface finishing.",
+          "Independent reports published September 11 said AIDIN also received KRW 3 billion from Samsung Venture Investment, bringing the newly announced strategic financing to KRW 16 billion. Neither company disclosed the valuation or the ownership percentage acquired by either investor.",
+          "The two companies plan to combine HD Hyundai robot platforms with AIDIN sensing and control technology. Their program includes a five finger robot hand designed for shipbuilding and heavy industry, as well as automated systems for grinding and polishing steel surfaces.",
+          "The plan is unusually specific for an investment announcement. It identifies the component, the physical work, and the first industrial environment. What it does not provide is a customer order, deployment date, price, or performance result."
+        ]
+      },
+      {
+        heading: "A camera can see contact, but it cannot feel pressure",
+        paragraphs: [
+          "Vision helps a robot locate a tool and recognize the shape in front of it. Force and torque sensing tell the control system what happens when the tool meets the work. For grinding or polishing, that feedback can help the machine maintain useful contact without pressing too lightly, overloading the tool, or damaging the surface.",
+          "The same principle applies to a robot hand. A hand may close around an object using position commands, but useful manipulation also depends on contact location and force distribution. A rigid grasp can crush a delicate part. A weak grasp can drop it. A changing object or surface can require continuous adjustment.",
+          "AIDIN says its tactile sensor uses multiple sensing cells to identify where contact occurs and how force is distributed. Its product material describes a flexible polymer construction intended for robot hands and fingertips. The company also sells six axis force and torque sensors that measure loads and moments across several directions.",
+          "These are AIDIN product descriptions, not independent performance results. Public material does not provide the durability, calibration stability, environmental rating, or service life of the sensor configuration that would be used in an HD Hyundai system."
+        ]
+      },
+      {
+        heading: "AIDIN is moving from components toward complete applications",
+        paragraphs: [
+          "AIDIN was founded in 2019 by Sungkyunkwan University professor Choi Hyouk Ryeol and Lee Yoon Haeng, a former member of his research group who leads the company. AIDIN traces its force sensing knowledge to more than 25 years of work inside the university's Robotics Innovatory.",
+          "Its current catalog includes six axis force and torque sensors, miniature sensors for confined spaces, joint torque sensors, tactile sensors, a robot hand, a smart gripper, and a motion controller. The company says its sensing approach combines capacitance measurement with a fringe effect design and can be integrated without a separate external amplifier.",
+          "Independent Korean reporting says AIDIN exports six axis sensors to ten countries, including Germany, France, Spain, China, and Japan. The company also plans to build annual production capacity for 30,000 torque sensors and related components using the new capital.",
+          "That production target is a company plan, not a shipment forecast. The important commercial question is whether AIDIN can manufacture sensors with consistent calibration and reliability while moving from individual components into hands and application specific systems."
+        ]
+      },
+      {
+        heading: "HD Hyundai already has a shipyard automation path",
+        paragraphs: [
+          "HD Hyundai Robotics belongs to the industrial and shipbuilding group built around HD Hyundai. It should not be confused with Hyundai Motor Group, the automotive organization that owns Boston Dynamics. The similar names hide different corporate systems and different routes into robotics.",
+          "The shipbuilding group has been assembling several parts of an automation strategy. HD Hyundai Robotics previously joined HD Hyundai Samho and LG CNS to develop humanoid systems and autonomous material movement for shipyards. Its role includes motion control and artificial intelligence suited to complex industrial conditions.",
+          "HD Hyundai is also working with Persona AI and Vazil Company on a humanoid for shipyard welding. That program targets a prototype during 2026, followed by field testing and commercialization beginning in 2027. AIDIN adds sensing and manipulation components that could support a broader range of contact intensive work.",
+          "The company has a more immediate conventional automation route as well. In May, HD Hyundai Robotics announced an order from Chouest Group for its ArcLift GO robotic welding solution. Deployment is planned at three North American shipyards, including a site in Louisiana, and at one shipyard in Brazil. That order provides a potential commercial channel for later automation products, although it does not include the newly announced AIDIN systems."
+        ]
+      },
+      {
+        heading: "The first useful product may not need legs",
+        paragraphs: [
+          "The five finger hand will attract attention because it points toward humanoids. Surface finishing may produce an earlier commercial test because the task can also be addressed with an industrial arm, a mobile platform, or purpose built equipment.",
+          "That distinction matters. A customer does not need a humanoid when a fixed robot can reach the work, hold the correct tool, and adapt to the surface. Legs, a human shaped body, and a general purpose hand add cost and control problems that must earn their place in the application.",
+          "A more flexible body becomes valuable when the robot must travel through a human designed work area, use several tools, reach changing locations, or work across tasks that cannot justify separate machines. Shipyards offer that kind of variability, but they also punish fragile hardware with large structures, difficult access, dust, vibration, and changing work conditions.",
+          "HD Hyundai and AIDIN therefore have two related opportunities. They can improve force controlled automation for specific finishing processes, and they can use the resulting sensing and application knowledge to inform more capable humanoid systems. The narrower application may reveal whether the technology deserves the more ambitious body."
+        ]
+      },
+      {
+        heading: "The investment is evidence of intent, not operating proof",
+        paragraphs: [
+          "The partnership has strategic logic. HD Hyundai brings robot platforms, shipyard access, integration knowledge, and a developing customer channel. AIDIN brings sensors designed to measure the physical interaction between a robot and its work.",
+          "The public evidence stops well before a production result. The companies have not disclosed a completed five finger hand for this program, the robot platform that will carry it, a selected customer site, a paid order, or a timetable for surface finishing deployment.",
+          "They also have not published the measures that will decide whether the system works commercially. Buyers will need to understand contact accuracy, surface quality, cycle time, tool wear, sensor drift, resistance to contamination, failure recovery, maintenance requirements, and the amount of human supervision needed during a shift.",
+          "Financing can accelerate engineering and production capacity, but it cannot substitute for those results. The partnership becomes more important when a shipyard accepts the work and then asks for another system."
+        ]
+      },
+      {
+        heading: "What to watch next",
+        paragraphs: [
+          "The first signal will be a working surface finishing system at an HD Hyundai site. A useful demonstration should show the shape and condition of the steel, the tool being controlled, the required finish, the time needed, and how often a person intervenes.",
+          "The second will be the five finger hand. Watch which sensors are embedded in the fingers and wrist, which loads the hand can tolerate, how it changes grip after contact, and whether the design can be serviced in an industrial setting.",
+          "The third will be production evidence from AIDIN. Progress toward its planned component capacity matters only when it is accompanied by qualified output, customer shipments, and a support model that works beyond the laboratory.",
+          "Black Scarab's assessment is that HD Hyundai is building a coherent shipyard robotics stack one practical layer at a time. The AIDIN investment adds a sense that many robots still lack: reliable information about physical contact. The next test is whether that sense can survive real steel, real tools, and a full production shift."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "HD Hyundai Robotics announcement on the AIDIN investment and development partnership, published September 14, 2026",
+        url: "https://www.hd-hyundairobotics.com/company/news/7499"
+      },
+      {
+        label: "Yonhap report on the investment, robot hand, and surface finishing plans, published September 11, 2026",
+        url: "https://www.yna.co.kr/amp/view/AKR20260911034500003"
+      },
+      {
+        label: "Seoul Economic Daily report on the financing and planned applications, published September 11, 2026",
+        url: "https://en.sedaily.com/finance/2026/09/11/hd-hyundai-invests-13-billion-won-in-korean-robot-sensor"
+      },
+      {
+        label: "Hankook Ilbo report on AIDIN's financing and component production plan, published September 11, 2026",
+        url: "https://www.hankookilbo.com/news/article/amp/A2026091017540004907"
+      },
+      {
+        label: "AIDIN Robotics overview of its force and torque sensor portfolio, undated product page accessed September 14, 2026",
+        url: "https://www.aidinrobotics.co.kr/en/products-gate"
+      },
+      {
+        label: "AIDIN Robotics tactile sensor product page, undated page accessed September 14, 2026",
+        url: "https://www.aidinrobotics.co.kr/tactile-sensor"
+      },
+      {
+        label: "HD Hyundai Robotics smart shipyard humanoid and logistics program, published September 16, 2025",
+        url: "https://www.hd-hyundairobotics.com/en/company/news/5562"
+      },
+      {
+        label: "HD Hyundai Robotics order for Chouest Group shipyards, published May 8, 2026",
+        url: "https://www.hd-hyundairobotics.com/en/company/news/6905"
+      },
+      {
+        label: "HD Hyundai and Persona AI shipyard welding humanoid program, published May 20, 2025",
+        url: "https://www.hd-hyundairobotics.com/company/news/5123"
+      }
+    ]
+  },
+  {
     slug: "ubtech-liuzhou-humanoid-robot-factory",
     title: "UBTECH opens a humanoid robot factory designed to build 10,000 units a year",
     summary: "The Liuzhou plant is built around a ten minute line cadence and Siemens production software. The harder test is whether installed capacity becomes reliable output, customer deployments, and profit.",
