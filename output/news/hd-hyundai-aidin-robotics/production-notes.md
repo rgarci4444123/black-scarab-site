@@ -32,4 +32,8 @@ The Next.js 16.2.1 production build passed. The new route was statically generat
 
 Local production checks returned HTTP 200 for the article, News index, cover, main sitemap, news sitemap, and RSS feed. The article appears in all three discovery endpoints. Canonical metadata, social image metadata, NewsArticle structured data, and the CFA `honorificSuffix` were confirmed.
 
-Website deployment, live verification, IndexNow, Rich Results Test, Google Search Console URL Inspection, LinkedIn, and X handoff remain pending.
+Website deployed from commit `61f379e`. The live canonical article, News index, main sitemap, news sitemap, RSS feed, and cover returned HTTP 200. The article appeared in every discovery surface. Canonical metadata, social image metadata, NewsArticle structured data, source publication dates, and the CFA `honorificSuffix` were verified in production.
+
+IndexNow accepted the article and News index with status 200. Indexing is not guaranteed.
+
+Google Rich Results Test, Google Search Console URL Inspection, LinkedIn, and X handoff remain pending.
