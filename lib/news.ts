@@ -32,6 +32,126 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "agility-digit-5-humanoid-launch",
+    title: "Agility launches Digit 5 with heavier lifts, faster charging, and a safety push",
+    summary: "The new industrial humanoid is designed to lift 50 pounds repeatedly, recharge in nine minutes, and work near people. Early access is planned for 2027, leaving safety validation and production scale as the next tests.",
+    category: "Robotics News",
+    publishedDate: "2026-09-15",
+    publishedAt: "2026-09-15T08:30:43-04:00",
+    publishedLabel: "September 15, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/agility-digit-5-industrial-humanoid.png",
+    imageAlt: "Editorial illustration of a generic industrial humanoid carrying a tote near a worker and charging dock",
+    imageCaption: "Original Black Scarab editorial illustration of an industrial humanoid moving material near a worker and charging dock. This conceptual scene does not depict Digit 5, an Agility facility, or an actual customer deployment.",
+    readingTime: "8 min read",
+    keyPoints: [
+      "Agility says Digit 5 can repeatedly lift 50 pounds and use a 90 minute battery that recharges in nine minutes, supporting more than 20 productive hours within a 24 hour day.",
+      "A new safety architecture combines human detection, visual and audible cues, and an independent motion controller so the robot can avoid, stop, or sit when a person gets too close.",
+      "Early access is expected in the first half of 2027 and general availability by the end of that year. The reported $300 million order book is conditional multi year value, not recognized revenue."
+    ],
+    sections: [
+      {
+        heading: "A new Digit steps out of the workcell",
+        paragraphs: [
+          "Agility Robotics unveiled Digit 5 on September 15, presenting its fifth generation humanoid as a machine built for heavier industrial work, faster charging, and operation near people. The company says the design reflects three years of feedback from Digit 4 deployments in manufacturing and logistics facilities.",
+          "The headline change is not a more human appearance. It is an attempt to remove the safety barriers that have kept earlier Digit deployments inside guarded workcells. Agility calls the goal cooperative safety, meaning the robot can operate in the same general environment as workers while maintaining safe separation and responding when someone comes too close.",
+          "Digit 5 is not generally available today. Agility expects early access to begin during the first half of 2027, followed by general availability for manufacturing, warehouse, and distribution operators by the end of 2027. The company also plans to expand commercial availability beyond North America into the European Union and United Kingdom."
+        ]
+      },
+      {
+        heading: "More lift, less time at the charger",
+        paragraphs: [
+          "Agility says Digit 5 can repeatedly lift loads of up to 50 pounds, or 22.7 kilograms, a 40 percent increase from the 35 pound rating associated with Digit 4. A new leg design and proprietary cycloidal actuators are intended to absorb the strain of repeated lifting rather than treating the maximum payload as an occasional demonstration.",
+          "The battery story requires careful reading. Digit 5 has a stated runtime of 90 minutes per charge, not 20 continuous hours. Agility says the battery can recharge in nine minutes, producing a ten to one ratio between running and charging. By cycling through short autonomous charging periods, the company expects one robot to deliver more than 20 productive hours within a 24 hour day.",
+          "That pattern could matter more than a large battery that takes hours to replenish. A robot that can visit its dock during normal pauses may cover several shifts without requiring a second machine. The real measure will be productive duty time after walking, waiting, task execution, fault recovery, and battery aging are included.",
+          "Other hardware changes widen the possible workflow. Swappable grippers use standard mounting flanges, allowing tools to change with the task. Digit 5 weighs 284 pounds, stands 5 feet 11 inches tall, and can reach as high as 7.2 feet. Agility says the combination covers shelves, aisles, doors, and workstations designed for people."
+        ]
+      },
+      {
+        heading: "Safety becomes a system, not a fence",
+        paragraphs: [
+          "Digit 5 uses several layers to detect and respond to people. Agility says proprietary algorithms combine multiple sensor technologies to monitor the area around the robot. When a person enters an unsafe distance, the system can avoid the person, stop, or move the robot into a seated position.",
+          "Visual and audible cues are designed to communicate motion intent to nearby workers. A separate safety controller supervises the response to human detection, keeping critical protective behavior independent from the main autonomy system. That separation is important because a robot should not improvise when a safety limit is crossed.",
+          "The company is also contributing to safety work for dynamically stable industrial mobile robots. It cites an ANSI technical report under development in the United States and Canada and ISO 25785 1, an international standard for humanoid safety. Digit 5 is expected to pursue the regulatory marks needed for planned European and British deployments.",
+          "Designed for cooperative safety is not the same as independently certified for every intended deployment. Agility says an earlier Digit became the first humanoid to pass an independent field evaluation on a customer production line for industrial safety standards. Digit 5 will need its own validation in the configurations, tasks, and facilities where customers expect it to work near people."
+        ]
+      },
+      {
+        heading: "Three years of work shaped the upgrade",
+        paragraphs: [
+          "Agility reports more than 65,000 hours of operation across earlier Digit deployments in North America, including work connected with GXO, Schaeffler, Amazon, and Toyota Motor Manufacturing Canada. The company says those hours supplied operational data and customer feedback used to train capabilities and define the new hardware.",
+          "The relationships are not identical. GXO describes Digit as its most advanced humanoid program and says it deployed the robot in a live operating facility. Amazon announced a test at its robotics research and development site in 2023. Schaeffler has described a proof of concept for material handling. Agility groups these sites into its broader deployment record, but a test, a proof of concept, and a contracted production workflow represent different levels of commercial maturity.",
+          "At GXO's Flowery Branch facility near Atlanta, Agility says Digit 4 moved a cumulative 100,000 totes and maintained about 98 percent accuracy while on task. That is one of the more concrete public operating measures in the humanoid market, although it does not disclose total interventions, downtime, cycle time distribution, or the number of robots responsible for the result.",
+          "Digit 5 is meant to move beyond tote transfer. Agility lists depalletizing, machine tending, kitting, sequencing, quality inspection, and palletizing as target workflows. Its Arc fleet platform connects robots with autonomous mobile robots, conveyors, and warehouse or manufacturing software so tasks can move across stations. Most of that broader capability remains a roadmap until customers report sustained production use."
+        ]
+      },
+      {
+        heading: "The $300 million number needs a footnote",
+        paragraphs: [
+          "Peggy Johnson, Agility's chief executive, said the market has responded with more than $300 million in multi year orders for Digit 5. The figure is real enough to appear in materials filed with the Securities and Exchange Commission, but it should not be read as present revenue or a broad collection of completed sales.",
+          "Agility's investor presentation says the amount was measured as of May 2026 and relates to 1,000 Digit 5 robots under a three year robot service contract with one purchaser. The contract includes warrants that vest as robots are deployed, and its value depends on contractual milestones. The company explicitly says the figure is not a measure of current period revenue.",
+          "That order can still be commercially important. A customer willing to structure a deployment at that scale is a stronger signal than a nonbinding pilot announcement. It also concentrates execution risk. Agility must finish the product, meet the contract conditions, manufacture the robots, deploy them, and keep them productive before the potential value becomes operating performance.",
+          "The company plans to enter public markets through a merger with Churchill Capital Corp XI. Independent reporting has put the transaction value at about $2.5 billion and described more than $620 million in expected gross proceeds before redemptions and other conditions. That financing is intended in part to fulfill orders and scale Digit 5 production."
+        ]
+      },
+      {
+        heading: "Ten thousand robots is capacity, not output",
+        paragraphs: [
+          "Digit is assembled at RoboFab, Agility's 70,000 square foot facility in Salem, Oregon. The plant was designed to produce as many as 10,000 robots per year at full capacity and eventually employ more than 500 people.",
+          "Designed capacity describes what the factory infrastructure is intended to support. It does not mean Agility is producing 10,000 units today or has proven that annual rate. The company has not disclosed current Digit 5 output, its launch yield, supplier readiness, or a schedule for reaching the full factory figure.",
+          "The gap is normal for a complex new machine, but it is central to the story. Repeatedly building actuators, batteries, sensors, safety controllers, and complete robots with consistent quality is different from assembling a limited engineering fleet. Service capacity must expand at the same time because a larger installed base creates more maintenance, spare parts, software support, and customer training work.",
+          "The nine minute charge claim creates another infrastructure question. A customer evaluating three shift use will need to understand charger count, electrical demand, dock access, queueing across a fleet, and the effect of repeated fast charging on battery life. The simple ratio becomes a facility design problem when dozens of robots share the floor."
+        ]
+      },
+      {
+        heading: "What to watch next",
+        paragraphs: [
+          "The first signal is independent safety validation for Digit 5. Buyers should look for the exact standards applied, the tasks and speeds covered, the required separation distance, and the behavior of the robot when sensors, networks, or software fail.",
+          "The second is productive availability. Early access customers should report completed work, intervention rate, charging behavior, uptime, throughput, and performance after months of repeated lifting. A 50 pound demonstration and a 50 pound production process are different achievements.",
+          "The third is order conversion. Agility's conditional 1,000 robot contract becomes more persuasive as units are accepted, deployed, and reflected in reported revenue. Additional named customers would also reduce the concentration hidden inside the headline order value.",
+          "Black Scarab's assessment is that Digit 5 addresses practical limits exposed by real deployments rather than chasing a theatrical feature list. Payload, charging, safety, tool changes, and fleet integration are exactly the systems that determine whether a humanoid can cover useful industrial work. The breakthrough will not be the launch itself. It will be a verified shift beside people, followed by thousands of robots that can repeat it."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Agility Robotics Digit 5 launch announcement, published September 15, 2026",
+        url: "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale"
+      },
+      {
+        label: "Agility Robotics Digit 5 product page and specifications, accessed September 15, 2026",
+        url: "https://www.agilityrobotics.com/solutions/digit-5"
+      },
+      {
+        label: "Agility investor presentation filed with the SEC, including order and production disclosures, filed June 2026",
+        url: "https://www.sec.gov/Archives/edgar/data/2074973/000121390026071287/ea029548401ex99-2.htm"
+      },
+      {
+        label: "GXO overview of its humanoid operating program and Digit deployment, accessed September 15, 2026",
+        url: "https://gxo.com/news_article/shaping-supply-chains-with-humanoid-technology/"
+      },
+      {
+        label: "Amazon announcement of its Digit test for tote recycling, published October 18, 2023",
+        url: "https://www.aboutamazon.com/news/operations/amazon-introduces-new-robotics-solutions"
+      },
+      {
+        label: "TechCrunch report on Agility's commercial deployments and planned Digit 5 safety system, published July 17, 2026",
+        url: "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/"
+      },
+      {
+        label: "Associated Press report on Agility's planned public listing and Digit 5 production strategy, published June 24, 2026",
+        url: "https://apnews.com/article/39f2356b9c1e167d0985b821f70079c5"
+      },
+      {
+        label: "Business Insider report on Digit 5 economics based on securities filings, republished September 9, 2026",
+        url: "https://uk.finance.yahoo.com/news/want-humanoid-factory-much-one-041553957.html"
+      }
+    ]
+  },
+  {
     slug: "reward-ai-om-1-human-demonstrations-robot-policy",
     title: "Reward AI says OM-1 learns robot skills directly from human demonstrations",
     summary: "The new policy is designed to move from a sensorized human hand to arms, mobile manipulators, and humanoids without teleoperation or on-robot training data. The launch shows an ambitious data strategy, but not yet a public benchmark or commercial product.",
