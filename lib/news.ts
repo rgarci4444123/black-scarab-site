@@ -32,6 +32,139 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "odyssey-3-foundation-world-model",
+    title: "Odyssey says one world model can control robots, cars, drones, and games",
+    summary: "Odyssey 3 uses one pretrained visual backbone with small action layers for several physical and virtual systems. The demonstrations are unusually broad, but most results remain company reported and a public release is still weeks away.",
+    category: "AI Systems News",
+    publishedDate: "2026-09-15",
+    publishedAt: "2026-09-15T13:51:52-04:00",
+    publishedLabel: "September 15, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/odyssey-3-foundation-world-model.png",
+    imageAlt: "Editorial illustration of one abstract world model connecting a robot arm, humanoid, autonomous vehicle, and drone",
+    imageCaption: "Original Black Scarab editorial illustration of a shared world model supporting several kinds of machines. This conceptual scene does not depict Odyssey software, partner hardware, a real road test, or an actual deployment.",
+    readingTime: "8 min read",
+    keyPoints: [
+      "Odyssey says the same frozen pretrained backbone supports action policies for robot arms, humanoids, vehicles, drones, artificial intelligence agents, and video games.",
+      "The strongest numerical claim comes from driving: a policy trained on 20 hours of simulated data reportedly traveled about 77 percent as far between safety driver interventions as policies trained on real footage.",
+      "Odyssey has not published a paper, model size, training data inventory, absolute intervention distances, task success rates, pricing, weights, or customer deployment evidence for Odyssey 3. Public release is promised in the coming weeks."
+    ],
+    sections: [
+      {
+        heading: "One model reaches for many machines",
+        paragraphs: [
+          "Odyssey introduced Odyssey 3 on September 15 as a foundation world model intended to support robots, humanoids, vehicles, drones, artificial intelligence training, and video games. The company presents it as an early step toward one learned intelligence that can operate across physical and virtual systems instead of starting from a separate model for every machine.",
+          "The release covers an unusually wide range of experiments. Robot arms sort, pour, clean, and close containers. A humanoid performs tabletop tasks. A vehicle follows roads in India. A simulated drone navigates around furniture. Game policies move through three different titles.",
+          "Breadth is the point, but it is also where careful reading matters. Odyssey does not claim that one untouched model directly controls every system. The common component is a pretrained visual backbone. Each application still needs an action layer trained on examples that pair observations with controls, and some demonstrations include substantial work by a specialist partner."
+        ]
+      },
+      {
+        heading: "A frozen backbone learns new controls",
+        paragraphs: [
+          "Odyssey describes the backbone as an autoregressive diffusion transformer trained on a large and diverse collection of visual observations. In plain language, it learns to predict how scenes evolve, building internal representations of motion, physical interaction, cause and effect, and behavior.",
+          "For a new machine, Odyssey keeps that backbone frozen and trains an action decoder. This smaller learned component translates the model's internal representations into commands suited to a robot, vehicle, drone, or game controller. The task data teaches the system how to use a particular control interface without rewriting the shared visual foundation.",
+          "That separation is commercially attractive if it holds up. A developer could reuse expensive pretraining, then spend a smaller data budget adapting the model to each body or task. The open question is how much work sits behind the phrase action decoder, including calibration, control engineering, safety constraints, simulation, data cleaning, and testing. Odyssey has not disclosed those costs or the compute required for adaptation."
+        ]
+      },
+      {
+        heading: "Robot arms show recovery, according to Odyssey",
+        paragraphs: [
+          "Odyssey says tens of hours of demonstrations were enough to train policies for several robot arms. The selected videos include pouring cereal and coffee, packing objects, closing a screw box, and wiping a plate.",
+          "The more interesting claim concerns recovery. Odyssey reports that its policies sometimes reoriented a gripper after a missed grasp or retrieved an object from an unusual position even though those recovery sequences were absent from the demonstrations. If repeatable, that behavior would reduce the need to collect an example for every predictable failure.",
+          "No task success rate, trial count, intervention rate, cycle time, robot model list, or comparison with a named baseline is provided. The videos therefore show capability, not reliability. Odyssey says it is working with robot data and benchmarking company Poke & Wiggle to test the model across bodies, viewpoints, and controls. That evaluation is a future source of evidence rather than an independent result available today."
+        ]
+      },
+      {
+        heading: "The humanoid result includes another autonomy stack",
+        paragraphs: [
+          "For humanoids, Odyssey is collaborating with Zurich based Flexion Robotics. Flexion describes its work as an autonomy stack spanning commands, manipulation, locomotion, and control. Odyssey says Flexion used Odyssey 3 as a base model, then contributed substantial research and engineering to build the demonstrated humanoid policies.",
+          "The resulting system reportedly uses tens of hours of humanoid teleoperation data and runs in real time. Selected demonstrations show a humanoid opening boxes and containers, moving a plate, and stacking a mug. Odyssey also says the policies continued working under lighting changes that caused the vision language action baselines it tested to fail.",
+          "The release does not identify those baselines, publish success rates, describe the lighting protocol, or separate the contribution of Odyssey's backbone from Flexion's reinforcement learning and whole body control. The result is evidence that the model can participate in a humanoid stack, not that Odyssey 3 alone is a complete humanoid autonomy product."
+        ]
+      },
+      {
+        heading: "Twenty simulated hours meet Indian roads",
+        paragraphs: [
+          "The driving experiment provides the clearest numerical comparison. Odyssey says it trained a policy with 20 hours of simulated driving data while keeping the pretrained backbone frozen. The policy reads visual representations and predicts waypoints ahead of the vehicle in real time.",
+          "On public roads in India, policies trained only in simulation reportedly navigated bends, overtaking traffic, and busy junctions. Odyssey says they traveled about 77 percent as far between safety driver interventions as comparison policies trained on real driving footage.",
+          "That relative figure is promising, but it lacks the denominator a buyer needs. Odyssey does not disclose the absolute distance between interventions for either policy, the number and length of routes, vehicle speed, weather, city, intervention definition, comparison data volume, or statistical variation. A safety driver remained part of the test, so the result should not be read as a driverless commercial deployment.",
+          "The claim is also a comparison between two policies in Odyssey's own evaluation, not an industry benchmark. Its value is directional: broad visual pretraining may carry enough structure to make a small amount of simulated driving experience useful on a real road. Independent replication and full safety metrics will determine how much further that conclusion can travel."
+        ]
+      },
+      {
+        heading: "The drone stays inside simulation",
+        paragraphs: [
+          "Odyssey trained its aerial navigation policy with tens of hours of simulated drone demonstrations. The policy receives recent camera observations, motion state, and a navigation instruction, then generates flight waypoints.",
+          "The company reports stable flight and obstacle avoidance in a simulated indoor environment. Its qualitative examples include taking off, passing under a table, exploring a room, hovering, and landing behind furniture.",
+          "This is not evidence of a physical drone flight. Odyssey does not report a real aircraft, sensor package, onboard compute target, control frequency, success rate, collision rate, or transfer from simulation to hardware. The experiment shows that the shared representation can support an aerial policy inside simulation, which is useful research but a different bar from piloting a drone in the world."
+        ]
+      },
+      {
+        heading: "Games become both demonstration and test bed",
+        paragraphs: [
+          "Odyssey also trains game policies from recordings paired with keyboard and mouse inputs. The frozen backbone processes recent frames while the action layer generates controls, using new observations to decide what to do next.",
+          "The company shows extended sessions in Grand Theft Auto V and selected driving, combat, and navigation examples. It also reports early transfer across games. In one experiment, a mobility policy trained on about two hours of footage from Grand Theft Auto V produced horseback movement in Red Dead Redemption 2 without additional training on that title. Other selected examples show movement in Sleeping Dogs.",
+          "Games offer dense, repeatable experience and consequences without risking equipment or people. Odyssey's PROWL research uses an agent to search simulated environments for model failures, then turns those failures into new training examples. Odyssey 3 extends the idea by using a world model as a foundation for the agents acting inside those environments.",
+          "Again, the public evidence is selective. Odyssey provides no completion rates, comparison set, input latency, game coverage, or measure of how often transfer fails. The demonstrations support a research hypothesis about reusable representations. They do not establish a general game playing system."
+        ]
+      },
+      {
+        heading: "A well funded race toward reusable physical intelligence",
+        paragraphs: [
+          "Odyssey was founded in 2023 by Oliver Cameron and Jeff Hawke, whose earlier work included autonomous driving. Independent reporting from TechCrunch says the company raised a $310 million Series B in June at a $1.45 billion valuation, bringing total funding to $337 million.",
+          "That capital gives Odyssey room to train larger models and build application partnerships, but funding is not product validation. Odyssey 3 is not publicly available on launch day. The company says it plans a public release in the coming weeks and has not yet disclosed weights, license terms, API pricing, service limits, deployment requirements, or support arrangements.",
+          "The commercial question is whether a common backbone creates enough advantage to offset the integration work every physical system still requires. Robot arms, humanoids, cars, and drones have different sensors, dynamics, failure costs, and regulatory obligations. Reusing perception and physical knowledge could save data. It cannot remove the need to qualify the entire control system for its actual job."
+        ]
+      },
+      {
+        heading: "What to watch next",
+        paragraphs: [
+          "The first signal is the promised public release. Technical documentation should disclose model scale, training inputs, interfaces, latency, compute requirements, licensing, and the boundary between a reusable backbone and the adaptation work required for each application.",
+          "The second is complete evaluation. For robots, buyers need repeated task success, recovery success, intervention rate, and performance across different hardware and sites. For driving, absolute distance between interventions and a defined test protocol matter more than a relative percentage. For drones, a real flight with safety and failure reporting would move the evidence beyond simulation.",
+          "The third is commercial use. A named customer running an Odyssey based policy in sustained work, with disclosed operating hours and reliability, would be more meaningful than another category added to the demonstration list.",
+          "Black Scarab's assessment is that Odyssey 3 makes a compelling architectural argument: visual knowledge learned at scale may be reusable across machines whose controls look nothing alike. The launch does not yet prove a general physical intelligence. It shows a common foundation surrounded by several promising adapters, partner systems, and carefully selected tests. The next milestone is not one more machine in the montage. It is a result that an outside evaluator can reproduce."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Odyssey 3 launch announcement and experimental results, published September 15, 2026",
+        url: "https://odyssey.systems/introducing-odyssey-3"
+      },
+      {
+        label: "Odyssey overview of its foundation world model strategy, accessed September 15, 2026",
+        url: "https://odyssey.systems/"
+      },
+      {
+        label: "Flexion Robotics description of its humanoid autonomy stack, accessed September 15, 2026",
+        url: "https://flexion.ai/"
+      },
+      {
+        label: "Poke & Wiggle robot policy benchmarking overview, accessed September 15, 2026",
+        url: "https://pokeandwiggle.com/"
+      },
+      {
+        label: "Odyssey PROWL 1 research overview on adversarial world model training, published May 12, 2026",
+        url: "https://odyssey.systems/introducing-prowl-1"
+      },
+      {
+        label: "Odyssey Series B announcement, published June 17, 2026",
+        url: "https://odyssey.systems/our-series-b"
+      },
+      {
+        label: "TechCrunch report on Odyssey's funding, founders, and earlier world model work, published June 17, 2026",
+        url: "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/"
+      },
+      {
+        label: "TechCrunch review of Odyssey's first interactive world model and its limitations, published May 28, 2025",
+        url: "https://techcrunch.com/2025/05/28/odysseys-new-ai-model-streams-3d-interactive-worlds/"
+      }
+    ]
+  },
+  {
     slug: "agility-digit-5-humanoid-launch",
     title: "Agility launches Digit 5 with heavier lifts, faster charging, and a safety push",
     summary: "The new industrial humanoid is designed to lift 50 pounds repeatedly, recharge in nine minutes, and work near people. Early access is planned for 2027, leaving safety validation and production scale as the next tests.",
