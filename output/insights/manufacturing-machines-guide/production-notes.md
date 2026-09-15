@@ -2,13 +2,15 @@
 
 ## Website
 
-Status: prepared for publication on September 15, 2026.
+Published and verified September 15, 2026.
 
 Canonical URL:
 
 https://www.blackscarab.ai/insights/types-of-manufacturing-machines-factory-equipment-guide
 
 The article is Part 2 of Inside the Physical AI Factory. It covers the machine atlas, application anatomy, operating requirements, capacity, installed cost, buy versus outsource decisions, and the boundary between fixed automation and physical AI.
+
+The live page showed the expected title, author, publication date, editorial cover, article body, desktop and mobile diagrams, source list, Article schema, and canonical URL. IndexNow accepted the article and Insights index URLs with status 200.
 
 ### Original artwork
 
