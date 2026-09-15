@@ -400,15 +400,26 @@ export default async function CaseStudyPage({ params }: Props) {
                       </div>
                     {section.visual ? (
                       <figure className="mt-7 overflow-hidden rounded-[22px] border border-[#e1ddd2] bg-[#f4f0e8] shadow-[0_14px_34px_rgba(17,24,39,0.08)]">
-                        <a href={section.visual.src} target="_blank" rel="noreferrer" aria-label={`Open full size image: ${section.visual.alt}`} className="relative block aspect-[16/10] w-full">
+                        <a href={section.visual.mobileSrc ?? section.visual.src} target="_blank" rel="noreferrer" aria-label={`Open full size image: ${section.visual.alt}`} className={`relative w-full ${section.visual.mobileSrc ? "block aspect-[9/14] md:hidden" : "block aspect-[16/10]"}`}>
                           <Image
-                            src={section.visual.src}
+                            src={section.visual.mobileSrc ?? section.visual.src}
                             alt={section.visual.alt}
                             fill
                             sizes="(min-width: 1024px) 820px, (min-width: 768px) calc(100vw - 160px), calc(100vw - 48px)"
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </a>
+                        {section.visual.mobileSrc ? (
+                          <a href={section.visual.src} target="_blank" rel="noreferrer" aria-label={`Open full size image: ${section.visual.alt}`} className="relative hidden aspect-[16/10] w-full md:block">
+                            <Image
+                              src={section.visual.src}
+                              alt={section.visual.alt}
+                              fill
+                              sizes="(min-width: 1024px) 820px, (min-width: 768px) calc(100vw - 160px)"
+                              className="object-contain"
+                            />
+                          </a>
+                        ) : null}
                         {section.visual.caption ? (
                           <figcaption className="border-t border-[#e8e4dc] bg-[#fffdfa] px-5 py-3 text-xs leading-5 text-[#6b7280]">
                             {section.visual.caption}

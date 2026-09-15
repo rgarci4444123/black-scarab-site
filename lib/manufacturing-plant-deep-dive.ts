@@ -14,11 +14,12 @@ export const manufacturingPlantDeepDive = (): CaseStudyArticle => ({
   typeLabel: "Deep Dive",
   formatLabel: "Inside the Physical AI Factory · Part 1",
   industry: "Manufacturing",
-  image: "/article-images/what-is-a-manufacturing-plant-factory-flow.png",
+  image: "/article-images/what-is-a-manufacturing-plant-factory-flow-v2.png",
+  imageFit: "contain",
   imageAlt:
-    "Editorial illustration showing receiving, fabrication, rover assembly, inspection, packaging, and shipping inside one modern factory",
+    "Editorial illustration showing separate components, a rover chassis in assembly, and a completed industrial inspection rover",
   imageCaption:
-    "Original Black Scarab editorial illustration of a modern manufacturing plant. This is an editorial interpretation, not an official product photograph.",
+    "Original Black Scarab editorial illustration of a product moving from components through assembly to a finished inspection rover. This is an editorial interpretation, not an official product photograph.",
   seoDescription:
     "Learn what a manufacturing plant does, how factory types and production systems differ, and how material flows from receiving through production to shipping.",
   tags: [
@@ -75,6 +76,7 @@ export const manufacturingPlantDeepDive = (): CaseStudyArticle => ({
       ],
       visual: {
         src: "/article-images/manufacturing-system-two-questions.svg",
+        mobileSrc: "/article-images/manufacturing-system-two-questions-mobile.svg",
         alt: "Two question map separating the nature of manufacturing output from the way production work flows",
         caption:
           "Manufacturing type and production flow answer different questions. Original Black Scarab diagram.",

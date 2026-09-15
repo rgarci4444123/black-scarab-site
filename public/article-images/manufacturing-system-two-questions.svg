@@ -8,12 +8,19 @@
   <text x="155" y="290" fill="#262823" font-family="Arial, sans-serif" font-size="24" letter-spacing="2">QUESTION ONE</text>
   <text x="155" y="345" fill="#262823" font-family="Georgia, serif" font-size="38">What is transformed?</text>
   <rect x="155" y="400" width="250" height="245" rx="22" fill="#343832"/>
-  <circle cx="280" cy="475" r="42" fill="#aeb9a5"/>
-  <rect x="238" y="465" width="84" height="20" rx="10" fill="#f3efe5"/>
+  <g aria-label="Three separate countable units">
+    <circle cx="240" cy="475" r="27" fill="#aeb9a5"/>
+    <rect x="267" y="448" width="54" height="54" rx="10" fill="#f3efe5"/>
+    <path d="M350 448 L378 496 H322 Z" fill="#b1a78f"/>
+  </g>
   <text x="280" y="565" fill="#f3efe5" text-anchor="middle" font-family="Georgia, serif" font-size="31">Discrete</text>
   <text x="280" y="610" fill="#d7d9d2" text-anchor="middle" font-family="Arial, sans-serif" font-size="21">Countable units</text>
   <rect x="455" y="400" width="250" height="245" rx="22" fill="#b1a78f"/>
-  <path d="M530 510 C530 462 630 462 630 510 C630 554 580 579 580 608 C580 579 530 554 530 510Z" fill="#343832"/>
+  <g aria-label="Material contained in a process vessel">
+    <path d="M530 444 H630 L620 518 Q618 535 600 535 H560 Q542 535 540 518 Z" fill="#f3efe5" stroke="#343832" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M541 492 H619 L616 516 Q614 526 601 526 H559 Q546 526 544 516 Z" fill="#899584"/>
+    <path d="M565 432 V444 M595 432 V444" stroke="#343832" stroke-width="6" stroke-linecap="round"/>
+  </g>
   <text x="580" y="565" fill="#262823" text-anchor="middle" font-family="Georgia, serif" font-size="31">Process</text>
   <text x="580" y="610" fill="#40433d" text-anchor="middle" font-family="Arial, sans-serif" font-size="21">Mass or volume</text>
   <text x="155" y="710" fill="#555b52" font-family="Arial, sans-serif" font-size="22">Many factories combine both</text>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1120" viewBox="0 0 720 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Two questions classify a manufacturing system</title>
+  <desc id="desc">A mobile diagram separates what is transformed from how work moves through production.</desc>
+  <rect width="720" height="1120" fill="#f3efe5"/>
+  <text x="48" y="76" fill="#262823" font-family="Georgia, serif" font-size="46">Two questions classify</text>
+  <text x="48" y="127" fill="#262823" font-family="Georgia, serif" font-size="46">the system</text>
+  <text x="48" y="172" fill="#697065" font-family="Arial, sans-serif" font-size="25">The answers overlap inside real plants</text>
+
+  <rect x="40" y="218" width="640" height="352" rx="28" fill="#e7e1d3" stroke="#899584" stroke-width="3"/>
+  <text x="76" y="270" fill="#262823" font-family="Arial, sans-serif" font-size="22" letter-spacing="2">QUESTION ONE</text>
+  <text x="76" y="318" fill="#262823" font-family="Georgia, serif" font-size="36">What is transformed?</text>
+
+  <rect x="76" y="352" width="268" height="174" rx="20" fill="#343832"/>
+  <g aria-label="Three separate countable units">
+    <circle cx="155" cy="403" r="24" fill="#aeb9a5"/>
+    <rect x="184" y="379" width="48" height="48" rx="9" fill="#f3efe5"/>
+    <path d="M280 379 L305 427 H255 Z" fill="#b1a78f"/>
+  </g>
+  <text x="210" y="471" fill="#f3efe5" text-anchor="middle" font-family="Georgia, serif" font-size="31">Discrete</text>
+  <text x="210" y="505" fill="#d7d9d2" text-anchor="middle" font-family="Arial, sans-serif" font-size="21">Countable units</text>
+
+  <rect x="376" y="352" width="268" height="174" rx="20" fill="#b1a78f"/>
+  <g aria-label="Material contained in a process vessel">
+    <path d="M455 375 H565 L556 432 Q554 447 538 447 H482 Q466 447 464 432 Z" fill="#f3efe5" stroke="#343832" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M466 414 H554 L551 430 Q549 439 538 439 H482 Q471 439 469 430 Z" fill="#899584"/>
+    <path d="M492 364 V375 M528 364 V375" stroke="#343832" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="510" y="471" fill="#262823" text-anchor="middle" font-family="Georgia, serif" font-size="31">Process</text>
+  <text x="510" y="505" fill="#40433d" text-anchor="middle" font-family="Arial, sans-serif" font-size="21">Mass or volume</text>
+  <text x="76" y="552" fill="#555b52" font-family="Arial, sans-serif" font-size="21">Many factories combine both</text>
+
+  <rect x="40" y="602" width="640" height="430" rx="28" fill="#343832"/>
+  <text x="76" y="656" fill="#b9c3b1" font-family="Arial, sans-serif" font-size="22" letter-spacing="2">QUESTION TWO</text>
+  <text x="76" y="704" fill="#f3efe5" font-family="Georgia, serif" font-size="36">How does work move?</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="76" y="744" width="268" height="105" rx="18" fill="#e7e1d3"/>
+    <text x="210" y="788" text-anchor="middle" fill="#262823" font-size="28">Job shop</text>
+    <text x="210" y="822" text-anchor="middle" fill="#697065" font-size="20">Varied routes</text>
+    <rect x="376" y="744" width="268" height="105" rx="18" fill="#aeb9a5"/>
+    <text x="510" y="788" text-anchor="middle" fill="#262823" font-size="28">Batch</text>
+    <text x="510" y="822" text-anchor="middle" fill="#4d554b" font-size="20">Groups then change</text>
+    <rect x="76" y="889" width="268" height="105" rx="18" fill="#aeb9a5"/>
+    <text x="210" y="933" text-anchor="middle" fill="#262823" font-size="28">Line</text>
+    <text x="210" y="967" text-anchor="middle" fill="#4d554b" font-size="20">Product sequence</text>
+    <rect x="376" y="889" width="268" height="105" rx="18" fill="#e7e1d3"/>
+    <text x="510" y="933" text-anchor="middle" fill="#262823" font-size="28">Continuous</text>
+    <text x="510" y="967" text-anchor="middle" fill="#697065" font-size="20">Material keeps flowing</text>
+  </g>
+  <path d="M344 796 H376 M344 941 H376 M210 849 V889 M510 849 V889" stroke="#9ca897" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+  <text x="40" y="1082" fill="#697065" font-family="Arial, sans-serif" font-size="18">BLACK SCARAB  •  INSIDE THE PHYSICAL AI FACTORY</text>
+</svg>

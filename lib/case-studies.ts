@@ -12,6 +12,7 @@ export type CaseStudySection = {
   paragraphs: CaseStudyParagraph[];
   visual?: {
     src: string;
+    mobileSrc?: string;
     alt: string;
     caption?: string;
   };
