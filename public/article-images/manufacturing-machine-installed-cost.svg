@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">The installed cost stack for manufacturing equipment</title>
+  <desc id="desc">A layered cost stack shows the quoted machine as one part of a production ready application.</desc>
+  <rect width="1200" height="720" rx="32" fill="#f3efe4"/>
+  <text x="64" y="76" fill="#292d28" font-family="Georgia, serif" font-size="38" font-weight="700">The quote is only one layer</text>
+  <text x="64" y="112" fill="#687066" font-family="Arial, sans-serif" font-size="17">Compare production ready systems, not isolated machine prices.</text>
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(74 172)">
+      <rect x="0" y="0" width="690" height="64" rx="15" fill="#30352f"/>
+      <text x="24" y="40" fill="#f8f5ec" font-size="20" font-weight="700">Quoted machine</text>
+      <text x="666" y="40" text-anchor="end" fill="#c6d0bc" font-size="15">Visible first</text>
+      <rect x="28" y="78" width="662" height="64" rx="15" fill="#576057"/>
+      <text x="52" y="118" fill="#f8f5ec" font-size="20" font-weight="700">Tooling and workholding</text>
+      <rect x="56" y="156" width="634" height="64" rx="15" fill="#879180"/>
+      <text x="80" y="196" fill="#182019" font-size="20" font-weight="700">Safety and material handling</text>
+      <rect x="84" y="234" width="606" height="64" rx="15" fill="#aeb8a5"/>
+      <text x="108" y="274" fill="#292d28" font-size="20" font-weight="700">Utilities and facility work</text>
+      <rect x="112" y="312" width="578" height="64" rx="15" fill="#d4d9cb"/>
+      <text x="136" y="352" fill="#292d28" font-size="20" font-weight="700">Integration and validation</text>
+      <rect x="140" y="390" width="550" height="64" rx="15" fill="#e2d8c2"/>
+      <text x="164" y="430" fill="#292d28" font-size="20" font-weight="700">Training, spares, and launch loss</text>
+    </g>
+    <g transform="translate(830 190)">
+      <rect width="306" height="386" rx="24" fill="#fbf8f0" stroke="#a4ad9e" stroke-width="2"/>
+      <text x="28" y="42" fill="#566057" font-size="13" letter-spacing="2">BUYER CHECK</text>
+      <text x="28" y="86" fill="#292d28" font-family="Georgia, serif" font-size="25" font-weight="700">Can it make</text>
+      <text x="28" y="116" fill="#292d28" font-family="Georgia, serif" font-size="25" font-weight="700">an accepted part?</text>
+      <path d="M28 144h250" stroke="#c3c9bb" stroke-width="2"/>
+      <g fill="#434a43" font-size="16">
+        <text x="28" y="182">Installed in this building</text>
+        <text x="28" y="224">Staffed on this shift</text>
+        <text x="28" y="266">Supplied with real material</text>
+        <text x="28" y="308">Measured to the requirement</text>
+        <text x="28" y="350">Supported after a fault</text>
+      </g>
+    </g>
+  </g>
+  <text x="64" y="674" fill="#687066" font-family="Arial, sans-serif" font-size="13">BLACK SCARAB • INSIDE THE PHYSICAL AI FACTORY</text>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Manufacturing machine atlas</title>
+  <desc id="desc">Ten machine actions organized around how they change or handle material.</desc>
+  <rect width="720" height="1040" rx="30" fill="#f3efe4"/>
+  <text x="44" y="66" fill="#292d28" font-family="Georgia, serif" font-size="34" font-weight="700">Start with the action</text>
+  <text x="44" y="100" fill="#687066" font-family="Arial, sans-serif" font-size="16">Ten actions make the machine catalog readable.</text>
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(44 138)">
+      <rect width="632" height="214" rx="22" fill="#30352f"/>
+      <text x="28" y="40" fill="#c6d0bc" font-size="18" letter-spacing="2">SHAPE MATERIAL</text>
+      <g font-size="23" fill="#f8f5ec">
+        <circle cx="44" cy="84" r="13" fill="#9eaa95"/><text x="74" y="91">Remove</text>
+        <circle cx="250" cy="84" r="13" fill="#9eaa95"/><text x="280" y="91">Separate</text>
+        <circle cx="456" cy="84" r="13" fill="#9eaa95"/><text x="486" y="91">Form</text>
+      </g>
+      <text x="28" y="152" fill="#c6d0bc" font-size="18" letter-spacing="2">TYPICAL EQUIPMENT</text>
+      <text x="28" y="187" fill="#f8f5ec" font-size="21">Mills • saws • lasers • presses</text>
+    </g>
+    <g transform="translate(44 380)">
+      <rect width="632" height="214" rx="22" fill="#dfe3d5" stroke="#9ca796" stroke-width="2"/>
+      <text x="28" y="40" fill="#566057" font-size="18" letter-spacing="2">CREATE MATERIAL FORM</text>
+      <g font-size="23" fill="#292d28">
+        <circle cx="44" cy="84" r="13" fill="#8f9c86"/><text x="74" y="91">Add</text>
+        <circle cx="250" cy="84" r="13" fill="#8f9c86"/><text x="280" y="91">Mold</text>
+        <circle cx="456" cy="84" r="13" fill="#8f9c86"/><text x="486" y="91">Cast</text>
+      </g>
+      <text x="28" y="152" fill="#566057" font-size="18" letter-spacing="2">TYPICAL EQUIPMENT</text>
+      <text x="28" y="187" fill="#292d28" font-size="21">Printers • molding cells • casting cells</text>
+    </g>
+    <g transform="translate(44 622)">
+      <rect width="632" height="214" rx="22" fill="#e2d8c2" stroke="#b7aa8e" stroke-width="2"/>
+      <text x="28" y="40" fill="#625d52" font-size="18" letter-spacing="2">BUILD THE PRODUCT</text>
+      <g font-size="23" fill="#292d28">
+        <circle cx="44" cy="84" r="13" fill="#a99b7d"/><text x="74" y="91">Join</text>
+        <circle cx="250" cy="84" r="13" fill="#a99b7d"/><text x="280" y="91">Assemble</text>
+        <circle cx="484" cy="84" r="13" fill="#a99b7d"/><text x="514" y="91">Inspect</text>
+      </g>
+      <text x="28" y="152" fill="#625d52" font-size="18" letter-spacing="2">TYPICAL EQUIPMENT</text>
+      <text x="28" y="187" fill="#292d28" font-size="21">Welders • robot cells • CMMs</text>
+    </g>
+    <g transform="translate(44 864)">
+      <rect width="632" height="108" rx="22" fill="#fbf8f0" stroke="#a4ad9e" stroke-width="2"/>
+      <text x="316" y="40" text-anchor="middle" fill="#566057" font-size="18" letter-spacing="2">SUPPORT THE FLOW</text>
+      <text x="316" y="76" text-anchor="middle" fill="#292d28" font-family="Georgia, serif" font-size="25" font-weight="700">Move and package</text>
+    </g>
+  </g>
+  <text x="44" y="1010" fill="#687066" font-family="Arial, sans-serif" font-size="16">BLACK SCARAB • INSIDE THE PHYSICAL AI FACTORY</text>
+</svg>
