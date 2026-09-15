@@ -32,6 +32,127 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "reward-ai-om-1-human-demonstrations-robot-policy",
+    title: "Reward AI says OM-1 learns robot skills directly from human demonstrations",
+    summary: "The new policy is designed to move from a sensorized human hand to arms, mobile manipulators, and humanoids without teleoperation or on-robot training data. The launch shows an ambitious data strategy, but not yet a public benchmark or commercial product.",
+    category: "Robotics News",
+    publishedDate: "2026-09-14",
+    publishedAt: "2026-09-14T20:27:34-04:00",
+    publishedLabel: "September 14, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/reward-ai-om-1-human-demonstrations.png",
+    imageAlt: "Editorial illustration of a human hand demonstrating object manipulation for a robot arm, mobile manipulator, and humanoid",
+    imageCaption: "Original Black Scarab editorial illustration of robot learning from human manipulation. This conceptual scene does not depict Reward AI hardware, an OM-1 demonstration, or an actual customer deployment.",
+    readingTime: "8 min read",
+    keyPoints: [
+      "Reward AI says OM-1 is trained from natural human demonstrations captured with a seven degree of freedom wearable hand, without teleoperation or on-robot experience entering the policy training data.",
+      "The company presents one policy running across tabletop arms, industrial arms, mobile manipulators, and humanoids, with a separate high frequency control layer adapting its actions to each machine.",
+      "Reward AI has published videos and one tracking experiment, but no paper, model weights, dataset, task success rates, public baseline comparison, pricing, or customer deployment."
+    ],
+    sections: [
+      {
+        heading: "A new robot brain starts with a human hand",
+        paragraphs: [
+          "Reward AI emerged from stealth on September 14 with OM-1, an in house robot policy designed to learn manipulation directly from human demonstrations and run across several kinds of robot bodies. The company says neither teleoperation data nor experience collected by a robot enters OM-1 training.",
+          "The launch videos show generic robot arms, mobile manipulators, and humanoids completing contact rich tasks at normal playback speed. Reward AI describes the system with a compact promise: one model, one data interface, any body.",
+          "That promise addresses one of the most expensive problems in robot learning. A demonstration collected by driving one particular robot often reflects that machine's cameras, joints, gripper, speed, and control interface. Change the hardware and some of the data can lose value.",
+          "Reward AI is trying to move the collection point upstream. A person performs the work naturally while wearing the company's Omnibody Hand. The resulting record becomes the common source from which the policy generates actions for different machines."
+        ]
+      },
+      {
+        heading: "The glove records more than motion",
+        paragraphs: [
+          "Omnibody Hand is a compact wearable with seven degrees of freedom. It captures pinching, thumb and index finger flexion, and a coupled closing motion across the middle, ring, and little fingers. The design prioritizes useful grasp functions instead of reproducing every human finger joint.",
+          "The collection system combines hand pose with images, tactile signals, proximity sensing, and force. Reward AI says global shutter cameras preserve visual context during quick movement, while proximity and tactile sensing cover the approach to contact and the grasp itself.",
+          "Hand fit matters because a poorly aligned glove changes the movement being recorded. The company says a distal flexion mechanism accommodates differences in finger length without individual link adjustment. That is an engineering detail with a data consequence: uncomfortable demonstrations can teach compensation rather than the intended task.",
+          "The approach builds on DexCap, research led by Reward AI cofounder and chief technology officer Chen Wang while at Stanford. The published DexCap system combined visual tracking, electromagnetic sensing, and motion capture gloves, then trained autonomous dexterous manipulation policies from human data. Its researchers reported collection throughput about three times faster than teleoperation across their experiments."
+        ]
+      },
+      {
+        heading: "OM-1 separates policy from the body",
+        paragraphs: [
+          "OM-1 consumes a history of the wearable's different sensor streams and produces actions that describe direction, speed, force, and the timing of events such as a grasp. Reward AI says each sensing modality is processed at its native sampling rate so faster tactile and motion signals are not reduced to the pace of a camera.",
+          "The policy is only one layer. A high frequency controller underneath it translates the predicted actions into movement for the particular robot. Reward AI says this controller is trained with reinforcement learning in simulation to handle machine dynamics, external disturbances, and delays.",
+          "The two layers run on separate clocks. The controller keeps the robot moving while OM-1 prepares another prediction, then smooths the transition between successive actions. This architecture is intended to prevent inference delay from turning into the conspicuous pauses that make many manipulation demonstrations look careful but commercially slow.",
+          "In plain language, the model decides what the body should do, while the controller works out how that body can do it. The separation is what allows Reward AI to claim that the same policy can operate an industrial arm, a wheeled manipulator, or a humanoid."
+        ]
+      },
+      {
+        heading: "Human data is becoming a strategic asset",
+        paragraphs: [
+          "Robot developers have several ways to collect training data. They can teleoperate real machines, let robots gather experience, use simulation, record human video, or instrument people and objects. Each method trades realism, cost, speed, safety, and compatibility across hardware.",
+          "The Open X Embodiment collaboration demonstrated the value of combining data from many robot types, but that route still begins with robot episodes produced by different laboratories and platforms. The Universal Manipulation Interface showed another path, using handheld grippers and a shared action representation to transfer human demonstrations into policies for multiple robots.",
+          "Reward AI's commercial thesis pushes further toward a common human interface. If one demonstration format really can train future bodies without a fresh collection campaign, the useful life of each recorded task becomes longer. A worker could demonstrate packing, sorting, opening, or handling once, while the resulting data supports several machines.",
+          "That possibility also raises practical questions. Human hands have shapes, compliance, sensing, and motion that robot end effectors do not share. A two finger gripper cannot reproduce every dexterous strategy, while a humanoid introduces balance, reach, and whole body coordination. The controller and action representation have to preserve the intent of a demonstration without pretending that every body is equivalent."
+        ]
+      },
+      {
+        heading: "The launch evidence is promising but narrow",
+        paragraphs: [
+          "Reward AI reports that OM-1 can learn a new task, including work with challenging dynamics or long sequences, from less than 30 minutes of human data. It also says its published clips are fully autonomous and shown at normal speed. These are company claims supported by selected demonstrations, not independently reproduced results.",
+          "The most specific quantitative evidence concerns tracking, not complete task performance. In a mechanical stop experiment run at eight motion speeds, Reward AI says its electromagnetic approach reduced mean overshoot error by 60 percent at the highest speed compared with visual inertial tracking. The reported mean errors were 9.5 millimeters and 24.9 millimeters, averaged across ten runs per speed.",
+          "That result helps explain why the company chose its sensing architecture. It does not establish how often OM-1 completes a task, how it behaves after an error, or whether one policy outperforms a task specific alternative.",
+          "No technical paper for OM-1 has been released. Reward AI has not disclosed the model size, training data volume, compute requirement, inference hardware, complete robot list, success rates, evaluation protocol, safety system, or comparison with public baselines. The model, code, and dataset are not publicly available."
+        ]
+      },
+      {
+        heading: "This is not yet a product announcement",
+        paragraphs: [
+          "Reward AI calls OM-1 an in house policy. Its public material does not provide an API, software license, hardware package, price, named customer, paid deployment, or availability date. The company is recruiting and presenting a technical direction rather than offering buyers a finished catalog product.",
+          "The founding team gives that direction credibility. Chief executive Zipeng Fu completed a Stanford computer science doctorate and previously worked on HumanPlus, Mobile ALOHA, legged locomotion, and whole body control. Wang's research includes DexCap, long horizon imitation learning, tactile manipulation, and robot planning. Their academic records show relevant capability, but a strong research lineage is not the same as a supportable industrial system.",
+          "For a buyer, the economic test is larger than demonstration speed. A deployment needs predictable task completion, safe recovery, low intervention, compatible hardware, manageable integration, and service when something fails. Data collection savings matter only if the resulting robot produces acceptable work.",
+          "Reward AI has also disclosed no financing, revenue, manufacturing arrangement, or commercial terms. Those omissions are normal for a company leaving stealth, but they limit what can be concluded about its route to market."
+        ]
+      },
+      {
+        heading: "What to watch next",
+        paragraphs: [
+          "The first useful release would be a rigorous OM-1 evaluation. Success rates across repeated trials, unseen objects, changing layouts, several robot bodies, and recovery from disturbances would let readers distinguish broad transfer from a collection of strong demonstrations.",
+          "The second is the cost of adaptation. Reward AI says a new task can be learned from less than 30 minutes of data and that no new robot data is required. Buyers will want to know what engineering, simulation, calibration, safety validation, and compute sit around those 30 minutes before a different body can perform the work.",
+          "The third is commercial evidence. A named customer using OM-1 for sustained work, with disclosed operating hours, cycle time, intervention rate, and expansion to another machine or site, would make the any body proposition materially more convincing.",
+          "Black Scarab's assessment is that Reward AI is attacking the right bottleneck from an unusually coherent position. Natural human demonstrations could be more scalable than collecting every skill through every robot. OM-1 becomes a foundation model in the commercially meaningful sense only when its common interface survives unfamiliar bodies, repeated work, and the unedited parts of a shift."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Reward AI technical introduction to OM-1, published September 2026",
+        url: "https://www.rewardai.com/blog/OM-1/"
+      },
+      {
+        label: "Reward AI company overview and research direction, accessed September 14, 2026",
+        url: "https://www.rewardai.com/about/"
+      },
+      {
+        label: "DexCap research project on portable human motion capture for dexterous manipulation",
+        url: "https://dex-cap.github.io/"
+      },
+      {
+        label: "Universal Manipulation Interface paper on robot teaching without in the wild robots",
+        url: "https://arxiv.org/abs/2402.10329"
+      },
+      {
+        label: "Open X Embodiment project on cross robot data and policies",
+        url: "https://robotics-transformer-x.github.io/"
+      },
+      {
+        label: "Zipeng Fu research profile and Reward AI role, accessed September 14, 2026",
+        url: "https://zipengfu.github.io/"
+      },
+      {
+        label: "Chen Wang research profile and Reward AI role, accessed September 14, 2026",
+        url: "https://www.chenwangjeremy.net/"
+      },
+      {
+        label: "MarkTechPost report on the OM-1 launch, published September 14, 2026",
+        url: "https://www.marktechpost.com/2026/09/14/reward-ai-releases-om-1-a-robot-policy-trained-on-human-demonstrations-only-with-no-teleoperation-or-on-robot-data/"
+      }
+    ]
+  },
+  {
     slug: "hd-hyundai-aidin-robotics-tactile-sensors-shipyards",
     title: "HD Hyundai backs AIDIN Robotics to bring touch sensing into shipyard robots",
     summary: "A KRW 13 billion investment connects force and tactile sensing with robot hands, surface finishing, and future humanoid work in shipyards. The commercial test will come on steel, not in a laboratory.",
