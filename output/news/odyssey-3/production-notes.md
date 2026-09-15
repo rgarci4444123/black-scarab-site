@@ -52,4 +52,10 @@ The canonical URL, description, Open Graph image, Twitter image, publication tim
 
 The main sitemap, news sitemap, and RSS feed contain the new article locally. Published copy contains no em dash or en dash punctuation.
 
-Live deployment, production discovery endpoint verification, IndexNow, Google Rich Results Test, Google Search Console URL Inspection, and LinkedIn publication remain pending.
+Website commit `e43867c` deployed successfully. The live article, cover, and news index returned HTTP 200. The canonical URL, social image metadata, NewsArticle data, publication timestamp, and author credential were verified in production. The main sitemap, news sitemap, and RSS feed all contain the article.
+
+IndexNow accepted the article and news index with status 200. Google Rich Results Test detected two valid items, Article and Organization, after a successful live crawl with no reported errors. Result: https://search.google.com/test/rich-results/result?id=AKja-m6IlKNnsJRT0V-5SQ
+
+Google Search Console reports the new URL as unknown to Google. The one time indexing request is staged but has not been submitted.
+
+The recent Black Scarab company feed and repository notes contained no duplicate Odyssey 3 news post. The LinkedIn draft is staged in the composer for Black Scarab company ID 111898269. Cover upload, publication, and the first link comment remain pending confirmation.
