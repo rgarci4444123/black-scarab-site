@@ -56,6 +56,8 @@ Website commit `e43867c` deployed successfully. The live article, cover, and new
 
 IndexNow accepted the article and news index with status 200. Google Rich Results Test detected two valid items, Article and Organization, after a successful live crawl with no reported errors. Result: https://search.google.com/test/rich-results/result?id=AKja-m6IlKNnsJRT0V-5SQ
 
-Google Search Console reports the new URL as unknown to Google. The one time indexing request is staged but has not been submitted.
+Google Search Console initially reported the new URL as unknown to Google. A one time indexing request was submitted successfully. Search Console confirmed that the URL was added to a priority crawl queue.
 
-The recent Black Scarab company feed and repository notes contained no duplicate Odyssey 3 news post. The LinkedIn draft is staged in the composer for Black Scarab company ID 111898269. Cover upload, publication, and the first link comment remain pending confirmation.
+The recent Black Scarab company feed and repository notes contained no duplicate Odyssey 3 news post. The LinkedIn post was published and verified from Black Scarab company ID 111898269. The complete copy, editorial cover, descriptive alt text, and first company comment with the verified website URL are visible. Live post: https://www.linkedin.com/feed/update/urn:li:share:7505687947179020289?actorCompanyId=111898269
+
+The X editorial standard and publishing log were reviewed after the website and LinkedIn publications were verified. The live `@BlackScarabAI` profile showed no Odyssey 3 duplicate among the recent posts. Final X copy, alt text, and the exact cover path are saved in `output/x/odyssey-3/publication.md`. No X publication was performed because this report is outside the authorized manufacturing series.
