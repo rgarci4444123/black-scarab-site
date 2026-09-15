@@ -20,6 +20,8 @@ Prompt: Original Black Scarab News cover about robot intelligence learned direct
 
 Website first, then Black Scarab company LinkedIn page ID 111898269 after the live canonical URL is verified. X copy is prepared only after both publications are live and is delivered to Rodolfo for manual publication.
 
+For LinkedIn, the description begins with `NEWS | Reward AI and OM-1`, tells readers that the full report link is in the comments, and keeps the URL out of the main post. The verified article URL is added as the first comment from the Black Scarab company page.
+
 ## Validation
 
 Targeted lint for the news data, article route, news index, sitemap, news sitemap, and RSS route passed. The production build passed and statically generated the new article route.
@@ -30,4 +32,8 @@ The article and news index were reviewed at desktop and 390 pixel mobile widths.
 
 The main sitemap, news sitemap, and RSS feed all contain the new article locally. Published prose contains no em dash or en dash punctuation.
 
-Live deployment, discovery endpoint checks, IndexNow, and LinkedIn verification are pending.
+Website commit `d62c753` was deployed successfully. The canonical article, cover, news index, main sitemap, news sitemap, and RSS feed all returned HTTP 200, and every discovery endpoint contained the article. Live canonical, social image metadata, NewsArticle data, publication timestamp, and author credential were verified.
+
+IndexNow accepted the article and news index with status 200. Google Rich Results Test detected two valid items, Article and Organization, after a successful live crawl with no reported errors. Result: https://search.google.com/test/rich-results/result?id=V-in0ttD49wJMbXp7ihM1Q
+
+Google Search Console indexing request and LinkedIn publication remain pending. The LinkedIn draft is prepared under Black Scarab company ID 111898269 with the editorial cover, custom alternative text, and the link reserved for the first company comment.

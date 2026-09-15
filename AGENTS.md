@@ -46,7 +46,7 @@ For future LinkedIn posts, begin the description with exactly one of these forma
 * `DEEP DIVE | [Company or subject]`
 * `NEWS | [Company or subject]`
 
-Follow the label with an engaging hook, a useful summary, the verified live website article link, and relevant hashtags. Verify the company identity before the final post action and verify the live LinkedIn post afterward.
+Follow the label with an engaging hook, a useful summary, a clear statement that the full report link is in the comments, and relevant hashtags. After the post is live, add the verified website article link as the first comment from the Black Scarab company page. Verify the company identity before the final post action, verify the live LinkedIn post afterward, and confirm that the link comment is visible.
 
 ## Black Scarab X publishing
 
