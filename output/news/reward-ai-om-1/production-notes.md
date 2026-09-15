@@ -36,4 +36,10 @@ Website commit `d62c753` was deployed successfully. The canonical article, cover
 
 IndexNow accepted the article and news index with status 200. Google Rich Results Test detected two valid items, Article and Organization, after a successful live crawl with no reported errors. Result: https://search.google.com/test/rich-results/result?id=V-in0ttD49wJMbXp7ihM1Q
 
-Google Search Console indexing request and LinkedIn publication remain pending. The LinkedIn draft is prepared under Black Scarab company ID 111898269 with the editorial cover, custom alternative text, and the link reserved for the first company comment.
+Google Search Console accepted the article into its priority crawl queue. Indexing is not guaranteed.
+
+The LinkedIn post was published and verified from Black Scarab company ID 111898269 with the editorial cover and custom alternative text. Live post: https://www.linkedin.com/feed/update/urn:li:share:7505424308060676096/?actorCompanyId=111898269
+
+The article URL is visible as the first comment from Black Scarab. The main post begins with `NEWS | Reward AI and OM-1` and states that the full report link is in the comments.
+
+The X edition was prepared only after the website and LinkedIn publications were verified. Copy, alternative text, and the exact image path are saved in `output/x/reward-ai-om-1/publication.md`. No X publication was performed.
