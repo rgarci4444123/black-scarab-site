@@ -81,9 +81,20 @@ export default function InsightsPage() {
                   />
                 ) : null}
                 <div className="p-6">
-                <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
-                  {insight.published}
-                </p>
+                {insight.series ? (
+                  <div>
+                    <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
+                      {insight.series.name} · {insight.series.label}
+                    </p>
+                    <p className="mt-2 text-xs text-[#8a8f98]">
+                      {insight.published.replace("Deep Dive · ", "")}
+                    </p>
+                  </div>
+                ) : (
+                  <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7c8b6b]">
+                    {insight.published}
+                  </p>
+                )}
                 <h2 className="mt-4 text-2xl font-semibold tracking-tight">
                   {insight.title}
                 </h2>

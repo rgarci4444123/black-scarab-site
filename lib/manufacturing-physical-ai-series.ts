@@ -12,6 +12,15 @@ export const manufacturingPhysicalAiSeriesIntroduction = (): CaseStudyArticle =>
   publishedAt: "2026-09-14T01:14:14-04:00",
   typeLabel: "Deep Dive",
   formatLabel: "Learning series introduction",
+  series: {
+    name: "Inside the Physical AI Factory",
+    label: "Series introduction",
+    href: "/insights/how-modern-manufacturing-works-factories-physical-ai-guide",
+    next: {
+      title: "Learn to See a Factory",
+      href: "/insights/what-is-a-manufacturing-plant-factory-types-production-flow",
+    },
+  },
   industry: "Manufacturing",
   image: "/article-images/how-modern-manufacturing-works-physical-ai-guide.png",
   imageAlt:

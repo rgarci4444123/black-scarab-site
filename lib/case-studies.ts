@@ -270,6 +270,19 @@ export type CaseStudyArticle = {
   modifiedAt?: string;
   typeLabel?: string;
   formatLabel?: string;
+  series?: {
+    name: string;
+    label: string;
+    href: string;
+    previous?: {
+      title: string;
+      href: string;
+    };
+    next?: {
+      title: string;
+      href: string;
+    };
+  };
   industry: string;
   image: string;
   imageAlt: string;

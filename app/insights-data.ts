@@ -8,6 +8,10 @@ export type Insight = {
   image?: string;
   kind: "internal" | "external";
   ctaLabel: string;
+  series?: {
+    name: string;
+    label: string;
+  };
 };
 
 const externalInsights: Insight[] = [
@@ -87,6 +91,12 @@ const internalInsights: Insight[] = [...caseStudies]
   image: article.image,
   kind: "internal",
   ctaLabel: "Read article",
+  series: article.series
+    ? {
+        name: article.series.name,
+        label: article.series.label,
+      }
+    : undefined,
 }));
 
 export const insights: Insight[] = [...internalInsights, ...externalInsights];

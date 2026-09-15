@@ -285,7 +285,9 @@ export default async function CaseStudyPage({ params }: Props) {
                   <span className="text-[#111827]">{article.title}</span>
                 </nav>
                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-                  {typeLabel} · {article.industry}
+                  {article.series
+                    ? `${article.series.name} · ${article.series.label}`
+                    : `${typeLabel} · ${article.industry}`}
                 </p>
                 <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
                   {article.title}
@@ -603,6 +605,56 @@ export default async function CaseStudyPage({ params }: Props) {
                     ) : null}
                   </Fragment>
                 ))}
+                {article.series ? (
+                  <section className="mt-12 rounded-[24px] border border-[#dfe3d9] bg-[#f4f5ef] p-6 sm:p-8">
+                    <div className="flex flex-wrap items-end justify-between gap-3">
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#647456]">
+                          Continue the series
+                        </p>
+                        <Link
+                          href={article.series.href}
+                          className="mt-2 inline-block font-serif text-2xl font-semibold text-[#111827] transition hover:text-[#526147]"
+                        >
+                          {article.series.name}
+                        </Link>
+                      </div>
+                      <p className="text-sm font-medium text-[#6b7280]">
+                        {article.series.label}
+                      </p>
+                    </div>
+                    <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                      {article.series.previous ? (
+                        <Link
+                          href={article.series.previous.href}
+                          className="rounded-[18px] border border-[#d7ddd1] bg-white px-5 py-4 transition hover:border-[#aab4a0]"
+                        >
+                          <span className="block text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">
+                            Previous
+                          </span>
+                          <span className="mt-2 block font-medium text-[#111827]">
+                            {article.series.previous.title}
+                          </span>
+                        </Link>
+                      ) : (
+                        <div />
+                      )}
+                      {article.series.next ? (
+                        <Link
+                          href={article.series.next.href}
+                          className="rounded-[18px] border border-[#d7ddd1] bg-white px-5 py-4 text-right transition hover:border-[#aab4a0]"
+                        >
+                          <span className="block text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">
+                            Next
+                          </span>
+                          <span className="mt-2 block font-medium text-[#111827]">
+                            {article.series.next.title}
+                          </span>
+                        </Link>
+                      ) : null}
+                    </div>
+                  </section>
+                ) : null}
                 {article.author ? (
                   <section className="mt-12 grid gap-6 rounded-[24px] border border-[#e3ded5] bg-[#faf8f3] p-6 sm:grid-cols-[112px_minmax(0,1fr)] sm:p-8">
                     <Image src="/rodolfo-garcia-about-portrait.jpeg" alt="Rodolfo Garcia Calderoni" width={112} height={112} sizes="112px" className="h-28 w-28 rounded-full object-cover" />
