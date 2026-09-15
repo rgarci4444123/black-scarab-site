@@ -34,4 +34,38 @@ The canonical URL, description, Open Graph image, Twitter image, publication tim
 
 The main sitemap, news sitemap, and RSS feed contain the new article locally. Published copy contains no em dash or en dash punctuation.
 
-Deployment, live endpoint verification, IndexNow, Rich Results, Google Search Console, LinkedIn, and X preparation remain pending.
+Website commit `85735e6` was deployed successfully. The live article and cover returned HTTP 200. The canonical URL, social image metadata, NewsArticle data, publication timestamp, and author credential were verified in production. The main sitemap, news sitemap, and RSS feed all contain the article.
+
+IndexNow accepted the article and news index with status 200. Google Rich Results Test detected two valid items, Article and Organization, after a successful live crawl with no reported errors. Result: https://search.google.com/test/rich-results/result?id=6sjKd_05HrsI1UTb_6Di3A
+
+The recent Black Scarab company feed and repository notes contained no duplicate Agility Digit 5 news post before publication.
+
+The Black Scarab LinkedIn company post was published and verified from company ID 111898269. The final post begins with `NEWS | Agility Robotics and Digit 5`, includes the original editorial cover and descriptive alternative text, and states that the full report link is in the comments. The article URL was published and verified as the first comment by Black Scarab.
+
+LinkedIn post: https://www.linkedin.com/feed/update/urn:li:share:7505612017400016896/?actorCompanyId=111898269
+
+Google Search Console accepted the article URL into its priority crawl queue. This records a successful indexing request, not a guarantee of inclusion in Google Search.
+
+The X edition was prepared only after the website and LinkedIn publications were live and verified. The repository publishing log and a focused live search showed no existing Black Scarab X post for Agility Digit 5. X's public profile page could not be fetched independently, so Rodolfo should perform one final profile check before posting. No X publication was performed.
+
+X handoff: `output/x/agility-digit-5/publication.md`
+
+## LinkedIn draft
+
+NEWS | Agility Robotics and Digit 5
+
+Can a nine minute recharge turn one humanoid into a three shift machine?
+
+Agility unveiled Digit 5, an industrial humanoid designed to repeatedly lift 50 pounds, run for 90 minutes, recharge in nine, and deliver more than 20 productive hours across a 24 hour day.
+
+The bigger change is safety. Agility says the new architecture can detect people and make Digit avoid, stop, or sit, reducing the need for traditional protective barriers.
+
+The reality check matters. Early access is not expected until the first half of 2027. The safety claims still need independent validation, RoboFab's 10,000 robot figure is factory capacity rather than current output, and the reported $300 million order book is conditional multi year value rather than recognized revenue.
+
+Our report explains the hardware, safety system, deployment evidence, and commercial milestones that come next.
+
+Full report link is in the comments.
+
+#HumanoidRobots #Robotics #IndustrialAutomation #PhysicalAI #Manufacturing
+
+Image alternative text: Editorial illustration of a generic industrial humanoid carrying a tote in a distribution facility, with a worker at a safe distance and a charging dock in the background.
