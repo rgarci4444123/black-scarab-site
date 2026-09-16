@@ -19,6 +19,10 @@ export const manufacturingMachinesGuide = (): CaseStudyArticle => ({
       title: "Learn to See a Factory",
       href: "/insights/what-is-a-manufacturing-plant-factory-types-production-flow",
     },
+    next: {
+      title: "How a Product Is Manufactured",
+      href: "/insights/how-a-product-is-manufactured-bill-of-materials-production-line",
+    },
   },
   industry: "Manufacturing",
   image: "/article-images/manufacturing-machines-guide-cover.png",

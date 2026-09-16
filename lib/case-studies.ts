@@ -7,6 +7,7 @@ import { physicalAiVentureFundsDeepDive } from "@/lib/physical-ai-venture-funds"
 import { manufacturingPhysicalAiSeriesIntroduction } from "@/lib/manufacturing-physical-ai-series";
 import { manufacturingPlantDeepDive } from "@/lib/manufacturing-plant-deep-dive";
 import { manufacturingMachinesGuide } from "@/lib/manufacturing-machines-guide";
+import { productManufacturingGuide } from "@/lib/product-manufacturing-guide";
 import { robotActuatorsDeepDive } from "@/lib/robot-actuators";
 
 export type CaseStudySection = {
@@ -16317,6 +16318,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 
 export const caseStudies: CaseStudyArticle[] = [
   robotActuatorsDeepDive(),
+  productManufacturingGuide(),
   manufacturingMachinesGuide(),
   manufacturingPlantDeepDive(),
   manufacturingPhysicalAiSeriesIntroduction(),

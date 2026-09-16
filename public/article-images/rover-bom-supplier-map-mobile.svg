@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1400" role="img" aria-labelledby="title desc">
+  <title id="title">The bill connects configuration with supplier evidence</title>
+  <desc id="desc">Mobile diagram of released product data, a manufacturing bill, and supplier evidence.</desc>
+  <rect width="900" height="1400" fill="#f4f0e8"/>
+  <rect x="35" y="35" width="830" height="1330" rx="30" fill="#fffdfa" stroke="#d9d4c9"/>
+  <text x="80" y="105" fill="#18201d" font-family="Georgia, serif" font-size="40" font-weight="700">Configuration to</text><text x="80" y="152" fill="#18201d" font-family="Georgia, serif" font-size="40" font-weight="700">supplier evidence</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="80" y="210" width="740" height="265" rx="24" fill="#edf2ec"/>
+    <text x="115" y="260" fill="#18201d" font-size="25" font-weight="700">1  Released product data</text>
+    <text x="115" y="305" fill="#34413b" font-size="20">Part number and revision</text><text x="470" y="305" fill="#34413b" font-size="20">Description and quantity</text>
+    <text x="115" y="350" fill="#34413b" font-size="20">Approved manufacturer</text><text x="470" y="350" fill="#34413b" font-size="20">Lifecycle and lead time</text>
+    <text x="115" y="395" fill="#34413b" font-size="20">Inspection requirement</text><text x="470" y="395" fill="#34413b" font-size="20">Change effectivity</text>
+    <path d="M450 475 V535" stroke="#8c9c8a" stroke-width="5"/><polygon points="450,535 436,512 464,512" fill="#8c9c8a"/>
+    <rect x="80" y="555" width="740" height="340" rx="24" fill="#1a211e"/>
+    <text x="115" y="610" fill="#f8f6f0" font-size="25" font-weight="700">2  Manufacturing bill of materials</text>
+    <g fill="#f7f4ed" font-size="20"><text x="115" y="665">Structure and fabricated parts</text><text x="115" y="710">Motion and power components</text><text x="115" y="755">Boards, compute, and sensors</text><text x="115" y="800">Harnesses, fasteners, and labels</text><text x="115" y="845">Packaging and shipment items</text></g>
+    <path d="M450 895 V955" stroke="#c58f5f" stroke-width="5"/><polygon points="450,955 436,932 464,932" fill="#c58f5f"/>
+    <rect x="80" y="975" width="740" height="265" rx="24" fill="#f2e8dc"/>
+    <text x="115" y="1025" fill="#18201d" font-size="25" font-weight="700">3  Supplier evidence</text>
+    <text x="115" y="1070" fill="#34413b" font-size="20">Delivered identity and lot</text><text x="470" y="1070" fill="#34413b" font-size="20">Authorized source</text>
+    <text x="115" y="1115" fill="#34413b" font-size="20">Certificate or test result</text><text x="470" y="1115" fill="#34413b" font-size="20">Dimensional check</text>
+    <text x="115" y="1160" fill="#34413b" font-size="20">Functional screen</text><text x="470" y="1160" fill="#34413b" font-size="20">Accept or quarantine</text>
+    <rect x="80" y="1280" width="740" height="50" rx="12" fill="#18201d"/>
+    <text x="450" y="1311" text-anchor="middle" fill="#f6f4ef" font-size="16">REPRESENTATIVE SOURCES  |  NO CLAIMED RELATIONSHIPS</text>
+  </g>
+</svg>

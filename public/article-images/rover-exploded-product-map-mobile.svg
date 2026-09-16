@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1400" role="img" aria-labelledby="title desc">
+  <title id="title">The rover begins as eight controlled subassemblies</title>
+  <desc id="desc">Mobile product map of eight subassemblies in a hypothetical inspection rover.</desc>
+  <rect width="900" height="1400" fill="#f4f0e8"/>
+  <rect x="35" y="35" width="830" height="1330" rx="30" fill="#fffdfa" stroke="#d9d4c9" stroke-width="2"/>
+  <text x="80" y="105" fill="#18201d" font-family="Georgia, serif" font-size="42" font-weight="700">Eight controlled</text>
+  <text x="80" y="155" fill="#18201d" font-family="Georgia, serif" font-size="42" font-weight="700">subassemblies</text>
+  <text x="80" y="198" fill="#667069" font-family="Arial, sans-serif" font-size="20">Product structure before production routing</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="230" y="245" width="440" height="260" rx="32" fill="#1a211e"/>
+    <rect x="295" y="290" width="310" height="130" rx="20" fill="#758675"/>
+    <rect x="350" y="320" width="200" height="75" rx="14" fill="#dfe7dc"/>
+    <circle cx="310" cy="500" r="55" fill="#262d2a"/><circle cx="590" cy="500" r="55" fill="#262d2a"/>
+    <rect x="380" y="215" width="140" height="55" rx="18" fill="#d6a56f"/>
+    <text x="450" y="585" text-anchor="middle" fill="#18201d" font-size="23" font-weight="700">Released rover configuration</text>
+    <g font-size="20">
+      <g><rect x="80" y="635" width="350" height="120" rx="18" fill="#edf2ec"/><text x="105" y="680" fill="#18201d" font-weight="700">1  Structure and enclosure</text><text x="105" y="718" fill="#667069">Frame, panels, seals</text></g>
+      <g><rect x="470" y="635" width="350" height="120" rx="18" fill="#f2e8dc"/><text x="495" y="680" fill="#18201d" font-weight="700">2  Mobility</text><text x="495" y="718" fill="#667069">Motors, wheels, brakes</text></g>
+      <g><rect x="80" y="785" width="350" height="120" rx="18" fill="#edf2ec"/><text x="105" y="830" fill="#18201d" font-weight="700">3  Electrical power</text><text x="105" y="868" fill="#667069">Battery and protection</text></g>
+      <g><rect x="470" y="785" width="350" height="120" rx="18" fill="#f2e8dc"/><text x="495" y="830" fill="#18201d" font-weight="700">4  Control electronics</text><text x="495" y="868" fill="#667069">Compute and safety</text></g>
+      <g><rect x="80" y="935" width="350" height="120" rx="18" fill="#edf2ec"/><text x="105" y="980" fill="#18201d" font-weight="700">5  Perception</text><text x="105" y="1018" fill="#667069">Cameras and sensing</text></g>
+      <g><rect x="470" y="935" width="350" height="120" rx="18" fill="#f2e8dc"/><text x="495" y="980" fill="#18201d" font-weight="700">6  Communications</text><text x="495" y="1018" fill="#667069">Wireless and service</text></g>
+      <g><rect x="80" y="1085" width="350" height="120" rx="18" fill="#edf2ec"/><text x="105" y="1130" fill="#18201d" font-weight="700">7  Cable harnesses</text><text x="105" y="1168" fill="#667069">Power and signals</text></g>
+      <g><rect x="470" y="1085" width="350" height="120" rx="18" fill="#f2e8dc"/><text x="495" y="1130" fill="#18201d" font-weight="700">8  Shipment items</text><text x="495" y="1168" fill="#667069">Package and documents</text></g>
+    </g>
+    <rect x="80" y="1250" width="740" height="70" rx="14" fill="#18201d"/>
+    <text x="450" y="1280" text-anchor="middle" fill="#f6f4ef" font-size="17" font-weight="700">HYPOTHETICAL TEACHING PRODUCT</text>
+    <text x="450" y="1306" text-anchor="middle" fill="#dce5dc" font-size="16">Hardware plus software and calibration</text>
+  </g>
+</svg>

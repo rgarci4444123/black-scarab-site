@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">The rover begins as eight controlled subassemblies</title>
+  <desc id="desc">Exploded product map connecting structure, mobility, power, control, perception, communications, harnesses, and shipment items to a hypothetical inspection rover.</desc>
+  <rect width="1600" height="1000" fill="#f4f0e8"/>
+  <rect x="50" y="50" width="1500" height="900" rx="34" fill="#fffdfa" stroke="#d9d4c9" stroke-width="2"/>
+  <text x="100" y="125" fill="#18201d" font-family="Georgia, serif" font-size="48" font-weight="700">The rover begins as eight controlled subassemblies</text>
+  <text x="100" y="170" fill="#667069" font-family="Arial, sans-serif" font-size="23">A product architecture becomes the foundation for the bill, routing, tests, and change history</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="590" y="300" width="420" height="360" rx="36" fill="#1a211e"/>
+    <rect x="650" y="358" width="300" height="180" rx="24" fill="#758675"/>
+    <rect x="700" y="397" width="200" height="102" rx="18" fill="#dfe7dc"/>
+    <circle cx="670" cy="650" r="64" fill="#262d2a"/><circle cx="930" cy="650" r="64" fill="#262d2a"/>
+    <circle cx="670" cy="650" r="27" fill="#b5c1b1"/><circle cx="930" cy="650" r="27" fill="#b5c1b1"/>
+    <rect x="730" y="262" width="140" height="65" rx="20" fill="#d6a56f"/>
+    <circle cx="770" cy="294" r="13" fill="#111615"/><circle cx="830" cy="294" r="13" fill="#111615"/>
+    <text x="800" y="735" text-anchor="middle" fill="#18201d" font-size="25" font-weight="700">Released rover configuration</text>
+    <text x="800" y="770" text-anchor="middle" fill="#667069" font-size="19">Physical product plus software and calibration</text>
+
+    <g fill="none" stroke="#8c9c8a" stroke-width="3">
+      <path d="M420 280 C500 280 520 360 590 390"/>
+      <path d="M420 440 C510 440 520 455 590 470"/>
+      <path d="M420 600 C500 600 520 560 590 545"/>
+      <path d="M420 760 C510 760 535 645 610 610"/>
+      <path d="M1180 280 C1100 280 1080 360 1010 390"/>
+      <path d="M1180 440 C1090 440 1080 455 1010 470"/>
+      <path d="M1180 600 C1100 600 1080 560 1010 545"/>
+      <path d="M1180 760 C1090 760 1065 645 990 610"/>
+    </g>
+
+    <g font-size="21">
+      <g><rect x="100" y="225" width="320" height="110" rx="20" fill="#edf2ec" stroke="#cdd7cb"/><text x="130" y="268" fill="#18201d" font-weight="700">1  Structure and enclosure</text><text x="130" y="303" fill="#667069">Frame, panels, seals, fasteners</text></g>
+      <g><rect x="100" y="385" width="320" height="110" rx="20" fill="#edf2ec" stroke="#cdd7cb"/><text x="130" y="428" fill="#18201d" font-weight="700">2  Mobility</text><text x="130" y="463" fill="#667069">Motors, gearboxes, wheels, brakes</text></g>
+      <g><rect x="100" y="545" width="320" height="110" rx="20" fill="#edf2ec" stroke="#cdd7cb"/><text x="130" y="588" fill="#18201d" font-weight="700">3  Electrical power</text><text x="130" y="623" fill="#667069">Battery, protection, distribution</text></g>
+      <g><rect x="100" y="705" width="320" height="110" rx="20" fill="#edf2ec" stroke="#cdd7cb"/><text x="130" y="748" fill="#18201d" font-weight="700">4  Control electronics</text><text x="130" y="783" fill="#667069">Compute, control, storage, safety</text></g>
+
+      <g><rect x="1180" y="225" width="320" height="110" rx="20" fill="#f2e8dc" stroke="#dec7ad"/><text x="1210" y="268" fill="#18201d" font-weight="700">5  Perception</text><text x="1210" y="303" fill="#667069">Cameras, depth, inertial sensing</text></g>
+      <g><rect x="1180" y="385" width="320" height="110" rx="20" fill="#f2e8dc" stroke="#dec7ad"/><text x="1210" y="428" fill="#18201d" font-weight="700">6  Communications</text><text x="1210" y="463" fill="#667069">Wireless, antennas, service network</text></g>
+      <g><rect x="1180" y="545" width="320" height="110" rx="20" fill="#f2e8dc" stroke="#dec7ad"/><text x="1210" y="588" fill="#18201d" font-weight="700">7  Cable harnesses</text><text x="1210" y="623" fill="#667069">Power, signals, labels, protection</text></g>
+      <g><rect x="1180" y="705" width="320" height="110" rx="20" fill="#f2e8dc" stroke="#dec7ad"/><text x="1210" y="748" fill="#18201d" font-weight="700">8  Shipment items</text><text x="1210" y="783" fill="#667069">Package, charger, documents, labels</text></g>
+    </g>
+    <rect x="100" y="865" width="1400" height="45" rx="12" fill="#18201d"/>
+    <text x="125" y="895" fill="#f6f4ef" font-size="18">HYPOTHETICAL TEACHING PRODUCT  |  Configuration includes hardware, software, model, calibration, and shipment definition</text>
+  </g>
+</svg>
