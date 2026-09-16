@@ -30,6 +30,28 @@ The article was visually reviewed at desktop width and at a 390 pixel mobile vie
 
 The main sitemap, news sitemap, and RSS feed contain the new article locally. Published copy contains no em dash or en dash punctuation.
 
+## Live publication
+
+The website article was deployed and verified at https://www.blackscarab.ai/news/synaptics-tactile-sensing-edge-ai. The live article, cover image, canonical metadata, Open Graph metadata, Twitter metadata, NewsArticle structured data, main sitemap, news sitemap, and RSS entry all returned successfully.
+
+IndexNow accepted the article URL and updated sitemap submission with HTTP status 200. This confirms receipt, not search engine indexing.
+
+Google's Rich Results Test crawled the live URL successfully on September 16, 2026 at 9:48 AM ET. It detected two valid items: one Article item and one Organization item. Both are eligible for Google Search rich results.
+
+Google Search Console opened at the account sign in screen in the available browser session. No indexing request was submitted because an authenticated Search Console session was not available. The IndexNow submission and public Rich Results Test were completed without attempting to enter account credentials.
+
+## LinkedIn publication
+
+The LinkedIn edition was published and verified from the Black Scarab company page, company ID 111898269:
+
+https://www.linkedin.com/feed/update/urn:li:share:7505985739935948800?actorCompanyId=111898269
+
+The live post shows the approved `NEWS | Synaptics robot touch and edge AI` opening, complete copy, original editorial cover, and descriptive alternative text. The first comment is visibly attributed to Black Scarab and contains the verified website article link with its generated preview.
+
+## X handoff
+
+The live `@BlackScarabAI` profile was checked after the website and LinkedIn publications. No Synaptics duplicate was visible among the recent posts. Concise X copy, alternative text, exact image path, and verified publication links are saved in `output/x/synaptics-tactile-sensing-edge-ai/publication.md` for Rodolfo to publish and verify manually.
+
 ## LinkedIn draft
 
 NEWS | Synaptics robot touch and edge AI
