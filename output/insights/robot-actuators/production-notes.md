@@ -2,7 +2,7 @@
 
 ## Status
 
-Website article created September 15, 2026 and deployed from commit `95fccfc`. The exact canonical URL returned HTTP 200 on September 15, 2026 at 9:05 p.m. EDT. The deployed title, canonical URL, cover path, author, and Article structured data were verified in the production HTML. No LinkedIn or X edition has been created or published.
+Website article created September 15, 2026 and deployed from commit `95fccfc`. The exact canonical URL returned HTTP 200 on September 15, 2026 at 9:05 p.m. EDT. The deployed title, canonical URL, cover path, author, and Article structured data were verified in the production HTML. The LinkedIn edition was published and verified from the Black Scarab company page on September 16, 2026. No X edition has been published.
 
 The live URL appears in the production sitemap. IndexNow accepted the Insights index and canonical article URL with HTTP status 200.
 
@@ -55,4 +55,10 @@ Final generation prompt:
 
 ## Channel status
 
-The website article is live and verified. LinkedIn has not been drafted or published. Any future LinkedIn work must use Black Scarab company ID `111898269`, and the verified live article link must appear as the first company comment. This topic is outside the authorized X manufacturing series, so provide final X copy and image paths to Rodolfo rather than publishing it.
+The website article is live and verified.
+
+LinkedIn company post: `https://www.linkedin.com/feed/update/urn:li:share:7505980443998052352/`
+
+The LinkedIn post was published from Black Scarab company ID `111898269`. The cover image and alternative text were verified on the live post. The verified website article link is visible as the first comment from the Black Scarab company page.
+
+This topic is outside the authorized X manufacturing series, so provide final X copy and image paths to Rodolfo rather than publishing it.
