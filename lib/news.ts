@@ -32,6 +32,130 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "synaptics-tactile-sensing-edge-ai",
+    title: "Synaptics brings robot touch and edge AI into NVIDIA Isaac Sim",
+    summary: "A new simulated tactile module gives developers a way to model fingertip pressure while Synaptics positions local processing beside the sensor. The integration is real, but production performance and customer evidence remain undisclosed.",
+    category: "Edge AI News",
+    publishedDate: "2026-09-16",
+    publishedAt: "2026-09-16T09:37:52-04:00",
+    publishedLabel: "September 16, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/synaptics-tactile-sensing-edge-ai.png",
+    imageAlt: "Editorial illustration of a robotic gripper using tactile fingertips to hold a ceramic object beside an edge computing module",
+    imageCaption: "Original Black Scarab editorial illustration of tactile sensing and local processing in a robotic gripper. This conceptual scene does not depict Synaptics hardware, NVIDIA hardware, an official demonstration, or a customer deployment.",
+    readingTime: "8 min read",
+    keyPoints: [
+      "NVIDIA Isaac Sim now includes a model of a Synaptics tactile module with 52 sensing elements that report local pressure and a combined force vector.",
+      "Synaptics is pairing tactile sensing with its Astra processors so touch, vision, motor, and other sensor streams can be collected and interpreted near the robot rather than relying only on central compute.",
+      "The companies have not published robot task success rates, measured end to end latency, production customers, pricing, or evidence that the simulated sensor improves transfer to a physical hand."
+    ],
+    sections: [
+      {
+        heading: "Robot touch enters the simulator",
+        paragraphs: [
+          "Synaptics announced on September 15 that a model of its first capacitive tactile sensing module is now available in NVIDIA Isaac Sim. The simulated sensor gives robotics developers a way to place pressure sensitive surfaces on a digital gripper, test contact with virtual objects, and begin building the software that interprets touch before the complete physical system is ready.",
+          "The module is powered by the Synaptics SN6012T touch controller and is intended for robotic hands, grippers, and other machines that need to detect contact and pressure distribution. Synaptics is also positioning its Astra processors as a nearby computing layer that can combine touch with vision, motor control, and other sensor signals.",
+          "This is an ecosystem integration, not a new robot or a completed manipulation system. Isaac Sim support makes the sensor easier to represent inside a widely used development environment. It does not establish that a robot can grasp more reliably, handle unfamiliar objects, or transfer a policy from simulation without additional engineering and physical testing."
+        ]
+      },
+      {
+        heading: "Fifty two small measurements build a pressure map",
+        paragraphs: [
+          "NVIDIA documentation describes the simulated Synaptics module as a compact array with 52 taxels. A taxel is the touch equivalent of a pixel. Each one measures normal force over a small part of the surface, allowing software to see where an object presses against the sensor instead of receiving only one total force value.",
+          "The virtual sensing area measures 29.5 by 12.9 millimeters, while the complete modeled module measures 31 by 16 by 4 millimeters. The 52 taxels sit in five rows with chamfered corners. Isaac Sim can expose the normal force at each location as well as the net force vector across the complete surface.",
+          "That spatial detail can help a controller distinguish a centered grip from an object touching only one edge. It can also provide the raw information needed to detect a shifting contact pattern that may indicate slip. The useful behavior still depends on software, calibration, material properties, control frequency, and the mechanics of the hand around the sensor.",
+          "Synaptics separately describes the broader SN6012T and Astra platform as supporting 60 tactile channels. That number refers to the platform capability. The specific Isaac Sim asset documented by NVIDIA contains 52 taxels, so the two figures should not be treated as descriptions of the same layer."
+        ]
+      },
+      {
+        heading: "Why the processing moves closer to the fingers",
+        paragraphs: [
+          "A robot hand can generate a steady stream of touch measurements alongside camera images, joint positions, motor current, and force or torque data. Sending every raw signal to one central computer can increase communication traffic and make timing harder to coordinate, especially as the number of fingers and sensors grows.",
+          "Synaptics says its Astra processors can collect and synchronize several sensor streams, run inference locally, and pass more useful information to the rest of the robot. In that architecture, a nearby processor might identify initial contact, estimate pressure distribution, or flag a changing grip while a larger computer handles planning and perception for the complete machine.",
+          "The company calls this a hierarchical system. The name is less important than the division of work. Fast local loops can respond to contact while higher level software decides which object to pick up and where it should go. A similar split already appears in industrial control, where drives and safety controllers handle time sensitive behavior while supervisory software coordinates the broader process.",
+          "NVIDIA Holoscan provides infrastructure for processing streaming sensor data at the edge or in the cloud. Synaptics says Astra can support this kind of multimodal pipeline. The announcement does not say that Astra replaces an NVIDIA computer or that every Synaptics sensor is directly connected to Holoscan. It describes complementary layers that developers can assemble into a larger system."
+        ]
+      },
+      {
+        heading: "Simulation can move work earlier",
+        paragraphs: [
+          "A digital sensor model allows software work to start before a final hand, gripper, or sensor assembly arrives. Developers can place the module in a virtual design, apply contact at different points, inspect its output, and exercise the logic that turns a pressure map into a control response.",
+          "This can also improve repeatability. A team can run the same virtual press or grasp many times, change object position and material assumptions, and record how the controller reacts. Failures discovered in simulation are usually cheaper than failures found after custom hardware has been assembled.",
+          "The value depends on fidelity. Real tactile sensors encounter drift, temperature, wear, electrical noise, manufacturing variation, adhesives, protective skins, curved mounting surfaces, and impacts outside their intended range. The object itself may flex, slide, deform, or carry dust and oil. A virtual pressure map can be precise without perfectly reproducing any of those conditions.",
+          "NVIDIA's usage notes already reveal one boundary. The simulated Synaptics asset is mounted as a static fixture, and presses must stay within the taxel array. A wider virtual object can rest on the module base instead of loading the sensing elements. Those details matter because a clean digital setup can accidentally test the fixture rather than the sensing surface."
+        ]
+      },
+      {
+        heading: "Synaptics wants more content inside the robot",
+        paragraphs: [
+          "Synaptics is best known for human interface technology, but its robotics pitch reaches across sensing, embedded processing, wireless connectivity, and high bandwidth interfaces. Tactile controllers provide one entry point. Astra processors provide another, and the company's connectivity products can move information between components and networks.",
+          "In prepared remarks earlier this year, Synaptics said it was engaging with a growing set of robotics customers and sampling silicon for pilot humanoid builds. The company also said robotics could create a larger content opportunity per system than its established markets because one machine may need many sensing, processing, interface, and connectivity components.",
+          "Those statements describe commercial ambition, not booked scale. Synaptics has not named a production customer for the tactile module in this announcement, disclosed unit pricing, quantified design wins, or separated robotics revenue from its broader business. Its own material says industrial robotics can have long pilot cycles and may not reach meaningful production scale until 2027 or 2028.",
+          "Isaac Sim support can lower one adoption barrier by meeting developers inside an existing toolchain. It does not remove the work of designing a durable fingertip, routing cables through a moving hand, calibrating each sensor, validating the control loop, and manufacturing the assembly consistently."
+        ]
+      },
+      {
+        heading: "The published performance bar is still thin",
+        paragraphs: [
+          "Synaptics lists a latency target below 10 milliseconds and a sensing roadmap from 100 hertz toward 1 kilohertz for its tactile platform. A target and a roadmap are not measured results for the new Isaac Sim integration. The release provides no benchmark showing end to end delay from physical contact through sensing, inference, communication, and motor response.",
+          "There is also no grasping evaluation. Buyers cannot yet compare task success, slip recovery, damage rate, calibration stability, power use, or controller load with and without the Synaptics stack. No public test shows that a policy trained with the simulated asset transfers to a physical module with a defined accuracy loss.",
+          "The current evidence establishes three narrower facts. Synaptics has a tactile controller and module strategy for robotics. NVIDIA documents a corresponding 52 taxel asset in Isaac Sim. Synaptics is designing its Astra processors to handle multimodal sensor processing near the edge. Claims about faster development, better manipulation, or reduced integration complexity remain propositions to be tested."
+        ]
+      },
+      {
+        heading: "What robot builders should ask",
+        paragraphs: [
+          "A team evaluating the platform should start with the physical interface. It needs to know how the module mounts on flat and curved surfaces, how protective coverings affect sensitivity, how many modules fit inside the hand, and what happens when one taxel or controller fails.",
+          "The next questions concern data. Developers need sample rate, usable force range, noise, drift, calibration procedure, timestamp accuracy, synchronization across several modules, and the format delivered to the control system. A dense pressure map is useful only when its readings remain comparable over time and arrive quickly enough for the intended motion.",
+          "The compute architecture deserves the same scrutiny. Buyers should ask which Astra device supports the desired workload, what models run locally, how much power and memory they require, and which functions still depend on a central robot computer. They should also separate normal control from safety functions because a fast artificial intelligence response is not automatically a certified protective measure.",
+          "Finally, the simulation must be checked against hardware. A useful validation plan would repeat the same contact patterns in Isaac Sim and on a physical module, quantify the difference, then test whether policies remain reliable across objects, sensor units, wear, and environmental conditions."
+        ]
+      },
+      {
+        heading: "What comes next",
+        paragraphs: [
+          "The first meaningful signal will be a complete developer package that connects the Isaac Sim asset, physical sensor output, Astra processing, and a real robot control loop. Documentation should make clear which parts are available now and which remain on the roadmap.",
+          "The second will be measured transfer. A public benchmark should show how a simulated tactile policy performs on physical hardware, including latency, task success, slip recovery, and failure cases. Results across more than one object and one sensor module would make the evidence much stronger.",
+          "The third will be a named deployment. A robotics company using the module in a hand or gripper, with disclosed testing or production results, would move the story from component positioning to commercial proof.",
+          "Black Scarab's assessment is that the integration addresses a real development gap. Touch is difficult to add late because it affects mechanics, electronics, data pipelines, control, and training. Putting a sensor model into the simulator gives teams a place to begin that work earlier. The missing proof is whether the digital pressure map and local processor produce a robot that grips more reliably when the clean virtual object becomes a chipped cup, a flexible pouch, or a greasy industrial part."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Synaptics announcement of tactile sensing support in NVIDIA Isaac Sim, published September 15, 2026",
+        url: "https://investor.synaptics.com/news-releases/news-release-details/synaptics-brings-tactile-sensing-and-edge-ai-nvidia-isaac-sim"
+      },
+      {
+        label: "NVIDIA Isaac Sim documentation for the Synaptics tactile sensor asset, accessed September 16, 2026",
+        url: "https://docs.isaacsim.omniverse.nvidia.com/latest/assets/usd_assets_tactile_sensors.html"
+      },
+      {
+        label: "Synaptics physical AI platform overview and tactile sensing roadmap, accessed September 16, 2026",
+        url: "https://www.synaptics.com/applications/physical-ai"
+      },
+      {
+        label: "Synaptics third quarter 2026 prepared remarks on robotics customers and local sensor processing, published May 2026",
+        url: "https://investor.synaptics.com/static-files/28062e1b-471f-46fa-8a45-51f370991524"
+      },
+      {
+        label: "NVIDIA overview of Isaac Sim for robotics simulation, testing, and synthetic data, accessed September 16, 2026",
+        url: "https://developer.nvidia.com/isaac/sim/"
+      },
+      {
+        label: "NVIDIA Holoscan SDK overview for multimodal sensor processing, accessed September 16, 2026",
+        url: "https://developer.nvidia.com/holoscan-sdk"
+      },
+      {
+        label: "S and P Capital IQ summary of the Synaptics announcement, published September 15, 2026",
+        url: "https://it.marketscreener.com/notizie/synaptics-incorporated-porta-il-rilevamento-tattile-e-l-edge-ai-su-nvidia-isaac-sim-e-holoscan-ce785bddde8df72d"
+      }
+    ]
+  },
+  {
     slug: "odyssey-3-foundation-world-model",
     title: "Odyssey says one world model can control robots, cars, drones, and games",
     summary: "Odyssey 3 uses one pretrained visual backbone with small action layers for several physical and virtual systems. The demonstrations are unusually broad, but most results remain company reported and a public release is still weeks away.",
