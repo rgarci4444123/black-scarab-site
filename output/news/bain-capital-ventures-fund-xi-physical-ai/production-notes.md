@@ -40,7 +40,7 @@ Google's Rich Results Test crawled the live URL successfully on September 16, 20
 
 The LinkedIn image post was published and verified from Black Scarab company ID 111898269 at https://www.linkedin.com/feed/update/urn:li:share:7506030521257304064?actorCompanyId=111898269. The complete copy, original editorial cover, and descriptive alternative text are visible. The verified website article link is visible as the first comment from Black Scarab.
 
-Google Search Console URL Inspection opened to the Google sign in screen. No credentials were entered and no indexing request was submitted. IndexNow remains the completed discovery submission.
+Google Search Console URL Inspection initially reported that the URL was unknown to Google and not indexed. After account access became available, one indexing request was submitted on September 16, 2026. Search Console confirmed that the URL was added to Google's priority crawl queue and advised that repeat submissions do not change its position or priority. No duplicate request was submitted. IndexNow remains the other completed discovery submission.
 
 The live `@BlackScarabAI` profile was checked after website and LinkedIn verification. No Bain Capital Ventures Fund XI duplicate was visible among recent posts. A manual X handoff with final copy, exact image path, and alternative text is saved at `output/x/bain-capital-ventures-fund-xi-physical-ai/publication.md`. No X publication was performed because this report is outside the authorized manufacturing series.
 
