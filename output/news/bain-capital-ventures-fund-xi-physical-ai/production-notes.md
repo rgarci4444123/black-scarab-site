@@ -28,7 +28,21 @@ Targeted lint passed for the news data, article route, news index, sitemap, news
 
 The article and news index were reviewed locally at desktop width and at a 390 by 844 pixel mobile viewport. The headline, summary, byline, cover crop, caption, At a glance box, and article body render cleanly. The canonical URL, description, Open Graph image, Twitter image, publication timestamp, NewsArticle structured data, and CFA honorific suffix were verified locally.
 
-The production build and prerender manifest contain the new article route. Published copy contains no em dash or en dash punctuation. Live deployment, endpoint checks, IndexNow, Google rich results validation, and social publication remain pending.
+The production build and prerender manifest contain the new article route. Published copy contains no em dash or en dash punctuation.
+
+## Live publication
+
+The website article was deployed and verified at https://www.blackscarab.ai/news/bain-capital-ventures-fund-xi-physical-ai. The live article, original cover image, canonical metadata, Open Graph metadata, Twitter metadata, NewsArticle structured data, main sitemap, news sitemap, and RSS entry all returned successfully.
+
+IndexNow accepted the article URL and updated sitemap submission with HTTP status 200. This confirms receipt, not search engine indexing.
+
+Google's Rich Results Test crawled the live URL successfully on September 16, 2026 at 12:40 PM ET. It detected two valid items: one Article item and one Organization item. Both are eligible for Google Search rich results.
+
+The LinkedIn image post was published and verified from Black Scarab company ID 111898269 at https://www.linkedin.com/feed/update/urn:li:share:7506030521257304064?actorCompanyId=111898269. The complete copy, original editorial cover, and descriptive alternative text are visible. The verified website article link is visible as the first comment from Black Scarab.
+
+Google Search Console URL Inspection opened to the Google sign in screen. No credentials were entered and no indexing request was submitted. IndexNow remains the completed discovery submission.
+
+The live `@BlackScarabAI` profile was checked after website and LinkedIn verification. No Bain Capital Ventures Fund XI duplicate was visible among recent posts. A manual X handoff with final copy, exact image path, and alternative text is saved at `output/x/bain-capital-ventures-fund-xi-physical-ai/publication.md`. No X publication was performed because this report is outside the authorized manufacturing series.
 
 ## LinkedIn draft
 
