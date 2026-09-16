@@ -1,0 +1,195 @@
+.ecosystem {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.network {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.connectionLines {
+  fill: none;
+  stroke: #94a390;
+  stroke-width: 1.15;
+  stroke-opacity: 0.58;
+}
+
+.sphereGrid {
+  fill: none;
+  stroke: #aebaa9;
+  stroke-width: 0.9;
+  stroke-opacity: 0.42;
+}
+
+.networkDots {
+  fill: #294033;
+}
+
+.node {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.nodeLabel {
+  color: #32483a;
+  font-size: 0.66rem;
+  font-weight: 650;
+  letter-spacing: 0.19em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.nodeImage {
+  position: relative;
+  display: block;
+  width: 78px;
+  height: 78px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(75, 93, 76, 0.28);
+  border-radius: 999px;
+  background: #e8ebe5;
+  box-shadow: 0 12px 28px rgba(28, 39, 29, 0.08);
+}
+
+.companies {
+  top: 8%;
+  left: 3%;
+  flex-direction: row-reverse;
+}
+
+.machines {
+  top: 40%;
+  left: 0;
+  flex-direction: row-reverse;
+}
+
+.capital {
+  bottom: 7%;
+  left: 4%;
+  flex-direction: row-reverse;
+}
+
+.infrastructure {
+  top: 10%;
+  right: 1%;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.deployment {
+  right: 1%;
+  bottom: 9%;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media (max-width: 1279px) {
+  .ecosystem {
+    min-height: 480px;
+  }
+
+  .nodeImage {
+    width: 70px;
+    height: 70px;
+  }
+
+  .nodeLabel {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .ecosystem {
+    min-height: 500px;
+    margin-inline: auto;
+    width: min(100%, 760px);
+  }
+
+  .nodeImage {
+    width: 74px;
+    height: 74px;
+  }
+}
+
+@media (max-width: 639px) {
+  .ecosystem {
+    min-height: 310px;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .network {
+    transform: scale(1.24);
+    transform-origin: center;
+  }
+
+  .node {
+    gap: 0;
+    border: 1px solid rgba(89, 111, 91, 0.22);
+    border-radius: 999px;
+    background: rgba(251, 250, 246, 0.9);
+    padding: 0.42rem 0.58rem;
+    box-shadow: 0 8px 22px rgba(33, 47, 36, 0.05);
+    backdrop-filter: blur(5px);
+  }
+
+  .nodeImage {
+    display: none;
+  }
+
+  .nodeLabel {
+    font-size: 0.48rem;
+    letter-spacing: 0.15em;
+  }
+
+  .companies {
+    top: 4%;
+    left: 2%;
+    flex-direction: row;
+  }
+
+  .machines {
+    top: 43%;
+    left: 0;
+    flex-direction: row;
+  }
+
+  .capital {
+    bottom: 3%;
+    left: 50%;
+    flex-direction: row;
+    transform: translateX(-50%);
+  }
+
+  .infrastructure {
+    top: 4%;
+    right: 2%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .deployment {
+    top: 43%;
+    right: 0;
+    bottom: auto;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ecosystem * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

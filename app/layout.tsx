@@ -15,8 +15,7 @@ const organizationSchema = {
   logo: `${baseUrl}/icon.png`,
   email: "info@blackscarab.ai",
   description:
-    "A physical AI market-development firm connecting technology companies with industrial opportunities in Mexico.",
-  areaServed: ["Mexico", "Latin America"],
+    "An independent publication covering the companies, technologies, capital, and industrial systems shaping the physical AI economy.",
   founder: {
     "@type": "Person",
     name: "Rodolfo Garcia Calderoni",
@@ -56,20 +55,20 @@ export const metadata: Metadata = {
     template: "%s | Black Scarab",
   },
   description:
-    "Physical AI market development and strategic introductions for Mexico.",
+    "Independent news and research on the physical AI economy.",
   openGraph: {
     type: "website",
     siteName: "Black Scarab",
     url: baseUrl,
     title: "Black Scarab",
     description:
-      "Physical AI market development and strategic introductions for Mexico.",
+      "Independent news and research on the physical AI economy.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Black Scarab",
     description:
-      "Physical AI market development and strategic introductions for Mexico.",
+      "Independent news and research on the physical AI economy.",
   },
 };
 

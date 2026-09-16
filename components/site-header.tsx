@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { primaryNavLinks, type SiteNavLink } from "@/lib/site-navigation";
@@ -9,6 +10,7 @@ type SiteHeaderProps = {
   navLinks?: SiteNavLink[];
   ctaLabel: string;
   ctaHref: string;
+  ctaTone?: "outline" | "solid";
 };
 
 export default function SiteHeader({
@@ -16,6 +18,7 @@ export default function SiteHeader({
   navLinks = primaryNavLinks,
   ctaLabel,
   ctaHref,
+  ctaTone = "outline",
 }: SiteHeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -30,9 +33,11 @@ export default function SiteHeader({
             className="flex items-center gap-3"
             onClick={() => setMobileOpen(false)}
           >
-            <img
+            <Image
               src="/black-scarab-mark.png"
               alt="Black Scarab logo"
+              width={32}
+              height={32}
               className="h-8 w-8 object-contain"
             />
             <span className="text-base font-bold tracking-tight">
@@ -57,7 +62,11 @@ export default function SiteHeader({
           <div className="flex items-center gap-3">
             <Link
               href={ctaHref}
-              className="hidden rounded-full border border-[#e5e7eb] px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#111827] hover:text-white md:inline-flex"
+              className={
+                ctaTone === "solid"
+                  ? "hidden rounded-full border border-[#1d3228] bg-[#1d3228] px-5 py-3 text-sm font-medium text-white transition hover:border-[#29463a] hover:bg-[#29463a] md:inline-flex"
+                  : "hidden rounded-full border border-[#e5e7eb] px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#111827] hover:text-white md:inline-flex"
+              }
             >
               {ctaLabel}
             </Link>
