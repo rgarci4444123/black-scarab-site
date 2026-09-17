@@ -32,6 +32,123 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "figure-helix-2-5-zero-shot-homes",
+    title: "Figure takes Helix 2.5 into 30 unfamiliar homes",
+    summary: "Figure says Index pretraining raised complete task success from 9 percent to 56 percent across household work in 30 unseen homes. The transfer result is important, but the company has not published per task results, trial counts, operating speed, intervention frequency, or independent validation.",
+    category: "Humanoid Robotics",
+    publishedDate: "2026-09-17",
+    publishedAt: "2026-09-17T18:10:41-04:00",
+    publishedLabel: "September 17, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/figure-helix-2-5-zero-shot-homes.png",
+    imageAlt: "Editorial illustration of a humanoid robot making a bed inside an unfamiliar home",
+    imageCaption: "Original Black Scarab editorial illustration of a generic humanoid robot performing household work. This conceptual scene does not depict a Figure robot, an evaluation home, or a verified Helix 2.5 trial.",
+    readingTime: "8 min read",
+    keyPoints: [
+      "Figure evaluated living room tidying, towel folding, and bed making in 30 Bay Area homes that were absent from the task training data.",
+      "The company reports that Index pretraining increased complete task success from 9 percent to 56 percent while architecture, task data, training, and evaluation remained fixed.",
+      "The result has not been independently validated, and Figure did not disclose per task success, total trial count, cycle time, safety interventions, remote supervision, or consumer availability."
+    ],
+    sections: [
+      {
+        heading: "Figure moved the evaluation out of the lab",
+        paragraphs: [
+          "Figure introduced Helix 2.5 on September 17 with a test designed around one of the hardest problems in household robotics: whether a machine can enter an unfamiliar home and perform useful work without collecting new data there.",
+          "The company rented 30 homes in the San Francisco Bay Area and evaluated three behaviors: tidying living rooms, folding towels, and making beds. Figure says no data was collected in the evaluation homes, and none of the toys, towels, or bedding used in the tests appeared in the task specification data.",
+          "Each behavior used one fixed model checkpoint across all 30 homes. Figure says the checkpoint was not adapted using evaluation rollouts or selected based on performance in those homes. That makes the experiment more informative than a polished demonstration in a familiar company space."
+        ]
+      },
+      {
+        heading: "Zero shot does not mean the robot never learned the chore",
+        paragraphs: [
+          "The term zero shot applies to the homes and objects, not to the behaviors themselves. Figure first pretrained Helix 2.5 on Index, its collection of videos showing people performing physical tasks. The company then used task specific data collected elsewhere to adapt the model for room tidying, towel folding, and bed making.",
+          "The distinction matters. Helix 2.5 did not receive a verbal request for an entirely new chore and invent the required movement. It learned each behavior from examples, then attempted to transfer that behavior to new layouts, furniture, surfaces, and objects.",
+          "That transfer is still valuable. A household product cannot require an engineering team to collect demonstrations and tune a policy inside every customer home. The commercial question is whether one trained behavior can travel across enough real environments to make deployment repeatable."
+        ]
+      },
+      {
+        heading: "The 56 percent result is the real headline",
+        paragraphs: [
+          "Figure compared two policies using the same architecture, task data, training process, and evaluation. One began with random weights. The other began with Helix 2.5 pretrained on Index.",
+          "The policy trained from scratch completed 9 percent of the zero shot trials. The Index pretrained policy completed 56 percent, according to Figure. Success required finishing the entire assigned task. Partial completion did not count.",
+          "For room tidying, the robot had to place every one of 13 to 15 toys in a basket. For towels, every towel had to be folded and placed in a basket. For bed making, both pillows and the comforter corners had to reach the top of the bed, with the comforter pulled smooth.",
+          "A change from 9 percent to 56 percent is a large measured improvement under the company protocol. It is not household readiness. A 56 percent complete task rate also means 44 percent of trials did not meet the full success definition. A useful consumer machine will need to operate for long periods with far fewer failures and much less supervision."
+        ]
+      },
+      {
+        heading: "Homes expose the long tail of robotics",
+        paragraphs: [
+          "Factories reduce variation through fixtures, marked locations, controlled lighting, known parts, and repeatable workflows. Homes do the opposite. Beds differ in height and clearance. Towels bend into unpredictable shapes. Toys roll, compress, hide behind furniture, and present unfamiliar surfaces.",
+          "The robot must also move its whole body as part of the task. It may need to step around a bed, change its stance to reach a comforter corner, or reposition to see an object that was hidden. Locomotion, perception, balance, and manipulation cannot be treated as isolated stages.",
+          "Figure says Helix 2.5 showed qualitative self correction, including stepping back, changing stance, and moving around a bed after an imperfect fold. Those examples are promising because recovery often determines whether a long task finishes. The company did not publish a measured recovery rate or compare it with human performance."
+        ]
+      },
+      {
+        heading: "Index is becoming the center of the strategy",
+        paragraphs: [
+          "Index is Figure's attempt to collect the broad human experience that robot training data lacks. The company launched the program publicly in August after building a mobile application that pays contributors to record physical tasks in homes and workplaces.",
+          "Figure previously reported more than 16 million uploaded videos, 264,000 application downloads, and 44,000 weekly active contributors. It now says Index is generating roughly 35 minutes of new human experience every second. These are company figures and have not been independently audited.",
+          "The Helix 2.5 experiment is the first detailed evidence Figure has published for the value of that collection effort. It says no single evaluation task represented more than 1.90 percent of the Index pretraining dataset, and that using half as much task specification data matched the success rate of a representative Helix 02 behavior trained in its evaluation environment.",
+          "Figure also trained four model variants on an eightfold range of Index data. It reports that action prediction loss improved smoothly enough to forecast the largest run with an error equal to 0.54 percent of the variation across the data range. That is an intriguing scaling signal, but it measures prediction loss rather than successful household work."
+        ]
+      },
+      {
+        heading: "The evaluation is more rigorous than a highlight video",
+        paragraphs: [
+          "Figure published a detailed scoring rubric and says the evaluations were blind. Each trial began from a unique initial arrangement, and reset conditions were applied in the same way to the compared policies.",
+          "The rubric includes strict time limits. Each toy received one minute. Each towel received three minutes. Each pillow and each side of the comforter received one minute. If a human intervention was required for safety, the rollout was aborted and counted as a failure.",
+          "Those rules make the 56 percent figure more useful than an edited collection of successful moments. Important details remain missing. Figure did not publish the total number of trials, the result for each behavior, completion time distributions, the number of safety interventions, the frequency of remote monitoring, or the complete set of failures."
+        ]
+      },
+      {
+        heading: "Independent observation still argues for caution",
+        paragraphs: [
+          "The new results come from Figure and have not been reproduced by an outside research group or customer. Same day coverage largely repeats the company announcement rather than validating the evaluation.",
+          "TIME observed earlier Figure household demonstrations in 2025. Its reporter saw robots load a dishwasher and clear clutter, but also saw a robot drop laundry without recovering and another struggle to fold shirts. Figure executives said at the time that additional data was improving performance. Helix 2.5 is evidence in support of that argument, although it does not erase the need for independent testing.",
+          "Safety and privacy remain part of the product, not separate policy questions. A humanoid in a home operates near people, pets, fragile objects, stairs, appliances, and personal information. Figure has described softer coverings, lower mass, tactile sensing, palm cameras, battery protections, and plans to remove personal information from future training data. It has not published a complete home safety case, privacy architecture, certification plan, or incident record."
+        ]
+      },
+      {
+        heading: "What would turn a research result into a product",
+        paragraphs: [
+          "The next useful disclosure is a complete scorecard. Figure should publish trial counts, per task results, median and worst case completion times, intervention rates, recovery rates, failure categories, and unedited representative runs from all 30 homes.",
+          "The second signal is repeated operation in occupied homes rather than rented evaluation spaces. A consumer trial should disclose how often the robot needs setup, remote assistance, charging, maintenance, or a human safety observer.",
+          "The third is commercial definition. Figure has not announced a home price, subscription fee, delivery schedule, service model, warranty, insurance structure, or the tasks included at launch.",
+          "Black Scarab's assessment is that Helix 2.5 addresses the right bottleneck. Generalization across homes matters more than perfect performance in one staged room. Moving complete task success from 9 percent to 56 percent suggests broad human data can materially improve transfer. The remaining 44 percent, and everything Figure has not yet measured publicly, is where the path from an impressive robot demonstration to a dependable household product will be decided."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Figure Helix 2.5 announcement and evaluation appendix, published September 17, 2026",
+        url: "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization"
+      },
+      {
+        label: "Figure Index dataset announcement, published August 25, 2026",
+        url: "https://www.figure.ai/news/introducing-index"
+      },
+      {
+        label: "Figure Helix 02 architecture announcement, published February 2026",
+        url: "https://www.figure.ai/news/helix-02"
+      },
+      {
+        label: "Figure 03 hardware and home design announcement, published October 9, 2025",
+        url: "https://www.figure.ai/news/introducing-figure-03"
+      },
+      {
+        label: "TIME report on Figure 03 household demonstrations, published October 9, 2025",
+        url: "https://time.com/7324233/figure-03-robot-humanoid-reveal/"
+      },
+      {
+        label: "TechCrunch report on Figure's home testing plans, published February 27, 2025",
+        url: "https://techcrunch.com/2025/02/27/figure-will-start-alpha-testing-its-humanoid-robot-in-the-home-in-2025/"
+      }
+    ]
+  },
+  {
     slug: "watney-series-a-data-center-robots",
     title: "Watney raises $80 million to build robots for the data center boom",
     summary: "Watney says its robots are already working for major computing customers and have accumulated hundreds of thousands of operating hours. The funding is substantial, but the company has not disclosed its valuation, customer contracts, fleet size, revenue, or the measurement behind its reliability claim.",
