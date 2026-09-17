@@ -32,6 +32,147 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "universal-robots-gen-7-ai-ready-cobot-platform",
+    title: "Universal Robots rebuilds its cobot platform for the AI factory",
+    summary: "Gen 7 combines three new robot arms with a redesigned controller, tool interface, teach pendant, and software stack. The architecture may make advanced sensing and edge processing easier to deploy, but Universal Robots has not disclosed pricing or customer performance data.",
+    category: "Robotics News",
+    publishedDate: "2026-09-17",
+    publishedAt: "2026-09-17T11:34:24-04:00",
+    publishedLabel: "September 17, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/universal-robots-gen-7-ai-ready-cobot-platform.png",
+    imageAlt: "Editorial illustration of a collaborative robot connected to machine vision, edge computing, and factory control equipment",
+    imageCaption: "Original Black Scarab editorial illustration of an integrated collaborative robot workcell. This conceptual scene does not depict a Universal Robots product, an official demonstration, or a customer installation.",
+    readingTime: "8 min read",
+    keyPoints: [
+      "Universal Robots introduced Gen 7 at IMTS with three new g Series arms, a redesigned CB7 Core controller, new operator interfaces, and the PolyScope X software environment.",
+      "The most consequential change is the integration architecture. Power, one gigabit Ethernet, configurable input and output connections, and safety connectivity now reach the tool flange, while the controller can separate several industrial networks.",
+      "Universal Robots has not published Gen 7 pricing, delivery schedules by market, comparative installation time, customer production results, or evidence that an artificial intelligence application performs better on the new platform."
+    ],
+    sections: [
+      {
+        heading: "Universal Robots replaces more than the arm",
+        paragraphs: [
+          "Universal Robots introduced its seventh generation automation platform at the International Manufacturing Technology Show in Chicago on September 14. Gen 7 begins with three new collaborative robot arms, but the larger change reaches from the controller and software to the teach pendant and the connection point where cameras, grippers, and other tools meet the robot.",
+          "The company is positioning the system as ready for artificial intelligence applications. That description does not mean each robot arrives with a general purpose model or a complete autonomous skill. It means the platform has been redesigned to connect the sensing, external computing, software, industrial networks, and safety functions that advanced applications require.",
+          "This distinction matters because most difficult factory projects fail or stall at the system boundary. A capable arm still needs a tool, fixtures, cameras, control logic, communications, risk assessment, and support. Gen 7 is an attempt to reduce the extra hardware and engineering between those layers."
+        ]
+      },
+      {
+        heading: "Three arms cover three different work envelopes",
+        paragraphs: [
+          "The first g Series lineup includes the UR10g 1750, UR17g 1300, and UR18g 950. The numbers point buyers toward payload and reach, although the standard payload of the UR10g is eight kilograms and its extended payload is ten kilograms.",
+          "The UR10g has a reach of 1,750 millimeters, repeatability of plus or minus 0.08 millimeter, and a maximum tool center point speed of five meters per second. Its long reach is suited to larger work areas where a lighter load must move between several positions.",
+          "The UR17g carries 15 kilograms as its standard rating, with an extended rating of 17.5 kilograms, across a 1,300 millimeter reach. Universal Robots lists repeatability of plus or minus 0.05 millimeter and a maximum speed of five meters per second.",
+          "The shorter UR18g carries 18 kilograms across 950 millimeters. It has the same listed repeatability as the UR17g and a maximum speed of four meters per second. The three models therefore trade reach, payload, and arm mass rather than presenting one machine as the answer to every cell.",
+          "These are manufacturer specifications, not independently measured results. Payload curves, tool weight, center of gravity, mounting orientation, speed limits, and the risk assessment can all change usable performance in a real application."
+        ]
+      },
+      {
+        heading: "The important upgrade sits at the tool flange",
+        paragraphs: [
+          "The tool flange is the mechanical and electrical boundary at the end of the arm. It is where a gripper, camera, force sensor, welding torch, screwdriver, or other device becomes part of the robot. Gen 7 brings more of the required infrastructure to that boundary.",
+          "Universal Robots lists 24 or 48 volt power, five amperes of peak current, three amperes of continuous current, one gigabit Ethernet, digital and analog connections, and an RS 485 interface at the g Series flange. The company says this can reduce external dress kits and cables routed along the arm.",
+          "For a vision guided application, the practical benefit is straightforward. A camera can sit near the tool and move data through the arm instead of relying on a separate cable that must bend through every cycle. A more capable gripper or sensor can draw power near the point of use. Fewer exposed components may also simplify installation and maintenance.",
+          "The arms include force and torque sensing, impedance control, and Universal Robots' real time data exchange interface. Those features can support contact sensitive assembly, polishing, insertion, and manipulation, but they do not create the application by themselves. The tool, control policy, process limits, and validation still determine whether the cell performs useful work."
+        ]
+      },
+      {
+        heading: "CB7 gives the cell more room to communicate",
+        paragraphs: [
+          "The CB7 Core controller provides the computing and network layer. Universal Robots says its processor is 40 percent faster than the previous CB5.6 controller and that the cabinet footprint is 30 percent smaller. The enclosure carries an IP54 protection rating.",
+          "The controller includes three one gigabit Ethernet ports, 16 configurable digital connections that can also serve safety functions, four analog connections, four quadrature digital inputs, and a 24 volt, four ampere power supply. USB Type A and Type C ports support peripherals and storage.",
+          "Three network ports may be more important than the processor percentage. A workcell often needs separate connections to a programmable logic controller, human machine interface, manufacturing execution system, vision computer, or plant network. Keeping those paths organized can reduce the need for another switch and help separate operational traffic.",
+          "Universal Robots lists support for Modbus, EtherNet IP, PROFINET, and OPC UA communication. PolyScope X adds open programming interfaces, a software development kit, and ROS 2 communication for developers connecting external computers and artificial intelligence workloads.",
+          "The company has not identified the CB7 processor, memory capacity, graphics accelerator, power consumption, or a standard performance benchmark. A claim of 40 percent more processing power therefore indicates improvement against a named predecessor, but it does not tell a buyer which vision or inference models can run locally."
+        ]
+      },
+      {
+        heading: "AI ready does not mean AI included",
+        paragraphs: [
+          "Universal Robots presents Gen 7 as a base for machine vision, adaptive grasping, edge processing, and partner applications. The announcement names ecosystem demonstrations involving Cognex, Schunk, Magswitch, Smooth Robotics, Psyonic, Robotiq, and Inbolt.",
+          "One example is Inbolt's three dimensional vision guidance software, which the companies say can run on the Universal Robots controller without a separate vision computer. This is a concrete integration claim from a partner, not a general benchmark for every camera, model, or task.",
+          "Other applications may still use an external industrial computer. PolyScope X and ROS 2 can provide the communication layer, while the external system handles perception or model inference. That division can be sensible because artificial intelligence workloads evolve faster than industrial robot hardware and may require different processors over the life of the cell.",
+          "The buyer still has to identify the model, data, camera, lighting, tool, compute device, and failure response. A platform can make those pieces easier to connect without guaranteeing that the resulting system recognizes parts accurately or recovers from an unfamiliar condition."
+        ]
+      },
+      {
+        heading: "Operator hardware gets a quieter redesign",
+        paragraphs: [
+          "The TP7 Core teach pendant has an 11.6 inch full high definition display, two configurable buttons, a virtual joystick, and dual three position enabling controls. Universal Robots lists a weight of about 1.39 kilograms and says the device is more than 20 percent lighter than its predecessor.",
+          "A field replaceable cable and external connector access are intended to make service easier. Cable options extend to 12 meters, which gives integrators more freedom when the controller and operator position cannot sit beside the arm.",
+          "The separate SP7 Smart Panel mounts near the tool flange. It provides a safety compliant freedrive control, status lighting, and three configurable buttons. An operator can guide the robot and trigger common setup functions closer to the work instead of moving repeatedly between the arm and the main pendant.",
+          "These changes are not as dramatic as a new robot demonstration, but setup time and service access have a direct effect on deployment cost. A feature that removes a cable, external switch, or trip across the cell may matter more to an integrator than another artificial intelligence label."
+        ]
+      },
+      {
+        heading: "Safety and cybersecurity move into the platform",
+        paragraphs: [
+          "Universal Robots says the Gen 7 safety architecture reaches Performance Level d and Category 3 under the relevant machinery safety standard. The g Series arms are certified to the 2025 edition of ISO 10218 and to UL 1740.",
+          "The company also says Teradyne Robotics has reached maturity level 3 under the IEC 62443 secure development process standard. That certification concerns how the organization develops and maintains products. It does not mean every connected workcell is secure after installation.",
+          "Network design, account control, software updates, remote access, device configuration, backups, and incident response remain site responsibilities shared among the manufacturer, integrator, technology partners, and operator. The more cameras and edge computers a cell adds, the more important those boundaries become.",
+          "Collaborative operation also depends on the complete application. A robot arm with certified safety functions does not make a sharp tool, heavy part, hot process, or fast motion safe by default. Each installation needs a task specific risk assessment and validated protective measures."
+        ]
+      },
+      {
+        heading: "The commercial timing is favorable",
+        paragraphs: [
+          "Universal Robots enters this product transition with a large installed base and a parent company reporting improved robotics demand. Teradyne's latest quarterly filing says its Robotics segment generated about $100 million of revenue in the quarter ended June 28, its fifth consecutive quarter of sequential growth.",
+          "Teradyne attributed the momentum primarily to electronics manufacturing and semiconductor customers, which it said had become the segment's largest end market. The Robotics segment includes Universal Robots and Mobile Industrial Robots, so the filing does not disclose how much of the revenue came from the cobot business or any Gen 7 product.",
+          "The same filing gives the platform launch more context. Electronics and semiconductor production can require precise machine tending, handling, inspection, testing, and assembly. Those environments also use extensive plant networks, vision equipment, and manufacturing software, which makes integration architecture commercially relevant.",
+          "Universal Robots says it has more than 100,000 industrial deployments across six earlier generations. The installed base can support training, partner development, spare parts, and customer confidence. It can also make compatibility and migration more complicated because factories do not replace productive equipment simply because a new platform arrives."
+        ]
+      },
+      {
+        heading: "The missing evidence is price and production performance",
+        paragraphs: [
+          "Universal Robots directs buyers to request pricing. It has not published list prices for the three g Series arms, the CB7 configurations, TP7 pendant, SP7 panel, software packages, or a complete workcell. A robot arm price would still omit tooling, cameras, safety equipment, fixtures, engineering, installation, training, and support.",
+          "The announcement also provides no measured comparison of installation time, cable count, commissioning labor, uptime, task success, energy use, or maintenance cost against the machines it succeeds. The specifications explain what changed. They do not yet show the economic result.",
+          "Availability is another open question. Universal Robots has not published a complete delivery schedule by model and market in the announcement. Existing e Series and UR Series equipment remains part of the broader portfolio, while company materials identify the new g Series models as successors to the UR8 Long, UR15, and UR18.",
+          "Customers should therefore separate platform readiness from application readiness. Gen 7 may remove integration friction, but a useful buying decision requires a quoted configuration, delivery date, cycle study, risk assessment, support plan, and acceptance criteria for the exact task."
+        ]
+      },
+      {
+        heading: "What buyers should watch next",
+        paragraphs: [
+          "The first signal is pricing. Public or distributor quotes will show whether the integrated flange, controller, and operator hardware reduce total cell cost or simply move more value into the robot package.",
+          "The second is deployment evidence. Named customers should report commissioning time, task performance, operating hours, downtime, and the number of external devices removed from the cell. Evidence across electronics, machining, logistics, and other environments would be stronger than one controlled demonstration.",
+          "The third is partner depth. The useful test for UR Plus and PolyScope X is how many camera, gripper, sensing, and edge computing systems work as documented without custom engineering. Compatibility claims should include software versions, safety responsibilities, support ownership, and update policies.",
+          "Black Scarab's assessment is that Gen 7 addresses the unglamorous part of advanced automation that often decides whether a project leaves the trade show floor. Cleaner tool connections, stronger networking, open software, and serviceable operator hardware can make intelligent applications easier to assemble and maintain. The platform now needs public prices and production results to prove that simpler integration becomes a better business case."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Universal Robots announcement of the Gen 7 platform at IMTS, published September 14, 2026",
+        url: "https://www.universal-robots.com/news-and-media/news-center/universal-robots-unveils-gen-7-new-platform-industrial-automation-physical-ai/"
+      },
+      {
+        label: "Universal Robots Gen 7 platform specifications and system architecture, accessed September 17, 2026",
+        url: "https://www.universal-robots.com/products/gen-7/"
+      },
+      {
+        label: "Universal Robots CB7 Core controller specifications, accessed September 17, 2026",
+        url: "https://www.universal-robots.com/products/cb7-core/"
+      },
+      {
+        label: "Universal Robots TP7 Core teach pendant specifications, accessed September 17, 2026",
+        url: "https://www.universal-robots.com/products/tp7-core/"
+      },
+      {
+        label: "Teradyne quarterly filing covering Robotics segment revenue and customer demand for the quarter ended June 28, 2026",
+        url: "https://www.sec.gov/Archives/edgar/data/97210/000119312526327715/ter-20260628.htm"
+      },
+      {
+        label: "TECH Plus independent coverage of the three g Series models and product transition, published September 15, 2026",
+        url: "https://news.mynavi.jp/techplus/article/20260915-4968351/"
+      }
+    ]
+  },
+  {
     slug: "bain-capital-ventures-fund-xi-physical-ai",
     title: "Bain Capital Ventures raises $1.6 billion with physical AI in Fund XI",
     summary: "BCV has closed a $1.6 billion venture fund spanning artificial intelligence infrastructure, physical AI, science, security, and services. The scale is clear, but the firm has not disclosed how much capital will reach robotics or how quickly it will be deployed.",
