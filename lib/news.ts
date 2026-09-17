@@ -32,6 +32,132 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "watney-series-a-data-center-robots",
+    title: "Watney raises $80 million to build robots for the data center boom",
+    summary: "Watney says its robots are already working for major computing customers and have accumulated hundreds of thousands of operating hours. The funding is substantial, but the company has not disclosed its valuation, customer contracts, fleet size, revenue, or the measurement behind its reliability claim.",
+    category: "Funding News",
+    publishedDate: "2026-09-17",
+    publishedAt: "2026-09-17T14:37:16-04:00",
+    publishedLabel: "September 17, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/watney-series-a-data-center-robots.png",
+    imageAlt: "Editorial illustration of a dual arm mobile robot handling cables inside a data center",
+    imageCaption: "Original Black Scarab editorial illustration of a robot working beside server racks. This conceptual scene does not depict a Watney product, an official customer site, or a verified deployment.",
+    readingTime: "8 min read",
+    keyPoints: [
+      "Watney raised $80 million in Series A funding led together by the Valor Atreides AI Fund and Hummingbird Ventures, bringing the company's stated total funding above $100 million.",
+      "The company says its autonomous systems serve major hyperscale computing customers and have completed hundreds of thousands of hours in customer facilities with more than four nines of reliability.",
+      "Independent reporting connects Watney to a supervised Meta cabling trial, but public evidence still does not establish fleet size, task success, operating economics, revenue, or readiness for unsupervised deployment."
+    ],
+    sections: [
+      {
+        heading: "A large round for a narrow industrial problem",
+        paragraphs: [
+          "Watney announced on September 17 that it has raised $80 million in Series A funding to expand autonomous robotic systems for critical infrastructure, beginning with data centers.",
+          "The round was led together by the Valor Atreides AI Fund and Hummingbird Ventures. Existing investors Conviction, Abstract, A*, and Grant Gordon also participated. Watney says the financing brings its total capital raised to more than $100 million.",
+          "The company did not disclose its valuation, ownership terms, board changes, individual investor commitments, or a detailed use of proceeds. It says it is hiring across the business, which points toward a broad expansion rather than one isolated research program."
+        ]
+      },
+      {
+        heading: "Watney is targeting the physical bottleneck of compute",
+        paragraphs: [
+          "A data center is usually discussed through chips, power, cooling, and network capacity. It also depends on people performing precise physical tasks inside long rows of equipment. Cables must be connected correctly, failed components must be identified, machines must be restarted, and new capacity must be installed without damaging expensive hardware or interrupting live systems.",
+          "Watney says it builds and deploys autonomous robotic systems that increase the speed and capacity of industrial expansion. Its first market is data centers, where the company presents robotics as part of the infrastructure required to turn planned computing capacity into operating capacity.",
+          "The approach is more specialized than placing a general purpose humanoid in a server room. Watney argues that a machine should use the embodiment best suited to the task rather than imitate human motion. In practice, that means the robot, sensors, tools, mobility system, software, supervision, and service model can be designed around racks, cables, connectors, and facility procedures."
+        ]
+      },
+      {
+        heading: "Outside reporting identifies Meta as a test site",
+        paragraphs: [
+          "Watney does not name customers in its funding announcement. It says only that it has served some of the world's largest hyperscale computing companies since 2025 through a complete deployment model.",
+          "WIRED reported in August that Meta has been testing two Watney robots with dual arms on cabling work at its Altoona, Iowa, data center campus since June 2025. According to people familiar with the trial, the robots operate under human supervision and are not yet as fast as technicians. Watney did not respond to WIRED's request for comment at the time.",
+          "That reporting supplies a credible customer context, but it does not turn a test into a commercial rollout. Meta declined to comment on the specific trials, and neither company has disclosed a contract value, number of deployed sites, acceptance criteria, renewal terms, or the portion of the work completed without intervention.",
+          "The distinction matters. A live customer test is stronger evidence than a laboratory demonstration. It is still different from a repeatable product operating across many facilities under a standard commercial agreement."
+        ]
+      },
+      {
+        heading: "Cable handling is a demanding benchmark",
+        paragraphs: [
+          "Connecting a cable sounds simple until a robot has to find the correct port among many similar targets, approach without striking adjacent hardware, control insertion force, confirm the connection, manage slack, and recover when a cable bends or catches on another object.",
+          "The environment can change with every rack and installation. Lighting, connector type, cable routing, labeling, floor obstacles, human activity, and equipment configuration all affect perception and motion. A mistake can damage a connector or create a service interruption, which makes cautious movement and reliable verification more important than an impressive demonstration speed.",
+          "WIRED reported that Meta workers described the Watney systems as promising but slower than people. The same reporting said other data center robots can struggle with corners, loose cables, battery downtime, and visual checks that humans handle easily. Those limitations do not invalidate the category. They show why a robot must be evaluated as a complete operating system rather than as an arm completing one successful motion."
+        ]
+      },
+      {
+        heading: "The reliability claim needs a denominator",
+        paragraphs: [
+          "Watney says its systems have accumulated hundreds of thousands of hours in customer facilities and achieved more than four nines of reliability. It also says it operates the largest fleet of dexterous robots running continuously across the United States.",
+          "These are company claims. Watney has not disclosed the number of robots, the number of facilities, the tasks included, the period measured, or the mathematical definition of reliability. Four nines commonly suggests at least 99.99 percent, but that label can describe availability, completed tasks, component uptime, or another metric. The result changes substantially depending on the denominator.",
+          "A system can remain powered on while waiting for human help. It can also complete routine motions reliably while failing on the difficult exceptions that determine whether a technician still needs to stand nearby. Buyers need separate measures for availability, successful task completion, intervention frequency, recovery time, damage events, and accepted output.",
+          "Independent customer data would make the claim more useful. Until then, the reported operating hours show that Watney says it has moved beyond a brief demonstration, while the economic and operational quality of those hours remains unclear."
+        ]
+      },
+      {
+        heading: "The earlier financing provides a public baseline",
+        paragraphs: [
+          "Watney's previous financing has a regulatory record. A Form D filed with the United States Securities and Exchange Commission in June 2025 reported that the company had sold about $21.1 million of a planned $21.6 million equity offering to 34 investors. The first sale occurred on April 30, 2025.",
+          "The new $80 million Series A and the amount reported in that earlier filing are consistent with Watney's statement that total funding now exceeds $100 million. The filing does not identify the investors, valuation, share price, or revenue. Watney also declined to disclose its revenue range in the form.",
+          "For a young robotics company, more than $100 million creates room to hire, manufacture machines, carry inventory, support field operations, and absorb long development cycles. It also raises the standard of evidence. Investors are no longer funding only a prototype. They are financing a claim that a fleet can operate reliably inside some of the most expensive infrastructure in the economy."
+        ]
+      },
+      {
+        heading: "Hiring shows the breadth of the system",
+        paragraphs: [
+          "Watney's careers page listed 25 open positions when accessed on September 17. The roles span manufacturing, inventory, controls, mechanical engineering, machine learning, perception, embedded systems, deployment, robotics service, teleoperations, finance, recruiting, and business operations.",
+          "That hiring mix suggests a vertically integrated deployment effort. Perception software must locate equipment and cables. Controls must move the hardware safely. Embedded systems must keep the machine dependable. Manufacturing must produce consistent units. Deployment and service teams must keep them working at customer sites. Teleoperations personnel imply that remote human support remains part of the operating model.",
+          "The job list is evidence of organizational priorities, not proof of product performance. It does show why the round is large. Building the robot is only one cost. Watney also needs the people and processes required to install, supervise, repair, and improve a fleet spread across customer facilities."
+        ]
+      },
+      {
+        heading: "The missing commercial details are substantial",
+        paragraphs: [
+          "Watney has not published robot specifications, payload, reach, connector compatibility, mobility limits, battery duration, charging time, safety certifications, edge computing hardware, model architecture, network requirements, or environmental operating limits.",
+          "It also has not disclosed pricing, service fees, contract duration, gross margin, revenue, backlog, customer concentration, manufacturing capacity, or the cost of human supervision. The company calls its model complete deployment, but the division of responsibility between Watney and the customer is not public.",
+          "Those gaps are understandable for a private company operating around sensitive computing infrastructure. They also prevent an outside reader from calculating the business case. A robot that works continuously can still be expensive if it needs frequent remote intervention, specialized site preparation, dedicated spares, or a large field service team.",
+          "Labor impact remains unresolved as well. Data center operators describe a shortage of skilled workers, while some technicians worry that successful automation will reduce the amount of human work available. The actual outcome will depend on which tasks the machines absorb, how fast data center capacity grows, and whether technicians move toward supervision and complex maintenance or simply become fewer."
+        ]
+      },
+      {
+        heading: "What to watch after the Series A",
+        paragraphs: [
+          "The first signal is named production evidence. A customer should disclose the number of robots, facilities, completed tasks, intervention rate, operating hours, and measured improvement against the previous process.",
+          "The second is product definition. Watney needs to show what is standardized across deployments and what is rebuilt for each customer. Repeatable hardware, tools, software, installation, and support would make the fleet easier to scale than a sequence of custom engineering projects.",
+          "The third is economics. Buyers need a complete price that includes equipment, site preparation, networking, supervision, maintenance, spares, software, and service. That figure should be compared with accepted output and avoided downtime, not only with hourly labor cost.",
+          "Black Scarab's assessment is that Watney has chosen an unusually valuable proving ground. Data centers offer repetitive infrastructure, urgent capacity demand, and physical tasks that remain difficult to automate. The $80 million round gives the company resources to pursue the opportunity. The next stage requires public evidence that its impressive fleet and reliability claims translate into safe, repeatable, and economical customer operations."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Watney Series A announcement, published September 17, 2026",
+        url: "https://watney.com/media/introducing-watney"
+      },
+      {
+        label: "Watney company overview and deployment positioning, accessed September 17, 2026",
+        url: "https://watney.com/"
+      },
+      {
+        label: "Watney careers page and current hiring priorities, accessed September 17, 2026",
+        url: "https://watney.com/careers"
+      },
+      {
+        label: "SEC Form D for Watney Robotics equity offering, filed June 2, 2025",
+        url: "https://www.sec.gov/Archives/edgar/data/2071023/000123191925000064/xslFormDX01/primary_doc.xml"
+      },
+      {
+        label: "WIRED reporting on Meta data center robot trials, published August 28, 2026",
+        url: "https://www.wired.com/story/inside-metas-experiments-with-data-center-robots/"
+      },
+      {
+        label: "Watney LinkedIn company profile, accessed September 17, 2026",
+        url: "https://www.linkedin.com/company/watneyrobotics/"
+      }
+    ]
+  },
+  {
     slug: "universal-robots-gen-7-ai-ready-cobot-platform",
     title: "Universal Robots rebuilds its cobot platform for the AI factory",
     summary: "Gen 7 combines three new robot arms with a redesigned controller, tool interface, teach pendant, and software stack. The architecture may make advanced sensing and edge processing easier to deploy, but Universal Robots has not disclosed pricing or customer performance data.",
