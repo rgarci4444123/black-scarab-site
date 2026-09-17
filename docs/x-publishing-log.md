@@ -1,5 +1,13 @@
 # X publishing log
 
+## Universal Robots Gen 7 News post prepared, September 17, 2026
+
+* Website article published and verified: https://www.blackscarab.ai/news/universal-robots-gen-7-ai-ready-cobot-platform.
+* LinkedIn company post and first link comment published and verified from Black Scarab company ID 111898269: https://www.linkedin.com/feed/update/urn:li:share:7506379516538191874/?actorCompanyId=111898269.
+* Concise X copy, descriptive alt text, and the exact cover path are saved in `output/x/universal-robots-gen7/publication.md`.
+* The cover is an original Black Scarab editorial illustration and does not depict an official Universal Robots product, demonstration, or customer installation.
+* No X publication was performed. Rodolfo publishes and verifies ordinary News posts on X. Check the live `@BlackScarabAI` profile before posting to prevent a duplicate.
+
 ## Manufacturing plant deep dive post prepared, September 14, 2026
 
 * Website article published and verified: https://www.blackscarab.ai/insights/what-is-a-manufacturing-plant-factory-types-production-flow.
