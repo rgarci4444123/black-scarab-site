@@ -142,6 +142,7 @@ export default function HomePage() {
       imageAlt: latestNews.imageAlt ?? "",
       cta: "Read report",
       external: false,
+      hasBlueCardGlow: false,
     },
     {
       eyebrow: "Featured insight",
@@ -151,6 +152,7 @@ export default function HomePage() {
       imageAlt: featuredInsight.title,
       cta: "Read report",
       external: false,
+      hasBlueCardGlow: false,
     },
     {
       eyebrow: "Latest podcast",
@@ -161,6 +163,7 @@ export default function HomePage() {
         "Editorial illustration of humanoid and industrial robots inside a connected factory",
       cta: "Listen on Spotify",
       external: true,
+      hasBlueCardGlow: true,
     },
   ];
 
@@ -200,7 +203,14 @@ export default function HomePage() {
           </h2>
           <div className="grid divide-y divide-[#d9d9d2] md:grid-cols-3 md:divide-x md:divide-y-0">
             {editorialCards.map((card, index) => (
-              <article key={card.eyebrow} className="group min-w-0 p-5 sm:p-7 lg:p-8">
+              <article
+                key={card.eyebrow}
+                className={`group min-w-0 p-5 sm:p-7 lg:p-8 ${
+                  card.hasBlueCardGlow
+                    ? "bg-[radial-gradient(ellipse_at_72%_36%,rgba(126,201,240,0.16)_0%,rgba(177,222,245,0.08)_34%,transparent_68%)]"
+                    : ""
+                }`}
+              >
                 <Link
                   href={card.href}
                   className="block"
