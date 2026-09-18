@@ -133,11 +133,6 @@ export default function HomePage() {
         "mexico-physical-ai-manufacturing-nearshoring-automation",
       ),
     ) ?? insights[0];
-  const infrastructureCompanies =
-    insights.find((insight) =>
-      insight.href.includes("top-15-physical-ai-infrastructure-companies"),
-    ) ?? insights[1];
-
   const editorialCards = [
     {
       eyebrow: "Latest news",
@@ -145,6 +140,8 @@ export default function HomePage() {
       href: `/news/${latestNews.slug}`,
       image: latestNews.image,
       imageAlt: latestNews.imageAlt ?? "",
+      cta: "Read report",
+      external: false,
     },
     {
       eyebrow: "Featured insight",
@@ -152,13 +149,18 @@ export default function HomePage() {
       href: featuredInsight.href,
       image: featuredInsight.image,
       imageAlt: featuredInsight.title,
+      cta: "Read report",
+      external: false,
     },
     {
-      eyebrow: "Physical AI companies",
-      title: infrastructureCompanies.title,
-      href: infrastructureCompanies.href,
-      image: infrastructureCompanies.image,
-      imageAlt: infrastructureCompanies.title,
+      eyebrow: "Latest podcast",
+      title: "Digit 5, UBTECH’s Robot Factory and Samsung’s New Alliance",
+      href: "https://open.spotify.com/episode/4JqhsCguspQWKvnVoCK0LP",
+      image: "/images/podcast/physical-ai-weekly-episode-1.jpg",
+      imageAlt:
+        "Editorial illustration of humanoid and industrial robots inside a connected factory",
+      cta: "Listen on Spotify",
+      external: true,
     },
   ];
 
@@ -199,7 +201,12 @@ export default function HomePage() {
           <div className="grid divide-y divide-[#d9d9d2] md:grid-cols-3 md:divide-x md:divide-y-0">
             {editorialCards.map((card, index) => (
               <article key={card.eyebrow} className="group min-w-0 p-5 sm:p-7 lg:p-8">
-                <Link href={card.href} className="block">
+                <Link
+                  href={card.href}
+                  className="block"
+                  target={card.external ? "_blank" : undefined}
+                  rel={card.external ? "noopener noreferrer" : undefined}
+                >
                   <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#334236]">
                     {card.eyebrow}
                   </p>
@@ -221,7 +228,7 @@ export default function HomePage() {
                     {card.title}
                   </h3>
                   <span className="mt-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#526147]">
-                    Read report <span aria-hidden="true">→</span>
+                    {card.cta} <span aria-hidden="true">→</span>
                   </span>
                 </Link>
               </article>
