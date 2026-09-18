@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Ten roles build one factory</title>
+  <desc id="desc">A factory owner defines the operating result while product suppliers, delivery specialists, facility teams, software providers, and manufacturers connect their work.</desc>
+  <rect width="1600" height="1000" fill="#f4f0e8"/>
+  <rect x="50" y="50" width="1500" height="900" rx="34" fill="#fffdfa" stroke="#d9d4c9" stroke-width="2"/>
+  <text x="100" y="128" fill="#18201d" font-family="Georgia, serif" font-size="48" font-weight="700">Ten roles build one factory</text>
+  <text x="100" y="172" fill="#667069" font-family="Arial, sans-serif" font-size="22">The owner connects reusable products, project delivery, the facility, software, and operating production</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="100" y="235" width="260" height="590" rx="28" fill="#18201d"/>
+    <text x="135" y="300" fill="#f7f4ed" font-size="30" font-weight="700">Factory owner</text>
+    <text x="135" y="348" fill="#d1d9d2" font-size="20">Product and demand</text>
+    <text x="135" y="385" fill="#d1d9d2" font-size="20">Process and quality</text>
+    <text x="135" y="422" fill="#d1d9d2" font-size="20">Site and capital</text>
+    <text x="135" y="459" fill="#d1d9d2" font-size="20">Risk and acceptance</text>
+    <rect x="135" y="535" width="190" height="118" rx="18" fill="#303b36"/>
+    <text x="230" y="580" text-anchor="middle" fill="#d6a56f" font-size="17" font-weight="700">ACCOUNTABLE FOR</text>
+    <text x="230" y="617" text-anchor="middle" fill="#f7f4ed" font-size="20">the operating result</text>
+    <text x="230" y="780" text-anchor="middle" fill="#aebbb2" font-size="17">Defines • selects • accepts</text>
+
+    <path d="M360 530 H420" stroke="#9aa999" stroke-width="6"/><polygon points="420,530 394,514 394,546" fill="#9aa999"/>
+
+    <text x="455" y="255" fill="#6d7d6b" font-size="18" font-weight="700">PRODUCT LAYER</text>
+    <g fill="#edf2ec" stroke="#cdd7cb"><rect x="430" y="285" width="310" height="120" rx="22"/><rect x="430" y="430" width="310" height="120" rx="22"/><rect x="430" y="575" width="310" height="120" rx="22"/></g>
+    <text x="465" y="330" fill="#18201d" font-size="24" font-weight="700">Equipment manufacturers</text><text x="465" y="365" fill="#5d6962" font-size="18">Machines, robots, process equipment</text>
+    <text x="465" y="475" fill="#18201d" font-size="24" font-weight="700">Component suppliers</text><text x="465" y="510" fill="#5d6962" font-size="18">Controls, sensors, drives, tooling</text>
+    <text x="465" y="620" fill="#18201d" font-size="24" font-weight="700">Distributors</text><text x="465" y="655" fill="#5d6962" font-size="18">Authorized access and local support</text>
+
+    <path d="M740 530 H800" stroke="#c58f5f" stroke-width="6"/><polygon points="800,530 774,514 774,546" fill="#c58f5f"/>
+
+    <text x="835" y="255" fill="#9a6841" font-size="18" font-weight="700">DELIVERY LAYER</text>
+    <g fill="#f2e8dc" stroke="#dec7ad"><rect x="810" y="285" width="330" height="120" rx="22"/><rect x="810" y="430" width="330" height="120" rx="22"/><rect x="810" y="575" width="330" height="120" rx="22"/></g>
+    <text x="845" y="330" fill="#18201d" font-size="24" font-weight="700">Automation platforms</text><text x="845" y="365" fill="#6d6258" font-size="18">Controls, safety, networks, software</text>
+    <text x="845" y="475" fill="#18201d" font-size="24" font-weight="700">Machine builders</text><text x="845" y="510" fill="#6d6258" font-size="18">Repeatable machines and packages</text>
+    <text x="845" y="620" fill="#18201d" font-size="24" font-weight="700">Systems integrators</text><text x="845" y="655" fill="#6d6258" font-size="18">Complete cells, lines, and controls</text>
+
+    <path d="M1140 530 H1200" stroke="#9aa999" stroke-width="6"/><polygon points="1200,530 1174,514 1174,546" fill="#9aa999"/>
+
+    <text x="1235" y="255" fill="#6d7d6b" font-size="18" font-weight="700">PLANT AND OPERATIONS</text>
+    <g fill="#e8ece7" stroke="#c8d0c7"><rect x="1210" y="285" width="290" height="105" rx="22"/><rect x="1210" y="410" width="290" height="105" rx="22"/><rect x="1210" y="535" width="290" height="105" rx="22"/><rect x="1210" y="660" width="290" height="105" rx="22"/></g>
+    <text x="1240" y="325" fill="#18201d" font-size="22" font-weight="700">Manufacturing engineers</text><text x="1240" y="357" fill="#5d6962" font-size="17">Process, flow, equipment, launch</text>
+    <text x="1240" y="450" fill="#18201d" font-size="22" font-weight="700">AEC and contractors</text><text x="1240" y="482" fill="#5d6962" font-size="17">Building, utilities, construction</text>
+    <text x="1240" y="575" fill="#18201d" font-size="22" font-weight="700">Software providers</text><text x="1240" y="607" fill="#5d6962" font-size="17">Design, operations, enterprise</text>
+    <text x="1240" y="700" fill="#18201d" font-size="22" font-weight="700">Contract manufacturers</text><text x="1240" y="732" fill="#5d6962" font-size="17">Operate production for a customer</text>
+
+    <rect x="430" y="760" width="710" height="65" rx="18" fill="#f7f3eb" stroke="#ded8cc"/>
+    <text x="785" y="788" text-anchor="middle" fill="#657168" font-size="17" font-weight="700">THE CONTRACT CAN MOVE THE BOXES</text>
+    <text x="785" y="814" text-anchor="middle" fill="#34413b" font-size="17">The technical responsibility still needs one named owner</text>
+    <rect x="100" y="865" width="1400" height="44" rx="12" fill="#18201d"/>
+    <text x="800" y="893" text-anchor="middle" fill="#f6f4ef" font-size="17">PRODUCTS BECOME PRODUCTION ONLY WHEN EVERY INTERFACE IS DESIGNED, TESTED, DOCUMENTED, AND SUPPORTED</text>
+  </g>
+</svg>

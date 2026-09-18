@@ -8,6 +8,7 @@ import { manufacturingPhysicalAiSeriesIntroduction } from "@/lib/manufacturing-p
 import { manufacturingPlantDeepDive } from "@/lib/manufacturing-plant-deep-dive";
 import { manufacturingMachinesGuide } from "@/lib/manufacturing-machines-guide";
 import { productManufacturingGuide } from "@/lib/product-manufacturing-guide";
+import { factoryBuildersGuide } from "@/lib/factory-builders-guide";
 import { robotActuatorsDeepDive } from "@/lib/robot-actuators";
 
 export type CaseStudySection = {
@@ -16318,6 +16319,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 
 export const caseStudies: CaseStudyArticle[] = [
   robotActuatorsDeepDive(),
+  factoryBuildersGuide(),
   productManufacturingGuide(),
   manufacturingMachinesGuide(),
   manufacturingPlantDeepDive(),

@@ -19,6 +19,10 @@ export const productManufacturingGuide = (): CaseStudyArticle => ({
       title: "Types of Manufacturing Machines",
       href: "/insights/types-of-manufacturing-machines-factory-equipment-guide",
     },
+    next: {
+      title: "Who Builds a Factory?",
+      href: "/insights/who-builds-a-factory-siemens-rockwell-fanuc-integrators",
+    },
   },
   industry: "Manufacturing",
   image: "/article-images/product-manufacturing-rover-cover.png",

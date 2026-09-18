@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1540" role="img" aria-labelledby="title desc">
+  <title id="title">Ten roles build one factory</title>
+  <desc id="desc">Mobile map connecting the factory owner with product suppliers, delivery specialists, facility teams, software providers, and manufacturers.</desc>
+  <rect width="900" height="1540" fill="#f4f0e8"/><rect x="35" y="35" width="830" height="1470" rx="30" fill="#fffdfa" stroke="#d9d4c9"/>
+  <text x="80" y="105" fill="#18201d" font-family="Georgia, serif" font-size="40" font-weight="700">Ten roles build</text><text x="80" y="151" fill="#18201d" font-family="Georgia, serif" font-size="40" font-weight="700">one factory</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="80" y="205" width="740" height="180" rx="24" fill="#18201d"/>
+    <text x="115" y="258" fill="#f7f4ed" font-size="28" font-weight="700">Factory owner</text><text x="115" y="300" fill="#d1d9d2" font-size="19">Defines product, process, site, capital, risk, and acceptance</text><text x="115" y="345" fill="#d6a56f" font-size="18" font-weight="700">ACCOUNTABLE FOR THE OPERATING RESULT</text>
+    <path d="M450 385 V430" stroke="#9aa999" stroke-width="6"/><polygon points="450,430 435,405 465,405" fill="#9aa999"/>
+    <text x="80" y="470" fill="#6d7d6b" font-size="18" font-weight="700">PRODUCT LAYER</text>
+    <g fill="#edf2ec"><rect x="80" y="495" width="740" height="105" rx="22"/><rect x="80" y="615" width="740" height="105" rx="22"/><rect x="80" y="735" width="740" height="105" rx="22"/></g>
+    <text x="115" y="537" fill="#18201d" font-size="24" font-weight="700">Equipment manufacturers</text><text x="115" y="570" fill="#5d6962" font-size="18">Machines, robots, and process equipment</text>
+    <text x="115" y="657" fill="#18201d" font-size="24" font-weight="700">Component suppliers</text><text x="115" y="690" fill="#5d6962" font-size="18">Controls, sensors, drives, tooling, and safety</text>
+    <text x="115" y="777" fill="#18201d" font-size="24" font-weight="700">Distributors</text><text x="115" y="810" fill="#5d6962" font-size="18">Authorized access, inventory, and local support</text>
+    <path d="M450 840 V880" stroke="#c58f5f" stroke-width="6"/><polygon points="450,880 435,855 465,855" fill="#c58f5f"/>
+    <text x="80" y="920" fill="#9a6841" font-size="18" font-weight="700">DELIVERY LAYER</text>
+    <g fill="#f2e8dc"><rect x="80" y="945" width="740" height="105" rx="22"/><rect x="80" y="1065" width="740" height="105" rx="22"/><rect x="80" y="1185" width="740" height="105" rx="22"/></g>
+    <text x="115" y="987" fill="#18201d" font-size="24" font-weight="700">Automation platforms</text><text x="115" y="1020" fill="#6d6258" font-size="18">Controls, safety, networks, and software</text>
+    <text x="115" y="1107" fill="#18201d" font-size="24" font-weight="700">Machine builders</text><text x="115" y="1140" fill="#6d6258" font-size="18">Repeatable machines and configurable packages</text>
+    <text x="115" y="1227" fill="#18201d" font-size="24" font-weight="700">Systems integrators</text><text x="115" y="1260" fill="#6d6258" font-size="18">Complete cells, lines, controls, and applications</text>
+    <rect x="80" y="1335" width="740" height="105" rx="22" fill="#e8ece7"/>
+    <text x="115" y="1375" fill="#18201d" font-size="22" font-weight="700">Plant and operations</text><text x="115" y="1407" fill="#5d6962" font-size="17">Manufacturing engineers • AEC and contractors</text><text x="115" y="1434" fill="#5d6962" font-size="17">Software providers • Contract manufacturers</text>
+    <text x="450" y="1480" text-anchor="middle" fill="#657168" font-size="15">Every interface still needs one named owner</text>
+  </g>
+</svg>

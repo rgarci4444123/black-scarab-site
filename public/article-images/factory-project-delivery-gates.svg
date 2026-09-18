@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Factory project delivery gates</title>
+  <desc id="desc">Seven gates move a factory project from requirement through concept, detailed design, factory acceptance, site acceptance, production release, and sustained support.</desc>
+  <rect width="1600" height="1000" fill="#f4f0e8"/><rect x="50" y="50" width="1500" height="900" rx="34" fill="#fffdfa" stroke="#d9d4c9" stroke-width="2"/>
+  <text x="100" y="128" fill="#18201d" font-family="Georgia, serif" font-size="48" font-weight="700">Factory projects advance through evidence</text>
+  <text x="100" y="172" fill="#667069" font-family="Arial, sans-serif" font-size="22">Each delivery gate retires a different risk before more money and schedule are committed</text>
+  <g font-family="Arial, sans-serif">
+    <path d="M160 500 H1440" stroke="#cbd3c9" stroke-width="16" stroke-linecap="round"/>
+    <g>
+      <circle cx="170" cy="500" r="52" fill="#18201d"/><circle cx="380" cy="500" r="52" fill="#657768"/><circle cx="590" cy="500" r="52" fill="#7e8d7f"/><circle cx="800" cy="500" r="52" fill="#c58f5f"/><circle cx="1010" cy="500" r="52" fill="#aa764d"/><circle cx="1220" cy="500" r="52" fill="#55675a"/><circle cx="1430" cy="500" r="52" fill="#18201d"/>
+      <g fill="#fffdfa" font-size="25" font-weight="700" text-anchor="middle"><text x="170" y="509">1</text><text x="380" y="509">2</text><text x="590" y="509">3</text><text x="800" y="509">4</text><text x="1010" y="509">5</text><text x="1220" y="509">6</text><text x="1430" y="509">7</text></g>
+    </g>
+    <g text-anchor="middle">
+      <text x="170" y="300" fill="#18201d" font-size="22" font-weight="700">Requirement</text><text x="170" y="334" fill="#667069" font-size="17">Define the result</text><text x="170" y="360" fill="#667069" font-size="17">and boundary</text>
+      <text x="380" y="615" fill="#18201d" font-size="22" font-weight="700">Concept</text><text x="380" y="649" fill="#667069" font-size="17">Prove feasibility</text><text x="380" y="675" fill="#667069" font-size="17">and expose risk</text>
+      <text x="590" y="300" fill="#18201d" font-size="22" font-weight="700">Detailed design</text><text x="590" y="334" fill="#667069" font-size="17">Release what</text><text x="590" y="360" fill="#667069" font-size="17">will be built</text>
+      <text x="800" y="615" fill="#18201d" font-size="22" font-weight="700">Factory acceptance</text><text x="800" y="649" fill="#667069" font-size="17">Prove the built system</text><text x="800" y="675" fill="#667069" font-size="17">before shipment</text>
+      <text x="1010" y="300" fill="#18201d" font-size="22" font-weight="700">Site acceptance</text><text x="1010" y="334" fill="#667069" font-size="17">Prove installation</text><text x="1010" y="360" fill="#667069" font-size="17">and real interfaces</text>
+      <text x="1220" y="615" fill="#18201d" font-size="22" font-weight="700">Production release</text><text x="1220" y="649" fill="#667069" font-size="17">Transfer ownership</text><text x="1220" y="675" fill="#667069" font-size="17">to operations</text>
+      <text x="1430" y="300" fill="#18201d" font-size="22" font-weight="700">Sustained support</text><text x="1430" y="334" fill="#667069" font-size="17">Measure value</text><text x="1430" y="360" fill="#667069" font-size="17">and control change</text>
+    </g>
+    <rect x="100" y="755" width="1400" height="120" rx="22" fill="#18201d"/>
+    <text x="800" y="802" text-anchor="middle" fill="#d6a56f" font-size="18" font-weight="700">TRACEABILITY RULE</text>
+    <text x="800" y="842" text-anchor="middle" fill="#f6f4ef" font-size="23">Every test must point back to a released requirement, method, condition, result, and issue owner</text>
+  </g>
+</svg>
