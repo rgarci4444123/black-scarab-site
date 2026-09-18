@@ -32,6 +32,129 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "d-robotics-series-c-robot-computing",
+    title: "D Robotics raises $400 million for the computing layer beneath robots",
+    summary: "D Robotics plans to expand the chips and software that robot builders use for perception, reasoning, and control. The round is large, but the company did not disclose its valuation or identify the investors, and its shipment and adoption figures remain company claims.",
+    category: "Funding News",
+    publishedDate: "2026-09-18",
+    publishedAt: "2026-09-18T10:13:07-04:00",
+    publishedLabel: "September 18, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/d-robotics-series-c-robot-computing.png",
+    imageAlt: "Editorial illustration of one edge AI computing module connected to several types of robots",
+    imageCaption: "Original Black Scarab editorial illustration of a generic edge AI computing platform supporting several robot types. This conceptual scene does not depict a D Robotics product, a customer system, or a verified deployment.",
+    readingTime: "8 min read",
+    keyPoints: [
+      "D Robotics closed a $400 million Series C round to expand its Sunrise chip portfolio and build software across the robot development process.",
+      "The company says cumulative Sunrise shipments have exceeded 8 million units and that the S600 secured more than 20 embodied AI customers within six months of its November 2025 launch.",
+      "D Robotics did not disclose its valuation, investor names, revenue, shipment mix, pricing, customer volumes, or independent performance results."
+    ],
+    sections: [
+      {
+        heading: "A large round for the layer below the robot",
+        paragraphs: [
+          "D Robotics announced on September 17 that it has closed a $400 million Series C round. The company plans to use the capital to expand its Sunrise chip portfolio across different computing levels and develop software that covers more of the robot development process.",
+          "The announcement describes participation by a leading global internet company, investment institutions, and existing shareholders. It does not identify any investor, name a lead investor, disclose a valuation, or explain how much of the financing is primary capital for the company.",
+          "That omission matters because outside reports have published specific investor lists that do not appear in the English company announcement. Until an investor, filing, or the company confirms those names directly, the most defensible account is that the participants remain undisclosed."
+        ]
+      },
+      {
+        heading: "What D Robotics actually sells",
+        paragraphs: [
+          "D Robotics is not raising money to manufacture one humanoid. It develops the computing foundation that other teams use inside robots, including Sunrise processors, RDK developer kits, operating software, tools, and ready made applications.",
+          "The public RDK range illustrates the strategy. The X3 and X5 boards target accessible development with 5 and 10 TOPS of stated AI inference capacity. The S100 family moves to 80 or 128 TOPS. Documentation for the newer RDK S600 describes 560 TOPS, an 18 core Arm processor, and interfaces for cameras, storage, networking, and robot control.",
+          "Those figures are product specifications from D Robotics, not independent benchmarks. TOPS measures a theoretical rate of operations under defined conditions. It does not by itself establish model speed, accuracy, latency, energy use, thermal behavior, reliability, or total system cost in a working robot."
+        ]
+      },
+      {
+        heading: "One platform can reach many robot categories",
+        paragraphs: [
+          "A robot maker can buy a development kit, connect cameras and other sensors, adapt models, and move toward a custom production design without first creating a processor and software stack. D Robotics positions the same family across humanoids, quadrupeds, home service machines, companion robots, and autonomous mobile robots.",
+          "That breadth is commercially attractive. A chip and tool provider can participate in several product categories without predicting which individual robot company will win. Developers also gain a more consistent path from early testing to a production module.",
+          "The tradeoff is that robotics workloads are not interchangeable. A lawn mower, warehouse vehicle, robot arm, and humanoid have different safety requirements, sensor loads, control loops, power budgets, and economics. A broad portfolio helps only if the tools remain dependable across those differences."
+        ]
+      },
+      {
+        heading: "The S600 is the clearest bet on more capable machines",
+        paragraphs: [
+          "D Robotics says the Sunrise S600 computing chip launched in November 2025 and was adopted by more than 20 embodied AI customers within six months. The announcement names TARS, Spirit AI, X Square Robot, UBTECH, PaXini Tech, Astribot, Fourier, and Booster Robotics among the users.",
+          "According to the company, these projects cover humanoids, wheeled industrial robots, flexible electronics manufacturing, embodied AI models, and multimodal perception. It also says most of the projects are already in mass production.",
+          "Adoption can mean several things, from evaluation and development to a production purchase order. D Robotics did not disclose the number of chips ordered by any named customer, the robots in which they appear, the start date of production, or the revenue associated with the S600. The named relationships show ecosystem reach, but not yet the depth of commercial deployment."
+        ]
+      },
+      {
+        heading: "Eight million shipments need context",
+        paragraphs: [
+          "The company says cumulative Sunrise chip shipments exceeded 8 million units during the first half of 2026. It also says revenue grew several times from the same period one year earlier and that its embodied AI business entered mass production.",
+          "Those are meaningful claims, but the announcement does not provide the underlying numbers. It does not separate older chips used in established consumer products from newer processors intended for more demanding robots. It also does not disclose exact revenue, average selling price, gross margin, inventory, returns, or the share of units placed in active commercial machines.",
+          "A cumulative shipment total can demonstrate manufacturing experience and supplier relationships. It cannot tell buyers how much demand comes from current robotics programs, whether the product mix is moving toward higher value systems, or whether the business is profitable. No independent audit of the 8 million figure was provided with the announcement."
+        ]
+      },
+      {
+        heading: "Software may be the more durable advantage",
+        paragraphs: [
+          "The financing plan extends beyond silicon. D Robotics says it wants a software platform spanning the robot development chain. Its current ecosystem already includes a software stack based on ROS 2, a model and application hub, development tools, and documentation for deploying models on its processors.",
+          "That layer can reduce the engineering work required to connect perception, inference, motion control, and hardware interfaces. It can also create switching costs. Once a robot team has optimized models, drivers, and deployment procedures around one platform, changing suppliers may require significant testing and validation.",
+          "The company also operates the D Robotics Gravity Program, which offers technical, supply chain, commercial, and fundraising support to robot builders. D Robotics says more than 500 universities and 100,000 developers in over 20 countries have used its platform. Those community figures have not been independently audited, but they show that the company is trying to compete for developers before a robot reaches procurement."
+        ]
+      },
+      {
+        heading: "Horizon Robotics remains part of the ownership story",
+        paragraphs: [
+          "D Robotics originated inside Horizon Robotics, the publicly listed automotive computing company. A March 2026 filing from Horizon said D Robotics had been registered as its subsidiary in September 2023 and that the business needed more independent financing and management flexibility because robotics and automotive intelligence operate on different development cycles.",
+          "Horizon deconsolidated D Robotics from its financial statements in 2026. The filing said Horizon intended to remain the largest single shareholder, retain economic rights, and participate in decision making. It also said the gross margin of D Robotics was significantly lower than Horizon's main business and that removing certain D Robotics research expenses would improve Horizon's reported financial profile.",
+          "This does not mean the robotics business is weak. It does show that the $400 million round sits within a deliberate separation of capital needs, governance, and financial reporting. The new post round ownership percentages have not been disclosed publicly."
+        ]
+      },
+      {
+        heading: "The buyer test is more demanding than the funding test",
+        paragraphs: [
+          "A large financing round can fund product development, developer support, inventory, and customer engineering. It does not establish that a computing platform is the best choice for a specific robot.",
+          "Buyers still need model specific benchmarks, end to end latency, measured power consumption, thermal limits, functional safety support, cybersecurity policies, software maintenance terms, component availability, pricing, minimum orders, and a clear product life cycle. They also need to know which workloads run on the processor and which still depend on cloud computing or a second control system.",
+          "D Robotics publishes detailed hardware documentation for its development kits, which is useful for evaluation. The funding announcement does not provide comparative benchmarks against alternative robot computing platforms, field reliability data, safety certifications, or customer economics."
+        ]
+      },
+      {
+        heading: "What to watch next",
+        paragraphs: [
+          "The first signal is investor confirmation and a clearer capitalization picture. The identity of the strategic investor, the price paid, and the ownership retained by Horizon would make the financing easier to interpret.",
+          "The second is product mix. Shipment volume becomes more informative when D Robotics separates mature consumer applications from S600 and other high compute products used in new robots.",
+          "The third is deployment evidence. Named customer programs, production quantities, independent benchmarks, and repeat orders would show whether the developer ecosystem is converting into durable commercial demand.",
+          "Black Scarab's assessment is that the round reflects an important shift in robotics capital. Investors are not only financing the machines that attract attention. They are also financing the computing and development infrastructure that many machines may share. D Robotics now has substantial capital to pursue that position. The next test is whether its broad adoption claims become measurable, repeatable production business."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "D Robotics Series C announcement, published September 17, 2026",
+        url: "https://en.d-robotics.cc/blog/d-robotics-completes-400-million-in-series-c-funding-driving-the-robotics-industry-into-a-boom-in-product-categories"
+      },
+      {
+        label: "D Robotics product overview and RDK portfolio, accessed September 18, 2026",
+        url: "https://en.d-robotics.cc/"
+      },
+      {
+        label: "D Robotics RDK S600 technical documentation, accessed September 18, 2026",
+        url: "https://d-robotics.github.io/rdk_s_doc/en/RDK/"
+      },
+      {
+        label: "Horizon Robotics annual results filing on the D Robotics deconsolidation, published March 19, 2026",
+        url: "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0319/2026031900927.pdf"
+      },
+      {
+        label: "Gasgoo report on the Series C and previous 2026 financing, published September 18, 2026",
+        url: "https://autonews.gasgoo.com/articles/news/d-robotics-closes-400-million-series-c-funding-round-2100850533836685313"
+      },
+      {
+        label: "Vertex Holdings report on the $120 million Series B1, published March 25, 2026",
+        url: "https://vertexholdings.com/news/drobotics-secures-120m-series-b1-to-scale-robotics-infrastructure/"
+      }
+    ]
+  },
+  {
     slug: "figure-helix-2-5-zero-shot-homes",
     title: "Figure takes Helix 2.5 into 30 unfamiliar homes",
     summary: "Figure says Index pretraining raised complete task success from 9 percent to 56 percent across household work in 30 unseen homes. The transfer result is important, but the company has not published per task results, trial counts, operating speed, intervention frequency, or independent validation.",
