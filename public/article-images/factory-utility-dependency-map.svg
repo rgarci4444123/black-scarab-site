@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1050" viewBox="0 0 1800 1050" role="img" aria-labelledby="title desc">
+  <title id="title">Factory utility dependency map</title>
+  <desc id="desc">Production loads connect through distribution and isolation to plant utility sources, monitoring, maintenance, and growth.</desc>
+  <rect width="1800" height="1050" fill="#f5f0e6"/>
+  <text x="90" y="90" fill="#1d2420" font-family="Arial, sans-serif" font-size="48" font-weight="700">Design utilities from the process back to the source</text>
+  <text x="90" y="140" fill="#69716b" font-family="Arial, sans-serif" font-size="24">Every connection needs capacity, quality, isolation, monitoring, service, and a growth decision</text>
+  <g font-family="Arial, sans-serif">
+    <text x="215" y="215" text-anchor="middle" fill="#6a716c" font-size="21" font-weight="700">PRODUCTION LOADS</text>
+    <text x="900" y="215" text-anchor="middle" fill="#6a716c" font-size="21" font-weight="700">DISTRIBUTION AND CONTROL</text>
+    <text x="1575" y="215" text-anchor="middle" fill="#6a716c" font-size="21" font-weight="700">PLANT SOURCES</text>
+    <g fill="#fffdf7" stroke="#7f9589" stroke-width="3">
+      <rect x="70" y="255" width="300" height="100" rx="18"/><rect x="70" y="385" width="300" height="100" rx="18"/><rect x="70" y="515" width="300" height="100" rx="18"/><rect x="70" y="645" width="300" height="100" rx="18"/><rect x="70" y="775" width="300" height="100" rx="18"/>
+    </g>
+    <g fill="#1d2420" font-size="21" font-weight="700" text-anchor="middle"><text x="220" y="315">Assembly and tools</text><text x="220" y="445">Calibration and test</text><text x="220" y="575">Material movement</text><text x="220" y="705">Quality and laboratory</text><text x="220" y="835">People and building</text></g>
+    <rect x="590" y="255" width="620" height="620" rx="30" fill="#34413b"/>
+    <g fill="#f8f5ed"><text x="900" y="310" text-anchor="middle" font-size="28" font-weight="700">Utility architecture</text></g>
+    <g fill="#f7f4ed" stroke="#9eafa5" stroke-width="2"><rect x="640" y="355" width="240" height="100" rx="16"/><rect x="920" y="355" width="240" height="100" rx="16"/><rect x="640" y="485" width="240" height="100" rx="16"/><rect x="920" y="485" width="240" height="100" rx="16"/><rect x="640" y="615" width="240" height="100" rx="16"/><rect x="920" y="615" width="240" height="100" rx="16"/><rect x="640" y="745" width="520" height="85" rx="16"/></g>
+    <g fill="#26312c" text-anchor="middle"><text x="760" y="399" font-size="20" font-weight="700">Distribution</text><text x="760" y="429" font-size="16">Panels, pipes, ducts, paths</text><text x="1040" y="399" font-size="20" font-weight="700">Quality</text><text x="1040" y="429" font-size="16">Voltage, pressure, temperature</text><text x="760" y="529" font-size="20" font-weight="700">Isolation</text><text x="760" y="559" font-size="16">Safe local and plant control</text><text x="1040" y="529" font-size="20" font-weight="700">Monitoring</text><text x="1040" y="559" font-size="16">Load, condition, alarm, history</text><text x="760" y="659" font-size="20" font-weight="700">Maintenance</text><text x="760" y="689" font-size="16">Access, spares, bypass, recovery</text><text x="1040" y="659" font-size="20" font-weight="700">Resilience</text><text x="1040" y="689" font-size="16">Redundancy and failure response</text><text x="900" y="797" font-size="20" font-weight="700">Growth capacity and reserved connection points</text></g>
+    <g fill="#fffdf7" stroke="#b77a4a" stroke-width="3"><rect x="1430" y="255" width="300" height="100" rx="18"/><rect x="1430" y="385" width="300" height="100" rx="18"/><rect x="1430" y="515" width="300" height="100" rx="18"/><rect x="1430" y="645" width="300" height="100" rx="18"/><rect x="1430" y="775" width="300" height="100" rx="18"/></g>
+    <g fill="#1d2420" font-size="21" font-weight="700" text-anchor="middle"><text x="1580" y="305">Power and backup</text><text x="1580" y="435">Air, gas, and vacuum</text><text x="1580" y="565">Water and cooling</text><text x="1580" y="695">Ventilation and exhaust</text><text x="1580" y="825">Data and safety systems</text></g>
+    <g stroke="#c79a56" stroke-width="6" fill="none"><path d="M370 305 H575"/><path d="M370 435 H575"/><path d="M370 565 H575"/><path d="M370 695 H575"/><path d="M370 825 H575"/><path d="M1225 305 H1430"/><path d="M1225 435 H1430"/><path d="M1225 565 H1430"/><path d="M1225 695 H1430"/><path d="M1225 825 H1430"/></g>
+    <rect x="545" y="910" width="710" height="75" rx="18" fill="#7f9589"/><text x="900" y="957" text-anchor="middle" fill="#fff" font-size="23" font-weight="700">Verify the complete system under normal, peak, service, failure, and expansion conditions</text>
+  </g>
+</svg>

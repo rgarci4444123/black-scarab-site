@@ -21,6 +21,10 @@ export const factoryBuildersGuide = (): CaseStudyArticle => ({
       title: "How a Product Is Manufactured",
       href: "/insights/how-a-product-is-manufactured-bill-of-materials-production-line",
     },
+    next: {
+      title: "How to Design a Manufacturing Plant",
+      href: "/insights/how-to-design-a-manufacturing-plant-layout-process-flow",
+    },
   },
   industry: "Manufacturing",
   image: "/article-images/who-builds-a-factory-ecosystem-cover.png",
