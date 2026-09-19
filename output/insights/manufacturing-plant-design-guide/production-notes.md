@@ -52,9 +52,15 @@ Supporting diagrams:
 
 ## LinkedIn
 
-Status: publish only after the live website article is verified.
+Status: published and verified September 19, 2026.
 
 Required identity: Black Scarab company page, company ID `111898269`.
+
+Live company post:
+
+https://www.linkedin.com/feed/update/urn:li:share:7507127545738301440/?actorCompanyId=111898269
+
+The post copy, original cover, descriptive alternative text, Black Scarab company identity, and first comment containing the verified website link were visible on the live post.
 
 Draft post:
 
@@ -78,8 +84,8 @@ https://www.blackscarab.ai/insights/how-to-design-a-manufacturing-plant-layout-p
 
 ## X
 
-Status: prepare only after the website article, LinkedIn company post, and first link comment are live and verified.
+Status: concise X edition prepared after the website article, LinkedIn company post, and first link comment were live and verified.
 
 Required identity: `@BlackScarabAI`.
 
-Rodolfo publishes and verifies X. The final X copy and exact local image path must be prepared only after the first two publication steps are complete.
+Rodolfo publishes and verifies X. The final copy, alternative text, and exact local image path are saved in `output/x/manufacturing-plant-design-guide/publication.md`.
