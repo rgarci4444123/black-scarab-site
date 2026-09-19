@@ -29,6 +29,8 @@ The cover was generated with OpenAI image generation as an original Black Scarab
 * Passed the Next.js production build and TypeScript checks.
 * Verified desktop and mobile rendering, including mobile page width and table overflow behavior.
 * Verified the canonical URL, metadata, social image, Article structured data, BreadcrumbList structured data, source citations, author card, and cover loading.
+* Verified the live article, cover asset, canonical metadata, Article structured data, and main sitemap entry after deployment.
+* Submitted the live article and Insights index through IndexNow. The service accepted both URLs with status 200.
 
 The repository wide lint command remains blocked by existing `require()` imports in `output/x/plus-one/render.cjs`. That unrelated file was not changed. The new article files pass targeted lint.
 
