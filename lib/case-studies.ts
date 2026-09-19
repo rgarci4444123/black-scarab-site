@@ -2,6 +2,7 @@ import { humanoidAnatomyDeepDive } from "@/lib/humanoid-anatomy";
 import { mexicoAutomationDeepDive } from "@/lib/mexico-automation";
 import { antiochDeepDive } from "@/lib/antioch";
 import { palladyneAiDeepDive } from "@/lib/palladyne-ai";
+import { foxgloveDeepDive } from "@/lib/foxglove";
 import { plusOneRoboticsDeepDive } from "@/lib/plus-one-robotics";
 import { physicalAiVentureFundsDeepDive } from "@/lib/physical-ai-venture-funds";
 import { manufacturingPhysicalAiSeriesIntroduction } from "@/lib/manufacturing-physical-ai-series";
@@ -16318,6 +16319,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  foxgloveDeepDive(),
   robotActuatorsDeepDive(),
   factoryBuildersGuide(),
   productManufacturingGuide(),
