@@ -2,7 +2,7 @@
 
 ## Website
 
-Status: ready to publish September 19, 2026.
+Status: published and verified September 19, 2026.
 
 Canonical URL:
 
@@ -45,6 +45,10 @@ Supporting diagrams:
 * Approximate article length is 6,400 words, including table content.
 * The article contains no en dash or em dash punctuation.
 * The structured data contains the canonical main entity URL, Rodolfo Garcia Calderoni with CFA as the honorific suffix, an evidence based publication timestamp, and linked citations.
+* The live canonical URL returned HTTP 200 and rendered the complete article.
+* The live metadata, cover, author, canonical URL, publication timestamp, linked citations, and Article structured data were verified.
+* The live sitemap contains the canonical URL.
+* IndexNow accepted the insights index and canonical article URL with status 200.
 
 ## LinkedIn
 
