@@ -32,6 +32,138 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "faraday-future-nine-robot-launch",
+    title: "Faraday Future puts nine new robot configurations on sale",
+    summary: "Faraday Future has expanded from electric vehicles into a 24 product robotics catalog spanning humanoids, quadrupeds, and mobile manipulators. The prices are public and the products are listed for sale, but the company still needs to prove demand, deployment performance, and a durable business beyond imported hardware.",
+    category: "Robotics Business",
+    publishedDate: "2026-09-20",
+    publishedAt: "2026-09-20T08:13:37-04:00",
+    publishedLabel: "September 20, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/faraday-future-nine-robots.png",
+    imageAlt: "Editorial illustration of humanoid and quadruped robots arranged as a broad commercial product lineup",
+    imageCaption: "Original Black Scarab editorial illustration of a generic robotics product lineup. This conceptual scene does not depict Faraday Future products, an official launch event, or a verified customer deployment.",
+    readingTime: "9 min read",
+    keyPoints: [
+      "Faraday Future introduced nine configurations across five humanoid and quadruped models, with advertised prices ranging from $9,990 to $137,900.",
+      "The company says all nine products are available for sale and delivery, while its own filing says every robotics product relies on Chinese manufacturers and most rely on one supplier.",
+      "Faraday reported $1.14 million of robotics revenue and $353,000 of robotics gross profit for the first half of 2026, but shared operating expenses were not allocated to the robotics segment."
+    ],
+    sections: [
+      {
+        heading: "Five models became nine configurations overnight",
+        paragraphs: [
+          "Faraday Future introduced nine new robot configurations on September 19, placing humanoids for education and research beside quadrupeds intended for security, inspection, and hazardous industrial work.",
+          "The launch covers five models. The All New Futurist is a full size humanoid. Master Mini is a smaller humanoid offered in three computing configurations. Aegis Hyper is a large industrial quadruped. Aegis Mega comes in two wheel legged versions. Aegis Classic Ultra W is a lighter wheel legged quadruped.",
+          "Faraday says every configuration is available for sale and delivery through its own store, Amazon, and RobotShop. Its online catalog displays prices and specifications, which makes this more concrete than a concept announcement. It does not establish that all configurations are sitting in domestic inventory, shipping at volume, or working in customer operations."
+        ]
+      },
+      {
+        heading: "The prices span a wide market",
+        paragraphs: [
+          "Master Mini starts at $9,990. The Pro version costs $12,990 and the Ultra costs $17,990. Faraday positions the 95 centimeter humanoid for programming education, entertainment, and robot sports. The company lists 22 degrees of freedom, a stereo depth camera, ROS 2 support, and about 30 minutes of walking time for the standard model.",
+          "At the other end, the All New Futurist starts at $89,900 and the Ultra costs $129,900. Faraday says the flagship humanoid has 51 active degrees of freedom, or 71 with an upgraded dexterous hand system. It attributes about eight hours of operation under standard working conditions to a dual battery system. The Ultra is advertised with an NVIDIA Jetson Thor module and 700 TOPS of computing capacity.",
+          "The quadrupeds range from $12,990 for Aegis Classic Ultra W to $74,990 for Aegis Mega and $137,900 for Aegis Hyper. The Hyper product page lists a 59 kilogram body, an 85 kilogram maximum payload, IP67 protection, a four hour unloaded runtime, LiDAR, a camera, and support for autonomous navigation and custom development.",
+          "These are manufacturer specifications, not independent performance results. TOPS does not reveal how quickly or reliably a robot completes a task. Runtime depends on payload, terrain, sensors, computing load, temperature, and mission behavior. Maximum payload is also different from the weight a robot can carry continuously while meeting its mobility and endurance targets."
+        ]
+      },
+      {
+        heading: "The real product is meant to be the operating layer",
+        paragraphs: [
+          "Faraday is presenting the machines as endpoints inside a larger system. Its four part strategy combines an AI brain and developer platform, robot hardware, packaged industry solutions, and a data operation intended to collect experience and improve skills across the fleet.",
+          "The company announced packaged offerings for education, university research, security, and industrial inspection. A school package can combine robots, programming courses, teacher training, classroom management, and competitions. A security or inspection deployment can add thermal cameras, gas sensors, three dimensional scanning, mapping, alarms, remote operation, and fleet management.",
+          "That direction makes commercial sense. A buyer usually needs more than a mobile machine. It needs task software, sensors, integration, training, service, safety procedures, data controls, and a way to manage failures. The challenge is proving that one operating layer works consistently across machines with very different bodies, suppliers, compute platforms, and target environments.",
+          "Faraday also introduced RoboShare, a rental and asset operations platform. Rental can reduce the initial commitment for customers and give Faraday recurring service revenue. The company has not published standard rental prices, utilization assumptions, service levels, maintenance terms, or customer results."
+        ]
+      },
+      {
+        heading: "Nine new configurations do not mean nine clean sheet robots",
+        paragraphs: [
+          "The breadth of the catalog needs careful interpretation. Faraday describes an American robotics ecosystem, but its own disclosures say the hardware supply chain is external. In the risk language attached to the launch, the company says it relies on Chinese manufacturers for all robotics products and on one manufacturer for most of them.",
+          "Faraday has not publicly identified the manufacturer behind each new model, disclosed how much of the hardware it designed, or separated supplier software from its own AI, applications, and service layer. It also has not disclosed purchase commitments, inventory ownership, minimum orders, warranty reimbursement arrangements, or the gross profit expected from each product.",
+          "That does not make the strategy invalid. Distribution, localization, software, integration, financing, and service can create real value around hardware made by another company. It does change the diligence question. Buyers and investors need to know which capabilities belong to Faraday, which come from the original manufacturer, and what happens to support if the supplier relationship changes."
+        ]
+      },
+      {
+        heading: "The early revenue is real but still small",
+        paragraphs: [
+          "Faraday began recognizing robotics revenue in 2026. Its quarterly filing reports $1.14 million of robotics revenue and $353,000 of robotics gross profit for the six months ended June 30. The second quarter contributed $853,000 of that revenue.",
+          "The company separately said it recorded sales and shipments of 220 robotics units during the second quarter. It did not publish the model mix, customer mix, unit revenue, repeat purchase rate, or number of robots operating in paid customer workflows. Without that detail, the shipment count cannot show how much demand exists for the new higher priced products.",
+          "Faraday emphasizes positive product economics. The filing adds an important qualification: research, sales, marketing, and administrative expenses were not allocated to the robotics segment. The reported $353,000 is gross profit before those shared operating costs. It is not evidence that the robotics business or the company is profitable.",
+          "Management itself says robotics revenue is likely to remain limited and uneven until production volume, customer acceptance, delivery schedules, channel development, and working capital improve. That is a more useful baseline than treating the new catalog as proof of scale."
+        ]
+      },
+      {
+        heading: "The balance sheet leaves little room for a slow ramp",
+        paragraphs: [
+          "The robotics launch arrives while Faraday remains under financial pressure. At June 30, the company reported $11.2 million of unrestricted cash, an $83.8 million working capital deficit, and an accumulated deficit of about $4.78 billion. It lost $81.3 million during the first half of 2026.",
+          "The filing says recurring operating losses and negative operating cash flow raise substantial doubt about Faraday's ability to continue as a going concern for the following year. The company has used convertible financing, secured notes, share sales, staff reductions, and temporary salary reductions as it works to conserve cash and raise more capital.",
+          "Robotics can help Faraday create revenue faster than a new vehicle program if the company can source completed machines, add software and services, and sell through several channels. The same model can also be fragile. Supplier deposits, inventory, tariffs, integration work, warranty obligations, and customer support consume cash before a new business reaches dependable volume."
+        ]
+      },
+      {
+        heading: "Import policy is both an opportunity and a constraint",
+        paragraphs: [
+          "The United States has restricted new imports of foreign made humanoid and quadruped robots over security and supply chain concerns. Independent reporting from the Associated Press described the measure as a direct challenge to the Chinese manufacturers that dominate global unit volume.",
+          "Faraday argues that domestic data controls and a planned American supply chain can turn the policy change into an advantage. Its current disclosure points in the opposite direction for hardware because every robotics product still depends on a Chinese manufacturer.",
+          "Previously approved products may have a different path from newly introduced devices, and compliance can depend on the specific equipment and authorization. Faraday says additional compliance information is available through its product channels, but it has not published a model by model explanation of how each new configuration can be imported, sold, serviced, and updated under the current rules.",
+          "The company plans another partner event on September 28 focused on manufacturing, components, computing, certification, and compliance in the United States. Named production partners, binding supply agreements, domestic assembly milestones, and product specific authorizations would make the localization plan easier to evaluate."
+        ]
+      },
+      {
+        heading: "What a buyer should verify",
+        paragraphs: [
+          "The first question is availability. A price and an order button should lead to a written delivery date, exact configuration, included software, training, installation requirements, warranty coverage, spare parts plan, and refund terms.",
+          "The second is task performance. An industrial buyer should request a trial in representative terrain with the intended sensors and payload. The acceptance test should measure mission completion, intervention, localization loss, runtime under load, charging or battery exchange, communications failure, recovery, and safe stopping.",
+          "The third is ownership of the stack. Buyers need the original equipment manufacturer, software bill of materials, update responsibility, vulnerability response process, data location, remote access policy, interface documentation, and support commitments if either company changes direction.",
+          "Education customers need a different test. A school should examine curriculum quality, teacher preparation, student safety, repair turnaround, privacy controls, and the useful life of a costly machine. A robot soccer demonstration is engaging. It is not yet evidence of better educational outcomes."
+        ]
+      },
+      {
+        heading: "What comes next",
+        paragraphs: [
+          "Faraday has done something tangible: it assembled a broad catalog, published prices, opened product pages, and connected the machines to an application and service story. Few American companies offer buyers this many robot forms through one storefront.",
+          "The breadth is also the central risk. Twenty four products across humanoids, quadrupeds, and mobile manipulators can stretch engineering, compliance, inventory, service, and customer support before demand is proven. A catalog can grow much faster than operational competence.",
+          "The next useful evidence will not be another launch count. It will be named customers, paid production deployments, repeat orders, model level revenue, operating hours, intervention rates, service performance, and proof that the software layer transfers across suppliers and robot forms.",
+          "Black Scarab's assessment is that Faraday has created an unusual route into robotics by combining external hardware with domestic distribution, software, applications, and financing. The public prices make the proposition testable. The company now has to show that buyers are purchasing complete solutions and keeping the machines at work, not merely that more products can be placed in the catalog."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Faraday Future 919 robotics launch release, published September 19, 2026",
+        url: "https://www.businesswire.com/news/home/20260919657129/en/"
+      },
+      {
+        label: "Faraday Future robotics catalog and new product listings, accessed September 20, 2026",
+        url: "https://shop.ff.com/pages/new-arrival"
+      },
+      {
+        label: "Faraday Future Master Mini specifications and pricing, accessed September 20, 2026",
+        url: "https://shop.ff.com/products/ff-master-mini"
+      },
+      {
+        label: "Faraday Future Aegis Hyper specifications and pricing, accessed September 20, 2026",
+        url: "https://robotics.ff.com/us/fx-aegis-hyper/"
+      },
+      {
+        label: "Faraday Future quarterly filing for the period ended June 30, 2026",
+        url: "https://www.sec.gov/Archives/edgar/data/1805521/000162828026056740/ffie-20260630.htm"
+      },
+      {
+        label: "Faraday Future second quarter results and robotics operating update, published August 13, 2026",
+        url: "https://www.sec.gov/Archives/edgar/data/1805521/000121390026089124/ea030205601ex99-1.htm"
+      },
+      {
+        label: "Associated Press report on United States restrictions affecting foreign made humanoid and quadruped robots, published July 29, 2026",
+        url: "https://apnews.com/article/china-us-humanoid-robots-ban-tech-c9f5e3c94d91d00eff3b61b141fab366"
+      }
+    ]
+  },
+  {
     slug: "d-robotics-series-c-robot-computing",
     title: "D Robotics raises $400 million for the computing layer beneath robots",
     summary: "D Robotics plans to expand the chips and software that robot builders use for perception, reasoning, and control. The round is large, but the company did not disclose its valuation or identify the investors, and its shipment and adoption figures remain company claims.",
