@@ -11,6 +11,7 @@ import { manufacturingMachinesGuide } from "@/lib/manufacturing-machines-guide";
 import { productManufacturingGuide } from "@/lib/product-manufacturing-guide";
 import { factoryBuildersGuide } from "@/lib/factory-builders-guide";
 import { manufacturingPlantDesignGuide } from "@/lib/manufacturing-plant-design-guide";
+import { industrialAutomationGuide } from "@/lib/industrial-automation-guide";
 import { robotActuatorsDeepDive } from "@/lib/robot-actuators";
 
 export type CaseStudySection = {
@@ -16322,6 +16323,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 export const caseStudies: CaseStudyArticle[] = [
   foxgloveDeepDive(),
   robotActuatorsDeepDive(),
+  industrialAutomationGuide(),
   manufacturingPlantDesignGuide(),
   factoryBuildersGuide(),
   productManufacturingGuide(),

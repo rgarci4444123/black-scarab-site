@@ -20,6 +20,10 @@ export const manufacturingPlantDesignGuide = (): CaseStudyArticle => ({
       title: "Who Builds a Factory?",
       href: "/insights/who-builds-a-factory-siemens-rockwell-fanuc-integrators",
     },
+    next: {
+      title: "Industrial Automation Explained",
+      href: "/insights/industrial-automation-explained-plc-cnc-robots-factory-software",
+    },
   },
   industry: "Manufacturing",
   image: "/article-images/manufacturing-plant-design-cover.png",

@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 const baseUrl = "https://www.blackscarab.ai";
 const key = "1236d5c01b7fa121d6e83700200c5e67";
 const requestedEntry = process.argv[2];
-const [newsSource, insightsSource, palladyneSource, foxgloveSource, plusOneSource, antiochSource, physicalAiFundsSource, mexicoSource, manufacturingSeriesSource, manufacturingPlantSource, manufacturingMachinesSource, productManufacturingSource, factoryBuildersSource, manufacturingPlantDesignSource, robotActuatorsSource] = await Promise.all([
+const [newsSource, insightsSource, palladyneSource, foxgloveSource, plusOneSource, antiochSource, physicalAiFundsSource, mexicoSource, manufacturingSeriesSource, manufacturingPlantSource, manufacturingMachinesSource, productManufacturingSource, factoryBuildersSource, manufacturingPlantDesignSource, industrialAutomationSource, robotActuatorsSource] = await Promise.all([
   readFile(new URL("../lib/news.ts", import.meta.url), "utf8"),
   readFile(new URL("../lib/case-studies.ts", import.meta.url), "utf8"),
   readFile(new URL("../lib/palladyne-ai.ts", import.meta.url), "utf8"),
@@ -18,6 +18,7 @@ const [newsSource, insightsSource, palladyneSource, foxgloveSource, plusOneSourc
   readFile(new URL("../lib/product-manufacturing-guide.ts", import.meta.url), "utf8"),
   readFile(new URL("../lib/factory-builders-guide.ts", import.meta.url), "utf8"),
   readFile(new URL("../lib/manufacturing-plant-design-guide.ts", import.meta.url), "utf8"),
+  readFile(new URL("../lib/industrial-automation-guide.ts", import.meta.url), "utf8"),
   readFile(new URL("../lib/robot-actuators.ts", import.meta.url), "utf8"),
 ]);
 const newsSlugs = Array.from(
@@ -26,7 +27,7 @@ const newsSlugs = Array.from(
 );
 const insightSlugs = new Set(
   Array.from(
-    `${insightsSource}\n${palladyneSource}\n${foxgloveSource}\n${plusOneSource}\n${antiochSource}\n${physicalAiFundsSource}\n${mexicoSource}\n${manufacturingSeriesSource}\n${manufacturingPlantSource}\n${manufacturingMachinesSource}\n${productManufacturingSource}\n${factoryBuildersSource}\n${manufacturingPlantDesignSource}\n${robotActuatorsSource}`.matchAll(
+    `${insightsSource}\n${palladyneSource}\n${foxgloveSource}\n${plusOneSource}\n${antiochSource}\n${physicalAiFundsSource}\n${mexicoSource}\n${manufacturingSeriesSource}\n${manufacturingPlantSource}\n${manufacturingMachinesSource}\n${productManufacturingSource}\n${factoryBuildersSource}\n${manufacturingPlantDesignSource}\n${industrialAutomationSource}\n${robotActuatorsSource}`.matchAll(
       /slug:\s*"([^"]+)"/g,
     ),
     (match) => match[1],

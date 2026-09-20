@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Industrial control loop</title>
+  <desc id="desc">A production command passes through controller, drive, actuator, and process. A sensor returns feedback. A separate safety path governs hazardous energy.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0l10 5-10 5z" fill="#637067"/></marker>
+    <style>
+      .eyebrow{font:600 18px Arial,sans-serif;letter-spacing:3px;fill:#798078}.title{font:700 44px Georgia,serif;fill:#242722}.label{font:700 25px Arial,sans-serif;fill:#252824}.body{font:400 18px Arial,sans-serif;fill:#555b55}.mini{font:600 16px Arial,sans-serif;fill:#657168}.light{fill:#f7f2e8}.lightBody{fill:#d9ddd8}.box{fill:#fbf8ef;stroke:#9aa39a;stroke-width:2}.sage{fill:#dfe7dd;stroke:#758276;stroke-width:2}.dark{fill:#2d322e;stroke:#2d322e;stroke-width:2}.line{fill:none;stroke:#637067;stroke-width:4;marker-end:url(#arrow)}.safe{fill:none;stroke:#a96a42;stroke-width:4;stroke-dasharray:12 10;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#f3efe4"/>
+  <text x="90" y="92" class="eyebrow">INSIDE THE PHYSICAL AI FACTORY</text>
+  <text x="90" y="150" class="title">The industrial control loop</text>
+  <text x="90" y="190" class="body">A command is not proof. Feedback closes the loop.</text>
+
+  <rect x="90" y="295" width="210" height="150" rx="18" class="box"/>
+  <text x="195" y="348" text-anchor="middle" class="label">Command</text>
+  <text x="195" y="386" text-anchor="middle" class="body">Set point</text><text x="195" y="415" text-anchor="middle" class="body">Recipe · cycle request</text>
+  <rect x="360" y="295" width="220" height="150" rx="18" class="sage"/>
+  <text x="470" y="348" text-anchor="middle" class="label">Controller</text>
+  <text x="470" y="386" text-anchor="middle" class="body">Logic · state</text><text x="470" y="415" text-anchor="middle" class="body">Compare · decide</text>
+  <rect x="640" y="295" width="200" height="150" rx="18" class="box"/>
+  <text x="740" y="348" text-anchor="middle" class="label">Drive</text>
+  <text x="740" y="386" text-anchor="middle" class="body">Regulate power</text><text x="740" y="415" text-anchor="middle" class="body">Motion · torque</text>
+  <rect x="900" y="295" width="220" height="150" rx="18" class="box"/>
+  <text x="1010" y="348" text-anchor="middle" class="label">Actuator</text>
+  <text x="1010" y="386" text-anchor="middle" class="body">Motor · valve</text><text x="1010" y="415" text-anchor="middle" class="body">Cylinder · heater</text>
+  <rect x="1180" y="295" width="300" height="150" rx="18" class="dark"/>
+  <text x="1330" y="348" text-anchor="middle" class="label light">Physical process</text>
+  <text x="1330" y="386" text-anchor="middle" class="body lightBody">Move · hold · transform</text><text x="1330" y="415" text-anchor="middle" class="body lightBody">Inspect · test</text>
+  <path d="M300 370H350" class="line"/><path d="M580 370H630" class="line"/><path d="M840 370H890" class="line"/><path d="M1120 370H1170" class="line"/>
+
+  <rect x="855" y="585" width="250" height="130" rx="18" class="sage"/>
+  <text x="980" y="635" text-anchor="middle" class="label">Sensor</text>
+  <text x="980" y="672" text-anchor="middle" class="body">Measure actual state</text>
+  <path d="M1325 445V520Q1325 650 1115 650" class="line"/>
+  <path d="M855 650H470Q430 650 430 455" class="line"/>
+  <text x="600" y="585" class="mini">FEEDBACK · VALUE · STATUS · QUALITY</text>
+
+  <rect x="90" y="590" width="250" height="125" rx="18" fill="#f2ddcf" stroke="#a96a42" stroke-width="2"/>
+  <text x="215" y="635" text-anchor="middle" class="label">Safety control</text>
+  <text x="215" y="671" text-anchor="middle" class="body">Defined safe response</text>
+  <path d="M340 650H750Q1010 650 1010 455" class="safe"/>
+  <text x="390" y="690" class="mini" fill="#8f5735">INDEPENDENT SAFETY FUNCTION PATH</text>
+  <text x="90" y="820" class="body">Example: a rover fixture closes, a tool applies torque, sensors verify the result, and safety control governs hazardous motion.</text>
+</svg>
