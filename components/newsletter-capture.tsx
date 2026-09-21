@@ -26,7 +26,8 @@ export default function NewsletterCapture() {
   const excluded =
     pathname.startsWith("/intake") ||
     pathname.startsWith("/subscribe") ||
-    pathname.startsWith("/privacy");
+    pathname.startsWith("/privacy") ||
+    pathname.startsWith("/terms");
 
   useEffect(() => {
     if (excluded || !canShowPrompt()) {
