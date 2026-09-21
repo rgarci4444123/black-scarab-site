@@ -1,5 +1,14 @@
 # X publishing log
 
+## SoftBank and Robotics and AI Institute News post prepared, September 21, 2026
+
+* Website article published and verified: https://www.blackscarab.ai/news/softbank-robotics-ai-institute-acquisition.
+* LinkedIn company post and first link comment published and verified from Black Scarab company ID 111898269: https://www.linkedin.com/feed/update/urn:li:share:7507804566206328833/?actorCompanyId=111898269.
+* Concise X copy, descriptive alt text, and the exact cover path are saved in `output/x/softbank-rai-institute/publication.md`.
+* The cover is an original Black Scarab editorial illustration, not an official SoftBank, Robotics and AI Institute, ABB Robotics, or Boston Dynamics image.
+* The live `@BlackScarabAI` profile was checked before preparation. No matching SoftBank or Robotics and AI Institute post was visible among recent posts.
+* No X publication was performed. Rodolfo publishes and verifies X himself.
+
 ## Industrial automation deep dive post prepared, September 20, 2026
 
 * Website article published and verified: https://www.blackscarab.ai/insights/industrial-automation-explained-plc-cnc-robots-factory-software.
