@@ -1,6 +1,6 @@
 # Physical AI in Manufacturing Production Notes
 
-Status: Website edition drafted and locally verified. Not yet published.
+Status: Website edition published and verified September 21, 2026.
 
 Article slug: `physical-ai-manufacturing-robotics-machine-vision-digital-twins`
 
@@ -59,10 +59,16 @@ Completed September 20, 2026:
 8. All three desktop diagrams were visually inspected for contrast, spacing, and readable labels.
 9. The article and figure labels contain no em dash or en dash punctuation.
 
-Still required before publication:
+## Live publication verification
 
-1. Deploy and verify the live canonical URL, metadata, structured data, cover, and figures.
-2. Submit the verified URL through IndexNow.
+Completed September 21, 2026:
+
+1. The production deployment completed successfully from commit `a5431c4` on `main`.
+2. The canonical article URL returned HTTP status 200.
+3. The live page title, canonical URL, Open Graph title, Open Graph image, publication date, author, and Part 7 of 8 series label were verified.
+4. The live cover and article hero rendered correctly in the production browser.
+5. All three desktop diagrams were present in the production HTML.
+6. IndexNow accepted the canonical article URL and its related submission with HTTP status 200.
 
 ## Publication sequence
 
@@ -72,4 +78,4 @@ Still required before publication:
 4. Verify the LinkedIn post and comment.
 5. Only then prepare the X edition for Rodolfo to publish manually.
 
-Do not publish LinkedIn or prepare the X edition before the website article is live and verified.
+The website article is now live and verified. LinkedIn and X remain unpublished.
