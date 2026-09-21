@@ -32,6 +32,128 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "softbank-robotics-ai-institute-acquisition",
+    title: "SoftBank agrees to buy Robotics and AI Institute, report says",
+    summary: "SoftBank has reportedly agreed to acquire the research institute founded by Boston Dynamics creator Marc Raibert. The clearest opportunity is to connect its work in robot learning, manipulation, and mobility with the industrial scale SoftBank expects to gain through ABB Robotics, but the terms and integration plan remain undisclosed.",
+    category: "Robotics Business",
+    publishedDate: "2026-09-21",
+    publishedAt: "2026-09-21T10:06:37-04:00",
+    publishedLabel: "September 21, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/softbank-rai-institute-acquisition.png",
+    imageAlt: "Editorial illustration of a humanoid research robot beside an industrial automation cell",
+    imageCaption: "Original Black Scarab editorial illustration of generic robotics research moving toward industrial use. This conceptual scene does not depict SoftBank, ABB Robotics, Boston Dynamics, or an RAI Institute facility or product.",
+    readingTime: "7 min read",
+    keyPoints: [
+      "The Robot Report says SoftBank has agreed to acquire the Robotics and AI Institute from Hyundai Motor Group, with financial terms undisclosed and the transaction under CFIUS review.",
+      "RAI works on dexterous manipulation, learning based control, physical interaction models, navigation, and the social impact of robots, with a research horizon measured in years rather than product quarters.",
+      "The likely strategic fit is between RAI research and the industrial hardware, customers, software, and deployment experience SoftBank expects to assemble through ABB Robotics and its existing robotics portfolio."
+    ],
+    sections: [
+      {
+        heading: "The agreement is reported, not yet announced",
+        paragraphs: [
+          "SoftBank Group has agreed to acquire the Robotics and AI Institute from Hyundai Motor Group, according to reporting by The Robot Report on September 18. The publication cited multiple sources and said the transaction is being reviewed by the Committee on Foreign Investment in the United States.",
+          "Financial terms have not been disclosed. SoftBank and RAI had not issued public acquisition announcements as of September 21, and RAI told The Robot Report that it had nothing to share on the subject. That makes the agreement credible reporting rather than a completed and formally announced transaction.",
+          "A Hyundai disclosure provides supporting context. The group classified its 47.5 percent RAI interest as held for sale during the first half of 2026. Independent reporting in August identified SoftBank as the buyer, although the Hyundai filing itself did not disclose the counterparty, price, or closing schedule."
+        ]
+      },
+      {
+        heading: "RAI is a research engine, not a robot company",
+        paragraphs: [
+          "Marc Raibert founded RAI in 2022 after building Boston Dynamics into one of the most influential robotics companies in the world. Hyundai Motor Group and Boston Dynamics committed more than $400 million to establish the Cambridge, Massachusetts institute, which also operates a research office in Zurich.",
+          "The institute is designed to sit between a university laboratory and a corporate development group. It can pursue difficult problems with a longer time horizon than a product team, while still building hardware, running experiments, and transferring useful methods into working robots.",
+          "RAI organizes its work around five areas: dexterous manipulation, advanced learning for control, data driven models for physical interaction, navigation in difficult environments, and the social and ethical consequences of robotics. In plain language, it is trying to help robots move with more skill, handle objects with more confidence, learn new behavior faster, understand unfamiliar spaces, and operate around people more responsibly."
+        ]
+      },
+      {
+        heading: "The work is already reaching real machines",
+        paragraphs: [
+          "The most visible example is RAI's collaboration with Boston Dynamics. The two organizations created a shared reinforcement learning pipeline for the electric Atlas humanoid, with research focused on dynamic movement, whole body manipulation, and tasks that require the robot to coordinate its arms, legs, balance, and contact with the environment.",
+          "RAI has also deployed learned control policies on the Spot quadruped. The institute reported a running speed of 5.2 meters per second in a research demonstration after refining the simulation model used for training. That is a laboratory performance result, not evidence that commercial inspection robots should run through customer sites at that speed.",
+          "Other projects reveal the breadth of the program. AthenaZero uses multifingered hands and onboard vision to juggle. The Ultra Mobility Vehicle combines wheels, balance, and learned control to jump, hop, and move across difficult terrain. The Koala gripper explores more useful ways to collect human manipulation data. Each project attacks a different part of the same problem: physical intelligence requires software, data, sensing, control, and mechanical design to work together."
+        ]
+      },
+      {
+        heading: "ABB makes the logic easier to see",
+        paragraphs: [
+          "SoftBank agreed in October 2025 to acquire ABB's robotics business for $5.375 billion. The transaction was expected to close in the middle or later part of 2026, subject to regulatory approvals and other conditions.",
+          "ABB brings something RAI does not have: a large commercial organization with industrial robot arms, mobile robots, software, integrators, service capabilities, and customer relationships across more than 50 countries. SoftBank said the business has shipped more than 500,000 robots over its history.",
+          "RAI brings the opposite side of the equation. It develops methods that could make robots easier to teach, more capable in variable environments, and better at work involving contact, movement, and imperfect information. Pairing a research organization with a global industrial platform could shorten the path from a paper or demonstration to a tool that manufacturers can test on actual production tasks.",
+          "That is the clearest potential synergy, but it remains Black Scarab analysis. SoftBank has not announced that RAI will be folded into ABB Robotics, assigned to specific products, or measured against a commercial release schedule."
+        ]
+      },
+      {
+        heading: "A broader portfolio could create a useful test bed",
+        paragraphs: [
+          "SoftBank's robotics interests already include SoftBank Robotics Group, Berkshire Grey, AutoStore, Agile Robots, and investments in robot intelligence companies such as Skild AI. The portfolio spans service robots, warehouse automation, industrial systems, and software intended to work across different robot bodies.",
+          "RAI could give those companies a shared source of research in control, manipulation, data collection, and navigation. In return, the portfolio could give RAI access to a wider range of machines, operating environments, and practical problems than one laboratory can create on its own.",
+          "The potential data loop is particularly important. Research teams need varied hardware and task experience to test whether a learned capability transfers beyond one robot. Commercial operations generate failure cases, unusual objects, changing layouts, and maintenance constraints that rarely appear in a clean demonstration. A well governed feedback loop could make the research more useful and the deployed systems more adaptable.",
+          "SoftBank also controls Arm, whose processor designs are widely used in edge computing. It is reasonable to see potential connections among robot software, local inference, and efficient hardware. No RAI specific Arm integration has been announced, so that possibility should remain a strategic option rather than a claimed product plan."
+        ]
+      },
+      {
+        heading: "Why Hyundai may prefer a cleaner split",
+        paragraphs: [
+          "Hyundai is moving in the other direction. It has been increasing its control of Boston Dynamics and focusing its robotics strategy on product development, manufacturing, and commercial deployment around Atlas, Spot, and Stretch.",
+          "Long term research is valuable, but it consumes capital before it produces predictable revenue. The Asia Business Daily reported that Hyundai viewed the RAI sale as a way to concentrate on commercialization through Boston Dynamics. The same report cited Hyundai financial data showing a substantial loss at RAI during the first half of the prior year.",
+          "Selling the research institute while consolidating Boston Dynamics can therefore be read as specialization rather than retreat. Hyundai keeps the company responsible for products and deployment. SoftBank gains a laboratory whose time horizon and risk profile may fit better beside a diversified technology portfolio."
+        ]
+      },
+      {
+        heading: "The hard part is integration without suffocation",
+        paragraphs: [
+          "Research institutes create value differently from operating companies. They need freedom to publish, recruit leading scientists, explore approaches that may fail, and work across hardware platforms. A narrow demand for immediate product revenue could weaken the qualities SoftBank is trying to buy.",
+          "The opposite risk is isolation. If RAI remains an impressive laboratory with no clear path into SoftBank's operating companies, the acquisition may add talent and demonstrations without changing product performance or customer economics.",
+          "The best structure may preserve RAI's research independence while creating disciplined transfer programs with ABB Robotics and other portfolio companies. Those programs would need shared technical roadmaps, access to hardware and data, clear intellectual property rules, security controls, and product teams responsible for turning research into supported features.",
+          "CFIUS review adds another layer. RAI is a United States research organization working on advanced robotics and AI, while SoftBank is a Japanese buyer. The review outcome, any conditions placed on data or technology access, and the treatment of research partnerships could influence how the institute collaborates after closing."
+        ]
+      },
+      {
+        heading: "What to watch next",
+        paragraphs: [
+          "The first signal is formal confirmation. A company announcement should clarify the seller, the stake being acquired, the purchase price, expected closing date, regulatory conditions, and whether Marc Raibert will continue to lead the institute.",
+          "The second is organizational design. Investors and researchers should look for evidence that RAI will retain its publication culture and long research horizon while gaining practical routes into SoftBank's robot businesses.",
+          "The third is a specific transfer project. A joint program involving ABB hardware, a real industrial task, and a measurable RAI capability would be more informative than a broad promise about intelligent robots. Useful measures would include training time, task success, recovery from errors, integration effort, safety performance, and the amount of human intervention required.",
+          "Black Scarab's assessment is that RAI fills an important gap in SoftBank's emerging robotics stack. ABB can supply industrial hardware and access to customers. Other portfolio companies add automation platforms and robot software. RAI can work on the difficult intelligence that makes those systems more adaptable. The strategic diagram is persuasive. The next test is whether SoftBank can connect the boxes without turning an ambitious research institute into either a product department or an expensive island."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "The Robot Report acquisition report, published September 18, 2026",
+        url: "https://www.therobotreport.com/softbank-agrees-to-acquire-robotics-and-ai-institute/"
+      },
+      {
+        label: "RAI Institute research overview, accessed September 21, 2026",
+        url: "https://rai-inst.com/research/"
+      },
+      {
+        label: "RAI Institute 2025 research review, published in 2026",
+        url: "https://rai-inst.com/resources/blog/rai-institute-2025-a-year-of-innovation-for-robotics-and-ai/"
+      },
+      {
+        label: "RAI Institute and Boston Dynamics Atlas research partnership, published February 5, 2025",
+        url: "https://rai-inst.com/resources/press-release/boston-dynamics-atlas-partnership/"
+      },
+      {
+        label: "SoftBank agreement to acquire ABB Robotics, published October 8, 2025",
+        url: "https://group.softbank/en/news/press/20251008"
+      },
+      {
+        label: "The Asia Business Daily report on Hyundai's planned RAI divestiture, published August 21, 2026",
+        url: "https://view.asiae.co.kr/en/article/2026082107464731488"
+      },
+      {
+        label: "Hyundai Motor Group statement on acquiring SoftBank's remaining Boston Dynamics stake, published July 16, 2026",
+        url: "https://org.hyundai.com/worldwide/en/newsroom/detail/0000001225"
+      }
+    ]
+  },
+  {
     slug: "faraday-future-nine-robot-launch",
     title: "Faraday Future puts nine new robot configurations on sale",
     summary: "Faraday Future has expanded from electric vehicles into a 24 product robotics catalog spanning humanoids, quadrupeds, and mobile manipulators. The prices are public and the products are listed for sale, but the company still needs to prove demand, deployment performance, and a durable business beyond imported hardware.",
