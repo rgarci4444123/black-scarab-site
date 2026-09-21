@@ -41,6 +41,10 @@ export const physicalAiManufacturingGuide = (): CaseStudyArticle => ({
       title: "Industrial Automation Explained",
       href: "/insights/industrial-automation-explained-plc-cnc-robots-factory-software",
     },
+    next: {
+      title: "How to Build a Manufacturing Plant",
+      href: "/insights/how-to-build-a-manufacturing-plant-equipment-costs-installation",
+    },
   },
   industry: "Manufacturing",
   image: "/article-images/physical-ai-manufacturing-adaptive-factory-cover.png",

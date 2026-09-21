@@ -13,6 +13,7 @@ import { factoryBuildersGuide } from "@/lib/factory-builders-guide";
 import { manufacturingPlantDesignGuide } from "@/lib/manufacturing-plant-design-guide";
 import { industrialAutomationGuide } from "@/lib/industrial-automation-guide";
 import { physicalAiManufacturingGuide } from "@/lib/physical-ai-manufacturing-guide";
+import { manufacturingPlantBuildGuide } from "@/lib/manufacturing-plant-build-guide";
 import { robotActuatorsDeepDive } from "@/lib/robot-actuators";
 
 export type CaseStudySection = {
@@ -16322,6 +16323,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  manufacturingPlantBuildGuide(),
   physicalAiManufacturingGuide(),
   foxgloveDeepDive(),
   robotActuatorsDeepDive(),

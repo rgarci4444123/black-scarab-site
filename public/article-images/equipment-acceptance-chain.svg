@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">Equipment acceptance chain</title><desc id="desc">Requirements move through supplier design, factory testing, shipping, site testing, integration, and production release.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#6f8a7a"/></marker></defs>
+  <rect width="1200" height="660" rx="28" fill="#f6f2e8"/>
+  <text x="64" y="68" fill="#15191b" font-family="Georgia,serif" font-size="36">The equipment acceptance chain</text>
+  <text x="64" y="105" fill="#56605b" font-family="Arial,sans-serif" font-size="18">Acceptance criteria belong in the purchase package, not in the first argument after delivery.</text>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <g transform="translate(125 230)"><rect x="-78" y="-58" width="156" height="116" rx="18" fill="#15191b"/><text y="-12" fill="#fff" font-size="20" font-weight="700">Requirements</text><text y="18" fill="#b9c8bf" font-size="15">Function, rate, quality</text><text y="42" fill="#b9c8bf" font-size="15">interfaces, evidence</text></g>
+    <g transform="translate(315 230)"><rect x="-78" y="-58" width="156" height="116" rx="18" fill="#dfe8e2"/><text y="-12" fill="#15191b" font-size="20" font-weight="700">Supplier design</text><text y="18" fill="#56605b" font-size="15">Drawings, controls</text><text y="42" fill="#56605b" font-size="15">risk and service plan</text></g>
+    <g transform="translate(505 230)"><rect x="-78" y="-58" width="156" height="116" rx="18" fill="#91a79a"/><text y="-12" fill="#15191b" font-size="20" font-weight="700">Factory test</text><text y="18" fill="#26312d" font-size="15">Witness FAT</text><text y="42" fill="#26312d" font-size="15">record exceptions</text></g>
+    <g transform="translate(695 230)"><rect x="-78" y="-58" width="156" height="116" rx="18" fill="#fff" stroke="#91a79a" stroke-width="2"/><text y="-12" fill="#15191b" font-size="20" font-weight="700">Ship and install</text><text y="18" fill="#56605b" font-size="15">Preserve, receive</text><text y="42" fill="#56605b" font-size="15">place, connect</text></g>
+    <g transform="translate(885 230)"><rect x="-78" y="-58" width="156" height="116" rx="18" fill="#dfe8e2"/><text y="-12" fill="#15191b" font-size="20" font-weight="700">Site test</text><text y="18" fill="#56605b" font-size="15">SAT with real utilities</text><text y="42" fill="#56605b" font-size="15">and interfaces</text></g>
+    <g transform="translate(1075 230)"><rect x="-78" y="-58" width="156" height="116" rx="18" fill="#b16f50"/><text y="-12" fill="#fff" font-size="20" font-weight="700">Release</text><text y="18" fill="#fff4ec" font-size="15">Training, spares</text><text y="42" fill="#fff4ec" font-size="15">documents, signoff</text></g>
+  </g>
+  <g stroke="#6f8a7a" stroke-width="5" marker-end="url(#arrow)"><path d="M203 230H225"/><path d="M393 230H415"/><path d="M583 230H605"/><path d="M773 230H795"/><path d="M963 230H985"/></g>
+  <rect x="64" y="396" width="1072" height="176" rx="24" fill="#15191b"/>
+  <text x="92" y="438" fill="#f6f2e8" font-family="Arial,sans-serif" font-size="21" font-weight="700">Evidence that should follow the machine</text>
+  <g font-family="Arial,sans-serif" font-size="16" fill="#b9c8bf"><text x="92" y="482">• Approved drawings and software versions</text><text x="92" y="518">• Test procedures, results, exceptions, and closure</text><text x="430" y="482">• Manuals, backups, certificates, and spare parts list</text><text x="430" y="518">• Calibration, safety validation, and training records</text><text x="800" y="482">• Open item owner and due date</text><text x="800" y="518">• Warranty start and support response</text></g>
+  <text x="600" y="616" text-anchor="middle" fill="#56605b" font-family="Arial,sans-serif" font-size="17" font-weight="700">FAT reduces delivery risk. SAT proves the installed system. Production release proves the operating system.</text>
+</svg>

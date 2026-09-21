@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Factory build critical path</title><desc id="desc">Eight gated stages from a released production basis through the first accepted production run.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#91a79a"/></marker></defs>
+  <rect width="1200" height="680" rx="28" fill="#15191b"/>
+  <text x="64" y="68" fill="#f6f2e8" font-family="Georgia,serif" font-size="36">The factory build critical path</text>
+  <text x="64" y="105" fill="#b9c8bf" font-family="Arial,sans-serif" font-size="18">Every gate needs an owner, evidence, and a decision before capital moves forward.</text>
+  <path d="M120 240H1080" stroke="#91a79a" stroke-width="5" marker-end="url(#arrow)"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <g transform="translate(120 240)"><circle r="38" fill="#f6f2e8"/><text y="8" fill="#15191b" font-size="24" font-weight="700">1</text><text y="82" fill="#f6f2e8" font-size="18" font-weight="700">Production basis</text><text y="108" fill="#b9c8bf" font-size="15">Product, route, volume</text></g>
+    <g transform="translate(255 240)"><circle r="38" fill="#dfe8e2"/><text y="8" fill="#15191b" font-size="24" font-weight="700">2</text><text y="82" fill="#f6f2e8" font-size="18" font-weight="700">Project baseline</text><text y="108" fill="#b9c8bf" font-size="15">Scope, budget, schedule</text></g>
+    <g transform="translate(390 240)"><circle r="38" fill="#91a79a"/><text y="8" fill="#15191b" font-size="24" font-weight="700">3</text><text y="82" fill="#f6f2e8" font-size="18" font-weight="700">Purchase</text><text y="108" fill="#b9c8bf" font-size="15">RFQ and contracts</text></g>
+    <g transform="translate(525 240)"><circle r="38" fill="#f6f2e8"/><text y="8" fill="#15191b" font-size="24" font-weight="700">4</text><text y="82" fill="#f6f2e8" font-size="18" font-weight="700">Prepare site</text><text y="108" fill="#b9c8bf" font-size="15">Permits and utilities</text></g>
+    <g transform="translate(660 240)"><circle r="38" fill="#dfe8e2"/><text y="8" fill="#15191b" font-size="24" font-weight="700">5</text><text y="82" fill="#f6f2e8" font-size="18" font-weight="700">Accept at factory</text><text y="108" fill="#b9c8bf" font-size="15">Witness FAT evidence</text></g>
+    <g transform="translate(795 240)"><circle r="38" fill="#91a79a"/><text y="8" fill="#15191b" font-size="24" font-weight="700">6</text><text y="82" fill="#f6f2e8" font-size="18" font-weight="700">Install</text><text y="108" fill="#b9c8bf" font-size="15">Place and connect</text></g>
+    <g transform="translate(930 240)"><circle r="38" fill="#f6f2e8"/><text y="8" fill="#15191b" font-size="24" font-weight="700">7</text><text y="82" fill="#f6f2e8" font-size="18" font-weight="700">Commission</text><text y="108" fill="#b9c8bf" font-size="15">Prove the full system</text></g>
+    <g transform="translate(1065 240)"><circle r="38" fill="#b16f50"/><text y="8" fill="#fff" font-size="24" font-weight="700">8</text><text y="82" fill="#f6f2e8" font-size="18" font-weight="700">Release</text><text y="108" fill="#b9c8bf" font-size="15">First accepted run</text></g>
+  </g>
+  <rect x="64" y="420" width="1072" height="176" rx="24" fill="#26312d" stroke="#6f8a7a" stroke-width="2"/>
+  <text x="92" y="463" fill="#f6f2e8" font-family="Arial,sans-serif" font-size="21" font-weight="700">The four synchronized workstreams</text>
+  <g font-family="Arial,sans-serif" font-size="17">
+    <text x="92" y="506" fill="#dfe8e2">Facility</text><text x="250" y="506" fill="#b9c8bf">building work • power • air • network • inspections</text>
+    <text x="92" y="542" fill="#dfe8e2">Equipment</text><text x="250" y="542" fill="#b9c8bf">design • fabrication • FAT • shipping • installation • SAT</text>
+    <text x="650" y="506" fill="#dfe8e2">Operating system</text><text x="830" y="506" fill="#b9c8bf">people • training • quality • maintenance • material</text>
+    <text x="650" y="542" fill="#dfe8e2">Cash and risk</text><text x="830" y="542" fill="#b9c8bf">payments • insurance • contingency • working capital</text>
+  </g>
+  <text x="600" y="636" text-anchor="middle" fill="#91a79a" font-family="Arial,sans-serif" font-size="17" font-weight="700">The opening date is the intersection of all four workstreams, not the delivery date of the machine.</text>
+</svg>
