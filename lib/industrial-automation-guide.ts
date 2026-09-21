@@ -20,6 +20,10 @@ export const industrialAutomationGuide = (): CaseStudyArticle => ({
       title: "How to Design a Manufacturing Plant",
       href: "/insights/how-to-design-a-manufacturing-plant-layout-process-flow",
     },
+    next: {
+      title: "Physical AI in Manufacturing",
+      href: "/insights/physical-ai-manufacturing-robotics-machine-vision-digital-twins",
+    },
   },
   industry: "Manufacturing",
   image: "/article-images/industrial-automation-factory-nervous-system-cover.png",

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Physical AI edge architecture</title><desc id="desc">Architecture from the physical process and controls through edge, plant, engineering, and external services.</desc>
+  <rect width="1200" height="650" rx="28" fill="#f6f2e8"/>
+  <text x="70" y="70" fill="#15191b" font-family="Georgia,serif" font-size="36">Where physical AI work runs</text>
+  <text x="70" y="106" fill="#56605b" font-family="Arial,sans-serif" font-size="18">Timing, authority, availability, and data rights determine placement.</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="70" y="150" width="1060" height="100" rx="20" fill="#15191b"/><text x="100" y="190" fill="#f6f2e8" font-size="22" font-weight="700">Physical process and released control</text><text x="100" y="224" fill="#b9c8bf" font-size="17">Sensors • drives • PLC • robot controller • safety • tools • product</text><text x="1050" y="205" text-anchor="end" fill="#f6f2e8" font-size="16">Milliseconds to seconds</text>
+    <rect x="70" y="275" width="515" height="120" rx="20" fill="#6f8a7a"/><text x="100" y="317" fill="#fff" font-size="22" font-weight="700">Machine and cell edge</text><text x="100" y="350" fill="#f0f5f2" font-size="17">Perception • local planning • buffering</text><text x="100" y="377" fill="#f0f5f2" font-size="17">Fast response • offline resilience • health</text>
+    <rect x="615" y="275" width="515" height="120" rx="20" fill="#dfe8e2"/><text x="645" y="317" fill="#15191b" font-size="22" font-weight="700">Plant systems</text><text x="645" y="350" fill="#56605b" font-size="17">MES • historian • quality • maintenance • fleet</text><text x="645" y="377" fill="#56605b" font-size="17">Identity • context • coordination • genealogy</text>
+    <rect x="70" y="420" width="515" height="120" rx="20" fill="#fff" stroke="#d2d8d3"/><text x="100" y="462" fill="#15191b" font-size="22" font-weight="700">Engineering and model lifecycle</text><text x="100" y="495" fill="#56605b" font-size="17">Data review • training • test • approval • rollback</text><text x="100" y="522" fill="#56605b" font-size="17">Released versions and change control</text>
+    <rect x="615" y="420" width="515" height="120" rx="20" fill="#fff" stroke="#d2d8d3"/><text x="645" y="462" fill="#15191b" font-size="22" font-weight="700">Governed external services</text><text x="645" y="495" fill="#56605b" font-size="17">Large analysis • supplier support • fleet learning</text><text x="645" y="522" fill="#56605b" font-size="17">Access, security, availability, and data rights</text>
+  </g>
+  <g stroke="#b16f50" stroke-width="4" fill="none"><path d="M330 250V275"/><path d="M870 250V275"/><path d="M330 395V420"/><path d="M870 395V420"/><path d="M585 335H615"/></g>
+  <rect x="70" y="575" width="1060" height="34" rx="17" fill="#31403a"/><text x="600" y="598" text-anchor="middle" fill="#f6f2e8" font-family="Arial,sans-serif" font-size="15" font-weight="700">No layer inherits production authority merely because it can exchange data.</text>
+</svg>

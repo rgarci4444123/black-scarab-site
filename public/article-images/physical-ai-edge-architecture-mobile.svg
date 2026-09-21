@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1160" role="img" aria-labelledby="title desc">
+  <title id="title">Physical AI edge architecture</title><desc id="desc">Vertical architecture from physical process to edge, plant, engineering, and external services.</desc>
+  <rect width="720" height="1160" rx="28" fill="#f6f2e8"/>
+  <text x="54" y="70" fill="#15191b" font-family="Georgia,serif" font-size="34">Where physical AI work runs</text>
+  <text x="54" y="108" fill="#56605b" font-family="Arial,sans-serif" font-size="17">Placement follows timing, authority, and resilience.</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="54" y="150" width="612" height="150" rx="20" fill="#15191b"/><text x="84" y="196" fill="#f6f2e8" font-size="22" font-weight="700">Physical process and control</text><text x="84" y="232" fill="#b9c8bf" font-size="17">Sensors • drives • PLC • robot • safety</text><text x="84" y="265" fill="#f6f2e8" font-size="16">Milliseconds to seconds</text>
+    <rect x="54" y="340" width="612" height="150" rx="20" fill="#6f8a7a"/><text x="84" y="386" fill="#fff" font-size="22" font-weight="700">Machine and cell edge</text><text x="84" y="422" fill="#f0f5f2" font-size="17">Perception • planning • buffering</text><text x="84" y="455" fill="#f0f5f2" font-size="17">Fast response • offline resilience</text>
+    <rect x="54" y="530" width="612" height="150" rx="20" fill="#dfe8e2"/><text x="84" y="576" fill="#15191b" font-size="22" font-weight="700">Plant systems</text><text x="84" y="612" fill="#56605b" font-size="17">MES • historian • quality • maintenance • fleet</text><text x="84" y="645" fill="#56605b" font-size="17">Identity • context • coordination</text>
+    <rect x="54" y="720" width="612" height="150" rx="20" fill="#fff" stroke="#d2d8d3"/><text x="84" y="766" fill="#15191b" font-size="22" font-weight="700">Engineering and model lifecycle</text><text x="84" y="802" fill="#56605b" font-size="17">Data • training • test • approval</text><text x="84" y="835" fill="#56605b" font-size="17">Released versions • rollback</text>
+    <rect x="54" y="910" width="612" height="150" rx="20" fill="#fff" stroke="#d2d8d3"/><text x="84" y="956" fill="#15191b" font-size="22" font-weight="700">Governed external services</text><text x="84" y="992" fill="#56605b" font-size="17">Large analysis • support • fleet learning</text><text x="84" y="1025" fill="#56605b" font-size="17">Access • security • data rights</text>
+  </g>
+  <g stroke="#b16f50" stroke-width="5"><path d="M360 300V340"/><path d="M360 490V530"/><path d="M360 680V720"/><path d="M360 870V910"/></g>
+  <rect x="54" y="1090" width="612" height="42" rx="20" fill="#31403a"/><text x="360" y="1117" text-anchor="middle" fill="#f6f2e8" font-family="Arial,sans-serif" font-size="15" font-weight="700">Data exchange does not grant production authority.</text>
+</svg>
