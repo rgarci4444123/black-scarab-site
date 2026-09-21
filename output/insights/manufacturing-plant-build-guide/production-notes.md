@@ -1,6 +1,6 @@
 # How to Build a Manufacturing Plant Production Notes
 
-Status: Website edition drafted and locally verified. Not yet published.
+Status: Website edition published and verified. LinkedIn and X were not published.
 
 Article slug: `how-to-build-a-manufacturing-plant-equipment-costs-installation`
 
@@ -52,6 +52,21 @@ The project gates, factory models, responsibility framework, RFQ structure, comm
 5. Prepare the X edition for Rodolfo only after the website and LinkedIn publications are live and verified.
 
 Do not publish LinkedIn or prepare the X edition before the website article is live and verified.
+
+## Website publication
+
+Published and verified September 21, 2026.
+
+Live canonical URL:
+
+`https://www.blackscarab.ai/insights/how-to-build-a-manufacturing-plant-equipment-costs-installation`
+
+- Production returned the complete Part 8 article with the correct title, author, publication date, cover, diagrams, tables, sources, related articles, and Part 8 of 8 series navigation.
+- The canonical metadata and Open Graph image point to the live Black Scarab domain.
+- Structured data contains Organization, WebSite, Article, and BreadcrumbList entries. The Article entry identifies Rodolfo Garcia Calderoni with `CFA` as the honorific suffix and uses the correct publication timestamp.
+- The production cover returned HTTP 200 and the main sitemap contained the canonical article URL.
+- IndexNow accepted the article and sitemap submission with HTTP status 200.
+- Per Rodolfo's instruction, no LinkedIn publication was performed. No X publication or draft was prepared.
 
 ## Local verification
 
