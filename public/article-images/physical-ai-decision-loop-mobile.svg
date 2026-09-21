@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1240" role="img" aria-labelledby="title desc">
+  <title id="title">Physical AI decision loop</title><desc id="desc">Vertical loop from sensing through verified physical work.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#6f8a7a"/></marker></defs>
+  <rect width="720" height="1240" rx="28" fill="#15191b"/>
+  <text x="54" y="70" fill="#f6f2e8" font-family="Georgia,serif" font-size="34">The physical AI decision loop</text>
+  <text x="54" y="106" fill="#b9c8bf" font-family="Arial,sans-serif" font-size="17">Observation becomes verified physical work.</text>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <g transform="translate(360 190)"><rect x="-230" y="-48" width="460" height="96" rx="18" fill="#f6f2e8"/><text y="-5" fill="#15191b" font-size="22" font-weight="700">1. Sense</text><text y="27" fill="#56605b" font-size="17">Images, signals, and context</text></g>
+    <g transform="translate(360 330)"><rect x="-230" y="-48" width="460" height="96" rx="18" fill="#dfe8e2"/><text y="-5" fill="#15191b" font-size="22" font-weight="700">2. Estimate</text><text y="27" fill="#56605b" font-size="17">Relevant state and uncertainty</text></g>
+    <g transform="translate(360 470)"><rect x="-230" y="-48" width="460" height="96" rx="18" fill="#91a79a"/><text y="-5" fill="#15191b" font-size="22" font-weight="700">3. Decide</text><text y="27" fill="#26312d" font-size="17">Choose a permitted task action</text></g>
+    <g transform="translate(360 610)"><rect x="-230" y="-48" width="460" height="96" rx="18" fill="#fff"/><text y="-5" fill="#15191b" font-size="22" font-weight="700">4. Execute</text><text y="27" fill="#56605b" font-size="17">Released deterministic control</text></g>
+    <g transform="translate(360 750)"><rect x="-230" y="-48" width="460" height="96" rx="18" fill="#b16f50"/><text y="-5" fill="#fff" font-size="22" font-weight="700">5. Act</text><text y="27" fill="#fff4ec" font-size="17">Change the physical process</text></g>
+    <g transform="translate(360 890)"><rect x="-230" y="-48" width="460" height="96" rx="18" fill="#f6f2e8"/><text y="-5" fill="#15191b" font-size="22" font-weight="700">6. Verify</text><text y="27" fill="#56605b" font-size="17">Confirm accepted output</text></g>
+  </g>
+  <g stroke="#6f8a7a" stroke-width="5" marker-end="url(#arrow)"><path d="M360 240V274"/><path d="M360 380V414"/><path d="M360 520V554"/><path d="M360 660V694"/><path d="M360 800V834"/></g>
+  <path d="M130 890Q70 890 70 820V210Q70 190 122 190" fill="none" stroke="#6f8a7a" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="80" y="1000" width="560" height="92" rx="20" fill="#26312d" stroke="#6f8a7a" stroke-width="2"/><text x="360" y="1038" text-anchor="middle" fill="#f6f2e8" font-family="Arial,sans-serif" font-size="20" font-weight="700">Independent safety boundary</text><text x="360" y="1070" text-anchor="middle" fill="#b9c8bf" font-family="Arial,sans-serif" font-size="16">Risk reduction does not depend on model correctness.</text>
+  <rect x="54" y="1130" width="612" height="58" rx="22" fill="#dfe8e2"/><text x="360" y="1166" text-anchor="middle" fill="#31403a" font-family="Arial,sans-serif" font-size="16" font-weight="700">Monitor • record • validate • preserve rollback</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1180" role="img" aria-labelledby="title desc">
+  <title id="title">Manufacturing intelligence continuum</title><desc id="desc">Six stages from manual work to adaptive physical AI.</desc>
+  <rect width="720" height="1180" rx="28" fill="#f6f2e8"/>
+  <text x="54" y="70" fill="#15191b" font-family="Georgia,serif" font-size="34">From repetition to adaptation</text>
+  <text x="54" y="108" fill="#56605b" font-family="Arial,sans-serif" font-size="17">Capability expands while control and safety remain.</text>
+  <path d="M110 180V1010" stroke="#6f8a7a" stroke-width="8" stroke-linecap="round"/><path d="M92 990L110 1020L128 990" fill="none" stroke="#6f8a7a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g font-family="Arial,sans-serif">
+    <g transform="translate(0 160)"><circle cx="110" cy="70" r="18" fill="#15191b"/><rect x="160" y="15" width="490" height="110" rx="18" fill="#fff" stroke="#d2d8d3"/><text x="190" y="55" fill="#15191b" font-size="22" font-weight="700">Manual work</text><text x="190" y="88" fill="#56605b" font-size="17">Person senses, decides, and acts</text></g>
+    <g transform="translate(0 300)"><circle cx="110" cy="70" r="18" fill="#31403a"/><rect x="160" y="15" width="490" height="110" rx="18" fill="#fff" stroke="#d2d8d3"/><text x="190" y="55" fill="#15191b" font-size="22" font-weight="700">Mechanized</text><text x="190" y="88" fill="#56605b" font-size="17">Powered tool assists work</text></g>
+    <g transform="translate(0 440)"><circle cx="110" cy="70" r="18" fill="#4c6258"/><rect x="160" y="15" width="490" height="110" rx="18" fill="#fff" stroke="#d2d8d3"/><text x="190" y="55" fill="#15191b" font-size="22" font-weight="700">Fixed automation</text><text x="190" y="88" fill="#56605b" font-size="17">One designed arrangement</text></g>
+    <g transform="translate(0 580)"><circle cx="110" cy="70" r="18" fill="#6f8a7a"/><rect x="160" y="15" width="490" height="110" rx="18" fill="#fff" stroke="#d2d8d3"/><text x="190" y="55" fill="#15191b" font-size="22" font-weight="700">Programmable automation</text><text x="190" y="88" fill="#56605b" font-size="17">Released recipes and sequences</text></g>
+    <g transform="translate(0 720)"><circle cx="110" cy="70" r="18" fill="#91a79a"/><rect x="160" y="15" width="490" height="110" rx="18" fill="#fff" stroke="#d2d8d3"/><text x="190" y="55" fill="#15191b" font-size="22" font-weight="700">Perception based</text><text x="190" y="88" fill="#56605b" font-size="17">Estimate variable physical state</text></g>
+    <g transform="translate(0 860)"><circle cx="110" cy="70" r="18" fill="#b16f50"/><rect x="160" y="5" width="490" height="130" rx="18" fill="#15191b"/><text x="190" y="52" fill="#f6f2e8" font-size="22" font-weight="700">Adaptive physical AI</text><text x="190" y="87" fill="#dfe8e2" font-size="17">Choose among permitted actions</text></g>
+  </g>
+  <rect x="54" y="1070" width="612" height="60" rx="24" fill="#dfe8e2"/><text x="360" y="1108" text-anchor="middle" fill="#31403a" font-family="Arial,sans-serif" font-size="17" font-weight="700">Released control • independent safety • verified output</text>
+</svg>
