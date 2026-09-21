@@ -1,6 +1,6 @@
 # Physical AI in Manufacturing Production Notes
 
-Status: Website edition published and verified September 21, 2026.
+Status: Website and LinkedIn editions published and verified September 21, 2026.
 
 Article slug: `physical-ai-manufacturing-robotics-machine-vision-digital-twins`
 
@@ -70,6 +70,14 @@ Completed September 21, 2026:
 5. All three desktop diagrams were present in the production HTML.
 6. IndexNow accepted the canonical article URL and its related submission with HTTP status 200.
 
+## LinkedIn publication
+
+Published and verified September 21, 2026 from the Black Scarab company page, company ID `111898269`.
+
+Live post: `https://www.linkedin.com/feed/update/urn:li:share:7507661316514426880/?actorCompanyId=111898269`
+
+The post begins with `DEEP DIVE | Physical AI in Manufacturing`, uses the original editorial cover with descriptive alternative text, and states that the full report link is in the comments. The verified website article URL is visible as the first comment from Black Scarab.
+
 ## Publication sequence
 
 1. Publish and verify the website edition.
@@ -78,4 +86,4 @@ Completed September 21, 2026:
 4. Verify the LinkedIn post and comment.
 5. Only then prepare the X edition for Rodolfo to publish manually.
 
-The website article is now live and verified. LinkedIn and X remain unpublished.
+The website article and LinkedIn edition are now live and verified. X remains unpublished.
