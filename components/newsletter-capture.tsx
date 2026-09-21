@@ -27,7 +27,8 @@ export default function NewsletterCapture() {
     pathname.startsWith("/intake") ||
     pathname.startsWith("/subscribe") ||
     pathname.startsWith("/privacy") ||
-    pathname.startsWith("/terms");
+    pathname.startsWith("/terms") ||
+    pathname.startsWith("/muse");
 
   useEffect(() => {
     if (excluded || !canShowPrompt()) {
