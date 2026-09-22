@@ -1,20 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1240" role="img" aria-labelledby="title desc">
-  <title id="title">Equipment acceptance chain</title><desc id="desc">Vertical chain from requirements to production release.</desc>
-  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#6f8a7a"/></marker></defs>
-  <rect width="720" height="1240" rx="28" fill="#f6f2e8"/>
-  <text x="48" y="66" fill="#15191b" font-family="Georgia,serif" font-size="34">The equipment acceptance chain</text>
-  <text x="48" y="102" fill="#56605b" font-family="Arial,sans-serif" font-size="17">Define the evidence before purchase.</text>
-  <g font-family="Arial,sans-serif" text-anchor="middle">
-    <g transform="translate(360 184)"><rect x="-250" y="-45" width="500" height="90" rx="18" fill="#15191b"/><text y="-4" fill="#fff" font-size="21" font-weight="700">1. Requirements</text><text y="26" fill="#b9c8bf" font-size="16">Function, rate, quality, interfaces, evidence</text></g>
-    <g transform="translate(360 314)"><rect x="-250" y="-45" width="500" height="90" rx="18" fill="#dfe8e2"/><text y="-4" fill="#15191b" font-size="21" font-weight="700">2. Supplier design</text><text y="26" fill="#56605b" font-size="16">Drawings, controls, risk, service plan</text></g>
-    <g transform="translate(360 444)"><rect x="-250" y="-45" width="500" height="90" rx="18" fill="#91a79a"/><text y="-4" fill="#15191b" font-size="21" font-weight="700">3. Factory test</text><text y="26" fill="#26312d" font-size="16">Witness FAT and close exceptions</text></g>
-    <g transform="translate(360 574)"><rect x="-250" y="-45" width="500" height="90" rx="18" fill="#fff" stroke="#91a79a" stroke-width="2"/><text y="-4" fill="#15191b" font-size="21" font-weight="700">4. Ship and install</text><text y="26" fill="#56605b" font-size="16">Preserve, receive, place, connect</text></g>
-    <g transform="translate(360 704)"><rect x="-250" y="-45" width="500" height="90" rx="18" fill="#dfe8e2"/><text y="-4" fill="#15191b" font-size="21" font-weight="700">5. Site test</text><text y="26" fill="#56605b" font-size="16">SAT with real utilities and interfaces</text></g>
-    <g transform="translate(360 834)"><rect x="-250" y="-45" width="500" height="90" rx="18" fill="#b16f50"/><text y="-4" fill="#fff" font-size="21" font-weight="700">6. Production release</text><text y="26" fill="#fff4ec" font-size="16">Training, spares, documents, signoff</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Equipment acceptance chain</title><desc id="desc">Six equipment acceptance stages with evidence that travels through release.</desc>
+  <rect width="720" height="1120" rx="28" fill="#f6f2e8"/>
+  <text x="44" y="64" fill="#15191b" font-family="Georgia,serif" font-size="34">The equipment acceptance chain</text>
+  <text x="44" y="100" fill="#56605b" font-family="Arial,sans-serif" font-size="17">Define proof before purchase and preserve it through release.</text>
+  <line x1="82" y1="168" x2="82" y2="674" stroke="#91a79a" stroke-width="4"/>
+  <g font-family="Arial,sans-serif">
+    <g transform="translate(82 174)"><circle r="27" fill="#15191b"/><text y="7" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">01</text><text x="50" y="-4" fill="#15191b" font-size="21" font-weight="700">Requirements</text><text x="50" y="23" fill="#56605b" font-size="16">Function, quality, interfaces, and evidence</text></g>
+    <g transform="translate(82 274)"><circle r="27" fill="#6f8a7a"/><text y="7" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">02</text><text x="50" y="-4" fill="#15191b" font-size="21" font-weight="700">Supplier design</text><text x="50" y="23" fill="#56605b" font-size="16">Drawings, controls, risk, and service plan</text></g>
+    <g transform="translate(82 374)"><circle r="27" fill="#52675c"/><text y="7" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">03</text><text x="50" y="-4" fill="#15191b" font-size="21" font-weight="700">Factory test</text><text x="50" y="23" fill="#56605b" font-size="16">Witness FAT, exercise faults, record exceptions</text></g>
+    <g transform="translate(82 474)"><circle r="27" fill="#15191b"/><text y="7" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">04</text><text x="50" y="-4" fill="#15191b" font-size="21" font-weight="700">Install</text><text x="50" y="23" fill="#56605b" font-size="16">Preserve, receive, connect, and control changes</text></g>
+    <g transform="translate(82 574)"><circle r="27" fill="#6f8a7a"/><text y="7" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">05</text><text x="50" y="-4" fill="#15191b" font-size="21" font-weight="700">Site test</text><text x="50" y="23" fill="#56605b" font-size="16">Use real utilities and prove interfaces</text></g>
+    <g transform="translate(82 674)"><circle r="27" fill="#b96f4d"/><text y="7" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">06</text><text x="50" y="-4" fill="#15191b" font-size="21" font-weight="700">Production release</text><text x="50" y="23" fill="#56605b" font-size="16">Train the team, transfer spares, approve output</text></g>
   </g>
-  <g stroke="#6f8a7a" stroke-width="5" marker-end="url(#arrow)"><path d="M360 230V260"/><path d="M360 360V390"/><path d="M360 490V520"/><path d="M360 620V650"/><path d="M360 750V780"/></g>
-  <rect x="48" y="930" width="624" height="232" rx="24" fill="#15191b"/>
-  <text x="76" y="972" fill="#f6f2e8" font-family="Arial,sans-serif" font-size="20" font-weight="700">Evidence that follows the machine</text>
-  <g font-family="Arial,sans-serif" font-size="16" fill="#b9c8bf"><text x="76" y="1014">• Approved drawings and software</text><text x="76" y="1050">• Test results and exception closure</text><text x="76" y="1086">• Manuals, backups, certificates, spares</text><text x="76" y="1122">• Calibration, validation, training, support</text></g>
-  <text x="360" y="1202" text-anchor="middle" fill="#56605b" font-family="Arial,sans-serif" font-size="15" font-weight="700">Factory test, site test, then production release.</text>
+  <rect x="44" y="742" width="632" height="300" rx="22" fill="#15191b"/>
+  <text x="70" y="786" fill="#f6f2e8" font-family="Arial,sans-serif" font-size="19" font-weight="700">EVIDENCE TRAVELS WITH THE MACHINE</text>
+  <g font-family="Arial,sans-serif" font-size="16" fill="#d7e0da"><circle cx="76" cy="832" r="5" fill="#91a79a"/><text x="94" y="838">Approved drawings and software versions</text><circle cx="76" cy="876" r="5" fill="#91a79a"/><text x="94" y="882">Test results and exception closure</text><circle cx="76" cy="920" r="5" fill="#91a79a"/><text x="94" y="926">Manuals, backups, certificates, and spares</text><circle cx="76" cy="964" r="5" fill="#91a79a"/><text x="94" y="970">Calibration, validation, training, and support</text></g>
+  <text x="360" y="1020" text-anchor="middle" fill="#91a79a" font-family="Arial,sans-serif" font-size="15">Factory test, site test, then production release.</text>
+  <text x="360" y="1082" text-anchor="middle" fill="#52675c" font-family="Arial,sans-serif" font-size="16" font-weight="700">Acceptance is an evidence chain, not a delivery event.</text>
 </svg>
