@@ -158,23 +158,6 @@ export default async function CaseStudyPage({ params }: Props) {
   const typeLabel = article.typeLabel ?? "Case Study";
   const industryHref = "/insights";
   const industryLinkLabel = "Insights index";
-  const ctaTitle = "Explore a commercial opportunity in Mexico";
-  const ctaDescription =
-    "If you are exploring how a physical AI technology could fit the Mexican market, Black Scarab can help assess the opportunity, map relevant stakeholders, and define a credible commercial next step.";
-  const secondaryCtaLabel =
-    article.industry === "Agriculture"
-      ? "Explore Agriculture"
-      : article.industry === "Manufacturing"
-        ? "Explore Manufacturing"
-        : article.industry === "Healthcare"
-          ? "Back to Insights"
-          : article.industry === "Transportation & Logistics"
-            ? "Back to Insights"
-            : article.industry === "Retail"
-              ? "Back to Insights"
-              : article.industry === "Smart Cities"
-                ? "Back to Insights"
-                : "Back to Insights";
   const relatedArticles = getRelatedArticles(article.slug, article.industry);
   const localAiPlacement = Object.hasOwn(
     localAiArticlePlacements,
@@ -256,11 +239,7 @@ export default async function CaseStudyPage({ params }: Props) {
       />
 
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
-        <SiteHeader
-          homeHref="/"
-          ctaLabel="Discuss an Opportunity"
-          ctaHref="/intake"
-        />
+        <SiteHeader homeHref="/" />
 
         <article data-insight-article>
           <InsightReadTracker slug={article.slug} />
@@ -318,12 +297,6 @@ export default async function CaseStudyPage({ params }: Props) {
                   </Link>
                 </div>
                 <div className="mt-8 flex flex-wrap items-center gap-4">
-                  <Link
-                    href="/intake"
-                    className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
-                  >
-                    Discuss an Opportunity
-                  </Link>
                   <Link
                     href="/insights"
                     className="rounded-full border border-[#ddd7cc] px-6 py-3 text-sm font-medium text-[#111827] transition hover:bg-white"
@@ -780,33 +753,6 @@ export default async function CaseStudyPage({ params }: Props) {
             </section>
           ) : null}
 
-          <section className="border-t border-[#efeae1] bg-[#faf8f3] px-6 py-14 md:px-10">
-            <div className="mx-auto max-w-4xl text-center">
-              <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
-                Next Step
-              </p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-                {ctaTitle}
-              </h2>
-              <p className="mt-4 text-lg leading-8 text-[#6b7280]">
-                {ctaDescription}
-              </p>
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-                <Link
-                  href="/intake"
-                  className="rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
-                >
-                  Discuss an Opportunity
-                </Link>
-                <Link
-                  href={industryHref}
-                  className="rounded-full border border-[#ddd7cc] px-6 py-3 text-sm font-medium text-[#111827] transition hover:bg-white"
-                >
-                  {secondaryCtaLabel}
-                </Link>
-              </div>
-            </div>
-          </section>
         </article>
 
         <footer className="border-t border-[#efeae1] px-6 py-6 text-center text-sm text-[#6b7280] md:px-10">

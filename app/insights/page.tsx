@@ -43,11 +43,7 @@ export default function InsightsPage() {
   return (
     <main className="min-h-screen bg-[#f6f4ef] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
-        <SiteHeader
-          homeHref="/"
-          ctaLabel="Discuss an Opportunity"
-          ctaHref="/intake"
-        />
+        <SiteHeader homeHref="/" />
 
         <section className="px-6 py-14 text-center md:px-10 md:py-18">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
@@ -109,14 +105,6 @@ export default function InsightsPage() {
             ))}
           </div>
 
-          <div className="mt-10 text-center">
-            <Link
-              href="/intake"
-              className="inline-block rounded-full bg-[#111827] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f2937]"
-            >
-              Contact Black Scarab
-            </Link>
-          </div>
         </section>
 
         <section className="border-t border-[#efeae1] px-6 py-14 md:px-10">
