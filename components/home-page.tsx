@@ -129,9 +129,7 @@ export default function HomePage() {
   const latestNews = newsUpdates[0];
   const featuredInsight =
     insights.find((insight) =>
-      insight.href.includes(
-        "mexico-physical-ai-manufacturing-nearshoring-automation",
-      ),
+      insight.href.includes("what-is-physical-ai-complete-guide"),
     ) ?? insights[0];
   const editorialCards = [
     {
@@ -181,8 +179,17 @@ export default function HomePage() {
           <div className="mx-auto grid max-w-[1460px] gap-10 lg:grid-cols-[minmax(0,0.88fr)_minmax(560px,1.12fr)] lg:items-center lg:gap-4">
             <div className="relative z-10">
               <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#536451] sm:text-xs">
-                News <span aria-hidden="true">·</span> Research{" "}
-                <span aria-hidden="true">·</span> Industry
+                <span className="sm:hidden">
+                  <span className="mb-2 block text-[9px] tracking-[0.24em] text-[#7a8878]">
+                    Coverage
+                  </span>
+                  News <span aria-hidden="true">·</span> Research{" "}
+                  <span aria-hidden="true">·</span> Industry
+                </span>
+                <span className="hidden sm:inline">
+                  News <span aria-hidden="true">·</span> Research{" "}
+                  <span aria-hidden="true">·</span> Industry
+                </span>
               </p>
               <h1 className="mt-7 max-w-[12ch] text-[clamp(3.25rem,6vw,6.6rem)] font-semibold leading-[0.91] tracking-[-0.065em] text-[#0b0d0b]">
                 Intelligence for the physical AI economy.

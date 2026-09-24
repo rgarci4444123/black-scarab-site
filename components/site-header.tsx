@@ -27,10 +27,10 @@ export default function SiteHeader({
   return (
     <header className="sticky top-0 z-30 border-b border-[#efeae1] bg-white/92 backdrop-blur">
       <div className="px-6 py-5 md:px-10">
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center justify-between gap-4 md:grid md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
           <Link
             href={homeHref}
-            className="flex items-center gap-3"
+            className="flex items-center gap-3 md:justify-self-start"
             onClick={() => setMobileOpen(false)}
           >
             <Image
@@ -45,7 +45,7 @@ export default function SiteHeader({
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-7 text-sm text-[#6b7280] md:flex">
+          <nav className="hidden items-center gap-7 text-sm text-[#6b7280] md:flex md:justify-self-center">
             {navLinks.map((item) =>
               item.isPage ? (
                 <Link key={item.label} href={item.href} className={linkClassName}>
@@ -59,7 +59,7 @@ export default function SiteHeader({
             )}
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 md:justify-self-end">
             {ctaLabel && ctaHref ? (
               <Link
                 href={ctaHref}
