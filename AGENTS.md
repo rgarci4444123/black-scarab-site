@@ -27,13 +27,13 @@ When Rodolfo provides a news snippet or requests an Insights deep dive:
 7. Make relevance to physical AI implicit. Do not add a generic section explaining why the subject belongs in physical AI.
 8. Never invent prices, hardware specifications, supplier relationships, customers, shipment volumes, performance results, or commercial evidence.
 9. Avoid unrelated NVIDIA references.
-10. Preserve the site's established ivory, charcoal, and muted sage design language.
+10. Preserve the site's established ivory, charcoal, and muted sage interface design language. Editorial artwork may use a much broader palette and visual language.
 
 News reports should use approachable business newsletter pacing, original reporting, and a reading time of roughly five to ten minutes. Read `docs/news-editorial-style.md` and `docs/news-publishing-workflow.md` before News work.
 
 Insights deep dives should be detailed Black Scarab analysis. Before drafting, review the existing FieldAI, Persona AI, and Palladyne AI deep dives for the established structure and level of depth. Cover the company, technology, edge architecture, hardware components and supported suppliers, system integration, applications, customers, commercial model, public pricing evidence, benefits, alternatives, practical buyer examples, limitations, and a Black Scarab verdict. Adapt the scope when evidence is unavailable rather than filling gaps with assumptions.
 
-Create an original editorial cover for each website article. Label generated imagery as an editorial illustration or interpretation, never as an official product photograph. Credit externally sourced images and confirm their intended editorial use before publication.
+Create an original editorial cover for each website article. Before generating it, read `docs/editorial-image-direction.md`, review recent covers, and choose a visual recipe that does not repeat their dominant medium, composition, palette, subject scale, or viewpoint. Label generated imagery as an editorial illustration or interpretation, never as an official product photograph. Credit externally sourced images and confirm their intended editorial use before publication.
 
 After the website article passes its editorial, metadata, structured data, lint, build, desktop, and mobile checks, deploy it and verify the live canonical URL. Submit the live article through the existing IndexNow workflow where applicable. Indexing is not guaranteed.
 

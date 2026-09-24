@@ -32,6 +32,149 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "amazon-indiana-robotics-manufacturing",
+    title: "Amazon plans a $100 million Indiana robotics factory",
+    summary: "Amazon will invest more than $100 million in a 585,000 square foot Greenwood manufacturing plant expected to open by 2028. The larger signal is a shift from proving individual warehouse robots to building the domestic factory network needed to deploy them at Amazon scale.",
+    category: "Robotics Manufacturing",
+    publishedDate: "2026-09-24",
+    publishedAt: "2026-09-24T11:48:37-04:00",
+    publishedLabel: "September 24, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/amazon-indiana-robotics-manufacturing.png",
+    imageAlt: "Top down editorial model showing two completed factories and two factory modules under construction on a cobalt work surface",
+    imageCaption: "Original Black Scarab editorial interpretation of manufacturing capacity expanding from two factories to four. The miniature buildings and construction materials are conceptual and do not depict an Amazon facility, production line, or disclosed site plan.",
+    readingTime: "8 min read",
+    keyPoints: [
+      "Amazon says the Greenwood plant will exceed $100 million in investment, cover 585,000 square feet, create 300 skilled jobs, and begin operations by 2028.",
+      "The facility is expected to combine fabrication, robotic welding, automated powder coating, and assembly, but Amazon has not identified the products, suppliers, or annual production capacity.",
+      "Outside reporting says the Indiana and Austin projects will expand Amazon's robot manufacturing network from two plants to four as the company supports more than one million deployed robots."
+    ],
+    sections: [
+      {
+        heading: "What Amazon announced",
+        paragraphs: [
+          "Amazon plans to invest more than $100 million in a new advanced manufacturing facility in Greenwood, Indiana. The 585,000 square foot plant is expected to launch by 2028 and create 300 manufacturing and engineering jobs.",
+          "The company says those roles will pay an average of nearly $100,000 per year. The planned workforce includes computer numerical control operators, welders, powder coating technicians, assemblers, manufacturing engineers, quality specialists, controls engineers, and program managers.",
+          "The announcement gives Amazon a second new United States robotics manufacturing project in roughly five weeks. In August, the company disclosed a separate Austin facility that is expected to employ between 300 and 500 people and produce robotics systems for its operations network."
+        ]
+      },
+      {
+        heading: "This is not another fulfillment center",
+        paragraphs: [
+          "Greenwood already sits inside a dense Amazon logistics footprint, but the new building is intended to make equipment rather than fill customer orders. Amazon says it will bring advanced fabrication, robotic welding, automated powder coating, and assembly under one roof, supported by AWS, artificial intelligence systems, and robotics inside the factory itself.",
+          "That process list matters because it reaches upstream from final assembly. Fabrication and welding create structural parts. Powder coating protects finished metal surfaces. Controls engineering connects machines, sensors, safety systems, and production data. Quality teams have to prove that each completed assembly can survive continuous industrial use.",
+          "Amazon describes the output as products that power its fulfillment and robotics network across North America. It has not identified a robot model, component family, annual unit capacity, or production split between Greenwood and its other factories. Calling it a robotics factory is reasonable in the context of Amazon's wider manufacturing expansion, but the announced product scope remains deliberately broad."
+        ]
+      },
+      {
+        heading: "The robot factory network is doubling",
+        paragraphs: [
+          "Amazon currently builds robots at two Massachusetts locations in North Reading and Westborough. The Westborough innovation hub opened with research laboratories, testing space, and manufacturing under one roof. Amazon said in 2022 that its production lines there could collectively build as many as 1,000 robots per day during production.",
+          "The Wall Street Journal reported that the planned plants in Austin and Greenwood will increase Amazon's robot manufacturing locations from two to four. The expansion reduces the concentration of production in Massachusetts while placing new capacity closer to major engineering, manufacturing, and logistics regions.",
+          "The two additions may not perform identical work. Austin was announced as a large robotics systems facility supported by the region's engineering and university ecosystem. Greenwood's disclosed process list looks especially suited to metal fabrication, finishing, assembly, and industrial controls. Amazon has not said which designs will be made at either site or whether Massachusetts will retain the most research intensive work."
+        ]
+      },
+      {
+        heading: "Amazon is both the manufacturer and the customer",
+        paragraphs: [
+          "Most robot manufacturers have to forecast demand across many customers before they commit to a new plant. Amazon has a different advantage. It owns the fulfillment network that consumes the machines, the software that coordinates them, and the operating data that reveals where more automation could create value.",
+          "Amazon says it has manufactured more than one million robots in the United States. Those systems are deployed across more than 300 facilities and assist employees with 75 percent of the customer orders the company delivers worldwide. The fleet spans mobile drive units, autonomous cart movers, robotic arms, inventory systems, packaging equipment, and newer manipulation systems with force sensing.",
+          "That installed base creates recurring demand for new units, spare parts, repairs, upgrades, and replacement equipment. It also creates a feedback loop. A failure in a fulfillment center can become a design change, a software update, a revised assembly test, or a new service procedure. Owning the factory shortens the distance between field evidence and the next production revision.",
+          "Black Scarab's read is that the bottleneck is moving. Amazon no longer needs to prove that warehouse robotics can work at scale. It needs enough dependable manufacturing capacity to spread increasingly capable systems across a very large installed network."
+        ]
+      },
+      {
+        heading: "Why Greenwood fits the plan",
+        paragraphs: [
+          "Amazon points to Indiana's manufacturing workforce, cost structure, transport links, and central location. The company says manufacturing represents about 24 percent of state economic output and employs more than 518,000 people. It also cites more than 2,500 industrial engineering graduates each year from institutions across the state.",
+          "Greenwood sits near Indianapolis and major road corridors, while Amazon already operates a large network across Indiana. The company reports more than $40 billion invested in the state since 2008 and more than 27,000 direct jobs. That existing presence should make it easier to connect a factory with internal logistics, training, maintenance, and procurement systems.",
+          "The location is also practical for distributing heavy industrial equipment. A centralized Midwest plant can reach fulfillment sites across North America without relying on coastal transport for every shipment. That advantage becomes more important when the product includes bulky frames, workcell structures, mobile robot assemblies, and replacement modules.",
+          "No supplier relationships were disclosed. It is therefore too early to say whether Greenwood will attract a local cluster of motor, gearbox, sensor, electronics, metalworking, or systems integration companies. The opportunity is plausible, but it is not yet commercial evidence."
+        ]
+      },
+      {
+        heading: "One million robots changes the factory equation",
+        paragraphs: [
+          "A fleet of this size makes small improvements financially meaningful. Amazon introduced DeepFleet in 2025 and said the artificial intelligence model could improve robot travel efficiency by 10 percent by coordinating routes and reducing congestion. Even if the hardware does not change, better fleet behavior can increase the value of every compatible machine already deployed.",
+          "The reverse is also true. Software improvements only matter when the physical equipment is available, reliable, and installed. More factory capacity can shorten deployment queues, regionalize service parts, support product revisions, and reduce the risk that a single manufacturing problem slows a network wide rollout.",
+          "Amazon's recent robot portfolio also demands more varied manufacturing. Hercules moves inventory pods. Proteus transports carts through open work areas. Sparrow and Robin manipulate packages or products. Sequoia combines mobile robots with containerized inventory. Vulcan adds force sensing for picking and stowing. Amazon has not said which of these systems, if any, will be made in Indiana, but the variety explains why one generic assembly line is unlikely to be enough."
+        ]
+      },
+      {
+        heading: "The labor story runs in both directions",
+        paragraphs: [
+          "The Greenwood announcement is a job creation story at the factory level. Three hundred positions with average pay near $100,000 would bring a mix of trades, technicians, engineers, quality staff, and managers into the Indianapolis region.",
+          "Inside fulfillment centers, the employment effect is more complicated. Amazon says its robots take on repetitive and physically demanding tasks, create technical career paths, and improve safety. In its Austin announcement, the company said global recordable injury rates had fallen more than 43 percent and lost time injury rates more than 70 percent over six years as systems like these expanded. Those are company figures and do not by themselves isolate the effect of robotics from other operational changes.",
+          "The New York Times reported in 2025 that internal planning documents from an Amazon automation group expected robots could help the company avoid hiring more than 160,000 United States workers it otherwise might need by 2027. Amazon told the publication that the documents reflected one group's perspective and did not represent its overall hiring strategy.",
+          "Both developments can be true at once. Advanced manufacturing can create a smaller number of highly paid technical roles while automation reduces the number of repetitive operating roles required for each package shipped. The Greenwood plant does not settle that debate. It makes the change in job mix more visible."
+        ]
+      },
+      {
+        heading: "Reality check",
+        paragraphs: [
+          "The project remains a plan with a target date. Amazon has not announced a construction start, named a builder, disclosed a detailed capital budget, or identified the production equipment already ordered. It also has not published the incentives, if any, associated with the site.",
+          "The more than $100 million figure does not reveal how much will go to the building, machinery, automation, information systems, or launch costs. The 585,000 square foot footprint does not establish production capacity, yield, uptime, or cost per robot.",
+          "The output description is another important limit. Products for a fulfillment and robotics network could include complete robots, workcell structures, conveyors, cabinets, frames, or other equipment. Until Amazon names the first production program, readers should not assume that every major robot in its portfolio will come from Greenwood.",
+          "Amazon also has no announced plan to sell these machines broadly to outside customers. The strategic advantage today comes from building for its own network, where it controls the workflow, data, deployment schedule, and economic case."
+        ]
+      },
+      {
+        heading: "What comes next",
+        paragraphs: [
+          "The first signals will be physical: site work, permits, equipment installation, supplier awards, and the start of hiring. The mix of open roles should reveal whether Greenwood is primarily a fabrication and assembly site or whether it will also support product engineering and new system launches.",
+          "The second signal is product allocation. A named robot, workcell, or component family would show how Amazon is dividing work among Massachusetts, Austin, and Indiana. Annual capacity and the first shipment date would turn a real estate announcement into a measurable manufacturing program.",
+          "The final test will occur inside fulfillment centers. Faster deployment only creates value if the equipment achieves acceptable uptime, safety performance, maintenance cost, and throughput. Amazon has unmatched access to operating data, but factory scale does not remove the need for reliable machines.",
+          "Black Scarab's base case is that Greenwood becomes a regional production and supply chain node for mature automation equipment, while Massachusetts remains central to research, testing, and early industrialization. Austin may bridge engineering and higher volume systems manufacturing. The exact division is unconfirmed, but the direction is clear: Amazon is building the factory network behind its robot fleet, not merely adding another robot to a demonstration floor."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Amazon Greenwood advanced manufacturing facility announcement, published September 24, 2026",
+        url: "https://press.aboutamazon.com/job-creation-and-investment/2026/9/amazon-to-create-300-high-paying-jobs-at-new-advanced-manufacturing-facility-in-greenwood-indiana"
+      },
+      {
+        label: "Amazon Austin manufacturing facility announcement, published August 19, 2026",
+        url: "https://press.aboutamazon.com/2026/8/amazon-announces-new-manufacturing-facility-in-austin-texas"
+      },
+      {
+        label: "Wall Street Journal reporting summarized by Investing.com, published September 24, 2026",
+        url: "https://www.investing.com/news/stock-market-news/amazon-to-spend-100-million-on-new-robotics-facility-in-indiana--wsj-93CH-4915453"
+      },
+      {
+        label: "Indianapolis Business Journal local report, published September 24, 2026",
+        url: "https://www.ibj.com/articles/amazon-to-establish-100m-manufacturing-plant-in-greenwood-add-300-jobs"
+      },
+      {
+        label: "Amazon Westborough robotics hub announcement, published November 6, 2019",
+        url: "https://press.aboutamazon.com/2019/11/amazon-announces-new-amazon-robotics-innovation-hub-and-plans-to-create-200-tech-and-advanced-manufacturing-jobs-in-massachusetts"
+      },
+      {
+        label: "Amazon tour of its Westborough robotics manufacturing operation, published December 30, 2022",
+        url: "https://www.aboutamazon.com/news/operations/amazon-robotics-headquarters-tour-westborough-massachusetts"
+      },
+      {
+        label: "Amazon one million robot and DeepFleet announcement, published June 30, 2025",
+        url: "https://www.aboutamazon.com/news/operations/amazon-million-robots-ai-foundation-model"
+      },
+      {
+        label: "Amazon overview of robots used in fulfillment centers, accessed September 24, 2026",
+        url: "https://www.aboutamazon.com/news/operations/amazon-robotics-robots-fulfillment-center"
+      },
+      {
+        label: "Amazon Vulcan robot overview, accessed September 24, 2026",
+        url: "https://www.aboutamazon.com/news/operations/amazon-vulcan-robot-pick-stow-touch"
+      },
+      {
+        label: "New York Times report on Amazon automation planning, published October 21, 2025",
+        url: "https://www.nytimes.com/2025/10/21/technology/inside-amazons-plans-to-replace-workers-with-robots.html"
+      }
+    ]
+  },
+  {
     slug: "openai-general-purpose-robotics-team",
     title: "OpenAI is building more than a robot team",
     summary: "OpenAI is recruiting across robot software, custom actuators, manufacturing, data operations, and supply chain. The larger signal is an attempt to own the complete learning loop from physical work to training data, with infrastructure as the likely first proving ground and personal robots as the distant ambition.",

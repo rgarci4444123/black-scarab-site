@@ -18,10 +18,12 @@ Use this workflow whenever Rodolfo provides a short news snippet.
 ## Image process
 
 1. Create one original editorial cover image for each article.
-2. Match the Black Scarab palette with warm ivory, charcoal, muted sage, and restrained industrial materials.
-3. Do not add logos, company marks, text, labels, numbers, or watermarks.
-4. Do not present an invented image as an official product photograph. Describe it as an editorial illustration or interpretation in the caption.
-5. Save the final image in `public/images/news` and add useful alternative text.
+2. Read `docs/editorial-image-direction.md` and inspect at least the six most recent covers before writing the image brief.
+3. Record a visual recipe covering medium, composition, subject scale, viewpoint, palette, lighting, texture, and visual thesis. It must differ from each recent cover on at least three of those dimensions.
+4. Do not repeat the same medium, composition, and palette combination within five consecutive covers. Do not default to a centered robot in a wide factory scene.
+5. Do not add logos, company marks, text, labels, numbers, or watermarks unless the approved concept is intentionally typographic and every character can be verified.
+6. Do not present an invented image as an official product photograph. Describe it as an editorial illustration or interpretation in the caption.
+7. Save the final image in `public/images/news`, add useful alternative text, and inspect the wide hero and cropped card presentations.
 
 ## Publishing checks
 

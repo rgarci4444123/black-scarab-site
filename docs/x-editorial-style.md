@@ -74,12 +74,12 @@ Keep the existing scarab as Black Scarab's identifying mark. Use generous clear 
 
 Use two complementary visual surfaces:
 
-* Covers: a single relevant subject, controlled contrast, generous negative space, a concise editorial headline, restrained byline or series label, and small Black Scarab identification. Dark charcoal may be used for research covers, with one subdued color detail.
+* Covers: follow `docs/editorial-image-direction.md`. Vary medium, composition, palette, subject scale, and viewpoint from recent work. A cover may use one subject, a dense system, a macro detail, a landscape, a collage, or an abstract visual thesis when the choice fits the story. Keep type and Black Scarab identification restrained when they are present.
 * Analytical figures: white or near white, dark text, thin rules, and one muted accent used to guide reading. Favor diagrams and compact comparisons over decorative collages. Use original editable graphics for exact labels and data.
 
 Retain the user's approved white avatar, white banner with a faint blue lower edge, and white peach Insights introduction until a replacement is specifically requested. Future banner concepts should apply the reference's restraint and coherent logo relationship without duplicating the article cover. This preference does not authorize replacing current profile assets automatically.
 
-Suggested Black Scarab working colors: white #FFFFFF, ink #15191B, charcoal #111615, sage #6F8A7A, pale sage #EDF2EF. These are our production tokens, not sampled RoboStrategy brand specifications. Exact reference fonts were not identified; do not claim otherwise. Pair an editorial serif headline with a legible sans serif in analytical graphics when appropriate. X controls its native body font.
+Black Scarab interface and analytical figure colors remain white #FFFFFF, ink #15191B, charcoal #111615, sage #6F8A7A, and pale sage #EDF2EF. They are production tokens, not a mandatory cover palette. Editorial covers may use any deliberate color family supported by the story. Exact reference fonts were not identified; do not claim otherwise. Pair an editorial serif headline with a legible sans serif in analytical graphics when appropriate. X controls its native body font.
 
 ### Images inside articles
 
