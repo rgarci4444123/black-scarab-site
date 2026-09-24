@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 1060" role="img" aria-labelledby="title desc">
+  <title id="title">A practical boundary test for physical AI</title>
+  <desc id="desc">Four questions distinguish physical AI from digital AI, conventional automation, and physical world analytics.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#d2ab42"/>
+    </marker>
+  </defs>
+  <rect width="700" height="1060" rx="28" fill="#15191b"/>
+  <text x="42" y="62" fill="#f7f0df" font-family="Georgia,serif" font-size="32">A practical boundary test</text>
+  <text x="42" y="96" fill="#c7cec9" font-family="Arial,sans-serif" font-size="16">The loop matters more than the machine body.</text>
+
+  <g font-family="Arial,sans-serif">
+    <g transform="translate(42 135)">
+      <rect width="616" height="150" rx="20" fill="#f7f0df"/>
+      <circle cx="42" cy="42" r="20" fill="#2457b3"/>
+      <text x="42" y="49" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">1</text>
+      <text x="82" y="46" fill="#15191b" font-size="22" font-weight="700">Observe</text>
+      <text x="26" y="88" fill="#515b59" font-size="16">Does the system receive current information about the physical world?</text>
+      <text x="26" y="122" fill="#9b3b2f" font-size="14" font-weight="700">No: digital AI</text>
+    </g>
+    <g transform="translate(42 320)">
+      <rect width="616" height="150" rx="20" fill="#efe2c5"/>
+      <circle cx="42" cy="42" r="20" fill="#d24a35"/>
+      <text x="42" y="49" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">2</text>
+      <text x="82" y="46" fill="#15191b" font-size="22" font-weight="700">Choose</text>
+      <text x="26" y="88" fill="#515b59" font-size="16">Does a learned model select or adapt an action from the observed state?</text>
+      <text x="26" y="122" fill="#9b3b2f" font-size="14" font-weight="700">No: fixed automation</text>
+    </g>
+    <g transform="translate(42 505)">
+      <rect width="616" height="150" rx="20" fill="#f7f0df"/>
+      <circle cx="42" cy="42" r="20" fill="#d2ab42"/>
+      <text x="42" y="49" text-anchor="middle" fill="#15191b" font-size="18" font-weight="700">3</text>
+      <text x="82" y="46" fill="#15191b" font-size="22" font-weight="700">Act</text>
+      <text x="26" y="88" fill="#515b59" font-size="16">Can that choice change a machine, object, process, or governed operation?</text>
+      <text x="26" y="122" fill="#9b3b2f" font-size="14" font-weight="700">No: physical analytics</text>
+    </g>
+    <g transform="translate(42 690)">
+      <rect width="616" height="150" rx="20" fill="#d9e6df"/>
+      <circle cx="42" cy="42" r="20" fill="#39705b"/>
+      <text x="42" y="49" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">4</text>
+      <text x="82" y="46" fill="#15191b" font-size="22" font-weight="700">Verify</text>
+      <text x="26" y="88" fill="#515b59" font-size="16">Does the system observe the result and continue, recover, or stop?</text>
+      <text x="26" y="122" fill="#39705b" font-size="14" font-weight="700">Yes: the loop closes</text>
+    </g>
+  </g>
+
+  <g stroke="#d2ab42" stroke-width="5" fill="none" marker-end="url(#arrow)">
+    <path d="M350 285V310"/>
+    <path d="M350 470V495"/>
+    <path d="M350 655V680"/>
+  </g>
+
+  <rect x="42" y="880" width="616" height="132" rx="22" fill="#2457b3"/>
+  <text x="350" y="920" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="24">Black Scarab definition</text>
+  <text x="350" y="955" text-anchor="middle" fill="#eef4ff" font-family="Arial,sans-serif" font-size="15">Observe the world. Choose under physical constraints.</text>
+  <text x="350" y="981" text-anchor="middle" fill="#eef4ff" font-family="Arial,sans-serif" font-size="15">Act through a governed system. Measure the result.</text>
+</svg>

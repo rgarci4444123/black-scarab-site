@@ -28,6 +28,7 @@ When Rodolfo provides a news snippet or requests an Insights deep dive:
 8. Never invent prices, hardware specifications, supplier relationships, customers, shipment volumes, performance results, or commercial evidence.
 9. Avoid unrelated NVIDIA references.
 10. Preserve the site's established ivory, charcoal, and muted sage interface design language. Editorial artwork may use a much broader palette and visual language.
+11. Use tables only when every column expresses a comparison that is genuinely useful for every row. Do not invent filler or force a symmetric answer to complete the grid. Prefer prose, diagrams, or asymmetric callout stacks when a point has a natural length or an attribute is relevant only in some cases.
 
 News reports should use approachable business newsletter pacing, original reporting, and a reading time of roughly five to ten minutes. Read `docs/news-editorial-style.md` and `docs/news-publishing-workflow.md` before News work.
 
