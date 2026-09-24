@@ -15,6 +15,7 @@ import { industrialAutomationGuide } from "@/lib/industrial-automation-guide";
 import { physicalAiManufacturingGuide } from "@/lib/physical-ai-manufacturing-guide";
 import { manufacturingPlantBuildGuide } from "@/lib/manufacturing-plant-build-guide";
 import { robotActuatorsDeepDive } from "@/lib/robot-actuators";
+import { whatIsPhysicalAiDeepDive } from "@/lib/what-is-physical-ai";
 
 export type CaseStudySection = {
   heading?: string;
@@ -27,7 +28,14 @@ export type CaseStudySection = {
   };
   tables?: CaseStudyTable[];
   barCharts?: CaseStudyBarChart[];
+  callouts?: CaseStudyCallout[];
   links?: CaseStudyInlineLink[];
+};
+
+export type CaseStudyCallout = {
+  label?: string;
+  title: string;
+  body: string;
 };
 
 export type CaseStudyParagraphLink = {
@@ -16323,6 +16331,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  whatIsPhysicalAiDeepDive(),
   manufacturingPlantBuildGuide(),
   physicalAiManufacturingGuide(),
   foxgloveDeepDive(),

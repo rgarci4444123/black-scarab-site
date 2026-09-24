@@ -514,6 +514,28 @@ export default async function CaseStudyPage({ params }: Props) {
                         ))}
                       </div>
                     ) : null}
+                    {section.callouts?.length ? (
+                      <div className="mt-7 space-y-4">
+                        {section.callouts.map((callout, calloutIndex) => (
+                          <aside
+                            key={`${callout.title}-${calloutIndex}`}
+                            className="rounded-[18px] border border-[#e1ddd2] border-l-4 border-l-[#7c8b6b] bg-[#fffdfa] px-5 py-5 shadow-[0_10px_24px_rgba(17,24,39,0.04)] sm:px-6"
+                          >
+                            {callout.label ? (
+                              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#7c8b6b]">
+                                {callout.label}
+                              </p>
+                            ) : null}
+                            <h3 className="mt-1 text-lg font-semibold tracking-tight text-[#111827]">
+                              {callout.title}
+                            </h3>
+                            <p className="mt-2 text-sm leading-7 text-[#5b6470] md:text-base">
+                              {callout.body}
+                            </p>
+                          </aside>
+                        ))}
+                      </div>
+                    ) : null}
                     {section.barCharts?.length ? (
                       <div className="mt-6 space-y-6">
                         {section.barCharts.map((chart) => (
