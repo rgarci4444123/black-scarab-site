@@ -4,6 +4,27 @@ const nextConfig: NextConfig = {
   images: {
     qualities: [75, 95],
   },
+  async headers() {
+    const noIndexHeader = {
+      key: "X-Robots-Tag",
+      value: "noindex",
+    };
+
+    return [
+      {
+        source: "/_next/static/:path*",
+        headers: [noIndexHeader],
+      },
+      {
+        source: "/favicon.ico",
+        headers: [noIndexHeader],
+      },
+      {
+        source: "/icon.png",
+        headers: [noIndexHeader],
+      },
+    ];
+  },
   async redirects() {
     return [
       {
