@@ -32,6 +32,171 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "openai-general-purpose-robotics-team",
+    title: "OpenAI is building more than a robot team",
+    summary: "OpenAI is recruiting across robot software, custom actuators, manufacturing, data operations, and supply chain. The larger signal is an attempt to own the complete learning loop from physical work to training data, with infrastructure as the likely first proving ground and personal robots as the distant ambition.",
+    category: "Robotics Strategy",
+    publishedDate: "2026-09-24",
+    publishedAt: "2026-09-24T10:18:29-04:00",
+    publishedLabel: "September 24, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/openai-general-purpose-robotics-team.png",
+    imageAlt: "Editorial illustration of a robotics workcell, a custom actuator, and a distant computing campus",
+    imageCaption: "Original Black Scarab editorial illustration of an artificial intelligence company developing robot hardware, operating data systems, and infrastructure. This conceptual scene does not depict an OpenAI facility, robot, or announced product.",
+    readingTime: "9 min read",
+    keyPoints: [
+      "OpenAI's careers page listed 22 active Robotics openings on September 24 across software, controls, actuators, electronics, manufacturing, data operations, sourcing, and program management.",
+      "OpenAI says its near term focus is robots that support skilled workers building future infrastructure, while its long term ambition is a personal robot that can perform many kinds of work.",
+      "The hiring pattern suggests a full stack robotics program built around custom hardware and proprietary operating data, but OpenAI has not announced a robot, form factor, customer, price, or release date."
+    ],
+    sections: [
+      {
+        heading: "The job board reads like a product architecture",
+        paragraphs: [
+          "OpenAI is building a robotics organization that reaches well beyond machine learning research. Its careers page listed 22 active Robotics openings when Black Scarab reviewed it on September 24. The total will change as jobs open and close, but the composition of the list is more important than the count.",
+          "The company is recruiting for robot software, control systems, firmware, inference, distributed data systems, custom actuators, gear design, electrical systems, printed circuit board layout, thermal simulation, manufacturing, prototype laboratories, component sourcing, field engineering, and technical program management. That is the outline of a complete development organization, not a small team adapting a language model to somebody else's machine.",
+          "One firmware listing states the ambition directly. OpenAI says it is building general purpose robotics, beginning with machines that support skilled workers as they build future infrastructure. Over the longer term, it imagines a personal robot able to perform whatever work its owner needs. The first goal sounds industrial. The second is a new consumer computing category."
+        ]
+      },
+      {
+        heading: "This is not a model licensing strategy",
+        paragraphs: [
+          "A company interested only in the intelligence layer could train a vision language action model, expose it through an interface, and let established robot manufacturers handle the body. OpenAI's openings point toward a more integrated strategy.",
+          "The actuator team is expected to develop custom motors, transmissions, sensors, thermal systems, structural components, and packaging. Engineers will evaluate torque density, efficiency, backdrivability, inertia, reliability, manufacturability, and cost. They will also work with suppliers to move designs from prototypes toward production ready assemblies.",
+          "Those responsibilities do not prove that OpenAI will manufacture a complete humanoid. They do show that the company does not consider robot hardware interchangeable. A model can issue an action, but the usefulness of that action depends on motor response, sensing, control frequency, thermal limits, mechanical compliance, and how safely the machine fails. Intelligence and embodiment have to be designed together.",
+          "Black Scarab's base case is that OpenAI builds one or more internal reference platforms. Owning the machine would let the team control the sensors, actions, timing, failures, and data format used during training. Large scale manufacturing could still be assigned to partners once the architecture stabilizes."
+        ]
+      },
+      {
+        heading: "OpenAI is returning to an old problem",
+        paragraphs: [
+          "This is OpenAI's second serious encounter with robotics. Its earlier Dactyl project trained a dexterous robot hand in simulation and transferred the learned policy to physical hardware. The work showed that domain randomization could help a policy survive differences between a simulator and the real world.",
+          "OpenAI later stopped pursuing that robotics program. Cofounder Wojciech Zaremba said the company could make faster progress in fields where large amounts of data were readily available. Robot learning did not have an internet sized supply of physical interaction, and collecting experience on real machines was slow and expensive.",
+          "The new organization appears designed around that exact constraint. An OpenAI field engineering listing describes a large live environment with many deployed robotic workcells used for ongoing data acquisition. The job involves keeping those cells online, resolving hardware and software failures, and improving the tools used by operators and technicians.",
+          "The important change is therefore not simply that models are smarter. OpenAI is constructing the machinery needed to create its own physical training data. The old program asked whether simulation could replace scarce robot experience. The new program appears prepared to operate enough hardware to collect that experience directly."
+        ]
+      },
+      {
+        heading: "Infrastructure is the logical first market",
+        paragraphs: [
+          "OpenAI has not said that its robots will work at Stargate sites or in data center construction. That connection should remain analysis, not reported fact. It is nevertheless difficult to ignore the fit between the robotics mission and the company's wider investment program.",
+          "OpenAI says its initial 10 gigawatt United States infrastructure commitment has already been exceeded and that it is evaluating additional sites. These projects require construction companies, skilled trades, equipment suppliers, utilities, chipmakers, cloud operators, and long term maintenance. OpenAI is also seeking American manufacturing partners across consumer devices, robotics, and data center equipment, with automation and factory intelligence included in its evaluation criteria.",
+          "That ecosystem could give the robotics team a captive proving ground. Controlled work sites offer repeatable tasks, trained operators, known equipment, and economic buyers who can evaluate safety and productivity. OpenAI would also understand the customer's problem because it is one of the customers funding the infrastructure.",
+          "The first applications are not disclosed. Material movement, inspection, machine tending, tool delivery, and repetitive assembly are plausible categories across large projects, but they should not be attributed to OpenAI until the company identifies an actual task. The strategic point is simpler: industrial infrastructure offers a more forgiving path to useful deployment than an unpredictable home."
+        ]
+      },
+      {
+        heading: "The real product may be the data flywheel",
+        paragraphs: [
+          "A robot fleet produces more than completed work. It records camera views, joint positions, motor currents, force estimates, failed grasps, human interventions, recovery attempts, maintenance events, and the conditions that caused performance to change. Properly governed, that operating history can become training material.",
+          "The resulting loop is powerful. More workcells produce more varied experience. Better data improves the models. Better models expand the tasks a machine can attempt. Broader deployment then produces another round of operational evidence.",
+          "This changes what counts as a robotics moat. Mechanical specifications still matter, but fleet hours, task diversity, intervention records, and the right to learn from customer operations may become equally valuable. A modest machine performing paid work every day can generate more useful evidence than a polished demonstration that never leaves the laboratory.",
+          "OpenAI already knows how to train large models and finance enormous computing systems. Robotics forces it to add the missing inputs: physical machines, technicians, test equipment, safe operating processes, and a reliable stream of real world action data. The hiring plan touches every part of that pipeline."
+        ]
+      },
+      {
+        heading: "The first body may not be humanoid",
+        paragraphs: [
+          "The personal robot ambition naturally invites a humanoid interpretation, and OpenAI has previously invested in humanoid companies. Its current job descriptions are more careful. They refer to a broad range of robotic form factors and future robotic platforms rather than naming one body.",
+          "That distinction matters. A fixed arm, mobile manipulator, wheeled service platform, or specialized machine can collect valuable manipulation and control data without solving bipedal balance, whole body safety, and the energy demands of legs. OpenAI could develop several embodiments before choosing a commercial form.",
+          "A humanoid becomes attractive when the environment, tools, shelves, doors, and workflows were designed around people. It becomes less attractive when a simpler body can complete the same job with lower cost and greater reliability. The likely winner is not the shape that looks most futuristic. It is the shape that produces useful work and reusable learning fastest."
+        ]
+      },
+      {
+        heading: "The industry is moving toward vertical integration",
+        paragraphs: [
+          "OpenAI once approached robotics largely through partners and investments. In 2024, it agreed to develop specialized models for Figure's humanoids. Figure ended that arrangement the following year and argued that robot intelligence had to be developed together with its hardware. OpenAI also backed 1X, another company pursuing robots for workplaces and homes.",
+          "The current hiring suggests OpenAI reached a similar conclusion about integration. It now appears to want direct control over the hardware, data collection, models, and evaluation environment needed to move quickly.",
+          "Competitors are organizing around different layers. Google DeepMind is developing Gemini Robotics models intended to transfer across multiple robot bodies. NVIDIA offers models, simulation, data tools, middleware, and edge computing through its GR00T and Isaac platforms. Companies such as Figure are building their own intelligence and hardware together. Traditional robot manufacturers bring installed fleets, service organizations, safety expertise, and customer trust.",
+          "OpenAI's entry increases pressure on every group. Model companies need access to physical data. Robot manufacturers need increasingly capable intelligence. Startups must decide which parts of the stack are essential to own and which can be supplied by a platform partner that may later become a competitor."
+        ]
+      },
+      {
+        heading: "The opportunity extends beyond robot makers",
+        paragraphs: [
+          "If frontier model companies fund their own robotic platforms, demand should spread through the component and deployment chain. Motors, gear systems, encoders, cameras, force sensors, thermal materials, batteries, safety controllers, test equipment, contract manufacturing, and field service all become part of the competitive race.",
+          "Companies with operating fleets may gain strategic value because they can provide the environments and failure data that laboratories lack. Systems integrators may become more important, not less, because a capable model still has to be connected to a safe workcell, acceptance test, maintenance plan, and customer process.",
+          "The pressure will be greatest on companies that own neither differentiated hardware nor unique operating data. A generic robot body may be squeezed by lower cost manufacturing. A software layer without deployment access may struggle to improve as quickly as systems trained on large proprietary fleets."
+        ]
+      },
+      {
+        heading: "A job board is not a product launch",
+        paragraphs: [
+          "OpenAI has not announced a robot, a commercial customer, a price, a production target, or a release date. The company has not said whether its first platform will be humanoid, mobile, fixed, or available outside its own operations. Hiring plans show organizational intent, not completed engineering.",
+          "The technical burden remains severe. A useful robot must combine perception, planning, motion, dexterity, power, thermal management, functional safety, reliability, serviceability, and acceptable economics. A household machine adds children, pets, stairs, fragile objects, privacy, noise, and almost unlimited variation. Strong reasoning does not remove those constraints.",
+          "There is also a scale difference worth preserving. OpenAI's current robotics roster is meaningful for a new program, but established manufacturers employ far larger engineering, production, and service organizations. OpenAI brings models, compute, capital, and attention. It still has to earn mechanical reliability and field trust."
+        ]
+      },
+      {
+        heading: "What comes next",
+        paragraphs: [
+          "The first signal to watch is the platform itself. A disclosed form factor, actuator architecture, sensor package, or control stack would reveal which tasks OpenAI has prioritized and how much hardware it intends to own.",
+          "The second is an operating partner. A named infrastructure, manufacturing, or logistics deployment would turn the hiring thesis into a commercial test. Buyers should look for measured task success, intervention frequency, cycle time, safety validation, uptime, and maintenance requirements rather than a carefully edited demonstration.",
+          "The third is the data policy. OpenAI will need clear rules governing what workcell data it collects, who owns it, how it is secured, and whether customer operations can train shared models. In robotics, the most valuable asset may be the record of what happened when the machine was wrong.",
+          "Black Scarab's base case is that OpenAI begins with internal reference machines and controlled infrastructure work, uses those operations to build a proprietary physical data engine, and later offers the resulting intelligence through selected hardware and manufacturing partners. A personal robot remains the destination described by the company, not the product it has proven today.",
+          "The larger industry signal is already visible. Frontier AI laboratories are no longer content to supply a brain for somebody else's machine. They are moving toward the motors, sensors, factories, workcells, and operating data that determine whether intelligence can produce useful physical work. OpenAI is not merely rebuilding a robotics team. It is attempting to build the entire learning loop."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "OpenAI Robotics careers page, accessed September 24, 2026",
+        url: "https://openai.com/careers/search/?c=c16efb3c-493d-401c-a76f-a493cfccbeb8"
+      },
+      {
+        label: "OpenAI firmware engineer listing describing the robotics mission, accessed September 24, 2026",
+        url: "https://openai.com/careers/firmware-engineer-robotics-san-francisco/"
+      },
+      {
+        label: "OpenAI field engineer listing describing live robot data operations, accessed September 24, 2026",
+        url: "https://openai.com/careers/field-engineer-san-francisco/"
+      },
+      {
+        label: "OpenAI actuator design engineer listing, accessed September 24, 2026",
+        url: "https://openai.com/careers/actuator-design-engineer-san-francisco/"
+      },
+      {
+        label: "OpenAI request for United States hardware manufacturing proposals, issued January 2026",
+        url: "https://cdn.openai.com/pdf/rfp-for-us-hardware-manufacturing.pdf"
+      },
+      {
+        label: "OpenAI compute infrastructure strategy, published April 29, 2026",
+        url: "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age/"
+      },
+      {
+        label: "OpenAI Dactyl research, published July 30, 2018",
+        url: "https://openai.com/index/learning-dexterity/"
+      },
+      {
+        label: "VentureBeat report on OpenAI ending its earlier robotics program, published July 16, 2021",
+        url: "https://venturebeat.com/ai/openai-disbands-its-robotics-research-team"
+      },
+      {
+        label: "Fierce Sensors report on OpenAI robotics hiring, published August 10, 2026",
+        url: "https://www.fiercesensors.com/sensors-fusion/why-openai-paying-robotics-engineers-325k"
+      },
+      {
+        label: "Associated Press report on the OpenAI and Figure collaboration, published February 28, 2024",
+        url: "https://apnews.com/article/figure-humanoid-robot-openai-bezos-02ee0bf87ec46021c84646a882133c9a"
+      },
+      {
+        label: "TechCrunch report on Figure ending its OpenAI collaboration, published February 4, 2025",
+        url: "https://techcrunch.com/2025/02/04/figure-drops-openai-in-favor-of-in-house-models/"
+      },
+      {
+        label: "Google DeepMind Gemini Robotics 2 announcement, published July 30, 2026",
+        url: "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/"
+      },
+      {
+        label: "NVIDIA Isaac GR00T platform overview, accessed September 24, 2026",
+        url: "https://developer.nvidia.com/isaac/gr00t"
+      }
+    ]
+  },
+  {
     slug: "softbank-robotics-ai-institute-acquisition",
     title: "SoftBank agrees to buy Robotics and AI Institute, report says",
     summary: "SoftBank has reportedly agreed to acquire the research institute founded by Boston Dynamics creator Marc Raibert. The clearest opportunity is to connect its work in robot learning, manipulation, and mobility with the industrial scale SoftBank expects to gain through ABB Robotics, but the terms and integration plan remain undisclosed.",
