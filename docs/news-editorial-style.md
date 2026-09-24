@@ -39,6 +39,6 @@ Attribute performance figures and forecasts. State clearly when pricing, revenue
 
 Credit Rodolfo Garcia Calderoni, CFA, as the author. Use the same author portrait in the byline and author card.
 
-Create an original, logo free editorial cover in the Black Scarab palette. The image must work as both a wide article hero and a cropped news card.
+Create an original, logo free editorial cover using `docs/editorial-image-direction.md`. Black Scarab consistency comes from editorial quality, typography, labeling, and layout rather than forcing every image into one palette or scene. The image must work as both a wide article hero and a cropped news card.
 
 Before publishing, verify the canonical URL, NewsArticle structured data, social image metadata, main sitemap, news sitemap, RSS feed, build output, live article, and IndexNow submission.
