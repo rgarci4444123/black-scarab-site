@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Digital twin decision loop</title>
+  <desc id="desc">Six stages connect physical observation, synchronized evidence, current state, possible futures, a governed decision, and measured change.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081a33"/>
+      <stop offset="1" stop-color="#14233f"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22c7c9"/>
+      <stop offset="0.52" stop-color="#f8c74e"/>
+      <stop offset="1" stop-color="#ff6b5e"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#020817" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f8c74e"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" rx="48" fill="url(#bg)"/>
+  <circle cx="1430" cy="116" r="84" fill="#ff6b5e" opacity="0.13"/>
+  <circle cx="150" cy="790" r="112" fill="#22c7c9" opacity="0.11"/>
+
+  <text x="90" y="88" fill="#8ae4df" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="5">BLACK SCARAB FUNCTIONAL VIEW</text>
+  <text x="90" y="162" fill="#fffaf0" font-family="Georgia, serif" font-size="62" font-weight="700">A governed decision loop</text>
+
+  <path d="M305 422 C390 302 532 268 662 318 C792 368 838 500 800 610 C760 726 622 764 496 720 C370 676 292 560 305 422" fill="none" stroke="url(#flow)" stroke-width="10" stroke-linecap="round" marker-end="url(#arrow)" opacity="0.88"/>
+  <path d="M864 602 C930 724 1080 756 1210 700 C1340 644 1386 508 1334 394 C1282 280 1136 246 1015 300 C920 342 866 424 864 520" fill="none" stroke="url(#flow)" stroke-width="10" stroke-linecap="round" marker-end="url(#arrow)" opacity="0.88"/>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(88 300)">
+      <rect width="330" height="160" rx="26" fill="#f7f0df"/>
+      <rect width="12" height="160" rx="6" fill="#ff6b5e"/>
+      <text x="34" y="54" fill="#d94b42" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="3">1  PHYSICAL SYSTEM</text>
+      <text x="34" y="112" fill="#0c1f38" font-family="Georgia, serif" font-size="32" font-weight="700">Observe reality</text>
+    </g>
+
+    <g transform="translate(478 245)">
+      <rect width="330" height="160" rx="26" fill="#0f3854" stroke="#3fcfd0" stroke-width="2"/>
+      <rect width="12" height="160" rx="6" fill="#22c7c9"/>
+      <text x="34" y="54" fill="#76e2de" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="3">2  SYNCHRONIZE</text>
+      <text x="34" y="112" fill="#fffaf0" font-family="Georgia, serif" font-size="32" font-weight="700">Align evidence</text>
+    </g>
+
+    <g transform="translate(868 245)">
+      <rect width="330" height="160" rx="26" fill="#0f3854" stroke="#3fcfd0" stroke-width="2"/>
+      <rect width="12" height="160" rx="6" fill="#22c7c9"/>
+      <text x="34" y="54" fill="#76e2de" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="3">3  CURRENT STATE</text>
+      <text x="34" y="112" fill="#fffaf0" font-family="Georgia, serif" font-size="32" font-weight="700">Estimate now</text>
+    </g>
+
+    <g transform="translate(1182 355)">
+      <rect width="330" height="160" rx="26" fill="#f7f0df"/>
+      <rect x="318" width="12" height="160" rx="6" fill="#f8c74e"/>
+      <text x="34" y="54" fill="#8b6200" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="3">4  POSSIBLE FUTURES</text>
+      <text x="34" y="112" fill="#0c1f38" font-family="Georgia, serif" font-size="32" font-weight="700">Simulate choices</text>
+    </g>
+
+    <g transform="translate(868 610)">
+      <rect width="330" height="160" rx="26" fill="#6d2940" stroke="#ff887c" stroke-width="2"/>
+      <rect x="318" width="12" height="160" rx="6" fill="#ff6b5e"/>
+      <text x="34" y="54" fill="#ffc0b9" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="3">5  GOVERNED DECISION</text>
+      <text x="34" y="112" fill="#fffaf0" font-family="Georgia, serif" font-size="32" font-weight="700">Choose authority</text>
+    </g>
+
+    <g transform="translate(478 610)">
+      <rect width="330" height="160" rx="26" fill="#6d2940" stroke="#ff887c" stroke-width="2"/>
+      <rect width="12" height="160" rx="6" fill="#ff6b5e"/>
+      <text x="34" y="54" fill="#ffc0b9" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="3">6  ACTION AND RESULT</text>
+      <text x="34" y="112" fill="#fffaf0" font-family="Georgia, serif" font-size="32" font-weight="700">Measure change</text>
+    </g>
+  </g>
+
+  <text x="90" y="850" fill="#d9e2ea" font-family="Arial, sans-serif" font-size="24">Trust across every stage</text>
+</svg>
