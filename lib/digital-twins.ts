@@ -59,6 +59,7 @@ export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
   publishedLabel: "Deep Dive · Published September 24, 2026",
   publishedDate: "2026-09-24",
   publishedAt: "2026-09-24T22:21:08-04:00",
+  modifiedAt: "2026-09-24T22:56:33-04:00",
   typeLabel: "Deep Dive",
   formatLabel: "Definition, architecture, companies, economics, and global impact",
   industry: "Physical AI Infrastructure",
@@ -86,11 +87,7 @@ export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
     {
       paragraphs: [
         "A digital twin is useful for the same reason a flight simulator is useful. It creates a place to observe, test, and learn about a physical system without making every mistake on the system itself. The difference is that a true twin does not remain an isolated model. It stays connected to evidence from a particular machine, product, process, building, network, person, or environment.",
-        [
-          "The Digital Twin Consortium defines a digital twin as a virtual representation of real world entities and processes, synchronized at a specified frequency and fidelity. The words frequency and fidelity do most of the work. A useful twin updates often enough, represents the details that matter, and supports a defined decision. The ",
-          { text: "consortium definition", href: dtcDefinition },
-          " does not require a photorealistic three dimensional model, instant updates, artificial intelligence, or autonomous control.",
-        ],
+        "The Digital Twin Consortium defines a digital twin as a virtual representation of real world entities and processes, synchronized at a specified frequency and fidelity. The words frequency and fidelity do most of the work. A useful twin updates often enough, represents the details that matter, and supports a defined decision. It does not require a photorealistic three dimensional model, instant updates, artificial intelligence, or autonomous control.",
         "That makes the category both powerful and easy to abuse. A computer aided design file can be an important input, but it is not automatically a twin. A dashboard can display live sensor data without modeling how a system behaves. A simulation can predict behavior without being connected to one operating asset. A twin brings selected models and data together around the state and decisions of a real subject.",
         "This report explains that system from first principles. It covers the architecture, hardware, software, synchronization, simulation, standards, company landscape, pricing evidence, implementation process, security risks, and buyer economics. It also examines the larger question: what changes when societies can test more physical decisions in a credible virtual environment before committing money, material, machines, and human lives?",
       ],
@@ -249,11 +246,7 @@ export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
       heading: "Synchronization Is More Important Than Realism",
       paragraphs: [
         "A detailed rendering can be stale. A simple state estimate can be current and useful. Synchronization answers which physical subject the data describes, when the evidence was collected, which configuration was active, how the digital state was updated, and what uncertainty remains.",
-        [
-          "The ",
-          { text: "Digital Twin Consortium", href: dtcDefinition },
-          " deliberately allows different synchronization frequencies. A warehouse traffic twin may update positions many times per second. A facility space model may change only after construction work. A product twin may receive a new inspection record at each manufacturing step and a service record months later. The right cadence follows the rate at which the decision can become wrong.",
-        ],
+        "The Digital Twin Consortium deliberately allows different synchronization frequencies. A warehouse traffic twin may update positions many times per second. A facility space model may change only after construction work. A product twin may receive a new inspection record at each manufacturing step and a service record months later. The right cadence follows the rate at which the decision can become wrong.",
         "Synchronization also moves in two directions. Observation causes the virtual representation to match reality more closely. Intervention causes reality to move toward a desired state represented in the twin. The second direction deserves a higher burden of proof. Recommending a valve setting is not the same as commanding the valve, and commanding a process setpoint is not the same as replacing an independent safety function.",
       ],
     },
@@ -261,11 +254,7 @@ export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
       heading: "Fidelity Is a Contract, Not a Compliment",
       paragraphs: [
         "A twin should state what it represents accurately, across which conditions, at what resolution, and within what tolerance. Geometry can be millimeter accurate while thermal behavior is approximate. A process model can predict average throughput while missing rare blockages. A learned model can fit historical data while failing after a supplier changes a material.",
-        [
-          "NIST argues that credibility requires verification, validation, and uncertainty quantification throughout the twin lifecycle. Verification asks whether the model was implemented correctly. Validation asks whether it represents reality well enough for the intended purpose. Uncertainty quantification expresses what is not known and how that uncertainty affects the result. The ",
-          { text: "NIST credibility paper", href: nistCredibility },
-          " treats those disciplines as a continuing obligation rather than a final project gate.",
-        ],
+        "NIST argues that credibility requires verification, validation, and uncertainty quantification throughout the twin lifecycle. Verification asks whether the model was implemented correctly. Validation asks whether it represents reality well enough for the intended purpose. Uncertainty quantification expresses what is not known and how that uncertainty affects the result. These disciplines are a continuing obligation rather than a final project gate.",
         "This is especially important when a twin uses artificial intelligence. A fast surrogate can approximate an expensive physics simulation and make interactive scenario testing possible. The speed is valuable only inside the conditions represented by its training and validation data. A prediction without a known operating boundary is a guess with better graphics.",
       ],
     },
@@ -273,11 +262,7 @@ export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
       heading: "The Digital Thread Connects Time",
       paragraphs: [
         "A twin represents a subject at one or more stages. A digital thread connects the information that explains how that subject reached its current state. Requirements lead to design. Design leads to manufacturing plans. Actual production records show which materials, settings, inspections, and deviations created one unit. Service history records how that unit was used, repaired, updated, and retired.",
-        [
-          "The emerging ",
-          { text: "ISO 23247 Part 5", href: isoDigitalThread },
-          " describes a digital thread as dependable and trustworthy information linking twins across structure, behavior, space, time, and lifecycle stages. The distinction matters. A live pump twin may estimate current condition. Its digital thread can show the exact configuration, supplier component, commissioning test, duty cycle, repair, and software version behind that condition.",
-        ],
+        "The emerging ISO 23247 Part 5 describes a digital thread as dependable and trustworthy information linking twins across structure, behavior, space, time, and lifecycle stages. The distinction matters. A live pump twin may estimate current condition. Its digital thread can show the exact configuration, supplier component, commissioning test, duty cycle, repair, and software version behind that condition.",
         "Without the thread, teams spend time reconciling identifiers, drawings, spreadsheets, maintenance systems, and sensor tags before they can trust the analysis. With a governed thread, the twin can become a traceable operating record. That record can support quality investigations, service, product improvement, compliance, resale, remanufacturing, and recycling.",
       ],
     },
@@ -438,50 +423,18 @@ export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
     {
       heading: "What the Major Platforms Actually Contribute",
       paragraphs: [
-        [
-          "Siemens describes a comprehensive twin spanning product, machine, production, and plant lifecycles. Its strongest position is the connection between engineering software and industrial automation. The company says teams can use physics based simulation to test and optimize before acting in the real world. That is a broad suite strategy rather than one standalone twin product. See the ",
-          { text: "Siemens digital twin overview", href: siemensTwin },
-          ".",
-        ],
-        [
-          "Ansys Twin Builder focuses on connected models of in service assets. It can combine system models with reduced order models derived from detailed physics simulation, then integrate third party models through standards such as the Functional Mockup Interface. The value is computational: preserve enough physical behavior to make a model useful at operating speed. Ansys publishes performance and maintenance benefit claims, but buyers should require evidence for their own asset. See ",
-          { text: "Ansys Twin Builder", href: ansysTwinBuilder },
-          ".",
-        ],
-        [
-          "AWS IoT TwinMaker and Azure Digital Twins sit closer to the application infrastructure layer. AWS supplies entity models, unified data access, knowledge graph queries, connectors, and visualization integration. Azure provides a managed model and graph service for environments such as factories, buildings, farms, railways, and cities. Neither service automatically supplies a validated physics model, clean source data, operating workflow, or business case. See ",
-          { text: "AWS IoT TwinMaker", href: awsProduct },
-          " and the ",
-          { text: "Azure pricing description", href: azurePricing },
-          ".",
-        ],
-        [
-          "Bentley iTwin and Autodesk Tandem address buildings and infrastructure from different entry points. Bentley emphasizes engineering information, reality data, infrastructure context, and applications built on its iTwin Platform. Autodesk Tandem turns building information models into an operational facility representation connected to assets, documents, and time series data. See ",
-          { text: "Bentley iTwin Experience", href: bentleyITwin },
-          " and ",
-          { text: "Autodesk Tandem", href: autodeskTandem },
-          ".",
-        ],
-        [
-          "NVIDIA Omniverse provides libraries and workflows for high fidelity spatial representation, OpenUSD data exchange, physics, sensor simulation, synthetic data, and robot development. Its relevance is strongest when visual and physical simulation of a facility or machine is part of the use case. It is not a replacement for product lifecycle management, maintenance records, industrial control, validation, or domain specific models. See the ",
-          { text: "industrial facility twin workflow", href: nvidiaFacilityTwins },
-          ".",
-        ],
-        [
-          "PTC ThingWorx represents machines and data sources as connected software objects and supports applications such as asset monitoring, utilization, performance management, and work instructions. It illustrates an important category boundary: industrial IoT software can become part of a twin when it is connected to a fit for purpose representation and decision. Connectivity and dashboards alone do not settle the definition. See ",
-          { text: "ThingWorx manufacturing applications", href: ptcThingWorx },
-          ".",
-        ],
+        "Siemens describes a comprehensive twin spanning product, machine, production, and plant lifecycles. Its strongest position is the connection between engineering software and industrial automation. The company says teams can use physics based simulation to test and optimize before acting in the real world. That is a broad suite strategy rather than one standalone twin product.",
+        "Ansys Twin Builder focuses on connected models of in service assets. It can combine system models with reduced order models derived from detailed physics simulation, then integrate third party models through standards such as the Functional Mockup Interface. The value is computational: preserve enough physical behavior to make a model useful at operating speed. Ansys publishes performance and maintenance benefit claims, but buyers should require evidence for their own asset.",
+        "AWS IoT TwinMaker and Azure Digital Twins sit closer to the application infrastructure layer. AWS supplies entity models, unified data access, knowledge graph queries, connectors, and visualization integration. Azure provides a managed model and graph service for environments such as factories, buildings, farms, railways, and cities. Neither service automatically supplies a validated physics model, clean source data, operating workflow, or business case.",
+        "Bentley iTwin and Autodesk Tandem address buildings and infrastructure from different entry points. Bentley emphasizes engineering information, reality data, infrastructure context, and applications built on its iTwin Platform. Autodesk Tandem turns building information models into an operational facility representation connected to assets, documents, and time series data.",
+        "NVIDIA Omniverse provides libraries and workflows for high fidelity spatial representation, OpenUSD data exchange, physics, sensor simulation, synthetic data, and robot development. Its relevance is strongest when visual and physical simulation of a facility or machine is part of the use case. It is not a replacement for product lifecycle management, maintenance records, industrial control, validation, or domain specific models.",
+        "PTC ThingWorx represents machines and data sources as connected software objects and supports applications such as asset monitoring, utilization, performance management, and work instructions. It illustrates an important category boundary: industrial IoT software can become part of a twin when it is connected to a fit for purpose representation and decision. Connectivity and dashboards alone do not settle the definition.",
       ],
     },
     {
       heading: "Standards Matter Because Twins Must Outlive Tools",
       paragraphs: [
-        [
-          "The ",
-          { text: "ISO 23247 series", href: isoPrinciples },
-          " supplies manufacturing terminology, principles, a reference architecture, information attributes, and exchange requirements. The architecture is intentionally neutral about one data format or protocol. It gives organizations a common structure for discussing observable manufacturing elements, digital representations, and the services around them.",
-        ],
+        "The ISO 23247 series supplies manufacturing terminology, principles, a reference architecture, information attributes, and exchange requirements. The architecture is intentionally neutral about one data format or protocol. It gives organizations a common structure for discussing observable manufacturing elements, digital representations, and the services around them.",
         "Other standards solve narrower pieces. STEP carries product model data. Building information standards such as IFC support facilities. OPC UA and MTConnect exchange industrial information. Functional Mockup Interface packages simulation models for exchange and combined execution. OpenUSD can connect complex three dimensional scene data. Asset Administration Shell provides a structured digital representation for industrial assets. No one standard makes the complete twin.",
         "Interoperability has commercial consequences. A twin assembled from proprietary identifiers, undocumented transformations, and one vendor interface can become expensive to extend or leave. Buyers should negotiate model export, data ownership, schema access, version history, interface rights, and transition support before the twin becomes operationally critical.",
       ],
@@ -489,20 +442,10 @@ export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
     {
       heading: "Where Digital Twins Already Create Value",
       paragraphs: [
-        [
-          "NASA provides unusually clear examples because physical access is difficult and failure is consequential. The agency describes twins used to test and monitor the James Webb Space Telescope, including thermal behavior and the sunshield deployment. NASA also uses software twins that emulate spacecraft hardware so flight software can be developed and validated before all physical hardware is available. These are engineering and mission tools, not decorative replicas. See NASA on ",
-          { text: "why digital twins matter", href: nasaNeed },
-          " and the ",
-          { text: "JSTAR software twin program", href: nasaJstar },
-          ".",
-        ],
+        "NASA provides unusually clear examples because physical access is difficult and failure is consequential. The agency describes twins used to test and monitor the James Webb Space Telescope, including thermal behavior and the sunshield deployment. NASA also uses software twins that emulate spacecraft hardware so flight software can be developed and validated before all physical hardware is available. These are engineering and mission tools, not decorative replicas.",
         "Manufacturers use twins for virtual commissioning, line balancing, process optimization, quality investigation, asset monitoring, training, and maintenance. A controls team can test machine logic against a simulated line before installation. A production planner can explore buffers and schedules. A maintenance team can combine condition evidence with an asset model. The value comes from a shorter or safer path to a decision, not from the twin label.",
         "Buildings and infrastructure create value through information continuity. A useful facility twin can connect rooms, equipment, documents, sensors, work orders, energy, inspections, and changes. A bridge or rail twin can connect geometry and condition evidence with maintenance planning. These applications often update more slowly than a robot twin, but their lifecycle can span decades.",
-        [
-          "Robotics makes the feedback loop visible. FieldAI and Caterpillar plan to use mobile robots for inspection and changing site records, while digital environments support testing and operational analysis. Foxglove helps teams inspect synchronized robot data. Antioch positions simulation as a continuous evaluation layer. Each company covers a different part of the system. The ",
-          { text: "Caterpillar announcement", href: fieldAiCaterpillar },
-          " does not disclose a customer rollout, price, or measured return, so its larger twin vision remains a development program rather than proven commercial evidence.",
-        ],
+        "Robotics makes the feedback loop visible. FieldAI and Caterpillar plan to use mobile robots for inspection and changing site records, while digital environments support testing and operational analysis. Foxglove helps teams inspect synchronized robot data. Antioch positions simulation as a continuous evaluation layer. Each company covers a different part of the system. The Caterpillar announcement does not disclose a customer rollout, price, or measured return, so its larger twin vision remains a development program rather than proven commercial evidence.",
       ],
     },
     {
@@ -567,11 +510,7 @@ export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
     {
       heading: "A Digital Twin of the Earth Is No Longer Just a Metaphor",
       paragraphs: [
-        [
-          "The European Commission's ",
-          { text: "Destination Earth initiative", href: destinationEarth },
-          " combines Earth observation, environmental models, socioeconomic data, cloud services, high performance computing, and interactive applications. Initial twins address extreme events and climate adaptation. The program aims to help users test responses to floods, droughts, fires, resource stress, and policy choices at useful geographic scales.",
-        ],
+        "The European Commission's Destination Earth initiative combines Earth observation, environmental models, socioeconomic data, cloud services, high performance computing, and interactive applications. Initial twins address extreme events and climate adaptation. The program aims to help users test responses to floods, droughts, fires, resource stress, and policy choices at useful geographic scales.",
         "This is a digital twin at system of systems scale. No single model captures Earth. Weather, oceans, land, infrastructure, population, and economic activity use different data and time horizons. The twin is therefore an organized environment in which multiple models and observations can interact, with reliability information attached to scenario results.",
         "The world changing potential is better preparation. A region could compare where to strengthen a flood barrier, how an evacuation route performs, which power assets face heat stress, or how a water policy affects agriculture. The danger is false authority. A detailed map can make a conditional scenario look like a certain future. The public value depends on visible assumptions, competing scenarios, and decisions that remain accountable to people.",
       ],
@@ -579,13 +518,7 @@ export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
     {
       heading: "Human Digital Twins Require a Higher Standard",
       paragraphs: [
-        [
-          "The National Heart, Lung, and Blood Institute describes research toward personalized models that could estimate disease risk, treatment response, or surgical outcomes. It also states that the technology is in its infancy. A 2026 systematic review found applications across diagnosis, therapy optimization, physiological monitoring, and health system modeling, while noting the need to distinguish conceptual proposals, prototypes, and patient level implementations. See the ",
-          { text: "NIH research feature", href: nihHearts },
-          " and the ",
-          { text: "systematic review", href: healthcareReview },
-          ".",
-        ],
+        "The National Heart, Lung, and Blood Institute describes research toward personalized models that could estimate disease risk, treatment response, or surgical outcomes. It also states that the technology is in its infancy. A 2026 systematic review found applications across diagnosis, therapy optimization, physiological monitoring, and health system modeling, while noting the need to distinguish conceptual proposals, prototypes, and patient level implementations.",
         "A biological twin is harder than an industrial asset twin because the subject is adaptive, partly observed, socially situated, and ethically protected. The data may be incomplete or uneven across populations. A model can influence diagnosis or treatment even when its uncertainty is poorly understood. Privacy loss can be permanent because physiology and identity cannot simply be reset like a password.",
         "The credible path is narrow and clinical. Define one decision, one population, one evidence standard, and one accountable professional workflow. Compare predictions with outcomes. Study bias and failure. Protect consent and data rights. A virtual human that claims to predict everything is marketing. A validated model that improves one decision can be medicine.",
       ],
@@ -594,13 +527,7 @@ export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
       heading: "What Digital Twins Cost",
       paragraphs: [
         "There is no useful average price for a digital twin. A developer experiment with a managed graph service, a facility model connected to a few systems, a production line commissioning environment, and a national infrastructure twin have different labor, data, model, compute, security, and lifecycle burdens.",
-        [
-          "NIST's ",
-          { text: "economics report", href: nistEconomics },
-          " warns that software application estimates do not necessarily include sensors, data standardization, modeling, integration, and implementation. A 2025 peer reviewed cost methodology similarly treats twin cost as a collection of data and model activities rather than one license. See the ",
-          { text: "cost methodology", href: costMethod },
-          ".",
-        ],
+        "NIST warns that software application estimates do not necessarily include sensors, data standardization, modeling, integration, and implementation. A 2025 peer reviewed cost methodology similarly treats twin cost as a collection of data and model activities rather than one license.",
         "The largest cost is often not the twin platform. It is making source information trustworthy, mapping asset identities, instrumenting the physical system, integrating operational technology and enterprise systems, validating models, changing workflows, and maintaining the result after equipment and software change.",
       ],
       tables: [
@@ -640,77 +567,115 @@ export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
       ],
     },
     {
-      heading: "A Practical Buyer Example",
+      heading: "What Buyers Can Expect",
       paragraphs: [
-        "Consider Harbor Thermal Systems, a fictional manufacturer of industrial heat exchangers. One final pressure and thermal test station limits shipments. The company is considering a digital twin to predict queue formation, identify test instability, and evaluate schedule and maintenance changes. This is an analytical example, not a supplier deployment or quotation.",
-        "The baseline should record accepted units, retests, cycle time, wait time, product mix, station faults, technician attention, energy, maintenance, and reasons for delay. The team should first ask whether conventional reporting, better scheduling rules, an additional fixture, or process standardization solves the problem more cheaply. A twin is justified only if representing interactions and possible futures improves the decision.",
-        "The first twin can be narrow. A discrete event model represents arrivals, recipes, fixtures, queues, technicians, and outages. Live production events update current state. Equipment telemetry provides pressure, temperature, and alarm evidence. Maintenance history estimates likely interruptions. A scenario service compares schedule, buffer, staffing, and maintenance options.",
-        "Acceptance should use a period the model did not see during calibration. The twin must reproduce agreed measures within stated tolerances and rank proposed interventions reliably enough for the planning decision. If it cannot explain why a recommendation changed, the team should limit it to analysis. It should not write directly to the test controller.",
-        "Value comes from additional accepted shipments, fewer retests, lower waiting, better maintenance timing, and avoided capital that would otherwise be spent on the wrong constraint. Cost includes integration, licenses, model development, instrumentation, validation, operator time, support, and continuous updates. The test is net value from better decisions, not whether the model looks like the station.",
-      ],
-    },
-    {
-      heading: "How to Build One Without Boiling the Ocean",
-      paragraphs: [
-        "Start with one consequential decision and one accountable owner. Define the physical subject, users, action, current baseline, error cost, acceptable delay, required evidence, and authority boundary. If the team cannot describe how a better decision creates value, it is not ready to select a platform.",
+        "Most organizations should not begin by trying to assemble a digital twin themselves. They usually engage a platform provider, domain specialist, equipment maker, engineering firm, systems integrator, or a team that combines several of those roles. The buyer owns the outcome and operating context. The provider designs, connects, validates, and supports the twin.",
+        "A digital twin is rarely purchased as one finished product from a catalog. The engagement is normally scoped around a decision such as predicting asset condition, commissioning a system, testing robot behavior, coordinating a facility, planning infrastructure, studying a biological process, or comparing environmental scenarios. A credible provider may also conclude that a dashboard, conventional simulation, or process improvement is sufficient.",
       ],
       tables: [
         {
-          title: "A Practical Deployment Sequence",
-          columns: ["Stage", "Work", "Exit Test"],
+          title: "Match the Provider to the Outcome",
+          columns: ["Buying Need", "Likely Lead", "Typical Product"],
           rows: [
             [
-              "1. Frame the decision",
-              "Name the user, decision, outcome, cadence, and error cost.",
-              "Owned use case with a measurable baseline.",
+              "Product or equipment behavior",
+              "Engineering simulation provider, lifecycle platform, equipment maker, or specialist",
+              "Validated behavioral model connected to configuration and operating evidence.",
             ],
             [
-              "2. Set the boundary",
-              "Choose the minimum scope needed.",
-              "Exclusions and blind spots are explicit.",
+              "Production or operational performance",
+              "Automation provider, industrial software company, or systems integrator",
+              "Connected process or system twin with scenarios, alerts, and workflow integration.",
             ],
             [
-              "3. Audit the evidence",
-              "Map sources, identity, time, quality, ownership, and gaps.",
-              "Required and missing evidence is known.",
+              "Buildings and infrastructure",
+              "Building information, geospatial, infrastructure, or facilities specialist",
+              "Spatial asset model connected to documents, condition, work, energy, or inspection data.",
             ],
             [
-              "4. Select the model",
-              "Choose the simplest credible modeling approach.",
-              "Assumptions, versions, and tolerances are recorded.",
+              "Robotics and autonomy",
+              "Simulation, evaluation, robotics, or autonomy engineering provider",
+              "Test environment, scenario library, performance metrics, and links to physical results.",
             ],
             [
-              "5. Build the minimum twin",
-              "Connect only what the first decision requires.",
-              "The user no longer reconstructs the answer manually.",
+              "Custom cross system program",
+              "Cloud twin service plus a domain integrator and the buyer's technical team",
+              "Shared data model, connectors, decision application, and operating architecture.",
             ],
             [
-              "6. Verify and validate",
-              "Test implementation, evidence, uncertainty, and edge conditions.",
-              "Performance meets the named operating boundary.",
+              "Scientific, clinical, or public planning",
+              "Domain research, clinical, engineering, or public sector consortium",
+              "Decision specific model with evidence, governance, validation, and professional oversight.",
+            ],
+          ],
+          note:
+            "The platform is only one component. Domain expertise, integration, validation, and continuing operation usually determine whether the product is useful.",
+        },
+      ],
+    },
+    {
+      heading: "What a Provider Will Need From You",
+      paragraphs: [
+        "Begin with the decision: who will use the twin, what action may change, how often the decision occurs, how performance is measured, and what a wrong answer costs. Bring the current baseline, the business reason for changing it, the available budget, and the time horizon.",
+        "Describe the subject and its boundary. Depending on the use case, that may include asset lists, hierarchies, layouts, maps, computer aided design files, building information models, process flows, control narratives, bills of material, configurations, software versions, operating limits, inspection history, or population definitions.",
+        "Identify the evidence and systems already available. Examples include sensors, historians, supervisory control, manufacturing execution, maintenance, enterprise planning, building management, laboratory, imaging, geospatial, fleet, and public data systems. Providers will need representative samples, timestamps, identifiers, quality information, ownership, retention rules, and realistic access conditions.",
+        "State the operating constraints early: cybersecurity zones, privacy, safety functions, regulatory duties, deployment environment, network access, control authority, site access, outage windows, internal technical owners, and support expectations. The provider does not need every file before the first conversation, but it needs enough evidence to distinguish a real project from a speculative demonstration.",
+      ],
+    },
+    {
+      heading: "What the Buyer Should Receive",
+      paragraphs: [
+        "The first deliverable should be a written scope that names the decision, users, subject, exclusions, data sources, integrations, authority level, acceptance tests, risks, schedule, operating responsibilities, and total commercial model. It should state which parts are standard product, configured product, custom engineering, and third party dependency.",
+        "The working product may include connectors, an asset or system model, simulation or analytical models, a current state view, scenario tools, alerts, reports, application interfaces, and workflow integrations. It may be a three dimensional environment, but it does not have to be. Many useful twins are primarily data, models, and decisions.",
+        "The buyer should also receive the evidence needed to trust and operate it: source mappings, model assumptions, validation results, uncertainty, operating limits, security roles, version history, monitoring, change procedures, documentation, training, support terms, and a plan for revalidation when the physical subject changes.",
+        "Ownership and exit terms belong in the product definition. The contract should make clear who owns source data, derived data, geometry, configuration, models, results, and documentation; what can be exported; which interfaces remain usable after termination; and what continuing licenses or services are required.",
+      ],
+      tables: [
+        {
+          title: "A Typical Buying Process",
+          columns: ["Stage", "Buyer Provides", "Provider Delivers"],
+          rows: [
+            [
+              "Discovery",
+              "Outcome, baseline, users, constraints, and budget range.",
+              "Feasibility view, solution boundary, alternatives, and estimate.",
             ],
             [
-              "7. Operate with limited authority",
-              "Start with observation or recommendation and record outcomes.",
-              "Measured value exceeds operating burden.",
+              "Evidence review",
+              "Representative records, system access, engineering information, and owners.",
+              "Data audit, architecture, integration plan, and identified gaps.",
             ],
             [
-              "8. Expand deliberately",
-              "Add scope or authority only after the first use works.",
-              "Each expansion has value, validation, security, and rollback.",
+              "Pilot",
+              "A representative subject, users, test cases, and acceptance measures.",
+              "Connected prototype, validation results, workflow, and production recommendation.",
+            ],
+            [
+              "Production",
+              "Security approval, operating ownership, integration support, and change process.",
+              "Operational twin, documentation, training, support, and service commitments.",
+            ],
+            [
+              "Operation and expansion",
+              "Outcome data, physical changes, user feedback, and new priorities.",
+              "Monitoring, model updates, revalidation, and controlled expansion.",
             ],
           ],
         },
       ],
     },
     {
+      heading: "What the Product Might Look Like",
+      paragraphs: [
+        "A manufacturer may receive a connected model of a machine, line, or production system that compares schedules, maintenance choices, throughput, quality, or energy use. A building owner may receive a spatial asset record tied to work orders, documents, inspections, occupancy, and energy. An infrastructure operator may receive a network or corridor model that supports condition assessment and investment planning.",
+        "A robotics team may receive a simulation and evaluation environment that runs autonomy software across scenarios and compares releases with physical test results. A healthcare research program may receive a narrowly validated physiological or care pathway model under clinical governance. A public agency may receive a planning environment that compares infrastructure, mobility, climate, or emergency scenarios while exposing assumptions and uncertainty.",
+        "The common product is not a virtual picture. It is a maintained decision system with a defined subject, synchronized evidence, models, user workflow, validation, and operating responsibility.",
+      ],
+    },
+    {
       heading: "Why Digital Twin Projects Fail",
       paragraphs: [
-        [
-          "A 2026 review of twins in legacy manufacturing found that integration barriers, cost, complexity, and weak value assessment continue to complicate business cases. It also noted that much supporting evidence remains conceptual or tied to broad transformation programs rather than isolated twin impact. See the ",
-          { text: "legacy systems review", href: legacyRealityCheck },
-          ".",
-        ],
+        "A 2026 review of twins in legacy manufacturing found that integration barriers, cost, complexity, and weak value assessment continue to complicate business cases. It also noted that much supporting evidence remains conceptual or tied to broad transformation programs rather than isolated twin impact.",
       ],
       callouts: [
         {
@@ -758,11 +723,7 @@ export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
     {
       heading: "Security Changes When the Copy Can Influence the Original",
       paragraphs: [
-        [
-          "NIST's ",
-          { text: "Security and Trust Considerations for Digital Twin Technology", href: nistSecurity },
-          " explains that twins inherit conventional cybersecurity problems and introduce new trust questions around instrumentation, monitoring, simulation, and control. A twin can expose the topology, condition, vulnerabilities, and operating logic of a critical system. If compromised, it can also present a false state or recommend a harmful action.",
-        ],
+        "NIST explains that twins inherit conventional cybersecurity problems and introduce new trust questions around instrumentation, monitoring, simulation, and control. A twin can expose the topology, condition, vulnerabilities, and operating logic of a critical system. If compromised, it can also present a false state or recommend a harmful action.",
         "The security model should separate observation, analysis, recommendation, and control. Source devices and users need identity. Data needs integrity, provenance, and time. Models and configurations need signed versions, approval, and rollback. Networks need segmentation. Commands need an authorized path through existing control and safety systems. Logs need to show what the twin knew, predicted, recommended, and changed.",
         "Privacy expands the problem. A building twin can reveal occupancy and movement. A city twin can combine mobility, infrastructure, imagery, and public records. A worker twin can become surveillance. A human health twin contains deeply personal information. Data minimization, purpose limits, access rights, retention, consent, and redress belong in the architecture, not in a policy added after deployment.",
       ],
@@ -776,51 +737,11 @@ export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
       ],
     },
     {
-      heading: "Questions Every Buyer Should Ask",
+      heading: "What a Good Proposal Should Make Clear",
       paragraphs: [
-        "A serious proposal should answer the questions below in writing. The answers define the product more clearly than the phrase digital twin.",
-      ],
-      callouts: [
-        {
-          label: "Purpose",
-          title: "Which decision changes?",
-          body: "Name the user, action, baseline, target outcome, update cadence, and cost of a wrong result.",
-        },
-        {
-          label: "Boundary",
-          title: "What exactly is represented?",
-          body: "List the assets, processes, environments, lifecycle stages, versions, conditions, and deliberate exclusions.",
-        },
-        {
-          label: "Evidence",
-          title: "How is reality synchronized?",
-          body: "Identify every source, asset identifier, timestamp, calibration, transformation, quality check, owner, and stale data rule.",
-        },
-        {
-          label: "Credibility",
-          title: "Where is the model valid?",
-          body: "Request verification, validation, uncertainty, test data separation, operating limits, drift monitoring, and revalidation triggers.",
-        },
-        {
-          label: "Authority",
-          title: "What can the twin cause?",
-          body: "Separate display, alert, recommendation, planning, supervised command, and automatic control. Preserve independent safety functions.",
-        },
-        {
-          label: "Economics",
-          title: "What is the total cost per improved decision?",
-          body: "Include instrumentation, integration, licenses, compute, storage, modeling, validation, workflow change, support, updates, and exit.",
-        },
-        {
-          label: "Ownership",
-          title: "Who maintains truth?",
-          body: "Assign the asset model, data mapping, model performance, security, user workflow, vendor relationship, budget, and retirement plan.",
-        },
-        {
-          label: "Portability",
-          title: "What survives a platform change?",
-          body: "Confirm export of source data, relationships, models, geometry, configuration, results, history, and documentation in usable forms.",
-        },
+        "A serious proposal should identify the exact decision, users, represented subject, data sources, model boundary, validation method, authority level, integrations, deliverables, acceptance tests, schedule, total cost, support model, ownership, and exit path. Those details define the product more clearly than the phrase digital twin.",
+        "The proposal should also explain what the provider will not deliver. A cloud graph is not automatically a validated model. A simulation is not automatically connected to reality. A visual environment is not automatically an operating workflow. A pilot is not automatically a maintainable production system.",
+        "The strongest commercial signal is a provider willing to narrow the scope, expose assumptions, price the integration and operating work, and accept measurable tests. The weakest is a universal twin demonstration with no named user, no decision, no baseline, and no plan for maintaining the result.",
       ],
     },
     {
@@ -836,7 +757,7 @@ export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
       heading: "Research Method and Disclosure",
       paragraphs: [
         "This report was prepared September 24, 2026 from ISO digital twin standards, NIST manufacturing, credibility, economics, and security work, Digital Twin Consortium definitions and its August 2026 system framework, NASA programs, the European Commission Destination Earth program, NIH research material, a 2026 healthcare systematic review, official platform documentation, public pricing pages, and peer reviewed research on cost and legacy implementation.",
-        "Company capabilities, examples, and prices are attributed to the organizations that publish them. They are not independent performance tests or customer quotations. The larger ramifications, platform role map, buyer framework, fictional manufacturing example, and verdict are Black Scarab analysis.",
+        "Company capabilities, examples, and prices are attributed to the organizations that publish them. They are not independent performance tests or customer quotations. The larger ramifications, platform role map, buyer engagement framework, and verdict are Black Scarab analysis.",
         "The cover is an original AI generated editorial illustration of a generic industrial and infrastructure twin. The architecture diagram is an original Black Scarab functional interpretation. Neither image depicts a customer deployment, proprietary design, certified control system, or official platform interface.",
       ],
     },

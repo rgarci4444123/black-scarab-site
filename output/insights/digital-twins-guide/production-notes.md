@@ -1,6 +1,6 @@
 # What Are Digital Twins Production Notes
 
-Status: Website edition in production. LinkedIn and X have not been prepared or published.
+Status: Website edition published. Buyer guidance revision in production. LinkedIn and X have not been prepared or published.
 
 Canonical target:
 
@@ -18,7 +18,11 @@ Rodolfo specifically requested a substantial analysis of how digital twins could
 
 The company landscape separates industrial lifecycle software, physics simulation, cloud twin services, building and infrastructure platforms, spatial simulation, robotics evaluation, robot data, and mobile reality capture. It connects existing Black Scarab reports on FieldAI, Caterpillar, Foxglove, and Antioch without presenting those companies as equivalent products.
 
-The article follows the Black Scarab table rule. It uses six tables for compact, repeated comparisons: the short definition, architecture layers, twin scopes, company roles, public pricing evidence, and deployment stages. Every table was tightened after mobile review so cells answer their headers directly rather than repeating surrounding prose. Ramifications, applications, alternatives, buyer questions, and risks use prose or asymmetric callout stacks instead of forced grids.
+The article follows the Black Scarab table rule. It uses seven tables for compact, repeated comparisons: the short definition, architecture layers, twin scopes, company roles, public pricing evidence, provider selection, and the buying process. Every table was tightened after mobile review so cells answer their headers directly rather than repeating surrounding prose. Ramifications, applications, alternatives, proposal guidance, and risks use prose or asymmetric callout stacks instead of forced grids.
+
+After publication, the buyer section was rewritten to reflect how organizations actually acquire digital twin capabilities. The buyer owns the outcome, operating context, evidence, governance, and acceptance decision. Platform providers, domain specialists, equipment makers, engineering firms, integrators, and research or public sector consortia design, connect, validate, and support the twin. The revised section explains how to match a provider to the outcome, what information the provider will need, what the buyer should receive, how a typical engagement progresses, and how the delivered product differs by sector.
+
+External evidence links were removed from the article narrative and retained in the Sources section. Internal Black Scarab links remain where they help readers continue the topic.
 
 ## Research boundary
 
@@ -26,7 +30,7 @@ Primary and authoritative sources include the ISO 23247 digital twin framework, 
 
 Independent context includes peer reviewed work on implementation cost, legacy manufacturing value assessment, and a 2026 systematic review of healthcare digital twins.
 
-Company capabilities, examples, and public prices remain attributed. AWS, Bentley, Azure, and Autodesk pricing evidence describes platform consumption or capacity, not a total project price. The practical heat exchanger manufacturer is fictional and explicitly labeled.
+Company capabilities, examples, and public prices remain attributed. AWS, Bentley, Azure, and Autodesk pricing evidence describes platform consumption or capacity, not a total project price. Buyer guidance is general Black Scarab analysis and not a supplier quotation.
 
 ## Original cover
 
@@ -95,7 +99,7 @@ Completed September 24, 2026:
 * Desktop and 390 pixel mobile layouts were inspected. The cover, article typography, callouts, stacked mobile tables, and responsive decision loop rendered without horizontal overflow.
 * The complete repository lint command remains blocked by three unrelated CommonJS import errors in `output/x/plus-one/render.cjs`. That file was not changed. The only other full lint result is the pre-existing Insights index image warning.
 
-The website edition remains a local draft. It has not been deployed, indexed, or promoted on LinkedIn or X.
+The original website edition was published and verified on September 24, 2026, and IndexNow accepted the canonical article and Insights index. The buyer guidance revision requires a new local build and live verification before it replaces the published edition. LinkedIn and X remain unpublished.
 
 ## Image generation prompt
 
