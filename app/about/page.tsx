@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
+import { authorPortraitSrc } from "@/lib/site-author";
 
 const baseUrl = "https://www.blackscarab.ai";
 
@@ -115,7 +116,7 @@ export default function AboutPage() {
             <aside aria-label="Founder profile">
               <div className="relative mx-auto aspect-square w-full max-w-[340px] overflow-hidden rounded-full border border-[#cbd4c7] bg-[#ece9e4] shadow-[0_20px_60px_rgba(25,35,27,0.1)]">
                 <Image
-                  src="/rodolfo-garcia-about-portrait.jpeg"
+                  src={authorPortraitSrc}
                   alt="Rodolfo Garcia Calderoni, founder and editor of Black Scarab"
                   fill
                   preload

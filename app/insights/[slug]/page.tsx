@@ -16,6 +16,7 @@ import {
   localAiArticlePlacements,
   type LocalAiArticleSlug,
 } from "@/lib/local-ai-deployment";
+import { authorPortraitSrc } from "@/lib/site-author";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -281,7 +282,7 @@ export default async function CaseStudyPage({ params }: Props) {
                         href={article.author.href}
                         className="inline-flex items-center gap-3 font-medium text-[#111827] transition hover:text-[#526147]"
                       >
-                        <Image src="/rodolfo-garcia-about-portrait.jpeg" alt="" width={40} height={40} sizes="40px" className="h-10 w-10 rounded-full object-cover ring-1 ring-[#ded9cf]" />
+                        <Image src={authorPortraitSrc} alt="" width={40} height={40} sizes="40px" className="h-10 w-10 rounded-full object-cover ring-1 ring-[#ded9cf]" />
                         By {article.author.name}
                       </Link>
                       <span className="text-[#c9c1b5]">|</span>
@@ -650,7 +651,7 @@ export default async function CaseStudyPage({ params }: Props) {
                 ) : null}
                 {article.author ? (
                   <section className="mt-12 grid gap-6 rounded-[24px] border border-[#e3ded5] bg-[#faf8f3] p-6 sm:grid-cols-[112px_minmax(0,1fr)] sm:p-8">
-                    <Image src="/rodolfo-garcia-about-portrait.jpeg" alt="Rodolfo Garcia Calderoni" width={112} height={112} sizes="112px" className="h-28 w-28 rounded-full object-cover" />
+                    <Image src={authorPortraitSrc} alt="Rodolfo Garcia Calderoni" width={112} height={112} sizes="112px" className="h-28 w-28 rounded-full object-cover" />
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#647456]">About the author</p>
                       <h2 className="mt-3 text-xl font-semibold">{article.author.name}</h2>

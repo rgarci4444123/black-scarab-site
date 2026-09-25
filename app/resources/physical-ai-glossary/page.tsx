@@ -9,6 +9,7 @@ import {
   glossaryLastReviewed,
   glossaryTerms,
 } from "@/lib/physical-ai-glossary";
+import { authorPortraitSrc } from "@/lib/site-author";
 
 const baseUrl = "https://www.blackscarab.ai";
 const canonicalPath = "/resources/physical-ai-glossary";
@@ -289,7 +290,7 @@ export default function PhysicalAiGlossaryPage() {
           <section className="border-t border-[#e8e4dc] px-6 py-14 md:px-10 lg:px-16">
             <div className="mx-auto flex max-w-4xl flex-col items-start gap-6 rounded-[26px] border border-[#e5e1d8] bg-[#fffdfa] p-6 sm:flex-row sm:items-center md:p-8">
               <Image
-                src="/rodolfo-garcia-founder-portrait.png"
+                src={authorPortraitSrc}
                 alt="Rodolfo Garcia Calderoni"
                 width={112}
                 height={112}

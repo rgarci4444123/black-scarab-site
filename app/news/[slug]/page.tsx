@@ -6,6 +6,7 @@ import { Fragment } from "react";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
 import { getNewsUpdateBySlug, newsUpdates } from "@/lib/news";
+import { authorPortraitSrc } from "@/lib/site-author";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -113,7 +114,7 @@ export default async function NewsArticlePage({ params }: Props) {
                 {update.summary}
               </p>
               <Link href={update.author.href} className="mt-8 inline-flex items-center gap-3 text-sm font-medium text-[#111827] transition hover:text-[#526147]">
-                <Image src="/rodolfo-garcia-about-portrait.jpeg" alt="" width={40} height={40} sizes="40px" className="h-10 w-10 rounded-full object-cover ring-1 ring-[#ded9cf]" />
+                <Image src={authorPortraitSrc} alt="" width={40} height={40} sizes="40px" className="h-10 w-10 rounded-full object-cover ring-1 ring-[#ded9cf]" />
                 <span>By {update.author.name}</span>
               </Link>
             </div>
@@ -164,7 +165,7 @@ export default async function NewsArticlePage({ params }: Props) {
               </section>
 
               <section className="mt-12 grid gap-6 rounded-[24px] border border-[#e3ded5] bg-[#faf8f3] p-6 sm:grid-cols-[112px_minmax(0,1fr)] sm:p-8">
-                <Image src="/rodolfo-garcia-about-portrait.jpeg" alt="Rodolfo Garcia Calderoni" width={112} height={112} sizes="112px" className="h-28 w-28 rounded-full object-cover" />
+                <Image src={authorPortraitSrc} alt="Rodolfo Garcia Calderoni" width={112} height={112} sizes="112px" className="h-28 w-28 rounded-full object-cover" />
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#647456]">About the author</p>
                   <h2 className="mt-3 text-xl font-semibold">Rodolfo Garcia Calderoni, CFA</h2>
