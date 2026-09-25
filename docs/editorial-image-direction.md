@@ -20,11 +20,11 @@ Choose deliberately across every dimension below. The lists are starting points,
 | Composition | extreme close view, overhead grid, wide environment, asymmetric field, cross section, exploded assembly, diptych, triptych, centered icon, route or map, layered depth, sequential motion |
 | Subject scale | material, component, end effector, machine, workcell, building, campus, logistics network, landscape, human and machine interaction |
 | Viewpoint | ground level, low angle, eye level, elevated oblique, top down, aerial, inside the machine, through glass, behind the operator, orthographic |
-| Palette | high key neutral, cobalt and cyan, rust and copper, near monochrome, red and white, violet nocturne, earth and mineral, fluorescent safety colors, sepia archive, saturated complementary pair, natural daylight color |
+| Palette | unrestricted; use any colors, combination, saturation, or tonal range that serves the story and the complete visual concept |
 | Light | hard flash, flat editorial, overcast daylight, dawn, dusk, backlit silhouette, fluorescent industrial, top light, projected light, practical workshop light |
 | Surface | polished, dusty, oily, brushed metal, translucent, paper grain, concrete, glass, fabric, raw composite, printed ink |
 
-Color should respond to the story. Ivory, charcoal, and sage remain available but are no longer the default and should not dominate consecutive covers.
+Color should respond to the story. There is no house palette for editorial artwork and no color family is preferred, required, discouraged, or prohibited. Ivory, charcoal, sage, orange, blue, and every other color remain equally available. Do not replace one default palette with another.
 
 ## Anti repetition rule
 
@@ -41,7 +41,7 @@ A visual fingerprint contains:
 * surface or texture
 * visual metaphor, if any
 
-The new concept must differ from every recent cover on at least three dimensions. Never repeat the same medium, composition, and dominant palette combination within five consecutive covers. Avoid reusing a centered robot, wide factory interior, glowing network lines, green tinted machinery, or ivory studio background simply because it worked before.
+The new concept must differ from every recent cover on at least three dimensions. Evaluate repetition across the complete recipe rather than treating palette as a quota or restriction. A color family may recur whenever it fits the story, provided the overall concept does not feel recycled. Avoid reusing a centered robot, wide factory interior, glowing network lines, or any other familiar device simply because it worked before.
 
 If the first result resembles a recent cover, revise the brief at the recipe level. Change the medium, viewpoint, scale, or composition instead of making minor color adjustments.
 
@@ -62,7 +62,7 @@ Complete this short brief before image generation:
 * Recent patterns deliberately avoided:
 * Elements that must not appear:
 
-The generation prompt should describe this recipe specifically. Do not begin from a reusable house prompt that already dictates a factory, centered machine, cinematic haze, or muted sage palette.
+The generation prompt should describe this recipe specifically. Do not begin from a reusable house prompt that already dictates a factory, centered machine, cinematic haze, or any predetermined palette.
 
 ## Editorial guardrails
 
@@ -76,6 +76,4 @@ The generation prompt should describe this recipe specifically. Do not begin fro
 
 ## Portfolio rhythm
 
-Judge the image as part of the full news grid, not only as an isolated cover. Across any run of eight new covers, aim for at least six distinct medium families, six distinct palette families, and a balanced mix of macro, machine, architectural, network, and human scale subjects. This is a diversity check, not a formula. Story relevance remains the deciding factor.
-
-The current reset is intentional. For the next eight editorial covers, do not use muted ivory, charcoal, and sage as the default palette, and do not use a centered robot in a wide factory interior as the default composition.
+Judge the image as part of the full news grid, not only as an isolated cover. Across a run of covers, vary medium, composition, scale, viewpoint, lighting, texture, and visual thesis when the stories support it. Palette may vary or recur naturally. Never force a color change merely to satisfy a diversity count. Story relevance and the strength of the complete visual concept remain the deciding factors.
