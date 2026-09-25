@@ -154,11 +154,12 @@ export default function HomePage() {
     },
     {
       eyebrow: "Latest podcast",
-      title: "Digit 5, UBTECH’s Robot Factory and Samsung’s New Alliance",
-      href: "https://open.spotify.com/episode/4JqhsCguspQWKvnVoCK0LP",
-      image: "/images/podcast/physical-ai-weekly-episode-1.jpg",
+      title:
+        "Figure Tests Robots in 30 Homes + OpenAI’s Robotics Push + Amazon’s New Factory",
+      href: "https://open.spotify.com/episode/2xu2dJxd3poc2HSYtkXlXI",
+      image: "/images/podcast/physical-ai-weekly-episode-2.png",
       imageAlt:
-        "Editorial illustration of humanoid and industrial robots inside a connected factory",
+        "Editorial collage connecting a humanoid doing household work, robot hardware, and a factory under construction",
       cta: "Listen on Spotify",
       external: true,
       hasBlueCardGlow: true,
