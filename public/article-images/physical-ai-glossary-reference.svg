@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title description">
+  <title id="title">The Physical AI Glossary</title>
+  <description id="description">A typographic reference cover connecting HBM, VLA, SLAM, actuator, and edge AI across the physical AI stack.</description>
+  <rect width="1600" height="1000" fill="#e7eadf"/>
+  <circle cx="1410" cy="120" r="310" fill="none" stroke="#cbd3c4" stroke-width="90"/>
+  <circle cx="170" cy="930" r="280" fill="none" stroke="#d5d0c3" stroke-width="70"/>
+  <path d="M118 128h1364" stroke="#85927e" stroke-width="2"/>
+  <text x="118" y="92" fill="#485345" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="6">BLACK SCARAB REFERENCE GUIDE</text>
+  <text x="118" y="330" fill="#182019" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="700" letter-spacing="-5">THE PHYSICAL AI</text>
+  <text x="118" y="445" fill="#182019" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="700" letter-spacing="-5">GLOSSARY</text>
+  <text x="122" y="535" fill="#596457" font-family="Arial, Helvetica, sans-serif" font-size="32">444 terms across intelligent machines</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">
+    <rect x="118" y="650" width="210" height="88" rx="44" fill="#243128"/>
+    <text x="223" y="706" text-anchor="middle" fill="#f9f7f0">HBM</text>
+    <rect x="352" y="650" width="210" height="88" rx="44" fill="#fbfaf6" stroke="#b9c2b2" stroke-width="2"/>
+    <text x="457" y="706" text-anchor="middle" fill="#243128">VLA</text>
+    <rect x="586" y="650" width="230" height="88" rx="44" fill="#fbfaf6" stroke="#b9c2b2" stroke-width="2"/>
+    <text x="701" y="706" text-anchor="middle" fill="#243128">SLAM</text>
+    <rect x="840" y="650" width="290" height="88" rx="44" fill="#fbfaf6" stroke="#b9c2b2" stroke-width="2"/>
+    <text x="985" y="706" text-anchor="middle" fill="#243128">ACTUATOR</text>
+    <rect x="1154" y="650" width="298" height="88" rx="44" fill="#75836e"/>
+    <text x="1303" y="706" text-anchor="middle" fill="#ffffff">EDGE AI</text>
+  </g>
+  <path d="M223 738v76h1080v-76" fill="none" stroke="#9ba696" stroke-width="3"/>
+  <circle cx="223" cy="814" r="8" fill="#243128"/>
+  <circle cx="457" cy="814" r="8" fill="#243128"/>
+  <circle cx="701" cy="814" r="8" fill="#243128"/>
+  <circle cx="985" cy="814" r="8" fill="#243128"/>
+  <circle cx="1303" cy="814" r="8" fill="#243128"/>
+  <text x="118" y="922" fill="#596457" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="2">AI • ROBOTICS • COMPUTE • SENSORS • CONTROL</text>
+</svg>

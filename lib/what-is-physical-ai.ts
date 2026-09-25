@@ -64,6 +64,14 @@ export const whatIsPhysicalAiDeepDive = (): CaseStudyArticle => ({
         ],
         "Black Scarab uses a stricter operational test. Physical AI observes the current physical state, uses a learned model to choose or adapt an action, causes or coordinates a change in a machine or process, and measures what happened next. The strength of the claim rises with the system's authority. A camera that recommends an inspection is near the boundary. A vehicle that steers and brakes is clearly inside it.",
         "This distinction matters because physical errors are not just incorrect answers. They can become damaged products, blocked aisles, wasted material, lost production, or human injury. The most valuable physical AI companies will not merely build capable models. They will build complete systems that know where they may act, detect when reality has moved outside that boundary, and recover without turning every exception into a service call.",
+        [
+          "Readers who want a clear explanation of the vocabulary behind these systems can use the ",
+          {
+            text: "Black Scarab Physical AI Glossary",
+            href: "/resources/physical-ai-glossary",
+          },
+          ", which covers 444 terms across AI models, compute, sensing, actuation, control, connectivity, deployment, and industrial safety.",
+        ],
       ],
     },
     {

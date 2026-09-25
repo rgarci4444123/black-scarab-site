@@ -14,6 +14,17 @@ export type Insight = {
   };
 };
 
+const glossaryResource: Insight = {
+  title: "The Physical AI Glossary",
+  summary:
+    "Clear definitions for 444 terms across AI models, chips, memory, sensors, actuators, control systems, connectivity, deployment, and industrial safety.",
+  published: "Reference Guide · 444 terms",
+  href: "/resources/physical-ai-glossary",
+  image: "/article-images/physical-ai-glossary-reference.svg",
+  kind: "internal",
+  ctaLabel: "Explore the glossary",
+};
+
 const externalInsights: Insight[] = [
   {
     title: "Nvidia Jetson Edge Computing: A Catalyst for AI Adoption in Latin America",
@@ -99,4 +110,8 @@ const internalInsights: Insight[] = [...caseStudies]
     : undefined,
 }));
 
-export const insights: Insight[] = [...internalInsights, ...externalInsights];
+export const insights: Insight[] = [
+  glossaryResource,
+  ...internalInsights,
+  ...externalInsights,
+];

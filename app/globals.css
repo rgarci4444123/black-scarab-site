@@ -27,3 +27,8 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.glossary-entry {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 220px;
+}
