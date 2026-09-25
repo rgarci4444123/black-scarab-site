@@ -73,12 +73,7 @@ export default function AboutPage() {
       />
 
       <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-[#dfded7] bg-[#fbfaf6] shadow-[0_24px_70px_rgba(15,23,42,0.055)] sm:rounded-[30px]">
-        <SiteHeader
-          homeHref="/"
-          ctaLabel="Subscribe"
-          ctaHref="#subscribe"
-          ctaTone="solid"
-        />
+        <SiteHeader homeHref="/" />
 
         <section className="border-b border-[#d9d9d2] px-5 py-12 sm:px-8 sm:py-16 lg:px-14 lg:py-20">
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-center lg:gap-20">
@@ -152,8 +147,6 @@ export default function AboutPage() {
           <div className="mx-auto max-w-6xl">
             <EmailSignupCard
               source="about-intelligence"
-              title="Follow the physical AI economy"
-              description="Get Black Scarab news, deep research, and practical analysis in one clear Thursday briefing."
             />
           </div>
         </section>

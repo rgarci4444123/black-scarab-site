@@ -9,8 +9,8 @@ type EmailSignupCardProps = {
 
 export default function EmailSignupCard({
   source,
-  title = "Catch up on physical AI in one email",
-  description = "Every new Black Scarab deep dive and news report, collected into one clear Thursday briefing.",
+  title = "Follow the physical AI economy",
+  description = "Get Black Scarab news, deep research, and practical analysis in one clear Thursday briefing.",
   compact = false,
 }: EmailSignupCardProps) {
   return (

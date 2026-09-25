@@ -29,13 +29,9 @@ export const metadata: Metadata = {
 
 export default function NewsPage() {
   return (
-    <main className="min-h-screen bg-[#f6f4ef] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-7xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
-        <SiteHeader
-          homeHref="/"
-          ctaLabel="Discuss an Opportunity"
-          ctaHref="/intake"
-        />
+    <main className="min-h-screen bg-[#f4f2ec] px-3 py-3 text-[#101410] sm:px-5 sm:py-5 lg:px-7">
+      <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-[#dfded7] bg-[#fbfaf6] shadow-[0_24px_70px_rgba(15,23,42,0.055)] sm:rounded-[30px]">
+        <SiteHeader homeHref="/" />
 
         <section className="border-b border-[#dce5d6] bg-[#111810] px-6 py-10 text-white md:px-10 md:py-12 lg:px-14">
           <div className="mx-auto flex max-w-6xl flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
@@ -145,8 +141,6 @@ export default function NewsPage() {
           <div className="mx-auto max-w-5xl">
             <EmailSignupCard
               source="news-index"
-              title="Follow the physical AI signal"
-              description="Get concise Black Scarab reporting on robotics, embodied AI, industrial deployment, and the infrastructure moving intelligence into the physical world."
             />
           </div>
         </section>

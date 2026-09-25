@@ -594,8 +594,6 @@ export default async function CaseStudyPage({ params }: Props) {
                       <EmailSignupCard
                         source={`insight-inline:${article.slug}`}
                         compact
-                        title="Get the next Black Scarab deep dive"
-                        description="Keep reading now, then get every new deep dive and news report in Thursday's briefing."
                       />
                     ) : null}
                   </Fragment>

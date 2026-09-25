@@ -91,7 +91,7 @@ export default async function NewsArticlePage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema).replace(/</g, "\\u003c") }}
       />
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[32px] border border-[#e7e3da] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
-        <SiteHeader homeHref="/" ctaLabel="Discuss an Opportunity" ctaHref="/intake" />
+        <SiteHeader homeHref="/" />
 
         <article>
           <header className="border-b border-[#e8e3da] bg-[#fffdfa] px-6 py-12 md:px-10 md:py-16 lg:px-14 lg:py-20">
@@ -150,8 +150,6 @@ export default async function NewsArticlePage({ params }: Props) {
                       <EmailSignupCard
                         source={`news-inline:${update.slug}`}
                         compact
-                        title="Get the next physical AI report"
-                        description="Keep reading now, then get every new report together in Thursday's briefing."
                       />
                     ) : null}
                   </Fragment>

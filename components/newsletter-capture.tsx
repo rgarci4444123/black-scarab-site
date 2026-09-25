@@ -145,13 +145,13 @@ export default function NewsletterCapture() {
           id="newsletter-capture-title"
           className="mt-3 pr-8 text-3xl font-semibold leading-tight tracking-[-0.035em] sm:text-4xl"
         >
-          Keep up with physical AI.
+          Follow the physical AI economy
         </h2>
         <p
           id="newsletter-capture-description"
           className="mt-4 text-base leading-7 text-[#59616b]"
         >
-          Get every new Black Scarab deep dive and news report in one clear Thursday briefing.
+          Get Black Scarab news, deep research, and practical analysis in one clear Thursday briefing.
         </p>
         <div className="mt-6">
           <NewsletterSignupForm

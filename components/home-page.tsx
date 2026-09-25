@@ -168,12 +168,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#f4f2ec] px-3 py-3 text-[#101410] sm:px-5 sm:py-5 lg:px-7">
       <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-[#dfded7] bg-[#fbfaf6] shadow-[0_24px_70px_rgba(15,23,42,0.055)] sm:rounded-[30px]">
-        <SiteHeader
-          homeHref="/"
-          ctaLabel="Subscribe"
-          ctaHref="#subscribe"
-          ctaTone="solid"
-        />
+        <SiteHeader homeHref="/" />
 
         <section className="border-b border-[#d9d9d2] px-5 py-10 sm:px-8 sm:py-14 lg:px-12 lg:py-16 xl:px-14">
           <div className="mx-auto grid max-w-[1460px] gap-10 lg:grid-cols-[minmax(0,0.88fr)_minmax(560px,1.12fr)] lg:items-center lg:gap-4">
@@ -260,8 +255,6 @@ export default function HomePage() {
           <div className="mx-auto max-w-6xl">
             <EmailSignupCard
               source="homepage-intelligence"
-              title="Follow the physical AI economy"
-              description="Get Black Scarab news, deep research, and practical analysis in one clear Thursday briefing."
             />
           </div>
         </section>
