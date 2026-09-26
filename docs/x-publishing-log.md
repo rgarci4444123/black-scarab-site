@@ -1,5 +1,14 @@
 # X publishing log
 
+## Qualcomm and PickNik News post prepared, September 26, 2026
+
+* Website article published and verified: https://www.blackscarab.ai/news/qualcomm-picknik-moveit-robotics-software.
+* LinkedIn company post and first link comment published and verified from Black Scarab company ID 111898269: https://www.linkedin.com/feed/update/urn:li:share:7509616007989051392/?actorCompanyId=111898269.
+* Concise X copy, descriptive alt text, and the exact cover path are saved in `output/x/qualcomm-picknik-moveit/publication.md`.
+* The cover is an original Black Scarab editorial illustration, not a Qualcomm, PickNik, MoveIt, or Arduino product image.
+* The live `@BlackScarabAI` profile was checked before preparation. No matching Qualcomm, PickNik, or MoveIt post was visible among recent posts.
+* No X publication was performed. Rodolfo publishes and verifies X himself.
+
 ## Industrial automation deep dive post prepared, September 20, 2026
 
 * Website article published and verified: https://www.blackscarab.ai/insights/industrial-automation-explained-plc-cnc-robots-factory-software.
