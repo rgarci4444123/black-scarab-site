@@ -32,6 +32,157 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "qualcomm-picknik-moveit-robotics-software",
+    title: "Qualcomm reaches for the software layer that moves robots",
+    summary: "Qualcomm has agreed to acquire PickNik, the company that leads development of MoveIt and sells the MoveIt Pro platform. The deal could connect robot manipulation software more closely with Dragonwing edge computing, but its value will depend on execution, community trust, and continued support for competing hardware.",
+    category: "Robotics Software",
+    publishedDate: "2026-09-26",
+    publishedAt: "2026-09-26T08:40:02-04:00",
+    publishedLabel: "September 26, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/qualcomm-picknik-moveit-acquisition.png",
+    imageAlt: "Screen print style editorial illustration of modular robot arm joints arranged along a sweeping motion path",
+    imageCaption: "Original Black Scarab editorial interpretation of software coordinating the motion of a modular robot arm. The components are conceptual and do not depict a Qualcomm, PickNik, MoveIt, or Arduino product.",
+    readingTime: "9 min read",
+    keyPoints: [
+      "Qualcomm announced an agreement to acquire PickNik on September 23. Financial terms were not disclosed, and the transaction remains subject to customary closing conditions.",
+      "MoveIt, MoveIt Pro, and future PickNik technology are expected to integrate more closely with Qualcomm Dragonwing robotics platforms, with a first planned integration for Arduino VENTUNO Q boards.",
+      "Qualcomm says MoveIt 1 and MoveIt 2 will remain open source, community driven, hardware neutral, and available across third party platforms. Preserving that independence is central to the strategic value of the deal."
+    ],
+    sections: [
+      {
+        heading: "What Qualcomm agreed to buy",
+        paragraphs: [
+          "Qualcomm Technologies announced an agreement to acquire PickNik Inc. on September 23. PickNik is the Boulder robotics software company that leads development of MoveIt and sells MoveIt Pro, a commercial platform for building and deploying robot manipulation applications.",
+          "The companies did not disclose a price, expected closing date, revenue figure, customer count, or employee retention plan. The transaction remains subject to customary closing conditions. Until those conditions are satisfied, this is a proposed acquisition rather than a completed purchase.",
+          "Qualcomm says MoveIt, MoveIt Pro, and future PickNik technology are expected to integrate more closely with its Dragonwing robotics platforms. It also plans to begin with an integration for Arduino VENTUNO Q boards. The stated goal is to give developers a shorter route from artificial intelligence models to motion planning, manipulation, perception, kinematics, and robot control.",
+          "The wording matters. Qualcomm is acquiring PickNik, not converting the entire MoveIt community into a proprietary asset. MoveIt is an open source project with outside contributors and public governance. PickNik supplies much of its leadership and maintenance, but the code and community extend beyond one company."
+        ]
+      },
+      {
+        heading: "MoveIt sits between intention and motion",
+        paragraphs: [
+          "An artificial intelligence model can identify an object or propose a task, but a robot still has to convert that intention into a path its joints can execute. The arm must reach the target without colliding with a shelf, another machine, or itself. It must respect joint limits, choose a workable grasp, coordinate a tool, and respond when the scene changes.",
+          "MoveIt provides many of those manipulation building blocks on top of the Robot Operating System. Its capabilities include motion planning, inverse kinematics, collision checking, trajectory execution, perception, and manipulation. The project website lists support for more than 150 robot platforms and offers the core software under the permissive BSD 3 Clause license.",
+          "That position in the stack makes MoveIt important even when it is not visible to an end user. A vision language action model may decide that a cup should move from a table to a tray. MoveIt can help determine whether the arm can reach it, which joint configuration is valid, and how to execute the movement around obstacles.",
+          "PickNik founder Dave Coleman argues that learned models will not make classical planning disappear. His preferred architecture combines models that interpret scenes and choose tasks with deterministic software that checks geometry, safety constraints, and motion validity. That is a company view, but it reflects a practical problem for robot builders: impressive model output is not the same as dependable physical execution."
+        ]
+      },
+      {
+        heading: "Why Qualcomm wants this layer",
+        paragraphs: [
+          "Qualcomm has spent years selling processors and development platforms for cameras, drones, mobile robots, industrial systems, and other edge devices. Its Dragonwing robotics strategy now reaches beyond silicon into reference designs, software tools, model deployment, sensing, connectivity, and fleet infrastructure.",
+          "PickNik adds the manipulation layer. Qualcomm already has systems designed to run perception and artificial intelligence workloads on the robot. MoveIt gives those systems a widely used route from perception and model output to coordinated arm motion. MoveIt Pro adds a commercial development and runtime product, customer support, and deployment tools around the open source core.",
+          "The fit is strongest where latency, connectivity, and power make continuous cloud control impractical. Coleman says advanced models need to run on the robot in real time and within a power budget. Qualcomm can optimize compute, runtimes, perception, planning, and control together instead of waiting for independent software teams to adapt after a processor ships.",
+          "That does not mean every MoveIt user will need a Qualcomm processor. The company has explicitly promised continued support for third party hardware. The strategic opportunity is to make Dragonwing the easiest place to use MoveIt while leaving the software available elsewhere. If Qualcomm can offer better integration without creating lock in, it can compete on execution rather than exclusion."
+        ]
+      },
+      {
+        heading: "The open source promise is part of the asset",
+        paragraphs: [
+          "MoveIt survived because contributors maintained it after Willow Garage closed. PickNik was founded in 2015 when companies began asking for help using the software, and it later helped lead the transition to MoveIt 2. The project now has hundreds of code contributors and a long record across research and commercial robotics.",
+          "Qualcomm and PickNik are both founding members of the Open Source Robotics Alliance, the organization created to support governance and maintenance for projects that include the Robot Operating System. That shared history gives Qualcomm a stronger starting position than a buyer arriving without ties to the community.",
+          "Qualcomm says MoveIt 1 and MoveIt 2 will remain open source, community driven, hardware neutral, and supported across third party platforms. It also says it will continue supporting development of MoveIt and the Robot Operating System. Those are clear public commitments.",
+          "They are not the same as a permanent guarantee about priorities, staffing, or influence. Existing open source releases remain available under their licenses, but future progress still depends on maintainers, review capacity, documentation, release work, and a healthy contributor base. Developers will watch whether roadmaps remain open and whether support for competing processors receives the same care as support for Dragonwing.",
+          "Black Scarab's read is that Qualcomm has little incentive to weaken the community. MoveIt's value comes from broad adoption, hardware coverage, and developer trust. Turning it into a narrow feature of one processor family would destroy much of the network Qualcomm is paying to join."
+        ]
+      },
+      {
+        heading: "Open core gives the deal a commercial engine",
+        paragraphs: [
+          "The acquisition is not only a sponsorship of public software. PickNik operates an open core business. MoveIt remains the free foundation, while MoveIt Pro packages commercial tools and support for teams taking manipulation systems into production.",
+          "This distinction gives Qualcomm several paths to return on the deal. Better MoveIt support can help sell Dragonwing platforms. MoveIt Pro can generate software and support revenue. PickNik engineers can improve Qualcomm's robotics stack, while customer deployments create feedback about the gaps that keep robots from moving beyond prototypes.",
+          "The model also creates tension that must be managed. A useful commercial edition needs capabilities worth paying for, while the open project must remain strong enough to attract developers and hardware partners. If too much moves behind a commercial boundary, community trust erodes. If the paid layer adds too little, the business is harder to sustain.",
+          "No financial information was disclosed, so the current size of the commercial opportunity cannot be measured from the announcement. Qualcomm did not identify PickNik customers, contract values, recurring revenue, or the share of users that buy MoveIt Pro. The strategic logic is visible, but the economics are not."
+        ]
+      },
+      {
+        heading: "The first integration is deliberately accessible",
+        paragraphs: [
+          "Qualcomm says its first planned MoveIt integration will target Arduino VENTUNO Q boards. That choice suggests the company wants the acquisition to influence how developers begin robotics projects, not only how established manufacturers optimize high end machines.",
+          "A smoother path from an accessible development board to MoveIt could reduce setup work for education, research, prototypes, and smaller robot makers. It may also connect Arduino's large developer community with Qualcomm's edge artificial intelligence tools and PickNik's manipulation software.",
+          "The announcement does not provide a release date, supported robot list, benchmark, pricing plan, or definition of what the integration includes. It could range from tested installation packages and examples to deeper runtime optimization. Those details will determine whether the promise becomes a meaningful developer advantage or simply a compatible software image."
+        ]
+      },
+      {
+        heading: "What Qualcomm gains and what remains missing",
+        paragraphs: [
+          "The deal fills an obvious software gap. Qualcomm has processors, connectivity, artificial intelligence runtimes, development boards, and a growing robotics platform. PickNik brings manipulation expertise, an established open source project, a commercial product, and relationships with robot builders working on difficult deployments.",
+          "It does not give Qualcomm a complete robot business. MoveIt does not manufacture arms, motors, gearboxes, sensors, safety systems, or end effectors. A production system still needs hardware integration, application engineering, certification, maintenance, and a customer willing to redesign a workflow around the machine.",
+          "It also does not eliminate the hardest part of general purpose manipulation: reliable performance across unfamiliar objects and changing environments. Motion planning can validate a path, but the robot still needs accurate perception, a good grasp, calibrated hardware, and a recovery strategy when reality differs from the model.",
+          "Qualcomm's opportunity is to make these layers work together with less engineering friction. The test is not whether it can demonstrate MoveIt on a Dragonwing board. The test is whether robot companies can reach dependable field deployment faster, with lower integration cost and fewer platform specific compromises."
+        ]
+      },
+      {
+        heading: "Reality check",
+        paragraphs: [
+          "The deal has not closed. There is no disclosed purchase price, completion date, integration schedule, financial forecast, or quantified customer benefit. Statements about faster deployment and easier development are objectives, not measured results.",
+          "Qualcomm has not said how PickNik will be organized, which leaders will remain, how many engineers are joining, or whether MoveIt Pro branding and pricing will change. PickNik says existing customers will continue to receive support, but it has not published transition terms.",
+          "The open source commitments are encouraging and unusually specific. Their credibility will be judged through future actions: public roadmaps, maintainers, release cadence, issue response, contribution rules, hardware support, and the ability of outside developers to shape technical decisions.",
+          "There is also a broader platform risk. Qualcomm wants Dragonwing to become a more complete robotics foundation. Robot makers may welcome an integrated option, but many will preserve alternatives across processors, operating systems, and control hardware. Hardware neutrality is therefore not a side promise. It is a condition for continued adoption."
+        ]
+      },
+      {
+        heading: "What comes next",
+        paragraphs: [
+          "The first milestone is closing the transaction. After that, developers should look for a published integration roadmap, staffing continuity, and specific dates for Dragonwing and VENTUNO Q support.",
+          "The second milestone is technical evidence. Installation time, supported platforms, inference and planning latency, control behavior, deployment tooling, and production case studies would show whether the combined stack actually removes work for robot teams.",
+          "The third milestone is community health. Continued releases for non Qualcomm hardware, visible outside contributions, transparent governance, and investment in documentation would demonstrate that the open source promise is shaping engineering decisions.",
+          "Black Scarab's view is that Qualcomm is buying a bridge between artificial intelligence and mechanical action. The bridge is strategically valuable because nearly every capable robot needs it, but its strength comes from being shared. Qualcomm can create more value by making MoveIt excellent everywhere and exceptional on Dragonwing than by trying to own the road outright."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Qualcomm acquisition agreement announcement, published September 23, 2026",
+        url: "https://www.qualcomm.com/news/releases/2026/09/qualcomm-to-acquire-picknik-to-advance-the-future-of-open-roboti"
+      },
+      {
+        label: "PickNik founder Dave Coleman's account of the deal and MoveIt's history, published September 23, 2026",
+        url: "https://picknik.ai/2026/09/23/Fifteen-Years-of-MoveIt-and-the-Next-Fifteen.html"
+      },
+      {
+        label: "MoveIt project overview and supported robot list, accessed September 26, 2026",
+        url: "https://moveit.ai/"
+      },
+      {
+        label: "MoveIt project governance overview, accessed September 26, 2026",
+        url: "https://moveit.ai/about/"
+      },
+      {
+        label: "MoveIt source code and license documentation, accessed September 26, 2026",
+        url: "https://moveit.ai/documentation/source-code-api/"
+      },
+      {
+        label: "MoveIt explanation of its open core commercial model, published February 22, 2024",
+        url: "https://moveit.ai/open%20source/open%20core%20software/2024/02/22/MoveIt-Pro-Open-Core.html"
+      },
+      {
+        label: "Dow Jones Newswires report on the agreement and undisclosed terms, published September 23, 2026",
+        url: "https://www.marketwatch.com/story/qualcomm-to-buy-picknik-to-help-advance-open-robotics-and-physical-ai-0219b7c3"
+      },
+      {
+        label: "The Robot Report coverage of the acquisition agreement, published September 23, 2026",
+        url: "https://www.therobotreport.com/qualcomm-acquires-picknik-robotics-keep-moveit-open-source/"
+      },
+      {
+        label: "Open Robotics announcement of the Open Source Robotics Alliance, published March 18, 2024",
+        url: "https://www.openrobotics.org/blog/2024/3/18/announcing-the-open-source-robotics-alliance-osra"
+      },
+      {
+        label: "Qualcomm Dragonwing robotics platform announcement, published January 5, 2026",
+        url: "https://www.qualcomm.com/news/releases/2026/01/qualcomm-introduces-a-full-suite-of-robotics-technologies-power"
+      },
+      {
+        label: "Qualcomm Dragonwing RB3 Gen 2 development kit overview, accessed September 26, 2026",
+        url: "https://www.qualcomm.com/developer/hardware/rb3-gen-2-development-kit"
+      }
+    ]
+  },
+  {
     slug: "amazon-indiana-robotics-manufacturing",
     title: "Amazon plans a $100 million Indiana robotics factory",
     summary: "Amazon will invest more than $100 million in a 585,000 square foot Greenwood manufacturing plant expected to open by 2028. The larger signal is a shift from proving individual warehouse robots to building the domestic factory network needed to deploy them at Amazon scale.",
