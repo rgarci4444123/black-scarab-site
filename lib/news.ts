@@ -32,6 +32,141 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "microsoft-robot-inference-offloading-edge-cloud",
+    title: "Microsoft tests when robots should think beyond the machine",
+    summary: "Microsoft researchers found that moving selected robot inference workloads to nearby or cloud GPUs could improve performance and battery life. The same experiments show why latency, bandwidth, and safety prevent a simple return to cloud robotics.",
+    category: "Robotics Infrastructure",
+    publishedDate: "2026-09-27",
+    publishedAt: "2026-09-27T08:45:00-04:00",
+    publishedLabel: "September 27, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/microsoft-robot-inference-offloading.png",
+    imageAlt: "Paper sculpture of a mobile robot moving colored blocks through translucent layers toward a remote server",
+    imageCaption: "Original Black Scarab editorial interpretation of robot inference moving between a machine and remote compute. The paper sculpture is conceptual and does not depict a Microsoft product, test setup, or customer deployment.",
+    readingTime: "9 min read",
+    keyPoints: [
+      "Microsoft measured mobile robot workloads across on board, nearby edge, and cloud GPUs using three robot platforms and several perception, planning, navigation, and manipulation models.",
+      "The researchers found that smaller on board GPUs could not hold the complete workload stack, while stronger remote GPUs could improve task performance and reduce the power burden carried by the robot.",
+      "Offloading created a second set of constraints. Added network delay reduced manipulation accuracy, uncompressed camera streams required substantial bandwidth, and shared infrastructure introduced contention between robots."
+    ],
+    sections: [
+      {
+        heading: "What Microsoft released",
+        paragraphs: [
+          "Microsoft Research published new results on September 23 showing how robot inference can be divided among the robot, a nearby server, and cloud infrastructure. The company also added an inference offloading capability to its open source Physical AI Toolchain.",
+          "The work addresses a practical problem. New robot models can interpret scenes, plan tasks, navigate, and manipulate objects, but they demand more memory and computation than many mobile machines can carry without adding cost, weight, heat, and power consumption.",
+          "Microsoft is proposing that selected artificial intelligence workloads can run on stronger GPUs outside the robot. A lightweight computer on the machine can transmit sensor data and receive model output, while local controllers continue turning those decisions into physical action.",
+          "That is not the same as placing the entire robot in the cloud. The research argues for a distributed system in which each task runs where its combination of compute demand, timing, bandwidth, and safety requirements can be met."
+        ]
+      },
+      {
+        heading: "The experiment covered more than one robot task",
+        paragraphs: [
+          "The underlying technical report was first published in March and includes researchers from Microsoft and the University of California, Berkeley. It evaluates three robot platforms: a two arm SO 101 setup for manipulation, a TurtleBot 4 for navigation, and a Stretch 3 mobile manipulator for work in homes and workplaces.",
+          "The workloads span several parts of the robot intelligence stack. VLMaps and GraphEQA represent semantic mapping and planning. RTAB Map with nvblox handles localization, mapping, and obstacle avoidance. The Pi 0.5 vision language action model controls a two arm handoff and placement task. DreamZero represents a more demanding world action model evaluated from recorded video because the studied on board hardware could not support it.",
+          "Compute options ranged from Jetson Orin and Jetson Thor systems carried with the robot to nearby servers using an NVIDIA L4 or DGX Spark. The cloud configuration used an Azure virtual machine with an NVIDIA A100. Tests included WiFi and private 5G connectivity.",
+          "That breadth is useful because robot intelligence is not one workload. Mapping may tolerate seconds between some updates, while obstacle avoidance and manipulation can fail when delay changes the scene before the robot acts. A placement decision that arrives late can be physically wrong even if the model output was logically correct when it was produced."
+        ]
+      },
+      {
+        heading: "On board compute runs into memory and power limits",
+        paragraphs: [
+          "The researchers report that a Jetson Orin AGX configuration with 32 gigabytes of memory could not hold the complete set of models used for mobile manipulation. The smaller Orin Nano could run only the navigation workload in their test group.",
+          "When a model did fit, execution speed still mattered. Mapping and planning were as much as 383 percent slower on some on board systems than on the A100 cloud GPU. The lighter navigation configuration showed a 30 percent decline in detecting an obstacle within the required time. Slower vision language action inference reduced success in the timed manipulation task.",
+          "Power created another constraint. The report estimated what would happen if the Stretch 3 replaced its attached GPU with a Raspberry Pi 5 consuming about six watts for data transmission. Under the researchers' workload and battery assumptions, moving inference elsewhere could add several hours of operation.",
+          "This is an estimate from one research setup, not a general battery guarantee. Motors, payload, terrain, sensing, cooling, radio use, and idle time can dominate a real robot's energy budget. The result still illustrates an important design tradeoff: a more capable computer can make the robot smarter while shortening the time it remains useful between charges."
+        ]
+      },
+      {
+        heading: "A faster remote GPU does not erase the network",
+        paragraphs: [
+          "The strongest result in the report may be the evidence against careless offloading. When the researchers added a realistic amount of network delay to the two arm manipulation workload, accuracy fell from 80 percent to 70 percent on the DGX Spark configuration. Moving the same workload to the faster A100 restored the measured accuracy, but at a higher infrastructure cost.",
+          "Bandwidth was just as important. The SO 101 experiment streamed lossless video from three cameras at 640 by 480 resolution and 30 frames per second. The stream required about 100 megabits per second. Compressing it reduced bandwidth to 12 or 6.5 megabits per second, but task accuracy also declined.",
+          "The semantic mapping test showed the same tension. Reducing frame rate or image resolution saved bandwidth but caused the map to recognize fewer of the reference objects. At 640 by 480 resolution, recall fell from the reference level to 71.2 percent when the frame rate dropped to one frame per second.",
+          "In other words, the robot cannot simply send less data and expect the same intelligence. Compression, dropped frames, changing network conditions, and queueing delay all alter what the remote model sees and how quickly its answer reaches the machine."
+        ]
+      },
+      {
+        heading: "The nearby edge has a different job from the cloud",
+        paragraphs: [
+          "A server inside a factory, warehouse, hospital, or home can offer more compute than the robot without adding the long and variable route to a distant data center. That makes nearby infrastructure attractive for perception, mapping, and model inference that benefit from stronger GPUs but still need predictable response times.",
+          "The cloud remains useful for workloads that tolerate more delay, for overflow capacity, and for training, evaluation, fleet analytics, and model distribution. The research does not establish one universal boundary between the two. It shows that the boundary should move according to the task and the network available at that moment.",
+          "Fast reactive control still belongs close to the hardware. Braking, collision protection, joint limits, emergency stops, and other safety functions cannot depend on a remote model arriving through an uncertain connection. A sensible commercial architecture would preserve a safe local operating state when remote inference slows or disappears.",
+          "This is why the decision is larger than choosing a processor. Buyers may need to evaluate the robot, wireless network, local server capacity, cloud contract, security model, and failure behavior as one system."
+        ]
+      },
+      {
+        heading: "Shared compute could change fleet economics",
+        paragraphs: [
+          "Offloading becomes more interesting when many robots can share one pool of GPUs. Mobile machines rarely use every model at full intensity at exactly the same moment. A common server can take advantage of those changing workloads instead of forcing every robot to carry enough compute for its individual peak.",
+          "The report found that batching requests from several robots could reduce memory use and improve throughput for some models. It also found that the benefit varied by workload. Some models batch efficiently, while others gain little and make each request wait longer.",
+          "Contention can also turn a shared resource into a bottleneck. The researchers observed higher compute and network delays as more robot clients became active. Their conclusion is that a fleet platform needs admission control, service guarantees, and scheduling that understands which tasks are urgent.",
+          "The commercial opportunity is clear but unproven. A factory might buy fewer large GPUs than it would need if every robot carried a premium processor. The savings must be weighed against servers, networking, operations staff, redundancy, security, and the cost of downtime when shared infrastructure fails. Microsoft did not publish a customer cost comparison or a fleet deployment result."
+        ]
+      },
+      {
+        heading: "Microsoft is turning the research into infrastructure",
+        paragraphs: [
+          "The Physical AI Toolchain packages parts of this architecture as open source software. Microsoft says the new capability can containerize an inference workload, deploy it to a remote GPU, and connect it with robot software through a declarative workflow. Published examples target the SO 101 and the Universal Robots UR10e.",
+          "The broader toolchain integrates ROS 2, LeRobot, NVIDIA simulation and edge technology, Kubernetes, Azure services, and deployment automation. Microsoft presents it as a graduated path that can begin with one robot and one computer before adding shared servers or cloud infrastructure.",
+          "That positioning matters. The research paper asks where robot intelligence should run. The product answer naturally creates roles for Azure, Kubernetes, and Microsoft's management software. The measurements deserve to be evaluated on their own, while the recommended architecture should also be understood as part of Microsoft's cloud and edge strategy.",
+          "The repository is public under the MIT license, which lets developers inspect and adapt the code. Public code does not establish production readiness. Microsoft has not disclosed adoption figures, paid customers, service levels, or independent field results for the new offloading feature."
+        ]
+      },
+      {
+        heading: "Reality check",
+        paragraphs: [
+          "The study is broad for an infrastructure paper, but it is still a controlled research evaluation. It uses three robot platforms, a selected group of models, and specific GPU and network configurations. Results may change with different cameras, radios, models, facilities, robot speeds, or safety requirements.",
+          "Several measurements isolate parts of a mobile manipulation system rather than proving an entire autonomous workflow over months of customer operation. DreamZero was evaluated from recorded video. The battery analysis estimates the benefit of removing an attached GPU rather than documenting a commercial robot fleet running full shifts with remote inference.",
+          "Security and privacy also require more evidence. Sending camera feeds from a workplace or home to shared infrastructure expands the system's attack surface and may expose sensitive visual data. Encryption, access control, isolation between robots, software updates, data retention, and recovery behavior all add computation and operational work.",
+          "Most importantly, offloading does not remove the need for local intelligence. A robot that becomes unsafe or useless when its network fails is not a successful edge architecture. The strongest design will probably keep immediate safety and control on the machine, move heavy but time sensitive inference to nearby infrastructure, and reserve the distant cloud for tasks that can tolerate interruption."
+        ]
+      },
+      {
+        heading: "What comes next",
+        paragraphs: [
+          "The next evidence should come from continuous deployments rather than isolated benchmarks. Useful results would report task success, intervention rate, battery life, bandwidth use, server utilization, network outages, and total operating cost across a fleet.",
+          "Microsoft will also need to show how its scheduler responds when several robots demand compute at once. Priority rules, local fallback models, degraded operating modes, and recovery after a lost connection will matter more than peak inference speed.",
+          "Black Scarab's view is that the research weakens a false choice. Robot intelligence does not have to live entirely on the machine or entirely in the cloud. The valuable engineering work is deciding which parts must stay local, which parts can move a few meters away, and which parts can safely travel farther.",
+          "For buyers, the practical question is no longer how much compute a robot contains. It is whether the complete robot and infrastructure system can deliver the required behavior, for the required number of hours, when the network is less cooperative than the laboratory."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Microsoft Research announcement of robot inference offloading, published September 23, 2026",
+        url: "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/"
+      },
+      {
+        label: "Microsoft and University of California, Berkeley technical report on mobile robot workload placement, published March 2026",
+        url: "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/03/Robotics_offloading.pdf"
+      },
+      {
+        label: "ArXiv record for the Offload or Overload measurement study, submitted March 18, 2026",
+        url: "https://arxiv.org/abs/2603.18284"
+      },
+      {
+        label: "Microsoft Physical AI Toolchain source repository and deployment documentation, accessed September 27, 2026",
+        url: "https://github.com/microsoft/physical-ai-toolchain"
+      },
+      {
+        label: "NVIDIA documentation for Jetson Thor power and performance management, accessed September 27, 2026",
+        url: "https://docs.nvidia.com/jetson/archives/r38.2/DeveloperGuide/SD/PlatformPowerAndPerformance/JetsonThor.html"
+      },
+      {
+        label: "IEEE survey of cloud robotics and automation, published in 2015",
+        url: "https://ieeexplore.ieee.org/document/7006734"
+      },
+      {
+        label: "Review of distributed robotic systems across the edge and cloud with ROS 2, published in 2022",
+        url: "https://arxiv.org/abs/2211.00985"
+      }
+    ]
+  },
+  {
     slug: "qualcomm-picknik-moveit-robotics-software",
     title: "Qualcomm reaches for the software layer that moves robots",
     summary: "Qualcomm has agreed to acquire PickNik, the company that leads development of MoveIt and sells the MoveIt Pro platform. The deal could connect robot manipulation software more closely with Dragonwing edge computing, but its value will depend on execution, community trust, and continued support for competing hardware.",
