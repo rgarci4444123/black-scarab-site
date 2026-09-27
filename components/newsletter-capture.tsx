@@ -25,6 +25,8 @@ export default function NewsletterCapture() {
   const promptRef = useRef<HTMLElement>(null);
   const excluded =
     pathname.startsWith("/intake") ||
+    pathname.startsWith("/physical-ai-quiz") ||
+    pathname.startsWith("/quiz") ||
     pathname.startsWith("/subscribe") ||
     pathname.startsWith("/privacy") ||
     pathname.startsWith("/terms") ||
