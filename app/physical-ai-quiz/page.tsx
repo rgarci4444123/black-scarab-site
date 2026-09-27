@@ -8,7 +8,7 @@ const baseUrl = "https://www.blackscarab.ai";
 export const metadata: Metadata = {
   title: "Physical AI Quiz: Test Your Robotics and AI Knowledge",
   description:
-    "Take the Black Scarab Physical AI Quiz covering sensors, AI models, processors, actuators, robot software, navigation, and industrial safety.",
+    "Take the Black Scarab Physical AI Quiz covering sensors, AI models, processors, actuators, robot software, navigation, and global robot deployment.",
   alternates: {
     canonical: "/physical-ai-quiz",
   },
@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     url: `${baseUrl}/physical-ai-quiz`,
     title: "Physical AI Quiz: Do You Know What Makes AI Move?",
     description:
-      "Test your knowledge across the physical AI stack and see your quiz rank.",
+      "Answer 10 physical AI questions and see where your robotics knowledge stands.",
   },
   twitter: {
     card: "summary_large_image",
     site: "@BlackScarabAI",
     title: "The Black Scarab Physical AI Quiz",
     description:
-      "Test your knowledge of sensors, models, compute, motion, software, and safety.",
+      "Test your knowledge of sensors, models, compute, motion, software, and robot deployment.",
   },
 };
 
@@ -59,7 +59,7 @@ export default function PhysicalAiQuizPage() {
                 Learn the complete physical AI stack
               </h2>
               <p className="mt-3 text-base leading-7 text-[#667067]">
-                The quiz draws from Black Scarab&apos;s 444 term guide to physical AI, robotics, chips, memory, sensors, navigation, control, simulation, software, and industrial safety.
+                The quiz draws from Black Scarab&apos;s 444 term guide to physical AI, robotics, chips, memory, sensors, navigation, control, simulation, software, and industrial deployment.
               </p>
             </div>
             <Link

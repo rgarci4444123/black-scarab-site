@@ -11,9 +11,29 @@ export type PhysicalAiQuizQuestion = {
   explanation: string;
   glossaryHref: string;
   glossaryLabel: string;
+  linkLabel?: string;
 };
 
 export const physicalAiQuizQuestions: PhysicalAiQuizQuestion[] = [
+  {
+    id: "china-installations-2025",
+    category: "Industry and deployment",
+    prompt:
+      "What percentage of the world’s industrial robot installations took place in China in 2025?",
+    options: [
+      { label: "29%" },
+      { label: "39%" },
+      { label: "49%" },
+      { label: "59%" },
+    ],
+    correctIndex: 3,
+    explanation:
+      "China accounted for 59% of global industrial robot installations in 2025, according to the International Federation of Robotics.",
+    glossaryHref:
+      "https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally",
+    glossaryLabel: "International Federation of Robotics data",
+    linkLabel: "See the International Federation of Robotics data",
+  },
   {
     id: "slam",
     category: "Navigation and control",
@@ -134,38 +154,20 @@ export const physicalAiQuizQuestions: PhysicalAiQuizQuestion[] = [
     glossaryLabel: "Digital Twin",
   },
   {
-    id: "cobot",
-    category: "Industry and safety",
-    prompt:
-      "A supplier calls its arm a cobot. What still has to happen before people safely share the workspace with it?",
+    id: "lidar",
+    category: "Sensors and perception",
+    prompt: "What does LiDAR stand for?",
     options: [
-      { label: "Nothing. The label settles it" },
-      { label: "A risk assessment of the complete application" },
-      { label: "A switch to cloud control" },
-      { label: "A permanent low speed setting" },
+      { label: "Light Detection and Ranging" },
+      { label: "Laser Direction and Recognition" },
+      { label: "Light Distance and Resolution" },
+      { label: "Local Detection and Routing" },
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
-      "The cobot label does not make every application safe. The complete task, tooling, environment, and interaction still need a risk assessment.",
-    glossaryHref: "/resources/physical-ai-glossary#cobot",
-    glossaryLabel: "Collaborative Robot",
-  },
-  {
-    id: "functional-safety",
-    category: "Industry and safety",
-    prompt:
-      "A guard door opens while a robot is moving. Which discipline is responsible for bringing the machine to a safe state?",
-    options: [
-      { label: "Cybersecurity" },
-      { label: "Functional safety" },
-      { label: "Predictive maintenance" },
-      { label: "Data compression" },
-    ],
-    correctIndex: 1,
-    explanation:
-      "Functional safety covers safety that depends on a control system responding correctly to dangerous conditions or failures.",
-    glossaryHref: "/resources/physical-ai-glossary#functional-safety",
-    glossaryLabel: "Functional Safety",
+      "LiDAR stands for Light Detection and Ranging. It uses laser light and reflected return times to measure distance and map surroundings.",
+    glossaryHref: "/resources/physical-ai-glossary#lidar",
+    glossaryLabel: "LiDAR",
   },
   {
     id: "ros-action",
@@ -195,32 +197,32 @@ export type QuizOutcome = {
 export function getPhysicalAiQuizOutcome(score: number): QuizOutcome {
   if (score === physicalAiQuizQuestions.length) {
     return {
-      name: "Closed Loop",
-      slug: "closed-loop",
+      name: "Robotics Expert",
+      slug: "robotics-expert",
       summary:
-        "You connected perception, compute, motion, and safety without losing the signal.",
+        "You know how the key layers of a physical AI system fit together.",
     };
   }
 
   if (score >= 8) {
     return {
-      name: "Stack Navigator",
-      slug: "stack-navigator",
-      summary: "You can follow intelligence from the sensor to the machine.",
+      name: "Robotics Practitioner",
+      slug: "robotics-practitioner",
+      summary: "You have a strong working knowledge of robotics and physical AI.",
     };
   }
 
   if (score >= 5) {
     return {
-      name: "Signal Scout",
-      slug: "signal-scout",
-      summary: "You found the important signals. A few layers still blur together.",
+      name: "Robotics Apprentice",
+      slug: "robotics-apprentice",
+      summary: "You know the fundamentals and have a few layers left to explore.",
     };
   }
 
   return {
-    name: "Boot Sequence",
-    slug: "boot-sequence",
-    summary: "The machine is awake. Now the stack starts to make sense.",
+    name: "Robotics Beginner",
+    slug: "robotics-beginner",
+    summary: "You are at the beginning of the journey. The glossary can help you level up.",
   };
 }

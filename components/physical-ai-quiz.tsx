@@ -251,7 +251,8 @@ export default function PhysicalAiQuiz() {
                 href={question.glossaryHref}
                 className="mt-3 inline-flex text-sm font-semibold text-[#3f5843] underline decoration-[#8fa084] underline-offset-4"
               >
-                Read {question.glossaryLabel} in the glossary
+                {question.linkLabel ??
+                  `Read ${question.glossaryLabel} in the glossary`}
               </Link>
             </div>
           ) : null}
