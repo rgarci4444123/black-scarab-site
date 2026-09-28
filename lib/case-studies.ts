@@ -17,6 +17,7 @@ import { manufacturingPlantBuildGuide } from "@/lib/manufacturing-plant-build-gu
 import { robotActuatorsDeepDive } from "@/lib/robot-actuators";
 import { whatIsPhysicalAiDeepDive } from "@/lib/what-is-physical-ai";
 import { digitalTwinsDeepDive } from "@/lib/digital-twins";
+import { roboticsDataCollectionDeepDive } from "@/lib/robotics-data-collection";
 
 export type CaseStudySection = {
   heading?: string;
@@ -16332,6 +16333,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  roboticsDataCollectionDeepDive(),
   digitalTwinsDeepDive(),
   whatIsPhysicalAiDeepDive(),
   manufacturingPlantBuildGuide(),

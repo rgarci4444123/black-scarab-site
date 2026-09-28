@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Where robot training data comes from</title>
+  <desc id="desc">A mobile analytical map comparing seven robot training data sources by scale and direct action signal.</desc>
+  <rect width="900" height="1500" fill="#f7f2e9"/>
+  <path d="M54 46h76" stroke="#b44835" stroke-width="7"/>
+  <text x="54" y="104" font-family="Georgia, serif" font-size="43" font-style="italic" font-weight="700" fill="#171714">Where robot training</text>
+  <text x="54" y="154" font-family="Georgia, serif" font-size="43" font-style="italic" font-weight="700" fill="#171714">data comes from</text>
+  <text x="54" y="196" font-family="Arial, sans-serif" font-size="21" fill="#67645e">Seven sources by scale and action signal</text>
+  <path d="M54 225h792" stroke="#d8d0c3" stroke-width="2"/>
+
+  <path d="M130 1240V310" stroke="#25241f" stroke-width="3"/>
+  <path d="M130 310l-10 20h20z" fill="#25241f"/>
+  <path d="M130 1240h710" stroke="#25241f" stroke-width="3"/>
+  <path d="M840 1240l-20-10v20z" fill="#25241f"/>
+  <path d="M130 775h710" stroke="#d8d0c3" stroke-width="2" stroke-dasharray="5 10"/>
+  <path d="M485 310v930" stroke="#d8d0c3" stroke-width="2" stroke-dasharray="5 10"/>
+
+  <text x="48" y="900" transform="rotate(-90 48 900)" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4" fill="#25241f">DIRECT ACTION SIGNAL</text>
+  <text x="322" y="1290" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4" fill="#25241f">SCALE AND COST</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="246" y="410" width="20" height="20" fill="#191813"/>
+    <text x="282" y="420" font-size="24" font-weight="700" fill="#191813">Real teleoperation</text>
+    <text x="282" y="449" font-size="17" fill="#77736b">AgiBot World, DROID</text>
+
+    <rect x="348" y="582" width="20" height="20" fill="#191813"/>
+    <text x="332" y="558" text-anchor="middle" font-size="23" font-weight="700" fill="#191813">Portable real capture</text>
+    <text x="332" y="588" text-anchor="end" font-size="17" fill="#77736b">UMI, Mobile ALOHA</text>
+
+    <rect x="468" y="497" width="20" height="20" fill="#191813"/>
+    <text x="505" y="510" font-size="23" font-weight="700" fill="#191813">Fleet data</text>
+    <text x="505" y="538" font-size="17" fill="#77736b">Deployed robots</text>
+
+    <rect x="595" y="760" width="20" height="20" fill="#191813"/>
+    <text x="579" y="744" text-anchor="end" font-size="23" font-weight="700" fill="#191813">Simulation</text>
+    <text x="579" y="774" text-anchor="end" font-size="17" fill="#77736b">Isaac Sim, Genesis</text>
+
+    <rect x="723" y="916" width="20" height="20" fill="#191813"/>
+    <text x="707" y="963" text-anchor="middle" font-size="23" font-weight="700" fill="#191813">World model synthetic</text>
+    <text x="707" y="992" text-anchor="middle" font-size="17" fill="#77736b">Cosmos 3</text>
+
+    <rect x="627" y="1047" width="20" height="20" fill="#191813"/>
+    <text x="611" y="1035" text-anchor="end" font-size="23" font-weight="700" fill="#191813">First person video</text>
+    <text x="611" y="1065" text-anchor="end" font-size="17" fill="#77736b">Ego4D, Project Aria</text>
+
+    <rect x="798" y="1150" width="20" height="20" fill="#191813"/>
+    <text x="782" y="1138" text-anchor="end" font-size="23" font-weight="700" fill="#191813">Internet video</text>
+
+    <rect x="487" y="688" width="20" height="20" fill="none" stroke="#7a8b68" stroke-width="4" stroke-dasharray="5 4"/>
+    <text x="523" y="700" font-size="20" font-weight="700" fill="#526147">Cross embodiment pooling</text>
+    <text x="523" y="727" font-size="16" fill="#77736b">Transformation layer</text>
+
+    <rect x="753" y="354" width="26" height="26" fill="none" stroke="#b44835" stroke-width="4" stroke-dasharray="6 5"/>
+    <text x="766" y="334" text-anchor="middle" font-size="14" font-weight="700" letter-spacing="3" fill="#b44835">FRONTIER</text>
+  </g>
+
+  <text x="450" y="1344" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#77736b">Illustrative positions. The useful mix depends on the task.</text>
+  <text x="54" y="1405" font-family="Arial, sans-serif" font-size="12" letter-spacing="2" fill="#77736b">BLACK SCARAB ANALYSIS</text>
+  <text x="54" y="1435" font-family="Arial, sans-serif" font-size="12" letter-spacing="2" fill="#77736b">CONCEPT ADAPTED FROM CORE MATTER   2026</text>
+</svg>
