@@ -1,5 +1,14 @@
 # X publishing log
 
+## Robotics data collection deep dive post prepared, September 27, 2026
+
+* Website article published and verified: https://www.blackscarab.ai/insights/robotics-data-collection-robot-training-data-guide.
+* LinkedIn company post and first link comment published and verified from Black Scarab company ID 111898269: https://www.linkedin.com/feed/update/urn:li:share:7510135909598666752/?actorCompanyId=111898269.
+* Concise X copy, descriptive alt text, and the exact cover path are saved in `output/x/robotics-data-collection/publication.md`.
+* The cover is an original Black Scarab editorial illustration, not a product photograph or official company material.
+* The X publishing log and a public web search were checked before preparation. No matching Black Scarab robotics data collection post was found.
+* No X publication was performed. Rodolfo publishes and verifies X himself.
+
 ## Microsoft robot inference offloading News post prepared, September 27, 2026
 
 * Website article published and verified: https://www.blackscarab.ai/news/microsoft-robot-inference-offloading-edge-cloud.
