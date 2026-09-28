@@ -116,24 +116,9 @@ export default function EventsPage() {
     itemListElement: physicalAiEvents.map((event, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      item: {
-        "@type": "Event",
-        name: event.name,
-        startDate: event.startDate,
-        endDate: event.endDate,
-        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-        eventStatus: "https://schema.org/EventScheduled",
-        url: event.url,
-        location: {
-          "@type": "Place",
-          name: event.venue ?? `${event.city}, ${event.country}`,
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: event.city,
-            addressCountry: event.country,
-          },
-        },
-      },
+      name: event.name,
+      description: event.summary,
+      url: event.url,
     })),
   };
 
