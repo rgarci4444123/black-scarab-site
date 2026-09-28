@@ -2,13 +2,19 @@
 
 ## Status
 
-Website report drafted on September 28, 2026. Publication and live verification are pending.
+Website report published and verified on September 28, 2026.
 
-Planned canonical URL:
+Canonical URL:
 
 https://www.blackscarab.ai/news/amd-world-labs-8-2-billion-acquisition
 
-LinkedIn remains pending until the website report is live and verified. The X edition remains pending until the website and LinkedIn publications are live and verified.
+Commit: `e86a347`
+
+The live page returned HTTP 200. The title, author card, cover, canonical URL, 1200 by 675 Open Graph image, publication date, NewsArticle structured data, main sitemap entry, news sitemap entry, and RSS feed entry were verified. IndexNow accepted the article and news index with status 200.
+
+Google's Rich Results Test crawled the live page successfully and detected two valid items, including the Article result. Search Console URL Inspection confirmed that the new page was not yet indexed and presented the one time indexing request. That final request remains pending confirmation.
+
+The Black Scarab LinkedIn company page, company ID `111898269`, and its recent post history were checked. No matching World Labs post was visible. LinkedIn publication remains pending confirmation. The X edition remains pending until the LinkedIn publication is live and verified.
 
 ## Reporting record
 
@@ -83,7 +89,23 @@ The caption labels the image as an original Black Scarab editorial interpretatio
 
 ## LinkedIn draft
 
-Pending website publication and live verification.
+NEWS | World Labs
+
+AMD has agreed to buy World Labs for about $8.2 billion in stock, bringing spatial intelligence research and Fei Fei Li inside the chipmaker if the deal closes.
+
+The strategic logic goes beyond acquiring another model company. AMD is buying closer access to workloads that could influence future processors, accelerators, software, and complete systems.
+
+World Labs has shipped Marble and a public programming interface. Its newest model, Atlas, remains in early access. Its SceniX robotics simulation results are company claims without disclosed independent validation, revenue, or customer economics.
+
+That makes the price the central question. AMD may be paying for scarce scientific talent and an early view of the computing demands that follow language models. It is doing so before World Labs has published mature commercial evidence.
+
+Our report examines the transaction, the existing AMD partnership, Atlas, the robotics simulation work, the meaning of an open ecosystem, and what would turn the research thesis into measurable value.
+
+Full report link is in the comments.
+
+#ArtificialIntelligence #WorldModels #Semiconductors #Robotics #PhysicalAI
+
+Image alternative text: Black Scarab editorial illustration of a human scale architectural interior transitioning into an abstract field of unbranded compute tiles. The conceptual scene does not depict an AMD or World Labs product or facility.
 
 ## LinkedIn publication
 
