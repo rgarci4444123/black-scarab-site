@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 const baseUrl = "https://www.blackscarab.ai";
 const key = "1236d5c01b7fa121d6e83700200c5e67";
 const requestedEntry = process.argv[2];
-const [newsSource, insightsSource, palladyneSource, foxgloveSource, plusOneSource, antiochSource, physicalAiFundsSource, mexicoSource, manufacturingSeriesSource, manufacturingPlantSource, manufacturingMachinesSource, productManufacturingSource, factoryBuildersSource, manufacturingPlantDesignSource, industrialAutomationSource, physicalAiManufacturingSource, manufacturingPlantBuildSource, robotActuatorsSource, whatIsPhysicalAiSource, digitalTwinsSource] = await Promise.all([
+const [newsSource, insightsSource, palladyneSource, foxgloveSource, plusOneSource, antiochSource, physicalAiFundsSource, mexicoSource, manufacturingSeriesSource, manufacturingPlantSource, manufacturingMachinesSource, productManufacturingSource, factoryBuildersSource, manufacturingPlantDesignSource, industrialAutomationSource, physicalAiManufacturingSource, manufacturingPlantBuildSource, robotActuatorsSource, whatIsPhysicalAiSource, digitalTwinsSource, roboticsDataCollectionSource] = await Promise.all([
   readFile(new URL("../lib/news.ts", import.meta.url), "utf8"),
   readFile(new URL("../lib/case-studies.ts", import.meta.url), "utf8"),
   readFile(new URL("../lib/palladyne-ai.ts", import.meta.url), "utf8"),
@@ -24,6 +24,7 @@ const [newsSource, insightsSource, palladyneSource, foxgloveSource, plusOneSourc
   readFile(new URL("../lib/robot-actuators.ts", import.meta.url), "utf8"),
   readFile(new URL("../lib/what-is-physical-ai.ts", import.meta.url), "utf8"),
   readFile(new URL("../lib/digital-twins.ts", import.meta.url), "utf8"),
+  readFile(new URL("../lib/robotics-data-collection.ts", import.meta.url), "utf8"),
 ]);
 const newsSlugs = Array.from(
   newsSource.matchAll(/slug:\s*"([^"]+)"/g),
@@ -31,7 +32,7 @@ const newsSlugs = Array.from(
 );
 const insightSlugs = new Set(
   Array.from(
-    `${insightsSource}\n${palladyneSource}\n${foxgloveSource}\n${plusOneSource}\n${antiochSource}\n${physicalAiFundsSource}\n${mexicoSource}\n${manufacturingSeriesSource}\n${manufacturingPlantSource}\n${manufacturingMachinesSource}\n${productManufacturingSource}\n${factoryBuildersSource}\n${manufacturingPlantDesignSource}\n${industrialAutomationSource}\n${physicalAiManufacturingSource}\n${manufacturingPlantBuildSource}\n${robotActuatorsSource}\n${whatIsPhysicalAiSource}\n${digitalTwinsSource}`.matchAll(
+    `${insightsSource}\n${palladyneSource}\n${foxgloveSource}\n${plusOneSource}\n${antiochSource}\n${physicalAiFundsSource}\n${mexicoSource}\n${manufacturingSeriesSource}\n${manufacturingPlantSource}\n${manufacturingMachinesSource}\n${productManufacturingSource}\n${factoryBuildersSource}\n${manufacturingPlantDesignSource}\n${industrialAutomationSource}\n${physicalAiManufacturingSource}\n${manufacturingPlantBuildSource}\n${robotActuatorsSource}\n${whatIsPhysicalAiSource}\n${digitalTwinsSource}\n${roboticsDataCollectionSource}`.matchAll(
       /slug:\s*"([^"]+)"/g,
     ),
     (match) => match[1],
