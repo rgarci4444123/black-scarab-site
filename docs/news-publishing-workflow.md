@@ -24,6 +24,7 @@ Use this workflow whenever Rodolfo provides a short news snippet.
 5. Do not add logos, company marks, text, labels, numbers, or watermarks unless the approved concept is intentionally typographic and every character can be verified.
 6. Do not present an invented image as an official product photograph. Describe it as an editorial illustration or interpretation in the caption.
 7. Save the final image in `public/images/news`, add useful alternative text, and inspect the wide hero and cropped card presentations.
+8. Save a JPEG social derivative in `public/images/news/social` using the same filename stem. Keep the composition and aspect ratio, resize it to 1,200 pixels wide, and keep it below 300 KB.
 
 ## Publishing checks
 
@@ -31,7 +32,7 @@ Use this workflow whenever Rodolfo provides a short news snippet.
 2. Confirm the article appears on `/news` and opens at its individual route.
 3. Confirm the title, description, author, canonical URL, image, and structured data are present. Keep professional credentials such as CFA outside `author.name` in structured data and use `honorificSuffix` instead.
 4. Search the published copy for dash punctuation.
-5. Run lint and the production build.
+5. Run lint and the production build. The build validates that every news image has a compatible social derivative.
 6. Review the news index and article on desktop and mobile widths before considering the article published.
 7. Deploy the article before notifying external indexing services.
 8. Run `npm run submit:indexnow -- article-slug` after the production URL is live.

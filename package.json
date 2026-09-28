@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run validate:news-social-images && next build",
     "start": "next start",
     "lint": "eslint",
+    "validate:news-social-images": "node scripts/validate-news-social-images.mjs",
     "submit:indexnow": "node scripts/submit-indexnow.mjs"
   },
   "dependencies": {

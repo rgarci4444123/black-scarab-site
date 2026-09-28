@@ -32,6 +32,174 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "amd-world-labs-8-2-billion-acquisition",
+    title: "AMD agrees to buy World Labs for $8.2 billion",
+    summary: "AMD has agreed to acquire World Labs in an $8.2 billion all stock transaction that would bring spatial intelligence research and Fei Fei Li inside the chipmaker. The strategic logic is clear, but the price arrives before World Labs has disclosed meaningful commercial evidence for its newest models or robotics simulation work.",
+    category: "AI Infrastructure",
+    publishedDate: "2026-09-28",
+    publishedAt: "2026-09-28T17:05:00-04:00",
+    publishedLabel: "September 28, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/amd-world-labs-acquisition.png",
+    imageAlt: "Conceptual architectural environment emerging from an abstract field of unbranded compute tiles",
+    imageCaption: "Original Black Scarab editorial interpretation of spatial models moving closer to the computing systems that run them. The conceptual scene does not depict an AMD or World Labs product, facility, or disclosed technical architecture.",
+    readingTime: "10 min read",
+    keyPoints: [
+      "AMD signed a definitive agreement to acquire World Labs in an all stock transaction valued at about $8.2 billion, with closing expected by the end of 2026 subject to approvals and customary conditions.",
+      "Fei Fei Li is expected to become AMD executive vice president and chief scientist, while World Labs continues its model research under leaders Justin Johnson and Ben Mildenhall.",
+      "World Labs has shipped Marble and a public programming interface, but Atlas remains in early access and its robotics simulation results are company claims without disclosed independent validation, revenue, or customer economics."
+    ],
+    sections: [
+      {
+        heading: "What AMD agreed to buy",
+        paragraphs: [
+          "AMD announced on September 28 that it signed a definitive agreement to acquire World Labs in an all stock transaction valued at about $8.2 billion. The companies expect the deal to close by the end of 2026, subject to regulatory approvals and customary closing conditions.",
+          "The transaction is not complete. Until it closes, World Labs remains a separate company. AMD did not disclose the number of shares it expects to issue, the implied dilution for existing shareholders, retention packages, World Labs revenue, operating losses, customer count, or the valuation used in the company\'s most recent financing.",
+          "If the deal closes, World Labs founder Fei Fei Li will join AMD as executive vice president and chief scientist and report to chief executive Lisa Su. World Labs said cofounders Justin Johnson and Ben Mildenhall will continue leading the research team.",
+          "The purchase is striking because AMD is not buying a mature software company with a disclosed stream of recurring revenue. It is paying for a research organization, a developing product platform, and a view of the workloads that may shape demand for advanced computing over the next decade."
+        ]
+      },
+      {
+        heading: "AMD wants the workload inside the building",
+        paragraphs: [
+          "AMD says model research can give its engineers a deeper understanding of emerging computing requirements. That knowledge could inform the company\'s roadmap across processors, accelerators, networking, software, and complete systems. The logic runs in both directions. Better hardware can make larger world models practical, while researchers working on those models can expose where existing hardware and software fall short.",
+          "Language models established a relatively familiar pattern of training and inference built around text tokens. World models add demanding mixtures of images, video, three dimensional geometry, rendering, simulation, long context, and interactive response. A model may need to preserve the structure of a room while generating unseen views, simulate how objects behave, and provide results quickly enough for a person or robot to act.",
+          "World Labs has argued that these systems will require substantial training and inference capacity. Its research preview for a real time frame model estimated that an interactive high resolution video stream could demand orders of magnitude more output than ordinary language generation. That is a company estimate, not a product specification, but it illustrates why a chipmaker would want direct access to the research problem.",
+          "Black Scarab\'s read is that AMD is buying more than software to run on existing chips. It is buying a laboratory that can help define what future chips must do. The value of that feedback loop will depend on whether AMD can translate research needs into broadly useful products rather than hardware optimized around one internal team."
+        ]
+      },
+      {
+        heading: "World Labs is building models of space",
+        paragraphs: [
+          "Li founded World Labs with Johnson and Mildenhall at the beginning of 2024. In her account of the deal, she said the company began with a simple belief: language alone cannot represent everything an intelligent system needs to understand. Many important problems require models that reason about the structure and behavior of physical and virtual environments.",
+          "The company\'s first broadly available product, Marble, generates navigable three dimensional environments from text, images, video, or rough layouts. Users can edit and expand the results and export them as visual assets. In January, World Labs launched a public programming interface that lets developers call the model from other applications.",
+          "These products provide more commercial evidence than a research demo alone. They show that the company can package model output for creators and developers. World Labs has not disclosed revenue, paid usage, retention, gross margin, infrastructure cost, or the share of generated worlds that meet professional production requirements.",
+          "The distinction matters at the announced price. A usable product can establish a market and collect valuable interaction data, but it does not by itself demonstrate an $8.2 billion business. AMD is assigning substantial value to the team, the technical direction, and the possibility that spatial models become a major computing category."
+        ]
+      },
+      {
+        heading: "Atlas extends the research beyond generated scenes",
+        paragraphs: [
+          "World Labs introduced Atlas on September 1 as an omni model trained to work across text, images, video, and three dimensional inputs. The company says Atlas combines those inputs into a shared spatial context and predicts new views while maintaining consistency with what it has already observed.",
+          "Li describes next view prediction as an important bridge between generative models and traditional problems in computer vision. A system that can infer the parts of a scene a camera has not captured could support reconstruction, design, simulation, and eventually planning. World Labs says Atlas achieved leading results on several reconstruction and view generation tests.",
+          "Those are company claims. Atlas is in early access with selected partners, and World Labs has not published independent evaluations, model weights, training cost, inference cost, customer results, or production reliability. It has also not shown that one architecture can meet the different requirements of creative rendering, accurate reconstruction, physical simulation, and robot control.",
+          "For AMD, the attraction is still understandable. Atlas combines several data types and computational stages that can stress memory, data movement, graphics, and artificial intelligence acceleration at the same time. Even if the model changes, the bottlenecks its researchers encounter could be useful input for hardware and software design."
+        ]
+      },
+      {
+        heading: "SceniX makes robotics part of the deal",
+        paragraphs: [
+          "World Labs moved closer to robotics in July when it acquired SceniX, a startup working on simulation for robot learning. SceniX is developing a real to sim to real system that reconstructs a physical task as an interactive environment, varies conditions such as object position, clutter, lighting, physics, robot state, and camera view, then uses those variations to train and test robot policies.",
+          "This addresses a real constraint in robotics. Physical data collection is slow, equipment can break, rare failures are difficult to reproduce, and a policy trained in one tidy setup may fail when the environment changes. A sufficiently accurate simulator could create more varied experience before a model touches the real machine and help teams investigate failures after deployment.",
+          "World Labs says early SceniX work has trained manipulation policies without real world training data for the target task, predicted which policies would transfer successfully, and supported hours of operation on physical robots. The company has not released enough detail to independently assess those results. It has not disclosed complete benchmarks, failure distributions, comparison baselines, customer deployments, or the amount of manual engineering required to create each simulation.",
+          "Simulation is therefore both one of the deal\'s most relevant assets and one of its largest unanswered questions. If World Labs can generate useful physical variation quickly and preserve the details that matter for contact and control, the technology could reduce a costly part of robot development. If the simulations require extensive task specific work or omit important dynamics, the apparent scale advantage will narrow."
+        ]
+      },
+      {
+        heading: "The partnership came before the acquisition",
+        paragraphs: [
+          "AMD was already an investor and technical partner. AMD Ventures said in March that it participated in World Labs\' latest financing after investing in an earlier Series B round. The teams were working on model training and inference optimization for AMD Instinct accelerators, along with support for reaching customers through cloud partners.",
+          "World Labs announced a $1 billion financing in February and named AMD among the investors. Bloomberg independently reported the size of that round. Neither company disclosed how much AMD invested or what ownership position it held before the acquisition agreement.",
+          "Li wrote that the technical relationship began in 2025 and that closer work convinced both sides there was a natural fit between models, applications, software, and hardware. Her explanation is useful context, but it is also the founder\'s case for the transaction. The economic benefits of the partnership have not been disclosed.",
+          "The existing work reduces some integration risk. AMD engineers have already seen the workloads, and World Labs has experience moving models onto the company\'s hardware. It does not eliminate the harder organizational question: whether a frontier research group can remain ambitious and open while serving the strategic priorities of a public chipmaker."
+        ]
+      },
+      {
+        heading: "The price values direction before proof",
+        paragraphs: [
+          "An $8.2 billion purchase price is significant even within the current artificial intelligence market. CNBC reported that the deal would be AMD\'s second largest acquisition after its roughly $50 billion purchase of Xilinx in 2022. Unlike Xilinx, World Labs does not arrive with public financial statements or an established semiconductor business.",
+          "The timing raises the valuation question. World Labs announced its $1 billion financing only seven months ago. Bloomberg had previously reported that the company was discussing funding at a valuation near $5 billion, but the final valuation of the February round was not publicly confirmed. It would therefore be misleading to calculate a precise acquisition premium from that reported discussion.",
+          "AMD may be valuing scarcity. Teams capable of training frontier multimodal models are difficult to assemble, Li brings unusual research and institutional credibility, and spatial intelligence could become strategically important across media, design, simulation, autonomous systems, and robotics. Buying the group also prevents a competitor from controlling the same research pipeline.",
+          "The risk is equally direct. AMD is issuing stock for a business whose newest model is in early access and whose robotics work is presented through company demonstrations. If world models develop more slowly than expected, remain expensive to run, or fragment into specialized tools, the strategic option may not justify the price."
+        ]
+      },
+      {
+        heading: "An open ecosystem will be tested in practice",
+        paragraphs: [
+          "AMD and World Labs repeatedly describe their intended platform as open. The companies say they want to connect hardware, software, models, and data platforms while continuing to work with a broad ecosystem. World Labs also said it will continue its model research after the transaction closes.",
+          "Open can mean several different things. A model may have open weights, accessible interfaces, published research, portable software, permissive tools, or simply support for multiple cloud providers and hardware configurations. The announcements do not specify which World Labs models or components will be released, under what licenses, or whether competing accelerators will remain supported.",
+          "That ambiguity should be resolved through product decisions, not slogans. Developers will be able to judge whether models are portable, whether interfaces remain accessible, whether research can be reproduced, and whether optimization work contributes to the wider software ecosystem.",
+          "AMD also needs to manage a potential conflict. World Labs can be most useful as an honest source of demanding workloads, including evidence that exposes weaknesses in AMD products. If the lab becomes a marketing showcase, the feedback loses value. If it retains scientific independence, its findings may occasionally be uncomfortable but more useful."
+        ]
+      },
+      {
+        heading: "Reality check",
+        paragraphs: [
+          "The verified facts are narrow. AMD and World Labs signed an agreement for an all stock transaction valued at about $8.2 billion. The deal is expected to close by the end of 2026 if it receives the required approvals. Li is expected to become AMD chief scientist, and the World Labs team is expected to continue its research.",
+          "Most claims about technical leadership, model performance, robotics transfer, market interest, and future platform value come from World Labs or AMD. Independent reporting confirms the transaction terms and provides acquisition context, but it does not validate Atlas benchmarks, SceniX performance, or commercial traction.",
+          "Important information remains absent. The companies have not disclosed World Labs revenue, paid customers, model usage, compute cost, cash burn, operating losses, purchase accounting, expected dilution, integration expense, retention terms, or specific product milestones. They have not explained how the lab will interact with AMD\'s existing research and software groups.",
+          "The acquisition can make strategic sense without those figures being public, but investors and developers should not confuse strategic coherence with proven return. The near term evidence will come from people who stay, models that ship, workloads that move successfully onto AMD systems, and customers who choose the resulting platform."
+        ]
+      },
+      {
+        heading: "What comes next",
+        paragraphs: [
+          "The first event is regulatory review and closing. Until that happens, AMD does not control World Labs and the leadership changes are not final. Any delay, changed term, or termination would alter the story materially.",
+          "The second signal is how AMD defines Li\'s role. Chief scientist can be ceremonial, advisory, or operational. The scope of her authority across research, hardware roadmaps, software, and external partnerships will show whether World Labs is a contained laboratory or the center of a broader shift in AMD\'s artificial intelligence strategy.",
+          "The third is evidence from Atlas and SceniX. Independent benchmarks, published methods, customer deployments, pricing, inference requirements, and repeatable robot transfer results would make the technical case easier to evaluate. Without them, the market is largely underwriting a research thesis.",
+          "Black Scarab\'s view is that AMD has identified a strategically important feedback loop. The company that understands future models early can design better systems for running them. At $8.2 billion, however, identifying the loop is only the beginning. AMD now has to show that World Labs can turn spatial intelligence from promising research into workloads, tools, and products large enough to influence the economics of its computing platform."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "AMD transaction announcement, published September 28, 2026",
+        url: "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute"
+      },
+      {
+        label: "World Labs announcement of the agreement, published September 28, 2026",
+        url: "https://www.worldlabs.ai/blog/amd-announcement"
+      },
+      {
+        label: "Fei Fei Li account of the transaction and company history, published September 28, 2026",
+        url: "https://drfeifei.substack.com/p/worldlabs-joining-amd"
+      },
+      {
+        label: "CNBC independent report on the transaction, published September 28, 2026",
+        url: "https://www.cnbc.com/2026/09/28/amd-fei-fei-li-world-labs.html"
+      },
+      {
+        label: "Bloomberg independent report on the transaction, published September 28, 2026",
+        url: "https://www.bloomberg.com/news/articles/2026-09-28/amd-to-buy-fei-fei-li-s-world-labs-ai-startup-for-8-2-billion"
+      },
+      {
+        label: "AMD Ventures account of its investment and technical partnership, published March 19, 2026",
+        url: "https://www.amd.com/en/ventures/insights/investing-in-world-labs.html"
+      },
+      {
+        label: "World Labs Atlas technical introduction, published September 1, 2026",
+        url: "https://www.worldlabs.ai/blog/atlas"
+      },
+      {
+        label: "World Labs account of SceniX robot simulation work, published July 28, 2026",
+        url: "https://www.worldlabs.ai/blog/real-to-sim-to-real"
+      },
+      {
+        label: "World Labs SceniX acquisition announcement, published July 21, 2026",
+        url: "https://www.worldlabs.ai/blog/scenix"
+      },
+      {
+        label: "World Labs financing announcement, published February 18, 2026",
+        url: "https://www.worldlabs.ai/blog/funding-2026"
+      },
+      {
+        label: "Bloomberg report on the World Labs financing, published February 18, 2026",
+        url: "https://www.bloomberg.com/news/articles/2026-02-18/ai-pioneer-fei-fei-li-s-startup-world-labs-raises-1-billion"
+      },
+      {
+        label: "World Labs public programming interface announcement, published January 21, 2026",
+        url: "https://www.worldlabs.ai/blog/announcing-the-world-api"
+      },
+      {
+        label: "World Labs Marble product announcement, published November 12, 2025",
+        url: "https://www.worldlabs.ai/blog/marble-world-model"
+      }
+    ]
+  },
+  {
     slug: "extend-robotics-result-as-a-service",
     title: "Extend Robotics raises £2.6 million to sell completed work, not robots",
     summary: "Extend Robotics has raised £2.6 million to expand a service that charges manufacturers for completed tasks while combining remote operators, robot hardware, and increasing automation. The model lowers the barrier to a first deployment, but its economics still depend on reliability, operator leverage, and evidence from production.",

@@ -5,7 +5,11 @@ import { notFound } from "next/navigation";
 import { Fragment } from "react";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
-import { getNewsUpdateBySlug, newsUpdates } from "@/lib/news";
+import {
+  getNewsUpdateBySlug,
+  newsUpdates,
+  type NewsUpdate,
+} from "@/lib/news";
 import { authorPortraitSrc } from "@/lib/site-author";
 
 type Props = {
@@ -13,6 +17,48 @@ type Props = {
 };
 
 const baseUrl = "https://www.blackscarab.ai";
+const defaultSocialImageSize = { width: 1200, height: 675 };
+const threeByTwoSocialImages = new Set([
+  "/images/news/agility-digit-5-industrial-humanoid.png",
+  "/images/news/palantir-nebius-sovereign-ai.png",
+]);
+
+function getFallbackSocialImage() {
+  const fallbackUrl = `${baseUrl}/icon.png`;
+
+  return {
+    url: fallbackUrl,
+    secureUrl: fallbackUrl,
+    width: 325,
+    height: 512,
+    type: "image/png",
+    alt: "Black Scarab",
+  };
+}
+
+function getSocialImage(update: NewsUpdate) {
+  if (!update.image) {
+    return getFallbackSocialImage();
+  }
+
+  const filename = update.image.split("/").at(-1)?.replace(/\.[^.]+$/, "");
+  if (!filename) {
+    return getFallbackSocialImage();
+  }
+
+  const imageUrl = `${baseUrl}/images/news/social/${filename}.jpg`;
+  const size = threeByTwoSocialImages.has(update.image)
+    ? { width: 1200, height: 800 }
+    : defaultSocialImageSize;
+
+  return {
+    url: imageUrl,
+    secureUrl: imageUrl,
+    ...size,
+    type: "image/jpeg",
+    alt: update.imageAlt,
+  };
+}
 
 export function generateStaticParams() {
   return newsUpdates.map((update) => ({ slug: update.slug }));
@@ -26,27 +72,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: "News Article Not Found" };
   }
 
+  const articleUrl = `${baseUrl}/news/${update.slug}`;
+  const socialImage = getSocialImage(update);
+
   return {
     title: update.title,
     description: update.summary,
     authors: [{ name: update.author.name, url: update.author.href }],
-    alternates: { canonical: `/news/${update.slug}` },
+    alternates: { canonical: articleUrl },
     openGraph: {
       type: "article",
-      url: `${baseUrl}/news/${update.slug}`,
+      url: articleUrl,
       siteName: "Black Scarab",
       title: update.title,
       description: update.summary,
       publishedTime: update.publishedAt,
       modifiedTime: update.modifiedAt ?? update.publishedAt,
       authors: [update.author.name],
-      images: update.image ? [{ url: update.image, alt: update.imageAlt }] : undefined,
+      images: [socialImage],
     },
     twitter: {
       card: "summary_large_image",
       title: update.title,
       description: update.summary,
-      images: update.image ? [update.image] : undefined,
+      images: [socialImage],
     },
   };
 }
