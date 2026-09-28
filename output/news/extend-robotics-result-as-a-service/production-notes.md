@@ -2,13 +2,17 @@
 
 ## Status
 
-Website report drafted locally on September 28, 2026. It has not been deployed or published.
+Website report published and verified on September 28, 2026.
 
-Planned canonical URL:
+Canonical URL:
 
 https://www.blackscarab.ai/news/extend-robotics-result-as-a-service
 
-LinkedIn and X work has not started. The publication sequence remains website, LinkedIn, then the manual X package for Rodolfo.
+Commit: `cd645d7`
+
+The live page returned HTTP 200. The article title, author card, cover, canonical URL, Open Graph image, news sitemap entry, main sitemap entry, and RSS feed entry were verified. IndexNow accepted the article and news index with status 200.
+
+The Black Scarab LinkedIn company page, company ID `111898269`, and its recent published posts were checked. No Extend Robotics duplicate was visible. The LinkedIn post and first article link comment were then published and verified. The manual X handoff was prepared only after those checks were complete.
 
 ## Reporting record
 
@@ -74,3 +78,39 @@ Constraints: no text, no letters, no numbers, no logos, no company marks, no wat
 ```
 
 The caption labels the image as an original Black Scarab editorial interpretation and states that it does not depict an Extend Robotics product, customer facility, or disclosed deployment.
+
+## LinkedIn draft
+
+NEWS | Extend Robotics
+
+What if a manufacturer could hire a robot for a result instead of buying the machine?
+
+Extend Robotics has raised £2.6 million to expand Result as a Service, a model that charges manufacturers for completed work while combining remote operators, robot hardware, and increasing automation.
+
+The commercial idea is important. The customer avoids a large upfront equipment purchase and part of the integration risk. Extend becomes responsible for whether the system reaches the required cycle time and completes the task.
+
+The company reports 35 subscription customers and a live apple quality control deployment. It also plans to build a distributed network of remote robot operators.
+
+The reality check is operator leverage. If one person must control one robot for an entire shift, the service adds hardware and software costs without removing the labor hour. The economics improve when one operator can supervise several machines and automation handles more of the routine cycle.
+
+Our report examines the financing, the production evidence, the remote operation model, and the metrics that would show whether the service can scale.
+
+Full report link is in the comments.
+
+#Robotics #IndustrialAutomation #PhysicalAI #Manufacturing #Teleoperation
+
+Image alternative text: Black Scarab editorial illustration of a gloved operator using an unbranded controller while a generic robot gripper arranges finished metal components. The staged scene is conceptual and does not depict an Extend Robotics product or customer facility.
+
+## LinkedIn publication
+
+Published and verified from the Black Scarab company page, company ID `111898269`:
+
+https://www.linkedin.com/feed/update/urn:li:share:7510364635645014016/?actorCompanyId=111898269
+
+The live post begins with `NEWS | Extend Robotics` and includes the complete approved copy, five hashtags, the original editorial cover, descriptive alternative text, and the LinkedIn content credentials label. The verified website article URL is visible as the first comment from Black Scarab.
+
+## X
+
+Not published. Concise copy, descriptive alternative text, and the exact image path are saved in `output/x/extend-robotics-result-as-a-service/publication.md` for Rodolfo to publish manually from `@BlackScarabAI`.
+
+The live `@BlackScarabAI` profile, the repository publishing log, and a focused public search were checked on September 28, 2026. No matching Extend Robotics post was found.

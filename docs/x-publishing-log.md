@@ -1,5 +1,14 @@
 # X publishing log
 
+## Extend Robotics News post prepared, September 28, 2026
+
+* Website article published and verified: https://www.blackscarab.ai/news/extend-robotics-result-as-a-service.
+* LinkedIn company post and first link comment published and verified from Black Scarab company ID 111898269: https://www.linkedin.com/feed/update/urn:li:share:7510364635645014016/?actorCompanyId=111898269.
+* Concise X copy, descriptive alt text, and the exact cover path are saved in `output/x/extend-robotics-result-as-a-service/publication.md`.
+* The cover is an original Black Scarab editorial illustration, not an Extend Robotics product photograph or customer deployment.
+* The live `@BlackScarabAI` profile and a focused public search were checked before preparation. No matching Extend Robotics post was found.
+* No X publication was performed. Rodolfo publishes and verifies X himself.
+
 ## Robotics data collection deep dive post prepared, September 27, 2026
 
 * Website article published and verified: https://www.blackscarab.ai/insights/robotics-data-collection-robot-training-data-guide.
