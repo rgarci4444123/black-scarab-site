@@ -60,6 +60,65 @@ function ArrowUpRight() {
   );
 }
 
+function ChevronDown() {
+  return (
+    <svg
+      viewBox="0 0 16 16"
+      aria-hidden="true"
+      className="h-4 w-4 transition-transform group-open/workshops:rotate-180"
+      fill="none"
+    >
+      <path d="m4 6 4 4 4-4" stroke="currentColor" strokeWidth="1.4" />
+    </svg>
+  );
+}
+
+function WorkshopPanel({ event }: { event: PhysicalAiEvent }) {
+  if (event.workshops?.length) {
+    return (
+      <details className="group/workshops border-t border-[#dedbd2] pt-5 sm:col-start-2 sm:col-end-4">
+        <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-4 rounded-xl px-1 text-sm text-[#263126] transition hover:text-[#607355] [&::-webkit-details-marker]:hidden">
+          <span>
+            <span className="font-semibold">
+              {event.workshops.length} workshops
+            </span>
+          </span>
+          <span className="inline-flex shrink-0 items-center gap-2 font-medium">
+            Choose <ChevronDown />
+          </span>
+        </summary>
+
+        <div className="mt-3 grid overflow-hidden rounded-2xl border border-[#d8d5cc] bg-[#d8d5cc] lg:grid-cols-2">
+          {event.workshops.map((workshop) => (
+            <a
+              key={workshop.name}
+              href={workshop.url}
+              target="_blank"
+              rel="noreferrer"
+              className="group/workshop flex min-h-32 flex-col justify-between gap-5 bg-[#f7f6f1] p-5 transition hover:bg-[#edf2e9]"
+            >
+              <div>
+                <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-[#788173]">
+                  {workshop.schedule}
+                </p>
+                <h4 className="mt-2 max-w-xl text-base font-semibold leading-6 tracking-[-0.015em] text-[#172017]">
+                  {workshop.name}
+                </h4>
+              </div>
+              <div className="flex items-center justify-between gap-4 text-[10px] font-semibold uppercase tracking-[0.14em] text-[#687a5d]">
+                <span>{workshop.focus}</span>
+                <ArrowUpRight />
+              </div>
+            </a>
+          ))}
+        </div>
+      </details>
+    );
+  }
+
+  return null;
+}
+
 function EventCard({ event }: { event: PhysicalAiEvent }) {
   return (
     <article className="group grid gap-5 border-t border-[#dedbd2] py-7 first:border-t-0 sm:grid-cols-[140px_minmax(0,1fr)_auto] sm:items-start sm:gap-8 sm:py-8">
@@ -103,6 +162,8 @@ function EventCard({ event }: { event: PhysicalAiEvent }) {
       >
         Event site <ArrowUpRight />
       </a>
+
+      <WorkshopPanel event={event} />
     </article>
   );
 }

@@ -13,6 +13,14 @@ export type PhysicalAiEvent = {
   focus: string;
   summary: string;
   tier: "Anchor" | "Industry signal";
+  workshops?: PhysicalAiWorkshop[];
+};
+
+export type PhysicalAiWorkshop = {
+  name: string;
+  schedule: string;
+  focus: string;
+  url: string;
 };
 
 export const physicalAiEvents: PhysicalAiEvent[] = [
@@ -32,6 +40,44 @@ export const physicalAiEvents: PhysicalAiEvent[] = [
     summary:
       "A flagship global forum for intelligent robots, manipulation, mobility, perception, autonomy, and human robot systems.",
     tier: "Anchor",
+    workshops: [
+      {
+        name: "Perception and Decision Making for Athletic Humanoid Robotics",
+        schedule: "September 27 · Full day",
+        focus: "Humanoids",
+        url: "https://iros-2026-athletic-humanoid.github.io/workshop/",
+      },
+      {
+        name: "Human Aware Embodied AI",
+        schedule: "September 27 · Afternoon",
+        focus: "Human robot interaction",
+        url: "https://heai-iros26-workshop.github.io/",
+      },
+      {
+        name: "Embodied Neuro Symbolic AI for Reliable and Safe Robotics",
+        schedule: "September 27 · Morning",
+        focus: "Reliable robotics",
+        url: "https://embodied-nesy.github.io/",
+      },
+      {
+        name: "Compositional and Modular Learning in Robotics",
+        schedule: "September 27 · Morning",
+        focus: "Robot learning",
+        url: "https://compositional-robotics.github.io/",
+      },
+      {
+        name: "Industrial Applications of Robot Learning",
+        schedule: "September 27 · From 8:30 AM",
+        focus: "Industrial robotics",
+        url: "https://aistairc.github.io/IROS2026-workshop/",
+      },
+      {
+        name: "Hybrid Architectures for Embodied Autonomy",
+        schedule: "September 27 · Half day",
+        focus: "Planning and control",
+        url: "https://sites.google.com/bu.edu/hybridarchforautonomy/home",
+      },
+    ],
   },
   {
     name: "Global Open Source Innovation Meetup",
@@ -49,6 +95,38 @@ export const physicalAiEvents: PhysicalAiEvent[] = [
     summary:
       "Embodied AI, humanoids, world models, simulation, robot learning, and autonomous navigation meet open source development.",
     tier: "Anchor",
+    workshops: [
+      {
+        name: "AI Education Workshop",
+        schedule: "Official schedule",
+        focus: "AI education",
+        url: "https://shenzhen2026.gosim.org/schedule/",
+      },
+      {
+        name: "DORA Workshop",
+        schedule: "Official schedule",
+        focus: "Embodied robotics",
+        url: "https://shenzhen2026.gosim.org/schedule/",
+      },
+      {
+        name: "vLLM Workshop",
+        schedule: "Official schedule",
+        focus: "Model inference",
+        url: "https://shenzhen2026.gosim.org/schedule/",
+      },
+      {
+        name: "Google Cloud Workshop",
+        schedule: "Official schedule",
+        focus: "Agent development",
+        url: "https://shenzhen2026.gosim.org/schedule/",
+      },
+      {
+        name: "KVCDN Workshop",
+        schedule: "Official schedule",
+        focus: "AI infrastructure",
+        url: "https://shenzhen2026.gosim.org/schedule/",
+      },
+    ],
   },
   {
     name: "RoboBusiness",
@@ -115,6 +193,56 @@ export const physicalAiEvents: PhysicalAiEvent[] = [
     summary:
       "A leading research conference at the intersection of robotics and machine learning, including policies, foundation models, and sim to real systems.",
     tier: "Anchor",
+    workshops: [
+      {
+        name: "Physics Simulation and World Models for Robotic Manipulation",
+        schedule: "November 12 · Half day",
+        focus: "World models",
+        url: "https://corl26ws-physwm.github.io/",
+      },
+      {
+        name: "Modeling Uncertainty in Robotic World Models",
+        schedule: "November 12 · Half day",
+        focus: "World models",
+        url: "https://uncertainwm2026.github.io/",
+      },
+      {
+        name: "Do Robots Need World Models?",
+        schedule: "November 12 · Half day",
+        focus: "Robot learning",
+        url: "https://do-robots-need-world-models.github.io/",
+      },
+      {
+        name: "Sim to Real to Field",
+        schedule: "November 12 · Half day",
+        focus: "Transfer learning",
+        url: "https://sim2real2field-corl26.github.io/",
+      },
+      {
+        name: "Efficient Foundation Models for Real Time Embodied AI",
+        schedule: "November 12 · Half day",
+        focus: "Embodied AI",
+        url: "https://efficient-embodied-ai.github.io/",
+      },
+      {
+        name: "Learn at Deploy: Robot Learning at Deployment",
+        schedule: "November 12 · Half day",
+        focus: "Deployment",
+        url: "https://learn-at-deploy.github.io/",
+      },
+      {
+        name: "Scaling Laws and Diversity in Human to Robot Learning",
+        schedule: "November 12 · Half day",
+        focus: "Human demonstrations",
+        url: "https://scaling-h2r-corl.github.io/",
+      },
+      {
+        name: "Dexterous Manipulation: Full Stack Robotics on Learning and Design",
+        schedule: "November 12 · Half day",
+        focus: "Dexterous manipulation",
+        url: "https://dex-manipulation.github.io/",
+      },
+    ],
   },
   {
     name: "Physical AI Summit",
