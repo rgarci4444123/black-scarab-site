@@ -12,9 +12,9 @@ Commit: `e86a347`
 
 The live page returned HTTP 200. The title, author card, cover, canonical URL, 1200 by 675 Open Graph image, publication date, NewsArticle structured data, main sitemap entry, news sitemap entry, and RSS feed entry were verified. IndexNow accepted the article and news index with status 200.
 
-Google's Rich Results Test crawled the live page successfully and detected two valid items, including the Article result. Search Console URL Inspection confirmed that the new page was not yet indexed and presented the one time indexing request. That final request remains pending confirmation.
+Google's Rich Results Test crawled the live page successfully and detected two valid items, including the Article result. Search Console URL Inspection confirmed that the new page was not yet indexed. The indexing request was submitted and Google confirmed that the URL was added to its priority crawl queue.
 
-The Black Scarab LinkedIn company page, company ID `111898269`, and its recent post history were checked. No matching World Labs post was visible. LinkedIn publication remains pending confirmation. The X edition remains pending until the LinkedIn publication is live and verified.
+The Black Scarab LinkedIn company page, company ID `111898269`, and its recent post history were checked. No matching World Labs post was visible. The company post and first link comment were then published and verified. The X edition was prepared only after the website and LinkedIn publications were live and verified.
 
 ## Reporting record
 
@@ -109,8 +109,16 @@ Image alternative text: Black Scarab editorial illustration of a human scale arc
 
 ## LinkedIn publication
 
-Not published.
+Published and verified from the Black Scarab company page on September 28, 2026:
+
+https://www.linkedin.com/feed/update/urn:li:share:7510450604008415232/?actorCompanyId=111898269
+
+The live permalink shows the Black Scarab identity, the complete approved copy, the original editorial cover, the alternative text, and one first comment from Black Scarab containing the verified website article link. The link preview is visible in the comment.
 
 ## X
 
-Not prepared or published. The X edition follows only after the website and LinkedIn publications are live and verified.
+Prepared after the website and LinkedIn publications were live and verified:
+
+`/Users/rodolfogarcia/Desktop/black-scarab-site/output/x/amd-world-labs-acquisition/publication.md`
+
+The live `@BlackScarabAI` profile, repository publishing log, and a focused public search were checked. No matching AMD and World Labs post was found. No X publication was performed. Rodolfo publishes and verifies X himself.

@@ -1,5 +1,14 @@
 # X publishing log
 
+## AMD and World Labs News post prepared, September 28, 2026
+
+* Website article published and verified: https://www.blackscarab.ai/news/amd-world-labs-8-2-billion-acquisition.
+* LinkedIn company post and first link comment published and verified from Black Scarab company ID 111898269: https://www.linkedin.com/feed/update/urn:li:share:7510450604008415232/?actorCompanyId=111898269.
+* Concise X copy, descriptive alt text, and the exact cover path are saved in `output/x/amd-world-labs-acquisition/publication.md`.
+* The cover is an original Black Scarab editorial illustration, not an AMD or World Labs product photograph, facility, or disclosed technical architecture.
+* The live `@BlackScarabAI` profile, repository publishing log, and a focused public search were checked before preparation. No matching AMD and World Labs post was found.
+* No X publication was performed. Rodolfo publishes and verifies X himself.
+
 ## Extend Robotics News post prepared, September 28, 2026
 
 * Website article published and verified: https://www.blackscarab.ai/news/extend-robotics-result-as-a-service.
