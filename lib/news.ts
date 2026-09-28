@@ -32,6 +32,166 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "extend-robotics-result-as-a-service",
+    title: "Extend Robotics raises £2.6 million to sell completed work, not robots",
+    summary: "Extend Robotics has raised £2.6 million to expand a service that charges manufacturers for completed tasks while combining remote operators, robot hardware, and increasing automation. The model lowers the barrier to a first deployment, but its economics still depend on reliability, operator leverage, and evidence from production.",
+    category: "Robotics Business",
+    publishedDate: "2026-09-28",
+    publishedAt: "2026-09-28T11:30:00-04:00",
+    publishedLabel: "September 28, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/extend-robotics-result-as-a-service.png",
+    imageAlt: "Gloved operator using an unbranded controller while a generic robot gripper arranges finished metal components",
+    imageCaption: "Original Black Scarab editorial interpretation of remote robot operation sold as completed industrial work. The staged scene is conceptual and does not depict an Extend Robotics product, customer facility, or disclosed deployment.",
+    readingTime: "9 min read",
+    keyPoints: [
+      "Extend Robotics says its £2.6 million Pre A round was led by Skyworks Venture Capital Fund, with participation from Neo Venture and Zip Capital.",
+      "Its Result as a Service model asks customers to pay for completed work while Extend carries more of the robot, integration, cycle time, and task success risk.",
+      "The company reports a live apple quality control deployment and 35 subscription customers, but it has not published pricing, throughput, accuracy, intervention rates, uptime, or the economics of its remote operator network."
+    ],
+    sections: [
+      {
+        heading: "What Extend Robotics announced",
+        paragraphs: [
+          "Extend Robotics announced a £2.6 million Pre A financing round on September 28. Skyworks Venture Capital Fund led the round, with Neo Venture and Zip Capital participating. The company says it will use the money to expand across the United Kingdom and Europe and build a distributed network of remote robot operators.",
+          "The financing supports what Extend calls Result as a Service. Instead of asking a manufacturer to buy a robot, integrate it, hire specialists, and accept the risk that it may not reach the required cycle time, Extend proposes charging for completed work. The robot becomes part of the delivery system rather than the product on the invoice.",
+          "Financial terms beyond the amount were not disclosed. Extend did not publish a valuation, ownership percentages, revenue multiple, expected cash runway, or the amount contributed by each investor. It also did not disclose current pricing for the outcome based service.",
+          "The round is modest beside the sums flowing into humanoid manufacturers, but that contrast is part of the story. Extend is not trying to design every motor, joint, and robot body. It is betting that integration, remote operation, data collection, and commercial accountability can form a valuable layer across hardware from several suppliers."
+        ]
+      },
+      {
+        heading: "The customer is buying the task",
+        paragraphs: [
+          "Industrial automation projects often begin with a machine purchase and end with a long integration program. The customer pays before the equipment has proved that it can handle the complete variation, uptime, safety, and quality requirements of a production process.",
+          "Result as a Service reverses part of that arrangement. Extend says it will price robotic capacity against output and carry the risk associated with cycle time and task success. A factory can treat the service more like an operating expense that grows with demand rather than a large capital purchase whose payback depends on assumptions made before deployment.",
+          "This does not remove the cost of the robot. It changes who owns and manages that cost. Extend still has to acquire or finance hardware, integrate sensors and tools, maintain the system, provide operators, manage connectivity, and respond when a task falls outside the robot's current capability.",
+          "That makes the commercial promise unusually testable. If the robot is slow, fragile, or dependent on constant expert intervention, the provider absorbs more of the damage. If the system becomes reliable and one operator can supervise several increasingly autonomous robots, the provider can keep more of the productivity gain."
+        ]
+      },
+      {
+        heading: "Human control fills the autonomy gap",
+        paragraphs: [
+          "Extend's AMAS platform combines immersive remote operation, sensor integration, data collection, model training, and deployment. An operator can view a reconstructed robot environment through an extended reality interface and use natural movements to control an industrial arm or humanoid from another location.",
+          "That human remains useful when a robot encounters work that is too variable for a fixed program or too rare to justify a fully autonomous system. Small production batches, repair work, inspection, rework, and hazardous maintenance can all contain judgment calls that are easy for an experienced person and difficult to encode in advance.",
+          "The same interaction can produce training data. Extend's software records robot motion, sensor streams, and task outcomes, then offers tools for preparing data, training models, and deploying them back to an edge computer. The intended progression is not a sudden jump from manual work to full autonomy. It is a gradual transfer of routine portions to software while a person handles exceptions.",
+          "Company documentation shows that AMAS is already sold as a software platform with licenses and usage credits for data export and model training. The new service therefore sits beside an existing product business. Extend has not disclosed how much of current revenue comes from software subscriptions, hardware integration, robot rental, research customers, or completed industrial work."
+        ]
+      },
+      {
+        heading: "The apple line is the strongest production claim",
+        paragraphs: [
+          "Extend says a humanoid called Gilbert is performing quality control on a working apple packing line at Adrian Scripps, a large United Kingdom fruit grower. The company streamed the deployment during a Google DeepMind Robotics Accelerator demonstration on September 8 and describes it as live production work rather than a staged laboratory exercise.",
+          "Google independently confirms that Extend was part of its three month European robotics accelerator. Google's cohort description presents the company as a provider of teleoperation software and data pipelines for training and improving robot foundation models. The public accelerator material does not provide operating results from the apple line.",
+          "The distinction matters. A live feed from a customer site is stronger evidence than a booth demonstration, but it does not establish commercial performance by itself. Extend has not published the number of apples inspected, the defect classes, throughput, accuracy, rejected good fruit, missed defects, operating hours, human interventions, downtime, or the share of decisions completed autonomously.",
+          "Those numbers would determine whether the deployment is a production service, a supervised learning program running inside production, or some combination of both. All three could be useful. They carry different implications for cost and scale."
+        ]
+      },
+      {
+        heading: "Leyland shows where remote operation can begin",
+        paragraphs: [
+          "Extend has also tested its system at Leyland Trucks. A two day feasibility study in 2025 used remote robot control for tasks that included fitting a Master Service Disconnect in a high voltage vehicle system and spray painting custom components.",
+          "Independent coverage of the trial reported that the electrical task required extensive protective equipment for a human worker and that preparing that equipment could take about 20 minutes. Video from the test showed a robot guided through the task by an operator using an immersive interface. Leyland's innovation manager described the early result positively while still calling it a use case to continue exploring.",
+          "That wording is appropriately cautious. The Leyland work demonstrated feasibility, not a production contract or a fleet deployment. Extend later described a workflow that could use human demonstrations, simulation, and edge inference to automate more of the task, but it has not published continuous factory results.",
+          "The trial nevertheless illustrates the service model's practical starting point. Dangerous work can justify remote operation before autonomy is complete because reducing exposure has value of its own. The buyer does not need to believe that a general purpose robot can handle every factory task. It needs one defined result whose safety and operating economics can be measured."
+        ]
+      },
+      {
+        heading: "Hardware neutrality creates reach and responsibility",
+        paragraphs: [
+          "Extend positions AMAS as hardware neutral. Its product catalog and documentation reference industrial arms, mobile bases, grippers, sensors, and humanoid platforms from several manufacturers. In January, the company said it became an official Unitree Robotics integrator with responsibility for solution design, custom control software, testing, commissioning, and ongoing support.",
+          "Using available hardware reduces the capital and time required to build a proprietary robot body. It also lets Extend select a machine for a task rather than forcing every customer into one form. A fixed arm may be better for a repeatable station. A mobile manipulator may be useful across several work areas. A humanoid may fit equipment and spaces originally designed for people.",
+          "Neutrality also creates integration work. Every robot has different controllers, payload limits, safety functions, sensors, maintenance procedures, and software interfaces. Supporting many platforms can expand the addressable market while making testing, service, spare parts, and operator training more complicated.",
+          "The outcome model leaves little room to hide that complexity. A customer paying for completed work does not care which supplier caused a failure. Extend becomes responsible for assembling a dependable service from hardware and software it does not fully control."
+        ]
+      },
+      {
+        heading: "The remote operator network is the economic hinge",
+        paragraphs: [
+          "Extend wants operators to control industrial work without living near the plant or entering a hazardous area. In principle, that expands the available labor pool and lets a scarce specialist support several facilities. It can also keep a robot productive when autonomous software reaches an unfamiliar situation.",
+          "The near term model may still require substantial human attention. If one operator controls one robot for an entire shift, the system adds robot cost, connectivity, software, and support to a labor hour that has not disappeared. The business can still make sense for dangerous work, remote sites, labor shortages, or improved access, but it is not yet the same as autonomous productivity.",
+          "Scale improves when the ratio changes. One operator could supervise several machines, intervene only for exceptions, or work across time zones while automation completes routine cycles. Extend says operational data will make its systems more autonomous over time, but it has not disclosed current operator ratios or the rate at which specific tasks are moving from direct control to supervision.",
+          "Network performance and security add another constraint. Remote manipulation depends on timely video, sensor data, and control commands. A production service needs a safe response to lost connectivity, clear authority between local and remote teams, access controls, recorded interventions, and protection against a compromised operator account or edge device."
+        ]
+      },
+      {
+        heading: "What the traction figures do and do not show",
+        paragraphs: [
+          "Extend says it has 35 subscription customers across four sales regions and that revenue has doubled in each of the past three years. Investor Neo Venture separately projected revenue rising from £0.7 million in 2025 to £1.4 million in 2026. These figures come from the company and an investor rather than audited public reporting.",
+          "United Kingdom corporate records show that Extend Robotics Limited was incorporated in August 2019 and remains an active private company. The records do not provide the current round terms or a detailed breakdown of commercial revenue.",
+          "The customer figure also needs definition. A subscription may cover an AMAS software license, research access, integration support, robot rental, or an outcome based production service. Thirty five subscriptions therefore do not mean 35 factories are buying completed robotic work.",
+          "The financing gives Extend more room to prove that distinction. The most valuable evidence would identify how many sites have moved beyond trials, how long they have operated, whether contracts renew, and how gross margin changes as tasks collect more data and require less direct control."
+        ]
+      },
+      {
+        heading: "Reality check",
+        paragraphs: [
+          "Most of the new evidence is supplied by Extend. The company announced the financing, customer count, revenue growth, apple deployment, and production status. The investors have not published their own round terms, and the apple customer has not released operating results.",
+          "The service name has also evolved. Extend used Action as a Service and Robot as a Service in earlier material before introducing Result as a Service with the financing. That may reflect a clearer commercial package, but the company has not explained whether the underlying contracts, pricing, or service commitments changed with the name.",
+          "No public price, service level, task success threshold, intervention rate, or customer savings figure is available. There is also no disclosed comparison between the cost of Extend's service and a human worker, a conventional integrator, a fixed automation cell, or another remote robot provider.",
+          "The model is therefore credible as a response to deployment risk, but not yet proven as a repeatable industrial category. Its success will depend less on an impressive remote demonstration than on ordinary operational details: uptime, recovery, maintenance, insurance, safety approval, operator utilization, and the cost of supporting each new site."
+        ]
+      },
+      {
+        heading: "What comes next",
+        paragraphs: [
+          "The first signal to watch is production disclosure from the apple line. Monthly operating hours, throughput, quality accuracy, human intervention, and customer renewal would turn a compelling company video into measurable deployment evidence.",
+          "The second is operator leverage. Extend needs to show when one person can supervise more than one robot and which portions of a task become autonomous after repeated demonstrations. That ratio will shape service margins and determine whether the network behaves like scalable software or a specialized staffing business with expensive equipment.",
+          "The third is contract structure. Buyers should look for clear definitions of a completed result, who pays for downtime and damaged work, how safety responsibility is divided, and what happens to customer data used for model training.",
+          "Black Scarab's view is that Extend is asking the right commercial question. Many manufacturers do not want a robot. They want difficult work completed safely and predictably. Taking responsibility for that result could unlock deployments that equipment sales leave stranded, but the provider must prove that the risk it absorbs can be managed more efficiently than the customer could manage it alone."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Extend Robotics financing and Result as a Service announcement, published September 28, 2026",
+        url: "https://www.extendrobotics.com/post/extend-robotics-raises-2-6-million-to-let-manufacturers-hire-robots-by-the-outcome-not-buy-them-by"
+      },
+      {
+        label: "Google DeepMind Robotics Accelerator program and cohort description, accessed September 28, 2026",
+        url: "https://deepmind.google/accelerators/robotics/"
+      },
+      {
+        label: "Extend Robotics account of its live apple quality control demonstration, published September 2026",
+        url: "https://www.extendrobotics.com/post/extend-robotics-at-google-deepmind-robotics-accelerator-demo-day"
+      },
+      {
+        label: "Extend Robotics AMAS product documentation, accessed September 28, 2026",
+        url: "https://extend-robotics.gitbook.io/user-guide"
+      },
+      {
+        label: "Extend Robotics Command Console and commercial platform description, accessed September 28, 2026",
+        url: "https://console.extendrobotics.com/"
+      },
+      {
+        label: "Extend Robotics account of its Leyland Trucks feasibility study, published April 17, 2025",
+        url: "https://www.extendrobotics.com/post/exciting-news-new-collaboration"
+      },
+      {
+        label: "Independent coverage of the Leyland Trucks remote operation trial, published April 22, 2025",
+        url: "https://www.humanoidsdaily.com/news/extend-robotics-tests-vr-controlled-robot-for-hazardous-ev-truck-tasks-at-leyland"
+      },
+      {
+        label: "Extend Robotics Unitree integration announcement, published January 21, 2026",
+        url: "https://www.extendrobotics.com/post/extend-robotics-named-official-integrators-for-unitree-robotics-helping-accelerate-the-deployment-o"
+      },
+      {
+        label: "Neo Venture portfolio account of Extend Robotics revenue trajectory, published June 3, 2026",
+        url: "https://neoventures.net/extend-robotics-bringing-vr-to-industrial-robotics/"
+      },
+      {
+        label: "United Kingdom Companies House record for Extend Robotics Limited, accessed September 28, 2026",
+        url: "https://find-and-update.company-information.service.gov.uk/company/12171849"
+      },
+      {
+        label: "Saffron Grange account of its Extend Robotics precision viticulture project, published February 5, 2024",
+        url: "https://www.saffrongrange.com/robots-uncorked-saffron-grange-trials-vr/"
+      }
+    ]
+  },
+  {
     slug: "microsoft-robot-inference-offloading-edge-cloud",
     title: "Microsoft tests when robots should think beyond the machine",
     summary: "Microsoft researchers found that moving selected robot inference workloads to nearby or cloud GPUs could improve performance and battery life. The same experiments show why latency, bandwidth, and safety prevent a simple return to cloud robotics.",
