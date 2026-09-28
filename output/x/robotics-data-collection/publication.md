@@ -12,7 +12,7 @@ Robots cannot learn from text alone.
 
 They need records of what they saw, what action they took, and what happened next.
 
-Our new deep dive maps the seven data sources shaping robot intelligence, from teleoperation to simulation and internet video.
+Seven data sources are shaping robot intelligence, from teleoperation to world models and internet video.
 
 https://www.blackscarab.ai/insights/robotics-data-collection-robot-training-data-guide
 
