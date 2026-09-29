@@ -32,6 +32,139 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "sharpa-iros-dexterous-manipulation-stack",
+    title: "Sharpa links robot touch, motion, and training data at IROS",
+    summary: "Sharpa has introduced the D01 robot, W02 tactile hand, and AE01 haptic data glove as a connected hardware stack for dexterous manipulation. The specifications are detailed and the integration story is credible, but pricing, delivery timing, independent benchmarks, and customer results remain undisclosed.",
+    category: "Robotics News",
+    publishedDate: "2026-09-29",
+    publishedAt: "2026-09-29T09:15:00-04:00",
+    publishedLabel: "September 29, 2026",
+    author: {
+      name: "Rodolfo Garcia Calderoni, CFA",
+      href: "/about"
+    },
+    image: "/images/news/sharpa-iros-dexterous-manipulation.png",
+    imageAlt: "Editorial macro study of a haptic glove fingertip and robotic fingertip pressing into a translucent tactile membrane",
+    imageCaption: "Original Black Scarab editorial interpretation of human demonstration and machine touch meeting through tactile feedback. The conceptual image does not depict a Sharpa product, an official demonstration, or a disclosed sensor design.",
+    readingTime: "9 min read",
+    keyPoints: [
+      "Sharpa introduced three products at IROS 2026: the D01 integrated robot, the W02 dexterous hand, and the AE01 haptic exoskeleton data glove.",
+      "The lineup connects task execution, contact sensing, teleoperation, and demonstration capture in one supplier ecosystem rather than treating the robot hand as an isolated component.",
+      "Sharpa publishes extensive specifications and accepts quote requests, but it has not disclosed prices, delivery schedules, production capacity, independent test results, or D01 customer deployments."
+    ],
+    sections: [
+      {
+        heading: "Three products, one feedback loop",
+        paragraphs: [
+          "Sharpa introduced a robot, a tactile hand, and a haptic data glove at IROS 2026 in Pittsburgh on September 28. The D01 provides the robot platform, the W02 handles contact with objects, and the AE01 captures human hand motion for teleoperation and training data.",
+          "The individual specifications are attention grabbing, but the more important idea is how the products fit together. A person can demonstrate a task through the glove. The robot can reproduce the motion through a hand built around human proportions. Tactile sensors can record what happens at contact. That creates a potential loop from demonstration to execution, correction, and another round of learning.",
+          "Robot developers often assemble that loop from separate suppliers, custom interfaces, and research equipment. Sharpa is offering the hardware as a connected portfolio. The company has not disclosed whether buyers must use all three products together, which software interfaces are included, or how data rights and model training services will be handled."
+        ]
+      },
+      {
+        heading: "D01 gives manipulation a complete platform",
+        paragraphs: [
+          "D01 is an integrated manipulation robot with two seven degree of freedom arms, Sharpa hands, onboard computing, and electronic skin across the body. The published specification lists 66 total degrees of freedom with hands, a weight of about 40 kilograms without a chassis, and NVIDIA Jetson Thor as the main processor.",
+          "Sharpa rates each arm for a five kilogram payload. It claims maximum end effector speed above 10.5 meters per second, repeatability within 0.2 millimeters, and control communication up to 1,000 hertz. These figures describe different aspects of the machine and should not be read as one simultaneous operating condition. A robot may achieve peak speed in one motion and maximum precision under another set of loads and settings.",
+          "The body skin adds another layer. Sharpa specifies a force sensing range from 0.1 to 20 newtons per sensing element, force resolution of 0.2 newtons, spatial resolution of 10 millimeters, and a sampling rate of 100 hertz. In principle, sensing contact beyond the fingertips can help a robot respond when an arm, wrist, or body panel touches an object or person.",
+          "The company demonstrated D01 catching a falling stick at IROS. That is a useful illustration of speed and contact response, not a safety certification or endurance test. Sharpa has not published the test conditions, success rate, maintenance interval, collision limits, or evidence that the same performance persists through long production shifts."
+        ]
+      },
+      {
+        heading: "W02 puts more touch into a smaller hand",
+        paragraphs: [
+          "The W02 hand is the most compact part of the announcement and possibly the easiest for outside robot builders to evaluate. It has 21 active degrees of freedom, weighs less than 750 grams, and measures 188 by 87.5 by 40 millimeters. Sharpa says it is about 30 percent smaller than the earlier W01.",
+          "Size and weight matter because a hand sits at the end of the arm. Every extra gram increases the work required from the wrist, elbow, shoulder, and control system. A smaller hand can also reach into fixtures, cabinets, and tool spaces designed around people rather than industrial grippers.",
+          "Sharpa combines a vision based Dynamic Tactile Array at the fingertips with electronic skin across the fingers and palm. The company specifies fingertip force resolution of five millinewtons, a sensing range from five millinewtons to 30 newtons, and spatial resolution of one millimeter. The broader skin has lower spatial resolution and a range from 0.1 to 20 newtons.",
+          "The hand is rated IP54 without a cover and IP67 with Sharpa's official glove. It also closes with no gap between the fingers and palm, which the company says supports grasping narrow items such as chopsticks and cords. Those features address practical integration problems, although public pricing, rated payload, continuous duty life, service intervals, and independent grasp benchmarks are absent from the launch materials."
+        ]
+      },
+      {
+        heading: "AE01 turns hand motion into robot data",
+        paragraphs: [
+          "The AE01 glove addresses the other side of manipulation: showing a robot what to do. It uses 22 encoders to capture hand motion and provides vibration feedback through one linear resonant actuator at each fingertip. Sharpa lists 256 haptic levels for each finger.",
+          "Wired operation is specified at 500 hertz with five milliseconds of latency. Wireless operation is listed at 150 hertz with 10 milliseconds of latency and a range up to 30 meters. The product page also claims fingertip position repeatability below one millimeter, battery life above three hours, and a nominal lifetime beyond one million cycles.",
+          "Those figures make the glove relevant both for direct teleoperation and for collecting human demonstrations. A researcher could record how a person moves through a task while giving the operator contact cues from the robot. The captured trajectory can then become training material for a policy or remain part of a supervised workflow.",
+          "Haptic feedback should not be confused with mechanically reproducing every force at the human hand. The disclosed hardware uses fingertip vibration motors. Sharpa says the system communicates grasp force and contact conditions, but it has not published a perceptual study, comparison with force feedback devices, operator learning curve, or evidence that the signals improve autonomous policy performance."
+        ]
+      },
+      {
+        heading: "The product strategy extends beyond components",
+        paragraphs: [
+          "Sharpa was founded in 2024 by David Li, Xiang Shaoqing, and Sun Kai, the cofounders of lidar company Hesai. The company is headquartered in Singapore, with manufacturing and research operations in Shanghai and business operations in California, according to DealStreetAsia.",
+          "That report said Sharpa raised more than 4.5 billion yuan, about $669 million, from investors including Alibaba, Meituan, Tencent, JD.com, Transsion, HongShan, Qiming Venture Partners, and other firms. The reported post money valuation was about 22 billion yuan, or $3.3 billion. Sharpa has not connected the IROS launch to a specific production budget or sales target.",
+          "The company already has external validation for its earlier hand. NVIDIA selected dual Sharpa Wave hands for the Isaac GR00T reference humanoid built on a Unitree H2 Plus body. NVIDIA says research groups at Ai2, ETH Zurich, Stanford, and the University of California San Diego will use that platform.",
+          "This does not validate the new W02 or D01 specifications, but it shows that Sharpa has progressed beyond an isolated prototype. A major platform company has integrated its earlier hand into a reference design intended for outside researchers."
+        ]
+      },
+      {
+        heading: "A restaurant provides a commercial test",
+        paragraphs: [
+          "Sharpa has also moved its North robot into a Dairy Queen store in Shanghai. The company says the system prepares and serves Blizzard ice cream through a sequence of 55 manipulation steps while using standard store equipment. Tasks include holding a metal ring against a paper cup, operating a blender, opening a narrow cabinet handle, measuring toppings, and turning the finished cup upside down.",
+          "DealStreetAsia reported that the store opened on August 29 and operates daily. The deployment is relevant because it combines contact control, task memory, tools, deformable packaging, food service equipment, and customer orders in one workflow.",
+          "Most performance details still come from Sharpa. The company has not disclosed orders per hour, intervention rate, uptime, waste, staffing, service cost, food safety incidents, or customer economics. It is therefore evidence of a live commercial setting, not yet proof that the system operates profitably or without human support over extended periods.",
+          "The IROS products could make that kind of deployment easier to reproduce. A lighter hand may reduce arm load, a data glove may improve task teaching, and body sensing may help the robot manage contact. Sharpa has not said whether D01, W02, or AE01 are used in the restaurant."
+        ]
+      },
+      {
+        heading: "The missing details are commercial and operational",
+        paragraphs: [
+          "All three product pages invite prospective buyers to request a quote. None publishes a list price, standard configuration, warranty, lead time, shipment schedule, production capacity, supported software package, or service plan. The IROS announcement also does not name a D01 customer or an organization evaluating W02 and AE01.",
+          "Compatibility will be as important as the headline specifications. Buyers need to know which robot arms, control frameworks, operating systems, simulation tools, and model training pipelines are supported. They also need stable application programming interfaces, documentation, replacement parts, calibration procedures, and a path for maintaining tactile surfaces that will wear through repeated contact.",
+          "Safety is another open question. Body skin can provide useful contact information, but safe operation around people depends on the full system, including control architecture, mechanical limits, fault detection, emergency stopping, validation, and the application environment. Sharpa has not announced a safety certification for D01.",
+          "The evidence is strongest at the level of product architecture. Sharpa has shown a coherent hardware strategy, detailed specifications, public demonstrations, an earlier hand selected for NVIDIA's reference platform, and a robot operating in a commercial food setting. The evidence is weaker at the level of independent performance, delivered volume, field reliability, and customer economics."
+        ]
+      },
+      {
+        heading: "What comes after IROS",
+        paragraphs: [
+          "The first signal will be availability. Sharpa is accepting quote requests, but buyers still need firm prices, configurations, delivery dates, and evidence that the products can be manufactured and supported at useful volume.",
+          "The second is integrated performance. Public task benchmarks should show how D01, W02, and AE01 work together, including success rates, intervention frequency, learning time, tactile ablations, and performance after repeated cycles. Comparing the complete stack with mixed supplier systems would make the value of integration easier to judge.",
+          "The third is customer use beyond Sharpa's own demonstrations. Independent laboratories can test motion and sensing claims. Commercial operators can show whether the system survives real shifts. Robot manufacturers can reveal whether the smaller hand improves payload, battery life, reach, or task success in practice.",
+          "Sharpa's IROS launch is more substantial than another dexterous hand reveal. It presents robot motion, touch, and human demonstration as one product system. The next step is to prove that the closed loop produces reliable work, not only an impressive set of specifications."
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Sharpa IROS product announcement, published September 28, 2026",
+        url: "https://www.sharpa.com/blogs/news/sharpa-launches-three-flagship-products-at-iros-pushing-the-boundaries-of-dexterous-manipulation"
+      },
+      {
+        label: "Sharpa D01 product specifications",
+        url: "https://www.sharpa.com/pages/d01"
+      },
+      {
+        label: "Sharpa W02 product specifications",
+        url: "https://www.sharpa.com/pages/w02"
+      },
+      {
+        label: "Sharpa AE01 product specifications",
+        url: "https://www.sharpa.com/pages/ae01"
+      },
+      {
+        label: "NVIDIA Isaac GR00T reference humanoid announcement, published June 1, 2026",
+        url: "https://nvidianews.nvidia.com/_gallery/download_pdf/6a1d0fd53d6332ba32d813a8/"
+      },
+      {
+        label: "Associated Press report on the NVIDIA reference humanoid, published June 1, 2026",
+        url: "https://apnews.com/article/c807f7333b93b9927b62b1240dcf65a1"
+      },
+      {
+        label: "DealStreetAsia report on Sharpa financing and restaurant deployment, published August 31, 2026",
+        url: "https://www.dealstreetasia.com/stories/ai-robotics-startup-sharpa-funding-493670"
+      },
+      {
+        label: "Sharpa account of its Dairy Queen deployment, published August 29, 2026",
+        url: "https://www.sharpa.com/pages/sharpa-dq"
+      },
+      {
+        label: "Singapore Economic Development Board interview with Sharpa founder David Li, published June 30, 2026",
+        url: "https://www.edb.gov.sg/en/business-insights/insights/bringing-dexterous-robots-to-the-world-sharpas-founder-on-why-singapore-is-the-launchpad-for-the-future-of-embodied-ai.html"
+      }
+    ]
+  },
+  {
     slug: "amd-world-labs-8-2-billion-acquisition",
     title: "AMD agrees to buy World Labs for $8.2 billion",
     summary: "AMD has agreed to acquire World Labs in an $8.2 billion all stock transaction that would bring spatial intelligence research and Fei Fei Li inside the chipmaker. The strategic logic is clear, but the price arrives before World Labs has disclosed meaningful commercial evidence for its newest models or robotics simulation work.",
