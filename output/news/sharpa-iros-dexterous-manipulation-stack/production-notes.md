@@ -2,13 +2,17 @@
 
 ## Status
 
-Website report prepared and verified locally on September 29, 2026.
+Website report published and verified on September 29, 2026.
 
 Canonical URL:
 
 https://www.blackscarab.ai/news/sharpa-iros-dexterous-manipulation-stack
 
-The production build passed. The article route, author card, cover, canonical URL, 1200 by 675 Open Graph image, publication date, NewsArticle structured data, news sitemap logic, and RSS feed entry were verified locally. Desktop and mobile layouts were inspected.
+The production build passed. The article route, author card, cover, canonical URL, 1200 by 675 Open Graph image, publication date, NewsArticle structured data, news sitemap logic, and RSS feed entry were verified locally. Desktop and mobile layouts were inspected. The live article, structured data, Open Graph image, RSS entry, and news sitemap were verified after deployment. IndexNow accepted the article URL and news index with HTTP 200 responses.
+
+The LinkedIn company post and first link comment were published and verified from Black Scarab company ID 111898269:
+
+https://www.linkedin.com/feed/update/urn:li:share:7510690650753744897/?actorCompanyId=111898269
 
 ## Reporting record
 
@@ -78,7 +82,9 @@ Constraints: No logos, no brand marks, no text, no letters, no numbers, no water
 
 The caption labels the image as an original Black Scarab editorial interpretation and states that it does not depict a Sharpa product, official demonstration, or disclosed sensor design.
 
-## LinkedIn draft
+## LinkedIn publication
+
+Published from the Black Scarab company page on September 29, 2026. The post image, alternative text, complete copy, company identity, and first comment containing the live article link were verified in the published feed.
 
 NEWS | Sharpa
 

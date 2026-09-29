@@ -1,5 +1,14 @@
 # X publishing log
 
+## Sharpa IROS News post prepared, September 29, 2026
+
+* Website article published and verified: https://www.blackscarab.ai/news/sharpa-iros-dexterous-manipulation-stack.
+* LinkedIn company post and first link comment published and verified from Black Scarab company ID 111898269: https://www.linkedin.com/feed/update/urn:li:share:7510690650753744897/?actorCompanyId=111898269.
+* Concise X copy, descriptive alt text, and the exact cover path are saved in `output/x/sharpa-iros-dexterous-manipulation-stack/publication.md`.
+* The cover is an original Black Scarab editorial illustration, not a Sharpa product photograph, official demonstration, or disclosed sensor design.
+* The live `@BlackScarabAI` profile, repository publishing log, and a focused public search were checked before preparation. No matching Sharpa or IROS post was found.
+* No X publication was performed. Rodolfo publishes and verifies X himself.
+
 ## AMD and World Labs News post prepared, September 28, 2026
 
 * Website article published and verified: https://www.blackscarab.ai/news/amd-world-labs-8-2-billion-acquisition.
