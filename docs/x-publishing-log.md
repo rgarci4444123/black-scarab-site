@@ -1,5 +1,14 @@
 # X publishing log
 
+## micro1 deep dive post prepared, September 30, 2026
+
+* Website published and verified: https://www.blackscarab.ai/insights/sell-company-data-ai-micro1-data-partnerships-referrals.
+* Company LinkedIn post and first link comment verified: https://www.linkedin.com/feed/update/urn:li:activity:7511104722297262080/.
+* Caption includes the selected opportunities referral URL; first comment contains both referral URLs and the article link.
+* Manual X copy includes both exact referral URLs. Copy, image path, alt text and verification notes are saved in `output/insights/micro1/publication.md`.
+* Repository log and live company profile checked; no matching micro1 post found among available recent posts.
+* No X publication performed. Rodolfo publishes and verifies X himself.
+
 ## Sharpa IROS News post prepared, September 29, 2026
 
 * Website article published and verified: https://www.blackscarab.ai/news/sharpa-iros-dexterous-manipulation-stack.
