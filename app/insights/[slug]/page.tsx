@@ -329,7 +329,7 @@ export default async function CaseStudyPage({ params }: Props) {
               <div className="mx-auto grid max-w-6xl gap-6 overflow-hidden rounded-[28px] border border-[#d7e2d1] bg-[#111827] p-7 text-white shadow-[0_18px_44px_rgba(15,23,42,0.14)] md:grid-cols-[minmax(0,1fr)_auto] md:items-center md:p-9">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#b9c9ae]">
-                    Referral marketplace access
+                    {article.referral.label ?? "Referral marketplace access"}
                   </p>
                   <h2 className="mt-3 text-2xl font-semibold tracking-tight md:text-3xl">
                     {article.referral.title}
@@ -337,12 +337,13 @@ export default async function CaseStudyPage({ params }: Props) {
                   <p className="mt-3 max-w-3xl text-sm leading-7 text-[#d1d5db] md:text-base">
                     {article.referral.description}
                   </p>
-                  <p className="mt-5 text-sm text-[#d1d5db]">
+                  {article.referral.code ? <p className="mt-5 break-all text-sm text-[#d1d5db]">
                     Black Scarab referral code{" "}
                     <span className="rounded-md border border-white/15 bg-white/10 px-2.5 py-1 font-mono font-semibold tracking-[0.08em] text-white">
                       {article.referral.code}
                     </span>
-                  </p>
+                  </p> : null}
+                  {article.referral.disclosure ? <p className="mt-4 max-w-3xl text-xs leading-6 text-[#d1d5db]">{article.referral.disclosure}</p> : null}
                 </div>
                 <a
                   href={article.referral.url}
@@ -350,7 +351,7 @@ export default async function CaseStudyPage({ params }: Props) {
                   rel="sponsored noreferrer"
                   className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#edf4e8] px-6 py-3 text-sm font-semibold text-[#111827] transition hover:bg-white"
                 >
-                  Access the Marketplace
+                  {article.referral.buttonLabel ?? "Access the Marketplace"}
                 </a>
               </div>
             </section>
@@ -566,6 +567,7 @@ export default async function CaseStudyPage({ params }: Props) {
                           <Link
                             key={link.href}
                             href={link.href}
+                            rel={link.sponsored ? "sponsored noreferrer" : undefined}
                             className="rounded-[18px] border border-[#e1ddd2] bg-[#fffdfa] p-5 shadow-[0_12px_28px_rgba(17,24,39,0.05)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(17,24,39,0.08)]"
                           >
                             <p className="text-sm font-semibold text-[#111827]">

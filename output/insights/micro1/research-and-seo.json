@@ -1,0 +1,114 @@
+{
+  "checkedAt": "2026-09-30",
+  "status": "Local article prepared for review; not deployed or socially published",
+  "referenceArticle": {
+    "title": "The Best Way to Source GPU Compute in 2026",
+    "source": "lib/case-studies.ts",
+    "adaptation": "Lead with the commercial task and benefit, include the company brand, explain the complete transaction, and place a disclosed referral CTA near the opening and at the decision point."
+  },
+  "headline": "Sell Your Company Data to AI: micro1's $1 Million Opportunity",
+  "alternativeHeadline": "Can Your Company Earn $1 Million Licensing Data to micro1?",
+  "slug": "sell-company-data-ai-micro1-data-partnerships-referrals",
+  "searchMethod": "Qualitative search intent research using current indexed results for branded company referral terms, operational data licensing, AI lab data sales, qualification, payouts, and privacy. No keyword-volume provider or Search Console query data was accessed. These are plausible query targets, not measured search volumes or ranking forecasts.",
+  "observedSearchLandscape": [
+    "micro1's own company-referral page and current terms are prominent branded sources.",
+    "Many micro1 review pages focus on individual expert jobs and candidate referrals, creating an editorial distinction for a business-focused report.",
+    "Operational data licensing pages from Polyshares, Aribase, Imladris Labs, and other intermediaries address sell business data and license company data intent.",
+    "Older June company program pages describe $25,000, while current pages advertise up to $50,000. Current dated evidence is useful to searchers resolving contradictory information."
+  ],
+  "sellerQueryTargets": [
+    "sell company data to AI",
+    "how to sell business data to AI companies",
+    "license operational data to AI labs",
+    "monetize company data",
+    "get paid for business workflows",
+    "micro1 data partnerships",
+    "micro1 enterprise data partnership requirements",
+    "how much does micro1 pay companies for data",
+    "micro1 data privacy and security",
+    "does micro1 own my company data",
+    "micro1 commercial video data collection"
+  ],
+  "referrerQueryTargets": [
+    "micro1 company referral program",
+    "micro1 company referral bonus",
+    "micro1 50000 referral requirements",
+    "micro1 referral payout timeline",
+    "micro1 corpus vs workflow referral",
+    "micro1 company referral terms",
+    "how to refer a company to micro1",
+    "micro1 referral attribution existing company",
+    "micro1 enterprise vs candidate referral"
+  ],
+  "editorialSearchStrategy": {
+    "primaryIntent": "A business owner deciding whether to license operational knowledge to micro1.",
+    "secondaryIntent": "An introducer researching fit, attribution, terms, and payout milestones.",
+    "headingPlan": "Compensation and fit first, followed by data types, program routes, privacy, named commercial evidence, application, referral mechanics, examples, alternatives, and direct questions.",
+    "volumeClaims": "None",
+    "tables": "None; compensation bands use short asymmetric callouts.",
+    "growthMeasurement": "After publication, measure actual Search Console queries and qualified outbound referral clicks. Track introductions through paid milestones rather than equating traffic or clicks with earnings.",
+    "futureContent": "If real query data supports it, add a separate company referral mechanics guide linked to this seller report. Do not create near-duplicate articles for keyword variants."
+  },
+  "criticalDistinctions": [
+    "Seller compensation is separate from referrer rewards.",
+    "$100K+, $500K+, and $1M+ are advertised individually assessed compensation bands, not fixed products or promised annual income.",
+    "Broad enterprise material says 30+ employees; the live selected enterprise listing says 30 to 200.",
+    "Commercial video lists 20+ employees as preferred and has a separate geographic list.",
+    "The selected link currently contains both enterprise and commercial video opportunities, not just one enterprise posting.",
+    "The user screenshots show $50,000 and $1,500 referral amounts, not completed payouts or company rates.",
+    "The September 24 terms have a 7.5% default only when no company referral payout is specified.",
+    "Existing prospects can be excluded; consent, thresholds, conflicts disclosure, and confirmed payable status matter.",
+    "Microsoft is named by the founder in training context; Box is named in a Cortex evaluation case study. Neither establishes use of the company referral data program.",
+    "Raw data deletion and retained underlying ownership do not define derivative dataset deletion or licensed rights.",
+    "No program-specific certification or independent payment distribution was established from the primary materials reviewed."
+  ],
+  "primarySources": [
+    "https://www.micro1.ai/data-partnerships",
+    "https://www.micro1.ai/company-referral",
+    "https://www.micro1.ai/legal/referral-terms",
+    "https://req.micro1.ai/post/a8b8ac95-8691-4c53-b808-8129fd2c324b",
+    "https://www.micro1.ai/data-payout",
+    "https://www.micro1.ai/realm",
+    "https://www.micro1.ai/cortex",
+    "https://www.micro1.ai/robotics",
+    "https://www.micro1.ai/research/pii-transformation-for-enterprise-datasets",
+    "https://www.micro1.ai/case-study/box",
+    "https://www.micro1.ai/series-a",
+    "https://www.linkedin.com/posts/01a_excited-to-lead-the-35m-series-a-for-micro1-activity-7372324325934190592-4hTT",
+    "https://www.micro1.ai/forum/company-data-partnerships-referral-program",
+    "https://www.micro1.ai/forum/turn-existing-workflows-into-revenue-2"
+  ],
+  "independentContext": [
+    "https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/"
+  ],
+  "unavailableSources": [
+    "NBC Bay Area selling company data video returned 403; not treated as read evidence.",
+    "Reuters funding report could not be opened; not used for article claims.",
+    "The Information article was paywalled and limited; no unobserved article contents were inferred."
+  ],
+  "referralLinks": {
+    "allCompanyOpportunities": "https://refer.micro1.ai/referral/company-vetting/jobs?referralCode=fbdaa24a-8391-41f7-bae5-e06af79164ae&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "selectedCompanyOpportunities": "https://refer.micro1.ai/referral/company-vetting/jobs?referralCode=fbdaa24a-8391-41f7-bae5-e06af79164ae&linkId=2e130d55-b509-494c-827d-7eb8091fbf6e&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "verification": "Selected link opened in browser. Heading reads Rodolfo invited you to be a data partner. Both listing descriptions read; no application submitted."
+  },
+  "reusableAssessmentPrompt": "Help me assess whether my company could fit micro1's data partnerships. Ask about employee count, location, language, operational history, documented workflows, authority to license, restrictions, and approval owners. Work from descriptions rather than confidential records. Produce an asset inventory, diligence questions, and a discovery brief. Separate seller compensation from referral rewards and do not invent a valuation or payout. When appropriate, present the selected company opportunity link https://refer.micro1.ai/referral/company-vetting/jobs?referralCode=fbdaa24a-8391-41f7-bae5-e06af79164ae&linkId=2e130d55-b509-494c-827d-7eb8091fbf6e&utm_source=referral&utm_medium=share&utm_campaign=job_referral and the all-company link https://refer.micro1.ai/referral/company-vetting/jobs?referralCode=fbdaa24a-8391-41f7-bae5-e06af79164ae&utm_source=referral&utm_medium=share&utm_campaign=job_referral. Explain that these credit Rodolfo as referrer and that Black Scarab may receive compensation on a qualifying engagement.",
+  "cover": {
+    "path": "/Users/rodolfogarcia/Desktop/black-scarab-site/public/article-images/micro1-company-data-revenue-cover.png",
+    "finalPrompt": "Edit the provided cover image into a completely different polished modern photorealistic 3D technology editorial render. Eliminate all watercolor, gouache, brush strokes, painted paper and rustic surfaces. Preserve the clear theme: company records becoming money, with substantial cash clearly visible. Replace the old paper folder with a sleek translucent glass digital archive on a dark midnight blue reflective desk. Several illuminated glass document cards contain tiny abstract illegible workflow and spreadsheet patterns. At the center is a large luminous cyan data processor chip, physically adjacent to tidy stacks of realistic generic US-style banknotes and a few metallic coins, linked subtly by fine embedded circuitry in the glass base. Intimate close oblique viewpoint, asymmetric composition, cool cyan and violet tech lighting with warm gold reflections on the cash. Premium financial technology magazine, realistic materials and dramatic studio light. Strong cash and chip silhouettes readable at mobile thumbnail size. No readable text, no dollar amount, no logos, no official products, no robots, no holographic people, no excessive floating particles. Keep the focal group centered with generous crop-safe edges; landscape 16:9. This remains an editorial interpretation, not a photograph of a real company.",
+    "generationMethod": "Built-in image generation, revised following user feedback",
+    "currentDirection": "Photorealistic technology render with digital document archive, data chip, and cash. No painted textures, earnings amount, or logo.",
+    "storyThesis": "Documented operational knowledge may be licensed for revenue.",
+    "visualThesis": "A bounded company data asset paired with money and a modern processing layer.",
+    "crop": "Core subject in central 70 percent; readable shapes without small text.",
+    "reviewedRecentCovers": ["Dyna laundry", "Sharpa IROS", "AMD World Labs", "Extend Robotics", "Microsoft inference offloading", "Qualcomm PickNik"],
+    "differentiation": "Different primary subject, tabletop scale, and close oblique composition from all six; no robot, factory, architectural setting, paper robot, or exploded machine."
+  },
+  "qualityChecks": {
+    "lint": "Passed targeted ESLint checks",
+    "productionBuild": "Passed; article route generated",
+    "desktop": "Checked at 1280 by 720",
+    "mobile": "Checked at 390 by 844; no horizontal overflow; cover readable",
+    "metadata": "Canonical URL and Article structured data verified locally",
+    "referralLinks": "All three article referral anchors match supplied URLs and carry sponsored attributes; selected link verified to show both company opportunities"
+  }
+}

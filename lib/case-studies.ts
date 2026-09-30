@@ -18,6 +18,7 @@ import { robotActuatorsDeepDive } from "@/lib/robot-actuators";
 import { whatIsPhysicalAiDeepDive } from "@/lib/what-is-physical-ai";
 import { digitalTwinsDeepDive } from "@/lib/digital-twins";
 import { roboticsDataCollectionDeepDive } from "@/lib/robotics-data-collection";
+import { micro1DeepDive } from "@/lib/micro1";
 
 export type CaseStudySection = {
   heading?: string;
@@ -256,6 +257,7 @@ export type CaseStudyInlineLink = {
   label: string;
   href: string;
   description: string;
+  sponsored?: boolean;
 };
 
 export type CaseStudyTable = {
@@ -318,10 +320,13 @@ export type CaseStudyArticle = {
   sourceLinks?: CaseStudySourceLink[];
   affiliateDisclosure?: string;
   referral?: {
-    code: string;
+    code?: string;
     url: string;
     title: string;
     description: string;
+    label?: string;
+    buttonLabel?: string;
+    disclosure?: string;
   };
 };
 
@@ -16333,6 +16338,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  micro1DeepDive(),
   roboticsDataCollectionDeepDive(),
   digitalTwinsDeepDive(),
   whatIsPhysicalAiDeepDive(),

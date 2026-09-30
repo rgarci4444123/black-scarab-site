@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-30",
+  "status": "Local revision; not published",
+  "audience": "Companies considering a paid data partnership",
+  "changes": [
+    "Removed referrer recruitment, commission amounts, pipeline guidance, and referrer FAQs",
+    "Reordered the article around compensation, qualification, records, participation, intended use, confidentiality, company background, risks, and next steps",
+    "Removed research gap announcements and defensive editorial disclaimers",
+    "Kept both supplied application links and a concise affiliate disclosure",
+    "Added September 2026 Forbes financing reporting and investor Antler confirmation of the 2025 round"
+  ],
+  "seo": {
+    "intent": "Sell company data to AI and evaluate micro1 data partnerships",
+    "referrerKeywords": "Removed from published metadata and article copy",
+    "slug": "Retained to preserve the existing preview URL"
+  },
+  "additionalSources": [
+    "https://www.forbes.com.au/news/uncategorized/this-25-year-old-raised-us100-million-for-his-ai-startup-at-a-us4-billion-valuation/",
+    "https://www.antler.co/press-releases/antler-elevate-backs-micro1-the-ai-platform-for-human-intelligence-in-its-usd-35-million-series-a-led-by-01a",
+    "https://www.inc.com/varsha-bansal/the-booming-business-of-turning-human-experts-into-ai-trainers/91292479"
+  ]
+}
