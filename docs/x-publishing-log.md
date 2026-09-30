@@ -181,3 +181,11 @@ What happens to Mexico when the world no longer needs its cheap labor?
 The risk reaches beyond factories: weaker incomes, hollowed out industrial cities and less money for schools, hospitals and infrastructure.
 
 Mexico cannot afford to miss the physical AI revolution.
+
+## Dyna Taku News post prepared, September 30, 2026
+
+* Website published and verified: https://www.blackscarab.ai/news/dyna-taku-laundry-workflow.
+* Company LinkedIn post and first link comment verified: https://www.linkedin.com/feed/update/urn:li:share:7511089873878138880/?actorCompanyId=111898269.
+* Manual X copy, alt text and exact 1200 pixel image path saved in `output/x/dyna-taku-laundry-workflow/publication.md`.
+* Public profile and repository log checked; no matching Dyna post found among available recent posts.
+* No X publication performed. Rodolfo publishes and verifies X himself.
