@@ -1,0 +1,206 @@
+{
+  "/images/news/dyna-taku-laundry-workflow.png": {
+    "path": "/images/news/social/dyna-taku-laundry-workflow.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 97715
+  },
+  "/images/news/abb-e-device-tablet-safety.png": {
+    "path": "/images/news/social/abb-e-device-tablet-safety.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 127163
+  },
+  "/images/news/sharpa-iros-dexterous-manipulation.png": {
+    "path": "/images/news/social/sharpa-iros-dexterous-manipulation.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 170278
+  },
+  "/images/news/amd-world-labs-acquisition.png": {
+    "path": "/images/news/social/amd-world-labs-acquisition.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 196455
+  },
+  "/images/news/extend-robotics-result-as-a-service.png": {
+    "path": "/images/news/social/extend-robotics-result-as-a-service.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 241221
+  },
+  "/images/news/microsoft-robot-inference-offloading.png": {
+    "path": "/images/news/social/microsoft-robot-inference-offloading.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 166026
+  },
+  "/images/news/qualcomm-picknik-moveit-acquisition.png": {
+    "path": "/images/news/social/qualcomm-picknik-moveit-acquisition.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 258772
+  },
+  "/images/news/amazon-indiana-robotics-manufacturing.png": {
+    "path": "/images/news/social/amazon-indiana-robotics-manufacturing.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 273353
+  },
+  "/images/news/openai-general-purpose-robotics-team.png": {
+    "path": "/images/news/social/openai-general-purpose-robotics-team.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 242064
+  },
+  "/images/news/softbank-rai-institute-acquisition.png": {
+    "path": "/images/news/social/softbank-rai-institute-acquisition.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 232116
+  },
+  "/images/news/faraday-future-nine-robots.png": {
+    "path": "/images/news/social/faraday-future-nine-robots.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 189246
+  },
+  "/images/news/d-robotics-series-c-robot-computing.png": {
+    "path": "/images/news/social/d-robotics-series-c-robot-computing.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 166669
+  },
+  "/images/news/figure-helix-2-5-zero-shot-homes.png": {
+    "path": "/images/news/social/figure-helix-2-5-zero-shot-homes.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 229159
+  },
+  "/images/news/watney-series-a-data-center-robots.png": {
+    "path": "/images/news/social/watney-series-a-data-center-robots.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 224126
+  },
+  "/images/news/universal-robots-gen-7-ai-ready-cobot-platform.png": {
+    "path": "/images/news/social/universal-robots-gen-7-ai-ready-cobot-platform.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 160443
+  },
+  "/images/news/bain-capital-ventures-fund-xi-physical-ai.png": {
+    "path": "/images/news/social/bain-capital-ventures-fund-xi-physical-ai.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 212610
+  },
+  "/images/news/synaptics-tactile-sensing-edge-ai.png": {
+    "path": "/images/news/social/synaptics-tactile-sensing-edge-ai.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 164434
+  },
+  "/images/news/odyssey-3-foundation-world-model.png": {
+    "path": "/images/news/social/odyssey-3-foundation-world-model.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 243750
+  },
+  "/images/news/agility-digit-5-industrial-humanoid.png": {
+    "path": "/images/news/social/agility-digit-5-industrial-humanoid.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 208176
+  },
+  "/images/news/reward-ai-om-1-human-demonstrations.png": {
+    "path": "/images/news/social/reward-ai-om-1-human-demonstrations.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 181122
+  },
+  "/images/news/hd-hyundai-aidin-robotic-touch-shipyard.png": {
+    "path": "/images/news/social/hd-hyundai-aidin-robotic-touch-shipyard.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 227719
+  },
+  "/images/news/ubtech-liuzhou-humanoid-robot-factory.png": {
+    "path": "/images/news/social/ubtech-liuzhou-humanoid-robot-factory.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 255563
+  },
+  "/images/news/samsung-sds-team-rex-robot-alliance.png": {
+    "path": "/images/news/social/samsung-sds-team-rex-robot-alliance.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 213542
+  },
+  "/images/news/nokia-rajant-cognitive-operations-edge-ai.png": {
+    "path": "/images/news/social/nokia-rajant-cognitive-operations-edge-ai.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 250336
+  },
+  "/images/news/maven-robotics-series-a-industrial-robots.png": {
+    "path": "/images/news/social/maven-robotics-series-a-industrial-robots.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 229204
+  },
+  "/images/news/antioch-series-a-simulation-platform.png": {
+    "path": "/images/news/social/antioch-series-a-simulation-platform.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 210281
+  },
+  "/images/news/neura-robotics-series-c-production-test.jpg": {
+    "path": "/images/news/social/neura-robotics-series-c-production-test.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 246741
+  },
+  "/images/news/palantir-nebius-sovereign-ai.png": {
+    "path": "/images/news/social/palantir-nebius-sovereign-ai.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 180342
+  },
+  "/images/news/palladyne-ai-fanuc-industrial-robots.png": {
+    "path": "/images/news/social/palladyne-ai-fanuc-industrial-robots.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 229509
+  },
+  "/images/news/tuya-doova-ai-companion-robot-seniors.png": {
+    "path": "/images/news/social/tuya-doova-ai-companion-robot-seniors.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 177822
+  },
+  "/images/news/physical-superintelligence-ai-physics-lab.png": {
+    "path": "/images/news/social/physical-superintelligence-ai-physics-lab.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 224025
+  },
+  "/images/news/caterpillar-fieldai-industrial-ai.png": {
+    "path": "/images/news/social/caterpillar-fieldai-industrial-ai.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 276921
+  },
+  "/images/news/lyte-series-c-physical-ai-perception.png": {
+    "path": "/images/news/social/lyte-series-c-physical-ai-perception.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 231013
+  },
+  "/images/news/xynova-prima-1-physical-ai.png": {
+    "path": "/images/news/social/xynova-prima-1-physical-ai.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 112134
+  }
+}

@@ -17,6 +17,7 @@ import {
   type LocalAiArticleSlug,
 } from "@/lib/local-ai-deployment";
 import { authorPortraitSrc } from "@/lib/site-author";
+import { getInsightSocialImage } from "@/lib/insight-social-image";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -99,7 +100,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const articleUrl = getArticleUrl(article.slug);
-  const imageUrl = `${baseUrl}${article.image}`;
+  const socialImage = getInsightSocialImage(article.image, article.imageAlt);
   const articleAuthor = article.author?.name ?? publisherName;
   const articleAuthorUrl = article.author?.href
     ? `${baseUrl}${article.author.href}`
@@ -121,13 +122,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: article.publishedAt ?? `${article.publishedDate}T12:00:00.000Z`,
       ...(article.modifiedAt ? { modifiedTime: article.modifiedAt } : {}),
       authors: [articleAuthor],
-      images: [{ url: imageUrl, alt: article.imageAlt }],
+      images: [socialImage],
     },
     twitter: {
       card: "summary_large_image",
       title: article.title,
       description: article.seoDescription,
-      images: [imageUrl],
+      images: [socialImage],
     },
     keywords: [
       ...(article.tags ?? []),

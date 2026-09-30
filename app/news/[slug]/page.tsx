@@ -11,17 +11,14 @@ import {
   type NewsUpdate,
 } from "@/lib/news";
 import { authorPortraitSrc } from "@/lib/site-author";
+import newsSocialImages from "@/lib/news-social-images.json";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
 const baseUrl = "https://www.blackscarab.ai";
-const defaultSocialImageSize = { width: 1200, height: 675 };
-const threeByTwoSocialImages = new Set([
-  "/images/news/agility-digit-5-industrial-humanoid.png",
-  "/images/news/palantir-nebius-sovereign-ai.png",
-]);
+const socialImages: Record<string, { path: string; width: number; height: number }> = newsSocialImages;
 
 function getFallbackSocialImage() {
   const fallbackUrl = `${baseUrl}/icon.png`;
@@ -41,20 +38,18 @@ function getSocialImage(update: NewsUpdate) {
     return getFallbackSocialImage();
   }
 
-  const filename = update.image.split("/").at(-1)?.replace(/\.[^.]+$/, "");
-  if (!filename) {
-    return getFallbackSocialImage();
+  const image = socialImages[update.image];
+  if (!image) {
+    throw new Error(`Missing News share image: ${update.image}`);
   }
 
-  const imageUrl = `${baseUrl}/images/news/social/${filename}.jpg`;
-  const size = threeByTwoSocialImages.has(update.image)
-    ? { width: 1200, height: 800 }
-    : defaultSocialImageSize;
+  const imageUrl = `${baseUrl}${image.path}`;
 
   return {
     url: imageUrl,
     secureUrl: imageUrl,
-    ...size,
+    width: image.width,
+    height: image.height,
     type: "image/jpeg",
     alt: update.imageAlt,
   };

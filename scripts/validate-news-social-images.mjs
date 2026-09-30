@@ -4,7 +4,7 @@ import { basename, join, parse } from "node:path";
 const root = process.cwd();
 const newsSource = await readFile(join(root, "lib/news.ts"), "utf8");
 const articleImages = [
-  ...newsSource.matchAll(/^\s+image:\s+"([^"]+)",$/gm),
+  ...newsSource.matchAll(/^\s+"?image"?:\s+"([^"]+)",$/gm),
 ].map((match) => match[1]);
 const maxBytes = 300_000;
 

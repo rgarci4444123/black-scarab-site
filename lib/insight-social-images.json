@@ -1,0 +1,476 @@
+{
+  "/article-images/agility-robotics-digit-logistics-humanoid-robot-guide.png": {
+    "path": "/images/insights/social/agility-robotics-digit-logistics-humanoid-robot-guide-a7e5802bc1a9.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 100846
+  },
+  "/article-images/amazon-proteus-autonomous-mobile-warehouse-robot-guide.png": {
+    "path": "/images/insights/social/amazon-proteus-autonomous-mobile-warehouse-robot-guide-ab5aedbbf882.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 109399
+  },
+  "/article-images/amd-kria-k26-guide.png": {
+    "path": "/images/insights/social/amd-kria-k26-guide-e99641446515.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 200491
+  },
+  "/article-images/antioch-physical-ai-simulation-deep-dive.png": {
+    "path": "/images/insights/social/antioch-physical-ai-simulation-deep-dive-c634362b5e5b.jpg",
+    "width": 1200,
+    "height": 600,
+    "bytes": 108211
+  },
+  "/article-images/anybotics-anymal-industrial-inspection-robot-guide.png": {
+    "path": "/images/insights/social/anybotics-anymal-industrial-inspection-robot-guide-74cf27a17a56.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 174427
+  },
+  "/article-images/apple-mac-mini-local-llm-guide.png": {
+    "path": "/images/insights/social/apple-mac-mini-local-llm-guide-9d22feba2b2a.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 63216
+  },
+  "/article-images/arduino-nicla-vision-guide.png": {
+    "path": "/images/insights/social/arduino-nicla-vision-guide-91289c50c948.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 124141
+  },
+  "/article-images/boston-dynamics-atlas-industrial-humanoid-robot-guide.png": {
+    "path": "/images/insights/social/boston-dynamics-atlas-industrial-humanoid-robot-guide-e89202a5897d.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 128055
+  },
+  "/article-images/boston-dynamics-spot-industrial-inspection-guide.png": {
+    "path": "/images/insights/social/boston-dynamics-spot-industrial-inspection-guide-c503f1af6dd8.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 118479
+  },
+  "/article-images/case-study-agriculture.png": {
+    "path": "/images/insights/social/case-study-agriculture-9c5657d16d42.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 234195
+  },
+  "/article-images/case-study-burro-autonomous-farming.png": {
+    "path": "/images/insights/social/case-study-burro-autonomous-farming-681b95f56e95.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 171791
+  },
+  "/article-images/case-study-coca-cola-hbc-ar-picking.png": {
+    "path": "/images/insights/social/case-study-coca-cola-hbc-ar-picking-c8ad0e827e72.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 141354
+  },
+  "/article-images/case-study-healthcare.png": {
+    "path": "/images/insights/social/case-study-healthcare-3e9ab75b8cde.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 109036
+  },
+  "/article-images/case-study-logistics.jpg": {
+    "path": "/images/insights/social/case-study-logistics-67897cc21c0a.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 236823
+  },
+  "/article-images/case-study-manufacturing.jpg": {
+    "path": "/images/insights/social/case-study-manufacturing-b04eecfc6456.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 150544
+  },
+  "/article-images/case-study-medtronic-gi-genius.png": {
+    "path": "/images/insights/social/case-study-medtronic-gi-genius-26054f3176e7.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 94340
+  },
+  "/article-images/case-study-retail.jpg": {
+    "path": "/images/insights/social/case-study-retail-62fda0b30226.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 232183
+  },
+  "/article-images/case-study-smart-cities.jpg": {
+    "path": "/images/insights/social/case-study-smart-cities-03307f461a5a.jpg",
+    "width": 1200,
+    "height": 906,
+    "bytes": 250228
+  },
+  "/article-images/case-study-urban-deterrence.jpg": {
+    "path": "/images/insights/social/case-study-urban-deterrence-2efb0ffb69e2.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 151735
+  },
+  "/article-images/cerebras-wse-3-guide.png": {
+    "path": "/images/insights/social/cerebras-wse-3-guide-bf56f6d0a26f.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 201170
+  },
+  "/article-images/compute-exchange-gpu-marketplace-deep-dive.png": {
+    "path": "/images/insights/social/compute-exchange-gpu-marketplace-deep-dive-6025e7d128d7.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 127522
+  },
+  "/article-images/edge-ai-roadmap-top-10-platforms.png": {
+    "path": "/images/insights/social/edge-ai-roadmap-top-10-platforms-ca54b2ab4b2a.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 144825
+  },
+  "/article-images/edge-impulse-embedded-ai-mlops-physical-ai-guide.png": {
+    "path": "/images/insights/social/edge-impulse-embedded-ai-mlops-physical-ai-guide-01218b411ffe.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 151566
+  },
+  "/article-images/fieldai-edge-robot-foundation-model-deep-dive.png": {
+    "path": "/images/insights/social/fieldai-edge-robot-foundation-model-deep-dive-1b25da9d4ed9.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 155983
+  },
+  "/article-images/figure-03-general-purpose-humanoid-robot-guide.png": {
+    "path": "/images/insights/social/figure-03-general-purpose-humanoid-robot-guide-21bd9865a5bb.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 110852
+  },
+  "/article-images/flock-safety-public-safety-platform-deep-dive.png": {
+    "path": "/images/insights/social/flock-safety-public-safety-platform-deep-dive-b602b5b4b672.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 120855
+  },
+  "/article-images/fort-robotics-trust-layer-physical-ai-safety-guide.png": {
+    "path": "/images/insights/social/fort-robotics-trust-layer-physical-ai-safety-guide-82adc2a83252.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 160861
+  },
+  "/article-images/foxglove-robotics-data-platform-deep-dive.png": {
+    "path": "/images/insights/social/foxglove-robotics-data-platform-deep-dive-df6ef92aa5ad.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 152827
+  },
+  "/article-images/gecko-robotics-asset-health-physical-ai-guide.png": {
+    "path": "/images/insights/social/gecko-robotics-asset-health-physical-ai-guide-ee4855668715.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 170445
+  },
+  "/article-images/google-coral-edge-tpu-guide.png": {
+    "path": "/images/insights/social/google-coral-edge-tpu-guide-f264165260ce.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 107328
+  },
+  "/article-images/hailo-edge-ai-acceleration-physical-ai-guide.png": {
+    "path": "/images/insights/social/hailo-edge-ai-acceleration-physical-ai-guide-87e6a74ff05d.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 141430
+  },
+  "/article-images/how-modern-manufacturing-works-physical-ai-guide.png": {
+    "path": "/images/insights/social/how-modern-manufacturing-works-physical-ai-guide-b7498260e8a7.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 225174
+  },
+  "/article-images/hugging-face-open-ai-platform-robotics-deep-dive.png": {
+    "path": "/images/insights/social/hugging-face-open-ai-platform-robotics-deep-dive-176bf0cdbc83.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 138736
+  },
+  "/article-images/humanoid-anatomy/hero-exploded-humanoid.png": {
+    "path": "/images/insights/social/hero-exploded-humanoid-e139bf5bb4f7.jpg",
+    "width": 1200,
+    "height": 751,
+    "bytes": 97223
+  },
+  "/article-images/industrial-automation-factory-nervous-system-cover.png": {
+    "path": "/images/insights/social/industrial-automation-factory-nervous-system-cover-a18acf558856.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 154853
+  },
+  "/article-images/intel-openvino-movidius-guide.png": {
+    "path": "/images/insights/social/intel-openvino-movidius-guide-05888d29e7ed.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 177424
+  },
+  "/article-images/intuitive-da-vinci-5-surgical-robotics-platform-guide.png": {
+    "path": "/images/insights/social/intuitive-da-vinci-5-surgical-robotics-platform-guide-bf9774d4e833.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 110004
+  },
+  "/article-images/local-ai-server-guide.png": {
+    "path": "/images/insights/social/local-ai-server-guide-1ba3e0cfbcd7.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 137432
+  },
+  "/article-images/luxonis-oak-d-guide.png": {
+    "path": "/images/insights/social/luxonis-oak-d-guide-ec8f8d5e177b.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 203621
+  },
+  "/article-images/luxonis-oak-spatial-ai-cameras-physical-ai-guide.png": {
+    "path": "/images/insights/social/luxonis-oak-spatial-ai-cameras-physical-ai-guide-9459c5b3671c.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 173075
+  },
+  "/article-images/manufacturing-machines-guide-cover.png": {
+    "path": "/images/insights/social/manufacturing-machines-guide-cover-e57bf89fac74.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 124169
+  },
+  "/article-images/manufacturing-plant-design-cover.png": {
+    "path": "/images/insights/social/manufacturing-plant-design-cover-0145cb690cd2.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 186636
+  },
+  "/article-images/manufacturing-plant-first-production-cover.png": {
+    "path": "/images/insights/social/manufacturing-plant-first-production-cover-cbdc515788c7.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 158542
+  },
+  "/article-images/mexico-automation/mexico-adoption-cover.png": {
+    "path": "/images/insights/social/mexico-adoption-cover-99919f89a391.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 99888
+  },
+  "/article-images/micro1-company-data-revenue-cover.png": {
+    "path": "/images/insights/social/micro1-company-data-revenue-cover-1180acd939ef.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 192079
+  },
+  "/article-images/nvidia-jetson-agx-orin-guide.png": {
+    "path": "/images/insights/social/nvidia-jetson-agx-orin-guide-c0368cf10c87.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 164350
+  },
+  "/article-images/nvidia-physical-ai-infrastructure-guide.png": {
+    "path": "/images/insights/social/nvidia-physical-ai-infrastructure-guide-8d9c660b5179.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 211546
+  },
+  "/article-images/openspace-construction-reality-capture-physical-ai-guide.png": {
+    "path": "/images/insights/social/openspace-construction-reality-capture-physical-ai-guide-5b36e0bcc731.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 204113
+  },
+  "/article-images/ouster-lidar-spatial-perception-physical-ai-guide.png": {
+    "path": "/images/insights/social/ouster-lidar-spatial-perception-physical-ai-guide-534cf398e110.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 235918
+  },
+  "/article-images/palladyne-ai-edge-physical-ai-deep-dive.png": {
+    "path": "/images/insights/social/palladyne-ai-edge-physical-ai-deep-dive-db82d22f8b28.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 158757
+  },
+  "/article-images/persona-ai-industrial-humanoid-welding-deep-dive.png": {
+    "path": "/images/insights/social/persona-ai-industrial-humanoid-welding-deep-dive-c8824d07b36d.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 132516
+  },
+  "/article-images/physical-ai-infrastructure-companies.png": {
+    "path": "/images/insights/social/physical-ai-infrastructure-companies-3cc2bedc45e6.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 175918
+  },
+  "/article-images/physical-ai-manufacturing-adaptive-factory-cover.png": {
+    "path": "/images/insights/social/physical-ai-manufacturing-adaptive-factory-cover-bffcb94300b7.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 158839
+  },
+  "/article-images/physical-intelligence-generalist-robot-policy-guide.png": {
+    "path": "/images/insights/social/physical-intelligence-generalist-robot-policy-guide-32075e5a72eb.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 145634
+  },
+  "/article-images/plus-one-robotics-supervised-autonomy-deep-dive.png": {
+    "path": "/images/insights/social/plus-one-robotics-supervised-autonomy-deep-dive-27b284af5848.jpg",
+    "width": 1200,
+    "height": 751,
+    "bytes": 154401
+  },
+  "/article-images/product-manufacturing-rover-cover.png": {
+    "path": "/images/insights/social/product-manufacturing-rover-cover-d493034f5d8b.jpg",
+    "width": 1200,
+    "height": 500,
+    "bytes": 108810
+  },
+  "/article-images/prometheus-industrial-ai-engineering-guide.png": {
+    "path": "/images/insights/social/prometheus-industrial-ai-engineering-guide-bd58a931807e.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 177556
+  },
+  "/article-images/prophesee-event-based-vision-physical-ai-guide.png": {
+    "path": "/images/insights/social/prophesee-event-based-vision-physical-ai-guide-4b9d27af7473.jpg",
+    "width": 1200,
+    "height": 1200,
+    "bytes": 244508
+  },
+  "/article-images/qualcomm-robotics-rb5-guide.png": {
+    "path": "/images/insights/social/qualcomm-robotics-rb5-guide-1eadeb0a4384.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 121346
+  },
+  "/article-images/raspberry-pi-5-hailo-8-guide.jpg": {
+    "path": "/images/insights/social/raspberry-pi-5-hailo-8-guide-d7dad23eea52.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 129401
+  },
+  "/article-images/roboflow-computer-vision-platform-physical-ai-guide.png": {
+    "path": "/images/insights/social/roboflow-computer-vision-platform-physical-ai-guide-723aefd3ee2c.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 185612
+  },
+  "/article-images/robotics-data-collection-cover.png": {
+    "path": "/images/insights/social/robotics-data-collection-cover-f9f1c5997145.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 160531
+  },
+  "/article-images/skild-ai-general-purpose-robot-brain-guide.png": {
+    "path": "/images/insights/social/skild-ai-general-purpose-robot-brain-guide-cea49f8dadf7.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 163398
+  },
+  "/article-images/stereolabs-zed-spatial-perception-robotics-guide.png": {
+    "path": "/images/insights/social/stereolabs-zed-spatial-perception-robotics-guide-43947f1be731.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 185260
+  },
+  "/article-images/tesla-ai5-hw5-guide.png": {
+    "path": "/images/insights/social/tesla-ai5-hw5-guide-63c4bd19d512.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 150492
+  },
+  "/article-images/tesla-optimus-vertically-integrated-humanoid-robot-guide.png": {
+    "path": "/images/insights/social/tesla-optimus-vertically-integrated-humanoid-robot-guide-6f096b911368.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 97226
+  },
+  "/article-images/top-10-robots-edge-ai-automation.png": {
+    "path": "/images/insights/social/top-10-robots-edge-ai-automation-46172a7dc704.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 173665
+  },
+  "/article-images/top-15-physical-ai-venture-capital-firms-funds.png": {
+    "path": "/images/insights/social/top-15-physical-ai-venture-capital-firms-funds-aae8d1f7b5de.jpg",
+    "width": 1200,
+    "height": 751,
+    "bytes": 175434
+  },
+  "/article-images/unitree-g1-affordable-humanoid-robot-research-platform-guide.png": {
+    "path": "/images/insights/social/unitree-g1-affordable-humanoid-robot-research-platform-guide-e196714f5d6a.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 119346
+  },
+  "/article-images/universal-robots-ur-series-cobot-automation-guide.png": {
+    "path": "/images/insights/social/universal-robots-ur-series-cobot-automation-guide-51d63765713f.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 107423
+  },
+  "/article-images/viam-robotics-software-platform-physical-ai-guide.png": {
+    "path": "/images/insights/social/viam-robotics-software-platform-physical-ai-guide-52e457eeba16.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 137034
+  },
+  "/article-images/what-are-digital-twins-guide.png": {
+    "path": "/images/insights/social/what-are-digital-twins-guide-a5f96ab63426.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 263535
+  },
+  "/article-images/what-are-robot-actuators-cover.png": {
+    "path": "/images/insights/social/what-are-robot-actuators-cover-187a9c2ee8ca.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 84339
+  },
+  "/article-images/what-is-a-manufacturing-plant-factory-flow-v2.png": {
+    "path": "/images/insights/social/what-is-a-manufacturing-plant-factory-flow-v2-9514cbc7b8b1.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 130625
+  },
+  "/article-images/what-is-physical-ai-guide.png": {
+    "path": "/images/insights/social/what-is-physical-ai-guide-b94044fa6ca1.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 126118
+  },
+  "/article-images/who-builds-a-factory-ecosystem-cover.png": {
+    "path": "/images/insights/social/who-builds-a-factory-ecosystem-cover-473f0cd57e7d.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 174018
+  },
+  "/images/insights/local-ai-enterprise-guide-v2.png": {
+    "path": "/images/insights/social/local-ai-enterprise-guide-v2-0c2ec168ba18.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 157307
+  },
+  "/images/insights/local-ai-hobbyist-budget-guide-v2.png": {
+    "path": "/images/insights/social/local-ai-hobbyist-budget-guide-v2-6aae40b8d6c1.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 167985
+  },
+  "/images/insights/local-ai-small-business-guide-v2.png": {
+    "path": "/images/insights/social/local-ai-small-business-guide-v2-34354cc85490.jpg",
+    "width": 1200,
+    "height": 800,
+    "bytes": 132784
+  }
+}
