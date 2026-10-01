@@ -32,7 +32,7 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
-    "slug": "nvidia-vss-3-3-industrial-video-agents",
+    slug: "nvidia-vss-3-3-industrial-video-agents",
     "title": "NVIDIA targets the cost of watching factory video with VSS 3.3",
     "summary": "NVIDIA’s VSS 3.3 announcement combines easier video agent assembly with adaptive sampling that reduces repeated model processing. Its reported efficiency gains put industrial video economics under a practical test.",
     "category": "Infrastructure News",
