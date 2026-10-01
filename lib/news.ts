@@ -32,6 +32,111 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    "slug": "nvidia-vss-3-3-industrial-video-agents",
+    "title": "NVIDIA targets the cost of watching factory video with VSS 3.3",
+    "summary": "NVIDIA’s VSS 3.3 announcement combines easier video agent assembly with adaptive sampling that reduces repeated model processing. Its reported efficiency gains put industrial video economics under a practical test.",
+    "category": "Infrastructure News",
+    "publishedDate": "2026-10-01",
+    "publishedAt": "2026-10-01T13:12:52.105Z",
+    "publishedLabel": "October 1, 2026",
+    "author": {
+      "name": "Rodolfo Garcia Calderoni, CFA",
+      "href": "/about"
+    },
+    "image": "/images/news/nvidia-vss-3-3-industrial-video-agents.png",
+    "imageAlt": "Original cyanotype collage of overlapping bottling line video frames, with one coral bottle and spill standing out against repeated blue silhouettes.",
+    "imageCaption": "Original Black Scarab editorial illustration. A conceptual interpretation of selective attention in industrial video, not an NVIDIA product image, software interface or technical design.",
+    "readingTime": "6 min read",
+    "keyPoints": [
+      "VSS 3.3 describes a composition skill that joins alerting, search and summarization into one deployment.",
+      "Adaptive video sampling reduces the visual information sent for model processing when parts of the scene remain unchanged.",
+      "NVIDIA’s efficiency results are benchmarks on a specified system. Its bottling line demonstration uses a synthetic spill."
+    ],
+    "sections": [
+      {
+        "heading": "What NVIDIA outlined",
+        "paragraphs": [
+          "NVIDIA has outlined two updates in its VSS Blueprint 3.3 aimed at making visual AI agents easier to assemble and less expensive to run.",
+          "The September 29 technical announcement introduces a Build Vision Agent skill for combining video workflows and adaptive sampling that reduces repeated processing of unchanged parts of a scene. In NVIDIA’s reported tests, the sampling approach increased concurrent video streams from 13 to 19 on the same GPU and used 80% fewer input tokens to summarize a 60 minute video."
+        ]
+      },
+      {
+        "heading": "The camera is only the beginning",
+        "paragraphs": [
+          "A factory video agent needs more than a model capable of describing a picture. It must ingest footage, identify useful events, preserve the relevant clips and make the results available to people who can act on them.",
+          "Those functions can involve separate software services. A searchable incident archive needs storage and indexing. An alerting system needs rules and a delivery path. A shift report needs a way to gather the right events and present them coherently.",
+          "VSS, short for Video Search and Summarization, is NVIDIA’s reference stack for bringing those functions together. It combines models that interpret video with retrieval, tools and the supporting services around them.",
+          "The 3.3 announcement focuses on two costs that arise as the system grows: the engineering work needed to connect those pieces and the computing work needed to keep interpreting footage.",
+          "That is a practical emphasis. A convincing model response from a short clip is useful, but a maintainable system has to process the next clip and the next camera without accumulating avoidable complexity."
+        ]
+      },
+      {
+        "heading": "Turning a request into a deployment plan",
+        "paragraphs": [
+          "The new Build Vision Agent skill translates an application request into a plan for the workflows and services it needs.",
+          "NVIDIA describes four starting profiles: clip questions and captions, alerts, long video summaries and search. The skill starts with a tested profile and adds the capabilities required by the requested application.",
+          "It also tries to consolidate shared infrastructure. If search and alerting need the same messaging or storage service, the composition process can reuse one instance. The commercial rationale is to avoid paying for duplicated services and maintaining separate versions of the same operating function.",
+          "NVIDIA illustrates the approach with an orange juice bottling line. The requested agent watches cameras at the filler and capper, identifies overflows or spills, checks the alerts with a vision language model, makes incident clips searchable and prepares a shift report.",
+          "In the company’s demonstration, a build reached a running preview in less than 30 minutes on a host with two RTX PRO 6000 Blackwell GPUs. The spill in the example was generated synthetically.",
+          "That makes the example a demonstration of application assembly and workflow coordination. A factory evaluation would still need footage from the actual line and a definition of which events deserve an alert."
+        ]
+      },
+      {
+        "heading": "Spending less compute on an unchanged scene",
+        "paragraphs": [
+          "The second update, adaptive Efficient Video Sampling, addresses a simple inefficiency: much of a camera image may look the same from one moment to the next.",
+          "A fixed camera can keep seeing the same floor, guards and equipment while only a small part of the view changes. Sending every visual detail through an expensive model can repeatedly spend compute on that stable background.",
+          "NVIDIA’s adaptive approach compares patches of the image with the previous frame and removes redundant visual tokens before language model processing. It also organizes processing around activity in the scene.",
+          "A visual token is part of the representation the model receives, rather than a complete camera frame. Reducing those tokens can lower the work required to interpret footage even while the video pipeline continues to operate.",
+          "This is different from assuming that fewer frames are always enough. The method needs to retain the information that matters for the task, including small changes that may be operationally important.",
+          "The company says the feature is optional and runs inside its video model service. Its documentation directs teams to assess accuracy, throughput and latency on representative footage before choosing settings."
+        ]
+      },
+      {
+        "heading": "What the reported numbers mean",
+        "paragraphs": [
+          "NVIDIA reports its runtime results on an RTX PRO 6000 Blackwell running Cosmos 3 Super with FP8 numerical precision.",
+          "Concurrent streams increased from 13 to 19. The company also reports that alert contextualization fell from 1,021 milliseconds to 844 milliseconds, a reduction of about 17%. A 60 minute video summary used 80% fewer input tokens and took about half the time.",
+          "Those are distinct measurements. More simultaneous streams indicates increased capacity in the tested workload. Faster contextualization concerns one stage of alert handling. Fewer tokens does not directly establish an 80% reduction in a factory’s total bill.",
+          "Storage, camera connectivity, other models, software operations and human review can remain substantial parts of that bill. The useful commercial question is how the changes affect the complete application under its expected workload.",
+          "NVIDIA also says results vary with scene motion, chunk length and the similarity threshold used to remove redundant information. A busy loading dock and a mostly stationary machine view could produce different savings."
+        ]
+      },
+      {
+        "heading": "Accuracy is part of the cost calculation",
+        "paragraphs": [
+          "A hypothetical spill monitoring application shows the tradeoff. The plant wants prompt, useful alerts, but excessive false alarms can consume operator time and weaken trust in the system.",
+          "Sampling settings that improve throughput may also change what the model receives. Evaluation should test both the incidents the application is meant to detect and ordinary activity that should leave it quiet.",
+          "Small movements deserve particular attention. A subtle leak, a slowly developing blockage or a worker partly obscured by equipment may matter even when most of the image is unchanged. The correct threshold depends on the task and the footage.",
+          "The composition skill introduces another operational consideration. A deployment that starts successfully needs owners for configuration, model changes, monitoring and incident handling. Automated assembly can reduce engineering effort while leaving those responsibilities with the team running the system.",
+          "Black Scarab’s assessment is that the most useful outcome would be lower cost per correctly handled event, with a system that remains understandable and maintainable as new workflows are added."
+        ]
+      },
+      {
+        "heading": "A software milestone with a practical next test",
+        "paragraphs": [
+          "The news is NVIDIA’s dated technical description of the 3.3 functionality. The announcement directs developers to the repository branch containing the new skills. Matching the code, containers and documentation is part of a credible evaluation.",
+          "The next evidence to watch is a complete application measured on ordinary operating footage: useful alerts, manageable false positives, stable throughput and the work required to maintain it.",
+          "For industrial video software, that is where the opportunity becomes concrete. Easier assembly can bring an application into reach, and more efficient processing can help it scale across cameras. The commercial result depends on preserving the usefulness of the events and reports that emerge."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Original technical announcement",
+        "url": "https://developer.nvidia.com/blog/lower-the-cost-of-building-and-running-visual-ai-agents-with-nvidia-vss-blueprint-3-3/"
+      },
+      {
+        "label": "Developer forum announcement",
+        "url": "https://forums.developer.nvidia.com/t/lower-the-cost-of-building-and-running-visual-ai-agents-with-nvidia-vss-blueprint-3-3/384704"
+      },
+      {
+        "label": "Repository releases",
+        "url": "https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization/releases"
+      }
+    ]
+  },
+  {
     slug: "dyna-taku-laundry-workflow",
     title: "Dyna’s Taku robot takes on the laundry room, beyond folding a towel",
     summary: "Dyna’s September 29 release combines a wheeled robot, learned physical skills and workflow reasoning in an hour-long laundry demonstration. The next test is repeated performance across real customer shifts.",
