@@ -32,6 +32,123 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "tangent-robotics-pre-seed-fine-motor-skills",
+    "title": "Tangent raises 4.5 million dollars for fine manipulation in factories",
+    "summary": "Tangent Robotics has raised $4.5 million to develop robot hands, touch sensing and learned motor skills for manufacturing. The commercial test is repeatable performance in delicate assembly work.",
+    "category": "Capital News",
+    "publishedDate": "2026-10-01",
+    "publishedAt": "2026-10-01T23:31:20.765Z",
+    "publishedLabel": "October 1, 2026",
+    "author": {
+      "name": "Rodolfo Garcia Calderoni, CFA",
+      "href": "/about"
+    },
+    "image": "/images/news/tangent-robotics-pre-seed-fine-motor-skills.png",
+    "imageAlt": "Original pastel and gouache illustration of two small assembly components near alignment, with a plum colored contact pad against brushed silver forms.",
+    "imageCaption": "Original Black Scarab editorial illustration. A conceptual interpretation of touch and precision assembly, not Tangent hardware, a product photograph or technical design.",
+    "readingTime": "6 min read",
+    "keyPoints": [
+      "Tangent announced $4.5 million in its initial financing round, led by Fly Ventures and Toyota Ventures.",
+      "Its approach combines purpose built robot hands, optical touch sensing and motor learning.",
+      "The target is delicate industrial manipulation, with deployment and faster skill learning still central development goals."
+    ],
+    "sections": [
+      {
+        "heading": "What happened",
+        "paragraphs": [
+          "Tangent Robotics has raised $4.5 million in financing to develop robot hands, touch sensing and learned motor skills for demanding manufacturing tasks.",
+          "Fly Ventures and Toyota Ventures led the round, with Logos Fund and Sparked Ventures participating, according to the company’s September 30 announcement. The New York startup intends to use the capital to develop and deploy manipulation capabilities for jobs such as assembling parts, fitting connectors and seating gaskets."
+        ]
+      },
+      {
+        "heading": "The difficult part begins at contact",
+        "paragraphs": [
+          "A robot can identify a connector, reach toward it and still fail to plug it in. The last part of the task depends on small adjustments, contact forces and the ability to recognize when the parts are aligned.",
+          "People perform many of those adjustments without consciously describing each movement. Tangent calls this the fine motor skill layer, positioned between higher level AI models and the controllers that drive individual motors.",
+          "In plain language, the higher level system can decide what should happen. The hand still needs a dependable way to make it happen when real parts touch, slip or resist.",
+          "That distinction helps explain the company’s manufacturing focus. A successful pick is only one step in a workflow that may also require orienting a component, holding it steadily and making a precise connection. Each extra contact can introduce another way for the process to fail.",
+          "Tangent’s financing targets that gap. It is a bet that useful dexterity requires the hand, its sensors and its training method to be developed together."
+        ]
+      },
+      {
+        "heading": "Hardware shaped around the job",
+        "paragraphs": [
+          "Tangent was spun out of Columbia Engineering’s Robotic Manipulation and Mobility Lab. Its founding team includes Pedro Piacenza, Matei Ciocarlie and Ioannis Kymissis.",
+          "The company’s approach does not require a mechanical copy of the human hand. Its TR02 design, described in June, has three fingers and 10 degrees of freedom, meaning 10 independently movable joints or motions in its mechanism.",
+          "Three fingers can provide different functions. Two can perform a precise grasp while the third stabilizes the object. The palm can help support a larger item as the hand changes from holding it at the fingertips to an enveloping grip.",
+          "Tangent describes those capabilities as reasons to add hardware complexity selectively. More joints create more possibilities, but also more parts to control, maintain and protect.",
+          "The TR02 documentation identifies a Popcorn touch sensor in each fingertip and a camera offset from the palm. The hand is also designed to follow an operator’s fingertip movements for collecting demonstrations. These are existing hardware details, rather than a new hand launch announced with the financing."
+        ]
+      },
+      {
+        "heading": "Giving the hand a sense of touch",
+        "paragraphs": [
+          "Tangent uses light based sensing to measure contact at the fingers. Its current site describes a learning system that combines visual and tactile data with human demonstrations and practice on the robot.",
+          "Touch matters because a camera may not reveal everything happening inside a grip. A part can begin to slip, a connector can meet resistance, or a surface can deform after contact.",
+          "A useful controller needs to turn those signals into adjustments. Detecting resistance is valuable only if the hand responds in a way that advances the task without damaging the component.",
+          "The company’s ambition is to shorten skill learning to days and eventually hours. That is a development target. The investment announcement does not turn the target into an established training time for every industrial task.",
+          "For a manufacturer, the relevant measure would be the work needed to teach a particular operation and keep it working as parts and conditions change. A quick initial demonstration can still require substantial engineering before it becomes a repeatable production process."
+        ]
+      },
+      {
+        "heading": "Why this is a commercial bottleneck",
+        "paragraphs": [
+          "A hypothetical connector assembly job shows the attraction. The station must pick the correct connector, orient it, line it up with a socket and press it into place. The factory cares about the completed connection, including whether it was seated correctly.",
+          "If the robot can perform those steps reliably, the value extends beyond moving an object. It can finish a task that otherwise remains a manual handoff between automated stages.",
+          "The economic case also depends on the surrounding system. A dexterous hand needs an arm or other positioning mechanism, a supply of parts, a way to verify the result and a recovery plan. Improving the fingers addresses one important component of that cell.",
+          "This is where Tangent’s focus could matter. A repeatable manipulation capability can potentially be reused across tasks, while the integration around each application remains specific.",
+          "Black Scarab’s assessment is that the strongest early opportunity is a well defined operation with a measurable result. Connector insertion or gasket placement provides a clearer test than a broad claim that a hand can handle arbitrary objects.",
+          "The investors’ statements support that thesis. Toyota Ventures says its investment is aimed at the difficult contact work in industrial manufacturing and confirms that it co led the $4.5 million financing. That is an investor’s commercial judgment, rather than an independent production benchmark."
+        ]
+      },
+      {
+        "heading": "A demonstration must survive repetition",
+        "paragraphs": [
+          "Dexterity footage is compelling because the movements are familiar. A hand can rotate an object or hold a container while manipulating its lid, making the engineering look deceptively simple.",
+          "Production asks a different question: whether the system can repeat the useful operation across the expected range of parts and conditions.",
+          "A meaningful trial should therefore include unsuccessful attempts, recovery behavior and the effort required from an operator. It should measure the rate of acceptable completed work, including part damage and rework, alongside the time per task.",
+          "The same applies to the sensors. Their usefulness depends on stable performance through repeated contact and the maintenance demands of the specific environment. Fine manipulation can lose its commercial advantage if the sensing surface requires frequent attention.",
+          "Tangent’s September announcement identifies the intended applications and the development direction. Specialist reporting describes the financing as support for an attempt to turn these capabilities into deployable factory tools."
+        ]
+      },
+      {
+        "heading": "The next proof is a complete operation",
+        "paragraphs": [
+          "The financing gives Tangent resources to combine its hand designs, sensors and learning methods into a more mature manipulation system.",
+          "The next signals to watch are concrete task results, faster preparation for a new operation and sustained performance when the system is used repeatedly. Evidence from a manufacturing environment would help connect the research to the commercial proposition.",
+          "For investors, the attraction is a capability that could sit inside many robotic systems. For manufacturers, the attraction is narrower and more immediate: a machine that completes a stubborn assembly step with acceptable speed, quality and intervention needs.",
+          "Tangent has chosen a problem that remains difficult even when a robot knows what to do. The value will emerge when its hands can finish the job dependably."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Original announcement",
+        "url": "https://www.tangentrobotics.ai/pre-seed-funding-round-led-by-fly-ventures-and-toyota-ventures/"
+      },
+      {
+        "label": "Issuer release",
+        "url": "https://www.businesswire.com/news/home/20260930237631/en/Tangent-Robotics-Raises-4.5M-in-Pre-seed-Funding-to-Advance-Fine-Motor-Skills-for-Robot-Dexterity"
+      },
+      {
+        "label": "TR02 documentation",
+        "url": "https://www.tangentrobotics.ai/the-tr02-hand/"
+      },
+      {
+        "label": "Company technology",
+        "url": "https://www.tangentrobotics.ai/"
+      },
+      {
+        "label": "Toyota Ventures announcement",
+        "url": "https://medium.com/toyota-ventures/automating-dexterity-our-investment-in-tangent-robotics-a839d1ff3996"
+      },
+      {
+        "label": "Humanoids Daily",
+        "url": "https://www.humanoidsdaily.com/news/tangent-robotics-4-5-million-pre-seed-dexterity"
+      }
+    ]
+  },
+  {
     slug: "aleph-autonomous-surgery-preseed",
     "title": "a16z leads $7.5 million round for Aleph’s autonomous surgery program",
     "summary": "Aleph’s $7.5 million financing backs work on autonomous surgical robots. Its research program tests whether learned surgical skills can become dependable clinical work that expands access to care.",
