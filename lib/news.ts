@@ -32,6 +32,105 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+    slug: "aleph-autonomous-surgery-preseed",
+    "title": "a16z leads $7.5 million round for Aleph’s autonomous surgery program",
+    "summary": "Aleph’s $7.5 million financing backs work on autonomous surgical robots. Its research program tests whether learned surgical skills can become dependable clinical work that expands access to care.",
+    "category": "Capital News",
+    "publishedDate": "2026-10-01",
+    "publishedAt": "2026-10-01T19:14:02Z",
+    "publishedLabel": "October 1, 2026",
+    "author": {
+      "name": "Rodolfo Garcia Calderoni, CFA",
+      "href": "/about"
+    },
+    "image": "/images/news/aleph-autonomous-surgery-preseed.png",
+    "imageAlt": "Original ink engraving of vermilion thread forming loops and an unfinished seam across deep teal fabric, with a needle against textured pale paper.",
+    "imageCaption": "Original Black Scarab editorial illustration. A conceptual interpretation of learning a precise manual skill, not Aleph hardware, medical anatomy or a clinical procedure.",
+    "readingTime": "6 min read",
+    "keyPoints": [
+      "Aleph announced $7.5 million in pre seed financing on September 30, led by a16z.",
+      "Its development program combines learned models with hardware designed for autonomous control.",
+      "Mark 0 and the vascular anastomosis demonstration belong to a March 9 research preview. The fresh news is the financing."
+    ],
+    "sections": [
+      {
+        "heading": "What happened",
+        "paragraphs": [
+          "Aleph has announced a $7.5 million financing round led by Andreessen Horowitz to support its work on autonomous surgical robots.",
+          "The September 30 announcement describes the financing as pre seed and names BoxGroup, Reveille VC, Constellation, FDVC, Valkyrie Ventures, Discipulus Ventures and Maniac Ventures as participants. Aleph says its first version is learning surgical tasks from demonstrations and improving through experience.",
+          "The proposition is ambitious: turn surgical expertise into capabilities that a robotic system can learn and reuse. The financing gives that development effort fresh backing. The business question is whether those capabilities can eventually become dependable clinical work that expands access to care."
+        ]
+      },
+      {
+        "heading": "What Aleph is building",
+        "paragraphs": [
+          "The company uses the name Aleph on its official website, alephsurgical.com. Andreessen Horowitz lists the same business as Aleph Surgical and links to that domain. Its Bay Area team is recruiting engineers alongside surgical expertise.",
+          "Aleph is pursuing a different division of work between person and machine from the familiar model of robotic assistance. The FDA describes robotically assisted surgical devices as systems in which a surgeon directly controls instruments through computer software. Aleph’s goal is for learned systems to perform surgical work autonomously.",
+          "That changes what the technology has to accomplish. Moving an instrument accurately is one requirement. Choosing the next action, recognizing when the situation has changed and deciding when to hand control back are separate requirements. Black Scarab’s assessment is that the commercial value depends on how well these abilities work together within a defined task."
+        ]
+      },
+      {
+        "heading": "The research behind the round",
+        "paragraphs": [
+          "Aleph’s March 9 preview describes embodied foundation models, broad pretraining and hierarchical reasoning that breaks larger goals into smaller actions. It calls its custom robotic embodiment Mark 0 and says the system coordinates reasoning, sensing and movement at different frequencies.",
+          "The preview presents vascular anastomosis, the joining of blood vessels, as a demonstration task. Aleph frames that work as research toward operating beyond the laboratory. These are the company’s descriptions of its approach and demonstration.",
+          "The practical attraction of learning from demonstrations is reuse. A developer would like each example to teach something that remains useful when the next case differs. For surgical robotics, that would mean preserving a useful skill while responding to changes in the task, rather than replaying an identical sequence of movements.",
+          "Black Scarab’s interpretation is that coordinating the different parts of the system is as consequential as training the model. A plan can be sensible while its execution becomes inappropriate. Sensing has to inform the next movement quickly enough for the machine to respond, and the system needs a reliable way to recognize when its plan should stop.",
+          "The September funding post refers to “v1.” The March preview names Mark 0. Those descriptions provide a development timeline without establishing that the two labels identify the same hardware configuration."
+        ]
+      },
+      {
+        "heading": "Why the proposition attracts capital",
+        "paragraphs": [
+          "Aleph’s thesis centers on scarce surgical expertise. It argues that a system able to learn and transfer skills could make that expertise available more widely. That is the intended benefit; demonstrating a task is an early step toward it.",
+          "For an investor, the potential appeal is a capability that can improve and be deployed repeatedly. For a hospital, the useful outcome would be more specific: a system that completes an appropriate part of care reliably, with a workable supervision model and a manageable demand on the rest of the team.",
+          "Those perspectives meet at utilization. A capable machine creates value when it can be used for enough suitable work and when preparing, supervising and maintaining it does not consume the benefit. The initial scope of the product would therefore matter as much as the breadth of its eventual ambition.",
+          "A hypothetical example makes the distinction concrete. Suppose a future system completes one defined surgical step while a clinician supervises. That could improve consistency or reduce a particular workload. Whether it releases clinical capacity would depend on what the clinician can safely do during that time and how much preparation and intervention the system requires.",
+          "The same robot could be useful without replacing a surgeon or running an entire operation. A carefully chosen task could establish a measurable benefit and provide a foundation for later expansion. This is a possible commercial path, not an announced Aleph deployment plan."
+        ]
+      },
+      {
+        "heading": "The evidence that would change the assessment",
+        "paragraphs": [
+          "A compelling demonstration raises a useful question: how often does the result hold when the conditions vary? Repeated evaluation would need to show both successful completion and the circumstances in which the system requires help.",
+          "For a prospective clinical user, the boundary of autonomy matters. The relevant evidence would identify what the machine is allowed to do, what a person must supervise and how control transfers when something departs from the expected course. A broad autonomy label cannot answer those operational questions by itself.",
+          "Clinical use also has an evidence and training burden. The FDA explains that it evaluates the safety and effectiveness of surgical devices for their intended uses, while hospitals and manufacturers have responsibilities for training. Its guidance provides context for assessing the sector, rather than a regulatory determination about Aleph.",
+          "The appropriate reading of this round is funding for development. The research preview and the fundraising announcement support an account of what Aleph is trying to build and what it says its system is learning. Clinical readiness would require evidence tied to a particular configuration, use and operating setting."
+        ]
+      },
+      {
+        "heading": "What to watch next",
+        "paragraphs": [
+          "The next informative milestone would pair a clearly defined task with repeatable results, intervention reporting and an account of the conditions tested. That would help readers distinguish progress in a learned capability from progress toward a usable clinical product.",
+          "A defined clinical development pathway would make the commercial proposition more concrete. So would evidence showing how the system fits into preparation, supervision and recovery, because those activities determine whether automation releases capacity or redistributes work.",
+          "Aleph now has new financial backing for that effort. The opportunity is to turn learned surgical skills into dependable work. The evidence to watch is how that ambition narrows into tasks that can be evaluated, supervised and eventually used in practice."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aleph fundraising announcement, September 30, 2026. Original source for the amount, round and named investors.",
+        "url": "https://alephsurgical.com/blogs/pre-seed-funding"
+      },
+      {
+        "label": "Aleph research preview, March 9, 2026. Background on Mark 0, the model approach and the company’s demonstration.",
+        "url": "https://alephsurgical.com/blogs/research-preview"
+      },
+      {
+        "label": "Aleph careers, undated, checked October 1, 2026. Company description, Bay Area recruiting and roles.",
+        "url": "https://alephsurgical.com/jobs"
+      },
+      {
+        "label": "Andreessen Horowitz company profile, undated, checked October 1, 2026. Investor hosted identity and research context.",
+        "url": "https://jobs.a16z.com/company/aleph"
+      },
+      {
+        "label": "FDA computer assisted surgical systems overview, checked October 1, 2026. General sector context, not an Aleph clearance record.",
+        "url": "https://www.fda.gov/medical-devices/surgery-devices/computer-assisted-surgical-systems"
+      }
+    ]
+  },
+  {
     slug: "nvidia-vss-3-3-industrial-video-agents",
     "title": "NVIDIA targets the cost of watching factory video with VSS 3.3",
     "summary": "NVIDIA’s VSS 3.3 announcement combines easier video agent assembly with adaptive sampling that reduces repeated model processing. Its reported efficiency gains put industrial video economics under a practical test.",
