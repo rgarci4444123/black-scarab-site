@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
-import { authorPortraitSrc } from "@/lib/site-author";
+import { authorLinkedInUrl, authorPortraitSrc } from "@/lib/site-author";
 
 const baseUrl = "https://www.blackscarab.ai";
 
@@ -53,6 +53,8 @@ export default function AboutPage() {
         "@type": "Person",
         name: "Rodolfo Garcia Calderoni",
         honorificSuffix: "CFA",
+        url: `${baseUrl}/about`,
+        sameAs: [authorLinkedInUrl],
         jobTitle: "Founder and Editor",
         knowsLanguage: ["English", "Spanish"],
         alumniOf: {

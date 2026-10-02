@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Fragment } from "react";
+import AuthorLinkedIn from "@/components/author-linkedin";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
 import {
@@ -10,7 +11,7 @@ import {
   newsUpdates,
   type NewsUpdate,
 } from "@/lib/news";
-import { authorPortraitSrc } from "@/lib/site-author";
+import { authorLinkedInUrl, authorPortraitSrc } from "@/lib/site-author";
 import newsSocialImages from "@/lib/news-social-images.json";
 
 type Props = {
@@ -119,6 +120,7 @@ export default async function NewsArticlePage({ params }: Props) {
       name: authorName,
       honorificSuffix: hasCfaCredential ? "CFA" : undefined,
       url: `${baseUrl}${update.author.href}`,
+      sameAs: [authorLinkedInUrl],
     },
     publisher: {
       "@type": "Organization",
@@ -157,10 +159,13 @@ export default async function NewsArticlePage({ params }: Props) {
               <p className="mt-7 max-w-3xl text-lg leading-8 text-[#58636e] sm:text-xl">
                 {update.summary}
               </p>
-              <Link href={update.author.href} className="mt-8 inline-flex items-center gap-3 text-sm font-medium text-[#111827] transition hover:text-[#526147]">
-                <Image src={authorPortraitSrc} alt="" width={40} height={40} sizes="40px" className="h-10 w-10 rounded-full object-cover ring-1 ring-[#ded9cf]" />
-                <span>By {update.author.name}</span>
-              </Link>
+              <div className="mt-8 inline-flex max-w-full items-center gap-1">
+                <Link href={update.author.href} className="inline-flex items-center gap-3 text-sm font-medium text-[#111827] transition hover:text-[#526147]">
+                  <Image src={authorPortraitSrc} alt="" width={40} height={40} sizes="40px" className="h-10 w-10 rounded-full object-cover ring-1 ring-[#ded9cf]" />
+                  <span>By {update.author.name}</span>
+                </Link>
+                <AuthorLinkedIn href={authorLinkedInUrl} />
+              </div>
             </div>
           </header>
 
@@ -212,7 +217,10 @@ export default async function NewsArticlePage({ params }: Props) {
                 <Image src={authorPortraitSrc} alt="Rodolfo Garcia Calderoni" width={112} height={112} sizes="112px" className="h-28 w-28 rounded-full object-cover" />
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#647456]">About the author</p>
-                  <h2 className="mt-3 text-xl font-semibold">Rodolfo Garcia Calderoni, CFA</h2>
+                  <div className="mt-3 flex items-center gap-1">
+                    <h2 className="text-xl font-semibold">Rodolfo Garcia Calderoni, CFA</h2>
+                    <AuthorLinkedIn href={authorLinkedInUrl} />
+                  </div>
                   <p className="mt-3 text-sm leading-7 text-[#606975]">Rodolfo is the founder of Black Scarab, where he covers the technologies and commercial signals shaping physical AI adoption.</p>
                   <Link href="/about" className="mt-4 inline-block text-sm font-medium text-[#3f5137] underline decoration-[#b9c7b2] underline-offset-4">Meet Rodolfo</Link>
                 </div>

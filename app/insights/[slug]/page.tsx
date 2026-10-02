@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Fragment } from "react";
+import AuthorLinkedIn from "@/components/author-linkedin";
 import EmailSignupCard from "@/components/email-signup-card";
 import { InsightReadTracker } from "@/components/engagement-analytics";
 import LocalAiImplementationCta from "@/components/local-ai-implementation-cta";
@@ -16,7 +17,7 @@ import {
   localAiArticlePlacements,
   type LocalAiArticleSlug,
 } from "@/lib/local-ai-deployment";
-import { authorPortraitSrc } from "@/lib/site-author";
+import { authorLinkedInUrl, authorPortraitSrc } from "@/lib/site-author";
 import { getInsightSocialImage } from "@/lib/insight-social-image";
 
 type Props = {
@@ -211,6 +212,7 @@ export default async function CaseStudyPage({ params }: Props) {
       name: articleAuthor.replace(/,\s*CFA$/, ""),
       ...(articleAuthor.endsWith(", CFA") ? { honorificSuffix: "CFA" } : {}),
       url: articleAuthorUrl,
+      ...(article.author ? { sameAs: [authorLinkedInUrl] } : {}),
     },
     publisher: {
       "@type": "Organization",
@@ -279,13 +281,16 @@ export default async function CaseStudyPage({ params }: Props) {
                 <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-[#6b7280]">
                   {article.author ? (
                     <>
-                      <Link
-                        href={article.author.href}
-                        className="inline-flex items-center gap-3 font-medium text-[#111827] transition hover:text-[#526147]"
-                      >
-                        <Image src={authorPortraitSrc} alt="" width={40} height={40} sizes="40px" className="h-10 w-10 rounded-full object-cover ring-1 ring-[#ded9cf]" />
-                        By {article.author.name}
-                      </Link>
+                      <div className="inline-flex max-w-full items-center gap-1">
+                        <Link
+                          href={article.author.href}
+                          className="inline-flex items-center gap-3 font-medium text-[#111827] transition hover:text-[#526147]"
+                        >
+                          <Image src={authorPortraitSrc} alt="" width={40} height={40} sizes="40px" className="h-10 w-10 rounded-full object-cover ring-1 ring-[#ded9cf]" />
+                          <span>By {article.author.name}</span>
+                        </Link>
+                        <AuthorLinkedIn href={authorLinkedInUrl} />
+                      </div>
                       <span className="text-[#c9c1b5]">|</span>
                     </>
                   ) : null}
@@ -657,7 +662,10 @@ export default async function CaseStudyPage({ params }: Props) {
                     <Image src={authorPortraitSrc} alt="Rodolfo Garcia Calderoni" width={112} height={112} sizes="112px" className="h-28 w-28 rounded-full object-cover" />
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#647456]">About the author</p>
-                      <h2 className="mt-3 text-xl font-semibold">{article.author.name}</h2>
+                      <div className="mt-3 flex items-center gap-1">
+                        <h2 className="text-xl font-semibold">{article.author.name}</h2>
+                        <AuthorLinkedIn href={authorLinkedInUrl} />
+                      </div>
                       <p className="mt-3 text-sm leading-7 text-[#606975]">Rodolfo is the founder of Black Scarab, where he covers the technologies and commercial signals shaping physical AI adoption.</p>
                       <Link href={article.author.href} className="mt-4 inline-block text-sm font-medium text-[#3f5137] underline decoration-[#b9c7b2] underline-offset-4">Meet Rodolfo</Link>
                     </div>
