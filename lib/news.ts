@@ -37,7 +37,7 @@ export const newsUpdates: NewsUpdate[] = [
     "summary": "Destro AI’s $8 million seed round backs software that coordinates warehouse robots and workers. Its Yusen cart movement deployment gives the thesis a concrete starting point.",
     "category": "Capital News",
     "publishedDate": "2026-10-02",
-    "publishedAt": "2026-10-02T15:12:21.394984Z",
+    "publishedAt": "2026-10-02T15:19:37Z",
     "publishedLabel": "October 2, 2026",
     "author": {
       "name": "Rodolfo Garcia Calderoni, CFA",
