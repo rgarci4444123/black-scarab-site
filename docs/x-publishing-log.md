@@ -1,5 +1,14 @@
 # X publishing log
 
+## Gritt AI deep dive prepared, October 1, 2026
+
+* Website published and verified: https://www.blackscarab.ai/insights/gritt-ai-construction-robotics-solar-foundation-model-deep-dive.
+* Black Scarab company LinkedIn post and first article link comment verified: https://www.linkedin.com/feed/update/urn:li:share:7511629618001395712/?actorCompanyId=111898269.
+* Complete native X Article copy, formatted body, local preview, launch copy, image path and alt text saved in `output/x/gritt-ai/`.
+* Repository log and live @BlackScarabAI profile checked. Latest search `from:BlackScarabAI (Gritt OR gritt.ai)` returned no results.
+* Original cover generated with the built in image_gen tool. It is a Black Scarab editorial illustration.
+* Prepared for Rodolfo to publish manually. Native editor crop, formatting and live X publication remain for his verification.
+
 ## micro1 deep dive post prepared, September 30, 2026
 
 * Website published and verified: https://www.blackscarab.ai/insights/sell-company-data-ai-micro1-data-partnerships-referrals.
