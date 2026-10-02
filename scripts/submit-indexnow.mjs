@@ -31,9 +31,10 @@ const newsSlugs = Array.from(
   (match) => match[1],
 );
 const micro1Source = await readFile(new URL("../lib/micro1.ts", import.meta.url), "utf8");
+const grittSource = await readFile(new URL("../lib/gritt-ai.ts", import.meta.url), "utf8");
 const insightSlugs = new Set(
   Array.from(
-    `${micro1Source}`.matchAll(/slug:\s*"([^"]+)"/g),
+    `${micro1Source}\n${grittSource}`.matchAll(/slug:\s*"([^"]+)"/g),
     (match) => match[1],
   ).concat(Array.from(
     `${insightsSource}\n${palladyneSource}\n${foxgloveSource}\n${plusOneSource}\n${antiochSource}\n${physicalAiFundsSource}\n${mexicoSource}\n${manufacturingSeriesSource}\n${manufacturingPlantSource}\n${manufacturingMachinesSource}\n${productManufacturingSource}\n${factoryBuildersSource}\n${manufacturingPlantDesignSource}\n${industrialAutomationSource}\n${physicalAiManufacturingSource}\n${manufacturingPlantBuildSource}\n${robotActuatorsSource}\n${whatIsPhysicalAiSource}\n${digitalTwinsSource}\n${roboticsDataCollectionSource}`.matchAll(

@@ -19,6 +19,7 @@ import { whatIsPhysicalAiDeepDive } from "@/lib/what-is-physical-ai";
 import { digitalTwinsDeepDive } from "@/lib/digital-twins";
 import { roboticsDataCollectionDeepDive } from "@/lib/robotics-data-collection";
 import { micro1DeepDive } from "@/lib/micro1";
+import { grittAiDeepDive } from "@/lib/gritt-ai";
 
 export type CaseStudySection = {
   heading?: string;
@@ -16338,6 +16339,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  grittAiDeepDive(),
   micro1DeepDive(),
   roboticsDataCollectionDeepDive(),
   digitalTwinsDeepDive(),
