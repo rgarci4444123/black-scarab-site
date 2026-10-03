@@ -37,7 +37,7 @@ export const newsUpdates: NewsUpdate[] = [
   "summary": "ANYbotics is renaming Data Navigator as Shift, with an October software update designed to connect plant signals, robot inspections and maintenance action. Mixed hardware support remains a future direction.",
   "category": "Robotics Software",
   "publishedDate": "2026-10-03",
-  "publishedAt": "2026-10-03T13:21:09Z",
+  "publishedAt": "2026-10-03T13:24:45Z",
   "publishedLabel": "October 3, 2026",
   "author": {
     "name": "Rodolfo Garcia Calderoni, CFA",
