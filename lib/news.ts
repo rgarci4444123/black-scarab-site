@@ -32,6 +32,104 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+  slug: "anybotics-shift-industrial-inspection-upgrade",
+  "title": "ANYbotics Introduces Shift With an October Upgrade for Industrial Inspection Workflows",
+  "summary": "ANYbotics is renaming Data Navigator as Shift, with an October software update designed to connect plant signals, robot inspections and maintenance action. Mixed hardware support remains a future direction.",
+  "category": "Robotics Software",
+  "publishedDate": "2026-10-03",
+  "publishedAt": "2026-10-03T13:21:09Z",
+  "publishedLabel": "October 3, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/anybotics-shift-industrial-inspection-upgrade.png",
+  "imageAlt": "Original relief print illustration of an industrial valve, a generic inspection quadruped and repeated observation windows in green and lime.",
+  "imageCaption": "Original Black Scarab editorial illustration. An interpretation of inspection evidence and maintenance workflows, not ANYbotics hardware or a customer facility.",
+  "readingTime": "5 min read",
+  "keyPoints": [
+    "Shift develops Data Navigator, with the new name and feature package scheduled for Shift 1.0 in October.",
+    "The update connects plant control signals, robot visits, inspection comparisons and external notifications.",
+    "Shift currently manages ANYbotics robots. Support for other manufacturers remains a future direction."
+  ],
+  "sections": [
+    {
+      "heading": "What happened",
+      "paragraphs": [
+        "ANYbotics announced Shift on October 1, giving its industrial inspection software a new identity and setting out an October feature release that connects robot activity more closely with plant operating data.",
+        "Shift develops the existing Data Navigator platform. The company says the new name will appear in the interface with Shift 1.0 later in October, while existing data and integrations continue. The practical news is the forthcoming feature package and its operating model, rather than the creation of an entirely new software business.",
+        "For maintenance teams, the commercial question is whether a mobile robot can become a dependable part of the inspection and response process. Collecting a useful image is only one step. Someone still needs to determine what it means, connect it to the right equipment and decide what happens next."
+      ]
+    },
+    {
+      "heading": "The October package connects signals to inspections",
+      "paragraphs": [
+        "The detailed release plan includes plant control data alongside inspection results, threshold triggered robot visits, comparison views, webhook notifications and a chronological record of mission failures. ANYbotics says these functions are part of Shift 1.0. The announcement does not establish that the October update has already reached every customer.",
+        "The proposed connection is straightforward. A process signal can request a physical inspection. The robot collects additional evidence, and the result can return to the systems used by operations and maintenance staff.",
+        "A hypothetical example would be a plant signal that crosses a configured threshold while equipment is running under an unusual load. Sending a robot to gather a thermal image or another observation could help a reliability engineer decide whether the condition needs attention. The value would come from the quality and timeliness of that evidence, together with the team's response."
+      ]
+    },
+    {
+      "heading": "Four modules organize the work",
+      "paragraphs": [
+        "ANYbotics describes Shift through four connected modules: Maps for plant and asset context, Fleet for robot missions, Insight for interpreting observations, and Connect for exchanging information with other operating systems. Its launch announcement names integration categories including maintenance management, enterprise software, process control and asset performance management.",
+        "The product page describes a REST API that supports tasks such as mission triggering, scheduling, monitoring and receipt of inspection findings. It also describes remote assistance when a robot needs help. That exception handling is an important part of the operating model, even when ordinary inspection routes are autonomous.",
+        "The design places the asset at the center of the workflow. An image or reading needs a stable equipment identity and enough context to be compared with earlier observations. For an industrial buyer, that raises practical questions about asset naming, data quality and who maintains the connection between the physical equipment and the digital record."
+      ]
+    },
+    {
+      "heading": "The history matters",
+      "paragraphs": [
+        "Data Navigator was announced in February 2025 with centralized inspection information, historical trends and enterprise integration already in scope. The original materials also described cloud and local deployment options. Those ideas therefore predate the Shift name.",
+        "ANYbotics reports experience from more than 200 robot deployments in its Shift launch materials. That figure describes the installed experience behind the platform. It should not be read as 200 new customer wins on October 1.",
+        "There is also a clear hardware boundary. The detailed update says Shift currently manages ANYbotics robots; support for other manufacturers is a future direction. A buyer with a mixed fleet should verify compatibility rather than assume the new name already provides universal fleet control."
+      ]
+    },
+    {
+      "heading": "Where a buyer should look for value",
+      "paragraphs": [
+        "Black Scarab's analysis is that connecting an inspection result to the maintenance process can be more valuable than adding another dashboard. A finding needs to reach the team that can act on it, with evidence attached and an understandable priority.",
+        "Automation can also amplify poor configuration. If thresholds are too sensitive, the system may create unnecessary missions or alerts. If an equipment identifier is wrong, a good reading can end up in the wrong history. If the robot cannot reach the asset, the missing observation must be visible rather than silently treated as a successful round.",
+        "The relevant evaluation should therefore include incomplete missions, repeated alerts, time to human review and the proportion of findings that produce a useful maintenance action. Those measures would show whether the connected workflow reduces work or redistributes it.",
+        "Security and system ownership also belong in that evaluation. The launch announcement describes managed cloud operation, customer cloud options and local deployment where required. Available options still need to be checked against a particular site's requirements and commercial agreement."
+      ]
+    },
+    {
+      "heading": "What to watch next",
+      "paragraphs": [
+        "The immediate milestone is delivery of Shift 1.0 and evidence that the new functions work reliably in customer environments. After that, the useful questions concern adoption: how many sites use process triggered missions, what integration effort is required and whether maintenance teams can demonstrate better coverage or faster decisions.",
+        "Mixed hardware support would broaden the potential market, but it remains a roadmap item. That expansion would introduce additional differences in sensors, navigation capabilities, maintenance needs and mission behavior that the software would have to accommodate.",
+        "Shift is a useful signal of where industrial robotics software is heading. A robot's economic contribution depends on the work its observations enable. ANYbotics is making that connection more explicit, with a specific October update and an existing customer base on which to test it. The evidence to watch is the quality of the completed maintenance workflow."
+      ]
+    },
+    {
+      "heading": "Source and timing record",
+      "paragraphs": [
+        "Both the Shift launch announcement and the detailed product update are dated October 1, 2026. An exact publication time is not displayed in the reviewed text. Either point within that calendar day falls inside the current research window.",
+        "The February 2025 Data Navigator announcement is historical context. Shift 1.0 is described as an October release, and additional robot manufacturer support remains prospective. Product capabilities and installed experience are company reported; this article does not present an independent performance test."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "ANYbotics product update",
+      "url": "https://www.anybotics.com/news/anybotics-shift-launch/"
+    },
+    {
+      "label": "Shift launch announcement",
+      "url": "https://www.anybotics.com/news/shift-launch/"
+    },
+    {
+      "label": "Shift product information",
+      "url": "https://www.anybotics.com/solutions/shift/"
+    },
+    {
+      "label": "Original Data Navigator announcement",
+      "url": "https://www.anybotics.com/news/anybotics-launches-data-navigator/"
+    }
+  ]
+},
+  {
     slug: "destro-ai-seed-warehouse-robot-coordination",
     "title": "Destro Raises $8M to Coordinate Mixed Robot Fleets in Warehouses",
     "summary": "Destro AI’s $8 million seed round backs software that coordinates warehouse robots and workers. Its Yusen cart movement deployment gives the thesis a concrete starting point.",
