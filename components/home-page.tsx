@@ -155,11 +155,11 @@ export default function HomePage() {
     {
       eyebrow: "Latest podcast",
       title:
-        "Figure Tests Robots in 30 Homes + OpenAI’s Robotics Push + Amazon’s New Factory",
-      href: "https://open.spotify.com/episode/2xu2dJxd3poc2HSYtkXlXI",
-      image: "/images/podcast/physical-ai-weekly-episode-2.png",
+        "Dyna’s Laundry Robot + Sharpa’s Hands + Microsoft’s Cloud AI Trade-Off",
+      href: "https://open.spotify.com/episode/7gucJm5RZN5MmxiwzNqRe0",
+      image: "/images/news/dyna-taku-laundry-workflow.png",
       imageAlt:
-        "Editorial collage connecting a humanoid doing household work, robot hardware, and a factory under construction",
+        "Black Scarab editorial illustration of folded paper connecting a laundry drum, a towel stack, and shelves",
       cta: "Listen on Spotify",
       external: true,
       hasBlueCardGlow: true,
