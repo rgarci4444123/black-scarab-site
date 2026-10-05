@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import LocalAiDeploymentForm from "@/components/local-ai-deployment-form";
 import SiteHeader from "@/components/site-header";
+import SiteFooter from "@/components/site-footer";
 
 export const metadata: Metadata = {
   title: {
@@ -67,20 +68,7 @@ export default function LocalAiDeploymentPage() {
           </div>
         </section>
 
-        <footer className="border-t border-[#242c22] bg-[#10150f] px-6 py-6 text-center text-sm text-[#b8c0b6] md:px-10">
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            <span>© 2026 Black Scarab. AI infrastructure for modern industry.</span>
-            <span className="text-[#596257]">|</span>
-            <span>Based in Miami, FL</span>
-            <span className="text-[#596257]">|</span>
-            <a
-              href="mailto:info@blackscarab.ai"
-              className="transition hover:text-white"
-            >
-              info@blackscarab.ai
-            </a>
-          </div>
-        </footer>
+        <SiteFooter tone="dark" />
       </div>
     </main>
   );

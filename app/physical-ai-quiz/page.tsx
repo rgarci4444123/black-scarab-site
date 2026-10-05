@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PhysicalAiQuiz from "@/components/physical-ai-quiz";
 import SiteHeader from "@/components/site-header";
+import SiteFooter from "@/components/site-footer";
 
 const baseUrl = "https://www.blackscarab.ai";
 
@@ -71,19 +72,7 @@ export default function PhysicalAiQuizPage() {
           </div>
         </aside>
 
-        <footer className="border-t border-[#e8e4dc] px-6 py-7 text-sm text-[#6b716a] md:px-10 lg:px-16">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <p>Black Scarab research for the physical AI economy.</p>
-            <div className="flex gap-5">
-              <Link href="/privacy" className="transition hover:text-[#1d3228]">
-                Privacy
-              </Link>
-              <Link href="/terms" className="transition hover:text-[#1d3228]">
-                Terms
-              </Link>
-            </div>
-          </div>
-        </footer>
+        <SiteFooter />
       </div>
     </main>
   );

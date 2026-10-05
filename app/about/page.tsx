@@ -1,8 +1,10 @@
+import { socialLinks } from "@/lib/site-links";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
+import SiteFooter from "@/components/site-footer";
 import { authorLinkedInUrl, authorPortraitSrc } from "@/lib/site-author";
 
 const baseUrl = "https://www.blackscarab.ai";
@@ -62,7 +64,7 @@ export default function AboutPage() {
           name: "Arizona State University",
         },
       },
-      sameAs: ["https://www.linkedin.com/company/black-scarab/"],
+      sameAs: socialLinks.map((item) => item.href),
     },
   };
 
@@ -154,29 +156,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <footer className="border-t border-[#d9d9d2] px-6 py-6 text-center text-sm text-[#626b75] md:px-10">
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            <span>© 2026 Black Scarab. Intelligence for the physical AI economy.</span>
-            <span className="text-[#c9c1b5]">|</span>
-            <span>Based in Miami, FL</span>
-            <span className="text-[#c9c1b5]">|</span>
-            <a
-              href="mailto:info@blackscarab.ai"
-              className="transition hover:text-[#111827]"
-            >
-              info@blackscarab.ai
-            </a>
-            <span className="text-[#c9c1b5]">|</span>
-            <a
-              href="https://www.linkedin.com/company/black-scarab/"
-              target="_blank"
-              rel="noreferrer"
-              className="transition hover:text-[#111827]"
-            >
-              LinkedIn
-            </a>
-          </div>
-        </footer>
+        <SiteFooter />
       </div>
     </main>
   );

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
+import SiteFooter from "@/components/site-footer";
 import { newsUpdates } from "@/lib/news";
 
 const baseUrl = "https://www.blackscarab.ai";
@@ -145,9 +146,7 @@ export default function NewsPage() {
           </div>
         </section>
 
-        <footer className="border-t border-[#efeae1] px-6 py-6 text-center text-sm text-[#626b75] md:px-10">
-          © 2026 Black Scarab. Physical AI market development for Mexico.
-        </footer>
+        <SiteFooter />
       </div>
     </main>
   );

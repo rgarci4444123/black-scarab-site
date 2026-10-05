@@ -1,3 +1,4 @@
+import { socialLinks } from "@/lib/site-links";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
@@ -22,7 +23,7 @@ const organizationSchema = {
     honorificSuffix: "CFA",
     jobTitle: "Founder",
   },
-  sameAs: ["https://www.linkedin.com/company/black-scarab/"],
+  sameAs: socialLinks.map((item) => item.href),
 };
 
 const websiteSchema = {

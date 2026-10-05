@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageEvent } from "@/components/engagement-analytics";
 import SiteHeader from "@/components/site-header";
+import SiteFooter from "@/components/site-footer";
 
 type Props = {
   searchParams: Promise<{ source?: string | string[] }>;
@@ -58,6 +59,7 @@ export default async function SubscribeThanksPage({ searchParams }: Props) {
             </Link>
           </div>
         </section>
+        <SiteFooter />
       </div>
     </main>
   );

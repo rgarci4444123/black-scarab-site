@@ -6,6 +6,7 @@ import { Fragment, type ReactNode } from "react";
 import AuthorLinkedIn from "@/components/author-linkedin";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
+import SiteFooter from "@/components/site-footer";
 import {
   getNewsUpdateBySlug,
   newsUpdates,
@@ -250,6 +251,7 @@ export default async function NewsArticlePage({ params }: Props) {
         <section className="border-t border-[#efeae1] px-6 py-14 md:px-10 md:py-20 lg:px-14">
           <div className="mx-auto max-w-5xl"><EmailSignupCard source={`news-${update.slug}`} /></div>
         </section>
+        <SiteFooter />
       </div>
     </main>
   );

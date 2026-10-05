@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { track } from "@vercel/analytics/react";
 import SiteHeader from "@/components/site-header";
+import SiteFooter from "@/components/site-footer";
 import {
   initialIntakeForm,
   intakeInquiryTypes,
@@ -323,22 +324,7 @@ export default function IntakePage() {
           </div>
         </section>
 
-        <footer className="border-t border-[#242c22] bg-[#10150f] px-6 py-6 text-center text-sm text-[#b8c0b6] md:px-10">
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            <span>
-              © 2026 Black Scarab. Physical AI market development for Mexico.
-            </span>
-            <span className="text-[#596257]">|</span>
-            <span>Based in Miami, FL</span>
-            <span className="text-[#596257]">|</span>
-            <a
-              href="mailto:info@blackscarab.ai"
-              className="transition hover:text-white"
-            >
-              info@blackscarab.ai
-            </a>
-          </div>
-        </footer>
+        <SiteFooter tone="dark" />
       </div>
     </main>
   );
