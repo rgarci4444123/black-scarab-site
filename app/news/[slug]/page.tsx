@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Fragment } from "react";
+import { Fragment, type ReactNode } from "react";
 import AuthorLinkedIn from "@/components/author-linkedin";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
@@ -20,6 +20,24 @@ type Props = {
 
 const baseUrl = "https://www.blackscarab.ai";
 const socialImages: Record<string, { path: string; width: number; height: number }> = newsSocialImages;
+const inlineSourcePattern = /\[([^\]]+)\]\((https:\/\/[^\s)]+)\)/g;
+
+function renderParagraph(paragraph: string): ReactNode {
+  const parts: ReactNode[] = [];
+  let cursor = 0;
+  for (const match of paragraph.matchAll(inlineSourcePattern)) {
+    parts.push(paragraph.slice(cursor, match.index));
+    parts.push(
+      <a key={match.index} href={match[2]} target="_blank" rel="noreferrer" className="font-medium text-[#3f5137] underline decoration-[#b9c7b2] underline-offset-4 transition hover:text-[#111827]">
+        {match[1]}
+      </a>,
+    );
+    cursor = match.index + match[0].length;
+  }
+  if (cursor === 0) return paragraph;
+  parts.push(paragraph.slice(cursor));
+  return parts;
+}
 
 function getFallbackSocialImage() {
   const fallbackUrl = `${baseUrl}/icon.png`;
@@ -193,7 +211,7 @@ export default async function NewsArticlePage({ params }: Props) {
                     <section>
                       <h2 className="text-2xl font-semibold tracking-[-0.03em] sm:text-3xl">{section.heading}</h2>
                       <div className="mt-5 space-y-5 text-base leading-8 text-[#3f4954] sm:text-lg">
-                        {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                        {section.paragraphs.map((paragraph) => <p key={paragraph}>{renderParagraph(paragraph)}</p>)}
                       </div>
                     </section>
                     {index === 1 ? (
