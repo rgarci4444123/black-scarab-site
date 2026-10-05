@@ -20,10 +20,12 @@ import { digitalTwinsDeepDive } from "@/lib/digital-twins";
 import { roboticsDataCollectionDeepDive } from "@/lib/robotics-data-collection";
 import { micro1DeepDive } from "@/lib/micro1";
 import { grittAiDeepDive } from "@/lib/gritt-ai";
+import { vibeManufacturingDeepDive } from "@/lib/vibe-manufacturing";
 
 export type CaseStudySection = {
   heading?: string;
   paragraphs: CaseStudyParagraph[];
+  visuals?: { afterParagraphIndex: number; src: string; mobileSrc?: string; alt: string }[];
   visual?: {
     src: string;
     mobileSrc?: string;
@@ -281,6 +283,9 @@ export type CaseStudyBarChart = {
 };
 
 export type CaseStudyArticle = {
+  layout?: "editorial";
+  reportingNotes?: CaseStudyParagraph[];
+  readingMinutes?: number;
   slug: string;
   title: string;
   seoTitle?: string;
@@ -16339,6 +16344,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  vibeManufacturingDeepDive(),
   grittAiDeepDive(),
   micro1DeepDive(),
   roboticsDataCollectionDeepDive(),

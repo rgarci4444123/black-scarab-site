@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Fragment } from "react";
 import AuthorLinkedIn from "@/components/author-linkedin";
+import EditorialInsight from "@/components/editorial-insight";
 import EmailSignupCard from "@/components/email-signup-card";
 import { InsightReadTracker } from "@/components/engagement-analytics";
 import LocalAiImplementationCta from "@/components/local-ai-implementation-cta";
@@ -233,6 +234,15 @@ export default async function CaseStudyPage({ params }: Props) {
     ],
     citation: article.sourceLinks?.map((source) => source.url) ?? [],
   };
+
+  if (article.layout === "editorial") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([articleSchema, breadcrumbSchema]) }} />
+        <EditorialInsight article={article} />
+      </>
+    );
+  }
 
   return (
     <main className="min-h-screen bg-[#f6f4ef] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
