@@ -8,6 +8,7 @@ export const vibeManufacturingDeepDive = (): CaseStudyArticle => ({
   formatLabel: "Emerging technology and business analysis",
   industry: "Manufacturing",
   image: "/article-images/vibe-manufacturing-cover.png",
+  imageFit: "contain",
   imageAlt: "Editorial illustration of luminous AI geometry resolving into a solid machined metal component.",
   imageCaption: "Original Black Scarab editorial illustration of computational design becoming a physical part.",
   seoDescription: "A researched deep dive into AI CAD, SendCutSend, engineering agents and the economics of making physical products more accessible.",
@@ -618,7 +619,6 @@ export const vibeManufacturingDeepDive = (): CaseStudyArticle => ({
     ],
     "The folding phone stand is fictional. Its cost comparison uses explicit assumptions. Integrated design, sourcing and ordering is a future scenario. Local manufacturers' pricing opportunities, competitive position and forecasts are Black Scarab analysis. Protolabs' 44.5 percent GAAP gross margin is for its full 2025 manufacturing business and is distinct from operating or net margin."
   ],
-  layout: "editorial",
   readingMinutes: 15,
   publishedLabel: "Deep Dive · Published October 5, 2026",
   publishedDate: "2026-10-05",

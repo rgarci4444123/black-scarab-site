@@ -283,7 +283,6 @@ export type CaseStudyBarChart = {
 };
 
 export type CaseStudyArticle = {
-  layout?: "editorial";
   reportingNotes?: CaseStudyParagraph[];
   readingMinutes?: number;
   slug: string;

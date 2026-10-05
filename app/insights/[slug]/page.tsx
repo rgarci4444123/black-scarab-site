@@ -4,7 +4,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Fragment } from "react";
 import AuthorLinkedIn from "@/components/author-linkedin";
-import EditorialInsight from "@/components/editorial-insight";
 import EmailSignupCard from "@/components/email-signup-card";
 import { InsightReadTracker } from "@/components/engagement-analytics";
 import LocalAiImplementationCta from "@/components/local-ai-implementation-cta";
@@ -235,15 +234,6 @@ export default async function CaseStudyPage({ params }: Props) {
     citation: article.sourceLinks?.map((source) => source.url) ?? [],
   };
 
-  if (article.layout === "editorial") {
-    return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([articleSchema, breadcrumbSchema]) }} />
-        <EditorialInsight article={article} />
-      </>
-    );
-  }
-
   return (
     <main className="min-h-screen bg-[#f6f4ef] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
       <script
@@ -387,9 +377,17 @@ export default async function CaseStudyPage({ params }: Props) {
                       ) : null}
                       <div className="mt-4 space-y-5 text-base leading-8 text-[#4b5563] md:text-lg">
                         {section.paragraphs.map((paragraph, paragraphIndex) => (
-                          <p key={getParagraphKey(paragraph, paragraphIndex)}>
-                            {renderParagraph(paragraph)}
-                          </p>
+                          <Fragment key={getParagraphKey(paragraph, paragraphIndex)}>
+                            <p>{renderParagraph(paragraph)}</p>
+                            {section.visuals?.filter(visual => visual.afterParagraphIndex === paragraphIndex + 1).map(visual => (
+                              <figure key={visual.src} className="my-10">
+                                <picture>
+                                  {visual.mobileSrc ? <source media="(max-width:600px)" srcSet={visual.mobileSrc} /> : null}
+                                  <Image src={visual.src} alt={visual.alt} width={1800} height={1164} unoptimized className="mx-auto block h-auto w-full max-w-[640px]" />
+                                </picture>
+                              </figure>
+                            ))}
+                          </Fragment>
                         ))}
                       </div>
                     {section.visual ? (
@@ -668,6 +666,14 @@ export default async function CaseStudyPage({ params }: Props) {
                     </div>
                   </section>
                 ) : null}
+                {article.reportingNotes?.length ? (
+                  <details className="border-t border-[#e8e4dc] pt-6">
+                    <summary className="cursor-pointer text-sm font-semibold text-[#111827]">Reporting notes and sources</summary>
+                    <div className="mt-5 space-y-4 text-sm leading-7 text-[#6b7280]">
+                      {article.reportingNotes.map((note, index) => <p key={getParagraphKey(note, index)}>{renderParagraph(note)}</p>)}
+                    </div>
+                  </details>
+                ) : null}
                 {article.author ? (
                   <section className="mt-12 grid gap-6 rounded-[24px] border border-[#e3ded5] bg-[#faf8f3] p-6 sm:grid-cols-[112px_minmax(0,1fr)] sm:p-8">
                     <Image src={authorPortraitSrc} alt="Rodolfo Garcia Calderoni" width={112} height={112} sizes="112px" className="h-28 w-28 rounded-full object-cover" />
@@ -713,6 +719,7 @@ export default async function CaseStudyPage({ params }: Props) {
                       {formattedDate}
                     </p>
                   </div>
+                  {!article.reportingNotes?.length ? (
                   <div>
                     <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">
                       Sources
@@ -738,6 +745,7 @@ export default async function CaseStudyPage({ params }: Props) {
                           ))}
                     </ul>
                   </div>
+                  ) : null}
                 </div>
               </aside>
             </div>
