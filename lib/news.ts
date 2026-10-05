@@ -32,7 +32,7 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
-  "slug": "robco-unicorn-alfie-launch",
+  slug: "robco-unicorn-alfie-launch",
   "title": "RobCo reaches a $1 billion valuation and puts Alfie on the launch calendar",
   "summary": "RobCo says it has passed a $1 billion valuation in a transaction that combines new investment with liquidity for employees. Alfie’s commercial launch is planned for March 4, 2027.",
   "category": "Robotics and Capital",
