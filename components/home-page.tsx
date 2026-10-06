@@ -155,12 +155,11 @@ export default function HomePage() {
     },
     {
       eyebrow: "Latest podcast",
-      title:
-        "Dyna’s Laundry Robot + Sharpa’s Hands + Microsoft’s Cloud AI Trade-Off",
-      href: "https://open.spotify.com/episode/7gucJm5RZN5MmxiwzNqRe0",
-      image: "/images/news/dyna-taku-laundry-workflow.png",
+      title: "Vibe Manufacturing: Get Used to Hearing It",
+      href: "https://open.spotify.com/episode/5IaYpOZUpPk3oxTKw0Ww3M",
+      image: "/article-images/vibe-manufacturing-cover.png",
       imageAlt:
-        "Black Scarab editorial illustration of folded paper connecting a laundry drum, a towel stack, and shelves",
+        "Editorial illustration of luminous AI geometry resolving into a solid machined metal component",
       cta: "Listen on Spotify",
       external: true,
       hasBlueCardGlow: true,
