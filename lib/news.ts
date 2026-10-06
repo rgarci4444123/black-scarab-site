@@ -56,7 +56,7 @@ export const newsUpdates: NewsUpdate[] = [
     {
       "heading": "A truck joins the schedule",
       "paragraphs": [
-        "Volvo Autonomous Solutions and Waabi have begun moving freight for Warp on the Dallas to Houston corridor. The Volvo VNL Autonomous uses the Waabi Driver, and the partners describe this as the first customer operation in their joint program. An observer currently sits behind the wheel. [Volvo announcement](https://www.volvoautonomoussolutions.com/en-en/news-and-insights/press-releases/2026/oct/volvo-and-waabi-kick-off-customer-operations-in-texas--starting-.html)",
+        "Volvo Autonomous Solutions and Waabi have begun moving freight for Warp on the Dallas to Houston corridor. The Volvo VNL Autonomous uses the Waabi Driver, and the partners describe this as the first customer operation in their joint program. An observer currently sits behind the wheel.",
         "Warp brings together full truckload freight and less than truckload shipping, or LTL. In an LTL network, several customers share transport capacity. Freight gets consolidated, moved between facilities and distributed onward, making the timing of one truck relevant to shipments beyond its own trailer.",
         "That is the interesting part of this launch. The truck has joined a business where departure times, trailer space and connections between facilities all matter. A successful highway journey becomes more valuable when it helps the next shipment leave on time."
       ]
@@ -64,8 +64,8 @@ export const newsUpdates: NewsUpdate[] = [
     {
       "heading": "Warp supplies the network",
       "paragraphs": [
-        "Warp describes a national operation with more than 70 cross docks, 6,800 LTL lanes and 38,000 carriers connected through its technology. Cross docks are transfer facilities where incoming freight is sorted and moved into outbound transport. [Warp network](https://www.wearewarp.com/about)",
-        "The company also reports more than 98% on time delivery and a 99.2% damage free rate across its network. These are company reported network measures, rather than results from the new Volvo and Waabi lane. [Warp service measures](https://www.wearewarp.com/about)",
+        "Warp describes a national operation with more than 70 cross docks, 6,800 LTL lanes and 38,000 carriers connected through its technology. Cross docks are transfer facilities where incoming freight is sorted and moved into outbound transport.",
+        "The company also reports more than 98% on time delivery and a 99.2% damage free rate across its network. These are company reported network measures, rather than results from the new Volvo and Waabi lane.",
         "For Black Scarab, the commercial logic starts with freight density. Combining shipments can fill more of a trailer’s available capacity. Reliable transport between facilities can then help that freight connect with the next movement. Autonomy has an opportunity to improve the transport leg within this existing coordination system.",
         "A truck that spends less time waiting could move more freight with the same equipment. But the network must be ready to use that availability. A vehicle arriving earlier offers little advantage if the receiving dock cannot accept it or the next load is still being assembled."
       ]
@@ -73,28 +73,28 @@ export const newsUpdates: NewsUpdate[] = [
     {
       "heading": "The economics are about productive hours",
       "paragraphs": [
-        "ATRI’s latest operating cost study puts the average cost of running a truck at $2.336 per mile in 2025, a record for its survey. Costs excluding fuel rose 4.2% to $1.854 per mile. These are industry benchmarks, not the price of Warp’s autonomous service. [ATRI cost research](https://truckingresearch.org/about-atri/atri-research/operational-costs-of-trucking/)",
+        "ATRI’s latest operating cost study puts the average cost of running a truck at $2.336 per mile in 2025, a record for its survey. Costs excluding fuel rose 4.2% to $1.854 per mile. These are industry benchmarks, not the price of Warp’s autonomous service.",
         "Those figures explain the attention on utilization. Equipment, maintenance, insurance and operating support remain meaningful expenses even as driving becomes automated. Spreading those expenses over more productive freight movements is part of the prospective business case.",
-        "Human scheduling is another constraint. Federal rules generally allow property carrying drivers up to 11 hours of driving after 10 consecutive hours off duty, within a 14 hour driving window. [FMCSA hours of service](https://csa.fmcsa.dot.gov/SafetyPlanner/MyFiles/SubSections.aspx?ch=23&eta=24305&sec=69&sub=176)",
-        "In an October 6 interview with FreightWaves, Waabi COO Lior Ron argued that autonomy could support more continuous consolidation in LTL networks, including on the Dallas to Houston corridor. That is a future operating proposition. The Warp service announced this week retains an observer aboard. [FreightWaves interview](https://www.freightwaves.com/news/waabi-volvo-warp-autonomous-ltl-customer-operations)",
+        "Human scheduling is another constraint. Federal rules generally allow property carrying drivers up to 11 hours of driving after 10 consecutive hours off duty, within a 14 hour driving window.",
+        "In an October 6 interview with FreightWaves, Waabi COO Lior Ron argued that autonomy could support more continuous consolidation in LTL networks, including on the Dallas to Houston corridor. That is a future operating proposition. The Warp service announced this week retains an observer aboard.",
         "The practical payoff would come from moving more paying freight per truck while preserving service quality. Extra operating hours only help if there are loads, facilities and support teams ready to use them."
       ]
     },
     {
       "heading": "Waabi brings some operating evidence",
       "paragraphs": [
-        "The Warp launch follows a September 15 update in which Waabi reported that its Dallas to Houston commercial load volumes had grown more than 80% during 2026. For one unnamed Fortune 50 retail customer, it reported nearly 200 trips that year, with zero safety incidents and 100% on time pickup and delivery. [Waabi operating update](https://waabi.ai/insights/80percent-growth-on-long-hauls-toughest-corridor)",
+        "The Warp launch follows a September 15 update in which Waabi reported that its Dallas to Houston commercial load volumes had grown more than 80% during 2026. For one unnamed Fortune 50 retail customer, it reported nearly 200 trips that year, with zero safety incidents and 100% on time pickup and delivery.",
         "These are Waabi’s own results from its existing freight operations, not outcomes from the newly announced Warp service. They provide a more concrete starting point than a demonstration alone: repeat trips and delivery commitments for a customer.",
         "The next challenge is maintaining that performance as the work becomes more varied. Freight networks change with customer demand, facility availability and shipping schedules. Scaling requires dependable service across that changing mix.",
-        "Waabi is also making a technical claim about expansion. On September 22, it said its system completed a Dallas to San Antonio run with zero disengagements and without new route specific training data, simulation data or fine tuning. [Waabi route demonstration](https://waabi.ai/insights/built-to-generalize-proven-on-i-35)",
+        "Waabi is also making a technical claim about expansion. On September 22, it said its system completed a Dallas to San Antonio run with zero disengagements and without new route specific training data, simulation data or fine tuning.",
         "If that ability holds across repeated operations, it could shorten the work required to introduce additional lanes. One successful run is an encouraging demonstration; sustained commercial service is the more demanding test."
       ]
     },
     {
       "heading": "Volvo packages the service",
       "paragraphs": [
-        "Volvo’s contribution includes the vehicle and the operating structure around it. Autona / freight sells transport capacity through a service model that includes planning, scheduling, monitoring, terminals and uptime support. Customers pay for the capacity they need. [Volvo service model](https://www.volvoautonomoussolutions.com/en-en/autona-freight.html)",
-        "The VNL Autonomous is assembled at Volvo’s New River Valley plant in Dublin, Virginia. Volvo describes redundancy across critical vehicle functions, including steering, braking, communications, computing and power. [Volvo vehicle documentation](https://www.volvoautonomoussolutions.com/en-en/autona-freight/volvo-vnl-autonomous.html)",
+        "Volvo’s contribution includes the vehicle and the operating structure around it. Autona / freight sells transport capacity through a service model that includes planning, scheduling, monitoring, terminals and uptime support. Customers pay for the capacity they need.",
+        "The VNL Autonomous is assembled at Volvo’s New River Valley plant in Dublin, Virginia. Volvo describes redundancy across critical vehicle functions, including steering, braking, communications, computing and power.",
         "That service packaging gives a logistics customer a familiar purchase: transport for a defined freight requirement. The value rests on the operation behind the truck, including how it responds to a delayed facility, a vehicle fault or a shipment that needs replacement capacity.",
         "Direct delivery to third party facilities is relevant here. It puts the autonomous truck closer to the endpoints already used by the freight network. Each additional facility still has to fit the vehicle’s operating capabilities and the service’s dispatch process."
       ]
@@ -102,7 +102,7 @@ export const newsUpdates: NewsUpdate[] = [
     {
       "heading": "The next milestone is driverless service",
       "paragraphs": [
-        "FreightWaves reports that Ron expects driverless operations on Volvo’s platform next year. He said Waabi is waiting for a factory built truck with the redundancy and manufacturer validation it considers necessary. This remains a target for 2027. [FreightWaves interview](https://www.freightwaves.com/news/waabi-volvo-warp-autonomous-ltl-customer-operations)",
+        "FreightWaves reports that Ron expects driverless operations on Volvo’s platform next year. He said Waabi is waiting for a factory built truck with the redundancy and manufacturer validation it considers necessary. This remains a target for 2027.",
         "Black Scarab’s view: this is a useful commercial step because it places autonomy inside a freight network with recurring shipments and coordinated transfers. Warp supplies the freight flows, Waabi supplies the driving system, and Volvo supplies the vehicle and transport service.",
         "The evidence to watch now is repeat volume on this lane, dependable arrival at customer facilities, expansion to additional routes and the transition to verified driverless operations. Together, those would show whether the partnership can turn more truck availability into better freight economics."
       ]
@@ -146,7 +146,7 @@ export const newsUpdates: NewsUpdate[] = [
       "url": "https://www.volvoautonomoussolutions.com/en-en/autona-freight/volvo-vnl-autonomous.html"
     }
   ],
-  "modifiedAt": "2026-10-06T14:01:09Z"
+  "modifiedAt": "2026-10-06T14:18:29Z"
 },
 {
   slug: "robco-unicorn-alfie-launch",

@@ -42,3 +42,8 @@ Credit Rodolfo Garcia Calderoni, CFA, as the author. Use the same author portrai
 Create an original, logo free editorial cover using `docs/editorial-image-direction.md`. Black Scarab consistency comes from editorial quality, typography, labeling, and layout rather than forcing every image into one palette or scene. The image must work as both a wide article hero and a cropped news card.
 
 Before publishing, verify the canonical URL, NewsArticle structured data, social image metadata, main sitemap, news sitemap, RSS feed, build output, live article, and IndexNow submission.
+
+
+## Article hyperlink restraint
+
+User preference, October 6, 2026: For all future News reports and Insights deep dives, put research and citation hyperlinks in a Sources section at the bottom. Keep the article body free of routine citation links. Use a body hyperlink only when it is essential for the reader to take a specific action or access an indispensable resource; use such exceptions sparingly. Preserve clear attribution in prose and keep the supporting evidence in the source list and research records. Do not append a linked source label to each paragraph.

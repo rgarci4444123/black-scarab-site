@@ -54,3 +54,8 @@ The RSS feed is available for readers, monitoring tools, and aggregators at:
 The Google News sitemap contains only stories published during the previous two days. The RSS feed retains the newest 50 stories.
 
 IndexNow notifies participating search engines but does not replace Google Search Console. Google discovers news through its normal crawl and submitted sitemaps, then determines Google News eligibility and placement automatically.
+
+
+## Article hyperlink restraint
+
+User preference, October 6, 2026: For all future News reports and Insights deep dives, put research and citation hyperlinks in a Sources section at the bottom. Keep the article body free of routine citation links. Use a body hyperlink only when it is essential for the reader to take a specific action or access an indispensable resource; use such exceptions sparingly. Preserve clear attribution in prose and keep the supporting evidence in the source list and research records. Do not append a linked source label to each paragraph.

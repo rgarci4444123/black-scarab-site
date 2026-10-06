@@ -58,3 +58,8 @@ Follow the label with an engaging hook, a useful summary, a clear statement that
 Before any X writing or design work, read `docs/x-editorial-style.md` and `docs/x-publishing-log.md`. The user approved RoboStrategy as the editorial and visual reference on September 8, 2026. Apply the saved Black Scarab interpretation and use original writing and artwork. Check the log and live profile to prevent duplicate posts. Give Rodolfo polished copy to paste into `@BlackScarabAI` and the exact local image path to upload. Rodolfo publishes and verifies X himself. Native X Articles remain the preferred deep dive format when the account has access.
 
 The X edition is the third publication step. Adapt it from the verified website article rather than independently rewriting the research from scratch. Do not publish or draft the X edition as a substitute for completing the website and LinkedIn publications first.
+
+
+## Article hyperlink restraint
+
+User preference, October 6, 2026: For all future News reports and Insights deep dives, put research and citation hyperlinks in a Sources section at the bottom. Keep the article body free of routine citation links. Use a body hyperlink only when it is essential for the reader to take a specific action or access an indispensable resource; use such exceptions sparingly. Preserve clear attribution in prose and keep the supporting evidence in the source list and research records. Do not append a linked source label to each paragraph.
