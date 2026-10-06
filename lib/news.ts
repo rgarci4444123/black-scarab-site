@@ -31,6 +31,76 @@ export type NewsUpdate = {
 };
 
 export const newsUpdates: NewsUpdate[] = [
+  {
+  slug: "volvo-waabi-warp-customer-operations",
+  "title": "Volvo and Waabi bring autonomous freight into Warp's Texas network",
+  "summary": "A customer freight lane tests the fit between autonomous driving and the schedules, facilities and service responsibilities of a working transport network.",
+  "category": "Deployment and autonomous systems",
+  "publishedDate": "2026-10-06",
+  "publishedAt": "2026-10-06T13:46:55Z",
+  "publishedLabel": "October 6, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/volvo-waabi-warp-customer-operations.png",
+  "imageAlt": "A generic freight truck crosses a luminous violet and turquoise geometric roadway toward a distant receiving facility in a bold painted illustration.",
+  "imageCaption": "Original Black Scarab editorial illustration of autonomous freight entering a working logistics network. This is not a photograph of the vehicle or the Warp operation.",
+  "readingTime": "5 min read",
+  "keyPoints": [
+    "Volvo Autonomous Solutions and Waabi have begun customer freight operations for Warp between Dallas and Houston.",
+    "The service uses the Volvo VNL Autonomous with the Waabi Driver and Volvo’s Autona / freight offering.",
+    "An observer remains in the driver’s seat. The launch does not establish driverless operation or measured lane economics."
+  ],
+  "sections": [
+    {
+      "heading": "What happened",
+      "paragraphs": [
+        "Volvo Autonomous Solutions and Waabi have begun hauling freight for Warp between Dallas and Houston, bringing their joint autonomous trucking system into its first customer operation. The October 5 announcement says the Volvo VNL Autonomous, running the Waabi Driver, is moving goods directly to third party facilities. An observer currently rides in the driver's seat. [1](https://www.volvoautonomoussolutions.com/en-en/news-and-insights/press-releases/2026/oct/volvo-and-waabi-kick-off-customer-operations-in-texas--starting-.html)",
+        "That combination gives the announcement a useful commercial focus. A vehicle can demonstrate capable driving while remaining difficult to fit into a shipper's operation. A customer service has to accommodate arrival windows, loading delays, maintenance and the next movement of the freight. Those obligations determine how much of the vehicle's technical capability becomes useful capacity.",
+        "Warp handles both full truckload freight and smaller shipments that share transportation capacity. Volvo says the service incorporates its Autona / freight offering, and the partners intend to use experience on this lane to support expansion. The release does not disclose the number of trucks, shipment volume, contract value or a date for removing the observer. [1](https://www.volvoautonomoussolutions.com/en-en/news-and-insights/press-releases/2026/oct/volvo-and-waabi-kick-off-customer-operations-in-texas--starting-.html)"
+      ]
+    },
+    {
+      "heading": "Selling transport capacity",
+      "paragraphs": [
+        "Volvo presents Autona / freight as a transport service in which customers pay for the capacity they need. The offering includes operating support, terminals, fleet management and work to keep vehicles available. Its product description places planning, scheduling and monitoring within the service, alongside the autonomous truck and driving software. [2](https://www.volvoautonomoussolutions.com/en-en/autona-freight.html)",
+        "For a prospective customer, that packaging changes the procurement discussion. The evaluation can begin with a defined route, volume and service requirement rather than ownership of an unfamiliar vehicle. It also places considerable importance on the agreement behind the service. The customer needs to know who responds when the vehicle cannot complete a trip, how replacement capacity is arranged and how a missed delivery is handled.",
+        "The business case should include those exceptions. A lower charge for the highway portion of a shipment may offer little benefit if it produces more handling elsewhere. Conversely, dependable arrival at a facility could have value beyond the linehaul charge when it helps avoid waiting time or an expensive recovery movement. Neither outcome can be assumed from the launch itself.",
+        "Warp's current service materials describe a network that combines shipment booking, tracking, consolidation and routing. They also identify delivery windows and escalation rules as elements of customer programs. These are existing capabilities described by Warp, rather than performance results from the new autonomous lane. [3](https://www.wearewarp.com/)",
+        "A useful way to assess this deployment would therefore be to follow complete shipments. Did freight reach the next stage when expected? Did dispatchers need additional intervention? What happened when a facility was late accepting a load? Those measures would make the operational value easier to assess than autonomous mileage alone."
+      ]
+    },
+    {
+      "heading": "The vehicle and the service have different jobs",
+      "paragraphs": [
+        "Volvo's vehicle documentation describes a truck built around redundant systems and close integration with autonomous driving partners. It identifies steering, braking, communications, computing and power functions among the areas with backup provisions. The VNL Autonomous is assembled at the New River Valley plant in Virginia. [4](https://www.volvoautonomoussolutions.com/en-en/autona-freight/volvo-vnl-autonomous.html)",
+        "That establishes an industrial foundation for the vehicle. It does not supply a measured reliability rate for the Warp operation. Manufacturing capability, vehicle design, driving performance and commercial availability are connected, but evidence for one should not be substituted for evidence about the others.",
+        "The observer is especially important when interpreting the launch. Operating with a person in the cab allows the partners to gain experience while retaining that role. The economics of this service should be evaluated in its present configuration. A future configuration with different staffing would require its own operating evidence and cost assumptions.",
+        "There is also a difference between reaching a customer facility and covering every location in a customer's network. A route may be attractive because its endpoints and operating conditions are manageable. Expansion adds new facility layouts, traffic patterns and practical constraints. The appropriate next question is how efficiently the system can add useful lanes while maintaining service quality.",
+        "For Black Scarab, the significance is that autonomous trucking is being packaged around a logistics service a customer can use. The next evidence to watch is repeat business supported by disclosed operating results: trips completed, punctuality, intervention requirements and the cost of handling exceptions. Those figures would help determine how much of the promise survives contact with a freight network's daily demands."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "[1] Volvo Autonomous Solutions, October 5, 2026, original customer operations announcement",
+      "url": "https://www.volvoautonomoussolutions.com/en-en/news-and-insights/press-releases/2026/oct/volvo-and-waabi-kick-off-customer-operations-in-texas--starting-.html"
+    },
+    {
+      "label": "[2] Volvo Autonomous Solutions, Autona / freight product description, undated current page checked October 6, 2026",
+      "url": "https://www.volvoautonomoussolutions.com/en-en/autona-freight.html"
+    },
+    {
+      "label": "[3] Warp, company service description, undated current page checked October 6, 2026",
+      "url": "https://www.wearewarp.com/"
+    },
+    {
+      "label": "[4] Volvo Autonomous Solutions, Volvo VNL Autonomous product description, undated current page checked October 6, 2026",
+      "url": "https://www.volvoautonomoussolutions.com/en-en/autona-freight/volvo-vnl-autonomous.html"
+    }
+  ]
+},
 {
   slug: "robco-unicorn-alfie-launch",
   "title": "RobCo reaches a $1 billion valuation and puts Alfie on the launch calendar",
