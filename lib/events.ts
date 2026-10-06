@@ -25,61 +25,6 @@ export type PhysicalAiWorkshop = {
 
 export const physicalAiEvents: PhysicalAiEvent[] = [
   {
-    name: "IEEE/RSJ International Conference on Intelligent Robots and Systems",
-    shortName: "IROS 2026",
-    startDate: "2026-09-27",
-    endDate: "2026-10-01",
-    dateLabel: "September 27 to October 1",
-    month: "September 2026",
-    monthKey: "september-2026",
-    city: "Pittsburgh",
-    country: "United States",
-    venue: "David L. Lawrence Convention Center",
-    url: "https://2026.ieee-iros.org/",
-    focus: "Robotics research",
-    summary:
-      "A flagship global forum for intelligent robots, manipulation, mobility, perception, autonomy, and human robot systems.",
-    tier: "Anchor",
-    workshops: [
-      {
-        name: "Perception and Decision Making for Athletic Humanoid Robotics",
-        schedule: "September 27 · Full day",
-        focus: "Humanoids",
-        url: "https://iros-2026-athletic-humanoid.github.io/workshop/",
-      },
-      {
-        name: "Human Aware Embodied AI",
-        schedule: "September 27 · Afternoon",
-        focus: "Human robot interaction",
-        url: "https://heai-iros26-workshop.github.io/",
-      },
-      {
-        name: "Embodied Neuro Symbolic AI for Reliable and Safe Robotics",
-        schedule: "September 27 · Morning",
-        focus: "Reliable robotics",
-        url: "https://embodied-nesy.github.io/",
-      },
-      {
-        name: "Compositional and Modular Learning in Robotics",
-        schedule: "September 27 · Morning",
-        focus: "Robot learning",
-        url: "https://compositional-robotics.github.io/",
-      },
-      {
-        name: "Industrial Applications of Robot Learning",
-        schedule: "September 27 · From 8:30 AM",
-        focus: "Industrial robotics",
-        url: "https://aistairc.github.io/IROS2026-workshop/",
-      },
-      {
-        name: "Hybrid Architectures for Embodied Autonomy",
-        schedule: "September 27 · Half day",
-        focus: "Planning and control",
-        url: "https://sites.google.com/bu.edu/hybridarchforautonomy/home",
-      },
-    ],
-  },
-  {
     name: "Global Open Source Innovation Meetup",
     shortName: "GOSIM Shenzhen",
     startDate: "2026-10-16",
