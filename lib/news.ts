@@ -32,6 +32,114 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+  slug: "unitree-dex5-s-robotic-hand",
+  "title": "Unitree Dex5 S robotic hand: Price, specs and comparisons",
+  "summary": "Unitree is offering its Dex5 S dexterous hand from $6,350, bringing a visible entry price to a compact component with 22 motorized degrees of freedom. The commercial question is whether accessible hardware can make manipulation research faster and, eventually, useful work cheaper.",
+  "category": "Robotics and manipulation",
+  "publishedDate": "2026-10-06",
+  "publishedAt": "2026-10-06T11:58:10-04:00",
+  "publishedLabel": "October 6, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/unitree-dex5-s-robotic-hand.png",
+  "imageAlt": "A stylized silver robotic hand holds a folded cobalt geometric object against a vivid orange background.",
+  "imageCaption": "Original Black Scarab editorial illustration of dexterous manipulation.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "Price: Unitree currently advertises a $6,350 starting price. US seller RobotsUSA lists the hand from $6,500 before tax and shipping.",
+    "Movement: Five fingers, human hand proportions and 22 motorized degrees of freedom, with company claimed backdrivability and impact protection across all joints.",
+    "Context: Sharpa W02 emphasizes touch across the fingertips, fingers and palm. Shadow Robot offers a configurable research system built around tendon actuation."
+  ],
+  "sections": [
+    {
+      "heading": "A price developers can work with",
+      "paragraphs": [
+        "Unitree became familiar to robotics audiences through quadrupeds and humanoids. With the Dex5 S, it is putting a price on a component that can determine whether a robot does anything useful once it reaches its destination.",
+        "Walking to a workstation and completing the work are different problems. A machine may need to turn an object, adjust a grip, reach around a handle or change how it holds a tool. Those actions put demands on the hand that a simple opening and closing gripper may struggle to meet.",
+        "September 21 coverage from AlphaSignal reported a $6,500 starting price for the new hand. Unitree's product page now shows the lower figure. RobotsUSA's listing retains $6,500, making the manufacturer and seller prices distinct reference points for a prospective buyer.",
+        "For a development team, the useful question is what fits inside its experimental budget. At the advertised entry price, two hands would start at $12,700 for the components. The arm, perception system, computing, integration and task development remain separate parts of the project.",
+        "A more accessible hand could let a laboratory run parallel experiments, keep replacement hardware available or test several control approaches at once. That is Black Scarab's interpretation of the opportunity. The return would come from better experiments and more usable data, followed by tasks that hold up outside a demonstration."
+      ]
+    },
+    {
+      "heading": "What the extra movement buys",
+      "paragraphs": [
+        "Degrees of freedom describe the independent directions in which a mechanism can move. They are useful for understanding the available motion, but they do not tell a buyer how well a hand completes a task.",
+        "Independent actuation matters because it gives the controller more choices. Fingers can adapt their posture around an object instead of relying entirely on a mechanically linked movement. More control also creates more work for the software: it must coordinate those choices while managing contact and preventing the object from slipping.",
+        "The earlier Dex5 1 illustrates the distinction. Unitree specifies 20 total degrees of freedom, comprising 16 active and four passive movements. Its Dex5 1P version adds 94 tactile sensors. The new model therefore changes the movement architecture, rather than simply adding two independently controlled axes to an otherwise identical hand.",
+        "For Dex5 S, Unitree specifies a 620 gram hand with dual encoders, a two kilogram peak payload and one kilogram continuous payload. The standard and Pro versions both have 22 degrees of freedom; the Pro adds tactile sensing.",
+        "Peak and continuous load describe different operating conditions. A developer planning repeated transfers should build around the sustained rating and the actual grip, object and motion involved. A payload figure alone does not establish that a particular tool will remain secure through an entire sequence."
+      ]
+    },
+    {
+      "heading": "Giving way when contact goes wrong",
+      "paragraphs": [
+        "Backdrivability means an external force can move a joint back through its transmission. In practical terms, a finger can yield when an object pushes against it, instead of behaving like a rigid obstacle.",
+        "That property can be valuable during learning. Early control policies will make mistakes about position, contact and force. A hand that can accommodate some of those mistakes may be easier to experiment with, although the controller still has to manage the interaction.",
+        "Unitree also describes a protection structure intended to shield joint gears from extreme external impacts. Both features address a practical research concern: preserving hardware through repeated contact.",
+        "The useful test is repeated recovery. After an unexpected collision, does the hand resume accurate motion? Does grip performance change after many cycles? How quickly can a damaged component return to service? These questions connect durability to the time a team can spend collecting data rather than repairing equipment."
+      ]
+    },
+    {
+      "heading": "A brief comparison with Sharpa and Shadow",
+      "paragraphs": [
+        "Sharpa's W02, covered in Black Scarab's earlier IROS report, has 21 active degrees of freedom and weighs less than 750 grams. It combines vision based fingertip sensing with electronic skin across the fingers and palm. Sharpa directs buyers to a quote process.",
+        "Shadow's classic Dexterous Hand has 20 actuated degrees of freedom and four additional underactuated movements. It uses tendon actuation, offers tactile configurations and integrates with ROS. Shadow builds systems to order, with configuration and support forming part of the purchase.",
+        "The basic distinction is straightforward: Unitree supplies a public entry price and a compact, highly articulated hand; Sharpa foregrounds tactile coverage; Shadow packages a configurable research system. The right comparison is the exact configuration and the task it can repeat reliably. An extra joint or a different sensor count does not settle that choice."
+      ]
+    },
+    {
+      "heading": "The hand still needs a complete system",
+      "paragraphs": [
+        "A dexterous hand is an execution component. The robot still needs to identify the object, choose where to grasp it, coordinate the arm and fingers, and detect when the plan has stopped working.",
+        "Consider a hypothetical laboratory task: picking up a small container, turning it and placing it into a fixture. A successful first grasp is only one part of the sequence. The system must retain the object while changing its orientation, avoid interfering with the fixture and recover if the placement is slightly wrong.",
+        "That example also shows why touch can change a purchase decision. A controller may need contact information to recognize slip or distinguish a secure grip from a misleading visual pose. Buyers should compare the sensing configuration needed for their task alongside the hardware price.",
+        "For repetitive work on uniform objects, a simpler gripper may be the better engineering choice. A dexterous hand becomes attractive when its additional movements reduce the need for specialized tooling or allow the robot to handle a more varied set of objects."
+      ]
+    },
+    {
+      "heading": "What would make the price matter",
+      "paragraphs": [
+        "Black Scarab's view is that a public entry price makes this product commercially interesting because it gives developers a concrete starting point for experimentation. The larger opportunity depends on turning that access into dependable manipulation.",
+        "The evidence to watch is task success across repeated trials, human interventions, performance after sustained use and the effort required to integrate the hand. Reports from laboratories and robot builders using the hardware on their own tasks would be particularly useful.",
+        "If developers can buy, integrate and keep these hands working economically, more teams can test more ideas. That is how an accessible component could affect the wider robotics market: through the amount of useful work it enables."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Unitree Dex5 S product page and current manufacturer price",
+      "url": "https://www.unitree.com/Dex5-S/"
+    },
+    {
+      "label": "RobotsUSA Dex5 S seller listing",
+      "url": "https://www.robotsusa.com/Unitree-Dex5-S.htm"
+    },
+    {
+      "label": "AlphaSignal coverage dated September 21, 2026",
+      "url": "https://alphasignal.ai/news/unitree-s-dex5-s-brings-a-22-dof-robotic-hand-to-developers-for-6-500"
+    },
+    {
+      "label": "Unitree Dex5 1 and Dex5 1P specifications",
+      "url": "https://www.unitree.com/Dex5-1/"
+    },
+    {
+      "label": "Sharpa W02 specifications",
+      "url": "https://www.sharpa.com/pages/w02"
+    },
+    {
+      "label": "Shadow Dexterous Hand Series specifications",
+      "url": "https://shadowrobot.com/dexterous-hand-series/"
+    },
+    {
+      "label": "Previous Black Scarab Sharpa report",
+      "url": "https://www.blackscarab.ai/news/sharpa-iros-dexterous-manipulation-stack"
+    }
+  ]
+},
+  {
   slug: "volvo-waabi-warp-customer-operations",
   "title": "Volvo and Waabi bring autonomous freight into Warp’s Texas network",
   "summary": "Volvo’s autonomous trucks are carrying Warp freight between Dallas and Houston, putting Waabi’s driving software to work inside a network that combines shipments from multiple customers. The commercial opportunity is to make those shared freight movements more productive, with driverless operations still ahead.",
