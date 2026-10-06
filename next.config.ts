@@ -15,14 +15,6 @@ const nextConfig: NextConfig = {
         source: "/_next/static/:path*",
         headers: [noIndexHeader],
       },
-      {
-        source: "/favicon.ico",
-        headers: [noIndexHeader],
-      },
-      {
-        source: "/icon.png",
-        headers: [noIndexHeader],
-      },
     ];
   },
   async redirects() {
