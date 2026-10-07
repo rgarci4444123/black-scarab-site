@@ -32,6 +32,125 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+  slug: "multiply-labs-series-b-robotic-biomanufacturing",
+  "title": "Multiply Labs raises $75 million to move robotic drug manufacturing toward commercial scale",
+  "summary": "Multiply Labs is financing a larger robotic equipment business around pharmaceutical workflows, with published task comparisons and a manufacturing expansion in Italy shaping its next phase.",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/multiply-labs-series-b-robotic-biomanufacturing.png",
+  "imageAlt": "Translucent biological cells and lavender glass vessels arranged in repeated lanes beneath a robotic gripper.",
+  "imageCaption": "Original Black Scarab editorial illustration of coordinated biological manufacturing.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "Funding: $75 million in Series B capital, announced October 6.",
+    "Product: robotic handling and software built around a manufacturer's existing instruments.",
+    "Next milestone: repeatable production across customer processes as deployments move toward commercial scale."
+  ],
+  "sections": [
+    {
+      "heading": "The financing",
+      "paragraphs": [
+        "Multiply Labs announced a $75 million Series B on October 6 to expand the robotic systems it sells to pharmaceutical manufacturers, taking its reported funding above $100 million since its founding in 2016.",
+        "The San Francisco company says the round was led by Dr. Patrick Soon Shiong with NantWorks. New investors include AstraZeneca, Lingotto, Teradyne and Strange Ventures. Casdin Capital, Lux Capital, Fifty Years, Ora Global and Founders Fund are among the returning participants. Axios independently reported the financing.",
+        "The capital will support manufacturing capacity, product development and hiring across engineering, regulatory and commercial functions. Multiply describes the next phase as a transition from clinical deployments toward commercial production.",
+        "That transition involves two manufacturing problems. Multiply has to build more robotic systems. Its customers then have to use those systems to make biological medicines reliably. Success in the first does not automatically deliver the second."
+      ]
+    },
+    {
+      "heading": "Automating the work between the machines",
+      "paragraphs": [
+        "A cell manufacturing laboratory can contain advanced instruments and still rely on technicians to connect the steps. Someone moves a bag, loads a consumable, takes a sample and transfers material to the next operation. The handling, timing and documentation are part of manufacturing, even when the instruments do the most visible work.",
+        "Multiply's product documentation describes four Universal Robots arms operating under a shared control system. The cluster handles tasks including bag transfers, syringe dispensing, cell counting, centrifugation and loading incubators. Its listed instrument integrations include Thermo Fisher Scientific's Rotea, DynaCellect and Heracell VIOS, alongside Cytiva's Xuri bioreactor.",
+        "The platform also uses cartridges that hold consumables in forms the robots can manipulate. Its software translates a manufacturing protocol into an execution sequence and captures process information, material history and operator actions for the customer's quality workflow.",
+        "The commercial proposition is continuity: automate familiar equipment and processes while reducing the handling between them. For a production team, the useful output is a completed protocol and a record it can review, rather than an isolated robotic motion."
+      ]
+    },
+    {
+      "heading": "The manufacturer keeps the factory",
+      "paragraphs": [
+        "Multiply sells infrastructure that pharmaceutical and biologics companies own and operate. That puts its equipment inside the customer's production organization, rather than making Multiply an outsourced drug manufacturer.",
+        "The distinction affects how the business can scale. Each installation has to fit a particular mix of instruments, consumables and procedures. A modular architecture can help reuse engineering across projects, but customer variation still creates work in integration, training and support.",
+        "AstraZeneca's involvement offers a concrete example of the route into that market. In January, Multiply announced an agreement with the drugmaker to evaluate robotic systems for commercial cell therapy manufacturing. AstraZeneca is now named in the financing. The sequence connects an equipment evaluation with a financial commitment, while leaving the outcome of each manufacturing program to its own evidence.",
+        "For a customer, the economic question is whether more of the existing workflow can run consistently with less manual attention. Keeping familiar instruments may make adoption easier. It also requires the supplier to handle the awkward details of that workflow, rather than asking the customer to redesign everything around one machine."
+      ]
+    },
+    {
+      "heading": "There is research behind the robotics",
+      "paragraphs": [
+        "The technical case extends beyond a promotional demonstration. A 2024 paper in Cytotherapy described a proof of concept that robotically expanded human CD8 positive T cells using standard manufacturing equipment. The researchers reported cell yields, viability and identity comparable to manual cultures, while maintaining sterility.",
+        "A second paper, published online in the International Journal of Pharmaceutics: X in August 2026, tested a broader set of operations. These included transfers between sterile bags, cell counting, drawing liquid from a vial into a syringe, and resuspension and sampling from bags and bioreactors. The system also performed cell isolation and washing with established instruments.",
+        "The researchers found robotic and manual performance equivalent on the selected measures. They described the work as a foundation for future integrated manufacturing processes. The published system was a research prototype, and the author disclosures include Multiply employees and other commercial relationships.",
+        "These studies support the feasibility of automating specific tasks while preserving important biological outcomes. The next step is to link those tasks into customer protocols that can run repeatedly through routine production conditions."
+      ]
+    },
+    {
+      "heading": "Read the big numbers carefully",
+      "paragraphs": [
+        "The financing release claims a 74 percent reduction in cost per dose and up to 100 times more throughput than manual manufacturing.",
+        "Universal Robots' supplier case study describes the second figure more specifically as an estimate of doses per square foot of cleanroom. That is a measure of production density. It should not be read as evidence that cells grow 100 times faster or that every customer's factory will produce 100 times more medicine.",
+        "The architecture offers a plausible reason for better use of space: instruments can be arranged vertically and robots can coordinate several operations in parallel. Removing manual handoffs can also reduce waiting between steps. The supplier's account remains a commercial source, and its estimates apply to the conditions behind the comparison.",
+        "For the cost figure, the useful denominator is an accepted dose produced through the complete workflow. Labor, consumables, equipment, maintenance, lost batches and quality review all contribute to that result. Savings in handling matter, but a manufacturer needs to understand where they appear in its own process.",
+        "This is also why manufacturing cost and the price paid for a treatment should be kept separate. More efficient production can improve the economics of supplying a medicine. The commercial path from that saving to patient access has other steps."
+      ]
+    },
+    {
+      "heading": "Building the machines is another scaling job",
+      "paragraphs": [
+        "Multiply has already begun organizing a larger equipment manufacturing operation. In May, it announced Multiply Labs Italia in Turin and appointed Enrico Antonio Racca as its founding general manager and the parent's supply chain and manufacturing chief.",
+        "Racca previously led supply chain and manufacturing at Scuderia Ferrari. Multiply assigned the Italian subsidiary responsibility for building a manufacturing team, developing the supply chain for cluster production and establishing quality systems for pharmaceutical environments.",
+        "That initiative gives the financing a tangible operational context. Scaling requires repeatable assembly, reliable suppliers, installation capacity and support after delivery. A customer buying production equipment is also buying confidence that the supplier can keep it working."
+      ]
+    },
+    {
+      "heading": "What comes next",
+      "paragraphs": [
+        "Black Scarab's view is that Multiply's strongest proposition is its attempt to bridge existing laboratory practice and repeatable robotic production. The published research gives that proposition a technical foundation. The financing and manufacturing expansion provide resources to take it further.",
+        "The next useful signals are protocols moving into routine production, repeat orders from existing customers and operating results that connect reliability with cost per accepted dose. Those milestones would show whether the company can turn a flexible robotic platform into manufacturing infrastructure that customers steadily expand."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Multiply Labs: Series B announcement, October 6, 2026",
+      "url": "https://www.multiplylabs.com/press/series-b-2026"
+    },
+    {
+      "label": "Axios Pro Rata: financing coverage, October 7, 2026",
+      "url": "https://www.axios.com/newsletters/axios-pro-rata-39a292f6-edf2-4429-b1d0-e562da2ba819"
+    },
+    {
+      "label": "Multiply Labs: product, instruments, consumables and software",
+      "url": "https://www.multiplylabs.com/product"
+    },
+    {
+      "label": "Multiply Labs: AstraZeneca collaboration announcement, January 27, 2026, distributed by Business Wire",
+      "url": "https://finance.yahoo.com/news/multiply-labs-announces-collaboration-automate-140000100.html"
+    },
+    {
+      "label": "Melocchi and colleagues: Development of a robotic cluster for automated and scalable cell therapy manufacturing, Cytotherapy, 2024",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38647505/"
+    },
+    {
+      "label": "Sadhu and colleagues: Performance of a modular robotic cluster matches skilled human operators for complex cell therapy manufacturing tasks, published online August 4, 2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42621923/"
+    },
+    {
+      "label": "Universal Robots: Multiply Labs supplier case study",
+      "url": "https://www.universal-robots.com/case-stories/multiply-labs/"
+    },
+    {
+      "label": "Multiply Labs: Italian manufacturing subsidiary announcement, May 27, 2026",
+      "url": "https://www.multiplylabs.com/press/enrico-racca-2026"
+    }
+  ],
+  "category": "Robotics and biomanufacturing",
+  "publishedDate": "2026-10-07",
+  "publishedLabel": "October 7, 2026",
+  "publishedAt": "2026-10-07T09:29:38-04:00"
+},
+  {
   slug: "unitree-dex5-s-robotic-hand",
   "title": "Unitree Dex5 S robotic hand: Price, specs and comparisons",
   "summary": "Unitree is offering its Dex5 S dexterous hand from $6,350, bringing a visible entry price to a compact component with 22 motorized degrees of freedom. The commercial question is whether accessible hardware can make manipulation research faster and, eventually, useful work cheaper.",
