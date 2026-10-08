@@ -2,6 +2,18 @@ import type { CaseStudyArticle } from "@/lib/case-studies";
 
 export const vibeManufacturingDeepDive = (): CaseStudyArticle => ({
   slug: "vibe-manufacturing-ai-physical-product-development",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "industrial-automation",
+      "additive-manufacturing"
+    ],
+    applications: [
+      "product-development",
+      "prototyping"
+    ]
+  },
   title: "Vibe Manufacturing: The Next AI Opportunity Has a Shop Floor",
   summary: "As AI makes physical products easier to design, small manufacturers could inherit a wave of prototype orders.",
   typeLabel: "Deep Dive",

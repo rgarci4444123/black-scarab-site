@@ -25,6 +25,16 @@ const johnDeere =
 
 export const whatIsPhysicalAiDeepDive = (): CaseStudyArticle => ({
   slug: "what-is-physical-ai-complete-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "embodied-ai",
+      "robotics",
+      "edge-ai"
+    ],
+    applications: []
+  },
   title: "What Is Physical AI? The Complete Guide to Intelligence That Acts in the Real World",
   seoTitle: "What Is Physical AI? Definition, Examples, Technology and Risks",
   summary:

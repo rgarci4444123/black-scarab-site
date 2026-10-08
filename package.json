@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run build:insight-social-images && npm run validate:news-social-images && next build && npm run validate:article-previews",
+    "build": "npm run build:insight-social-images && npm run validate:news-social-images && npm run validate:content-taxonomy && next build && npm run validate:article-previews",
     "build:insight-social-images": "node scripts/build-insight-social-images.mjs",
     "validate:article-previews": "node scripts/validate-article-previews.mjs",
     "start": "next start",
     "lint": "eslint",
     "validate:news-social-images": "node scripts/validate-news-social-images.mjs",
-    "submit:indexnow": "node scripts/submit-indexnow.mjs"
+    "submit:indexnow": "node scripts/submit-indexnow.mjs",
+    "validate:content-taxonomy": "node scripts/validate-content-taxonomy.mjs",
+    "test:content-taxonomy": "node --test scripts/content-taxonomy.test.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

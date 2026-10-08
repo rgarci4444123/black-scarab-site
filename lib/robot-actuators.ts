@@ -5,6 +5,15 @@ const coverCaption =
 
 export const robotActuatorsDeepDive = (): CaseStudyArticle => ({
   slug: "what-are-robot-actuators-motors-gears-costs-companies",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "actuators",
+      "sensors"
+    ],
+    applications: []
+  },
   title: "What Are Robot Actuators? Motors, Gears, Costs, and Companies",
   seoTitle: "What Are Robot Actuators? Types, Costs, and Companies",
   summary:

@@ -2,6 +2,19 @@ import type { CaseStudyArticle } from "@/lib/case-studies";
 
 export const industrialAutomationGuide = (): CaseStudyArticle => ({
   slug: "industrial-automation-explained-plc-cnc-robots-factory-software",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "industrial-automation",
+      "industrial-robotics",
+      "sensors",
+      "actuators"
+    ],
+    applications: [
+      "machine-tending"
+    ]
+  },
   title:
     "Industrial Automation Explained: PLCs, CNC Machines, Robots, Sensors, and Factory Software",
   seoTitle: "Industrial Automation Explained: PLCs, Robots, CNC, and Software",

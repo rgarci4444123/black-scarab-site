@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Nvidia Jetson Edge Computing: A Catalyst for AI Adoption in Latin America",
+    "href": "https://www.linkedin.com/pulse/nvidia-jetson-edge-computing-catalyst-ai-adoption-latin-america-badae/?trackingId=26fz0BvRqWFYa73FiYZEaw%3D%3D",
+    "primaryIndustry": "cross-industry",
+    "evidence": "An overview of how NVIDIA Jetson is accelerating practical AI adoption across Latin America through localized edge systems.",
+    "status": "proposed-summary-only"
+  },
+  {
+    "title": "The Reflexive Fleet: Edge AI Compute - Transportation & Logistics in LatAm",
+    "href": "https://www.linkedin.com/pulse/reflexive-fleet-edge-ai-compute-transportation-logistics-xcbze/?trackingId=DFssRfEFEY1RF3lkp2kHag%3D%3D",
+    "primaryIndustry": "transportation-mobility",
+    "evidence": "A look at how edge AI can improve logistics performance, fleet intelligence, and operational responsiveness across LatAm.",
+    "status": "proposed-summary-only"
+  },
+  {
+    "title": "The Precision Harvest: Edge AI Compute - Agriculture in LatAm",
+    "href": "https://www.linkedin.com/pulse/precision-harvest-edge-ai-compute-agriculture-latam-black-scarab-y8m8c/?trackingId=80skTvOUFJOjo5yxFXHHfw%3D%3D",
+    "primaryIndustry": "agriculture",
+    "evidence": "A breakdown of the hardware and edge AI stack enabling smarter drones, precision monitoring, and modern agriculture systems.",
+    "status": "proposed-summary-only"
+  },
+  {
+    "title": "The Autonomous Factory: Edge AI and the Nearshoring Gold Rush",
+    "href": "https://www.linkedin.com/pulse/autonomous-factory-edge-ai-nearshoring-gold-rush-black-scarab-ria9e/?trackingId=y%2FyXzdJtuCc%2FgZasfy%2FU4w%3D%3D",
+    "primaryIndustry": "manufacturing",
+    "evidence": "An exploration of how factories in LatAm can use edge AI to stay competitive as manufacturing and nearshoring accelerate.",
+    "status": "proposed-summary-only"
+  },
+  {
+    "title": "The Life-Saving Reflex: Edge AI & Decentralized Healthcare in LatAm",
+    "href": "https://www.linkedin.com/pulse/life-saving-reflex-edge-ai-decentralized-healthcare-latam-5ggce/?trackingId=y%2BRddqMXGj2DCeZSlxT5bg%3D%3D",
+    "primaryIndustry": "healthcare-life-sciences",
+    "evidence": "A look at how decentralized healthcare systems can use edge AI to bridge access gaps with portable diagnostics and smart devices.",
+    "status": "proposed-summary-only"
+  },
+  {
+    "title": "The Responsive Storefront: Edge AI & The Future of Retail in LatAm",
+    "href": "https://www.linkedin.com/pulse/responsive-storefront-edge-ai-future-retail-latam-black-scarab-bzaae/",
+    "primaryIndustry": "retail",
+    "evidence": "An exploration of how edge AI can transform retail operations through smarter storefronts, localized intelligence, and more responsive customer experiences.",
+    "status": "proposed-summary-only"
+  }
+]

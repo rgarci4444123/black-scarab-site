@@ -23,6 +23,21 @@ const lighthouseReport =
 
 export const physicalAiManufacturingGuide = (): CaseStudyArticle => ({
   slug: "physical-ai-manufacturing-robotics-machine-vision-digital-twins",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "industrial-robotics",
+      "machine-vision",
+      "digital-twins",
+      "edge-ai"
+    ],
+    applications: [
+      "inspection",
+      "quality-control",
+      "machine-tending"
+    ]
+  },
   title:
     "Physical AI in Manufacturing: Robotics, Machine Vision, Digital Twins, and Smart Factories",
   seoTitle: "Physical AI in Manufacturing: Robotics, Vision, and Digital Twins",

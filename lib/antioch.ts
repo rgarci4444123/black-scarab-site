@@ -14,6 +14,18 @@ const siliconAngle = "https://siliconangle.com/2026/09/08/antioch-raises-32m-to-
 
 export const antiochDeepDive = (): CaseStudyArticle => ({
   slug: "antioch-physical-ai-simulation-platform-deep-dive",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "simulation",
+      "digital-twins",
+      "robot-training-data"
+    ],
+    applications: [
+      "robot-testing"
+    ]
+  },
   title: "Antioch Deep Dive: Can Simulation Become the Test Layer for Physical AI?",
   seoTitle: "Antioch Physical AI Simulation Platform Deep Dive",
   summary:

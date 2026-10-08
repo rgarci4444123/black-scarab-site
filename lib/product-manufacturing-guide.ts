@@ -2,6 +2,18 @@ import type { CaseStudyArticle } from "@/lib/case-studies";
 
 export const productManufacturingGuide = (): CaseStudyArticle => ({
   slug: "how-a-product-is-manufactured-bill-of-materials-production-line",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "industrial-automation"
+    ],
+    applications: [
+      "product-development",
+      "assembly",
+      "quality-control"
+    ]
+  },
   title: "How a Product Is Manufactured: From Bill of Materials to Production Line",
   seoTitle: "How a Product Is Manufactured: Bill of Materials to Production Line",
   summary:

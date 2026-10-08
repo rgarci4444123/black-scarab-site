@@ -1,6 +1,8 @@
+import type { ArticleTaxonomy } from "@/lib/content-taxonomy";
 import { caseStudies } from "@/lib/case-studies";
 
 export type Insight = {
+  taxonomy: ArticleTaxonomy;
   title: string;
   summary: string;
   published: string;
@@ -22,6 +24,7 @@ const externalInsights: Insight[] = [
     published: "Published on LinkedIn",
     href: "https://www.linkedin.com/pulse/nvidia-jetson-edge-computing-catalyst-ai-adoption-latin-america-badae/?trackingId=26fz0BvRqWFYa73FiYZEaw%3D%3D",
     image: "/article-images/jetson-latam.png",
+    taxonomy: { primaryIndustry: "cross-industry", relevantIndustries: [], technologies: ["edge-ai"], applications: [] },
     kind: "external",
     ctaLabel: "Read on LinkedIn",
   },
@@ -32,6 +35,7 @@ const externalInsights: Insight[] = [
     published: "Published on LinkedIn",
     href: "https://www.linkedin.com/pulse/reflexive-fleet-edge-ai-compute-transportation-logistics-xcbze/?trackingId=DFssRfEFEY1RF3lkp2kHag%3D%3D",
     image: "/article-images/logistics-latam.png",
+    taxonomy: { primaryIndustry: "transportation-mobility", relevantIndustries: [], technologies: ["edge-ai"], applications: [] },
     kind: "external",
     ctaLabel: "Read on LinkedIn",
   },
@@ -42,6 +46,7 @@ const externalInsights: Insight[] = [
     published: "Published on LinkedIn",
     href: "https://www.linkedin.com/pulse/precision-harvest-edge-ai-compute-agriculture-latam-black-scarab-y8m8c/?trackingId=80skTvOUFJOjo5yxFXHHfw%3D%3D",
     image: "/article-images/agriculture-latam.png",
+    taxonomy: { primaryIndustry: "agriculture", relevantIndustries: [], technologies: ["edge-ai"], applications: [] },
     kind: "external",
     ctaLabel: "Read on LinkedIn",
   },
@@ -52,6 +57,7 @@ const externalInsights: Insight[] = [
     published: "Published on LinkedIn",
     href: "https://www.linkedin.com/pulse/autonomous-factory-edge-ai-nearshoring-gold-rush-black-scarab-ria9e/?trackingId=y%2FyXzdJtuCc%2FgZasfy%2FU4w%3D%3D",
     image: "/article-images/manufacturing-latam.png",
+    taxonomy: { primaryIndustry: "manufacturing", relevantIndustries: [], technologies: ["edge-ai"], applications: [] },
     kind: "external",
     ctaLabel: "Read on LinkedIn",
   },
@@ -62,6 +68,7 @@ const externalInsights: Insight[] = [
     published: "Published on LinkedIn",
     href: "https://www.linkedin.com/pulse/life-saving-reflex-edge-ai-decentralized-healthcare-latam-5ggce/?trackingId=y%2BRddqMXGj2DCeZSlxT5bg%3D%3D",
     image: "/article-images/healthcare-latam.png",
+    taxonomy: { primaryIndustry: "healthcare-life-sciences", relevantIndustries: [], technologies: ["edge-ai"], applications: [] },
     kind: "external",
     ctaLabel: "Read on LinkedIn",
   },
@@ -72,6 +79,7 @@ const externalInsights: Insight[] = [
     published: "Published on LinkedIn",
     href: "https://www.linkedin.com/pulse/responsive-storefront-edge-ai-future-retail-latam-black-scarab-bzaae/",
     image: "/article-images/retail-latam.png",
+    taxonomy: { primaryIndustry: "retail", relevantIndustries: [], technologies: ["edge-ai"], applications: [] },
     kind: "external",
     ctaLabel: "Read on LinkedIn",
   },
@@ -84,6 +92,7 @@ const internalInsights: Insight[] = [...caseStudies]
       new Date(`${a.publishedDate}T12:00:00`).getTime(),
   )
   .map((article) => ({
+  taxonomy: article.taxonomy,
   title: article.title,
   summary: article.summary,
   published: article.publishedLabel,

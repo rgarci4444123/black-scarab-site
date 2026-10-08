@@ -20,6 +20,19 @@ const sources = {
 
 export const mexicoAutomationDeepDive = (): CaseStudyArticle => ({
   slug: "mexico-physical-ai-manufacturing-nearshoring-automation",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "industrial-robotics",
+      "machine-vision",
+      "edge-ai"
+    ],
+    applications: [
+      "quality-control",
+      "machine-tending"
+    ]
+  },
   title: "Mexico Cannot Afford to Lose the Physical AI Race",
   seoTitle: "Mexico’s Physical AI Race: Manufacturing Beyond Cheap Labor",
   summary: "Mexico’s manufacturing future depends on turning nearshoring into a lasting productivity advantage. That makes deep adoption of physical AI a strategic necessity and a major opening for the companies that can deliver it.",

@@ -1,3 +1,4 @@
+import type { ArticleTaxonomy } from "@/lib/content-taxonomy";
 export type NewsSource = {
   label: string;
   url: string;
@@ -9,6 +10,7 @@ export type NewsSection = {
 };
 
 export type NewsUpdate = {
+  taxonomy: ArticleTaxonomy;
   slug: string;
   title: string;
   summary: string;
@@ -33,6 +35,17 @@ export type NewsUpdate = {
 export const newsUpdates: NewsUpdate[] = [
   {
   slug: "multiply-labs-series-b-robotic-biomanufacturing",
+  taxonomy: {
+    primaryIndustry: "healthcare-life-sciences",
+    relevantIndustries: [],
+    technologies: [
+      "industrial-robotics",
+      "robot-software"
+    ],
+    applications: [
+      "biomanufacturing"
+    ]
+  },
   "title": "Multiply Labs raises $75 million to move robotic drug manufacturing toward commercial scale",
   "summary": "Multiply Labs is financing a larger robotic equipment business around pharmaceutical workflows, with published task comparisons and a manufacturing expansion in Italy shaping its next phase.",
   "author": {
@@ -152,6 +165,16 @@ export const newsUpdates: NewsUpdate[] = [
 },
   {
   slug: "unitree-dex5-s-robotic-hand",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "manipulation",
+      "sensors",
+      "actuators"
+    ],
+    applications: []
+  },
   "title": "Unitree Dex5 S robotic hand: Price, specs and comparisons",
   "summary": "Unitree is offering its Dex5 S dexterous hand from $6,350, bringing a visible entry price to a compact component with 22 motorized degrees of freedom. The commercial question is whether accessible hardware can make manipulation research faster and, eventually, useful work cheaper.",
   "category": "Robotics and manipulation",
@@ -260,6 +283,17 @@ export const newsUpdates: NewsUpdate[] = [
 },
   {
   slug: "volvo-waabi-warp-customer-operations",
+  taxonomy: {
+    primaryIndustry: "transportation-mobility",
+    relevantIndustries: [],
+    technologies: [
+      "autonomous-vehicles",
+      "simulation"
+    ],
+    applications: [
+      "autonomous-freight"
+    ]
+  },
   "title": "Volvo and Waabi bring autonomous freight into Warp’s Texas network",
   "summary": "Volvo’s autonomous trucks are carrying Warp freight between Dallas and Houston, putting Waabi’s driving software to work inside a network that combines shipments from multiple customers. The commercial opportunity is to make those shared freight movements more productive, with driverless operations still ahead.",
   "category": "Deployment and autonomous systems",
@@ -377,6 +411,20 @@ export const newsUpdates: NewsUpdate[] = [
 },
 {
   slug: "robco-unicorn-alfie-launch",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "industrial-robotics",
+      "autonomous-mobile-robots",
+      "simulation",
+      "teleoperation"
+    ],
+    applications: [
+      "machine-tending",
+      "palletizing"
+    ]
+  },
   "title": "RobCo reaches a $1 billion valuation and puts Alfie on the launch calendar",
   "summary": "RobCo says it has passed a $1 billion valuation in a transaction that combines new investment with liquidity for employees. Alfie’s commercial launch is planned for March 4, 2027.",
   "category": "Robotics and Capital",
@@ -461,6 +509,18 @@ export const newsUpdates: NewsUpdate[] = [
 },
 {
   slug: "bonsai-world-rugged-autonomy",
+  taxonomy: {
+    primaryIndustry: "agriculture",
+    relevantIndustries: [],
+    technologies: [
+      "simulation",
+      "foundation-models",
+      "computer-vision"
+    ],
+    applications: [
+      "robot-testing"
+    ]
+  },
   "title": "Bonsai World puts the next farm inside a simulator before the robot arrives",
   "summary": "Bonsai Robotics introduced Bonsai World on October 2 to prepare rugged autonomy in simulated environments before deployment. Its commercial test is less repeated field work and dependable operation at new sites.",
   "category": "Autonomy Software",
@@ -551,6 +611,17 @@ export const newsUpdates: NewsUpdate[] = [
 },
   {
   slug: "anybotics-shift-industrial-inspection-upgrade",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "robot-software"
+    ],
+    applications: [
+      "inspection",
+      "predictive-maintenance"
+    ]
+  },
   "title": "ANYbotics Introduces Shift With an October Upgrade for Industrial Inspection Workflows",
   "summary": "ANYbotics is renaming Data Navigator as Shift, with an October software update designed to connect plant signals, robot inspections and maintenance action. Mixed hardware support remains a future direction.",
   "category": "Robotics Software",
@@ -649,6 +720,19 @@ export const newsUpdates: NewsUpdate[] = [
 },
   {
     slug: "destro-ai-seed-warehouse-robot-coordination",
+    taxonomy: {
+      primaryIndustry: "warehousing-logistics",
+      relevantIndustries: [],
+      technologies: [
+        "robot-software",
+        "computer-vision",
+        "simulation"
+      ],
+      applications: [
+        "material-handling",
+        "fleet-coordination"
+      ]
+    },
     "title": "Destro Raises $8M to Coordinate Mixed Robot Fleets in Warehouses",
     "summary": "Destro AI’s $8 million seed round backs software that coordinates warehouse robots and workers. Its Yusen cart movement deployment gives the thesis a concrete starting point.",
     "category": "Capital News",
@@ -748,6 +832,18 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "tangent-robotics-pre-seed-fine-motor-skills",
+    taxonomy: {
+      primaryIndustry: "manufacturing",
+      relevantIndustries: [],
+      technologies: [
+        "manipulation",
+        "sensors",
+        "robot-training-data"
+      ],
+      applications: [
+        "assembly"
+      ]
+    },
     "title": "Tangent raises 4.5 million dollars for fine manipulation in factories",
     "summary": "Tangent Robotics has raised $4.5 million to develop robot hands, touch sensing and learned motor skills for manufacturing. The commercial test is repeatable performance in delicate assembly work.",
     "category": "Capital News",
@@ -865,6 +961,17 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "aleph-autonomous-surgery-preseed",
+    taxonomy: {
+      primaryIndustry: "healthcare-life-sciences",
+      relevantIndustries: [],
+      technologies: [
+        "surgical-robotics",
+        "foundation-models"
+      ],
+      applications: [
+        "surgical-assistance"
+      ]
+    },
     "title": "a16z leads $7.5 million round for Aleph’s autonomous surgery program",
     "summary": "Aleph’s $7.5 million financing backs work on autonomous surgical robots. Its research program tests whether learned surgical skills can become dependable clinical work that expands access to care.",
     "category": "Capital News",
@@ -964,6 +1071,18 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "nvidia-vss-3-3-industrial-video-agents",
+    taxonomy: {
+      primaryIndustry: "manufacturing",
+      relevantIndustries: [],
+      technologies: [
+        "computer-vision",
+        "edge-ai"
+      ],
+      applications: [
+        "inspection",
+        "security-monitoring"
+      ]
+    },
     "title": "NVIDIA targets the cost of watching factory video with VSS 3.3",
     "summary": "NVIDIA’s VSS 3.3 announcement combines easier video agent assembly with adaptive sampling that reduces repeated model processing. Its reported efficiency gains put industrial video economics under a practical test.",
     "category": "Infrastructure News",
@@ -1069,6 +1188,18 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "dyna-taku-laundry-workflow",
+    taxonomy: {
+      primaryIndustry: "hospitality-services",
+      relevantIndustries: [],
+      technologies: [
+        "autonomous-mobile-robots",
+        "manipulation",
+        "embodied-ai"
+      ],
+      applications: [
+        "laundry-handling"
+      ]
+    },
     title: "Dyna’s Taku robot takes on the laundry room, beyond folding a towel",
     summary: "Dyna’s September 29 release combines a wheeled robot, learned physical skills and workflow reasoning in an hour-long laundry demonstration. The next test is repeated performance across real customer shifts.",
     category: "Robotics News",
@@ -1163,6 +1294,18 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
   "slug": "abb-e-device-tablet-robot-safety-interface",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "industrial-robotics",
+      "robot-software",
+      "simulation"
+    ],
+    applications: [
+      "robot-commissioning"
+    ]
+  },
   "title": "ABB brings robot programming to your tablet, with safety hardware attached",
   "summary": "ABB’s E-Device gives compatible Windows tablets and PCs access to OmniCore robot controls. The launch separates the screen from dedicated safety hardware and raises a practical question: how much of robot commissioning can become easier without changing the workcell?",
   "category": "Robotics News",
@@ -1256,6 +1399,17 @@ export const newsUpdates: NewsUpdate[] = [
 },
   {
     slug: "sharpa-iros-dexterous-manipulation-stack",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "manipulation",
+        "sensors",
+        "teleoperation",
+        "robot-training-data"
+      ],
+      applications: []
+    },
     title: "Sharpa links robot touch, motion, and training data at IROS",
     summary: "Sharpa has introduced the D01 robot, W02 tactile hand, and AE01 haptic data glove as a connected hardware stack for dexterous manipulation. The specifications are detailed and the integration story is credible, but pricing, delivery timing, independent benchmarks, and customer results remain undisclosed.",
     category: "Robotics News",
@@ -1389,6 +1543,16 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "amd-world-labs-8-2-billion-acquisition",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "foundation-models",
+        "spatial-ai",
+        "simulation"
+      ],
+      applications: []
+    },
     title: "AMD agrees to buy World Labs for $8.2 billion",
     summary: "AMD has agreed to acquire World Labs in an $8.2 billion all stock transaction that would bring spatial intelligence research and Fei Fei Li inside the chipmaker. The strategic logic is clear, but the price arrives before World Labs has disclosed meaningful commercial evidence for its newest models or robotics simulation work.",
     category: "AI Infrastructure",
@@ -1557,6 +1721,20 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "extend-robotics-result-as-a-service",
+    taxonomy: {
+      primaryIndustry: "manufacturing",
+      relevantIndustries: [
+        "agriculture"
+      ],
+      technologies: [
+        "industrial-robotics",
+        "teleoperation",
+        "robot-software"
+      ],
+      applications: [
+        "material-handling"
+      ]
+    },
     title: "Extend Robotics raises £2.6 million to sell completed work, not robots",
     summary: "Extend Robotics has raised £2.6 million to expand a service that charges manufacturers for completed tasks while combining remote operators, robot hardware, and increasing automation. The model lowers the barrier to a first deployment, but its economics still depend on reliability, operator leverage, and evidence from production.",
     category: "Robotics Business",
@@ -1717,6 +1895,16 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "microsoft-robot-inference-offloading-edge-cloud",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "ai-compute",
+        "robot-software"
+      ],
+      applications: []
+    },
     title: "Microsoft tests when robots should think beyond the machine",
     summary: "Microsoft researchers found that moving selected robot inference workloads to nearby or cloud GPUs could improve performance and battery life. The same experiments show why latency, bandwidth, and safety prevent a simple return to cloud robotics.",
     category: "Robotics Infrastructure",
@@ -1852,6 +2040,16 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "qualcomm-picknik-moveit-robotics-software",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "robot-software",
+        "manipulation",
+        "edge-ai"
+      ],
+      applications: []
+    },
     title: "Qualcomm reaches for the software layer that moves robots",
     summary: "Qualcomm has agreed to acquire PickNik, the company that leads development of MoveIt and sells the MoveIt Pro platform. The deal could connect robot manipulation software more closely with Dragonwing edge computing, but its value will depend on execution, community trust, and continued support for competing hardware.",
     category: "Robotics Software",
@@ -2003,6 +2201,19 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "amazon-indiana-robotics-manufacturing",
+    taxonomy: {
+      primaryIndustry: "manufacturing",
+      relevantIndustries: [
+        "warehousing-logistics"
+      ],
+      technologies: [
+        "industrial-robotics",
+        "autonomous-mobile-robots"
+      ],
+      applications: [
+        "robot-manufacturing"
+      ]
+    },
     title: "Amazon plans a $100 million Indiana robotics factory",
     summary: "Amazon will invest more than $100 million in a 585,000 square foot Greenwood manufacturing plant expected to open by 2028. The larger signal is a shift from proving individual warehouse robots to building the domestic factory network needed to deploy them at Amazon scale.",
     category: "Robotics Manufacturing",
@@ -2146,6 +2357,16 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "openai-general-purpose-robotics-team",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "embodied-ai",
+        "actuators",
+        "robot-training-data"
+      ],
+      applications: []
+    },
     title: "OpenAI is building more than a robot team",
     summary: "OpenAI is recruiting across robot software, custom actuators, manufacturing, data operations, and supply chain. The larger signal is an attempt to own the complete learning loop from physical work to training data, with infrastructure as the likely first proving ground and personal robots as the distant ambition.",
     category: "Robotics Strategy",
@@ -2311,6 +2532,16 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "softbank-robotics-ai-institute-acquisition",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "embodied-ai",
+        "manipulation",
+        "robot-training-data"
+      ],
+      applications: []
+    },
     title: "SoftBank agrees to buy Robotics and AI Institute, report says",
     summary: "SoftBank has reportedly agreed to acquire the research institute founded by Boston Dynamics creator Marc Raibert. The clearest opportunity is to connect its work in robot learning, manipulation, and mobility with the industrial scale SoftBank expects to gain through ABB Robotics, but the terms and integration plan remain undisclosed.",
     category: "Robotics Business",
@@ -2433,6 +2664,18 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "faraday-future-nine-robot-launch",
+    taxonomy: {
+      primaryIndustry: "public-safety-government",
+      relevantIndustries: [],
+      technologies: [
+        "humanoid-robotics",
+        "quadruped-robotics"
+      ],
+      applications: [
+        "security-monitoring",
+        "inspection"
+      ]
+    },
     title: "Faraday Future puts nine new robot configurations on sale",
     summary: "Faraday Future has expanded from electric vehicles into a 24 product robotics catalog spanning humanoids, quadrupeds, and mobile manipulators. The prices are public and the products are listed for sale, but the company still needs to prove demand, deployment performance, and a durable business beyond imported hardware.",
     category: "Robotics Business",
@@ -2565,6 +2808,16 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "d-robotics-series-c-robot-computing",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "ai-compute",
+        "robot-software"
+      ],
+      applications: []
+    },
     title: "D Robotics raises $400 million for the computing layer beneath robots",
     summary: "D Robotics plans to expand the chips and software that robot builders use for perception, reasoning, and control. The round is large, but the company did not disclose its valuation or identify the investors, and its shipment and adoption figures remain company claims.",
     category: "Funding News",
@@ -2688,6 +2941,18 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "figure-helix-2-5-zero-shot-homes",
+    taxonomy: {
+      primaryIndustry: "consumer-home",
+      relevantIndustries: [],
+      technologies: [
+        "humanoid-robotics",
+        "foundation-models",
+        "robot-training-data"
+      ],
+      applications: [
+        "household-tasks"
+      ]
+    },
     title: "Figure takes Helix 2.5 into 30 unfamiliar homes",
     summary: "Figure says Index pretraining raised complete task success from 9 percent to 56 percent across household work in 30 unseen homes. The transfer result is important, but the company has not published per task results, trial counts, operating speed, intervention frequency, or independent validation.",
     category: "Humanoid Robotics",
@@ -2805,6 +3070,18 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "watney-series-a-data-center-robots",
+    taxonomy: {
+      primaryIndustry: "data-centers",
+      relevantIndustries: [],
+      technologies: [
+        "manipulation",
+        "autonomous-mobile-robots"
+      ],
+      applications: [
+        "cable-handling",
+        "inspection"
+      ]
+    },
     title: "Watney raises $80 million to build robots for the data center boom",
     summary: "Watney says its robots are already working for major computing customers and have accumulated hundreds of thousands of operating hours. The funding is substantial, but the company has not disclosed its valuation, customer contracts, fleet size, revenue, or the measurement behind its reliability claim.",
     category: "Funding News",
@@ -2931,6 +3208,16 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "universal-robots-gen-7-ai-ready-cobot-platform",
+    taxonomy: {
+      primaryIndustry: "manufacturing",
+      relevantIndustries: [],
+      technologies: [
+        "collaborative-robotics",
+        "edge-ai",
+        "robot-software"
+      ],
+      applications: []
+    },
     title: "Universal Robots rebuilds its cobot platform for the AI factory",
     summary: "Gen 7 combines three new robot arms with a redesigned controller, tool interface, teach pendant, and software stack. The architecture may make advanced sensing and edge processing easier to deploy, but Universal Robots has not disclosed pricing or customer performance data.",
     category: "Robotics News",
@@ -3072,6 +3359,12 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "bain-capital-ventures-fund-xi-physical-ai",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [],
+      applications: []
+    },
     title: "Bain Capital Ventures raises $1.6 billion with physical AI in Fund XI",
     summary: "BCV has closed a $1.6 billion venture fund spanning artificial intelligence infrastructure, physical AI, science, security, and services. The scale is clear, but the firm has not disclosed how much capital will reach robotics or how quickly it will be deployed.",
     category: "Funding News",
@@ -3205,6 +3498,16 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "synaptics-tactile-sensing-edge-ai",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "sensors",
+        "edge-ai",
+        "simulation"
+      ],
+      applications: []
+    },
     title: "Synaptics brings robot touch and edge AI into NVIDIA Isaac Sim",
     summary: "A new simulated tactile module gives developers a way to model fingertip pressure while Synaptics positions local processing beside the sensor. The integration is real, but production performance and customer evidence remain undisclosed.",
     category: "Edge AI News",
@@ -3329,6 +3632,16 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "odyssey-3-foundation-world-model",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "foundation-models",
+        "simulation",
+        "embodied-ai"
+      ],
+      applications: []
+    },
     title: "Odyssey says one world model can control robots, cars, drones, and games",
     summary: "Odyssey 3 uses one pretrained visual backbone with small action layers for several physical and virtual systems. The demonstrations are unusually broad, but most results remain company reported and a public release is still weeks away.",
     category: "AI Systems News",
@@ -3462,6 +3775,19 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "agility-digit-5-humanoid-launch",
+    taxonomy: {
+      primaryIndustry: "warehousing-logistics",
+      relevantIndustries: [
+        "manufacturing"
+      ],
+      technologies: [
+        "humanoid-robotics",
+        "actuators"
+      ],
+      applications: [
+        "material-handling"
+      ]
+    },
     title: "Agility launches Digit 5 with heavier lifts, faster charging, and a safety push",
     summary: "The new industrial humanoid is designed to lift 50 pounds repeatedly, recharge in nine minutes, and work near people. Early access is planned for 2027, leaving safety validation and production scale as the next tests.",
     category: "Robotics News",
@@ -3582,6 +3908,16 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "reward-ai-om-1-human-demonstrations-robot-policy",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "foundation-models",
+        "robot-training-data",
+        "manipulation"
+      ],
+      applications: []
+    },
     title: "Reward AI says OM-1 learns robot skills directly from human demonstrations",
     summary: "The new policy is designed to move from a sensorized human hand to arms, mobile manipulators, and humanoids without teleoperation or on-robot training data. The launch shows an ambitious data strategy, but not yet a public benchmark or commercial product.",
     category: "Robotics News",
@@ -3703,6 +4039,18 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "hd-hyundai-aidin-robotics-tactile-sensors-shipyards",
+    taxonomy: {
+      primaryIndustry: "manufacturing",
+      relevantIndustries: [],
+      technologies: [
+        "sensors",
+        "manipulation",
+        "humanoid-robotics"
+      ],
+      applications: [
+        "surface-finishing"
+      ]
+    },
     title: "HD Hyundai backs AIDIN Robotics to bring touch sensing into shipyard robots",
     summary: "A KRW 13 billion investment connects force and tactile sensing with robot hands, surface finishing, and future humanoid work in shipyards. The commercial test will come on steel, not in a laboratory.",
     category: "Robotics News",
@@ -3828,6 +4176,17 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "ubtech-liuzhou-humanoid-robot-factory",
+    taxonomy: {
+      primaryIndustry: "manufacturing",
+      relevantIndustries: [],
+      technologies: [
+        "humanoid-robotics",
+        "industrial-automation"
+      ],
+      applications: [
+        "robot-manufacturing"
+      ]
+    },
     title: "UBTECH opens a humanoid robot factory designed to build 10,000 units a year",
     summary: "The Liuzhou plant is built around a ten minute line cadence and Siemens production software. The harder test is whether installed capacity becomes reliable output, customer deployments, and profit.",
     category: "Robotics News",
@@ -3945,6 +4304,18 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "samsung-sds-team-rex-robot-alliance",
+    taxonomy: {
+      primaryIndustry: "manufacturing",
+      relevantIndustries: [],
+      technologies: [
+        "robot-software",
+        "humanoid-robotics",
+        "simulation"
+      ],
+      applications: [
+        "fleet-coordination"
+      ]
+    },
     title: "Samsung SDS builds Team REX to bring ten robot companies onto the factory floor",
     summary: "The alliance brings together robot bodies, dexterous hands, learned behavior, data, and simulation. Samsung SDS wants to connect them to production through a robot orchestration platform planned for 2027.",
     category: "Robotics News",
@@ -4078,6 +4449,20 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "nokia-rajant-cognitive-operations-edge-ai",
+    taxonomy: {
+      primaryIndustry: "mining",
+      relevantIndustries: [
+        "public-safety-government"
+      ],
+      technologies: [
+        "edge-ai",
+        "digital-twins",
+        "sensors"
+      ],
+      applications: [
+        "operational-monitoring"
+      ]
+    },
     title: "Nokia and Rajant bring distributed edge AI into the field",
     summary:
       "Cognitive Operations combines rugged local computing, resilient communications, and a live operational picture for mines, emergency services, and other environments where the cloud may be too far away.",
@@ -4196,6 +4581,18 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "maven-robotics-series-a-industrial-robots",
+    taxonomy: {
+      primaryIndustry: "warehousing-logistics",
+      relevantIndustries: [],
+      technologies: [
+        "autonomous-mobile-robots",
+        "manipulation",
+        "embodied-ai"
+      ],
+      applications: [
+        "material-handling"
+      ]
+    },
     title: "Maven Robotics raises $100 million to automate warehouse work",
     summary:
       "The former Apple engineering team is emerging from stealth with customer deployments, a wheeled dual arm robot, and a task by task plan to build a broader industrial platform.",
@@ -4312,6 +4709,17 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "antioch-series-a-physical-ai-simulation",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "simulation",
+        "digital-twins"
+      ],
+      applications: [
+        "robot-testing"
+      ]
+    },
     title: "Antioch raises $32 million to make robot testing run like software",
     summary:
       "Greylock is backing a young simulation company that wants autonomy teams to test hardware, sensors, models, and control software across thousands of virtual scenarios before changes reach a real machine.",
@@ -4422,6 +4830,18 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "neura-robotics-series-c-production-test",
+    taxonomy: {
+      primaryIndustry: "manufacturing",
+      relevantIndustries: [],
+      technologies: [
+        "humanoid-robotics",
+        "collaborative-robotics",
+        "robot-training-data"
+      ],
+      applications: [
+        "robot-manufacturing"
+      ]
+    },
     title: "NEURA Robotics puts its $1.4 billion financing to the production test",
     summary:
       "The German robotics company has assembled an unusually large investor group and is already adding manufacturing partners, training facilities, and acquired robot businesses. The harder question is how much capital is committed today and how quickly it can become dependable production.",
@@ -4551,6 +4971,14 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "palantir-nebius-sovereign-ai-infrastructure-partnership",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "ai-compute"
+      ],
+      applications: []
+    },
     title: "Palantir turns to Nebius for sovereign AI infrastructure",
     summary: "The partnership connects enterprise AI software with dedicated compute capacity. Its commercial test will be whether customers gain useful control over their models without taking on an unmanageable operating burden.",
     category: "Physical AI News",
@@ -4642,6 +5070,19 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "palladyne-ai-fanuc-industrial-robots-physical-ai",
+    taxonomy: {
+      primaryIndustry: "manufacturing",
+      relevantIndustries: [],
+      technologies: [
+        "industrial-robotics",
+        "robot-software",
+        "teleoperation"
+      ],
+      applications: [
+        "assembly",
+        "material-handling"
+      ]
+    },
     title:
       "Palladyne AI and FANUC pair adaptive software with industrial robots",
     summary:
@@ -4776,6 +5217,17 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "tuya-smart-doova-ai-companion-robot-seniors",
+    taxonomy: {
+      primaryIndustry: "consumer-home",
+      relevantIndustries: [],
+      technologies: [
+        "autonomous-mobile-robots",
+        "embodied-ai"
+      ],
+      applications: [
+        "home-assistance"
+      ]
+    },
     title:
       "Tuya Smart unveils Doova, an AI home companion robot for seniors",
     summary:
@@ -4888,6 +5340,20 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "physical-superintelligence-raises-58-million-ai-physics-lab",
+    taxonomy: {
+      primaryIndustry: "data-centers",
+      relevantIndustries: [
+        "defense-aerospace"
+      ],
+      technologies: [
+        "simulation",
+        "foundation-models"
+      ],
+      applications: [
+        "facility-design",
+        "energy-optimization"
+      ]
+    },
     title:
       "Physical Superintelligence raises $58 million to build an AI native physics lab",
     summary:
@@ -5000,6 +5466,22 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "caterpillar-fieldai-industrial-ai-robots-digital-twins",
+    taxonomy: {
+      primaryIndustry: "manufacturing",
+      relevantIndustries: [
+        "construction",
+        "mining"
+      ],
+      technologies: [
+        "foundation-models",
+        "digital-twins",
+        "edge-ai"
+      ],
+      applications: [
+        "inspection",
+        "mapping"
+      ]
+    },
     title:
       "Caterpillar taps FieldAI to bring autonomous robots and digital twins to industrial sites",
     summary:
@@ -5134,6 +5616,16 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "lyte-raises-165-million-physical-ai-perception",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "sensors",
+        "spatial-ai",
+        "edge-ai"
+      ],
+      applications: []
+    },
     title:
       "Lyte raises $165 million at $1.6 billion valuation as investors pile into physical AI",
     summary:
@@ -5256,6 +5748,16 @@ export const newsUpdates: NewsUpdate[] = [
   },
   {
     slug: "xynova-prima-1-direct-drive-robotic-hand",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "manipulation",
+        "sensors",
+        "actuators"
+      ],
+      applications: []
+    },
     title:
       "Xynova introduces Prima 1, a direct drive robotic hand with 22 degrees of freedom",
     summary:

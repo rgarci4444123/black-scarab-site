@@ -1,0 +1,12 @@
+{
+  "internalArticleCoverage": 123,
+  "news": 42,
+  "insights": 81,
+  "externalArchiveRecords": 6,
+  "uniqueLegacyTags": 356,
+  "preservationChecks": 506,
+  "changedExistingFiles": [],
+  "runtimeIntegration": "pending-user-migration-review",
+  "visibleChanges": "none",
+  "deployment": "none"
+}

@@ -2,6 +2,17 @@ import type { CaseStudyArticle } from "@/lib/case-studies";
 
 export const foxgloveDeepDive = (): CaseStudyArticle => ({
   slug: "foxglove-robotics-data-platform-deep-dive",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "robot-software",
+      "robot-training-data"
+    ],
+    applications: [
+      "robot-observability"
+    ]
+  },
   title: "Foxglove Deep Dive: The Data Stack Behind Physical AI",
   seoTitle: "Foxglove: Robotics Data Platform, MCAP, Pricing, and Alternatives",
   summary:

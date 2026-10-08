@@ -2,6 +2,17 @@ import type { CaseStudyArticle } from "@/lib/case-studies";
 
 export const manufacturingPhysicalAiSeriesIntroduction = (): CaseStudyArticle => ({
   slug: "how-modern-manufacturing-works-factories-physical-ai-guide",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "industrial-automation",
+      "industrial-robotics"
+    ],
+    applications: [
+      "material-handling"
+    ]
+  },
   title:
     "How Modern Manufacturing Works: A Beginner's Guide to Factories and Physical AI",
   seoTitle: "How Modern Manufacturing Works and Where Physical AI Fits",

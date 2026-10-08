@@ -1,0 +1,2306 @@
+[
+  {
+    "legacyTag": "3D sensing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "AI CAD",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "AI accelerators",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "AI compute procurement",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "AI governance",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "AI hardware",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "AI in manufacturing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "AI infrastructure",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "AI investing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "AI training data",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "AMR",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "autonomous-mobile-robots"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "ANYbotics ANYmal",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "ANYmal X",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Agility Robotics Digit",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Amazon Proteus",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Antioch",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Atlas robot",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "BIM",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Boston Dynamics Atlas",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Boston Dynamics Spot",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "CNC machines",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Compute Exchange",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Cosmos",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "DGX",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "DGX Spark",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "DepalOne",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "DepthAI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Digit robot",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Digital manufacturing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "EDGE robot brain",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Edge Impulse",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Engineering agents",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Ex-zone robot",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "FANUC",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "FANUC factory automation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "FORT Robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Field Foundation Models",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "FieldAI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Figure 03",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Figure AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Flock Safety",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "FlockOS",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Foxglove",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "GPU marketplace",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "GXO robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Gecko Robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Gritt AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Gritt Foundation Model",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "H100 rental",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Hailo",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Hailo-10H",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Hailo-15",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Hailo-8",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Helix AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Hugging Face",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "InductOne",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Intuitive da Vinci 5",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Isaac",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Jeff Bezos",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Jetson",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "LM Studio",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "LeRobot",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "LiDAR",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Luxonis",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "MCAP",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "MLOps",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Mac Studio AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Mantara",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Metavision",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Mexico",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "NVIDIA",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "NVIDIA Halos",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "NVIDIA Isaac Sim",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "NVIDIA Jetson",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "NVIDIA acquisition",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "OAK 4",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "OAK cameras",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Ollama",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Omniverse",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Open WebUI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "OpenSpace",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Optimus robot",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Ouster",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "PLC basics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Palladyne AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Palladyne IQ",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Palladyne Pilot",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Persona AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Physical AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Physical Intelligence",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "PickOne",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Plus One Robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Prometheus",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Prophesee",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Qualcomm",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "ROS 2",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "RTX 3090",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "RTX 4090 workstation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "RTX 5090 workstation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Roboflow",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Robotics-as-a-Service",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "SGLang",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "SendCutSend",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Siemens versus Rockwell",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Skild AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Skild Brain",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Spot robot",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Stereolabs",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "SwarmOS",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "TensorRT-LLM",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Tesla Bot",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Tesla Optimus",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "TinyML",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "UR Series",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Unitree G1",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Universal Robots",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "VLA",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "VSLAM",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Viam",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Vibe Manufacturing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Vik Bajaj",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "Yonder",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "ZED cameras",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "adaptive robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "additive manufacturing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "additive-manufacturing"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "affordable humanoid robot",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "all-electric humanoid",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "artificial general engineer",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "assembly automation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "assembly"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "asset health",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "autonomous mobile robot",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "autonomous-mobile-robots"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "autonomous systems",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "autonomy",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "bill of materials",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "budget AI server",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "built world",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "chemical plant inspection",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "cobots",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "collaborative-robotics"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "collaborative robot arms",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "collaborative-robotics"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "computer vision",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "computer-vision"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "construction AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "construction robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "industry",
+      "slug": "construction"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "construction technology",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "data labeling",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "data-labeling"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "data monetization",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "defense sustainment",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "depalletizing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "depalletizing"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "developer robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "dexterous manipulation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "digital lidar",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "digital thread",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "digital twin technology",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "digital-twins"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "digital twins",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "digital-twins"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "discrete manufacturing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "drone as first responder",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "edge AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "edge-ai"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "edge AI robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "edge AI robots",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "egocentric video",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "embedded AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "edge-ai"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "embodied AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "embodied-ai"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "embodied AI investors",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "engineering AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "enterprise data licensing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "enterprise local AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "event-based vision",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "factory AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "factory automation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "factory commissioning",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "factory engineering",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "factory equipment",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "factory equipment cost",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "factory expansion",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "factory layout",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "factory layout design",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "factory startup cost",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "factory types",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "factory utilities",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "first production run",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "fleet management",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "fulfillment center automation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "functional safety",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "general-purpose humanoid",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "generalist robot policy",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "hardware abstraction",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "harmonic drives",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "healthcare robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "hospital automation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "how manufacturing works",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "how products are manufactured",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "how to build a manufacturing plant",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "human in the loop robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "humanoid research platform",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "humanoid robot",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "humanoid-robotics"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "humanoid robot actuators",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "humanoid robot anatomy",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "humanoid robot components",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "humanoid robot suppliers",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "humanoid robots",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "humanoid-robotics"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "industrial AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "industrial IoT",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "industrial automation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "industrial-automation"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "industrial automation companies",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "industrial automation venture capital",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "industrial autonomy",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "industrial humanoid",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "humanoid-robotics"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "industrial humanoid robots",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "humanoid-robotics"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "industrial inspection robot",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "industrial machinery",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "industrial robot software",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "robot-software"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "industrial robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "industrial-robotics"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "industrial robots",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "industrial-robotics"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "industrial sensors",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "sensors"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "industrial simulation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "simulation"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "infrastructure",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "injection molding",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "license plate recognition",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "llama.cpp",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "local AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "local AI for business",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "logistics automation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "logistics humanoid",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "machine builders",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "machine data",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "machine installation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "machine tending",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "machine-tending"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "machine vision",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "machine-vision"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "make versus buy",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "manufacturing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "industry",
+      "slug": "manufacturing"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "manufacturing AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "manufacturing automation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "manufacturing employees",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "manufacturing for beginners",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "manufacturing machines",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "manufacturing plant",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "manufacturing plant cost",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "manufacturing plant design",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "manufacturing process",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "manufacturing process flow",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "manufacturing software",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "mapping",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "mapping"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "material flow",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "medical robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "micro1",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "micro1 data partnerships",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "microcontrollers",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "mining robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "model deployment",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "model-deployment"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "multi-GPU server",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "nearshoring",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "neuromorphic vision",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "omni-bodied intelligence",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "open AI models",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "operating room technology",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "packaging automation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "packaging"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "parcel induction",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "parcel-induction"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "physical AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "physical AI factory",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "physical AI hardware",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "physical AI infrastructure",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "physical AI investors",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "physical AI manufacturing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "physical AI venture capital firms",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "physical AI venture funds",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "pi 0.7",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "pi0",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "plant site selection",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "predictive maintenance",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "predictive-maintenance"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "private AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "private AI infrastructure",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "process manufacturing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "production line",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "production routing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "production systems",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "progress tracking",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "progress-tracking"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "prototype to production",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "public safety technology",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "quadruped robot",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "quadruped-robotics"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "reality capture",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "reserved GPU compute",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robot GPUs",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robot actuator cost",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robot actuators",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "actuators"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "robot batteries",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robot cable harnesses",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robot fleet management",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robot foundation models",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "foundation-models"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "robot gearboxes",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robot intelligence",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robot joints",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robot learning",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robot machine tending",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "machine-tending"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "robot motors",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "actuators"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "robot observability",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robot safety",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robot suppliers",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robot tactile sensors",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "sensors"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "robot testing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "robot-testing"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "robot training data",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "robot-training-data"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "robot vision systems",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robot welding",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "welding"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "robot-assisted surgery",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "surgical-assistance"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "robotic inspection",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "inspection"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robotics ROI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robotics components",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robotics data collection",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "robot-training-data"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "robotics data platform",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robotics education",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robotics foundation models",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "foundation-models"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "robotics infrastructure",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robotics investors for startups",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robotics series",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robotics simulation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "simulation"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "robotics software",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "robot-software"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "robotics startup funding",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "robotics venture capital",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "sell company data to AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "sensor data",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "servo drives",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "shipbuilding automation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "sim to real",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "simulation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "simulation"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "small business AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "small manufacturer automation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "smart cameras",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "smart cities",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "smart factory",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "smart infrastructure",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "smart manufacturing",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "solar installation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "application",
+      "slug": "solar-installation"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "spatial AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "spatial-ai"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "spatial perception",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "spatial-ai"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "stereo depth",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "supervised autonomy",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "surgical robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "surgical-robotics"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "synthetic data",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "systems integrators",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "teleoperation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "teleoperation"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "top robots 2026",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "trusted control",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "vLLM",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "variable frequency drives",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "vertical integration",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "virtual commissioning",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "vision datasets",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "vision language action models",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "vision-language-action",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "visual AI",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "visual intelligence",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "warehouse automation",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "warehouse robotics",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "who builds factories",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "wireless emergency stop",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  },
+  {
+    "legacyTag": "world foundation models",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": {
+      "dimension": "technology",
+      "slug": "foundation-models"
+    },
+    "disposition": "article-specific-review"
+  },
+  {
+    "legacyTag": "world models",
+    "retainLegacyKeyword": true,
+    "normalizedConcept": null,
+    "disposition": "retain-context-keyword"
+  }
+]

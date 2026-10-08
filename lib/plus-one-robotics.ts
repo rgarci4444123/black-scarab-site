@@ -27,6 +27,20 @@ const ebook =
 
 export const plusOneRoboticsDeepDive = (): CaseStudyArticle => ({
   slug: "plus-one-robotics-supervised-autonomy-warehouse-automation-deep-dive",
+  taxonomy: {
+    primaryIndustry: "warehousing-logistics",
+    relevantIndustries: [],
+    technologies: [
+      "industrial-robotics",
+      "computer-vision",
+      "teleoperation"
+    ],
+    applications: [
+      "parcel-picking",
+      "parcel-induction",
+      "depalletizing"
+    ]
+  },
   title:
     "Plus One Robotics Deep Dive: The Economics of Supervised Warehouse Autonomy",
   seoTitle:

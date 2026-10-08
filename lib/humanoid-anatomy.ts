@@ -5,6 +5,17 @@ const atlasCaption =
 
 export const humanoidAnatomyDeepDive = (): CaseStudyArticle => ({
   slug: "humanoid-robot-anatomy-components-suppliers-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "humanoid-robotics",
+      "actuators",
+      "sensors",
+      "edge-ai"
+    ],
+    applications: []
+  },
   title:
     "Humanoid Robot Components and Suppliers: The Complete Hardware Anatomy Guide",
   seoTitle: "Humanoid Robot Components and Suppliers Guide",

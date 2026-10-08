@@ -25,6 +25,16 @@ const ulFieldEvaluation = "https://www.ul.com/services/field-evaluations";
 
 export const manufacturingPlantBuildGuide = (): CaseStudyArticle => ({
   slug: "how-to-build-a-manufacturing-plant-equipment-costs-installation",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "industrial-automation"
+    ],
+    applications: [
+      "factory-commissioning"
+    ]
+  },
   title:
     "How to Build a Manufacturing Plant: Equipment, Employees, Costs, Installation, and First Production",
   seoTitle: "How to Build a Manufacturing Plant: Equipment, Costs, and Launch",

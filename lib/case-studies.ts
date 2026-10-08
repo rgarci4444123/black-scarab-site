@@ -1,3 +1,4 @@
+import type { ArticleTaxonomy } from "@/lib/content-taxonomy";
 import { humanoidAnatomyDeepDive } from "@/lib/humanoid-anatomy";
 import { mexicoAutomationDeepDive } from "@/lib/mexico-automation";
 import { antiochDeepDive } from "@/lib/antioch";
@@ -283,6 +284,7 @@ export type CaseStudyBarChart = {
 };
 
 export type CaseStudyArticle = {
+  taxonomy: ArticleTaxonomy;
   reportingNotes?: CaseStudyParagraph[];
   readingMinutes?: number;
   slug: string;
@@ -337,6 +339,16 @@ export type CaseStudyArticle = {
 
 const localAiHobbyistGuide = (): CaseStudyArticle => ({
     slug: "local-ai-hobbyist-budget-guide",
+    taxonomy: {
+      primaryIndustry: "consumer-home",
+      relevantIndustries: [],
+      technologies: [
+        "ai-compute"
+      ],
+      applications: [
+        "model-deployment"
+      ]
+    },
     title: "Local AI for Hobbyists: The Best Low-Budget Setup",
     summary:
       "A practical buying and setup guide for hobbyists building a low-budget local AI box, covering used RTX 3090 builds, RTX 4060 Ti 16GB systems, RTX 4070 Ti Super and RTX 4080 Super options, Apple unified memory, and beginner software stacks.",
@@ -823,6 +835,16 @@ const localAiSourceLinks: CaseStudySourceLink[] = [
 
 const localAiSmallBusinessGuide = (): CaseStudyArticle => ({
   slug: "local-ai-small-business-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "ai-compute"
+    ],
+    applications: [
+      "model-deployment"
+    ]
+  },
   title: "Local AI for a One-Person Startup or Small Business",
   summary:
     "A practical local AI infrastructure guide for founders and small teams comparing RTX 4090 and RTX 5090 workstations, Apple Mac Studio, DGX Spark-class appliances, rackmount GPU servers, and workstation-plus-NAS architectures.",
@@ -1243,6 +1265,16 @@ const localAiSmallBusinessGuide = (): CaseStudyArticle => ({
 
 const localAiEnterpriseGuide = (): CaseStudyArticle => ({
   slug: "local-ai-enterprise-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "ai-compute"
+    ],
+    applications: [
+      "model-deployment"
+    ]
+  },
   title: "Local AI for Large Enterprises: Private AI Infrastructure at Scale",
   summary:
     "A practical enterprise guide to private local AI infrastructure, comparing DGX-class systems, multi-GPU rackmount servers, private inference clusters, hybrid local-cloud architecture, security, storage, monitoring, identity, backup, and model governance.",
@@ -1659,6 +1691,17 @@ const localAiEnterpriseGuide = (): CaseStudyArticle => ({
 
 const nvidiaPhysicalAiDeepDive = (): CaseStudyArticle => ({
   slug: "nvidia-physical-ai-cosmos-isaac-jetson-omniverse-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "foundation-models",
+      "simulation",
+      "digital-twins",
+      "edge-ai"
+    ],
+    applications: []
+  },
   title:
     "NVIDIA Physical AI Deep Dive: Cosmos, Isaac, Jetson, Omniverse, and the Edge AI Stack",
   summary:
@@ -1949,6 +1992,17 @@ const nvidiaPhysicalAiDeepDive = (): CaseStudyArticle => ({
 
 const prometheusPhysicalAiDeepDive = (): CaseStudyArticle => ({
   slug: "prometheus-industrial-ai-artificial-general-engineering-guide",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "foundation-models",
+      "simulation"
+    ],
+    applications: [
+      "product-development"
+    ]
+  },
   title:
     "Prometheus Deep Dive: Jeff Bezos, Vik Bajaj, Artificial General Engineering, and Industrial AI",
   summary:
@@ -2272,6 +2326,16 @@ const prometheusPhysicalAiDeepDive = (): CaseStudyArticle => ({
 
 const physicalIntelligenceDeepDive = (): CaseStudyArticle => ({
   slug: "physical-intelligence-generalist-robot-policy-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "foundation-models",
+      "embodied-ai",
+      "manipulation"
+    ],
+    applications: []
+  },
   title:
     "Physical Intelligence Deep Dive: pi 0.7, Generalist Robot Policies, and the Robot Intelligence Layer",
   summary:
@@ -2642,6 +2706,16 @@ const physicalIntelligenceDeepDive = (): CaseStudyArticle => ({
 
 const skildAiDeepDive = (): CaseStudyArticle => ({
   slug: "skild-ai-general-purpose-robot-brain-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "foundation-models",
+      "embodied-ai",
+      "robot-software"
+    ],
+    applications: []
+  },
   title:
     "Skild AI Deep Dive: General-Purpose Robot Brain, Omni-Bodied Intelligence, and Physical AI Deployment",
   summary:
@@ -3036,6 +3110,17 @@ const skildAiDeepDive = (): CaseStudyArticle => ({
 
 const viamDeepDive = (): CaseStudyArticle => ({
   slug: "viam-robotics-software-platform-physical-ai-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "robot-software",
+      "edge-ai"
+    ],
+    applications: [
+      "fleet-coordination"
+    ]
+  },
   title:
     "Viam Deep Dive: Robotics Software Infrastructure, Fleet Management, Edge AI, and Programmable Machines",
   summary:
@@ -3434,6 +3519,16 @@ const viamDeepDive = (): CaseStudyArticle => ({
 
 const fortRoboticsDeepDive = (): CaseStudyArticle => ({
   slug: "fort-robotics-trust-layer-physical-ai-safety-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "robot-software"
+    ],
+    applications: [
+      "robot-safety"
+    ]
+  },
   title:
     "FORT Robotics Deep Dive: The Trust Layer for Physical AI, Safety-Certified Control, and Supervised Autonomy",
   summary:
@@ -3813,6 +3908,18 @@ const fortRoboticsDeepDive = (): CaseStudyArticle => ({
 
 const edgeImpulseDeepDive = (): CaseStudyArticle => ({
   slug: "edge-impulse-embedded-ai-mlops-physical-ai-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "edge-ai",
+      "computer-vision",
+      "sensors"
+    ],
+    applications: [
+      "model-deployment"
+    ]
+  },
   title:
     "Edge Impulse Deep Dive: Embedded AI MLOps, TinyML, and the Physical AI Deployment Layer",
   summary:
@@ -4175,6 +4282,18 @@ const edgeImpulseDeepDive = (): CaseStudyArticle => ({
 
 const roboflowDeepDive = (): CaseStudyArticle => ({
   slug: "roboflow-computer-vision-platform-physical-ai-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "computer-vision",
+      "robot-software"
+    ],
+    applications: [
+      "data-labeling",
+      "model-deployment"
+    ]
+  },
   title:
     "Roboflow Deep Dive: Computer Vision Infrastructure, Visual Data, and the Physical AI Perception Layer",
   summary:
@@ -4554,6 +4673,17 @@ const roboflowDeepDive = (): CaseStudyArticle => ({
 
 const luxonisDeepDive = (): CaseStudyArticle => ({
   slug: "luxonis-oak-spatial-ai-cameras-physical-ai-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "sensors",
+      "computer-vision",
+      "spatial-ai",
+      "edge-ai"
+    ],
+    applications: []
+  },
   title:
     "Luxonis Deep Dive: OAK Cameras, Spatial AI, and the Edge Perception Computer",
   summary:
@@ -4925,6 +5055,18 @@ const luxonisDeepDive = (): CaseStudyArticle => ({
 
 const stereolabsDeepDive = (): CaseStudyArticle => ({
   slug: "stereolabs-zed-spatial-perception-robotics-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "sensors",
+      "spatial-ai",
+      "robot-software"
+    ],
+    applications: [
+      "mapping"
+    ]
+  },
   title:
     "Stereolabs Deep Dive: ZED Cameras, Stereo Depth, and the Robotics Spatial Perception Stack",
   summary:
@@ -5341,6 +5483,16 @@ const stereolabsDeepDive = (): CaseStudyArticle => ({
 
 const propheseeDeepDive = (): CaseStudyArticle => ({
   slug: "prophesee-event-based-vision-physical-ai-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "sensors",
+      "computer-vision",
+      "machine-vision"
+    ],
+    applications: []
+  },
   title:
     "Prophesee Deep Dive: Event-Based Vision, Neuromorphic Cameras, and the Motion Layer of Physical AI",
   summary:
@@ -5731,6 +5883,16 @@ const propheseeDeepDive = (): CaseStudyArticle => ({
 
 const hailoDeepDive = (): CaseStudyArticle => ({
   slug: "hailo-edge-ai-acceleration-physical-ai-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "edge-ai",
+      "ai-compute",
+      "computer-vision"
+    ],
+    applications: []
+  },
   title:
     "Hailo Deep Dive: Edge AI Acceleration, Low-Power Inference, and the Physical AI Compute Layer",
   summary:
@@ -6141,6 +6303,15 @@ const hailoDeepDive = (): CaseStudyArticle => ({
 
 const ousterDeepDive = (): CaseStudyArticle => ({
   slug: "ouster-lidar-spatial-perception-physical-ai-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "sensors",
+      "spatial-ai"
+    ],
+    applications: []
+  },
   title:
     "Ouster Deep Dive: Digital LiDAR, Spatial Perception, and the 3D Sensing Layer of Physical AI",
   summary:
@@ -6586,6 +6757,23 @@ const ousterDeepDive = (): CaseStudyArticle => ({
 
 const geckoRoboticsDeepDive = (): CaseStudyArticle => ({
   slug: "gecko-robotics-asset-health-physical-ai-guide",
+  taxonomy: {
+    primaryIndustry: "energy-utilities",
+    relevantIndustries: [
+      "manufacturing",
+      "mining",
+      "defense-aerospace"
+    ],
+    technologies: [
+      "robotics",
+      "sensors",
+      "robot-software"
+    ],
+    applications: [
+      "inspection",
+      "predictive-maintenance"
+    ]
+  },
   title:
     "Gecko Robotics Deep Dive: Industrial Asset Health, Robotic Inspection, and the Physical AI Data Layer",
   summary:
@@ -7072,6 +7260,19 @@ const geckoRoboticsDeepDive = (): CaseStudyArticle => ({
 
 const openspaceDeepDive = (): CaseStudyArticle => ({
   slug: "openspace-construction-reality-capture-physical-ai-guide",
+  taxonomy: {
+    primaryIndustry: "construction",
+    relevantIndustries: [],
+    technologies: [
+      "computer-vision",
+      "spatial-ai",
+      "robot-software"
+    ],
+    applications: [
+      "site-inspection",
+      "progress-tracking"
+    ]
+  },
   title:
     "OpenSpace Deep Dive: Construction Reality Capture, Visual Intelligence, and the Built-World Data Layer",
   summary:
@@ -7526,6 +7727,18 @@ const openspaceDeepDive = (): CaseStudyArticle => ({
 
 const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
   slug: "top-15-physical-ai-infrastructure-companies",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "foundation-models",
+      "edge-ai",
+      "sensors",
+      "robot-software",
+      "simulation"
+    ],
+    applications: []
+  },
   title: "Top 15 Physical AI Infrastructure Companies to Watch in 2026",
   summary:
     "A deeper investor and operator map of the companies building the infrastructure layer for physical AI: engineering models, edge compute, robot intelligence, spatial cameras, LiDAR, deployment software, safety systems, and industrial reality data.",
@@ -7887,6 +8100,22 @@ const physicalAiInfrastructureCompaniesGuide = (): CaseStudyArticle => ({
 
 const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
   slug: "top-10-robots-edge-ai-automation-humanoid-robotics",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [
+      "warehousing-logistics",
+      "healthcare-life-sciences"
+    ],
+    technologies: [
+      "humanoid-robotics",
+      "industrial-robotics",
+      "autonomous-mobile-robots"
+    ],
+    applications: [
+      "material-handling",
+      "inspection"
+    ]
+  },
   title:
     "Top 10 Robots Transforming the World in 2026: Edge AI, Humanoids, Cobots, and Autonomous Systems",
   summary:
@@ -8187,6 +8416,20 @@ const topRobotsEdgeAiGuide = (): CaseStudyArticle => ({
 
 const bostonDynamicsSpotDeepDive = (): CaseStudyArticle => ({
   slug: "boston-dynamics-spot-robot-industrial-inspection-guide",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [
+      "energy-utilities"
+    ],
+    technologies: [
+      "quadruped-robotics",
+      "sensors",
+      "edge-ai"
+    ],
+    applications: [
+      "inspection"
+    ]
+  },
   title:
     "Boston Dynamics Spot Robot Deep Dive: Industrial Inspection, Pricing, ROI, and Edge AI Use Cases",
   summary:
@@ -8564,6 +8807,21 @@ const bostonDynamicsSpotDeepDive = (): CaseStudyArticle => ({
 
 const anyboticsAnymalDeepDive = (): CaseStudyArticle => ({
   slug: "anybotics-anymal-industrial-inspection-robot-guide",
+  taxonomy: {
+    primaryIndustry: "energy-utilities",
+    relevantIndustries: [
+      "mining",
+      "manufacturing"
+    ],
+    technologies: [
+      "quadruped-robotics",
+      "sensors",
+      "edge-ai"
+    ],
+    applications: [
+      "inspection"
+    ]
+  },
   title:
     "ANYbotics ANYmal Deep Dive: Industrial Inspection Robots for Energy, Mining, Chemicals, and Heavy Industry",
   summary:
@@ -8955,6 +9213,17 @@ const anyboticsAnymalDeepDive = (): CaseStudyArticle => ({
 
 const teslaOptimusDeepDive = (): CaseStudyArticle => ({
   slug: "tesla-optimus-vertically-integrated-humanoid-robot-guide",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "humanoid-robotics",
+      "embodied-ai"
+    ],
+    applications: [
+      "material-handling"
+    ]
+  },
   title:
     "Tesla Optimus Deep Dive: Vertically Integrated Humanoid Robots, Factory AI, Pricing, ROI, and Deployment Strategy",
   summary:
@@ -9365,6 +9634,21 @@ const teslaOptimusDeepDive = (): CaseStudyArticle => ({
 
 const universalRobotsUrSeriesDeepDive = (): CaseStudyArticle => ({
   slug: "universal-robots-ur-series-cobot-automation-guide",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "collaborative-robotics",
+      "manipulation"
+    ],
+    applications: [
+      "machine-tending",
+      "palletizing",
+      "assembly",
+      "welding",
+      "packaging"
+    ]
+  },
   title:
     "Universal Robots UR Series Deep Dive: Collaborative Robot Arms, Machine Tending, Packaging, Assembly, Pricing, ROI, and Deployment Strategy",
   summary:
@@ -9816,6 +10100,17 @@ const universalRobotsUrSeriesDeepDive = (): CaseStudyArticle => ({
 
 const amazonProteusDeepDive = (): CaseStudyArticle => ({
   slug: "amazon-proteus-autonomous-mobile-warehouse-robot-guide",
+  taxonomy: {
+    primaryIndustry: "warehousing-logistics",
+    relevantIndustries: [],
+    technologies: [
+      "autonomous-mobile-robots",
+      "computer-vision"
+    ],
+    applications: [
+      "material-handling"
+    ]
+  },
   title:
     "Amazon Proteus Deep Dive: Autonomous Mobile Warehouse Robots, Computer Vision, Logistics ROI, Safety, and Deployment Strategy",
   summary:
@@ -10216,6 +10511,18 @@ const amazonProteusDeepDive = (): CaseStudyArticle => ({
 
 const unitreeG1DeepDive = (): CaseStudyArticle => ({
   slug: "unitree-g1-affordable-humanoid-robot-research-platform-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "humanoid-robotics",
+      "embodied-ai",
+      "teleoperation"
+    ],
+    applications: [
+      "robot-training"
+    ]
+  },
   title:
     "Unitree G1 Deep Dive: Affordable Humanoid Robots, Embodied AI Research, Pricing, ROI, and Deployment Strategy",
   summary:
@@ -10617,6 +10924,18 @@ const unitreeG1DeepDive = (): CaseStudyArticle => ({
 
 const bostonDynamicsAtlasDeepDive = (): CaseStudyArticle => ({
   slug: "boston-dynamics-atlas-industrial-humanoid-robot-guide",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "humanoid-robotics",
+      "manipulation"
+    ],
+    applications: [
+      "material-handling",
+      "assembly"
+    ]
+  },
   title:
     "Boston Dynamics Atlas Deep Dive: All-Electric Humanoid Robots, Industrial Mobility, Manipulation, Pricing, ROI, and Deployment Strategy",
   summary:
@@ -10989,6 +11308,18 @@ const bostonDynamicsAtlasDeepDive = (): CaseStudyArticle => ({
 
 const figure03DeepDive = (): CaseStudyArticle => ({
   slug: "figure-03-general-purpose-humanoid-robot-guide",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "humanoid-robotics",
+      "foundation-models",
+      "manipulation"
+    ],
+    applications: [
+      "material-handling"
+    ]
+  },
   title:
     "Figure 03 Deep Dive: General-Purpose Humanoid Robots, Helix AI, Dexterous Manipulation, Pricing, ROI, and Deployment Strategy",
   summary:
@@ -11411,6 +11742,17 @@ const figure03DeepDive = (): CaseStudyArticle => ({
 
 const agilityRoboticsDigitDeepDive = (): CaseStudyArticle => ({
   slug: "agility-robotics-digit-logistics-humanoid-robot-guide",
+  taxonomy: {
+    primaryIndustry: "warehousing-logistics",
+    relevantIndustries: [],
+    technologies: [
+      "humanoid-robotics",
+      "robot-software"
+    ],
+    applications: [
+      "material-handling"
+    ]
+  },
   title:
     "Agility Robotics Digit Deep Dive: Logistics Humanoid Robots, Warehouse Automation, Pricing, ROI, and Deployment Strategy",
   summary:
@@ -11783,6 +12125,17 @@ const agilityRoboticsDigitDeepDive = (): CaseStudyArticle => ({
 
 const intuitiveDaVinci5DeepDive = (): CaseStudyArticle => ({
   slug: "intuitive-da-vinci-5-surgical-robotics-platform-guide",
+  taxonomy: {
+    primaryIndustry: "healthcare-life-sciences",
+    relevantIndustries: [],
+    technologies: [
+      "surgical-robotics",
+      "sensors"
+    ],
+    applications: [
+      "surgical-assistance"
+    ]
+  },
   title:
     "Intuitive da Vinci 5 Deep Dive: Surgical Robotics, Hospital ROI, Pricing, Adoption, and Deployment Strategy",
   summary:
@@ -12179,6 +12532,16 @@ const intuitiveDaVinci5DeepDive = (): CaseStudyArticle => ({
 
 const huggingFaceDeepDive = (): CaseStudyArticle => ({
   slug: "hugging-face-open-ai-platform-pricing-robotics-nvidia-deep-dive",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "foundation-models",
+      "robot-software",
+      "robot-training-data"
+    ],
+    applications: []
+  },
   title:
     "Hugging Face Deep Dive: How the Open AI Platform Works, Pricing, Robotics, and the NVIDIA Deal",
   summary:
@@ -13378,6 +13741,19 @@ const huggingFaceDeepDive = (): CaseStudyArticle => ({
 
 const personaAiDeepDive = (): CaseStudyArticle => ({
   slug: "persona-ai-industrial-humanoid-robot-welding-shipbuilding-deep-dive",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "humanoid-robotics",
+      "teleoperation",
+      "manipulation"
+    ],
+    applications: [
+      "welding",
+      "surface-finishing"
+    ]
+  },
   title:
     "Persona AI Deep Dive: Industrial Humanoid Robots for Welding and Shipbuilding",
   summary:
@@ -14163,6 +14539,21 @@ const personaAiDeepDive = (): CaseStudyArticle => ({
 
 const fieldAiDeepDive = (): CaseStudyArticle => ({
   slug: "fieldai-edge-robot-foundation-model-industrial-autonomy-deep-dive",
+  taxonomy: {
+    primaryIndustry: "construction",
+    relevantIndustries: [
+      "public-safety-government"
+    ],
+    technologies: [
+      "foundation-models",
+      "edge-ai",
+      "robot-software"
+    ],
+    applications: [
+      "site-inspection",
+      "mapping"
+    ]
+  },
   title:
     "FieldAI Deep Dive: Robot Foundation Models, Hardware Stack, Customers, and Pricing",
   summary:
@@ -15190,6 +15581,16 @@ const fieldAiDeepDive = (): CaseStudyArticle => ({
 
 const computeExchangeDeepDive = (): CaseStudyArticle => ({
   slug: "compute-exchange-gpu-marketplace-deep-dive",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "ai-compute"
+    ],
+    applications: [
+      "compute-procurement"
+    ]
+  },
   title: "The Best Way to Source GPU Compute in 2026",
   summary:
     "Compute Exchange Deep Dive: How its marketplace helps organizations source reserved GPU capacity and future commitments, and how it compares with hyperscalers, specialist GPU clouds, and direct deals.",
@@ -15766,6 +16167,19 @@ const computeExchangeDeepDive = (): CaseStudyArticle => ({
 
 const flockSafetyDeepDive = (): CaseStudyArticle => ({
   slug: "flock-safety-platform-hardware-business-model-pricing",
+  taxonomy: {
+    primaryIndustry: "public-safety-government",
+    relevantIndustries: [],
+    technologies: [
+      "computer-vision",
+      "sensors",
+      "drones"
+    ],
+    applications: [
+      "security-monitoring",
+      "emergency-response"
+    ]
+  },
   title:
     "Flock Safety Deep Dive: Hardware, Business Model, Pricing, and Tradeoffs",
   summary:
@@ -16403,6 +16817,17 @@ export const caseStudies: CaseStudyArticle[] = [
   localAiHobbyistGuide(),
   {
     slug: "case-study-agriculture-chemical-waste",
+    taxonomy: {
+      primaryIndustry: "agriculture",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "computer-vision"
+      ],
+      applications: [
+        "agricultural-spraying"
+      ]
+    },
     title:
       "Case Study #1 — The $20-per-Acre Advantage: How Edge AI Solved Agriculture's Chemical Waste Problem",
     summary:
@@ -16480,6 +16905,18 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "case-study-manufacturing-zero-defect-advantage",
+    taxonomy: {
+      primaryIndustry: "manufacturing",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "machine-vision"
+      ],
+      applications: [
+        "quality-control",
+        "inspection"
+      ]
+    },
     title:
       "Case Study #2 — The Zero-Defect Advantage: How Edge AI Revolutionized Automotive Quality Control",
     summary:
@@ -16559,6 +16996,20 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "case-study-smart-cities-lamppost-platform",
+    taxonomy: {
+      primaryIndustry: "public-safety-government",
+      relevantIndustries: [
+        "transportation-mobility"
+      ],
+      technologies: [
+        "edge-ai",
+        "sensors",
+        "computer-vision"
+      ],
+      applications: [
+        "operational-monitoring"
+      ]
+    },
     title:
       "Case Study #3: Singapore's Smart Nation – The Lamppost-as-a-Platform (LaaP)",
     summary:
@@ -16638,6 +17089,17 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "case-study-retail-real-time-inventory",
+    taxonomy: {
+      primaryIndustry: "retail",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "computer-vision"
+      ],
+      applications: [
+        "inventory-monitoring"
+      ]
+    },
     title:
       "Case Study #4: Walmart's Intelligent Retail Lab – Edge AI for Real-Time Inventory",
     summary:
@@ -16717,6 +17179,18 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "case-study-logistics-smart-sorting-hubs",
+    taxonomy: {
+      primaryIndustry: "warehousing-logistics",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "industrial-robotics",
+        "machine-vision"
+      ],
+      applications: [
+        "parcel-sorting"
+      ]
+    },
     title:
       "Case Study #5: FedEx's Smart Sorting Hubs – Edge AI for High-Velocity Logistics",
     summary:
@@ -16791,6 +17265,17 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "case-study-healthcare-point-of-care-diagnostics",
+    taxonomy: {
+      primaryIndustry: "healthcare-life-sciences",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "sensors"
+      ],
+      applications: [
+        "diagnostic-assistance"
+      ]
+    },
     title:
       "Case Study #6: Mount Sinai & Butterfly Network – Edge AI for Point-of-Care Diagnostics",
     summary:
@@ -16871,6 +17356,17 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "case-study-smart-cities-urban-deterrence",
+    taxonomy: {
+      primaryIndustry: "public-safety-government",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "computer-vision"
+      ],
+      applications: [
+        "security-monitoring"
+      ]
+    },
     title:
       "Case Study #7: Las Vegas Valley – Solar-Powered Edge AI for Urban Deterrence",
     summary:
@@ -16947,6 +17443,18 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "case-study-burro-autonomous-farming",
+    taxonomy: {
+      primaryIndustry: "agriculture",
+      relevantIndustries: [],
+      technologies: [
+        "autonomous-mobile-robots",
+        "edge-ai",
+        "computer-vision"
+      ],
+      applications: [
+        "material-handling"
+      ]
+    },
     title:
       "Case Study #8: Burro's Edge AI Robots for Autonomous Farming in Table Grapes and Berries",
     summary:
@@ -17035,6 +17543,17 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "case-study-medtronic-gi-genius-edge-ai-colonoscopy",
+    taxonomy: {
+      primaryIndustry: "healthcare-life-sciences",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "computer-vision"
+      ],
+      applications: [
+        "diagnostic-assistance"
+      ]
+    },
     title:
       "Case Study #9: Medtronic GI Genius and Edge AI for Real-Time Colonoscopy Detection",
     summary:
@@ -17122,6 +17641,17 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "case-study-coca-cola-hbc-ar-edge-ai-warehouse-logistics",
+    taxonomy: {
+      primaryIndustry: "warehousing-logistics",
+      relevantIndustries: [],
+      technologies: [
+        "augmented-reality",
+        "edge-ai"
+      ],
+      applications: [
+        "warehouse-picking"
+      ]
+    },
     title:
       "Case Study #10: Coca-Cola HBC Warehouse Logistics with AR Picking and Edge AI",
     summary:
@@ -17213,6 +17743,16 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "edge-ai-roadmap-top-10-platforms",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "ai-compute",
+        "computer-vision"
+      ],
+      applications: []
+    },
     title:
       "The Edge AI Roadmap: 10 Platforms Shaping the Future of Edge Computing",
     summary:
@@ -17407,6 +17947,15 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "nvidia-jetson-agx-orin-edge-ai-guide",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "ai-compute"
+      ],
+      applications: []
+    },
     title:
       "Why NVIDIA Jetson AGX Orin Leads Edge AI in 2026",
     summary:
@@ -17537,6 +18086,19 @@ export const caseStudies: CaseStudyArticle[] = [
   ,
   {
     slug: "tesla-ai5-hw5-guide",
+    taxonomy: {
+      primaryIndustry: "transportation-mobility",
+      relevantIndustries: [
+        "manufacturing"
+      ],
+      technologies: [
+        "ai-compute",
+        "autonomous-vehicles"
+      ],
+      applications: [
+        "autonomous-driving"
+      ]
+    },
     title:
       "Tesla AI5 (HW5) Latest Update: Release Timeline, Specs, and Production Outlook for 2026",
     summary:
@@ -17649,6 +18211,16 @@ export const caseStudies: CaseStudyArticle[] = [
   ,
   {
     slug: "raspberry-pi-5-hailo-8-guide",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "ai-compute",
+        "computer-vision"
+      ],
+      applications: []
+    },
     title:
       "Raspberry Pi 5 + Hailo-8: Why the AI HAT+ Is a Top Edge AI Platform in 2026",
     summary:
@@ -17766,6 +18338,16 @@ export const caseStudies: CaseStudyArticle[] = [
   ,
   {
     slug: "google-coral-edge-tpu-guide",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "ai-compute",
+        "computer-vision"
+      ],
+      applications: []
+    },
     title:
       "Google Coral Edge TPU: Why the USB Accelerator and Dev Board Still Matter in 2026",
     summary:
@@ -17886,6 +18468,19 @@ export const caseStudies: CaseStudyArticle[] = [
   ,
   {
     slug: "apple-mac-mini-local-llm-guide",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [
+        "healthcare-life-sciences"
+      ],
+      technologies: [
+        "ai-compute",
+        "foundation-models"
+      ],
+      applications: [
+        "model-deployment"
+      ]
+    },
     title:
       "Apple Mac mini for Local LLMs: Why M-Series Macs Are a Private AI Hub in 2026",
     summary:
@@ -17990,6 +18585,20 @@ export const caseStudies: CaseStudyArticle[] = [
   ,
   {
     slug: "qualcomm-robotics-rb5-guide",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [
+        "agriculture"
+      ],
+      technologies: [
+        "edge-ai",
+        "drones",
+        "robot-software"
+      ],
+      applications: [
+        "autonomous-delivery"
+      ]
+    },
     title:
       "Qualcomm Robotics RB5: Why It Matters for 5G Robotics, Drones, and Edge AI in 2026",
     summary:
@@ -18093,6 +18702,18 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "arduino-nicla-vision-guide",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "sensors",
+        "computer-vision"
+      ],
+      applications: [
+        "predictive-maintenance"
+      ]
+    },
     title:
       "Arduino Nicla Vision: Why It Matters for TinyML, Edge Impulse, and Edge AI in 2026",
     summary:
@@ -18196,6 +18817,18 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "intel-openvino-movidius-guide",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "robot-software",
+        "computer-vision"
+      ],
+      applications: [
+        "model-deployment"
+      ]
+    },
     title:
       "Intel OpenVINO: Cross-Platform Edge AI for CPUs, GPUs, NPUs, and Movidius in 2026",
     summary:
@@ -18314,6 +18947,17 @@ export const caseStudies: CaseStudyArticle[] = [
   ,
   {
     slug: "cerebras-wse-3-guide",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "ai-compute",
+        "foundation-models"
+      ],
+      applications: [
+        "model-deployment"
+      ]
+    },
     title:
       "Cerebras WSE-3: Why Wafer-Scale AI Matters for Inference, Physical AI, and Edge Infrastructure in 2026",
     summary:
@@ -18485,6 +19129,16 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "amd-kria-k26-guide",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "edge-ai",
+        "ai-compute",
+        "machine-vision"
+      ],
+      applications: []
+    },
     title:
       "AMD Xilinx Kria K26: Adaptive Edge AI for Vitis AI, Robotics, and Vision in 2026",
     summary:
@@ -18609,6 +19263,16 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "local-ai-server-guide",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [],
+      technologies: [
+        "ai-compute"
+      ],
+      applications: [
+        "model-deployment"
+      ]
+    },
     title:
       "How to Build Your First Local AI Server in 2026: Hardware, VRAM, Bandwidth, and Software",
     summary:
@@ -19017,6 +19681,23 @@ export const caseStudies: CaseStudyArticle[] = [
   },
   {
     slug: "luxonis-oak-d-guide",
+    taxonomy: {
+      primaryIndustry: "cross-industry",
+      relevantIndustries: [
+        "construction",
+        "retail"
+      ],
+      technologies: [
+        "sensors",
+        "spatial-ai",
+        "computer-vision",
+        "edge-ai"
+      ],
+      applications: [
+        "security-monitoring",
+        "inventory-monitoring"
+      ]
+    },
     title:
       "Luxonis OAK-D / DepthAI: Spatial AI, Stereo Depth, and Edge Computer Vision in 2026",
     summary:

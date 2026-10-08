@@ -2,6 +2,22 @@ import type { CaseStudyArticle } from "@/lib/case-studies";
 
 export const manufacturingMachinesGuide = (): CaseStudyArticle => ({
   slug: "types-of-manufacturing-machines-factory-equipment-guide",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "industrial-automation",
+      "industrial-robotics",
+      "additive-manufacturing"
+    ],
+    applications: [
+      "welding",
+      "assembly",
+      "inspection",
+      "material-handling",
+      "packaging"
+    ]
+  },
   title: "Types of Manufacturing Machines: A Beginner's Guide to Factory Equipment",
   seoTitle: "Types of Manufacturing Machines and Factory Equipment Explained",
   summary:

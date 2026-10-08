@@ -11,6 +11,22 @@ const swarm = "https://www.palladyneai.com/products/ai-software/swarmos/";
 
 export const palladyneAiDeepDive = (): CaseStudyArticle => ({
   slug: "palladyne-ai-edge-physical-ai-robotics-deep-dive",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [
+      "defense-aerospace"
+    ],
+    technologies: [
+      "robot-software",
+      "edge-ai",
+      "industrial-robotics",
+      "drones"
+    ],
+    applications: [
+      "assembly",
+      "inspection"
+    ]
+  },
   title: "Palladyne AI Deep Dive: Edge AI, Robot Software, Hardware, and Pricing",
   seoTitle: "Palladyne AI: Edge AI, Robotics, Hardware and Pricing",
   summary: "Inside Palladyne IQ, Pilot, and SwarmOS: how local robot intelligence works, which companies supply the hardware, what the FANUC collaboration changes, and how buyers should assess performance, cost, and deployment.",

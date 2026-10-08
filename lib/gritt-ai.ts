@@ -14,6 +14,20 @@ const reporting = "https://thenextweb.com/news/gritt-32m-physical-ai-constructio
 
 export const grittAiDeepDive = (): CaseStudyArticle => ({
   slug: "gritt-ai-construction-robotics-solar-foundation-model-deep-dive",
+  taxonomy: {
+    primaryIndustry: "construction",
+    relevantIndustries: [
+      "energy-utilities"
+    ],
+    technologies: [
+      "foundation-models",
+      "computer-vision",
+      "edge-ai"
+    ],
+    applications: [
+      "solar-installation"
+    ]
+  },
   title: "Gritt AI Deep Dive: Teaching Construction Equipment to Build Solar Farms",
   seoTitle: "Gritt AI: Construction Robotics, Solar and Foundation Models",
   summary: "Inside Gritt's construction foundation model, solar installation systems and field learning loop, with analysis of hardware integration, worker detection, deployment evidence and contractor economics.",

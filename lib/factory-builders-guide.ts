@@ -2,6 +2,17 @@ import type { CaseStudyArticle } from "@/lib/case-studies";
 
 export const factoryBuildersGuide = (): CaseStudyArticle => ({
   slug: "who-builds-a-factory-siemens-rockwell-fanuc-integrators",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "industrial-automation",
+      "industrial-robotics"
+    ],
+    applications: [
+      "machine-tending"
+    ]
+  },
   title:
     "Who Builds a Factory? Siemens, Rockwell, FANUC, Machine Builders, and Integrators Explained",
   seoTitle:

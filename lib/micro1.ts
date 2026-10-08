@@ -14,6 +14,16 @@ const disclosure = "Black Scarab may receive a referral fee if your company join
 
 export const micro1DeepDive = (): CaseStudyArticle => ({
   slug: "sell-company-data-ai-micro1-data-partnerships-referrals",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "robot-training-data"
+    ],
+    applications: [
+      "data-licensing"
+    ]
+  },
   title: "Sell Your Company Data to AI: micro1's $1 Million Opportunity",
   seoTitle: "Sell Company Data to AI: micro1's $1 Million Opportunity",
   summary: "Your company's everyday work could become a new revenue source. What micro1 pays for business data, how participation works, and what to know before sharing your records.",

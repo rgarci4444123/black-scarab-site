@@ -51,6 +51,17 @@ const costMethod = "https://doi.org/10.1016/j.jmsy.2025.04.004";
 
 export const digitalTwinsDeepDive = (): CaseStudyArticle => ({
   slug: "what-are-digital-twins-complete-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "digital-twins",
+      "simulation"
+    ],
+    applications: [
+      "simulation-validation"
+    ]
+  },
   title:
     "What Are Digital Twins? How Living Models of the Physical World Actually Work",
   seoTitle: "What Are Digital Twins? Technology, Companies, Costs and Impact",

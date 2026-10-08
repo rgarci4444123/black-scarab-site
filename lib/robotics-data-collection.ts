@@ -20,6 +20,18 @@ const coreMatter = "https://read.corematter.com/p/physical-ai-value-stack-framew
 
 export const roboticsDataCollectionDeepDive = (): CaseStudyArticle => ({
   slug: "robotics-data-collection-robot-training-data-guide",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [
+      "robot-training-data",
+      "teleoperation",
+      "simulation"
+    ],
+    applications: [
+      "robot-training"
+    ]
+  },
   title: "Robotics Data Collection: 7 Ways Robots Get Training Data",
   seoTitle: "Robotics Data Collection: 7 Robot Training Data Sources",
   summary:

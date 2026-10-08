@@ -2,6 +2,12 @@ import type { CaseStudyArticle } from "@/lib/case-studies";
 
 export const physicalAiVentureFundsDeepDive = (): CaseStudyArticle => ({
   slug: "top-15-physical-ai-venture-capital-firms-funds",
+  taxonomy: {
+    primaryIndustry: "cross-industry",
+    relevantIndustries: [],
+    technologies: [],
+    applications: []
+  },
   title: "Top 15 Physical AI Venture Capital Firms and Funds in 2026",
   seoTitle: "Top 15 Physical AI Venture Capital Firms in 2026",
   summary:

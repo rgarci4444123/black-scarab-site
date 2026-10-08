@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 1,
+  "industries": [
+    {
+      "slug": "manufacturing",
+      "label": "Manufacturing",
+      "archiveEnabled": false
+    },
+    {
+      "slug": "construction",
+      "label": "Construction",
+      "archiveEnabled": false
+    },
+    {
+      "slug": "warehousing-logistics",
+      "label": "Warehousing & Logistics",
+      "archiveEnabled": false
+    },
+    {
+      "slug": "transportation-mobility",
+      "label": "Transportation & Mobility",
+      "archiveEnabled": false
+    },
+    {
+      "slug": "mining",
+      "label": "Mining",
+      "archiveEnabled": false
+    },
+    {
+      "slug": "energy-utilities",
+      "label": "Energy & Utilities",
+      "archiveEnabled": false
+    },
+    {
+      "slug": "agriculture",
+      "label": "Agriculture",
+      "archiveEnabled": false
+    },
+    {
+      "slug": "healthcare-life-sciences",
+      "label": "Healthcare & Life Sciences",
+      "archiveEnabled": false
+    },
+    {
+      "slug": "data-centers",
+      "label": "Data Centers",
+      "archiveEnabled": false
+    },
+    {
+      "slug": "public-safety-government",
+      "label": "Public Safety & Government",
+      "archiveEnabled": false
+    },
+    {
+      "slug": "retail",
+      "label": "Retail",
+      "archiveEnabled": false
+    },
+    {
+      "slug": "hospitality-services",
+      "label": "Hospitality & Services",
+      "archiveEnabled": false
+    },
+    {
+      "slug": "consumer-home",
+      "label": "Consumer & Home",
+      "archiveEnabled": false
+    },
+    {
+      "slug": "defense-aerospace",
+      "label": "Defense & Aerospace",
+      "archiveEnabled": false
+    },
+    {
+      "slug": "cross-industry",
+      "label": "Physical AI",
+      "archiveEnabled": false
+    }
+  ],
+  "technologies": [
+    {
+      "slug": "humanoid-robotics",
+      "label": "Humanoid Robotics"
+    },
+    {
+      "slug": "industrial-robotics",
+      "label": "Industrial Robotics"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "machine-vision",
+      "label": "Machine Vision"
+    },
+    {
+      "slug": "edge-ai",
+      "label": "Edge AI"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "slug": "digital-twins",
+      "label": "Digital Twins"
+    },
+    {
+      "slug": "sensors",
+      "label": "Sensors"
+    },
+    {
+      "slug": "actuators",
+      "label": "Actuators"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    },
+    {
+      "slug": "drones",
+      "label": "Drones"
+    },
+    {
+      "slug": "manipulation",
+      "label": "Manipulation"
+    },
+    {
+      "slug": "robot-software",
+      "label": "Robot Software"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "collaborative-robotics",
+      "label": "Collaborative Robotics"
+    },
+    {
+      "slug": "quadruped-robotics",
+      "label": "Quadruped Robotics"
+    },
+    {
+      "slug": "autonomous-mobile-robots",
+      "label": "Autonomous Mobile Robots"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "robot-training-data",
+      "label": "Robot Training Data"
+    },
+    {
+      "slug": "ai-compute",
+      "label": "AI Compute"
+    },
+    {
+      "slug": "industrial-automation",
+      "label": "Industrial Automation"
+    },
+    {
+      "slug": "spatial-ai",
+      "label": "Spatial Ai"
+    },
+    {
+      "slug": "additive-manufacturing",
+      "label": "Additive Manufacturing"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    }
+  ],
+  "applications": [
+    {
+      "slug": "agricultural-spraying",
+      "label": "Agricultural Spraying"
+    },
+    {
+      "slug": "assembly",
+      "label": "Assembly"
+    },
+    {
+      "slug": "autonomous-delivery",
+      "label": "Autonomous Delivery"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "Autonomous Driving"
+    },
+    {
+      "slug": "autonomous-freight",
+      "label": "Autonomous Freight"
+    },
+    {
+      "slug": "biomanufacturing",
+      "label": "Biomanufacturing"
+    },
+    {
+      "slug": "cable-handling",
+      "label": "Cable Handling"
+    },
+    {
+      "slug": "compute-procurement",
+      "label": "Compute Procurement"
+    },
+    {
+      "slug": "data-labeling",
+      "label": "Data Labeling"
+    },
+    {
+      "slug": "data-licensing",
+      "label": "Data Licensing"
+    },
+    {
+      "slug": "depalletizing",
+      "label": "Depalletizing"
+    },
+    {
+      "slug": "diagnostic-assistance",
+      "label": "Diagnostic Assistance"
+    },
+    {
+      "slug": "emergency-response",
+      "label": "Emergency Response"
+    },
+    {
+      "slug": "energy-optimization",
+      "label": "Energy Optimization"
+    },
+    {
+      "slug": "facility-design",
+      "label": "Facility Design"
+    },
+    {
+      "slug": "factory-commissioning",
+      "label": "Factory Commissioning"
+    },
+    {
+      "slug": "fleet-coordination",
+      "label": "Fleet Coordination"
+    },
+    {
+      "slug": "home-assistance",
+      "label": "Home Assistance"
+    },
+    {
+      "slug": "household-tasks",
+      "label": "Household Tasks"
+    },
+    {
+      "slug": "inspection",
+      "label": "Inspection"
+    },
+    {
+      "slug": "inventory-monitoring",
+      "label": "Inventory Monitoring"
+    },
+    {
+      "slug": "laundry-handling",
+      "label": "Laundry Handling"
+    },
+    {
+      "slug": "machine-tending",
+      "label": "Machine Tending"
+    },
+    {
+      "slug": "mapping",
+      "label": "Mapping"
+    },
+    {
+      "slug": "material-handling",
+      "label": "Material Handling"
+    },
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    },
+    {
+      "slug": "operational-monitoring",
+      "label": "Operational Monitoring"
+    },
+    {
+      "slug": "packaging",
+      "label": "Packaging"
+    },
+    {
+      "slug": "palletizing",
+      "label": "Palletizing"
+    },
+    {
+      "slug": "parcel-induction",
+      "label": "Parcel Induction"
+    },
+    {
+      "slug": "parcel-picking",
+      "label": "Parcel Picking"
+    },
+    {
+      "slug": "parcel-sorting",
+      "label": "Parcel Sorting"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "product-development",
+      "label": "Product Development"
+    },
+    {
+      "slug": "progress-tracking",
+      "label": "Progress Tracking"
+    },
+    {
+      "slug": "prototyping",
+      "label": "Prototyping"
+    },
+    {
+      "slug": "quality-control",
+      "label": "Quality Control"
+    },
+    {
+      "slug": "robot-commissioning",
+      "label": "Robot Commissioning"
+    },
+    {
+      "slug": "robot-manufacturing",
+      "label": "Robot Manufacturing"
+    },
+    {
+      "slug": "robot-observability",
+      "label": "Robot Observability"
+    },
+    {
+      "slug": "robot-safety",
+      "label": "Robot Safety"
+    },
+    {
+      "slug": "robot-testing",
+      "label": "Robot Testing"
+    },
+    {
+      "slug": "robot-training",
+      "label": "Robot Training"
+    },
+    {
+      "slug": "security-monitoring",
+      "label": "Security Monitoring"
+    },
+    {
+      "slug": "simulation-validation",
+      "label": "Simulation Validation"
+    },
+    {
+      "slug": "site-inspection",
+      "label": "Site Inspection"
+    },
+    {
+      "slug": "solar-installation",
+      "label": "Solar Installation"
+    },
+    {
+      "slug": "surface-finishing",
+      "label": "Surface Finishing"
+    },
+    {
+      "slug": "surgical-assistance",
+      "label": "Surgical Assistance"
+    },
+    {
+      "slug": "warehouse-picking",
+      "label": "Warehouse Picking"
+    },
+    {
+      "slug": "welding",
+      "label": "Welding"
+    }
+  ]
+}

@@ -2,6 +2,17 @@ import type { CaseStudyArticle } from "@/lib/case-studies";
 
 export const manufacturingPlantDesignGuide = (): CaseStudyArticle => ({
   slug: "how-to-design-a-manufacturing-plant-layout-process-flow",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "digital-twins",
+      "simulation"
+    ],
+    applications: [
+      "facility-design"
+    ]
+  },
   title:
     "How to Design a Manufacturing Plant: Process Flow, Factory Layout, Utilities, and Site Selection",
   seoTitle: "How to Design a Manufacturing Plant and Factory Layout",

@@ -2,6 +2,18 @@ import type { CaseStudyArticle } from "@/lib/case-studies";
 
 export const manufacturingPlantDeepDive = (): CaseStudyArticle => ({
   slug: "what-is-a-manufacturing-plant-factory-types-production-flow",
+  taxonomy: {
+    primaryIndustry: "manufacturing",
+    relevantIndustries: [],
+    technologies: [
+      "industrial-automation"
+    ],
+    applications: [
+      "assembly",
+      "quality-control",
+      "material-handling"
+    ]
+  },
   title:
     "Learn to See a Factory: What Every Room, Process, and Production Flow Actually Does",
   seoTitle:
