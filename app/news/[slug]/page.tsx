@@ -151,7 +151,7 @@ export default async function NewsArticlePage({ params }: Props) {
   };
 
   return (
-    <main className="min-h-screen bg-[#f6f4ef] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
+    <main className="min-h-screen bg-[#f5f5f7] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema).replace(/</g, "\\u003c") }}
@@ -160,7 +160,7 @@ export default async function NewsArticlePage({ params }: Props) {
         <SiteHeader homeHref="/" />
 
         <article>
-          <header className="border-b border-[#e8e3da] bg-[#fffdfa] px-6 py-12 md:px-10 md:py-16 lg:px-14 lg:py-20">
+          <header className="border-b border-[#e8e3da] bg-white px-6 py-12 md:px-10 md:py-16 lg:px-14 lg:py-20">
             <div className="mx-auto max-w-4xl">
               <Link href="/news" className="text-sm font-medium text-[#526147] transition hover:text-[#111827]">
                 Back to Physical AI News

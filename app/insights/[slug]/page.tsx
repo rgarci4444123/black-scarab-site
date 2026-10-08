@@ -235,7 +235,7 @@ export default async function CaseStudyPage({ params }: Props) {
   };
 
   return (
-    <main className={`min-h-screen px-4 py-4 text-[#111827] sm:px-6 lg:px-8 ${article.background === "white" ? "bg-white" : "bg-[#f6f4ef]"}`}>
+    <main className="min-h-screen bg-[#f5f5f7] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -248,7 +248,7 @@ export default async function CaseStudyPage({ params }: Props) {
 
         <article data-insight-article>
           <InsightReadTracker slug={article.slug} />
-          <section className={`border-b border-[#efeae1] px-6 py-14 md:px-10 md:py-18 ${article.background === "white" ? "bg-white" : "bg-[#faf8f3]"}`}>
+          <section className="border-b border-[#efeae1] bg-white px-6 py-14 md:px-10 md:py-18">
             <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
               <div>
                 <nav
@@ -322,7 +322,7 @@ export default async function CaseStudyPage({ params }: Props) {
                   fill
                   loading="eager"
                   sizes="(min-width: 1024px) 50vw, 100vw"
-                  className={article.imageFit === "contain" ? `object-contain ${article.background === "white" ? "bg-white" : "bg-[#f6f4ef]"}` : "object-cover"}
+                  className={article.imageFit === "contain" ? "object-contain bg-white" : "object-cover"}
                 />
                 <div className={article.imageFit === "contain" ? "aspect-video" : "h-[320px] lg:h-[440px]"} />
                 </div>
