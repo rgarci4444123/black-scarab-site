@@ -11,7 +11,7 @@
 .head h1{font-weight:400;font-size:clamp(42px,5.5vw,76px);line-height:1.08;letter-spacing:-.038em;margin:22px 0;max-width:1050px}
 .dek{font-size:clamp(22px,2.2vw,29px);line-height:1.45;color:#536151;max-width:880px;margin:0}
 .byline{margin:28px 0 0;display:flex;gap:14px;align-items:center;font:13px/1.6 Arial,sans-serif}
-.byline img{border-radius:50%;object-fit:cover}
+.byline img{width:48px;height:48px;border-radius:50%;object-fit:cover}
 .byline strong{display:block;font-size:14px}
 .byline span{color:#5e6c62}
 .dot{margin-inline:7px}
@@ -38,7 +38,7 @@
 .sources a{text-decoration:none}
 .sources a:hover{text-decoration:underline}
 .authorCard{max-width:760px;margin:55px auto 0;padding:28px;border:1px solid #d6ddcf;border-radius:14px;background:#fff;display:flex;gap:24px;align-items:center;font-family:Arial,sans-serif}
-.authorCard>img{border-radius:50%;object-fit:cover;flex-shrink:0}
+.authorCard>img{width:88px;height:88px;border-radius:50%;object-fit:cover;flex-shrink:0}
 .authorCard .eyebrow{font-size:10px;margin:0 0 10px}
 .authorCard strong{font-size:17px;line-height:1.4}
 .authorCard p:not(.eyebrow){font-size:14px;line-height:1.7;color:#5e6c62;margin:10px 0}
