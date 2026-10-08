@@ -34,6 +34,123 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+  slug: "arrive-ai-ap3-plus-edge-vision",
+  "taxonomy": {
+    "primaryIndustry": "warehousing-logistics",
+    "relevantIndustries": [
+      "healthcare-life-sciences",
+      "manufacturing"
+    ],
+    "technologies": [
+      "edge-ai",
+      "computer-vision",
+      "autonomous-mobile-robots"
+    ],
+    "applications": [
+      "autonomous-delivery"
+    ]
+  },
+  "title": "Arrive AI Announces AP3 Plus Availability With Edge Vision",
+  "summary": "The upgraded delivery endpoint moves package recognition onto the device as Arrive AI works to turn hospital experience into a repeatable commercial product.",
+  "category": "Deployment",
+  "publishedDate": "2026-10-08",
+  "publishedAt": "2026-10-08T15:15:20-04:00",
+  "publishedLabel": "October 8, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/arrive-ai-ap3-plus-edge-vision.png",
+  "imageAlt": "A coral paper package entering a cobalt receiving compartment beneath a compact camera lens.",
+  "imageCaption": "Original Black Scarab editorial illustration of a package transfer and local vision.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "The AP3 Plus runs package recognition locally on an NVIDIA Jetson Orin Nano",
+    "Hancock Regional Hospital's earlier pilot highlights the tradeoffs in unattended package transfers",
+    "Second quarter revenue was $14,700, underscoring how early the commercial business remains"
+  ],
+  "sections": [
+    {
+      "heading": "The announcement",
+      "paragraphs": [
+        "Arrive AI said October 7 that the AP3 Plus is available for shipping. The delivery endpoint is designed for unattended deposits by couriers, robots and drones. Its upgrade adds local recognition of package presence, orientation and status.",
+        "The practical question is what happens at the transfer. A vehicle reaching the correct address is only part of a delivery. The receiving system must establish that the package has arrived, keep it accessible to the intended recipient and allow the vehicle to leave. A mistake there can consume the staff time that automation was supposed to save."
+      ]
+    },
+    {
+      "heading": "Computing at the handoff",
+      "paragraphs": [
+        "Arrive says the AP3 Plus stores package data locally, with optional cloud access and backup. Its Arrive OS handles machine communication and events such as robot status and door position. The unit uses cellular or wireless connectivity and standard 120 volt power. Compatibility depends on a robot or drone physically interfacing with the opening automatically.",
+        "NVIDIA's Jetson modules provide compact computing for AI inference at the edge. In this application, that means image interpretation can happen close to the camera rather than requiring every recognition task to travel to a remote server. That architecture can shorten the path between seeing a package and acting on the result. It does not establish that dispatch, authorization and recovery from a failed transfer all work without connectivity.",
+        "The distinction matters because Arrive's own March account of its hospital deployment identified sensor reliability, clear handoff signals and connectivity as operational constraints. Package detection determines when the next step can begin. A false indication that a compartment is empty could interrupt the transfer sequence; an uncertain status can leave staff checking what happened manually. Local vision addresses a relevant part of that workflow, although its value will depend on performance under ordinary operating conditions."
+      ]
+    },
+    {
+      "heading": "What the hospital is buying",
+      "paragraphs": [
+        "Hancock Regional Hospital in Indiana provides evidence of an actual operating setting. WFYI reported in October 2025 that the hospital was using a robot and two docking units under a pilot arrangement costing about $90,000 annually, according to hospital officials. The report also observed an initial difficulty retrieving a container before the robot completed its trip. Those observations concern the earlier deployment, rather than a test of the AP3 Plus.",
+        "The same report captured the commercial rationale: hospital chief executive Steve Long said a person could make the trip faster, but the robot avoided needing someone at each end. That is a useful way to judge the economics. The benefit comes from keeping clinical staff available and allowing equipment to continue its route. The relevant comparison includes supervision, failed pickups and maintenance alongside the transport time. The historical pilot contract is not a quoted price for the new product.",
+        "In May, Arrive announced plans to extend the Hancock network to the Parkway outpatient facility, linking specimen collection with the hospital laboratory. Implementation was expected to begin during the summer. The announcement described two routes under evaluation, so it should be read as an expansion plan rather than proof that both were operating."
+      ]
+    },
+    {
+      "heading": "The software must connect the sites",
+      "paragraphs": [
+        "Arrive introduced its operating software in May with an emphasis on adding functionality through updates and coordinating multiple endpoints. Its example was a robot completing one delivery and receiving another assignment elsewhere in the network. The commercial logic is straightforward: sharing vehicles across routes could improve utilization, provided the software can manage competing requests and destinations that are temporarily unavailable. Arrive has described that capability; the announcement did not quantify a fleet utilization improvement.",
+        "Software updates also extend the customer relationship beyond installing a cabinet. Someone must maintain models, coordinate versions across locations and support exceptions when equipment changes. Those responsibilities create an ongoing service opportunity, but also costs that deployment fees or recurring revenue must cover. More endpoints are commercially valuable only if operating the installed base remains manageable. Local storage similarly leaves customers needing clear access, retention and backup policies.",
+        "A September update identified DXC Technology as an integration partner for manufacturing environments. Existing plant systems determine where materials go, when they are needed and how their movement is recorded. Connecting those systems to delivery equipment is consequently a substantial part of deployment. The partnership gives Arrive a potential route into complex customer sites, while leaving contract values and the number of operating manufacturing installations undisclosed.",
+        "An installation therefore needs an acceptance test covering both the cabinet and the software around it. A successful demonstration can establish a transfer mechanism, while repeated production use tests scheduling, exception handling and support."
+      ]
+    },
+    {
+      "heading": "Commercial scale remains the test",
+      "paragraphs": [
+        "Arrive reported second quarter revenue of $14,700 and operating cash outflow of approximately $3.3 million. Its August update anticipated more than a dozen AP3 Plus units ready to ship in September. The new availability announcement does not establish how many units have reached customers. Revenue conversion, installation work and continuing service obligations remain important measures of progress.",
+        "The financing announced October 6 also requires careful reading. Arrive said it completed an initial $250,000 investment at $0.65 per unit, with each unit containing a common share and a warrant exercisable at $0.70. The investor's interest in evaluating up to $10 million of additional financing was conditional on further agreements and approvals. That larger figure is potential funding, not cash secured for production.",
+        "For buyers, the next useful evidence is a measured reduction in staff interventions, consistent package recognition and dependable recovery when a transfer fails. For Arrive, repeat installations on commercially sustainable terms would show whether experience at the handoff can become a scalable business."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Arrive AI product announcement, October 7; original date 2026-10-07",
+      "url": "https://investors.arriveai.com/news-releases/news-release-details/arrive-ai-introduces-ap3-plus-adding-edge-computing-and-board"
+    },
+    {
+      "label": "NVIDIA Jetson module documentation; undated, accessed October 8, 2026",
+      "url": "https://developer.nvidia.com/embedded/jetson-modules/"
+    },
+    {
+      "label": "Arrive AI hospital findings, March 5; original date 2026-03-05",
+      "url": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/arrive-ai-white-paper-highlights-key-findings-of-live-hospital-de-1143771"
+    },
+    {
+      "label": "WFYI reporting, October 28, 2025",
+      "url": "https://www.wfyi.org/health/2025-10-28/hancock-regional-hospital-has-a-new-delivery-robot-can-it-help-reduce-staff-workloads"
+    },
+    {
+      "label": "Hancock expansion announcement, May 28; original date 2026-05-28",
+      "url": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/successful-initial-deployment-drives-arrive-point-expansion-at-ha-1171308"
+    },
+    {
+      "label": "Arrive OS announcement, May 27; original date 2026-05-27",
+      "url": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/arrive-ai-unveils-arrive-os-further-delivering-on-autonomy-unlock-1170959"
+    },
+    {
+      "label": "DXC partnership update, September 18; original date 2026-09-18",
+      "url": "https://investors.arriveai.com/news-releases/news-release-details/arrive-ai-partners-dxc-extend-autonomous-delivery-enterprise"
+    },
+    {
+      "label": "Second quarter results, August 13; original date 2026-08-13",
+      "url": "https://investors.arriveai.com/news-releases/news-release-details/arrive-ai-reports-second-quarter-2026-results-and-highlights"
+    },
+    {
+      "label": "Financing announcement, October 6; original date 2026-10-06",
+      "url": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/arrive-ai-nasdaq-arai-announces-0.65-per-share-direct-investment-1233400"
+    }
+  ]
+},
+  {
   slug: "vinci-series-b-physics-simulation",
   "taxonomy": {
     "primaryIndustry": "manufacturing",
