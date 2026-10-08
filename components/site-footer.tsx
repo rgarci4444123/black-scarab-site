@@ -25,7 +25,7 @@ function SocialLogo({ label, dark }: { label: string; dark: boolean }) {
   return (
     <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true">
       <circle cx="12" cy="12" r="11" fill="currentColor" />
-      <g fill="none" stroke={dark ? "#10150f" : "#fbfaf6"} strokeLinecap="round">
+      <g fill="none" stroke={dark ? "#10150f" : "#ffffff"} strokeLinecap="round">
         <path d="M5.7 8.2c4.3-1.2 9.3-.8 12.6 1.2" strokeWidth="2" />
         <path d="M6.5 11.8c3.7-1 7.9-.6 10.8 1.1" strokeWidth="1.7" />
         <path d="M7.2 15.3c3-.8 6.4-.4 8.8 1" strokeWidth="1.5" />
@@ -39,7 +39,7 @@ export default function SiteFooter({ tone = "light" }: SiteFooterProps) {
   const linkClassName = `transition focus-visible:outline-2 focus-visible:outline-offset-4 ${
     dark
       ? "hover:text-white focus-visible:outline-[#b8c7ab]"
-      : "hover:text-[#1d3228] focus-visible:outline-[#536451]"
+      : "hover:text-[#0071e3] focus-visible:outline-[#0071e3]"
   }`;
 
   return (
@@ -47,14 +47,14 @@ export default function SiteFooter({ tone = "light" }: SiteFooterProps) {
       className={`border-t px-6 py-7 md:px-10 md:py-8 ${
         dark
           ? "border-[#293127] bg-[#10150f] text-[#b8c0b6]"
-          : "border-[#e3e1d8] bg-[#fbfaf6] text-[#626b60]"
+          : "border-[#e2e2e5] bg-[#ffffff] text-[#6e6e73]"
       }`}
     >
       <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-4">
         <div>
           <Link
             href="/"
-            className={`${linkClassName} text-lg font-semibold tracking-[-0.025em] ${dark ? "text-[#f4f2ec]" : "text-[#171a17]"}`}
+            className={`${linkClassName} text-lg font-semibold tracking-[-0.025em] ${dark ? "text-[#f5f5f7]" : "text-[#171a17]"}`}
           >
             Black Scarab
           </Link>
@@ -71,7 +71,7 @@ export default function SiteFooter({ tone = "light" }: SiteFooterProps) {
               rel="noopener noreferrer"
               aria-label={`Black Scarab on ${item.label}`}
               title={item.label}
-              className={`${linkClassName} inline-flex h-11 w-11 items-center justify-center rounded-full ${dark ? "text-[#d2d9cf] hover:bg-white/5" : "text-[#465043] hover:bg-[#eef1e9]"}`}
+              className={`${linkClassName} inline-flex h-11 w-11 items-center justify-center rounded-full ${dark ? "text-[#d2d9cf] hover:bg-white/5" : "text-[#515154] hover:bg-[#f0f7ff]"}`}
             >
               <SocialLogo label={item.label} dark={dark} />
             </a>
@@ -81,7 +81,7 @@ export default function SiteFooter({ tone = "light" }: SiteFooterProps) {
 
       <div
         className={`mt-5 flex flex-col gap-3 border-t pt-4 text-xs leading-5 md:flex-row md:items-center md:justify-between md:gap-6 ${
-          dark ? "border-[#293127]" : "border-[#e3e1d8]"
+          dark ? "border-[#293127]" : "border-[#e2e2e5]"
         }`}
       >
         <div className="flex flex-wrap gap-x-4 gap-y-1">

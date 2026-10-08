@@ -77,8 +77,8 @@ function ChevronDown() {
 function WorkshopPanel({ event }: { event: PhysicalAiEvent }) {
   if (event.workshops?.length) {
     return (
-      <details className="group/workshops border-t border-[#dedbd2] pt-5 sm:col-start-2 sm:col-end-4">
-        <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-4 rounded-xl px-1 text-sm text-[#263126] transition hover:text-[#607355] [&::-webkit-details-marker]:hidden">
+      <details className="group/workshops border-t border-[#e2e2e5] pt-5 sm:col-start-2 sm:col-end-4">
+        <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-4 rounded-xl px-1 text-sm text-[#263126] transition hover:text-[#0071e3] [&::-webkit-details-marker]:hidden">
           <span>
             <span className="font-semibold">
               {event.workshops.length} workshops
@@ -96,7 +96,7 @@ function WorkshopPanel({ event }: { event: PhysicalAiEvent }) {
               href={workshop.url}
               target="_blank"
               rel="noreferrer"
-              className="group/workshop flex min-h-32 flex-col justify-between gap-5 bg-[#f7f6f1] p-5 transition hover:bg-[#edf2e9]"
+              className="group/workshop flex min-h-32 flex-col justify-between gap-5 bg-[#f5f5f7] p-5 transition hover:bg-[#f0f7ff]"
             >
               <div>
                 <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-[#788173]">
@@ -122,7 +122,7 @@ function WorkshopPanel({ event }: { event: PhysicalAiEvent }) {
 
 function EventCard({ event }: { event: PhysicalAiEvent }) {
   return (
-    <article className="group grid gap-5 border-t border-[#dedbd2] py-7 first:border-t-0 sm:grid-cols-[140px_minmax(0,1fr)_auto] sm:items-start sm:gap-8 sm:py-8">
+    <article className="group grid gap-5 border-t border-[#e2e2e5] py-7 first:border-t-0 sm:grid-cols-[140px_minmax(0,1fr)_auto] sm:items-start sm:gap-8 sm:py-8">
       <div>
         <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-[#687263]">
           {event.dateLabel}
@@ -136,12 +136,12 @@ function EventCard({ event }: { event: PhysicalAiEvent }) {
 
       <div>
         <div className="flex flex-wrap items-center gap-3">
-          <span className="text-[10px] font-semibold uppercase tracking-[0.17em] text-[#647456]">
+          <span className="text-[10px] font-semibold uppercase tracking-[0.17em] text-[#6e6e73]">
             {event.focus}
           </span>
           {event.tier === "Anchor" ? (
-            <span className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#8a7154]">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#879a7c]" />
+            <span className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#c64c3b]">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#c64c3b]" />
               Priority
             </span>
           ) : null}
@@ -158,7 +158,7 @@ function EventCard({ event }: { event: PhysicalAiEvent }) {
         href={event.url}
         target="_blank"
         rel="noreferrer"
-        className="inline-flex min-h-11 items-center justify-center gap-2 self-start rounded-full border border-[#cbc7bd] px-5 py-2.5 text-sm font-medium text-[#1a211a] transition hover:border-[#6d7c68] hover:bg-[#edf2e9] sm:mt-1"
+        className="inline-flex min-h-11 items-center justify-center gap-2 self-start rounded-full border border-[#e2e2e5] px-5 py-2.5 text-sm font-medium text-[#0071e3] transition hover:border-[#0071e3] hover:bg-[#f0f7ff] sm:mt-1"
         aria-label={`Visit the official ${event.shortName} website`}
       >
         Event site <ArrowUpRight />
@@ -185,7 +185,7 @@ export default function EventsPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#f4f2ec] px-3 py-3 text-[#101410] sm:px-5 sm:py-5 lg:px-7">
+    <main className="min-h-screen bg-[#f5f5f7] px-3 py-3 text-[#101410] sm:px-5 sm:py-5 lg:px-7">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -193,29 +193,19 @@ export default function EventsPage() {
         }}
       />
 
-      <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-[#dfded7] bg-[#fbfaf6] shadow-[0_24px_70px_rgba(15,23,42,0.055)] sm:rounded-[30px]">
+      <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-[#e2e2e5] bg-white shadow-[0_24px_70px_rgba(15,23,42,0.055)] sm:rounded-[30px]">
         <SiteHeader homeHref="/" />
 
-        <section className="border-b border-[#dce5d6] bg-[#111810] px-6 py-10 text-white md:px-10 md:py-12 lg:px-14">
-          <div className="mx-auto flex max-w-6xl flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b8c7ab]">
-                Black Scarab
-              </p>
-              <h1 className="mt-3 text-3xl font-semibold tracking-[-0.035em] sm:text-4xl">
-                Physical AI Events
-              </h1>
-            </div>
-
-            <div className="w-full max-w-md border-t border-[#53604e] pt-4 sm:mb-1">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#91a286]">
-                Calendar
-              </p>
-              <p className="mt-2 text-sm leading-6 text-[#d3dbcf] sm:text-base sm:leading-7">
-                Conferences shaping robotics, autonomy, and embodied intelligence.
-              </p>
-            </div>
-          </div>
+        <section className="border-b border-[#e2e2e5] px-6 py-14 text-center md:px-10 md:py-18">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#6e6e73]">
+            Black Scarab
+          </p>
+          <h1 className="mx-auto mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:text-5xl">
+            Physical AI Events
+          </h1>
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#6e6e73]">
+            Conferences shaping robotics, autonomy, and embodied intelligence.
+          </p>
         </section>
 
         <section id="calendar" className="scroll-mt-28 px-5 pb-10 sm:px-8 sm:pb-12 lg:px-14 lg:pb-14">
@@ -224,7 +214,7 @@ export default function EventsPage() {
               <section
                 key={group.monthKey}
                 id={group.monthKey}
-                className="scroll-mt-28 grid gap-4 border-b border-[#cfcac0] py-8 first:pt-10 last:border-b-0 lg:grid-cols-[190px_minmax(0,1fr)] lg:gap-10 lg:py-10 lg:first:pt-12"
+                className="scroll-mt-28 grid gap-4 border-b border-[#e2e2e5] py-8 first:pt-10 last:border-b-0 lg:grid-cols-[190px_minmax(0,1fr)] lg:gap-10 lg:py-10 lg:first:pt-12"
                 aria-labelledby={`${group.monthKey}-heading`}
               >
                 <div>
@@ -245,7 +235,7 @@ export default function EventsPage() {
           </div>
         </section>
 
-        <section id="subscribe" className="scroll-mt-28 border-t border-[#d9d9d2] px-5 py-12 sm:px-8 sm:py-16 lg:px-14">
+        <section id="subscribe" className="scroll-mt-28 border-t border-[#e2e2e5] px-5 py-12 sm:px-8 sm:py-16 lg:px-14">
           <div className="mx-auto max-w-5xl">
             <EmailSignupCard
               source="events-index"

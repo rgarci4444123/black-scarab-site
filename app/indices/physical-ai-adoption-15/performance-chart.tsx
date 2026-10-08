@@ -7,9 +7,9 @@ import styles from "./performance-chart.module.css";
 type SeriesKey = "bspi15" | "sp500" | "nasdaqComposite";
 
 const series = [
-  { key: "bspi15" as const, name: "BSPI15", color: "#586f4c", width: 3.2 },
+  { key: "bspi15" as const, name: "BSPI15", color: "#0071e3", width: 3.2 },
   { key: "sp500" as const, name: "S&P 500", color: "#8a98ab", width: 2 },
-  { key: "nasdaqComposite" as const, name: "Nasdaq", color: "#bb9772", width: 2 },
+  { key: "nasdaqComposite" as const, name: "Nasdaq", color: "#6c5ce7", width: 2 },
 ];
 
 const padding = { top: 24, right: 20, bottom: 46, left: 54 };
@@ -190,8 +190,8 @@ export default function PerformanceChart({
           <desc id="performance-chart-description">Currency neutral price return levels rebased to 1,000 on October 1, 2026.</desc>
           <defs>
             <linearGradient id="bspi-area" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#90ad83" stopOpacity="0.12" />
-              <stop offset="100%" stopColor="#90ad83" stopOpacity="0" />
+              <stop offset="0%" stopColor="#0071e3" stopOpacity="0.12" />
+              <stop offset="100%" stopColor="#0071e3" stopOpacity="0" />
             </linearGradient>
             <clipPath id="performance-clip">
               <rect x={padding.left} y={padding.top} width={plotWidth} height={plotHeight} />
@@ -205,11 +205,11 @@ export default function PerformanceChart({
                 x2={width - padding.right}
                 y1={y(tick)}
                 y2={y(tick)}
-                stroke={tick === 1000 ? "rgba(112,133,99,0.32)" : "rgba(122,131,112,0.13)"}
+                stroke={tick === 1000 ? "rgba(0,113,227,0.24)" : "rgba(110,110,115,0.13)"}
                 strokeDasharray={tick === 1000 ? "5 7" : undefined}
                 vectorEffect="non-scaling-stroke"
               />
-              <text x={padding.left - 12} y={y(tick) + 4} textAnchor="end" fill="#7f8b7c" fontSize="11">
+              <text x={padding.left - 12} y={y(tick) + 4} textAnchor="end" fill="#6e6e73" fontSize="11">
                 {tick.toLocaleString("en-US", { maximumFractionDigits: 0 })}
               </text>
             </g>
@@ -239,7 +239,7 @@ export default function PerformanceChart({
                   x2={hover.x}
                   y1={padding.top}
                   y2={height - padding.bottom}
-                  stroke="rgba(112,133,99,0.4)"
+                  stroke="rgba(0,113,227,0.4)"
                   strokeWidth="1"
                   vectorEffect="non-scaling-stroke"
                 />
@@ -250,7 +250,7 @@ export default function PerformanceChart({
                       cx={hover.x}
                       cy={y(hover.values[item.key])}
                       r={item.key === "bspi15" ? 5 : 4}
-                      fill="#fffdfa"
+                      fill="#ffffff"
                       stroke={item.color}
                       strokeWidth="2.5"
                       vectorEffect="non-scaling-stroke"
@@ -271,7 +271,7 @@ export default function PerformanceChart({
                 x={x(index)}
                 y={height - 17}
                 textAnchor={index === 0 ? "start" : index === observations.length - 1 ? "end" : "middle"}
-                fill="#7f8b7c"
+                fill="#6e6e73"
                 fontSize="11"
               >
                 {observation.dateLabel.replace(", 2026", "")}

@@ -14,21 +14,25 @@
 
 .connectionLines {
   fill: none;
-  stroke: #94a390;
+  stroke: #aab4c1;
   stroke-width: 1.15;
   stroke-opacity: 0.58;
 }
 
 .sphereGrid {
   fill: none;
-  stroke: #aebaa9;
+  stroke: #c4ccd6;
   stroke-width: 0.9;
   stroke-opacity: 0.42;
 }
 
 .networkDots {
-  fill: #294033;
+  fill: #0071e3;
 }
+
+.networkDots circle:nth-child(3n) { fill: #7856e8; }
+.networkDots circle:nth-child(4n) { fill: #00a38a; }
+.networkDots circle:nth-child(5n) { fill: #f26957; }
 
 .node {
   position: absolute;
@@ -39,7 +43,7 @@
 }
 
 .nodeLabel {
-  color: #32483a;
+  color: #6e6e73;
   font-size: 0.66rem;
   font-weight: 650;
   letter-spacing: 0.19em;
@@ -55,9 +59,9 @@
   height: 78px;
   flex: 0 0 auto;
   overflow: hidden;
-  border: 1px solid rgba(75, 93, 76, 0.28);
+  border: 1px solid rgba(29, 29, 31, 0.14);
   border-radius: 999px;
-  background: #e8ebe5;
+  background: #f5f5f7;
   box-shadow: 0 12px 28px rgba(28, 39, 29, 0.08);
 }
 
@@ -135,9 +139,9 @@
 
   .node {
     gap: 0;
-    border: 1px solid rgba(89, 111, 91, 0.22);
+    border: 1px solid rgba(29, 29, 31, 0.12);
     border-radius: 999px;
-    background: rgba(251, 250, 246, 0.9);
+    background: rgba(255, 255, 255, 0.94);
     padding: 0.42rem 0.58rem;
     box-shadow: 0 8px 22px rgba(33, 47, 36, 0.05);
     backdrop-filter: blur(5px);

@@ -17,8 +17,8 @@ export default function EmailSignupCard({
     <section
       className={
         compact
-          ? "rounded-[22px] border border-[#d9e4d3] bg-[#f1f6ed] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)] sm:p-7"
-          : "rounded-[28px] border border-[#d9e4d3] bg-[#edf4e8] p-7 shadow-[0_14px_40px_rgba(15,23,42,0.08)] md:p-10"
+          ? "rounded-[22px] border border-[#e2e2e5] bg-[#ffffff] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)] sm:p-7"
+          : "rounded-[28px] border border-[#e2e2e5] bg-[#ffffff] p-7 shadow-[0_14px_40px_rgba(15,23,42,0.08)] md:p-10"
       }
     >
       <div
@@ -29,7 +29,7 @@ export default function EmailSignupCard({
         }
       >
         <div>
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#647456]">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#008577]">
             Black Scarab Weekly
           </p>
           <h2

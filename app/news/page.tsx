@@ -30,41 +30,31 @@ export const metadata: Metadata = {
 
 export default function NewsPage() {
   return (
-    <main className="min-h-screen bg-[#f4f2ec] px-3 py-3 text-[#101410] sm:px-5 sm:py-5 lg:px-7">
-      <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-[#dfded7] bg-[#fbfaf6] shadow-[0_24px_70px_rgba(15,23,42,0.055)] sm:rounded-[30px]">
+    <main className="min-h-screen bg-[#f5f5f7] px-3 py-3 text-[#101410] sm:px-5 sm:py-5 lg:px-7">
+      <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-[#e2e2e5] bg-white shadow-[0_24px_70px_rgba(15,23,42,0.055)] sm:rounded-[30px]">
         <SiteHeader homeHref="/" />
 
-        <section className="border-b border-[#dce5d6] bg-[#111810] px-6 py-10 text-white md:px-10 md:py-12 lg:px-14">
-          <div className="mx-auto flex max-w-6xl flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b8c7ab]">
-                Black Scarab
-              </p>
-              <h1 className="mt-3 text-3xl font-semibold tracking-[-0.035em] sm:text-4xl">
-                Physical AI News
-              </h1>
-            </div>
-            <div className="w-full max-w-md border-t border-[#53604e] pt-4 sm:mb-1">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#91a286]">
-                Coverage
-              </p>
-              <p className="mt-2 text-sm leading-6 text-[#d3dbcf] sm:text-base sm:leading-7">
-                Timely, sourced reporting on the companies, machines, and
-                markets shaping physical AI.
-              </p>
-            </div>
-          </div>
+        <section className="border-b border-[#e2e2e5] px-6 py-14 text-center md:px-10 md:py-18">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#6e6e73]">
+            Black Scarab
+          </p>
+          <h1 className="mx-auto mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:text-5xl">
+            Physical AI News
+          </h1>
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#6e6e73]">
+            Timely, sourced reporting on the companies, machines, and markets shaping physical AI.
+          </p>
         </section>
 
         <section className="px-6 py-10 md:px-10 md:py-14 lg:px-14">
           <div className="mx-auto max-w-6xl">
-            <div className="border-b border-[#e5e0d8] pb-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#647456]">
+            <div className="border-b border-[#e2e2e5] pb-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#6e6e73]">
                 Latest reporting
               </p>
             </div>
 
-            <div className="divide-y divide-[#e8e3da]">
+            <div className="divide-y divide-[#e2e2e5]">
               {newsUpdates.map((update, index) => (
                 <article
                   key={update.slug}
@@ -104,7 +94,7 @@ export default function NewsPage() {
                   </Link>
 
                   <div className="flex flex-col items-start">
-                    <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#647456]">
+                    <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#6e6e73]">
                       <span>{update.category}</span>
                       <span aria-hidden="true" className="text-[#c7bfb3]">·</span>
                       <time dateTime={update.publishedDate}>{update.publishedLabel}</time>
@@ -112,7 +102,7 @@ export default function NewsPage() {
                     <h2 className="mt-4 max-w-3xl text-2xl font-semibold leading-tight tracking-[-0.03em] sm:text-3xl">
                       <Link
                         href={`/news/${update.slug}`}
-                        className="transition hover:text-[#526147]"
+                        className="transition hover:text-[#0071e3]"
                       >
                         {update.title}
                       </Link>
@@ -127,7 +117,7 @@ export default function NewsPage() {
                     </div>
                     <Link
                       href={`/news/${update.slug}`}
-                      className="mt-6 inline-flex min-h-11 items-center rounded-full border border-[#d7d1c6] px-5 py-2.5 text-sm font-medium transition hover:border-[#aebba5] hover:bg-[#edf4e8]"
+                      className="mt-6 inline-flex min-h-11 items-center rounded-full border border-[#e2e2e5] px-5 py-2.5 text-sm font-medium text-[#0071e3] transition hover:border-[#0071e3] hover:bg-[#f0f7ff]"
                     >
                       Read article
                     </Link>
@@ -138,7 +128,7 @@ export default function NewsPage() {
           </div>
         </section>
 
-        <section className="border-t border-[#efeae1] px-6 py-14 md:px-10 md:py-20 lg:px-14">
+        <section className="border-t border-[#e2e2e5] px-6 py-14 md:px-10 md:py-20 lg:px-14">
           <div className="mx-auto max-w-5xl">
             <EmailSignupCard
               source="news-index"

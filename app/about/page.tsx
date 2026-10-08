@@ -57,7 +57,7 @@ export default function AboutPage() {
         honorificSuffix: "CFA",
         url: `${baseUrl}/about`,
         sameAs: [authorLinkedInUrl],
-        jobTitle: "Founder and Editor",
+        jobTitle: "Founder",
         knowsLanguage: ["English", "Spanish"],
         alumniOf: {
           "@type": "CollegeOrUniversity",
@@ -69,7 +69,7 @@ export default function AboutPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#f4f2ec] px-3 py-3 text-[#101410] sm:px-5 sm:py-5 lg:px-7">
+    <main className="min-h-screen bg-[#f5f5f7] px-3 py-3 text-[#101410] sm:px-5 sm:py-5 lg:px-7">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -77,17 +77,17 @@ export default function AboutPage() {
         }}
       />
 
-      <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-[#dfded7] bg-[#fbfaf6] shadow-[0_24px_70px_rgba(15,23,42,0.055)] sm:rounded-[30px]">
+      <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-[#e2e2e5] bg-[#ffffff] shadow-[0_24px_70px_rgba(15,23,42,0.055)] sm:rounded-[30px]">
         <SiteHeader homeHref="/" />
 
-        <section className="border-b border-[#d9d9d2] px-5 py-12 sm:px-8 sm:py-16 lg:px-14 lg:py-20">
+        <section className="border-b border-[#e2e2e5] px-5 py-12 sm:px-8 sm:py-16 lg:px-14 lg:py-20">
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-center lg:gap-20">
             <div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#536451] sm:text-xs">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#6e6e73] sm:text-xs">
                 About Black Scarab
               </p>
               <h1 className="mt-7 max-w-4xl text-5xl font-semibold leading-[0.98] tracking-[-0.055em] text-[#0b0d0b] sm:text-6xl lg:text-[5.25rem]">
-                Independent intelligence for the physical AI economy.
+                Independent intelligence for the physical AI economy<span className="text-[#7856e8]">.</span>
               </h1>
               <div className="mt-8 max-w-3xl space-y-5 text-base leading-8 text-[#5d6670] sm:text-lg">
                 <p>
@@ -104,13 +104,13 @@ export default function AboutPage() {
               <div className="mt-9 flex flex-wrap gap-3">
                 <Link
                   href="/news"
-                  className="rounded-full bg-[#1d3228] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#29463a]"
+                  className="rounded-full bg-[#1d1d1f] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#343438]"
                 >
                   Read the News
                 </Link>
                 <Link
                   href="/insights"
-                  className="rounded-full border border-[#c6d1c0] bg-white/80 px-6 py-3 text-sm font-medium transition hover:bg-white"
+                  className="rounded-full border border-[#e2e2e5] bg-white/80 px-6 py-3 text-sm font-medium transition hover:bg-white"
                 >
                   Explore Insights
                 </Link>
@@ -118,10 +118,10 @@ export default function AboutPage() {
             </div>
 
             <aside aria-label="Founder profile">
-              <div className="relative mx-auto aspect-square w-full max-w-[340px] overflow-hidden rounded-full border border-[#cbd4c7] bg-[#ece9e4] shadow-[0_20px_60px_rgba(25,35,27,0.1)]">
+              <div className="relative mx-auto aspect-square w-full max-w-[340px] overflow-hidden rounded-full border border-[#e2e2e5] bg-[#f5f5f7] shadow-[0_20px_60px_rgba(25,35,27,0.1)]">
                 <Image
                   src={authorPortraitSrc}
-                  alt="Rodolfo Garcia Calderoni, founder and editor of Black Scarab"
+                  alt="Rodolfo Garcia Calderoni, founder of Black Scarab"
                   fill
                   preload
                   quality={95}
@@ -129,12 +129,12 @@ export default function AboutPage() {
                   className="object-cover object-[50%_55%]"
                 />
               </div>
-              <div className="mx-auto mt-7 max-w-[340px] border-t border-[#d6d7d0] pt-6">
+              <div className="mx-auto mt-7 max-w-[340px] border-t border-[#e2e2e5] pt-6">
                 <h2 className="text-2xl font-semibold leading-tight tracking-[-0.035em]">
                   Rodolfo Garcia Calderoni, CFA
                 </h2>
-                <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#536451]">
-                  Founder and Editor
+                <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#008577]">
+                  Founder
                 </p>
                 <p className="mt-4 text-sm leading-7 text-[#687078]">
                   Based in Miami with a global view of physical AI and

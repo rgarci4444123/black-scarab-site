@@ -22,10 +22,10 @@ export default function SiteHeader({
 }: SiteHeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const linkClassName = "transition hover:text-[#111827]";
+  const linkClassName = "transition hover:text-[#0071e3]";
 
   return (
-    <header className="sticky top-0 z-30 border-b border-[#efeae1] bg-white/92 backdrop-blur">
+    <header className="sticky top-0 z-30 border-b border-[#e2e2e5] bg-white/92 backdrop-blur">
       <div className="px-6 py-5 md:px-10">
         <div className="flex items-center justify-between gap-4 md:grid md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
           <Link
@@ -45,7 +45,7 @@ export default function SiteHeader({
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-7 text-sm text-[#6b7280] md:flex md:justify-self-center">
+          <nav className="hidden items-center gap-7 text-sm text-[#6e6e73] md:flex md:justify-self-center">
             {navLinks.map((item) =>
               item.isPage ? (
                 <Link key={item.label} href={item.href} className={linkClassName}>
@@ -65,8 +65,8 @@ export default function SiteHeader({
                 href={ctaHref}
                 className={
                   ctaTone === "solid"
-                    ? "hidden rounded-full border border-[#1d3228] bg-[#1d3228] px-5 py-3 text-sm font-medium text-white transition hover:border-[#29463a] hover:bg-[#29463a] md:inline-flex"
-                    : "hidden rounded-full border border-[#e5e7eb] px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#111827] hover:text-white md:inline-flex"
+                    ? "hidden rounded-full border border-[#1d1d1f] bg-[#1d1d1f] px-5 py-3 text-sm font-medium text-white transition hover:border-[#343438] hover:bg-[#343438] md:inline-flex"
+                    : "hidden rounded-full border border-[#e5e7eb] px-5 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#1d1d1f] hover:text-white md:inline-flex"
                 }
               >
                 {ctaLabel}
@@ -76,7 +76,7 @@ export default function SiteHeader({
             <button
               type="button"
               onClick={() => setMobileOpen((current) => !current)}
-              className="rounded-full border border-[#ddd7cc] px-4 py-2 text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8] md:hidden"
+              className="rounded-full border border-[#e2e2e5] px-4 py-2 text-sm font-medium text-[#111827] transition hover:bg-[#f5f5f7] md:hidden"
               aria-expanded={mobileOpen}
               aria-label="Toggle navigation menu"
             >
@@ -86,7 +86,7 @@ export default function SiteHeader({
         </div>
 
         {mobileOpen ? (
-          <div className="mt-4 rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-4 shadow-[0_12px_32px_rgba(15,23,42,0.05)] md:hidden">
+          <div className="mt-4 rounded-[24px] border border-[#e2e2e5] bg-[#ffffff] p-4 shadow-[0_12px_32px_rgba(15,23,42,0.05)] md:hidden">
             {navLinks.length > 0 ? (
               <div>
                 <div className="space-y-2">
@@ -95,7 +95,7 @@ export default function SiteHeader({
                       <Link
                         key={item.label}
                         href={item.href}
-                        className="block rounded-2xl px-4 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
+                        className="block rounded-2xl px-4 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#f5f5f7]"
                         onClick={() => setMobileOpen(false)}
                       >
                         {item.label}
@@ -104,7 +104,7 @@ export default function SiteHeader({
                       <a
                         key={item.label}
                         href={item.href}
-                        className="block rounded-2xl px-4 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#f8f8f8]"
+                        className="block rounded-2xl px-4 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#f5f5f7]"
                         onClick={() => setMobileOpen(false)}
                       >
                         {item.label}
@@ -116,10 +116,10 @@ export default function SiteHeader({
             ) : null}
 
             {ctaLabel && ctaHref ? (
-              <div className="mt-4 border-t border-[#efeae1] pt-4">
+              <div className="mt-4 border-t border-[#e2e2e5] pt-4">
                 <Link
                   href={ctaHref}
-                  className="block rounded-full bg-[#111827] px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-[#1f2937]"
+                  className="block rounded-full bg-[#1d1d1f] px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-[#343438]"
                   onClick={() => setMobileOpen(false)}
                 >
                   {ctaLabel}

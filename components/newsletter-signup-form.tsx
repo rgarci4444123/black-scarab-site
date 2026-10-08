@@ -68,7 +68,7 @@ export default function NewsletterSignupForm({
     return (
       <div
         role="status"
-        className="rounded-[20px] border border-[#b7c8aa] bg-white/80 px-5 py-4 text-sm leading-6 text-[#34402f]"
+        className="rounded-[20px] border border-[#c8dff8] bg-white/80 px-5 py-4 text-sm leading-6 text-[#515154]"
       >
         <span className="font-semibold">You&apos;re in.</span>{" "}
         {message.replace("You are subscribed", "Welcome")}
@@ -97,7 +97,7 @@ export default function NewsletterSignupForm({
         required
         autoComplete="email"
         placeholder="Email address"
-        className="w-full min-w-0 flex-1 rounded-full border border-[#d7d1c6] bg-white px-5 py-3 text-base text-[#111827] outline-none transition placeholder:text-[#9ca3af] focus:border-[#7c8b6b] focus:ring-2 focus:ring-[#7c8b6b]/20 md:w-auto"
+        className="w-full min-w-0 flex-1 rounded-full border border-[#d2d2d7] bg-white px-5 py-3 text-base text-[#111827] outline-none transition placeholder:text-[#9ca3af] focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/20 md:w-auto"
       />
       <input
         type="text"
@@ -110,7 +110,7 @@ export default function NewsletterSignupForm({
       <button
         type="submit"
         disabled={state === "submitting"}
-        className="shrink-0 rounded-full bg-[#111827] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#1f2937] focus:outline-none focus:ring-2 focus:ring-[#7c8b6b] focus:ring-offset-2 disabled:cursor-wait disabled:opacity-70"
+        className="shrink-0 rounded-full bg-[#0071e3] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#005bb5] focus:outline-none focus:ring-2 focus:ring-[#0071e3] focus:ring-offset-2 disabled:cursor-wait disabled:opacity-70"
       >
         {state === "submitting" ? "Saving..." : buttonLabel}
       </button>
@@ -119,9 +119,9 @@ export default function NewsletterSignupForm({
           {message}
         </p>
       ) : null}
-      <p className="text-xs leading-5 text-[#6b7280] sm:basis-full">
+      <p className="text-xs leading-5 text-[#6e6e73] sm:basis-full">
         Weekly reporting and deep dives. Unsubscribe anytime. See our{" "}
-        <Link href="/privacy" className="underline decoration-[#9eaa95] underline-offset-2">
+        <Link href="/privacy" className="underline decoration-[#9ac3f0] underline-offset-2">
           privacy notice
         </Link>
         .

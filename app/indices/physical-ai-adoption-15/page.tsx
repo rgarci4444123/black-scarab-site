@@ -91,13 +91,13 @@ export default function PhysicalAiAdoptionIndexPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#f4f2ec] px-3 py-3 text-[#101410] sm:px-5 sm:py-5 lg:px-7">
+    <main className="min-h-screen bg-[#f5f5f7] px-3 py-3 text-[#101410] sm:px-5 sm:py-5 lg:px-7">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema).replace(/</g, "\\u003c") }} />
-      <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-[#dfded7] bg-[#fbfaf6] shadow-[0_24px_70px_rgba(15,23,42,0.055)] sm:rounded-[30px]">
+      <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-[#e2e2e5] bg-[#ffffff] shadow-[0_24px_70px_rgba(15,23,42,0.055)] sm:rounded-[30px]">
         <SiteHeader homeHref="/" />
 
         <section className={styles.hero}>
-          <p className={styles.eyebrow}>Black Scarab Indices</p>
+          <p className={styles.eyebrow}>Black Scarab <span className="text-[#7856e8]">Indices</span></p>
           <h1>{physicalAiAdoptionIndex.shortName}</h1>
           <p className={styles.introduction}>Equal weight exposure to fifteen globally listed companies across robotics, motion, perception, control, and autonomous deployment.</p>
           <dl className={styles.facts}>

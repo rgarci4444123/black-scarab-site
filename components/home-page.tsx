@@ -48,8 +48,8 @@ function PhysicalAiEconomy() {
       >
         <defs>
           <radialGradient id="sphere-fill" cx="50%" cy="46%" r="56%">
-            <stop offset="0" stopColor="#eef3eb" stopOpacity="0.9" />
-            <stop offset="0.72" stopColor="#f7f8f5" stopOpacity="0.52" />
+            <stop offset="0" stopColor="#f3f4f6" stopOpacity="0.9" />
+            <stop offset="0.72" stopColor="#fafafa" stopOpacity="0.52" />
             <stop offset="1" stopColor="#ffffff" stopOpacity="0" />
           </radialGradient>
           <clipPath id="sphere-clip">
@@ -73,7 +73,7 @@ function PhysicalAiEconomy() {
           cy="280"
           r="184"
           fill="url(#sphere-fill)"
-          stroke="#ccd6c8"
+          stroke="#dde1e6"
           strokeWidth="1"
         />
 
@@ -167,16 +167,16 @@ export default function HomePage() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#f4f2ec] px-3 py-3 text-[#101410] sm:px-5 sm:py-5 lg:px-7">
-      <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-[#dfded7] bg-[#fbfaf6] shadow-[0_24px_70px_rgba(15,23,42,0.055)] sm:rounded-[30px]">
+    <main className="min-h-screen bg-[#f5f5f7] px-3 py-3 text-[#101410] sm:px-5 sm:py-5 lg:px-7">
+      <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-[#e2e2e5] bg-[#ffffff] shadow-[0_24px_70px_rgba(15,23,42,0.055)] sm:rounded-[30px]">
         <SiteHeader homeHref="/" />
 
-        <section className="border-b border-[#d9d9d2] px-5 py-10 sm:px-8 sm:py-14 lg:px-12 lg:py-16 xl:px-14">
+        <section className="border-b border-[#e2e2e5] px-5 py-10 sm:px-8 sm:py-14 lg:px-12 lg:py-16 xl:px-14">
           <div className="mx-auto grid max-w-[1460px] gap-10 lg:grid-cols-[minmax(0,0.88fr)_minmax(560px,1.12fr)] lg:items-center lg:gap-4">
             <div className="relative z-10">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#536451] sm:text-xs">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#6e6e73] sm:text-xs">
                 <span className="sm:hidden">
-                  <span className="mb-2 block text-[9px] tracking-[0.24em] text-[#7a8878]">
+                  <span className="mb-2 block text-[9px] tracking-[0.24em] text-[#6e6e73]">
                     Coverage
                   </span>
                   News <span aria-hidden="true">·</span> Research{" "}
@@ -204,13 +204,13 @@ export default function HomePage() {
           <h2 id="editorial-heading" className="sr-only">
             Latest Black Scarab coverage
           </h2>
-          <div className="grid divide-y divide-[#d9d9d2] md:grid-cols-3 md:divide-x md:divide-y-0">
+          <div className="grid divide-y divide-[#e2e2e5] md:grid-cols-3 md:divide-x md:divide-y-0">
             {editorialCards.map((card, index) => (
               <article
                 key={card.eyebrow}
                 className={`group min-w-0 p-5 sm:p-7 lg:p-8 ${
                   card.hasBlueCardGlow
-                    ? "bg-[radial-gradient(ellipse_at_72%_36%,rgba(126,201,240,0.16)_0%,rgba(177,222,245,0.08)_34%,transparent_68%)]"
+                    ? "bg-[radial-gradient(ellipse_at_72%_36%,rgba(126,201,240,0.08)_0%,rgba(177,222,245,0.04)_34%,transparent_68%)]"
                     : ""
                 }`}
               >
@@ -220,10 +220,10 @@ export default function HomePage() {
                   target={card.external ? "_blank" : undefined}
                   rel={card.external ? "noopener noreferrer" : undefined}
                 >
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#334236]">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#515154]">
                     {card.eyebrow}
                   </p>
-                  <div className="relative mt-5 aspect-[16/8.6] overflow-hidden bg-[#e7ebe3]">
+                  <div className="relative mt-5 aspect-[16/8.6] overflow-hidden bg-[#f5f5f7]">
                     {card.image ? (
                       <Image
                         src={card.image}
@@ -240,7 +240,7 @@ export default function HomePage() {
                   <h3 className="mt-5 text-2xl font-medium leading-[1.08] tracking-[-0.035em] text-[#171a17] sm:text-[1.7rem] lg:text-[1.85rem]">
                     {card.title}
                   </h3>
-                  <span className="mt-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#526147]">
+                  <span className="mt-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#0071e3]">
                     {card.cta} <span aria-hidden="true">→</span>
                   </span>
                 </Link>
@@ -251,7 +251,7 @@ export default function HomePage() {
 
         <section
           id="subscribe"
-          className="scroll-mt-28 border-t border-[#d9d9d2] px-5 py-12 sm:px-8 sm:py-16 lg:px-14 lg:py-20"
+          className="scroll-mt-28 border-t border-[#e2e2e5] px-5 py-12 sm:px-8 sm:py-16 lg:px-14 lg:py-20"
         >
           <div className="mx-auto max-w-6xl">
             <EmailSignupCard
