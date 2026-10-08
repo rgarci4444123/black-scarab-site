@@ -1,3 +1,4 @@
+import { robotPoliciesDeepDive } from "@/lib/robot-policies";
 import type { ArticleTaxonomy } from "@/lib/content-taxonomy";
 import { humanoidAnatomyDeepDive } from "@/lib/humanoid-anatomy";
 import { mexicoAutomationDeepDive } from "@/lib/mexico-automation";
@@ -26,7 +27,19 @@ import { vibeManufacturingDeepDive } from "@/lib/vibe-manufacturing";
 export type CaseStudySection = {
   heading?: string;
   paragraphs: CaseStudyParagraph[];
-  visuals?: { afterParagraphIndex: number; src: string; mobileSrc?: string; alt: string }[];
+  visuals?: {
+    afterParagraphIndex: number;
+    src: string;
+    mobileSrc?: string;
+    alt: string;
+    caption?: string;
+    width?: number;
+    height?: number;
+    mobileWidth?: number;
+    mobileHeight?: number;
+    mobileBreakpoint?: number;
+    fullSizeLink?: string;
+  }[];
   visual?: {
     src: string;
     mobileSrc?: string;
@@ -285,6 +298,7 @@ export type CaseStudyBarChart = {
 
 export type CaseStudyArticle = {
   taxonomy: ArticleTaxonomy;
+  layout?: "editorial";
   reportingNotes?: CaseStudyParagraph[];
   readingMinutes?: number;
   slug: string;
@@ -16757,6 +16771,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  robotPoliciesDeepDive(),
   vibeManufacturingDeepDive(),
   grittAiDeepDive(),
   micro1DeepDive(),

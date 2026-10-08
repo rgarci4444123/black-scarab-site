@@ -1,3 +1,4 @@
+import EditorialInsight from "@/components/editorial-insight";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -233,6 +234,10 @@ export default async function CaseStudyPage({ params }: Props) {
     ],
     citation: article.sourceLinks?.map((source) => source.url) ?? [],
   };
+
+  if (article.layout === "editorial") {
+    return <EditorialInsight article={article} structuredData={JSON.stringify([articleSchema, breadcrumbSchema]).replace(/</g, "\\u003c")} />;
+  }
 
   return (
     <main className="min-h-screen bg-[#f6f4ef] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
