@@ -1,0 +1,18 @@
+Ticker,Company,Marketstack Symbol,Expected MIC,Exchange,Currency,Type
+6954,FANUC,6954.T,XJPX,Tokyo,JPY,Constituent
+6506,Yaskawa Electric,6506.T,XJPX,Tokyo,JPY,Constituent
+002747,Estun Automation,002747.SZ,XSHE,Shenzhen,CNY,Constituent
+TER,Teradyne,TER,XNAS,Nasdaq,USD,Constituent
+6268,Nabtesco,6268.T,XJPX,Tokyo,JPY,Constituent
+300124,Inovance,300124.SZ,XSHE,Shenzhen,CNY,Constituent
+6861,Keyence,6861.T,XJPX,Tokyo,JPY,Constituent
+CGNX,Cognex,CGNX,XNAS,Nasdaq,USD,Constituent
+OUST,Ouster,OUST,XNYS,NYSE,USD,Constituent
+HSAI,Hesai,HSAI,XNAS,Nasdaq,USD,Constituent
+ROK,Rockwell Automation,ROK,XNYS,NYSE,USD,Constituent
+SIE,Siemens,SIE.DE,XETR,Xetra,EUR,Constituent
+NXPI,NXP Semiconductors,NXPI,XNAS,Nasdaq,USD,Constituent
+6383,Daifuku,6383.T,XJPX,Tokyo,JPY,Constituent
+HEXA B,Hexagon,HEXA-B.ST,XSTO,Stockholm,SEK,Constituent
+S&P 500,S&P 500,GSPC.INDX,INDX,S&P Dow Jones Indices,USD,Benchmark
+Nasdaq Composite,Nasdaq Composite,IXIC.INDX,INDX,Nasdaq,USD,Benchmark

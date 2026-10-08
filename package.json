@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run build:insight-social-images && npm run validate:news-social-images && npm run validate:content-taxonomy && next build && npm run validate:article-previews",
+    "build": "npm run build:bspi15-performance && npm run build:insight-social-images && npm run validate:news-social-images && npm run validate:content-taxonomy && next build && npm run validate:article-previews",
+    "audit:bspi15-marketstack": "node scripts/audit-bspi15-marketstack.mjs",
+    "build:bspi15-performance": "node scripts/build-bspi15-performance.mjs",
     "build:insight-social-images": "node scripts/build-insight-social-images.mjs",
     "validate:article-previews": "node scripts/validate-article-previews.mjs",
     "start": "next start",

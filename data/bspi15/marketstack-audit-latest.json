@@ -1,0 +1,476 @@
+{
+  "fetchedAt": "2026-10-08T02:12:51.373Z",
+  "period": {
+    "from": "2026-10-05",
+    "through": "2026-10-07",
+    "sourceFrom": "2026-09-21"
+  },
+  "provider": "Marketstack",
+  "methodology": "Unadjusted local-currency closes for the price-return index",
+  "requests": [
+    "https://api.marketstack.com/v2/eod?symbols=6954.T%2C6506.T%2C002747.SZ%2CTER%2C6268.T%2C300124.SZ%2C6861.T%2CCGNX%2COUST%2CHSAI%2CROK%2CSIE.DE%2CNXPI%2C6383.T%2CHEXA-B.ST&date_from=2026-09-21&date_to=2026-10-07&limit=1000&sort=ASC",
+    "https://api.marketstack.com/v1/eod?symbols=GSPC.INDX%2CIXIC.INDX&date_from=2026-09-21&date_to=2026-10-07&limit=1000&sort=ASC"
+  ],
+  "receiptPath": "data/bspi15/raw/marketstack/2026-10-08T02-12-51-373Z",
+  "counts": {
+    "instruments": 17,
+    "sourceObservations": 187,
+    "comparedObservations": 38,
+    "matches": 38,
+    "mismatches": 0,
+    "identityErrors": 0,
+    "missingSourceObservations": 13
+  },
+  "identityErrors": [],
+  "mismatches": [],
+  "missingSourceObservations": [
+    {
+      "date": "2026-10-05",
+      "ticker": "002747",
+      "sourceSymbol": "002747.SZ",
+      "expectedMic": "XSHE",
+      "previousAvailableDate": "2026-09-30",
+      "previousAvailableClose": 28.22
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "300124",
+      "sourceSymbol": "300124.SZ",
+      "expectedMic": "XSHE",
+      "previousAvailableDate": "2026-09-30",
+      "previousAvailableClose": 51.9
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "002747",
+      "sourceSymbol": "002747.SZ",
+      "expectedMic": "XSHE",
+      "previousAvailableDate": "2026-09-30",
+      "previousAvailableClose": 28.22
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "300124",
+      "sourceSymbol": "300124.SZ",
+      "expectedMic": "XSHE",
+      "previousAvailableDate": "2026-09-30",
+      "previousAvailableClose": 51.9
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "6954",
+      "sourceSymbol": "6954.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-10-06",
+      "previousAvailableClose": 6220
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "6506",
+      "sourceSymbol": "6506.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-10-06",
+      "previousAvailableClose": 4936
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "002747",
+      "sourceSymbol": "002747.SZ",
+      "expectedMic": "XSHE",
+      "previousAvailableDate": "2026-09-30",
+      "previousAvailableClose": 28.22
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "6268",
+      "sourceSymbol": "6268.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-10-06",
+      "previousAvailableClose": 4987
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "300124",
+      "sourceSymbol": "300124.SZ",
+      "expectedMic": "XSHE",
+      "previousAvailableDate": "2026-09-30",
+      "previousAvailableClose": 51.9
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "6861",
+      "sourceSymbol": "6861.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-10-06",
+      "previousAvailableClose": 81490
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "SIE",
+      "sourceSymbol": "SIE.DE",
+      "expectedMic": "XETR",
+      "previousAvailableDate": "2026-10-06",
+      "previousAvailableClose": 279
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "6383",
+      "sourceSymbol": "6383.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-10-06",
+      "previousAvailableClose": 5899
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "HEXA B",
+      "sourceSymbol": "HEXA-B.ST",
+      "expectedMic": "XSTO",
+      "previousAvailableDate": "2026-10-06",
+      "previousAvailableClose": 103.45
+    }
+  ],
+  "comparisons": [
+    {
+      "date": "2026-10-05",
+      "ticker": "6268",
+      "sourceSymbol": "6268.T",
+      "recordedClose": 4979,
+      "marketstackClose": 4979,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "6383",
+      "sourceSymbol": "6383.T",
+      "recordedClose": 5874,
+      "marketstackClose": 5874,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "6506",
+      "sourceSymbol": "6506.T",
+      "recordedClose": 4931,
+      "marketstackClose": 4931,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "6861",
+      "sourceSymbol": "6861.T",
+      "recordedClose": 81680,
+      "marketstackClose": 81680,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "6954",
+      "sourceSymbol": "6954.T",
+      "recordedClose": 6186,
+      "marketstackClose": 6186,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "CGNX",
+      "sourceSymbol": "CGNX",
+      "recordedClose": 64.37,
+      "marketstackClose": 64.37,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "HEXA B",
+      "sourceSymbol": "HEXA-B.ST",
+      "recordedClose": 102.15,
+      "marketstackClose": 102.15,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "HSAI",
+      "sourceSymbol": "HSAI",
+      "recordedClose": 15.91,
+      "marketstackClose": 15.91,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "NXPI",
+      "sourceSymbol": "NXPI",
+      "recordedClose": 241.97,
+      "marketstackClose": 241.97,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "recordedClose": 44.12,
+      "marketstackClose": 44.12,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "ROK",
+      "sourceSymbol": "ROK",
+      "recordedClose": 455.18,
+      "marketstackClose": 455.18,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "SIE",
+      "sourceSymbol": "SIE.DE",
+      "recordedClose": 275,
+      "marketstackClose": 275,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "TER",
+      "sourceSymbol": "TER",
+      "recordedClose": 444.53,
+      "marketstackClose": 444.53,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "6268",
+      "sourceSymbol": "6268.T",
+      "recordedClose": 4987,
+      "marketstackClose": 4987,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "6383",
+      "sourceSymbol": "6383.T",
+      "recordedClose": 5899,
+      "marketstackClose": 5899,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "6506",
+      "sourceSymbol": "6506.T",
+      "recordedClose": 4936,
+      "marketstackClose": 4936,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "6861",
+      "sourceSymbol": "6861.T",
+      "recordedClose": 81490,
+      "marketstackClose": 81490,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "6954",
+      "sourceSymbol": "6954.T",
+      "recordedClose": 6220,
+      "marketstackClose": 6220,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "CGNX",
+      "sourceSymbol": "CGNX",
+      "recordedClose": 66.35,
+      "marketstackClose": 66.35,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "HEXA B",
+      "sourceSymbol": "HEXA-B.ST",
+      "recordedClose": 103.45,
+      "marketstackClose": 103.45,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "HSAI",
+      "sourceSymbol": "HSAI",
+      "recordedClose": 16.27,
+      "marketstackClose": 16.27,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "NXPI",
+      "sourceSymbol": "NXPI",
+      "recordedClose": 244.38,
+      "marketstackClose": 244.38,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "recordedClose": 44.91,
+      "marketstackClose": 44.91,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "ROK",
+      "sourceSymbol": "ROK",
+      "recordedClose": 450.74,
+      "marketstackClose": 450.74,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "SIE",
+      "sourceSymbol": "SIE.DE",
+      "recordedClose": 279,
+      "marketstackClose": 279,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "TER",
+      "sourceSymbol": "TER",
+      "recordedClose": 430.32,
+      "marketstackClose": 430.32,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "CGNX",
+      "sourceSymbol": "CGNX",
+      "recordedClose": 61.21,
+      "marketstackClose": 61.21,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "HSAI",
+      "sourceSymbol": "HSAI",
+      "recordedClose": 16,
+      "marketstackClose": 16,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "NXPI",
+      "sourceSymbol": "NXPI",
+      "recordedClose": 235.22,
+      "marketstackClose": 235.22,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "recordedClose": 41.67,
+      "marketstackClose": 41.67,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "ROK",
+      "sourceSymbol": "ROK",
+      "recordedClose": 441.9,
+      "marketstackClose": 441.9,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "TER",
+      "sourceSymbol": "TER",
+      "recordedClose": 411.78,
+      "marketstackClose": 411.78,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "S&P 500",
+      "sourceSymbol": "GSPC.INDX",
+      "recordedClose": 7773.950195,
+      "marketstackClose": 7773.95,
+      "difference": -0.00019500000053085387,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "Nasdaq Composite",
+      "sourceSymbol": "IXIC.INDX",
+      "recordedClose": 27477.310547,
+      "marketstackClose": 27477.3105,
+      "difference": -0.0000470000013592653,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "S&P 500",
+      "sourceSymbol": "GSPC.INDX",
+      "recordedClose": 7818.930176,
+      "marketstackClose": 7818.93,
+      "difference": -0.00017599999955564272,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "Nasdaq Composite",
+      "sourceSymbol": "IXIC.INDX",
+      "recordedClose": 27599.789063,
+      "marketstackClose": 27599.791,
+      "difference": 0.0019370000009075738,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "S&P 500",
+      "sourceSymbol": "GSPC.INDX",
+      "recordedClose": 7801.77002,
+      "marketstackClose": 7801.77,
+      "difference": -0.000019999999494757503,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "Nasdaq Composite",
+      "sourceSymbol": "IXIC.INDX",
+      "recordedClose": 27538.691406,
+      "marketstackClose": 27538.6914,
+      "difference": -0.000006000002031214535,
+      "status": "match"
+    }
+  ]
+}

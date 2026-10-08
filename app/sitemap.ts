@@ -44,6 +44,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/indices/physical-ai-adoption-15`,
+      lastModified: new Date("2026-10-07"),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/news`,
       lastModified: new Date(newsUpdates[0].modifiedAt ?? newsUpdates[0].publishedAt),
       changeFrequency: "daily",
