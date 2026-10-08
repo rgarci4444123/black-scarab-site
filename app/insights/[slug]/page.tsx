@@ -1,4 +1,3 @@
-import EditorialInsight from "@/components/editorial-insight";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -235,12 +234,8 @@ export default async function CaseStudyPage({ params }: Props) {
     citation: article.sourceLinks?.map((source) => source.url) ?? [],
   };
 
-  if (article.layout === "editorial") {
-    return <EditorialInsight article={article} structuredData={JSON.stringify([articleSchema, breadcrumbSchema]).replace(/</g, "\\u003c")} />;
-  }
-
   return (
-    <main className="min-h-screen bg-[#f6f4ef] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">
+    <main className={`min-h-screen px-4 py-4 text-[#111827] sm:px-6 lg:px-8 ${article.background === "white" ? "bg-white" : "bg-[#f6f4ef]"}`}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -253,7 +248,7 @@ export default async function CaseStudyPage({ params }: Props) {
 
         <article data-insight-article>
           <InsightReadTracker slug={article.slug} />
-          <section className="border-b border-[#efeae1] bg-[#faf8f3] px-6 py-14 md:px-10 md:py-18">
+          <section className={`border-b border-[#efeae1] px-6 py-14 md:px-10 md:py-18 ${article.background === "white" ? "bg-white" : "bg-[#faf8f3]"}`}>
             <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
               <div>
                 <nav
@@ -327,7 +322,7 @@ export default async function CaseStudyPage({ params }: Props) {
                   fill
                   loading="eager"
                   sizes="(min-width: 1024px) 50vw, 100vw"
-                  className={article.imageFit === "contain" ? "object-contain bg-[#f6f4ef]" : "object-cover"}
+                  className={article.imageFit === "contain" ? `object-contain ${article.background === "white" ? "bg-white" : "bg-[#f6f4ef]"}` : "object-cover"}
                 />
                 <div className={article.imageFit === "contain" ? "aspect-video" : "h-[320px] lg:h-[440px]"} />
                 </div>
@@ -386,10 +381,16 @@ export default async function CaseStudyPage({ params }: Props) {
                             <p>{renderParagraph(paragraph)}</p>
                             {section.visuals?.filter(visual => visual.afterParagraphIndex === paragraphIndex + 1).map(visual => (
                               <figure key={visual.src} className="my-10">
-                                <picture>
-                                  {visual.mobileSrc ? <source media="(max-width:600px)" srcSet={visual.mobileSrc} /> : null}
-                                  <Image src={visual.src} alt={visual.alt} width={1800} height={1164} unoptimized className="mx-auto block h-auto w-full max-w-[640px]" />
+                                <picture className={visual.width ? "block overflow-hidden rounded-[18px] border border-[#e5e5e5]" : undefined}>
+                                  {visual.mobileSrc ? <source media={`(max-width:${visual.mobileBreakpoint ?? 600}px)`} srcSet={visual.mobileSrc} width={visual.mobileWidth} height={visual.mobileHeight} /> : null}
+                                  <Image src={visual.src} alt={visual.alt} width={visual.width ?? 1800} height={visual.height ?? 1164} unoptimized className={`mx-auto block h-auto w-full ${visual.width ? "" : "max-w-[640px]"}`} />
                                 </picture>
+                                {visual.caption || visual.fullSizeLink ? (
+                                  <figcaption className="mt-3 text-xs leading-5 text-[#6b7280]">
+                                    {visual.caption}
+                                    {visual.fullSizeLink ? <a href={visual.fullSizeLink} target="_blank" rel="noreferrer" className="ml-2 font-semibold text-[#526147] underline underline-offset-2">View full size timeline</a> : null}
+                                  </figcaption>
+                                ) : null}
                               </figure>
                             ))}
                           </Fragment>
@@ -676,6 +677,15 @@ export default async function CaseStudyPage({ params }: Props) {
                     <summary className="cursor-pointer text-sm font-semibold text-[#111827]">Reporting notes and sources</summary>
                     <div className="mt-5 space-y-4 text-sm leading-7 text-[#6b7280]">
                       {article.reportingNotes.map((note, index) => <p key={getParagraphKey(note, index)}>{renderParagraph(note)}</p>)}
+                      {article.sourceLinksPlacement === "bottom" ? (
+                        <ul className="space-y-2">
+                          {article.sourceLinks?.map(source => (
+                            <li key={source.url}>
+                              <a href={source.url} target="_blank" rel="noreferrer" data-analytics-event="source-link" data-analytics-label={source.label} className="break-words transition hover:text-[#111827] hover:underline">{source.label}</a>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : null}
                     </div>
                   </details>
                 ) : null}

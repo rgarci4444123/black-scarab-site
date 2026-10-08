@@ -298,7 +298,8 @@ export type CaseStudyBarChart = {
 
 export type CaseStudyArticle = {
   taxonomy: ArticleTaxonomy;
-  layout?: "editorial";
+  background?: "white";
+  sourceLinksPlacement?: "bottom";
   reportingNotes?: CaseStudyParagraph[];
   readingMinutes?: number;
   slug: string;

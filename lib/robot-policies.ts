@@ -416,7 +416,8 @@ export const robotPoliciesDeepDive = (): CaseStudyArticle => ({
   reportingNotes: [
     "Research current through October 8, 2026. Performance results are attributed to their authors. Black Scarab interpretations and the revenue scale example are analysis."
   ],
-  layout: "editorial",
+  background: "white",
+  sourceLinksPlacement: "bottom",
   publishedDate: "2026-10-08",
   publishedLabel: "October 8, 2026",
   publishedAt: "2026-10-08T17:46:04.000Z",
