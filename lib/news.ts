@@ -34,6 +34,126 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+  slug: "vinci-series-b-physics-simulation",
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [
+      "data-centers"
+    ],
+    "technologies": [
+      "simulation",
+      "foundation-models"
+    ],
+    "applications": [
+      "simulation-validation"
+    ]
+  },
+  "title": "Vinci Raises $250 Million to Bring Physics Simulation Into Hardware Design",
+  "summary": "The Series B will support wider physics coverage and engineering automation, with the commercial case resting on detailed analysis that engineers can use throughout design.",
+  "category": "Capital",
+  "publishedDate": "2026-10-08",
+  "publishedAt": "2026-10-08T09:28:40-04:00",
+  "publishedLabel": "October 8, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/vinci-series-b-physics-simulation.png",
+  "imageAlt": "An abstract layered copper component surrounded by translucent orange and blue thermal forms.",
+  "imageCaption": "Original Black Scarab editorial illustration of physics reasoning around hardware design.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "Funding: $250 million Series B announced October 6",
+    "Announced valuation: $1.5 billion",
+    "Commercial capabilities: Thermal, thermomechanical and convective fluid analysis"
+  ],
+  "sections": [
+    {
+      "heading": "The announcement",
+      "paragraphs": [
+        "Vinci announced a $250 million Series B on October 6, valuing the hardware simulation company at $1.5 billion. Advent, Temasek and Xora led the financing, with AMD Ventures, Eclipse, Khosla Ventures and Madrona among the participants. The Palo Alto company says it has commercialized software for thermal, thermomechanical and convective fluid analysis, with broader engineering automation on its roadmap."
+      ]
+    },
+    {
+      "heading": "The engineering problem behind the round",
+      "paragraphs": [
+        "A simulation can arrive too late to influence the decision that made it necessary. Moving a component changes where heat is generated and how it travels. Materials expand differently as temperatures rise, creating mechanical stresses and deformation. Engineers evaluating placement, packaging and cooling therefore need answers while these choices remain open. Chief executive Hardik Kabaria describes that timing problem in his October 6 explanation of the financing.",
+        "The potential value is easier to understand in terms of engineering time than headline processing speed. A calculation that finishes quickly still offers limited benefit if preparing each model takes a specialist several hours. Reducing that preparation burden could make it practical to compare more alternatives within the same development schedule. For a buyer, the economic comparison includes specialist labor and delayed decisions alongside software and computing bills. Moving calculations onto GPUs inside the company can change those costs without eliminating them. The useful measure is how much engineering work gets done with the available people and infrastructure."
+      ]
+    },
+    {
+      "heading": "What Vinci is building",
+      "paragraphs": [
+        "Vinci calls its approach Continuous Physics Reasoning. Madrona’s investment explanation describes a combination of a machine learning model, governing physics equations and numerical verification. It says Vinci pairs its model with a proprietary GPU numerical solver, checking predicted solutions against physical equations. The investor also describes a model that works on new designs without customer specific retraining and runs inside each customer’s environment. These are interested party descriptions of the architecture, rather than an independent assessment of its performance.",
+        "That architecture matters because engineering outputs need a defined relationship to the equations and assumptions behind them. A temperature field is useful only within the modeled materials, power loads and boundary conditions. Repeatable execution also does not establish that those inputs adequately represent the manufactured device. Evaluation has to cover the setup and physical model as well as the answer.",
+        "Vinci’s August 7 technical explainer provides a useful clarification of its automation claim. The product removes the requirement for engineers to mesh geometry manually, but still needs an internal geometric representation. Readers should therefore interpret reduced meshing work as a workflow claim, without assuming that numerical discretization has disappeared."
+      ]
+    },
+    {
+      "heading": "A product history beyond the financing",
+      "paragraphs": [
+        "Thermomechanical analysis was announced on February 24 as Vinci’s second core physics capability. It predicts stress and warpage as hardware heats and deforms. In a company reported production benchmark, Vinci said the full workflow took approximately 30 minutes, including ingestion of layout files around one gigabyte in size. The examples covered large boards and advanced packages with much smaller internal features. Those figures describe the reported scenarios; they do not establish a runtime for every customer design.",
+        "There is also evidence of work on the less conspicuous parts of the application. Release 1.24, described on May 13, added downloadable material images by layer and tile, controls for simulation element size, and changes to boundary condition handling and progress reporting. These features give engineers more visibility into how a calculation is configured. They also show why automation still needs inspectable inputs and useful controls."
+      ]
+    },
+    {
+      "heading": "How to read the speed claims",
+      "paragraphs": [
+        "Vinci’s current homepage presents one comparison with 117,440,512 degrees of freedom: 20 seconds of solution time for Vinci against two hours for a commercial finite element solver. It reports maximum temperatures of 100.00°C and 101.11°C respectively. The displayed 360 times speed difference is a vendor reported result for that comparison. The page does not identify the competing solver or give enough computing configuration detail to reproduce the comparison from that display alone.",
+        "Earlier technical work offers additional context. In its December 5, 2025 account of research presented at EPTC, Vinci reported 9,101 simulations over 26 hours for a study of a stacked chip package. The same account says the workflow used homogenization, a method for representing fine material structure through effective properties, alongside analysis of the complete package. That modeling detail is important when assessing what “manufacturing resolution” means at each stage of a calculation.",
+        "Neither example establishes a universal advantage across all physical phenomena, accuracy tolerances or hardware configurations. A purchasing team would need comparable workloads, agreed error measures and the total cost of preparing, running and reviewing a simulation. The public material reviewed here does not provide that complete comparison, and solution time should not be read as the time saved across an entire product development cycle."
+      ]
+    },
+    {
+      "heading": "The commercial evidence still needed",
+      "paragraphs": [
+        "Vinci’s December 2, 2025 debut disclosed $46 million in total funding and a company claim that its software was powering design programs at three leading semiconductor manufacturers. That dated deployment statement should not be treated as a current customer count.",
+        "The latest financing release does not disclose revenue, contract values or an updated customer count. That leaves the relationship between technical adoption and commercial scale unclear. A production program can demonstrate usefulness without revealing contract size, deployment breadth or the work needed to support each account.",
+        "Kabaria says the proceeds will support broader physics coverage, more capable engineering workflows, integrations, hiring and computing infrastructure. Recommending design changes and eventually creating designs from human intent remain future ambitions in his account.",
+        "For now, the financing gives Vinci resources to expand a defined simulation product into a larger engineering platform. The strongest evidence of progress would be customers repeatedly using it to make consequential design choices, with transparent validation and measurable savings across the full workflow. That is the practical test behind the much broader vision."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Vinci financing announcement, October 6, 2026",
+      "url": "https://www.businesswire.com/news/home/20261006307372/en/Vinci-Raises-$250M-Series-B-at-$1.5B-Valuation-to-Build-the-Intelligence-Infrastructure-for-a-New-Era-of-Hardware-Engineering"
+    },
+    {
+      "label": "Kabaria’s announcement, October 6, 2026",
+      "url": "https://www.getvinci.ai/blog/why-physics-needs-to-move-at-the-pace-of-design/"
+    },
+    {
+      "label": "Madrona investment explanation, October 6, 2026",
+      "url": "https://www.madrona.com/in-ai-we-believe-but-in-physics-we-trust-our-investment-in-vinci/"
+    },
+    {
+      "label": "Vinci geometry explainer, August 7, 2026",
+      "url": "https://www.getvinci.ai/blog/why-foundation-models-for-physics-must-be-geometry-native/"
+    },
+    {
+      "label": "Vinci thermomechanical release, February 24, 2026",
+      "url": "https://www.businesswire.com/news/home/20260224953731/en/Vinci-Ships-Production-Grade-Thermo-Mechanical-Simulation-at-Manufacturing-Scale"
+    },
+    {
+      "label": "Vinci Release 1.24, May 13, 2026",
+      "url": "https://www.getvinci.ai/blog/vinci-release-1-24-more-visibility-into-material-characterization-workflows/"
+    },
+    {
+      "label": "Vinci benchmark page, undated, accessed October 8, 2026",
+      "url": "https://www.getvinci.ai/"
+    },
+    {
+      "label": "Vinci EPTC research account, December 5, 2025",
+      "url": "https://www.getvinci.ai/blog/vincis-first-public-technical-showcase-eptc-2025/"
+    },
+    {
+      "label": "Vinci debut announcement, December 2, 2025",
+      "url": "https://www.businesswire.com/news/home/20251202284985/en/Vinci-Emerges-from-Stealth-to-Transform-Semiconductor-Design-and-Simulation"
+    }
+  ]
+},
+  {
   slug: "multiply-labs-series-b-robotic-biomanufacturing",
   taxonomy: {
     primaryIndustry: "healthcare-life-sciences",
