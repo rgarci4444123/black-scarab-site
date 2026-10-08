@@ -7,9 +7,9 @@ import styles from "./performance-chart.module.css";
 type SeriesKey = "bspi15" | "sp500" | "nasdaqComposite";
 
 const series = [
-  { key: "bspi15" as const, name: "BSPI15", color: "#a9c39c", width: 3.2 },
-  { key: "sp500" as const, name: "S&P 500", color: "#788a73", width: 2 },
-  { key: "nasdaqComposite" as const, name: "Nasdaq", color: "#e4e7de", width: 2 },
+  { key: "bspi15" as const, name: "BSPI15", color: "#586f4c", width: 3.2 },
+  { key: "sp500" as const, name: "S&P 500", color: "#8a98ab", width: 2 },
+  { key: "nasdaqComposite" as const, name: "Nasdaq", color: "#bb9772", width: 2 },
 ];
 
 const padding = { top: 24, right: 20, bottom: 46, left: 54 };
@@ -129,8 +129,7 @@ export default function PerformanceChart({
     <div className={styles.shell}>
       <div className={styles.header}>
         <div>
-          <p className={styles.eyebrow}>Market close</p>
-          <h3 className={styles.title}>Indexed performance</h3>
+          <h3 className={styles.title}>Latest market close</h3>
         </div>
         <div className={styles.asOf}>
           <p className={styles.asOfLabel}>As of</p>
@@ -191,16 +190,9 @@ export default function PerformanceChart({
           <desc id="performance-chart-description">Currency neutral price return levels rebased to 1,000 on October 1, 2026.</desc>
           <defs>
             <linearGradient id="bspi-area" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#90ad83" stopOpacity="0.26" />
+              <stop offset="0%" stopColor="#90ad83" stopOpacity="0.12" />
               <stop offset="100%" stopColor="#90ad83" stopOpacity="0" />
             </linearGradient>
-            <filter id="bspi-glow" x="-10%" y="-20%" width="120%" height="140%">
-              <feGaussianBlur stdDeviation="3" result="blur" />
-              <feMerge>
-                <feMergeNode in="blur" />
-                <feMergeNode in="SourceGraphic" />
-              </feMerge>
-            </filter>
             <clipPath id="performance-clip">
               <rect x={padding.left} y={padding.top} width={plotWidth} height={plotHeight} />
             </clipPath>
@@ -213,7 +205,7 @@ export default function PerformanceChart({
                 x2={width - padding.right}
                 y1={y(tick)}
                 y2={y(tick)}
-                stroke={tick === 1000 ? "rgba(187,205,177,0.32)" : "rgba(205,218,198,0.11)"}
+                stroke={tick === 1000 ? "rgba(112,133,99,0.32)" : "rgba(122,131,112,0.13)"}
                 strokeDasharray={tick === 1000 ? "5 7" : undefined}
                 vectorEffect="non-scaling-stroke"
               />
@@ -236,7 +228,6 @@ export default function PerformanceChart({
                   strokeLinejoin="round"
                   strokeWidth={item.width}
                   vectorEffect="non-scaling-stroke"
-                  filter={item.key === "bspi15" ? "url(#bspi-glow)" : undefined}
                 />
               ) : null,
             )}
@@ -248,7 +239,7 @@ export default function PerformanceChart({
                   x2={hover.x}
                   y1={padding.top}
                   y2={height - padding.bottom}
-                  stroke="rgba(231,237,226,0.4)"
+                  stroke="rgba(112,133,99,0.4)"
                   strokeWidth="1"
                   vectorEffect="non-scaling-stroke"
                 />
@@ -259,7 +250,7 @@ export default function PerformanceChart({
                       cx={hover.x}
                       cy={y(hover.values[item.key])}
                       r={item.key === "bspi15" ? 5 : 4}
-                      fill="#111711"
+                      fill="#fffdfa"
                       stroke={item.color}
                       strokeWidth="2.5"
                       vectorEffect="non-scaling-stroke"
