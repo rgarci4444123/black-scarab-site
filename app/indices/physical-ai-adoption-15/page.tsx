@@ -195,7 +195,7 @@ export default function PhysicalAiAdoptionIndexPage() {
           <div className={styles.sectionHeading}><h2>Downloads</h2><p>Current methodology and constituent data.</p></div>
           <div className={styles.downloads}>
             <a href="/documents/bspi15-index-methodology-v1.0.pdf" download><span><strong>Index methodology</strong><span>Download PDF · Version 1.0</span></span><ArrowDown /></a>
-            <a href="/data/bspi15-constituents.csv" download><span><strong>Constituent holdings</strong><span>Download CSV · Equal weight allocation</span></span><ArrowDown /></a>
+            <a href="/data/bspi15-constituents.csv" download><span><strong>Constituent holdings</strong><span>Download CSV · {latestPhysicalAiAdoptionPerformance.dateLabel}</span></span><ArrowDown /></a>
           </div>
           <p className={styles.disclaimer}>The Black Scarab Physical AI 15 is an editorial research index. It is not an investment fund, security, financial product, investment recommendation, or offer to buy or sell securities. Index values and constituents are published for informational purposes.</p>
         </section>
