@@ -34,6 +34,123 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
   {
+  slug: "beam-scoutdi-inspection-drone-agreement",
+  "taxonomy": {
+    "primaryIndustry": "energy-utilities",
+    "relevantIndustries": [
+      "manufacturing"
+    ],
+    "technologies": [
+      "drones",
+      "edge-ai",
+      "machine-vision"
+    ],
+    "applications": [
+      "site-inspection"
+    ]
+  },
+  "title": "Beam signs a $24 million ScoutDI deal to bring industrial inspection drones into its factories",
+  "summary": "The proposed acquisition connects a working inspection platform with Beam's manufacturing footprint. Its value will depend on closing the transaction, transferring production and turning access to customers into repeat orders.",
+  "category": "Companies",
+  "publishedDate": "2026-10-08",
+  "publishedAt": "2026-10-08T19:02:30-04:00",
+  "publishedLabel": "October 8, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/beam-scoutdi-inspection-drone-agreement.png",
+  "imageAlt": "A small tethered inspection drone against the curved engraved walls of an industrial tank.",
+  "imageCaption": "Original Black Scarab editorial interpretation of tethered industrial inspection.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "Event: a definitive purchase agreement signed October 6 and announced October 7",
+    "Price: $24 million base consideration, subject to adjustments and additional performance payments",
+    "Commercial test: dependable manufacturing and inspection revenue after closing"
+  ],
+  "sections": [
+    {
+      "heading": "From an intention to a signed agreement",
+      "paragraphs": [
+        "Beam Global has agreed to acquire ScoutDI, the Norwegian company that builds drones and software for inspecting industrial assets. The October 7 announcement advances a plan Beam first disclosed through a nonbinding letter of intent on September 22. This week's development is the signed transaction, with ScoutDI now identified and financial terms disclosed.",
+        "Beam's October 7 SEC filing records an October 6 signing. The base price is $24 million, normally paid 90 percent in cash and 10 percent in Beam shares, subject to adjustments and seller elections. Fifteen percent goes into escrow for 18 months. Revenue linked payments could increase the consideration. Closing requires specified financial statements and other conditions; the agreement allows termination if closing has not occurred by November 4, unless extended by agreement. Beam's release anticipates a November close.",
+        "The agreement makes the acquisition more concrete. Manufacturing integration and the resulting sales remain work for the combined business after closing."
+      ]
+    },
+    {
+      "heading": "An aircraft designed around the inspection job",
+      "paragraphs": [
+        "ScoutDI's current Scout 137 Gen 3 is designed for places where access is awkward and satellite navigation is unavailable. Its documentation describes a 60 metre tether carrying power and data, a 600 millimetre minimum circular access opening, onboard LiDAR and an NVIDIA Jetson Orin NX computer. Automated surface and line scans let a pilot supervise repetitive capture while the aircraft maintains a controlled relationship to the surface.",
+        "The tether is an architectural choice with commercial consequences. Continuous external power can support long capture sessions without battery changes. The physical connection also has to be deployed, managed and recovered around the asset. A prospective buyer should evaluate the complete access plan, including the opening, internal geometry, power supply and retrieval procedure.",
+        "This matters when reading Beam's wider strategy. Beam has emphasized its battery expertise and remote charging technology. The current Scout 137 documentation specifies no battery in the drone or ground station. Those capabilities may support future products or adjacent opportunities, but an immediate battery substitution saving should not be assumed for this platform."
+      ]
+    },
+    {
+      "heading": "The inspection continues after landing",
+      "paragraphs": [
+        "Scout Portal gives the proposed acquisition a software component. ScoutDI describes a system that connects video, images and ultrasonic measurements to their locations in a three dimensional asset model. Inspectors can review findings, add annotations and produce reports, with access for customers and remote specialists. The current product page lists machine learning corrosion detection as trial based and dependent on the subscription plan.",
+        "The economic unit is an inspection that supports a decision. An operator needs to know where a measurement came from, whether coverage was sufficient, which areas need another look and whether the evidence satisfies the people responsible for the asset. A well organized record can reduce the cost of returning to answer a question later.",
+        "This also shapes recurring software demand. The useful test is whether customers keep using the record through review, reporting and subsequent inspections. A growing archive has value when teams can locate and compare reliable observations. Storage alone would offer a narrower reason to renew."
+      ]
+    },
+    {
+      "heading": "There is evidence of industrial use",
+      "paragraphs": [
+        "ScoutDI's November 2025 account of the Shell operated Turritella survey describes its earlier generation system collecting more than 40 hours of data over 35 to 40 flights. Drone specialists AUAV participated in a broader inspection approach involving Geo Oceans and Sonomatic. ScoutDI reports that the survey achieved American Bureau of Shipping acceptance without people entering the cargo oil tanks.",
+        "That is useful operating context, with two qualifications. It is a supplier account of a particular project, and several robotic tools contributed to the inspection. The result should not be attributed entirely to one aircraft or extended automatically to every asset, customer or inspection requirement.",
+        "A second November 2025 supplier case describes Kiwa using Scout 137 at Uniper's Storfinnforsen hydropower site. Spotscale processed the captured imagery into a three dimensional model for crack analysis. The account shows how the drone, inspection service provider and analysis software can contribute different parts of the delivered result.",
+        "For Beam, retaining those relationships and workflows could matter as much as producing the airframe. Industrial buyers also need trained operators, calibration, repair support and confidence that an inspection can be completed within the available outage."
+      ]
+    },
+    {
+      "heading": "Manufacturing and market access are connected",
+      "paragraphs": [
+        "Beam proposes U.S. manufacturing for American customers and European manufacturing for Europe and the Middle East. It plans to retain ScoutDI's facilities and chief executive Nicolai Husteli.",
+        "Beam describes existing conditional defense approval and an FCC exemption, subject to onshoring compliance and updated vetting. Government procurement still has separate requirements, including the American Security Drone Act and Blue UAS program. These company statements concern existing market access; this week's news is the signed acquisition.",
+        "The commercial implication is that production location is part of the route to market. Transferring a product into an established factory still requires supplier qualification, documented assembly, testing and support. Existing floor space can be useful without proving how quickly the manufacturing system will reach stable output."
+      ]
+    },
+    {
+      "heading": "What would make the acquisition work",
+      "paragraphs": [
+        "The transaction offers a plausible expansion from energy infrastructure into equipment that gathers industrial information. ScoutDI brings a product and inspection workflow; Beam proposes manufacturing capacity and wider customer access.",
+        "The integration test will be practical: reliable delivery and service, stable product quality through the production transfer, and software renewals and repeat equipment orders that accompany the broader sales effort. Those outcomes would connect the strategic rationale with operating performance.",
+        "The next milestone is closing. After that, evidence of domestic production and repeat customer demand would be more informative than treating a signed agreement as completed integration. The opportunity is to make an established inspection workflow easier to supply and support across more markets."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Beam SEC filing, October 7, 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1398805/000143774926032264/beem20261007_8k.htm"
+    },
+    {
+      "label": "Beam letter of intent, September 22, 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1398805/000143774926030857/ex_1018438.htm"
+    },
+    {
+      "label": "Beam acquisition announcement, October 7, 2026",
+      "url": "https://beamforall.com/beam-global-signs-definitive-agreement-to-acquire-drone-technology-company-scoutdi-creating-a-vertically-integrated-u-s-drone-platform-for-industrial-and-defense-markets/"
+    },
+    {
+      "label": "Scout 137 product documentation, undated, accessed October 8, 2026",
+      "url": "https://www.scoutdi.com/products/scout-137-gen-3/"
+    },
+    {
+      "label": "Scout Portal documentation, undated, accessed October 8, 2026",
+      "url": "https://www.scoutdi.com/products/scout-portal/"
+    },
+    {
+      "label": "ScoutDI Turritella case, November 17, 2025",
+      "url": "https://www.scoutdi.com/case-studies/shell-turritella-special-survey/"
+    },
+    {
+      "label": "ScoutDI hydropower case, November 11, 2025",
+      "url": "https://www.scoutdi.com/case-studies/autonomous-hydropower-dam-inspection/"
+    }
+  ]
+},
+  {
   slug: "arrive-ai-ap3-plus-edge-vision",
   "taxonomy": {
     "primaryIndustry": "warehousing-logistics",
