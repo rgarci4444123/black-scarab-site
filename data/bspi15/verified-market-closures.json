@@ -1,0 +1,13 @@
+[
+  {
+    "mic": "XSHE",
+    "name": "National Day",
+    "from": "2026-10-01",
+    "through": "2026-10-07",
+    "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+    "additionalSourceUrl": "https://investor.szse.cn/disclosure/notice/general/t20260917_622911.html",
+    "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+    "verifiedAt": "2026-10-09",
+    "verificationMethod": "Official exchange notices retrieved through web search; consistent with prior recorded exchange-calendar verification."
+  }
+]

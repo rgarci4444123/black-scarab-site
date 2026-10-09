@@ -2,12 +2,11 @@
 .eyebrow { color: #6e6e73; font-size: 12px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; }
 .hero h1 { margin-top: 16px; font-size: clamp(2.4rem, 4.5vw, 3.5rem); line-height: 1.1; font-weight: 600; letter-spacing: -.045em; }
 .introduction { max-width: 690px; margin: 20px auto 0; color: #6e6e73; font-size: 18px; line-height: 1.8; }
-.facts { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px 44px; margin: 36px auto 0; }
-.facts dt { color: #6e6e73; font-size: 11px; }
-.facts dd { margin-top: 5px; font-size: 13px; font-weight: 500; }
 .sectionNav { border-block: 1px solid #e2e2e5; padding: 0 40px; background: #ffffff; }
-.sectionNav > div { display: flex; align-items: center; gap: 28px; max-width: 1280px; margin: auto; overflow-x: auto; }
+.sectionNav > div { display: flex; align-items: center; gap: 48px; max-width: 1280px; margin: auto; overflow-x: auto; }
 .sectionNav a { display: inline-flex; align-items: center; gap: 8px; flex-shrink: 0; min-height: 64px; font-size: 13px; color: #6e6e73; transition: color .15s; }
+.sectionNav a:first-child { margin-left: auto; }
+.sectionNav a:last-child { margin-right: auto; }
 .sectionNav a:hover { color: #101410; }
 .section { padding: 56px 40px; scroll-margin-top: 105px; border-bottom: 1px solid #e2e2e5; }
 .section > * { max-width: 1280px; margin-inline: auto; }
@@ -61,9 +60,8 @@
 @media (max-width: 760px) {
   .hero { padding: 48px 24px 32px; }
   .introduction { font-size: 16px; line-height: 1.8; }
-  .facts { gap: 20px 26px; margin-top: 28px; }
   .sectionNav { padding-inline: 24px; }
-  .sectionNav > div { gap: 24px; }
+  .sectionNav > div { gap: 28px; }
   .sectionNav a { min-height: 54px; font-size: 12px; }
   .section { padding: 36px 24px; }
   .sectionHeading { display: block; margin-bottom: 22px; }

@@ -39,10 +39,6 @@ function niceTicks(minimum: number, maximum: number, count = 4) {
   return ticks;
 }
 
-function interpolate(a: number, b: number, amount: number) {
-  return a + (b - a) * amount;
-}
-
 export default function PerformanceChart({
   observations,
 }: {
@@ -71,6 +67,7 @@ export default function PerformanceChart({
   const height = width < 560 ? 286 : 380;
   const plotWidth = width - padding.left - padding.right;
   const plotHeight = height - padding.top - padding.bottom;
+  const dateLabelStep = Math.max(1, Math.ceil((observations.length - 1) / Math.max(1, Math.floor(plotWidth / 45))));
   const latest = observations[observations.length - 1];
   const first = observations[0];
 
@@ -103,23 +100,18 @@ export default function PerformanceChart({
 
   const hover = useMemo(() => {
     if (hoverRatio === null || observations.length < 2) return null;
-    const exactIndex = hoverRatio * (observations.length - 1);
-    const leftIndex = Math.min(Math.floor(exactIndex), observations.length - 2);
-    const amount = exactIndex - leftIndex;
-    const left = observations[leftIndex];
-    const right = observations[leftIndex + 1];
+    const index = Math.round(hoverRatio * (observations.length - 1));
+    const observation = observations[index];
 
     return {
-      x: padding.left + hoverRatio * plotWidth,
-      label: amount < 0.5 ? left.dateLabel : right.dateLabel,
-      values: Object.fromEntries(
-        series.map((item) => [item.key, interpolate(left[item.key], right[item.key], amount)]),
-      ) as Record<SeriesKey, number>,
+      x: padding.left + (index / (observations.length - 1)) * plotWidth,
+      label: observation.dateLabel,
+      values: observation,
     };
   }, [hoverRatio, observations, plotWidth]);
 
   function updateHover(clientX: number) {
-    const rect = wrapRef.current?.getBoundingClientRect();
+    const rect = wrapRef.current?.querySelector("svg")?.getBoundingClientRect();
     if (!rect) return;
     const svgX = ((clientX - rect.left) / rect.width) * width;
     setHoverRatio(Math.max(0, Math.min(1, (svgX - padding.left) / plotWidth)));
@@ -232,6 +224,10 @@ export default function PerformanceChart({
               ) : null,
             )}
 
+            {observations.length <= 30 ? observations.map((observation, index) => (
+              visible.bspi15 ? <circle key={observation.date} cx={x(index)} cy={y(observation.bspi15)} r="3" fill="#0071e3" /> : null
+            )) : null}
+
             {hover ? (
               <>
                 <line
@@ -262,9 +258,7 @@ export default function PerformanceChart({
           </g>
 
           {observations.map((observation, index) => {
-            const show = width < 560
-              ? index === 0 || index === observations.length - 1
-              : index === 0 || index === observations.length - 1 || index % 2 === 0;
+            const show = index === 0 || index === observations.length - 1 || index % dateLabelStep === 0;
             return show ? (
               <text
                 key={observation.date}
@@ -274,7 +268,7 @@ export default function PerformanceChart({
                 fill="#6e6e73"
                 fontSize="11"
               >
-                {observation.dateLabel.replace(", 2026", "")}
+                {new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", timeZone: "UTC" }).format(new Date(`${observation.date}T12:00:00Z`))}
               </text>
             ) : null;
           })}

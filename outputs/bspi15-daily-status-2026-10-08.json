@@ -1,0 +1,549 @@
+{
+  "date": "2026-10-08",
+  "status": "local-update-complete-lint-issues-remain",
+  "fetchedAt": "2026-10-09T11:49:33.071Z",
+  "auditExitCode": 0,
+  "auditCounts": {
+    "instruments": 17,
+    "sourceObservations": 243,
+    "comparedObservations": 75,
+    "matches": 75,
+    "mismatches": 0,
+    "identityErrors": 0,
+    "missingSourceObservations": 0,
+    "verifiedClosureObservations": 10,
+    "requiredDateObservations": 17,
+    "missingRequiredObservations": 0,
+    "invalidObservations": 0,
+    "duplicateObservations": 0,
+    "paginationErrors": 0
+  },
+  "requestedDateCoverage": {
+    "required": 17,
+    "available": 17,
+    "missing": 0
+  },
+  "missingOctober8Observations": [],
+  "historicalMissingDisposition": {
+    "reason": "Verified Shenzhen National Day closure October 1 through October 7; all ten historical carry-forwards match September 30 Marketstack unadjusted closes. October 8 prices are all fresh source observations.",
+    "manifest": "data/bspi15/verified-market-closures.json",
+    "verifiedClosureObservations": [
+      {
+        "date": "2026-10-01",
+        "ticker": "002747",
+        "sourceSymbol": "002747.SZ",
+        "expectedMic": "XSHE",
+        "previousAvailableDate": "2026-09-30",
+        "previousAvailableClose": 28.22,
+        "holiday": "National Day",
+        "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+        "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+        "canonicalClose": 28.22,
+        "status": "verified-market-closure"
+      },
+      {
+        "date": "2026-10-01",
+        "ticker": "300124",
+        "sourceSymbol": "300124.SZ",
+        "expectedMic": "XSHE",
+        "previousAvailableDate": "2026-09-30",
+        "previousAvailableClose": 51.9,
+        "holiday": "National Day",
+        "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+        "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+        "canonicalClose": 51.9,
+        "status": "verified-market-closure"
+      },
+      {
+        "date": "2026-10-02",
+        "ticker": "002747",
+        "sourceSymbol": "002747.SZ",
+        "expectedMic": "XSHE",
+        "previousAvailableDate": "2026-09-30",
+        "previousAvailableClose": 28.22,
+        "holiday": "National Day",
+        "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+        "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+        "canonicalClose": 28.22,
+        "status": "verified-market-closure"
+      },
+      {
+        "date": "2026-10-02",
+        "ticker": "300124",
+        "sourceSymbol": "300124.SZ",
+        "expectedMic": "XSHE",
+        "previousAvailableDate": "2026-09-30",
+        "previousAvailableClose": 51.9,
+        "holiday": "National Day",
+        "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+        "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+        "canonicalClose": 51.9,
+        "status": "verified-market-closure"
+      },
+      {
+        "date": "2026-10-05",
+        "ticker": "002747",
+        "sourceSymbol": "002747.SZ",
+        "expectedMic": "XSHE",
+        "previousAvailableDate": "2026-09-30",
+        "previousAvailableClose": 28.22,
+        "holiday": "National Day",
+        "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+        "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+        "canonicalClose": 28.22,
+        "status": "verified-market-closure"
+      },
+      {
+        "date": "2026-10-05",
+        "ticker": "300124",
+        "sourceSymbol": "300124.SZ",
+        "expectedMic": "XSHE",
+        "previousAvailableDate": "2026-09-30",
+        "previousAvailableClose": 51.9,
+        "holiday": "National Day",
+        "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+        "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+        "canonicalClose": 51.9,
+        "status": "verified-market-closure"
+      },
+      {
+        "date": "2026-10-06",
+        "ticker": "002747",
+        "sourceSymbol": "002747.SZ",
+        "expectedMic": "XSHE",
+        "previousAvailableDate": "2026-09-30",
+        "previousAvailableClose": 28.22,
+        "holiday": "National Day",
+        "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+        "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+        "canonicalClose": 28.22,
+        "status": "verified-market-closure"
+      },
+      {
+        "date": "2026-10-06",
+        "ticker": "300124",
+        "sourceSymbol": "300124.SZ",
+        "expectedMic": "XSHE",
+        "previousAvailableDate": "2026-09-30",
+        "previousAvailableClose": 51.9,
+        "holiday": "National Day",
+        "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+        "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+        "canonicalClose": 51.9,
+        "status": "verified-market-closure"
+      },
+      {
+        "date": "2026-10-07",
+        "ticker": "002747",
+        "sourceSymbol": "002747.SZ",
+        "expectedMic": "XSHE",
+        "previousAvailableDate": "2026-09-30",
+        "previousAvailableClose": 28.22,
+        "holiday": "National Day",
+        "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+        "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+        "canonicalClose": 28.22,
+        "status": "verified-market-closure"
+      },
+      {
+        "date": "2026-10-07",
+        "ticker": "300124",
+        "sourceSymbol": "300124.SZ",
+        "expectedMic": "XSHE",
+        "previousAvailableDate": "2026-09-30",
+        "previousAvailableClose": 51.9,
+        "holiday": "National Day",
+        "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+        "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+        "canonicalClose": 51.9,
+        "status": "verified-market-closure"
+      }
+    ]
+  },
+  "receiptPath": "data/bspi15/raw/marketstack/2026-10-09T11-49-33-071Z",
+  "rawReceiptDirectories": [
+    "data/bspi15/raw/marketstack/2026-10-09T11-46-29-130Z",
+    "data/bspi15/raw/marketstack/2026-10-09T11-49-33-071Z"
+  ],
+  "metrics": {
+    "date": "2026-10-08",
+    "baseDate": "2026-10-01",
+    "previousDate": "2026-10-07",
+    "level": 976.8397659583643,
+    "previousLevel": 1003.8668214684624,
+    "dailyReturn": -0.026922949271859342,
+    "sinceLaunch": -0.023160234041635697,
+    "benchmarks": {
+      "S&P 500": {
+        "close": 7765.36,
+        "rebased": 1012.9016689602098,
+        "dailyReturn": -0.004666892244537091,
+        "sinceLaunch": 0.012901668960209722
+      },
+      "Nasdaq Composite": {
+        "close": 27193.3398,
+        "rebased": 1011.9733901771974,
+        "dailyReturn": -0.012540596098359114,
+        "sinceLaunch": 0.011973390177197452
+      }
+    },
+    "excessReturns": {
+      "S&P 500": {
+        "daily": -0.02225605702732225,
+        "sinceLaunch": -0.03606190300184542
+      },
+      "Nasdaq Composite": {
+        "daily": -0.014382353173500229,
+        "sinceLaunch": -0.03513362421883315
+      }
+    },
+    "constituents": [
+      {
+        "ticker": "6954",
+        "company": "FANUC",
+        "baseClose": 6127.0,
+        "previousClose": 6164.0,
+        "close": 6019,
+        "relative": 0.9823731026603558,
+        "previousWeight": 0.06681091043446795,
+        "dailyReturn": -0.02352368591823495,
+        "contribution": -0.00157163887297175,
+        "weight": 0.06704430190053144
+      },
+      {
+        "ticker": "6506",
+        "company": "Yaskawa Electric",
+        "baseClose": 4779.0,
+        "previousClose": 4946.0,
+        "close": 4789,
+        "relative": 1.0020924879681943,
+        "previousWeight": 0.06873053456466266,
+        "dailyReturn": -0.03174282248281435,
+        "contribution": -0.0021817011578350227,
+        "weight": 0.0683900965057495
+      },
+      {
+        "ticker": "002747",
+        "company": "Estun Automation",
+        "baseClose": 28.22,
+        "previousClose": 28.22,
+        "close": 26.86,
+        "relative": 0.9518072289156627,
+        "previousWeight": 0.06640987154964068,
+        "dailyReturn": -0.04819277108433728,
+        "contribution": -0.0032004757373320764,
+        "weight": 0.06495826385486109
+      },
+      {
+        "ticker": "TER",
+        "company": "Teradyne",
+        "baseClose": 415.79,
+        "previousClose": 411.78,
+        "close": 398.72,
+        "relative": 0.9589456215878208,
+        "previousWeight": 0.06576939538399441,
+        "dailyReturn": -0.03171596483559169,
+        "contribution": -0.0020859398312568934,
+        "weight": 0.06544543980878394
+      },
+      {
+        "ticker": "6268",
+        "company": "Nabtesco",
+        "baseClose": 4975.0,
+        "previousClose": 5010.0,
+        "close": 4795,
+        "relative": 0.963819095477387,
+        "previousWeight": 0.06687707667612057,
+        "dailyReturn": -0.04291417165668665,
+        "contribution": -0.002869974348376433,
+        "weight": 0.06577804119401283
+      },
+      {
+        "ticker": "300124",
+        "company": "Inovance",
+        "baseClose": 51.9,
+        "previousClose": 51.9,
+        "close": 49.85,
+        "relative": 0.9605009633911369,
+        "previousWeight": 0.06640987154964068,
+        "dailyReturn": -0.039499036608863114,
+        "contribution": -0.002623125947529154,
+        "weight": 0.06555158767168619
+      },
+      {
+        "ticker": "6861",
+        "company": "Keyence",
+        "baseClose": 81200.0,
+        "previousClose": 81560.0,
+        "close": 80000,
+        "relative": 0.9852216748768473,
+        "previousWeight": 0.0667042995515849,
+        "dailyReturn": -0.019127023050514946,
+        "contribution": -0.0012758546750916181,
+        "weight": 0.06723870923431403
+      },
+      {
+        "ticker": "CGNX",
+        "company": "Cognex",
+        "baseClose": 62.22,
+        "previousClose": 61.21,
+        "close": 60.91,
+        "relative": 0.9789456766313083,
+        "previousWeight": 0.06533185852705732,
+        "dailyReturn": -0.004901159941186117,
+        "contribution": -0.000320201887896052,
+        "weight": 0.06681038936280936
+      },
+      {
+        "ticker": "OUST",
+        "company": "Ouster",
+        "baseClose": 40.87,
+        "previousClose": 41.67,
+        "close": 39.53,
+        "relative": 0.9672131147540984,
+        "previousWeight": 0.06770979563184554,
+        "dailyReturn": -0.0513558915286777,
+        "contribution": -0.0034772969198979945,
+        "weight": 0.06600967381142452
+      },
+      {
+        "ticker": "HSAI",
+        "company": "Hesai",
+        "baseClose": 15.93,
+        "previousClose": 16.0,
+        "close": 15.61,
+        "relative": 0.9799121155053359,
+        "previousWeight": 0.06670169144973327,
+        "dailyReturn": -0.024375000000000036,
+        "contribution": -0.0016258537290872509,
+        "weight": 0.06687634619678949
+      },
+      {
+        "ticker": "ROK",
+        "company": "Rockwell Automation",
+        "baseClose": 442.45,
+        "previousClose": 441.9,
+        "close": 434.14,
+        "relative": 0.9812182167476551,
+        "previousWeight": 0.0663273188784862,
+        "dailyReturn": -0.017560534057479038,
+        "contribution": -0.0011647431421069293,
+        "weight": 0.06696548406687731
+      },
+      {
+        "ticker": "SIE",
+        "company": "Siemens",
+        "baseClose": 271.9,
+        "previousClose": 271.2,
+        "close": 264.25,
+        "relative": 0.971864656123575,
+        "previousWeight": 0.0662389009351326,
+        "dailyReturn": -0.02562684365781709,
+        "contribution": -0.0016974939583302773,
+        "weight": 0.06632712890362265
+      },
+      {
+        "ticker": "NXPI",
+        "company": "NXP Semiconductors",
+        "baseClose": 239.19,
+        "previousClose": 235.22,
+        "close": 231.07,
+        "relative": 0.9660520924787825,
+        "previousWeight": 0.06530762149716327,
+        "dailyReturn": -0.017643057563132447,
+        "contribution": -0.0011522261253857176,
+        "weight": 0.06593043718765222
+      },
+      {
+        "ticker": "6383",
+        "company": "Daifuku",
+        "baseClose": 5832.0,
+        "previousClose": 5875.0,
+        "close": 5716,
+        "relative": 0.9801097393689986,
+        "previousWeight": 0.06689951909364523,
+        "dailyReturn": -0.027063829787234095,
+        "contribution": -0.001810557197598232,
+        "weight": 0.06688983348989867
+      },
+      {
+        "ticker": "HEXA B",
+        "company": "Hexagon",
+        "baseClose": 99.02,
+        "previousClose": 101.05,
+        "close": 101.25,
+        "relative": 1.0225207028883054,
+        "previousWeight": 0.06777133427682479,
+        "dailyReturn": 0.0019792182088076427,
+        "contribution": 0.00013413425883588114,
+        "weight": 0.06978426681098678
+      }
+    ],
+    "weightTotal": 1.0,
+    "contributionTotal": -0.02692294927185952,
+    "reconciliationDifference": -1.7694179454963432e-16,
+    "topPositive": [
+      {
+        "ticker": "HEXA B",
+        "company": "Hexagon",
+        "baseClose": 99.02,
+        "previousClose": 101.05,
+        "close": 101.25,
+        "relative": 1.0225207028883054,
+        "previousWeight": 0.06777133427682479,
+        "dailyReturn": 0.0019792182088076427,
+        "contribution": 0.00013413425883588114,
+        "weight": 0.06978426681098678
+      }
+    ],
+    "topNegative": [
+      {
+        "ticker": "OUST",
+        "company": "Ouster",
+        "baseClose": 40.87,
+        "previousClose": 41.67,
+        "close": 39.53,
+        "relative": 0.9672131147540984,
+        "previousWeight": 0.06770979563184554,
+        "dailyReturn": -0.0513558915286777,
+        "contribution": -0.0034772969198979945,
+        "weight": 0.06600967381142452
+      },
+      {
+        "ticker": "002747",
+        "company": "Estun Automation",
+        "baseClose": 28.22,
+        "previousClose": 28.22,
+        "close": 26.86,
+        "relative": 0.9518072289156627,
+        "previousWeight": 0.06640987154964068,
+        "dailyReturn": -0.04819277108433728,
+        "contribution": -0.0032004757373320764,
+        "weight": 0.06495826385486109
+      },
+      {
+        "ticker": "6268",
+        "company": "Nabtesco",
+        "baseClose": 4975.0,
+        "previousClose": 5010.0,
+        "close": 4795,
+        "relative": 0.963819095477387,
+        "previousWeight": 0.06687707667612057,
+        "dailyReturn": -0.04291417165668665,
+        "contribution": -0.002869974348376433,
+        "weight": 0.06577804119401283
+      }
+    ],
+    "receiptPath": "data/bspi15/raw/marketstack/2026-10-09T11-49-33-071Z",
+    "auditStatus": "passed",
+    "marketHolidays": [],
+    "carriedForward": [],
+    "corporateActions": {
+      "providerDividends": 0,
+      "providerSplitFlags": 0,
+      "relevantEffectiveDateEventsIdentified": [],
+      "review": "Marketstack source fields, unchanged security identities, price comparisons and date-specific web search."
+    }
+  },
+  "canonicalLatestDate": "2026-10-08",
+  "websiteLatestDate": "2026-10-08",
+  "canonicalSha256": "645974f7f872c6b6b67641656ddee272591ea5732e1808840cec73b0f050bf2d",
+  "websiteDataSha256": "5efcce44f8eb90b53e60d8f24d7658ca6aab175c56e4a94df03b514021e037ad",
+  "canonicalUpdated": true,
+  "websiteUpdated": true,
+  "workbookCreated": true,
+  "workbookPath": "/Users/rodolfogarcia/Desktop/black-scarab-site/outputs/bspi15-daily-review.xlsx",
+  "workbookChecks": {
+    "fiveSheets": true,
+    "formulasRecalculated": true,
+    "inputChangeRecalculation": true,
+    "noFormulaErrors": true,
+    "visuallyReviewedAllSheets": true,
+    "exactIdentifiersVerified": true,
+    "excelNativeApplicationTested": false
+  },
+  "checks": {
+    "strictAudit": "passed",
+    "auditRegressionTests": "8 passed",
+    "independentIndexReconciliation": "passed",
+    "dates": "unique and chronological",
+    "weights": "15 present; 100% total",
+    "benchmarks": "rebased from October 1, 2026",
+    "typeCheck": "passed",
+    "productionBuild": "passed; 154 pages generated, 124 article previews validated",
+    "targetedLint": "passed",
+    "repositoryLint": "failed: seven existing no-require-imports errors in output/news/volvo-waabi-warp-customer-operations/headless-qa.cjs and output/x/plus-one/render.cjs; one existing next/no-img-element warning in app/insights/page.tsx",
+    "websiteQA": [
+      {
+        "viewport": "desktop",
+        "date": "2026-10-08",
+        "levels": "verified",
+        "weights": 15,
+        "holdings": "verified",
+        "targetAllocation": "unchanged",
+        "horizontalOverflow": false,
+        "pageErrors": []
+      },
+      {
+        "viewport": "mobile",
+        "date": "2026-10-08",
+        "levels": "verified",
+        "weights": 15,
+        "holdings": "verified",
+        "targetAllocation": "unchanged",
+        "horizontalOverflow": false,
+        "pageErrors": []
+      }
+    ],
+    "targetAllocation": "unchanged"
+  },
+  "previewUrl": "http://127.0.0.1:3108/indices/physical-ai-adoption-15#performance",
+  "filesChanged": [
+    "scripts/audit-bspi15-marketstack.mjs",
+    "scripts/audit-bspi15-marketstack.test.mjs",
+    "data/bspi15/verified-market-closures.json",
+    "data/bspi15/daily-closes.csv",
+    "data/bspi15/marketstack-observations.csv",
+    "data/bspi15/marketstack-audit-latest.json",
+    "public/data/bspi15-performance.json",
+    "outputs/bspi15-daily-review.xlsx",
+    "outputs/bspi15-daily-metrics-2026-10-08.json",
+    "outputs/bspi15-daily-status-2026-10-08.json",
+    "outputs/bspi15-work/"
+  ],
+  "websiteSourceEdits": false,
+  "methodologyChanged": false,
+  "deploymentPerformed": false,
+  "committed": false,
+  "pushed": false,
+  "nextStep": "Review the local preview and workbook. Resolve the existing repository lint errors before deployment; deployment requires explicit approval.",
+  "consolidatedReview": {
+    "workbook": "outputs/bspi15-daily-review.xlsx",
+    "history": "data/bspi15/review-history.json",
+    "firstDate": "2026-10-01",
+    "lastDate": "2026-10-08",
+    "dates": 6,
+    "prices": 102,
+    "sheets": 5,
+    "formulaRecalculation": "passed",
+    "websiteReconciliation": "passed"
+  },
+  "websiteReview": {
+    "removed": "hero facts strip",
+    "visibleTradingDates": [
+      "2026-10-01",
+      "2026-10-02",
+      "2026-10-05",
+      "2026-10-06",
+      "2026-10-07",
+      "2026-10-08"
+    ],
+    "hover": "actual daily closes",
+    "desktop": "passed",
+    "mobile": "passed",
+    "typeChecking": "passed",
+    "targetedLint": "passed",
+    "productionBuild": "passed",
+    "evidence": "outputs/bspi15-work/history/website-qa.json"
+  }
+}

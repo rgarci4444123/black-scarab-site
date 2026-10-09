@@ -100,17 +100,6 @@ export default function PhysicalAiAdoptionIndexPage() {
           <p className={styles.eyebrow}>Black Scarab <span className="text-[#7856e8]">Indices</span></p>
           <h1>{physicalAiAdoptionIndex.shortName}</h1>
           <p className={styles.introduction}>Equal weight exposure to fifteen globally listed companies across robotics, motion, perception, control, and autonomous deployment.</p>
-          <dl className={styles.facts}>
-            {[
-              ["Symbol", physicalAiAdoptionIndex.symbol],
-              ["Constituents", String(physicalAiAdoptionIndex.constituentCount)],
-              ["Weighting", physicalAiAdoptionIndex.weighting],
-              ["Rebalance", physicalAiAdoptionIndex.rebalance],
-              ["Return", "Price return"],
-            ].map(([label, value]) => (
-              <div key={label}><dt>{label}</dt><dd>{value}</dd></div>
-            ))}
-          </dl>
         </section>
 
         <nav aria-label="Index page sections" className={styles.sectionNav}>
@@ -126,7 +115,6 @@ export default function PhysicalAiAdoptionIndexPage() {
         <section id="performance" className={styles.section}>
           <div className={styles.sectionHeading}>
             <h2>Performance</h2>
-            <p>BSPI15, the S&amp;P 500, and the Nasdaq Composite.<br />Rebased to 1,000 on October 1, 2026.</p>
           </div>
           <PerformanceChart observations={physicalAiAdoptionPerformance} />
         </section>
@@ -134,7 +122,6 @@ export default function PhysicalAiAdoptionIndexPage() {
         <section id="constituents" className={styles.section}>
           <div className={styles.sectionHeading}>
             <h2>The 15 companies</h2>
-            <p>Current weights reflect the latest closing calculation and drift between quarterly equal weight reviews.</p>
           </div>
           <div className={styles.constituents}>
             <div className={styles.tableHeading} aria-hidden="true">

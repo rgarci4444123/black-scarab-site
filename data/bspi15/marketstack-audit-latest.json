@@ -1,36 +1,102 @@
 {
-  "fetchedAt": "2026-10-08T02:12:51.373Z",
+  "fetchedAt": "2026-10-09T11:49:33.071Z",
   "period": {
-    "from": "2026-10-05",
-    "through": "2026-10-07",
-    "sourceFrom": "2026-09-21"
+    "from": "2026-10-01",
+    "through": "2026-10-08",
+    "sourceFrom": "2026-09-17"
   },
   "provider": "Marketstack",
   "methodology": "Unadjusted local-currency closes for the price-return index",
   "requests": [
-    "https://api.marketstack.com/v2/eod?symbols=6954.T%2C6506.T%2C002747.SZ%2CTER%2C6268.T%2C300124.SZ%2C6861.T%2CCGNX%2COUST%2CHSAI%2CROK%2CSIE.DE%2CNXPI%2C6383.T%2CHEXA-B.ST&date_from=2026-09-21&date_to=2026-10-07&limit=1000&sort=ASC",
-    "https://api.marketstack.com/v1/eod?symbols=GSPC.INDX%2CIXIC.INDX&date_from=2026-09-21&date_to=2026-10-07&limit=1000&sort=ASC"
+    "https://api.marketstack.com/v2/eod?symbols=6954.T%2C6506.T%2C002747.SZ%2CTER%2C6268.T%2C300124.SZ%2C6861.T%2CCGNX%2COUST%2CHSAI%2CROK%2CSIE.DE%2CNXPI%2C6383.T%2CHEXA-B.ST&date_from=2026-09-17&date_to=2026-10-08&limit=1000&sort=ASC",
+    "https://api.marketstack.com/v1/eod?symbols=GSPC.INDX%2CIXIC.INDX&date_from=2026-09-17&date_to=2026-10-08&limit=1000&sort=ASC"
   ],
-  "receiptPath": "data/bspi15/raw/marketstack/2026-10-08T02-12-51-373Z",
+  "receiptPath": "data/bspi15/raw/marketstack/2026-10-09T11-49-33-071Z",
+  "status": "passed",
   "counts": {
     "instruments": 17,
-    "sourceObservations": 187,
-    "comparedObservations": 38,
-    "matches": 38,
+    "sourceObservations": 243,
+    "comparedObservations": 75,
+    "matches": 75,
     "mismatches": 0,
     "identityErrors": 0,
-    "missingSourceObservations": 13
+    "missingSourceObservations": 0,
+    "verifiedClosureObservations": 10,
+    "requiredDateObservations": 17,
+    "missingRequiredObservations": 0,
+    "invalidObservations": 0,
+    "duplicateObservations": 0,
+    "paginationErrors": 0
   },
   "identityErrors": [],
   "mismatches": [],
-  "missingSourceObservations": [
+  "missingSourceObservations": [],
+  "missingRequiredObservations": [],
+  "verifiedClosures": [
+    {
+      "date": "2026-10-01",
+      "ticker": "002747",
+      "sourceSymbol": "002747.SZ",
+      "expectedMic": "XSHE",
+      "previousAvailableDate": "2026-09-30",
+      "previousAvailableClose": 28.22,
+      "holiday": "National Day",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+      "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+      "canonicalClose": 28.22,
+      "status": "verified-market-closure"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "300124",
+      "sourceSymbol": "300124.SZ",
+      "expectedMic": "XSHE",
+      "previousAvailableDate": "2026-09-30",
+      "previousAvailableClose": 51.9,
+      "holiday": "National Day",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+      "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+      "canonicalClose": 51.9,
+      "status": "verified-market-closure"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "002747",
+      "sourceSymbol": "002747.SZ",
+      "expectedMic": "XSHE",
+      "previousAvailableDate": "2026-09-30",
+      "previousAvailableClose": 28.22,
+      "holiday": "National Day",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+      "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+      "canonicalClose": 28.22,
+      "status": "verified-market-closure"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "300124",
+      "sourceSymbol": "300124.SZ",
+      "expectedMic": "XSHE",
+      "previousAvailableDate": "2026-09-30",
+      "previousAvailableClose": 51.9,
+      "holiday": "National Day",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+      "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+      "canonicalClose": 51.9,
+      "status": "verified-market-closure"
+    },
     {
       "date": "2026-10-05",
       "ticker": "002747",
       "sourceSymbol": "002747.SZ",
       "expectedMic": "XSHE",
       "previousAvailableDate": "2026-09-30",
-      "previousAvailableClose": 28.22
+      "previousAvailableClose": 28.22,
+      "holiday": "National Day",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+      "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+      "canonicalClose": 28.22,
+      "status": "verified-market-closure"
     },
     {
       "date": "2026-10-05",
@@ -38,7 +104,12 @@
       "sourceSymbol": "300124.SZ",
       "expectedMic": "XSHE",
       "previousAvailableDate": "2026-09-30",
-      "previousAvailableClose": 51.9
+      "previousAvailableClose": 51.9,
+      "holiday": "National Day",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+      "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+      "canonicalClose": 51.9,
+      "status": "verified-market-closure"
     },
     {
       "date": "2026-10-06",
@@ -46,7 +117,12 @@
       "sourceSymbol": "002747.SZ",
       "expectedMic": "XSHE",
       "previousAvailableDate": "2026-09-30",
-      "previousAvailableClose": 28.22
+      "previousAvailableClose": 28.22,
+      "holiday": "National Day",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+      "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+      "canonicalClose": 28.22,
+      "status": "verified-market-closure"
     },
     {
       "date": "2026-10-06",
@@ -54,23 +130,12 @@
       "sourceSymbol": "300124.SZ",
       "expectedMic": "XSHE",
       "previousAvailableDate": "2026-09-30",
-      "previousAvailableClose": 51.9
-    },
-    {
-      "date": "2026-10-07",
-      "ticker": "6954",
-      "sourceSymbol": "6954.T",
-      "expectedMic": "XJPX",
-      "previousAvailableDate": "2026-10-06",
-      "previousAvailableClose": 6220
-    },
-    {
-      "date": "2026-10-07",
-      "ticker": "6506",
-      "sourceSymbol": "6506.T",
-      "expectedMic": "XJPX",
-      "previousAvailableDate": "2026-10-06",
-      "previousAvailableClose": 4936
+      "previousAvailableClose": 51.9,
+      "holiday": "National Day",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+      "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+      "canonicalClose": 51.9,
+      "status": "verified-market-closure"
     },
     {
       "date": "2026-10-07",
@@ -78,15 +143,12 @@
       "sourceSymbol": "002747.SZ",
       "expectedMic": "XSHE",
       "previousAvailableDate": "2026-09-30",
-      "previousAvailableClose": 28.22
-    },
-    {
-      "date": "2026-10-07",
-      "ticker": "6268",
-      "sourceSymbol": "6268.T",
-      "expectedMic": "XJPX",
-      "previousAvailableDate": "2026-10-06",
-      "previousAvailableClose": 4987
+      "previousAvailableClose": 28.22,
+      "holiday": "National Day",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+      "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+      "canonicalClose": 28.22,
+      "status": "verified-market-closure"
     },
     {
       "date": "2026-10-07",
@@ -94,42 +156,509 @@
       "sourceSymbol": "300124.SZ",
       "expectedMic": "XSHE",
       "previousAvailableDate": "2026-09-30",
-      "previousAvailableClose": 51.9
-    },
-    {
-      "date": "2026-10-07",
-      "ticker": "6861",
-      "sourceSymbol": "6861.T",
-      "expectedMic": "XJPX",
-      "previousAvailableDate": "2026-10-06",
-      "previousAvailableClose": 81490
-    },
-    {
-      "date": "2026-10-07",
-      "ticker": "SIE",
-      "sourceSymbol": "SIE.DE",
-      "expectedMic": "XETR",
-      "previousAvailableDate": "2026-10-06",
-      "previousAvailableClose": 279
-    },
-    {
-      "date": "2026-10-07",
-      "ticker": "6383",
-      "sourceSymbol": "6383.T",
-      "expectedMic": "XJPX",
-      "previousAvailableDate": "2026-10-06",
-      "previousAvailableClose": 5899
-    },
-    {
-      "date": "2026-10-07",
-      "ticker": "HEXA B",
-      "sourceSymbol": "HEXA-B.ST",
-      "expectedMic": "XSTO",
-      "previousAvailableDate": "2026-10-06",
-      "previousAvailableClose": 103.45
+      "previousAvailableClose": 51.9,
+      "holiday": "National Day",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+      "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
+      "canonicalClose": 51.9,
+      "status": "verified-market-closure"
     }
   ],
+  "requiredDateObservations": [
+    {
+      "date": "2026-10-08",
+      "ticker": "002747",
+      "company": "Estun Automation",
+      "sourceSymbol": "002747.SZ",
+      "mic": "XSHE",
+      "expectedMic": "XSHE",
+      "currency": "CNY",
+      "type": "Constituent",
+      "close": 26.86,
+      "adjustedClose": 26.86,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "300124",
+      "company": "Inovance",
+      "sourceSymbol": "300124.SZ",
+      "mic": "XSHE",
+      "expectedMic": "XSHE",
+      "currency": "CNY",
+      "type": "Constituent",
+      "close": 49.85,
+      "adjustedClose": 49.85,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "6268",
+      "company": "Nabtesco",
+      "sourceSymbol": "6268.T",
+      "mic": "XJPX",
+      "expectedMic": "XJPX",
+      "currency": "JPY",
+      "type": "Constituent",
+      "close": 4795,
+      "adjustedClose": 4795,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "6383",
+      "company": "Daifuku",
+      "sourceSymbol": "6383.T",
+      "mic": "XJPX",
+      "expectedMic": "XJPX",
+      "currency": "JPY",
+      "type": "Constituent",
+      "close": 5716,
+      "adjustedClose": 5716,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "6506",
+      "company": "Yaskawa Electric",
+      "sourceSymbol": "6506.T",
+      "mic": "XJPX",
+      "expectedMic": "XJPX",
+      "currency": "JPY",
+      "type": "Constituent",
+      "close": 4789,
+      "adjustedClose": 4789,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "6861",
+      "company": "Keyence",
+      "sourceSymbol": "6861.T",
+      "mic": "XJPX",
+      "expectedMic": "XJPX",
+      "currency": "JPY",
+      "type": "Constituent",
+      "close": 80000,
+      "adjustedClose": 80000,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "6954",
+      "company": "FANUC",
+      "sourceSymbol": "6954.T",
+      "mic": "XJPX",
+      "expectedMic": "XJPX",
+      "currency": "JPY",
+      "type": "Constituent",
+      "close": 6019,
+      "adjustedClose": 6019,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "CGNX",
+      "company": "Cognex",
+      "sourceSymbol": "CGNX",
+      "mic": "XNAS",
+      "expectedMic": "XNAS",
+      "currency": "USD",
+      "type": "Constituent",
+      "close": 60.91,
+      "adjustedClose": 60.91,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "HEXA B",
+      "company": "Hexagon",
+      "sourceSymbol": "HEXA-B.ST",
+      "mic": "XSTO",
+      "expectedMic": "XSTO",
+      "currency": "SEK",
+      "type": "Constituent",
+      "close": 101.25,
+      "adjustedClose": 101.25,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "HSAI",
+      "company": "Hesai",
+      "sourceSymbol": "HSAI",
+      "mic": "XNAS",
+      "expectedMic": "XNAS",
+      "currency": "USD",
+      "type": "Constituent",
+      "close": 15.61,
+      "adjustedClose": 15.61,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "NXPI",
+      "company": "NXP Semiconductors",
+      "sourceSymbol": "NXPI",
+      "mic": "XNAS",
+      "expectedMic": "XNAS",
+      "currency": "USD",
+      "type": "Constituent",
+      "close": 231.07,
+      "adjustedClose": 231.07,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "OUST",
+      "company": "Ouster",
+      "sourceSymbol": "OUST",
+      "mic": "XNYS",
+      "expectedMic": "XNYS",
+      "currency": "USD",
+      "type": "Constituent",
+      "close": 39.53,
+      "adjustedClose": 39.53,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "ROK",
+      "company": "Rockwell Automation",
+      "sourceSymbol": "ROK",
+      "mic": "XNYS",
+      "expectedMic": "XNYS",
+      "currency": "USD",
+      "type": "Constituent",
+      "close": 434.14,
+      "adjustedClose": 434.14,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "SIE",
+      "company": "Siemens",
+      "sourceSymbol": "SIE.DE",
+      "mic": "XETR",
+      "expectedMic": "XETR",
+      "currency": "EUR",
+      "type": "Constituent",
+      "close": 264.25,
+      "adjustedClose": 264.25,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "TER",
+      "company": "Teradyne",
+      "sourceSymbol": "TER",
+      "mic": "XNAS",
+      "expectedMic": "XNAS",
+      "currency": "USD",
+      "type": "Constituent",
+      "close": 398.72,
+      "adjustedClose": 398.72,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v2"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "S&P 500",
+      "company": "S&P 500",
+      "sourceSymbol": "GSPC.INDX",
+      "mic": "INDX",
+      "expectedMic": "INDX",
+      "currency": "USD",
+      "type": "Benchmark",
+      "close": 7765.36,
+      "adjustedClose": 7765.36,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v1"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "Nasdaq Composite",
+      "company": "Nasdaq Composite",
+      "sourceSymbol": "IXIC.INDX",
+      "mic": "INDX",
+      "expectedMic": "INDX",
+      "currency": "USD",
+      "type": "Benchmark",
+      "close": 27193.3398,
+      "adjustedClose": 27193.3398,
+      "dividend": 0,
+      "splitFactor": 1,
+      "sourceApi": "v1"
+    }
+  ],
+  "invalidObservations": [],
+  "duplicateObservations": [],
+  "paginationErrors": [],
   "comparisons": [
+    {
+      "date": "2026-10-01",
+      "ticker": "6268",
+      "sourceSymbol": "6268.T",
+      "recordedClose": 4975,
+      "marketstackClose": 4975,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "6383",
+      "sourceSymbol": "6383.T",
+      "recordedClose": 5832,
+      "marketstackClose": 5832,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "6506",
+      "sourceSymbol": "6506.T",
+      "recordedClose": 4779,
+      "marketstackClose": 4779,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "6861",
+      "sourceSymbol": "6861.T",
+      "recordedClose": 81200,
+      "marketstackClose": 81200,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "6954",
+      "sourceSymbol": "6954.T",
+      "recordedClose": 6127,
+      "marketstackClose": 6127,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "CGNX",
+      "sourceSymbol": "CGNX",
+      "recordedClose": 62.22,
+      "marketstackClose": 62.22,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "HEXA B",
+      "sourceSymbol": "HEXA-B.ST",
+      "recordedClose": 99.02,
+      "marketstackClose": 99.02,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "HSAI",
+      "sourceSymbol": "HSAI",
+      "recordedClose": 15.93,
+      "marketstackClose": 15.93,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "NXPI",
+      "sourceSymbol": "NXPI",
+      "recordedClose": 239.19,
+      "marketstackClose": 239.19,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "recordedClose": 40.87,
+      "marketstackClose": 40.87,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "ROK",
+      "sourceSymbol": "ROK",
+      "recordedClose": 442.45,
+      "marketstackClose": 442.45,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "SIE",
+      "sourceSymbol": "SIE.DE",
+      "recordedClose": 271.9,
+      "marketstackClose": 271.9,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "TER",
+      "sourceSymbol": "TER",
+      "recordedClose": 415.79,
+      "marketstackClose": 415.79,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "6268",
+      "sourceSymbol": "6268.T",
+      "recordedClose": 4926,
+      "marketstackClose": 4926,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "6383",
+      "sourceSymbol": "6383.T",
+      "recordedClose": 5851,
+      "marketstackClose": 5851,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "6506",
+      "sourceSymbol": "6506.T",
+      "recordedClose": 4806,
+      "marketstackClose": 4806,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "6861",
+      "sourceSymbol": "6861.T",
+      "recordedClose": 80270,
+      "marketstackClose": 80270,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "6954",
+      "sourceSymbol": "6954.T",
+      "recordedClose": 6075,
+      "marketstackClose": 6075,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "CGNX",
+      "sourceSymbol": "CGNX",
+      "recordedClose": 64.97,
+      "marketstackClose": 64.97,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "HEXA B",
+      "sourceSymbol": "HEXA-B.ST",
+      "recordedClose": 101.15,
+      "marketstackClose": 101.15,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "HSAI",
+      "sourceSymbol": "HSAI",
+      "recordedClose": 15.38,
+      "marketstackClose": 15.38,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "NXPI",
+      "sourceSymbol": "NXPI",
+      "recordedClose": 243.66,
+      "marketstackClose": 243.66,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "recordedClose": 44.39,
+      "marketstackClose": 44.39,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "ROK",
+      "sourceSymbol": "ROK",
+      "recordedClose": 454.35,
+      "marketstackClose": 454.35,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "SIE",
+      "sourceSymbol": "SIE.DE",
+      "recordedClose": 276.1,
+      "marketstackClose": 276.1,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "TER",
+      "sourceSymbol": "TER",
+      "recordedClose": 449.04,
+      "marketstackClose": 449.04,
+      "difference": 0,
+      "status": "match"
+    },
     {
       "date": "2026-10-05",
       "ticker": "6268",
@@ -366,10 +895,64 @@
     },
     {
       "date": "2026-10-07",
+      "ticker": "6268",
+      "sourceSymbol": "6268.T",
+      "recordedClose": 5010,
+      "marketstackClose": 5010,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "6383",
+      "sourceSymbol": "6383.T",
+      "recordedClose": 5875,
+      "marketstackClose": 5875,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "6506",
+      "sourceSymbol": "6506.T",
+      "recordedClose": 4946,
+      "marketstackClose": 4946,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "6861",
+      "sourceSymbol": "6861.T",
+      "recordedClose": 81560,
+      "marketstackClose": 81560,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "6954",
+      "sourceSymbol": "6954.T",
+      "recordedClose": 6164,
+      "marketstackClose": 6164,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
       "ticker": "CGNX",
       "sourceSymbol": "CGNX",
       "recordedClose": 61.21,
       "marketstackClose": 61.21,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "HEXA B",
+      "sourceSymbol": "HEXA-B.ST",
+      "recordedClose": 101.05,
+      "marketstackClose": 101.05,
       "difference": 0,
       "status": "match"
     },
@@ -411,10 +994,55 @@
     },
     {
       "date": "2026-10-07",
+      "ticker": "SIE",
+      "sourceSymbol": "SIE.DE",
+      "recordedClose": 271.2,
+      "marketstackClose": 271.2,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
       "ticker": "TER",
       "sourceSymbol": "TER",
       "recordedClose": 411.78,
       "marketstackClose": 411.78,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "S&P 500",
+      "sourceSymbol": "GSPC.INDX",
+      "recordedClose": 7666.45,
+      "marketstackClose": 7666.45,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "Nasdaq Composite",
+      "sourceSymbol": "IXIC.INDX",
+      "recordedClose": 26871.5957,
+      "marketstackClose": 26871.5957,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "S&P 500",
+      "sourceSymbol": "GSPC.INDX",
+      "recordedClose": 7722.72,
+      "marketstackClose": 7722.72,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "Nasdaq Composite",
+      "sourceSymbol": "IXIC.INDX",
+      "recordedClose": 27190.8594,
+      "marketstackClose": 27190.8594,
       "difference": 0,
       "status": "match"
     },

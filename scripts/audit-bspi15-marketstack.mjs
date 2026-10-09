@@ -114,6 +114,10 @@ const dateFrom = process.argv.find((argument) => argument.startsWith("--from="))
 const dateTo = process.argv.find((argument) => argument.startsWith("--through="))?.split("=")[1]
   ?? formatDate(new Date());
 const allowMissing = process.argv.includes("--allow-missing");
+const verifiedMarketClosures = JSON.parse(
+  await fs.readFile(path.join(root, "data/bspi15/verified-market-closures.json"), "utf8"),
+);
+
 
 if (!dateFrom || !dateTo) {
   throw new Error("The audit needs a start date and end date.");
@@ -230,24 +234,64 @@ const sourceByDateAndTicker = new Map(
 const canonicalDates = closes
   .map((row) => row.Date)
   .filter((date) => date >= dateFrom && date <= dateTo);
+const verifiedClosures = [];
+function checkMissing(date, instrument, canonicalClose = null) {
+  const previous = sourceRows
+    .filter((row) => row.ticker === instrument.Ticker && row.date < date)
+    .sort((left, right) => right.date.localeCompare(left.date))[0];
+  const closure = verifiedMarketClosures.find((entry) =>
+    entry.mic === instrument["Expected MIC"]
+    && entry.from <= date && date <= entry.through
+    && entry.sourceUrl && entry.evidence && entry.verifiedAt,
+  );
+  const validCarry = closure && previous
+    && previous.mic === instrument["Expected MIC"]
+    && Number.isFinite(previous.close) && previous.close > 0
+    && (canonicalClose === null || canonicalClose === previous.close);
+  const detail = {
+    date, ticker: instrument.Ticker,
+    sourceSymbol: instrument["Marketstack Symbol"],
+    expectedMic: instrument["Expected MIC"],
+    previousAvailableDate: previous?.date ?? null,
+    previousAvailableClose: previous?.close ?? null,
+  };
+  if (validCarry) {
+    verifiedClosures.push({ ...detail, holiday: closure.name,
+      sourceUrl: closure.sourceUrl, evidence: closure.evidence,
+      canonicalClose, status: "verified-market-closure" });
+    return null;
+  }
+  return { ...detail, reason: closure
+    ? "Closure carry-forward could not be reconciled with prior source close"
+    : "Required observation unavailable; no verified market closure" };
+}
 const missingSourceObservations = canonicalDates.flatMap((date) =>
-  instruments
-    .filter((instrument) => !sourceByDateAndTicker.has(`${date}|${instrument.Ticker}`))
-    .map((instrument) => {
-      const previous = sourceRows
-        .filter((row) => row.ticker === instrument.Ticker && row.date < date)
-        .sort((left, right) => right.date.localeCompare(left.date))[0];
-
-      return {
-        date,
-        ticker: instrument.Ticker,
-        sourceSymbol: instrument["Marketstack Symbol"],
-        expectedMic: instrument["Expected MIC"],
-        previousAvailableDate: previous?.date ?? null,
-        previousAvailableClose: previous?.close ?? null,
-      };
-    }),
+  instruments.filter((instrument) => !sourceByDateAndTicker.has(`${date}|${instrument.Ticker}`))
+    .map((instrument) => checkMissing(date, instrument,
+      closeByDateAndTicker.get(`${date}|${instrument.Ticker}`)))
+    .filter(Boolean),
 );
+const missingRequiredObservations = instruments
+  .filter((instrument) => !sourceByDateAndTicker.has(`${dateTo}|${instrument.Ticker}`))
+  .map((instrument) => checkMissing(dateTo, instrument,
+    closeByDateAndTicker.get(`${dateTo}|${instrument.Ticker}`) ?? null))
+  .filter(Boolean);
+const invalidObservations = sourceRows.filter((row) => !Number.isFinite(row.close) || row.close <= 0);
+const seenObservationKeys = new Set();
+const duplicateObservations = sourceRows.filter((row) => {
+  const key = `${row.date}|${row.ticker}`;
+  if (seenObservationKeys.has(key)) return true;
+  seenObservationKeys.add(key);
+  return false;
+});
+const paginationErrors = [constituentResult, benchmarkResult]
+  .filter((result) => result.response.pagination?.total > result.response.data.length)
+  .map((result) => ({ requestUrl: result.requestUrl, pagination: result.response.pagination }));
+const requiredDateObservations = sourceRows.filter((row) => row.date === dateTo);
+const passed = identityErrors.length === 0 && mismatches.length === 0
+  && missingSourceObservations.length === 0 && missingRequiredObservations.length === 0
+  && invalidObservations.length === 0 && duplicateObservations.length === 0
+  && paginationErrors.length === 0;
 const sortedRows = sourceRows.sort((left, right) =>
   left.date.localeCompare(right.date) || left.ticker.localeCompare(right.ticker),
 );
@@ -292,6 +336,7 @@ const audit = {
   methodology: "Unadjusted local-currency closes for the price-return index",
   requests: [constituentResult.requestUrl, benchmarkResult.requestUrl],
   receiptPath: path.relative(root, receiptPath),
+  status: passed ? "passed" : "failed",
   counts: {
     instruments: instruments.length,
     sourceObservations: sourceRows.length,
@@ -300,10 +345,22 @@ const audit = {
     mismatches: mismatches.length,
     identityErrors: identityErrors.length,
     missingSourceObservations: missingSourceObservations.length,
+    verifiedClosureObservations: new Set(verifiedClosures.map((row) => `${row.date}|${row.ticker}`)).size,
+    requiredDateObservations: requiredDateObservations.length,
+    missingRequiredObservations: missingRequiredObservations.length,
+    invalidObservations: invalidObservations.length,
+    duplicateObservations: duplicateObservations.length,
+    paginationErrors: paginationErrors.length,
   },
   identityErrors,
   mismatches,
   missingSourceObservations,
+  missingRequiredObservations,
+  verifiedClosures,
+  requiredDateObservations,
+  invalidObservations,
+  duplicateObservations,
+  paginationErrors,
   comparisons,
 };
 
@@ -312,12 +369,15 @@ await fs.writeFile(auditPath, `${JSON.stringify(audit, null, 2)}\n`);
 console.log(
   `Marketstack audit: ${audit.counts.matches}/${audit.counts.comparedObservations} available closes matched; ${missingSourceObservations.length} canonical observations were unavailable from the source.`,
 );
+console.log(`Requested date ${dateTo}: ${requiredDateObservations.length}/17 source observations; ${missingRequiredObservations.length} unresolved missing. Verified closure observations: ${audit.counts.verifiedClosureObservations}. Audit: ${audit.status}.`);
 console.log(`Receipt: ${audit.receiptPath}`);
 
 if (
   identityErrors.length > 0
   || mismatches.length > 0
-  || (missingSourceObservations.length > 0 && !allowMissing)
+  || invalidObservations.length > 0 || duplicateObservations.length > 0
+  || paginationErrors.length > 0
+  || ((missingSourceObservations.length > 0 || missingRequiredObservations.length > 0) && !allowMissing)
 ) {
   process.exitCode = 1;
 }
