@@ -77,3 +77,9 @@ The generation prompt should describe this recipe specifically. Do not begin fro
 ## Portfolio rhythm
 
 Judge the image as part of the full news grid, not only as an isolated cover. Across a run of covers, vary medium, composition, scale, viewpoint, lighting, texture, and visual thesis when the stories support it. Palette may vary or recur naturally. Never force a color change merely to satisfy a diversity count. Story relevance and the strength of the complete visual concept remain the deciding factors.
+
+<!-- cover-material-preference-20261009 -->
+
+## Material preference
+
+User direction, October 9, 2026: avoid visuals or animations that look made from paper. Do not use paper construction, cut paper collage, origami styling or paper craft textures for future editorial assets. Choose a suitable alternative material and medium for the story; ordinary packaging can appear when relevant without making the whole illustration look constructed from paper.
