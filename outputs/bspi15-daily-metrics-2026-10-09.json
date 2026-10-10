@@ -1,0 +1,304 @@
+{
+  "date": "2026-10-09",
+  "baseDate": "2026-10-01",
+  "previousDate": "2026-10-08",
+  "level": 988.7186891541369,
+  "previousLevel": 976.8397659583644,
+  "dailyReturn": 0.012160564720784306,
+  "sinceLaunch": -0.011281310845863146,
+  "benchmarks": {
+    "S&P 500": {
+      "close": 7811.54,
+      "rebased": 1018.9253174546237,
+      "dailyReturn": 0.005946923259192216,
+      "sinceLaunch": 0.01892531745462378
+    },
+    "Nasdaq Composite": {
+      "close": 27366.1699,
+      "rebased": 1018.4050923332402,
+      "dailyReturn": 0.006355604029189443,
+      "sinceLaunch": 0.01840509233324017
+    }
+  },
+  "excessReturns": {
+    "S&P 500": {
+      "daily": 0.00621364146159209,
+      "sinceLaunch": -0.030206628300486926
+    },
+    "Nasdaq Composite": {
+      "daily": 0.005804960691594863,
+      "sinceLaunch": -0.029686403179103316
+    }
+  },
+  "constituents": [
+    {
+      "ticker": "6954",
+      "company": "FANUC",
+      "baseClose": 6127,
+      "previousClose": 6019,
+      "close": 6103,
+      "relative": 0.9960829117023013,
+      "previousWeight": 0.06704430190053144,
+      "dailyReturn": 0.01395580661239415,
+      "contribution": 0.0009356573117867864,
+      "weight": 0.06716321657035833
+    },
+    {
+      "ticker": "6506",
+      "company": "Yaskawa Electric",
+      "baseClose": 4779,
+      "previousClose": 4789,
+      "close": 4783,
+      "relative": 1.0008369951872778,
+      "previousWeight": 0.0683900965057495,
+      "dailyReturn": -0.0012528711630820366,
+      "contribution": -0.0000856839797524511,
+      "weight": 0.06748377175200415
+    },
+    {
+      "ticker": "002747",
+      "company": "Estun Automation",
+      "baseClose": 28.22,
+      "previousClose": 26.86,
+      "close": 27.04,
+      "relative": 0.9581856839121191,
+      "previousWeight": 0.06495826385486109,
+      "dailyReturn": 0.006701414743112366,
+      "contribution": 0.00043531226708394923,
+      "weight": 0.06460790748154131
+    },
+    {
+      "ticker": "TER",
+      "company": "Teradyne",
+      "baseClose": 415.79,
+      "previousClose": 398.72,
+      "close": 402.68,
+      "relative": 0.9684696601649871,
+      "previousWeight": 0.06544543980878394,
+      "dailyReturn": 0.009931781701444597,
+      "contribution": 0.0006499898215358742,
+      "weight": 0.06530132859755602
+    },
+    {
+      "ticker": "6268",
+      "company": "Nabtesco",
+      "baseClose": 4975,
+      "previousClose": 4795,
+      "close": 4859,
+      "relative": 0.9766834170854272,
+      "previousWeight": 0.06577804119401282,
+      "dailyReturn": 0.013347236704901011,
+      "contribution": 0.0008779550858012186,
+      "weight": 0.0658551603402982
+    },
+    {
+      "ticker": "300124",
+      "company": "Inovance",
+      "baseClose": 51.9,
+      "previousClose": 49.85,
+      "close": 50.59,
+      "relative": 0.9747591522157997,
+      "previousWeight": 0.06555158767168617,
+      "dailyReturn": 0.014844533600802512,
+      "contribution": 0.0009730827457782971,
+      "weight": 0.06572541228754158
+    },
+    {
+      "ticker": "6861",
+      "company": "Keyence",
+      "baseClose": 81200,
+      "previousClose": 80000,
+      "close": 80540,
+      "relative": 0.991871921182266,
+      "previousWeight": 0.06723870923431402,
+      "dailyReturn": 0.006750000000000034,
+      "contribution": 0.0004538612873316219,
+      "weight": 0.06687928070021122
+    },
+    {
+      "ticker": "CGNX",
+      "company": "Cognex",
+      "baseClose": 62.22,
+      "previousClose": 60.91,
+      "close": 62.92,
+      "relative": 1.0112504018000643,
+      "previousWeight": 0.06681038936280935,
+      "dailyReturn": 0.03299950747003777,
+      "contribution": 0.002204709942854159,
+      "weight": 0.06818592001230762
+    },
+    {
+      "ticker": "OUST",
+      "company": "Ouster",
+      "baseClose": 40.87,
+      "previousClose": 39.53,
+      "close": 39.9,
+      "relative": 0.9762662099339369,
+      "previousWeight": 0.06600967381142452,
+      "dailyReturn": 0.009359979762205928,
+      "contribution": 0.0006178492109847481,
+      "weight": 0.06582702917376473
+    },
+    {
+      "ticker": "HSAI",
+      "company": "Hesai",
+      "baseClose": 15.93,
+      "previousClose": 15.61,
+      "close": 16.01,
+      "relative": 1.005021971123666,
+      "previousWeight": 0.06687634619678949,
+      "dailyReturn": 0.02562459961563124,
+      "contribution": 0.0017136795950490737,
+      "weight": 0.06776595352809449
+    },
+    {
+      "ticker": "ROK",
+      "company": "Rockwell Automation",
+      "baseClose": 442.45,
+      "previousClose": 434.14,
+      "close": 432.59,
+      "relative": 0.9777149960447508,
+      "previousWeight": 0.0669654840668773,
+      "dailyReturn": -0.0035702768692127407,
+      "contribution": -0.00023908531879960636,
+      "weight": 0.06592471696077679
+    },
+    {
+      "ticker": "SIE",
+      "company": "Siemens",
+      "baseClose": 271.9,
+      "previousClose": 264.25,
+      "close": 272.1,
+      "relative": 1.0007355645457892,
+      "previousWeight": 0.06632712890362263,
+      "dailyReturn": 0.0297067171239358,
+      "contribution": 0.0019703612559827436,
+      "weight": 0.06747693255412099
+    },
+    {
+      "ticker": "NXPI",
+      "company": "NXP Semiconductors",
+      "baseClose": 239.19,
+      "previousClose": 231.07,
+      "close": 227.52,
+      "relative": 0.9512103348802208,
+      "previousWeight": 0.06593043718765222,
+      "dailyReturn": -0.015363309819535154,
+      "contribution": -0.001012909733051303,
+      "weight": 0.06413757828285785
+    },
+    {
+      "ticker": "6383",
+      "company": "Daifuku",
+      "baseClose": 5832,
+      "previousClose": 5716,
+      "close": 5773,
+      "relative": 0.989883401920439,
+      "previousWeight": 0.06688983348989866,
+      "dailyReturn": 0.009972008397480803,
+      "contribution": 0.0006670259812673621,
+      "weight": 0.06674520014500104
+    },
+    {
+      "ticker": "HEXA B",
+      "company": "Hexagon",
+      "baseClose": 99.02,
+      "previousClose": 101.25,
+      "close": 104.15,
+      "relative": 1.0518077156130077,
+      "previousWeight": 0.06978426681098676,
+      "dailyReturn": 0.028641975308641987,
+      "contribution": 0.001998759246931967,
+      "weight": 0.07092059161356566
+    }
+  ],
+  "weightTotal": 1,
+  "contributionTotal": 0.012160564720784441,
+  "reconciliationDifference": 1.3530843112619095e-16,
+  "topPositive": [
+    {
+      "ticker": "CGNX",
+      "company": "Cognex",
+      "baseClose": 62.22,
+      "previousClose": 60.91,
+      "close": 62.92,
+      "relative": 1.0112504018000643,
+      "previousWeight": 0.06681038936280935,
+      "dailyReturn": 0.03299950747003777,
+      "contribution": 0.002204709942854159,
+      "weight": 0.06818592001230762
+    },
+    {
+      "ticker": "HEXA B",
+      "company": "Hexagon",
+      "baseClose": 99.02,
+      "previousClose": 101.25,
+      "close": 104.15,
+      "relative": 1.0518077156130077,
+      "previousWeight": 0.06978426681098676,
+      "dailyReturn": 0.028641975308641987,
+      "contribution": 0.001998759246931967,
+      "weight": 0.07092059161356566
+    },
+    {
+      "ticker": "SIE",
+      "company": "Siemens",
+      "baseClose": 271.9,
+      "previousClose": 264.25,
+      "close": 272.1,
+      "relative": 1.0007355645457892,
+      "previousWeight": 0.06632712890362263,
+      "dailyReturn": 0.0297067171239358,
+      "contribution": 0.0019703612559827436,
+      "weight": 0.06747693255412099
+    }
+  ],
+  "topNegative": [
+    {
+      "ticker": "NXPI",
+      "company": "NXP Semiconductors",
+      "baseClose": 239.19,
+      "previousClose": 231.07,
+      "close": 227.52,
+      "relative": 0.9512103348802208,
+      "previousWeight": 0.06593043718765222,
+      "dailyReturn": -0.015363309819535154,
+      "contribution": -0.001012909733051303,
+      "weight": 0.06413757828285785
+    },
+    {
+      "ticker": "ROK",
+      "company": "Rockwell Automation",
+      "baseClose": 442.45,
+      "previousClose": 434.14,
+      "close": 432.59,
+      "relative": 0.9777149960447508,
+      "previousWeight": 0.0669654840668773,
+      "dailyReturn": -0.0035702768692127407,
+      "contribution": -0.00023908531879960636,
+      "weight": 0.06592471696077679
+    },
+    {
+      "ticker": "6506",
+      "company": "Yaskawa Electric",
+      "baseClose": 4779,
+      "previousClose": 4789,
+      "close": 4783,
+      "relative": 1.0008369951872778,
+      "previousWeight": 0.0683900965057495,
+      "dailyReturn": -0.0012528711630820366,
+      "contribution": -0.0000856839797524511,
+      "weight": 0.06748377175200415
+    }
+  ],
+  "receiptPath": "data/bspi15/raw/marketstack/2026-10-10T11-34-55-985Z",
+  "auditStatus": "passed",
+  "marketHolidays": [],
+  "carriedForward": [],
+  "corporateActions": {
+    "providerDividends": 0,
+    "providerSplitFlags": 0,
+    "relevantEffectiveDateEventsIdentified": [],
+    "review": "Marketstack split/dividend fields, unchanged symbols and MICs, adjusted/raw-close comparisons, price changes and date-specific action searches."
+  }
+}
