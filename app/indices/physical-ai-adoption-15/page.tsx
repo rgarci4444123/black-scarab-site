@@ -88,6 +88,7 @@ export default function PhysicalAiAdoptionIndexPage() {
       contentUrl: `${baseUrl}/data/bspi15-constituents.csv`,
     },
     isAccessibleForFree: true,
+    license: `${baseUrl}/terms`,
   };
 
   return (

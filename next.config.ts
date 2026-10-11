@@ -21,6 +21,13 @@ const nextConfig: NextConfig = {
     return [
       {
         source:
+          "/insights/stereolabs-zed-spatial-perception-robotics-guide-5",
+        destination:
+          "/insights/stereolabs-zed-spatial-perception-robotics-guide",
+        permanent: true,
+      },
+      {
+        source:
           "/insights/physical-intelligence-generalist-robot-policy-guide-7",
         destination:
           "/insights/physical-intelligence-generalist-robot-policy-guide",
