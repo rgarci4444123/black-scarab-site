@@ -35,6 +35,120 @@ export type NewsUpdate = {
 export const newsUpdates: NewsUpdate[] = [
 {
   "taxonomy": {
+    "primaryIndustry": "defense-aerospace",
+    "relevantIndustries": [],
+    "technologies": [
+      "autonomous-vehicles",
+      "drones",
+      "robot-software"
+    ],
+    "applications": []
+  },
+  slug: "forterra-onelink-jrtc-autonomy-integration",
+  "title": "Forterra puts autonomous systems behind one interface and takes the JRTC integration role",
+  "summary": "Forterra has launched OneLink, a common operator interface for autonomous systems, and announced its selection as the systems integration partner for the US Army’s Joint Readiness Training Center unmanned systems program.",
+  "category": "Autonomous systems",
+  "publishedDate": "2026-10-13",
+  "publishedAt": "2026-10-13T19:02:49-04:00",
+  "publishedLabel": "October 13, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/forterra-onelink-jrtc-autonomy-integration.png",
+  "imageAlt": "Bronze miniature unmanned vehicles and a drone connected to one unmarked circular surface.",
+  "imageCaption": "Original Black Scarab editorial illustration of different autonomous machines converging on one operating layer. The miniature forms do not depict official Forterra products.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "OneLink brings monitoring and commands into a shared interface while working alongside existing command and control tools.",
+    "Forterra says native desktop applications support offline operation and preserve mission information.",
+    "Project LAUNCH Box gives the integration approach a named training setting. Selection is not a quantified performance result."
+  ],
+  "sections": [
+    {
+      "heading": "What happened",
+      "paragraphs": [
+        "The two October 12 announcements connect a software proposition with a named training environment. OneLink sits within Forterra’s OASIS platform, while the JRTC work falls under Project LAUNCH Box in Fort Polk, Louisiana.",
+        "Forterra says the program will connect systems from several vendors for Geronimo, the center’s resident opposing force, and support their use during training rotations. The commercial story is the integration work needed to make different autonomous machines useful together."
+      ]
+    },
+    {
+      "heading": "The problem grows with the fleet",
+      "paragraphs": [
+        "A buyer can acquire capable unmanned machines and still inherit a difficult operating system at the organizational level. Each vendor may bring a separate screen, data format and training process. Adding another machine can add another workflow for the people who have to supervise it.",
+        "Forterra’s answer combines two layers. OASIS Fabric supplies the integration framework and shared data architecture. OneLink gives operators a place to monitor and command the connected systems.",
+        "The distinction matters. A network can move information between machines without making the whole fleet easy for a person to manage. An interface can make information easier to read without solving the engineering work that connects the underlying systems. Forterra is positioning the two together.",
+        "The company says the platform can combine equipment, payloads and applications from different vendors and work alongside existing control tools. Its claim that capabilities can be added or swapped without custom engineering is a vendor proposition that still depends on the actual systems and interfaces involved.",
+        "Army Times reported the launch at the Association of the United States Army conference and interviewed Forterra executives about the difference between the network and operator layers. That reporting provides useful explanation of the product’s intended role, rather than independent measurement of integration speed or reliability."
+      ]
+    },
+    {
+      "heading": "Why the training center matters",
+      "paragraphs": [
+        "JRTC offers a concrete institutional use case for the integration platform. In Forterra’s account, the company will source Army prioritized systems, connect them through a common network and unified data layer, and train and sustain Geronimo’s use of the equipment.",
+        "That is a broader role than delivering a single robot. It covers selecting and connecting systems, supporting operators and maintaining the arrangement through successive training cycles. For an integration provider, those activities can become a recurring service relationship rather than an isolated hardware sale.",
+        "The training environment also creates a possible feedback loop. A rotation can reveal where operators struggle, where connections fail and which combinations of equipment provide useful information. Forterra says it intends to turn the resulting data into recommendations that inform requirements and purchasing decisions.",
+        "Black Scarab’s analysis is that this is the strongest part of the announcement. A shared interface is easy to describe in a presentation. Repeated use by a named organization gives the integration model a place to encounter practical constraints and produce evidence that buyers can evaluate.",
+        "Those cycles still need to generate comparable results. Different equipment mixes, operator experience and exercise conditions can change outcomes. A useful evaluation must keep those differences visible before attributing improvements to the integration platform itself."
+      ]
+    },
+    {
+      "heading": "Offline support is an operating feature",
+      "paragraphs": [
+        "Forterra emphasizes native desktop applications and the preservation of mission information during offline operation. That is an important design choice in environments where continuous connectivity cannot be assumed.",
+        "Keeping information available locally can help an operator continue working with the data already on the machine. It does not mean that every remote system remains reachable, that fresh information is available without a link or that all fleet behavior continues unchanged through a communications loss.",
+        "The commercial implication is that disconnected behavior belongs in product evaluation. A customer needs to understand which functions persist, what information becomes stale and how the system returns to a consistent state after connectivity resumes.",
+        "These questions are relevant well beyond the launch setting. Industrial fleets can also operate across uneven wireless coverage or isolated sites. The announcement establishes Forterra’s intended capability; any separate industrial deployment would need evidence about its own configuration and operating conditions."
+      ]
+    },
+    {
+      "heading": "Integration can change the purchasing decision",
+      "paragraphs": [
+        "A common interface can make it easier for a customer to consider machines from several suppliers. That can reduce the organizational cost of adding a capability, provided the integration and support work actually remain manageable.",
+        "It can also move purchasing attention toward the provider that maintains the shared architecture. When a fleet depends on a common data layer, interface and support team, the quality of that integration relationship becomes part of the value of every connected machine.",
+        "This creates a natural commercial opportunity for Forterra. The company can participate in the work that joins separate systems into an operating fleet. It also creates a responsibility to document supported interfaces, update behavior and the limits of compatibility.",
+        "An open architecture claim should therefore be judged through working integrations and maintained documentation. Openness can describe an interface design, access rights or the ability to replace a supplier. Those are related questions, but a buyer should examine each one directly.",
+        "Forterra describes Fabric’s Government Purpose Rights environment as allowing JRTC to reuse results and build on them between rotations. That is the company’s description of the program’s rights arrangement. It does not establish a new government procurement rule or a universal right to redistribute every participating vendor’s technology."
+      ]
+    },
+    {
+      "heading": "The reality check",
+      "paragraphs": [
+        "The releases establish a product launch and Forterra’s announced selection for a named program. They do not establish a measured reduction in operator workload, integration cost or evaluation time.",
+        "The training program’s purpose is to create a realistic opposing force and assess emerging capabilities. Results from that setting should be interpreted against the specific equipment and exercise conditions used. They are not automatic evidence of performance across every operational environment.",
+        "A shared interface also leaves substantive questions about authority, permissions and system behavior. Connecting machines is one task. Ensuring that the right person can issue the right command, with a clear view of system state, is another. Those considerations are part of the product’s practical value, without assuming the announcement demonstrates that each has been resolved."
+      ]
+    },
+    {
+      "heading": "What comes next",
+      "paragraphs": [
+        "The useful signals are repeated JRTC rotations, documented integrations with named systems and evidence that operators can manage changes without a growing training burden. Support effort and recovery from communications interruptions will be as revealing as a successful demonstration.",
+        "For buyers, the announcement makes integration a visible part of the autonomy purchasing decision. For Forterra, it creates a route to prove the platform through sustained use at a named institution.",
+        "OneLink’s promise is a simpler operating layer for a more complicated fleet. JRTC gives that promise a concrete place to be tested."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Forterra OneLink launch, October 12, 2026, date precision. Primary company release.",
+      "url": "https://www.forterra.com/posts/forterra-debuts-oasis-onelink-an-open-communication-architecture-built-to-connect-autonomous-military-systems"
+    },
+    {
+      "label": "Forterra JRTC integration selection, October 12, 2026, date precision. Primary company release. Selection, planned scope and rights statements remain company attributed.",
+      "url": "https://www.forterra.com/posts/forterra-secures-spot-as-the-systems-integration-partner-for-u-s-armys-joint-readiness-training-centers-unmanned-systems-program"
+    },
+    {
+      "label": "Army Times report on OneLink, October 12, 2026 at 13:49:37 UTC in publication metadata. Specialist reporting and executive interviews; no independent benchmark.",
+      "url": "https://www.armytimes.com/industry/techwatch/2026/10/12/one-user-interface-multiple-autonomous-systems-forterra-debuts-oasis-onelink-technology/"
+    },
+    {
+      "label": "Forterra OASIS platform documentation, undated current product documentation, checked October 13, 2026. Product context, not a separate fresh event.",
+      "url": "https://www.forterra.com/oasis"
+    }
+  ]
+},
+{
+  "taxonomy": {
     "primaryIndustry": "cross-industry",
     "relevantIndustries": [],
     "technologies": [
