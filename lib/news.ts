@@ -35,6 +35,125 @@ export type NewsUpdate = {
 export const newsUpdates: NewsUpdate[] = [
 {
   "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [],
+    "technologies": [
+      "edge-ai",
+      "sensors"
+    ],
+    "applications": []
+  },
+  slug: "fcc-covered-components-equipment-authorization-october-13",
+  "title": "FCC component restrictions take effect, bringing supply chains into the authorization test",
+  "summary": "A final FCC rule takes effect today that can block new equipment authorizations when a device contains certain logic bearing hardware made by an entity on the agency’s Covered List.",
+  "category": "Equipment authorization",
+  "publishedDate": "2026-10-13",
+  "publishedAt": "2026-10-13T15:09:56-04:00",
+  "publishedLabel": "October 13, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/fcc-covered-components-equipment-authorization-october-13.png",
+  "imageAlt": "A gold processing chip inside a transparent charcoal electronic module.",
+  "imageCaption": "Original Black Scarab editorial illustration of component provenance inside an invented connected sensor. It is not a product photograph or a disclosed technical design.",
+  "readingTime": "7 min read",
+  "keyPoints": [
+    "The component restriction applies to new authorization applications within the rule’s scope. Previously authorized equipment and qualifying pending applications have specific protections.",
+    "The test concerns named producers on the Covered List. Foreign production alone does not trigger this particular component rule.",
+    "Marketplace FCC ID display duties have later compliance dates: March 1 and June 1, 2027, depending on the marketplace’s role."
+  ],
+  "sections": [
+    {
+      "heading": "What happened",
+      "paragraphs": [
+        "The October 13 milestone is the effective date of FCC 26-50, adopted on July 22, released on July 23 and published in the Federal Register on September 11. The rule also changes equipment modification and marketing provisions and revises the definition of critical infrastructure.",
+        "For companies building connected robots, sensors and edge devices, the practical issue is how a finished product’s authorization can depend on who produced a component inside it. That can turn a sourcing decision into a market access question."
+      ]
+    },
+    {
+      "heading": "The component can matter as much as the brand",
+      "paragraphs": [
+        "The new authorization test has two parts. A device must contain a qualifying logic bearing component produced by a Covered List entity, and the finished device would itself have been prohibited from authorization if that entity had produced it.",
+        "That second condition is important. The rule uses the scope of the underlying Covered List entry, rather than treating every component associated with every listed name as interchangeable.",
+        "The agency’s list includes named telecommunications and surveillance equipment producers such as Huawei, ZTE, Hytera, Hikvision and Dahua, with different descriptions and, for some entries, limits tied to intended uses. Those descriptions determine the reach of the rule. A company name alone is an incomplete screening result.",
+        "The FCC defines logic bearing hardware around digital processing and radiofrequency data functions. Purely mechanical or passive parts, including housings, fasteners, resistors, wiring and ordinary battery cells, fall outside the definition described in the final rule.",
+        "This creates a practical distinction within a machine’s bill of materials. A housing and a processor do different work and receive different treatment. Replacing a supplier’s brand label on the finished machine does not, by itself, resolve the status of a covered component inside it."
+      ]
+    },
+    {
+      "heading": "Why robotics companies should care",
+      "paragraphs": [
+        "A connected machine is assembled from several technological layers. Sensing, computing and communications often arrive as modules, boards or integrated subsystems, rather than as a single product developed entirely by the final manufacturer.",
+        "Black Scarab’s analysis is that the rule increases the commercial value of knowing the relevant producer identities before freezing a design. A supplier substitution made late in development can affect more than performance or price if it changes whether the equipment can obtain the authorization it needs.",
+        "Consider an illustrative integrator choosing a communications or processing module for a new connected inspection device. The commercial question is not simply whether the module works. The integrator also needs to understand whether the relevant Covered List description and authorization test apply to the resulting product.",
+        "If they do, a lower component price can be outweighed by redesign, delayed availability or an authorization problem. These are possible consequences of a design decision, not measured cost estimates for a disclosed company.",
+        "The same reasoning applies to channel partners. A distributor needs evidence about the product it is offering, including its authorization status and intended use. A familiar brand or an existing supplier relationship is not a substitute for the status of the exact configuration being sold."
+      ]
+    },
+    {
+      "heading": "The scope is narrower than a blanket parts ban",
+      "paragraphs": [
+        "The final rule distinguishes producer based Covered List determinations from entries based on where equipment is produced. The component prohibition does not automatically apply to foreign produced drones, drone components or routers merely because they fall within a production location entry. The producer must also be independently identified on the list for this component provision to apply.",
+        "The FCC also declined in this order to extend the component prohibition to software or firmware or to every component made by an entity owned or controlled by a foreign adversary. Some broader measures remain subjects of proposed rulemaking.",
+        "These distinctions matter for engineering and commercial planning. Describing today’s milestone as a universal ban on foreign robot parts would erase the conditions that determine whether a product is actually affected.",
+        "The new component rule applies prospectively to new equipment authorization applications. The Federal Register synopsis says previously authorized equipment is not affected by that provision. Applications pending on the effective date are exempt unless subsequently amended to add, substitute or change a logic bearing component.",
+        "That makes configuration changes important. An authorization path that was available for one design should not be assumed to cover every later substitution. At the same time, an existing authorized device should not be treated as newly prohibited solely because the new component provision has taken effect."
+      ]
+    },
+    {
+      "heading": "A separate surveillance restriction reaches its next milestone",
+      "paragraphs": [
+        "The new critical infrastructure definition also activates a previously suspended part of a separate FCC importation and marketing restriction.",
+        "That earlier action, DA 26-635, was released on June 26 and published on July 6. Its general prohibition took effect July 16 for certain previously authorized covered equipment added to the Covered List in 2024 or earlier. For equipment subject to use based restrictions, the part concerning physical security surveillance of critical infrastructure was suspended until the relevant definition took effect.",
+        "The FCC’s current Covered List page identifies October 13 as the end of that suspension. The revised definition ties critical infrastructure to systems and assets providing specified functions across the 16 critical infrastructure sectors, using the 55 National Critical Functions framework.",
+        "The commercial implication is specific to the listed equipment and covered uses. Sellers of affected surveillance equipment need to assess both the product’s authorization history and the purpose for which it is imported or marketed.",
+        "The June action preserves continued use of previously authorized equipment that was legally purchased and retains an existing authorization. Its importation and marketing restrictions should therefore be distinguished from an instruction to switch off every existing installation."
+      ]
+    },
+    {
+      "heading": "Selling online brings another set of dates",
+      "paragraphs": [
+        "FCC 26-50 clarifies that marketplace activity can count as marketing when a listing is combined with services such as warehousing, order processing or fulfillment. The presence of a separate third party seller does not automatically remove the marketplace from the equipment marketing rules.",
+        "The new FCC ID display requirements have their own implementation timetable. Marketplaces with physical access to a device or title to it must comply by March 1, 2027. Marketplaces relying on third party seller certifications have a June 1, 2027 compliance date.",
+        "The rule includes exceptions for used devices, certain low volume sellers and older listings that have not been substantively updated. The effective date of the final rule and these later display deadlines answer different questions.",
+        "For a hardware business, this makes product information part of channel readiness. A certification record, the identifier shown to a customer and the actual model being supplied need to align. Marketing compliance can become a distribution constraint even when the engineering team has already finished the machine."
+      ]
+    },
+    {
+      "heading": "What to watch next",
+      "paragraphs": [
+        "The immediate signals are how new authorization applications handle component provenance and how vendors document changes to configurations. Marketplace implementation becomes more visible as the 2027 display deadlines approach.",
+        "Separate consultations concerning covered drones, components and other possible restrictions should be tracked through their own final decisions. A proposal remains a proposal until the relevant authority adopts an operative measure.",
+        "Today’s development is an existing final rule reaching its effective date. Its significance is that hardware sourcing, authorization and sales channels become more tightly connected. The companies best placed to navigate that change will be able to explain the relevant components, producer identities and authorization status of the specific product they bring to market."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Federal Register final rule, FCC 26-50, published September 11, 2026. Adopted July 22, released July 23, effective October 13, 2026. Primary operative rule and synopsis, sections A through E and final amendments to 47 CFR parts 1 and 2.",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-11/html/2026-18535.htm"
+    },
+    {
+      "label": "Official Federal Register PDF, September 11, 2026, pages 57798 through 57801. Same rule, independently readable official format.",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-11/pdf/2026-18535.pdf"
+    },
+    {
+      "label": "FCC Covered List and implementation notices, current page retrieved October 13, 2026. Producer descriptions, separate production location entries and the October 13 critical infrastructure milestone.",
+      "url": "https://www.fcc.gov/supplychain/coveredlist"
+    },
+    {
+      "label": "DA 26-635 importation and marketing notice, released June 26 and published July 6, 2026. General effective date July 16; critical infrastructure portion suspended until the definition takes effect. Continued use and scope limitations are stated in the notice.",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-06/html/2026-13518.htm"
+    },
+    {
+      "label": "47 CFR 2.939, current regulation checked October 13, 2026. Existing procedure for limiting equipment authorizations.",
+      "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-2/subpart-J/subject-group-ECFRd5ad3b739dbf27a/section-2.939"
+    }
+  ]
+},
+{
+  "taxonomy": {
     "primaryIndustry": "healthcare-life-sciences",
     "relevantIndustries": [],
     "technologies": [
