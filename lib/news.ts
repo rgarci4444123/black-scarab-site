@@ -33,6 +33,118 @@ export type NewsUpdate = {
 };
 
 export const newsUpdates: NewsUpdate[] = [
+{
+  "taxonomy": {
+    "primaryIndustry": "healthcare-life-sciences",
+    "relevantIndustries": [],
+    "technologies": [
+      "surgical-robotics"
+    ],
+    "applications": []
+  },
+  slug: "stryker-cmr-surgical-investment-us-sales",
+  "title": "Stryker commits about $400 million to CMR Surgical and takes the US sales role",
+  "summary": "Stryker has agreed to make an approximately $400 million preferred equity investment in CMR Surgical and become the exclusive US sales agent for its Versius surgical robotics portfolio.",
+  "category": "Surgical robotics",
+  "publishedDate": "2026-10-13",
+  "publishedAt": "2026-10-13T09:40:19-04:00",
+  "publishedLabel": "October 13, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/stryker-cmr-surgical-investment-us-sales.png",
+  "imageAlt": "A gloved hand and generic surgical robot instrument against translucent clinical rooms.",
+  "imageCaption": "Original Black Scarab editorial illustration of surgical robotics and access to clinical settings. It depicts an invented concept, not Versius hardware or an actual facility.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "Approximately $400 million in preferred equity has been agreed, subject to closing conditions.",
+    "Stryker will handle exclusive US sales for Versius. CMR retains portfolio development and commercialization outside the United States.",
+    "A future acquisition option is part of the agreement. Its exercise and a completed acquisition remain separate events."
+  ],
+  "sections": [
+    {
+      "heading": "What happened",
+      "paragraphs": [
+        "The companies announced the alliance on October 12. They also expressed the investment as approximately £300 million. The transaction remains subject to regulatory approvals and customary closing conditions, and gives Stryker an exclusive option to acquire all of CMR’s outstanding equity in the future under the agreement’s terms.",
+        "For CMR, the deal brings financing together with a route into hospital purchasing conversations. For Stryker, it creates a way to enter soft tissue surgical robotics with an existing platform while retaining a future acquisition option. Those two commercial decisions make this more consequential than a financing announcement alone."
+      ]
+    },
+    {
+      "heading": "A robot meets a distribution network",
+      "paragraphs": [
+        "CMR is a Cambridge, UK company founded in 2014 that develops modular robots for minimal access surgery. Its Versius portfolio is designed around a surgeon operating instruments through robotic assistance. The commercial proposition is a system that can fit into operating room workflows and support the team’s work around the patient.",
+        "Stryker already sells medical technologies across large hospital networks. In the announcement, Andy Pierce, its group president for Medsurg and Neurotechnology, describes soft tissue robotics as an extension of the company’s endoscopy, visualization and enabling technology businesses.",
+        "The logic is easy to follow. A surgical robot needs more than a convincing demonstration to become an operating room fixture. A hospital must coordinate equipment purchasing, clinical leadership, room access, training, service and a sustainable case schedule. A supplier with established customer relationships has a chance to make those conversations happen more efficiently.",
+        "Black Scarab’s reading is that the agency agreement may be as strategically important as the financing. New capital can support engineering and expansion, but a commercial team has to turn those capabilities into installations and repeated clinical use. The agreement puts a large medical technology company into that role in the United States.",
+        "That does not make customer relationships automatic orders. A procurement team still has to decide that the specific platform, procedures and support arrangements fit its program. The alliance improves CMR’s route to market; each institution’s adoption decision remains its own."
+      ]
+    },
+    {
+      "heading": "What the machine actually does",
+      "paragraphs": [
+        "The FDA describes Versius Plus as a modular electromechanical surgical system. Its regulatory record, K252111, shows a substantial equivalence decision dated December 16, 2025. That is existing regulatory history, separate from the October 12 investment announcement.",
+        "CMR’s current US indication is specific: adults aged 22 and older who are eligible for soft tissue minimal access surgery, for cholecystectomy, the removal of the gallbladder. International experience across other procedures does not by itself expand that US indication.",
+        "This is surgeon controlled robotic assistance. The system translates the surgeon’s inputs into instrument movements and provides visualization. The alliance should therefore be assessed as a commercialization move in surgical robotics, without treating it as evidence that an autonomous system has been cleared to perform surgery.",
+        "The modular design matters commercially because operating rooms have different physical layouts, staff routines and procedure schedules. CMR argues that the architecture provides flexibility. A hospital evaluating that claim would need to examine room preparation, instrument handling and the team’s learning curve in its own environment.",
+        "These are operational questions with financial consequences. A machine can be technically capable and still struggle to earn its place if scheduling, preparation or service interruptions limit use. Conversely, a design that fits existing workflows may reduce friction in a hospital’s decision to expand a robotics program. The result depends on the actual site and case mix."
+      ]
+    },
+    {
+      "heading": "Why preferred equity and an option matter",
+      "paragraphs": [
+        "The financing structure gives Stryker an economic interest now and a contractual path to a larger transaction later. Preferred equity can carry rights that differ from ordinary shares, so the announced investment amount should not be mechanically converted into a company valuation or an ownership percentage.",
+        "The acquisition option also has strategic value before it is exercised. It can preserve a route to control if the partnership develops as intended. That creates a different relationship from a distributor simply taking a product onto its sales list.",
+        "For CMR, the immediate strategic benefit is a partner with an incentive to help the platform grow. For Stryker, the arrangement allows commercial participation while the companies work through the conditions governing the investment and any later acquisition.",
+        "The announcement says Pierce is expected to join CMR’s board. That adds a governance connection to the commercial arrangement. It does not change the stated division of responsibilities: CMR continues portfolio development and commercialization outside the United States.",
+        "Readers should keep the stages distinct. An agreed investment, the closing of that investment, the exercise of an option and the completion of an acquisition each represent a different change in the companies’ relationship. The October 12 release establishes the agreement and its stated structure."
+      ]
+    },
+    {
+      "heading": "The adoption test is inside the hospital",
+      "paragraphs": [
+        "The companies describe opportunities in hospitals and ambulatory surgery centers. Those settings can have different economics, patient selection and infrastructure, which makes a single generic return on investment claim unhelpful.",
+        "Consider a hospital that already has a robotics program. Its decision may turn on adding capacity, recruiting or retaining clinicians and maintaining access to operating rooms. A center starting its first program faces a broader organizational task, including training and service arrangements. These are illustrative decision paths, not disclosed CMR customer deployments.",
+        "A practical assessment would connect the approved procedure set to expected case volume, staffing, instrument use and support costs. Utilization matters because the cost of a program is spread across the work it actually performs. More equipment alone does not guarantee more usable surgical capacity.",
+        "Clinical outcomes also require their own evidence. A commercial partnership, an FDA clearance and the vendor’s workflow claims answer different questions. None should be substituted for comparative evidence on patient outcomes or the economics of a particular hospital program."
+      ]
+    },
+    {
+      "heading": "What to watch next",
+      "paragraphs": [
+        "The first concrete milestone is completion of the preferred equity investment. After that, the US agency arrangement becomes more informative through evidence of installations, surgeon training and sustained utilization within approved indications.",
+        "Any expansion of the US procedure label should be tracked through the relevant regulatory decision. Any exercise of Stryker’s acquisition option should be tracked as a separate corporate event.",
+        "The commercial significance is already clear. CMR has paired a substantial proposed capital injection with a partner that can carry its platform into the US market. The next test is how effectively that combination turns regulatory access and customer relationships into repeatable clinical adoption."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Stryker and CMR Surgical alliance announcement, October 12, 2026. Primary issuer announcement. Agreement terms and management statements are company attributed.",
+      "url": "https://www.stryker.com/us/en/about/news/2026/stryker-cmr-surgical-announce-strategic-alliance-advance-robotic-assisted-surgery.html"
+    },
+    {
+      "label": "Original issuer distribution through GlobeNewswire, October 12, 2026 at 08:00 ET, equivalent to 12:00 UTC. Same announcement, not independent corroboration.",
+      "url": "https://www.globenewswire.com/news-release/2026/10/12/3378830/0/en/stryker-and-cmr-surgical-announce-strategic-alliance-to-advance-robotic-assisted-surgery.html"
+    },
+    {
+      "label": "CMR Surgical’s announcement, October 12, 2026. Primary partner copy and current US indication.",
+      "url": "https://us.cmrsurgical.com/news/stryker-and-cmr-surgical-announce-strategic-alliance-to-advance-robotic-assisted-surgery"
+    },
+    {
+      "label": "FDA 510(k) record K252111, decision December 16, 2025. Existing regulatory background, rechecked October 13, 2026.",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252111"
+    },
+    {
+      "label": "FDA clearance summary, December 16, 2025 decision record. Device description and indication context.",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252111.pdf"
+    },
+    {
+      "label": "CMR Surgical clearance announcement, December 16, 2025. Existing product background.",
+      "url": "https://us.cmrsurgical.com/news/cmr-surgical-secures-510k-clearance-of-its-versius-plus-robotic-surgical-system"
+    }
+  ]
+},
   {
   slug: "ultra-funding-physical-intelligence-warehouse-robots",
   "taxonomy": {
