@@ -1,0 +1,32 @@
+[
+  {
+    "ticker": "OUST",
+    "approvedAt": "2026-10-14T15:23:49.108075Z",
+    "authorization": "User approved correcting Ouster to Nasdaq and revalidating source identity and full price history in this chat on October 14, 2026.",
+    "effectivePrimaryListingDate": "2024-12-23",
+    "previousMapping": {
+      "symbol": "OUST",
+      "mic": "XNYS",
+      "exchange": "NYSE"
+    },
+    "correctedMapping": {
+      "symbol": "OUST",
+      "mic": "XNAS",
+      "exchange": "Nasdaq"
+    },
+    "officialSources": [
+      "https://www.nasdaqtrader.com/TraderNews.aspx?id=DTN2024-33",
+      "https://investors.ouster.com/ir-resources/investor-faqs",
+      "https://www.sec.gov/Archives/edgar/data/1816581/000162828026054297/oust-20260806.htm"
+    ],
+    "providerInvestigationReceipts": [
+      "data/bspi15/raw/marketstack/2026-10-14T15-22-27-787Z-ouster-identity/ticker-v2.json",
+      "data/bspi15/raw/marketstack/2026-10-14T15-22-27-787Z-ouster-identity/nasdaq-eod-v2.json",
+      "data/bspi15/raw/marketstack/2026-10-14T15-22-27-787Z-ouster-identity/nasdaq-exchange-eod-v2.json"
+    ],
+    "providerResult": "Ticker metadata reports Ouster CIK 1816581 but exchange XNYS; XNAS-filtered EOD returns zero observations; exchange-specific XNAS EOD returns HTTP 422.",
+    "canonicalPricesChanged": false,
+    "reviewHistoryReceiptsChanged": false,
+    "auditTreatment": "Expected MIC corrected to XNAS. Received XNYS is an audit failure; no normalization or exception."
+  }
+]

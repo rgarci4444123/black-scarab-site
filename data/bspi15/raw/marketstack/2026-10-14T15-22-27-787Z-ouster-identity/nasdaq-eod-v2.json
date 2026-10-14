@@ -1,0 +1,14 @@
+{
+  "fetchedAt": "2026-10-14T15:22:27.787Z",
+  "requestUrl": "https://api.marketstack.com/v2/eod?symbols=OUST&exchange=XNAS&date_from=2026-10-01&date_to=2026-10-13&limit=1000&sort=ASC",
+  "httpStatus": 200,
+  "response": {
+    "pagination": {
+      "limit": 1000,
+      "offset": 0,
+      "count": 0,
+      "total": 0
+    },
+    "data": []
+  }
+}

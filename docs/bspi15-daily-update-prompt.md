@@ -43,3 +43,5 @@ Check for splits, mergers, delistings, ticker changes, suspensions, and other co
 Run type checking, linting, the production build, and desktop and mobile visual checks. Open the finished local preview at the Performance section. Do not deploy until I approve it.
 
 Report the BSPI15 closing level, daily change, since launch return, benchmark returns, excess returns, missing prices, market holidays, corporate actions, and changed files.
+
+Ouster provider metadata exception, approved October 14, 2026: retain Nasdaq/XNAS in `instruments.csv`, constituent metadata and holdings CSV, but use Marketstack's OUST unadjusted closes carrying the legacy XNYS tag. Apply only the exact authorized exception in `data/bspi15/provider-mic-exceptions.json`. Keep raw MICs and receipts unchanged, and show the exception in the audit and review workbook. This exception does not authorize any other identity mismatch, missing observation, price substitution or corporate-action adjustment.

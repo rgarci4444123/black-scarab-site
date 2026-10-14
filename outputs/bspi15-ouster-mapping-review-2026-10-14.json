@@ -1,0 +1,253 @@
+{
+  "updatedAt": "2026-10-14T15:46:22.411507Z",
+  "status": "mapping-corrected-provider-tag-exception-approved",
+  "mapping": {
+    "ticker": "OUST",
+    "symbol": "OUST",
+    "mic": "XNAS",
+    "exchange": "Nasdaq",
+    "userApproval": "October 14, 2026, this chat"
+  },
+  "canonicalDate": "2026-10-09",
+  "historicalPriceComparison": [
+    {
+      "date": "2026-10-01",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "recordedClose": 40.87,
+      "marketstackClose": 40.87,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "recordedClose": 44.39,
+      "marketstackClose": 44.39,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "recordedClose": 44.12,
+      "marketstackClose": 44.12,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "recordedClose": 44.91,
+      "marketstackClose": 44.91,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "recordedClose": 41.67,
+      "marketstackClose": 41.67,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "recordedClose": 39.53,
+      "marketstackClose": 39.53,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-09",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "recordedClose": 39.9,
+      "marketstackClose": 39.9,
+      "difference": 0,
+      "status": "match"
+    }
+  ],
+  "historicalSecurityIdentity": "Issuer CIK 1816581 and ISIN US68989M1036 identify Ouster common stock, but provider exchange remains XNYS. Strict primary-exchange validation is not complete.",
+  "audit": {
+    "status": "failed",
+    "period": {
+      "from": "2026-10-01",
+      "through": "2026-10-12",
+      "sourceFrom": "2026-09-17"
+    },
+    "counts": {
+      "instruments": 17,
+      "sourceObservations": 272,
+      "comparedObservations": 109,
+      "matches": 109,
+      "mismatches": 0,
+      "identityErrors": 18,
+      "missingSourceObservations": 0,
+      "verifiedClosureObservations": 15,
+      "requiredDateObservations": 12,
+      "missingRequiredObservations": 0,
+      "invalidObservations": 0,
+      "duplicateObservations": 0,
+      "paginationErrors": 0
+    },
+    "receiptPath": "data/bspi15/raw/marketstack/2026-10-14T15-23-52-902Z",
+    "identityErrors": [
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      },
+      {
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS"
+      }
+    ]
+  },
+  "investigationReceiptDirectory": "data/bspi15/raw/marketstack/2026-10-14T15-22-27-787Z-ouster-identity",
+  "providerResults": {
+    "tickerMIC": "XNYS",
+    "nasdaqFilteredObservationCount": 0,
+    "nasdaqExchangeEndpointHttpStatus": 422
+  },
+  "checks": {
+    "typecheck": "passed",
+    "targetedLint": "passed",
+    "productionBuild": "passed",
+    "desktopMobileAndHoldingsCsv": [
+      {
+        "viewport": "desktop",
+        "exchangeLabel": "Nasdaq",
+        "holdingsExchange": "Nasdaq",
+        "priceDate": "2026-10-09",
+        "indexLevel": 988.72,
+        "constituents": 15,
+        "errors": [],
+        "horizontalOverflow": false
+      },
+      {
+        "viewport": "mobile",
+        "exchangeLabel": "Nasdaq",
+        "holdingsExchange": "Nasdaq",
+        "priceDate": "2026-10-09",
+        "indexLevel": 988.72,
+        "constituents": 15,
+        "errors": [],
+        "horizontalOverflow": false
+      }
+    ],
+    "canonicalPrices": "unchanged",
+    "historicalReceiptsAndLedger": "unchanged",
+    "cumulativeWorkbook": "unchanged"
+  },
+  "pendingDates": [],
+  "remainingAction": null,
+  "previewUrl": "http://127.0.0.1:3108/indices/physical-ai-adoption-15#constituents",
+  "approvedException": "data/bspi15/provider-mic-exceptions.json",
+  "latestCanonicalDate": "2026-10-13"
+}

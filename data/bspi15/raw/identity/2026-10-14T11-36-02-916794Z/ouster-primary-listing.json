@@ -1,0 +1,44 @@
+{
+  "retrievedAt": "2026-10-14T11:36:02.916794Z",
+  "priceDateConvention": "Exchange-local trading dates; UTC evidence retrieval timestamp",
+  "issue": {
+    "category": "primaryExchangeIdentityMismatch",
+    "ticker": "OUST",
+    "company": "Ouster",
+    "marketstackSymbol": "OUST",
+    "configuredExpectedMic": "XNYS",
+    "receivedMic": "XNYS",
+    "officialPrimaryExchange": "Nasdaq Global Select Market",
+    "officialPrimaryMic": "XNAS",
+    "effectiveDate": "2024-12-23",
+    "affectedCanonicalHistory": "Every recorded OUST observation from the October 1, 2026 base onward requires identity revalidation. Price differences have not been established.",
+    "reason": "The mechanical Marketstack audit matches the frozen mapping, but that mapping and the API exchange tag contradict independent issuer and exchange evidence. Source identity is unresolved.",
+    "sourceEvidence": [
+      {
+        "publisher": "Nasdaq Trader",
+        "url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=DTN2024-33",
+        "title": "Ouster to Begin Listing and Trading on Nasdaq on December 23, 2024",
+        "effectiveDate": "2024-12-23",
+        "finding": "Nasdaq instructed redistributors to change the listing market after December 20, 2024; OUST common stock began Nasdaq Global Select Market trading December 23, 2024."
+      },
+      {
+        "publisher": "Ouster Investor Relations",
+        "url": "https://investors.ouster.com/ir-resources/investor-faqs",
+        "title": "Investor FAQs",
+        "finding": "The current issuer FAQ identifies OUST common stock as trading on Nasdaq Global Select Market and confirms the December 23, 2024 transfer."
+      },
+      {
+        "publisher": "SEC / Ouster",
+        "url": "https://www.sec.gov/Archives/edgar/data/1816581/000162828026054297/oust-20260806.htm",
+        "title": "Ouster August 6, 2026 Form 8-K",
+        "finding": "Securities-registration table names Nasdaq Global Select Market for OUST common stock."
+      }
+    ],
+    "requiredTreatment": "Obtain approval to correct the frozen mapping; revalidate OUST source identity and unadjusted price history under the correct primary listing. Keep the strict MIC requirement and stop until source identity reconciles."
+  },
+  "proposedMappingRow": "OUST,Ouster,OUST,XNAS,Nasdaq,USD,Constituent",
+  "marketstackRawReceipts": [
+    "data/bspi15/raw/marketstack/2026-10-14T11-30-43-876Z/constituents-v2.json",
+    "data/bspi15/raw/marketstack/2026-10-14T11-32-50-493Z/constituents-v2.json"
+  ]
+}

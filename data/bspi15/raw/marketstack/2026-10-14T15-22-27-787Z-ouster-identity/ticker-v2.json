@@ -1,0 +1,52 @@
+{
+  "fetchedAt": "2026-10-14T15:22:27.787Z",
+  "requestUrl": "https://api.marketstack.com/v2/tickers/OUST",
+  "httpStatus": 200,
+  "response": {
+    "name": "Ouster, Inc.",
+    "symbol": "OUST",
+    "cik": "1816581",
+    "isin": "US68989M1036",
+    "cusip": "68989M103",
+    "ein_employer_id": "000000000",
+    "lei": "",
+    "series_id": "",
+    "item_type": "equity",
+    "sector": "Technology",
+    "industry": "Electronic Components",
+    "sic_code": "3569",
+    "sic_name": "General Industrial Machinery & Equipment, NEC",
+    "stock_exchange": {
+      "name": "NEW YORK STOCK EXCHANGE, INC.",
+      "acronym": "NYSE",
+      "mic": "XNYS",
+      "country": null,
+      "country_code": "US",
+      "city": "NEW YORK",
+      "website": "WWW.NYSE.COM",
+      "operating_mic": "XNYS",
+      "oprt_sgmt": "OPRT",
+      "legal_entity_name": "INTERCONTINENTAL EXCHANGE, INC.",
+      "exchange_lei": "5493000F4ZO33MV32P92",
+      "market_category_code": "NSPD",
+      "exchange_status": "ACTIVE",
+      "date_creation": {
+        "date": "2005-05-23 00:00:00.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+      },
+      "date_last_update": {
+        "date": "2025-04-28 00:00:00.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+      },
+      "date_last_validation": {
+        "date": "2025-04-28 00:00:00.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+      },
+      "date_expiry": null,
+      "comments": ""
+    }
+  }
+}

@@ -107,7 +107,7 @@ export const physicalAiAdoptionConstituents: IndexConstituent[] = [
   {
     company: "Ouster",
     ticker: "OUST",
-    exchange: "NYSE",
+    exchange: "Nasdaq",
     country: "United States",
     sleeve: "Perception and navigation",
     weight: equalWeight,

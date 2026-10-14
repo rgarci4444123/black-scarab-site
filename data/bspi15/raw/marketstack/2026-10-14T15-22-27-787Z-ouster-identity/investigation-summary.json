@@ -1,0 +1,52 @@
+[
+  {
+    "name": "ticker-v2",
+    "status": 200,
+    "error": null,
+    "receipt": "data/bspi15/raw/marketstack/2026-10-14T15-22-27-787Z-ouster-identity/ticker-v2.json",
+    "bodyKeys": [
+      "name",
+      "symbol",
+      "cik",
+      "isin",
+      "cusip",
+      "ein_employer_id",
+      "lei",
+      "series_id",
+      "item_type",
+      "sector",
+      "industry",
+      "sic_code",
+      "sic_name",
+      "stock_exchange"
+    ],
+    "dataType": "undefined",
+    "count": null
+  },
+  {
+    "name": "nasdaq-eod-v2",
+    "status": 200,
+    "error": null,
+    "receipt": "data/bspi15/raw/marketstack/2026-10-14T15-22-27-787Z-ouster-identity/nasdaq-eod-v2.json",
+    "bodyKeys": [
+      "pagination",
+      "data"
+    ],
+    "dataType": "array",
+    "count": 0
+  },
+  {
+    "name": "nasdaq-exchange-eod-v2",
+    "status": 422,
+    "error": {
+      "code": "no_valid_exchange_provided",
+      "message": "Currently, we do not have data available for the requested symbol. Please verify that the symbol is valid, or try again in the future if the data becomes available."
+    },
+    "receipt": "data/bspi15/raw/marketstack/2026-10-14T15-22-27-787Z-ouster-identity/nasdaq-exchange-eod-v2.json",
+    "bodyKeys": [
+      "error"
+    ],
+    "dataType": "undefined",
+    "count": null
+  }
+]

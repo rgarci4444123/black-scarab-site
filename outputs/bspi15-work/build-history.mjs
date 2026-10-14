@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import os from 'node:os';
 import { createRequire } from 'node:module';
 import { pathToFileURL } from 'node:url';
+import { approvedProviderMicException } from '../../scripts/bspi15-provider-mic.mjs';
 
 const runtimeRequire = createRequire(path.join(os.homedir(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json'));
 const { Workbook, SpreadsheetFile } = await import(pathToFileURL(runtimeRequire.resolve('@oai/artifact-tool')).href);
@@ -20,6 +21,12 @@ const instruments = parse(await fs.readFile(path.join(root, 'data/bspi15/instrum
 const canonical = parse(await fs.readFile(path.join(root, 'data/bspi15/daily-closes.csv'), 'utf8'));
 const audit = JSON.parse(await fs.readFile(path.join(root, 'data/bspi15/marketstack-audit-latest.json'), 'utf8'));
 assert.equal(audit.status, 'passed', 'A strict, passing audit is required.');
+const providerMicExceptions = JSON.parse(await fs.readFile(path.join(root, 'data/bspi15/provider-mic-exceptions.json'), 'utf8'));
+function micExceptionFor(ticker, symbol, mic, api, date) {
+  const i = instruments.find(x => x.Ticker === ticker);
+  const approved = audit.approvedMicObservations?.find(x => x.date === date && x.ticker === ticker && x.receivedMic === mic && x.expectedMic === i['Expected MIC']);
+  return approvedProviderMicException({ticker, sourceSymbol:symbol, mic, sourceApi:api, date, expectedMic:i['Expected MIC'], currency:i.Currency, sourceName:approved?.sourceName, sourceCurrency:approved?.sourceCurrency}, providerMicExceptions);
+}
 assert.equal(instruments.length, 17);
 assert.equal(canonical[0].Date, '2026-10-01');
 const observations = parse(await fs.readFile(path.join(root, 'data/bspi15/marketstack-observations.csv'), 'utf8'));
@@ -50,13 +57,14 @@ for (let d = 0; d < canonical.length; d++) {
       assert.equal(Number(row[i.Ticker]), closure.previousAvailableClose);
     }
     assert.equal(s['Marketstack Symbol'], i['Marketstack Symbol']);
-    assert.equal(s.MIC, i['Expected MIC']);
+    const micException = micExceptionFor(i.Ticker, s['Marketstack Symbol'], s.MIC, s['API Version'], s.Date);
+    assert(s.MIC === i['Expected MIC'] || micException, 'Unapproved provider exchange MIC.');
     const close = Number(s.Close), canonicalClose = Number(row[i.Ticker]);
     assert(close > 0 && canonicalClose > 0);
     assert(Math.abs(close - canonicalClose) <= Math.max(0.01, canonicalClose * 0.000001), 'Canonical close does not match receipt.');
     assert.equal(Number(s['Split Factor']), 1, 'Resolve split treatment before reviewing.');
     assert.equal(Number(s.Dividend), 0, 'Review dividend flags before reviewing.');
-    return { ticker: i.Ticker, sourceDate: s.Date, rawClose: close, adjustedClose: Number(s['Adjusted Close']), dividend: Number(s.Dividend), splitFactor: Number(s['Split Factor']), symbol: s['Marketstack Symbol'], mic: s.MIC, api: s['API Version'], closure,
+    return { ticker: i.Ticker, sourceDate: s.Date, rawClose: close, adjustedClose: Number(s['Adjusted Close']), dividend: Number(s.Dividend), splitFactor: Number(s['Split Factor']), symbol: s['Marketstack Symbol'], mic: s.MIC, api: s['API Version'], closure, providerMicException: micException ? {id:micException.id, approvalRecord:'data/bspi15/provider-mic-exceptions.json'} : null,
       receipt: path.join(audit.receiptPath, i.Type === 'Benchmark' ? 'benchmarks-v1.json' : 'constituents-v2.json') };
   });
   ledger.days.push({ date: row.Date, prices: Object.fromEntries(instruments.map(i => [i.Ticker, Number(row[i.Ticker])])), fetchedAt: audit.fetchedAt, auditStatus: 'passed', entries });
@@ -92,7 +100,7 @@ function setup(s, title, widths, headers, count, note) {
 const N = ledger.days.length, total = N*17;
 setup(sh.Prices,'Closing price history',[14,27,17,18,13,12,18,18,18,14,20],['Date','Company','Ticker','Marketstack symbol','MIC','Currency','Previous close','Close','Launch close','Source date','Market status'],total,'Unadjusted prices in listing currency. Sources and exchange calendars are in Source Audit.');
 setup(sh['Returns and Contributions'],'Daily returns and contributions',[14,27,16,21,20,20,20,20],['Date','Company','Ticker','Previous weight','Daily price return','Contribution','Closing weight','Since launch return'],N*15,'Contributions use previous effective weights. Weights reset equally at quarterly reviews.');
-setup(sh['Source Audit'],'Marketstack source history',[14,17,18,18,14,13,14,14,21,60,60,25],['Date','Ticker','Raw close','Adjusted close','Dividend','Split factor','Expected MIC','Received MIC','Validation','Raw receipt','Exchange calendar','Fetched at (UTC)'],total,'Raw receipts are immutable. Closed-market rows retain the date and evidence for their earlier source close.');
+setup(sh['Source Audit'],'Marketstack source history',[14,17,18,18,14,13,14,14,24,60,60,25,56],['Date','Ticker','Raw close','Adjusted close','Dividend','Split factor','Expected MIC','Received MIC','Validation','Raw receipt','Exchange calendar','Fetched at (UTC)','Approved exception'],total,'Raw receipts are immutable. Closed-market rows retain the date and evidence for their earlier source close.');
 setup(sh['Corporate Actions'],'Corporate action history',[14,27,17,17,16,16,31,46],['Date','Company','Ticker','Source date','Dividend','Split factor','Provider review','Treatment'],total,'Provider split, dividend and security identity checks for each reviewed observation.');
 setup(sh.Summary,'BSPI15 daily review',[14,19,19,19,19,19,19,19,19,19,19,19,17,20,16,19,25,18,22,22],['Date','BSPI15 level','Daily return','Since launch','S&P 500 level','S&P daily','S&P since launch','Nasdaq level','Nasdaq daily','Nasdaq since launch','Daily excess / S&P','Daily excess / Nasdaq','Weight total','Contribution difference','Holiday carries','Source audit','Fetched at (UTC)','Level difference','Since launch excess / S&P','Since launch excess / Nasdaq'],N,'Launch: October 1, 2026 = 1,000. Benchmark levels are rebased. Excess returns are percentage points.');
 const p=sh.Prices,c=sh['Returns and Contributions'],a=sh['Source Audit'],ca=sh['Corporate Actions'],s=sh.Summary;
@@ -108,10 +116,15 @@ for(let d=0;d<N;d++) {
     p.getRange(`A${pr}:K${pr}`).values=[[excelDate(day.date),i.Company,i.Ticker,i['Marketstack Symbol'],i['Expected MIC'],i.Currency,null,day.prices[i.Ticker],ledger.days[0].prices[i.Ticker],excelDate(e.sourceDate),e.closure?'Verified closure':'Open']];
     if(d) formula(p,`G${pr}`,`=H${pr-17}`);
     a.getRange(`A${pr}:L${pr}`).values=[[excelDate(day.date),i.Ticker,e.rawClose,e.adjustedClose,e.dividend,e.splitFactor,i['Expected MIC'],e.mic,null,e.receipt,e.closure?.sourceUrl??'',excelTimestamp(day.fetchedAt)]];
-    formula(a,`I${pr}`,`=IF(AND(G${pr}=H${pr},C${pr}>0,ABS(C${pr}-'Prices'!H${pr})<=MAX(0.01,'Prices'!H${pr}*0.000001)),"${e.closure?'Verified closure':'Match'}","Mismatch")`);
+    const micException = micExceptionFor(i.Ticker, e.symbol, e.mic, e.api, e.sourceDate);
+    const identityCondition = micException ? `OR(G${pr}=H${pr},AND(B${pr}="OUST",G${pr}="XNAS",H${pr}="XNYS",LEFT(M${pr},${micException.id.length})="${micException.id}"))` : `G${pr}=H${pr}`;
+    formula(a,`I${pr}`,`=IF(AND(${identityCondition},C${pr}>0,ABS(C${pr}-'Prices'!H${pr})<=MAX(0.01,'Prices'!H${pr}*0.000001)),"${e.closure?'Verified closure':micException?'Approved MIC exception':'Match'}","Mismatch")`);
+    put(a,`M${pr}`,micException ? micException.id+'; approved '+micException.approvedAt.slice(0,10)+'; data/bspi15/provider-mic-exceptions.json' : '');
+
     ca.getRange(`A${pr}:H${pr}`).values=[[excelDate(day.date),i.Company,i.Ticker,excelDate(e.sourceDate),null,null,null,'No continuity adjustment']];
     formula(ca,`E${pr}`,`='Source Audit'!E${pr}`);formula(ca,`F${pr}`,`='Source Audit'!F${pr}`);
-    formula(ca,`G${pr}`,`=IF(AND(E${pr}=0,F${pr}=1,'Source Audit'!G${pr}='Source Audit'!H${pr}),"No provider flag","Review required")`);
+    formula(ca,`G${pr}`,`=IF(AND(E${pr}=0,F${pr}=1,'Source Audit'!I${pr}<>"Mismatch"),"No provider flag","Review required")`);
+    if(micException) { put(ca,`H${pr}`,'Approved provider MIC exception; no price adjustment'); ca.getRange(`H${pr}`).format.wrapText=true; ca.getRange(`A${pr}:H${pr}`).format.rowHeight=44; }
     if(i.Ticker==='002747') {p.getRange(`C${pr}`).setNumberFormat('000000');a.getRange(`B${pr}`).setNumberFormat('000000');ca.getRange(`C${pr}`).setNumberFormat('000000');}
     if(k>=15) continue;
     const cr=retStart+k;
@@ -138,7 +151,7 @@ for(let d=0;d<N;d++) {
   }
   formula(s,`M${sr}`,`=SUM('Returns and Contributions'!G${retStart}:G${retEnd})`);
   put(s,`O${sr}`,day.entries.filter(e=>e.closure).length);
-  formula(s,`P${sr}`,`=IF(COUNTIF('Source Audit'!I${priceStart}:I${priceStart+16},"Mismatch")=0,"Passed","Failed")`);
+  formula(s,`P${sr}`,`=IF(COUNTIF('Source Audit'!I${priceStart}:I${priceStart+16},"Mismatch")=0,IF(COUNTIF('Source Audit'!I${priceStart}:I${priceStart+16},"Approved MIC exception")>0,"Passed / exception","Passed"),"Failed")`);
   put(s,`Q${sr}`,excelTimestamp(day.fetchedAt));
   formula(s,`S${sr}`,`=(D${sr}-G${sr})*100`);formula(s,`T${sr}`,`=(D${sr}-J${sr})*100`);
   // Independent, within-quarter price-relative calculation for reconciliation.
@@ -151,15 +164,15 @@ for(const col of ['B','E','H'])s.getRange(`${col}6:${col}${N+5}`).setNumberForma
 for(const col of ['C','D','F','G','I','J','M'])s.getRange(`${col}6:${col}${N+5}`).setNumberFormat(pct);
 s.getRange(`K6:L${N+5}`).setNumberFormat('0.00" pp";(0.00)" pp";"-"');
 s.getRange(`N6:N${N+5}`).setNumberFormat('0.000000000000');s.getRange(`R6:R${N+5}`).setNumberFormat('0.000000000000');
-s.getRange(`Q6:Q${N+5}`).setNumberFormat('yyyy-mm-dd hh:mm:ss');s.getRange(`S6:T${N+5}`).setNumberFormat('0.00" pp";(0.00)" pp";"-"');s.getRange(`A6:R${N+5}`).format.rowHeight=40;
+s.getRange(`Q6:Q${N+5}`).setNumberFormat('yyyy-mm-dd hh:mm:ss');s.getRange(`S6:T${N+5}`).setNumberFormat('0.00" pp";(0.00)" pp";"-"');s.getRange(`A6:R${N+5}`).format.rowHeight=40;s.getRange(`P6:P${N+5}`).format.wrapText=true;
 p.getRange(`G6:I${total+5}`).setNumberFormat(num);p.getRange(`H6:I${total+5}`).format.font.color=colors.blue;p.getRange(`J6:J${total+5}`).setNumberFormat('mm/dd/yy');
 c.getRange(`D6:H${N*15+5}`).setNumberFormat(pct);
 a.getRange(`C6:E${total+5}`).setNumberFormat(num);a.getRange(`F6:F${total+5}`).setNumberFormat('0.0000');
-a.getRange(`L6:L${total+5}`).setNumberFormat('yyyy-mm-dd hh:mm:ss');a.getRange(`J6:L${total+5}`).format.wrapText=true;a.getRange(`A6:L${total+5}`).format.rowHeight=50;
+a.getRange(`L6:L${total+5}`).setNumberFormat('yyyy-mm-dd hh:mm:ss');a.getRange(`I6:M${total+5}`).format.wrapText=true;a.getRange(`A6:L${total+5}`).format.rowHeight=50;
 ca.getRange(`D6:D${total+5}`).setNumberFormat('mm/dd/yy');ca.getRange(`E6:E${total+5}`).setNumberFormat(num);
 ca.getRange(`F6:F${total+5}`).setNumberFormat('0.0000');
 // Native filtered tables make all dates and companies easy to review.
-for(const [sheet,lastCol,count] of [[s,'T',N],[p,'K',total],[c,'H',N*15],[a,'L',total],[ca,'H',total]]) { const table=sheet.tables.add(`A5:${lastCol}${count+5}`,true,`${sheet.name.replaceAll(' ','')}History`);table.style='TableStyleLight1'; }
+for(const [sheet,lastCol,count] of [[s,'T',N],[p,'K',total],[c,'H',N*15],[a,'M',total],[ca,'H',total]]) { const table=sheet.tables.add(`A5:${lastCol}${count+5}`,true,`${sheet.name.replaceAll(' ','')}History`);table.style='TableStyleLight1'; }
 wb.recalculate();
 const website=JSON.parse(await fs.readFile(path.join(root,'public/data/bspi15-performance.json'),'utf8'));
 assert.equal(website.length,N);
@@ -169,12 +182,20 @@ for(let d=0;d<N;d++) {
   for(const [col,key] of [[1,'bspi15'],[4,'sp500'],[7,'nasdaqComposite']])assert(Math.abs(actual[col]-expected[key])<1e-8);
   assert(Math.abs(actual[12]-1)<1e-12);assert(Math.abs(actual[17])<1e-8);
   if(d)assert(Math.abs(actual[13])<1e-12);
-  assert.equal(actual[15],'Passed');
+  assert(['Passed','Passed / exception'].includes(actual[15]));
   for(let k=0;k<15;k++)assert(Math.abs(c.getRange(`G${6+15*d+k}`).values[0][0]-expected.constituentWeights[instruments[k].Ticker]/100)<1e-12);
 }
 const lastPrice=6+17*(N-1), original=p.getRange(`H${lastPrice}`).values[0][0], before=s.getRange(`B${N+5}`).values[0][0];
 put(p,`H${lastPrice}`,original*1.01);wb.recalculate();assert(s.getRange(`B${N+5}`).values[0][0]>before);assert.equal(a.getRange(`I${lastPrice}`).values[0][0],'Mismatch');assert.equal(s.getRange(`P${N+5}`).values[0][0],'Failed');
 put(p,`H${lastPrice}`,original);wb.recalculate();assert(Math.abs(s.getRange(`B${N+5}`).values[0][0]-before)<1e-9);
+const approvedIndex = instruments.findIndex(i=>i.Ticker==='OUST');
+const exceptionRow=6+17*(N-1)+approvedIndex;
+if(a.getRange(`I${exceptionRow}`).values[0][0]==='Approved MIC exception') {
+  const received=a.getRange(`H${exceptionRow}`).values[0][0],approval=a.getRange(`M${exceptionRow}`).values[0][0];
+  put(a,`H${exceptionRow}`,'XLON');wb.recalculate();assert.equal(a.getRange(`I${exceptionRow}`).values[0][0],'Mismatch');assert.equal(s.getRange(`P${N+5}`).values[0][0],'Failed');
+  put(a,`H${exceptionRow}`,received);put(a,`M${exceptionRow}`,'');wb.recalculate();assert.equal(a.getRange(`I${exceptionRow}`).values[0][0],'Mismatch');
+  put(a,`M${exceptionRow}`,approval);wb.recalculate();assert.equal(a.getRange(`I${exceptionRow}`).values[0][0],'Approved MIC exception');
+}
 await fs.mkdir(qaDir,{recursive:true});
 const errors=await wb.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A|#NUM!|#NULL!|#SPILL!|#CALC!',options:{useRegex:true,maxResults:30}});
 await fs.writeFile(path.join(qaDir,'formula-errors.ndjson'),errors.ndjson);
@@ -182,7 +203,7 @@ assert(errors.ndjson.includes('matched 0 entries'), 'Unexpected formula errors.'
 console.log(errors.ndjson);
 const inspection=await wb.inspect({kind:'table',range:`Summary!A5:T${N+5}`,include:'values,formulas',tableMaxRows:N+1,tableMaxCols:20,maxChars:9000});
 await fs.writeFile(path.join(qaDir,'summary.ndjson'),inspection.ndjson);
-for(const [name,range] of [['Summary',`A1:J${N+5}`],['Prices','A1:K22'],['Returns and Contributions','A1:H20'],['Source Audit','A1:L22'],['Corporate Actions','A1:H22']]) {
+for(const [name,range] of [['Summary',`A1:J${N+5}`],['Prices','A1:K22'],['Returns and Contributions','A1:H20'],['Source Audit','A1:M22'],['Corporate Actions','A1:H22']]) {
   const blob=await wb.render({sheetName:name,range,scale:1,format:'png'});
   await fs.writeFile(path.join(qaDir,name.toLowerCase().replaceAll(' ','-')+'.png'),new Uint8Array(await blob.arrayBuffer()));
 }

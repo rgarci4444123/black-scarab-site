@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import nextEnv from "@next/env";
+import { approvedProviderMicException } from "./bspi15-provider-mic.mjs";
 
 const { loadEnvConfig } = nextEnv;
 
@@ -119,6 +120,8 @@ const verifiedMarketClosures = JSON.parse(
 );
 
 
+const providerMicExceptions = JSON.parse(await fs.readFile(path.join(root, "data/bspi15/provider-mic-exceptions.json"), "utf8").catch(error => { if (error.code === "ENOENT") return "[]"; throw error; }));
+
 if (!dateFrom || !dateTo) {
   throw new Error("The audit needs a start date and end date.");
 }
@@ -179,6 +182,8 @@ const sourceRows = [
     ticker: instrument.Ticker,
     company: instrument.Company,
     sourceSymbol: row.symbol,
+    sourceName: row.name ?? null,
+    sourceCurrency: row.price_currency ?? null,
     mic: row.exchange,
     expectedMic: instrument["Expected MIC"],
     currency: instrument.Currency,
@@ -191,10 +196,16 @@ const sourceRows = [
   };
 });
 
+const approvedMicObservations = sourceRows.flatMap(row => {
+  const exception = approvedProviderMicException(row, providerMicExceptions);
+  return exception ? [{ date: row.date, ticker: row.ticker, sourceSymbol: row.sourceSymbol, sourceName: row.sourceName, sourceCurrency: row.sourceCurrency, expectedMic: row.expectedMic, receivedMic: row.mic, sourceApi: row.sourceApi, exceptionId: exception.id, approvalRecord: "data/bspi15/provider-mic-exceptions.json", status: "approved-provider-MIC-exception" }] : [];
+});
+
 const identityErrors = sourceRows
-  .filter((row) => row.mic !== row.expectedMic)
+  .filter((row) => row.mic !== row.expectedMic && !approvedProviderMicException(row, providerMicExceptions))
   .map((row) => ({
     ticker: row.ticker,
+    date: row.date,
     sourceSymbol: row.sourceSymbol,
     expectedMic: row.expectedMic,
     receivedMic: row.mic,
@@ -245,7 +256,7 @@ function checkMissing(date, instrument, canonicalClose = null) {
     && entry.sourceUrl && entry.evidence && entry.verifiedAt,
   );
   const validCarry = closure && previous
-    && previous.mic === instrument["Expected MIC"]
+    && (previous.mic === instrument["Expected MIC"] || approvedProviderMicException(previous, providerMicExceptions))
     && Number.isFinite(previous.close) && previous.close > 0
     && (canonicalClose === null || canonicalClose === previous.close);
   const detail = {
@@ -344,6 +355,7 @@ const audit = {
     matches: comparisons.length - mismatches.length,
     mismatches: mismatches.length,
     identityErrors: identityErrors.length,
+    approvedProviderMicObservations: approvedMicObservations.length,
     missingSourceObservations: missingSourceObservations.length,
     verifiedClosureObservations: new Set(verifiedClosures.map((row) => `${row.date}|${row.ticker}`)).size,
     requiredDateObservations: requiredDateObservations.length,
@@ -353,6 +365,8 @@ const audit = {
     paginationErrors: paginationErrors.length,
   },
   identityErrors,
+  approvedMicObservations,
+  providerMicExceptionRecords: providerMicExceptions,
   mismatches,
   missingSourceObservations,
   missingRequiredObservations,

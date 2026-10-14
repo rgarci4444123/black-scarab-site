@@ -1,0 +1,24 @@
+[
+  {
+    "id": "ouster-marketstack-legacy-nyse-tag",
+    "ticker": "OUST",
+    "sourceSymbol": "OUST",
+    "apiVersion": "v2",
+    "expectedMic": "XNAS",
+    "acceptedSourceMic": "XNYS",
+    "currency": "USD",
+    "sourceNames": [
+      "Ouster Inc - Class A",
+      "Ouster, Inc."
+    ],
+    "from": "2024-12-23",
+    "approvedAt": "2026-10-14T15:38:16.921099Z",
+    "authorization": "Rodolfo explicitly instructed on October 14, 2026: keep Nasdaq in the mapping and use the NYSE-labelled OUST price supplied by Marketstack.",
+    "reason": "Marketstack retains a legacy NYSE tag for the verified Ouster common-stock series. The official listing remains Nasdaq.",
+    "identityEvidence": [
+      "https://www.nasdaqtrader.com/TraderNews.aspx?id=DTN2024-33",
+      "data/bspi15/raw/marketstack/2026-10-14T15-22-27-787Z-ouster-identity/ticker-v2.json"
+    ],
+    "receiptTreatment": "Keep XNYS and exchange_code NYSE exactly as received. Do not change prices or adjusted/raw fields."
+  }
+]

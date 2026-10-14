@@ -12,6 +12,7 @@ const instruments = instrumentCsv.trim().split("\n").slice(1).map((line) => {
   const [ticker, company, symbol, mic, exchange, currency, type] = line.split(",");
   return { ticker, company, symbol, mic, exchange, currency, type };
 });
+const exceptions = JSON.parse(await fs.readFile(path.join(root, "data/bspi15/provider-mic-exceptions.json"), "utf8"));
 const closures = await fs.readFile(path.join(root, "data/bspi15/verified-market-closures.json"), "utf8");
 async function scenario(change = () => {}) {
   const dir = await fs.mkdtemp(path.join(os.tmpdir(), "bspi15-audit-test-"));
@@ -26,8 +27,9 @@ async function scenario(change = () => {}) {
       ...(i.mic === "XSHE" ? [] : [{ symbol: i.symbol, exchange: i.mic, date: "2026-10-01T00:00:00+0000", close: 100, adj_close: 100 }]),
       { symbol: i.symbol, exchange: i.mic, date: "2026-10-08T00:00:00+0000", close: 101, adj_close: 101 },
     ]);
-    const state = { canonical, rows, paginationExtra: 0 };
+    const state = { canonical, rows, paginationExtra: 0, exceptions };
     change(state);
+    await fs.writeFile(path.join(data, "provider-mic-exceptions.json"), JSON.stringify(state.exceptions));
     await fs.writeFile(path.join(data, "daily-closes.csv"),
       `Date,${instruments.map((i) => i.ticker).join(",")}\n2026-10-01,${state.canonical.join(",")}\n`);
     const responses = {};
@@ -78,4 +80,20 @@ test("duplicate observation fails", async () => {
 test("incomplete pagination fails", async () => {
   const { code, audit } = await scenario((s) => { s.paginationExtra = 1; });
   assert.equal(code, 1); assert.equal(audit.counts.paginationErrors, 2);
+});
+
+test("authorized OUST legacy source MIC passes without rewriting the receipt tag", async () => {
+  const { code, audit } = await scenario(s => { for (const r of s.rows) if (r.symbol === "OUST") Object.assign(r, {exchange:"XNYS",name:"Ouster Inc - Class A",price_currency:"USD"}); });
+  assert.equal(code,0);assert.equal(audit.status,"passed");assert.equal(audit.approvedMicObservations.length,3);
+  assert(audit.approvedMicObservations.every(r=>r.expectedMic==="XNAS" && r.receivedMic==="XNYS"));
+});
+test("OUST source MIC fails without explicit exception authorization", async () => {
+  const { code, audit } = await scenario(s => {s.exceptions=[];for(const r of s.rows)if(r.symbol==="OUST")Object.assign(r,{exchange:"XNYS",name:"Ouster Inc - Class A",price_currency:"USD"});});
+  assert.equal(code,1);assert.equal(audit.counts.identityErrors,3);
+});
+test("OUST exception rejects other exchange tags and wrong security identity", async () => {
+  for(const change of [{exchange:"XLON",name:"Ouster Inc - Class A",price_currency:"USD"},{exchange:"XNYS",name:"Different security",price_currency:"USD"},{exchange:"XNYS",name:"Ouster Inc - Class A",price_currency:"EUR"}]) {
+    const {code,audit}=await scenario(s=>{Object.assign(s.rows.find(r=>r.symbol==="OUST"&&r.date.startsWith("2026-10-08")),change);});
+    assert.equal(code,1);assert.equal(audit.counts.identityErrors,1);
+  }
 });

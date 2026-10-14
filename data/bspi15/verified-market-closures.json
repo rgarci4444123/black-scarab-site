@@ -9,5 +9,15 @@
     "evidence": "Shenzhen Stock Exchange is closed October 1 through October 7, 2026, and resumes normal trading October 8, 2026.",
     "verifiedAt": "2026-10-09",
     "verificationMethod": "Official exchange notices retrieved through web search; consistent with prior recorded exchange-calendar verification."
+  },
+  {
+    "mic": "XJPX",
+    "name": "Sports Day",
+    "from": "2026-10-12",
+    "through": "2026-10-12",
+    "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+    "evidence": "JPX official 2026 Market Holidays lists October 12, Monday, as Sports Day. Tokyo cash equities were closed. Carry the October 9 canonical close with zero daily return.",
+    "verifiedAt": "2026-10-13T11:32:45.037298Z",
+    "verificationMethod": "Official JPX cash-market holiday calendar retrieved and checked for the exact exchange-local date."
   }
 ]

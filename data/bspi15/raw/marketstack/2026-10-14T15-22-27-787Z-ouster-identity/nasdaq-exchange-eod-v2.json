@@ -1,0 +1,11 @@
+{
+  "fetchedAt": "2026-10-14T15:22:27.787Z",
+  "requestUrl": "https://api.marketstack.com/v2/exchanges/XNAS/eod?symbols=OUST&date_from=2026-10-01&date_to=2026-10-13&limit=1000&sort=ASC",
+  "httpStatus": 422,
+  "response": {
+    "error": {
+      "code": "no_valid_exchange_provided",
+      "message": "Currently, we do not have data available for the requested symbol. Please verify that the symbol is valid, or try again in the future if the data becomes available."
+    }
+  }
+}
