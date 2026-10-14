@@ -35,6 +35,150 @@ export type NewsUpdate = {
 export const newsUpdates: NewsUpdate[] = [
 {
   "taxonomy": {
+    "primaryIndustry": "construction",
+    "relevantIndustries": [
+      "manufacturing"
+    ],
+    "technologies": [
+      "industrial-robotics",
+      "robot-software",
+      "additive-manufacturing",
+      "embodied-ai"
+    ],
+    "applications": []
+  },
+  slug: "construction-robotics-commercial-scale",
+  "title": "Construction robotics tests two routes to commercial scale",
+  "summary": "A builder commitment and fresh manufacturing capital test different parts of the same challenge: turning robotic construction into a repeatable business.",
+  "category": "Construction robotics",
+  "publishedDate": "2026-10-14",
+  "publishedAt": "2026-10-14T11:27:22-04:00",
+  "publishedLabel": "October 14, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/construction-robotics-commercial-scale.png",
+  "imageAlt": "A suspended house cross section combines golden timber framing on the left with curved terracotta concrete layers on the right, against a blue sky.",
+  "imageCaption": "Original Black Scarab editorial illustration of two construction methods resolving into one house form.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "D.R. Horton will access Promise's platform to support more than 1,250 future homes under a multiyear agreement.",
+    "Promise expects its new Phoenix factory to begin manufacturing in early 2027.",
+    "ICON's $200 million Series D funds expansion. Its more than 270 homes and structures is a cumulative company reported total."
+  ],
+  "sections": [
+    {
+      "heading": "What happened",
+      "paragraphs": [
+        "Promise Robotics announced a multiyear agreement with D.R. Horton on October 13 to support production of more than 1,250 homes through its Factory as a Service platform. On the same day, ICON announced a $200 million Series D co led by Baillie Gifford and funds managed by BlackRock to expand its robotic construction systems.",
+        "The announcements address different parts of the route to scale. Promise has a named U.S. builder commitment for future production. ICON has fresh capital to manufacture and deploy equipment. Together, they bring attention to the business behind the machine: who pays for capacity, who runs it and how consistently it produces useful work."
+      ]
+    },
+    {
+      "heading": "Promise sells access to a factory",
+      "paragraphs": [
+        "Promise starts with a builder's existing home designs. Its platform interprets those designs, generates production plans and robotic instructions, coordinates manufacturing and connects factory output with installation at the building site.",
+        "The service gives a builder access to automated production without developing and operating its own factory. That moves a substantial operating responsibility to Promise, while leaving the builder with a different task: fitting the supplied components and production schedule into its construction program.",
+        "In a February 2025 description of the platform, Promise said it combines industrial robots with proprietary AI and tooling. The company announced full production at its Calgary facility in October 2025, giving the new U.S. agreement an earlier operating reference.",
+        "The commercial attraction is the ability to obtain manufacturing capacity without first assembling a factory organization. Equipment, software, tooling and the people who keep production moving have to work together. Buying access to that system can make adoption more approachable for a builder that wants to improve an established construction process."
+      ]
+    },
+    {
+      "heading": "Phoenix puts regional execution to the test",
+      "paragraphs": [
+        "Promise expects its new Phoenix factory to begin manufacturing in early 2027. The D.R. Horton agreement is intended to support more than 1,250 future homes over multiple years. That number describes the scope of future production support, rather than a count of completed homes or an annual factory output figure.",
+        "A regional factory needs a dependable flow of work. Our reading is that an anchor builder can help establish that flow, giving the operator a basis for planning equipment, staffing and production. Serving additional builders could spread the factory's fixed costs across more work, provided their designs and schedules fit the operation.",
+        "HousingWire's reporting adds a useful view of the proposition. In an interview, Promise chief executive Ramtin Attar described beginning with familiar framing components, including walls, floors and stairs. He also discussed offering customers additional capacity as factory throughput grows.",
+        "That approach keeps the adoption question close to ordinary building work. A builder can assess whether the components arrive when needed, fit the design and reduce effort in the surrounding process. The commercial benefit depends on the connection between manufacturing and construction, as much as the activity inside the factory."
+      ]
+    },
+    {
+      "heading": "ICON funds a larger equipment business",
+      "paragraphs": [
+        "ICON says its Series D will support manufacturing and deployment of robotic construction systems, a large research and development facility in Austin, and advances in Titan and Olympus. Its transaction adviser, Latham & Watkins, separately confirmed the financing announcement and named participants.",
+        "The expansion includes Titan, a mobile robotic printing system that ICON commercially launched in March. The October announcement puts its rollout alongside a larger manufacturing effort. ICON is funding the capacity to deliver technology into more construction projects and support it as the deployment base grows.",
+        "The company also reports more than 270 homes and structures across five states and two countries. That is a cumulative company reported construction record across its history and technologies. Titan deployments, current manufacturing capacity and annual completed output remain separate measures.",
+        "Capital helps pay for the equipment and organization required to expand. Turning that investment into a durable business depends on customers using the systems successfully, continuing to buy and receiving support that keeps projects moving."
+      ]
+    },
+    {
+      "heading": "Printing is a complete operating workflow",
+      "paragraphs": [
+        "Titan places building material through a controlled printhead. ICON's specifications describe a material chain involving a mixer and pump, and list two operators for the system. The printer therefore belongs within a construction process that includes material handling and people.",
+        "BuildOS supplies the software connection. ICON describes tools that translate architectural designs into construction tasks, plan printing in a three dimensional environment and track progress using job site data.",
+        "The practical challenge is coordinating those parts. Material has to arrive in a usable condition and at a suitable rate. The machine's movements have to match the intended geometry. The plan has to reflect the space and conditions in which the system works.",
+        "A printed wall also needs to connect with the rest of the building. Foundations, openings, utilities, roofs and finishes remain part of the project. Assessing a printing system means following its contribution through those handoffs and into a completed structure."
+      ]
+    },
+    {
+      "heading": "Two models put responsibility in different places",
+      "paragraphs": [
+        "Promise's service model places factory operation with a specialist provider. For a builder, the important decisions concern design compatibility, production scheduling, delivery and installation. The service is valuable when that combination reduces the effort or uncertainty of completing the work.",
+        "An equipment model puts more attention on the organization deploying the system. A contractor needs to prepare the site, arrange materials, train operators and maintain a workable construction sequence. The supplier needs to make those requirements manageable across customers and locations.",
+        "Consider a hypothetical builder opening several communities near one factory. Reserving production slots could simplify its framing plan, but a delayed site might leave components ready before they can be installed. The arrangement needs a practical response to that mismatch.",
+        "For a hypothetical contractor moving a printing system between projects, the equivalent concern is usable machine time. Setup, material supply and the readiness of the next site influence how much paid work the equipment can complete. A fast print cycle has less commercial value if the system spends long periods waiting for everything around it."
+      ]
+    },
+    {
+      "heading": "Where an industry business could emerge",
+      "paragraphs": [
+        "Black Scarab's analysis is that these models could broaden access to construction robotics in different ways. Factory services could let builders buy capacity from an existing operating system. Equipment sales could let contractors develop a printing capability across their own projects.",
+        "Both routes make integration expertise more valuable. Someone must translate designs into executable work, manage changes and connect automated production with conventional construction tasks. As deployments grow, that knowledge could support repeatable services rather than a fresh engineering exercise on every project.",
+        "The supplier economics differ. A factory operator must keep productive capacity in use and manage work flowing between customers and sites. An equipment supplier must manufacture dependable systems and support customers whose projects have different layouts and operating conditions.",
+        "This makes repeat use a particularly useful commercial signal. A builder expanding its service agreement or a contractor bringing the same system to another project shows that the technology has earned a place in an operating process. That evidence would strengthen the case that adoption can spread beyond an initial demonstration."
+      ]
+    },
+    {
+      "heading": "The next evidence is delivered work",
+      "paragraphs": [
+        "For Promise, the next milestones are Phoenix's expected production start and projects using the D.R. Horton agreement. For ICON, they are manufacturing and deployment progress for Titan, followed by customers putting the systems to work again.",
+        "Useful comparisons should follow the same scope of work. Faster framing or printing is one result; a shorter route to a finished home is another. Production, installation, human labor, rework and the cost of completion need to be considered together under comparable project conditions.",
+        "The two announcements give construction robotics a customer commitment and a larger capital base. Their lasting importance will depend on what follows: delivered projects, manageable support demands and an operating model that becomes easier to repeat."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Promise Robotics announces the D.R. Horton agreement, October 13, 2026",
+      "url": "https://news.promiserobotics.com/promise-robotics-expands-physical-ai-production-infrastructure-for-u-s-homebuilding-through-multi-year-commercial-agreement-with-d-r-horton/"
+    },
+    {
+      "label": "ICON announces its Series D, October 13, 2026",
+      "url": "https://www.iconbuild.com/newsroom/icon-raises-seriesd"
+    },
+    {
+      "label": "Latham & Watkins confirms its role in the ICON financing, October 13, 2026",
+      "url": "https://www.lw.com/en/news/2026/10/latham-advises-icon-on-series-d-financing"
+    },
+    {
+      "label": "HousingWire reports on the Promise agreement and interviews its chief executive, October 13, 2026",
+      "url": "https://www.housingwire.com/articles/promise-robotics-dr-horton-factory/"
+    },
+    {
+      "label": "Promise Robotics announces Calgary production, October 29, 2025",
+      "url": "https://news.promiserobotics.com/promise-robotics-opens-new-ai-powered-homebuilding-facility-to-boost-housing-supply-in-alberta/"
+    },
+    {
+      "label": "Promise Robotics describes its factory service platform, February 25, 2025",
+      "url": "https://www.prnewswire.com/news-releases/promise-robotics-continues-expansion-of-homebuilding-factory-a-service-to-homebuilding-partners-in-north-america-302384160.html"
+    },
+    {
+      "label": "ICON BuildOS software",
+      "url": "https://www.iconbuild.com/technology/software"
+    },
+    {
+      "label": "ICON Titan specifications",
+      "url": "https://www.iconbuild.com/technology/specs"
+    },
+    {
+      "label": "ICON announces Titan commercial rollout, March 11, 2026",
+      "url": "https://www.iconbuild.com/newsroom/icon-announces-first-commercial-rollout-of-its-3d-printing-construction-technology-for-builders"
+    }
+  ]
+},
+{
+  "taxonomy": {
     "primaryIndustry": "cross-industry",
     "relevantIndustries": [
       "manufacturing",
