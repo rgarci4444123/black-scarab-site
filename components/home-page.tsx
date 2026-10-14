@@ -155,11 +155,11 @@ export default function HomePage() {
     },
     {
       eyebrow: "Latest podcast",
-      title: "Vibe Manufacturing: Get Used to Hearing It",
-      href: "https://open.spotify.com/episode/5IaYpOZUpPk3oxTKw0Ww3M",
-      image: "/article-images/vibe-manufacturing-cover.png",
+      title: "Physical AI’s New Scorecard + GPU Prices + Robots at Work",
+      href: "https://open.spotify.com/episode/7bTzwWsQsOnDMXE9GMn7Dl",
+      image: "/images/index/bspi15-markets-physical-ai.png",
       imageAlt:
-        "Editorial illustration of luminous AI geometry resolving into a solid machined metal component",
+        "Editorial illustration of a robotic arm arranging an upward market chart beside physical AI components",
       cta: "Listen on Spotify",
       external: true,
       hasBlueCardGlow: true,
