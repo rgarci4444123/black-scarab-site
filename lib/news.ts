@@ -35,6 +35,139 @@ export type NewsUpdate = {
 export const newsUpdates: NewsUpdate[] = [
 {
   "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [
+      "manufacturing",
+      "agriculture",
+      "warehousing-logistics"
+    ],
+    "technologies": [
+      "embodied-ai",
+      "foundation-models",
+      "robot-software"
+    ],
+    "applications": []
+  },
+  slug: "physical-intelligence-pi-api-beta",
+  "title": "Physical Intelligence opens Pi API beta for robot training and inference",
+  "summary": "The new service lets robotics teams adapt models on managed infrastructure. Its wider significance is a possible shift in competition toward application data, integration and dependable operation.",
+  "category": "Robot foundation models",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "imageAlt": "A silver gripper holds a strawberry while another places a geometric module, joined by a violet and yellow patterned ribbon.",
+  "imageCaption": "Original Black Scarab editorial illustration of one learning pattern adapted to different physical tasks.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "The beta combines managed model adaptation with hosted inference.",
+    "Developers supply demonstrations and evaluate behavior on their own robots.",
+    "A shared model layer could change where robotics companies build their competitive advantage."
+  ],
+  "sections": [
+    {
+      "heading": "What happened",
+      "paragraphs": [
+        "Physical Intelligence announced the Pi API beta on October 13, opening access to a service that lets robotics teams upload data, adapt its models on managed computing infrastructure and run the resulting models through hosted inference.",
+        "Teams can apply through the company's beta waitlist. The announcement brings a practical development service to an idea Physical Intelligence has been advancing for months: robot builders should be able to draw on a common intelligence layer while specializing in particular machines and jobs.",
+        "The immediate attraction is a shorter path between collecting demonstrations and testing a new robot behavior. The larger question is how that changes the economics of building a robotics company."
+      ]
+    },
+    {
+      "heading": "A service around the learning loop",
+      "paragraphs": [
+        "A robot foundation model supplies a starting point learned across physical tasks. Adapting that starting point to a particular machine still requires examples of the intended behavior, suitable data preparation and testing in the actual operating environment.",
+        "Fine tuning is further training on those examples. Inference is the use of the trained model to produce actions. The Pi API puts managed computing behind these steps so developers can concentrate on collecting useful data and evaluating what the robot does.",
+        "That makes the evaluation loop central to the product. A demonstration teaches the desired action; a failed attempt reveals where the training set or system needs attention. Repeating that cycle can turn an impressive first attempt into a more dependable task.",
+        "For example, consider a hypothetical assembly cell where a robot reliably grasps a part but struggles when it arrives rotated. More examples of the easy grasp may add little value. Demonstrations covering the awkward orientation, followed by tests on held aside parts, would address the actual failure. The quality of the iteration matters as much as its speed."
+      ]
+    },
+    {
+      "heading": "Picking fruit and assembling hardware",
+      "paragraphs": [
+        "Physical Intelligence's examples include AgRobotics harvesting strawberries, Almond's Axol robot deburring assembly spacers and General Instinct training a server assembly policy. These tasks span delicate contact, material finishing and precise placement.",
+        "The company says Almond obtained the demonstrated model after four days of API iteration. For General Instinct, it reports training within three days of access and matching an existing adapted open model with 5 percent of that model's adaptation data. These are company reported task results, rather than an independently established benchmark for the service.",
+        "The hardware businesses remain distinct. Almond sells a robot development platform with its own software tools. AgRobotics describes its purpose as agricultural field labor. General Instinct's public company profile emphasizes model adaptation and deployment infrastructure, including an offline runtime product called Instinct Edge.",
+        "For an evaluator, the useful comparison is between complete workflows: data collection effort, repeated task completion, intervention time and the cost of recovery. A quicker first model is valuable when it also shortens the route to dependable work."
+      ]
+    },
+    {
+      "heading": "An earlier strategy becomes easier to access",
+      "paragraphs": [
+        "The beta extends a strategy Physical Intelligence described in February in The Physical Intelligence Layer. Partner authored accounts from Weave and Ultra discussed using successive models in laundry folding and warehouse order packaging. Those accounts connected model improvements with deployment data and human intervention.",
+        "Outside reporting has also followed the research trajectory. TechCrunch's April coverage described Physical Intelligence's work on robots handling tasks beyond their explicit training.",
+        "There is already another route for developers. Physical Intelligence's openpi repository provides model checkpoints, training code and deployment examples for models including π0 and π0.5. Teams using that route take responsibility for their computing environment and model operations.",
+        "The managed API and open tooling create different operating choices. A small team may value faster access to maintained infrastructure. A team with specialized hardware or disconnected environments may value control over local execution. The appropriate comparison includes engineering effort, deployment constraints and support over the life of the application."
+      ]
+    },
+    {
+      "heading": "Implications for the industry",
+      "paragraphs": [
+        "Black Scarab's analysis is that a reusable model service could change how robotics companies divide the work. If the approach proves broadly useful, more teams could build application businesses without first building a large model research organization.",
+        "For startups, that could lower the cost of testing whether a particular job is worth automating. A team could spend more of its early resources on a suitable machine, access to a working site and a focused demonstration set. Faster experiments would make it easier to abandon a weak use case before investing heavily in a specialized training system.",
+        "Easier access also changes differentiation. If competitors can begin with a similar model, access alone becomes a weaker advantage. Useful task data, effective end effectors, integration with the surrounding process and the ability to keep a customer running become more important. A robot that fits the workflow can be commercially stronger than one with a more ambitious demonstration.",
+        "For integrators, the opportunity could move toward maintaining the learning process after installation. Someone must diagnose failures, collect representative examples, test revisions and decide when a new behavior is ready for production. That expertise could support an ongoing service business, particularly where product mixes and operating conditions change.",
+        "Model providers would gain a route into many applications without manufacturing every robot themselves. That could produce recurring demand for model adaptation and inference. It also creates an obligation to make versions, updates and service behavior manageable for customers whose machines are doing physical work.",
+        "This arrangement introduces dependence on a shared supplier. A robotics company considering it should understand control over its demonstration data and adapted models, how a tested version is retained, and what happens when it changes providers. Those choices influence whether a growing deployment base becomes a durable advantage for the application company.",
+        "A common model layer could also make hardware choices more flexible, but the integration work still determines the result. Different cameras, grippers, control interfaces and timing requirements must form a coherent system. Model access would support competition among robot designs only where those connections work well enough to deliver comparable tasks.",
+        "The likely effect would be uneven. Applications with accessible demonstrations and manageable failure recovery may progress faster. Work involving difficult sensing, tight contact tolerances or costly mistakes will continue to demand specialized engineering and careful validation. Lower barriers to model experimentation can coexist with high barriers to operating a reliable robot business."
+      ]
+    },
+    {
+      "heading": "Hosted inference becomes an operating decision",
+      "paragraphs": [
+        "Physical Intelligence says most of the showcased applications used cloud hosted inference and that some deployments encountered network connectivity challenges. That makes the network part of the robot's operating design.",
+        "For a prospective deployment, average response time is only one consideration. Engineers need to test delayed responses, interrupted connections and recovery, while defining what the machine does when fresh model output is unavailable. Local control and safety behavior must fit the physical task.",
+        "A useful pilot would therefore include deliberate interruptions alongside ordinary task trials. It should measure completed work, recovery effort and how consistently the robot meets the process's timing requirements. Those results can determine whether hosted inference is suitable for that environment.",
+        "Model changes need similar discipline. An updated model can improve one behavior while altering another. Retesting representative tasks and retaining a known working configuration would help an operator turn rapid model development into controlled production improvement."
+      ]
+    },
+    {
+      "heading": "What to watch next",
+      "paragraphs": [
+        "The next useful evidence will come from teams repeating these development cycles across different tasks and operating sites. Time to a first working policy matters, but so do the demonstrations needed for each subsequent improvement and the human effort required to keep work moving.",
+        "The clearest commercial signal would be applications that become easier to deploy and support as experience accumulates. That would show a shared model service doing more than accelerating prototypes: it would be helping robotics companies build repeatable businesses."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Physical Intelligence, Frontier Models for Every Robot: Announcing our API beta. October 13, 2026. Primary announcement and partner demonstrations; performance claims are company reported.",
+      "url": "https://www.pi.website/blog/api-beta"
+    },
+    {
+      "label": "Physical Intelligence, The Physical Intelligence Layer. February 24, 2026. Primary strategy article with partner authored Weave and Ultra accounts.",
+      "url": "https://www.pi.website/blog/partner"
+    },
+    {
+      "label": "Physical Intelligence, openpi repository. Current model, training and inference documentation, checked October 13, 2026.",
+      "url": "https://github.com/Physical-Intelligence/openpi"
+    },
+    {
+      "label": "Almond, official Axol product and software information. Checked October 13, 2026.",
+      "url": "https://www.almond.bot/"
+    },
+    {
+      "label": "General Instinct, Y Combinator company profile and company submitted launch description. Checked October 13, 2026.",
+      "url": "https://www.ycombinator.com/companies/general-instinct"
+    },
+    {
+      "label": "AgRobotics, official company profile. Agricultural robotics identity and Salinas location, checked October 13, 2026.",
+      "url": "https://www.linkedin.com/company/agrobotics-inc"
+    },
+    {
+      "label": "Connie Loizos, TechCrunch, Physical Intelligence research coverage. April 16, 2026. Independent reporting on the earlier research direction.",
+      "url": "https://techcrunch.com/2026/04/16/physical-intelligence-a-hot-robotics-startup-says-its-new-robot-brain-can-figure-out-tasks-it-was-never-taught/"
+    }
+  ],
+  "publishedDate": "2026-10-13",
+  "publishedAt": "2026-10-13T21:10:04-04:00",
+  "publishedLabel": "October 13, 2026",
+  "image": "/images/news/physical-intelligence-pi-api-beta.png"
+},
+
+{
+  "taxonomy": {
     "primaryIndustry": "defense-aerospace",
     "relevantIndustries": [],
     "technologies": [
