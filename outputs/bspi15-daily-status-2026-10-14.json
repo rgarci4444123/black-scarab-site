@@ -1,0 +1,579 @@
+{
+  "date": "2026-10-14",
+  "updatedAt": "2026-10-15T13:03:56.022642Z",
+  "status": "local-update-complete-lint-issues-remain",
+  "latestCompletedDate": "2026-10-14",
+  "pendingDates": [],
+  "priceDateConvention": "Exchange-local trading dates; UTC retrieval timestamps",
+  "metrics": {
+    "date": "2026-10-14",
+    "baseDate": "2026-10-01",
+    "previousDate": "2026-10-13",
+    "level": 946.4631588016011,
+    "previousLevel": 967.6403929539139,
+    "dailyReturn": -0.02188543833692702,
+    "sinceLaunch": -0.053536841198398855,
+    "benchmarks": {
+      "S&P 500": {
+        "close": 7718.94,
+        "rebased": 1006.8467152332566,
+        "dailyReturn": -0.01108328155327365,
+        "sinceLaunch": 0.006846715233256528
+      },
+      "Nasdaq Composite": {
+        "close": 26692.8691,
+        "rebased": 993.3488653969291,
+        "dailyReturn": -0.01880255249624152,
+        "sinceLaunch": -0.006651134603070874
+      }
+    },
+    "excessReturns": {
+      "S&P 500": {
+        "daily": -0.010802156783653372,
+        "sinceLaunch": -0.06038355643165538
+      },
+      "Nasdaq Composite": {
+        "daily": -0.003082885840685501,
+        "sinceLaunch": -0.04688570659532798
+      }
+    },
+    "constituents": [
+      {
+        "ticker": "6954",
+        "company": "FANUC",
+        "baseClose": 6127,
+        "previousClose": 6192,
+        "close": 6250,
+        "relative": 1.020075077525706,
+        "previousWeight": 0.06962702178517538,
+        "dailyReturn": 0.009366925064599574,
+        "contribution": 0.0006521910955329798,
+        "weight": 0.07185171925179573,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "6506",
+        "company": "Yaskawa Electric",
+        "baseClose": 4779,
+        "previousClose": 4840,
+        "close": 4712,
+        "relative": 0.985980330613099,
+        "previousWeight": 0.06977552018846735,
+        "dailyReturn": -0.026446280991735516,
+        "contribution": -0.0018453030132487217,
+        "weight": 0.06945016446715398,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "002747",
+        "company": "Estun Automation",
+        "baseClose": 28.22,
+        "previousClose": 25.88,
+        "close": 25.22,
+        "relative": 0.8936924167257264,
+        "previousWeight": 0.06318325772838662,
+        "dailyReturn": -0.025502318392581103,
+        "contribution": -0.0016113195556698263,
+        "weight": 0.0629496181592747,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "TER",
+        "company": "Teradyne",
+        "baseClose": 415.79,
+        "previousClose": 380.29,
+        "close": 359.44,
+        "relative": 0.8644748550951201,
+        "previousWeight": 0.06301379230687063,
+        "dailyReturn": -0.05482657971548033,
+        "contribution": -0.0034548307070873634,
+        "weight": 0.060891600978229064,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "6268",
+        "company": "Nabtesco",
+        "baseClose": 4975,
+        "previousClose": 4862,
+        "close": 4826,
+        "relative": 0.9700502512562814,
+        "previousWeight": 0.06733124132181954,
+        "dailyReturn": -0.00740436034553682,
+        "contribution": -0.0004985447732590507,
+        "weight": 0.06832808667619251,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "300124",
+        "company": "Inovance",
+        "baseClose": 51.9,
+        "previousClose": 50.89,
+        "close": 49.33,
+        "relative": 0.9504816955684008,
+        "previousWeight": 0.06755536500106325,
+        "dailyReturn": -0.030654352525054107,
+        "contribution": -0.0020708659737012952,
+        "weight": 0.06694972306313454,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "6861",
+        "company": "Keyence",
+        "baseClose": 81200,
+        "previousClose": 79770,
+        "close": 80330,
+        "relative": 0.9892857142857143,
+        "previousWeight": 0.06768279963748647,
+        "dailyReturn": 0.007020183026200222,
+        "contribution": 0.00047514564118079304,
+        "weight": 0.06968298801602481,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "CGNX",
+        "company": "Cognex",
+        "baseClose": 62.22,
+        "previousClose": 60.01,
+        "close": 57.27,
+        "relative": 0.9204435872709741,
+        "previousWeight": 0.06644898809792145,
+        "dailyReturn": -0.04565905682386262,
+        "contribution": -0.0030339981234511664,
+        "weight": 0.06483390848066588,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "OUST",
+        "company": "Ouster",
+        "baseClose": 40.87,
+        "previousClose": 35.33,
+        "close": 31.87,
+        "relative": 0.7797895767066308,
+        "previousWeight": 0.05955712864994034,
+        "dailyReturn": -0.09793376733654113,
+        "contribution": -0.005832653980435705,
+        "weight": 0.054926566657138555,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "HSAI",
+        "company": "Hesai",
+        "baseClose": 15.93,
+        "previousClose": 14.46,
+        "close": 13.94,
+        "relative": 0.8750784682988073,
+        "previousWeight": 0.06253847243338252,
+        "dailyReturn": -0.03596127247579539,
+        "contribution": -0.0022489630473968877,
+        "weight": 0.06163849486452418,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "ROK",
+        "company": "Rockwell Automation",
+        "baseClose": 442.45,
+        "previousClose": 432.29,
+        "close": 423.42,
+        "relative": 0.9569894903378914,
+        "previousWeight": 0.06731405319872748,
+        "dailyReturn": -0.020518633324851376,
+        "contribution": -0.001381192375194228,
+        "weight": 0.06740811701180344,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "SIE",
+        "company": "Siemens",
+        "baseClose": 271.9,
+        "previousClose": 274.5,
+        "close": 275.05,
+        "relative": 1.0115851415961752,
+        "previousWeight": 0.06955492601360351,
+        "dailyReturn": 0.002003642987249643,
+        "contribution": 0.00013936323973582444,
+        "weight": 0.07125370788350112,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "NXPI",
+        "company": "NXP Semiconductors",
+        "baseClose": 239.19,
+        "previousClose": 226.32,
+        "close": 220.83,
+        "relative": 0.9232409381663114,
+        "previousWeight": 0.06518905229836368,
+        "dailyReturn": -0.024257688229056162,
+        "contribution": -0.001581335706601343,
+        "weight": 0.06503094738065358,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "6383",
+        "company": "Daifuku",
+        "baseClose": 5832,
+        "previousClose": 5806,
+        "close": 5864,
+        "relative": 1.0054869684499315,
+        "previousWeight": 0.06858896792539097,
+        "dailyReturn": 0.009989665862900399,
+        "contribution": 0.0006851808714558485,
+        "weight": 0.07082416673059348,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "HEXA B",
+        "company": "Hexagon",
+        "baseClose": 99.02,
+        "previousClose": 104.4,
+        "close": 104,
+        "relative": 1.0502928701272471,
+        "previousWeight": 0.07263941341340084,
+        "dailyReturn": -0.003831417624521105,
+        "contribution": -0.00027831192878697875,
+        "weight": 0.0739801903793145,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      }
+    ],
+    "weightTotal": 1.0000000000000002,
+    "contributionTotal": -0.021885438336927118,
+    "reconciliationDifference": -9.71445146547012e-17,
+    "topPositive": [
+      {
+        "ticker": "6383",
+        "company": "Daifuku",
+        "baseClose": 5832,
+        "previousClose": 5806,
+        "close": 5864,
+        "relative": 1.0054869684499315,
+        "previousWeight": 0.06858896792539097,
+        "dailyReturn": 0.009989665862900399,
+        "contribution": 0.0006851808714558485,
+        "weight": 0.07082416673059348,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "6954",
+        "company": "FANUC",
+        "baseClose": 6127,
+        "previousClose": 6192,
+        "close": 6250,
+        "relative": 1.020075077525706,
+        "previousWeight": 0.06962702178517538,
+        "dailyReturn": 0.009366925064599574,
+        "contribution": 0.0006521910955329798,
+        "weight": 0.07185171925179573,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "6861",
+        "company": "Keyence",
+        "baseClose": 81200,
+        "previousClose": 79770,
+        "close": 80330,
+        "relative": 0.9892857142857143,
+        "previousWeight": 0.06768279963748647,
+        "dailyReturn": 0.007020183026200222,
+        "contribution": 0.00047514564118079304,
+        "weight": 0.06968298801602481,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      }
+    ],
+    "topNegative": [
+      {
+        "ticker": "OUST",
+        "company": "Ouster",
+        "baseClose": 40.87,
+        "previousClose": 35.33,
+        "close": 31.87,
+        "relative": 0.7797895767066308,
+        "previousWeight": 0.05955712864994034,
+        "dailyReturn": -0.09793376733654113,
+        "contribution": -0.005832653980435705,
+        "weight": 0.054926566657138555,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "TER",
+        "company": "Teradyne",
+        "baseClose": 415.79,
+        "previousClose": 380.29,
+        "close": 359.44,
+        "relative": 0.8644748550951201,
+        "previousWeight": 0.06301379230687063,
+        "dailyReturn": -0.05482657971548033,
+        "contribution": -0.0034548307070873634,
+        "weight": 0.060891600978229064,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      },
+      {
+        "ticker": "CGNX",
+        "company": "Cognex",
+        "baseClose": 62.22,
+        "previousClose": 60.01,
+        "close": 57.27,
+        "relative": 0.9204435872709741,
+        "previousWeight": 0.06644898809792145,
+        "dailyReturn": -0.04565905682386262,
+        "contribution": -0.0030339981234511664,
+        "weight": 0.06483390848066588,
+        "sourceDate": "2026-10-14",
+        "carriedForward": false
+      }
+    ],
+    "receiptPath": "data/bspi15/raw/marketstack/2026-10-15T11-44-05-513Z",
+    "auditStatus": "passed",
+    "marketHolidays": [],
+    "carriedForward": [],
+    "approvedProviderMicExceptions": [
+      {
+        "date": "2026-10-14",
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "sourceName": "Ouster Inc - Class A",
+        "sourceCurrency": "USD",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS",
+        "sourceApi": "v2",
+        "exceptionId": "ouster-marketstack-legacy-nyse-tag",
+        "approvalRecord": "data/bspi15/provider-mic-exceptions.json",
+        "status": "approved-provider-MIC-exception"
+      }
+    ],
+    "corporateActions": {
+      "providerDividends": 0,
+      "providerSplitFlags": 0,
+      "relevantEffectiveDateEventsIdentified": [],
+      "review": "Marketstack split/dividend fields, unchanged symbols and MICs, adjusted/raw-close comparisons, price changes and date-specific action searches."
+    }
+  },
+  "audit": {
+    "status": "passed-with-user-approved-OUST-provider-MIC-exception",
+    "scriptStatus": "passed",
+    "fetchedAt": "2026-10-15T11:44:05.513Z",
+    "counts": {
+      "instruments": 17,
+      "sourceObservations": 306,
+      "comparedObservations": 138,
+      "matches": 138,
+      "mismatches": 0,
+      "identityErrors": 0,
+      "approvedProviderMicObservations": 20,
+      "missingSourceObservations": 0,
+      "verifiedClosureObservations": 15,
+      "requiredDateObservations": 17,
+      "missingRequiredObservations": 0,
+      "invalidObservations": 0,
+      "duplicateObservations": 0,
+      "paginationErrors": 0
+    },
+    "receiptPath": "data/bspi15/raw/marketstack/2026-10-15T11-44-05-513Z",
+    "rawReceipts": [
+      "data/bspi15/raw/marketstack/2026-10-15T11-44-05-513Z/constituents-v2.json",
+      "data/bspi15/raw/marketstack/2026-10-15T11-44-05-513Z/benchmarks-v1.json"
+    ],
+    "unresolvedIssues": [],
+    "approvedProviderMicExceptions": [
+      {
+        "date": "2026-10-14",
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "sourceName": "Ouster Inc - Class A",
+        "sourceCurrency": "USD",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS",
+        "sourceApi": "v2",
+        "exceptionId": "ouster-marketstack-legacy-nyse-tag",
+        "approvalRecord": "data/bspi15/provider-mic-exceptions.json",
+        "status": "approved-provider-MIC-exception"
+      }
+    ],
+    "authorizationRecord": "data/bspi15/provider-mic-exceptions.json"
+  },
+  "calendarReview": [
+    {
+      "mic": "XTKS",
+      "timeZone": "Asia/Tokyo",
+      "source": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "date": "2026-10-14",
+      "status": "open"
+    },
+    {
+      "mic": "XSHE",
+      "timeZone": "Asia/Shanghai",
+      "source": "https://investor.szse.cn/disclosure/notice/general/t20260917_622911.html",
+      "date": "2026-10-14",
+      "status": "open"
+    },
+    {
+      "mic": "XNAS",
+      "timeZone": "America/New_York",
+      "source": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+      "date": "2026-10-14",
+      "status": "open"
+    },
+    {
+      "mic": "XNYS",
+      "timeZone": "America/New_York",
+      "source": "https://www.nyse.com/trade/hours-calendars",
+      "date": "2026-10-14",
+      "status": "open"
+    },
+    {
+      "mic": "XETR",
+      "timeZone": "Europe/Berlin",
+      "source": "https://cashmarket.deutsche-boerse.com/cash-en/trading/trading-calendar-and-trading-hours",
+      "date": "2026-10-14",
+      "status": "open"
+    },
+    {
+      "mic": "XSTO",
+      "timeZone": "Europe/Stockholm",
+      "source": "https://www.nasdaq.com/european-market-activity/trading-hours",
+      "date": "2026-10-14",
+      "status": "open"
+    }
+  ],
+  "marketHolidays": [],
+  "carriedForward": [],
+  "cumulativeReview": {
+    "workbook": "/Users/rodolfogarcia/Desktop/black-scarab-site/outputs/bspi15-daily-review.xlsx",
+    "dates": 10,
+    "firstDate": "2026-10-01",
+    "lastDate": "2026-10-14",
+    "prices": 170,
+    "contributionRows": 150,
+    "sheets": [
+      "Summary",
+      "Prices",
+      "Returns and Contributions",
+      "Source Audit",
+      "Corporate Actions"
+    ],
+    "formulaRecalculation": "passed",
+    "websiteReconciliation": "passed",
+    "inputChangeAndAuditFailure": "passed",
+    "historicalInputs": "preserved"
+  },
+  "checks": {
+    "priorCanonicalDatesAndPrices": "preserved; one complete row appended",
+    "priorSourceReceiptsAndLedger": "all nine earlier reviewed dates deep-equality verified",
+    "weightTotal": 1.0000000000000002,
+    "contributionReconciliationDifference": -9.71445146547012e-17,
+    "workbookFormulaErrors": 0,
+    "workbookInputChangeAndAuditFailure": "passed",
+    "providerMicAuthorizationRegressionTests": {
+      "lastRun": "2026-10-14",
+      "result": "11 passed; unchanged audit code"
+    },
+    "typecheck": "passed",
+    "targetedLint": "passed for adjusted performance chart",
+    "repositoryLint": {
+      "status": "failed-preexisting",
+      "errors": 7,
+      "warnings": 8,
+      "errorPaths": [
+        "output/news/volvo-waabi-warp-customer-operations/headless-qa.cjs",
+        "output/x/plus-one/render.cjs"
+      ]
+    },
+    "build": "passed after chart spacing adjustment",
+    "desktopAndMobile": [
+      {
+        "viewport": "desktop",
+        "date": "2026-10-14",
+        "levels": "verified",
+        "weights": 15,
+        "holdings": "verified",
+        "targetAllocation": "unchanged",
+        "horizontalOverflow": false,
+        "pageErrors": [],
+        "tradingObservations": 10,
+        "visibleAxisDates": [
+          "Oct 1",
+          "Oct 2",
+          "Oct 5",
+          "Oct 6",
+          "Oct 7",
+          "Oct 8",
+          "Oct 9",
+          "Oct 12",
+          "Oct 13",
+          "Oct 14"
+        ],
+        "actualCloseHover": "10 dates verified",
+        "detailsStrip": "removed",
+        "seriesToggle": "verified"
+      },
+      {
+        "viewport": "mobile",
+        "date": "2026-10-14",
+        "levels": "verified",
+        "weights": 15,
+        "holdings": "verified",
+        "targetAllocation": "unchanged",
+        "horizontalOverflow": false,
+        "pageErrors": [],
+        "tradingObservations": 10,
+        "visibleAxisDates": [
+          "Oct 1",
+          "Oct 5",
+          "Oct 8",
+          "Oct 12",
+          "Oct 14"
+        ],
+        "actualCloseHover": "10 dates verified",
+        "detailsStrip": "removed",
+        "seriesToggle": "verified"
+      }
+    ],
+    "dateLabelSpacing": "verified no overlapping labels on desktop or mobile",
+    "holdingsCsv": "passed",
+    "targetAllocation": "unchanged"
+  },
+  "reviewFiles": {
+    "workbook": "outputs/bspi15-daily-review.xlsx",
+    "metrics": "outputs/bspi15-daily-metrics-2026-10-14.json",
+    "sourceAudit": "outputs/bspi15-work/2026-10-14/audit.json",
+    "qaDirectory": "outputs/bspi15-work/2026-10-14"
+  },
+  "filesChanged": [
+    "data/bspi15/daily-closes.csv",
+    "data/bspi15/marketstack-audit-latest.json",
+    "data/bspi15/marketstack-observations.csv",
+    "data/bspi15/raw/marketstack/2026-10-15T11-44-05-513Z/constituents-v2.json",
+    "data/bspi15/raw/marketstack/2026-10-15T11-44-05-513Z/benchmarks-v1.json",
+    "data/bspi15/review-history.json",
+    "outputs/bspi15-daily-review.xlsx",
+    "outputs/bspi15-daily-metrics-2026-10-14.json",
+    "outputs/bspi15-daily-status-2026-10-14.json",
+    "outputs/bspi15-work/2026-10-14/audit.json",
+    "public/data/bspi15-performance.json",
+    "app/indices/physical-ai-adoption-15/performance-chart.tsx"
+  ],
+  "presentationChange": "Chart date labels now use evenly spaced indices so the final two mobile date labels do not overlap. Every observation and hover value is retained.",
+  "previewUrl": "http://127.0.0.1:3108/indices/physical-ai-adoption-15#performance",
+  "requiredUserAction": null,
+  "deployed": false,
+  "committed": false,
+  "pushed": false
+}

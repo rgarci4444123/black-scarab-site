@@ -67,7 +67,12 @@ export default function PerformanceChart({
   const height = width < 560 ? 286 : 380;
   const plotWidth = width - padding.left - padding.right;
   const plotHeight = height - padding.top - padding.bottom;
-  const dateLabelStep = Math.max(1, Math.ceil((observations.length - 1) / Math.max(1, Math.floor(plotWidth / 45))));
+  const dateLabelCount = Math.min(observations.length, Math.max(2, Math.floor(plotWidth / 60) + 1));
+  const dateLabelIndices = new Set(
+    Array.from({ length: dateLabelCount }, (_, index) =>
+      Math.round((index * (observations.length - 1)) / Math.max(1, dateLabelCount - 1)),
+    ),
+  );
   const latest = observations[observations.length - 1];
   const first = observations[0];
 
@@ -258,7 +263,7 @@ export default function PerformanceChart({
           </g>
 
           {observations.map((observation, index) => {
-            const show = index === 0 || index === observations.length - 1 || index % dateLabelStep === 0;
+            const show = dateLabelIndices.has(index);
             return show ? (
               <text
                 key={observation.date}
