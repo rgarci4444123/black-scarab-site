@@ -36,6 +36,154 @@ export const newsUpdates: NewsUpdate[] = [
 {
   "taxonomy": {
     "primaryIndustry": "cross-industry",
+    "relevantIndustries": [
+      "retail"
+    ],
+    "technologies": [
+      "sensors",
+      "spatial-ai",
+      "simulation",
+      "robot-training-data"
+    ],
+    "applications": [
+      "robot-training",
+      "simulation-validation"
+    ]
+  },
+  slug: "hesai-kosmo-spatial-data-robot-training",
+  "title": "Hesai launches Kosmo to build a business around reusable 3D worlds",
+  "summary": "The lidar supplier’s camera and cloud platform put scene capture at the start of a larger commercial proposition: environments that robot developers can keep using.",
+  "category": "Robot training",
+  "publishedDate": "2026-10-15",
+  "publishedAt": "2026-10-15T09:53:11-04:00",
+  "publishedLabel": "October 15, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/hesai-kosmo-spatial-data-robot-training.png",
+  "imageAlt": "An overhead interior with shelves and a counter gradually resolves into fuchsia and white spatial points on a dark blue background.",
+  "imageCaption": "Original Black Scarab editorial illustration of a physical space becoming reusable 3D data.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "The October 14 launch pairs Kosmo One with Kosmo World.",
+    "Hesai announced strategic partnerships with Galbot and Dexmal.",
+    "Hesai plans systems sales and spatial data services."
+  ],
+  "sections": [
+    {
+      "heading": "From preview to formal launch",
+      "paragraphs": [
+        "Hesai formally launched Kosmo on October 14, combining a spatial camera and cloud platform to turn physical spaces into reusable environments for robot training, world models and creative production.",
+        "The commercial ambition is to become part of how developers obtain and prepare the places where robots learn. A good capture could be reused across experiments, camera viewpoints and training runs, giving the same environment value beyond its first scan.",
+        "Kosmo has been taking shape in public for months. Hesai previewed the platform at its April 17 Technology Open Day. Its July WAIC update already described a combination of lidar, imaging, reconstruction algorithms, digital assets and cloud services, with an official launch planned for the second half of 2026.",
+        "Customer engagement also preceded this week’s event. In its interim results, Hesai reported prototype deliveries in July and orders from humanoid robotics companies including Galbot. The October announcement moves that earlier programme into its formal launch phase.",
+        "Independent reporting by the South China Morning Post places the launch within Hesai’s effort to broaden its business beyond vehicle sensors. That is the strategic context: an established supplier of perception hardware wants a larger role in the development workflow around intelligent machines."
+      ]
+    },
+    {
+      "heading": "What comes out of the camera",
+      "paragraphs": [
+        "Hesai says Kosmo One synchronizes lidar, imaging and inertial measurements. Kosmo World produces Gaussian splats, meshes and depth data. The company specifies 8K capture and a maximum 6K export resolution.",
+        "Those outputs have different jobs. A mesh describes surfaces through connected geometric elements. Depth data records distance from a viewpoint. Gaussian splats represent a scene with many overlapping spatial primitives that collectively reproduce its appearance.",
+        "The original Gaussian splatting research, published at SIGGRAPH 2023, focused on rendering captured scenes from new viewpoints at interactive speeds. That is useful when a developer wants to generate images resembling what a robot’s camera would see as it moves through a place.",
+        "Consider a hypothetical warehouse aisle. Its shelf positions, floor space and visual clutter all affect what a robot encounters. Capturing the aisle could give a development team a more representative starting environment and reduce the effort of recreating it by hand. The useful output is a scene that can enter the team’s existing tools and survive repeated edits."
+      ]
+    },
+    {
+      "heading": "The step from a scene to a training task",
+      "paragraphs": [
+        "Appearance and geometry are only part of a robot’s environment. A training task also needs to define what can move, where contact occurs and what counts as success. For a manipulation policy, the behaviour of an object can matter as much as its outline.",
+        "Isaac Sim’s documentation makes the distinction concrete. An imported object needs rigid body properties to respond to physics and collision properties to interact with other objects. Mass, inertia, centre of mass and surface properties can be configured separately.",
+        "Imagine two cups that look identical, one empty and one full. A visually convincing reconstruction can help a robot recognize the cup and locate its rim. Learning how firmly to grasp it, how quickly to accelerate it and how to avoid spilling requires an adequate representation of the task and its physical conditions.",
+        "This creates a practical way to evaluate Kosmo: measure the engineering time from capture to a usable training run. Count scene cleanup, object separation, physical configuration and integration alongside scanning and reconstruction. Then test whether the resulting policy performs better on the real task.",
+        "That evaluation also clarifies where the product earns its keep. A team may value faster environment preparation even when it retains its own simulator, physics models and learning system. Kosmo’s commercial role can be a useful part of that chain without owning every stage."
+      ]
+    },
+    {
+      "heading": "Reading the Dairy Queen result",
+      "paragraphs": [
+        "For a Dairy Queen example, Hesai reports roughly 300 hours of manual modelling replaced by 15 minutes of scanning and reconstruction, alongside 99% task success for a Sharpa robot.",
+        "The timing comparison concerns preparation of the digital training environment. Developers evaluating a similar workflow should measure the full path through policy training, testing and operation before applying that saving to their own deployment budgets.",
+        "Hesai’s earlier interim disclosure gives the store example useful boundaries. It described a specified ice cream preparation process under predefined conditions. People remained responsible for replenishment, cleaning, maintenance, safety supervision and exceptions.",
+        "For a prospective user, the revealing test would keep the robot and training procedure comparable while changing how the environment is prepared. Record completion rates, human interventions and recovery after changes in object placement or operating conditions. Those measures help establish whether faster scene creation also produces more dependable work.",
+        "A successful result could matter well beyond one store. If teams can recreate new workspaces with less manual effort, they can afford to test more layouts and revisit sites more often. The gain comes from shortening repeated preparation work across many development cycles."
+      ]
+    },
+    {
+      "heading": "A creative workflow already has a concrete example",
+      "paragraphs": [
+        "Artist Dylan Sisson offers a firsthand account of the capture pipeline in use. After receiving a Kosmo camera to test, he scanned Pixar’s plaza and brought the capture into Houdini’s Solaris environment through USD, then rendered it with RenderMan.",
+        "His account describes working directly with the splat data, changing scale, position and opacity and developing a painterly treatment. It demonstrates a specific route from a captured place into established creative software.",
+        "That is a useful commercial clue. Reusable spatial assets can serve different customers with different definitions of quality. An artist may care most about appearance, editing and rendering. A robotics team may prioritize geometry, repeatable observations and task behaviour. The same capture technology can address both, while each workflow demands its own validation.",
+        "For Hesai, that means adoption depends partly on what happens after export. A compelling scan becomes more valuable when customers can work with it using tools they already understand. Sisson’s example shows that handoff in a concrete creative setting."
+      ]
+    },
+    {
+      "heading": "Two ways to earn from the same environment",
+      "paragraphs": [
+        "Hesai describes two business models: integrated hardware and software, and spatial data services for AI developers.",
+        "The first sells customers the means to capture and process their own spaces. The second sells useful output, potentially to teams that prefer to obtain environments rather than organize capture themselves. Each route puts a different burden on the supplier.",
+        "Hardware and software adoption depends on ease of operation, processing quality and integration. A data service depends on whether its collection covers environments that customers actually need, whether assets can be reused on acceptable terms and how much correction is required before training begins.",
+        "The announced partners offer relevant development perspectives. Galbot describes a business built around embodied models and robots for operational settings. Dexmal publishes DM0.5, a vision language action model for robot control, with training, inference and evaluation resources in its OpenDM repository.",
+        "For such developers, more environments are useful when they add meaningful variation. A collection of nearly identical rooms may contribute less than a smaller set of spaces that exposes different layouts, obstacles and difficult interactions. Data volume and training value need to be assessed together."
+      ]
+    },
+    {
+      "heading": "What would make Kosmo a repeat purchase",
+      "paragraphs": [
+        "Black Scarab’s assessment is that Kosmo’s opportunity lies in reducing the repeated work between observing a place and using it for development. Scene capture is the entry point; continued use of the resulting assets is the stronger commercial signal.",
+        "Watch for customers adding new environments, reusing earlier captures and reporting shorter preparation cycles. For robotics, the decisive evidence is improved performance across changed or unfamiliar conditions, measured alongside the cost of producing usable training material.",
+        "Those results would give Hesai a reason to stay in the workflow after the camera sale. They would also show whether a library of captured spaces can become a durable business as robot developers seek more varied places to practise."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Hesai: October 14 Kosmo launch announcement",
+      "url": "https://www.hesaitech.com/9974-2/"
+    },
+    {
+      "label": "Hesai: April Technology Open Day preview",
+      "url": "https://www.hesaitech.com/hesai-unveils-picasso-6d-full-color-spad-soc-next-gen-etx-and-innovations-in-spatial-intelligence-and-physical-ai/"
+    },
+    {
+      "label": "Hesai: July WAIC platform update",
+      "url": "https://www.hesaitech.com/hesai-showcases-kosmo-spatial-intelligence-platform-and-robotic-lidar-at-waic-2026-underscoring-its-physical-ai-vision/"
+    },
+    {
+      "label": "Hesai: interim results and commercial pilot definitions, SEC filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/1861737/000110465926098050/tm2623467d1_ex99-2.htm"
+    },
+    {
+      "label": "South China Morning Post: Hesai’s camera launch and business expansion",
+      "url": "https://www.scmp.com/business/china-evs/article/3370897/hesai-launches-3d-spatial-camera-chinese-lidar-maker-expands-physical-ai"
+    },
+    {
+      "label": "Kerbl and colleagues: 3D Gaussian Splatting research",
+      "url": "https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/"
+    },
+    {
+      "label": "Isaac Sim documentation: adding objects and physics properties",
+      "url": "https://docs.isaacsim.omniverse.nvidia.com/latest/core_api_tutorials/tutorial_core_adding_props.html"
+    },
+    {
+      "label": "Dylan Sisson: A Brush with Reality",
+      "url": "https://www.dylansisson.com/stories/kosmo/"
+    },
+    {
+      "label": "Galbot: company and embodied robotics overview",
+      "url": "https://www.galbot.com/about/"
+    },
+    {
+      "label": "Dexmal: OpenDM and the DM0.5 robot control model",
+      "url": "https://github.com/dexmal/opendm"
+    }
+  ]
+},
+{
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
     "relevantIndustries": [],
     "technologies": [
       "embodied-ai",
