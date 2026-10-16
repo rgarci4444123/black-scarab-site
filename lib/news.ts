@@ -35,6 +35,154 @@ export type NewsUpdate = {
 export const newsUpdates: NewsUpdate[] = [
 {
   "taxonomy": {
+    "primaryIndustry": "warehousing-logistics",
+    "relevantIndustries": [
+      "manufacturing"
+    ],
+    "technologies": [
+      "humanoid-robotics"
+    ],
+    "applications": [
+      "material-handling"
+    ]
+  },
+  "slug": "agility-nyobolt-digit-5-battery-robot-labor",
+  "title": "Agility names Nyobolt as the battery supplier behind Digit 5’s longer working day",
+  "summary": "Shorter charging stops could change fleet size, cost per productive hour and the tasks robots can take over. The larger labor impact depends on what happens during the rest of the shift.",
+  "category": "Humanoid robotics",
+  "publishedDate": "2026-10-16",
+  "publishedAt": "2026-10-16T13:38:04.541Z",
+  "publishedLabel": "October 16, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/agility-nyobolt-digit-5-battery-robot-labor.png",
+  "imageAlt": "Painted humanoid silhouettes move from a blue charging alcove into sweeping orange strokes and a bright sunrise.",
+  "imageCaption": "Original Black Scarab editorial illustration of shorter charging stops extending a robot’s working window.",
+  "readingTime": "9 min read",
+  "keyPoints": [
+    "Agility named Nyobolt as Digit 5’s battery technology supplier on October 15.",
+    "Agility targets 90 minutes of work per nine minute charge and more than 20 working hours a day.",
+    "Early access is expected in the first half of 2027, with broader availability to follow."
+  ],
+  "sections": [
+    {
+      "heading": "The battery moves into the business case",
+      "paragraphs": [
+        "Agility Robotics named Nyobolt on October 15 as the battery technology supplier for Digit 5, connecting a specific industrial partner to its plan for a humanoid that can work more than 20 hours a day.",
+        "Agility’s proposed cycle is 90 minutes of work followed by nine minutes of charging. It expects early access in the first half of 2027, followed by increasing availability over the next six to nine months.",
+        "Digit 5 was unveiled on September 15. This week’s news identifies the battery supplier behind that earlier product announcement. The operating figures remain Agility’s targets for the coming generation, rather than independently measured customer results.",
+        "The ramifications could be substantial. Shorter charging breaks can make the same machine available for more assignments, spread its fixed costs over more work and reduce the reserve capacity needed to cover charging. But the case for replacing human labor depends on reliable task completion during those extra hours."
+      ]
+    },
+    {
+      "heading": "What nine minutes actually changes",
+      "paragraphs": [
+        "A repeating cycle of 90 minutes operating and nine minutes charging contains 99 minutes in total. Its operating share is about 90.9%. Spread mechanically across 24 hours, that is roughly 21.8 hours outside charging.",
+        "This is Black Scarab’s hypothetical arithmetic. It assumes uninterrupted repetition of the stated cycle and excludes travel to the dock, charger queues, maintenance, recovery and other losses. It helps explain the more than 20 hour target without establishing a customer’s usable output.",
+        "Agility compares the planned 10:1 ratio with Digit 4’s 2:1. In the same simplified model, the operating share rises from 66.7% to 90.9%, an increase of about 36%. The ratio becomes five times larger; the available operating time does not.",
+        "Over an eight hour window, those average shares imply about 5.3 and 7.3 operating hours respectively. Actual shifts depend on the battery’s starting charge and when charging falls. The gain could be close to two additional hours in this illustration, provided the task and everything around it remain ready.",
+        "Fleet size is the other side of the calculation. Imagine a hypothetical operation that needs 16 robot operating hours per day. Dividing by the model’s 16 and 21.8 hours per robot gives 1.00 and about 0.73 robot equivalents. That is roughly 27% less theoretical capacity required for the same workload, before rounding to whole machines, peak demand and backup coverage.",
+        "This does not mean every customer can remove a robot. A small installation cannot buy three quarters of a machine, and a workflow that must never stop still needs coverage. Across a larger fleet, however, staggered charging could let fewer machines cover the same assignments or let the existing fleet absorb more demand."
+      ]
+    },
+    {
+      "heading": "Energy is one constraint among several",
+      "paragraphs": [
+        "Nyobolt describes a system combining proprietary anode materials, engineered cells, pack hardware, electronics and battery management. Its technology explanation emphasizes fast lithium ion transport and the integration needed to deliver high power.",
+        "That matters because fast charging involves the cell and the complete power system. The practical evaluation has to cover repeated charging under the loads, temperatures and service life that a particular installation requires.",
+        "Nyobolt’s broader robotics marketing discusses charging during existing pauses and avoiding battery swaps. Those statements describe its wider proposition. They should not be read as proof that Digit 5 can deliver every operating or durability claim advertised elsewhere in the supplier’s portfolio.",
+        "For the robot customer, energy availability sits alongside task speed and reliability. A useful way to think about output is operating time multiplied by successful completions per operating hour. If a robot waits for containers, moves too slowly for the line or repeatedly needs help with difficult objects, more battery availability cannot remove those constraints.",
+        "The same distinction applies to safety stops and recovery. A machine that pauses correctly around a person may be behaving as designed, while still affecting throughput. The installation must accommodate safe behavior in its production plan instead of treating every hour outside charging as a fully productive hour.",
+        "Agility’s product page lists a 23 kilogram payload, 2.2 meter reach and interchangeable grippers. It also describes fleet software intended to integrate with compatible warehouse and manufacturing systems. These manufacturer specifications help define possible assignments. They do not establish the cycle time or intervention rate for a customer’s particular task."
+      ]
+    },
+    {
+      "heading": "The charger becomes part of the workflow",
+      "paragraphs": [
+        "Consider two hypothetical facilities. One has natural pauses between batches. The other needs containers delivered at a steady pace. The first could fit charging into existing idle time; the second may need overlapping coverage so a charging stop does not become a production stop.",
+        "A nine minute session is also only one part of the trip. Dock location, travel time, charger availability and the order in which robots leave their stations all matter. Sending several machines to the same charger together can turn a short recharge into a queue.",
+        "That creates work for the wider robotics industry. Integrators have to connect charging schedules with task dispatch and material flow. Service providers have to keep chargers, batteries and robots available. A better battery can make automation easier to justify while increasing the value of the systems that turn hardware availability into consistent output.",
+        "The commercial benefit should therefore appear in the whole process: fewer uncovered intervals, fewer interventions and more acceptable work delivered on schedule. The battery supplier removes part of the downtime problem; the installation still has to manage the rest."
+      ]
+    },
+    {
+      "heading": "Cost per productive hour is the useful comparison",
+      "paragraphs": [
+        "Longer operating windows can spread fixed costs across more work. For a buyer, the relevant calculation is the cost of the complete installation over a defined period divided by its useful operating hours, with cost per acceptable completed task as the stronger comparison when cycle times differ.",
+        "The numerator includes the robot purchase or service agreement, allocated integration and commissioning costs, software, chargers and electrical installation, maintenance, battery replacement, energy and human supervision. The denominator should reflect the representative workload and the time lost to waiting, faults and recovery.",
+        "If total cost were unchanged and usable hours rose from 16 to 21.8, fixed cost per operating hour would fall by roughly 27% in our simplified example. This is a sensitivity calculation, not a Digit 5 price or savings estimate. Higher equipment or support costs, battery wear and extra supervision could absorb part of the benefit.",
+        "Demand matters just as much. A machine in a busy operation running several shifts has more opportunities to use an extended operating window than one assigned to a short daily production run. Extra availability earns nothing when there is no additional work or when the next station cannot accept it.",
+        "For adoption, the important threshold is whether a dependable installation becomes economically attractive for a specific workflow. Crossing that threshold could move some projects from trials to repeated purchases. Better charging alone does not establish where that threshold sits."
+      ]
+    },
+    {
+      "heading": "Replacing a task is different from replacing a job",
+      "paragraphs": [
+        "The first labor substitution decision is usually concrete: can a machine perform a defined assignment at the required pace and quality? Moving standardized containers between two stations is a narrower proposition than taking responsibility for everything a warehouse worker does.",
+        "A person may also resolve damaged packaging, find missing stock, clear interruptions, coordinate with colleagues or switch assignments when demand changes. Removing a repetitive handling task can free time within that job without eliminating the need for the person. Whole job substitution requires the remaining duties to be automated, reassigned or removed as well.",
+        "The distinction is consistent with the task framework developed by economists Daron Acemoglu and Pascual Restrepo. Their research separates automation that displaces labor from the creation of new tasks that can increase demand for people. It provides a way to analyze competing effects, not a forecast of Digit 5’s employment impact.",
+        "Longer robot availability could make the substitution of suitable tasks more attractive across evening and overnight shifts. It might also change staffing indirectly: a company could expand output without hiring as many additional handlers, reduce overtime, leave vacancies unfilled or consolidate repetitive assignments. These are possible business decisions, not reported outcomes of this partnership.",
+        "Supervision is central to the result. If a person must stay beside each robot and frequently intervene, much of the labor cost remains. If a trained team can support multiple machines with infrequent recovery, more human time could be released. That relationship must be measured during realistic operation, including difficult periods."
+      ]
+    },
+    {
+      "heading": "Labor shortages and displacement can coexist",
+      "paragraphs": [
+        "At a facility struggling to fill a repetitive or physically demanding assignment, automation could cover a vacancy and allow existing employees to focus elsewhere. At a fully staffed facility with stable demand, the same capability could reduce the number of hours purchased from workers.",
+        "Those outcomes can coexist across customers, or appear at different stages of one rollout. A technology sold as a response to hiring difficulty can later influence staffing levels once it becomes dependable and cheaper to operate. Neither the supplier’s workforce language nor a longer battery cycle settles that question.",
+        "The transition also has a timing problem. Robot support, maintenance and integration may create or expand other work, but those roles can require different skills or sit with an outside provider. A displaced worker does not automatically receive one of them. Training time, access to the new roles and the allocation of productivity gains affect how employees experience the change.",
+        "An operator evaluating deployment should therefore track both production and human work: acceptable output, intervention minutes, overtime, unfilled shifts, reassigned duties and actual staffing changes. That makes it possible to distinguish relieving a shortage, expanding capacity and eliminating paid hours, rather than collapsing them into a single labor savings claim."
+      ]
+    },
+    {
+      "heading": "What would make the promise commercially convincing",
+      "paragraphs": [
+        "The first milestone is early access machines reaching customers on the planned timetable. The next is repeated operation across representative shifts, with charging, task performance, recovery and maintenance measured together. A clean demonstration cannot establish that pattern.",
+        "Watch for paid follow on deployments, customers extending use to additional shifts and consistent performance as batteries age. Also watch the labor required around the machines. A fleet that completes more acceptable work with manageable support is a stronger adoption signal than a large advertised operating window.",
+        "Black Scarab’s assessment is that Nyobolt could help Agility reduce an important obstacle to economical humanoid use: too much time away from the job. If that improvement survives the full installation, it could widen the set of tasks worth automating and increase pressure to reorganize human work. The scale of substitution will be decided by reliable output, total cost and customer choices as the 2027 rollout develops."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Agility Robotics, October 15, 2026 supplier announcement.",
+      "url": "https://www.agilityrobotics.com/content/agility-robotics-selects-nyobolt-as-its-ultra-fast-charging-battery-technology-partner-for-digit-5"
+    },
+    {
+      "label": "Agility Robotics, September 15, 2026 Digit 5 unveiling.",
+      "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale"
+    },
+    {
+      "label": "Agility Robotics, Digit 5 product page, accessed October 16, 2026.",
+      "url": "https://www.agilityrobotics.com/solutions/digit-5"
+    },
+    {
+      "label": "Nyobolt, technology overview, accessed October 16, 2026.",
+      "url": "https://nyobolt.com/technology/"
+    },
+    {
+      "label": "Nyobolt, robotics application page, accessed October 16, 2026.",
+      "url": "https://nyobolt.com/autonomous-mobile-robots-humanoids/"
+    },
+    {
+      "label": "Acemoglu and Restrepo, Automation and New Tasks, Journal of Economic Perspectives, 2019.",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/jep.33.2.3"
+    },
+    {
+      "label": "GeekWire, September 15 Digit 5 launch reporting.",
+      "url": "https://www.geekwire.com/2026/agilitys-new-digit-5-robot-lifts-50-pounds-works-20-hours-a-day-and-operates-alongside-people/"
+    },
+    {
+      "label": "Unite.AI, October 15 supplier announcement coverage.",
+      "url": "https://www.unite.ai/nyobolt-batteries-to-power-agility-robotics-digit-5-humanoid-robot/"
+    }
+  ]
+},
+
+{
+  "taxonomy": {
     "primaryIndustry": "cross-industry",
     "relevantIndustries": [
       "retail"
