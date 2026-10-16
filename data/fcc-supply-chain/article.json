@@ -13,6 +13,37 @@
     ]
   },
   {
+    "id": "already-selling",
+    "heading": "Already selling a robot? Check the existing authorization",
+    "paragraphs": [
+      "An existing FCC authorization can let a company keep selling an established model after a new restriction takes effect. What matters is the authorization covering that model and configuration. A first sale, preorder or product announcement does not establish that protection.",
+      "The FCC’s July robotics guidance allows continued imports, marketing and sales of existing models that already received equipment authorization. The separate component rule effective October 13, 2026 also preserves previously authorized equipment under its existing authorization. This is often called being “grandfathered,” but it does not give the company permission to launch any future model."
+    ],
+    "callouts": [
+      {
+        "title": "Keep selling the authorized model",
+        "body": "The protection concerns the existing model, not just units already sitting in a warehouse. Confirm that additional units match the authorized configuration and remain within its authorization."
+      },
+      {
+        "title": "Support robots customers already own",
+        "body": "The robotics guidance permits continued use of already authorized devices, repairs and replacement with identical parts. A replacement that changes the design needs a separate assessment."
+      },
+      {
+        "title": "Check an application already in progress",
+        "body": "An application filed before October 13, 2026 and still pending on that date is exempt from the new component prohibition. If it is later amended to add, substitute or change the relevant electronic hardware, that amendment is treated as a new application. A pending application is not permission to sell."
+      },
+      {
+        "title": "Review a new version before shipping it",
+        "body": "An earlier approval does not automatically cover a new model, different electronics or a changed producer or manufacturing arrangement. Have the lab or certification body determine whether the change remains within the existing authorization, needs a permitted modification or requires a new authorization. A change that makes equipment covered cannot rely on the old approval."
+      }
+    ],
+    "sourceRefs": [
+      2,
+      3,
+      5
+    ]
+  },
+  {
     "id": "why-this-is-happening",
     "heading": "How a telecom security policy reached robotics",
     "paragraphs": [

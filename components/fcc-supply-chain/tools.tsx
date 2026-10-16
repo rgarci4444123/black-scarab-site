@@ -100,11 +100,6 @@ function LaunchCheck() {
       <p>Certification produces an FCC ID. Supplier’s Declaration of Conformity, or SDoC, is another route in which the responsible party establishes compliance and keeps supporting records. Both routes are subject to Covered List restrictions; an SDoC device may have no FCC ID.</p>
       <a href="https://apps.fcc.gov/oetcf/eas/reports/GenericSearch.cfm" target="_blank" rel="noreferrer">Find an FCC grant and its conditions ↗</a>
     </details>
-    <details className={styles.detail}><summary>An existing approval or a design change</summary>
-      <p>The October component rule does not affect previously authorized equipment. Applications pending on October 13, 2026 are exempt unless later amended to add, replace or change the relevant hardware.</p>
-      <p>Have your lab or certification body review a supplier, part or production change before relying on an earlier approval. A change can make the equipment covered. The robotics guidance also addresses existing models, repairs and identical replacement parts.</p>
-      <a href="https://www.fcc.gov/covered-list-faqs-robots-inverters" target="_blank" rel="noreferrer">Check the FCC guidance on existing models ↗</a>
-    </details>
     <details className={styles.detail}><summary>Selling through an online marketplace</summary>
       <p>Give the marketplace the model and approval information for the configuration you will ship. The FCC ID display requirement applies to certified devices, subject to exceptions.</p>
       <p>March 1, 2027 is the compliance date for marketplaces selling their own devices or physically accessing or taking ownership of a seller’s device. June 1, 2027 applies to the specified platforms relying on seller certifications. Exceptions include used devices, qualifying low volume sellers and qualifying existing listings until updated.</p>
