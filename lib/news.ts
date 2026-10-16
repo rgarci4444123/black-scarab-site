@@ -35,6 +35,134 @@ export type NewsUpdate = {
 export const newsUpdates: NewsUpdate[] = [
 {
   "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [],
+    "technologies": [
+      "industrial-robotics",
+      "industrial-automation"
+    ],
+    "applications": [
+      "material-handling"
+    ]
+  },
+  slug: "capital-machine-kc-robotics-acquisition",
+  "title": "Capital Machine buys KC Robotics to connect equipment sales with complete automation",
+  "summary": "Capital Machine’s purchase of KC Robotics joins fabrication equipment, custom robot integration and service. The commercial test is delivering complete systems through a broader customer network.",
+  "category": "Robotics acquisitions",
+  "publishedDate": "2026-10-16",
+  "publishedAt": "2026-10-16T23:04:06.386Z",
+  "publishedLabel": "October 16, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/capital-machine-kc-robotics-acquisition.png",
+  "imageAlt": "Two interlocking steel forms join beneath a miniature machine enclosure and industrial robot arm.",
+  "imageCaption": "Original Black Scarab editorial illustration of equipment and robotics integration coming together.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "Capital Machine says it has acquired the Ohio based robot integrator.",
+    "KC Robotics will continue operating under its own name, led by Kyle Carrier.",
+    "The commercial proposition combines equipment distribution, custom integration and service."
+  ],
+  "sections": [
+    {
+      "heading": "The acquisition",
+      "paragraphs": [
+        "Capital Machine announced on October 14 that it had acquired KC Robotics, adding a specialist robot integrator to its metal fabrication equipment and service business.",
+        "The acquisition brings together two different parts of an industrial purchase. Capital Machine supplies and services production equipment. KC Robotics designs the automation around a manufacturing task, including the engineering and programming needed to turn a robot and a machine into a working process.",
+        "KC Robotics will retain its name, leadership and engineering team, according to the announcement. Capital Machine presents the combination as a way for customers to obtain the equipment, automation and ongoing support through one organization."
+      ]
+    },
+    {
+      "heading": "Buying a capability around the machine",
+      "paragraphs": [
+        "Capital Machine has distributed and serviced metal fabrication equipment since 1984. Its offering includes press brakes, cutting machinery and robotic welders. The company describes a field service footprint across 22 states.",
+        "KC Robotics, based in West Chester, Ohio, has worked in robotic automation since 1990. Its public offering covers welding, assembly, cutting and finishing, material handling and machine tending. Those activities place it close to the point where a manufacturer’s process has to become an engineered installation.",
+        "The overlap is commercially useful. A customer buying a production machine may also need a way to load it, remove the finished part, inspect the result or transfer work to the next operation. Those tasks can determine how much of the machine’s capacity is actually used.",
+        "Selling the equipment addresses one part of the investment. Integrating the surrounding work addresses another. Capital Machine is buying the ability to participate more deeply in the second decision."
+      ]
+    },
+    {
+      "heading": "Why integration is more than attaching an arm",
+      "paragraphs": [
+        "KC Robotics’ machine tending material describes in house design of grippers, custom fixtures and gauging, alongside robot loading and unloading of CNC equipment. That is a useful illustration of what an integrator contributes.",
+        "A robot arm can move through space, but a production task begins with the part. The system needs to hold it securely, present it in the right orientation and coordinate its movement with the machine. Tooling and fixtures turn a general movement capability into a repeatable operation.",
+        "Consider a hypothetical machining cell. A robot has to collect an unfinished component, place it correctly, wait for the machine cycle and remove the finished piece. If the incoming part sits differently, if the fixture fails to confirm its position or if the machine stops unexpectedly, the cell needs a defined response.",
+        "That example is not a description of a newly announced KC Robotics installation. It shows why integration work remains substantial even when the underlying robot and machine are standard commercial products. The handoff between them is where much of the process engineering sits.",
+        "KC Robotics also describes proving system viability during engineering design and including risk assessment and documentation in its machine tending offering. Those are supplier descriptions of its work, not blanket assurances for any customer site. Their relevance is that a complete automation project involves verification and operating procedures as well as hardware."
+      ]
+    },
+    {
+      "heading": "A broader route to the customer",
+      "paragraphs": [
+        "Capital Machine’s installed customer relationships and service coverage could give KC Robotics access to more potential projects. The acquisition announcement describes this as a way to extend the integrator’s engineering to a broader manufacturing base.",
+        "There is a practical reason that could matter. An equipment distributor often enters the conversation when a customer is already planning a production investment. That is a useful moment to assess whether the surrounding material handling or machine loading should change too.",
+        "For a customer, a combined organization could reduce the effort of coordinating separate commercial discussions. Equipment selection, robot reach, tooling and service responsibilities can be considered together before the installation is fixed.",
+        "That benefit is conditional on execution. One supplier on a purchase order does not automatically create a well coordinated project. The manufacturer still needs a clear scope, acceptance criteria and an accountable team for resolving issues that cross equipment boundaries.",
+        "The most useful outcome would be fewer gaps between what the machine vendor expects and what the robot integrator assumes. If those gaps are found during design, the customer can avoid discovering them while a production line is waiting to start."
+      ]
+    },
+    {
+      "heading": "The role of service",
+      "paragraphs": [
+        "Service is central to Capital Machine’s argument for the deal. The company says its aftermarket organization will support the combined offering, while existing KC Robotics customers will continue working with the team they know.",
+        "That continuity matters because industrial automation has a long operating life. A cell may need revised tooling, a new product program, replacement components or adjustments when upstream equipment changes. The original commissioning is the beginning of a support relationship.",
+        "For buyers, the relevant questions are concrete. Who responds when the robot stops because the machine has not completed a signal? Who owns the program changes? Which team keeps the documentation current? How is responsibility handled when the customer introduces a new part?",
+        "These are evaluation questions, not reported weaknesses at either company. They explain why service reach can be commercially valuable without treating a geographic footprint as proof of response time or specialist availability at every location."
+      ]
+    },
+    {
+      "heading": "The capital story",
+      "paragraphs": [
+        "The transaction is Capital Machine’s first acquisition since partnering with Rotunda Capital Partners in March 2025, according to the companies’ release. It is an acquisition of an operating integration business, rather than a newly announced robot product or a venture financing round.",
+        "Rotunda describes its broader investment focus as distribution, logistics, and industrial and business services. Its involvement supplies ownership context for Capital Machine’s expansion. It does not, by itself, establish a dedicated robotics investment mandate or a particular allocation of acquisition financing.",
+        "The strategic logic is to put additional engineering capability beside an existing sales and service channel. The commercial opportunity is larger than an incremental equipment order if the combined company can scope and deliver a complete automation project. The corresponding burden is also larger: it must manage integration risk and support the finished system.",
+        "That is a different growth challenge from shipping more standardized machines. Custom projects require disciplined scoping, engineering capacity and careful control of changes. An attractive order book can become difficult to deliver if too many projects depend on the same specialists at the same time."
+      ]
+    },
+    {
+      "heading": "What to watch",
+      "paragraphs": [
+        "The most informative follow through will be examples of jointly delivered installations, with a clear description of the customer task and the responsibilities the combined organization took on. Repeat projects would show that the offering can travel beyond a single successful installation.",
+        "Customer continuity is another useful signal. Retaining the KC Robotics team preserves engineering knowledge, while successful coordination with Capital Machine would demonstrate that the larger organization adds something beyond ownership.",
+        "The deal points to a durable part of the robotics market: manufacturers need help turning available components into dependable production. Capital Machine has acquired a specialist in that work. The value of the combination will depend on how effectively its sales reach, integration expertise and service organization operate together at the customer’s site."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Capital Machine, acquisition announcement through Business Wire, October 14, 2026. Full original release.",
+      "url": "https://www.businesswire.com/news/home/20261014308292/en/Capital-Machine-Acquires-KC-Robotics-Expanding-From-Fabrication-Equipment-Into-Turnkey-Robotic-Automation"
+    },
+    {
+      "label": "FinancialContent, attributed Business Wire distribution of the same announcement, October 14, 2026 at 11:35 a.m. EDT, 15:35 UTC. Timestamp evidence and wire text, not an independent second report.",
+      "url": "https://www.financialcontent.com/article/bizwire-2026-10-14-capital-machine-acquires-kc-robotics-expanding-from-fabrication-equipment-into-turnkey-robotic-automation"
+    },
+    {
+      "label": "KC Robotics, official company and capability page, undated, accessed October 16, 2026.",
+      "url": "https://kcrobotics.com/"
+    },
+    {
+      "label": "KC Robotics, CNC machine tending, undated, accessed October 16, 2026. Tooling, engineering and documentation scope.",
+      "url": "https://kcrobotics.com/material-handling-tending/cnc-machine-tending/"
+    },
+    {
+      "label": "Capital Machine, official acquisition announcement, accessed October 16, 2026 through indexed issuer text. Its malformed dateline is not used as timestamp evidence.",
+      "url": "https://capitalmachine.com/capital-machine-acquires-kc-robotics-expanding-from-fabrication-equipment-into-turnkey-robotic-automation/"
+    },
+    {
+      "label": "KC Robotics, public corporate announcement and reposts, accessed October 16, 2026. Counterparty acknowledgment, not independent deal valuation evidence.",
+      "url": "https://www.linkedin.com/company/https-kcrobotics.com-"
+    },
+    {
+      "label": "PE Hub, acquisition report, October 15, 2026. Public headline and excerpt only; subscriber article was not accessed.",
+      "url": "https://www.pehub.com/rotundas-capital-machine-makes-first-add-on-with-kc-robotics-deal/"
+    }
+  ]
+},
+{
+  "taxonomy": {
     "primaryIndustry": "warehousing-logistics",
     "relevantIndustries": [
       "retail"
