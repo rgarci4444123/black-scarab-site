@@ -67,12 +67,6 @@ export default function PerformanceChart({
   const height = width < 560 ? 286 : 380;
   const plotWidth = width - padding.left - padding.right;
   const plotHeight = height - padding.top - padding.bottom;
-  const dateLabelCount = Math.min(observations.length, Math.max(2, Math.floor(plotWidth / 60) + 1));
-  const dateLabelIndices = new Set(
-    Array.from({ length: dateLabelCount }, (_, index) =>
-      Math.round((index * (observations.length - 1)) / Math.max(1, dateLabelCount - 1)),
-    ),
-  );
   const latest = observations[observations.length - 1];
   const first = observations[0];
 
@@ -92,6 +86,16 @@ export default function PerformanceChart({
 
   const x = (index: number) =>
     padding.left + (observations.length === 1 ? 0 : (index / (observations.length - 1)) * plotWidth);
+  const lastIndex = observations.length - 1;
+  const dateLabelIndices = new Set([0, lastIndex]);
+  let previousLabelIndex = 0;
+  for (let index = 1; index < lastIndex; index++) {
+    if (x(index) - x(previousLabelIndex) >= 60 && x(lastIndex) - x(index) >= 60) {
+      dateLabelIndices.add(index);
+      previousLabelIndex = index;
+    }
+  }
+
   const y = (value: number) =>
     padding.top + ((tickMaximum - value) / (tickMaximum - tickMinimum || 1)) * plotHeight;
   const pathFor = (key: SeriesKey) =>
