@@ -1,0 +1,63 @@
+BLACK SCARAB | ROBOT SUPPLIER INFORMATION REQUEST
+Prepared October 16, 2026
+
+Fill in the project brief, then send the request below to each relevant supplier.
+Keep replies and supporting documents with the exact design revision reviewed.
+
+PROJECT BRIEF
+Product and model:
+Design revision and date:
+What it does and where customers will use it:
+Target market and sales channel:
+Planned manufacturing and final assembly locations:
+Current stage and expected first sale:
+Movement, weight including dock, sensors and network capabilities:
+Existing FCC grants or conformity records, if any:
+Open question for the lab or regulatory adviser:
+
+SUPPLIER REQUEST
+
+We are evaluating your component for a robot intended for sale in the United
+States. Please provide the following for the exact configuration quoted:
+
+1. Product name, part number, hardware revision and data sheet.
+2. Actual producer's full legal name, location, and relevant parent or affiliate
+   relationships. Identify the distributor separately.
+3. For purchased boards and modules, the entities responsible for design and
+   assembly, and the installed chips and modules relevant to our FCC review.
+4. Manufacturing locations and available evidence of component origin. Where
+   needed for a domestic component cost review, please identify the costs and
+   origin information you can supply.
+5. Applicable FCC IDs and grants, conformity information and test reports.
+   Include the installation instructions and conditions for approved modules.
+6. Any claimed Covered List exception or conditional approval, with the official
+   record and exact models or configurations it covers.
+7. Approved substitutes and how you will notify us before changing components,
+   producers, production locations or the supplied configuration.
+8. A technical contact who can resolve follow-up questions.
+
+Please identify the document and revision supporting each answer. Let us know
+which items require follow-up so we can take them to our reviewer.
+
+OUR REVIEW RECORD
+Part or assembly:
+Supplier contact:
+Documents received and dates:
+Unresolved questions:
+Reviewer and review date:
+Decision and supporting basis:
+Design revision to which the decision applies:
+Changes that require another review:
+
+OFFICIAL HANDOFFS
+FCC Covered List and conditional approvals:
+https://www.fcc.gov/supplychain/coveredlist
+Robotics definitions, production calculations and existing models:
+https://www.fcc.gov/covered-list-faqs-robots-inverters
+Conditional approval application requirements:
+https://www.fcc.gov/sites/default/files/robots-ca.pdf
+FCC certification records:
+https://apps.fcc.gov/oetcf/eas/reports/GenericSearch.cfm
+
+Black Scarab
+https://www.blackscarab.ai

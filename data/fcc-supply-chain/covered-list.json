@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "lastVerified": "2026-10-16",
+  "officialListDate": "2026-10-09",
+  "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+  "scopeNotes": [
+    "Company entries include relevant subsidiaries and affiliates. Check supplier ownership as well as the trading name.",
+    "Equipment categories follow the linked national security definitions. Conditional approvals cover specified models or classes."
+  ],
+  "entries": [
+    {
+      "id": "huawei",
+      "name": "Huawei Technologies Company",
+      "aliases": [
+        "Huawei",
+        "Huawei Technologies",
+        "Huawei Technologies Co Ltd"
+      ],
+      "categories": [
+        "Telecommunications equipment"
+      ],
+      "restrictionType": "Producer or provider",
+      "officialDescription": "Telecommunications equipment produced by Huawei Technologies Company, including telecommunications or video surveillance services provided by such entity or using such equipment.",
+      "explanation": "Telecommunications equipment and related services.",
+      "useRestriction": "Match the actual equipment and service scope.",
+      "roboticsRelevance": "Connectivity",
+      "dateAdded": "2021-03-12",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [],
+      "country": "China",
+      "countrySourceUrl": "https://www.fcc.gov/engineering-technology/prohibited-entities-list",
+      "displayName": "Huawei"
+    },
+    {
+      "id": "zte",
+      "name": "ZTE Corporation",
+      "aliases": [
+        "ZTE"
+      ],
+      "categories": [
+        "Telecommunications equipment"
+      ],
+      "restrictionType": "Producer or provider",
+      "officialDescription": "Telecommunications equipment produced by ZTE Corporation, including telecommunications or video surveillance services provided by such entity or using such equipment.",
+      "explanation": "Telecommunications equipment and related services.",
+      "useRestriction": "Match the actual equipment and service scope.",
+      "roboticsRelevance": "Connectivity",
+      "dateAdded": "2021-03-12",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [],
+      "country": null,
+      "displayName": "ZTE"
+    },
+    {
+      "id": "hytera",
+      "name": "Hytera Communications Corporation",
+      "aliases": [
+        "Hytera",
+        "Hytera Communications"
+      ],
+      "categories": [
+        "Video surveillance",
+        "Telecommunications equipment"
+      ],
+      "restrictionType": "Producer or provider",
+      "officialDescription": "Video surveillance and telecommunications equipment produced by Hytera Communications Corporation, to the extent it is used for the purpose of public safety, security of government facilities, physical security surveillance of critical infrastructure, and other national security purposes, including telecommunications or video surveillance services provided by such entity or using such equipment.",
+      "explanation": "Surveillance and telecom equipment for specified security uses.",
+      "useRestriction": "Public safety, government facility security, critical infrastructure physical security surveillance, or other national security purposes.",
+      "roboticsRelevance": "Cameras and security",
+      "dateAdded": "2021-03-12",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [
+        "Review intended use and the revised critical infrastructure definition in FCC 26-50."
+      ],
+      "country": null,
+      "displayName": "Hytera"
+    },
+    {
+      "id": "hikvision",
+      "name": "Hangzhou Hikvision Digital Technology Company",
+      "aliases": [
+        "Hikvision",
+        "Hangzhou Hikvision Digital Technology",
+        "Hangzhou Hikvision Digital Technology Co Ltd"
+      ],
+      "categories": [
+        "Video surveillance",
+        "Telecommunications equipment"
+      ],
+      "restrictionType": "Producer or provider",
+      "officialDescription": "Video surveillance and telecommunications equipment produced by Hangzhou Hikvision Digital Technology Company, to the extent it is used for the purpose of public safety, security of government facilities, physical security surveillance of critical infrastructure, and other national security purposes, including telecommunications or video surveillance services provided by such entity or using such equipment.",
+      "explanation": "Surveillance and telecom equipment for specified security uses.",
+      "useRestriction": "Public safety, government facility security, critical infrastructure physical security surveillance, or other national security purposes.",
+      "roboticsRelevance": "Cameras and security",
+      "dateAdded": "2021-03-12",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [
+        "Review intended use and the revised critical infrastructure definition in FCC 26-50."
+      ],
+      "country": "China",
+      "countrySourceUrl": "https://www.fcc.gov/engineering-technology/prohibited-entities-list",
+      "displayName": "Hikvision"
+    },
+    {
+      "id": "dahua",
+      "name": "Dahua Technology Company",
+      "aliases": [
+        "Dahua",
+        "Dahua Technology",
+        "Zhejiang Dahua Technology Co Ltd"
+      ],
+      "categories": [
+        "Video surveillance",
+        "Telecommunications equipment"
+      ],
+      "restrictionType": "Producer or provider",
+      "officialDescription": "Video surveillance and telecommunications equipment produced by Dahua Technology Company, to the extent it is used for the purpose of public safety, security of government facilities, physical security surveillance of critical infrastructure, and other national security purposes, including telecommunications or video surveillance services provided by such entity or using such equipment.",
+      "explanation": "Surveillance and telecom equipment for specified security uses.",
+      "useRestriction": "Public safety, government facility security, critical infrastructure physical security surveillance, or other national security purposes.",
+      "roboticsRelevance": "Cameras and security",
+      "dateAdded": "2021-03-12",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [
+        "Review intended use and the revised critical infrastructure definition in FCC 26-50."
+      ],
+      "country": "China",
+      "countrySourceUrl": "https://www.fcc.gov/engineering-technology/prohibited-entities-list",
+      "displayName": "Dahua"
+    },
+    {
+      "id": "ao-kaspersky",
+      "name": "AO Kaspersky Lab",
+      "aliases": [
+        "Kaspersky",
+        "Kaspersky Lab",
+        "AO Kaspersky"
+      ],
+      "categories": [
+        "Information security"
+      ],
+      "restrictionType": "Producer or provider",
+      "officialDescription": "Information security products, solutions, and services supplied, directly or indirectly, by AO Kaspersky Lab or any of its predecessors, successors, parents, subsidiaries, or affiliates.",
+      "explanation": "Information security products and services.",
+      "useRestriction": "Direct and indirect supply within the entry.",
+      "roboticsRelevance": "Software and services",
+      "dateAdded": "2022-03-25",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [],
+      "country": null,
+      "displayName": "AO Kaspersky Lab"
+    },
+    {
+      "id": "china-mobile",
+      "name": "China Mobile International USA Inc.",
+      "aliases": [
+        "China Mobile International USA"
+      ],
+      "categories": [
+        "Telecommunications services"
+      ],
+      "restrictionType": "Producer or provider",
+      "officialDescription": "International telecommunications services provided by China Mobile International USA Inc. subject to section 214 of the Communications Act of 1934.",
+      "explanation": "Specified telecommunications services.",
+      "useRestriction": "The listed service, rather than every electronic product associated with the name.",
+      "roboticsRelevance": "Services",
+      "dateAdded": "2022-03-25",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [],
+      "country": null,
+      "displayName": "China Mobile International USA"
+    },
+    {
+      "id": "china-telecom",
+      "name": "China Telecom (Americas) Corp.",
+      "aliases": [
+        "China Telecom Americas"
+      ],
+      "categories": [
+        "Telecommunications services"
+      ],
+      "restrictionType": "Producer or provider",
+      "officialDescription": "Telecommunications services provided by China Telecom (Americas) Corp. subject to section 214 of the Communications Act of 1934.",
+      "explanation": "Specified telecommunications services.",
+      "useRestriction": "The listed service, rather than every electronic product associated with the name.",
+      "roboticsRelevance": "Services",
+      "dateAdded": "2022-03-25",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [],
+      "country": null,
+      "displayName": "China Telecom Americas"
+    },
+    {
+      "id": "pacific-comnet",
+      "name": "Pacific Networks Corp. and ComNet (USA) LLC",
+      "aliases": [
+        "Pacific Networks",
+        "Pacific Networks Corp",
+        "ComNet",
+        "ComNet USA"
+      ],
+      "categories": [
+        "Telecommunications services"
+      ],
+      "restrictionType": "Producer or provider",
+      "officialDescription": "International telecommunications services provided by Pacific Networks Corp and its wholly-owned subsidiary ComNet (USA) LLC subject to section 214 of the Communications Act of 1934.",
+      "explanation": "Specified international telecommunications services.",
+      "useRestriction": "The listed service, rather than every electronic product associated with the name.",
+      "roboticsRelevance": "Services",
+      "dateAdded": "2022-09-20",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [],
+      "country": null,
+      "displayName": "Pacific Networks and ComNet"
+    },
+    {
+      "id": "china-unicom",
+      "name": "China Unicom (Americas) Operations Limited",
+      "aliases": [
+        "China Unicom Americas"
+      ],
+      "categories": [
+        "Telecommunications services"
+      ],
+      "restrictionType": "Producer or provider",
+      "officialDescription": "International telecommunications services provided by China Unicom (Americas) Operations Limited subject to section 214 of the Communications Act of 1934.",
+      "explanation": "Specified international telecommunications services.",
+      "useRestriction": "The listed service, rather than every electronic product associated with the name.",
+      "roboticsRelevance": "Services",
+      "dateAdded": "2022-09-20",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [],
+      "country": null,
+      "displayName": "China Unicom Americas"
+    },
+    {
+      "id": "digitalsystem",
+      "name": "Digitalsystem Technology Inc.",
+      "aliases": [
+        "Digitalsystem Technology",
+        "Digitalsystem"
+      ],
+      "categories": [
+        "Telecommunications services"
+      ],
+      "restrictionType": "Producer or provider",
+      "officialDescription": "International telecommunications services provided by Digitalsystem Technology Inc. subject to section 214 of the Communications Act of 1934.",
+      "explanation": "Specified international telecommunications services.",
+      "useRestriction": "The listed service, rather than every electronic product associated with the name.",
+      "roboticsRelevance": "Services",
+      "dateAdded": "2026-07-07",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [],
+      "country": null,
+      "displayName": "Digitalsystem Technology"
+    },
+    {
+      "id": "kaspersky-inc",
+      "name": "Kaspersky Lab, Inc.",
+      "aliases": [
+        "Kaspersky Lab Inc"
+      ],
+      "categories": [
+        "Information security"
+      ],
+      "restrictionType": "Producer or provider",
+      "officialDescription": "Cybersecurity and anti-virus software produced or provided by Kaspersky Lab, Inc. or any of its successors and assignees.",
+      "explanation": "Cybersecurity and antivirus software.",
+      "useRestriction": "The software and entities identified in this entry.",
+      "roboticsRelevance": "Software and services",
+      "dateAdded": "2024-07-23",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [],
+      "country": null,
+      "displayName": "Kaspersky Lab, Inc."
+    },
+    {
+      "id": "foreign-uas",
+      "name": "UAS and UAS critical components",
+      "aliases": [],
+      "categories": [
+        "Drones and critical components"
+      ],
+      "restrictionType": "Production location",
+      "officialDescription": "Uncrewed aircraft systems (UAS) and UAS critical components produced in a foreign country†† —except: (a) UAS and UAS critical components included on the Defense Contract Management Agency’s (DCMA’s) Blue UAS Cleared List, until January 1, 2028; (b) UAS and UAS critical components that qualify as “domestic end products” under the Buy American Standard, 48 CFR 25.101(a), until January 1, 2028; (c) devices which have been granted a Conditional Approval by DoW or DHS; and (d) foreign-produced “Toy Drones,” as defined in the National Security Determination, and “Toy Drones that contain foreign-produced components.”",
+      "explanation": "Drones and critical components, with listed exceptions.",
+      "useRestriction": "Use the associated determination and exact exception for the device.",
+      "roboticsRelevance": "Drones",
+      "dateAdded": "2025-12-22",
+      "dateUpdated": "2026-07-21",
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [
+        "The Blue UAS and domestic end product exceptions currently run through January 1, 2028.",
+        "A plain battery cell may be excluded from the logic bearing definition yet still be relevant to this separate UAS critical component entry."
+      ],
+      "country": null,
+      "displayName": "Foreign produced drones and components"
+    },
+    {
+      "id": "dji",
+      "name": "Shenzhen Da-Jiang Innovations Sciences and Technologies Company Limited",
+      "aliases": [
+        "DJI",
+        "DJI Technologies",
+        "Da Jiang Innovations",
+        "SZ DJI Technology",
+        "SZ DJI Technology Co Ltd",
+        "Shenzhen DJI Innovation Technology Co Ltd"
+      ],
+      "categories": [
+        "Communications and video surveillance"
+      ],
+      "restrictionType": "Producer or provider",
+      "officialDescription": "All communications and video surveillance equipment and services listed in Section 1709(a)(1) of the FY25 National Defense Authorization Act (Pub. L. 118-159).",
+      "explanation": "Communications and surveillance equipment and services under Section 1709.",
+      "useRestriction": "Read Section 1709(a)(1) and the national security determination for the precise producer and service scope.",
+      "roboticsRelevance": "Drones",
+      "dateAdded": "2025-12-22",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [],
+      "country": "China",
+      "countrySourceUrl": "https://www.fcc.gov/engineering-technology/prohibited-entities-list",
+      "scopeSourceUrl": "https://www.govinfo.gov/content/pkg/USCODE-2024-title47/html/USCODE-2024-title47-chap15-sec1601.htm",
+      "displayName": "DJI"
+    },
+    {
+      "id": "autel",
+      "name": "Autel Robotics",
+      "aliases": [
+        "Autel Robotics",
+        "Autel Robotics Co Ltd"
+      ],
+      "categories": [
+        "Communications and video surveillance"
+      ],
+      "restrictionType": "Producer or provider",
+      "officialDescription": "All communications and video surveillance equipment and services listed in Section 1709(a)(1) of the FY25 National Defense Authorization Act (Pub. L. 118-159).",
+      "explanation": "Communications and surveillance equipment and services under Section 1709.",
+      "useRestriction": "Read Section 1709(a)(1) and the national security determination for the precise producer and service scope.",
+      "roboticsRelevance": "Drones",
+      "dateAdded": "2025-12-22",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [],
+      "country": "China",
+      "countrySourceUrl": "https://www.fcc.gov/engineering-technology/prohibited-entities-list",
+      "scopeSourceUrl": "https://www.govinfo.gov/content/pkg/USCODE-2024-title47/html/USCODE-2024-title47-chap15-sec1601.htm",
+      "displayName": "Autel Robotics"
+    },
+    {
+      "id": "foreign-routers",
+      "name": "Routers produced in a foreign country",
+      "aliases": [],
+      "categories": [
+        "Routers"
+      ],
+      "restrictionType": "Production location",
+      "officialDescription": "Routers ^ produced in a foreign country, except routers which have been granted a Conditional Approval by DoW or DHS.",
+      "explanation": "Routers, with conditional approvals.",
+      "useRestriction": "Use the router determination and any applicable model or class approval.",
+      "roboticsRelevance": "Connectivity",
+      "dateAdded": "2026-03-23",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [],
+      "country": null,
+      "displayName": "Foreign produced routers"
+    },
+    {
+      "id": "foreign-inverters",
+      "name": "Foreign produced power inverters",
+      "aliases": [],
+      "categories": [
+        "Connected power inverters"
+      ],
+      "restrictionType": "Production location",
+      "officialDescription": "Foreign-produced power inverters, £ except power inverters which have been granted a Conditional Approval by DoW or DHS.",
+      "explanation": "Grid connected inverters with remote connectivity.",
+      "useRestriction": "Apply the August 20 revised definition and domestic production provisions, including Section 45X eligibility.",
+      "roboticsRelevance": "Power infrastructure",
+      "dateAdded": "2026-07-28",
+      "dateUpdated": "2026-08-20",
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [
+        "A robot motor drive is not automatically a covered utility interactive inverter."
+      ],
+      "country": null,
+      "displayName": "Foreign produced power inverters"
+    },
+    {
+      "id": "foreign-robots",
+      "name": "Foreign produced advanced robotic devices",
+      "aliases": [],
+      "categories": [
+        "Advanced robotic devices"
+      ],
+      "restrictionType": "Production location",
+      "officialDescription": "Foreign-produced advanced robotic devices, ³ except advanced robotic devices which have been granted a Conditional Approval by DoW.",
+      "explanation": "Connected mobile robots meeting the FCC definition.",
+      "useRestriction": "Check weight, sensing, connectivity, controlled movement, exclusions and the production test.",
+      "roboticsRelevance": "Mobile robots",
+      "dateAdded": "2026-07-28",
+      "dateUpdated": null,
+      "lastVerified": "2026-10-16",
+      "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+      "notes": [
+        "Fixed stationary industrial or medical arms are excluded from this particular definition.",
+        "Includes a domestic end product cost test; country of assembly alone is insufficient."
+      ],
+      "country": null,
+      "displayName": "Foreign produced mobile robots"
+    }
+  ],
+  "roboticConditionalApprovals": [
+    {
+      "name": "Husqvarna AB",
+      "devices": "305v IQ, 310v IQ, 420v IQ and 440v IQ robotic platforms",
+      "date": "2026-09-09"
+    },
+    {
+      "name": "ANSCER Robotics",
+      "devices": "AR250, AR650 and AR1250 robotic platforms",
+      "date": "2026-09-18"
+    },
+    {
+      "name": "Matic Robots, Inc.",
+      "devices": "Robotic Floor Cleaner 4MA0001 and Charging Dock 4DK0008",
+      "date": "2026-10-02"
+    }
+  ]
+}

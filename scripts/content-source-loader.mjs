@@ -16,7 +16,7 @@ export function createContentLoader(root = process.cwd()) {
       return contentModule.exports;
     }
     const code = ts.transpileModule(readFileSync(file, "utf8"), {
-      compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 },
+      compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020, esModuleInterop: true },
     }).outputText;
     const require = createRequire(file);
     const localRequire = (id) => id.startsWith("@/")

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "covered-list",
+    "label": "FCC Covered List",
+    "url": "https://www.fcc.gov/supplychain/coveredlist",
+    "description": "Find the equipment descriptions and current conditional approvals that apply to your product.",
+    "lastVerified": "2026-10-14"
+  },
+  {
+    "id": "eas",
+    "label": "FCC equipment authorization search",
+    "url": "https://apps.fcc.gov/oetcf/eas/reports/GenericSearch.cfm",
+    "description": "Look up an FCC ID, its approved configuration and grant conditions.",
+    "lastVerified": "2026-10-14"
+  },
+  {
+    "id": "kdb",
+    "label": "FCC Knowledge Database",
+    "url": "https://apps.fcc.gov/oetcf/kdb/index.cfm",
+    "description": "Check technical guidance for radios, modules and the products containing them.",
+    "lastVerified": "2026-10-14"
+  },
+  {
+    "id": "order",
+    "label": "FCC 26-50",
+    "url": "https://docs.fcc.gov/public/attachments/FCC-26-50A1.pdf",
+    "description": "Read the full order, final rules and accompanying proposals.",
+    "lastVerified": "2026-10-14"
+  },
+  {
+    "id": "final-rule",
+    "label": "Federal Register final rule",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-11/html/2026-18535.htm",
+    "description": "Check the final rule text, effective date and marketplace deadlines.",
+    "lastVerified": "2026-10-14"
+  },
+  {
+    "id": "proposal",
+    "label": "Federal Register proposed rule",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-08-07/html/2026-16197.htm",
+    "description": "Follow proposed changes to the equipment approval process.",
+    "lastVerified": "2026-10-14"
+  },
+  {
+    "id": "robot-faq",
+    "label": "FCC robotics and inverter FAQs",
+    "url": "https://www.fcc.gov/covered-list-faqs-robots-inverters",
+    "description": "Check mobile robot definitions, domestic component costs and treatment of existing models.",
+    "lastVerified": "2026-10-14"
+  },
+  {
+    "id": "robot-determination",
+    "label": "Advanced robotic devices determination",
+    "url": "https://www.fcc.gov/sites/default/files/robots-nsd.pdf",
+    "description": "Compare the complete robot with the device definition and exclusions.",
+    "lastVerified": "2026-10-14"
+  },
+  {
+    "id": "robot-approval",
+    "label": "Robotics conditional approval guidance",
+    "url": "https://www.fcc.gov/sites/default/files/robots-ca.pdf",
+    "description": "Build the evidence package for a robotics conditional approval application.",
+    "lastVerified": "2026-10-14"
+  },
+  {
+    "id": "cpel",
+    "label": "FCC Consolidated Prohibited Entity List",
+    "url": "https://www.fcc.gov/engineering-technology/prohibited-entities-list",
+    "description": "Search or download the broader list used for FCC authorization integrity checks.",
+    "lastVerified": "2026-10-14"
+  },
+  {
+    "id": "cpel-code",
+    "label": "FCC consolidation repository",
+    "url": "https://github.com/FCC/consolidated-prohibited-entity-list",
+    "description": "Inspect the scripts and source schema behind the consolidated list.",
+    "lastVerified": "2026-10-14"
+  },
+  {
+    "id": "commerce",
+    "label": "Commerce Consolidated Screening List",
+    "url": "https://www.trade.gov/consolidated-screening-list",
+    "description": "Screen trade counterparties using downloadable lists or the API.",
+    "lastVerified": "2026-10-14"
+  },
+  {
+    "id": "ofac",
+    "label": "OFAC Sanctions List Search",
+    "url": "https://sanctionssearch.ofac.treas.gov/",
+    "description": "Check supplier and customer names against US sanctions lists.",
+    "lastVerified": "2026-10-14"
+  },
+  {
+    "id": "law",
+    "label": "Secure Networks Act",
+    "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title47/html/USCODE-2024-title47-chap15-sec1601.htm",
+    "description": "Read the legal criteria for adding equipment and services to the Covered List.",
+    "lastVerified": "2026-10-14"
+  },
+  {
+    "id": "domestic",
+    "label": "Domestic end product standard",
+    "url": "https://www.ecfr.gov/current/title-48/chapter-1/subchapter-D/part-25/subpart-25.1/section-25.101",
+    "description": "Check the manufacturing and component cost standard referenced by the robotics rules.",
+    "lastVerified": "2026-10-14"
+  }
+]

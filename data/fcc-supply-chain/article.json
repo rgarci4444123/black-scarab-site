@@ -1,0 +1,107 @@
+[
+  {
+    "id": "start-here",
+    "heading": "Building a robot for the US market? Start here.",
+    "paragraphs": [
+      "The Federal Communications Commission, or FCC, regulates radio and digital equipment entering the US market. Most connected robots need equipment authorization before import or sale. The Covered List can block that route for equipment considered a national security risk.",
+      "Before choosing suppliers, check two things: whether the finished robot falls within a restricted equipment category, and whether its electronics come from a producer covered by the component rules. Start with the robot, then use the reference below to look up suppliers and collect the records your reviewer needs."
+    ],
+    "sourceRefs": [
+      1,
+      2,
+      5
+    ]
+  },
+  {
+    "id": "why-this-is-happening",
+    "heading": "How a telecom security policy reached robotics",
+    "paragraphs": [
+      "The FCC’s Covered List grew out of US efforts to protect communications networks from equipment considered a national security risk. Congress created the list through the Secure Networks Act and later directed the FCC to stop approving covered equipment for the US market.",
+      "The concern now extends to connected machines. In its robotics determination, the government cited the potential for remote interference, access to sensitive sensor data and dependence on foreign supply chains. The component rule addresses a related concern: changing the brand on a finished product does not remove the risks attributed to electronics inside it."
+    ],
+    "sourceRefs": [
+      2,
+      6,
+      12
+    ],
+    "tool": "history"
+  },
+  {
+    "id": "mobile-robot-definition",
+    "heading": "1. Check the complete robot",
+    "paragraphs": [
+      "Start with the machine you plan to sell. The July 2026 entry for foreign produced advanced robotic devices can apply even when none of your component suppliers is named on the list. A connected floor cleaner, delivery robot or mobile inspection platform should be checked against the full definition.",
+      "The definition combines the following characteristics. It also contains exclusions, including fixed stationary industrial and medical arms, specified connected vehicles, rail only vehicles, aircraft, underwater vehicles and classified medical devices."
+    ],
+    "sourceRefs": [
+      5,
+      6,
+      15
+    ],
+    "tool": "robot-check"
+  },
+  {
+    "id": "october-component-rule",
+    "heading": "2. Check the electronics inside it",
+    "paragraphs": [
+      "Since October 13, 2026, FCC 26-50 also restricts new authorizations for devices containing certain electronic hardware from a named Covered List producer. Two conditions must hold: the component comes from a producer covered by a company based entry, and that entry would bar the finished device if the same producer had made it.",
+      "Read the equipment description and intended use together. For example, the Hikvision, Dahua and Hytera entries specify security uses. A camera’s function in your product matters to that assessment. A production location entry alone does not make every component from that producer subject to this separate rule.",
+      "The rule calls the relevant electronics “logic bearing hardware.” Begin with assemblies that process, store or transfer digital information, including the controls inside a smart battery pack. Ask suppliers for the records below."
+    ],
+    "sourceRefs": [
+      1,
+      2,
+      3
+    ],
+    "tool": "components"
+  },
+  {
+    "id": "covered-reference",
+    "heading": "Look up a producer or equipment category",
+    "paragraphs": [
+      "Search the actual producer, which may differ from the distributor or brand on the box. Open an entry to see its scope, then check the official record for current wording and exceptions. A name match needs a product review; an absent name does not resolve a production category or affiliate question."
+    ],
+    "sourceRefs": [
+      1,
+      4,
+      13,
+      14
+    ],
+    "tool": "covered-list"
+  },
+  {
+    "id": "supplier-records",
+    "heading": "3. Get the supplier records",
+    "paragraphs": [
+      "A bill of materials, or BOM, is your product’s parts list. Record exact models and revisions, the actual producers, manufacturing locations and the evidence supplied. For purchased boards, request information about the installed chips and modules needed to resolve the review.",
+      "Use the request below with suppliers while you are still comparing parts. Keep their replies with your design revision, and ask to be notified before they substitute a part or change its production."
+    ],
+    "sourceRefs": [
+      2,
+      5
+    ],
+    "tool": "downloads"
+  },
+  {
+    "id": "provider-directory",
+    "heading": "4. Take the open question to the right expert",
+    "paragraphs": [
+      "Bring a short product description, intended use, planned manufacturing location, current parts list and supplier replies. Identify the decision you need: the approval route, an uncertain producer or a restriction that may apply to your configuration."
+    ],
+    "sourceRefs": [],
+    "tool": "providers"
+  },
+  {
+    "id": "before-you-sell",
+    "heading": "Before you prepare for sale",
+    "paragraphs": [
+      "Agree the authorization route with your lab early. Keep the resulting records tied to the configuration you will ship, including its radio modules and approved substitutes."
+    ],
+    "sourceRefs": [
+      2,
+      3,
+      5
+    ],
+    "tool": "launch-check"
+  }
+]

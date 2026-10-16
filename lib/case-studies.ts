@@ -1,3 +1,4 @@
+import { fccSupplyChainDeepDive } from "@/lib/fcc-supply-chain";
 import { robotPoliciesDeepDive } from "@/lib/robot-policies";
 import type { ArticleTaxonomy } from "@/lib/content-taxonomy";
 import { humanoidAnatomyDeepDive } from "@/lib/humanoid-anatomy";
@@ -25,6 +26,8 @@ import { grittAiDeepDive } from "@/lib/gritt-ai";
 import { vibeManufacturingDeepDive } from "@/lib/vibe-manufacturing";
 
 export type CaseStudySection = {
+  id?: string;
+  tool?: "history" | "robot-check" | "covered-list" | "components" | "downloads" | "providers" | "launch-check";
   heading?: string;
   paragraphs: CaseStudyParagraph[];
   visuals?: {
@@ -266,6 +269,7 @@ const localAiServerArticleLink: CaseStudyParagraphLink = {
 };
 
 export type CaseStudySourceLink = {
+  id?: string;
   label: string;
   url: string;
 };
@@ -16772,6 +16776,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  fccSupplyChainDeepDive(),
   robotPoliciesDeepDive(),
   vibeManufacturingDeepDive(),
   grittAiDeepDive(),

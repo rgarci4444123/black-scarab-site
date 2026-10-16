@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "lastVerified": "2026-10-14",
+  "providers": [
+    {
+      "id": "z2data",
+      "name": "Z2Data",
+      "website": "https://www.z2data.com/",
+      "capabilities": [
+        "Component intelligence",
+        "Supplier mapping"
+      ],
+      "summary": "Upload a BOM, track part lifecycle and sourcing risk, and research replacements.",
+      "customers": "Component engineering, sourcing and compliance teams.",
+      "roboticsFit": "Investigate electronic parts inside compute boards, radios and controllers.",
+      "confirmedServices": [
+        "BOM analysis",
+        "Manufacturer and supplier data"
+      ],
+      "scopeQuestion": "Ask it to identify the actual maker behind a part and show the ownership evidence.",
+      "sourceUrls": [
+        "https://www.z2data.com/products/part-risk-manager",
+        "https://www.z2data.com/contact",
+        "https://www.z2data.com/pt-br/landing/lpb/electronic-component-database/"
+      ],
+      "headquarters": "Santa Clara, California, United States",
+      "integrations": "REST API and PLM/ERP integrations are described in the component database materials.",
+      "pricing": null,
+      "lastVerified": "2026-10-14",
+      "fcc2650Screening": "not-verified"
+    },
+    {
+      "id": "siliconexpert",
+      "name": "SiliconExpert",
+      "website": "https://www.siliconexpert.com/",
+      "capabilities": [
+        "Component intelligence"
+      ],
+      "summary": "Find manufacturer part data, review BOM risk and compliance records, and research alternatives.",
+      "customers": "Engineering, supply chain, procurement and compliance teams.",
+      "roboticsFit": "Normalize manufacturer part numbers and maintain approved component and manufacturer lists.",
+      "confirmedServices": [
+        "BOM analysis",
+        "Manufacturer data",
+        "API integrations"
+      ],
+      "scopeQuestion": "Ask which Covered List entries and supplier identity data are included in your subscription.",
+      "sourceUrls": [
+        "https://www.siliconexpert.com/products/"
+      ],
+      "headquarters": null,
+      "integrations": "API and integrations with engineering, PLM and procurement systems are documented.",
+      "pricing": null,
+      "lastVerified": "2026-10-14",
+      "fcc2650Screening": "not-verified"
+    },
+    {
+      "id": "exiger",
+      "name": "Exiger",
+      "website": "https://www.exiger.com/",
+      "capabilities": [
+        "Supplier mapping",
+        "Restricted party screening"
+      ],
+      "summary": "Map upstream suppliers and corporate ownership; screen Section 889 watchlists.",
+      "customers": "Commercial enterprises, government and the defense industrial base.",
+      "roboticsFit": "Investigate who sits behind an apparent component or supplier brand.",
+      "confirmedServices": [
+        "Supplier mapping",
+        "Corporate ownership research",
+        "Section 889 watchlist screening"
+      ],
+      "scopeQuestion": "Ask how its FCC 26-50 review differs from Section 889 screening.",
+      "sourceUrls": [
+        "https://www.exiger.com/perspectives/supply-chain-illuminations-for-supply-chain-risk-management/",
+        "https://www.exiger.com/perspectives/client-alert-historic-fcc-decision-to-ban-select-chinese-technology-for-national-security-concerns/"
+      ],
+      "headquarters": null,
+      "integrations": null,
+      "pricing": null,
+      "lastVerified": "2026-10-14",
+      "fcc2650Screening": "not-verified"
+    },
+    {
+      "id": "interos",
+      "name": "interos.ai",
+      "website": "https://www.interos.ai/",
+      "capabilities": [
+        "Supplier mapping"
+      ],
+      "summary": "Map supplier networks and monitor supplier, geopolitical and restriction risks.",
+      "customers": "Enterprise procurement teams and public sector organizations.",
+      "roboticsFit": "Explore upstream supplier concentrations and possible restricted entity relationships.",
+      "confirmedServices": [
+        "Supplier network mapping",
+        "Supplier risk monitoring"
+      ],
+      "scopeQuestion": "Ask for the evidence behind supplier links and the regulatory lists it monitors.",
+      "sourceUrls": [
+        "https://www.interos.ai/",
+        "https://www.interos.ai/blog/press/spend-matters-names-interos-to-list-of-procurement-providers-to-watch"
+      ],
+      "headquarters": null,
+      "integrations": "The provider describes an API approach in its procurement platform materials.",
+      "pricing": null,
+      "lastVerified": "2026-10-14",
+      "fcc2650Screening": "not-verified"
+    },
+    {
+      "id": "resilinc",
+      "name": "Resilinc",
+      "website": "https://www.resilinc.com/",
+      "capabilities": [
+        "Supplier mapping"
+      ],
+      "summary": "Map parts and production sites across supplier tiers using supplier validated data.",
+      "customers": "Enterprise supply chain and procurement teams.",
+      "roboticsFit": "Track the plants and lower tier suppliers behind robot subassemblies.",
+      "confirmedServices": [
+        "Part and site mapping",
+        "Supplier validation"
+      ],
+      "scopeQuestion": "Ask how much of your BOM is mapped and how missing supplier responses are flagged.",
+      "sourceUrls": [
+        "https://resource.resilinc.com/rs/863-OTG-034/images/Resilinc%20Multi%20Tier%20Mapping%20Data%20Sheet%202024.pdf"
+      ],
+      "headquarters": null,
+      "integrations": null,
+      "pricing": null,
+      "lastVerified": "2026-10-14",
+      "fcc2650Screening": "not-verified"
+    },
+    {
+      "id": "descartes",
+      "name": "Descartes Visual Compliance",
+      "website": "https://www.visualcompliance.com/",
+      "capabilities": [
+        "Restricted party screening"
+      ],
+      "summary": "Screen suppliers and customers against restricted party lists and automate repeat checks.",
+      "customers": "Trade compliance teams screening vendors, customers and transactions.",
+      "roboticsFit": "Screen business counterparties while keeping product authorization review separate.",
+      "confirmedServices": [
+        "Restricted party screening",
+        "Automated rescreening",
+        "API integrations"
+      ],
+      "scopeQuestion": "Ask which lists and affiliates are checked, and what evidence is saved for a match.",
+      "sourceUrls": [
+        "https://www.visualcompliance.com/blog/how-to-effectively-compare-denied-party-screening-software-vendors/",
+        "https://www.visualcompliance.com/blog/top-five-best-practices-to-integrated-denied-party-screening/"
+      ],
+      "headquarters": null,
+      "integrations": "API enabled screening and business system integrations are documented.",
+      "pricing": null,
+      "lastVerified": "2026-10-14",
+      "fcc2650Screening": "not-verified"
+    },
+    {
+      "id": "intertek",
+      "name": "Intertek",
+      "website": "https://www.intertek.com/",
+      "capabilities": [
+        "FCC testing and authorization"
+      ],
+      "summary": "FCC testing and TCB certification for communications equipment.",
+      "customers": "Manufacturers of connected electronics and wireless equipment.",
+      "roboticsFit": "Develop the test plan and authorization pathway for robot radios and the finished host.",
+      "confirmedServices": [
+        "FCC testing",
+        "TCB certification services"
+      ],
+      "scopeQuestion": "Confirm the specific laboratory, current FCC recognition, technical scope and responsibility for Covered List review.",
+      "sourceUrls": [
+        "https://www.intertek.com/communications-equipment/fcc-certification/",
+        "https://cdn.intertek.com/www-intertek-com/media/investors/2023/Intertek-Sustainability-Disclosure-Index-2022_vf.pdf"
+      ],
+      "headquarters": "London, United Kingdom",
+      "integrations": null,
+      "pricing": null,
+      "lastVerified": "2026-10-14",
+      "fcc2650Screening": "not-verified"
+    },
+    {
+      "id": "ul",
+      "name": "UL Solutions",
+      "website": "https://www.ul.com/",
+      "capabilities": [
+        "FCC testing and authorization"
+      ],
+      "summary": "FCC testing and TCB services for radio and wireless approvals.",
+      "customers": "Manufacturers of connected electronics and wireless equipment.",
+      "roboticsFit": "Develop the test plan and authorization pathway for robot radios and the finished host.",
+      "confirmedServices": [
+        "FCC testing",
+        "TCB certification services"
+      ],
+      "scopeQuestion": "Confirm the specific laboratory, current FCC recognition, technical scope and responsibility for Covered List review.",
+      "sourceUrls": [
+        "https://www.ul.com/services/fcc-testing-and-certification",
+        "https://www.ul.com/news/ul-solutions-named-lead-administrator-first-ever-us-federal-cybersecurity-labeling-program"
+      ],
+      "headquarters": "Northbrook, Illinois, United States",
+      "integrations": null,
+      "pricing": null,
+      "lastVerified": "2026-10-14",
+      "fcc2650Screening": "not-verified"
+    },
+    {
+      "id": "sgs",
+      "name": "SGS",
+      "website": "https://www.sgs.com/",
+      "capabilities": [
+        "FCC testing and authorization"
+      ],
+      "summary": "FCC laboratory testing and TCB services for electronic devices.",
+      "customers": "Manufacturers of connected electronics and wireless equipment.",
+      "roboticsFit": "Develop the test plan and authorization pathway for robot radios and the finished host.",
+      "confirmedServices": [
+        "FCC testing",
+        "TCB certification services"
+      ],
+      "scopeQuestion": "Confirm the specific laboratory, current FCC recognition, technical scope and responsibility for Covered List review.",
+      "sourceUrls": [
+        "https://www.sgs.com/en-hk/news/2026/06/securing-access-for-your-electronic-products-sgs-guide-to-fcc-certification"
+      ],
+      "headquarters": null,
+      "integrations": null,
+      "pricing": null,
+      "lastVerified": "2026-10-14",
+      "fcc2650Screening": "not-verified"
+    },
+    {
+      "id": "tuv",
+      "name": "TÜV Rheinland",
+      "website": "https://www.tuv.com/",
+      "capabilities": [
+        "FCC testing and authorization"
+      ],
+      "summary": "FCC testing, application review and certification grants.",
+      "customers": "Manufacturers of connected electronics and wireless equipment.",
+      "roboticsFit": "Develop the test plan and authorization pathway for robot radios and the finished host.",
+      "confirmedServices": [
+        "FCC testing",
+        "TCB certification services"
+      ],
+      "scopeQuestion": "Confirm the specific laboratory, current FCC recognition, technical scope and responsibility for Covered List review.",
+      "sourceUrls": [
+        "https://www.tuv.com/world/en/fcc-compliance-testing-and-approvals.html",
+        "https://www.tuv.com/jobs-and-career/en/nav/about-t%C3%BCv-rheinland/locations/"
+      ],
+      "headquarters": "Cologne, Germany",
+      "integrations": null,
+      "pricing": null,
+      "lastVerified": "2026-10-14",
+      "fcc2650Screening": "not-verified"
+    },
+    {
+      "id": "element",
+      "name": "Element Materials Technology",
+      "website": "https://www.element.com/",
+      "capabilities": [
+        "FCC testing and authorization"
+      ],
+      "summary": "FCC testing and certification, starting with checks before formal testing.",
+      "customers": "Manufacturers of connected electronics and wireless equipment.",
+      "roboticsFit": "Develop the test plan and authorization pathway for robot radios and the finished host.",
+      "confirmedServices": [
+        "FCC testing",
+        "TCB certification services"
+      ],
+      "scopeQuestion": "Confirm the specific laboratory, current FCC recognition, technical scope and responsibility for Covered List review.",
+      "sourceUrls": [
+        "https://www.element.com/connected-technologies/product-certification-and-approvals/fcc-certification-for-the-united-states",
+        "https://www.element.com/locations"
+      ],
+      "headquarters": "London, United Kingdom",
+      "integrations": null,
+      "pricing": null,
+      "lastVerified": "2026-10-14",
+      "fcc2650Screening": "not-verified"
+    },
+    {
+      "id": "wiley",
+      "name": "Wiley",
+      "website": "https://www.wiley.law/",
+      "capabilities": [
+        "Regulatory legal advice"
+      ],
+      "summary": "Legal advice on FCC approvals, Covered List entries and design changes.",
+      "customers": "Equipment manufacturers, communications businesses and investors.",
+      "roboticsFit": "Resolve ambiguous producer, intended use, modification and application timing questions.",
+      "confirmedServices": [
+        "FCC regulatory legal advice",
+        "Published FCC 26-50 analysis"
+      ],
+      "scopeQuestion": "Request a written assessment of the parts, intended use and planned filing.",
+      "sourceUrls": [
+        "https://www.wiley.law/practices-Telecommunications-Broadband-Service",
+        "https://www.wiley.law/alert-FCC-Expands-Covered-List-Prohibitions-to-Devices-with-Certain-Logic-Bearing-Hardware-Components-Imposes-Compliance-Obligations-on-Online-Marketplaces"
+      ],
+      "headquarters": "Washington, District of Columbia, United States",
+      "integrations": null,
+      "pricing": null,
+      "lastVerified": "2026-10-14",
+      "fcc2650Screening": "not-verified"
+    },
+    {
+      "id": "cooley",
+      "name": "Cooley",
+      "website": "https://www.cooley.com/",
+      "capabilities": [
+        "Regulatory legal advice"
+      ],
+      "summary": "Legal advice on component restrictions, sales channels and equipment modifications.",
+      "customers": "Companies designing, manufacturing, importing or selling FCC regulated equipment.",
+      "roboticsFit": "Assess the authorization pathway and producer or device scope for connected hardware.",
+      "confirmedServices": [
+        "FCC communications regulatory advice",
+        "Published FCC 26-50 analysis"
+      ],
+      "scopeQuestion": "Ask which questions can be resolved from your records and which need FCC or TCB guidance.",
+      "sourceUrls": [
+        "https://www.cooley.com/news/insight/2026/2026-07-29-fcc-expands-restrictions-on-covered-list-equipment-and-supply-chains"
+      ],
+      "headquarters": null,
+      "integrations": null,
+      "pricing": null,
+      "lastVerified": "2026-10-14",
+      "fcc2650Screening": "not-verified"
+    }
+  ]
+}

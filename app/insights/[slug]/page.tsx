@@ -21,6 +21,8 @@ import {
 import { authorLinkedInUrl, authorPortraitSrc } from "@/lib/site-author";
 import { getInsightSocialImage } from "@/lib/insight-social-image";
 
+import FccTool from "@/components/fcc-supply-chain/tools";
+
 type Props = {
   params: Promise<{ slug: string }>;
 };
@@ -161,6 +163,7 @@ export default async function CaseStudyPage({ params }: Props) {
   });
   const typeLabel = article.typeLabel ?? "Case Study";
   const industryHref = "/insights";
+  const hasInteractiveTools = article.sections.some(section => Boolean(section.tool));
   const industryLinkLabel = "Insights index";
   const relatedArticles = getRelatedArticles(article.slug, article.industry);
   const localAiPlacement = Object.hasOwn(
@@ -331,6 +334,14 @@ export default async function CaseStudyPage({ params }: Props) {
             </div>
           </section>
 
+          {hasInteractiveTools ? (
+            <nav aria-label="Guide shortcuts" className="border-b border-[#efeae1] bg-[#faf8f3] px-6 py-5 md:px-10">
+              <div className="mx-auto flex max-w-6xl flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-[#526147]">
+                {[["Start with your robot", "mobile-robot-definition"], ["Look up a supplier", "covered-reference"], ["Supplier request", "supplier-records"], ["Find expert help", "provider-directory"]].map(([label,id]) => <a key={id} href={`#${id}`} className="inline-flex min-h-11 items-center underline decoration-[#b7c0ae] underline-offset-4 hover:text-[#263422]">{label} <span className="ml-2" aria-hidden="true">↓</span></a>)}
+              </div>
+            </nav>
+          ) : null}
+
           {article.referral ? (
             <section className="px-6 py-8 md:px-10 md:py-10">
               <div className="mx-auto grid max-w-6xl gap-6 overflow-hidden rounded-[28px] border border-[#d7e2d1] bg-[#111827] p-7 text-white shadow-[0_18px_44px_rgba(15,23,42,0.14)] md:grid-cols-[minmax(0,1fr)_auto] md:items-center md:p-9">
@@ -369,7 +380,7 @@ export default async function CaseStudyPage({ params }: Props) {
               <div className="min-w-0 space-y-10">
                 {article.sections.map((section, index) => (
                   <Fragment key={`${section.heading ?? "intro"}-${index}`}>
-                    <section>
+                    <section id={section.id} className="scroll-mt-8">
                       {section.heading ? (
                         <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
                           {section.heading}
@@ -396,6 +407,8 @@ export default async function CaseStudyPage({ params }: Props) {
                           </Fragment>
                         ))}
                       </div>
+                    {section.tool ? <div id={`fcc-${section.tool}`} className="scroll-mt-8"><FccTool name={section.tool} /></div> : null}
+
                     {section.visual ? (
                       <figure className="mt-7 overflow-hidden rounded-[22px] border border-[#e1ddd2] bg-[#f4f0e8] shadow-[0_14px_34px_rgba(17,24,39,0.08)]">
                         <a href={section.visual.mobileSrc ?? section.visual.src} target="_blank" rel="noreferrer" aria-label={`Open full size image: ${section.visual.alt}`} className={`relative w-full ${section.visual.mobileSrc ? "block aspect-[9/14] md:hidden" : "block aspect-[16/10]"}`}>
@@ -614,7 +627,7 @@ export default async function CaseStudyPage({ params }: Props) {
                         placement="end_of_article"
                       />
                     ) : null}
-                    {index === 1 && !localAiPlacement ? (
+                    {index === 1 && !localAiPlacement && !hasInteractiveTools ? (
                       <EmailSignupCard
                         source={`insight-inline:${article.slug}`}
                         compact
@@ -689,6 +702,14 @@ export default async function CaseStudyPage({ params }: Props) {
                     </div>
                   </details>
                 ) : null}
+                {hasInteractiveTools && article.sourceLinksPlacement === "bottom" && !article.reportingNotes?.length ? (
+                  <section id="sources" className="border-t border-[#e8e4dc] pt-8">
+                    <h2 className="text-2xl font-semibold">Sources</h2>
+                    <details className="mt-4"><summary className="min-h-11 cursor-pointer py-2 text-sm font-medium text-[#526147]">Official rules, guidance and provider documentation</summary><ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-6 text-[#606975]">
+                      {article.sourceLinks?.map(source => <li id={source.id} key={source.url} className="scroll-mt-8"><a href={source.url} target="_blank" rel="noreferrer" data-analytics-event="source-link" data-analytics-label={source.label} className="break-words underline underline-offset-4">{source.label}</a></li>)}
+                    </ol></details>
+                  </section>
+                ) : null}
                 {article.author ? (
                   <section className="mt-12 grid gap-6 rounded-[24px] border border-[#e3ded5] bg-[#faf8f3] p-6 sm:grid-cols-[112px_minmax(0,1fr)] sm:p-8">
                     <Image src={authorPortraitSrc} alt="Rodolfo Garcia Calderoni" width={112} height={112} sizes="112px" className="h-28 w-28 rounded-full object-cover" />
@@ -705,11 +726,14 @@ export default async function CaseStudyPage({ params }: Props) {
                 ) : null}
               </div>
 
-              <aside className="h-fit rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
+              <aside className={`${hasInteractiveTools ? "hidden lg:block " : ""}h-fit rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]`}>
+                {!hasInteractiveTools ? (
                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
                   At a glance
                 </p>
-                <div className="mt-5 space-y-5">
+                ) : null}
+                <div className={`${hasInteractiveTools ? "" : "mt-5 "}space-y-5`}>
+                  {!hasInteractiveTools ? <>
                   <div>
                     <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">
                       Industry
@@ -734,7 +758,11 @@ export default async function CaseStudyPage({ params }: Props) {
                       {formattedDate}
                     </p>
                   </div>
-                  {!article.reportingNotes?.length ? (
+                  </> : null}
+                  {hasInteractiveTools ? (
+                    <nav aria-label="Report contents" className="hidden lg:block"><p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">In this report</p><ul className="mt-3 space-y-3 text-sm leading-6">{article.sections.filter(section => section.id && section.heading).map(section => <li key={section.id}><a href={`#${section.id}`} className="text-[#526147] hover:underline">{section.heading}</a></li>)}<li><a href="#sources" className="text-[#526147] hover:underline">Sources</a></li></ul></nav>
+                  ) : null}
+                  {!article.reportingNotes?.length && (!hasInteractiveTools || article.sourceLinksPlacement !== "bottom") ? (
                   <div>
                     <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">
                       Sources
