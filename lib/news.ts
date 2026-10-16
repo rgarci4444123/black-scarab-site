@@ -37,6 +37,139 @@ export const newsUpdates: NewsUpdate[] = [
   "taxonomy": {
     "primaryIndustry": "warehousing-logistics",
     "relevantIndustries": [
+      "retail"
+    ],
+    "technologies": [
+      "industrial-automation",
+      "robot-software"
+    ],
+    "applications": [
+      "material-handling"
+    ]
+  },
+  slug: "napa-hytek-hai-robotics-warehouse-integration",
+  "title": "NAPA’s warehouse robotics project puts integration at the center of the deal",
+  "summary": "NAPA selected Hy-Tek and Hai Robotics for a coordinated storage and retrieval system. The project puts software, testing and process design at the center of the automation decision.",
+  "category": "Warehouse automation",
+  "publishedDate": "2026-10-16",
+  "publishedAt": "2026-10-16T21:35:34.915Z",
+  "publishedLabel": "October 16, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/napa-hytek-hai-robotics-warehouse-integration.png",
+  "imageAlt": "Automotive parts flow across curved coral and green bands into organized totes carried by small mobile robots.",
+  "imageCaption": "Original Black Scarab editorial illustration of coordinated parts flow, not a depiction of the NAPA installation.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "NAPA is the customer, Hy-Tek the integrator and Hai Robotics the automation supplier.",
+    "The design combines multiple robots in an automated storage and retrieval system.",
+    "Testing at Hy-Tek’s Innovation Lab informed the proposed solution before deployment."
+  ],
+  "sections": [
+    {
+      "heading": "The project",
+      "paragraphs": [
+        "Hy-Tek Intralogistics and Hai Robotics announced a warehouse automation project for NAPA Auto Parts on October 15, bringing a named parts distributor, an integrator and a robotics supplier into the same fulfillment plan.",
+        "The project uses Hai’s HaiPick portfolio in a system with multiple robots. Hy-Tek is responsible for the integrated solution, which the companies say was evaluated at its Innovation Lab before deployment. The intended result is denser storage and more efficient handling of NAPA’s varied inventory.",
+        "The announcement describes a project moving toward implementation. Its importance lies in the operational design and customer selection, rather than a completed installation or a measured productivity result."
+      ]
+    },
+    {
+      "heading": "Parts distribution is a problem of variety",
+      "paragraphs": [
+        "The partners describe NAPA’s nationwide distribution network as supporting approximately 800,000 available parts, accessories and supplies. That figure refers to the network’s assortment. It should not be read as the number of items stored in this project or a capacity rating for the planned robotic system.",
+        "The distinction is useful because the challenge is broader than moving boxes quickly. A parts distributor has to get the correct item into the correct order while balancing demand for frequently requested products and less common replacements.",
+        "For illustration, a fast moving consumable and an infrequently requested component can create different storage priorities. Keeping everything equally close to a picking station would waste scarce space. Placing rarely requested inventory farther away can improve density, but the system still needs a reliable way to retrieve it when an order arrives.",
+        "Robotic storage gives an operator another way to manage that tradeoff. Software determines which inventory to retrieve, while machines carry out the physical movement. The advantage depends on how well the storage layout, robot fleet, workstations and order process fit together."
+      ]
+    },
+    {
+      "heading": "What the robots are there to do",
+      "paragraphs": [
+        "HaiPick is a portfolio of automated storage and retrieval systems. Hy-Tek’s technical partner page describes configurations that combine case handling robots, mobile robots, storage structures, workstations and the HaiQ software platform.",
+        "The underlying idea is to bring inventory to the point where work happens. Depending on the configuration, one type of robot can retrieve containers from storage while another moves them between locations. That division can help separate the job of reaching inventory from the job of transporting it.",
+        "These are portfolio characteristics, not a bill of materials for NAPA. The project announcement identifies a system with multiple robots but does not make the performance of every HaiPick configuration a property of this installation. A tall storage configuration, a climbing robot and a particular workstation can solve different problems.",
+        "That is precisely why the integrator matters. Selecting a robot family is one decision. Designing a process that can receive inventory, store it, replenish picking locations, release orders and handle exceptions is a larger one."
+      ]
+    },
+    {
+      "heading": "The less visible product is coordination",
+      "paragraphs": [
+        "Hy-Tek’s role spans warehouse automation, systems integration and software. Its IntraOne platform brings together warehouse management, execution and control functions. In practical terms, those layers help determine what inventory is available, what work should happen next and how equipment carries out the instruction.",
+        "For NAPA, the announced value proposition is a unified storage and retrieval solution suited to its assortment. It is not simply a collection of robots placed inside a building.",
+        "A useful way to judge the design is to follow one order through the process. The system must locate the inventory, deliver it to the appropriate station, confirm the pick and send the completed work onward. It must also cope when the expected quantity is missing, a container is damaged or a station becomes unavailable.",
+        "Those examples describe ordinary design questions, not reported problems at NAPA. They show why peak robot speed is an incomplete measure of warehouse performance. A fast retrieval step can produce a queue at the next station if the process is not balanced.",
+        "The same applies to storage density. More inventory in a smaller footprint can be valuable, but it should be assessed alongside access time, replenishment workload and the ability to recover from interruptions. A warehouse is useful when it fulfills orders reliably, not simply when it holds the greatest number of containers."
+      ]
+    },
+    {
+      "heading": "Why the lab matters",
+      "paragraphs": [
+        "Hy-Tek describes its Innovation Lab as a 20,000 square foot facility near Cincinnati and Northern Kentucky International Airport. It provides access to automation equipment, simulations and live testing connected through IntraOne.",
+        "The lab’s stated activities include testing picking, transport, sorting and storage, examining interoperability and analyzing throughput. For a buyer, that creates an opportunity to challenge a proposed design before installation commitments become difficult to reverse.",
+        "The most valuable trial would resemble the customer’s work. That means testing an appropriate mix of inventory, order patterns and exceptions, rather than letting a demonstration run only on the easiest products. It also means watching how operators interact with the system, because their work remains part of the overall process.",
+        "The companies say NAPA used the lab during design. NAPA’s engineering representative, Tyler Park, said in the announcement that the evaluation increased confidence in the solution before implementation. That is evidence of customer involvement in the design process. It is not a substitute for results from the eventual operating site."
+      ]
+    },
+    {
+      "heading": "A project announcement within a longer relationship",
+      "paragraphs": [
+        "The October disclosure should also be read in its proper chronology. NAPA, Hy-Tek and Hai representatives appeared together in a July 9 SupplyChainBrain webinar about parts distribution and flexible automation.",
+        "Their public relationship therefore predates this week. The new dated material is the specific project announcement, including its HaiPick scope and the described lab evaluation. The companies do not date NAPA’s procurement decision in the release, and the article does not treat October 15 as the day a contract was signed.",
+        "That distinction leaves the commercial story intact. The partners are now publicly attaching their names and roles to a defined automation project. Readers can follow the next stages against that announced scope instead of treating a general discussion of robotics as a deployment."
+      ]
+    },
+    {
+      "heading": "The commercial test",
+      "paragraphs": [
+        "For NAPA, the potential benefit is a fulfillment process that can handle a varied assortment while adapting to changing demand. For Hai, the project represents a customer application for its systems. For Hy-Tek, it shows the commercial role of bringing technology, software and operational design together.",
+        "The next step is execution. A successful project has to preserve service during the transition, train the people who will operate it and demonstrate performance under normal and busy conditions. Those demands can be as consequential as the choice of robot.",
+        "Useful follow through would include commissioning, acceptance against the agreed workload and sustained order performance after the initial transition. The important comparison is with the operation the customer actually needed to improve, using consistent definitions of throughput, accuracy and labor effort.",
+        "This project illustrates where warehouse robotics becomes a business decision: a customer chooses a process, an integration partner takes responsibility for assembling it and a supplier provides the machines and software. The value will emerge when that coordinated system starts delivering dependable orders."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Hai Robotics, original project announcement through TMX Newsfile, October 15, 2026 at 9:00 a.m. EDT, 13:00 UTC. Earliest timestamp verified in this research.",
+      "url": "https://www.newsfile-prod.tmx.cloud/release/319118/Hai-Robotics-and-HyTek-Intralogistics-Selected-to-Deliver-Advanced-Warehouse-Automation-for-NAPA-Auto-Parts"
+    },
+    {
+      "label": "Hy-Tek Intralogistics, same project announcement through GlobeNewswire, October 15, 2026 at 12:15 p.m. Eastern, 16:15 UTC. Later distribution does not reset freshness.",
+      "url": "https://www.globenewswire.com/news-release/2026/10/15/3382009/0/en/hy-tek-intralogistics-selected-to-deliver-advanced-warehouse-automation-for-napa-auto-parts.html"
+    },
+    {
+      "label": "Hai Robotics, counterpart announcement, October 15, 2026. Same joint disclosure, not independent performance verification.",
+      "url": "https://www.hairobotics.com/news/hai-robotics-and-hy-tek-intralogistics-selected-deliver-advanced-warehouse-automation-napa-auto-parts"
+    },
+    {
+      "label": "Hy-Tek, Innovation Lab, undated, accessed October 16, 2026. Facility and testing scope.",
+      "url": "https://hy-tek.com/innovation-lab/"
+    },
+    {
+      "label": "Hy-Tek, Hai Robotics partner and system overview, undated, accessed October 16, 2026. Portfolio background; individual configurations are not asserted for NAPA.",
+      "url": "https://hy-tek.com/partners/hai-robotics/"
+    },
+    {
+      "label": "SupplyChainBrain, Future Proofing Parts Distribution, July 9, 2026. Earlier webinar featuring NAPA, Hy-Tek and Hai personnel; the recording was not reviewed.",
+      "url": "https://www.supplychainbrain.com/articles/44169-future-proofing-parts-distribution"
+    },
+    {
+      "label": "Forklift Revolution, project reporting by Rick LeBlanc, October 15, 2026. Specialist coverage; announcement based.",
+      "url": "https://www.forkliftrevolution.net/napa-auto-parts-hy-tek-hai-robotics-warehouse-automation/"
+    },
+    {
+      "label": "Industrial Machinery Digest, project coverage, October 15, 2026. Corroborating release based reporting.",
+      "url": "https://industrialmachinerydigest.com/material-handling/automated-storage-retrieval/hy-tek-intralogistics-selected-to-deliver-advanced-warehouse-automation-for-napa-auto-parts"
+    }
+  ]
+},
+{
+  "taxonomy": {
+    "primaryIndustry": "warehousing-logistics",
+    "relevantIndustries": [
       "manufacturing"
     ],
     "technologies": [
