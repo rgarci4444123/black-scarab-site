@@ -46,7 +46,7 @@ export const newsUpdates: NewsUpdate[] = [
       "material-handling"
     ]
   },
-  "slug": "agility-nyobolt-digit-5-battery-robot-labor",
+  slug: "agility-nyobolt-digit-5-battery-robot-labor",
   "title": "Agility names Nyobolt as the battery supplier behind Digit 5’s longer working day",
   "summary": "Shorter charging stops could change fleet size, cost per productive hour and the tasks robots can take over. The larger labor impact depends on what happens during the rest of the shift.",
   "category": "Humanoid robotics",
