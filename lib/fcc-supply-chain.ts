@@ -31,7 +31,7 @@ export function fccSupplyChainDeepDive(): CaseStudyArticle {
     seoDescription: "Understand FCC robot and component restrictions, search the Covered List, download a supplier checklist and find help with US equipment approvals.",
     publishedLabel: "October 16, 2026",
     publishedDate: "2026-10-16",
-    modifiedAt: "2026-10-16T14:52:53Z",
+    modifiedAt: "2026-10-16T14:56:39Z",
     publishedAt: "2026-10-16T14:10:23Z",
     typeLabel: "Deep Dive",
     industry: "Robotics",
