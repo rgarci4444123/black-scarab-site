@@ -1,3 +1,4 @@
+import { roboticPalletizersDeepDive } from "@/lib/robotic-palletizers";
 import { fccSupplyChainDeepDive } from "@/lib/fcc-supply-chain";
 import { robotPoliciesDeepDive } from "@/lib/robot-policies";
 import type { ArticleTaxonomy } from "@/lib/content-taxonomy";
@@ -16776,6 +16777,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  roboticPalletizersDeepDive(),
   fccSupplyChainDeepDive(),
   robotPoliciesDeepDive(),
   vibeManufacturingDeepDive(),
