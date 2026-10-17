@@ -35,6 +35,131 @@ export type NewsUpdate = {
 export const newsUpdates: NewsUpdate[] = [
 {
   "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [
+      "transportation-mobility",
+      "manufacturing"
+    ],
+    "technologies": [
+      "computer-vision",
+      "foundation-models",
+      "edge-ai"
+    ],
+    "applications": []
+  },
+  slug: "china-ai-technology-export-registration-proposed-controls",
+  "title": "China starts export registration for listed AI technology as wider controls enter consultation",
+  "summary": "China’s October 16 notice activates registration for specified technology transfers while proposed catalogue restrictions remain open for consultation through November 15.",
+  "category": "Technology export policy",
+  "publishedDate": "2026-10-17",
+  "publishedAt": "2026-10-17T16:38:22.932Z",
+  "publishedLabel": "October 17, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/china-ai-technology-export-registration-proposed-controls.png",
+  "imageAlt": "Golden computational filaments flow through and between three translucent crimson glass panels against a pale violet background.",
+  "imageCaption": "Original Black Scarab editorial illustration of technology flows crossing defined administrative boundaries.",
+  "readingTime": "7 min read",
+  "keyPoints": [
+    "Interim registration applies from publication of Announcement 48 on October 16, including covered exports that have begun but are not finished.",
+    "Proposed catalogue changes remain under consultation through November 15. The announcement does not set the final revised catalogue’s implementation date.",
+    "The annex supplies technical scope. Registration, a future export licence and permission to ship a finished product are distinct questions."
+  ],
+  "sections": [
+    {
+      "heading": "Registration starts while consultation opens",
+      "paragraphs": [
+        "China began requiring registration before exports of specified technologies on October 16 while opening a consultation on proposed additions to its catalogue of prohibited and restricted technology exports.",
+        "The joint notice from the Ministry of Commerce and Ministry of Science and Technology covers proposed changes involving artificial intelligence, biomedicine and photovoltaics. Its official annex includes AI chip design technology applicable to autonomous driving and computer vision, as well as defined model, agent and computing cluster technologies.",
+        "For robotics and autonomy businesses, the immediate issue is whether a particular transfer of technology falls within those definitions. The notice does not establish a blanket ban on exporting robots or every component used in them."
+      ]
+    },
+    {
+      "heading": "Two measures with different status",
+      "paragraphs": [
+        "The announcement combines an immediate administrative requirement with a proposed revision to the technology export regime. Keeping those separate is essential to understanding the commercial effect.",
+        "The catalogue proposal concerns 40 technologies across the three fields. The ministries describe 23 AI technologies, five biomedical technologies and 12 photovoltaic technologies. The official explanation divides the proposed additions into 14 prohibited and 26 restricted technologies.",
+        "Those proposed classifications have not become final catalogue controls merely because consultation has opened.",
+        "The interim registration requirement is already operative under the notice. It lasts from publication until the formally revised catalogue takes effect. Export operators must register covered technology before export through the ministry’s technology trade management system. Transfers already under way but not completed are included.",
+        "The notice lists overseas transfers of technology ownership, licensing domestic technology for use abroad and changes that place ownership or actual control of domestic technology with an overseas party. It also allows the ministry to identify other registration situations by notice.",
+        "A contract signed earlier is therefore not, by itself, evidence that an unfinished covered transfer falls outside registration."
+      ]
+    },
+    {
+      "heading": "Why the annex matters for autonomy",
+      "paragraphs": [
+        "The clearest link to autonomy hardware sits in proposed item 266506X, covering AI chip design technology. Its description includes chip architecture, proprietary instruction sets, computing intellectual property cores and supporting foundational software stacks.",
+        "The listed criteria are alternatives. Among them are use of a manufacturing process of 14 nanometres or below, floating point or integer computation capability, specified advanced packaging, high speed interconnection, certain nontraditional computing architectures, or application to fields including autonomous driving and computer vision.",
+        "That wording deserves close classification work by a business transferring relevant design technology. It is not confined to the most advanced fabrication process: the entry uses an “any one” structure, so a company cannot assume that a process above 14 nanometres settles the question.",
+        "The object of that entry is design technology. A commercial sale of an assembled robot, a chip shipment and an overseas licence to use chip design intellectual property are different transactions. The official explanation says products manufactured using the relevant technology are outside the described technology scope, while identifying a separate equipment treatment for specified photovoltaic technology.",
+        "That distinction makes it unsafe to translate the announcement into a general robot shipment restriction. Other applicable trade rules would remain separate questions."
+      ]
+    },
+    {
+      "heading": "Models have several routes into scope",
+      "paragraphs": [
+        "Proposed item 266504X includes large models trained using China’s legally defined important data, with a specific exclusion involving a very small share of such data and additional conditions.",
+        "A separate part of the entry addresses core technology such as weights, key checkpoints, underlying source code, architecture, training optimization and inference acceleration. Its alternative criteria include computation of at least 10 to the power of 26 floating point operations, at least two trillion parameters, or capabilities reaching the defined globally leading level.",
+        "The final criterion is consequential. The annex links it to publicly assessed top ten global rankings across specified measures, including overall performance and specialized business capability, at the time of export. A parameter count below two trillion does not alone establish that a transfer is outside scope.",
+        "The proposal also distinguishes important data from core data, which appears in the prohibited model category. These are legal categories referenced to Chinese law, rather than interchangeable descriptions of valuable training information.",
+        "A robotics developer evaluating a model transfer would therefore need to examine the technology, the data basis and the relevant performance criteria. Calling a model small, specialized or embodied would not answer those questions by itself."
+      ]
+    },
+    {
+      "heading": "Agents and computing infrastructure",
+      "paragraphs": [
+        "The proposed agent entry includes defined thresholds for planning, coordination, tool use and game decision technology. One planning criterion combines at least 20 executable subtasks with minimum decomposition accuracy and average subtask success rates. Other parts use their own combinations of capability and performance conditions.",
+        "These entries concern defined technology capabilities. The ordinary use of the word “agent” in a product description does not establish that the criteria are met, and a robot capable of using several tools should not automatically be classified from that description alone.",
+        "The computing cluster entry also has a defined boundary. It describes clusters with more than 10,000 AI accelerator cards and sets criteria for interconnection, fault recovery, communication scheduling and heterogeneous computing.",
+        "That is relevant to the infrastructure used to train and operate advanced systems. It should not be casually applied to every computer installed at a factory or every edge processor inside a robot."
+      ]
+    },
+    {
+      "heading": "Delivery models are treated differently",
+      "paragraphs": [
+        "The ministry’s explanation discusses how the proposed final regime would distinguish overseas deployment of restricted model technology from providing access to a model.",
+        "It says overseas localization of restricted technology falls within technology export management, with facilitation possible for situations such as deployment on an enterprise’s own overseas cloud. It separately says API access, app or web interactions, software as a service and lightweight local edge deployment are outside the large model technology export scope it describes.",
+        "These statements address the proposed regime and its model delivery distinctions. They should not be converted into a general exemption from every entry in the annex or an assumption that interim registration never applies.",
+        "The notice excludes technology already in the public domain through channels such as open source publication or academic papers. The proposal also describes automatic licensing and other facilitation for specified activities, including certain open source releases, overseas chip fabrication, joint research and overseas computing facilities.",
+        "Already public technology and a new transfer seeking facilitated treatment are different situations. A plan to release something openly is not the same fact as its already having entered the public domain."
+      ]
+    },
+    {
+      "heading": "What changes commercially",
+      "paragraphs": [
+        "The immediate effect for a potentially covered transaction is an additional classification and registration step. The parties need to understand what technology is crossing the border, who owns or controls it, how the recipient will use it and whether the annex definition is met.",
+        "For a supplier licensing software or design intellectual property abroad, that can affect the information needed before a transfer proceeds. For a buyer, the relevant diligence may concern the licensed technology and delivery arrangement rather than the nationality of a finished machine.",
+        "Black Scarab’s analysis is that the most exposed business processes are likely to be those that move technical capability between organizations: licensing, localization, joint development and ownership or control transactions. The actual effect remains specific to the technology and transaction. No named robotics company has been established as affected in this report.",
+        "The commercial risk is also uncertainty during the transition. Parties may need to separate obligations that apply now from terms that depend on the final catalogue. Registration does not itself establish that a future licence has been obtained, and a proposed prohibition should not be presented as an already enforced ban."
+      ]
+    },
+    {
+      "heading": "The next dates and decisions",
+      "paragraphs": [
+        "The consultation runs through November 15. The next substantive milestone is the publication of the revised catalogue and its implementation terms, including any changes to thresholds, exclusions or facilitation.",
+        "Until then, the practical news is precise: China has activated interim registration for annex listed technology transfers while consulting on broader controls. For autonomy and machine vision businesses, the annex now provides concrete categories to assess. It does not justify treating the entire robotics supply chain as prohibited."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Ministry of Commerce and Ministry of Science and Technology, Announcement 48, October 16, 2026. Official page displays 16:00; timezone is not expressly printed.",
+      "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_0a31a3c9ac404f7a9b0e917ce3412997.html"
+    },
+    {
+      "label": "Official Annex 1, proposed technology scope, linked from Announcement 48. Original WPS attachment downloaded and text checked October 17, including the exponent and alternative criteria.",
+      "url": "https://www.mofcom.gov.cn/cms_files/filemanager/600926013/attach/20269/4f8fdb877dd448dfab8b65ba1f340bd5.wps"
+    },
+    {
+      "label": "Ministry of Commerce, official questions and answers, October 16, 2026, displayed 16:00 with no express timezone.",
+      "url": "https://www.mofcom.gov.cn/zwgk/zcjd/art/2026/art_b11d5c1e9374421e93e85dc87eba6e38.html"
+    }
+  ]
+},
+{
+  "taxonomy": {
     "primaryIndustry": "manufacturing",
     "relevantIndustries": [],
     "technologies": [
