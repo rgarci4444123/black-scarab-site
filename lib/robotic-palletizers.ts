@@ -1,244 +1,353 @@
 import type { CaseStudyArticle } from "@/lib/case-studies";
 
 export const roboticPalletizersDeepDive = (): CaseStudyArticle => ({
-  slug: "best-robotic-palletizers",
-  taxonomy: {
-    primaryIndustry: "manufacturing",
-    relevantIndustries: ["warehousing-logistics"],
-    technologies: ["industrial-robotics", "collaborative-robotics", "manipulation"],
-    applications: ["palletizing"],
+  "slug": "best-robotic-palletizers",
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [
+      "warehousing-logistics"
+    ],
+    "technologies": [
+      "industrial-robotics",
+      "collaborative-robotics",
+      "manipulation"
+    ],
+    "applications": [
+      "palletizing"
+    ]
   },
-  title: "Best Robotic Palletizers in 2026: Top Systems Compared",
-  seoTitle: "Best Robotic Palletizers in 2026: Top Systems Compared",
-  summary: "Compare eight robotic palletizing systems for cartons, bags, heavy loads and cold storage, with practical guidance on payload, throughput, installed cost and payback.",
-  seoDescription: "Compare the best robotic palletizers for 2026, including Robotiq, FANUC, ABB and more. Explore cobot systems, payload, cost, throughput and buying criteria.",
-  publishedLabel: "Deep Dive · Published October 17, 2026",
-  publishedDate: "2026-10-17",
-  publishedAt: "2026-10-17T17:03:25.857454Z",
-  typeLabel: "Deep Dive",
-  formatLabel: "Systems, specifications and buying guide",
-  industry: "Industrial Robotics",
-  image: "/article-images/best-robotic-palletizers.png",
-  imageAlt: "Screen print style editorial illustration of a robotic vacuum gripper lifting three cartons above a loaded pallet against a red background",
-  imageCaption: "Original Black Scarab editorial illustration of robotic palletizing.",
-  sourceLinksPlacement: "bottom",
-  tags: ["robotic palletizers", "palletizing robots", "cobot palletizer", "palletizer cost", "packaging automation", "industrial robotics"],
-  author: { name: "Rodolfo Garcia Calderoni, CFA", href: "/about" },
-  sections: [
-    {
-      paragraphs: [
-        "The best robotic palletizers in 2026 include Robotiq PAL Series and Vention Rapid Series for compact, configurable cells; Columbia/Okura miniPAL for integrated cobot palletizing; FANUC M-410 and ABB IRB 460 for industrial lines; Yaskawa PL190 for heavier loads and longer reach; KUKA KR QUANTEC PA Arctic for frozen products; and Premier Tech CHRONOS RPL systems for automated packaging lines.",
-        "Choosing between them starts with the package leaving your conveyor. A small carton that arrives every ten seconds is a different automation problem from a heavy bag, a group of cases or a frozen load. The robot has to grip that package, carry it through the required path and build a stable pallet while the rest of the line keeps moving.",
-        "A palletizer therefore earns its place through sustained output, straightforward recovery and manageable ownership cost. The arm is one part of that decision. The gripper, infeed, pallet exchange, software and service arrangement determine how much useful work the complete system delivers.",
-      ],
-    },
-    {
-      heading: "How we chose the best robotic palletizers",
-      paragraphs: [
-        "Black Scarab selected these eight options to cover distinct production needs, using current manufacturer specifications, product documentation and deployment accounts reviewed on October 17, 2026. The recommendations are our assessment of application fit. Performance figures are manufacturer ratings; this is a researched comparison rather than a hands on equipment test.",
-        "Three suppliers package cobot cells around robot hardware, while FANUC, ABB, Yaskawa and KUKA supply industrial robots that become palletizers through integration. Premier Tech supplies complete packaging systems. That distinction matters when comparing proposals: a robot quotation and an installed cell quotation cover different work.",
-        "Independent trade reporting provides context for that integration work. Packaging World's October 2025 report on Griffith Foods in Colombia describes a Robotiq PE10 and Universal Robots UR10e installation commissioned by IGPS in August 2024. Its account emphasizes product trials, simulation and operator training alongside the equipment.",
-      ],
-      callouts: [
-        { title: "Compact carton lines", body: "Start with Robotiq, Vention and Columbia/Okura. Compare the complete cell against your cases, stack heights and pallet change routine." },
-        { title: "Industrial loads and sustained volume", body: "Shortlist FANUC, ABB and Yaskawa with an integrator who can demonstrate the proposed gripper and material flow." },
-        { title: "Special operating conditions", body: "Consider KUKA Arctic for deep freeze environments and Premier Tech when bag preparation, pallet handling and load exit belong in one project." },
-      ],
-    },
-    {
-      heading: "1. Robotiq PAL Series: Best starting point for compact carton palletizing",
-      paragraphs: [
-        "Robotiq is a strong first comparison for a manufacturer replacing repetitive manual carton stacking. Its PAL Series combines standard PE and AX configurations with software, grippers, infeed and safeguarding modules. PAL Ready is the assembled cell option. The distinction gives buyers a choice between a defined package and a more configurable installation.",
-        "The currently linked PAL specification sheet lists the PE20 at 23 kg payload, up to 13 cycles per minute and 2,150 mm pallet height. The AX20 adds a vertical axis and lists 3,000 mm pallet height, 23 kg payload and up to 10 cycles per minute. These are configuration dependent ratings. The taller model is valuable when the top layer would otherwise fall outside the working envelope.",
-        "Robotiq's RAIN case study describes a PE20 with a Universal Robots cobot handling 30 pound beverage cartons arriving at six per minute. The customer founder says two workers moved into other roles. That is a useful example of the commercial proposition: relieve repetitive lifting and put existing staff where the plant needs them.",
-        "Our recommendation is to begin with the simplest PE configuration that reaches every required position, then consider AX when stack height justifies the additional mechanism. Send actual filled cartons for gripping trials. A vacuum tool needs to work with the board, seams and surface condition that arrive in production.",
-      ],
-    },
-    {
-      heading: "2. Vention Rapid Series: Best for a configurable automation package",
-      paragraphs: [
-        "Vention suits a buyer who wants to configure the palletizer alongside conveyors, tooling and operating software. Its Rapid Series 3.0 documentation identifies four basic arrangements: a Universal Robots UR20 or FANUC CRX-30iA, each on a fixed pedestal or telescopic column.",
-        "Vention lists up to 13 picks per minute for the UR20 configuration and eight for the CRX configuration. Its published robot payload figures are 25 kg and 30 kg respectively. Usable product mass must be checked with the selected gripper. The tallest arrangement reaches a pallet height of 3,465 mm using a telescopic column and riser, which makes overhead clearance and stability important design inputs.",
-        "The package includes the Palletizer MachineApp, a MachineMotion pendant and a first year operating bundle with support and analytics. Safety and pneumatic options change the configuration and price. Black Scarab would compare the complete bill of materials and recurring service terms, then test the actual recipe at the required stack height.",
-        "The advantage is a common configuration and support environment for a broader automation project. The practical test is how easily your team can introduce another carton, recover a partial pallet and diagnose a stopped infeed after commissioning.",
-      ],
-    },
-    {
-      heading: "3. Columbia/Okura miniPAL: Best for integration support and a rental route",
-      paragraphs: [
-        "Columbia/Okura approaches cobot palletizing as an integration problem. Its miniPAL range combines the robot with tooling, pattern software and the surrounding cell. That makes it worth considering when the buyer wants one supplier to help connect the equipment to an existing packaging operation.",
-        "The current miniPAL 20 specification sheet lists a combined payload of 25 kg and a rate of six to 28 cases per minute, dependent on pattern and picking multiple cases together. It identifies vacuum or clamp tooling, a Hytrol E24 infeed and Rocketfarm's Pally software. The upper rate requires the right handling arrangement; it is not 28 separate robot picks every minute.",
-        "There is also a distinct US rental program for cases, with an initiation fee, a minimum three month commitment, deployment and basic training. Its published rental configuration lists a 44 pound load capacity and up to eight picks per minute. Evaluate that configuration on its own terms.",
-        "For a manufacturer testing whether palletizing is its next useful automation project, rental can make operational learning part of the commercial decision. Compare the total rental commitment, conversion terms and support obligations against purchase. The strongest trial includes the operators who will run the cell after the supplier leaves.",
-      ],
-    },
-    {
-      heading: "4. FANUC M-410: Best for a custom industrial palletizing cell",
-      paragraphs: [
-        "FANUC's M-410 family belongs on the shortlist when the task calls for an industrial cell with substantial tooling, heavier loads or a customized layout. The M-410iC/110 is a four axis example with a rated 110 kg payload and 2,403 mm reach in FANUC's technical table. The page specifies the R-30iB Plus controller.",
-        "That payload gives the integrator room to evaluate grouped cases and larger tools. The resulting capacity depends on tool mass, load distribution and the required motion. A 110 kg robot rating is not permission to put 110 kg of product on any gripper at any speed.",
-        "FANUC's integrator route is especially relevant where the plant already supports its controllers and wants to reuse maintenance knowledge. Ask the cell builder to demonstrate the full sequence: product accumulation, picking, stacking, sheet placement where needed, pallet exchange and restart.",
-        "Our preference for this route strengthens as the handling problem becomes more specialized. It also makes the integrator's execution central to the buying decision. A capable arm will spend its shift waiting if the conveyor cannot present the next group of cases or the finished pallet cannot leave.",
-      ],
-    },
-    {
-      heading: "5. ABB IRB 460: Best for a focused industrial bag palletizing proposal",
-      paragraphs: [
-        "ABB's IRB 460 is a compact four axis palletizing robot rated for 110 kg with 2.4 m reach. ABB publishes up to 2,190 cycles per hour with a 60 kg load and describes a bag handling combination using its FlexGripper Claw and RobotStudio Palletizing PowerPac.",
-        "That combination makes ABB a useful comparison for bag handling projects where tooling and motion need to be developed together. RobotStudio supports offline layout and programming work, allowing the integrator to examine the planned installation before the production line is interrupted.",
-        "Black Scarab would choose between ABB and a competing industrial system through the tested cell proposal, existing plant expertise and service coverage. Small differences between vendor cycle benchmarks should carry less weight than a demonstration with the actual bag and stack pattern.",
-        "Bags change shape as their contents settle. The test should examine how the gripper supports the load, how the bag is prepared before pickup and whether the completed layers remain stable during transport. Nominal lifting capacity answers only part of that problem.",
-      ],
-    },
-    {
-      heading: "6. Yaskawa PL190: Best for heavier picks and a larger working envelope",
-      paragraphs: [
-        "The Yaskawa Motoman PL190 offers a different payload and reach combination: 190 kg and 3,159 mm, with four axes. Yaskawa describes an achievable stacking height above 2,600 mm and applications involving cartons, boxes and bags.",
-        "The larger envelope is useful when the cell must reach several positions or carry a heavier tool and product group. It can also give a layout designer more freedom around the infeed and pallet locations. The simulation still needs to validate every corner and layer with the actual tool geometry.",
-        "Our reason to shortlist the PL190 is the physical requirement. If a lighter, shorter robot already meets it comfortably, additional reach and capacity may add little value. When those limits constrain the layout, the PL190 gives the integrator a more capable starting point.",
-        "Include foundation requirements, access for maintenance and protected working space in the proposal. A longer reach has consequences beyond the robot's base. It affects where people, pallet trucks and neighboring equipment can operate while the cell is running.",
-      ],
-    },
-    {
-      heading: "7. KUKA KR QUANTEC PA Arctic: Best for deep freeze palletizing",
-      paragraphs: [
-        "KUKA's KR QUANTEC PA Arctic is the most distinctive option in this comparison because its purpose is defined by the environment. KUKA specifies operation from minus 30°C to plus 10°C, with 3,195 mm reach and payload variants of 120, 180 and 240 kg. It describes operation without a protective suit or robot arm heater.",
-        "For frozen food operations, that creates a concrete reason to evaluate a specialized palletizing robot. The application may keep product within a controlled cold chain while reducing the amount of repetitive work people perform in the freezer.",
-        "The cold environment must be qualified across the entire cell. Gripper seals, vacuum performance, hoses, sensors, lubrication, packaging and condensation during temperature transitions can all affect operation. The arm's temperature rating does not qualify those components automatically.",
-        "Black Scarab would request a cold environment acceptance test with the intended packaging and pallet pattern. Confirm the exact Arctic variant and controller arrangement in the quotation. The standard KR QUANTEC PA family and the Arctic configuration should remain distinct in the purchasing specification.",
-      ],
-    },
-    {
-      heading: "8. Premier Tech CHRONOS RPL: Best for a complete packaging line project",
-      paragraphs: [
-        "Premier Tech Systems and Automation is a useful starting point when the project includes bagging or case handling, pallet supply, slip sheets and finished load movement. Its CHRONOS RPL range addresses the complete flow around the robot.",
-        "The RPL-4000 uses separate equipment for pallet and sheet handling so the arm can concentrate on stacking. Premier Tech publishes case rates from 20 to 80 per minute with multiple unit picks and bag rates up to 23 per minute. Its RPL-2000 instead uses the robot to handle pallets, sheets and product, trading a different equipment arrangement against the arm's available time.",
-        "The company's Grain Millers case study describes an OML-1170-N bagger, RPL-4111-N palletizer and LSH-1100 stretch hooder installed as a line. Reported improvements belong to that combined process. It illustrates why a packaging supplier can be a better project lead when the bottleneck spans several machines.",
-        "Our recommendation is to define acceptance at the finished load exit. Specify stable pallets ready for the next logistics step, including changeovers and replenishment. That encourages the supplier to optimize the complete line rather than only the robot's motion.",
-      ],
-    },
-    {
-      heading: "Industrial palletizing robot specifications",
-      paragraphs: [
-        "These four industrial models provide a useful dimensional comparison. Rated robot payload includes the load imposed by tooling and product. Reach describes the arm, while usable pallet height and floor space depend on the complete installation.",
-      ],
-      tables: [{
-        title: "Payload and reach",
-        columns: ["Robot model", "Rated payload", "Reach"],
-        rows: [
-          ["FANUC M-410iC/110", "110 kg", "2,403 mm"],
-          ["ABB IRB 460", "110 kg", "2,400 mm"],
-          ["Yaskawa PL190", "190 kg", "3,159 mm"],
-          ["KUKA KR 240 R3200-2 PA", "240 kg", "3,195 mm"],
-        ],
-        note: "Manufacturer specifications reviewed October 17, 2026. The KUKA row describes the standard model; select an Arctic variant for the documented cold environment capability.",
-      }],
-    },
-    {
-      heading: "Cobot palletizer or industrial robot?",
-      paragraphs: [
-        "A cobot cell is often a sensible first proposal for a moderate carton flow, frequent product changes and an existing production area. Standardized hardware and approachable recipe software can reduce the work involved in deployment. The cell still needs enough capacity to absorb peaks and enough space to exchange pallets.",
-        "An industrial palletizing robot becomes more attractive as product groups, grippers, reach and sustained output grow. Purpose built four axis machines are well suited to keeping a load level while moving it between the infeed and stack. Their value comes through the engineered cell and its material handling sequence.",
-        "Collaborative operation is a property of the application. Universal Robots' safety documentation calls for assessment of the complete robot application, including foreseeable collisions. A heavy carton, sharp tool or trapping point changes the assessment even when the arm has force limiting functions. Ask for output measured with the final safeguarding and operating rules in place.",
-        "Conventional layer palletizers are another option when a steady product stream supports efficient layer formation. Mixed product order pallets pose a separate problem involving item sequencing, stack planning and product stability. A cell that changes recipes between uniform pallets should not be assumed to build arbitrary mixed pallets.",
-      ],
-    },
-    {
-      heading: "What is inside a robotic palletizing system?",
-      paragraphs: [
-        "The infeed establishes where and when the package can be picked. Conveyors, stops and sensors may align individual cartons or form groups. Poor presentation can waste robot time or produce unreliable grips. For bags, settling and flattening can be as consequential as the arm selection.",
-        "The end effector establishes the physical connection to the load. Vacuum tools suit appropriate sealed surfaces; mechanical fingers or clamps support other package types. Multiple pick tooling can move more cases per cycle, but requires the upstream equipment to assemble the group and the pallet pattern to accept it. Tool weight, center of gravity and inertia must fit the robot's load limits.",
-        "Local control coordinates the work. The robot controller executes motion, while cell controls exchange signals with conveyors, pallet sensors and other machines. Recipe software converts package dimensions and a pallet pattern into the intended sequence. Vision can help with variable presentation or verification where the application needs it.",
-        "Cloud tools can support design, simulation, monitoring and service. Rocketfarm, for example, describes Pally programs with waypoints computed in the cloud for its URCap X workflow. Buyers should establish which steps require connectivity, what continues locally and how a saved program is restored after a controller replacement.",
-        "The final layer is the operator workflow. A good system shows which product is selected, where the pallet stopped and what the operator must do next. Demonstrate recovery from a missing case, a failed grip and a partly completed pallet. Those small interruptions often determine how confidently the team uses the equipment.",
-      ],
-    },
-    {
-      heading: "How to compare palletizer throughput",
-      paragraphs: [
-        "Start with three different quantities: robot cycles, packages moved and accepted pallets leaving the cell. A cycle can move one case or several. A high case rate may rely on accumulation equipment and a particular pattern. Neither number captures every interruption during the shift.",
-        "Consider a hypothetical line delivering 12 cases per minute. Single case handling gives the robot five seconds per case before allowing for interruptions. Picking two at a time changes the nominal requirement to six picks per minute, provided the conveyor forms pairs and the stack accepts them. The complete cycle still includes approach, gripping, travel, placement and return.",
-        "Now assume a pallet holds 60 cases and a single pallet position requires a one minute production stop for exchange. Filling takes five minutes at the nominal rate, but the complete six minute sequence averages ten cases per minute. A second pallet position or automated exchange may recover more output than a faster arm.",
-        "Measure the difficult products as well as the common ones. Include the highest layer, longest travel, least reliable grip, product changes and normal pallet handling. Agree whether the promised rate is instantaneous, averaged during a run or sustained over a production shift.",
-      ],
-    },
-    {
-      heading: "How much does a robotic palletizer cost?",
-      paragraphs: [
-        "Robotiq currently states that palletizing in the Americas starts at US$85,000. That is a useful vendor price anchor for a first conversation. The final quotation needs to identify the exact workcell, tooling, safeguarding, infeed, delivery and installation scope.",
-        "Build the budget around four groups of costs: equipment, site preparation, commissioning and ongoing operation. Equipment includes the robot, controller, gripper, conveyors and pallet handling. Site work can include power, compressed air, anchoring and layout changes. Commissioning includes programming, trials, training and the time needed to bring production back to its target rate.",
-        "Ongoing costs include maintenance, replacement cups or gripping surfaces, software and support subscriptions, energy and the people still needed to supply and clear the cell. Vention's first year operating bundle and Columbia/Okura's rental route are examples of why commercial terms deserve their own comparison.",
-        "Ask each bidder to price the same production boundary. If one proposal includes automated pallet discharge and another requires an operator to stop the line and exchange pallets, the difference belongs in both capital cost and the operating model.",
-      ],
-    },
-    {
-      heading: "A practical palletizer payback example",
-      paragraphs: [
-        "Use simple payback as an initial screen: installed project cost divided by annual net cash benefit. Keep the labor assumption tied to a real change in staffing, overtime or avoided hiring. Reassigning a person can improve the plant without immediately reducing payroll.",
-        "For a hypothetical project, assume US$140,000 installed cost and 3,000 hours of avoidable paid labor each year at a fully loaded US$30 per hour. That creates US$90,000 of annual gross labor benefit. Subtract an assumed US$12,000 for incremental maintenance, support and operating costs, leaving US$78,000. Simple payback is about 1.8 years.",
-        "If only 1,500 hours are actually avoidable, the same assumptions produce US$33,000 of annual net benefit and approximately 4.2 years of payback. These are illustrative inputs, not supplier prices or expected customer returns. The labor hours change the decision more than a small difference in robot purchase price.",
-        "Add incremental production value only when the plant can make and sell that output, and use contribution after its additional costs. Count damage reduction or avoided overtime when there is a defensible baseline. For a final investment decision, include commissioning time, financing, taxes and the timing of cash flows.",
-      ],
-    },
-    {
-      heading: "Three buying situations that change the shortlist",
-      paragraphs: [
-        "A hypothetical beverage producer runs eight kilogram cases at six per minute and changes products several times a week. Robotiq, Vention and miniPAL are natural starting points. Test the case surface, maximum pallet height and the operator's changeover routine. The plant may get more value from predictable recovery than excess rated speed.",
-        "A hypothetical food processor ships 25 kilogram bags continuously. Begin with an industrial proposal from ABB, FANUC or Yaskawa and a complete packaging proposal from Premier Tech. Compare bag preparation, gripping, layer stability and load exit. A carton cell's attractive demonstration does not establish that it can handle this product.",
-        "A hypothetical frozen food plant palletizes at minus 25°C. KUKA Arctic warrants early consideration because the environment is within its published range. The supplier still needs to qualify the tool and surrounding equipment at temperature, including the transition into and out of the freezer.",
-      ],
-    },
-    {
-      heading: "What to require before ordering",
-      paragraphs: [
-        "Give suppliers a short application file with package dimensions and filled weights, production rates, pallet sizes, stacking patterns, maximum load height, product change frequency and a dimensioned floor layout. Include photographs or samples of difficult packaging and the available utilities.",
-        "Require a factory acceptance test with representative product, then a site acceptance test with the real upstream and downstream equipment. Define accepted output, damage limits, pallet stability, changeover time, interventions and the observation period. Run the tests with the agreed safeguarding active.",
-        "Name the owner of every interface. The robot supplier, integrator, conveyor provider and software vendor may be different organizations. Establish who answers the service call, who can change a recipe, which backups the plant receives and how critical spare parts are obtained.",
-        "Finally, have the production team demonstrate ordinary operation themselves. Starting a new product, exchanging a pallet and recovering a stopped cycle should be part of acceptance. A system that only the commissioning engineer can run has not yet delivered the intended operational benefit.",
-      ],
-    },
-    {
-      heading: "Frequently asked questions",
-      paragraphs: [
-        "What is the best robotic palletizer for a small manufacturer? Start by comparing a Robotiq PE cell, Vention Rapid Series and Columbia/Okura miniPAL against the actual carton flow and available space. The best choice is the package that meets sustained output and is easiest for the team to operate and support.",
-        "How much weight can a palletizing robot lift? Models in the industrial comparison range from 110 to 240 kg rated payload. That rating must accommodate tooling and product under the specified load conditions. Packaged cobot systems have their own usable payload limits, which should be confirmed for the exact gripper and motion.",
-        "Does a cobot palletizer need a fence? The answer comes from the application risk assessment and final operating configuration. Scanners, guarding, separation and reduced speed can change both the required floor space and achieved throughput.",
-        "Can one robot palletize multiple products? Many systems store multiple recipes and can change between products. Building a single mixed product pallet is a different capability that needs explicit support for sequencing, geometry and stability.",
-        "Does robotic palletizing require AI? A repeatable case arriving at a known pickup position can be handled through configured motion and recipes. Vision and adaptive planning become useful when presentation or product mix varies. Buy those capabilities when they resolve a defined production problem.",
-      ],
-    },
-    {
-      heading: "The Black Scarab verdict",
-      paragraphs: [
-        "For a first carton palletizing project, we would begin with Robotiq, Vention and Columbia/Okura, using the same products and operating requirements in each evaluation. For heavier loads or a custom industrial layout, we would compare FANUC, ABB and Yaskawa through qualified cell proposals. KUKA Arctic has a clear role in deep freeze applications, while Premier Tech deserves attention when the project extends across the packaging line.",
-        "The most valuable specification is the number of stable, accepted pallets the installation can produce during an ordinary shift. Choose the supplier that can demonstrate that result with your packaging, your people and your material flow, then put the result and support obligations into the acceptance agreement.",
-      ],
-    },
+  "title": "Best Robotic Palletizers in 2026: Top Systems Compared",
+  "seoTitle": "Best Robotic Palletizers in 2026: Top Systems Compared",
+  "summary": "Compare eight robotic palletizing options by application, payload, throughput and price. Size your handling task, calculate payback and prepare a supplier shortlist.",
+  "seoDescription": "Compare the best robotic palletizers for 2026, including Robotiq, FANUC, ABB and more. Explore cobot systems, payload, cost, throughput and buying criteria.",
+  "publishedLabel": "Deep Dive · Published October 17, 2026",
+  "publishedDate": "2026-10-17",
+  "publishedAt": "2026-10-17T17:03:25.857454Z",
+  "typeLabel": "Deep Dive",
+  "formatLabel": "Comparison, pricing and interactive calculator",
+  "industry": "Industrial Robotics",
+  "image": "/article-images/best-robotic-palletizers.png",
+  "imageAlt": "Screen print style editorial illustration of a robotic vacuum gripper lifting three cartons above a loaded pallet against a red background",
+  "imageCaption": "Original Black Scarab editorial illustration of robotic palletizing.",
+  "sourceLinksPlacement": "bottom",
+  "tags": [
+    "robotic palletizers",
+    "palletizing robots",
+    "cobot palletizer",
+    "palletizer cost",
+    "packaging automation",
+    "industrial robotics"
   ],
-  sources: [],
-  sourceLinks: [
-    { label: "Packaging World reporting on Griffith Foods palletizing in Colombia", url: "https://www.packworld.com/secondary-packaging/robotics/article/22953522/griffith-foods-model-in-colombia-robots-with-a-human-touch" },
-    { label: "Robotiq Lean Palletizing and Americas starting price", url: "https://robotiq.com/solutions/palletizing" },
-    { label: "Robotiq PAL Series specifications", url: "https://robotiq.com/hubfs/PAL_Product_Sheet_EN_Recto_Verso_WEB.pdf" },
-    { label: "Robotiq RAIN deployment case study", url: "https://robotiq.com/resource-center/case-studies/rain" },
-    { label: "Vention Rapid Series Palletizer 3.0 documentation", url: "https://docs.vention.com/docs/rapid-series-palletizer-30" },
-    { label: "Columbia/Okura collaborative palletizers", url: "https://columbiaokura.com/products/collaborative-robots/" },
-    { label: "Columbia/Okura miniPAL 20 current specification sheet", url: "https://columbiaokura.com/wp-content/uploads/2025/07/Cutsheet-miniPAL20_07.22.25.pdf" },
-    { label: "Columbia/Okura US cobot rental program", url: "https://columbiaokura.com/products/cobot-rental/" },
-    { label: "FANUC M-410iC/110 specifications", url: "https://www.fanuc.eu/eu-en/product/robot/m-410ic110" },
-    { label: "FANUC M-410 family", url: "https://www.fanucamerica.com/products/series/m-410" },
-    { label: "ABB IRB 460 specifications and palletizing software", url: "https://new.abb.com/products/robotics/nl/onze-robots/articulated-robots/irb-460" },
-    { label: "Yaskawa PL190 specifications", url: "https://www.yaskawa.co.uk/robotics/robots/palletizing/productdetail/product/pl190_12185" },
-    { label: "KUKA KR QUANTEC PA specifications", url: "https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/kr-quantec-pa" },
-    { label: "KUKA KR QUANTEC PA Arctic temperature and payload ratings", url: "https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/kr-quantec-pa/kr-quantec-pa-arctic" },
-    { label: "Premier Tech CHRONOS RPL-4000", url: "https://www.ptchronos.com/products/palletizing/palletizing-robots/high-performant-palletizing-robot" },
-    { label: "Premier Tech CHRONOS RPL-2000", url: "https://www.ptchronos.com/products/palletizing/palletizing-robots/fully-automatic-palletizing-robot" },
-    { label: "Premier Tech Systems and Automation company and integration background", url: "https://www.ptchronos.com/about-us" },
-    { label: "Premier Tech Grain Millers packaging line case study", url: "https://www.ptchronos.com/testimonials/grain-millers" },
-    { label: "Rocketfarm Pally software architecture", url: "https://www.rocketfarm.no/resource-center/insights/3-key-components-of-pally/" },
-    { label: "Rocketfarm Pally URCap X release documentation", url: "https://rocketfarm.no/software-products/palletizing/pally-official-software-download/" },
-    { label: "Universal Robots palletizing applications", url: "https://www.universal-robots.com/applications/palletizing/" },
-    { label: "Universal Robots payload design guide", url: "https://www.universal-robots.com/articles/ur/application-installation/how-to-design-for-higher-payloads/" },
-    { label: "Universal Robots application risk assessment documentation", url: "https://www.universal-robots.com/manuals/EN/HTML/SW5_24/Content/prod-usr-man/complianceUR10e/H_g5_sections/safety_g5/risk_assessment.htm" },
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "sections": [
+    {
+      "id": "start",
+      "paragraphs": [
+        "For a first carton palletizing project, start with Robotiq, Vention and Columbia/Okura. For heavier loads and custom layouts, compare integrated proposals built around FANUC, ABB or Yaskawa. KUKA Arctic addresses deep freeze operations; Premier Tech fits projects spanning the packaging line.",
+        "The best robotic palletizer is the complete installation that meets your product flow and operating budget. Use the comparison to choose a supply scope, then test the economics with your own labor assumptions."
+      ]
+    },
+    {
+      "id": "compare",
+      "heading": "Best robotic palletizers at a glance",
+      "paragraphs": [],
+      "buyingGuideTool": "palletizer-comparison"
+    },
+    {
+      "id": "budget",
+      "heading": "What should you budget for a robotic palletizer?",
+      "paragraphs": [
+        "Robotiq’s FAQ gives an Americas starting price of US$85,000 for palletizing. Vention’s EMEA offer advertises cobot palletizing from €73,500. These are regional entry offers, not prices for every configuration in the comparison. Ask each supplier to identify the robot, gripper, pallet positions and deployment services covered. The final Rapid Series 3.0 configuration needs its own quotation.",
+        "For miniPAL and Premier Tech, request a defined system proposal. For FANUC, ABB, Yaskawa and KUKA, obtain both the arm package price and the complete installed cell price. A lower arm price can be offset by tooling, controls and material handling work.",
+        "A comparable quotation should cover equipment and tooling; infeed and pallet exchange; guarding and safety validation; freight, installation and site utilities; programming, product trials and training; and annual software, support and maintenance. Define output at the finished pallet exit so every bidder prices the same production boundary.",
+        "Columbia/Okura also offers a US miniPAL rental route with an initiation fee and a minimum three month commitment. Compare the full rental obligation, conversion terms and support against purchase."
+      ]
+    },
+    {
+      "id": "calculator",
+      "heading": "Palletizer sizing and payback calculator",
+      "paragraphs": [],
+      "buyingGuideTool": "palletizer-calculator"
+    },
+    {
+      "id": "payback",
+      "heading": "What changes the payback?",
+      "paragraphs": [
+        "The illustrative US$140,000 project in the calculator produces US$78,000 of annual net benefit when 3,000 paid hours are avoidable at US$30 per hour, after US$12,000 in annual running costs. Simple payback is about 1.8 years. With only 1,500 avoidable hours, the net benefit falls to US$33,000 and payback stretches to about 4.2 years.",
+        "Include production gains only when the plant can make and sell the additional output, using contribution after its extra costs. Avoid counting the same saved labor twice. The sensitivity table shows how much of the result depends on a real change in staffing, overtime or avoided hiring."
+      ]
+    },
+    {
+      "id": "packaged-cells",
+      "heading": "Packaged palletizing solutions",
+      "paragraphs": [
+        "These suppliers combine the robot with application software, tooling and a defined cell configuration. Compare installation and support scope before treating two packages as equivalent."
+      ],
+      "visuals": [
+        {
+          "afterParagraphIndex": 1,
+          "src": "/article-images/palletizers/compact-cell-isolated.webp",
+          "alt": "A silver cobot lifts a carton from a roller conveyor beside a separate floor pallet of stacked boxes.",
+          "width": 1672,
+          "height": 941,
+          "caption": "Compact carton palletizing cell. Original Black Scarab editorial illustration."
+        }
+      ]
+    },
+    {
+      "id": "robotiq",
+      "heading": "Robotiq PAL Series: Our first call for a straightforward carton line",
+      "paragraphs": [
+        "Robotiq offers PAL Ready as an assembled cell and PAL Series as modular PE and AX configurations. That is a practical starting point for a manufacturer replacing repetitive manual stacking with standard cartons and stored pallet recipes.",
+        "The linked PAL product sheet lists PE20 at 23 kg package payload, up to 13 cycles per minute and 2,150 mm pallet height. AX20 adds a vertical axis and lists 23 kg, up to 10 cycles per minute and 3,000 mm height. These named configurations do not define the family maximum: Robotiq’s current FAQ advertises up to 35 kg, while the AX20/AX30 manual identifies 35 kg with UR30 as total payload including the gripper. Use the exact tool and configuration to establish usable product mass.",
+        "Robotiq’s RAIN case study describes a PE20 with a Universal Robots cobot handling 30 pound beverage cartons at six per minute; the founder says two workers moved to other roles. Our preference is the simplest PE configuration that covers the required stack. Eliminate PE20 when its height or tested handling capacity cannot meet the job; evaluate AX or a heavier cell instead."
+      ]
+    },
+    {
+      "id": "vention",
+      "heading": "Vention Rapid Series: Best for a configurable automation package",
+      "paragraphs": [
+        "Choose Vention when the palletizer is part of a modular conveyor and controls project. Rapid Series 3.0 offers a Universal Robots UR20 or FANUC CRX-30iA on a fixed pedestal or telescopic column. Documentation lists robot payloads of 25 and 30 kg, with up to 13 and eight picks per minute respectively. Subtract the selected gripper’s load from robot capacity.",
+        "The tallest arrangement reaches a published 3,465 mm pallet height using a column and riser. The package includes the Palletizer MachineApp, a MachineMotion pendant and a first year operating bundle. Column, guarding and pneumatic choices affect the proposal.",
+        "Vention earns its place when a common configuration and support environment reduces integration effort across the line. Eliminate a configuration when overhead clearance, guarded floor space or the tested cycle cannot fit. Confirm renewal costs and which commissioning services belong in the quotation."
+      ]
+    },
+    {
+      "id": "columbia-okura",
+      "heading": "Columbia/Okura: miniPAL for cartons, dynaPAL for industrial loads",
+      "paragraphs": [
+        "Columbia/Okura supplies both collaborative and industrial palletizing systems. The miniPAL 20 is the compact cobot option: its current sheet lists 25 kg combined payload and six to 28 cases per minute, with the upper rate dependent on pattern and multiple case picks. The package identifies vacuum or clamp tooling, Hytrol E24 infeed and Rocketfarm Pally software.",
+        "The US rental program is a separate specification, listing a 44 pound load capacity and up to eight picks per minute for cases. Our reason to evaluate it is the chance to test a repeatable operating workflow before purchase. Compare the exact rental hardware and service commitment.",
+        "For heavier work, ask the same supplier about dynaPAL. The industrial sheet lists Lite at 50 to 100 kg and up to 12 individual picks per minute; standard dynaPAL at 100 to 160 kg and up to 28; and HD at 160 kg or more and up to eight. Those are separate configurations. Move from miniPAL to the industrial range when the tested package, tool or required output exceeds the cobot cell’s limits."
+      ]
+    },
+    {
+      "id": "premier-tech",
+      "heading": "Premier Tech CHRONOS RPL: Best for a broader packaging project",
+      "paragraphs": [
+        "Premier Tech Systems and Automation is our starting point when bagging or case preparation, pallet supply, slip sheets and finished load movement share one project boundary. Its CHRONOS RPL range addresses the flow around the robot.",
+        "RPL-4000 uses separate pallet and sheet handling so the arm can concentrate on stacking. Published rates are 20 to 80 cases per minute with multiple unit picks and up to 23 bags per minute. RPL-2000 instead assigns pallets, sheets and product to the arm. Choose between them through the complete sequence, including replenishment and exit.",
+        "The Grain Millers account describes an OML-1170-N bagger, RPL-4111-N palletizer and LSH-1100 stretch hooder installed as a line. Reported improvements belong to that combined process. Eliminate the broader project scope when a standardized carton cell already resolves the bottleneck; retain it when preparation and load exit constrain production too."
+      ]
+    },
+    {
+      "id": "industrial-arms",
+      "heading": "Industrial robots requiring integration",
+      "paragraphs": [
+        "FANUC, ABB, Yaskawa and KUKA supply the arm and control platform. A cell builder supplies the application around it. Robot payload includes carried tooling and product; working reach, center of gravity and inertia also constrain a usable pick. Choose the integrator and service plan alongside the robot."
+      ],
+      "visuals": [
+        {
+          "afterParagraphIndex": 1,
+          "src": "/article-images/palletizers/industrial-bags-isolated.webp",
+          "alt": "An industrial palletizing robot uses a bag gripper to stack a sack on a floor pallet beside the infeed conveyor.",
+          "width": 1672,
+          "height": 941,
+          "caption": "Industrial bag palletizing cell. Original Black Scarab editorial illustration."
+        }
+      ]
+    },
+    {
+      "id": "fanuc",
+      "heading": "FANUC M-410: Best for a custom industrial cell",
+      "paragraphs": [
+        "The four axis M-410iC/110 is rated for 110 kg with 2,403 mm reach and an R-30iB Plus controller. That gives an integrator capacity for larger tools or groups of cases, subject to load distribution and the required motion.",
+        "We favor the M-410 route when custom material flow matters and the plant already maintains FANUC equipment. Have the cell builder price accumulation, tooling, controls and pallet exchange as one system. Eliminate this route for a simple modest carton flow when its engineering and service burden outweigh a packaged cell’s benefit."
+      ]
+    },
+    {
+      "id": "abb",
+      "heading": "ABB IRB 460: Best for a focused bag handling proposal",
+      "paragraphs": [
+        "ABB’s four axis IRB 460 is rated for 110 kg and 2.4 m reach. Its published benchmark is up to 2,190 cycles per hour with a 60 kg load. ABB also describes FlexGripper Claw bag tooling and RobotStudio Palletizing PowerPac for offline development.",
+        "Our reason to shortlist it is the combination of arm, bag tooling and layout simulation. Bag settling, flattening and support during travel matter as much as the lift. Eliminate an IRB 460 proposal if 2.4 m reach cannot cover the layout or its tested bag layers cannot remain stable in transport. The benchmark does not establish sustained finished pallet output."
+      ]
+    },
+    {
+      "id": "yaskawa",
+      "heading": "Yaskawa PL190: Best when reach and load drive the design",
+      "paragraphs": [
+        "Yaskawa’s four axis PL190 combines 190 kg payload with 3,159 mm reach. The manufacturer describes stacking above 2,600 mm for cartons, boxes and bags. It is a useful starting point for a heavier product group or a layout with several pickup and placement positions.",
+        "Choose it when a shorter or lighter arm constrains the installation. Eliminate it when the additional reach and capacity do no useful work, or its protected working envelope prevents practical access and pallet movement. Include foundation, maintenance access and exact tool geometry in the layout review."
+      ]
+    },
+    {
+      "id": "kuka",
+      "heading": "KUKA KR QUANTEC PA Arctic: Best for deep freeze operations",
+      "paragraphs": [
+        "KUKA specifies the Arctic family for minus 30°C to plus 10°C, with 3,195 mm reach and 120, 180 or 240 kg payload variants. It describes operation without a protective suit or robot arm heater. The corresponding standard KR 240 R3200-2 PA is also rated for 240 kg and 3,195 mm reach, but that standard model does not establish Arctic capability.",
+        "Choose Arctic early for a frozen food line operating within its documented temperature range. Eliminate the specialized configuration when the environment does not justify it, and reject a cold storage proposal whose gripper, hoses, sensors or packaging have not been qualified at temperature. The cold rating must work across the cell."
+      ]
+    },
+    {
+      "id": "cell",
+      "heading": "What a complete palletizing cell includes",
+      "paragraphs": [
+        "The infeed presents individual packages or forms groups. The gripper provides a reliable physical connection using vacuum, clamps or supporting fingers. The arm moves that load through the required pattern, while pallet exchange determines how quickly stacking resumes.",
+        "Local robot and cell controls coordinate motion, conveyors, sensors and access. Recipe software defines the load pattern. Vision helps where presentation varies. Cloud services can support simulation, monitoring and remote assistance; Rocketfarm’s Pally URCap X workflow, for example, uses cloud computed waypoints. Establish which functions continue locally when connectivity is lost."
+      ],
+      "buyingGuideTool": "palletizer-cell"
+    },
+    {
+      "id": "throughput",
+      "heading": "Measure accepted pallets through a complete shift",
+      "paragraphs": [
+        "A cycle can move one case or several. For a hypothetical line delivering 12 cases per minute, a single pick has five seconds available; picking pairs requires six picks per minute, provided the infeed forms pairs and the pattern accepts them.",
+        "Now assume 60 cases per pallet and a one minute stop for exchange. Filling takes five minutes, but the complete six minute sequence averages ten cases per minute. A second pallet position or automatic exchange may recover more output than a faster arm.",
+        "Measure accepted pallets during an ordinary shift, including the difficult packages, top layers, changeovers and interventions. Collaborative operation also depends on the whole application. Guarding, scanners, sharp tooling and trapping points can change both floor space and speed. Run the output test with the final safeguarding active."
+      ]
+    },
+    {
+      "id": "procurement",
+      "heading": "One procurement test for every supplier",
+      "paragraphs": [
+        "Send the same application file to each bidder: filled package dimensions and weights, peak and sustained rates, pallet dimensions, patterns, maximum height, product change frequency, floor layout and utilities. Include samples of difficult packaging.",
+        "Agree factory and site acceptance criteria for accepted output, damage, load stability, changeover time and interventions over a defined observation period. Test real product with upstream and downstream equipment. Have production operators change recipes, exchange pallets and recover a failed grip or partial stack themselves.",
+        "Assign every interface and service obligation. Name who owns the gripper, conveyor and control integration; who answers a stopped line call; which backups and spare parts the plant receives; and which software fees recur. Put these requirements in the purchase agreement."
+      ]
+    },
+    {
+      "id": "questions",
+      "heading": "Frequently asked questions",
+      "paragraphs": [
+        "What is the best robotic palletizer for a small manufacturer? Our first comparisons are Robotiq, Vention and miniPAL for a repeatable carton flow. Choose the smallest complete configuration that can sustain the required output and stack height.",
+        "Does a cobot palletizer need a fence? The final application risk assessment determines the operating arrangement. Compare throughput with the proposed guarding, separation and speed rules in place.",
+        "Can one robot handle multiple products? Stored recipes support changes between products. Building one mixed product pallet adds sequencing and stability requirements that need explicit support.",
+        "Does palletizing require AI? A case arriving at a known position can use configured motion and recipes. Add vision or adaptive planning when variability creates a defined production problem."
+      ]
+    },
+    {
+      "id": "verdict",
+      "heading": "The Black Scarab buying verdict",
+      "paragraphs": [
+        "For a first, straightforward carton line, our first call would be Robotiq: a defined PE or AX configuration gives the buyer a concrete starting specification. Bid Vention alongside it when modular conveyors and a common controls environment matter, and miniPAL when Columbia/Okura’s integration support or rental route improves the decision.",
+        "For 25 kg bags or substantial grouped loads, start with industrial cell proposals. Compare ABB’s bag tooling route, FANUC’s custom integration route and Yaskawa’s reach. Add dynaPAL as an integrated industrial alternative. Existing plant skills and a credible service owner should break a close tie.",
+        "For a freezer, put KUKA Arctic on the initial shortlist and qualify the complete cell at temperature. For a bottleneck spanning bag preparation through wrapped load exit, ask Premier Tech to own the broader proposal.",
+        "Eliminate any proposal that cannot demonstrate stable accepted pallets at the contracted rate with your packaging and final safety arrangement. Among the remaining options, choose on total installed scope, avoidable paid labor and recovery that your own operators can perform."
+      ]
+    }
   ],
+  "sources": [],
+  "sourceLinks": [
+    {
+      "label": "Packaging World reporting on Griffith Foods palletizing in Colombia",
+      "url": "https://www.packworld.com/secondary-packaging/robotics/article/22953522/griffith-foods-model-in-colombia-robots-with-a-human-touch"
+    },
+    {
+      "label": "Robotiq Lean Palletizing and Americas starting price",
+      "url": "https://robotiq.com/solutions/palletizing"
+    },
+    {
+      "label": "Robotiq PAL Series specifications",
+      "url": "https://robotiq.com/hubfs/PAL_Product_Sheet_EN_Recto_Verso_WEB.pdf"
+    },
+    {
+      "label": "Robotiq RAIN deployment case study",
+      "url": "https://robotiq.com/resource-center/case-studies/rain"
+    },
+    {
+      "label": "Vention Rapid Series Palletizer 3.0 documentation",
+      "url": "https://docs.vention.com/docs/rapid-series-palletizer-30"
+    },
+    {
+      "label": "Columbia/Okura collaborative palletizers",
+      "url": "https://columbiaokura.com/products/collaborative-robots/"
+    },
+    {
+      "label": "Columbia/Okura miniPAL 20 current specification sheet",
+      "url": "https://columbiaokura.com/wp-content/uploads/2025/07/Cutsheet-miniPAL20_07.22.25.pdf"
+    },
+    {
+      "label": "Columbia/Okura US cobot rental program",
+      "url": "https://columbiaokura.com/products/cobot-rental/"
+    },
+    {
+      "label": "FANUC M-410iC/110 specifications",
+      "url": "https://www.fanuc.eu/eu-en/product/robot/m-410ic110"
+    },
+    {
+      "label": "FANUC M-410 family",
+      "url": "https://www.fanucamerica.com/products/series/m-410"
+    },
+    {
+      "label": "ABB IRB 460 specifications and palletizing software",
+      "url": "https://new.abb.com/products/robotics/nl/onze-robots/articulated-robots/irb-460"
+    },
+    {
+      "label": "Yaskawa PL190 specifications",
+      "url": "https://www.yaskawa.co.uk/robotics/robots/palletizing/productdetail/product/pl190_12185"
+    },
+    {
+      "label": "KUKA KR QUANTEC PA specifications",
+      "url": "https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/kr-quantec-pa"
+    },
+    {
+      "label": "KUKA KR QUANTEC PA Arctic temperature and payload ratings",
+      "url": "https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/kr-quantec-pa/kr-quantec-pa-arctic"
+    },
+    {
+      "label": "Premier Tech CHRONOS RPL-4000",
+      "url": "https://www.ptchronos.com/products/palletizing/palletizing-robots/high-performant-palletizing-robot"
+    },
+    {
+      "label": "Premier Tech CHRONOS RPL-2000",
+      "url": "https://www.ptchronos.com/products/palletizing/palletizing-robots/fully-automatic-palletizing-robot"
+    },
+    {
+      "label": "Premier Tech Systems and Automation company and integration background",
+      "url": "https://www.ptchronos.com/about-us"
+    },
+    {
+      "label": "Premier Tech Grain Millers packaging line case study",
+      "url": "https://www.ptchronos.com/testimonials/grain-millers"
+    },
+    {
+      "label": "Rocketfarm Pally software architecture",
+      "url": "https://www.rocketfarm.no/resource-center/insights/3-key-components-of-pally/"
+    },
+    {
+      "label": "Rocketfarm Pally URCap X release documentation",
+      "url": "https://rocketfarm.no/software-products/palletizing/pally-official-software-download/"
+    },
+    {
+      "label": "Universal Robots palletizing applications",
+      "url": "https://www.universal-robots.com/applications/palletizing/"
+    },
+    {
+      "label": "Universal Robots payload design guide",
+      "url": "https://www.universal-robots.com/articles/ur/application-installation/how-to-design-for-higher-payloads/"
+    },
+    {
+      "label": "Universal Robots application risk assessment documentation",
+      "url": "https://www.universal-robots.com/manuals/EN/HTML/SW5_24/Content/prod-usr-man/complianceUR10e/H_g5_sections/safety_g5/risk_assessment.htm"
+    },
+    {
+      "label": "Robotiq FAQ: family payload and Americas entry pricing",
+      "url": "https://robotiq.com/faq"
+    },
+    {
+      "label": "Robotiq AX20 and AX30 manual: payload including gripper",
+      "url": "https://blog.robotiq.com/hubfs/support-files/Instruction_Manual_AX20-AX30_Series_20250424.pdf"
+    },
+    {
+      "label": "Vention EMEA cobot palletizer starting offer",
+      "url": "https://try.vention.io/cobot-palletizer-emea-en"
+    },
+    {
+      "label": "Columbia/Okura industrial dynaPAL range",
+      "url": "https://columbiaokura.com/products/industrial-robotic-palletizer/"
+    },
+    {
+      "label": "Columbia/Okura dynaPAL configuration sheet",
+      "url": "https://columbiaokura.com/wp-content/uploads/2024/10/dynaPAL-Cutsheet.10.02.24.pdf"
+    }
+  ],
+  "modifiedAt": "2026-10-19T17:06:24.579Z",
+  "reportingNotes": [
+    "Black Scarab compared current manufacturer specifications, configuration documents and deployment accounts. Recommendations reflect researched application fit. This is desk research, not a hands on equipment test. Published speeds remain manufacturer ratings; financial and production examples are hypothetical. Updated October 19, 2026.",
+    "Packaging World’s October 2025 report describes the Robotiq PE10 and Universal Robots UR10e installation commissioned by IGPS at Griffith Foods Colombia in August 2024, including product trials, simulation and operator training. This provides independent context for the integration work."
+  ]
 });

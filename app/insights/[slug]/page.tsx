@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Fragment } from "react";
+import PalletizerComparison from "@/components/palletizers/comparison";
+import PalletizerPlanner from "@/components/palletizers/planner";
+import PalletizerCellDiagram from "@/components/palletizers/cell-diagram";
 import AuthorLinkedIn from "@/components/author-linkedin";
 import EmailSignupCard from "@/components/email-signup-card";
 import { InsightReadTracker } from "@/components/engagement-analytics";
@@ -163,6 +166,7 @@ export default async function CaseStudyPage({ params }: Props) {
   });
   const typeLabel = article.typeLabel ?? "Case Study";
   const industryHref = "/insights";
+  const isPalletizerGuide = article.slug === "best-robotic-palletizers";
   const hasInteractiveTools = article.sections.some(section => Boolean(section.tool));
   const industryLinkLabel = "Insights index";
   const relatedArticles = getRelatedArticles(article.slug, article.industry);
@@ -334,6 +338,14 @@ export default async function CaseStudyPage({ params }: Props) {
             </div>
           </section>
 
+          {isPalletizerGuide ? (
+            <nav aria-label="Palletizer guide shortcuts" className="border-b border-[#e3e5dc] bg-[#fafaf5] px-6 py-4 md:px-10">
+              <div className="mx-auto flex max-w-6xl flex-wrap gap-x-7 gap-y-2 text-sm text-[#526b5b]">
+                {[["Compare systems", "compare"], ["Pricing and scope", "budget"], ["Sizing and payback", "calculator"], ["Buying verdict", "verdict"]].map(([label,id]) => <a key={id} href={`#${id}`} className="inline-flex min-h-11 items-center underline decoration-[#bac6b0] underline-offset-4">{label}</a>)}
+              </div>
+            </nav>
+          ) : null}
+
           {hasInteractiveTools ? (
             <nav aria-label="Guide shortcuts" className="border-b border-[#efeae1] bg-[#faf8f3] px-6 py-5 md:px-10">
               <div className="mx-auto flex max-w-6xl flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-[#526147]">
@@ -376,11 +388,11 @@ export default async function CaseStudyPage({ params }: Props) {
           ) : null}
 
           <section className="px-6 py-14 md:px-10">
-            <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_280px]">
+            <div className={isPalletizerGuide ? "mx-auto max-w-6xl" : "mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_280px]"}>
               <div className="min-w-0 space-y-10">
                 {article.sections.map((section, index) => (
                   <Fragment key={`${section.heading ?? "intro"}-${index}`}>
-                    <section id={section.id} className="scroll-mt-8">
+                    <section id={section.id} className={`scroll-mt-8 ${isPalletizerGuide && !section.buyingGuideTool ? "max-w-3xl" : ""}`}>
                       {section.heading ? (
                         <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
                           {section.heading}
@@ -407,6 +419,9 @@ export default async function CaseStudyPage({ params }: Props) {
                           </Fragment>
                         ))}
                       </div>
+                    {section.buyingGuideTool === "palletizer-comparison" ? <PalletizerComparison /> : null}
+                    {section.buyingGuideTool === "palletizer-calculator" ? <PalletizerPlanner /> : null}
+                    {section.buyingGuideTool === "palletizer-cell" ? <PalletizerCellDiagram /> : null}
                     {section.tool ? <div id={`fcc-${section.tool}`} className="scroll-mt-8"><FccTool name={section.tool} /></div> : null}
 
                     {section.visual ? (
@@ -627,7 +642,7 @@ export default async function CaseStudyPage({ params }: Props) {
                         placement="end_of_article"
                       />
                     ) : null}
-                    {index === 1 && !localAiPlacement && !hasInteractiveTools ? (
+                    {(isPalletizerGuide ? section.id === "procurement" : index === 1) && !localAiPlacement && !hasInteractiveTools ? (
                       <EmailSignupCard
                         source={`insight-inline:${article.slug}`}
                         compact
@@ -726,7 +741,7 @@ export default async function CaseStudyPage({ params }: Props) {
                 ) : null}
               </div>
 
-              <aside className={`${hasInteractiveTools ? "hidden lg:block " : ""}h-fit rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]`}>
+              <aside className={`${isPalletizerGuide ? "hidden " : ""}${hasInteractiveTools ? "hidden lg:block " : ""}h-fit rounded-[24px] border border-[#e8e4dc] bg-[#fffdfa] p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)]`}>
                 {!hasInteractiveTools ? (
                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7c8b6b]">
                   At a glance

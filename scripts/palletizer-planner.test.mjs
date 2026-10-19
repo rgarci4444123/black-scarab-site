@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createContentLoader} from './content-source-loader.mjs';
+const {calculatePalletizerPlan:calc,palletizerPlanDefaults:base}=createContentLoader()(process.cwd()+'/lib/palletizer-planner.ts');
+test('worked example distinguishes operating hours from avoidable labor',()=>{const p=calc(base);assert.equal(p.avoidedHours,3000);assert.equal(p.netAnnualBenefit,78000);assert.ok(Math.abs(p.paybackYears-140000/78000)<1e-10);assert.equal(p.totalKgPerPick,11);assert.equal(p.secondsPerPick,5);});
+test('halving avoidable hours reproduces 4.2 year example',()=>{const p=calc({...base,avoidablePercent:37.5});assert.equal(p.avoidedHours,1500);assert.equal(p.netAnnualBenefit,33000);assert.ok(Math.abs(p.paybackYears-4.2424242424)<1e-6);});
+test('multiple picks trade cycle rate for higher carried load',()=>{const p=calc({...base,casesPerPick:2});assert.equal(p.picksPerMinute,6);assert.equal(p.productKgPerPick,16);assert.equal(p.totalKgPerPick,19);assert.equal(p.secondsPerPick,10);});
+test('zero or negative benefit does not produce a payback',()=>{assert.equal(calc({...base,avoidablePercent:0}).paybackYears,null);assert.equal(calc({...base,laborPerHour:0}).paybackYears,null);assert.equal(calc({...base,operators:0}).paybackYears,null);assert.equal(calc({...base,annualOperatingCost:90000}).paybackYears,null);});
+test('sensitivity varies only paid labor avoided',()=>{const p=calc(base);assert.deepEqual(p.sensitivity.map(x=>x.hours),[1000,2000,3000,4000]);assert.deepEqual(p.sensitivity.map(x=>x.net),[18000,48000,78000,108000]);});
+test('rejects invalid and nonfinite requirements',()=>{for(const patch of [{packageKg:NaN},{casesPerMinute:0},{casesPerPick:1.5},{operatingHours:9000},{avoidablePercent:101},{installedCost:0},{gripperKg:-1},{laborPerHour:Infinity}])assert.throws(()=>calc({...base,...patch}),RangeError);});

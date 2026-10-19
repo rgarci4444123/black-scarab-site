@@ -27,6 +27,7 @@ import { grittAiDeepDive } from "@/lib/gritt-ai";
 import { vibeManufacturingDeepDive } from "@/lib/vibe-manufacturing";
 
 export type CaseStudySection = {
+  buyingGuideTool?: "palletizer-comparison" | "palletizer-calculator" | "palletizer-cell";
   id?: string;
   tool?: "history" | "robot-check" | "covered-list" | "components" | "downloads" | "providers" | "launch-check";
   heading?: string;
