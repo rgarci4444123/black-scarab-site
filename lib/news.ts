@@ -35,6 +35,149 @@ export type NewsUpdate = {
 export const newsUpdates: NewsUpdate[] = [
 {
   "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [
+      "agriculture"
+    ],
+    "technologies": [
+      "autonomous-mobile-robots"
+    ],
+    "applications": []
+  },
+  "slug": "intralox-cleanbotix-robotic-sanitation",
+  "title": "Intralox backs CleanBotix and the economics of robotic sanitation",
+  "summary": "Rosie’s advertised $81,600 annual service puts a price on robotic hose work. The return depends on useful hours, remaining manual tasks and the full sanitation cycle.",
+  "category": "Robotic sanitation",
+  "publishedDate": "2026-10-19",
+  "publishedAt": "2026-10-19T17:08:58.698362+00:00",
+  "publishedLabel": "October 19, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/intralox-cleanbotix-robotic-sanitation.png",
+  "imageAlt": "A precision nozzle sprays a bright fan of water across a stainless steel surface, revealing a clean path through dark residue.",
+  "imageCaption": "Original Black Scarab editorial illustration of automated washdown.",
+  "readingTime": "7 min read",
+  "keyPoints": [
+    "Intralox’s investment supports Rosie production and further sanitation product development.",
+    "CleanBotix advertises the robot and continuing service at $81,600 annually.",
+    "The business case depends on the complete cleaning cycle, including the work people still perform."
+  ],
+  "sections": [
+    {
+      "heading": "A conveyor supplier backs the cleaning shift",
+      "paragraphs": [
+        "Intralox has invested in CleanBotix to expand manufacturing and further develop Rosie, a mobile robot that takes on repetitive hose work in food plant sanitation.",
+        "Intralox shared the partnership publicly on October 15 and published its website announcement on October 16. The investment supports production of a machine designed to apply detergent and sanitizer, rinse equipment and change spray wands. Commercial Food Sanitation, an Intralox company, will work with CleanBotix on additional sanitation applications.",
+        "The commercial question is unusually concrete. CleanBotix advertises Rosie as a service at $81,600 a year. A processor considering that recurring expense needs to know how much useful work the robot can complete, what the crew still does and when the line can return to production.",
+        "That makes this a story about the economics of an entire cleaning shift. A repeatable spray pattern has value when it improves the outcome of that shift, whether through more dependable staffing, less repeat cleaning or more productive time."
+      ]
+    },
+    {
+      "heading": "What Rosie takes off the crew’s hands",
+      "paragraphs": [
+        "CleanBotix traces the Rosie project to January 2024. Founder Adam Jacques previously established Clean Logix, a sanitation technology manufacturer, in 2010. The company’s starting point is a familiar industrial task with a demanding operating environment.",
+        "Rosie combines a wheeled motorized base, a robot arm with six degrees of freedom and a spray system. Its basic sequence is rinse, foam, rinse and sanitize. CleanBotix says technicians configure missions around a plant’s sanitation procedures, mapping the facility and recording spray trajectories.",
+        "The company’s hatchery example shows how that fits into a working shift. People prepare the area after a hatch cycle. Rosie follows programmed routes and applies foam. Workers scrub the machines, Rosie performs further rinse passes, and the area is inspected before release.",
+        "Those handoffs determine the usable hours a plant can buy. A robot might spend much of the night spraying while people perform other tasks. Equally, it might wait for a crew to open equipment, move obstructions or finish scrubbing. The sequence matters as much as the robot’s nominal speed."
+      ]
+    },
+    {
+      "heading": "The $81,600 question",
+      "paragraphs": [
+        "CleanBotix’s advertised annual package includes the robot and continuing support. The company lists parts, preventive maintenance, data updates and round the clock teleoperation among the inclusions. The annual figure is equivalent to $6,800 a month.",
+        "As a Black Scarab illustration, spread $81,600 across 300 operating days and the subscription costs $272 per day. At an assumed avoidable labor cost of $35 an hour, a plant would need to remove about 7.8 paid hours each operating day to cover that fee through labor savings alone. These are illustrative assumptions, not a CleanBotix customer result.",
+        "Even eight avoided hours per day would produce only $84,000 in annual labor savings under those assumptions, leaving $2,400 before any additional plant costs. That narrow cushion explains why utilization, interventions and the labor that remains deserve close attention.",
+        "Time released is also different from cash saved. If workers spend those hours on necessary detail cleaning or inspection, the plant gains capacity and potentially a better process. Payroll falls only when the operating plan actually avoids paid hours, overtime, contract labor or an additional hire.",
+        "CleanBotix’s marketing compares the service with a $65,000 annual worker cost plus a $35,000 workers’ compensation claim. That is a scenario involving a claim, rather than an expected annual injury cost for every worker. A plant evaluating safety savings should use its own incident frequency, insurance structure and retained costs, avoiding double counting costs already included in its labor baseline."
+      ]
+    },
+    {
+      "heading": "Production time may matter more than payroll",
+      "paragraphs": [
+        "A sanitation crew’s deadline is the next production run. If a missed area forces another clean, a short task can delay the release of a much larger line. Predictability can therefore be valuable even when a robot’s first pass is slower.",
+        "The relevant comparison is the total time from stopping production to releasing a satisfactorily cleaned area. Preparation, chemical contact time, scrubbing, inspection, repeat work and robot recovery all belong in that measurement. Timing only the spray pass can miss the bottleneck.",
+        "A processor should value recovered production time using the contribution from output it can actually make and sell. Multiplying every recovered minute by headline revenue overstates the benefit if demand, packaging or another process limits throughput.",
+        "Water and chemical use also belong in the operating comparison. Processing Magazine’s March 9 interview feature with CleanBotix’s Matt Hill described those reductions as part of the company’s proposition. For an individual site, metered consumption across comparable cleaning cycles would establish their financial value."
+      ]
+    },
+    {
+      "heading": "A useful test with a narrower conclusion",
+      "paragraphs": [
+        "CleanBotix’s September 2025 white paper compared robotic and manual cleaning on two conveyors using chicken meat and fat as soil. It describes repeated tests, visual inspection and ATP swabs at four locations.",
+        "The company reports average ATP readings of 6.1 relative light units for Rosie and 22.9 for manual cleaning, with a passing threshold of 10 or less. It reports no robotic repeat cleans and four manual repeat cleans in ten. Initial cleaning took 37 minutes robotically versus 30 minutes manually.",
+        "The paper’s summary describes equivalent total cleaning time, but does not clearly reconcile that statement with the reported pass times. Its strongest evidence is the reported consistency under those test conditions. A plant trial should measure the complete cycle, including any repeat cleaning.",
+        "ATP is a rapid indicator of biological residue. University of Georgia Extension explains that it can come from food material as well as microorganisms, and distinguishes cleaning checks from microbial verification. A low ATP reading is useful evidence of cleaning effectiveness; it does not establish the absence of pathogens."
+      ]
+    },
+    {
+      "heading": "What Intralox adds",
+      "paragraphs": [
+        "Intralox brings experience with the equipment that sanitation teams must clean. Its food business spans conveyor systems and services for processors, placing the company close to questions of equipment access, cleanability and production schedules.",
+        "Commercial Food Sanitation adds process expertise. Its consulting practice reviews staffing, tools, chemicals, equipment and written sanitation procedures. It also works on inspections before production, environmental monitoring and controls for water and chemical use.",
+        "That combination could help CleanBotix fit robotic cleaning into established plant routines and identify applications worth developing next. This is the strategic logic of the partnership: sanitation expertise can inform where a robot should work, how the task should be configured and how the result should be assessed.",
+        "For CleanBotix, scaling a service business also means supporting each installed machine. Manufacturing capacity, replacement parts, field response and remote assistance all affect how reliably subscription revenue can turn into a profitable operating business."
+      ]
+    },
+    {
+      "heading": "The next evidence to watch",
+      "paragraphs": [
+        "Black Scarab’s view is that the investment targets a credible, recurring industrial expense. Rosie has a defined task and a publicly stated service price, giving prospective customers a starting point for evaluating the proposition.",
+        "The decisive evidence will be sustained operation across complete sanitation shifts: useful robot hours, paid labor genuinely avoided, intervention time, repeat cleaning, consumption and the time production is released. Comparisons should cover similar equipment and soil conditions and retain the plant’s acceptance criteria.",
+        "A successful deployment would show how repeatability improves the whole process. That is where an annual robot subscription can earn its place in a food plant’s operating budget."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Intralox investment announcement, October 16, 2026",
+      "url": "https://www.intralox.com/media/news/intralox-announces-strategic-partnership-with-cleanbotix"
+    },
+    {
+      "label": "Intralox public partnership post, October 15, 2026",
+      "url": "https://www.linkedin.com/posts/intralox_intralox-announces-strategic-partnership-activity-7516502420886028291-5QHm"
+    },
+    {
+      "label": "CleanBotix company background",
+      "url": "https://www.clean-botix.com/about-us"
+    },
+    {
+      "label": "Rosie product overview",
+      "url": "https://www.clean-botix.com/"
+    },
+    {
+      "label": "CleanBotix service package, price and deployment process",
+      "url": "https://www.clean-botix.com/automate-your-food-plant-sanitation"
+    },
+    {
+      "label": "CleanBotix hatchery workflow",
+      "url": "https://www.clean-botix.com/use-cases/poultry-hatchery-automated-sanitation"
+    },
+    {
+      "label": "CleanBotix controlled cleaning comparison, September 10, 2025",
+      "url": "https://www.clean-botix.com/_files/ugd/4dedb8_44c70a7887a149cfa9d1156d58cfa4bc.pdf?index=true"
+    },
+    {
+      "label": "University of Georgia Extension: using ATP, protein and allergen swabs",
+      "url": "https://fieldreport.caes.uga.edu/publications/B1524-3/using-atp-protein-and-allergen-swabs/"
+    },
+    {
+      "label": "Intralox food processing business",
+      "url": "https://www.intralox.com/industries/food"
+    },
+    {
+      "label": "Commercial Food Sanitation consulting",
+      "url": "https://www.commercialfoodsanitation.com/consulting/sanitation/"
+    },
+    {
+      "label": "Processing Magazine: interview feature with CleanBotix, March 9, 2026",
+      "url": "https://www.processingmagazine.com/home/podcast/55362283/autonomous-cleaning-robots-in-food-processing-how-cleanbotix-rosie-is-transforming-plant-sanitation"
+    }
+  ]
+},
+{
+  "taxonomy": {
     "primaryIndustry": "cross-industry",
     "relevantIndustries": [
       "transportation-mobility",
