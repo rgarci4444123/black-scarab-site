@@ -341,7 +341,7 @@ export default async function CaseStudyPage({ params }: Props) {
           {isPalletizerGuide ? (
             <nav aria-label="Palletizer guide shortcuts" className="border-b border-[#e3e5dc] bg-[#fafaf5] px-6 py-4 md:px-10">
               <div className="mx-auto flex max-w-6xl flex-wrap gap-x-7 gap-y-2 text-sm text-[#526b5b]">
-                {[["Compare systems", "compare"], ["Pricing and scope", "budget"], ["Sizing and payback", "calculator"], ["Buying verdict", "verdict"]].map(([label,id]) => <a key={id} href={`#${id}`} className="inline-flex min-h-11 items-center underline decoration-[#bac6b0] underline-offset-4">{label}</a>)}
+                {[["Compare systems", "compare"], ["Pricing and scope", "budget"], ["Sizing and payback", "calculator"], ["What changes next", "future"], ["Buying verdict", "verdict"]].map(([label,id]) => <a key={id} href={`#${id}`} className="inline-flex min-h-11 items-center underline decoration-[#bac6b0] underline-offset-4">{label}</a>)}
               </div>
             </nav>
           ) : null}

@@ -18,8 +18,8 @@ export const roboticPalletizersDeepDive = (): CaseStudyArticle => ({
   },
   title: "Best Robotic Palletizers in 2026: Top Systems Compared",
   seoTitle: "Best Robotic Palletizers in 2026: Top Systems Compared",
-  summary: "Compare eight robotic palletizing options by application, payload, throughput and price. Size your handling task, calculate payback and prepare a supplier shortlist.",
-  seoDescription: "Compare the best robotic palletizers for 2026, including Robotiq, FANUC, ABB and more. Explore cobot systems, payload, cost, throughput and buying criteria.",
+  summary: "Compare eight robotic palletizing options by application, payload, throughput and price, calculate payback, and explore what smarter software and humanoid robots could change.",
+  seoDescription: "Compare robotic palletizers for 2026 by payload, throughput and cost, with a payback calculator and a practical outlook on AI and humanoid robots.",
   publishedLabel: "Deep Dive · Published October 17, 2026",
   publishedDate: "2026-10-17",
   publishedAt: "2026-10-17T17:03:25.857454Z",
@@ -47,7 +47,7 @@ export const roboticPalletizersDeepDive = (): CaseStudyArticle => ({
       id: "start",
       paragraphs: [
         "For a first carton palletizing project, start with Robotiq, Vention and Columbia/Okura. For heavier loads and custom layouts, compare integrated proposals built around FANUC, ABB or Yaskawa. KUKA Arctic addresses deep freeze operations; Premier Tech fits projects spanning the packaging line.",
-        "The best robotic palletizer is the complete installation that meets your product flow and operating budget. Use the comparison to choose a supply scope, then test the economics with your own labor assumptions."
+        "The best robotic palletizer is the complete installation that meets your product flow and operating budget. For plant technology leaders, the longer term question is how that investment fits a future with more adaptable software and mobile robots. Use the comparison and calculator for today’s decision, then explore what could change next."
       ]
     },
     {
@@ -201,6 +201,34 @@ export const roboticPalletizersDeepDive = (): CaseStudyArticle => ({
       ]
     },
     {
+      id: "future",
+      heading: "How physical AI could change palletizing",
+      paragraphs: [
+        "The next useful advance is handling more variation with less engineering. A system that can identify different packages and plan a stable load as they arrive could make mixed product flows easier to automate. For a manufacturer, the benefit would be less work preparing products, creating patterns and introducing the next product.",
+        "On April 8, 2026, Jacobi Robotics announced a collaboration to bring its OmniPalletizer AI software into ABB Robotics’ portfolio. Jacobi describes a system designed to build mixed case pallets from boxes arriving without a predefined sequence. It is a concrete example of software expanding the work conventional industrial arms can perform.",
+        "Our expectation is that part of the competition will shift toward how easily a system adapts after installation. Faster product changes, simpler deployment and fewer interruptions could matter as much as a higher advertised cycle rate. Buyers should ask suppliers to demonstrate those improvements with their own changing product mix."
+      ]
+    },
+    {
+      id: "humanoids",
+      heading: "Will humanoid robots have a role?",
+      paragraphs: [
+        "Humanoids introduce another possibility: a robot that can walk between stations and share its time across several material handling tasks. That flexibility could be useful where production changes frequently or one fixed cell would spend much of the day waiting for work.",
+        "Agility Robotics reports that Digit has moved more than 100,000 totes at GXO’s Flowery Branch facility. Its account includes transfers from mobile robots to a conveyor and stacking totes on the floor. The milestone describes tote handling; a proposal to build production pallets needs its own throughput and load stability test.",
+        "Our near term view is that dedicated palletizing cells remain a strong choice for steady, repetitive production. Humanoids could first complement them by moving materials between tasks and serving work that changes across the day. A plant should compare the value of that flexibility with the output, availability and cost of a specialized installation."
+      ],
+      visuals: [
+        {
+          afterParagraphIndex: 1,
+          src: "/article-images/palletizers/fixed-arm-humanoid-outlook.webp",
+          alt: "Conceptual illustration of a fixed robot arm stacking cartons on a floor pallet beside a separate humanoid carrying a tote.",
+          width: 1672,
+          height: 941,
+          caption: "Generic palletizing arm and humanoid tote handling concept. Original Black Scarab editorial illustration."
+        }
+      ]
+    },
+    {
       id: "procurement",
       heading: "One procurement test for every supplier",
       paragraphs: [
@@ -226,7 +254,8 @@ export const roboticPalletizersDeepDive = (): CaseStudyArticle => ({
         "For a first, straightforward carton line, our first call would be Robotiq: a defined PE or AX configuration gives the buyer a concrete starting specification. Bid Vention alongside it when modular conveyors and a common controls environment matter, and miniPAL when Columbia/Okura’s integration support or rental route improves the decision.",
         "For 25 kg bags or substantial grouped loads, start with industrial cell proposals. Compare ABB’s bag tooling route, FANUC’s custom integration route and Yaskawa’s reach. Add dynaPAL as an integrated industrial alternative. Existing plant skills and a credible service owner should break a close tie.",
         "For a freezer, put KUKA Arctic on the initial shortlist and qualify the complete cell at temperature. For a bottleneck spanning bag preparation through wrapped load exit, ask Premier Tech to own the broader proposal.",
-        "Eliminate any proposal that cannot demonstrate stable accepted pallets at the contracted rate with your packaging and final safety arrangement. Among the remaining options, choose on total installed scope, avoidable paid labor and recovery that your own operators can perform."
+        "Eliminate any proposal that cannot demonstrate stable accepted pallets at the contracted rate with your packaging and final safety arrangement. Among the remaining options, choose on total installed scope, avoidable paid labor and recovery that your own operators can perform.",
+        "For a technology leader, we would invest in a proven solution for the current bottleneck while keeping room to expand. Ask how the supplier would add another product, improve the software or connect the next operation. Pilot humanoids where mobility and sharing tasks have a clear benefit. Broader capability becomes valuable when it improves the plant’s actual work."
       ]
     }
   ],
@@ -343,11 +372,19 @@ export const roboticPalletizersDeepDive = (): CaseStudyArticle => ({
     {
       label: "Columbia/Okura dynaPAL configuration sheet",
       url: "https://columbiaokura.com/wp-content/uploads/2024/10/dynaPAL-Cutsheet.10.02.24.pdf"
+    },
+    {
+      label: "Jacobi Robotics and ABB collaboration for mixed case palletizing, April 8, 2026",
+      url: "https://jacobirobotics.com/blog/abb-collaboration"
+    },
+    {
+      label: "Agility Robotics reports 100,000 tote movements at GXO",
+      url: "https://www.agilityrobotics.com/content/digit-moves-over-100k-totes"
     }
   ],
-  modifiedAt: "2026-10-19T17:06:24.579Z",
+  modifiedAt: "2026-10-19T17:46:09.308Z",
   reportingNotes: [
-    "Black Scarab compared current manufacturer specifications, configuration documents and deployment accounts. Recommendations reflect researched application fit. This is desk research, not a hands on equipment test. Published speeds remain manufacturer ratings; financial and production examples are hypothetical. Updated October 19, 2026.",
+    "Black Scarab compared current manufacturer specifications, configuration documents and deployment accounts. Recommendations reflect researched application fit. This is desk research, not a hands on equipment test. Published speeds remain manufacturer ratings; financial and production examples are hypothetical. Updated October 19, 2026. The outlook distinguishes supplier announcements and reported deployment milestones from Black Scarab expectations about future adoption.",
     "Packaging World’s October 2025 report describes the Robotiq PE10 and Universal Robots UR10e installation commissioned by IGPS at Griffith Foods Colombia in August 2024, including product trials, simulation and operator training. This provides independent context for the integration work."
   ]
 });
