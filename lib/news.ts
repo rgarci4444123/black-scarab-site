@@ -34,6 +34,146 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  slug: "berobox-moving-safety-zone",
+  "title": "beRobox puts a moving safety zone on the palletizing arm",
+  "summary": "Sonair’s ultrasonic sensor brings a moving protective zone to PALTZ palletizers. The business case rests on fewer interruptions during everyday work.",
+  "category": "Industrial robotics",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/berobox-moving-safety-zone.png",
+  "imageAlt": "Overhead editorial illustration of a palletizing arm inside a purple protective zone, with a worker and a second pallet outside it on a chartreuse background.",
+  "imageCaption": "Original Black Scarab editorial illustration of a protective zone moving with a palletizing arm.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "beRobox launched 3D Dynamic Safety for PALTZ on October 19, following demonstration coverage on October 18.",
+    "Sonair’s arm mounted ADAR One sensor detects people and objects in three dimensions using ultrasound.",
+    "beRobox says operators can exchange a pallet at one station while the robot continues at the other, subject to the configuration’s safety requirements."
+  ],
+  "sections": [
+    {
+      "heading": "A protective zone that moves",
+      "paragraphs": [
+        "beRobox introduced its 3D Dynamic Safety module on October 19 at PACK EXPO International in Chicago, bringing an ultrasonic sensor onto the palletizing arm so the protected area can move with the machine.",
+        "The module combines beRobox’s PALTZ palletizing system with ADAR One, a sensor developed by Norway’s Sonair. The demonstration uses a Universal Robots UR20 arm. Its commercial proposition is simple: give people access where work requires it while keeping the robot productive where conditions permit.",
+        "For a packaging operation, that could make the moments between stacks as important as the speed of the arm."
+      ]
+    },
+    {
+      "heading": "The pallet eventually fills",
+      "paragraphs": [
+        "A palletizer’s job is repetitive until it reaches a natural interruption. The pallet fills, a person or another machine removes it, and an empty one takes its place. Someone may also need to check a load or respond to a problem nearby.",
+        "Those interactions are part of the production process. An arm can move quickly in a demonstration and still spend a meaningful portion of a shift waiting for access, clearance or a restart.",
+        "beRobox’s approach combines the robot’s position with three dimensional presence detection. The company says this allows the system to manage its protected area according to the robot’s current activity. Its launch example is a pallet exchange at one station while stacking continues at the other.",
+        "The same detection is intended to prevent a restart while somebody remains in the protected area. The operating objective is to make necessary access more selective, preserving productive time elsewhere in the cell."
+      ]
+    },
+    {
+      "heading": "What the demonstration shows",
+      "paragraphs": [
+        "OEM Magazine published its demonstration coverage on October 18, a day before the formal announcement. In the accompanying vendor presentation, approaching the robot triggers a slowdown, moving closer triggers a stop, and leaving the zone allows it to resume.",
+        "That sequence helps explain the product more clearly than a promise of uninterrupted production. The robot still needs to respond to a person entering its working area. The potential improvement comes from responding to the relevant interaction without making every nearby activity interrupt the entire operation.",
+        "The demonstration also gives prospective users a concrete sequence to examine: approach, slowdown, stop, clearance and restart. Each transition matters when the system is installed beside an actual conveyor and pallet route."
+      ]
+    },
+    {
+      "heading": "Detecting with sound",
+      "paragraphs": [
+        "ADAR One emits airborne ultrasound and processes the returning echoes to locate objects. Sonair specifies a field of view of 180 degrees by 180 degrees, covering a volume rather than a single flat plane.",
+        "That matters for an arm that changes height while building a stack. Relevant objects and people can appear above or below a sensing plane. Sonair offers configurable protective and warning zones and positions the sensor for use either as a primary safety component or alongside other sensing technologies.",
+        "Sound also provides a different sensing method from cameras and laser scanners. Sonair markets that difference for environments with changing light, glare or dust. The installation still needs to be assessed for its actual geometry and conditions.",
+        "The sensor detects presence rather than identifying whether an obstacle is a person or a carton. Sonair’s FAQ explicitly distinguishes detection from classification and says sufficiently close detections can merge. These characteristics make sensor placement and coverage part of the integration work."
+      ]
+    },
+    {
+      "heading": "Safety belongs to the whole cell",
+      "paragraphs": [
+        "Sonair lists ADAR One as certified to SIL 2 and PL d, functional safety ratings used in industrial systems. Its integration guidance makes an essential distinction: the certification covers the sensor, while the integrator owns the complete system’s safety case.",
+        "For a palletizing cell, detection is one part of that system. The arm, gripper, carried load, access routes and stopping behavior all influence the required safeguards. A sensor response time cannot be substituted for the time needed to stop the loaded machine.",
+        "The moving zone therefore needs to be evaluated through the complete operating sequence. A suitable arrangement when the pallet is empty must also work as the stack grows and the arm changes position. Access for removing a finished pallet has to remain consistent with the robot’s permitted activity.",
+        "For a prospective customer, the useful request is an assessment of the proposed configuration, including its loads and access pattern. That connects the component’s certification to the work the installation will actually perform."
+      ]
+    },
+    {
+      "heading": "Integration makes it usable",
+      "paragraphs": [
+        "The new module sits within an existing palletizing platform. beRobox’s STACKiT software lets an operator define box dimensions and weight, pallet limits, stacking patterns and layer arrangements. These settings establish the work the robot must repeat.",
+        "beRobox also offers STACKiT AI Vision for depalletizing and repalletizing. That addresses handling and adaptation to the stack. The ultrasonic safety module addresses presence around the moving equipment. Keeping those functions clear helps a buyer understand what each option contributes.",
+        "For customers, the attraction of an integrated package is having the sensing, robot behavior and operator workflow engineered together. The purchasing discussion should establish which configuration supports the new option, what commissioning involves and who is responsible for validating the completed installation.",
+        "The commercial comparison should use the quoted installed configuration, including the engineering needed to put it into service."
+      ]
+    },
+    {
+      "heading": "Count finished pallets",
+      "paragraphs": [
+        "Black Scarab’s view is that the strongest business case would come from a line where pallet exchanges and routine access consume enough time to constrain output. In that setting, recovering productive minutes could matter even if the arm’s maximum speed stays unchanged.",
+        "Consider a hypothetical line that frequently waits during pallet changeovers. If stacking at the second station can continue through those exchanges, the potential benefit is additional accepted output over a shift. If that line already changes pallets with little interruption, the same feature may contribute less.",
+        "An evaluation should therefore compare completed pallets under the same product mix, loads and layout. Record how much time is spent stacking, exchanging pallets, responding to stops and recovering normal operation. Frequent nuisance stops could consume the time saved elsewhere.",
+        "This also reveals whether the bottleneck moves. A palletizer that finishes work sooner only increases total line output if product supply and downstream handling can support the improvement."
+      ]
+    },
+    {
+      "heading": "The next signal",
+      "paragraphs": [
+        "beRobox has brought a specific operational idea to the show floor: place safety sensing on the moving equipment and use its position to manage access around the work.",
+        "The next useful evidence is a customer installation showing how that changes an ordinary shift. Completed output, operator interventions and changeover delays will reveal whether a more selective protective zone translates into a more productive palletizing system."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "beRobox launch announcement, October 19, 2026",
+      "url": "https://www.berobox.com/news/berobox-unveils-industry-first-%223d-dynamic-safety%22-at-pack-expo-2026"
+    },
+    {
+      "label": "OEM Magazine demonstration coverage, October 18, 2026",
+      "url": "https://www.oemmagazine.org/engineering/automation/video/22976681/3d-dynamic-safety-sensor-enables-safe-cobot-motion"
+    },
+    {
+      "label": "Sonair ADAR One specifications and certification information",
+      "url": "https://www.sonair.com/products"
+    },
+    {
+      "label": "Sonair documentation and technical FAQ",
+      "url": "https://www.sonair.com/resources/adar-user-manual"
+    },
+    {
+      "label": "Sonair integration guidance and certification scope",
+      "url": "https://www.sonair.com/resources/trademarks"
+    },
+    {
+      "label": "beRobox STACKiT software",
+      "url": "https://www.berobox.com/products/stackit"
+    },
+    {
+      "label": "Automated Warehouse launch coverage, October 19, 2026",
+      "url": "https://www.automatedwarehouseonline.com/berobox-unveils-paltz-palletizer-3d-dynamic-safety-pack-expo-2026/"
+    },
+    {
+      "label": "Sonair announcement through the Association for Advancing Automation, October 20, 2026",
+      "url": "https://www.automate.org/robotics/news/berobox-introduces-3d-dynamic-safety-for-palletizers-with-sonair-adar-one"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [
+      "warehousing-logistics"
+    ],
+    "technologies": [
+      "industrial-robotics",
+      "sensors"
+    ],
+    "applications": [
+      "palletizing",
+      "robot-safety"
+    ]
+  },
+  "publishedDate": "2026-10-20",
+  "publishedAt": "2026-10-20T11:44:37-04:00",
+  "publishedLabel": "October 20, 2026"
+},
+{
   slug: "dream-labs-90m-seed-robot-intelligence",
   "title": "Dream Labs emerges from stealth with $90 million for robot intelligence",
   "summary": "A public API puts the startup’s robot model within developers’ reach. The bigger test is whether skills can travel reliably between different machines.",
