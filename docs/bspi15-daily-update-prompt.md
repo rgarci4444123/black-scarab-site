@@ -40,7 +40,7 @@ Do not change the target allocation donut. It represents the latest quarterly re
 
 Check for splits, mergers, delistings, ticker changes, suspensions, and other corporate actions. Report any event requiring methodology treatment before changing the index.
 
-Run type checking, linting, the production build, and desktop and mobile visual checks. Open the finished local preview at the Performance section. Do not deploy until I approve it.
+Run type checking, linting, the production build, and desktop and mobile visual checks. Open the finished local preview at the Performance section. After all BSPI15 checks pass, automatically commit and push the reviewed BSPI15 changes to `origin/main` under Rodolfo’s standing October 20, 2026 authorization. Report known unrelated repository lint failures without blocking an otherwise verified update. Fetch current main first, preserve remote changes and unrelated local work, and stage only the reviewed BSPI15 files. Use an isolated temporary Git index when needed. Never force push or include credentials. Verify the remote commit, save a dated push receipt and include the commit link in the daily report. Retry verified unpublished changes on subsequent runs even if there is no new trading date. Stop and report push failures or conflicts. Do not run a separate manual deployment.
 
 Report the BSPI15 closing level, daily change, since launch return, benchmark returns, excess returns, missing prices, market holidays, corporate actions, and changed files.
 

@@ -1,0 +1,12 @@
+{
+  "ticker": "300124",
+  "company": "Inovance",
+  "date": "2026-10-19",
+  "event": "Employee stock option exercise window opened",
+  "issuerNoticeDate": "2026-10-13",
+  "issuerNoticeNumber": "2026-089",
+  "source": "https://www.cfi.net.cn/p20261013001745.html",
+  "sourceDescription": "Issuer announcement reproduced by CFi",
+  "review": "Permits employees to exercise options during a future window; it does not establish that all options were exercised on October 19. No split or distribution to existing holders is described.",
+  "methodologyTreatment": "No continuity adjustment. This price-return index does not weight constituents by shares outstanding."
+}
