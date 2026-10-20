@@ -34,6 +34,150 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  slug: "dream-labs-90m-seed-robot-intelligence",
+  "title": "Dream Labs emerges from stealth with $90 million for robot intelligence",
+  "summary": "A public API puts the startup’s robot model within developers’ reach. The bigger test is whether skills can travel reliably between different machines.",
+  "category": "Robot intelligence",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/dream-labs-90m-seed-robot-intelligence.png",
+  "imageAlt": "Three different metallic robotic grippers framed by glowing coral rings against a deep teal background.",
+  "imageCaption": "Original Black Scarab editorial illustration of shared intelligence across robot bodies.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "Dream Labs announced a $90 million seed round led by B Capital alongside Kindred Ventures.",
+    "Dream API gives developers access to a model designed to control different robot bodies.",
+    "Independent testing shows promising task progress; commercial usefulness will depend on reliable completion and the work needed to get there."
+  ],
+  "sections": [
+    {
+      "heading": "A new company with a familiar robotics problem",
+      "paragraphs": [
+        "Dream Labs emerged from stealth on October 19 with $90 million in seed funding and a public API for its robot foundation model, Dream-1.",
+        "The San Francisco company’s financing was led by B Capital alongside Kindred Ventures, with participation from A.Capital, Unusual Ventures, SV Angel, Wing VC, Scribble VC and Adrian Aoun, among others. Dream Labs says the new money will primarily fund computing capacity as it expands the tasks, machines and users its model can support.",
+        "Founded by former NVIDIA robotics researchers and led by cofounder and CEO Joel Jang, the company is pursuing a consequential idea: useful robot intelligence should be transferable between machines. Its launch announcement says it is working with more than 20 hardware partners. B Capital also lists Dream Labs in its active portfolio.",
+        "That ambition moves attention from the price of a robot to the cost of making it useful. Buying arms and grippers is one step. Teaching them a task, recovering from mistakes and adapting to a changed setup can determine whether a project ever leaves the workbench."
+      ]
+    },
+    {
+      "heading": "An API for physical actions",
+      "paragraphs": [
+        "Dream API takes camera images, the robot’s current state and a task description, then returns actions for the machine to execute. Developers connect their own software to the service. Dream Labs also offers a browser playground for trying real robots and a service that adapts its model using demonstrations from a user’s machine.",
+        "The attraction is straightforward. A small team could begin testing behavior without first building a robotics learning stack. A hardware developer could concentrate more effort on the machine and its application while using an outside provider for the model.",
+        "Those are potential reductions in development work. They become commercially valuable when a developer can move from an interesting first attempt to a repeatable result with less time, data and specialist effort."
+      ]
+    },
+    {
+      "heading": "From predicting video to choosing a movement",
+      "paragraphs": [
+        "The technical lineage begins with DreamZero, a research project developed at NVIDIA. Its researchers described a World Action Model that learns to predict future visual states and robot actions together, using a pretrained video model as its starting point.",
+        "The intuition is useful: learning what a successful movement should look like may help a model choose the movements that produce it. Visual experience can provide information about how objects move and interact, while robot data connects those changes to physical commands.",
+        "DreamZero’s published experiments included adaptation to a new robot using 30 minutes of data. That was a result for the earlier research system, with its own training and evaluation conditions. It helps explain the company’s direction, while the current product needs to be judged on its own evidence."
+      ]
+    },
+    {
+      "heading": "Different bodies still matter",
+      "paragraphs": [
+        "Dream Labs says Dream-1 can transfer to unfamiliar robots with two arms and parallel grippers. One control mode predicts the desired position and orientation of each gripper; the receiving robot’s inverse kinematics solver translates those targets into joint movements.",
+        "That shared interface provides a practical way to address different machines. The company also acknowledges that solver quality matters, and that a gripper destination does not fully specify how the arm travels there.",
+        "A useful way to understand the challenge is to picture two people reaching for the same cup from different seats. The destination is identical, but the route and reach differ. For a robot, those differences affect clearance, joint limits and whether a requested movement is possible.",
+        "The commercial question is how much adaptation remains after the model transfers. A promising first action can save development time, even when the final application still needs demonstrations and engineering."
+      ]
+    },
+    {
+      "heading": "What the independent test measures",
+      "paragraphs": [
+        "Robocurve’s published leaderboard gives Dream-1 a 59.3% mean score on RoboDojo-RC Tier 1, across 120 task attempts. Its estimated hosted inference cost is $0.15 per attempt. At the time of review, the next highest listed mean score was 48.2%.",
+        "The scoring deserves attention. Robocurve’s methodology awards partial credit for observable progress within a task. A robot can therefore improve its score without finishing the complete job. The 59.3% figure describes average progress, not the percentage of attempts that ended in full success.",
+        "The benchmark comprises six manipulation tasks, including stacking bowls and putting a cap on a pen. Robocurve selected this tier from the easier tasks in its broader evaluation. That makes it a defined comparison of model behavior, rather than a direct forecast of performance across a factory or home.",
+        "For Black Scarab, the encouraging signal is that an outside evaluator provides a common test and inspectable results. A deployment decision needs another layer: the fraction of complete jobs accepted, how often a person intervenes and what happens when an object slips or a sequence stalls."
+      ]
+    },
+    {
+      "heading": "The price of the model and the cost of the job",
+      "paragraphs": [
+        "Dream Labs’ current research release lists Dream-1 at $3 per hour and Dream-1-flash at $2 per hour. It describes each model call as returning 1.6 seconds of actions, with 2,250 calls corresponding to an hour.",
+        "For an illustrative eight hours of model use, those rates imply $24 or $16 in inference charges. This is Black Scarab arithmetic using the advertised rates. A robot that waits between jobs, requests additional actions or repeats failed attempts will have a different relationship between billed model use and completed work.",
+        "The useful business metric is total cost per accepted task. Hardware, integration, maintenance and human assistance sit alongside model charges. A cheap inference service can still be expensive if people must frequently reset the scene. Conversely, a modest recurring model bill could be attractive if it materially reduces programming and adaptation work.",
+        "Consider a hypothetical developer testing a robot that sorts small objects. The first comparison should be how many complete sorting jobs it finishes in an hour and how much assistance each requires. A more capable model could justify a higher hourly rate if it produces enough additional accepted jobs. That is the connection between model pricing and operating value."
+      ]
+    },
+    {
+      "heading": "A beta with a measurable next step",
+      "paragraphs": [
+        "Dream Labs labels Dream-1 a research beta and says it has not been validated for safety critical use. Its research also reports simulation tests across 27 unfamiliar robot embodiments. Those tests address breadth of transfer, while physical trials address what survives contact with actual hardware.",
+        "A useful evaluation would follow one task across several machines, keep the acceptance criteria consistent and record both the initial result and the improvement after adaptation. That would show whether the system reduces the work required for a new body, and how much performance remains specific to a particular setup.",
+        "Repeated trials matter more than a single clean demonstration. The starting scene, object variation, recovery procedure and human intervention should be part of the record. Those details connect an impressive model behavior to an application someone can depend on."
+      ]
+    },
+    {
+      "heading": "What the $90 million is buying",
+      "paragraphs": [
+        "Black Scarab’s view is that Dream Labs is testing a plausible division of labor: hardware companies build machines, application developers identify useful jobs, and a shared model supplies capabilities that can improve across both.",
+        "The API makes that proposition testable by people outside the founding team. The funding provides resources to improve it. Neither removes the need to establish reliable performance on complete tasks.",
+        "The next meaningful evidence will be developers returning with the same machine, adding a second task or moving a working application onto another body with less effort. If Dream Labs can make those transitions routine, its business could grow with useful robot activity across many manufacturers."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Dream Labs financing announcement, Business Wire, October 19, 2026",
+      "url": "https://www.businesswire.com/news/home/20261019230613/en/Dream-Labs-Raises-%2490M-Seed-to-Build-the-Brain-for-Everyday-Robots"
+    },
+    {
+      "label": "Business Wire announcement syndicated by Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/dream-labs-raises-90m-seed-170000245.html"
+    },
+    {
+      "label": "Dream Labs product and API overview",
+      "url": "https://dreamlabs.ai/"
+    },
+    {
+      "label": "Dream Labs, Zero-Shot to New Robots: Introducing Dream-1",
+      "url": "https://dreamlabs.ai/research/dream-1/"
+    },
+    {
+      "label": "DreamZero research and evaluation overview",
+      "url": "https://dreamzero0.github.io/"
+    },
+    {
+      "label": "Robocurve current robotics leaderboard",
+      "url": "https://robocurve.org/"
+    },
+    {
+      "label": "Robocurve RoboDojo-RC Tier 1 methodology and scoring",
+      "url": "https://robocurve.org/opus-5-5-robodojo-rc-tier-1/"
+    },
+    {
+      "label": "B Capital active portfolio",
+      "url": "https://b.capital/portfolio/"
+    },
+    {
+      "label": "John Koetsier, Forbes, Robot Brains For 75 Cents/Hour? Former Nvidia Researchers Raise $90 Million, October 19, 2026",
+      "url": "https://www.forbes.com/sites/johnkoetsier/2026/10/19/robot-brains-for-75-centshour-former-nvidia-researchers-raise-90-million/"
+    },
+    {
+      "label": "Dealroom funding coverage, October 19, 2026",
+      "url": "https://dealroom.co/news/163965-dream-labs-lands-90m-seed-to-put-one-brain-inside-any-robot/"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [],
+    "technologies": [
+      "embodied-ai",
+      "foundation-models",
+      "manipulation"
+    ],
+    "applications": []
+  },
+  "publishedDate": "2026-10-20",
+  "publishedAt": "2026-10-20T08:57:13-04:00",
+  "publishedLabel": "October 20, 2026"
+},
+{
   "taxonomy": {
     "primaryIndustry": "manufacturing",
     "relevantIndustries": [
