@@ -8,8 +8,8 @@ export const primaryNavLinks: SiteNavLink[] = [
   { label: "News", href: "/news", isPage: true },
   { label: "Insights", href: "/insights", isPage: true },
   {
-    label: "Index",
-    href: "/indices/physical-ai-adoption-15",
+    label: "Markets",
+    href: "/markets",
     isPage: true,
   },
   { label: "Events", href: "/events", isPage: true },

@@ -2,11 +2,15 @@ import type { MetadataRoute } from "next";
 import { caseStudies } from "@/lib/case-studies";
 import { newsUpdates } from "@/lib/news";
 
+import { marketCommentaries } from "@/lib/market-commentaries";
+
 const baseUrl = "https://www.blackscarab.ai";
 const currentDate = new Date();
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
+    { url: `${baseUrl}/markets`, lastModified: new Date(marketCommentaries[0].publishedAt), changeFrequency: "weekly", priority: 0.9 },
+    ...marketCommentaries.map(edition => ({ url: `${baseUrl}/markets/${edition.slug}`, lastModified: new Date(edition.publishedAt), changeFrequency: "monthly" as const, priority: 0.85 })),
     {
       url: `${baseUrl}/`,
       lastModified: currentDate,

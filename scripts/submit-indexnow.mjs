@@ -57,6 +57,10 @@ function resolvePaths(entry) {
 
   const normalized = entry.startsWith("/") ? entry : null;
 
+  if (normalized === "/markets" || normalized?.startsWith("/markets/")) {
+    return normalized === "/markets" ? [normalized] : ["/markets", normalized];
+  }
+
   if (normalized?.startsWith("/news/")) {
     const slug = normalized.slice("/news/".length);
     return newsSlugs.includes(slug) ? ["/news", normalized] : [];

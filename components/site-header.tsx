@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { primaryNavLinks, type SiteNavLink } from "@/lib/site-navigation";
 
@@ -21,6 +22,8 @@ export default function SiteHeader({
   ctaTone = "outline",
 }: SiteHeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
+  const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
 
   const linkClassName = "transition hover:text-[#0071e3]";
 
@@ -48,7 +51,7 @@ export default function SiteHeader({
           <nav className="hidden items-center gap-7 text-sm text-[#6e6e73] md:flex md:justify-self-center">
             {navLinks.map((item) =>
               item.isPage ? (
-                <Link key={item.label} href={item.href} className={linkClassName}>
+                <Link key={item.label} href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined} className={`${linkClassName} ${isCurrent(item.href) ? "text-[#202522] font-semibold" : ""}`}>
                   {item.label}
                 </Link>
               ) : (
@@ -95,6 +98,7 @@ export default function SiteHeader({
                       <Link
                         key={item.label}
                         href={item.href}
+                        aria-current={isCurrent(item.href) ? "page" : undefined}
                         className="block rounded-2xl px-4 py-3 text-sm font-medium text-[#111827] transition hover:bg-[#f5f5f7]"
                         onClick={() => setMobileOpen(false)}
                       >
