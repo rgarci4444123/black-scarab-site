@@ -34,6 +34,115 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "taxonomy": {
+    "primaryIndustry": "data-centers",
+    "relevantIndustries": [
+      "energy-utilities"
+    ],
+    "technologies": [
+      "ai-compute"
+    ],
+    "applications": [
+      "compute-procurement"
+    ]
+  },
+  slug: "nvidia-dsx-pod-container-ai-factories",
+  "title": "NVIDIA moves AI factory assembly into containers",
+  "summary": "DSX POD brings Vera Rubin computing and supporting systems into factory assembled modules. NVIDIA says they could go live at prepared sites in as little as 14 days, with partner deliveries expected in early 2027.",
+  "category": "AI Infrastructure",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/nvidia-dsx-pod-container-ai-factories.png",
+  "imageAlt": "Editorial illustration of a silver modular computing enclosure beside a red conduit under a coral sky",
+  "imageCaption": "AI generated editorial illustration by Black Scarab, interpreting modular AI infrastructure.",
+  "readingTime": "5 min read",
+  "keyPoints": [
+    "NVIDIA announced DSX POD at GTC Berlin on October 21, with partner deliveries expected worldwide in early 2027.",
+    "The company says factory integration could reduce deployment at a prepared site from six months to as little as 14 days.",
+    "Power connections, cooling and network infrastructure remain part of site preparation."
+  ],
+  "sections": [
+    {
+      "heading": "An AI factory assembled before it arrives",
+      "paragraphs": [
+        "NVIDIA wants more of the work of building an AI data center to happen before the equipment reaches its destination. At GTC Berlin on October 21, the company introduced DSX POD, a reference design that puts Vera Rubin AI infrastructure inside purpose built modular containers, assembled and tested by partners before shipment.",
+        "Its headline claim is speed: deployment at a prepared site could fall from six months to as little as 14 days. NVIDIA expects partners to deliver the first systems worldwide in early 2027.",
+        "The commercial proposition is straightforward. Expensive computing equipment starts earning its keep when it runs customer workloads. Moving more assembly into a factory could shorten the interval between equipment delivery and productive operation, while site preparation proceeds separately.",
+        "That makes the announcement a story about how AI infrastructure gets built, as well as which processors go inside it. The container is the delivery format. The larger bet is that repeating a validated design can make construction schedules more predictable."
+      ]
+    },
+    {
+      "heading": "More than a box around servers",
+      "paragraphs": [
+        "Modular data centers already exist. NVIDIA is extending factory integration to the tightly connected systems needed for a large AI cluster. Its technical description covers computing, networking, storage, power, liquid cooling and controls as a coordinated architecture.",
+        "Partners can complete internal cabling, plumbing and functional checks before shipping the unit. Site teams prepare the foundations and external connections in parallel. After arrival, the work shifts to placement, connections between containers and commissioning the assembled system.",
+        "NVIDIA describes a standard 800 volt DC input at the core containers. Partners engineer the upstream electrical solution for each location. Internal liquid cooling loops can also be tested at the factory, then connected to the site's water and heat rejection infrastructure.",
+        "This is a meaningful change in the boundary of the delivered product. A rack shipment leaves more integration to the destination. A tested module brings a larger part of that responsibility into the manufacturing process. For the customer, the value would be fewer dependencies to coordinate during the final stretch before service begins."
+      ]
+    },
+    {
+      "heading": "Partners turn the design into a product",
+      "paragraphs": [
+        "NVIDIA supplies the design foundation, with partners responsible for engineering, manufacturing, customization, delivery and support. The announced ecosystem includes Dell Technologies, HPE, Lenovo, Crusoe, Eaton, Schneider Electric and Vertiv, among others.",
+        "Crusoe offers an early example of how a provider plans to use it. The company said its Spark modular platform will support DSX POD and introduced Spark Liquid for dense systems such as Vera Rubin NVL72. Its next generation liquid cooled units are slated for 2027.",
+        "Crusoe says it has operated modular AI factories since 2020 and points to its 352,000 square foot Spark factory in Brighton, Colorado, as part of its manufacturing base. Its announcement describes routes through Crusoe Cloud, dedicated deployments and additional modular capacity at existing sites.",
+        "That combination matters commercially: a reference design needs factories, delivery teams and an operating service behind it to become useful capacity. Different partners can compete on those capabilities even when they start from the same NVIDIA architecture."
+      ]
+    },
+    {
+      "heading": "What the 14 day claim measures",
+      "paragraphs": [
+        "The prepared site condition is central to NVIDIA's timing claim. The company is describing a shorter deployment stage after the location can support the arriving modules. Power, cooling, networking and other supporting infrastructure must be ready.",
+        "An operator evaluating the offer therefore needs a schedule with a clear starting point and a useful finish line. Equipment placed on its foundations is one milestone. A cluster accepted for customer workloads is another. The latter is what connects construction speed to the prospect of earlier revenue.",
+        "The practical test will be how consistently partners can repeat that handover. A fast installation at one location demonstrates a possibility. Repeated delivery across sites would establish whether the model makes capacity planning more dependable."
+      ]
+    },
+    {
+      "heading": "A little more pressure on the infrastructure around it",
+      "paragraphs": [
+        "Black Scarab's view is that faster installation could make usable power a more prominent competitive advantage for a site. If computing modules arrive closer to operating condition, the electrical connection, conversion equipment and cooling system have less schedule slack to absorb delays. A container delivery date becomes more valuable when those interfaces are ready to accept it.",
+        "For power infrastructure providers, that points to the importance of coordinating energization with equipment delivery. For data center developers, it puts emphasis on repeatable site connections, logistics and commissioning. Some installation work moves into factories, while the work of preparing a dependable location remains commercially important.",
+        "NVIDIA's product page also describes software controls for managing throughput within defined power limits. Better use of an available power envelope could complement faster construction. It does not add electrical supply. The likely opportunity is to bring computing and supporting infrastructure into service on a better coordinated schedule."
+      ]
+    },
+    {
+      "heading": "The next proof is delivery",
+      "paragraphs": [
+        "NVIDIA identifies large greenfield liquid cooled AI facilities as the initial focus. The design gives operators a repeatable unit for adding capacity, delivered through an ecosystem rather than a single finished NVIDIA container product.",
+        "For now, the announcement sets out a credible manufacturing proposition: move repeated integration work into a controlled production process and let site preparation run alongside it. Early 2027 deliveries should begin to show how that proposition translates into operating infrastructure.",
+        "The result worth watching is the time from a genuinely ready site to dependable customer service. Shortening that interval would be useful even for projects whose overall schedule is still governed by the infrastructure outside the container."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "NVIDIA Newsroom: DSX POD announcement, October 21, 2026",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment"
+    },
+    {
+      "label": "NVIDIA Technical Blog: DSX POD architecture and deployment process",
+      "url": "https://developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod/"
+    },
+    {
+      "label": "NVIDIA: DSX POD product overview and deployment scope",
+      "url": "https://www.nvidia.com/en-us/data-center/products/dsx/pod/"
+    },
+    {
+      "label": "Crusoe: Spark support for DSX POD, October 21, 2026",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-nvidia-dsx-modular-standardization"
+    },
+    {
+      "label": "Data Center Knowledge: Independent reporting on the DSX POD launch",
+      "url": "https://www.datacenterknowledge.com/ai-data-centers/nvidia-unveils-dsx-pod-for-faster-ai-data-center-builds"
+    }
+  ],
+  "publishedDate": "2026-10-21",
+  "publishedAt": "2026-10-21T14:21:39-04:00",
+  "publishedLabel": "October 21, 2026"
+},
+{
   slug: "agco-digit-hesston-factory-pilot-2027",
   "title": "AGCO plans a 2027 factory pilot for Digit",
   "summary": "AGCO expects to test Agility’s humanoid on parts sorting, stacking and tote storage at its Hesston plant. The commercial question is whether flexible handling can improve an ordinary production shift.",
