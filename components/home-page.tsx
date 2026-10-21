@@ -142,7 +142,8 @@ export default function HomePage() {
       hasBlueCardGlow: false,
     },
     {
-      eyebrow: "Featured insight",
+      eyebrow: "Weekly Market Commentary",
+      editionDate: featuredInsight.coverageLabel.replace(/,\s*\d{4}$/, ""),
       title: featuredInsight.title,
       href: `/markets/${featuredInsight.slug}`,
       image: featuredInsight.image,
@@ -218,8 +219,13 @@ export default function HomePage() {
                   target={card.external ? "_blank" : undefined}
                   rel={card.external ? "noopener noreferrer" : undefined}
                 >
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#515154]">
+                  <p className="min-h-10 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#515154] md:min-h-16 lg:min-h-10">
                     {card.eyebrow}
+                    {card.editionDate ? (
+                      <span className="mt-2 block text-[10px] font-medium tracking-[0.14em] text-[#6e6e73]">
+                        {card.editionDate}
+                      </span>
+                    ) : null}
                   </p>
                   <div className="relative mt-5 aspect-[16/8.6] overflow-hidden bg-[#f5f5f7]">
                     {card.image ? (
