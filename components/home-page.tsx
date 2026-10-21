@@ -140,7 +140,6 @@ export default function HomePage() {
       cta: "Read report",
       external: false,
       hasBlueCardGlow: false,
-      imageFit: "cover",
     },
     {
       eyebrow: "Weekly Market Commentary",
@@ -152,18 +151,16 @@ export default function HomePage() {
       cta: "Read commentary",
       external: false,
       hasBlueCardGlow: false,
-      imageFit: "cover",
     },
     {
       eyebrow: "Latest podcast",
       title: "Google’s Robot Training + Warehouse Robots + Automated Homebuilding",
       href: "https://open.spotify.com/episode/28mJB4TkJiHcOIOTUe1Ko4",
-      image: "/images/podcast/black-scarab-physical-ai-weekly-cover.jpg",
+      image: "/images/podcast/black-scarab-physical-ai-weekly-homepage.jpg",
       imageAlt: "Black Scarab Physical AI Weekly podcast cover",
       cta: "Listen on Spotify",
       external: true,
       hasBlueCardGlow: true,
-      imageFit: "contain",
     },
   ];
 
@@ -238,11 +235,7 @@ export default function HomePage() {
                         priority={index === 0}
                         loading={index === 0 ? undefined : "eager"}
                         sizes="(min-width: 768px) 33vw, calc(100vw - 48px)"
-                        className={
-                          card.imageFit === "contain"
-                            ? "object-contain"
-                            : "object-cover transition duration-500 group-hover:scale-[1.025]"
-                        }
+                        className="object-cover transition duration-500 group-hover:scale-[1.025]"
                       />
                     ) : null}
                     <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/5" />
