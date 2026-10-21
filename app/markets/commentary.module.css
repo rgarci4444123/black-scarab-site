@@ -31,3 +31,18 @@
 
 .scope :global(.edition-line),.scope :global(.edition-contents summary),.scope :global(.contents-index-link){color:#6e6e73;}
 .scope :global(.edition-line a:hover),.scope :global(.edition-contents nav a:hover),.scope :global(.contents-index-link:hover){color:#0071e3;}
+
+/* One continuous editorial column from the headline through the article. */
+.scope :global(.article-header){display:grid;gap:28px;max-width:790px;margin:0 auto;padding:44px 30px 0;}
+.scope :global(.article-header .article-masthead){min-width:0;max-width:none;margin:0;padding:0;}
+.scope :global(.article-header h1){font-size:38px;line-height:1.17;letter-spacing:-1.2px;text-wrap:pretty;}
+.scope :global(.article-header .edition-line){flex-wrap:wrap;justify-content:space-between;gap:8px 20px;font-size:10px;line-height:1.6;letter-spacing:1.2px;padding-bottom:19px;}
+.scope :global(.article-header .byline){margin-top:22px;}
+.scope :global(.article-header .hero){width:100%;max-width:none;margin:0;}
+.scope :global(.article-header .hero>img){width:100%;height:auto;aspect-ratio:73/28;object-fit:cover;object-position:center;border-radius:18px;}
+.scope :global(.article-header .hero figcaption){padding:9px 0 0;font-size:10px;line-height:1.5;}
+.scope :global(.reading-layout){padding-top:28px;}
+.scope :global(.edition-contents){margin-bottom:32px;}
+.scope :global(.lede .opening-number){font-size:44px;letter-spacing:-1.5px;margin-bottom:20px;}
+@media(max-width:640px){.scope :global(.article-header){padding:30px 23px 0;gap:24px;}.scope :global(.article-header h1){font-size:30px;line-height:1.18;letter-spacing:-.8px;}.scope :global(.article-header .edition-line){font-size:9px;padding-bottom:17px;gap:7px;}.scope :global(.article-header .hero>img){aspect-ratio:1672/941;border-radius:14px;}.scope :global(.article-header .byline a){font-size:11px;}.scope :global(.article-header .byline span){font-size:10px;}.scope :global(.reading-layout){padding-top:23px;}.scope :global(.lede .opening-number){font-size:38px;}}
+@media print{.scope :global(.article-header){display:block;max-width:none;padding:25px 0 0;}.scope :global(.article-header .hero){max-width:580px;margin:22px auto;}.scope :global(.article-header h1){font-size:30px;}}
