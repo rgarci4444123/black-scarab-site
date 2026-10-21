@@ -5,3 +5,7 @@ Markets is the public-equities commentary and index entry point. Add approved ed
 ## October 21, 2026
 
 Rodolfo approved publication of the Markets landing page and the supplied commentary with subsequent edits: centered navigation and article text; collapsible article contents; no fictional archive entries; restrained closing; brief inflation and Ouster profitability context; no bold thesis callouts. Cover is original AI-generated editorial artwork. Sources are listed at the foot of the article. Coverage: October 14 through October 20. Price returns: October 13 close through October 20 close. Source material and image-generation brief are retained in the Black Scarab Weekly Market Commentary workspace.
+
+## Shared design
+
+Use `SitePage` and `SiteSurface` from `components/site-frame.tsx` for the main site sections. Keep Markets CSS on its content only; do not wrap the shared header or footer in page-specific resets or link color rules. Match the shared white surfaces, neutral borders, blue link/button accents, frame width and responsive outer gutters. Keep the article reading column centered and narrower within that shared frame.

@@ -1,7 +1,15 @@
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
-import styles from "./markets.module.css";
+import { SitePage, SiteSurface } from "@/components/site-frame";
 
 export default function MarketsLayout({ children }: { children: React.ReactNode }) {
-  return <div className={styles.scope}><div className="shell"><SiteHeader />{children}<SiteFooter /></div></div>;
+  return (
+    <SitePage>
+      <SiteSurface>
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+      </SiteSurface>
+    </SitePage>
+  );
 }

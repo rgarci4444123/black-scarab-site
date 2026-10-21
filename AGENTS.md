@@ -63,3 +63,7 @@ The X edition is the third publication step. Adapt it from the verified website 
 ## Article hyperlink restraint
 
 User preference, October 6, 2026: For all future News reports and Insights deep dives, put research and citation hyperlinks in a Sources section at the bottom. Keep the article body free of routine citation links. Use a body hyperlink only when it is essential for the reader to take a specific action or access an indispensable resource; use such exceptions sparingly. Preserve clear attribution in prose and keep the supporting evidence in the source list and research records. Do not append a linked source label to each paragraph.
+
+## Global visual coherence
+
+User preference, October 21, 2026: prioritize the global website design over page-specific mockups. Main sections use `SitePage` and `SiteSurface` from `components/site-frame.tsx`, plus the existing shared header and footer. Match their frame width, outer gutters, white surfaces, neutral borders, type scale, navigation states and blue interactive accents. Page styles must be scoped to their content and must not reset colors or typography on the shared navigation or footer. Retain intentional article reading widths within the shared frame. Use this live shared system as the current reference rather than restoring an older page-specific ivory and sage prototype.

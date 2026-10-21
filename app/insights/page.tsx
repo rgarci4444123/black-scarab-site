@@ -1,3 +1,4 @@
+import { SitePage, SiteSurface } from "@/components/site-frame";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EmailSignupCard from "@/components/email-signup-card";
@@ -42,8 +43,8 @@ export const metadata: Metadata = {
 
 export default function InsightsPage() {
   return (
-    <main className="min-h-screen bg-[#f5f5f7] px-3 py-3 text-[#101410] sm:px-5 sm:py-5 lg:px-7">
-      <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-[#e2e2e5] bg-[#ffffff] shadow-[0_24px_70px_rgba(15,23,42,0.055)] sm:rounded-[30px]">
+    <SitePage>
+      <SiteSurface>
         <SiteHeader homeHref="/" />
 
         <section className="px-6 py-14 text-center md:px-10 md:py-18">
@@ -115,7 +116,7 @@ export default function InsightsPage() {
         </section>
 
         <SiteFooter />
-      </div>
-    </main>
+      </SiteSurface>
+    </SitePage>
   );
 }
