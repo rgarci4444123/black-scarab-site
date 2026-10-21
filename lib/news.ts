@@ -34,7 +34,7 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
-  "slug": "agco-digit-hesston-factory-pilot-2027",
+  slug: "agco-digit-hesston-factory-pilot-2027",
   "title": "AGCO plans a 2027 factory pilot for Digit",
   "summary": "AGCO expects to test Agility’s humanoid on parts sorting, stacking and tote storage at its Hesston plant. The commercial question is whether flexible handling can improve an ordinary production shift.",
   "category": "Deployment",
