@@ -34,6 +34,135 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "agco-digit-hesston-factory-pilot-2027",
+  "title": "AGCO plans a 2027 factory pilot for Digit",
+  "summary": "AGCO expects to test Agility’s humanoid on parts sorting, stacking and tote storage at its Hesston plant. The commercial question is whether flexible handling can improve an ordinary production shift.",
+  "category": "Deployment",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/agco-digit-hesston-factory-pilot-2027.png",
+  "imageAlt": "Painted interpretation of dark robotic grippers carrying an orange industrial tote beside blue storage racks and agricultural machinery.",
+  "imageCaption": "Editorial illustration of humanoid material handling, created with AI.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "AGCO and Agility Robotics signed a commercial agreement announced on October 20.",
+    "The pilot is expected to begin in 2027 at AGCO’s Hesston, Kansas, facility.",
+    "Initial work includes sorting and stacking parts and placing totes into storage."
+  ],
+  "sections": [
+    {
+      "heading": "A factory job for 2027",
+      "paragraphs": [
+        "AGCO plans to pilot Agility Robotics’ Digit humanoid at its Hesston, Kansas, manufacturing facility in 2027, starting with material handling that supports assembly and production.",
+        "The companies announced a signed commercial agreement on October 20. The first planned jobs are parts sorting, stacking and positioning totes for storage. AGCO says it wants to improve ergonomics and operating efficiency while allowing employees to concentrate on more skilled work.",
+        "The agricultural equipment manufacturer is giving the humanoid a practical assignment inside the factory. Black Scarab’s view is that the value of this pilot will depend on how consistently those everyday movements support production, including the awkward moments between successful lifts."
+      ]
+    },
+    {
+      "heading": "Start with the handoff",
+      "paragraphs": [
+        "A tote is an unglamorous but useful test object. It has to be found, grasped, carried and placed where the next step expects it. Completing that sequence repeatedly connects the robot’s perception and movement to the surrounding operation.",
+        "The attraction of a humanoid is flexibility in spaces and workflows arranged around people. A machine that combines mobility with handling could bridge separate stations without rebuilding the entire route around a fixed transfer system. Whether that flexibility is worth paying for depends on the actual job.",
+        "Agility makes that distinction in its published deployment process. The company says it first assesses whether a humanoid suits the task and directs some prospective customers toward an autonomous mobile robot or a fixed robotic arm instead.",
+        "For a stable transfer between two fixed points, a simpler machine may be the better choice. A humanoid becomes more interesting when the work calls for both moving through an existing space and manipulating objects at different locations. The comparison should start with those requirements."
+      ]
+    },
+    {
+      "heading": "The robot is one part of the system",
+      "paragraphs": [
+        "Digit supplies the physical movement. Agility Arc supplies fleet management and workflow controls. Agility describes Arc as a cloud platform that connects its robots to compatible warehouse automation and management systems, monitors activity and supports troubleshooting.",
+        "At Arc’s launch, the company described operational measures including uptime, throughput and time between incidents, along with APIs for warehouse and manufacturing software. Those functions matter because a completed movement must also fit the instructions and status of the wider operation.",
+        "Consider a hypothetical storage task. A robot might carry a tote correctly but arrive at an occupied destination. The surrounding system needs a way to identify the problem, decide what happens next and keep the tote’s location consistent with the production record.",
+        "That is where a pilot becomes integration work. Material presentation, available storage positions, task instructions and recovery procedures all shape the result. Good handling is necessary, but a useful installation also needs dependable handoffs before and after the lift."
+      ]
+    },
+    {
+      "heading": "What existing deployments tell us",
+      "paragraphs": [
+        "Agility already has experience with tote handling in logistics. In November 2025, it reported that Digit had moved more than 100,000 totes at GXO’s Flowery Branch facility in Georgia. The company described transfers from autonomous mobile robots to a conveyor, as well as stacking totes at another floor location.",
+        "Agility’s reported milestone provides a relevant starting point for AGCO’s proposed work. It shows the kind of repeated handling the company has been developing in a customer operation. The next step is establishing performance under the loads, destinations and interruptions of a different site.",
+        "Agility’s account of the technology also describes a combination of conventional controls, demonstrations, policy training and refinement through reinforcement learning and simulation. The useful question is which behaviors have been validated for the assigned workflow and how reliably they run under its operating conditions.",
+        "The distinction matters commercially. Training a new skill and operating that skill through a production shift are separate accomplishments. Customers need both, with a clear route for resolving the cases the robot cannot complete by itself."
+      ]
+    },
+    {
+      "heading": "A pilot needs a baseline",
+      "paragraphs": [
+        "AGCO’s announcement identifies better ergonomics and efficiency as intended benefits. Measuring either requires an understanding of the work before the robot arrives: how materials move, where people repeatedly lift or reach, and which delays affect production.",
+        "Agility’s general customer program moves from controlled testing at its own facility to validation at the customer site and then operational measurement. It describes recreating relevant layouts and handling conditions, mapping the work area, assigning workflows and training an on site customer team.",
+        "For a pilot like AGCO’s, a useful measure would be accepted transfers over a scheduled shift. Pair that with operator interventions, recovery time, damaged or misplaced material and the effect on downstream waiting. A quick individual lift can coexist with a disappointing shift if interruptions consume the time gained.",
+        "Ergonomic improvement deserves its own assessment. Count the demanding handling tasks removed from employees’ work and examine any new manual recovery tasks. A successful trial should improve the work as a whole, including what people must do when automation stops."
+      ]
+    },
+    {
+      "heading": "Flexibility has to earn its cost",
+      "paragraphs": [
+        "The economic comparison should cover the complete operating arrangement: equipment or service charges, commissioning, software, maintenance, supervision and the labor needed to recover exceptions. Useful output over the agreed operating period gives those costs a meaningful denominator.",
+        "Flexibility can have value when production requirements change. A reusable robot could be attractive if it can move between suitable workflows with less engineering effort than dedicated equipment. That proposition needs evidence of the time, validation and support required for each change.",
+        "Safety also affects usable output. The loaded robot’s route, stopping behavior, access arrangements and restart procedure need to suit the work area. Agility’s published deployment process describes separating the initial validation area from live operations, a reminder that introducing the equipment is a staged engineering exercise.",
+        "These are practical reasons to begin with a bounded assignment. A clearly defined job makes it easier to establish whether the installation improves material flow and whether the same approach deserves expansion."
+      ]
+    },
+    {
+      "heading": "The next evidence is a working shift",
+      "paragraphs": [
+        "The agreement gives AGCO and Agility a specific starting point: a named factory, an expected year and a short list of handling tasks. The next useful signals are the pilot entering service, the workflow it actually runs and measured operating results.",
+        "Black Scarab’s assessment is that this is a sensible test of industrial humanoids because it puts a flexible machine against a concrete production need. The strongest follow up would show reliable transfers, less strenuous manual handling and an operating cost that supports continued use.",
+        "A repeatable shift would tell readers more about the commercial opportunity than an impressive isolated movement. Hesston is where AGCO plans to make that comparison."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "AGCO commercial agreement announcement, October 20, 2026",
+      "url": "https://news.agcocorp.com/2026-10-20-AGCO-and-Agility-Robotics-Advance-Smart-Manufacturing-with-Humanoid-Robot-Pilot-in-Hesston,-Kansas,-Facility"
+    },
+    {
+      "label": "Agility’s humanoid deployment process, August 4, 2026",
+      "url": "https://www.agilityrobotics.com/content/agilitys-humanoid-deployment-process"
+    },
+    {
+      "label": "Agility Digit and Arc solution overview",
+      "url": "https://www.agilityrobotics.com/solutions"
+    },
+    {
+      "label": "Agility Arc launch and operational metrics, March 11, 2024",
+      "url": "https://www.agilityrobotics.com/content/agility-robotics-brings-operational-visibility-to-deployment-of-digit-fleets-with-the-launch-of-agility-arc-tm"
+    },
+    {
+      "label": "Agility’s reported GXO tote handling milestone, November 20, 2025",
+      "url": "https://www.agilityrobotics.com/content/digit-moves-over-100k-totes"
+    },
+    {
+      "label": "Revista Cultivar announcement coverage, October 20, 2026",
+      "url": "https://revistacultivar.com.br/noticias/agco-testara-robos-humanoides-em-fabrica-nos-estados-unidos"
+    },
+    {
+      "label": "Humanoids Daily announcement coverage, October 20, 2026",
+      "url": "https://www.humanoidsdaily.com/news/agco-agility-digit-hesston-kansas-manufacturing-pilot"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [
+      "warehousing-logistics"
+    ],
+    "technologies": [
+      "humanoid-robotics",
+      "embodied-ai",
+      "manipulation"
+    ],
+    "applications": [
+      "material-handling"
+    ]
+  },
+  "publishedDate": "2026-10-21",
+  "publishedAt": "2026-10-21T09:58:10-04:00",
+  "publishedLabel": "October 21, 2026"
+},
+{
   slug: "berobox-moving-safety-zone",
   "title": "beRobox puts a moving safety zone on the palletizing arm",
   "summary": "Sonair’s ultrasonic sensor brings a moving protective zone to PALTZ palletizers. The business case rests on fewer interruptions during everyday work.",
