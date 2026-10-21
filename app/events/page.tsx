@@ -1,9 +1,10 @@
 import { SitePage, SiteSurface } from "@/components/site-frame";
 import type { Metadata } from "next";
+import { connection } from "next/server";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
-import { physicalAiEvents, type PhysicalAiEvent } from "@/lib/events";
+import { getUpcomingPhysicalAiEvents, type PhysicalAiEvent } from "@/lib/events";
 
 const baseUrl = "https://www.blackscarab.ai";
 
@@ -23,31 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-const groupedEvents = Array.from(
-  physicalAiEvents
-    .reduce(
-      (groups, event) => {
-        const group = groups.get(event.monthKey);
 
-        if (group) {
-          group.events.push(event);
-        } else {
-          groups.set(event.monthKey, {
-            monthKey: event.monthKey,
-            month: event.month,
-            events: [event],
-          });
-        }
-
-        return groups;
-      },
-      new Map<
-        string,
-        { monthKey: string; month: string; events: PhysicalAiEvent[] }
-      >(),
-    )
-    .values(),
-);
 
 function ArrowUpRight() {
   return (
@@ -170,13 +147,41 @@ function EventCard({ event }: { event: PhysicalAiEvent }) {
   );
 }
 
-export default function EventsPage() {
+export default async function EventsPage() {
+  await connection();
+  const upcomingEvents = getUpcomingPhysicalAiEvents();
+  const groupedEvents = Array.from(
+    upcomingEvents
+      .reduce(
+        (groups, event) => {
+          const group = groups.get(event.monthKey);
+
+          if (group) {
+            group.events.push(event);
+          } else {
+            groups.set(event.monthKey, {
+              monthKey: event.monthKey,
+              month: event.month,
+              events: [event],
+            });
+          }
+
+          return groups;
+        },
+        new Map<
+          string,
+          { monthKey: string; month: string; events: PhysicalAiEvent[] }
+        >(),
+      )
+      .values(),
+  );
+
   const eventListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Black Scarab Physical AI Events",
-    numberOfItems: physicalAiEvents.length,
-    itemListElement: physicalAiEvents.map((event, index) => ({
+    numberOfItems: upcomingEvents.length,
+    itemListElement: upcomingEvents.map((event, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: event.name,

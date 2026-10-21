@@ -1,7 +1,7 @@
 import { SitePage, SiteSurface } from "@/components/site-frame";
 import Image from "next/image";
 import Link from "next/link";
-import { insights } from "@/app/insights-data";
+import { latestMarketCommentary } from "@/lib/market-commentaries";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
@@ -129,10 +129,7 @@ function PhysicalAiEconomy() {
 
 export default function HomePage() {
   const latestNews = newsUpdates[0];
-  const featuredInsight =
-    insights.find((insight) =>
-      insight.href.includes("what-is-physical-ai-complete-guide"),
-    ) ?? insights[0];
+  const featuredInsight = latestMarketCommentary;
   const editorialCards = [
     {
       eyebrow: "Latest news",
@@ -147,10 +144,10 @@ export default function HomePage() {
     {
       eyebrow: "Featured insight",
       title: featuredInsight.title,
-      href: featuredInsight.href,
+      href: `/markets/${featuredInsight.slug}`,
       image: featuredInsight.image,
-      imageAlt: featuredInsight.title,
-      cta: "Read report",
+      imageAlt: featuredInsight.imageAlt,
+      cta: "Read commentary",
       external: false,
       hasBlueCardGlow: false,
     },

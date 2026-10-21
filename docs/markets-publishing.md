@@ -9,3 +9,5 @@ Rodolfo approved publication of the Markets landing page and the supplied commen
 ## Shared design
 
 Use `SitePage` and `SiteSurface` from `components/site-frame.tsx` for the main site sections. Keep Markets CSS on its content only; do not wrap the shared header or footer in page-specific resets or link color rules. Match the shared white surfaces, neutral borders, blue link/button accents, frame width and responsive outer gutters. Keep the article reading column centered and narrower within that shared frame.
+
+The homepage Featured insight card uses `latestMarketCommentary`, so it follows the newest published weekly edition. The Events calendar filters on each event's end date using the current New York calendar date at request time; both the visible calendar and ItemList schema use the same filtered set. Events remain listed through their final day.
