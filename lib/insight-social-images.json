@@ -41,6 +41,12 @@
     "height": 800,
     "bytes": 124141
   },
+  "/article-images/best-robotic-palletizers.png": {
+    "path": "/images/insights/social/best-robotic-palletizers-daae0dc73184.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 144400
+  },
   "/article-images/boston-dynamics-atlas-industrial-humanoid-robot-guide.png": {
     "path": "/images/insights/social/boston-dynamics-atlas-industrial-humanoid-robot-guide-e89202a5897d.jpg",
     "width": 1200,
@@ -136,6 +142,12 @@
     "width": 1200,
     "height": 800,
     "bytes": 151566
+  },
+  "/article-images/encord-physical-ai-data-deep-dive.png": {
+    "path": "/images/insights/social/encord-physical-ai-data-deep-dive-0f84dd5c984a.jpg",
+    "width": 1200,
+    "height": 675,
+    "bytes": 137918
   },
   "/article-images/fcc-robot-supply-chain-cover.png": {
     "path": "/images/insights/social/fcc-robot-supply-chain-cover-137e18c092eb.jpg",
@@ -496,11 +508,5 @@
     "width": 1200,
     "height": 800,
     "bytes": 132784
-  },
-  "/article-images/best-robotic-palletizers.png": {
-    "path": "/images/insights/social/best-robotic-palletizers-daae0dc73184.jpg",
-    "width": 1200,
-    "height": 675,
-    "bytes": 144400
   }
 }

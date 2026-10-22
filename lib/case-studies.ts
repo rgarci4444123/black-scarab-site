@@ -1,3 +1,4 @@
+import { encordDeepDive } from "@/lib/encord";
 import { roboticPalletizersDeepDive } from "@/lib/robotic-palletizers";
 import { fccSupplyChainDeepDive } from "@/lib/fcc-supply-chain";
 import { robotPoliciesDeepDive } from "@/lib/robot-policies";
@@ -27,6 +28,10 @@ import { grittAiDeepDive } from "@/lib/gritt-ai";
 import { vibeManufacturingDeepDive } from "@/lib/vibe-manufacturing";
 
 export type CaseStudySection = {
+  editorialVisuals?: {
+    afterParagraphIndex: number;
+    kind: "robotics-data-demand" | "robotics-data-tam";
+  }[];
   buyingGuideTool?: "palletizer-comparison" | "palletizer-calculator" | "palletizer-cell";
   id?: string;
   tool?: "history" | "robot-check" | "covered-list" | "components" | "downloads" | "providers" | "launch-check";
@@ -16778,6 +16783,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  encordDeepDive(),
   roboticPalletizersDeepDive(),
   fccSupplyChainDeepDive(),
   robotPoliciesDeepDive(),

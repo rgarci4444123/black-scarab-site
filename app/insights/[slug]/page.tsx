@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Fragment } from "react";
+import EditorialDataVisual from "@/components/editorial-data-visuals";
 import PalletizerComparison from "@/components/palletizers/comparison";
 import PalletizerPlanner from "@/components/palletizers/planner";
 import PalletizerCellDiagram from "@/components/palletizers/cell-diagram";
@@ -402,6 +403,9 @@ export default async function CaseStudyPage({ params }: Props) {
                         {section.paragraphs.map((paragraph, paragraphIndex) => (
                           <Fragment key={getParagraphKey(paragraph, paragraphIndex)}>
                             <p>{renderParagraph(paragraph)}</p>
+                            {section.editorialVisuals?.filter(visual => visual.afterParagraphIndex === paragraphIndex + 1).map(visual => (
+                              <EditorialDataVisual key={visual.kind} kind={visual.kind} />
+                            ))}
                             {section.visuals?.filter(visual => visual.afterParagraphIndex === paragraphIndex + 1).map(visual => (
                               <figure key={visual.src} className="my-10">
                                 <picture className={visual.width ? "block overflow-hidden rounded-[18px] border border-[#e5e5e5]" : undefined}>
@@ -717,6 +721,14 @@ export default async function CaseStudyPage({ params }: Props) {
                     </div>
                   </details>
                 ) : null}
+                {!hasInteractiveTools && article.sourceLinksPlacement === "bottom" && !article.reportingNotes?.length ? (
+                  <section id="sources" className="border-t border-[#e8e4dc] pt-8">
+                    <h2 className="text-2xl font-semibold">Sources</h2>
+                    <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-6 text-[#606975]">
+                      {article.sourceLinks?.map(source => <li id={source.id} key={source.url} className="scroll-mt-8"><a href={source.url} target="_blank" rel="noreferrer" data-analytics-event="source-link" data-analytics-label={source.label} className="break-words underline underline-offset-4">{source.label}</a></li>)}
+                    </ol>
+                  </section>
+                ) : null}
                 {hasInteractiveTools && article.sourceLinksPlacement === "bottom" && !article.reportingNotes?.length ? (
                   <section id="sources" className="border-t border-[#e8e4dc] pt-8">
                     <h2 className="text-2xl font-semibold">Sources</h2>
@@ -777,7 +789,7 @@ export default async function CaseStudyPage({ params }: Props) {
                   {hasInteractiveTools ? (
                     <nav aria-label="Report contents" className="hidden lg:block"><p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">In this report</p><ul className="mt-3 space-y-3 text-sm leading-6">{article.sections.filter(section => section.id && section.heading).map(section => <li key={section.id}><a href={`#${section.id}`} className="text-[#526147] hover:underline">{section.heading}</a></li>)}<li><a href="#sources" className="text-[#526147] hover:underline">Sources</a></li></ul></nav>
                   ) : null}
-                  {!article.reportingNotes?.length && (!hasInteractiveTools || article.sourceLinksPlacement !== "bottom") ? (
+                  {!article.reportingNotes?.length && article.sourceLinksPlacement !== "bottom" ? (
                   <div>
                     <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7c8b6b]">
                       Sources
