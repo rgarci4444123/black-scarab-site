@@ -391,7 +391,7 @@ export default async function CaseStudyPage({ params }: Props) {
             </section>
           ) : null}
 
-          <section className="px-6 py-14 md:px-10">
+          <section className={`px-6 pb-14 md:px-10 ${article.slug === robotGuideSlug ? "pt-6" : "pt-14"}`}>
             <div className={isPalletizerGuide ? "mx-auto max-w-6xl" : "mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_280px]"}>
               <div className="min-w-0 space-y-10">
                 {article.slug === robotGuideSlug ? <RobotGuideContents /> : null}
