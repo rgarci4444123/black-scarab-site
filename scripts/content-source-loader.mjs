@@ -20,7 +20,7 @@ export function createContentLoader(root = process.cwd()) {
     }).outputText;
     const require = createRequire(file);
     const localRequire = (id) => id.startsWith("@/")
-      ? load(join(root, `${id.slice(2)}.ts`))
+      ? load(join(root, id.endsWith(".json") ? id.slice(2) : `${id.slice(2)}.ts`))
       : require(id);
     new Function("require", "module", "exports", code)(localRequire, contentModule, contentModule.exports);
     return contentModule.exports;

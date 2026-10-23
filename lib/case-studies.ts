@@ -1,3 +1,4 @@
+import { nvidiaRobotGuideDeepDive } from "@/lib/nvidia-robot-guide";
 import { encordDeepDive } from "@/lib/encord";
 import { roboticPalletizersDeepDive } from "@/lib/robotic-palletizers";
 import { fccSupplyChainDeepDive } from "@/lib/fcc-supply-chain";
@@ -28,6 +29,7 @@ import { grittAiDeepDive } from "@/lib/gritt-ai";
 import { vibeManufacturingDeepDive } from "@/lib/vibe-manufacturing";
 
 export type CaseStudySection = {
+  robotBody?: boolean;
   editorialVisuals?: {
     afterParagraphIndex: number;
     kind: "robotics-data-demand" | "robotics-data-tam";
@@ -16783,6 +16785,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  nvidiaRobotGuideDeepDive(),
   encordDeepDive(),
   roboticPalletizersDeepDive(),
   fccSupplyChainDeepDive(),

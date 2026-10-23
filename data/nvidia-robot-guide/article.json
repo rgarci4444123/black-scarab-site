@@ -1,0 +1,520 @@
+{
+  "slug": "how-to-build-a-robot-with-nvidia",
+  "title": "How to Build a Robot With NVIDIA",
+  "seoTitle": "How to Build a Robot With NVIDIA: Simulation to Deployment",
+  "summary": "From a virtual warehouse to onboard inference, a practical guide to the tools, data, and engineering decisions behind a working humanoid.",
+  "publishedLabel": "Published October 23, 2026",
+  "publishedDate": "2026-10-23",
+  "typeLabel": "Deep Dive",
+  "formatLabel": "An illustrated robot development workflow",
+  "industry": "Robotics",
+  "taxonomy": {
+    "primaryIndustry": "warehousing-logistics",
+    "relevantIndustries": [
+      "manufacturing"
+    ],
+    "technologies": [
+      "robotics",
+      "foundation-models",
+      "simulation",
+      "edge-ai"
+    ],
+    "applications": [
+      "material-handling"
+    ]
+  },
+  "image": "/article-images/nvidia-robot-guide/cover-cropped.png",
+  "imageAlt": "Black Scarab editorial illustration connecting training computers, a simulated robot workcell and a humanoid carrying a package.",
+  "imageFit": "contain",
+  "seoDescription": "Follow a humanoid robot from Isaac Sim and GR00T demonstrations through Cosmos augmentation, Isaac Lab training, Sim2Real testing and Jetson Thor deployment.",
+  "readingMinutes": 25,
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "tags": [
+    "NVIDIA robotics",
+    "Isaac Sim",
+    "Isaac Lab",
+    "GR00T",
+    "Cosmos",
+    "Jetson Thor",
+    "robot training"
+  ],
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "",
+      "paragraphs": [
+        "Imagine spending months teaching a humanoid robot to pick up packages in a virtual warehouse.",
+        "The robot learns to recognize boxes, reach for them, close its grippers, and place them on a conveyor. In simulation, everything looks promising.",
+        "Then you try it on the real machine.",
+        "The robot reaches for its first package, begins lifting it, and the box slips through its fingers.",
+        "What happened?",
+        "Perhaps the virtual gripper had more friction than the physical one. Maybe the cameras were positioned slightly differently. Or perhaps the software issued a perfectly reasonable movement command that the robot's motors couldn't execute quickly enough.",
+        "This is the challenge of physical AI. A robot doesn't just need to understand what it sees. It needs to translate that understanding into physical movements, while dealing with gravity, friction, imperfect sensors, mechanical limits, and a world that rarely behaves exactly as expected.",
+        "NVIDIA is building an increasingly comprehensive ecosystem to help solve these problems.",
+        "There's Isaac Sim for creating virtual environments, GR00T for learning robot behavior, Isaac Lab for robot training, Cosmos for generating and understanding physical-world experience, and Jetson Thor for running AI onboard the machine.",
+        "Then there are Omniverse, OpenUSD, Isaac Teleop, Isaac ROS, and a growing collection of tools that connect the pieces.",
+        "For someone entering robotics, the ecosystem can feel overwhelming. Which products do you actually need? Which ones overlap? Where does one end and another begin? And how does software running in a data center eventually cause an electric motor to move a robot's arm?",
+        "To answer those questions, we'll follow **Parcel Works**, a fictional startup building a humanoid to move packages from a cart onto a warehouse conveyor.",
+        "We'll build its virtual workplace, choose a robot policy, teach it through demonstrations, test it under different conditions, and finally run the software on physical hardware.",
+        "The goal isn't to memorize NVIDIA product names. It's to understand how a robot goes from having no useful skill to performing a job in the physical world."
+      ],
+      "robotBody": true
+    },
+    {
+      "id": "journey",
+      "heading": "First, understand the whole journey",
+      "paragraphs": [
+        "The first important idea is that **a robot is not trained, simulated, and deployed by one piece of software**.",
+        "Those activities require different kinds of computing.",
+        "NVIDIA often describes physical AI through a three-computer approach:",
+        "**The training computer** does the heavy mathematical work of improving the robot's AI model. This might be a GPU workstation, a cloud instance, or a large cluster of GPUs.",
+        "**The simulation computer** creates a virtual world where the robot can practice, encounter different situations, and be evaluated without risking physical hardware.",
+        "**The robot's onboard computer** runs the approved AI model, processes incoming sensor data, and helps determine the robot's next movement.",
+        "These are computing roles, not necessarily three separate machines that every company must purchase. A smaller team might rent training capacity and perform simulation on its development workstation.",
+        "The software follows the same division of responsibilities.",
+        "Not every project requires every product.",
+        "A team might fine-tune GR00T directly on demonstrations without using Cosmos. Another might train a specialized control policy through Isaac Lab without using GR00T. And some robots can use other onboard computing platforms instead of Thor.",
+        "The ecosystem is modular.",
+        "What connects the components is the information passed between them: virtual scenes, sensor recordings, robot actions, trained model weights, and the software interfaces that make those outputs usable.",
+        "Let's follow those connections."
+      ],
+      "robotBody": true
+    },
+    {
+      "id": "step-1",
+      "heading": "1. Build a warehouse that doesn't exist",
+      "paragraphs": [
+        "**The tools: Isaac Sim, Omniverse, and OpenUSD**",
+        "Parcel Works' first challenge is not teaching its humanoid to pick up a box.",
+        "It's building a place where the robot can practice.",
+        "In the physical warehouse, the task involves a cart, a conveyor, packages, cameras, and a humanoid with arms, hands, joints, and motors. Each has physical characteristics that influence whether a movement succeeds.",
+        "Reproducing these elements in software is where Isaac Sim comes in.",
+        "An engineer imports a digital model of the robot, adds the cart and conveyor, and creates the surrounding environment. Isaac Sim supports robotics descriptions and 3D assets that can be configured with masses, joint limits, collision properties, and sensors.",
+        "The team can now issue a movement command and watch the virtual robot respond.",
+        "But making something *look* like the physical warehouse isn't enough.",
+        "Consider the box.",
+        "If it weighs 2 kilograms in the real warehouse but only 200 grams in simulation, the robot might learn a lifting movement that works beautifully on a computer and fails immediately on hardware.",
+        "The same problem occurs if the virtual gripper has too much friction or its fingers close farther than the real mechanism allows.",
+        "Engineers need to match the properties that matter: dimensions, mass, contact behavior, robot geometry, sensor placement, and control limits.",
+        "Now we can answer a common source of confusion: **what's the difference between Isaac Sim, Omniverse, and OpenUSD?**",
+        "Think of building a virtual warehouse.",
+        "OpenUSD is the framework used to describe and assemble its digital contents: the robot, objects, positions, materials, and other scene properties. It is not itself the physics engine.",
+        "Omniverse provides technologies and development infrastructure for working with these kinds of worlds, including libraries for rendering and simulation.",
+        "Isaac Sim is the robotics-focused application and framework that brings these capabilities together with robot models, simulated sensors, physics, and robotics interfaces.",
+        "You generally don't need to open three separate programs to accomplish three consecutive tasks. Much of the work happens inside Isaac Sim.",
+        "There's another important distinction: **a simulation is not automatically a digital twin**. A visually convincing virtual warehouse becomes useful for predicting physical behavior only to the extent that its relevant properties have been measured, modeled, and validated.",
+        "At the end of this stage, Parcel Works has a virtual workcell it can reset, modify, and test repeatedly.",
+        "The robot still doesn't know how to perform the job. But it now has somewhere to learn and somewhere to make mistakes."
+      ],
+      "robotBody": true
+    },
+    {
+      "id": "step-2",
+      "heading": "2. Give the robot a brain that understands actions",
+      "paragraphs": [
+        "**The tool: NVIDIA Isaac GR00T**",
+        "Traditional industrial robots are often programmed for carefully defined tasks. Engineers specify sequences of movements, positions, conditions, and responses.",
+        "That works extremely well in structured environments.",
+        "But imagine asking our humanoid to handle packages of different shapes and sizes, even when they arrive in slightly different positions.",
+        "Writing instructions for every possible arrangement quickly becomes difficult.",
+        "Instead, Parcel Works wants a robot that can observe the scene, understand the objective, and choose appropriate movements.",
+        "That's the role of a **robot policy**.",
+        "A policy is a model or algorithm that maps information about the world to actions. NVIDIA's GR00T family includes vision-language-action models, or VLAs, designed for robot behavior.",
+        "Suppose the robot receives three kinds of information:",
+        "The GR00T policy processes those inputs and predicts a sequence of intended actions.",
+        "For example, it may request that the right hand move toward the box, lower slightly, and close the gripper.",
+        "The policy doesn't necessarily produce one isolated movement. It can predict an *action chunk*: a short sequence of future actions that the surrounding control system interprets and executes.",
+        "GR00T is valuable because the developer isn't necessarily beginning with a completely untrained neural network.",
+        "NVIDIA distributes pretrained checkpoints, including its GR00T N1.7 family, that encode prior knowledge from robot and human data. Developers can adapt those models to specific embodiments and tasks.",
+        "But a pretrained brain doesn't mean universal compatibility.",
+        "A humanoid with five-fingered hands and a stationary robot arm with a two-finger gripper have different mechanical structures, movement limits, and control requirements.",
+        "The policy's outputs must match the robot's expected action format. Camera names, joint ordering, units, coordinate frames, and normalization must also be correct.",
+        "Otherwise, a mathematically valid output can become a physically inappropriate command.",
+        "And this brings us to another distinction.",
+        "**The AI policy decides what movement to request. It does not necessarily control every individual motor directly.**",
+        "A humanoid typically needs additional control software to turn high-level movement requests into stable whole-body motion. Balancing, coordinating joints, and regulating actuators can involve dedicated controllers operating at different rates.",
+        "GR00T can help decide what the robot should do. The control system must turn that decision into something the hardware can actually perform."
+      ],
+      "robotBody": true
+    },
+    {
+      "id": "step-3",
+      "heading": "3. Show the robot how the job is done",
+      "paragraphs": [
+        "**The tools: Isaac Teleop, Isaac Capture, and GR00T fine-tuning**",
+        "Our humanoid now has a virtual workplace and a candidate policy.",
+        "But that doesn't mean the pretrained model can reliably transfer packages at Parcel Works.",
+        "The team needs task-specific experience.",
+        "One way to provide it is through **imitation learning**, where the robot learns from examples of the desired behavior.",
+        "Imagine an operator wearing a motion-tracking headset or using another supported teleoperation device.",
+        "The operator guides the robot's hands toward a box, closes the gripper, lifts the package, moves it over the conveyor, and releases it.",
+        "The demonstration might be performed with a simulated robot or compatible physical hardware.",
+        "Isaac Teleop, part of NVIDIA's broader Isaac Capture framework, helps connect supported human-control devices to robots through a process called *retargeting*.",
+        "Retargeting translates the operator's movements into actions appropriate for the robot's body.",
+        "But the real value isn't simply making a robot copy someone's hand movements.",
+        "It's recording what happened in a form that can train a model.",
+        "A warehouse security camera can record someone picking up a box.",
+        "It captures what the scene looked like, but generally not the precise motor commands, robot joint positions, or gripper actions that produced the movement.",
+        "Imitation learning benefits from something more structured: **observations paired with the actions taken at that moment**.",
+        "For a demonstration, Parcel Works might record:",
+        "Suppose the robot sees a box at one position, but the recorded action actually belongs to a camera frame captured half a second earlier.",
+        "Even if the individual measurements are correct, the training example may be misleading.",
+        "The model could learn to reach toward where the box used to be.",
+        "That is why synchronized data, correct units, and a consistent action format matter so much.",
+        "The operators also need variety. They demonstrate packages arriving at different angles, different grasp points, and recovery behavior when a grip fails.",
+        "Parcel Works then fine-tunes its selected GR00T checkpoint using a curated dataset.",
+        "During training, the model predicts actions from the recorded observations. The training process measures errors against the demonstration targets and adjusts model parameters to improve future predictions.",
+        "The result is a new version of the model: **trained weights, along with the configuration and preprocessing needed to use them correctly**.",
+        "That file is an important output. It contains learned behavior, but it is not the entire robot application.",
+        "The team still needs to determine whether the behavior works outside the examples it was shown."
+      ],
+      "robotBody": true
+    },
+    {
+      "id": "step-4",
+      "heading": "4. Let the robot practice thousands of times without breaking anything",
+      "paragraphs": [
+        "**The tools: Isaac Sim and Isaac Lab**",
+        "Now Parcel Works has a policy adapted to its package-handling task.",
+        "The next question is whether it works consistently.",
+        "Instead of immediately running hundreds of risky experiments on expensive hardware, the team uses simulation.",
+        "The virtual warehouse can be reset after a failed attempt, the package can be moved to a different location, and conditions can be changed without anyone physically rebuilding the workcell.",
+        "Engineers can test packages with different dimensions, surface properties, and weights. They can add lighting changes, sensor noise, disturbances, and other plausible variations.",
+        "Here's where the difference between Isaac Sim and Isaac Lab becomes important.",
+        "**Isaac Sim is primarily concerned with the simulated environment and its behavior.**",
+        "**Isaac Lab is a robot-learning framework that helps organize environments, observations, actions, training, and evaluation.**",
+        "For example, Isaac Lab can manage repeated trials in which a robot attempts a task, receives feedback, and starts another episode. Different simulated environments can run in parallel where supported, allowing a learning system to collect much more experience than one physical robot could generate in the same period.",
+        "The products are closely related, but they are not inseparable.",
+        "Isaac Lab 3.0 supports multiple simulation backends, including standalone configurations using Newton. Developers can also use Isaac Sim when they need its full simulation, rendering, sensor, or robotics integration capabilities.",
+        "The correct choice depends on the task.",
+        "A team training balance control may prioritize large numbers of fast physics simulations. A team evaluating a camera-dependent manipulation policy may need realistic visual observations.",
+        "Parcel Works needs to test both movement and perception, so the engineering team selects simulation configurations appropriate to each requirement.",
+        "One detail matters enormously:",
+        "**Running a million virtual trials doesn't mean the robot has experienced a million real-world situations.**",
+        "If every virtual package has an unrealistically high friction coefficient, repeating the same inaccurate assumption a million times won't fix it.",
+        "Simulation provides scale. Physical measurements and validation determine how much to trust the results."
+      ],
+      "robotBody": true
+    },
+    {
+      "id": "step-5",
+      "heading": "5. Use Cosmos to give the robot experience it hasn't seen",
+      "paragraphs": [
+        "**The tool: NVIDIA Cosmos**",
+        "Parcel Works has another problem.",
+        "Its demonstration dataset was collected in a relatively bright, consistent warehouse environment.",
+        "But the real warehouse can look different throughout the day. Sunlight moves across the floor. Shadows appear. Package textures vary. Cameras encounter glare.",
+        "The company could collect new demonstrations under every visual condition.",
+        "Or it could generate additional visual variations using existing data.",
+        "This is one of the problems NVIDIA Cosmos is designed to address.",
+        "Cosmos is a family and platform of world foundation models for physical AI. Its capabilities include understanding physical scenes, generating or transforming visual experience, and, with suitable model variants, working with action-related information.",
+        "Unlike traditional physics simulation, a learned world model generates outputs based on patterns learned from data.",
+        "That difference is important.",
+        "A physics simulator calculates how modeled objects move under specified physical rules and numerical approximations.",
+        "A generative world model can produce plausible visual changes and possible future scenes, but plausible-looking imagery doesn't necessarily prove that the underlying forces or contacts are correct.",
+        "Consider one successful demonstration of the robot lifting a cardboard package.",
+        "With an appropriate Cosmos Transfer workflow, engineers can use visual and structural conditioning signals to create candidate variations that look like the same action performed under different circumstances.",
+        "Perhaps the lighting is dimmer. Perhaps the background changes.",
+        "Those variations could help the robot become less dependent on one particular visual environment.",
+        "But imagine the generated footage moves the package to a different position while preserving the original action labels.",
+        "The dataset would now tell the robot to make a movement that may no longer match what it sees.",
+        "That example should not be retained with the original labels.",
+        "The team must verify visual consistency, geometry, timing, and the validity of the associated actions. Automated evaluation tools can assist, but they don't eliminate the need to test the resulting robot behavior.",
+        "There's also a practical decision here: Parcel Works might not need Cosmos at all.",
+        "Isaac Sim can already vary many scene properties, including lighting, materials, and object configurations. Simple domain randomization may be sufficient.",
+        "Cosmos becomes more interesting when learned visual generation or world modeling adds useful experience beyond what the existing simulation and data collection pipeline can provide.",
+        "**Cosmos can help improve the variety of what a robot experiences. It doesn't automatically improve the physics of its gripper.**",
+        "That distinction will become especially important when we move to the real machine."
+      ],
+      "robotBody": true
+    },
+    {
+      "id": "step-6",
+      "heading": "6. There's another way to learn: let the robot try, fail, and improve",
+      "paragraphs": [
+        "**The tool: Isaac Lab**",
+        "So far, Parcel Works has primarily used demonstrations to teach its robot.",
+        "But there is another major approach to robot learning: **reinforcement learning**.",
+        "Instead of showing the policy the correct action in every situation, engineers define an environment and a way to measure progress.",
+        "The robot tries an action. The environment produces a result. The training algorithm uses feedback to improve the policy.",
+        "Imagine giving the robot a reward for successfully lifting the package and placing it on the conveyor.",
+        "It might also receive penalties for dropping the package, making unsafe contact, or wasting excessive motion.",
+        "The algorithm repeatedly updates the policy to improve its expected reward.",
+        "Isaac Lab provides the environments and integrations needed to organize this kind of learning in simulation.",
+        "Why not just use reinforcement learning for everything?",
+        "Because trial and error can be expensive.",
+        "A robot starting without useful behavior may spend an enormous number of attempts discovering even a basic skill. On physical hardware, those attempts could damage equipment or create safety risks.",
+        "Demonstrations can give a policy a useful starting point, while reinforcement learning can refine certain skills through repeated practice.",
+        "These approaches can also be combined, though doing so requires an appropriate training setup. **Isaac Lab doesn't automatically improve every GR00T checkpoint simply because both are NVIDIA products.**",
+        "For Parcel Works, the team might fine-tune a vision-language-action policy using package-handling demonstrations while training a separate control policy to improve stable movement or balance.",
+        "This distinction is particularly useful for humanoids.",
+        "Understanding where to put a package and maintaining balance while carrying it are related challenges, but they don't have to be solved by the same model.",
+        "And the reward itself matters.",
+        "If engineers reward the robot only for getting its hand close to a package, it might learn to hover near the package without ever lifting it. An algorithm can become very good at satisfying a poorly designed objective.",
+        "Training requires more than computational power. It requires defining what successful behavior actually means."
+      ],
+      "robotBody": true
+    },
+    {
+      "id": "step-7",
+      "heading": "7. The simulation worked. Why did the real robot fail?",
+      "paragraphs": [
+        "**The challenge: Sim2Real**",
+        "Now we return to our original problem.",
+        "Parcel Works' humanoid can pick up boxes in simulation. Its movement looks stable, and its policy successfully completes the virtual task.",
+        "But when the team deploys that behavior to physical hardware, the first package slips.",
+        "This is the **simulation-to-reality gap**, often shortened to Sim2Real.",
+        "The team could respond by collecting more demonstrations.",
+        "But would that solve the problem?",
+        "Not necessarily.",
+        "First, the engineers need to understand *why* the failure happened.",
+        "The cameras may have detected the box correctly. The policy may have selected an appropriate target position. The arm may have moved exactly as requested.",
+        "The actual failure could have occurred at the contact point between the gripper and the package.",
+        "Perhaps the simulated gripper had more friction than the physical one. Perhaps the force applied by the fingers was lower than expected. Or perhaps a small timing delay caused the robot to lift before the grip was secure.",
+        "These failures require different solutions.",
+        "If the issue is contact physics, the team can measure the real gripper's behavior, correct the virtual model, and adjust realistic training conditions.",
+        "If the issue is camera perception, it may need improved observations or a more diverse visual dataset.",
+        "If the issue is control latency, engineers need to inspect the time between receiving sensor data and producing physical movement.",
+        "And if the robot simply can't generate enough grip force for the package, no amount of model fine-tuning can manufacture stronger motors or better gripper mechanics.",
+        "Parcel Works therefore needs an evaluation process that goes beyond watching successful demonstrations.",
+        "The team measures performance against specific operating requirements.",
+        "Tools such as Isaac Lab-Arena can help engineers assemble structured evaluation scenarios and compare policies in simulation. Its public code remains early-stage tooling, however, and simulated benchmarks do not substitute for physical validation.",
+        "The team should hold out difficult test conditions that the policy has not trained on. Otherwise, its success rate may simply reflect how well it remembers familiar scenarios.",
+        "Engineers can also introduce realistic variation in friction, object mass, sensor noise, and timing during training or evaluation. This technique, called **domain randomization**, can make a policy less dependent on one idealized version of the world.",
+        "But even after improved simulation results, the company must perform controlled hardware trials with appropriate operating limits and independent safety mechanisms.",
+        "There is no single conversion step that turns a successful simulation into a production-ready robot.",
+        "Sim2Real is a process of measurement, correction, adaptation, and testing."
+      ],
+      "robotBody": true
+    },
+    {
+      "id": "step-8",
+      "heading": "8. Put the intelligence on the real robot",
+      "paragraphs": [
+        "**The tools: Jetson Thor, TensorRT, Isaac ROS, and robot controllers**",
+        "At this point, Parcel Works has a trained policy and a set of evaluation results.",
+        "But where does the AI actually run when the humanoid is working in the warehouse?",
+        "This is where NVIDIA Jetson Thor enters the picture.",
+        "Training a large model may require powerful GPUs with substantial memory and cooling infrastructure. The deployed robot has very different constraints.",
+        "It carries its own computing hardware, relies on a limited electrical and thermal budget, and must process sensor information while controlling a moving machine.",
+        "Jetson AGX Thor is an embedded computing platform designed for demanding onboard AI workloads, including robotics.",
+        "But putting Thor inside the robot does not automatically make the robot intelligent.",
+        "The model, cameras, controller, motor electronics, and communications software still have to work together.",
+        "Let's follow one decision through the machine.",
+        "**First, the cameras capture the scene.**",
+        "Light reflecting from the package reaches the camera sensors, which convert it into electronic image data.",
+        "The camera drivers deliver that data to the robot's computing system. Other sensors report the robot's current joint positions and relevant physical measurements.",
+        "The application organizes these observations into the inputs expected by the trained policy.",
+        "**Second, Thor runs the AI model.**",
+        "The policy processes camera images, the instruction, and robot-state information to predict its next actions.",
+        "The model itself may have been optimized using NVIDIA TensorRT, which can improve supported neural-network inference by selecting efficient computation methods for the target hardware.",
+        "But optimization isn't free of tradeoffs. Changes in numerical precision or model execution must be tested to ensure that the resulting actions remain acceptable.",
+        "**Third, the controller translates the requested action.**",
+        "Suppose the policy wants the robot's right hand to move 10 centimeters toward the package.",
+        "That is not yet a complete set of electrical commands for every motor.",
+        "The robot's controller must determine appropriate joint movements while respecting the body's geometry, limits, and balance requirements.",
+        "Lower-level motor controllers then command the actuators and use feedback to regulate their behavior.",
+        "**Fourth, electricity becomes movement.**",
+        "Motor-drive electronics deliver electrical power to the actuators. Electromagnetic forces generate torque, gears or transmissions carry that torque to the joints, and the robot's mechanical structure moves.",
+        "The hand approaches the package.",
+        "The sensors capture the updated situation, and the software processes the next observations.",
+        "The cycle continues.",
+        "ROS 2 is a robotics software framework that helps different components exchange information through messages and defined interfaces.",
+        "For example, a camera component might publish image data, while another component consumes that data to perform perception or control.",
+        "Isaac ROS provides GPU-accelerated packages and reference implementations for selected ROS 2 robotics workloads.",
+        "It can help connect and accelerate pieces of the application, but it isn't the neural-network policy itself.",
+        "And Thor isn't the motor controller merely because the neural network runs on it.",
+        "In a real robot, high-level decision-making, motion control, motor regulation, and protective safety functions may operate on different processors and at different frequencies.",
+        "This separation matters.",
+        "A neural network can produce an action at one rate while joint controllers require updates much more frequently. A safety system also needs appropriate responses if a camera stops delivering data or the AI application fails.",
+        "Finally, the team must measure **end-to-end latency**: the time from sensing the scene to the resulting physical response.",
+        "A model that runs quickly in isolation may still be too slow when image capture, preprocessing, communications, control, and actuation are included.",
+        "The finished robot must work as a complete system, not merely produce an impressive inference benchmark."
+      ],
+      "robotBody": true
+    },
+    {
+      "id": "step-9",
+      "heading": "9. The first working robot isn't the finished product",
+      "paragraphs": [
+        "Suppose Parcel Works reaches the point where its humanoid can move packages successfully during controlled physical trials.",
+        "That is an important milestone.",
+        "But a successful trial does not establish that the robot is ready to operate continuously in a commercial warehouse.",
+        "The next step is to accumulate evidence.",
+        "The team tracks complete task success, cycle time, interventions, fault conditions, and changes in performance across package types and operating conditions.",
+        "When something goes wrong, engineers classify the failure before deciding which part of the system to change.",
+        "A box missed under glare might call for better visual data. A slipping package could require a physical measurement or gripper redesign. A slow response may point to latency. An unreachable object may require changing the workstation layout.",
+        "That is why NVIDIA's ecosystem is more useful when viewed as a collection of specialized tools rather than one giant AI product.",
+        "The right tool depends on the problem.",
+        "New demonstrations can improve a learned policy. Cosmos can help address certain forms of visual data scarcity. Isaac Lab can support further simulated training. Isaac Sim can help reproduce a failure. Thor and the controller stack must deliver acceptable behavior on hardware.",
+        "Any new version needs evaluation before it replaces the one currently running.",
+        "Parcel Works should preserve its training data versions, model weights, configuration, evaluation results, and deployment history. That lets the team understand whether a software change genuinely improved performance and provides a path back if the new release introduces failures.",
+        "The robot doesn't need to retrain itself continuously in the warehouse. A controlled development and release process can use operational evidence to improve the next version."
+      ],
+      "robotBody": true
+    },
+    {
+      "id": "get-started",
+      "heading": "What would you actually need to get started?",
+      "paragraphs": [
+        "There are two different starting points, depending on whether your goal is to understand the NVIDIA ecosystem or build a working physical robot.",
+        "You don't need to purchase a humanoid to begin.",
+        "Start with a compatible NVIDIA GPU environment and a supported example robot in Isaac Sim. Load an existing scene, move the robot, inspect virtual camera observations, and experiment with physical properties.",
+        "Then explore a reference Isaac Lab training example to understand how environments, actions, rewards, and model updates fit together.",
+        "Once that foundation is clear, study a GR00T example that uses a supported robot embodiment and dataset.",
+        "The important thing is to reproduce one small working example before attempting to integrate the entire ecosystem.",
+        "The first priority is compatibility.",
+        "You need a robot description, functioning sensors, known controller interfaces, a way to record synchronized observations and actions, and a well-defined task.",
+        "You can then select a compatible policy, collect or adapt training data, fine-tune the model, and evaluate it under realistic conditions.",
+        "Moving to an onboard platform such as Thor comes with additional requirements for model runtime compatibility, power, cooling, sensor interfaces, controller integration, and safety.",
+        "For a humanoid, stable movement and balance create substantial additional engineering work beyond grasping an object.",
+        "The system is modular, but integration is not automatic."
+      ],
+      "robotBody": true
+    },
+    {
+      "id": "bigger-picture",
+      "heading": "The bigger picture: NVIDIA provides the infrastructure, not the finished robot",
+      "paragraphs": [
+        "By now, the roles of the major NVIDIA products should be clearer.",
+        "Isaac Sim creates the virtual workspace. OpenUSD describes its contents, and Omniverse provides underlying infrastructure. GR00T can supply a pretrained policy for selecting robot actions. Isaac Teleop helps collect demonstrations. Isaac Lab supports learning through simulated experience. Cosmos offers additional world-model and data-generation capabilities. Isaac Lab-Arena helps evaluate candidate policies. Jetson Thor provides onboard computing.",
+        "None of those components, individually, is a complete autonomous robot.",
+        "And assembling them doesn't eliminate the need for engineering.",
+        "A robot still needs compatible physical hardware, correctly aligned data, stable control, realistic simulations, effective evaluation, and carefully managed deployment.",
+        "That's also where an important business distinction emerges.",
+        "NVIDIA can make more of the underlying robotics infrastructure accessible to developers. A smaller team may be able to experiment with pretrained policies and sophisticated simulations without building every software component from scratch.",
+        "But successful commercial deployment depends on something harder to package: understanding a specific job and making a particular machine perform that job reliably.",
+        "For Parcel Works, the real achievement isn't generating an impressive video of a humanoid lifting a cardboard box.",
+        "It's developing a system that can handle the packages its customer actually receives, operate at an acceptable speed, recognize when something has gone wrong, and do the work repeatedly without constant human intervention.",
+        "**The breakthrough isn't simply teaching a robot how to move. It's making that movement dependable enough to become useful work.**",
+        "That's the journey NVIDIA's physical AI ecosystem is trying to accelerate.",
+        "*Editorial note: Parcel Works is a fictional teaching example. The workflow illustrations simplify real engineering systems; configurations, supported hardware, and model interfaces vary by project. Depictions of industrial robot arms are used to illustrate general mechanisms and do not imply direct policy compatibility with the humanoid example.*"
+      ],
+      "robotBody": true
+    }
+  ],
+  "sources": [
+    "NVIDIA technical documentation and reference repositories",
+    "NVIDIA model cards and technical reports",
+    "OpenUSD documentation"
+  ],
+  "sourceLinksPlacement": "bottom",
+  "sourceLinks": [
+    {
+      "label": "S01 · Isaac Sim documentation · Living documentation · accessed October 23, 2026",
+      "url": "https://docs.isaacsim.omniverse.nvidia.com/latest/index.html"
+    },
+    {
+      "label": "S02 · Isaac Sim developer overview and licensing · Living documentation · accessed October 23, 2026",
+      "url": "https://developer.nvidia.com/isaac/sim"
+    },
+    {
+      "label": "S03 · OpenUSD introduction · Living documentation · accessed October 23, 2026",
+      "url": "https://openusd.org/release/intro.html"
+    },
+    {
+      "label": "S04 · Isaac GR00T reference repository · Repository snapshot · accessed October 23, 2026",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T"
+    },
+    {
+      "label": "S05 · GR00T N1.7 3B model card · Model card snapshot · accessed October 23, 2026",
+      "url": "https://huggingface.co/nvidia/GR00T-N1.7-3B"
+    },
+    {
+      "label": "S06 · Develop humanoid robot policies end to end · 2026-07-07 · accessed October 23, 2026",
+      "url": "https://developer.nvidia.com/blog/develop-humanoid-robot-policies-end-to-end-with-nvidia-isaac-gr00t/"
+    },
+    {
+      "label": "S07 · GR00T WholeBodyControl documentation · Living documentation · accessed October 23, 2026",
+      "url": "https://nvlabs.github.io/GR00T-WholeBodyControl/"
+    },
+    {
+      "label": "S08 · Isaac Capture repository · Repository snapshot · accessed October 23, 2026",
+      "url": "https://github.com/NVIDIA/IsaacCapture"
+    },
+    {
+      "label": "S09 · Cosmos 3 overview · Living documentation · accessed October 23, 2026",
+      "url": "https://docs.nvidia.com/cosmos/latest/cosmos3/index.html"
+    },
+    {
+      "label": "S10 · Cosmos 3 model reference · Updated 2026-10-21 · accessed October 23, 2026",
+      "url": "https://docs.nvidia.com/cosmos/latest/cosmos3/model_reference.html"
+    },
+    {
+      "label": "S11 · Cosmos 3 model matrix · Living documentation · accessed October 23, 2026",
+      "url": "https://docs.nvidia.com/cosmos/latest/cosmos3/model_matrix.html"
+    },
+    {
+      "label": "S12 · Develop physical AI models with Cosmos 3 · 2026-06-01 · accessed October 23, 2026",
+      "url": "https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/"
+    },
+    {
+      "label": "S13 · Cosmos 3 technical report · 2026-06-01; revised 2026-06-23 · accessed October 23, 2026",
+      "url": "https://arxiv.org/abs/2606.02800"
+    },
+    {
+      "label": "S14 · Cosmos platform and legacy model families · Updated 2026-08 · accessed October 23, 2026",
+      "url": "https://www.nvidia.com/en-us/ai/cosmos/llm-info/"
+    },
+    {
+      "label": "S15 · Cosmos Curator repository · Repository snapshot · accessed October 23, 2026",
+      "url": "https://github.com/NVIDIA/cosmos-curator"
+    },
+    {
+      "label": "S16 · Cosmos Evaluator repository · Repository snapshot · accessed October 23, 2026",
+      "url": "https://github.com/NVIDIA/cosmos-evaluator"
+    },
+    {
+      "label": "S17 · Isaac Lab 3.0 documentation · Release 3.0 documentation · accessed October 23, 2026",
+      "url": "https://docs.nvidia.com/isaaclab/3.0/isaac-lab"
+    },
+    {
+      "label": "S18 · Isaac Lab reinforcement learning workflow · Release 3.0 documentation · accessed October 23, 2026",
+      "url": "https://docs.nvidia.com/isaaclab/concepts/reinforcement-learning"
+    },
+    {
+      "label": "S19 · Isaac Lab Arena repository · Repository snapshot · accessed October 23, 2026",
+      "url": "https://github.com/isaac-sim/IsaacLab-Arena"
+    },
+    {
+      "label": "S20 · Jetson Thor general availability announcement · 2025-08-25 · accessed October 23, 2026",
+      "url": "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Blackwell-Powered-Jetson-Thor-Now-Available-Accelerating-the-Age-of-General-Robotics/default.aspx"
+    },
+    {
+      "label": "S21 · Jetson Thor technical introduction · 2025-08-25 · accessed October 23, 2026",
+      "url": "https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai"
+    },
+    {
+      "label": "S22 · Isaac ROS documentation · Living documentation · accessed October 23, 2026",
+      "url": "https://nvidia-isaac-ros.github.io/"
+    },
+    {
+      "label": "S23 · TensorRT SDK · Living documentation · accessed October 23, 2026",
+      "url": "https://developer.nvidia.com/tensorrt"
+    },
+    {
+      "label": "S24 · TensorRT performance optimization · Living documentation · accessed October 23, 2026",
+      "url": "https://docs.nvidia.com/deeplearning/tensorrt/latest/performance/optimization.html"
+    },
+    {
+      "label": "S25 · Physical AI agent tools and skills · 2026-06-01 · accessed October 23, 2026",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-releases-major-collection-of-open-source-agent-tools-and-skills-for-physical-ai"
+    },
+    {
+      "label": "S26 · Unitree G1 reference development workflow · Living documentation · accessed October 23, 2026",
+      "url": "https://docs.nvidia.com/learning/physical-ai/gr00t-e2e-workflow/latest/index.html"
+    },
+    {
+      "label": "S27 · CUDA developer platform · Living documentation · accessed October 23, 2026",
+      "url": "https://developer.nvidia.com/cuda"
+    },
+    {
+      "label": "S28 · DGX platform · Living documentation · accessed October 23, 2026",
+      "url": "https://www.nvidia.com/en-us/data-center/dgx-platform/"
+    }
+  ],
+  "publishedAt": "2026-10-23T17:03:17Z"
+}

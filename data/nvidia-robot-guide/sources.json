@@ -1,0 +1,330 @@
+[
+  {
+    "id": "S01",
+    "title": "Isaac Sim documentation",
+    "url": "https://docs.isaacsim.omniverse.nvidia.com/latest/index.html",
+    "date": "Living documentation",
+    "accessed": "2026-10-23",
+    "chapters": [
+      1,
+      4
+    ],
+    "evidence": "Omniverse based robotics simulation, asset and sensor workflow."
+  },
+  {
+    "id": "S02",
+    "title": "Isaac Sim developer overview and licensing",
+    "url": "https://developer.nvidia.com/isaac/sim",
+    "date": "Living documentation",
+    "accessed": "2026-10-23",
+    "chapters": [
+      1,
+      4
+    ],
+    "evidence": "URDF and MJCF import, ROS bridges, Apache 2.0 code and distinct Omniverse Kit redistribution terms."
+  },
+  {
+    "id": "S03",
+    "title": "OpenUSD introduction",
+    "url": "https://openusd.org/release/intro.html",
+    "date": "Living documentation",
+    "accessed": "2026-10-23",
+    "chapters": [
+      1
+    ],
+    "evidence": "Composable scene description; separate from executing physics."
+  },
+  {
+    "id": "S04",
+    "title": "Isaac GR00T reference repository",
+    "url": "https://github.com/NVIDIA/Isaac-GR00T",
+    "date": "Repository snapshot",
+    "accessed": "2026-10-23",
+    "chapters": [
+      2,
+      3,
+      6,
+      8
+    ],
+    "evidence": "N1.7 checkpoints; embodiment tags; LeRobot based data with modality.json; deployment instructions."
+  },
+  {
+    "id": "S05",
+    "title": "GR00T N1.7 3B model card",
+    "url": "https://huggingface.co/nvidia/GR00T-N1.7-3B",
+    "date": "Model card snapshot",
+    "accessed": "2026-10-23",
+    "chapters": [
+      2,
+      6
+    ],
+    "evidence": "Downloadable pretrained VLA; action chunks conditioned on vision, language and proprioception; commercial and noncommercial use stated."
+  },
+  {
+    "id": "S06",
+    "title": "Develop humanoid robot policies end to end",
+    "url": "https://developer.nvidia.com/blog/develop-humanoid-robot-policies-end-to-end-with-nvidia-isaac-gr00t/",
+    "date": "2026-07-07",
+    "accessed": "2026-10-23",
+    "chapters": [
+      2,
+      3,
+      6,
+      7,
+      8
+    ],
+    "evidence": "Reference workflow connecting capture, training, evaluation and deployment. Benchmark claims are not adopted as warehouse performance."
+  },
+  {
+    "id": "S07",
+    "title": "GR00T WholeBodyControl documentation",
+    "url": "https://nvlabs.github.io/GR00T-WholeBodyControl/",
+    "date": "Living documentation",
+    "accessed": "2026-10-23",
+    "chapters": [
+      2,
+      3,
+      8
+    ],
+    "evidence": "Separate controller implementations and supported robot workflows."
+  },
+  {
+    "id": "S08",
+    "title": "Isaac Capture repository",
+    "url": "https://github.com/NVIDIA/IsaacCapture",
+    "date": "Repository snapshot",
+    "accessed": "2026-10-23",
+    "chapters": [
+      3
+    ],
+    "evidence": "Isaac Teleop is a component of Isaac Capture; shared capture and egocentric infrastructure. README still references Lab 3.0 EA."
+  },
+  {
+    "id": "S09",
+    "title": "Cosmos 3 overview",
+    "url": "https://docs.nvidia.com/cosmos/latest/cosmos3/index.html",
+    "date": "Living documentation",
+    "accessed": "2026-10-23",
+    "chapters": [
+      5
+    ],
+    "evidence": "Omnimodal world model family; Reasoner and Generator surfaces."
+  },
+  {
+    "id": "S10",
+    "title": "Cosmos 3 model reference",
+    "url": "https://docs.nvidia.com/cosmos/latest/cosmos3/model_reference.html",
+    "date": "Updated 2026-10-21",
+    "accessed": "2026-10-23",
+    "chapters": [
+      5
+    ],
+    "evidence": "Checkpoint variants, runtime input/output constraints, embodiment specific actions, Edge restrictions."
+  },
+  {
+    "id": "S11",
+    "title": "Cosmos 3 model matrix",
+    "url": "https://docs.nvidia.com/cosmos/latest/cosmos3/model_matrix.html",
+    "date": "Living documentation",
+    "accessed": "2026-10-23",
+    "chapters": [
+      5
+    ],
+    "evidence": "Super, Nano and Edge model tiers and hardware guidance."
+  },
+  {
+    "id": "S12",
+    "title": "Develop physical AI models with Cosmos 3",
+    "url": "https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/",
+    "date": "2026-06-01",
+    "accessed": "2026-10-23",
+    "chapters": [
+      5
+    ],
+    "evidence": "Mixture of Transformers architecture; autoregressive reasoner and diffusion based generator."
+  },
+  {
+    "id": "S13",
+    "title": "Cosmos 3 technical report",
+    "url": "https://arxiv.org/abs/2606.02800",
+    "date": "2026-06-01; revised 2026-06-23",
+    "accessed": "2026-10-23",
+    "chapters": [
+      5
+    ],
+    "evidence": "NVIDIA authored research and benchmark protocols; no inferred physical warehouse success rates."
+  },
+  {
+    "id": "S14",
+    "title": "Cosmos platform and legacy model families",
+    "url": "https://www.nvidia.com/en-us/ai/cosmos/llm-info/",
+    "date": "Updated 2026-08",
+    "accessed": "2026-10-23",
+    "chapters": [
+      5
+    ],
+    "evidence": "Predict, Transfer, Reason families; OpenMDW 1.1 stated for current Cosmos models and framework."
+  },
+  {
+    "id": "S15",
+    "title": "Cosmos Curator repository",
+    "url": "https://github.com/NVIDIA/cosmos-curator",
+    "date": "Repository snapshot",
+    "accessed": "2026-10-23",
+    "chapters": [
+      5
+    ],
+    "evidence": "Open curation toolkit, configurable recipes and media processing; Apache 2.0 repository."
+  },
+  {
+    "id": "S16",
+    "title": "Cosmos Evaluator repository",
+    "url": "https://github.com/NVIDIA/cosmos-evaluator",
+    "date": "Repository snapshot",
+    "accessed": "2026-10-23",
+    "chapters": [
+      5
+    ],
+    "evidence": "Checks motion, objects, attributes and plausibility; structured quality scores; Apache 2.0 repository."
+  },
+  {
+    "id": "S17",
+    "title": "Isaac Lab 3.0 documentation",
+    "url": "https://docs.nvidia.com/isaaclab/3.0/isaac-lab",
+    "date": "Release 3.0 documentation",
+    "accessed": "2026-10-23",
+    "chapters": [
+      4,
+      6,
+      7
+    ],
+    "evidence": "Multi backend architecture, standalone Newton configurations, separate renderer selection."
+  },
+  {
+    "id": "S18",
+    "title": "Isaac Lab reinforcement learning workflow",
+    "url": "https://docs.nvidia.com/isaaclab/concepts/reinforcement-learning",
+    "date": "Release 3.0 documentation",
+    "accessed": "2026-10-23",
+    "chapters": [
+      4,
+      6,
+      7
+    ],
+    "evidence": "Training versus playback, RL library integrations, experiment logging and checkpoints."
+  },
+  {
+    "id": "S19",
+    "title": "Isaac Lab Arena repository",
+    "url": "https://github.com/isaac-sim/IsaacLab-Arena",
+    "date": "Repository snapshot",
+    "accessed": "2026-10-23",
+    "chapters": [
+      7
+    ],
+    "evidence": "v0.3 alpha, unstable interfaces; scene, embodiment and task composition; evaluation client server contract."
+  },
+  {
+    "id": "S20",
+    "title": "Jetson Thor general availability announcement",
+    "url": "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Blackwell-Powered-Jetson-Thor-Now-Available-Accelerating-the-Age-of-General-Robotics/default.aspx",
+    "date": "2025-08-25",
+    "accessed": "2026-10-23",
+    "chapters": [
+      8
+    ],
+    "evidence": "Developer kit and production modules generally available."
+  },
+  {
+    "id": "S21",
+    "title": "Jetson Thor technical introduction",
+    "url": "https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai",
+    "date": "2025-08-25",
+    "accessed": "2026-10-23",
+    "chapters": [
+      8
+    ],
+    "evidence": "Embedded computing, integration and configurable power envelope. Peak arithmetic figures are not used as application latency."
+  },
+  {
+    "id": "S22",
+    "title": "Isaac ROS documentation",
+    "url": "https://nvidia-isaac-ros.github.io/",
+    "date": "Living documentation",
+    "accessed": "2026-10-23",
+    "chapters": [
+      8
+    ],
+    "evidence": "NVIDIA accelerated ROS 2 packages on Jetson and other supported hardware."
+  },
+  {
+    "id": "S23",
+    "title": "TensorRT SDK",
+    "url": "https://developer.nvidia.com/tensorrt",
+    "date": "Living documentation",
+    "accessed": "2026-10-23",
+    "chapters": [
+      8
+    ],
+    "evidence": "Inference optimization runtime, CUDA based acceleration, supported precision workflows."
+  },
+  {
+    "id": "S24",
+    "title": "TensorRT performance optimization",
+    "url": "https://docs.nvidia.com/deeplearning/tensorrt/latest/performance/optimization.html",
+    "date": "Living documentation",
+    "accessed": "2026-10-23",
+    "chapters": [
+      8
+    ],
+    "evidence": "Hardware dependent optimization and reduced precision considerations."
+  },
+  {
+    "id": "S25",
+    "title": "Physical AI agent tools and skills",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-releases-major-collection-of-open-source-agent-tools-and-skills-for-physical-ai",
+    "date": "2026-06-01",
+    "accessed": "2026-10-23",
+    "chapters": [
+      9
+    ],
+    "evidence": "Agent tools for development workflows; separate from validated robot behavior."
+  },
+  {
+    "id": "S26",
+    "title": "Unitree G1 reference development workflow",
+    "url": "https://docs.nvidia.com/learning/physical-ai/gr00t-e2e-workflow/latest/index.html",
+    "date": "Living documentation",
+    "accessed": "2026-10-23",
+    "chapters": [
+      2,
+      3,
+      6,
+      7,
+      8
+    ],
+    "evidence": "A specific reference workflow, not a general compatibility claim for arbitrary humanoids."
+  },
+  {
+    "id": "S27",
+    "title": "CUDA developer platform",
+    "url": "https://developer.nvidia.com/cuda",
+    "date": "Living documentation",
+    "accessed": "2026-10-23",
+    "chapters": [
+      6
+    ],
+    "evidence": "Accelerated computing platform, toolkit, libraries and supported programming interfaces."
+  },
+  {
+    "id": "S28",
+    "title": "DGX platform",
+    "url": "https://www.nvidia.com/en-us/data-center/dgx-platform/",
+    "date": "Living documentation",
+    "accessed": "2026-10-23",
+    "chapters": [
+      6
+    ],
+    "evidence": "Commercial computing systems family and multiple procurement modes."
+  }
+]

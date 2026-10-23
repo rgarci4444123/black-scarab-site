@@ -1,0 +1,74 @@
+{
+  "workflow": {
+    "title": "A robot learns before it goes to work",
+    "description": "A human records a demonstration. A training computer uses the recording to improve a policy. Engineers test that policy in a simulated warehouse. The approved software runs on the robot. Failures supply evidence for the next version.",
+    "caption": "The complete development cycle: demonstrate a task, train a policy, test it in simulation, deploy it on a robot, and use failures to improve the next version.",
+    "asset": "01-learning-loop.png",
+    "width": 1536,
+    "height": 1024,
+    "revision": "d0fda2622e2a"
+  },
+  "warehouse": {
+    "title": "Build a practice copy of the workplace",
+    "description": "A physical robot, conveyor and package are recreated in Isaac Sim. Engineers match the dimensions, package weight, contact grip and camera placement. The saved scene is described with OpenUSD.",
+    "caption": "The real workcell and its simulated counterpart must agree on the physical details that affect robot behavior.",
+    "asset": "02-virtual-workcell.png",
+    "width": 1536,
+    "height": 1024,
+    "revision": "f99bbf020812"
+  },
+  "policy": {
+    "title": "The policy chooses the next move",
+    "description": "Camera images show the package. A language instruction specifies the job. Joint sensors report the robot body position. The GR00T policy uses those three inputs to predict a short sequence of intended movements.",
+    "caption": "Camera images, a task instruction, and the robot's current body state are used to predict actions.",
+    "asset": "03-policy.png",
+    "width": 1536,
+    "height": 1024,
+    "revision": "8dc938654e9a"
+  },
+  "demonstrations": {
+    "title": "Train and test in simulation",
+    "description": "A virtual robot workcell is used to train and test with different objects, environments and disturbances. Isaac Sim provides simulation, Isaac Lab organizes robot learning, Cosmos can generate appearance variations, and Omniverse provides application infrastructure.",
+    "caption": "Isaac Sim supplies the virtual environment, Isaac Lab organizes learning experiments, and other tools can expand the variety of experiences.",
+    "asset": "04-simulation.png",
+    "width": 1536,
+    "height": 1024,
+    "revision": "4544395e878d"
+  },
+  "cosmos": {
+    "title": "One recording, many appearances",
+    "description": "Cosmos Transfer can transform the appearance of a recorded simulated scene. Dim lighting and a different background are useful only if the original movement remains valid. A generated scene that moves the package away from its recorded position must be rejected for that action labeled example.",
+    "caption": "Cosmos Transfer can produce visually different versions of a scene. Variations are useful for action-labeled training only when the relevant recorded behavior remains consistent.",
+    "asset": "05-cosmos.png",
+    "width": 1536,
+    "height": 1024,
+    "revision": "d80a847def78"
+  },
+  "training": {
+    "title": "Try a move. Learn from the result.",
+    "description": "In reinforcement learning, the policy tries a movement in simulation. The training system measures the result, updates the policy and repeats. A selected trained policy is saved as model weights and configuration for evaluation.",
+    "caption": "The reinforcement-learning route: attempt a movement, evaluate the outcome, update the policy, and repeat. The displayed percentages are illustrative examples.",
+    "asset": "06-training.png",
+    "width": 1536,
+    "height": 1024,
+    "revision": "8c3b2ad2f83a"
+  },
+  "evaluation": {
+    "title": "The virtual grip holds. The real box slips.",
+    "description": "A simulated gripper holds a package because its modeled contact friction is sufficient. The same command on the real robot can let the package slip. Engineers measure the physical grip, update the simulation and test the policy again.",
+    "caption": "The simulation predicts a successful grasp, but the physical gripper cannot hold the box. Engineers must identify and correct the mismatch.",
+    "asset": "07-reality-gap.png",
+    "width": 1536,
+    "height": 1024,
+    "revision": "36b9465aadb7"
+  },
+  "deployment": {
+    "title": "From seeing the box to moving the arm",
+    "description": "Cameras acquire the scene. Jetson Thor runs the policy to request a movement. A controller turns the requested movement into joint commands. Motor drives and motors execute the movement, while new sensor readings feed the next decision.",
+    "caption": "The robot turns sensor observations into policy predictions, controller commands, and physical motor movements.",
+    "asset": "08-deployment.png",
+    "width": 1536,
+    "height": 1024,
+    "revision": "ca745e567380"
+  }
+}

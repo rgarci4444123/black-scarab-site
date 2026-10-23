@@ -1,3 +1,6 @@
+import { robotGuideSlug } from "@/lib/nvidia-robot-guide";
+import RobotGuideContents from "@/components/nvidia-robot-guide/contents";
+import RobotGuideBody from "@/components/nvidia-robot-guide/body";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -391,6 +394,7 @@ export default async function CaseStudyPage({ params }: Props) {
           <section className="px-6 py-14 md:px-10">
             <div className={isPalletizerGuide ? "mx-auto max-w-6xl" : "mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_280px]"}>
               <div className="min-w-0 space-y-10">
+                {article.slug === robotGuideSlug ? <RobotGuideContents /> : null}
                 {article.sections.map((section, index) => (
                   <Fragment key={`${section.heading ?? "intro"}-${index}`}>
                     <section id={section.id} className={`scroll-mt-8 ${isPalletizerGuide && !section.buyingGuideTool ? "max-w-3xl" : ""}`}>
@@ -399,7 +403,7 @@ export default async function CaseStudyPage({ params }: Props) {
                           {section.heading}
                         </h2>
                       ) : null}
-                      <div className="mt-4 space-y-5 text-base leading-8 text-[#4b5563] md:text-lg">
+                      {section.robotBody && section.id ? <RobotGuideBody sectionId={section.id} /> : <div className="mt-4 space-y-5 text-base leading-8 text-[#4b5563] md:text-lg">
                         {section.paragraphs.map((paragraph, paragraphIndex) => (
                           <Fragment key={getParagraphKey(paragraph, paragraphIndex)}>
                             <p>{renderParagraph(paragraph)}</p>
@@ -422,7 +426,7 @@ export default async function CaseStudyPage({ params }: Props) {
                             ))}
                           </Fragment>
                         ))}
-                      </div>
+                      </div>}
                     {section.buyingGuideTool === "palletizer-comparison" ? <PalletizerComparison /> : null}
                     {section.buyingGuideTool === "palletizer-calculator" ? <PalletizerPlanner /> : null}
                     {section.buyingGuideTool === "palletizer-cell" ? <PalletizerCellDiagram /> : null}

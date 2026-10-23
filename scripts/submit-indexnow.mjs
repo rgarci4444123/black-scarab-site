@@ -37,6 +37,7 @@ const robotPoliciesSource = await readFile(new URL("../lib/robot-policies.ts", i
 const fccSource = await readFile(new URL("../lib/fcc-supply-chain.ts", import.meta.url), "utf8");
 const roboticPalletizersSource = await readFile(new URL("../lib/robotic-palletizers.ts", import.meta.url), "utf8");
 const encordSource = await readFile(new URL("../lib/encord.ts", import.meta.url), "utf8");
+const robotGuideArticle = JSON.parse(await readFile(new URL("../data/nvidia-robot-guide/article.json", import.meta.url), "utf8"));
 const insightSlugs = new Set(
   Array.from(
     `${encordSource}\n${fccSource}\n${roboticPalletizersSource}\n${micro1Source}\n${grittSource}\n${vibeSource}\n${robotPoliciesSource}`.matchAll(/"?slug"?:\s*"([^"]+)"/g),
@@ -48,6 +49,8 @@ const insightSlugs = new Set(
     (match) => match[1],
   )),
 );
+
+insightSlugs.add(robotGuideArticle.slug);
 
 function resolvePaths(entry) {
   if (!entry) {
