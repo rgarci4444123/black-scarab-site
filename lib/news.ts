@@ -34,6 +34,110 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "agility-digit-5-nvidia-onboard-compute",
+  "title": "Agility makes NVIDIA the sole onboard compute supplier for Digit 5",
+  "summary": "Agility is standardizing Digit 5 on IGX Thor as it expands its human detection and safety architecture. Early access is planned for the first half of 2027, with availability increasing over the following six to nine months.",
+  "category": "Humanoid Robotics",
+  "publishedDate": "2026-10-23",
+  "publishedAt": "2026-10-23T09:35:00-04:00",
+  "publishedLabel": "October 23, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/agility-digit-5-nvidia-onboard-compute.png",
+  "imageAlt": "Graphic editorial illustration of a humanoid with a processor in its torso and detection bands extending toward a worker.",
+  "imageCaption": "Editorial illustration by Black Scarab, created with AI to interpret onboard compute and human detection.",
+  "readingTime": "5 min read",
+  "keyPoints": [
+    "NVIDIA becomes the exclusive onboard compute supplier for Digit 5's general availability version.",
+    "The integration extends to Agility's system for detecting people safely and its ongoing certification work.",
+    "Early access remains planned for the first half of 2027."
+  ],
+  "sections": [
+    {
+      "heading": "A broader commitment to onboard compute",
+      "paragraphs": [
+        "Agility Robotics said on October 22 that the general availability version of Digit 5 will use NVIDIA IGX Thor as its standard onboard computing platform, making NVIDIA the humanoid's exclusive onboard compute supplier.",
+        "The decision expands a safety partnership announced in June and gives the next Digit a common computing foundation as Agility prepares for early customer access in the first half of 2027. Availability is expected to increase over the following six to nine months.",
+        "The immediate news is the scope of the supplier relationship. IGX Thor was already part of Digit's safety development. Agility is now standardizing the general availability robot's onboard compute around it."
+      ]
+    },
+    {
+      "heading": "What is going inside the robot",
+      "paragraphs": [
+        "IGX Thor is NVIDIA's industrial edge AI platform, built on its Blackwell GPU architecture for applications including robotics and sensor processing. It combines computing hardware with enterprise software and support.",
+        "NVIDIA describes a dedicated Functional Safety Island with an independent safety processor that isolates safety critical workloads. The platform supports safety functions using sensors on the robot and sensors installed around the workplace. These are capabilities of the platform, rather than a claim that Digit uses every available configuration.",
+        "For Digit 5, Agility identifies a specific application: it is integrating IGX Thor and additional Halos models into its proprietary safe human detection system. The company says the work is intended to extend perception capabilities and support certification and deployment.",
+        "The architecture therefore addresses a practical requirement of the product. Digit is a mobile machine intended to carry loads through spaces shared with people. Its onboard computer has to support perception and behavior while the robot's safety system can intervene when a person gets too close."
+      ]
+    },
+    {
+      "heading": "A heavier lift, with tools that can change",
+      "paragraphs": [
+        "Agility introduced Digit 5 in September as a broader industrial platform than the tote handling work that has dominated Digit 4 deployments. The company says a new leg design, using its own cycloidal actuator technology, allows repeated lifting of loads up to 50 pounds, or 22.7 kilograms.",
+        "The robot is designed with interchangeable grippers on standard mounting flanges. Agility also specifies a reach of up to 2.2 meters, a height of 1.81 meters and a weight of 129 kilograms. Those dimensions reflect its intended role in workspaces built around human reach and access.",
+        "Its September specification describes 90 minutes of battery runtime and a nine minute charge. Agility connects that charging cycle to its ambition for longer operating days. These are company specifications for the new generation, rather than results established by October's computing announcement.",
+        "Agility's planned task range extends from receiving goods and depalletizing to machine tending, kitting, sequencing, inspection and outbound palletizing. That is the product roadmap. It should remain separate from the narrower work already performed by Digit 4."
+      ]
+    },
+    {
+      "heading": "How the safety layers fit together",
+      "paragraphs": [
+        "Digit 5's design combines AI based human detection, visual and audible cues to communicate its intended movement, and an independent safety controller overseeing the response. Agility says the robot can avoid a person, stop or assume a seated position as appropriate.",
+        "Halos supplies parts of the computing and software foundation beneath that proprietary system. NVIDIA's June announcement described the collaboration around IGX Thor and Halos Core, with inspection work covering safety related software, AI components and cybersecurity protections.",
+        "The October announcement reiterates Agility's participation in the Halos AI Systems Inspection Lab ahead of final third party certification. It is an integration and evaluation program; the announcement does not establish that the finished Digit 5 has completed that certification.",
+        "That qualification is particularly relevant to Agility's aim of reducing the protective barriers associated with traditional industrial automation. Working close to people is part of the product proposition, and the complete robot must support it."
+      ]
+    },
+    {
+      "heading": "The computer in the robot, and the system around it",
+      "paragraphs": [
+        "Agility's September description says Digit processes camera, depth sensor and inertial information locally, while sending essential system health and diagnostic information to Agility Arc. Arc is the company's cloud platform for managing fleets and connecting them with warehouse and manufacturing systems.",
+        "That division helps explain why onboard compute is a meaningful supplier category. The machine needs local processing to navigate and react; fleet software coordinates its work with the rest of the facility. Selecting IGX Thor does not make the surrounding integration work disappear.",
+        "Agility brings experience from the earlier generation to that effort. It reported more than 65,000 operating hours for Digit 4 across customer sites in September. That record belongs to Digit 4, providing development experience rather than a reliability result for the new machine.",
+        "Black Scarab's view is that the supplier decision connects several parts of Digit 5's industrialization: local AI processing, a common software target and the safety work required to operate around people. The next dated milestone is early access in 2027, when customers can begin assessing that combination in the delivered robot."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Agility Robotics: October 22 compute announcement",
+      "url": "https://www.agilityrobotics.com/content/agility-robotics-expands-nvidia-collaboration-as-it-prepares-digit-5-for-commercial-scale"
+    },
+    {
+      "label": "Agility Robotics: September 15 Digit 5 introduction",
+      "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale"
+    },
+    {
+      "label": "NVIDIA: June 22 Halos for Robotics announcement",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai"
+    },
+    {
+      "label": "NVIDIA: IGX industrial edge AI platform",
+      "url": "https://www.nvidia.com/en-us/edge-computing/products/igx/"
+    },
+    {
+      "label": "The Next Web: October 22 reporting on Digit 5",
+      "url": "https://thenextweb.com/news/agility-robotics-digit-5-nvidia-igx-thor"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [
+      "warehousing-logistics"
+    ],
+    "technologies": [
+      "humanoid-robotics",
+      "edge-ai",
+      "machine-vision"
+    ],
+    "applications": [
+      "material-handling"
+    ]
+  }
+},
+{
   "taxonomy": {
     "primaryIndustry": "data-centers",
     "relevantIndustries": [
