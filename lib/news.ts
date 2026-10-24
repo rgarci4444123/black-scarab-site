@@ -34,6 +34,104 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "fanuc-sales-forecast-robot-demand",
+  "title": "FANUC raises its sales forecast to $6.46 billion as robot demand broadens",
+  "summary": "FANUC’s October 23 results show growth across robots, machine controls, production equipment and service. Its revised outlook implies annual revenue of about $6.46 billion for the year ending March 2027.",
+  "category": "Industrial Automation",
+  "publishedDate": "2026-10-24",
+  "publishedAt": "2026-10-24T13:22:01.613Z",
+  "publishedLabel": "October 24, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/fanuc-sales-forecast-robot-demand.png",
+  "imageAlt": "Conceptual editorial illustration showing interlocking yellow robot joints and a brushed metal spindle in extreme close view.",
+  "imageCaption": "Editorial illustration by Black Scarab, created with AI to interpret the interlocking layers of industrial automation.",
+  "readingTime": "5 min read",
+  "keyPoints": [
+    "Robot division sales reached approximately $1.24 billion in the six months ended September 30, up 12.6%.",
+    "Group operating income grew 35.7% to approximately $744 million on revenue of $3.02 billion.",
+    "The revised forecast for the year ending March 2027 is approximately $6.46 billion in sales and $1.54 billion in operating income."
+  ],
+  "sections": [
+    {
+      "heading": "Growth across the factory",
+      "paragraphs": [
+        "FANUC raised its annual sales forecast to approximately $6.46 billion on October 23 after reporting stronger robot sales and faster profit growth across its factory automation business.",
+        "The Japanese manufacturer generated $3.02 billion of revenue in the six months through September, up 16.2% from a year earlier. Operating income rose 35.7% to $744 million. Its ROBOT division contributed $1.24 billion of sales, an increase of 12.6%, with growth in the Americas and Japan and continued demand from Chinese industries outside automotive manufacturing.",
+        "The results give a useful view of where factories are spending. FANUC sells the robots, machine controls and production equipment that turn investment budgets into operating capacity. Its latest numbers show several parts of that business growing together, even while customers and regions move at different speeds.",
+        "All monetary figures are approximate US dollar equivalents using the ECB’s October 23 reference rates. Percentage changes are FANUC’s reported growth rates in its reporting currency."
+      ]
+    },
+    {
+      "heading": "Where the robot growth came from",
+      "paragraphs": [
+        "FANUC’s account of its robot business is more specific than a general claim that automation demand is rising. In the Americas, both automotive customers and general industry increased purchases. Japan benefited from a recovery in automotive sales alongside continued strength in other industries.",
+        "China presented a different mix. Automotive robot sales stagnated, according to the company, while general industry remained strong. That distinction matters because the same headline growth rate can conceal quite different investment cycles. A recovery tied entirely to new vehicle factories would have a different foundation from one supported by manufacturers across several industries.",
+        "The robot division represented about 41% of group revenue, calculated from the reported divisional and consolidated figures. It remains central to FANUC, but it does not explain the whole result. The company also supplies equipment around the robot, including the numerical controls that direct machine tools and the machines that cut, mold and finish parts."
+      ]
+    },
+    {
+      "heading": "More than robot arms",
+      "paragraphs": [
+        "Sales in the FA division, which includes CNC systems, rose 15.4% to $765 million. FANUC said machine tool demand remained strong in China and India, Japanese manufacturers benefited from external demand, and Europe showed signs of recovery after a weak period.",
+        "CNC systems translate a machining program into controlled movement. They sit inside the production equipment that makes components, rather than acting as a separate robotic worker. Their demand therefore provides another view of factory spending alongside orders for robot arms.",
+        "The fastest growing division was ROBOMACHINE, where revenue increased 31.2% to $531 million. FANUC reported stronger demand for ROBODRILL compact machining centers in China and Japan, ROBOSHOT electric injection molding machines in China and India, and ROBOCUT wire electrical discharge machines in China.",
+        "Those are distinct production processes. Machining removes material, injection molding forms plastic parts, and wire electrical discharge machining cuts electrically conductive material. The breadth of the increase helps explain why FANUC raised its outlook even though automotive robot demand was uneven."
+      ]
+    },
+    {
+      "heading": "Service is a substantial business",
+      "paragraphs": [
+        "Service sales grew 12.7% to $486 million, equivalent to roughly 16% of group revenue. FANUC described implementation support for products used in maintenance, including FIELD system Basic Package, AI Servo Monitor for identifying signs of machine tool failure, and Zero Down Time for robots.",
+        "This connects the company’s equipment sales to the work required to keep installed machines useful. Factories need fault diagnosis, maintenance and support after commissioning. For FANUC, a large installed base creates a continuing commercial relationship that extends beyond the initial capital purchase.",
+        "The service figure includes support and maintenance across the installed base. For a factory, the commercial value comes from keeping equipment productive over its working life. For the supplier, service creates revenue opportunities after the original machine has been delivered."
+      ]
+    },
+    {
+      "heading": "What changed in the outlook",
+      "paragraphs": [
+        "FANUC increased its sales forecast by 6.9% from the estimate it issued on July 31, equivalent to a rise from $6.05 billion to $6.46 billion. The operating income forecast rose by 10.4% to $1.54 billion, while projected net income attributable to shareholders increased by 15.3% to $1.46 billion.",
+        "The reported figures also show improved profitability. The group’s operating margin was approximately 24.6%, compared with 21.1% a year earlier, calculated from sales and operating income. Operating cash flow reached $994 million, up $178 million from the corresponding period.",
+        "Currency remains part of the picture. FANUC’s presentation shows a weaker average yen against the dollar and euro during the first half than a year earlier. Management assumes a stronger yen against both currencies for October through March than the averages recorded in the first half. Reported growth combines underlying business activity with translation effects, and the company’s outlook remains a forecast.",
+        "The next useful signal is how those regional patterns develop through the second half: whether American and Japanese automotive spending continues, whether Chinese general industry stays strong, and whether Europe’s recovery becomes more visible. For now, FANUC’s results provide concrete evidence of rising automation revenue across robots, production machines and the services that support them."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "FANUC: October 23 interim financial results",
+      "url": "https://www.fanuc.co.jp/en/ir/announce/pdf/2026/financialresult202609_e.pdf"
+    },
+    {
+      "label": "FANUC: October 23 financial results presentation",
+      "url": "https://www.fanuc.co.jp/en/ir/announce/pdf/2026/reference202609_e.pdf"
+    },
+    {
+      "label": "European Central Bank: October 23 exchange reference rates",
+      "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
+    },
+    {
+      "label": "Alliance News via AJ Bell: FANUC raises outlook after first half growth",
+      "url": "https://www.ajbell.co.uk/news/articles/fanuc-raises-outlook-record-highs-following-first-half-profit-jump"
+    },
+    {
+      "label": "Japan IR: FANUC interim earnings summary",
+      "url": "https://japanir.jp/en/company/company-6954/ir/6954-20261023-02_wp_financial_summary/"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "technologies": [
+      "industrial-robotics"
+    ],
+    "applications": [
+      "predictive-maintenance"
+    ]
+  }
+},
+{
   "slug": "agility-digit-5-nvidia-onboard-compute",
   "title": "Agility makes NVIDIA the sole onboard compute supplier for Digit 5",
   "summary": "Agility is standardizing Digit 5 on IGX Thor as it expands its human detection and safety architecture. Early access is planned for the first half of 2027, with availability increasing over the following six to nine months.",
