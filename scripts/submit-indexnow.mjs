@@ -35,12 +35,13 @@ const vibeSource = await readFile(new URL("../lib/vibe-manufacturing.ts", import
 const grittSource = await readFile(new URL("../lib/gritt-ai.ts", import.meta.url), "utf8");
 const robotPoliciesSource = await readFile(new URL("../lib/robot-policies.ts", import.meta.url), "utf8");
 const fccSource = await readFile(new URL("../lib/fcc-supply-chain.ts", import.meta.url), "utf8");
+const roboticWeldingSource = await readFile(new URL("../lib/robotic-welding.ts", import.meta.url), "utf8");
 const roboticPalletizersSource = await readFile(new URL("../lib/robotic-palletizers.ts", import.meta.url), "utf8");
 const encordSource = await readFile(new URL("../lib/encord.ts", import.meta.url), "utf8");
 const robotGuideArticle = JSON.parse(await readFile(new URL("../data/nvidia-robot-guide/article.json", import.meta.url), "utf8"));
 const insightSlugs = new Set(
   Array.from(
-    `${encordSource}\n${fccSource}\n${roboticPalletizersSource}\n${micro1Source}\n${grittSource}\n${vibeSource}\n${robotPoliciesSource}`.matchAll(/"?slug"?:\s*"([^"]+)"/g),
+    `${roboticWeldingSource}\n${encordSource}\n${fccSource}\n${roboticPalletizersSource}\n${micro1Source}\n${grittSource}\n${vibeSource}\n${robotPoliciesSource}`.matchAll(/"?slug"?:\s*"([^"]+)"/g),
     (match) => match[1],
   ).concat(Array.from(
     `${insightsSource}\n${palladyneSource}\n${foxgloveSource}\n${plusOneSource}\n${antiochSource}\n${physicalAiFundsSource}\n${mexicoSource}\n${manufacturingSeriesSource}\n${manufacturingPlantSource}\n${manufacturingMachinesSource}\n${productManufacturingSource}\n${factoryBuildersSource}\n${manufacturingPlantDesignSource}\n${industrialAutomationSource}\n${physicalAiManufacturingSource}\n${manufacturingPlantBuildSource}\n${robotActuatorsSource}\n${whatIsPhysicalAiSource}\n${digitalTwinsSource}\n${roboticsDataCollectionSource}`.matchAll(

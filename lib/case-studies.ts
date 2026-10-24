@@ -1,5 +1,6 @@
 import { nvidiaRobotGuideDeepDive } from "@/lib/nvidia-robot-guide";
 import { encordDeepDive } from "@/lib/encord";
+import { roboticWeldingDeepDive } from "@/lib/robotic-welding";
 import { roboticPalletizersDeepDive } from "@/lib/robotic-palletizers";
 import { fccSupplyChainDeepDive } from "@/lib/fcc-supply-chain";
 import { robotPoliciesDeepDive } from "@/lib/robot-policies";
@@ -34,7 +35,7 @@ export type CaseStudySection = {
     afterParagraphIndex: number;
     kind: "robotics-data-demand" | "robotics-data-tam";
   }[];
-  buyingGuideTool?: "palletizer-comparison" | "palletizer-calculator" | "palletizer-cell";
+  buyingGuideTool?: "palletizer-comparison" | "palletizer-calculator" | "palletizer-cell" | "welding-comparison" | "welding-calculator" | "welding-cell";
   id?: string;
   tool?: "history" | "robot-check" | "covered-list" | "components" | "downloads" | "providers" | "launch-check";
   heading?: string;
@@ -16785,6 +16786,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  roboticWeldingDeepDive(),
   nvidiaRobotGuideDeepDive(),
   encordDeepDive(),
   roboticPalletizersDeepDive(),
