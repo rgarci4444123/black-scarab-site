@@ -1,6 +1,5 @@
 import type { CaseStudyArticle } from "@/lib/case-studies";
 
-export const micro1AllOpportunities = "https://refer.micro1.ai/referral/company-vetting/jobs?referralCode=fbdaa24a-8391-41f7-bae5-e06af79164ae&utm_source=referral&utm_medium=share&utm_campaign=job_referral";
 export const micro1SelectedOpportunities = "https://refer.micro1.ai/referral/company-vetting/jobs?referralCode=fbdaa24a-8391-41f7-bae5-e06af79164ae&linkId=2e130d55-b509-494c-827d-7eb8091fbf6e&utm_source=referral&utm_medium=share&utm_campaign=job_referral";
 
 const disclosure = "Black Scarab may receive a referral fee if your company joins micro1 through these links.";
@@ -39,6 +38,7 @@ export const micro1DeepDive = (): CaseStudyArticle => ({
     description: "Start a company application with micro1 to explore a paid partnership for your business records or commercial video.",
     buttonLabel: "Get paid for your company’s data",
     analyticsVersion: "micro1-data-revenue-v1",
+    repeatAtEnd: true,
     disclosure,
   },
   sections: [
@@ -178,15 +178,6 @@ export const micro1DeepDive = (): CaseStudyArticle => ({
         "Begin with one workflow and a short inventory. Find out whether micro1 wants it, what it would pay, and what your team must do. Then review the prepared sample and agreement before expanding the contribution.",
         "The strongest partnership is one where the company earns worthwhile additional income, employees can support the project without disrupting operations, and the shared knowledge stays within boundaries the business is comfortable with.",
       ],
-    },
-    {
-      heading: "Explore a Company Data Partnership",
-      paragraphs: ["Use the links below to review the current programs and start a conversation with micro1."],
-      links: [
-        { label: "Enterprise and commercial video opportunities", href: micro1SelectedOpportunities, sponsored: true, description: "Review the two programs and submit your company details." },
-        { label: "Browse all company opportunities", href: micro1AllOpportunities, sponsored: true, description: "See the full list of available company partnerships." },
-      ],
-      callouts: [{ title: "Prepare for the first conversation", body: "Describe your company size, location, systems, and one documented workflow. List the records that support it, who understands the process, and any material that must stay private. Ask micro1 about payment, delivery format, staff time, and the intended use before preparing an export." }],
     },
   ],
   sources: [

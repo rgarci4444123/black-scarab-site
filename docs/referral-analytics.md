@@ -11,13 +11,13 @@ Both events use two custom properties, `placement` and `cta_version`, within the
 
 For the micro1 article:
 
-- `placement`: `article_top` for the beginning button, `article_end_primary` for the selected programs card and `article_end_additional` for all opportunities
+- `placement`: `article_top` for the beginning button and `article_end_primary` for the matching button after the verdict. Earlier events may include `article_end_additional` from the removed all opportunities card.
 - `cta_version`: `micro1-data-revenue-v1`
 - Top button: **Get paid for your company’s data**
 
 ## Read the results
 
-Open the project in Vercel, choose Analytics, and filter the page to `/insights/sell-company-data-ai-micro1-data-partnerships-referrals`. In Events, open **Referral CTA Click** and inspect the placement and version properties. Use `article_top` to answer how many people clicked the beginning button. Compare `article_end_primary` and `article_end_additional` for the final cards.
+Open the project in Vercel, choose Analytics, and filter the page to `/insights/sell-company-data-ai-micro1-data-partnerships-referrals`. In Events, open **Referral CTA Click** and inspect the placement and version properties. Use `article_top` to answer how many people clicked the beginning button. Use `article_end_primary` for the matching button at the end.
 
 For a view-to-click rate, use the Visitors counts for **Referral CTA Click** divided by **Referral CTA View**, with matching article, placement, version and date filters. Totals count repeated events; do not treat them as unique people. For a page-to-click rate, compare click visitors with article visitors for the same period.
 
@@ -38,3 +38,7 @@ Plan limits reference: https://vercel.com/docs/analytics/limits-and-pricing
 ## micro1 link cleanup, October 25, 2026
 
 At Rodolfo’s request, routine body hyperlinks and the linked Sources list were converted to plain text. The three existing micro1 referral links remain with their referral code, placement markers and analytics version preserved. Source names and prose attribution remain visible; the original research URLs are retained in the link cleanup research record and Git history. Treat this deployment as a separate conversion context when comparing date ranges.
+
+## Matching end card, October 25, 2026
+
+At Rodolfo’s request, the final Explore a Company Data Partnership section and its two opportunity cards were replaced by the same revenue card used at the top. Both buttons say Get paid for your company’s data and use exactly the same selected paid referral URL, including its referral code and link ID. The end button retains article_end_primary for view and click measurement; article_end_additional is now historical. The top card and its attribution are unchanged.

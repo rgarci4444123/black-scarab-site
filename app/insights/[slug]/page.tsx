@@ -15,6 +15,7 @@ import WeldingCell from "@/components/welding/cell";
 import PalletizerCellDiagram from "@/components/palletizers/cell-diagram";
 import AuthorLinkedIn from "@/components/author-linkedin";
 import EmailSignupCard from "@/components/email-signup-card";
+import ReferralCta from "@/components/referral-cta";
 import { InsightReadTracker } from "@/components/engagement-analytics";
 import LocalAiImplementationCta from "@/components/local-ai-implementation-cta";
 import SiteHeader from "@/components/site-header";
@@ -365,37 +366,7 @@ export default async function CaseStudyPage({ params }: Props) {
 
           {article.referral ? (
             <section className="px-6 py-8 md:px-10 md:py-10">
-              <div className="mx-auto grid max-w-6xl gap-6 overflow-hidden rounded-[28px] border border-[#d7e2d1] bg-[#111827] p-7 text-white shadow-[0_18px_44px_rgba(15,23,42,0.14)] md:grid-cols-[minmax(0,1fr)_auto] md:items-center md:p-9">
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#b9c9ae]">
-                    {article.referral.label ?? "Referral marketplace access"}
-                  </p>
-                  <h2 className="mt-3 text-2xl font-semibold tracking-tight md:text-3xl">
-                    {article.referral.title}
-                  </h2>
-                  <p className="mt-3 max-w-3xl text-sm leading-7 text-[#d1d5db] md:text-base">
-                    {article.referral.description}
-                  </p>
-                  {article.referral.code ? <p className="mt-5 break-all text-sm text-[#d1d5db]">
-                    Black Scarab referral code{" "}
-                    <span className="rounded-md border border-white/15 bg-white/10 px-2.5 py-1 font-mono font-semibold tracking-[0.08em] text-white">
-                      {article.referral.code}
-                    </span>
-                  </p> : null}
-                  {article.referral.disclosure ? <p className="mt-4 max-w-3xl text-xs leading-6 text-[#d1d5db]">{article.referral.disclosure}</p> : null}
-                </div>
-                <a
-                  href={article.referral.url}
-                  target="_blank"
-                  rel="sponsored noreferrer"
-                  data-analytics-event="referral-cta"
-                  data-referral-placement="article_top"
-                  data-referral-version={article.referral.analyticsVersion ?? "baseline"}
-                  className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#edf4e8] px-6 py-3 text-center text-sm font-semibold text-[#111827] transition hover:bg-white"
-                >
-                  {article.referral.buttonLabel ?? "Access the Marketplace"}
-                </a>
-              </div>
+              <ReferralCta referral={article.referral} placement="article_top" />
             </section>
           ) : null}
 
@@ -672,6 +643,9 @@ export default async function CaseStudyPage({ params }: Props) {
                     ) : null}
                   </Fragment>
                 ))}
+                {article.referral?.repeatAtEnd ? (
+                  <ReferralCta referral={article.referral} placement="article_end_primary" />
+                ) : null}
                 {article.series ? (
                   <section className="mt-12 rounded-[24px] border border-[#dfe3d9] bg-[#f4f5ef] p-6 sm:p-8">
                     <div className="flex flex-wrap items-end justify-between gap-3">

@@ -363,6 +363,7 @@ export type CaseStudyArticle = {
     label?: string;
     buttonLabel?: string;
     analyticsVersion?: string;
+    repeatAtEnd?: boolean;
     disclosure?: string;
   };
 };
