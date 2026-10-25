@@ -3,13 +3,6 @@ import type { CaseStudyArticle } from "@/lib/case-studies";
 export const micro1AllOpportunities = "https://refer.micro1.ai/referral/company-vetting/jobs?referralCode=fbdaa24a-8391-41f7-bae5-e06af79164ae&utm_source=referral&utm_medium=share&utm_campaign=job_referral";
 export const micro1SelectedOpportunities = "https://refer.micro1.ai/referral/company-vetting/jobs?referralCode=fbdaa24a-8391-41f7-bae5-e06af79164ae&linkId=2e130d55-b509-494c-827d-7eb8091fbf6e&utm_source=referral&utm_medium=share&utm_campaign=job_referral";
 
-const data = "https://www.micro1.ai/data-partnerships";
-const enterprise = "https://req.micro1.ai/post/a8b8ac95-8691-4c53-b808-8129fd2c324b";
-const compensation = "https://www.micro1.ai/company-referral";
-const research = "https://www.micro1.ai/research/pii-transformation-for-enterprise-datasets";
-const calculator = "https://www.micro1.ai/data-payout";
-const funding = "https://www.forbes.com.au/news/uncategorized/this-25-year-old-raised-us100-million-for-his-ai-startup-at-a-us4-billion-valuation/";
-const antler = "https://www.antler.co/press-releases/antler-elevate-backs-micro1-the-ai-platform-for-human-intelligence-in-its-usd-35-million-series-a-led-by-01a";
 const disclosure = "Black Scarab may receive a referral fee if your company joins micro1 through these links.";
 
 export const micro1DeepDive = (): CaseStudyArticle => ({
@@ -53,16 +46,16 @@ export const micro1DeepDive = (): CaseStudyArticle => ({
       paragraphs: [
         "Your company has spent years learning how to do its work. Some of that knowledge lives in employees' heads. Much of it lives in support tickets, operating procedures, project histories, approval records, and the trail of decisions that keeps the business running.",
         "AI developers want to understand that work. A model can read a textbook about logistics or accounting, but learning how a real team handles an exception requires something more specific: the problem, the information available, the decision, and what happened next.",
-        ["micro1 offers companies a way to earn money from those records. Its ", { text: "company partnership page", href: compensation }, " advertises compensation of $100,000 to $2 million+ for approved data packages. The appeal is straightforward: an asset you already have could produce additional income."],
+        "micro1 offers companies a way to earn money from those records. Its company partnership page advertises compensation of $100,000 to $2 million+ for approved data packages. The appeal is straightforward: an asset you already have could produce additional income.",
         "The business decision is whether the payment is worth the time and information involved. This guide explains what the company wants, how the process starts, and what to settle before your records leave the business.",
       ],
     },
     {
       heading: "How Much Does micro1 Pay for Company Data?",
       paragraphs: [
-        ["micro1's ", { text: "data partnership offer", href: data }, " presents three starting bands, based on the scale and distinctiveness of the contribution."],
+        "micro1's data partnership offer presents three starting bands, based on the scale and distinctiveness of the contribution.",
         "These are individually negotiated partnerships. A useful package combines enough material to capture a workflow with the expertise needed to explain it. A connected history of difficult decisions can be more interesting than thousands of generic documents.",
-        ["Its ", { text: "payout estimator", href: calculator }, " provides an initial estimate using company characteristics. The final offer follows a review of the actual data."],
+        "Its payout estimator provides an initial estimate using company characteristics. The final offer follows a review of the actual data.",
         "Ask whether the offer pays for a historical package, ongoing contributions, or both. Then ask when the money arrives: on signing, delivery, acceptance, or later milestones. A million dollar engagement spread across continuing work is a different proposition from a single archive sale.",
         "The number that matters to your business is the payment after preparation costs. Include the time spent exporting records, reviewing confidential material, explaining workflows, and answering follow up questions. Establish who pays for this work before committing staff to the project.",
       ],
@@ -75,7 +68,7 @@ export const micro1DeepDive = (): CaseStudyArticle => ({
     {
       heading: "What Kind of Company Is a Good Fit?",
       paragraphs: [
-        ["The current ", { text: "enterprise opportunity", href: enterprise }, " targets businesses with 30 to 200 employees, mature workflows, substantial documentation, and modern software tools. Examples include technology, consulting, recruiting, financial services, legal, healthcare administration, and logistics."],
+        "The current enterprise opportunity targets businesses with 30 to 200 employees, mature workflows, substantial documentation, and modern software tools. Examples include technology, consulting, recruiting, financial services, legal, healthcare administration, and logistics.",
         "An established business with a repeatable process is a natural starting point. You should be able to explain how a task gets completed, where the supporting records live, and who on your team understands the exceptions. You do not need to be an AI company.",
         "The broader program accepts companies with 30+ employees, primarily working in English. Current demand favors the United States, United Kingdom, and Canada. The opportunity you apply to determines the relevant requirements.",
         "A useful first conversation focuses on one process rather than your entire business. For example, how your support team resolves escalations, how accountants investigate reconciliation differences, or how dispatchers recover from a missed delivery. It is easier to describe, price, and review a defined contribution.",
@@ -98,7 +91,7 @@ export const micro1DeepDive = (): CaseStudyArticle => ({
         "The initial application asks for company and representative contact details, your role, and a website. You can begin without uploading your company's archive.",
         "micro1 reviews the application, uses an initial AI interview to assess fit, and arranges a discovery call for promising companies. That conversation covers the records, privacy requirements, and the proposed contribution. Agreement and onboarding follow if both sides want to proceed.",
         "Use the discovery call to establish how collection will work for your company: exports prepared by your team, employee demonstrations, or any proposed access to your systems. Agree the practical arrangements and who handles each task before starting.",
-        ["The ", { text: "enterprise listing", href: enterprise }, " says micro1 handles coordination, anonymization, and program management. Your team still needs someone who understands the records and can review what is prepared."],
+        "The enterprise listing says micro1 handles coordination, anonymization, and program management. Your team still needs someone who understands the records and can review what is prepared.",
         "A practical setup is an operations lead for the workflow, an IT contact for extraction, and a decision maker for commercial approval. One employee may fill several roles in a smaller company. Establish the expected hours, sample review, delivery deadlines, and any continuing contribution so the project does not quietly become a second job for your team.",
         "Ask for a project schedule with the proposed offer, including when review ends and what triggers each payment.",
       ],
@@ -106,16 +99,16 @@ export const micro1DeepDive = (): CaseStudyArticle => ({
     {
       heading: "Why They Want Your Data",
       paragraphs: [
-        ["micro1 builds data and evaluation tasks for AI developers. Its ", { text: "Realm platform", href: "https://www.micro1.ai/realm" }, " combines expert selection, data production, review, and quality measurement to support model training and realistic work environments."],
+        "micro1 builds data and evaluation tasks for AI developers. Its Realm platform combines expert selection, data production, review, and quality measurement to support model training and realistic work environments.",
         "Business records help turn a general question into a task with real constraints. Instead of asking an AI to describe customer service, developers can test whether it resolves a case using the available information and reaches an acceptable result. Human expertise helps determine what a good answer looks like.",
-        ["Its ", { text: "Cortex service", href: "https://www.micro1.ai/cortex" }, " evaluates and improves enterprise AI agents. Its ", { text: "robotics work", href: "https://www.micro1.ai/robotics" }, " uses demonstrations and recordings to teach physical tasks. Documents, decisions, feedback, and video contribute different forms of knowledge."],
+        "Its Cortex service evaluates and improves enterprise AI agents. Its robotics work uses demonstrations and recordings to teach physical tasks. Documents, decisions, feedback, and video contribute different forms of knowledge.",
         "Your company is contributing material to that development process. The immediate commercial product is the data partnership, rather than a software subscription you must buy.",
       ],
     },
     {
       heading: "Could This Help a Competitor or Automate Your Business?",
       paragraphs: [
-        ["micro1 addresses this concern directly in its ", { text: "enterprise offer", href: enterprise }, ": it says the purpose is to train and evaluate AI, not to reproduce participating companies, their products, customers, or competitive advantages."],
+        "micro1 addresses this concern directly in its enterprise offer: it says the purpose is to train and evaluate AI, not to reproduce participating companies, their products, customers, or competitive advantages.",
         "The broader effect is that AI systems become better at business tasks, and those capabilities can eventually reach other companies in your industry. Licensing a workflow contributes to that improvement even when names and confidential details are removed.",
         "The distinction is between exposing your specific competitive information and helping improve general capabilities. A customer list, pricing strategy, proprietary design, or unreleased product roadmap raises different concerns from a sanitized example of how a routine task gets completed.",
         "Before choosing a dataset, ask who receives the prepared material, whether it can reach direct competitors, and which uses you can exclude. If keeping a particular workflow exclusive is central to your advantage, select a different contribution or retain it for your own AI projects.",
@@ -127,7 +120,7 @@ export const micro1DeepDive = (): CaseStudyArticle => ({
       paragraphs: [
         "micro1 says sensitive and confidential information is removed before downstream use, original datasets are deleted after processing, and prepared data is not publicly shared. Your company keeps ownership of the underlying records.",
         "Its privacy process includes restricted access, separate processing pipelines, agreed retention periods, and review of representative samples. The important step for your team is deciding what must be removed before processing begins.",
-        ["micro1's ", { text: "September 2026 research", href: research }, " describes replacing real identities with consistent synthetic ones. If the same customer appears in a ticket, email, and invoice, the replacement keeps those records connected without preserving the customer's real name. This helps preserve the workflow rather than stripping away all its context."],
+        "micro1's September 2026 research describes replacing real identities with consistent synthetic ones. If the same customer appears in a ticket, email, and invoice, the replacement keeps those records connected without preserving the customer's real name. This helps preserve the workflow rather than stripping away all its context.",
         "Confidentiality extends beyond personal names. Commercial rates, unusual project details, contractual commitments, designs, and internal strategies may identify the business or reveal an advantage. Mark these categories explicitly and have the process owner review a transformed sample.",
         "For especially sensitive files, ask whether they can be excluded or replaced with a synthetic example. Also ask who can see the originals and what remains after processing. Deleting an original archive is different from deleting a prepared training dataset or undoing what a model has learned.",
         "Your IT or security team should review the transfer method, access arrangements, retention schedule, and incident response process before an export. Start with a selected workflow, not unrestricted access to every system.",
@@ -136,18 +129,18 @@ export const micro1DeepDive = (): CaseStudyArticle => ({
     {
       heading: "Who Is micro1, and Who Backs It?",
       paragraphs: [
-        ["Founded in 2022 by Ali Ansari, micro1 began in AI recruiting and moved into human data services in 2025, according to ", { text: "Inc.'s company profile", href: "https://www.inc.com/varsha-bansal/the-booming-business-of-turning-human-experts-into-ai-trainers/91292479" }, ". Its recruiting infrastructure helped it find the specialists needed to create and judge training data."],
-        ["The company announced a ", { text: "$35 million Series A", href: "https://www.micro1.ai/series-a" }, " at a $500 million valuation in September 2025. ", { text: "Antler", href: antler }, " participated in the round led by 01 Advisors, the investment firm founded by former Twitter executives Dick Costolo and Adam Bain."],
-        ["In September 2026, ", { text: "Forbes reported", href: funding }, " a further raise of more than $100 million at a $4 billion valuation, citing people familiar with the deal."],
+        "Founded in 2022 by Ali Ansari, micro1 began in AI recruiting and moved into human data services in 2025, according to Inc.'s company profile. Its recruiting infrastructure helped it find the specialists needed to create and judge training data.",
+        "The company announced a $35 million Series A at a $500 million valuation in September 2025. Antler participated in the round led by 01 Advisors, the investment firm founded by former Twitter executives Dick Costolo and Adam Bain.",
+        "In September 2026, Forbes reported a further raise of more than $100 million at a $4 billion valuation, citing people familiar with the deal.",
         "This is a young, rapidly expanding company, not a decades old data vendor. Its funded operating business and enterprise work make the opportunity more substantial than an anonymous data buying website. Its age also makes the proposed project's team, delivery plan, and payment milestones worth understanding.",
       ],
     },
     {
       heading: "Are Established Companies Already Working With Them?",
       paragraphs: [
-        ["Microsoft is among micro1's customers named by ", { text: "investor Antler", href: antler }, ". Forbes' September funding report also names Amazon and robotics company 1X."],
-        ["Box has a published ", { text: "micro1 case study", href: "https://www.micro1.ai/case-study/box" }, ". The project uses domain experts to build realistic documents, prompts, and scoring rubrics for evaluating enterprise agents. It shows the kind of business specific AI work micro1 delivers."],
-        ["On the supplier side, the ", { text: "enterprise program page", href: enterprise }, " reports more than 100 partner companies and more than $200 million generated for partners. For a closer comparison, ask for a reference from a business contributing similar records."],
+        "Microsoft is among micro1's customers named by investor Antler. Forbes' September funding report also names Amazon and robotics company 1X.",
+        "Box has a published micro1 case study. The project uses domain experts to build realistic documents, prompts, and scoring rubrics for evaluating enterprise agents. It shows the kind of business specific AI work micro1 delivers.",
+        "On the supplier side, the enterprise program page reports more than 100 partner companies and more than $200 million generated for partners. For a closer comparison, ask for a reference from a business contributing similar records.",
         "You are considering a project within an operating AI data business. The remaining question is how mature your particular program is: who runs it, what an accepted delivery looks like, and how previous participants handled the work.",
       ],
     },
@@ -196,20 +189,14 @@ export const micro1DeepDive = (): CaseStudyArticle => ({
       callouts: [{ title: "Prepare for the first conversation", body: "Describe your company size, location, systems, and one documented workflow. List the records that support it, who understands the process, and any material that must stay private. Ask micro1 about payment, delivery format, staff time, and the intended use before preparing an export." }],
     },
   ],
-  sources: ["micro1 partnership and product materials", "Company and investor funding statements", "Forbes and Inc. reporting", "Live company opportunity listings"],
-  sourceLinks: [
-    { label: "micro1 data partnerships", url: data },
-    { label: "Enterprise opportunity requirements", url: enterprise },
-    { label: "Published company compensation", url: compensation },
-    { label: "Indicative payout calculator", url: calculator },
-    { label: "PII transformation research", url: research },
-    { label: "Realm", url: "https://www.micro1.ai/realm" },
-    { label: "Cortex", url: "https://www.micro1.ai/cortex" },
-    { label: "Robotics", url: "https://www.micro1.ai/robotics" },
-    { label: "Series A announcement", url: "https://www.micro1.ai/series-a" },
-    { label: "Antler investment announcement", url: antler },
-    { label: "September 2026 financing report", url: funding },
-    { label: "Company origins and business model", url: "https://www.inc.com/varsha-bansal/the-booming-business-of-turning-human-experts-into-ai-trainers/91292479" },
-    { label: "Box evaluation case study", url: "https://www.micro1.ai/case-study/box" },
+  sources: [
+    "micro1 data partnerships, company compensation and payout estimator",
+    "micro1 enterprise opportunity requirements and company listings",
+    "micro1 PII transformation research, September 2026",
+    "micro1 Realm, Cortex and robotics product materials",
+    "micro1 Series A announcement and Antler investment announcement",
+    "Forbes, September 2026 financing report",
+    "Inc., company origins and business model",
+    "micro1 Box evaluation case study",
   ],
 });

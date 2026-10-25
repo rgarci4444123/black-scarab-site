@@ -34,3 +34,7 @@ Run `npm run test:referral-analytics` for nested clicks, attribution preservatio
 Reference: https://vercel.com/docs/analytics/custom-events
 
 Plan limits reference: https://vercel.com/docs/analytics/limits-and-pricing
+
+## micro1 link cleanup, October 25, 2026
+
+At Rodolfo’s request, routine body hyperlinks and the linked Sources list were converted to plain text. The three existing micro1 referral links remain with their referral code, placement markers and analytics version preserved. Source names and prose attribution remain visible; the original research URLs are retained in the link cleanup research record and Git history. Treat this deployment as a separate conversion context when comparing date ranges.
