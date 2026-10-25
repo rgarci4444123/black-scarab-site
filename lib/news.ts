@@ -36,7 +36,7 @@ export const newsUpdates: NewsUpdate[] = [
 {
   "slug": "microvision-movia-pro-production",
   "title": "MicroVision starts MOVIA Pro production, putting more perception inside the sensor",
-  "summary": "MicroVision reports production and shipping of MOVIA Pro, a short range lidar with onboard perception. The integration tradeoff now includes where software runs, how updates are managed and how the complete machine is validated.",
+  "summary": "MicroVision reports production and shipping of MOVIA Pro from Orlando. The launch advances its commercialization push as US policy favors domestic drone supply chains and lidar expands across industrial and autonomous systems.",
   "category": "Sensors",
   "publishedDate": "2026-10-25",
   "publishedAt": "2026-10-25T20:29:19+00:00",
@@ -50,61 +50,70 @@ export const newsUpdates: NewsUpdate[] = [
   "imageCaption": "Editorial illustration by Black Scarab, created with AI to interpret perception moving onto the sensor.",
   "readingTime": "5 min read",
   "keyPoints": [
-    "MicroVision reports commercial production and shipping from its Orlando facility.",
-    "MOVIA Pro combines short range lidar, onboard processing and a Linux based software framework.",
-    "The complete machine still needs integration, fault handling and validation for its intended operating conditions."
+    "MicroVision reports commercial production and shipping of MOVIA Pro, with perception software running on the sensor.",
+    "Orlando manufacturing could support its position as US policy encourages domestic drone production and more secure component supply chains.",
+    "The launch extends an existing product rollout, while the commercial test is turning availability into repeat revenue."
   ],
   "sections": [
     {
-      "heading": "From evaluation to reported supply",
+      "heading": "What moved into production",
       "paragraphs": [
         "MicroVision says it has begun commercial production and shipping of MOVIA Pro, a short range lidar sensor that can run perception applications on the device.",
         "The October 22 announcement identifies the company’s Orlando facility as the manufacturing site and says the sensor is available for customer orders. MicroVision describes MOVIA Pro as the production ready version of MOVIA S.",
-        "That is a change from the earlier development schedule. In September, Truck News reported, following a company webinar, that MOVIA S production was planned for October and higher volume shipments for November. The new announcement reports that production and shipping have begun; the earlier shipment forecast remains a forecast.",
-        "For equipment builders, availability makes the architectural proposition more immediate: how much work should a sensing device do before it sends information to the rest of the machine?"
+        "The company is targeting industrial mobile equipment, intelligent infrastructure, unmanned aircraft and other autonomous systems. The broader story is its attempt to turn a sensing technology portfolio into a business with more frequent product sales across several industries."
       ]
     },
     {
-      "heading": "Where measurements become perception",
+      "heading": "A product rollout already underway",
       "paragraphs": [
-        "MicroVision says its Linux based Open Software Framework lets customers develop, deploy and update applications on the sensor. Onboard processing can turn point cloud measurements into object information. The company also highlights multiple returns from each laser pulse and connections including CAN, Gigabit Ethernet and 100 Mbit Ethernet.",
-        "The intended markets include industrial mobile equipment, intelligent infrastructure and unmanned systems. Those are applications MicroVision is targeting, rather than evidence of particular customer installations.",
-        "The architectural distinction is straightforward. A lidar measures its surroundings. Perception software interprets those measurements into information that another part of the system can use. Moving some interpretation into the sensor changes the boundary between the sensing device and the host computer.",
-        "Black Scarab’s assessment is that this could simplify designs in which a separate processing box mainly exists to interpret lidar data. The benefit depends on the application. A robot that already combines cameras, navigation, task planning and fleet instructions may still need substantial computing elsewhere."
+        "MOVIA Pro follows a development path visible over the past year. MicroVision’s November 11, 2025 results listed the introduction of MOVIA S among its business highlights. The production announcement arrives about eleven months after that update.",
+        "Other products were already moving into commercial use. In its March 2026 results, MicroVision reported an initial December 2025 shipment of MOVIA L sensors with integrated software against repeatable orders. The new launch adds another production product to that commercialization effort.",
+        "The timing also follows the schedule discussed earlier this autumn. Truck News reported in September, after a company webinar, that MOVIA S production was planned for October and higher volume shipments for November. MicroVision now reports production and shipping; the November volume milestone remains ahead.",
+        "Management has been explicit about the business change it wants. In its October 7 update, MicroVision described a move away from dependence on a limited number of lengthy programs toward a portfolio serving industrial, robotics, infrastructure, security and defense markets. It sees opportunities in those sectors as having shorter sales cycles than traditional automotive programs."
       ]
     },
     {
-      "heading": "Read the range figures together",
+      "heading": "More interpretation inside the sensor",
       "paragraphs": [
-        "The product page lists a 180 degree horizontal and 132 degree vertical field of view, a 10 Hz frame rate, weight below 400 grams and power consumption below 9 watts. These are company specifications.",
-        "Its range figures come with different conditions. MicroVision lists 15.1 metres at 10% Lambertian reflectivity in 100 klx sunlight, with detection probability above 90% and false positives per frame below 1%. A second figure is 19.8 metres at the same reflectivity and sunlight, with 50% detection probability.",
-        "Those are different operating points, not interchangeable range ratings. A longer distance paired with a lower detection probability does not offer the same assurance as the shorter distance. The useful comparison is the required object, environment and reliability together.",
-        "Likewise, a wide field of view describes angular coverage. It does not settle whether a particular mounting position leaves an obstacle hidden behind a load, a vehicle body or another object. Placement remains part of the system design."
+        "A lidar measures distances to build a picture of its surroundings. Perception software turns those measurements into information about objects and the environment. MOVIA Pro brings more of that interpretation onto the sensing device.",
+        "MicroVision says its Linux based Open Software Framework lets customers develop, deploy and update applications on the sensor. The company highlights object information generated onboard, multiple returns from each laser pulse, and connections including CAN, Gigabit Ethernet and 100 Mbit Ethernet.",
+        "Black Scarab’s assessment is that this changes the product’s position in the system. A supplier delivering interpreted information can take on work that otherwise sits in a separate processing box. That creates a potential route to a more integrated product and a closer role in the application’s software.",
+        "The shift can reduce external processing requirements for some designs. Machines that combine several sensors, navigation and task planning still need those functions coordinated across the complete system."
       ]
     },
     {
-      "heading": "The integration bill moves",
+      "heading": "Orlando and the domestic supply chain push",
       "paragraphs": [
-        "The commercial comparison should cover the complete sensing package: mounting, cables, external computing, application software and maintenance. Removing one processing box could save installation work, but only if the new arrangement delivers the information the machine actually needs.",
-        "Consider a hypothetical mobile cart approaching a crossing aisle. An onboard application might send information about an obstacle to the cart’s controller. The integrator still has to define the coordinate reference, timing, message format and response when information arrives late or stops arriving. An electrical connection alone does not answer those questions.",
-        "Putting software on the sensor also makes its lifecycle part of the installation. Someone must approve updates, retain a known working version and collect enough diagnostic information to explain a missed detection. Changes to perception output need to remain compatible with the controller that consumes it.",
-        "These are practical evaluation questions: which functions run on the device, which remain elsewhere, and who supports the combined configuration? The strongest case for onboard perception is less total engineering effort across the working system, rather than fewer boxes counted in isolation."
+        "Manufacturing in Orlando gives the launch a policy dimension. The United States is trying to strengthen domestic production in autonomous systems, with drones providing a concrete example.",
+        "The June 2025 executive order on American drone dominance directs agencies to prioritize drones manufactured in the United States to the extent permitted by law. It also calls for measures to secure critical drone components against foreign control and strengthen the domestic industrial base.",
+        "For a sensor aimed partly at unmanned aircraft and defense applications, production in the United States could become a competitive advantage as those supply chains develop. Black Scarab sees a potential tailwind in the demand for domestic sensing capacity, alongside demand for the aircraft and robots themselves.",
+        "That advantage would emerge through actual program selections and orders. The order sets a policy direction for drones and their supply chains; it does not designate MOVIA Pro as an approved component. Manufacturing location, component provenance, performance and commercial execution remain distinct parts of the industry’s reshaping."
       ]
     },
     {
-      "heading": "Perception is one part of machine safety",
+      "heading": "The market is larger than one application",
       "paragraphs": [
-        "A production launch establishes product availability. It does not establish that a complete robot or vehicle is safe for a particular task. Detecting something, deciding what to do and bringing a machine to a controlled stop are separate parts of the operating chain.",
-        "In its October guidance on construction robotics, NIOSH identifies sensing degradation, communication failures, software changes and unexpected recovery behavior among the hazards employers should consider. That guidance concerns construction, but it illustrates why evaluating the full system matters when robots operate near people.",
-        "For the hypothetical cart, useful validation would examine the actual loads, approach speeds, visibility and stopping behavior in its intended environment. It would also examine what the controller does when the sensor is obstructed or a communication link fails. A nominal detection range cannot substitute for those system level results.",
-        "The buyer’s question is therefore specific: what role does this sensor play in the machine’s protective measures, and what evidence supports that role? Onboard perception can support a design, while the integrator remains responsible for establishing how that design behaves."
+        "Grand View Research’s June 2026 study estimates the global lidar market at $3.4 billion in 2026 and forecasts $9 billion by 2033, an annual growth rate of 14.8%. Its scope spans airborne, terrestrial, mobile and drone applications, including surveying and navigation components.",
+        "That is a measure of the broader lidar ecosystem, rather than the addressable market for MOVIA Pro alone. The product’s opportunity lies in the subset of applications that need short range sensing and can use its onboard perception architecture.",
+        "The attraction of a multi industry strategy is that the same underlying sensing platform can find demand in machines, infrastructure and unmanned systems with different development schedules. That can spread commercial opportunities across more programs, while increasing the software and support work required to serve them.",
+        "Market growth also leaves room for competing architectures. Some systems will favor raw measurements flowing to a central computer; others will distribute interpretation across intelligent sensors. MOVIA Pro represents a bet that enough applications will benefit from the latter approach to support a repeatable product business."
       ]
     },
     {
-      "heading": "What would make the milestone count",
+      "heading": "The limits remain at the system level",
       "paragraphs": [
-        "MicroVision’s reported move into production gives prospective users a component to evaluate against a real integration problem. The next commercial signal is repeat purchasing for applications where moving perception onto the sensor makes deployment easier.",
-        "The most persuasive evidence would connect that architecture to measured installation effort, reliable operation and manageable maintenance. A compact sensing package has value when it simplifies the working machine over its service life."
+        "MicroVision’s product page lists a 180 degree horizontal and 132 degree vertical field of view, a 10 Hz frame rate, weight below 400 grams and power consumption below 9 watts. Its range specification is 15.1 metres at 10% Lambertian reflectivity in 100 klx sunlight, with detection probability above 90% and false positives per frame below 1%. A separate 19.8 metre figure uses 50% detection probability under the same sunlight and reflectivity conditions.",
+        "Those operating points describe different detection probabilities. They cannot be treated as a single range rating, and neither establishes how a finished machine will behave around people or obstacles.",
+        "Putting perception on the sensor also leaves integration work across timing, data formats, software updates and fault handling. Detection, navigation and stopping behavior remain connected parts of the complete machine.",
+        "NIOSH’s October guidance on construction robotics identifies sensing degradation, communication failures, software changes and unexpected recovery behavior among the hazards associated with increasingly connected machines. Those are system reliability issues that remain relevant as more computing moves into individual components."
+      ]
+    },
+    {
+      "heading": "The next test is revenue",
+      "paragraphs": [
+        "The scale of the opportunity is much larger than MicroVision’s present revenue base. On October 7, the company reaffirmed full year 2026 revenue guidance of $10 million to $15 million and projected revenue would double in 2027. Those are management forecasts for the company as a whole.",
+        "The important evidence now is whether additional production products lead to larger, recurring orders and a stronger revenue base. Growth across several applications would support the diversification argument; dependence on a handful of programs would leave much of the original business risk in place.",
+        "MicroVision’s next scheduled financial results are on October 28. The industry outlook is favorable enough to make the launch worth following: more machines need perception, software is moving closer to sensors, and domestic supply capacity is attracting policy attention. The commercial question is how much of that momentum becomes sustained sales."
       ]
     }
   ],
@@ -118,12 +127,36 @@ export const newsUpdates: NewsUpdate[] = [
       "url": "https://microvision.com/sensors/movia-pro"
     },
     {
+      "label": "MicroVision: November 2025 results and MOVIA S introduction",
+      "url": "https://ir.microvision.com/news/press-releases/detail/434/microvision-announces-third-quarter-2025-results"
+    },
+    {
+      "label": "MicroVision: March 2026 results and December 2025 MOVIA L shipment",
+      "url": "https://ir.microvision.com/sec-filings/all-sec-filings/content/0001493152-26-008862/ex99-1.htm"
+    },
+    {
       "label": "Truck News: September 2 reporting on the earlier MOVIA S production schedule",
       "url": "https://www.trucknews.com/technology/microvision-builds-lidar-portfolio-around-trucking-safety-autonomy/1003221026/"
     },
     {
+      "label": "MicroVision: October 7 commercialization strategy and revenue guidance",
+      "url": "https://ir.microvision.com/news/press-releases/detail/480/microvision-reaffirms-2026-revenue-outlook-outlines"
+    },
+    {
+      "label": "White House: June 6, 2025 executive order, especially section 7 on the domestic drone industrial base",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/06/unleashing-american-drone-dominance/"
+    },
+    {
+      "label": "Grand View Research: June 2026 global lidar market estimate and forecast, with report scope",
+      "url": "https://www.grandviewresearch.com/industry-analysis/lidar-light-detection-and-ranging-market"
+    },
+    {
       "label": "NIOSH: October 7 guidance on safety in construction robotics",
       "url": "https://www.cdc.gov/niosh/bulletin/2026/safety-in-construction-robotics.html"
+    },
+    {
+      "label": "MicroVision: investor relations calendar and October 28 results date",
+      "url": "https://ir.microvision.com/"
     }
   ],
   "taxonomy": {
@@ -138,7 +171,8 @@ export const newsUpdates: NewsUpdate[] = [
       "edge-ai"
     ],
     "applications": []
-  }
+  },
+  "modifiedAt": "2026-10-25T20:50:59+00:00"
 },
 {
   "slug": "stop-beijings-bots-act-pentagon-robotics",
