@@ -34,6 +34,108 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "stop-beijings-bots-act-pentagon-robotics",
+  "title": "A House bill would push China linked robots out of Pentagon contracts",
+  "summary": "The Stop Beijing’s Bots Act proposes restrictions on Pentagon procurement, leasing and operation of specified robotic systems. Its deadlines would begin at enactment, and it is not a commercial robot ban.",
+  "category": "Policy",
+  "publishedDate": "2026-10-25",
+  "publishedAt": "2026-10-25T13:19:26+00:00",
+  "publishedLabel": "October 25, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/stop-beijings-bots-act-pentagon-robotics.png",
+  "imageAlt": "Engraved editorial illustration of a small quadruped robot approaching an open pentagonal gateway.",
+  "imageCaption": "Editorial illustration by Black Scarab, created with AI to interpret proposed defense procurement screening.",
+  "readingTime": "5 min read",
+  "keyPoints": [
+    "H.R. 10860 was introduced on October 22 and referred to the House Armed Services Committee.",
+    "The proposal covers specified robots, lidar components and equipment or services that include covered systems.",
+    "Procurement, sensitive operations and existing systems would face different deadlines after enactment."
+  ],
+  "sections": [
+    {
+      "heading": "What the bill would change",
+      "paragraphs": [
+        "A House bill introduced on October 22 would restrict Defense Department purchases, leases and operation of certain China linked robotic systems, including quadrupeds, unmanned ground vehicles and specified lidar components.",
+        "Representative Sheri Biggs of South Carolina introduced the Stop Beijing’s Bots Act, H.R. 10860. It was referred to the House Armed Services Committee. The measure proposes defense procurement restrictions; it has not become law and would not create a general ban on commercial robot sales or imports.",
+        "The commercial issue reaches beyond where a finished robot is assembled. The text addresses equipment and services that contain covered systems, gives corporate ownership a role in some coverage decisions and sets different transition periods for new procurement and existing operations.",
+        "Biggs announced the proposal alongside separate cellular module and biotechnology bills. Her office says the standalone measures build on earlier defense authorization amendments and related legislation. She frames them as a response to risks from China’s integration of commercial technology into military capabilities."
+      ]
+    },
+    {
+      "heading": "Which robots and sensors it covers",
+      "paragraphs": [
+        "The sponsor’s bill text identifies quadrupedal robotic platforms produced by entities incorporated in China. It also includes wheeled and tracked unmanned ground vehicles produced by entities incorporated there. These are explicit equipment categories in the proposal.",
+        "Lidar follows a different test. The text covers sensors and modules produced by entities on the U.S. Entity List or identified in intelligence community reports as contributing to China’s sensing and targeting capabilities. Lidar measures distance with light and helps machines perceive their surroundings. The proposed language does not treat every Chinese lidar supplier as automatically covered.",
+        "A further provision would let the Defense Secretary identify additional systems or subcomponents. Its criteria address technology from covered Chinese entities, unacceptable national security risks involving sensitive data or remote exploitation, contributions to the Chinese military robotics ecosystem, and intelligence findings about risks in sensitive environments.",
+        "The definition of a covered Chinese entity reaches beyond a business incorporated in China. It includes entities based or organized there, businesses in which the specified foreign persons directly or indirectly own at least a 20% stake, and entities subject to their direction or control. That makes the ownership chain relevant alongside the supplier’s trading name."
+      ]
+    },
+    {
+      "heading": "The contract can include the robot",
+      "paragraphs": [
+        "The procurement provision covers both a covered robotic system and equipment or a service that includes one. That distinction matters for integrators selling inspection, security or other operating services rather than delivering a standalone machine.",
+        "For example, a hypothetical inspection service that uses a covered robot could still fall within the proposed procurement restriction. Bundling the machine into a larger contract would not, by itself, resolve the eligibility question. The configuration and the applicable coverage criteria would matter.",
+        "Black Scarab’s assessment is that the practical preparation would be a more detailed account of the supplied system: who makes the platform, where relevant sensors come from, which entities control the technology and how remote access is managed. A product’s performance specification alone would not answer those questions."
+      ]
+    },
+    {
+      "heading": "One, two and three year transitions",
+      "paragraphs": [
+        "All of the proposal’s transition periods run from enactment.",
+        "No later than one year after enactment, the Defense Secretary would be prohibited from entering into or renewing contracts for the specified procurement. A separate restriction on Defense Department funding for leases or operations would take effect after one year for new leases.",
+        "No later than two years after enactment, Defense Department elements would be prohibited from operating covered systems in sensitive operational environments. The funding restriction would take effect after three years for continued operation of covered systems already in service.",
+        "The separate deadlines give existing operations a different transition path from new purchases. If enacted, that could require planning for replacement equipment, integration work and service changes while missions continue. The two year sensitive environment provision would still need to be considered alongside the three year funding provision."
+      ]
+    },
+    {
+      "heading": "Waivers would require a replacement plan",
+      "paragraphs": [
+        "The text permits waivers of the procurement and sensitive operation prohibitions for renewable periods of up to 180 days. Its stated waiver authority refers to those two provisions, rather than the separate funding restriction.",
+        "The conditions include no currently available technically acceptable alternative, a system essential to an ongoing critical mission, an undue replacement cost burden and measures to mitigate security risks. The system would also have to be unable to transfer data to or download data from a covered foreign entity, with a determination that it posed no national security cybersecurity risk.",
+        "Within 30 days of a waiver, the Secretary would have to notify congressional defense committees of the system, justification, mitigation measures and the plan and timetable for removal and replacement. A waiver would therefore come with a documented route toward another system."
+      ]
+    },
+    {
+      "heading": "What suppliers should watch next",
+      "paragraphs": [
+        "The proposal calls for annual reviews of the covered system definition and of Chinese entities operating in the United States that produce or sell covered robotic systems. The latter review would assess inclusion on the military company list maintained under section 1260H of the fiscal 2021 defense authorization law. Congress would receive notice at least 30 days before changes to that list.",
+        "For suppliers outside the covered scope, tighter defense eligibility could create opportunities to replace platforms or components. Winning that business would still depend on meeting mission requirements, integrating with existing equipment and making replacement economically workable.",
+        "The next concrete signals are committee action, revisions to the definitions and progress toward passage. The bill’s introduction gives defense robotics suppliers a specific screening framework to examine while those legislative decisions remain ahead."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Representative Sheri Biggs: October 22 announcement and links to the three separate bills",
+      "url": "https://sheribiggs.house.gov/media/press-releases/congresswoman-sheri-biggs-fights-keep-chinese-technology-out-americas-defense"
+    },
+    {
+      "label": "Stop Beijing’s Bots Act: sponsor linked legislative text, sections 2(a) through 2(f)",
+      "url": "https://sheribiggs.house.gov/sites/evo-subsites/sheribiggs.house.gov/files/evo-media-document/biggsc_robotics-systems.pdf"
+    },
+    {
+      "label": "Congressional Record: October 22 introduction and committee referral for H.R. 10860",
+      "url": "https://www.govinfo.gov/content/pkg/CREC-2026-10-22/pdf/CREC-2026-10-22-pt1-PgH6053-7.pdf"
+    },
+    {
+      "label": "Congress.gov: H.R. 10860 legislative record",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10860"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "defense-aerospace",
+    "technologies": [
+      "quadruped-robotics",
+      "sensors",
+      "robotics"
+    ],
+    "applications": []
+  }
+},
+{
   "slug": "fanuc-sales-forecast-robot-demand",
   "title": "FANUC raises its sales forecast to $6.46 billion as robot demand broadens",
   "summary": "FANUC’s October 23 results show growth across robots, machine controls, production equipment and service. Its revised outlook implies annual revenue of about $6.46 billion for the year ending March 2027.",
@@ -917,7 +1019,7 @@ export const newsUpdates: NewsUpdate[] = [
   slug: "china-ai-technology-export-registration-proposed-controls",
   "title": "China starts export registration for listed AI technology as wider controls enter consultation",
   "summary": "China’s October 16 notice activates registration for specified technology transfers while proposed catalogue restrictions remain open for consultation through November 15.",
-  "category": "Technology export policy",
+  "category": "Policy",
   "publishedDate": "2026-10-17",
   "publishedAt": "2026-10-17T16:38:22.932Z",
   "publishedLabel": "October 17, 2026",
@@ -2138,7 +2240,7 @@ export const newsUpdates: NewsUpdate[] = [
   slug: "fcc-covered-components-equipment-authorization-october-13",
   "title": "FCC component restrictions take effect, bringing supply chains into the authorization test",
   "summary": "A final FCC rule takes effect today that can block new equipment authorizations when a device contains certain logic bearing hardware made by an entity on the agency’s Covered List.",
-  "category": "Equipment authorization",
+  "category": "Policy",
   "publishedDate": "2026-10-13",
   "publishedAt": "2026-10-13T15:09:56-04:00",
   "publishedLabel": "October 13, 2026",

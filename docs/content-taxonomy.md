@@ -64,3 +64,7 @@ The remote release inventory includes two already published reports absent from 
 | Bonsai World puts the next farm inside a simulator before the robot arrives | Agriculture |
 
 RobCo is classified by its factory automation story. Bonsai World is classified by its agricultural autonomy deployment focus; prospective mining and defense markets are not assigned as secondary industries. Article content and metadata remain unchanged.
+
+## Policy reporting label
+
+User preference, October 25, 2026: Legislative, regulatory and government policy News reports use `category: "Policy"` in their existing display field. This editorial label is separate from the controlled industry, technology and application taxonomy. The October 25 Pentagon robotics bill report uses Defense & Aerospace as its primary industry. The existing China technology export and FCC equipment authorization News reports also use the Policy display label.

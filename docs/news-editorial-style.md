@@ -47,3 +47,7 @@ Before publishing, verify the canonical URL, NewsArticle structured data, social
 ## Article hyperlink restraint
 
 User preference, October 6, 2026: For all future News reports and Insights deep dives, put research and citation hyperlinks in a Sources section at the bottom. Keep the article body free of routine citation links. Use a body hyperlink only when it is essential for the reader to take a specific action or access an indispensable resource; use such exceptions sparingly. Preserve clear attribution in prose and keep the supporting evidence in the source list and research records. Do not append a linked source label to each paragraph.
+
+## Policy label
+
+User preference, October 25, 2026: Use **Policy** as the visible category label for legislative, regulatory and government policy News reports. Preserve the article's industry, technology and application taxonomy independently. State the measure's actual legal stage in the reporting and summary.
