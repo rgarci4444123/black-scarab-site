@@ -154,8 +154,8 @@ export default function HomePage() {
     },
     {
       eyebrow: "Latest podcast",
-      title: "Google’s Robot Training + Warehouse Robots + Automated Homebuilding",
-      href: "https://open.spotify.com/episode/28mJB4TkJiHcOIOTUe1Ko4",
+      title: "Encord’s Robot Data + Dream’s $3-an-Hour Robot Brain + Factory Cleaning Robots",
+      href: "https://open.spotify.com/episode/20JVWqFEqguHboboi3TNG1",
       image: "/images/podcast/black-scarab-physical-ai-weekly-homepage.jpg",
       imageAlt: "Black Scarab Physical AI Weekly podcast cover",
       cta: "Listen on Spotify",
