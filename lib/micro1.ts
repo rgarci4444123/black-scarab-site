@@ -42,9 +42,10 @@ export const micro1DeepDive = (): CaseStudyArticle => ({
   referral: {
     url: micro1SelectedOpportunities,
     label: "Company data opportunities",
-    title: "Could your company's workflows become a new revenue source?",
-    description: "Explore micro1's Enterprise Data Partnership and Commercial Video Data Collection programs and tell its team about your company.",
-    buttonLabel: "Explore company opportunities",
+    title: "Turn your business data into revenue",
+    description: "Start a company application with micro1 to explore a paid partnership for your business records or commercial video.",
+    buttonLabel: "Get paid for your company’s data",
+    analyticsVersion: "micro1-data-revenue-v1",
     disclosure,
   },
   sections: [

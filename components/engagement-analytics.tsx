@@ -24,6 +24,11 @@ export function EngagementAnalytics() {
       "utm_content",
     ] as const;
 
+    const referralProperties = (link: HTMLAnchorElement) => ({
+      placement: link.dataset.referralPlacement ?? "unknown",
+      cta_version: link.dataset.referralVersion ?? "baseline",
+    });
+
     const handleClick = (event: MouseEvent) => {
       const target = event.target;
 
@@ -34,6 +39,11 @@ export function EngagementAnalytics() {
       const link = target.closest<HTMLAnchorElement>("a[href]");
 
       if (!link) {
+        return;
+      }
+
+      if (link.dataset.analyticsEvent === "referral-cta") {
+        track("Referral CTA Click", referralProperties(link));
         return;
       }
 
@@ -82,6 +92,16 @@ export function EngagementAnalytics() {
       }
     };
 
+    const handleAuxClick = (event: MouseEvent) => {
+      if (
+        event.button === 1 &&
+        event.target instanceof Element &&
+        event.target.closest("a[data-analytics-event='referral-cta']")
+      ) {
+        handleClick(event);
+      }
+    };
+
     const handleSubmit = (event: SubmitEvent) => {
       const target = event.target;
 
@@ -97,7 +117,32 @@ export function EngagementAnalytics() {
     };
 
     document.addEventListener("click", handleClick);
+    document.addEventListener("auxclick", handleAuxClick);
     document.addEventListener("submit", handleSubmit);
+
+    const viewedReferralLinks = new Set<Element>();
+    const referralObserver = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (
+            !entry.isIntersecting ||
+            entry.intersectionRatio < 0.5 ||
+            viewedReferralLinks.has(entry.target)
+          ) {
+            continue;
+          }
+
+          viewedReferralLinks.add(entry.target);
+          track("Referral CTA View", referralProperties(entry.target as HTMLAnchorElement));
+          referralObserver.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.5 },
+    );
+
+    document
+      .querySelectorAll<HTMLAnchorElement>("a[data-analytics-event='referral-cta']")
+      .forEach((link) => referralObserver.observe(link));
 
     const trackedCtas = new Set<string>();
     const ctaObserver = new IntersectionObserver(
@@ -135,7 +180,9 @@ export function EngagementAnalytics() {
 
     return () => {
       document.removeEventListener("click", handleClick);
+      document.removeEventListener("auxclick", handleAuxClick);
       document.removeEventListener("submit", handleSubmit);
+      referralObserver.disconnect();
       ctaObserver.disconnect();
     };
   }, [pathname]);

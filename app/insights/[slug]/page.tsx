@@ -388,7 +388,10 @@ export default async function CaseStudyPage({ params }: Props) {
                   href={article.referral.url}
                   target="_blank"
                   rel="sponsored noreferrer"
-                  className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#edf4e8] px-6 py-3 text-sm font-semibold text-[#111827] transition hover:bg-white"
+                  data-analytics-event="referral-cta"
+                  data-referral-placement="article_top"
+                  data-referral-version={article.referral.analyticsVersion ?? "baseline"}
+                  className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#edf4e8] px-6 py-3 text-center text-sm font-semibold text-[#111827] transition hover:bg-white"
                 >
                   {article.referral.buttonLabel ?? "Access the Marketplace"}
                 </a>
@@ -633,6 +636,9 @@ export default async function CaseStudyPage({ params }: Props) {
                             key={link.href}
                             href={link.href}
                             rel={link.sponsored ? "sponsored noreferrer" : undefined}
+                            data-analytics-event={link.sponsored ? "referral-cta" : undefined}
+                            data-referral-placement={link.sponsored ? link.href === article.referral?.url ? "article_end_primary" : "article_end_additional" : undefined}
+                            data-referral-version={link.sponsored ? article.referral?.analyticsVersion ?? "baseline" : undefined}
                             className="rounded-[18px] border border-[#e1ddd2] bg-[#fffdfa] p-5 shadow-[0_12px_28px_rgba(17,24,39,0.05)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(17,24,39,0.08)]"
                           >
                             <p className="text-sm font-semibold text-[#111827]">

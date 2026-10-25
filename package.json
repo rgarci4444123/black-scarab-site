@@ -14,7 +14,8 @@
     "validate:news-social-images": "node scripts/validate-news-social-images.mjs",
     "submit:indexnow": "node scripts/submit-indexnow.mjs",
     "validate:content-taxonomy": "node scripts/validate-content-taxonomy.mjs",
-    "test:content-taxonomy": "node --test scripts/content-taxonomy.test.mjs"
+    "test:content-taxonomy": "node --test scripts/content-taxonomy.test.mjs",
+    "test:referral-analytics": "node --test scripts/referral-analytics.test.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

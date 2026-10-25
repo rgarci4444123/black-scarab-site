@@ -362,6 +362,7 @@ export type CaseStudyArticle = {
     description: string;
     label?: string;
     buttonLabel?: string;
+    analyticsVersion?: string;
     disclosure?: string;
   };
 };
