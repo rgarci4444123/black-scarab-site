@@ -48,7 +48,7 @@ export const newsUpdates: NewsUpdate[] = [
   "image": "/images/news/stop-beijings-bots-act-pentagon-robotics.png",
   "imageAlt": "Engraved editorial illustration of a small quadruped robot approaching an open pentagonal gateway.",
   "imageCaption": "Editorial illustration by Black Scarab, created with AI to interpret proposed defense procurement screening.",
-  "readingTime": "5 min read",
+  "readingTime": "6 min read",
   "keyPoints": [
     "H.R. 10860 was introduced on October 22 and referred to the House Armed Services Committee.",
     "The proposal covers specified robots, lidar components and equipment or services that include covered systems.",
@@ -62,6 +62,15 @@ export const newsUpdates: NewsUpdate[] = [
         "Representative Sheri Biggs of South Carolina introduced the Stop Beijing’s Bots Act, H.R. 10860. It was referred to the House Armed Services Committee. The measure proposes defense procurement restrictions; it has not become law and would not create a general ban on commercial robot sales or imports.",
         "The commercial issue reaches beyond where a finished robot is assembled. The text addresses equipment and services that contain covered systems, gives corporate ownership a role in some coverage decisions and sets different transition periods for new procurement and existing operations.",
         "Biggs announced the proposal alongside separate cellular module and biotechnology bills. Her office says the standalone measures build on earlier defense authorization amendments and related legislation. She frames them as a response to risks from China’s integration of commercial technology into military capabilities."
+      ]
+    },
+    {
+      "heading": "How this differs from the FCC restrictions",
+      "paragraphs": [
+        "The proposal is narrower in market reach than the FCC’s robotics restrictions, but could be tougher on Pentagon purchases and continued use. FCC authorization and eligibility for a defense contract are separate questions.",
+        "The FCC’s July 28 action blocks new equipment authorizations for covered foreign produced advanced robotic devices, subject to conditional approvals. Its scope extends beyond China. Existing models that already received authorization can generally continue to be imported, marketed, sold and used under their existing authorizations.",
+        "The FCC already scrutinizes components, too. Its separate rule effective October 13 restricts new authorizations for devices containing certain logic bearing hardware from named Covered List producers, where the producer’s listing would also bar the finished device. That rule preserves previously authorized equipment. The bill uses different coverage tests, including Chinese incorporated robot producers, specified lidar suppliers and additional systems or components identified by the Defense Secretary.",
+        "The bill would add restrictions on procurement contracts, bundled equipment and services, and defense operations involving covered systems. For a hypothetical robot model that already holds FCC authorization, sales to a factory could remain lawful while a new Pentagon contract and later Pentagon funded operation become prohibited if the bill becomes law and covers that system. Existing FCC authorization would not, by itself, settle the defense purchasing or operating question."
       ]
     },
     {
@@ -123,6 +132,18 @@ export const newsUpdates: NewsUpdate[] = [
     {
       "label": "Congress.gov: H.R. 10860 legislative record",
       "url": "https://www.congress.gov/bill/119th-congress/house-bill/10860"
+    },
+    {
+      "label": "FCC: July 28 addition of foreign produced advanced robotic devices to the Covered List, DA 26-786",
+      "url": "https://docs.fcc.gov/public/attachments/DA-26-786A1.pdf"
+    },
+    {
+      "label": "FCC: guidance on new authorizations and previously authorized robot models",
+      "url": "https://www.fcc.gov/covered-list-faqs-robots-inverters"
+    },
+    {
+      "label": "Federal Register: FCC component rule effective October 13, including treatment of previously authorized equipment",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-11/html/2026-18535.htm"
     }
   ],
   "taxonomy": {
@@ -133,7 +154,8 @@ export const newsUpdates: NewsUpdate[] = [
       "robotics"
     ],
     "applications": []
-  }
+  },
+  "modifiedAt": "2026-10-25T13:41:05+00:00"
 },
 {
   "slug": "fanuc-sales-forecast-robot-demand",
