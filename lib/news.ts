@@ -34,6 +34,97 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "honeywell-forge-plant-cognition-dangote",
+  "title": "Honeywell launches refinery AI platform with NVIDIA and Dell at Dangote",
+  "summary": "Forge Plant Cognition will combine operating data, process expertise and AI at Dangote’s Lekki refinery. Honeywell projects more than $60 million in annual gross operational benefits at full capacity.",
+  "category": "Industrial AI",
+  "publishedDate": "2026-10-26",
+  "publishedAt": "2026-10-26T17:49:47+00:00",
+  "publishedLabel": "October 26, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/honeywell-forge-plant-cognition-dangote.png",
+  "imageAlt": "A petrol blue sculptural process network aligns with an elevated translucent counterpart above a coral surface.",
+  "imageCaption": "Editorial illustration by Black Scarab, created with AI to interpret physical processes and their digital counterparts.",
+  "readingTime": "3 min read",
+  "keyPoints": [
+    "Honeywell launches Forge Plant Cognition first at Dangote’s Lekki refinery, using NVIDIA technology and Dell infrastructure.",
+    "Honeywell projects more than $60 million in annual gross operational benefits at full capacity, before implementation costs.",
+    "The platform extends an existing relationship covering process technology, monitoring and operator training."
+  ],
+  "sections": [
+    {
+      "heading": "What happened",
+      "paragraphs": [
+        "Honeywell Technologies announced Forge Plant Cognition on October 26, an industrial AI platform built with NVIDIA technology and Dell Technologies infrastructure, starting at Dangote’s petroleum refinery in Lekki, Nigeria.",
+        "The platform combines operating data, engineering knowledge and Honeywell UOP’s process expertise to help refinery teams identify bottlenecks, anticipate equipment problems and improve production decisions. Honeywell is targeting refining, petrochemicals and liquefied natural gas operations.",
+        "At Dangote, Honeywell estimates the technology could deliver more than 29 cents a barrel in operational benefits, translating into more than $60 million a year at full capacity. That is a preliminary, facility specific projection before implementation costs. Actual results depend on operating conditions, utilization, crude inputs and product margins, among other factors."
+      ]
+    },
+    {
+      "heading": "What the platform does",
+      "paragraphs": [
+        "Forge Plant Cognition builds on the broader Forge Cognition platform Honeywell introduced earlier this month. The approach brings AI agents and digital twins into existing industrial operations, giving teams tools to interpret information and evaluate possible changes.",
+        "The technologies have different jobs. NVIDIA Nemotron models support agents that interpret operational data. Omniverse libraries help create digital representations for simulation and planning. Cosmos models and NVIDIA’s video analytics blueprint support visual alerts and anomaly detection. PhysicsNeMo provides a framework for developing models that combine physical knowledge with data.",
+        "Dell AI Factory with NVIDIA supplies the infrastructure, supported by Dell Services. Honeywell contributes the process knowledge needed to connect those capabilities to how a refinery operates."
+      ]
+    },
+    {
+      "heading": "Building on an existing relationship",
+      "paragraphs": [
+        "This follows earlier digital work at Dangote. In April, Honeywell announced connected services and performance monitoring across several of the refinery’s core processing units, combining Forge tools with support from UOP specialists.",
+        "That agreement also included operator training simulators built using digital twins of Dangote’s facilities. The new platform adds AI capabilities to a relationship that already covers process technology, operational guidance and workforce training.",
+        "Honeywell is separately supporting plans to expand the refinery’s capacity from 650,000 to 1.4 million barrels a day. The AI rollout sits alongside that larger industrial project, with its contribution focused on improving operating performance."
+      ]
+    },
+    {
+      "heading": "Black Scarab’s view",
+      "paragraphs": [
+        "The launch fits a pattern we have followed in Caterpillar’s collaboration with FieldAI: industrial companies are combining AI capabilities with their equipment knowledge, operating data and existing customer relationships. Caterpillar’s effort includes robots and inspection; Honeywell’s starts with refinery processes. The common thread is intelligence being added around assets already doing useful work. Our reading is that a meaningful part of the next phase of physical AI could come through these established industrial channels. Dangote provides a concrete test, with sustained improvements in production and reliability the results to watch."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Honeywell’s Forge Plant Cognition announcement, October 26",
+      "url": "https://www.honeywell.com/us/en/news/press-releases/2026/10/honeywell-technologies-launches-forge-plant-cognition-with-dangote-built-with-ndivia-ai-dell-technologies"
+    },
+    {
+      "label": "Honeywell’s Forge Cognition platform launch, October 14",
+      "url": "https://www.honeywell.com/us/en/news/press-releases/2026/10/honeywell-technologies-launches-forge-cognition-with-nvidia-and-dell-technologies-advancing-physical-ai-across-buildings-and-industrial-operations"
+    },
+    {
+      "label": "Honeywell’s earlier services and training agreement with Dangote, April 9",
+      "url": "https://www.honeywell.com/us/en/news/press-releases/2026/04/honeywell-to-help-boost-fuel-production-and-enhance-workforce-capabilities-at-dangote-refinery"
+    },
+    {
+      "label": "NVIDIA PhysicsNeMo documentation",
+      "url": "https://docs.nvidia.com/physicsnemo/latest/overview.html"
+    },
+    {
+      "label": "Caterpillar’s FieldAI collaboration announcement, September 2",
+      "url": "https://www.caterpillar.com/en/news/corporate-press-releases/h/caterpillar-and-fieldai-advance-ai-powered-industrial-innovation.html"
+    },
+    {
+      "label": "Reuters coverage via ETEnterpriseAI",
+      "url": "https://enterpriseai.economictimes.indiatimes.com/news/industry/honeywell-technologies-launches-new-ai-platform-at-dangotes-nigeria-refinery/135208753"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "energy-utilities",
+    "relevantIndustries": [],
+    "technologies": [
+      "digital-twins",
+      "simulation",
+      "computer-vision",
+      "foundation-models"
+    ],
+    "applications": []
+  }
+},
+{
   "slug": "microvision-movia-pro-production",
   "title": "MicroVision starts MOVIA Pro production, putting more perception inside the sensor",
   "summary": "MicroVision reports production and shipping of MOVIA Pro from Orlando. The launch advances its commercialization push as US policy favors domestic drone supply chains and lidar expands across industrial and autonomous systems.",
