@@ -34,6 +34,143 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "bedrock-robotics-600m-driverless-excavation",
+  "title": "Bedrock Robotics raises $600 million to scale driverless excavation on U.S. sites",
+  "summary": "CapitalG and Emergence Capital lead a Series C at a $4.1 billion valuation as Bedrock expands beyond its first paid autonomous excavator deployments.",
+  "category": "Autonomous construction",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "imageAlt": "Painterly illustration of an excavator shaping terraced ochre ground, with violet shadows and blue contour lines across its work area.",
+  "imageCaption": "Editorial illustration by Black Scarab, created with AI to interpret autonomous excavation.",
+  "readingTime": "5 min read",
+  "keyPoints": [
+    "Bedrock announced a $600 million Series C at a $4.1 billion post money valuation on October 26.",
+    "The financing follows paid autonomous excavation that Bedrock says began on commercial sites in August.",
+    "Haydon is the latest contractor partner, with a Texas earthwork deployment and plans to test additional applications."
+  ],
+  "sections": [
+    {
+      "heading": "A larger round for the next stage",
+      "paragraphs": [
+        "Bedrock Robotics has raised $600 million to expand autonomous construction equipment across U.S. job sites, following its first paid excavator deployments this summer.",
+        "The San Francisco company announced the Series C on October 26 at a $4.1 billion post money valuation. CapitalG and Emergence Capital led the financing together, bringing total funding to nearly $1 billion, according to Bedrock.",
+        "New investors include US Innovative Technology Fund, Bessemer Venture Partners and Temasek. Returning participants include 8VC, Georgian, Valor Equity Partners, Xora, Eclipse, Perry Creek Capital and NVIDIA, the company said.",
+        "The financing follows a $270 million Series B announced in February at a $1.75 billion valuation. The new valuation is approximately 2.3 times that earlier level, calculated from the two announced figures. Investors are assigning substantially more value to the business as it moves into commercial deployment."
+      ]
+    },
+    {
+      "heading": "The driverless milestone came in August",
+      "paragraphs": [
+        "Bedrock announced its first fully autonomous excavator deployments on August 17. It identified a Nevada water treatment project with Sundt Construction, an earthwork site with Champion Site Prep in Texas, and a civil sitework project with Zachry Construction Corporation.",
+        "The Zachry deployment is part of a civil sitework project involving 1.2 million cubic yards of earthmoving.",
+        "Emergence describes an excavator digging to grade and loading dump trucks for a full shift at the Nevada site with nobody in the cab. Bessemer separately says its team watched two Caterpillar 352 excavators working without cab operators near Austin earlier this fall. Both accounts come from investors in Bedrock.",
+        "These examples put the technology inside an existing construction workflow, where excavators and crews have to coordinate productive work. The next test is whether the company can repeat that performance across a growing customer base."
+      ]
+    },
+    {
+      "heading": "An autonomy kit for existing machinery",
+      "paragraphs": [
+        "Bedrock’s product, the Bedrock Operator, adds sensors, computing and machine intelligence to equipment contractors already own. The company describes installation within a day, with no permanent changes to the machine.",
+        "A site manager sets the initial plan. Bedrock says its machine learning system then perceives the surroundings, plans movement and controls the excavator’s work. Its technology page also describes progress and performance information that teams can use to track a project.",
+        "Bessemer says the retrofit is reversible and sees compatibility with mixed equipment fleets as central to the approach. It also describes a visibility layer that reports cycle times, productivity and safety events for equipment that has yet to become autonomous.",
+        "The commercial logic is straightforward: contractors can add capability to a familiar asset. The deployment work still has to connect that capability to the machine, the task and the way the site operates. A successful retrofit therefore includes more than installing a box."
+      ]
+    },
+    {
+      "heading": "Haydon adds another route into the field",
+      "paragraphs": [
+        "The latest announcement names Haydon as a new deployment partner for autonomous earthwork at a remote Texas site. The contractor plans to expand its use of machines equipped with Bedrock’s system and test trench work and larger machine models as the partnership develops.",
+        "Those additional applications remain plans. Earthmoving, trenching and coordinating several machine types each introduce different operating demands, so progress in one task needs its own evidence before being extended to the others.",
+        "Bedrock’s stated use of the new capital includes field operations and the commercial infrastructure needed to support more deployments. CapitalG frames the longer term ambition as an operating layer that could coordinate excavators, bulldozers and haul trucks around a project’s goals.",
+        "For now, expanding the number of contractors using the excavator system is a more immediate measure of execution. Each additional site tests whether installation, training, maintenance and support can become repeatable parts of the business."
+      ]
+    },
+    {
+      "heading": "Construction capacity is the business case",
+      "paragraphs": [
+        "A workforce survey released in September by the Associated General Contractors of America and NCCER helps explain the demand. Among respondents, 87 percent reported openings for hourly craft positions. Of firms with those openings, 88 percent said the jobs were as hard or harder to fill than a year earlier.",
+        "The survey was conducted in July and August and received responses from 1,830 individuals. It also found a mixed construction market: some firms had reduced headcount even while many continued to struggle to recruit. Labor pressure and project demand vary across the industry.",
+        "Where equipment and project opportunities are available but experienced operators are scarce, autonomous excavation could help a crew complete more work with the assets it already has.",
+        "Earthwork also sits early in a construction schedule. Reliable progress there can make subsequent work easier to plan. That is the potential business value behind the investment, with the size of the benefit depending on how the machine performs inside the whole project."
+      ]
+    },
+    {
+      "heading": "Reliability has to hold across the site",
+      "paragraphs": [
+        "Bedrock says its excavators stop automatically when a person or unauthorized object enters too close to the machine, then wait for the area to clear.",
+        "The practical performance measures extend beyond a productive digging cycle. Sustained operating hours, recovery after interruptions, support requirements and coordination with trucks all affect how much useful work a site gets from autonomy.",
+        "The investor accounts illustrate that distinction. Bessemer’s excavator was loading a truck driven by a person. Automating the excavator changes one part of the workflow; the pace of the operation also depends on the truck arriving, being positioned and leaving safely.",
+        "Our reading is that the field organization will be as consequential as further model improvements. A system that works reliably across changing sites needs deployment teams and support processes capable of keeping it productive as the customer footprint expands."
+      ]
+    },
+    {
+      "heading": "Black Scarab’s view",
+      "paragraphs": [
+        "The significant change is the combination of substantial new financing and named commercial work. Bedrock has a retrofit approach, contractor relationships and investor accounts of excavation without a cab operator. Those give the expansion a concrete starting point.",
+        "The $4.1 billion valuation also raises the commercial bar. The business now needs to demonstrate that it can expand installations while delivering dependable service and useful output across more sites.",
+        "The signals to watch are repeat deployments with existing contractors, sustained machine utilization and documented progress into additional tasks. Excavators have started doing paid work autonomously. Building a dependable operation around that capability is the next stage."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Bedrock Robotics Series C announcement, October 26, 2026",
+      "url": "https://www.globenewswire.com/news-release/2026/10/26/3388197/0/en/bedrock-robotics-raises-600-million-series-c-to-scale-autonomous-construction-equipment-across-u-s-sites.html"
+    },
+    {
+      "label": "Bedrock Robotics autonomous deployment announcement, August 17, 2026",
+      "url": "https://www.globenewswire.com/news-release/2026/08/17/3346247/0/en/bedrock-robotics-launches-first-fully-autonomous-excavator-deployments-on-critical-u-s-infrastructure-projects.html"
+    },
+    {
+      "label": "Bedrock Robotics technology overview",
+      "url": "https://bedrockrobotics.com/technology"
+    },
+    {
+      "label": "Bedrock Robotics Series B announcement, February 4, 2026",
+      "url": "https://www.prnewswire.com/news-releases/bedrock-robotics-raises-270-million-in-series-b-funding-to-accelerate-the-future-of-autonomous-construction-302679014.html"
+    },
+    {
+      "label": "CapitalG investment commentary, October 26, 2026",
+      "url": "https://capitalg.com/insights/doubling-down-on-bedrock/"
+    },
+    {
+      "label": "Emergence Capital investment commentary, October 26, 2026",
+      "url": "https://www.emcap.com/thoughts/built-on-bedrock-doubling-down-on-the-autonomy-platform-for-heavy-construction"
+    },
+    {
+      "label": "Bessemer Venture Partners investment commentary, October 26, 2026",
+      "url": "https://www.bvp.com/news/bedrock-robotics-deploying-autonomous-equipment-for-the-built-world"
+    },
+    {
+      "label": "AGC and NCCER workforce survey findings, September 3, 2026",
+      "url": "https://www.agc.org/news/2026/09/03/construction-workforce-shortages-remain-acute-despite-soft-market-conditions-data-centers-strain"
+    },
+    {
+      "label": "TechCrunch reporting on the financing, October 26, 2026",
+      "url": "https://techcrunch.com/2026/10/26/this-startups-self-driving-excavators-help-dig-up-600m-in-new-funding/"
+    },
+    {
+      "label": "Bloomberg News reporting, syndicated by Equipment Finance News, October 26, 2026",
+      "url": "https://equipmentfinancenews.com/news/construction/autonomous-construction-firm-bedrock-hits-4-1-billion-valuation/"
+    }
+  ],
+  "publishedDate": "2026-10-27",
+  "publishedAt": "2026-10-27T09:36:19-04:00",
+  "publishedLabel": "October 27, 2026",
+  "image": "/images/news/bedrock-robotics-600m-driverless-excavation.png",
+  "taxonomy": {
+    "primaryIndustry": "construction",
+    "relevantIndustries": [],
+    "technologies": [
+      "autonomous-vehicles",
+      "embodied-ai"
+    ],
+    "applications": []
+  }
+},
+{
   "slug": "honeywell-forge-plant-cognition-dangote",
   "title": "Honeywell launches refinery AI platform with NVIDIA and Dell at Dangote",
   "summary": "Forge Plant Cognition will combine operating data, process expertise and AI at Dangote’s Lekki refinery. Honeywell projects more than $60 million in annual gross operational benefits at full capacity.",
