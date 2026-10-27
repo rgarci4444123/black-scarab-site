@@ -17,6 +17,8 @@ import AuthorLinkedIn from "@/components/author-linkedin";
 import EmailSignupCard from "@/components/email-signup-card";
 import ReferralCta from "@/components/referral-cta";
 import { InsightReadTracker } from "@/components/engagement-analytics";
+import RoboticsPartnerCta from "@/components/robotics-partner-cta";
+import { roboticsPartnerArticles } from "@/lib/robotics-partner";
 import LocalAiImplementationCta from "@/components/local-ai-implementation-cta";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
@@ -623,6 +625,9 @@ export default async function CaseStudyPage({ params }: Props) {
                       </div>
                     ) : null}
                     </section>
+                    {Object.hasOwn(roboticsPartnerArticles, article.slug) && roboticsPartnerArticles[article.slug] === section.id ? (
+                      <RoboticsPartnerCta articleSlug={article.slug} />
+                    ) : null}
                     {localAiPlacement?.earlyAfterSection === index ? (
                       <LocalAiImplementationCta
                         articleSlug={article.slug as LocalAiArticleSlug}
