@@ -1,3 +1,5 @@
+import { roboticsPartnerArticles, type ProjectInquiryType } from "@/lib/robotics-partner";
+
 export const localAiArticlePlacements = {
   "local-ai-hobbyist-budget-guide": {
     earlyAfterSection: 2,
@@ -141,8 +143,14 @@ function safeAttributionValue(value: string) {
   return value.trim().replace(/[\r\n]+/g, " ");
 }
 
-export function normalizeLocalAiAttribution(form: LocalAiDeploymentForm) {
-  const articleSlug = Object.hasOwn(localAiArticlePlacements, form.sourceArticle)
+export function normalizeLocalAiAttribution(
+  form: LocalAiDeploymentForm,
+  inquiryType: ProjectInquiryType = "local_ai_implementation",
+) {
+  const articles = inquiryType === "robotics_partner_inquiry"
+    ? roboticsPartnerArticles
+    : localAiArticlePlacements;
+  const articleSlug = Object.hasOwn(articles, form.sourceArticle)
     ? form.sourceArticle
     : "";
   const ctaPlacement =
@@ -169,10 +177,13 @@ export function normalizeLocalAiAttribution(form: LocalAiDeploymentForm) {
 export function airtableFieldsFromLocalAiLead(
   form: LocalAiDeploymentForm,
   submittedAt: string,
+  inquiryType: ProjectInquiryType = "local_ai_implementation",
 ) {
-  const attribution = normalizeLocalAiAttribution(form);
+  const attribution = normalizeLocalAiAttribution(form, inquiryType);
   const context = [
-    "Lead type: Local AI implementation",
+    inquiryType === "robotics_partner_inquiry"
+      ? "Lead type: robotics_partner_inquiry"
+      : "Lead type: Local AI implementation",
     `Source article: ${attribution.sourceArticle || "Direct or unavailable"}`,
     `Source URL: ${attribution.sourceUrl || "Direct or unavailable"}`,
     `Referrer: ${attribution.referrer || "Unavailable"}`,
@@ -197,11 +208,14 @@ export function airtableFieldsFromLocalAiLead(
 export function localAiLeadNotificationText(
   form: LocalAiDeploymentForm,
   submittedAt: string,
+  inquiryType: ProjectInquiryType = "local_ai_implementation",
 ) {
-  const attribution = normalizeLocalAiAttribution(form);
+  const attribution = normalizeLocalAiAttribution(form, inquiryType);
 
   return [
-    "New Local AI implementation inquiry",
+    inquiryType === "robotics_partner_inquiry"
+      ? "New robotics partner inquiry"
+      : "New Local AI implementation inquiry",
     "",
     `Name: ${form.name.trim()}`,
     `Company: ${form.company.trim() || "Not provided"}`,

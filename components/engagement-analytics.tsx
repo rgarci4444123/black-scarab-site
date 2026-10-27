@@ -47,8 +47,9 @@ export function EngagementAnalytics() {
         return;
       }
 
-      if (link.dataset.analyticsEvent === "local-ai-cta") {
-        const cta = link.closest<HTMLElement>("[data-local-ai-cta]");
+      if (link.dataset.analyticsEvent === "local-ai-cta" || link.dataset.analyticsEvent === "robotics-partner-cta") {
+        const robotics = link.dataset.analyticsEvent === "robotics-partner-cta";
+        const cta = link.closest<HTMLElement>(robotics ? "[data-robotics-partner-cta]" : "[data-local-ai-cta]");
         const destination = new URL(link.href);
         const currentParams = new URLSearchParams(window.location.search);
 
@@ -61,7 +62,7 @@ export function EngagementAnalytics() {
         }
 
         link.href = destination.toString();
-        track("local_ai_cta_click", {
+        track(robotics ? "robotics_partner_cta_click" : "local_ai_cta_click", {
           article_url: cta?.dataset.articleUrl ?? window.location.href,
           article_identifier: cta?.dataset.articleIdentifier ?? "unknown",
           cta_placement: cta?.dataset.ctaPlacement ?? "unknown",
@@ -96,7 +97,9 @@ export function EngagementAnalytics() {
       if (
         event.button === 1 &&
         event.target instanceof Element &&
-        event.target.closest("a[data-analytics-event='referral-cta']")
+        ["referral-cta", "local-ai-cta", "robotics-partner-cta"].includes(
+          event.target.closest<HTMLAnchorElement>("a[href]")?.dataset.analyticsEvent ?? "",
+        )
       ) {
         handleClick(event);
       }
@@ -156,14 +159,18 @@ export function EngagementAnalytics() {
           const articleIdentifier =
             cta.dataset.articleIdentifier ?? "unknown";
           const ctaPlacement = cta.dataset.ctaPlacement ?? "unknown";
-          const trackingKey = `${articleIdentifier}:${ctaPlacement}`;
+          const robotics = cta.hasAttribute("data-robotics-partner-cta");
+          if (robotics && entry.intersectionRatio < 0.35) {
+            continue;
+          }
+          const trackingKey = `${robotics ? "robotics" : "local_ai"}:${articleIdentifier}:${ctaPlacement}`;
 
           if (trackedCtas.has(trackingKey)) {
             continue;
           }
 
           trackedCtas.add(trackingKey);
-          track("local_ai_cta_view", {
+          track(robotics ? "robotics_partner_cta_view" : "local_ai_cta_view", {
             article_url: cta.dataset.articleUrl ?? window.location.href,
             article_identifier: articleIdentifier,
             cta_placement: ctaPlacement,
@@ -175,7 +182,7 @@ export function EngagementAnalytics() {
     );
 
     document
-      .querySelectorAll<HTMLElement>("[data-local-ai-cta]")
+      .querySelectorAll<HTMLElement>("[data-local-ai-cta], [data-robotics-partner-cta]")
       .forEach((cta) => ctaObserver.observe(cta));
 
     return () => {

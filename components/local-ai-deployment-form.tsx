@@ -7,6 +7,8 @@ import {
   type LocalAiDeploymentForm,
 } from "@/lib/local-ai-deployment";
 
+import type { ProjectInquiryType } from "@/lib/robotics-partner";
+
 const inputClassName =
   "mt-2 w-full rounded-2xl border border-[#d9d4ca] bg-[#fbfaf7] px-4 py-3.5 text-base text-[#111827] outline-none transition placeholder:text-[#9a9fa5] focus:border-[#718064] focus:bg-white focus:ring-2 focus:ring-[#dce7d2]";
 
@@ -45,7 +47,10 @@ function readAttribution() {
   return attribution;
 }
 
-export default function LocalAiDeploymentForm() {
+export default function LocalAiDeploymentForm({
+  inquiryType = "local_ai_implementation",
+}: { inquiryType?: ProjectInquiryType }) {
+  const robotics = inquiryType === "robotics_partner_inquiry";
   const [form, setForm] = useState<LocalAiDeploymentForm>(
     initialLocalAiDeploymentForm,
   );
@@ -53,6 +58,12 @@ export default function LocalAiDeploymentForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
   const trackedStart = useRef(false);
+
+  const analyticsProperties = () => ({
+    source_article: form.sourceArticle || "direct",
+    ...(robotics ? { article_url: form.sourceUrl || "direct" } : {}),
+    cta_placement: form.ctaPlacement || "direct",
+  });
 
   useEffect(() => {
     setForm((current) => ({ ...current, ...readAttribution() }));
@@ -69,10 +80,7 @@ export default function LocalAiDeploymentForm() {
     }
 
     trackedStart.current = true;
-    track("local_ai_deployment_form_start", {
-      source_article: form.sourceArticle || "direct",
-      cta_placement: form.ctaPlacement || "direct",
-    });
+    track(robotics ? "robotics_partner_form_start" : "local_ai_deployment_form_start", analyticsProperties());
   };
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -80,8 +88,12 @@ export default function LocalAiDeploymentForm() {
     setSubmitError("");
     setIsSubmitting(true);
 
+    if (robotics) {
+      track("robotics_partner_form_submit", analyticsProperties());
+    }
+
     try {
-      const response = await fetch("/api/local-ai/deployment", {
+      const response = await fetch(robotics ? "/api/robotics/partner" : "/api/local-ai/deployment", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -95,10 +107,7 @@ export default function LocalAiDeploymentForm() {
         );
       }
 
-      track("local_ai_deployment_form_submit", {
-        source_article: form.sourceArticle || "direct",
-        cta_placement: form.ctaPlacement || "direct",
-      });
+      track(robotics ? "robotics_partner_form_success" : "local_ai_deployment_form_submit", analyticsProperties());
       setSubmitted(true);
     } catch (error) {
       setSubmitError(
@@ -124,9 +133,9 @@ export default function LocalAiDeploymentForm() {
           Thanks. We&apos;ve received your project.
         </h2>
         <p className="mt-5 max-w-xl text-base leading-8 text-[#626b75]">
-          We&apos;ll review the information you&apos;ve provided. If one of our
-          Local AI implementation partners looks like a good fit, we&apos;ll
-          follow up and make a direct introduction.
+          {robotics
+            ? "We’ll review your project and follow up if there’s a potential fit. Introductions depend on project fit and availability."
+            : "We'll review the information you've provided. If one of our Local AI implementation partners looks like a good fit, we'll follow up and make a direct introduction."}
         </p>
       </div>
     );
@@ -198,13 +207,15 @@ export default function LocalAiDeploymentForm() {
         </div>
 
         <label className="text-sm font-medium">
-          Tell us about your project
+          {robotics ? "Tell us about your robotics project" : "Tell us about your project"}
           <textarea
             value={form.message}
             onChange={(event) => updateField("message", event.target.value)}
             maxLength={4000}
             rows={6}
-            placeholder="What are you trying to accomplish? Share as much or as little detail as you'd like."
+            placeholder={robotics
+              ? "What are you building or looking to accomplish? Tell us a little about your project and where you could use help."
+              : "What are you trying to accomplish? Share as much or as little detail as you'd like."}
             className={`${inputClassName} resize-y`}
             required
           />
