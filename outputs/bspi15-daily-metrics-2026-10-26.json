@@ -1,0 +1,383 @@
+{
+  "date": "2026-10-26",
+  "baseDate": "2026-10-01",
+  "previousDate": "2026-10-23",
+  "level": 923.7297152894073,
+  "previousLevel": 909.9828648644999,
+  "dailyReturn": 0.015106713495044,
+  "sinceLaunch": -0.07627028471059272,
+  "benchmarks": {
+    "S&P 500": {
+      "close": 7676.77,
+      "rebased": 1001.3461249991848,
+      "dailyReturn": 0.006963828492276614,
+      "sinceLaunch": 0.00134612499918485
+    },
+    "Nasdaq Composite": {
+      "close": 26169.3809,
+      "rebased": 973.8677669968068,
+      "dailyReturn": 0.008246515038882185,
+      "sinceLaunch": -0.026132233003193117
+    }
+  },
+  "excessReturns": {
+    "S&P 500": {
+      "daily": 0.008142885002767386,
+      "sinceLaunch": -0.07761640970977757
+    },
+    "Nasdaq Composite": {
+      "daily": 0.0068601984561618146,
+      "sinceLaunch": -0.0501380517073996
+    }
+  },
+  "constituents": [
+    {
+      "ticker": "6954",
+      "company": "FANUC",
+      "baseClose": 6127,
+      "previousClose": 5587,
+      "close": 5639,
+      "relative": 0.9203525379467928,
+      "previousWeight": 0.06680459222621805,
+      "dailyReturn": 0.009307320565598687,
+      "contribution": 0.0006217717551035135,
+      "weight": 0.06642293178139912,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "6506",
+      "company": "Yaskawa Electric",
+      "baseClose": 4779,
+      "previousClose": 4022,
+      "close": 3980,
+      "relative": 0.8328102113412847,
+      "previousWeight": 0.061656740531630255,
+      "dailyReturn": -0.01044256588761805,
+      "contribution": -0.0006438545754173193,
+      "weight": 0.060104898475297895,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "002747",
+      "company": "Estun Automation",
+      "baseClose": 28.22,
+      "previousClose": 29.18,
+      "close": 30.59,
+      "relative": 1.0839829907866763,
+      "previousWeight": 0.07575369211680978,
+      "dailyReturn": 0.04832076764907467,
+      "contribution": 0.003660476555335905,
+      "weight": 0.07823233519825737,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "TER",
+      "company": "Teradyne",
+      "baseClose": 415.79,
+      "previousClose": 308.85,
+      "close": 309,
+      "relative": 0.743163616248587,
+      "previousWeight": 0.054418816433587786,
+      "dailyReturn": 0.00048567265662935455,
+      "contribution": 2.6429731147925756e-05,
+      "weight": 0.053634997622347545,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "6268",
+      "company": "Nabtesco",
+      "baseClose": 4975,
+      "previousClose": 4118,
+      "close": 4140,
+      "relative": 0.8321608040201005,
+      "previousWeight": 0.060641339189069256,
+      "dailyReturn": 0.005342399222923788,
+      "contribution": 0.0003239702433607415,
+      "weight": 0.06005802998043874,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "300124",
+      "company": "Inovance",
+      "baseClose": 51.9,
+      "previousClose": 53.5,
+      "close": 55.25,
+      "relative": 1.0645472061657033,
+      "previousWeight": 0.07551999465624691,
+      "dailyReturn": 0.032710280373831724,
+      "contribution": 0.00247028019903611,
+      "weight": 0.07682963162243316,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "6861",
+      "company": "Keyence",
+      "baseClose": 81200,
+      "previousClose": 78380,
+      "close": 77270,
+      "relative": 0.9516009852216749,
+      "previousWeight": 0.07071715107546367,
+      "dailyReturn": -0.014161775963255963,
+      "contribution": -0.001001480450290442,
+      "weight": 0.06867816919970907,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "CGNX",
+      "company": "Cognex",
+      "baseClose": 62.22,
+      "previousClose": 55.55,
+      "close": 55.63,
+      "relative": 0.8940855030536805,
+      "previousWeight": 0.06540780618478279,
+      "dailyReturn": 0.001440144014401623,
+      "contribution": 9.419666057215639e-05,
+      "weight": 0.06452720878953651,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "OUST",
+      "company": "Ouster",
+      "baseClose": 40.87,
+      "previousClose": 29.69,
+      "close": 29.71,
+      "relative": 0.7269390751162222,
+      "previousWeight": 0.05322076174318484,
+      "dailyReturn": 0.000673627484001349,
+      "contribution": 3.585096782969685e-05,
+      "weight": 0.05246405328918608,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "HSAI",
+      "company": "Hesai",
+      "baseClose": 15.93,
+      "previousClose": 13.13,
+      "close": 13.69,
+      "relative": 0.8593848085373509,
+      "previousWeight": 0.06038436125163888,
+      "dailyReturn": 0.04265041888804255,
+      "contribution": 0.0025754183016692836,
+      "weight": 0.06202281860252474,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "ROK",
+      "company": "Rockwell Automation",
+      "baseClose": 442.45,
+      "previousClose": 426.11,
+      "close": 429.89,
+      "relative": 0.9716126115945305,
+      "previousWeight": 0.07055585407516635,
+      "dailyReturn": 0.008870948816033453,
+      "contribution": 0.000625897370172326,
+      "weight": 0.07012243195620062,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "SIE",
+      "company": "Siemens",
+      "baseClose": 271.9,
+      "previousClose": 256.8,
+      "close": 261.4,
+      "relative": 0.9613828613460831,
+      "previousWeight": 0.06919286895463124,
+      "dailyReturn": 0.01791277258566959,
+      "contribution": 0.001239436126134347,
+      "weight": 0.06938413877518844,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "NXPI",
+      "company": "NXP Semiconductors",
+      "baseClose": 239.19,
+      "previousClose": 234.92,
+      "close": 245.83,
+      "relative": 1.0277603578744932,
+      "previousWeight": 0.0719535953943549,
+      "dailyReturn": 0.046441341733356234,
+      "contribution": 0.003341621512652883,
+      "weight": 0.07417468124879602,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "6383",
+      "company": "Daifuku",
+      "baseClose": 5832,
+      "previousClose": 5199,
+      "close": 5137,
+      "relative": 0.8808299039780522,
+      "previousWeight": 0.0653097210046577,
+      "dailyReturn": -0.011925370263512258,
+      "contribution": -0.0007788426047872269,
+      "weight": 0.06357053651796732,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "HEXA B",
+      "company": "Hexagon",
+      "baseClose": 99.02,
+      "previousClose": 106.05,
+      "close": 109.45,
+      "relative": 1.1053322561098768,
+      "previousWeight": 0.0784627051625575,
+      "dailyReturn": 0.03206034889203213,
+      "contribution": 0.002515541702524244,
+      "weight": 0.07977313694071742,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    }
+  ],
+  "weightTotal": 1,
+  "contributionTotal": 0.015106713495044145,
+  "reconciliationDifference": 1.457167719820518e-16,
+  "topPositive": [
+    {
+      "ticker": "002747",
+      "company": "Estun Automation",
+      "baseClose": 28.22,
+      "previousClose": 29.18,
+      "close": 30.59,
+      "relative": 1.0839829907866763,
+      "previousWeight": 0.07575369211680978,
+      "dailyReturn": 0.04832076764907467,
+      "contribution": 0.003660476555335905,
+      "weight": 0.07823233519825737,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "NXPI",
+      "company": "NXP Semiconductors",
+      "baseClose": 239.19,
+      "previousClose": 234.92,
+      "close": 245.83,
+      "relative": 1.0277603578744932,
+      "previousWeight": 0.0719535953943549,
+      "dailyReturn": 0.046441341733356234,
+      "contribution": 0.003341621512652883,
+      "weight": 0.07417468124879602,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "HSAI",
+      "company": "Hesai",
+      "baseClose": 15.93,
+      "previousClose": 13.13,
+      "close": 13.69,
+      "relative": 0.8593848085373509,
+      "previousWeight": 0.06038436125163888,
+      "dailyReturn": 0.04265041888804255,
+      "contribution": 0.0025754183016692836,
+      "weight": 0.06202281860252474,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    }
+  ],
+  "topNegative": [
+    {
+      "ticker": "6861",
+      "company": "Keyence",
+      "baseClose": 81200,
+      "previousClose": 78380,
+      "close": 77270,
+      "relative": 0.9516009852216749,
+      "previousWeight": 0.07071715107546367,
+      "dailyReturn": -0.014161775963255963,
+      "contribution": -0.001001480450290442,
+      "weight": 0.06867816919970907,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "6383",
+      "company": "Daifuku",
+      "baseClose": 5832,
+      "previousClose": 5199,
+      "close": 5137,
+      "relative": 0.8808299039780522,
+      "previousWeight": 0.0653097210046577,
+      "dailyReturn": -0.011925370263512258,
+      "contribution": -0.0007788426047872269,
+      "weight": 0.06357053651796732,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    },
+    {
+      "ticker": "6506",
+      "company": "Yaskawa Electric",
+      "baseClose": 4779,
+      "previousClose": 4022,
+      "close": 3980,
+      "relative": 0.8328102113412847,
+      "previousWeight": 0.061656740531630255,
+      "dailyReturn": -0.01044256588761805,
+      "contribution": -0.0006438545754173193,
+      "weight": 0.060104898475297895,
+      "sourceDate": "2026-10-26",
+      "carriedForward": false
+    }
+  ],
+  "receiptPath": "data/bspi15/raw/marketstack/2026-10-27T11-26-35-870Z",
+  "auditStatus": "passed",
+  "marketHolidays": [],
+  "carriedForward": [],
+  "approvedProviderMicExceptions": [
+    {
+      "date": "2026-10-26",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "sourceName": "Ouster Inc - Class A",
+      "sourceCurrency": "USD",
+      "expectedMic": "XNAS",
+      "receivedMic": "XNYS",
+      "sourceApi": "v2",
+      "exceptionId": "ouster-marketstack-legacy-nyse-tag",
+      "approvalRecord": "data/bspi15/provider-mic-exceptions.json",
+      "status": "approved-provider-MIC-exception"
+    }
+  ],
+  "corporateActions": {
+    "providerDividends": 0,
+    "providerSplitFlags": 0,
+    "relevantEffectiveDateEventsIdentified": [],
+    "review": "Provider split/dividend and identity fields, raw/adjusted closes, price changes and date-specific corporate-action searches.",
+    "announcementsReviewed": [
+      {
+        "ticker": "6954",
+        "type": "open-market share buyback window",
+        "announced": "2026-10-23",
+        "period": "2026-10-26 through 2027-04-30",
+        "source": "https://www.fanuc.co.jp/en/ir/announce_other/pdf/2026/notice20261023-01_e.pdf",
+        "treatment": "Open-market repurchases do not change fixed index units or quarterly targets; no per-share price-continuity adjustment."
+      },
+      {
+        "ticker": "300124",
+        "type": "interim cash dividend proposal",
+        "boardApprovalDate": "2026-10-26",
+        "announced": "2026-10-27",
+        "cashPerShareCNY": 0.26,
+        "stockDividendOrCapitalization": false,
+        "source": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12661116&stockid=300124",
+        "sourceType": "Issuer announcement reproduced by Sina Finance",
+        "exDate": "not specified in this announcement",
+        "treatment": "No October 26 ex-date or distribution is identified; source dividend flag is zero. Cash dividends remain excluded from price return; no continuity adjustment."
+      }
+    ]
+  }
+}
