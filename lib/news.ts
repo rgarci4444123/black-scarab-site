@@ -34,6 +34,115 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "percepto-axion-software-inspection",
+  "title": "Percepto opens Axion to other drone fleets as it shifts toward software",
+  "summary": "Inspection analytics gives Percepto a separate route to customers with existing drones, sensors and archives, while its autonomous collection systems remain part of the business.",
+  "category": "Industrial inspection",
+  "publishedDate": "2026-10-28",
+  "publishedAt": "2026-10-28T14:45:00-04:00",
+  "publishedLabel": "October 28, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "5 min read",
+  "image": "/images/news/percepto-axion-software-inspection.png",
+  "imageAlt": "An oversized blue electrical insulator crosses a yellow field beside small drones and contrasting inspection views.",
+  "imageCaption": "Editorial illustration by Black Scarab, created with AI to interpret different inspection views of shared infrastructure.",
+  "keyPoints": [
+    "Percepto launched Axion on October 27 as subscription software for supported outside drones, sensors and inspection archives.",
+    "The company says the platform combines more than 160 AI models with asset history, context and expert validation.",
+    "Ranger drones, Harbor stations and remote operations remain available for collecting additional inspection data."
+  ],
+  "sections": [
+    {
+      "heading": "The software becomes an entry point",
+      "paragraphs": [
+        "Percepto launched Axion on October 27, giving infrastructure operators a subscription service that analyzes inspection data from supported outside drones, sensors and existing archives.",
+        "The launch makes inspection analytics a separate route to customers that already have collection equipment. An operator can start with its existing records and add Percepto’s autonomous aircraft and remote operations where it wants more frequent coverage.",
+        "For a company known for autonomous drone inspections, that changes the starting point of the sale. The first conversation can concern information a customer already owns, rather than the installation of another aircraft and station. Percepto is positioning the software as the organizing layer around the inspection program.",
+        "The distinction matters because collecting more pictures and understanding equipment condition are different jobs. An aircraft can complete a flight successfully while leaving an inspection team with a large queue of material to review. Axion is aimed at the work that follows capture."
+      ]
+    },
+    {
+      "heading": "An equipment history, rather than a flight folder",
+      "paragraphs": [
+        "Percepto says Axion organizes inspection information by asset and combines specialized models with historical trends, equipment context and expert validation. The company reports more than 160 models trained on over 100,000 hours of autonomous inspection data.",
+        "Its examples include interpreting a wire’s position relative to surrounding components and assessing a thermal anomaly against equipment behavior and environmental conditions. These describe how the company intends its analysis to work. Model counts and accumulated inspection hours do not themselves measure detection accuracy.",
+        "DroneXL’s coverage shows the practical emphasis of the interface: findings and earlier observations sit alongside the equipment they concern. It also describes a company demonstration in which a plain language question brings together earlier findings and maintenance history for one utility pole.",
+        "That is a useful way to frame the product. The inspection record needs to outlast the individual flight. If a team returns to the same piece of equipment, the earlier observation should help explain what changed and whether the new finding deserves attention.",
+        "The conversational interface adds another way to reach that record. Its value depends on the evidence beneath the answer: identifying the correct asset, retrieving the relevant observation and keeping the finding connected to the material that supports it."
+      ]
+    },
+    {
+      "heading": "The opening has a history",
+      "paragraphs": [
+        "Percepto has worked with outside inspection inputs before. In its November 2021 announcement for the AIM 2022 platform, it described integrations with other drones and robots, including DJI aircraft and fixed cameras. It also described combining their visual data into reports and mapped findings.",
+        "That history makes the new announcement more precise. Axion gives the software a new product identity and an explicit role at the center of Percepto’s growth strategy. Compatibility with outside equipment has an earlier foundation.",
+        "The commercial emphasis is consequential even when an underlying capability has a history. A customer evaluating analysis of an existing archive is entering through a different project from a customer commissioning autonomous collection at a site. Those projects can lead to the same platform while starting with different budgets, teams and integration work.",
+        "For Percepto, the opportunity is to make the analysis useful before it asks a customer to change how it gathers evidence. If that works, expanding inspection coverage becomes a subsequent opportunity within an established relationship."
+      ]
+    },
+    {
+      "heading": "Hardware and services stay in the picture",
+      "paragraphs": [
+        "The company’s Ranger drone portfolio, Harbor autonomous stations and managed remote operations remain part of the offering. DroneDJ’s launch coverage also highlights Percepto’s new leadership under CEO Julien Bellanger and its effort to consolidate engineering, manufacturing and assembly in the United States. Percepto describes that consolidation as underway.",
+        "The launch announcement includes a multiyear agreement extending a relationship with a US energy company for transmission line inspections. It covers aerial collection and analytics together. That is a combined service engagement, rather than a reported count of customers purchasing Axion alone.",
+        "These two routes can reinforce each other. Existing data can establish a useful inspection history; new collection can fill coverage needs. The business question is whether the software becomes valuable enough to remain part of routine operations as equipment and collection arrangements change.",
+        "That would give Percepto a more durable position in the workflow. It would also make the company responsible for more of the difficult work between receiving an image and producing a finding that a maintenance team can use."
+      ]
+    },
+    {
+      "heading": "Mixed inputs raise the bar for interpretation",
+      "paragraphs": [
+        "Accepting different sources increases the importance of understanding how each observation was produced. A close view and a distant image can show the same component while supporting different conclusions. Time, angle, resolution and operating conditions affect what can reasonably be inferred.",
+        "Consider a hypothetical thermal comparison across two inspection dates. A change in the displayed colors could reflect a different scale or different conditions during capture. A useful asset history needs to retain the context that makes a comparison meaningful. Bringing files into one platform is the beginning of that task.",
+        "The same applies to prioritization. A finding becomes more useful when it helps the responsible team decide what to investigate and preserves a traceable reason for that decision. Faster review matters, but so does avoiding repeated alerts that consume attention without improving maintenance.",
+        "These are the practical tests of the software strategy. Evidence of sustained use across mixed collection programs, clear handling of uncertain findings and results that feed into maintenance work will say more than the size of the model library."
+      ]
+    },
+    {
+      "heading": "Black Scarab’s view",
+      "paragraphs": [
+        "Axion gives Percepto a broader commercial proposition: sell interpretation around the inspection investments customers have already made, then supply additional collection where it is useful.",
+        "The next signal to watch is how that proposition translates into continuing software relationships. The opportunity is to become the place where an inspection program remembers what it saw, understands what changed and directs attention to the next action."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Percepto: Axion launch and software strategy, October 27, 2026",
+      "url": "https://www.prnewswire.com/news-releases/percepto-launches-hardware-agnostic-axion-platform-bringing-physical-ai-to-mission-critical-operations-302920292.html"
+    },
+    {
+      "label": "Percepto: AIM 2022 integrations announcement, November 17, 2021",
+      "url": "https://www.prnewswire.com/il/news-releases/percepto-launches-new-drone-and-advanced-ai-powered-analytics-for-its-2022-autonomous-inspection-amp-monitoring-platform-872552057.html"
+    },
+    {
+      "label": "DroneXL: Axion, product history and interface reporting, October 27, 2026",
+      "url": "https://dronexl.co/2026/10/27/percepto-axion-inspection-ai-third-party-drones-new-ceo/"
+    },
+    {
+      "label": "DroneDJ: Coverage of Percepto’s software launch, October 28, 2026",
+      "url": "https://dronedj.com/2026/10/28/percepto-axion-drone-inspection-ai/?extended-comments=1"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "energy-utilities",
+    "relevantIndustries": [
+      "manufacturing"
+    ],
+    "technologies": [
+      "drones",
+      "computer-vision",
+      "robot-software"
+    ],
+    "applications": [
+      "inspection"
+    ]
+  }
+},
+{
   "slug": "sap-physical-ai-enterprise-robot-workflows",
   "title": "SAP connects enterprise workflows to robots in physical AI push",
   "summary": "A warehouse trial with Intel and customer inspection projects show how SAP wants business software to assign physical work and record the result.",
