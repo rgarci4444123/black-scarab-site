@@ -34,6 +34,138 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "sap-physical-ai-enterprise-robot-workflows",
+  "title": "SAP connects enterprise workflows to robots in physical AI push",
+  "summary": "A warehouse trial with Intel and customer inspection projects show how SAP wants business software to assign physical work and record the result.",
+  "category": "Enterprise robotics",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "5 min read",
+  "imageAlt": "A sculptural ledger curls into a continuous transport loop carrying a small industrial cart with red cargo.",
+  "imageCaption": "Editorial illustration by Black Scarab, created with AI to interpret business workflows connecting to physical execution.",
+  "keyPoints": [
+    "SAP unveiled physical AI capabilities at TechEd on October 27, connecting enterprise processes with robots and inspection systems.",
+    "Intel describes a warehouse proof of concept that sends SAP tasks to autonomous robots and returns completion information.",
+    "The customer examples span inbound storage and industrial inspection, with different stages of deployment."
+  ],
+  "sections": [
+    {
+      "heading": "Business software reaches the warehouse floor",
+      "paragraphs": [
+        "SAP unveiled physical AI capabilities at its TechEd conference on October 27, linking business workflows to robots and other physical systems and bringing execution results back into enterprise records.",
+        "The company describes applications in warehouse operations and asset inspection. Its examples include Intel, air conditioner manufacturer Arçelik LG and building materials producer Holcim. The common thread is a connection between an instruction in SAP and the physical work that follows.",
+        "SAP supplies business context, orchestration and governance, while partners supply physical execution. The capabilities use SAP Business AI Platform, with physical observations flowing into SAP Business Data Cloud, according to the company.",
+        "The announcement sits within a wider TechEd effort to extend enterprise AI. SAP also introduced new tools for building agents and managing their behavior, access and usage. Physical execution adds another destination for that business context, alongside the software workflows already inside the enterprise."
+      ]
+    },
+    {
+      "heading": "Intel tests the warehouse loop",
+      "paragraphs": [
+        "Intel’s own account describes a proof of concept connecting SAP Extended Warehouse Management, or EWM, to autonomous material transport. Requests begin in EWM, robots move materials, and status and completion information return to the warehouse system.",
+        "SAP places the demonstration at Intel’s Chengdu site in China. Intel reports shorter transport distances and less repetitive manual handling in the trial. These are reported proof of concept outcomes.",
+        "Intel provides the local computing and robotics foundation, covering perception, inference, navigation and control. Its announcement discusses CPUs, GPUs and neural processing units, alongside OpenVINO Physical AI, Physical AI Studio and Robotics AI Suite. It describes an architecture intended to accommodate different robot vendors, models and deployment environments.",
+        "That division of responsibility is useful. An enterprise system can establish which movement matters to the operation, while the robotics layer manages execution in the physical environment. Intel says the companies aim to turn the trial into a repeatable blueprint across sites and robot platforms."
+      ]
+    },
+    {
+      "heading": "A humanoid pilot at Arçelik LG",
+      "paragraphs": [
+        "The Arçelik LG example involves inbound warehouse storage. SAP says a humanoid executes and records the tasks, addressing incorrect placement of incoming materials.",
+        "Implementation partner FairConsult 24|7 provides more detail through its FairRobotics communications. It describes an ongoing proof of concept in which warehouse tasks pass through its fleet management system to a Unitree G1 humanoid. The robot scans barcodes, moves material and sends confirmations back to SAP.",
+        "FairConsult’s account matters because it identifies the integration work between the warehouse application and the machine. A business instruction has to become an assigned mission, and execution has to become a meaningful confirmation in the original workflow.",
+        "SAP describes potential savings of millions of euros from the storage use case. That is a potential benefit, rather than a reported financial result. The more immediate evidence is a pilot connecting an existing warehouse process to robot handling and its associated records."
+      ]
+    },
+    {
+      "heading": "Inspection results return to maintenance",
+      "paragraphs": [
+        "Holcim’s example connects maintenance plans to inspections by drones and quadruped robots. SAP says an inspection begins in its maintenance system and produces a maintenance notification after execution. It names Cyberwave, Field AI and HyBird as ecosystem partners.",
+        "HyBird’s own robotics page describes connecting inspection work to equipment identities, engineering drawings and facility information. It presents the SAP and Field AI demonstration as a connection from a work request to completed inspection evidence, with imagery identifying the Holcim site.",
+        "The company describes choosing an initial route and its operating boundaries with the site team, linking assets to maintenance information, and reviewing results before expanding. This puts the emphasis on a defined inspection workflow and the information required to make it useful.",
+        "Cyberwave’s preview of the SAP asset management event in Seville also describes coordinating different robotic forms and feeding their observations into a shared operational picture. It frames enterprise integration as a way to connect what machines observe with the decisions that follow."
+      ]
+    },
+    {
+      "heading": "The difficult part is the handoff",
+      "paragraphs": [
+        "A robot reaching a destination is one part of a warehouse task. The wider process also depends on the right material reaching the right location and the inventory record reflecting what actually happened. An inspection has a similar requirement: its findings must be associated with the correct equipment and reach the team responsible for follow up.",
+        "This is where the connection can become valuable. Consider a hypothetical transport mission that stops because an aisle is blocked. The business process needs to retain that unfinished state, make the exception visible and avoid treating an uncompleted movement as available inventory. Sending a command successfully is insufficient evidence that the job succeeded.",
+        "The same distinction applies to safety. Permission to perform a business task and permission to make a particular physical movement are different decisions. Site operating rules, robot controls and the conditions around the machine still determine how a mission can proceed.",
+        "These are practical integration demands. A repeatable deployment needs clear task identities, reliable confirmations and a workable response when the physical world interrupts the plan. The record returning to the enterprise system has to be trustworthy enough for the next action to depend on it."
+      ]
+    },
+    {
+      "heading": "Black Scarab’s view",
+      "paragraphs": [
+        "SAP is pursuing a strategically useful position between business priorities and robot execution. The attraction is that a robot’s work can become part of a process the company already manages, giving the result a place in inventory, maintenance and operational planning.",
+        "The next meaningful signal is repetition: the same integration working across more sites, more robot platforms and ordinary operational exceptions. Evidence from sustained customer workflows will carry more weight than a growing list of demonstrations. SAP’s opportunity is to make that connection reliable enough to become routine."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "SAP: Physical AI capabilities and customer examples, October 27, 2026",
+      "url": "https://news.sap.com/2026/10/sap-unveils-physical-ai-extends-autonomous-enterprise-real-world-sap-teched/"
+    },
+    {
+      "label": "Intel: Warehouse physical AI proof of concept with SAP, October 28, 2026",
+      "url": "https://www.intel.com/content/www/us/en/newsroom/news/artificial-intelligence/intel-demonstrates-physical-ai-action-with-sap.html"
+    },
+    {
+      "label": "FairRobotics: Arçelik LG proof of concept and fleet management workflow",
+      "url": "https://www.linkedin.com/company/fairrobotics/"
+    },
+    {
+      "label": "FairConsult 24|7: Unitree G1 pilot account",
+      "url": "https://www.linkedin.com/company/fairconsult-24-7-gmbh"
+    },
+    {
+      "label": "HyBird: Robotic inspection and the SAP demonstration",
+      "url": "https://hybird.ai/robotics/"
+    },
+    {
+      "label": "Cyberwave: Connected inspection preview for SAP’s Seville event, September 29, 2026",
+      "url": "https://cyberwave.com/blog/meet-cyberwave-sap-asset-service-management-seville-2026"
+    },
+    {
+      "label": "SAP: TechEd developer and enterprise AI platform announcements, October 27, 2026",
+      "url": "https://news.sap.com/2026/10/sap-teched-ai-developers-build-what-matters-autonomous-execution/"
+    },
+    {
+      "label": "diginomica: Reporting from SAP TechEd, October 28, 2026",
+      "url": "https://diginomica.com/sap-teched-how-sap-pushing-emerging-realm-physical-ai-intel"
+    },
+    {
+      "label": "SDxCentral: Independent coverage of the Intel and SAP warehouse demonstration, October 28, 2026",
+      "url": "https://www.sdxcentral.com/news/intel-trials-open-robotics-architecture-with-sap-in-chinese-demo/"
+    }
+  ],
+  "publishedDate": "2026-10-28",
+  "publishedAt": "2026-10-28T13:31:06-04:00",
+  "publishedLabel": "October 28, 2026",
+  "image": "/images/news/sap-physical-ai-enterprise-robot-workflows.png",
+  "taxonomy": {
+    "primaryIndustry": "warehousing-logistics",
+    "relevantIndustries": [
+      "manufacturing",
+      "construction"
+    ],
+    "technologies": [
+      "robot-software",
+      "edge-ai",
+      "autonomous-mobile-robots",
+      "humanoid-robotics"
+    ],
+    "applications": [
+      "material-handling",
+      "inspection",
+      "fleet-coordination"
+    ]
+  }
+},
+{
   "slug": "bedrock-robotics-600m-driverless-excavation",
   "title": "Bedrock Robotics raises $600 million to scale driverless excavation on U.S. sites",
   "summary": "CapitalG and Emergence Capital lead a Series C at a $4.1 billion valuation as Bedrock expands beyond its first paid autonomous excavator deployments.",
