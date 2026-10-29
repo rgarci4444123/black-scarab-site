@@ -34,6 +34,121 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "foundry-100m-robotic-assembly",
+  "title": "Foundry raises $100 million to expand robotic assembly in Emeryville",
+  "summary": "The $100 million Series A will support an operated manufacturing service, AI deployment and the buildout of a 130,000 square foot facility in Emeryville.",
+  "category": "Funding",
+  "publishedDate": "2026-10-29",
+  "publishedAt": "2026-10-29T09:30:36-04:00",
+  "publishedLabel": "October 29, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "5 min read",
+  "image": "/images/news/foundry-100m-robotic-assembly.png",
+  "imageAlt": "A robotic gripper places a silver component inside a teal metal housing in an extreme close view.",
+  "imageCaption": "Editorial illustration by Black Scarab, created with AI to interpret precision robotic assembly.",
+  "keyPoints": [
+    "Marlinspike Partners led Foundry’s $100 million Series A, announced October 28.",
+    "Foundry says its manufacturing footprint has grown to 130,000 square feet in Emeryville.",
+    "The company operates assembly capacity for customers using robotic cells, software and manufacturing teams."
+  ],
+  "sections": [
+    {
+      "heading": "The factory is the business",
+      "paragraphs": [
+        "Foundry Robotics raised $100 million in a Series A announced on October 28 to expand an operated robotic assembly service in Emeryville, California. Marlinspike Partners led the round, which will fund the buildout of its 130,000 square foot facility, deployment of AI models and hiring across robotics research, engineering and factory operations.",
+        "The company says its manufacturing footprint has expanded twentyfold. In its announcement on LinkedIn, Foundry also says the Emeryville facility is already shipping products to customers in energy, telecommunications, autonomous vehicles and defense. The new capital supports the next stage of that operation.",
+        "Early backers Khosla Ventures and Red Glass Ventures participated alongside new investors SE Ventures, Wing VC and Axiom Ventures, with existing investors Hanabi and Zero Shot Fund also joining the financing.",
+        "Foundry sells manufacturing capacity that it operates for customers. That puts the factory, its software and the work of making finished assemblies inside the same business. The funding therefore has to support both a robotics company and a production operation."
+      ]
+    },
+    {
+      "heading": "Assembly capacity as a service",
+      "paragraphs": [
+        "A hardware company brings a product to be assembled, while Foundry supplies and runs the production environment. Its stated focus is complex electromechanical hardware for defense and commercial markets. The company lists drones, underwater vehicles, robotic systems, telecom equipment and wire harnesses among its applications.",
+        "Foundry says this manufacturing as a service model can take a customer from design to production in weeks without requiring that customer to invest in a dedicated line or expensive retooling. The timing is a company claim, and the useful commercial idea is straightforward: buy access to an operating manufacturing system while concentrating on the product.",
+        "Assembly is where many different constraints meet. A part must arrive in the right orientation, fit the next component and pass the checks needed before the work can continue. A successful operation at one station is useful only if it fits the sequence around it.",
+        "That makes flexibility a factory problem as much as a robot problem. Changing a product can affect fixtures, parts presentation, tools, inspection and scheduling together. Foundry is taking responsibility for coordinating those changes within its own production environment."
+      ]
+    },
+    {
+      "heading": "Reusable skills, coordinated cells",
+      "paragraphs": [
+        "Foundry describes a grid of robotic cells trained on underlying assembly tasks. Its factory page says those cells use local computing, while FoundryOS coordinates production schedules, assembly processes and the cells themselves. The launch release also describes connections between robots, the factory floor and cloud systems.",
+        "The distinction between those layers matters. A cell must carry out the physical operation, while the wider system has to decide what work is ready, move it through the process and retain the result. Better manipulation and better coordination need to reinforce each other.",
+        "Foundry says production runs feed back into its models so skills can improve and transfer to additional products. The potential advantage is cumulative operating experience: the organization developing the models also sees the exceptions, interruptions and quality issues that appear during production.",
+        "That feedback is valuable when it reduces the engineering needed for the next job. Reusing a skill still requires fitting it to the particular parts and process. The practical measure is whether a new assembly reaches dependable output with less repeated integration work."
+      ]
+    },
+    {
+      "heading": "The product design is part of the process",
+      "paragraphs": [
+        "Foundry also describes an approach it calls Design for Robotic Assembly. Its website says this involves simplifying assembly steps, reducing parts and designing for repeatable robotic production. It presents integrated testing, inspection and digital traceability as parts of the manufacturing service.",
+        "This extends the work upstream of the robot. A component that is easier to locate, grasp and join can make automation more repeatable before the model makes its first decision. Product design and production design therefore have to develop together.",
+        "The same applies to quality. Traceability becomes useful when a finished assembly can be connected to the components, steps and checks that produced it. A flexible factory needs to preserve that record as products and production schedules change.",
+        "Foundry explicitly combines technicians and manufacturing specialists with robots. Its operating model gives those teams a role in keeping work moving and making production reliable as automation develops."
+      ]
+    },
+    {
+      "heading": "A small piece of a larger US rebuilding effort",
+      "paragraphs": [
+        "For US competitiveness, the connection is the distance between a good hardware design and dependable domestic production. Shared, adaptable assembly capacity could help companies make that transition faster and expand without financing a separate factory for every product. If the model works, the gain would be more than additional floor space: it would be a domestic manufacturing base better able to absorb new designs, respond to demand and retain production expertise. That is the industrial rebuilding proposition behind Foundry’s expansion."
+      ]
+    },
+    {
+      "heading": "Floor space has to become output",
+      "paragraphs": [
+        "The financing gives Foundry room to develop its combined factory and research effort. The operating challenge is turning that investment into repeatable production across a changing mix of products. More space creates an opportunity; utilization, quality and delivery determine its economic value.",
+        "Flexibility also carries a balancing act. Frequent changes can make capacity useful to more customers, but each change can consume engineering time and interrupt output. The advantage grows if reusable robotic skills, sensible product design and coordinated operations reduce that burden together.",
+        "Black Scarab’s view is that Foundry is testing an important route to commercialization for robotic intelligence: earn revenue by delivering the work inside a factory the company runs. That creates a direct test of whether technical progress improves production.",
+        "The next signals to watch are the Emeryville buildout becoming productive, more customer work reaching repeat production and evidence that the same operating system can handle new assemblies efficiently. Those results will show how much manufacturing capacity the $100 million can create."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Foundry Robotics: Series A announcement distributed by Business Wire, October 28, 2026",
+      "url": "https://www.businesswire.com/news/home/20261028508802/en/"
+    },
+    {
+      "label": "Foundry Robotics: Factory, local computing and FoundryOS",
+      "url": "https://foundryrobotics.ai/factory"
+    },
+    {
+      "label": "Foundry Robotics: Assembly service, design approach and applications",
+      "url": "https://foundryrobotics.ai/"
+    },
+    {
+      "label": "Foundry Robotics: Company announcement and current shipping claim, October 28, 2026",
+      "url": "https://www.linkedin.com/company/foundry-robotics/"
+    },
+    {
+      "label": "PYMNTS: Foundry funding and factory expansion, October 28, 2026",
+      "url": "https://www.pymnts.com/news/investment-tracker/2026/foundry-raises-100-million-to-boost-manufacturing-footprint/"
+    },
+    {
+      "label": "SiliconReport: Coverage of Foundry’s manufacturing expansion, October 28, 2026",
+      "url": "https://www.siliconreport.com/foundry-robotics-plans-expansion-after-raising-100-million"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [
+      "defense-aerospace",
+      "transportation-mobility"
+    ],
+    "technologies": [
+      "industrial-robotics",
+      "robot-software"
+    ],
+    "applications": [
+      "assembly"
+    ]
+  }
+},
+{
   "slug": "percepto-axion-software-inspection",
   "title": "Percepto opens Axion to other drone fleets as it shifts toward software",
   "summary": "Inspection analytics gives Percepto a separate route to customers with existing drones, sensors and archives, while its autonomous collection systems remain part of the business.",
