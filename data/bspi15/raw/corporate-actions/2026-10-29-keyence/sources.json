@@ -1,0 +1,25 @@
+{
+  "ticker": "6861",
+  "company": "Keyence",
+  "announcementDate": "2026-10-29",
+  "splitRatio": 5,
+  "recordDate": "2026-11-20",
+  "effectiveDate": "2026-11-21",
+  "exchangeExDate": null,
+  "exchangeExDateReview": "Verify official exchange schedule before first split-priced close; do not infer from legal effective date.",
+  "currentDateTreatment": "No October 29 split adjustment.",
+  "sources": [
+    {
+      "url": "https://www.keyence.co.jp/pdf/PressRelease_20261029_02.pdf",
+      "path": "data/bspi15/raw/corporate-actions/2026-10-29-keyence/split-notice.pdf",
+      "sha256": "ca329feaaee5ab851a0f1a13680938054bfedb533c37948c25bd4ed7c1529077",
+      "retrievedAt": "2026-10-30T11:35:36.607729+00:00"
+    },
+    {
+      "url": "https://www.keyence.co.jp/pdf/PressRelease_20261029_01.pdf",
+      "path": "data/bspi15/raw/corporate-actions/2026-10-29-keyence/dividend-notice.pdf",
+      "sha256": "b3eb190095a51e6d20a4657b8afef802aaf6b8d7095063ac32ea7c4e0e463e18",
+      "retrievedAt": "2026-10-30T11:35:36.733768+00:00"
+    }
+  ]
+}
