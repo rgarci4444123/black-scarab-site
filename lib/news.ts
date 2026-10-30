@@ -34,6 +34,117 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "opentrons-40m-ai-laboratory-robots",
+  "title": "Opentrons raises $40 million to connect AI experiment design with laboratory robots",
+  "summary": "The $40 million Series E will support the robots, protocol software and data infrastructure that connect an AI’s proposed experiment with a result from the physical laboratory.",
+  "category": "Funding",
+  "publishedDate": "2026-10-30",
+  "publishedAt": "2026-10-30T09:17:04-04:00",
+  "publishedLabel": "October 30, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "5 min read",
+  "image": "/images/news/opentrons-40m-ai-laboratory-robots.png",
+  "imageAlt": "Painted crimson experimental paths converge on a pipette releasing a clear droplet into a laboratory sample plate.",
+  "imageCaption": "Editorial illustration by Black Scarab, created with AI to interpret the connection between experiment design and laboratory execution.",
+  "keyPoints": [
+    "Opentrons announced a $40 million Series E led by Avego, with BroadOak Capital Partners participating.",
+    "The money supports robotic experimental execution, protocol software and data infrastructure.",
+    "Its reported installed base exceeds 11,000 robots across more than 80 countries."
+  ],
+  "sections": [
+    {
+      "heading": "The financing",
+      "paragraphs": [
+        "Opentrons announced a $40 million Series E on October 29 to expand the robots, software and data infrastructure that connect AI designed experiments with work in a physical laboratory. Healthcare investor Avego led the financing, with additional investment from BroadOak Capital Partners.",
+        "The New York company is pursuing an execution layer for autonomous science. A model can suggest a hypothesis or an experiment, but someone still has to transfer liquids, prepare samples, move plates and run the relevant instruments. Opentrons wants more of that experimental work to become programmable, repeatable and connected to the next scientific decision.",
+        "Opentrons says more than 11,000 of its robots are deployed in laboratories across over 80 countries. That installed base gives its next software and automation tools a substantial starting footprint."
+      ]
+    },
+    {
+      "heading": "What the robot actually does",
+      "paragraphs": [
+        "The existing Flex platform provides a concrete starting point. It combines interchangeable pipettes, a labware gripper and modules that can heat, cool, mix or thermocycle samples. The robot can transfer liquids and move plates or tip racks between positions on its deck, reducing the need for a person to carry each item through a sequence.",
+        "Opentrons describes a PCR workflow in which the system prepares samples in a plate, moves it into a thermocycler using the gripper, and runs the chosen programme. Other configurations address sequencing library preparation, protein purification and nucleic acid extraction. These are configured laboratory workflows, with the hardware and protocol chosen for the assay.",
+        "Scientists can build protocols visually, use an existing protocol library or write through the Python API. OpentronsAI adds another route: the company says users can describe a procedure in natural language, generate protocol code, simulate it and inspect the deck map within a chat interface."
+      ]
+    },
+    {
+      "heading": "From a proposal to an executable protocol",
+      "paragraphs": [
+        "An experimental proposal and a robot instruction operate at different levels. A scientist might want to compare how several conditions affect a sample. The machine needs a specific sequence: which liquid goes into which well, in what volume, with which mixing and temperature steps. Turning the first into the second is a significant part of making AI useful at the bench.",
+        "Code generation can help with that translation. A simulation can then reveal whether the proposed commands fit the software and equipment configuration. The next test is physical: whether the protocol produces the intended preparation and measurements under the actual experimental conditions.",
+        "Opentrons already offers software for building and executing those procedures. The financing aims to develop the connections around them, including faster protocol development and deeper instrument integration. That gives the autonomous science proposition a practical foundation in existing laboratory work.",
+        "Black Scarab’s analysis is that the valuable connection runs in both directions. Models need a way to specify work the equipment can perform, and the experimental result needs enough context to inform the next decision. A result detached from its preparation, conditions and controls is much less useful for deciding what to test next."
+      ]
+    },
+    {
+      "heading": "A loop between models and experiments",
+      "paragraphs": [
+        "Opentrons says the new money will support AI driven experimental execution, faster protocol development, broader automation capabilities and closer integration with the laboratory ecosystem. It also plans to enter additional markets and geographies.",
+        "The intended loop is straightforward: design an experiment, execute it on the robots, obtain usable results and use those results to improve the next experiment. The physical execution stage is where a scientific idea becomes a sequence of transfers, incubations and measurements. Making that stage easier to reproduce can help separate a genuine result from a difference in how the experiment was carried out.",
+        "The company frames structured data from robotic execution as the basis for that loop. Repeatable preparation helps researchers compare experiments. Interpreting the result still depends on the assay, its controls and measurements from the relevant instruments.",
+        "This helps explain why the investment spans robotics, software and data infrastructure. More capable AI planning has limited value if the laboratory cannot execute the proposed work reliably or return results in a form the next stage can use."
+      ]
+    },
+    {
+      "heading": "The laboratory remains a system",
+      "paragraphs": [
+        "The pipetting robot is one part of the experimental process. Samples, reagents, labware and instruments have to be ready for the procedure. A workflow that moves smoothly across the robot’s deck can still require additional coordination before and after that stage.",
+        "The commercial value of integration is therefore cumulative. Connecting preparation, plate movement, temperature control and measurement can reduce interruptions between steps. Each connection also has to preserve the experimental conditions that make the result meaningful.",
+        "The same principle applies to scale. Running more experiments is useful when those experiments answer a well specified scientific question. Faster execution can shorten the learning cycle, but experimental design and interpretation determine whether the cycle produces useful knowledge."
+      ]
+    },
+    {
+      "heading": "The business behind the platform",
+      "paragraphs": [
+        "Opentrons sells into an ecosystem that includes academic laboratories, diagnostics groups and pharmaceutical companies. Its open interfaces and modular workstations give it several points of entry: a laboratory can automate a defined workflow, then connect that workflow to additional instruments or software as its requirements develop.",
+        "The existing installed base gives the company a route to expand use without starting every relationship from a blank bench. At the same time, a laboratory robot, an integrated workcell and a fully autonomous experimental programme are different levels of automation. Extending one into the next requires the protocol and the surrounding equipment to work together.",
+        "Avego and BroadOak are the named participants in this round. The release separately identifies SoftBank Vision Fund and Khosla Ventures among existing backers.",
+        "The next developments to watch are the expanded experimental workflows, protocol tools and instrument integrations funded by the round. Opentrons already has a substantial physical footprint. The commercial opportunity is to make that footprint a more useful connection between the models designing scientific work and the machines carrying it out."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Opentrons: Series E financing announcement, Business Wire, October 29, 2026",
+      "url": "https://finance.yahoo.com/healthcare/articles/opentrons-announces-40m-series-e-130000713.html"
+    },
+    {
+      "label": "Avego: October 29 financing announcement and investor identity",
+      "url": "https://avego.com/"
+    },
+    {
+      "label": "Opentrons: Flex hardware and configured laboratory workflows",
+      "url": "https://opentrons.com/robots/flex"
+    },
+    {
+      "label": "Opentrons: OpentronsAI protocol generation and simulation",
+      "url": "https://opentrons.com/ai"
+    },
+    {
+      "label": "Opentrons: Python API and protocol control",
+      "url": "https://opentrons.com/pythonapi"
+    },
+    {
+      "label": "SiliconANGLE: Independent coverage of the financing, October 29, 2026",
+      "url": "https://siliconangle.com/2026/10/29/science-robotics-startup-opentrons-raises-40m-to-standardize-laboratory-automation/"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "healthcare-life-sciences",
+    "relevantIndustries": [],
+    "technologies": [
+      "robotics",
+      "manipulation",
+      "robot-software"
+    ],
+    "applications": []
+  }
+},
+{
   "slug": "foundry-100m-robotic-assembly",
   "title": "Foundry raises $100 million to expand robotic assembly in Emeryville",
   "summary": "The $100 million Series A will support an operated manufacturing service, AI deployment and the buildout of a 130,000 square foot facility in Emeryville.",
