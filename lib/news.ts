@@ -34,6 +34,111 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "maximo-300000-solar-construction-tasks",
+  "title": "Maximo reports 300,000 solar construction tasks under pay per task contracts",
+  "summary": "Maximo says its robots have completed more than 300,000 construction tasks under commercial service contracts. A further three million tasks in its 2027 pipeline remain prospective work.",
+  "category": "Deployment",
+  "publishedDate": "2026-10-30",
+  "publishedAt": "2026-10-30T17:21:54-04:00",
+  "publishedLabel": "October 30, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "5 min read",
+  "image": "/images/news/maximo-300000-solar-construction-tasks.png",
+  "imageAlt": "Overhead screen print of blue solar modules, with one panel suspended by a vermilion handling tool above its next position.",
+  "imageCaption": "Editorial illustration by Black Scarab, created with AI to interpret robotic solar module placement.",
+  "keyPoints": [
+    "Maximo reports more than 300,000 completed construction tasks under pay per task service contracts.",
+    "Crews using Max 4.0 achieved 2.5 times their manual installation rate per person per shift hour, according to the company.",
+    "Its late stage 2027 pipeline covers an additional three million tasks and 1.5 gigawatts of prospective solar installation."
+  ],
+  "sections": [
+    {
+      "heading": "The operating milestone",
+      "paragraphs": [
+        "Maximo Robotics said on October 29 that its robots have completed more than 300,000 construction tasks under contracts that charge customers for completed work. The milestone comes from utility scale solar construction, where the systems place heavy modules alongside professional construction crews.",
+        "The company says current projects involve six large engineering, procurement and construction contractors, multiple owners and sites in California, Illinois, Kansas, Louisiana, New York, Texas and Washington. Primoris Services Corporation’s Renewables business is the named contractor partner in the announcement.",
+        "Maximo also describes demand for an additional three million tasks in a late stage pipeline for 2027, associated with 1.5 gigawatts of solar installation. That prospective workload is roughly ten times the completed task milestone. Converting it into field output is the next commercial test."
+      ]
+    },
+    {
+      "heading": "Selling completed work",
+      "paragraphs": [
+        "The service model links Maximo’s revenue to tasks completed. An engineering, procurement and construction contractor, usually shortened to EPC, pays for the installation work the robotics service delivers. The arrangement gives the contractor a direct connection between the bill and construction output.",
+        "For Maximo, that makes dependable execution central to the business. Shipping a robot to a site starts the operation; earning task revenue depends on getting useful work done once it arrives. Equipment availability, the handling tool and the surrounding crew workflow all contribute to that output.",
+        "The completed work includes autonomous placement of heavy solar modules. Maximo identifies module attachment and field logistics as contract expansion options. Placement is one stage in building an array, followed by the other mechanical and electrical work needed to make it operational.",
+        "Black Scarab’s analysis is that this is an important commercial distinction for field robotics. A machine sale rewards delivery of equipment. A service charged by completed task puts recurring pressure on the supplier to keep the operation productive. The economic value rests in the combination of machine capability and reliable service."
+      ]
+    },
+    {
+      "heading": "A crew productivity claim",
+      "paragraphs": [
+        "Maximo reports that crew members working with its Max 4.0 systems have achieved 2.5 times their manual installation rate per person per shift hour. The denominator matters: it measures installation output against labour time within that operation. It is a company reported productivity claim, with results tied to the crews and field conditions involved.",
+        "The effect on a complete solar project depends on how placement fits with everything around it. Modules must be supplied to the work area, the mounting structure must be ready, and the next construction step must keep pace. Faster placement has more value when those connected activities can absorb the output.",
+        "Primoris says its craft professionals, project leaders and the Maximo team have collaborated to refine the technology in field operations. Its account points to installation performance, safety and workflow integration as areas improved through that work. The contractor’s experience helps connect robotics development with the practical sequence of a construction shift."
+      ]
+    },
+    {
+      "heading": "From Bellefield to a broader footprint",
+      "paragraphs": [
+        "Maximo was incubated by energy developer AES. In March, the company reported completing robotic module installation representing 100 megawatts of solar capacity at AES’s Bellefield complex in California. The operation had grown from a single robot to four units working in parallel alongside skilled union technicians.",
+        "That earlier project used version 3.0 units. Maximo reported technical performance above one module per minute and crew output of up to 24 modules per person per shift hour at Bellefield. Those historical figures describe that project and system generation; the October announcement introduces the newer Max 4.0 crew productivity claim.",
+        "The two announcements show a widening operating story: sustained activity at an early large site, followed by a cumulative task milestone and work spanning several EPC contractors. Megawatts describe the solar installation’s capacity, while completed tasks describe the robotics workload. Each measures a different part of the operation."
+      ]
+    },
+    {
+      "heading": "What Max 4.0 combines",
+      "paragraphs": [
+        "Max 4.0 brings together three named layers. Cortex supplies vision and planning models for construction tasks and mobility. Form is the family of robots and tooling engineered for field work. IQ manages service performance, fleet information and deployment analysis, with feedback used to train the models.",
+        "The company says completed tasks generate operating data that inform later deployments. The useful loop runs from perception and planning to a physical action, then back through information about how the service performed. Fleet management connects those individual actions to the wider construction operation.",
+        "Maximo’s expansion plans include feeding and attaching materials, site logistics, cleanup and similar work in adjacent construction domains. Each additional task would extend the workflow the company serves. The operating evidence in the latest announcement centres on solar module placement."
+      ]
+    },
+    {
+      "heading": "The 2027 conversion test",
+      "paragraphs": [
+        "The three million task pipeline represents prospective work. Its associated 1.5 gigawatts describes the solar installation scope connected to that demand. The pipeline should be assessed through its conversion into deployments and completed tasks, rather than counted as delivered output or automatically treated as contracted revenue.",
+        "Scaling the service will require tooling, crews, logistics and support to work together across more projects. Maximo says its priorities include expanding deployments, improving service dependability and extending its offerings. Those priorities fit a business paid for repeated execution in changing outdoor environments.",
+        "The meaningful signals from here are additional completed work, continued contractor adoption and productivity that holds up as deployments expand. Maximo has reported a commercial operating milestone. Its much larger 2027 opportunity now has to make the journey from planned workload to construction finished in the field."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Maximo Robotics operating announcement, October 29, 2026",
+      "url": "https://www.prnewswire.com/news-releases/maximo-robotics-surpasses-300-000-construction-tasks-with-physical-ai-in-utility-scale-solar-302922781.html"
+    },
+    {
+      "label": "Maximo Robotics platform, commercial model and current results",
+      "url": "https://maxrobotics.ai/"
+    },
+    {
+      "label": "Maximo Bellefield 100 MW installation announcement, March 25, 2026",
+      "url": "https://www.prnewswire.com/news-releases/maximo-completes-100-mw-of-robotic-solar-installation-302723835.html"
+    },
+    {
+      "label": "Rocking Robots coverage of the completed task milestone, October 30, 2026",
+      "url": "https://www.rockingrobots.com/maximo-robotics-completes-more-than-300000-construction-tasks-in-utility-scale-solar-projects/"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "construction",
+    "relevantIndustries": [
+      "energy-utilities"
+    ],
+    "technologies": [
+      "industrial-robotics",
+      "computer-vision"
+    ],
+    "applications": [
+      "solar-installation",
+      "material-handling"
+    ]
+  }
+},
+{
   "slug": "opentrons-40m-ai-laboratory-robots",
   "title": "Opentrons raises $40 million to connect AI experiment design with laboratory robots",
   "summary": "The $40 million Series E will support the robots, protocol software and data infrastructure that connect an AI’s proposed experiment with a result from the physical laboratory.",
