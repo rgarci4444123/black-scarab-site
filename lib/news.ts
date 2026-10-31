@@ -34,6 +34,131 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "pokebot-roboapi-outside-robot-testing",
+  "title": "PokeBot opens RoboAPI for outside robot testing, with commercial use still excluded",
+  "summary": "PokeBot’s free RoboAPI preview lets developers test its action model on compatible robot arms. The documentation shows the camera, calibration and local control work behind that access.",
+  "category": "Robot Intelligence",
+  "publishedDate": "2026-10-31",
+  "publishedAt": "2026-10-31T19:41:09-04:00",
+  "publishedLabel": "October 31, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "5 min read",
+  "image": "/images/news/pokebot-roboapi-outside-robot-testing.png",
+  "imageAlt": "A large teal fisheye camera lens reflects a coral cup, a bowl and colored blocks beside a stylized robot gripper.",
+  "imageCaption": "Editorial illustration by Black Scarab, created with AI to interpret a robot’s view during outside model testing.",
+  "keyPoints": [
+    "RoboAPI opens access to PokeBot’s action model for testing on compatible robot arms.",
+    "The free technical preview excludes commercial use and services to for profit third parties.",
+    "Camera geometry, calibration and local execution remain part of the integration."
+  ],
+  "sections": [
+    {
+      "heading": "An opening for outside tests",
+      "paragraphs": [
+        "PokeBot has opened RoboAPI, a free technical preview that gives outside developers access to its robot action model, while excluding commercial use and products or services for for profit third parties. Its launch page, dated October 30, invites testing on compatible robot arms.",
+        "The service is powered by PokeBot’s Poke-Aurora model. The company says it can follow instructions without collecting new training data for each task. Its central proposition is access: developers can investigate that claim on their own equipment.",
+        "An interface changes who can examine a model. A demonstration shows an execution chosen for an audience. Outside access makes it possible to choose different objects, repeat an awkward task and inspect a failure. The value of this opening will depend on what those tests reveal."
+      ]
+    },
+    {
+      "heading": "From an image to a movement",
+      "paragraphs": [
+        "The first API example accepts a wrist camera image, the robot’s current state and a task instruction. It returns a sequence of actions. That introductory program prints the predictions without commanding a device, making a useful distinction between a working API connection and a robot completing useful work.",
+        "A complete control loop has more responsibilities. It requests actions, validates their format and executes them within the controller’s coordinate, speed and motion limits. It then captures a fresh observation and reports what actually executed before requesting the next sequence.",
+        "The documentation uses task sessions and execution receipts to keep that exchange consistent. After a stop or communication failure, it instructs developers to discard unexecuted stale actions and check the robot’s state again. A retry must not cause a previous movement sequence to run twice.",
+        "This is where a software response becomes an integration problem. A correct prediction still needs the right interpretation by the machine receiving it. Accurate feedback about the last movement helps keep the model’s next request tied to the physical scene."
+      ]
+    },
+    {
+      "heading": "The camera is part of the setup",
+      "paragraphs": [
+        "The hardware guide describes a Universal Robots reference configuration using UR5, UR5e or UR7e arms, a Robotiq 2F-85 gripper and a Linux control computer. Separate instructions cover Franka hardware. The camera options include the Insta360 Ace Pro 2 and DJI Osmo Action 6 with the specified lens accessories.",
+        "The wrist view matters as much as the device connection. PokeBot’s guide treats fisheye distortion, camera placement and the gripper’s position within the image as part of the expected input. Increasing an ordinary perspective camera’s field of view does not reproduce the same projection.",
+        "That helps explain why changing robot hardware involves more than changing an address in a configuration file. The model must receive a useful view of the workspace, and the controller must interpret the output in the intended frame. Standardizing those interfaces is part of making a model portable."
+      ]
+    },
+    {
+      "heading": "Calibration makes the frames agree",
+      "paragraphs": [
+        "The calibration procedure records a Home pose and three points on a level reference surface. Those measurements map the arm’s poses into the model’s coordinate frame. The instructions call for recalibration after changes to the tool assembly, Home pose or task axes.",
+        "For evaluation, this distinction is consequential. If the camera geometry or coordinate mapping is wrong, a failed grasp can reveal a setup error rather than a model limitation. Keeping the physical configuration consistent makes comparisons between attempts more informative.",
+        "PokeBot also provides a hardware adapter route for additional robots. Developers implement interfaces for the arm, parallel gripper and wrist camera, including measured feedback, target updates, recovery and cancellation. Existing components can be reused where suitable. The generated project provides a structure; its driver methods still require implementation."
+      ]
+    },
+    {
+      "heading": "What the reported results show",
+      "paragraphs": [
+        "PokeBot reports success rates of 86.0% for moving and organizing objects, 54.1% for pose and shape alignment, and 87.7% for environment interaction on its own benchmark. It describes nearly 1,000 object instances and nearly 10,000 instructions. These are company reported results.",
+        "The gap between categories is useful context. Even within the company’s evaluation, performance varies materially with the kind of manipulation involved. Treating a single successful task as evidence for every other task would lose that distinction.",
+        "Coverage by 42HOW Robotics also describes the public preview and its hardware transfer claims, drawing on PokeBot’s materials. That reporting corroborates the announcement; the performance evidence remains the developer’s own evaluation.",
+        "Black Scarab’s analysis is that outside testing is the more important next step. Repeated attempts on a documented setup can show how performance changes with object placement, task wording and interruptions. A collection of successful clips answers a narrower question than a record of all attempts."
+      ]
+    },
+    {
+      "heading": "Local control still matters",
+      "paragraphs": [
+        "The supplied runtime runs on the Linux computer connected to the arm, camera and gripper, with access to the model service. Its local console lets the developer manage the connected equipment and send tasks.",
+        "The operating instructions distinguish a configurable motion range from a physical barrier. They also warn that closing the browser does not stop a running task. Stopping requires the designated robot stop control or shutting down the local service.",
+        "Those details help define the responsibilities around an action model. Task interpretation, device control and stopping behavior have to work together. The interface can make model access easier while leaving the surrounding physical system essential to dependable execution."
+      ]
+    },
+    {
+      "heading": "The next milestone is evidence",
+      "paragraphs": [
+        "The current noncommercial boundary makes this an evaluation opening. It gives researchers a way to examine a model while keeping commercial deployment a separate milestone.",
+        "For the wider industry, the meaningful signal will be a growing body of reproducible outside results: which tasks transfer, how often they succeed, what causes failures and how much adaptation a new robot requires. Those observations would make the claim of generalization easier to assess.",
+        "Outside results will show whether easier access translates into repeatable robot performance."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "PokeBot RoboAPI launch page, October 30, 2026",
+      "url": "https://www.pokebot.com/ai"
+    },
+    {
+      "label": "RoboAPI documentation: Your first API call",
+      "url": "https://developers.pokebot.com/docs/roboapi/latest/cloud-quickstart"
+    },
+    {
+      "label": "RoboAPI hardware setup",
+      "url": "https://developers.pokebot.com/docs/roboapi/latest/hardware"
+    },
+    {
+      "label": "RoboAPI coordinate calibration",
+      "url": "https://developers.pokebot.com/docs/roboapi/latest/calibration"
+    },
+    {
+      "label": "RoboAPI hardware adapter guide",
+      "url": "https://developers.pokebot.com/docs/roboapi/latest/add-hardware"
+    },
+    {
+      "label": "RoboAPI installation and runtime instructions",
+      "url": "https://developers.pokebot.com/docs/roboapi/latest/software"
+    },
+    {
+      "label": "42HOW Robotics coverage, October 30, 2026",
+      "url": "https://ai.42how.com/en/article/19442b48-9e4c-4f3c-a0f9-af263b47db65"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [],
+    "technologies": [
+      "embodied-ai",
+      "foundation-models",
+      "manipulation"
+    ],
+    "applications": [
+      "robot-testing",
+      "model-deployment"
+    ]
+  }
+},
+{
   "slug": "maximo-300000-solar-construction-tasks",
   "title": "Maximo reports 300,000 solar construction tasks under pay per task contracts",
   "summary": "Maximo says its robots have completed more than 300,000 construction tasks under commercial service contracts. A further three million tasks in its 2027 pipeline remain prospective work.",
