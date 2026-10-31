@@ -93,6 +93,7 @@ export default function SiteFooter({ tone = "light" }: SiteFooterProps) {
         </div>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
           <nav aria-label="Footer resources" className="flex flex-wrap gap-x-5 gap-y-2">
+            <Link href="/about" className={linkClassName}>About</Link>
             <Link
               href="/resources/physical-ai-glossary"
               className={linkClassName}

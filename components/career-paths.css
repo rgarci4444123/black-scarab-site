@@ -1,0 +1,81 @@
+/* Styles scoped to the Career Paths hub and its four guides. */
+.career-section{--border:#e2e2e5;--ink:#101410;--muted:#6e6e73;--soft:#fafafa}
+.career-section.hub-main,.career-section.guide-main{padding:0 40px 64px;--career-accent:#5f64b1;--career-link:#0071e3}
+.career-section .eyebrow{font-size:10px;font-weight:600;letter-spacing:.19em;line-height:1.6;color:var(--muted)}
+.career-section .families-section{padding-top:48px}
+.career-section .family-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.career-section .family-card{display:grid;grid-template-columns:26px 1fr 20px;gap:20px;padding:32px 30px 35px;min-height:176px;border:1px solid var(--border);border-radius:24px;transition:background .15s,border-color .15s}
+.career-section .family-card:hover{background:#fafafa;border-color:#c5c5ca}
+.career-section .card-number{font-size:11px;font-variant-numeric:tabular-nums;letter-spacing:.02em;color:#88888d;line-height:1.8}
+.career-section .card-content h2{font-size:23px;line-height:1.2;font-weight:550;letter-spacing:-.04em;margin:0 0 13px}
+.career-section .card-content p{color:var(--muted);font-size:14px;line-height:1.7;max-width:360px}
+.career-section .card-arrow{color:var(--career-link);padding-top:1px;transition:transform .15s}
+.career-section .family-card:hover .card-arrow{transform:translateX(3px)}
+.career-section .breadcrumbs{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;font-size:12px;line-height:20px;color:var(--muted);padding:28px 0}
+.career-section .breadcrumbs a:hover{text-decoration:underline;text-underline-offset:4px}
+.career-section .back-link{display:inline-flex;gap:9px;align-items:center;color:var(--career-link)}
+.career-section .guide-index{display:flex;justify-content:center;flex-wrap:wrap;gap:16px 28px;padding:0 0 28px;border-bottom:1px solid var(--border);font-size:12px;line-height:20px;color:var(--muted)}
+.career-section .guide-index a:hover{color:var(--career-link)}
+.career-section .guide-layout{max-width:800px;margin:0 auto;padding-top:44px}
+.career-section .guide-body section{scroll-margin-top:110px;margin-bottom:48px}
+.career-section .guide-body h2{font-size:28px;line-height:1.2;letter-spacing:-.025em;font-weight:600;margin:0 0 22px}
+.career-section .guide-body p{font-size:16px;line-height:1.85;color:#606067;margin:0 0 17px}
+.career-section .guide-body h3{font-size:18px;line-height:1.4;font-weight:550;letter-spacing:-.02em}
+.career-section .guide-body .eyebrow{font-size:10px;line-height:1.6;margin-bottom:12px;color:var(--career-accent)}
+.career-section .example{border:1px solid var(--border);border-radius:24px;background:#fff;padding:28px;margin-top:28px}
+.career-section .example h3{margin-bottom:12px}
+.career-section .example p:last-child{margin-bottom:0;font-size:15px}
+.career-section .section-heading{display:flex;justify-content:space-between;align-items:baseline;gap:20px}
+.career-section .small-label{font-size:9px;letter-spacing:.12em;color:var(--muted);white-space:nowrap}
+.career-section .occupation-list{margin:0;border-top:1px solid var(--border)}
+.career-section .occupation{padding:23px 0;border-bottom:1px solid var(--border)}
+.career-section .occupation dt{font-size:18px;font-weight:550;letter-spacing:-.025em;margin-bottom:7px}
+.career-section .occupation dd{margin:0;color:var(--muted);font-size:15px;line-height:1.75}
+.career-section .skills-columns{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:25px}
+.career-section .skills-columns ul{padding-left:17px;margin:13px 0 0;color:var(--muted);font-size:15px;line-height:1.8}
+.career-section .skills-columns li{padding-left:3px;margin:4px 0}
+.career-section .related-article{border:1px solid var(--border);border-radius:24px;padding:26px;display:flex;justify-content:space-between;gap:24px;align-items:center}
+.career-section .related-article:hover{background:var(--soft)}
+.career-section .related-article>svg{color:var(--career-link);flex-shrink:0}
+.career-section .related-article .eyebrow{display:block;margin-bottom:9px;font-size:9px}
+.career-section .sources{margin-top:26px;border-bottom:1px solid var(--border);padding-bottom:20px;color:var(--muted);font-size:12px}
+.career-section .sources summary{cursor:pointer}
+.career-section .sources ul{list-style:none;padding:12px 0 0;margin:0}
+.career-section .sources li{margin:15px 0;line-height:1.7}
+.career-section .sources li span{display:block;font-size:11px}
+.career-section .sources a{text-decoration:underline;text-underline-offset:3px}
+.career-section .other-families{border-top:1px solid var(--border);padding-top:32px;margin-top:10px}
+.career-section .other-families .family-grid{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:24px}
+.career-section .other-families .family-card{padding:28px 24px;grid-template-columns:20px 1fr 20px;gap:12px}
+.career-section .other-families .card-content h2{font-size:21px}
+.career-section .research-record{border-bottom:1px solid var(--border);padding:20px 0}
+.career-section .research-note,.career-section .research-sources{font-size:12px!important;color:var(--muted)}
+.career-section .research-sources{line-height:1.7;padding-left:17px}
+.career-section .research-sources a{text-decoration:underline}
+@media(min-width:1450px){.career-section.hub-main{padding-bottom:75px}.career-section .family-card{min-height:185px}}
+@media(max-width:1100px){.career-section .family-card{padding:28px 24px;gap:16px}.career-section .card-content h2{font-size:21px}}
+@media(max-width:1000px){.career-section .other-families .family-grid{grid-template-columns:1fr}.career-section .other-families .family-card{min-height:0;grid-template-columns:26px 1fr 20px}.career-section .other-families .card-content p{max-width:none}}
+@media(max-width:900px){.career-section .family-card{grid-template-columns:22px 1fr 18px;gap:12px}.career-section .card-content h2{font-size:20px}.career-section .card-content p{font-size:13px}}
+@media(max-width:650px){
+.career-section.hub-main,.career-section.guide-main{padding:0 24px 40px}
+.career-section .families-section{padding-top:32px}
+.career-section .eyebrow{font-size:9px;letter-spacing:.16em}
+.career-section .family-grid{grid-template-columns:1fr;gap:16px}
+.career-section .family-card{min-height:155px;padding:26px 20px;grid-template-columns:22px 1fr 18px;gap:13px}
+.career-section .card-content h2{font-size:21px;line-height:1.25;margin-bottom:11px}
+.career-section .card-content p{font-size:14px;line-height:1.65}
+.career-section .card-number{font-size:10px}
+.career-section .breadcrumbs{font-size:11px;gap:8px;padding:24px 0}
+.career-section .guide-index{justify-content:flex-start;gap:12px 20px;font-size:11px;padding-bottom:24px}
+.career-section .guide-layout{padding-top:32px}
+.career-section .guide-body h2{font-size:24px}
+.career-section .guide-body p{font-size:15px}
+.career-section .guide-body section{margin-bottom:38px}
+.career-section .section-heading{display:block}
+.career-section .small-label{display:block;margin:-9px 0 19px}
+.career-section .skills-columns{grid-template-columns:1fr;gap:25px}
+.career-section .example{padding:23px}
+.career-section .other-families .family-card{padding:26px 20px;grid-template-columns:22px 1fr 18px;gap:13px}
+}
+@media(max-width:360px){.career-section .family-card{padding:23px 15px;gap:10px}.career-section .card-content h2{font-size:19px}}
+@media(prefers-reduced-motion:reduce){.career-section *,.career-section *::before,.career-section *::after{transition:none!important;animation:none!important}}

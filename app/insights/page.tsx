@@ -1,3 +1,4 @@
+import { SectionHero } from "@/components/section-hero";
 import { SitePage, SiteSurface } from "@/components/site-frame";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -47,21 +48,9 @@ export default function InsightsPage() {
       <SiteSurface>
         <SiteHeader homeHref="/" />
 
-        <section className="px-6 py-14 text-center md:px-10 md:py-18">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7856e8]">
-            Insights
-          </p>
-          <h1 className="mx-auto mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:text-5xl">
-            Deep analysis and practical guides
-          </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#6e6e73]">
-            Evergreen perspectives on physical AI, industrial deployment, and
-            the systems shaping real world operations.
+        <SectionHero section="insights" />
 
-          </p>
-        </section>
-
-        <section className="border-t border-[#e2e2e5] px-6 py-12 md:px-10">
+        <section className="px-6 py-12 md:px-10">
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {insights.map((insight) => (
               <Link

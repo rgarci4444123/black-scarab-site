@@ -1,0 +1,12 @@
+.section-hero{--border:#e2e2e5;--ink:#101410;--muted:#6e6e73;--section-accent:#5f64b1;padding:72px 40px;text-align:center;border-bottom:1px solid var(--border);background:#fff}
+.section-hero[data-section="news"]{--section-accent:#286fa9}
+.section-hero[data-section="insights"]{--section-accent:#7856e8}
+.section-hero[data-section="markets"]{--section-accent:#237d74}
+.section-hero[data-section="events"]{--section-accent:#a75b45}
+.section-hero[data-section="career-paths"]{--section-accent:#5f64b1}
+.section-hero .section-eyebrow{margin:0;color:var(--section-accent);font-size:14px;line-height:20px;font-weight:500;letter-spacing:.2em;text-transform:uppercase}
+.section-hero h1{max-width:896px;margin:16px auto 0;color:var(--ink);font-size:48px;line-height:52px;font-weight:600;letter-spacing:-.025em;text-wrap:balance}
+.section-hero .section-description{max-width:672px;min-height:64px;margin:20px auto 0;color:var(--muted);font-size:18px;line-height:32px;text-wrap:pretty}
+.career-section .section-hero{margin-inline:-40px}
+@media(max-width:767px){.section-hero{padding:56px 24px}.section-hero h1{font-size:36px;line-height:40px}.section-hero .section-description{min-height:0}}
+@media(max-width:650px){.career-section .section-hero{margin-inline:-24px}}

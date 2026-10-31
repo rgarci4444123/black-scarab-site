@@ -1,3 +1,4 @@
+import { SectionHero } from "@/components/section-hero";
 import { SitePage, SiteSurface } from "@/components/site-frame";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -35,17 +36,7 @@ export default function NewsPage() {
       <SiteSurface>
         <SiteHeader homeHref="/" />
 
-        <section className="border-b border-[#e2e2e5] px-6 py-14 text-center md:px-10 md:py-18">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#6e6e73]">
-            Black Scarab
-          </p>
-          <h1 className="mx-auto mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:text-5xl">
-            Physical AI News
-          </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#6e6e73]">
-            Timely, sourced reporting on the companies, machines, and markets shaping physical AI.
-          </p>
-        </section>
+        <SectionHero section="news" />
 
         <section className="px-6 py-10 md:px-10 md:py-14 lg:px-14">
           <div className="mx-auto max-w-6xl">

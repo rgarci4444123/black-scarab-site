@@ -6,6 +6,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { EngagementAnalytics } from "@/components/engagement-analytics";
 import NewsletterCapture from "@/components/newsletter-capture";
 import "./globals.css";
+import "@/components/section-hero.css";
+import "@/components/career-paths.css";
 
 const baseUrl = "https://www.blackscarab.ai";
 const organizationSchema = {
@@ -87,6 +89,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">

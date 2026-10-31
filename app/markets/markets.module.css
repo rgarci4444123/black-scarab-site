@@ -62,3 +62,6 @@
   .scope :global(.feature h3) { font-size: 28px; }
 }
 @media(prefers-reduced-motion: reduce) { .scope :global(.feature-image img) { transition: none; } }
+
+/* The shared section title sits outside the Markets content scope. */
+.scope{padding-top:40px}

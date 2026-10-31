@@ -13,5 +13,5 @@ export const primaryNavLinks: SiteNavLink[] = [
     isPage: true,
   },
   { label: "Events", href: "/events", isPage: true },
-  { label: "About", href: "/about", isPage: true },
+  { label: "Career Paths", href: "/career-paths", isPage: true },
 ];
