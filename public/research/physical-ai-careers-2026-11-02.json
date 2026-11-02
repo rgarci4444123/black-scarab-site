@@ -1,0 +1,3532 @@
+{
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "manifestHash": "6b48026839dcafc9d68144cf3fbedf38889984ad96f667a21e058b4d25f26f14",
+  "date": "2026-11-02",
+  "postingCount": 1029,
+  "employerCount": 46,
+  "roleReviewedCount": 71,
+  "rawPostingCount": 6926,
+  "inventoryCount": 5723,
+  "heldForReview": 2230,
+  "skillCoding": "automated",
+  "roles": [
+    {
+      "title": "Mechanical Engineer",
+      "category": "Hardware & Manufacturing",
+      "ownedOutput": "A mechanically viable robot subsystem.",
+      "guideScope": "Mechanisms, structures, packaging, tolerances, load analysis, prototypes and design for manufacture.",
+      "searchVariants": [
+        "Mechanical Design Engineer",
+        "Robotics Mechanical Engineer",
+        "Mechanism Engineer",
+        "Actuator Design Engineer"
+      ],
+      "boundary": "Owns the product design; manufacturing engineering owns repeatable production of it. Actuator design is an initial specialization rather than a separate launch guide.",
+      "id": "mechanical-engineer",
+      "familyId": "hardware-manufacturing",
+      "postingCount": 132,
+      "employerCount": 34,
+      "reviewedCount": 4,
+      "sample": "broad-sample",
+      "skills": [
+        {
+          "id": "cad",
+          "label": "CAD",
+          "count": 110,
+          "required": 74,
+          "preferred": 32,
+          "contextual": 4
+        },
+        {
+          "id": "machining",
+          "label": "Machining / fabrication",
+          "count": 75,
+          "required": 43,
+          "preferred": 19,
+          "contextual": 13
+        },
+        {
+          "id": "fea",
+          "label": "Finite element analysis",
+          "count": 71,
+          "required": 42,
+          "preferred": 20,
+          "contextual": 9
+        },
+        {
+          "id": "nx",
+          "label": "Siemens NX",
+          "count": 67,
+          "required": 41,
+          "preferred": 23,
+          "contextual": 3
+        },
+        {
+          "id": "gdt",
+          "label": "GD&T / tolerancing",
+          "count": 65,
+          "required": 45,
+          "preferred": 9,
+          "contextual": 11
+        },
+        {
+          "id": "solidworks",
+          "label": "SolidWorks",
+          "count": 63,
+          "required": 46,
+          "preferred": 15,
+          "contextual": 2
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Shield AI",
+          "count": 26
+        },
+        {
+          "name": "Anduril Industries",
+          "count": 21
+        },
+        {
+          "name": "Saronic",
+          "count": 12
+        },
+        {
+          "name": "Zipline",
+          "count": 10
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "1X",
+          "title": "Mechanical Design Engineer - Hands Thermal Systems",
+          "location": "San Carlos, CA",
+          "minimum": 175950,
+          "maximum": 253000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/1x/d6c59043-7a78-48ba-8f35-6d47b987a871",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "b3c3051ed825dc6c3019751332cdbc4da39f07e2b0bb6d4a0904fcd6888d58aa"
+        },
+        {
+          "employer": "Ambi Robotics",
+          "title": "Senior Project Engineer - Mechanical Systems",
+          "location": "Berkeley, California",
+          "minimum": 125000,
+          "maximum": 150000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/ambirobotics/3b1d169e-5302-488e-b187-095aa364e60f",
+          "verifiedAt": "2026-11-02T17:46:59+00:00",
+          "sourceTextSha256": "08d13c34b13af2b59ec69a838cb0833258c6b9bde97ad60a63893e44795b4cda"
+        },
+        {
+          "employer": "Applied Intuition",
+          "title": "Mechanical Engineer - New Grad (December 2026)",
+          "location": "Sunnyvale",
+          "minimum": 110000,
+          "maximum": 148000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/6e57a97e-62bb-46fb-92ec-dd12831fd6f9",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "4e54b4b91bd2a753a138ea65a60fde9a4c449b74d8068f21864212616735a2f8"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Agility Robotics",
+          "title": "Mechanical Engineer",
+          "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=5986750004",
+          "locations": [
+            "Fremont, California, United States",
+            "Hybrid- Fremont, CA"
+          ]
+        },
+        {
+          "employer": "Anduril Industries",
+          "title": "Mechanical Engineer, Thunder",
+          "url": "https://boards.greenhouse.io/andurilindustries/jobs/5165492007?gh_jid=5165492007",
+          "locations": [
+            "Costa Mesa, California, United States"
+          ]
+        },
+        {
+          "employer": "Apptronik",
+          "title": "Senior Mechanical Engineer",
+          "url": "https://boards.greenhouse.io/apptronik/jobs/5766164004?gh_jid=5766164004",
+          "locations": [
+            "Austin, TX",
+            "Austin, Texas"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Electrical Engineer",
+      "category": "Hardware & Manufacturing",
+      "ownedOutput": "Working robot electronics and electrical architecture.",
+      "guideScope": "Mixed-signal boards, sensing interfaces, power distribution, electrical integration and board bring-up.",
+      "searchVariants": [
+        "Electronics Engineer",
+        "Electrical Hardware Engineer",
+        "Power Electronics Engineer"
+      ],
+      "boundary": "Circuit and board design, distinguished from embedded software. Specialist power/charging roles can be expanded later.",
+      "id": "electrical-engineer",
+      "familyId": "hardware-manufacturing",
+      "postingCount": 111,
+      "employerCount": 25,
+      "reviewedCount": 4,
+      "sample": "broad-sample",
+      "skills": [
+        {
+          "id": "pcb",
+          "label": "PCB design",
+          "count": 63,
+          "required": 36,
+          "preferred": 9,
+          "contextual": 18
+        },
+        {
+          "id": "power-electronics",
+          "label": "Power electronics",
+          "count": 59,
+          "required": 34,
+          "preferred": 8,
+          "contextual": 17
+        },
+        {
+          "id": "altium",
+          "label": "Altium",
+          "count": 53,
+          "required": 32,
+          "preferred": 21,
+          "contextual": 0
+        },
+        {
+          "id": "signal-integrity",
+          "label": "Signal integrity / EMC",
+          "count": 53,
+          "required": 27,
+          "preferred": 12,
+          "contextual": 14
+        },
+        {
+          "id": "oscilloscope",
+          "label": "Oscilloscopes / instrumentation",
+          "count": 47,
+          "required": 36,
+          "preferred": 1,
+          "contextual": 10
+        },
+        {
+          "id": "networking",
+          "label": "Networking / communication protocols",
+          "count": 42,
+          "required": 34,
+          "preferred": 6,
+          "contextual": 2
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Anduril Industries",
+          "count": 22
+        },
+        {
+          "name": "Shield AI",
+          "count": 18
+        },
+        {
+          "name": "Saronic",
+          "count": 16
+        },
+        {
+          "name": "Apptronik",
+          "count": 7
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "1X",
+          "title": "Electrical Engineer - Hands",
+          "location": "San Carlos, CA",
+          "minimum": 134550,
+          "maximum": 253000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/1x/14a3f92c-24ec-4722-8754-d0d1366c9ed7",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "17baeddaae9c8d73476b4a6a2a44c0d09c5520cf5433224ebbdc4ef8dca71cc5"
+        },
+        {
+          "employer": "Applied Intuition",
+          "title": "Senior Electrical Engineer - Compute Hardware",
+          "location": "Sunnyvale",
+          "minimum": 140000,
+          "maximum": 220000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/852b1c5c-c5fb-48dd-bd28-f59847a8ff08",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "47099b39f80d2e8a55e0bb08ee63493d4214c2c4557802b3db244da0b9e5a660"
+        },
+        {
+          "employer": "FieldAI",
+          "title": "Electrical Engineer, Autonomous Vehicles (Federal)",
+          "location": "Irvine, CA",
+          "minimum": 100000,
+          "maximum": 240000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/field-ai/9ad21207-951e-43f5-a63f-69f02f7c95c2",
+          "verifiedAt": "2026-11-02T17:46:56+00:00",
+          "sourceTextSha256": "1f9d39ef15054b9c4dbe6c41ffc78895639e0434416a9d782eed6da838eff69c"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Anduril Industries",
+          "title": "Senior Electrical Engineer, Reserve and Backup Power",
+          "url": "https://boards.greenhouse.io/andurilindustries/jobs/5194664007?gh_jid=5194664007",
+          "locations": [
+            "Costa Mesa, California, United States"
+          ]
+        },
+        {
+          "employer": "Apptronik",
+          "title": "Electrical Engineer",
+          "url": "https://boards.greenhouse.io/apptronik/jobs/5780398004?gh_jid=5780398004",
+          "locations": [
+            "Austin, TX",
+            "Austin, Texas"
+          ]
+        },
+        {
+          "employer": "Shield AI",
+          "title": "Power Electronics - Electrical Engineer II",
+          "url": "https://jobs.lever.co/shieldai/622ee448-5ab3-4b2e-b20b-1fff995cbc45",
+          "locations": [
+            "Boston, Massachusetts",
+            "San Diego, California",
+            "Seattle, Washington"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Embedded Software Engineer",
+      "category": "Hardware & Manufacturing",
+      "ownedOutput": "Reliable software close to the robot hardware.",
+      "guideScope": "Microcontrollers, firmware, real-time operating systems, peripheral drivers, communication and hardware bring-up.",
+      "searchVariants": [
+        "Firmware Engineer",
+        "Embedded Firmware Engineer",
+        "Embedded Systems Engineer"
+      ],
+      "boundary": "The guide centers on device-level timing and hardware interaction. Application middleware and distributed robot runtime belong in the platform guide.",
+      "id": "embedded-software-engineer",
+      "familyId": "hardware-manufacturing",
+      "postingCount": 65,
+      "employerCount": 26,
+      "reviewedCount": 5,
+      "sample": "broad-sample",
+      "skills": [
+        {
+          "id": "cpp",
+          "label": "C++",
+          "count": 55,
+          "required": 44,
+          "preferred": 7,
+          "contextual": 4
+        },
+        {
+          "id": "c",
+          "label": "C",
+          "count": 47,
+          "required": 38,
+          "preferred": 3,
+          "contextual": 6
+        },
+        {
+          "id": "linux",
+          "label": "Linux",
+          "count": 39,
+          "required": 28,
+          "preferred": 7,
+          "contextual": 4
+        },
+        {
+          "id": "rtos",
+          "label": "RTOS",
+          "count": 38,
+          "required": 22,
+          "preferred": 9,
+          "contextual": 7
+        },
+        {
+          "id": "can",
+          "label": "CAN bus",
+          "count": 33,
+          "required": 20,
+          "preferred": 8,
+          "contextual": 5
+        },
+        {
+          "id": "spi",
+          "label": "SPI",
+          "count": 31,
+          "required": 22,
+          "preferred": 3,
+          "contextual": 6
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Anduril Industries",
+          "count": 8
+        },
+        {
+          "name": "Zoox",
+          "count": 8
+        },
+        {
+          "name": "Applied Intuition",
+          "count": 6
+        },
+        {
+          "name": "Zipline",
+          "count": 5
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "1X",
+          "title": "Firmware Engineer - Testing",
+          "location": "San Carlos, CA",
+          "minimum": 150000,
+          "maximum": 190000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/1x/4cb3ef10-8755-4050-b5f1-309591626d1c",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "22f68580f81323f38eab0f9c3125902162ab931ab442751fa8de31fc6bafc93b"
+        },
+        {
+          "employer": "Applied Intuition",
+          "title": "C++ Embedded Software Engineer - Drone Stack",
+          "location": "Sunnyvale",
+          "minimum": 135000,
+          "maximum": 200000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/3a79b874-e530-4e58-a55a-fa2364c42663",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "ca46b61541a6de1b854e5556b1a3b5f6a43786933ff23fb9443d69db4a6565f9"
+        },
+        {
+          "employer": "FieldAI",
+          "title": "Embedded Systems Engineer, Autonomous Vehicles (Federal)",
+          "location": "Irvine, CA",
+          "minimum": 100000,
+          "maximum": 240000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/field-ai/5aa0a3ef-b693-4404-829a-63d8b9dad776",
+          "verifiedAt": "2026-11-02T17:46:56+00:00",
+          "sourceTextSha256": "cb8496784be2513f3390b5720c00c198d588488444601aa13cde1727d4b6ebfd"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Anduril Industries",
+          "title": "Flight Software Engineer, Embedded C/C++, Air Dominance & Strike",
+          "url": "https://boards.greenhouse.io/andurilindustries/jobs/4164476007?gh_jid=4164476007",
+          "locations": [
+            "Costa Mesa, California, United States"
+          ]
+        },
+        {
+          "employer": "Apptronik",
+          "title": "Senior Firmware Engineer - Actuation",
+          "url": "https://boards.greenhouse.io/apptronik/jobs/6107174004?gh_jid=6107174004",
+          "locations": [
+            "Austin, TX"
+          ]
+        },
+        {
+          "employer": "Bedrock Robotics",
+          "title": "Embedded Software Engineer, Safety-Critical Systems",
+          "url": "https://jobs.ashbyhq.com/bedrock-robotics/7dbd80b9-8973-4908-a3b5-21fe7ea350b3",
+          "locations": [
+            "San Francisco, CA"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Manufacturing Engineer",
+      "category": "Hardware & Manufacturing",
+      "ownedOutput": "A repeatable process for producing robots at scale.",
+      "guideScope": "Assembly process definition, fixtures, work instructions, production validation, yield, new-product introduction and ramp.",
+      "searchVariants": [
+        "Manufacturing Process Engineer",
+        "NPI Engineer",
+        "Industrialization Engineer"
+      ],
+      "boundary": "Building the robot product at scale; integrating a robot into a customer factory is a different guide.",
+      "id": "manufacturing-engineer",
+      "familyId": "hardware-manufacturing",
+      "postingCount": 67,
+      "employerCount": 18,
+      "reviewedCount": 3,
+      "sample": "broad-sample",
+      "skills": [
+        {
+          "id": "root-cause",
+          "label": "Root cause analysis",
+          "count": 44,
+          "required": 19,
+          "preferred": 4,
+          "contextual": 21
+        },
+        {
+          "id": "machining",
+          "label": "Machining / fabrication",
+          "count": 38,
+          "required": 29,
+          "preferred": 6,
+          "contextual": 3
+        },
+        {
+          "id": "dfm-dfa",
+          "label": "Design for manufacturing / assembly",
+          "count": 37,
+          "required": 13,
+          "preferred": 3,
+          "contextual": 21
+        },
+        {
+          "id": "cad",
+          "label": "CAD",
+          "count": 32,
+          "required": 19,
+          "preferred": 13,
+          "contextual": 0
+        },
+        {
+          "id": "nx",
+          "label": "Siemens NX",
+          "count": 26,
+          "required": 11,
+          "preferred": 15,
+          "contextual": 0
+        },
+        {
+          "id": "lean",
+          "label": "Lean / Six Sigma",
+          "count": 25,
+          "required": 11,
+          "preferred": 11,
+          "contextual": 3
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Anduril Industries",
+          "count": 24
+        },
+        {
+          "name": "Saronic",
+          "count": 18
+        },
+        {
+          "name": "1X",
+          "count": 5
+        },
+        {
+          "name": "Skydio",
+          "count": 3
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "1X",
+          "title": "Senior Harness Manufacturing Engineer",
+          "location": "San Carlos, CA",
+          "minimum": 155000,
+          "maximum": 215000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/1x/873f836f-a4b6-4ef8-9500-b960cb1198f9",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "eedc303608db0f0b9a3539af7dd286ccaa2ff9d03489c641f708c75681582dfd"
+        },
+        {
+          "employer": "FieldAI",
+          "title": "Manufacturing Engineer, Robotics Hardware",
+          "location": "Irvine, CA",
+          "minimum": 100000,
+          "maximum": 199999,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/field-ai/61d53082-301f-4a1a-9439-180d10d4ebc0",
+          "verifiedAt": "2026-11-02T17:46:56+00:00",
+          "sourceTextSha256": "368a628458877118e8a2d7d7dfe1702152ec5a19490510668952e2d5a7b9d917"
+        },
+        {
+          "employer": "Standard Bots",
+          "title": "Electronics Manufacturing Engineer",
+          "location": "Glen Cove, NY",
+          "minimum": 110000,
+          "maximum": 145000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/standardbots/7ea413c0-82ad-48c2-a706-2fa8d6dba91a",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "839e1d0922dae3c0e403432bb5a41c1465d588ad44b92047028feaf3173d5b8f"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Anduril Industries",
+          "title": "Manufacturing Engineer, Composites Development",
+          "url": "https://boards.greenhouse.io/andurilindustries/jobs/5229600007?gh_jid=5229600007",
+          "locations": [
+            "Morrisville, North Carolina, United States"
+          ]
+        },
+        {
+          "employer": "Apptronik",
+          "title": "Senior Manufacturing Engineer - Assembly",
+          "url": "https://boards.greenhouse.io/apptronik/jobs/6237444004?gh_jid=6237444004",
+          "locations": [
+            "Austin, TX"
+          ]
+        },
+        {
+          "employer": "Figure",
+          "title": "Manufacturing Engineer",
+          "url": "https://job-boards.greenhouse.io/figureai/jobs/4375064006",
+          "locations": [
+            "San Jose, CA",
+            "San Jose, California, United States"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hardware Test Engineer",
+      "category": "Hardware & Manufacturing",
+      "ownedOutput": "Evidence that physical hardware meets its requirements.",
+      "guideScope": "Instrumented benches and fixtures, component characterization, environmental/lifetime testing and failure investigations.",
+      "searchVariants": [
+        "Hardware Validation Engineer",
+        "Mechanical Test Engineer",
+        "Reliability Test Engineer"
+      ],
+      "boundary": "Qualifies physical components and assemblies. System V&V centers on autonomy behavior, scenarios and release evidence. Both can use hardware-in-the-loop.",
+      "id": "hardware-test-engineer",
+      "familyId": "hardware-manufacturing",
+      "postingCount": 27,
+      "employerCount": 14,
+      "reviewedCount": 4,
+      "sample": "limited-sample",
+      "skills": [
+        {
+          "id": "python",
+          "label": "Python",
+          "count": 25,
+          "required": 16,
+          "preferred": 7,
+          "contextual": 2
+        },
+        {
+          "id": "root-cause",
+          "label": "Root cause analysis",
+          "count": 20,
+          "required": 6,
+          "preferred": 1,
+          "contextual": 13
+        },
+        {
+          "id": "oscilloscope",
+          "label": "Oscilloscopes / instrumentation",
+          "count": 15,
+          "required": 10,
+          "preferred": 2,
+          "contextual": 3
+        },
+        {
+          "id": "mes",
+          "label": "MES / manufacturing systems",
+          "count": 13,
+          "required": 2,
+          "preferred": 7,
+          "contextual": 4
+        },
+        {
+          "id": "networking",
+          "label": "Networking / communication protocols",
+          "count": 12,
+          "required": 10,
+          "preferred": 1,
+          "contextual": 1
+        },
+        {
+          "id": "can",
+          "label": "CAN bus",
+          "count": 11,
+          "required": 9,
+          "preferred": 1,
+          "contextual": 1
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Anduril Industries",
+          "count": 7
+        },
+        {
+          "name": "Zipline",
+          "count": 4
+        },
+        {
+          "name": "Agile Robots",
+          "count": 2
+        },
+        {
+          "name": "Apptronik",
+          "count": 2
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "Zoox",
+          "title": "Systems Integration Engineer",
+          "location": "Hayward, CA",
+          "minimum": 146000,
+          "maximum": 228000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/zoox/ac297a1f-2bd3-42bc-9f4f-7fdeb0273e06",
+          "verifiedAt": "2026-11-02T17:46:57+00:00",
+          "sourceTextSha256": "3a48c608eb7ea4986b667a78530928554b615a07818bc6e09a90d853509e60ac"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Anduril Industries",
+          "title": "Manufacturing Test Engineer, Product & Integration",
+          "url": "https://boards.greenhouse.io/andurilindustries/jobs/5270165007?gh_jid=5270165007",
+          "locations": [
+            "Quincy, Massachusetts, United States"
+          ]
+        },
+        {
+          "employer": "Apptronik",
+          "title": "Hardware Test Engineer – Dexterity",
+          "url": "https://boards.greenhouse.io/apptronik/jobs/5997414004?gh_jid=5997414004",
+          "locations": [
+            "Austin, TX"
+          ]
+        },
+        {
+          "employer": "Kodiak Robotics",
+          "title": "Manufacturing Test Engineer",
+          "url": "https://job-boards.greenhouse.io/kodiak/jobs/4417923009",
+          "locations": [
+            "Mountain View, CA",
+            "Mountain View, California, United States"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Robot Learning Engineer",
+      "category": "Intelligence & Autonomy",
+      "ownedOutput": "A trained policy that performs a physical task.",
+      "guideScope": "Reinforcement learning, imitation learning, vision-language-action models, experiments, policy evaluation and transfer to robots.",
+      "searchVariants": [
+        "Reinforcement Learning Engineer",
+        "Embodied AI Engineer",
+        "ML Engineer, Robotics",
+        "Research Engineer, Robot Learning"
+      ],
+      "boundary": "RL, imitation learning and VLA are initially methods/specializations within this guide. Work can overlap planning and control; classify by the primary responsibility.",
+      "id": "robot-learning-engineer",
+      "familyId": "intelligence-autonomy",
+      "postingCount": 57,
+      "employerCount": 25,
+      "reviewedCount": 2,
+      "sample": "broad-sample",
+      "skills": [
+        {
+          "id": "reinforcement-learning",
+          "label": "Reinforcement learning",
+          "count": 47,
+          "required": 23,
+          "preferred": 9,
+          "contextual": 15
+        },
+        {
+          "id": "python",
+          "label": "Python",
+          "count": 46,
+          "required": 36,
+          "preferred": 4,
+          "contextual": 6
+        },
+        {
+          "id": "pytorch",
+          "label": "PyTorch",
+          "count": 40,
+          "required": 30,
+          "preferred": 4,
+          "contextual": 6
+        },
+        {
+          "id": "imitation-learning",
+          "label": "Imitation learning / behavior cloning",
+          "count": 32,
+          "required": 13,
+          "preferred": 7,
+          "contextual": 12
+        },
+        {
+          "id": "vla",
+          "label": "Vision-language-action models",
+          "count": 28,
+          "required": 8,
+          "preferred": 12,
+          "contextual": 8
+        },
+        {
+          "id": "cpp",
+          "label": "C++",
+          "count": 25,
+          "required": 21,
+          "preferred": 4,
+          "contextual": 0
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "NVIDIA",
+          "count": 8
+        },
+        {
+          "name": "Applied Intuition",
+          "count": 7
+        },
+        {
+          "name": "Humanoid",
+          "count": 6
+        },
+        {
+          "name": "Agile Robots",
+          "count": 4
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "Applied Intuition",
+          "title": "Research Engineer - New Grad (2027)",
+          "location": "Sunnyvale",
+          "minimum": 140000,
+          "maximum": 200000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/45fc41cd-8280-4010-ba1f-def6114b3e39",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "f1f4d6f986276e358f3e2438f620f2c30130a00c004aea06364c3f0285423016"
+        },
+        {
+          "employer": "Dyna Robotics",
+          "title": "Research Scientist",
+          "location": "Redwood City, CA",
+          "minimum": 200000,
+          "maximum": 400000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/dyna-robotics/357b1b23-0712-489e-b336-1462f186cba7",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "1d45778de8891ccd45344f9c9ca1f6cca2488ffe2021818d4e5dc7809448b300"
+        },
+        {
+          "employer": "FieldAI",
+          "title": "Senior Research Engineer, Humanoid Manipulation",
+          "location": "Boston, MA",
+          "minimum": 150000,
+          "maximum": 300000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/field-ai/f53cce40-b227-4a0d-94c5-ef038f2c6341",
+          "verifiedAt": "2026-11-02T17:46:56+00:00",
+          "sourceTextSha256": "fc316a1e9add0ad12c1c6a3507a41c6e94ed40b2033cd5155fc5849e41491c20"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Figure",
+          "title": "Reinforcement Learning Engineer, Whole Body Control",
+          "url": "https://job-boards.greenhouse.io/figureai/jobs/4671442006",
+          "locations": [
+            "San Jose, CA",
+            "San Jose, California, United States"
+          ]
+        },
+        {
+          "employer": "Skild AI",
+          "title": "Machine Learning Engineer, Reinforcement Learning",
+          "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/4125333008",
+          "locations": [
+            "Pittsburgh, San Mateo",
+            "San Mateo, Pittsburgh"
+          ]
+        },
+        {
+          "employer": "ANYbotics",
+          "title": "Senior Reinforcement Learning Engineer",
+          "url": "https://jobs.lever.co/anybotics/63f0c6db-0a1f-4a4a-87dd-9a43c9c2bdd2",
+          "locations": [
+            "Zurich, Switzerland"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Perception Engineer",
+      "category": "Intelligence & Autonomy",
+      "ownedOutput": "A useful interpretation of the robot’s surroundings.",
+      "guideScope": "Object/human detection, tracking, scene understanding, sensor fusion and production perception models.",
+      "searchVariants": [
+        "Computer Vision Engineer",
+        "Robotics Perception Engineer",
+        "AI Software Engineer, Perception"
+      ],
+      "boundary": "Computer vision is an initial specialization. Scene/object understanding is the center; robot pose estimation and mapping have their own guide. Some employers combine them.",
+      "id": "perception-engineer",
+      "familyId": "intelligence-autonomy",
+      "postingCount": 82,
+      "employerCount": 28,
+      "reviewedCount": 4,
+      "sample": "broad-sample",
+      "skills": [
+        {
+          "id": "computer-vision",
+          "label": "Computer vision",
+          "count": 59,
+          "required": 36,
+          "preferred": 13,
+          "contextual": 10
+        },
+        {
+          "id": "python",
+          "label": "Python",
+          "count": 59,
+          "required": 45,
+          "preferred": 3,
+          "contextual": 11
+        },
+        {
+          "id": "cpp",
+          "label": "C++",
+          "count": 58,
+          "required": 46,
+          "preferred": 5,
+          "contextual": 7
+        },
+        {
+          "id": "pytorch",
+          "label": "PyTorch",
+          "count": 39,
+          "required": 29,
+          "preferred": 4,
+          "contextual": 6
+        },
+        {
+          "id": "sensor-fusion",
+          "label": "Sensor fusion",
+          "count": 33,
+          "required": 13,
+          "preferred": 7,
+          "contextual": 13
+        },
+        {
+          "id": "state-estimation",
+          "label": "State estimation",
+          "count": 31,
+          "required": 18,
+          "preferred": 3,
+          "contextual": 10
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "NVIDIA",
+          "count": 9
+        },
+        {
+          "name": "Shield AI",
+          "count": 9
+        },
+        {
+          "name": "Applied Intuition",
+          "count": 8
+        },
+        {
+          "name": "Waymo",
+          "count": 8
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "1X",
+          "title": "AI Researcher - Perception",
+          "location": "San Carlos, CA",
+          "minimum": 200000,
+          "maximum": 300000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/1x/8065ae1f-697e-4b73-9ae2-cc55a5373991",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "cea91d826e38f0d1ce3ec9d57e856a16e3fd9a85ff89b0a98103f74691a5f7d7"
+        },
+        {
+          "employer": "Applied Intuition",
+          "title": "ML Perception Software Engineer",
+          "location": "Sunnyvale",
+          "minimum": 180000,
+          "maximum": 250000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/f32b991c-3e21-445d-8ebd-98aaf31e1ae0",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "b713526382d8f37ea72e78674bcb80d2384052ade11aee1bcf7876ce5ffbe53c"
+        },
+        {
+          "employer": "FieldAI",
+          "title": "Perception Engineer, 3D Representation & Navigation",
+          "location": "Irvine, CA",
+          "minimum": 135000,
+          "maximum": 190000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/field-ai/bb127cde-930c-446f-908d-52e2c6f24cc9",
+          "verifiedAt": "2026-11-02T17:46:56+00:00",
+          "sourceTextSha256": "792704de6450630b3cad1ad80f3fd0287b4a33699c8665e1dbc323e837a1c270"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Agility Robotics",
+          "title": "Senior AI Software Engineer, Perception",
+          "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=6210999004",
+          "locations": [
+            "Fremont, California, United States",
+            "Hybrid- Any Office (Fremont, CA, Salem, OR, or Pittsburgh, PA)",
+            "Pittsburgh, Pennsylvania, United States"
+          ]
+        },
+        {
+          "employer": "Figure",
+          "title": "Helix AI Engineer, Perception",
+          "url": "https://job-boards.greenhouse.io/figureai/jobs/4007375006",
+          "locations": [
+            "San Jose, CA",
+            "San Jose, California, United States"
+          ]
+        },
+        {
+          "employer": "May Mobility",
+          "title": "Lead ML/Perception Engineer",
+          "url": "https://job-boards.greenhouse.io/maymobility/jobs/8582594002",
+          "locations": [
+            "USA - Remote"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Motion Planning Engineer",
+      "category": "Intelligence & Autonomy",
+      "ownedOutput": "A feasible path, trajectory or action sequence.",
+      "guideScope": "Collision avoidance, trajectory optimization, behavior/decision planning, constraints and scenario evaluation.",
+      "searchVariants": [
+        "Software Engineer, Planning",
+        "Navigation Engineer",
+        "Trajectory Optimization Engineer"
+      ],
+      "boundary": "Choosing intended motion; the controls guide centers on executing and stabilizing that motion. Broad navigation titles require description-level classification.",
+      "id": "motion-planning-engineer",
+      "familyId": "intelligence-autonomy",
+      "postingCount": 25,
+      "employerCount": 10,
+      "reviewedCount": 2,
+      "sample": "limited-sample",
+      "skills": [
+        {
+          "id": "cpp",
+          "label": "C++",
+          "count": 25,
+          "required": 19,
+          "preferred": 4,
+          "contextual": 2
+        },
+        {
+          "id": "motion-planning",
+          "label": "Motion planning",
+          "count": 24,
+          "required": 16,
+          "preferred": 2,
+          "contextual": 6
+        },
+        {
+          "id": "python",
+          "label": "Python",
+          "count": 9,
+          "required": 6,
+          "preferred": 3,
+          "contextual": 0
+        },
+        {
+          "id": "optimization",
+          "label": "Numerical optimization",
+          "count": 5,
+          "required": 5,
+          "preferred": 0,
+          "contextual": 0
+        },
+        {
+          "id": "state-estimation",
+          "label": "State estimation",
+          "count": 5,
+          "required": 0,
+          "preferred": 2,
+          "contextual": 3
+        },
+        {
+          "id": "c",
+          "label": "C",
+          "count": 4,
+          "required": 3,
+          "preferred": 1,
+          "contextual": 0
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Shield AI",
+          "count": 5
+        },
+        {
+          "name": "Kodiak Robotics",
+          "count": 4
+        },
+        {
+          "name": "Applied Intuition",
+          "count": 3
+        },
+        {
+          "name": "Zoox",
+          "count": 3
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "Applied Intuition",
+          "title": "Software Engineer - Motion Planning (Fallback Stack)",
+          "location": "Sunnyvale",
+          "minimum": 151000,
+          "maximum": 240000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/6288cb30-1d6d-4235-962a-d0e5d72a369a",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "37cbcc91bea053d3addeaf370734503d3bb9958d2582d0f47c86863a03a50aa0"
+        },
+        {
+          "employer": "Pickle Robot",
+          "title": "Software Engineer – Task & Motion Planning",
+          "location": "Charlestown, MA",
+          "minimum": 168570,
+          "maximum": 200687,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/picklerobot/44a2d3e8-54d3-4a41-9085-0e7a2cbefc7d",
+          "verifiedAt": "2026-11-02T17:47:00+00:00",
+          "sourceTextSha256": "c02f981c3fe12568cd37d6b42fc2e4fb62c76c492e88d9b2f977d8c18cbd807e"
+        },
+        {
+          "employer": "Shield AI",
+          "title": "Autonomy Engineer- Behavior and Motion Planning (R6007)",
+          "location": "San Diego, California",
+          "minimum": 135000,
+          "maximum": 300000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/shieldai/68a9b3cd-6c74-4cd7-a69f-36f1b92bb623",
+          "verifiedAt": "2026-11-02T17:46:57+00:00",
+          "sourceTextSha256": "b78d5d3c3fd9a08e8151faacd071c36c125215b8e249c841b988f42ed157644c"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Gatik",
+          "title": "Senior Behavior Planning Engineer",
+          "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4591049006?gh_jid=4591049006",
+          "locations": [
+            "Santa Clara, CA",
+            "Santa Clara, California, United States"
+          ]
+        },
+        {
+          "employer": "Zoox",
+          "title": "Software Engineer - Motion Planning",
+          "url": "https://jobs.lever.co/zoox/7dd45151-9d8a-45a4-bb33-86fb88c1995d",
+          "locations": [
+            "Foster City, CA"
+          ]
+        },
+        {
+          "employer": "Applied Intuition",
+          "title": "Senior Software Engineer - Planning",
+          "url": "https://jobs.ashbyhq.com/applied/71413c0e-3150-42ce-9640-37269a6ee7c0",
+          "locations": [
+            "Tokyo"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Robotics Controls Engineer",
+      "category": "Intelligence & Autonomy",
+      "ownedOutput": "Stable and accurate physical motion.",
+      "guideScope": "Robot dynamics, feedback control, system identification, controller tuning, joint/whole-body control and hardware experiments.",
+      "searchVariants": [
+        "Controls Engineer, Actuation",
+        "Control Systems Engineer",
+        "Robotic Algorithms and Controls Engineer"
+      ],
+      "boundary": "Robot dynamics and feedback, differentiated from PLC-based industrial sequencing in Integration & Operations. Learned control also connects to the learning guide.",
+      "id": "robotics-controls-engineer",
+      "familyId": "intelligence-autonomy",
+      "postingCount": 35,
+      "employerCount": 19,
+      "reviewedCount": 3,
+      "sample": "limited-sample",
+      "skills": [
+        {
+          "id": "cpp",
+          "label": "C++",
+          "count": 29,
+          "required": 23,
+          "preferred": 4,
+          "contextual": 2
+        },
+        {
+          "id": "feedback-control",
+          "label": "Feedback control",
+          "count": 21,
+          "required": 15,
+          "preferred": 4,
+          "contextual": 2
+        },
+        {
+          "id": "python",
+          "label": "Python",
+          "count": 19,
+          "required": 14,
+          "preferred": 3,
+          "contextual": 2
+        },
+        {
+          "id": "c",
+          "label": "C",
+          "count": 14,
+          "required": 7,
+          "preferred": 3,
+          "contextual": 4
+        },
+        {
+          "id": "matlab",
+          "label": "MATLAB",
+          "count": 14,
+          "required": 9,
+          "preferred": 4,
+          "contextual": 1
+        },
+        {
+          "id": "simulink",
+          "label": "Simulink",
+          "count": 13,
+          "required": 8,
+          "preferred": 4,
+          "contextual": 1
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Humanoid",
+          "count": 6
+        },
+        {
+          "name": "Anduril Industries",
+          "count": 4
+        },
+        {
+          "name": "Kodiak Robotics",
+          "count": 3
+        },
+        {
+          "name": "Shield AI",
+          "count": 3
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "1X",
+          "title": "Senior Motor Control Engineer",
+          "location": "San Carlos, CA",
+          "minimum": 180000,
+          "maximum": 230000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/1x/7e9120d6-87d0-458b-b0ec-3b6ea5ea9dc7",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "bda48e4de775adc988f2ad09c653ac41cd2d387af341ef4e954704aaa3194970"
+        },
+        {
+          "employer": "Applied Intuition",
+          "title": "Software Engineer - Control Center",
+          "location": "Sunnyvale",
+          "minimum": 135000,
+          "maximum": 185000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/f55422c0-c807-4f35-935e-4ce089d926d7",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "cb40b0659ea60a63edb729b44621bc1c72737041dbf9e14605ee8354bfe7224e"
+        },
+        {
+          "employer": "Generalist",
+          "title": "Software Engineer: Robotics Controls",
+          "location": "San Francisco Bay Area (San Mateo) or Boston (Somerville)",
+          "minimum": 200000,
+          "maximum": 350000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/generalist/ebace75d-6896-45f5-a12c-3c0699c9d7a6",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "1dd1a25306b8bec89c2bc6e75a5c7fe8f7d0c3014045cf326911935d28930363"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Apptronik",
+          "title": "Controls Engineer - Actuation",
+          "url": "https://boards.greenhouse.io/apptronik/jobs/6188799004?gh_jid=6188799004",
+          "locations": [
+            "Austin, TX"
+          ]
+        },
+        {
+          "employer": "Kodiak Robotics",
+          "title": "Software Engineer, Controls (C++)",
+          "url": "https://job-boards.greenhouse.io/kodiak/jobs/4312761009",
+          "locations": [
+            "Mountain View, CA",
+            "Mountain View, California, United States"
+          ]
+        },
+        {
+          "employer": "Standard Bots",
+          "title": "Senior Robotics Control Systems Engineer",
+          "url": "https://jobs.ashbyhq.com/standardbots/7a6d5b7f-9210-41c7-b7b5-c32bd7d95bc9",
+          "locations": [
+            "Glen Cove, NY"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Localization & Mapping Engineer",
+      "category": "Intelligence & Autonomy",
+      "ownedOutput": "An estimate of robot pose and a usable spatial map.",
+      "guideScope": "State estimation, visual-inertial systems, SLAM, calibration, sensor fusion and geometric optimization.",
+      "searchVariants": [
+        "SLAM Engineer",
+        "State Estimation Engineer",
+        "Localization Engineer",
+        "Calibration and Mapping Engineer"
+      ],
+      "boundary": "A distinct estimation and geometry pathway even though perception teams may own it organizationally. Avoid making separate launch guides for SLAM and localization.",
+      "id": "localization-mapping-engineer",
+      "familyId": "intelligence-autonomy",
+      "postingCount": 23,
+      "employerCount": 13,
+      "reviewedCount": 5,
+      "sample": "limited-sample",
+      "skills": [
+        {
+          "id": "cpp",
+          "label": "C++",
+          "count": 21,
+          "required": 17,
+          "preferred": 0,
+          "contextual": 4
+        },
+        {
+          "id": "state-estimation",
+          "label": "State estimation",
+          "count": 20,
+          "required": 13,
+          "preferred": 5,
+          "contextual": 2
+        },
+        {
+          "id": "slam",
+          "label": "SLAM",
+          "count": 17,
+          "required": 12,
+          "preferred": 4,
+          "contextual": 1
+        },
+        {
+          "id": "python",
+          "label": "Python",
+          "count": 15,
+          "required": 11,
+          "preferred": 1,
+          "contextual": 3
+        },
+        {
+          "id": "sensor-fusion",
+          "label": "Sensor fusion",
+          "count": 13,
+          "required": 8,
+          "preferred": 3,
+          "contextual": 2
+        },
+        {
+          "id": "computer-vision",
+          "label": "Computer vision",
+          "count": 12,
+          "required": 8,
+          "preferred": 3,
+          "contextual": 1
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Shield AI",
+          "count": 5
+        },
+        {
+          "name": "FieldAI",
+          "count": 3
+        },
+        {
+          "name": "Applied Intuition",
+          "count": 2
+        },
+        {
+          "name": "Figure",
+          "count": 2
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "Applied Intuition",
+          "title": "Software Engineer - Onboard Maps and State Estimation",
+          "location": "Sunnyvale",
+          "minimum": 190000,
+          "maximum": 265000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/6b7aacaa-32e3-4d58-93e6-7d7068f44617",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "788842abab884b4c49ab6372175e7b72c529656acbb5091f1063a12db43a4cc5"
+        },
+        {
+          "employer": "FieldAI",
+          "title": "Senior Robotics Software Engineer, 3D Mapping",
+          "location": "Irvine, CA",
+          "minimum": 160000,
+          "maximum": 240000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/field-ai/8f3af86b-ded0-4c8a-a657-b89e50256bdd",
+          "verifiedAt": "2026-11-02T17:46:56+00:00",
+          "sourceTextSha256": "9962cfec6d61cf957b38530784866b06d9b26154121cb183fe69be40835bde36"
+        },
+        {
+          "employer": "Shield AI",
+          "title": "Senior Principal Engineer, GNC & State Estimation (R6233)",
+          "location": "Remote / San Diego, California",
+          "minimum": 260000,
+          "maximum": 390000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/shieldai/58b3440f-229c-4aad-9535-47419660931c",
+          "verifiedAt": "2026-11-02T17:46:57+00:00",
+          "sourceTextSha256": "6ea25190f15e3b6008f498028e085ba583e82458ddc7bec102cb566c9767a5e4"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Anduril Industries",
+          "title": "Senior Robotics Software Engineer, Navigation/Localization",
+          "url": "https://boards.greenhouse.io/andurilindustries/jobs/5235471007?gh_jid=5235471007",
+          "locations": [
+            "Costa Mesa, California, United States"
+          ]
+        },
+        {
+          "employer": "Boston Dynamics",
+          "title": "Atlas Research Engineer, SLAM & Spatial AI",
+          "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-Office-POST/Research-Scientist--Spatial-AI---Perception_R2871",
+          "locations": [
+            "Waltham Office (POST)"
+          ]
+        },
+        {
+          "employer": "FieldAI",
+          "title": "Robotics AI Engineer – Calibration, Localization, and Mapping",
+          "url": "https://jobs.lever.co/field-ai/9524c7c2-8be2-4463-afe3-7c1c60f7e6f2",
+          "locations": [
+            "Boston, MA"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Simulation Engineer",
+      "category": "Platforms & Simulation",
+      "ownedOutput": "A virtual environment that represents relevant physical behavior.",
+      "guideScope": "Physics and sensor simulation, scene creation, simulator software, synthetic experience and sim-to-real fidelity.",
+      "searchVariants": [
+        "Robotics Simulation Engineer",
+        "Simulation Software Engineer",
+        "Digital Twin Engineer"
+      ],
+      "boundary": "Digital twin work is included as an initial specialization. Connected industrial twins can become a separate later guide when scope and audience warrant it. Simulation engineers build the environment; V&V engineers use environments and real robots to establish acceptance evidence.",
+      "id": "simulation-engineer",
+      "familyId": "platforms-simulation",
+      "postingCount": 63,
+      "employerCount": 21,
+      "reviewedCount": 4,
+      "sample": "broad-sample",
+      "skills": [
+        {
+          "id": "python",
+          "label": "Python",
+          "count": 52,
+          "required": 40,
+          "preferred": 7,
+          "contextual": 5
+        },
+        {
+          "id": "cpp",
+          "label": "C++",
+          "count": 48,
+          "required": 40,
+          "preferred": 7,
+          "contextual": 1
+        },
+        {
+          "id": "isaac-sim",
+          "label": "Isaac Sim",
+          "count": 15,
+          "required": 10,
+          "preferred": 5,
+          "contextual": 0
+        },
+        {
+          "id": "cicd",
+          "label": "CI/CD",
+          "count": 14,
+          "required": 5,
+          "preferred": 3,
+          "contextual": 6
+        },
+        {
+          "id": "docker",
+          "label": "Docker",
+          "count": 14,
+          "required": 10,
+          "preferred": 3,
+          "contextual": 1
+        },
+        {
+          "id": "linux",
+          "label": "Linux",
+          "count": 14,
+          "required": 12,
+          "preferred": 2,
+          "contextual": 0
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Shield AI",
+          "count": 12
+        },
+        {
+          "name": "NVIDIA",
+          "count": 11
+        },
+        {
+          "name": "Waymo",
+          "count": 6
+        },
+        {
+          "name": "Anduril Industries",
+          "count": 4
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "1X",
+          "title": "Principal Tools Engineer, Simulation",
+          "location": "San Carlos, CA",
+          "minimum": 190000,
+          "maximum": 280000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/1x/a7e8ba31-8369-4b44-ae26-efd4a23f7118",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "58518a5873974f7f09515c223e2db3ab57eb7c7cb8835699f929d47ce4a5e397"
+        },
+        {
+          "employer": "Applied Intuition",
+          "title": "Research Engineer - Robotic Hardware, Simulation and Data",
+          "location": "Sunnyvale",
+          "minimum": 126000,
+          "maximum": 423000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/4cb44794-7b3b-46fc-9408-104a6d0f379e",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "343cd70d9d1da4b95ef15bc93c7eff893ae573c41da76328df1d4d57e944f986"
+        },
+        {
+          "employer": "FieldAI",
+          "title": "Senior Robotics Software Engineer, Simulation & Evaluation",
+          "location": "Irvine, CA",
+          "minimum": 155000,
+          "maximum": 180000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/field-ai/eff30cb0-3457-476c-8367-0dd436f36b0f",
+          "verifiedAt": "2026-11-02T17:46:56+00:00",
+          "sourceTextSha256": "2205e698aa77c7ac604213854adaa27e439d640aa7b581d46470a4aea95d1463"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Dyna Robotics",
+          "title": "Research Scientist, Simulation",
+          "url": "https://jobs.ashbyhq.com/dyna-robotics/942cd530-b2b7-4141-8aaa-d844175e26ac",
+          "locations": [
+            "Redwood City, CA"
+          ]
+        },
+        {
+          "employer": "Shield AI",
+          "title": "Engineer II, Modelling and Simulation (R5712)",
+          "url": "https://jobs.lever.co/shieldai/2a942ccb-7f31-443e-a455-044081454b81",
+          "locations": [
+            "Melbourne"
+          ]
+        },
+        {
+          "employer": "Skild AI",
+          "title": "Simulation Engineer",
+          "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/4091609008",
+          "locations": [
+            "Bengaluru, Karnataka, India",
+            "San Mateo"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Robotics Platform Engineer",
+      "category": "Platforms & Simulation",
+      "ownedOutput": "A reusable software foundation for operating robots.",
+      "guideScope": "Robot middleware, runtime interfaces, on-robot services, edge/cloud connectivity, updates, observability and developer tooling.",
+      "searchVariants": [
+        "Robotics Middleware Engineer",
+        "Robot Infrastructure Engineer",
+        "Software Engineer, Robotics Platform"
+      ],
+      "boundary": "Shared application/runtime systems rather than autonomy algorithms, low-level microcontroller firmware or ML training infrastructure. Broad infrastructure titles need body-level interpretation.",
+      "id": "robotics-platform-engineer",
+      "familyId": "platforms-simulation",
+      "postingCount": 11,
+      "employerCount": 8,
+      "reviewedCount": 4,
+      "sample": "thin-sample",
+      "skills": [
+        {
+          "id": "cpp",
+          "label": "C++",
+          "count": 10,
+          "required": 7,
+          "preferred": 1,
+          "contextual": 2
+        },
+        {
+          "id": "python",
+          "label": "Python",
+          "count": 8,
+          "required": 6,
+          "preferred": 0,
+          "contextual": 2
+        },
+        {
+          "id": "linux",
+          "label": "Linux",
+          "count": 7,
+          "required": 5,
+          "preferred": 2,
+          "contextual": 0
+        },
+        {
+          "id": "c",
+          "label": "C",
+          "count": 6,
+          "required": 3,
+          "preferred": 3,
+          "contextual": 0
+        },
+        {
+          "id": "rust",
+          "label": "Rust",
+          "count": 5,
+          "required": 3,
+          "preferred": 0,
+          "contextual": 2
+        },
+        {
+          "id": "cicd",
+          "label": "CI/CD",
+          "count": 3,
+          "required": 2,
+          "preferred": 1,
+          "contextual": 0
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Applied Intuition",
+          "count": 3
+        },
+        {
+          "name": "Zoox",
+          "count": 2
+        },
+        {
+          "name": "FieldAI",
+          "count": 1
+        },
+        {
+          "name": "Figure",
+          "count": 1
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "Applied Intuition",
+          "title": "Robot Infrastructure Engineer - Collection Tooling",
+          "location": "Sunnyvale",
+          "minimum": 150000,
+          "maximum": 300000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/932de549-2882-4c0d-aeca-b4a8ef5f1f41",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "dde99c87541bad7a2e3b347eb3ad56f7ba766c63c75c6fa46f25bb5a334ab613"
+        },
+        {
+          "employer": "FieldAI",
+          "title": "Senior/Staff Software Engineer, Robotics Platform",
+          "location": "Irvine, CA",
+          "minimum": 150000,
+          "maximum": 215000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/field-ai/a0856b2f-3674-49fa-8546-9b823df597f2",
+          "verifiedAt": "2026-11-02T17:46:56+00:00",
+          "sourceTextSha256": "65cb024200cd37658d811d1ccd9911b783cdd97026246237ef58b09754082a00"
+        },
+        {
+          "employer": "Zoox",
+          "title": "Senior Software Engineer - Robot Software Infrastructure",
+          "location": "Foster City, CA",
+          "minimum": 219000,
+          "maximum": 315000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/zoox/f62f1083-acff-4862-984e-4d16d2a827a6",
+          "verifiedAt": "2026-11-02T17:46:57+00:00",
+          "sourceTextSha256": "13f3b559d1fbf0d8a9834bd73a195f680ebefa01c9310783abb5fea5ff0a5423"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Applied Intuition",
+          "title": "Middleware Engineer",
+          "url": "https://jobs.ashbyhq.com/applied/d58a932f-eb0d-43ff-a5fa-9f55531f085f",
+          "locations": [
+            "Stuttgart"
+          ]
+        },
+        {
+          "employer": "FieldAI",
+          "title": "Senior/Staff Software Engineer, Robotics Platform",
+          "url": "https://jobs.lever.co/field-ai/a0856b2f-3674-49fa-8546-9b823df597f2",
+          "locations": [
+            "Irvine, CA"
+          ]
+        },
+        {
+          "employer": "Figure",
+          "title": "Senior Software Engineer, Middleware Productivity",
+          "url": "https://job-boards.greenhouse.io/figureai/jobs/4609306006",
+          "locations": [
+            "San Jose, CA",
+            "San Jose, California, United States"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Robotics Data Engineer",
+      "category": "Platforms & Simulation",
+      "ownedOutput": "Training-ready and traceable robot datasets.",
+      "guideScope": "Multimodal recording, synchronization, episode schemas, quality checks, curation, splits, versioning and synthetic-data integration.",
+      "searchVariants": [
+        "Data Infrastructure Engineer, Robotics",
+        "Robot Data Pipeline Engineer",
+        "Data Engineer, Embodied AI"
+      ],
+      "boundary": "Owns the usable data supply. ML infrastructure owns the systems that execute training and evaluation efficiently. Smaller employers combine both.",
+      "id": "robotics-data-engineer",
+      "familyId": "platforms-simulation",
+      "postingCount": 29,
+      "employerCount": 19,
+      "reviewedCount": 2,
+      "sample": "limited-sample",
+      "skills": [
+        {
+          "id": "python",
+          "label": "Python",
+          "count": 24,
+          "required": 21,
+          "preferred": 2,
+          "contextual": 1
+        },
+        {
+          "id": "observability",
+          "label": "Observability / telemetry",
+          "count": 18,
+          "required": 12,
+          "preferred": 4,
+          "contextual": 2
+        },
+        {
+          "id": "cpp",
+          "label": "C++",
+          "count": 14,
+          "required": 9,
+          "preferred": 4,
+          "contextual": 1
+        },
+        {
+          "id": "data-curation",
+          "label": "Data curation / quality",
+          "count": 14,
+          "required": 7,
+          "preferred": 2,
+          "contextual": 5
+        },
+        {
+          "id": "kubernetes",
+          "label": "Kubernetes",
+          "count": 9,
+          "required": 6,
+          "preferred": 2,
+          "contextual": 1
+        },
+        {
+          "id": "aws",
+          "label": "AWS",
+          "count": 8,
+          "required": 6,
+          "preferred": 1,
+          "contextual": 1
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "FieldAI",
+          "count": 6
+        },
+        {
+          "name": "GRAM",
+          "count": 2
+        },
+        {
+          "name": "Humanoid",
+          "count": 2
+        },
+        {
+          "name": "Nuro",
+          "count": 2
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "Dyna Robotics",
+          "title": "Software Engineer, Data Infra",
+          "location": "Redwood City, CA",
+          "minimum": 180000,
+          "maximum": 270000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/dyna-robotics/43dcc186-62b1-4641-9365-3cb9767fc653",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "2c11ebe0fa4c8ea212b1f6ffe0315ee643a3e6a3a21bc339cb0f9132e96f6460"
+        },
+        {
+          "employer": "FieldAI",
+          "title": "Senior Data Operations Engineer",
+          "location": "Boston, MA",
+          "minimum": 110000,
+          "maximum": 140000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/field-ai/8a92d84f-7512-4d64-8d3a-c29b304358d6",
+          "verifiedAt": "2026-11-02T17:46:56+00:00",
+          "sourceTextSha256": "9102d9c4c2af825c052fac6b6f280c96667bb60b0fcd6c0512cf6da6a01cf5f7"
+        },
+        {
+          "employer": "Shield AI",
+          "title": "Staff Data & Analytics Engineer, Domain Enablement (R6112)",
+          "location": "Dallas, Texas",
+          "minimum": 160000,
+          "maximum": 240000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/shieldai/e2e44212-0cdb-4dde-b7c4-a981cc28ec43",
+          "verifiedAt": "2026-11-02T17:46:57+00:00",
+          "sourceTextSha256": "9fec0977c7818a71ff7f8fcba2b6a6e858eaa263fe2e1f254dd883c70dae0c47"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Agile Robots",
+          "title": "Robotics Data Engineer (m/f/d) Data Generation & Curation",
+          "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/5006103101",
+          "locations": [
+            "Munich, Bavaria, Germany"
+          ]
+        },
+        {
+          "employer": "Nuro",
+          "title": "Senior Software Engineer, Perception Data Infrastructure",
+          "url": "https://nuro.ai/careersitem?gh_jid=7736012",
+          "locations": [
+            "Mountain View, California (HQ)",
+            "Nuro HQ - Mountain View, CA"
+          ]
+        },
+        {
+          "employer": "Agility Robotics",
+          "title": "Staff Software Engineer, Data Platform",
+          "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=6144405004",
+          "locations": [
+            "Fremont, California, United States",
+            "Pittsburgh, Pennsylvania, United States",
+            "Remote",
+            "Remote, Oregon, United States",
+            "Salem, Oregon, United States"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Machine Learning Infrastructure Engineer",
+      "category": "Platforms & Simulation",
+      "ownedOutput": "Reliable and efficient systems for training and evaluating models.",
+      "guideScope": "Distributed training, GPU utilization, orchestration, experimentation infrastructure, performance profiling and model lifecycle tooling.",
+      "searchVariants": [
+        "Software Engineer, AI Training and Infrastructure",
+        "ML Platform Engineer",
+        "ML Training Optimization Engineer"
+      ],
+      "boundary": "Distinct from choosing learning algorithms and from producing datasets. GPU systems engineering is a deeper adjacent specialization for a later guide.",
+      "id": "machine-learning-infrastructure-engineer",
+      "familyId": "platforms-simulation",
+      "postingCount": 24,
+      "employerCount": 18,
+      "reviewedCount": 3,
+      "sample": "limited-sample",
+      "skills": [
+        {
+          "id": "python",
+          "label": "Python",
+          "count": 17,
+          "required": 15,
+          "preferred": 2,
+          "contextual": 0
+        },
+        {
+          "id": "pytorch",
+          "label": "PyTorch",
+          "count": 16,
+          "required": 12,
+          "preferred": 2,
+          "contextual": 2
+        },
+        {
+          "id": "distributed-training",
+          "label": "Distributed training",
+          "count": 15,
+          "required": 8,
+          "preferred": 2,
+          "contextual": 5
+        },
+        {
+          "id": "cpp",
+          "label": "C++",
+          "count": 12,
+          "required": 11,
+          "preferred": 1,
+          "contextual": 0
+        },
+        {
+          "id": "kubernetes",
+          "label": "Kubernetes",
+          "count": 11,
+          "required": 7,
+          "preferred": 2,
+          "contextual": 2
+        },
+        {
+          "id": "cicd",
+          "label": "CI/CD",
+          "count": 9,
+          "required": 3,
+          "preferred": 1,
+          "contextual": 5
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Zoox",
+          "count": 4
+        },
+        {
+          "name": "Nuro",
+          "count": 2
+        },
+        {
+          "name": "Physical Intelligence",
+          "count": 2
+        },
+        {
+          "name": "Skydio",
+          "count": 2
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "Applied Intuition",
+          "title": "Research Engineer - AI/RL Infrastructure",
+          "location": "Sunnyvale",
+          "minimum": 126000,
+          "maximum": 423000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/091ed808-95c9-420b-8061-0ff2eb9342bc",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "28446b6cb65cc6bd36747494ada8cbdb55e340b5e91b6ec81d9a515d11c2b53f"
+        },
+        {
+          "employer": "Rhoda AI",
+          "title": "Research Member of Technical Staff- Training Systems",
+          "location": "Mountain View",
+          "minimum": 200000,
+          "maximum": 300000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/rhoda-ai/643d697d-45c4-4505-8967-433df7873134",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "533222417ea35355e89f242c8fb6b608848fb606114fb5cb6a135b16aedc8fa2"
+        },
+        {
+          "employer": "Zoox",
+          "title": "Senior/Staff Software Engineer, ML Inference Optimization",
+          "location": "Foster City, CA / Seattle, WA",
+          "minimum": 254000,
+          "maximum": 350000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/zoox/2ed8a665-cee8-4d70-bcb1-e96b6214b371",
+          "verifiedAt": "2026-11-02T17:46:57+00:00",
+          "sourceTextSha256": "0901a240c2e6f1184750db2fbdca789019292c6ac1434eacd9d439e21d0e0ac2"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Apptronik",
+          "title": "Senior Software Engineer, ML Infrastructure",
+          "url": "https://boards.greenhouse.io/apptronik/jobs/6176116004?gh_jid=6176116004",
+          "locations": [
+            "Austin, TX"
+          ]
+        },
+        {
+          "employer": "Physical Intelligence",
+          "title": "ML Engineer, Platform",
+          "url": "https://jobs.ashbyhq.com/physicalintelligence/14586c10-d913-43c5-8f7c-c77b5c438e4c",
+          "locations": [
+            "San Francisco"
+          ]
+        },
+        {
+          "employer": "Skild AI",
+          "title": "Software Engineer, AI Training and Infrastructure",
+          "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/4136356008",
+          "locations": [
+            "Bengaluru, Karnataka, India",
+            "Pittsburgh, San Mateo, Bengaluru",
+            "San Mateo, CA"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Verification & Validation Engineer",
+      "category": "Platforms & Simulation",
+      "ownedOutput": "Evidence that robot capabilities satisfy defined system requirements.",
+      "guideScope": "Scenario suites, acceptance metrics, simulation/HIL/real-robot tests, regression infrastructure and reproducible failure analysis.",
+      "searchVariants": [
+        "Robotics Test Automation Engineer",
+        "Robot Software Test Engineer",
+        "Software Engineer, V&V",
+        "Autonomy Validation Engineer"
+      ],
+      "boundary": "System behavior and release qualification, differentiated from component hardware characterization and from safety-case ownership. This guide lives here because of its test infrastructure focus; work crosses all categories.",
+      "id": "verification-validation-engineer",
+      "familyId": "platforms-simulation",
+      "postingCount": 64,
+      "employerCount": 20,
+      "reviewedCount": 5,
+      "sample": "broad-sample",
+      "skills": [
+        {
+          "id": "python",
+          "label": "Python",
+          "count": 54,
+          "required": 42,
+          "preferred": 7,
+          "contextual": 5
+        },
+        {
+          "id": "cpp",
+          "label": "C++",
+          "count": 30,
+          "required": 22,
+          "preferred": 7,
+          "contextual": 1
+        },
+        {
+          "id": "hil",
+          "label": "Hardware-in-the-loop",
+          "count": 27,
+          "required": 9,
+          "preferred": 9,
+          "contextual": 9
+        },
+        {
+          "id": "linux",
+          "label": "Linux",
+          "count": 26,
+          "required": 13,
+          "preferred": 10,
+          "contextual": 3
+        },
+        {
+          "id": "root-cause",
+          "label": "Root cause analysis",
+          "count": 25,
+          "required": 8,
+          "preferred": 2,
+          "contextual": 15
+        },
+        {
+          "id": "cicd",
+          "label": "CI/CD",
+          "count": 21,
+          "required": 8,
+          "preferred": 7,
+          "contextual": 6
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Zoox",
+          "count": 7
+        },
+        {
+          "name": "Anduril Industries",
+          "count": 5
+        },
+        {
+          "name": "Humanoid",
+          "count": 5
+        },
+        {
+          "name": "NVIDIA",
+          "count": 5
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "1X",
+          "title": "Validation Test Technician",
+          "location": "San Carlos, CA",
+          "minimum": 30,
+          "maximum": 48,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/1x/83b69d9f-d72c-4509-a438-19c0c16b672e",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "d3413dc949c8a95a83083cd5f909e1b88f3b9d897c1f803463624094e0825659"
+        },
+        {
+          "employer": "Applied Intuition",
+          "title": "Autonomy Test Engineer",
+          "location": "San Diego, CA",
+          "minimum": 145000,
+          "maximum": 190000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/9ed264dc-6e49-4dba-b851-7c198b4f7916",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "f5de82a9b893901af3b9e5f5402055f6e2a3bbc515fbe3f0909b90636258e803"
+        },
+        {
+          "employer": "FieldAI",
+          "title": "Robotics Release Engineer, System Validation",
+          "location": "Irvine, CA",
+          "minimum": 135000,
+          "maximum": 170000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/field-ai/9e451b91-7633-4b86-bf64-38cd7bd6a8dc",
+          "verifiedAt": "2026-11-02T17:46:56+00:00",
+          "sourceTextSha256": "1f22464ee34052080a4333bc04eb327c6f054fc52e0add24aa6ad06206a7bec5"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "FieldAI",
+          "title": "Software Engineer, Verification & Validation",
+          "url": "https://jobs.lever.co/field-ai/e4504581-90cc-45a0-8084-f04f8145c75d",
+          "locations": [
+            "Irvine, CA"
+          ]
+        },
+        {
+          "employer": "Gatik",
+          "title": "Senior V&V Engineer – Software-in-the-Loop (SIL) & Simulation",
+          "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4711295006?gh_jid=4711295006",
+          "locations": [
+            "Santa Clara, CA",
+            "Santa Clara, California, United States"
+          ]
+        },
+        {
+          "employer": "Nimble Robotics",
+          "title": "HIL Test / Automation Engineer",
+          "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4332168009",
+          "locations": [
+            "San Francisco, CA",
+            "San Francisco, California, United States"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Systems Integration Engineer",
+      "category": "Integration & Operations",
+      "ownedOutput": "A robot solution that meets an application’s end-to-end requirements.",
+      "guideScope": "Hardware/software/model integration, workflow and interface configuration, throughput tuning, commissioning and customer/site acceptance.",
+      "searchVariants": [
+        "Robotics Application Engineer",
+        "Deployment Engineer",
+        "Commissioning Engineer",
+        "Robotics Systems Integration Engineer"
+      ],
+      "boundary": "Integration is a broad title. Include application/site performance work; exclude pure product electronics testing or middleware bring-up from this guide’s core. Field service may support deployments but centers on uptime after handover.",
+      "id": "systems-integration-engineer",
+      "familyId": "integration-operations",
+      "postingCount": 68,
+      "employerCount": 27,
+      "reviewedCount": 5,
+      "sample": "broad-sample",
+      "skills": [
+        {
+          "id": "python",
+          "label": "Python",
+          "count": 44,
+          "required": 30,
+          "preferred": 8,
+          "contextual": 6
+        },
+        {
+          "id": "cpp",
+          "label": "C++",
+          "count": 38,
+          "required": 28,
+          "preferred": 5,
+          "contextual": 5
+        },
+        {
+          "id": "linux",
+          "label": "Linux",
+          "count": 28,
+          "required": 17,
+          "preferred": 10,
+          "contextual": 1
+        },
+        {
+          "id": "ros-unspecified",
+          "label": "ROS (version unspecified)",
+          "count": 15,
+          "required": 7,
+          "preferred": 8,
+          "contextual": 0
+        },
+        {
+          "id": "commissioning",
+          "label": "Commissioning",
+          "count": 13,
+          "required": 2,
+          "preferred": 3,
+          "contextual": 8
+        },
+        {
+          "id": "root-cause",
+          "label": "Root cause analysis",
+          "count": 13,
+          "required": 5,
+          "preferred": 0,
+          "contextual": 8
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Shield AI",
+          "count": 14
+        },
+        {
+          "name": "Applied Intuition",
+          "count": 8
+        },
+        {
+          "name": "FieldAI",
+          "count": 7
+        },
+        {
+          "name": "Anduril Industries",
+          "count": 5
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "Applied Intuition",
+          "title": "Application Engineer - Technical Customer Lead",
+          "location": "Sunnyvale",
+          "minimum": 105000,
+          "maximum": 185000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/6e6b218a-ef17-45fe-86ba-0bf33199016f",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "49199cd1a9899a9b58471e221c3d84e37f2c25c7a7d2553dea04e05967bc9d54"
+        },
+        {
+          "employer": "Dexterity",
+          "title": "Forward Deployed Engineer",
+          "location": "Redwood City, CA",
+          "minimum": 130000,
+          "maximum": 170000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/dexterity/5005c9a7-4014-4ccb-8d13-c109951f9097",
+          "verifiedAt": "2026-11-02T17:46:57+00:00",
+          "sourceTextSha256": "9fccff959af2df4c05dea5a14986463066bfdac5e0c41cdb6cdb432e8f89afd4"
+        },
+        {
+          "employer": "FieldAI",
+          "title": "Field Application Engineer",
+          "location": "Remote - US",
+          "minimum": 60000,
+          "maximum": 150000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/field-ai/3a115140-cbee-4d96-b61d-7403596b77ca",
+          "verifiedAt": "2026-11-02T17:46:56+00:00",
+          "sourceTextSha256": "027249a0a13c95786c8106d34d3a5291875a9cbf648107b0b918ecfd2ed2bfd0"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "ANYbotics",
+          "title": "Field Deployment Technician, Industrial Robotics",
+          "url": "https://jobs.lever.co/anybotics/21610dea-72a2-4771-8fb9-0d9c00b7b3dd",
+          "locations": [
+            "United States"
+          ]
+        },
+        {
+          "employer": "Applied Intuition",
+          "title": "Forward Deployed Engineer - New Grad (2027)",
+          "url": "https://jobs.ashbyhq.com/applied/289cead6-d731-4ca4-95e2-e83cee83c20c",
+          "locations": [
+            "Tokyo"
+          ]
+        },
+        {
+          "employer": "Nimble Robotics",
+          "title": "Senior Systems Integration Engineer",
+          "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4398427009",
+          "locations": [
+            "San Francisco, California, United States"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Industrial Automation Engineer",
+      "category": "Integration & Operations",
+      "ownedOutput": "Control logic connecting intelligent robots to industrial equipment.",
+      "guideScope": "PLC programming, HMI, industrial networks, machine interfaces, interlocks, sequencing and cell commissioning.",
+      "searchVariants": [
+        "Controls Engineer, PLC Programming",
+        "Automation Controls Engineer",
+        "PLC Engineer"
+      ],
+      "boundary": "Programmable logic controllers and cell/equipment coordination, differentiated from feedback robot dynamics. FieldAI’s Automation Engineer is instead an ML deployment role and must not be used as PLC evidence.",
+      "id": "industrial-automation-engineer",
+      "familyId": "integration-operations",
+      "postingCount": 10,
+      "employerCount": 6,
+      "reviewedCount": 3,
+      "sample": "thin-sample",
+      "skills": [
+        {
+          "id": "plc",
+          "label": "PLC programming",
+          "count": 10,
+          "required": 10,
+          "preferred": 0,
+          "contextual": 0
+        },
+        {
+          "id": "feedback-control",
+          "label": "Feedback control",
+          "count": 8,
+          "required": 3,
+          "preferred": 1,
+          "contextual": 4
+        },
+        {
+          "id": "hmi",
+          "label": "HMI",
+          "count": 5,
+          "required": 3,
+          "preferred": 0,
+          "contextual": 2
+        },
+        {
+          "id": "pid",
+          "label": "PID control",
+          "count": 4,
+          "required": 2,
+          "preferred": 1,
+          "contextual": 1
+        },
+        {
+          "id": "root-cause",
+          "label": "Root cause analysis",
+          "count": 4,
+          "required": 0,
+          "preferred": 1,
+          "contextual": 3
+        },
+        {
+          "id": "scada",
+          "label": "SCADA",
+          "count": 4,
+          "required": 3,
+          "preferred": 0,
+          "contextual": 1
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Anduril Industries",
+          "count": 4
+        },
+        {
+          "name": "Saronic",
+          "count": 2
+        },
+        {
+          "name": "Agile Robots",
+          "count": 1
+        },
+        {
+          "name": "Intrinsic",
+          "count": 1
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "OSARO",
+          "title": "Controls Engineer, PLC Programming",
+          "location": "San Francisco",
+          "minimum": 125000,
+          "maximum": 145000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/osaro/c2137e2f-3e01-4eb4-b635-0c97fddc8c57",
+          "verifiedAt": "2026-11-02T17:46:57+00:00",
+          "sourceTextSha256": "cefa453484f825888321febcf6510aebfb154df4d57fb342ceef71a12e01edf9"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Anduril Industries",
+          "title": "Controls Engineer, Manufacturing Automation",
+          "url": "https://boards.greenhouse.io/andurilindustries/jobs/5234512007?gh_jid=5234512007",
+          "locations": [
+            "Costa Mesa, California, United States"
+          ]
+        },
+        {
+          "employer": "Intrinsic",
+          "title": "Senior Automation and Controls Engineer",
+          "url": "https://boards.greenhouse.io/intrinsicrobotics/jobs/6223613004?gh_jid=6223613004",
+          "locations": [
+            "Mountain View, California",
+            "Mountain View, California, United States"
+          ]
+        },
+        {
+          "employer": "OSARO",
+          "title": "Controls Engineer, PLC Programming",
+          "url": "https://jobs.lever.co/osaro/c2137e2f-3e01-4eb4-b635-0c97fddc8c57",
+          "locations": [
+            "San Francisco"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Systems Safety Engineer",
+      "category": "Integration & Operations",
+      "ownedOutput": "A defensible safety argument and system safety requirements.",
+      "guideScope": "Hazard analysis, risk assessment, safety requirements/mechanisms, functional safety and safety-case evidence.",
+      "searchVariants": [
+        "System Safety Engineer",
+        "Functional Safety Engineer",
+        "Robotics Safety Engineer"
+      ],
+      "boundary": "Safety engineering is broader than a final deployment check. This navigation category is its home, but safety work spans design through operation. V&V supplies evidence against requirements; safety engineering defines and argues acceptable risk.",
+      "id": "systems-safety-engineer",
+      "familyId": "integration-operations",
+      "postingCount": 29,
+      "employerCount": 16,
+      "reviewedCount": 3,
+      "sample": "limited-sample",
+      "skills": [
+        {
+          "id": "hara",
+          "label": "Hazard analysis / risk assessment",
+          "count": 19,
+          "required": 10,
+          "preferred": 3,
+          "contextual": 6
+        },
+        {
+          "id": "fmea",
+          "label": "FMEA / FMECA / FMEDA",
+          "count": 18,
+          "required": 8,
+          "preferred": 2,
+          "contextual": 8
+        },
+        {
+          "id": "verification-validation",
+          "label": "Verification & validation",
+          "count": 17,
+          "required": 11,
+          "preferred": 1,
+          "contextual": 5
+        },
+        {
+          "id": "fta",
+          "label": "Fault tree analysis",
+          "count": 16,
+          "required": 7,
+          "preferred": 2,
+          "contextual": 7
+        },
+        {
+          "id": "iso26262",
+          "label": "ISO 26262",
+          "count": 16,
+          "required": 12,
+          "preferred": 3,
+          "contextual": 1
+        },
+        {
+          "id": "iec61508",
+          "label": "IEC 61508",
+          "count": 13,
+          "required": 8,
+          "preferred": 3,
+          "contextual": 2
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Gatik",
+          "count": 4
+        },
+        {
+          "name": "Waymo",
+          "count": 4
+        },
+        {
+          "name": "Apptronik",
+          "count": 3
+        },
+        {
+          "name": "NVIDIA",
+          "count": 3
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "Applied Intuition",
+          "title": "System Safety Engineer, Autonomy Trucking",
+          "location": "Sunnyvale",
+          "minimum": 118000,
+          "maximum": 250000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/59466c8f-a1ff-42b6-9a60-3eeedc95de07",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "0ac1cc08d079d28cc8751dea4bc87b1167fcede600ae6a49d5f374167524f475"
+        },
+        {
+          "employer": "Dexterity",
+          "title": "Lead Functional Safety Engineer",
+          "location": "Redwood City, CA",
+          "minimum": 186000,
+          "maximum": 232000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/dexterity/ab404c3f-a336-4a6c-b31b-07d048feb3dc",
+          "verifiedAt": "2026-11-02T17:46:57+00:00",
+          "sourceTextSha256": "8fba34a791f9af427946d7ce3a6f140c4e603a313f8ac24d410b7e02c64b85e7"
+        },
+        {
+          "employer": "Rhoda AI",
+          "title": "Senior System Safety Engineer- Robot Stability",
+          "location": "Mountain View",
+          "minimum": 175000,
+          "maximum": 250000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/rhoda-ai/6a0d4141-9114-4a67-924c-a7f4486a1f63",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "50ada39a9bded2f1cade673fd2d5fdc39f0020f339b37d190201ebfa7a810957"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Apptronik",
+          "title": "Staff Systems Safety Engineer",
+          "url": "https://boards.greenhouse.io/apptronik/jobs/6235161004?gh_jid=6235161004",
+          "locations": [
+            "Sunnyvale, California",
+            "Sunnyvale, California, United States"
+          ]
+        },
+        {
+          "employer": "Humanoid",
+          "title": "Senior Functional Safety Engineer",
+          "url": "https://jobs.ashbyhq.com/humanoid/2aa29ad5-ba32-4356-af31-9af6365696c9",
+          "locations": [
+            "US, Boston, MA"
+          ]
+        },
+        {
+          "employer": "Zoox",
+          "title": "Sensing and Perception System Safety Engineer",
+          "url": "https://jobs.lever.co/zoox/887c7590-e98d-4997-b85d-e3956381fd57",
+          "locations": [
+            "Foster City, CA"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Field Service Engineer",
+      "category": "Integration & Operations",
+      "ownedOutput": "Reliable operation restored and maintained at deployed sites.",
+      "guideScope": "Diagnostics, repairs, preventive maintenance, upgrades, spares, service documentation and feedback to product engineering.",
+      "searchVariants": [
+        "Robotics Field Service Engineer",
+        "Field Service Technician",
+        "Robotics Maintenance Technician"
+      ],
+      "boundary": "Use technician and engineer variants as relevant search routes where duties align, without claiming identical credentials or scope everywhere. Initial installation roles may instead belong in integration.",
+      "id": "field-service-engineer",
+      "familyId": "integration-operations",
+      "postingCount": 43,
+      "employerCount": 19,
+      "reviewedCount": 3,
+      "sample": "limited-sample",
+      "skills": [
+        {
+          "id": "preventive-maintenance",
+          "label": "Preventive maintenance",
+          "count": 18,
+          "required": 0,
+          "preferred": 0,
+          "contextual": 18
+        },
+        {
+          "id": "oscilloscope",
+          "label": "Oscilloscopes / instrumentation",
+          "count": 14,
+          "required": 9,
+          "preferred": 1,
+          "contextual": 4
+        },
+        {
+          "id": "root-cause",
+          "label": "Root cause analysis",
+          "count": 14,
+          "required": 4,
+          "preferred": 1,
+          "contextual": 9
+        },
+        {
+          "id": "incident-logging",
+          "label": "Incident / issue logging",
+          "count": 11,
+          "required": 1,
+          "preferred": 10,
+          "contextual": 0
+        },
+        {
+          "id": "linux",
+          "label": "Linux",
+          "count": 9,
+          "required": 4,
+          "preferred": 4,
+          "contextual": 1
+        },
+        {
+          "id": "machining",
+          "label": "Machining / fabrication",
+          "count": 9,
+          "required": 3,
+          "preferred": 4,
+          "contextual": 2
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Anduril Industries",
+          "count": 5
+        },
+        {
+          "name": "Boston Dynamics",
+          "count": 5
+        },
+        {
+          "name": "Nimble Robotics",
+          "count": 5
+        },
+        {
+          "name": "Path Robotics",
+          "count": 4
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "Shield AI",
+          "title": "Customer Sustainment Engineer -open level (R5502)",
+          "location": "San Diego, California / Washington, D.C.",
+          "minimum": 160000,
+          "maximum": 290000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/shieldai/ee614940-c594-41da-8432-8a677e21520d",
+          "verifiedAt": "2026-11-02T17:46:57+00:00",
+          "sourceTextSha256": "b072e44c79ce7dff73855d8de053642be25fd8087fa23faa4379202d83ccfb7d"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Agile Robots",
+          "title": "Robot Service Engineer - Data Collection (m/f/d) Fixed-term 18 months",
+          "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/5013112101",
+          "locations": [
+            "Munich, Bavaria, Germany"
+          ]
+        },
+        {
+          "employer": "Dexterity",
+          "title": "Field Service Engineer",
+          "url": "https://jobs.lever.co/dexterity/0630d2f1-586c-4819-a111-a6188462af3b",
+          "locations": [
+            "Redwood City, CA"
+          ]
+        },
+        {
+          "employer": "Serve Robotics",
+          "title": "Service Technician II",
+          "url": "https://jobs.ashbyhq.com/serverobotics/946fe8ed-7c4a-462c-97ca-6d7843a45fa3",
+          "locations": [
+            "Atlanta, GA",
+            "Miami, FL"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Robot Operations Specialist",
+      "category": "Integration & Operations",
+      "ownedOutput": "A successfully executed and documented robot mission or shift.",
+      "guideScope": "Robot operation, deployment support, intervention, checklists, behavior observation, incident logging and operational feedback.",
+      "searchVariants": [
+        "Robot Operator",
+        "Robotics Operations Specialist",
+        "Fleet Operations Specialist",
+        "Teleoperations Specialist"
+      ],
+      "boundary": "Operating robots differs from repairing them or building fleet software. Data-collection-only teleoperation can be a related separate specialization rather than an automatic alias.",
+      "id": "robot-operations-specialist",
+      "familyId": "integration-operations",
+      "postingCount": 64,
+      "employerCount": 19,
+      "reviewedCount": 3,
+      "sample": "broad-sample",
+      "skills": [
+        {
+          "id": "incident-logging",
+          "label": "Incident / issue logging",
+          "count": 23,
+          "required": 3,
+          "preferred": 13,
+          "contextual": 7
+        },
+        {
+          "id": "linux",
+          "label": "Linux",
+          "count": 15,
+          "required": 1,
+          "preferred": 14,
+          "contextual": 0
+        },
+        {
+          "id": "teleoperation",
+          "label": "Teleoperation",
+          "count": 10,
+          "required": 0,
+          "preferred": 1,
+          "contextual": 9
+        },
+        {
+          "id": "bash",
+          "label": "Bash / shell",
+          "count": 8,
+          "required": 0,
+          "preferred": 8,
+          "contextual": 0
+        },
+        {
+          "id": "data-curation",
+          "label": "Data curation / quality",
+          "count": 5,
+          "required": 1,
+          "preferred": 0,
+          "contextual": 4
+        },
+        {
+          "id": "fault-injection",
+          "label": "Fault injection",
+          "count": 4,
+          "required": 0,
+          "preferred": 0,
+          "contextual": 4
+        }
+      ],
+      "topEmployers": [
+        {
+          "name": "Serve Robotics",
+          "count": 13
+        },
+        {
+          "name": "Dyna Robotics",
+          "count": 8
+        },
+        {
+          "name": "Figure",
+          "count": 8
+        },
+        {
+          "name": "Anduril Industries",
+          "count": 6
+        }
+      ],
+      "salaryExamples": [
+        {
+          "employer": "Shield AI",
+          "title": "Senior V-BAT Air Vehicle Operator, Demonstration (R5505)",
+          "location": "Dallas, Texas",
+          "minimum": 100000,
+          "maximum": 140000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/shieldai/63014ba5-212a-401a-9ee7-10b7a88d9622",
+          "verifiedAt": "2026-11-02T17:46:57+00:00",
+          "sourceTextSha256": "8177ffe1cd87a70663e4f92a6d66000fcded5ac6c88b44c46d3c87104b982272"
+        }
+      ],
+      "postingExamples": [
+        {
+          "employer": "Figure",
+          "title": "Humanoid Robot Operator (Morning Shift)",
+          "url": "https://job-boards.greenhouse.io/figureai/jobs/4406268006",
+          "locations": [
+            "San Jose, CA",
+            "San Jose, California, United States"
+          ]
+        },
+        {
+          "employer": "Nuro",
+          "title": "Autonomous Vehicle Operator - Overnight",
+          "url": "https://nuro.ai/careersitem?gh_jid=8172396",
+          "locations": [
+            "California - LA",
+            "Los Angeles, CA"
+          ]
+        },
+        {
+          "employer": "Serve Robotics",
+          "title": "Operations Associate",
+          "url": "https://jobs.ashbyhq.com/serverobotics/d1e62cb0-c826-469c-9457-4b221ed34cc0",
+          "locations": [
+            "Dallas, TX"
+          ]
+        }
+      ]
+    }
+  ],
+  "methodology": {
+    "snapshot": "2026-11-02",
+    "generatedAt": "2026-11-02T18:18:39+00:00",
+    "baseline": "75 manually coded robot-learning postings from October 31, 2026; the expanded study spans 20 roles.",
+    "unit": "Distinct listed advertisement / requisition where observable; not individual hires.",
+    "primaryRolePolicy": "Exactly one primary family per included posting. Other candidate matches and ambiguity remain available in SQLite.",
+    "deduplication": "Same employer/provider/internal job ID; then identical normalized title and full description. Locations and source IDs/URLs are merged. No fuzzy deduplication silently applied.",
+    "roleReview": "Analyst-reviewed where source hash or unchanged prior full text supports the decision; otherwise title-and-work deterministic screening. Ambiguous assignments excluded from headline counts.",
+    "skillReview": "Machine-coded section/clause evidence, strongest state once per posting/concept. Exact evidence and match offsets retained. No claim all records were manually coded.",
+    "skillsDenominator": "All included postings in the selected role; additionally employer presence and equal-employer mean mention rates are retained.",
+    "educationExperience": "Preserved conditional clauses; no automatic universal degree or years requirement inferred.",
+    "compensation": "Official structured salary fields normalized where present; textual clauses retained separately. No mixed-currency or total-compensation market estimate.",
+    "coverageBandThresholds": {
+      "broad-sample": ">=50 postings and >=8 employers",
+      "limited-sample": ">=20 postings and >=4 employers",
+      "thin-sample": "Below either limited threshold. These are sample-size labels, not accuracy estimates."
+    },
+    "collection": "Public employer ATS feeds and public Workday search/detail endpoints. No aggregator counts used. Workday search POST is a read-only query.",
+    "coverage": "See collection.json and employers.csv for source status, keyword scope, incomplete indexes and failures. Missing is unknown, not zero.",
+    "historicalPolicy": "Keep dated snapshots; same-date explicit refresh archives prior raw metadata and response. Do not infer trends from the earlier narrow study.",
+    "configurationSha256": {
+      "employers.json": "b61ce3b682e9b5d2bda5a45553c1649e26cdfff1d38c2f40beadcad786acb80a",
+      "taxonomy.json": "8cfb4e1ad4209ad42f8f3406046f77508aef2013443eb657d488043635d1d72f",
+      "codebook.json": "7329b03b1e6c8ed00ba27a317ac69da8ec0c2fe121421d3d49354b42ba7a4fbe",
+      "market_rules.py": "5959dbd0c72a78137dacdeda621adaad3de4c95b82e97603aa30d2394092c1d7",
+      "build-market.py": "abec2f66508c718928a010cff3b478c08f79b33d5b173039bd0aecfa6b4a8585",
+      "collect-market.py": "5f990353e815da8fe0ae2ac682d0dd5da60c163e3cf37e4f18af1e54789594c1"
+    },
+    "limitations": [
+      "Counts describe deduplicated published advertisements in tracked employer boards, not hires, headcount or the entire market.",
+      "Every included record has a role assignment; most role assignments and all new skill coding use transparent automated rules. Review before publishing guide claims.",
+      "The 750 target applies across all 20 roles. It is not 750 robot-learning jobs or 750 per role.",
+      "Employer coverage is purposive and unequal. Missing or failed boards are unknown, not zero.",
+      "Required-or-option includes alternatives and examples in required qualification sections; it does not make each named option compulsory.",
+      "Unobserved skills may still be needed. Counts measure explicit posting wording.",
+      "A single snapshot does not establish hiring growth or new/closed counts. Earlier small studies have different scopes.",
+      "English-language public boards dominate; country labels combine supplied metadata and explicit location rules."
+    ],
+    "apiDocumentation": [
+      "https://docs.greenhouse.io/job-board.html",
+      "https://github.com/lever/postings-api",
+      "https://developers.ashbyhq.com/docs/public-job-posting-api"
+    ]
+  },
+  "coverage": [
+    {
+      "id": "anduril",
+      "name": "Anduril Industries",
+      "boardUrl": "https://job-boards.greenhouse.io/andurilindustries",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 125
+    },
+    {
+      "id": "shield-ai",
+      "name": "Shield AI",
+      "boardUrl": "https://jobs.lever.co/shieldai",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 104
+    },
+    {
+      "id": "applied-intuition",
+      "name": "Applied Intuition",
+      "boardUrl": "https://jobs.ashbyhq.com/applied",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 55
+    },
+    {
+      "id": "saronic",
+      "name": "Saronic",
+      "boardUrl": "https://jobs.ashbyhq.com/saronic",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 54
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "boardUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+      "coverageStatus": "collected-partial",
+      "collectionScope": "keyword-filtered-public-board",
+      "screenedPostingCount": 44
+    },
+    {
+      "id": "zoox",
+      "name": "Zoox",
+      "boardUrl": "https://jobs.lever.co/zoox",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 44
+    },
+    {
+      "id": "zipline",
+      "name": "Zipline",
+      "boardUrl": "https://job-boards.greenhouse.io/flyzipline",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 42
+    },
+    {
+      "id": "fieldai",
+      "name": "FieldAI",
+      "boardUrl": "https://jobs.lever.co/field-ai",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 40
+    },
+    {
+      "id": "humanoid",
+      "name": "Humanoid",
+      "boardUrl": "https://jobs.ashbyhq.com/humanoid",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 37
+    },
+    {
+      "id": "figure",
+      "name": "Figure",
+      "boardUrl": "https://job-boards.greenhouse.io/figureai",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 33
+    },
+    {
+      "id": "waymo",
+      "name": "Waymo",
+      "boardUrl": "https://job-boards.greenhouse.io/waymo",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 33
+    },
+    {
+      "id": "apptronik",
+      "name": "Apptronik",
+      "boardUrl": "https://job-boards.greenhouse.io/apptronik",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 32
+    },
+    {
+      "id": "boston-dynamics",
+      "name": "Boston Dynamics",
+      "boardUrl": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 28
+    },
+    {
+      "id": "nuro",
+      "name": "Nuro",
+      "boardUrl": "https://job-boards.greenhouse.io/nuro",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 27
+    },
+    {
+      "id": "skydio",
+      "name": "Skydio",
+      "boardUrl": "https://jobs.ashbyhq.com/skydio",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 27
+    },
+    {
+      "id": "agile-robots",
+      "name": "Agile Robots",
+      "boardUrl": "https://job-boards.greenhouse.io/agilerobotsse",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 26
+    },
+    {
+      "id": "one-x",
+      "name": "1X",
+      "boardUrl": "https://jobs.ashbyhq.com/1x",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 25
+    },
+    {
+      "id": "gatik",
+      "name": "Gatik",
+      "boardUrl": "https://job-boards.greenhouse.io/gatikaiinc",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 23
+    },
+    {
+      "id": "kodiak",
+      "name": "Kodiak Robotics",
+      "boardUrl": "https://job-boards.greenhouse.io/kodiak",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 19
+    },
+    {
+      "id": "agility",
+      "name": "Agility Robotics",
+      "boardUrl": "https://job-boards.greenhouse.io/agilityrobotics",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 18
+    },
+    {
+      "id": "skild",
+      "name": "Skild AI",
+      "boardUrl": "https://job-boards.greenhouse.io/skildai-careers",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 17
+    },
+    {
+      "id": "serve",
+      "name": "Serve Robotics",
+      "boardUrl": "https://jobs.ashbyhq.com/serverobotics",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 16
+    },
+    {
+      "id": "nimble",
+      "name": "Nimble Robotics",
+      "boardUrl": "https://job-boards.greenhouse.io/nimblerobotics",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 15
+    },
+    {
+      "id": "path-robotics",
+      "name": "Path Robotics",
+      "boardUrl": "https://job-boards.greenhouse.io/pathrobotics",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 13
+    },
+    {
+      "id": "dyna",
+      "name": "Dyna Robotics",
+      "boardUrl": "https://jobs.ashbyhq.com/dyna-robotics",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 12
+    },
+    {
+      "id": "rhoda",
+      "name": "Rhoda AI",
+      "boardUrl": "https://jobs.ashbyhq.com/rhoda-ai",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 12
+    },
+    {
+      "id": "physical-intelligence",
+      "name": "Physical Intelligence",
+      "boardUrl": "https://jobs.ashbyhq.com/physicalintelligence",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 11
+    },
+    {
+      "id": "standard-bots",
+      "name": "Standard Bots",
+      "boardUrl": "https://jobs.ashbyhq.com/standardbots",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 11
+    },
+    {
+      "id": "bedrock",
+      "name": "Bedrock Robotics",
+      "boardUrl": "https://jobs.ashbyhq.com/bedrock-robotics",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 10
+    },
+    {
+      "id": "gram",
+      "name": "GRAM",
+      "boardUrl": "https://job-boards.greenhouse.io/gram",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 10
+    },
+    {
+      "id": "may-mobility",
+      "name": "May Mobility",
+      "boardUrl": "https://job-boards.greenhouse.io/maymobility",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 7
+    },
+    {
+      "id": "cobot",
+      "name": "Collaborative Robotics",
+      "boardUrl": "https://jobs.ashbyhq.com/cobot",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 6
+    },
+    {
+      "id": "formic",
+      "name": "Formic",
+      "boardUrl": "https://job-boards.greenhouse.io/formic",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 6
+    },
+    {
+      "id": "gritt",
+      "name": "Gritt",
+      "boardUrl": "https://jobs.ashbyhq.com/gritt",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 6
+    },
+    {
+      "id": "sunday",
+      "name": "Sunday Robotics",
+      "boardUrl": "https://jobs.ashbyhq.com/sunday",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 6
+    },
+    {
+      "id": "anybotics",
+      "name": "ANYbotics",
+      "boardUrl": "https://jobs.lever.co/anybotics",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 5
+    },
+    {
+      "id": "generalist",
+      "name": "Generalist",
+      "boardUrl": "https://jobs.ashbyhq.com/generalist",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 5
+    },
+    {
+      "id": "dexterity",
+      "name": "Dexterity",
+      "boardUrl": "https://jobs.lever.co/dexterity",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 4
+    },
+    {
+      "id": "intrinsic",
+      "name": "Intrinsic",
+      "boardUrl": "https://job-boards.greenhouse.io/intrinsicrobotics",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 4
+    },
+    {
+      "id": "pickle-robot",
+      "name": "Pickle Robot",
+      "boardUrl": "https://jobs.lever.co/picklerobot",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 4
+    },
+    {
+      "id": "osaro",
+      "name": "OSARO",
+      "boardUrl": "https://jobs.lever.co/osaro",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 3
+    },
+    {
+      "id": "tri",
+      "name": "Toyota Research Institute",
+      "boardUrl": "https://jobs.lever.co/tri",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 3
+    },
+    {
+      "id": "ambirobotics",
+      "name": "Ambi Robotics",
+      "boardUrl": "https://jobs.lever.co/ambirobotics",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 2
+    },
+    {
+      "id": "nomagic",
+      "name": "Nomagic",
+      "boardUrl": "https://jobs.lever.co/Nomagic",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 2
+    },
+    {
+      "id": "pivot",
+      "name": "Pivot Robotics",
+      "boardUrl": "https://jobs.ashbyhq.com/pivotrobotics",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 2
+    },
+    {
+      "id": "rerun",
+      "name": "Rerun",
+      "boardUrl": "https://jobs.ashbyhq.com/rerun",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 1
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon Robotics",
+      "boardUrl": "https://www.amazon.jobs/",
+      "coverageStatus": "not-collected",
+      "collectionScope": null,
+      "screenedPostingCount": null
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "boardUrl": "https://job-boards.greenhouse.io/aurora",
+      "coverageStatus": "failed",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": null
+    },
+    {
+      "id": "built",
+      "name": "Built Robotics",
+      "boardUrl": "https://jobs.lever.co/builtrobotics",
+      "coverageStatus": "failed",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": null
+    },
+    {
+      "id": "burro",
+      "name": "Burro",
+      "boardUrl": "https://jobs.lever.co/Burro",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 0
+    },
+    {
+      "id": "carbon-robotics",
+      "name": "Carbon Robotics",
+      "boardUrl": "https://job-boards.greenhouse.io/carbonrobotics",
+      "coverageStatus": "failed",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": null
+    },
+    {
+      "id": "foxglove",
+      "name": "Foxglove",
+      "boardUrl": "https://jobs.ashbyhq.com/foxglove",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 0
+    },
+    {
+      "id": "intuitive",
+      "name": "Intuitive",
+      "boardUrl": "https://careers.intuitive.com/",
+      "coverageStatus": "not-collected",
+      "collectionScope": null,
+      "screenedPostingCount": null
+    },
+    {
+      "id": "deere",
+      "name": "John Deere",
+      "boardUrl": "https://careers.deere.com/",
+      "coverageStatus": "not-collected",
+      "collectionScope": null,
+      "screenedPostingCount": null
+    },
+    {
+      "id": "mujin",
+      "name": "Mujin",
+      "boardUrl": "https://jobs.lever.co/mujin",
+      "coverageStatus": "failed",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": null
+    },
+    {
+      "id": "rai",
+      "name": "RAI Institute",
+      "boardUrl": "https://jobs.lever.co/rai",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 0
+    },
+    {
+      "id": "rivr",
+      "name": "RIVR",
+      "boardUrl": "https://jobs.lever.co/rivr",
+      "coverageStatus": "collected",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": 0
+    },
+    {
+      "id": "symbotic",
+      "name": "Symbotic",
+      "boardUrl": "https://symbotic.wd1.myworkdayjobs.com/Symbotic",
+      "coverageStatus": "failed",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": null
+    },
+    {
+      "id": "robot-company",
+      "name": "The Robot Company",
+      "boardUrl": "https://jobs.ashbyhq.com/therobotcompany",
+      "coverageStatus": "failed",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": null
+    },
+    {
+      "id": "tutor-intelligence",
+      "name": "Tutor Intelligence",
+      "boardUrl": "https://job-boards.greenhouse.io/tutorintelligence",
+      "coverageStatus": "failed",
+      "collectionScope": "whole-public-board",
+      "screenedPostingCount": null
+    }
+  ]
+}

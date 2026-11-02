@@ -1,40 +1,32 @@
 import type { FamilyId, Occupation } from './types';
 const roles: Record<FamilyId, [string, string][]> = {
-  'hardware-manufacturing': [
-    ['Mechanical Engineer', 'Designs structures, joints, enclosures, and mechanisms around loads, motion, and physical constraints.'],
-    ['Mechatronics Engineer', 'Combines mechanical assemblies, electronics, sensors, and control into working electromechanical systems.'],
-    ['Electrical Engineer', 'Designs power distribution, circuits, wiring, and electrical interfaces for intelligent machines.'],
-    ['Embedded Firmware Engineer', 'Writes the low-level software that connects processors to sensors, motors, and other hardware.'],
-    ['Actuator Engineer', 'Develops the motor, transmission, sensing, and drive systems that produce controlled movement.'],
-    ['Manufacturing Engineer', 'Turns a product design into a repeatable assembly, inspection, and production process.'],
-    ['Robotics Technician', 'Assembles, wires, calibrates, and tests robotic hardware and diagnoses faults during development and production.'],
+  "hardware-manufacturing": [
+    ["Mechanical Engineer", "Designs the structures, mechanisms and enclosures of a robot, using load analysis, tolerances and prototypes to turn motion requirements into physical parts."],
+    ["Electrical Engineer", "Designs circuits, power distribution and sensor interfaces, then brings up and tests the electronics that connect the robot’s components."],
+    ["Embedded Software Engineer", "Writes firmware, device drivers and real-time software that read sensors, communicate with electronics and command hardware."],
+    ["Manufacturing Engineer", "Develops assembly processes, fixtures, work instructions and production checks so a robot can be built consistently at scale."],
+    ["Hardware Test Engineer", "Builds instrumented tests for components and assemblies, measures performance and durability, and investigates physical failures."],
   ],
-  'intelligence-autonomy': [
-    ['Robot Learning Engineer', 'Develops and evaluates policies that let robots learn actions from demonstrations, experience, or rewards.'],
-    ['Computer Vision Engineer', 'Builds algorithms that extract objects, features, and spatial information from images and video.'],
-    ['Robotics Perception Engineer', 'Combines sensor inputs into an estimate of the robot’s surroundings and relevant objects.'],
-    ['Motion Planning Engineer', 'Develops algorithms that choose feasible paths and trajectories around obstacles and physical limits.'],
-    ['Robotics Controls Engineer', 'Designs feedback algorithms that turn desired movement into stable, precise machine behavior.'],
-    ['Localization & Mapping Engineer', 'Builds methods for estimating a robot’s position and constructing maps of its environment.'],
-    ['Autonomy Research Scientist', 'Investigates new methods for machine decision-making and tests their capabilities and limitations.'],
+  "intelligence-autonomy": [
+    ["Robot Learning Engineer", "Trains and evaluates policies that learn physical tasks from demonstrations, interaction or rewards, then tests how those policies transfer to robots."],
+    ["Perception Engineer", "Turns camera and other sensor data into information about objects and surroundings through computer vision, tracking and sensor fusion."],
+    ["Motion Planning Engineer", "Develops algorithms that choose feasible paths and trajectories around obstacles, task requirements and the robot’s physical limits."],
+    ["Robotics Controls Engineer", "Uses models, feedback and optimization to make the robot execute movement with stability, precision and predictable responses."],
+    ["Localization & Mapping Engineer", "Estimates where a robot is and builds or maintains its map, using geometry, state estimation and sensor measurements."],
   ],
-  'platforms-simulation': [
-    ['Robotics Simulation Engineer', 'Builds virtual environments, sensor models, and physics-based tests for developing robotic systems.'],
-    ['Digital Twin Engineer', 'Connects a digital representation to physical-system data so teams can inspect and test operational scenarios.'],
-    ['Robotics Middleware Engineer', 'Builds the communication, interfaces, and runtime services connecting robot software components.'],
-    ['Robotics Data Engineer', 'Creates pipelines for recording, organizing, validating, and retrieving robot and sensor data.'],
-    ['Machine Learning Infrastructure Engineer', 'Builds the systems used to train, evaluate, version, and deploy machine learning models.'],
-    ['GPU Systems Engineer', 'Configures and optimizes accelerated computing systems for simulation, training, and inference workloads.'],
-    ['Robotics Test Automation Engineer', 'Builds repeatable software and hardware-in-the-loop tests that catch regressions in robotic systems.'],
+  "platforms-simulation": [
+    ["Simulation Engineer", "Builds virtual environments, physics and sensor models so teams can develop robots and test behavior under repeatable conditions."],
+    ["Robotics Platform Engineer", "Builds shared runtime software, communication interfaces and developer tools that connect and support the robot’s software components."],
+    ["Robotics Data Engineer", "Creates pipelines for recording, synchronizing, checking and retrieving robot data so it can support training and evaluation."],
+    ["Machine Learning Infrastructure Engineer", "Builds the computing and software systems used to train, evaluate, version and reproduce machine learning experiments efficiently."],
+    ["Verification & Validation Engineer", "Defines system tests, runs scenarios and investigates regressions to establish whether a robot meets its requirements."],
   ],
-  'integration-operations': [
-    ['Robotics Systems Integration Engineer', 'Connects robots, tooling, sensors, and software into a complete system for a specific application.'],
-    ['Industrial Automation Engineer', 'Develops PLC logic, machine interfaces, and industrial controls that coordinate a production process.'],
-    ['Robotics Commissioning Engineer', 'Brings installed systems into service through configuration, site testing, and acceptance checks.'],
-    ['Functional Safety Engineer', 'Analyzes hazardous system behavior and develops and verifies safety-related control functions.'],
-    ['Field Robotics Engineer', 'Diagnoses and resolves hardware and software problems in robots operating at customer sites.'],
-    ['Robotics Fleet Operations Engineer', 'Monitors deployed robots, investigates operational incidents, and improves fleet reliability.'],
-    ['Robotics Maintenance Technician', 'Inspects, services, troubleshoots, and repairs deployed robotic equipment.'],
+  "integration-operations": [
+    ["Systems Integration Engineer", "Connects robots, sensors, tooling and software into a working application, then checks its performance against the customer’s requirements."],
+    ["Industrial Automation Engineer", "Programs PLCs, machine interfaces and industrial controls that coordinate robots with conveyors, equipment and production processes."],
+    ["Systems Safety Engineer", "Identifies hazards, defines safety requirements and builds the evidence and reasoning needed to assess risk across a system’s lifecycle."],
+    ["Field Service Engineer", "Diagnoses and repairs deployed equipment, carries out preventive maintenance and helps restore reliable operation at customer sites."],
+    ["Robot Operations Specialist", "Runs robot missions or shifts, monitors performance, handles interventions and records issues for engineering and service teams."],
   ],
 };
 export const occupations: Occupation[] = Object.entries(roles).flatMap(([familyId, entries]) =>
