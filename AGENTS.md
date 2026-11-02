@@ -67,3 +67,6 @@ User preference, October 6, 2026: For all future News reports and Insights deep 
 ## Global visual coherence
 
 User preference, October 21, 2026: prioritize the global website design over page-specific mockups. Main sections use `SitePage` and `SiteSurface` from `components/site-frame.tsx`, plus the existing shared header and footer. Match their frame width, outer gutters, white surfaces, neutral borders, type scale, navigation states and blue interactive accents. Page styles must be scoped to their content and must not reset colors or typography on the shared navigation or footer. Retain intentional article reading widths within the shared frame. Use this live shared system as the current reference rather than restoring an older page-specific ivory and sage prototype.
+
+
+User preference, November 2, 2026: For future News report editorial covers, use the exact visible caption `Editorial illustration by Black Scarab.` Keep descriptive context in image alternative text rather than extending the caption.

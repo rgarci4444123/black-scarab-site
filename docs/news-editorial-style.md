@@ -51,3 +51,6 @@ User preference, October 6, 2026: For all future News reports and Insights deep 
 ## Policy label
 
 User preference, October 25, 2026: Use **Policy** as the visible category label for legislative, regulatory and government policy News reports. Preserve the article's industry, technology and application taxonomy independently. State the measure's actual legal stage in the reporting and summary.
+
+
+User preference, November 2, 2026: Use exactly `Editorial illustration by Black Scarab.` as the visible caption for future News report editorial covers. Put descriptive context in alternative text.

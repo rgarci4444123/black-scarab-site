@@ -83,3 +83,6 @@ Judge the image as part of the full news grid, not only as an isolated cover. Ac
 ## Material preference
 
 User direction, October 9, 2026: avoid visuals or animations that look made from paper. Do not use paper construction, cut paper collage, origami styling or paper craft textures for future editorial assets. Choose a suitable alternative material and medium for the story; ordinary packaging can appear when relevant without making the whole illustration look constructed from paper.
+
+
+For News report editorial covers, Rodolfo’s November 2, 2026 preference sets the exact visible caption to `Editorial illustration by Black Scarab.` Keep descriptive context in alternative text.

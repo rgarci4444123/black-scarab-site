@@ -34,6 +34,115 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "meta-fourier-max-humanoid-prototype",
+  "title": "Meta reportedly builds Max humanoid with Fourier in three months",
+  "summary": "A reported three month build gives Meta a physical platform for robotics experiments. Its stated purpose is internal research, with a second version already in development.",
+  "category": "Humanoids",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "5 min read",
+  "imageAlt": "Two overlapping translucent humanoid profiles glow in violet and amber against a dark indigo background.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "Meta reportedly worked with Chinese robotics company Fourier to build a humanoid prototype called Max in about three months.",
+    "Technology publication The Information reports that Meta and Fourier are already developing a second version of Max.",
+    "Meta’s reported response describes the Fourier work as internal research and experimentation, with no plans to sell these units."
+  ],
+  "sections": [
+    {
+      "heading": "A fast build, followed by another iteration",
+      "paragraphs": [
+        "Meta reportedly built a humanoid prototype called Max with Chinese robotics company Fourier in about three months, and a second version is already in development.",
+        "Technology publication The Information first reported the project on October 31. Reuters subsequently relayed the account, citing that publication’s sources familiar with the initiative, and said it could not immediately verify the report. Rocking Robots’ follow up describes a Meta spokesperson’s response: the Fourier collaboration is for internal research and experimentation, and Meta has no plans to sell these units.",
+        "That response sets the commercial meaning of the news. Meta is working on a physical machine through which it can investigate robotics. The reported three month schedule concerns the construction of a prototype, a different milestone from developing a dependable household product.",
+        "For a company with extensive AI research, a robot provides a consequential feedback loop. Software can propose an action, sensors can observe what actually happened, and engineers can revise the system when the two diverge. A second body gives that process another turn."
+      ]
+    },
+    {
+      "heading": "Why Fourier is a consequential partner",
+      "paragraphs": [
+        "Fourier, also known as Fourier Intelligence, already develops humanoid robots. Its GR3 documentation describes a machine designed for interactive companionship, combining hearing, vision and touch with a body intended to move and communicate around people.",
+        "The manufacturer lists articulated arms and hands, tactile sensing and remote operation through a headset or exoskeleton. These are features of Fourier’s documented platform, rather than specifications for Max. They illustrate the range of mechanical, sensing and control work a humanoid developer must bring together.",
+        "Black Scarab’s analysis is that an established robotics partner can compress the path to useful experiments. Designing joints, assembling a body, bringing up sensors and making the interfaces work all consume engineering time. Starting with experienced hardware engineers can allow an AI team to test ideas on a machine sooner.",
+        "That does not eliminate integration work. A grasp depends on the hand’s mechanics, the quality of its observations and the commands it receives. Walking changes the position of the cameras and the loads on the arms. Improvements to one part can change what the rest of the robot must handle.",
+        "The partnership therefore matters beyond the speed of a first assembly. It puts an AI developer and a humanoid manufacturer into the same iteration cycle, where software behavior can inform hardware changes and hardware constraints can shape the software."
+      ]
+    },
+    {
+      "heading": "Meta’s research already reaches into robot control",
+      "paragraphs": [
+        "Meta’s published research provides useful context for the effort. In June 2025, its V JEPA 2 paper explored learning from large amounts of ordinary video, then adding robot interaction data to support physical planning.",
+        "The researchers reported using less than 62 hours of robot video to train an action conditioned world model. They then used it for picking and placing objects with robot arms in two laboratories, without collecting training data from those particular environments or performing training specific to those tasks.",
+        "The principle is straightforward: a system needs to anticipate how an action will change the scene, rather than merely recognize what is in an image. Moving a hand toward a cup is useful only if the resulting motion brings the hand into the right position without causing another problem.",
+        "This research establishes a relevant line of work at Meta. It does not establish which models Max uses. A humanoid also broadens the control problem from a robot arm to a body whose balance, reach and contact with the surroundings interact.",
+        "A physical prototype can expose those interactions in ways that a video benchmark cannot. Delays between seeing and moving, uncertain contact with an object, and small positioning errors all affect whether a planned action succeeds. The engineering value comes from measuring those effects and using them to improve the next attempt."
+      ]
+    },
+    {
+      "heading": "Household work is a sequence, not a gesture",
+      "paragraphs": [
+        "A home is a demanding setting for a robot because useful work usually combines several actions. Recognizing an object, reaching it, moving it and deciding what to do next are connected problems. People can also change the scene while the robot is working.",
+        "Meta’s earlier PARTNR research examined planning and coordination in simulated household activities. The benchmark, introduced in 2024, contains 100,000 tasks across 60 houses. Its researchers found weaknesses in coordination, tracking the progress of a task and recovering from errors in the language models they evaluated.",
+        "Those findings describe that benchmark and those evaluated systems, rather than Max’s capabilities. They help explain why an expressive machine or an isolated successful grasp is only part of the development challenge.",
+        "Consider an illustrative task: putting several objects away while someone else clears the same table. A robot needs to distinguish what remains to be done from what the person has already finished. If an object moves or a grasp fails, repeating the original plan may make the situation worse.",
+        "The useful capability is therefore a continuing cycle of observation, action and correction. Hardware supplies the means to act. The system also needs to keep track of the task and recognize when its own assumptions have stopped matching the room."
+      ]
+    },
+    {
+      "heading": "What the second prototype could establish",
+      "paragraphs": [
+        "A second version is an engineering commitment to another experiment. Its significance will depend on what changes and what those changes make possible. A revised body might improve an interaction or remove a constraint, but dependable behavior has to be demonstrated across repeated attempts.",
+        "For this project, the most informative next evidence would connect the machine’s design to its performance: complete tasks under stated conditions, the assistance required, and how the robot responds when an action fails. Those measures would show whether an iteration improves useful autonomy rather than simply changing the prototype’s appearance.",
+        "The reported collaboration gives Meta a route to test its robotics ambitions in hardware. Fourier brings an existing humanoid engineering base, and Max provides a physical setting for experiments. The next meaningful advance will be evidence that the combined system can turn more of those experiments into repeatable behavior."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "The Information: original Max prototype report, October 31, 2026",
+      "url": "https://www.theinformation.com/articles/meta-built-humanoid-prototype-chinese-startup-ramp-robotics-push"
+    },
+    {
+      "label": "Reuters via MarketScreener: attribution and verification status",
+      "url": "https://www.marketscreener.com/news/meta-builds-humanoid-robot-with-chinese-startup-fourier-the-information-says-ce785fd8db8ff321"
+    },
+    {
+      "label": "Rocking Robots: follow up and reported Meta response",
+      "url": "https://www.rockingrobots.com/meta-develops-humanoid-robot-max-with-chinas-fourier-second-prototype-underway/"
+    },
+    {
+      "label": "Fourier: GR3 robot overview and platform documentation",
+      "url": "https://support.fftai.com/en/gr3/getting-started/general-information"
+    },
+    {
+      "label": "Meta research: V JEPA 2, June 11, 2025",
+      "url": "https://ai.meta.com/research/publications/v-jepa-2-self-supervised-video-models-enable-understanding-prediction-and-planning/"
+    },
+    {
+      "label": "PARTNR research: planning and coordination benchmark, October 31, 2024",
+      "url": "https://arxiv.org/abs/2411.00081"
+    }
+  ],
+  "publishedDate": "2026-11-02",
+  "publishedAt": "2026-11-02T10:15:30-05:00",
+  "publishedLabel": "November 2, 2026",
+  "image": "/images/news/meta-fourier-max-humanoid-prototype.png",
+  "taxonomy": {
+    "primaryIndustry": "consumer-home",
+    "relevantIndustries": [],
+    "technologies": [
+      "humanoid-robotics",
+      "robot-software",
+      "manipulation"
+    ],
+    "applications": [
+      "product-development"
+    ]
+  }
+},
+{
   "slug": "microvision-fieldai-live-aerial-mapping",
   "title": "MicroVision expands FieldAI collaboration into live aerial mapping",
   "summary": "FieldAI has purchased MOVIA sensors for development and evaluation. Reported tests connect ground vehicle perception with live aerial mapping on a Robinson Unmanned Spirit aircraft.",
