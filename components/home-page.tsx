@@ -172,21 +172,8 @@ export default function HomePage() {
         <section className="border-b border-[#e2e2e5] px-5 py-10 sm:px-8 sm:py-14 lg:px-12 lg:py-16 xl:px-14">
           <div className="mx-auto grid max-w-[1460px] gap-10 lg:grid-cols-[minmax(0,0.88fr)_minmax(560px,1.12fr)] lg:items-center lg:gap-4">
             <div className="relative z-10">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#6e6e73] sm:text-xs">
-                <span className="sm:hidden">
-                  <span className="mb-2 block text-[9px] tracking-[0.24em] text-[#6e6e73]">
-                    Coverage
-                  </span>
-                  News <span aria-hidden="true">·</span> Research{" "}
-                  <span aria-hidden="true">·</span> Industry
-                </span>
-                <span className="hidden sm:inline">
-                  News <span aria-hidden="true">·</span> Research{" "}
-                  <span aria-hidden="true">·</span> Industry
-                </span>
-              </p>
-              <h1 className="mt-7 max-w-[12ch] text-[clamp(3.25rem,6vw,6.6rem)] font-semibold leading-[0.91] tracking-[-0.065em] text-[#0b0d0b]">
-                Intelligence for the physical AI economy.
+              <h1 className="max-w-[12ch] text-[clamp(3.25rem,6vw,6.6rem)] font-semibold leading-[0.91] tracking-[-0.065em] text-[#0b0d0b]">
+                Intelligence for the physical AI economy<span className="text-[#6f8a7a]">.</span>
               </h1>
               <p className="mt-7 max-w-2xl text-base leading-7 text-[#626a74] sm:text-lg sm:leading-8 lg:max-w-xl xl:text-xl xl:leading-9">
                 Black Scarab covers the companies, technologies, and industrial
