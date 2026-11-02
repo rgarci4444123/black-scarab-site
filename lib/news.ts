@@ -34,6 +34,130 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "microvision-fieldai-live-aerial-mapping",
+  "title": "MicroVision expands FieldAI collaboration into live aerial mapping",
+  "summary": "FieldAI has purchased MOVIA sensors for development and evaluation. Reported tests connect ground vehicle perception with live aerial mapping on a Robinson Unmanned Spirit aircraft.",
+  "category": "Autonomous Systems",
+  "publishedDate": "2026-11-02",
+  "publishedAt": "2026-11-02T09:17:08-05:00",
+  "publishedLabel": "November 2, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "5 min read",
+  "image": "/images/news/microvision-fieldai-live-aerial-mapping.png",
+  "imageAlt": "An imagined peach terrain model transitions into a lilac and white point cloud beneath a small generic drone.",
+  "imageCaption": "Editorial illustration by Black Scarab, created with AI to interpret live aerial mapping.",
+  "keyPoints": [
+    "FieldAI has purchased MOVIA sensors for development and evaluation across government and industrial programs.",
+    "MicroVision reports IRIS ground vehicle tests and live aerial mapping with MOVIA Air Plus on a Robinson Unmanned Spirit aircraft.",
+    "Broader adoption remains under evaluation; the announcement establishes a development purchase rather than production deployment."
+  ],
+  "sections": [
+    {
+      "heading": "A purchase inside a wider evaluation",
+      "paragraphs": [
+        "MicroVision has expanded its collaboration with FieldAI into live aerial mapping, alongside ground vehicle sensing, and says FieldAI has purchased MOVIA sensors for development and evaluation across government and industrial robotics programs.",
+        "The announcement, released on November 1 at 8 p.m. Eastern time, follows testing by FieldAI’s Federal team. Its stated purpose keeps the commercial milestone clear: a sensor purchase supports further evaluation, rather than establishing production deployment.",
+        "The work brings together three parts of an autonomous system: perception hardware, an autonomy developer and a vehicle platform. The interesting question is how effectively those parts turn observations of unfamiliar surroundings into information a machine or operator can use."
+      ]
+    },
+    {
+      "heading": "Two views of the environment",
+      "paragraphs": [
+        "The reported work covers IRIS long range lidar on autonomous ground vehicles and MOVIA Air Plus on a Robinson Unmanned Spirit aircraft. MicroVision says the aerial demonstrations produced live, colorized three dimensional lidar maps integrated with ATAK.",
+        "Those configurations solve related problems from different positions. A ground vehicle needs to understand the terrain and obstacles in the path ahead. An aircraft can look across an area and produce a spatial picture while it is still flying.",
+        "Lidar measures distances using laser light. Repeated measurements form a point cloud, a collection of positions describing surfaces in three dimensions. A camera can add visual information, while processing turns the measurements into a more useful representation of the scene.",
+        "For an autonomy system, collecting that data is the beginning. It must also determine which observations belong to the same place, how the vehicle is moving and what the resulting map implies for its next action. A useful aerial map and dependable vehicle navigation therefore require different kinds of validation."
+      ]
+    },
+    {
+      "heading": "What MOVIA Air Plus brings aboard",
+      "paragraphs": [
+        "MOVIA Air Plus is an existing perception package, introduced with the MOVIA Air family on August 5. MicroVision describes it as an airborne lidar sensor combined with an edge processor and optional camera for live mapping and simultaneous localization and mapping, commonly called SLAM.",
+        "SLAM estimates a machine’s position while building a representation of its surroundings. That matters when an aircraft cannot begin with a complete, current map. Onboard processing also allows spatial information to be produced during the mission rather than waiting for a later processing session.",
+        "The current manufacturer page lists Air Plus at 600 grams, or 900 grams with a camera, with a measurement range of 0.15 to 80 meters and Ethernet connectivity. These are supplier specifications for the product, separate from the reported FieldAI tests.",
+        "Those figures describe an integration package as much as a sensor. Mass affects the payload an aircraft must carry; processing and communications determine how its output reaches the rest of the system. The value of a live map depends on the complete chain working within the aircraft’s operating constraints."
+      ]
+    },
+    {
+      "heading": "The aircraft connection predates this update",
+      "paragraphs": [
+        "MicroVision and Robinson Unmanned announced a joint marketing and demonstration agreement on October 6 to advance Air Plus integration with the Spirit aircraft. That earlier agreement targeted mapping applications across commercial, civil, public safety and defense markets.",
+        "Robinson Unmanned describes Spirit as a compact coaxial aircraft with modular payload interfaces. Its current product materials distinguish remote operation from an architecture ready for autonomy. The aircraft supplies the flying platform; the mapping payload and autonomy software provide other parts of the capability.",
+        "The November announcement adds FieldAI’s reported testing and expanded evaluation to that existing integration story. Reading the sequence this way gives each milestone its proper place: a product launch, a platform demonstration agreement, then a named autonomy developer’s wider evaluation.",
+        "ATAK provides another connection, this time to the people using the information. The government’s TAK product materials describe an Android mapping and awareness application that can combine geospatial information and shared operational data. Making airborne output available there gives a map a route into an established workflow."
+      ]
+    },
+    {
+      "heading": "FieldAI sits between sensing and movement",
+      "paragraphs": [
+        "FieldAI develops autonomy software intended to work across different robot bodies and unstructured environments. It describes its Field Foundation Models as combining learned AI with physics based reasoning and uncertainty awareness.",
+        "TechCrunch’s August 2025 reporting described FieldAI’s ambition as autonomy software that adapts across robot types and unfamiliar environments. That broader strategy helps explain the appeal of evaluating multiple sensing configurations through one software organization.",
+        "For MicroVision, a developer working across platforms offers potential routes into several applications. For FieldAI, an external perception supplier offers hardware and software options without requiring it to design every sensing component itself.",
+        "Black Scarab’s analysis is that the opportunity lies in making those interfaces repeatable. A component that works in one demonstration becomes more commercially useful if it can be integrated, validated and supported across additional vehicle configurations with manageable engineering effort."
+      ]
+    },
+    {
+      "heading": "Where the next evidence matters",
+      "paragraphs": [
+        "MicroVision characterizes the tests as successful. FieldAI’s quoted comments describe expanding evaluation to identify opportunities for broader adoption. Together, those statements support continued development activity, with deployment remaining the next stage to establish.",
+        "The practical tests are specific. A mapping system must keep its reconstruction consistent as the vehicle moves. Information must arrive soon enough to remain useful. An autonomy system must handle uncertain observations and changing obstacles rather than treating every measured surface as a dependable instruction.",
+        "For the business, the next meaningful signals are repeat purchases tied to identifiable configurations, evaluations progressing into operating programs and evidence of sustained use. Those would show how much of the current development work becomes recurring demand.",
+        "The sensor purchase is a tangible step. The wider significance will emerge as the companies turn a demonstrated connection between sensing, mapping and autonomy into repeatable work in the field."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "MicroVision expanded FieldAI collaboration announcement, November 1, 2026",
+      "url": "https://ir.microvision.com/news/press-releases/detail/486/microvision-expands-collaboration-with-fieldai-across"
+    },
+    {
+      "label": "MicroVision MOVIA Air family launch, August 5, 2026",
+      "url": "https://ir.microvision.com/news/press-releases/detail/463/microvision-launches-moviatm-air-product-family-to"
+    },
+    {
+      "label": "MicroVision aerial perception product specifications",
+      "url": "https://microvision.com/solutions/aerial-perception-solutions"
+    },
+    {
+      "label": "MicroVision and Robinson Unmanned demonstration agreement, October 6, 2026",
+      "url": "https://ir.microvision.com/news/press-releases/detail/479/microvision-and-robinson-unmanned-advance-lidar-integration"
+    },
+    {
+      "label": "Robinson Unmanned Spirit aircraft overview",
+      "url": "https://www.robinsonunmanned.com/unmanned/uas/spirit"
+    },
+    {
+      "label": "FieldAI technology and company overview",
+      "url": "https://www.fieldai.com/"
+    },
+    {
+      "label": "TAK government product overview",
+      "url": "https://tak.gov/products"
+    },
+    {
+      "label": "TechCrunch reporting on FieldAI’s autonomy strategy, August 20, 2025",
+      "url": "https://techcrunch.com/2025/08/20/fieldai-raises-405m-to-build-universal-robot-brains/"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "defense-aerospace",
+    "relevantIndustries": [],
+    "technologies": [
+      "sensors",
+      "drones",
+      "edge-ai",
+      "robot-software"
+    ],
+    "applications": [
+      "mapping"
+    ]
+  }
+},
+{
   "slug": "pokebot-roboapi-outside-robot-testing",
   "title": "PokeBot opens RoboAPI for outside robot testing, with commercial use still excluded",
   "summary": "PokeBot’s free RoboAPI preview lets developers test its action model on compatible robot arms. The documentation shows the camera, calibration and local control work behind that access.",
