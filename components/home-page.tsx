@@ -154,8 +154,8 @@ export default function HomePage() {
     },
     {
       eyebrow: "Latest podcast",
-      title: "Encord’s Robot Data + Dream’s $3-an-Hour Robot Brain + Factory Cleaning Robots",
-      href: "https://open.spotify.com/episode/20JVWqFEqguHboboi3TNG1",
+      title: "Bedrock’s $600M Raise + SAP’s Robot Workflows + NVIDIA Inside Digit 5",
+      href: "https://open.spotify.com/episode/3X2GdYSiwmA8qpHr6IWkeP",
       image: "/images/podcast/black-scarab-physical-ai-weekly-homepage.jpg",
       imageAlt: "Black Scarab Physical AI Weekly podcast cover",
       cta: "Listen on Spotify",
