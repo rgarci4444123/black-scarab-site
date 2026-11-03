@@ -34,6 +34,129 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "tutor-intelligence-75m-robot-learning",
+  "title": "Tutor Intelligence raises $75 million to scale robots trained through real work",
+  "summary": "Andreessen Horowitz leads Tutor’s $75 million Series B as the company expands Cassie and Sonny, combining customer work, remote human assistance and robot model training.",
+  "category": "Funding",
+  "publishedDate": "2026-11-03",
+  "publishedAt": "2026-11-03T09:40:00-05:00",
+  "publishedLabel": "November 3, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/tutor-intelligence-75m-robot-learning.png",
+  "imageAlt": "Oil and charcoal editorial illustration of a human hand demonstrating a grasp that repeats across the canvas and resolves into a generic robotic gripper lifting a carton.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "readingTime": "5 min read",
+  "keyPoints": [
+    "The $75 million Series B brings total funding to $117 million, with Andreessen Horowitz leading and Union Square Ventures and Neo participating.",
+    "Cassie handles cases and pallets, while Sonny targets individual item picking. Remote human assistance supports the work and supplies training experience.",
+    "More than 1,000 robots under contract by the end of 2027 is the company’s target, rather than its current installed fleet."
+  ],
+  "sections": [
+    {
+      "heading": "Capital for models and machines",
+      "paragraphs": [
+        "Tutor Intelligence has raised $75 million in Series B funding led by Andreessen Horowitz, bringing its total capital raised to $117 million. Union Square Ventures and Neo also participated in the round announced on November 2.",
+        "The Watertown, Massachusetts company will use the money for robot foundation model training and for manufacturing and deploying its Sonny and Cassie robots in the United States. Its approach links those activities: machines working for customers generate experience that helps train the next iteration of the models.",
+        "The investment backs a business in which deployment is part of the research process as well as a source of revenue. Tutor builds the machines, develops their control models and supplies remote operations support. It must make those activities work together as the fleet grows."
+      ]
+    },
+    {
+      "heading": "Two bodies for different kinds of work",
+      "paragraphs": [
+        "Cassie is a mobile, single arm robot for palletizing, depalletizing and picking cases. Its current product page shows a vacuum gripper with individually controlled cups, a telescoping lift and a wheeled base. The machine can work at the end of a production line or move through warehouse aisles to assemble an order.",
+        "Sonny addresses smaller items and work requiring more dexterity. It has two arms on a vertical lift, force sensing grippers and depth cameras on the head, torso and wrists. Tutor describes warehouse order fulfillment as its first job, with manufacturing and maintenance tasks forming part of its expansion plans.",
+        "The two designs address different handling problems. A sealed carton can be lifted with suction and placed onto a pallet. An individual item may require a more selective grasp and careful placement into an order bin. Tutor is developing different bodies around those distinct jobs.",
+        "Mobility adds another layer. A robot working at the end of a line can stay near a predictable supply of cases. One collecting an order must reach the right storage location, identify the requested product and move the completed order onward. The usefulness of the arm depends on that surrounding workflow."
+      ]
+    },
+    {
+      "heading": "Human help is built into the learning process",
+      "paragraphs": [
+        "Remote human operators, called tutors, help the robots perform work in production environments. Andreessen Horowitz describes putting machines to work before they reach full autonomy, then using the resulting experience to train the models. Human assistance is part of how Tutor delivers the service and develops its technology.",
+        "The arrangement connects customer service with data collection. When a robot needs help on an unfamiliar situation, the response can both complete the job and provide an example for future training. The economics therefore depend on useful work delivered to the customer and on the support effort needed to deliver it.",
+        "A larger fleet creates more opportunities to encounter different products and conditions. It also increases the number of machines that Tutor must manufacture, monitor and maintain. The funding supports that combined hardware, software and service burden.",
+        "Black Scarab’s analysis is that this creates two linked measures of progress: the work a robot completes and the human effort required to complete it. More customer sites can supply a wider range of examples, but the business becomes stronger when those examples also help future machines need less assistance."
+      ]
+    },
+    {
+      "heading": "A physical training base behind the fleet",
+      "paragraphs": [
+        "Tutor’s research also has a dedicated physical setting. The company’s Data Factory 1 contains 100 Sonny robots used to collect training data. Its Sonny documentation says Ti0, its first robot foundation model, was trained using data from that facility.",
+        "A foundation model is intended to provide a reusable starting point for robot behavior. In this case, the task is to connect what the machine sees and the instruction it receives with a physical action. A useful model must deal with the consequences of that action, including objects that move differently from what the robot expected.",
+        "The training facility and customer sites serve complementary purposes. A dedicated environment allows repeated experiments, while production work exposes machines to the variations of actual operations. Tutor’s strategy brings both into the development process.",
+        "The practical test is how learning carries across situations. Repeating a grasp in one setting is useful evidence about that setting. Building a broader service requires the system to cope with changes in products, placement and workflow while continuing to complete the job."
+      ]
+    },
+    {
+      "heading": "What usage pricing includes",
+      "paragraphs": [
+        "Tutor sells robot work by the hour or by the pick. Its current pricing page lists palletizing and depalletizing at $14 to $18 per robot hour, with an 80 hour monthly minimum. The terms also include a $10,000 implementation fee and an $8,000 refundable deposit.",
+        "Customers using that service avoid buying the robot, but starting a deployment still requires money and preparation. Tutor says support, maintenance and model improvements are included in the hourly rate. Picking work is priced for the particular workflow, so the palletizing rate is not a universal price for every job."
+      ]
+    },
+    {
+      "heading": "Repeat business is the next test",
+      "paragraphs": [
+        "Tutor says its robots now operate in almost four times as many facilities as a year earlier. Nearly a third of the customers that received robots in the past year were existing customers adding more machines, according to the company and its lead investor.",
+        "Those are useful signs of expansion, while measuring different things. Facility growth tracks the footprint of the service. Repeat orders indicate that some customers want to extend it. The goal of more than 1,000 robots under contract by the end of 2027 is a future milestone.",
+        "For Tutor, scaling means financing hardware and supporting it while improving the models that run it. Each new deployment brings an opportunity to earn revenue and collect experience, together with manufacturing, maintenance and operating obligations.",
+        "The next meaningful evidence will connect those activities: more productive deployments, customers returning for additional work and less support effort per completed task. The $75 million gives Tutor resources to pursue that combination."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Tutor issuer Series B announcement, authorized syndication",
+      "url": "https://finance.yahoo.com/technology/ai/articles/tutor-intelligence-raises-75-million-160000524.html"
+    },
+    {
+      "label": "Andreessen Horowitz investment announcement",
+      "url": "https://a16z.com/announcement/investing-in-tutor-intelligence/"
+    },
+    {
+      "label": "Tutor Cassie manufacturer product page",
+      "url": "https://tutorintelligence.com/cassie"
+    },
+    {
+      "label": "Tutor Sonny manufacturer product page",
+      "url": "https://tutorintelligence.com/sonny"
+    },
+    {
+      "label": "Tutor current service pricing and implementation terms",
+      "url": "https://tutorintelligence.com/pricing"
+    },
+    {
+      "label": "Tutor: Cassie and Sonny development and deployment strategy, September 16, 2026",
+      "url": "https://tutorintelligence.com/blog/announcing-the-next-generation-of-robot-workers-cassie-and-sonny"
+    },
+    {
+      "label": "Tutor: official company updates and founder financing announcement",
+      "url": "https://www.linkedin.com/company/tutorintelligence/"
+    },
+    {
+      "label": "Forbes: John Werner’s November 2 financing report and interviews",
+      "url": "https://www.forbes.com/sites/johnwerner/2026/11/02/tutor-intelligence-why-not-just-teach-the-robots-ourselves/"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "warehousing-logistics",
+    "relevantIndustries": [
+      "manufacturing"
+    ],
+    "technologies": [
+      "manipulation",
+      "robot-software",
+      "autonomous-mobile-robots"
+    ],
+    "applications": [
+      "material-handling"
+    ]
+  }
+},
+{
   "slug": "meta-fourier-max-humanoid-prototype",
   "title": "Meta reportedly builds Max humanoid with Fourier in three months",
   "summary": "A reported three month build gives Meta a physical platform for robotics experiments. Its stated purpose is internal research, with a second version already in development.",
