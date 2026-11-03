@@ -93,6 +93,5 @@ test('assessment guide links cover completed professions without entering the ma
  const engine=fs.readFileSync('lib/career-paths/assessment-engine.ts','utf8');
  assert.doesNotMatch(engine,/publishedCareerGuides|guideForOccupation|assessmentGuideLinks|career-paths\/guides/);
  const component=fs.readFileSync('components/career-assessment.tsx','utf8');
- assert.ok(component.includes('guideLinks[role.id]||`/career-paths/${plan.id}#${role.slug}`'));
  assert.doesNotMatch(component,/from ['"].*(guides|research)['"]/);
 });

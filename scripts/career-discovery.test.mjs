@@ -54,3 +54,12 @@ test('skill denominators and curated compensation remain tied to the dated sourc
 test('assessment code has no response persistence, network submission or career-fit percentages',()=>{
  const code=fs.readFileSync('components/career-assessment.tsx','utf8')+fs.readFileSync('lib/career-paths/assessment-engine.ts','utf8');assert.doesNotMatch(code,/localStorage|sessionStorage|fetch\(|sendBeacon|track\(/);assert.doesNotMatch(code,/Math\.random|fitPercent|fitScore/);
 });
+
+
+test('equal interest scores retain the existing deterministic field order',()=>{
+ const answers={...neutral(),interests:['creative']};
+ const fields=()=>assessCareers(answers).recommendations.map(item=>item.id);
+ assert.deepEqual(fields(),['hardware-manufacturing','platforms-simulation']);
+ assert.deepEqual(fields(),fields());
+ assert.equal(assessCareers(answers).close,true);
+});

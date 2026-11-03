@@ -16,7 +16,7 @@ All main-section title content is centralized in `lib/section-headers.ts`, rende
 
 `assessment-questions.ts` contains ten questions about everyday activities, practical experience, problem-solving, learning and working preferences. No question requires robotics vocabulary. School, university, home and work experience count. Starting choices describe career stage rather than list occupations. Visual design and communication are recognized as transferable experience without implying technical qualifications. `assessment-engine.ts` caps each question’s contribution at four points per field, uses interests as the main signal and treats starting situation as unscored context. Learning commitment does not affect ranking. Only explicitly reported experience populates the experience list; an interest never becomes a claimed qualification. Broad answers suggest fields and examples of roles to explore, rather than establish suitability for a particular job.
 
-Results explain actual selected answers, distinguish experience from foundations to explore, and offer an alternative field. Entirely undecided interests produce an open exploration result. There are no fit percentages, degree filters, response submissions or browser storage. Back, answer review and restart use React memory. Beginner project selection and programming resource suggestions account for reported coding experience.
+The local results redesign presents one primary category, two careers, one secondary category and explore/retake actions. Profession links use the published-guide registry; unpublished roles remain plain text. Ties retain the matching engine’s existing field order. Entirely undecided interests show a concise four-field chooser. The questionnaire, validation and matching logic are unchanged. Results omit answer explanations, skills reports, project/resource directories and employer evidence. The server-rendered quiz introduction is supplied as children and is shown only while answering. Answers and retake behavior remain in React memory.
 
 ## Curated resources
 
@@ -122,3 +122,8 @@ The four guides use distinct visible headlines and exact SEO titles, one concise
 Robot Learning, Simulation and Integration show Black Scarab estimates of $275,000, $183,000 and $158,000 per year. Each estimate links to its own versioned derivation containing eligible observations, source hashes, exclusions and the median range-midpoint calculation. Mechanical Engineering shows the identified Ambi Robotics employer example. Original snapshot and reviewed evidence exports are unchanged.
 
 Production uses the existing GitHub `main` to Vercel workflow. Validate the career routes, four guide images, assessment flow, exact SEO titles, canonicals, Article/Breadcrumb structured data, public research downloads and sitemap after deployment.
+
+
+### Quiz results presentation
+
+The completed quiz presents one prominent category, two careers, a quieter secondary field and explore/retake actions. Only published profession guides are linked. The questionnaire and matching engine retain their previous source hashes. Validation covers the regular match, deterministic tie, undecided-interest state, retake reset, publication-gated career links and responsive rendering.
