@@ -34,6 +34,126 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "xiaomi-humanoid-eight-hour-factory-assignment",
+  "title": "Xiaomi says its humanoid handled a full factory shift",
+  "summary": "Xiaomi reports an eight hour panel sorting assignment at its car factory, with autonomous error correction and production line coordination. The result puts sustained work at the center of its humanoid trials.",
+  "category": "Humanoids",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "5 min read",
+  "imageAlt": "Editorial illustration of coral colored robotic hands placing a cobalt blue automotive trim panel into a diagonal rack of matching panels.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "Xiaomi says an eight hour assignment at a center console side panel sorting station met the station’s full day production needs.",
+    "The company reports autonomous anomaly correction and coordination with the production line system during the work.",
+    "A separate apartment trial linked more than 50 tasks across three rooms in a sequence lasting over 30 minutes."
+  ],
+  "sections": [
+    {
+      "heading": "A working day at one station",
+      "paragraphs": [
+        "Xiaomi says its humanoid robot met a full day’s production needs during an eight hour panel sorting assignment at its car factory.",
+        "The company disclosed the result during the World Internet Conference in Wuzhen, with Chinese technology and financial publications reporting the update on November 3. The assignment involved sorting center console side panels in the automotive assembly process. Xiaomi also reported autonomous correction of anomalies and coordination with the production line system.",
+        "Those details give the duration its significance. Keeping a station supplied requires a robot to repeat the job, notice when an action goes wrong and continue working with the equipment around it. A longer assignment brings those requirements together over a period that matters to factory scheduling.",
+        "The result is a company reported trial at a defined workstation. Its commercial importance lies in the move toward sustaining useful output through a working day, with recovery and integration becoming part of the demonstration."
+      ]
+    },
+    {
+      "heading": "Different tasks, different measures",
+      "paragraphs": [
+        "Xiaomi’s factory program has developed through several distinct steps this year. In March, the company reported three consecutive hours of autonomous work at a self tapping nut loading station, with a 90.2% success rate for the operation on both sides and a 76 second production cycle.",
+        "By July, Xiaomi reported that success on the nut loading task had reached 98%. Its investor presentation separately listed 90% success for center console side panel sorting and material bin folding and recycling. Those figures described the individual tasks at that stage of development.",
+        "November’s eight hour assignment concerns panel sorting, while July’s 98% figure measures nut loading. The duration of the newer trial and the earlier task success rate describe different aspects of the program’s progress.",
+        "The progression is still meaningful. Xiaomi is testing both repeated precision work and the handling of larger components, while extending the time over which a station can perform. Duration, task success and production pace measure different parts of that progress."
+      ]
+    },
+    {
+      "heading": "Recovery is part of the job",
+      "paragraphs": [
+        "Autonomous anomaly correction is one of the most consequential parts of Xiaomi’s latest account. A robot that recognizes an unsuccessful action has a chance to recover before the problem interrupts the wider process. Repeating the original command without checking the result can make a small error harder to resolve.",
+        "Consider an illustrative sorting problem: a panel sits at a different angle from the previous one. The system may need to revise its grasp, check whether the part is secure and adjust the placement. The value comes from reaching the correct final state despite variation in the starting position.",
+        "Coordination with the line adds another requirement. The robot’s work has to happen in the right sequence relative to incoming material and downstream operations. The machine must therefore function as part of a production system, where completing an action and communicating its outcome both matter.",
+        "Black Scarab’s analysis is that the strongest part of this announcement is the combination of duration, recovery and coordination. Together, they move the evaluation toward how a workstation behaves over time. An eight hour assignment is a useful unit for that test; the productive work completed within it determines the operational value."
+      ]
+    },
+    {
+      "heading": "A second test inside an apartment",
+      "paragraphs": [
+        "Alongside the factory update, Xiaomi described trial operation of an agent system at its Youth Apartments. Built around the Xiaomi Robotics 1 pretrained model, the system completed a task sequence lasting more than 30 minutes, spanning three rooms and containing over 50 tasks, according to the company’s account.",
+        "The reported activities included preparing tools, tidying a sofa and tables, collecting rubbish, sorting and returning objects, inspecting rooms and making a final check before leaving. Engineers used additional training data and repeated optimization to connect data collection, model inference and execution.",
+        "This tests a different kind of persistence from the factory assignment. A sorting station repeats a defined operation. A domestic sequence requires the system to track which actions are complete and choose what comes next as the surroundings change.",
+        "A simple example is clearing a surface before inspecting it. The inspection depends on the earlier work having succeeded. Linking tasks makes errors consequential beyond the moment in which they occur, which is why completing a longer sequence carries more information than showing each action separately."
+      ]
+    },
+    {
+      "heading": "The research behind the longer sequences",
+      "paragraphs": [
+        "Xiaomi’s July research paper describes Robotics 1 as a vision, language and action model. It connects visual observations and language instructions with the actions a robot should take. The team reports pretraining on more than 100,000 hours of real manipulation trajectories collected with handheld demonstration devices.",
+        "Its training process has two stages. Pretraining develops a broad base of action generation, while subsequent training aligns that base with particular robot bodies and the instructions people use. The paper also describes automatically labeling demonstrations with language about how the scene changes.",
+        "That distinction helps explain the engineering direction. A broad model supplies a starting point, then further adaptation connects it to the machine and the task. The apartment trial is a reported application of that approach. The factory update provides a separate measure of work at a specific station.",
+        "Xiaomi also reported strong simulation benchmark results in the paper. Those experiments measure performance under their stated test conditions. The November trials add evidence about longer activity in physical settings, where an action changes what the robot must observe and handle next."
+      ]
+    },
+    {
+      "heading": "From a shift to a repeatable schedule",
+      "paragraphs": [
+        "Xiaomi has a useful development setting in its own automotive operations: a place to test robots against real production demands and revise the system around observed problems. The value of that access grows when experience leads to more dependable work across repeated assignments.",
+        "The next meaningful evidence would connect duration with accepted output, recovery frequency, human assistance and the effect on the surrounding line. Repeating the result across working days and different material conditions would show how well the system holds up beyond one reported assignment.",
+        "For now, Xiaomi’s update gives its factory program a more operational milestone. A full day’s station demand puts the emphasis on sustained contribution. Turning that result into a repeatable schedule is the next step toward a durable role in production."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Xiaomi Robotics Team: Robotics 1 research paper and training methodology, July 2026",
+      "url": "https://arxiv.org/abs/2607.15330"
+    },
+    {
+      "label": "Xiaomi investor presentation: separate factory task success rates, slide 11",
+      "url": "https://ir.mi.com/static-files/20793a18-42e5-43d1-9f2b-aad269cefcd4"
+    },
+    {
+      "label": "IT Home: November 3 account of Xiaomi Technology’s factory and apartment disclosures",
+      "url": "https://www.ithome.com/1/021/525.htm"
+    },
+    {
+      "label": "Phoenix Technology: November 3 reporting from the World Internet Conference",
+      "url": "https://original.ifeng.com/c/8xkc1blzOOq"
+    },
+    {
+      "label": "CLS via Phoenix: Lei Jun’s statement on the eight hour assignment",
+      "url": "https://news.ifeng.com/c/8xkoRTZXrBA"
+    },
+    {
+      "label": "Southern Metropolis Daily via Eastmoney: factory trial progression",
+      "url": "https://finance.eastmoney.com/a/202611033920149350.html"
+    }
+  ],
+  "publishedDate": "2026-11-03",
+  "publishedAt": "2026-11-03T17:21:18-05:00",
+  "publishedLabel": "November 3, 2026",
+  "image": "/images/news/xiaomi-humanoid-eight-hour-factory-assignment.png",
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [
+      "consumer-home"
+    ],
+    "technologies": [
+      "humanoid-robotics",
+      "embodied-ai",
+      "manipulation",
+      "foundation-models"
+    ],
+    "applications": [
+      "material-handling",
+      "assembly",
+      "household-tasks"
+    ]
+  }
+},
+{
   "slug": "tutor-intelligence-75m-robot-learning",
   "title": "Tutor Intelligence raises $75 million to scale robots trained through real work",
   "summary": "Andreessen Horowitz leads Tutor’s $75 million Series B as the company expands Cassie and Sonny, combining customer work, remote human assistance and robot model training.",
