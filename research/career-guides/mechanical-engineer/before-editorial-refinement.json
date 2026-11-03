@@ -1,0 +1,584 @@
+{
+  "id": "mechanical-engineer-robotics",
+  "occupationId": "mechanical-engineer",
+  "familyId": "hardware-manufacturing",
+  "slug": "mechanical-engineer",
+  "title": "Mechanical Engineer in Robotics",
+  "seoTitle": "Mechanical Engineer in Robotics: Career Guide, Skills, Education & Salary",
+  "description": "What robotics mechanical engineers actually do, the skills employers request, education routes, sourced salary examples and a practical gripper portfolio project.",
+  "status": "published",
+  "reviewedAt": "2026-11-03",
+  "sections": [
+    {
+      "id": "the-role",
+      "heading": "What does a mechanical engineer do in robotics?",
+      "navLabel": "The role",
+      "paragraphs": [],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A robot cannot compensate in software for every loose bearing, flexible bracket or overheating joint. Mechanical engineers design the physical systems that let a robot carry loads, move predictably and survive repeated use. Their output is more than a 3D model: it includes calculations, drawings, working prototypes and evidence that the design meets its requirements."
+        },
+        {
+          "type": "paragraph",
+          "text": "The work can center on the links and joints of an arm, the chassis and suspension of a mobile robot, a gripper or other end effector, an actuator transmission, or the structure around sensors and electronics. An end effector is the tool at the end of a robot arm; an actuator turns energy into movement."
+        },
+        {
+          "type": "paragraph",
+          "text": "The engineering fundamentals also apply in other industries. Robotics puts particular pressure on the interfaces between mechanics, sensing and control. A joint’s stiffness affects positioning; backlash in a transmission affects reversals; cable routing changes what movement is possible. Mechanical, electrical and software engineers must agree on these boundaries rather than optimize each part in isolation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Mechanical engineers usually own product geometry, mechanical performance and design release. Manufacturing engineers concentrate on building it repeatedly; test engineers develop repeatable ways to measure performance. In a small team, one person may cover parts of all three."
+        }
+      ]
+    },
+    {
+      "id": "day-to-day",
+      "heading": "What the work actually looks like",
+      "navLabel": "Daily work",
+      "paragraphs": [],
+      "sourceIds": [
+        "apptronik",
+        "grip-selection"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A working day might move from reviewing a failed prototype to changing a CAD assembly, discussing a tolerance with a supplier and checking test results with a controls engineer. Design reviews ask why a choice works, how it will be inspected and what could fail. Documentation and iteration occupy as much attention as the initial concept."
+        },
+        {
+          "type": "heading",
+          "text": "Example: designing a robotic gripper"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Define the task. Establish the object’s dimensions, mass, surface, allowable contact pressure and orientation. Specify the opening range, available mounting space and how the robot approaches it. A delicate carton and a rigid metal part need different gripping strategies.",
+            "Calculate loads and motion. Draw the forces on the object and fingers. Check gravity, acceleration, offset loads and finger bending. Work out jaw travel and mechanical advantage before choosing an actuator or transmission.",
+            "Choose materials and a manufacturing route. Compare stiffness, mass, wear and the contact surface. Printed parts can expose a geometry problem quickly; their behavior does not establish the strength or durability of a machined production part.",
+            "Build the CAD assembly. Model the fingers, guides, fasteners and mounting interface. Check movement through the full opening range, tool access, sensor placement and cable clearance.",
+            "Specify the interfaces. Choose the surfaces that locate the fingers and guides. Calculate how dimensional variation affects alignment and clearance. Apply tolerances that the selected process can produce and that inspection can verify.",
+            "Prototype, test and revise. Measure slip, jaw alignment, deflection and repeatability. If the gripper misses a target, identify the cause and retest a documented change. Release drawings and a bill of materials only after resolving the relevant design questions."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "figure",
+          "src": "/career-paths/gripper-forces.svg",
+          "width": 680,
+          "height": 290,
+          "alt": "Two jaws apply equal inward normal forces F to an object. Friction at their contacts opposes the object’s weight mg.",
+          "caption": "A symmetrical friction grip. Each jaw supplies normal force F; the available upward friction is μF at each contact. Together, friction must support the weight mg."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a simplified stationary object between two vertical jaws, each applying normal force F, the friction condition is 2μF ≥ mg. Here μ is the assumed contact friction coefficient, m is mass and g is gravitational acceleration. Adding a chosen margin S gives F ≥ S × m × g ÷ (2μ)."
+        },
+        {
+          "type": "paragraph",
+          "text": "For an illustrative 0.25 kg object, μ = 0.2 and S = 4, this gives about 24.5 N per jaw. The friction value is an assumption, not a measurement. Acceleration, impacts, finger length and actual contact conditions can change the selection. SMC’s gripper selection guidance shows why the friction model is only one part of choosing a real component."
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "heading": "Technical skills employers look for",
+      "navLabel": "Skills",
+      "paragraphs": [],
+      "sourceIds": [
+        "study",
+        "apptronik",
+        "one-x"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Our November 2, 2026 study classified 132 advertisements from 34 employers into the mechanical-engineering family. The cohort includes robot hardware, autonomous aircraft and marine systems, and some supporting infrastructure roles. It is broader than robot mechanism design alone."
+        },
+        {
+          "type": "table",
+          "caption": "Skill mentions in 132 mechanical-family advertisements, November 2, 2026",
+          "columns": [
+            "Skill",
+            "Any mention",
+            "Required or option",
+            "Preferred",
+            "Context only"
+          ],
+          "rows": [
+            [
+              "CAD",
+              "110",
+              "74",
+              "32",
+              "4"
+            ],
+            [
+              "Machining / fabrication",
+              "75",
+              "43",
+              "19",
+              "13"
+            ],
+            [
+              "Finite element analysis",
+              "71",
+              "42",
+              "20",
+              "9"
+            ],
+            [
+              "Siemens NX",
+              "67",
+              "41",
+              "23",
+              "3"
+            ],
+            [
+              "GD&T / tolerancing",
+              "65",
+              "45",
+              "9",
+              "11"
+            ],
+            [
+              "SolidWorks",
+              "63",
+              "46",
+              "15",
+              "2"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Counts are automatically coded once per advertisement and skill, using the strongest detected wording. “Required or option” includes alternatives such as one of several CAD packages. Software rows overlap with CAD and with each other. An unobserved mention does not prove the skill is unnecessary. Only four role assignments in this cohort were analyst reviewed; the skill counts are not a manual review of every requirement."
+        },
+        {
+          "type": "heading",
+          "text": "Foundations: models, drawings and manufacturable parts"
+        },
+        {
+          "type": "paragraph",
+          "text": "Computer-aided design (CAD) is how you define geometry, fit and assembly relationships. Engineering drawings communicate dimensions and inspection requirements to the person making the part. Learn constrained sketches, assemblies and drawing revision in one package before trying to collect software badges. Siemens NX and SolidWorks appear frequently in this sample, but the underlying design reasoning must transfer between tools."
+        },
+        {
+          "type": "paragraph",
+          "text": "Geometric dimensioning and tolerancing, or GD&T, controls features relative to functional references called datums. For a gripper, the useful question is whether the guides stay aligned across manufacturing variation. A tolerance stack adds the relevant dimensional variations so you can predict clearance or interference before assembly."
+        },
+        {
+          "type": "paragraph",
+          "text": "Materials and manufacturing knowledge connect the design to a buildable part. Explain why you chose a material, how it will be machined, formed or printed, and which surfaces need close control. Machining and fabrication mentions do not mean every engineer must personally operate every machine; they show why process knowledge matters to design decisions."
+        },
+        {
+          "type": "heading",
+          "text": "Analysis and validation: show why the design works"
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with free-body diagrams, loads, stiffness and simple calculations. Finite element analysis divides a model into small elements to estimate its response. A useful result depends on the material model, loads, constraints, contacts and mesh. Compare it with a hand calculation and, where possible, a physical measurement; a colored stress plot alone is weak evidence."
+        },
+        {
+          "type": "paragraph",
+          "text": "Prototyping and validation close the loop. Define acceptance criteria, choose what to measure, record the setup and investigate failures. Apptronik’s sampled senior role combines analysis with design-for-manufacture, testing and production support, illustrating how those skills come together in subsystem ownership."
+        },
+        {
+          "type": "heading",
+          "text": "Specialization: choose the mechanism, not every topic at once"
+        },
+        {
+          "type": "paragraph",
+          "text": "Actuator and drivetrain work adds motor and gearbox sizing, bearings, backlash, duty cycle and heat. Other roles concentrate on lightweight structures, thermal packaging or environmental durability. These are distinct specializations, not a universal beginner checklist. The sampled 1X hand-thermal role, for example, asks for thermal analysis and experiments alongside mechanical design."
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "heading": "Education and qualifications",
+      "navLabel": "Education",
+      "paragraphs": [],
+      "sourceIds": [
+        "bls",
+        "applied",
+        "apptronik",
+        "one-x",
+        "ambi",
+        "asme"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A mechanical engineering bachelor’s degree is a common route. Look for preparation in mechanics, materials, dynamics, thermal systems, design and laboratory work. Mechatronics, robotics and related engineering programs can also be relevant, provided their mechanical depth matches the role. The sampled 1X role explicitly accepts several related engineering disciplines."
+        },
+        {
+          "type": "heading",
+          "text": "Do you need a master’s degree?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Not for every role. Applied Intuition’s sampled new-graduate posting accepts a bachelor’s or master’s degree in mechanical engineering or an equivalent program; Apptronik’s senior posting specifies a bachelor’s degree and relevant experience. These examples establish that a master’s is not universal. They do not establish how many jobs accept each qualification."
+        },
+        {
+          "type": "paragraph",
+          "text": "Graduate study can be useful when you want deeper work in a specialty such as dynamics, optimization, advanced materials or thermal engineering. Compare a program’s actual laboratories and projects with target job descriptions. Check how much of the program covers the mechanical analysis you want to practice."
+        },
+        {
+          "type": "heading",
+          "text": "Experience and credentials serve different purposes"
+        },
+        {
+          "type": "paragraph",
+          "text": "Internships, student build teams, research projects and supervised workshop work can demonstrate design judgment and follow-through. Applied Intuition’s sampled graduate role specifically values hands-on build-team and project experience. A portfolio should show your decisions, measurements and revisions, not only an attractive render."
+        },
+        {
+          "type": "paragraph",
+          "text": "Some postings allow equivalent experience. Ambi Robotics’ sampled mechanical-systems role uses that wording, while other employers specify an engineering degree. Read the actual requirement and its alternatives; check whether your preparation meets that employer’s stated requirement."
+        },
+        {
+          "type": "paragraph",
+          "text": "ASME’s GDTP certification assesses knowledge of geometric dimensioning and tolerancing. It can support a drawing-intensive specialization. Treat it as a targeted credential rather than a substitute for mechanics, design work and test evidence. Likewise, a CAD certificate demonstrates tool familiarity, not the ability to take responsibility for a robot subsystem."
+        }
+      ]
+    },
+    {
+      "id": "salary",
+      "heading": "Compensation and career progression",
+      "navLabel": "Salary",
+      "paragraphs": [],
+      "sourceIds": [
+        "study",
+        "bls",
+        "applied",
+        "ambi",
+        "one-x",
+        "apptronik"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For a broad US reference, the Bureau of Labor Statistics reports a $104,110 median annual wage for mechanical engineers in May 2025. That covers the occupation across industries and experience levels. It is not a robotics-only salary, a starting salary or a measure of total compensation."
+        },
+        {
+          "type": "table",
+          "caption": "Selected US advertised annual salary ranges, captured November 2, 2026. USD per year.",
+          "columns": [
+            "Employer, role and location",
+            "Advertised range"
+          ],
+          "rows": [
+            [
+              "Applied Intuition\nMechanical Engineer - New Grad (December 2026)\nSunnyvale",
+              "$110,000 to $148,000"
+            ],
+            [
+              "Ambi Robotics\nSenior Project Engineer - Mechanical Systems\nBerkeley, California",
+              "$125,000 to $150,000"
+            ],
+            [
+              "1X\nMechanical Design Engineer - Hands Thermal Systems\nSan Carlos, CA",
+              "$175,950 to $253,000"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These are three different California jobs, not entry, mid-career and senior bands. One is explicitly a new-graduate role, one carries a senior title, and one is a specialist thermal role. Title conventions, scope and employer differ. The structured salary fields do not consistently identify base-pay basis; equity and benefits must be evaluated separately."
+        },
+        {
+          "type": "paragraph",
+          "text": "This sample is too uneven by geography and level to support a robotics salary median or a reliable mid-career range. Compare a real offer with roles in the same location and scope, including bonus structure, equity terms, benefits and working arrangements."
+        },
+        {
+          "type": "heading",
+          "text": "Progression is about the scope you can own"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Early responsibility: complete a defined part, drawing or test with review. Show sound calculations, clear documentation and the ability to learn from a failed build.",
+            "Independent subsystem ownership: manage requirements, interfaces, suppliers, analysis and verification through release. Apptronik’s senior posting is a concrete example of this kind of responsibility.",
+            "Broader technical responsibility: make architecture trade-offs across subsystems, establish design practices and help other engineers resolve difficult failures. Titles such as staff or principal vary by company.",
+            "Management: take responsibility for people, resourcing and delivery. It is a different direction from deepening technical ownership; compare the actual responsibilities before choosing it."
+          ],
+          "ordered": false
+        }
+      ]
+    },
+    {
+      "id": "employers",
+      "heading": "Who is hiring?",
+      "navLabel": "Employers",
+      "paragraphs": [],
+      "sourceIds": [
+        "study",
+        "apptronik",
+        "one-x",
+        "applied",
+        "ambi"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In the November 2 mechanical-family sample, the most represented employers were Shield AI (26 advertisements), Anduril Industries (21 advertisements), Saronic (12 advertisements), Zipline (10 advertisements). These are counts from selected public boards, not a ranking of the whole industry or a current vacancy count."
+        },
+        {
+          "type": "heading",
+          "text": "Different products create different mechanical jobs"
+        },
+        {
+          "type": "paragraph",
+          "text": "Humanoid hardware: Apptronik’s sampled Apollo role covers mechanical subsystems through production and sustaining. The 1X example focuses on heat management in a robot hand. One is broad product ownership; the other emphasizes a particular engineering discipline."
+        },
+        {
+          "type": "paragraph",
+          "text": "Autonomous vehicles: Applied Intuition’s graduate example includes sensor and compute packaging, structural and thermal work, fixtures and validation. That is useful context for readers coming from automotive or ruggedized electronics work."
+        },
+        {
+          "type": "paragraph",
+          "text": "Logistics robotics: Ambi’s example emphasizes system layouts, drawings, vendors and installation-ready mechanical systems. It shows that mechanical work can sit close to customer deployment rather than center on inventing a new robot joint."
+        },
+        {
+          "type": "paragraph",
+          "text": "Across these examples, a strong application connects design decisions with something built or measured. Choose employers by the subsystem and work you want to own. A company name or a generic “robotics” label does not tell you how much of the role is mechanism design, packaging, production support or site engineering."
+        }
+      ]
+    },
+    {
+      "id": "transition",
+      "heading": "How to transition into this career",
+      "navLabel": "Transitions",
+      "paragraphs": [],
+      "sourceIds": [
+        "applied",
+        "apptronik",
+        "ambi"
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Studying mechanical engineering or a related subject"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use a design course, build team or internship to own a small mechanism from requirements to test. Pair CAD with a tolerance calculation and a measured result. Ask for feedback on a drawing and test plan before the project becomes too large to finish."
+        },
+        {
+          "type": "heading",
+          "text": "Already a mechanical engineer in another industry"
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep your strongest evidence in structures, mechanisms, materials or product development. Add the robotics-specific interfaces: movement limits, sensors, cabling, transmission behavior and control requirements. Rework one familiar subsystem under a mass, stiffness or repeated-motion constraint rather than starting your portfolio from zero."
+        },
+        {
+          "type": "heading",
+          "text": "Coming from manufacturing engineering"
+        },
+        {
+          "type": "paragraph",
+          "text": "Process capability, fixtures, inspection and supplier work transfer well. The gap may be ownership of the product’s load cases and functional design. Show that you can derive requirements, calculate performance and compare design concepts, as well as explain how to produce the selected part."
+        },
+        {
+          "type": "heading",
+          "text": "Coming from a technician or hands-on trade"
+        },
+        {
+          "type": "paragraph",
+          "text": "Assembly, fault diagnosis, machining and maintenance can reveal practical failure modes that a design overlooks. Document that experience, then add technical drawing, CAD, mathematics and mechanics in a structured way. A technician, prototyping or test role may be a realistic bridge while you build the preparation required for an engineering position."
+        },
+        {
+          "type": "heading",
+          "text": "Coming from software, design, finance or another field"
+        },
+        {
+          "type": "paragraph",
+          "text": "Start by testing whether you enjoy physical design and measurement. Software experience can support calculations and test tools; visual communication can help explain concepts; analytical work can support trade studies. Those strengths do not replace mechanics, materials and manufacturing knowledge. If you want to own mechanical designs, investigate formal engineering study and the degree requirements of target roles alongside a small practical project."
+        },
+        {
+          "type": "paragraph",
+          "text": "The useful next step is the smallest project that exposes a real skill gap. A career change into mechanical engineering usually requires more technical preparation than learning the vocabulary of robotics."
+        }
+      ]
+    },
+    {
+      "id": "portfolio",
+      "heading": "Portfolio project: design a simple gripper",
+      "navLabel": "Portfolio project",
+      "paragraphs": [],
+      "sourceIds": [
+        "grip-selection",
+        "freecad",
+        "mit"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Build a small, hand-actuated parallel-jaw gripper for a light, rigid test object. A screw or simple linkage can provide the motion; motors and a robot arm are optional later extensions. The goal is to show a traceable design decision and a measured revision."
+        },
+        {
+          "type": "heading",
+          "text": "Set a bounded brief"
+        },
+        {
+          "type": "paragraph",
+          "text": "As an example brief, choose a 20 to 60 mm jaw opening and a test object no heavier than 250 g. Define the object’s surface and orientation. Set your own measurable acceptance target, such as holding the object for ten seconds without visible slip on twenty repeated trials. These are project targets, not industry standards."
+        },
+        {
+          "type": "heading",
+          "text": "Tools and design work"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Use a sketchbook, a spreadsheet and one CAD package. FreeCAD is a no-cost option for parametric part modeling; its official introduction explains sketches, constraints and features.",
+            "Compare at least two concepts. Sketch how each moves and explain the choice using travel, simplicity, likely friction, available fabrication and ease of measurement.",
+            "Draw a force model. Estimate normal grip force using explicit friction and margin assumptions, then check finger bending and the input force or torque needed by your chosen mechanism.",
+            "Model the assembly and prepare one dimensioned drawing of a critical part. Identify locating surfaces and calculate a simple clearance stack. Select tolerances after considering how you will fabricate and measure the parts.",
+            "Build a hand-operated prototype using the fabrication methods available to you. Record the actual material and dimensions rather than treating the CAD model as the finished object."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "Test a claim, then change something"
+        },
+        {
+          "type": "paragraph",
+          "text": "Run the holding tests just above a padded tray, keeping fingers clear of the mechanism. Record the opening, object mass, contact material, hold time and whether the object slips. Where equipment permits, also measure input force and finger deflection. Repeat the same setup rather than changing several variables at once."
+        },
+        {
+          "type": "paragraph",
+          "text": "Choose one observed weakness, such as finger flexure, guide binding or inconsistent contact. Change one feature and repeat the relevant test. Compare results against the original target. A failed first version with a clear diagnosis and a better second version can be stronger evidence than an untested final render."
+        },
+        {
+          "type": "heading",
+          "text": "What to put in the portfolio"
+        },
+        {
+          "type": "list",
+          "items": [
+            "A one-page brief with requirements and acceptance criteria.",
+            "Concept sketches and the reason you selected the mechanism.",
+            "The force calculation, assumptions and a tolerance or clearance calculation.",
+            "CAD views, one readable drawing and a bill of materials.",
+            "Photographs or a short demonstration, a test-results sheet and a before-and-after comparison.",
+            "An honest statement of what you did not validate, such as fatigue life or powered operation."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "paragraph",
+          "text": "This package demonstrates the link between design, fabrication, testing and communication. If you cannot fabricate yet, complete the brief, calculations and CAD first, but label the work as a design study and leave performance claims unverified."
+        }
+      ]
+    },
+    {
+      "id": "next-steps",
+      "heading": "Where to go next",
+      "navLabel": "Next steps",
+      "paragraphs": [],
+      "sourceIds": [
+        "freecad",
+        "mit"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This path is worth exploring if you enjoy deciding how physical things should fit and move, then checking whether they actually behave as expected. Start with the gripper brief, identify one missing foundation and choose a learning resource that addresses it."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "title": "FreeCAD: getting started",
+              "href": "https://github.com/FreeCAD/FreeCAD-documentation/blob/main/wiki/Getting_started.md",
+              "description": "Use the official modeling introduction to build a constrained sketch and a simple part. This is an archived documentation mirror; interfaces may differ by version."
+            },
+            {
+              "title": "MIT OpenCourseWare: Design and Manufacturing I",
+              "href": "https://ocw.mit.edu/courses/2-007-design-and-manufacturing-i-spring-2009/",
+              "description": "Use the undergraduate design notes, exercises and project examples to develop engineering reasoning alongside CAD. The course was taught in 2009."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Then compare three relevant job descriptions in the location where you want to work. Mark the responsibilities, degree wording and evidence they ask for. Use that comparison to choose your next course, project or application, rather than trying to learn every tool in the industry."
+        }
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "study",
+      "title": "Black Scarab hiring study, November 2, 2026",
+      "url": "/research/physical-ai-careers-2026-11-02.json",
+      "scope": "Role and skill counts, employer representation, captured salary fields and study methodology. Selected boards; machine-coded skills and mixed seniority. Mechanical-family scope includes adjacent autonomous-system and infrastructure work.",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "id": "applied",
+      "title": "Applied Intuition: Mechanical Engineer, New Grad",
+      "url": "https://jobs.ashbyhq.com/applied/6e57a97e-62bb-46fb-92ec-dd12831fd6f9",
+      "scope": "Captured salary, Sunnyvale location, BS/MS wording, hands-on preparation and autonomous-vehicle responsibilities.",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "id": "apptronik",
+      "title": "Apptronik: Senior Mechanical Engineer",
+      "url": "https://job-boards.greenhouse.io/apptronik/jobs/5766164004",
+      "scope": "Apollo subsystem responsibilities, bachelor’s degree, relevant experience and senior ownership expectations.",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "id": "one-x",
+      "title": "1X: Mechanical Design Engineer, Hands Thermal Systems",
+      "url": "https://jobs.ashbyhq.com/1x/d6c59043-7a78-48ba-8f35-6d47b987a871",
+      "scope": "Captured salary, San Carlos location, related engineering degrees and specialist thermal work.",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "id": "ambi",
+      "title": "Ambi Robotics: Senior Project Engineer, Mechanical Systems",
+      "url": "https://jobs.lever.co/ambirobotics/3b1d169e-5302-488e-b187-095aa364e60f",
+      "scope": "Advertised annual salary, Berkeley location, equivalent-experience wording and deployment-oriented mechanical work.",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "id": "bls",
+      "title": "US Bureau of Labor Statistics: Mechanical Engineers",
+      "url": "https://www.bls.gov/ooh/architecture-and-engineering/mechanical-engineers.htm",
+      "scope": "US national occupational wage benchmark for May 2025 and typical educational entry route. Covers industries and levels beyond robotics.",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "id": "asme",
+      "title": "ASME: Geometric Dimensioning and Tolerancing Professional certification",
+      "url": "https://www.asme.org/certification-accreditation/personnel-certification/gdtp-(y14-5)-geometric-dimensioning-and-tolerancing-professional-certification",
+      "scope": "The drawing-interpretation and tolerancing knowledge assessed by GDTP certification.",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "id": "grip-selection",
+      "title": "SMC: MHF2 gripper model selection and gripping-force calculation",
+      "url": "https://ca01.smcworld.com/catalog/BEST-5-4-en/4-p0489-0516-mhf2_en/spdfdata/4-p0489-0516-mhf2_en_5sp.htm",
+      "scope": "Two-finger friction model, force convention and the need to account for operating conditions. The portfolio example uses explicitly chosen assumptions.",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "id": "freecad",
+      "title": "FreeCAD: Getting started, official archived documentation",
+      "url": "https://github.com/FreeCAD/FreeCAD-documentation/blob/main/wiki/Getting_started.md",
+      "scope": "Parametric modeling, sketches and features in the official archived documentation.",
+      "accessedAt": "2026-11-03"
+    },
+    {
+      "id": "mit",
+      "title": "MIT OpenCourseWare: Design and Manufacturing I, Spring 2009",
+      "url": "https://ocw.mit.edu/courses/2-007-design-and-manufacturing-i-spring-2009/",
+      "scope": "Open undergraduate design course with notes, exercises and projects.",
+      "accessedAt": "2026-11-03"
+    }
+  ]
+}

@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "derivedAt": "2026-11-03",
+  "roleId": "simulation-engineer",
+  "sourceAggregate": "/research/physical-ai-careers-2026-11-02.json",
+  "sourceAggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "label": "Black Scarab estimated compensation",
+  "currency": "USD",
+  "period": "year",
+  "basis": "advertised annual salary, not total compensation",
+  "postingCount": 14,
+  "employerCount": 5,
+  "exactMedianMidpoint": 182500.0,
+  "estimate": 183000,
+  "rounding": "nearest 1000 USD, halves rounded upward",
+  "method": "Take the midpoint of each eligible advertisement’s annual USD salary range, count each distinct posting once, then take the median. Round the displayed estimate to the nearest $1,000.",
+  "eligibility": "US simulator-development, robotics-physics, sensor-simulation or autonomy-simulation engineering advertisements in the November 2 cohort with one complete structured annual USD salary range.",
+  "limitations": "Selected employers and mixed experience levels. Sales, presales, engineering management and standalone V&V are excluded. Salary fields do not consistently identify base pay; equity and bonuses are excluded. Advertisements with missing, ambiguous or multiple level-specific structured salary ranges are not pooled.",
+  "excludedObservations": [
+    {
+      "id": "applied-intuition:ashby:71635e1b-ee39-4eed-9b98-f0f758c001fd",
+      "title": "Solutions Architect - Modeling & Simulation (Defense)",
+      "reason": "Technical presales and business-development architecture, not simulation engineering delivery.",
+      "sourceTextSha256": "d4a06466f7cc913879e0edd5cc5a34cf70d7896658e4eacc55de5f19f85ede96"
+    },
+    {
+      "id": "shield-ai:lever:374c187c-0a0e-419b-aedb-e1333c112248",
+      "title": "Simulation Specialist, AMER (R6171)",
+      "reason": "Simulation sales and business development.",
+      "sourceTextSha256": "071329fdbcf52a54d6020ba987bc1c801d9836ca5828c3ed69387ed29ac76d56"
+    },
+    {
+      "id": "shield-ai:lever:645f106b-2bd8-4b00-af2b-75d9ca164730",
+      "title": "HMS Simulation Framework Lead (R6397)",
+      "reason": "Engineering management, including performance reviews and team growth.",
+      "sourceTextSha256": "a75a79343feef1576fdc052e2b47ab2def24579aca4bbd85faa373834d5eeae1"
+    },
+    {
+      "id": "zoox:lever:fd2dfb61-b04c-4489-85ee-f55389c11126",
+      "title": "Staff Systems Engineer, Simulation Systems Verification and Validation Lead",
+      "reason": "Standalone systems verification and validation rather than simulator development.",
+      "sourceTextSha256": "a5d519e89974921880fc0dee4eee193c6f473e4cae09ffd472fd113e091b8aa1"
+    }
+  ],
+  "observations": [
+    {
+      "id": "applied-intuition:ashby:10f1658b-fde6-4f31-b4b4-7b3e073cffac",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Senior Software Engineer - Neural Simulation",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "url": "https://jobs.ashbyhq.com/applied/10f1658b-fde6-4f31-b4b4-7b3e073cffac",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "35560cc8efd8f07a365e14a64468e06e1b47bef5367eec15675c4a7b2eafb34b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 185000,
+      "maximum": 250000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 217500.0
+    },
+    {
+      "id": "applied-intuition:ashby:47432b51-af09-4435-993d-f0e692c0f6e8",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Simulation",
+      "locations": [
+        "Ann Arbor"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.ashbyhq.com/applied/47432b51-af09-4435-993d-f0e692c0f6e8",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "47d447da6099a65e7c059489c1a2c71ca72bed489189a0b75144271c4b59fa41",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 120000,
+      "maximum": 170000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 145000.0
+    },
+    {
+      "id": "applied-intuition:ashby:4cb44794-7b3b-46fc-9408-104a6d0f379e",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Research Engineer - Robotic Hardware, Simulation and Data",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.ashbyhq.com/applied/4cb44794-7b3b-46fc-9408-104a6d0f379e",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "343cd70d9d1da4b95ef15bc93c7eff893ae573c41da76328df1d4d57e944f986",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 126000,
+      "maximum": 423000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 274500.0
+    },
+    {
+      "id": "fieldai:lever:2f3a7e60-d285-4404-8d39-96f6b1d350e8",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Senior Software Engineer, Multiagent Simulation",
+      "locations": [
+        "Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "url": "https://jobs.lever.co/field-ai/2f3a7e60-d285-4404-8d39-96f6b1d350e8",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "6cf99b6f08919720afc8f45d5455724c2ce35bbf715a4f1da896e733419626e6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 125000,
+      "maximum": 170000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 147500.0
+    },
+    {
+      "id": "fieldai:lever:eff30cb0-3457-476c-8367-0dd436f36b0f",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Senior Robotics Software Engineer, Simulation & Evaluation",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "url": "https://jobs.lever.co/field-ai/eff30cb0-3457-476c-8367-0dd436f36b0f",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "2205e698aa77c7ac604213854adaa27e439d640aa7b581d46470a4aea95d1463",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 155000,
+      "maximum": 180000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 167500.0
+    },
+    {
+      "id": "one-x:ashby:a7e8ba31-8369-4b44-ae26-efd4a23f7118",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Principal Tools Engineer, Simulation",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "staff-principal",
+      "url": "https://jobs.ashbyhq.com/1x/a7e8ba31-8369-4b44-ae26-efd4a23f7118",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "58518a5873974f7f09515c223e2db3ab57eb7c7cb8835699f929d47ce4a5e397",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "minimum": 190000,
+      "maximum": 280000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 235000.0
+    },
+    {
+      "id": "one-x:ashby:bd7452e9-1f5a-4e49-b468-2ad98c20e2c3",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Simulation Engineer - Physics Modeling",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.ashbyhq.com/1x/bd7452e9-1f5a-4e49-b468-2ad98c20e2c3",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "aef5f7a811c68135191c3e5effdd2332f5a059be9dbaa7b6fc0e5987f6a8eb13",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "minimum": 200000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 250000.0
+    },
+    {
+      "id": "shield-ai:lever:39a7aa1b-9988-4ac7-ade9-12dd16cbae62",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Engineer II, Simulation Framework (R6204)",
+      "locations": [
+        "San Diego, California",
+        "Washington, D.C."
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.lever.co/shieldai/39a7aa1b-9988-4ac7-ade9-12dd16cbae62",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "3a74d55ed3de415d6fb1f0872588f2dd0a2135d6e76275051acef9a4bba2a041",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 100000,
+      "maximum": 150000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 125000.0
+    },
+    {
+      "id": "shield-ai:lever:52b8f7b5-3a88-4e78-8f22-a3edc3bf1e73",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Modeling & Simulation Engineer (R4869)",
+      "locations": [
+        "Boston, Massachusetts",
+        "Dallas, Texas",
+        "San Diego, California",
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.lever.co/shieldai/52b8f7b5-3a88-4e78-8f22-a3edc3bf1e73",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "378cdb35a7329155d95d18486cb9cc940d2ed80f00fa3bcd766fac8c1235c5f4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 130000,
+      "maximum": 220000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 175000.0
+    },
+    {
+      "id": "shield-ai:lever:55c9e55c-7620-4be6-9e2d-a4af58dc048b",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Staff Engineer, Modelling and Simulation (R6248)",
+      "locations": [
+        "San Diego, California"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "staff-principal",
+      "url": "https://jobs.lever.co/shieldai/55c9e55c-7620-4be6-9e2d-a4af58dc048b",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "afd4df3e2a0e13d98cd36268914ca3c6206165fba924abc7f88df5c8e5117c86",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 150000,
+      "maximum": 230000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 190000.0
+    },
+    {
+      "id": "shield-ai:lever:71a4617f-c917-4536-bbf1-8d11d04d8cba",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Engineer I, Simulation Framework (R6203)",
+      "locations": [
+        "San Diego, California",
+        "Washington, D.C."
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.lever.co/shieldai/71a4617f-c917-4536-bbf1-8d11d04d8cba",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "bca48bd8b889c75894b9409aabc784d5abba49df31ca6e88065ae402c9178810",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 79000,
+      "maximum": 110000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 94500.0
+    },
+    {
+      "id": "shield-ai:lever:81366fcf-513d-47be-8fae-d227e7c6e126",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior Engineer, HMS Simulation Framework (R6058)",
+      "locations": [
+        "Washington, D.C."
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "url": "https://jobs.lever.co/shieldai/81366fcf-513d-47be-8fae-d227e7c6e126",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "fd4daedd23ad95767d4ff85181d111e96dbde9a44d44898022459deba7b6c612",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 120000,
+      "maximum": 190000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 155000.0
+    },
+    {
+      "id": "zoox:lever:2347453a-f11f-4dc2-ad14-572bc1f6247f",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Machine Learning Engineer - 3D Sensor Simulation",
+      "locations": [
+        "Foster City, CA",
+        "Seattle, WA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.lever.co/zoox/2347453a-f11f-4dc2-ad14-572bc1f6247f",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "3dce7bd41c5f4409a2fe57590bf21708f25f3fb6b5aed0c24a29644d1c2fa9ab",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 189000,
+      "maximum": 283000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 236000.0
+    },
+    {
+      "id": "zoox:lever:d6748d5e-b0ee-424b-b303-c5688713662a",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Senior / Staff Machine Learning Engineer - 3D Sensor Simulation",
+      "locations": [
+        "Foster City, CA",
+        "Seattle, WA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "staff-principal",
+      "url": "https://jobs.lever.co/zoox/d6748d5e-b0ee-424b-b303-c5688713662a",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "068a1d96c0ff7fe6cccd962aa1ef043f9ca2c8e3dac99a457c203d1073575886",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 242000,
+      "maximum": 348000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 295000.0
+    }
+  ]
+}

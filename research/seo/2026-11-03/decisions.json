@@ -1,0 +1,195 @@
+{
+  "researchedAt": "2026-11-03",
+  "completedBeforeNewGuideDrafting": true,
+  "method": "Direct Google US-English SERPs and autocomplete in an anonymous browser; supplementary web search; primary career, employer and training pages. AX observations retained beside this file. Results were localized by Google; this is a single qualitative observation, not a rank tracker or query-volume study.",
+  "unavailable": [
+    "Search Console connection/data",
+    "Reliable keyword volume",
+    "Keyword difficulty",
+    "Historical rankings or traffic"
+  ],
+  "selectionRule": "Choose accurate, recognizable professional terminology and informational coverage. Autocomplete and related questions suggest intent, not measured popularity. Employer frequency is never a search-demand proxy.",
+  "guides": [
+    {
+      "occupationId": "mechanical-engineer",
+      "profession": "Mechanical Engineer in Robotics",
+      "primaryQuery": "robotics mechanical engineer",
+      "supportingQueries": [
+        "robotics mechanical engineer salary",
+        "robotics mechanical engineering course",
+        "robotics engineer job description",
+        "mechanical engineer to robotics",
+        "robotics mechanical engineer skills",
+        "robotics mechanical engineer portfolio"
+      ],
+      "observedSupporting": [
+        "robotics mechanical engineer salary",
+        "robotics mechanical engineering course",
+        "robotics engineer job description"
+      ],
+      "editorialSupporting": [
+        "mechanical engineer to robotics",
+        "robotics mechanical engineer skills",
+        "robotics mechanical engineer portfolio"
+      ],
+      "alternatives": [
+        "mechanical engineer in robotics",
+        "robotics mechanical design engineer",
+        "robotics engineer"
+      ],
+      "seoTitle": "Robotics Mechanical Engineer: Salary, Skills & Career Guide",
+      "h1": "Mechanical Engineer in Robotics",
+      "description": "Explore robotics mechanical engineering: daily design work, employer-requested skills, degree routes, sourced salary examples and a practical gripper project.",
+      "path": "/career-paths/hardware-manufacturing/mechanical-engineer",
+      "headings": [
+        "What does the work actually involve?",
+        "Technical skills employers look for",
+        "Education and qualifications",
+        "Compensation and career progression",
+        "Who is hiring?",
+        "How to enter or transition into the role",
+        "Build a gripper portfolio project"
+      ],
+      "audience": "Students, mechanical engineers in other industries, manufacturing and practical-design career changers.",
+      "intent": "Mixed career research and vacancies. Informational guide should explain physical design ownership, qualifications and evidence of competence.",
+      "rationale": "Autocomplete explicitly recognizes robotics mechanical engineer and salary/course variants. Retain the readable H1 and established URL; put the recognized alternative in metadata. Google also surfaced transition discussions and broad robotics career pages. No evidence establishes one ordering as higher volume.",
+      "editorialRevision": "November 3: revised visible headline and metadata title; concise editorial opening with a consistent four-field overview. Preserve the researched queries, established URL and article sections."
+    },
+    {
+      "occupationId": "robot-learning-engineer",
+      "profession": "Robot Learning Engineer",
+      "primaryQuery": "robot learning engineer career",
+      "supportingQueries": [
+        "robot learning engineer salary",
+        "robot learning engineer career requirements",
+        "robotics machine learning engineer",
+        "robotics reinforcement learning engineer",
+        "how to become a robot learning engineer",
+        "robot learning portfolio project"
+      ],
+      "observedSupporting": [
+        "robot learning engineer salary",
+        "robot learning engineer career requirements",
+        "robotics machine learning engineer",
+        "robotics reinforcement learning engineer"
+      ],
+      "editorialSupporting": [
+        "how to become a robot learning engineer",
+        "robot learning portfolio project"
+      ],
+      "alternatives": [
+        "machine learning engineer robot learning",
+        "reinforcement learning engineer",
+        "robotics learning engineer"
+      ],
+      "seoTitle": "Robot Learning Engineer: Skills, Salary & Career Path",
+      "h1": "How to Become a Robot Learning Engineer",
+      "description": "Understand robot learning work, imitation and reinforcement learning, qualifications, advertised pay and a portfolio project for evaluating a learned policy.",
+      "path": "/career-paths/intelligence-autonomy/robot-learning-engineer",
+      "headings": [
+        "What does a robot learning engineer do?",
+        "Skills for training and deploying robot policies",
+        "Degrees, research and practical experience",
+        "Salary examples and technical progression",
+        "Employers and the work they advertise",
+        "Routes into robot learning",
+        "Train and evaluate a reaching policy"
+      ],
+      "audience": "Software/ML practitioners, robotics graduates and readers planning a longer technical transition.",
+      "intent": "Mixed vacancies and informational exploration; requirements, salaries and relation to general ML need clarification.",
+      "rationale": "Google autocomplete exposes learning, ML and RL variants; related searches include salary and requirements. PAA was broad robotics entry rather than this specialty. A how-to headline expresses the editorial answer, not a claim that this exact question has measured volume. Distinguish research-scientist credentials from deployment-engineering alternatives.",
+      "editorialRevision": "November 3: revised visible headline and metadata title; concise editorial opening with a consistent four-field overview. Preserve the researched queries, established URL and article sections."
+    },
+    {
+      "occupationId": "simulation-engineer",
+      "profession": "Robotics Simulation Engineer",
+      "primaryQuery": "robotics simulation engineer",
+      "supportingQueries": [
+        "robotics simulation engineer salary",
+        "entry level robotics simulation engineer career",
+        "robotics simulation software engineer",
+        "how to become a robotics simulation engineer",
+        "robotics simulation engineer skills",
+        "robotics simulation portfolio project"
+      ],
+      "observedSupporting": [
+        "robotics simulation engineer salary",
+        "entry level robotics simulation engineer career",
+        "robotics simulation software engineer"
+      ],
+      "editorialSupporting": [
+        "how to become a robotics simulation engineer",
+        "robotics simulation engineer skills",
+        "robotics simulation portfolio project"
+      ],
+      "alternatives": [
+        "simulation engineer",
+        "robot modeling and simulation engineer",
+        "simulation software engineer"
+      ],
+      "seoTitle": "Robotics Simulation Engineer: Skills, Salary & Career Path",
+      "h1": "Robotics Simulation Engineer",
+      "description": "Explore the skills, simulation tools, educational requirements, compensation and career paths in robotics simulation engineering.",
+      "path": "/career-paths/platforms-simulation/robotics-simulation-engineer",
+      "headings": [
+        "What does a robotics simulation engineer do?",
+        "What skills and tools do employers look for?",
+        "What education do you need?",
+        "How much do robotics simulation engineers earn?",
+        "Which companies hire robotics simulation engineers?",
+        "How to transition into robotics simulation",
+        "Build your first robotics simulation project"
+      ],
+      "audience": "Software, mechanical, graphics and test engineers; students evaluating simulation specialties.",
+      "intent": "Vacancy-heavy SERP, with adjacent industrial offline-programming training. Explain the specialization before recommending tools.",
+      "rationale": "Autocomplete confirms the robotics qualifier and a software variant; related searches include junior/entry-level. Generic simulation includes unrelated circuit and structural work. Use the full specialty name and show a calibrated model project rather than a universal simulator checklist. Unrelated high-salary PAA prompts are excluded.",
+      "editorialRevision": "November 3: revised visible headline and metadata title; concise editorial opening with a consistent four-field overview. Preserve the researched queries, established URL and article sections."
+    },
+    {
+      "occupationId": "systems-integration-engineer",
+      "profession": "Robotics Integration Engineer",
+      "primaryQuery": "robotics integration engineer",
+      "supportingQueries": [
+        "robotics integration engineer salary",
+        "robotics system integration engineer",
+        "entry level robotics integration engineer career",
+        "robotics integrator qualifications",
+        "robotics integration engineer PLC skills",
+        "robotics commissioning portfolio project"
+      ],
+      "observedSupporting": [
+        "robotics integration engineer salary",
+        "robotics system integration engineer",
+        "entry level robotics integration engineer career"
+      ],
+      "editorialSupporting": [
+        "robotics integrator qualifications",
+        "robotics integration engineer PLC skills",
+        "robotics commissioning portfolio project"
+      ],
+      "alternatives": [
+        "robotics systems integration engineer",
+        "robotics application engineer",
+        "robot systems integrator",
+        "forward deployed engineer for robotics"
+      ],
+      "seoTitle": "Robotics Integration Engineer: Skills, Salary & Career Path",
+      "h1": "How to Become a Robotics Integration Engineer",
+      "description": "Explore the skills, qualifications, compensation, employers and career paths involved in deploying robotic systems.",
+      "path": "/career-paths/integration-operations/robotics-integration-engineer",
+      "headings": [
+        "What does a robotics integration engineer do?",
+        "What skills do employers look for?",
+        "What education do you need?",
+        "How much do robotics integration engineers earn?",
+        "Which companies hire robotics integration engineers?",
+        "How to transition into robotics integration",
+        "Build your first robotics integration project"
+      ],
+      "audience": "Automation professionals, technicians, software engineers and other career changers investigating deployment work.",
+      "intent": "Strong vacancy intent; broader robot integrator career resources provide industrial and vocational context.",
+      "rationale": "Autocomplete supplies systems-integration wording and salary; related search supplies entry-level. Keep robotics to exclude enterprise IT integration. Explain industrial PLC workflows separately from software/model-to-robot delivery. WorldSkills and Ohio pathways establish recognizable integrator terminology, not query popularity.",
+      "editorialRevision": "November 3: revised visible headline and metadata title; concise editorial opening with a consistent four-field overview. Preserve the researched queries, established URL and article sections."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="290" viewBox="0 0 680 290" role="img" aria-labelledby="title desc">
+  <title id="title">Forces on an object held between two gripper jaws</title>
+  <desc id="desc">Each jaw applies an inward normal force F. Upward static friction f at each contact is no greater than μF. Together the two friction forces balance the object's downward weight mg.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#48688a"/></marker></defs>
+  <g font-family="Arial, sans-serif" font-size="28" fill="#434951" text-anchor="middle">
+    <rect x="235" y="80" width="35" height="132" rx="4" fill="#e6e8eb" stroke="#9199a3"/>
+    <rect x="410" y="80" width="35" height="132" rx="4" fill="#e6e8eb" stroke="#9199a3"/>
+    <rect x="270" y="100" width="140" height="92" rx="4" fill="#f3f6f8" stroke="#9199a3"/>
+    <text x="270" y="65">f</text><text x="410" y="65">f</text><text x="340" y="155">Object</text>
+    <g fill="none" stroke="#48688a" stroke-width="3">
+      <path d="M160 145H280" marker-end="url(#arrow)"/>
+      <path d="M520 145H400" marker-end="url(#arrow)"/>
+      <path d="M340 200V264" marker-end="url(#arrow)"/>
+      <path d="M270 175V85" marker-end="url(#arrow)"/>
+      <path d="M410 175V85" marker-end="url(#arrow)"/>
+    </g>
+    <text x="207" y="116">F</text><text x="473" y="116">F</text><text x="390" y="245">mg</text>
+  </g>
+</svg>

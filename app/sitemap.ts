@@ -1,3 +1,4 @@
+import { publishedCareerGuides, guidePath } from "@/lib/career-paths/guides";
 import { publishedFamilies } from "@/lib/career-paths/families";
 import type { MetadataRoute } from "next";
 import { caseStudies } from "@/lib/case-studies";
@@ -11,6 +12,8 @@ const currentDate = new Date();
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${baseUrl}/career-paths`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/career-paths/assessment`, changeFrequency: "monthly", priority: 0.7 },
+    ...publishedCareerGuides.map(guide => ({url: `${baseUrl}${guidePath(guide)}`, lastModified: new Date(guide.reviewedAt), changeFrequency: "monthly" as const, priority: 0.7})),
     ...publishedFamilies.map(family => ({
       url: `${baseUrl}/career-paths/${family.slug}`,
       changeFrequency: "monthly" as const,

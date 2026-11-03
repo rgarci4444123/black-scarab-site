@@ -1,0 +1,790 @@
+{
+  "auditDate": "2026-11-03",
+  "snapshotDate": "2026-11-02",
+  "roleId": "simulation-engineer",
+  "purpose": "Evidence memo only; not guide copy. No application files changed.",
+  "sourceRoot": "/Users/rodolfogarcia/Documents/ChatGPT/Black Scarab Career Paths/research/physical-ai/2026-11-02",
+  "cohort": {
+    "postingCount": 63,
+    "employerCount": 21,
+    "roleReviewedCount": 4,
+    "machineScreenedCount": 59,
+    "recognizedQualificationSectionCount": 60,
+    "seniority": {
+      "staff-principal": 15,
+      "unspecified-or-midcareer": 25,
+      "senior": 21,
+      "technical-lead-unverified": 2
+    },
+    "topEmployers": [
+      {
+        "employer": "Shield AI",
+        "postings": 12
+      },
+      {
+        "employer": "NVIDIA",
+        "postings": 11
+      },
+      {
+        "employer": "Waymo",
+        "postings": 6
+      },
+      {
+        "employer": "Anduril Industries",
+        "postings": 4
+      },
+      {
+        "employer": "Applied Intuition",
+        "postings": 4
+      },
+      {
+        "employer": "Skydio",
+        "postings": 4
+      },
+      {
+        "employer": "Zoox",
+        "postings": 3
+      },
+      {
+        "employer": "FieldAI",
+        "postings": 2
+      },
+      {
+        "employer": "Gatik",
+        "postings": 2
+      },
+      {
+        "employer": "Nuro",
+        "postings": 2
+      }
+    ]
+  },
+  "cohortCautions": [
+    "63 listed advertisements from 21 employers, not vacancies/hires or a census. Only four were previously role-reviewed; this bounded audit inspects selected full text and does not reclassify the frozen snapshot.",
+    "Raw cohort includes CPU/circuit modeling and a V&V lead. Label its skill figures as the broad November 2 simulation cohort; do not call it a clean robotics-environment-only market.",
+    "AV world models, scene/SDG work, framework integration, contact dynamics and hardware CFD have different deliverables and tool needs.",
+    "Automated education/experience fields omit/misclassify some clauses; use the full-context examples below."
+  ],
+  "hashAudit": {
+    "cohortSourceTextHashesVerified": 63,
+    "denominator": 63
+  },
+  "topSkillCounts": [
+    {
+      "skillId": "python",
+      "label": "Python",
+      "category": "software",
+      "denominator": 63,
+      "anyMention": 52,
+      "requiredOrOption": 40,
+      "preferredOnly": 7,
+      "contextOnly": 5,
+      "unobserved": 11,
+      "mentionPercent": 82.54,
+      "employersMentioning": 18,
+      "employerDenominator": 21,
+      "employerPresencePercent": 85.71,
+      "meanWithinEmployerMentionPercent": 77.74
+    },
+    {
+      "skillId": "cpp",
+      "label": "C++",
+      "category": "software",
+      "denominator": 63,
+      "anyMention": 48,
+      "requiredOrOption": 40,
+      "preferredOnly": 7,
+      "contextOnly": 1,
+      "unobserved": 15,
+      "mentionPercent": 76.19,
+      "employersMentioning": 18,
+      "employerDenominator": 21,
+      "employerPresencePercent": 85.71,
+      "meanWithinEmployerMentionPercent": 74.89
+    },
+    {
+      "skillId": "isaac-sim",
+      "label": "Isaac Sim",
+      "category": "simulation",
+      "denominator": 63,
+      "anyMention": 15,
+      "requiredOrOption": 10,
+      "preferredOnly": 5,
+      "contextOnly": 0,
+      "unobserved": 48,
+      "mentionPercent": 23.81,
+      "employersMentioning": 8,
+      "employerDenominator": 21,
+      "employerPresencePercent": 38.1,
+      "meanWithinEmployerMentionPercent": 29.18
+    },
+    {
+      "skillId": "cicd",
+      "label": "CI/CD",
+      "category": "software",
+      "denominator": 63,
+      "anyMention": 14,
+      "requiredOrOption": 5,
+      "preferredOnly": 3,
+      "contextOnly": 6,
+      "unobserved": 49,
+      "mentionPercent": 22.22,
+      "employersMentioning": 6,
+      "employerDenominator": 21,
+      "employerPresencePercent": 28.57,
+      "meanWithinEmployerMentionPercent": 16.02
+    },
+    {
+      "skillId": "docker",
+      "label": "Docker",
+      "category": "infrastructure",
+      "denominator": 63,
+      "anyMention": 14,
+      "requiredOrOption": 10,
+      "preferredOnly": 3,
+      "contextOnly": 1,
+      "unobserved": 49,
+      "mentionPercent": 22.22,
+      "employersMentioning": 5,
+      "employerDenominator": 21,
+      "employerPresencePercent": 23.81,
+      "meanWithinEmployerMentionPercent": 13.17
+    },
+    {
+      "skillId": "linux",
+      "label": "Linux",
+      "category": "software",
+      "denominator": 63,
+      "anyMention": 14,
+      "requiredOrOption": 12,
+      "preferredOnly": 2,
+      "contextOnly": 0,
+      "unobserved": 49,
+      "mentionPercent": 22.22,
+      "employersMentioning": 4,
+      "employerDenominator": 21,
+      "employerPresencePercent": 19.05,
+      "meanWithinEmployerMentionPercent": 8.44
+    },
+    {
+      "skillId": "gazebo",
+      "label": "Gazebo",
+      "category": "simulation",
+      "denominator": 63,
+      "anyMention": 12,
+      "requiredOrOption": 7,
+      "preferredOnly": 5,
+      "contextOnly": 0,
+      "unobserved": 51,
+      "mentionPercent": 19.05,
+      "employersMentioning": 9,
+      "employerDenominator": 21,
+      "employerPresencePercent": 42.86,
+      "meanWithinEmployerMentionPercent": 24.68
+    },
+    {
+      "skillId": "mujoco",
+      "label": "MuJoCo",
+      "category": "simulation",
+      "denominator": 63,
+      "anyMention": 11,
+      "requiredOrOption": 9,
+      "preferredOnly": 2,
+      "contextOnly": 0,
+      "unobserved": 52,
+      "mentionPercent": 17.46,
+      "employersMentioning": 7,
+      "employerDenominator": 21,
+      "employerPresencePercent": 33.33,
+      "meanWithinEmployerMentionPercent": 29.87
+    },
+    {
+      "skillId": "sim-to-real",
+      "label": "Sim-to-real",
+      "category": "simulation",
+      "denominator": 63,
+      "anyMention": 9,
+      "requiredOrOption": 3,
+      "preferredOnly": 1,
+      "contextOnly": 5,
+      "unobserved": 54,
+      "mentionPercent": 14.29,
+      "employersMentioning": 7,
+      "employerDenominator": 21,
+      "employerPresencePercent": 33.33,
+      "meanWithinEmployerMentionPercent": 23.09
+    },
+    {
+      "skillId": "digital-twins",
+      "label": "Digital twins",
+      "category": "simulation",
+      "denominator": 63,
+      "anyMention": 8,
+      "requiredOrOption": 4,
+      "preferredOnly": 2,
+      "contextOnly": 2,
+      "unobserved": 55,
+      "mentionPercent": 12.7,
+      "employersMentioning": 7,
+      "employerDenominator": 21,
+      "employerPresencePercent": 33.33,
+      "meanWithinEmployerMentionPercent": 21.1
+    },
+    {
+      "skillId": "ros2",
+      "label": "ROS 2",
+      "category": "robot-platform",
+      "denominator": 63,
+      "anyMention": 8,
+      "requiredOrOption": 4,
+      "preferredOnly": 4,
+      "contextOnly": 0,
+      "unobserved": 55,
+      "mentionPercent": 12.7,
+      "employersMentioning": 5,
+      "employerDenominator": 21,
+      "employerPresencePercent": 23.81,
+      "meanWithinEmployerMentionPercent": 11.18
+    }
+  ],
+  "independentSkillEvidenceRecount": {
+    "python": {
+      "anyMention": 52,
+      "requiredOrOption": 40,
+      "preferredOnly": 7,
+      "contextOnly": 5,
+      "matchesCohort": true
+    },
+    "cpp": {
+      "anyMention": 48,
+      "requiredOrOption": 40,
+      "preferredOnly": 7,
+      "contextOnly": 1,
+      "matchesCohort": true
+    },
+    "isaac-sim": {
+      "anyMention": 15,
+      "requiredOrOption": 10,
+      "preferredOnly": 5,
+      "contextOnly": 0,
+      "matchesCohort": true
+    },
+    "cicd": {
+      "anyMention": 14,
+      "requiredOrOption": 5,
+      "preferredOnly": 3,
+      "contextOnly": 6,
+      "matchesCohort": true
+    },
+    "docker": {
+      "anyMention": 14,
+      "requiredOrOption": 10,
+      "preferredOnly": 3,
+      "contextOnly": 1,
+      "matchesCohort": true
+    },
+    "linux": {
+      "anyMention": 14,
+      "requiredOrOption": 12,
+      "preferredOnly": 2,
+      "contextOnly": 0,
+      "matchesCohort": true
+    },
+    "gazebo": {
+      "anyMention": 12,
+      "requiredOrOption": 7,
+      "preferredOnly": 5,
+      "contextOnly": 0,
+      "matchesCohort": true
+    },
+    "mujoco": {
+      "anyMention": 11,
+      "requiredOrOption": 9,
+      "preferredOnly": 2,
+      "contextOnly": 0,
+      "matchesCohort": true
+    },
+    "sim-to-real": {
+      "anyMention": 9,
+      "requiredOrOption": 3,
+      "preferredOnly": 1,
+      "contextOnly": 5,
+      "matchesCohort": true
+    },
+    "digital-twins": {
+      "anyMention": 8,
+      "requiredOrOption": 4,
+      "preferredOnly": 2,
+      "contextOnly": 2,
+      "matchesCohort": true
+    },
+    "ros2": {
+      "anyMention": 8,
+      "requiredOrOption": 4,
+      "preferredOnly": 4,
+      "contextOnly": 0,
+      "matchesCohort": true
+    }
+  },
+  "codingMeaning": "Strongest mention per posting: required-or-option includes alternative languages/tools and does not mean every named item is mandatory; preferred-only excludes any stronger required mention; context-only describes work without a requirement. Machine-coded, not analyst-validated proficiency levels.",
+  "selectedPostings": [
+    {
+      "postingId": "one-x:ashby:bd7452e9-1f5a-4e49-b468-2ad98c20e2c3",
+      "employer": "1X",
+      "title": "Simulation Engineer - Physics Modeling",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "sourceUrl": "https://jobs.ashbyhq.com/1x/bd7452e9-1f5a-4e49-b468-2ad98c20e2c3",
+      "sourceTextSha256": "aef5f7a811c68135191c3e5effdd2332f5a059be9dbaa7b6fc0e5987f6a8eb13",
+      "sourceTextHashVerified": true,
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "existingReviewStatus": "machine-screened",
+      "auditScope": "core robotics dynamics/sensors",
+      "responsibilitiesParaphrase": [
+        "Calibrate contacts, articulated bodies, actuators and transmissions with measurements from real hardware.",
+        "Represent sensor noise, bias, timing, latency and dropouts.",
+        "Quantify sim-to-real error; choose physically modeled versus randomized discrepancies; preserve reproducible runs while improving throughput."
+      ],
+      "educationContext": "Minimum section offers 5+ years relevant industry experience OR an advanced degree plus equivalent hands-on experience; no universal fixed degree floor stated.",
+      "experienceContext": "5+ years OR advanced-degree-plus-hands-on pathway; demonstrated physical-hardware transfer work is also asked.",
+      "codingContext": "Minimum: strong Python, C++, or similar; this is an alternative-language clause.",
+      "toolContext": "Minimum simulator examples are MuJoCo, PyBullet, Isaac Sim, or equivalent; system identification and Warp/JAX/differentiable simulation are preferred.",
+      "notes": []
+    },
+    {
+      "postingId": "shield-ai:lever:71a4617f-c917-4536-bbf1-8d11d04d8cba",
+      "employer": "Shield AI",
+      "title": "Engineer I, Simulation Framework (R6203)",
+      "locations": [
+        "San Diego, California",
+        "Washington, D.C."
+      ],
+      "sourceUrl": "https://jobs.lever.co/shieldai/71a4617f-c917-4536-bbf1-8d11d04d8cba",
+      "sourceTextSha256": "bca48bd8b889c75894b9409aabc784d5abba49df31ca6e88065ae402c9178810",
+      "sourceTextHashVerified": true,
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "existingReviewStatus": "machine-screened",
+      "auditScope": "simulation framework / autonomy integration",
+      "responsibilitiesParaphrase": [
+        "Implement adapters, plugins, interfaces and reusable components linking autonomy to simulation backends.",
+        "Diagnose API/network/message/data-exchange faults; migrate components between framework generations.",
+        "Maintain automated tests, configurations and developer documentation."
+      ],
+      "educationContext": "Required: related technical bachelor degree; equivalent practical experience may be considered.",
+      "experienceContext": "Explicit early-career role; foundational programming can come from coursework, internships, personal projects, research or employment. No fixed years clause.",
+      "codingContext": "Required: foundational C++ AND Python; Git/Linux/debugging/APIs/testing matter.",
+      "toolContext": "AFSIM, NGTS, Aechelon and internal frameworks describe work. Gazebo/ROS 2/Unity/Unreal/Simulink are preferred exposure options, not a universal mandatory stack.",
+      "notes": [
+        "US citizenship and eligibility for SECRET clearance required.",
+        "Live page readable 2026-11-03; dated source remains November 2."
+      ]
+    },
+    {
+      "postingId": "dyna:ashby:942cd530-b2b7-4141-8aaa-d844175e26ac",
+      "employer": "Dyna Robotics",
+      "title": "Research Scientist, Simulation",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "sourceUrl": "https://jobs.ashbyhq.com/dyna-robotics/942cd530-b2b7-4141-8aaa-d844175e26ac",
+      "sourceTextSha256": "787d4d5a3d353ef9b353d088d6617a6dc4dae8b84fada7a2d8fc3fb329a7fd5b",
+      "sourceTextHashVerified": true,
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "existingReviewStatus": "role-reviewed",
+      "auditScope": "robot-learning scenes / synthetic experience",
+      "responsibilitiesParaphrase": [
+        "Reconstruct facilities and procedurally vary rooms, aisles, obstacles and assets for a wheeled mobile manipulator.",
+        "Generate policy training data and joint base-plus-arm evaluation benchmarks.",
+        "Improve visual fidelity for transfer and use real failures to create new scenarios."
+      ],
+      "educationContext": "MS/PhD CS, robotics or graphics OR equivalent hands-on experience.",
+      "experienceContext": "Explicitly prioritizes demonstrated depth over a fixed years bar; still asks independence to set a research agenda.",
+      "codingContext": "Strong Python; PyTorch or JAX comfort for training/evaluation.",
+      "toolContext": "MuJoCo, Isaac Sim/Isaac Lab, SAPIEN, Omniverse, Blender or similar appear as alternatives; no requirement to master all.",
+      "notes": []
+    },
+    {
+      "postingId": "skild:greenhouse:4091609008",
+      "employer": "Skild AI",
+      "title": "Simulation Engineer",
+      "locations": [
+        "Bengaluru, Karnataka, India",
+        "San Mateo"
+      ],
+      "sourceUrl": "https://job-boards.greenhouse.io/skildai-careers/jobs/4091609008",
+      "sourceTextSha256": "64e3e22e528202febc360a1e4d215a85f9b2f7d3fc006891f5e7a0c391cc6896",
+      "sourceTextHashVerified": true,
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "existingReviewStatus": "role-reviewed",
+      "auditScope": "core scenes / simulator engineering",
+      "responsibilitiesParaphrase": [
+        "Create visually and physically varied scenes.",
+        "Build specialized high-throughput simulators with ML researchers."
+      ],
+      "educationContext": "Degree/equivalent-practical-experience language appears under Preferred Qualifications, not a mandatory degree section.",
+      "experienceContext": "No numeric years threshold in full source.",
+      "codingContext": "Python, C++ or similar appears in Preferred Qualifications.",
+      "toolContext": "Physics engines, graphics/physics, controls, hardware, photogrammetry; no named simulator mandate.",
+      "notes": []
+    },
+    {
+      "postingId": "applied-intuition:ashby:47432b51-af09-4435-993d-f0e692c0f6e8",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Simulation",
+      "locations": [
+        "Ann Arbor"
+      ],
+      "sourceUrl": "https://jobs.ashbyhq.com/applied/47432b51-af09-4435-993d-f0e692c0f6e8",
+      "sourceTextSha256": "47d447da6099a65e7c059489c1a2c71ca72bed489189a0b75144271c4b59fa41",
+      "sourceTextHashVerified": true,
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "existingReviewStatus": "machine-screened",
+      "auditScope": "multi-domain defense simulation backend",
+      "responsibilitiesParaphrase": [
+        "Build performant backend infrastructure and virtual worlds for ground/aerial and broader defense autonomy scenarios.",
+        "Own architecture through deployment and translate mission needs with researchers/customers."
+      ],
+      "educationContext": "Full text asks bachelor CS or similar under desired-candidate section; automated educationClauses array was empty.",
+      "experienceContext": "Full text asks 3+ years professional engineering, ideally C++; automated experienceClauses array was empty.",
+      "codingContext": "C++ is ideal; Python proficiency is directly asked; concurrency, systems programming and performance are emphasized.",
+      "toolContext": "Unreal/Unity/Gazebo/custom stacks, sensor simulation and synthetic data are nice-to-have alternatives.",
+      "notes": [
+        "US citizenship and SECRET-clearance eligibility required."
+      ]
+    },
+    {
+      "postingId": "nvidia:workday:JR2023397",
+      "employer": "NVIDIA",
+      "title": "Robotics Research Engineer - Robot Simulation and Evaluation",
+      "locations": [
+        "US, CA, Santa Clara"
+      ],
+      "sourceUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Robotics-Research-Engineer---Robot-Simulation-and-Evaluation_JR2023397",
+      "sourceTextSha256": "e81455605daa74ec2e21354142707be944cd57f88228ead59eb81df6d7df1412",
+      "sourceTextHashVerified": true,
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "existingReviewStatus": "machine-screened",
+      "auditScope": "robot-learning evaluation platform / research engineering",
+      "responsibilitiesParaphrase": [
+        "Turn research into Isaac Lab Arena capabilities for robot foundation-model training and evaluation.",
+        "Build simulation frameworks, set evaluation architecture and standards, and deliver production software with reviews/tests/CI."
+      ],
+      "educationContext": "PhD CS/robotics/related OR equivalent experience.",
+      "experienceContext": "8+ years relevant industry or post-degree research engineering.",
+      "codingContext": "Python and deep-learning stack experience required; PyTorch/JAX are examples.",
+      "toolContext": "GPU physics and NVIDIA ecosystem expertise are differentiators; Omniverse/Isaac Lab describe the platform.",
+      "notes": []
+    },
+    {
+      "postingId": "waymo:greenhouse:6499165",
+      "employer": "Waymo",
+      "title": "Machine Learning Engineer, Simulation Realism",
+      "locations": [
+        "Mountain View, CA, USA",
+        "Mountain View, California, United States"
+      ],
+      "sourceUrl": "https://careers.withwaymo.com/jobs?gh_jid=6499165",
+      "sourceTextSha256": "53799a463ab7a522d746d7970274c44be108af0b8db32434d77d5798f1dc53b8",
+      "sourceTextHashVerified": true,
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "existingReviewStatus": "machine-screened",
+      "auditScope": "AV learned-world / generative simulation specialization",
+      "responsibilitiesParaphrase": [
+        "Use generative ML to increase realism and controllability of autonomous-driving simulations.",
+        "Take research prototypes into production systems and scale simulation/data processing."
+      ],
+      "educationContext": "PhD is preferred, not required.",
+      "experienceContext": "Multiple required 7+ years clauses cover applied deep learning, coding/design, production ML problem-solving and research-to-production.",
+      "codingContext": "Strong coding/design and applied ML; no specific language inferred from this source.",
+      "toolContext": "Foundation models and diffusion are named technologies; AV agents/roads/weather scope differs from manipulator contact dynamics.",
+      "notes": []
+    },
+    {
+      "postingId": "boston-dynamics:workday:R3013",
+      "employer": "Boston Dynamics",
+      "title": "Senior Staff Robotics Simulation Engineer - Thermal & Fluids Analysis",
+      "locations": [
+        "Waltham, MA"
+      ],
+      "sourceUrl": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-MA/Senior-Staff-Mechanical-Engineer---Atlas_R3013",
+      "sourceTextSha256": "d16b0fb6a9f358ef250003ad620896bbff6cbee1452660df79843595f3d7abe4",
+      "sourceTextHashVerified": true,
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "existingReviewStatus": "machine-screened",
+      "auditScope": "robotics hardware thermal/CFD specialization; do not generalize to virtual robotics environment work",
+      "responsibilitiesParaphrase": [
+        "Set thermal/fluid modeling strategy for robot actuators.",
+        "Correlate CFD/thermal/structural simulations with instrumented experiments and production decisions."
+      ],
+      "educationContext": "Required PhD or MS in mechanical/aerospace/thermal science focused on fluid dynamics and heat transfer.",
+      "experienceContext": "10+ years; simulation leadership and large virtual-validation programs.",
+      "codingContext": "Python, C++, OR MATLAB automation alternatives.",
+      "toolContext": "Ansys Fluent/Mechanical, STAR-CCM+, Simcenter Flotherm are role-specific CFD options.",
+      "notes": [
+        "Automated education array incorrectly includes a programming sentence; interpret full text."
+      ]
+    },
+    {
+      "postingId": "nvidia:workday:JR2019679",
+      "employer": "NVIDIA",
+      "title": "Senior Circuit Design Engineer - Power Modeling and Simulation",
+      "locations": [
+        "US, CA, Remote",
+        "US, CA, Santa Clara"
+      ],
+      "sourceUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Circuit-Design-Engineer---Power-Modeling-and-Simulation_JR2019679",
+      "sourceTextSha256": "17d40fd1d11bd15685e3e714e286d86767fd77bcc6b97cb4afb6b179491beda8",
+      "sourceTextHashVerified": true,
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "existingReviewStatus": "machine-screened",
+      "auditScope": "out of intended robotics-environment scope: circuit/power-delivery simulation",
+      "responsibilitiesParaphrase": [
+        "Model analog/digital circuits and die-to-platform power networks; processor power and reliability work."
+      ],
+      "educationContext": "EE/CE BSEE or equivalent; MS/PhD preferred.",
+      "experienceContext": "6+ years circuits/system power-network simulation.",
+      "codingContext": "Scripting is preferred.",
+      "toolContext": "Spice, EDA, EM simulation, Matlab/Simulink.",
+      "notes": [
+        "Exclude as an illustrative robotics simulation career requirement or salary."
+      ]
+    },
+    {
+      "postingId": "nvidia:workday:JR2017744",
+      "employer": "NVIDIA",
+      "title": "Senior System Simulation Architect",
+      "locations": [
+        "US, CA, Santa Clara",
+        "US, NC, Durham",
+        "US, OR, Hillsboro",
+        "US, TX, Austin"
+      ],
+      "sourceUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-System-Simulation-Architect_JR2017744-1",
+      "sourceTextSha256": "4fa37411339ceb245ad39ed8828f48986f9d5cf8ed8adb537d307d613c13c668",
+      "sourceTextHashVerified": true,
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "existingReviewStatus": "machine-screened",
+      "auditScope": "out of intended robotics-environment scope: CPU functional simulation/emulation",
+      "responsibilitiesParaphrase": [
+        "Run CPU/GPU workload models; integrate with RTL/emulators and system software."
+      ],
+      "educationContext": "BS/MS EE/CE/CS or equivalent experience.",
+      "experienceContext": "6+ years.",
+      "codingContext": "C/C++/Python asked.",
+      "toolContext": "CPU ISA, OS/firmware/drivers, RTL emulation.",
+      "notes": [
+        "Exclude as an illustrative robotics-environment role."
+      ]
+    },
+    {
+      "postingId": "zoox:lever:fd2dfb61-b04c-4489-85ee-f55389c11126",
+      "employer": "Zoox",
+      "title": "Staff Systems Engineer, Simulation Systems Verification and Validation Lead",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "sourceUrl": "https://jobs.lever.co/zoox/fd2dfb61-b04c-4489-85ee-f55389c11126",
+      "sourceTextSha256": "a5d519e89974921880fc0dee4eee193c6f473e4cae09ffd472fd113e091b8aa1",
+      "sourceTextHashVerified": true,
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "existingReviewStatus": "machine-screened",
+      "auditScope": "V&V specialist overlap; primary output is credibility/safety-case evidence",
+      "responsibilitiesParaphrase": [
+        "Define sensor-to-system simulator validation, datasets, metrics and comparison methods.",
+        "Lead cross-team validation and combine real/simulated evidence for safety decisions."
+      ],
+      "educationContext": "Required MS or higher in listed engineering/CS/science fields; PhD is bonus. Automated education array missed required MS and retained only bonus PhD.",
+      "experienceContext": "8+ years safety-critical-system V&V.",
+      "codingContext": "Python/SQL are bonus, not required.",
+      "toolContext": "Sensor simulation/neural rendering/safety standards are bonus.",
+      "notes": [
+        "Use for role boundary, not as typical Simulation Engineer entry qualification."
+      ]
+    }
+  ],
+  "salaryExamples": [
+    {
+      "postingId": "shield-ai:lever:71a4617f-c917-4536-bbf1-8d11d04d8cba",
+      "employer": "Shield AI",
+      "title": "Engineer I, Simulation Framework (R6203)",
+      "locations": [
+        "San Diego, California",
+        "Washington, D.C."
+      ],
+      "currency": "USD",
+      "period": "year",
+      "ranges": [
+        {
+          "minimum": 79000,
+          "maximum": 110000
+        }
+      ],
+      "basis": "advertised annual salary; plus bonus, benefits and equity",
+      "sourceUrl": "https://jobs.lever.co/shieldai/71a4617f-c917-4536-bbf1-8d11d04d8cba",
+      "sourceTextSha256": "bca48bd8b889c75894b9409aabc784d5abba49df31ca6e88065ae402c9178810",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "note": "Raw Lever salaryRange confirms per-year-salary. Live page shows same range."
+    },
+    {
+      "postingId": "one-x:ashby:bd7452e9-1f5a-4e49-b468-2ad98c20e2c3",
+      "employer": "1X",
+      "title": "Simulation Engineer - Physics Modeling",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "currency": "USD",
+      "period": "year",
+      "ranges": [
+        {
+          "minimum": 200000,
+          "maximum": 300000
+        }
+      ],
+      "basis": "advertised salary range plus equity",
+      "sourceUrl": "https://jobs.ashbyhq.com/1x/bd7452e9-1f5a-4e49-b468-2ad98c20e2c3",
+      "sourceTextSha256": "aef5f7a811c68135191c3e5effdd2332f5a059be9dbaa7b6fc0e5987f6a8eb13",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "note": "Annual basis supplied by official structured ATS; source text calls it Salary Range and adds equity. Not labeled total compensation."
+    },
+    {
+      "postingId": "nvidia:workday:JR2023397",
+      "employer": "NVIDIA",
+      "title": "Robotics Research Engineer - Robot Simulation and Evaluation",
+      "locations": [
+        "US, CA, Santa Clara"
+      ],
+      "currency": "USD",
+      "period": "year",
+      "ranges": [
+        {
+          "level": "4",
+          "minimum": 184000,
+          "maximum": 287500
+        },
+        {
+          "level": "5",
+          "minimum": 224000,
+          "maximum": 356500
+        }
+      ],
+      "basis": "expected annual base salary; equity and benefits additional",
+      "sourceUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Robotics-Research-Engineer---Robot-Simulation-and-Evaluation_JR2023397",
+      "sourceTextSha256": "e81455605daa74ec2e21354142707be944cd57f88228ead59eb81df6d7df1412",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "note": "Two level-specific ranges in full source text; automated compensation and compensationClauses arrays were empty. Do not merge levels."
+    }
+  ],
+  "salaryInterpretation": "Dated advertised examples with different seniority, location and responsibilities. No average, progression curve or typical market salary inferred.",
+  "primaryReferences": [
+    {
+      "url": "https://mujoco.readthedocs.io/en/stable/python.html",
+      "status": "readable",
+      "supports": "Native Python bindings, MJCF model loading, MjData, mj_step and copying state arrays for logging.",
+      "apiExamplesVerified": [
+        "mujoco.MjModel.from_xml_path",
+        "mujoco.MjModel.from_xml_string",
+        "mujoco.MjData",
+        "mujoco.mj_step",
+        "data.qpos",
+        "mujoco.viewer.launch_passive"
+      ],
+      "caveat": "Pin installed version; passive viewer on macOS requires mjpython. Assets dictionary API is deprecated; no need for it in a primitive-only project."
+    },
+    {
+      "url": "https://mujoco.readthedocs.io/en/stable/modeling.html",
+      "status": "readable",
+      "supports": "MJCF, kinematic model, contact and numerical modeling choices; physics fidelity and compute cost are tradeoffs."
+    },
+    {
+      "url": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#body-joint",
+      "status": "readable",
+      "supports": "Hinge joint, joint damping and frictionloss parameters; viscous damping produces velocity-proportional opposing force."
+    },
+    {
+      "url": "https://gazebosim.org/docs/harmonic/sensors/",
+      "status": "readable",
+      "supports": "An SDF robot/world can add IMU, contact and lidar sensors; sensor systems/plugins, rates and topics have explicit setup.",
+      "caveat": "Use Harmonic instructions for Harmonic. Do not mix Gazebo Classic/ignition examples without checking release."
+    },
+    {
+      "url": "https://docs.isaacsim.omniverse.nvidia.com/latest/replicator_tutorials/tutorial_replicator_isaac_randomizers.html",
+      "status": "readable",
+      "supports": "Replicator scene randomization for synthetic data including lights/materials/placements/camera and physics stacking; script and standalone forms.",
+      "caveat": "Current latest API has migration sections; do not publish untested legacy omni.isaac code."
+    },
+    {
+      "url": "https://docs.isaacsim.omniverse.nvidia.com/latest/robot_setup_tutorials/tutorial_franka_system_identification.html",
+      "status": "readable",
+      "supports": "Recorded telemetry, timing/units/effort alignment, train-versus-validation split, bounded friction/damping fitting and independent replay illustrate fidelity validation.",
+      "caveat": "Beta API; full tutorial requires source checkout, CUDA GPU, packaged telemetry/assets and specific extensions. Too heavy for a universal first portfolio assignment."
+    },
+    {
+      "url": "https://www.nist.gov/publications/credibility-consideration-digital-twins-manufacturing",
+      "status": "readable",
+      "supports": "2022 research abstract argues digital twin decision support needs purpose-specific credibility assessment including verification, validation and uncertainty quantification."
+    },
+    {
+      "url": "https://docs.isaacsim.omniverse.nvidia.com/latest/index.html",
+      "status": "readable",
+      "supports": "Navigation used to discover system identification tutorial; no digital-twin definition inferred from overview."
+    },
+    {
+      "url": "https://jobs.lever.co/shieldai/71a4617f-c917-4536-bbf1-8d11d04d8cba",
+      "status": "readable",
+      "supports": "Live role, qualification context, exact annual salary and locations."
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/1x/bd7452e9-1f5a-4e49-b468-2ad98c20e2c3",
+      "status": "JavaScript-only shell",
+      "supports": "No live textual verification; use hashed November 2 snapshot."
+    },
+    {
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Robotics-Research-Engineer---Robot-Simulation-and-Evaluation_JR2023397",
+      "status": "no readable lines",
+      "supports": "No live textual verification; use hashed November 2 snapshot."
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/calibrating-robots-for-real-world-accuracy-with-nvidia-isaac-sim/",
+      "status": "tool internal error / inaccessible",
+      "supports": "None; do not cite."
+    }
+  ],
+  "portfolioProposal": {
+    "name": "One-joint pendulum calibration and sensor robustness report",
+    "scope": "Build one fixed-base hinge-link MJCF model with primitive geometry in MuJoCo; produce a repeatable Python experiment and short engineering report. This is an authored proposal, not an employer requirement.",
+    "steps": [
+      "Declare units, measured/assumed mass, length, inertia, joint axis, initial angle, timestep and damping.",
+      "Load MJCF with MjModel.from_xml_path, create MjData, step with mj_step and log copied qpos/time.",
+      "Compare undamped small-angle period with the analytical expectation; sweep timestep to reveal numerical sensitivity.",
+      "Add hinge damping, fit only that bounded parameter to one free-decay trace; hold a second initial-angle trace aside. Use video-tracked physical pendulum angles if available, or explicitly labeled synthetic data if not.",
+      "Inject seeded observation noise and sampled latency in a Python observation wrapper; keep clean simulator state distinct from corrupted observations.",
+      "Report held-out angle RMSE, oscillation-period error, decay mismatch and runtime; store seeds/configuration and a regression check."
+    ],
+    "deliverables": [
+      "MJCF model and Python runner",
+      "version-pinned dependencies and reproducible commands",
+      "raw angle traces, provenance/units and fit/holdout split",
+      "parameter sweep and held-out error plots",
+      "short report identifying model assumptions and failures"
+    ],
+    "credibleClaim": "Demonstrates model construction, numerical checks, bounded fitting, reproducibility and observation-model testing. With real measurement it demonstrates a limited model-to-measurement comparison; synthetic recovery alone does not demonstrate sim-to-real transfer.",
+    "documentation": [
+      "https://mujoco.readthedocs.io/en/stable/python.html",
+      "https://mujoco.readthedocs.io/en/stable/modeling.html",
+      "https://mujoco.readthedocs.io/en/stable/XMLreference.html#body-joint"
+    ],
+    "notExecuted": "APIs and parameter semantics checked in primary docs; portfolio experiment itself was not built or benchmarked during this evidence audit."
+  }
+}

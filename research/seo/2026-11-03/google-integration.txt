@@ -1,0 +1,242 @@
+Browser tab: 15, Title: "robotics integration engineer career - Google Search", URL: "https://www.google.com/search?q=robotics+integration+engineer+career&hl=en&gl=us&jbr=sep:0".
+1 AXWebArea robotics integration engineer career - Google Search, URL: google.com/search?q=robotics+integration+engineer+career&hl=en&gl=us&jbr=sep:0
+	2 container gsr
+		3 container
+			4 link Skip to main content
+				5 text Skip to main content
+			6 link Description: Accessibility help, Value: support.google.com/websearch/answer/181196?hl=en
+		7 container searchform
+			8 container tsf
+				9 container
+					10 link Description: United States Midterm Elections 2026, Value: google.com/webhp?hl=en&ictx=2&sa=X&ved=2ahUKEwjB5d6HrOyXAxW938kDHSonKnYQPXoECAYQBA
+					251 pop up button Add files and tools
+					11 combo box (collapsed) Description: Search, Value: robot learning engineer, ID: ti6dpd, Secondary Actions: Expand
+					12 button  Clear
+					252 link AI Mode
+						253 text AI Mode
+			15 button Description: Settings, ID: og-te
+			16 button Share
+			17 button (collapsed) Description: Google apps, Secondary Actions: Expand
+			18 link Description: Sign in, Value: accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3Drobotics%2Bintegration%2Bengineer%2Bcareer%26hl%3Den%26gl%3Dus&ec=futura_srp_og_si_72236_p
+		19 container cnt
+			20 container
+				21 container
+					22 content list
+						23 link Description: AI Mode, Value: google.com/search?q=robotics+integration+engineer+career&sca_esv=293e4396c971566a&hl=en&gl=us&sxsrf=AKL5yDhmCEmsv2zHb2vKZ655cGcRNgMe3A:1793727609163&udm=50&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kthDCX9Dky5lnTf1rfnnaDuzw7q2gTOE4X3iXCRvnkl-Xr_Cvo6Hu7KXFx2v_HmGwid9Vra6wKk3_Z3v8qG9FpZEgftAHqhLiFQ4Bcnu0CRdvx_EVkspi_gAJgaGfy4tWJpZHP0_YFxpgP-UpKiPiwIIekDwht7DYlRGmDgt8B78TgSQyjtnBXMqrEMosA2WOtWVU_w&vsint=&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwjB5d6HrOyXAxW938kDHSonKnYQ2J8OegQIEhAD
+						24 link (disabled) All
+							25 text All
+						26 link Description: Jobs, Value: google.com/search?sca_esv=293e4396c971566a&hl=en&gl=us&sxsrf=AKL5yDhmCEmsv2zHb2vKZ655cGcRNgMe3A:1793727609163&udm=jobs&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kthDCX9Dky5lnTf1rfnnaDuzw7q2gTOE4X3iXCRvnkl-Xr_Cvo6Hu7KXFx2v_HmGwid9Vra6wKk3_Z3v8qG9FpZEgftAHqhLiFQ4Bcnu0CRdvx_EVkspi_gAJgaGfy4tWJpZHP0_YFxpgP-UpKiPiwIIekDwht7DYlRGmDgt8B78TgSQyjtnBXMqrEMosA2WOtWVU_w&q=robotics+integration+engineer+career&sa=X&ved=2ahUKEwjB5d6HrOyXAxW938kDHSonKnYQs6gLegQIFBAB
+						27 link Description: News, Value: google.com/search?sca_esv=293e4396c971566a&hl=en&gl=us&sxsrf=AKL5yDhmCEmsv2zHb2vKZ655cGcRNgMe3A:1793727609163&q=robotics+integration+engineer+career&tbm=nws&source=lnms&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kthDCX9Dky5lnTf1rfnnaDuzw7q2gTOE4X3iXCRvnkl-Xr_Cvo6Hu7KXFx2v_HmGwid9Vra6wKk3_Z3v8qG9FpZEgftAHqhLiFQ4Bcnu0CRdvx_EVkspi_gAJgaGfy4tWJpZHP0_YFxpgP-UpKiPiwIIekDwht7DYlRGmDgt8B78TgSQyjtnBXMqrEMosA2WOtWVU_w&sa=X&ved=2ahUKEwjB5d6HrOyXAxW938kDHSonKnYQ0pQJegQIGRAB
+						28 link Description: Images, Value: google.com/search?sca_esv=293e4396c971566a&hl=en&gl=us&sxsrf=AKL5yDhmCEmsv2zHb2vKZ655cGcRNgMe3A:1793727609163&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kthDCX9Dky5lnTf1rfnnaDuzw7q2gTOE4X3iXCRvnkl-Xr_Cvo6Hu7KXFx2v_HmGwid9Vra6wKk3_Z3v8qG9FpZEgftAHqhLiFQ4Bcnu0CRdvx_EVkspi_gAJgaGfy4tWJpZHP0_YFxpgP-UpKiPiwIIekDwht7DYlRGmDgt8B78TgSQyjtnBXMqrEMosA2WOtWVU_w&q=robotics+integration+engineer+career&sa=X&ved=2ahUKEwjB5d6HrOyXAxW938kDHSonKnYQtKgLegQIGBAB
+						29 link Description: Videos, Value: google.com/search?sca_esv=293e4396c971566a&hl=en&gl=us&sxsrf=AKL5yDhmCEmsv2zHb2vKZ655cGcRNgMe3A:1793727609163&udm=vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kthDCX9Dky5lnTf1rfnnaDuzw7q2gTOE4X3iXCRvnkl-Xr_Cvo6Hu7KXFx2v_HmGwid9Vra6wKk3_Z3v8qG9FpZEgftAHqhLiFQ4Bcnu0CRdvx_EVkspi_gAJgaGfy4tWJpZHP0_YFxpgP-UpKiPiwIIekDwht7DYlRGmDgt8B78TgSQyjtnBXMqrEMosA2WOtWVU_w&q=robotics+integration+engineer+career&sa=X&ved=2ahUKEwjB5d6HrOyXAxW938kDHSonKnYQtKgLegQIFxAB
+						30 link Description: Forums, Value: google.com/search?sca_esv=293e4396c971566a&hl=en&gl=us&sxsrf=AKL5yDhmCEmsv2zHb2vKZ655cGcRNgMe3A:1793727609163&udm=forums&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kthDCX9Dky5lnTf1rfnnaDuzw7q2gTOE4X3iXCRvnkl-Xr_Cvo6Hu7KXFx2v_HmGwid9Vra6wKk3_Z3v8qG9FpZEgftAHqhLiFQ4Bcnu0CRdvx_EVkspi_gAJgaGfy4tWJpZHP0_YFxpgP-UpKiPiwIIekDwht7DYlRGmDgt8B78TgSQyjtnBXMqrEMosA2WOtWVU_w&q=robotics+integration+engineer+career&sa=X&ved=2ahUKEwjB5d6HrOyXAxW938kDHSonKnYQs6gLegQIFhAB
+						31 button (collapsed) More filters, Secondary Actions: Expand
+							32 container More filters
+								33 text More
+					34 button (collapsed) Tools, ID: hdtb-tls, Secondary Actions: Expand
+			215 content list
+				216 link Description: Add Remote, Value: google.com/search?sca_esv=293e4396c971566a&hl=en&gl=us&sxsrf=AKL5yDhmCEmsv2zHb2vKZ655cGcRNgMe3A:1793727609163&q=robotics+integration+engineer+career+remote&uds=AE2AFgbf06ZzDvczg9XBG5Z3qflXz18qwIcGswR7TJmaBQ4w9YUNd-je36ooYxoOUh96Dwv2NmWjyJBwXbdXM6QAGCevHX6UUQ3Wpkx21Wo-CDwwlDK-omE9iWQ1PpUXMh84p5M4IZ1110i5SH_uLJFCwIiPuWvPAoC4nP7g0Z6h7KWuOZDf8Wz_FYzcIdgZQoSwpcIpbxFh&sa=X&ved=2ahUKEwjB5d6HrOyXAxW938kDHSonKnYQxKsJKAB6BAggEAE&ictx=0
+				217 link Description: Add No degree, Value: google.com/search?sca_esv=293e4396c971566a&hl=en&gl=us&sxsrf=AKL5yDhmCEmsv2zHb2vKZ655cGcRNgMe3A:1793727609163&q=robotics+integration+engineer+career+no+degree&uds=AE2AFgbf06ZzDvczg9XBG5Z3qflXrErWebD9CB0liPjoOa7_MVPtdlfHL7IJWxYpB-idvAyr3par5OnUFyrmpvqfhSaU9RSJBY3Jd0LBhnbfHzBhTpvba-I25a8exGWli7It-fl84O7iKSNZkuZdgNku6ld9AjQ3N0HaNRCTrTvIMn0avV-gEOMrpJuMznzai9RyHzmdeQZt&sa=X&ved=2ahUKEwjB5d6HrOyXAxW938kDHSonKnYQxKsJKAF6BAgfEAE&ictx=0
+				218 container eRzqaoHFCb2_p84Pqs6osQc__23
+					219 button Job type
+						220 text Job type
+				221 container eRzqaoHFCb2_p84Pqs6osQc__29
+					222 button Date posted
+						223 text Date posted
+			45 heading Search Results, Value: 1
+				46 text Search Results
+			47 container rcnt
+				48 container
+					49 heading Liberty City, Miami, Value: 2
+						50 text Liberty City, Miami
+					51 button Choose area
+					52 button How location is used
+				53 container Odp5De
+					224 container
+						225 container
+							226 heading AI Overview, Value: 2
+								227 text AI Overview
+							228 container
+								229 button What Are The Top 10 Careers in Robotics in 2026? | NEIT, ID: ic-jVCTmuVXZ_6dYM
+									230 image Description: What Are The Top 10 Careers in Robotics in 2026? | NEIT, ID: img-eRzqaumOHoDHp84Py5G7-A8_0qf31t_1
+								231 text A  robotics integration engineer bridges the gap between hardware, software, and industrial production lines, making physical machinery, sensors, and control systems work together seamlessly .
+								232 button Related results
+							233 heading What They Do, Value: 3
+								234 text What They Do
+							235 container
+								236 content list
+									237 container
+										238 link Description: Robotic integration engineer jobs, Value: …
+										239 text Indeed
+										240 button Description: About this result, ID: snui-atr-eRzqaumOHoDHp84Py5G7-A8_0qf31t_15
+										241 text Robotic integration engineer jobs
+										242 text Robotic integration engineer jobs * Robotics Systems Integration Engineer Stratom, Inc. Louisville, CO $90,000 - $160,000 a year V...
+									243 container
+										244 link Description: Robotics Integration Engineering Specialist, Value: …
+										245 text Siemens
+										246 button Description: About this result, ID: snui-atr-eRzqaumOHoDHp84Py5G7-A8_0qf31t_18
+										247 text Robotics Integration Engineering Specialist
+										248 text What will you do? Support data quality, calibration, timestamping, modality alignment, and integration troubleshooting. Contribute...
+						249 button (collapsed) Description: Show more AI Overview, Secondary Actions: Expand
+							250 text Show more
+				59 container center_col
+					60 container gevUs
+						61 container rso
+							62 container
+								63 heading Web results, Value: 2
+									64 text Web results
+								65 link Description: Robotic integration engineer jobs Indeed https://www.indeed.com › q-robotic-integration-engine..., Value: …
+								66 button About this result
+								67 container
+									68 text Browse 1282 Robotic Integration Engineer jobs . New jobs posted today. Apply now and find your next opportunity on Indeed.com.
+							69 container
+								70 link Value: …, Description: Robotics Engineer Jobs in Miami (225 Open Roles) LinkedIn https://www.linkedin.com › jobs › robotics-engineer-jobs...
+								71 button About this result
+								72 text Today's top 225 
+								73 text Robotics Engineer jobs in Miami
+								74 text . Leverage your professional network, and get hired. New Robotics Engineer jobs added daily.
+							75 container
+								76 link Value: …, Description: Robotics Integration Engineer Jobs (NOW HIRING) ZipRecruiter https://www.ziprecruiter.com › ... › Engineers Jobs
+								77 button About this result
+								78 text Browse 1000+ 
+								79 text ROBOTICS INTEGRATION ENGINEER jobs
+								80 text  ($104k-$162k) hiring now. New openings posted daily. Apply early, get seen first & 1-click ... Missing:
+								81 text career
+								82 text  ‎| Show results with: 
+								83 link Description: career, Value: …
+							84 container
+								85 link Description: Robotics Integrations Engineer Tesla https://www.tesla.com › careers › search › job › robotic..., Value: …
+								86 button About this result
+								87 text We are seeking a 
+								88 text robotics software integrations engineer
+								89 text  to lead deployments, provide production support, and drive continuous improvement of these applications ...
+								90 link Description: Read more, Value: …
+							91 container
+								92 heading Jobs, Value: 2
+									93 text Jobs
+								94 button Follow
+									95 text Follow
+								96 tab group
+									97 tab (selected, settable, boolean) Job postings, Value: 1
+Job postings
+									98 tab (selectable, settable, boolean) Saved jobs, Value: 0
+Saved jobs
+									99 tab (selectable, settable, boolean) Following, Value: 0
+Following
+								100 container xU-YZ5Dmbmun-TLOAAAAAA==
+									101 pop up button Industrial Robotics Integration Engineer (FANUC/PLC) Hoerbiger USA Delray Beach, FL • via Indeed
+										102 text Industrial Robotics Integration Engineer (FANUC/PLC)
+										103 text Hoerbiger USA
+										104 text Delray Beach, FL • via Indeed
+									105 button Add Industrial Robotics Integration Engineer (FANUC/PLC) to saves list
+									106 button Share
+									107 container Posted 4 days ago
+									108 container Salary $90K–$115K a year
+									109 container Employment Type Full-time
+									110 container Qualification No degree mentioned
+										111 text No degree mentioned
+								112 container pEgcKytG8x1gOFThAAAAAA==
+									113 pop up button Senior Robotics Integration Engineer Kerrigan Robotics United States • via Gem
+										114 text Senior Robotics Integration Engineer
+										115 text Kerrigan Robotics
+										116 text United States • via Gem
+									117 button Add Senior Robotics Integration Engineer to saves list
+									118 button Share
+									119 container Employment Type Full-time
+									120 container Qualification No degree mentioned
+										121 text No degree mentioned
+								122 container
+									123 pop up button Senior Robotics Integration Engineer BY Recruiting San Francisco, CA • via BY Recruiting
+										124 text Senior Robotics Integration Engineer
+										125 text BY Recruiting
+										126 text San Francisco, CA • via BY Recruiting
+									127 button Add Senior Robotics Integration Engineer to saves list
+									128 button Share
+									129 container Posted 5 days ago
+									130 container Salary $160K–$200K a year
+									131 container Employment Type Full-time
+									132 container Qualification No degree mentioned
+										133 text No degree mentioned
+								134 link Description: 100+ more jobs, Value: …
+								135 button Feedback
+								136 link Description: Learn more, Value: support.google.com/websearch/?p=job_search_box&hl=en
+							137 container
+								138 heading People also ask, Value: 2
+									139 text People also ask
+								140 button (collapsed) What type of engineer makes $500,000 a year?, Secondary Actions: Expand
+									141 text What type of engineer makes $500,000 a year?
+								142 button (collapsed) How much do robotic integrators make?, Secondary Actions: Expand
+									143 text How much do robotic integrators make?
+								144 button (collapsed) Is robotics engineer a good career?, Secondary Actions: Expand
+									145 text Is robotics engineer a good career?
+								146 button (collapsed) Will AI replace robotic engineers?, Secondary Actions: Expand
+									147 text Will AI replace robotic engineers?
+							148 container
+								149 heading Web results, Value: 2
+									150 text Web results
+								151 link Value: …, Description: Robotics Integration Engineering Specialist Siemens https://jobs.siemens.com › externaljobs › JobDetail
+								152 button About this result
+								153 container
+									154 text We are seeking a  Robotics Integration Engineer  to connect robot systems, camera systems, sensors, edge devices, and teleoperation or runtime-adjacent data ...
+									155 link Description: Read more, Value: …
+							156 container
+								157 link Description: Robotics Career Robotics Career https://www.roboticscareer.org, Value: …
+								158 button About this result
+								159 text Find your pathway to 
+								160 text industry approved robotics career training
+								161 text  for technicians, specialists, and integrators at RoboticsCareer.org.
+							162 container
+								163 link Value: …, Description: 52 robotics engineer Jobs in Miami, FL, October 2026 Glassdoor https://www.glassdoor.com › ... › Robotics Engineer Jobs
+								164 button About this result
+								165 text Search Robotics engineer jobs in Miami, FL
+								166 text  with company ratings & salaries. 52 open jobs for Robotics engineer in Miami.
+							167 container
+								168 link Description: Maven Robotics | Join Us Maven Robotics https://www.mavenrobotics.ai › join-us, Value: …
+								169 button About this result
+								170 text We are seeking an exceptional Sr. 
+								171 text Engineer
+								172 text  to lead the development of dexterous 
+								173 text robot
+								174 text  end-effectors. In this role you will: Own the full product development ...
+								175 link Description: Read more, Value: …
+					176 container
+						177 container
+							178 heading People also search for, Value: 2
+								179 text People also search for
+							180 link Description: Entry level robotics integration engineer career, Value: …
+							181 link Description: Robotics integration engineer career remote, Value: …
+						182 heading Page Navigation, Value: 1
+							183 text Page Navigation
+						184 text 1
+						185 link Description: Page 2, Value: …
+						186 link Description: Page 3, Value: …
+						187 link Description: Page 4, Value: …
+						188 link Description: Page 5, Value: …
+						189 link Description: Page 6, Value: …
+						190 link Description: Page 7, Value: …
+						191 link Description: Page 8, Value: …
+						192 link Description: Page 9, Value: …
+						193 link Description: Page 10, Value: …
+						194 heading Next, Value: 2
+							195 link Description: Next, Value: …, ID: pnnext
+			196 container sfooter
+				197 heading Footer Links, Value: 1
+					198 text Footer Links
+				199 container fbar
+					200 container
+						201 button Liberty City, Miami, FL  - Based on your past activity
+							202 container
+								203 text Liberty City, Miami, FL
+							204 container
+								205 text  -  Based on your past activity
+						206 text  - 
+						207 button Update location
+							208 text Update location
+					209 container fsl
+						210 link Description: Help, Value: …
+						211 button Send feedback
+							212 text Send feedback
+						213 link Description: Privacy, Value: policies.google.com/privacy?hl=en&fg=1
+						214 link Description: Terms, Value: …
+
+The focused UI element is 11 combo box (collapsed) Description: Search, Value: robot learning engineer, ID: ti6dpd, Secondary Actions: Expand

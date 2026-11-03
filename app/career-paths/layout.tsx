@@ -1,3 +1,5 @@
+import "@/components/career-discovery.css";
+import "@/components/career-guide-editorial.css";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import { SitePage, SiteSurface } from "@/components/site-frame";

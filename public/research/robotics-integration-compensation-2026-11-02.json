@@ -1,0 +1,435 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "derivedAt": "2026-11-03",
+  "roleId": "systems-integration-engineer",
+  "sourceAggregate": "/research/physical-ai-careers-2026-11-02.json",
+  "sourceAggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "label": "Black Scarab estimated compensation",
+  "currency": "USD",
+  "period": "year",
+  "basis": "advertised annual salary or starting cash compensation, excluding equity and bonuses",
+  "postingCount": 14,
+  "employerCount": 8,
+  "exactMedianMidpoint": 157500.0,
+  "estimate": 158000,
+  "rounding": "nearest 1000 USD, halves rounded upward",
+  "method": "Take the midpoint of each eligible advertisement’s annual USD range, count each distinct posting ID once, then take the median. Round the displayed estimate to the nearest $1,000.",
+  "eligibility": "US robot-application integration and autonomy-deployment advertisements in the November 2 Systems Integration cohort with one complete structured annual USD range, plus Nimble’s existing full-source-reviewed annual starting-cash range. Includes early-career through staff individual contributors.",
+  "limitations": "Selected employers and mixed experience levels. Excludes account strategy, program management, unrelated data infrastructure, internal platform/test integration and primarily sustainment roles. Excludes a geographically conflicting Australia assignment. Other unstructured salary wording was not newly converted to annual USD observations. Distinct ATS advertisements are counted separately, including similar job families. Salary fields do not consistently identify base pay; bonuses and equity are excluded.",
+  "excludedObservations": [
+    {
+      "id": "applied-intuition:ashby:5abc5f1b-75d7-4e8a-aafc-808aeedd68a1",
+      "title": "Application Engineer - Trucking",
+      "reason": "Primarily technical-program delivery, stakeholder coordination and milestone management.",
+      "sourceTextSha256": "129c78a7b0e4c8ae4ab7f98c7825732d8ab3cd5633d354acca0ce6aa2d252aba"
+    },
+    {
+      "id": "applied-intuition:ashby:6e6b218a-ef17-45fe-86ba-0bf33199016f",
+      "title": "Application Engineer - Technical Customer Lead",
+      "reason": "Primarily account strategy and technical customer relationship ownership.",
+      "sourceTextSha256": "49199cd1a9899a9b58471e221c3d84e37f2c25c7a7d2553dea04e05967bc9d54"
+    },
+    {
+      "id": "applied-intuition:ashby:7785715d-dca7-4c33-9fec-6149d86e8b26",
+      "title": "Field Deployment Engineer",
+      "reason": "US ATS location conflicts with source specifying Australia as the primary 2026 deployment location.",
+      "sourceTextSha256": "67b62c62d4f476e87beb1e5f848c5ae5802c52c3315fe4d70c3551acb4b0db87"
+    },
+    {
+      "id": "rerun:ashby:ee28fed0-9ada-40ac-b828-f1ed633f60e6",
+      "title": "Forward Deployed Engineer",
+      "reason": "Customer data and infrastructure integration, not robot or autonomy application deployment.",
+      "sourceTextSha256": "3e4558045ad4675241effbf9bfe6767e4078df4878f3f4b5baf3bcc0ed6969a2"
+    },
+    {
+      "id": "shield-ai:lever:20bc08b5-f30d-4ba5-b9c3-3a28107bb2ee",
+      "title": "Senior Engineer, System Integration Test (R6086)",
+      "reason": "Primarily internal system integration testing rather than application deployment.",
+      "sourceTextSha256": "26b211ef32fb84968a9b7bff17bf520ea3dc5399effffb237c60f0e04afc6aa0"
+    },
+    {
+      "id": "shield-ai:lever:41c56241-9a9c-473f-a5a2-b11000aa0c23",
+      "title": "Forward Deployed Engineer, Operations & Sustainment - open level (R5497)",
+      "reason": "Primarily operations, support and sustainment; excluded from application-integration estimate.",
+      "sourceTextSha256": "7430410e54e12d0184ed225ff996c2d3f4a4aa8ea3f52aa65d8428124320e30d"
+    },
+    {
+      "id": "shield-ai:lever:4a63c673-bd68-4839-ba4b-b394bc6741e2",
+      "title": "Senior Staff Engineer, Systems Integration (R5415)",
+      "reason": "Internal software, distributed simulation and development-tool integration.",
+      "sourceTextSha256": "3a9215b78f077bcb18d918e7b0a5063b678961c1b9da6f9c858de7df520af261"
+    },
+    {
+      "id": "shield-ai:lever:86c6e595-54b8-4e04-a50e-5676118ce77e",
+      "title": "Engineer, Autonomous Systems Integration (R6266)",
+      "reason": "Internal test-platform bring-up and integration readiness rather than customer application deployment.",
+      "sourceTextSha256": "f93ff76243e78bf0d986e7d1bcef25a0c25fc99fd73a21fcb0b858c964cac045"
+    },
+    {
+      "id": "shield-ai:lever:ac228821-b2f8-4155-a119-b05e16ebaefe",
+      "title": "Senior Generative AI Application Engineer, Learning & Development (R5856)",
+      "reason": "AI learning products and technical curriculum, not robotics integration.",
+      "sourceTextSha256": "ec21df52eaaec0e966db0ae351711074aae2d7b296350f69e00ff88e71af4017"
+    }
+  ],
+  "observations": [
+    {
+      "id": "applied-intuition:ashby:31140958-d768-452c-8498-0b1c7f403943",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Forward Deployed Engineer - New Grad (2027)",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "early-career",
+      "url": "https://jobs.ashbyhq.com/applied/31140958-d768-452c-8498-0b1c7f403943",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "4594b571b9d23d4f5ee1aee5b80ee9e18213e8738e6c7a694ef0e8d6e527dd14",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 130000,
+      "maximum": 158000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 144000.0
+    },
+    {
+      "id": "dexterity:lever:5005c9a7-4014-4ccb-8d13-c109951f9097",
+      "employerId": "dexterity",
+      "employer": "Dexterity",
+      "title": "Forward Deployed Engineer",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.lever.co/dexterity/5005c9a7-4014-4ccb-8d13-c109951f9097",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "9fccff959af2df4c05dea5a14986463066bfdac5e0c41cdb6cdb432e8f89afd4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dexterity.json",
+      "rawSourceFileSha256": "58e07677b990f0ea1b41f418ab151a58e38723fc312c6213884069c392d0c236",
+      "minimum": 130000,
+      "maximum": 170000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 150000.0
+    },
+    {
+      "id": "fieldai:lever:3a115140-cbee-4d96-b61d-7403596b77ca",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Field Application Engineer",
+      "locations": [
+        "Remote - US"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.lever.co/field-ai/3a115140-cbee-4d96-b61d-7403596b77ca",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "027249a0a13c95786c8106d34d3a5291875a9cbf648107b0b918ecfd2ed2bfd0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 60000,
+      "maximum": 150000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 105000.0
+    },
+    {
+      "id": "fieldai:lever:3ea0a2e6-b3e7-4887-b17d-f1cb16ea4d50",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Forward Deployed Engineer (Federal)",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.lever.co/field-ai/3ea0a2e6-b3e7-4887-b17d-f1cb16ea4d50",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "01684d77d81e5271a026febc0ad90029d1ffecfdb0b038886d0ea274e39e7686",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 100000,
+      "maximum": 200000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 150000.0
+    },
+    {
+      "id": "fieldai:lever:6fc39622-b8e9-4aab-804a-b5fc61549dc0",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Forward Deployed Engineer (Irvine, CA)",
+      "locations": [
+        "Boston, MA",
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.lever.co/field-ai/6fc39622-b8e9-4aab-804a-b5fc61549dc0",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "3b32c28491c9dfe5c3a47f092b29a317714376ad40b39777ad04c82b603210e8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 100000,
+      "maximum": 140000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 120000.0
+    },
+    {
+      "id": "nimble:greenhouse:4398427009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "Senior Systems Integration Engineer",
+      "locations": [
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4398427009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "c563ab21a24e9a8ba966e5fc654f36f40eb5480928b5da7302cdb6afd3ec459f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "minimum": 160000,
+      "maximum": 190000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "Full posting explicitly states expected starting pay per year; cash compensation, equity additional.",
+      "extraction": "existing-full-source-reviewed-annual-cash-range",
+      "midpoint": 175000.0,
+      "sourceQuote": "The pay range for this position at the start of employment is expected to be between $160,000 and $190,000/year."
+    },
+    {
+      "id": "osaro:lever:ab8362cf-9932-4018-a8d4-3659fc188d4e",
+      "employerId": "osaro",
+      "employer": "OSARO",
+      "title": "Deployment Engineer",
+      "locations": [
+        "San Francisco or Remote"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.lever.co/osaro/ab8362cf-9932-4018-a8d4-3659fc188d4e",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "8fc2ee01d05c699910b7aa0bf211b8fa264020872d3c45a23cd61fd00fd5143e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/osaro.json",
+      "rawSourceFileSha256": "27c97473a1c27531e82bca09fbb4dbaf306483a42ae42c50429a750b4929ab92",
+      "minimum": 100000,
+      "maximum": 140000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 120000.0
+    },
+    {
+      "id": "rhoda:ashby:6820b1a8-c558-47a2-92e0-22f4bcc58d2e",
+      "employerId": "rhoda",
+      "employer": "Rhoda AI",
+      "title": "Robotics Application Engineer",
+      "locations": [
+        "Mountain View"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.ashbyhq.com/rhoda-ai/6820b1a8-c558-47a2-92e0-22f4bcc58d2e",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "b3e67c6fdab49ba16777754c804a4860b958637f7c9a68a1ccdc7abdd59cbbc8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/rhoda.json",
+      "rawSourceFileSha256": "57292cd4a63e78bba309cca3f2dd2b54a447c617ae01fb0a2d48033f76eb01bc",
+      "minimum": 150000,
+      "maximum": 215000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 182500.0
+    },
+    {
+      "id": "shield-ai:lever:02db91d4-cd4d-4def-977d-76b63b39aa9b",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior Applications Engineer, Maritime Autonomy (R6378)",
+      "locations": [
+        "United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "url": "https://jobs.lever.co/shieldai/02db91d4-cd4d-4def-977d-76b63b39aa9b",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "0b27d05ab62568d669d1afe8d7019ccfedb2aa8baf708e0242b9e4dea299ebe2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 130000,
+      "maximum": 200000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 165000.0
+    },
+    {
+      "id": "shield-ai:lever:2394368a-67ff-441c-83c3-e998446327e7",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Applications Engineer, Autonomy (open level)",
+      "locations": [
+        "Dallas, Texas",
+        "San Diego, California"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.lever.co/shieldai/2394368a-67ff-441c-83c3-e998446327e7",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "fe58d10f4599f94f669044896d55931cc857c8f476296dc6dcb88918c6b8ea1c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 152000,
+      "maximum": 318000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 235000.0
+    },
+    {
+      "id": "shield-ai:lever:8afc41da-27a5-4054-a3c7-87b3ceb6cf0a",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Forward Deployed Engineer, Autonomy (open level)",
+      "locations": [
+        "Dallas, Texas",
+        "San Diego, California",
+        "United States",
+        "Washington, D.C."
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.lever.co/shieldai/8afc41da-27a5-4054-a3c7-87b3ceb6cf0a",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "cf1007230abe1eb943bc8a0aa8f483c37a9a7d27c11d4cb797f9f367122435de",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 152000,
+      "maximum": 318000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 235000.0
+    },
+    {
+      "id": "standard-bots:ashby:0f10edc9-c87b-4c9e-b0ab-f6cc5be6af91",
+      "employerId": "standard-bots",
+      "employer": "Standard Bots",
+      "title": "Senior Applications Engineer (West Coast)",
+      "locations": [
+        "US-West Coast (remote)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "url": "https://jobs.ashbyhq.com/standardbots/0f10edc9-c87b-4c9e-b0ab-f6cc5be6af91",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "c780832670315df2f71dc88ef19c56ae89c94a3fab675c309f75828f683e06df",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "minimum": 150000,
+      "maximum": 200000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 175000.0
+    },
+    {
+      "id": "standard-bots:ashby:6d34a165-179d-4bb2-a862-82d6f450eca1",
+      "employerId": "standard-bots",
+      "employer": "Standard Bots",
+      "title": "AI Applications Engineer (Glen Cove, NY)",
+      "locations": [
+        "Glen Cove, NY"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.ashbyhq.com/standardbots/6d34a165-179d-4bb2-a862-82d6f450eca1",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "0eaf3f9a98927e2371585fb1565a6d1160c4e7b58ff3bd103b91d5e937a0f547",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "minimum": 120000,
+      "maximum": 150000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 135000.0
+    },
+    {
+      "id": "standard-bots:ashby:ac00a37d-d8ce-41f7-b062-debe8dff496d",
+      "employerId": "standard-bots",
+      "employer": "Standard Bots",
+      "title": "Staff Forward Deployed Engineer",
+      "locations": [
+        "San Francisco, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "staff-principal",
+      "url": "https://jobs.ashbyhq.com/standardbots/ac00a37d-d8ce-41f7-b062-debe8dff496d",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "699429aaa5e1ee6c2cd121c7055381709b8adca3fc29949148a29df6aa1279bb",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "minimum": 215000,
+      "maximum": 275000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 245000.0
+    }
+  ]
+}

@@ -43,3 +43,34 @@ export interface CareerFamily {
   learningResources: LearningResource[]; relatedArticles: { title: string; path: string }[];
   citations: Citation[]; lastReviewed: string | null; status: EditorialStatus;
 }
+
+// Profession summaries stay separate from publishable, long-form guides.
+export type CareerGuideBlock =
+  | { type: 'paragraph'; text: string }
+  | { type: 'heading'; text: string }
+  | { type: 'list'; items: string[]; ordered?: boolean }
+  | { type: 'table'; caption: string; columns: string[]; rows: string[][] }
+  | { type: 'figure'; src: string; alt: string; caption: string; width: number; height: number }
+  | { type: 'summary-list'; items: { title: string; text: string }[] }
+  | { type: 'calculation'; title: string; formula: string; example: string; note: string }
+  | { type: 'skill-mentions'; title: string; denominator: number; note: string; detailNote: string;
+      rows: { label: string; count: number; required: number; preferred: number; contextual: number }[] }
+  | { type: 'compensation'; caption: string; note: string;
+      examples: { employer: string; title: string; location: string; minimum: number; maximum: number; currency: string; period: string; basis: string }[] }
+  | { type: 'resources'; items: { title: string; href: string; description: string }[] };
+export interface CareerGuideSection extends EditorialSection {
+  id: string; navLabel?: string; blocks?: CareerGuideBlock[];
+}
+export interface CareerGuideContent {
+  id: string; occupationId: string; familyId: FamilyId; slug: string;
+  title: string; seoTitle: string; description: string; deck?: string;
+  status: 'draft' | 'published' | 'archived'; publishedAt?: string; reviewedAt: string;
+  research: { snapshotId: string; roleId: string; evidencePath: string };
+  illustration?: { src: string; alt: string; width: number; height: number };
+  introduction?: string[];
+  overview?: { label: string; value: string; detail?: string; sourceIds: string[] }[];
+  overviewNote?: string;
+  nextSteps?: CareerGuideSection;
+  researchNotes?: string[];
+  sections: CareerGuideSection[]; citations: Citation[];
+}

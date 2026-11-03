@@ -1,0 +1,391 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "derivedAt": "2026-11-03",
+  "roleId": "robot-learning-engineer",
+  "sourceAggregate": "/research/physical-ai-careers-2026-11-02.json",
+  "sourceAggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "label": "Black Scarab estimated compensation",
+  "currency": "USD",
+  "period": "year",
+  "basis": "advertised annual salary, not total compensation",
+  "postingCount": 15,
+  "employerCount": 6,
+  "estimate": 275000,
+  "exactMedianMidpoint": 274500.0,
+  "rounding": "nearest 1000 USD, halves rounded upward",
+  "method": "Take the midpoint of each eligible advertisement’s annual USD salary range, count each distinct posting once, then take the median. Display rounded to the nearest $1,000.",
+  "eligibility": "US advertisements in the original normalized robot-learning cohort with one complete structured annual USD salary range and policy-learning responsibilities.",
+  "limitations": "Selected employers, mixed experience levels, concentrated in California and Boston. Job advertisements, not observed earnings or an entry-level estimate. Salary fields do not consistently specify base pay; equity and bonuses are excluded.",
+  "excludedObservations": [
+    {
+      "id": "zoox:lever:170c22c2-24f8-4163-a007-45dec5bdb902",
+      "title": "Senior / Staff Machine Learning Engineer - Behavior Models for Road Users",
+      "reason": "Primary output is simulated road-user behavior for stress testing rather than a policy deployed on the robot.",
+      "sourceTextSha256": "14ba8b30408193cf3f2d8bb57c81c0096452bf5c4afb09a9d77e1b50910503a4"
+    }
+  ],
+  "observations": [
+    {
+      "id": "applied-intuition:ashby:36a49d01-e60f-4c01-8c8c-5a7f79347f51",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Research Engineer - Reinforcement Learning, Self-Driving",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.ashbyhq.com/applied/36a49d01-e60f-4c01-8c8c-5a7f79347f51",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "19248f6ddcf8d9c5992f3e2f62458502022f1c5b680fe0760ae868e75ac42b5b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 126000,
+      "maximum": 423000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 274500.0
+    },
+    {
+      "id": "applied-intuition:ashby:39846b2a-1f0e-4f97-b463-75fd37f217ce",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Research Scientist (Research)",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.ashbyhq.com/applied/39846b2a-1f0e-4f97-b463-75fd37f217ce",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "249145f9dd2aa30e8d55cacfbb77ffd1321e93546d5a579912e10ae266c62db5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 126000,
+      "maximum": 423000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 274500.0
+    },
+    {
+      "id": "applied-intuition:ashby:45fc41cd-8280-4010-ba1f-def6114b3e39",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Research Engineer - New Grad (2027)",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "early-career",
+      "url": "https://jobs.ashbyhq.com/applied/45fc41cd-8280-4010-ba1f-def6114b3e39",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "f1f4d6f986276e358f3e2438f620f2c30130a00c004aea06364c3f0285423016",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 140000,
+      "maximum": 200000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 170000.0
+    },
+    {
+      "id": "applied-intuition:ashby:4cd7cf1d-717c-4887-93b4-520a40a906b1",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Research Scientist - Humanoid Robotics",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.ashbyhq.com/applied/4cd7cf1d-717c-4887-93b4-520a40a906b1",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "d79fb5f91148ff3683bab39163eae9aa93d37b10b33937daa2877cd2b5aa67b9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 250000,
+      "maximum": 423000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 336500.0
+    },
+    {
+      "id": "applied-intuition:ashby:52a070cf-4e1b-4fcc-bf73-727da8fb6d46",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Research Scientist - Reinforcement Learning, Robotics",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.ashbyhq.com/applied/52a070cf-4e1b-4fcc-bf73-727da8fb6d46",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "3782f57eebdd9a3eb0c5e6d79107f8a8765d6ee429147cd3ecae2044c31405c6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 126000,
+      "maximum": 423000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 274500.0
+    },
+    {
+      "id": "applied-intuition:ashby:e725018e-2577-4ff6-8dbd-69206272d9af",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Research Engineer - Robot Learning",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.ashbyhq.com/applied/e725018e-2577-4ff6-8dbd-69206272d9af",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "ac9b716a78bdc5fe41fd40811cfed691afc7404465cb2013a6404f7b4641977f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 126000,
+      "maximum": 423000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 274500.0
+    },
+    {
+      "id": "applied-intuition:ashby:ef7fb9ed-e254-4b90-aef2-efa9c30e7cd8",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Robot Learning Engineer - Manipulation",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.ashbyhq.com/applied/ef7fb9ed-e254-4b90-aef2-efa9c30e7cd8",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "4fe0c3e2a844ea92b31b7da3ad488cc2d19f46b1ac69d008df5dee00a7421276",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 150000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 225000.0
+    },
+    {
+      "id": "dyna:ashby:357b1b23-0712-489e-b336-1462f186cba7",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Research Scientist",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/357b1b23-0712-489e-b336-1462f186cba7",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "1d45778de8891ccd45344f9c9ca1f6cca2488ffe2021818d4e5dc7809448b300",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "minimum": 200000,
+      "maximum": 400000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 300000.0
+    },
+    {
+      "id": "fieldai:lever:da3b1a5c-93f6-41f1-a18a-1342adbb3ec0",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Senior Research Scientist, Humanoid Manipulation",
+      "locations": [
+        "Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "url": "https://jobs.lever.co/field-ai/da3b1a5c-93f6-41f1-a18a-1342adbb3ec0",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "9dbcd2a4f1581f8c1dc2e73f2c294736f9a8f16f93cb8d814f52086d5bf56a68",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 150000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 225000.0
+    },
+    {
+      "id": "fieldai:lever:f53cce40-b227-4a0d-94c5-ef038f2c6341",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Senior Research Engineer, Humanoid Manipulation",
+      "locations": [
+        "Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "url": "https://jobs.lever.co/field-ai/f53cce40-b227-4a0d-94c5-ef038f2c6341",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "fc316a1e9add0ad12c1c6a3507a41c6e94ed40b2033cd5155fc5849e41491c20",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 150000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 225000.0
+    },
+    {
+      "id": "generalist:ashby:f08058fd-3aaf-45e7-8240-28193f65b822",
+      "employerId": "generalist",
+      "employer": "Generalist",
+      "title": "Research Scientist: Post-Training",
+      "locations": [
+        "San Francisco Bay Area (San Mateo) or Boston (Somerville)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.ashbyhq.com/generalist/f08058fd-3aaf-45e7-8240-28193f65b822",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "54f5f2a0436a9b4a1ac57456cc0b4480c22b898a897b73b45c0a7b02ed446d57",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/generalist.json",
+      "rawSourceFileSha256": "3a68317852f186207f680483cbe333b2be5efb0f070d156245cb2a3a929514b7",
+      "minimum": 240000,
+      "maximum": 350000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 295000.0
+    },
+    {
+      "id": "sunday:ashby:38ac9ff8-2d68-40a8-9733-1709dd34023d",
+      "employerId": "sunday",
+      "employer": "Sunday Robotics",
+      "title": "Machine Learning Research Engineer/Scientist",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.ashbyhq.com/sunday/38ac9ff8-2d68-40a8-9733-1709dd34023d",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "a06bf364d018a24f47b576ef5f65c7f439234df04676eb6cf4fdd19ae5fa1b0b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/sunday.json",
+      "rawSourceFileSha256": "95e55ab1970ad63d47734109bd8e17d1fde8a0db3343230ed504995fa38261d2",
+      "minimum": 200000,
+      "maximum": 450000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 325000.0
+    },
+    {
+      "id": "zoox:lever:24acfe86-aa1b-4aa6-903b-99b4596e42cf",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Senior / Staff Software Engineer - Learned Trajectory Machine Learning Engineer",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "staff-principal",
+      "url": "https://jobs.lever.co/zoox/24acfe86-aa1b-4aa6-903b-99b4596e42cf",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "d91366c42c82329f7e02523b985263843b79079a63f1e9fd58b32b17634a2949",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 242000,
+      "maximum": 349000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 295500.0
+    },
+    {
+      "id": "zoox:lever:9176aa65-14e3-4f9d-98f9-e755e9777d67",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Software Engineer - Learned Trajectory Machine Learning Engineer",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "unspecified-or-midcareer",
+      "url": "https://jobs.lever.co/zoox/9176aa65-14e3-4f9d-98f9-e755e9777d67",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "827f15cb4b7d3337b2518c01f6c318b41275c50eb517ad7f6b0cc4e7326b818b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 189000,
+      "maximum": 270000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 229500.0
+    },
+    {
+      "id": "zoox:lever:b30b28b0-fea9-4420-a61e-10309c3f7c52",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Senior Staff / Principal Machine Learning Engineer - Autonomy Behaviors",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "seniority": "staff-principal",
+      "url": "https://jobs.lever.co/zoox/b30b28b0-fea9-4420-a61e-10309c3f7c52",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "4636970c7c686208870fca2b2ba4067e0d087556bcd04ebc25a0fe57f1af3150",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 340000,
+      "maximum": 492000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "midpoint": 416000.0
+    }
+  ]
+}

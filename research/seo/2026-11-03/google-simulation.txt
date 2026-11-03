@@ -1,0 +1,244 @@
+Browser tab: 15, Title: "robotics simulation engineer career - Google Search", URL: "https://www.google.com/search?q=robotics+simulation+engineer+career&hl=en&gl=us&jbr=sep:0".
+1 AXWebArea robotics simulation engineer career - Google Search, URL: google.com/search
+	2 container gsr
+		3 container
+			4 link Skip to main content
+				5 text Skip to main content
+			6 link Description: Accessibility help, Value: support.google.com/websearch/answer/181196
+		7 container searchform
+			8 container tsf
+				9 container
+					10 link Description: United States Midterm Elections 2026, Value: google.com/webhp
+					12 combo box (collapsed) Description: Search, Value: robotics simulation engineer career, ID: ti6dpd, Secondary Actions: Expand
+					13 button  Clear
+					14 button Search by voice
+					15 button Search by image
+			16 button Description: Settings, ID: og-te
+			17 button Share
+			18 button (collapsed) Description: Google apps, Secondary Actions: Expand
+			19 link Description: Sign in, Value: accounts.google.com/ServiceLogin
+		20 container cnt
+			21 container
+				22 container
+					23 content list
+						24 link Description: AI Mode, Value: google.com/search
+						25 link (disabled) All
+							26 text All
+						27 link Description: Jobs, Value: google.com/search
+						28 link Description: Images, Value: google.com/search
+						29 link Description: News, Value: google.com/search
+						30 link Description: Videos, Value: google.com/search
+						31 link Description: Forums, Value: google.com/search
+						32 button (collapsed) More filters, Secondary Actions: Expand
+							33 container More filters
+								34 text More
+					35 button (collapsed) Tools, ID: hdtb-tls, Secondary Actions: Expand
+			36 content list
+				37 link Description: Add Remote, Value: google.com/search
+				38 link Description: Add No degree, Value: google.com/search
+				39 container chzqas-sBZ63wN4P0vffiQU__23
+					40 button Job type
+						41 text Job type
+				42 container chzqas-sBZ63wN4P0vffiQU__29
+					43 button Date posted
+						44 text Date posted
+			45 heading Search Results, Value: 1
+				46 text Search Results
+			47 container rcnt
+				48 container
+					49 heading Liberty City, Miami, Value: 2
+						50 text Liberty City, Miami
+					51 button Choose area
+					52 button How location is used
+				53 container Odp5De
+					54 container
+						55 container
+							56 heading AI Overview, Value: 2
+								57 text AI Overview
+							58 container
+								59 button What Are The Top 10 Careers in Robotics in 2026? | NEIT, ID: ic-jVCTmuVXZ_6dYM
+									60 image Description: What Are The Top 10 Careers in Robotics in 2026? | NEIT, ID: img-chzqatL0LYvOp84PwKvU4QU_86qx15_1
+								61 text A  Robotics Simulation Engineer builds virtual environments to design, test, train, and validate robotic systems before deploying them on physical hardware .
+								62 link Description: YouTube · Automatic Addison, Value: google.com/goto
+								63 button YouTube · Automatic Addison (+1) - Related results
+									64 text YouTube
+									65 text ·
+									66 text Automatic Addison
+									67 text  +1
+							68 heading What They Do, Value: 3
+								69 text What They Do
+							70 content list
+								71 container
+									72 AXListMarker • 
+									73 text Virtual Prototyping & Digital Twins:  Create high-fidelity 3D representations of robots, factories, or outdoor terrain to test mechanics and code safely.
+									74 link Description: ZipRecruiter, Value: google.com/goto
+									75 button ZipRecruiter - Related results
+										76 text ZipRecruiter
+							77 container
+								78 content list
+									79 container
+										80 link Description: Now Hiring: 800 Robotic Simulation Engineer Jobs | Indeed, Value: google.com/goto
+										81 text Indeed
+										82 button Description: About this result, ID: snui-atr-chzqatL0LYvOp84PwKvU4QU_86qx15_9
+										83 text Now Hiring: 800 Robotic Simulation Engineer Jobs | Indeed
+										84 text Robotic simulation engineer jobs * Research Engineer — Robotics Simulation & Evaluation Easily apply Maxinsights Santa Clara, CA 9...
+									85 container
+										86 link Description: BECOME A SIMULATIONS ENGINEER If you are looking for a ..., Value: google.com/goto
+										87 text LinkedIn · Ricardo Tellez
+										88 button Description: About this result, ID: snui-atr-chzqatL0LYvOp84PwKvU4QU_86qx15_12
+										89 text BECOME A SIMULATIONS ENGINEER If you are looking for a ...
+						90 button (collapsed) Description: Show more AI Overview, Secondary Actions: Expand
+							91 text Show more
+				92 container center_col
+					93 container gevUs
+						94 container rso
+							95 container
+								96 heading Web results, Value: 2
+									97 text Web results
+								98 link Value: google.com/goto, Description: Now Hiring: 800 Robotic Simulation Engineer Jobs Indeed https://www.indeed.com › q-robotic-simulation-enginee...
+								99 button About this result
+								100 container
+									101 text Browse 855 Robotic Simulation Engineer jobs . New jobs posted today. Apply now and find your next opportunity on Indeed.com.
+							102 container
+								103 link Value: google.com/goto, Description: Robotics Simulation Jobs in Florida (NOW HIRING) Oct 26 ZipRecruiter https://www.ziprecruiter.com › Jobs › --in-Florida
+								104 button About this result
+								105 text Principal Robotics Simulation Engineer
+								106 text  Location: Weston, FL - Hybrid Type: 6 month contract Compensation: $110-120/hour, depending on ...
+								107 link Description: Read more, Value: google.com/goto
+							108 container
+								109 link Value: google.com/goto, Description: Robot Simulation Jobs in United States (9000+ Open Roles) LinkedIn https://www.linkedin.com › jobs › robot-simulation-jobs
+								110 button About this result
+								111 text Today's top 9000+ 
+								112 text Robot Simulation jobs in United States
+								113 text . Leverage your professional network, and get hired. New Robot Simulation jobs added daily. Missing:
+								114 text career
+								115 text  ‎| Show results with: 
+								116 link Description: career, Value: google.com/search
+							117 container
+								118 heading Jobs, Value: 2
+									119 text Jobs
+								120 button Follow
+									121 text Follow
+								122 tab group
+									123 tab (selected, settable, boolean) Job postings, Value: 1
+Job postings
+									124 tab (selectable, settable, boolean) Saved jobs, Value: 0
+Saved jobs
+									125 tab (selectable, settable, boolean) Following, Value: 0
+Following
+								126 container YZ7B8GGcaaJaaleMAAAAAA==
+									127 pop up button Robotics Simulation Engineer - Digital Twin & ROS2 System One Fort Lauderdale, FL • via BeBee
+										128 text Robotics Simulation Engineer - Digital Twin & ROS2
+										129 text System One
+										130 text Fort Lauderdale, FL • via BeBee
+									131 button Add Robotics Simulation Engineer - Digital Twin & ROS2 to saves list
+									132 button Share
+									133 container Employment Type Full-time
+									134 container Qualification No degree mentioned
+										135 text No degree mentioned
+								136 container 7ST5Ho83ybbHamI-AAAAAA==
+									137 pop up button Robotics Research Engineer - Robot Simulation and Evaluation NVIDIA Corporation Santa Clara, CA • via NVIDIA Careers
+										138 text Robotics Research Engineer - Robot Simulation and Evaluation
+										139 text NVIDIA Corporation
+										140 text Santa Clara, CA • via NVIDIA Careers
+									141 button Add Robotics Research Engineer - Robot Simulation and Evaluation to saves list
+									142 button Share
+									143 container Posted 5 days ago
+									144 container Employment Type Full-time
+									145 text Health insurance
+								146 container pYkSslKkPQYbSNVYAAAAAA==
+									147 pop up button Robotics Simulation Engineer — Build Autonomy Sim Worlds HavocAI United States • via Talents By Vaia
+										148 text Robotics Simulation Engineer — Build Autonomy Sim Worlds
+										149 text HavocAI
+										150 text United States • via Talents By Vaia
+									151 button Add Robotics Simulation Engineer — Build Autonomy Sim Worlds to saves list
+									152 button Share
+									153 container Employment Type Full-time
+									154 container Qualification No degree mentioned
+										155 text No degree mentioned
+								156 link Description: 83 more jobs, Value: google.com/search
+								157 button Feedback
+								158 link Description: Learn more, Value: support.google.com/websearch/
+							159 container
+								160 heading Web results, Value: 2
+									161 text Web results
+								162 link Value: google.com/goto, Description: Robotics Modeling & Simulation Design Engineer, Optimus Tesla https://www.tesla.com › careers › search › job › robotic...
+								163 button About this result
+								164 container
+									165 text You will work on  improving the robot's behavior in the real world  and reflecting those capabilities in a simulation engine for fast iteration. The code you will ...
+									166 link Description: Read more, Value: google.com/goto
+							167 container
+								168 link Value: google.com/goto, Description: As a robotics engineer, what jobs do I actually have to ... Reddit · r/robotics 50+ comments · 5 years ago
+								169 button About this result
+								170 text Write embedded software in C/C++/Rust
+								171 text  · Write simulation software · Do research to find solutions to complex problem in vision · Apply control ...
+								172 link Description: Read more, Value: google.com/goto
+							173 container
+								174 link Value: google.com/goto, Description: Now Hiring: 100 Robotic Simulation Jobs in Florida Indeed https://www.indeed.com › q-robotic-simulation-l-florid...
+								175 button About this result
+								176 text Browse 178 Robotic Simulation jobs in Florida
+								177 text . New jobs posted today. Apply now and find your next opportunity on Indeed.com.
+							178 container
+								179 link Value: google.com/goto, Description: 2330 Robotic simulation engineer jobs in United States Glassdoor https://www.glassdoor.com › Job › robotic-simulation-e...
+								180 button About this result
+								181 text $79K - $117K (Glassdoor est.) Easy Apply. 5–7 years of experience in industrial engineering, manufacturing engineering, facility design, systems engineering ...
+								182 link Description: Read more, Value: google.com/goto
+							183 container
+								184 heading People also ask, Value: 2
+									185 text People also ask
+								186 button (collapsed) What engineer can make $500,000 a year?, Secondary Actions: Expand
+									187 text What engineer can make $500,000 a year?
+								188 button (collapsed) Is robotics engineer a good career?, Secondary Actions: Expand
+									189 text Is robotics engineer a good career?
+								190 button (collapsed) Are simulation engineers in demand?, Secondary Actions: Expand
+									191 text Are simulation engineers in demand?
+								192 button (collapsed) Will AI replace robotic engineers?, Secondary Actions: Expand
+									193 text Will AI replace robotic engineers?
+							194 container
+								195 link Value: google.com/goto, Description: BECOME A SIMULATIONS ENGINEER If you are looking for a ... LinkedIn · Ricardo Tellez 200+ reactions · 2 years ago
+								196 button About this result
+								197 link Value: google.com/goto, Description: BECOME A SIMULATIONS ENGINEER If you are looking for a ... by Ricardo Tellez on LinkedIn. Play on LinkedIn. 0:46
+								198 text The simulations engineer is the engineer who takes charge of  developing, adapting, and MAINTAINING the simulations  that the engineering team ...
+					199 container
+						200 container
+							201 heading People also search for, Value: 2
+								202 text People also search for
+							203 link Description: Robotics simulation engineer career salary, Value: google.com/search
+							204 link Description: Entry level robotics simulation engineer career, Value: google.com/search
+							205 link Description: Robotics simulation engineer career remote, Value: google.com/search
+							206 link Description: Junior robotics simulation engineer career, Value: google.com/search
+						207 heading Page Navigation, Value: 1
+							208 text Page Navigation
+						209 text 1
+						210 link Description: Page 2, Value: google.com/search
+						211 link Description: Page 3, Value: google.com/search
+						212 link Description: Page 4, Value: google.com/search
+						213 link Description: Page 5, Value: google.com/search
+						214 link Description: Page 6, Value: google.com/search
+						215 link Description: Page 7, Value: google.com/search
+						216 link Description: Page 8, Value: google.com/search
+						217 link Description: Page 9, Value: google.com/search
+						218 link Description: Page 10, Value: google.com/search
+						219 heading Next, Value: 2
+							220 link Description: Next, Value: google.com/search, ID: pnnext
+			221 container sfooter
+				222 heading Footer Links, Value: 1
+					223 text Footer Links
+				224 container fbar
+					225 container
+						226 button Liberty City, Miami, FL  - Based on your past activity
+							227 container
+								228 text Liberty City, Miami, FL
+							229 container
+								230 text  -  Based on your past activity
+						231 text  - 
+						232 button Update location
+							233 text Update location
+					234 container fsl
+						235 link Description: Help, Value: support.google.com/websearch/
+						236 button Send feedback
+							237 text Send feedback
+						238 link Description: Privacy, Value: policies.google.com/privacy
+						239 link Description: Terms, Value: policies.google.com/terms
+
+The focused UI element is 1 AXWebArea robotics simulation engineer career - Google Search, URL: google.com/search

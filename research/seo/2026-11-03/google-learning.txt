@@ -1,0 +1,284 @@
+Browser tab: 15, Title: "robot learning engineer career - Google Search", URL: "https://www.google.com/search?q=robot+learning+engineer+career&hl=en&gl=us&jbr=sep:0".
+1 AXWebArea robot learning engineer career - Google Search, URL: google.com/search
+	2 container gsr
+		3 container
+			4 link Skip to main content
+				5 text Skip to main content
+			6 link Description: Accessibility help, Value: support.google.com/websearch/answer/181196
+		7 container searchform
+			8 container tsf
+				9 container
+					10 link Description: United States Midterm Elections 2026, Value: google.com/webhp
+					12 combo box (collapsed) Description: Search, Value: robot learning engineer career, ID: ti6dpd, Secondary Actions: Expand
+					13 button  Clear
+					14 button Search by voice
+					15 button Search by image
+			16 button Description: Settings, ID: og-te
+			17 button Share
+			18 button (collapsed) Description: Google apps, Secondary Actions: Expand
+			19 link Description: Sign in, Value: accounts.google.com/ServiceLogin
+		20 container cnt
+			21 container
+				22 container
+					23 content list
+						24 link Description: AI Mode, Value: google.com/search
+						25 link (disabled) All
+							26 text All
+						27 link Description: Jobs, Value: google.com/search
+						28 link Description: Images, Value: google.com/search
+						29 link Description: Videos, Value: google.com/search
+						30 link Description: Forums, Value: google.com/search
+						31 link Description: Shopping, Value: google.com/search
+						32 button (collapsed) More filters, Secondary Actions: Expand
+							33 container More filters
+								34 text More
+					35 button (collapsed) Tools, ID: hdtb-tls, Secondary Actions: Expand
+			36 content list
+				37 link Description: Add No degree, Value: google.com/search
+				38 link Description: Add Remote, Value: google.com/search
+				39 container axzqasjhF7zdwN4Pt8DSwQ8__22
+					40 button Job type
+						41 text Job type
+				42 container axzqasjhF7zdwN4Pt8DSwQ8__29
+					43 button Date posted
+						44 text Date posted
+			45 heading Search Results, Value: 1
+				46 text Search Results
+			47 container rcnt
+				48 container
+					49 heading Liberty City, Miami, Value: 2
+						50 text Liberty City, Miami
+					51 button Choose area
+					52 button How location is used
+				53 container Odp5De
+					54 container
+						55 container
+							56 heading AI Overview, Value: 2
+								57 text AI Overview
+							58 container
+								59 text A  Robot Learning Engineer builds artificial intelligence (AI) and machine learning systems that allow physical robots to perceive their environment, make decisions, and learn tasks through data rather than relying solely on hardcoded rules .
+								60 link Description: YouTube · Alex Sheppe, Value: google.com/goto
+								61 button YouTube · Alex Sheppe (+1) - Related results
+									62 text YouTube
+									63 text ·
+									64 text Alex Sheppe
+									65 text  +1
+							66 heading Core Responsibilities, Value: 3
+								67 text Core Responsibilities
+							68 content list
+								69 container
+									70 AXListMarker • 
+									71 text Train AI Models:  Develop and apply reinforcement learning, imitation learning, and vision-language-action (VLA) models for robot control and task execution.
+							72 container
+								73 content list
+									74 container
+										75 link Description: How to become a Roboticist, Robotics Engineer, or ML Engineer!, Video, watch on YouTube, Value: google.com/goto
+										76 text YouTube · Alex Sheppe
+										77 button Description: About this result, ID: snui-atr-axzqaoLVNf79p84PjIWlgQQ_ozp26c_12
+										78 text How to become a Roboticist, Robotics Engineer, or ML Engineer!
+										79 text Apr 24, 2024 —  Do you want to work in Robotics? Always wondered how to be a Roboticist? Fascinated by Machine Learning, Neural Networks, Computer...
+										80 button ID: vv-axzqaoLVNf79p84PjIWlgQQ_ozp26c_13, Description: How to become a Roboticist, Robotics Engineer, or ML Engineer! by Alex Sheppe on YouTube. Play on Google. - 14 minutes 26 seconds
+									81 container
+										82 link Description: Entry-Level Robot Learning Engineer, Value: google.com/goto
+										83 text WeAreDevelopers
+										84 button Description: About this result, ID: snui-atr-axzqaoLVNf79p84PjIWlgQQ_ozp26c_17
+										85 text Entry-Level Robot Learning Engineer
+										86 text Job description Join a small industrial robotics team applying machine learning to real-world robotic work cells. In this entry-le...
+						87 button (collapsed) Description: Show more AI Overview, Secondary Actions: Expand
+							88 text Show more
+				89 container center_col
+					90 container gevUs
+						91 container rso
+							92 container
+								93 heading Web results, Value: 2
+									94 text Web results
+								95 link Value: google.com/goto, Description: Robotics Engineer Jobs & Recruitment Harnham https://www.harnham.com › computer-vision-talent › ro...
+								96 button About this result
+								97 container
+									98 text Find top  robotics engineer jobs with Harnham . Specializing in recruitment for the robotics industry & for the best computer vision talent.
+							99 container
+								100 link Value: google.com/goto, Description: Entry-Level Robot Learning Engineer WeAreDevelopers https://www.wearedevelopers.com › jobs › ext › 35881...
+								101 button About this result
+								102 text Oct 4, 2026  —  A bachelor's or master's degree in 
+								103 text robotics
+								104 text , computer science, AI, machine 
+								105 text learning
+								106 text , or a related field, or equivalent practical experience.
+								107 link Description: Read more, Value: google.com/goto
+							108 container
+								109 link Description: Maven Robotics | Join Us Maven Robotics https://www.mavenrobotics.ai › join-us, Value: google.com/goto
+								110 button About this result
+								111 text We are seeking an exceptional Sr. Engineer to 
+								112 text lead the development of dexterous robot end-effectors
+								113 text . In this role you will: Own the full product development ...
+								114 link Description: Read more, Value: google.com/goto
+							115 container
+								116 heading Jobs, Value: 2
+									117 text Jobs
+								118 button Follow
+									119 text Follow
+								120 tab group
+									121 tab (selected, settable, boolean) Job postings, Value: 1
+Job postings
+									122 tab (selectable, settable, boolean) Saved jobs, Value: 0
+Saved jobs
+									123 tab (selectable, settable, boolean) Following, Value: 0
+Following
+								124 container 0y_gni7WhNAJE-A5AAAAAA==
+									125 pop up button Automation Engineer – Robotics & PLC HTC Global Services Michigan • via LinkedIn
+										126 text Automation Engineer – Robotics & PLC
+										127 text HTC Global Services
+										128 text Michigan • via LinkedIn
+									129 button Add Automation Engineer – Robotics & PLC to saves list
+									130 button Share
+									131 container Posted 19 hours ago
+									132 container Employment Type Full-time
+									133 text Dental insurance Paid time off Health insurance
+								134 container reZ48Es9gUAUWnszAAAAAA==
+									135 pop up button Robot Learning Engineer — Deploy AI on Outdoor Robots Gritt San Francisco, CA • via Jobrapido
+										136 text Robot Learning Engineer — Deploy AI on Outdoor Robots
+										137 text Gritt
+										138 text San Francisco, CA • via Jobrapido
+									139 button Add Robot Learning Engineer — Deploy AI on Outdoor Robots to saves list
+									140 button Share
+									141 container Posted 5 days ago
+									142 container Employment Type Full-time
+								143 container 16BwTuScPyCMTl9AAAAAAA==
+									144 pop up button Research Engineer - Robot Learning Applied Intuition Sunnyvale, CA • via Jobs
+										145 text Research Engineer - Robot Learning
+										146 text Applied Intuition
+										147 text Sunnyvale, CA • via Jobs
+									148 button Add Research Engineer - Robot Learning to saves list
+									149 button Share
+									150 container Salary $126K–$423K a year
+									151 container Employment Type Full-time
+									152 text Dental insurance Paid time off Health insurance
+								153 link Description: 54 more jobs, Value: google.com/search
+								154 button Feedback
+								155 link Description: Learn more, Value: support.google.com/websearch/
+							156 container
+								157 heading Discussions and forums, Value: 2
+									158 text Discussions and forums
+								159 container
+									160 container
+										161 link Description: Robot Learning Engineer Path Reddit ·  r/AskRobotics  ·  3 months ago, Value: google.com/goto
+										162 container
+											163 text  · 
+											164 button About this result
+										165 button (expanded) Secondary Actions: Collapse
+									166 content list
+										167 link Value: google.com/goto, Description: ... Robot Learning Engineer where I imagine the job being. Collect demonstrations -> Clean and label data -> Train policy -> Deploy to robot ...   More discussions on Robot Learning Engineer Path
+								168 container
+									169 link Value: google.com/goto, Description: Do Machine Learning Engineers work on robotics? Reddit ·  r/learnmachinelearning  ·  30+ comments  ·  2 years ago
+									170 container
+										171 text  · 
+										172 button About this result
+									173 button (collapsed) Secondary Actions: Expand
+								174 container
+									175 link Value: google.com/goto, Description: I'm interested in robots and machine learning AI. How can I make a career ... Quora ·  30+ answers  ·  4 years ago
+									176 container
+										177 text  · 
+										178 button About this result
+									179 button (collapsed) Secondary Actions: Expand
+								180 link Description: See more discussions, Value: google.com/search
+							181 container
+								182 heading Web results, Value: 2
+									183 text Web results
+								184 link Description: Machine Learning Engineer - Robot Perception Built In https://builtin.com › Maven Robotics › Jobs, Value: google.com/goto
+								185 button About this result
+								186 container
+									187 text We are looking to recruit an exceptional Machine Learning Engineer - Robot Perception to  design, implement, test, and deploy robot perception algorithms  that ...
+									188 link Description: Read more, Value: google.com/goto
+							189 container
+								190 link Description: Types of Careers in Robotics DoW STEM https://dowstem.us › careers › robotics, Value: google.com/goto
+								191 button About this result
+								192 text Types of Careers in Robotics. 
+								193 text Aerospace Engineer
+								194 text . Animatronics Engineer. Autonomous Systems Engineer. Electrical Engineer. Electronics Engineer. Flexible ...
+								195 link Description: Read more, Value: google.com/goto
+							196 container
+								197 link Value: google.com/goto, Description: How to Become a Robotics Engineer Nextbridge https://nextbridge.com › become-robotics-engineer-care...
+								198 button About this result
+								199 text Discover how to become a robotics engineer. 
+								200 text Learn about $150K+ salaries
+								201 text , required education paths, top hiring companies & essential skills for this ...
+							202 container
+								203 heading Videos, Value: 2
+									204 text Videos
+								205 button About this result
+								206 container
+									207 container ow15
+										208 container
+											209 link Description: Robotics Engineer Roadmap | How to get started in robotics? YouTube Felipe Tambasco Jun 25, 2026, Value: google.com/goto
+											210 button About this result
+										211 button Robotics Engineer Roadmap | How to get started in robotics? by Felipe Tambasco on YouTube. Play on Google. 12:06
+										212 button Become a robotics engineer by mastering Python, ROS, Arduino, and C++. Work on hands-on projects and competitive robotics.
+									213 container
+										214 link Description: How to become a Roboticist, Robotics Engineer, or ML Engineer! YouTube Alex Sheppe Apr 24, 2024, Value: google.com/goto
+										215 button About this result
+										216 button How to become a Roboticist, Robotics Engineer, or ML Engineer! by Alex Sheppe on YouTube. Play on Google. 14:26
+										217 button To become a robotics engineer, study computer science, electrical engineering, or mechanical engineering, often with a master's degree.
+									218 container
+										219 link Description: Robotics Engineer Career Path | Role, Skills, Scope, Salary ... YouTube Uplatz Mar 19, 2025, Value: google.com/goto
+										220 button About this result
+										221 button Robotics Engineer Career Path | Role, Skills, Scope, Salary ... by Uplatz on YouTube. Play on Google. 16:53
+										222 button Robotics engineers can earn up to $90,000/year (entry-level), $110,000/year (mid-level), and $150,000/year (senior-level).
+								223 link Description: View all videos, Value: google.com/search
+							224 container
+								225 heading People also ask, Value: 2
+									226 text People also ask
+								227 button (collapsed) How can I become a robotics engineer?, Secondary Actions: Expand
+									228 text How can I become a robotics engineer?
+								229 button (collapsed) Who are the Big 4 in robotics?, Secondary Actions: Expand
+									230 text Who are the Big 4 in robotics?
+								231 button (collapsed) What are the responsibilities of a robotic engineer?, Secondary Actions: Expand
+									232 text What are the responsibilities of a robotic engineer?
+								233 button (collapsed) What are some career opportunities in robotics?, Secondary Actions: Expand
+									234 text What are some career opportunities in robotics?
+					235 container
+						236 container
+							237 heading People also search for, Value: 2
+								238 text People also search for
+							239 link Description: Robot learning engineer career salary, Value: google.com/search
+							240 link Description: Robot learning engineer career remote, Value: google.com/search
+							241 link Description: Robot learning engineer career requirements, Value: google.com/search
+							242 link Description: Maven Robotics careers, Value: google.com/search
+							243 link Description: Weave Robotics careers, Value: google.com/search
+							244 link Description: Robotics Engineer, Value: google.com/search
+							245 link Description: Careers in robotics, Value: google.com/search
+							246 link Description: Robotics Engineer salary, Value: google.com/search
+						247 heading Page Navigation, Value: 1
+							248 text Page Navigation
+						249 text 1
+						250 link Description: Page 2, Value: google.com/search
+						251 link Description: Page 3, Value: google.com/search
+						252 link Description: Page 4, Value: google.com/search
+						253 link Description: Page 5, Value: google.com/search
+						254 link Description: Page 6, Value: google.com/search
+						255 link Description: Page 7, Value: google.com/search
+						256 link Description: Page 8, Value: google.com/search
+						257 link Description: Page 9, Value: google.com/search
+						258 link Description: Page 10, Value: google.com/search
+						259 heading Next, Value: 2
+							260 link Description: Next, Value: google.com/search, ID: pnnext
+			261 container sfooter
+				262 heading Footer Links, Value: 1
+					263 text Footer Links
+				264 container fbar
+					265 container
+						266 button Liberty City, Miami, FL  - From your IP address
+							267 container
+								268 text Liberty City, Miami, FL
+							269 container
+								270 text  -  From your IP address
+						271 text  - 
+						272 button Update location
+							273 text Update location
+					274 container fsl
+						275 link Description: Help, Value: support.google.com/websearch/
+						276 button Send feedback
+							277 text Send feedback
+						278 link Description: Privacy, Value: policies.google.com/privacy
+						279 link Description: Terms, Value: policies.google.com/terms
+
+The focused UI element is 1 AXWebArea robot learning engineer career - Google Search, URL: google.com/search

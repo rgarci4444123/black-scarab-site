@@ -4,7 +4,6 @@ import { Arrow } from './arrow';
 
 export function CareerFamilyCard({ family }: { family: CareerFamily }) {
   return <Link className="family-card" href={`/career-paths/${family.slug}`}>
-    <span className="card-number">{family.number}</span>
     <div className="card-content"><h2>{family.name}</h2><p>{family.shortDescription}</p></div>
     <span className="card-arrow"><Arrow /></span>
   </Link>;

@@ -1,0 +1,637 @@
+{
+  "roleId": "robot-learning-engineer",
+  "auditedAt": "2026-11-03",
+  "scope": "Evidence audit only; no guide drafted; existing 2026-11-02 snapshot, not newly scraped jobs.",
+  "snapshot": {
+    "date": "2026-11-02",
+    "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+    "manifestHash": "6b48026839dcafc9d68144cf3fbedf38889984ad96f667a21e058b4d25f26f14",
+    "sourceDirectory": "/Users/rodolfogarcia/Documents/ChatGPT/Black Scarab Career Paths/research/physical-ai/2026-11-02",
+    "compactSnapshotPath": "/research/physical-ai-careers-2026-11-02.json",
+    "cohortSha256": "2e0a48054caf7e0ab529c050aadc243d26a6bab2317a2bdb0237a3a19f13fc87"
+  },
+  "cohort": {
+    "postingCount": 57,
+    "employerCount": 25,
+    "roleReviewedCount": 2,
+    "machineScreenedCount": 55,
+    "recognizedQualificationSectionCount": 47,
+    "seniority": {
+      "unspecified-or-midcareer": 32,
+      "senior": 16,
+      "early-career": 1,
+      "technical-lead-unverified": 1,
+      "staff-principal": 7
+    },
+    "largestEmployerSharePercent": 14.04,
+    "coverageLevel": "broad-sample"
+  },
+  "employerCounts": {
+    "NVIDIA": 8,
+    "Applied Intuition": 7,
+    "Humanoid": 6,
+    "Agile Robots": 4,
+    "Waymo": 4,
+    "Zoox": 4,
+    "Bedrock Robotics": 2,
+    "FieldAI": 2,
+    "Figure": 2,
+    "Path Robotics": 2,
+    "Skild AI": 2,
+    "Agility Robotics": 1,
+    "ANYbotics": 1,
+    "Apptronik": 1,
+    "Collaborative Robotics": 1,
+    "Dyna Robotics": 1,
+    "Generalist": 1,
+    "GRAM": 1,
+    "Gritt": 1,
+    "May Mobility": 1,
+    "Nimble Robotics": 1,
+    "Nomagic": 1,
+    "Nuro": 1,
+    "Rhoda AI": 1,
+    "Sunday Robotics": 1
+  },
+  "skillCounts": [
+    {
+      "skillId": "reinforcement-learning",
+      "label": "Reinforcement learning",
+      "category": "machine-learning",
+      "denominator": 57,
+      "anyMention": 47,
+      "requiredOrOption": 23,
+      "preferredOnly": 9,
+      "contextOnly": 15,
+      "unobserved": 10,
+      "mentionPercent": 82.46,
+      "employersMentioning": 21,
+      "employerDenominator": 25,
+      "employerPresencePercent": 84.0,
+      "meanWithinEmployerMentionPercent": 77.0
+    },
+    {
+      "skillId": "python",
+      "label": "Python",
+      "category": "software",
+      "denominator": 57,
+      "anyMention": 46,
+      "requiredOrOption": 36,
+      "preferredOnly": 4,
+      "contextOnly": 6,
+      "unobserved": 11,
+      "mentionPercent": 80.7,
+      "employersMentioning": 21,
+      "employerDenominator": 25,
+      "employerPresencePercent": 84.0,
+      "meanWithinEmployerMentionPercent": 76.76
+    },
+    {
+      "skillId": "pytorch",
+      "label": "PyTorch",
+      "category": "machine-learning",
+      "denominator": 57,
+      "anyMention": 40,
+      "requiredOrOption": 30,
+      "preferredOnly": 4,
+      "contextOnly": 6,
+      "unobserved": 17,
+      "mentionPercent": 70.18,
+      "employersMentioning": 21,
+      "employerDenominator": 25,
+      "employerPresencePercent": 84.0,
+      "meanWithinEmployerMentionPercent": 73.76
+    },
+    {
+      "skillId": "imitation-learning",
+      "label": "Imitation learning / behavior cloning",
+      "category": "machine-learning",
+      "denominator": 57,
+      "anyMention": 32,
+      "requiredOrOption": 13,
+      "preferredOnly": 7,
+      "contextOnly": 12,
+      "unobserved": 25,
+      "mentionPercent": 56.14,
+      "employersMentioning": 18,
+      "employerDenominator": 25,
+      "employerPresencePercent": 72.0,
+      "meanWithinEmployerMentionPercent": 56.95
+    },
+    {
+      "skillId": "vla",
+      "label": "Vision-language-action models",
+      "category": "machine-learning",
+      "denominator": 57,
+      "anyMention": 28,
+      "requiredOrOption": 8,
+      "preferredOnly": 12,
+      "contextOnly": 8,
+      "unobserved": 29,
+      "mentionPercent": 49.12,
+      "employersMentioning": 15,
+      "employerDenominator": 25,
+      "employerPresencePercent": 60.0,
+      "meanWithinEmployerMentionPercent": 49.17
+    },
+    {
+      "skillId": "cpp",
+      "label": "C++",
+      "category": "software",
+      "denominator": 57,
+      "anyMention": 25,
+      "requiredOrOption": 21,
+      "preferredOnly": 4,
+      "contextOnly": 0,
+      "unobserved": 32,
+      "mentionPercent": 43.86,
+      "employersMentioning": 13,
+      "employerDenominator": 25,
+      "employerPresencePercent": 52.0,
+      "meanWithinEmployerMentionPercent": 38.67
+    },
+    {
+      "skillId": "jax",
+      "label": "JAX",
+      "category": "machine-learning",
+      "denominator": 57,
+      "anyMention": 20,
+      "requiredOrOption": 16,
+      "preferredOnly": 4,
+      "contextOnly": 0,
+      "unobserved": 37,
+      "mentionPercent": 35.09,
+      "employersMentioning": 12,
+      "employerDenominator": 25,
+      "employerPresencePercent": 48.0,
+      "meanWithinEmployerMentionPercent": 35.17
+    },
+    {
+      "skillId": "mujoco",
+      "label": "MuJoCo",
+      "category": "simulation",
+      "denominator": 57,
+      "anyMention": 17,
+      "requiredOrOption": 11,
+      "preferredOnly": 6,
+      "contextOnly": 0,
+      "unobserved": 40,
+      "mentionPercent": 29.82,
+      "employersMentioning": 9,
+      "employerDenominator": 25,
+      "employerPresencePercent": 36.0,
+      "meanWithinEmployerMentionPercent": 27.74
+    },
+    {
+      "skillId": "vlm",
+      "label": "Vision-language models",
+      "category": "machine-learning",
+      "denominator": 57,
+      "anyMention": 16,
+      "requiredOrOption": 7,
+      "preferredOnly": 5,
+      "contextOnly": 4,
+      "unobserved": 41,
+      "mentionPercent": 28.07,
+      "employersMentioning": 8,
+      "employerDenominator": 25,
+      "employerPresencePercent": 32.0,
+      "meanWithinEmployerMentionPercent": 24.83
+    },
+    {
+      "skillId": "sim-to-real",
+      "label": "Sim-to-real",
+      "category": "simulation",
+      "denominator": 57,
+      "anyMention": 15,
+      "requiredOrOption": 5,
+      "preferredOnly": 8,
+      "contextOnly": 2,
+      "unobserved": 42,
+      "mentionPercent": 26.32,
+      "employersMentioning": 9,
+      "employerDenominator": 25,
+      "employerPresencePercent": 36.0,
+      "meanWithinEmployerMentionPercent": 25.57
+    },
+    {
+      "skillId": "isaac-sim",
+      "label": "Isaac Sim",
+      "category": "simulation",
+      "denominator": 57,
+      "anyMention": 12,
+      "requiredOrOption": 7,
+      "preferredOnly": 5,
+      "contextOnly": 0,
+      "unobserved": 45,
+      "mentionPercent": 21.05,
+      "employersMentioning": 6,
+      "employerDenominator": 25,
+      "employerPresencePercent": 24.0,
+      "meanWithinEmployerMentionPercent": 16.5
+    },
+    {
+      "skillId": "tensorflow",
+      "label": "TensorFlow",
+      "category": "machine-learning",
+      "denominator": 57,
+      "anyMention": 12,
+      "requiredOrOption": 9,
+      "preferredOnly": 3,
+      "contextOnly": 0,
+      "unobserved": 45,
+      "mentionPercent": 21.05,
+      "employersMentioning": 7,
+      "employerDenominator": 25,
+      "employerPresencePercent": 28.0,
+      "meanWithinEmployerMentionPercent": 17.5
+    }
+  ],
+  "skillInterpretation": {
+    "denominator": 57,
+    "unit": "Unique postings, not people, vacancies filled or employer hiring volume. Employer presence uses 25 employers.",
+    "wordingClasses": "requiredOrOption groups a required statement with an allowed alternative; preferredOnly means no stronger classified mention; contextOnly means mentioned outside classified qualifications; unobserved means no matched mention.",
+    "method": "Machine-coded mentions. These are snapshot frequencies, not labor-market prevalence or proof of proficiency requirements. Full-source spot checks above preserve essential/beneficial/preferred and OR clauses.",
+    "priorityObservation": "Python (36 required-or-option) and PyTorch (30) have stronger classified-qualification counts than RL (23), despite RL having more total mentions (47). RL/IL/VLA methods appear in multiple wording classes."
+  },
+  "sourceIntegrity": {
+    "sourceTextHashesMatch": 57,
+    "sourceTextHashesChecked": 57,
+    "method": "Computed SHA-256 of each stored sourceText string and compared against sourceTextSha256."
+  },
+  "fullSourceSpotChecks": [
+    {
+      "id": "agile-robots:greenhouse:4964863101",
+      "employer": "Agile Robots",
+      "title": "Robot Learning Engineer (m/f/d) VLA & Foundation Models",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4964863101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "4b992202cdde4f0553cad82f6cbcd435ac8878f2ab011a35fb3107d9432c477a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reviewStatus": "machine-screened",
+      "responsibilities": "Develop vision/language-conditioned manipulation policies; collect and validate multimodal demonstrations; define action/control interfaces; diagnose distribution-shift, contact, latency and sensing failures; integrate runtime monitoring and fallbacks.",
+      "education": "A relevant degree OR an equivalent combination of research and professional experience in robot learning/embodied AI is essential.",
+      "skills": "Python and PyTorch implementation beyond notebooks is essential. RL and simulation/sim-to-real are listed as beneficial, while practical learned policies and robot integration are essential.",
+      "reviewMethod": "Read stored full sourceText in context, not only extracted clause arrays"
+    },
+    {
+      "id": "agile-robots:greenhouse:5006075101",
+      "employer": "Agile Robots",
+      "title": "Machine Learning Engineer (m/f/d) VLA Training & Evaluation",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/5006075101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "ed41d27d0fd4e64d2779c1a05c2835ae8b33290618c79fe518e3607aa0efd47b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reviewStatus": "machine-screened",
+      "responsibilities": "Build reusable VLA fine-tuning and evaluation workflows, generalization benchmarks, experiment/checkpoint tracking and ablations; test whether more realistic simulation improves hardware outcomes.",
+      "education": "Relevant degree, with Master’s/PhD described as typical, OR equivalent formal training plus demonstrated deep-learning training experience.",
+      "skills": "PyTorch OR JAX training internals; reproducible evaluations; imitation-policy understanding. Real-robot evaluation and sim-to-real familiarity are beneficial.",
+      "reviewMethod": "Read stored full sourceText in context, not only extracted clause arrays"
+    },
+    {
+      "id": "anybotics:lever:63f0c6db-0a1f-4a4a-87dd-9a43c9c2bdd2",
+      "employer": "ANYbotics",
+      "title": "Senior Reinforcement Learning Engineer",
+      "locations": [
+        "Zurich, Switzerland"
+      ],
+      "url": "https://jobs.lever.co/anybotics/63f0c6db-0a1f-4a4a-87dd-9a43c9c2bdd2",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "d5cb00cecb4c588e70f2e4bd893918db7c5ad6adc606c52c369f04badd4874eb",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anybotics.json",
+      "rawSourceFileSha256": "710cdd1101d8008347609066088afd3711795b1df2241e3c4ae8461d12d70543",
+      "reviewStatus": "machine-screened",
+      "responsibilities": "Own motion-policy training infrastructure and transfer into industrial legged-robot deployment; improve robustness from locomotion field failures and maintain the Python/C++ stack.",
+      "education": "PhD with RL focus OR equivalent RL research-and-robotics-deployment record; alternatively a relevant Master’s from a top-tier technical university plus 5+ professional years. Preserve the alternatives.",
+      "skills": "Robot-control fundamentals, Python/PyTorch, working C++, simulation, domain randomization and reward shaping; shipping and maintaining field models.",
+      "reviewMethod": "Read stored full sourceText in context, not only extracted clause arrays"
+    },
+    {
+      "id": "applied-intuition:ashby:45fc41cd-8280-4010-ba1f-def6114b3e39",
+      "employer": "Applied Intuition",
+      "title": "Research Engineer - New Grad (2027)",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/45fc41cd-8280-4010-ba1f-def6114b3e39",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "f1f4d6f986276e358f3e2438f620f2c30130a00c004aea06364c3f0285423016",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewStatus": "machine-screened",
+      "responsibilities": "Early-career research on end-to-end autonomy and robotic generalists, with deployment and publication collaboration.",
+      "education": "Full source specifies MSc/PhD in ML/computer vision with autonomy/robotics applications or closely related field, graduating Dec 2026 or Summer 2027. Also specifies 1+ year of experience in any field OR equivalent education and experience. Both automated clause arrays are empty.",
+      "skills": "Hands-on experience in at least one listed topic group, including world/action/foundation models, VLA post-training/RL, or physics-aware reconstruction/simulation. Not all listed topics are simultaneous requirements.",
+      "reviewMethod": "Read stored full sourceText in context, not only extracted clause arrays"
+    },
+    {
+      "id": "applied-intuition:ashby:ef7fb9ed-e254-4b90-aef2-efa9c30e7cd8",
+      "employer": "Applied Intuition",
+      "title": "Robot Learning Engineer - Manipulation",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/ef7fb9ed-e254-4b90-aef2-efa9c30e7cd8",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "4fe0c3e2a844ea92b31b7da3ad488cc2d19f46b1ac69d008df5dee00a7421276",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewStatus": "machine-screened",
+      "responsibilities": "Own manipulation task definition, demonstrations, data curation, policy fine-tuning, on-robot evaluation and edge deployment for industrial work; measure success rate, cycle time, interventions and time/data to target.",
+      "education": "Source lists Bachelor’s in CS/Software Engineering or equivalent and 1+ professional year. Intro explicitly values demonstrated real-system work including equivalent practical experience over degree/title. Both automated clause arrays are empty.",
+      "skills": "Deployed and evaluated a learned manipulation policy on a physical robot; Python/PyTorch; imitation learning and at least one modern policy family; kinematics/frames/calibration. RL post-training is nice-to-have.",
+      "reviewMethod": "Read stored full sourceText in context, not only extracted clause arrays"
+    },
+    {
+      "id": "dyna:ashby:357b1b23-0712-489e-b336-1462f186cba7",
+      "employer": "Dyna Robotics",
+      "title": "Research Scientist",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/357b1b23-0712-489e-b336-1462f186cba7",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "1d45778de8891ccd45344f9c9ca1f6cca2488ffe2021818d4e5dc7809448b300",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "reviewStatus": "machine-screened",
+      "responsibilities": "Research-to-production robot learning for high-DOF manipulation, multimodal foundation models and world modeling; evaluate on physical fleet in customer environments.",
+      "education": "PhD preferred OR Master’s in CS/Robotics with significant publication record, plus 5+ years of AI/robotics research including physical deployment. Do not call PhD mandatory.",
+      "skills": "Python/PyTorch OR JAX, VLA/video/large-transformer experience; familiarity with MuJoCo/Isaac/Drake. Education extractor also falsely includes technical-stack and experience bullets.",
+      "reviewMethod": "Read stored full sourceText in context, not only extracted clause arrays"
+    },
+    {
+      "id": "fieldai:lever:f53cce40-b227-4a0d-94c5-ef038f2c6341",
+      "employer": "FieldAI",
+      "title": "Senior Research Engineer, Humanoid Manipulation",
+      "locations": [
+        "Boston, MA"
+      ],
+      "url": "https://jobs.lever.co/field-ai/f53cce40-b227-4a0d-94c5-ef038f2c6341",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "fc316a1e9add0ad12c1c6a3507a41c6e94ed40b2033cd5155fc5849e41491c20",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reviewStatus": "machine-screened",
+      "responsibilities": "Develop and evaluate humanoid manipulation and locomotion-plus-manipulation models; integrate data and training systems with hardware tests, deployment and field feedback.",
+      "education": "Bachelor’s, Master’s OR PhD in a related field; 2+ years of manipulation/robot-learning experience in academia OR industry.",
+      "skills": "Kinematics/dynamics/control; RL and imitation learning; PyTorch; reproducible training/evaluation; real-hardware evidence. Publications OR open-source contributions are extras, not a mandatory PhD/publication requirement.",
+      "reviewMethod": "Read stored full sourceText in context, not only extracted clause arrays"
+    },
+    {
+      "id": "figure:greenhouse:4671442006",
+      "employer": "Figure",
+      "title": "Reinforcement Learning Engineer, Whole Body Control",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4671442006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "9efa43b197e8e8c125451c18ca44562e29439a1f1b0af8bb150e716c9cefe3ed",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewStatus": "role-reviewed",
+      "responsibilities": "Train, deploy and evaluate humanoid whole-body RL, choose observation/action/model spaces, close sim-to-real gaps and harden the control stack.",
+      "education": "No explicit degree credential in this saved source. Requirements emphasize dynamics/control, robotics RL and leading complex controls work; do not infer degree-free entry level.",
+      "skills": "PPO/SAC, hyperparameter and cost tuning, randomization, curriculum and reward shaping. Behavior cloning is a bonus. The salary sentence was incorrectly classified as an experience clause.",
+      "reviewMethod": "Read stored full sourceText in context, not only extracted clause arrays"
+    },
+    {
+      "id": "gritt:ashby:22718c8d-02d4-4507-9e67-fccddeb3fbb1",
+      "employer": "Gritt",
+      "title": "Robot Learning Engineer",
+      "locations": [
+        "South San Francisco"
+      ],
+      "url": "https://jobs.ashbyhq.com/gritt/22718c8d-02d4-4507-9e67-fccddeb3fbb1",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "0e4698573167a6c987e345f09ef4716f70d74b6584e266a4ed5d5069d128bc0f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gritt.json",
+      "rawSourceFileSha256": "20a567222b34d9a1d87ce7926914d9639eeb0e48f6b65ed844f4e8c2bcd14548",
+      "reviewStatus": "machine-screened",
+      "responsibilities": "Develop manipulation/navigation policies for outdoor construction robotics, including pre/post-training, multimodal data and real/sim validation pipelines.",
+      "education": "Relevant MS/PhD OR equivalent experience; 4+ hands-on years in robotics AI. AI expertise may be evidenced by industry experience OR publication record.",
+      "reviewMethod": "Read stored full sourceText in context, not only extracted clause arrays"
+    },
+    {
+      "id": "humanoid:ashby:0374a4ab-3cfe-4bd8-aef7-bc1edc87621a",
+      "employer": "Humanoid",
+      "title": "Robot Learning Engineer",
+      "locations": [
+        "UK, London"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/0374a4ab-3cfe-4bd8-aef7-bc1edc87621a",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "6bf9a6cb9ec9ca57d96a2a62fb5f9d9701cd13c7dab9de5f39d551c3a55a96ff",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reviewStatus": "machine-screened",
+      "responsibilities": "Post-train manipulation policies using behavior cloning and RL; improve collected data; collaborate on simulation/reward quality, teleoperation/control and hardware feedback.",
+      "education": "No explicit degree credential in saved source; asks for 3+ years working with robots in industry OR research with shipped artifacts. Publications OR equivalent open-source contributions are nice-to-have.",
+      "skills": "Real-robot and applied-DL capability; data curation, fine-tuning, failure hypotheses; PyTorch OR JAX and maintainable research code.",
+      "reviewMethod": "Read stored full sourceText in context, not only extracted clause arrays"
+    },
+    {
+      "id": "path-robotics:greenhouse:8116143002",
+      "employer": "Path Robotics",
+      "title": "Machine Learning Engineer, Robot Learning",
+      "locations": [
+        "Columbus, Ohio",
+        "Columbus, Ohio, United States"
+      ],
+      "url": "https://boards.greenhouse.io/pathrobotics/jobs/8116143002?gh_jid=8116143002",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "31189c28f233a30e8f711bbb70d8e58c84139116116a2a858a401474d96d0ede",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/path-robotics.json",
+      "rawSourceFileSha256": "dda49bbc68095b57d6027516973c117de7d1e049b6393bd61747a752e35d13e2",
+      "reviewStatus": "machine-screened",
+      "responsibilities": "Deploy BC/RL/diffusion and VLA models into industrial robotic cells, spanning data collection, fleet/continuous learning and robot integration.",
+      "education": "Relevant PhD OR Master’s plus proven top-conference publication record in qualifications. This posting supplies a more research-credentialed path than the practical-equivalence examples.",
+      "reviewMethod": "Read stored full sourceText in context, not only extracted clause arrays"
+    },
+    {
+      "id": "skild:greenhouse:4125333008",
+      "employer": "Skild AI",
+      "title": "Machine Learning Engineer, Reinforcement Learning",
+      "locations": [
+        "Pittsburgh, San Mateo",
+        "San Mateo, Pittsburgh"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/4125333008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "5e42cef2a4f5a963b161435001f85c5ade562cf2f07f478754f1535771b6d893",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reviewStatus": "role-reviewed",
+      "responsibilities": "Implement RL methods, conduct training experiments and real-world tests, and integrate learned models with inference/application/deployment engineers.",
+      "education": "Degree (BS/MS/higher) OR equivalent practical experience appears under Preferred Qualifications, not a separately labeled mandatory qualifications section.",
+      "skills": "Python/C++ or similar and at least one deep-learning library; RL and physics simulation. Avoid turning alternative language/library lists into simultaneous prerequisites.",
+      "reviewMethod": "Read stored full sourceText in context, not only extracted clause arrays"
+    }
+  ],
+  "salaryObservations": [
+    {
+      "id": "applied-intuition:ashby:45fc41cd-8280-4010-ba1f-def6114b3e39",
+      "employer": "Applied Intuition",
+      "title": "Research Engineer - New Grad (2027)",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/45fc41cd-8280-4010-ba1f-def6114b3e39",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "f1f4d6f986276e358f3e2438f620f2c30130a00c004aea06364c3f0285423016",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewStatus": "machine-screened",
+      "source": "official-ats-structured",
+      "minimum": 140000,
+      "maximum": 200000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "locationScope": [
+        "Sunnyvale"
+      ],
+      "snapshotUrl": "https://jobs.ashbyhq.com/applied/45fc41cd-8280-4010-ba1f-def6114b3e39",
+      "snapshotUrlMeaning": "Employer posting URL recorded on 2026-11-02; this is not a claim that the mutable live page is unchanged.",
+      "compactSnapshotPath": "/research/physical-ai-careers-2026-11-02.json",
+      "basisDetail": "Official ATS Salary component for 1 YEAR; equity offered separately."
+    },
+    {
+      "id": "dyna:ashby:357b1b23-0712-489e-b336-1462f186cba7",
+      "employer": "Dyna Robotics",
+      "title": "Research Scientist",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/357b1b23-0712-489e-b336-1462f186cba7",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "1d45778de8891ccd45344f9c9ca1f6cca2488ffe2021818d4e5dc7809448b300",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "reviewStatus": "machine-screened",
+      "source": "official-ats-structured",
+      "minimum": 200000,
+      "maximum": 400000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "locationScope": [
+        "Redwood City, CA"
+      ],
+      "snapshotUrl": "https://jobs.ashbyhq.com/dyna-robotics/357b1b23-0712-489e-b336-1462f186cba7",
+      "snapshotUrlMeaning": "Employer posting URL recorded on 2026-11-02; this is not a claim that the mutable live page is unchanged.",
+      "compactSnapshotPath": "/research/physical-ai-careers-2026-11-02.json",
+      "basisDetail": "Official ATS Salary component for 1 YEAR; equity offered separately."
+    },
+    {
+      "id": "fieldai:lever:f53cce40-b227-4a0d-94c5-ef038f2c6341",
+      "employer": "FieldAI",
+      "title": "Senior Research Engineer, Humanoid Manipulation",
+      "locations": [
+        "Boston, MA"
+      ],
+      "url": "https://jobs.lever.co/field-ai/f53cce40-b227-4a0d-94c5-ef038f2c6341",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "fc316a1e9add0ad12c1c6a3507a41c6e94ed40b2033cd5155fc5849e41491c20",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reviewStatus": "machine-screened",
+      "source": "official-ats-structured",
+      "minimum": 150000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "locationScope": [
+        "Boston, MA"
+      ],
+      "snapshotUrl": "https://jobs.lever.co/field-ai/f53cce40-b227-4a0d-94c5-ef038f2c6341",
+      "snapshotUrlMeaning": "Employer posting URL recorded on 2026-11-02; this is not a claim that the mutable live page is unchanged.",
+      "compactSnapshotPath": "/research/physical-ai-careers-2026-11-02.json",
+      "basisDetail": "Official Lever salaryRange: USD, per-year-salary. No additional base/bonus modifier in saved body."
+    }
+  ],
+  "salaryLimits": "Three advertised annual USD salary observations tied to named roles, locations and saved source hashes. No aggregate, median, market average or expected offer implied. Equity does not belong in the cash ranges.",
+  "educationSynthesis": "There is no universal PhD requirement in this cohort’s spot checks. Some applied roles accept a related bachelor’s or practical equivalence; some research roles specify MS/PhD and publications, with PhD sometimes preferred. Equivalent experience is conditional on the posting. A portfolio cannot be claimed to replace a credential where that employer does not offer the alternative.",
+  "methodComparison": {
+    "imitationLearning": "Learn actions from demonstrations; the LeRobot tutorial supplies a concrete collect/train/evaluate workflow.",
+    "reinforcementLearning": "Learn a policy from interaction and reward; the Reacher project makes observation, action, reward, training and evaluation explicit.",
+    "policyBoundary": "A policy produces actions. The saved jobs also demand the surrounding data, calibration, timing, control interface, evaluation and deployment work.",
+    "vlaBoundary": "Vision-language-action models are one policy family within robot learning, not a universal prerequisite or distinct job title in this guide."
+  },
+  "learningReferences": [
+    {
+      "url": "https://spinningup.openai.com/en/latest/spinningup/rl_intro.html",
+      "title": "Spinning Up: Key Concepts in RL",
+      "access": "read",
+      "supports": "Policy maps observations/states to actions; RL learns through interaction to maximize cumulative reward; observation, action, trajectory and value terminology.",
+      "use": "Conceptual foundation, not a claim that this older package is the preferred current installation."
+    },
+    {
+      "url": "https://gymnasium.farama.org/environments/mujoco/reacher/",
+      "title": "Gymnasium Reacher",
+      "access": "read",
+      "supports": "Reacher-v5 is a two-joint arm with two continuous joint-torque actions, 10-element state observation, distance and action-effort reward, 50-step default horizon.",
+      "caution": "Page has an internally inconsistent prose dt expression; avoid repeating it."
+    },
+    {
+      "url": "https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html",
+      "title": "Stable Baselines3: RL Tips and Tricks",
+      "access": "read",
+      "supports": "Use quantitative experiments, multiple runs and a separate test environment; evaluate across episodes; check wrappers and time-limit handling. SAC handles continuous actions; PPO supports parallelized continuous-control training.",
+      "use": "Evaluation method and bounded baseline choice."
+    },
+    {
+      "url": "https://mujoco.readthedocs.io/en/stable/overview.html",
+      "title": "MuJoCo Overview",
+      "access": "read",
+      "supports": "General-purpose articulated/contact physics engine, freely available and open source, with Python bindings and CPU simulation.",
+      "use": "No robot purchase or simulator license fee required for the proposed simulated arm project; no runtime or cloud-cost promise."
+    },
+    {
+      "url": "https://arxiv.org/abs/1703.06907",
+      "title": "Tobin et al., Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World (2017)",
+      "access": "read",
+      "supports": "Primary research example of randomized simulation appearance for real-world object localization and downstream grasping.",
+      "caution": "The paper studies visual transfer; do not treat it as a guarantee of robust physical transfer for an unrelated policy."
+    },
+    {
+      "url": "https://huggingface.co/docs/lerobot/main/en/il_sim",
+      "title": "LeRobot: Imitation Learning in Sim",
+      "access": "read",
+      "supports": "MuJoCo gym-hil demonstration recording, keyboard PandaPickCubeKeyboard-v0 option, LeRobotDataset, ACT training and simulated policy evaluation. Collection can use CPU/MPS; training example describes CUDA with MPS alternative.",
+      "caution": "Main documentation requires source installation; runtime depends on compute, and tutorial mentions hours of training. Do not promise free cloud availability or quick laptop ACT training."
+    }
+  ],
+  "accessIssues": [
+    {
+      "url": "https://huggingface.co/docs/lerobot/il_sim",
+      "result": "Default-version page is a missing-page stub for v0.6.1; followed its link to the main/en/il_sim tutorial and read it successfully."
+    }
+  ],
+  "portfolioProposal": {
+    "status": "Proposed scoped learning artifact; no training run or performance result asserted.",
+    "primary": "Gymnasium Reacher-v5 with state observations, a small policy and Stable Baselines3 SAC or PPO; start with random-policy baseline, document reward and action limits, then train under a declared time/compute budget.",
+    "evaluation": "Separate train/evaluation seeds and target positions; multiple training seeds; episode return plus fingertip-to-target distance and a declared distance threshold for success. Threshold is project-defined, not a built-in industry metric. Keep reward/wrapper settings fixed for baseline comparison.",
+    "experiment": "Compare original dynamics to one documented change in actuator strength or link mass using a custom MuJoCo XML model; report where return and goal error degrade. An optional next ablation trains with randomized parameters and retests the same held-out variants.",
+    "deliverables": [
+      "Reproducible environment/package versions and configuration",
+      "Saved checkpoint, training budget and learning curves",
+      "Evaluation table across seeds/conditions with baseline",
+      "Short success and failure videos",
+      "Failure notes connecting changed dynamics to observed errors"
+    ],
+    "limits": "No hardware purchase needed; simulation robustness does not demonstrate sim-to-real success or physical deployment skill. Runtime is unmeasured; no fixed cost or duration claim.",
+    "imitationExtension": "If compute permits, use the verified LeRobot MuJoCo keyboard cube-picking tutorial to record demonstrations, train ACT and evaluate on held-out initial conditions. Keep demonstration count and training budget explicit. This is a separate scoped extension rather than mandatory VLA training."
+  }
+}

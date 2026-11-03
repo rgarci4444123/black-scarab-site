@@ -1,0 +1,1170 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "reviewedAt": "2026-11-03",
+  "aggregatePath": "/research/physical-ai-careers-2026-11-02.json",
+  "aggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "rawArchive": {
+    "location": "Existing Black Scarab Intelligence research archive; not copied into the website",
+    "relativeRoot": "research/physical-ai/2026-11-02",
+    "manifestHash": "6b48026839dcafc9d68144cf3fbedf38889984ad96f667a21e058b4d25f26f14",
+    "normalizedRecords": "postings.jsonl",
+    "skillEvidence": "skill-evidence.jsonl",
+    "cohorts": "cohorts/{roleId}.json"
+  },
+  "interpretation": "Selected full-source reviews and pay observations. Original role assignments, raw records and aggregate counts remain unchanged. Qualifications are contextual paraphrases, not automatic degree-frequency statistics.",
+  "roles": {
+    "robot-learning-engineer": {
+      "recordIds": [
+        "agile-robots:greenhouse:4964863101",
+        "agile-robots:greenhouse:5006075101",
+        "anybotics:lever:63f0c6db-0a1f-4a4a-87dd-9a43c9c2bdd2",
+        "applied-intuition:ashby:45fc41cd-8280-4010-ba1f-def6114b3e39",
+        "applied-intuition:ashby:ef7fb9ed-e254-4b90-aef2-efa9c30e7cd8",
+        "dyna:ashby:357b1b23-0712-489e-b336-1462f186cba7",
+        "fieldai:lever:f53cce40-b227-4a0d-94c5-ef038f2c6341",
+        "figure:greenhouse:4671442006",
+        "gritt:ashby:22718c8d-02d4-4507-9e67-fccddeb3fbb1",
+        "humanoid:ashby:0374a4ab-3cfe-4bd8-aef7-bc1edc87621a",
+        "path-robotics:greenhouse:8116143002",
+        "skild:greenhouse:4125333008"
+      ],
+      "auditPath": "research/career-guides/robot-learning-engineer/evidence-audit.json",
+      "compensation": [
+        {
+          "employer": "Applied Intuition",
+          "title": "Research Engineer - New Grad (2027)",
+          "minimum": 140000,
+          "maximum": 200000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/45fc41cd-8280-4010-ba1f-def6114b3e39",
+          "location": "Sunnyvale",
+          "recordId": "applied-intuition:ashby:45fc41cd-8280-4010-ba1f-def6114b3e39",
+          "detail": "Official ATS Salary component for 1 YEAR; equity offered separately."
+        },
+        {
+          "employer": "Dyna Robotics",
+          "title": "Research Scientist",
+          "minimum": 200000,
+          "maximum": 400000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/dyna-robotics/357b1b23-0712-489e-b336-1462f186cba7",
+          "location": "Redwood City, CA",
+          "recordId": "dyna:ashby:357b1b23-0712-489e-b336-1462f186cba7",
+          "detail": "Official ATS Salary component for 1 YEAR; equity offered separately."
+        },
+        {
+          "employer": "FieldAI",
+          "title": "Senior Research Engineer, Humanoid Manipulation",
+          "minimum": 150000,
+          "maximum": 300000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/field-ai/f53cce40-b227-4a0d-94c5-ef038f2c6341",
+          "location": "Boston, MA",
+          "recordId": "fieldai:lever:f53cce40-b227-4a0d-94c5-ef038f2c6341",
+          "detail": "Official Lever salaryRange: USD, per-year-salary. No additional base/bonus modifier in saved body."
+        }
+      ],
+      "cohortSummaryPath": "/research/physical-ai-careers-2026-11-02.json#role=robot-learning-engineer",
+      "skillPresentation": "qualified-automatic-mentions",
+      "scopeNote": "A normalized robot-learning cohort, including research and deployment roles with different credentials; not 57 identical job titles."
+    },
+    "simulation-engineer": {
+      "recordIds": [
+        "one-x:ashby:bd7452e9-1f5a-4e49-b468-2ad98c20e2c3",
+        "shield-ai:lever:71a4617f-c917-4536-bbf1-8d11d04d8cba",
+        "dyna:ashby:942cd530-b2b7-4141-8aaa-d844175e26ac",
+        "skild:greenhouse:4091609008",
+        "applied-intuition:ashby:47432b51-af09-4435-993d-f0e692c0f6e8",
+        "nvidia:workday:JR2023397",
+        "waymo:greenhouse:6499165",
+        "boston-dynamics:workday:R3013",
+        "nvidia:workday:JR2019679",
+        "nvidia:workday:JR2017744",
+        "zoox:lever:fd2dfb61-b04c-4489-85ee-f55389c11126"
+      ],
+      "auditPath": "research/career-guides/simulation-engineer/evidence-audit.json",
+      "compensation": [
+        {
+          "employer": "Shield AI",
+          "title": "Engineer I, Simulation Framework (R6203)",
+          "location": "San Diego, California, Washington, D.C.",
+          "minimum": 79000,
+          "maximum": 110000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised annual salary; plus bonus, benefits and equity",
+          "url": "https://jobs.lever.co/shieldai/71a4617f-c917-4536-bbf1-8d11d04d8cba",
+          "recordId": "shield-ai:lever:71a4617f-c917-4536-bbf1-8d11d04d8cba"
+        },
+        {
+          "employer": "1X",
+          "title": "Simulation Engineer - Physics Modeling",
+          "location": "San Carlos, CA",
+          "minimum": 200000,
+          "maximum": 300000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised salary range plus equity",
+          "url": "https://jobs.ashbyhq.com/1x/bd7452e9-1f5a-4e49-b468-2ad98c20e2c3",
+          "recordId": "one-x:ashby:bd7452e9-1f5a-4e49-b468-2ad98c20e2c3"
+        }
+      ],
+      "cohortSummaryPath": "/research/physical-ai-careers-2026-11-02.json#role=simulation-engineer",
+      "skillPresentation": "qualitative-source-comparison",
+      "scopeNote": "Broad automatic simulation cohort includes circuit/CPU simulation and adjacent V&V. No pure robotics-simulation prevalence or salary distribution is inferred."
+    },
+    "systems-integration-engineer": {
+      "recordIds": [
+        "agile-robots:greenhouse:4964789101",
+        "standard-bots:ashby:0f10edc9-c87b-4c9e-b0ab-f6cc5be6af91",
+        "intrinsic:greenhouse:6015988004",
+        "nimble:greenhouse:4398427009",
+        "skild:greenhouse:5228768008",
+        "agility:greenhouse:6238079004",
+        "gatik:greenhouse:4661964006",
+        "bedrock:ashby:9f499006-5789-4d84-8b11-cff85ee0c25e",
+        "formic:greenhouse:4710422006",
+        "shield-ai:lever:ac228821-b2f8-4155-a119-b05e16ebaefe"
+      ],
+      "auditPath": "research/career-guides/systems-integration-engineer/evidence-audit.json",
+      "compensation": [
+        {
+          "recordId": "standard-bots:ashby:0f10edc9-c87b-4c9e-b0ab-f6cc5be6af91",
+          "minimum": 150000,
+          "maximum": 200000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "Salary component, with base salary described separately from equity and benefits; official ATS structured interval 1 YEAR.",
+          "location": "US West Coast remote; West Coast residence required, California preferred.",
+          "caveat": "Senior title; experience and seniority affect offer.",
+          "employer": "Standard Bots",
+          "title": "Senior Applications Engineer (West Coast)",
+          "url": "https://jobs.ashbyhq.com/standardbots/0f10edc9-c87b-4c9e-b0ab-f6cc5be6af91"
+        },
+        {
+          "recordId": "nimble:greenhouse:4398427009",
+          "minimum": 160000,
+          "maximum": 190000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "Full posting explicitly states expected starting pay per year; cash compensation, equity additional.",
+          "location": "San Francisco, California, United States",
+          "caveat": "Senior title; source-specific starting pay, individualized factors. Structured compensation array is empty, so derive from full posting.",
+          "employer": "Nimble Robotics",
+          "title": "Senior Systems Integration Engineer",
+          "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4398427009"
+        }
+      ],
+      "cohortSummaryPath": "/research/physical-ai-careers-2026-11-02.json#role=systems-integration-engineer",
+      "skillPresentation": "qualitative-source-comparison",
+      "scopeNote": "Broad systems-integration cohort includes industrial applications, AV deployment, internal bring-up, pre-sales and a training-product false positive. No industrial-only skill prevalence is inferred."
+    },
+    "mechanical-engineer": {
+      "recordIds": [
+        "ambirobotics:lever:3b1d169e-5302-488e-b187-095aa364e60f",
+        "applied-intuition:ashby:6e57a97e-62bb-46fb-92ec-dd12831fd6f9",
+        "apptronik:greenhouse:5766164004",
+        "one-x:ashby:d6c59043-7a78-48ba-8f35-6d47b987a871"
+      ],
+      "auditPath": "lib/career-paths/mechanical-engineer-guide.ts",
+      "compensation": [
+        {
+          "employer": "1X",
+          "title": "Mechanical Design Engineer - Hands Thermal Systems",
+          "location": "San Carlos, CA",
+          "minimum": 175950,
+          "maximum": 253000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/1x/d6c59043-7a78-48ba-8f35-6d47b987a871",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "b3c3051ed825dc6c3019751332cdbc4da39f07e2b0bb6d4a0904fcd6888d58aa",
+          "recordId": "one-x:ashby:d6c59043-7a78-48ba-8f35-6d47b987a871"
+        },
+        {
+          "employer": "Ambi Robotics",
+          "title": "Senior Project Engineer - Mechanical Systems",
+          "location": "Berkeley, California",
+          "minimum": 125000,
+          "maximum": 150000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.lever.co/ambirobotics/3b1d169e-5302-488e-b187-095aa364e60f",
+          "verifiedAt": "2026-11-02T17:46:59+00:00",
+          "sourceTextSha256": "08d13c34b13af2b59ec69a838cb0833258c6b9bde97ad60a63893e44795b4cda",
+          "recordId": "ambirobotics:lever:3b1d169e-5302-488e-b187-095aa364e60f"
+        },
+        {
+          "employer": "Applied Intuition",
+          "title": "Mechanical Engineer - New Grad (December 2026)",
+          "location": "Sunnyvale",
+          "minimum": 110000,
+          "maximum": 148000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "url": "https://jobs.ashbyhq.com/applied/6e57a97e-62bb-46fb-92ec-dd12831fd6f9",
+          "verifiedAt": "2026-11-02T17:47:01+00:00",
+          "sourceTextSha256": "4e54b4b91bd2a753a138ea65a60fde9a4c449b74d8068f21864212616735a2f8",
+          "recordId": "applied-intuition:ashby:6e57a97e-62bb-46fb-92ec-dd12831fd6f9"
+        }
+      ],
+      "cohortSummaryPath": "/research/physical-ai-careers-2026-11-02.json#role=mechanical-engineer",
+      "skillPresentation": "qualified-automatic-mentions",
+      "scopeNote": "Mechanical-family cohort includes autonomous aircraft, maritime systems and infrastructure alongside robot mechanisms."
+    }
+  },
+  "records": [
+    {
+      "id": "agile-robots:greenhouse:4964863101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Robot Learning Engineer (m/f/d) VLA & Foundation Models",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4964863101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "4b992202cdde4f0553cad82f6cbcd435ac8878f2ab011a35fb3107d9432c477a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robot learning",
+      "education": "A relevant degree OR an equivalent combination of research and professional experience in robot learning/embodied AI is essential.",
+      "experience": "",
+      "context": "Python and PyTorch implementation beyond notebooks is essential. RL and simulation/sim-to-real are listed as beneficial, while practical learned policies and robot integration are essential.",
+      "output": "Develop vision/language-conditioned manipulation policies; collect and validate multimodal demonstrations; define action/control interfaces; diagnose distribution-shift, contact, latency and sensing failures; integrate runtime monitoring and fallbacks."
+    },
+    {
+      "id": "agile-robots:greenhouse:5006075101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Machine Learning Engineer (m/f/d) VLA Training & Evaluation",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/5006075101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "ed41d27d0fd4e64d2779c1a05c2835ae8b33290618c79fe518e3607aa0efd47b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robot learning",
+      "education": "Relevant degree, with Master’s/PhD described as typical, OR equivalent formal training plus demonstrated deep-learning training experience.",
+      "experience": "",
+      "context": "PyTorch OR JAX training internals; reproducible evaluations; imitation-policy understanding. Real-robot evaluation and sim-to-real familiarity are beneficial.",
+      "output": "Build reusable VLA fine-tuning and evaluation workflows, generalization benchmarks, experiment/checkpoint tracking and ablations; test whether more realistic simulation improves hardware outcomes."
+    },
+    {
+      "id": "anybotics:lever:63f0c6db-0a1f-4a4a-87dd-9a43c9c2bdd2",
+      "employerId": "anybotics",
+      "employer": "ANYbotics",
+      "title": "Senior Reinforcement Learning Engineer",
+      "locations": [
+        "Zurich, Switzerland"
+      ],
+      "countries": [
+        "Switzerland"
+      ],
+      "url": "https://jobs.lever.co/anybotics/63f0c6db-0a1f-4a4a-87dd-9a43c9c2bdd2",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "d5cb00cecb4c588e70f2e4bd893918db7c5ad6adc606c52c369f04badd4874eb",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anybotics.json",
+      "rawSourceFileSha256": "710cdd1101d8008347609066088afd3711795b1df2241e3c4ae8461d12d70543",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robot learning",
+      "education": "PhD with RL focus OR equivalent RL research-and-robotics-deployment record; alternatively a relevant Master’s from a top-tier technical university plus 5+ professional years. Preserve the alternatives.",
+      "experience": "",
+      "context": "Robot-control fundamentals, Python/PyTorch, working C++, simulation, domain randomization and reward shaping; shipping and maintaining field models.",
+      "output": "Own motion-policy training infrastructure and transfer into industrial legged-robot deployment; improve robustness from locomotion field failures and maintain the Python/C++ stack."
+    },
+    {
+      "id": "applied-intuition:ashby:45fc41cd-8280-4010-ba1f-def6114b3e39",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Research Engineer - New Grad (2027)",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/45fc41cd-8280-4010-ba1f-def6114b3e39",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "f1f4d6f986276e358f3e2438f620f2c30130a00c004aea06364c3f0285423016",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robot learning",
+      "education": "Full source specifies MSc/PhD in ML/computer vision with autonomy/robotics applications or closely related field, graduating Dec 2026 or Summer 2027. Also specifies 1+ year of experience in any field OR equivalent education and experience. Both automated clause arrays are empty.",
+      "experience": "",
+      "context": "Hands-on experience in at least one listed topic group, including world/action/foundation models, VLA post-training/RL, or physics-aware reconstruction/simulation. Not all listed topics are simultaneous requirements.",
+      "output": "Early-career research on end-to-end autonomy and robotic generalists, with deployment and publication collaboration."
+    },
+    {
+      "id": "applied-intuition:ashby:ef7fb9ed-e254-4b90-aef2-efa9c30e7cd8",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Robot Learning Engineer - Manipulation",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/ef7fb9ed-e254-4b90-aef2-efa9c30e7cd8",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "4fe0c3e2a844ea92b31b7da3ad488cc2d19f46b1ac69d008df5dee00a7421276",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robot learning",
+      "education": "Source lists Bachelor’s in CS/Software Engineering or equivalent and 1+ professional year. Intro explicitly values demonstrated real-system work including equivalent practical experience over degree/title. Both automated clause arrays are empty.",
+      "experience": "",
+      "context": "Deployed and evaluated a learned manipulation policy on a physical robot; Python/PyTorch; imitation learning and at least one modern policy family; kinematics/frames/calibration. RL post-training is nice-to-have.",
+      "output": "Own manipulation task definition, demonstrations, data curation, policy fine-tuning, on-robot evaluation and edge deployment for industrial work; measure success rate, cycle time, interventions and time/data to target."
+    },
+    {
+      "id": "dyna:ashby:357b1b23-0712-489e-b336-1462f186cba7",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Research Scientist",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/357b1b23-0712-489e-b336-1462f186cba7",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "1d45778de8891ccd45344f9c9ca1f6cca2488ffe2021818d4e5dc7809448b300",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robot learning",
+      "education": "PhD preferred OR Master’s in CS/Robotics with significant publication record, plus 5+ years of AI/robotics research including physical deployment. Do not call PhD mandatory.",
+      "experience": "",
+      "context": "Python/PyTorch OR JAX, VLA/video/large-transformer experience; familiarity with MuJoCo/Isaac/Drake. Education extractor also falsely includes technical-stack and experience bullets.",
+      "output": "Research-to-production robot learning for high-DOF manipulation, multimodal foundation models and world modeling; evaluate on physical fleet in customer environments."
+    },
+    {
+      "id": "fieldai:lever:f53cce40-b227-4a0d-94c5-ef038f2c6341",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Senior Research Engineer, Humanoid Manipulation",
+      "locations": [
+        "Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/f53cce40-b227-4a0d-94c5-ef038f2c6341",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "fc316a1e9add0ad12c1c6a3507a41c6e94ed40b2033cd5155fc5849e41491c20",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robot learning",
+      "education": "Bachelor’s, Master’s OR PhD in a related field; 2+ years of manipulation/robot-learning experience in academia OR industry.",
+      "experience": "",
+      "context": "Kinematics/dynamics/control; RL and imitation learning; PyTorch; reproducible training/evaluation; real-hardware evidence. Publications OR open-source contributions are extras, not a mandatory PhD/publication requirement.",
+      "output": "Develop and evaluate humanoid manipulation and locomotion-plus-manipulation models; integrate data and training systems with hardware tests, deployment and field feedback."
+    },
+    {
+      "id": "figure:greenhouse:4671442006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Reinforcement Learning Engineer, Whole Body Control",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4671442006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "9efa43b197e8e8c125451c18ca44562e29439a1f1b0af8bb150e716c9cefe3ed",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robot learning",
+      "education": "No explicit degree credential in this saved source. Requirements emphasize dynamics/control, robotics RL and leading complex controls work; do not infer degree-free entry level.",
+      "experience": "",
+      "context": "PPO/SAC, hyperparameter and cost tuning, randomization, curriculum and reward shaping. Behavior cloning is a bonus. The salary sentence was incorrectly classified as an experience clause.",
+      "output": "Train, deploy and evaluate humanoid whole-body RL, choose observation/action/model spaces, close sim-to-real gaps and harden the control stack."
+    },
+    {
+      "id": "gritt:ashby:22718c8d-02d4-4507-9e67-fccddeb3fbb1",
+      "employerId": "gritt",
+      "employer": "Gritt",
+      "title": "Robot Learning Engineer",
+      "locations": [
+        "South San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/gritt/22718c8d-02d4-4507-9e67-fccddeb3fbb1",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "0e4698573167a6c987e345f09ef4716f70d74b6584e266a4ed5d5069d128bc0f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gritt.json",
+      "rawSourceFileSha256": "20a567222b34d9a1d87ce7926914d9639eeb0e48f6b65ed844f4e8c2bcd14548",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robot learning",
+      "education": "Relevant MS/PhD OR equivalent experience; 4+ hands-on years in robotics AI. AI expertise may be evidenced by industry experience OR publication record.",
+      "experience": "",
+      "context": "",
+      "output": "Develop manipulation/navigation policies for outdoor construction robotics, including pre/post-training, multimodal data and real/sim validation pipelines."
+    },
+    {
+      "id": "humanoid:ashby:0374a4ab-3cfe-4bd8-aef7-bc1edc87621a",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Robot Learning Engineer",
+      "locations": [
+        "UK, London"
+      ],
+      "countries": [
+        "United Kingdom"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/0374a4ab-3cfe-4bd8-aef7-bc1edc87621a",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "6bf9a6cb9ec9ca57d96a2a62fb5f9d9701cd13c7dab9de5f39d551c3a55a96ff",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robot learning",
+      "education": "No explicit degree credential in saved source; asks for 3+ years working with robots in industry OR research with shipped artifacts. Publications OR equivalent open-source contributions are nice-to-have.",
+      "experience": "",
+      "context": "Real-robot and applied-DL capability; data curation, fine-tuning, failure hypotheses; PyTorch OR JAX and maintainable research code.",
+      "output": "Post-train manipulation policies using behavior cloning and RL; improve collected data; collaborate on simulation/reward quality, teleoperation/control and hardware feedback."
+    },
+    {
+      "id": "path-robotics:greenhouse:8116143002",
+      "employerId": "path-robotics",
+      "employer": "Path Robotics",
+      "title": "Machine Learning Engineer, Robot Learning",
+      "locations": [
+        "Columbus, Ohio",
+        "Columbus, Ohio, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/pathrobotics/jobs/8116143002?gh_jid=8116143002",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "31189c28f233a30e8f711bbb70d8e58c84139116116a2a858a401474d96d0ede",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/path-robotics.json",
+      "rawSourceFileSha256": "dda49bbc68095b57d6027516973c117de7d1e049b6393bd61747a752e35d13e2",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robot learning",
+      "education": "Relevant PhD OR Master’s plus proven top-conference publication record in qualifications. This posting supplies a more research-credentialed path than the practical-equivalence examples.",
+      "experience": "",
+      "context": "",
+      "output": "Deploy BC/RL/diffusion and VLA models into industrial robotic cells, spanning data collection, fleet/continuous learning and robot integration."
+    },
+    {
+      "id": "skild:greenhouse:4125333008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Machine Learning Engineer, Reinforcement Learning",
+      "locations": [
+        "Pittsburgh, San Mateo",
+        "San Mateo, Pittsburgh"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/4125333008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "5e42cef2a4f5a963b161435001f85c5ade562cf2f07f478754f1535771b6d893",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robot learning",
+      "education": "Degree (BS/MS/higher) OR equivalent practical experience appears under Preferred Qualifications, not a separately labeled mandatory qualifications section.",
+      "experience": "",
+      "context": "Python/C++ or similar and at least one deep-learning library; RL and physics simulation. Avoid turning alternative language/library lists into simultaneous prerequisites.",
+      "output": "Implement RL methods, conduct training experiments and real-world tests, and integrate learned models with inference/application/deployment engineers."
+    },
+    {
+      "id": "one-x:ashby:bd7452e9-1f5a-4e49-b468-2ad98c20e2c3",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Simulation Engineer - Physics Modeling",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/bd7452e9-1f5a-4e49-b468-2ad98c20e2c3",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "aef5f7a811c68135191c3e5effdd2332f5a059be9dbaa7b6fc0e5987f6a8eb13",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "core robotics dynamics/sensors",
+      "education": "Minimum section offers 5+ years relevant industry experience OR an advanced degree plus equivalent hands-on experience; no universal fixed degree floor stated.",
+      "experience": "5+ years OR advanced-degree-plus-hands-on pathway; demonstrated physical-hardware transfer work is also asked.",
+      "context": "Minimum simulator examples are MuJoCo, PyBullet, Isaac Sim, or equivalent; system identification and Warp/JAX/differentiable simulation are preferred.",
+      "output": [
+        "Calibrate contacts, articulated bodies, actuators and transmissions with measurements from real hardware.",
+        "Represent sensor noise, bias, timing, latency and dropouts.",
+        "Quantify sim-to-real error; choose physically modeled versus randomized discrepancies; preserve reproducible runs while improving throughput."
+      ]
+    },
+    {
+      "id": "shield-ai:lever:71a4617f-c917-4536-bbf1-8d11d04d8cba",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Engineer I, Simulation Framework (R6203)",
+      "locations": [
+        "San Diego, California",
+        "Washington, D.C."
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/71a4617f-c917-4536-bbf1-8d11d04d8cba",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "bca48bd8b889c75894b9409aabc784d5abba49df31ca6e88065ae402c9178810",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "simulation framework / autonomy integration",
+      "education": "Required: related technical bachelor degree; equivalent practical experience may be considered.",
+      "experience": "Explicit early-career role; foundational programming can come from coursework, internships, personal projects, research or employment. No fixed years clause.",
+      "context": "AFSIM, NGTS, Aechelon and internal frameworks describe work. Gazebo/ROS 2/Unity/Unreal/Simulink are preferred exposure options, not a universal mandatory stack.",
+      "output": [
+        "Implement adapters, plugins, interfaces and reusable components linking autonomy to simulation backends.",
+        "Diagnose API/network/message/data-exchange faults; migrate components between framework generations.",
+        "Maintain automated tests, configurations and developer documentation."
+      ]
+    },
+    {
+      "id": "dyna:ashby:942cd530-b2b7-4141-8aaa-d844175e26ac",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Research Scientist, Simulation",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/942cd530-b2b7-4141-8aaa-d844175e26ac",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "787d4d5a3d353ef9b353d088d6617a6dc4dae8b84fada7a2d8fc3fb329a7fd5b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robot-learning scenes / synthetic experience",
+      "education": "MS/PhD CS, robotics or graphics OR equivalent hands-on experience.",
+      "experience": "Explicitly prioritizes demonstrated depth over a fixed years bar; still asks independence to set a research agenda.",
+      "context": "MuJoCo, Isaac Sim/Isaac Lab, SAPIEN, Omniverse, Blender or similar appear as alternatives; no requirement to master all.",
+      "output": [
+        "Reconstruct facilities and procedurally vary rooms, aisles, obstacles and assets for a wheeled mobile manipulator.",
+        "Generate policy training data and joint base-plus-arm evaluation benchmarks.",
+        "Improve visual fidelity for transfer and use real failures to create new scenarios."
+      ]
+    },
+    {
+      "id": "skild:greenhouse:4091609008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Simulation Engineer",
+      "locations": [
+        "Bengaluru, Karnataka, India",
+        "San Mateo"
+      ],
+      "countries": [
+        "India"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/4091609008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "64e3e22e528202febc360a1e4d215a85f9b2f7d3fc006891f5e7a0c391cc6896",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "core scenes / simulator engineering",
+      "education": "Degree/equivalent-practical-experience language appears under Preferred Qualifications, not a mandatory degree section.",
+      "experience": "No numeric years threshold in full source.",
+      "context": "Physics engines, graphics/physics, controls, hardware, photogrammetry; no named simulator mandate.",
+      "output": [
+        "Create visually and physically varied scenes.",
+        "Build specialized high-throughput simulators with ML researchers."
+      ]
+    },
+    {
+      "id": "applied-intuition:ashby:47432b51-af09-4435-993d-f0e692c0f6e8",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Simulation",
+      "locations": [
+        "Ann Arbor"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/47432b51-af09-4435-993d-f0e692c0f6e8",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "47d447da6099a65e7c059489c1a2c71ca72bed489189a0b75144271c4b59fa41",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "multi-domain defense simulation backend",
+      "education": "Full text asks bachelor CS or similar under desired-candidate section; automated educationClauses array was empty.",
+      "experience": "Full text asks 3+ years professional engineering, ideally C++; automated experienceClauses array was empty.",
+      "context": "Unreal/Unity/Gazebo/custom stacks, sensor simulation and synthetic data are nice-to-have alternatives.",
+      "output": [
+        "Build performant backend infrastructure and virtual worlds for ground/aerial and broader defense autonomy scenarios.",
+        "Own architecture through deployment and translate mission needs with researchers/customers."
+      ]
+    },
+    {
+      "id": "nvidia:workday:JR2023397",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Robotics Research Engineer - Robot Simulation and Evaluation",
+      "locations": [
+        "US, CA, Santa Clara"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Robotics-Research-Engineer---Robot-Simulation-and-Evaluation_JR2023397",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "e81455605daa74ec2e21354142707be944cd57f88228ead59eb81df6d7df1412",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robot-learning evaluation platform / research engineering",
+      "education": "PhD CS/robotics/related OR equivalent experience.",
+      "experience": "8+ years relevant industry or post-degree research engineering.",
+      "context": "GPU physics and NVIDIA ecosystem expertise are differentiators; Omniverse/Isaac Lab describe the platform.",
+      "output": [
+        "Turn research into Isaac Lab Arena capabilities for robot foundation-model training and evaluation.",
+        "Build simulation frameworks, set evaluation architecture and standards, and deliver production software with reviews/tests/CI."
+      ]
+    },
+    {
+      "id": "waymo:greenhouse:6499165",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Machine Learning Engineer, Simulation Realism",
+      "locations": [
+        "Mountain View, CA, USA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=6499165",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "53799a463ab7a522d746d7970274c44be108af0b8db32434d77d5798f1dc53b8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "AV learned-world / generative simulation specialization",
+      "education": "PhD is preferred, not required.",
+      "experience": "Multiple required 7+ years clauses cover applied deep learning, coding/design, production ML problem-solving and research-to-production.",
+      "context": "Foundation models and diffusion are named technologies; AV agents/roads/weather scope differs from manipulator contact dynamics.",
+      "output": [
+        "Use generative ML to increase realism and controllability of autonomous-driving simulations.",
+        "Take research prototypes into production systems and scale simulation/data processing."
+      ]
+    },
+    {
+      "id": "boston-dynamics:workday:R3013",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Senior Staff Robotics Simulation Engineer - Thermal & Fluids Analysis",
+      "locations": [
+        "Waltham, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-MA/Senior-Staff-Mechanical-Engineer---Atlas_R3013",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "d16b0fb6a9f358ef250003ad620896bbff6cbee1452660df79843595f3d7abe4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "robotics hardware thermal/CFD specialization; do not generalize to virtual robotics environment work",
+      "education": "Required PhD or MS in mechanical/aerospace/thermal science focused on fluid dynamics and heat transfer.",
+      "experience": "10+ years; simulation leadership and large virtual-validation programs.",
+      "context": "Ansys Fluent/Mechanical, STAR-CCM+, Simcenter Flotherm are role-specific CFD options.",
+      "output": [
+        "Set thermal/fluid modeling strategy for robot actuators.",
+        "Correlate CFD/thermal/structural simulations with instrumented experiments and production decisions."
+      ]
+    },
+    {
+      "id": "nvidia:workday:JR2019679",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior Circuit Design Engineer - Power Modeling and Simulation",
+      "locations": [
+        "US, CA, Remote",
+        "US, CA, Santa Clara"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Circuit-Design-Engineer---Power-Modeling-and-Simulation_JR2019679",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "17d40fd1d11bd15685e3e714e286d86767fd77bcc6b97cb4afb6b179491beda8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "out of intended robotics-environment scope: circuit/power-delivery simulation",
+      "education": "EE/CE BSEE or equivalent; MS/PhD preferred.",
+      "experience": "6+ years circuits/system power-network simulation.",
+      "context": "Spice, EDA, EM simulation, Matlab/Simulink.",
+      "output": [
+        "Model analog/digital circuits and die-to-platform power networks; processor power and reliability work."
+      ]
+    },
+    {
+      "id": "nvidia:workday:JR2017744",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior System Simulation Architect",
+      "locations": [
+        "US, CA, Santa Clara",
+        "US, NC, Durham",
+        "US, OR, Hillsboro",
+        "US, TX, Austin"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-System-Simulation-Architect_JR2017744-1",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "4fa37411339ceb245ad39ed8828f48986f9d5cf8ed8adb537d307d613c13c668",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "out of intended robotics-environment scope: CPU functional simulation/emulation",
+      "education": "BS/MS EE/CE/CS or equivalent experience.",
+      "experience": "6+ years.",
+      "context": "CPU ISA, OS/firmware/drivers, RTL emulation.",
+      "output": [
+        "Run CPU/GPU workload models; integrate with RTL/emulators and system software."
+      ]
+    },
+    {
+      "id": "zoox:lever:fd2dfb61-b04c-4489-85ee-f55389c11126",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Staff Systems Engineer, Simulation Systems Verification and Validation Lead",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/fd2dfb61-b04c-4489-85ee-f55389c11126",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "a5d519e89974921880fc0dee4eee193c6f473e4cae09ffd472fd113e091b8aa1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "V&V specialist overlap; primary output is credibility/safety-case evidence",
+      "education": "Required MS or higher in listed engineering/CS/science fields; PhD is bonus. Automated education array missed required MS and retained only bonus PhD.",
+      "experience": "8+ years safety-critical-system V&V.",
+      "context": "Sensor simulation/neural rendering/safety standards are bonus.",
+      "output": [
+        "Define sensor-to-system simulator validation, datasets, metrics and comparison methods.",
+        "Lead cross-team validation and combine real/simulated evidence for safety decisions."
+      ]
+    },
+    {
+      "id": "agile-robots:greenhouse:4964789101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Forward Deployed Engineer for Robotics (m/f/d)",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4964789101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "d98e1d75b4edd1b615b274f0bc4fef21a459389ecd2b9004697630906892cf14",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "core-industrial-and-application-integration",
+      "education": "Master’s in robotics, CS, AI, mechanical/electrical engineering or a related field, OR equivalent practical experience.",
+      "experience": "Minimum four professional years in robotics, AI, industrial automation, OR software engineering.",
+      "context": "C++ and Python and Linux are Essential Skills. PLC, CAD, EtherCAT/CAN/OPC UA/Modbus and functional safety standards are Beneficial Skills. Travel up to 40%.",
+      "output": "Customer-specific robotic workcell workflows, integrated models, commissioned automation and mobile manipulation, with remote and on-site troubleshooting."
+    },
+    {
+      "id": "standard-bots:ashby:0f10edc9-c87b-4c9e-b0ab-f6cc5be6af91",
+      "employerId": "standard-bots",
+      "employer": "Standard Bots",
+      "title": "Senior Applications Engineer (West Coast)",
+      "locations": [
+        "US-West Coast (remote)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/standardbots/0f10edc9-c87b-4c9e-b0ab-f6cc5be6af91",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "c780832670315df2f71dc88ef19c56ae89c94a3fab675c309f75828f683e06df",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "core-industrial-integration",
+      "education": "Bachelor’s in mechanical, electrical, mechatronics or related engineering, OR equivalent hands-on experience.",
+      "experience": "6+ hands-on years covering industrial automation fundamentals, including PLC/ladder logic, pneumatics, DC power, robot programming and Python.",
+      "context": "CAD proficiency required; SolidWorks preferred. Up to 50% domestic travel. West Coast residence, California preferred.",
+      "output": "Proof of concept and installed cell: fixture, wiring, robot configuration, PLC handshakes, test/sign-off and customer training."
+    },
+    {
+      "id": "intrinsic:greenhouse:6015988004",
+      "employerId": "intrinsic",
+      "employer": "Intrinsic",
+      "title": "Senior Robotics Application Engineer, Customer Success",
+      "locations": [
+        "Singapore"
+      ],
+      "countries": [
+        "Singapore"
+      ],
+      "url": "https://boards.greenhouse.io/intrinsicrobotics/jobs/6015988004?gh_jid=6015988004",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "9f1dfa0379060e52343d6a427d57071db3e77c580d39963e178ea3e00fe0fd2d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/intrinsic.json",
+      "rawSourceFileSha256": "562f8ce8af76ed64d64bb6bd12d233a8032a77cc73df4b4e20da9d8f271b8f2e",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "core-industrial-application-integration",
+      "education": "Bachelor’s in robotics, mechatronics, CS or related technical field, OR equivalent practical experience.",
+      "experience": "Proven production automation delivery track record; no numeric minimum in the full posting.",
+      "context": "C++ and/or Python: language alternatives, not both individually mandatory. Robot programming, PLCs, machine vision, industrial buses especially EtherCAT, virtual commissioning and simulation are differentiators; ROS (2)/Gazebo also differentiators. Frequent international travel.",
+      "output": "End-to-end production robotic automation solutions, high-quality application software and customer enablement across APAC."
+    },
+    {
+      "id": "nimble:greenhouse:4398427009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "Senior Systems Integration Engineer",
+      "locations": [
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4398427009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "c563ab21a24e9a8ba966e5fc654f36f40eb5480928b5da7302cdb6afd3ec459f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "core-warehouse-application-performance",
+      "education": "BS OR MS in mechanical engineering, electrical engineering, robotics or a related technical field. This appears in full source although educationClauses is empty.",
+      "experience": "5+ years in robotics systems integration, hardware validation OR mechatronics.",
+      "context": "Role is senior; metrics-driven hardware/software bottleneck work and regressions are central.",
+      "output": "Warehouse picking/packing performance roadmap, throughput improvements and fleet production SLA, with integration, validation and deployment."
+    },
+    {
+      "id": "skild:greenhouse:5228768008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Robotics Application Engineer",
+      "locations": [
+        "Pittsburgh, San Mateo",
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/5228768008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "df44d30cc4c0c8cb97abba3f8285fb97fee69d588f8da19e49eed50ea801b095",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "core-model-to-robot-application-integration",
+      "education": "BS, MS or higher in CS, robotics or related field, OR equivalent practical experience; all under Preferred Qualifications.",
+      "experience": "3–5+ hands-on years in application development, system integration OR field deployment, under Preferred Qualifications.",
+      "context": "Python and C++ and ROS/ROS2 also under Preferred Qualifications; do not convert to universal hard requirements.",
+      "output": "Software that connects foundation models to production robotics, with configuration, validation, hardware/software/model failure reproduction, documentation and runbooks."
+    },
+    {
+      "id": "agility:greenhouse:6238079004",
+      "employerId": "agility",
+      "employer": "Agility Robotics",
+      "title": "Systems Integration Engineer III",
+      "locations": [
+        "Fremont, California, United States",
+        "Hybrid- Fremont, CA; Hybrid- Salem, OR",
+        "Salem, Oregon, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=6238079004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "ceb2329c5db43bc62dc5f0812b1c02708866ab50320b44ad5b37975b9c92f093",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agility.json",
+      "rawSourceFileSha256": "ac356350940b45d164fbf75881d9254f4c3aadaa5e83e8f798a621610cb7c731",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "adjacent-internal-subsystem-integration",
+      "education": "Bachelor’s with 3+ years OR master’s with 1+ years in integration/test/bring-up or related electromechanical R&D. Separately names mechanical/electrical/computer/systems engineering or robotics disciplines.",
+      "experience": "Preserve education-linked alternatives rather than reporting a single 3-year minimum.",
+      "context": "Commissioning here means functional assets for internal customers; this differs from commissioning a complete customer application. EtherCAT/git/actuators/embedded compute/power are preferred.",
+      "output": "Tested subsystem configurations, bring-up, functional interface tests and documented residual risks for internal customer handoff."
+    },
+    {
+      "id": "gatik:greenhouse:4661964006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior Robotics Integration Engineer",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4661964006?gh_jid=4661964006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "0c53b198bc2f2916e1042eaf37da84fb40c67f475b4346f1d17f76666457b0e0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "adjacent-av-integration-and-test",
+      "education": "Bachelor’s OR master’s in robotics, EE, CS or related field.",
+      "experience": "4+ years testing/validation/integration autonomous OR robotic systems; AV/transportation environment preferred.",
+      "context": "ROS/ROS2, C++ and Python appear in core qualifications; Linux/Docker/Git appear in Bonus Points. Demonstrates why cohort ROS usage cannot be equated with industrial PLC demand.",
+      "output": "Autonomous truck hardware/software integration; perception/navigation/control validation, lab and on-road tests, sensor integration and automated test workflows."
+    },
+    {
+      "id": "bedrock:ashby:9f499006-5789-4d84-8b11-cff85ee0c25e",
+      "employerId": "bedrock",
+      "employer": "Bedrock Robotics",
+      "title": "Robotics Application Engineer",
+      "locations": [
+        "New York, NY",
+        "Remote",
+        "San Francisco, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/bedrock-robotics/9f499006-5789-4d84-8b11-cff85ee0c25e",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "48a20af8bddc41b30852fc92ff9fb4adf411c074b9b4cdc3f449560325f42fc3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/bedrock.json",
+      "rawSourceFileSha256": "f2897d1ac1b7da9dd6ee4984e385bc28b69e753fe84260a185e94c41d1d38c98",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "adjacent-off-road-autonomy-deployment",
+      "education": "BS OR MS in robotics, ME, EE, CS or related technical field.",
+      "experience": "3+ professional years supporting critical onboard/offboard systems; deployed robotics experience is a plus.",
+      "context": "Generalist software language list includes Python/Rust/C++ etc, not three individually required languages. CAN/electrical troubleshooting and logs are explicit. Up to 40% travel.",
+      "output": "Autonomous excavator site readiness, release evaluations on site data, full-stack issue debugging and performance feedback to customer and engineering teams."
+    },
+    {
+      "id": "formic:greenhouse:4710422006",
+      "employerId": "formic",
+      "employer": "Formic",
+      "title": "Solutions Engineer (Application Engineer): End-of-Line Automation",
+      "locations": [
+        "Chicago || Bolingbrook, IL"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/formic/jobs/4710422006",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "89ffd71e2e7a5c1f3916d188bff0d11c78140f00c2d07b1e4e8909277601d724",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/formic.json",
+      "rawSourceFileSha256": "65e248fa4c2c4131e404bd620ba3caaca4baf177ba3c8302e27fe848266d4e1f",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "adjacent-presales-application-scoping",
+      "education": "Engineering bachelor’s required, but equivalent technical education plus relevant automation experience may be considered.",
+      "experience": "3+ years pre-sales technical work AND 3+ years manufacturing environments.",
+      "context": "Use to explain discovery/scoping/handoff, not to imply this job personally owns all commissioning activities described for the wider team.",
+      "output": "Customer requirements, scoped end-of-line automation designs, estimates and documented deployment handoff; this specific job is primarily pre-sales."
+    },
+    {
+      "id": "shield-ai:lever:ac228821-b2f8-4155-a119-b05e16ebaefe",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior Generative AI Application Engineer, Learning & Development (R5856)",
+      "locations": [
+        "Dallas, Texas",
+        "San Diego, California",
+        "Washington, D.C."
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/ac228821-b2f8-4155-a119-b05e16ebaefe",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "ec21df52eaaec0e966db0ae351711074aae2d7b296350f69e00ff88e71af4017",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Selected full-source contextual audit; does not change original cohort review status.",
+      "scope": "out-of-core-training-product-false-positive",
+      "education": "Bachelor’s OR equivalent practical experience is preferred.",
+      "experience": "Progressive production software/AI-enabled product/developer tooling or comparable experience; no numeric minimum.",
+      "context": "Clear application-engineer title false positive for a robot application integration guide. Do not use its salary as an integration salary observation.",
+      "output": "AI-powered Hivemind learning coach, workshops, curricula and content-update tooling."
+    },
+    {
+      "id": "ambirobotics:lever:3b1d169e-5302-488e-b187-095aa364e60f",
+      "employerId": "ambirobotics",
+      "employer": "Ambi Robotics",
+      "title": "Senior Project Engineer - Mechanical Systems",
+      "locations": [
+        "Berkeley, California"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/ambirobotics/3b1d169e-5302-488e-b187-095aa364e60f",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "08d13c34b13af2b59ec69a838cb0833258c6b9bde97ad60a63893e44795b4cda",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/ambirobotics.json",
+      "rawSourceFileSha256": "847f596b0ccf39057ab42857dec569cf38884e95f3d17d77cae11836cdac9994",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Contextual source review documented in mechanical guide and its cited source references.",
+      "scope": "mechanical design and deployment systems",
+      "education": "See cited contextual qualification comparison in the guide.",
+      "experience": "Role-specific, no aggregated degree or experience percentage inferred.",
+      "context": "Preserve degree alternatives and role seniority.",
+      "output": "See mechanical guide employer comparison."
+    },
+    {
+      "id": "applied-intuition:ashby:6e57a97e-62bb-46fb-92ec-dd12831fd6f9",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Mechanical Engineer - New Grad (December 2026)",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/6e57a97e-62bb-46fb-92ec-dd12831fd6f9",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "4e54b4b91bd2a753a138ea65a60fde9a4c449b74d8068f21864212616735a2f8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Contextual source review documented in mechanical guide and its cited source references.",
+      "scope": "mechanical design and deployment systems",
+      "education": "See cited contextual qualification comparison in the guide.",
+      "experience": "Role-specific, no aggregated degree or experience percentage inferred.",
+      "context": "Preserve degree alternatives and role seniority.",
+      "output": "See mechanical guide employer comparison."
+    },
+    {
+      "id": "apptronik:greenhouse:5766164004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Senior Mechanical Engineer",
+      "locations": [
+        "Austin, TX",
+        "Austin, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/5766164004?gh_jid=5766164004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "1e82406dd71c08df1dfd5c6d7201d0a5cf9226368427b7d71258ec7ce2f2a016",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Contextual source review documented in mechanical guide and its cited source references.",
+      "scope": "mechanical design and deployment systems",
+      "education": "See cited contextual qualification comparison in the guide.",
+      "experience": "Role-specific, no aggregated degree or experience percentage inferred.",
+      "context": "Preserve degree alternatives and role seniority.",
+      "output": "See mechanical guide employer comparison."
+    },
+    {
+      "id": "one-x:ashby:d6c59043-7a78-48ba-8f35-6d47b987a871",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Mechanical Design Engineer - Hands Thermal Systems",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/d6c59043-7a78-48ba-8f35-6d47b987a871",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "b3c3051ed825dc6c3019751332cdbc4da39f07e2b0bb6d4a0904fcd6888d58aa",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reviewedAt": "2026-11-03",
+      "reviewMethod": "Contextual source review documented in mechanical guide and its cited source references.",
+      "scope": "mechanical design and deployment systems",
+      "education": "See cited contextual qualification comparison in the guide.",
+      "experience": "Role-specific, no aggregated degree or experience percentage inferred.",
+      "context": "Preserve degree alternatives and role seniority.",
+      "output": "See mechanical guide employer comparison."
+    }
+  ]
+}

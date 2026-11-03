@@ -1,0 +1,295 @@
+Browser tab: 15, Title: "robotics mechanical engineer career - Google Search", URL: "https://www.google.com/search?q=robotics+mechanical+engineer+career&hl=en&gl=us&sei=YxzqaoL8N5_Sp84P9JzcmAc&jbr=sep:0".
+0 AXWebArea robotics mechanical engineer career - Google Search, URL: google.com/search
+	1 container gsr
+		2 container
+			3 link Skip to main content
+				4 text Skip to main content
+			5 link Description: Accessibility help, Value: support.google.com/websearch/answer/181196
+		6 container searchform
+			7 container tsf
+				8 container
+					9 link Description: United States Midterm Elections 2026, Value: google.com/webhp
+					11 combo box (collapsed) Description: Search, Value: robotics mechanical engineer career, ID: ti6dpd, Secondary Actions: Expand
+					12 button  Clear
+					13 button Search by voice
+					14 button Search by image
+			15 button Description: Settings, ID: og-te
+			16 button Share
+			17 button (collapsed) Description: Google apps, Secondary Actions: Expand
+			18 link Description: Sign in, Value: accounts.google.com/ServiceLogin
+		19 container cnt
+			20 container
+				21 container
+					22 content list
+						23 link Description: AI Mode, Value: google.com/search
+						24 link (disabled) All
+							25 text All
+						26 link Description: Jobs, Value: google.com/search
+						27 link Description: Images, Value: google.com/search
+						28 link Description: Videos, Value: google.com/search
+						29 link Description: Forums, Value: google.com/search
+						30 link Description: Shopping, Value: google.com/search
+						31 button (collapsed) More filters, Secondary Actions: Expand
+							32 container More filters
+								33 text More
+					34 button (collapsed) Tools, ID: hdtb-tls, Secondary Actions: Expand
+			35 content list
+				36 link Description: Add No degree, Value: google.com/search
+				37 link Description: Add Remote, Value: google.com/search
+				38 container ZBzqatWRB9a5wN4PhuW08QQ__23
+					39 button Date posted
+						40 text Date posted
+				41 container ZBzqatWRB9a5wN4PhuW08QQ__31
+					42 button Job type
+						43 text Job type
+			44 heading Search Results, Value: 1
+				45 text Search Results
+			46 container rcnt
+				47 container
+					48 heading Liberty City, Miami, Value: 2
+						49 text Liberty City, Miami
+					50 button Choose area
+					51 button How location is used
+				52 container Odp5De
+					53 container
+						54 container
+							55 container
+								56 heading AI Overview, Value: 2
+									57 text AI Overview
+								58 container
+									59 text A  robotics mechanical engineer designs, builds, tests, and refines the physical hardware of robots . While software acts as the "brain," mechanical engineering provides the body—the limbs, joints, actuators, and structural frames that translate digital commands into physical motion.
+									60 link Description: YouTube · Uplatz, Value: google.com/goto
+									61 button YouTube · Uplatz (+2) - Related results
+										62 text YouTube
+										63 text ·
+										64 text Uplatz
+										65 text  +2
+								66 heading Core Responsibilities, Value: 3
+									67 text Core Responsibilities
+								68 content list
+									69 container
+										70 AXListMarker • 
+										71 text Hardware Design:  Create 3D models and assemblies using CAD software (SolidWorks, Onshape, NX) for robot arms, legs, torsos, and mobile bases.
+										72 link Description: YouTube · UpSkul, Value: google.com/goto
+										73 button YouTube · UpSkul - Related results
+											74 text YouTube
+											75 text ·
+											76 text UpSkul
+									77 container
+										78 AXListMarker • 
+										79 text Actuation & Power Transmission:  Design and select motors, gearboxes (harmonic, planetary, cycloidal), belts, and cable drives.
+										80 button Related results
+									81 container
+										82 AXListMarker • 
+										83 text Prototyping & Fabrication:  Turn digital designs into physical parts via 3D printing, CNC machining, sheet metal fabrication, and hands-on shop work.
+										84 button Related results
+									85 container
+										86 AXListMarker • 
+										87 text Analysis & Testing:  Run first-principles calculations and simulations (FEA, thermal, kinematic) to verify structural integrity, heat dissipation, and load capacity.
+										88 button Related results
+									89 container
+										90 AXListMarker • 
+										91 text Cross-Functional Integration:  Work closely with electrical, controls, and software engineers to route cables, mount sensors, and ensure model (URDF) accuracy.
+										92 button Related results
+								93 heading Key Skills & Education, Value: 3
+									94 text Key Skills & Education
+								95 content list
+									96 container
+										97 AXListMarker • 
+										98 text Education:  A Bachelor’s (or Master’s) degree in  Mechanical Engineering ,  Mechatronics ,  Robotics , or  Aerospace Engineering .
+										99 button Related results
+									100 container
+										101 AXListMarker • 
+										102 text Technical Tools:  CAD (SolidWorks, NX), finite element analysis (ANSYS, Abaqus), and GD&T (Geometric Dimensioning and Tolerancing).
+										103 button Related results
+									104 container
+										105 AXListMarker • 
+										106 text Programming & Systems:  Basic familiarity with Python, C++, or MATLAB, plus exposure to tools like ROS (Robot Operating System) to understand how software interacts with hardware.
+										107 link Description: www.ctc.edu.za, Value: google.com/goto
+										108 button www.ctc.edu.za (+1) - Related results
+											109 text www.ctc.edu.za
+											110 text  +1
+									111 container
+										112 AXListMarker • 
+										113 text Hands-on Experience:  Practical experience through student design teams (Formula SAE, rocketry, robotics clubs) or internships in hardtech, automotive, or aerospace industries.
+										114 button Related results
+						115 button (collapsed) Description: Show more AI Overview, Secondary Actions: Expand
+							116 text Show more
+				117 container center_col
+					118 container gevUs
+						119 container rso
+							120 container
+								121 container ow15
+									122 link Value: google.com/goto, Description: How I transitioned from mechanical engg. to robotics YouTube · Learn Robotics & AI 4.7K+ views · 3 years ago
+									123 button About this result
+									124 button How I transitioned from mechanical engg. to robotics by Learn Robotics & AI on YouTube. Play on Google. 1:05:28
+									125 container
+										126 text Robotics Career Path : Are you an engineer, a researcher or a startup founder? ... The Ultimate Robotics Career Guide 2026 - New and Updated.
+									127 container
+										128 button (collapsed) 9 key moments in this video, Secondary Actions: Expand
+											129 text 9 key moments in this video
+							130 container
+								131 link Value: google.com/goto, Description: 12827 Robotics engineer jobs in United States Glassdoor https://www.glassdoor.com › ... › Robotics Engineer Jobs
+								132 button About this result
+								133 text Search Robotics engineer jobs in United States
+								134 text  with company ratings & salaries. 12827 open jobs for Robotics engineer in US.
+							135 container
+								136 link Value: google.com/goto, Description: Will being involved to robotics a good career path choice ... Reddit · r/MechanicalEngineering 9 comments · 2 months ago
+								137 button About this result
+								138 text A 
+								139 text robot
+								140 text  operator is a semi-skilled 
+								141 text job
+								142 text , it isn't a 
+								143 text career
+								144 text  path. You want to get into a 
+								145 text mechanical
+								146 text  design, or mechatronics design, or ...
+								147 link Description: Read more, Value: google.com/goto
+								148 link Description: Is there a place for mechanical engineers in robotics ..., Value: google.com/goto
+								149 text 10 posts
+								150 text Dec 13, 2025
+								151 link Description: Robotics Engineer Jobs : r/robotics - Reddit, Value: google.com/goto
+								152 text 16 posts
+								153 text Nov 30, 2017
+								154 link Description: More results from www.reddit.com, Value: google.com/search
+							155 container
+								156 heading Discussions and forums, Value: 2
+									157 text Discussions and forums
+								158 container
+									159 container
+										160 link Value: google.com/goto, Description: How is robotics as a Mechanical Engineer? Reddit ·  r/MechanicalEngineering  ·  30+ comments  ·  1 year ago
+										161 container
+											162 text  · 
+											163 button About this result
+										164 button (expanded) Secondary Actions: Collapse
+									165 content list
+										166 link Value: google.com/goto, Description: I worked for a robotics integrator for a while as an ME and it was a pretty cool job. I ...   More discussions on How is robotics as a Mechanical Engineer? Top answer · 39 votes · a year ago
+										167 link Value: google.com/goto, Description: I'm an ME in a healthcare robotics startup. Because my team is small, I do a slice of everything ...   More discussions on How is robotics as a Mechanical Engineer? 9 votes · a year ago
+										168 link Value: google.com/goto, Description: I did ME in the bachelors and im doing Robotics now in the masters, and its really fun. ME ...   More discussions on How is robotics as a Mechanical Engineer? 6 votes · a year ago
+								169 container
+									170 link Description: what positions did you have before becoming a robotic engineer Career Village ·  11 months ago, Value: google.com/goto
+									171 container
+										172 text  · 
+										173 button About this result
+									174 button (collapsed) Secondary Actions: Expand
+								175 container
+									176 link Value: google.com/goto, Description: Is a robotics degree enough to work in the cars and machines field or ... Quora ·  30+ answers  ·  2 years ago
+									177 container
+										178 text  · 
+										179 button About this result
+									180 button (collapsed) Secondary Actions: Expand
+								181 link Description: See more discussions, Value: google.com/search
+							182 container
+								183 heading Jobs, Value: 2
+									184 text Jobs
+								185 button Follow
+									186 text Follow
+								187 tab group
+									188 tab (selected, settable, boolean) Job postings, Value: 1
+Job postings
+									189 tab (selectable, settable, boolean) Saved jobs, Value: 0
+Saved jobs
+									190 tab (selectable, settable, boolean) Following, Value: 0
+Following
+								191 container 3pIjwJJhi-L8g7hOAAAAAA==
+									192 pop up button Senior Systems Engineer, Robotics Stryker Weston, FL • via Stryker Careers
+										193 text Senior Systems Engineer, Robotics
+										194 text Stryker
+										195 text Weston, FL • via Stryker Careers
+									196 button Add Senior Systems Engineer, Robotics to saves list
+									197 button Share
+									198 container Employment Type Full-time
+								199 container
+									200 pop up button Robotics Mechanical And Weld Engineer Kinetic Technologies LLC United States • via LinkedIn
+										201 text Robotics Mechanical And Weld Engineer
+										202 text Kinetic Technologies LLC
+										203 text United States • via LinkedIn
+									204 button Add Robotics Mechanical And Weld Engineer to saves list
+									205 button Share
+									206 container Posted 6 days ago
+									207 container Employment Type Full-time
+								208 container xJie_bqb0ivOkZhIAAAAAA==
+									209 pop up button Mechanical Engineering Co-op - Humanoid robotics mundane Palo Alto, CA • via LinkedIn
+										210 text Mechanical Engineering Co-op - Humanoid robotics
+										211 text mundane
+										212 text Palo Alto, CA • via LinkedIn
+									213 button Add Mechanical Engineering Co-op - Humanoid robotics to saves list
+									214 button Share
+									215 container Posted 12 days ago
+									216 container Employment Type Full-time
+								217 link Description: 100+ more jobs, Value: google.com/search
+								218 button Feedback
+								219 link Description: Learn more, Value: support.google.com/websearch/
+							220 container
+								221 heading Web results, Value: 2
+									222 text Web results
+								223 link Description: Robotics engineer This is Engineering https://thisisengineering.org.uk › careers › robotics-engi..., Value: google.com/goto
+								224 button About this result
+								225 container
+									226 text A robotics engineer can  carry out research into what customers want automated . · They could use computer aided design (CAD) software to make robotic designs.
+									227 link Description: Read more, Value: google.com/goto
+							228 container
+								229 link Value: google.com/goto, Description: Exploring career opportunities in Robotics for Mechanical ... ctc.edu.za https://www.ctc.edu.za › Blog
+								230 button About this result
+								231 text Explore the world of Robotics for Mechanical Engineers. 
+								232 text Learn about career opportunities
+								233 text , skills needed and the impact on innovation and society.
+							234 container
+								235 link Description: Can a mechanical engineer become a robotics engineer? Quora 40+ answers · 12 years ago, Value: google.com/goto
+								236 button About this result
+								237 text Can a mechanical engineer become a robotics engineer?
+								238 link Description: 44 answers, Value: google.com/goto
+								239 text · Top answer:  Mechanical Engineer is among one of the most qualified to become a Robotics Engineer. We often ...
+							240 container
+								241 link Value: google.com/goto, Description: Robotics Mechanical Engineer jobs in Remote Indeed https://www.indeed.com › q-robotics-mechanical-engin...
+								242 button About this result
+								243 text Browse 565 Robotics Mechanical Engineer job openings from Remote
+								244 text . Discover flexible, work-from-home opportunities on Indeed in fields like tech, admin, ...
+					245 container
+						246 container
+							247 heading People also search for, Value: 2
+								248 text People also search for
+							249 link Description: Robotics mechanical engineer career salary, Value: google.com/search
+							250 link Description: Robotics engineer apprenticeship, Value: google.com/search
+							251 link Description: Robotics Engineering salary, Value: google.com/search
+							252 link Description: Robotics Engineer jobs, Value: google.com/search
+							253 link Description: Robotics Engineer jobs in USA, Value: google.com/search
+							254 link Description: Careers in robotics, Value: google.com/search
+							255 link Description: Robotics engineer job description, Value: google.com/search
+							256 link Description: Mechatronics and robotics Engineering salary, Value: google.com/search
+						257 heading Page Navigation, Value: 1
+							258 text Page Navigation
+						259 text 1
+						260 link Description: Page 2, Value: google.com/search
+						261 link Description: Page 3, Value: google.com/search
+						262 link Description: Page 4, Value: google.com/search
+						263 link Description: Page 5, Value: google.com/search
+						264 link Description: Page 6, Value: google.com/search
+						265 link Description: Page 7, Value: google.com/search
+						266 link Description: Page 8, Value: google.com/search
+						267 link Description: Page 9, Value: google.com/search
+						268 link Description: Page 10, Value: google.com/search
+						269 heading Next, Value: 2
+							270 link Description: Next, Value: google.com/search, ID: pnnext
+			271 container sfooter
+				272 heading Footer Links, Value: 1
+					273 text Footer Links
+				274 container fbar
+					275 container
+						276 button Liberty City, Miami, FL  - From your IP address
+							277 container
+								278 text Liberty City, Miami, FL
+							279 container
+								280 text  -  From your IP address
+						281 text  - 
+						282 button Update location
+							283 text Update location
+					284 container fsl
+						285 link Description: Help, Value: support.google.com/websearch/
+						286 button Send feedback
+							287 text Send feedback
+						288 link Description: Privacy, Value: policies.google.com/privacy
+						289 link Description: Terms, Value: policies.google.com/terms
+
+The focused UI element is 0 AXWebArea robotics mechanical engineer career - Google Search, URL: google.com/search

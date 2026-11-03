@@ -70,3 +70,15 @@ User preference, October 21, 2026: prioritize the global website design over pag
 
 
 User preference, November 2, 2026: For future News report editorial covers, use the exact visible caption `Editorial illustration by Black Scarab.` Keep descriptive context in image alternative text rather than extending the caption.
+
+## Editorial restraint and information density
+
+Apply across all Black Scarab content, research products and UI. Precision in the research; simplicity in the presentation.
+
+- Include a sentence or visual only when it helps the reader understand a finding or make a decision. Remove repetition and obvious implications.
+- Use precise metric labels, source scope and dates instead of explanatory paragraphs. Never relabel evidence more strongly than its source supports.
+- Elevate a limitation only when omitting it would materially change a reasonable reader’s interpretation. State it once where it matters.
+- Keep detailed sampling, exclusions, coding decisions and technical limitations in a dedicated methodology section or accessible secondary view. Preserve complete underlying evidence and traceability.
+- Keep the finding visually dominant. Use captions, footnotes, labels, boxes and navigation sparingly.
+- Revise an unsupported claim rather than surrounding it with disclaimers. Use direct language supported by evidence; avoid reflexive hedging and defensive qualifications.
+- Apply these principles silently in public copy. Be accurate, clear and concise; trust the reader.

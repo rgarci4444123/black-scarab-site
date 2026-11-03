@@ -1,0 +1,542 @@
+{
+  "auditDate": "2026-11-03",
+  "guideId": "systems-integration-engineer",
+  "workingGuideName": "Robotics Integration Engineer",
+  "status": "evidence-audit-only-no-guide-drafted",
+  "snapshot": {
+    "id": "physical-ai-2026-11-02-6b48026839dc",
+    "manifestHash": "6b48026839dcafc9d68144cf3fbedf38889984ad96f667a21e058b4d25f26f14",
+    "cohortPath": "/Users/rodolfogarcia/Documents/ChatGPT/Black Scarab Career Paths/research/physical-ai/2026-11-02/cohorts/systems-integration-engineer.json",
+    "postingCount": 68,
+    "employerCount": 27,
+    "roleReviewedCount": 5,
+    "machineScreenedCount": 63,
+    "recognizedQualificationSectionCount": 58,
+    "recountedPostingCount": 68,
+    "recountedEmployerCount": 27,
+    "all68SourceTextHashesVerified": true,
+    "largestEmployer": {
+      "name": "Shield AI",
+      "postings": 14,
+      "sharePercent": 20.59
+    },
+    "sectorLabels": {
+      "industrial-manipulation": 7,
+      "humanoids": 8,
+      "autonomous-defense": 5,
+      "inspection": 1,
+      "simulation-platforms": 8,
+      "construction": 1,
+      "mobile-robotics": 3,
+      "warehouse-logistics": 2,
+      "field-robotics": 7,
+      "industrial-integration": 1,
+      "autonomous-vehicles": 2,
+      "robotics-platforms": 2,
+      "robot-foundation-models": 4,
+      "autonomous-maritime": 2,
+      "autonomous-drones": 15
+    }
+  },
+  "classification": {
+    "core": "The output is a robot application that meets a customer/site workflow and performance requirement: interfaces, configuration, validation, commissioning and handoff. This guide can explain industrial cells and deployed robotic applications while keeping distinct interface stacks visible.",
+    "boundaries": [
+      "Internal subsystem or product bring-up is adjacent, not the central customer-application output.",
+      "Autonomous truck, aircraft, maritime and off-road deployment share integration/debugging practices but are not an industrial robot-cell sample.",
+      "Pre-sales scoping is adjacent; distinguish requirements/design/handoff from commissioning ownership.",
+      "Post-handover uptime repair centers on field service.",
+      "A learning coach and training-content tooling are outside this guide even when the title says AI Application Engineer."
+    ],
+    "denominatorWarning": "68/27 is the original broad Systems Integration cohort, not a manually purified industrial cohort. Metrics below retain that denominator; no industrial-only prevalence estimate is established. Selected manual review does not replace the stored 5/63 whole-cohort review statuses."
+  },
+  "skillCountInterpretation": "Counts measure explicit wording in sampled postings. Required-or-option includes alternatives and does not mean each skill is compulsory. Preferred-only and context-only retain weaker wording. Unobserved is not proof a skill is unnecessary. ROS-unspecified and ROS 2 counts may overlap and must not be summed.",
+  "skillMetrics": [
+    {
+      "skillId": "python",
+      "label": "Python",
+      "denominator": 68,
+      "anyMention": 44,
+      "requiredOrOption": 30,
+      "preferredOnly": 8,
+      "contextOnly": 6,
+      "unobserved": 24,
+      "employersMentioning": 22,
+      "employerDenominator": 27
+    },
+    {
+      "skillId": "cpp",
+      "label": "C++",
+      "denominator": 68,
+      "anyMention": 38,
+      "requiredOrOption": 28,
+      "preferredOnly": 5,
+      "contextOnly": 5,
+      "unobserved": 30,
+      "employersMentioning": 15,
+      "employerDenominator": 27
+    },
+    {
+      "skillId": "linux",
+      "label": "Linux",
+      "denominator": 68,
+      "anyMention": 28,
+      "requiredOrOption": 17,
+      "preferredOnly": 10,
+      "contextOnly": 1,
+      "unobserved": 40,
+      "employersMentioning": 17,
+      "employerDenominator": 27
+    },
+    {
+      "skillId": "ros-unspecified",
+      "label": "ROS (version unspecified)",
+      "denominator": 68,
+      "anyMention": 15,
+      "requiredOrOption": 7,
+      "preferredOnly": 8,
+      "contextOnly": 0,
+      "unobserved": 53,
+      "employersMentioning": 9,
+      "employerDenominator": 27
+    },
+    {
+      "skillId": "commissioning",
+      "label": "Commissioning",
+      "denominator": 68,
+      "anyMention": 13,
+      "requiredOrOption": 2,
+      "preferredOnly": 3,
+      "contextOnly": 8,
+      "unobserved": 55,
+      "employersMentioning": 10,
+      "employerDenominator": 27
+    },
+    {
+      "skillId": "root-cause",
+      "label": "Root cause analysis",
+      "denominator": 68,
+      "anyMention": 13,
+      "requiredOrOption": 5,
+      "preferredOnly": 0,
+      "contextOnly": 8,
+      "unobserved": 55,
+      "employersMentioning": 12,
+      "employerDenominator": 27
+    },
+    {
+      "skillId": "operator-training",
+      "label": "Operator / customer training",
+      "denominator": 68,
+      "anyMention": 7,
+      "requiredOrOption": 1,
+      "preferredOnly": 0,
+      "contextOnly": 6,
+      "unobserved": 61,
+      "employersMentioning": 5,
+      "employerDenominator": 27
+    },
+    {
+      "skillId": "can",
+      "label": "CAN bus",
+      "denominator": 68,
+      "anyMention": 6,
+      "requiredOrOption": 4,
+      "preferredOnly": 2,
+      "contextOnly": 0,
+      "unobserved": 62,
+      "employersMentioning": 6,
+      "employerDenominator": 27
+    },
+    {
+      "skillId": "ros2",
+      "label": "ROS 2",
+      "denominator": 68,
+      "anyMention": 6,
+      "requiredOrOption": 2,
+      "preferredOnly": 4,
+      "contextOnly": 0,
+      "unobserved": 62,
+      "employersMentioning": 6,
+      "employerDenominator": 27
+    },
+    {
+      "skillId": "plc",
+      "label": "PLC programming",
+      "denominator": 68,
+      "anyMention": 5,
+      "requiredOrOption": 1,
+      "preferredOnly": 4,
+      "contextOnly": 0,
+      "unobserved": 63,
+      "employersMentioning": 4,
+      "employerDenominator": 27
+    },
+    {
+      "skillId": "ethercat",
+      "label": "EtherCAT",
+      "denominator": 68,
+      "anyMention": 4,
+      "requiredOrOption": 1,
+      "preferredOnly": 3,
+      "contextOnly": 0,
+      "unobserved": 64,
+      "employersMentioning": 4,
+      "employerDenominator": 27
+    },
+    {
+      "skillId": "networking",
+      "label": "Networking / communication protocols",
+      "denominator": 68,
+      "anyMention": 3,
+      "requiredOrOption": 1,
+      "preferredOnly": 2,
+      "contextOnly": 0,
+      "unobserved": 65,
+      "employersMentioning": 3,
+      "employerDenominator": 27
+    }
+  ],
+  "manuallyReviewedRecords": [
+    {
+      "id": "agile-robots:greenhouse:4964789101",
+      "sourcePostingId": "4964789101",
+      "title": "Forward Deployed Engineer for Robotics (m/f/d)",
+      "employer": "Agile Robots",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4964789101",
+      "sourceTextSha256": "d98e1d75b4edd1b615b274f0bc4fef21a459389ecd2b9004697630906892cf14",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "reviewStatus": "machine-screened",
+      "audit": {
+        "scope": "core-industrial-and-application-integration",
+        "output": "Customer-specific robotic workcell workflows, integrated models, commissioned automation and mobile manipulation, with remote and on-site troubleshooting.",
+        "education": "Master’s in robotics, CS, AI, mechanical/electrical engineering or a related field, OR equivalent practical experience.",
+        "experience": "Minimum four professional years in robotics, AI, industrial automation, OR software engineering.",
+        "wordingNotes": "C++ and Python and Linux are Essential Skills. PLC, CAD, EtherCAT/CAN/OPC UA/Modbus and functional safety standards are Beneficial Skills. Travel up to 40%."
+      }
+    },
+    {
+      "id": "standard-bots:ashby:0f10edc9-c87b-4c9e-b0ab-f6cc5be6af91",
+      "sourcePostingId": "0f10edc9-c87b-4c9e-b0ab-f6cc5be6af91",
+      "title": "Senior Applications Engineer (West Coast)",
+      "employer": "Standard Bots",
+      "locations": [
+        "US-West Coast (remote)"
+      ],
+      "url": "https://jobs.ashbyhq.com/standardbots/0f10edc9-c87b-4c9e-b0ab-f6cc5be6af91",
+      "sourceTextSha256": "c780832670315df2f71dc88ef19c56ae89c94a3fab675c309f75828f683e06df",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "reviewStatus": "machine-screened",
+      "audit": {
+        "scope": "core-industrial-integration",
+        "output": "Proof of concept and installed cell: fixture, wiring, robot configuration, PLC handshakes, test/sign-off and customer training.",
+        "education": "Bachelor’s in mechanical, electrical, mechatronics or related engineering, OR equivalent hands-on experience.",
+        "experience": "6+ hands-on years covering industrial automation fundamentals, including PLC/ladder logic, pneumatics, DC power, robot programming and Python.",
+        "wordingNotes": "CAD proficiency required; SolidWorks preferred. Up to 50% domestic travel. West Coast residence, California preferred."
+      }
+    },
+    {
+      "id": "intrinsic:greenhouse:6015988004",
+      "sourcePostingId": "6015988004",
+      "title": "Senior Robotics Application Engineer, Customer Success",
+      "employer": "Intrinsic",
+      "locations": [
+        "Singapore"
+      ],
+      "url": "https://boards.greenhouse.io/intrinsicrobotics/jobs/6015988004?gh_jid=6015988004",
+      "sourceTextSha256": "9f1dfa0379060e52343d6a427d57071db3e77c580d39963e178ea3e00fe0fd2d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/intrinsic.json",
+      "rawSourceFileSha256": "562f8ce8af76ed64d64bb6bd12d233a8032a77cc73df4b4e20da9d8f271b8f2e",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "reviewStatus": "machine-screened",
+      "audit": {
+        "scope": "core-industrial-application-integration",
+        "output": "End-to-end production robotic automation solutions, high-quality application software and customer enablement across APAC.",
+        "education": "Bachelor’s in robotics, mechatronics, CS or related technical field, OR equivalent practical experience.",
+        "experience": "Proven production automation delivery track record; no numeric minimum in the full posting.",
+        "wordingNotes": "C++ and/or Python: language alternatives, not both individually mandatory. Robot programming, PLCs, machine vision, industrial buses especially EtherCAT, virtual commissioning and simulation are differentiators; ROS (2)/Gazebo also differentiators. Frequent international travel."
+      }
+    },
+    {
+      "id": "nimble:greenhouse:4398427009",
+      "sourcePostingId": "4398427009",
+      "title": "Senior Systems Integration Engineer",
+      "employer": "Nimble Robotics",
+      "locations": [
+        "San Francisco, California, United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4398427009",
+      "sourceTextSha256": "c563ab21a24e9a8ba966e5fc654f36f40eb5480928b5da7302cdb6afd3ec459f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "reviewStatus": "role-reviewed",
+      "audit": {
+        "scope": "core-warehouse-application-performance",
+        "output": "Warehouse picking/packing performance roadmap, throughput improvements and fleet production SLA, with integration, validation and deployment.",
+        "education": "BS OR MS in mechanical engineering, electrical engineering, robotics or a related technical field. This appears in full source although educationClauses is empty.",
+        "experience": "5+ years in robotics systems integration, hardware validation OR mechatronics.",
+        "wordingNotes": "Role is senior; metrics-driven hardware/software bottleneck work and regressions are central."
+      }
+    },
+    {
+      "id": "skild:greenhouse:5228768008",
+      "sourcePostingId": "5228768008",
+      "title": "Robotics Application Engineer",
+      "employer": "Skild AI",
+      "locations": [
+        "Pittsburgh, San Mateo",
+        "San Mateo, California, United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/5228768008",
+      "sourceTextSha256": "df44d30cc4c0c8cb97abba3f8285fb97fee69d588f8da19e49eed50ea801b095",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "reviewStatus": "role-reviewed",
+      "audit": {
+        "scope": "core-model-to-robot-application-integration",
+        "output": "Software that connects foundation models to production robotics, with configuration, validation, hardware/software/model failure reproduction, documentation and runbooks.",
+        "education": "BS, MS or higher in CS, robotics or related field, OR equivalent practical experience; all under Preferred Qualifications.",
+        "experience": "3–5+ hands-on years in application development, system integration OR field deployment, under Preferred Qualifications.",
+        "wordingNotes": "Python and C++ and ROS/ROS2 also under Preferred Qualifications; do not convert to universal hard requirements."
+      }
+    },
+    {
+      "id": "agility:greenhouse:6238079004",
+      "sourcePostingId": "6238079004",
+      "title": "Systems Integration Engineer III",
+      "employer": "Agility Robotics",
+      "locations": [
+        "Fremont, California, United States",
+        "Hybrid- Fremont, CA; Hybrid- Salem, OR",
+        "Salem, Oregon, United States"
+      ],
+      "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=6238079004",
+      "sourceTextSha256": "ceb2329c5db43bc62dc5f0812b1c02708866ab50320b44ad5b37975b9c92f093",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agility.json",
+      "rawSourceFileSha256": "ac356350940b45d164fbf75881d9254f4c3aadaa5e83e8f798a621610cb7c731",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "reviewStatus": "machine-screened",
+      "audit": {
+        "scope": "adjacent-internal-subsystem-integration",
+        "output": "Tested subsystem configurations, bring-up, functional interface tests and documented residual risks for internal customer handoff.",
+        "education": "Bachelor’s with 3+ years OR master’s with 1+ years in integration/test/bring-up or related electromechanical R&D. Separately names mechanical/electrical/computer/systems engineering or robotics disciplines.",
+        "experience": "Preserve education-linked alternatives rather than reporting a single 3-year minimum.",
+        "wordingNotes": "Commissioning here means functional assets for internal customers; this differs from commissioning a complete customer application. EtherCAT/git/actuators/embedded compute/power are preferred."
+      }
+    },
+    {
+      "id": "gatik:greenhouse:4661964006",
+      "sourcePostingId": "4661964006",
+      "title": "Senior Robotics Integration Engineer",
+      "employer": "Gatik",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4661964006?gh_jid=4661964006",
+      "sourceTextSha256": "0c53b198bc2f2916e1042eaf37da84fb40c67f475b4346f1d17f76666457b0e0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "reviewStatus": "machine-screened",
+      "audit": {
+        "scope": "adjacent-av-integration-and-test",
+        "output": "Autonomous truck hardware/software integration; perception/navigation/control validation, lab and on-road tests, sensor integration and automated test workflows.",
+        "education": "Bachelor’s OR master’s in robotics, EE, CS or related field.",
+        "experience": "4+ years testing/validation/integration autonomous OR robotic systems; AV/transportation environment preferred.",
+        "wordingNotes": "ROS/ROS2, C++ and Python appear in core qualifications; Linux/Docker/Git appear in Bonus Points. Demonstrates why cohort ROS usage cannot be equated with industrial PLC demand."
+      }
+    },
+    {
+      "id": "bedrock:ashby:9f499006-5789-4d84-8b11-cff85ee0c25e",
+      "sourcePostingId": "9f499006-5789-4d84-8b11-cff85ee0c25e",
+      "title": "Robotics Application Engineer",
+      "employer": "Bedrock Robotics",
+      "locations": [
+        "New York, NY",
+        "Remote",
+        "San Francisco, CA"
+      ],
+      "url": "https://jobs.ashbyhq.com/bedrock-robotics/9f499006-5789-4d84-8b11-cff85ee0c25e",
+      "sourceTextSha256": "48a20af8bddc41b30852fc92ff9fb4adf411c074b9b4cdc3f449560325f42fc3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/bedrock.json",
+      "rawSourceFileSha256": "f2897d1ac1b7da9dd6ee4984e385bc28b69e753fe84260a185e94c41d1d38c98",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "reviewStatus": "machine-screened",
+      "audit": {
+        "scope": "adjacent-off-road-autonomy-deployment",
+        "output": "Autonomous excavator site readiness, release evaluations on site data, full-stack issue debugging and performance feedback to customer and engineering teams.",
+        "education": "BS OR MS in robotics, ME, EE, CS or related technical field.",
+        "experience": "3+ professional years supporting critical onboard/offboard systems; deployed robotics experience is a plus.",
+        "wordingNotes": "Generalist software language list includes Python/Rust/C++ etc, not three individually required languages. CAN/electrical troubleshooting and logs are explicit. Up to 40% travel."
+      }
+    },
+    {
+      "id": "formic:greenhouse:4710422006",
+      "sourcePostingId": "4710422006",
+      "title": "Solutions Engineer (Application Engineer): End-of-Line Automation",
+      "employer": "Formic",
+      "locations": [
+        "Chicago || Bolingbrook, IL"
+      ],
+      "url": "https://job-boards.greenhouse.io/formic/jobs/4710422006",
+      "sourceTextSha256": "89ffd71e2e7a5c1f3916d188bff0d11c78140f00c2d07b1e4e8909277601d724",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/formic.json",
+      "rawSourceFileSha256": "65e248fa4c2c4131e404bd620ba3caaca4baf177ba3c8302e27fe848266d4e1f",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "reviewStatus": "machine-screened",
+      "audit": {
+        "scope": "adjacent-presales-application-scoping",
+        "output": "Customer requirements, scoped end-of-line automation designs, estimates and documented deployment handoff; this specific job is primarily pre-sales.",
+        "education": "Engineering bachelor’s required, but equivalent technical education plus relevant automation experience may be considered.",
+        "experience": "3+ years pre-sales technical work AND 3+ years manufacturing environments.",
+        "wordingNotes": "Use to explain discovery/scoping/handoff, not to imply this job personally owns all commissioning activities described for the wider team."
+      }
+    },
+    {
+      "id": "shield-ai:lever:ac228821-b2f8-4155-a119-b05e16ebaefe",
+      "sourcePostingId": "ac228821-b2f8-4155-a119-b05e16ebaefe",
+      "title": "Senior Generative AI Application Engineer, Learning & Development (R5856)",
+      "employer": "Shield AI",
+      "locations": [
+        "Dallas, Texas",
+        "San Diego, California",
+        "Washington, D.C."
+      ],
+      "url": "https://jobs.lever.co/shieldai/ac228821-b2f8-4155-a119-b05e16ebaefe",
+      "sourceTextSha256": "ec21df52eaaec0e966db0ae351711074aae2d7b296350f69e00ff88e71af4017",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "reviewStatus": "machine-screened",
+      "audit": {
+        "scope": "out-of-core-training-product-false-positive",
+        "output": "AI-powered Hivemind learning coach, workshops, curricula and content-update tooling.",
+        "education": "Bachelor’s OR equivalent practical experience is preferred.",
+        "experience": "Progressive production software/AI-enabled product/developer tooling or comparable experience; no numeric minimum.",
+        "wordingNotes": "Clear application-engineer title false positive for a robot application integration guide. Do not use its salary as an integration salary observation."
+      }
+    }
+  ],
+  "salaryObservations": [
+    {
+      "recordId": "standard-bots:ashby:0f10edc9-c87b-4c9e-b0ab-f6cc5be6af91",
+      "minimum": 150000,
+      "maximum": 200000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "Salary component, with base salary described separately from equity and benefits; official ATS structured interval 1 YEAR.",
+      "location": "US West Coast remote; West Coast residence required, California preferred.",
+      "caveat": "Senior title; experience and seniority affect offer."
+    },
+    {
+      "recordId": "nimble:greenhouse:4398427009",
+      "minimum": 160000,
+      "maximum": 190000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "Full posting explicitly states expected starting pay per year; cash compensation, equity additional.",
+      "location": "San Francisco, California, United States",
+      "caveat": "Senior title; source-specific starting pay, individualized factors. Structured compensation array is empty, so derive from full posting."
+    },
+    {
+      "recordId": "skild:greenhouse:5228768008",
+      "minimum": 100000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "not-explicit-in-full-posting",
+      "basis": "Explicit Base Salary Range in full posting; no period stated there.",
+      "location": "Source location field Pittsburgh, San Mateo; normalized record additionally San Mateo, California.",
+      "caveat": "Do not silently add annual period. Very broad company-specific band; do not average observations."
+    }
+  ],
+  "portfolio": {
+    "name": "Simulated workcell integration and acceptance bench",
+    "level": "Technical learner with Python/Linux fundamentals; ROS 2 topic/launch basics before the extension.",
+    "coreBuild": "Implement a Python state machine coordinating simulated conveyor, detector and pick station. Publish a small interface contract for ready/request/busy/done/fault, command IDs, units, timeouts and reset/recovery. Connect it to a localhost PyModbus simulator for I/O; no physical robot or PLC required.",
+    "progression": [
+      "First validate one complete command/acknowledge cycle and reject stale or duplicated command IDs.",
+      "Add ROS 2 nodes as a separate extension: orchestrator and simulated robot/station; define topic types and QoS explicitly.",
+      "Inject unavailable server, invalid register address, missing completion, delayed signal and node restart. For ROS extension add incompatible QoS and stopped publisher cases.",
+      "Measure successful cycles/attempts, cycle-time distribution and recovery time against self-declared acceptance criteria; retain failed runs, logs and a before/after fix.",
+      "Deliver interface table, architecture sketch, acceptance matrix, automated test results, reproduction instructions, short demo and handover runbook. For ROS extension record relevant topics with ros2 bag and use launch_testing."
+    ],
+    "safetyScope": "All plant behavior is simulated. Fault detection/recovery in application code is a learning exercise, not safety-rated stopping, industrial cell certification or authorization to commission physical equipment.",
+    "rationale": "Exercises interfaces, configuration, cross-component debugging, performance evidence and handoff seen in selected integration postings without requiring an industrial cell."
+  },
+  "primaryReferences": [
+    {
+      "id": "ros2-jazzy-qos",
+      "url": "https://raw.githubusercontent.com/ros2/ros2_documentation/jazzy/source/Concepts/Intermediate/About-Quality-of-Service-Settings.rst",
+      "status": "accessed-official-source",
+      "supports": "ROS 2 QoS covers reliability, durability, deadline, lifespan and liveliness; incompatible requested/offered QoS may prevent messages. Supports testing a deliberately incompatible profile and stale-signal handling in a lab. These mechanisms do not establish industrial functional safety."
+    },
+    {
+      "id": "ros2-jazzy-integration-testing",
+      "url": "https://raw.githubusercontent.com/ros2/ros2_documentation/jazzy/source/Tutorials/Intermediate/Testing/Integration.rst",
+      "status": "accessed-official-source",
+      "supports": "launch_testing supports active tests with nodes running and post-shutdown tests, uses unittest, can integrate with colcon test, and the tutorial isolates tests using ROS domain IDs. Supports repeatable acceptance checks of multiple communicating nodes."
+    },
+    {
+      "id": "ros2-jazzy-bags",
+      "url": "https://raw.githubusercontent.com/ros2/ros2_documentation/jazzy/source/Tutorials/Beginner-CLI-Tools/Recording-And-Playing-Back-Data/Recording-And-Playing-Back-Data.rst",
+      "status": "accessed-official-source",
+      "supports": "ros2 bag records and replays topic data. Supports sharing a reproducible failure recording alongside a test report; project can restrict itself to topic recording rather than relying on service introspection features."
+    },
+    {
+      "id": "modbus-specifications",
+      "url": "https://www.modbus.org/modbus-specifications",
+      "status": "accessed",
+      "supports": "Official index identifies application protocol function-code specification and TCP/IP client/server/gateway implementation guide. Supports reading request/response and register interface documentation; not evidence that Modbus is universal across robot jobs."
+    },
+    {
+      "id": "pymodbus-3.11.4-simulator",
+      "url": "https://pymodbus.readthedocs.io/en/v3.11.4/source/library/simulator/config.html",
+      "status": "accessed-versioned-primary-docs",
+      "supports": "Simulator offers JSON server/device configuration, TCP server, discrete/coils/register types, invalid register exception responses and register manipulation via actions, Web UI, REST API or writes. Supports an entirely simulated I/O handshake and injected invalid-address cases."
+    },
+    {
+      "id": "osha-industrial-robot-integration",
+      "url": "https://www.osha.gov/otm/section-4-safety-hazards/chapter-4",
+      "status": "accessed",
+      "supports": "US OSHA technical guidance discusses application-specific documented risk assessment before commissioning, involvement of user/workers and verification/validation of risk-reduction measures. The chapter references older standard editions; use as responsibility context, not a claim of current worldwide legal requirements or certification authority."
+    }
+  ],
+  "accessFailures": [
+    {
+      "url": "https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Quality-of-Service-Settings.html",
+      "result": "Anubis Access Denied error code 9e4edb5b6b850c41; used official ros2_documentation jazzy raw source instead."
+    },
+    {
+      "url": "https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Testing/Integration.html",
+      "result": "Anubis Access Denied error code 9e4edb5b6b850c41; used official ros2_documentation jazzy raw source instead."
+    },
+    {
+      "url": "https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Recording-And-Playing-Back-Data/Recording-And-Playing-Back-Data.html",
+      "result": "Anubis Access Denied error code 9e4edb5b6b850c41; used official ros2_documentation jazzy raw source instead."
+    }
+  ],
+  "additionalAccessedUrls": [
+    {
+      "url": "https://pymodbus.readthedocs.io/en/latest/source/library/simulator/config.html",
+      "result": "Accessible but resolves to development docs 4.0.0dev16; prefer explicitly versioned 3.11.4 link."
+    },
+    {
+      "url": "https://repo.test.ros2.org/en/jazzy/Concepts/Intermediate/About-Quality-of-Service-Settings.html",
+      "result": "Search returned official ROS test-build documentation; final evidence uses ros2 official repository source."
+    }
+  ],
+  "limitations": [
+    "Job sources were read from the preserved November 2 local snapshot, not reverified as currently open roles.",
+    "Only ten selected full postings manually audited; no new large collection, average salary or universal credential rule.",
+    "SEO must complete before article drafting."
+  ]
+}
