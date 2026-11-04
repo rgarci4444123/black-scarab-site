@@ -1,0 +1,525 @@
+{
+  "date": "2026-11-03",
+  "baseDate": "2026-10-01",
+  "previousDate": "2026-11-02",
+  "level": 915.7047540166466,
+  "previousLevel": 911.889770523699,
+  "dailyReturn": 0.004183601588991115,
+  "sinceLaunch": -0.08429524598335347,
+  "benchmarks": {
+    "S&P 500": {
+      "close": 7568.92,
+      "rebased": 987.2783361268906,
+      "dailyReturn": 0.0036491898056063565,
+      "sinceLaunch": -0.012721663873109468
+    },
+    "Nasdaq Composite": {
+      "close": 25372.0098,
+      "rebased": 944.194385895736,
+      "dailyReturn": 0.008251609529099424,
+      "sinceLaunch": -0.0558056141042641
+    }
+  },
+  "excessReturns": {
+    "S&P 500": {
+      "daily": 0.0005344117833847584,
+      "sinceLaunch": -0.071573582110244
+    },
+    "Nasdaq Composite": {
+      "daily": -0.004068007940108309,
+      "sinceLaunch": -0.028489631879089372
+    }
+  },
+  "constituents": [
+    {
+      "ticker": "6954",
+      "company": "FANUC",
+      "baseClose": 6127,
+      "previousClose": 5648,
+      "close": 5648,
+      "relative": 0.9218214460584299,
+      "previousWeight": 0.0673927540992904,
+      "dailyReturn": 0,
+      "contribution": 0,
+      "weight": 0.06711198429515285,
+      "sourceDate": "2026-11-02",
+      "carriedForward": true
+    },
+    {
+      "ticker": "6506",
+      "company": "Yaskawa Electric",
+      "baseClose": 4779,
+      "previousClose": 3917,
+      "close": 3917,
+      "relative": 0.8196275371416615,
+      "previousWeight": 0.059921536106346776,
+      "dailyReturn": 0,
+      "contribution": 0,
+      "weight": 0.05967189268130715,
+      "sourceDate": "2026-11-02",
+      "carriedForward": true
+    },
+    {
+      "ticker": "002747",
+      "company": "Estun Automation",
+      "baseClose": 28.22,
+      "previousClose": 28.98,
+      "close": 27.54,
+      "relative": 0.9759036144578314,
+      "previousWeight": 0.07507714840283201,
+      "dailyReturn": -0.049689440993788914,
+      "contribution": -0.003730541535544455,
+      "weight": 0.07104936463251417,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    },
+    {
+      "ticker": "TER",
+      "company": "Teradyne",
+      "baseClose": 415.79,
+      "previousClose": 261.01,
+      "close": 269.35,
+      "relative": 0.6478029774645855,
+      "previousWeight": 0.045893322877252264,
+      "dailyReturn": 0.031952798743343225,
+      "contribution": 0.001466420109560111,
+      "weight": 0.047162434152351905,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    },
+    {
+      "ticker": "6268",
+      "company": "Nabtesco",
+      "baseClose": 4975,
+      "previousClose": 4283,
+      "close": 4283,
+      "relative": 0.8609045226130654,
+      "previousWeight": 0.06293922434057991,
+      "dailyReturn": 0,
+      "contribution": 0,
+      "weight": 0.0626770087073586,
+      "sourceDate": "2026-11-02",
+      "carriedForward": true
+    },
+    {
+      "ticker": "300124",
+      "company": "Inovance",
+      "baseClose": 51.9,
+      "previousClose": 55.16,
+      "close": 56.52,
+      "relative": 1.0890173410404624,
+      "previousWeight": 0.07770040754736443,
+      "dailyReturn": 0.024655547498187103,
+      "contribution": 0.0019157460889125393,
+      "weight": 0.07928445904742386,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    },
+    {
+      "ticker": "6861",
+      "company": "Keyence",
+      "baseClose": 81200,
+      "previousClose": 74890,
+      "close": 74890,
+      "relative": 0.9222906403940887,
+      "previousWeight": 0.06742705607677535,
+      "dailyReturn": 0,
+      "contribution": 0,
+      "weight": 0.06714614336470015,
+      "sourceDate": "2026-11-02",
+      "carriedForward": true
+    },
+    {
+      "ticker": "CGNX",
+      "company": "Cognex",
+      "baseClose": 62.22,
+      "previousClose": 56.41,
+      "close": 58.11,
+      "relative": 0.9339440694310511,
+      "previousWeight": 0.06628152468755757,
+      "dailyReturn": 0.030136500620457474,
+      "contribution": 0.001997493209871446,
+      "weight": 0.06799455576588412,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    },
+    {
+      "ticker": "OUST",
+      "company": "Ouster",
+      "baseClose": 40.87,
+      "previousClose": 28.22,
+      "close": 28.98,
+      "relative": 0.709077563004649,
+      "previousWeight": 0.05047993287991523,
+      "dailyReturn": 0.02693125442948263,
+      "contribution": 0.001359487915972203,
+      "weight": 0.05162344885323584,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    },
+    {
+      "ticker": "HSAI",
+      "company": "Hesai",
+      "baseClose": 15.93,
+      "previousClose": 12.3,
+      "close": 12.07,
+      "relative": 0.7576898932831136,
+      "previousWeight": 0.05644893240551943,
+      "dailyReturn": -0.0186991869918699,
+      "contribution": -0.0010555491425422322,
+      "weight": 0.05516260490145856,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    },
+    {
+      "ticker": "ROK",
+      "company": "Rockwell Automation",
+      "baseClose": 442.45,
+      "previousClose": 440.16,
+      "close": 446.38,
+      "relative": 1.008882359588654,
+      "previousWeight": 0.07272986319811654,
+      "dailyReturn": 0.014131225009087478,
+      "contribution": 0.0010277620617327354,
+      "weight": 0.07345033830779285,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    },
+    {
+      "ticker": "SIE",
+      "company": "Siemens",
+      "baseClose": 271.9,
+      "previousClose": 270.35,
+      "close": 269.75,
+      "relative": 0.9920926811327695,
+      "previousWeight": 0.07269148873838918,
+      "dailyReturn": -0.002219345293138608,
+      "contribution": -0.00016132751338278218,
+      "weight": 0.07222798809922484,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    },
+    {
+      "ticker": "NXPI",
+      "company": "NXP Semiconductors",
+      "baseClose": 239.19,
+      "previousClose": 257.24,
+      "close": 262.79,
+      "relative": 1.0986663322045236,
+      "previousWeight": 0.0786252210002435,
+      "dailyReturn": 0.02157518270875447,
+      "contribution": 0.0016963535085964523,
+      "weight": 0.07998694101530975,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    },
+    {
+      "ticker": "6383",
+      "company": "Daifuku",
+      "baseClose": 5832,
+      "previousClose": 5214,
+      "close": 5214,
+      "relative": 0.8940329218106996,
+      "previousWeight": 0.06536118368029328,
+      "dailyReturn": 0,
+      "contribution": 0,
+      "weight": 0.06508887774792142,
+      "sourceDate": "2026-11-02",
+      "carriedForward": true
+    },
+    {
+      "ticker": "HEXA B",
+      "company": "Hexagon",
+      "baseClose": 99.02,
+      "previousClose": 109.75,
+      "close": 109.3,
+      "relative": 1.1038174106241163,
+      "previousWeight": 0.08103040395952424,
+      "dailyReturn": -0.004100227790432842,
+      "contribution": -0.0003322431141848407,
+      "weight": 0.08036195842836405,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    }
+  ],
+  "weightTotal": 1.0000000000000002,
+  "contributionTotal": 0.0041836015889911765,
+  "reconciliationDifference": 6.158268339717665e-17,
+  "topPositive": [
+    {
+      "ticker": "CGNX",
+      "company": "Cognex",
+      "baseClose": 62.22,
+      "previousClose": 56.41,
+      "close": 58.11,
+      "relative": 0.9339440694310511,
+      "previousWeight": 0.06628152468755757,
+      "dailyReturn": 0.030136500620457474,
+      "contribution": 0.001997493209871446,
+      "weight": 0.06799455576588412,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    },
+    {
+      "ticker": "300124",
+      "company": "Inovance",
+      "baseClose": 51.9,
+      "previousClose": 55.16,
+      "close": 56.52,
+      "relative": 1.0890173410404624,
+      "previousWeight": 0.07770040754736443,
+      "dailyReturn": 0.024655547498187103,
+      "contribution": 0.0019157460889125393,
+      "weight": 0.07928445904742386,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    },
+    {
+      "ticker": "NXPI",
+      "company": "NXP Semiconductors",
+      "baseClose": 239.19,
+      "previousClose": 257.24,
+      "close": 262.79,
+      "relative": 1.0986663322045236,
+      "previousWeight": 0.0786252210002435,
+      "dailyReturn": 0.02157518270875447,
+      "contribution": 0.0016963535085964523,
+      "weight": 0.07998694101530975,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    }
+  ],
+  "topNegative": [
+    {
+      "ticker": "002747",
+      "company": "Estun Automation",
+      "baseClose": 28.22,
+      "previousClose": 28.98,
+      "close": 27.54,
+      "relative": 0.9759036144578314,
+      "previousWeight": 0.07507714840283201,
+      "dailyReturn": -0.049689440993788914,
+      "contribution": -0.003730541535544455,
+      "weight": 0.07104936463251417,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    },
+    {
+      "ticker": "HSAI",
+      "company": "Hesai",
+      "baseClose": 15.93,
+      "previousClose": 12.3,
+      "close": 12.07,
+      "relative": 0.7576898932831136,
+      "previousWeight": 0.05644893240551943,
+      "dailyReturn": -0.0186991869918699,
+      "contribution": -0.0010555491425422322,
+      "weight": 0.05516260490145856,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    },
+    {
+      "ticker": "HEXA B",
+      "company": "Hexagon",
+      "baseClose": 99.02,
+      "previousClose": 109.75,
+      "close": 109.3,
+      "relative": 1.1038174106241163,
+      "previousWeight": 0.08103040395952424,
+      "dailyReturn": -0.004100227790432842,
+      "contribution": -0.0003322431141848407,
+      "weight": 0.08036195842836405,
+      "sourceDate": "2026-11-03",
+      "carriedForward": false
+    }
+  ],
+  "receiptPath": "data/bspi15/raw/marketstack/2026-11-04T12-35-29-058Z",
+  "auditStatus": "passed",
+  "marketHolidays": [
+    {
+      "date": "2026-11-03",
+      "ticker": "6954",
+      "sourceSymbol": "6954.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-11-02",
+      "previousAvailableClose": 5648,
+      "holiday": "Culture Day",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "JPX official 2026 Market Holidays lists November 3, Tuesday, as Culture Day. Tokyo cash equities were closed. Carry the November 2 canonical close with zero daily return.",
+      "canonicalClose": null,
+      "status": "verified-market-closure"
+    },
+    {
+      "date": "2026-11-03",
+      "ticker": "6506",
+      "sourceSymbol": "6506.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-11-02",
+      "previousAvailableClose": 3917,
+      "holiday": "Culture Day",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "JPX official 2026 Market Holidays lists November 3, Tuesday, as Culture Day. Tokyo cash equities were closed. Carry the November 2 canonical close with zero daily return.",
+      "canonicalClose": null,
+      "status": "verified-market-closure"
+    },
+    {
+      "date": "2026-11-03",
+      "ticker": "6268",
+      "sourceSymbol": "6268.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-11-02",
+      "previousAvailableClose": 4283,
+      "holiday": "Culture Day",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "JPX official 2026 Market Holidays lists November 3, Tuesday, as Culture Day. Tokyo cash equities were closed. Carry the November 2 canonical close with zero daily return.",
+      "canonicalClose": null,
+      "status": "verified-market-closure"
+    },
+    {
+      "date": "2026-11-03",
+      "ticker": "6861",
+      "sourceSymbol": "6861.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-11-02",
+      "previousAvailableClose": 74890,
+      "holiday": "Culture Day",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "JPX official 2026 Market Holidays lists November 3, Tuesday, as Culture Day. Tokyo cash equities were closed. Carry the November 2 canonical close with zero daily return.",
+      "canonicalClose": null,
+      "status": "verified-market-closure"
+    },
+    {
+      "date": "2026-11-03",
+      "ticker": "6383",
+      "sourceSymbol": "6383.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-11-02",
+      "previousAvailableClose": 5214,
+      "holiday": "Culture Day",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "JPX official 2026 Market Holidays lists November 3, Tuesday, as Culture Day. Tokyo cash equities were closed. Carry the November 2 canonical close with zero daily return.",
+      "canonicalClose": null,
+      "status": "verified-market-closure"
+    }
+  ],
+  "carriedForward": [
+    {
+      "date": "2026-11-03",
+      "ticker": "6954",
+      "sourceSymbol": "6954.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-11-02",
+      "previousAvailableClose": 5648,
+      "holiday": "Culture Day",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "JPX official 2026 Market Holidays lists November 3, Tuesday, as Culture Day. Tokyo cash equities were closed. Carry the November 2 canonical close with zero daily return.",
+      "canonicalClose": null,
+      "status": "verified-market-closure"
+    },
+    {
+      "date": "2026-11-03",
+      "ticker": "6506",
+      "sourceSymbol": "6506.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-11-02",
+      "previousAvailableClose": 3917,
+      "holiday": "Culture Day",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "JPX official 2026 Market Holidays lists November 3, Tuesday, as Culture Day. Tokyo cash equities were closed. Carry the November 2 canonical close with zero daily return.",
+      "canonicalClose": null,
+      "status": "verified-market-closure"
+    },
+    {
+      "date": "2026-11-03",
+      "ticker": "6268",
+      "sourceSymbol": "6268.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-11-02",
+      "previousAvailableClose": 4283,
+      "holiday": "Culture Day",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "JPX official 2026 Market Holidays lists November 3, Tuesday, as Culture Day. Tokyo cash equities were closed. Carry the November 2 canonical close with zero daily return.",
+      "canonicalClose": null,
+      "status": "verified-market-closure"
+    },
+    {
+      "date": "2026-11-03",
+      "ticker": "6861",
+      "sourceSymbol": "6861.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-11-02",
+      "previousAvailableClose": 74890,
+      "holiday": "Culture Day",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "JPX official 2026 Market Holidays lists November 3, Tuesday, as Culture Day. Tokyo cash equities were closed. Carry the November 2 canonical close with zero daily return.",
+      "canonicalClose": null,
+      "status": "verified-market-closure"
+    },
+    {
+      "date": "2026-11-03",
+      "ticker": "6383",
+      "sourceSymbol": "6383.T",
+      "expectedMic": "XJPX",
+      "previousAvailableDate": "2026-11-02",
+      "previousAvailableClose": 5214,
+      "holiday": "Culture Day",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "JPX official 2026 Market Holidays lists November 3, Tuesday, as Culture Day. Tokyo cash equities were closed. Carry the November 2 canonical close with zero daily return.",
+      "canonicalClose": null,
+      "status": "verified-market-closure"
+    }
+  ],
+  "approvedProviderMicExceptions": [
+    {
+      "date": "2026-11-03",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "sourceName": "Ouster Inc - Class A",
+      "sourceCurrency": "USD",
+      "expectedMic": "XNAS",
+      "receivedMic": "XNYS",
+      "sourceApi": "v2",
+      "exceptionId": "ouster-marketstack-legacy-nyse-tag",
+      "approvalRecord": "data/bspi15/provider-mic-exceptions.json",
+      "status": "approved-provider-MIC-exception"
+    }
+  ],
+  "corporateActions": {
+    "providerDividends": 0,
+    "providerSplitFlags": 0,
+    "relevantEffectiveDateEventsIdentified": [],
+    "review": "Provider split/dividend and identity fields, raw/adjusted closes, price changes and date-specific corporate-action searches.",
+    "upcomingEvents": [
+      {
+        "ticker": "6861",
+        "type": "stock-split",
+        "ratio": 5,
+        "recordDate": "2026-11-20",
+        "legalEffectiveDate": "2026-11-21",
+        "exchangeExDate": null,
+        "status": "pending-exchange-ex-date-and-effective-split-validation",
+        "currentDateImpact": "none",
+        "record": "data/bspi15/raw/corporate-actions/2026-10-29-keyence/sources.json"
+      }
+    ],
+    "announcementsReviewed": [
+      {
+        "ticker": "6861",
+        "announcementDate": "2026-10-29",
+        "event": "Previously announced 5-for-1 split with November 20 record date and November 21 legal effective date.",
+        "source": "https://www.keyence.co.jp/pdf/PressRelease_20261029_02.pdf",
+        "treatment": "No November 3 adjustment. JPX was closed; carry the November 2 canonical close. Official exchange ex-date and split reconciliation remain pending for the future split-priced session."
+      }
+    ]
+  },
+  "calendarNotes": [
+    {
+      "date": "2026-11-03",
+      "mic": "XJPX",
+      "status": "closed",
+      "name": "Culture Day",
+      "source": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "treatment": "Five Japanese constituents carry their November 2 canonical prices with zero daily return. All other tracked markets open."
+    }
+  ]
+}

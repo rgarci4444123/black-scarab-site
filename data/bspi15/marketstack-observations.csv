@@ -526,3 +526,15 @@ Date,Ticker,Company,Marketstack Symbol,MIC,Currency,Type,Close,Adjusted Close,Di
 2026-11-02,S&P 500,S&P 500,GSPC.INDX,INDX,USD,Benchmark,7541.4,7541.4,0,1,v1
 2026-11-02,SIE,Siemens,SIE.DE,XETR,EUR,Constituent,270.35,270.35,0,1,v2
 2026-11-02,TER,Teradyne,TER,XNAS,USD,Constituent,261.01,261.01,0,1,v2
+2026-11-03,002747,Estun Automation,002747.SZ,XSHE,CNY,Constituent,27.54,27.54,0,1,v2
+2026-11-03,300124,Inovance,300124.SZ,XSHE,CNY,Constituent,56.52,56.52,0,1,v2
+2026-11-03,CGNX,Cognex,CGNX,XNAS,USD,Constituent,58.11,58.11,0,1,v2
+2026-11-03,HEXA B,Hexagon,HEXA-B.ST,XSTO,SEK,Constituent,109.3,109.3,0,1,v2
+2026-11-03,HSAI,Hesai,HSAI,XNAS,USD,Constituent,12.07,12.07,0,1,v2
+2026-11-03,Nasdaq Composite,Nasdaq Composite,IXIC.INDX,INDX,USD,Benchmark,25372.0098,25372.0098,0,1,v1
+2026-11-03,NXPI,NXP Semiconductors,NXPI,XNAS,USD,Constituent,262.79,262.79,0,1,v2
+2026-11-03,OUST,Ouster,OUST,XNYS,USD,Constituent,28.98,28.98,0,1,v2
+2026-11-03,ROK,Rockwell Automation,ROK,XNYS,USD,Constituent,446.38,446.38,0,1,v2
+2026-11-03,S&P 500,S&P 500,GSPC.INDX,INDX,USD,Benchmark,7568.92,7568.92,0,1,v1
+2026-11-03,SIE,Siemens,SIE.DE,XETR,EUR,Constituent,269.75,269.75,0,1,v2
+2026-11-03,TER,Teradyne,TER,XNAS,USD,Constituent,269.35,269.35,0,1,v2

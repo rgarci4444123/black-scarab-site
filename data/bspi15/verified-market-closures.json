@@ -19,5 +19,15 @@
     "evidence": "JPX official 2026 Market Holidays lists October 12, Monday, as Sports Day. Tokyo cash equities were closed. Carry the October 9 canonical close with zero daily return.",
     "verifiedAt": "2026-10-13T11:32:45.037298Z",
     "verificationMethod": "Official JPX cash-market holiday calendar retrieved and checked for the exact exchange-local date."
+  },
+  {
+    "mic": "XJPX",
+    "name": "Culture Day",
+    "from": "2026-11-03",
+    "through": "2026-11-03",
+    "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+    "evidence": "JPX official 2026 Market Holidays lists November 3, Tuesday, as Culture Day. Tokyo cash equities were closed. Carry the November 2 canonical close with zero daily return.",
+    "verifiedAt": "2026-11-04T12:35:24.731427+00:00",
+    "verificationMethod": "Official JPX cash-market holiday calendar retrieved and checked for the exact exchange-local date."
   }
 ]
