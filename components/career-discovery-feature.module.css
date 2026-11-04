@@ -10,6 +10,9 @@
 
 .artwork {
   position: relative;
+  min-width: 0;
+  width: 100%;
+  align-self: stretch;
   aspect-ratio: 2 / 1;
 }
 
