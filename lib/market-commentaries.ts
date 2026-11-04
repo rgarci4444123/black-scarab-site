@@ -1,3 +1,4 @@
+import thirdEdition from "@/lib/markets/commentary-2026-11-04.json";
 import firstEdition from "@/lib/markets/commentary-2026-10-21.json";
 import secondEdition from "@/lib/markets/commentary-2026-10-28.json";
 
@@ -19,7 +20,7 @@ export type MarketCommentary = {
   html: string;
 };
 
-export const marketCommentaries: MarketCommentary[] = [secondEdition, firstEdition];
+export const marketCommentaries: MarketCommentary[] = [thirdEdition, secondEdition, firstEdition];
 export const latestMarketCommentary = marketCommentaries[0];
 export function getMarketCommentary(slug: string) {
   return marketCommentaries.find((edition) => edition.slug === slug);

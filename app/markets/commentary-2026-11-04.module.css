@@ -1,0 +1,202 @@
+.scope :global(.editorial-visual .weekly-visual-heading) {
+  margin-bottom: 32px;
+}
+
+.scope :global(.editorial-visual h3) {
+  color: #242b30;
+}
+
+.scope :global(.article-body .editorial-inline-link) {
+  color: #0071e3;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.scope :global(.editorial-visual .editorial-subtitle) {
+  margin: 10px 0 0;
+  color: #86868b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.scope :global(.pmi-countries) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 0 0 28px;
+}
+
+.scope :global(.pmi-country) {
+  padding: 0;
+  color: var(--panel-accent);
+}
+
+.scope :global(.pmi-country[data-tone="expansion"]),
+.scope :global(.earnings-panel[data-tone="profit"]) {
+  --panel-accent: #476a50;
+}
+
+.scope :global(.pmi-country[data-tone="contraction"]),
+.scope :global(.earnings-panel[data-tone="pressure"]) {
+  --panel-accent: #a55b43;
+}
+
+.scope :global(.earnings-panel[data-tone="growth"]) {
+  --panel-accent: #476a50;
+}
+
+.scope :global(.earnings-panel[data-tone="breakeven"]) {
+  --panel-accent: #476a50;
+}
+
+.scope :global(.pmi-country::before),
+.scope :global(.earnings-panel::before) {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--panel-accent);
+  margin-bottom: 20px;
+}
+
+.scope :global(.pmi-country dt) {
+  margin: 0 0 14px;
+  color: #515750;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.scope :global(.pmi-country dd) {
+  margin: 0;
+}
+
+.scope :global(.pmi-reading) {
+  color: var(--panel-accent);
+  font-size: 66px;
+  font-weight: 500;
+  letter-spacing: -2.5px;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.scope :global(.pmi-country .pmi-direction) {
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.scope :global(.pmi-direction.expansion) { color: #526d4b; }
+.scope :global(.pmi-direction.contraction) { color: #a25b4c; }
+
+.scope :global(.pmi-threshold) {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 16px 0 22px;
+  border-top: 1px solid #ededf0;
+  color: #86868b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.scope :global(.pmi-threshold strong) {
+  color: #6e6e73;
+  font-weight: 500;
+}
+
+.scope :global(.earnings-grid) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px 38px;
+  padding-bottom: 27px;
+}
+
+.scope :global(.earnings-panel) {
+  min-width: 0;
+  padding: 0;
+}
+
+.scope :global(.earnings-panel:nth-child(n + 3)) {
+  padding-top: 28px;
+  border-top: 1px solid #ededf0;
+}
+
+.scope :global(.earnings-panel h4) {
+  margin: 0 0 20px;
+  color: #515750;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.scope :global(.earnings-panel .earnings-number) {
+  margin: 0 0 12px;
+  color: var(--panel-accent);
+  font-size: 49px;
+  font-weight: 550;
+  letter-spacing: -1.8px;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.scope :global(.earnings-panel .earnings-metric) {
+  margin: 0 0 7px;
+  color: #343a35;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.scope :global(.earnings-panel .earnings-period) {
+  margin: 0;
+  color: #757970;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.scope :global(.earnings-panel .earnings-interpretation) {
+  margin: 17px 0 0;
+  color: #6e6e73;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.scope :global(.editorial-visual figcaption a:hover) {
+  color: #0071e3;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .scope :global(.pmi-countries) { gap: 12px; margin-bottom: 24px; }
+  .scope :global(.pmi-country) { padding: 0; }
+  .scope :global(.pmi-country dt) { font-size: 13px; }
+  .scope :global(.pmi-reading) { font-size: 50px; letter-spacing: -1.7px; }
+  .scope :global(.pmi-country .pmi-direction) { font-size: 12px; }
+  .scope :global(.pmi-threshold) { font-size: 11px; padding-bottom: 20px; }
+  .scope :global(.earnings-grid) { grid-template-columns: minmax(0, 1fr); gap: 27px; }
+  .scope :global(.earnings-panel) { padding: 0; }
+  .scope :global(.earnings-panel:nth-child(n + 2)) { padding-top: 26px; border-top: 1px solid #ededf0; }
+  .scope :global(.earnings-panel .earnings-number) { font-size: 48px; }
+  .scope :global(.earnings-panel h4) { margin-bottom: 17px; }
+  .scope :global(.earnings-panel .earnings-interpretation) { margin-top: 13px; }
+}
+
+@media (max-width: 360px) {
+  .scope :global(.pmi-reading) { font-size: 40px; letter-spacing: -1.3px; }
+  .scope :global(.pmi-countries) { gap: 16px; }
+}
+
+@media print {
+  .scope :global(.earnings-grid) { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .scope :global(.earnings-panel .earnings-number) { font-size: 28px; }
+  .scope :global(.earnings-panel .earnings-metric) { font-size: 10pt; }
+  .scope :global(.earnings-panel .earnings-period),
+  .scope :global(.earnings-panel .earnings-interpretation) { font-size: 8pt; }
+  .scope :global(.pmi-reading) { font-size: 40px; }
+}

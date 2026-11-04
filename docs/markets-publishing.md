@@ -17,3 +17,7 @@ Use `SitePage` and `SiteSurface` from `components/site-frame.tsx` for the main s
 The homepage commentary card uses `latestMarketCommentary`, so it follows the newest published weekly edition. The Events calendar filters on each event's end date using the current New York calendar date at request time; both the visible calendar and ItemList schema use the same filtered set. Events remain listed through their final day.
 
 Homepage commentary identity: replace the “Featured insight” label above the image with “Weekly Market Commentary” and coverage dates without the year. Keep the edition’s article headline below the image and link to the full edition.
+
+## November 4, 2026
+
+Approved edition: `/markets/us-factories-expand-china-slows`, titled “U.S. Factories Expand as China Slows,” covering October 28 through November 3. Preserve the approved article, original factory cover and performance graphic. The two additional figures use charcoal headings, green positive figures, red negative figures and white panels. Teradyne’s $0.35 million robotics segment pretax profit is positive and green. The inline word “index” links to the Physical AI 15 page. Historical returns use October 27 through November 3 completed closes, with November 2 Japanese closes carried through the November 3 holiday.
