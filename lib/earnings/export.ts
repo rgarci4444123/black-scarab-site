@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
+import { parse, type Font } from "opentype.js";
 import { getMonthGroups, getCalendarWeeks, calendarDisplayName, type EarningsCalendar } from "./calendar";
 
 const escape = (value: string) => value.replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '\"': "&quot;", "'": "&apos;" })[char]!);
@@ -12,8 +13,23 @@ export const artworkSize = { width: 1080, height: 1350 };
 export async function calendarArtwork(calendar: EarningsCalendar) {
   const logo = (await readFile(path.join(process.cwd(), "public/black-scarab-mark.png"))).toString("base64");
   const companyMarks: Record<string, { dataUri: string }> = JSON.parse(await readFile(path.join(process.cwd(), "data/earnings/company-marks.json"), "utf8"));
+  const [regular, bold] = await Promise.all(["Regular", "Bold"].map(async weight => {
+    const bytes = await readFile(path.join(process.cwd(), "lib/earnings/fonts", `LiberationSans-${weight}.ttf`));
+    return parse(Uint8Array.from(bytes).buffer);
+  }));
   const parts: string[] = [];
-  const text = (value: string, x: number, y: number, size: number, color = "#1d1d1f", extra = "") => parts.push(`<text x="${x}" y="${y}" font-size="${size}" fill="${color}" ${extra}>${escape(value)}</text>`);
+  // Outline every label so exports do not depend on fonts installed by the host.
+  const text = (value: string, x: number, y: number, size: number, color = "#1d1d1f", extra = "") => {
+    if (!value) return;
+    const weight = Number(extra.match(/font-weight="(\d+)"/)?.[1] ?? 400);
+    const font: Font = weight >= 600 ? bold : regular;
+    const letterSpacing = Number(extra.match(/letter-spacing="(-?[\d.]+)"/)?.[1] ?? 0);
+    const options = { kerning: true, letterSpacing: letterSpacing / size };
+    const width = font.getAdvanceWidth(value, size, options);
+    const start = extra.includes('text-anchor="end"') ? x - width : x;
+    const outline = font.getPath(value, start, y, size, options).toPathData(2);
+    parts.push(`<path d="${outline}" fill="${color}" aria-label="${escape(value)}"/>`);
+  };
   const rule = (y: number) => parts.push(`<path d="M64 ${y}H1016" stroke="#e1e3e6" stroke-width="1"/>`);
   parts.push(`<image x="61" y="48" width="30" height="37" href="data:image/png;base64,${logo}"/>`);
   text("BLACK SCARAB", 105, 75, 20, "#1d1d1f", 'font-weight="600" letter-spacing="1.6"');

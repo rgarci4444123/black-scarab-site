@@ -3,7 +3,7 @@
 Local preview: http://127.0.0.1:3047/markets/earnings-calendar
 October: http://127.0.0.1:3047/markets/earnings-calendar?month=2026-10
 
-The website uses a semantic HTML month grid with selectable company names, issuer-source links and one page title. Mobile keeps readable type with a horizontally scrollable grid. Downloads use a separately composed SVG calendar grid with the real logo, month, title and website. PNG dimensions are exactly 1080 × 1350. PDF uses the same portrait artwork at higher resolution. iCal contains all-day events, with estimates marked tentative; undated entries are excluded. No dependencies added.
+The website uses a semantic HTML month grid with selectable company names, issuer-source links and one page title. Mobile keeps readable type with a horizontally scrollable grid. Downloads use a separately composed SVG calendar grid with the real logo, month, title and website. PNG dimensions are exactly 1080 × 1350. PDF uses the same portrait artwork at higher resolution. iCal contains all-day events, with estimates marked tentative; undated entries are excluded. Downloads bundle licensed Liberation Sans fonts and outline their labels with opentype.js, so PNG/JPG/PDF rendering is independent of system fonts.
 
 ## Data and monthly workflow
 
@@ -29,7 +29,7 @@ The approved calendar and Markets updates are integrated on production commit 46
 
 ## Latest visual refinement
 
-Markets uses a quiet row of links for commentary, earnings calendar and Physical AI 15. The export design uses Helvetica Neue with a larger month, muted teal weekday labels and compact non-reporting weekend columns. Weekends expand when they contain announcements. Exported company names use familiar short names while formal names, tickers and evidence remain in the data. PNG/JPG stay 1080 × 1350. The optional image/jpeg endpoint is ?format=jpg. Latest visual and file checks are recorded in refinement-qa.json.
+Markets uses a quiet row of links for commentary, earnings calendar and Physical AI 15. The export design uses a bundled sans-serif typeface with a larger month, muted teal weekday labels and compact non-reporting weekend columns. Weekends expand when they contain announcements. Exported company names use familiar short names while formal names, tickers and evidence remain in the data. PNG/JPG stay 1080 × 1350. The optional image/jpeg endpoint is ?format=jpg. Latest visual and file checks are recorded in refinement-qa.json.
 
 ## Company marks in share artwork
 
@@ -42,3 +42,7 @@ The HTML calendar now includes the small company logos, smaller tickers, and mor
 ## October visual parity
 
 October uses the shared webpage styling and now has original company marks for all 17 reporting companies. The export artwork uses the same design as November, including compact tickers and spaced company entries. Official asset evidence is recorded in company-mark-sources/manifest-2026-10.json. TypeScript, all four calendar checks, logo loading and page/PNG visual checks passed.
+
+## Portable export typography
+
+All SVG labels are converted to vector outlines before rasterization. Liberation Sans regular/bold and their SIL Open Font License ship in lib/earnings/fonts. Serverless file tracing includes both font files. The export regression check rejects live SVG text nodes so a host with no installed fonts cannot silently produce blank labels or replacement glyphs.

@@ -47,6 +47,8 @@ test("calendar weekdays match actual dates, including October Saturday results",
 test("both editions produce exact portrait PNGs and a valid PDF container", async () => {
   for (const id of ["2026-10", "2026-11"]) {
     const artwork = await calendarArtwork(await getEarningsCalendar(id));
+    assert.ok(!artwork.toString().includes("<text"), "All labels must be outlined for hosts without installed fonts");
+    assert.ok(artwork.toString().includes('aria-label="BLACK SCARAB"'));
     const meta = await sharp(await sharp(artwork).png().toBuffer()).metadata();
     assert.equal(meta.width, 1080); assert.equal(meta.height, 1350);
     const pdf = await calendarPdf(artwork);
