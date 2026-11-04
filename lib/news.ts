@@ -34,6 +34,80 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "pudu-tomo-s-self-sharpening-mower",
+  "title": "Pudu brings blade sharpening into its TOMO S robot mower",
+  "summary": "Pudu’s announced TOMO S mower series brings automatic blade sharpening into the charging cycle. The company expects sales in early spring 2027.",
+  "category": "Machines",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "3 min read",
+  "image": "/images/news/pudu-tomo-s-self-sharpening-mower.png",
+  "imageAlt": "Painted aerial garden with a generic mower returning to a silver charging shelter along a curved mowing path, an editorial interpretation of blade care joining the return cycle.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "The SharpLoop system sharpens rotary blades at the charging station when needed.",
+    "Navigation combines lidar, vision and network RTK without a local reference station.",
+    "Three versions are planned for lawns of 1,500 to 5,000 square meters, with sales expected in early spring 2027."
+  ],
+  "sections": [
+    {
+      "heading": "What happened",
+      "paragraphs": [
+        "Pudu Robotics introduced its TOMO S lawn mower series on November 3, extending its move into home robotics to the maintenance of the cutting blades themselves. Its charging station is designed to sharpen the blades automatically, bringing a recurring manual task into the machine's operating cycle."
+      ]
+    },
+    {
+      "heading": "The charging station takes on another job",
+      "paragraphs": [
+        "A mower automates movement across the lawn and the cutting of grass, but a deteriorating cutting edge can still leave its owner with maintenance work. Pudu's design makes the return to the charger an opportunity to restore the blades as well as the battery.",
+        "That is the central product distinction. It shifts attention from how independently the machine traverses the garden to how much supporting work remains around it. A successful automatic sharpening cycle could reduce one reason an owner must interrupt routine use and handle the cutting hardware.",
+        "This does not make the mower free of maintenance. The announcement describes a particular mechanism for blade care, rather than demonstrating that every service task or eventual replacement has disappeared."
+      ]
+    },
+    {
+      "heading": "Cutting and navigation are separate systems",
+      "paragraphs": [
+        "Pudu pairs the sharpening system with two 636 watt cutting motors, high lift blades and rear discharge. An offset deck and side sensing address the strip of grass close to a boundary. The manufacturer also specifies four driven wheels and slopes up to 45 degrees.",
+        "These features address different parts of the job. A navigation system can place the mower on a route, but the cutting assembly must still deal with the grass it encounters. Close boundary tracking and a cutting path that reaches that boundary are related engineering problems, not interchangeable capabilities.",
+        "The use of network RTK also deserves a precise reading. Removing the need for a local reference station can simplify installation, but network positioning still has supporting infrastructure. It should not be understood as a claim that the mower operates without any external positioning service."
+      ]
+    },
+    {
+      "heading": "A consumer launch with a future sales date",
+      "paragraphs": [
+        "Pudu presents TOMO as an extension of its commercial robotics experience. The business challenge changes when the buyer is a homeowner: the product must fit the garden and the owner's tolerance for setup, recurring attention and seasonal use.",
+        "Blade sharpening gives that expansion a concrete theme. It is easier to understand as a household benefit than a general claim about a more intelligent robot. It also puts a physical maintenance mechanism alongside the software and sensing used for navigation.",
+        "The commercial milestone is the unveiling of the series ahead of planned spring 2027 sales. Its cutting, terrain and positioning specifications remain manufacturer claims at this stage. The launch establishes what Pudu intends to sell, while sustained performance in customers' gardens will determine how much routine lawn care the complete system actually takes over."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Pudu TOMO S issuer announcement, November 3, 2026 at 09:30 UTC",
+      "url": "https://www.prnewswire.com/apac/news-releases/pudu-robotics-unveils-pudu-tomo-s-series-extending-lawn-care-automation-to-blade-sharpening-302927001.html"
+    },
+    {
+      "label": "Original issuer release with archived 09:30 UTC publication metadata",
+      "url": "https://www.prnewswire.com/news-releases/pudu-robotics-unveils-pudu-tomo-s-series-extending-lawn-care-automation-to-blade-sharpening-302927013.html"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "consumer-home",
+    "relevantIndustries": [],
+    "technologies": [
+      "robotics",
+      "computer-vision",
+      "autonomous-mobile-robots"
+    ],
+    "applications": []
+  },
+  "publishedAt": "2026-11-04T13:02:36-05:00",
+  "publishedDate": "2026-11-04",
+  "publishedLabel": "November 4, 2026"
+},
+{
   "slug": "boston-dynamics-stretch-gen-2-maintenance",
   "title": "Boston Dynamics rebuilds Stretch around faster maintenance",
   "summary": "Boston Dynamics has redesigned its trailer unloading robot around fewer wiring faults, modular service and faster component replacement. Its advertised throughput remains dependent on the freight being handled.",
