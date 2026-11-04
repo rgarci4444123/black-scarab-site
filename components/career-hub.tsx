@@ -13,7 +13,7 @@ export function CareerHub(){
   <SectionHero section="career-paths" description="Explore the careers, skills and learning routes behind robotics."/>
   <section className={styles.feature} aria-labelledby="discovery-assessment-title">
    <div className={styles.artwork}>
-    <Image className={styles.image} src="/images/career-paths/career-paths-workshop.webp" alt="Editorial illustration of two engineers working on a robot gripper beside a laptop." fill sizes="(max-width: 760px) 100vw, (max-width: 1600px) 50vw, 760px" />
+    <Image className={styles.image} src="/images/career-paths/career-paths-white-chamber-v01.webp" alt="Editorial interpretation of anonymous helmeted workers calibrating an advanced robotic hand in an infinite white chamber imagined for 2100." fill sizes="(max-width: 760px) 100vw, (max-width: 1600px) 50vw, 760px" />
    </div>
    <div className={styles.copy}>
     <h2 id="discovery-assessment-title">Not sure where to begin?</h2>
