@@ -3,6 +3,7 @@
 import { track } from "@vercel/analytics/react";
 import Link from "next/link";
 import { FormEvent, useState } from "react";
+import styles from "./newsletter-landing.module.css";
 
 type NewsletterSignupFormProps = {
   source: string;
@@ -10,6 +11,7 @@ type NewsletterSignupFormProps = {
   buttonLabel?: string;
   inputId?: string;
   onSuccess?: () => void;
+  appearance?: "default" | "standalone";
 };
 
 type FormState = "idle" | "submitting" | "success" | "error";
@@ -20,7 +22,9 @@ export default function NewsletterSignupForm({
   buttonLabel = "Join the weekly",
   inputId,
   onSuccess,
+  appearance = "default",
 }: NewsletterSignupFormProps) {
+  const standalone = appearance === "standalone";
   const [state, setState] = useState<FormState>("idle");
   const [message, setMessage] = useState("");
 
@@ -53,7 +57,11 @@ export default function NewsletterSignupForm({
       setState("success");
       setMessage(result.message || "You are subscribed.");
       form.reset();
-      window.localStorage.setItem("black-scarab-newsletter-subscribed", "true");
+      try {
+        window.localStorage.setItem("black-scarab-newsletter-subscribed", "true");
+      } catch {
+        // Subscription succeeds even when browser storage is unavailable.
+      }
       window.dispatchEvent(new Event("black-scarab:newsletter-subscribed"));
       track("Newsletter Signup Submitted", { source });
       onSuccess?.();
@@ -68,10 +76,19 @@ export default function NewsletterSignupForm({
     return (
       <div
         role="status"
-        className="rounded-[20px] border border-[#c8dff8] bg-white/80 px-5 py-4 text-sm leading-6 text-[#515154]"
+        className={standalone ? styles.success : "rounded-[20px] border border-[#c8dff8] bg-white/80 px-5 py-4 text-sm leading-6 text-[#515154]"}
       >
-        <span className="font-semibold">You&apos;re in.</span>{" "}
-        {message.replace("You are subscribed", "Welcome")}
+        {standalone ? (
+          <>
+            <p className="font-semibold">You&apos;re subscribed.</p>
+            <p>Watch your inbox for the next weekly briefing.</p>
+          </>
+        ) : (
+          <>
+            <span className="font-semibold">You&apos;re in.</span>{" "}
+            {message.replace("You are subscribed", "Welcome")}
+          </>
+        )}
       </div>
     );
   }
@@ -82,12 +99,12 @@ export default function NewsletterSignupForm({
       data-analytics-event="newsletter-signup"
       data-analytics-source={source}
       className={
-        compact
+        standalone ? styles.signupForm : compact
           ? "flex flex-col gap-3"
           : "flex flex-col gap-3 md:flex-row md:flex-wrap"
       }
     >
-      <label className="sr-only" htmlFor={inputId}>
+      <label className={standalone ? styles.label : "sr-only"} htmlFor={inputId}>
         Email address
       </label>
       <input
@@ -96,8 +113,11 @@ export default function NewsletterSignupForm({
         name="email"
         required
         autoComplete="email"
-        placeholder="Email address"
-        className="w-full min-w-0 flex-1 rounded-full border border-[#d2d2d7] bg-white px-5 py-3 text-base text-[#111827] outline-none transition placeholder:text-[#9ca3af] focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/20 md:w-auto"
+        autoCapitalize="none"
+        spellCheck={false}
+        maxLength={254}
+        placeholder={standalone ? "you@example.com" : "Email address"}
+        className={standalone ? styles.input : "w-full min-w-0 flex-1 rounded-full border border-[#d2d2d7] bg-white px-5 py-3 text-base text-[#111827] outline-none transition placeholder:text-[#9ca3af] focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/20 md:w-auto"}
       />
       <input
         type="text"
@@ -110,7 +130,7 @@ export default function NewsletterSignupForm({
       <button
         type="submit"
         disabled={state === "submitting"}
-        className="shrink-0 rounded-full bg-[#0071e3] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#005bb5] focus:outline-none focus:ring-2 focus:ring-[#0071e3] focus:ring-offset-2 disabled:cursor-wait disabled:opacity-70"
+        className={standalone ? styles.button : "shrink-0 rounded-full bg-[#0071e3] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#005bb5] focus:outline-none focus:ring-2 focus:ring-[#0071e3] focus:ring-offset-2 disabled:cursor-wait disabled:opacity-70"}
       >
         {state === "submitting" ? "Saving..." : buttonLabel}
       </button>
@@ -119,7 +139,7 @@ export default function NewsletterSignupForm({
           {message}
         </p>
       ) : null}
-      <p className="text-xs leading-5 text-[#6e6e73] sm:basis-full">
+      <p className={standalone ? styles.notice : "text-xs leading-5 text-[#6e6e73] sm:basis-full"}>
         Weekly reporting and deep dives. Unsubscribe anytime. See our{" "}
         <Link href="/privacy" className="underline decoration-[#9ac3f0] underline-offset-2">
           privacy notice

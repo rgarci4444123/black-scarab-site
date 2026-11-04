@@ -1,5 +1,6 @@
 export const newsletterName = "Black Scarab Weekly";
 export const newsletterCadence = "Thursdays at 10:00 a.m. Eastern";
+export const newsletterSignupUrl = "https://www.blackscarab.ai/subscribe";
 
 export function isValidNewsletterEmail(email: unknown): email is string {
   return (

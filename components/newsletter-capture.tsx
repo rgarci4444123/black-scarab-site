@@ -30,6 +30,7 @@ export default function NewsletterCapture() {
     pathname.startsWith("/physical-ai-quiz") ||
     pathname.startsWith("/quiz") ||
     pathname.startsWith("/subscribe") ||
+    pathname.startsWith("/newsletter-qr") ||
     pathname.startsWith("/privacy") ||
     pathname.startsWith("/terms") ||
     pathname.startsWith("/muse");
