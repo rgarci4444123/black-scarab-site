@@ -34,6 +34,80 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "boston-dynamics-stretch-gen-2-maintenance",
+  "title": "Boston Dynamics rebuilds Stretch around faster maintenance",
+  "summary": "Boston Dynamics has redesigned its trailer unloading robot around fewer wiring faults, modular service and faster component replacement. Its advertised throughput remains dependent on the freight being handled.",
+  "category": "Machines",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "3 min read",
+  "image": "/images/news/boston-dynamics-stretch-gen-2-maintenance.png",
+  "imageAlt": "Editorial metal sculpture of three generic wheel and drive modules separated along a curved steel ribbon, illustrating replaceable machinery rather than the disclosed design of Stretch.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "Boston Dynamics says it removed 81 percent of internal cabling.",
+    "A swerve drive replacement now takes about one hour, against a full day previously.",
+    "The advertised maximum is 1,000 cases an hour, with results dependent on the load."
+  ],
+  "sections": [
+    {
+      "heading": "What happened",
+      "paragraphs": [
+        "Boston Dynamics unveiled Stretch Gen 2 on November 3, putting serviceability at the center of its next trailer unloading robot. The announcement focuses on keeping freight moving when components wear, connections fail or a repair interrupts a shift."
+      ]
+    },
+    {
+      "heading": "Designing around the loading dock",
+      "paragraphs": [
+        "Stretch combines mobility, perception and manipulation to remove boxes from trailers. The established platform handles mixed package appearances and sizes, with the current product page specifying loads up to 50 pounds and recovery of fallen boxes. Boston Dynamics lists DHL, Arvato and the Otto Group among Stretch customers. These describe the existing business, rather than newly announced Gen 2 orders.",
+        "This is a demanding place to automate because the work advances through a changing pile of freight. A system must reach the next box and keep the unloading process supplied with usable output. A rapid picking motion has limited commercial value during a prolonged repair.",
+        "The new design addresses that relationship directly. Boston Dynamics describes tougher connectors, revised gripper sensing and valves, and joints that can rotate continuously instead of reaching mechanical stops. These changes follow analysis of more than 100,000 operating hours and tens of millions of boxes handled by earlier robots, according to the company.",
+        "The revision therefore concentrates on the parts that repeatedly flex, connect and move during unloading. Reducing the amount of wiring also reduces the physical network of connections that maintenance teams must inspect when an intermittent fault appears."
+      ]
+    },
+    {
+      "heading": "Making repairs part of the product",
+      "paragraphs": [
+        "Modular replacement and onboard maintenance tools give the customer's technicians more responsibility for routine service. That can change how a site organizes its support: replacing an assembly and returning the robot to work is different from waiting for a specialist to diagnose and repair individual parts.",
+        "The drive replacement example concerns the robot's ability to move through its working area. Swapping that assembly quickly could return the whole unloading system to service sooner, although the stated repair time is a manufacturer example rather than an independently measured fleet average."
+      ]
+    },
+    {
+      "heading": "Throughput depends on the freight",
+      "paragraphs": [
+        "Boston Dynamics qualifies the 1,000 case hourly figure by box weight and stacking conditions. Its computing platform also supports continuing updates to detection, planning and picking.",
+        "That leaves two distinct contributions to useful output: how effectively the robot handles the freight in front of it, and how much of the shift it remains available to do so. Gen 2's maintenance changes target the second contribution without making the first independent of trailer conditions.",
+        "The commercial proposition is a more serviceable unloading machine. The announcement provides concrete repair and hardware details, but it does not establish a uniform productivity gain for every dock. Its value will depend on those design changes reducing interruptions in the particular freight operation where the robot works."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Boston Dynamics Stretch Gen 2 issuer announcement, November 3, 2026",
+      "url": "https://bostondynamics.com/news/boston-dynamics-launches-next-generation-stretch-robot/"
+    },
+    {
+      "label": "Stretch product context",
+      "url": "https://bostondynamics.com/products/stretch/"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "warehousing-logistics",
+    "relevantIndustries": [],
+    "technologies": [
+      "robotics",
+      "computer-vision",
+      "autonomous-mobile-robots"
+    ],
+    "applications": []
+  },
+  "publishedAt": "2026-11-04T10:32:04-05:00",
+  "publishedDate": "2026-11-04",
+  "publishedLabel": "November 4, 2026"
+},
+{
   "slug": "boop-human-friendly-robotics-first-insurance-customer",
   "title": "Boop lands its first robot insurance customer with Human Friendly Robotics",
   "summary": "Human Friendly Robotics says Boop’s first robot insurance policy is underway for Tyler, its tiling robot. The pairing brings incident recording into the business of putting robots to work on construction sites.",
