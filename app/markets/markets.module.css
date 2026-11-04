@@ -4,14 +4,10 @@
 .scope :global(h1) { max-width: 896px; margin: 0 auto; font-size: 48px; line-height: 1.1; font-weight: 600; letter-spacing: -.04em; }
 .scope :global(.intro) { max-width: 672px; margin: 20px auto 0; color: #6e6e73; font-size: 18px; line-height: 1.8; }
 .scope > section { max-width: 1152px; margin-inline: auto; }
-.scope :global(.section-top) { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid #e2e2e5; }
-.scope :global(.section-top h2) { margin: 0; color: #6e6e73; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
-.scope :global(.section-top time) { color: #6e6e73; font-size: 12px; }
 .scope :global(.feature) { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 36px; }
-.scope :global(.feature-image) { position: relative; display: block; overflow: hidden; border-radius: 18px; aspect-ratio: 4/3; background: #f5f5f7; }
+.scope :global(.feature-image) { position: relative; display: block; overflow: hidden; border-radius: 18px; aspect-ratio: 3/2; background: #f5f5f7; }
 .scope :global(.feature-image img) { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
 .scope :global(.feature-image:hover img) { transform: scale(1.025); }
-.scope :global(.image-label) { position: absolute; left: 18px; bottom: 17px; padding: 8px 12px; border: 1px solid #ffffff30; border-radius: 999px; background: #182c35bb; color: #fff; font-size: 10px; backdrop-filter: blur(8px); }
 .scope :global(.date), .scope :global(.archive-meta) { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 0 0 16px; color: #6e6e73; font-size: 12px; }
 .scope :global(.dot) { width: 3px; height: 3px; border-radius: 50%; background: #9ca3af; }
 .scope :global(.feature h3) { margin: 0 0 20px; font-size: 36px; font-weight: 600; line-height: 1.15; letter-spacing: -.035em; text-wrap: balance; }
@@ -55,13 +51,16 @@
   .scope :global(.series-note p) { margin-top: 12px; }
   .scope :global(.archive-grid) { grid-template-columns: 1fr; }
 }
-@media(max-width: 400px) {
-  .scope :global(.section-top) { align-items: flex-start; gap: 14px; }
-  .scope :global(.section-top h2) { font-size: 10px; max-width: 145px; }
-  .scope :global(.section-top time) { font-size: 10px; white-space: nowrap; }
-  .scope :global(.feature h3) { font-size: 28px; }
-}
+@media(max-width: 400px) { .scope :global(.feature h3) { font-size: 28px; } }
 @media(prefers-reduced-motion: reduce) { .scope :global(.feature-image img) { transition: none; } }
 
-/* The shared section title sits outside the Markets content scope. */
-.scope{padding-top:40px}
+/* Shared hero and page frame remain unchanged. */
+.scope { padding-top: 0; }
+.scope :global(.market-nav) { max-width: 1152px; margin: 0 auto; padding: 30px 0 34px; display: flex; align-items: center; justify-content: center; gap: 36px; }
+.scope :global(.market-nav a) { color: #6e6e73; font-size: 13px; line-height: 1.5; text-decoration: none; }
+.scope :global(.market-nav a[aria-current]) { color: #171a17; }
+.scope :global(.market-nav a:hover) { color: #397c78; }
+.scope :global(.market-nav a:focus-visible) { outline: 2px solid #397c78; outline-offset: 5px; }
+.scope :global(#commentary), .scope :global(#index-title) { scroll-margin-top: 110px; }
+@media(max-width: 767px) { .scope :global(.market-nav) { gap: 24px; padding: 24px 0 30px; } .scope :global(.market-nav a) { font-size: 12px; } }
+@media(max-width: 359px) { .scope :global(.market-nav) { gap: 16px; } .scope :global(.market-nav a) { font-size: 11px; } }

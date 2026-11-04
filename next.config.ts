@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  outputFileTracingIncludes: {
+    "/markets/earnings-calendar": ["./data/earnings/**/*.json"],
+    "/markets/earnings-calendar/download": ["./data/earnings/**/*.json", "./public/black-scarab-mark.png"],
+  },
   images: {
     qualities: [75, 95],
   },

@@ -1,0 +1,209 @@
+[
+  {
+    "ticker": "6954.T",
+    "pageUrl": "https://www.fanuc.co.jp/en/",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [],
+    "assetUrl": "https://www.fanuc.co.jp/favicon.ico",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/6954-t.ico",
+    "sha256": "44c47ecdb03c9df74b69edb25ca06fd124ad7ce0d0a857f50abed26b7738a3c0",
+    "contentType": "image/vnd.microsoft.icon",
+    "status": "downloaded",
+    "decodedFile": "docs/earnings-calendar/company-mark-sources/6954-t.decoded.png"
+  },
+  {
+    "ticker": "6506.T",
+    "pageUrl": "https://www.yaskawa-global.com",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://www.yaskawa-global.com/img/common/logo.svg"
+    ],
+    "assetUrl": "https://www.yaskawa-global.com/favicon.ico",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/6506-t.ico",
+    "sha256": "b38e4b31acd1db2f760a4975411befc442808b1e13be0c522b182bd7ee4ff698",
+    "contentType": "image/vnd.microsoft.icon",
+    "status": "downloaded",
+    "decodedFile": "docs/earnings-calendar/company-mark-sources/6506-t.decoded.png"
+  },
+  {
+    "ticker": "002747.SZ",
+    "pageUrl": "https://www.estun.com",
+    "checkedDate": "2026-11-03",
+    "status": "downloaded",
+    "assetUrl": "https://www.estun.com/skin/images/logo.png",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/002747-sz.png",
+    "sha256": "65dc7e6ffa09a5ebd3004d1e7b3844c18f166a76db9a24e2ee02781a11fc98fe"
+  },
+  {
+    "ticker": "TER",
+    "pageUrl": "https://www.teradyne.com",
+    "checkedDate": "2026-11-03",
+    "status": "downloaded",
+    "assetUrl": "https://www.teradyne.com/wp-content/uploads/2022/08/Teradyne-logo-white-2.svg",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/ter.svg",
+    "sha256": "20dc260c004e24970dcbdab47a85bc03c109f26fca15c5b628b7bb72e9f61bd8",
+    "contentType": "image/svg+xml"
+  },
+  {
+    "ticker": "300124.SZ",
+    "pageUrl": "https://www.inovance.com",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [],
+    "assetUrl": "https://www.inovance.com/favicon.ico",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/300124-sz.ico",
+    "sha256": "b64939159c13143c67deac9d0c7b07e53eaaefe08daf1fb41bb86a875f6321ca",
+    "contentType": "image/x-icon",
+    "status": "downloaded",
+    "decodedFile": "docs/earnings-calendar/company-mark-sources/300124-sz.decoded.png"
+  },
+  {
+    "ticker": "6861.T",
+    "pageUrl": "https://www.keyence.com",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://www.keyence.com/img/core/logo_header_01.svg",
+      "https://www.keyence.com/img/core/logo_footer_01.svg"
+    ],
+    "assetUrl": "https://www.keyence.com/favicon.ico",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/6861-t.ico",
+    "sha256": "7bef0dca040fe26c07b73f95006a5382547f454beeac4eb67be51a20601b76db",
+    "contentType": "image/vnd.microsoft.icon",
+    "status": "downloaded",
+    "decodedFile": "docs/earnings-calendar/company-mark-sources/6861-t.decoded.png"
+  },
+  {
+    "ticker": "NXPI",
+    "pageUrl": "https://www.nxp.com",
+    "checkedDate": "2026-11-03",
+    "status": "downloaded",
+    "assetUrl": "https://www.nxp.com/#nxp-logo",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/nxpi.svg"
+  },
+  {
+    "ticker": "HEXA-B.ST",
+    "pageUrl": "https://hexagon.com",
+    "checkedDate": "2026-11-03",
+    "status": "downloaded",
+    "assetUrl": "https://ichs-p-001.sitecorecontenthub.cloud/api/public/content/a-s-s-e-t---3-9-4-2-4-39424?v=ba59b6e9",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/hexa-b-st.svg",
+    "sha256": "701ac2d8aca72b706823764fa1c9d7e7e5a32dc2175b036151fef94d20ddb051",
+    "contentType": "image/svg+xml"
+  },
+  {
+    "ticker": "TSLA",
+    "pageUrl": "https://www.tesla.com",
+    "checkedDate": "2026-11-03",
+    "status": "downloaded",
+    "assetUrl": "https://www.tesla.com/themes/custom/tesla_frontend/assets/favicons/favicon-96x96.png",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/tsla.png",
+    "method": "Original image displayed by official site; capture cropped to image bounds"
+  },
+  {
+    "ticker": "688836.SS",
+    "pageUrl": "https://www.unitree.com",
+    "checkedDate": "2026-11-03",
+    "status": "downloaded",
+    "assetUrl": "https://www.unitree.com/unitree-favicon.svg",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/688836-ss.svg",
+    "sha256": "159179ee9b4df9a6cf6363193c9e2aa2eed66967728c402ba3c0bd09130bcc59",
+    "contentType": "image/svg+xml"
+  },
+  {
+    "ticker": "454910.KS",
+    "pageUrl": "https://www.doosanrobotics.com/en/",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://www.doosanrobotics.com/images/logo.svg",
+      "https://www.doosanrobotics.com/images/main/client-1.png",
+      "https://www.doosanrobotics.com/images/main/client-2.png",
+      "https://www.doosanrobotics.com/images/main/client-3.png",
+      "https://www.doosanrobotics.com/images/main/client-4.png",
+      "https://www.doosanrobotics.com/images/main/client-5.png",
+      "https://www.doosanrobotics.com/images/main/client-6.png",
+      "https://www.doosanrobotics.com/images/main/client-7.png"
+    ],
+    "assetUrl": "https://www.doosanrobotics.com/images/favicon.ico",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/454910-ks.ico",
+    "sha256": "5545b4a8781bb430bb9ee6c7fb3740844ad01a8f006ae65cf5f7a62a11b79c00",
+    "contentType": "image/vnd.microsoft.icon",
+    "status": "downloaded",
+    "decodedFile": "docs/earnings-calendar/company-mark-sources/454910-ks.decoded.png"
+  },
+  {
+    "ticker": "005380.KS",
+    "pageUrl": "https://www.hyundai.com/worldwide/en",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://www.hyundai.com/etc/designs/hyundai/ww/en/images/common/logo.png",
+      "https://www.hyundai.com/content/dam/hyundai/ww/en/images/main/new/common/logo-wh.png"
+    ],
+    "assetUrl": "https://www.hyundai.com/etc/designs/hyundai/ww/favicon.ico",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/005380-ks.ico",
+    "sha256": "8788fff2192c0b88c225ed232bd72f3b26eedc6bae1a3f64b4bca5150f1d1c63",
+    "contentType": "image/x-icon",
+    "status": "downloaded",
+    "decodedFile": "docs/earnings-calendar/company-mark-sources/005380-ks.decoded.png"
+  },
+  {
+    "ticker": "ABBN.SW",
+    "pageUrl": "https://www.abb.com/global/en",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [],
+    "assetUrl": "https://www.abb.com/etc.clientlibs/aot/clientlibs/clientlib-resources/resources/icon-180x180.png",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/abbn-sw.png",
+    "sha256": "68bdb7129598b3f45861fa6c4ed69e6a5b34444115089dd16a238271e61413fc",
+    "contentType": "image/png",
+    "status": "downloaded"
+  },
+  {
+    "ticker": "ISRG",
+    "pageUrl": "https://www.intuitive.com/en-us",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [],
+    "status": "downloaded",
+    "assetUrl": "https://cdn.cookielaw.org/logos/2d81edac-a4d2-43b5-aaad-2f1926e3e40e/670cb061-7b74-41a0-850b-349ca43f5152/e146af79-afd0-4c73-86e0-088e3f3f823c/intuitive_logo160.png",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/isrg.png",
+    "sha256": "cd737743d6901c0af96c8e7023fd8e23d2c19e2cfaa506430bd7a37435f7ddc5",
+    "contentType": "image/png"
+  },
+  {
+    "ticker": "688017.SS",
+    "pageUrl": "https://www.leaderdrive.com",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://www.leaderdrive.com/statics/lvdi/images/a_logo.png",
+      "https://www.leaderdrive.com/statics/lvdi/images/a_logo.png",
+      "https://www.leaderdrive.com/statics/lvdi/images/alogo.png"
+    ],
+    "assetUrl": "https://www.leaderdrive.com/favicon.ico",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/688017-ss.ico",
+    "sha256": "743983ca92f5354ae8df310bd41602d2639cc8c09b2e29d31279227b6bf7b245",
+    "contentType": "image/x-icon",
+    "status": "downloaded",
+    "decodedFile": "docs/earnings-calendar/company-mark-sources/688017-ss.decoded.png"
+  },
+  {
+    "ticker": "002050.SZ",
+    "pageUrl": "https://www.sanhua.com",
+    "checkedDate": "2026-11-03",
+    "status": "downloaded",
+    "assetUrl": "https://www.zjshc.com/static/en/images/logo.png",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/002050-sz.png",
+    "sha256": "52089236b471e3980a340d725f8a5e047195fcdae9eb0801bde2369752f1c495",
+    "contentType": "image/png"
+  },
+  {
+    "ticker": "601689.SS",
+    "pageUrl": "https://www.tuopu.com",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://www.tuopu.com/upload/LOGO-03-1-Ixqi.png",
+      "https://www.tuopu.com/upload/LOGO-03-1-Ixqi.png"
+    ],
+    "assetUrl": "https://www.tuopu.com/upload/cropped-LOGO-192x192-ppLE.png",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/601689-ss.png",
+    "sha256": "3d301123309395596932ddc48297621f8e2ac94904decacd1700809c9bc1948d",
+    "contentType": "image/png",
+    "status": "downloaded"
+  }
+]

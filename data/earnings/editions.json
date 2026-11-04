@@ -1,0 +1,15 @@
+{
+  "current": "2026-11",
+  "editions": [
+    {
+      "id": "2026-10",
+      "label": "October 2026",
+      "status": "published"
+    },
+    {
+      "id": "2026-11",
+      "label": "November 2026",
+      "status": "published"
+    }
+  ]
+}

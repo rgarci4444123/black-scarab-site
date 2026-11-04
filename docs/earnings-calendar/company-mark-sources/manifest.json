@@ -1,0 +1,218 @@
+[
+  {
+    "ticker": "OUST",
+    "pageUrl": "https://ouster.com",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://cdn.sanity.io/images/zqlkz0u8/production/686b74f3ad589b007ca2a621fc86cb1bec0145db-110x48.svg",
+      "https://cdn.sanity.io/images/zqlkz0u8/production/686b74f3ad589b007ca2a621fc86cb1bec0145db-110x48.svg",
+      "https://cdn.sanity.io/images/zqlkz0u8/production/686b74f3ad589b007ca2a621fc86cb1bec0145db-110x48.svg",
+      "https://cdn.sanity.io/images/zqlkz0u8/production/686b74f3ad589b007ca2a621fc86cb1bec0145db-110x48.svg",
+      "https://cdn.sanity.io/images/zqlkz0u8/production/82897927164f87e3997c01f77dcdf9175a3a3d75-110x48.svg",
+      "https://cdn.sanity.io/images/zqlkz0u8/production/3583c5e59c48c613c60248b12305de25eaf9701a-110x48.svg",
+      "https://cdn.sanity.io/images/zqlkz0u8/production/623c2221e2037616fbe42f74b23ad47c4856a89a-110x48.svg",
+      "https://cdn.sanity.io/images/zqlkz0u8/production/82897927164f87e3997c01f77dcdf9175a3a3d75-110x48.svg"
+    ],
+    "assetUrl": "https://ouster.com/apple-touch-icon.png",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/oust.png",
+    "sha256": "04f29c1b7ce1a149bd6bcbf648f787a1a97a6f81ceba8d5de6ffe7d43aa34b48",
+    "contentType": "image/png",
+    "status": "downloaded"
+  },
+  {
+    "ticker": "CGNX",
+    "pageUrl": "https://www.cognex.com/en",
+    "checkedDate": "2026-11-03",
+    "status": "downloaded",
+    "assetUrl": "https://www.cognex.com/favicon.ico",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/cgnx.ico",
+    "sha256": "a56bfaf6dd324702a046cd91973905a4ed4aac46c92b45a44135e22eea7f9665",
+    "retrieval": "official rendered page asset inventory",
+    "decodedFile": "docs/earnings-calendar/company-mark-sources/cgnx.decoded.png"
+  },
+  {
+    "ticker": "ROK",
+    "pageUrl": "https://www.rockwellautomation.com/en-us.html",
+    "checkedDate": "2026-11-03",
+    "status": "downloaded",
+    "assetUrl": "https://www.rockwellautomation.com/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/favicons/favicon-32x32.png",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/rok.png",
+    "sha256": "cff6c70ace6ebc6197c4e1c7fb64c607aeada9af17c43ce9c79363bbed458a7d",
+    "retrieval": "official rendered page asset inventory"
+  },
+  {
+    "ticker": "NOVT",
+    "pageUrl": "https://novanta.com",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://novanta.com/wp-content/themes/one-novanta-theme/src/svg/novanta-logo.svg",
+      "https://novanta.com/wp-content/themes/one-novanta-theme/src/svg/novanta-logo.svg",
+      "https://novanta.com/wp-content/themes/one-novanta-theme/src/svg/novanta-logo.svg",
+      "https://novanta.com/wp-content/themes/one-novanta-theme/src/svg/novanta-logo.svg"
+    ],
+    "assetUrl": "https://novanta.com/wp-content/uploads/sites/19/2026/02/cropped-novanta-logo.png?quality=85&strip=all&w=180",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/novt.png",
+    "sha256": "6abd689136edc1cf8487d147f37c42ec8a3fd5a7080bfcccc02ca47a0c5e55df",
+    "contentType": "image/png",
+    "status": "downloaded"
+  },
+  {
+    "ticker": "HSAI",
+    "pageUrl": "https://www.hesaitech.com",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://www.hesaitech.com/wp-content/themes/hesai_new/assets/images/logo.svg",
+      "https://www.hesaitech.com/wp-content/uploads/2025/02/logo-dfm.png",
+      "https://www.hesaitech.com/wp-content/uploads/2025/10/smart-logo-black-and-white.png",
+      "https://www.hesaitech.com/wp-content/uploads/2025/02/logo-lotous.png",
+      "https://www.hesaitech.com/wp-content/uploads/2025/02/logo-voyah.png",
+      "https://www.hesaitech.com/wp-content/themes/hesai_new/assets/images/logo.svg",
+      "https://www.hesaitech.com/wp-content/themes/hesai_new/assets/images/logo.svg",
+      "https://www.hesaitech.com/wp-content/themes/hesai_new/assets/images/logo.svg"
+    ],
+    "assetUrl": "https://www.hesaitech.com/wp-content/uploads/2026/05/cropped-20260525-105300-180x180.png",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/hsai.png",
+    "sha256": "f049ee7fcb15a50be23740b23cade5398ce293e83fed9b2e59d244850811f227",
+    "contentType": "image/png",
+    "status": "downloaded"
+  },
+  {
+    "ticker": "6383.T",
+    "pageUrl": "https://www.daifuku.com",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://www.daifuku.com/assets/images/common/logo_main.svg",
+      "https://www.daifuku.com/assets/images/common/logo_main_white.svg"
+    ],
+    "assetUrl": "https://www.daifuku.com/apple-touch-icon-152x152.png",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/6383-t.png",
+    "sha256": "40e146014c2490718b2744d2e080e5284b2414c51ee09e43087cdf043b0cbb4d",
+    "contentType": "image/png",
+    "status": "downloaded"
+  },
+  {
+    "ticker": "6324.T",
+    "pageUrl": "https://www.hds.co.jp",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://www.hds.co.jp/Portals/0/files/common/images/logo.png",
+      "https://www.hds.co.jp/Portals/0/files/common/images/logo_blue.png",
+      "https://www.hds.co.jp/Portals/0/files/common/images/logo_scroll.png",
+      "https://www.hds.co.jp/Portals/0/files/common/images/flogo.png"
+    ],
+    "assetUrl": "https://www.hds.co.jp/Portals/0/favicon.ico",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/6324-t.ico",
+    "sha256": "81425da6c211bc5269e42d1041bfefb9cd9645469b54f43a13679b0c81dff95a",
+    "contentType": "image/x-icon",
+    "status": "downloaded",
+    "decodedFile": "docs/earnings-calendar/company-mark-sources/6324-t.decoded.png"
+  },
+  {
+    "ticker": "SIE.DE",
+    "pageUrl": "https://www.siemens.com/en-us/",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [],
+    "assetUrl": "https://www.siemens.com/_static/favicon.svg",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/sie-de.svg",
+    "sha256": "f1f46ce572ca17d4b0a282da8d48350224ac06035271acfcfc67cc2b44be23f5",
+    "contentType": "image/svg+xml",
+    "status": "downloaded"
+  },
+  {
+    "ticker": "277810.KQ",
+    "pageUrl": "https://rainbow-robotics.com",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://rainbow-robotics.com/wp-content/uploads/2026/02/logo-dark.svg",
+      "https://rainbow-robotics.com/wp-content/uploads/2026/02/logo-dark.svg",
+      "https://rainbow-robotics.com/wp-content/uploads/2026/02/client_01.jpg",
+      "https://rainbow-robotics.com/wp-content/uploads/2026/02/client_05.jpg",
+      "https://rainbow-robotics.com/wp-content/uploads/2026/02/client_07.jpg",
+      "https://rainbow-robotics.com/wp-content/uploads/2026/02/client_09.jpg",
+      "https://rainbow-robotics.com/wp-content/uploads/2026/02/client_10.jpg",
+      "https://rainbow-robotics.com/wp-content/uploads/2026/02/client_01.jpg"
+    ],
+    "assetUrl": "https://rainbow-robotics.com/wp-content/uploads/2026/08/rainbow-site-icon-180x180.png",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/277810-kq.png",
+    "sha256": "f751a86b7da4f75902fd504164b346e6d34d41a1bf23e9f2e5a42a9bd250bff5",
+    "contentType": "image/png",
+    "status": "downloaded"
+  },
+  {
+    "ticker": "6268.T",
+    "pageUrl": "https://www.nabtesco.com",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://www.nabtesco.com/assets/img/common/logo.svg",
+      "https://www.nabtesco.com/assets/img/common/logo_white.svg"
+    ],
+    "assetUrl": "https://www.nabtesco.com/cms/wp-content/uploads/cropped-favicon-180x180.png",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/6268-t.png",
+    "sha256": "0f85ab89b610b774fac4ae224176b3de734a7310d0fdb3bf42596cc6aadddfae",
+    "contentType": "image/png",
+    "status": "downloaded"
+  },
+  {
+    "ticker": "6481.T",
+    "pageUrl": "https://www.thk.com",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://www.thk.com/sites/default/files/theme/global/resources/images/common/header-logo.jpg"
+    ],
+    "assetUrl": "https://www.thk.com/sites/default/files/theme/global/resources/images/common/header-logo.jpg",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/thk-official.jpg",
+    "sha256": "1db385c279ef3c1304377b751accaf81bf9b41bc8d8c0f78e4cabd6657ce2d66",
+    "contentType": "image/x-icon",
+    "status": "downloaded"
+  },
+  {
+    "ticker": "XPEV",
+    "pageUrl": "https://www.xpeng.com",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://a-cdn.xpeng.com//website/_next/static/media/logo-m-w.7b59fcdb.svg"
+    ],
+    "assetUrl": "https://a-cdn.xpeng.com/mall/public/favicon.svg",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/xpev.svg",
+    "sha256": "64bc37da4e8db0e2fd38c45e39aec9ec5115c13e556fdf6da3ea8544a266d3d3",
+    "contentType": "image/svg+xml",
+    "status": "downloaded"
+  },
+  {
+    "ticker": "NVDA",
+    "pageUrl": "https://www.nvidia.com/en-us/",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [],
+    "assetUrl": "https://www.nvidia.com/en-us/",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/nvda-symbol.svg",
+    "sha256": "c8e6fdc3691b19e6a9b77ff97e0090f1f95383445f2dfa1a8c365f42a6cfcbd2",
+    "contentType": "image/vnd.microsoft.icon",
+    "status": "downloaded",
+    "retrieval": "Official inline SVG, viewBox limited to the existing eye symbol"
+  },
+  {
+    "ticker": "MOG.A",
+    "pageUrl": "https://www.moog.com",
+    "checkedDate": "2026-11-03",
+    "logoCandidates": [
+      "https://www.moog.com/content/dam/sites/moog/images/logos/Moog_logo_white_1450.webp",
+      "https://www.moog.com/content/dam/sites/moog/images/logos/Moog_logo_white_1450.webp"
+    ],
+    "assetUrl": "https://www.moog.com/etc.clientlibs/moog/clientlibs/moog.all-components/resources/images/favicon.ico",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/mog-a.ico",
+    "sha256": "d391025471e7c4f73afcc58693c669c114118febc86a6b9c7892338b32a93e9f",
+    "contentType": "image/vnd.microsoft.icon",
+    "status": "downloaded",
+    "decodedFile": "docs/earnings-calendar/company-mark-sources/mog-a.decoded.png"
+  },
+  {
+    "ticker": "SYM",
+    "pageUrl": "https://www.symbotic.com",
+    "checkedDate": "2026-11-03",
+    "status": "downloaded",
+    "assetUrl": "https://exqkm9d8zzi.exactdn.com/wp-content/uploads/2025/08/site-logo.svg",
+    "rawFile": "docs/earnings-calendar/company-mark-sources/sym-symbol.svg",
+    "sha256": "f764177cbfc06ca513a1825de0b86ee31f74a96dfcf343b3d4ff259aca5b5bba",
+    "retrieval": "Official logo SVG, viewBox limited to its existing symbol"
+  }
+]

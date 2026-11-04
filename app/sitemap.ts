@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ...(family.lastReviewed ? { lastModified: new Date(family.lastReviewed) } : {}),
     })),
     { url: `${baseUrl}/markets`, lastModified: new Date(marketCommentaries[0].publishedAt), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/markets/earnings-calendar`, lastModified: new Date("2026-11-03"), changeFrequency: "weekly", priority: 0.8 },
     ...marketCommentaries.map(edition => ({ url: `${baseUrl}/markets/${edition.slug}`, lastModified: new Date(edition.publishedAt), changeFrequency: "monthly" as const, priority: 0.85 })),
     {
       url: `${baseUrl}/`,

@@ -1,0 +1,29 @@
+[
+  {
+    "ticker": "CGNX",
+    "pageUrl": "https://investor.cognex.com",
+    "checkedDate": "2026-11-03",
+    "status": "missing",
+    "errors": [
+      "HTTP Error 403: Forbidden"
+    ]
+  },
+  {
+    "ticker": "ROK",
+    "pageUrl": "https://www.rockwellautomation.com.cn",
+    "checkedDate": "2026-11-03",
+    "status": "missing",
+    "errors": [
+      "HTTP Error 403: Forbidden"
+    ]
+  },
+  {
+    "ticker": "SYM",
+    "pageUrl": "https://ir.symbotic.com",
+    "checkedDate": "2026-11-03",
+    "status": "missing",
+    "errors": [
+      "HTTP Error 403: Forbidden"
+    ]
+  }
+]
