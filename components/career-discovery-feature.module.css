@@ -1,0 +1,92 @@
+.feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  margin-top: 36px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: #fcfcfd;
+}
+
+.artwork {
+  position: relative;
+  aspect-ratio: 2 / 1;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.copy {
+  min-width: 0;
+  align-self: center;
+  padding: 36px clamp(28px, 3vw, 48px);
+}
+
+.copy h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(26px, 2vw, 32px);
+  font-weight: 550;
+  line-height: 1.2;
+  letter-spacing: -.04em;
+}
+
+.copy p {
+  max-width: 40ch;
+  margin: 12px 0 24px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.feature .copy .button {
+  min-height: 50px;
+  border: 2px solid var(--career-link);
+  background: #fff;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.feature .button span {
+  color: var(--career-link);
+}
+
+.feature .copy .button:hover {
+  border-color: var(--career-link);
+  background: #f2f7ff;
+  color: var(--ink);
+}
+
+.feature .button:focus-visible {
+  outline: 2px solid var(--career-link);
+  outline-offset: 4px;
+}
+
+@media (max-width: 760px) {
+  .feature {
+    grid-template-columns: minmax(0, 1fr);
+    margin-top: 28px;
+  }
+
+  .copy {
+    padding: 26px;
+  }
+
+  .copy h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 550px) {
+  .copy {
+    padding: 24px 22px;
+  }
+
+  .feature .copy .button {
+    padding: 13px 17px;
+    font-size: 12px;
+  }
+}
