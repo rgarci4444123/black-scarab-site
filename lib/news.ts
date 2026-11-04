@@ -34,6 +34,124 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "boop-human-friendly-robotics-first-insurance-customer",
+  "title": "Boop lands its first robot insurance customer with Human Friendly Robotics",
+  "summary": "Human Friendly Robotics says Boop’s first robot insurance policy is underway for Tyler, its tiling robot. The pairing brings incident recording into the business of putting robots to work on construction sites.",
+  "category": "Deployment",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "5 min read",
+  "imageAlt": "Engraved editorial illustration of a worker’s gloved hand positioning a vermilion floor tile beside a generic machine wheel, with repeated tile impressions suggesting a record of the work.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "Human Friendly Robotics identifies itself as Boop’s first customer, with a policy underway for its Tyler flooring robot.",
+    "Human Friendly Robotics says Boop’s Robot Data Recorder works with Tyler’s timestamped photo ledger of tile placements.",
+    "Boop prices coverage per robot and describes incident evidence as the foundation for claims handling and future pricing."
+  ],
+  "sections": [
+    {
+      "heading": "A first customer on the construction site",
+      "paragraphs": [
+        "Robot insurance startup Boop has landed its first customer, Human Friendly Robotics, which says a policy is underway for Tyler, its tiling robot working on commercial job sites.",
+        "Human Friendly Robotics disclosed the relationship in a November 2 LinkedIn post, saying the coverage concerns people on site, surrounding property and the machine itself. The company also described a pairing between Boop’s Robot Data Recorder and Tyler’s native timestamped photo ledger of each tile placed.",
+        "The announcement connects two parts of the robotics business that increasingly need to develop together: getting a machine to perform useful work and making that work an acceptable commercial risk. For Boop, a named customer provides a concrete setting for its insurance and incident recording proposition.",
+        "Construction is a revealing place to start. Robots work near people, handle materials and interact with property that belongs to someone else. When an incident happens, understanding the machine’s actions and the surrounding conditions becomes part of resolving the loss."
+      ]
+    },
+    {
+      "heading": "The robot behind the policy",
+      "paragraphs": [
+        "Human Friendly Robotics is based in New Jersey and builds machines for construction trades. Tyler leads its commercial effort, placing ceramic tile, luxury vinyl tile, vinyl composition tile and carpet tile alongside a human crew.",
+        "The company’s current product page describes a 50 pound machine with one operator and ceramic placement of about 100 square feet an hour. It reports roughly 800 square feet of ceramic placement in a day. These are the manufacturer’s figures for the placement task.",
+        "The rest of the installation still depends on people. Crews prepare the floor, handle materials, make cuts, finish edges and check quality. Floor Covering News described that division of work in its September reporting on Tyler, explaining how installers establish the layout while the robot takes on repetitive placement.",
+        "That division also shapes the insurance problem. A finished floor reflects the work of the robot, the crew and the conditions of the site. A record of tile placements can help establish the sequence of work when damage or a dispute needs investigation."
+      ]
+    },
+    {
+      "heading": "Coverage built around the deployment",
+      "paragraphs": [
+        "Boop’s general offering combines liability for damage a robot causes with protection for the robot itself. Its Core tier describes bodily injury, damage to other robots or machinery, and robot replacement on an agreed value basis.",
+        "The company separates more complex risks into additional tiers. Cyber+ adds physical loss caused by a cyber incident and response support. Enterprise extends that offering to business interruption from robot incidents and higher limits with custom terms. A Caged tier addresses robots in restricted, controlled environments.",
+        "The commercial unit is the covered robot. Boop says premiums are set per machine and combined across a fleet, with deployment environment, robot class and control mode influencing the base rate. It also describes pricing credits for validated safety measures and an operating record that can inform later repricing."
+      ]
+    },
+    {
+      "heading": "The recorder is part of the proposition",
+      "paragraphs": [
+        "Boop describes the Robot Data Recorder as software running on computing hardware already aboard the robot. Rather than preserve a continuous recording of a shift, it is designed to retain a bounded window around an incident, including machine state, sensor information, commands, operator history and fault codes.",
+        "The company says the recorder reads existing telemetry without issuing motion or safety commands. Its engineering documentation describes a passive subscriber to ROS 2 topics, packaged with resource limits and an audit package that a deployment team can inspect.",
+        "For the Tyler relationship, Human Friendly Robotics points to the combination of incident data and its own photo ledger. One can describe what the machine was doing around an event; the other documents the work it placed on the floor.",
+        "Black Scarab’s analysis is that the connection between coverage and evidence is the central business idea. Better records could help establish what happened, support claims decisions and gradually give insurers more information about operating risk. The value depends on the quality and consistency of those records across actual deployments."
+      ]
+    },
+    {
+      "heading": "Insurance is becoming part of the rollout",
+      "paragraphs": [
+        "Boop enters a market in which established insurers are also developing more specific robot coverage. On October 29, Tokio Marine HCC International and Adrian Flux announced household insurance for domestic humanoids in the UK, covering the robot and certain damage or liability arising from its use.",
+        "That household product serves a different setting from Tyler’s commercial construction work. Together, the announcements show insurers beginning to define products around where a robot operates, what it does and who may suffer a loss.",
+        "Clearer coverage can make a robot project easier to approve. A company moving beyond a pilot must fit the machine into its operating contracts and risk arrangements as well as its workflow. Insurance that addresses the intended use could ease that transition, alongside the work needed to make the deployment dependable.",
+        "As these products develop, who will ultimately shoulder the premiums: the manufacturer, the business using the robot, or a service provider packaging both together?"
+      ]
+    },
+    {
+      "heading": "What the first policy can teach",
+      "paragraphs": [
+        "Human Friendly Robotics attributes its selection to Tyler’s safety and field experience. The more useful evidence over time will connect operating history, incident reconstruction and the way coverage develops as robots take on more work.",
+        "A recorder can help explain an incident; reducing its likelihood still depends on the machine, its operating limits and the people managing the site. An insurance product becomes more useful when those elements are understood together.",
+        "For Boop, the next test is turning a first customer into a repeatable approach across machines and environments. For construction robotics, this is an early example of the commercial infrastructure growing around paid work. As deployments expand, the allocation of risk and its cost will become part of how robotic labor is sold."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Human Friendly Robotics: first customer announcement, November 2, 2026",
+      "url": "https://www.linkedin.com/posts/humanfriendlyrobotics_were-proud-to-be-boops-first-customer-activity-7523114511449432064-A8pk"
+    },
+    {
+      "label": "Human Friendly Robotics: Tyler product and operating description",
+      "url": "https://www.humanfriendly.bot/tyler"
+    },
+    {
+      "label": "Boop: coverage overview",
+      "url": "https://www.trustboop.com/"
+    },
+    {
+      "label": "Boop: per robot pricing and coverage tiers",
+      "url": "https://www.trustboop.com/pricing"
+    },
+    {
+      "label": "Boop Research: The black box for robots",
+      "url": "https://www.trustboop.com/research/black-box-for-robots"
+    },
+    {
+      "label": "Boop Research: Out of the loop, by construction",
+      "url": "https://www.trustboop.com/research/out-of-the-loop"
+    },
+    {
+      "label": "Floor Covering News: Human Friendly Robotics tackles labor shortage, September 29, 2026",
+      "url": "https://www.fcnews.net/2026/09/human-friendly-robotics-tackles-labor-shortage/"
+    },
+    {
+      "label": "Tokio Marine HCC: UK domestic humanoid coverage announcement, October 29, 2026",
+      "url": "https://www.tmhcc.com/en/news-and-articles/company-news/tokio-marine-hcc-international-and-adrian-flux-partner-to-launch-domestic-humanoid-robot-coverage"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "construction",
+    "relevantIndustries": [],
+    "technologies": [
+      "robotics"
+    ],
+    "applications": []
+  },
+  "publishedDate": "2026-11-04",
+  "publishedAt": "2026-11-04T00:41:24-05:00",
+  "publishedLabel": "November 4, 2026",
+  "image": "/images/news/boop-human-friendly-robotics-first-insurance-customer.png"
+},
+{
   "slug": "xiaomi-humanoid-eight-hour-factory-assignment",
   "title": "Xiaomi says its humanoid handled a full factory shift",
   "summary": "Xiaomi reports an eight hour panel sorting assignment at its car factory, with autonomous error correction and production line coordination. The result puts sustained work at the center of its humanoid trials.",
