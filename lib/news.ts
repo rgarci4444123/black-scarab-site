@@ -49,8 +49,8 @@ export const newsUpdates: NewsUpdate[] = [
     ]
   },
   "slug": "agility-robotics-public-spac-financials-commercialization",
-  "title": "Agility’s $2.5 billion debut reveals the financial reality of humanoid robotics",
-  "summary": "As the American robot maker enters public markets, its financial disclosures and Chinese competitors show the distance between early sales and the industry’s commercial ambitions.",
+  "title": "Agility Robotics IPO explained: AGLT stock and SPAC deal",
+  "summary": "Agility Robotics joins Nasdaq as AGLT through a SPAC merger. Explore its $2.5B valuation, $465M gross capital raise, revenue and Digit robot deployments.",
   "category": "Capital",
   "author": {
     "name": "Rodolfo Garcia Calderoni, CFA",
@@ -124,7 +124,7 @@ export const newsUpdates: NewsUpdate[] = [
     {
       "heading": "A public listing through a SPAC",
       "paragraphs": [
-        "Agility reached Nasdaq by combining with a special purpose acquisition company, or SPAC. Churchill XI was already publicly listed and held cash raised from investors. Its shareholders could redeem their shares for cash rather than remain invested through the merger.",
+        "Agility reached Nasdaq by combining with a special purpose acquisition company, or SPAC. This route differs from a traditional initial public offering, or IPO: Churchill XI was already publicly listed and held cash raised from investors. Its shareholders could redeem their shares for cash rather than remain invested through the merger.",
         "Approximately 61.5% of Churchill’s Class A shares were redeemed, removing about $261.8 million from its trust account. The financing also included a private investment in public equity, known as a PIPE, led by Foxconn.",
         "The approximately $465.1 million gross capital total comprises $164.1 million from the SPAC trust, $201 million from the PIPE and $100 million Agility had already received. The trust and PIPE therefore contribute approximately $365.1 million at closing, before transaction expenses. The combined company completed the merger on November 4.",
         "Agility plans to use the capital to fulfill orders, expand deployments and scale production. The agreed $2.5 billion valuation concerns its existing equity before this financing; its stock market value after the merger depends on the shares outstanding and their trading price."
