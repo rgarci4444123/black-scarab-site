@@ -1,0 +1,53 @@
+.figure {
+  margin: 32px 0;
+  min-width: 0;
+  overflow: hidden;
+  padding: 36px 36px 25px;
+  border: 1px solid #eaeaec;
+  border-radius: 22px;
+  background: #fff;
+  color: #242b30;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  break-inside: avoid;
+  scroll-margin-top: 110px;
+}
+.heading { margin: 0 0 30px; }
+.title { margin: 0; color: #242b30; font-size: 25px; font-weight: 500; line-height: 1.25; letter-spacing: -.7px; text-wrap: pretty; }
+.subtitle { margin: 10px 0 0; color: #86868b; font-size: 12px; line-height: 1.6; }
+.table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; }
+.table th, .table td { padding: 18px 5px; text-align: right; vertical-align: middle; }
+.table thead th { padding-top: 0; padding-bottom: 14px; color: #747b79; font-size: 12px; font-weight: 400; border-bottom: 1px solid #e8e8eb; }
+.table tbody tr + tr { border-top: 1px solid #ededf0; }
+.table th:first-child { padding-left: 0; text-align: left; }
+.table td:last-child, .table th:last-child { padding-right: 0; }
+.table tbody th { color: #515750; font-weight: 500; }
+.positive { color: #476a50; }
+.negative { color: #a55b43; }
+.result { font-weight: 600; }
+.caption { margin: 14px 0 0; padding-top: 18px; border-top: 1px solid #f0f0f2; color: #86868b; font-size: 11px; line-height: 1.65; }
+.application { margin: 24px 0; }
+.applicationLabel { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 12px; font-size: 14px; color: #515750; line-height: 1.5; }
+.applicationLabel strong { flex-shrink: 0; color: #242b30; font-size: 27px; font-weight: 500; letter-spacing: -.7px; font-variant-numeric: tabular-nums; }
+.track { height: 10px; background: #eff0f1; border-radius: 2px; }
+.bar { height: 100%; background: #58666d; border-radius: 2px; }
+@media(max-width:640px) {
+  .figure { padding: 28px 20px 22px; margin: 28px 0; border-radius: 19px; }
+  .heading { margin-bottom: 26px; }
+  .title { font-size: 24px; letter-spacing: -.6px; }
+  .subtitle { font-size: 11px; }
+  .table { font-size: 14px; }
+  .table th, .table td { padding: 17px 3px; }
+  .table thead th { font-size: 11px; }
+  .caption { margin-top: 12px; padding-top: 14px; }
+  .applicationLabel { font-size: 13px; align-items: center; gap: 12px; }
+  .applicationLabel strong { font-size: 26px; }
+  .application { margin: 23px 0; }
+}
+@media(max-width:360px) {
+  .figure { padding: 24px 12px 18px; }
+  .title { font-size: 22px; }
+  .table { font-size: 12px; }
+  .table th, .table td { padding-left: 2px; padding-right: 2px; }
+  .table thead th { font-size: 10.5px; }
+}

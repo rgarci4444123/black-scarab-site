@@ -7,6 +7,8 @@ export type NewsSource = {
 export type NewsSection = {
   heading: string;
   paragraphs: string[];
+  visual?: "agility-financials" | "agility-revenue-applications";
+  visualAfterParagraph?: number;
 };
 
 export type NewsUpdate = {
@@ -33,6 +35,185 @@ export type NewsUpdate = {
 };
 
 export const newsUpdates: NewsUpdate[] = [
+{
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [
+      "warehousing-logistics"
+    ],
+    "technologies": [
+      "humanoid-robotics"
+    ],
+    "applications": [
+      "material-handling"
+    ]
+  },
+  "slug": "agility-robotics-public-spac-financials-commercialization",
+  "title": "Agility’s $2.5 billion debut reveals the financial reality of humanoid robotics",
+  "summary": "As the American robot maker enters public markets, its financial disclosures and Chinese competitors show the distance between early sales and the industry’s commercial ambitions.",
+  "category": "Capital",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "10 min read",
+  "imageAlt": "Lithographic editorial illustration of a generic industrial biped carrying a tote through a monumental stone doorway, with plum shadows and yellow light suggesting its arrival in public markets.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "Agility’s merger used a $2.5 billion valuation of existing equity and raised approximately $465 million in gross aggregate capital, including $100 million received earlier.",
+    "Company financial filings show markedly different revenue, gross margins and net results across Agility, Unitree and UBTECH.",
+    "Digit has live commercial deployments; the larger Digit 5 rollout and conditional orders make commercialization the next test."
+  ],
+  "sources": [
+    {
+      "label": "Agility: Nasdaq debut announcement, November 5",
+      "url": "https://www.agilityrobotics.com/content/agility-becomes-first-u-s-publicly-listed-pure-play-humanoid-robotics-company-begins-trading-today-on-nasdaq-as-aglt"
+    },
+    {
+      "label": "Agility: merger completion, November 4",
+      "url": "https://www.agilityrobotics.com/content/agility-robotics-and-churchill-capital-corp-xi-complete-business-combination"
+    },
+    {
+      "label": "Churchill XI: financing components and redemptions, November 2, Item 8.01",
+      "url": "https://www.sec.gov/Archives/edgar/data/2074973/000121390026115038/ea0310517-8k425_church11.htm"
+    },
+    {
+      "label": "Final Agility merger prospectus: financial statements, customer concentration and conditional orders",
+      "url": "https://www.sec.gov/Archives/edgar/data/2074973/000121390026109058/ea0297114-07.htm"
+    },
+    {
+      "label": "GXO: deployment expansion announcement, October 26",
+      "url": "https://investors.gxo.com/news-releases/news-release-details/gxo-and-agility-robotics-expand-partnership-accelerate"
+    },
+    {
+      "label": "Unitree: 2026 prospectus, consolidated results and product sales",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-14/1225472621.PDF"
+    },
+    {
+      "label": "UBTECH: Annual Report 2025, financial summary and full size humanoid business",
+      "url": "https://owebsite-cdn.ubtrobot.com/resources/file/2026/04/21/797179114676293.pdf"
+    },
+    {
+      "label": "Counterpoint Research: Chinese Enterprises Leading Global Commercialization Wave of Humanoid Robots",
+      "url": "https://counterpointresearch.com/en/insights/Chinese-Enterprises-Leading-Global-Commercialization-Wave-of-Humanoid-Robots"
+    },
+    {
+      "label": "Federal Reserve: average exchange rates for 2025",
+      "url": "https://www.federalreserve.gov/releases/g5a/20260105/"
+    },
+    {
+      "label": "Associated Press: original Agility transaction and industrial focus",
+      "url": "https://apnews.com/article/39f2356b9c1e167d0985b821f70079c5"
+    }
+  ],
+  "publishedDate": "2026-11-05",
+  "publishedAt": "2026-11-05T10:37:05-05:00",
+  "publishedLabel": "November 5, 2026",
+  "image": "/images/news/agility-robotics-public-spac-financials-commercialization.png",
+  "sections": [
+    {
+      "heading": "A public market test for humanoids",
+      "paragraphs": [
+        "Agility Robotics, the American manufacturer behind the Digit humanoid robot, begins trading on the Nasdaq today under the ticker AGLT, following its merger with Churchill Capital Corp XI.",
+        "The transaction valued Agility's existing equity at $2.5 billion. Last year, the company generated just $1.8 million in revenue and recorded a $138 million loss.",
+        "Dividing that agreed equity value before new financing by 2025 revenue gives approximately 1,400 times annual sales, a Black Scarab calculation that shows how much of the transaction’s valuation rests on future commercialization.",
+        "That would be an extraordinary valuation for an established manufacturer. For a young robotics company, it reflects a different calculation: investors are placing enormous value on the possibility that humanoid robots will eventually become a widespread form of industrial labor.",
+        "A comparison with manufacturers in China reveals a different stage of commercialization. Some competitors are already producing thousands of robots, generating substantially more revenue and operating with very different financial profiles."
+      ]
+    },
+    {
+      "heading": "A public listing through a SPAC",
+      "paragraphs": [
+        "Agility reached Nasdaq by combining with a special purpose acquisition company, or SPAC. Churchill XI was already publicly listed and held cash raised from investors. Its shareholders could redeem their shares for cash rather than remain invested through the merger.",
+        "Approximately 61.5% of Churchill’s Class A shares were redeemed, removing about $261.8 million from its trust account. The financing also included a private investment in public equity, known as a PIPE, led by Foxconn.",
+        "The approximately $465.1 million gross capital total comprises $164.1 million from the SPAC trust, $201 million from the PIPE and $100 million Agility had already received. The trust and PIPE therefore contribute approximately $365.1 million at closing, before transaction expenses. The combined company completed the merger on November 4.",
+        "Agility plans to use the capital to fulfill orders, expand deployments and scale production. The agreed $2.5 billion valuation concerns its existing equity before this financing; its stock market value after the merger depends on the shares outstanding and their trading price."
+      ]
+    },
+    {
+      "heading": "A promising robot, but a very small business",
+      "paragraphs": [
+        "Agility has spent more than a decade developing Digit, a two legged robot designed to handle repetitive tasks in warehouses, factories, and distribution centers.",
+        "Digit has already performed work in commercial environments.",
+        "At GXO's facility in Georgia, Digit moves containers between warehouse equipment and conveyor systems. The companies recently reported that the robots had moved more than 100,000 containers, and GXO plans to expand deployments to facilities in North Carolina and Tennessee in early 2027.",
+        "Agility also has commercial relationships with Toyota Motor Manufacturing Canada and Schaeffler, giving it experience integrating humanoid robots into existing industrial operations.",
+        "Inside a working warehouse, the robot must operate reliably, interact with other equipment and fit into a process that already has established productivity requirements.",
+        "But technical progress has not yet translated into substantial revenue.",
+        "Agility generated $1.8 million in sales during 2025, up from approximately $310,000 the previous year. That represents impressive percentage growth, but the underlying business remains extremely small.",
+        "Approximately $1.13 million, or 64% of annual sales, came from related parties. That included about $1.04 million in robot sales to one investor, making revenue highly dependent on a small group of financially connected customers.",
+        "The company also spent considerably more money delivering its products and services than it received from customers.",
+        "For every $1 in revenue Agility generated in 2025, it recorded approximately $2.51 in cost of goods sold, before research, administration and other operating expenses.",
+        "Research and development alone cost $91.6 million. The company used approximately $100 million in cash to fund its operations throughout the year.",
+        "More recent results reinforce how early commercialization remains. During the first six months of 2026, revenue fell to $174,000, compared with $625,000 during the same period a year earlier. Agility reported a $361.9 million net loss and used $86.2 million in cash for operations during that half year. Increased stock compensation accounted for much of the difference between the accounting loss and cash use.",
+        "This is the fundamental distinction investors must understand: Agility has demonstrated that its technology can perform useful commercial tasks. It has not yet demonstrated that it can deliver those tasks profitably at scale."
+      ]
+    },
+    {
+      "heading": "How does Agility compare with the rest of the humanoid industry?",
+      "paragraphs": [
+        "China has emerged as an important center of humanoid robot manufacturing, with companies including Unitree, AGIBOT and UBTECH developing robots for research, industrial applications and commercial services.",
+        "Several have already reached a scale that Agility has not.",
+        "Unitree’s humanoid business contributed RMB867.8 million, or approximately $121 million, of its 2025 revenue. Quadrupeds and components supplied much of the rest.",
+        "Its prospectus distinguishes 5,511 humanoids shipped from 5,215 sold. Shipments exceeded recognized sales because some units had not completed the customer acceptance steps needed for revenue recognition.",
+        "UBTECH’s full size humanoid products and services contributed RMB820.6 million, approximately $114 million, or 41% of group revenue. It reported sales of 1,079 full size humanoids.",
+        "AGIBOT illustrates another route to scale. Counterpoint Research estimates that it generated more than $140 million in humanoid sales revenue in 2025.",
+        "Agility's valuation is built largely around a business it expects to develop over the coming years. Several Chinese competitors already have materially larger manufacturing and sales operations.",
+        "The figures cover different product mixes. Unitree sells quadrupeds alongside humanoids, while UBTECH operates several robotics businesses. A humanoid sold to a university is not economically equivalent to a robot performing paid work in a warehouse."
+      ],
+      "visual": "agility-financials",
+      "visualAfterParagraph": 1
+    },
+    {
+      "heading": "China is scaling robots. But who is buying them?",
+      "paragraphs": [
+        "An important distinction in the humanoid market is the difference between selling a robot and deploying one as productive labor.",
+        "Counterpoint Research estimates that global humanoid robot sales revenue exceeded $500 million in 2025, with Chinese manufacturers accounting for much of the market.",
+        "Nearly half came from entertainment and performance, and data production. Those markets can generate sales before robots take on everyday industrial labor.",
+        "Industrial uses are already part of that market. Counterpoint assigns 17% of revenue to intelligent manufacturing and 6% to warehousing and logistics.",
+        "A research institution might purchase a humanoid to develop robotics software. An entertainment company might buy one for performances. These sales generate revenue for manufacturers without necessarily demonstrating that robots can economically replace repetitive human labor.",
+        "A warehouse operator needs to know how many hours a robot can work, how often it requires maintenance, how much supervision it needs, and whether its total cost is lower than alternative forms of automation.",
+        "While Chinese companies are establishing manufacturing scale across several types of customers, Agility has concentrated its commercial efforts on putting robots to work inside industrial operations.",
+        "Its experience with GXO, Toyota, and Schaeffler offers a different form of progress: learning how robots behave over thousands of working hours in real customer environments.",
+        "The company reports more than 65,000 hours of cumulative operation.",
+        "That experience could become valuable as humanoids expand into more complicated workflows. But it must eventually translate into recurring sales, higher productivity, and improving financial margins."
+      ],
+      "visual": "agility-revenue-applications",
+      "visualAfterParagraph": 2
+    },
+    {
+      "heading": "The $300 million opportunity",
+      "paragraphs": [
+        "Agility's next major opportunity is Digit 5, the company's newest humanoid platform, introduced in September.",
+        "The robot is designed for a broader range of industrial tasks, repetitive lifting of up to 50 pounds and work closer to people through its cooperative safety architecture.",
+        "Agility reports more than $300 million in committed multi year orders for Digit 5.",
+        "That figure sounds enormous compared with the company's $1.8 million in annual revenue, but the distinction between orders and sales is important.",
+        "The company's filings describe a commitment involving 1,000 robots under a three year service arrangement with a single related party customer. The agreement depends on Agility meeting specified product and performance requirements and includes warrants that vest as robots are deployed.",
+        "In other words, the $300 million is not money Agility has already earned. It represents potential future revenue that would be recognized over time as the robots are delivered and services performed.",
+        "Digit 5 is expected to reach early customers in the first half of 2027, with broader availability targeted for the end of that year.",
+        "Agility also operates RoboFab, a manufacturing facility in Oregon designed to produce as many as 10,000 robots annually. That is its intended production capacity, not its current annual output.",
+        "Alongside outright robot sales, Agility offers Robots as a Service, where customers pay to use robotic labor over time.",
+        "For customers, this can make adoption easier by avoiding a large upfront purchase.",
+        "For Agility, however, it means manufacturing and supporting expensive machines before collecting the full revenue those machines might generate over several years.",
+        "The economics depend on whether recurring customer payments are sufficient to cover the robot's manufacturing cost, installation, maintenance, software, and ongoing support.",
+        "A robot that works reliably for long periods could eventually generate attractive recurring revenue. One that spends too much time being repaired, supervised, or reprogrammed could become an expensive liability.",
+        "The new capital will have to fund the gap between producing robots and collecting their service revenue. The central challenge is converting those investments into a business that eventually generates more cash than it consumes."
+      ]
+    },
+    {
+      "heading": "What the next two years will reveal",
+      "paragraphs": [
+        "The humanoid robotics industry is moving beyond the point where impressive demonstrations alone can define progress.",
+        "The industry is developing several commercial models at once, from selling hardware for research and performances to providing robots for industrial work. Manufacturing volume and sustained customer use will both matter as these markets mature.",
+        "What matters next is whether customers continue buying or leasing robots after initial trials, whether deployments expand beyond individual facilities, and whether manufacturers can reduce costs as production increases.",
+        "For Agility, the most revealing developments through 2027 and 2028 will be the commercial introduction of Digit 5, the expansion of existing customer deployments, and whether those milestones begin to produce meaningful revenue growth.",
+        "Investors should also watch whether the cost of delivering robotic labor starts falling relative to the revenue it generates.",
+        "The next stage will be measured through the economics of sustained work.",
+        "Public ownership brings that transition into regular financial view. Deployments and product announcements will increasingly be judged alongside recognized revenue, cash use and the cost of keeping robots productive.",
+        "Agility has raised capital and demonstrated useful work. Can it now turn those early deployments into repeatable, profitable robotic labor at commercial scale?"
+      ]
+    }
+  ]
+},
 {
   "slug": "pudu-tomo-s-self-sharpening-mower",
   "title": "Pudu brings blade sharpening into its TOMO S robot mower",

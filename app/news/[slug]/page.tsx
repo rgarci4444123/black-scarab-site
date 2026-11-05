@@ -7,6 +7,7 @@ import AuthorLinkedIn from "@/components/author-linkedin";
 import EmailSignupCard from "@/components/email-signup-card";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
+import { PeerFinancials, MarketRevenue } from "@/components/agility-news-visuals";
 import {
   getNewsUpdateBySlug,
   newsUpdates,
@@ -212,7 +213,13 @@ export default async function NewsArticlePage({ params }: Props) {
                     <section>
                       <h2 className="text-2xl font-semibold tracking-[-0.03em] sm:text-3xl">{section.heading}</h2>
                       <div className="mt-5 space-y-5 text-base leading-8 text-[#3f4954] sm:text-lg">
-                        {section.paragraphs.map((paragraph) => <p key={paragraph}>{renderParagraph(paragraph)}</p>)}
+                        {section.paragraphs.map((paragraph, paragraphIndex) => (
+                          <Fragment key={paragraph}>
+                            <p>{renderParagraph(paragraph)}</p>
+                            {paragraphIndex === section.visualAfterParagraph && section.visual === "agility-financials" ? <PeerFinancials /> : null}
+                            {paragraphIndex === section.visualAfterParagraph && section.visual === "agility-revenue-applications" ? <MarketRevenue /> : null}
+                          </Fragment>
+                        ))}
                       </div>
                     </section>
                     {index === 1 ? (
