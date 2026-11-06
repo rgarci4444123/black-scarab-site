@@ -1,0 +1,34 @@
+{
+  "lookupDate": "2026-11-06",
+  "companies": [
+    {
+      "name": "ABB",
+      "linkedin": "https://www.linkedin.com/company/abb/",
+      "evidence": [
+        "https://www.linkedin.com/company/abb/ About section matches ABB official domain, Zurich headquarters and electrification/automation business",
+        "https://www.abb.com/global/en/news/140154/update-on-divestment-of-abb-robotics"
+      ]
+    },
+    {
+      "name": "ABB Robotics",
+      "linkedin": "https://www.linkedin.com/showcase/abbrobotics/",
+      "evidence": [
+        "ABB official Robotics brochure links linkedin.com/showcase/abbrobotics",
+        "LinkedIn About matches official go.abb/robotics, business identity and affiliated ABB parent"
+      ]
+    },
+    {
+      "name": "SoftBank Group Corp.",
+      "linkedin": "https://www.linkedin.com/company/softbankgroup/",
+      "evidence": [
+        "https://group.softbank/en homepage explicitly links matching LinkedIn page",
+        "Matching company LinkedIn profile and group.softbank domain"
+      ]
+    }
+  ],
+  "composerTags": "Selected all three matching picker results",
+  "liveTags": "All three exact URLs verified on live detail page",
+  "image": "social-text-proposed.png",
+  "imageApproval": "Explicit user choice: Use the text image",
+  "publicationApproval": "Explicit user choice: Publish the website report and LinkedIn post"
+}

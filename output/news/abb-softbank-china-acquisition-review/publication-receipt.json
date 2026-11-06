@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "websitePublished": true,
+  "linkedinPublished": true,
+  "xPrepared": true,
+  "checks": {
+    "productionBuild": "passed",
+    "articlePreviews": 172,
+    "sourceLint": "passed",
+    "fullLint": "4 existing errors and1 existing warning",
+    "desktopMobile": "articleandindexverified,1280and390,zerooverflow",
+    "metadata": "passed"
+  },
+  "approvedSocialImage": "social-text-proposed.png",
+  "approvalBlock": null,
+  "releaseSource": "/tmp/black-scarab-abb-release-20261106",
+  "gitIndex": "/tmp/abb-release-20261106.index",
+  "base": "a36f0b86a953d1252d340edbfbb8ffbcb77feec6",
+  "authorization": "Explicit user approval to publish website and company LinkedIn received November6",
+  "releaseCommit": "d1876a776bfca6352965b069831b231fb799fad8",
+  "deployment": "GqK6eVsiaruksNHvdpHCT9VE75DN",
+  "website": "https://www.blackscarab.ai/news/abb-softbank-china-acquisition-review",
+  "linkedin": "https://www.linkedin.com/feed/update/urn:li:share:7524508243331698688/?actorCompanyId=111898269",
+  "companyId": "111898269",
+  "companyMentions": [
+    "https://www.linkedin.com/company/abb/",
+    "https://www.linkedin.com/showcase/abbrobotics/",
+    "https://www.linkedin.com/company/softbankgroup/"
+  ],
+  "firstCompanyLinkCommentVisible": true,
+  "indexnow": 200,
+  "xManualHandoff": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/x/abb-softbank-china-acquisition-review/publication.txt",
+  "xImage": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/x/abb-softbank-china-acquisition-review/abb-softbank-x.png",
+  "xWeightedCharacters": 239,
+  "richResults": {
+    "status": "passed",
+    "validItems": [
+      "Articles",
+      "Organization"
+    ],
+    "url": "https://search.google.com/test/rich-results/result?id=UfaXcCAYzq2Zjk_RfG7wgQ",
+    "crawlTime": "2026-11-06T11:30:46-05:00"
+  },
+  "verifiedAt": "2026-11-06T16:35:10.521330+00:00",
+  "googleSearchConsole": {
+    "status": "indexing-requested",
+    "message": "URL was added to a priority crawl queue",
+    "submissionCount": 1
+  }
+}

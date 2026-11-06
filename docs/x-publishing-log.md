@@ -207,3 +207,10 @@ Mexico cannot afford to miss the physical AI revolution.
 * Manual X copy, alt text and exact 1200 pixel image path saved in `output/x/dyna-taku-laundry-workflow/publication.md`.
 * Public profile and repository log checked; no matching Dyna post found among available recent posts.
 * No X publication performed. Rodolfo publishes and verifies X himself.
+
+
+## ABB and SoftBank China prohibition manual X edition, November 6, 2026
+
+Website https://www.blackscarab.ai/news/abb-softbank-china-acquisition-review and company LinkedIn https://www.linkedin.com/feed/update/urn:li:share:7524508243331698688/?actorCompanyId=111898269 verified in order. Exact ABB, ABB Robotics and SoftBank Group mentions verified live, with a visible first company canonical link comment. Rodolfo explicitly approved the text image and website/company LinkedIn publication. Same approved image is used for manual X. Three BREAKING bullets,239weightedcharacters, preserve November4notification timing and distinguish the China prohibition from the unresolved globalUSD5.375billiontransaction.
+
+Officialwebsite/profile checks November6 verified @ABBgroupnews, @ABBRobotics and @SoftBank_Group. No unresolved handles; ABB parent omitted from shortcopy but included in companylist. Recent liveBlackScarabAIprofile and local log checked, no matching event observed. Copy,alttext,verifiedcompanyprofiles andhandoff: `output/x/abb-softbank-china-acquisition-review/publication.txt`. Exact image `/Users/rodolfogarcia/Desktop/black-scarab-site/output/x/abb-softbank-china-acquisition-review/abb-softbank-x.png`. Rodolfo publishes and verifies X manually.

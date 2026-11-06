@@ -1,0 +1,34 @@
+{
+  "verifiedAt": "2026-11-06",
+  "companies": [
+    {
+      "company": "ABB",
+      "handle": "@ABBgroupnews",
+      "profile": "https://x.com/ABBgroupnews",
+      "primarySource": "https://careers.abb/global/en",
+      "evidence": "Official ABB careers website links twitter.com/ABBgroupnews. Live profile is ABB, verified, with official ABB news/content.",
+      "inShortCopy": false
+    },
+    {
+      "company": "ABB Robotics",
+      "handle": "@ABBRobotics",
+      "profile": "https://x.com/ABBRobotics",
+      "primarySource": "https://library.e.abb.com/public/723939d3f53748728f5e7713540d2b43/2026_01_Brochure%20ABB%20Robotics.pdf",
+      "evidence": "ABB official Robotics brochure lists x.com/ABBRobotics; live matching robotics profile links go.abb/robotics.",
+      "inShortCopy": true
+    },
+    {
+      "company": "SoftBank Group Corp.",
+      "handle": "@SoftBank_Group",
+      "profile": "https://x.com/SoftBank_Group",
+      "primarySource": "https://group.softbank/en",
+      "evidence": "Official group homepage links x.com/softbank_group; live verified profile identifies SoftBank Group Corp., TSE9984, Tokyo, group.softbank. Distinct from SoftBank telecom.",
+      "inShortCopy": true
+    }
+  ],
+  "unresolved": [],
+  "lookupMethod": "Official website links followed by read-only live X profile identity verification in existing authorized browser. Web retrieval returned403 for X profiles; no programmatic bypass.",
+  "duplicateCheck": "Local log and recent live BlackScarabAI profile checked. Latest postNovember5Agility; noABBChinaeventobserved.",
+  "weightedCharacters": 239,
+  "manualOnly": true
+}
