@@ -38,6 +38,137 @@ export const newsUpdates: NewsUpdate[] = [
 {
   "taxonomy": {
     "primaryIndustry": "manufacturing",
+    "relevantIndustries": [],
+    "technologies": [
+      "industrial-robotics"
+    ],
+    "applications": []
+  },
+  "slug": "abb-softbank-china-acquisition-review",
+  "title": "China blocks SoftBank’s purchase of ABB Robotics in China",
+  "summary": "China has prohibited SoftBank’s acquisition of ABB’s robotics business in the country. The companies are still discussing the $5.375 billion global deal, with its scope, terms and closing path unresolved.",
+  "category": "Policy",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "6 min read",
+  "image": "/images/news/abb-softbank-china-acquisition-review.png",
+  "imageAlt": "Conceptual editorial illustration of interconnected metal modules holding generic industrial robot arms, with a ruby glass barrier interrupting one section of the assembly.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "SoftBank says it received China’s prohibition on November 4. ABB disclosed it on November 5, followed by SoftBank’s confirmation on November 6.",
+    "The decision concerns ABB’s robotics business in China, a manufacturing and research base within the proposed $5.375 billion global acquisition.",
+    "Both companies say discussions continue. A revised transaction structure, price or closing timetable would require a further announcement."
+  ],
+  "sections": [
+    {
+      "heading": "A China prohibition puts the global deal in question",
+      "paragraphs": [
+        "China has prohibited SoftBank’s acquisition of ABB’s robotics business in the country, creating a major obstacle to the $5.375 billion global transaction the companies agreed in October 2025.",
+        "SoftBank said on November 6 that it received the notification on November 4 from China’s Office of the Working Mechanism for Foreign Investment Security Review. ABB had disclosed the prohibition a day earlier, saying SoftBank manages the regulatory approval process.",
+        "Both companies say they remain in discussions about the transaction. Their statements leave the global agreement’s eventual outcome open: the Chinese business cannot be acquired under the prohibited proposal, while the parties’ response to that decision remains unresolved.",
+        "That distinction matters. Any route forward must address a substantial operating part of the business SoftBank agreed to buy, rather than simply move the expected closing date."
+      ]
+    },
+    {
+      "heading": "What SoftBank agreed to buy",
+      "paragraphs": [
+        "The October 8, 2025 agreement envisaged ABB separating its robotics business into a new holding company. A SoftBank subsidiary would acquire all the shares of that company. The announced purchase price was subject to customary adjustments for items including net debt and working capital at closing.",
+        "ABB described the division at signing as a business with approximately 7,000 employees and $2.3 billion in 2024 revenue. Those figures describe the scale of the operation when the deal was announced, rather than its current workforce or annual sales.",
+        "The attraction for SoftBank was an established industrial platform: robot development, manufacturing, sales and customer relationships. In its acquisition announcement, the group said it intended to strengthen that platform with AI investment and capabilities across its robotics portfolio.",
+        "A working industrial robotics business gives new software a route into factories through equipment, integration expertise and service relationships already in place. Building those capabilities from scratch takes time. Acquiring them also means taking on the constraints attached to their locations and ownership."
+      ]
+    },
+    {
+      "heading": "China is embedded in the business",
+      "paragraphs": [
+        "China is ABB’s largest robotics market and accounts for about 30 percent of its robotics business, according to Reuters. The local footprint extends well beyond a sales office.",
+        "ABB opened its Shanghai robotics factory in December 2022, describing a $150 million investment in a 67,000 square meter facility combining production and research. Its research center was intended to support work including machine vision, digital twins and software.",
+        "In July 2025, ABB said more than 90 percent of the robots it supplied to Chinese customers were manufactured locally. That is a measure of local production for those customers, distinct from China’s share of the division’s worldwide business.",
+        "The same announcement introduced three robot families manufactured in Shanghai and described a local value chain covering research, production and service. This is an operating base that develops and supplies products for its market.",
+        "For a potential restructuring, that depth creates practical questions. Manufacturing, engineering, software rights and support arrangements would need to work across whatever ownership boundaries the parties proposed. A geographic separation could change how the remaining business operates as well as what SoftBank is willing to pay. That is Black Scarab’s analysis of the industrial implications, not an announced plan."
+      ]
+    },
+    {
+      "heading": "Data and control enter the review",
+      "paragraphs": [
+        "Reuters reported that Chinese authorities were concerned about the potential transfer of sensitive data to the United States and SoftBank’s connections with Western companies, citing a person familiar with the transaction. Another person cited by Reuters described concerns about a Japanese company gaining control of the technology amid strained relations between China and Japan.",
+        "Those accounts offer possible explanations for the security review outcome. The companies’ own announcements establish the decision and its geographic scope without attributing it to those motives.",
+        "For the industry, the implication is broader than the destination of finished machines. As robot businesses add AI, ownership can also determine access to engineering knowledge, software and operating data. A transaction may therefore attract scrutiny over how those assets are controlled and used across borders."
+      ]
+    },
+    {
+      "heading": "What remains unresolved",
+      "paragraphs": [
+        "The first question is the business perimeter. The original agreement covered ABB’s robotics business through a holding company acquisition. The China prohibition raises the question of whether a different proposal could be acceptable to both the companies and the relevant authorities. A transaction excluding or separating the Chinese operations is a possible analytical scenario, not a disclosed agreement or an established regulatory remedy.",
+        "The second is economics. A smaller or differently structured business could carry a different value, cost base and growth opportunity. The $5.375 billion announced value belongs to the original transaction. Applying it unchanged to a hypothetical revised perimeter would assume the answer to a negotiation that has not been announced.",
+        "The third is timing and conditions. In its October 20 third quarter results, ABB still expected the divestment to close in the fourth quarter of 2026, subject to regulatory approvals and customary closing conditions. That guidance preceded the November prohibition. It provides the previous timetable against which the next disclosure should be assessed.",
+        "Continued discussions show the parties are working on the transaction. Whether that produces a revised proposal, another regulatory process or an end to the agreement will determine the actual outcome. Each would carry different implications for ownership and the value of the business transferred."
+      ]
+    },
+    {
+      "heading": "ABB’s portfolio plan is also at stake",
+      "paragraphs": [
+        "When ABB agreed to sell Robotics, it abandoned an earlier plan to list the division separately. It argued that the robotics operation had limited business and technology overlap with the rest of the group, which focuses on electrification and automation.",
+        "The sale therefore served two corporate strategies. SoftBank wanted an industrial foundation for its AI ambitions. ABB wanted to simplify its portfolio and release capital from a business it regarded as a less natural fit.",
+        "The prohibition puts pressure on the transaction connecting those plans. ABB’s earlier listing proposal provides historical context, but reviving it would be a new decision. SoftBank’s strategic interest likewise explains why the parties might keep talking without establishing what compromise would be acceptable."
+      ]
+    },
+    {
+      "heading": "The next disclosure needs to explain the path",
+      "paragraphs": [
+        "The most useful next announcement would define what the parties intend to transfer, how the proposal addresses the Chinese decision, and what approvals and timing follow. Any change to price or operating arrangements would help explain whether the revised transaction still delivers the original commercial rationale.",
+        "Black Scarab’s assessment is that the prohibition exposes the difficulty of buying a global robotics platform as a single package. Its value comes partly from connected local capabilities, including the manufacturing and research base in China. Those capabilities also sit within national rules governing changes of control.",
+        "The Chinese prohibition is a confirmed event. The future of the wider acquisition now depends on the concrete response ABB and SoftBank can put forward."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "SoftBank: November 6 confirmation and November 4 notification date",
+      "url": "https://group.softbank/en/news/press/20261106"
+    },
+    {
+      "label": "ABB: November 5 divestment update",
+      "url": "https://www.abb.com/global/en/news/140154/update-on-divestment-of-abb-robotics"
+    },
+    {
+      "label": "SoftBank: October 8, 2025 acquisition agreement and transaction structure",
+      "url": "https://group.softbank/en/news/press/20251008"
+    },
+    {
+      "label": "ABB: original sale announcement, portfolio rationale and division scale",
+      "url": "https://www.abb.com/global/en/news/129685/abb-to-divest-robotics-division-to-softbank-group"
+    },
+    {
+      "label": "ABB: October 20, 2026 results and fourth quarter closing expectation",
+      "url": "https://attachment.news.eu.nasdaq.com/a432a6ff77b9f9e09c9fe0318fd0bbdee"
+    },
+    {
+      "label": "ABB: Shanghai robotics factory opening, December 2022",
+      "url": "https://new.abb.com/news/detail/97670/abb-opens-state-of-the-art-robotics-mega-factory-in-shanghai"
+    },
+    {
+      "label": "ABB: China robot families and local production, July 2025",
+      "url": "https://www.abb.com/global/en/news/127638/prsrl-abb-strengthens-china-robotics-leadership-with-three-new-robot-families"
+    },
+    {
+      "label": "Reuters: prohibition, China exposure and attributed security concerns, November 5",
+      "url": "https://www.marketscreener.com/news/china-blocks-softbank-s-5-4-billion-takeover-of-abb-s-robotics-division-ft-reports-ce785fdcd980f020"
+    },
+    {
+      "label": "Dow Jones Newswires: ABB confirmation, November 5",
+      "url": "https://www.marketscreener.com/news/abb-confirms-china-blocked-softbank-deal-for-robotics-unit-ce785fdcda89f725"
+    }
+  ],
+  "publishedDate": "2026-11-06",
+  "publishedAt": "2026-11-06T11:22:16-05:00",
+  "publishedLabel": "November 6, 2026"
+},
+{
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
     "relevantIndustries": [
       "warehousing-logistics"
     ],
