@@ -1,0 +1,37 @@
+{
+  "base": "69194674135cc9ac9b146926e346393d343083dd",
+  "tree": "e0f3dea453d0ff2a90993f5423b7530aa95d6bbf",
+  "commit": "5a2d301f862692b42cb2e5f5beaaabfdf3af19d6",
+  "status": "complete",
+  "websitePublished": true,
+  "linkedinPublished": true,
+  "xPrepared": true,
+  "website": "https://www.blackscarab.ai/news/axon-skydio-investment-public-safety",
+  "linkedin": "https://www.linkedin.com/feed/update/urn:li:share:7524888340546908162/?actorCompanyId=111898269",
+  "deployment": "https://vercel.com/rodolfo-garcias-projects/black-scarab-site/C2P2H2LV39uBgjUhsK2277ewihtz",
+  "companyMentions": [
+    "https://www.linkedin.com/company/axon-protect-life/",
+    "https://www.linkedin.com/company/skydio/"
+  ],
+  "firstCompanyLinkCommentVisible": true,
+  "richResults": "https://search.google.com/test/rich-results/result?id=_G43-GnlZ0la1lJtoVVvyg",
+  "indexNow": "200, 2 URLs accepted",
+  "googleIndexing": "requested once, confirmed priority crawl queue",
+  "checks": {
+    "build": "passed",
+    "articlePreviews": 174,
+    "targetedLint": "passed",
+    "fullLint": "4 preexisting errors and1warning",
+    "responsive": "desktop1280/mobile390 article/index, nooverflow",
+    "metadata": "passed"
+  },
+  "xHandoff": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/x/axon-skydio-investment-public-safety/publication.txt",
+  "xImage": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/x/axon-skydio-investment-public-safety/axon-skydio-x-original.png",
+  "imageGeneration": {
+    "tool": "built-in imagegen",
+    "prompt": "output/news/axon-skydio-investment-public-safety/imagegen-prompt.txt",
+    "cover": "public/images/news/axon-skydio-investment-public-safety.png"
+  },
+  "intelligence": "Existing Skydio profile, qualified investment event and morning reconciliation reused; no duplicate intake",
+  "socialImageSha256": "d89d9bda7ed9675cbac2f2476cef2173431148a72441da583fa76944bdaf7e0c"
+}

@@ -1,0 +1,27 @@
+{
+  "lookupDate": "2026-11-07",
+  "companies": [
+    {
+      "company": "Axon",
+      "handle": "@axon_enterprise",
+      "url": "https://x.com/axon_enterprise",
+      "source": "https://investor.axon.com/2026-11-05-Axon-reports-record-Q3-2026-revenue-of-909-million,-up-28-year-over-year",
+      "identity": "Axon, verified, Protect Life, Scottsdale, axon.com/news"
+    },
+    {
+      "company": "Skydio",
+      "handle": "@SkydioHQ",
+      "url": "https://x.com/SkydioHQ",
+      "source": "https://www.skydio.com",
+      "identity": "Skydio, verified, San Mateo, official skydio.com link; official site footer twitter.com/skydiohq"
+    },
+    {
+      "company": "Dedrone",
+      "handle": "@Dedrone",
+      "url": "https://x.com/Dedrone",
+      "source": "https://www.dedrone.com",
+      "identity": "Official website links twitter.com/Dedrone; live account describes airspace security and links dedrone.com; contextual company omitted from short copy"
+    }
+  ],
+  "unresolved": []
+}

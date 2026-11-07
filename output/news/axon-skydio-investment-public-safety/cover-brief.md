@@ -14,3 +14,5 @@ Recent six: Zipline orange/blue screen print neighborhood and tether; ABB isomet
 Difference: Each differs on at least three dimensions, including subject, viewpoint and composition; Meta shares translucent material but differs in subject scale, viewpoint, palette, lighting and visual thesis.
 Avoid: Logos, typography, identifiable product replicas, weapons, surveillance targets, faces, paper textures, generic factory interiors.
 Tool: Built-in imagegen.
+
+Production portfolio recheck: fetched live source also includes Agility courthouse/halftone yellow-purple architectural scene, Pudu painterly green orchard mower/trail and Stretch brushed-metal modular wheel sculpture. These were absent from the older local collection. Final cover differs from each on subject, scale/viewpoint, composition, lighting and surface recipe. Production recent-six contact sheet saved as production-recent-covers.png. No repeated complete recipe.

@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "canonical": "https://www.blackscarab.ai/news/axon-skydio-investment-public-safety",
+  "article": {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Axon expands its Skydio stake and public safety sales partnership",
+    "description": "Axon’s roughly $1.2 billion staged investment is expected to lift its Skydio stake to about 37%, alongside exclusive public safety distribution rights in the United States and Canada.",
+    "datePublished": "2026-11-07T12:30:52-05:00",
+    "dateModified": "2026-11-07T12:30:52-05:00",
+    "articleSection": "Capital",
+    "mainEntityOfPage": "https://www.blackscarab.ai/news/axon-skydio-investment-public-safety",
+    "image": [
+      "https://www.blackscarab.ai/images/news/axon-skydio-investment-public-safety.png"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Rodolfo Garcia Calderoni",
+      "honorificSuffix": "CFA",
+      "url": "https://www.blackscarab.ai/about",
+      "sameAs": [
+        "https://www.linkedin.com/in/rodolfo-garcia-calderoni-cfa-4a5535148"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Black Scarab",
+      "url": "https://www.blackscarab.ai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.blackscarab.ai/icon.png"
+      }
+    },
+    "citation": [
+      "https://www.prnewswire.com/news-releases/axon-invests-1-2-billion-in-skydio-to-build-the-future-of-drone-as-first-responder-302930993.html",
+      "https://www.sec.gov/Archives/edgar/data/1069183/000162828026071150/axon-20261105.htm",
+      "https://www.sec.gov/Archives/edgar/data/1069183/000162828026071242/axon-20260930.htm",
+      "https://investor.axon.com/2026-11-05-Axon-reports-record-Q3-2026-revenue-of-909-million,-up-28-year-over-year",
+      "https://support.skydio.com/hc/en-us/articles/50548836995227-How-Skydio-Drone-Video-is-Uploaded-to-Axon-Evidence",
+      "https://www.skydio.com/x10",
+      "https://www.axon.com/products/axon-air",
+      "https://apnews.com/article/bba6f0bf9035a6e6b1c4fef3e8230b89"
+    ]
+  },
+  "allParagraphsMatch": true,
+  "socialImage": true,
+  "dashPunctuation": false
+}
