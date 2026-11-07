@@ -1,0 +1,135 @@
+[
+  {
+    "company": "Zipline",
+    "handle": "@zipline",
+    "profileUrl": "https://x.com/zipline",
+    "status": "verified-official-website-and-live-profile",
+    "officialWebsite": "https://www.zipline.com/newsroom/zipline-raises-1-5-billion-to-build-nationwide-drone-delivery-network",
+    "profileEvidence": "output/news/zipline-funding-walmart-network/zipline-x-identity.txt",
+    "lookupDate": "2026-11-06"
+  },
+  {
+    "company": "Walmart",
+    "handle": "@Walmart",
+    "profileUrl": "https://x.com/Walmart",
+    "status": "verified-official-website-and-live-profile",
+    "officialWebsite": "https://corporate.walmart.com/news/2026/11/walmart-expands-drone-delivery-network-with-zipline",
+    "profileEvidence": "output/news/zipline-funding-walmart-network/walmart-x-identity.txt",
+    "lookupDate": "2026-11-06"
+  },
+  {
+    "company": "Paradigm",
+    "officialWebsite": "https://www.paradigm.xyz/",
+    "resolvedWebsite": "https://www.paradigm.xyz/",
+    "observedSocialLinks": [
+      "https://twitter.com/paradigm",
+      "https://x.com/paradigm"
+    ],
+    "status": "verified-official-website-and-live-profile",
+    "lookupDate": "2026-11-06",
+    "handle": "@paradigm",
+    "profileUrl": "https://x.com/paradigm",
+    "profileEvidence": "output/news/zipline-funding-walmart-network/paradigm-x-identity.txt"
+  },
+  {
+    "company": "WCM Investment Management",
+    "officialWebsite": "https://www.wcminvest.com/",
+    "resolvedWebsite": "https://www.wcminvest.com/",
+    "observedSocialLinks": [],
+    "status": "unresolved-no-official-link-on-reviewed-page",
+    "lookupDate": "2026-11-06",
+    "handle": null,
+    "profileUrl": null,
+    "resolution": "Unresolved from the bounded official website lookup. Keep the company name plain if used."
+  },
+  {
+    "company": "Layer Global",
+    "officialWebsite": "https://layerglobal.com/",
+    "resolvedWebsite": "https://layerglobal.com/",
+    "observedSocialLinks": [],
+    "status": "unresolved-no-official-link-on-reviewed-page",
+    "lookupDate": "2026-11-06",
+    "handle": null,
+    "profileUrl": null,
+    "resolution": "Unresolved from the bounded official website lookup. Keep the company name plain if used."
+  },
+  {
+    "company": "Valor Equity Partners",
+    "officialWebsite": "https://www.valorep.com/",
+    "resolvedWebsite": "https://www.valorep.com/",
+    "observedSocialLinks": [],
+    "status": "unresolved-no-official-link-on-reviewed-page",
+    "lookupDate": "2026-11-06",
+    "handle": null,
+    "profileUrl": null,
+    "resolution": "Unresolved from the bounded official website lookup. Keep the company name plain if used."
+  },
+  {
+    "company": "Fidelity Management & Research Company",
+    "officialWebsite": "https://www.fidelity.com/",
+    "status": "unresolved-access",
+    "error": "HTTP Error 403: Forbidden",
+    "lookupDate": "2026-11-06",
+    "handle": null,
+    "profileUrl": null,
+    "resolution": "Unresolved from the bounded official website lookup. Keep the company name plain if used. No brand account substituted for the named legal investor."
+  },
+  {
+    "company": "Uber",
+    "officialWebsite": "https://www.uber.com/",
+    "status": "unresolved-access",
+    "error": "HTTP Error 406: Not Acceptable",
+    "lookupDate": "2026-11-06",
+    "handle": null,
+    "profileUrl": null,
+    "resolution": "Unresolved from the bounded official website lookup. Keep the company name plain if used."
+  },
+  {
+    "company": "Tiger Global",
+    "officialWebsite": "https://www.tigerglobal.com/",
+    "resolvedWebsite": "https://www.tigerglobal.com/",
+    "observedSocialLinks": [],
+    "status": "unresolved-no-official-link-on-reviewed-page",
+    "lookupDate": "2026-11-06",
+    "handle": null,
+    "profileUrl": null,
+    "resolution": "Unresolved from the bounded official website lookup. Keep the company name plain if used."
+  },
+  {
+    "company": "J.P. Morgan",
+    "officialWebsite": "https://www.jpmorgan.com/",
+    "resolvedWebsite": "https://www.jpmorgan.com/global",
+    "observedSocialLinks": [
+      "https://x.com/jpmorgan",
+      "https://x.com/jpmorgan&#34;,&#34;ctaTitle&#34;:&#34;&#34;,&#34;ctaComponentName&#34;:&#34;Primary"
+    ],
+    "status": "verified-official-website-and-live-profile",
+    "lookupDate": "2026-11-06",
+    "handle": "@jpmorgan",
+    "profileUrl": "https://x.com/jpmorgan",
+    "profileEvidence": "output/news/zipline-funding-walmart-network/jpmorgan-x-identity.txt"
+  },
+  {
+    "company": "ARK Invest",
+    "officialWebsite": "https://www.ark-invest.com/",
+    "status": "unresolved-access",
+    "error": "HTTP Error 403: Forbidden",
+    "lookupDate": "2026-11-06",
+    "handle": null,
+    "profileUrl": null,
+    "resolution": "Unresolved from the bounded official website lookup. Keep the company name plain if used."
+  },
+  {
+    "company": "Salesforce Ventures",
+    "officialWebsite": "https://salesforceventures.com/",
+    "resolvedWebsite": "https://salesforceventures.com/",
+    "observedSocialLinks": [
+      "https://twitter.com/salesforcevc"
+    ],
+    "status": "verified-official-website-and-live-profile",
+    "lookupDate": "2026-11-06",
+    "handle": "@SalesforceVC",
+    "profileUrl": "https://x.com/SalesforceVC",
+    "profileEvidence": "output/news/zipline-funding-walmart-network/salesforcevc-x-identity.txt"
+  }
+]

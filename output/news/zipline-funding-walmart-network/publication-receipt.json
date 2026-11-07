@@ -1,0 +1,34 @@
+{
+  "base": "c011451e3fe3732d86ce5368b6ef3a629e57fdaa",
+  "tree": "c35970064ab51bf54fd45321e66ed36eaab63c91",
+  "commit": "6fd82866823cefe70ea6ad6e5f359858a8046027",
+  "status": "complete",
+  "deploymentUrl": "https://vercel.com/rodolfo-garcias-projects/black-scarab-site/DadZDDFiRyfkLr1z4Npyc6tiBEBh",
+  "websitePublished": true,
+  "linkedinPublished": true,
+  "xPrepared": true,
+  "approvedSocialImage": "output/news/zipline-funding-walmart-network/social-text-approved.png",
+  "checks": {
+    "productionBuild": "passed",
+    "articlePreviews": 173,
+    "articleLint": "passed",
+    "fullLint": "4 preexisting errors and1preexisting warning",
+    "responsive": "1280and390article/indexpassed;nooverflow",
+    "metadata": "canonical,NewsArticle,Organization,authorcredentials,timestamps,imageverified"
+  },
+  "preview": "http://localhost:3217/news/zipline-funding-walmart-network",
+  "website": "https://www.blackscarab.ai/news/zipline-funding-walmart-network",
+  "linkedin": "https://www.linkedin.com/feed/update/urn:li:share:7524695197998391296/?actorCompanyId=111898269",
+  "companyMentions": [
+    "https://www.linkedin.com/company/flyzipline/",
+    "https://www.linkedin.com/company/walmart/"
+  ],
+  "firstCompanyLinkCommentVisible": true,
+  "indexNow": "200accepted2URLs",
+  "xHandoff": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/x/zipline-funding-walmart-network/publication.txt",
+  "xImage": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/x/zipline-funding-walmart-network/zipline-x.png",
+  "richResults": "https://search.google.com/test/rich-results/result?id=lmlQM6LQQEEXteDcTi0PVw",
+  "richResultsStatus": "1validArticle;1validOrganization",
+  "googleIndexing": "requested-once-confirmed-priority-crawl-queue",
+  "intelligence": "existing-event-source-company-platforms-and-four-funding-links-verified-no-duplicate-intake"
+}
