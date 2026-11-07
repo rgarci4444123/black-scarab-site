@@ -1,0 +1,21 @@
+# Axon and Skydio publication
+
+Selected by Rodolfo November 7, 2026: Create news report for Axon expands its Skydio stake and public safety sales partnership. Specific instruction: briefly describe each company’s relevant work implicitly, omitting unrelated business segments. This selects the November 7 prepared candidate. AIR and Aptiv remain pending.
+
+Event: November 5, 2026 16:01 ET, 21:01 UTC. Freshness boundary November 8 at 21:01 UTC. Rechecked issuer announcement, 8-K, 10-Q, Q3 shareholder letter, Skydio X10 and Axon Air product sources. No material premise change found. Production origin/main 69194674135cc9ac9b146926e346393d343083dd and live RSS checked, no duplicate. Dedicated release from that commit preserves other live content. Local unrelated edits retained.
+
+Facts: Approximately $1.2 billion staged primary and secondary transactions. $254.9 million primary closing, approximately $127.5 million cash paid plus commitment to deliver stock. Expected 37% fully diluted stake and subsequent closings remain expected. Filing takes precedence over present-tense shareholder letter shorthand. Exclusivity limited to public safety U.S./Canada. Bookings forecast and scale claims attributed. Separate Dedrone delays identified separately. Company descriptions limited to autonomous drones, sensing, remote operations and evidence integration. Body research links only in Sources.
+
+Source access: S1/S4/S7/S8 and live feed retrieved directly and saved. SEC and support documentation read successfully through web tools; terminal fetches returned403, not retried. Morgan Lewis adviser corroboration is not independent. AP November6 report independently confirms investment alongside earnings coverage, read through web; direct fetch403 not retried. No source restriction workaround.
+
+Intelligence: AGENTS, memory, ingestion playbook and API contract read. Native status healthy, 7,656 records, integrity OK, pending20, failed0. Full ent_skydio and sig_news_20261107_skydio_axon_investment read back. Existing November7 morning receipt and Dedrone specialist reused, no replay or new identities. Axon diversified parent retained as context under prior relevance disposition. No new investors named. Daily discovery preserved with selected-publication recheck observation.
+
+Cover: Original built-in imagegen artwork, full prompt/recipe in cover-brief.md and conversation. Six recent covers reviewed. Exact visible caption Editorial illustration by Black Scarab. Original /images/news/axon-skydio-investment-public-safety.png; social JPEG1200x675,125040bytes. Rodolfo chose Use the original artwork for LinkedIn and X on November7. Proposed text image retained as not selected.
+
+LinkedIn lookup November7: Axon investor website Q3 release links https://www.linkedin.com/company/axon-protect-life and https://x.com/axon_enterprise. Skydio official website links https://www.linkedin.com/company/skydio/ and twitter.com/skydiohq (serialized with triple slash in website markup; normalized host/path, live identity confirmation required). Only Axon and Skydio discussed in social copy. Company page identity, mention picker, live post and first link comment checks pending.
+
+Validation and publication pending.
+
+LinkedIn About identity confirmed in live Safari November7: Axon verified page, Public Safety, Scottsdale, official www.axon.com. Skydio verified page, Robotics Engineering, San Mateo, official www.skydio.com. LinkedIn bio customer totals are older than issuer November5 release and were not substituted. Picker/live mention verification remains required.
+
+Validation passed: production build and174article previews; final article targeted lint; image/taxonomy checks; rendered desktop1280/mobile390 article and index, no horizontal overflow. Hero and card crops inspected, exact caption and author/byline portrait loaded. Built canonical, NewsArticle, author CFA honorificSuffix, timezone publishedAt, social JPEG metadata and every final paragraph verified. Full lint retains four preexisting errors and one warning in unrelated files. Initial sandbox build stalled; same build succeeded with worker access. Final release content1053bodywords plus summary/keypoints/sources, approximately6minutes. Original artwork confirmed for social.
