@@ -1,7 +1,32 @@
 import type {CareerGuideBlock,CareerGuideContent,CareerGuideSection,Citation} from '@/lib/career-paths/types';
+import {secondOrderStepResponse} from '@/lib/career-paths/control-response';
 
 export function CareerOverview({items}:{items:NonNullable<CareerGuideContent['overview']>}) {
   return <section className="profession-overview" aria-labelledby="career-overview-title"><h2 id="career-overview-title">Career at a glance</h2><dl>{items.map(item=><div key={item.label}><dt>{item.label}</dt><dd><strong>{item.value}</strong>{item.detail?<p>{item.detail}</p>:null}</dd></div>)}</dl></section>;
+}
+
+type ControlResponse=Extract<CareerGuideBlock,{type:'control-response'}>;
+export function CareerControlResponse({block}:{block:ControlResponse}) {
+  const points=(damping:number)=>Array.from({length:301},(_,i)=>{
+    const t=i/300*block.durationSeconds;
+    return `${i/300*720},${(1-secondOrderStepResponse(t,damping,block.naturalFrequencyRadPerSec)/1.5)*300}`;
+  }).join(' ');
+  return <figure id={block.id} className="profession-control-response" aria-labelledby={`${block.id}-title`}>
+    <figcaption id={`${block.id}-title`}>{block.title}</figcaption>
+    <ul className="profession-control-legend" aria-label="Response curves">{block.curves.map((curve,i)=><li key={curve.label}><span className={`profession-control-key profession-control-curve-${i}`} aria-hidden="true"/>{curve.label}</li>)}<li><span className="profession-control-key profession-control-target" aria-hidden="true"/>Target</li></ul>
+    <p className="profession-control-axis-label">Position (% of target)</p>
+    <div className="profession-control-plot">
+      <div className="profession-control-y" aria-hidden="true">{[150,100,50,0].map(value=><span key={value} style={{top:`${(150-value)/150*100}%`}}>{value}</span>)}</div>
+      <svg viewBox="0 0 720 300" preserveAspectRatio="none" role="img" aria-labelledby={`${block.id}-desc`}>
+        <title id={`${block.id}-desc`}>Two illustrative position responses to a new target. The lightly damped response overshoots to about 137 percent and oscillates before settling. The more damped response peaks at about 102 percent and settles sooner. Both start at zero and approach the same target.</title>
+        {[0,100,200,300].map(y=><line key={y} x1="0" x2="720" y1={y} y2={y} className={y===100?'profession-control-target-line':'profession-control-grid'}/>)}
+        {block.curves.map((curve,i)=><polyline key={curve.label} points={points(curve.dampingRatio)} className={`profession-control-line profession-control-curve-${i}`}/>)}
+      </svg>
+    </div>
+    <div className="profession-control-x" aria-hidden="true">{[0,1,2,3].map(i=><span key={i}>{i/3*block.durationSeconds}</span>)}</div>
+    <p className="profession-control-time">Time (seconds)</p>
+    <p className="profession-research-note">{block.note}</p>
+  </figure>;
 }
 
 export function CareerGuideNavigation({sections,nextStepsId}:{sections:CareerGuideSection[];nextStepsId?:string}) {

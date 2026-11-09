@@ -1,6 +1,6 @@
 # Career guide progress
 
-Updated November 9, 2026. Nine of twenty approved for publication. Embedded Software Engineer is approved for release; eleven guides remain.
+Updated November 9, 2026. Ten of twenty approved for publication. Robotics Controls Engineer is approved for release; ten guides remain.
 
 - ~~Mechanical Engineer~~
 - ~~Robot Learning Engineer~~
@@ -11,7 +11,7 @@ Updated November 9, 2026. Nine of twenty approved for publication. Embedded Soft
 - ~~Robotics Data Engineer~~
 - ~~Field Service Engineer~~
 - ~~Embedded Software Engineer~~
-- Robotics Controls Engineer
+- ~~Robotics Controls Engineer~~
 - Machine Learning Infrastructure Engineer
 - Industrial Automation Engineer
 - Manufacturing Engineer

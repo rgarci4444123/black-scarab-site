@@ -9,9 +9,9 @@ const snapshot=JSON.parse(fs.readFileSync('public/research/physical-ai-careers-2
 const guide=publishedCareerGuides[0];
 
 test('complete guides are navigable, with no draft or empty entries',()=>{
- assert.equal(publishedCareerGuides.length,9);
+ assert.equal(publishedCareerGuides.length,10);
  assert.equal(guidePath(guide),'/career-paths/hardware-manufacturing/mechanical-engineer');
- for(const role of occupations)assert.equal(Boolean(guideForOccupation(role.id)),['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer','field-service-engineer','embedded-software-engineer'].includes(role.id));
+ for(const role of occupations)assert.equal(Boolean(guideForOccupation(role.id)),['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer','field-service-engineer','embedded-software-engineer','robotics-controls-engineer'].includes(role.id));
  assert.equal(isPublishedCareerGuide({...guide,status:'draft'}),false);
  assert.equal(isPublishedCareerGuide({...guide,sections:[]}),false);
  assert.equal(isPublishedCareerGuide({...guide,sections:[{id:'empty',heading:'Empty',paragraphs:[]}]}),false);
@@ -23,7 +23,7 @@ test('guide sections, research tables, citations and learning resources are inte
  assert.equal(new Set(['the-role',...allSections.map(section=>section.id)]).size,9);
  const sources=new Set(guide.citations.map(source=>source.id));assert.equal(sources.size,guide.citations.length);
  for(const section of allSections){for(const id of section.sourceIds||[])assert.ok(sources.has(id),id);for(const block of section.blocks||[]){if(block.type==='figure')assert.ok(fs.existsSync('public'+block.src));if(block.type==='table'){for(const row of block.rows)assert.equal(row.length,block.columns.length);}if(block.type==='resources'){for(const item of block.items)assert.ok(guide.citations.some(source=>source.url===item.href));}}}
- const mechanical=snapshot.roles.find(role=>['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer','field-service-engineer','embedded-software-engineer'].includes(role.id));
+ const mechanical=snapshot.roles.find(role=>['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer','field-service-engineer','embedded-software-engineer','robotics-controls-engineer'].includes(role.id));
  const skills=guide.sections.find(section=>section.id==='skills').blocks.find(block=>block.type==='skill-mentions');
  assert.equal(skills.denominator,mechanical.postingCount);
  assert.deepEqual(skills.rows,mechanical.skills.map(({label,count,required,preferred,contextual})=>({label,count,required,preferred,contextual})));
@@ -58,8 +58,9 @@ test('all guides retain unique metadata, complete sources and explicit snapshot 
   else if(item.occupationId==='robotics-data-engineer')assert.equal(item.publishedAt,'2026-11-09');
   else if(item.occupationId==='field-service-engineer')assert.equal(item.publishedAt,'2026-11-09');
   else if(item.occupationId==='embedded-software-engineer')assert.equal(item.publishedAt,'2026-11-09');
+  else if(item.occupationId==='robotics-controls-engineer')assert.equal(item.publishedAt,'2026-11-09');
   else assert.equal(item.publishedAt,'2026-11-03');
-  assert.equal(item.sections.length,['perception-engineer','field-service-engineer','embedded-software-engineer'].includes(item.occupationId)?8:7);assert.ok(item.introduction.length);assert.ok(item.nextSteps.blocks.length);
+  assert.equal(item.sections.length,['perception-engineer','field-service-engineer','embedded-software-engineer','robotics-controls-engineer'].includes(item.occupationId)?8:7);assert.ok(item.introduction.length);assert.ok(item.nextSteps.blocks.length);
   const ids=new Set(item.citations.map(source=>source.id));assert.equal(ids.size,item.citations.length);
   const sections=[...item.sections,item.nextSteps];assert.equal(new Set(sections.map(section=>section.id)).size,sections.length);
   for(const section of sections){
@@ -93,14 +94,15 @@ test('scope flags prevent contaminated cohorts from becoming frequency charts or
 
 test('assessment guide links cover completed professions without entering the matching engine',()=>{
  const {assessmentGuideLinks}=load('lib/career-paths/guides.ts');
- assert.equal(Object.keys(assessmentGuideLinks).length,9);
+ assert.equal(Object.keys(assessmentGuideLinks).length,10);
  for(const item of publishedCareerGuides)assert.equal(assessmentGuideLinks[item.occupationId],guidePath(item));
  assert.equal(assessmentGuideLinks['electrical-engineer'],'/career-paths/hardware-manufacturing/electrical-engineer');
  assert.equal(assessmentGuideLinks['perception-engineer'],'/career-paths/intelligence-autonomy/perception-engineer');
  assert.equal(assessmentGuideLinks['robotics-data-engineer'],'/career-paths/platforms-simulation/robotics-data-engineer');
  assert.equal(assessmentGuideLinks['field-service-engineer'],'/career-paths/integration-operations/field-service-engineer');
  assert.equal(assessmentGuideLinks['embedded-software-engineer'],'/career-paths/hardware-manufacturing/embedded-software-engineer');
- assert.equal(assessmentGuideLinks['robotics-controls-engineer'],undefined);
+ assert.equal(assessmentGuideLinks['robotics-controls-engineer'],'/career-paths/intelligence-autonomy/robotics-controls-engineer');
+ assert.equal(assessmentGuideLinks['machine-learning-infrastructure-engineer'],undefined);
  const engine=fs.readFileSync('lib/career-paths/assessment-engine.ts','utf8');
  assert.doesNotMatch(engine,/publishedCareerGuides|guideForOccupation|assessmentGuideLinks|career-paths\/guides/);
  const component=fs.readFileSync('components/career-assessment.tsx','utf8');
@@ -215,4 +217,33 @@ test('embedded salary and illustrative timing remain mathematically consistent',
  const totals=chart.rows.map(row=>row.segments.reduce((sum,s)=>{assert.ok(s.durationMs>0);return sum+s.durationMs;},0));
  assert.ok(chart.deadlineMs>0&&chart.deadlineMs<=chart.scaleMs);assert.ok(totals.every(total=>total<=chart.scaleMs));
  assert.ok(totals[0]<chart.deadlineMs&&totals[1]>chart.deadlineMs);assert.equal(totals[1]-totals[0],chart.rows[1].segments.find(s=>s.kind==='wait').durationMs);
+});
+
+test('controls salary is reproducible and the response curves obey their analytical model',()=>{
+ const item=guideForOccupation('robotics-controls-engineer');
+ const pay=JSON.parse(fs.readFileSync('public/research/robotics-controls-engineer-compensation-2026-11-02.json','utf8'));
+ const values=pay.observations.map(row=>{
+  assert.deepEqual(row.countries,['United States']);assert.equal(row.period,'year');assert.equal(row.currency,'USD');
+  assert.ok(row.minimum>0&&row.maximum>=row.minimum);assert.equal(row.midpoint,(row.minimum+row.maximum)/2);
+  return row.midpoint;
+ }).sort((a,b)=>a-b);
+ assert.equal(pay.exactMedianMidpoint,values[(values.length-1)/2]);assert.equal(pay.estimate,Math.round(pay.exactMedianMidpoint/1000)*1000);
+ assert.equal(pay.postingCount,new Set(pay.observations.map(row=>row.id)).size);assert.equal(pay.employerCount,new Set(pay.observations.map(row=>row.employerId)).size);
+ assert.equal(pay.postingCount,5);assert.equal(pay.employerCount,3);assert.equal(item.overview[3].value,'$250,000/year');assert.equal(item.publishedAt,'2026-11-09');
+ for(const id of ['applied-intuition:ashby:f55422c0-c807-4f35-935e-4ce089d926d7','generalist:ashby:ebace75d-6896-45f5-a12c-3c0699c9d7a6','gram:greenhouse:4396994009'])assert.ok(pay.excludedObservations.some(row=>row.id===id));
+ for(const row of pay.observations)assert.ok(!pay.excludedObservations.some(other=>other.id===row.id));
+ const {secondOrderStepResponse}=load('lib/career-paths/control-response.ts');
+ const chart=item.sections.flatMap(section=>section.blocks||[]).find(block=>block.type==='control-response');
+ for(const curve of chart.curves){
+  const z=curve.dampingRatio,wn=chart.naturalFrequencyRadPerSec;
+  assert.ok(z>0&&z<1&&wn>0);
+  assert.equal(secondOrderStepResponse(0,z,wn),0);
+  const peakTime=Math.PI/(wn*Math.sqrt(1-z*z));
+  const expectedPeak=1+Math.exp(-z*Math.PI/Math.sqrt(1-z*z));
+  assert.ok(Math.abs(secondOrderStepResponse(peakTime,z,wn)-expectedPeak)<1e-12);
+  assert.ok(peakTime<chart.durationSeconds&&expectedPeak<1.5);
+  assert.ok(Math.abs(secondOrderStepResponse(100,z,wn)-1)<1e-12);
+ }
+ const reviewed=JSON.parse(fs.readFileSync('public'+item.research.evidencePath,'utf8'));
+ for(const example of reviewed.roles[item.id].compensation)assert.ok(pay.observations.some(row=>row.id===example.recordId&&row.minimum===example.minimum&&row.maximum===example.maximum));
 });

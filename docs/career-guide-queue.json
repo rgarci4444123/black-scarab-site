@@ -35,13 +35,14 @@
     {
       "order": 5,
       "roleId": "embedded-software-engineer",
-      "status": "approved-for-release",
+      "status": "deployed",
       "path": "/career-paths/hardware-manufacturing/embedded-software-engineer"
     },
     {
       "order": 6,
       "roleId": "robotics-controls-engineer",
-      "status": "queued"
+      "status": "approved-for-release",
+      "path": "/career-paths/intelligence-autonomy/robotics-controls-engineer"
     },
     {
       "order": 7,

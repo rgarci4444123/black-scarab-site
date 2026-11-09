@@ -1,0 +1,28 @@
+{
+  "revisedAt": "2026-11-09",
+  "status": "complete-copy-applied",
+  "source": "User-supplied editorial revision",
+  "sourcePath": "/Users/rodolfogarcia/.codex/attachments/6ad52d17-1365-4fd6-a69a-bb097d32e646/Pasted text.txt",
+  "sourceSha256": "5fdf31efc2d9ef1189ffb645caea59ac52d21972ab60a2f76591dc3f6e087570",
+  "headline": "How to Become a Robotics Controls Engineer",
+  "sectionCount": 8,
+  "newFragment": "controls-vs-other-roles",
+  "preserved": [
+    "Existing URL, SEO title and metadata",
+    "Hero illustration",
+    "250000 USD compensation derivation and original source provenance",
+    "Complete collapsed methodology and source references",
+    "Analytical response chart, unchanged model and palette"
+  ],
+  "presentation": [
+    "Chart accompanies the shaking-arm scenario in the work section.",
+    "Independent comparison with adjacent careers becomes the eighth main section.",
+    "Salary table heading and note consolidated into one caption and date label."
+  ],
+  "sourceCorrections": [
+    "Annual advertised salary rather than base salary because structured fields do not consistently identify base pay.",
+    "Describe compensation responsibility without inferring a salary ladder from mixed advertisements.",
+    "Retain complete sampling, exclusion and analytical model documentation in the collapsed methodology."
+  ],
+  "portfolio": "Expanded seven-step rotating-joint simulation, a 45-degree illustrative target, load and delay tests, torque limits and integral windup."
+}

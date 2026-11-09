@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "reviewedAt": "2026-11-09",
+  "aggregatePath": "/research/physical-ai-careers-2026-11-02.json",
+  "aggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "rawArchive": {
+    "relativeRoot": "research/physical-ai/2026-11-02",
+    "normalizedRecords": "postings.jsonl",
+    "manifestHash": "6b48026839dcafc9d68144cf3fbedf38889984ad96f667a21e058b4d25f26f14"
+  },
+  "interpretation": "Contextual guide review layer; original dated research remains unchanged.",
+  "roles": {
+    "robotics-controls-engineer": {
+      "recordIds": [
+        "apptronik:greenhouse:6188799004",
+        "apptronik:greenhouse:6135714004",
+        "one-x:ashby:7e9120d6-87d0-458b-b0ec-3b6ea5ea9dc7",
+        "one-x:ashby:a02d07dc-851d-4246-bc1d-1f50412015c0",
+        "standard-bots:ashby:7a6d5b7f-9210-41c7-b7b5-c32bd7d95bc9",
+        "path-robotics:greenhouse:8633173002",
+        "physical-intelligence:ashby:c8f9e9aa-8801-4916-9b1f-2c0bd5f072f9",
+        "kodiak:greenhouse:4312761009",
+        "figure:greenhouse:4671442006",
+        "one-x:ashby:ea9614dd-94e8-4a3a-a714-645957a298d0"
+      ],
+      "auditPath": "research/career-guides/robotics-controls-engineer/evidence-audit.json",
+      "compensation": [
+        {
+          "employer": "Standard Bots",
+          "title": "Senior Robotics Control Systems Engineer",
+          "url": "https://jobs.ashbyhq.com/standardbots/7a6d5b7f-9210-41c7-b7b5-c32bd7d95bc9",
+          "minimum": 180000,
+          "maximum": 215000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "recordId": "standard-bots:ashby:7a6d5b7f-9210-41c7-b7b5-c32bd7d95bc9",
+          "location": "Glen Cove, NY"
+        },
+        {
+          "employer": "1X",
+          "title": "Senior Motor Control Engineer",
+          "url": "https://jobs.ashbyhq.com/1x/7e9120d6-87d0-458b-b0ec-3b6ea5ea9dc7",
+          "minimum": 180000,
+          "maximum": 230000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "recordId": "one-x:ashby:7e9120d6-87d0-458b-b0ec-3b6ea5ea9dc7",
+          "location": "San Carlos, CA"
+        },
+        {
+          "employer": "Figure",
+          "title": "Reinforcement Learning Engineer, Whole Body Control",
+          "url": "https://job-boards.greenhouse.io/figureai/jobs/4671442006",
+          "minimum": 150000,
+          "maximum": 350000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "annual base salary",
+          "recordId": "figure:greenhouse:4671442006",
+          "location": "San Jose, CA"
+        }
+      ],
+      "skillPresentation": "qualitative-source-comparison",
+      "scopeNote": "The primary cohort includes automation, control-center interfaces, guidance and safety assurance. Do not present raw counts as clean controller-development openings or skill prevalence."
+    }
+  },
+  "records": [
+    {
+      "id": "apptronik:greenhouse:6188799004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Controls Engineer - Actuation",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6188799004?gh_jid=6188799004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "8167ceac3bac72a28f036bdf2cdda79e7f41188b85f6bff3fe1ccbb66b04a4d4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Actuator modeling, system identification, closed-loop torque/current control, experimental validation and simulation integration.",
+      "qualification": "BS in Robotics, ME, EE, CS, or a related field + 4 years of relevant experience; MS in a related field + 2 years of relevant experience; or a PhD in a related field.",
+      "qualificationSpans": [
+        {
+          "text": "BS in Robotics, ME, EE, CS, or a related field + 4 years of relevant experience; MS in a related field + 2 years of relevant experience; or a PhD in a related field.",
+          "start": 4265,
+          "end": 4430
+        }
+      ]
+    },
+    {
+      "id": "apptronik:greenhouse:6135714004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Staff Software Engineer - Humanoid Controls",
+      "locations": [
+        "Austin, TX",
+        "Sunnyvale, CA",
+        "Sunnyvale, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6135714004?gh_jid=6135714004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "4896b04811a410c0b2e7cd789e237f2ef5993d825ad45280d98b5450403043e3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Whole-body and mobile manipulation control; model-based and learned approaches, real-time implementation and hardware deployment.",
+      "qualification": "MS or PhD in Robotics, CS, EE, ME, or a related field (or equivalent experience).",
+      "qualificationSpans": [
+        {
+          "text": "MS or PhD in Robotics, CS, EE, ME, or a related field (or equivalent experience).",
+          "start": 3503,
+          "end": 3584
+        }
+      ]
+    },
+    {
+      "id": "one-x:ashby:7e9120d6-87d0-458b-b0ec-3b6ea5ea9dc7",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Motor Control Engineer",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/7e9120d6-87d0-458b-b0ec-3b6ea5ea9dc7",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "bda48e4de775adc988f2ad09c653ac41cd2d387af341ef4e954704aaa3194970",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Motor models, cascaded control, impedance, limits and hardware measurements.",
+      "qualification": "Bachelor’s degree in Electrical Engineering, Controls, Mechatronics, Robotics or a related field",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s degree in Electrical Engineering, Controls, Mechatronics, Robotics or a related field",
+          "start": 5083,
+          "end": 5179
+        }
+      ]
+    },
+    {
+      "id": "one-x:ashby:a02d07dc-851d-4246-bc1d-1f50412015c0",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Software Engineer - Robotic Controls",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/a02d07dc-851d-4246-bc1d-1f50412015c0",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "e51be0dc34a8c4f3df63ea4e58b9a934b7d300e64ee75522182cf99d89372fad",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Control foundations: state estimation, robot models, identification, sensor conditioning and fault responses.",
+      "qualification": "Proven track record of shipping state estimation or control software on physical robots or comparable electromechanical systems",
+      "qualificationSpans": [
+        {
+          "text": "Proven track record of shipping state estimation or control software on physical robots or comparable electromechanical systems",
+          "start": 4271,
+          "end": 4398
+        }
+      ]
+    },
+    {
+      "id": "standard-bots:ashby:7a6d5b7f-9210-41c7-b7b5-c32bd7d95bc9",
+      "employerId": "standard-bots",
+      "employer": "Standard Bots",
+      "title": "Senior Robotics Control Systems Engineer",
+      "locations": [
+        "Glen Cove, NY"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/standardbots/7a6d5b7f-9210-41c7-b7b5-c32bd7d95bc9",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "f4553f8816865bc23fec07fb8ad567f2d758fa4f287c0cc0735c72f9b2304b37",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Servo performance, tracking, impedance, loop benchmarking, stability margins and disturbance rejection.",
+      "qualification": "Experience:5+ years of proven experience modelling control systems, tuning control loops on real-world systems, and validating models through physical experiments on benchtop equipment",
+      "qualificationSpans": [
+        {
+          "text": "Experience:5+ years of proven experience modelling control systems, tuning control loops on real-world systems, and validating models through physical experiments on benchtop equipment",
+          "start": 3213,
+          "end": 3397
+        }
+      ]
+    },
+    {
+      "id": "path-robotics:greenhouse:8633173002",
+      "employerId": "path-robotics",
+      "employer": "Path Robotics",
+      "title": "Robotics Algorithms Engineer, Manipulation & Control",
+      "locations": [
+        "Columbus, Ohio",
+        "Columbus, Ohio, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/pathrobotics/jobs/8633173002?gh_jid=8633173002",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "0bf226c6860104dd7e2413349c2ef5b43f1168c74282d7786cd6447a21ab57da",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/path-robotics.json",
+      "rawSourceFileSha256": "dda49bbc68095b57d6027516973c117de7d1e049b6393bd61747a752e35d13e2",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Sensor-guided manipulation, estimation, feedback/predictive control and real-time C++.",
+      "qualification": "Deep, first-principles real-time control and state estimation — model-predictive control, Kalman/particle/moving-horizon estimation, observability analysis.",
+      "qualificationSpans": [
+        {
+          "text": "Deep, first-principles real-time control and state estimation — model-predictive control, Kalman/particle/moving-horizon estimation, observability analysis.",
+          "start": 1577,
+          "end": 1733
+        }
+      ]
+    },
+    {
+      "id": "physical-intelligence:ashby:c8f9e9aa-8801-4916-9b1f-2c0bd5f072f9",
+      "employerId": "physical-intelligence",
+      "employer": "Physical Intelligence",
+      "title": "Controls Engineer",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/physicalintelligence/c8f9e9aa-8801-4916-9b1f-2c0bd5f072f9",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "cd9a9ee5b6ca6228ac6522777354fcf2d21336903c5efff1e0bfde0f23f88457",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/physical-intelligence.json",
+      "rawSourceFileSha256": "4636b655b7fab48b151da10f872a9268960654cc165ce7e06a60e83e91cc5c99",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Model-based and feedback control, robot bring-up, simulation and real hardware.",
+      "qualification": "Proficiency in Python and C++, including firmware-adjacent development",
+      "qualificationSpans": [
+        {
+          "text": "Proficiency in Python and C++, including firmware-adjacent development",
+          "start": 1695,
+          "end": 1765
+        }
+      ]
+    },
+    {
+      "id": "kodiak:greenhouse:4312761009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Software Engineer, Controls (C++)",
+      "locations": [
+        "Mountain View, CA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4312761009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "7c6021422e3d58ad64471391272b73b99eab07431a18a33ed3fa58f256ed670f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Autonomous vehicle control, production C++, dynamics, modeling and hardware validation.",
+      "qualification": "A strong background in robotics, controls, and mathematics",
+      "qualificationSpans": [
+        {
+          "text": "A strong background in robotics, controls, and mathematics",
+          "start": 2881,
+          "end": 2939
+        }
+      ]
+    },
+    {
+      "id": "figure:greenhouse:4671442006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Reinforcement Learning Engineer, Whole Body Control",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4671442006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "9efa43b197e8e8c125451c18ca44562e29439a1f1b0af8bb150e716c9cefe3ed",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Learned whole-body control, policy evaluation, simulation-to-hardware gaps and robustness. Boundary case with robot learning; included because direct controller development is central.",
+      "qualification": "Strong background in dynamics and control, ideally of legged robots.",
+      "qualificationSpans": [
+        {
+          "text": "Strong background in dynamics and control, ideally of legged robots.",
+          "start": 871,
+          "end": 939
+        }
+      ]
+    },
+    {
+      "id": "one-x:ashby:ea9614dd-94e8-4a3a-a714-645957a298d0",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Staff Firmware Engineer - Motor Controls",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/ea9614dd-94e8-4a3a-a714-645957a298d0",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "bfbc728fd38d1c34842c3e3cc5f78b330c91daa7c9984707cb905e1be49eb79d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Motor-control firmware with direct control-loop development, tuning and validation. Boundary case with embedded software; included because controller ownership is explicit.",
+      "qualification": "5+ years of embedded firmware development in C/C++ (7+ for senior roles)",
+      "qualificationSpans": [
+        {
+          "text": "5+ years of embedded firmware development in C/C++ (7+ for senior roles)",
+          "start": 3534,
+          "end": 3606
+        }
+      ]
+    }
+  ]
+}

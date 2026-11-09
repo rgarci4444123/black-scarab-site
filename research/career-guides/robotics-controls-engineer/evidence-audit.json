@@ -1,0 +1,911 @@
+{
+  "reviewedAt": "2026-11-09",
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "scope": "Feedback and model-based physical control, actuator characterization, whole-body coordination, state estimation and hardware validation. Distinguish from planning, generic firmware, PLC integration and safety assurance.",
+  "cohort": {
+    "postings": 35,
+    "employers": 19
+  },
+  "reviewedRecords": [
+    {
+      "id": "apptronik:greenhouse:6188799004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Controls Engineer - Actuation",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6188799004?gh_jid=6188799004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "8167ceac3bac72a28f036bdf2cdda79e7f41188b85f6bff3fe1ccbb66b04a4d4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Actuator modeling, system identification, closed-loop torque/current control, experimental validation and simulation integration.",
+      "qualification": "BS in Robotics, ME, EE, CS, or a related field + 4 years of relevant experience; MS in a related field + 2 years of relevant experience; or a PhD in a related field.",
+      "qualificationSpans": [
+        {
+          "text": "BS in Robotics, ME, EE, CS, or a related field + 4 years of relevant experience; MS in a related field + 2 years of relevant experience; or a PhD in a related field.",
+          "start": 4265,
+          "end": 4430
+        }
+      ]
+    },
+    {
+      "id": "apptronik:greenhouse:6135714004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Staff Software Engineer - Humanoid Controls",
+      "locations": [
+        "Austin, TX",
+        "Sunnyvale, CA",
+        "Sunnyvale, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6135714004?gh_jid=6135714004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "4896b04811a410c0b2e7cd789e237f2ef5993d825ad45280d98b5450403043e3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Whole-body and mobile manipulation control; model-based and learned approaches, real-time implementation and hardware deployment.",
+      "qualification": "MS or PhD in Robotics, CS, EE, ME, or a related field (or equivalent experience).",
+      "qualificationSpans": [
+        {
+          "text": "MS or PhD in Robotics, CS, EE, ME, or a related field (or equivalent experience).",
+          "start": 3503,
+          "end": 3584
+        }
+      ]
+    },
+    {
+      "id": "one-x:ashby:7e9120d6-87d0-458b-b0ec-3b6ea5ea9dc7",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Motor Control Engineer",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/7e9120d6-87d0-458b-b0ec-3b6ea5ea9dc7",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "bda48e4de775adc988f2ad09c653ac41cd2d387af341ef4e954704aaa3194970",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Motor models, cascaded control, impedance, limits and hardware measurements.",
+      "qualification": "Bachelor’s degree in Electrical Engineering, Controls, Mechatronics, Robotics or a related field",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s degree in Electrical Engineering, Controls, Mechatronics, Robotics or a related field",
+          "start": 5083,
+          "end": 5179
+        }
+      ]
+    },
+    {
+      "id": "one-x:ashby:a02d07dc-851d-4246-bc1d-1f50412015c0",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Software Engineer - Robotic Controls",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/a02d07dc-851d-4246-bc1d-1f50412015c0",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "e51be0dc34a8c4f3df63ea4e58b9a934b7d300e64ee75522182cf99d89372fad",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Control foundations: state estimation, robot models, identification, sensor conditioning and fault responses.",
+      "qualification": "Proven track record of shipping state estimation or control software on physical robots or comparable electromechanical systems",
+      "qualificationSpans": [
+        {
+          "text": "Proven track record of shipping state estimation or control software on physical robots or comparable electromechanical systems",
+          "start": 4271,
+          "end": 4398
+        }
+      ]
+    },
+    {
+      "id": "standard-bots:ashby:7a6d5b7f-9210-41c7-b7b5-c32bd7d95bc9",
+      "employerId": "standard-bots",
+      "employer": "Standard Bots",
+      "title": "Senior Robotics Control Systems Engineer",
+      "locations": [
+        "Glen Cove, NY"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/standardbots/7a6d5b7f-9210-41c7-b7b5-c32bd7d95bc9",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "f4553f8816865bc23fec07fb8ad567f2d758fa4f287c0cc0735c72f9b2304b37",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Servo performance, tracking, impedance, loop benchmarking, stability margins and disturbance rejection.",
+      "qualification": "Experience:5+ years of proven experience modelling control systems, tuning control loops on real-world systems, and validating models through physical experiments on benchtop equipment",
+      "qualificationSpans": [
+        {
+          "text": "Experience:5+ years of proven experience modelling control systems, tuning control loops on real-world systems, and validating models through physical experiments on benchtop equipment",
+          "start": 3213,
+          "end": 3397
+        }
+      ]
+    },
+    {
+      "id": "path-robotics:greenhouse:8633173002",
+      "employerId": "path-robotics",
+      "employer": "Path Robotics",
+      "title": "Robotics Algorithms Engineer, Manipulation & Control",
+      "locations": [
+        "Columbus, Ohio",
+        "Columbus, Ohio, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/pathrobotics/jobs/8633173002?gh_jid=8633173002",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "0bf226c6860104dd7e2413349c2ef5b43f1168c74282d7786cd6447a21ab57da",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/path-robotics.json",
+      "rawSourceFileSha256": "dda49bbc68095b57d6027516973c117de7d1e049b6393bd61747a752e35d13e2",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Sensor-guided manipulation, estimation, feedback/predictive control and real-time C++.",
+      "qualification": "Deep, first-principles real-time control and state estimation — model-predictive control, Kalman/particle/moving-horizon estimation, observability analysis.",
+      "qualificationSpans": [
+        {
+          "text": "Deep, first-principles real-time control and state estimation — model-predictive control, Kalman/particle/moving-horizon estimation, observability analysis.",
+          "start": 1577,
+          "end": 1733
+        }
+      ]
+    },
+    {
+      "id": "physical-intelligence:ashby:c8f9e9aa-8801-4916-9b1f-2c0bd5f072f9",
+      "employerId": "physical-intelligence",
+      "employer": "Physical Intelligence",
+      "title": "Controls Engineer",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/physicalintelligence/c8f9e9aa-8801-4916-9b1f-2c0bd5f072f9",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "cd9a9ee5b6ca6228ac6522777354fcf2d21336903c5efff1e0bfde0f23f88457",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/physical-intelligence.json",
+      "rawSourceFileSha256": "4636b655b7fab48b151da10f872a9268960654cc165ce7e06a60e83e91cc5c99",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Model-based and feedback control, robot bring-up, simulation and real hardware.",
+      "qualification": "Proficiency in Python and C++, including firmware-adjacent development",
+      "qualificationSpans": [
+        {
+          "text": "Proficiency in Python and C++, including firmware-adjacent development",
+          "start": 1695,
+          "end": 1765
+        }
+      ]
+    },
+    {
+      "id": "kodiak:greenhouse:4312761009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Software Engineer, Controls (C++)",
+      "locations": [
+        "Mountain View, CA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4312761009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "7c6021422e3d58ad64471391272b73b99eab07431a18a33ed3fa58f256ed670f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Autonomous vehicle control, production C++, dynamics, modeling and hardware validation.",
+      "qualification": "A strong background in robotics, controls, and mathematics",
+      "qualificationSpans": [
+        {
+          "text": "A strong background in robotics, controls, and mathematics",
+          "start": 2881,
+          "end": 2939
+        }
+      ]
+    },
+    {
+      "id": "figure:greenhouse:4671442006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Reinforcement Learning Engineer, Whole Body Control",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4671442006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "9efa43b197e8e8c125451c18ca44562e29439a1f1b0af8bb150e716c9cefe3ed",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Learned whole-body control, policy evaluation, simulation-to-hardware gaps and robustness. Boundary case with robot learning; included because direct controller development is central.",
+      "qualification": "Strong background in dynamics and control, ideally of legged robots.",
+      "qualificationSpans": [
+        {
+          "text": "Strong background in dynamics and control, ideally of legged robots.",
+          "start": 871,
+          "end": 939
+        }
+      ]
+    },
+    {
+      "id": "one-x:ashby:ea9614dd-94e8-4a3a-a714-645957a298d0",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Staff Firmware Engineer - Motor Controls",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/ea9614dd-94e8-4a3a-a714-645957a298d0",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "bfbc728fd38d1c34842c3e3cc5f78b330c91daa7c9984707cb905e1be49eb79d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original classification unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Motor-control firmware with direct control-loop development, tuning and validation. Boundary case with embedded software; included because controller ownership is explicit.",
+      "qualification": "5+ years of embedded firmware development in C/C++ (7+ for senior roles)",
+      "qualificationSpans": [
+        {
+          "text": "5+ years of embedded firmware development in C/C++ (7+ for senior roles)",
+          "start": 3534,
+          "end": 3606
+        }
+      ]
+    }
+  ],
+  "salaryExclusions": [
+    {
+      "id": "anduril:greenhouse:4904013007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Guidance Navigation and Control (GNC) Engineer, Air Dominance & Strike",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4904013007?gh_jid=4904013007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "be2e7d0dc0e2a2c31a9413939fff7bd163eb303675f63959edaf70b369f4b9cf",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "anduril:greenhouse:5024955007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Guidance Navigation and Control (GNC) Engineer, Air Dominance & Strike - Missiles",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5024955007?gh_jid=5024955007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "bf19e631337b56482a93282d4ddcb3115ef6ea699020c506389fc4607bbf7fb4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "anduril:greenhouse:5262868007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Controls Engineer",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5262868007?gh_jid=5262868007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "bea87b40df1185e78ce5b750950a1906dc0d698852ec6186af5b91536f950f99",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "anduril:greenhouse:5267908007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Software Engineer, Actuation and Control Systems",
+      "locations": [
+        "Costa Mesa, California, United States",
+        "Santa Ana, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5267908007?gh_jid=5267908007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "e45662b21e5cc890395c7aea25e28a48ab8d6e786754240d86605259fe7dd724",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "applied-intuition:ashby:46daad82-d327-4e92-953c-d673fbb77959",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Controls",
+      "locations": [
+        "Tokyo"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/46daad82-d327-4e92-953c-d673fbb77959",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "6f8bb64947bda035ad31e4ff7768809d8a03a1882132d0cc58466de7c29f9f11",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "applied-intuition:ashby:f55422c0-c807-4f35-935e-4ce089d926d7",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Control Center",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/f55422c0-c807-4f35-935e-4ce089d926d7",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "cb40b0659ea60a63edb729b44621bc1c72737041dbf9e14605ee8354bfe7224e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Control Center application/interface role, not physical feedback control."
+    },
+    {
+      "id": "apptronik:greenhouse:6135714004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Staff Software Engineer - Humanoid Controls",
+      "locations": [
+        "Austin, TX",
+        "Sunnyvale, CA",
+        "Sunnyvale, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6135714004?gh_jid=6135714004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "4896b04811a410c0b2e7cd789e237f2ef5993d825ad45280d98b5450403043e3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "apptronik:greenhouse:6188799004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Controls Engineer - Actuation",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6188799004?gh_jid=6188799004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "8167ceac3bac72a28f036bdf2cdda79e7f41188b85f6bff3fe1ccbb66b04a4d4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "formic:greenhouse:4670196006",
+      "employerId": "formic",
+      "employer": "Formic",
+      "title": "Controls & Automation Engineer",
+      "locations": [
+        "Chicago || Bolingbrook, IL"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/formic/jobs/4670196006",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "015e8f0d8c411797bf262e9ac34ec81eaf7193bb7f5fb14243d293e566d492d1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/formic.json",
+      "rawSourceFileSha256": "65e248fa4c2c4131e404bd620ba3caaca4baf177ba3c8302e27fe848266d4e1f",
+      "reason": "Primarily cell controls and automation; separate industrial automation guide."
+    },
+    {
+      "id": "gatik:greenhouse:4594480006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior Software Engineer, Controls",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4594480006?gh_jid=4594480006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "e5602a450d6b00a6d735ce219db9df6ef7dda461d167d09b03b47821a82b43e3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "generalist:ashby:ebace75d-6896-45f5-a12c-3c0699c9d7a6",
+      "employerId": "generalist",
+      "employer": "Generalist",
+      "title": "Software Engineer: Robotics Controls",
+      "locations": [
+        "San Francisco Bay Area (San Mateo) or Boston (Somerville)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/generalist/ebace75d-6896-45f5-a12c-3c0699c9d7a6",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "1dd1a25306b8bec89c2bc6e75a5c7fe8f7d0c3014045cf326911935d28930363",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/generalist.json",
+      "rawSourceFileSha256": "3a68317852f186207f680483cbe333b2be5efb0f070d156245cb2a3a929514b7",
+      "reason": "Stored description contains company overview only; responsibilities cannot be verified beyond the title."
+    },
+    {
+      "id": "gram:greenhouse:4396994009",
+      "employerId": "gram",
+      "employer": "GRAM",
+      "title": "Senior Software Engineer, Controls",
+      "locations": [
+        "El Segundo, California, United States",
+        "Palo Alto, California, United States",
+        "San Francisco Bay Area, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/gram/jobs/4396994009",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "c09698408c9a41d044ead62d726e4a2c90f16d14c0a2f92bdb9d6173e5ee4d1d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gram.json",
+      "rawSourceFileSha256": "706bd3d6bc62b71be02626b1dfae72b01f35c08b1f1831e36845fab26fff70b8",
+      "reason": "Open upper bound ($250,000+) cannot provide a finite range midpoint."
+    },
+    {
+      "id": "humanoid:ashby:0d29a583-4d96-4210-85ac-96da998c67d3",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Staff Controls Software Engineer",
+      "locations": [
+        "UK, London"
+      ],
+      "countries": [
+        "United Kingdom"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/0d29a583-4d96-4210-85ac-96da998c67d3",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "86f1eeb0aad33d20938e364649447c5ef3a968af73b3b4ce907a031dbc0270b0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "humanoid:ashby:27500243-44fd-4dab-9021-cf8ccc0a2269",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Senior Software Controls Engineer",
+      "locations": [
+        "UK, London"
+      ],
+      "countries": [
+        "United Kingdom"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/27500243-44fd-4dab-9021-cf8ccc0a2269",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "a0a50288ba1e6162218ea4b2a1d81d9876237fa118623bf19e3d1bbbb05ed94b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "humanoid:ashby:80880185-8453-4bcd-9677-9d7c04ac7514",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Senior Low-Level Control Engineer",
+      "locations": [
+        "Canada, Vancouver, BC"
+      ],
+      "countries": [
+        "Canada"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/80880185-8453-4bcd-9677-9d7c04ac7514",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "3b781f290aed9969c9423b08a52d1d519ff88b033ddc26a1a4df1d6da73f4679",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "humanoid:ashby:c08fb643-c84c-4e48-a731-349e7acad6b8",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Senior Low-level Control Engineer - End-Effectors",
+      "locations": [
+        "UK, London"
+      ],
+      "countries": [
+        "United Kingdom"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/c08fb643-c84c-4e48-a731-349e7acad6b8",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "cf273efaa459dcf23a74bcf3836e5ef04c234b2767e40ba85c442ba981c117e3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "humanoid:ashby:c997551f-2678-497a-9c12-aef91f766359",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Staff Robotics Control Engineer - Whole-Body Control (Wheeled Platform)",
+      "locations": [
+        "UK, London"
+      ],
+      "countries": [
+        "United Kingdom"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/c997551f-2678-497a-9c12-aef91f766359",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "efd65ea793f5bd6caa64e6d8fd2bd6e66efa15d28e2adf75a5c194e8f24fa9dc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "humanoid:ashby:fd2e5af4-9583-426c-820c-e968b4a06fec",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Robotics Controls Engineer",
+      "locations": [
+        "US, Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/fd2e5af4-9583-426c-820c-e968b4a06fec",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "a799cd5882486268bbd875da56ec7f0d8112f2615365945ffa12ecbce6c45fe2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "kodiak:greenhouse:4005126009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Staff Software Engineer, Controls",
+      "locations": [
+        "Mountain View, CA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4005126009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "19a1b554da5f6243703571604ffd43314734105f4245745f73317282f896f17d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "kodiak:greenhouse:4246360009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Senior Software Engineer, Controls (MATLAB)",
+      "locations": [
+        "Mountain View, CA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4246360009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "619f6b4c6aee94599469f59513587e32251e96fc97ba88d65e473ec65a3b218e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "kodiak:greenhouse:4312761009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Software Engineer, Controls (C++)",
+      "locations": [
+        "Mountain View, CA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4312761009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "7c6021422e3d58ad64471391272b73b99eab07431a18a33ed3fa58f256ed670f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "may-mobility:greenhouse:8206419002",
+      "employerId": "may-mobility",
+      "employer": "May Mobility",
+      "title": "Lead Vehicle Controls and Interface Engineer",
+      "locations": [
+        "Ann Arbor, MI - Hybrid",
+        "Ann Arbor, Michigan, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/maymobility/jobs/8206419002",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "57e4415185500a0f2ad2b46c0b71f8c4aff97add67b9b4db0101e1c4c69184ba",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/may-mobility.json",
+      "rawSourceFileSha256": "2ab98698904ead284505b1b3b2ea0b4d87534f0c3ee604fa3c2fe30e5a67461b",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "nuro:greenhouse:8263453",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Senior/Staff Software Engineer, Applied Controls",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=8263453",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "5625e7464202ee48b4ee31ce463d661dc681b264b1403bd93984f3fb45084f7e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "nuro:greenhouse:8263629",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Senior/Staff Controls Engineer, Core Development",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=8263629",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "2fb7f4c8d96599c333d1f79f3cd344b9ff4475d6875f849494237deac02286f1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "path-robotics:greenhouse:8633173002",
+      "employerId": "path-robotics",
+      "employer": "Path Robotics",
+      "title": "Robotics Algorithms Engineer, Manipulation & Control",
+      "locations": [
+        "Columbus, Ohio",
+        "Columbus, Ohio, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/pathrobotics/jobs/8633173002?gh_jid=8633173002",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "0bf226c6860104dd7e2413349c2ef5b43f1168c74282d7786cd6447a21ab57da",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/path-robotics.json",
+      "rawSourceFileSha256": "dda49bbc68095b57d6027516973c117de7d1e049b6393bd61747a752e35d13e2",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "physical-intelligence:ashby:c8f9e9aa-8801-4916-9b1f-2c0bd5f072f9",
+      "employerId": "physical-intelligence",
+      "employer": "Physical Intelligence",
+      "title": "Controls Engineer",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/physicalintelligence/c8f9e9aa-8801-4916-9b1f-2c0bd5f072f9",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "cd9a9ee5b6ca6228ac6522777354fcf2d21336903c5efff1e0bfde0f23f88457",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/physical-intelligence.json",
+      "rawSourceFileSha256": "4636b655b7fab48b151da10f872a9268960654cc165ce7e06a60e83e91cc5c99",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "shield-ai:lever:71278ad9-359f-48dd-bad4-fc63ab6b9f1d",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Flight Controls Engineer (R4815)",
+      "locations": [
+        "Dallas, Texas",
+        "San Diego, California",
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/71278ad9-359f-48dd-bad4-fc63ab6b9f1d",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "207074ad07d16be2a4f5020905575bb53a79a0a1faccbdb155107864fafe8cf1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Primarily ship-relative recovery guidance and sequencing; adjacent to motion planning rather than this controller-design subset."
+    },
+    {
+      "id": "shield-ai:lever:84ea353d-bd9b-4d1a-8e9c-3b4f31135a2f",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior Staff Engineer, Flight Control Actuation Systems (RX) (R5999)",
+      "locations": [
+        "Dallas, Texas",
+        "Washington, D.C."
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/84ea353d-bd9b-4d1a-8e9c-3b4f31135a2f",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "cd7f46862271cb56e5d6dbba1983912450de43c47130207fe26be5300140b615",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Actuation hardware sizing, qualification and supplier ownership rather than algorithm development."
+    },
+    {
+      "id": "shield-ai:lever:ac52c9b2-f18d-49e5-bb0b-9e82e7b03ac9",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior Staff Engineer, Flight Control Actuation Systems - Ranger (R6327)",
+      "locations": [
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/ac52c9b2-f18d-49e5-bb0b-9e82e7b03ac9",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "b71cedda0951199d5f266ea42dbd60a3cd5785a371e295e38ec744d76e43677a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Actuation hardware sizing, qualification and supplier ownership rather than algorithm development."
+    },
+    {
+      "id": "skydio:ashby:b36773da-5e82-4d16-b926-186ba78fafa3",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Senior Automation Controls Engineer",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/b36773da-5e82-4d16-b926-186ba78fafa3",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "c74f8feacb3b8e5e389512e6e6257869e65b77d0a9af2df189171890df740153",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reason": "Manufacturing automation and equipment controls, outside robot motion-control scope."
+    },
+    {
+      "id": "waymo:greenhouse:7490150",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Staff Vehicle Controls Engineer, Steering",
+      "locations": [
+        "Mountain View, Ca, USA;Novi, Mi, USA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7490150",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "4ab77bb392dcd94a780e3a7ad92e7791218d5bc17f0ff92ebc8440238486a6d7",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Salary/bonus wording alone does not establish the annual period."
+    },
+    {
+      "id": "zoox:lever:6e2c1641-a814-43ad-a807-34f585a35fd9",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Systems Engineer, Motion Controls Safety",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/6e2c1641-a814-43ad-a807-34f585a35fd9",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "2553ee8107c42b0f50992c0d5f6837e22125a206e084915e6fea0f3a17939edf",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reason": "Systems safety/requirements and assurance rather than controller development."
+    }
+  ],
+  "liveEmployerChecks": [
+    "https://job-boards.greenhouse.io/apptronik/jobs/6188799004"
+  ],
+  "technicalSources": [
+    "https://underactuated.mit.edu/intro.html",
+    "https://python-control.readthedocs.io/en/latest/intro.html",
+    "https://python-control.readthedocs.io/en/latest/generated/control.step_response.html",
+    "https://python-control.readthedocs.io/en/latest/generated/control.step_info.html"
+  ],
+  "editorialExamples": "The response chart uses exact analytical unit-step solutions of two ideal second-order closed-loop systems, not robot measurements. Damping ratios 0.3 and 0.8, common natural frequency 6 rad/s, target 1, zero initial state. It illustrates overshoot and settling, not a gain recommendation. The project extends testing to changed inertia, friction, limits and delay."
+}

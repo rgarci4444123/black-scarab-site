@@ -1,9 +1,9 @@
 {
-  "status": "approved-for-release",
+  "status": "deployed",
   "reviewedAt": "2026-11-09",
   "guidePath": "/career-paths/hardware-manufacturing/embedded-software-engineer",
   "url": "http://127.0.0.1:3033/career-paths/hardware-manufacturing/embedded-software-engineer",
-  "publication": "User approved publication on November 9, 2026.",
+  "publication": "Published with user approval on November 9, 2026.",
   "research": {
     "selectedFullSources": 10,
     "broadCohort": 65,
@@ -58,5 +58,7 @@
     "mobile": "/tmp/black-scarab-timeline-house-mobile.png"
   },
   "editorialRevision": "research/career-guides/embedded-software-engineer/editorial-revision-2026-11-09.json",
-  "sectionCount": 8
+  "sectionCount": 8,
+  "deploymentCommit": "ecaf8f9273a667a344ed902d5ed298a81670f459",
+  "liveUrl": "https://www.blackscarab.ai/career-paths/hardware-manufacturing/embedded-software-engineer"
 }

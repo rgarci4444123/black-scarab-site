@@ -1,0 +1,73 @@
+{
+  "status": "approved-for-release",
+  "reviewedAt": "2026-11-09",
+  "guidePath": "/career-paths/intelligence-autonomy/robotics-controls-engineer",
+  "url": "http://127.0.0.1:3037/career-paths/intelligence-autonomy/robotics-controls-engineer",
+  "publication": "User approved publication on November 9, 2026.",
+  "precedingRelease": {
+    "guide": "embedded-software-engineer",
+    "commit": "ecaf8f9273a667a344ed902d5ed298a81670f459",
+    "status": "deployed and verified"
+  },
+  "research": {
+    "selectedFullSources": 10,
+    "broadCohort": 35,
+    "broadEmployers": 19,
+    "estimate": 250000,
+    "exactMedian": 250000,
+    "annualSalaryObservations": 5,
+    "salaryEmployers": 3,
+    "concentration": "Three observations from 1X. Experienced roles; detailed methodology and scope in linked salary export."
+  },
+  "artwork": {
+    "asset": "public/career-paths/robotics-controls-engineer-lab.webp",
+    "source": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-8fd422ae-6134-4abd-af8f-476ad6d760e5.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset: Black Scarab Robotics Controls Engineer career guide editorial hero, wide 16:9 landscape. Create a sophisticated photorealistic futuristic engineering illustration: a full-size matte white and graphite quadruped robot balances on a sharply tilted square test platform in an immaculate robotics motion laboratory. Low floor-level three-quarter side viewpoint, legs and contact points visibly responding to the tilt, robot entirely in frame with convincing articulated joints and physically plausible stance. Quiet architectural space, brushed metal platform, dark graphite floor, pale gray rear wall, precise directional studio lighting and crisp fine material detail. Composition dominated 80–90 percent black, white and gray. Only 10–20 percent restrained vivid blue-violet accents on small joint rings and the platform edge; no colorful environment wash. No people, no screens, no text, no letters, no labels, no diagrams, no logos or watermark. Premium engineering publication, clean and memorable with purposeful negative space, no holograms, no cyberpunk neon overload. This is a conceptual editorial illustration, not an official product photo.",
+    "dimensions": [
+      1672,
+      941
+    ]
+  },
+  "inArticleVisual": {
+    "type": "analytical response comparison",
+    "id": "controls-step-response",
+    "model": "36 / (s^2 + 12*zeta*s + 36)",
+    "dampingRatios": [
+      0.3,
+      0.8
+    ],
+    "naturalFrequencyRadPerSec": 6,
+    "durationSeconds": 3,
+    "sampleCountPerCurve": 301,
+    "target": 1,
+    "palette": [
+      "#74747d",
+      "#5f64b1"
+    ],
+    "interpretation": "Illustrative models, not robot measurements. Distinct line patterns.",
+    "placement": "After the shaking-arm example in the work section"
+  },
+  "validation": {
+    "careerTests": 22,
+    "selectedFullSourcesAudited": 92,
+    "rawSourcesAudited": 36,
+    "typecheck": "passed",
+    "scopedLint": "passed",
+    "nextBuild": "passed",
+    "desktop": "reviewed; chart caption 22px",
+    "mobile": "Revised eight tables reviewed at 400 and 288 CSS pixels; no horizontal page or table overflow.",
+    "existingArticlePreviews": 175,
+    "metadata": "H1, SEO title, canonical and Article schema checked; November 9 publication date added for approved release.",
+    "navigation": "Local category, assessment and sitemap links verified",
+    "copy": "Complete user rewrite applied; chart, artwork, compensation derivation and full methodology preserved."
+  },
+  "screenshots": {
+    "opening": "/tmp/black-scarab-controls-full-revision.png",
+    "chart": "/tmp/black-scarab-controls-response.png",
+    "mobile": "/tmp/black-scarab-controls-full-revision-mobile.png",
+    "narrowMobile": "/tmp/black-scarab-controls-narrow-mobile.png"
+  },
+  "editorialRevision": "research/career-guides/robotics-controls-engineer/editorial-revision-2026-11-09.json",
+  "sectionCount": 8
+}

@@ -51,6 +51,7 @@ export type CareerGuideBlock =
   | { type: 'list'; items: string[]; ordered?: boolean }
   | { type: 'table'; caption: string; columns: string[]; rows: string[][] }
   | { type: 'figure'; src: string; alt: string; caption: string; width: number; height: number; fullSizeHref?: string }
+  | { type: 'control-response'; id: string; title: string; durationSeconds: number; naturalFrequencyRadPerSec: number; curves: { label: string; dampingRatio: number }[]; note: string }
   | { type: 'timing-budget'; id: string; title: string; deadlineMs: number; scaleMs: number; rows: { label: string; segments: { label: string; kind: 'read' | 'process' | 'send' | 'wait'; durationMs: number }[] }[]; note: string }
   | { type: 'diagnostic-map'; id: string; title: string; symptom: string; branches: { system: string; evidence: string; investigation: string }[]; conclusion: string }
   | { type: 'workflow'; id: string; title: string; stages: { title: string; description: string }[]; review: { stage: number; title: string; description: string } }

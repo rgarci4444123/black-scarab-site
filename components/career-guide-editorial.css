@@ -213,3 +213,22 @@
   .career-section.profession-guide .profession-timing-legend { gap: 11px 20px; }
   .career-section.profession-guide .profession-timing-deadline-label { font-size: 13px; }
 }
+.career-section.profession-guide .profession-control-response{margin:42px 0;padding:28px 0 20px;border-top:1px solid #e2e2e5;border-bottom:1px solid #e2e2e5}
+.career-section.profession-guide .profession-control-response figcaption{max-width:none;margin:0;font-size:22px;font-weight:600;line-height:1.3;letter-spacing:-.025em;color:#202532}
+.career-section.profession-guide .profession-control-response .profession-control-legend{display:flex;flex-wrap:wrap;gap:12px 24px;list-style:none;padding:0;margin:20px 0 24px;font-size:14px;line-height:1.5}
+.career-section.profession-guide .profession-control-legend li{display:flex;align-items:center;gap:9px;margin:0}
+.career-section.profession-guide .profession-control-key{display:inline-block;width:26px;border-top:3px solid;flex:none}
+.career-section.profession-guide .profession-control-curve-0{color:#74747d;stroke:#74747d;stroke-dasharray:7 5;border-top-style:dashed}
+.career-section.profession-guide .profession-control-curve-1{color:#5f64b1;stroke:#5f64b1}
+.career-section.profession-guide .profession-control-key.profession-control-target{color:#5f5f66;border-top-width:1px;border-top-style:dotted}
+.career-section.profession-guide .profession-control-response .profession-control-axis-label{margin:0 0 18px 38px;font-size:13px;color:#5f5f66;line-height:1.4}
+.career-section.profession-guide .profession-control-plot{position:relative;margin-left:38px;height:280px}
+.career-section.profession-guide .profession-control-plot svg{width:100%;height:100%;overflow:visible}
+.career-section.profession-guide .profession-control-y{position:absolute;inset:0 auto 0 -38px;width:28px;text-align:right;font-size:13px;color:#5f5f66;font-variant-numeric:tabular-nums}
+.career-section.profession-guide .profession-control-y span{position:absolute;right:0;transform:translateY(-50%)}
+.career-section.profession-guide .profession-control-grid{stroke:#e9e9ed;stroke-width:1;vector-effect:non-scaling-stroke}
+.career-section.profession-guide .profession-control-target-line{stroke:#75757e;stroke-width:1;stroke-dasharray:3 5;vector-effect:non-scaling-stroke}
+.career-section.profession-guide .profession-control-line{fill:none;stroke-width:2.8;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.career-section.profession-guide .profession-control-x{display:flex;justify-content:space-between;margin:12px 0 0 38px;font-size:13px;color:#5f5f66;font-variant-numeric:tabular-nums}
+.career-section.profession-guide .profession-control-response .profession-control-time{margin:7px 0 22px 38px;text-align:center;font-size:13px;color:#5f5f66;line-height:1.4}
+@media(max-width:600px){.career-section.profession-guide .profession-control-response{margin:32px 0;padding-top:23px}.career-section.profession-guide .profession-control-response figcaption{font-size:20px}.career-section.profession-guide .profession-control-plot{height:220px}.career-section.profession-guide .profession-control-response .profession-control-legend{gap:10px 16px;font-size:13px}}

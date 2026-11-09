@@ -76,6 +76,21 @@
         "how to become a robotics embedded engineer"
       ],
       "rationale": "Use the recognized embedded-software profession with explicit robotics context. Cover firmware, hardware interfaces and embedded OS ownership; distinguish it from circuit design, control theory and shared higher-level robot platform services."
+    },
+    {
+      "occupationId": "robotics-controls-engineer",
+      "h1": "How to Become a Robotics Controls Engineer",
+      "seoTitle": "Robotics Controls Engineer: Salary, Skills & Career Guide",
+      "description": "Explore robotics controls engineering: feedback, dynamics, C++, employer qualifications, Black Scarab salary research and a simulated-joint portfolio project.",
+      "path": "/career-paths/intelligence-autonomy/robotics-controls-engineer",
+      "primaryQuery": "robotics controls engineer",
+      "supportingTopics": [
+        "robotics controls engineer salary",
+        "robotics control systems skills",
+        "how to become a robotics controls engineer",
+        "controls engineer vs motion planning"
+      ],
+      "rationale": "Use the established controls profession. Explain physical feedback, modeling, tracking and hardware validation while distinguishing motion planning, generic embedded software and PLC automation."
     }
   ]
 }
