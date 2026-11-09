@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "reviewedAt": "2026-11-09",
+  "aggregatePath": "/research/physical-ai-careers-2026-11-02.json",
+  "aggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "rawArchive": {
+    "relativeRoot": "research/physical-ai/2026-11-02",
+    "normalizedRecords": "postings.jsonl",
+    "manifestHash": "6b48026839dcafc9d68144cf3fbedf38889984ad96f667a21e058b4d25f26f14"
+  },
+  "interpretation": "Contextual guide review; original dated research remains unchanged.",
+  "roles": {
+    "field-service-engineer": {
+      "recordIds": [
+        "dexterity:lever:0630d2f1-586c-4819-a111-a6188462af3b",
+        "formic:greenhouse:4702865006",
+        "boston-dynamics:workday:R3291",
+        "boston-dynamics:workday:R2895",
+        "nimble:greenhouse:4204567009",
+        "skydio:ashby:53bd205b-24a7-4a54-a196-6694a57b7983",
+        "agile-robots:greenhouse:5013112101",
+        "path-robotics:greenhouse:8470564002",
+        "figure:greenhouse:4683847006",
+        "serve:ashby:946fe8ed-7c4a-462c-97ca-6d7843a45fa3"
+      ],
+      "auditPath": "research/career-guides/field-service-engineer/evidence-audit.json",
+      "compensation": [
+        {
+          "employer": "Dexterity",
+          "title": "Field Service Engineer",
+          "url": "https://jobs.lever.co/dexterity/0630d2f1-586c-4819-a111-a6188462af3b",
+          "minimum": 80000,
+          "maximum": 110000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised annual salary; base pay where expressly stated",
+          "recordId": "dexterity:lever:0630d2f1-586c-4819-a111-a6188462af3b",
+          "location": "Redwood City, CA"
+        },
+        {
+          "employer": "Boston Dynamics",
+          "title": "Field Service Engineer -Southeast",
+          "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Georgia-Remote/Field-Service-Engineer--Southeast_R3291",
+          "minimum": 90000,
+          "maximum": 115000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised annual salary; base pay where expressly stated",
+          "recordId": "boston-dynamics:workday:R3291",
+          "location": "Georgia (remote with customer-site travel)"
+        },
+        {
+          "employer": "Nimble Robotics",
+          "title": "Robotics Field Engineer",
+          "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4204567009",
+          "minimum": 100000,
+          "maximum": 130000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised annual salary; base pay where expressly stated",
+          "recordId": "nimble:greenhouse:4204567009",
+          "location": "Haslet, TX"
+        }
+      ],
+      "skillPresentation": "qualitative-source-comparison",
+      "scopeNote": "Broad cohort mixes field engineers, service/repair technicians, lab roles, operators and support leaders. Present skills contextually; do not infer clean skill-frequency or opening totals."
+    }
+  },
+  "records": [
+    {
+      "id": "dexterity:lever:0630d2f1-586c-4819-a111-a6188462af3b",
+      "employerId": "dexterity",
+      "employer": "Dexterity",
+      "title": "Field Service Engineer",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/dexterity/0630d2f1-586c-4819-a111-a6188462af3b",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "f6e7e4531fb67c910b0bef1338f33b6c70f9af50c1abb49cc3b83f9838834a0b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dexterity.json",
+      "rawSourceFileSha256": "58e07677b990f0ea1b41f418ab151a58e38723fc312c6213884069c392d0c236",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Hands-on customer warehouse maintenance, mechanical/electrical/pneumatic diagnosis, Linux logs, commissioning and repair validation.",
+      "qualification": "Education & Experience: BS or AAS in an engineering discipline related to robotics (CS, EE, ME, Mechatronics, etc.) or equivalent practical field service experience.",
+      "qualificationSpans": [
+        {
+          "text": "Education & Experience: BS or AAS in an engineering discipline related to robotics (CS, EE, ME, Mechatronics, etc.) or equivalent practical field service experience.",
+          "start": 2909,
+          "end": 3074
+        }
+      ]
+    },
+    {
+      "id": "formic:greenhouse:4702865006",
+      "employerId": "formic",
+      "employer": "Formic",
+      "title": "Robotics Field Service Engineer",
+      "locations": [
+        "Austin, TX",
+        "Chicago,  IL || Bolingbrook, IL",
+        "Dallas, TX",
+        "Killeen, TX",
+        "San Antonio, TX",
+        "San Francisco, CA || Oakland, CA",
+        "Temple || Belton, TX",
+        "Waco, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/formic/jobs/4702865006",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "5cd2af83da1bad111dc807dc60cd0233828ff4b3b581737d888870a2216a0c60",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/formic.json",
+      "rawSourceFileSha256": "65e248fa4c2c4131e404bd620ba3caaca4baf177ba3c8302e27fe848266d4e1f",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Preventive/corrective maintenance, PLC/electromechanical faults, CMMS, customer support and safety at manufacturing sites.",
+      "qualification": "3+ years of hands-on field service experience supporting robotic or industrial automation systems",
+      "qualificationSpans": [
+        {
+          "text": "3+ years of hands-on field service experience supporting robotic or industrial automation systems",
+          "start": 3161,
+          "end": 3258
+        }
+      ]
+    },
+    {
+      "id": "boston-dynamics:workday:R3291",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Field Service Engineer -Southeast",
+      "locations": [
+        "Georgia (Remote)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Georgia-Remote/Field-Service-Engineer--Southeast_R3291",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "6fa0213b60ed1a12ae73437b69e72bb429b25daad0908db7c5502993958400c6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Emergency repairs, installations, maintenance and customer-facing service for deployed warehouse robotics.",
+      "qualification": "Field technicians with experience in other industries are encouraged to apply.",
+      "qualificationSpans": [
+        {
+          "text": "Field technicians with experience in other industries are encouraged to apply.",
+          "start": 2519,
+          "end": 2597
+        }
+      ]
+    },
+    {
+      "id": "boston-dynamics:workday:R2895",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Senior Field Service Engineer (Indianapolis, Indiana)",
+      "locations": [
+        "Indiana (Remote)"
+      ],
+      "countries": [
+        "India",
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Indiana-Remote/Field-Service-Engineer_R2895",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "43c55df60b19336490b72732c63c6062668d89ccf3cd3fac152bda661f74a8e0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Customer-site Stretch service, mechanical repairs, service metrics and travel.",
+      "qualification": "3+ years in a similar role.",
+      "qualificationSpans": [
+        {
+          "text": "3+ years in a similar role.",
+          "start": 2251,
+          "end": 2278
+        }
+      ]
+    },
+    {
+      "id": "nimble:greenhouse:4204567009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "Robotics Field Engineer",
+      "locations": [
+        "Haslet, TX",
+        "Haslet, Texas, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4204567009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "6bc60a43863c393080629c477ec0f7149b6d0fce81aa4feae4ddb4054025a302",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Production fleet troubleshooting, log/SQL analysis, observability and operational support.",
+      "qualification": "0-5 years of experience in a production environment supporting and improving complex robotics systems, or a minimum of 2 years of experience combined with a Bachelor of Science degree in Computer Science, Software Engineering, or Robotics.",
+      "qualificationSpans": [
+        {
+          "text": "0-5 years of experience in a production environment supporting and improving complex robotics systems, or a minimum of 2 years of experience combined with a Bachelor of Science degree in Computer Science, Software Engineering, or Robotics.",
+          "start": 3503,
+          "end": 3742
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:53bd205b-24a7-4a54-a196-6694a57b7983",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Field Support Representative - Colorado",
+      "locations": [
+        "US Remote"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/53bd205b-24a7-4a54-a196-6694a57b7983",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "091814ac50d93ec564d90c4a2394caba599265c0f86de12b0decf70b0b34d14d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Customer-site UAS and dock support, firmware/log/network diagnosis, maintenance training and regional travel.",
+      "qualification": "At least 3 years of civilian, law enforcement or military UAS operations and flight experience.",
+      "qualificationSpans": [
+        {
+          "text": "At least 3 years of civilian, law enforcement or military UAS operations and flight experience.",
+          "start": 3546,
+          "end": 3641
+        }
+      ]
+    },
+    {
+      "id": "agile-robots:greenhouse:5013112101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Robot Service Engineer - Data Collection (m/f/d) Fixed-term 18 months",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/5013112101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "8c0fae4efd031e5a39ccef7cc5027e385c3468e313cf337ab516daf72933b8b4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Robots, teleoperation devices and recording systems: hardware/software diagnosis, preventive maintenance and documented R&D escalation.",
+      "qualification": "Degree or vocational training in mechatronics, electrical engineering, robotics, computer science or a related field.",
+      "qualificationSpans": [
+        {
+          "text": "Degree or vocational training in mechatronics, electrical engineering, robotics, computer science or a related field.",
+          "start": 1937,
+          "end": 2054
+        }
+      ]
+    },
+    {
+      "id": "path-robotics:greenhouse:8470564002",
+      "employerId": "path-robotics",
+      "employer": "Path Robotics",
+      "title": "Field Service Technician",
+      "locations": [
+        "Buffalo, NY",
+        "Cincinnati, OH",
+        "Columbus, Ohio",
+        "Columbus, Ohio, United States",
+        "Dayton, OH",
+        "Detroit, MI",
+        "Garden City, KS",
+        "Lafayette, LA",
+        "Madison, WI",
+        "Norfolk, VA",
+        "Pittsburgh, PA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/pathrobotics/jobs/8470564002?gh_jid=8470564002",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "8aee166398d48955c1afb10223cdf2f16cd3ff1e23f47349836c20fd4a4460b1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/path-robotics.json",
+      "rawSourceFileSha256": "dda49bbc68095b57d6027516973c117de7d1e049b6393bd61747a752e35d13e2",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Welding-cell maintenance, pneumatics, electrical/mechanical components, operating duties and extensive customer travel.",
+      "qualification": "Technical training, Trade School certification, Associate degree in Engineering Tech, or equivalent industry experience.",
+      "qualificationSpans": [
+        {
+          "text": "Technical training, Trade School certification, Associate degree in Engineering Tech, or equivalent industry experience.",
+          "start": 2577,
+          "end": 2697
+        }
+      ]
+    },
+    {
+      "id": "figure:greenhouse:4683847006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Field Service Technician, Commercial Site Team",
+      "locations": [
+        "Fontana, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4683847006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "d0abe0a160a6cbc327a4b0db79bd5bf62f25a69b8d78d1c787f6038718ace36d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Commercial humanoid service, whole-system diagnostics, schematics, mechanical components and engineering feedback.",
+      "qualification": "3+ years experience working with complex systems.",
+      "qualificationSpans": [
+        {
+          "text": "3+ years experience working with complex systems.",
+          "start": 1512,
+          "end": 1561
+        }
+      ]
+    },
+    {
+      "id": "serve:ashby:946fe8ed-7c4a-462c-97ca-6d7843a45fa3",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Service Technician II",
+      "locations": [
+        "Atlanta, GA",
+        "Miami, FL"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/946fe8ed-7c4a-462c-97ca-6d7843a45fa3",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "5729f3e8d7207777617a0fbf705256d13c158b24927ac74ec0c43c665eb56e55",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Delivery-robot mechanical, electrical and software fault diagnosis, repair validation, work-order traceability and quality.",
+      "qualification": "2–4+ years of progressive technical experience in electro-mechanical, electronics, robotics, automotive, aerospace, or similar industries",
+      "qualificationSpans": [
+        {
+          "text": "2–4+ years of progressive technical experience in electro-mechanical, electronics, robotics, automotive, aerospace, or similar industries",
+          "start": 3063,
+          "end": 3200
+        }
+      ]
+    }
+  ]
+}

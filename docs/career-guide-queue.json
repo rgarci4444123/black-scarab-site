@@ -23,13 +23,14 @@
     {
       "order": 3,
       "roleId": "robotics-data-engineer",
-      "status": "approved-for-release",
+      "status": "deployed",
       "path": "/career-paths/platforms-simulation/robotics-data-engineer"
     },
     {
       "order": 4,
       "roleId": "field-service-engineer",
-      "status": "queued"
+      "status": "approved-for-release",
+      "path": "/career-paths/integration-operations/field-service-engineer"
     },
     {
       "order": 5,

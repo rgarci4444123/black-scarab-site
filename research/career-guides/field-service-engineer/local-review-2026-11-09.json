@@ -1,0 +1,66 @@
+{
+  "status": "approved-for-release",
+  "reviewedAt": "2026-11-09",
+  "guidePath": "/career-paths/integration-operations/field-service-engineer",
+  "url": "http://127.0.0.1:3028/career-paths/integration-operations/field-service-engineer",
+  "publication": "User approved push and deployment of the revised guide on November 9, 2026.",
+  "research": {
+    "selectedFullSources": 10,
+    "broadCohort": 43,
+    "broadEmployers": 19,
+    "estimate": 113000,
+    "exactMedian": 112500,
+    "annualSalaryObservations": 8,
+    "salaryEmployers": 4,
+    "period": "year",
+    "currency": "USD",
+    "hourlyAnnualization": false
+  },
+  "artwork": {
+    "asset": "public/career-paths/field-service-engineer-lab.webp",
+    "source": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-7401df84-8c84-4473-909f-d14435a44a4a.png",
+    "tool": "built-in image_gen",
+    "prompt": "Low-angle cinematic editorial illustration of a helmeted technician inspecting an open module on a parked autonomous warehouse robot. Gender and face indiscernible. Black, white and gray dominate; 10\u201320% amber accents. Futuristic but practical customer-site environment. No text, logos, giant screens or holograms.",
+    "recentPatternsAvoided": [
+      "engineer at a screen",
+      "elevated data-chamber viewpoint",
+      "cyan interface panels"
+    ],
+    "dimensions": [
+      1672,
+      941
+    ]
+  },
+  "inArticleVisual": {
+    "type": "responsive branching diagnostic map",
+    "id": "field-diagnostic-map",
+    "branches": [
+      "Mechanical",
+      "Electrical",
+      "Software",
+      "Network"
+    ],
+    "interpretation": "Illustrative hypotheses, not deterministic fault diagnosis",
+    "mobile": "Stacked branches; no horizontal page overflow",
+    "placement": "Warehouse fault scenario in the opening work section"
+  },
+  "validation": {
+    "careerTests": 20,
+    "selectedFullSourcesAudited": 73,
+    "rawSourcesAudited": 34,
+    "typecheck": "passed",
+    "scopedLint": "passed",
+    "nextBuild": "passed",
+    "existingArticlePreviews": 175,
+    "desktop": "reviewed",
+    "mobile": "reviewed"
+  },
+  "screenshots": {
+    "opening": "/tmp/black-scarab-field-service-preview.png",
+    "diagram": "/tmp/black-scarab-field-service-diagnostic.png",
+    "mobile": "/tmp/black-scarab-field-service-mobile.png"
+  },
+  "editorialRevision": "research/career-guides/field-service-engineer/editorial-revision-2026-11-09.json",
+  "sectionCount": 8,
+  "portfolio": "Expanded simulated-service exercise plus optional educational low-voltage kit extension."
+}

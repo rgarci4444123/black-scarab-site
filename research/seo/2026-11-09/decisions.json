@@ -46,6 +46,21 @@
         "how to become a robotics data engineer"
       ],
       "rationale": "Use the recognized employer title. Focus on reliable robot-data supply and distinguish it from model development, perception algorithms and training infrastructure."
+    },
+    {
+      "occupationId": "field-service-engineer",
+      "h1": "How to Become a Field Service Engineer in Robotics",
+      "seoTitle": "Robotics Field Service Engineer: Salary, Skills & Career Guide",
+      "description": "Explore robotics field service: troubleshooting, repair, technical training, employer qualifications, salary research and a practical diagnostics project.",
+      "path": "/career-paths/integration-operations/field-service-engineer",
+      "primaryQuery": "robotics field service engineer",
+      "supportingTopics": [
+        "robotics field service engineer salary",
+        "robot service technician careers",
+        "field service engineer robotics skills",
+        "maintenance to robotics career"
+      ],
+      "rationale": "Use the recognizable field-service title, clarify the robotics setting and cover hands-on system diagnosis. Distinguish service after deployment from cell integration and routine fleet operation."
     }
   ]
 }

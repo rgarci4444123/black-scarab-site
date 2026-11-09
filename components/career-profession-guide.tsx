@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { CareerFamily, CareerGuideBlock, CareerGuideContent, CareerGuideSection } from '@/lib/career-paths/types';
 
-import {CareerOverview,CareerGuideNavigation,CareerSkillMentions,CareerCompensationTable,CareerResearchNotes,CareerWorkflow} from './career-guide-elements';
+import {CareerOverview,CareerGuideNavigation,CareerSkillMentions,CareerCompensationTable,CareerResearchNotes,CareerWorkflow,CareerDiagnosticMap} from './career-guide-elements';
 
 function GuideBlock({block}:{block:CareerGuideBlock}) {
   switch (block.type) {
@@ -17,6 +17,7 @@ function GuideBlock({block}:{block:CareerGuideBlock}) {
       </table>
     </div>;
     case 'figure': return <figure className={block.fullSizeHref?'profession-guide-illustration':undefined}><Image src={block.src} alt={block.alt} width={block.width} height={block.height} quality={block.fullSizeHref?95:undefined} sizes={block.fullSizeHref?'(max-width: 834px) calc(100vw - 74px), 760px':undefined}/><figcaption>{block.fullSizeHref?<a href={block.fullSizeHref}>{block.caption}</a>:block.caption}</figcaption></figure>;
+    case 'diagnostic-map': return <CareerDiagnosticMap block={block}/>;
     case 'workflow': return <CareerWorkflow block={block}/>;
     case 'summary-list': return <dl className="profession-summary-list">{block.items.map(item=><div key={item.title}><dt>{item.title}</dt><dd><p>{item.text}</p></dd></div>)}</dl>;
     case 'calculation': return <aside className="profession-calculation" aria-label={block.title}><h3>{block.title}</h3><p className="profession-formula">{block.formula}</p><p className="profession-formula-example">{block.example}</p><p>{block.note}</p></aside>;

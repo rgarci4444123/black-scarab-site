@@ -37,3 +37,15 @@ export function CareerWorkflow({block}:{block:Workflow}) {
     </li>)}</ol>
   </figure>;
 }
+
+type DiagnosticMap=Extract<CareerGuideBlock,{type:'diagnostic-map'}>;
+export function CareerDiagnosticMap({block}:{block:DiagnosticMap}) {
+  return <figure id={block.id} className="profession-diagnostic-map" aria-labelledby={`${block.id}-title`}>
+    <figcaption id={`${block.id}-title`}>{block.title}</figcaption>
+    <p className="profession-diagnostic-symptom">{block.symptom}</p>
+    <ul className="profession-diagnostic-branches">{block.branches.map(branch=><li key={branch.system}>
+      <h4>{branch.system}</h4>{branch.evidence?<p>{branch.evidence}</p>:null}<dl><dt>Investigate</dt><dd>{branch.investigation}</dd></dl>
+    </li>)}</ul>
+    <p className="profession-diagnostic-conclusion">{block.conclusion}</p>
+  </figure>;
+}

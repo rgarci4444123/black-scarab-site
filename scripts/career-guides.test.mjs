@@ -9,9 +9,9 @@ const snapshot=JSON.parse(fs.readFileSync('public/research/physical-ai-careers-2
 const guide=publishedCareerGuides[0];
 
 test('complete guides are navigable, with no draft or empty entries',()=>{
- assert.equal(publishedCareerGuides.length,7);
+ assert.equal(publishedCareerGuides.length,8);
  assert.equal(guidePath(guide),'/career-paths/hardware-manufacturing/mechanical-engineer');
- for(const role of occupations)assert.equal(Boolean(guideForOccupation(role.id)),['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer'].includes(role.id));
+ for(const role of occupations)assert.equal(Boolean(guideForOccupation(role.id)),['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer','field-service-engineer'].includes(role.id));
  assert.equal(isPublishedCareerGuide({...guide,status:'draft'}),false);
  assert.equal(isPublishedCareerGuide({...guide,sections:[]}),false);
  assert.equal(isPublishedCareerGuide({...guide,sections:[{id:'empty',heading:'Empty',paragraphs:[]}]}),false);
@@ -23,7 +23,7 @@ test('guide sections, research tables, citations and learning resources are inte
  assert.equal(new Set(['the-role',...allSections.map(section=>section.id)]).size,9);
  const sources=new Set(guide.citations.map(source=>source.id));assert.equal(sources.size,guide.citations.length);
  for(const section of allSections){for(const id of section.sourceIds||[])assert.ok(sources.has(id),id);for(const block of section.blocks||[]){if(block.type==='figure')assert.ok(fs.existsSync('public'+block.src));if(block.type==='table'){for(const row of block.rows)assert.equal(row.length,block.columns.length);}if(block.type==='resources'){for(const item of block.items)assert.ok(guide.citations.some(source=>source.url===item.href));}}}
- const mechanical=snapshot.roles.find(role=>['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer'].includes(role.id));
+ const mechanical=snapshot.roles.find(role=>['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer','field-service-engineer'].includes(role.id));
  const skills=guide.sections.find(section=>section.id==='skills').blocks.find(block=>block.type==='skill-mentions');
  assert.equal(skills.denominator,mechanical.postingCount);
  assert.deepEqual(skills.rows,mechanical.skills.map(({label,count,required,preferred,contextual})=>({label,count,required,preferred,contextual})));
@@ -56,8 +56,9 @@ test('all guides retain unique metadata, complete sources and explicit snapshot 
   if(item.occupationId==='electrical-engineer'){assert.equal(item.publishedAt,'2026-11-09');assert.equal(item.reviewedAt,'2026-11-09');}
   else if(item.occupationId==='perception-engineer')assert.equal(item.publishedAt,'2026-11-09');
   else if(item.occupationId==='robotics-data-engineer')assert.equal(item.publishedAt,'2026-11-09');
+  else if(item.occupationId==='field-service-engineer')assert.equal(item.publishedAt,'2026-11-09');
   else assert.equal(item.publishedAt,'2026-11-03');
-  assert.equal(item.sections.length,item.occupationId==='perception-engineer'?8:7);assert.ok(item.introduction.length);assert.ok(item.nextSteps.blocks.length);
+  assert.equal(item.sections.length,['perception-engineer','field-service-engineer'].includes(item.occupationId)?8:7);assert.ok(item.introduction.length);assert.ok(item.nextSteps.blocks.length);
   const ids=new Set(item.citations.map(source=>source.id));assert.equal(ids.size,item.citations.length);
   const sections=[...item.sections,item.nextSteps];assert.equal(new Set(sections.map(section=>section.id)).size,sections.length);
   for(const section of sections){
@@ -91,12 +92,13 @@ test('scope flags prevent contaminated cohorts from becoming frequency charts or
 
 test('assessment guide links cover completed professions without entering the matching engine',()=>{
  const {assessmentGuideLinks}=load('lib/career-paths/guides.ts');
- assert.equal(Object.keys(assessmentGuideLinks).length,7);
+ assert.equal(Object.keys(assessmentGuideLinks).length,8);
  for(const item of publishedCareerGuides)assert.equal(assessmentGuideLinks[item.occupationId],guidePath(item));
  assert.equal(assessmentGuideLinks['electrical-engineer'],'/career-paths/hardware-manufacturing/electrical-engineer');
  assert.equal(assessmentGuideLinks['perception-engineer'],'/career-paths/intelligence-autonomy/perception-engineer');
  assert.equal(assessmentGuideLinks['robotics-data-engineer'],'/career-paths/platforms-simulation/robotics-data-engineer');
- assert.equal(assessmentGuideLinks['field-service-engineer'],undefined);
+ assert.equal(assessmentGuideLinks['field-service-engineer'],'/career-paths/integration-operations/field-service-engineer');
+ assert.equal(assessmentGuideLinks['embedded-software-engineer'],undefined);
  const engine=fs.readFileSync('lib/career-paths/assessment-engine.ts','utf8');
  assert.doesNotMatch(engine,/publishedCareerGuides|guideForOccupation|assessmentGuideLinks|career-paths\/guides/);
  const component=fs.readFileSync('components/career-assessment.tsx','utf8');
@@ -172,4 +174,26 @@ test('robotics data compensation uses eligible annual data-supply roles',()=>{
  for(const row of pay.observations)assert.ok(!pay.excludedObservations.some(other=>other.id===row.id));
  const reviewed=JSON.parse(fs.readFileSync('public'+item.research.evidencePath,'utf8'));
  for(const example of reviewed.roles['robotics-data-engineer'].compensation)assert.ok(pay.observations.some(row=>row.id===example.recordId&&row.minimum===example.minimum&&row.maximum===example.maximum));
+});
+
+test('field service compensation keeps annual salaries separate from hourly overtime',()=>{
+ const item=guideForOccupation('field-service-engineer');
+ const pay=JSON.parse(fs.readFileSync('public/research/field-service-engineer-compensation-2026-11-02.json','utf8'));
+ const values=pay.observations.map(row=>{
+  assert.equal(row.period,'year');assert.equal(row.currency,'USD');assert.deepEqual(row.countries,['United States']);
+  assert.equal(row.midpoint,(row.minimum+row.maximum)/2);assert.ok(row.minimum>0&&row.maximum>=row.minimum);
+  return row.midpoint;
+ }).sort((a,b)=>a-b);
+ const mid=(values[values.length/2-1]+values[values.length/2])/2;
+ assert.equal(pay.exactMedianMidpoint,mid);assert.equal(pay.estimate,Math.round(mid/1000)*1000);
+ assert.equal(pay.postingCount,new Set(pay.observations.map(row=>row.id)).size);
+ assert.equal(pay.employerCount,new Set(pay.observations.map(row=>row.employerId)).size);
+ assert.equal(pay.postingCount,8);assert.equal(pay.employerCount,4);assert.equal(pay.estimate,113000);
+ assert.equal(item.overview[3].value,'$113,000/year');assert.equal(item.publishedAt,'2026-11-09');
+ const indiana=pay.observations.find(row=>row.id==='boston-dynamics:workday:R2895');
+ assert.deepEqual(indiana.originalCountries,['India','United States']);assert.match(indiana.geographyReview.sourceClause,/Indianapolis, Indiana/);
+ assert.ok(pay.excludedObservations.some(row=>row.id==='formic:greenhouse:4702865006'&&/overtime/.test(row.reason)));
+ assert.ok(pay.excludedObservations.some(row=>row.id==='shield-ai:lever:ee614940-c594-41da-8432-8a677e21520d'));
+ for(const row of pay.observations)assert.ok(!pay.excludedObservations.some(other=>other.id===row.id));
+ assert.ok(!item.sections.flatMap(section=>section.blocks||[]).some(block=>block.type==='skill-mentions'));
 });

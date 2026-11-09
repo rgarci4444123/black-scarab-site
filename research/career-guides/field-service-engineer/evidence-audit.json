@@ -1,0 +1,1018 @@
+{
+  "reviewedAt": "2026-11-09",
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "scope": "Diagnose, maintain and restore deployed robotic equipment; customer communication, service documentation and engineering escalation. Distinguish from new-cell integration, routine fleet operation and software-only sustainment.",
+  "cohort": {
+    "postings": 43,
+    "employers": 19
+  },
+  "reviewedRecords": [
+    {
+      "id": "dexterity:lever:0630d2f1-586c-4819-a111-a6188462af3b",
+      "employerId": "dexterity",
+      "employer": "Dexterity",
+      "title": "Field Service Engineer",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/dexterity/0630d2f1-586c-4819-a111-a6188462af3b",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "f6e7e4531fb67c910b0bef1338f33b6c70f9af50c1abb49cc3b83f9838834a0b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dexterity.json",
+      "rawSourceFileSha256": "58e07677b990f0ea1b41f418ab151a58e38723fc312c6213884069c392d0c236",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Hands-on customer warehouse maintenance, mechanical/electrical/pneumatic diagnosis, Linux logs, commissioning and repair validation.",
+      "qualification": "Education & Experience: BS or AAS in an engineering discipline related to robotics (CS, EE, ME, Mechatronics, etc.) or equivalent practical field service experience.",
+      "qualificationSpans": [
+        {
+          "text": "Education & Experience: BS or AAS in an engineering discipline related to robotics (CS, EE, ME, Mechatronics, etc.) or equivalent practical field service experience.",
+          "start": 2909,
+          "end": 3074
+        }
+      ]
+    },
+    {
+      "id": "formic:greenhouse:4702865006",
+      "employerId": "formic",
+      "employer": "Formic",
+      "title": "Robotics Field Service Engineer",
+      "locations": [
+        "Austin, TX",
+        "Chicago,  IL || Bolingbrook, IL",
+        "Dallas, TX",
+        "Killeen, TX",
+        "San Antonio, TX",
+        "San Francisco, CA || Oakland, CA",
+        "Temple || Belton, TX",
+        "Waco, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/formic/jobs/4702865006",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "5cd2af83da1bad111dc807dc60cd0233828ff4b3b581737d888870a2216a0c60",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/formic.json",
+      "rawSourceFileSha256": "65e248fa4c2c4131e404bd620ba3caaca4baf177ba3c8302e27fe848266d4e1f",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Preventive/corrective maintenance, PLC/electromechanical faults, CMMS, customer support and safety at manufacturing sites.",
+      "qualification": "3+ years of hands-on field service experience supporting robotic or industrial automation systems",
+      "qualificationSpans": [
+        {
+          "text": "3+ years of hands-on field service experience supporting robotic or industrial automation systems",
+          "start": 3161,
+          "end": 3258
+        }
+      ]
+    },
+    {
+      "id": "boston-dynamics:workday:R3291",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Field Service Engineer -Southeast",
+      "locations": [
+        "Georgia (Remote)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Georgia-Remote/Field-Service-Engineer--Southeast_R3291",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "6fa0213b60ed1a12ae73437b69e72bb429b25daad0908db7c5502993958400c6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Emergency repairs, installations, maintenance and customer-facing service for deployed warehouse robotics.",
+      "qualification": "Field technicians with experience in other industries are encouraged to apply.",
+      "qualificationSpans": [
+        {
+          "text": "Field technicians with experience in other industries are encouraged to apply.",
+          "start": 2519,
+          "end": 2597
+        }
+      ]
+    },
+    {
+      "id": "boston-dynamics:workday:R2895",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Senior Field Service Engineer (Indianapolis, Indiana)",
+      "locations": [
+        "Indiana (Remote)"
+      ],
+      "countries": [
+        "India",
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Indiana-Remote/Field-Service-Engineer_R2895",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "43c55df60b19336490b72732c63c6062668d89ccf3cd3fac152bda661f74a8e0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Customer-site Stretch service, mechanical repairs, service metrics and travel.",
+      "qualification": "3+ years in a similar role.",
+      "qualificationSpans": [
+        {
+          "text": "3+ years in a similar role.",
+          "start": 2251,
+          "end": 2278
+        }
+      ]
+    },
+    {
+      "id": "nimble:greenhouse:4204567009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "Robotics Field Engineer",
+      "locations": [
+        "Haslet, TX",
+        "Haslet, Texas, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4204567009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "6bc60a43863c393080629c477ec0f7149b6d0fce81aa4feae4ddb4054025a302",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Production fleet troubleshooting, log/SQL analysis, observability and operational support.",
+      "qualification": "0-5 years of experience in a production environment supporting and improving complex robotics systems, or a minimum of 2 years of experience combined with a Bachelor of Science degree in Computer Science, Software Engineering, or Robotics.",
+      "qualificationSpans": [
+        {
+          "text": "0-5 years of experience in a production environment supporting and improving complex robotics systems, or a minimum of 2 years of experience combined with a Bachelor of Science degree in Computer Science, Software Engineering, or Robotics.",
+          "start": 3503,
+          "end": 3742
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:53bd205b-24a7-4a54-a196-6694a57b7983",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Field Support Representative - Colorado",
+      "locations": [
+        "US Remote"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/53bd205b-24a7-4a54-a196-6694a57b7983",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "091814ac50d93ec564d90c4a2394caba599265c0f86de12b0decf70b0b34d14d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Customer-site UAS and dock support, firmware/log/network diagnosis, maintenance training and regional travel.",
+      "qualification": "At least 3 years of civilian, law enforcement or military UAS operations and flight experience.",
+      "qualificationSpans": [
+        {
+          "text": "At least 3 years of civilian, law enforcement or military UAS operations and flight experience.",
+          "start": 3546,
+          "end": 3641
+        }
+      ]
+    },
+    {
+      "id": "agile-robots:greenhouse:5013112101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Robot Service Engineer - Data Collection (m/f/d) Fixed-term 18 months",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/5013112101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "8c0fae4efd031e5a39ccef7cc5027e385c3468e313cf337ab516daf72933b8b4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Robots, teleoperation devices and recording systems: hardware/software diagnosis, preventive maintenance and documented R&D escalation.",
+      "qualification": "Degree or vocational training in mechatronics, electrical engineering, robotics, computer science or a related field.",
+      "qualificationSpans": [
+        {
+          "text": "Degree or vocational training in mechatronics, electrical engineering, robotics, computer science or a related field.",
+          "start": 1937,
+          "end": 2054
+        }
+      ]
+    },
+    {
+      "id": "path-robotics:greenhouse:8470564002",
+      "employerId": "path-robotics",
+      "employer": "Path Robotics",
+      "title": "Field Service Technician",
+      "locations": [
+        "Buffalo, NY",
+        "Cincinnati, OH",
+        "Columbus, Ohio",
+        "Columbus, Ohio, United States",
+        "Dayton, OH",
+        "Detroit, MI",
+        "Garden City, KS",
+        "Lafayette, LA",
+        "Madison, WI",
+        "Norfolk, VA",
+        "Pittsburgh, PA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/pathrobotics/jobs/8470564002?gh_jid=8470564002",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "8aee166398d48955c1afb10223cdf2f16cd3ff1e23f47349836c20fd4a4460b1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/path-robotics.json",
+      "rawSourceFileSha256": "dda49bbc68095b57d6027516973c117de7d1e049b6393bd61747a752e35d13e2",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Welding-cell maintenance, pneumatics, electrical/mechanical components, operating duties and extensive customer travel.",
+      "qualification": "Technical training, Trade School certification, Associate degree in Engineering Tech, or equivalent industry experience.",
+      "qualificationSpans": [
+        {
+          "text": "Technical training, Trade School certification, Associate degree in Engineering Tech, or equivalent industry experience.",
+          "start": 2577,
+          "end": 2697
+        }
+      ]
+    },
+    {
+      "id": "figure:greenhouse:4683847006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Field Service Technician, Commercial Site Team",
+      "locations": [
+        "Fontana, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4683847006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "d0abe0a160a6cbc327a4b0db79bd5bf62f25a69b8d78d1c787f6038718ace36d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Commercial humanoid service, whole-system diagnostics, schematics, mechanical components and engineering feedback.",
+      "qualification": "3+ years experience working with complex systems.",
+      "qualificationSpans": [
+        {
+          "text": "3+ years experience working with complex systems.",
+          "start": 1512,
+          "end": 1561
+        }
+      ]
+    },
+    {
+      "id": "serve:ashby:946fe8ed-7c4a-462c-97ca-6d7843a45fa3",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Service Technician II",
+      "locations": [
+        "Atlanta, GA",
+        "Miami, FL"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/946fe8ed-7c4a-462c-97ca-6d7843a45fa3",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "5729f3e8d7207777617a0fbf705256d13c158b24927ac74ec0c43c665eb56e55",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Delivery-robot mechanical, electrical and software fault diagnosis, repair validation, work-order traceability and quality.",
+      "qualification": "2–4+ years of progressive technical experience in electro-mechanical, electronics, robotics, automotive, aerospace, or similar industries",
+      "qualificationSpans": [
+        {
+          "text": "2–4+ years of progressive technical experience in electro-mechanical, electronics, robotics, automotive, aerospace, or similar industries",
+          "start": 3063,
+          "end": 3200
+        }
+      ]
+    }
+  ],
+  "salaryExclusions": [
+    {
+      "id": "agile-robots:greenhouse:4964709101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Senior Customer Support & Field Service Engineer (m/f/d)",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4964709101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "94cfc43c6b98b42c97101ea8878ee26c8d7238c2a053643e50bfde35fac661f0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reason": "Non-U.S. or unverified mixed geography."
+    },
+    {
+      "id": "agile-robots:greenhouse:5013112101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Robot Service Engineer - Data Collection (m/f/d) Fixed-term 18 months",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/5013112101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "8c0fae4efd031e5a39ccef7cc5027e385c3468e313cf337ab516daf72933b8b4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reason": "Non-U.S. or unverified mixed geography."
+    },
+    {
+      "id": "anduril:greenhouse:5041078007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Product Support Engineer - Advanced Effects",
+      "locations": [
+        "Atlanta, Georgia, United States",
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5041078007?gh_jid=5041078007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "20782650a072dfaa57fa082f9c414e03268dad026221a4b743531d4bcd6576db",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicit annual USD salary range verified for an eligible equipment field-service role."
+    },
+    {
+      "id": "anduril:greenhouse:5260621007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Maintenance Technician",
+      "locations": [
+        "Ashville, Ohio, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5260621007?gh_jid=5260621007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "953a405ce16163bece5631809164af52d7e6e2889cbf4dc3e722fb21eba411f0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicit annual USD salary range verified for an eligible equipment field-service role."
+    },
+    {
+      "id": "anduril:greenhouse:5264280007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Product Support Engineer",
+      "locations": [
+        "Alexandria, New South Wales, Australia",
+        "Perth, Western Australia, Australia; Sydney, New South Wales, Australia"
+      ],
+      "countries": [
+        "Australia"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5264280007?gh_jid=5264280007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "80c488682388a3e591f7b17cc42ba2c7e74d7f5d9a108795f02bb0528893b32d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Non-U.S. or unverified mixed geography."
+    },
+    {
+      "id": "anduril:greenhouse:5266823007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Product Support Engineer - Undersea Dominance",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5266823007?gh_jid=5266823007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "c4a077e18adc7f27b6a81ec9a0443462ac1647e908d643b3b516cd382f5849de",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicit annual USD salary range verified for an eligible equipment field-service role."
+    },
+    {
+      "id": "anduril:greenhouse:5267900007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Product Support Engineer/Life Cycle Cost Analyst",
+      "locations": [
+        "Costa Mesa, California, United States",
+        "Santa Ana, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5267900007?gh_jid=5267900007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "55e83b12775231358c2eebeb63b854dee6465f2516f222a33d2f13de30def01f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicit annual USD salary range verified for an eligible equipment field-service role."
+    },
+    {
+      "id": "boston-dynamics:workday:R3041",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Field Repair Technician, 2nd Shift - RMAC",
+      "locations": [
+        "Savannah"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Savannah/Field-Repair-Technician--2nd-Shift---RMAC_R3041-1",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "fed3f22e868a7c6249e83decfb0638da286cbc057b7008f7106498d56bfa94a1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "boston-dynamics:workday:R3197",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "R&D Robotics Technician IV",
+      "locations": [
+        "Billerica (MA)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Billerica-MA/R-D-Robotics-Technician-IV_R3197",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "037c7908d3183d532bd764e4f452b30a229b52e657c9ff1df72b101d9fa5c5bd",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "boston-dynamics:workday:R3333",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Field Repair Technician - RMAC",
+      "locations": [
+        "Savannah"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Savannah/Field-Repair-Technician--RMAC_R3333",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "db7908ccb4a6cd4de49178375c7c0862ee9acdeed949d2ba2f82518a9f9cfd41",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "figure:greenhouse:4392728006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Robot Service Technician (Morning Shift)",
+      "locations": [
+        "San Jose, California, United States",
+        "Santa Clara, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4392728006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "a63d11e1e2230c6630358685429659876a3353ff86f32963bb7f15645227b076",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "figure:greenhouse:4683847006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Field Service Technician, Commercial Site Team",
+      "locations": [
+        "Fontana, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4683847006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "d0abe0a160a6cbc327a4b0db79bd5bf62f25a69b8d78d1c787f6038718ace36d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "figure:greenhouse:4722786006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Mobile Service Technician",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4722786006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "9a1edc7978b2808186453c9d6f76788d0f93c6b836ff1181ada338faad08ae2d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "formic:greenhouse:4702865006",
+      "employerId": "formic",
+      "employer": "Formic",
+      "title": "Robotics Field Service Engineer",
+      "locations": [
+        "Austin, TX",
+        "Chicago,  IL || Bolingbrook, IL",
+        "Dallas, TX",
+        "Killeen, TX",
+        "San Antonio, TX",
+        "San Francisco, CA || Oakland, CA",
+        "Temple || Belton, TX",
+        "Waco, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/formic/jobs/4702865006",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "5cd2af83da1bad111dc807dc60cd0233828ff4b3b581737d888870a2216a0c60",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/formic.json",
+      "rawSourceFileSha256": "65e248fa4c2c4131e404bd620ba3caaca4baf177ba3c8302e27fe848266d4e1f",
+      "reason": "Hourly role; annualized employer examples include overtime and are not comparable annual salary observations."
+    },
+    {
+      "id": "formic:greenhouse:4704251006",
+      "employerId": "formic",
+      "employer": "Formic",
+      "title": "Product Support Engineer",
+      "locations": [
+        "Chicago, IL || Bolingbrook, IL",
+        "San Francisco, CA || Oakland, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/formic/jobs/4704251006",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "6639862e8919ad1041b05f7e32e4bdd39c2299ecf90c75f1abcfeebea7eff465",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/formic.json",
+      "rawSourceFileSha256": "65e248fa4c2c4131e404bd620ba3caaca4baf177ba3c8302e27fe848266d4e1f",
+      "reason": "Hourly role; annualized employer examples include overtime and are not comparable annual salary observations."
+    },
+    {
+      "id": "formic:greenhouse:4709056006",
+      "employerId": "formic",
+      "employer": "Formic",
+      "title": "Robotics Field Service Technician",
+      "locations": [
+        "Atlanta, GA",
+        "Austin, TX",
+        "Chicago, IL || Bolingbrook, IL",
+        "Detroit, MI",
+        "Killeen,  TX",
+        "Madison, WI",
+        "New York",
+        "Ohio",
+        "Pennsylvania",
+        "San Antonio, TX",
+        "San Francisco, CA || Oakland, CA",
+        "Temple, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/formic/jobs/4709056006",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "418dd623edd196a02ec6d2b26ff131a94f7661ebdbf5783fb0c209f95501bcf3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/formic.json",
+      "rawSourceFileSha256": "65e248fa4c2c4131e404bd620ba3caaca4baf177ba3c8302e27fe848266d4e1f",
+      "reason": "Hourly role; annualized employer examples include overtime and are not comparable annual salary observations."
+    },
+    {
+      "id": "generalist:ashby:6d0698f0-6669-4100-9129-494e8088da48",
+      "employerId": "generalist",
+      "employer": "Generalist",
+      "title": "Robotics Technician",
+      "locations": [
+        "San Francisco Bay Area (San Mateo) or Boston (Somerville)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/generalist/6d0698f0-6669-4100-9129-494e8088da48",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "30d0f3447cd7c363554a53877defa3ea68ac4615fecb03e9da44014d6eb32c0b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/generalist.json",
+      "rawSourceFileSha256": "3a68317852f186207f680483cbe333b2be5efb0f070d156245cb2a3a929514b7",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "gram:greenhouse:4401380009",
+      "employerId": "gram",
+      "employer": "GRAM",
+      "title": "Robotics Technician (1099 Contract)",
+      "locations": [
+        "El Segundo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/gram/jobs/4401380009",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "644d6c58306cc6bba70541fb3d0c4316b36b2e94fd76ae02c3bd3cd4af890169",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gram.json",
+      "rawSourceFileSha256": "706bd3d6bc62b71be02626b1dfae72b01f35c08b1f1831e36845fab26fff70b8",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "gram:greenhouse:4401381009",
+      "employerId": "gram",
+      "employer": "GRAM",
+      "title": "Field Engineer, Global Deployments",
+      "locations": [
+        "El Segundo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/gram/jobs/4401381009",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "a667a7bf6eeec5d6ac3d40395933cc8fc1ea128f28b75290e0f0b8949c79153a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gram.json",
+      "rawSourceFileSha256": "706bd3d6bc62b71be02626b1dfae72b01f35c08b1f1831e36845fab26fff70b8",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "humanoid:ashby:f90e4699-5edd-49be-9b42-1008be75c2bb",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Shift Supervisor / Field Service Technician",
+      "locations": [
+        "Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/f90e4699-5edd-49be-9b42-1008be75c2bb",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "4f767df356b438ab2c7bf7539e773ae3e8e7efa3c5733a840857f972084fb1af",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Non-U.S. or unverified mixed geography."
+    },
+    {
+      "id": "nimble:greenhouse:4101345009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "Maintenance Technician (Haslet, TX)",
+      "locations": [
+        "Haslet, TX",
+        "Haslet, Texas, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4101345009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "b6a37bc379c8139cccd5fe622a228315ea040d494ecf2342a11c6a92076ece66",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "reason": "No complete explicit annual USD salary range verified for an eligible equipment field-service role."
+    },
+    {
+      "id": "nimble:greenhouse:4279792009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "Maintenance Technician (San Francisco)",
+      "locations": [
+        "South San Francisco, CA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4279792009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "81fce93b25a6f7c0333f07b909dec84f2869928f9e928379476107b9af3aaea2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "nimble:greenhouse:4377570009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "Maintenance Technician (Cypress, TX)",
+      "locations": [
+        "Cypress, TX",
+        "Haslet, Texas, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4377570009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "dbe7461ed7bb781a754f907bcf1cfba0965c9996a4ec7e3a15f7cb109232b0ad",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "one-x:ashby:aea0150b-5690-422a-b43a-773c706305ff",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Robot Service Technician",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/aea0150b-5690-422a-b43a-773c706305ff",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "3a2e71d7b96873698701bfc5fe9030e7d7d31ade179404e28c861e0e5b38c6f0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "osaro:lever:8f66deed-01d8-42c4-bf32-1ebfa4a9ab78",
+      "employerId": "osaro",
+      "employer": "OSARO",
+      "title": "Maintenance Technician",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/osaro/8f66deed-01d8-42c4-bf32-1ebfa4a9ab78",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "09e4154af29a833a4cc915cafa62346b2d6a11334fe1b2afc25a28db53724994",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/osaro.json",
+      "rawSourceFileSha256": "27c97473a1c27531e82bca09fbb4dbaf306483a42ae42c50429a750b4929ab92",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "path-robotics:greenhouse:8406813002",
+      "employerId": "path-robotics",
+      "employer": "Path Robotics",
+      "title": "Field Service Technician",
+      "locations": [
+        "Columbus, Ohio, United States",
+        "Minneapolis, Minnesota"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/pathrobotics/jobs/8406813002?gh_jid=8406813002",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "f84229a5a9ab03297d2ba611fd717337ce69d03c9000437b65ae7f88cf0e4e57",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/path-robotics.json",
+      "rawSourceFileSha256": "dda49bbc68095b57d6027516973c117de7d1e049b6393bd61747a752e35d13e2",
+      "reason": "No complete explicit annual USD salary range verified for an eligible equipment field-service role."
+    },
+    {
+      "id": "path-robotics:greenhouse:8470564002",
+      "employerId": "path-robotics",
+      "employer": "Path Robotics",
+      "title": "Field Service Technician",
+      "locations": [
+        "Buffalo, NY",
+        "Cincinnati, OH",
+        "Columbus, Ohio",
+        "Columbus, Ohio, United States",
+        "Dayton, OH",
+        "Detroit, MI",
+        "Garden City, KS",
+        "Lafayette, LA",
+        "Madison, WI",
+        "Norfolk, VA",
+        "Pittsburgh, PA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/pathrobotics/jobs/8470564002?gh_jid=8470564002",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "8aee166398d48955c1afb10223cdf2f16cd3ff1e23f47349836c20fd4a4460b1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/path-robotics.json",
+      "rawSourceFileSha256": "dda49bbc68095b57d6027516973c117de7d1e049b6393bd61747a752e35d13e2",
+      "reason": "No complete explicit annual USD salary range verified for an eligible equipment field-service role."
+    },
+    {
+      "id": "path-robotics:greenhouse:8526701002",
+      "employerId": "path-robotics",
+      "employer": "Path Robotics",
+      "title": "Field Services Lead",
+      "locations": [
+        "Columbus, Ohio",
+        "Columbus, Ohio, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/pathrobotics/jobs/8526701002?gh_jid=8526701002",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "fe2dd26738be8647ccd7e27a93f35c13a3cb3f2e03d9b45d8b07921b2915ca1e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/path-robotics.json",
+      "rawSourceFileSha256": "dda49bbc68095b57d6027516973c117de7d1e049b6393bd61747a752e35d13e2",
+      "reason": "No complete explicit annual USD salary range verified for an eligible equipment field-service role."
+    },
+    {
+      "id": "path-robotics:greenhouse:8836799002",
+      "employerId": "path-robotics",
+      "employer": "Path Robotics",
+      "title": "Field Service Technician",
+      "locations": [
+        "Columbus, Ohio, United States",
+        "Toronto, CA"
+      ],
+      "countries": [
+        "Canada",
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/pathrobotics/jobs/8836799002?gh_jid=8836799002",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "738cb849118c67f0635eb97914f6ceb9a4a1f71d62bb14835efca37e0db64250",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/path-robotics.json",
+      "rawSourceFileSha256": "dda49bbc68095b57d6027516973c117de7d1e049b6393bd61747a752e35d13e2",
+      "reason": "Non-U.S. or unverified mixed geography."
+    },
+    {
+      "id": "physical-intelligence:ashby:11208bdc-a679-4cf7-b7a9-67848f7660ab",
+      "employerId": "physical-intelligence",
+      "employer": "Physical Intelligence",
+      "title": "Robotics Technician",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/physicalintelligence/11208bdc-a679-4cf7-b7a9-67848f7660ab",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "e7c80afa33d16560841baec60b5f1c677b04a896611ba5c9224be67c55e2b1a9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/physical-intelligence.json",
+      "rawSourceFileSha256": "4636b655b7fab48b151da10f872a9268960654cc165ce7e06a60e83e91cc5c99",
+      "reason": "No complete explicit annual USD salary range verified for an eligible equipment field-service role."
+    },
+    {
+      "id": "serve:ashby:946fe8ed-7c4a-462c-97ca-6d7843a45fa3",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Service Technician II",
+      "locations": [
+        "Atlanta, GA",
+        "Miami, FL"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/946fe8ed-7c4a-462c-97ca-6d7843a45fa3",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "5729f3e8d7207777617a0fbf705256d13c158b24927ac74ec0c43c665eb56e55",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "serve:ashby:ff0b27bd-0fc0-4849-8c9b-401f92756dd0",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Service Technician (Levels 1-3)",
+      "locations": [
+        "Gold Coast"
+      ],
+      "countries": [
+        "Australia"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/ff0b27bd-0fc0-4849-8c9b-401f92756dd0",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "78e24d8b5b1e59a6a7e81ca7afabd0cf04c6d119e226792c0fb2a2865c89943b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    },
+    {
+      "id": "shield-ai:lever:ee614940-c594-41da-8432-8a677e21520d",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Customer Sustainment Engineer -open level (R5502)",
+      "locations": [
+        "San Diego, California",
+        "Washington, D.C."
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/ee614940-c594-41da-8432-8a677e21520d",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "b072e44c79ce7dff73855d8de053642be25fd8087fa23faa4379202d83ccfb7d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Primarily Hivemind software sustainment, APIs, licensing and provisioning rather than hands-on equipment field service."
+    },
+    {
+      "id": "skild:greenhouse:5218368008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Robotics Technician",
+      "locations": [
+        "San Mateo",
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/5218368008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "7e5bf3df57cde3653db22493e3327925b143297c40b05935982c65e5701e5d22",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reason": "No complete explicit annual USD salary range verified for an eligible equipment field-service role."
+    },
+    {
+      "id": "zipline:greenhouse:7996211003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Field Support Technician",
+      "locations": [
+        "Dallas, Texas, United States",
+        "Dallas-Fort Worth, Texas, USA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7996211003?gh_jid=7996211003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "cb391b2d7a49a351e1cfdd3a007bc46b7e447f4b7ff2bd41e4b47f0f6dd03f88",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "Hourly or short-term contract compensation; not annualized."
+    }
+  ],
+  "geographyCorrection": "R2895 reviewed as Indianapolis, Indiana, United States; retain original mixed-country classifier output in the archive.",
+  "liveEmployerChecks": [
+    {
+      "url": "https://job-boards.greenhouse.io/formic/jobs/4702865006",
+      "status": "Read November 9: field-service scope, maintenance, CMMS and experience confirmed."
+    },
+    {
+      "url": "https://jobs.lever.co/dexterity/0630d2f1-586c-4819-a111-a6188462af3b",
+      "status": "Live access returned HTTP 403; guide uses pinned full source from November 2."
+    }
+  ],
+  "technicalSources": [
+    "https://www.osha.gov/control-hazardous-energy",
+    "https://docs.python.org/3/howto/logging.html",
+    "https://documentation.ubuntu.com/desktop/en/latest/tutorial/the-linux-command-line-for-beginners/",
+    "https://www.wireshark.org/docs/wsug_html_chunked/"
+  ],
+  "editorialExamples": "Stopped-robot diagnostic map and software-only service-ticket project are hypothetical educational examples, not employer incident reports or maintenance instructions."
+}

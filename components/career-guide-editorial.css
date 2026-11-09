@@ -145,3 +145,36 @@
   .career-section.profession-guide .profession-workflow-stages>li>p { margin-top: 4px; }
   .career-section.profession-guide .profession-workflow-review { margin-top: 25px; padding-top: 12px; }
 }
+
+/* A branching diagnostic map, distinct from the sequential workflow. */
+.career-section.profession-guide figure.profession-diagnostic-map { margin: 34px 0; padding: 25px 0; border-block: 1px solid var(--border); scroll-margin-top: 28px; }
+.career-section.profession-guide .profession-diagnostic-map figcaption { max-width: none; margin: 0 0 23px; font-size: 20px; font-weight: 600; line-height: 1.4; color: #1b1c1f; }
+.career-section.profession-guide .profession-diagnostic-map p.profession-diagnostic-symptom { position: relative; width: fit-content; max-width: 100%; margin: 0 auto 49px; padding: 12px 18px; border: 1px solid #a9aaae; font-size: 16px; line-height: 1.5; font-weight: 550; color: #26272b; text-align: center; }
+.career-section.profession-guide .profession-diagnostic-symptom::after { content: ''; position: absolute; height: 25px; top: 100%; left: 50%; border-left: 1px solid #bfc1c5; }
+.career-section.profession-guide .profession-diagnostic-branches { position: relative; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; padding: 0; margin: 0; list-style: none; }
+.career-section.profession-guide .profession-diagnostic-branches::before { content: ''; position: absolute; top: -25px; left: calc((100% - 56px)/6); right: calc((100% - 56px)/6); border-top: 1px solid #bfc1c5; }
+.career-section.profession-guide .profession-diagnostic-branches>li { position: relative; margin: 0; padding: 0; min-width: 0; }
+.career-section.profession-guide .profession-diagnostic-branches>li::before { content: ''; position: absolute; left: 50%; top: -25px; height: 17px; border-left: 1px solid #bfc1c5; }
+.career-section.profession-guide .profession-diagnostic-branches h4 { margin: 0 0 11px; font-size: 15px; font-weight: 600; line-height: 1.5; color: #292a2e; }
+.career-section.profession-guide .profession-diagnostic-branches h4::before { content: ''; display: inline-block; width: 6px; height: 6px; margin-right: 9px; vertical-align: 2px; background: #b86a00; border-radius: 50%; }
+.career-section.profession-guide .profession-diagnostic-branches>li>p { font-size: 13px; line-height: 1.75; margin: 0 0 16px; }
+.career-section.profession-guide .profession-diagnostic-branches dl { border-top: 1px solid #e0e1e4; margin: 0; padding-top: 12px; }
+.career-section.profession-guide .profession-diagnostic-branches dt { font-size: 10px; letter-spacing: .07em; text-transform: uppercase; line-height: 1.6; color: #62636a; margin-bottom: 5px; }
+.career-section.profession-guide .profession-diagnostic-branches dd { margin: 0; font-size: 13px; line-height: 1.7; color: #42434a; }
+.career-section.profession-guide .profession-diagnostic-map p.profession-diagnostic-conclusion { margin: 25px 0 0; font-size: 12px; line-height: 1.75; color: #5f5f66; }
+@media(max-width:600px) {
+  .career-section.profession-guide .profession-diagnostic-map figcaption { font-size: 19px; }
+  .career-section.profession-guide .profession-diagnostic-map p.profession-diagnostic-symptom { width: 100%; text-align: left; font-size: 15px; margin-bottom: 27px; }
+  .career-section.profession-guide .profession-diagnostic-symptom::after { left: 15px; height: 28px; }
+  .career-section.profession-guide .profession-diagnostic-branches { grid-template-columns: minmax(0,1fr); gap: 23px; margin-left: 15px; padding-left: 23px; border-left: 1px solid #bfc1c5; }
+  .career-section.profession-guide .profession-diagnostic-branches::before { display: none; }
+  .career-section.profession-guide .profession-diagnostic-branches>li::before { top: 10px; left: -23px; width: 14px; height: 0; border: 0; border-top: 1px solid #bfc1c5; }
+  .career-section.profession-guide .profession-diagnostic-branches h4 { margin-bottom: 6px; }
+  .career-section.profession-guide .profession-diagnostic-branches>li>p { margin-bottom: 11px; }
+}
+
+.career-section.profession-guide .profession-diagnostic-branches:has(>li:nth-child(4)) { grid-template-columns: repeat(4,minmax(0,1fr)); }
+.career-section.profession-guide .profession-diagnostic-branches:has(>li:nth-child(4))::before { left: calc((100% - 84px)/8); right: calc((100% - 84px)/8); }
+@media(max-width:600px) {
+  .career-section.profession-guide .profession-diagnostic-branches:has(>li:nth-child(4)) { grid-template-columns: minmax(0,1fr); }
+}

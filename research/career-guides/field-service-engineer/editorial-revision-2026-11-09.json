@@ -1,0 +1,26 @@
+{
+  "revisedAt": "2026-11-09",
+  "source": "User-supplied editorial revision",
+  "sourceSha256": "644918b36a6281af7364f339f1ded49e21e9cb56dc5daf84f132e1d9af9403a2",
+  "headline": "How to Become a Field Service Engineer in Robotics",
+  "sectionCount": 8,
+  "newFragment": "field-service-vs-integration",
+  "preserved": [
+    "Existing URL, SEO title and metadata",
+    "Hero illustration",
+    "113000 USD compensation derivation and original source provenance",
+    "Complete collapsed methodology and source references"
+  ],
+  "presentation": [
+    "The supplied mechanical/electrical/software/network comparison uses the existing diagnostic-map visual with four branches.",
+    "Existing seven section fragments are retained; a standalone service/integration/operations comparison is added.",
+    "The redundant salary-table heading and repeated caveat are consolidated into the caption and research methodology."
+  ],
+  "sourceCorrections": [
+    "Use annual advertised salary rather than base salary because the source ranges do not consistently identify base pay.",
+    "Avoid an unsupported comparative claim that field service is one of the most accessible robotics careers.",
+    "Avoid inferring a technician-to-engineer pay ladder from mixed employer advertisements.",
+    "Identify motors, gears, sensors, wiring and circuit boards without classifying electrical parts as other mechanical components."
+  ],
+  "portfolio": "Core software-only exercise plus the supplied optional educational low-voltage kit extension."
+}

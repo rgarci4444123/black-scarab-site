@@ -6,8 +6,9 @@ import { roboticsIntegrationEngineerGuide } from '@/lib/career-paths/robotics-in
 import { electricalEngineerGuide } from '@/lib/career-paths/electrical-engineer-guide';
 import { perceptionEngineerGuide } from '@/lib/career-paths/perception-engineer-guide';
 import { roboticsDataEngineerGuide } from '@/lib/career-paths/robotics-data-engineer-guide';
+import { fieldServiceEngineerGuide } from '@/lib/career-paths/field-service-engineer-guide';
 // Add researched guides here after editorial review. No empty profession pages enter navigation or the sitemap.
-export const careerGuides: CareerGuideContent[] = [mechanicalEngineerGuide, robotLearningEngineerGuide, roboticsSimulationEngineerGuide, roboticsIntegrationEngineerGuide, electricalEngineerGuide, perceptionEngineerGuide, roboticsDataEngineerGuide];
+export const careerGuides: CareerGuideContent[] = [mechanicalEngineerGuide, robotLearningEngineerGuide, roboticsSimulationEngineerGuide, roboticsIntegrationEngineerGuide, electricalEngineerGuide, perceptionEngineerGuide, roboticsDataEngineerGuide, fieldServiceEngineerGuide];
 export const isPublishedCareerGuide = (guide: CareerGuideContent) => guide.status === 'published' && guide.sections.length > 0 && guide.sections.every(section => section.paragraphs.length > 0 || (section.blocks?.length || 0) > 0) && guide.citations.length > 0;
 export const publishedCareerGuides = careerGuides.filter(isPublishedCareerGuide);
 export const guidePath = (guide: CareerGuideContent) => `/career-paths/${guide.familyId}/${guide.slug}`;
