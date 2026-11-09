@@ -1,0 +1,676 @@
+{
+  "reviewedAt": "2026-11-09",
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "scope": "Software that interprets sensor observations into objects, geometry, motion and scene representations. Distinguish from selecting actions, localization/map ownership and data infrastructure.",
+  "cohort": {
+    "postings": 82,
+    "employers": 28
+  },
+  "reviewedRecords": [
+    {
+      "id": "figure:greenhouse:4007375006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Helix AI Engineer, Perception",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4007375006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "66258cc17c8499f20c8643796eb2ff1389ef77a6585b65b8a6e2760ecda03c45",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original cohort classifications and flags retained.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Humanoid perception including geometric vision, localization and visuomotor systems.",
+      "qualification": "Strong mathematical foundation in probability, optimization, and linear algebra.",
+      "qualificationSpans": [
+        {
+          "text": "Strong mathematical foundation in probability, optimization, and linear algebra.",
+          "start": 773,
+          "end": 853
+        }
+      ]
+    },
+    {
+      "id": "apptronik:greenhouse:6225394004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Senior Perception Learning Engineer",
+      "locations": [
+        "Austin, TX",
+        "Sunnyvale, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6225394004?gh_jid=6225394004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "183d88909fa962847a5a86e45180ccf2a4a404c961fcbf5d4bfa64593d3624c4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original cohort classifications and flags retained.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Humanoid perception and SLAM, model evaluation and embedded deployment.",
+      "qualification": "MS/PhD in Computer Science, Robotics, Computer Engineering, or related field.",
+      "qualificationSpans": [
+        {
+          "text": "MS/PhD in Computer Science, Robotics, Computer Engineering, or related field.",
+          "start": 3402,
+          "end": 3479
+        }
+      ]
+    },
+    {
+      "id": "agility:greenhouse:6210999004",
+      "employerId": "agility",
+      "employer": "Agility Robotics",
+      "title": "Senior AI Software Engineer, Perception",
+      "locations": [
+        "Fremont, California, United States",
+        "Hybrid- Any Office (Fremont, CA, Salem, OR, or Pittsburgh, PA)",
+        "Pittsburgh, Pennsylvania, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=6210999004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "b2c9f46117b7900bd28a3e768e8a12bbb53cd34926b4874b692aa1446358ae08",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agility.json",
+      "rawSourceFileSha256": "ac356350940b45d164fbf75881d9254f4c3aadaa5e83e8f798a621610cb7c731",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original cohort classifications and flags retained.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Human and hazard detection, embedded inference and validation.",
+      "qualification": "5+ years of experience in machine learning/perception for robotics",
+      "qualificationSpans": [
+        {
+          "text": "5+ years of experience in machine learning/perception for robotics",
+          "start": 2384,
+          "end": 2450
+        }
+      ]
+    },
+    {
+      "id": "path-robotics:greenhouse:8925919002",
+      "employerId": "path-robotics",
+      "employer": "Path Robotics",
+      "title": "Machine Learning Engineer, Perception",
+      "locations": [
+        "Columbus, Ohio or Remote",
+        "Columbus, Ohio, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/pathrobotics/jobs/8925919002?gh_jid=8925919002",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "a74fe1ff9fe6391a18284ddfb506e585b3c9424474b71326dfb4aaa17b2fe63f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/path-robotics.json",
+      "rawSourceFileSha256": "dda49bbc68095b57d6027516973c117de7d1e049b6393bd61747a752e35d13e2",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original cohort classifications and flags retained.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Weld perception, point clouds, seam detection and production ROS services.",
+      "qualification": "Master's or Ph.D. in CS, Robotics, or related field (Computer Vision, ML, or Perception); Bachelor's with strong production ML experience also considered.",
+      "qualificationSpans": [
+        {
+          "text": "Master's or Ph.D. in CS, Robotics, or related field (Computer Vision, ML, or Perception); Bachelor's with strong production ML experience also considered.",
+          "start": 3043,
+          "end": 3197
+        }
+      ]
+    },
+    {
+      "id": "pickle-robot:lever:403803e1-68a0-4225-b657-a46e72b64d73",
+      "employerId": "pickle-robot",
+      "employer": "Pickle Robot",
+      "title": "Senior Machine Learning Engineer - Perception",
+      "locations": [
+        "Charlestown, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/picklerobot/403803e1-68a0-4225-b657-a46e72b64d73",
+      "verifiedAt": "2026-11-02T17:47:00+00:00",
+      "sourceTextSha256": "11ca55ffae5ebfca86ed370d1bbb32f201be348d18c322d0c9ec532bd8eeaae2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/pickle-robot.json",
+      "rawSourceFileSha256": "2de11393fde7ac44bf6084223fc9c560c4c6d1d17192d26d08ebf68459709400",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original cohort classifications and flags retained.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Warehouse grasp perception: problem formulation, training data and model evaluation; runtime integration owned by partner teams.",
+      "qualification": "5+ Years of Experience in Machine Learning and Computer Vision, including models you personally carried from problem statement to measured outcome.",
+      "qualificationSpans": [
+        {
+          "text": "5+ Years of Experience in Machine Learning and Computer Vision, including models you personally carried from problem statement to measured outcome.",
+          "start": 2388,
+          "end": 2535
+        }
+      ]
+    },
+    {
+      "id": "fieldai:lever:95c1d7a7-f2b4-45ca-9888-2196b14afa77",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Robotics Autonomy Engineer, Perception",
+      "locations": [
+        "Irvine, CA",
+        "Peoria, Illinois"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/95c1d7a7-f2b4-45ca-9888-2196b14afa77",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "63b7e7207dd96bd272622034fb4242daaa434aac247c82d462cd934e2c6a4410",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original cohort classifications and flags retained.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Field perception, sensor fusion, localization and on-robot deployment.",
+      "qualification": "PhD degree in Robotics, Computer Science, Electrical Engineering, or a related field or MS degree in a related field with 2+ years of industry or applied research experience, or BS degree in a related field with 4+ years of relevant experience.",
+      "qualificationSpans": [
+        {
+          "text": "PhD degree in Robotics, Computer Science, Electrical Engineering, or a related field or MS degree in a related field with 2+ years of industry or applied research experience, or BS degree in a related field with 4+ years of relevant experience.",
+          "start": 3248,
+          "end": 3492
+        }
+      ]
+    },
+    {
+      "id": "rhoda:ashby:5096d04e-0bb8-4fe1-b8bf-e8901a9d013f",
+      "employerId": "rhoda",
+      "employer": "Rhoda AI",
+      "title": "Robot Perception Engineer",
+      "locations": [
+        "Mountain View"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/rhoda-ai/5096d04e-0bb8-4fe1-b8bf-e8901a9d013f",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "1c0567c4f25a8e93c1b0ae76d4ba4b156b9171724b11ec51c88ffa72a9d724e9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/rhoda.json",
+      "rawSourceFileSha256": "57292cd4a63e78bba309cca3f2dd2b54a447c617ae01fb0a2d48033f76eb01bc",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original cohort classifications and flags retained.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Humanoid sensor integration, object understanding and reliable perception pipelines.",
+      "qualification": "4+ years of experience in robotics perception, computer vision, or a closely related field",
+      "qualificationSpans": [
+        {
+          "text": "4+ years of experience in robotics perception, computer vision, or a closely related field",
+          "start": 2019,
+          "end": 2109
+        }
+      ]
+    },
+    {
+      "id": "one-x:ashby:8065ae1f-697e-4b73-9ae2-cc55a5373991",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "AI Researcher - Perception",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/8065ae1f-697e-4b73-9ae2-cc55a5373991",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "cea91d826e38f0d1ce3ec9d57e856a16e3fd9a85ff89b0a98103f74691a5f7d7",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original cohort classifications and flags retained.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Geometric vision, depth, object/human pose, calibration and robot-scene interpretation.",
+      "qualification": "5+ years of relevant industry experience, or an advanced degree plus equivalent hands-on experience",
+      "qualificationSpans": [
+        {
+          "text": "5+ years of relevant industry experience, or an advanced degree plus equivalent hands-on experience",
+          "start": 4366,
+          "end": 4465
+        }
+      ]
+    },
+    {
+      "id": "boston-dynamics:workday:R2564",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Atlas Staff Perception Engineer, Tactile Sensing",
+      "locations": [
+        "Waltham Office (POST)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-Office-POST/Staff-Embedded-Perception-Engineer_R2564",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "101e1173a234223d7c63687160f522a3e7ea7d96759cb2fe76644408fa667717",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original cohort classifications and flags retained.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Tactile perception: processing touch signals into representations for manipulation.",
+      "qualification": "MS or PhD in Electrical Engineering, Computer Science, Robotics, or related field. BS with significant relevant experience will also be considered",
+      "qualificationSpans": [
+        {
+          "text": "MS or PhD in Electrical Engineering, Computer Science, Robotics, or related field. BS with significant relevant experience will also be considered",
+          "start": 2616,
+          "end": 2762
+        }
+      ]
+    }
+  ],
+  "salaryExclusions": [
+    {
+      "id": "applied-intuition:ashby:5f15c171-ae5a-496b-a8eb-c6a351d55b6b",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Research Scientist - 3D Vision and Generation, Self-Driving",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/5f15c171-ae5a-496b-a8eb-c6a351d55b6b",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "44cbdf0037c63717fd6c7a7168a226a64ff586261d92b5ddf728859d5f4023cb",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Primarily generative world-model and 3D-generation research, rather than operational perception engineering."
+    },
+    {
+      "id": "applied-intuition:ashby:8da87c90-49ff-4b75-97c5-337882f63a00",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Research Engineer - 3D Vision and Generation, Self-Driving",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/8da87c90-49ff-4b75-97c5-337882f63a00",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "8fac792b33e5bedbd320ba59be69d4d3a433a457144c7d109c3679312e276ba1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Primarily generative world-model and neural-simulation research."
+    },
+    {
+      "id": "apptronik:greenhouse:5988546004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Staff Perception Hardware Engineer",
+      "locations": [
+        "Austin, TX",
+        "Sunnyvale, CA",
+        "Sunnyvale, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/5988546004?gh_jid=5988546004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "6e6b2081001417c7ba3d9ed566307aadabf9e630d691d2d14dfbd74e27673b15",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reason": "Sensor hardware engineering rather than perception software."
+    },
+    {
+      "id": "fieldai:lever:0c026e5f-99c5-419d-9458-1f2db08fcb8f",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Sensor & Perception Engineer, Robotics Hardware",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/0c026e5f-99c5-419d-9458-1f2db08fcb8f",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "81479c1d8a700a26e18a539b19efd82ac01f16476785c906ee14877550739a9b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reason": "Sensor hardware architecture, characterization and integration."
+    },
+    {
+      "id": "fieldai:lever:bb127cde-930c-446f-908d-52e2c6f24cc9",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Perception Engineer, 3D Representation & Navigation",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/bb127cde-930c-446f-908d-52e2c6f24cc9",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "792704de6450630b3cad1ad80f3fd0287b4a33699c8665e1dbc323e837a1c270",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reason": "Full source describes verification, validation and perception evaluation despite the title."
+    },
+    {
+      "id": "gatik:greenhouse:4322753006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior Software Engineer, Perception",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4322753006?gh_jid=4322753006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "52dcc997ce0f02add79de8e39ab4fb6d8a6c3cc6df0f0ef52e1f435e61c31002",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit-period text review."
+    },
+    {
+      "id": "may-mobility:greenhouse:8582594002",
+      "employerId": "may-mobility",
+      "employer": "May Mobility",
+      "title": "Lead ML/Perception Engineer",
+      "locations": [
+        "USA - Remote"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/maymobility/jobs/8582594002",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "d0c9f22114babbfe450be5aa4eeddf58d55ca39dbe2740d799d96f8db0b95ec4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/may-mobility.json",
+      "rawSourceFileSha256": "2ab98698904ead284505b1b3b2ea0b4d87534f0c3ee604fa3c2fe30e5a67461b",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit-period text review."
+    },
+    {
+      "id": "nvidia:workday:JR2020551",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Principal Perception Engineer, Obstacle Foundation Models - Autonomous Vehicles",
+      "locations": [
+        "US, CA, Remote",
+        "US, CA, Santa Clara",
+        "US, Remote"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Perception-Engineer--Obstacle-Foundation-Models---Autonomous-Vehicles_JR2020551",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "604a762d5ba38cbdc154e2fdb92c68169a85f832e8404f59107d7acddee749cc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit-period text review."
+    },
+    {
+      "id": "nvidia:workday:JR2021077",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior Radar Perception Engineer, Obstacle Foundation Models - Autonomous Vehicles",
+      "locations": [
+        "US, CA, Remote",
+        "US, CA, Santa Clara",
+        "US, Remote"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Radar-Perception-Engineer--Obstacle-Foundation-Models---Autonomous-Vehicles_JR2021077",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "08116e2e4795dfeacb9acb310971f3d60adf189b1952f582956c857fb5c80e42",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit-period text review."
+    },
+    {
+      "id": "waymo:greenhouse:7449712",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Software Engineer, Perception Scaling Evaluation",
+      "locations": [
+        "Mountain View, CA, USA; San Francisco, CA, USA",
+        "Mountain View, California, United States",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7449712",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "46a542ae6d09365cd27cdfd0e5a2b2f550f5331493a02f82953fc7a0b7b7f6ea",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit-period text review."
+    },
+    {
+      "id": "waymo:greenhouse:7450706",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Staff Tech Lead, Machine Learning Engineer, Perception",
+      "locations": [
+        "Mountain View, California, United States",
+        "Mountain View, California, United States, San Francisco, California, United States",
+        "Mountain View, California, United States; San Francisco, California, United States",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7450706",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "78e74134e8fae237a54802eb3bc7f6ba4b9698e18f5eea58239cf2c10399ff87",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit-period text review."
+    },
+    {
+      "id": "waymo:greenhouse:7488508",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Machine Learning Engineer, Perception, LLM/VLM (PhD, New Grad)",
+      "locations": [
+        "Mountain View, CA USA;  San Francisco, CA USA;",
+        "Mountain View, California, United States",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7488508",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "3211ebab381502b0dc3ca346bf84ea5202886717cbda85eb9bb4f1dc9a3160c7",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit-period text review."
+    },
+    {
+      "id": "waymo:greenhouse:7596467",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Staff TLM, Perception, Sensor Pipelines",
+      "locations": [
+        "Mountain View, CA, USA; San Francisco, CA, USA",
+        "Mountain View, California, United States",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7596467",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "f1417102dbe4a63aefe0cef5ae6719103b6650a04e04f7a2b2e31c18143d75b2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit-period text review."
+    },
+    {
+      "id": "waymo:greenhouse:8003626",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Senior Research Scientist, Perception",
+      "locations": [
+        "Kirkland, Washington, United States",
+        "Mountain View, CA, USA ; San Francisco, CA, USA ; Kirkland, WA, USA ; New York City, NY, USA",
+        "Mountain View, California, United States",
+        "New York, New York, United States",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=8003626",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "5e6b4b695efbc4b528555176f6e5444f39d08644b5ae77c047cf80a91e7b426d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit-period text review."
+    },
+    {
+      "id": "waymo:greenhouse:8127006",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Perception Machine Learning Engineer - Continuous Learning",
+      "locations": [
+        "Mountain View, CA, USA; San Francisco, CA, USA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=8127006",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "09f7c6a021eb0189a5e660b421c9c82b0a3f58719870f88eb53537f4ce273182",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit-period text review."
+    },
+    {
+      "id": "waymo:greenhouse:8212478",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Machine Learning Engineer, Driver Refinement & Validation, Perception",
+      "locations": [
+        "Mountain View, CA, USA; San Francisco, CA, USA",
+        "Mountain View, California, United States",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=8212478",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "eab56af43d8bf6d02877338241aa51860e6b01e335af7830b8c378aa826a062b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit-period text review."
+    },
+    {
+      "id": "waymo:greenhouse:8319591",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Sr. Staff Systems Engineer, Perception-Planner Risk",
+      "locations": [
+        "Mountain View, CA, US",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=8319591",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "9b9792c30f82f66a9a05475d2d3135187c1bac66df1ec6cb9073aef7b9e628e7",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit-period text review."
+    },
+    {
+      "id": "zipline:greenhouse:7805425003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Autonomy Droid Perception SWE - Offboard Systems",
+      "locations": [
+        "Ann Arbor, Michigan USA; South San Francisco, California, USA",
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7805425003?gh_jid=7805425003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "2b60bf4cb835c6d062fe0a6f7fd19459f29cdc7789b44fdeb9c61afe05b60c8b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit-period text review."
+    },
+    {
+      "id": "zipline:greenhouse:7918303003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Autonomy Zip Perception SWE",
+      "locations": [
+        "Ann Arbor, Michigan USA; South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7918303003?gh_jid=7918303003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "190d77869c7272d8348f6a702cfcde6d65c8b43f86509ec4f098913af0a78501",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit-period text review."
+    },
+    {
+      "id": "zoox:lever:87877cf4-3ac8-45d5-90fb-2ef7f223c068",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Data Scientist - Perception Verification and Validation",
+      "locations": [
+        "Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/87877cf4-3ac8-45d5-90fb-2ef7f223c068",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "84e70baf7c4671623f7d35f8d5475d6a3c859b8574c18ec1e82e2116baa9f314",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reason": "Data science for perception verification and validation rather than perception implementation."
+    }
+  ],
+  "technicalSources": [
+    "https://docs.opencv.org/4.13.0/dc/dbb/tutorial_py_calibration.html",
+    "https://docs.pytorch.org/tutorials/intermediate/torchvision_tutorial.html"
+  ],
+  "liveEmployerChecks": [
+    "https://job-boards.greenhouse.io/figureai/jobs/4007375006",
+    "https://job-boards.greenhouse.io/apptronik/jobs/6225394004"
+  ],
+  "editorialExamples": "The obscured-carton scenario and recorded-video portfolio are hypothetical teaching examples."
+}

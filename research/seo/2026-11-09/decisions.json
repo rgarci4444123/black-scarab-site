@@ -16,6 +16,21 @@
         "robotics PCB portfolio"
       ],
       "rationale": "Preserve the recognized Electrical Engineer profession while making the robotics application explicit. Distinguish electronics design from electrical installation, embedded software and industrial automation."
+    },
+    {
+      "occupationId": "perception-engineer",
+      "h1": "How to Become a Perception Engineer in Robotics",
+      "seoTitle": "Perception Engineer: Skills, Salary & Robotics Career Guide",
+      "description": "Explore robotics perception engineering: computer vision, sensor fusion, employer qualifications, Black Scarab salary research and a practical portfolio project.",
+      "path": "/career-paths/intelligence-autonomy/perception-engineer",
+      "primaryQuery": "robotics perception engineer",
+      "supportingTopics": [
+        "perception engineer salary",
+        "computer vision engineer robotics",
+        "perception engineer skills",
+        "how to become a perception engineer"
+      ],
+      "rationale": "Use the established employer title and clarify the robotics context in metadata. Cover interpreting sensor observations; explain the boundary with robot learning and localization without duplicating those guides."
     }
   ]
 }

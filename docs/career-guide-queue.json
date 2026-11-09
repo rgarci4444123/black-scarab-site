@@ -2,8 +2,8 @@
   "updatedAt": "2026-11-09",
   "workflow": ["research", "editorial draft", "local implementation", "responsive review", "user review"],
   "guides": [
-    {"order": 1, "roleId": "electrical-engineer", "status": "approved-for-release", "path": "/career-paths/hardware-manufacturing/electrical-engineer"},
-    {"order": 2, "roleId": "perception-engineer", "status": "queued"},
+    {"order": 1, "roleId": "electrical-engineer", "status": "deployed", "path": "/career-paths/hardware-manufacturing/electrical-engineer"},
+    {"order": 2, "roleId": "perception-engineer", "status": "approved-for-release"},
     {"order": 3, "roleId": "robotics-data-engineer", "status": "queued"},
     {"order": 4, "roleId": "field-service-engineer", "status": "queued"},
     {"order": 5, "roleId": "embedded-software-engineer", "status": "queued"},
