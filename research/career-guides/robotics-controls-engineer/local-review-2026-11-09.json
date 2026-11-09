@@ -1,9 +1,9 @@
 {
-  "status": "approved-for-release",
+  "status": "deployed",
   "reviewedAt": "2026-11-09",
   "guidePath": "/career-paths/intelligence-autonomy/robotics-controls-engineer",
   "url": "http://127.0.0.1:3037/career-paths/intelligence-autonomy/robotics-controls-engineer",
-  "publication": "User approved publication on November 9, 2026.",
+  "publication": "Published with user approval on November 9, 2026.",
   "precedingRelease": {
     "guide": "embedded-software-engineer",
     "commit": "ecaf8f9273a667a344ed902d5ed298a81670f459",
@@ -69,5 +69,7 @@
     "narrowMobile": "/tmp/black-scarab-controls-narrow-mobile.png"
   },
   "editorialRevision": "research/career-guides/robotics-controls-engineer/editorial-revision-2026-11-09.json",
-  "sectionCount": 8
+  "sectionCount": 8,
+  "deploymentCommit": "19b73778eb5baa5576b3cdc76e5a658fa28a15e7",
+  "liveUrl": "https://www.blackscarab.ai/career-paths/intelligence-autonomy/robotics-controls-engineer"
 }

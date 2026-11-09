@@ -1,6 +1,6 @@
 # Career guide progress
 
-Updated November 9, 2026. Ten of twenty approved for publication. Robotics Controls Engineer is approved for release; ten guides remain.
+Updated November 9, 2026. Eleven of twenty approved for publication. Machine Learning Infrastructure Engineer is approved for release; nine guides remain.
 
 - ~~Mechanical Engineer~~
 - ~~Robot Learning Engineer~~
@@ -12,7 +12,7 @@ Updated November 9, 2026. Ten of twenty approved for publication. Robotics Contr
 - ~~Field Service Engineer~~
 - ~~Embedded Software Engineer~~
 - ~~Robotics Controls Engineer~~
-- Machine Learning Infrastructure Engineer
+- ~~Machine Learning Infrastructure Engineer~~
 - Industrial Automation Engineer
 - Manufacturing Engineer
 - Motion Planning Engineer

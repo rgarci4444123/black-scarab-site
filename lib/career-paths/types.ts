@@ -49,7 +49,7 @@ export type CareerGuideBlock =
   | { type: 'paragraph'; text: string }
   | { type: 'heading'; text: string }
   | { type: 'list'; items: string[]; ordered?: boolean }
-  | { type: 'table'; caption: string; columns: string[]; rows: string[][] }
+  | { type: 'table'; caption: string; columns: string[]; rows: string[][]; variant?: 'numeric' }
   | { type: 'figure'; src: string; alt: string; caption: string; width: number; height: number; fullSizeHref?: string }
   | { type: 'control-response'; id: string; title: string; durationSeconds: number; naturalFrequencyRadPerSec: number; curves: { label: string; dampingRatio: number }[]; note: string }
   | { type: 'timing-budget'; id: string; title: string; deadlineMs: number; scaleMs: number; rows: { label: string; segments: { label: string; kind: 'read' | 'process' | 'send' | 'wait'; durationMs: number }[] }[]; note: string }

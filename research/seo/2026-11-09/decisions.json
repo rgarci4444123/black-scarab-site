@@ -91,6 +91,21 @@
         "controls engineer vs motion planning"
       ],
       "rationale": "Use the established controls profession. Explain physical feedback, modeling, tracking and hardware validation while distinguishing motion planning, generic embedded software and PLC automation."
+    },
+    {
+      "occupationId": "machine-learning-infrastructure-engineer",
+      "h1": "How to Become a Machine Learning Infrastructure Engineer in Robotics",
+      "seoTitle": "ML Infrastructure Engineer: Salary, Skills & Robotics Guide",
+      "description": "Explore ML infrastructure careers in robotics: training systems, distributed computing, employer qualifications, salary research and a reproducible training project.",
+      "path": "/career-paths/platforms-simulation/machine-learning-infrastructure-engineer",
+      "primaryQuery": "machine learning infrastructure engineer robotics",
+      "supportingTopics": [
+        "ML infrastructure engineer salary",
+        "robotics ML platform engineer",
+        "training systems engineer skills",
+        "ML infrastructure career path"
+      ],
+      "rationale": "Use the recognized infrastructure profession and clarify the robotics application in metadata and the deck. Cover reliable training, evaluation, performance and model delivery while distinguishing model research, robot-data supply, generic API products and onboard middleware."
     }
   ]
 }

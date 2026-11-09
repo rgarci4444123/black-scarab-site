@@ -13,7 +13,7 @@ function GuideBlock({block}:{block:CareerGuideBlock}) {
       ? <ol>{block.items.map(item=><li key={item}>{item}</li>)}</ol>
       : <ul>{block.items.map(item=><li key={item}>{item}</li>)}</ul>;
     case 'table': return <div className="profession-table-wrap" role="region" aria-label={block.caption} tabIndex={0}>
-      <table className="profession-evidence-table"><caption>{block.caption}</caption><thead><tr>{block.columns.map(column=><th scope="col" key={column}>{column}</th>)}</tr></thead>
+      <table className={`profession-evidence-table${block.variant==='numeric'?' profession-numeric-table':''}`}><caption>{block.caption}</caption><thead><tr>{block.columns.map(column=><th scope="col" key={column}>{column}</th>)}</tr></thead>
         <tbody>{block.rows.map((row,index)=><tr key={index}>{row.map((cell,column)=>column===0?<th scope="row" key={column}>{cell}</th>:<td key={column}>{block.columns.length>2?<span className="profession-mobile-column" aria-hidden="true">{block.columns[column]}</span>:null}{cell}</td>)}</tr>)}</tbody>
       </table>
     </div>;

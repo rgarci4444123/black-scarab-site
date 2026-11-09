@@ -232,3 +232,15 @@
 .career-section.profession-guide .profession-control-x{display:flex;justify-content:space-between;margin:12px 0 0 38px;font-size:13px;color:#5f5f66;font-variant-numeric:tabular-nums}
 .career-section.profession-guide .profession-control-response .profession-control-time{margin:7px 0 22px 38px;text-align:center;font-size:13px;color:#5f5f66;line-height:1.4}
 @media(max-width:600px){.career-section.profession-guide .profession-control-response{margin:32px 0;padding-top:23px}.career-section.profession-guide .profession-control-response figcaption{font-size:20px}.career-section.profession-guide .profession-control-plot{height:220px}.career-section.profession-guide .profession-control-response .profession-control-legend{gap:10px 16px;font-size:13px}}
+.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table{display:table;table-layout:fixed;width:100%;min-width:0;font-variant-numeric:tabular-nums}
+.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table caption{display:table-caption;text-align:left;font-size:13px}
+.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table thead{display:table-header-group;position:static;width:auto;height:auto;overflow:visible;clip-path:none}
+.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table tbody{display:table-row-group}
+.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table tr{display:table-row;padding:0}
+.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table tbody tr{border:0}
+.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table th,.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table td{display:table-cell;text-align:right;padding:17px 12px;font-size:17px;line-height:1.5;min-width:0;border-bottom:1px solid #e2e2e5}
+.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table thead th{font-size:12px;font-weight:500;vertical-align:bottom}
+.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table tr>:first-child{width:18%;text-align:left;padding-left:0}
+.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table tbody td:last-child{color:#5f64b1;font-weight:600}
+.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table .profession-mobile-column{display:none}
+@media(max-width:550px){.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table th,.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table td{padding:13px 5px;font-size:15px}.career-section.profession-guide .profession-table-wrap .profession-evidence-table.profession-numeric-table thead th{font-size:11px}}

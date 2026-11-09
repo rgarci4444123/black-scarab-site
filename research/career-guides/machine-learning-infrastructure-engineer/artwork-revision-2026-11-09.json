@@ -1,0 +1,61 @@
+{
+  "revisedAt": "2026-11-09",
+  "feedback": "Previous cover looked like a product listed for sale rather than an enticing editorial image.",
+  "mode": "new image generation",
+  "tool": "built-in image_gen",
+  "asset": "public/career-paths/ml-infrastructure-engineer-lab-v2.webp",
+  "source": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-ba4f581e-667c-4b0d-8d4f-b547564238d5.png",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "prompt": "Use case: illustration-story. Asset: Black Scarab career guide editorial hero, cinematic wide 16:9 landscape. Visual thesis: one engineer makes a vast computational effort serve intelligent robots. Create a striking, sophisticated near-future cinematic editorial scene with dramatic architectural scale and emotional curiosity. Camera very low and wide behind a small anonymous engineer seen from the back, standing on an elevated narrow bridge in the lower-left foreground. The person wears understated dark technical clothing, face and gender not identifiable, no screen in front of them. Ahead and below, immense graphite compute columns rise through a deep cathedral-like atrium in layered perspective, with convincing hardware detail mostly lost in elegant shadow, a monumental sense of depth and height. A single disciplined amber-lit service and data spine leads the eye through the space toward a distant glass robotics test bay, where a few pale articulated robots are just visible working with objects. The human is small relative to the architecture; the primary subject is the scale of the training systems and the connection to physical machines. Off-center composition, strong diagonal leading lines, atmospheric silver backlight, subtle reflections and a little haze, rich chiaroscuro with readable detail. Professional engineering publication quality, cinematic realism and imaginative editorial interpretation, not a stock server-room photograph. Palette about 80–90 percent true charcoal, black, silver, white and gray; 10–20 percent deliberate vivid amber light and small amber hardware accents, no overall orange wash. Clear at thumbnail size, one dominant visual idea. No text, numbers, labels, logos, screens with dashboards, diagrams, floating UI panels, holographic network graphs or watermark. Do not create an isolated product, tabletop miniature, isometric cutaway, ecommerce packshot, white seamless backdrop or centered rack inventory. Entirely original conceptual editorial illustration, not an official facility or product photograph.",
+  "brief": {
+    "storyThesis": "ML infrastructure makes large-scale robot learning reliable and usable.",
+    "visualThesis": "One engineer makes a vast computational effort serve intelligent robots.",
+    "medium": "Cinematic editorial realism",
+    "subjectAndScale": "Architectural compute landscape, with a small human figure and a distant robotics test bay",
+    "viewpoint": "Low, wide, behind the engineer",
+    "composition": "Asymmetric foreground silhouette and diagonal amber connection into deep space",
+    "palette": "Predominantly black, white and gray with deliberate amber accents",
+    "lighting": "Silver architectural backlight, deep shadows and atmospheric depth",
+    "surface": "Graphite metal, glass, grating and subtle reflections",
+    "crop": "Full 16:9 frame in the guide; keep the figure and distant test bay visible on mobile",
+    "avoided": [
+      "white-backdrop product render",
+      "isometric miniature",
+      "isolated cabinet inventory",
+      "engineer at a monitor",
+      "floating UI",
+      "text and logos"
+    ]
+  },
+  "recentCoversReviewed": [
+    {
+      "guide": "Robotics Controls Engineer",
+      "fingerprint": "Photoreal robot on tilt platform; machine scale; close oblique view; gray with violet accents; clean studio light."
+    },
+    {
+      "guide": "Embedded Software Engineer",
+      "fingerprint": "Macro opened robot forearm; component scale; diagonal close view; white/graphite with lime details; diffuse light."
+    },
+    {
+      "guide": "Field Service Engineer",
+      "fingerprint": "Helmeted technician repairing a wheeled robot; medium close industrial scene; eye-level side view; graphite and amber."
+    },
+    {
+      "guide": "Robotics Data Engineer",
+      "fingerprint": "Diagrammatic recording chamber with robot and data panels; workcell scale; elevated oblique view; graphite/cyan."
+    },
+    {
+      "guide": "Perception Engineer",
+      "fingerprint": "Engineer at a monitor beside robot arm; close workbench scene; over-shoulder view; bright daylight and full color."
+    },
+    {
+      "guide": "Electrical Engineer",
+      "fingerprint": "Engineer testing circuit board; close workbench scene; shoulder-height oblique view; blue and warm lighting."
+    }
+  ],
+  "recipeChanges": "Architectural scale, deep asymmetric composition and low viewpoint replace the prior product miniature. Narrative, subject scale and lighting distinguish it from the six reviewed covers.",
+  "interpretation": "Conceptual editorial illustration; not an official facility or disclosed technical design."
+}

@@ -41,13 +41,14 @@
     {
       "order": 6,
       "roleId": "robotics-controls-engineer",
-      "status": "approved-for-release",
+      "status": "deployed",
       "path": "/career-paths/intelligence-autonomy/robotics-controls-engineer"
     },
     {
       "order": 7,
       "roleId": "machine-learning-infrastructure-engineer",
-      "status": "queued"
+      "status": "approved-for-release",
+      "path": "/career-paths/platforms-simulation/machine-learning-infrastructure-engineer"
     },
     {
       "order": 8,

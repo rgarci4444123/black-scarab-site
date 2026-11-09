@@ -1,0 +1,29 @@
+{
+  "kind": "illustrative-model",
+  "baselineMinutes": 60,
+  "nonParallelFraction": 0.1,
+  "formula": "elapsed = baseline * (nonParallelFraction + (1 - nonParallelFraction) / gpus); allocatedGpuMinutes = gpus * elapsed",
+  "assumptions": "Fixed work; remaining fraction scales perfectly; all GPUs reserved for full elapsed run; no extra communication, queueing, memory or storage overhead.",
+  "rows": [
+    {
+      "gpus": 1,
+      "elapsedMinutes": 60.0,
+      "allocatedGpuMinutes": 60.0
+    },
+    {
+      "gpus": 2,
+      "elapsedMinutes": 33.0,
+      "allocatedGpuMinutes": 66.0
+    },
+    {
+      "gpus": 4,
+      "elapsedMinutes": 19.5,
+      "allocatedGpuMinutes": 78.0
+    },
+    {
+      "gpus": 8,
+      "elapsedMinutes": 12.75,
+      "allocatedGpuMinutes": 102.0
+    }
+  ]
+}

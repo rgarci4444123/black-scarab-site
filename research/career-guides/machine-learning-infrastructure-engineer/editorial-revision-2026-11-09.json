@@ -1,0 +1,29 @@
+{
+  "revisedAt": "2026-11-09",
+  "status": "complete-copy-applied",
+  "source": "User-supplied editorial revision",
+  "sourcePath": "/Users/rodolfogarcia/.codex/attachments/b1c2c8d6-d193-47a5-8afc-5da1ec86b571/Pasted text.txt",
+  "sourceSha256": "c04ac798eb92a083b0dabc473a058d36310706bee64d17dd6f6d1e9744a6db5e",
+  "headline": "How to Become a Machine Learning Infrastructure Engineer in Robotics",
+  "sectionCount": 8,
+  "preserved": [
+    "Existing URL and SEO title",
+    "253000 USD compensation estimate, derivation and original source provenance",
+    "Numerical scaling model, values and responsive table variant",
+    "Complete collapsed research methodology and references"
+  ],
+  "presentation": [
+    "Apply supplied deck, overview and full eight-section rewrite.",
+    "Keep numeric scaling columns and units while generating values from the existing model export.",
+    "Consolidate salary heading and qualification into a precise table label and methodology."
+  ],
+  "sourceCorrections": [
+    "Use Annual salary rather than base salary because structured fields do not consistently identify base pay.",
+    "Do not infer compensation premiums or career-entry frequencies from the purposive sample.",
+    "Use Not necessarily rather than Not usually for the graduate-degree answer.",
+    "Label GPU utilization as the activity reported by monitoring tools rather than a specific hardware occupancy metric."
+  ],
+  "addedReference": "Google Cloud official MLOps lifecycle documentation",
+  "portfolio": "Expanded seven-step training, experiment tracking, checkpoint recovery, profiling and reproducibility exercise.",
+  "artwork": "Replacing product-style cutaway with cinematic editorial cover; user review pending."
+}

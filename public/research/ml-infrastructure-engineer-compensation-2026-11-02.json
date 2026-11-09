@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "derivedAt": "2026-11-09",
+  "roleId": "machine-learning-infrastructure-engineer",
+  "sourceAggregate": "/research/physical-ai-careers-2026-11-02.json",
+  "sourceAggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "label": "Black Scarab estimated compensation",
+  "currency": "USD",
+  "period": "year",
+  "basis": "advertised annual salary, excluding bonus and equity",
+  "postingCount": 8,
+  "employerCount": 5,
+  "exactMedianMidpoint": 252500.0,
+  "estimate": 253000,
+  "rounding": "nearest 1000 USD, halves rounded upward",
+  "method": "Median of one annual range midpoint per distinct eligible requisition.",
+  "eligibility": "U.S. roles building or optimizing robot/autonomy training, evaluation, model-delivery or ML inference infrastructure, with complete annual USD ranges and reviewed duties.",
+  "limitations": "Small purposive, experienced-role sample concentrated in California; four of eight observations are Zoox requisitions. Senior/staff technical roles included; no salary ladder inferred. Not an entry-level estimate or representative market median. Structured salary fields do not consistently identify base pay.",
+  "observations": [
+    {
+      "id": "applied-intuition:ashby:091ed808-95c9-420b-8061-0ff2eb9342bc",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Research Engineer - AI/RL Infrastructure",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/091ed808-95c9-420b-8061-0ff2eb9342bc",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "28446b6cb65cc6bd36747494ada8cbdb55e340b5e91b6ec81d9a515d11c2b53f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 126000,
+      "maximum": 423000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 274500.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Physical-AI research infrastructure, distributed training, evaluation and multimodal data pipelines."
+    },
+    {
+      "id": "nimble:greenhouse:4373712009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "Senior/Staff Software Engineer, Infrastructure (ML)",
+      "locations": [
+        "San Francisco, CA",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4373712009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "a919457f7bde092e671ab9e7fb860b49d6170c4654f1905b55e5e1c510fd175e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "minimum": 210000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual salary; base pay where expressly stated",
+      "extraction": "full-source-text",
+      "sourceClause": "The pay range for this position at the start of employment is expected to be between $210,000 and $300,000/year. Your exact offer may vary depending on multiple individualized factors, including job-related knowledge, skills, and experience. In addition to cash compensation, this position will also receive generous equity for this position.",
+      "sourceSpan": {
+        "start": 4933,
+        "end": 5275
+      },
+      "midpoint": 255000.0,
+      "seniority": "staff-principal",
+      "scope": "Robot training/inference infrastructure, GPU performance, reproducibility, scheduling and data ingestion."
+    },
+    {
+      "id": "rhoda:ashby:643d697d-45c4-4505-8967-433df7873134",
+      "employerId": "rhoda",
+      "employer": "Rhoda AI",
+      "title": "Research Member of Technical Staff- Training Systems",
+      "locations": [
+        "Mountain View"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/rhoda-ai/643d697d-45c4-4505-8967-433df7873134",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "533222417ea35355e89f242c8fb6b608848fb606114fb5cb6a135b16aedc8fa2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/rhoda.json",
+      "rawSourceFileSha256": "57292cd4a63e78bba309cca3f2dd2b54a447c617ae01fb0a2d48033f76eb01bc",
+      "minimum": 200000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 250000.0,
+      "seniority": "staff-principal",
+      "scope": "Hands-on multimodal training systems performance, communication, memory and scaling analysis."
+    },
+    {
+      "id": "skydio:ashby:b6be08f7-89c0-48dd-b427-f587f23dbf34",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Autonomy Engineer - ML & DL Infrastructure",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/b6be08f7-89c0-48dd-b427-f587f23dbf34",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "c1307e2fe9777799efe00604372d5c637bf1326bbab004fff03d7d571eba8c89",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "minimum": 170000,
+      "maximum": 277500,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual salary; base pay where expressly stated",
+      "extraction": "full-source-text",
+      "sourceClause": "Compensation: At Skydio, our compensation packages for regular, full-time employees include competitive base salaries, equity in the form of stock options, and comprehensive benefits packages. Compensation will vary based on factors, including skill level, proficiencies, transferable knowledge, and experience. Relocation assistance may also be provided for eligible roles. The annual base salary range for this position is $170,000 - $277,500*. Fundamentally, we believe that equity is the key to long-term financial growth, and we ensure all regular, full-time employees have the opportunity to significantly benefit from the company's success. Regular, full-time employees are eligible to enroll in the Company’s group health insurance plans. Regular, full-time employees are eligible to receive the following benefits: Paid vacation time, sick leave, holiday pay and 401K savings plan. This position and all associated benefits are subject to applicable federal, state, and local laws, as well as the Company’s policies and eligibility criteria.",
+      "sourceSpan": {
+        "start": 3171,
+        "end": 4221
+      },
+      "midpoint": 223750.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Drone ML lifecycle: data workflows, training, model delivery and monitoring."
+    },
+    {
+      "id": "zoox:lever:2ae1f38f-1b7e-4ec1-8a20-cc3816f96878",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Senior/Staff Software Engineer, ML Training Optimization",
+      "locations": [
+        "Foster City, CA",
+        "Seattle, WA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/2ae1f38f-1b7e-4ec1-8a20-cc3816f96878",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "68a41195cf8e4d381553fcf73561b0c6b37267bf2581a1aa97811ef976d1159c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 254000,
+      "maximum": 350000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 302000.0,
+      "seniority": "staff-principal",
+      "scope": "Senior/staff technical ownership of training optimization and custom kernels, alongside roadmap and mentoring."
+    },
+    {
+      "id": "zoox:lever:2ed8a665-cee8-4d70-bcb1-e96b6214b371",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Senior/Staff Software Engineer, ML Inference Optimization",
+      "locations": [
+        "Foster City, CA",
+        "Seattle, WA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/2ed8a665-cee8-4d70-bcb1-e96b6214b371",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "0901a240c2e6f1184750db2fbdca789019292c6ac1434eacd9d439e21d0e0ac2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 254000,
+      "maximum": 350000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 302000.0,
+      "seniority": "staff-principal",
+      "scope": "Senior/staff inference optimization with technical leadership. No explicit direct-report or hiring responsibility stated."
+    },
+    {
+      "id": "zoox:lever:91ff6263-49fb-421e-860f-36e7b9bae784",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Software Engineer, ML Training Optimization",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/91ff6263-49fb-421e-860f-36e7b9bae784",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "e579aaedde15947b82d54f5e2c7780c0ed9dceb30298ec7db3f1b4c3391cee18",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 177000,
+      "maximum": 270000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 223500.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "ML training optimization, distributed execution, profiling and performance benchmarks."
+    },
+    {
+      "id": "zoox:lever:bc11276c-8db7-426e-9d00-d41c2097723a",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Software Engineer, ML Inference Optimization",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/bc11276c-8db7-426e-9d00-d41c2097723a",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "9ed15fafed0a0c8a0ab75fcc4b3a2a9e14886eff820b2fa5a0d19c0a99cd14f8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 177000,
+      "maximum": 270000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 223500.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "ML inference and training performance optimization for autonomous vehicles."
+    }
+  ],
+  "excludedObservations": [
+    {
+      "id": "agility:greenhouse:6148969004",
+      "employerId": "agility",
+      "employer": "Agility Robotics",
+      "title": "Senior Software Engineer, AI/ML Platform",
+      "locations": [
+        "Remote",
+        "Remote, Oregon, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=6148969004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "d7f3829ce2350282d2014b771e963761ff61e99398ff4938611d7cd4aa3afd22",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agility.json",
+      "rawSourceFileSha256": "ac356350940b45d164fbf75881d9254f4c3aadaa5e83e8f798a621610cb7c731",
+      "reason": "No complete annual USD range verified in official structure or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "anduril:greenhouse:5212860007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Staff AI Infrastructure Engineer",
+      "locations": [
+        "Boston, Massachusetts, United States",
+        "Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5212860007?gh_jid=5212860007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "849d7f58b83df7b6da27eb0f364dc71b3d1c7a2720cd3971c9ec66683b2d9a81",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified in official structure or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "apptronik:greenhouse:6176116004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Senior Software Engineer, ML Infrastructure",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6176116004?gh_jid=6176116004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "654acc00f60725cdb74838f3f44541986f44bfacd061a386363c3b31c16c4718",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reason": "No complete annual USD range verified in official structure or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "fieldai:lever:67623c6f-2bd1-4149-a880-44563a2326dd",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Senior Machine Learning Platform Engineer",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/67623c6f-2bd1-4149-a880-44563a2326dd",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "995de9d6bb4e4fe9dbe282f6c08f47bb20f5d3eef88fbe6249e74d9edbf58707",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reason": "No complete annual USD range verified in official structure or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "gatik:greenhouse:4664442006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior AI Infrastructure Engineer",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4664442006?gh_jid=4664442006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "c97d0cb81d5885bbd44a0ef60b6375c4433d3a2e396fad6d0248d47bc711af83",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "No complete annual USD range verified in official structure or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "gritt:ashby:f3b0809e-31ae-4b2e-a027-907c7cdb2e2d",
+      "employerId": "gritt",
+      "employer": "Gritt",
+      "title": "ML Infrastructure Engineer",
+      "locations": [
+        "South San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/gritt/f3b0809e-31ae-4b2e-a027-907c7cdb2e2d",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "009b3994dac57e130387524a418a08a6595f58cf31bb56a086d3318cce01e64a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gritt.json",
+      "rawSourceFileSha256": "20a567222b34d9a1d87ce7926914d9639eeb0e48f6b65ed844f4e8c2bcd14548",
+      "reason": "No complete annual USD range verified in official structure or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "may-mobility:greenhouse:8580411002",
+      "employerId": "may-mobility",
+      "employer": "May Mobility",
+      "title": "Machine Learning Engineer II - Autonomous Driving Training Infrastructure",
+      "locations": [
+        "Ann Arbor, Michigan, United States",
+        "USA - Remote"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/maymobility/jobs/8580411002",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "cb80a901ec908de4381102c92ed15f1d3565fc7f54f2c4932ab4a75833b30793",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/may-mobility.json",
+      "rawSourceFileSha256": "2ab98698904ead284505b1b3b2ea0b4d87534f0c3ee604fa3c2fe30e5a67461b",
+      "reason": "No complete annual USD range verified in official structure or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "nuro:greenhouse:6916236",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Software Engineer, ML Infrastructure, Optimization",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=6916236",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "de4bceae474d3c97bd2771a3e80d43549d8205bf662193bd37a219d83d974179",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "No complete annual USD range verified in official structure or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "nuro:greenhouse:7351066",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Software Engineer, AI Platform - New Grad",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=7351066",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "0b0059f5db0de773882b9cf9a0c371b3cb7eb08e66cefb9295396ac7dfbc68ae",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "Multi-team new-graduate software advertisement; no dedicated ML infrastructure placement or verified annual salary period."
+    },
+    {
+      "id": "nvidia:workday:JR1992361",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior Research Engineer, Foundation Model Training Infrastructure",
+      "locations": [
+        "US, CA, Santa Clara"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Research-Engineer--Foundation-Model-Training-Infrastructure_JR1992361",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "a509eb896396c902d788837fa52f810e89d04ead3321654f3e2b75ff48e70272",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "No complete annual USD range verified in official structure or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "physical-intelligence:ashby:14586c10-d913-43c5-8f7c-c77b5c438e4c",
+      "employerId": "physical-intelligence",
+      "employer": "Physical Intelligence",
+      "title": "ML Engineer, Platform",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/physicalintelligence/14586c10-d913-43c5-8f7c-c77b5c438e4c",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "18899004f97d82f14c35bd4b2d149e52bcfc62ef20f79cd04c5de268c97a8269",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/physical-intelligence.json",
+      "rawSourceFileSha256": "4636b655b7fab48b151da10f872a9268960654cc165ce7e06a60e83e91cc5c99",
+      "reason": "Body describes an external API Product Engineer and expressly distinguishes it from traditional ML training infrastructure."
+    },
+    {
+      "id": "physical-intelligence:ashby:1f6cf3eb-f70f-480b-9fff-befd56c7fd07",
+      "employerId": "physical-intelligence",
+      "employer": "Physical Intelligence",
+      "title": "ML Infra Engineer, Data Systems",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/physicalintelligence/1f6cf3eb-f70f-480b-9fff-befd56c7fd07",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "4e3098dc505ddc6e62f9c36870e333d55e13215baddfe8076af4d95492689109",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/physical-intelligence.json",
+      "rawSourceFileSha256": "4636b655b7fab48b151da10f872a9268960654cc165ce7e06a60e83e91cc5c99",
+      "reason": "No complete annual USD range verified in official structure or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "skild:greenhouse:4136356008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Software Engineer, AI Training and Infrastructure",
+      "locations": [
+        "Bengaluru, Karnataka, India",
+        "Pittsburgh, San Mateo, Bengaluru",
+        "San Mateo, CA"
+      ],
+      "countries": [
+        "India",
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/4136356008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "a32148ce52d0b9cd6bf59d91efe48815ed3ddfdf9ade4548573a54593db6e6b0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "skydio:ashby:7a611e90-4034-4e35-acce-388f48f7d3c0",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Autonomy Engineer - ML & DL Infrastructure",
+      "locations": [
+        "Zurich, Switzerland"
+      ],
+      "countries": [
+        "Switzerland"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/7a611e90-4034-4e35-acce-388f48f7d3c0",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "8dd134b4afd89837c5e5e2ef45a09c9e35ee3b1854898dce9b31ef3dfc931f8e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "waymo:greenhouse:7429718",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Staff Machine Learning Engineer, Infrastructure",
+      "locations": [
+        "Mountain View, CA, USA; San Francisco, CA, USA",
+        "Mountain View, California, United States",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429718",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "df51714b2386fa178925f695ec88e1fc788bab0e8a9be1bb1fbf4c20f34eb8a6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "No complete annual USD range verified in official structure or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "zipline:greenhouse:7989516003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "ML Infrastructure Engineer",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7989516003?gh_jid=7989516003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "973327175e2bd4a5a6ad31cff2cacaaf9851f96fdcaa07b06ffae2b10b06f9c9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No complete annual USD range verified in official structure or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    }
+  ]
+}
