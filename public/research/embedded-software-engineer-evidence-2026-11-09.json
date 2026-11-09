@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "reviewedAt": "2026-11-09",
+  "aggregatePath": "/research/physical-ai-careers-2026-11-02.json",
+  "aggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "rawArchive": {
+    "relativeRoot": "research/physical-ai/2026-11-02",
+    "normalizedRecords": "postings.jsonl",
+    "manifestHash": "6b48026839dcafc9d68144cf3fbedf38889984ad96f667a21e058b4d25f26f14"
+  },
+  "interpretation": "Contextual guide review layer; original dated research remains unchanged.",
+  "roles": {
+    "embedded-software-engineer": {
+      "recordIds": [
+        "applied-intuition:ashby:6971d533-1536-448b-96b8-544ad5383f44",
+        "apptronik:greenhouse:6107174004",
+        "apptronik:greenhouse:6216214004",
+        "gram:greenhouse:4364454009",
+        "fieldai:lever:7a0d12c7-957b-42f6-a9c9-9605fab6d2a4",
+        "zoox:lever:46c23963-2be1-4037-8f1a-ce87bdccde6d",
+        "sunday:ashby:788d2c63-f5b7-447e-9d4d-7ab1a92e10f1",
+        "skydio:ashby:d415cf2b-616c-459e-9c5f-58a1b2c4a1bb",
+        "boston-dynamics:workday:R2655",
+        "rhoda:ashby:9372a5ff-6b6d-4e02-900a-939beb901110"
+      ],
+      "auditPath": "research/career-guides/embedded-software-engineer/evidence-audit.json",
+      "compensation": [
+        {
+          "employer": "Applied Intuition",
+          "title": "Embedded Software Engineer - New Grad (2027)",
+          "url": "https://jobs.ashbyhq.com/applied/6971d533-1536-448b-96b8-544ad5383f44",
+          "minimum": 123000,
+          "maximum": 168000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "recordId": "applied-intuition:ashby:6971d533-1536-448b-96b8-544ad5383f44",
+          "location": "Sunnyvale, CA"
+        },
+        {
+          "employer": "GRAM",
+          "title": "Senior Embedded Software Engineer",
+          "url": "https://job-boards.greenhouse.io/gram/jobs/4364454009",
+          "minimum": 165000,
+          "maximum": 205000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised annual salary; base pay where expressly stated",
+          "recordId": "gram:greenhouse:4364454009",
+          "location": "San Francisco Bay Area, CA"
+        },
+        {
+          "employer": "Sunday Robotics",
+          "title": "Embedded Software Engineer",
+          "url": "https://jobs.ashbyhq.com/sunday/788d2c63-f5b7-447e-9d4d-7ab1a92e10f1",
+          "minimum": 200000,
+          "maximum": 300000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "recordId": "sunday:ashby:788d2c63-f5b7-447e-9d4d-7ab1a92e10f1",
+          "location": "Redwood City, CA"
+        }
+      ],
+      "skillPresentation": "qualitative-source-comparison",
+      "scopeNote": "Broad cohort includes systems integration, infotainment and firmware testing. Do not present raw mentions as clean firmware-development prevalence or opening totals."
+    }
+  },
+  "records": [
+    {
+      "id": "applied-intuition:ashby:6971d533-1536-448b-96b8-544ad5383f44",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Embedded Software Engineer - New Grad (2027)",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/6971d533-1536-448b-96b8-544ad5383f44",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "e749df1c87e5e24d3f99ef1b74eaad87c0257bca209193ce7a09f5178894dd12",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "New-graduate production C/C++, RTOS applications, board bring-up and low-level communications.",
+      "qualification": "BS/BA, MS, or PhD in Computer Engineering, Computer Science, or related degree graduating by December 2026 or Summer 2027",
+      "qualificationSpans": [
+        {
+          "text": "BS/BA, MS, or PhD in Computer Engineering, Computer Science, or related degree graduating by December 2026 or Summer 2027",
+          "start": 2286,
+          "end": 2407
+        }
+      ]
+    },
+    {
+      "id": "apptronik:greenhouse:6107174004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Senior Firmware Engineer - Actuation",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6107174004?gh_jid=6107174004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "659e2e7be0750e99167609cd9031e94afe2ce16c71a6afdbeffb5a594283c495",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Humanoid actuator firmware, hard real-time motor control, fault detection and HIL/SIL.",
+      "qualification": "Bachelor's degree in Electrical Engineering, Computer Engineering, Mechanical Engineering, or equivalent practical experience; Master's degree with a focus on controls or motor drives is especially valued.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in Electrical Engineering, Computer Engineering, Mechanical Engineering, or equivalent practical experience; Master's degree with a focus on controls or motor drives is especially valued.",
+          "start": 3133,
+          "end": 3338
+        }
+      ]
+    },
+    {
+      "id": "apptronik:greenhouse:6216214004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Senior Embedded Linux Engineer",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6216214004?gh_jid=6216214004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "67e37065a7f12153075c7434002527b3f5d917304329e07407a5509f04bcc460",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robot compute BSP, boot chain, kernel/device-tree work, drivers and recoverable OS updates.",
+      "qualification": "Bachelor's degree in Electrical Engineering, Computer Engineering, Computer Science, or equivalent practical experience.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in Electrical Engineering, Computer Engineering, Computer Science, or equivalent practical experience.",
+          "start": 3022,
+          "end": 3142
+        }
+      ]
+    },
+    {
+      "id": "gram:greenhouse:4364454009",
+      "employerId": "gram",
+      "employer": "GRAM",
+      "title": "Senior Embedded Software Engineer",
+      "locations": [
+        "Palo Alto, California, United States",
+        "San Francisco Bay Area, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/gram/jobs/4364454009",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "dfa8baa46f5cf00fc3d153c7419f1b55ae16e43858f859b32e418bdd3d220966",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gram.json",
+      "rawSourceFileSha256": "706bd3d6bc62b71be02626b1dfae72b01f35c08b1f1831e36845fab26fff70b8",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "MCU and Linux runtime software, deterministic communication, timing, observability and fault recovery.",
+      "qualification": "Bachelor’s degree in computer science, computer engineering, electrical engineering, or a related field, or equivalent practical experience.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s degree in computer science, computer engineering, electrical engineering, or a related field, or equivalent practical experience.",
+          "start": 2037,
+          "end": 2177
+        }
+      ]
+    },
+    {
+      "id": "fieldai:lever:7a0d12c7-957b-42f6-a9c9-9605fab6d2a4",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Embedded Systems Engineer, Robotics Hardware",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/7a0d12c7-957b-42f6-a9c9-9605fab6d2a4",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "157ffa2a1a5d043a566944374202fad0c36bc746dae41e8571c3bc36fac581f0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Mixed embedded compute hardware/software role with firmware, Linux, drivers, sensor integration and field diagnostics.",
+      "qualification": "Education: B.S., M.S., or Ph.D. in Computer Engineering, Robotics, Electrical Engineering, or a related field.",
+      "qualificationSpans": [
+        {
+          "text": "Education: B.S., M.S., or Ph.D. in Computer Engineering, Robotics, Electrical Engineering, or a related field.",
+          "start": 3866,
+          "end": 3976
+        }
+      ]
+    },
+    {
+      "id": "zoox:lever:46c23963-2be1-4037-8f1a-ce87bdccde6d",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Embedded Software Engineer - Body Systems",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/46c23963-2be1-4037-8f1a-ce87bdccde6d",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "463bc439977873a8e308fd0ac5f41ef8442b2262160ea5c7ee25345bdc3f81e1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Production embedded vehicle body/thermal/lighting/closure software and sensor/actuator integration.",
+      "qualification": "Bachelor's or Master's degree in Electrical and Computer Engineering, Robotics, Computer Science or equivalent experience",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's or Master's degree in Electrical and Computer Engineering, Robotics, Computer Science or equivalent experience",
+          "start": 1403,
+          "end": 1524
+        }
+      ]
+    },
+    {
+      "id": "sunday:ashby:788d2c63-f5b7-447e-9d4d-7ab1a92e10f1",
+      "employerId": "sunday",
+      "employer": "Sunday Robotics",
+      "title": "Embedded Software Engineer",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/sunday/788d2c63-f5b7-447e-9d4d-7ab1a92e10f1",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "f79385a0d8f17de88337b35217687b66b2ff6d8b8b5d373fa94d4cca0a58f486",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/sunday.json",
+      "rawSourceFileSha256": "95e55ab1970ad63d47734109bd8e17d1fde8a0db3343230ed504995fa38261d2",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Embedded Linux bootloaders, BSPs, drivers, system images and OTA updates for home robots.",
+      "qualification": "BS or MS in CS, Computer Engineering, EE, related technical field, or equivalent practical experience",
+      "qualificationSpans": [
+        {
+          "text": "BS or MS in CS, Computer Engineering, EE, related technical field, or equivalent practical experience",
+          "start": 1594,
+          "end": 1695
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:d415cf2b-616c-459e-9c5f-58a1b2c4a1bb",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Software Engineer - Embedded",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/d415cf2b-616c-459e-9c5f-58a1b2c4a1bb",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "b28024a3cb281c338de6d8d1e02cfc54449725bc13a1003ae7ddfb4feeb9c570",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Bare-metal/RTOS microcontrollers, embedded Linux, sensors, board bring-up and real-time C++.",
+      "qualification": "Practical experience writing firmware/embedded code for a physical device",
+      "qualificationSpans": [
+        {
+          "text": "Practical experience writing firmware/embedded code for a physical device",
+          "start": 2048,
+          "end": 2121
+        }
+      ]
+    },
+    {
+      "id": "boston-dynamics:workday:R2655",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Senior Staff Firmware Engineer",
+      "locations": [
+        "Waltham, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-MA/Software-Engineer---Atlas_R2655",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "9b84fb2d0c848ce3408d1c10622dad52927b6fa6a7ab9d48f7508f1c15322b72",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Atlas firmware lifecycle, C/C++, microcontrollers, memory/state machines and debugging.",
+      "qualification": "Bachelor's degree in Computer Science, Computer Engineering, Electrical Engineering, or a related field.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in Computer Science, Computer Engineering, Electrical Engineering, or a related field.",
+          "start": 1222,
+          "end": 1326
+        }
+      ]
+    },
+    {
+      "id": "rhoda:ashby:9372a5ff-6b6d-4e02-900a-939beb901110",
+      "employerId": "rhoda",
+      "employer": "Rhoda AI",
+      "title": "Senior Firmware Engineer",
+      "locations": [
+        "Mountain View"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/rhoda-ai/9372a5ff-6b6d-4e02-900a-939beb901110",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "f283a5d28cbda5d0c0f3a14aa816c752233432d886dccb41803ce65e706126e4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/rhoda.json",
+      "rawSourceFileSha256": "57292cd4a63e78bba309cca3f2dd2b54a447c617ae01fb0a2d48033f76eb01bc",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source contextual review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Distributed real-time control firmware, EtherCAT synchronization, scheduling, diagnostics and regression testing.",
+      "qualification": "Bachelor's or higher in Electrical Engineering, Computer Engineering, or Robotics",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's or higher in Electrical Engineering, Computer Engineering, or Robotics",
+          "start": 2350,
+          "end": 2431
+        }
+      ]
+    }
+  ]
+}

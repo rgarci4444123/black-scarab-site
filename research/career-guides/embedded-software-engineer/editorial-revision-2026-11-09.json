@@ -1,0 +1,26 @@
+{
+  "revisedAt": "2026-11-09",
+  "source": "User-supplied editorial revision",
+  "sourceSha256": "81195b3fb2d067a0d80a7487d42b4ebff2dab17c473f848f958f42afffe56784",
+  "headline": "How to Become an Embedded Software Engineer in Robotics",
+  "sectionCount": 8,
+  "newFragment": "embedded-software-vs-other-roles",
+  "preserved": [
+    "Existing URL, SEO title and metadata",
+    "Hero illustration",
+    "205000 USD compensation derivation and original source provenance",
+    "Complete collapsed methodology and source references",
+    "Timing graphic with unchanged illustrative arithmetic"
+  ],
+  "presentation": [
+    "The timing graphic accompanies the slow-response scenario in the work section.",
+    "The supplied independent comparison with nearby careers becomes the eighth main section.",
+    "The repeated salary-table heading and caveat are consolidated into the caption and collapsed methodology."
+  ],
+  "sourceCorrections": [
+    "Keep annual advertised salary rather than base salary because the source fields do not consistently identify base pay.",
+    "Avoid inferring a compensation ladder from mixed employer advertisements.",
+    "Use the current canonical FreeRTOS books landing page resolved from the user-supplied URL."
+  ],
+  "portfolio": "Expanded timestamped sensor-interface exercise, a 20 ms illustrative sampling example and optional physical sensor/timing extension."
+}

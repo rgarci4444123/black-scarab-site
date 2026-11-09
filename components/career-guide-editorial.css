@@ -178,3 +178,38 @@
 @media(max-width:600px) {
   .career-section.profession-guide .profession-diagnostic-branches:has(>li:nth-child(4)) { grid-template-columns: minmax(0,1fr); }
 }
+
+/* The response timelines share one scale and one continuous deadline marker. */
+.career-section.profession-guide figure.profession-timing-budget { margin: 38px 0; padding: 30px 0; border-block: 1px solid var(--border); scroll-margin-top: 28px; }
+.career-section.profession-guide .profession-timing-budget figcaption { max-width: none; margin: 0 0 25px; font-size: 22px; font-weight: 600; line-height: 1.4; color: #1b1c1f; }
+.career-section.profession-guide .profession-timing-legend { display: flex; flex-wrap: wrap; gap: 12px 26px; list-style: none; padding: 0; margin: 0 0 30px; }
+.career-section.profession-guide .profession-timing-legend>li { display: flex; align-items: center; gap: 8px; padding: 0; margin: 0; font-size: 14px; line-height: 1.6; color: #414750; }
+.career-section.profession-guide .profession-timing-key { display: inline-block; width: 13px; height: 13px; border-radius: 3px; }
+.career-section.profession-guide .profession-timing-axis { position: relative; display: flex; justify-content: space-between; margin-bottom: 22px; font-size: 13px; line-height: 1.6; color: #62636a; font-variant-numeric: tabular-nums; }
+.career-section.profession-guide .profession-timing-deadline-label { position: absolute; transform: translateX(-100%); color: #454a88; font-size: 14px; font-weight: 600; white-space: nowrap; }
+.career-section.profession-guide .profession-timing-rows { position: relative; display: grid; gap: 32px; }
+.career-section.profession-guide .profession-timing-row { min-width: 0; }
+.career-section.profession-guide .profession-timing-row-label { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 16px; line-height: 1.5; color: #303840; font-variant-numeric: tabular-nums; }
+.career-section.profession-guide .profession-timing-row-label strong { font-weight: 550; }
+.career-section.profession-guide .profession-timing-total { white-space: nowrap; }
+.career-section.profession-guide .profession-timing-status { flex: 0 0 18px; }
+.career-section.profession-guide .profession-timing-status-on-time { color: #5f5f66; }
+.career-section.profession-guide .profession-timing-status-late { color: #5f5f66; }
+.career-section.profession-guide .profession-timing-track { position: relative; background: #f5f6f8; border-radius: 6px; }
+.career-section.profession-guide .profession-timing-track ol { display: flex; overflow: hidden; border-radius: 6px; list-style: none; padding: 0; margin: 0; height: 48px; }
+.career-section.profession-guide .profession-timing-track li { display: flex; flex: 0 0 auto; align-items: center; justify-content: center; box-sizing: border-box; border-right: 1px solid #fff; padding: 0; margin: 0; min-width: 0; font-size: 16px; font-weight: 550; font-variant-numeric: tabular-nums; }
+.career-section.profession-guide .profession-timing-budget .profession-timing-read { background: #5f64b1; color: #fff; }
+.career-section.profession-guide .profession-timing-budget .profession-timing-process { background: #9296c7; color: #202532; }
+.career-section.profession-guide .profession-timing-budget .profession-timing-send { background: #c5c8e2; color: #202532; }
+.career-section.profession-guide .profession-timing-budget .profession-timing-wait { background: #e2e2e5; color: #202532; }
+.career-section.profession-guide .profession-timing-deadline { position: absolute; z-index: 1; width: 2px; top: -6px; bottom: -10px; box-sizing: border-box; border-left: 2px dashed #5f64b1; transform: translateX(-50%); pointer-events: none; }
+.career-section.profession-guide .profession-timing-overrun { position: absolute; top: calc(100% + 6px); height: 5px; box-sizing: border-box; border: solid #5f64b1; border-width: 0 1px 2px; pointer-events: none; }
+.career-section.profession-guide .profession-timing-budget p.profession-timing-note { margin: 28px 0 0; font-size: 12px; line-height: 1.75; color: #5f5f66; }
+@media(max-width:550px) {
+  .career-section.profession-guide .profession-timing-budget figcaption { font-size: 20px; }
+  .career-section.profession-guide .profession-timing-row-label { font-size: 14px; gap: 8px; }
+  .career-section.profession-guide .profession-timing-track ol { height: 44px; }
+  .career-section.profession-guide .profession-timing-track li { font-size: 14px; }
+  .career-section.profession-guide .profession-timing-legend { gap: 11px 20px; }
+  .career-section.profession-guide .profession-timing-deadline-label { font-size: 13px; }
+}

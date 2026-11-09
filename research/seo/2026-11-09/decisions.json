@@ -61,6 +61,21 @@
         "maintenance to robotics career"
       ],
       "rationale": "Use the recognizable field-service title, clarify the robotics setting and cover hands-on system diagnosis. Distinguish service after deployment from cell integration and routine fleet operation."
+    },
+    {
+      "occupationId": "embedded-software-engineer",
+      "h1": "How to Become an Embedded Software Engineer in Robotics",
+      "seoTitle": "Embedded Software Engineer: Salary, Skills & Robotics Guide",
+      "description": "Explore robotics embedded software: C/C++, firmware, real-time systems, hardware debugging, employer qualifications, salary research and a sensor project.",
+      "path": "/career-paths/hardware-manufacturing/embedded-software-engineer",
+      "primaryQuery": "robotics embedded software engineer",
+      "supportingTopics": [
+        "robotics firmware engineer salary",
+        "embedded software robotics skills",
+        "embedded Linux robotics careers",
+        "how to become a robotics embedded engineer"
+      ],
+      "rationale": "Use the recognized embedded-software profession with explicit robotics context. Cover firmware, hardware interfaces and embedded OS ownership; distinguish it from circuit design, control theory and shared higher-level robot platform services."
     }
   ]
 }

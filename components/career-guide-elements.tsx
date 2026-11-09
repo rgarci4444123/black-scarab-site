@@ -49,3 +49,35 @@ export function CareerDiagnosticMap({block}:{block:DiagnosticMap}) {
     <p className="profession-diagnostic-conclusion">{block.conclusion}</p>
   </figure>;
 }
+
+type TimingBudget=Extract<CareerGuideBlock,{type:'timing-budget'}>;
+export function CareerTimingBudget({block}:{block:TimingBudget}) {
+  const legend=[...new Map(block.rows.flatMap(row=>row.segments).map(segment=>[segment.kind,segment])).values()];
+  const deadline=`${block.deadlineMs/block.scaleMs*100}%`;
+  return <figure id={block.id} className="profession-timing-budget" aria-labelledby={`${block.id}-title`}>
+    <figcaption id={`${block.id}-title`}>{block.title}</figcaption>
+    <ul className="profession-timing-legend" aria-label="Timeline stages">{legend.map(stage=><li key={stage.kind}><span className={`profession-timing-key profession-timing-${stage.kind}`} aria-hidden="true"/>{stage.label}</li>)}</ul>
+    <div className="profession-timing-axis"><span>0 ms</span><span className="profession-timing-deadline-label" style={{left:deadline}}>{block.deadlineMs} ms deadline</span><span>{block.scaleMs} ms</span></div>
+    <div className="profession-timing-rows">
+      <span className="profession-timing-deadline" style={{left:deadline}} aria-hidden="true"/>
+      {block.rows.map(row=>{
+        const total=row.segments.reduce((sum,segment)=>sum+segment.durationMs,0);
+        const delayed=total>block.deadlineMs;
+        return <div className="profession-timing-row" key={row.label}>
+          <div className="profession-timing-row-label" style={{maxWidth:`calc(${deadline} - 14px)`}}>
+            <svg className={`profession-timing-status ${delayed?'profession-timing-status-late':'profession-timing-status-on-time'}`} width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+              {delayed?<><path d="M10 2.5 18 17H2Z"/><path d="M10 7v4.5M10 14h.01"/></>:<><circle cx="10" cy="10" r="7.5"/><path d="m6.5 10 2.3 2.3 4.7-4.8"/></>}
+            </svg>
+            <strong>{row.label} · <span className="profession-timing-total">{total} ms</span></strong>
+            <span className="sr-only">{delayed?'Misses':'Meets'} the {block.deadlineMs} millisecond deadline.</span>
+          </div>
+          <div className="profession-timing-track">
+            <ol role="list" aria-label={`${row.label}: elapsed response time`}>{row.segments.map((segment,index)=><li key={index} className={`profession-timing-${segment.kind}`} style={{width:`${segment.durationMs/block.scaleMs*100}%`}} aria-label={`${segment.label}: ${segment.durationMs} milliseconds`}><span aria-hidden="true">{segment.durationMs}</span></li>)}</ol>
+            {delayed?<span className="profession-timing-overrun" style={{left:deadline,width:`${(total-block.deadlineMs)/block.scaleMs*100}%`}} aria-hidden="true"/>:null}
+          </div>
+        </div>;
+      })}
+    </div>
+    <p className="profession-timing-note">{block.note}</p>
+  </figure>;
+}

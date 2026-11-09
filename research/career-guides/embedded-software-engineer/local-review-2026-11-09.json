@@ -1,0 +1,62 @@
+{
+  "status": "approved-for-release",
+  "reviewedAt": "2026-11-09",
+  "guidePath": "/career-paths/hardware-manufacturing/embedded-software-engineer",
+  "url": "http://127.0.0.1:3033/career-paths/hardware-manufacturing/embedded-software-engineer",
+  "publication": "User approved publication on November 9, 2026.",
+  "research": {
+    "selectedFullSources": 10,
+    "broadCohort": 65,
+    "broadEmployers": 26,
+    "estimate": 205000,
+    "exactMedian": 205000,
+    "annualSalaryObservations": 26,
+    "salaryEmployers": 11,
+    "currency": "USD",
+    "period": "year"
+  },
+  "artwork": {
+    "asset": "public/career-paths/embedded-software-engineer-lab.webp",
+    "source": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-74fc9485-c4fe-494d-9f58-4b6b6dbd1116.png",
+    "tool": "built-in image_gen",
+    "prompt": "High-key macro editorial illustration of a partially opened robotic forearm and wrist. A mounted microcontroller board, debug connector and sensor wiring show the firmware-hardware boundary. Matte white, graphite and brushed metal dominate, with deliberate lime-green details. No human, text, logos, holograms, factory hall or monitor.",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "recentPatternsAvoided": [
+      "engineer at monitor",
+      "wide data chamber",
+      "helmeted warehouse-service composition"
+    ]
+  },
+  "inArticleVisual": {
+    "type": "elapsed-time comparison",
+    "id": "embedded-timing-budget",
+    "deadlineMs": 10,
+    "normalResponseMs": 6,
+    "responseWithWaitMs": 13,
+    "injectedWaitMs": 7,
+    "interpretation": "Illustrative arithmetic, not employer measurements or CPU utilization.",
+    "placement": "Slow-response scenario in the opening work section",
+    "palette": "Career Paths blue-violet #5f64b1 in tonal shades with neutral gray"
+  },
+  "validation": {
+    "careerTests": 21,
+    "selectedFullSourcesAudited": 83,
+    "rawSourcesAudited": 35,
+    "typecheck": "passed",
+    "scopedLint": "passed",
+    "nextBuild": "passed",
+    "desktop": "reviewed",
+    "mobile": "reviewed; chart and tables fit without horizontal page overflow",
+    "existingArticlePreviews": 175
+  },
+  "screenshots": {
+    "opening": "/tmp/black-scarab-embedded-revised-preview.png",
+    "timing": "/tmp/black-scarab-timeline-house-preview.png",
+    "mobile": "/tmp/black-scarab-timeline-house-mobile.png"
+  },
+  "editorialRevision": "research/career-guides/embedded-software-engineer/editorial-revision-2026-11-09.json",
+  "sectionCount": 8
+}

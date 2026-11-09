@@ -9,9 +9,9 @@ const snapshot=JSON.parse(fs.readFileSync('public/research/physical-ai-careers-2
 const guide=publishedCareerGuides[0];
 
 test('complete guides are navigable, with no draft or empty entries',()=>{
- assert.equal(publishedCareerGuides.length,8);
+ assert.equal(publishedCareerGuides.length,9);
  assert.equal(guidePath(guide),'/career-paths/hardware-manufacturing/mechanical-engineer');
- for(const role of occupations)assert.equal(Boolean(guideForOccupation(role.id)),['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer','field-service-engineer'].includes(role.id));
+ for(const role of occupations)assert.equal(Boolean(guideForOccupation(role.id)),['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer','field-service-engineer','embedded-software-engineer'].includes(role.id));
  assert.equal(isPublishedCareerGuide({...guide,status:'draft'}),false);
  assert.equal(isPublishedCareerGuide({...guide,sections:[]}),false);
  assert.equal(isPublishedCareerGuide({...guide,sections:[{id:'empty',heading:'Empty',paragraphs:[]}]}),false);
@@ -23,7 +23,7 @@ test('guide sections, research tables, citations and learning resources are inte
  assert.equal(new Set(['the-role',...allSections.map(section=>section.id)]).size,9);
  const sources=new Set(guide.citations.map(source=>source.id));assert.equal(sources.size,guide.citations.length);
  for(const section of allSections){for(const id of section.sourceIds||[])assert.ok(sources.has(id),id);for(const block of section.blocks||[]){if(block.type==='figure')assert.ok(fs.existsSync('public'+block.src));if(block.type==='table'){for(const row of block.rows)assert.equal(row.length,block.columns.length);}if(block.type==='resources'){for(const item of block.items)assert.ok(guide.citations.some(source=>source.url===item.href));}}}
- const mechanical=snapshot.roles.find(role=>['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer','field-service-engineer'].includes(role.id));
+ const mechanical=snapshot.roles.find(role=>['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer','field-service-engineer','embedded-software-engineer'].includes(role.id));
  const skills=guide.sections.find(section=>section.id==='skills').blocks.find(block=>block.type==='skill-mentions');
  assert.equal(skills.denominator,mechanical.postingCount);
  assert.deepEqual(skills.rows,mechanical.skills.map(({label,count,required,preferred,contextual})=>({label,count,required,preferred,contextual})));
@@ -57,8 +57,9 @@ test('all guides retain unique metadata, complete sources and explicit snapshot 
   else if(item.occupationId==='perception-engineer')assert.equal(item.publishedAt,'2026-11-09');
   else if(item.occupationId==='robotics-data-engineer')assert.equal(item.publishedAt,'2026-11-09');
   else if(item.occupationId==='field-service-engineer')assert.equal(item.publishedAt,'2026-11-09');
+  else if(item.occupationId==='embedded-software-engineer')assert.equal(item.publishedAt,'2026-11-09');
   else assert.equal(item.publishedAt,'2026-11-03');
-  assert.equal(item.sections.length,['perception-engineer','field-service-engineer'].includes(item.occupationId)?8:7);assert.ok(item.introduction.length);assert.ok(item.nextSteps.blocks.length);
+  assert.equal(item.sections.length,['perception-engineer','field-service-engineer','embedded-software-engineer'].includes(item.occupationId)?8:7);assert.ok(item.introduction.length);assert.ok(item.nextSteps.blocks.length);
   const ids=new Set(item.citations.map(source=>source.id));assert.equal(ids.size,item.citations.length);
   const sections=[...item.sections,item.nextSteps];assert.equal(new Set(sections.map(section=>section.id)).size,sections.length);
   for(const section of sections){
@@ -92,13 +93,14 @@ test('scope flags prevent contaminated cohorts from becoming frequency charts or
 
 test('assessment guide links cover completed professions without entering the matching engine',()=>{
  const {assessmentGuideLinks}=load('lib/career-paths/guides.ts');
- assert.equal(Object.keys(assessmentGuideLinks).length,8);
+ assert.equal(Object.keys(assessmentGuideLinks).length,9);
  for(const item of publishedCareerGuides)assert.equal(assessmentGuideLinks[item.occupationId],guidePath(item));
  assert.equal(assessmentGuideLinks['electrical-engineer'],'/career-paths/hardware-manufacturing/electrical-engineer');
  assert.equal(assessmentGuideLinks['perception-engineer'],'/career-paths/intelligence-autonomy/perception-engineer');
  assert.equal(assessmentGuideLinks['robotics-data-engineer'],'/career-paths/platforms-simulation/robotics-data-engineer');
  assert.equal(assessmentGuideLinks['field-service-engineer'],'/career-paths/integration-operations/field-service-engineer');
- assert.equal(assessmentGuideLinks['embedded-software-engineer'],undefined);
+ assert.equal(assessmentGuideLinks['embedded-software-engineer'],'/career-paths/hardware-manufacturing/embedded-software-engineer');
+ assert.equal(assessmentGuideLinks['robotics-controls-engineer'],undefined);
  const engine=fs.readFileSync('lib/career-paths/assessment-engine.ts','utf8');
  assert.doesNotMatch(engine,/publishedCareerGuides|guideForOccupation|assessmentGuideLinks|career-paths\/guides/);
  const component=fs.readFileSync('components/career-assessment.tsx','utf8');
@@ -196,4 +198,21 @@ test('field service compensation keeps annual salaries separate from hourly over
  assert.ok(pay.excludedObservations.some(row=>row.id==='shield-ai:lever:ee614940-c594-41da-8432-8a677e21520d'));
  for(const row of pay.observations)assert.ok(!pay.excludedObservations.some(other=>other.id===row.id));
  assert.ok(!item.sections.flatMap(section=>section.blocks||[]).some(block=>block.type==='skill-mentions'));
+});
+
+test('embedded salary and illustrative timing remain mathematically consistent',()=>{
+ const item=guideForOccupation('embedded-software-engineer');
+ const pay=JSON.parse(fs.readFileSync('public/research/embedded-software-engineer-compensation-2026-11-02.json','utf8'));
+ const values=pay.observations.map(row=>{assert.equal(row.period,'year');assert.equal(row.currency,'USD');assert.deepEqual(row.countries,['United States']);assert.equal(row.midpoint,(row.minimum+row.maximum)/2);return row.midpoint;}).sort((a,b)=>a-b);
+ const midpoint=values.length%2?values[(values.length-1)/2]:(values[values.length/2-1]+values[values.length/2])/2;
+ assert.equal(pay.exactMedianMidpoint,midpoint);assert.equal(pay.estimate,Math.round(midpoint/1000)*1000);
+ assert.equal(pay.postingCount,new Set(pay.observations.map(row=>row.id)).size);assert.equal(pay.employerCount,new Set(pay.observations.map(row=>row.employerId)).size);
+ assert.equal(pay.postingCount,26);assert.equal(pay.employerCount,11);assert.equal(item.overview[3].value,'$205,000/year');assert.equal(item.publishedAt,'2026-11-09');
+ assert.ok(pay.excludedObservations.some(row=>row.id==='one-x:ashby:4cb3ef10-8755-4050-b5f1-309591626d1c'&&/test/.test(row.reason)));
+ assert.ok(pay.excludedObservations.some(row=>row.id==='applied-intuition:ashby:b352b349-8300-4f41-817d-952d044fb38a'&&/infotainment/.test(row.reason)));
+ for(const row of pay.observations)assert.ok(!pay.excludedObservations.some(other=>other.id===row.id));
+ const chart=item.sections.flatMap(section=>section.blocks||[]).find(block=>block.type==='timing-budget');
+ const totals=chart.rows.map(row=>row.segments.reduce((sum,s)=>{assert.ok(s.durationMs>0);return sum+s.durationMs;},0));
+ assert.ok(chart.deadlineMs>0&&chart.deadlineMs<=chart.scaleMs);assert.ok(totals.every(total=>total<=chart.scaleMs));
+ assert.ok(totals[0]<chart.deadlineMs&&totals[1]>chart.deadlineMs);assert.equal(totals[1]-totals[0],chart.rows[1].segments.find(s=>s.kind==='wait').durationMs);
 });

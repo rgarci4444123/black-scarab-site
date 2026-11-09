@@ -29,13 +29,14 @@
     {
       "order": 4,
       "roleId": "field-service-engineer",
-      "status": "approved-for-release",
+      "status": "deployed",
       "path": "/career-paths/integration-operations/field-service-engineer"
     },
     {
       "order": 5,
       "roleId": "embedded-software-engineer",
-      "status": "queued"
+      "status": "approved-for-release",
+      "path": "/career-paths/hardware-manufacturing/embedded-software-engineer"
     },
     {
       "order": 6,

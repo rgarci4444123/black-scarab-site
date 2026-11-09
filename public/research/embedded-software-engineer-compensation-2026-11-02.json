@@ -1,0 +1,1430 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "derivedAt": "2026-11-09",
+  "roleId": "embedded-software-engineer",
+  "sourceAggregate": "/research/physical-ai-careers-2026-11-02.json",
+  "sourceAggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "label": "Black Scarab estimated compensation",
+  "currency": "USD",
+  "period": "year",
+  "basis": "advertised annual salary, excluding bonus and equity",
+  "postingCount": 26,
+  "employerCount": 11,
+  "exactMedianMidpoint": 205000.0,
+  "estimate": 205000,
+  "rounding": "nearest 1000 USD, halves rounded upward",
+  "method": "One annual salary-range midpoint per distinct eligible requisition, then the median. No seniority pay bands inferred.",
+  "eligibility": "U.S. roles developing production robot/vehicle firmware, hardware drivers, embedded Linux/BSPs, actuation/power firmware or embedded avionics, with complete explicit annual USD ranges.",
+  "limitations": "Purposive employer sample with uneven coverage and mixed seniority, including a new-graduate advertisement and senior/staff roles. Excludes primarily integration, infotainment, test-only work, mixed geography and unverified annual salary periods. Structured salary fields do not consistently identify base pay. Not an entry-level estimate or representative market median.",
+  "observations": [
+    {
+      "id": "applied-intuition:ashby:0c73aae6-1b7c-475d-9868-f22152dc4c97",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Senior Embedded Software Engineer - Firmware",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/0c73aae6-1b7c-475d-9868-f22152dc4c97",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "d0d3df65f17dcfd01433c4f416219bc1c702e436e919139f95b8d058a71f657e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 171000,
+      "maximum": 253000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "senior",
+      "midpoint": 212000.0
+    },
+    {
+      "id": "applied-intuition:ashby:6971d533-1536-448b-96b8-544ad5383f44",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Embedded Software Engineer - New Grad (2027)",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/6971d533-1536-448b-96b8-544ad5383f44",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "e749df1c87e5e24d3f99ef1b74eaad87c0257bca209193ce7a09f5178894dd12",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 123000,
+      "maximum": 168000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "early-career",
+      "midpoint": 145500.0
+    },
+    {
+      "id": "boston-dynamics:workday:R2655",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Senior Staff Firmware Engineer",
+      "locations": [
+        "Waltham, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-MA/Software-Engineer---Atlas_R2655",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "9b84fb2d0c848ce3408d1c10622dad52927b6fa6a7ab9d48f7508f1c15322b72",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "minimum": 160000,
+      "maximum": 200000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual salary; base pay where expressly stated",
+      "extraction": "full-source-text",
+      "sourceClause": "The base pay range for this position is between $160,000 to $200,000 annually. Base pay will depend on multiple individualized factors including, but not limited to internal equity, job related knowledge, skills and experience. This range represents a good faith estimate of compensation at the time of posting. Boston Dynamics offers a generous Benefits package including medical, dental vision, 401(k), paid time off and a annual bonus structure. Additional details regarding these benefit plans will be provided if an employee receives an offer for employment.",
+      "sourceSpan": {
+        "start": 2414,
+        "end": 2977
+      },
+      "seniority": "staff-principal",
+      "midpoint": 180000.0
+    },
+    {
+      "id": "fieldai:lever:5aa0a3ef-b693-4404-829a-63d8b9dad776",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Embedded Systems Engineer, Autonomous Vehicles (Federal)",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/5aa0a3ef-b693-4404-829a-63d8b9dad776",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "cb8496784be2513f3390b5720c00c198d588488444601aa13cde1727d4b6ebfd",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 100000,
+      "maximum": 240000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 170000.0
+    },
+    {
+      "id": "fieldai:lever:7a0d12c7-957b-42f6-a9c9-9605fab6d2a4",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Embedded Systems Engineer, Robotics Hardware",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/7a0d12c7-957b-42f6-a9c9-9605fab6d2a4",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "157ffa2a1a5d043a566944374202fad0c36bc746dae41e8571c3bc36fac581f0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 120000,
+      "maximum": 200000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 160000.0
+    },
+    {
+      "id": "fieldai:lever:ae6ff0ce-0078-4836-aab1-7e44b1be1893",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Embedded Systems Engineer, Humanoid Robotics",
+      "locations": [
+        "Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/ae6ff0ce-0078-4836-aab1-7e44b1be1893",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "bc1bd15a0b91411eedec74fd61f9a8da0d990fe22bbcd9e8be5fdabe9cdf4a4f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 100000,
+      "maximum": 240000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 170000.0
+    },
+    {
+      "id": "gram:greenhouse:4364454009",
+      "employerId": "gram",
+      "employer": "GRAM",
+      "title": "Senior Embedded Software Engineer",
+      "locations": [
+        "Palo Alto, California, United States",
+        "San Francisco Bay Area, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/gram/jobs/4364454009",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "dfa8baa46f5cf00fc3d153c7419f1b55ae16e43858f859b32e418bdd3d220966",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gram.json",
+      "rawSourceFileSha256": "706bd3d6bc62b71be02626b1dfae72b01f35c08b1f1831e36845fab26fff70b8",
+      "minimum": 165000,
+      "maximum": 205000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual salary; base pay where expressly stated",
+      "extraction": "full-source-text",
+      "sourceClause": "The annual base salary range for this San Francisco Bay Area position is $165,000–$205,000. Health coverage, benefits, and generous equity come with the role. This role is on-site in the San Francisco Bay Area. A relocation bonus is available. We hire to start as soon as possible. We review what you’ve shipped; if it’s the caliber we seek, interviews take about a week, start to finish. We treat your work and conversations with discretion.",
+      "sourceSpan": {
+        "start": 3252,
+        "end": 3694
+      },
+      "seniority": "senior",
+      "midpoint": 185000.0
+    },
+    {
+      "id": "nimble:greenhouse:4277741009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "Senior Software Engineer, Embedded Linux",
+      "locations": [
+        "San Francisco, CA",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4277741009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "2c8d4d8f4206a784181c330f988aaa8dd7cbae08faffc223d0854a7efb46c8f2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "minimum": 180000,
+      "maximum": 250000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual salary; base pay where expressly stated",
+      "extraction": "full-source-text",
+      "sourceClause": "The salary range for this position at the start of employment is expected to be between $180,000 and $250,000/year. Your exact offer may vary depending on multiple individualized factors, including job-related knowledge, skills, and experience. In addition to cash compensation, this position will also receive generous equity for this position.",
+      "sourceSpan": {
+        "start": 4152,
+        "end": 4497
+      },
+      "seniority": "senior",
+      "midpoint": 215000.0
+    },
+    {
+      "id": "nimble:greenhouse:4384912009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "Senior Robotics Firmware Engineer",
+      "locations": [
+        "San Francisco, CA",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4384912009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "68699031658d866c1e24dc8a94a14f514dff0d53aaa469f8890c02981adad89e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "minimum": 180000,
+      "maximum": 230000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual salary; base pay where expressly stated",
+      "extraction": "full-source-text",
+      "sourceClause": "The pay range for this position at the start of employment is expected to be between $180,000 and $230,000/year. Your exact offer may vary depending on multiple individualized factors, including job-related knowledge, skills, and experience. In addition to cash compensation, this position will also receive generous equity for this position.",
+      "sourceSpan": {
+        "start": 5892,
+        "end": 6234
+      },
+      "seniority": "senior",
+      "midpoint": 205000.0
+    },
+    {
+      "id": "one-x:ashby:19004256-4253-41d3-baa7-1f25bbd125be",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Staff Firmware Engineer - Charger",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/19004256-4253-41d3-baa7-1f25bbd125be",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "0b95b1c03e0cad9d5cd74d884c4790388e6e562b2bff4c26d4f596ef2c34aec4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "minimum": 200000,
+      "maximum": 280000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "staff-principal",
+      "midpoint": 240000.0
+    },
+    {
+      "id": "one-x:ashby:ea9614dd-94e8-4a3a-a714-645957a298d0",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Staff Firmware Engineer - Motor Controls",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/ea9614dd-94e8-4a3a-a714-645957a298d0",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "bfbc728fd38d1c34842c3e3cc5f78b330c91daa7c9984707cb905e1be49eb79d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "minimum": 200000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "staff-principal",
+      "midpoint": 250000.0
+    },
+    {
+      "id": "rhoda:ashby:9372a5ff-6b6d-4e02-900a-939beb901110",
+      "employerId": "rhoda",
+      "employer": "Rhoda AI",
+      "title": "Senior Firmware Engineer",
+      "locations": [
+        "Mountain View"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/rhoda-ai/9372a5ff-6b6d-4e02-900a-939beb901110",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "f283a5d28cbda5d0c0f3a14aa816c752233432d886dccb41803ce65e706126e4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/rhoda.json",
+      "rawSourceFileSha256": "57292cd4a63e78bba309cca3f2dd2b54a447c617ae01fb0a2d48033f76eb01bc",
+      "minimum": 150000,
+      "maximum": 225000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "senior",
+      "midpoint": 187500.0
+    },
+    {
+      "id": "shield-ai:lever:10936087-44a4-47db-bddf-105436e872aa",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Software Engineer, Embedded Applications (R5068)",
+      "locations": [
+        "Dallas, Texas",
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/10936087-44a4-47db-bddf-105436e872aa",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "4f5a59b4e3fdc28b7b694799048caf92eb1385a794391ca48ba7e07f900d7bff",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 150000,
+      "maximum": 290000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 220000.0
+    },
+    {
+      "id": "shield-ai:lever:f2e79865-ddd8-47de-a9c5-6d1852bafafc",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Staff Embedded Firmware Engineer (R5637)",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/f2e79865-ddd8-47de-a9c5-6d1852bafafc",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "4adfff6af8d699cd7ce6e956b47b1c8ce550882cd851fbdb8ae6c6bdcfed7267",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 160000,
+      "maximum": 250000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "staff-principal",
+      "midpoint": 205000.0
+    },
+    {
+      "id": "skydio:ashby:71033170-d9d0-474b-b712-a11e4f11c146",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Senior/Staff Embedded Software Engineer - Camera Systems",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/71033170-d9d0-474b-b712-a11e4f11c146",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "1bca831fecf55232053a4e106f7d8a4048ad1cc9ce283c67b3ea224459aff530",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "minimum": 170000,
+      "maximum": 277500,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual salary; base pay where expressly stated",
+      "extraction": "full-source-text",
+      "sourceClause": "Compensation: At Skydio, our compensation packages for regular, full-time employees include competitive base salaries, equity in the form of stock options, and comprehensive benefits packages. Compensation will vary based on factors, including skill level, proficiencies, transferable knowledge, and experience. Relocation assistance may also be provided for eligible roles. The annual base salary range for this position is $170,000 - $277,500*. Fundamentally, we believe that equity is the key to long-term financial growth, and we ensure all regular, full-time employees have the opportunity to significantly benefit from the company's success. Regular, full-time employees are eligible to enroll in the Company’s group health insurance plans. Regular, full-time employees are eligible to receive the following benefits: Paid vacation time, sick leave, holiday pay and 401K savings plan. This position and all associated benefits are subject to applicable federal, state, and local laws, as well as the Company’s policies and eligibility criteria.",
+      "sourceSpan": {
+        "start": 2830,
+        "end": 3880
+      },
+      "seniority": "staff-principal",
+      "midpoint": 223750.0
+    },
+    {
+      "id": "skydio:ashby:d415cf2b-616c-459e-9c5f-58a1b2c4a1bb",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Software Engineer - Embedded",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/d415cf2b-616c-459e-9c5f-58a1b2c4a1bb",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "b28024a3cb281c338de6d8d1e02cfc54449725bc13a1003ae7ddfb4feeb9c570",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "minimum": 127500,
+      "maximum": 210000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual salary; base pay where expressly stated",
+      "extraction": "full-source-text",
+      "sourceClause": "Compensation: At Skydio, our compensation packages for regular, full-time employees include competitive base salaries, equity in the form of stock options, and comprehensive benefits packages. Compensation will vary based on factors, including skill level, proficiencies, transferable knowledge, and experience. Relocation assistance may also be provided for eligible roles. The annual base salary range for this position is $127,500 - $210,000*. Fundamentally, we believe that equity is the key to long-term financial growth, and we ensure all regular, full-time employees have the opportunity to significantly benefit from the company's success. Regular, full-time employees are eligible to enroll in the Company’s group health insurance plans. Regular, full-time employees are eligible to receive the following benefits: Paid vacation time, sick leave, holiday pay and 401K savings plan. This position and all associated benefits are subject to applicable federal, state, and local laws, as well as the Company’s policies and eligibility criteria.",
+      "sourceSpan": {
+        "start": 2555,
+        "end": 3605
+      },
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 168750.0
+    },
+    {
+      "id": "sunday:ashby:0fe711a6-fadf-4908-8f5c-243c5e22a03e",
+      "employerId": "sunday",
+      "employer": "Sunday Robotics",
+      "title": "Firmware Engineer",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/sunday/0fe711a6-fadf-4908-8f5c-243c5e22a03e",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "4bf5c3604b171159a3b74b73ee46fda829077895961eb531b8347789f99b8879",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/sunday.json",
+      "rawSourceFileSha256": "95e55ab1970ad63d47734109bd8e17d1fde8a0db3343230ed504995fa38261d2",
+      "minimum": 200000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 250000.0
+    },
+    {
+      "id": "sunday:ashby:788d2c63-f5b7-447e-9d4d-7ab1a92e10f1",
+      "employerId": "sunday",
+      "employer": "Sunday Robotics",
+      "title": "Embedded Software Engineer",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/sunday/788d2c63-f5b7-447e-9d4d-7ab1a92e10f1",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "f79385a0d8f17de88337b35217687b66b2ff6d8b8b5d373fa94d4cca0a58f486",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/sunday.json",
+      "rawSourceFileSha256": "95e55ab1970ad63d47734109bd8e17d1fde8a0db3343230ed504995fa38261d2",
+      "minimum": 200000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 250000.0
+    },
+    {
+      "id": "zoox:lever:082ed20c-b8e1-4b1c-9c22-4738ad94055d",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Embedded Software Engineer - Battery Management Systems",
+      "locations": [
+        "Foster City, CA",
+        "San Diego, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/082ed20c-b8e1-4b1c-9c22-4738ad94055d",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "66f1b0354c6cc92c9bc14ec2fffb61cd98fb2d2f2120c0f1bc3cc6f8b74cece4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 221000,
+      "maximum": 265000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 243000.0
+    },
+    {
+      "id": "zoox:lever:0dd5de4b-4e98-4808-85fd-e739e7fc5bba",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Embedded Software Engineer",
+      "locations": [
+        "San Diego, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/0dd5de4b-4e98-4808-85fd-e739e7fc5bba",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "03a104e5d02f02dcb3fdad2b324f86205c2e36d21d4e8ee47536491b025d4ba8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 164000,
+      "maximum": 223000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 193500.0
+    },
+    {
+      "id": "zoox:lever:46c23963-2be1-4037-8f1a-ce87bdccde6d",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Embedded Software Engineer - Body Systems",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/46c23963-2be1-4037-8f1a-ce87bdccde6d",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "463bc439977873a8e308fd0ac5f41ef8442b2262160ea5c7ee25345bdc3f81e1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 137000,
+      "maximum": 184000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 160500.0
+    },
+    {
+      "id": "zoox:lever:4d58c75b-57a0-43f9-860c-2d4b146b299e",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Senior/Staff Software Engineer - Embedded Linux Operating Systems",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/4d58c75b-57a0-43f9-860c-2d4b146b299e",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "5d05a91ba44bbe2ee55ae1310ea35ec5aa616e85a7e042c8d81671b43867bea7",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 237000,
+      "maximum": 322000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "staff-principal",
+      "midpoint": 279500.0
+    },
+    {
+      "id": "zoox:lever:63307a27-f2b1-43dc-8e78-a2e09d0eba2b",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Software Engineer - Embedded Linux Operating Systems",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/63307a27-f2b1-43dc-8e78-a2e09d0eba2b",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "4d68c6d5da1ae8842ef2abdbd4bad04618fae8152ec6dce4ac3a00ac1d528c19",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 195000,
+      "maximum": 242000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 218500.0
+    },
+    {
+      "id": "zoox:lever:7522162e-a518-444e-8fe7-49b8b45bbdd3",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Embedded Software Engineer, Wireless Technologies",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/7522162e-a518-444e-8fe7-49b8b45bbdd3",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "7b06875ad0b15a734ec00df3e885cac3f83dd34cb39770f0197a81aa92728aaa",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 220000,
+      "maximum": 265000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 242500.0
+    },
+    {
+      "id": "zoox:lever:b1bba11f-2b04-4a4a-8095-752c04182af1",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Embedded Software Engineer - Power Systems",
+      "locations": [
+        "Foster City, CA",
+        "San Diego, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/b1bba11f-2b04-4a4a-8095-752c04182af1",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "39e58aa25a61315e81228b746fc5c48d2c54872f03b70b3004a109ae3695cc02",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 164000,
+      "maximum": 223000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 193500.0
+    },
+    {
+      "id": "zoox:lever:ea3fbfaf-588b-434a-9a5a-c61edc731a40",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Embedded Software Engineer - Drive Systems",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/ea3fbfaf-588b-434a-9a5a-c61edc731a40",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "3042fdc5c5dc20966aa69f16b0940562f0112a7059f78fc6096c168a30abee36",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 137000,
+      "maximum": 207000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 172000.0
+    }
+  ],
+  "excludedObservations": [
+    {
+      "id": "agile-robots:greenhouse:4964643101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Senior Firmware Engineer (m/f/d)",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4964643101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "6cb4a463fd872341f78ba401320b0c33611c034622f9b8988c48b34fb795e4f6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reason": "Not an exclusively U.S. advertisement; mixed or unverified geography is not assigned a U.S. salary."
+    },
+    {
+      "id": "agility:greenhouse:5789714004",
+      "employerId": "agility",
+      "employer": "Agility Robotics",
+      "title": "Staff Firmware Engineer",
+      "locations": [
+        "Fremont, California, United States",
+        "Hybrid- Fremont, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=5789714004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "2544f891e97928b146e39444362d4ad987c4eb7ed24957069c74caadc482aff2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agility.json",
+      "rawSourceFileSha256": "ac356350940b45d164fbf75881d9254f4c3aadaa5e83e8f798a621610cb7c731",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "agility:greenhouse:6208306004",
+      "employerId": "agility",
+      "employer": "Agility Robotics",
+      "title": "Staff Robotics Architect - Embedded Systems",
+      "locations": [
+        "Fremont, California, United States",
+        "Hybrid- Fremont, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=6208306004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "2ca834f63500fa15910d952d68953179f204daaa0d25c5b755604cfca2a11d54",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agility.json",
+      "rawSourceFileSha256": "ac356350940b45d164fbf75881d9254f4c3aadaa5e83e8f798a621610cb7c731",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "anduril:greenhouse:4164476007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Flight Software Engineer, Embedded C/C++, Air Dominance & Strike",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4164476007?gh_jid=4164476007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "b3cf694b81e5f208067293ac213f3cbb9f25526e1afe1fade5d7147806def4c8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "anduril:greenhouse:4797357007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Firmware Engineer, Manufacturing Test",
+      "locations": [
+        "Atlanta, Georgia, United States",
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4797357007?gh_jid=4797357007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "833f8c0900a4e330ef31abc4e994e5145bb5588397724bf24926617ee302447f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Manufacturing-test firmware specialization; excluded from the production robot-firmware salary subset."
+    },
+    {
+      "id": "anduril:greenhouse:5062391007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Firmware Engineer, Motor Controls",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5062391007?gh_jid=5062391007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "9a216be4bfdcf628b48d531b44e5e45cf9f15a773256107fc079e46ed4dc9ddd",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "anduril:greenhouse:5148518007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Firmware Engineer (MATLAB/Simulink)",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5148518007?gh_jid=5148518007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "fbc211603dcc6f7724e33b082f541ab49f249d096dd5856b81a49cb47446a38b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "anduril:greenhouse:5180703007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Firmware Engineer, Connected Warfare",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5180703007?gh_jid=5180703007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "66753038f75a0407e67baa128bacd670dfc8736c1f703a73be46e1e2ebacb0d6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "anduril:greenhouse:5186084007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Firmware Engineer, Space Embedded Systems",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5186084007?gh_jid=5186084007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "4df7a4a8f957bd964053c0443248cf4b93dbd71d2dc19c6077524073378970e9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "anduril:greenhouse:5206527007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Embedded Software Engineer, Anti-Tamper",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5206527007?gh_jid=5206527007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "44c230991aa330cf717f13521f636df116e041dd7f437995846033f7b30724c9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "anduril:greenhouse:5237799007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Embedded Linux Software Engineer – Robotics Platform (DeviceOS)",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5237799007?gh_jid=5237799007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "a88d0775d41f45bea5537c392bd747b715be9e3871ee6776495fe0c7f4ab2881",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "applied-intuition:ashby:1c08cc1e-646a-425b-bc2a-874ebade37be",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Embedded Systems",
+      "locations": [
+        "Stuttgart"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/1c08cc1e-646a-425b-bc2a-874ebade37be",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "9cc89ca492fde1e4b1c632b3ec42ac55fb242b93d9fe06b447646298fee9e29c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Not an exclusively U.S. advertisement; mixed or unverified geography is not assigned a U.S. salary."
+    },
+    {
+      "id": "applied-intuition:ashby:3a79b874-e530-4e58-a55a-fa2364c42663",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "C++ Embedded Software Engineer - Drone Stack",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/3a79b874-e530-4e58-a55a-fa2364c42663",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "ca46b61541a6de1b854e5556b1a3b5f6a43786933ff23fb9443d69db4a6565f9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Primarily aircraft/autonomy-stack integration, field testing and customer demonstrations rather than low-level embedded software ownership."
+    },
+    {
+      "id": "applied-intuition:ashby:b352b349-8300-4f41-817d-952d044fb38a",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Embedded Software Engineer - Core OS",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/b352b349-8300-4f41-817d-952d044fb38a",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "612045659d967a6a0c0bed25b5fa6b2bbf56b11f3bd7297578dc6d84624b85a6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Primarily in-vehicle infotainment/Android services, outside this guide’s robot-control and hardware-interface focus."
+    },
+    {
+      "id": "applied-intuition:ashby:b7a499d8-d2a3-4458-baf6-4b43c2165558",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Embedded Software Engineer (Drone Stack)",
+      "locations": [
+        "Fort Walton Beach, FL"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/b7a499d8-d2a3-4458-baf6-4b43c2165558",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "1af773bdf95d5e00c85968bf8f4200ff5b821981b4770da33339123df1d3c162",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Primarily aircraft/autonomy-stack integration and live-test work rather than low-level embedded software ownership."
+    },
+    {
+      "id": "apptronik:greenhouse:6107174004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Senior Firmware Engineer - Actuation",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6107174004?gh_jid=6107174004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "659e2e7be0750e99167609cd9031e94afe2ce16c71a6afdbeffb5a594283c495",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "apptronik:greenhouse:6216205004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Senior Firmware Engineer – Hands",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6216205004?gh_jid=6216205004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "ecec5843e7afc8da01b68a9ffc35c46f70dbb2719f698070841891f608ed9f7d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "apptronik:greenhouse:6216214004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Senior Embedded Linux Engineer",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6216214004?gh_jid=6216214004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "67e37065a7f12153075c7434002527b3f5d917304329e07407a5509f04bcc460",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "bedrock:ashby:7dbd80b9-8973-4908-a3b5-21fe7ea350b3",
+      "employerId": "bedrock",
+      "employer": "Bedrock Robotics",
+      "title": "Embedded Software Engineer, Safety-Critical Systems",
+      "locations": [
+        "San Francisco, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/bedrock-robotics/7dbd80b9-8973-4908-a3b5-21fe7ea350b3",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "0550b62dd87594a2becb10cd53a83bd8baf749748d658b1b28bd559f89559b8e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/bedrock.json",
+      "rawSourceFileSha256": "f2897d1ac1b7da9dd6ee4984e385bc28b69e753fe84260a185e94c41d1d38c98",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "figure:greenhouse:4698860006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Firmware Integration Engineer, Asia",
+      "locations": [
+        "Asia"
+      ],
+      "countries": [],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4698860006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "57c1d08cc5f464dabed7452f9a59fbdd8f3c91539fa7c403d0e0866ec47adb79",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reason": "Not an exclusively U.S. advertisement; mixed or unverified geography is not assigned a U.S. salary."
+    },
+    {
+      "id": "gatik:greenhouse:4708700006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Embedded Software Engineer, Drive-By-Wire",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4708700006?gh_jid=4708700006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "f12d7c7c35da0ebe58b9bdaf1c27558999d941e116a3354e7a39097d37b5eef1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "humanoid:ashby:98faaec2-7d21-40bb-aee6-14b3c0f85502",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Firmware Engineer",
+      "locations": [
+        "UK, London"
+      ],
+      "countries": [
+        "United Kingdom"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/98faaec2-7d21-40bb-aee6-14b3c0f85502",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "ef6d27a86079de2f4bae76ad298da9d8ccc589f1135c4d907fbcec9ec0d2a368",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Not an exclusively U.S. advertisement; mixed or unverified geography is not assigned a U.S. salary."
+    },
+    {
+      "id": "humanoid:ashby:f8b5f6e7-258c-4220-81f7-f25073bd85d3",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Senior Firmware and Embedded Software Engineer",
+      "locations": [
+        "Canada, Vancouver, BC"
+      ],
+      "countries": [
+        "Canada"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/f8b5f6e7-258c-4220-81f7-f25073bd85d3",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "9f5226a57c33d2798b6ee9ea9e29256b4d664efa0c9169b727b587e4fa45b174",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Not an exclusively U.S. advertisement; mixed or unverified geography is not assigned a U.S. salary."
+    },
+    {
+      "id": "kodiak:greenhouse:4005123009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Software Engineer, Embedded",
+      "locations": [
+        "Bay Area, California, United States",
+        "Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4005123009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "b37c9758f7009afb9a3574face437fdcb15447a47d0e8bcea9fbeee05187c2be",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "nuro:greenhouse:8180955",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Embedded Software Engineer",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=8180955",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "de90c50095dcf6dbd75dd92ce52d6471cd11651de1e106fb6e4418e362f2684d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "nuro:greenhouse:8263454",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Senior Embedded Software Engineer",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=8263454",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "83023867e5c19d5359fc78487b2f80c6f06bec2c21ed5b9202ac20b0ee5dd92e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "nvidia:workday:JR2022103",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior Software Engineer, Embedded Platform Middleware — Automotive and Robotics",
+      "locations": [
+        "US, CA, Santa Clara"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Embedded-Platform-Middleware---Automotive-and-Robotics_JR2022103",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "aede90bd5ed3d716b23465a916b880f061363c3860e497c6a08f5db7cc629e6a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "nvidia:workday:JR2028739",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior Software Engineer - Embedded Platform",
+      "locations": [
+        "US, CA, Santa Clara"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer---Embedded-Platform_JR2028739",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "0b3eec7f3ea39e1f0969729711f561549f12767fb5987d1cb993169d0ff5c3dc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "one-x:ashby:4cb3ef10-8755-4050-b5f1-309591626d1c",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Firmware Engineer - Testing",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/4cb3ef10-8755-4050-b5f1-309591626d1c",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "22f68580f81323f38eab0f9c3125902162ab931ab442751fa8de31fc6bafc93b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reason": "Owns firmware release qualification, HIL rigs and test automation rather than production firmware development."
+    },
+    {
+      "id": "physical-intelligence:ashby:50f00992-a6c4-480b-a000-2efba5283379",
+      "employerId": "physical-intelligence",
+      "employer": "Physical Intelligence",
+      "title": "Embedded Engineer",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/physicalintelligence/50f00992-a6c4-480b-a000-2efba5283379",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "d1264f11590a4f12858f497b04b22fd08809b3251b986e6057f63e04a4919746",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/physical-intelligence.json",
+      "rawSourceFileSha256": "4636b655b7fab48b151da10f872a9268960654cc165ce7e06a60e83e91cc5c99",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "serve:ashby:0b9f3986-9ae6-4361-85b5-2e1edc6e10e2",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Sr. Embedded Software Engineer,  Robotics Platform",
+      "locations": [
+        "British Columbia (remote)",
+        "Calgary (remote)",
+        "Canada (remote)",
+        "Toronto (remote)",
+        "USA (remote)",
+        "Vancouver, BC (remote)"
+      ],
+      "countries": [
+        "Canada",
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/0b9f3986-9ae6-4361-85b5-2e1edc6e10e2",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "122557939ac3f6b069fa263d3c8fe925a9ef0aa206da6f58627b365e5a1ebd3d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Not an exclusively U.S. advertisement; mixed or unverified geography is not assigned a U.S. salary."
+    },
+    {
+      "id": "shield-ai:lever:a2627727-1714-46fd-8724-3557bc17c696",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior Software Engineer, Embedded Linux Platform (R5718)",
+      "locations": [
+        "Melbourne"
+      ],
+      "countries": [
+        "Australia"
+      ],
+      "url": "https://jobs.lever.co/shieldai/a2627727-1714-46fd-8724-3557bc17c696",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "f7fa97e4bc50ce049a7b8e78aeb88e46da3615cb130eccba0fd8b23d17d3136b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Not an exclusively U.S. advertisement; mixed or unverified geography is not assigned a U.S. salary."
+    },
+    {
+      "id": "skild:greenhouse:4511983008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Firmware/ Embedded Systems Engineer",
+      "locations": [
+        "Bengaluru, Karnataka, India",
+        "San Mateo"
+      ],
+      "countries": [
+        "India"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/4511983008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "e0c1c9f3fba0ec838fe5366a9f69b5bfa4e9d705822120b75b326cfc68caa3e6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reason": "Not an exclusively U.S. advertisement; mixed or unverified geography is not assigned a U.S. salary."
+    },
+    {
+      "id": "skydio:ashby:45860c62-683d-4766-b4eb-d891e7e412d3",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Senior/Staff Embedded Software Engineer - Camera Systems",
+      "locations": [
+        "Tampere, Finland"
+      ],
+      "countries": [
+        "Finland"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/45860c62-683d-4766-b4eb-d891e7e412d3",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "cf80aec8d229d8fc160eabd2e354f7ad80abcc4a21fdfebf8493bc487e3e8a20",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reason": "Not an exclusively U.S. advertisement; mixed or unverified geography is not assigned a U.S. salary."
+    },
+    {
+      "id": "zipline:greenhouse:7802182003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Senior Embedded Firmware Engineer - Long Range Platform",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7802182003?gh_jid=7802182003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "652930c59ba64d9fb9fa4490bebb1bba9af320523bcbb22d0911445064453b69",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "zipline:greenhouse:7803258003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Senior Firmware Engineer - Motors",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7803258003?gh_jid=7803258003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "4068d00575e936b5f38e1494f4cd4c1876188f559161c9de6201c95f4d015fdf",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "zipline:greenhouse:7819740003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Senior Embedded Linux Platform Engineer",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7819740003?gh_jid=7819740003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "1d0a0ecf5a5ca841d117c5c407535488eba6e957eebe83f5b651f56e5a6bbdce",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "zipline:greenhouse:7989547003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Embedded Firmware Engineer",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7989547003?gh_jid=7989547003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "cd434087e762f5aed206853bcb153dad11639ce3aca43385a91e29fa783bece9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    },
+    {
+      "id": "zipline:greenhouse:8002618003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Senior Embedded Software Engineer - Avionics SW",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/8002618003?gh_jid=8002618003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "e1a388144bc9d170ea45e163b5097bd17d3de1ab918252232114fdd703c9ad00",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No complete annual USD range verified in structured data or an explicit annual salary clause. Annual bonus wording alone does not establish the salary period."
+    }
+  ]
+}
