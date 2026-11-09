@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "canonical": "https://www.blackscarab.ai/news/qiyuan-10000-personal-robots",
+  "article": {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Qiyuan reports ten thousand personal robots produced after its consumer launch",
+    "description": "Qiyuan says cumulative Q1 and T1 production reached 10,000 on November 8, fourteen days after its 5,000th robot. Its next commercial test is turning factory scale into lasting use at home.",
+    "datePublished": "2026-11-09T09:34:42-05:00",
+    "dateModified": "2026-11-09T09:34:42-05:00",
+    "articleSection": "Machines",
+    "mainEntityOfPage": "https://www.blackscarab.ai/news/qiyuan-10000-personal-robots",
+    "image": [
+      "https://www.blackscarab.ai/images/news/qiyuan-10000-personal-robots.png"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Rodolfo Garcia Calderoni",
+      "honorificSuffix": "CFA",
+      "url": "https://www.blackscarab.ai/about",
+      "sameAs": [
+        "https://www.linkedin.com/in/rodolfo-garcia-calderoni-cfa-4a5535148"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Black Scarab",
+      "url": "https://www.blackscarab.ai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.blackscarab.ai/icon.png"
+      }
+    },
+    "citation": [
+      "https://stock.stockstar.com/notice/SN2026110800005930.shtml",
+      "https://www.bjnews.com.cn/detail/1794118990129766.html",
+      "https://www.primebot.com/q1.html",
+      "https://www.primebot.com/t1.html",
+      "https://www.primebot.com/newsinfo10.html",
+      "https://dev.primebot.com/",
+      "https://www.ithome.com/1/023/917.htm",
+      "https://www.bjnews.com.cn/detail/1789894075129032.html",
+      "https://emwap.eastmoney.com/a/202609203879393582.html"
+    ]
+  },
+  "allParagraphsMatch": true,
+  "socialImage": true,
+  "dashPunctuation": false
+}
