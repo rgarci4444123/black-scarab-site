@@ -1,22 +1,95 @@
 {
   "updatedAt": "2026-11-09",
-  "workflow": ["research", "editorial draft", "local implementation", "responsive review", "user review"],
+  "workflow": [
+    "research",
+    "editorial draft",
+    "local implementation",
+    "responsive review",
+    "user review"
+  ],
   "guides": [
-    {"order": 1, "roleId": "electrical-engineer", "status": "deployed", "path": "/career-paths/hardware-manufacturing/electrical-engineer"},
-    {"order": 2, "roleId": "perception-engineer", "status": "approved-for-release"},
-    {"order": 3, "roleId": "robotics-data-engineer", "status": "queued"},
-    {"order": 4, "roleId": "field-service-engineer", "status": "queued"},
-    {"order": 5, "roleId": "embedded-software-engineer", "status": "queued"},
-    {"order": 6, "roleId": "robotics-controls-engineer", "status": "queued"},
-    {"order": 7, "roleId": "machine-learning-infrastructure-engineer", "status": "queued"},
-    {"order": 8, "roleId": "industrial-automation-engineer", "status": "queued"},
-    {"order": 9, "roleId": "manufacturing-engineer", "status": "queued"},
-    {"order": 10, "roleId": "motion-planning-engineer", "status": "queued"},
-    {"order": 11, "roleId": "verification-validation-engineer", "status": "queued"},
-    {"order": 12, "roleId": "robot-operations-specialist", "status": "queued"},
-    {"order": 13, "roleId": "hardware-test-engineer", "status": "queued"},
-    {"order": 14, "roleId": "localization-mapping-engineer", "status": "queued"},
-    {"order": 15, "roleId": "robotics-platform-engineer", "status": "queued"},
-    {"order": 16, "roleId": "systems-safety-engineer", "status": "queued"}
+    {
+      "order": 1,
+      "roleId": "electrical-engineer",
+      "status": "deployed",
+      "path": "/career-paths/hardware-manufacturing/electrical-engineer"
+    },
+    {
+      "order": 2,
+      "roleId": "perception-engineer",
+      "status": "deployed",
+      "path": "/career-paths/intelligence-autonomy/perception-engineer"
+    },
+    {
+      "order": 3,
+      "roleId": "robotics-data-engineer",
+      "status": "approved-for-release",
+      "path": "/career-paths/platforms-simulation/robotics-data-engineer"
+    },
+    {
+      "order": 4,
+      "roleId": "field-service-engineer",
+      "status": "queued"
+    },
+    {
+      "order": 5,
+      "roleId": "embedded-software-engineer",
+      "status": "queued"
+    },
+    {
+      "order": 6,
+      "roleId": "robotics-controls-engineer",
+      "status": "queued"
+    },
+    {
+      "order": 7,
+      "roleId": "machine-learning-infrastructure-engineer",
+      "status": "queued"
+    },
+    {
+      "order": 8,
+      "roleId": "industrial-automation-engineer",
+      "status": "queued"
+    },
+    {
+      "order": 9,
+      "roleId": "manufacturing-engineer",
+      "status": "queued"
+    },
+    {
+      "order": 10,
+      "roleId": "motion-planning-engineer",
+      "status": "queued"
+    },
+    {
+      "order": 11,
+      "roleId": "verification-validation-engineer",
+      "status": "queued"
+    },
+    {
+      "order": 12,
+      "roleId": "robot-operations-specialist",
+      "status": "queued"
+    },
+    {
+      "order": 13,
+      "roleId": "hardware-test-engineer",
+      "status": "queued"
+    },
+    {
+      "order": 14,
+      "roleId": "localization-mapping-engineer",
+      "status": "queued"
+    },
+    {
+      "order": 15,
+      "roleId": "robotics-platform-engineer",
+      "status": "queued"
+    },
+    {
+      "order": 16,
+      "roleId": "systems-safety-engineer",
+      "status": "queued"
+    }
   ]
 }

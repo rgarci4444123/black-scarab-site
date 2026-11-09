@@ -145,3 +145,17 @@ The user-supplied electrical architecture diagram follows the opening work descr
 Electrical Engineer is deployed in commit `5a78b2019b0f927528695f3ba462dd9e1526817b`. Its live guide, dates, images, research downloads, category link, sitemap and assessment were verified. Perception Engineer is the next local review at `/career-paths/intelligence-autonomy/perception-engineer`; it has no first-publication date and has not been pushed. Its separate evidence layer reviews nine full sources, and its $224,000 compensation estimate derives from 27 annual U.S. advertisements across 13 employers. The dated source files remain unchanged. Reproduce the derivation with `scripts/build-perception-guide-research.py --archive-root` using the preserved archive. The local registry exposes the completed draft for review; production still contains only the five approved guides.
 
 The Perception Engineer user revision updates the headline, overview, eight article sections and three learning links. Existing fragments remain, with `perception-vs-computer-vision` added for the new comparison section. The hero, URL, SEO title and compensation derivation are retained. The source hash and qualification/salary-label decisions are recorded in `research/career-guides/perception-engineer/editorial-revision-2026-11-09.json`.
+
+### Perception release and Robotics Data Engineer preview, November 9
+
+Perception Engineer is deployed in commit `6dabb25c40a10c41065e2801c4d8d622a797c4f1`. Production checks confirmed its metadata, images, compensation, research downloads, category link, sitemap and assessment. The workflow image appears in the later comparison section.
+
+Robotics Data Engineer is the next local review at `/career-paths/platforms-simulation/robotics-data-engineer`. It has no first-publication date. Its evidence layer reviews nine full employer sources; the $215,000 estimate derives from nine eligible annual U.S. advertisements across seven employers. Reproduce it with `python3 scripts/build-robotics-data-guide-research.py --archive-root '/path/to/Black Scarab Career Paths'`. Broad-cohort skill frequencies and opening totals are not used.
+
+Guide artwork should vary its subject, perspective and composition. A person is optional; avoid repeatedly defaulting to the same gender or engineer-at-screen scene. Futuristic environments are welcome. Use roughly 80–90% black, white and gray with 10–20% deliberate color accents, reflecting the Black Scarab identity. Main images remain free of editorial titles and explanatory text.
+
+### In-article visual pilot, November 9
+
+Robotics Data Engineer replaces the opening process table with a responsive workflow diagram in the skills section: Record → Align → Check → Release, with flagged recordings branching to review and reprocessing. It uses semantic HTML, selectable text and a vertical mobile layout. The diagram synthesizes the reviewed recording and dataset-quality responsibilities; it is not measured conversion or throughput data. The user is reviewing this pilot before adopting the approach for future guides. Choose future visual formats to suit the profession and evidence rather than repeating one graphic.
+
+Robotics Data Engineer and the in-article visual pilot were approved for push and deployment on November 9, 2026. Set the guide’s first-publication date to November 9. Future guides should include a profession-specific explanatory visual and begin with the full 20-role completion tracker. Field Service Engineer follows next.

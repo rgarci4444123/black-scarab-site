@@ -1,0 +1,45 @@
+{
+  "status": "approved-for-release",
+  "url": "http://127.0.0.1:3025/career-paths/platforms-simulation/robotics-data-engineer#robot-data-workflow",
+  "guidePath": "/career-paths/platforms-simulation/robotics-data-engineer",
+  "reviewedAt": "2026-11-09",
+  "compensation": {
+    "estimate": 215000,
+    "postingCount": 9,
+    "employerCount": 7,
+    "period": "year",
+    "currency": "USD"
+  },
+  "artwork": {
+    "asset": "public/career-paths/robotics-data-engineer-lab.webp",
+    "source": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-25930657-d415-4b90-98ca-b1a6687d48cf.png",
+    "direction": "Unoccupied futuristic recording chamber; predominantly black, white and gray, with approximately 10\u201320% cyan and amber accents. No embedded editorial copy."
+  },
+  "validation": {
+    "careerTests": 19,
+    "selectedFullSourcesAudited": 63,
+    "rawSourcesAudited": 32,
+    "typecheck": "passed",
+    "scopedLint": "passed",
+    "nextBuild": "passed",
+    "existingArticlePreviews": 175,
+    "desktop": "reviewed",
+    "mobile": "reviewed; no horizontal page overflow"
+  },
+  "publication": "User approved push and deployment on November 9, 2026.",
+  "inArticleVisual": {
+    "type": "responsive HTML workflow diagram",
+    "stages": [
+      "Record",
+      "Align",
+      "Check",
+      "Release"
+    ],
+    "placement": "Skills section, after quality and reproducibility",
+    "replaces": "Opening process table",
+    "sourceBasis": "Reviewed Agile Robots and GRAM responsibilities; conceptual editorial synthesis",
+    "desktop": "Four connected stages with quality-review branch",
+    "mobile": "Vertical connected stages; no page overflow",
+    "futureGuideAdoption": "Approved; select a useful visual format for each future profession."
+  }
+}

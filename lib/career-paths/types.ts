@@ -51,6 +51,7 @@ export type CareerGuideBlock =
   | { type: 'list'; items: string[]; ordered?: boolean }
   | { type: 'table'; caption: string; columns: string[]; rows: string[][] }
   | { type: 'figure'; src: string; alt: string; caption: string; width: number; height: number; fullSizeHref?: string }
+  | { type: 'workflow'; id: string; title: string; stages: { title: string; description: string }[]; review: { stage: number; title: string; description: string } }
   | { type: 'summary-list'; items: { title: string; text: string }[] }
   | { type: 'calculation'; title: string; formula: string; example: string; note: string }
   | { type: 'skill-mentions'; title: string; denominator: number; note: string; detailNote: string;

@@ -25,3 +25,15 @@ export function CareerCompensationTable({block}:{block:Compensation}) {
 export function CareerResearchNotes({notes,citations}:{notes:string[];citations:Citation[]}) {
   return <section id="guide-sources" className="profession-guide-sources"><h2>Sources and methodology</h2><details className="profession-research-detail"><summary>Research methodology</summary>{notes.map(note=><p key={note}>{note}</p>)}</details><details className="profession-source-references"><summary>Source references ({citations.length})</summary><ol>{citations.map(citation=><li id={`source-${citation.id}`} key={citation.id}><a href={citation.url}>{citation.title} <span aria-hidden="true">↗</span></a>{citation.scope?<p>{citation.scope}</p>:null}</li>)}</ol></details></section>;
 }
+
+type Workflow=Extract<CareerGuideBlock,{type:'workflow'}>;
+export function CareerWorkflow({block}:{block:Workflow}) {
+  return <figure id={block.id} className="profession-workflow" aria-labelledby={`${block.id}-title`}>
+    <figcaption id={`${block.id}-title`}>{block.title}</figcaption>
+    <ol className="profession-workflow-stages">{block.stages.map((stage,index)=><li key={stage.title} className={index===block.review.stage?'profession-workflow-check':undefined}>
+      <span className="profession-workflow-step" aria-hidden="true">{String(index+1).padStart(2,'0')}</span>
+      <strong>{stage.title}</strong><p>{stage.description}</p>
+      {index===block.review.stage?<aside className="profession-workflow-review"><strong>{block.review.title}</strong><p>{block.review.description}</p></aside>:null}
+    </li>)}</ol>
+  </figure>;
+}

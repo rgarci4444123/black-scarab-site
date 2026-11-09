@@ -82,3 +82,11 @@ Apply across all Black Scarab content, research products and UI. Precision in th
 - Keep the finding visually dominant. Use captions, footnotes, labels, boxes and navigation sparingly.
 - Revise an unsupported claim rather than surrounding it with disclaimers. Use direct language supported by evidence; avoid reflexive hedging and defensive qualifications.
 - Apply these principles silently in public copy. Be accurate, clear and concise; trust the reader.
+
+## Career guide artwork
+
+User direction, November 9, 2026: Career guide images use roughly 80–90% black, white and gray, with 10–20% deliberate color accents. Vary the composition, viewpoint and subject. People are optional; avoid repeatedly defaulting to the same gender or engineer-at-screen scene. Futuristic environments are welcome. Keep main images free of titles and explanatory text.
+
+Each new career guide should include a useful visual inside the article, distinct from its hero: a process diagram, explanatory graphic, chart or concise comparison suited to that profession. Avoid repeating the same format or adding decorative data. The Robotics Data Engineer workflow pilot was approved November 9, 2026.
+
+At the start of each new guide, show Rodolfo the complete 20-profession tracker with completed guides crossed off, remaining guides uncrossed and the current guide identified. Keep the queue updated.

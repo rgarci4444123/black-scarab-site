@@ -118,3 +118,30 @@
   .career-section.profession-guide .profession-evidence-table:has(th:nth-child(3)) tbody td { margin-top: 10px; }
   .career-section.profession-guide .profession-mobile-column { display: block; color: #5f5f66; font-size: 10px; line-height: 1.6; margin-bottom: 3px; }
 }
+
+/* Editorial workflow: reading order stays intact when the diagram stacks. */
+.career-section.profession-guide figure.profession-workflow { margin: 34px 0; padding: 25px 0 28px; border-block: 1px solid var(--border); scroll-margin-top: 28px; }
+.career-section.profession-guide .profession-workflow figcaption { margin: 0 0 30px; max-width: none; font-size: 20px; font-weight: 600; line-height: 1.4; color: #1b1c1f; }
+.career-section.profession-guide .profession-workflow-stages { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 0 24px; list-style: none; margin: 0; padding: 0; }
+.career-section.profession-guide .profession-workflow-stages>li { position: relative; margin: 0; padding: 0; min-width: 0; }
+.career-section.profession-guide .profession-workflow-stages>li:not(:last-child)::after { content: ''; position: absolute; left: 35px; right: -17px; top: 15px; border-top: 1px solid #c7c9ce; }
+.career-section.profession-guide .profession-workflow-stages>li:not(:last-child)::before { content: ''; position: absolute; right: -17px; top: 12px; width: 7px; height: 7px; border-top: 1px solid #898d95; border-right: 1px solid #898d95; transform: rotate(45deg); }
+.career-section.profession-guide .profession-workflow-step { position: relative; display: flex; align-items: center; justify-content: center; width: 31px; height: 31px; border: 1px solid #2d2e32; border-radius: 50%; color: #28292d; background: #fff; font-size: 11px; font-variant-numeric: tabular-nums; margin-bottom: 18px; }
+.career-section.profession-guide .profession-workflow-stages>li>strong { display: block; font-size: 16px; line-height: 1.5; font-weight: 600; color: #26272b; }
+.career-section.profession-guide .profession-workflow-stages>li>p { font-size: 13px; line-height: 1.75; margin: 7px 0 0; }
+.career-section.profession-guide .profession-workflow-check .profession-workflow-step { border-color: #0579a1; background: #0579a1; color: white; }
+.career-section.profession-guide .profession-workflow-review { position: relative; margin-top: 30px; padding-top: 13px; border-top: 1px dashed #8a8e95; }
+.career-section.profession-guide .profession-workflow-review::before { content: ''; position: absolute; height: 23px; top: -24px; left: 15px; border-left: 1px dashed #8a8e95; }
+.career-section.profession-guide .profession-workflow-review>strong { display: block; font-size: 12px; line-height: 1.5; font-weight: 600; color: #4f5158; }
+.career-section.profession-guide .profession-workflow-review>p { font-size: 12px; line-height: 1.7; margin: 6px 0 0; }
+@media(max-width:600px) {
+  .career-section.profession-guide .profession-workflow figcaption { font-size: 19px; margin-bottom: 25px; }
+  .career-section.profession-guide .profession-workflow-stages { grid-template-columns: minmax(0,1fr); gap: 0; }
+  .career-section.profession-guide .profession-workflow-stages>li { padding: 0 0 26px 49px; }
+  .career-section.profession-guide .profession-workflow-stages>li:last-child { padding-bottom: 0; }
+  .career-section.profession-guide .profession-workflow-step { position: absolute; left: 0; top: 0; margin: 0; }
+  .career-section.profession-guide .profession-workflow-stages>li:not(:last-child)::after { top: 36px; bottom: 7px; left: 15px; right: auto; border: 0; border-left: 1px solid #c7c9ce; }
+  .career-section.profession-guide .profession-workflow-stages>li:not(:last-child)::before { left: 12px; right: auto; top: auto; bottom: 7px; transform: rotate(135deg); }
+  .career-section.profession-guide .profession-workflow-stages>li>p { margin-top: 4px; }
+  .career-section.profession-guide .profession-workflow-review { margin-top: 25px; padding-top: 12px; }
+}

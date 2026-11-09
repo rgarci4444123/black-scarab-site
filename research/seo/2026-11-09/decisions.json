@@ -31,6 +31,21 @@
         "how to become a perception engineer"
       ],
       "rationale": "Use the established employer title and clarify the robotics context in metadata. Cover interpreting sensor observations; explain the boundary with robot learning and localization without duplicating those guides."
+    },
+    {
+      "occupationId": "robotics-data-engineer",
+      "h1": "How to Become a Robotics Data Engineer",
+      "seoTitle": "Robotics Data Engineer: Skills, Salary & Career Guide",
+      "description": "Explore robotics data engineering: sensor recordings, data pipelines, dataset quality, employer qualifications, salary research and a practical portfolio project.",
+      "path": "/career-paths/platforms-simulation/robotics-data-engineer",
+      "primaryQuery": "robotics data engineer",
+      "supportingTopics": [
+        "robotics data engineer salary",
+        "robot data infrastructure",
+        "robotics dataset engineering",
+        "how to become a robotics data engineer"
+      ],
+      "rationale": "Use the recognized employer title. Focus on reliable robot-data supply and distinguish it from model development, perception algorithms and training infrastructure."
     }
   ]
 }

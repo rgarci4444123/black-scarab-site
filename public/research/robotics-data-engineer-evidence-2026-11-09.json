@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "reviewedAt": "2026-11-09",
+  "aggregatePath": "/research/physical-ai-careers-2026-11-02.json",
+  "aggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "rawArchive": {
+    "relativeRoot": "research/physical-ai/2026-11-02",
+    "normalizedRecords": "postings.jsonl",
+    "manifestHash": "6b48026839dcafc9d68144cf3fbedf38889984ad96f667a21e058b4d25f26f14"
+  },
+  "interpretation": "Contextual guide review layer; original dated research remains unchanged.",
+  "roles": {
+    "robotics-data-engineer": {
+      "recordIds": [
+        "agile-robots:greenhouse:5006103101",
+        "figure:greenhouse:4345915006",
+        "gram:greenhouse:4377781009",
+        "dyna:ashby:43dcc186-62b1-4641-9365-3cb9767fc653",
+        "fieldai:lever:e3b7bac7-5410-44bb-964c-02815fbd0c97",
+        "nuro:greenhouse:7736012",
+        "skydio:ashby:134f29cc-da9f-4214-9d9c-d044f93af39e",
+        "tri:lever:5b1a4365-272b-4541-8f7d-46f0bf0d3e4f",
+        "physical-intelligence:ashby:c01b0e18-5eb8-4255-a10a-7e9a171676b7"
+      ],
+      "auditPath": "research/career-guides/robotics-data-engineer/evidence-audit.json",
+      "compensation": [
+        {
+          "employer": "FieldAI",
+          "title": "Software Engineer, Data Engineering",
+          "url": "https://jobs.lever.co/field-ai/e3b7bac7-5410-44bb-964c-02815fbd0c97",
+          "minimum": 115000,
+          "maximum": 170000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "recordId": "fieldai:lever:e3b7bac7-5410-44bb-964c-02815fbd0c97",
+          "location": "Irvine, CA"
+        },
+        {
+          "employer": "GRAM",
+          "title": "Senior Software Engineer, Robot Data Infrastructure",
+          "url": "https://job-boards.greenhouse.io/gram/jobs/4377781009",
+          "minimum": 190000,
+          "maximum": 240000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "explicit annual salary; base pay where stated in source",
+          "recordId": "gram:greenhouse:4377781009",
+          "location": "San Francisco Bay Area, CA"
+        },
+        {
+          "employer": "Figure",
+          "title": "Helix AI Engineer, Data Infrastructure",
+          "url": "https://job-boards.greenhouse.io/figureai/jobs/4345915006",
+          "minimum": 150000,
+          "maximum": 400000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "explicit annual salary; base pay where stated in source",
+          "recordId": "figure:greenhouse:4345915006",
+          "location": "San Jose, CA"
+        }
+      ],
+      "skillPresentation": "qualitative-source-comparison",
+      "scopeNote": "Broad cohort includes enterprise analytics, fleet diagnostics and mixed collection management. Guide focuses on robot-data supply; no clean skill-frequency or opening totals inferred."
+    }
+  },
+  "records": [
+    {
+      "id": "agile-robots:greenhouse:5006103101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Robotics Data Engineer (m/f/d) Data Generation & Curation",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/5006103101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "8ba4e4bdc87b50dc8a1387f29b3ec2d7014543244fdd0c13a3e57ad665ee55a2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original role flags and classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Multimodal capture, temporal alignment, dataset health, curation and episode schemas.",
+      "qualification": "Degree in Computer Science, Robotics, Electrical Engineering, or a related field, or equivalent qualification plus professional experience building comparable data or robotics software systems.",
+      "qualificationSpans": [
+        {
+          "text": "Degree in Computer Science, Robotics, Electrical Engineering, or a related field, or equivalent qualification plus professional experience building comparable data or robotics software systems.",
+          "start": 1384,
+          "end": 1577
+        }
+      ]
+    },
+    {
+      "id": "figure:greenhouse:4345915006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Helix AI Engineer, Data Infrastructure",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4345915006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "028ddee2ca1aa2ba0b0c2fc83958dd5d6572e89306f500d3f3fd1533aec1ca77",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original role flags and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robot-data offload, storage, access and researcher workflows.",
+      "qualification": "Bachelor's or Master's degree in Computer Science, Robotics, Engineering, or a related field.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's or Master's degree in Computer Science, Robotics, Engineering, or a related field.",
+          "start": 1377,
+          "end": 1470
+        }
+      ]
+    },
+    {
+      "id": "gram:greenhouse:4377781009",
+      "employerId": "gram",
+      "employer": "GRAM",
+      "title": "Senior Software Engineer, Robot Data Infrastructure",
+      "locations": [
+        "Palo Alto, California, United States",
+        "San Francisco Bay Area, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/gram/jobs/4377781009",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "714922694d70c4cd9ded57030663cb9d20013d2bcc2c8d62bbf4ed36336c3f85",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gram.json",
+      "rawSourceFileSha256": "706bd3d6bc62b71be02626b1dfae72b01f35c08b1f1831e36845fab26fff70b8",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original role flags and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Versioned schemas, data lineage, quality controls, ingestion and reproducible dataset construction.",
+      "qualification": "Bachelor's degree in computer science, electrical engineering, applied mathematics, or a related field, or equivalent practical experience.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in computer science, electrical engineering, applied mathematics, or a related field, or equivalent practical experience.",
+          "start": 2166,
+          "end": 2305
+        }
+      ]
+    },
+    {
+      "id": "dyna:ashby:43dcc186-62b1-4641-9365-3cb9767fc653",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Software Engineer, Data Infra",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/43dcc186-62b1-4641-9365-3cb9767fc653",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "2c11ebe0fa4c8ea212b1f6ffe0315ee643a3e6a3a21bc339cb0f9132e96f6460",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original role flags and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Multimodal pipelines, annotation tools, geometric signal extraction and researcher interfaces.",
+      "qualification": "5+ years of professional software experience, ideally with a focus on data-intensive or \"human-in-the-loop\" platforms.",
+      "qualificationSpans": [
+        {
+          "text": "5+ years of professional software experience, ideally with a focus on data-intensive or \"human-in-the-loop\" platforms.",
+          "start": 2332,
+          "end": 2450
+        }
+      ]
+    },
+    {
+      "id": "fieldai:lever:e3b7bac7-5410-44bb-964c-02815fbd0c97",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Software Engineer, Data Engineering",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/e3b7bac7-5410-44bb-964c-02815fbd0c97",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "42de7189607ddd1352d1e204893189125518abd84cdfe27026557681f312efd8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original role flags and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Production robot telemetry, log and sensor-data pipelines.",
+      "qualification": "Bachelor's or Master's degree in Computer Science, Engineering, or a related technical field.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's or Master's degree in Computer Science, Engineering, or a related technical field.",
+          "start": 2010,
+          "end": 2103
+        }
+      ]
+    },
+    {
+      "id": "nuro:greenhouse:7736012",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Senior Software Engineer, Perception Data Infrastructure",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=7736012",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "f0092a024bbf1619147740ed631a45f942f87ef7d955e8e131aa046d7de212e1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original role flags and classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Vehicle sensor data, calibration validation and annotation/ground-truth tooling.",
+      "qualification": "BS/MS in Computer Science, Software Engineering, Robotics, or a related quantitative field.",
+      "qualificationSpans": [
+        {
+          "text": "BS/MS in Computer Science, Software Engineering, Robotics, or a related quantitative field.",
+          "start": 2925,
+          "end": 3016
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:134f29cc-da9f-4214-9d9c-d044f93af39e",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Senior Autonomy Engineer, Data Curation",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/134f29cc-da9f-4214-9d9c-d044f93af39e",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "302a9c0b9c3b1839fb3dad803507748c6ea6a7d960f545598725a94115d4376e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original role flags and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Drone-log curation, dataset discovery, quality and versioning.",
+      "qualification": "5+ years of professional software engineering experience (or equivalent), with significant ownership of production systems.",
+      "qualificationSpans": [
+        {
+          "text": "5+ years of professional software engineering experience (or equivalent), with significant ownership of production systems.",
+          "start": 1740,
+          "end": 1863
+        }
+      ]
+    },
+    {
+      "id": "tri:lever:5b1a4365-272b-4541-8f7d-46f0bf0d3e4f",
+      "employerId": "tri",
+      "employer": "Toyota Research Institute",
+      "title": "Senior Data Engineer, Large Behavior Models",
+      "locations": [
+        "Los Altos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/tri/5b1a4365-272b-4541-8f7d-46f0bf0d3e4f",
+      "verifiedAt": "2026-11-02T17:47:00+00:00",
+      "sourceTextSha256": "69acb86e2e617aa58f03595571150b67b39a419c8890c8073a43e23724beda59",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/tri.json",
+      "rawSourceFileSha256": "bbf3c1c426599c1f57c29a3362877f6a89702df32f86982ea1a10bb97fef2f15",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original role flags and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Autonomous-driving fleet and simulation data, labeling, metadata and feature stores.",
+      "qualification": "Bachelor’s or Master’s degree in Computer Science, Data Engineering, or a related field.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s or Master’s degree in Computer Science, Data Engineering, or a related field.",
+          "start": 2289,
+          "end": 2377
+        }
+      ]
+    },
+    {
+      "id": "physical-intelligence:ashby:c01b0e18-5eb8-4255-a10a-7e9a171676b7",
+      "employerId": "physical-intelligence",
+      "employer": "Physical Intelligence",
+      "title": "Software Engineer, Data Quality",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/physicalintelligence/c01b0e18-5eb8-4255-a10a-7e9a171676b7",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "463446d79f4c45c06f6878e385b8e2d00451fe85a637dab4d814f4d6a1e96b7a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/physical-intelligence.json",
+      "rawSourceFileSha256": "4636b655b7fab48b151da10f872a9268960654cc165ce7e06a60e83e91cc5c99",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Selected stored full-source review; original role flags and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Data-quality tooling, acceptance rubrics and vendor audit workflows.",
+      "qualification": "~5 years of experience across building customer facing software.",
+      "qualificationSpans": [
+        {
+          "text": "~5 years of experience across building customer facing software.",
+          "start": 1589,
+          "end": 1653
+        }
+      ]
+    }
+  ]
+}
