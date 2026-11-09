@@ -127,3 +127,15 @@ Production uses the existing GitHub `main` to Vercel workflow. Validate the care
 ### Quiz results presentation
 
 The completed quiz presents one prominent category, two careers, a quieter secondary field and explore/retake actions. Only published profession guides are linked. The questionnaire and matching engine retain their previous source hashes. Validation covers the regular match, deterministic tie, undecided-interest state, retake reset, publication-gated career links and responsive rendering.
+
+### Sequential guide expansion, November 9
+
+The Electrical Engineer guide is the next completed local preview at `/career-paths/hardware-manufacturing/electrical-engineer`. It reuses the existing editorial template. The existing four guides, quiz questions, scoring and original research exports remain unchanged. A completed local registry entry exposes the preview through category links, assessment links and the local sitemap; it does not publish the page to production. No first-publication date is assigned before deployment.
+
+The new evidence layer is `/research/electrical-engineer-evidence-2026-11-09.json`, pinned to the original November 2 snapshot. Eight contextual employer-source reviews retain qualification spans and original source hashes. Skills are presented qualitatively because the broad electrical cohort also includes adjacent work. The $181,000 Black Scarab compensation estimate uses 28 eligible U.S. advertisements across 11 employers; its separate derivation preserves inclusion decisions, exclusions, salary basis and source provenance. Reproduce it with `python3 scripts/build-electrical-guide-research.py --archive-root '/path/to/Black Scarab Career Paths'`. The research validator resolves each guide's evidence path, preserving older exports.
+
+Continue in the order recorded in `docs/career-guide-queue.json`: complete research, draft, local implementation and responsive review for one profession before moving to the next. Perception Engineer follows Electrical Engineer, then Robotics Data Engineer and Field Service Engineer.
+
+The November 9 user revision supplies the Electrical Engineer headline, seven expanded article sections, four salary examples, a 3.3 V I2C distance-sensor portfolio project and three learning links. The matching source record places the Shield AI example in Dallas. The retained methodology links the verified compensation derivation; the supplied draft’s missing-methodology note is superseded. The source hash and these corrections are recorded in `research/career-guides/electrical-engineer/editorial-revision-2026-11-09.json`.
+
+The user-supplied electrical architecture diagram follows the opening work description. Its 1536 × 1024 proportions are preserved in a lossless WebP asset, with descriptive alternative text and a full-size link. The local development preview on port 3021 updates as edits are made.

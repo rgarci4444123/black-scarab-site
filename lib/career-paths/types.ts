@@ -50,7 +50,7 @@ export type CareerGuideBlock =
   | { type: 'heading'; text: string }
   | { type: 'list'; items: string[]; ordered?: boolean }
   | { type: 'table'; caption: string; columns: string[]; rows: string[][] }
-  | { type: 'figure'; src: string; alt: string; caption: string; width: number; height: number }
+  | { type: 'figure'; src: string; alt: string; caption: string; width: number; height: number; fullSizeHref?: string }
   | { type: 'summary-list'; items: { title: string; text: string }[] }
   | { type: 'calculation'; title: string; formula: string; example: string; note: string }
   | { type: 'skill-mentions'; title: string; denominator: number; note: string; detailNote: string;

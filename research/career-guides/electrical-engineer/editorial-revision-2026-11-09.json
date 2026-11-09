@@ -1,0 +1,21 @@
+{
+  "revisedAt": "2026-11-09",
+  "sourceSha256": "3542a2f0d8552842d26dd03d7b20a4bab2c634c82e12fd534fdd81961579a23d",
+  "source": "User-supplied editorial revision",
+  "headline": "How to Become an Electrical Engineer in Robotics",
+  "changesFromSuppliedCopy": [
+    {
+      "section": "salary",
+      "change": "Shield AI location corrected from San Diego to Dallas to match the cited archived requisition."
+    },
+    {
+      "section": "salary",
+      "change": "Annual salary label retained; structured salary does not consistently identify base pay."
+    },
+    {
+      "section": "methodology",
+      "change": "Replaced missing-methodology assertion with the existing verified 28-posting, 11-employer derivation and source links."
+    }
+  ],
+  "preservedMainSectionCount": 7
+}

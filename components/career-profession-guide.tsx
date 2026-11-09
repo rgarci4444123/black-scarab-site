@@ -16,7 +16,7 @@ function GuideBlock({block}:{block:CareerGuideBlock}) {
         <tbody>{block.rows.map((row,index)=><tr key={index}>{row.map((cell,column)=>column===0?<th scope="row" key={column}>{cell}</th>:<td key={column}>{block.columns.length>2?<span className="profession-mobile-column" aria-hidden="true">{block.columns[column]}</span>:null}{cell}</td>)}</tr>)}</tbody>
       </table>
     </div>;
-    case 'figure': return <figure><Image src={block.src} alt={block.alt} width={block.width} height={block.height}/><figcaption>{block.caption}</figcaption></figure>;
+    case 'figure': return <figure className={block.fullSizeHref?'profession-guide-illustration':undefined}><Image src={block.src} alt={block.alt} width={block.width} height={block.height} quality={block.fullSizeHref?95:undefined} sizes={block.fullSizeHref?'(max-width: 834px) calc(100vw - 74px), 760px':undefined}/><figcaption>{block.fullSizeHref?<a href={block.fullSizeHref}>{block.caption}</a>:block.caption}</figcaption></figure>;
     case 'summary-list': return <dl className="profession-summary-list">{block.items.map(item=><div key={item.title}><dt>{item.title}</dt><dd><p>{item.text}</p></dd></div>)}</dl>;
     case 'calculation': return <aside className="profession-calculation" aria-label={block.title}><h3>{block.title}</h3><p className="profession-formula">{block.formula}</p><p className="profession-formula-example">{block.example}</p><p>{block.note}</p></aside>;
     case 'skill-mentions': return <CareerSkillMentions block={block}/>;

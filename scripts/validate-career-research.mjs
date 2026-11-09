@@ -12,6 +12,13 @@ const aggregateFile = 'public/research/physical-ai-careers-2026-11-02.json';
 const snapshot = read(aggregateFile);
 const evidence = read('public/research/career-guide-evidence-2026-11-02.json');
 const {publishedCareerGuides,guidePath} = createContentLoader()('lib/career-paths/guides.ts');
+const evidenceSets = new Map([['/research/career-guide-evidence-2026-11-02.json',evidence]]);
+for(const guide of publishedCareerGuides) {
+  if(!evidenceSets.has(guide.research.evidencePath)) {
+    assert.match(guide.research.evidencePath,/^\/research\/[a-z0-9-]+\.json$/);
+    evidenceSets.set(guide.research.evidencePath,read('public'+guide.research.evidencePath));
+  }
+}
 
 function validateSnapshot(data) {
   assert.ok(data.snapshotId && data.manifestHash && /^\d{4}-\d{2}-\d{2}$/.test(data.date));
@@ -31,19 +38,22 @@ function validateSnapshot(data) {
 }
 
 validateSnapshot(snapshot);
-assert.equal(evidence.snapshotId,snapshot.snapshotId);
-assert.equal(evidence.aggregateSha256,sha(fs.readFileSync(aggregateFile)),'Immutable aggregate hash');
-assert.equal(evidence.rawArchive.manifestHash,snapshot.manifestHash);
-const records = new Map(evidence.records.map(record=>[record.id,record]));
-assert.equal(records.size,evidence.records.length);
-for(const record of records.values()) {
-  assert.match(record.sourceTextSha256,/^[a-f0-9]{64}$/);
-  assert.match(record.rawSourceFileSha256,/^[a-f0-9]{64}$/);
-  assert.ok(record.url.startsWith('https://') && record.employerId && record.locations.length);
+for(const selected of evidenceSets.values()) {
+  assert.equal(selected.snapshotId,snapshot.snapshotId);
+  assert.equal(selected.aggregateSha256,sha(fs.readFileSync(aggregateFile)),'Immutable aggregate hash');
+  assert.equal(selected.rawArchive.manifestHash,snapshot.manifestHash);
+  assert.equal(new Set(selected.records.map(record=>record.id)).size,selected.records.length);
+  for(const record of selected.records) {
+    assert.match(record.sourceTextSha256,/^[a-f0-9]{64}$/);
+    assert.match(record.rawSourceFileSha256,/^[a-f0-9]{64}$/);
+    assert.ok(record.url.startsWith('https://') && record.employerId && record.locations.length);
+  }
 }
+const records = new Map([...evidenceSets.values()].flatMap(selected=>selected.records).map(record=>[record.id,record]));
 for(const guide of publishedCareerGuides) {
   assert.equal(guide.research.snapshotId,snapshot.snapshotId);
-  const role = evidence.roles[guide.research.roleId]; assert.ok(role,guide.id);
+  const selected=evidenceSets.get(guide.research.evidencePath);
+  const role = selected.roles[guide.research.roleId]; assert.ok(role,guide.id);
   for(const id of role.recordIds) assert.ok(records.has(id),id);
   for(const pay of role.compensation) {
     assert.ok(records.has(pay.recordId));

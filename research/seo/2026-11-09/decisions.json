@@ -1,0 +1,21 @@
+{
+  "researchedAt": "2026-11-09",
+  "method": "Employer-title and informational-intent review. Titles are editorial choices; no search-volume, keyword-difficulty or ranking claim.",
+  "guides": [
+    {
+      "occupationId": "electrical-engineer",
+      "h1": "How to Become an Electrical Engineer in Robotics",
+      "seoTitle": "Robotics Electrical Engineer: Salary, Skills & Career Guide",
+      "description": "Explore electrical engineering in robotics: circuits, power, PCB design, qualifications, Black Scarab compensation research and a sensor-board portfolio project.",
+      "path": "/career-paths/hardware-manufacturing/electrical-engineer",
+      "primaryQuery": "robotics electrical engineer",
+      "supportingTopics": [
+        "electrical engineer robotics salary",
+        "robotics electronics skills",
+        "electrical engineering to robotics",
+        "robotics PCB portfolio"
+      ],
+      "rationale": "Preserve the recognized Electrical Engineer profession while making the robotics application explicit. Distinguish electronics design from electrical installation, embedded software and industrial automation."
+    }
+  ]
+}

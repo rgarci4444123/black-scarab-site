@@ -1,0 +1,348 @@
+{
+  "reviewedAt": "2026-11-09",
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "roleId": "electrical-engineer",
+  "scope": "Robot circuit/board design, power, sensing, electrical architecture and bring-up. Firmware, test engineering and industrial automation remain neighboring professions.",
+  "cohort": {
+    "postings": 111,
+    "employers": 25,
+    "presentation": "Background research only; no live-opening claim or broad skill-frequency graphic."
+  },
+  "reviewedRecordIds": [
+    "figure:greenhouse:4313470006",
+    "apptronik:greenhouse:6150041004",
+    "shield-ai:lever:1b229cdc-9a0b-4704-b39b-b3b4c6e3fa89",
+    "agility:greenhouse:6103178004",
+    "standard-bots:ashby:05715409-54f5-4e14-ba35-67f47b30d845",
+    "skydio:ashby:9cb4555e-4fd1-410b-921b-cc17d56ba5df",
+    "skydio:ashby:f0c26a3c-d999-4dc2-8812-b3835f633ded",
+    "one-x:ashby:14a3f92c-24ec-4722-8754-d0d1366c9ed7"
+  ],
+  "qualificationEvidence": [
+    {
+      "id": "figure:greenhouse:4313470006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Electrical Engineer, Torso",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4313470006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "4020f40ec42c238e609a9640dfdd1bc61dc01ebc13a639a909444e26653936b6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored source read for guide context and qualifications; original role-review flag unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robot compute, camera, sensing and power board design.",
+      "education": "Bachelor or graduate degree in Electrical Engineering or related field.",
+      "experience": "2+ years of industry experience.",
+      "qualificationSpans": [
+        {
+          "kind": "education",
+          "text": "Bachelor or graduate degree in Electrical Engineering or related field.",
+          "start": 954,
+          "end": 1025
+        },
+        {
+          "kind": "experience",
+          "text": "2+ years of industry experience.",
+          "start": 1026,
+          "end": 1058
+        }
+      ]
+    },
+    {
+      "id": "apptronik:greenhouse:6150041004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Senior Electrical Engineer - Power",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6150041004?gh_jid=6150041004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "b09ab0e87d9c3a1aa189f100adaa7e80474f1d5ef483d50192e75047bd57a2aa",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored source read for guide context and qualifications; original role-review flag unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Apollo power electronics, distribution and battery subsystem design.",
+      "education": "Bachelors, Masters, or PhD degree in Electrical Engineering or related field.",
+      "experience": "At least 5 years of experience in Electrical Engineering.",
+      "qualificationSpans": [
+        {
+          "kind": "education",
+          "text": "Bachelors, Masters, or PhD degree in Electrical Engineering or related field.",
+          "start": 4458,
+          "end": 4535
+        },
+        {
+          "kind": "experience",
+          "text": "At least 5 years of experience in Electrical Engineering.",
+          "start": 4536,
+          "end": 4593
+        }
+      ]
+    },
+    {
+      "id": "shield-ai:lever:1b229cdc-9a0b-4704-b39b-b3b4c6e3fa89",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Electrical Engineer I - New Grad",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/1b229cdc-9a0b-4704-b39b-b3b4c6e3fa89",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "c3deab7268b02caf589f0bb09c30deef7cf3b2adc7e660d196d4ec20fecc80cf",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored source read for guide context and qualifications; original role-review flag unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Entry-level autonomous-aircraft avionics and circuit design with senior mentorship.",
+      "education": "Have a degree in Electrical Engineering or equivalent",
+      "experience": "Have been part of an engineering team/club",
+      "qualificationSpans": [
+        {
+          "kind": "education",
+          "text": "Have a degree in Electrical Engineering or equivalent",
+          "start": 2020,
+          "end": 2073
+        },
+        {
+          "kind": "experience",
+          "text": "Have been part of an engineering team/club",
+          "start": 2104,
+          "end": 2146
+        }
+      ]
+    },
+    {
+      "id": "agility:greenhouse:6103178004",
+      "employerId": "agility",
+      "employer": "Agility Robotics",
+      "title": "Senior Electrical Engineer",
+      "locations": [
+        "Fremont, California, United States",
+        "Hybrid- Fremont, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=6103178004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "571f38ea92e1fcf91861a5d5ddecde13f9c346535dd291671ee756abc2462245",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agility.json",
+      "rawSourceFileSha256": "ac356350940b45d164fbf75881d9254f4c3aadaa5e83e8f798a621610cb7c731",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored source read for guide context and qualifications; original role-review flag unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Production-ready Digit electronics, board bring-up and verification.",
+      "education": "A Bachelor's or Master's degree in Electrical Engineering (or equivalent).",
+      "experience": "7 or more years of electrical design experience",
+      "qualificationSpans": [
+        {
+          "kind": "education",
+          "text": "A Bachelor's or Master's degree in Electrical Engineering (or equivalent).",
+          "start": 1827,
+          "end": 1901
+        },
+        {
+          "kind": "experience",
+          "text": "7 or more years of electrical design experience",
+          "start": 1902,
+          "end": 1949
+        }
+      ]
+    },
+    {
+      "id": "standard-bots:ashby:05715409-54f5-4e14-ba35-67f47b30d845",
+      "employerId": "standard-bots",
+      "employer": "Standard Bots",
+      "title": "Senior Electrical Engineer (Hybrid)",
+      "locations": [
+        "Glen Cove, NY"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/standardbots/05715409-54f5-4e14-ba35-67f47b30d845",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "1eac619ff28baa719dab0bea374925fbe712868bf05a97fbb2406c9d5c47e957",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored source read for guide context and qualifications; original role-review flag unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Industrial robot motor, compute, power and sensor electronics from concept to production.",
+      "education": "Experience: You have a bachelor's or graduate degree in Electrical Engineering (or a related field) and 5+ years designing, building, and testing PCBAs, including designs you've taken through production release",
+      "experience": "We don't require a background in robotics — but we do require deep, hands-on electronics experience.",
+      "qualificationSpans": [
+        {
+          "kind": "education",
+          "text": "Experience: You have a bachelor's or graduate degree in Electrical Engineering (or a related field) and 5+ years designing, building, and testing PCBAs, including designs you've taken through production release",
+          "start": 2889,
+          "end": 3099
+        },
+        {
+          "kind": "experience",
+          "text": "We don't require a background in robotics — but we do require deep, hands-on electronics experience.",
+          "start": 2083,
+          "end": 2183
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:9cb4555e-4fd1-410b-921b-cc17d56ba5df",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Electrical Design Engineer",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/9cb4555e-4fd1-410b-921b-cc17d56ba5df",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "a3be8dc0d46aac6094dfe2c6e6e6e480dbe765f227186857291b6d9cd8cd4e57",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored source read for guide context and qualifications; original role-review flag unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Autonomous-drone compute, camera and power system design.",
+      "education": "",
+      "experience": "Experience shipping high-volume consumer electronic products in a senior or architect-level role",
+      "qualificationSpans": [
+        {
+          "kind": "experience",
+          "text": "Experience shipping high-volume consumer electronic products in a senior or architect-level role",
+          "start": 1293,
+          "end": 1389
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:f0c26a3c-d999-4dc2-8812-b3835f633ded",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Electrical Engineer (all levels)",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/f0c26a3c-d999-4dc2-8812-b3835f633ded",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "2936d256a6e822b05d670254a76fd5bb709094e493467e17a1b59c53d6aadaae",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored source read for guide context and qualifications; original role-review flag unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Autonomous-drone electronics, all-levels title; source still describes senior/architect product experience.",
+      "education": "",
+      "experience": "Experience shipping high-volume consumer electronic products in a senior or architect-level role",
+      "qualificationSpans": [
+        {
+          "kind": "experience",
+          "text": "Experience shipping high-volume consumer electronic products in a senior or architect-level role",
+          "start": 1299,
+          "end": 1395
+        }
+      ]
+    },
+    {
+      "id": "one-x:ashby:14a3f92c-24ec-4722-8754-d0d1366c9ed7",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Electrical Engineer - Hands",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/14a3f92c-24ec-4722-8754-d0d1366c9ed7",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "17baeddaae9c8d73476b4a6a2a44c0d09c5520cf5433224ebbdc4ef8dca71cc5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored source read for guide context and qualifications; original role-review flag unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Humanoid electrical architecture, bring-up and production; pay-field conflict excluded from estimate.",
+      "education": "Bachelor's or Master's degree in Electrical Engineering or a related field",
+      "experience": "5+ years of professional experience designing and shipping complex electrical systems",
+      "qualificationSpans": [
+        {
+          "kind": "education",
+          "text": "Bachelor's or Master's degree in Electrical Engineering or a related field",
+          "start": 3291,
+          "end": 3365
+        },
+        {
+          "kind": "experience",
+          "text": "5+ years of professional experience designing and shipping complex electrical systems",
+          "start": 3366,
+          "end": 3451
+        }
+      ]
+    }
+  ],
+  "compensationDerivation": "/research/electrical-engineer-compensation-2026-11-02.json",
+  "researchSources": [
+    {
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4313470006",
+      "checkedAt": "2026-11-09",
+      "finding": "Torso electronics responsibilities, degree, experience and annual base range confirmed on employer page."
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/apptronik/jobs/6150041004",
+      "checkedAt": "2026-11-09",
+      "finding": "Power electronics, battery, Altium and prototype-to-production ownership confirmed."
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/standardbots/05715409-54f5-4e14-ba35-67f47b30d845",
+      "checkedAt": "2026-11-09",
+      "finding": "Industrial robot electronics title and advertised range confirmed; current listing is on-site rather than the archived hybrid wording."
+    },
+    {
+      "url": "https://www.bls.gov/ooh/architecture-and-engineering/electrical-and-electronics-engineers.htm",
+      "checkedAt": "2026-11-09",
+      "finding": "Bachelor-level engineering preparation and practical lab/co-op experience; broad BLS wages not substituted for robotics compensation."
+    },
+    {
+      "url": "https://docs.kicad.org/9.0/en/getting_started_in_kicad/getting_started_in_kicad.html",
+      "checkedAt": "2026-11-09",
+      "finding": "Official schematic, PCB layout, rules-check and fabrication workflow."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/",
+      "checkedAt": "2026-11-09",
+      "finding": "Introductory undergraduate circuits course with lecture videos, problems and lab/design exercises."
+    },
+    {
+      "url": "https://www.ti.com/en-us/design-development/educational-resources/video/series/precision-labs",
+      "checkedAt": "2026-11-09",
+      "finding": "Manufacturer training in analog signal-chain and embedded electronics."
+    }
+  ],
+  "editorialInterpretation": "A motor-start brownout scenario, portfolio sequence and career-transition advice are Black Scarab teaching examples, not employer case studies."
+}

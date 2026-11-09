@@ -8,10 +8,10 @@ const {occupations}=load('lib/career-paths/occupations.ts');
 const snapshot=JSON.parse(fs.readFileSync('public/research/physical-ai-careers-2026-11-02.json','utf8'));
 const guide=publishedCareerGuides[0];
 
-test('four complete guides are navigable, with no draft or empty entries',()=>{
- assert.equal(publishedCareerGuides.length,4);
+test('complete guides are navigable, with no draft or empty entries',()=>{
+ assert.equal(publishedCareerGuides.length,5);
  assert.equal(guidePath(guide),'/career-paths/hardware-manufacturing/mechanical-engineer');
- for(const role of occupations)assert.equal(Boolean(guideForOccupation(role.id)),['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer'].includes(role.id));
+ for(const role of occupations)assert.equal(Boolean(guideForOccupation(role.id)),['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer'].includes(role.id));
  assert.equal(isPublishedCareerGuide({...guide,status:'draft'}),false);
  assert.equal(isPublishedCareerGuide({...guide,sections:[]}),false);
  assert.equal(isPublishedCareerGuide({...guide,sections:[{id:'empty',heading:'Empty',paragraphs:[]}]}),false);
@@ -23,7 +23,7 @@ test('guide sections, research tables, citations and learning resources are inte
  assert.equal(new Set(['the-role',...allSections.map(section=>section.id)]).size,9);
  const sources=new Set(guide.citations.map(source=>source.id));assert.equal(sources.size,guide.citations.length);
  for(const section of allSections){for(const id of section.sourceIds||[])assert.ok(sources.has(id),id);for(const block of section.blocks||[]){if(block.type==='figure')assert.ok(fs.existsSync('public'+block.src));if(block.type==='table'){for(const row of block.rows)assert.equal(row.length,block.columns.length);}if(block.type==='resources'){for(const item of block.items)assert.ok(guide.citations.some(source=>source.url===item.href));}}}
- const mechanical=snapshot.roles.find(role=>['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer'].includes(role.id));
+ const mechanical=snapshot.roles.find(role=>['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer'].includes(role.id));
  const skills=guide.sections.find(section=>section.id==='skills').blocks.find(block=>block.type==='skill-mentions');
  assert.equal(skills.denominator,mechanical.postingCount);
  assert.deepEqual(skills.rows,mechanical.skills.map(({label,count,required,preferred,contextual})=>({label,count,required,preferred,contextual})));
@@ -44,15 +44,17 @@ test('gripper example uses per-jaw force, balanced static friction and the state
  const figure=guide.sections[0].blocks.find(block=>block.type==='figure');assert.ok(figure.caption.includes('2f = mg'));assert.ok(figure.caption.includes('2μF ≥ mg'));
 });
 
-test('all four guides retain unique researched metadata, complete sources and explicit snapshot pins',()=>{
+test('all guides retain unique metadata, complete sources and explicit snapshot pins',()=>{
  const decisions=JSON.parse(fs.readFileSync('research/seo/2026-11-03/decisions.json','utf8'));
- const evidence=JSON.parse(fs.readFileSync('public/research/career-guide-evidence-2026-11-02.json','utf8'));
  assert.equal(decisions.completedBeforeNewGuideDrafting,true);
- for(const key of ['title','seoTitle','description'])assert.equal(new Set(publishedCareerGuides.map(item=>item[key])).size,4);
+ for(const key of ['title','seoTitle','description'])assert.equal(new Set(publishedCareerGuides.map(item=>item[key])).size,publishedCareerGuides.length);
  for(const item of publishedCareerGuides){
-  const decision=decisions.guides.find(row=>row.occupationId===item.occupationId);
+  const decision=[...decisions.guides,...JSON.parse(fs.readFileSync('research/seo/2026-11-09/decisions.json','utf8')).guides].find(row=>row.occupationId===item.occupationId);
+  const itemEvidence=JSON.parse(fs.readFileSync('public'+item.research.evidencePath,'utf8'));
   assert.equal(guidePath(item),decision.path);assert.equal(item.title,decision.h1);assert.equal(item.seoTitle,decision.seoTitle);assert.equal(item.description,decision.description);
-  assert.equal(item.research.snapshotId,snapshot.snapshotId);assert.equal(item.publishedAt,'2026-11-03');
+  assert.equal(item.research.snapshotId,snapshot.snapshotId);
+  if(item.occupationId==='electrical-engineer'){assert.equal(item.publishedAt,'2026-11-09');assert.equal(item.reviewedAt,'2026-11-09');}
+  else assert.equal(item.publishedAt,'2026-11-03');
   assert.equal(item.sections.length,7);assert.ok(item.introduction.length);assert.ok(item.nextSteps.blocks.length);
   const ids=new Set(item.citations.map(source=>source.id));assert.equal(ids.size,item.citations.length);
   const sections=[...item.sections,item.nextSteps];assert.equal(new Set(sections.map(section=>section.id)).size,sections.length);
@@ -61,7 +63,7 @@ test('all four guides retain unique researched metadata, complete sources and ex
    for(const block of section.blocks||[]){
     if(block.type==='resources')for(const resource of block.items)assert.ok(item.citations.some(source=>source.url===resource.href));
     if(block.type==='table')for(const row of block.rows)assert.equal(row.length,block.columns.length);
-    if(block.type==='compensation')for(const pay of block.examples)assert.ok(evidence.roles[item.research.roleId].compensation.some(row=>row.minimum===pay.minimum&&row.maximum===pay.maximum&&row.title===pay.title&&row.period===pay.period&&row.location===pay.location));
+    if(block.type==='compensation')for(const pay of block.examples)assert.ok(itemEvidence.roles[item.research.roleId].compensation.some(row=>row.minimum===pay.minimum&&row.maximum===pay.maximum&&row.title===pay.title&&row.period===pay.period&&row.location===pay.location));
     if(block.type==='skill-mentions')for(const row of block.rows){assert.equal(row.count,row.required+row.preferred+row.contextual);assert.ok(row.count<=block.denominator);}
    }
   }
@@ -87,11 +89,41 @@ test('scope flags prevent contaminated cohorts from becoming frequency charts or
 
 test('assessment guide links cover completed professions without entering the matching engine',()=>{
  const {assessmentGuideLinks}=load('lib/career-paths/guides.ts');
- assert.equal(Object.keys(assessmentGuideLinks).length,4);
+ assert.equal(Object.keys(assessmentGuideLinks).length,5);
  for(const item of publishedCareerGuides)assert.equal(assessmentGuideLinks[item.occupationId],guidePath(item));
- assert.equal(assessmentGuideLinks['electrical-engineer'],undefined);
+ assert.equal(assessmentGuideLinks['electrical-engineer'],'/career-paths/hardware-manufacturing/electrical-engineer');
+ assert.equal(assessmentGuideLinks['perception-engineer'],undefined);
  const engine=fs.readFileSync('lib/career-paths/assessment-engine.ts','utf8');
  assert.doesNotMatch(engine,/publishedCareerGuides|guideForOccupation|assessmentGuideLinks|career-paths\/guides/);
  const component=fs.readFileSync('components/career-assessment.tsx','utf8');
  assert.doesNotMatch(component,/from ['"].*(guides|research)['"]/);
+});
+
+test('electrical compensation is reproducible and separate from the broad cohort',()=>{
+ const item=guideForOccupation('electrical-engineer');
+ const pay=JSON.parse(fs.readFileSync('public/research/electrical-engineer-compensation-2026-11-02.json','utf8'));
+ const values=pay.observations.map(row=>{
+  assert.equal(row.currency,'USD');assert.equal(row.period,'year');
+  assert.deepEqual(row.countries,['United States']);
+  assert.ok(row.minimum>0&&row.maximum>=row.minimum);
+  assert.match(row.sourceTextSha256,/^[a-f0-9]{64}$/);
+  assert.match(row.rawSourceFileSha256,/^[a-f0-9]{64}$/);
+  assert.equal(row.midpoint,(row.minimum+row.maximum)/2);
+  return row.midpoint;
+ }).sort((a,b)=>a-b);
+ const midpoint=values.length%2?values[(values.length-1)/2]:(values[values.length/2-1]+values[values.length/2])/2;
+ assert.equal(pay.exactMedianMidpoint,midpoint);assert.equal(pay.estimate,Math.round(midpoint/1000)*1000);
+ assert.equal(pay.postingCount,new Set(pay.observations.map(row=>row.id)).size);
+ assert.equal(pay.employerCount,new Set(pay.observations.map(row=>row.employerId)).size);
+ assert.equal(pay.postingCount,28);assert.equal(pay.employerCount,11);
+ assert.equal(pay.estimate,181000);
+ assert.ok(pay.excludedObservations.some(row=>row.id==='one-x:ashby:14a3f92c-24ec-4722-8754-d0d1366c9ed7'&&/conflicts/.test(row.reason)));
+ assert.ok(pay.observations.every(row=>!pay.excludedObservations.some(other=>row.id===other.id)));
+ assert.deepEqual(item.overview.map(row=>row.label),['What you do','Core skills','Education','Compensation']);
+ assert.equal(item.overview[3].value,'$181,000/year');
+ assert.equal(item.overview[3].detail,'Black Scarab estimate');
+ assert.equal(item.publishedAt,'2026-11-09');
+ assert.ok(!item.sections.flatMap(section=>section.blocks||[]).some(block=>block.type==='skill-mentions'));
+ const evidence=JSON.parse(fs.readFileSync('public'+item.research.evidencePath,'utf8'));
+ for(const example of evidence.roles['electrical-engineer'].compensation)assert.ok(pay.observations.some(row=>row.id===example.recordId&&row.minimum===example.minimum&&row.maximum===example.maximum));
 });

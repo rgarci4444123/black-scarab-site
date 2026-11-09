@@ -1,0 +1,1178 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "derivedAt": "2026-11-09",
+  "roleId": "electrical-engineer",
+  "sourceAggregate": "/research/physical-ai-careers-2026-11-02.json",
+  "sourceAggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "label": "Black Scarab estimated compensation",
+  "currency": "USD",
+  "period": "year",
+  "basis": "advertised annual salary, excluding bonus and equity",
+  "postingCount": 28,
+  "employerCount": 11,
+  "exactMedianMidpoint": 180750.0,
+  "estimate": 181000,
+  "rounding": "nearest 1000 USD, halves rounded upward",
+  "method": "One midpoint per eligible distinct advertisement, then the median of those midpoints. No experience-level salary bands are inferred.",
+  "eligibility": "U.S. individual-contributor electrical product design in the pinned cohort, including robot electronics, autonomous-vehicle compute, power, sensing and PCB layout. Complete structured annual USD ranges and selected full-source explicit annual base-salary clauses.",
+  "limitations": "Selected employers, locations and mixed experience levels; not a probability sample or entry-level salary. Similar but distinct requisitions count separately. Structured advertised salary fields do not always explicitly identify base pay. Excludes thermal, dedicated test-equipment, manufacturing, sustainment, diagnostics and people-management roles, conflicting pay fields and unverified pay periods.",
+  "observations": [
+    {
+      "id": "applied-intuition:ashby:852b1c5c-c5fb-48dd-bd28-f59847a8ff08",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Senior Electrical Engineer - Compute Hardware",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/852b1c5c-c5fb-48dd-bd28-f59847a8ff08",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "47099b39f80d2e8a55e0bb08ee63493d4214c2c4557802b3db244da0b9e5a660",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 140000,
+      "maximum": 220000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "senior",
+      "midpoint": 180000.0
+    },
+    {
+      "id": "fieldai:lever:93042d45-ffe3-46a1-8eaf-e229ea228b06",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Electrical Engineer, Humanoid Robotics",
+      "locations": [
+        "Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/93042d45-ffe3-46a1-8eaf-e229ea228b06",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "bc0189f5460f0587aa73684d29985fb4255f9013b5e0af9b19ac294ee3b6efc4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 100000,
+      "maximum": 240000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 170000.0
+    },
+    {
+      "id": "fieldai:lever:9ad21207-951e-43f5-a63f-69f02f7c95c2",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Electrical Engineer, Autonomous Vehicles (Federal)",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/9ad21207-951e-43f5-a63f-69f02f7c95c2",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "1f9d39ef15054b9c4dbe6c41ffc78895639e0434416a9d782eed6da838eff69c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 100000,
+      "maximum": 240000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 170000.0
+    },
+    {
+      "id": "fieldai:lever:e6717cef-ac78-4e67-a8de-33e195490ac8",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Electrical Engineer, Robotics Hardware",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/e6717cef-ac78-4e67-a8de-33e195490ac8",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "c965e20f563f2e522d8d2574473ce6142cafc76cc17abaa3ac9bc824a167309a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 100000,
+      "maximum": 200000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 150000.0
+    },
+    {
+      "id": "figure:greenhouse:4313470006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Electrical Engineer, Torso",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4313470006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "4020f40ec42c238e609a9640dfdd1bc61dc01ebc13a639a909444e26653936b6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "minimum": 120000,
+      "maximum": 250000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "explicit annual base salary",
+      "extraction": "full-source-text",
+      "seniority": "unspecified-or-midcareer",
+      "sourceClause": "The US base salary range for this full-time position is $120,000 to $250,000 per year.",
+      "sourceSpan": {
+        "start": 1716,
+        "end": 1802
+      },
+      "midpoint": 185000.0
+    },
+    {
+      "id": "figure:greenhouse:4333397006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Power Electronics Engineer, Charging",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4333397006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "b8aa4fac9169bba956d9695a854956fa45cd5d309b0a16aa1147e2ddb9917fac",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "minimum": 150000,
+      "maximum": 250000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "explicit annual base salary",
+      "extraction": "full-source-text",
+      "seniority": "unspecified-or-midcareer",
+      "sourceClause": "The US base salary range for this full-time position is between $150,000 - $250,000 annually.",
+      "sourceSpan": {
+        "start": 2169,
+        "end": 2262
+      },
+      "midpoint": 200000.0
+    },
+    {
+      "id": "figure:greenhouse:4688381006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Electrical Engineer, Actuator Systems",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4688381006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "cad5d1b480af10ddca29ededa768e5121315cf93224063d579a0c24b9517e696",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "minimum": 120000,
+      "maximum": 250000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "explicit annual base salary",
+      "extraction": "full-source-text",
+      "seniority": "unspecified-or-midcareer",
+      "sourceClause": "The US base salary range for this full-time position is $120,000 to $250,000 per year.",
+      "sourceSpan": {
+        "start": 2157,
+        "end": 2243
+      },
+      "midpoint": 185000.0
+    },
+    {
+      "id": "generalist:ashby:194aa32b-4b2b-475f-aee2-ccdbf1631afc",
+      "employerId": "generalist",
+      "employer": "Generalist",
+      "title": "Electrical Engineer",
+      "locations": [
+        "San Francisco Bay Area (San Mateo) or Boston (Somerville)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/generalist/194aa32b-4b2b-475f-aee2-ccdbf1631afc",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "afd8c9bea9f6a9de118982ce7c8103eeef522aeb5f54156f607b7f9cb030b869",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/generalist.json",
+      "rawSourceFileSha256": "3a68317852f186207f680483cbe333b2be5efb0f070d156245cb2a3a929514b7",
+      "minimum": 200000,
+      "maximum": 350000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 275000.0
+    },
+    {
+      "id": "gram:greenhouse:4364452009",
+      "employerId": "gram",
+      "employer": "GRAM",
+      "title": "Senior Electrical Engineer, Power Electronics",
+      "locations": [
+        "Palo Alto, California, United States",
+        "San Francisco Bay Area, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/gram/jobs/4364452009",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "e1751ac743f50c256a4eb790fa0b49244b67816fb743125b18ff9e556e0f997e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gram.json",
+      "rawSourceFileSha256": "706bd3d6bc62b71be02626b1dfae72b01f35c08b1f1831e36845fab26fff70b8",
+      "minimum": 155000,
+      "maximum": 195000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "explicit annual base salary",
+      "extraction": "full-source-text",
+      "seniority": "senior",
+      "sourceClause": "The annual base salary range for this San Francisco Bay Area position is $155,000–$195,000. Health coverage, benefits, and generous equity come with the role. This role is on-site in the San Francisco Bay Area. A relocation bonus is available. We hire to start as soon as possible. We review what you’ve shipped; if it’s the caliber we seek, interviews take about a week, start to finish. We treat your work and conversations with discretion.",
+      "sourceSpan": {
+        "start": 3918,
+        "end": 4360
+      },
+      "midpoint": 175000.0
+    },
+    {
+      "id": "gram:greenhouse:4364453009",
+      "employerId": "gram",
+      "employer": "GRAM",
+      "title": "Senior Electrical Engineer, Embedded Hardware",
+      "locations": [
+        "Palo Alto, California, United States",
+        "San Francisco Bay Area, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/gram/jobs/4364453009",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "af0605260ee7e93a613dcf98d2b9416fcddf006b05c311eecfe011cb778ab238",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gram.json",
+      "rawSourceFileSha256": "706bd3d6bc62b71be02626b1dfae72b01f35c08b1f1831e36845fab26fff70b8",
+      "minimum": 150000,
+      "maximum": 190000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "explicit annual base salary",
+      "extraction": "full-source-text",
+      "seniority": "senior",
+      "sourceClause": "The annual base salary range for this San Francisco Bay Area position is $150,000–$190,000. Health coverage, benefits, and generous equity come with the role. This role is on-site in the San Francisco Bay Area. A relocation bonus is available. We hire to start as soon as possible. We review what you’ve shipped; if it’s the caliber we seek, interviews take about a week, start to finish. We treat your work and conversations with discretion.",
+      "sourceSpan": {
+        "start": 3970,
+        "end": 4412
+      },
+      "midpoint": 170000.0
+    },
+    {
+      "id": "one-x:ashby:114faf79-0ab9-4810-86f4-3b41c3b1b15a",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Electrical Engineer - Actuators and Drives",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/114faf79-0ab9-4810-86f4-3b41c3b1b15a",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "5e399c8bd115cade1d637e824c73e08a0fa2118a15f85e3ba8c0e6b8f24d331c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "minimum": 165000,
+      "maximum": 225000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "senior",
+      "midpoint": 195000.0
+    },
+    {
+      "id": "one-x:ashby:6cf6b200-f83b-4b3b-b68c-81ab0dab01ff",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Prototyping Electrical Engineer",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/6cf6b200-f83b-4b3b-b68c-81ab0dab01ff",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "c2b770a320932d51a52303402ac2abab790226e8913105cac8448e66e5ce7ddb",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "minimum": 175000,
+      "maximum": 215000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 195000.0
+    },
+    {
+      "id": "rhoda:ashby:6412a88a-49c2-4db5-94f0-243847aa5cf5",
+      "employerId": "rhoda",
+      "employer": "Rhoda AI",
+      "title": "Staff Electrical Engineer (Sensors & Imaging Systems)",
+      "locations": [
+        "Mountain View"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/rhoda-ai/6412a88a-49c2-4db5-94f0-243847aa5cf5",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "d6f031f73f85687798f890f38b93604b8058d8a5ecdde664a3c3cfb14dd51fbc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/rhoda.json",
+      "rawSourceFileSha256": "57292cd4a63e78bba309cca3f2dd2b54a447c617ae01fb0a2d48033f76eb01bc",
+      "minimum": 225000,
+      "maximum": 280000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "staff-principal",
+      "midpoint": 252500.0
+    },
+    {
+      "id": "shield-ai:lever:0af53b2b-e1ba-4e73-9e94-a4a689cabab9",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Power Electronics - Electrical Engineer I",
+      "locations": [
+        "Boston, Massachusetts",
+        "Dallas, Texas",
+        "San Diego, California",
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/0af53b2b-e1ba-4e73-9e94-a4a689cabab9",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "3e37f1ad86173bd672d4a6f6c59e6376b828eaca817f88ddaff78d3708023cd8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 81456,
+      "maximum": 122184,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 101820.0
+    },
+    {
+      "id": "shield-ai:lever:0f1f7226-3366-4dad-8403-a216d92aa6b5",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Staff Engineer, Power Electronics (R5906)",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/0f1f7226-3366-4dad-8403-a216d92aa6b5",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "145bb398e1612269a276627cd68c1110f60376f58f2f7a2b875d33f095039fed",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 150000,
+      "maximum": 230000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "staff-principal",
+      "midpoint": 190000.0
+    },
+    {
+      "id": "shield-ai:lever:1b229cdc-9a0b-4704-b39b-b3b4c6e3fa89",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Electrical Engineer I - New Grad",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/1b229cdc-9a0b-4704-b39b-b3b4c6e3fa89",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "c3deab7268b02caf589f0bb09c30deef7cf3b2adc7e660d196d4ec20fecc80cf",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 81456,
+      "maximum": 122184,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "early-career",
+      "midpoint": 101820.0
+    },
+    {
+      "id": "shield-ai:lever:2ae42d4c-2867-4bf8-9fe9-4bf2c2f1480d",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Staff Electrical Engineer (R5988)",
+      "locations": [
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/2ae42d4c-2867-4bf8-9fe9-4bf2c2f1480d",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "ac5392636dc73a99e10b78211ac06e44356507ccb114dd3ce8ea0cd151a8274d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 187680,
+      "maximum": 281520,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "staff-principal",
+      "midpoint": 234600.0
+    },
+    {
+      "id": "shield-ai:lever:37fa20c1-57dc-4aa1-9515-ecc87f22f31b",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Electrical Engineer I - New Grad (SEA) (R6107)",
+      "locations": [
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/37fa20c1-57dc-4aa1-9515-ecc87f22f31b",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "c3deab7268b02caf589f0bb09c30deef7cf3b2adc7e660d196d4ec20fecc80cf",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 97728,
+      "maximum": 146592,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "early-career",
+      "midpoint": 122160.0
+    },
+    {
+      "id": "shield-ai:lever:622ee448-5ab3-4b2e-b20b-1fff995cbc45",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Power Electronics - Electrical Engineer II",
+      "locations": [
+        "Boston, Massachusetts",
+        "San Diego, California",
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/622ee448-5ab3-4b2e-b20b-1fff995cbc45",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "878a3d28a379c7f89317c3c7d0482c37a2a8eefeae894b24145d209e6bb63ac8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 91660,
+      "maximum": 137490,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 114575.0
+    },
+    {
+      "id": "shield-ai:lever:819a0502-f705-4f02-8784-ddfb1ca2b289",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Power Electronics - Principal Electrical Engineer (R4822)",
+      "locations": [
+        "Boston, Massachusetts",
+        "San Diego, California",
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/819a0502-f705-4f02-8784-ddfb1ca2b289",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "e4f934badd109c91baebf0597bb328d8201cea873a1afefb9a815ab6e3a8c4da",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 210000,
+      "maximum": 310000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "staff-principal",
+      "midpoint": 260000.0
+    },
+    {
+      "id": "shield-ai:lever:c9321f8a-b367-4dcb-9308-bd64ae6bac1d",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Electrical Engineer I - New Grad (BOS)",
+      "locations": [
+        "Boston, Massachusetts"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/c9321f8a-b367-4dcb-9308-bd64ae6bac1d",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "c3deab7268b02caf589f0bb09c30deef7cf3b2adc7e660d196d4ec20fecc80cf",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 97000,
+      "maximum": 140000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "early-career",
+      "midpoint": 118500.0
+    },
+    {
+      "id": "shield-ai:lever:ce828e5e-dcc2-4cab-94cf-c6e8fca728d4",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior Electrical, Motor and Motor Drive Engineer (R6021)",
+      "locations": [
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/ce828e5e-dcc2-4cab-94cf-c6e8fca728d4",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "f67eedf585d0f550102fc72c04f92be02af4c0911f7fd403472da778e4c77e64",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 145000,
+      "maximum": 218000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "senior",
+      "midpoint": 181500.0
+    },
+    {
+      "id": "skydio:ashby:9cb4555e-4fd1-410b-921b-cc17d56ba5df",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Electrical Design Engineer",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/9cb4555e-4fd1-410b-921b-cc17d56ba5df",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "a3be8dc0d46aac6094dfe2c6e6e6e480dbe765f227186857291b6d9cd8cd4e57",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "minimum": 127500,
+      "maximum": 240000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "explicit annual base salary",
+      "extraction": "full-source-text",
+      "seniority": "unspecified-or-midcareer",
+      "sourceClause": "Compensation: At Skydio, our compensation packages for regular, full-time employees include competitive base salaries, equity in the form of stock options, and comprehensive benefits packages. Compensation will vary based on factors, including skill level, proficiencies, transferable knowledge, and experience. Relocation assistance may also be provided for eligible roles. The annual base salary range for this position is $127,500 - $240,000*. Fundamentally, we believe that equity is the key to long-term financial growth, and we ensure all regular, full-time employees have the opportunity to significantly benefit from the company's success. Regular, full-time employees are eligible to enroll in the Company’s group health insurance plans. Regular, full-time employees are eligible to receive the following benefits: Paid vacation time, sick leave, holiday pay and 401K savings plan. This position and all associated benefits are subject to applicable federal, state, and local laws, as well as the Company’s policies and eligibility criteria.",
+      "sourceSpan": {
+        "start": 1709,
+        "end": 2759
+      },
+      "midpoint": 183750.0
+    },
+    {
+      "id": "skydio:ashby:eb2f4124-9bd6-49f9-9636-03152c573f7d",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Senior/Staff PCB Layout Engineer",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/eb2f4124-9bd6-49f9-9636-03152c573f7d",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "b61658d538a9727c1fa85770066f9c046e474c978130d941b95007f00e4d2d56",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "minimum": 147500,
+      "maximum": 210000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "explicit annual base salary",
+      "extraction": "full-source-text",
+      "seniority": "staff-principal",
+      "sourceClause": "Compensation: At Skydio, our compensation packages for regular, full-time employees include competitive base salaries, equity in the form of stock options, and comprehensive benefits packages. Compensation will vary based on factors, including skill level, proficiencies, transferable knowledge, and experience. Relocation assistance may also be provided for eligible roles. The annual base salary range for this position is $147,500 - $210,000*. Fundamentally, we believe that equity is the key to long-term financial growth, and we ensure all regular, full-time employees have the opportunity to significantly benefit from the company's success. Regular, full-time employees are eligible to enroll in the Company’s group health insurance plans. Regular, full-time employees are eligible to receive the following benefits: Paid vacation time, sick leave, holiday pay and 401K savings plan. This position and all associated benefits are subject to applicable federal, state, and local laws, as well as the Company’s policies and eligibility criteria.",
+      "sourceSpan": {
+        "start": 2547,
+        "end": 3597
+      },
+      "midpoint": 178750.0
+    },
+    {
+      "id": "skydio:ashby:f0c26a3c-d999-4dc2-8812-b3835f633ded",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Electrical Engineer (all levels)",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/f0c26a3c-d999-4dc2-8812-b3835f633ded",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "2936d256a6e822b05d670254a76fd5bb709094e493467e17a1b59c53d6aadaae",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "minimum": 127500,
+      "maximum": 240000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "explicit annual base salary",
+      "extraction": "full-source-text",
+      "seniority": "unspecified-or-midcareer",
+      "sourceClause": "Compensation: At Skydio, our compensation packages for regular, full-time employees include competitive base salaries, equity in the form of stock options, and comprehensive benefits packages. Compensation will vary based on factors, including skill level, proficiencies, transferable knowledge, and experience. Relocation assistance may also be provided for eligible roles. The annual base salary range for this position is $127,500 - $240,000*. Fundamentally, we believe that equity is the key to long-term financial growth, and we ensure all regular, full-time employees have the opportunity to significantly benefit from the company's success. Regular, full-time employees are eligible to enroll in the Company’s group health insurance plans. Regular, full-time employees are eligible to receive the following benefits: Paid vacation time, sick leave, holiday pay and 401K savings plan. This position and all associated benefits are subject to applicable federal, state, and local laws, as well as the Company’s policies and eligibility criteria.",
+      "sourceSpan": {
+        "start": 1715,
+        "end": 2765
+      },
+      "midpoint": 183750.0
+    },
+    {
+      "id": "standard-bots:ashby:05715409-54f5-4e14-ba35-67f47b30d845",
+      "employerId": "standard-bots",
+      "employer": "Standard Bots",
+      "title": "Senior Electrical Engineer (Hybrid)",
+      "locations": [
+        "Glen Cove, NY"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/standardbots/05715409-54f5-4e14-ba35-67f47b30d845",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "1eac619ff28baa719dab0bea374925fbe712868bf05a97fbb2406c9d5c47e957",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "minimum": 120000,
+      "maximum": 180000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "senior",
+      "midpoint": 150000.0
+    },
+    {
+      "id": "standard-bots:ashby:f5fe4e60-21c4-4de7-8f21-e8cae48e7d63",
+      "employerId": "standard-bots",
+      "employer": "Standard Bots",
+      "title": "Senior Electrical Engineer — Safety & Systems Integration (On-site)",
+      "locations": [
+        "Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/standardbots/f5fe4e60-21c4-4de7-8f21-e8cae48e7d63",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "815a8dd090caf0443d4ba64d8365cf1f9aac748b093e24bfb539d4c35614c743",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "minimum": 150000,
+      "maximum": 195000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "senior",
+      "midpoint": 172500.0
+    },
+    {
+      "id": "sunday:ashby:2fe17ac9-2fa6-4675-9961-c79d3205953f",
+      "employerId": "sunday",
+      "employer": "Sunday Robotics",
+      "title": "Electrical Engineer",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/sunday/2fe17ac9-2fa6-4675-9961-c79d3205953f",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "36e57e004197a37cc4ab7be555920fb639b9bb180e49020a6d421c5c3b995d11",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/sunday.json",
+      "rawSourceFileSha256": "95e55ab1970ad63d47734109bd8e17d1fde8a0db3343230ed504995fa38261d2",
+      "minimum": 150000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "seniority": "unspecified-or-midcareer",
+      "midpoint": 225000.0
+    }
+  ],
+  "excludedObservations": [
+    {
+      "id": "boston-dynamics:workday:R3031",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Staff Electrical Engineer",
+      "locations": [
+        "Waltham, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-MA/Staff-Electrical-Engineer_R3031",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "682805c55c52e4c2292eb9f8fb4837f8673f3e144809f4fcb6a08e02beb9f7c4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit annual-text review."
+    },
+    {
+      "id": "cobot:ashby:851bcf72-71da-4901-91d5-6462245c18e9",
+      "employerId": "cobot",
+      "employer": "Collaborative Robotics",
+      "title": "Senior Electrical Engineer",
+      "locations": [
+        "Santa Clara"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/cobot/851bcf72-71da-4901-91d5-6462245c18e9",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "b2784b68978c5cccc0ebb484a30a78cfbab417d46a5d29920d50747a4fc79579",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/cobot.json",
+      "rawSourceFileSha256": "1cc14d718f1a8ab3009ad3cd2a864e4d77fa2a071bf8f06208a3f2518b37f3c3",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit annual-text review."
+    },
+    {
+      "id": "gatik:greenhouse:4417790006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Staff Electrical Engineer",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4417790006?gh_jid=4417790006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "d4967602b369a56fa1466861d9f9f16cc6222fc013fa49f4124761fe744cba11",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit annual-text review."
+    },
+    {
+      "id": "one-x:ashby:14a3f92c-24ec-4722-8754-d0d1366c9ed7",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Electrical Engineer - Hands",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/14a3f92c-24ec-4722-8754-d0d1366c9ed7",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "17baeddaae9c8d73476b4a6a2a44c0d09c5520cf5433224ebbdc4ef8dca71cc5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reason": "Structured minimum conflicts with the compensation clause; omitted pending reconciliation."
+    },
+    {
+      "id": "one-x:ashby:178b0d2b-d9bd-4ed0-9e27-27ad4890649f",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Manufacturing Electrical Engineer, Joints & Body",
+      "locations": [
+        "Hayward, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/178b0d2b-d9bd-4ed0-9e27-27ad4890649f",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "f20c023e15618771d9f8e360528a08d2d69f718561cfa5e301d7d9b87291772b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reason": "Primary work is adjacent testing, manufacturing, thermal engineering or sustainment."
+    },
+    {
+      "id": "one-x:ashby:2044dfc6-bf8c-4356-a75d-9579a2c92c64",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Manufacturing Electrical Engineer, Hands",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/2044dfc6-bf8c-4356-a75d-9579a2c92c64",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "c4a3fbc462a4ba81f31f5e57609f67cef04276b31c5243e14e4b68c1c7b77cb9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reason": "Primary work is adjacent testing, manufacturing, thermal engineering or sustainment."
+    },
+    {
+      "id": "shield-ai:lever:12f75166-fed5-4cc1-863d-c172e8852fb4",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Power Electronics - Thermal Engineer Senior Staff",
+      "locations": [
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/12f75166-fed5-4cc1-863d-c172e8852fb4",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "919a86e75a1042934b0cdd39dc541f209f345d08c3e3af10c97c1e587203370d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Primary work is adjacent testing, manufacturing, thermal engineering or sustainment."
+    },
+    {
+      "id": "shield-ai:lever:28887b02-847b-42f1-a24f-bfbb3392fe89",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Electrical Engineer, Fleet Support (R5080)",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/28887b02-847b-42f1-a24f-bfbb3392fe89",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "3af7d4cbf472a7213aaa91e64ab332fa7162cf08fa616afac622e750534ef380",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Primary work is adjacent testing, manufacturing, thermal engineering or sustainment."
+    },
+    {
+      "id": "shield-ai:lever:5dcaa8e8-df94-4655-9d75-462d497b6b6e",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Staff Electrical Engineer, Hardware Test (R6121)",
+      "locations": [
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/5dcaa8e8-df94-4655-9d75-462d497b6b6e",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "e8eb3b34f0f3a35497c6e7bb8f14266b056dcad0f1137996dbb58a51141fe75e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Primary work is adjacent testing, manufacturing, thermal engineering or sustainment."
+    },
+    {
+      "id": "shield-ai:lever:9208872f-9af8-4a63-8afc-0d7a5e7dbca0",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior Electrical Engineer, Test Equipment Design",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/9208872f-9af8-4a63-8afc-0d7a5e7dbca0",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "758bced6175fa9a54b72a5529225d6e17389ca3a9e5f08336d5a974c0b114058",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Primary work is adjacent testing, manufacturing, thermal engineering or sustainment."
+    },
+    {
+      "id": "shield-ai:lever:cda131b5-3cfb-4d59-8d4b-bfd2f8c9661d",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior Electrical Engineer, Test Equipment Design",
+      "locations": [
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/cda131b5-3cfb-4d59-8d4b-bfd2f8c9661d",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "639bc9038a976993f534a1722ba7b61920f99b991b0a2b3b24bee026b2ea6b7d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Primary work is adjacent testing, manufacturing, thermal engineering or sustainment."
+    },
+    {
+      "id": "shield-ai:lever:d07a1f9b-76eb-44ce-b0ef-5e478fd12f02",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Electrical Engineer, Hardware Test (R5099)",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/d07a1f9b-76eb-44ce-b0ef-5e478fd12f02",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "c47d59751339621e96d789bd31e4b5eb8ae72d25293797f9b549834172fc58bd",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Primary work is adjacent testing, manufacturing, thermal engineering or sustainment."
+    },
+    {
+      "id": "shield-ai:lever:dbeedcfb-0420-4216-8529-9b02d43e29f4",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior Electrical Engineer, Hardware Test (R5099)",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/dbeedcfb-0420-4216-8529-9b02d43e29f4",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "758bced6175fa9a54b72a5529225d6e17389ca3a9e5f08336d5a974c0b114058",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Primary work is adjacent testing, manufacturing, thermal engineering or sustainment."
+    },
+    {
+      "id": "shield-ai:lever:e1b78ed6-0a52-49e1-9014-735873dab5a5",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Lead, Electrical Engineering (R5116)",
+      "locations": [
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/e1b78ed6-0a52-49e1-9014-735873dab5a5",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "50bd6ace98668ddc65feaa2e6db94b2eb0511f6d832c2abf5bec54fe8b05414f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Includes people leadership and performance management."
+    },
+    {
+      "id": "shield-ai:lever:e53fdc42-177f-4413-8464-0bafb1cc81a9",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Electrical Engineer, Test Equipment Design",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/e53fdc42-177f-4413-8464-0bafb1cc81a9",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "c47d59751339621e96d789bd31e4b5eb8ae72d25293797f9b549834172fc58bd",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Primary work is adjacent testing, manufacturing, thermal engineering or sustainment."
+    },
+    {
+      "id": "skild:greenhouse:5420082008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Senior Electrical Engineer",
+      "locations": [
+        "San Mateo",
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/5420082008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "f652ad47e99ccc1d16c1fb2d03774df8b32e1555e48fbfc85dbe683d3f9f4463",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit annual-text review."
+    },
+    {
+      "id": "skydio:ashby:8e50c7da-2868-4383-af1f-920584d537fc",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Electrical Engineer (Sustaining/Validation)",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/8e50c7da-2868-4383-af1f-920584d537fc",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "76e99bbf2d0343ef6916164fc7656bb1a2ad610595f132eed13cb04f4e9b17b5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reason": "Primary work is adjacent testing, manufacturing, thermal engineering or sustainment."
+    },
+    {
+      "id": "standard-bots:ashby:9cc89fce-b6bb-4b9c-8695-5692071adbdf",
+      "employerId": "standard-bots",
+      "employer": "Standard Bots",
+      "title": "Senior Staff Electrical Engineer (On-site)",
+      "locations": [
+        "Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/standardbots/9cc89fce-b6bb-4b9c-8695-5692071adbdf",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "3aebafc651c9dbe0e6c57b2fc01ab3dd14f0a9912ca86db4090e556410d1adc5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "reason": "Mixed hardware team leadership role; omitted from individual-contributor design estimate."
+    },
+    {
+      "id": "zipline:greenhouse:7807663003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Test Equipment Design Engineer, Battery and Power Electronics",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7807663003?gh_jid=7807663003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "f6014b4cf25d5ba418c74871d2d97f39211965d2b969d94521f1803e5d8fdb22",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "Primary work is adjacent testing, manufacturing, thermal engineering or sustainment."
+    },
+    {
+      "id": "zipline:greenhouse:7810247003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Electrical PCB Layout Engineer",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7810247003?gh_jid=7810247003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "f207ad55ae26c84172e42818afe04fa8fa88ab13d3c5480891e909c485e247f2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit annual-text review."
+    },
+    {
+      "id": "zipline:greenhouse:8034660003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Senior/Staff Electrical Engineer - Long Range Platform",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/8034660003?gh_jid=8034660003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "7ffec030ddfb082addaf967b0a13bce7e07a1c7f7d73b5d98b6bed9303eb78d7",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No unambiguous annual USD range in structured fields or the selected explicit annual-text review."
+    },
+    {
+      "id": "zoox:lever:013b341d-8019-431d-bfda-8be411a14d84",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Sr. Electrical Integration Engineer  - Diagnostics",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/013b341d-8019-431d-bfda-8be411a14d84",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "b75f2083231fcd7278a9ce6f16d0f9a518c825a9c18318ee467c3bab632206d9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reason": "Diagnostics integration rather than product circuit or board design."
+    }
+  ]
+}
