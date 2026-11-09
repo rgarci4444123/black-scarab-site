@@ -22,18 +22,24 @@ type Props = {
 
 const baseUrl = "https://www.blackscarab.ai";
 const socialImages: Record<string, { path: string; width: number; height: number }> = newsSocialImages;
-const inlineSourcePattern = /\[([^\]]+)\]\((https:\/\/[^\s)]+)\)/g;
+const inlineContentPattern = /\[([^\]]+)\]\((https:\/\/[^\s)]+)\)|\*\*([^*]+)\*\*|\*([^*]+)\*/g;
 
 function renderParagraph(paragraph: string): ReactNode {
   const parts: ReactNode[] = [];
   let cursor = 0;
-  for (const match of paragraph.matchAll(inlineSourcePattern)) {
+  for (const match of paragraph.matchAll(inlineContentPattern)) {
     parts.push(paragraph.slice(cursor, match.index));
-    parts.push(
-      <a key={match.index} href={match[2]} target="_blank" rel="noreferrer" className="font-medium text-[#3f5137] underline decoration-[#b9c7b2] underline-offset-4 transition hover:text-[#111827]">
-        {match[1]}
-      </a>,
-    );
+    if (match[2]) {
+      parts.push(
+        <a key={match.index} href={match[2]} target="_blank" rel="noreferrer" className="font-medium text-[#3f5137] underline decoration-[#b9c7b2] underline-offset-4 transition hover:text-[#111827]">
+          {match[1]}
+        </a>,
+      );
+    } else if (match[3]) {
+      parts.push(<strong key={match.index}>{match[3]}</strong>);
+    } else {
+      parts.push(<em key={match.index}>{match[4]}</em>);
+    }
     cursor = match.index + match[0].length;
   }
   if (cursor === 0) return paragraph;
@@ -177,7 +183,7 @@ export default async function NewsArticlePage({ params }: Props) {
                 {update.title}
               </h1>
               <p className="mt-7 max-w-3xl text-lg leading-8 text-[#58636e] sm:text-xl">
-                {update.summary}
+                {update.summaryEmphasis ? <em>{update.summary}</em> : update.summary}
               </p>
               <div className="mt-8 inline-flex max-w-full items-center gap-1">
                 <Link href={update.author.href} className="inline-flex items-center gap-3 text-sm font-medium text-[#111827] transition hover:text-[#526147]">
@@ -200,19 +206,21 @@ export default async function NewsArticlePage({ params }: Props) {
                 </figure>
               ) : null}
 
-              <section className="mt-10 rounded-[22px] border border-[#d9e4d3] bg-[#eef4ea] p-6 sm:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#647456]">At a glance</p>
-                <ul className="mt-5 space-y-3 text-base leading-7 text-[#374235]">
-                  {update.keyPoints.map((point) => <li key={point} className="flex gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#718064]" aria-hidden="true" />{point}</li>)}
-                </ul>
-              </section>
+              {update.keyPoints.length > 0 ? (
+                <section className="mt-10 rounded-[22px] border border-[#d9e4d3] bg-[#eef4ea] p-6 sm:p-8">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#647456]">At a glance</p>
+                  <ul className="mt-5 space-y-3 text-base leading-7 text-[#374235]">
+                    {update.keyPoints.map((point) => <li key={point} className="flex gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#718064]" aria-hidden="true" />{point}</li>)}
+                  </ul>
+                </section>
+              ) : null}
 
               <div className="mt-12 space-y-11">
                 {update.sections.map((section, index) => (
                   <Fragment key={section.heading}>
                     <section>
-                      <h2 className="text-2xl font-semibold tracking-[-0.03em] sm:text-3xl">{section.heading}</h2>
-                      <div className="mt-5 space-y-5 text-base leading-8 text-[#3f4954] sm:text-lg">
+                      {section.heading ? <h2 className="text-2xl font-semibold tracking-[-0.03em] sm:text-3xl">{section.heading}</h2> : null}
+                      <div className={`${section.heading ? "mt-5 " : ""}space-y-5 text-base leading-8 text-[#3f4954] sm:text-lg`}>
                         {section.paragraphs.map((paragraph, paragraphIndex) => (
                           <Fragment key={paragraph}>
                             <p>{renderParagraph(paragraph)}</p>
