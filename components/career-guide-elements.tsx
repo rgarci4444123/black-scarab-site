@@ -1,4 +1,5 @@
 import type {CareerGuideBlock,CareerGuideContent,CareerGuideSection,Citation} from '@/lib/career-paths/types';
+import {messageHistorySnapshot} from '@/lib/career-paths/message-history';
 import {secondOrderStepResponse} from '@/lib/career-paths/control-response';
 
 export function CareerOverview({items}:{items:NonNullable<CareerGuideContent['overview']>}) {
@@ -278,5 +279,28 @@ export function CareerLoopClosure({block}:{block:LoopClosure}) {
       </div>;
     })}</div>
     <p className="profession-research-note">Illustrative 2D position estimates.</p>
+  </figure>;
+}
+
+
+type MessageHistory=Extract<CareerGuideBlock,{type:'message-history'}>;
+export function CareerMessageHistory({block}:{block:MessageHistory}) {
+  const m=block.model;
+  return <figure id={block.id} className="profession-message-history" aria-labelledby={`${block.id}-title`}>
+    <figcaption id={`${block.id}-title`}>{block.title}</figcaption>
+    <p className="profession-history-context">Readings arrive at {m.arrivalTimes.join(', ')} {m.unit}. Consumer reads at <strong>{m.dequeueAt} {m.unit}</strong>.</p>
+    {m.depths.map(depth=>{
+      const snapshot=messageHistorySnapshot(m.arrivalTimes,depth,m.dequeueAt);
+      return <div className="profession-history-row" key={depth}>
+        <div className="profession-history-heading"><h4>Retain {depth} {depth===1?'reading':'readings'}</h4><p><strong>{snapshot.age} {m.unit}</strong><span>Age of next reading</span></p></div>
+        <div className="profession-history-buffer">
+          <ol className="profession-history-samples" aria-label={`Retained readings, oldest first. Next reading is ${snapshot.next} ${m.unit}.`}>
+            {snapshot.retained.map((time,index)=><li key={time} className={index===0?'profession-history-next':undefined}><strong>{time} {m.unit}</strong><span>{index===0?'Next':'Waiting'}</span></li>)}
+          </ol>
+          {snapshot.replaced>0?<p className="profession-history-replaced">{snapshot.replaced} earlier readings replaced</p>:null}
+        </div>
+      </div>;
+    })}
+    <p className="profession-research-note">Illustrative queue snapshot. Values are milliseconds.</p>
   </figure>;
 }

@@ -1,0 +1,35 @@
+{
+  "createdAt": "2026-11-10",
+  "tool": "built-in image_gen",
+  "status": "selected",
+  "brief": {
+    "storyThesis": "Shared software makes autonomy usable across different robot hardware.",
+    "visualThesis": "Different embodiments, one coherent integration environment.",
+    "medium": "Cinematic editorial concept realism",
+    "primarySubject": "Three robot embodiments at whole-machine scale in adjacent development bays",
+    "viewpoint": "Side-on long-lens across bay fronts, modest depth",
+    "composition": "Architectural rhythm, unequal subject sizes and asymmetric silhouettes",
+    "palette": "85 percent neutral monochrome, 15 percent physical crimson accents",
+    "lighting": "Diffuse white backlight",
+    "surface": "Rubber, brushed aluminum and painted cable trays",
+    "cropPlan": "Keep the three bays and distinct machine forms within the central wide crop",
+    "recentCoverReview": [
+      "Manufacturing: hand-and-joint fixture, yellow, close documentary realism",
+      "Motion: low outdoor rover route, coral, concrete",
+      "V&V: wet circular window and humanoid, cyan",
+      "Operations: outdoor helmeted handoff, orange",
+      "Hardware: extreme macro wrist cutaway, violet",
+      "Localization: floating elevated atrium reconstruction, blue point cloud"
+    ],
+    "recentPatternsAvoided": "New side-on whole-machine ensemble, architectural bay rhythm and diffuse light differ from each cover in subject, viewpoint/composition and surface or lighting. No close-up hands, outdoor route, wet window, worker handoff, cutaway or point-cloud reconstruction.",
+    "avoid": "Amazon packshot, same engineer-at-monitor composition, text, logos, invented data displays, paper styling"
+  },
+  "prompt": "Use case: stylized-concept. Create an original sophisticated editorial cover for a Robotics Platform Engineer career guide, landscape 16:9. Visual thesis: different robot embodiments can share a dependable software foundation. A futuristic robotics integration studio with three adjacent open testing bays, viewed across their fronts from a side-on long-lens cinematic viewpoint, with modest spatial depth. An articulated industrial arm occupies the left foreground in partial silhouette, a low wheeled inspection robot occupies the middle bay farther back, and a slender humanoid is testing a simple reach in the right bay. Each machine is doing quiet development work, not posing as a catalog product. They belong to one coherent integration environment with common overhead cable trays, modular test plinths, and unobtrusive computing hardware tucked into the bay walls. Strong architectural rhythm and asymmetric subject sizes. No human. Diffuse white backlight, bright silver and graphite machinery, tactile dark rubber floor and brushed aluminum details. About 85 percent black white silver and gray, with 15 percent deliberate vivid crimson red on the overhead cable trays and a few bay-frame surfaces. The red is physical paint, not luminous network paths. Premium cinematic concept realism, intriguing and technically grounded, no showroom packshot, no screens or legible interfaces, no titles, labels, words, logos, numerals, arrows, paper materials or watermarks. No point clouds, exploded internal mechanisms, wet windows, outdoor roads or glowing network lines. This is an invented editorial interpretation of software integration work, not a real facility or a proprietary robot design.",
+  "asset": "public/career-paths/robotics-platform-engineer-studio.webp",
+  "generatedSource": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-df33387f-3abb-4f15-be26-abb0891cbac5.png",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "bytes": 203478
+}

@@ -91,6 +91,21 @@
         "localization vs perception"
       ],
       "rationale": "Preserve the native occupation URL. Explain pose estimation, mapping and calibration through SLAM and state-estimation employer titles; distinguish object perception, motion planning and primary flight-control leadership. Editorial intent review, no search-volume claim."
+    },
+    {
+      "occupationId": "robotics-platform-engineer",
+      "h1": "How to Become a Robotics Platform Engineer",
+      "seoTitle": "Robotics Platform Engineer: Salary, Skills & Career Guide",
+      "description": "Explore robotics platform engineering: middleware, Linux, C++, shared software, employer qualifications, salary research and a practical message-queue project.",
+      "path": "/career-paths/platforms-simulation/robotics-platform-engineer",
+      "primaryQuery": "robotics platform engineer",
+      "supportingTopics": [
+        "robotics platform engineer salary",
+        "robot middleware engineer",
+        "robot software infrastructure engineer",
+        "ROS 2 platform skills"
+      ],
+      "rationale": "Keep the native platform occupation and URL. Explain reusable robot software, middleware, runtime/OS services, release tooling and robot-facing infrastructure; distinguish application algorithms, microcontroller firmware and model-training infrastructure. Editorial intent review, no search-volume claim."
     }
   ]
 }

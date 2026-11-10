@@ -1,0 +1,25 @@
+{
+  "updatedAt": "2026-11-10",
+  "sourcePath": "/Users/rodolfogarcia/.codex/attachments/d4ddfe8d-906e-4258-abea-f45de9d7181f/Pasted text.txt",
+  "sourceSha256": "c5f2fff1f589ee0b9ed09741ab06b9daaf413ad35e9e203e7c8860412c9ce992",
+  "sourceHeading": "How to Become a Robotics Platform Engineer",
+  "sections": 8,
+  "tables": 7,
+  "portfolioSteps": 8,
+  "resourceCount": 4,
+  "editorialHandling": [
+    "Apply revised eight-section prose and expanded eight-step portfolio while preserving navigation IDs, cover, SEO and source pins.",
+    "Keep the existing message-history graphic and exact numerical model in place of the repeated queue table and narration.",
+    "Present the queue interpretation once below the graphic, including recorder and command differences.",
+    "Retain annual advertised salary labels because structured metadata does not consistently establish base pay.",
+    "Keep complete methodology and source references in the existing collapsed section.",
+    "Use one salary caption and remove immediately repeated table headings.",
+    "Use concise lookup captions instead of repeating full section titles above tables."
+  ],
+  "verification": {
+    "sourceParagraphCoverage": "All supplied main-body paragraphs accounted for outside the deliberately consolidated queue subsection and salary note.",
+    "sections": 8,
+    "portfolioSteps": 8,
+    "resources": 4
+  }
+}

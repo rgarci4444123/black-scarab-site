@@ -1,0 +1,377 @@
+{
+  "reviewedAt": "2026-11-10",
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "scope": "Shared robot/autonomous-vehicle software foundations: middleware, runtime, Linux platform, deployment, developer tooling, observability and robot-facing cloud services. Primary dataset collection tooling excluded.",
+  "cohort": {
+    "postings": 11,
+    "employers": 8
+  },
+  "reviewedRecords": [
+    {
+      "id": "applied-intuition:ashby:a5000134-d36a-48eb-9a4f-2d5f9ab60027",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Middleware",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/a5000134-d36a-48eb-9a4f-2d5f9ab60027",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "18a0675750cea35c4df3553d8c1b465ef44518849b2ab4d4dcaea21492f51dbc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Vehicle platform middleware, C++ concurrency, DDS/SOME-IP communication, system management and diagnostics.",
+      "qualification": "BS in Computer Science, Computer Engineering, or a related field",
+      "qualificationSpans": [
+        {
+          "text": "BS in Computer Science, Computer Engineering, or a related field",
+          "start": 2764,
+          "end": 2828
+        }
+      ]
+    },
+    {
+      "id": "fieldai:lever:a0856b2f-3674-49fa-8546-9b823df597f2",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Senior/Staff Software Engineer, Robotics Platform",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/a0856b2f-3674-49fa-8546-9b823df597f2",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "65cb024200cd37658d811d1ccd9911b783cdd97026246237ef58b09754082a00",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Cross-embodiment robotics platform, versioned APIs, runtime/middleware, capability abstractions, profiling and edge deployment.",
+      "qualification": "Education: B.S. or higher in Computer Science, Robotics, Electrical Engineering, or a related technical field, or equivalent practical experience",
+      "qualificationSpans": [
+        {
+          "text": "Education: B.S. or higher in Computer Science, Robotics, Electrical Engineering, or a related technical field, or equivalent practical experience",
+          "start": 4887,
+          "end": 5032
+        }
+      ]
+    },
+    {
+      "id": "figure:greenhouse:4609306006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Senior Software Engineer, Middleware Productivity",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4609306006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "e5a89768d328f1a0b332575a89199000269860a368761173d85936c246a2ef58",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Robot middleware framework and developer infrastructure; C++, Linux userspace/kernel interactions and timing-sensitive production software.",
+      "qualification": "At least 7 years of experience building production software in C++",
+      "qualificationSpans": [
+        {
+          "text": "At least 7 years of experience building production software in C++",
+          "start": 1036,
+          "end": 1102
+        }
+      ]
+    },
+    {
+      "id": "humanoid:ashby:bf4c34c3-541d-4497-8aa3-9fae8f82e396",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Senior Platform Software Engineer",
+      "locations": [
+        "US, Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/bf4c34c3-541d-4497-8aa3-9fae8f82e396",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "21a03bef76aecab8ef6a0a6f33172125b9dc1bf36fa0c9a6654fcbf2e672ac55",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Humanoid Linux platform software, networks, sensor/compute integration, build systems and performance-critical applications.",
+      "qualification": "5+ years of experience developing and deploying production software in embedded systems running Linux (C++, C, Rust, Python, Go).",
+      "qualificationSpans": [
+        {
+          "text": "5+ years of experience developing and deploying production software in embedded systems running Linux (C++, C, Rust, Python, Go).",
+          "start": 2705,
+          "end": 2834
+        }
+      ]
+    },
+    {
+      "id": "nimble:greenhouse:4163470009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "Senior Software Engineer, Robotics Platform",
+      "locations": [
+        "San Francisco, CA",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4163470009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "16053854607a35bbbcf8e906d9051124f98bd1626df89f6be47443c5b9a1400c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robot-facing backend services, multi-agent/cloud interfaces, orchestration, state management, observability and production tooling.",
+      "qualification": "Bachelors, Masters, or PhD in Computer Science or related field, or equivalent practical experience.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelors, Masters, or PhD in Computer Science or related field, or equivalent practical experience.",
+          "start": 3614,
+          "end": 3714
+        }
+      ]
+    },
+    {
+      "id": "skild:greenhouse:5222931008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Senior Robot Infrastructure Engineer",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/5222931008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "3dcfc2705f4186d6c015f858f379d3c3130a368e7d0f37b05108eefe22cbc703",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "On-robot edge services, fleet connectivity, OTA updates, telemetry, buffering and infrastructure reliability.",
+      "qualification": "3+ years of relevant industry experience.",
+      "qualificationSpans": [
+        {
+          "text": "3+ years of relevant industry experience.",
+          "start": 2415,
+          "end": 2456
+        }
+      ]
+    },
+    {
+      "id": "waymo:greenhouse:7461052",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Onboard Developer Platform Software Engineer",
+      "locations": [
+        "Mountain View, CA, USA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7461052",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "ecdb90f668fcd59103312b087e1758d8f14173f79a96b3e3c2a6f489e30c6be4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Onboard developer platform with shared architecture, simulation/evaluation infrastructure, profiling and reproducible software workflows.",
+      "qualification": "BS in Comp Sci, EE, Robotics, Physics, Math, or related field (or equivalent experience)",
+      "qualificationSpans": [
+        {
+          "text": "BS in Comp Sci, EE, Robotics, Physics, Math, or related field (or equivalent experience)",
+          "start": 2266,
+          "end": 2354
+        }
+      ]
+    },
+    {
+      "id": "zoox:lever:6da52aa7-0ccb-48d0-af25-0889f41ddee5",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Software Engineer - Robot Software Infrastructure",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/6da52aa7-0ccb-48d0-af25-0889f41ddee5",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "200f7684a92d2b8698fbedf430f1b058a4cf2f6a6cd140a19250875754c4c73d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robot OS platform, Linux CI/validation, system services, kernel/drivers and hardware-portable production releases.",
+      "qualification": "4+ years delivering production systems and software applications",
+      "qualificationSpans": [
+        {
+          "text": "4+ years delivering production systems and software applications",
+          "start": 1605,
+          "end": 1669
+        }
+      ]
+    },
+    {
+      "id": "zoox:lever:f62f1083-acff-4862-984e-4d16d2a827a6",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Senior Software Engineer - Robot Software Infrastructure",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/f62f1083-acff-4862-984e-4d16d2a827a6",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "13f3b559d1fbf0d8a9834bd73a195f680ebefa01c9310783abb5fea5ff0a5423",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Senior individual-contributor robot OS infrastructure, Linux images, CI/validation, kernel/drivers and cross-team releases.",
+      "qualification": "8+ years delivering production systems and software applications",
+      "qualificationSpans": [
+        {
+          "text": "8+ years delivering production systems and software applications",
+          "start": 1605,
+          "end": 1669
+        }
+      ]
+    }
+  ],
+  "salaryExclusions": [
+    {
+      "id": "applied-intuition:ashby:932de549-2882-4c0d-aeca-b4a8ef5f1f41",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Robot Infrastructure Engineer - Collection Tooling",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/932de549-2882-4c0d-aeca-b4a8ef5f1f41",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "dde99c87541bad7a2e3b347eb3ad56f7ba766c63c75c6fa46f25bb5a334ab613",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Primary teleoperation/data-collection quality and ingestion tooling, rather than shared robot runtime or platform ownership."
+    },
+    {
+      "id": "applied-intuition:ashby:d58a932f-eb0d-43ff-a5fa-9f55531f085f",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Middleware Engineer",
+      "locations": [
+        "Stuttgart"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/d58a932f-eb0d-43ff-a5fa-9f55531f085f",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "2041f6062400ba64fb94d9a8214c6904e2ad0c5b789cf7b1dc619c8fd68d18a3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "skild:greenhouse:5222931008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Senior Robot Infrastructure Engineer",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/5222931008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "3dcfc2705f4186d6c015f858f379d3c3130a368e7d0f37b05108eefe22cbc703",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reason": "Salary range lacks an explicit annual pay period; full-time status or annual-bonus wording does not establish salary frequency."
+    },
+    {
+      "id": "waymo:greenhouse:7461052",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Onboard Developer Platform Software Engineer",
+      "locations": [
+        "Mountain View, CA, USA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7461052",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "ecdb90f668fcd59103312b087e1758d8f14173f79a96b3e3c2a6f489e30c6be4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "Salary range lacks an explicit annual pay period; full-time status or annual-bonus wording does not establish salary frequency."
+    }
+  ],
+  "additionalBoundaryFullSourceReviews": [
+    {
+      "id": "applied-intuition:ashby:932de549-2882-4c0d-aeca-b4a8ef5f1f41",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Robot Infrastructure Engineer - Collection Tooling",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/932de549-2882-4c0d-aeca-b4a8ef5f1f41",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "dde99c87541bad7a2e3b347eb3ad56f7ba766c63c75c6fa46f25bb5a334ab613",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "decision": "Primary collection-data tooling rather than core robot platform."
+    }
+  ],
+  "technicalSources": [
+    "https://design.ros2.org/articles/ros_middleware_interface.html",
+    "https://github.com/ros2/ros2_documentation/blob/rolling/source/ROS-Framework/interfaces/topics/About-Quality-of-Service-Settings.rst",
+    "https://github.com/ros2/ros2_tracing",
+    "https://opentelemetry.io/docs/concepts/signals/traces/"
+  ],
+  "editorialVisual": "Invented subscriber-side queue snapshot, all three messages already arrived before a single FIFO dequeue at 50ms. Retained history depths 3 and 1 illustrate freshness versus retained intermediate samples. No transport, reliability or real-time guarantee; not for commands or durable events."
+}

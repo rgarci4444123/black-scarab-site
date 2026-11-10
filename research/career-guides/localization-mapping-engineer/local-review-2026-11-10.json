@@ -1,6 +1,6 @@
 {
   "reviewedAt": "2026-11-10T17:50:32.467883+00:00",
-  "status": "approved-for-deployment",
+  "status": "deployed",
   "occupationId": "localization-and-mapping-engineer",
   "researchRoleId": "localization-mapping-engineer",
   "url": "http://127.0.0.1:3064/career-paths/intelligence-autonomy/localization-and-mapping-engineer",
@@ -60,5 +60,34 @@
       "path": "research/career-guides/localization-mapping-engineer/editorial-revision-2026-11-10.json",
       "sha256": "7852164c583d88b93fe6f278928a463a2806afc5aec87ebdb11ac52de25aefab"
     }
-  ]
+  ],
+  "deployment": {
+    "guide": "localization-mapping-engineer",
+    "deployedAt": "2026-11-10T17:54:29Z",
+    "commit": "04c216c5daf0115a2c5614adb7b30fabb92bc356",
+    "previousCommit": "58a6da6fd4c7c25a91274e18eb7a8109658e197c",
+    "url": "https://www.blackscarab.ai/career-paths/intelligence-autonomy/localization-and-mapping-engineer",
+    "deploymentUrl": "https://black-scarab-site-8ix5kh6cn-rodolfo-garcias-projects.vercel.app",
+    "vercelStatusUrl": "https://vercel.com/rodolfo-garcias-projects/black-scarab-site/CuBU1ervb9mkcYp3ikZCVYKCW2Lm",
+    "githubDeploymentId": 7689881247,
+    "status": "success",
+    "verified": [
+      "Live H1, SEO title, canonical and November 10 publication/modification dates",
+      "Complete user revision, eight sections, eight tables and eight portfolio steps",
+      "250000 USD estimate, original cover and simplified loop-closure graphic",
+      "Three research downloads, category link and sitemap"
+    ],
+    "validation": {
+      "careerTests": 31,
+      "selectedSourcesAudited": 183,
+      "rawSourcesAudited": 42,
+      "articlePreviews": 177,
+      "typecheck": "passed",
+      "scopedLint": "passed",
+      "nextBuild": "passed",
+      "desktop": "reviewed",
+      "mobile": "reviewed"
+    },
+    "screenshot": "/tmp/black-scarab-localization-live-2026-11-10.png"
+  }
 }

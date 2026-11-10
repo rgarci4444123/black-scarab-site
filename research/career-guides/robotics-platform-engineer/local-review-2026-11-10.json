@@ -1,0 +1,69 @@
+{
+  "reviewedAt": "2026-11-10T18:08:08.725853+00:00",
+  "status": "approved-for-deployment",
+  "occupationId": "robotics-platform-engineer",
+  "researchRoleId": "robotics-platform-engineer",
+  "url": "http://127.0.0.1:3066/career-paths/platforms-simulation/robotics-platform-engineer",
+  "publishedAt": "2026-11-10",
+  "summary": "User editorial rewrite applied across eight sections, seven comparison tables, salary examples, eight portfolio steps and four resources. Original cover, salary derivation and numerical queue graphic retained.",
+  "verification": {
+    "careerChecks": 33,
+    "sourceRecordsAudited": 192,
+    "rawSourcesAudited": 42,
+    "snapshotPostings": 1029,
+    "localGuides": 19,
+    "typescript": "passed",
+    "scopedEslint": "passed",
+    "productionBuild": "passed",
+    "articlePreviews": 177,
+    "metadata": "Unique H1, SEO title, canonical and Article schema; no publication date",
+    "desktop": "1100x1250 revised opening verified",
+    "tablet": "768x1100 article and graphic verified",
+    "mobile": "288x1450 message graphic, three-column transition table and salary table verified; no document or table overflow",
+    "messageHistory": "Bounded FIFO queues retain 3 or 1 readings at time 50ms; next sample ages 50 and 10ms; replaced-message conservation and no future samples verified",
+    "editorial": "Supplied copy applied; all main-body paragraphs accounted for outside consolidated queue example and salary note; eight portfolio steps and four resources."
+  },
+  "screenshots": [
+    "/tmp/black-scarab-platform-rewrite-opening-desktop-2026-11-10.png",
+    "/tmp/black-scarab-platform-rewrite-graphic-mobile-2026-11-10.png",
+    "/tmp/black-scarab-platform-rewrite-transition-mobile-2026-11-10.png"
+  ],
+  "files": [
+    {
+      "path": "lib/career-paths/robotics-platform-engineer-guide.ts",
+      "sha256": "5ea28f55a130f296acf6bd7ec64036116e266c0583bdd09a96a8634b193d0c44"
+    },
+    {
+      "path": "lib/career-paths/message-history.ts",
+      "sha256": "9f827b1ef49e55be9fa3a6280b7f9f441fa1cc898236cd3da3bd69f8a9e06376"
+    },
+    {
+      "path": "components/career-guide-elements.tsx",
+      "sha256": "b07ff951746c1ecaf3422574d5888fa5accb166a5be34e440c528fcc5d6aa652"
+    },
+    {
+      "path": "components/career-guide-editorial.css",
+      "sha256": "489ad4a96fdbe9195a01047aa32d3bddfdcce5139f2f25eea553739856e82a30"
+    },
+    {
+      "path": "public/career-paths/robotics-platform-engineer-studio.webp",
+      "sha256": "f0114798bc4c980e9c7d7d2089885bac77b9c7fe58f40e10ddd51da4fe4bb0c6"
+    },
+    {
+      "path": "public/research/robotics-platform-engineer-compensation-2026-11-02.json",
+      "sha256": "05a53b88a192b015bc2245e8724abd502cbb9bf6e08af4f30f25497e94dd7324"
+    },
+    {
+      "path": "public/research/robotics-platform-engineer-evidence-2026-11-10.json",
+      "sha256": "4cf365efbeec79cf6bac60e066423db6ca66d16cfa74f900503b5a0585e7ade1"
+    },
+    {
+      "path": "public/research/platform-message-history-example-2026-11-10.json",
+      "sha256": "0d0d00549dd3e90419d9156ce68b03a960ec2afa82bb2d36b384a12adb5667ee"
+    },
+    {
+      "path": "research/career-guides/robotics-platform-engineer/editorial-revision-2026-11-10.json",
+      "sha256": "bda9ca2ef091a2026b85af88163bf7d23f9fa9e7c750090011bd0901a60af8a1"
+    }
+  ]
+}

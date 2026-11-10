@@ -1,0 +1,15 @@
+{
+  "kind": "illustrative-subscriber-history",
+  "unit": "ms",
+  "arrivalTimes": [
+    0,
+    20,
+    40
+  ],
+  "dequeueAt": 50,
+  "depths": [
+    3,
+    1
+  ],
+  "assumptions": "Invented single-topic example; timestamp equals arrival time, all messages already arrived and none consumed before time 50ms. Each finite queue evicts its oldest sample at capacity. One FIFO dequeue happens at 50ms. No network delay, packet loss, retransmission, callback processing or cross-topic scheduling modeled. Smaller retained history favors freshness while discarding intermediate samples; not a command or durable-event delivery design."
+}

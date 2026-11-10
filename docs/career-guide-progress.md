@@ -1,6 +1,6 @@
 # Career guide progress
 
-Updated November 10, 2026. Seventeen of twenty published. Localization & Mapping Engineer is in local review; Robotics Platform and Systems Safety remain.
+Updated November 10, 2026. Eighteen of twenty published. Robotics Platform Engineer is in local review; Systems Safety Engineer follows.
 
 - ~~Mechanical Engineer~~
 - ~~Robot Learning Engineer~~
@@ -19,6 +19,6 @@ Updated November 10, 2026. Seventeen of twenty published. Localization & Mapping
 - ~~Verification & Validation Engineer~~
 - ~~Robot Operations Specialist~~
 - ~~Hardware Test Engineer~~
-- Localization & Mapping Engineer (local review)
-- Robotics Platform Engineer
+- ~~Localization & Mapping Engineer~~
+- Robotics Platform Engineer (local review)
 - Systems Safety Engineer

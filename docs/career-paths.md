@@ -284,3 +284,15 @@ The new in-article visual compares a translation-only pose graph before and afte
 Localization editorial revision, November 10: applied the user’s expanded copy across all eight sections, including eight comparison tables, eight portfolio steps and four learning resources. Restyled the existing loop-closure component from the supplied visual reference: direct Start/End labels, restrained blue/teal paths, coral endpoints and prominent computed gap values. Removed axes, the separate symbol legend and duplicate headings. The original numerical model, salary derivation and cover remain attached to the draft.
 
 Localization & Mapping was approved for production November 10, 2026, including the complete user revision and simplified loop-closure comparison. Assign its first publication to November 10. Robotics Platform Engineer follows for local review.
+
+Localization & Mapping is deployed in commit `04c216c5daf0115a2c5614adb7b30fabb92bc356`, verified November 10, 2026. The complete user revision, simplified loop-closure graphic, $250,000 estimate, cover, metadata, research downloads, category and sitemap are live. Eighteen guides are published. Robotics Platform Engineer is next for local review.
+
+## Robotics Platform local draft, November 10, 2026
+
+Added the nineteenth completed local guide at `/career-paths/platforms-simulation/robotics-platform-engineer`, with no publication date pending user review. Eight sections distinguish shared middleware, runtime and OS/release infrastructure from application algorithms, microcontroller firmware and primary ML/data work. Nine full employer sources across eight employers plus one boundary review support the draft. Seven explicitly annual U.S. ranges across six employers produce the $215,000 median-midpoint estimate; source hashes, clauses and scope exclusions remain reproducible through `scripts/build-platform-guide-research.py`.
+
+The original editorial cover shows three embodiments in adjacent integration bays with restrained crimson accents. The in-article queue snapshot compares retained depths three and one at the same read time, producing sample ages of 50 and 10 ms. Its model, exact queue behavior and replaced-message conservation are separately documented and tested. No network or real-time delivery guarantee is inferred. Eighteen guides are live; Robotics Platform awaits review and Systems Safety follows.
+
+Robotics Platform editorial revision, November 10: applied the supplied expanded copy across all eight sections, seven comparison tables, an annual salary table, eight portfolio steps and four resources. Kept the existing numerical message-history visual in place of the repeated queue table and narration. Preserved the original cover, $215,000 derivation, metadata, navigation and complete collapsed source methodology.
+
+Robotics Platform Engineer was approved for push and production November 10, 2026, including the complete user rewrite, expanded project and message-history graphic. Assign first publication to November 10. Systems Safety Engineer follows for local review.
