@@ -53,13 +53,14 @@
     {
       "order": 8,
       "roleId": "industrial-automation-engineer",
-      "status": "approved-for-release",
+      "status": "deployed",
       "path": "/career-paths/integration-operations/industrial-automation-engineer"
     },
     {
       "order": 9,
       "roleId": "manufacturing-engineer",
-      "status": "queued"
+      "status": "approved-for-release",
+      "path": "/career-paths/hardware-manufacturing/manufacturing-engineer"
     },
     {
       "order": 10,

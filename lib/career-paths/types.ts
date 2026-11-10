@@ -46,6 +46,7 @@ export interface CareerFamily {
 
 // Profession summaries stay separate from publishable, long-form guides.
 export type CareerGuideBlock =
+  | { type: 'yield-comparison'; id: string; title: string; total: number; firstPass: number; reworkedPass: number; scrapped: number; note: string }
   | { type: 'state-sequence'; id: string; title: string; states: { id: string; label: string; description: string }[]; transitions: { from: string; to: string; condition: string }[]; fault: { from: string; trigger: string; description: string; recovery: string; returnTo: string }; explanation?: string; note: string }
   | { type: 'paragraph'; text: string }
   | { type: 'heading'; text: string }

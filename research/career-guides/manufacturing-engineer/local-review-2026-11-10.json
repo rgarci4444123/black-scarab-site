@@ -1,0 +1,73 @@
+{
+  "status": "approved-for-release",
+  "reviewedAt": "2026-11-10",
+  "guidePath": "/career-paths/hardware-manufacturing/manufacturing-engineer",
+  "url": "http://127.0.0.1:3048/career-paths/hardware-manufacturing/manufacturing-engineer",
+  "publication": "User approved publication November 10, 2026.",
+  "precedingRelease": {
+    "guide": "industrial-automation-engineer",
+    "commit": "339669d3b14ee7ebd77938d51b7de625345f3993",
+    "status": "deployed and verified"
+  },
+  "sectionCount": 9,
+  "research": {
+    "selectedFullSources": 10,
+    "additionalBoundaryFullSourceReviews": 3,
+    "originalCohort": 67,
+    "originalEmployers": 18,
+    "annualSalaryObservations": 7,
+    "salaryEmployers": 6,
+    "exactMedian": 182000,
+    "estimate": 182000,
+    "exclusions": "Conflicting 1X harness/hands pay, battery-design duties, technician, test and quality roles; missing annual pay periods."
+  },
+  "artwork": {
+    "asset": "public/career-paths/manufacturing-engineer-lab.webp",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "bytes": 192388,
+    "tool": "built-in image_gen",
+    "record": "research/career-guides/manufacturing-engineer/artwork-2026-11-10.json"
+  },
+  "inArticleVisual": {
+    "type": "responsive unit grid and paired yield metrics",
+    "id": "manufacturing-first-pass-yield",
+    "kind": "illustrative-batch",
+    "total": 100,
+    "firstPass": 82,
+    "reworkedPass": 15,
+    "scrapped": 3,
+    "firstPassYieldPercent": 82,
+    "finalAcceptedYieldPercent": 97,
+    "desktopColumns": 20,
+    "mobileColumns": 10,
+    "presentation": "Neutral and blue-gray unit fills, crossed-out scrap units, count labels, selectable metrics and screen-reader batch description. Mobile labels reserve two lines so percentages align.",
+    "export": "public/research/manufacturing-yield-example-2026-11-10.json",
+    "sectionId": "manufacturing-quality"
+  },
+  "validation": {
+    "careerTests": 25,
+    "selectedSourceRecordsAudited": 124,
+    "rawSourcesAudited": 41,
+    "typecheck": "passed",
+    "scopedLint": "passed",
+    "nextBuild": "passed",
+    "existingArticlePreviews": 175,
+    "desktop": "Revised copy reviewed at 1100 CSS pixels; nine sections, eight tables, complete eight-step project and 100-unit graphic in the dedicated quality section.",
+    "mobile": "Reviewed at 288 and 360 CSS pixels: no page or table overflow; eight tables stack responsively; 100 grid cells in ten columns and exactly aligned percentage figures.",
+    "metadata": "Unique H1, SEO title, description, canonical and Article schema; publication and modification dates November 10, 2026.",
+    "navigation": "Local category, assessment links and sitemap follow the existing complete-guide registry.",
+    "tablet": "Reviewed at 768 CSS pixels: 20 grid columns, 100 cells and no horizontal overflow.",
+    "copy": "Supplied deck, overview, nine sections, expanded project and official resources applied; custom grid/text markup consolidated into the existing yield visual."
+  },
+  "screenshots": {
+    "opening": "/tmp/black-scarab-manufacturing-revised-opening.png",
+    "yieldDesktop": "/tmp/black-scarab-manufacturing-revised-quality-desktop.png",
+    "yieldMobile": "/tmp/black-scarab-manufacturing-revised-quality-mobile.png",
+    "transitionMobile": "/tmp/black-scarab-manufacturing-revised-transition-mobile.png"
+  },
+  "editorialRevision": "research/career-guides/manufacturing-engineer/editorial-revision-2026-11-10.json",
+  "approvedAt": "2026-11-10"
+}

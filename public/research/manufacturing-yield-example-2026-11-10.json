@@ -1,0 +1,10 @@
+{
+  "kind": "illustrative-batch",
+  "total": 100,
+  "firstPass": 82,
+  "reworkedPass": 15,
+  "scrapped": 3,
+  "firstPassYieldPercent": 82,
+  "finalYieldPercent": 97,
+  "assumptions": "One batch, identical acceptance criteria, no new units added, mutually exclusive final categories; no employer measurements. All reworked units counted here ultimately pass."
+}

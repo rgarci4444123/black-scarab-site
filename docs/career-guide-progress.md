@@ -1,6 +1,6 @@
 # Career guide progress
 
-Updated November 10, 2026. Twelve of twenty approved for publication. Industrial Automation Engineer is approved for release; eight guides remain.
+Updated November 10, 2026. Thirteen of twenty approved for publication. Manufacturing Engineer is approved for release; seven guides remain.
 
 - ~~Mechanical Engineer~~
 - ~~Robot Learning Engineer~~
@@ -14,7 +14,7 @@ Updated November 10, 2026. Twelve of twenty approved for publication. Industrial
 - ~~Robotics Controls Engineer~~
 - ~~Machine Learning Infrastructure Engineer~~
 - ~~Industrial Automation Engineer~~
-- Manufacturing Engineer
+- ~~Manufacturing Engineer~~
 - Motion Planning Engineer
 - Verification & Validation Engineer
 - Robot Operations Specialist

@@ -1,0 +1,14 @@
+{
+  "researchedAt": "2026-11-10",
+  "method": "Employer-title and informational-intent review. Editorial choices, with no search-volume or ranking claim.",
+  "guides": [{
+    "occupationId": "manufacturing-engineer",
+    "h1": "How to Become a Manufacturing Engineer in Robotics",
+    "seoTitle": "Robotics Manufacturing Engineer: Salary, Skills & Career Guide",
+    "description": "Explore manufacturing engineering in robotics: assembly processes, fixtures, quality, employer qualifications, salary research and a practical production project.",
+    "path": "/career-paths/hardware-manufacturing/manufacturing-engineer",
+    "primaryQuery": "robotics manufacturing engineer",
+    "supportingTopics": ["manufacturing engineer robotics salary", "robotics production engineering", "manufacturing engineer skills", "robotics manufacturing portfolio"],
+    "rationale": "Use the established manufacturing profession with robotics context. Focus on repeatable production, NPI, assembly, tooling, quality and supplier readiness. Distinguish product design, PLC sequencing and primary test/quality-engineering roles."
+  }]
+}

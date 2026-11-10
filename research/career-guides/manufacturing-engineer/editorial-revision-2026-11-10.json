@@ -1,0 +1,32 @@
+{
+  "revisedAt": "2026-11-10",
+  "status": "complete-copy-applied",
+  "source": "User-supplied editorial revision",
+  "sourcePath": "/Users/rodolfogarcia/.codex/attachments/1296c5a3-bd07-4aa0-869a-74e0d59fa1be/Pasted text.txt",
+  "sourceSha256": "76a9b00483bf6cfe497db10cfc3ce4dd6aae0afe507eeb005ffe108af1007432",
+  "headline": "How to Become a Manufacturing Engineer in Robotics",
+  "sectionCount": 9,
+  "preserved": [
+    "Existing route, SEO metadata, hero and original section fragments",
+    "182000 USD compensation estimate, seven-observation derivation and original provenance",
+    "100-assembly yield model, graphic and mobile percentage alignment",
+    "Complete collapsed research methodology and references",
+    "Local-review status with no first-publication date"
+  ],
+  "presentation": [
+    "Applied supplied deck, overview and full revised article.",
+    "Added dedicated manufacturing-quality section and moved the existing yield graphic into it.",
+    "Consolidated the outcome table, total-accepted sentence and supplied grid/text markup into the existing visual; no raw custom markup rendered.",
+    "Expanded the sensor-bracket portfolio to eight steps and added the supplied official learning links."
+  ],
+  "sourceCorrections": [
+    "Use Annual advertised salary instead of base salary because the structured fields do not consistently establish base-pay treatment.",
+    "Replace an unsupported general compensation-premium claim with a comparison of technical responsibilities."
+  ],
+  "addedReferences": [
+    "https://asq.org/quality-resources",
+    "https://www.nist.gov/",
+    "https://www.sme.org/"
+  ],
+  "resourceChecks": "Official resource pages checked November 10, 2026."
+}

@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "reviewedAt": "2026-11-10",
+  "aggregatePath": "/research/physical-ai-careers-2026-11-02.json",
+  "aggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "rawArchive": {
+    "relativeRoot": "research/physical-ai/2026-11-02",
+    "normalizedRecords": "postings.jsonl",
+    "manifestHash": "6b48026839dcafc9d68144cf3fbedf38889984ad96f667a21e058b4d25f26f14"
+  },
+  "interpretation": "Contextual guide review; original dated research unchanged.",
+  "roles": {
+    "manufacturing-engineer": {
+      "recordIds": [
+        "fieldai:lever:61d53082-301f-4a1a-9439-180d10d4ebc0",
+        "one-x:ashby:e350ff0d-dd7f-4299-8415-dc8e6da051ac",
+        "standard-bots:ashby:7ea413c0-82ad-48c2-a706-2fa8d6dba91a",
+        "cobot:ashby:c54fa946-dd6b-4f0a-8957-4370b7d62e25",
+        "figure:greenhouse:4375064006",
+        "skydio:ashby:ab193d47-71aa-4110-af25-b7f6335d16aa",
+        "skydio:ashby:ffbc31a1-c7dc-4083-9fc2-08dca7b79619",
+        "apptronik:greenhouse:5809796004",
+        "apptronik:greenhouse:6237444004",
+        "anybotics:lever:41220f43-53f8-4336-94a1-eaed97c34784"
+      ],
+      "auditPath": "research/career-guides/manufacturing-engineer/evidence-audit.json",
+      "compensation": [
+        {
+          "employer": "Standard Bots",
+          "title": "Electronics Manufacturing Engineer",
+          "url": "https://jobs.ashbyhq.com/standardbots/7ea413c0-82ad-48c2-a706-2fa8d6dba91a",
+          "minimum": 110000,
+          "maximum": 145000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "recordId": "standard-bots:ashby:7ea413c0-82ad-48c2-a706-2fa8d6dba91a",
+          "location": "Glen Cove, NY"
+        },
+        {
+          "employer": "1X",
+          "title": "Senior Manufacturing Engineer",
+          "url": "https://jobs.ashbyhq.com/1x/e350ff0d-dd7f-4299-8415-dc8e6da051ac",
+          "minimum": 141000,
+          "maximum": 181000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "recordId": "one-x:ashby:e350ff0d-dd7f-4299-8415-dc8e6da051ac",
+          "location": "Hayward, CA"
+        },
+        {
+          "employer": "Skydio",
+          "title": "Senior Manufacturing Design Engineer",
+          "url": "https://jobs.ashbyhq.com/skydio/ab193d47-71aa-4110-af25-b7f6335d16aa",
+          "minimum": 145000,
+          "maximum": 219000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "base salary",
+          "recordId": "skydio:ashby:ab193d47-71aa-4110-af25-b7f6335d16aa",
+          "location": "Hayward, CA"
+        }
+      ],
+      "skillPresentation": "qualitative-source-comparison",
+      "scopeNote": "Broad original cohort includes adjacent quality, test, technician and product-design roles. Do not treat counts as clean current vacancies or skill prevalence."
+    }
+  },
+  "records": [
+    {
+      "id": "fieldai:lever:61d53082-301f-4a1a-9439-180d10d4ebc0",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Manufacturing Engineer, Robotics Hardware",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/61d53082-301f-4a1a-9439-180d10d4ebc0",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "368a628458877118e8a2d7d7dfe1702152ec5a19490510668952e2d5a7b9d917",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robot hardware assembly, DFM/DFA, fixtures, yield and process documentation.",
+      "qualification": "Bachelor's degree in Manufacturing Engineering, Mechanical Engineering, Electrical Engineering, or a related field.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in Manufacturing Engineering, Mechanical Engineering, Electrical Engineering, or a related field.",
+          "start": 4524,
+          "end": 4639
+        }
+      ]
+    },
+    {
+      "id": "one-x:ashby:e350ff0d-dd7f-4299-8415-dc8e6da051ac",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Manufacturing Engineer",
+      "locations": [
+        "Hayward, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/e350ff0d-dd7f-4299-8415-dc8e6da051ac",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "c3b3e279f94857397de6334db721d3276054b257529893fae46cd370569fdda5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Humanoid machining/assembly, tooling, inspection, NPI, production process controls and traceable documentation.",
+      "qualification": "Bachelor’s degree in Mechanical Engineering, Mechatronics, Manufacturing Engineering, or a related field",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s degree in Mechanical Engineering, Mechatronics, Manufacturing Engineering, or a related field",
+          "start": 3353,
+          "end": 3457
+        }
+      ]
+    },
+    {
+      "id": "standard-bots:ashby:7ea413c0-82ad-48c2-a706-2fa8d6dba91a",
+      "employerId": "standard-bots",
+      "employer": "Standard Bots",
+      "title": "Electronics Manufacturing Engineer",
+      "locations": [
+        "Glen Cove, NY"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/standardbots/7ea413c0-82ad-48c2-a706-2fa8d6dba91a",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "839e1d0922dae3c0e403432bb5a41c1465d588ad44b92047028feaf3173d5b8f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robot PCBA manufacturability and SMT process ownership. Associate degree or equivalent experience accepted.",
+      "qualification": "• Associate's or Bachelor's in Electrical Engineering Technology (EET), Electrical or Manufacturing Engineering, or a related field or equivalent hands-on experience.",
+      "qualificationSpans": [
+        {
+          "text": "• Associate's or Bachelor's in Electrical Engineering Technology (EET), Electrical or Manufacturing Engineering, or a related field or equivalent hands-on experience.",
+          "start": 4654,
+          "end": 4820
+        }
+      ]
+    },
+    {
+      "id": "cobot:ashby:c54fa946-dd6b-4f0a-8957-4370b7d62e25",
+      "employerId": "cobot",
+      "employer": "Collaborative Robotics",
+      "title": "Staff Manufacturing Engineer, Production Systems",
+      "locations": [
+        "Santa Clara"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/cobot/c54fa946-dd6b-4f0a-8957-4370b7d62e25",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "82a7d88b7986af7d4197c3d9532dc2bdbdf07abf9a132b18a577ddc69e2d16c6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/cobot.json",
+      "rawSourceFileSha256": "1cc14d718f1a8ab3009ad3cd2a864e4d77fa2a071bf8f06208a3f2518b37f3c3",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Hands-on technical architecture of robot production sequence, fixtures, defect closure and manufacturing metrics. Staff technical role; no direct-report management stated.",
+      "qualification": "9+ years in manufacturing/process/production engineering for electromechanical hardware (robotics, consumer electronics, medical devices, automotive, or similar).",
+      "qualificationSpans": [
+        {
+          "text": "9+ years in manufacturing/process/production engineering for electromechanical hardware (robotics, consumer electronics, medical devices, automotive, or similar).",
+          "start": 2112,
+          "end": 2274
+        }
+      ]
+    },
+    {
+      "id": "figure:greenhouse:4375064006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Manufacturing Engineer",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4375064006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "c3c8b30001c46428a21db5fdfb6e87c419b6b92e8d962658e4e5c2813d8541e3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Humanoid build-line development, manual/automated assembly, fixtures, MES and inspection. Related degree is a bonus qualification.",
+      "qualification": "Bachelor’s or Master’s Degree in Mechanical, Biomechanical, Robotics, Mechatronics, or similar field.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s or Master’s Degree in Mechanical, Biomechanical, Robotics, Mechatronics, or similar field.",
+          "start": 1431,
+          "end": 1532
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:ab193d47-71aa-4110-af25-b7f6335d16aa",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Senior Manufacturing Design Engineer",
+      "locations": [
+        "Hayward, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/ab193d47-71aa-4110-af25-b7f6335d16aa",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "6170b030b371fbd0075d21ab972fe6039c9df5e357bbffa5181201c424bcfe75",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Drone NPI, validated assembly processes, tooling, production capacity and measurement systems.",
+      "qualification": "Bachelor’s degree in Manufacturing Engineering, Mechanical Engineering, Industrial Engineering, Electrical Engineering, Mechatronics, or a related technical field.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s degree in Manufacturing Engineering, Mechanical Engineering, Industrial Engineering, Electrical Engineering, Mechatronics, or a related technical field.",
+          "start": 4772,
+          "end": 4935
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:ffbc31a1-c7dc-4083-9fc2-08dca7b79619",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Senior Manufacturing Process Engineer",
+      "locations": [
+        "Hayward, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/ffbc31a1-c7dc-4083-9fc2-08dca7b79619",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "f261e8bd9f146efe85ebb4541683802eb8131301c3408aede507cdbd7c3366b6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Manufacturing process engineering, time studies, line balancing, capacity, standard work and continuous improvement.",
+      "qualification": "7+ years experience developing and optimizing manufacturing processes throughout the full product lifecycle, from New Product Introduction (NPI) through high-volume production.",
+      "qualificationSpans": [
+        {
+          "text": "7+ years experience developing and optimizing manufacturing processes throughout the full product lifecycle, from New Product Introduction (NPI) through high-volume production.",
+          "start": 2964,
+          "end": 3140
+        }
+      ]
+    },
+    {
+      "id": "apptronik:greenhouse:5809796004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Manufacturing Engineer (Supply Chain) - Electromechanical",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/5809796004?gh_jid=5809796004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "a50e835028ed8f37647b27af6d12a016c0ca54f582e31a9c664aa13b09d16315",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Supplier-side manufacturing process engineering, component qualification, electromechanical assemblies and supplier production readiness. Degree expressly required.",
+      "qualification": "Bachelor's degree in Mechanical Engineering, Manufacturing Engineering, Electrical Engineering, Industrial Engineering, or a closely related engineering discipline (a degree is required — related STEM degrees will be considered only with directly applicable manufacturing engineering experience)",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in Mechanical Engineering, Manufacturing Engineering, Electrical Engineering, Industrial Engineering, or a closely related engineering discipline (a degree is required — related STEM degrees will be considered only with directly applicable manufacturing engineering experience)",
+          "start": 5352,
+          "end": 5647
+        }
+      ]
+    },
+    {
+      "id": "apptronik:greenhouse:6237444004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Senior Manufacturing Engineer - Assembly",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6237444004?gh_jid=6237444004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "ead20040b90ef5b36cc47cee95cc4628b34fbc29766204c7968739b679b7bc9b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Precision electromechanical assembly, manufacturing BOMs, work instructions, qualified tooling, yield and engineering changes.",
+      "qualification": "Education: Bachelor’s degree in Mechanical, Manufacturing, Electrical Engineering, or related discipline.",
+      "qualificationSpans": [
+        {
+          "text": "Education: Bachelor’s degree in Mechanical, Manufacturing, Electrical Engineering, or related discipline.",
+          "start": 2858,
+          "end": 2963
+        }
+      ]
+    },
+    {
+      "id": "anybotics:lever:41220f43-53f8-4336-94a1-eaed97c34784",
+      "employerId": "anybotics",
+      "employer": "ANYbotics",
+      "title": "Manufacturing Engineer",
+      "locations": [
+        "Zurich, Switzerland"
+      ],
+      "countries": [
+        "Switzerland"
+      ],
+      "url": "https://jobs.lever.co/anybotics/41220f43-53f8-4336-94a1-eaed97c34784",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "034cc9c2b894e50b21fc111c492c3138595e8c85cd3134317d8b8670d7315651",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anybotics.json",
+      "rawSourceFileSha256": "710cdd1101d8008347609066088afd3711795b1df2241e3c4ae8461d12d70543",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Swiss robot production support, NPI implementation, tooling, calibration, test procedures and yield monitoring; technical diploma or degree.",
+      "qualification": "Bachelor’s degree or technical diploma (HF/FH) in Electronics, Electrical Engineering, or Mechatronics",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s degree or technical diploma (HF/FH) in Electronics, Electrical Engineering, or Mechatronics",
+          "start": 3048,
+          "end": 3150
+        }
+      ]
+    }
+  ]
+}

@@ -5,6 +5,19 @@ export function CareerOverview({items}:{items:NonNullable<CareerGuideContent['ov
   return <section className="profession-overview" aria-labelledby="career-overview-title"><h2 id="career-overview-title">Career at a glance</h2><dl>{items.map(item=><div key={item.label}><dt>{item.label}</dt><dd><strong>{item.value}</strong>{item.detail?<p>{item.detail}</p>:null}</dd></div>)}</dl></section>;
 }
 
+type YieldComparison=Extract<CareerGuideBlock,{type:'yield-comparison'}>;
+export function CareerYieldComparison({block}:{block:YieldComparison}) {
+  const percent=(count:number)=>new Intl.NumberFormat('en-US',{style:'percent',maximumFractionDigits:1}).format(count/block.total);
+  const categories=[{kind:'first',label:'Passed first time',count:block.firstPass},{kind:'reworked',label:'Passed after rework',count:block.reworkedPass},{kind:'scrap',label:'Scrapped',count:block.scrapped}];
+  return <figure id={block.id} className="profession-yield-comparison" aria-labelledby={`${block.id}-title`}>
+    <figcaption id={`${block.id}-title`}>{block.title}</figcaption>
+    <dl className="profession-yield-metrics"><div><dt>First-pass yield</dt><dd>{percent(block.firstPass)}</dd></div><div><dt>Final accepted yield</dt><dd>{percent(block.firstPass+block.reworkedPass)}</dd></div></dl>
+    <div className="profession-yield-units" role="img" aria-label={`${block.total} assemblies: ${block.firstPass} pass on the first attempt, ${block.reworkedPass} pass after rework, and ${block.scrapped} are scrapped.`}>{categories.flatMap(category=>Array.from({length:category.count},(_,index)=><span key={`${category.kind}-${index}`} className={`profession-yield-unit profession-yield-${category.kind}`} aria-hidden="true"/>))}</div>
+    <ul className="profession-yield-legend" aria-label="Assembly outcomes">{categories.map(category=><li key={category.kind}><span className={`profession-yield-unit profession-yield-${category.kind}`} aria-hidden="true"/><span><strong>{category.count}</strong> {category.label}</span></li>)}</ul>
+    <p className="profession-research-note">{block.note}</p>
+  </figure>;
+}
+
 type StateSequence=Extract<CareerGuideBlock,{type:'state-sequence'}>;
 function StateSequenceDiagram({block,mobile=false}:{block:StateSequence;mobile?:boolean}) {
   const marker=`${block.id}-${mobile?'mobile':'desktop'}-arrow`;

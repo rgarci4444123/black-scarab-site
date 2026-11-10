@@ -1,9 +1,9 @@
 {
-  "status": "approved-for-release",
+  "status": "deployed",
   "reviewedAt": "2026-11-09",
   "guidePath": "/career-paths/integration-operations/industrial-automation-engineer",
   "url": "http://127.0.0.1:3045/career-paths/integration-operations/industrial-automation-engineer#automation-cell-sequence",
-  "publication": "User approved publication November 10, 2026.",
+  "publication": "User approved publication November 10, 2026; deployed and verified.",
   "precedingRelease": {
     "guide": "machine-learning-infrastructure-engineer",
     "commit": "eef14e10f8dc29302e2642887291825a87a79189",
@@ -71,5 +71,34 @@
   },
   "editorialRevision": "research/career-guides/industrial-automation-engineer/editorial-revision-2026-11-09.json",
   "visualRevision": "research/career-guides/industrial-automation-engineer/visual-revision-2026-11-09.json",
-  "approvedAt": "2026-11-10"
+  "approvedAt": "2026-11-10",
+  "deployment": {
+    "guide": "industrial-automation-engineer",
+    "deployedAt": "2026-11-10T15:14:56Z",
+    "commit": "339669d3b14ee7ebd77938d51b7de625345f3993",
+    "previousCommit": "e7d1efc",
+    "url": "https://www.blackscarab.ai/career-paths/integration-operations/industrial-automation-engineer",
+    "deploymentUrl": "https://black-scarab-site-jv8v0xexe-rodolfo-garcias-projects.vercel.app",
+    "vercelStatusUrl": "https://vercel.com/rodolfo-garcias-projects/black-scarab-site/6FUcBtCJSfWDgpg3ckfT3SGLJNtN",
+    "githubDeploymentId": 7685976395,
+    "status": "success",
+    "verified": [
+      "Live H1, SEO title, canonical and November 10 structured publication and modified dates",
+      "159000 USD estimate, hero, full user rewrite and connected state-machine graphic",
+      "Research downloads, category links and sitemap"
+    ],
+    "validation": {
+      "careerTests": 24,
+      "selectedSourcesAudited": 114,
+      "rawSourcesAudited": 40,
+      "articlePreviews": 175,
+      "typecheck": "passed",
+      "scopedLint": "passed",
+      "nextBuild": "passed",
+      "desktop": "reviewed",
+      "tablet": "reviewed",
+      "mobile": "reviewed"
+    },
+    "screenshot": "/tmp/black-scarab-industrial-automation-live-2026-11-10.png"
+  }
 }

@@ -1,0 +1,69 @@
+{
+  "createdAt": "2026-11-10",
+  "tool": "built-in image_gen",
+  "source": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-df95e740-d710-4bfc-a1e4-8a4875a359de.png",
+  "asset": "public/career-paths/manufacturing-engineer-lab.webp",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "bytes": 192388,
+  "prompt": "Use case: illustration-story. Asset: Black Scarab Manufacturing Engineer career guide hero, wide 16:9 landscape. Story thesis: a robot design becomes a repeatable build process through fixtures, measurements and the people doing the assembly. Create an original cinematic editorial photograph-like scene inside an advanced near-future robotics assembly workshop. Camera at workbench height, tight oblique side view: in the foreground, two anonymous gloved human hands carefully seat a precision robot shoulder-joint assembly into a substantial custom metal alignment fixture, with a controlled fastening tool nearby and a locating gauge clearly part of the work. The person is only partially visible, dark sleeve and hands, no face or identifiable gender. Follow the fixture's diagonal into a compressed, shallow-depth background of several unfinished pale humanoid torso frames mounted in individual production fixtures, each at a successive assembly stage. Emphasize work in progress, precision, repeatability and tactile craft, rather than a completed robot posed for sale. Directional cool white workshop light catches brushed metal edges, subtle real machining marks and a few fingerprints. Rich silver, charcoal, black and white comprise 80–90 percent of the scene. Deliberate bright industrial yellow tool bodies, clamp handles and a few fixture accents provide 10–20 percent color, without a yellow wash. Sophisticated editorial realism, captivating asymmetry, crisp foreground detail, optical depth, convincing physical contact between hands, tooling and assembly. The scene should feel alive and technically purposeful. No text, numbers, lettering, logos, watermark, UI panels, charts or holograms. Avoid a person at a computer, an isolated product, clean ecommerce packshot, lineup on a seamless white background, overhead factory map, dark server hall, circuit-board macro, quadruped robot or warehouse vehicle repair. This is a conceptual editorial illustration, not a real company's factory or a verified manufacturing procedure.",
+  "brief": {
+    "storyThesis": "Make a robot design repeatable through fixtures, measurements and assembly methods.",
+    "visualThesis": "Precision work in the foreground becomes a repeatable production sequence behind it.",
+    "medium": "cinematic editorial realism",
+    "viewpoint": "bench-height close oblique",
+    "composition": "gloved hands and mechanical fixture in foreground, repeated unfinished torsos receding diagonally",
+    "subjectScale": "subassembly and workstation",
+    "palette": "80–90% black/white/gray with yellow tools and clamps",
+    "light": "directional cool-white workshop lighting",
+    "texture": "brushed metal, machining marks, handled components",
+    "crop": "primary assembly and hands remain legible in wide and central crops"
+  },
+  "recentCoverReview": [
+    [
+      "Industrial Automation",
+      "overhead production-line route",
+      "full line",
+      "bright gray/cyan",
+      "architectural daylight"
+    ],
+    [
+      "ML Infrastructure",
+      "low-angle monumental compute atrium",
+      "human against architecture",
+      "charcoal/amber",
+      "hazy silver backlight"
+    ],
+    [
+      "Robotics Controls",
+      "side-on quadruped on tilted platform",
+      "whole machine",
+      "gray/violet",
+      "soft laboratory"
+    ],
+    [
+      "Embedded Software",
+      "macro open forearm electronics",
+      "circuit board",
+      "white/lime",
+      "soft technical render"
+    ],
+    [
+      "Field Service",
+      "helmeted technician at wheeled robot",
+      "vehicle repair",
+      "dark gray/amber",
+      "warehouse practical light"
+    ],
+    [
+      "Robotics Data",
+      "central recording chamber and data panels",
+      "robot/system diagram",
+      "gray/cyan",
+      "dark luminous lab"
+    ]
+  ],
+  "differentiation": "Close ongoing manufacturing work, fixture and gauging detail, repeated unfinished assemblies and yellow tooling differ from the six recent recipes. No screen scene or completed product packshot."
+}

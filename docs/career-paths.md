@@ -208,3 +208,17 @@ Industrial Automation user revision, November 9: applied attachment `b1a53e97-22
 
 
 Industrial Automation Engineer approved for push and deployment November 10, 2026, including the complete user rewrite and redesigned connected state-machine graphic. First publication and final editorial review use November 10. Manufacturing Engineer is next for local drafting.
+
+
+## Industrial Automation release and Manufacturing Engineer local review · November 10, 2026
+
+Industrial Automation Engineer is deployed in commit `339669d3b14ee7ebd77938d51b7de625345f3993`. The full user revision, connected state-machine redesign, $159,000 estimate, hero, metadata, research downloads, category links and sitemap are live and verified. The newer market-data production commit was fast-forwarded before release.
+
+Manufacturing Engineer is the next local draft at `/career-paths/hardware-manufacturing/manufacturing-engineer`. Eight sections cover production-process ownership, NPI, assembly methods, DFM/DFA, tooling, quality, supplier readiness and a passive sensor-bracket portfolio project. Ten stored employer sources reviewed in full. Salary derivation screens the 67-ad primary cohort, admits seven clean annual U.S. observations across six employers, and yields a $182,000 median-midpoint estimate. Two 1X structured/body pay conflicts are excluded, alongside a battery product-design role and dedicated technician, test and quality roles. Reproduce with `scripts/build-manufacturing-guide-research.py --archive-root`.
+
+The in-article visual compares first-pass and final accepted yield for an illustrative 100-assembly batch: 82 first-time passes, 15 passes after rework and three scrapped units. The responsive unit grid conserves the batch and groups outcomes rather than implying a timeline. The hero shows hands, an alignment fixture and repeated robot assemblies, with neutral materials and selective yellow tooling. No first-publication date; user review required.
+
+
+Manufacturing Engineer user revision, November 10: applied attachment `1296c5a3-bd07-4aa0-869a-74e0d59fa1be` across nine sections, adding a dedicated quality section and moving the existing first-pass-yield visual there. Expanded manufacturing skills, education routes, employer applications, transitions and the eight-step sensor-bracket project; added the supplied ASQ, NIST and SME resources. Consolidated the supplied outcome table and custom grid markup into the existing responsive visual. Salary labels retain the verified annual-advertised basis and $182,000 estimate. Reviewed eight responsive tables and the yield visual on desktop, tablet and narrow mobile. Local review continues at port 3048.
+
+Manufacturing Engineer approved for publication November 10, 2026, including the full user revision, quality section, yield graphic and eight-step project. First-publication and review dates use November 10. Motion Planning Engineer is next for local drafting.

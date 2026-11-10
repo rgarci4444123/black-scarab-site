@@ -1,0 +1,1466 @@
+{
+  "reviewedAt": "2026-11-10",
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "scope": "Manufacturing-process development, NPI, DFM/DFA, assembly fixtures, yield, work instructions, controlled changes and supplier readiness for robots and autonomous hardware.",
+  "cohort": {
+    "postings": 67,
+    "employers": 18
+  },
+  "reviewedRecords": [
+    {
+      "id": "fieldai:lever:61d53082-301f-4a1a-9439-180d10d4ebc0",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Manufacturing Engineer, Robotics Hardware",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/61d53082-301f-4a1a-9439-180d10d4ebc0",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "368a628458877118e8a2d7d7dfe1702152ec5a19490510668952e2d5a7b9d917",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robot hardware assembly, DFM/DFA, fixtures, yield and process documentation.",
+      "qualification": "Bachelor's degree in Manufacturing Engineering, Mechanical Engineering, Electrical Engineering, or a related field.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in Manufacturing Engineering, Mechanical Engineering, Electrical Engineering, or a related field.",
+          "start": 4524,
+          "end": 4639
+        }
+      ]
+    },
+    {
+      "id": "one-x:ashby:e350ff0d-dd7f-4299-8415-dc8e6da051ac",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Manufacturing Engineer",
+      "locations": [
+        "Hayward, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/e350ff0d-dd7f-4299-8415-dc8e6da051ac",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "c3b3e279f94857397de6334db721d3276054b257529893fae46cd370569fdda5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Humanoid machining/assembly, tooling, inspection, NPI, production process controls and traceable documentation.",
+      "qualification": "Bachelor’s degree in Mechanical Engineering, Mechatronics, Manufacturing Engineering, or a related field",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s degree in Mechanical Engineering, Mechatronics, Manufacturing Engineering, or a related field",
+          "start": 3353,
+          "end": 3457
+        }
+      ]
+    },
+    {
+      "id": "standard-bots:ashby:7ea413c0-82ad-48c2-a706-2fa8d6dba91a",
+      "employerId": "standard-bots",
+      "employer": "Standard Bots",
+      "title": "Electronics Manufacturing Engineer",
+      "locations": [
+        "Glen Cove, NY"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/standardbots/7ea413c0-82ad-48c2-a706-2fa8d6dba91a",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "839e1d0922dae3c0e403432bb5a41c1465d588ad44b92047028feaf3173d5b8f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robot PCBA manufacturability and SMT process ownership. Associate degree or equivalent experience accepted.",
+      "qualification": "• Associate's or Bachelor's in Electrical Engineering Technology (EET), Electrical or Manufacturing Engineering, or a related field or equivalent hands-on experience.",
+      "qualificationSpans": [
+        {
+          "text": "• Associate's or Bachelor's in Electrical Engineering Technology (EET), Electrical or Manufacturing Engineering, or a related field or equivalent hands-on experience.",
+          "start": 4654,
+          "end": 4820
+        }
+      ]
+    },
+    {
+      "id": "cobot:ashby:c54fa946-dd6b-4f0a-8957-4370b7d62e25",
+      "employerId": "cobot",
+      "employer": "Collaborative Robotics",
+      "title": "Staff Manufacturing Engineer, Production Systems",
+      "locations": [
+        "Santa Clara"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/cobot/c54fa946-dd6b-4f0a-8957-4370b7d62e25",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "82a7d88b7986af7d4197c3d9532dc2bdbdf07abf9a132b18a577ddc69e2d16c6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/cobot.json",
+      "rawSourceFileSha256": "1cc14d718f1a8ab3009ad3cd2a864e4d77fa2a071bf8f06208a3f2518b37f3c3",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Hands-on technical architecture of robot production sequence, fixtures, defect closure and manufacturing metrics. Staff technical role; no direct-report management stated.",
+      "qualification": "9+ years in manufacturing/process/production engineering for electromechanical hardware (robotics, consumer electronics, medical devices, automotive, or similar).",
+      "qualificationSpans": [
+        {
+          "text": "9+ years in manufacturing/process/production engineering for electromechanical hardware (robotics, consumer electronics, medical devices, automotive, or similar).",
+          "start": 2112,
+          "end": 2274
+        }
+      ]
+    },
+    {
+      "id": "figure:greenhouse:4375064006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Manufacturing Engineer",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4375064006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "c3c8b30001c46428a21db5fdfb6e87c419b6b92e8d962658e4e5c2813d8541e3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Humanoid build-line development, manual/automated assembly, fixtures, MES and inspection. Related degree is a bonus qualification.",
+      "qualification": "Bachelor’s or Master’s Degree in Mechanical, Biomechanical, Robotics, Mechatronics, or similar field.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s or Master’s Degree in Mechanical, Biomechanical, Robotics, Mechatronics, or similar field.",
+          "start": 1431,
+          "end": 1532
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:ab193d47-71aa-4110-af25-b7f6335d16aa",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Senior Manufacturing Design Engineer",
+      "locations": [
+        "Hayward, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/ab193d47-71aa-4110-af25-b7f6335d16aa",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "6170b030b371fbd0075d21ab972fe6039c9df5e357bbffa5181201c424bcfe75",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Drone NPI, validated assembly processes, tooling, production capacity and measurement systems.",
+      "qualification": "Bachelor’s degree in Manufacturing Engineering, Mechanical Engineering, Industrial Engineering, Electrical Engineering, Mechatronics, or a related technical field.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s degree in Manufacturing Engineering, Mechanical Engineering, Industrial Engineering, Electrical Engineering, Mechatronics, or a related technical field.",
+          "start": 4772,
+          "end": 4935
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:ffbc31a1-c7dc-4083-9fc2-08dca7b79619",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Senior Manufacturing Process Engineer",
+      "locations": [
+        "Hayward, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/ffbc31a1-c7dc-4083-9fc2-08dca7b79619",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "f261e8bd9f146efe85ebb4541683802eb8131301c3408aede507cdbd7c3366b6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Manufacturing process engineering, time studies, line balancing, capacity, standard work and continuous improvement.",
+      "qualification": "7+ years experience developing and optimizing manufacturing processes throughout the full product lifecycle, from New Product Introduction (NPI) through high-volume production.",
+      "qualificationSpans": [
+        {
+          "text": "7+ years experience developing and optimizing manufacturing processes throughout the full product lifecycle, from New Product Introduction (NPI) through high-volume production.",
+          "start": 2964,
+          "end": 3140
+        }
+      ]
+    },
+    {
+      "id": "apptronik:greenhouse:5809796004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Manufacturing Engineer (Supply Chain) - Electromechanical",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/5809796004?gh_jid=5809796004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "a50e835028ed8f37647b27af6d12a016c0ca54f582e31a9c664aa13b09d16315",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Supplier-side manufacturing process engineering, component qualification, electromechanical assemblies and supplier production readiness. Degree expressly required.",
+      "qualification": "Bachelor's degree in Mechanical Engineering, Manufacturing Engineering, Electrical Engineering, Industrial Engineering, or a closely related engineering discipline (a degree is required — related STEM degrees will be considered only with directly applicable manufacturing engineering experience)",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in Mechanical Engineering, Manufacturing Engineering, Electrical Engineering, Industrial Engineering, or a closely related engineering discipline (a degree is required — related STEM degrees will be considered only with directly applicable manufacturing engineering experience)",
+          "start": 5352,
+          "end": 5647
+        }
+      ]
+    },
+    {
+      "id": "apptronik:greenhouse:6237444004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Senior Manufacturing Engineer - Assembly",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6237444004?gh_jid=6237444004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "ead20040b90ef5b36cc47cee95cc4628b34fbc29766204c7968739b679b7bc9b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Precision electromechanical assembly, manufacturing BOMs, work instructions, qualified tooling, yield and engineering changes.",
+      "qualification": "Education: Bachelor’s degree in Mechanical, Manufacturing, Electrical Engineering, or related discipline.",
+      "qualificationSpans": [
+        {
+          "text": "Education: Bachelor’s degree in Mechanical, Manufacturing, Electrical Engineering, or related discipline.",
+          "start": 2858,
+          "end": 2963
+        }
+      ]
+    },
+    {
+      "id": "anybotics:lever:41220f43-53f8-4336-94a1-eaed97c34784",
+      "employerId": "anybotics",
+      "employer": "ANYbotics",
+      "title": "Manufacturing Engineer",
+      "locations": [
+        "Zurich, Switzerland"
+      ],
+      "countries": [
+        "Switzerland"
+      ],
+      "url": "https://jobs.lever.co/anybotics/41220f43-53f8-4336-94a1-eaed97c34784",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "034cc9c2b894e50b21fc111c492c3138595e8c85cd3134317d8b8670d7315651",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anybotics.json",
+      "rawSourceFileSha256": "710cdd1101d8008347609066088afd3711795b1df2241e3c4ae8461d12d70543",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Swiss robot production support, NPI implementation, tooling, calibration, test procedures and yield monitoring; technical diploma or degree.",
+      "qualification": "Bachelor’s degree or technical diploma (HF/FH) in Electronics, Electrical Engineering, or Mechatronics",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s degree or technical diploma (HF/FH) in Electronics, Electrical Engineering, or Mechatronics",
+          "start": 3048,
+          "end": 3150
+        }
+      ]
+    }
+  ],
+  "salaryExclusions": [
+    {
+      "id": "anduril:greenhouse:4668104007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Manufacturing Engineer, Fury",
+      "locations": [
+        "Ashville, Ohio, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4668104007?gh_jid=4668104007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "321e2bcf8844770d7ee4833baa68d7ccbde56754a8e935adf904892fdbbfb8c6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:4728329007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Engineer",
+      "locations": [
+        "Quonset, Rhode Island, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4728329007?gh_jid=4728329007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "7c527841768102fed68fd9a46922d5c436422555218b3c5adb8ea1294ecb980f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:4768869007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Lead Manufacturing Engineer, Ghost",
+      "locations": [
+        "Santa Ana, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4768869007?gh_jid=4768869007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "049a0e55d34483ad5dd8b8c4bc43a1f117404c25c725c19322e14aa554ca5be9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5009371007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Staff Manufacturing Engineer, Actuators",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5009371007?gh_jid=5009371007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "0d4b478d1f3f331040f32ddfb87b68da8f482f78b868413e027de02293873a86",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5050375007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Engineer",
+      "locations": [
+        "Atlanta, Georgia, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5050375007?gh_jid=5050375007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "03155ff475f3d514f07b678a8cefe8f770ad8f4d75b4b31db7726374a6c5b5ff",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5064818007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Snr Manufacturing Engineer [Mech/CI]",
+      "locations": [
+        "Sydney, New South Wales, Australia"
+      ],
+      "countries": [
+        "Australia"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5064818007?gh_jid=5064818007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "5e10055b0123c4f48b451a11acdfa902a1b6766c83c4884276b5f164f8e0f2cf",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Not verified as an exclusively U.S. advertisement."
+    },
+    {
+      "id": "anduril:greenhouse:5079275007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Manufacturing Engineer, Drones",
+      "locations": [
+        "Costa Mesa, California, United States",
+        "Santa Ana, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5079275007?gh_jid=5079275007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "f575dc4f182209056530a67117d15dbd81d4286c4ed52362d50b9d1c0a7b3edb",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5079310007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Manufacturing Engineer, Core Technology",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5079310007?gh_jid=5079310007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "6b6226eb7c23ed29ee1cee09c2b9126c13cdd4afc5eb289f16a2833111610677",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5081183007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Engineer, Turbine Engines",
+      "locations": [
+        "Costa Mesa, California, United States",
+        "Santa Ana, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5081183007?gh_jid=5081183007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "0ffa0eec5157570aca78bf37cd4240c85fbddf570f7b2ffad666d7680d6949ec",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5113338007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Manufacturing Engineer, Maritime Systems",
+      "locations": [
+        "Santa Ana, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5113338007?gh_jid=5113338007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "63bc53b27ae59640c10a0bfd4e93b9386fe28d950320907de7992721c15251ae",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5116367007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Engineer, Actuators",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5116367007?gh_jid=5116367007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "10e00d63b4c0717e2f4c432d17011055be6db0f321e62e6463b1e5d01516f81e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5143014007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Manufacturing Engineer, Mechanical (Dive-XL)",
+      "locations": [
+        "Quonset, Rhode Island, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5143014007?gh_jid=5143014007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "d387fb96cc5353681914c2b9b46afb2672df12da8c74d74d71a048748d8a9ebc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5217943007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Engineer",
+      "locations": [
+        "Costa Mesa, California, United States",
+        "Santa Ana, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5217943007?gh_jid=5217943007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "8536b6d1ec2db9519010f7091c84b50a71363af0d88e5598df0a7d9f0cd5ffcf",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5229600007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Engineer, Composites Development",
+      "locations": [
+        "Morrisville, North Carolina, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5229600007?gh_jid=5229600007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "1a17bb0c1e280fb980cf5da2bd3e72c3ccc8592d24dfd7295b74cff284eb5d02",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5241480007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Engineer",
+      "locations": [
+        "Costa Mesa, California, United States",
+        "Santa Ana, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5241480007?gh_jid=5241480007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "0ed3bdeafdbbf81352d59aa5d0afd931711424091c9495f403dc37c1fc7a5ef9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5241482007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Engineer",
+      "locations": [
+        "Costa Mesa, California, United States",
+        "Santa Ana, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5241482007?gh_jid=5241482007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "2ff7cb0dc89ac3b8e4885ac56067be9983afd0e5b22636944f467de331eac6d0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5250964007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Staff Manufacturing Engineer, Propulsion",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5250964007?gh_jid=5250964007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "8b61f0725f8fb6a1f24dca8bfead34fed9e930cf1b6c6a4f6f3462b47bffc1a5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5252078007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Engineer, Autonomous Airpower",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5252078007?gh_jid=5252078007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "e464877f6af3799b5c1b0d406157a8357f9b95959bd879ddfa12a01e708326c5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5266256007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Manufacturing Engineer",
+      "locations": [
+        "Quincy, Massachusetts, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5266256007?gh_jid=5266256007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "9cedc27f685e3b5a2b2e0207d74b90e7f39191e5487ac935cd35725b5e1f4643",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5270158007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Test Engineer, Test Automation",
+      "locations": [
+        "Quonset, Rhode Island, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5270158007?gh_jid=5270158007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "a51b64f1a7caa0dfba5655a186e0d73d6ce6dbca57d13e7b6d3f5b88c4c7d758",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5270391007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Manufacturing Engineer, Battery Systems",
+      "locations": [
+        "Quincy, Massachusetts, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5270391007?gh_jid=5270391007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "788df0f2133caa22f2d5902ef3d8e7fab7eb0425c95280701d6718604e101fdc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5270402007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Manufacturing Engineer",
+      "locations": [
+        "Quonset, Rhode Island, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5270402007?gh_jid=5270402007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "e2dade7df3bd86b60db06b3e8024302e7f34217f2adebff1792b944c65016093",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5275363007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Staff Manufacturing Engineer, Low Observable",
+      "locations": [
+        "Ashville, Ohio, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5275363007?gh_jid=5275363007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "45a1f15e7e0741add1ce7b863ee031be614ad9cdc7673c1b4d4eb6f1beaff920",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5280134007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Engineer, Mechanical (Dive-XL)",
+      "locations": [
+        "Quincy, Massachusetts, United States",
+        "Quonset, Rhode Island, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5280134007?gh_jid=5280134007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "b9b47aa48fafe0d743a124038998dd4a35d4cdc4db8cfb803c9c3eb8973a4352",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "anybotics:lever:41220f43-53f8-4336-94a1-eaed97c34784",
+      "employerId": "anybotics",
+      "employer": "ANYbotics",
+      "title": "Manufacturing Engineer",
+      "locations": [
+        "Zurich, Switzerland"
+      ],
+      "countries": [
+        "Switzerland"
+      ],
+      "url": "https://jobs.lever.co/anybotics/41220f43-53f8-4336-94a1-eaed97c34784",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "034cc9c2b894e50b21fc111c492c3138595e8c85cd3134317d8b8670d7315651",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anybotics.json",
+      "rawSourceFileSha256": "710cdd1101d8008347609066088afd3711795b1df2241e3c4ae8461d12d70543",
+      "reason": "Not verified as an exclusively U.S. advertisement."
+    },
+    {
+      "id": "apptronik:greenhouse:5809796004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Manufacturing Engineer (Supply Chain) - Electromechanical",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/5809796004?gh_jid=5809796004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "a50e835028ed8f37647b27af6d12a016c0ca54f582e31a9c664aa13b09d16315",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "apptronik:greenhouse:6237444004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Senior Manufacturing Engineer - Assembly",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6237444004?gh_jid=6237444004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "ead20040b90ef5b36cc47cee95cc4628b34fbc29766204c7968739b679b7bc9b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "boston-dynamics:workday:R2966",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Senior Staff Manufacturing Engineer",
+      "locations": [
+        "Waltham Office (POST)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-Office-POST/Senior-Staff-Manufacturing-Engineer_R2966",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "169f9a690128ea4478948db62585d618fdd0e241dd8764bba662aba5477b7ae0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "gatik:greenhouse:4616694006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Manufacturing Engineer",
+      "locations": [
+        "Rochester Hills, Michigan"
+      ],
+      "countries": [],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4616694006?gh_jid=4616694006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "bf40b2dc244e207579b286f3ba8b3ede2ccfd952ae7723ed276b1be9450ca18b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "Not verified as an exclusively U.S. advertisement."
+    },
+    {
+      "id": "kodiak:greenhouse:4424222009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Staff Vehicle Manufacturing Engineer",
+      "locations": [
+        "Mountain View, CA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4424222009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "91d9d67493f8dfe33d4803052ae79a3d35954baf18c7351a61a8f8155ee0d9bd",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "one-x:ashby:3e482524-9e68-47dd-a3e8-6b2fd53a8055",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "NPI Engineering Technician",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/3e482524-9e68-47dd-a3e8-6b2fd53a8055",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "e7b4fa2c82f04d62839e4f091874d00ab4869184976a2a5f59738355ba97a1cc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reason": "Technician role with hourly pay; not annual engineer compensation."
+    },
+    {
+      "id": "one-x:ashby:873f836f-a4b6-4ef8-9500-b960cb1198f9",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Harness Manufacturing Engineer",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/873f836f-a4b6-4ef8-9500-b960cb1198f9",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "eedc303608db0f0b9a3539af7dd286ccaa2ff9d03489c641f708c75681582dfd",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reason": "Conflicting source amounts: structured annual USD 155000–215000; body USD 155250–215050. Do not silently prefer a version."
+    },
+    {
+      "id": "one-x:ashby:e83e6f5b-0c56-4b50-ad2a-5d51a5f3219a",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Manufacturing Engineer, Hands",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/e83e6f5b-0c56-4b50-ad2a-5d51a5f3219a",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "60e782480b7cca123dd3504464d158f6fc68ec8bde761fb0806dabe0e9e102f0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reason": "Conflicting source amounts: structured annual USD 148000–181000; body USD 141000–181000."
+    },
+    {
+      "id": "one-x:ashby:f6a1ed96-2328-44da-acf7-db4ea8d1476e",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Manufacturing Engineer, Battery",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/f6a1ed96-2328-44da-acf7-db4ea8d1476e",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "149732c360a01d51c1a106ade724907fa4c7d99cfbc8b8d981d8658e69d4dd5d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reason": "Despite manufacturing title, body primarily owns battery architecture, cell characterization, validation and product-system design."
+    },
+    {
+      "id": "path-robotics:greenhouse:8902283002",
+      "employerId": "path-robotics",
+      "employer": "Path Robotics",
+      "title": "Senior Manufacturing Engineer",
+      "locations": [
+        "Columbus, Ohio",
+        "Columbus, Ohio, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/pathrobotics/jobs/8902283002?gh_jid=8902283002",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "64d2bc6dd6eb1467833ca119ea9fd3d370d71e4d217bc7ebf04848783f3f2020",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/path-robotics.json",
+      "rawSourceFileSha256": "dda49bbc68095b57d6027516973c117de7d1e049b6393bd61747a752e35d13e2",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "physical-intelligence:ashby:77a8ca93-7344-43ed-b215-98ecd95ecf9b",
+      "employerId": "physical-intelligence",
+      "employer": "Physical Intelligence",
+      "title": "Manufacturing Engineer",
+      "locations": [
+        "Fremont"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/physicalintelligence/77a8ca93-7344-43ed-b215-98ecd95ecf9b",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "8ada585b7cc6adeec703c4aa9b785cbbf2ad4430ba56cf466d91e98a44d2c709",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/physical-intelligence.json",
+      "rawSourceFileSha256": "4636b655b7fab48b151da10f872a9268960654cc165ce7e06a60e83e91cc5c99",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:13ebddf9-31a8-410f-b1fe-e27dc6e7fcde",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "2nd Shift Manufacturing Engineer",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/13ebddf9-31a8-410f-b1fe-e27dc6e7fcde",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "f18de8ddf10ec8717e1cfa44de011789bddabc729800db4cf226d46de08963a5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:3a734d21-e7cb-4315-a696-31639311062e",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Manufacturing Engineer – Structural Detail Planning",
+      "locations": [
+        "Austin, TX",
+        "Brownsville, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/3a734d21-e7cb-4315-a696-31639311062e",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "d1536f4635bd4952e30feff561b74a386b772d75e213dce6d0608bb592d44867",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:6799cc7a-2128-4e8e-825d-d9210c5a17d1",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Manufacturing Systems Engineering Technician",
+      "locations": [
+        "Franklin, LA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/6799cc7a-2128-4e8e-825d-d9210c5a17d1",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "368699127b42fba07556b96d2a4d6ca7d57d5822c9c089c393405b7f878bc3c3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:6880c779-2753-486e-ad2b-bd2292b94fc0",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Manufacturing Engineer – Electrical",
+      "locations": [
+        "Austin, TX",
+        "Brownsville, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/6880c779-2753-486e-ad2b-bd2292b94fc0",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "b1cadb499f350d7c740619c96f73403a6106f8e4d766fae0aebbd76e98d5b874",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:754e0b87-0729-46c3-ac29-dbecc027d3ad",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Manufacturing Engineer - Label Planner",
+      "locations": [
+        "Brownsville, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/754e0b87-0729-46c3-ac29-dbecc027d3ad",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "316648a229b3b06a9c66fe509f89a15afc20a1679699786308e53b2a203f60a0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:894e8034-8548-4fad-9a5d-5382cdfdcb2c",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Senior Manufacturing Engineer",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/894e8034-8548-4fad-9a5d-5382cdfdcb2c",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "dc549e140843955c3910d0611cc77f3c644cbe7e2e0ec613d187df7ca133c0db",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:9907ad3f-ee6f-4f40-b446-133b88b1ad60",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Manufacturing Engineer – Paint & Coatings Planning",
+      "locations": [
+        "Austin, TX",
+        "Brownsville, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/9907ad3f-ee6f-4f40-b446-133b88b1ad60",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "2199b453fe34aca5b324c098c3bef809f18a61c922e91675f1527c4574c1b120",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:a424fdc6-83b5-4176-9172-7bf951e7b97d",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "NPI Quality Engineer - Naval",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/a424fdc6-83b5-4176-9172-7bf951e7b97d",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "6c06ae74b8df688c5de3a4672b92ade04407eb9f1a9b6b6acf13ca0fda6a7c88",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:add91370-4644-41ff-ba2d-0d6a9c7592f5",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Manufacturing Engineer - Test Planner",
+      "locations": [
+        "Austin, TX",
+        "Brownsville, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/add91370-4644-41ff-ba2d-0d6a9c7592f5",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "c96bb22645b9f79dec8ad2898ced4134630fe43dedc86e2e5fd943a18b87c497",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:b07639c1-3381-49c2-9070-bb2a779ad135",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Manufacturing Engineer – Piping & HVAC Detail Planning",
+      "locations": [
+        "Austin, TX",
+        "Brownsville, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/b07639c1-3381-49c2-9070-bb2a779ad135",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "f12019bb72ce74529d403b2d3c91f6625cd46619ab038a38b3dd961bb24fb8b4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:b6f922f4-8c2d-4d43-ba13-495d003d339d",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Manufacturing Engineer – Propulsion & Machinery Installation Planning",
+      "locations": [
+        "Austin, TX",
+        "Brownsville, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/b6f922f4-8c2d-4d43-ba13-495d003d339d",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "e31a79a6a78ea0ca2135be5ae3bd873b1cdd1619cafe91ee7721d24ded9ca8b0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:b6f96b31-7549-47a4-aa58-adb6eb284583",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "NPI Quality Engineer - Mechanical",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/b6f96b31-7549-47a4-aa58-adb6eb284583",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "5d06d977a73756b7fc1771c32e3eedc2c34e2f6c6a041a84d98b52b9cdafa221",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:b74b8513-25cd-44ea-a16f-d821c2bde016",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Senior NPI Quality Engineer - Electrical",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/b74b8513-25cd-44ea-a16f-d821c2bde016",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "dfb6943855aebac5a894109f45607d44adeeccb606b4bdde8d34fd8ae7481c87",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:b89a87e4-fad6-4390-a327-e205d928d3c2",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Manufacturing Engineer – Outfitting Detail Planning",
+      "locations": [
+        "Austin, TX",
+        "Brownsville, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/b89a87e4-fad6-4390-a327-e205d928d3c2",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "68f58a522c8c915217f6a2eed63438501ad9b63e8a97fd8d999a4be9b1e03f43",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:c5599576-7e94-4a8e-802d-c7d802ff9afd",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Machine Shop Manufacturing Engineer",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/c5599576-7e94-4a8e-802d-c7d802ff9afd",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "507ffab40025f309c9ea6cf6c817f945fc84e708ef091b148edea168b23e4980",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:cd6ce7c6-d0f4-4383-b34a-fe3cf4c93132",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Manufacturing Systems Engineer",
+      "locations": [
+        "Franklin, LA",
+        "New Orleans, LA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/cd6ce7c6-d0f4-4383-b34a-fe3cf4c93132",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "56c9da0a86c099d94be095dd72263ebe3828c39c0d11c69e6558281dc50e0008",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:da72b14c-4473-4df0-ba3f-08afd772a6ea",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Manufacturing Engineer",
+      "locations": [
+        "Franklin, LA",
+        "New Orleans, LA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/da72b14c-4473-4df0-ba3f-08afd772a6ea",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "86a962b5ae1b10891ceb43d5d9c069cd492fe817930854080de1f7e35eeaeaaa",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "saronic:ashby:e3539993-a4c5-43f6-8235-ffee0b2e14c0",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Shipyard Production Engineer",
+      "locations": [
+        "Franklin, LA",
+        "New Orleans, LA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/e3539993-a4c5-43f6-8235-ffee0b2e14c0",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "48b39360f35104327d53ccf5b27002f9d6731ea96944f8e5a00a8ee9b137d978",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "skydio:ashby:b622c8f9-451f-466a-864e-d78489b61200",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Advanced / NPI Quality Engineer",
+      "locations": [
+        "Hayward, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/b622c8f9-451f-466a-864e-d78489b61200",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "0317461d2823d1ec5fc4a1f93c93cef40a609a57622a575dc6e330e336bc2c93",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reason": "Primary quality-engineering/NPI quality role; kept distinct from ownership of manufacturing processes."
+    },
+    {
+      "id": "waymo:greenhouse:8315980",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Industrialization Engineer",
+      "locations": [
+        "Mountain View, CA, USA; Novi, MI, USA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=8315980",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "bfa57f2ae0a4cdcabd73202e1c01604487ef7321555d1d2a94f2849cd6b50d97",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "zipline:greenhouse:8017275003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Senior Manufacturing Engineer",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/8017275003?gh_jid=8017275003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "4a977e77f9e211d2e94854262704eeaacfc14eb677835004ff07fbaa4424daec",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No complete explicitly annual USD salary range verified. A salary amount or annual bonus does not establish the salary frequency."
+    },
+    {
+      "id": "zoox:lever:6320b978-abf4-483b-a09f-bfba0c44c485",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Manufacturing Test Infrastructure Engineer",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/6320b978-abf4-483b-a09f-bfba0c44c485",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "7df922eb808a080e45be6da8f0bb52bdff01e089770635a8985e6fc09d3feeca",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reason": "Primary manufacturing test-infrastructure engineering role; distinct from manufacturing-process ownership."
+    },
+    {
+      "id": "zoox:lever:99113e00-d810-47e5-bb31-997eb6d9afaa",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Senior Manufacturing Test Engineer",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/99113e00-d810-47e5-bb31-997eb6d9afaa",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "71488d3f614711764f1eb6bc3e435995726db783be0afdddffac52fdd8f9e7db",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reason": "Primary manufacturing test engineering role; distinct from manufacturing-process ownership."
+    },
+    {
+      "id": "zoox:lever:e0d46302-6fa2-45a7-927d-cd11ccf1843e",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Manufacturing Test Engineer",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/e0d46302-6fa2-45a7-927d-cd11ccf1843e",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "809b9cda9c86896905926cd200c0623e4d55788d3937b70a35f4c6ac7fe198cf",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reason": "Primary manufacturing test engineering role; distinct from manufacturing-process ownership."
+    }
+  ],
+  "additionalFullSourceBoundaryReviews": [
+    {
+      "id": "one-x:ashby:873f836f-a4b6-4ef8-9500-b960cb1198f9",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Harness Manufacturing Engineer",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/873f836f-a4b6-4ef8-9500-b960cb1198f9",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "eedc303608db0f0b9a3539af7dd286ccaa2ff9d03489c641f708c75681582dfd",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "decision": "Conflicting source amounts: structured annual USD 155000–215000; body USD 155250–215050. Do not silently prefer a version."
+    },
+    {
+      "id": "one-x:ashby:e83e6f5b-0c56-4b50-ad2a-5d51a5f3219a",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Manufacturing Engineer, Hands",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/e83e6f5b-0c56-4b50-ad2a-5d51a5f3219a",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "60e782480b7cca123dd3504464d158f6fc68ec8bde761fb0806dabe0e9e102f0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "decision": "Conflicting source amounts: structured annual USD 148000–181000; body USD 141000–181000."
+    },
+    {
+      "id": "one-x:ashby:f6a1ed96-2328-44da-acf7-db4ea8d1476e",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Senior Manufacturing Engineer, Battery",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/f6a1ed96-2328-44da-acf7-db4ea8d1476e",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "149732c360a01d51c1a106ade724907fa4c7d99cfbc8b8d981d8658e69d4dd5d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "decision": "Despite manufacturing title, body primarily owns battery architecture, cell characterization, validation and product-system design."
+    }
+  ],
+  "liveEmployerChecks": [
+    "https://job-boards.greenhouse.io/figureai/jobs/4375064006"
+  ],
+  "technicalSources": [
+    "https://asq.org/quality-resources/quality-glossary",
+    "https://www.itl.nist.gov/div898/handbook/pmc/section1/pmc16.htm",
+    "https://www.sme.org/training/robotics-in-manufacturing-fundamentals-rmf-certification/"
+  ],
+  "editorialExample": "Illustrative single batch, no employer benchmark. 100 assemblies: 82 pass on first attempt, 15 additional assemblies pass after rework, 3 are scrapped. All 15 reworked assemblies meet the same acceptance criteria after rework. First-pass yield 82%; final accepted yield 97%. No extra units enter the batch and categories are mutually exclusive. Portfolio small-batch exercise demonstrates process documentation, not statistical process capability."
+}
