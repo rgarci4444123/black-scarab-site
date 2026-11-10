@@ -5,6 +5,26 @@ export function CareerOverview({items}:{items:NonNullable<CareerGuideContent['ov
   return <section className="profession-overview" aria-labelledby="career-overview-title"><h2 id="career-overview-title">Career at a glance</h2><dl>{items.map(item=><div key={item.label}><dt>{item.label}</dt><dd><strong>{item.value}</strong>{item.detail?<p>{item.detail}</p>:null}</dd></div>)}</dl></section>;
 }
 
+type RequirementsMatrix=Extract<CareerGuideBlock,{type:'requirements-matrix'}>;
+export function CareerRequirementsMatrix({block}:{block:RequirementsMatrix}) {
+  const m=block.model;
+  const passed=m.tests.filter(test=>test.result==='passed').length;
+  const executed=m.tests.filter(test=>test.result==='passed'||test.result==='failed').length;
+  return <figure id={block.id} className="profession-traceability" aria-labelledby={`${block.id}-title`}>
+    <figcaption id={`${block.id}-title`}>{block.title}</figcaption>
+    <p className="profession-traceability-summary">{passed} of {executed} executed tests passed.</p>
+    <table className="profession-traceability-matrix" aria-label="Illustrative requirement-to-test mapping">
+      <thead><tr><th scope="col">Requirement</th>{m.tests.map(test=><th scope="col" key={test.id}>{test.id}</th>)}</tr></thead>
+      <tbody>{m.requirements.map(requirement=><tr key={requirement.id}>
+        <th scope="row"><span className="profession-traceability-id">{requirement.id}</span>{requirement.label}{requirement.testIds.length===0?<small>No mapped test</small>:null}</th>
+        {m.tests.map(test=>{const linked=requirement.testIds.includes(test.id);const passed=linked&&test.result==='passed';const failed=linked&&test.result==='failed';return <td key={test.id} className={passed?'profession-traceability-pass':undefined} aria-label={linked?`${test.id}: ${test.result}`:`${test.id}: no mapped test`}>{passed?'✓':failed?'×':linked?'○':'—'}</td>;})}
+      </tr>)}</tbody>
+    </table>
+    <ul className="profession-traceability-tests" aria-label="Executed tests">{m.tests.map(test=><li key={test.id}><strong>{test.id}</strong><span>{test.label}</span></li>)}</ul>
+    <p className="profession-research-note">Illustrative mapping. ✓ Passed linked test · — No mapped test.</p>
+  </figure>;
+}
+
 type PlanningClearance=Extract<CareerGuideBlock,{type:'planning-clearance'}>;
 export function CareerPlanningClearance({block}:{block:PlanningClearance}) {
   const m=block.model;

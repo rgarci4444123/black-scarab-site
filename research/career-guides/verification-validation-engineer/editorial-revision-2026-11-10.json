@@ -1,0 +1,41 @@
+{
+  "revisedAt": "2026-11-10",
+  "status": "complete-copy-applied",
+  "sourcePath": "/Users/rodolfogarcia/.codex/attachments/34d937e3-fe65-4d1d-90ce-de953842de83/Pasted text.txt",
+  "sourceSha256": "1af2ae5f7a87f5f18f3d1df130f21bf11810857b82f4109a4b09b742cb54e58f",
+  "sourceBytes": 36217,
+  "supersedesIncompleteSource": "/Users/rodolfogarcia/.codex/attachments/224752ff-3a4f-4226-9f77-f8a224c1e603/Pasted text.txt",
+  "sectionCount": 8,
+  "preserved": [
+    "Existing H1, SEO title, canonical route and section fragments",
+    "175000 USD estimate, ten annual observations and full provenance",
+    "Original hero and exact test-to-requirement mappings",
+    "Complete collapsed research methodology",
+    "Local-review status with no first-publication date"
+  ],
+  "presentation": [
+    "Applied complete supplied rewrite, overview and nine-step portfolio.",
+    "Consolidated repeated requirements tables and custom grid markup into the existing responsive matrix.",
+    "Used the supplied subsection title as the figure caption.",
+    "Replaced provisional retained ending with supplied defect correction, traceability, validation summary, portfolio contents, advanced extension and closing resources."
+  ],
+  "sourceCorrections": [
+    "Use show whether instead of prove whether in the deck to avoid overstating what testing establishes.",
+    "Retain Annual advertised salary because structured fields do not consistently establish base-pay treatment.",
+    "Revise an unsupported compensation-premium claim to a description of technical scope."
+  ],
+  "resourceChecks": [
+    {
+      "url": "https://www.nasa.gov/reference/systems-engineering-handbook/",
+      "result": "Official handbook index verified."
+    },
+    {
+      "url": "https://docs.pytest.org/",
+      "result": "Official documentation, redirected to current stable docs."
+    },
+    {
+      "url": "https://docs.ros.org/",
+      "result": "Official documentation portal. Automated home-page retrieval blocked; no version-specific claim."
+    }
+  ]
+}

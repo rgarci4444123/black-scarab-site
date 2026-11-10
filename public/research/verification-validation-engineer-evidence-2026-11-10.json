@@ -1,0 +1,457 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "reviewedAt": "2026-11-10",
+  "aggregatePath": "/research/physical-ai-careers-2026-11-02.json",
+  "aggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "rawArchive": {
+    "relativeRoot": "research/physical-ai/2026-11-02",
+    "normalizedRecords": "postings.jsonl",
+    "manifestHash": "6b48026839dcafc9d68144cf3fbedf38889984ad96f667a21e058b4d25f26f14"
+  },
+  "interpretation": "Contextual guide review; source archive and original classifications preserved.",
+  "roles": {
+    "verification-validation-engineer": {
+      "recordIds": [
+        "anduril:greenhouse:5083521007",
+        "applied-intuition:ashby:86d2cd94-40b0-4efb-a0c1-0b2236354f65",
+        "applied-intuition:ashby:9ed264dc-6e49-4dba-b851-7c198b4f7916",
+        "fieldai:lever:e4504581-90cc-45a0-8084-f04f8145c75d",
+        "gatik:greenhouse:4711280006",
+        "gatik:greenhouse:4711295006",
+        "nimble:greenhouse:4332151009",
+        "rhoda:ashby:6d9ea8a2-925a-46bb-b854-cb904df2d47a",
+        "skydio:ashby:97f41217-653b-4a2c-bc91-86c76ecf85e3",
+        "skydio:ashby:c18906d5-12c0-4ea3-8b7e-7474bc72efa5",
+        "zoox:lever:1d0b857f-cd93-4ba3-a9d2-a23721c4c97c",
+        "zoox:lever:f10acec0-4887-4e3b-b6dc-2fd351ae2ca5",
+        "zoox:lever:fe41af48-f0ec-46ec-b840-00f9d9f872de"
+      ],
+      "auditPath": "research/career-guides/verification-validation-engineer/evidence-audit.json",
+      "compensation": [
+        {
+          "employer": "Applied Intuition",
+          "title": "Autonomy Verification Engineer",
+          "url": "https://jobs.ashbyhq.com/applied/86d2cd94-40b0-4efb-a0c1-0b2236354f65",
+          "minimum": 120000,
+          "maximum": 180000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "recordId": "applied-intuition:ashby:86d2cd94-40b0-4efb-a0c1-0b2236354f65",
+          "location": "Sunnyvale"
+        },
+        {
+          "employer": "Skydio",
+          "title": "Systems Integration and Test Engineer",
+          "url": "https://jobs.ashbyhq.com/skydio/97f41217-653b-4a2c-bc91-86c76ecf85e3",
+          "minimum": 149000,
+          "maximum": 200000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "base salary",
+          "recordId": "skydio:ashby:97f41217-653b-4a2c-bc91-86c76ecf85e3",
+          "location": "San Mateo, California, United States"
+        },
+        {
+          "employer": "Zoox",
+          "title": "Systems Engineer, Autonomy Verification and Validation",
+          "url": "https://jobs.lever.co/zoox/1d0b857f-cd93-4ba3-a9d2-a23721c4c97c",
+          "minimum": 160000,
+          "maximum": 231000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "recordId": "zoox:lever:1d0b857f-cd93-4ba3-a9d2-a23721c4c97c",
+          "location": "Foster City, CA"
+        }
+      ],
+      "skillPresentation": "qualitative-source-comparison",
+      "scopeNote": "Broad cohort includes firmware, silicon, hardware-test, UI/API QA, manufacturing-test and technician roles. No clean current-vacancy or skill-frequency claims."
+    }
+  },
+  "records": [
+    {
+      "id": "anduril:greenhouse:5083521007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Robotics Software Engineer, Verification & Validation",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5083521007?gh_jid=5083521007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "542213db7f2bff6d63e47b46591bacb88973386fc957fad098e2e339bbccaf6f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Software and complete-system V&V, simulation/HIL, autonomy behavior, automated integration and field investigation.",
+      "qualification": "Technical Expertise: Bachelor’s or Master’s degree in Robotics, Computer Science, Software Engineering, Computer Engineering, Electrical Engineering, or a related technical field.",
+      "qualificationSpans": [
+        {
+          "text": "Technical Expertise: Bachelor’s or Master’s degree in Robotics, Computer Science, Software Engineering, Computer Engineering, Electrical Engineering, or a related technical field.",
+          "start": 3418,
+          "end": 3597
+        }
+      ]
+    },
+    {
+      "id": "applied-intuition:ashby:86d2cd94-40b0-4efb-a0c1-0b2236354f65",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Autonomy Verification Engineer",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/86d2cd94-40b0-4efb-a0c1-0b2236354f65",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "20947f9ea6c4a5aac821a8723a8541ce920643780ec0fe08683ded84cba93e83",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Autonomy validation strategy, scenario datasets, metrics, coverage and release evidence.",
+      "qualification": "MS/BS degree in Robotics, Aerospace, Computer Science, or equivalent required",
+      "qualificationSpans": [
+        {
+          "text": "MS/BS degree in Robotics, Aerospace, Computer Science, or equivalent required",
+          "start": 2583,
+          "end": 2660
+        }
+      ]
+    },
+    {
+      "id": "applied-intuition:ashby:9ed264dc-6e49-4dba-b851-7c198b4f7916",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Autonomy Test Engineer",
+      "locations": [
+        "San Diego, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/9ed264dc-6e49-4dba-b851-7c198b4f7916",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "f5de82a9b893901af3b9e5f5402055f6e2a3bbc515fbe3f0909b90636258e803",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Autonomy behavior requirements, on-water scenarios, reproducible anomalies and simulation/HIL regression.",
+      "qualification": "Bachelor’s degree in a relevant engineering discipline (e.g., Systems, Electrical, Mechanical, Ocean), Computer Science, or a related technical field, or equivalent hands-on experience",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s degree in a relevant engineering discipline (e.g., Systems, Electrical, Mechanical, Ocean), Computer Science, or a related technical field, or equivalent hands-on experience",
+          "start": 3239,
+          "end": 3423
+        }
+      ]
+    },
+    {
+      "id": "fieldai:lever:e4504581-90cc-45a0-8084-f04f8145c75d",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Software Engineer, Verification & Validation",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/e4504581-90cc-45a0-8084-f04f8145c75d",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "bce1e71a1e10f15ec3088dbf9b9aa2b651134e0bc1b411eeed05a81cd06404f6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "End-to-end robotic V&V, quantitative acceptance criteria, simulation/HIL/field evaluation and regression.",
+      "qualification": "Bachelor’s, Master’s, or PhD degree in Robotics, Computer Science, Electrical Engineering, Mechanical Engineering, or a related technical field, or equivalent hands-on industry experience",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s, Master’s, or PhD degree in Robotics, Computer Science, Electrical Engineering, Mechanical Engineering, or a related technical field, or equivalent hands-on industry experience",
+          "start": 3637,
+          "end": 3824
+        }
+      ]
+    },
+    {
+      "id": "gatik:greenhouse:4711280006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior V&V Engineer – Hardware-in-the-Loop (HIL) & Test Bench",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4711280006?gh_jid=4711280006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "72a8bc6d3b0c9e0ba315db55209eeddac21ab4929368c9ee69aff95fc755efd2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "HIL system benches, sensor/fault injection, hardware-software interactions and requirements-based evidence.",
+      "qualification": "Education: B.S. or M.S. in Electrical Engineering, Computer Engineering, Mechatronics, or Robotics.",
+      "qualificationSpans": [
+        {
+          "text": "Education: B.S. or M.S. in Electrical Engineering, Computer Engineering, Mechatronics, or Robotics.",
+          "start": 2595,
+          "end": 2694
+        }
+      ]
+    },
+    {
+      "id": "gatik:greenhouse:4711295006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior V&V Engineer – Software-in-the-Loop (SIL) & Simulation",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4711295006?gh_jid=4711295006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "b6464cc73165f815315f367e6e481c830ee3ecc674db473cfbd3cfafedd7060f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Simulation/SIL test strategy, scenario variation, log replay, assertions and simulation fidelity.",
+      "qualification": "Education: B.S. or M.S. in Computer Science, Software Engineering, Robotics, or Data Science.",
+      "qualificationSpans": [
+        {
+          "text": "Education: B.S. or M.S. in Computer Science, Software Engineering, Robotics, or Data Science.",
+          "start": 2841,
+          "end": 2934
+        }
+      ]
+    },
+    {
+      "id": "nimble:greenhouse:4332151009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "Robot SW Test Engineer",
+      "locations": [
+        "San Francisco, CA",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4332151009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "a3aa030bf0f6ab4c8f6ee01c1a571c7067e1f21629594abf44aef7e54acc6878",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Whole-robot software/firmware regression, HIL, fault recovery, test traceability and CI.",
+      "qualification": "BS or MS in Computer Science, Robotics, Electrical/Computer Engineering, or a related field.",
+      "qualificationSpans": [
+        {
+          "text": "BS or MS in Computer Science, Robotics, Electrical/Computer Engineering, or a related field.",
+          "start": 3551,
+          "end": 3643
+        }
+      ]
+    },
+    {
+      "id": "rhoda:ashby:6d9ea8a2-925a-46bb-b854-cb904df2d47a",
+      "employerId": "rhoda",
+      "employer": "Rhoda AI",
+      "title": "Robotics Test Engineer",
+      "locations": [
+        "Mountain View"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/rhoda-ai/6d9ea8a2-925a-46bb-b854-cb904df2d47a",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "fd09034ef910d8df5b3b20ecd1bc32fa6ee3f76e995e1b86a091a802763bf1bc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/rhoda.json",
+      "rawSourceFileSha256": "57292cd4a63e78bba309cca3f2dd2b54a447c617ae01fb0a2d48033f76eb01bc",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "System-level robotics test automation, HIL, requirements-to-results traceability and multi-disciplinary failure analysis.",
+      "qualification": "3+ years of experience in test engineering, robotics, mechanical engineering, electrical engineering, or a related engineering discipline",
+      "qualificationSpans": [
+        {
+          "text": "3+ years of experience in test engineering, robotics, mechanical engineering, electrical engineering, or a related engineering discipline",
+          "start": 1778,
+          "end": 1915
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:97f41217-653b-4a2c-bc91-86c76ecf85e3",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Systems Integration and Test Engineer",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/97f41217-653b-4a2c-bc91-86c76ecf85e3",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "0ae0e36ac343afd47902db6c472f26a0d6166476259487e3f52bb31d11f824dd",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Cross-domain system requirements, performance verification, flight telemetry, failure analysis and product integrity.",
+      "qualification": "3+ years experience in hands-on definition, design, analysis, testing, modeling, and delivery of highly reliable electro-mechanical systems in rapid development environments",
+      "qualificationSpans": [
+        {
+          "text": "3+ years experience in hands-on definition, design, analysis, testing, modeling, and delivery of highly reliable electro-mechanical systems in rapid development environments",
+          "start": 2623,
+          "end": 2796
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:c18906d5-12c0-4ea3-8b7e-7474bc72efa5",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Systems Integration and Test Engineer (Senior to Staff Level)",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/c18906d5-12c0-4ea3-8b7e-7474bc72efa5",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "9e9f781b0fc5dab508777f56ced38f8342d8c5513be6e0a5c45cfad58382f2fe",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Senior/staff technical ownership of cross-domain system requirements, verification and failure analysis; not a line-management role.",
+      "qualification": "6+ years of hands-on definition, design, analysis, testing, modeling, and delivery of highly reliable electro-mechanical systems in rapid development environments",
+      "qualificationSpans": [
+        {
+          "text": "6+ years of hands-on definition, design, analysis, testing, modeling, and delivery of highly reliable electro-mechanical systems in rapid development environments",
+          "start": 2894,
+          "end": 3056
+        }
+      ]
+    },
+    {
+      "id": "zoox:lever:1d0b857f-cd93-4ba3-a9d2-a23721c4c97c",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Systems Engineer, Autonomy Verification and Validation",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/1d0b857f-cd93-4ba3-a9d2-a23721c4c97c",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "c48ee4324deca5e30f076ca8267b94c75bb270dc704a882a284d9cccdfe6ceab",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Autonomy V&V strategy, scenario/requirements coverage, simulation plans, traceability and quantitative results.",
+      "qualification": "B.S. or higher degree in Automotive Engineering, Aerospace, Robotics, Electrical, Mechanical, or Systems Engineering",
+      "qualificationSpans": [
+        {
+          "text": "B.S. or higher degree in Automotive Engineering, Aerospace, Robotics, Electrical, Mechanical, or Systems Engineering",
+          "start": 2106,
+          "end": 2222
+        }
+      ]
+    },
+    {
+      "id": "zoox:lever:f10acec0-4887-4e3b-b6dc-2fd351ae2ca5",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "System Test Engineer",
+      "locations": [
+        "Foster City, CA",
+        "San Diego, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/f10acec0-4887-4e3b-b6dc-2fd351ae2ca5",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "7f2430d6f73cc2d3edb7dc93dfb65f328b3a47a1dea28215a7c9dff47c4369fe",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Full autonomy-system validation, behavior regression, SIL/HIL, test automation and vehicle-log analysis.",
+      "qualification": "Bachelor’s or Master’s degree in Computer Science, Aerospace Engineering, Electrical Engineering, or STEM-related field",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s or Master’s degree in Computer Science, Aerospace Engineering, Electrical Engineering, or STEM-related field",
+          "start": 1293,
+          "end": 1412
+        }
+      ]
+    },
+    {
+      "id": "zoox:lever:fe41af48-f0ec-46ec-b840-00f9d9f872de",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "System Verification and Validation Engineer - Fail Operational Systems",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/fe41af48-f0ec-46ec-b840-00f9d9f872de",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "b8cc4ba268957543fcf8eae49a07d7ab3bb73a7495db9947fb777b98afb7aaee",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "System-level fault-response verification, HIL/vehicle campaigns, metrics and requirements review.",
+      "qualification": "BS or higher degree in a technical field, such as Electrical, Computer or Systems Engineering.",
+      "qualificationSpans": [
+        {
+          "text": "BS or higher degree in a technical field, such as Electrical, Computer or Systems Engineering.",
+          "start": 1736,
+          "end": 1830
+        }
+      ]
+    }
+  ]
+}

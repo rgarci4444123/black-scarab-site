@@ -31,6 +31,21 @@
         "motion planning portfolio"
       ],
       "rationale": "Use the technical employer role with robotics context. Separate local motion/trajectory planning from mission routing, controls, perception and dedicated planning infrastructure. Editorial intent review, no search-volume claim."
+    },
+    {
+      "occupationId": "verification-and-validation-engineer",
+      "h1": "How to Become a Verification & Validation Engineer in Robotics",
+      "seoTitle": "Robotics Verification & Validation Engineer: Salary & Skills",
+      "description": "Explore verification and validation careers in robotics: requirements, test automation, simulation, employer qualifications, salary research and a portfolio project.",
+      "path": "/career-paths/platforms-simulation/verification-and-validation-engineer",
+      "primaryQuery": "robotics verification and validation engineer",
+      "supportingTopics": [
+        "robotics validation engineer salary",
+        "verification vs validation robotics",
+        "robotics system test engineer",
+        "V&V engineer skills"
+      ],
+      "rationale": "Use the established category profession with robotics context and the existing native occupation slug. Explain system requirements, behavior evidence and release evaluation, distinct from component-only hardware tests, product QA and system safety analysis. No search-volume claim."
     }
   ]
 }

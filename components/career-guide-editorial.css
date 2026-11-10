@@ -323,3 +323,21 @@
 .career-section.profession-guide .profession-clearance-key-inflated { background: #e0e2f1; border: 1px dashed #8e94bd; }
 .career-section.profession-guide .profession-clearance > .profession-research-note { margin: 17px 0 0; font-size: 12px; line-height: 1.6; color: #626a71; }
 @media (max-width: 600px) { .career-section.profession-guide .profession-clearance-panels { grid-template-columns: 1fr; gap: 28px; } .career-section.profession-guide .profession-clearance figcaption { font-size: 21px; } }
+
+.career-section.profession-guide .profession-traceability { margin: 38px 0; padding: 26px 0 20px; border-top: 1px solid #e2e2e5; border-bottom: 1px solid #e2e2e5; }
+.career-section.profession-guide .profession-traceability figcaption { max-width: none; margin: 0 0 12px; color: #252b32; font-size: 23px; line-height: 1.35; font-weight: 600; letter-spacing: -.025em; }
+.career-section.profession-guide .profession-traceability-summary { margin: 0 0 24px; color: #555b66; font-size: 15px; }
+.career-section.profession-guide .profession-traceability-matrix { width: 100%; min-width: 0; table-layout: fixed; border-collapse: collapse; }
+.career-section.profession-guide .profession-traceability-matrix th,.career-section.profession-guide .profession-traceability-matrix td { box-sizing: border-box; border: 0; border-bottom: 1px solid #e2e2e5; padding: 18px 8px; text-align: center; vertical-align: middle; }
+.career-section.profession-guide .profession-traceability-matrix th:first-child { width: 46%; padding-left: 0; text-align: left; }
+.career-section.profession-guide .profession-traceability-matrix thead th { color: #555b66; font-size: 14px; font-weight: 500; }
+.career-section.profession-guide .profession-traceability-matrix tbody th { color: #252b32; font-size: 15px; line-height: 1.6; font-weight: 500; overflow-wrap: anywhere; }
+.career-section.profession-guide .profession-traceability-matrix td { color: #737a83; font-size: 23px; line-height: 1.5; }
+.career-section.profession-guide .profession-traceability-matrix td.profession-traceability-pass { color: #5f64b1; font-weight: 600; }
+.career-section.profession-guide .profession-traceability-id { display: block; color: #69717b; font-size: 12px; font-weight: 400; }
+.career-section.profession-guide .profession-traceability-matrix small { display: block; margin-top: 3px; color: #555b66; font-size: 12px; font-weight: 400; }
+.career-section.profession-guide .profession-traceability-tests { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 22px 0 0; padding: 0; list-style: none; }
+.career-section.profession-guide .profession-traceability-tests li { display: flex; gap: 9px; margin: 0; color: #414b51; font-size: 13px; line-height: 1.6; }
+.career-section.profession-guide .profession-traceability-tests strong { font-weight: 600; }
+.career-section.profession-guide .profession-traceability > .profession-research-note { margin: 17px 0 0; color: #626a71; font-size: 12px; line-height: 1.6; }
+@media (max-width: 600px) { .career-section.profession-guide .profession-traceability figcaption { font-size: 21px; } .career-section.profession-guide .profession-traceability-matrix th:first-child { width: 55%; } .career-section.profession-guide .profession-traceability-matrix th,.career-section.profession-guide .profession-traceability-matrix td { padding: 15px 4px; } .career-section.profession-guide .profession-traceability-matrix tbody th { font-size: 14px; } .career-section.profession-guide .profession-traceability-matrix td { font-size: 21px; } .career-section.profession-guide .profession-traceability-tests { display: grid; gap: 7px; } }

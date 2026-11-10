@@ -1,6 +1,6 @@
 # Career guide progress
 
-Updated November 10, 2026. Fourteen of twenty approved for publication. Motion Planning Engineer is approved for release; six guides remain.
+Updated November 10, 2026. Fifteen of twenty approved for publication. Verification & Validation Engineer is approved for release; five guides remain.
 
 - ~~Mechanical Engineer~~
 - ~~Robot Learning Engineer~~
@@ -16,7 +16,7 @@ Updated November 10, 2026. Fourteen of twenty approved for publication. Motion P
 - ~~Industrial Automation Engineer~~
 - ~~Manufacturing Engineer~~
 - ~~Motion Planning Engineer~~
-- Verification & Validation Engineer
+- ~~Verification & Validation Engineer~~
 - Robot Operations Specialist
 - Hardware Test Engineer
 - Localization & Mapping Engineer

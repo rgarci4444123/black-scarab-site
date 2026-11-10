@@ -1,0 +1,47 @@
+{
+  "kind": "illustrative-traceability-example",
+  "tests": [
+    {
+      "id": "T1",
+      "label": "Stop at low speed",
+      "result": "passed"
+    },
+    {
+      "id": "T2",
+      "label": "Stop at high speed",
+      "result": "passed"
+    },
+    {
+      "id": "T3",
+      "label": "Blocked goal",
+      "result": "passed"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R1",
+      "label": "Stop on command",
+      "definition": "In the toy simulation, issue a stop request within two update cycles after receiving a stop command.",
+      "testIds": [
+        "T1",
+        "T2"
+      ]
+    },
+    {
+      "id": "R2",
+      "label": "Report blocked goal",
+      "definition": "In the toy simulation, return a defined no-route result when the goal is blocked.",
+      "testIds": [
+        "T3"
+      ]
+    },
+    {
+      "id": "R3",
+      "label": "Reject stale input",
+      "definition": "In the toy simulation, reject a sensor update older than the configured age threshold.",
+      "testIds": []
+    }
+  ],
+  "configuration": "Illustrative software build A, fixed scenario set; no employer data.",
+  "assumptions": "All three tests have passed in this invented example. R3 has no mapped test, so passing executed tests does not demonstrate coverage of every requirement. Mapping alone does not establish completeness, confidence or safety. Full engineering verification also examines acceptance criteria, relevant conditions and evidence quality."
+}

@@ -1,9 +1,9 @@
 {
-  "status": "approved-for-release",
+  "status": "deployed",
   "reviewedAt": "2026-11-10",
   "guidePath": "/career-paths/intelligence-autonomy/motion-planning-engineer",
   "url": "http://127.0.0.1:3050/career-paths/intelligence-autonomy/motion-planning-engineer",
-  "publication": "User approved publication November 10, 2026.",
+  "publication": "User approved publication November 10, 2026; deployed and verified.",
   "precedingRelease": {
     "guide": "manufacturing-engineer",
     "commit": "ae8a07f49fb5f3c970fa6b069f480e7b87f475db",
@@ -54,5 +54,34 @@
     "transitionsMobile": "/tmp/black-scarab-motion-planning-revised-transitions-mobile.png"
   },
   "editorialRevision": "research/career-guides/motion-planning-engineer/editorial-revision-2026-11-10.json",
-  "approvedAt": "2026-11-10"
+  "approvedAt": "2026-11-10",
+  "deployment": {
+    "guide": "motion-planning-engineer",
+    "deployedAt": "2026-11-10T15:53:55Z",
+    "commit": "ef95ec0e73b5bd487edeaade54f9cfefe38f0bdd",
+    "previousCommit": "8472f92",
+    "url": "https://www.blackscarab.ai/career-paths/intelligence-autonomy/motion-planning-engineer",
+    "deploymentUrl": "https://black-scarab-site-albwyvqd5-rodolfo-garcias-projects.vercel.app",
+    "vercelStatusUrl": "https://vercel.com/rodolfo-garcias-projects/black-scarab-site/PTxfaNzsBsGteiWL3SykuwdjKjhG",
+    "githubDeploymentId": 7686966582,
+    "status": "success",
+    "verified": [
+      "Live H1, SEO title, canonical and November 10 publication/modification dates",
+      "Full user revision, eight sections and nine-step project",
+      "218000 USD estimate, hero and paired clearance graphic",
+      "Research downloads, category link and sitemap"
+    ],
+    "validation": {
+      "careerTests": 26,
+      "selectedSourcesAudited": 134,
+      "rawSourcesAudited": 42,
+      "articlePreviews": 176,
+      "typecheck": "passed",
+      "scopedLint": "passed",
+      "nextBuild": "passed",
+      "desktop": "reviewed",
+      "mobile": "reviewed"
+    },
+    "screenshot": "/tmp/black-scarab-motion-planning-live-2026-11-10.png"
+  }
 }

@@ -1,0 +1,1299 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "derivedAt": "2026-11-10",
+  "roleId": "verification-validation-engineer",
+  "sourceAggregate": "/research/physical-ai-careers-2026-11-02.json",
+  "sourceAggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "label": "Black Scarab estimated compensation",
+  "currency": "USD",
+  "period": "year",
+  "basis": "advertised annual salary, excluding bonus and equity",
+  "postingCount": 10,
+  "employerCount": 6,
+  "exactMedianMidpoint": 174750.0,
+  "estimate": 175000,
+  "rounding": "nearest 1000 USD, halves rounded upward",
+  "method": "Median of one eligible annual USD salary-range midpoint per distinct requisition.",
+  "eligibility": "Reviewed technical engineering roles owning robot/autonomy system requirements, behavior validation, end-to-end regression, system-level integration/verification or cross-domain readiness evidence.",
+  "limitations": "Purposive U.S. sample includes general, senior and staff roles, with California concentration and multiple Zoox, Skydio and Applied Intuition requisitions. Not an entry-level rate or representative market median. Structured salary fields do not consistently establish base pay.",
+  "observations": [
+    {
+      "id": "applied-intuition:ashby:86d2cd94-40b0-4efb-a0c1-0b2236354f65",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Autonomy Verification Engineer",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/86d2cd94-40b0-4efb-a0c1-0b2236354f65",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "20947f9ea6c4a5aac821a8723a8541ce920643780ec0fe08683ded84cba93e83",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 120000,
+      "maximum": 180000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 150000.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Autonomy validation strategy, scenario datasets, metrics, coverage and release evidence."
+    },
+    {
+      "id": "applied-intuition:ashby:9ed264dc-6e49-4dba-b851-7c198b4f7916",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Autonomy Test Engineer",
+      "locations": [
+        "San Diego, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/9ed264dc-6e49-4dba-b851-7c198b4f7916",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "f5de82a9b893901af3b9e5f5402055f6e2a3bbc515fbe3f0909b90636258e803",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 145000,
+      "maximum": 190000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 167500.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Autonomy behavior requirements, on-water scenarios, reproducible anomalies and simulation/HIL regression."
+    },
+    {
+      "id": "fieldai:lever:e4504581-90cc-45a0-8084-f04f8145c75d",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Software Engineer, Verification & Validation",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/e4504581-90cc-45a0-8084-f04f8145c75d",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "bce1e71a1e10f15ec3088dbf9b9aa2b651134e0bc1b411eeed05a81cd06404f6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 135000,
+      "maximum": 190000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 162500.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "End-to-end robotic V&V, quantitative acceptance criteria, simulation/HIL/field evaluation and regression."
+    },
+    {
+      "id": "nimble:greenhouse:4332151009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "Robot SW Test Engineer",
+      "locations": [
+        "San Francisco, CA",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4332151009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "a3aa030bf0f6ab4c8f6ee01c1a571c7067e1f21629594abf44aef7e54acc6878",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "minimum": 140000,
+      "maximum": 160000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised salary",
+      "extraction": "full-source-text",
+      "sourceClause": "The pay range for this position at the start of employment is expected to be between $140,000 and $160,000/year. Your exact offer may vary depending on multiple individualized factors, including job-related knowledge, skills, and experience. In addition to cash compensation, this position will also receive generous equity for this position.",
+      "sourceSpan": {
+        "start": 4060,
+        "end": 4402
+      },
+      "midpoint": 150000.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Whole-robot software/firmware regression, HIL, fault recovery, test traceability and CI."
+    },
+    {
+      "id": "rhoda:ashby:6d9ea8a2-925a-46bb-b854-cb904df2d47a",
+      "employerId": "rhoda",
+      "employer": "Rhoda AI",
+      "title": "Robotics Test Engineer",
+      "locations": [
+        "Mountain View"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/rhoda-ai/6d9ea8a2-925a-46bb-b854-cb904df2d47a",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "fd09034ef910d8df5b3b20ecd1bc32fa6ee3f76e995e1b86a091a802763bf1bc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/rhoda.json",
+      "rawSourceFileSha256": "57292cd4a63e78bba309cca3f2dd2b54a447c617ae01fb0a2d48033f76eb01bc",
+      "minimum": 150000,
+      "maximum": 200000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 175000.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "System-level robotics test automation, HIL, requirements-to-results traceability and multi-disciplinary failure analysis."
+    },
+    {
+      "id": "skydio:ashby:97f41217-653b-4a2c-bc91-86c76ecf85e3",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Systems Integration and Test Engineer",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/97f41217-653b-4a2c-bc91-86c76ecf85e3",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "0ae0e36ac343afd47902db6c472f26a0d6166476259487e3f52bb31d11f824dd",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "minimum": 149000,
+      "maximum": 200000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "base salary",
+      "extraction": "full-source-text",
+      "sourceClause": "Compensation: At Skydio, our compensation packages for regular, full-time employees include competitive base salaries, equity in the form of stock options, and comprehensive benefits packages. Compensation will vary based on factors, including skill level, proficiencies, transferable knowledge, and experience. Relocation assistance may also be provided for eligible roles. The annual base salary range for this position is $149,000 - $200,000*. Fundamentally, we believe that equity is the key to long-term financial growth, and we ensure all regular, full-time employees have the opportunity to significantly benefit from the company's success. Regular, full-time employees are eligible to enroll in the Company’s group health insurance plans. Regular, full-time employees are eligible to receive the following benefits: Paid vacation time, sick leave, holiday pay and 401K savings plan. This position and all associated benefits are subject to applicable federal, state, and local laws, as well as the Company’s policies and eligibility criteria.",
+      "sourceSpan": {
+        "start": 4061,
+        "end": 5111
+      },
+      "midpoint": 174500.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Cross-domain system requirements, performance verification, flight telemetry, failure analysis and product integrity."
+    },
+    {
+      "id": "skydio:ashby:c18906d5-12c0-4ea3-8b7e-7474bc72efa5",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Systems Integration and Test Engineer (Senior to Staff Level)",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/c18906d5-12c0-4ea3-8b7e-7474bc72efa5",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "9e9f781b0fc5dab508777f56ced38f8342d8c5513be6e0a5c45cfad58382f2fe",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "minimum": 196000,
+      "maximum": 270000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "base salary",
+      "extraction": "full-source-text",
+      "sourceClause": "Compensation: At Skydio, our compensation packages for regular, full-time employees include competitive base salaries, equity in the form of stock options, and comprehensive benefits packages. Compensation will vary based on factors, including skill level, proficiencies, transferable knowledge, and experience. Relocation assistance may also be provided for eligible roles. The annual base salary range for this position is $196,000 - $270,000*. Fundamentally, we believe that equity is the key to long-term financial growth, and we ensure all regular, full-time employees have the opportunity to significantly benefit from the company's success. Regular, full-time employees are eligible to enroll in the Company’s group health insurance plans. Regular, full-time employees are eligible to receive the following benefits: Paid vacation time, sick leave, holiday pay and 401K savings plan. This position and all associated benefits are subject to applicable federal, state, and local laws, as well as the Company’s policies and eligibility criteria.",
+      "sourceSpan": {
+        "start": 4448,
+        "end": 5498
+      },
+      "midpoint": 233000.0,
+      "seniority": "staff-principal",
+      "scope": "Senior/staff technical ownership of cross-domain system requirements, verification and failure analysis; not a line-management role."
+    },
+    {
+      "id": "zoox:lever:1d0b857f-cd93-4ba3-a9d2-a23721c4c97c",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Systems Engineer, Autonomy Verification and Validation",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/1d0b857f-cd93-4ba3-a9d2-a23721c4c97c",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "c48ee4324deca5e30f076ca8267b94c75bb270dc704a882a284d9cccdfe6ceab",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 160000,
+      "maximum": 231000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 195500.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Autonomy V&V strategy, scenario/requirements coverage, simulation plans, traceability and quantitative results."
+    },
+    {
+      "id": "zoox:lever:f10acec0-4887-4e3b-b6dc-2fd351ae2ca5",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "System Test Engineer",
+      "locations": [
+        "Foster City, CA",
+        "San Diego, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/f10acec0-4887-4e3b-b6dc-2fd351ae2ca5",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "7f2430d6f73cc2d3edb7dc93dfb65f328b3a47a1dea28215a7c9dff47c4369fe",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 153000,
+      "maximum": 209000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 181000.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Full autonomy-system validation, behavior regression, SIL/HIL, test automation and vehicle-log analysis."
+    },
+    {
+      "id": "zoox:lever:fe41af48-f0ec-46ec-b840-00f9d9f872de",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "System Verification and Validation Engineer - Fail Operational Systems",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/fe41af48-f0ec-46ec-b840-00f9d9f872de",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "b8cc4ba268957543fcf8eae49a07d7ab3bb73a7495db9947fb777b98afb7aaee",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 160000,
+      "maximum": 221000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 190500.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "System-level fault-response verification, HIL/vehicle campaigns, metrics and requirements review."
+    }
+  ],
+  "excludedObservations": [
+    {
+      "id": "agile-robots:greenhouse:4964703101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "(Senior) Robotics Testing and Applications Engineer (m/f/d)",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4964703101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "2bdc96711b8cfff18276d1dcdf21603ceb1f3ce79c1c19cf32e1b4c6aee96429",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "agile-robots:greenhouse:4964785101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Robotics Test Automation Engineer (m/f/d)",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4964785101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "fbc99650c58b7053941e5a7127123b51e92bd91be4c01fd8f44577cf0567399c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "anduril:greenhouse:4673813007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Software Engineer, Vehicle Software, V&V",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4673813007?gh_jid=4673813007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "459232dde481911b474a9491acbc94c5bf3fac5479ce2680b8dc28c304c08857",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "anduril:greenhouse:5083521007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Robotics Software Engineer, Verification & Validation",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5083521007?gh_jid=5083521007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "542213db7f2bff6d63e47b46591bacb88973386fc957fad098e2e339bbccaf6f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete explicitly annual USD range verified. Salary amounts or annual-bonus language do not establish salary frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5131979007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Air Vehicle Systems Engineer, Hardware Verification, Integration & Validation",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5131979007?gh_jid=5131979007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "9738a6abbe1c19cf9eec250c1efd2ce80fc010ef44956702593c761998c0447d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "anduril:greenhouse:5214058007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "FPGA Verification Engineer, Air Dominance and Strike",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5214058007?gh_jid=5214058007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "4ecb55a07dcd35b7353f39d3122e73686df126e37f1ddb421246f2359f6de96f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "anduril:greenhouse:5255079007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Systems Test Engineer, IBCS-M",
+      "locations": [
+        "Costa Mesa, California, United States",
+        "Huntsville, Alabama, United States",
+        "Irvine, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5255079007?gh_jid=5255079007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "fdc96406783c067fb91a4a8fff542b464a8008ab163e0036a82b0250c374289a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "applied-intuition:ashby:4e18e134-2b29-4262-bbbb-33a39c447a4a",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Sensor Validation Engineer (Sunnyvale, CA)",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/4e18e134-2b29-4262-bbbb-33a39c447a4a",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "944fbc7d77801cb98b23f08d59736359275e91947e0baacf7a1c9533ca336fec",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "applied-intuition:ashby:7f978bd4-8ceb-4a1b-a17e-79f37aa5e904",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Validation Toolset",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/7f978bd4-8ceb-4a1b-a17e-79f37aa5e904",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "8b60b0838b1761e088836edd3b80176cde5f1c7b9bd8cfed72e403deb77c0e2a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "boston-dynamics:workday:R3182",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Staff Software Engineer in Test",
+      "locations": [
+        "Waltham, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-MA/Staff-Software-Engineer-in-Test_R3182",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "fc4a5df8f8b88af2570086c34f12c6beafe570d68ee4af0610c8b474102b2843",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "boston-dynamics:workday:R3187",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Software Engineer in Test, Humanoid Robotics",
+      "locations": [
+        "Waltham Office (POST)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-Office-POST/Software-Engineer-in-Test--Humanoid-Robotics_R3187",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "6ca96742b3e1522b625a8f529a03ff07a9901e67d46e5e9cd57d4814d4417ae8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "fieldai:lever:07553f09-627e-4639-92c2-af5a25e6fe0e",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Software Engineer, Test Infrastructure",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/07553f09-627e-4639-92c2-af5a25e6fe0e",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "19d12a83e5e27a24e7e400010fbe20d327440ad35d775836e05b6991a0df2da7",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "fieldai:lever:09957713-086c-4c27-a170-f2821b8c55ce",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Senior Software Engineer, Test",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/09957713-086c-4c27-a170-f2821b8c55ce",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "8316247cc86bde853032195e60380ec98233fdd9271819f4f37c9ce76a0e0165",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reason": "Primarily browser/UI/API automated QA and product-workflow testing, rather than physical robot behavior/requirements V&V."
+    },
+    {
+      "id": "fieldai:lever:9e451b91-7633-4b86-bf64-38cd7bd6a8dc",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Robotics Release Engineer, System Validation",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/9e451b91-7633-4b86-bf64-38cd7bd6a8dc",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "1f22464ee34052080a4333bc04eb327c6f054fc52e0add24aa6ad06206a7bec5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "figure:greenhouse:4414646006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Manufacturing Software Test Engineer",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4414646006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "d3dcd6eb5f7d13916e57e8131e8795226912db6da468bf51196b86b07b36cf05",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "figure:greenhouse:4613433006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Test Automation Engineer",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4613433006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "70049aead81d8eea70d5613ffd3dbec895f954bd0c2c947f885eca3faf8c68ce",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "gatik:greenhouse:4711280006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior V&V Engineer – Hardware-in-the-Loop (HIL) & Test Bench",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4711280006?gh_jid=4711280006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "72a8bc6d3b0c9e0ba315db55209eeddac21ab4929368c9ee69aff95fc755efd2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "No complete explicitly annual USD range verified. Salary amounts or annual-bonus language do not establish salary frequency."
+    },
+    {
+      "id": "gatik:greenhouse:4711295006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior V&V Engineer – Software-in-the-Loop (SIL) & Simulation",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4711295006?gh_jid=4711295006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "b6464cc73165f815315f367e6e481c830ee3ecc674db473cfbd3cfafedd7060f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "No complete explicitly annual USD range verified. Salary amounts or annual-bonus language do not establish salary frequency."
+    },
+    {
+      "id": "gatik:greenhouse:4711299006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior V&V Engineer – Closed Course & Proving Grounds",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4711299006?gh_jid=4711299006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "b750e4a5d54b0ed1793b78e9be35329c6cd0daa55590416fc039ea34fd052c5a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "gatik:greenhouse:4711302006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "V&V Systems Lead",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4711302006?gh_jid=4711302006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "e307eb00eab324d2a74df247bc79e8f540bf3f3700394d0ef2b96f0041e693c0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "gritt:ashby:5a834deb-09aa-406c-8c8d-c5d7cc6818ad",
+      "employerId": "gritt",
+      "employer": "Gritt",
+      "title": "Robotics System Test Engineer",
+      "locations": [
+        "South San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/gritt/5a834deb-09aa-406c-8c8d-c5d7cc6818ad",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "957d4c24c291b2197f175aa337c011336edb66e49db75046e10abd316d840627",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gritt.json",
+      "rawSourceFileSha256": "20a567222b34d9a1d87ce7926914d9639eeb0e48f6b65ed844f4e8c2bcd14548",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "humanoid:ashby:16082aba-861a-4101-84f3-4738dac15d8c",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Senior Validation Engineer",
+      "locations": [
+        "UK, London"
+      ],
+      "countries": [
+        "United Kingdom"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/16082aba-861a-4101-84f3-4738dac15d8c",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "a740ec70902dc97202d019134f0f79d080d1b9a835b631b44071cb27bfc7b919",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "humanoid:ashby:2e0c69d4-7ace-432d-baae-5d94dc77cf66",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Senior Test  and Validation Engineer",
+      "locations": [
+        "Canada, Vancouver, BC"
+      ],
+      "countries": [
+        "Canada"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/2e0c69d4-7ace-432d-baae-5d94dc77cf66",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "2effef3f980176de832be682c47f75c0ec60b2a957f4532879dbddf30a0be804",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "humanoid:ashby:790a3b57-19da-4b83-9ab5-2f039e20aaf7",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Robotics Test Engineer II",
+      "locations": [
+        "UK, London"
+      ],
+      "countries": [
+        "United Kingdom"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/790a3b57-19da-4b83-9ab5-2f039e20aaf7",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "d6ce0736e97070803b294af4f4ea7094e8b7e04da3fa113098b747748793406e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "humanoid:ashby:796b413b-ac09-4595-8651-6dab3ab30963",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Senior Test and Validation Engineer",
+      "locations": [
+        "UK, London"
+      ],
+      "countries": [
+        "United Kingdom"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/796b413b-ac09-4595-8651-6dab3ab30963",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "d7946c4befcaf114a81706f4c97d707efa06d3a87f9760fdf3cc19507cee4103",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "humanoid:ashby:a1b6e0c7-1d1e-437d-957c-c82146f90bf3",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Senior Software Test Engineer",
+      "locations": [
+        "UK, London"
+      ],
+      "countries": [
+        "United Kingdom"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/a1b6e0c7-1d1e-437d-957c-c82146f90bf3",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "69c4a7f6d3f6e3f0121b09b909ae2148c810c35d8009635034484c5487cd2cd0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "nimble:greenhouse:4332168009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "HIL Test / Automation Engineer",
+      "locations": [
+        "San Francisco, CA",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4332168009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "d4cfa8bbd738b3f6570558a32bbb622c0b04f2d096ac624c5a77e7fcd36fc9a6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "nimble:greenhouse:4469005009",
+      "employerId": "nimble",
+      "employer": "Nimble Robotics",
+      "title": "Senior Systems Integration & Test Engineer",
+      "locations": [
+        "South San Francisco",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/nimblerobotics/jobs/4469005009",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "c79522ddc064604aba6f708546f77be0d1b63111bffd098202548ec123327a2f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nimble.json",
+      "rawSourceFileSha256": "610fe002902c60c563cae3837e754353d30671c4264c8e012a1607609ddef81c",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "nuro:greenhouse:7243150",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Senior/Staff Software Engineer,  Behavior Verification",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=7243150",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "862e1073a24b2a73b43a1574c90b64116554263cb1372a4bf773d5a4c9670f81",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "nuro:greenhouse:7564852",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Senior/Staff Systems Engineer, Autonomy Verification",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=7564852",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "25d1b399d0f43bea481d7f0fdcacdfa64d548339111afbb80134a12693f5f21e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "nuro:greenhouse:7736044",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Senior Systems Test Engineer, Autonomy Behavior",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=7736044",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "696e2565e4c8b132de8daaed2a30e52bca7d9f2e0e5a8bca963bcc007c24a4f6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "nuro:greenhouse:8082658",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Test Validation Engineer",
+      "locations": [
+        "Mountain View, California (HQ)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=8082658",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "5b8263363309e41e6784ed8969736d38b73a32358febf6df7a615dca8c7cee95",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "nvidia:workday:JR2024494",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior System Integration and Validation Engineer",
+      "locations": [
+        "India, Bengaluru"
+      ],
+      "countries": [
+        "India"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Senior-System-Integration-and-Validation-Engineer_JR2024494",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "afbd8e42efe50bd5eba8307bcf2c82c228edbc0a02a06372c89dc96722a6411c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "nvidia:workday:JR2025190",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior System Integration and Feature Validation Engineer",
+      "locations": [
+        "India, Bengaluru"
+      ],
+      "countries": [
+        "India"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Senior-System-Integration-and-Feature-Validation-Engineer_JR2025190-1",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "a561ccfef1b4e0c6a171bed77251261bea91d4d8431c7f923c6c093cd43f2e7a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "nvidia:workday:JR2025466",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior System Integration and Validation Engineer",
+      "locations": [
+        "US, CA, Santa Clara"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-System-Integration-and-Validation-Engineer_JR2025466",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "9942b1e478a0c579d79ced6b0308c17a0f74dcd4e4482f0aa32ae1f190750082",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "nvidia:workday:JR2025964",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior Software Engineer, Test Engineering",
+      "locations": [
+        "China, Beijing",
+        "China, Shanghai",
+        "China, Shenzhen"
+      ],
+      "countries": [
+        "China"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/China-Beijing/Senior-Software-Engineer--Test-Engineering_JR2025964",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "43271f7558f6c57ea1f4a4ecbe44c3d678f48c6e16cf537443a5541ca0373e7c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "nvidia:workday:JR2026040",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Memory Silicon Validation Engineer",
+      "locations": [
+        "Taiwan, Taipei"
+      ],
+      "countries": [
+        "Taiwan"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Taipei/Memory-Silicon-Validation-Engineer_JR2026040",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "e788267934e4a53bc9e5579e36e10bc5b9ca6fae60c7fc03ce0398883b42e839",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "one-x:ashby:83b69d9f-d72c-4509-a438-19c0c16b672e",
+      "employerId": "one-x",
+      "employer": "1X",
+      "title": "Validation Test Technician",
+      "locations": [
+        "San Carlos, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/1x/83b69d9f-d72c-4509-a438-19c0c16b672e",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "d3413dc949c8a95a83083cd5f909e1b88f3b9d897c1f803463624094e0825659",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/one-x.json",
+      "rawSourceFileSha256": "fb75df3886349114746f91de16a755ebe56439df3af4941100f8e1745b34eb87",
+      "reason": "Technician work. ATS labels USD 30–48 as yearly, but body explicitly says USD 30–48/hr; period conflict, no annualization."
+    },
+    {
+      "id": "saronic:ashby:2331c410-d2f9-4320-967b-40e17c89b239",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Systems Architecture, Integration, and Test Engineer (Test & Verification)",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/2331c410-d2f9-4320-967b-40e17c89b239",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "aa0ac2064ad9ab1d7eff3bc01b905d14514a07325459ce64d92e3f46714271c0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "saronic:ashby:d5f30d63-303c-4899-8d68-c248c8d7905b",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Senior Systems Test Software Engineer",
+      "locations": [
+        "Austin, TX",
+        "San Diego, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/d5f30d63-303c-4899-8d68-c248c8d7905b",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "2ed02c484486059f9a7071ba0f5d1b013da572f2b5e4f307f2c8fad093eac982",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "shield-ai:lever:a6b11a01-e749-4b1a-90a4-828524ceb7a0",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior Software Engineer, Hardware Test (R4978)",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/a6b11a01-e749-4b1a-90a4-828524ceb7a0",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "455bb0d4024b25706f714daed38553fc7f555b97f9f5d0240d97b9d188ca2aaa",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "shield-ai:lever:cbba120f-2089-4531-9e41-1dad856473a7",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Systems Test Engineer",
+      "locations": [
+        "Bangalore"
+      ],
+      "countries": [
+        "India"
+      ],
+      "url": "https://jobs.lever.co/shieldai/cbba120f-2089-4531-9e41-1dad856473a7",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "6a1d2902fdc39bebb388a10efbbe99c92f79b480c754fd0d25ae72f4b68afb8f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "shield-ai:lever:d0635c93-bb07-4585-80d3-c53aaa2fdf6d",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Software Test Automation Engineer (R4719)",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/d0635c93-bb07-4585-80d3-c53aaa2fdf6d",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "a77dfebbfd2068e8a96fbfdb9a251c7d6a98969983d45921c64325995a55d1d6",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "waymo:greenhouse:7808260",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Hardware Engineer, LIDAR Performance Validation",
+      "locations": [
+        "Mountain View, CA, USA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7808260",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "baaa45ace9258419a49ddd43b73f1b1c87e1d8ae035f2d142e90dd8a9079968a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "waymo:greenhouse:8106385",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Staff Systems Test Engineer, Scenario Quality and Maintenance Systems",
+      "locations": [
+        "Mountain View, CA, USA; San Francisco, CA, USA",
+        "Mountain View, California, United States",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=8106385",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "91d2e1bdcaaa26c1ced8b7ea1a284a2f4d8b0af0700e6c1e05db1e6309ba3164",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "zipline:greenhouse:7809118003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Software Engineer, Test Infrastructure",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7809118003?gh_jid=7809118003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "f16f80a1cab04ba2b0b37d61c6ae308724e0e482db197aeaa4d594ad3b03b57c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "zipline:greenhouse:7810503003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Senior Software Systems Validation Engineer",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7810503003?gh_jid=7810503003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "a7f33ffd088b74d1389aea76303180c0e8c7ae302d1191a1d77c792d7c765326",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "zipline:greenhouse:7848909003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Embedded Software Engineer, Validation",
+      "locations": [
+        "Ann Arbor, Michigan USA; South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7848909003?gh_jid=7848909003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "7baa639fa5dd3246627a9c729de2bb2869d787939e22624ec8149a7480258504",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "zipline:greenhouse:7893905003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Sr/Staff System Test and Validation Engineer",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7893905003?gh_jid=7893905003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "6cc7cbae8d17d429382f85809669e84927dedb88216231a07093101acbe4f044",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "zipline:greenhouse:8002552003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Senior Embedded Software Validation Engineer - Avionics SW",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/8002552003?gh_jid=8002552003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "086d854dd97005eb8f1d01e24d18bc82d9466276519fc87aa620ce95484ba6ac",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "zoox:lever:4b00bf61-6547-4c50-be83-5d659176090b",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Firmware Validation Engineer",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/4b00bf61-6547-4c50-be83-5d659176090b",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "2484d71e5461ad2e3e6901472090ec8d1111e9e4c511f4e505e6960839fb14fd",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "zoox:lever:5b0c4c1d-9308-4809-995a-223161fb5068",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Wireless Firmware Validation Engineer",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/5b0c4c1d-9308-4809-995a-223161fb5068",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "1c15424feee958a5b024d052b7d6425bc78bf00ca6b11248f2fca972eeef7940",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    },
+    {
+      "id": "zoox:lever:ec1de483-ebd5-4b87-96b7-d749f077aefb",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "System Test Engineer",
+      "locations": [
+        "Foster City, CA",
+        "San Diego, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/ec1de483-ebd5-4b87-96b7-d749f077aefb",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "39f95a5050ce624fd3539969cd89513caa1831b9d6349fa7c44b3ee196fab594",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reason": "Cloud, application UI and operations workflow integration tests; separate from physical autonomy behavior and from the other Zoox System Test requisition."
+    },
+    {
+      "id": "zoox:lever:ffb6c8ea-a939-4440-819c-c737737ae6de",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Senior Platform System Vehicle Test Engineer",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/ffb6c8ea-a939-4440-819c-c737737ae6de",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "123eddcd9fe59daea5f67c6a51ed623fec79a413d879af0317a0bbbc0137a0b5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reason": "Outside selected system/robot-behavior V&V scope or not contextually admitted. Includes specialist firmware/silicon, dedicated test infrastructure, product UI, manufacturing-test and other adjacent roles."
+    }
+  ]
+}

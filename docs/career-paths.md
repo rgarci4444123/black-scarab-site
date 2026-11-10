@@ -236,3 +236,21 @@ A new server-rendered two-panel graphic explains obstacle inflation for a circul
 Motion Planning Engineer user revision, November 10: applied attachment `09c62f57-4cf4-44f9-baef-1e6136999be4` across eight sections. Expanded accessible explanations of geometry, configuration space, collision detection, search, dynamics and trajectory planning; added the supplied transition table and nine-step portfolio project. The existing clearance graphic replaces the duplicated measurement table. Preserved $218,000 estimate, exact geometry, hero, original fragments and full collapsed methodology. Salary-table labels retain verified annual advertised salary rather than assuming base-pay treatment. Added the supplied Modern Robotics and MoveIt resource entries. Local review continues at port 3050.
 
 Motion Planning Engineer approved for publication November 10, 2026, including the complete user revision, nine-step project and clearance graphic. First publication uses November 10. Verification & Validation Engineer is next for local drafting.
+
+
+## Motion Planning release and V&V local review · November 10, 2026
+
+Motion Planning Engineer is deployed in commit `ef95ec0e73b5bd487edeaade54f9cfefe38f0bdd`. The complete user rewrite, nine-step project, $218,000 estimate, hero, clearance graphic, metadata, research downloads, category link and sitemap are live and verified. The newer Teradyne news release was fast-forwarded before the career-guide push.
+
+Verification & Validation Engineer is the next local draft at `/career-paths/platforms-simulation/verification-and-validation-engineer`. The native occupation ID and URL retain “and”; the immutable research role ID remains `verification-validation-engineer` through the existing mapping. Eight sections cover requirements and intended use, evaluation methods, test automation, SIL/HIL, scenarios, traceability, qualifications and a simulated-system portfolio.
+
+Thirteen complete employer sources and three boundary sources reviewed. Ten eligible annual U.S. observations across six employers produce an exact $174,750 median midpoint, rounded to a $175,000 estimate. The technician advertisement with USD 30–48/year structured metadata and USD 30–48/hour body text is excluded without annualizing. Browser/API QA, cloud/UI operations testing and specialist component work remain distinct. Reproduce with `scripts/build-verification-validation-guide-research.py --archive-root`.
+
+The server-rendered matrix illustrates three passing executed tests with only two of three requirements linked to tests; the uncovered stale-input requirement stays explicit. No universal coverage or safety conclusion follows from the matrix. A new mostly monochrome cover depicts a humanoid in a controlled rain chamber with cyan accents. No first-publication date; local review required.
+
+
+V&V user revision, November 10: applied the complete supplied portion of attachment `224752ff-3a4f-4226-9f77-f8a224c1e603` across eight sections, including expanded verification/validation explanations, testing environments, metrics, education, career transitions and the first six portfolio steps. The attachment ends mid-heading at `Step 7: Correct the`; the existing correction, final project steps, portfolio contents and closing resources remain until the user supplies the rest. Consolidated repeated traceability tables and custom grid markup into the existing responsive matrix. Preserved $175,000 estimate, research derivation, hero, canonical route and complete methodology. Local review continues.
+
+V&V complete revision received in attachment `34d937e3-fe65-4d1d-90ce-de953842de83`, superseding the truncated source. Applied the supplied Steps 7–9, portfolio contents, advanced extension and NASA/pytest/ROS closing resources. The prior provisional ending is replaced. The complete rewrite remains in local review.
+
+Verification & Validation Engineer approved for publication November 10, 2026, including the complete user revision, nine-step project, traceability graphic and closing resources. First publication uses November 10. Robot Operations Specialist is next for local drafting.

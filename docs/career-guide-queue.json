@@ -65,13 +65,14 @@
     {
       "order": 10,
       "roleId": "motion-planning-engineer",
-      "status": "approved-for-release",
+      "status": "deployed",
       "path": "/career-paths/intelligence-autonomy/motion-planning-engineer"
     },
     {
       "order": 11,
       "roleId": "verification-validation-engineer",
-      "status": "queued"
+      "status": "approved-for-release",
+      "path": "/career-paths/platforms-simulation/verification-and-validation-engineer"
     },
     {
       "order": 12,

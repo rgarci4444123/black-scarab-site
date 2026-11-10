@@ -1,0 +1,52 @@
+{
+  "createdAt": "2026-11-10",
+  "tool": "built-in image_gen",
+  "brief": {
+    "storyThesis": "V&V engineers design evidence that tests requirements and real operating needs.",
+    "visualThesis": "Deliberately difficult conditions reveal behavior that a simple demonstration can miss.",
+    "medium": "Cinematic editorial realism",
+    "viewpoint": "Through a circular observation window, medium-wide frontal oblique",
+    "composition": "Off-center full-body humanoid in rain, curved framing and foreground droplets",
+    "subjectScale": "One complete machine within a controlled experimental environment",
+    "palette": "85 percent neutral, 15 percent cyan accent lighting",
+    "lighting": "Dark side lighting through rain and mist",
+    "surface": "Wet glass, metal, composite",
+    "cropPlan": "Robot and circular opening remain legible in wide and square crops",
+    "recentCoverReview": [
+      {
+        "role": "embedded-software-engineer",
+        "fingerprint": "High-key studio macro of opened forearm, lime accents"
+      },
+      {
+        "role": "robotics-controls-engineer",
+        "fingerprint": "Studio quadruped on tilted plate, pale surroundings, violet"
+      },
+      {
+        "role": "machine-learning-infrastructure-engineer",
+        "fingerprint": "Vast server hall, distant human, amber catwalk"
+      },
+      {
+        "role": "industrial-automation-engineer",
+        "fingerprint": "Overhead factory conveyor and repeated robot stations, cyan"
+      },
+      {
+        "role": "manufacturing-engineer",
+        "fingerprint": "Gloved hands and precision fixture, receding factory, yellow tooling"
+      },
+      {
+        "role": "motion-planning-engineer",
+        "fingerprint": "Low outdoor concrete corridor, small rover and coral trajectory"
+      }
+    ],
+    "avoid": "Packshots, engineer at screen, factory assembly view, typography, paper-like construction."
+  },
+  "prompt": "Use case: stylized-concept. Asset: cinematic editorial cover for a robotics Verification and Validation Engineer career guide. Visual thesis: engineering confidence comes from deliberately exposing a machine to difficult conditions. A dramatic view through a vast circular observation window into an unoccupied futuristic environmental test chamber. Inside, an unbranded white and graphite humanoid robot is caught mid-step over uneven wet metal terrain while controlled diagonal rain and fine mist reveal its silhouette. The robot is off-center and has a convincing full-body articulated mechanical construction, with no face or costume. Foreground observation glass has a few sharply lit water droplets and dark curved structural framing, with deep layered space beyond. Restrained cyan illumination from a few chamber fixtures makes the rainfall and experimental setting visible, approximately 15 percent color accents in an otherwise black white and gray scene. Cinematic realism, dramatic side lighting, photographic water texture, sophisticated and enticing engineering-publication artwork. Landscape 16:9. No text, labels, screens, logos, statistics, interface overlays, glowing network lines, humans, commercial product staging or paper-like materials. This is an invented conceptual research environment, not an official facility or product photograph.",
+  "status": "selected",
+  "asset": "public/career-paths/verification-validation-engineer-lab.webp",
+  "generatedSource": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-0301a325-d3d9-4b87-8054-6c3fb16c7092.png",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "bytes": 390222
+}

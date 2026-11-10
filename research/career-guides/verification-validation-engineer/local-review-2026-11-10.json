@@ -1,0 +1,60 @@
+{
+  "status": "approved-for-release",
+  "reviewedAt": "2026-11-10",
+  "guidePath": "/career-paths/platforms-simulation/verification-and-validation-engineer",
+  "url": "http://127.0.0.1:3055/career-paths/platforms-simulation/verification-and-validation-engineer",
+  "publication": "User approved publication November 10, 2026.",
+  "precedingRelease": {
+    "guide": "motion-planning-engineer",
+    "commit": "ef95ec0e73b5bd487edeaade54f9cfefe38f0bdd",
+    "status": "deployed and verified"
+  },
+  "sectionCount": 8,
+  "research": {
+    "selectedFullSources": 13,
+    "additionalBoundaryFullSourceReviews": 3,
+    "originalCohort": 64,
+    "annualSalaryObservations": 10,
+    "salaryEmployers": 6,
+    "exactMedian": 174750,
+    "estimate": 175000,
+    "exclusions": "Hourly technician metadata conflict; specialist component, browser/API QA and cloud/UI system testing; no explicitly verified annual frequency."
+  },
+  "artwork": {
+    "asset": "public/career-paths/verification-validation-engineer-lab.webp",
+    "record": "research/career-guides/verification-validation-engineer/artwork-2026-11-10.json",
+    "tool": "built-in image_gen"
+  },
+  "inArticleVisual": {
+    "type": "server-rendered requirements-to-tests matrix",
+    "id": "vv-requirements-evidence",
+    "model": "public/research/verification-validation-traceability-example-2026-11-10.json",
+    "meaning": "All three executed tests pass; R1 and R2 have mapped passing tests, while R3 has no mapped test. No claim of complete verification or safety follows.",
+    "accessibility": "Native row and column headers, explicit result labels, checkmarks and dashes plus written missing-test status; does not rely on color alone."
+  },
+  "validation": {
+    "careerTests": 27,
+    "selectedSourceRecordsAudited": 147,
+    "rawSourcesAudited": 42,
+    "typecheck": "passed",
+    "scopedLint": "passed",
+    "nextBuild": "passed",
+    "existingArticlePreviews": 176,
+    "desktop": "Revised opening reviewed at 1100 CSS pixels; eight sections, ten tables including the retained matrix and all nine supplied project steps verified. Final correction and closing sections checked at 1000 pixels.",
+    "tablet": "Unchanged shared matrix retains its prior 768-pixel review; no component layout changes in this copy revision.",
+    "mobile": "Complete revision reviewed at 288 CSS pixels: all ten tables fit within the 214-pixel reading width; no page or matrix overflow. New NASA, pytest and ROS resources wrap within the reading width.",
+    "metadata": "Unique H1, SEO title, description, canonical and Article schema; November 10 publication and modification dates.",
+    "navigation": "Native occupation ID retains and, research role uses existing market-ID mapping. Registry supplies local category, assessment links and sitemap.",
+    "copy": "Complete source 34d937e3-fe65-4d1d-90ce-de953842de83 supersedes the truncated attachment; no provisional project ending remains."
+  },
+  "screenshots": {
+    "opening": "/tmp/black-scarab-vv-revised-opening.png",
+    "matrixDesktop": "/tmp/black-scarab-vv-revised-matrix-desktop.png",
+    "matrixMobile": "/tmp/black-scarab-vv-revised-matrix-mobile.png",
+    "projectDesktop": "/tmp/black-scarab-vv-revised-project-desktop.png",
+    "resourcesMobile": "/tmp/black-scarab-vv-revised-resources-mobile.png"
+  },
+  "editorialRevision": "research/career-guides/verification-validation-engineer/editorial-revision-2026-11-10.json",
+  "editorialStatus": "Complete supplied rewrite applied, including all nine project steps and closing resources.",
+  "approvedAt": "2026-11-10"
+}
