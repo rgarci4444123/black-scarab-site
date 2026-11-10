@@ -2,10 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { CareerFamily, CareerGuideBlock, CareerGuideContent, CareerGuideSection } from '@/lib/career-paths/types';
 
-import {CareerOverview,CareerGuideNavigation,CareerSkillMentions,CareerCompensationTable,CareerResearchNotes,CareerWorkflow,CareerDiagnosticMap,CareerTimingBudget,CareerControlResponse,CareerStateSequence,CareerYieldComparison,CareerPlanningClearance,CareerRequirementsMatrix} from './career-guide-elements';
+import {CareerOverview,CareerGuideNavigation,CareerSkillMentions,CareerCompensationTable,CareerResearchNotes,CareerWorkflow,CareerDiagnosticMap,CareerTimingBudget,CareerControlResponse,CareerStateSequence,CareerYieldComparison,CareerPlanningClearance,CareerRequirementsMatrix,CareerMissionOutcomes} from './career-guide-elements';
 
 function GuideBlock({block}:{block:CareerGuideBlock}) {
   switch (block.type) {
+    case 'mission-outcomes': return <CareerMissionOutcomes block={block}/>;
     case 'requirements-matrix': return <CareerRequirementsMatrix block={block}/>;
     case 'planning-clearance': return <CareerPlanningClearance block={block}/>;
     case 'yield-comparison': return <CareerYieldComparison block={block}/>;
@@ -17,7 +18,7 @@ function GuideBlock({block}:{block:CareerGuideBlock}) {
       ? <ol>{block.items.map(item=><li key={item}>{item}</li>)}</ol>
       : <ul>{block.items.map(item=><li key={item}>{item}</li>)}</ul>;
     case 'table': return <div className="profession-table-wrap" role="region" aria-label={block.caption} tabIndex={0}>
-      <table className={`profession-evidence-table${block.variant==='numeric'?' profession-numeric-table':''}`}><caption>{block.caption}</caption><thead><tr>{block.columns.map(column=><th scope="col" key={column}>{column}</th>)}</tr></thead>
+      <table className={`profession-evidence-table${block.variant?` profession-${block.variant}-table`:''}`}><caption>{block.caption}</caption><thead><tr>{block.columns.map(column=><th scope="col" key={column}>{column}</th>)}</tr></thead>
         <tbody>{block.rows.map((row,index)=><tr key={index}>{row.map((cell,column)=>column===0?<th scope="row" key={column}>{cell}</th>:<td key={column}>{block.columns.length>2?<span className="profession-mobile-column" aria-hidden="true">{block.columns[column]}</span>:null}{cell}</td>)}</tr>)}</tbody>
       </table>
     </div>;

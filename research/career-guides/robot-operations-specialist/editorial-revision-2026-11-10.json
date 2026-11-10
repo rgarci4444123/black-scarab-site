@@ -1,0 +1,33 @@
+{
+  "revisedAt": "2026-11-10",
+  "status": "complete-copy-applied",
+  "sourcePath": "/Users/rodolfogarcia/.codex/attachments/4c7a7c3a-593b-47a2-8a0e-49544f15ec0b/Pasted text.txt",
+  "sourceSha256": "385ae2a5796554e4dcac8e91961d2e5d1324c2e74f5109b32b9e14ee1a278fb5",
+  "sourceBytes": 32190,
+  "sectionCount": 9,
+  "preserved": [
+    "Existing H1, SEO title, canonical route and prior section fragments",
+    "57000 USD full-time-equivalent estimate and eleven hourly observations",
+    "Original hero and exact mission outcome values",
+    "Complete collapsed research methodology",
+    "Local review with no publication date"
+  ],
+  "presentation": [
+    "Applied complete supplied rewrite, overview and all eight portfolio steps.",
+    "Added standalone teleoperation section with a new fragment.",
+    "Consolidated two repeated outcome/metric tables into the existing mission comparison graphic. Fleet labels now match the supplied text.",
+    "Kept employer hourly examples in the responsive pay table and retained links to published guides.",
+    "Removed pasted escape markup and rendered Markdown as native editorial blocks."
+  ],
+  "sourceCorrections": {
+    "Many employers place greater emphasis on reliability, technical familiarity, attention to detail and the ability to follow procedures.": "Reviewed operator advertisements emphasize reliability, technical familiarity, attention to detail and the ability to follow procedures.",
+    "That difference can influence staffing requirements, operating costs and the ability to scale.": "Recording intervention frequency and duration helps teams assess staffing requirements, operating costs and the ability to scale.",
+    "Technical responsibilities. Positions requiring advanced robot operation, testing or troubleshooting may pay more than routine operational work.": "Technical responsibilities. Compare the scope of robot operation, testing and troubleshooting expected in each position.",
+    "Robot operations interviews often focus on reliability, judgment and the ability to follow procedures.": "Be ready to discuss reliability, judgment and your ability to follow procedures in an interview."
+  },
+  "technicalReference": {
+    "url": "https://huggingface.co/docs/lerobot/lerobot-dataset-v3",
+    "checkedAt": "2026-11-10",
+    "supports": "Robot-learning recordings with camera video, state, action and time information."
+  }
+}

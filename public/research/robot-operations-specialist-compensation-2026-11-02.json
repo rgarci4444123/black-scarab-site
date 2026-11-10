@@ -1,0 +1,1345 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "derivedAt": "2026-11-10",
+  "roleId": "robot-operations-specialist",
+  "sourceAggregate": "/research/physical-ai-careers-2026-11-02.json",
+  "sourceAggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "label": "Black Scarab estimated compensation, full-time equivalent",
+  "currency": "USD",
+  "period": "year",
+  "sourcePeriod": "hour",
+  "annualHours": 2080,
+  "basis": "Annualized advertised hourly pay, excluding differentials, overtime, bonus and equity",
+  "postingCount": 11,
+  "employerCount": 7,
+  "exactMedianHourlyMidpoint": 27.5,
+  "exactAnnualizedMedian": 57200.0,
+  "estimate": 57000,
+  "rounding": "nearest 1000 USD, halves rounded upward",
+  "method": "Median hourly range midpoint across reviewed employer/function/pay bands, multiplied by 40 hours × 52 weeks. Flat hourly rates contribute their stated amount.",
+  "eligibility": "Hands-on ground-robot operation, teleoperation/data collection, test operations and autonomous-vehicle operation; one representative per employer/function/pay band. Distinct geography pay bands retained.",
+  "limitations": "Purposive U.S. sample, not a representative market median or entry-level guarantee. Includes part-time, temporary and contract-to-hire advertisements. Annualization normalizes hourly pay and does not establish actual hours, annual earnings, benefits or permanent employment. Multiple Dyna, Figure and Nuro bands remain.",
+  "observations": [
+    {
+      "id": "ambirobotics:lever:ee65d243-7c79-4913-83dc-20e9b185b876",
+      "employerId": "ambirobotics",
+      "employer": "Ambi Robotics",
+      "title": "Robot Operator/Technician (Hammond, LA)",
+      "locations": [
+        "Hammond, LA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/ambirobotics/ee65d243-7c79-4913-83dc-20e9b185b876",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "6426c798d88c1f4b2724ce36f1385574e147c9a1e72ebc42ae2dfca27a8e5a3c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/ambirobotics.json",
+      "rawSourceFileSha256": "847f596b0ccf39057ab42857dec569cf38884e95f3d17d77cae11836cdac9994",
+      "minimum": 25,
+      "maximum": 30,
+      "currency": "USD",
+      "period": "hour",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 27.5,
+      "annualizedMidpoint": 57200.0,
+      "scope": "Onsite palletizing operation, customer support, approved routine maintenance and incident reporting; temporary part-time."
+    },
+    {
+      "id": "dyna:ashby:07330a37-aa35-4825-9080-66b29256a2fb",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Robot Safety Operator - Bellvue, WA",
+      "locations": [
+        "Customer Site"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/07330a37-aa35-4825-9080-66b29256a2fb",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "6a3a440bff607832339f21b5800661aa5ed34607cbca566bd4a0f150c37d9fd4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "minimum": 24,
+      "maximum": 28,
+      "currency": "USD",
+      "period": "hour",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 26.0,
+      "annualizedMidpoint": 54080.0,
+      "scope": "Robot monitoring, prechecks, intervention within procedures, incident records and coordination; Bellevue pay band."
+    },
+    {
+      "id": "dyna:ashby:3dc6a8a5-98fe-4e33-8a61-08ccff952985",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Data Collection Operator",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/3dc6a8a5-98fe-4e33-8a61-08ccff952985",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "9ba7cc64ee43277fe446472fa11daa47668d08120683b99bb39563c687ec9702",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "minimum": 30,
+      "maximum": 32,
+      "currency": "USD",
+      "period": "hour",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 31.0,
+      "annualizedMidpoint": 64480.0,
+      "scope": "Teleoperation and demonstration collection, annotation and performance reporting."
+    },
+    {
+      "id": "dyna:ashby:55e3acc4-2752-4db3-972c-d506c1361f9d",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Robot Safety Operator -NYC Midtown",
+      "locations": [
+        "Customer Site"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/55e3acc4-2752-4db3-972c-d506c1361f9d",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "141b2c270b8aa34e81a8d62b9484357c6d4b19afc83bcba5253078b3fa826b40",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "minimum": 28,
+      "maximum": 32,
+      "currency": "USD",
+      "period": "hour",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 30.0,
+      "annualizedMidpoint": 62400.0,
+      "scope": "Robot monitoring and approved recovery; distinct New York hourly band, not a seniority tier."
+    },
+    {
+      "id": "figure:greenhouse:4406268006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Humanoid Robot Operator (Morning Shift)",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4406268006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "af84278f760c1a1dfb36029dd5360b13fcdf6013099d2ab7167e38a81c92bad8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "minimum": 30,
+      "maximum": 30,
+      "currency": "USD",
+      "period": "hour",
+      "basis": "advertised hourly pay excluding shift/weekend differentials",
+      "extraction": "full-source-text",
+      "sourceClause": "The US base pay range for this full-time position is $30.00 per hour",
+      "sourceSpan": {
+        "start": 2597,
+        "end": 2665
+      },
+      "midpoint": 30.0,
+      "annualizedMidpoint": 62400.0,
+      "scope": "Humanoid operation, bring-up/shutdown, procedures, troubleshooting and Jira reports; contract-to-hire morning shift."
+    },
+    {
+      "id": "figure:greenhouse:4674402006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Humanoid Robot Operator, Commercial Site Team (Reno)",
+      "locations": [
+        "Reno, NV",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4674402006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "54e2cf8f8ecd13d064d92b66a7ee5d0df296a5eac886a99d0e7773a8a02fecf9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "minimum": 26,
+      "maximum": 30,
+      "currency": "USD",
+      "period": "hour",
+      "basis": "advertised hourly pay excluding shift/weekend differentials",
+      "extraction": "full-source-text",
+      "sourceClause": "The US base pay range for this full-time position is $26.00 to $30.00 per hour",
+      "sourceSpan": {
+        "start": 1707,
+        "end": 1785
+      },
+      "midpoint": 28.0,
+      "annualizedMidpoint": 58240.0,
+      "scope": "Commercial-site humanoid operation and feedback; contract-to-hire Reno posting."
+    },
+    {
+      "id": "nuro:greenhouse:7436219",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Autonomous Vehicle Operator - PM",
+      "locations": [
+        "California - LA",
+        "Los Angeles, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=7436219",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "a8b6fa69b0401193e2334e7b52284dec35d1acff0e59764a8a3b84f5d5e7c50e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "minimum": 26,
+      "maximum": 26,
+      "currency": "USD",
+      "period": "hour",
+      "basis": "advertised hourly pay excluding shift/weekend differentials",
+      "extraction": "full-source-text",
+      "sourceClause": "PM shift pay: $26 per hour",
+      "sourceSpan": {
+        "start": 4985,
+        "end": 5011
+      },
+      "midpoint": 26.0,
+      "annualizedMidpoint": 54080.0,
+      "scope": "Autonomous vehicle test operation, checks, data collection and mission coordination; temporary Los Angeles PM shift."
+    },
+    {
+      "id": "nuro:greenhouse:8104145",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Autonomous Vehicle Operator",
+      "locations": [
+        "California - SF",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=8104145",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "d2fff1dd1a4a033985bb44ed3bd992c4b229568acc10f746e727b4311f607d45",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "minimum": 27,
+      "maximum": 27,
+      "currency": "USD",
+      "period": "hour",
+      "basis": "advertised hourly pay excluding shift/weekend differentials",
+      "extraction": "full-source-text",
+      "sourceClause": "AM and PM shift pay: $27.00 per hour",
+      "sourceSpan": {
+        "start": 5227,
+        "end": 5263
+      },
+      "midpoint": 27.0,
+      "annualizedMidpoint": 56160.0,
+      "scope": "Autonomous vehicle operation, checks and clear reports; temporary San Francisco AM/PM base rate separated from differentials."
+    },
+    {
+      "id": "physical-intelligence:ashby:eb3ed968-630f-429a-9e44-5508b77d554b",
+      "employerId": "physical-intelligence",
+      "employer": "Physical Intelligence",
+      "title": "Robot Operator",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/physicalintelligence/eb3ed968-630f-429a-9e44-5508b77d554b",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "1434ffe62fc03f5331b55d3a4123a3dcb736c98294b12ef033b7f67d638012e5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/physical-intelligence.json",
+      "rawSourceFileSha256": "4636b655b7fab48b151da10f872a9268960654cc165ce7e06a60e83e91cc5c99",
+      "minimum": 25,
+      "maximum": 25,
+      "currency": "USD",
+      "period": "hour",
+      "basis": "advertised hourly pay excluding shift/weekend differentials",
+      "extraction": "full-source-text",
+      "sourceClause": "Compensation: $25/hour",
+      "sourceSpan": {
+        "start": 3617,
+        "end": 3639
+      },
+      "midpoint": 25.0,
+      "annualizedMidpoint": 52000.0,
+      "scope": "Onsite robotic-arm teleoperation, consistent task demonstrations, annotation and quality/quantity targets."
+    },
+    {
+      "id": "pickle-robot:lever:918b1ea6-5eb8-46d0-b024-888d9cd82ef6",
+      "employerId": "pickle-robot",
+      "employer": "Pickle Robot",
+      "title": "Robot Test Operator",
+      "locations": [
+        "Charlestown, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/picklerobot/918b1ea6-5eb8-46d0-b024-888d9cd82ef6",
+      "verifiedAt": "2026-11-02T17:47:00+00:00",
+      "sourceTextSha256": "3f282fd2f4f90f59851e0242e0600154149c73de8f27fa845cdd36dd506d3964",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/pickle-robot.json",
+      "rawSourceFileSha256": "2de11393fde7ac44bf6084223fc9c560c4c6d1d17192d26d08ebf68459709400",
+      "minimum": 30,
+      "maximum": 30,
+      "currency": "USD",
+      "period": "hour",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 30.0,
+      "annualizedMidpoint": 62400.0,
+      "scope": "Robot test operation through touchscreens, defined scenarios, limited routine maintenance and feedback to V&V."
+    },
+    {
+      "id": "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Operations Associate  (Doral, Miami)",
+      "locations": [
+        "Miami, FL"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/037bc041-c616-466a-83b5-cb7950fdc704",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "064f2168c5a4aab1c79d7b42c2e847d66a485bbf47671d78c52b261e88af1ed1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "minimum": 22,
+      "maximum": 22,
+      "currency": "USD",
+      "period": "hour",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 22.0,
+      "annualizedMidpoint": 45760.0,
+      "scope": "Part-time delivery-robot field operations, deployment/recovery, escalation, charging and end-of-shift accounting."
+    }
+  ],
+  "excludedObservations": [
+    {
+      "id": "anduril:greenhouse:5025511007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Flight Test Operator",
+      "locations": [
+        "San Clemente, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5025511007?gh_jid=5025511007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "19b4ca5bfeb81c2b9df8b0c9f8b33f81a4aea783f896b5be2c90664255a436a5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "anduril:greenhouse:5111833007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Flight Test Operator",
+      "locations": [
+        "Llanbedr, Wales, United Kingdom"
+      ],
+      "countries": [
+        "United Kingdom"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5111833007?gh_jid=5111833007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "d4370709d460624a1a72310e172b82a6c91873d9e8598cd691fa6857562c064b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "anduril:greenhouse:5112586007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Flight Test Operator",
+      "locations": [
+        "Costa Mesa, California, United States",
+        "Fort Stockton, Texas, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5112586007?gh_jid=5112586007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "b3a5db04fb994ff93b963146216a993a6462bf15d14110e5616f972f4d4b9be1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "anduril:greenhouse:5171647007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Flight Test Operator - Mission Autonomy",
+      "locations": [
+        "San Clemente, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5171647007?gh_jid=5171647007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "700722af04a5f0a2f494629ecddcd6c7c2f06475fd66ef6ae7df4234b871fcad",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "anduril:greenhouse:5196149007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Flight Test Operator",
+      "locations": [
+        "Fort Stockton, Texas, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5196149007?gh_jid=5196149007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "4770a7b8373eea9250d52f605df6bbb10b31abbd1c863db1c9e8c496ac74b0ad",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "anduril:greenhouse:5247859007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Flight Test Operator",
+      "locations": [
+        "Fort Stockton, Texas, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5247859007?gh_jid=5247859007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "b558e45105cda70d78050924dea2f3609fcea16ea735e2c51460e4c6cba89191",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "applied-intuition:ashby:a6ffba3c-37f1-400f-a30f-8644959ad8be",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Fleet Operations Specialist",
+      "locations": [
+        "Tokyo"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/a6ffba3c-37f1-400f-a30f-8644959ad8be",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "1e811f63cf7211b684aa6436ff5345049d316e22f0f962e6b8c1c9073fa76112",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "apptronik:greenhouse:6227425004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Strategy & Operations Associate",
+      "locations": [
+        "Austin, TX",
+        "Remote US"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6227425004?gh_jid=6227425004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "4ed67d8c30c7de58cc080ee769f07608284a4862ef27363e832b851ac1b2d24b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "boston-dynamics:workday:R3222",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Test Technician III, Logistics Robotics Test Operations, 2nd Shift",
+      "locations": [
+        "Billerica (MA)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Billerica-MA/Robotics-Test-Specialist_R3222",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "e22649eeaa9acb0b7eff874812a2102b8cc7bfae56fab75c5070ad89cd0953b8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "cobot:ashby:6c6995ec-6a29-46e9-b7c4-e02bc44c1950",
+      "employerId": "cobot",
+      "employer": "Collaborative Robotics",
+      "title": "Robotics Data Collection Operator, Shift Lead - Seattle",
+      "locations": [
+        "Seattle"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/cobot/6c6995ec-6a29-46e9-b7c4-e02bc44c1950",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "62b2dcb99f232538c00a9c8a8a4799efe43f331cd5ba188262758be913c908e4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/cobot.json",
+      "rawSourceFileSha256": "1cc14d718f1a8ab3009ad3cd2a864e4d77fa2a071bf8f06208a3f2518b37f3c3",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "cobot:ashby:896f5121-544a-481a-8e48-a8aa576130b1",
+      "employerId": "cobot",
+      "employer": "Collaborative Robotics",
+      "title": "Robotics Data Collection Operator, Shift Lead - Santa Clara",
+      "locations": [
+        "Santa Clara"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/cobot/896f5121-544a-481a-8e48-a8aa576130b1",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "4c0d3202d98bdf8e78d8f5645eb8490d1a0f6daa047ba42e9456e9ed118268b0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/cobot.json",
+      "rawSourceFileSha256": "1cc14d718f1a8ab3009ad3cd2a864e4d77fa2a071bf8f06208a3f2518b37f3c3",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "dyna:ashby:179713ee-3f63-4904-8260-13a94dbe178a",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Robot Safety Operator - San Diego",
+      "locations": [
+        "Customer Site"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/179713ee-3f63-4904-8260-13a94dbe178a",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "6c7a56786f5fa96b42660c5a93d55eb4e3b0ab869fbc1997545da38441ca8ac9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "dyna:ashby:07330a37-aa35-4825-9080-66b29256a2fb"
+    },
+    {
+      "id": "dyna:ashby:8a411884-1078-479d-b3b4-f81f0ef95a73",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Robot Safety Operator - Walnut Creek, CA",
+      "locations": [
+        "Customer Site"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/8a411884-1078-479d-b3b4-f81f0ef95a73",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "4f7f35cbe12d6ade774865a79e2e178e59f064b94f847f6fccea448ab0f9570c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "dyna:ashby:07330a37-aa35-4825-9080-66b29256a2fb"
+    },
+    {
+      "id": "dyna:ashby:cf28c8a4-da64-4f2e-9533-8df37ec46496",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Robot Safety Operator - Anaheim",
+      "locations": [
+        "Customer Site"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/cf28c8a4-da64-4f2e-9533-8df37ec46496",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "a2df24f0eeab3c4e9119610f384fdb669aebfd723fdc83f890ef9f84581aa1af",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "dyna:ashby:07330a37-aa35-4825-9080-66b29256a2fb"
+    },
+    {
+      "id": "dyna:ashby:d889c611-ab2e-4b5f-b6b6-56655e249561",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Robot Safety Operator - Santa Monica",
+      "locations": [
+        "Customer Site"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/d889c611-ab2e-4b5f-b6b6-56655e249561",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "01d4dcca4d0e8554ee08da875df482bd7e21630897fe639da3e650647507ab84",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "dyna:ashby:07330a37-aa35-4825-9080-66b29256a2fb"
+    },
+    {
+      "id": "dyna:ashby:dffc5988-f3f2-4d1e-8648-da249ebc035d",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Robot Safety Operator - San Jose",
+      "locations": [
+        "Customer Site"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/dffc5988-f3f2-4d1e-8648-da249ebc035d",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "01d4dcca4d0e8554ee08da875df482bd7e21630897fe639da3e650647507ab84",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "dyna:ashby:07330a37-aa35-4825-9080-66b29256a2fb"
+    },
+    {
+      "id": "figure:greenhouse:4644956006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Humanoid Robot Operator (Afternoon Shift)",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4644956006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "caa7fd5b2e29f18a7612c4bfa4f5b9fb423089aba586cc0ae1283f570169dc01",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "figure:greenhouse:4406268006"
+    },
+    {
+      "id": "figure:greenhouse:4644962006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Humanoid Robot Operator (Night Shift)",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4644962006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "af715c572df21ca79523a5c0ee8ddb48da5af8136cfca61f17b7f44ed811b29a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "figure:greenhouse:4406268006"
+    },
+    {
+      "id": "figure:greenhouse:4665205006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Fleet Launch Operator, Commercial Launch Team",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4665205006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "009008916c837771ac6921b26e984d5115916a8a6301de9b9049f673b9c3b110",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reason": "Vehicle transport and delivery logistics; not primary hands-on robot operation."
+    },
+    {
+      "id": "figure:greenhouse:4698238006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Humanoid Robot Operator, Commercial Site Team (LA)",
+      "locations": [
+        "Los Angeles, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4698238006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "d87f4b7a3fbb4c596f5b002c318416a590f97e5c10f801f34843611332cf4df0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "figure:greenhouse:4674402006"
+    },
+    {
+      "id": "figure:greenhouse:4719239006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Commercial Operations Associate",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4719239006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "57175a04744abd89d667c578cb43ea4853ac6485cabf47bcc9817ff986e22402",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reason": "Commercial deployment strategy and program ownership, not robot shift operation."
+    },
+    {
+      "id": "figure:greenhouse:4724384006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Shift Coordinator, Humanoid Robot Operations (Night Shift)",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4724384006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "7d89a9c060bbf21b37612215f2742576997d8015186ca58c5157c22f1e07eb3d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "kodiak:greenhouse:4418166009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Product Strategy & Operations Associate",
+      "locations": [
+        "Mountain View, CA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4418166009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "157249f11ddf88dbfbf87297e9e062605116d040cb52d028928ae3539a27c70c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "may-mobility:greenhouse:8755629002",
+      "employerId": "may-mobility",
+      "employer": "May Mobility",
+      "title": "Autonomous Vehicle Operations Specialist",
+      "locations": [
+        "Atlanta, GA - Onsite",
+        "Atlanta, Georgia, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/maymobility/jobs/8755629002",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "09fe4570dc30f0d75d33cccfa601cf84276771c4bf36938394b1d65e741ca940",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/may-mobility.json",
+      "rawSourceFileSha256": "2ab98698904ead284505b1b3b2ea0b4d87534f0c3ee604fa3c2fe30e5a67461b",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "nuro:greenhouse:7939983",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Autonomous Vehicle Operator",
+      "locations": [
+        "California - Santa Clara",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=7939983",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "15985e1697cbabbc74da7223b2ff94d1bc3c6b7cbd2f3854ad8578cc12e7dee1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "Overnight variant of San Francisco operator; higher rate includes shift premium. Base AM/PM rate comes from the separate source 8104145.",
+      "representativeRecordId": "nuro:greenhouse:8104145"
+    },
+    {
+      "id": "nuro:greenhouse:7943735",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Autonomous Vehicle Operator - AM",
+      "locations": [
+        "California - LA",
+        "Los Angeles, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=7943735",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "710606b3ed662f9633dd9dbe768f1b8899d427e285aaa83c30481cd3142d040e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "nuro:greenhouse:7436219"
+    },
+    {
+      "id": "nuro:greenhouse:8172396",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Autonomous Vehicle Operator - Overnight",
+      "locations": [
+        "California - LA",
+        "Los Angeles, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=8172396",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "075a81c5613befca77037f986c7adeb1bcaa24c25acafc67665f67a415038774",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "nuro:greenhouse:7436219"
+    },
+    {
+      "id": "nuro:greenhouse:8259036",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "On-Site Hiring Event: Autonomous Vehicle Operator, San Francisco",
+      "locations": [
+        "California - SF",
+        "California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=8259036",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "000f4b472259f6965e6ba580eb7e4730eb9319af50d68e29b28e4b9cc6c50480",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "nuro:greenhouse:8104145"
+    },
+    {
+      "id": "path-robotics:greenhouse:8649408002",
+      "employerId": "path-robotics",
+      "employer": "Path Robotics",
+      "title": "Robotic Operations Support Specialist, Weekend Shift",
+      "locations": [
+        "Columbus, Ohio",
+        "Columbus, Ohio, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/pathrobotics/jobs/8649408002?gh_jid=8649408002",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "c19bf4d495818b2ebaa33429cb8c6b194a18c23d94d95c084c9628eb76cd1257",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/path-robotics.json",
+      "rawSourceFileSha256": "dda49bbc68095b57d6027516973c117de7d1e049b6393bd61747a752e35d13e2",
+      "reason": "Service-heavy cell support, repairs and component replacement; adjacent to field service."
+    },
+    {
+      "id": "serve:ashby:28bbd767-93f5-4df1-8917-ca3cc339041b",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Field Development Test Associate",
+      "locations": [
+        "Los Angeles, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/28bbd767-93f5-4df1-8917-ca3cc339041b",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "adfbc7af9400631a3114ab654fe88527710393c1e9529fd8f0fca7e3bc0274c2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "serve:ashby:2bd05e97-500b-4f13-9e87-53e6e374b963",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Operations Associate - Part Time (San Jose, CA)",
+      "locations": [
+        "San Jose, California"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/2bd05e97-500b-4f13-9e87-53e6e374b963",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "a33311ee846fa8be53cee9b47015d266c538d02afbc160410091d6f3582f952b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704"
+    },
+    {
+      "id": "serve:ashby:845d4e3d-620a-493b-af4e-90c585a28c93",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Operations Associate - Part Time (West LA)",
+      "locations": [
+        "Los Angeles, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/845d4e3d-620a-493b-af4e-90c585a28c93",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "a33311ee846fa8be53cee9b47015d266c538d02afbc160410091d6f3582f952b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704"
+    },
+    {
+      "id": "serve:ashby:882e6b27-c3ea-4c72-a2ce-22d4cc601b33",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Operations Associate - Part Time (Los Angeles)",
+      "locations": [
+        "Los Angeles, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/882e6b27-c3ea-4c72-a2ce-22d4cc601b33",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "a33311ee846fa8be53cee9b47015d266c538d02afbc160410091d6f3582f952b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704"
+    },
+    {
+      "id": "serve:ashby:9062f31f-5614-4f86-af20-842b3b1a3ac5",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Operations Associate - Part Time (North Hollywood)",
+      "locations": [
+        "Los Angeles, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/9062f31f-5614-4f86-af20-842b3b1a3ac5",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "a33311ee846fa8be53cee9b47015d266c538d02afbc160410091d6f3582f952b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704"
+    },
+    {
+      "id": "serve:ashby:affbda32-d839-44bc-952b-62eae06844d0",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Operations Associate - Part Time (Fulton Market District, Chicago)",
+      "locations": [
+        "Chicago, IL"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/affbda32-d839-44bc-952b-62eae06844d0",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "bc7f66b6023b3872fab345fac2480f4f1a76c849db9024d19afaee59ba43e565",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704"
+    },
+    {
+      "id": "serve:ashby:b4c268eb-cbd2-458f-9b79-5953f5cbe73d",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Operations Associate - Part Time (Dallas)",
+      "locations": [
+        "Dallas, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/b4c268eb-cbd2-458f-9b79-5953f5cbe73d",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "a33311ee846fa8be53cee9b47015d266c538d02afbc160410091d6f3582f952b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704"
+    },
+    {
+      "id": "serve:ashby:b74bd993-16fd-44f7-a71c-33b85d1345e6",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Operations Associate - Part Time (Hollywood, LA)",
+      "locations": [
+        "Los Angeles, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/b74bd993-16fd-44f7-a71c-33b85d1345e6",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "a33311ee846fa8be53cee9b47015d266c538d02afbc160410091d6f3582f952b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704"
+    },
+    {
+      "id": "serve:ashby:bfe62800-e3d0-4184-99f6-b96547c31365",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Operations Associate (Midtown, Atlanta)",
+      "locations": [
+        "Atlanta, GA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/bfe62800-e3d0-4184-99f6-b96547c31365",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "6e2f7d29b7a8f7fd8ce5b62249aa2d4fe516809e64b64bd677ca5653cb32fa72",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704"
+    },
+    {
+      "id": "serve:ashby:d1e62cb0-c826-469c-9457-4b221ed34cc0",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Operations Associate",
+      "locations": [
+        "Dallas, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/d1e62cb0-c826-469c-9457-4b221ed34cc0",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "a33311ee846fa8be53cee9b47015d266c538d02afbc160410091d6f3582f952b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704"
+    },
+    {
+      "id": "serve:ashby:dce02eca-7d2b-4013-beee-bf9c070b55d9",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Operations Associate (Doral, Miami)",
+      "locations": [
+        "Miami, FL"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/dce02eca-7d2b-4013-beee-bf9c070b55d9",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "7f8b0749c898a18f1a548dca76302b064d7d92a61d4b75a93eeceaf9ef3c345a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704"
+    },
+    {
+      "id": "serve:ashby:ec1672c7-39a8-4c53-b8af-6540fbde44e1",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Operations Associate - Part Time (Midtown, Atlanta)",
+      "locations": [
+        "Atlanta, GA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/ec1672c7-39a8-4c53-b8af-6540fbde44e1",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "6e2f7d29b7a8f7fd8ce5b62249aa2d4fe516809e64b64bd677ca5653cb32fa72",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reason": "Same employer/function/pay band as selected representative, or premium-only shift variant.",
+      "representativeRecordId": "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704"
+    },
+    {
+      "id": "shield-ai:lever:3f8fce68-e07f-40af-a64e-1a78dbe98ffc",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Staff UAS Flight Test Operator - 5793",
+      "locations": [
+        "San Diego, California"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/3f8fce68-e07f-40af-a64e-1a78dbe98ffc",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "11972a349f81903a0b88f09e231515338ae49e797b36a87dd151065ea6b68ede",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "shield-ai:lever:52bfd55b-d539-4af1-b8bf-dbd2ccf12161",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior V-BAT Air Vehicle Operator, Deployed Operations Site Lead",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/52bfd55b-d539-4af1-b8bf-dbd2ccf12161",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "7e746049015381945143ebda660c1a41539e603904c0c210daa08ca500038924",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "shield-ai:lever:63014ba5-212a-401a-9ee7-10b7a88d9622",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior V-BAT Air Vehicle Operator, Demonstration (R5505)",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/63014ba5-212a-401a-9ee7-10b7a88d9622",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "8177ffe1cd87a70663e4f92a6d66000fcded5ac6c88b44c46d3c87104b982272",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "skild:greenhouse:4782103008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Robot Operator",
+      "locations": [
+        "San Mateo",
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/4782103008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "711cd2f3f9ad0a50c95f2758108a9a1437988618291a1a3af782749f135154d3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reason": "Amounts are shown without a verified pay period. No hourly or annual inference."
+    },
+    {
+      "id": "skild:greenhouse:4910792008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Robot Operator - India",
+      "locations": [
+        "Bengaluru, India",
+        "Bengaluru, Karnataka, India"
+      ],
+      "countries": [
+        "India"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/4910792008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "0e412b85c0a465dfda5c6a32ef31686af9d827b8ab1f4963091eb508b77558a2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "skild:greenhouse:5162957008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Robot Operator - Pittsburgh",
+      "locations": [
+        "Pittsburgh, Pennsylvania"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/5162957008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "2c03b2882e7f4f8794e814b27d1c64d4dbd80d2f690f339b0251bdaee7783ce1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "waymo:greenhouse:8163421",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "AV Compliance Lead, Fleet & Operator Compliance",
+      "locations": [
+        "Mountain View, CA, USA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=8163421",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "2d6b40d5b06281781517592c62d53e488099a832dfe60857698a5c82171a338d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "zipline:greenhouse:6215758003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Flight Operator - Cross River State, Nigeria",
+      "locations": [
+        "Cross River, Nigeria",
+        "Ogoja, Cross River State, Nigeria"
+      ],
+      "countries": [
+        "Nigeria"
+      ],
+      "url": "https://www.zipline.com/open-roles/6215758003?gh_jid=6215758003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "5b8364a2f8cd2e2d7530c736a3cbc51c086746fd1b79f7aee722162936eeaa66",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "zipline:greenhouse:7802161003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Flight Test Operator, Half Moon Bay",
+      "locations": [
+        "Half Moon Bay, California, USA",
+        "Half Moon Bay, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7802161003?gh_jid=7802161003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "678117d9cadf12850f892db8dacce9a98b9c31139d93667908e28d8767706cdf",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "zipline:greenhouse:7812871003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Flight Test Operator - Esparto,CA",
+      "locations": [
+        "Davis, California, United States",
+        "Esparto, California, USA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7812871003?gh_jid=7812871003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "fdf163ebbcf302760395a7fa0fb1d9f5de7996304500ecde63629c4210b68e69",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "zipline:greenhouse:7822285003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Flight Test Operator (SkillBridge) - Esparto, CA",
+      "locations": [
+        "Amarillo, Texas, USA",
+        "Amarillo, Texas, United States",
+        "Davis, California, United States",
+        "Esparto, California, USA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7822285003?gh_jid=7822285003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "fbc90a5255bd6d694071e42d0da7d6222a7e13f820c4d9c9fa10c77d3e2de824",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "Outside the selected hands-on ground-robot/vehicle operator sample or no contextually verified hourly pay. Includes flight specialists, leads, management, business operations, dedicated hardware technicians and adjacent repair roles."
+    },
+    {
+      "id": "zipline:greenhouse:7985704003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Flight Test Operator, Amarillo",
+      "locations": [
+        "Amarillo, Texas, USA",
+        "Amarillo, Texas, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7985704003?gh_jid=7985704003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "13ae3b2de7b8790d6ca9648e7d1f2ed8cf4f99d31795b6bc96de069aa52faa9b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "Specialist flight-test operator with piloting/certification and repair scope; excluded from the ground-robot/vehicle-operator estimate."
+    }
+  ]
+}

@@ -46,6 +46,7 @@ export interface CareerFamily {
 
 // Profession summaries stay separate from publishable, long-form guides.
 export type CareerGuideBlock =
+  | { type: 'mission-outcomes'; id: string; title: string; total: number; runs: { label: string; independent: number; assisted: number; notCompleted: number }[] }
   | { type: 'requirements-matrix'; id: string; title: string; model: { tests: { id: string; label: string; result: string }[]; requirements: { id: string; label: string; testIds: string[] }[] } }
   | { type: 'planning-clearance'; id: string; title: string; model: { width: number; height: number; robotRadius: number; clearance: number; obstacles: {x:number;y:number;width:number;height:number}[]; start: number[]; goal: number[]; directRoute: number[][]; detourRoute: number[][]; gap: number; requiredGap: number } }
   | { type: 'yield-comparison'; id: string; title: string; total: number; firstPass: number; reworkedPass: number; scrapped: number; note: string }
@@ -53,7 +54,7 @@ export type CareerGuideBlock =
   | { type: 'paragraph'; text: string }
   | { type: 'heading'; text: string }
   | { type: 'list'; items: string[]; ordered?: boolean }
-  | { type: 'table'; caption: string; columns: string[]; rows: string[][]; variant?: 'numeric' }
+  | { type: 'table'; caption: string; columns: string[]; rows: string[][]; variant?: 'numeric' | 'hourly-pay' }
   | { type: 'figure'; src: string; alt: string; caption: string; width: number; height: number; fullSizeHref?: string }
   | { type: 'control-response'; id: string; title: string; durationSeconds: number; naturalFrequencyRadPerSec: number; curves: { label: string; dampingRatio: number }[]; note: string }
   | { type: 'timing-budget'; id: string; title: string; deadlineMs: number; scaleMs: number; rows: { label: string; segments: { label: string; kind: 'read' | 'process' | 'send' | 'wait'; durationMs: number }[] }[]; note: string }

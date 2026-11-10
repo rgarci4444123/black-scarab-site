@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "reviewedAt": "2026-11-10",
+  "aggregatePath": "/research/physical-ai-careers-2026-11-02.json",
+  "aggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "rawArchive": {
+    "relativeRoot": "research/physical-ai/2026-11-02",
+    "normalizedRecords": "postings.jsonl",
+    "manifestHash": "6b48026839dcafc9d68144cf3fbedf38889984ad96f667a21e058b4d25f26f14"
+  },
+  "interpretation": "Contextual guide review; immutable source classifications preserved.",
+  "roles": {
+    "robot-operations-specialist": {
+      "recordIds": [
+        "ambirobotics:lever:ee65d243-7c79-4913-83dc-20e9b185b876",
+        "dyna:ashby:07330a37-aa35-4825-9080-66b29256a2fb",
+        "dyna:ashby:3dc6a8a5-98fe-4e33-8a61-08ccff952985",
+        "dyna:ashby:55e3acc4-2752-4db3-972c-d506c1361f9d",
+        "figure:greenhouse:4406268006",
+        "figure:greenhouse:4674402006",
+        "nuro:greenhouse:7436219",
+        "nuro:greenhouse:8104145",
+        "physical-intelligence:ashby:eb3ed968-630f-429a-9e44-5508b77d554b",
+        "pickle-robot:lever:918b1ea6-5eb8-46d0-b024-888d9cd82ef6",
+        "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704",
+        "skild:greenhouse:4782103008"
+      ],
+      "auditPath": "research/career-guides/robot-operations-specialist/evidence-audit.json",
+      "compensation": [],
+      "hourlyCompensation": [
+        {
+          "employer": "Figure",
+          "title": "Humanoid Robot Operator, Commercial Site Team (Reno)",
+          "url": "https://job-boards.greenhouse.io/figureai/jobs/4674402006",
+          "minimum": 26,
+          "maximum": 30,
+          "currency": "USD",
+          "period": "hour",
+          "basis": "advertised hourly pay excluding shift/weekend differentials",
+          "recordId": "figure:greenhouse:4674402006",
+          "location": "Reno, NV, San Jose, California, United States"
+        },
+        {
+          "employer": "Physical Intelligence",
+          "title": "Robot Operator",
+          "url": "https://jobs.ashbyhq.com/physicalintelligence/eb3ed968-630f-429a-9e44-5508b77d554b",
+          "minimum": 25,
+          "maximum": 25,
+          "currency": "USD",
+          "period": "hour",
+          "basis": "advertised hourly pay excluding shift/weekend differentials",
+          "recordId": "physical-intelligence:ashby:eb3ed968-630f-429a-9e44-5508b77d554b",
+          "location": "San Francisco"
+        },
+        {
+          "employer": "Pickle Robot",
+          "title": "Robot Test Operator",
+          "url": "https://jobs.lever.co/picklerobot/918b1ea6-5eb8-46d0-b024-888d9cd82ef6",
+          "minimum": 30,
+          "maximum": 30,
+          "currency": "USD",
+          "period": "hour",
+          "basis": "advertised-salary",
+          "recordId": "pickle-robot:lever:918b1ea6-5eb8-46d0-b024-888d9cd82ef6",
+          "location": "Charlestown, MA"
+        },
+        {
+          "employer": "Serve Robotics",
+          "title": "Operations Associate  (Doral, Miami)",
+          "url": "https://jobs.ashbyhq.com/serverobotics/037bc041-c616-466a-83b5-cb7950fdc704",
+          "minimum": 22,
+          "maximum": 22,
+          "currency": "USD",
+          "period": "hour",
+          "basis": "advertised-salary",
+          "recordId": "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704",
+          "location": "Miami, FL"
+        }
+      ],
+      "skillPresentation": "qualitative-source-comparison",
+      "scopeNote": "Original cohort mixes hands-on operations, flights, business operations, leads and technicians. No current vacancy or skill-frequency claim."
+    }
+  },
+  "records": [
+    {
+      "id": "ambirobotics:lever:ee65d243-7c79-4913-83dc-20e9b185b876",
+      "employerId": "ambirobotics",
+      "employer": "Ambi Robotics",
+      "title": "Robot Operator/Technician (Hammond, LA)",
+      "locations": [
+        "Hammond, LA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/ambirobotics/ee65d243-7c79-4913-83dc-20e9b185b876",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "6426c798d88c1f4b2724ce36f1385574e147c9a1e72ebc42ae2dfca27a8e5a3c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/ambirobotics.json",
+      "rawSourceFileSha256": "847f596b0ccf39057ab42857dec569cf38884e95f3d17d77cae11836cdac9994",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Onsite palletizing operation, customer support, approved routine maintenance and incident reporting; temporary part-time.",
+      "qualification": "Product support engineering experience in electro-mechanical hardware and software systems",
+      "qualificationSpans": [
+        {
+          "text": "Product support engineering experience in electro-mechanical hardware and software systems",
+          "start": 1949,
+          "end": 2039
+        }
+      ]
+    },
+    {
+      "id": "dyna:ashby:07330a37-aa35-4825-9080-66b29256a2fb",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Robot Safety Operator - Bellvue, WA",
+      "locations": [
+        "Customer Site"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/07330a37-aa35-4825-9080-66b29256a2fb",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "6a3a440bff607832339f21b5800661aa5ed34607cbca566bd4a0f150c37d9fd4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robot monitoring, prechecks, intervention within procedures, incident records and coordination; Bellevue pay band.",
+      "qualification": "Associate or Bachelor’s degree, or equivalent experience",
+      "qualificationSpans": [
+        {
+          "text": "Associate or Bachelor’s degree, or equivalent experience",
+          "start": 1411,
+          "end": 1467
+        }
+      ]
+    },
+    {
+      "id": "dyna:ashby:3dc6a8a5-98fe-4e33-8a61-08ccff952985",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Data Collection Operator",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/3dc6a8a5-98fe-4e33-8a61-08ccff952985",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "9ba7cc64ee43277fe446472fa11daa47668d08120683b99bb39563c687ec9702",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Teleoperation and demonstration collection, annotation and performance reporting.",
+      "qualification": "Associates or Bachelor College degree or equivalent",
+      "qualificationSpans": [
+        {
+          "text": "Associates or Bachelor College degree or equivalent",
+          "start": 1392,
+          "end": 1443
+        }
+      ]
+    },
+    {
+      "id": "dyna:ashby:55e3acc4-2752-4db3-972c-d506c1361f9d",
+      "employerId": "dyna",
+      "employer": "Dyna Robotics",
+      "title": "Robot Safety Operator -NYC Midtown",
+      "locations": [
+        "Customer Site"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/dyna-robotics/55e3acc4-2752-4db3-972c-d506c1361f9d",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "141b2c270b8aa34e81a8d62b9484357c6d4b19afc83bcba5253078b3fa826b40",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dyna.json",
+      "rawSourceFileSha256": "b1c6ca230638460f002c7239468a2d9cb11b550fa3cc0eef16a48838d7a92e01",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robot monitoring and approved recovery; distinct New York hourly band, not a seniority tier.",
+      "qualification": "Associate or Bachelor’s degree, or equivalent experience",
+      "qualificationSpans": [
+        {
+          "text": "Associate or Bachelor’s degree, or equivalent experience",
+          "start": 1421,
+          "end": 1477
+        }
+      ]
+    },
+    {
+      "id": "figure:greenhouse:4406268006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Humanoid Robot Operator (Morning Shift)",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4406268006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "af84278f760c1a1dfb36029dd5360b13fcdf6013099d2ab7167e38a81c92bad8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Humanoid operation, bring-up/shutdown, procedures, troubleshooting and Jira reports; contract-to-hire morning shift.",
+      "qualification": "Excellent communication skills.",
+      "qualificationSpans": [
+        {
+          "text": "Excellent communication skills.",
+          "start": 1413,
+          "end": 1444
+        }
+      ]
+    },
+    {
+      "id": "figure:greenhouse:4674402006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Humanoid Robot Operator, Commercial Site Team (Reno)",
+      "locations": [
+        "Reno, NV",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4674402006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "54e2cf8f8ecd13d064d92b66a7ee5d0df296a5eac886a99d0e7773a8a02fecf9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Commercial-site humanoid operation and feedback; contract-to-hire Reno posting.",
+      "qualification": "Excellent communication skills.",
+      "qualificationSpans": [
+        {
+          "text": "Excellent communication skills.",
+          "start": 1090,
+          "end": 1121
+        }
+      ]
+    },
+    {
+      "id": "nuro:greenhouse:7436219",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Autonomous Vehicle Operator - PM",
+      "locations": [
+        "California - LA",
+        "Los Angeles, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=7436219",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "a8b6fa69b0401193e2334e7b52284dec35d1acff0e59764a8a3b84f5d5e7c50e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Autonomous vehicle test operation, checks, data collection and mission coordination; temporary Los Angeles PM shift.",
+      "qualification": "Stay calm, solve problems, and work independently",
+      "qualificationSpans": [
+        {
+          "text": "Stay calm, solve problems, and work independently",
+          "start": 3286,
+          "end": 3335
+        }
+      ]
+    },
+    {
+      "id": "nuro:greenhouse:8104145",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Autonomous Vehicle Operator",
+      "locations": [
+        "California - SF",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=8104145",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "d2fff1dd1a4a033985bb44ed3bd992c4b229568acc10f746e727b4311f607d45",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Autonomous vehicle operation, checks and clear reports; temporary San Francisco AM/PM base rate separated from differentials.",
+      "qualification": "Stay calm, solve problems, and work independently",
+      "qualificationSpans": [
+        {
+          "text": "Stay calm, solve problems, and work independently",
+          "start": 3527,
+          "end": 3576
+        }
+      ]
+    },
+    {
+      "id": "physical-intelligence:ashby:eb3ed968-630f-429a-9e44-5508b77d554b",
+      "employerId": "physical-intelligence",
+      "employer": "Physical Intelligence",
+      "title": "Robot Operator",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/physicalintelligence/eb3ed968-630f-429a-9e44-5508b77d554b",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "1434ffe62fc03f5331b55d3a4123a3dcb736c98294b12ef033b7f67d638012e5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/physical-intelligence.json",
+      "rawSourceFileSha256": "4636b655b7fab48b151da10f872a9268960654cc165ce7e06a60e83e91cc5c99",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Onsite robotic-arm teleoperation, consistent task demonstrations, annotation and quality/quantity targets.",
+      "qualification": "- Experience with hands-on technical work, lab environments, or precision tasks",
+      "qualificationSpans": [
+        {
+          "text": "- Experience with hands-on technical work, lab environments, or precision tasks",
+          "start": 3803,
+          "end": 3882
+        }
+      ]
+    },
+    {
+      "id": "pickle-robot:lever:918b1ea6-5eb8-46d0-b024-888d9cd82ef6",
+      "employerId": "pickle-robot",
+      "employer": "Pickle Robot",
+      "title": "Robot Test Operator",
+      "locations": [
+        "Charlestown, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/picklerobot/918b1ea6-5eb8-46d0-b024-888d9cd82ef6",
+      "verifiedAt": "2026-11-02T17:47:00+00:00",
+      "sourceTextSha256": "3f282fd2f4f90f59851e0242e0600154149c73de8f27fa845cdd36dd506d3964",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/pickle-robot.json",
+      "rawSourceFileSha256": "2de11393fde7ac44bf6084223fc9c560c4c6d1d17192d26d08ebf68459709400",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robot test operation through touchscreens, defined scenarios, limited routine maintenance and feedback to V&V.",
+      "qualification": "Relevant experience in similar mechanical and technical environments (e.g., manufacturing, automotive, mechanical maintenance, etc.)",
+      "qualificationSpans": [
+        {
+          "text": "Relevant experience in similar mechanical and technical environments (e.g., manufacturing, automotive, mechanical maintenance, etc.)",
+          "start": 2107,
+          "end": 2239
+        }
+      ]
+    },
+    {
+      "id": "serve:ashby:037bc041-c616-466a-83b5-cb7950fdc704",
+      "employerId": "serve",
+      "employer": "Serve Robotics",
+      "title": "Operations Associate  (Doral, Miami)",
+      "locations": [
+        "Miami, FL"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/serverobotics/037bc041-c616-466a-83b5-cb7950fdc704",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "064f2168c5a4aab1c79d7b42c2e847d66a485bbf47671d78c52b261e88af1ed1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/serve.json",
+      "rawSourceFileSha256": "5da2fe974944f12cf2af287a90866913aaa7e175cad1f01e1a3ad6d5e8cadebb",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Part-time delivery-robot field operations, deployment/recovery, escalation, charging and end-of-shift accounting.",
+      "qualification": "1 year of experience in last-mile delivery, robotics, or customer-facing industries, with direct customer-facing (field or service-based) experience",
+      "qualificationSpans": [
+        {
+          "text": "1 year of experience in last-mile delivery, robotics, or customer-facing industries, with direct customer-facing (field or service-based) experience",
+          "start": 3522,
+          "end": 3670
+        }
+      ]
+    },
+    {
+      "id": "skild:greenhouse:4782103008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Robot Operator",
+      "locations": [
+        "San Mateo",
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/4782103008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "711cd2f3f9ad0a50c95f2758108a9a1437988618291a1a3af782749f135154d3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Teleoperation and data collection, following instructions and baseline technical literacy; salary period not established.",
+      "qualification": "Baseline technical literacy",
+      "qualificationSpans": [
+        {
+          "text": "Baseline technical literacy",
+          "start": 1644,
+          "end": 1671
+        }
+      ]
+    }
+  ]
+}

@@ -61,6 +61,12 @@ for(const guide of publishedCareerGuides) {
     assert.equal(pay.currency,'USD'); assert.equal(pay.period,'year');
     assert.equal(pay.url,records.get(pay.recordId).url);
   }
+  for(const pay of role.hourlyCompensation || []) {
+    assert.ok(role.recordIds.includes(pay.recordId));
+    assert.ok(pay.minimum>0 && pay.minimum<=pay.maximum);
+    assert.equal(pay.currency,'USD'); assert.equal(pay.period,'hour');
+    assert.equal(pay.url,records.get(pay.recordId).url);
+  }
 }
 
 // Optional local audit reads the existing archive; it never downloads or overwrites sources.

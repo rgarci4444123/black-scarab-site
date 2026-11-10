@@ -46,6 +46,21 @@
         "V&V engineer skills"
       ],
       "rationale": "Use the established category profession with robotics context and the existing native occupation slug. Explain system requirements, behavior evidence and release evaluation, distinct from component-only hardware tests, product QA and system safety analysis. No search-volume claim."
+    },
+    {
+      "occupationId": "robot-operations-specialist",
+      "h1": "How to Become a Robot Operations Specialist",
+      "seoTitle": "Robot Operations Specialist: Salary, Skills & Career Guide",
+      "description": "Explore robot operations careers: teleoperation, fleet monitoring, employer qualifications, hourly pay research and a practical mission-log portfolio project.",
+      "path": "/career-paths/integration-operations/robot-operations-specialist",
+      "primaryQuery": "robot operations specialist",
+      "supportingTopics": [
+        "robot operator salary",
+        "robot teleoperation jobs",
+        "robot operations skills",
+        "robot operator qualifications"
+      ],
+      "rationale": "Preserve the native career family and URL while including actual operator, data collection and test operator titles. Separate hands-on operation from business operations, primary repair and engineering. Editorial intent review, no search-volume claim."
     }
   ]
 }

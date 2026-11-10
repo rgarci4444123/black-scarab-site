@@ -1,6 +1,6 @@
 # Career guide progress
 
-Updated November 10, 2026. Fifteen of twenty approved for publication. Verification & Validation Engineer is approved for release; five guides remain.
+Updated November 10, 2026. Sixteen of twenty approved for publication. Robot Operations Specialist is approved for release; four guides remain.
 
 - ~~Mechanical Engineer~~
 - ~~Robot Learning Engineer~~
@@ -17,7 +17,7 @@ Updated November 10, 2026. Fifteen of twenty approved for publication. Verificat
 - ~~Manufacturing Engineer~~
 - ~~Motion Planning Engineer~~
 - ~~Verification & Validation Engineer~~
-- Robot Operations Specialist
+- ~~Robot Operations Specialist~~
 - Hardware Test Engineer
 - Localization & Mapping Engineer
 - Robotics Platform Engineer

@@ -1,0 +1,35 @@
+{
+  "createdAt": "2026-11-10",
+  "tool": "built-in image_gen",
+  "status": "selected",
+  "brief": {
+    "storyThesis": "Operators turn robot capability into dependable daily work through attention, procedures and clear handoffs.",
+    "visualThesis": "A robot fleet depends on people sharing responsibility across shifts.",
+    "medium": "Cinematic editorial realism",
+    "primarySubject": "Two anonymous helmeted operators exchanging a small rugged radio, compact service robots behind them",
+    "viewpoint": "Eye-level compressed long-lens perspective",
+    "composition": "Close foreground handoff at the left, layered open-air dispatch terminal and robots to the right",
+    "palette": "85 percent white graphite and gray; 15 percent orange high-visibility fabric",
+    "lighting": "Soft overcast daylight",
+    "surface": "Fabric, brushed metal, dry concrete",
+    "cropPlan": "Keep handoff and nearest robot within central wide crop",
+    "recentCoverReview": [
+      "Controls: studio quadruped, low oblique, violet",
+      "ML infrastructure: vast server hall, distant human, amber catwalk",
+      "Automation: top-down conveyor factory, cyan",
+      "Manufacturing: gloved hands and precision fixture, yellow",
+      "Motion planning: low outdoor concrete corridor, rover, coral route",
+      "V&V: circular wet glass, humanoid rain chamber, cyan"
+    ],
+    "recentPatternsAvoided": "No screen-focused engineer, macro repair, factory assembly line, rain chamber or route overlay. Human interaction, daylight, compressed eye-level composition and fabric provide a different recipe.",
+    "avoid": "Text, logos, interface overlays, product packshot, assumed gender, paper construction"
+  },
+  "prompt": "Create a sophisticated landscape 16:9 editorial illustration for a Robot Operations Specialist career guide. Visual thesis: a robot fleet depends on clear human shift handoffs. Eye-level long-lens cinematic documentary realism. In the foreground left, two anonymous operators in matte graphite safety helmets and restrained high-visibility orange fabric exchange a small rugged handheld radio at shift change; faces obscured by angle and helmet, natural hands, no gender emphasis. Beyond them to the right, several compact white and graphite autonomous service robots stage at a futuristic open-air dispatch terminal, with a believable working atmosphere and layered industrial architecture. Soft overcast daylight, dry concrete, brushed metal, fabric detail. Approximately 85 percent black white and gray with orange accents occupying about 15 percent of the scene. The human handoff and nearest robot both visually readable, editorial narrative rather than a product catalog. No text, numbers, logos, screens, glowing network overlays, route lines, paper-like materials, repair work or commercial product staging. Invented conceptual environment, not a real company facility.",
+  "asset": "public/career-paths/robot-operations-specialist-terminal.webp",
+  "generatedSource": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-38754ddc-e889-4387-aa06-b8e547f211ce.png",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "bytes": 269920
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "illustrative-mission-outcomes",
+  "totalPerRun": 100,
+  "runs": [
+    {
+      "label": "Fleet A",
+      "independent": 85,
+      "assisted": 5,
+      "notCompleted": 10
+    },
+    {
+      "label": "Fleet B",
+      "independent": 60,
+      "assisted": 30,
+      "notCompleted": 10
+    }
+  ],
+  "assumptions": "Invented comparison, not employer data. Each mission belongs to exactly one outcome. Assisted means a completed mission that needed human help, not intervention count. No duration, staffing, task difficulty or assistance on unfinished missions is modeled. Completion alone cannot establish autonomy, productivity or support workload."
+}

@@ -1,0 +1,66 @@
+{
+  "status": "approved-for-release",
+  "reviewedAt": "2026-11-10",
+  "guidePath": "/career-paths/integration-operations/robot-operations-specialist",
+  "url": "http://127.0.0.1:3059/career-paths/integration-operations/robot-operations-specialist",
+  "publication": "User approved publication November 10, 2026.",
+  "precedingRelease": {
+    "guide": "verification-and-validation-engineer",
+    "commit": "a3cf085ab90ea9c0b4b945b7c8a32b64c4cffe2a",
+    "status": "deployed and verified"
+  },
+  "sectionCount": 9,
+  "research": {
+    "selectedFullSources": 12,
+    "additionalBoundaryFullSourceReviews": 5,
+    "originalCohort": 64,
+    "hourlyObservations": 11,
+    "salaryEmployers": 7,
+    "hourlyMedian": 27.5,
+    "annualizationHours": 2080,
+    "annualizedMedian": 57200,
+    "estimate": 57000,
+    "basis": "Full-time equivalent; original observations and employer examples retain hourly units.",
+    "exclusions": "Business operations, lead roles, flights, repair-heavy roles, repeated employer/function/pay bands and unverified salary periods. Standard Nuro rates separated from premiums."
+  },
+  "artwork": {
+    "asset": "public/career-paths/robot-operations-specialist-terminal.webp",
+    "record": "research/career-guides/robot-operations-specialist/artwork-2026-11-10.json",
+    "tool": "built-in image_gen"
+  },
+  "inArticleVisual": {
+    "type": "server-rendered stacked mission outcomes comparison",
+    "id": "robot-mission-outcomes",
+    "model": "public/research/robot-operations-mission-outcomes-2026-11-10.json",
+    "meaning": "Two runs complete 90 of 100 missions, with five versus 30 assisted completions. Does not measure total intervention count, time or labor productivity.",
+    "accessibility": "Complete outcome counts in accessible image labels; written run summaries and legend. No client JavaScript."
+  },
+  "validation": {
+    "careerTests": 28,
+    "selectedSourceRecordsAudited": 159,
+    "rawSourcesAudited": 42,
+    "typecheck": "passed",
+    "scopedLint": "passed",
+    "nextBuild": "passed",
+    "existingArticlePreviews": 176,
+    "desktop": "Revised opening reviewed at 1100 px; nine sections, eight tables, retained mission graphic and all eight project steps verified.",
+    "tablet": "Unchanged component layout retains prior 768 px review; copy revision does not change component geometry.",
+    "mobile": "Revised teleoperation, project ending and hourly pay table reviewed at 288 px. All eight tables and both mission bars fit within 214 px; no page overflow.",
+    "metadata": "One H1, unique SEO title and description, canonical, Article/Breadcrumb schema; November 10 publication and modification dates.",
+    "navigation": "Local category and sitemap discover the complete draft. Three research downloads return 200.",
+    "copy": "Complete 720-line supplied document applied as native blocks. Nine sections, eight tables, all eight portfolio steps, closing resources; no pasted escape or inline Markdown markers."
+  },
+  "screenshots": {
+    "opening": "/tmp/black-scarab-operations-revised-opening.png",
+    "openingMobile": "/tmp/black-scarab-operations-opening-mobile.png",
+    "graphicDesktop": "/tmp/black-scarab-operations-revised-graphic.png",
+    "graphicMobile": "/tmp/black-scarab-operations-outcomes-mobile.png",
+    "graphicTablet": "/tmp/black-scarab-operations-outcomes-tablet.png",
+    "payMobile": "/tmp/black-scarab-operations-revised-pay-mobile.png",
+    "teleoperationMobile": "/tmp/black-scarab-operations-revised-teleoperation-mobile.png",
+    "projectMobile": "/tmp/black-scarab-operations-revised-project-mobile.png"
+  },
+  "editorialRevision": "research/career-guides/robot-operations-specialist/editorial-revision-2026-11-10.json",
+  "editorialStatus": "Complete supplied copy applied, including standalone teleoperation section and all eight portfolio steps.",
+  "approvedAt": "2026-11-10"
+}

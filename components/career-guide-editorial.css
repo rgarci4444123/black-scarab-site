@@ -341,3 +341,34 @@
 .career-section.profession-guide .profession-traceability-tests strong { font-weight: 600; }
 .career-section.profession-guide .profession-traceability > .profession-research-note { margin: 17px 0 0; color: #626a71; font-size: 12px; line-height: 1.6; }
 @media (max-width: 600px) { .career-section.profession-guide .profession-traceability figcaption { font-size: 21px; } .career-section.profession-guide .profession-traceability-matrix th:first-child { width: 55%; } .career-section.profession-guide .profession-traceability-matrix th,.career-section.profession-guide .profession-traceability-matrix td { padding: 15px 4px; } .career-section.profession-guide .profession-traceability-matrix tbody th { font-size: 14px; } .career-section.profession-guide .profession-traceability-matrix td { font-size: 21px; } .career-section.profession-guide .profession-traceability-tests { display: grid; gap: 7px; } }
+
+/* Mission outcome comparison: one scale, three mutually exclusive outcomes. */
+.career-section.profession-guide .profession-mission-outcomes { margin: 2.8rem 0; padding: 1.65rem 0; border-block: 1px solid #dbe1e5; scroll-margin-top: 6rem; }
+.career-section.profession-guide .profession-mission-outcomes figcaption { max-width: none; margin: 0; font-size: 1.3rem; font-weight: 650; line-height: 1.3; color: #171c21; }
+.career-section.profession-guide .profession-mission-runs { display: grid; gap: 1.8rem; margin-block: 1.8rem; }
+.career-section.profession-guide .profession-mission-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: .65rem; }
+.career-section.profession-guide .profession-mission-heading h4 { margin: 0; font-size: 1.05rem; font-weight: 600; }
+.career-section.profession-guide .profession-mission-heading p { display: flex; gap: 1.2rem; margin: 0; font-size: .95rem; line-height: 1.5; }
+.career-section.profession-guide .profession-mission-heading strong { font-weight: 600; }
+.career-section.profession-guide .profession-mission-heading p span { color: #525d66; }
+.career-section.profession-guide .profession-mission-bar { display: flex; height: 3.3rem; width: 100%; overflow: hidden; border-radius: 3px; }
+.career-section.profession-guide .profession-mission-segment { display: flex; flex: none; align-items: center; justify-content: center; box-sizing: border-box; font-size: 1rem; font-weight: 650; }
+.career-section.profession-guide .profession-mission-independent { background: #a6becf; color: #172b3a; }
+.career-section.profession-guide .profession-mission-assisted { background: #424d57; color: #fff; }
+.career-section.profession-guide .profession-mission-notCompleted { background: #fff; color: #424d57; box-shadow: inset 0 0 0 1px #a4adb4; }
+.career-section.profession-guide .profession-mission-outcomes .profession-mission-legend { display: flex; flex-wrap: wrap; gap: .7rem 1.3rem; padding: 0; margin: 0 0 1rem; list-style: none; font-size: .9rem; }
+.career-section.profession-guide .profession-mission-legend li { display: flex; align-items: center; gap: .5rem; margin: 0; }
+.career-section.profession-guide .profession-mission-key { display: inline-block; flex: none; width: .85rem; height: .85rem; border-radius: 2px; }
+@media (max-width: 600px) {
+ .career-section.profession-guide .profession-mission-outcomes { padding-block: 1.3rem; }
+ .career-section.profession-guide .profession-mission-heading { align-items: flex-start; }
+ .career-section.profession-guide .profession-mission-heading p { display: grid; gap: 0; text-align: right; font-size: .88rem; }
+ .career-section.profession-guide .profession-mission-bar { height: 2.9rem; }
+ .career-section.profession-guide .profession-mission-narrow > span { display: none; }
+ .career-section.profession-guide .profession-mission-outcomes .profession-mission-legend { display: grid; gap: .65rem; }
+}
+
+.career-section.profession-guide .profession-table-wrap .profession-hourly-pay-table { table-layout: fixed; }
+.career-section.profession-guide .profession-table-wrap .profession-hourly-pay-table th:first-child { width: 62%; }
+.career-section.profession-guide .profession-table-wrap .profession-hourly-pay-table th,.career-section.profession-guide .profession-table-wrap .profession-hourly-pay-table td { font-size: 13px; overflow-wrap: anywhere; }
+.career-section.profession-guide .profession-table-wrap .profession-hourly-pay-table thead th { font-size: 11px; }

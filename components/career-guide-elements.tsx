@@ -5,6 +5,22 @@ export function CareerOverview({items}:{items:NonNullable<CareerGuideContent['ov
   return <section className="profession-overview" aria-labelledby="career-overview-title"><h2 id="career-overview-title">Career at a glance</h2><dl>{items.map(item=><div key={item.label}><dt>{item.label}</dt><dd><strong>{item.value}</strong>{item.detail?<p>{item.detail}</p>:null}</dd></div>)}</dl></section>;
 }
 
+type MissionOutcomes=Extract<CareerGuideBlock,{type:'mission-outcomes'}>;
+export function CareerMissionOutcomes({block}:{block:MissionOutcomes}) {
+  const categories=[{key:'independent',label:'Completed independently'},{key:'assisted',label:'Completed with help'},{key:'notCompleted',label:'Not completed'}] as const;
+  return <figure id={block.id} className="profession-mission-outcomes" aria-labelledby={`${block.id}-title`}>
+    <figcaption id={`${block.id}-title`}>{block.title}</figcaption>
+    <div className="profession-mission-runs">{block.runs.map(run=><div className="profession-mission-run" key={run.label}>
+      <div className="profession-mission-heading"><h4>{run.label}</h4><p><strong>{run.independent+run.assisted} completed</strong><span>{run.assisted} with help</span></p></div>
+      <div className="profession-mission-bar" role="img" aria-label={`${run.label}, ${block.total} missions: ${run.independent} completed independently, ${run.assisted} completed with help, ${run.notCompleted} not completed.`}>
+        {categories.map(({key})=><span key={key} className={`profession-mission-segment profession-mission-${key}${run[key]/block.total<0.12?' profession-mission-narrow':''}`} style={{width:`${run[key]/block.total*100}%`}} aria-hidden="true"><span>{run[key]}</span></span>)}
+      </div>
+    </div>)}</div>
+    <ul className="profession-mission-legend" aria-label="Mission outcomes">{categories.map(({key,label})=><li key={key}><span className={`profession-mission-key profession-mission-${key}`} aria-hidden="true"/>{label}</li>)}</ul>
+    <p className="profession-research-note">Illustrative comparison. Each run attempts {block.total} missions.</p>
+  </figure>;
+}
+
 type RequirementsMatrix=Extract<CareerGuideBlock,{type:'requirements-matrix'}>;
 export function CareerRequirementsMatrix({block}:{block:RequirementsMatrix}) {
   const m=block.model;

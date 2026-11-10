@@ -1,5 +1,5 @@
 {
-  "status": "approved-for-release",
+  "status": "deployed",
   "reviewedAt": "2026-11-10",
   "guidePath": "/career-paths/platforms-simulation/verification-and-validation-engineer",
   "url": "http://127.0.0.1:3055/career-paths/platforms-simulation/verification-and-validation-engineer",
@@ -56,5 +56,34 @@
   },
   "editorialRevision": "research/career-guides/verification-validation-engineer/editorial-revision-2026-11-10.json",
   "editorialStatus": "Complete supplied rewrite applied, including all nine project steps and closing resources.",
-  "approvedAt": "2026-11-10"
+  "approvedAt": "2026-11-10",
+  "deployment": {
+    "guide": "verification-and-validation-engineer",
+    "deployedAt": "2026-11-10T16:15:18Z",
+    "commit": "a3cf085ab90ea9c0b4b945b7c8a32b64c4cffe2a",
+    "previousCommit": "ef95ec0e73b5bd487edeaade54f9cfefe38f0bdd",
+    "url": "https://www.blackscarab.ai/career-paths/platforms-simulation/verification-and-validation-engineer",
+    "deploymentUrl": "https://black-scarab-site-1cvh5nhnv-rodolfo-garcias-projects.vercel.app",
+    "vercelStatusUrl": "https://vercel.com/rodolfo-garcias-projects/black-scarab-site/ABMsXagaDRVAActDLebGfW7cyt6H",
+    "githubDeploymentId": 7687492058,
+    "status": "success",
+    "verified": [
+      "Live H1, SEO title, canonical and all images",
+      "Complete eight-section user rewrite and nine-step project",
+      "175000 USD estimate and requirements-to-tests matrix",
+      "Three research downloads, category link and sitemap"
+    ],
+    "validation": {
+      "careerTests": 27,
+      "selectedSourcesAudited": 147,
+      "rawSourcesAudited": 42,
+      "articlePreviews": 176,
+      "typecheck": "passed",
+      "scopedLint": "passed",
+      "nextBuild": "passed",
+      "desktop": "reviewed",
+      "mobile": "reviewed"
+    },
+    "screenshot": "/tmp/black-scarab-vv-live-2026-11-10.png"
+  }
 }

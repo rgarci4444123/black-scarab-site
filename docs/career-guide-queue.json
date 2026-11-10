@@ -71,13 +71,14 @@
     {
       "order": 11,
       "roleId": "verification-validation-engineer",
-      "status": "approved-for-release",
+      "status": "deployed",
       "path": "/career-paths/platforms-simulation/verification-and-validation-engineer"
     },
     {
       "order": 12,
       "roleId": "robot-operations-specialist",
-      "status": "queued"
+      "status": "approved-for-release",
+      "path": "/career-paths/integration-operations/robot-operations-specialist"
     },
     {
       "order": 13,
