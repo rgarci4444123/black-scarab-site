@@ -1,0 +1,75 @@
+{
+  "status": "approved-for-release",
+  "reviewedAt": "2026-11-09",
+  "guidePath": "/career-paths/integration-operations/industrial-automation-engineer",
+  "url": "http://127.0.0.1:3045/career-paths/integration-operations/industrial-automation-engineer#automation-cell-sequence",
+  "publication": "User approved publication November 10, 2026.",
+  "precedingRelease": {
+    "guide": "machine-learning-infrastructure-engineer",
+    "commit": "eef14e10f8dc29302e2642887291825a87a79189",
+    "status": "deployed and verified"
+  },
+  "sectionCount": 8,
+  "research": {
+    "selectedFullSources": 10,
+    "additionalBoundaryFullSourceReviews": 3,
+    "originalCohort": 10,
+    "originalEmployers": 6,
+    "salaryCandidates": 12,
+    "salaryObservations": 2,
+    "salaryEmployers": 2,
+    "exactMedian": 158500,
+    "estimate": 159000,
+    "scope": "Factory equipment/robot-cell PLC controls; broad title and PLC keyword discovery does not determine admission."
+  },
+  "artwork": {
+    "asset": "public/career-paths/industrial-automation-engineer-lab.webp",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "bytes": 351702,
+    "tool": "built-in image_gen",
+    "record": "research/career-guides/industrial-automation-engineer/artwork-2026-11-09.json"
+  },
+  "inArticleVisual": {
+    "type": "server-rendered state sequence",
+    "id": "automation-cell-sequence",
+    "normalPath": [
+      "Idle",
+      "Ready",
+      "Running",
+      "Complete"
+    ],
+    "fault": "Completion timeout during Running",
+    "recovery": "Cause cleared plus separate reset returns to Idle; readiness and a new start are still required.",
+    "design": "Connected HTML state cards with SVG arrows, slate/teal/coral state backgrounds, Complete-to-Ready return loop and Fault-to-Idle recovery. Vertical layout at 820px and below."
+  },
+  "validation": {
+    "careerTests": 24,
+    "selectedSourceRecordsAudited": 114,
+    "rawSourcesAudited": 40,
+    "typecheck": "passed",
+    "scopedLint": "passed",
+    "nextBuild": "passed",
+    "existingArticlePreviews": 175,
+    "desktop": "Rewritten opening, full eight sections, visual placement and portfolio reviewed at 1587 CSS pixels.",
+    "mobile": "Rewritten guide reviewed at 360 and 288 CSS pixels. All eight tables and the existing state sequence fit without horizontal overflow.",
+    "metadata": "Unique H1, SEO title, description, canonical and Article schema. November 10 first-publication and editorial review dates assigned on approval.",
+    "sourceDetails": "Source and methodology remain collapsed; salary derivation and boundary exclusions downloadable.",
+    "copy": "Complete supplied revision applied; source-supported annual salary labels and existing full methodology retained.",
+    "visual": "Desktop, tablet and mobile inspected; geometry checked down to 288 CSS pixels. State connections and all surrounding article content compared to the pre-change version."
+  },
+  "screenshots": {
+    "opening": "/tmp/black-scarab-industrial-automation-revised-preview.png",
+    "sequence": "/tmp/black-scarab-industrial-automation-sequence.png",
+    "mobileOpening": "/tmp/black-scarab-industrial-automation-mobile-opening.png",
+    "mobileSequence": "/tmp/black-scarab-industrial-state-machine-mobile.png",
+    "mobilePortfolio": "/tmp/black-scarab-industrial-automation-revised-mobile.png",
+    "tabletSequence": "/tmp/black-scarab-industrial-state-machine-tablet.png",
+    "redesignedDesktopSequence": "/tmp/black-scarab-industrial-state-machine-desktop.png"
+  },
+  "editorialRevision": "research/career-guides/industrial-automation-engineer/editorial-revision-2026-11-09.json",
+  "visualRevision": "research/career-guides/industrial-automation-engineer/visual-revision-2026-11-09.json",
+  "approvedAt": "2026-11-10"
+}

@@ -106,6 +106,21 @@
         "ML infrastructure career path"
       ],
       "rationale": "Use the recognized infrastructure profession and clarify the robotics application in metadata and the deck. Cover reliable training, evaluation, performance and model delivery while distinguishing model research, robot-data supply, generic API products and onboard middleware."
+    },
+    {
+      "occupationId": "industrial-automation-engineer",
+      "h1": "How to Become an Industrial Automation Engineer in Robotics",
+      "seoTitle": "Industrial Automation Engineer: Salary, Skills & Robotics Guide",
+      "description": "Explore industrial automation careers in robotics: PLC programming, HMI and SCADA, commissioning, salary research and a simulated-workcell portfolio project.",
+      "path": "/career-paths/integration-operations/industrial-automation-engineer",
+      "primaryQuery": "industrial automation engineer robotics",
+      "supportingTopics": [
+        "industrial automation engineer salary",
+        "PLC programming robotics careers",
+        "automation engineer vs robotics controls",
+        "industrial automation portfolio"
+      ],
+      "rationale": "Use the recognized automation profession with robotics context. Focus on coordinating industrial equipment, PLC sequences, operator interfaces and commissioning; distinguish robot motion algorithms and general system integration."
     }
   ]
 }

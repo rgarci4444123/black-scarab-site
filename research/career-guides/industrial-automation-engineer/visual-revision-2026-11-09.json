@@ -1,0 +1,64 @@
+{
+  "revisedAt": "2026-11-09",
+  "sourcePath": "/Users/rodolfogarcia/.codex/attachments/17a7a342-023e-42cc-9ef2-4b90a0754b08/Pasted text.txt",
+  "sourceSha256": "411b1a4ccb380e7eef0666f51e647ac8685e0256f6d4514c4c65171e986ece95",
+  "status": "implemented-local-review",
+  "component": "CareerStateSequence in components/career-guide-elements.tsx",
+  "scope": "Existing state-machine visualization only; surrounding guide content preserved.",
+  "design": {
+    "cards": "Rounded HTML cards with equal primary dimensions",
+    "palette": {
+      "idle": "#E8EFF5",
+      "normal": "#D8F1EC",
+      "fault": "#F8DEDA"
+    },
+    "connectors": "SVG paths with proper arrowheads, neutral gray, no animation",
+    "desktop": "Four horizontal normal states, Fault directly below Running, Complete-to-Ready loop above, Fault-to-Idle recovery below.",
+    "narrow": "Vertical normal states with a distinct right-side timeout branch and two separate left-side return paths. Responsive change at 820px avoids crowded transition labels.",
+    "typography": "Existing site family; title 22px, states 18px desktop/17px narrow, descriptions 13px, transitions 12px, note 12px.",
+    "accessibility": "Selectable HTML labels and descriptions. SVG connectors decorative; state-to-state transition names exposed as screen-reader text. Hidden alternate layout excluded from accessibility tree by display:none."
+  },
+  "preservedTransitions": [
+    [
+      "idle",
+      "ready"
+    ],
+    [
+      "ready",
+      "running"
+    ],
+    [
+      "running",
+      "complete"
+    ],
+    [
+      "complete",
+      "ready"
+    ],
+    [
+      "running",
+      "fault"
+    ],
+    [
+      "fault",
+      "idle"
+    ]
+  ],
+  "behavior": "Fault recovery returns to Idle. Ready and a new start request are still required before Running.",
+  "explanation": "Exact supplied explanation and technical note below the diagram.",
+  "validation": {
+    "careerTests": 24,
+    "typecheck": "passed",
+    "scopedLint": "passed",
+    "surroundingContentComparison": "passed",
+    "stateTopologyComparison": "passed",
+    "nextBuild": "passed",
+    "articlePreviews": 175,
+    "visualReview": "Passed desktop (1587 CSS px), tablet (767 px) and narrow mobile (288 px). No card overflow, label/card collisions or page scrolling horizontally."
+  },
+  "screenshots": {
+    "mobile": "/tmp/black-scarab-industrial-state-machine-mobile.png",
+    "tablet": "/tmp/black-scarab-industrial-state-machine-tablet.png",
+    "redesignedDesktopSequence": "/tmp/black-scarab-industrial-state-machine-desktop.png"
+  }
+}

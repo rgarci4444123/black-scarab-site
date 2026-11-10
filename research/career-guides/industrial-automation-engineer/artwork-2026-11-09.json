@@ -1,0 +1,87 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-a8258ad9-bb93-4fc5-a1fb-3abe933e7dac.png",
+  "asset": "public/career-paths/industrial-automation-engineer-lab.webp",
+  "prompt": "Use case: illustration-story. Asset type: Black Scarab Industrial Automation Engineer career guide hero, wide 16:9 landscape. Story thesis: automation engineering turns separate machines into one coordinated production sequence. Visual thesis: a complex factory becomes an intelligible choreography. Create an original premium editorial image seen from a near-vertical overhead camera above a futuristic production hall: an intricate, asymmetric serpentine conveyor of brushed silver links several full-size robotic assembly and inspection stations across a pale gray industrial floor. Precise graphite robot arms reach toward identical metal workpieces in disciplined successive stages; dark machine frames and the physical conveyor route create a striking graphic rhythm. A few vivid electric-cyan workpiece carriers and narrow cyan equipment panels provide 10–20 percent of the image's color; the remaining 80–90 percent is genuine white, charcoal, silver and gray. Strong clean directional daylight casts crisp architectural shadows. Sophisticated cinematic realism with tactile metal, bolted fixtures and believable equipment. The viewer should want to follow the sequence through the image. One dominant curving route, off-center composition, visually clear at thumbnail size. Full environment, expansive real-scale manufacturing choreography, no isolated product, catalog layout, miniature diorama or ecommerce packshot. No people, no text, letters, numbers, logos, labels, dashboards, floating interfaces, holograms, glowing network lines, or watermark. No orange lighting or dark server-room atmosphere. Conceptual editorial illustration, not an actual factory or branded installation.",
+  "brief": {
+    "storyThesis": "Separate machines become one coordinated production sequence.",
+    "visualThesis": "Factory choreography, seen as a physical route.",
+    "medium": "cinematic realism",
+    "scale": "full production line",
+    "viewpoint": "near-vertical overhead",
+    "composition": "asymmetric serpentine route",
+    "palette": "80–90% neutral with cyan carriers and panels",
+    "lighting": "hard daylight and architectural shadows",
+    "surface": "metal and concrete",
+    "crop": "route and machinery remain legible in wide and centered card crops"
+  },
+  "recentFingerprints": [
+    {
+      "guide": "ML Infrastructure",
+      "medium": "cinematic realism",
+      "composition": "diagonal monumental atrium",
+      "subject": "compute architecture and small engineer",
+      "viewpoint": "low behind person",
+      "palette": "charcoal/amber",
+      "light": "hazy backlight",
+      "surface": "graphite metal",
+      "metaphor": "computing scale"
+    },
+    {
+      "guide": "Robotics Controls",
+      "medium": "technical realism",
+      "composition": "diagonal close whole robot",
+      "subject": "quadruped on tilt platform",
+      "viewpoint": "eye-level",
+      "palette": "gray/violet",
+      "light": "soft lab",
+      "surface": "brushed metal",
+      "metaphor": "balance"
+    },
+    {
+      "guide": "Embedded Software",
+      "medium": "technical realism",
+      "composition": "macro diagonal",
+      "subject": "open arm circuit board",
+      "viewpoint": "close oblique",
+      "palette": "white/gray/lime",
+      "light": "soft",
+      "surface": "metal/circuit board",
+      "metaphor": "software inside hardware"
+    },
+    {
+      "guide": "Field Service",
+      "medium": "cinematic realism",
+      "composition": "close human repair scene",
+      "subject": "technician and mobile robot",
+      "viewpoint": "low",
+      "palette": "charcoal/amber",
+      "light": "warehouse practical",
+      "surface": "weathered metal",
+      "metaphor": "repair"
+    },
+    {
+      "guide": "Robotics Data",
+      "medium": "diagrammatic technical render",
+      "composition": "central chamber and floating panels",
+      "subject": "robot recording workflow",
+      "viewpoint": "eye-level",
+      "palette": "gray/cyan",
+      "light": "dark chamber",
+      "surface": "glass and metal",
+      "metaphor": "record to dataset"
+    },
+    {
+      "guide": "Perception",
+      "medium": "realistic editorial",
+      "composition": "person at monitor and robot",
+      "subject": "desk-level analysis",
+      "viewpoint": "over shoulder",
+      "palette": "daylight full color",
+      "light": "soft daylight",
+      "surface": "office materials",
+      "metaphor": "understanding sensor input"
+    }
+  ],
+  "differentiation": "Overhead viewpoint, full-line scale and serpentine choreography distinguish this from the six recent covers; bright industrial daylight replaces the previous compute-atrium darkness."
+}

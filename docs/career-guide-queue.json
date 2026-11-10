@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-10",
   "workflow": [
     "research",
     "editorial draft",
@@ -47,13 +47,14 @@
     {
       "order": 7,
       "roleId": "machine-learning-infrastructure-engineer",
-      "status": "approved-for-release",
+      "status": "deployed",
       "path": "/career-paths/platforms-simulation/machine-learning-infrastructure-engineer"
     },
     {
       "order": 8,
       "roleId": "industrial-automation-engineer",
-      "status": "queued"
+      "status": "approved-for-release",
+      "path": "/career-paths/integration-operations/industrial-automation-engineer"
     },
     {
       "order": 9,

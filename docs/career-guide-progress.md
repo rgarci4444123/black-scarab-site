@@ -1,6 +1,6 @@
 # Career guide progress
 
-Updated November 9, 2026. Eleven of twenty approved for publication. Machine Learning Infrastructure Engineer is approved for release; nine guides remain.
+Updated November 10, 2026. Twelve of twenty approved for publication. Industrial Automation Engineer is approved for release; eight guides remain.
 
 - ~~Mechanical Engineer~~
 - ~~Robot Learning Engineer~~
@@ -13,7 +13,7 @@ Updated November 9, 2026. Eleven of twenty approved for publication. Machine Lea
 - ~~Embedded Software Engineer~~
 - ~~Robotics Controls Engineer~~
 - ~~Machine Learning Infrastructure Engineer~~
-- Industrial Automation Engineer
+- ~~Industrial Automation Engineer~~
 - Manufacturing Engineer
 - Motion Planning Engineer
 - Verification & Validation Engineer

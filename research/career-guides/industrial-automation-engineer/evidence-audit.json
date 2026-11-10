@@ -1,0 +1,575 @@
+{
+  "reviewedAt": "2026-11-09",
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "scope": "PLC/HMI/SCADA, machine sequencing, industrial communication, commissioning and maintainable equipment control. Distinguish robot feedback algorithms, general integration, electrical design and test automation.",
+  "cohort": {
+    "postings": 10,
+    "employers": 6
+  },
+  "reviewedRecords": [
+    {
+      "id": "agile-robots:greenhouse:4964865101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Automation Engineer (m/f/d) PLC & Commissioning",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4964865101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "dd50b7b8b2ab25a398b10ea85155a0adfef38aaee4b8797963b35844133b63cc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "PLC development, HMI integration, commissioning and field diagnosis. German source reviewed in context.",
+      "qualification": "Technischer Hintergrund: Studium oder vergleichbare Qualifikation in Maschinenbau, Elektrotechnik, Automatisierungstechnik, Wirtschaftsingenieurwesen oder einem verwandten Bereich.",
+      "qualificationSpans": [
+        {
+          "text": "Technischer Hintergrund: Studium oder vergleichbare Qualifikation in Maschinenbau, Elektrotechnik, Automatisierungstechnik, Wirtschaftsingenieurwesen oder einem verwandten Bereich.",
+          "start": 1328,
+          "end": 1508
+        }
+      ]
+    },
+    {
+      "id": "anduril:greenhouse:5234512007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Controls Engineer, Manufacturing Automation",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5234512007?gh_jid=5234512007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "52b004685b11bdaf2d3ad81c304e0d5c444673e398e8c5d623759b8dba11b10a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Sustaining manufacturing automation: PLC debugging, operator interfaces, networks and root-cause improvement.",
+      "qualification": "Bachelor's degree in Robotics, Computer Science, Mechanical Engineering,",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in Robotics, Computer Science, Mechanical Engineering,",
+          "start": 2105,
+          "end": 2177
+        }
+      ]
+    },
+    {
+      "id": "anduril:greenhouse:5234563007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Controls Engineer, Manufacturing Automation",
+      "locations": [
+        "Ashville, Ohio, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5234563007?gh_jid=5234563007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "ea69a1471314a97d4dff4296eb720d5afccab234a7bd24d1283a4482b974b080",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Production equipment controls: Siemens ladder/Structured Text, commissioning, drives, SCADA and maintainable code.",
+      "qualification": "Bachelor's degree in Robotics, Computer Science, Mechanical Engineering, or Electrical Engineering",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in Robotics, Computer Science, Mechanical Engineering, or Electrical Engineering",
+          "start": 2087,
+          "end": 2185
+        }
+      ]
+    },
+    {
+      "id": "intrinsic:greenhouse:6223613004",
+      "employerId": "intrinsic",
+      "employer": "Intrinsic",
+      "title": "Senior Automation and Controls Engineer",
+      "locations": [
+        "Mountain View, California",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/intrinsicrobotics/jobs/6223613004?gh_jid=6223613004",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "269691b254a758d89e5160c6bf78ac5844a7608a4ca62ac20b3d122e4bebe8ad",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/intrinsic.json",
+      "rawSourceFileSha256": "562f8ce8af76ed64d64bb6bd12d233a8032a77cc73df4b4e20da9d8f271b8f2e",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "End-to-end robotic workcells, component selection, electrical design, robot/PLC/HMI programming and acceptance.",
+      "qualification": "Degree in Controls / Mechatronics Engineering, Electrical Engineering, Mechanical Engineering or a related field.",
+      "qualificationSpans": [
+        {
+          "text": "Degree in Controls / Mechatronics Engineering, Electrical Engineering, Mechanical Engineering or a related field.",
+          "start": 2085,
+          "end": 2198
+        }
+      ]
+    },
+    {
+      "id": "nomagic:lever:13cdf1ca-7e42-44b2-92dd-0f13598eeeaf",
+      "employerId": "nomagic",
+      "employer": "Nomagic",
+      "title": "Senior Automation Engineer",
+      "locations": [
+        "Warsaw, Poland"
+      ],
+      "countries": [
+        "Poland"
+      ],
+      "url": "https://jobs.lever.co/Nomagic/13cdf1ca-7e42-44b2-92dd-0f13598eeeaf",
+      "verifiedAt": "2026-11-02T17:47:00+00:00",
+      "sourceTextSha256": "ff8ac1c7bb942a0bd80b2c94d3b02ff8c612f582144d81dd8728199ab4b96d4c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nomagic.json",
+      "rawSourceFileSha256": "b5dab37dcacf8335b208c40f7aece0c039979a087aa410e96f617dce5b8bf358",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robotized production-line integration, PLC code, schematics, commissioning and cross-discipline collaboration.",
+      "qualification": "Engineering degree (Automation, Robotics or Electronics preferably)",
+      "qualificationSpans": [
+        {
+          "text": "Engineering degree (Automation, Robotics or Electronics preferably)",
+          "start": 3403,
+          "end": 3470
+        }
+      ]
+    },
+    {
+      "id": "osaro:lever:c2137e2f-3e01-4eb4-b635-0c97fddc8c57",
+      "employerId": "osaro",
+      "employer": "OSARO",
+      "title": "Controls Engineer, PLC Programming",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/osaro/c2137e2f-3e01-4eb4-b635-0c97fddc8c57",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "cefa453484f825888321febcf6510aebfb154df4d57fb342ceef71a12e01edf9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/osaro.json",
+      "rawSourceFileSha256": "27c97473a1c27531e82bca09fbb4dbaf306483a42ae42c50429a750b4929ab92",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "PLC and HMI programming for AI robotic material-handling cells; integration and commissioning.",
+      "qualification": "3+ years of professional experience in PLC programming and industrial automation.",
+      "qualificationSpans": [
+        {
+          "text": "3+ years of professional experience in PLC programming and industrial automation.",
+          "start": 2053,
+          "end": 2134
+        }
+      ]
+    },
+    {
+      "id": "saronic:ashby:9c3baa1f-ae9f-44b0-a74a-31440fa556a2",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Manufacturing Automation Engineer",
+      "locations": [
+        "Austin, TX",
+        "Brownsville, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/9c3baa1f-ae9f-44b0-a74a-31440fa556a2",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "3acc96718b77a4cc056132b8537864e19535706636bcf51230ae0f5a831d4d1c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Manufacturing automation equipment projects, vendor specifications, acceptance tests and production handoff.",
+      "qualification": "Bachelor's degree in Mechanical Engineering, Manufacturing Engineering, Electrical Engineering, Mechatronics, Robotics, or related field.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in Mechanical Engineering, Manufacturing Engineering, Electrical Engineering, Mechatronics, Robotics, or related field.",
+          "start": 4538,
+          "end": 4675
+        }
+      ]
+    },
+    {
+      "id": "saronic:ashby:a62ce18c-8048-4a80-b368-96f7e4585a9c",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Controls System Engineer",
+      "locations": [
+        "Franklin, LA",
+        "New Orleans, LA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/a62ce18c-8048-4a80-b368-96f7e4585a9c",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "31cc2ba15d1d198d759417742d199b656f3e79070de619072f745405e6d653bb",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Industrial PLC/DCS/SCADA, I/O documentation, cause/effect matrices and commissioning; broad process-control scope.",
+      "qualification": "Bachelor's degree in Electrical Engineering, Controls Engineering, Mechanical Engineering, or a related field",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in Electrical Engineering, Controls Engineering, Mechanical Engineering, or a related field",
+          "start": 1636,
+          "end": 1745
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:b36773da-5e82-4d16-b926-186ba78fafa3",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Senior Automation Controls Engineer",
+      "locations": [
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/b36773da-5e82-4d16-b926-186ba78fafa3",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "c74f8feacb3b8e5e389512e6e6257869e65b77d0a9af2df189171890df740153",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Drone manufacturing equipment: PLCs, HMI/SCADA, robotic assembly, production troubleshooting and data collection. Original primary classifier assigned robot controls; contextual review assigns factory automation for this guide.",
+      "qualification": "Bachelor’s degree in Electrical Engineering, Mechatronics, Controls Engineering, or related field",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s degree in Electrical Engineering, Mechatronics, Controls Engineering, or related field",
+          "start": 1659,
+          "end": 1756
+        }
+      ]
+    },
+    {
+      "id": "formic:greenhouse:4670196006",
+      "employerId": "formic",
+      "employer": "Formic",
+      "title": "Controls & Automation Engineer",
+      "locations": [
+        "Chicago || Bolingbrook, IL"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/formic/jobs/4670196006",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "015e8f0d8c411797bf262e9ac34ec81eaf7193bb7f5fb14243d293e566d492d1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/formic.json",
+      "rawSourceFileSha256": "65e248fa4c2c4131e404bd620ba3caaca4baf177ba3c8302e27fe848266d4e1f",
+      "reviewedAt": "2026-11-09",
+      "reviewMethod": "Full stored-source contextual review; original archive and classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Experienced fleet-level controls/automation problem solving, PLC/robot programming, reliability and documentation.",
+      "qualification": "Bachelor's degree in electrical engineering, mechanical engineering, controls engineering, mechatronics, robotics engineering, or another directly related engineering discipline",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in electrical engineering, mechanical engineering, controls engineering, mechatronics, robotics engineering, or another directly related engineering discipline",
+          "start": 4550,
+          "end": 4727
+        }
+      ]
+    }
+  ],
+  "salaryExclusions": [
+    {
+      "id": "agile-robots:greenhouse:4964865101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Automation Engineer (m/f/d) PLC & Commissioning",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4964865101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "dd50b7b8b2ab25a398b10ea85155a0adfef38aaee4b8797963b35844133b63cc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "anduril:greenhouse:5234512007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Controls Engineer, Manufacturing Automation",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5234512007?gh_jid=5234512007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "52b004685b11bdaf2d3ad81c304e0d5c444673e398e8c5d623759b8dba11b10a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified. Stored Greenhouse content and metadata checked where present; currency ranges or the word salary alone do not establish annual frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5234563007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Controls Engineer, Manufacturing Automation",
+      "locations": [
+        "Ashville, Ohio, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5234563007?gh_jid=5234563007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "ea69a1471314a97d4dff4296eb720d5afccab234a7bd24d1283a4482b974b080",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified. Stored Greenhouse content and metadata checked where present; currency ranges or the word salary alone do not establish annual frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5234578007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Staff Controls Engineer, Rocket Motor Systems",
+      "locations": [
+        "McHenry, Mississippi, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5234578007?gh_jid=5234578007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "2e632b2b5377a702ba2fd16c585e46fbefc67917ce318a71b026518e8f2d72b4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified. Stored Greenhouse content and metadata checked where present; currency ranges or the word salary alone do not establish annual frequency."
+    },
+    {
+      "id": "anduril:greenhouse:5234655007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Staff Robotics Engineer, Manufacturing Automation",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5234655007?gh_jid=5234655007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "aabc7d57157de8139c5491dee094016ee7701144dca28e43bef9bb468470bf9e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "No complete annual USD range verified. Stored Greenhouse content and metadata checked where present; currency ranges or the word salary alone do not establish annual frequency."
+    },
+    {
+      "id": "intrinsic:greenhouse:6223613004",
+      "employerId": "intrinsic",
+      "employer": "Intrinsic",
+      "title": "Senior Automation and Controls Engineer",
+      "locations": [
+        "Mountain View, California",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/intrinsicrobotics/jobs/6223613004?gh_jid=6223613004",
+      "verifiedAt": "2026-11-02T17:46:59+00:00",
+      "sourceTextSha256": "269691b254a758d89e5160c6bf78ac5844a7608a4ca62ac20b3d122e4bebe8ad",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/intrinsic.json",
+      "rawSourceFileSha256": "562f8ce8af76ed64d64bb6bd12d233a8032a77cc73df4b4e20da9d8f271b8f2e",
+      "reason": "No complete annual USD range verified. Stored Greenhouse content and metadata checked where present; currency ranges or the word salary alone do not establish annual frequency."
+    },
+    {
+      "id": "nomagic:lever:13cdf1ca-7e42-44b2-92dd-0f13598eeeaf",
+      "employerId": "nomagic",
+      "employer": "Nomagic",
+      "title": "Senior Automation Engineer",
+      "locations": [
+        "Warsaw, Poland"
+      ],
+      "countries": [
+        "Poland"
+      ],
+      "url": "https://jobs.lever.co/Nomagic/13cdf1ca-7e42-44b2-92dd-0f13598eeeaf",
+      "verifiedAt": "2026-11-02T17:47:00+00:00",
+      "sourceTextSha256": "ff8ac1c7bb942a0bd80b2c94d3b02ff8c612f582144d81dd8728199ab4b96d4c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nomagic.json",
+      "rawSourceFileSha256": "b5dab37dcacf8335b208c40f7aece0c039979a087aa410e96f617dce5b8bf358",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "saronic:ashby:9c3baa1f-ae9f-44b0-a74a-31440fa556a2",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Manufacturing Automation Engineer",
+      "locations": [
+        "Austin, TX",
+        "Brownsville, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/9c3baa1f-ae9f-44b0-a74a-31440fa556a2",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "3acc96718b77a4cc056132b8537864e19535706636bcf51230ae0f5a831d4d1c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete annual USD range verified. Stored Greenhouse content and metadata checked where present; currency ranges or the word salary alone do not establish annual frequency."
+    },
+    {
+      "id": "saronic:ashby:a62ce18c-8048-4a80-b368-96f7e4585a9c",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Controls System Engineer",
+      "locations": [
+        "Franklin, LA",
+        "New Orleans, LA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/a62ce18c-8048-4a80-b368-96f7e4585a9c",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "31cc2ba15d1d198d759417742d199b656f3e79070de619072f745405e6d653bb",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "No complete annual USD range verified. Stored Greenhouse content and metadata checked where present; currency ranges or the word salary alone do not establish annual frequency."
+    },
+    {
+      "id": "formic:greenhouse:4670196006",
+      "employerId": "formic",
+      "employer": "Formic",
+      "title": "Controls & Automation Engineer",
+      "locations": [
+        "Chicago || Bolingbrook, IL"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/formic/jobs/4670196006",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "015e8f0d8c411797bf262e9ac34ec81eaf7193bb7f5fb14243d293e566d492d1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/formic.json",
+      "rawSourceFileSha256": "65e248fa4c2c4131e404bd620ba3caaca4baf177ba3c8302e27fe848266d4e1f",
+      "reason": "No complete annual USD range verified. Stored Greenhouse content and metadata checked where present; currency ranges or the word salary alone do not establish annual frequency."
+    }
+  ],
+  "adjacentSalarySignalScreen": {
+    "method": "Search all 1029 archived records for PLC or PLCs, exclusively U.S. geography, and structured salary or explicit annual salary wording. This is candidate discovery, not contextual admission.",
+    "recordIds": [
+      "dexterity:lever:ab404c3f-a336-4a6c-b31b-07d048feb3dc",
+      "figure:greenhouse:4573670006",
+      "formic:greenhouse:4702865006",
+      "formic:greenhouse:4704251006",
+      "formic:greenhouse:4709056006",
+      "osaro:lever:ab8362cf-9932-4018-a8d4-3659fc188d4e",
+      "osaro:lever:c2137e2f-3e01-4eb4-b635-0c97fddc8c57",
+      "shield-ai:lever:9208872f-9af8-4a63-8afc-0d7a5e7dbca0",
+      "shield-ai:lever:cda131b5-3cfb-4d59-8d4b-bfd2f8c9661d",
+      "shield-ai:lever:d07a1f9b-76eb-44ce-b0ef-5e478fd12f02",
+      "shield-ai:lever:dbeedcfb-0420-4216-8529-9b02d43e29f4",
+      "shield-ai:lever:e53fdc42-177f-4413-8464-0bafb1cc81a9",
+      "skydio:ashby:b36773da-5e82-4d16-b926-186ba78fafa3",
+      "standard-bots:ashby:0f10edc9-c87b-4c9e-b0ab-f6cc5be6af91",
+      "standard-bots:ashby:f5fe4e60-21c4-4de7-8f21-e8cae48e7d63",
+      "zipline:greenhouse:7807663003"
+    ]
+  },
+  "additionalFullSourceBoundaryReviews": [
+    {
+      "id": "osaro:lever:ab8362cf-9932-4018-a8d4-3659fc188d4e",
+      "employerId": "osaro",
+      "employer": "OSARO",
+      "title": "Deployment Engineer",
+      "locations": [
+        "San Francisco or Remote"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/osaro/ab8362cf-9932-4018-a8d4-3659fc188d4e",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "8fc2ee01d05c699910b7aa0bf211b8fa264020872d3c45a23cd61fd00fd5143e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/osaro.json",
+      "rawSourceFileSha256": "27c97473a1c27531e82bca09fbb4dbaf306483a42ae42c50429a750b4929ab92",
+      "decision": "Exclude from automation salary: primary customer deployment, commissioning, project coordination and ongoing support; PLC programming is bonus exposure, not ownership of PLC sequence development."
+    },
+    {
+      "id": "standard-bots:ashby:0f10edc9-c87b-4c9e-b0ab-f6cc5be6af91",
+      "employerId": "standard-bots",
+      "employer": "Standard Bots",
+      "title": "Senior Applications Engineer (West Coast)",
+      "locations": [
+        "US-West Coast (remote)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/standardbots/0f10edc9-c87b-4c9e-b0ab-f6cc5be6af91",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "c780832670315df2f71dc88ef19c56ae89c94a3fab675c309f75828f683e06df",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "decision": "Exclude from automation salary: broad customer-facing applications/integration role spanning proof of concept, fixtures, wiring, installation, sales demonstrations and training. PLC is one skill within broader solution delivery."
+    },
+    {
+      "id": "standard-bots:ashby:f5fe4e60-21c4-4de7-8f21-e8cae48e7d63",
+      "employerId": "standard-bots",
+      "employer": "Standard Bots",
+      "title": "Senior Electrical Engineer — Safety & Systems Integration (On-site)",
+      "locations": [
+        "Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/standardbots/f5fe4e60-21c4-4de7-8f21-e8cae48e7d63",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "815a8dd090caf0443d4ba64d8365cf1f9aac748b093e24bfb539d4c35614c743",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/standard-bots.json",
+      "rawSourceFileSha256": "b39bc927e1f80607a61dabfcc86ad05559f30671890208c23f3c3942fd806aa1",
+      "decision": "Exclude from automation salary: robot PCBA/electrical architecture and safety-subsystem design rather than factory-equipment PLC logic."
+    }
+  ],
+  "technicalSources": [
+    "https://www.codesys.com/",
+    "https://www.plcopen.org/",
+    "https://infosys.beckhoff.com/content/1033/tc3_plc_intro/7647315979.html",
+    "https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_testing_in_simulation_mode.html",
+    "https://www.docs.inductiveautomation.com/docs/8.3/getting-started/introducing-ignition",
+    "https://www.osha.gov/otm/section-4-safety-hazards/chapter-4"
+  ],
+  "editorialExample": "Illustrative software-only sequence. Idle -> Ready -> Running -> Complete -> Ready. Missing completion signal -> Fault. Clearing the cause plus a separate reset returns Fault -> Idle; a fresh start request and readiness checks are required before Running. Not a functional-safety architecture or a commissioning procedure. Safety functions require separate application-specific design and validation."
+}

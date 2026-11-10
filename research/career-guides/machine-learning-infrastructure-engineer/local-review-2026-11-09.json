@@ -1,9 +1,9 @@
 {
-  "status": "approved-for-release",
+  "status": "deployed",
   "reviewedAt": "2026-11-09",
   "guidePath": "/career-paths/platforms-simulation/machine-learning-infrastructure-engineer",
   "url": "http://127.0.0.1:3040/career-paths/platforms-simulation/machine-learning-infrastructure-engineer",
-  "publication": "User approved publication on November 9, 2026.",
+  "publication": "User approved publication November 9, 2026. Production deployed and verified.",
   "precedingRelease": {
     "guide": "robotics-controls-engineer",
     "commit": "19b73778eb5baa5576b3cdc76e5a658fa28a15e7",
@@ -24,7 +24,7 @@
     "asset": "public/career-paths/ml-infrastructure-engineer-lab-v2.webp",
     "source": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-ba4f581e-667c-4b0d-8d4f-b547564238d5.png",
     "tool": "built-in image_gen",
-    "prompt": "Use case: illustration-story. Asset: Black Scarab career guide editorial hero, cinematic wide 16:9 landscape. Visual thesis: one engineer makes a vast computational effort serve intelligent robots. Create a striking, sophisticated near-future cinematic editorial scene with dramatic architectural scale and emotional curiosity. Camera very low and wide behind a small anonymous engineer seen from the back, standing on an elevated narrow bridge in the lower-left foreground. The person wears understated dark technical clothing, face and gender not identifiable, no screen in front of them. Ahead and below, immense graphite compute columns rise through a deep cathedral-like atrium in layered perspective, with convincing hardware detail mostly lost in elegant shadow, a monumental sense of depth and height. A single disciplined amber-lit service and data spine leads the eye through the space toward a distant glass robotics test bay, where a few pale articulated robots are just visible working with objects. The human is small relative to the architecture; the primary subject is the scale of the training systems and the connection to physical machines. Off-center composition, strong diagonal leading lines, atmospheric silver backlight, subtle reflections and a little haze, rich chiaroscuro with readable detail. Professional engineering publication quality, cinematic realism and imaginative editorial interpretation, not a stock server-room photograph. Palette about 80–90 percent true charcoal, black, silver, white and gray; 10–20 percent deliberate vivid amber light and small amber hardware accents, no overall orange wash. Clear at thumbnail size, one dominant visual idea. No text, numbers, labels, logos, screens with dashboards, diagrams, floating UI panels, holographic network graphs or watermark. Do not create an isolated product, tabletop miniature, isometric cutaway, ecommerce packshot, white seamless backdrop or centered rack inventory. Entirely original conceptual editorial illustration, not an official facility or product photograph.",
+    "prompt": "Use case: illustration-story. Asset: Black Scarab career guide editorial hero, cinematic wide 16:9 landscape. Visual thesis: one engineer makes a vast computational effort serve intelligent robots. Create a striking, sophisticated near-future cinematic editorial scene with dramatic architectural scale and emotional curiosity. Camera very low and wide behind a small anonymous engineer seen from the back, standing on an elevated narrow bridge in the lower-left foreground. The person wears understated dark technical clothing, face and gender not identifiable, no screen in front of them. Ahead and below, immense graphite compute columns rise through a deep cathedral-like atrium in layered perspective, with convincing hardware detail mostly lost in elegant shadow, a monumental sense of depth and height. A single disciplined amber-lit service and data spine leads the eye through the space toward a distant glass robotics test bay, where a few pale articulated robots are just visible working with objects. The human is small relative to the architecture; the primary subject is the scale of the training systems and the connection to physical machines. Off-center composition, strong diagonal leading lines, atmospheric silver backlight, subtle reflections and a little haze, rich chiaroscuro with readable detail. Professional engineering publication quality, cinematic realism and imaginative editorial interpretation, not a stock server-room photograph. Palette about 80\u201390 percent true charcoal, black, silver, white and gray; 10\u201320 percent deliberate vivid amber light and small amber hardware accents, no overall orange wash. Clear at thumbnail size, one dominant visual idea. No text, numbers, labels, logos, screens with dashboards, diagrams, floating UI panels, holographic network graphs or watermark. Do not create an isolated product, tabletop miniature, isometric cutaway, ecommerce packshot, white seamless backdrop or centered rack inventory. Entirely original conceptual editorial illustration, not an official facility or product photograph.",
     "dimensions": [
       1672,
       941
@@ -83,7 +83,7 @@
     "asset": "public/career-paths/ml-infrastructure-engineer-lab.webp",
     "source": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-c2871cab-6eb0-4506-86ec-dc49cef08822.png",
     "tool": "built-in image_gen",
-    "prompt": "Use case: stylized-concept. Asset: Black Scarab Machine Learning Infrastructure Engineer career guide hero, wide 16:9. A premium architectural editorial 3D render seen from a high isometric viewpoint: a compact GPU training cluster, three short parallel rows of precise graphite compute cabinets on a luminous matte-white raised floor, with one near cabinet section open to reveal disciplined liquid cooling manifolds and dense compute modules. Roofless architectural cutaway, quiet white negative space around the cluster, subtly futuristic and physically convincing rather than a conventional server-room photograph. Rich black metal, silver fittings and white architecture dominate 80–90 percent of the composition. Deliberate warm amber-orange accents cover about 10–20 percent, concentrated in cooling conduits, cable trunks and a few cabinet panels, not a wash over the whole image. Soft daylight, fine technical material detail, crisp shadows, sophisticated professional publication. No people, no robot, no screens, no holograms, no text, no numbers, no letters, no labels, no branding or watermark. Avoid a dark cavernous chamber and avoid a macro circuit-board composition. This is a conceptual editorial illustration.",
+    "prompt": "Use case: stylized-concept. Asset: Black Scarab Machine Learning Infrastructure Engineer career guide hero, wide 16:9. A premium architectural editorial 3D render seen from a high isometric viewpoint: a compact GPU training cluster, three short parallel rows of precise graphite compute cabinets on a luminous matte-white raised floor, with one near cabinet section open to reveal disciplined liquid cooling manifolds and dense compute modules. Roofless architectural cutaway, quiet white negative space around the cluster, subtly futuristic and physically convincing rather than a conventional server-room photograph. Rich black metal, silver fittings and white architecture dominate 80\u201390 percent of the composition. Deliberate warm amber-orange accents cover about 10\u201320 percent, concentrated in cooling conduits, cable trunks and a few cabinet panels, not a wash over the whole image. Soft daylight, fine technical material detail, crisp shadows, sophisticated professional publication. No people, no robot, no screens, no holograms, no text, no numbers, no letters, no labels, no branding or watermark. Avoid a dark cavernous chamber and avoid a macro circuit-board composition. This is a conceptual editorial illustration.",
     "dimensions": [
       1672,
       941
@@ -96,5 +96,33 @@
     ],
     "status": "Replaced following user feedback: product-style presentation"
   },
-  "editorialRevision": "research/career-guides/machine-learning-infrastructure-engineer/editorial-revision-2026-11-09.json"
+  "editorialRevision": "research/career-guides/machine-learning-infrastructure-engineer/editorial-revision-2026-11-09.json",
+  "deployment": {
+    "guide": "machine-learning-infrastructure-engineer",
+    "deployedAt": "2026-11-09T17:45:58Z",
+    "commit": "eef14e10f8dc29302e2642887291825a87a79189",
+    "previousCommit": "19b73778eb5baa5576b3cdc76e5a658fa28a15e7",
+    "url": "https://www.blackscarab.ai/career-paths/platforms-simulation/machine-learning-infrastructure-engineer",
+    "deploymentUrl": "https://black-scarab-site-gbgywwgxa-rodolfo-garcias-projects.vercel.app",
+    "vercelStatusUrl": "https://vercel.com/rodolfo-garcias-projects/black-scarab-site/4sURwzaCVoY6RSrfDgsvC2hY8Tcp",
+    "githubDeploymentId": 7661958887,
+    "status": "success",
+    "verified": [
+      "Live H1, SEO title, canonical, November 9 Article dates and 253000 USD estimate",
+      "Approved cinematic v2 hero",
+      "User rewrite, eight sections, scaling comparison and research downloads"
+    ],
+    "validation": {
+      "careerTests": 23,
+      "sourceRecordsAudited": 104,
+      "rawSourcesAudited": 36,
+      "articlePreviews": 175,
+      "typecheck": "passed",
+      "scopedLint": "passed",
+      "nextBuild": "passed",
+      "desktop": "reviewed",
+      "mobile": "reviewed"
+    },
+    "screenshot": "/tmp/black-scarab-ml-infrastructure-live.png"
+  }
 }

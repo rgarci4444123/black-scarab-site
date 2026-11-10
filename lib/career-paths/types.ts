@@ -46,6 +46,7 @@ export interface CareerFamily {
 
 // Profession summaries stay separate from publishable, long-form guides.
 export type CareerGuideBlock =
+  | { type: 'state-sequence'; id: string; title: string; states: { id: string; label: string; description: string }[]; transitions: { from: string; to: string; condition: string }[]; fault: { from: string; trigger: string; description: string; recovery: string; returnTo: string }; explanation?: string; note: string }
   | { type: 'paragraph'; text: string }
   | { type: 'heading'; text: string }
   | { type: 'list'; items: string[]; ordered?: boolean }

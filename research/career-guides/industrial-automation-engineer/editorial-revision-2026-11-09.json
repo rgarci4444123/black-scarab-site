@@ -1,0 +1,33 @@
+{
+  "revisedAt": "2026-11-09",
+  "status": "complete-copy-applied",
+  "source": "User-supplied editorial revision",
+  "sourcePath": "/Users/rodolfogarcia/.codex/attachments/b1a53e97-2219-4773-a233-5b455ace3d75/Pasted text.txt",
+  "sourceSha256": "ef927b3d754f0b30f5cec1be8b01f9f7a1503a0e1bb6862e8c50dddeffc2dd94",
+  "headline": "How to Become an Industrial Automation Engineer in Robotics",
+  "sectionCount": 8,
+  "preserved": [
+    "Existing route, SEO title, canonical and hero",
+    "159000 USD compensation estimate, complete derivation and original evidence",
+    "State-sequence graphic and its data",
+    "Complete collapsed research methodology and references",
+    "No first-publication date; local review remains required"
+  ],
+  "presentation": [
+    "Applied supplied deck, overview and full eight-section rewrite.",
+    "Moved existing sequence visual into the robot/PLC completion-signal scenario.",
+    "Expanded seven-step simulated workcell portfolio with machine states, fault tests and recovery.",
+    "Consolidated salary heading, table and note; added three official learning resources."
+  ],
+  "sourceCorrections": [
+    "Use Annual advertised salary instead of base salary because the OSARO structured field does not establish base-pay treatment.",
+    "Replace unsupported general salary-premium claim with a comparison of technical responsibility.",
+    "Describe production readiness separately from validated machine safety.",
+    "Use the existing Beckhoff state-machine documentation deep link instead of the generic framed documentation homepage."
+  ],
+  "addedReferences": [
+    "https://www.codesys.com/",
+    "https://www.plcopen.org/"
+  ],
+  "technicalChecks": "Official CODESYS, Beckhoff and PLCopen resources checked November 9, 2026."
+}

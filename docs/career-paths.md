@@ -193,3 +193,18 @@ Local route: `/career-paths/platforms-simulation/machine-learning-infrastructure
 Twelve stored full employer sources reviewed. Salary derivation uses eight complete annual U.S. ranges across five employers, median midpoint $252,500 rounded to a $253,000 Black Scarab estimate. The methodology records experienced-role scope, employer concentration and exclusions, including an external API product role whose duties differ from its classifier title. No first-publication date; local review required.
 
 User revision, November 9: applied the complete ML Infrastructure rewrite from attachment `b1c2c8d6-d193-47a5-8afc-5da1ec86b571`, including the robotics-specific H1, MLOps comparison, checkpoint scenario and expanded portfolio. Replaced the rejected product-style cutaway with a cinematic compute-hall cover at `public/career-paths/ml-infrastructure-engineer-lab-v2.webp`. Artwork revision record preserves the creative brief, prompt, previous recipe and six-cover review. Salary source basis and numerical scaling values remain unchanged. Local review continues.
+
+
+## ML Infrastructure release and Industrial Automation local review · November 9, 2026
+
+Machine Learning Infrastructure Engineer is deployed in commit `eef14e10f8dc29302e2642887291825a87a79189`. The complete user rewrite, cinematic v2 cover, $253,000 estimate, scaling comparison, research downloads, metadata and publication date are live and verified.
+
+Industrial Automation Engineer is the next local draft at `/career-paths/integration-operations/industrial-automation-engineer`. Eight sections cover PLC sequences, HMI/SCADA, industrial communication, commissioning, qualifications and a simulated-workcell portfolio. Ten stored employer sources support the contextual review. The entire ten-ad primary cohort plus two adjacent factory-controls advertisements were screened; only OSARO and Skydio supply verified annual U.S. salary ranges. Their median midpoint is $158,500, rounded to $159,000; this narrow experienced-role basis is stated in the compensation section and documented fully in methodology. Reproduce with `scripts/build-industrial-automation-guide-research.py --archive-root`.
+
+The new server-rendered sequence visual separates normal operation from a completion-timeout fault and returns recovery to Idle, with readiness checks and a separate new start required. It is a software illustration, not a safety architecture. The overhead production-line hero uses neutral materials with selective cyan carriers and panels, following six-cover review. No publication date; local review required.
+
+
+Industrial Automation user revision, November 9: applied attachment `b1a53e97-2219-4773-a233-5b455ace3d75` in full across eight sections, including three specializations, adjacent-career examples, PLC/HMI/network explanations, education routes, employer applications and the seven-step simulated-workcell project. Preserved the hero, original section fragments, compensation derivation and collapsed methodology. The sequence visual sits within the completion-signal troubleshooting scenario. Added CODESYS and PLCopen references and retained Beckhoff's specific state-machine example. Salary-table labels use verified annual salary rather than asserting base pay for the OSARO structured field. Review remains local.
+
+
+Industrial Automation Engineer approved for push and deployment November 10, 2026, including the complete user rewrite and redesigned connected state-machine graphic. First publication and final editorial review use November 10. Manufacturing Engineer is next for local drafting.

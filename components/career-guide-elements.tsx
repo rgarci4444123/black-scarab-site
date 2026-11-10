@@ -5,6 +5,48 @@ export function CareerOverview({items}:{items:NonNullable<CareerGuideContent['ov
   return <section className="profession-overview" aria-labelledby="career-overview-title"><h2 id="career-overview-title">Career at a glance</h2><dl>{items.map(item=><div key={item.label}><dt>{item.label}</dt><dd><strong>{item.value}</strong>{item.detail?<p>{item.detail}</p>:null}</dd></div>)}</dl></section>;
 }
 
+type StateSequence=Extract<CareerGuideBlock,{type:'state-sequence'}>;
+function StateSequenceDiagram({block,mobile=false}:{block:StateSequence;mobile?:boolean}) {
+  const marker=`${block.id}-${mobile?'mobile':'desktop'}-arrow`;
+  const edges=block.states.slice(0,-1).map((state,index)=>block.transitions.find(edge=>edge.from===state.id&&edge.to===block.states[index+1].id));
+  const loop=block.transitions.find(edge=>edge.from===block.states.at(-1)?.id);
+  const name=(id:string)=>block.states.find(state=>state.id===id)?.label||id;
+  const arrow={markerEnd:`url(#${marker})`};
+  return <div className={`profession-state-map profession-state-map-${mobile?'mobile':'desktop'}`}>
+    <svg className="profession-state-connectors" viewBox={mobile?'0 0 300 696':'0 0 760 350'} preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <defs><marker id={marker} viewBox="0 0 8 8" markerWidth="7" markerHeight="7" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" className="profession-state-arrowhead"/></marker></defs>
+      {mobile?<>
+        {[120,264,408].map(y=><g key={y}><path d={`M150 ${y} V${y+16}`}/><path d={`M150 ${y+40} V${y+56}`} {...arrow}/></g>)}
+        <path d="M54 508 H44 Q36 508 36 500 V430"/>
+        <path d="M36 316 V228 Q36 220 44 220 H54" {...arrow}/>
+        <path d="M246 364 H256 Q264 364 264 372 V644 Q264 652 256 652 H246" {...arrow}/>
+        <path d="M54 652 H14 Q6 652 6 644 V84 Q6 76 14 76 H54" {...arrow}/>
+      </>:<>
+        {[124,336,548].map(x=><path key={x} d={`M${x} 108 H${x+88}`} {...arrow}/>)}
+        <path d="M698 56 V16 Q698 8 690 8 H540"/>
+        <path d="M432 8 H282 Q274 8 274 16 V56" {...arrow}/>
+        <path d="M486 160 V246" {...arrow}/>
+        <path d="M404 298 H74 Q62 298 62 286 V160" {...arrow}/>
+      </>}
+    </svg>
+    <ol className="profession-state-cards">{block.states.map((state,index)=><li key={state.id} className={`profession-state-card profession-state-card-${state.id}`} data-state={state.id} style={mobile?{top:32+index*144}:{left:`${index*212/760*100}%`}}><strong>{state.label}</strong><p>{state.description}</p></li>)}</ol>
+    {edges.map((edge,index)=>edge?<span key={edge.from} className={`profession-state-edge profession-state-edge-${index}`} style={mobile?{top:138+index*144}:{left:`${(168+index*212)/760*100}%`}}><span className="sr-only">{name(edge.from)} to {name(edge.to)}: </span>{edge.condition}</span>:null)}
+    {loop?<span className="profession-state-next"><span className="sr-only">{name(loop.from)} to {name(loop.to)}: </span>{loop.condition}</span>:null}
+    <div className="profession-state-card profession-state-card-fault" data-state="fault"><strong>Fault</strong><p>{block.fault.description}</p></div>
+    <span className="profession-state-timeout"><span className="sr-only">{name(block.fault.from)} to Fault: </span>{block.fault.trigger}</span>
+    <span className="profession-state-reset"><span className="sr-only">Fault to {name(block.fault.returnTo)}: </span>{block.fault.recovery}</span>
+  </div>;
+}
+
+export function CareerStateSequence({block}:{block:StateSequence}) {
+  return <figure id={block.id} className="profession-state-sequence" aria-labelledby={`${block.id}-title`}>
+    <figcaption id={`${block.id}-title`}>{block.title}</figcaption>
+    <StateSequenceDiagram block={block}/><StateSequenceDiagram block={block} mobile/>
+    {block.explanation?<p className="profession-state-explanation">{block.explanation}</p>:null}
+    <p className="profession-research-note">{block.note}</p>
+  </figure>;
+}
+
 type ControlResponse=Extract<CareerGuideBlock,{type:'control-response'}>;
 export function CareerControlResponse({block}:{block:ControlResponse}) {
   const points=(damping:number)=>Array.from({length:301},(_,i)=>{
