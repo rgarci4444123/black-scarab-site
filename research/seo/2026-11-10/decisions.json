@@ -106,6 +106,21 @@
         "ROS 2 platform skills"
       ],
       "rationale": "Keep the native platform occupation and URL. Explain reusable robot software, middleware, runtime/OS services, release tooling and robot-facing infrastructure; distinguish application algorithms, microcontroller firmware and model-training infrastructure. Editorial intent review, no search-volume claim."
+    },
+    {
+      "occupationId": "systems-safety-engineer",
+      "h1": "How to Become a Systems Safety Engineer in Robotics",
+      "seoTitle": "Robotics Systems Safety Engineer: Salary, Skills & Career Guide",
+      "description": "Explore systems safety engineering in robotics: hazard analysis, safety requirements, employer qualifications, salary research and a first safety-case project.",
+      "path": "/career-paths/integration-operations/systems-safety-engineer",
+      "primaryQuery": "robotics systems safety engineer",
+      "supportingTopics": [
+        "robotics functional safety engineer",
+        "systems safety engineer salary",
+        "robot safety engineer skills",
+        "robotics safety case"
+      ],
+      "rationale": "Preserve the native occupation and URL. Cover system/product/functional safety analysis, requirements, architecture and assurance; distinguish primary test execution, workplace safety administration and controls implementation. Editorial intent review, no search-volume claim."
     }
   ]
 }

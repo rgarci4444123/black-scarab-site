@@ -1,6 +1,6 @@
 {
   "reviewedAt": "2026-11-10T18:08:08.725853+00:00",
-  "status": "approved-for-deployment",
+  "status": "deployed",
   "occupationId": "robotics-platform-engineer",
   "researchRoleId": "robotics-platform-engineer",
   "url": "http://127.0.0.1:3066/career-paths/platforms-simulation/robotics-platform-engineer",
@@ -16,7 +16,7 @@
     "scopedEslint": "passed",
     "productionBuild": "passed",
     "articlePreviews": 177,
-    "metadata": "Unique H1, SEO title, canonical and Article schema; no publication date",
+    "metadata": "Unique H1, SEO title, canonical and Article schema; first publication November 10",
     "desktop": "1100x1250 revised opening verified",
     "tablet": "768x1100 article and graphic verified",
     "mobile": "288x1450 message graphic, three-column transition table and salary table verified; no document or table overflow",
@@ -65,5 +65,34 @@
       "path": "research/career-guides/robotics-platform-engineer/editorial-revision-2026-11-10.json",
       "sha256": "bda9ca2ef091a2026b85af88163bf7d23f9fa9e7c750090011bd0901a60af8a1"
     }
-  ]
+  ],
+  "deployment": {
+    "guide": "robotics-platform-engineer",
+    "deployedAt": "2026-11-10T18:12:16Z",
+    "commit": "c84bb037ecedbcf91d2b627f0284392843199a33",
+    "previousCommit": "04c216c5daf0115a2c5614adb7b30fabb92bc356",
+    "url": "https://www.blackscarab.ai/career-paths/platforms-simulation/robotics-platform-engineer",
+    "deploymentUrl": "https://black-scarab-site-i16dx7993-rodolfo-garcias-projects.vercel.app",
+    "vercelStatusUrl": "https://vercel.com/rodolfo-garcias-projects/black-scarab-site/4UxsfwhjZDxRYthp9YY3Nasy6Q4G",
+    "githubDeploymentId": 7690308095,
+    "status": "success",
+    "verified": [
+      "Live H1, SEO title, canonical and November 10 publication/modification dates",
+      "Complete user revision, eight sections, eight tables and eight portfolio steps",
+      "215000 USD estimate, original cover and message-history graphic",
+      "Three research downloads, category link and sitemap"
+    ],
+    "validation": {
+      "careerTests": 33,
+      "selectedSourcesAudited": 192,
+      "rawSourcesAudited": 42,
+      "articlePreviews": 177,
+      "typecheck": "passed",
+      "scopedLint": "passed",
+      "nextBuild": "passed",
+      "desktop": "reviewed",
+      "mobile": "reviewed"
+    },
+    "screenshot": "/tmp/black-scarab-platform-live-2026-11-10.png"
+  }
 }

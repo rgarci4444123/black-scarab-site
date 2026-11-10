@@ -9,9 +9,9 @@ const snapshot=JSON.parse(fs.readFileSync('public/research/physical-ai-careers-2
 const guide=publishedCareerGuides[0];
 
 test('complete guides are navigable, with no draft or empty entries',()=>{
- assert.equal(publishedCareerGuides.length,19);
+ assert.equal(publishedCareerGuides.length,20);
  assert.equal(guidePath(guide),'/career-paths/hardware-manufacturing/mechanical-engineer');
- for(const role of occupations)assert.equal(Boolean(guideForOccupation(role.id)),['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer','field-service-engineer','embedded-software-engineer','robotics-controls-engineer','machine-learning-infrastructure-engineer','industrial-automation-engineer','manufacturing-engineer','motion-planning-engineer','verification-and-validation-engineer','robot-operations-specialist','hardware-test-engineer','localization-and-mapping-engineer','robotics-platform-engineer'].includes(role.id));
+ for(const role of occupations)assert.equal(Boolean(guideForOccupation(role.id)),['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer','field-service-engineer','embedded-software-engineer','robotics-controls-engineer','machine-learning-infrastructure-engineer','industrial-automation-engineer','manufacturing-engineer','motion-planning-engineer','verification-and-validation-engineer','robot-operations-specialist','hardware-test-engineer','localization-and-mapping-engineer','robotics-platform-engineer','systems-safety-engineer'].includes(role.id));
  assert.equal(isPublishedCareerGuide({...guide,status:'draft'}),false);
  assert.equal(isPublishedCareerGuide({...guide,sections:[]}),false);
  assert.equal(isPublishedCareerGuide({...guide,sections:[{id:'empty',heading:'Empty',paragraphs:[]}]}),false);
@@ -23,7 +23,7 @@ test('guide sections, research tables, citations and learning resources are inte
  assert.equal(new Set(['the-role',...allSections.map(section=>section.id)]).size,9);
  const sources=new Set(guide.citations.map(source=>source.id));assert.equal(sources.size,guide.citations.length);
  for(const section of allSections){for(const id of section.sourceIds||[])assert.ok(sources.has(id),id);for(const block of section.blocks||[]){if(block.type==='figure')assert.ok(fs.existsSync('public'+block.src));if(block.type==='table'){for(const row of block.rows)assert.equal(row.length,block.columns.length);}if(block.type==='resources'){for(const item of block.items)assert.ok(guide.citations.some(source=>source.url===item.href));}}}
- const mechanical=snapshot.roles.find(role=>['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer','field-service-engineer','embedded-software-engineer','robotics-controls-engineer','machine-learning-infrastructure-engineer','industrial-automation-engineer','manufacturing-engineer','motion-planning-engineer','verification-and-validation-engineer','robot-operations-specialist','hardware-test-engineer','localization-and-mapping-engineer','robotics-platform-engineer'].includes(role.id));
+ const mechanical=snapshot.roles.find(role=>['mechanical-engineer','robot-learning-engineer','simulation-engineer','systems-integration-engineer','electrical-engineer','perception-engineer','robotics-data-engineer','field-service-engineer','embedded-software-engineer','robotics-controls-engineer','machine-learning-infrastructure-engineer','industrial-automation-engineer','manufacturing-engineer','motion-planning-engineer','verification-and-validation-engineer','robot-operations-specialist','hardware-test-engineer','localization-and-mapping-engineer','robotics-platform-engineer','systems-safety-engineer'].includes(role.id));
  const skills=guide.sections.find(section=>section.id==='skills').blocks.find(block=>block.type==='skill-mentions');
  assert.equal(skills.denominator,mechanical.postingCount);
  assert.deepEqual(skills.rows,mechanical.skills.map(({label,count,required,preferred,contextual})=>({label,count,required,preferred,contextual})));
@@ -61,6 +61,7 @@ test('all guides retain unique metadata, complete sources and explicit snapshot 
   else if(item.occupationId==='robotics-controls-engineer')assert.equal(item.publishedAt,'2026-11-09');
   else if(item.occupationId==='machine-learning-infrastructure-engineer')assert.equal(item.publishedAt,'2026-11-09');
   else if(item.occupationId==='industrial-automation-engineer')assert.equal(item.publishedAt,'2026-11-10');
+  else if(item.occupationId==='systems-safety-engineer')assert.equal(item.publishedAt,'2026-11-10');
   else if(item.occupationId==='robotics-platform-engineer')assert.equal(item.publishedAt,'2026-11-10');
   else if(item.occupationId==='localization-and-mapping-engineer')assert.equal(item.publishedAt,'2026-11-10');
   else if(item.occupationId==='hardware-test-engineer')assert.equal(item.publishedAt,'2026-11-10');
@@ -69,7 +70,7 @@ test('all guides retain unique metadata, complete sources and explicit snapshot 
   else if(item.occupationId==='motion-planning-engineer')assert.equal(item.publishedAt,'2026-11-10');
   else if(item.occupationId==='manufacturing-engineer')assert.equal(item.publishedAt,'2026-11-10');
   else assert.equal(item.publishedAt,'2026-11-03');
-  assert.equal(item.sections.length,['manufacturing-engineer','robot-operations-specialist'].includes(item.occupationId)?9:['perception-engineer','field-service-engineer','embedded-software-engineer','robotics-controls-engineer','machine-learning-infrastructure-engineer','industrial-automation-engineer','motion-planning-engineer','verification-and-validation-engineer','robot-operations-specialist','hardware-test-engineer','localization-and-mapping-engineer','robotics-platform-engineer'].includes(item.occupationId)?8:7);assert.ok(item.introduction.length);assert.ok(item.nextSteps.blocks.length);
+  assert.equal(item.sections.length,['manufacturing-engineer','robot-operations-specialist'].includes(item.occupationId)?9:['perception-engineer','field-service-engineer','embedded-software-engineer','robotics-controls-engineer','machine-learning-infrastructure-engineer','industrial-automation-engineer','motion-planning-engineer','verification-and-validation-engineer','robot-operations-specialist','hardware-test-engineer','localization-and-mapping-engineer','robotics-platform-engineer','systems-safety-engineer'].includes(item.occupationId)?8:7);assert.ok(item.introduction.length);assert.ok(item.nextSteps.blocks.length);
   const ids=new Set(item.citations.map(source=>source.id));assert.equal(ids.size,item.citations.length);
   const sections=[...item.sections,item.nextSteps];assert.equal(new Set(sections.map(section=>section.id)).size,sections.length);
   for(const section of sections){
@@ -103,7 +104,7 @@ test('scope flags prevent contaminated cohorts from becoming frequency charts or
 
 test('assessment guide links cover completed professions without entering the matching engine',()=>{
  const {assessmentGuideLinks}=load('lib/career-paths/guides.ts');
- assert.equal(Object.keys(assessmentGuideLinks).length,19);
+ assert.equal(Object.keys(assessmentGuideLinks).length,20);
  for(const item of publishedCareerGuides)assert.equal(assessmentGuideLinks[item.occupationId],guidePath(item));
  assert.equal(assessmentGuideLinks['electrical-engineer'],'/career-paths/hardware-manufacturing/electrical-engineer');
  assert.equal(assessmentGuideLinks['perception-engineer'],'/career-paths/intelligence-autonomy/perception-engineer');
@@ -469,4 +470,27 @@ test('bounded message histories conserve arrivals and calculate freshness withou
  assert.throws(()=>messageHistorySnapshot(m.arrivalTimes,0,50),/positive integer/);
  const graphic=guideForOccupation('robotics-platform-engineer').sections.flatMap(s=>s.blocks||[]).find(b=>b.type==='message-history');
  assert.deepEqual(graphic.model,m);
+});
+
+test('Systems Safety compensation uses reviewed annual scope and preserves a reproducible median',()=>{
+ const item=guideForOccupation('systems-safety-engineer');
+ const pay=JSON.parse(fs.readFileSync('public/research/systems-safety-engineer-compensation-2026-11-02.json','utf8'));
+ const evidence=JSON.parse(fs.readFileSync('public/research/systems-safety-engineer-evidence-2026-11-10.json','utf8'));
+ assert.equal(guidePath(item),'/career-paths/integration-operations/systems-safety-engineer');assert.equal(item.publishedAt,'2026-11-10');
+ assert.equal(evidence.records.length,11);assert.equal(new Set(evidence.records.map(r=>r.employerId)).size,10);
+ const sorted=pay.observations.map(o=>{assert.ok(evidence.roles[item.id].recordIds.includes(o.id));assert.equal(o.midpoint,(o.minimum+o.maximum)/2);assert.equal(o.period,'year');assert.deepEqual(o.countries,['United States']);return o.midpoint;}).sort((a,b)=>a-b);
+ assert.equal(pay.postingCount,6);assert.equal(pay.employerCount,5);assert.equal(new Set(pay.observations.map(o=>o.id)).size,6);
+ assert.equal(pay.exactMedianMidpoint,(sorted[2]+sorted[3])/2);assert.equal(pay.estimate,214000);
+ assert.ok(!pay.observations.some(o=>/Robot Stability/.test(o.title)));
+ assert.equal(item.overview.find(o=>o.label==='Compensation').value,'$214,000/year');
+ const text=pay.observations.find(o=>o.extraction==='full-source-text');assert.match(text.sourceClause,/annual salary range/);assert.equal(text.minimum,200000);assert.equal(text.maximum,240000);
+});
+
+test('Safety fault tree distinguishes a shared loss from two local faults in every state',()=>{
+ const m=JSON.parse(fs.readFileSync('public/research/safety-common-cause-example-2026-11-10.json','utf8'));
+ assert.deepEqual(m.basicEvents,['supply','monitor-a','monitor-b']);assert.deepEqual(m.minimalCutSets,[['supply'],['monitor-a','monitor-b']]);
+ assert.equal(m.states.length,8);assert.equal(new Set(m.states.map(s=>[s.supplyLost,s.monitorAFailed,s.monitorBFailed].join(','))).size,8);
+ assert.deepEqual(m.states.map(s=>s.bothUnavailable),[false,false,false,true,true,true,true,true]);
+ for(const s of m.states){const active=new Set([s.supplyLost?'supply':null,s.monitorAFailed?'monitor-a':null,s.monitorBFailed?'monitor-b':null]);assert.equal(s.bothUnavailable,m.minimalCutSets.some(c=>c.every(e=>active.has(e))));}
+ const graphic=guideForOccupation('systems-safety-engineer').sections.flatMap(s=>s.blocks||[]).find(b=>b.type==='fault-tree');assert.deepEqual(graphic.model,m);
 });

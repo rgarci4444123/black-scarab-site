@@ -1,0 +1,800 @@
+{
+  "reviewedAt": "2026-11-10",
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "scope": "System/product/functional safety analysis, requirements and assurance for robots and autonomous machinery. Primary controls implementation excluded.",
+  "cohort": {
+    "postings": 29,
+    "employers": 16
+  },
+  "reviewedRecords": [
+    {
+      "id": "agile-robots:greenhouse:4964637101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "(Senior) Systems and Safety Engineer (m/f/d)",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4964637101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "3e554ab8ead1c21b1773002cc79c96b9c8b9f7eacf366d3d5d67242cc5dbf41a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "System requirements, robot architecture, hazard analysis, FMEA/FMEdA/FTA and safety-lifecycle work products.",
+      "qualification": "Background: Bachelor's or Master's degree in Electrical Engineering, Mechanical Engineering, Mechatronics, Robotics, or a related field.",
+      "qualificationSpans": [
+        {
+          "text": "Background: Bachelor's or Master's degree in Electrical Engineering, Mechanical Engineering, Mechatronics, Robotics, or a related field.",
+          "start": 1384,
+          "end": 1520
+        }
+      ]
+    },
+    {
+      "id": "applied-intuition:ashby:12fc5adf-1827-45d4-83d9-3856064dd25e",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "System Safety Engineer, Mining/Industrial",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/12fc5adf-1827-45d4-83d9-3856064dd25e",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "851bfbbe1d025b1394ee26779d68af30a01b9112dd92ce1a2d6524422e5065a8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Machine-level safety cases, hazard analysis, safety requirements, fault propagation and HIL fault injection for industrial autonomy.",
+      "qualification": "Bachelor’s or master’s degree in electrical engineering, Mechanical Engineering, Computer Science, Systems Engineering, Software Engineering, or a related technical discipline",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s or master’s degree in electrical engineering, Mechanical Engineering, Computer Science, Systems Engineering, Software Engineering, or a related technical discipline",
+          "start": 4058,
+          "end": 4233
+        }
+      ]
+    },
+    {
+      "id": "applied-intuition:ashby:59466c8f-a1ff-42b6-9a60-3eeedc95de07",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "System Safety Engineer, Autonomy Trucking",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/59466c8f-a1ff-42b6-9a60-3eeedc95de07",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "0ac1cc08d079d28cc8751dea4bc87b1167fcede600ae6a49d5f374167524f475",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Autonomous-trucking safety architecture, FMEA/FTA/STPA, requirements and safety cases.",
+      "qualification": "MS/BS degree in Computer Science, Electrical, Mechanical, Systems Engineering or equivalent required",
+      "qualificationSpans": [
+        {
+          "text": "MS/BS degree in Computer Science, Electrical, Mechanical, Systems Engineering or equivalent required",
+          "start": 2655,
+          "end": 2755
+        }
+      ]
+    },
+    {
+      "id": "apptronik:greenhouse:6239229004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Sr. Software Systems Safety Engineer",
+      "locations": [
+        "Sunnyvale, California",
+        "Sunnyvale, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6239229004?gh_jid=6239229004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "6e2efe3b86d2b6c86eca8ae4d6965c92cdc6b7b587c232bc47cb42e19a0d30ed",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Embedded software and AI assurance, partitioning, diagnostics, timing, software safety requirements and verification evidence.",
+      "qualification": "Bachelor’s Degree in Systems Engineering, Computer Engineering, Electrical Engineering, Computer Science, Robotics, or a related field (or equivalent experience); Master’s preferred",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s Degree in Systems Engineering, Computer Engineering, Electrical Engineering, Computer Science, Robotics, or a related field (or equivalent experience); Master’s preferred",
+          "start": 4396,
+          "end": 4577
+        }
+      ]
+    },
+    {
+      "id": "bedrock:ashby:85bad69a-ac4e-4090-910f-04d321001f73",
+      "employerId": "bedrock",
+      "employer": "Bedrock Robotics",
+      "title": "Senior Functional Safety Engineer (Hardware)",
+      "locations": [
+        "San Francisco, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/bedrock-robotics/85bad69a-ac4e-4090-910f-04d321001f73",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "5697466acb0cb02ad64141e3b79b04c822a4439cc95733d7ffbf2d5f7b1f9042",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/bedrock.json",
+      "rawSourceFileSha256": "f2897d1ac1b7da9dd6ee4984e385bc28b69e753fe84260a185e94c41d1d38c98",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Hardware functional safety, hazard analysis, FMEA/FMEdA/FTA, redundancy, diagnostics and fault-reaction experiments.",
+      "qualification": "BS or advanced degree in electrical, mechanical, systems, or a related engineering field, or equivalent practical experience.",
+      "qualificationSpans": [
+        {
+          "text": "BS or advanced degree in electrical, mechanical, systems, or a related engineering field, or equivalent practical experience.",
+          "start": 2783,
+          "end": 2908
+        }
+      ]
+    },
+    {
+      "id": "boston-dynamics:workday:R3188",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Senior Staff, Product Safety Engineer",
+      "locations": [
+        "Waltham, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-MA/Senior-Staff--Product-Safety-Engineer_R3188",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "a593e1f5c06c38b10b0e0dcae8b1520e818288c6d1390f6bed504ed909d49f99",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Independent product assurance across hardware, software, AI, controls and human-robot interaction; safety cases and change governance.",
+      "qualification": "Bachelor’s or Master’s degree in Electrical Engineering, Computer Engineering, Mechanical Engineering, Systems Engineering, Robotics, or related discipline",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s or Master’s degree in Electrical Engineering, Computer Engineering, Mechanical Engineering, Systems Engineering, Robotics, or related discipline",
+          "start": 3417,
+          "end": 3572
+        }
+      ]
+    },
+    {
+      "id": "dexterity:lever:ab404c3f-a336-4a6c-b31b-07d048feb3dc",
+      "employerId": "dexterity",
+      "employer": "Dexterity",
+      "title": "Lead Functional Safety Engineer",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/dexterity/ab404c3f-a336-4a6c-b31b-07d048feb3dc",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "8fba34a791f9af427946d7ce3a6f140c4e603a313f8ac24d410b7e02c64b85e7",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/dexterity.json",
+      "rawSourceFileSha256": "58e07677b990f0ea1b41f418ab151a58e38723fc312c6213884069c392d0c236",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Technical functional-safety lifecycle, safety architecture, requirements, quantitative reliability and validation; lead technical IC scope.",
+      "qualification": "Bachelor’s degree in Electrical, Mechanical, or a related engineering discipline.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s degree in Electrical, Mechanical, or a related engineering discipline.",
+          "start": 3006,
+          "end": 3087
+        }
+      ]
+    },
+    {
+      "id": "humanoid:ashby:2aa29ad5-ba32-4356-af31-9af6365696c9",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Senior Functional Safety Engineer",
+      "locations": [
+        "US, Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/2aa29ad5-ba32-4356-af31-9af6365696c9",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "0acbbc5700d70817dc80e30bd54866a21ba3b01f20df53c8e550e5528f2c9dce",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Humanoid subsystem safety lifecycle, hazard analysis, safety requirements, architecture and assurance cases.",
+      "qualification": "5+ years experience and deep technical expertise in development of safety-critical systems.",
+      "qualificationSpans": [
+        {
+          "text": "5+ years experience and deep technical expertise in development of safety-critical systems.",
+          "start": 2062,
+          "end": 2153
+        }
+      ]
+    },
+    {
+      "id": "nuro:greenhouse:8167599",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Senior/Staff Systems Safety Engineer, Platform Systems",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=8167599",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "40342fe2a90584ff261c2bb1f952b8f519fc379e1414e7879d0cda56403f4a0b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robot/vehicle platform safety architecture, safe states, HARA/FMEA/FTA, dependent failures and safety cases.",
+      "qualification": "3+ years of experience in system architecture for safety critical systems.",
+      "qualificationSpans": [
+        {
+          "text": "3+ years of experience in system architecture for safety critical systems.",
+          "start": 2771,
+          "end": 2845
+        }
+      ]
+    },
+    {
+      "id": "rhoda:ashby:616f3c81-91dd-495b-8612-8308b481cb36",
+      "employerId": "rhoda",
+      "employer": "Rhoda AI",
+      "title": "Staff Robotics System Safety Engineer",
+      "locations": [
+        "Mountain View"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/rhoda-ai/616f3c81-91dd-495b-8612-8308b481cb36",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "dbdc77556f8719d72298bf0cf5c2b81e059e94c54f6204e6b4ebfb6f3c474e50",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/rhoda.json",
+      "rawSourceFileSha256": "57292cd4a63e78bba309cca3f2dd2b54a447c617ae01fb0a2d48033f76eb01bc",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robotics system requirements, stopping/collision avoidance, fail-safe/degraded strategies, hazard analysis and safety evidence.",
+      "qualification": "B.S. in Robotics, Mechatronics, Electrical Engineering or Computer Science",
+      "qualificationSpans": [
+        {
+          "text": "B.S. in Robotics, Mechatronics, Electrical Engineering or Computer Science",
+          "start": 1422,
+          "end": 1496
+        }
+      ]
+    },
+    {
+      "id": "zoox:lever:887c7590-e98d-4997-b85d-e3956381fd57",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Sensing and Perception System Safety Engineer",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/887c7590-e98d-4997-b85d-e3956381fd57",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "15b2d5b6e35dd7e93a55f41d001b34c6e828f4cb04a0842aa113b0154c0fc409",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Sensor/perception safety requirements, safety cases, fail-operational architecture and simulation/field evidence.",
+      "qualification": "BS or MS in a related technical field, such as Electrical/Electronics Engineering, Computer Engineering, Mechanical Engineering, Computer Science, Robotics, Mechatronics, etc.",
+      "qualificationSpans": [
+        {
+          "text": "BS or MS in a related technical field, such as Electrical/Electronics Engineering, Computer Engineering, Mechanical Engineering, Computer Science, Robotics, Mechatronics, etc.",
+          "start": 1716,
+          "end": 1891
+        }
+      ]
+    }
+  ],
+  "salaryExclusions": [
+    {
+      "id": "agile-robots:greenhouse:4964637101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "(Senior) Systems and Safety Engineer (m/f/d)",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4964637101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "3e554ab8ead1c21b1773002cc79c96b9c8b9f7eacf366d3d5d67242cc5dbf41a",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "agility:greenhouse:6138236004",
+      "employerId": "agility",
+      "employer": "Agility Robotics",
+      "title": "Principal Robotics Functional Safety Engineer",
+      "locations": [
+        "Fremont, California, United States",
+        "Hybrid- Fremont, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=6138236004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "e22a422aa85f1af7fb1e020e030f75c22684d52c7cb3613114285c58361f26f5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agility.json",
+      "rawSourceFileSha256": "ac356350940b45d164fbf75881d9254f4c3aadaa5e83e8f798a621610cb7c731",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "anduril:greenhouse:5158089007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Staff System Safety Engineer",
+      "locations": [
+        "Atlanta, Georgia, United States",
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5158089007?gh_jid=5158089007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "0b7139071b5651cb25a750c1bea8caac20c81170c47d529c4b87f6b39c5d8380",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "anduril:greenhouse:5266661007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Principal System Safety Engineer",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5266661007?gh_jid=5266661007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "33169fc5a45ac9415aebbe56d25effe2283bc1fb51d4ac0358b1646364d55502",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "apptronik:greenhouse:6235159004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Staff Systems Safety Engineer (Compliance)",
+      "locations": [
+        "Sunnyvale, California",
+        "Sunnyvale, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6235159004?gh_jid=6235159004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "a52fbf8f989c3409b58fe4776c904aa69939cfef7c85a9bad9b786b0c86fd521",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "apptronik:greenhouse:6235161004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Staff Systems Safety Engineer",
+      "locations": [
+        "Sunnyvale, California",
+        "Sunnyvale, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6235161004?gh_jid=6235161004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "864c42e96cf5e837aca15342083a9481346692854684a9547022026fd9ffc627",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "bedrock:ashby:85bad69a-ac4e-4090-910f-04d321001f73",
+      "employerId": "bedrock",
+      "employer": "Bedrock Robotics",
+      "title": "Senior Functional Safety Engineer (Hardware)",
+      "locations": [
+        "San Francisco, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/bedrock-robotics/85bad69a-ac4e-4090-910f-04d321001f73",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "5697466acb0cb02ad64141e3b79b04c822a4439cc95733d7ffbf2d5f7b1f9042",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/bedrock.json",
+      "rawSourceFileSha256": "f2897d1ac1b7da9dd6ee4984e385bc28b69e753fe84260a185e94c41d1d38c98",
+      "reason": "Salary range lacks an explicit annual pay period; full-time status or annual-bonus wording does not establish salary frequency."
+    },
+    {
+      "id": "boston-dynamics:workday:R3188",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Senior Staff, Product Safety Engineer",
+      "locations": [
+        "Waltham, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-MA/Senior-Staff--Product-Safety-Engineer_R3188",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "a593e1f5c06c38b10b0e0dcae8b1520e818288c6d1390f6bed504ed909d49f99",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reason": "Salary range lacks an explicit annual pay period; full-time status or annual-bonus wording does not establish salary frequency."
+    },
+    {
+      "id": "gatik:greenhouse:4710595006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior Systems & Safety Engineer – AI/ML",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4710595006?gh_jid=4710595006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "1552946eed5890cd8655feac833e94cb5b89410422b6bd7c4309d66267c0d015",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "gatik:greenhouse:4711270006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior Systems & Safety Engineer – Autonomy",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4711270006?gh_jid=4711270006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "924485ec48164db8a4ff24f87f1812df20750b8f55c9b7c6c1d8c50ae18f13f2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "gatik:greenhouse:4711276006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior Systems & Safety Engineer – Hardware",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4711276006?gh_jid=4711276006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "b7c1879e0664fd9923ec50257f7889081ef1853df837205fed20b4d5a83d5572",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "gatik:greenhouse:4711279006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior Systems & Safety Engineer – Drive-by-Wire",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4711279006?gh_jid=4711279006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "ad4a77a91065bcc8a424ad437708af5ecc7ff83d1bcc243fd39c8f0a4ba52678",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "humanoid:ashby:2aa29ad5-ba32-4356-af31-9af6365696c9",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Senior Functional Safety Engineer",
+      "locations": [
+        "US, Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/2aa29ad5-ba32-4356-af31-9af6365696c9",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "0acbbc5700d70817dc80e30bd54866a21ba3b01f20df53c8e550e5528f2c9dce",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Salary range lacks an explicit annual pay period; full-time status or annual-bonus wording does not establish salary frequency."
+    },
+    {
+      "id": "kodiak:greenhouse:4062289009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Functional Safety Engineer, Software",
+      "locations": [
+        "Mountain View, CA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4062289009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "a0c79a525dddff789fa4dc43415e40392026ff132e4b5bc96603ed39f1ca2a3e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "nuro:greenhouse:8167599",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Senior/Staff Systems Safety Engineer, Platform Systems",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=8167599",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "40342fe2a90584ff261c2bb1f952b8f519fc379e1414e7879d0cda56403f4a0b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "Salary range lacks an explicit annual pay period; full-time status or annual-bonus wording does not establish salary frequency."
+    },
+    {
+      "id": "nvidia:workday:JR2018983",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior Customer Safety Engineer - Automotive",
+      "locations": [
+        "US, CA, Santa Clara"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Customer-Safety-Engineer---Automotive_JR2018983",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "886e29b28716b51a6920823ea719405bc944e75b5542db527ad782c9783b59d4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "nvidia:workday:JR2023363",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior System Software Safety Engineer -  Halos Core and Robotics Platform",
+      "locations": [
+        "India, Bengaluru"
+      ],
+      "countries": [
+        "India"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Senior-System-Software-Safety-Engineer----Halos-Core-and-Robotics-Platform_JR2023363-1",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "c2767bc7bc6bcaa32e7952d465c98c5d9704c7e5fe19cd335869d785f1104866",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "nvidia:workday:JR2027082",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior Software Safety Engineer, Physical AI",
+      "locations": [
+        "US, CA, Santa Clara",
+        "US, MI, Remote"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-MI-Remote/Senior-Software-Safety-Engineer--Halos---Autonomous-Vehicles_JR2027082",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "07cd4d69147cb149d7c77ab17207459520eeb663a03987725413191957d8c65b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "rhoda:ashby:6a0d4141-9114-4a67-924c-a7f4486a1f63",
+      "employerId": "rhoda",
+      "employer": "Rhoda AI",
+      "title": "Senior System Safety Engineer- Robot Stability",
+      "locations": [
+        "Mountain View"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/rhoda-ai/6a0d4141-9114-4a67-924c-a7f4486a1f63",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "50ada39a9bded2f1cade673fd2d5fdc39f0020f339b37d190201ebfa7a810957",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/rhoda.json",
+      "rawSourceFileSha256": "57292cd4a63e78bba309cca3f2dd2b54a447c617ae01fb0a2d48033f76eb01bc",
+      "reason": "Primary implementation of balance, locomotion and whole-body control, despite safety reporting and supporting assurance duties."
+    },
+    {
+      "id": "waymo:greenhouse:7361677",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "System Safety Engineer, Operations & Fleet Response",
+      "locations": [
+        "Kirkland, Washington, United States",
+        "Mountain View, CA, USA; San Francisco, CA, USA; Los Angeles, CA, USA; Kirkland, WA, USA",
+        "Mountain View, California, United States",
+        "Playa Vista, California, United States",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7361677",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "f3c5ef20b0cf54422aaf3e822d96f97146a3855aec116f557d3d70c57dc5881c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "waymo:greenhouse:8076964",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Safety Engineer - Risk Management",
+      "locations": [
+        "Mountain View CA USA; San Francisco CA USA",
+        "Mountain View, California, United States",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=8076964",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "b26c2a0af7965bf233aa0c4b7db5c35478e358264f1a4ccca319c20c4826e6a7",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "waymo:greenhouse:8213774",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "System Safety Engineer, Strategic Programs & Integration",
+      "locations": [
+        "Kirkland, Washington, United States",
+        "Mountain View, CA, USA, Kirkland, WA, USA",
+        "Mountain View, California, United States",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=8213774",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "e32197497076786bc4f905d716b02e119b551993aa8f9e05e67404631b8ac6a8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "Outside selected contextual systems-safety review."
+    },
+    {
+      "id": "waymo:greenhouse:8227762",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Product Safety Engineer",
+      "locations": [
+        "Mountain View CA USA; San Francisco CA USA",
+        "Mountain View, California, United States",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=8227762",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "e1edf737982cb35dbb013fbf0df7f8e53ebf35913d1d25ba5d6a5b59853ba198",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "Outside selected contextual systems-safety review."
+    }
+  ],
+  "additionalBoundaryFullSourceReviews": [
+    {
+      "id": "rhoda:ashby:6a0d4141-9114-4a67-924c-a7f4486a1f63",
+      "employerId": "rhoda",
+      "employer": "Rhoda AI",
+      "title": "Senior System Safety Engineer- Robot Stability",
+      "locations": [
+        "Mountain View"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/rhoda-ai/6a0d4141-9114-4a67-924c-a7f4486a1f63",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "50ada39a9bded2f1cade673fd2d5fdc39f0020f339b37d190201ebfa7a810957",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/rhoda.json",
+      "rawSourceFileSha256": "57292cd4a63e78bba309cca3f2dd2b54a447c617ae01fb0a2d48033f76eb01bc",
+      "decision": "Primary balance/locomotion control implementation; excluded despite safety title and supporting safety-case duties."
+    }
+  ],
+  "technicalSources": [
+    "https://www.iso.org/standard/51528.html",
+    "https://www.iso.org/standard/73481.html",
+    "https://www.iso.org/standard/73933.html",
+    "https://webstore.iec.ch/en/publication/5515",
+    "https://www.ul.com/news/ul-4600-edition-3-updates-incorporate-autonomous-trucking",
+    "https://www.cdc.gov/niosh/robotics/about/",
+    "https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/Fault%20Tree%20Handbook_NASA.pdf"
+  ],
+  "editorialVisual": "Invented qualitative monitor-availability fault tree. Both monitors unavailable if shared supply is lost OR both local monitor faults occur. No failure probabilities, PL/SIL calculation or complete safety assessment."
+}

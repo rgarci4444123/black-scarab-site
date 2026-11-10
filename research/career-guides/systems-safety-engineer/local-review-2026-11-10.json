@@ -1,0 +1,72 @@
+{
+  "reviewedAt": "2026-11-10",
+  "status": "approved-for-deployment",
+  "occupationId": "systems-safety-engineer",
+  "researchRoleId": "systems-safety-engineer",
+  "url": "http://127.0.0.1:3068/career-paths/integration-operations/systems-safety-engineer",
+  "summary": "User rewrite applied across eight sections, eight comparison tables, an annual salary table, eight expanded project steps and four resources. Original cover, compensation derivation and fault-tree graphic retained.",
+  "verification": {
+    "careerChecks": 35,
+    "sourceRecordsAudited": 203,
+    "rawSourcesAudited": 42,
+    "snapshotPostings": 1029,
+    "localGuides": 20,
+    "liveGuides": 19,
+    "typescript": "passed",
+    "scopedEslint": "passed",
+    "productionBuild": "passed",
+    "articlePreviews": 177,
+    "metadata": "Unique H1, SEO title, canonical and Article schema; first publication November 10",
+    "desktop": "1100x1250 revised opening verified",
+    "tablet": "768x1100 expanded portfolio verified",
+    "mobile": "288x1450 transition table and fault-tree graphic verified; no document or table overflow",
+    "faultTree": "Eight persistent Boolean states; supply loss alone or both local faults remove both monitors. No probabilities or complete safety function.",
+    "salary": "6 annual observations, 5 employers, exact median 213750 USD; rounded estimate 214000 USD.",
+    "editorial": "Supplied main-body paragraphs accounted for outside consolidated monitor and salary passages, with one functional-safety definition clarified."
+  },
+  "screenshots": [
+    "/tmp/black-scarab-safety-rewrite-opening-desktop-2026-11-10.png",
+    "/tmp/black-scarab-safety-rewrite-transition-mobile-2026-11-10.png",
+    "/tmp/black-scarab-safety-rewrite-portfolio-tablet-2026-11-10.png",
+    "/tmp/black-scarab-safety-rewrite-graphic-mobile-2026-11-10.png"
+  ],
+  "files": [
+    {
+      "path": "lib/career-paths/systems-safety-engineer-guide.ts",
+      "sha256": "dccc1ca2056ab70c3a13adae3b56dda5002ee4f38adfdeaf890de4598cd8cdda"
+    },
+    {
+      "path": "components/career-guide-elements.tsx",
+      "sha256": "e6abb6c593bcda469baffa727c3adc38310337a9c3719e2eef52a7875569f84d"
+    },
+    {
+      "path": "components/career-guide-editorial.css",
+      "sha256": "2a15a53e77d2c779ea1b717547341a930df497476bd8288654b4201f20a9992a"
+    },
+    {
+      "path": "public/career-paths/systems-safety-engineer-visor.webp",
+      "sha256": "630dcf2801452286462e13f1e0c21899535f4b9f748b77d046068ff6703c9659"
+    },
+    {
+      "path": "public/research/systems-safety-engineer-compensation-2026-11-02.json",
+      "sha256": "6ad196eba79e496b6f5f46fa59a5e68cb983ff2844657a007242bd7cc0eb26d9"
+    },
+    {
+      "path": "public/research/systems-safety-engineer-evidence-2026-11-10.json",
+      "sha256": "138c3722442d3f885eabf6f42d8d6df1bdd241998d476c6d1a0a3bad84815c26"
+    },
+    {
+      "path": "public/research/safety-common-cause-example-2026-11-10.json",
+      "sha256": "7b54229da9fcdd2511d5eb47fc357405f384031f08ab232f0b70f4be7615b419"
+    },
+    {
+      "path": "scripts/build-safety-guide-research.py",
+      "sha256": "95cafb5eb9a0be4ef72356a1131797b244069ed2c75258c035826c3ec51c6080"
+    },
+    {
+      "path": "research/career-guides/systems-safety-engineer/editorial-revision-2026-11-10.json",
+      "sha256": "c12e6c91e9f8760a5df85043c47484220cd36300e11e1e7723e788535eb5fd79"
+    }
+  ],
+  "publishedAt": "2026-11-10"
+}

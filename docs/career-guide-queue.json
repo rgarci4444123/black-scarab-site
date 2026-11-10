@@ -95,13 +95,14 @@
     {
       "order": 15,
       "roleId": "robotics-platform-engineer",
-      "status": "approved-for-deployment",
+      "status": "deployed",
       "path": "/career-paths/platforms-simulation/robotics-platform-engineer"
     },
     {
       "order": 16,
       "roleId": "systems-safety-engineer",
-      "status": "queued"
+      "status": "approved-for-deployment",
+      "path": "/career-paths/integration-operations/systems-safety-engineer"
     }
   ]
 }

@@ -46,6 +46,7 @@ export interface CareerFamily {
 
 // Profession summaries stay separate from publishable, long-form guides.
 export type CareerGuideBlock =
+  | { type: 'fault-tree'; id: string; title: string; model: { topEvent: string; basicEvents: string[]; minimalCutSets: string[][] } }
   | { type: 'message-history'; id: string; title: string; model: { unit: string; arrivalTimes: number[]; dequeueAt: number; depths: number[] } }
   | { type: 'loop-closure'; id: string; title: string; model: { unit: string; before: number[][]; after: number[][] } }
   | { type: 'measurement-comparison'; id: string; title: string; model: { reference: number; unit: string; minimum: number; maximum: number; ticks: number[]; setups: { label: string; description: string; readings: number[] }[] } }

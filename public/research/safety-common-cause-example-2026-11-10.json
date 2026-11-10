@@ -1,0 +1,69 @@
+{
+  "kind": "illustrative-qualitative-fault-tree",
+  "topEvent": "Both monitors unavailable",
+  "basicEvents": [
+    "supply",
+    "monitor-a",
+    "monitor-b"
+  ],
+  "minimalCutSets": [
+    [
+      "supply"
+    ],
+    [
+      "monitor-a",
+      "monitor-b"
+    ]
+  ],
+  "states": [
+    {
+      "supplyLost": false,
+      "monitorAFailed": false,
+      "monitorBFailed": false,
+      "bothUnavailable": false
+    },
+    {
+      "supplyLost": false,
+      "monitorAFailed": false,
+      "monitorBFailed": true,
+      "bothUnavailable": false
+    },
+    {
+      "supplyLost": false,
+      "monitorAFailed": true,
+      "monitorBFailed": false,
+      "bothUnavailable": false
+    },
+    {
+      "supplyLost": false,
+      "monitorAFailed": true,
+      "monitorBFailed": true,
+      "bothUnavailable": true
+    },
+    {
+      "supplyLost": true,
+      "monitorAFailed": false,
+      "monitorBFailed": false,
+      "bothUnavailable": true
+    },
+    {
+      "supplyLost": true,
+      "monitorAFailed": false,
+      "monitorBFailed": true,
+      "bothUnavailable": true
+    },
+    {
+      "supplyLost": true,
+      "monitorAFailed": true,
+      "monitorBFailed": false,
+      "bothUnavailable": true
+    },
+    {
+      "supplyLost": true,
+      "monitorAFailed": true,
+      "monitorBFailed": true,
+      "bothUnavailable": true
+    }
+  ],
+  "assumptions": "Two fictional monitors share one supply. Supply loss disables both; otherwise each local fault disables only its own monitor. Persistent Boolean availability states, no temporal sequencing or probabilities. No other faults, diagnostics, recovery or robot stopping behavior modeled. This is an availability example, not a complete safety function or real design assessment."
+}

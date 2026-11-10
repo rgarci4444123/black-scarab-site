@@ -304,3 +304,22 @@ export function CareerMessageHistory({block}:{block:MessageHistory}) {
     <p className="profession-research-note">Illustrative queue snapshot. Values are milliseconds.</p>
   </figure>;
 }
+
+
+type FaultTree=Extract<CareerGuideBlock,{type:'fault-tree'}>;
+export function CareerFaultTree({block}:{block:FaultTree}) {
+  return <figure id={block.id} className="profession-fault-tree" aria-labelledby={`${block.id}-title`}>
+    <figcaption id={`${block.id}-title`}>{block.title}</figcaption>
+    <p className="profession-fault-context">Two fictional monitors. One shared power supply.</p>
+    <div className="profession-fault-top"><h4>{block.model.topEvent}</h4></div>
+    <div className="profession-fault-gate"><strong>OR</strong><span>Either branch is enough</span></div>
+    <ul className="profession-fault-branches" aria-label="Either or both branches can make both monitors unavailable">
+      <li className="profession-fault-shared"><div className="profession-fault-event"><strong>Shared supply lost</strong><span>Disables both monitors</span></div></li>
+      <li className="profession-fault-local"><div className="profession-fault-event"><strong>Both local monitor faults</strong><span>With the supply working</span></div>
+        <div className="profession-fault-gate"><strong>AND</strong><span>Both faults required</span></div>
+        <ul className="profession-fault-leaves" aria-label="Both local faults required"><li><span>Monitor A fails</span></li><li><span>Monitor B fails</span></li></ul>
+      </li>
+    </ul>
+    <p className="profession-research-note">Illustrative monitor-availability model.</p>
+  </figure>;
+}
