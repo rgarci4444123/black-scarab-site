@@ -1,6 +1,6 @@
 # Career guide progress
 
-Updated November 10, 2026. Seventeen of twenty approved for publication. Hardware Test Engineer is approved for release; three guides remain.
+Updated November 10, 2026. Seventeen of twenty published. Localization & Mapping Engineer is in local review; Robotics Platform and Systems Safety remain.
 
 - ~~Mechanical Engineer~~
 - ~~Robot Learning Engineer~~
@@ -19,6 +19,6 @@ Updated November 10, 2026. Seventeen of twenty approved for publication. Hardwar
 - ~~Verification & Validation Engineer~~
 - ~~Robot Operations Specialist~~
 - ~~Hardware Test Engineer~~
-- Localization & Mapping Engineer
+- Localization & Mapping Engineer (local review)
 - Robotics Platform Engineer
 - Systems Safety Engineer

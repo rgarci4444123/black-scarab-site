@@ -1,0 +1,522 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "derivedAt": "2026-11-10",
+  "roleId": "localization-mapping-engineer",
+  "sourceAggregate": "/research/physical-ai-careers-2026-11-02.json",
+  "sourceAggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "label": "Black Scarab estimated compensation",
+  "currency": "USD",
+  "period": "year",
+  "basis": "advertised annual salary excluding bonus and equity",
+  "postingCount": 8,
+  "employerCount": 6,
+  "exactMedianMidpoint": 250000.0,
+  "estimate": 250000,
+  "rounding": "nearest 1000 USD, halves rounded upward",
+  "method": "Median of one explicitly annual USD salary-range midpoint per distinct requisition.",
+  "eligibility": "Individual-contributor robot or autonomous-system localization, state estimation, calibration and environmental mapping. Senior/staff technical roles included.",
+  "limitations": "Selected U.S. experienced-engineering sample; three of eight observations are at Shield AI and include aircraft navigation. Broad employer ranges and mixed seniority do not define an entry-level offer or representative market median. Structured fields do not consistently establish base-pay status.",
+  "observations": [
+    {
+      "id": "applied-intuition:ashby:6b7aacaa-32e3-4d58-93e6-7d7068f44617",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Onboard Maps and State Estimation",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/6b7aacaa-32e3-4d58-93e6-7d7068f44617",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "788842abab884b4c49ab6372175e7b72c529656acbb5091f1063a12db43a4cc5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 190000,
+      "maximum": 265000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 227500.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Onboard live-map estimation, prior-map/perception fusion, change detection, uncertainty, C++ and real-time evaluation."
+    },
+    {
+      "id": "boston-dynamics:workday:R2871",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Atlas Research Engineer, SLAM & Spatial AI",
+      "locations": [
+        "Waltham Office (POST)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-Office-POST/Research-Scientist--Spatial-AI---Perception_R2871",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "f04a2c1206ca52a5fb820efd4bc6bfb53bcbfec1bafd4f20ebd304609501815d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "minimum": 177000.0,
+      "maximum": 225000.0,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual base salary",
+      "extraction": "full-source-text",
+      "sourceClause": "The base pay range for this position is between $177,000 to $225,000 annually. Base pay will depend on multiple individualized factors including, but not limited to internal equity, job related knowledge, skills and experience. This range represents a good faith estimate of compensation at the time of posting. Boston Dynamics offers a generous Benefits package including medical, dental vision, 401(k), paid time off and a annual bonus structure. Additional details regarding these benefit plans will be provided if an employee receives an offer for employment.",
+      "sourceSpan": {
+        "start": 3500,
+        "end": 4063
+      },
+      "midpoint": 201000.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Humanoid SLAM and state estimation, offline reconstruction, geometric/spatial research and production C++/Python."
+    },
+    {
+      "id": "fieldai:lever:8f3af86b-ded0-4c8a-a657-b89e50256bdd",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Senior Robotics Software Engineer, 3D Mapping",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/8f3af86b-ded0-4c8a-a657-b89e50256bdd",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "9962cfec6d61cf957b38530784866b06d9b26154121cb183fe69be40835bde36",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "minimum": 160000,
+      "maximum": 240000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 200000.0,
+      "seniority": "senior",
+      "scope": "LiDAR mapping, point-cloud processing, registration, production delivery and robot field evaluation."
+    },
+    {
+      "id": "figure:greenhouse:4696533006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Helix AI Engineer, Localization and Mapping",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4696533006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "f883bf943165ca09971b76a05f1cca71bc5bcb4631a5304497d3e4421f4832fe",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "minimum": 200000.0,
+      "maximum": 400000.0,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual base salary",
+      "extraction": "full-source-text",
+      "sourceClause": "The US base salary range for this full-time position is $200,000 to $400,000 per year.",
+      "sourceSpan": {
+        "start": 2047,
+        "end": 2133
+      },
+      "midpoint": 300000.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Humanoid online localization and ego-motion, offline pose tracking, multi-sensor calibration and evaluation."
+    },
+    {
+      "id": "shield-ai:lever:0c6acdd5-a39b-4ad3-84fa-b1a1f83409d3",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "State Estimation Engineer (R4602)",
+      "locations": [
+        "Dallas, Texas",
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/0c6acdd5-a39b-4ad3-84fa-b1a1f83409d3",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "35d75094f07e9a954b007bfeb40c72c71f86edfa0df26397512430201b04fb34",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 200000,
+      "maximum": 345000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 272500.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Aircraft sensor-processing and state-estimation individual contributor: real-time multi-sensor fusion and field tests."
+    },
+    {
+      "id": "shield-ai:lever:133ad6aa-d624-4fad-b1cc-1f8f42d0401f",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "State Estimation Engineer (R4783)",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/133ad6aa-d624-4fad-b1cc-1f8f42d0401f",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "52568fcb5088a0b143c240353e413de0c5b79c78fab80e33886d28ac8112fbe0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 150000,
+      "maximum": 350000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 250000.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Aircraft navigation and state-estimation individual contributor: GNSS-degraded sensor fusion, processing and field trials."
+    },
+    {
+      "id": "shield-ai:lever:e6129683-3f3a-46f6-96d0-2d35426e7229",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Staff Engineer, State Estimation (R5783)",
+      "locations": [
+        "Remote"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/e6129683-3f3a-46f6-96d0-2d35426e7229",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "54fbb7778e7e40be45617ac12d4a6ceb9f25cc09602b3442608ee4f5532571dc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 200000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 250000.0,
+      "seniority": "staff-principal",
+      "scope": "Production estimation/navigation C++, visual-inertial navigation, graph optimization, calibration and validation."
+    },
+    {
+      "id": "sunday:ashby:f3090c65-6030-4d5d-9ad2-cbb5503afe82",
+      "employerId": "sunday",
+      "employer": "Sunday Robotics",
+      "title": "SLAM Engineer",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/sunday/f3090c65-6030-4d5d-9ad2-cbb5503afe82",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "0a349c8a9d256df466f55d0c58c23075a3e4f048f742bacee333be08e7c6285c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/sunday.json",
+      "rawSourceFileSha256": "95e55ab1970ad63d47734109bd8e17d1fde8a0db3343230ed504995fa38261d2",
+      "minimum": 200000,
+      "maximum": 400000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 300000.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Home-robot indoor SLAM, lidar/camera/IMU/odometry fusion, calibration, coordinate frames and synchronization."
+    }
+  ],
+  "excludedObservations": [
+    {
+      "id": "anduril:greenhouse:5235471007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Robotics Software Engineer, Navigation/Localization",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5235471007?gh_jid=5235471007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "71989e9a5d8ec6b81df6c4f4637d9b8585ad374bcb73c22a17ecccc6de04650f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside selected contextual estimator/mapping review; no salary admitted."
+    },
+    {
+      "id": "applied-intuition:ashby:cfbd1096-4108-4b75-a12f-93913be62bf3",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Mapping and Localization",
+      "locations": [
+        "Stuttgart"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/cfbd1096-4108-4b75-a12f-93913be62bf3",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "22eef9e43a48db13aa379736b80b00187fbd4a7a8b13e70667b5ee8f7bc8b901",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "bedrock:ashby:45f969a1-20ec-47bd-9bda-2b4b5fa5eded",
+      "employerId": "bedrock",
+      "employer": "Bedrock Robotics",
+      "title": "Software Engineer, State Estimation & Localization",
+      "locations": [
+        "San Francisco, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/bedrock-robotics/45f969a1-20ec-47bd-9bda-2b4b5fa5eded",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "0c5c92e9620c4a276e547dbbfdf0b7e510582d60c4a2d4facb97171ef782e288",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/bedrock.json",
+      "rawSourceFileSha256": "f2897d1ac1b7da9dd6ee4984e385bc28b69e753fe84260a185e94c41d1d38c98",
+      "reason": "No complete explicitly annual USD range verified; frequency not inferred from salary magnitude or benefit wording."
+    },
+    {
+      "id": "fieldai:lever:9524c7c2-8be2-4463-afe3-7c1c60f7e6f2",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Robotics AI Engineer – Calibration, Localization, and Mapping",
+      "locations": [
+        "Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/9524c7c2-8be2-4463-afe3-7c1c60f7e6f2",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "345c388b23a981110e1ba7d91e79a437d8cf9010569a3fbadcd92a78926d9cd9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reason": "No complete explicitly annual USD range verified; frequency not inferred from salary magnitude or benefit wording."
+    },
+    {
+      "id": "fieldai:lever:ad7999a2-3ce7-4231-935c-e14a8d2c5d96",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Robotics AI Engineer – Calibration, Localization, and Mapping",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/ad7999a2-3ce7-4231-935c-e14a8d2c5d96",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "730e6254c22093c26e8bfbcfdad6946055cfda61f073dcf087a1009a69827b7b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reason": "Outside selected contextual estimator/mapping review; no salary admitted."
+    },
+    {
+      "id": "figure:greenhouse:4706280006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "State Estimation Engineer, Data Collection Systems",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4706280006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "69fc778554c4d92eea8d056d9d62411c772148a5eb39c8a01ae1b2ed11e24760",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reason": "Wearable human full-body pose tracking and tactile data collection rather than robot navigation or environmental mapping."
+    },
+    {
+      "id": "gatik:greenhouse:4591317006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior Software Engineer – Localization (Visual Odometry)",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4591317006?gh_jid=4591317006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "a083ba7cc50faf7f5ab31852c76f3a48dc1fcce58bcf9010a7daed1017650b29",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "Outside selected contextual estimator/mapping review; no salary admitted."
+    },
+    {
+      "id": "gatik:greenhouse:4594478006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior Software Engineer, Localization",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4594478006?gh_jid=4594478006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "f0d81fad51b163e99ab0b1272e150065451ea0a0ca431a087320e1d6ed2b57eb",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "Outside selected contextual estimator/mapping review; no salary admitted."
+    },
+    {
+      "id": "humanoid:ashby:b093c5ff-bbc8-477f-80de-e48d0bca92c1",
+      "employerId": "humanoid",
+      "employer": "Humanoid",
+      "title": "Senior Autonomy Engineer - SLAM & Navigation",
+      "locations": [
+        "UK, London"
+      ],
+      "countries": [
+        "United Kingdom"
+      ],
+      "url": "https://jobs.ashbyhq.com/humanoid/b093c5ff-bbc8-477f-80de-e48d0bca92c1",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "51a76edf66b53dff064e600cbf01a4c4eea417e082b252b301dce3a53b0d8693",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/humanoid.json",
+      "rawSourceFileSha256": "e5235791307089199accae653e3cafa77d5ab3bf82877e8cf3815d377f1c5d76",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "kodiak:greenhouse:4421367009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Senior Autonomy Software Engineer, Mapping",
+      "locations": [
+        "Mountain View, CA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4421367009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "67dd1081a580d1bc6fa46a481df5d29f4b2d46e660b0f5dbd010933b3e99e02f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reason": "Outside selected contextual estimator/mapping review; no salary admitted."
+    },
+    {
+      "id": "may-mobility:greenhouse:8502300002",
+      "employerId": "may-mobility",
+      "employer": "May Mobility",
+      "title": "Lead Machine Learning Engineer - Localization",
+      "locations": [
+        "USA - Remote"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/maymobility/jobs/8502300002",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "0cf807614c7c2b810ef65825dfa4477fcd109d8c3eb1e2789d4979d2933dac43",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/may-mobility.json",
+      "rawSourceFileSha256": "2ab98698904ead284505b1b3b2ea0b4d87534f0c3ee604fa3c2fe30e5a67461b",
+      "reason": "Outside selected contextual estimator/mapping review; no salary admitted."
+    },
+    {
+      "id": "nvidia:workday:JR2019727",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior Software Engineer, Mapping - Autonomous Vehicles",
+      "locations": [
+        "US, CA, Santa Clara",
+        "US, WA, Seattle"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Mapping---Autonomous-Vehicles_JR2019727",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "9e9e6e6ca2d4cf05fc41bd8d8a2b677dd8471a627f70fce2850bfe42beadfc28",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "Outside selected contextual estimator/mapping review; no salary admitted."
+    },
+    {
+      "id": "nvidia:workday:JR2020176",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Principal Software Engineer, Mapping - Autonomous Vehicles",
+      "locations": [
+        "US, CA, Santa Clara",
+        "US, Remote"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Software-Engineer--Mapping---Autonomous-Vehicles_JR2020176",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "cc4e42a14d1724813178ed4bb5100baaa8dc576e18f3b7af0a93ba49b9167f7d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "Outside selected contextual estimator/mapping review; no salary admitted."
+    },
+    {
+      "id": "shield-ai:lever:1ade04ff-f436-487d-9376-7e230be3234f",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Staff Deep Learning Engineer, State Estimation (R5785)",
+      "locations": [
+        "Remote"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/1ade04ff-f436-487d-9376-7e230be3234f",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "fe8f440290caf09b1f36e31281f53dc061d9f2735fac1a45decd8095084520d3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Primary learned-vision model/data/training role; contributes localization measurements but not primary estimator or mapping ownership."
+    },
+    {
+      "id": "shield-ai:lever:58b3440f-229c-4aad-9535-47419660931c",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior Principal Engineer, GNC & State Estimation (R6233)",
+      "locations": [
+        "Remote",
+        "San Diego, California"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/58b3440f-229c-4aad-9535-47419660931c",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "6ea25190f15e3b6008f498028e085ba583e82458ddc7bec102cb566c9767a5e4",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Senior-principal GNC, autopilot, technical roadmap and team-building scope spans flight controls beyond this estimator/mapping sample."
+    }
+  ]
+}

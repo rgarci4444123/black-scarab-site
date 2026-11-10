@@ -249,3 +249,34 @@ export function CareerTimingBudget({block}:{block:TimingBudget}) {
     <p className="profession-timing-note">{block.note}</p>
   </figure>;
 }
+
+
+type LoopClosure=Extract<CareerGuideBlock,{type:'loop-closure'}>;
+export function CareerLoopClosure({block}:{block:LoopClosure}) {
+  // Swap the plotted axes and reflect vertically, preserving distances and the shared scale.
+  const x=(p:number[])=>45+p[1]*30;
+  const y=(p:number[])=>235-p[0]*30;
+  const panels=[{label:'Before loop closure',points:block.model.before,kind:'before'},{label:'After loop closure',points:block.model.after,kind:'after'}];
+  return <figure id={block.id} className="profession-loop-closure" aria-labelledby={`${block.id}-title`}>
+    <figcaption id={`${block.id}-title`}>{block.title}</figcaption>
+    <div className="profession-loop-panels">{panels.map(panel=>{
+      const start=panel.points[0],end=panel.points[panel.points.length-1];
+      const gap=Math.hypot(end[0]-start[0],end[1]-start[1]).toFixed(2);
+      return <div className={`profession-loop-panel profession-loop-${panel.kind}`} key={panel.kind}>
+        <h4>{panel.label}</h4>
+        <svg viewBox="0 0 300 290" role="img" aria-labelledby={`${block.id}-${panel.kind}-title ${block.id}-${panel.kind}-desc`}>
+          <title id={`${block.id}-${panel.kind}-title`}>{panel.label}</title>
+          <desc id={`${block.id}-${panel.kind}-desc`}>Estimated journey around a loop. The labeled start and end are {gap} meters apart. Both panels use the same scale; the end remains separate from the start after correction.</desc>
+          <polyline className="profession-loop-path" points={panel.points.map(p=>`${x(p)},${y(p)}`).join(' ')}/>
+          <line className="profession-loop-gap" x1={x(start)} y1={y(start)} x2={x(end)} y2={y(end)}/>
+          <circle className="profession-loop-start" cx={x(start)} cy={y(start)} r="8"/>
+          <circle className="profession-loop-end" cx={x(end)} cy={y(end)} r="8"/>
+          <text className="profession-loop-point-label" x={x(start)-7} y={y(start)+29}>Start</text>
+          <text className="profession-loop-point-label" x={x(end)+12} y={y(end)-10}>End</text>
+        </svg>
+        <p className="profession-loop-result"><strong>{gap} {block.model.unit}</strong><span>Estimated gap</span></p>
+      </div>;
+    })}</div>
+    <p className="profession-research-note">Illustrative 2D position estimates.</p>
+  </figure>;
+}

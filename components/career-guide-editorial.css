@@ -396,3 +396,26 @@
  .career-section.profession-guide .profession-measurement-heading strong { display: block; }
  .career-section.profession-guide .profession-measurement-dot { width: 10px; height: 10px; }
 }
+
+
+/* Localization: directly labeled paths with the same distance scale. */
+.career-section.profession-guide .profession-loop-closure{margin:32px 0;padding:0;}
+.career-section.profession-guide .profession-loop-closure>figcaption{font-size:23px;font-weight:600;line-height:1.35;color:#171a1e;margin:0 0 20px;}
+.career-section.profession-guide .profession-loop-panels{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;}
+.career-section.profession-guide .profession-loop-panel{min-width:0;background:#f6f6f6;border-radius:12px;padding:20px 14px 22px;}
+.career-section.profession-guide .profession-loop-panel h4{font-size:15px;font-weight:500;text-align:center;line-height:1.4;margin:0;color:#30363d;}
+.career-section.profession-guide .profession-loop-panel svg{width:100%;height:auto;display:block;}
+.career-section.profession-guide .profession-loop-path{fill:none;stroke:#638b9d;stroke-width:5.5;stroke-linecap:round;stroke-linejoin:round;}
+.career-section.profession-guide .profession-loop-after .profession-loop-path{stroke:#2c887e;}
+.career-section.profession-guide .profession-loop-gap{stroke:#b66d66;stroke-width:2.5;stroke-dasharray:6 5;}
+.career-section.profession-guide .profession-loop-start{fill:#2c887e;}
+.career-section.profession-guide .profession-loop-end{fill:#b66d66;}
+.career-section.profession-guide .profession-loop-point-label{font-size:17px;fill:#20252b;}
+.career-section.profession-guide p.profession-loop-result{text-align:center;display:flex;flex-direction:column;gap:4px;font-size:13px;line-height:1.5;margin:0;color:#62666c;}
+.career-section.profession-guide .profession-loop-result strong{font-size:27px;line-height:1.25;white-space:nowrap;color:#20252b;font-weight:600;}
+@media(max-width:600px){
+ .career-section.profession-guide .profession-loop-panels{grid-template-columns:minmax(0,1fr);gap:16px;}
+ .career-section.profession-guide .profession-loop-panel{max-width:360px;width:100%;box-sizing:border-box;margin:0 auto;padding:18px 10px 20px;}
+ .career-section.profession-guide .profession-loop-closure>figcaption{font-size:22px;}
+ .career-section.profession-guide .profession-loop-point-label{font-size:20px;}
+}

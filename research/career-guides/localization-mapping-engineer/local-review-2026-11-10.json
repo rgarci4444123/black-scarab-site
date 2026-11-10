@@ -1,0 +1,64 @@
+{
+  "reviewedAt": "2026-11-10T17:50:32.467883+00:00",
+  "status": "approved-for-deployment",
+  "occupationId": "localization-and-mapping-engineer",
+  "researchRoleId": "localization-mapping-engineer",
+  "url": "http://127.0.0.1:3064/career-paths/intelligence-autonomy/localization-and-mapping-engineer",
+  "publishedAt": "2026-11-10",
+  "summary": "User editorial rewrite applied across eight sections, eight tables, eight portfolio steps and four resources. Existing loop-closure component restyled from the attached reference with direct labels and prominent computed gaps.",
+  "verification": {
+    "careerChecks": 31,
+    "sourceRecordsAudited": 183,
+    "rawSourcesAudited": 42,
+    "snapshotPostings": 1029,
+    "localGuides": 18,
+    "typescript": "passed",
+    "scopedEslint": "passed",
+    "productionBuild": "passed",
+    "articlePreviews": 177,
+    "metadata": "unique H1, SEO title, canonical and Article schema; no publication date",
+    "desktop": "1100x650 visual verified; clear Start/End labels and gap metrics",
+    "tablet": "768x1000 comparison and tables verified",
+    "mobile": "288x1450 comparison verified; no document, panel or table overflow",
+    "loopClosure": "equal-weight least-squares stationary point verified; gaps 1.70m and 0.34m",
+    "editorial": "Eight revised sections, eight tables, eight portfolio steps, four resources; duplicate graphic and salary headings removed"
+  },
+  "screenshots": [
+    "/tmp/black-scarab-localization-rewrite-desktop-2026-11-10.png",
+    "/tmp/black-scarab-localization-rewrite-mobile-2026-11-10.png"
+  ],
+  "files": [
+    {
+      "path": "lib/career-paths/localization-mapping-engineer-guide.ts",
+      "sha256": "ca2aaef4d490377f9c24a6a8eac2d77060373dedf0679b7bde696b68fbf9a7a4"
+    },
+    {
+      "path": "public/career-paths/localization-mapping-engineer-atrium.webp",
+      "sha256": "da0289ea94026b8d0acda8ebc39ed901fc61578ff2346b4096e2fe10747c6910"
+    },
+    {
+      "path": "public/research/localization-mapping-engineer-compensation-2026-11-02.json",
+      "sha256": "993b86fbb2859234fa83fb8ddb13a10757bc50c64a037fc15c9b8efe95cac312"
+    },
+    {
+      "path": "public/research/localization-mapping-engineer-evidence-2026-11-10.json",
+      "sha256": "372e65cc2a037370d39b979d6b796bc54a1c98e212d4b13932180733d5797eaf"
+    },
+    {
+      "path": "public/research/localization-loop-closure-example-2026-11-10.json",
+      "sha256": "0b8cc218ca01dc92db730da5046a1d04946fd445eff98ac90ff296698e50d583"
+    },
+    {
+      "path": "components/career-guide-elements.tsx",
+      "sha256": "d0e6449e0d521dd1905b7606a87d04dcc623a6ff66b5b7ae3fc07a3029c83f46"
+    },
+    {
+      "path": "components/career-guide-editorial.css",
+      "sha256": "209ae081c639f31fbc28b818a9e0780b08dfbc7e0ce11c9278bf4542aa9ac3fa"
+    },
+    {
+      "path": "research/career-guides/localization-mapping-engineer/editorial-revision-2026-11-10.json",
+      "sha256": "7852164c583d88b93fe6f278928a463a2806afc5aec87ebdb11ac52de25aefab"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "updatedAt": "2026-11-10",
+  "sourcePath": "/Users/rodolfogarcia/.codex/attachments/175c7a3d-558d-4c63-93c0-02c4d66d9660/Pasted text.txt",
+  "sourceSha256": "917e79fc66f02732c1db403649ef02a10684446b0ba69a15dbab7579e2056d1c",
+  "sourceHeading": "How to Become a Localization & Mapping Engineer in Robotics",
+  "sections": 8,
+  "tables": 8,
+  "portfolioSteps": 8,
+  "resourceCount": 4,
+  "visualReference": "/Users/rodolfogarcia/Desktop/Screenshot 2026-11-10 at 12.44.45 PM.png",
+  "editorialHandling": [
+    "Preserve source prose and eight section order, navigation IDs, hero, dataset estimate and full methodology.",
+    "Replace repeated drift narration and numeric table with the existing loop-closure component, styled from the visual reference.",
+    "Keep annual advertised salary labels where structured ATS metadata does not establish base pay.",
+    "Integrate supplied source summary into existing collapsed complete methodology rather than duplicating the source section.",
+    "Keep mathematical model and computed gaps; simplify presentation with direct Start/End labels and no axes.",
+    "Use one graphic title and one salary-table caption rather than adjacent duplicate headings."
+  ]
+}

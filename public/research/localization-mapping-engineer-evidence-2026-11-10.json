@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "reviewedAt": "2026-11-10",
+  "aggregatePath": "/research/physical-ai-careers-2026-11-02.json",
+  "aggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "rawArchive": {
+    "relativeRoot": "research/physical-ai/2026-11-02",
+    "normalizedRecords": "postings.jsonl",
+    "manifestHash": "6b48026839dcafc9d68144cf3fbedf38889984ad96f667a21e058b4d25f26f14"
+  },
+  "interpretation": "Contextual guide review; immutable source archive and original classifications preserved.",
+  "roles": {
+    "localization-mapping-engineer": {
+      "recordIds": [
+        "applied-intuition:ashby:6b7aacaa-32e3-4d58-93e6-7d7068f44617",
+        "bedrock:ashby:45f969a1-20ec-47bd-9bda-2b4b5fa5eded",
+        "boston-dynamics:workday:R2871",
+        "fieldai:lever:8f3af86b-ded0-4c8a-a657-b89e50256bdd",
+        "fieldai:lever:9524c7c2-8be2-4463-afe3-7c1c60f7e6f2",
+        "figure:greenhouse:4696533006",
+        "shield-ai:lever:0c6acdd5-a39b-4ad3-84fa-b1a1f83409d3",
+        "shield-ai:lever:133ad6aa-d624-4fad-b1cc-1f8f42d0401f",
+        "shield-ai:lever:e6129683-3f3a-46f6-96d0-2d35426e7229",
+        "sunday:ashby:f3090c65-6030-4d5d-9ad2-cbb5503afe82"
+      ],
+      "auditPath": "research/career-guides/localization-mapping-engineer/evidence-audit.json",
+      "compensation": [
+        {
+          "employer": "Boston Dynamics",
+          "title": "Atlas Research Engineer, SLAM & Spatial AI",
+          "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-Office-POST/Research-Scientist--Spatial-AI---Perception_R2871",
+          "minimum": 177000.0,
+          "maximum": 225000.0,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised annual base salary",
+          "recordId": "boston-dynamics:workday:R2871",
+          "location": "Waltham"
+        },
+        {
+          "employer": "Figure",
+          "title": "Helix AI Engineer, Localization and Mapping",
+          "url": "https://job-boards.greenhouse.io/figureai/jobs/4696533006",
+          "minimum": 200000.0,
+          "maximum": 400000.0,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised annual base salary",
+          "recordId": "figure:greenhouse:4696533006",
+          "location": "San Jose, CA"
+        },
+        {
+          "employer": "Sunday Robotics",
+          "title": "SLAM Engineer",
+          "url": "https://jobs.ashbyhq.com/sunday/f3090c65-6030-4d5d-9ad2-cbb5503afe82",
+          "minimum": 200000,
+          "maximum": 400000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "recordId": "sunday:ashby:f3090c65-6030-4d5d-9ad2-cbb5503afe82",
+          "location": "Redwood City, CA"
+        }
+      ],
+      "skillPresentation": "qualitative-source-comparison",
+      "scopeNote": "Online pose/state estimation, mapping and calibration for robots and autonomous systems. No current-vacancy or skill-frequency claims."
+    }
+  },
+  "records": [
+    {
+      "id": "applied-intuition:ashby:6b7aacaa-32e3-4d58-93e6-7d7068f44617",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Onboard Maps and State Estimation",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/6b7aacaa-32e3-4d58-93e6-7d7068f44617",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "788842abab884b4c49ab6372175e7b72c529656acbb5091f1063a12db43a4cc5",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Onboard live-map estimation, prior-map/perception fusion, change detection, uncertainty, C++ and real-time evaluation.",
+      "qualification": "Bachelor's degree in Computer Science or equivalent",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in Computer Science or equivalent",
+          "start": 3397,
+          "end": 3448
+        }
+      ]
+    },
+    {
+      "id": "bedrock:ashby:45f969a1-20ec-47bd-9bda-2b4b5fa5eded",
+      "employerId": "bedrock",
+      "employer": "Bedrock Robotics",
+      "title": "Software Engineer, State Estimation & Localization",
+      "locations": [
+        "San Francisco, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/bedrock-robotics/45f969a1-20ec-47bd-9bda-2b4b5fa5eded",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "0c5c92e9620c4a276e547dbbfdf0b7e510582d60c4a2d4facb97171ef782e288",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/bedrock.json",
+      "rawSourceFileSha256": "f2897d1ac1b7da9dd6ee4984e385bc28b69e753fe84260a185e94c41d1d38c98",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Construction-machine pose, motion and configuration estimation; GNSS/IMU/lidar fusion, timing, calibration and field validation.",
+      "qualification": "A degree in Robotics, Computer Science, Electrical Engineering, Mechanical Engineering, Applied Mathematics, or a related field, or equivalent practical experience",
+      "qualificationSpans": [
+        {
+          "text": "A degree in Robotics, Computer Science, Electrical Engineering, Mechanical Engineering, Applied Mathematics, or a related field, or equivalent practical experience",
+          "start": 4012,
+          "end": 4175
+        }
+      ]
+    },
+    {
+      "id": "boston-dynamics:workday:R2871",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Atlas Research Engineer, SLAM & Spatial AI",
+      "locations": [
+        "Waltham Office (POST)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-Office-POST/Research-Scientist--Spatial-AI---Perception_R2871",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "f04a2c1206ca52a5fb820efd4bc6bfb53bcbfec1bafd4f20ebd304609501815d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Humanoid SLAM and state estimation, offline reconstruction, geometric/spatial research and production C++/Python.",
+      "qualification": "PhD in Robotics, Computer Vision, Machine Learning, Computer Science, or related fields (or equivalent experience).",
+      "qualificationSpans": [
+        {
+          "text": "PhD in Robotics, Computer Vision, Machine Learning, Computer Science, or related fields (or equivalent experience).",
+          "start": 1743,
+          "end": 1858
+        }
+      ]
+    },
+    {
+      "id": "fieldai:lever:8f3af86b-ded0-4c8a-a657-b89e50256bdd",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Senior Robotics Software Engineer, 3D Mapping",
+      "locations": [
+        "Irvine, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/8f3af86b-ded0-4c8a-a657-b89e50256bdd",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "9962cfec6d61cf957b38530784866b06d9b26154121cb183fe69be40835bde36",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "LiDAR mapping, point-cloud processing, registration, production delivery and robot field evaluation.",
+      "qualification": "Master’s degree or Ph.D. in Computer Science, Engineering, or a related field, with expertise in robotics and 3D computer vision.",
+      "qualificationSpans": [
+        {
+          "text": "Master’s degree or Ph.D. in Computer Science, Engineering, or a related field, with expertise in robotics and 3D computer vision.",
+          "start": 1619,
+          "end": 1748
+        }
+      ]
+    },
+    {
+      "id": "fieldai:lever:9524c7c2-8be2-4463-afe3-7c1c60f7e6f2",
+      "employerId": "fieldai",
+      "employer": "FieldAI",
+      "title": "Robotics AI Engineer – Calibration, Localization, and Mapping",
+      "locations": [
+        "Boston, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/field-ai/9524c7c2-8be2-4463-afe3-7c1c60f7e6f2",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "345c388b23a981110e1ba7d91e79a437d8cf9010569a3fbadcd92a78926d9cd9",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/fieldai.json",
+      "rawSourceFileSha256": "b6a198e5d315dff84cc36874882fde1f2ec20b78090639cacdfe6811a1edf067",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Quadruped/humanoid calibration, localization and mapping, sensor fusion, ROS, timing and benchmarking.",
+      "qualification": "Master’s or Ph.D. in Computer Science, Electrical Engineering, or a related field, with expertise in calibration, localization, and/or 3D mapping",
+      "qualificationSpans": [
+        {
+          "text": "Master’s or Ph.D. in Computer Science, Electrical Engineering, or a related field, with expertise in calibration, localization, and/or 3D mapping",
+          "start": 2469,
+          "end": 2614
+        }
+      ]
+    },
+    {
+      "id": "figure:greenhouse:4696533006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Helix AI Engineer, Localization and Mapping",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4696533006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "f883bf943165ca09971b76a05f1cca71bc5bcb4631a5304497d3e4421f4832fe",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Humanoid online localization and ego-motion, offline pose tracking, multi-sensor calibration and evaluation.",
+      "qualification": "Strong command of 3D geometry, visual-inertial SLAM, and computer vision techniques, including feature matching/tracking, and Structure from Motion (SfM).",
+      "qualificationSpans": [
+        {
+          "text": "Strong command of 3D geometry, visual-inertial SLAM, and computer vision techniques, including feature matching/tracking, and Structure from Motion (SfM).",
+          "start": 1287,
+          "end": 1441
+        }
+      ]
+    },
+    {
+      "id": "shield-ai:lever:0c6acdd5-a39b-4ad3-84fa-b1a1f83409d3",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "State Estimation Engineer (R4602)",
+      "locations": [
+        "Dallas, Texas",
+        "Seattle, Washington"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/0c6acdd5-a39b-4ad3-84fa-b1a1f83409d3",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "35d75094f07e9a954b007bfeb40c72c71f86edfa0df26397512430201b04fb34",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Aircraft sensor-processing and state-estimation individual contributor: real-time multi-sensor fusion and field tests.",
+      "qualification": "Typically requires a minimum of 7 years of related experience with a Bachelor’s degree; or 6 years and a Master’s degree; or 4 years with a PhD; or equivalent work experience.",
+      "qualificationSpans": [
+        {
+          "text": "Typically requires a minimum of 7 years of related experience with a Bachelor’s degree; or 6 years and a Master’s degree; or 4 years with a PhD; or equivalent work experience.",
+          "start": 2126,
+          "end": 2301
+        }
+      ]
+    },
+    {
+      "id": "shield-ai:lever:133ad6aa-d624-4fad-b1cc-1f8f42d0401f",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "State Estimation Engineer (R4783)",
+      "locations": [
+        "Dallas, Texas"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/133ad6aa-d624-4fad-b1cc-1f8f42d0401f",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "52568fcb5088a0b143c240353e413de0c5b79c78fab80e33886d28ac8112fbe0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Aircraft navigation and state-estimation individual contributor: GNSS-degraded sensor fusion, processing and field trials.",
+      "qualification": "Typically requires a minimum of 3 years of relevant experience with a bachelor’s degree; or 2 years with a master’s degree; or 1 years with a PhD; or equivalent practical experience.",
+      "qualificationSpans": [
+        {
+          "text": "Typically requires a minimum of 3 years of relevant experience with a bachelor’s degree; or 2 years with a master’s degree; or 1 years with a PhD; or equivalent practical experience.",
+          "start": 2068,
+          "end": 2250
+        }
+      ]
+    },
+    {
+      "id": "shield-ai:lever:e6129683-3f3a-46f6-96d0-2d35426e7229",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Staff Engineer, State Estimation (R5783)",
+      "locations": [
+        "Remote"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/e6129683-3f3a-46f6-96d0-2d35426e7229",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "54fbb7778e7e40be45617ac12d4a6ceb9f25cc09602b3442608ee4f5532571dc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Production estimation/navigation C++, visual-inertial navigation, graph optimization, calibration and validation.",
+      "qualification": "M.S. in Aerospace Engineering, Electrical Engineering, Robotics, Computer Science, or a related field; minimum 2+ years of related professional work experience if you have an M.S. degree, or 0 years if you are a new Ph.D. graduate.",
+      "qualificationSpans": [
+        {
+          "text": "M.S. in Aerospace Engineering, Electrical Engineering, Robotics, Computer Science, or a related field; minimum 2+ years of related professional work experience if you have an M.S. degree, or 0 years if you are a new Ph.D. graduate.",
+          "start": 1649,
+          "end": 1880
+        }
+      ]
+    },
+    {
+      "id": "sunday:ashby:f3090c65-6030-4d5d-9ad2-cbb5503afe82",
+      "employerId": "sunday",
+      "employer": "Sunday Robotics",
+      "title": "SLAM Engineer",
+      "locations": [
+        "Redwood City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/sunday/f3090c65-6030-4d5d-9ad2-cbb5503afe82",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "0a349c8a9d256df466f55d0c58c23075a3e4f048f742bacee333be08e7c6285c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/sunday.json",
+      "rawSourceFileSha256": "95e55ab1970ad63d47734109bd8e17d1fde8a0db3343230ed504995fa38261d2",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Home-robot indoor SLAM, lidar/camera/IMU/odometry fusion, calibration, coordinate frames and synchronization.",
+      "qualification": "Experience with vision-only or lidar-based SLAM pipelines",
+      "qualificationSpans": [
+        {
+          "text": "Experience with vision-only or lidar-based SLAM pipelines",
+          "start": 1979,
+          "end": 2036
+        }
+      ]
+    }
+  ]
+}

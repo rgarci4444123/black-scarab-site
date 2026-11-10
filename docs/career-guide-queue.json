@@ -83,13 +83,14 @@
     {
       "order": 13,
       "roleId": "hardware-test-engineer",
-      "status": "approved-for-release",
+      "status": "deployed",
       "path": "/career-paths/hardware-manufacturing/hardware-test-engineer"
     },
     {
       "order": 14,
       "roleId": "localization-mapping-engineer",
-      "status": "queued"
+      "status": "approved-for-deployment",
+      "path": "/career-paths/intelligence-autonomy/localization-and-mapping-engineer"
     },
     {
       "order": 15,

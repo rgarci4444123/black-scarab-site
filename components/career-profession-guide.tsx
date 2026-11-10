@@ -2,10 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { CareerFamily, CareerGuideBlock, CareerGuideContent, CareerGuideSection } from '@/lib/career-paths/types';
 
-import {CareerOverview,CareerGuideNavigation,CareerSkillMentions,CareerCompensationTable,CareerResearchNotes,CareerWorkflow,CareerDiagnosticMap,CareerTimingBudget,CareerControlResponse,CareerStateSequence,CareerYieldComparison,CareerPlanningClearance,CareerRequirementsMatrix,CareerMissionOutcomes,CareerMeasurementComparison} from './career-guide-elements';
+import {CareerOverview,CareerGuideNavigation,CareerSkillMentions,CareerCompensationTable,CareerResearchNotes,CareerWorkflow,CareerDiagnosticMap,CareerTimingBudget,CareerControlResponse,CareerStateSequence,CareerYieldComparison,CareerPlanningClearance,CareerRequirementsMatrix,CareerMissionOutcomes,CareerMeasurementComparison,CareerLoopClosure} from './career-guide-elements';
 
 function GuideBlock({block}:{block:CareerGuideBlock}) {
   switch (block.type) {
+    case 'loop-closure': return <CareerLoopClosure block={block}/>;
     case 'measurement-comparison': return <CareerMeasurementComparison block={block}/>;
     case 'mission-outcomes': return <CareerMissionOutcomes block={block}/>;
     case 'requirements-matrix': return <CareerRequirementsMatrix block={block}/>;

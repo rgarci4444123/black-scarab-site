@@ -76,6 +76,21 @@
         "hardware test engineer skills"
       ],
       "rationale": "Keep the established hardware profession and native occupation URL. Include mechanical/electrical component validation and production-test equipment; distinguish general manufacturing processes and primary autonomy-behavior V&V. Editorial intent review without search-volume claims."
+    },
+    {
+      "occupationId": "localization-and-mapping-engineer",
+      "h1": "How to Become a Localization & Mapping Engineer in Robotics",
+      "seoTitle": "Localization & Mapping Engineer: Salary, Skills & Career Guide",
+      "description": "Explore localization and mapping careers in robotics: SLAM, sensor fusion, C++ skills, salary research, employer qualifications and a practical mapping project.",
+      "path": "/career-paths/intelligence-autonomy/localization-and-mapping-engineer",
+      "primaryQuery": "localization and mapping engineer",
+      "supportingTopics": [
+        "SLAM engineer salary",
+        "robot localization engineer skills",
+        "state estimation engineer career",
+        "localization vs perception"
+      ],
+      "rationale": "Preserve the native occupation URL. Explain pose estimation, mapping and calibration through SLAM and state-estimation employer titles; distinguish object perception, motion planning and primary flight-control leadership. Editorial intent review, no search-volume claim."
     }
   ]
 }

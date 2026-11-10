@@ -1,0 +1,35 @@
+{
+  "createdAt": "2026-11-10",
+  "tool": "built-in image_gen",
+  "status": "selected",
+  "brief": {
+    "storyThesis": "A robot needs a stable understanding of where it is as its observations and surroundings change.",
+    "visualThesis": "A physical place and its reconstructed geometry meet in one spatial world.",
+    "medium": "Architectural point-cloud editorial visualization",
+    "primarySubject": "An invented multi-level cavernous transit atrium transitioning from solid architecture into sparse reconstructed geometry",
+    "viewpoint": "Elevated oblique, looking across a sectional volume rather than down a corridor",
+    "composition": "Asymmetric wide sectional space, left solid and right dissolving into spatial samples; no robot or people",
+    "palette": "85 percent monochrome with 15 percent electric blue point cloud",
+    "lighting": "Diffuse white architectural daylight against charcoal void",
+    "surface": "Concrete, silver skeletal structural geometry, crisp discrete spatial samples",
+    "cropPlan": "Retain the central solid-to-point-cloud transition in a wide crop",
+    "recentCoverReview": [
+      "Industrial: overhead conveyor factory cyan",
+      "Manufacturing: gloved hands joint fixture yellow",
+      "Motion: ground-level concrete rover route coral",
+      "V&V: through wet circular glass humanoid cyan",
+      "Operations: helmeted workers outside orange",
+      "Hardware: internal wrist macro violet"
+    ],
+    "recentPatternsAvoided": "Change medium, viewpoint, building scale and visual metaphor; no full robot, people, equipment closeup, wet window, route ribbon or factory conveyor.",
+    "avoid": "Text, numbers, logos, paper materials, generic glowing network, product packshot"
+  },
+  "prompt": "Use case: stylized-concept. Premium editorial cover for a Localization and Mapping Engineer career guide. Landscape 16:9. A physical place and its digital spatial reconstruction become one architectural volume. View an invented futuristic multilevel transit atrium from an elevated oblique viewpoint, as a dramatic sectional architectural visualization floating against a charcoal void. On the left, tactile pale concrete floors, cantilevered galleries, columns and a broad curved stair are solid, rendered in crisp diffuse daylight. Across the center these exact same architectural surfaces gradually dissolve into discrete measured point-cloud samples and thin silver geometric edges; the rightmost portion becomes sparse electric-blue spatial points that still describe the same structure. Beautiful spatial depth and strong asymmetric composition, generous dark negative space around the volume. Roughly 85 percent black white silver and gray, 15 percent deliberate vivid electric blue on reconstructed geometry. Sophisticated architectural visualization, precise rather than magical, intriguing and futuristic. No human, robot, screen, floor route ribbon, glowing network connections, labels, words, numbers, logos or watermark. No paper construction or catalog product styling. This is an invented conceptual editorial interpretation, not an actual facility or measured dataset.",
+  "asset": "public/career-paths/localization-mapping-engineer-atrium.webp",
+  "generatedSource": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-ced62ad5-70ad-412a-b58b-cb70c8eab615.png",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "bytes": 322160
+}
