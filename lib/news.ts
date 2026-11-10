@@ -37,6 +37,133 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "teradyne-omnyx-edge-board-test",
+  "title": "Teradyne launches Omnyx Edge to test electronics before robot assembly",
+  "summary": "The new platform brings circuit board testing into automated production lines, targeting the computing, sensing and motion electronics inside robots and other edge AI devices.",
+  "category": "Infrastructure",
+  "publishedDate": "2026-11-10",
+  "publishedAt": "2026-11-10T10:38:16-05:00",
+  "publishedLabel": "November 10, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/teradyne-omnyx-edge-board-test.png",
+  "imageAlt": "Conceptual macro illustration of copper test probes touching the underside of a red circuit board, with warm light revealing electrical pathways at one contact point.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "readingTime": "5 min read",
+  "keyPoints": [
+    "Omnyx Edge tests circuit boards before manufacturers install them in robots, vehicles and other machines.",
+    "The platform combines electrical testing, boundary scan and functional checks in one automated insertion.",
+    "Teradyne plans demonstrations at electronica in Munich from November 10 to 13."
+  ],
+  "sections": [
+    {
+      "heading": "What Teradyne launched",
+      "paragraphs": [
+        "Teradyne introduced Omnyx Edge on November 9, a testing platform designed to catch faults in the electronics before they become part of a finished robot or vehicle.",
+        "The system sits on an electronics production line. Boards pass through a test station, where the equipment checks their electrical behavior before they move further through manufacturing. Teradyne is targeting three groups of electronics: boards that process information, boards that handle sensing, and boards that control power and movement.",
+        "The launch extends the Omnyx family beyond its original focus on AI and data center hardware. Teradyne has scheduled demonstrations of the new system at electronica in Munich from November 10 to 13, including its power sensing, boundary scan and line automation functions.",
+        "The proposition is practical: find a faulty connection or power circuit while the board is still accessible, before it is surrounded by the rest of a machine."
+      ]
+    },
+    {
+      "heading": "The electronics behind a movement",
+      "paragraphs": [
+        "A robot completing a task depends on several kinds of board working together. Computing hardware processes instructions and information about the environment. Sensor electronics handle inputs. Motion electronics translate control decisions into electrical power for the mechanisms that move.",
+        "Teradyne’s application list reflects that chain. Omnyx Edge targets AI compute modules and robot controllers, camera and other sensing boards, and electronics such as joint drives, servo amplifiers and power converters.",
+        "For a manufacturer, these boards create different test problems. A densely packed computing board may have connections that are difficult to reach with a physical probe. A power circuit needs checks suited to its electrical behavior. An onboard indicator needs an optical measurement.",
+        "Putting those capabilities into a production test station is a way to address the electronics as an assembly problem. A board can contain the right components and still have a manufacturing fault that stops the finished product from working as intended."
+      ]
+    },
+    {
+      "heading": "More checks in one stop",
+      "paragraphs": [
+        "Omnyx Edge combines in circuit testing, boundary scan and functional checks on the test fixture. Teradyne says these can take place in a single automated insertion, reducing the need to handle a board separately for each test step.",
+        "In circuit testing checks components and connections on an assembled board. Boundary scan adds access through test circuitry designed into compatible chips. That helps test connections where direct physical access is limited. Teradyne’s technical guidance describes the two methods as complementary ways to improve fault coverage and diagnosis.",
+        "The distinction matters as electronics become more crowded. Adding more probe points is not always a practical answer when the board has little accessible space. Using a chip’s built in test access gives engineers another route to examining the connections around it.",
+        "Device programming is also part of the platform. In manufacturing, programming and testing can share a production step, helping avoid an additional trip through separate equipment. The board, fixture and software still need to be engineered as a working test process.",
+        "Combining operations can save handling, but the line benefits only if the station keeps pace with the work around it. A factory needs useful coverage within a test cycle that fits its production plan."
+      ]
+    },
+    {
+      "heading": "Power, indicators and factory integration",
+      "paragraphs": [
+        "Teradyne’s PowerSense feature uses touchless sensing to assess switching activity in power converters and power stages. These are the circuits supplying computing and motion hardware. The purpose is to examine electrical operation during manufacturing.",
+        "LEDSense adds optical testing for onboard LEDs. Alongside the electrical measurements, this gives the station a way to inspect a different type of component on the same fixture.",
+        "The platform also includes updated factory controls and board handling. Those connections matter because a test system has to coordinate with the line bringing boards in and carrying them onward. The published specifications describe automated board conveyance.",
+        "Teradyne also promotes AI based preventive maintenance for the testing system. Its intended benefit is keeping the production equipment available. For a factory, the value would come from maintaining dependable inspection capacity when a line is busy.",
+        "These features point to the same commercial goal: make inspection a repeatable part of the manufacturing flow, with fewer interruptions between assembly and the next stage."
+      ]
+    },
+    {
+      "heading": "A platform sized for different boards",
+      "paragraphs": [
+        "The published lineup has three configurations. Omnyx Edge 25 offers approximately 2,500 test pins at one test site. Edge 50 provides approximately 5,000 pins across two sites, with 2,500 per site. Edge 65 offers approximately 6,500 pins in a larger single site configuration.",
+        "A test pin is a contact used to connect the test equipment to the board through its fixture. More pins expand the available connection capacity, while the choice of tests and the board’s design determine the faults a test program can find.",
+        "Teradyne lists a board footprint of 530 by 508 millimeters and a maximum board weight of five kilograms. It also specifies compatibility with its legacy TSH and TSHL fixtures. For an existing user, compatible tooling could reduce the work involved in adopting another platform, subject to the particular board and test setup.",
+        "The earlier Omnyx platform, introduced in March, addressed boards and assemblies for AI and data center systems. Edge takes that product family toward electronics distributed through robots, industrial equipment and vehicles."
+      ]
+    },
+    {
+      "heading": "Where the business case sits",
+      "paragraphs": [
+        "Black Scarab’s view is that the launch highlights a manufacturing requirement that becomes more consequential as robotics products move into larger production runs. Electronics have to be built consistently, and faults have to be isolated efficiently.",
+        "Finding a problem at board level can make repair more direct. Once the board is installed in a machine, diagnosing the same symptom may require examining wiring, power supplies, software and connected mechanisms before tracing it back to the original fault.",
+        "Test coverage also has a boundary. A board that passes its production test has passed the checks defined for that board. The finished robot still needs system integration and application testing. Engineers have to decide how the board test contributes to the larger validation process.",
+        "For Omnyx Edge, the next meaningful evidence will come from production use: the boards it handles, the time needed for the chosen tests, the faults it catches and the equipment’s availability over repeated shifts. Those outcomes will determine how effectively the product turns a necessary quality check into a dependable part of robot manufacturing."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Teradyne, November 9 Omnyx Edge announcement",
+      "url": "https://investors.teradyne.com/news-events/press-releases/detail/456/teradyne-introduces-omnyx-edge-inline-board-test-for-physical-and-edge-ai"
+    },
+    {
+      "label": "Teradyne, Omnyx Edge applications and technical specifications",
+      "url": "https://www.teradyne.com/products/omnyx-edge/"
+    },
+    {
+      "label": "Teradyne, March 16 Omnyx platform introduction",
+      "url": "https://investors.teradyne.com/news-events/press-releases/detail/435/teradyne-introduces-omnyx-redefining-board-test-for-the-ai-era"
+    },
+    {
+      "label": "Teradyne, combining in circuit testing and boundary scan",
+      "url": "https://www.teradyne.com/pbt-combining-ict-boundary-scan-testing/"
+    },
+    {
+      "label": "Teradyne, boundary scan technical guidance",
+      "url": "https://www.teradyne.com/scan-pathfinder-ii-faq/"
+    },
+    {
+      "label": "Teradyne, device programming in production board testing",
+      "url": "https://www.teradyne.com/device-programming-solutions/"
+    },
+    {
+      "label": "MarketScreener and S&P Capital IQ, Omnyx Edge launch coverage",
+      "url": "https://www.marketscreener.com/news/teradyne-inc-introduces-omnyx-edge-inline-board-test-platform-for-physical-and-edge-ai-ce785fd3dd8cf524"
+    },
+    {
+      "label": "StreetInsider, November 9 launch coverage",
+      "url": "https://www.streetinsider.com/Corporate%2BNews/Teradyne%2Blaunches%2BOmnyx%2BEdge%2Binline%2Bboard%2Btest%2Bplatform/27310265.html"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [
+      "transportation-mobility",
+      "warehousing-logistics"
+    ],
+    "technologies": [
+      "industrial-automation",
+      "edge-ai",
+      "robotics"
+    ],
+    "applications": []
+  }
+},
+{
   "slug": "qiyuan-10000-personal-robots",
   "title": "China's Qiyuan Hits 10,000 Personal Robots Just Weeks After Launch",
   "summary": "The Chinese robotics company doubled its production total in two weeks, but how many of those machines are actually reaching consumers?",
