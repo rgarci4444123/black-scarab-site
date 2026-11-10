@@ -37,6 +37,141 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "google-gemini-robotics-2-5-factory-kitting",
+  "title": "Google brings Gemini Robotics 2.5 to a new factory test",
+  "summary": "DeepMind’s latest robot action model combines broader dexterity with a reported 96% success rate in automotive parts kitting trials with Apptronik and Mercedes Benz.",
+  "category": "Robot intelligence",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "6 min read",
+  "image": "/images/news/google-gemini-robotics-2-5-factory-kitting.png",
+  "imageAlt": "Conceptual editorial illustration of a titanium robot hand and a translucent cyan simulated hand holding opposite ends of one machined metal part, representing practice transferring into physical work.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "DeepMind announced Gemini Robotics 2.5 on November 10 and is rolling it out to robotics partners.",
+    "The company reports 30% to 100% higher task success and 20% to 30% faster completion against earlier baselines, depending on the task.",
+    "The factory proof of concept used Apollo 2 robots in Hungary and Germany."
+  ],
+  "sections": [
+    {
+      "heading": "A factory result behind the demonstrations",
+      "paragraphs": [
+        "Google DeepMind introduced Gemini Robotics 2.5 on November 10, pairing a wider range of manipulation skills with a factory proof of concept involving Apptronik’s Apollo 2 humanoid.",
+        "According to DeepMind, robots working on Mercedes Benz production lines in Kecskemét, Hungary, and Sindelfingen, Germany, picked metal brackets from supply bins and placed them into containers in the sequence required for vehicle assembly. The company reports a 96% success rate for this kitting work.",
+        "Kitting is preparation for assembly. Getting the right part into the right place, in the right order, helps the next operation proceed. A robot doing this work has to connect object recognition with grasping, placement and awareness of which steps remain.",
+        "Mercedes Benz’s experimentation with Apollo predates this release. In March 2025, the automaker described collecting production data, transferring employee expertise through teleoperation and augmented reality, and developing autonomous operations at its Berlin Digital Factory Campus. The new trial adds a reported result for a specific task to that development path.",
+        "For Black Scarab, the useful signal is the connection between a model update and a defined production workflow. A repeatable kitting process offers a more concrete way to judge progress than a collection of impressive movements alone."
+      ]
+    },
+    {
+      "heading": "Planning and movement have different jobs",
+      "paragraphs": [
+        "Gemini Robotics 2.5 is a vision language action model, usually shortened to VLA. It connects visual observations and instructions with the actions a robot performs.",
+        "DeepMind’s embodied reasoning model, Gemini Robotics ER, operates at a different level. Its official documentation describes understanding a scene, planning a sequence and handing motor execution to a lower level action model. That division allows the system to consider the next step while movement continues.",
+        "Think of the difference between deciding which container needs another bracket and moving the fingers into a stable grip. Both are necessary, but they involve different kinds of decisions. A useful robot has to keep the plan and the physical outcome aligned as work proceeds.",
+        "The hardware also shapes what that software can accomplish. Apptronik describes Apollo 2 as a modular platform with bipedal and wheeled configurations. Its product materials separate the robot body, an intelligence and control layer called Artemis, and fleet management software called Fleet Connect.",
+        "DeepMind also identifies Franka’s two arm Duo platform among the supported robot types. Franka presents that system as a research platform combining demonstrations, data collection and policy execution. Working across such different bodies is part of the ambition: skills that can be adapted beyond one machine’s exact shape."
+      ]
+    },
+    {
+      "heading": "More dexterity means different kinds of difficulty",
+      "paragraphs": [
+        "The evaluations span more than 200 tasks, including serving food with tongs, manipulating ribbon and pipetting liquid. These examples combine tool use, flexible materials and precise contact, each of which changes the handling problem.",
+        "A rigid bracket retains its shape as a robot approaches it. A ribbon changes shape as it is pulled. Tongs add another mechanism between the fingers and the object. The broader skill set therefore tests more than whether a robot can recognize an item and close its hand.",
+        "The reported improvements also vary with the task. A percentage increase in success describes a comparison with a baseline; it is different from the absolute chance that an individual attempt succeeds. The factory figure and the laboratory improvements answer different questions and should be read separately.",
+        "The household demonstrations show the kinds of manipulation being explored. The workplace evidence comes from the automotive proof of concept, while model access is expanding through partners."
+      ]
+    },
+    {
+      "heading": "Argon helps build the practice",
+      "paragraphs": [
+        "Gemini 4 Argon contributes to the development process by helping create simulation environments and improve robot behavior. Google’s October developer examples show it reconstructing scenes from robot observations and comparing simulated motion with recorded physical interactions.",
+        "In that workflow, matching appearances is only part of the job. Google also describes matching contact behavior, including the timing and direction of fingertip forces. The resulting environment gives researchers a place to test variations before returning to hardware.",
+        "This is the practical value of a digital twin. A simulated object that looks convincing but reacts incorrectly when grasped can teach the wrong behavior. A useful training environment needs enough physical fidelity for practice to inform the real task.",
+        "Black Scarab’s reading is that the opportunity lies in shortening the learning cycle: observe a failure, construct a useful test, try an improvement and check the result physically. The quality of that loop matters as much as the number of simulated attempts it produces.",
+        "Ars Technica reports that the current 2.5 action model runs on cloud servers. That makes response time and connectivity part of the robot’s practical performance, alongside the quality of its decisions."
+      ]
+    },
+    {
+      "heading": "Safety includes the instructions themselves",
+      "paragraphs": [
+        "DeepMind reports that its reasoning guidance improved safe task completion around obstacles by 33% and around nearby people by 43% in its evaluations.",
+        "There is also a separate problem: a robot can receive an instruction that is unsafe even when its path is clear. Google’s ASIMOV agentic evaluation framework tests decisions involving physical constraints, uncertainty, human proximity and adversarial requests.",
+        "The published framework includes tests that distinguish harmful requests from benign ones, and evaluates attempts to persuade an agent across multiple turns. It combines checks on action tool calls with model based judging. Those methods help explain what the benchmark measures: decisions under specified test conditions.",
+        "Hardware protections remain another layer. Apptronik says Apollo 2 has an impact zone that pauses motion when it detects an object inside the defined radius, alongside a configurable perimeter zone. Such mechanisms address physical behavior around the machine, while instruction level evaluations examine the choices that lead to action.",
+        "The practical test is how those layers work together while useful work continues. Safer decisions and dependable movement both matter when a person enters the workspace or the task changes."
+      ]
+    },
+    {
+      "heading": "What progress should look like next",
+      "paragraphs": [
+        "The next meaningful evidence is sustained repetition: completing the workflow, recovering when a grasp fails and maintaining a useful pace across changing conditions.",
+        "In its reporting on the release, Ars Technica describes DeepMind’s tradeoff between broader generalization and optimizing a particular application to very high reliability. That is the central tension here. A robot may learn more kinds of work while each individual process still needs refinement.",
+        "Gemini Robotics 2.5 gives that refinement a concrete setting. The strongest follow through would connect broader skills to longer runs of dependable factory work, with recovery and supervision included in the assessment."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google DeepMind, Gemini Robotics 2.5 announcement, November 10, 2026",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
+    },
+    {
+      "label": "Google DeepMind, Gemini Robotics 2.5 action model",
+      "url": "https://deepmind.google/models/gemini-robotics/vla/"
+    },
+    {
+      "label": "Google DeepMind, Gemini Robotics ER 2 embodied reasoning",
+      "url": "https://deepmind.google/models/gemini-robotics/embodied-reasoning/"
+    },
+    {
+      "label": "Apptronik, Apollo 2 platform and safety architecture",
+      "url": "https://apptronik.com/apollo/apollo-2"
+    },
+    {
+      "label": "Franka Robotics, FR3 Duo research platform",
+      "url": "https://franka.de/fr3-duo"
+    },
+    {
+      "label": "Mercedes Benz, Digital Factory Campus and Apollo development, March 18, 2025",
+      "url": "https://group.mercedes-benz.com/company/production/production-network/mbdfc-humanoid-robots.html"
+    },
+    {
+      "label": "Google Developers Blog, Gemini 4 Argon for Robotics, October 13, 2026",
+      "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/"
+    },
+    {
+      "label": "Google, ASIMOV agentic evaluation framework and dataset card",
+      "url": "https://huggingface.co/datasets/google/asimov_agentic"
+    },
+    {
+      "label": "Ars Technica, reporting on Gemini Robotics 2.5, November 10, 2026",
+      "url": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/"
+    },
+    {
+      "label": "Crypto Briefing, Gemini Robotics 2.5 launch coverage, November 10, 2026",
+      "url": "https://cryptobriefing.com/gemini-robotics-2-5-launch-everyday-skills/"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [],
+    "technologies": [
+      "foundation-models",
+      "simulation",
+      "digital-twins"
+    ],
+    "applications": [
+      "assembly"
+    ]
+  },
+  "publishedDate": "2026-11-10",
+  "publishedAt": "2026-11-10T11:27:43-05:00",
+  "publishedLabel": "November 10, 2026"
+},
+{
   "slug": "teradyne-omnyx-edge-board-test",
   "title": "Teradyne launches Omnyx Edge to test electronics before robot assembly",
   "summary": "The new platform brings circuit board testing into automated production lines, targeting the computing, sensing and motion electronics inside robots and other edge AI devices.",
