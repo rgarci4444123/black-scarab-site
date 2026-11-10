@@ -222,3 +222,17 @@ The in-article visual compares first-pass and final accepted yield for an illust
 Manufacturing Engineer user revision, November 10: applied attachment `1296c5a3-bd07-4aa0-869a-74e0d59fa1be` across nine sections, adding a dedicated quality section and moving the existing first-pass-yield visual there. Expanded manufacturing skills, education routes, employer applications, transitions and the eight-step sensor-bracket project; added the supplied ASQ, NIST and SME resources. Consolidated the supplied outcome table and custom grid markup into the existing responsive visual. Salary labels retain the verified annual-advertised basis and $182,000 estimate. Reviewed eight responsive tables and the yield visual on desktop, tablet and narrow mobile. Local review continues at port 3048.
 
 Manufacturing Engineer approved for publication November 10, 2026, including the full user revision, quality section, yield graphic and eight-step project. First-publication and review dates use November 10. Motion Planning Engineer is next for local drafting.
+
+
+## Manufacturing release and Motion Planning local review · November 10, 2026
+
+Manufacturing Engineer is deployed in commit `ae8a07f49fb5f3c970fa6b069f480e7b87f475db`. The full user rewrite, nine sections, eight-step project, $182,000 estimate, artwork, first-pass-yield visual, metadata, research downloads, category link and sitemap are live and verified.
+
+Motion Planning Engineer is the next local draft at `/career-paths/intelligence-autonomy/motion-planning-engineer`. Eight sections cover manipulation, autonomous vehicles, flight, collision geometry, search/sampling/optimization, trajectory timing and a repeatable planning benchmark. Ten stored full employer sources reviewed, with two additional boundary reviews. The seven eligible annual U.S. salary observations across five employers yield a $217,500 median midpoint, rounded to a $218,000 estimate. Mission routing and discrete task allocation are excluded. Annual frequency is not assumed from salary amounts or annual-bonus wording. Reproduce with `scripts/build-motion-planning-guide-research.py --archive-root`.
+
+A new server-rendered two-panel graphic explains obstacle inflation for a circular robot, with exact shared geometry and a footprint-valid detour. The opening illustration uses an outdoor architectural obstacle course, neutral concrete, a small rover, ghosted poses and selective coral route accents. No first-publication date; local review required.
+
+
+Motion Planning Engineer user revision, November 10: applied attachment `09c62f57-4cf4-44f9-baef-1e6136999be4` across eight sections. Expanded accessible explanations of geometry, configuration space, collision detection, search, dynamics and trajectory planning; added the supplied transition table and nine-step portfolio project. The existing clearance graphic replaces the duplicated measurement table. Preserved $218,000 estimate, exact geometry, hero, original fragments and full collapsed methodology. Salary-table labels retain verified annual advertised salary rather than assuming base-pay treatment. Added the supplied Modern Robotics and MoveIt resource entries. Local review continues at port 3050.
+
+Motion Planning Engineer approved for publication November 10, 2026, including the complete user revision, nine-step project and clearance graphic. First publication uses November 10. Verification & Validation Engineer is next for local drafting.

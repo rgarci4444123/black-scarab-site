@@ -59,13 +59,14 @@
     {
       "order": 9,
       "roleId": "manufacturing-engineer",
-      "status": "approved-for-release",
+      "status": "deployed",
       "path": "/career-paths/hardware-manufacturing/manufacturing-engineer"
     },
     {
       "order": 10,
       "roleId": "motion-planning-engineer",
-      "status": "queued"
+      "status": "approved-for-release",
+      "path": "/career-paths/intelligence-autonomy/motion-planning-engineer"
     },
     {
       "order": 11,

@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "reviewedAt": "2026-11-10",
+  "aggregatePath": "/research/physical-ai-careers-2026-11-02.json",
+  "aggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "rawArchive": {
+    "relativeRoot": "research/physical-ai/2026-11-02",
+    "normalizedRecords": "postings.jsonl",
+    "manifestHash": "6b48026839dcafc9d68144cf3fbedf38889984ad96f667a21e058b4d25f26f14"
+  },
+  "interpretation": "Contextual guide review; original research remains unchanged.",
+  "roles": {
+    "motion-planning-engineer": {
+      "recordIds": [
+        "applied-intuition:ashby:107c5e3f-43ca-4001-bbbb-61533edae1ae",
+        "applied-intuition:ashby:6288cb30-1d6d-4235-962a-d0e5d72a369a",
+        "gatik:greenhouse:4063226006",
+        "kodiak:greenhouse:4173361009",
+        "nuro:greenhouse:6953540",
+        "pickle-robot:lever:44a2d3e8-54d3-4a41-9085-0e7a2cbefc7d",
+        "shield-ai:lever:68a9b3cd-6c74-4cd7-a69f-36f1b92bb623",
+        "zipline:greenhouse:7802961003",
+        "zoox:lever:00bede24-f74d-4447-ace1-48638965382e",
+        "zoox:lever:7dd45151-9d8a-45a4-bb33-86fb88c1995d"
+      ],
+      "auditPath": "research/career-guides/motion-planning-engineer/evidence-audit.json",
+      "compensation": [
+        {
+          "employer": "Applied Intuition",
+          "title": "Software Engineer - Planning",
+          "url": "https://jobs.ashbyhq.com/applied/107c5e3f-43ca-4001-bbbb-61533edae1ae",
+          "minimum": 125000,
+          "maximum": 245000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "recordId": "applied-intuition:ashby:107c5e3f-43ca-4001-bbbb-61533edae1ae",
+          "location": "Sunnyvale"
+        },
+        {
+          "employer": "Pickle Robot",
+          "title": "Software Engineer – Task & Motion Planning",
+          "url": "https://jobs.lever.co/picklerobot/44a2d3e8-54d3-4a41-9085-0e7a2cbefc7d",
+          "minimum": 168570,
+          "maximum": 200687,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "recordId": "pickle-robot:lever:44a2d3e8-54d3-4a41-9085-0e7a2cbefc7d",
+          "location": "Charlestown, MA"
+        },
+        {
+          "employer": "Zoox",
+          "title": "Software Engineer - Motion Planning",
+          "url": "https://jobs.lever.co/zoox/7dd45151-9d8a-45a4-bb33-86fb88c1995d",
+          "minimum": 168000,
+          "maximum": 270000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised-salary",
+          "recordId": "zoox:lever:7dd45151-9d8a-45a4-bb33-86fb88c1995d",
+          "location": "Foster City, CA"
+        }
+      ],
+      "skillPresentation": "qualitative-source-comparison",
+      "scopeNote": "Original primary cohort includes adjacent behavior/prediction, mission-routing, discrete-planning and infrastructure roles. No vacancy counts or skill-frequency claims."
+    }
+  },
+  "records": [
+    {
+      "id": "applied-intuition:ashby:107c5e3f-43ca-4001-bbbb-61533edae1ae",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Planning",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/107c5e3f-43ca-4001-bbbb-61533edae1ae",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "3feeea878d712c6c12079ee30b0a07f2d127b07c53c0b0b54fe5a2dfd0889861",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; classifications and source archive unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Vehicle trajectories, perception/map inputs, real-time C++, production deployment.",
+      "qualification": "Bachelor’s in Computer Science, Electrical Engineering, Robotics, or related field",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s in Computer Science, Electrical Engineering, Robotics, or related field",
+          "start": 2864,
+          "end": 2946
+        }
+      ]
+    },
+    {
+      "id": "applied-intuition:ashby:6288cb30-1d6d-4235-962a-d0e5d72a369a",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Motion Planning (Fallback Stack)",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/6288cb30-1d6d-4235-962a-d0e5d72a369a",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "37cbcc91bea053d3addeaf370734503d3bb9958d2582d0f47c86863a03a50aa0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; classifications and source archive unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Deterministic fallback trajectories under degraded perception, simulation and field validation.",
+      "qualification": "Bachelors degree in Computer Science, Computer Engineering, Electrical Engineering, or related field",
+      "qualificationSpans": [
+        {
+          "text": "Bachelors degree in Computer Science, Computer Engineering, Electrical Engineering, or related field",
+          "start": 3419,
+          "end": 3519
+        }
+      ]
+    },
+    {
+      "id": "gatik:greenhouse:4063226006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior Software Engineer, Motion Planning",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4063226006?gh_jid=4063226006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "518e2e7aae5c2f2b8cce666179443f0262c4bf3caaa01d64e1fcade87ba96059",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; classifications and source archive unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Lattice, sampling and optimization-based vehicle trajectories, feasibility constraints and closed-loop validation.",
+      "qualification": "Ph.D. with 3+ years or Master’s with 5+ years of experience in robotics, motion planning, or autonomous systems.",
+      "qualificationSpans": [
+        {
+          "text": "Ph.D. with 3+ years or Master’s with 5+ years of experience in robotics, motion planning, or autonomous systems.",
+          "start": 2588,
+          "end": 2700
+        }
+      ]
+    },
+    {
+      "id": "kodiak:greenhouse:4173361009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Senior Software Engineer, Behavior & Motion Planning",
+      "locations": [
+        "Bay Area, California, United States",
+        "Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4173361009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "d04bec4556aeed63c0ea1a7640f470884f5ddb516a22c909378acf75dc5b9276",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; classifications and source archive unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Technical ownership of behavior/motion features, production C++, log debugging and validation.",
+      "qualification": "Experience in behavior planning, motion planning, decision-making, robotics, autonomous vehicles, or related areas.",
+      "qualificationSpans": [
+        {
+          "text": "Experience in behavior planning, motion planning, decision-making, robotics, autonomous vehicles, or related areas.",
+          "start": 2077,
+          "end": 2192
+        }
+      ]
+    },
+    {
+      "id": "nuro:greenhouse:6953540",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Senior Software Engineer, Behavior Planning",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=6953540",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "1b3163a724e0c8725cc5c1574799e856b727b0f383e29e9593b9c65f5b9d65a2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; classifications and source archive unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Learned planning for road vehicles, robotics/ML algorithms and deployment.",
+      "qualification": "PhD or Masters Degree in robotics, computer science, mechanical/aerospace engineering, electrical engineering, mathematics, or related field.",
+      "qualificationSpans": [
+        {
+          "text": "PhD or Masters Degree in robotics, computer science, mechanical/aerospace engineering, electrical engineering, mathematics, or related field.",
+          "start": 2682,
+          "end": 2823
+        }
+      ]
+    },
+    {
+      "id": "pickle-robot:lever:44a2d3e8-54d3-4a41-9085-0e7a2cbefc7d",
+      "employerId": "pickle-robot",
+      "employer": "Pickle Robot",
+      "title": "Software Engineer – Task & Motion Planning",
+      "locations": [
+        "Charlestown, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/picklerobot/44a2d3e8-54d3-4a41-9085-0e7a2cbefc7d",
+      "verifiedAt": "2026-11-02T17:47:00+00:00",
+      "sourceTextSha256": "c02f981c3fe12568cd37d6b42fc2e4fb62c76c492e88d9b2f977d8c18cbd807e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/pickle-robot.json",
+      "rawSourceFileSha256": "2de11393fde7ac44bf6084223fc9c560c4c6d1d17192d26d08ebf68459709400",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; classifications and source archive unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Manipulation: grasp selection, collision checks, task sequencing and production planner performance.",
+      "qualification": "2–4 years of experience writing and shipping production software, primarily in modern C++ (C++17 or later), with working proficiency in Python",
+      "qualificationSpans": [
+        {
+          "text": "2–4 years of experience writing and shipping production software, primarily in modern C++ (C++17 or later), with working proficiency in Python",
+          "start": 1976,
+          "end": 2118
+        }
+      ]
+    },
+    {
+      "id": "shield-ai:lever:68a9b3cd-6c74-4cd7-a69f-36f1b92bb623",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Autonomy Engineer- Behavior and Motion Planning (R6007)",
+      "locations": [
+        "San Diego, California"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/68a9b3cd-6c74-4cd7-a69f-36f1b92bb623",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "b78d5d3c3fd9a08e8151faacd071c36c125215b8e249c841b988f42ed157644c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; classifications and source archive unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Trajectory planning for autonomous systems, C++/Python, simulation and hardware validation.",
+      "qualification": "- Bachelor's degree in computer science, engineering, applied mathematics, operations research, or",
+      "qualificationSpans": [
+        {
+          "text": "- Bachelor's degree in computer science, engineering, applied mathematics, operations research, or",
+          "start": 3556,
+          "end": 3654
+        }
+      ]
+    },
+    {
+      "id": "zipline:greenhouse:7802961003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Senior Motion Planning Software Engineer",
+      "locations": [
+        "Ann Arbor, Michigan USA; South San Francisco, California, USA",
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7802961003?gh_jid=7802961003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "24824e2d1308dce8706c5b485c38f3968f6b2f91bcf1c2bca241cd2dfb2f321b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; classifications and source archive unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Autonomous flight trajectories, optimization, vehicle constraints, log replay and fault injection.",
+      "qualification": "Master's degree in Computer Science or related field and 3+ years of experience building software for safety-critical systems (aerospace/AV/robotics).",
+      "qualificationSpans": [
+        {
+          "text": "Master's degree in Computer Science or related field and 3+ years of experience building software for safety-critical systems (aerospace/AV/robotics).",
+          "start": 3108,
+          "end": 3258
+        }
+      ]
+    },
+    {
+      "id": "zoox:lever:00bede24-f74d-4447-ace1-48638965382e",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Senior / Staff Software Engineer - Motion Planning",
+      "locations": [
+        "Boston, MA",
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/00bede24-f74d-4447-ace1-48638965382e",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "dac5ce0003253a35ccc08f8100e2ed22babedf54397e5c8cb008e73a72b33270",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; classifications and source archive unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Senior/staff technical motion-planning algorithms, real-time C++ and physical-vehicle testing.",
+      "qualification": "Master's degree in Computer Science or a related field and 8+ years of experience",
+      "qualificationSpans": [
+        {
+          "text": "Master's degree in Computer Science or a related field and 8+ years of experience",
+          "start": 1502,
+          "end": 1583
+        }
+      ]
+    },
+    {
+      "id": "zoox:lever:7dd45151-9d8a-45a4-bb33-86fb88c1995d",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Software Engineer - Motion Planning",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/7dd45151-9d8a-45a4-bb33-86fb88c1995d",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "7824b2e28fec2177c972bcd845128085fd7556ce712766c7e10213e361c2ea9b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Full stored-source contextual review; classifications and source archive unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Motion-planning algorithms, configuration spaces, graph/sampling techniques and vehicle evaluation.",
+      "qualification": "Master's degree in Computer Science or related field and relevant experience",
+      "qualificationSpans": [
+        {
+          "text": "Master's degree in Computer Science or related field and relevant experience",
+          "start": 1502,
+          "end": 1578
+        }
+      ]
+    }
+  ]
+}

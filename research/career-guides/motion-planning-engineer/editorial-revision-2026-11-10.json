@@ -1,0 +1,35 @@
+{
+  "revisedAt": "2026-11-10",
+  "status": "complete-copy-applied",
+  "sourcePath": "/Users/rodolfogarcia/.codex/attachments/09c62f57-4cf4-44f9-baef-1e6136999be4/Pasted text.txt",
+  "sourceSha256": "5d7a296495d9edfa454cfe3f2f9d8d11910a7e4da2a8ac652ce970f3009e6e23",
+  "sectionCount": 8,
+  "preserved": [
+    "Existing H1, SEO metadata, canonical route and section fragments",
+    "218000 USD estimate, seven salary observations and complete provenance",
+    "Original hero and paired clearance graphic with the exact geometry",
+    "Complete collapsed research methodology",
+    "Local-review status, no first-publication date"
+  ],
+  "presentation": [
+    "Applied supplied deck, overview and full article rewrite.",
+    "Expanded portfolio to nine steps and added detailed explanations of geometry, configuration space, planning methods and career transitions.",
+    "Replaced supplied measurement table with the existing clearance graphic, retaining one presentation of the same numeric comparison.",
+    "Normalized Markdown emphasis and escaped A-star notation to readable text.",
+    "Added supplied official Modern Robotics and MoveIt resource links."
+  ],
+  "sourceCorrections": [
+    "Annual advertised salary retained because structured salary fields do not consistently establish base-pay basis.",
+    "Unsupported compensation-premium generalization revised to a comparison of technical responsibility."
+  ],
+  "resourceChecks": [
+    {
+      "url": "https://modernrobotics.northwestern.edu/",
+      "result": "Official video supplement index, including motion-planning chapter; redirects to foundations overview."
+    },
+    {
+      "url": "https://moveit.ai/",
+      "result": "Official framework overview and tutorials links."
+    }
+  ]
+}

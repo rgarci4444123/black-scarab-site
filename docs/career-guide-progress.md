@@ -1,6 +1,6 @@
 # Career guide progress
 
-Updated November 10, 2026. Thirteen of twenty approved for publication. Manufacturing Engineer is approved for release; seven guides remain.
+Updated November 10, 2026. Fourteen of twenty approved for publication. Motion Planning Engineer is approved for release; six guides remain.
 
 - ~~Mechanical Engineer~~
 - ~~Robot Learning Engineer~~
@@ -15,7 +15,7 @@ Updated November 10, 2026. Thirteen of twenty approved for publication. Manufact
 - ~~Machine Learning Infrastructure Engineer~~
 - ~~Industrial Automation Engineer~~
 - ~~Manufacturing Engineer~~
-- Motion Planning Engineer
+- ~~Motion Planning Engineer~~
 - Verification & Validation Engineer
 - Robot Operations Specialist
 - Hardware Test Engineer

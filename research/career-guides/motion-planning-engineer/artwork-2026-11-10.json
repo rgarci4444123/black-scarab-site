@@ -1,0 +1,52 @@
+{
+  "createdAt": "2026-11-10",
+  "tool": "built-in image_gen",
+  "brief": {
+    "storyThesis": "Motion planning connects a goal to motion that respects obstacles and the physical machine.",
+    "visualThesis": "A route becomes meaningful only when a robot can fit through it.",
+    "medium": "Cinematic architectural editorial 3D illustration",
+    "subjectScale": "Compact mobile robot within monumental outdoor proving-ground obstacles",
+    "viewpoint": "Low ground-level diagonal with deep perspective",
+    "composition": "Off-center small robot and repeated translucent future poses along a bending route",
+    "palette": "85 percent white, graphite and gray; 15 percent warm coral-orange route accents",
+    "lighting": "Low raking daylight, long architectural shadows",
+    "surface": "Concrete, brushed metal and matte composite",
+    "cropPlan": "Wide hero with central obstacle corridor and robot kept visible in square crop",
+    "recentCoverReview": [
+      {
+        "role": "field-service-engineer",
+        "fingerprint": "Ground-level close human/vehicle service scene, amber warehouse"
+      },
+      {
+        "role": "embedded-software-engineer",
+        "fingerprint": "Isolated high-key close-up of opened forearm and circuit board, lime"
+      },
+      {
+        "role": "robotics-controls-engineer",
+        "fingerprint": "Studio quadruped on tilted platform, pale background, purple"
+      },
+      {
+        "role": "machine-learning-infrastructure-engineer",
+        "fingerprint": "Vast dark vertical server hall, distant human, amber catwalk"
+      },
+      {
+        "role": "industrial-automation-engineer",
+        "fingerprint": "Top-down factory conveyor network, sunlit cyan carriers"
+      },
+      {
+        "role": "manufacturing-engineer",
+        "fingerprint": "Close fixture and gloved hands, factory assemblies receding, graphite and yellow tooling"
+      }
+    ],
+    "avoid": "Factory interiors, engineers at screens, studio product packshots, typography, logos, paper-like constructions."
+  },
+  "prompt": "Use case: stylized-concept. Asset: wide editorial cover for a Motion Planning Engineer career guide. Visual thesis: a route becomes meaningful only when a robot can fit through it. Create an arresting cinematic architectural scene, viewed from very low ground level diagonally into a futuristic open-air robotics proving ground. Monumental white concrete and graphite metal obstacle slabs form a challenging staggered corridor. An off-center compact unbranded autonomous rover with substantial wheels is moving around a corner; two subtly translucent future rover poses describe its intended route. A single restrained warm coral-orange route ribbon lies close to the floor, bending smoothly around the slabs with ample clearance, suggesting a planned trajectory rather than a painted road. The architecture dominates the frame; robot occupies a small but legible part of the scene. Raking daylight, long exact shadows, tactile concrete and matte composite, editorial sophistication, spatial drama. Approximately 85 percent monochrome black white gray, 15 percent deliberate coral-orange accents. No text, letters, numbers, logos, interfaces, humans, paper craft, factory, warehouse, server room, or isolated catalogue product. Landscape 16:9, high detail.",
+  "status": "selected",
+  "asset": "public/career-paths/motion-planning-engineer-lab.webp",
+  "generatedSource": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-089b94cd-1e63-4ef4-889b-a324ed4b3460.png",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "bytes": 185394
+}

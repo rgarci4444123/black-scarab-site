@@ -1,0 +1,69 @@
+{
+  "kind": "illustrative-configuration-space",
+  "units": "meters",
+  "width": 8,
+  "height": 6,
+  "robotRadius": 0.4,
+  "clearance": 0.1,
+  "obstacles": [
+    {
+      "x": 3,
+      "y": 1.2,
+      "width": 2,
+      "height": 1.5
+    },
+    {
+      "x": 3,
+      "y": 3.3,
+      "width": 2,
+      "height": 1.5
+    }
+  ],
+  "start": [
+    1,
+    3
+  ],
+  "goal": [
+    7,
+    3
+  ],
+  "directRoute": [
+    [
+      1,
+      3
+    ],
+    [
+      7,
+      3
+    ]
+  ],
+  "detourRoute": [
+    [
+      1,
+      3
+    ],
+    [
+      2.2,
+      3
+    ],
+    [
+      2.2,
+      0.6
+    ],
+    [
+      5.8,
+      0.6
+    ],
+    [
+      5.8,
+      3
+    ],
+    [
+      7,
+      3
+    ]
+  ],
+  "gap": 0.6,
+  "requiredGap": 1.0,
+  "assumptions": "Static axis-aligned obstacles, circular translating robot, uniform 0.1 m clearance. Inflate obstacles by 0.5 m using rounded corners. Piecewise-linear detour is a geometric path, not a time-parameterized trajectory or shortest-path result. A physical robot needs motion limits, timing and validation."
+}

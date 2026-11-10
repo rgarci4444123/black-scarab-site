@@ -1,0 +1,554 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "derivedAt": "2026-11-10",
+  "roleId": "motion-planning-engineer",
+  "sourceAggregate": "/research/physical-ai-careers-2026-11-02.json",
+  "sourceAggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "label": "Black Scarab estimated compensation",
+  "currency": "USD",
+  "period": "year",
+  "basis": "advertised annual salary, excluding bonus and equity",
+  "postingCount": 7,
+  "employerCount": 5,
+  "exactMedianMidpoint": 217500.0,
+  "estimate": 218000,
+  "rounding": "nearest 1000 USD, halves rounded upward",
+  "method": "Median of one eligible annual advertised salary-range midpoint per distinct requisition.",
+  "eligibility": "Reviewed U.S. technical engineering roles owning robot/vehicle motion, trajectory or learned planning; complete annual USD range. Excludes mission routing, discrete task allocation and dedicated infrastructure.",
+  "limitations": "Small purposive sample spanning general, senior and staff technical positions; AV work and California locations are prominent. Not an entry-level rate or representative market median. Multiple requisitions from two employers; mixed base-pay and structured salary fields.",
+  "observations": [
+    {
+      "id": "applied-intuition:ashby:107c5e3f-43ca-4001-bbbb-61533edae1ae",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Planning",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/107c5e3f-43ca-4001-bbbb-61533edae1ae",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "3feeea878d712c6c12079ee30b0a07f2d127b07c53c0b0b54fe5a2dfd0889861",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 125000,
+      "maximum": 245000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 185000.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Vehicle trajectories, perception/map inputs, real-time C++, production deployment."
+    },
+    {
+      "id": "applied-intuition:ashby:6288cb30-1d6d-4235-962a-d0e5d72a369a",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Software Engineer - Motion Planning (Fallback Stack)",
+      "locations": [
+        "Sunnyvale"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/6288cb30-1d6d-4235-962a-d0e5d72a369a",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "37cbcc91bea053d3addeaf370734503d3bb9958d2582d0f47c86863a03a50aa0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "minimum": 151000,
+      "maximum": 240000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 195500.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Deterministic fallback trajectories under degraded perception, simulation and field validation."
+    },
+    {
+      "id": "nuro:greenhouse:6953540",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Senior Software Engineer, Behavior Planning",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=6953540",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "1b3163a724e0c8725cc5c1574799e856b727b0f383e29e9593b9c65f5b9d65a2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "minimum": 193930,
+      "maximum": 291150,
+      "currency": "USD",
+      "period": "year",
+      "basis": "base salary",
+      "extraction": "full-source-text",
+      "sourceClause": "At Nuro, your base pay is one part of your total compensation package. For this position, the reasonably expected pay range is between $193,930 and $291,150/year for the level at which this job has been scoped. Your base pay will depend on several factors, including your experience, qualifications, education, location, and skills. In the event that you are considered for a different level, a higher or lower pay range would apply. This position is also eligible for an annual performance bonus, equity, and a competitive benefits package.",
+      "sourceSpan": {
+        "start": 4092,
+        "end": 4633
+      },
+      "midpoint": 242540.0,
+      "seniority": "senior",
+      "scope": "Learned planning for road vehicles, robotics/ML algorithms and deployment."
+    },
+    {
+      "id": "pickle-robot:lever:44a2d3e8-54d3-4a41-9085-0e7a2cbefc7d",
+      "employerId": "pickle-robot",
+      "employer": "Pickle Robot",
+      "title": "Software Engineer – Task & Motion Planning",
+      "locations": [
+        "Charlestown, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/picklerobot/44a2d3e8-54d3-4a41-9085-0e7a2cbefc7d",
+      "verifiedAt": "2026-11-02T17:47:00+00:00",
+      "sourceTextSha256": "c02f981c3fe12568cd37d6b42fc2e4fb62c76c492e88d9b2f977d8c18cbd807e",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/pickle-robot.json",
+      "rawSourceFileSha256": "2de11393fde7ac44bf6084223fc9c560c4c6d1d17192d26d08ebf68459709400",
+      "minimum": 168570,
+      "maximum": 200687,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 184628.5,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Manipulation: grasp selection, collision checks, task sequencing and production planner performance."
+    },
+    {
+      "id": "shield-ai:lever:68a9b3cd-6c74-4cd7-a69f-36f1b92bb623",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Autonomy Engineer- Behavior and Motion Planning (R6007)",
+      "locations": [
+        "San Diego, California"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/68a9b3cd-6c74-4cd7-a69f-36f1b92bb623",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "b78d5d3c3fd9a08e8151faacd071c36c125215b8e249c841b988f42ed157644c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "minimum": 135000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 217500.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Trajectory planning for autonomous systems, C++/Python, simulation and hardware validation."
+    },
+    {
+      "id": "zoox:lever:00bede24-f74d-4447-ace1-48638965382e",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Senior / Staff Software Engineer - Motion Planning",
+      "locations": [
+        "Boston, MA",
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/00bede24-f74d-4447-ace1-48638965382e",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "dac5ce0003253a35ccc08f8100e2ed22babedf54397e5c8cb008e73a72b33270",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 254000,
+      "maximum": 350000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 302000.0,
+      "seniority": "staff-principal",
+      "scope": "Senior/staff technical motion-planning algorithms, real-time C++ and physical-vehicle testing."
+    },
+    {
+      "id": "zoox:lever:7dd45151-9d8a-45a4-bb33-86fb88c1995d",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Software Engineer - Motion Planning",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/7dd45151-9d8a-45a4-bb33-86fb88c1995d",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "7824b2e28fec2177c972bcd845128085fd7556ce712766c7e10213e361c2ea9b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 168000,
+      "maximum": 270000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 219000.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Motion-planning algorithms, configuration spaces, graph/sampling techniques and vehicle evaluation."
+    }
+  ],
+  "excludedObservations": [
+    {
+      "id": "applied-intuition:ashby:71413c0e-3150-42ce-9640-37269a6ee7c0",
+      "employerId": "applied-intuition",
+      "employer": "Applied Intuition",
+      "title": "Senior Software Engineer - Planning",
+      "locations": [
+        "Tokyo"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "url": "https://jobs.ashbyhq.com/applied/71413c0e-3150-42ce-9640-37269a6ee7c0",
+      "verifiedAt": "2026-11-02T17:47:01+00:00",
+      "sourceTextSha256": "8fb4cc489ab31ae62aa9cf4ec176e724102aa842e4b6d3e3d23064e76f14f5b7",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/applied-intuition.json",
+      "rawSourceFileSha256": "739ece566c65cb625b82dfc9215d9731c2e155e928edea1dd0ea0b5c782c80a9",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "gatik:greenhouse:4063226006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior Software Engineer, Motion Planning",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4063226006?gh_jid=4063226006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "518e2e7aae5c2f2b8cce666179443f0262c4bf3caaa01d64e1fcade87ba96059",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "No complete explicitly annual USD range verified. Annual bonus wording alone does not establish salary frequency."
+    },
+    {
+      "id": "gatik:greenhouse:4591049006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Senior Behavior Planning Engineer",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4591049006?gh_jid=4591049006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "371e221ed1cd7232aa07fc64622d87ac461b6ef45ec262684c37d796c8bde505",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "Outside selected contextual motion-planning review or focused on adjacent behavior, prediction, research or infrastructure."
+    },
+    {
+      "id": "kodiak:greenhouse:4173361009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Senior Software Engineer, Behavior & Motion Planning",
+      "locations": [
+        "Bay Area, California, United States",
+        "Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4173361009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "d04bec4556aeed63c0ea1a7640f470884f5ddb516a22c909378acf75dc5b9276",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reason": "No complete explicitly annual USD range verified. Annual bonus wording alone does not establish salary frequency."
+    },
+    {
+      "id": "kodiak:greenhouse:4292556009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Staff Software Engineer, Behavior Planning",
+      "locations": [
+        "Mountain View, CA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4292556009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "4c0e246508077d58f7cc0f233379df6507fa57121a08ab2a6883ba6f0530d55d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reason": "Outside selected contextual motion-planning review or focused on adjacent behavior, prediction, research or infrastructure."
+    },
+    {
+      "id": "kodiak:greenhouse:4294898009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Staff Software Engineer, Learned & Hybrid Behavior Planning",
+      "locations": [
+        "Mountain View, CA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4294898009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "90996fdb20044b46df75fcd65ed2f5b974841bbfc65abd9e2e71d992867b320f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reason": "Outside selected contextual motion-planning review or focused on adjacent behavior, prediction, research or infrastructure."
+    },
+    {
+      "id": "kodiak:greenhouse:4297189009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Senior Software Engineer, Planning Infrastructure",
+      "locations": [
+        "Mountain View, CA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4297189009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "f6e3a6cf6ca44f650f5140afb82e78eadbbb56f74fe6b5f68665a97d54e3eefa",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reason": "Outside selected contextual motion-planning review or focused on adjacent behavior, prediction, research or infrastructure."
+    },
+    {
+      "id": "nuro:greenhouse:5434059",
+      "employerId": "nuro",
+      "employer": "Nuro",
+      "title": "Machine Learning Research Scientist, Behavior Planning and Prediction",
+      "locations": [
+        "Mountain View, California (HQ)",
+        "Nuro HQ - Mountain View, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nuro.ai/careersitem?gh_jid=5434059",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "1122ba17bcb1009e8980fe39a3b8b2a2e239f77aa8f32b7b7d626b4e225689db",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nuro.json",
+      "rawSourceFileSha256": "04489048507f4a19cf30d818b4e71d7d1214f0a81a8ea6e18060d7f269628e17",
+      "reason": "Outside selected contextual motion-planning review or focused on adjacent behavior, prediction, research or infrastructure."
+    },
+    {
+      "id": "nvidia:workday:JR2022072",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior Software Engineer, Longitudinal Planning – Autonomous Vehicles",
+      "locations": [
+        "China, Beijing",
+        "China, Shanghai"
+      ],
+      "countries": [
+        "China"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/China-Beijing/Senior-Software-Engineer--Longitudinal-Planning---Autonomous-Vehicles_JR2022072",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "6a83ee71011374fe85f77ca37d2bdd1cd54f9993d5a703e2058f8972aa524696",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "nvidia:workday:JR2024273",
+      "employerId": "nvidia",
+      "employer": "NVIDIA",
+      "title": "Senior Software Engineer, AV Planner - Autonomous Vehicles",
+      "locations": [
+        "US, CA, Santa Clara"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--AV-Planner---Autonomous-Vehicles_JR2024273-1",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "261fabb13dce6e5c1f05e5c6e281e56137ed85b71f0f407a083149985d1d7277",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/nvidia.json",
+      "rawSourceFileSha256": "566e58e5bf5799b8ee58d85e34aefe660d08cac0c45e3fc302046b7afc74bad5",
+      "reason": "Outside selected contextual motion-planning review or focused on adjacent behavior, prediction, research or infrastructure."
+    },
+    {
+      "id": "shield-ai:lever:041e8344-bf6c-4199-8568-4ccfbf5423ba",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Discrete Planning Engineer (R5440)",
+      "locations": [
+        "San Diego, California",
+        "United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/shieldai/041e8344-bf6c-4199-8568-4ccfbf5423ba",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "433b974cb4792fd308cc0b9a90c7705160fbae4c506738232fdd3d115e911d57",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Discrete task allocation, scheduling and mission optimization, rather than geometric/trajectory motion-planning ownership."
+    },
+    {
+      "id": "shield-ai:lever:2dd71f90-62a3-4855-a528-cb3c740efc9a",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior Staff Engineer, Autonomy and Motion Planning (R5538)",
+      "locations": [
+        "London"
+      ],
+      "countries": [
+        "United Kingdom"
+      ],
+      "url": "https://jobs.lever.co/shieldai/2dd71f90-62a3-4855-a528-cb3c740efc9a",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "2706e71707002fdd4982f56e0953d18bad1960597defb4e8adabca47bdd9aefc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "shield-ai:lever:82ee14ce-eba4-4cef-a540-599f828cd652",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Senior Engineer, Autonomy and Motion Planning (R5263)",
+      "locations": [
+        "London"
+      ],
+      "countries": [
+        "United Kingdom"
+      ],
+      "url": "https://jobs.lever.co/shieldai/82ee14ce-eba4-4cef-a540-599f828cd652",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "32caac18e5c31cc116be7ca5538c772e0aa02459e33d5eaafd5ba6eb024e1705",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "shield-ai:lever:9092fbe5-9f63-4ada-8e65-00d2f4754fd3",
+      "employerId": "shield-ai",
+      "employer": "Shield AI",
+      "title": "Staff Software Engineer, Autonomy & Motion Planning",
+      "locations": [
+        "Bangalore"
+      ],
+      "countries": [
+        "India"
+      ],
+      "url": "https://jobs.lever.co/shieldai/9092fbe5-9f63-4ada-8e65-00d2f4754fd3",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "d09f9a6cedbdc3a8cd301e4b972f6445a7d667511f33993a96ba593f295c1386",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/shield-ai.json",
+      "rawSourceFileSha256": "5920c07ee467d3b8735edf7820bde304aefb70b55d818e6e25e57e1fb1f11eac",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "waymo:greenhouse:6506689",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Machine Learning Engineer, Prediction & Planning",
+      "locations": [
+        "Mountain View, CA USA; San Francisco, CA USA",
+        "Mountain View, CA, USA; San Francisco, CA, USA",
+        "Mountain View, California, United States",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=6506689",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "0bb422c7e01d5198c0922c19c95d99a352f9953907e1cc23ae125618c8773bb2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "Outside selected contextual motion-planning review or focused on adjacent behavior, prediction, research or infrastructure."
+    },
+    {
+      "id": "waymo:greenhouse:8191840",
+      "employerId": "waymo",
+      "employer": "Waymo",
+      "title": "Senior Machine Learning Engineer, Predictive Planner, Systems Arch",
+      "locations": [
+        "Mountain View, CA, USA; San Francisco, CA, USA",
+        "Mountain View, California, United States",
+        "San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=8191840",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "966b693270c7508e9d968ce237a656b15bace06a50cdf422b417b6c4ed44e4db",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/waymo.json",
+      "rawSourceFileSha256": "20f1789eedaff15a3dc356dfd12f9b8b64e88136517e3f8d5e2015ec3ba6a36a",
+      "reason": "Outside selected contextual motion-planning review or focused on adjacent behavior, prediction, research or infrastructure."
+    },
+    {
+      "id": "zipline:greenhouse:7802961003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Senior Motion Planning Software Engineer",
+      "locations": [
+        "Ann Arbor, Michigan USA; South San Francisco, California, USA",
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7802961003?gh_jid=7802961003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "24824e2d1308dce8706c5b485c38f3968f6b2f91bcf1c2bca241cd2dfb2f321b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No complete explicitly annual USD range verified. Annual bonus wording alone does not establish salary frequency."
+    },
+    {
+      "id": "zoox:lever:6efb15a8-ebe0-4ffc-bcc6-1d8f8375dbee",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Software Engineer - Mission Planning",
+      "locations": [
+        "Foster City, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/6efb15a8-ebe0-4ffc-bcc6-1d8f8375dbee",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "5ad0c622074fbc053947a7e420ee3e9d9c7d47a9c35fe63001ab4afcd4d3fe1f",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reason": "High-level city route and mission planning; kept separate from local collision-aware motion and trajectory planning."
+    }
+  ]
+}

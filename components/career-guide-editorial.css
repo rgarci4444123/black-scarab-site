@@ -299,3 +299,27 @@
 .career-section.profession-guide .profession-yield-legend strong { font-weight: 600; }
 .career-section.profession-guide .profession-yield-comparison > .profession-research-note { margin: 17px 0 0; font-size: 12px; line-height: 1.6; color: #626a71; }
 @media (max-width: 600px) { .career-section.profession-guide .profession-yield-comparison figcaption { font-size: 21px; } .career-section.profession-guide .profession-yield-units { grid-template-columns: repeat(10,minmax(0,1fr)); gap: 4px; } .career-section.profession-guide .profession-yield-metrics { gap: 16px; } .career-section.profession-guide .profession-yield-metrics dt { font-size: 13px; min-height: 39px; } .career-section.profession-guide .profession-yield-metrics dd { font-size: 36px; } .career-section.profession-guide .profession-yield-legend { gap: 10px 20px; } }
+
+.career-section.profession-guide .profession-clearance { margin: 38px 0; padding: 26px 0 20px; border-top: 1px solid #e2e2e5; border-bottom: 1px solid #e2e2e5; }
+.career-section.profession-guide .profession-clearance figcaption { max-width: none; margin: 0 0 28px; color: #252b32; font-size: 23px; line-height: 1.35; font-weight: 600; letter-spacing: -.025em; }
+.career-section.profession-guide .profession-clearance-panels { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+.career-section.profession-guide .profession-clearance-panel h4 { margin: 0; color: #252b32; font-size: 17px; font-weight: 600; line-height: 1.5; }
+.career-section.profession-guide .profession-clearance-panel > p { margin: 3px 0 10px; color: #555b66; font-size: 14px; }
+.career-section.profession-guide .profession-clearance svg { display: block; width: 100%; height: auto; overflow: visible; }
+.career-section.profession-guide .profession-clearance-boundary { fill: #fcfcfd; stroke: #d3d5da; stroke-width: 1.5; }
+.career-section.profession-guide .profession-clearance-obstacle { fill: #616771; }
+.career-section.profession-guide .profession-clearance-inflated { fill: #e0e2f1; stroke: #8e94bd; stroke-width: 1.5; stroke-dasharray: 5 4; }
+.career-section.profession-guide .profession-clearance-route { fill: none; stroke: #5f64b1; stroke-width: 4; stroke-linejoin: round; }
+.career-section.profession-guide .profession-clearance-direct { fill: none; stroke: #515965; stroke-width: 3; stroke-dasharray: 7 6; }
+.career-section.profession-guide .profession-clearance-robot { fill: #fff; stroke: #5f64b1; stroke-width: 3; }
+.career-section.profession-guide .profession-clearance-envelope { fill: #e0e2f1; stroke: #8e94bd; stroke-width: 1.5; stroke-dasharray: 4 3; }
+.career-section.profession-guide .profession-clearance-point { fill: #515965; }
+.career-section.profession-guide .profession-clearance-goal { fill: #fff; stroke: #515965; stroke-width: 2.5; }
+.career-section.profession-guide .profession-clearance text { fill: #414b51; font-size: 26px; }
+.career-section.profession-guide .profession-clearance-legend { display: flex; flex-wrap: wrap; gap: 12px 24px; padding: 0; margin: 18px 0 0; list-style: none; }
+.career-section.profession-guide .profession-clearance-legend li { display: flex; align-items: center; gap: 9px; margin: 0; color: #414b51; font-size: 13px; }
+.career-section.profession-guide .profession-clearance-legend span { display: block; width: 15px; height: 15px; flex: none; }
+.career-section.profession-guide .profession-clearance-key-obstacle { background: #616771; }
+.career-section.profession-guide .profession-clearance-key-inflated { background: #e0e2f1; border: 1px dashed #8e94bd; }
+.career-section.profession-guide .profession-clearance > .profession-research-note { margin: 17px 0 0; font-size: 12px; line-height: 1.6; color: #626a71; }
+@media (max-width: 600px) { .career-section.profession-guide .profession-clearance-panels { grid-template-columns: 1fr; gap: 28px; } .career-section.profession-guide .profession-clearance figcaption { font-size: 21px; } }

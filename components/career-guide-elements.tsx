@@ -5,6 +5,33 @@ export function CareerOverview({items}:{items:NonNullable<CareerGuideContent['ov
   return <section className="profession-overview" aria-labelledby="career-overview-title"><h2 id="career-overview-title">Career at a glance</h2><dl>{items.map(item=><div key={item.label}><dt>{item.label}</dt><dd><strong>{item.value}</strong>{item.detail?<p>{item.detail}</p>:null}</dd></div>)}</dl></section>;
 }
 
+type PlanningClearance=Extract<CareerGuideBlock,{type:'planning-clearance'}>;
+export function CareerPlanningClearance({block}:{block:PlanningClearance}) {
+  const m=block.model;
+  const scale=400/m.width;
+  const px=(x:number)=>40+x*scale;
+  const py=(y:number)=>30+y*scale;
+  const inflation=m.robotRadius+m.clearance;
+  const panels=[{aware:false,title:'Centerline only',detail:`${m.gap.toFixed(1)} m opening`,route:m.directRoute},{aware:true,title:'With robot clearance',detail:`${m.requiredGap.toFixed(1)} m required`,route:m.detourRoute}];
+  return <figure id={block.id} className="profession-clearance" aria-labelledby={`${block.id}-title`}>
+    <figcaption id={`${block.id}-title`}>{block.title}</figcaption>
+    <div className="profession-clearance-panels">{panels.map(panel=><div key={panel.title} className="profession-clearance-panel">
+      <h4>{panel.title}</h4><p>{panel.detail}</p>
+      <svg viewBox={`0 0 480 ${60+m.height*scale}`} role="img" aria-label={panel.aware?'A detour routes the circular robot around obstacles expanded by its radius and clearance margin.':'A straight centerline passes through a gap narrower than the robot.'}>
+        <rect className="profession-clearance-boundary" x="40" y="30" width={m.width*scale} height={m.height*scale}/>
+        {panel.aware?m.obstacles.map((o,i)=><rect key={`inflated-${i}`} className="profession-clearance-inflated" x={px(o.x-inflation)} y={py(o.y-inflation)} width={(o.width+2*inflation)*scale} height={(o.height+2*inflation)*scale} rx={inflation*scale}/>):null}
+        {m.obstacles.map((o,i)=><rect key={i} className="profession-clearance-obstacle" x={px(o.x)} y={py(o.y)} width={o.width*scale} height={o.height*scale}/>)}
+        <polyline className={panel.aware?'profession-clearance-route':'profession-clearance-direct'} points={panel.route.map(p=>`${px(p[0])},${py(p[1])}`).join(' ')}/>
+        {panel.aware?<><circle className="profession-clearance-envelope" cx={px(m.start[0])} cy={py(m.start[1])} r={inflation*scale}/><circle className="profession-clearance-robot" cx={px(m.start[0])} cy={py(m.start[1])} r={m.robotRadius*scale}/></>:<circle className="profession-clearance-point" cx={px(m.start[0])} cy={py(m.start[1])} r="5"/>}
+        <circle className="profession-clearance-goal" cx={px(m.goal[0])} cy={py(m.goal[1])} r="6"/>
+        <text x={px(m.start[0])} y={py(m.start[1])+52} textAnchor="middle">Start</text><text x={px(m.goal[0])} y={py(m.goal[1])+52} textAnchor="middle">Goal</text>
+      </svg>
+    </div>)}</div>
+    <ul className="profession-clearance-legend" aria-label="Map legend"><li><span className="profession-clearance-key-obstacle"/>Obstacle</li><li><span className="profession-clearance-key-inflated"/>Robot radius + clearance</li></ul>
+    <p className="profession-research-note">Illustrative 2D map. Robot width 0.8 m; clearance 0.1 m per side.</p>
+  </figure>;
+}
+
 type YieldComparison=Extract<CareerGuideBlock,{type:'yield-comparison'}>;
 export function CareerYieldComparison({block}:{block:YieldComparison}) {
   const percent=(count:number)=>new Intl.NumberFormat('en-US',{style:'percent',maximumFractionDigits:1}).format(count/block.total);

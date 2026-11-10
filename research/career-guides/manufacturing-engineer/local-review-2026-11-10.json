@@ -1,9 +1,9 @@
 {
-  "status": "approved-for-release",
+  "status": "deployed",
   "reviewedAt": "2026-11-10",
   "guidePath": "/career-paths/hardware-manufacturing/manufacturing-engineer",
   "url": "http://127.0.0.1:3048/career-paths/hardware-manufacturing/manufacturing-engineer",
-  "publication": "User approved publication November 10, 2026.",
+  "publication": "User approved publication November 10, 2026; deployed and verified.",
   "precedingRelease": {
     "guide": "industrial-automation-engineer",
     "commit": "339669d3b14ee7ebd77938d51b7de625345f3993",
@@ -69,5 +69,35 @@
     "transitionMobile": "/tmp/black-scarab-manufacturing-revised-transition-mobile.png"
   },
   "editorialRevision": "research/career-guides/manufacturing-engineer/editorial-revision-2026-11-10.json",
-  "approvedAt": "2026-11-10"
+  "approvedAt": "2026-11-10",
+  "deployment": {
+    "guide": "manufacturing-engineer",
+    "deployedAt": "2026-11-10T15:37:22Z",
+    "commit": "ae8a07f49fb5f3c970fa6b069f480e7b87f475db",
+    "previousCommit": "339669d3b14ee7ebd77938d51b7de625345f3993",
+    "url": "https://www.blackscarab.ai/career-paths/hardware-manufacturing/manufacturing-engineer",
+    "deploymentUrl": "https://black-scarab-site-l9csqinn9-rodolfo-garcias-projects.vercel.app",
+    "vercelStatusUrl": "https://vercel.com/rodolfo-garcias-projects/black-scarab-site/6JZEgKKGK7CSwWXhpL1ajJo9mhks",
+    "githubDeploymentId": 7686553516,
+    "status": "success",
+    "verified": [
+      "Live H1, SEO title, canonical, November 10 publication and modification dates",
+      "Full user rewrite, nine sections and eight-step project",
+      "182000 USD estimate, hero and 100-unit yield graphic",
+      "Research downloads, category link and sitemap"
+    ],
+    "validation": {
+      "careerTests": 25,
+      "selectedSourcesAudited": 124,
+      "rawSourcesAudited": 41,
+      "articlePreviews": 175,
+      "typecheck": "passed",
+      "scopedLint": "passed",
+      "nextBuild": "passed",
+      "desktop": "reviewed",
+      "tablet": "reviewed",
+      "mobile": "reviewed"
+    },
+    "screenshot": "/tmp/black-scarab-manufacturing-live-2026-11-10.png"
+  }
 }

@@ -2,10 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { CareerFamily, CareerGuideBlock, CareerGuideContent, CareerGuideSection } from '@/lib/career-paths/types';
 
-import {CareerOverview,CareerGuideNavigation,CareerSkillMentions,CareerCompensationTable,CareerResearchNotes,CareerWorkflow,CareerDiagnosticMap,CareerTimingBudget,CareerControlResponse,CareerStateSequence,CareerYieldComparison} from './career-guide-elements';
+import {CareerOverview,CareerGuideNavigation,CareerSkillMentions,CareerCompensationTable,CareerResearchNotes,CareerWorkflow,CareerDiagnosticMap,CareerTimingBudget,CareerControlResponse,CareerStateSequence,CareerYieldComparison,CareerPlanningClearance} from './career-guide-elements';
 
 function GuideBlock({block}:{block:CareerGuideBlock}) {
   switch (block.type) {
+    case 'planning-clearance': return <CareerPlanningClearance block={block}/>;
     case 'yield-comparison': return <CareerYieldComparison block={block}/>;
     case 'state-sequence': return <CareerStateSequence block={block}/>;
     case 'control-response': return <CareerControlResponse block={block}/>;

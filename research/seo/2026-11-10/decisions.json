@@ -1,14 +1,36 @@
 {
   "researchedAt": "2026-11-10",
   "method": "Employer-title and informational-intent review. Editorial choices, with no search-volume or ranking claim.",
-  "guides": [{
-    "occupationId": "manufacturing-engineer",
-    "h1": "How to Become a Manufacturing Engineer in Robotics",
-    "seoTitle": "Robotics Manufacturing Engineer: Salary, Skills & Career Guide",
-    "description": "Explore manufacturing engineering in robotics: assembly processes, fixtures, quality, employer qualifications, salary research and a practical production project.",
-    "path": "/career-paths/hardware-manufacturing/manufacturing-engineer",
-    "primaryQuery": "robotics manufacturing engineer",
-    "supportingTopics": ["manufacturing engineer robotics salary", "robotics production engineering", "manufacturing engineer skills", "robotics manufacturing portfolio"],
-    "rationale": "Use the established manufacturing profession with robotics context. Focus on repeatable production, NPI, assembly, tooling, quality and supplier readiness. Distinguish product design, PLC sequencing and primary test/quality-engineering roles."
-  }]
+  "guides": [
+    {
+      "occupationId": "manufacturing-engineer",
+      "h1": "How to Become a Manufacturing Engineer in Robotics",
+      "seoTitle": "Robotics Manufacturing Engineer: Salary, Skills & Career Guide",
+      "description": "Explore manufacturing engineering in robotics: assembly processes, fixtures, quality, employer qualifications, salary research and a practical production project.",
+      "path": "/career-paths/hardware-manufacturing/manufacturing-engineer",
+      "primaryQuery": "robotics manufacturing engineer",
+      "supportingTopics": [
+        "manufacturing engineer robotics salary",
+        "robotics production engineering",
+        "manufacturing engineer skills",
+        "robotics manufacturing portfolio"
+      ],
+      "rationale": "Use the established manufacturing profession with robotics context. Focus on repeatable production, NPI, assembly, tooling, quality and supplier readiness. Distinguish product design, PLC sequencing and primary test/quality-engineering roles."
+    },
+    {
+      "occupationId": "motion-planning-engineer",
+      "h1": "How to Become a Motion Planning Engineer in Robotics",
+      "seoTitle": "Motion Planning Engineer: Skills, Salary & Career Path",
+      "description": "Explore motion planning in robotics: collision checking, trajectory optimization, C++ skills, employer qualifications, salary research and a first portfolio project.",
+      "path": "/career-paths/intelligence-autonomy/motion-planning-engineer",
+      "primaryQuery": "motion planning engineer",
+      "supportingTopics": [
+        "motion planning engineer salary",
+        "robot motion planning skills",
+        "motion planning vs controls",
+        "motion planning portfolio"
+      ],
+      "rationale": "Use the technical employer role with robotics context. Separate local motion/trajectory planning from mission routing, controls, perception and dedicated planning infrastructure. Editorial intent review, no search-volume claim."
+    }
+  ]
 }

@@ -1,0 +1,58 @@
+{
+  "status": "approved-for-release",
+  "reviewedAt": "2026-11-10",
+  "guidePath": "/career-paths/intelligence-autonomy/motion-planning-engineer",
+  "url": "http://127.0.0.1:3050/career-paths/intelligence-autonomy/motion-planning-engineer",
+  "publication": "User approved publication November 10, 2026.",
+  "precedingRelease": {
+    "guide": "manufacturing-engineer",
+    "commit": "ae8a07f49fb5f3c970fa6b069f480e7b87f475db",
+    "status": "deployed and verified"
+  },
+  "sectionCount": 8,
+  "research": {
+    "selectedFullSources": 10,
+    "additionalBoundaryFullSourceReviews": 2,
+    "originalCohort": 25,
+    "annualSalaryObservations": 7,
+    "salaryEmployers": 5,
+    "exactMedian": 217500,
+    "estimate": 218000,
+    "exclusions": "Mission routing and discrete task allocation; non-U.S. records; unverified annual frequency; adjacent research, behavior and infrastructure roles outside selected review."
+  },
+  "artwork": {
+    "asset": "public/career-paths/motion-planning-engineer-lab.webp",
+    "record": "research/career-guides/motion-planning-engineer/artwork-2026-11-10.json",
+    "tool": "built-in image_gen"
+  },
+  "inArticleVisual": {
+    "type": "server-rendered paired clearance maps",
+    "id": "motion-planning-clearance",
+    "model": "public/research/motion-planning-clearance-example-2026-11-10.json",
+    "meaning": "Point centerline clears solids but cannot admit a circular robot. Inflated obstacles and a detour account for radius and margin.",
+    "geometryTests": "Full sampled detour, map boundaries, direct-route footprint collision, gap and required gap verified. No optimality or time-trajectory claim."
+  },
+  "validation": {
+    "careerTests": 26,
+    "selectedSourceRecordsAudited": 134,
+    "rawSourcesAudited": 42,
+    "typecheck": "passed",
+    "scopedLint": "passed",
+    "nextBuild": "passed",
+    "existingArticlePreviews": 175,
+    "desktop": "Revised opening reviewed at 1100 CSS pixels; eight sections, eight tables and nine project steps verified. Clearance graphic reviewed in revised collision section at 1000 pixels.",
+    "tablet": "Unchanged shared diagram retained; original 768-pixel paired-map review remains applicable.",
+    "mobile": "Revised layout reviewed at 288 and 360 CSS pixels: no page or table overflow, both map panels stack within the reading width and the new transition table stacks correctly.",
+    "metadata": "Unique H1, SEO title, description, canonical and Article schema; November 10 publication and modification dates.",
+    "navigation": "Complete-guide registry supplies local category, assessment links and sitemap.",
+    "copy": "User-supplied full rewrite applied across eight sections, with eight tables, the existing clearance graphic and a nine-step project."
+  },
+  "screenshots": {
+    "opening": "/tmp/black-scarab-motion-planning-revised-opening.png",
+    "clearanceDesktop": "/tmp/black-scarab-motion-planning-revised-clearance-desktop.png",
+    "clearanceMobile": "/tmp/black-scarab-motion-planning-revised-clearance-mobile.png",
+    "transitionsMobile": "/tmp/black-scarab-motion-planning-revised-transitions-mobile.png"
+  },
+  "editorialRevision": "research/career-guides/motion-planning-engineer/editorial-revision-2026-11-10.json",
+  "approvedAt": "2026-11-10"
+}
