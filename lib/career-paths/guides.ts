@@ -15,8 +15,9 @@ import { manufacturingEngineerGuide } from '@/lib/career-paths/manufacturing-eng
 import { motionPlanningEngineerGuide } from '@/lib/career-paths/motion-planning-engineer-guide';
 import { verificationValidationEngineerGuide } from '@/lib/career-paths/verification-validation-engineer-guide';
 import { robotOperationsSpecialistGuide } from '@/lib/career-paths/robot-operations-specialist-guide';
+import { hardwareTestEngineerGuide } from '@/lib/career-paths/hardware-test-engineer-guide';
 // Add researched guides here after editorial review. No empty profession pages enter navigation or the sitemap.
-export const careerGuides: CareerGuideContent[] = [mechanicalEngineerGuide, robotLearningEngineerGuide, roboticsSimulationEngineerGuide, roboticsIntegrationEngineerGuide, electricalEngineerGuide, perceptionEngineerGuide, roboticsDataEngineerGuide, fieldServiceEngineerGuide, embeddedSoftwareEngineerGuide, roboticsControlsEngineerGuide, mlInfrastructureEngineerGuide, industrialAutomationEngineerGuide, manufacturingEngineerGuide, motionPlanningEngineerGuide, verificationValidationEngineerGuide, robotOperationsSpecialistGuide];
+export const careerGuides: CareerGuideContent[] = [mechanicalEngineerGuide, robotLearningEngineerGuide, roboticsSimulationEngineerGuide, roboticsIntegrationEngineerGuide, electricalEngineerGuide, perceptionEngineerGuide, roboticsDataEngineerGuide, fieldServiceEngineerGuide, embeddedSoftwareEngineerGuide, roboticsControlsEngineerGuide, mlInfrastructureEngineerGuide, industrialAutomationEngineerGuide, manufacturingEngineerGuide, motionPlanningEngineerGuide, verificationValidationEngineerGuide, robotOperationsSpecialistGuide, hardwareTestEngineerGuide];
 export const isPublishedCareerGuide = (guide: CareerGuideContent) => guide.status === 'published' && guide.sections.length > 0 && guide.sections.every(section => section.paragraphs.length > 0 || (section.blocks?.length || 0) > 0) && guide.citations.length > 0;
 export const publishedCareerGuides = careerGuides.filter(isPublishedCareerGuide);
 export const guidePath = (guide: CareerGuideContent) => `/career-paths/${guide.familyId}/${guide.slug}`;

@@ -1,0 +1,39 @@
+{
+  "kind": "illustrative-measurement-comparison",
+  "reference": 5,
+  "unit": "V",
+  "minimum": 4.9,
+  "maximum": 5.3,
+  "ticks": [
+    4.9,
+    5,
+    5.1,
+    5.2,
+    5.3
+  ],
+  "setups": [
+    {
+      "label": "Setup A",
+      "description": "Tight cluster, shifted",
+      "readings": [
+        5.18,
+        5.19,
+        5.2,
+        5.21,
+        5.22
+      ]
+    },
+    {
+      "label": "Setup B",
+      "description": "Wider cluster, centered",
+      "readings": [
+        4.96,
+        4.98,
+        5,
+        5.02,
+        5.04
+      ]
+    }
+  ],
+  "assumptions": "Invented short-run example at one exact simulated reference value. Five readings per setup; no employer or instrument data. Reference uncertainty is zero only by construction in this simulation. Real evaluation includes reference uncertainty, range, conditions, drift, setup effects and sample size. Sample means at one point do not establish unbiasedness, calibration quality, overall accuracy or fitness for use."
+}

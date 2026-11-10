@@ -1,0 +1,37 @@
+{
+  "revisedAt": "2026-11-10",
+  "status": "complete-copy-applied",
+  "sourcePath": "/Users/rodolfogarcia/.codex/attachments/0827bd03-e9fd-43fe-a35f-3a36cc264d06/Pasted text.txt",
+  "sourceSha256": "aea72cb0a8a90570c212f9c9523c262c5c080bd0299df6e18404f4b0fc39dfbb",
+  "sourceBytes": 33081,
+  "sectionCount": 8,
+  "preserved": [
+    "Existing headline, SEO metadata, canonical and section fragments",
+    "183000 USD estimate, six verified annual observations and detailed provenance",
+    "Original hero, measurement graphic and exact plotted values",
+    "Complete collapsed methodology and source references",
+    "Local review with no first-publication date"
+  ],
+  "presentation": [
+    "Applied supplied overview and full eight-section rewrite.",
+    "Expanded instruments, fixture design, reliability, calibration and measurement uncertainty explanations.",
+    "Kept the responsive measurement graphic in place of the repeated numeric comparison table.",
+    "Applied all eight portfolio steps, portfolio contents and advanced test automation extension.",
+    "Retained source-derived compensation examples and targeted official learning-resource URLs."
+  ],
+  "sourceCorrections": {
+    "Measurement uncertainty describes the range of doubt associated with a reported measurement.": "Measurement uncertainty quantifies how well a reported value is known.",
+    "Experience and responsibility. Engineers developing complete test systems or leading complex investigations may command higher compensation than those supporting established procedures.": "Experience and responsibility. Compare whether a position supports established procedures, owns a complete test system or leads complex investigations.",
+    "Hardware test engineering interviews often focus on experimental design and troubleshooting.": "Be ready to discuss experimental design and troubleshooting in a hardware test engineering interview."
+  },
+  "additionalPrecision": [
+    "Torque is described as a turning moment.",
+    "Maximum observed error uses absolute difference from the reference.",
+    "Annual advertised salary label retained across the research-backed compensation presentation."
+  ],
+  "technicalReference": {
+    "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-2-classification-components-uncertainty",
+    "checkedAt": "2026-11-10",
+    "supports": "Quantitative measurement uncertainty and distinction from error."
+  }
+}

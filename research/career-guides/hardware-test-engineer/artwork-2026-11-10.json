@@ -1,0 +1,35 @@
+{
+  "createdAt": "2026-11-10",
+  "tool": "built-in image_gen",
+  "status": "selected",
+  "brief": {
+    "storyThesis": "Hardware test engineers expose component limits and turn measurements into design decisions.",
+    "visualThesis": "The interesting evidence is inside the mechanism, not on its polished exterior.",
+    "medium": "Photorealistic technical cutaway integrated into an experimental laboratory scene",
+    "primarySubject": "Extreme close cross section of an invented robotic wrist under test, bearings and geared internals",
+    "viewpoint": "At bearing height, looking into the mechanism from a diagonal side angle",
+    "composition": "Asymmetric tight crop; internal mechanism dominates foreground, working test stand recedes into depth",
+    "palette": "85 percent black white and gray with 15 percent violet cables and fixture details",
+    "lighting": "Hard raking laboratory light on metal surfaces",
+    "surface": "Machined steel, exposed bearings, graphite composite, translucent cutaway boundary",
+    "cropPlan": "Keep internal bearing and load fixture visible within the wide central crop",
+    "recentCoverReview": [
+      "ML infrastructure: vast server hall, distant person, amber catwalk",
+      "Industrial automation: top-down factory conveyor, cyan",
+      "Manufacturing: gloved hands, assembly fixture, yellow",
+      "Motion planning: low outdoor concrete route, rover, coral",
+      "V&V: circular wet window, full humanoid, rain, cyan",
+      "Operations: eye-level shift handoff, helmeted people, outdoor robots, orange"
+    ],
+    "recentPatternsAvoided": "No people, full robot, factory panorama, rain chamber, screen or route overlay. Technical cutaway medium, internal component viewpoint and hard macro lighting differ from recent covers.",
+    "avoid": "Product packshot, isolated object on white, text, logos, numerical readings, diagnostic heatmaps, paper materials"
+  },
+  "prompt": "Use case: stylized-concept. Create a premium editorial cover for a Hardware Test Engineer in Robotics career guide, landscape 16:9. Visual thesis: test engineers uncover what happens inside a mechanism. A dramatic extreme-close technical cutaway of an invented robotic wrist and precision bearing assembly mounted in a working laboratory load-test fixture. Look into the mechanism at bearing height from a diagonal side angle; the nearest outer housing is selectively cut away so its machined steel bearings and geared internals are visible. One end is clamped to a substantial test stand that recedes into a dark experimental lab, with believable instrument cables and load hardware giving context. Photorealistic materials with a sophisticated conceptual technical-cutaway treatment, hard raking light, high tactile detail, asymmetric frame-filling crop. Roughly 85 percent black, white and gray; restrained vivid violet on a few fixture details and cables occupying 10 to 15 percent. No human, no full robot, no labels, words, logos, numbers, plots, heatmaps, glowing data overlays or paper-like material. No isolated catalog product on a white studio background. This is an invented editorial interpretation, not a proprietary technical design or real test evidence.",
+  "asset": "public/career-paths/hardware-test-engineer-lab.webp",
+  "generatedSource": "/Users/rodolfogarcia/.codex/generated_images/01a19479-7611-7b63-b7e5-de4a6aaed213/exec-46d87d0f-78a7-4820-96c6-c857a9a46e9d.png",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "bytes": 271316
+}

@@ -61,6 +61,21 @@
         "robot operator qualifications"
       ],
       "rationale": "Preserve the native career family and URL while including actual operator, data collection and test operator titles. Separate hands-on operation from business operations, primary repair and engineering. Editorial intent review, no search-volume claim."
+    },
+    {
+      "occupationId": "hardware-test-engineer",
+      "h1": "How to Become a Hardware Test Engineer in Robotics",
+      "seoTitle": "Robotics Hardware Test Engineer: Salary, Skills & Career Guide",
+      "description": "Explore hardware testing in robotics: fixtures, instruments, test automation, employer qualifications, salary research and a first measurement-analysis project.",
+      "path": "/career-paths/hardware-manufacturing/hardware-test-engineer",
+      "primaryQuery": "robotics hardware test engineer",
+      "supportingTopics": [
+        "hardware test engineer robotics salary",
+        "hardware validation engineer robotics",
+        "robotics test instrumentation",
+        "hardware test engineer skills"
+      ],
+      "rationale": "Keep the established hardware profession and native occupation URL. Include mechanical/electrical component validation and production-test equipment; distinguish general manufacturing processes and primary autonomy-behavior V&V. Editorial intent review without search-volume claims."
     }
   ]
 }

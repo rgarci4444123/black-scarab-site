@@ -1,0 +1,63 @@
+{
+  "status": "approved-for-release",
+  "reviewedAt": "2026-11-10",
+  "guidePath": "/career-paths/hardware-manufacturing/hardware-test-engineer",
+  "url": "http://127.0.0.1:3062/career-paths/hardware-manufacturing/hardware-test-engineer",
+  "publication": "User approved publication November 10, 2026.",
+  "precedingRelease": {
+    "guide": "robot-operations-specialist",
+    "commit": "7a3346d32fb75e38a1bf012de4b6cee720e5e2e9",
+    "status": "deployed and verified"
+  },
+  "sectionCount": 8,
+  "research": {
+    "selectedFullSources": 14,
+    "additionalBoundaryFullSourceReviews": 1,
+    "originalCohort": 27,
+    "annualObservations": 6,
+    "salaryEmployers": 4,
+    "exactMedian": 182750,
+    "estimate": 183000,
+    "scope": "Component validation and physical production-test engineering. Pay sample concentrates on experienced manufacturing/electrical-test roles.",
+    "exclusions": "Unverified salary periods, non-U.S. sources and manufacturing software-platform architecture. No annualization of ambiguous amounts."
+  },
+  "artwork": {
+    "asset": "public/career-paths/hardware-test-engineer-lab.webp",
+    "record": "research/career-guides/hardware-test-engineer/artwork-2026-11-10.json",
+    "tool": "built-in image_gen"
+  },
+  "inArticleVisual": {
+    "type": "server-rendered one-dimensional repeated-reading plot with vertical separation",
+    "id": "hardware-measurement-quality",
+    "model": "public/research/hardware-test-measurement-example-2026-11-10.json",
+    "meaning": "Two five-reading setups use a common 4.90\u20135.30 V scale and 5.00 V simulated reference. Setup A has tighter spread and +0.20 V mean offset; Setup B has greater spread and zero mean offset at this reference.",
+    "accessibility": "Full readings and mean offset in image labels, written reference and scale, fixed-size text and visible dashed reference lines; no client JavaScript."
+  },
+  "validation": {
+    "careerTests": 29,
+    "selectedSourceRecordsAudited": 173,
+    "rawSourcesAudited": 42,
+    "typecheck": "passed",
+    "scopedLint": "passed",
+    "nextBuild": "passed",
+    "existingArticlePreviews": 177,
+    "desktop": "Revised opening reviewed at 1100 px. Eight sections, eight tables, original hero and retained measurement plot; all eight supplied project steps verified.",
+    "tablet": "Unchanged measurement component retains prior 768 px review; copy revision changes no chart geometry.",
+    "mobile": "Expanded measurement/uncertainty text and project ending reviewed at 288 px. All eight tables and both tracks fit within 214 px; no page overflow.",
+    "metadata": "Unique H1/title/description/canonical, Article/Breadcrumb schema; November 10 publication and modification dates.",
+    "navigation": "Local category and sitemap include the completed review draft. Three research downloads return 200."
+  },
+  "screenshots": {
+    "opening": "/tmp/black-scarab-hardware-revised-opening.png",
+    "openingMobile": "/tmp/black-scarab-hardware-test-opening-mobile.png",
+    "measurementDesktop": "/tmp/black-scarab-hardware-test-measurement-desktop.png",
+    "measurementMobile": "/tmp/black-scarab-hardware-test-measurement-mobile.png",
+    "measurementTablet": "/tmp/black-scarab-hardware-test-measurement-tablet.png",
+    "projectMobile": "/tmp/black-scarab-hardware-revised-project-mobile.png",
+    "payMobile": "/tmp/black-scarab-hardware-test-pay-mobile.png",
+    "measurementTextMobile": "/tmp/black-scarab-hardware-revised-measurement-mobile.png"
+  },
+  "editorialRevision": "research/career-guides/hardware-test-engineer/editorial-revision-2026-11-10.json",
+  "editorialStatus": "Complete supplied eight-section rewrite applied, including all eight project steps and advanced extension.",
+  "approvedAt": "2026-11-10"
+}

@@ -1,5 +1,5 @@
 {
-  "status": "approved-for-release",
+  "status": "deployed",
   "reviewedAt": "2026-11-10",
   "guidePath": "/career-paths/integration-operations/robot-operations-specialist",
   "url": "http://127.0.0.1:3059/career-paths/integration-operations/robot-operations-specialist",
@@ -62,5 +62,34 @@
   },
   "editorialRevision": "research/career-guides/robot-operations-specialist/editorial-revision-2026-11-10.json",
   "editorialStatus": "Complete supplied copy applied, including standalone teleoperation section and all eight portfolio steps.",
-  "approvedAt": "2026-11-10"
+  "approvedAt": "2026-11-10",
+  "deployment": {
+    "guide": "robot-operations-specialist",
+    "deployedAt": "2026-11-10T16:39:40Z",
+    "commit": "7a3346d32fb75e38a1bf012de4b6cee720e5e2e9",
+    "previousCommit": "0c4f841bffcf388d633f6d3524f6c1d889202bf4",
+    "url": "https://www.blackscarab.ai/career-paths/integration-operations/robot-operations-specialist",
+    "deploymentUrl": "https://black-scarab-site-msd9dazfy-rodolfo-garcias-projects.vercel.app",
+    "vercelStatusUrl": "https://vercel.com/rodolfo-garcias-projects/black-scarab-site/H7KFmvUfXgE3vD8m2CQc1SAHNq1Z",
+    "githubDeploymentId": 7688081614,
+    "status": "success",
+    "verified": [
+      "Live H1, SEO title, canonical and November 10 publication/modification dates",
+      "Complete nine-section rewrite, standalone teleoperation and eight-step project",
+      "57000 USD full-time-equivalent estimate, hourly table, original hero and mission graphic",
+      "Research downloads, category link and sitemap"
+    ],
+    "validation": {
+      "careerTests": 28,
+      "selectedSourcesAudited": 159,
+      "rawSourcesAudited": 42,
+      "articlePreviews": 177,
+      "typecheck": "passed",
+      "scopedLint": "passed",
+      "nextBuild": "passed",
+      "desktop": "reviewed",
+      "mobile": "reviewed"
+    },
+    "screenshot": "/tmp/black-scarab-robot-operations-live-2026-11-10.png"
+  }
 }

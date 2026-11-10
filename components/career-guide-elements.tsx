@@ -5,6 +5,31 @@ export function CareerOverview({items}:{items:NonNullable<CareerGuideContent['ov
   return <section className="profession-overview" aria-labelledby="career-overview-title"><h2 id="career-overview-title">Career at a glance</h2><dl>{items.map(item=><div key={item.label}><dt>{item.label}</dt><dd><strong>{item.value}</strong>{item.detail?<p>{item.detail}</p>:null}</dd></div>)}</dl></section>;
 }
 
+type MeasurementComparison=Extract<CareerGuideBlock,{type:'measurement-comparison'}>;
+export function CareerMeasurementComparison({block}:{block:MeasurementComparison}) {
+  const m=block.model;
+  const position=(n:number)=>(n-m.minimum)/(m.maximum-m.minimum)*100;
+  const stagger=[14,27,40,27,14];
+  return <figure id={block.id} className="profession-measurement" aria-labelledby={`${block.id}-title`}>
+    <figcaption id={`${block.id}-title`}>{block.title}</figcaption>
+    <p className="profession-measurement-reference">Reference: {m.reference.toFixed(2)} {m.unit}</p>
+    {m.setups.map(setup=>{
+      const rawOffset=setup.readings.reduce((sum,n)=>sum+n,0)/setup.readings.length-m.reference;
+      const offset=Math.abs(rawOffset)<0.00001?0:rawOffset;
+      const formatted=`${offset>0.00001?'+':''}${offset.toFixed(2)} ${m.unit}`;
+      return <div className="profession-measurement-setup" key={setup.label}>
+        <div className="profession-measurement-heading"><div><h4>{setup.label}</h4><p>{setup.description}</p></div><p>Mean offset <strong>{formatted}</strong></p></div>
+        <div className="profession-measurement-track" role="img" aria-label={`${setup.label}. Readings: ${setup.readings.map(n=>n.toFixed(2)).join(', ')} ${m.unit}. Mean offset from the reference: ${formatted}.`}>
+          <span className="profession-measurement-reference-line" style={{left:`${position(m.reference)}%`}} aria-hidden="true"/>
+          {setup.readings.map((reading,index)=><span key={index} className="profession-measurement-dot" style={{left:`${position(reading)}%`,top:`${stagger[index%stagger.length]}px`}} aria-hidden="true"/>)}
+        </div>
+      </div>;
+    })}
+    <div className="profession-measurement-axis" aria-hidden="true">{m.ticks.map((tick,index)=><span key={tick} style={{left:`${position(tick)}%`,transform:index===0?'none':index===m.ticks.length-1?'translateX(-100%)':'translateX(-50%)'}}>{tick.toFixed(2)}</span>)}</div>
+    <p className="profession-research-note">Illustrative readings in {m.unit}. Five measurements per setup.</p>
+  </figure>;
+}
+
 type MissionOutcomes=Extract<CareerGuideBlock,{type:'mission-outcomes'}>;
 export function CareerMissionOutcomes({block}:{block:MissionOutcomes}) {
   const categories=[{key:'independent',label:'Completed independently'},{key:'assisted',label:'Completed with help'},{key:'notCompleted',label:'Not completed'}] as const;

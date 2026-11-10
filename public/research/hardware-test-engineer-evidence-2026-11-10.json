@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "reviewedAt": "2026-11-10",
+  "aggregatePath": "/research/physical-ai-careers-2026-11-02.json",
+  "aggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "rawArchive": {
+    "relativeRoot": "research/physical-ai/2026-11-02",
+    "normalizedRecords": "postings.jsonl",
+    "manifestHash": "6b48026839dcafc9d68144cf3fbedf38889984ad96f667a21e058b4d25f26f14"
+  },
+  "interpretation": "Contextual guide review; immutable source archive and original classifications preserved.",
+  "roles": {
+    "hardware-test-engineer": {
+      "recordIds": [
+        "agile-robots:greenhouse:4964805101",
+        "apptronik:greenhouse:5997414004",
+        "apptronik:greenhouse:6238484004",
+        "boston-dynamics:workday:R2296",
+        "boston-dynamics:workday:R3002",
+        "figure:greenhouse:4573670006",
+        "gatik:greenhouse:4664805006",
+        "skild:greenhouse:5233633008",
+        "skydio:ashby:69c45009-3ec2-44f1-950a-e65bb24310ac",
+        "skydio:ashby:9e8c6f00-86f3-4c6b-a35e-fbeb591746bc",
+        "zipline:greenhouse:7805200003",
+        "zipline:greenhouse:7808628003",
+        "zipline:greenhouse:7848978003",
+        "zoox:lever:ac297a1f-2bd3-42bc-9f4f-7fdeb0273e06"
+      ],
+      "auditPath": "research/career-guides/hardware-test-engineer/evidence-audit.json",
+      "compensation": [
+        {
+          "employer": "Boston Dynamics",
+          "title": "Senior Staff Electrical Test Engineer - Atlas",
+          "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-Office-POST/Sr-Staff-Electrical-Manufacturing-Test-Engineer---Atlas_R3002",
+          "minimum": 140000,
+          "maximum": 185000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised annual salary",
+          "recordId": "boston-dynamics:workday:R3002",
+          "location": "Waltham"
+        },
+        {
+          "employer": "Figure",
+          "title": "Manufacturing Electrical Test Engineer",
+          "url": "https://job-boards.greenhouse.io/figureai/jobs/4573670006",
+          "minimum": 130000,
+          "maximum": 300000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised annual salary",
+          "recordId": "figure:greenhouse:4573670006",
+          "location": "San Jose, CA"
+        },
+        {
+          "employer": "Skydio",
+          "title": "Senior Manufacturing Test Engineer",
+          "url": "https://jobs.ashbyhq.com/skydio/9e8c6f00-86f3-4c6b-a35e-fbeb591746bc",
+          "minimum": 147000,
+          "maximum": 210000,
+          "currency": "USD",
+          "period": "year",
+          "basis": "advertised annual salary",
+          "recordId": "skydio:ashby:9e8c6f00-86f3-4c6b-a35e-fbeb591746bc",
+          "location": "Hayward, California"
+        }
+      ],
+      "skillPresentation": "qualitative-source-comparison",
+      "scopeNote": "Includes component validation and production-test engineering where instrumented test hardware and physical fault isolation are central. No current-vacancy or skill-frequency claims."
+    }
+  },
+  "records": [
+    {
+      "id": "agile-robots:greenhouse:4964805101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Hardware Test Engineer (m/f/d)",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4964805101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "1efb616503639071fe60b480e3bda2f794aa6ff737c1934065c30db86da95856",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Product hardware safety and EMC testing, instruments, lab setup, investigation and reports; Germany, not U.S. pay.",
+      "qualification": "Bachelor’s degree or above in Electronics, Electrical Engineering, Communications, Electrical Automation, or a related field.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor’s degree or above in Electronics, Electrical Engineering, Communications, Electrical Automation, or a related field.",
+          "start": 746,
+          "end": 871
+        }
+      ]
+    },
+    {
+      "id": "apptronik:greenhouse:5997414004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Hardware Test Engineer – Dexterity",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/5997414004?gh_jid=5997414004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "b83b54895aa487c89c408a274ac62987de57dc6ae9220bedb1c7874279df7dc8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Robotic-hand prototype testing across joints, actuators and sensors; fixtures, instrumentation and design feedback.",
+      "qualification": "BS in Mechanical Engineering, Electrical Engineering, Robotics, Mechatronics, or related field + 3 years of relevant experience; MS + 1 year.",
+      "qualificationSpans": [
+        {
+          "text": "BS in Mechanical Engineering, Electrical Engineering, Robotics, Mechatronics, or related field + 3 years of relevant experience; MS + 1 year.",
+          "start": 4947,
+          "end": 5088
+        }
+      ]
+    },
+    {
+      "id": "apptronik:greenhouse:6238484004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Senior Hardware Test Engineer - Components",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6238484004?gh_jid=6238484004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "f5c55b27cb48598cd266023dfa2ac5eea1ca447a6ab0a485f00471f0188631d2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Electronics, sensors, harness and compute characterization; reliability, fixtures and production-test handoff.",
+      "qualification": "BS in Electrical Engineering, Mechanical Engineering, Robotics, or a related field + 6 years of relevant experience, OR MS in a related field + 4 years, OR PhD in a related field + 2 years.",
+      "qualificationSpans": [
+        {
+          "text": "BS in Electrical Engineering, Mechanical Engineering, Robotics, or a related field + 6 years of relevant experience, OR MS in a related field + 4 years, OR PhD in a related field + 2 years.",
+          "start": 4299,
+          "end": 4488
+        }
+      ]
+    },
+    {
+      "id": "boston-dynamics:workday:R2296",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Senior Staff Manufacturing Test Development Engineer",
+      "locations": [
+        "Waltham, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-MA/Senior-Staff-Manufacturing-Test-Engineer_R2296",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "c1b86c05327702a9b181aca0a9d924948e44306ffe1a43022b09362b4c2ef812",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Individual-contributor staff ownership of electromechanical production-test equipment, software and fault isolation.",
+      "qualification": "BS or MS in Robotics/Electrical Engineering or equivalent and 8+ years of relevant experience.",
+      "qualificationSpans": [
+        {
+          "text": "BS or MS in Robotics/Electrical Engineering or equivalent and 8+ years of relevant experience.",
+          "start": 2655,
+          "end": 2749
+        }
+      ]
+    },
+    {
+      "id": "boston-dynamics:workday:R3002",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Senior Staff Electrical Test Engineer - Atlas",
+      "locations": [
+        "Waltham Office (POST)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-Office-POST/Sr-Staff-Electrical-Manufacturing-Test-Engineer---Atlas_R3002",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "9dadb75a79273119dd5454ed7b92a49070d812280b4b0192b9a38468ec36bd47",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Individual-contributor electrical production-test systems, PCBA/harness fixtures, instrumentation and root cause.",
+      "qualification": "BS or MS in Electrical/Electromechanical Engineering or equivalent and 8+ years of relevant experience.",
+      "qualificationSpans": [
+        {
+          "text": "BS or MS in Electrical/Electromechanical Engineering or equivalent and 8+ years of relevant experience.",
+          "start": 2867,
+          "end": 2970
+        }
+      ]
+    },
+    {
+      "id": "figure:greenhouse:4573670006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Manufacturing Electrical Test Engineer",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4573670006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "04e151f8c194559047ba14b279c8681b17fc76ae85ca2d0cc7d7a4c46d229dbc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Humanoid end-of-line tester design for compute, sensors, power and actuators; equipment, Python and debug.",
+      "qualification": "5+ years of industry experience.",
+      "qualificationSpans": [
+        {
+          "text": "5+ years of industry experience.",
+          "start": 967,
+          "end": 999
+        }
+      ]
+    },
+    {
+      "id": "gatik:greenhouse:4664805006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Hardware Test and Validation Engineer",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4664805006?gh_jid=4664805006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "69685eb5a053efe11242dfe5c7fe4498a05ef8273c3d886b2600551fa2891478",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Vehicle component reliability and environmental tests, profiles, instrumentation and custom test equipment.",
+      "qualification": "Bachelor's degree in Mechanical, Electrical Engineering or a related field",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in Mechanical, Electrical Engineering or a related field",
+          "start": 2707,
+          "end": 2781
+        }
+      ]
+    },
+    {
+      "id": "skild:greenhouse:5233633008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Hardware Validation - Electrical Engineer",
+      "locations": [
+        "San Mateo, California",
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/5233633008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "fd3fdbe989edc73fc67fa0bec3718dadce6a2591c793c435ca00b74eb5f709b1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Robotics PCB validation, power/sensor interfaces, harness tests, fixtures, measurement quality and failure analysis.",
+      "qualification": "Bachelor's degree in Electrical Engineering, Computer Engineering, Mechatronics, or related field",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in Electrical Engineering, Computer Engineering, Mechatronics, or related field",
+          "start": 3341,
+          "end": 3438
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:69c45009-3ec2-44f1-950a-e65bb24310ac",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Staff Manufacturing Test Engineer",
+      "locations": [
+        "Hayward, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/69c45009-3ec2-44f1-950a-e65bb24310ac",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "44467d8ca742031a62d9fc527f7c0099ef42a3fabf65d63c3679915dc3635e1c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Staff technical ownership of manufacturing test hardware/software, test readiness, data analysis and root cause.",
+      "qualification": "10+ years engineering experience in a manufacturing environment, with 5+ years focused on NPI test development. You know first hand what it takes to reliably build a product, and you have some war stories to tell of problems you solved.",
+      "qualificationSpans": [
+        {
+          "text": "10+ years engineering experience in a manufacturing environment, with 5+ years focused on NPI test development. You know first hand what it takes to reliably build a product, and you have some war stories to tell of problems you solved.",
+          "start": 2361,
+          "end": 2597
+        }
+      ]
+    },
+    {
+      "id": "skydio:ashby:9e8c6f00-86f3-4c6b-a35e-fbeb591746bc",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Senior Manufacturing Test Engineer",
+      "locations": [
+        "Hayward, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/9e8c6f00-86f3-4c6b-a35e-fbeb591746bc",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "79963c8f371b8b830d1ad1804ec846d4f29d39a57a90daf88a5f77322dbb034b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Senior technical ownership of electrical manufacturing test equipment, automation, debug and root cause.",
+      "qualification": "5+ years engineering experience in a manufacturing environment, with 3+ years focused on test development. You know first hand what it takes to reliably build a product, and you have some war stories to tell of problems you solved.",
+      "qualificationSpans": [
+        {
+          "text": "5+ years engineering experience in a manufacturing environment, with 3+ years focused on test development. You know first hand what it takes to reliably build a product, and you have some war stories to tell of problems you solved.",
+          "start": 2361,
+          "end": 2592
+        }
+      ]
+    },
+    {
+      "id": "zipline:greenhouse:7805200003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Mechanical Test Engineer, Motors (Senior)",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7805200003?gh_jid=7805200003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "3dc652ab9fc88b8067162d09ff309163ab355ec183cc93e63dd0ade8ca468a65",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Motor and actuator characterization, dynamometers, thermal/torque-speed tests, reliability and field correlation.",
+      "qualification": "Hands-on experience with electric motors and actuators, including efficiency characterization, losses evaluation, testing to evaluate electrical and thermal models.",
+      "qualificationSpans": [
+        {
+          "text": "Hands-on experience with electric motors and actuators, including efficiency characterization, losses evaluation, testing to evaluate electrical and thermal models.",
+          "start": 3632,
+          "end": 3796
+        }
+      ]
+    },
+    {
+      "id": "zipline:greenhouse:7808628003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Senior Electrical Test Engineer, Hardware Validation",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7808628003?gh_jid=7808628003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "5fb38c1a56689f91a22c515c09114215ae55dc829333dc8d4b7e8b4067cac222",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Electrical/electromechanical validation, instrumentation, experimental design, measurement uncertainty and failure investigation.",
+      "qualification": "• Proven ownership of electrical or electromechanical hardware validation through development, qualification, production ramp, and field deployment.",
+      "qualificationSpans": [
+        {
+          "text": "• Proven ownership of electrical or electromechanical hardware validation through development, qualification, production ramp, and field deployment.",
+          "start": 5258,
+          "end": 5406
+        }
+      ]
+    },
+    {
+      "id": "zipline:greenhouse:7848978003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Mechanical Test Engineer, Battery and Power Electronics",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7848978003?gh_jid=7848978003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "f2e369dcb1f94b8e4ee93a7af12d68b69d7c7c9e2cb7a6dcdf1858cccafbfbf2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research classifications unchanged.",
+      "originalReviewStatus": "machine-screened",
+      "scope": "Battery and power-system validation equipment, mechanical fixtures, environmental tests, automation and analysis.",
+      "qualification": "Experience developing validation systems, production test equipment, or engineering test infrastructure for complex electromechanical products appropriate to your career level.",
+      "qualificationSpans": [
+        {
+          "text": "Experience developing validation systems, production test equipment, or engineering test infrastructure for complex electromechanical products appropriate to your career level.",
+          "start": 5578,
+          "end": 5754
+        }
+      ]
+    },
+    {
+      "id": "zoox:lever:ac297a1f-2bd3-42bc-9f4f-7fdeb0273e06",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Systems Integration Engineer",
+      "locations": [
+        "Hayward, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/ac297a1f-2bd3-42bc-9f4f-7fdeb0273e06",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "3a48c608eb7ea4986b667a78530928554b615a07818bc6e09a90d853509e60ac",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "reviewedAt": "2026-11-10",
+      "reviewMethod": "Contextual full stored-source review; original research classifications unchanged.",
+      "originalReviewStatus": "role-reviewed",
+      "scope": "Manufacturing Test and Diagnostics team: electrical-component testers, ECU/vehicle bring-up, hardware/software integration and production debug.",
+      "qualification": "Bachelor's degree in a relevant area such as Electrical Engineering or Computer Science.",
+      "qualificationSpans": [
+        {
+          "text": "Bachelor's degree in a relevant area such as Electrical Engineering or Computer Science.",
+          "start": 1986,
+          "end": 2074
+        }
+      ]
+    }
+  ]
+}

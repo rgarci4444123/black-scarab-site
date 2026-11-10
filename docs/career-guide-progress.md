@@ -1,6 +1,6 @@
 # Career guide progress
 
-Updated November 10, 2026. Sixteen of twenty approved for publication. Robot Operations Specialist is approved for release; four guides remain.
+Updated November 10, 2026. Seventeen of twenty approved for publication. Hardware Test Engineer is approved for release; three guides remain.
 
 - ~~Mechanical Engineer~~
 - ~~Robot Learning Engineer~~
@@ -18,7 +18,7 @@ Updated November 10, 2026. Sixteen of twenty approved for publication. Robot Ope
 - ~~Motion Planning Engineer~~
 - ~~Verification & Validation Engineer~~
 - ~~Robot Operations Specialist~~
-- Hardware Test Engineer
+- ~~Hardware Test Engineer~~
 - Localization & Mapping Engineer
 - Robotics Platform Engineer
 - Systems Safety Engineer

@@ -77,13 +77,14 @@
     {
       "order": 12,
       "roleId": "robot-operations-specialist",
-      "status": "approved-for-release",
+      "status": "deployed",
       "path": "/career-paths/integration-operations/robot-operations-specialist"
     },
     {
       "order": 13,
       "roleId": "hardware-test-engineer",
-      "status": "queued"
+      "status": "approved-for-release",
+      "path": "/career-paths/hardware-manufacturing/hardware-test-engineer"
     },
     {
       "order": 14,

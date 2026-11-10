@@ -1,0 +1,594 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "physical-ai-2026-11-02-6b48026839dc",
+  "collectedAt": "2026-11-02",
+  "derivedAt": "2026-11-10",
+  "roleId": "hardware-test-engineer",
+  "sourceAggregate": "/research/physical-ai-careers-2026-11-02.json",
+  "sourceAggregateSha256": "65a83512b9998d7d17a0cd1be5aaad273dc57eed13fab66180bd7c81877467e7",
+  "label": "Black Scarab estimated compensation",
+  "currency": "USD",
+  "period": "year",
+  "basis": "advertised annual salary excluding bonus and equity",
+  "postingCount": 6,
+  "employerCount": 4,
+  "exactMedianMidpoint": 182750.0,
+  "estimate": 183000,
+  "rounding": "nearest 1000 USD, halves rounded upward",
+  "method": "Median of one eligible annual USD salary-range midpoint per distinct requisition.",
+  "eligibility": "Technical engineering roles owning physical component/assembly test equipment, instrumentation, validation, production test or diagnostics. Senior/staff individual contributors included.",
+  "limitations": "Purposive U.S. sample is concentrated in experienced manufacturing/electrical-test positions at four employers, including two Boston Dynamics and two Skydio requisitions. Not an entry-level rate or representative market median. Core prototype and mechanical roles without an explicitly annual pay period do not contribute. Structured salary fields do not consistently establish base pay.",
+  "observations": [
+    {
+      "id": "boston-dynamics:workday:R2296",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Senior Staff Manufacturing Test Development Engineer",
+      "locations": [
+        "Waltham, MA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-MA/Senior-Staff-Manufacturing-Test-Engineer_R2296",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "c1b86c05327702a9b181aca0a9d924948e44306ffe1a43022b09362b4c2ef812",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "minimum": 134399.06,
+      "maximum": 184798.7,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual salary",
+      "extraction": "full-source-text",
+      "sourceClause": "The pay range for this position is between $134399.06 to $184,798.70 annually. Base pay will depend on multiple individualized factors including, but not limited to internal equity, job related knowledge, skills and experience. This range represents a good faith estimate of compensation at the time of posting. Boston Dynamics offers a generous Benefits package including medical, dental vision, 401(k), paid time off and a annual bonus structure. Additional details regarding these benefit plans will be provided if an employee receives an offer for employment",
+      "sourceSpan": {
+        "start": 4293,
+        "end": 4855
+      },
+      "midpoint": 159598.88,
+      "seniority": "staff-principal",
+      "scope": "Individual-contributor staff ownership of electromechanical production-test equipment, software and fault isolation."
+    },
+    {
+      "id": "boston-dynamics:workday:R3002",
+      "employerId": "boston-dynamics",
+      "employer": "Boston Dynamics",
+      "title": "Senior Staff Electrical Test Engineer - Atlas",
+      "locations": [
+        "Waltham Office (POST)"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-Office-POST/Sr-Staff-Electrical-Manufacturing-Test-Engineer---Atlas_R3002",
+      "verifiedAt": "2026-11-02T18:07:51+00:00",
+      "sourceTextSha256": "9dadb75a79273119dd5454ed7b92a49070d812280b4b0192b9a38468ec36bd47",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/boston-dynamics.json",
+      "rawSourceFileSha256": "e4eba6426005a36e9b8bebad4343dbcbbafd364e313005299858c8238d421677",
+      "minimum": 140000,
+      "maximum": 185000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual salary",
+      "extraction": "full-source-text",
+      "sourceClause": "The pay range for this position is between $140,000 to $185,000 annually. Base pay will depend on multiple individualized factors including, but not limited to internal equity, job related knowledge, skills and experience. This range represents a good faith estimate of compensation at the time of posting. Boston Dynamics offers a generous Benefits package including medical, dental vision, 401(k), paid time off and a annual bonus structure. Additional details regarding these benefit plans will be provided if an employee receives an offer for employment.",
+      "sourceSpan": {
+        "start": 4584,
+        "end": 5142
+      },
+      "midpoint": 162500.0,
+      "seniority": "staff-principal",
+      "scope": "Individual-contributor electrical production-test systems, PCBA/harness fixtures, instrumentation and root cause."
+    },
+    {
+      "id": "figure:greenhouse:4573670006",
+      "employerId": "figure",
+      "employer": "Figure",
+      "title": "Manufacturing Electrical Test Engineer",
+      "locations": [
+        "San Jose, CA",
+        "San Jose, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/figureai/jobs/4573670006",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "04e151f8c194559047ba14b279c8681b17fc76ae85ca2d0cc7d7a4c46d229dbc",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/figure.json",
+      "rawSourceFileSha256": "39395ad0655617fa198367ee666b059bdec8b4d85cb309a8bdb29accf0b10194",
+      "minimum": 130000,
+      "maximum": 300000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual salary",
+      "extraction": "full-source-text",
+      "sourceClause": "The US base salary range for this full-time position is $130,000 to $300,000 per year.",
+      "sourceSpan": {
+        "start": 1813,
+        "end": 1899
+      },
+      "midpoint": 215000.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Humanoid end-of-line tester design for compute, sensors, power and actuators; equipment, Python and debug."
+    },
+    {
+      "id": "skydio:ashby:69c45009-3ec2-44f1-950a-e65bb24310ac",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Staff Manufacturing Test Engineer",
+      "locations": [
+        "Hayward, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/69c45009-3ec2-44f1-950a-e65bb24310ac",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "44467d8ca742031a62d9fc527f7c0099ef42a3fabf65d63c3679915dc3635e1c",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "minimum": 196000,
+      "maximum": 257000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual salary",
+      "extraction": "full-source-text",
+      "sourceClause": "Compensation: At Skydio, our compensation packages for regular, full-time employees include competitive base salaries, equity in the form of stock options, and comprehensive benefits packages. Compensation will vary based on factors, including skill level, proficiencies, transferable knowledge, and experience. Relocation assistance may also be provided for eligible roles. The annual base salary range for this position is $196,000 - $257,000*. Fundamentally, we believe that equity is the key to long-term financial growth, and we ensure all regular, full-time employees have the opportunity to significantly benefit from the company's success. Regular, full-time employees are eligible to enroll in the Company’s group health insurance plans. Regular, full-time employees are eligible to receive the following benefits: Paid vacation time, sick leave, holiday pay and 401K savings plan. This position and all associated benefits are subject to applicable federal, state, and local laws, as well as the Company’s policies and eligibility criteria.",
+      "sourceSpan": {
+        "start": 3573,
+        "end": 4623
+      },
+      "midpoint": 226500.0,
+      "seniority": "staff-principal",
+      "scope": "Staff technical ownership of manufacturing test hardware/software, test readiness, data analysis and root cause."
+    },
+    {
+      "id": "skydio:ashby:9e8c6f00-86f3-4c6b-a35e-fbeb591746bc",
+      "employerId": "skydio",
+      "employer": "Skydio",
+      "title": "Senior Manufacturing Test Engineer",
+      "locations": [
+        "Hayward, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/skydio/9e8c6f00-86f3-4c6b-a35e-fbeb591746bc",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "79963c8f371b8b830d1ad1804ec846d4f29d39a57a90daf88a5f77322dbb034b",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skydio.json",
+      "rawSourceFileSha256": "3d1edb2f02e30679b554b5a9864a69c57110567352bc2eb1f63780e818c62304",
+      "minimum": 147000,
+      "maximum": 210000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised annual salary",
+      "extraction": "full-source-text",
+      "sourceClause": "Compensation: At Skydio, our compensation packages for regular, full-time employees include competitive base salaries, equity in the form of stock options, and comprehensive benefits packages. Compensation will vary based on factors, including skill level, proficiencies, transferable knowledge, and experience. Relocation assistance may also be provided for eligible roles. The annual base salary range for this position is $147,000 - $210,000*. Fundamentally, we believe that equity is the key to long-term financial growth, and we ensure all regular, full-time employees have the opportunity to significantly benefit from the company's success. Regular, full-time employees are eligible to enroll in the Company’s group health insurance plans. Regular, full-time employees are eligible to receive the following benefits: Paid vacation time, sick leave, holiday pay and 401K savings plan. This position and all associated benefits are subject to applicable federal, state, and local laws, as well as the Company’s policies and eligibility criteria.",
+      "sourceSpan": {
+        "start": 3690,
+        "end": 4740
+      },
+      "midpoint": 178500.0,
+      "seniority": "senior",
+      "scope": "Senior technical ownership of electrical manufacturing test equipment, automation, debug and root cause."
+    },
+    {
+      "id": "zoox:lever:ac297a1f-2bd3-42bc-9f4f-7fdeb0273e06",
+      "employerId": "zoox",
+      "employer": "Zoox",
+      "title": "Systems Integration Engineer",
+      "locations": [
+        "Hayward, CA"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.lever.co/zoox/ac297a1f-2bd3-42bc-9f4f-7fdeb0273e06",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "3a48c608eb7ea4986b667a78530928554b615a07818bc6e09a90d853509e60ac",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zoox.json",
+      "rawSourceFileSha256": "af11da595e335bd51385085b58eab9b3577cecac9926f2eaacec64154893a5b3",
+      "minimum": 146000,
+      "maximum": 228000,
+      "currency": "USD",
+      "period": "year",
+      "basis": "advertised-salary",
+      "extraction": "official-ats-structured",
+      "midpoint": 187000.0,
+      "seniority": "unspecified-or-midcareer",
+      "scope": "Manufacturing Test and Diagnostics team: electrical-component testers, ECU/vehicle bring-up, hardware/software integration and production debug."
+    }
+  ],
+  "excludedObservations": [
+    {
+      "id": "agile-robots:greenhouse:4964805101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Hardware Test Engineer (m/f/d)",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4964805101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "1efb616503639071fe60b480e3bda2f794aa6ff737c1934065c30db86da95856",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "agile-robots:greenhouse:4994515101",
+      "employerId": "agile-robots",
+      "employer": "Agile Robots",
+      "title": "Mechatronics and Hardware Test Engineer (m/f/d)",
+      "locations": [
+        "Munich, Bavaria, Germany"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/agilerobotsse/jobs/4994515101",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "2629ae03208f9cbf5272201380e4e24c959516f3ee1248af9aa6992b84ec0203",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agile-robots.json",
+      "rawSourceFileSha256": "71154b0b68eec4a4bfc5660db213ad9e687293ce0166c4642aae3f9e53999c09",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "agility:greenhouse:6113669004",
+      "employerId": "agility",
+      "employer": "Agility Robotics",
+      "title": "Senior Manufacturing Test Engineer",
+      "locations": [
+        "Onsite- Salem, OR",
+        "Salem, Oregon, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=6113669004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "c8fb60f6d3a92fd282ac2258142d4af0f1b095ceabe43e62303705a3660db6c0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/agility.json",
+      "rawSourceFileSha256": "ac356350940b45d164fbf75881d9254f4c3aadaa5e83e8f798a621610cb7c731",
+      "reason": "Outside selected contextual hardware-test review; no verified annual observation admitted."
+    },
+    {
+      "id": "anduril:greenhouse:4862526007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Senior Manufacturing Test Engineer, Fury",
+      "locations": [
+        "Ashville, Ohio, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4862526007?gh_jid=4862526007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "d0297a34856ad88582c191a93c83a9b48755cc9f2f2fa31b25dec6c879ad95c3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside selected contextual hardware-test review; no verified annual observation admitted."
+    },
+    {
+      "id": "anduril:greenhouse:5174848007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Test Engineer, Electrical/Mechanical",
+      "locations": [
+        "Quonset, Rhode Island, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5174848007?gh_jid=5174848007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "6b1acfd56cff3aea0b71f6707c1939ebff45be325d5b99937539fe6d53518cb3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside selected contextual hardware-test review; no verified annual observation admitted."
+    },
+    {
+      "id": "anduril:greenhouse:5174864007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Test Engineer, Software/Electrical",
+      "locations": [
+        "Quonset, Rhode Island, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5174864007?gh_jid=5174864007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "e85b7195424904717bc7b932a02aba46cb3aa0219b5ae7759dc6c762d5deaf8d",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside selected contextual hardware-test review; no verified annual observation admitted."
+    },
+    {
+      "id": "anduril:greenhouse:5218287007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Test Engineer - Product & Integration Test",
+      "locations": [
+        "Quonset, Rhode Island, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5218287007?gh_jid=5218287007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "f0fdc437ff794f5aa24d76f2d642496846576275b14f29712c8d4ae88acf07e3",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside selected contextual hardware-test review; no verified annual observation admitted."
+    },
+    {
+      "id": "anduril:greenhouse:5254958007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Electrical System Test Engineer EMC, Air Dominance and Strike",
+      "locations": [
+        "Costa Mesa, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5254958007?gh_jid=5254958007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "bd467e205973ecc3df029a39680959a7bf7727986e19db31b3ce9aba0c89d251",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside selected contextual hardware-test review; no verified annual observation admitted."
+    },
+    {
+      "id": "anduril:greenhouse:5270165007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Test Engineer, Product & Integration",
+      "locations": [
+        "Quincy, Massachusetts, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5270165007?gh_jid=5270165007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "5bf20ddd68c724b1b3925553ee4f89a3fd8950d13f5c04d8bbbfd01b12547092",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Outside selected contextual hardware-test review; no verified annual observation admitted."
+    },
+    {
+      "id": "anduril:greenhouse:5275941007",
+      "employerId": "anduril",
+      "employer": "Anduril Industries",
+      "title": "Manufacturing Test Engineer",
+      "locations": [
+        "Alexandria, New South Wales, Australia",
+        "Sydney, New South Wales, Australia"
+      ],
+      "countries": [
+        "Australia"
+      ],
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5275941007?gh_jid=5275941007",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "71758cae7cfca0ccf7a88452ca6671b1edb385080433529623450a7ead1af7d1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/anduril.json",
+      "rawSourceFileSha256": "247072d24cb7e81845c6b174b67e335dda737149c0f8a4d44489b090ec2d82f0",
+      "reason": "Not an exclusively U.S. advertisement."
+    },
+    {
+      "id": "apptronik:greenhouse:5997414004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Hardware Test Engineer – Dexterity",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/5997414004?gh_jid=5997414004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "b83b54895aa487c89c408a274ac62987de57dc6ae9220bedb1c7874279df7dc8",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reason": "No complete explicitly annual USD range verified. Salary amounts, starting-cash ranges and annual-bonus language do not establish salary frequency."
+    },
+    {
+      "id": "apptronik:greenhouse:6238484004",
+      "employerId": "apptronik",
+      "employer": "Apptronik",
+      "title": "Senior Hardware Test Engineer - Components",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6238484004?gh_jid=6238484004",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "f5c55b27cb48598cd266023dfa2ac5eea1ca447a6ab0a485f00471f0188631d2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/apptronik.json",
+      "rawSourceFileSha256": "a43b6624a9466a3a5cfa614e697d2e48d3ad0436d985bc8c694cce572962529b",
+      "reason": "No complete explicitly annual USD range verified. Salary amounts, starting-cash ranges and annual-bonus language do not establish salary frequency."
+    },
+    {
+      "id": "gatik:greenhouse:4664805006",
+      "employerId": "gatik",
+      "employer": "Gatik",
+      "title": "Hardware Test and Validation Engineer",
+      "locations": [
+        "Santa Clara, CA",
+        "Santa Clara, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://boards.greenhouse.io/gatikaiinc/jobs/4664805006?gh_jid=4664805006",
+      "verifiedAt": "2026-11-02T17:53:31+00:00",
+      "sourceTextSha256": "69685eb5a053efe11242dfe5c7fe4498a05ef8273c3d886b2600551fa2891478",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/gatik.json",
+      "rawSourceFileSha256": "9d831ba24d69f052f0cdbe62877f37f1e9569cfdc62517d32ddf250d662be731",
+      "reason": "No complete explicitly annual USD range verified. Salary amounts, starting-cash ranges and annual-bonus language do not establish salary frequency."
+    },
+    {
+      "id": "kodiak:greenhouse:4417923009",
+      "employerId": "kodiak",
+      "employer": "Kodiak Robotics",
+      "title": "Manufacturing Test Engineer",
+      "locations": [
+        "Mountain View, CA",
+        "Mountain View, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4417923009",
+      "verifiedAt": "2026-11-02T17:46:58+00:00",
+      "sourceTextSha256": "c7dead42534ff613aa6de0857c9962e3ef04bbc6271e9ba93f1334619ac1e763",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/kodiak.json",
+      "rawSourceFileSha256": "fbd0aa8d1bc44f790aa5976be16ccfbaf32dbe47bd06154f6cd69ff0739e59b1",
+      "reason": "Outside selected contextual hardware-test review; no verified annual observation admitted."
+    },
+    {
+      "id": "physical-intelligence:ashby:81d1eb25-ada9-40fd-8708-e1e42ecb2b7e",
+      "employerId": "physical-intelligence",
+      "employer": "Physical Intelligence",
+      "title": "Production Test Engineer",
+      "locations": [
+        "San Francisco"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/physicalintelligence/81d1eb25-ada9-40fd-8708-e1e42ecb2b7e",
+      "verifiedAt": "2026-11-02T17:47:02+00:00",
+      "sourceTextSha256": "c2f5a85a92f5bcbeec5e77e7bffb6e1c8be9e3c92e4de171af58d33378bf4ec0",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/physical-intelligence.json",
+      "rawSourceFileSha256": "4636b655b7fab48b151da10f872a9268960654cc165ce7e06a60e83e91cc5c99",
+      "reason": "Production Test Lead focused on manufacturing software architecture and guided workflows, not primary hardware instrumentation or tester design."
+    },
+    {
+      "id": "saronic:ashby:e1bb2891-b2ff-4f67-a732-69ade388534a",
+      "employerId": "saronic",
+      "employer": "Saronic",
+      "title": "Senior Electrical Test Engineer",
+      "locations": [
+        "Austin, TX"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://jobs.ashbyhq.com/saronic/e1bb2891-b2ff-4f67-a732-69ade388534a",
+      "verifiedAt": "2026-11-02T17:47:28+00:00",
+      "sourceTextSha256": "1b12a0c469024ca019d3488b6903a3b8f30e066de87918c1215535fffd4c1945",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/saronic.json",
+      "rawSourceFileSha256": "e136444cad9066aae7c5b428da4f4e6182f687eabe76e8f17f11abe9f7b6665f",
+      "reason": "Outside selected contextual hardware-test review; no verified annual observation admitted."
+    },
+    {
+      "id": "skild:greenhouse:5233633008",
+      "employerId": "skild",
+      "employer": "Skild AI",
+      "title": "Hardware Validation - Electrical Engineer",
+      "locations": [
+        "San Mateo, California",
+        "San Mateo, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://job-boards.greenhouse.io/skildai-careers/jobs/5233633008",
+      "verifiedAt": "2026-11-02T17:46:56+00:00",
+      "sourceTextSha256": "fd3fdbe989edc73fc67fa0bec3718dadce6a2591c793c435ca00b74eb5f709b1",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/skild.json",
+      "rawSourceFileSha256": "a49f1d475f5a206e18129d5f2327978239629b9312f69266477034b052a8af1b",
+      "reason": "No complete explicitly annual USD range verified. Salary amounts, starting-cash ranges and annual-bonus language do not establish salary frequency."
+    },
+    {
+      "id": "zipline:greenhouse:7805200003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Mechanical Test Engineer, Motors (Senior)",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7805200003?gh_jid=7805200003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "3dc652ab9fc88b8067162d09ff309163ab355ec183cc93e63dd0ade8ca468a65",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No complete explicitly annual USD range verified. Salary amounts, starting-cash ranges and annual-bonus language do not establish salary frequency."
+    },
+    {
+      "id": "zipline:greenhouse:7808628003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Senior Electrical Test Engineer, Hardware Validation",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7808628003?gh_jid=7808628003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "5fb38c1a56689f91a22c515c09114215ae55dc829333dc8d4b7e8b4067cac222",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No complete explicitly annual USD range verified. Salary amounts, starting-cash ranges and annual-bonus language do not establish salary frequency."
+    },
+    {
+      "id": "zipline:greenhouse:7818483003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Production Test Engineer",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7818483003?gh_jid=7818483003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "089fa117ab71ccb789949c6cfeb48ddf41d895eaed3eb878074e48f712072d08",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "Outside selected contextual hardware-test review; no verified annual observation admitted."
+    },
+    {
+      "id": "zipline:greenhouse:7848978003",
+      "employerId": "zipline",
+      "employer": "Zipline",
+      "title": "Mechanical Test Engineer, Battery and Power Electronics",
+      "locations": [
+        "South San Francisco, California, USA",
+        "South San Francisco, California, United States"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "url": "https://www.zipline.com/open-roles/7848978003?gh_jid=7848978003",
+      "verifiedAt": "2026-11-02T17:46:57+00:00",
+      "sourceTextSha256": "f2e369dcb1f94b8e4ee93a7af12d68b69d7c7c9e2cb7a6dcdf1858cccafbfbf2",
+      "rawSourceFile": "research/physical-ai/2026-11-02/raw/zipline.json",
+      "rawSourceFileSha256": "de7bd649b9c013ae1f915e0e1d2642aa6d07857d0fd254b9229d684d710351ab",
+      "reason": "No complete explicitly annual USD range verified. Salary amounts, starting-cash ranges and annual-bonus language do not establish salary frequency."
+    }
+  ]
+}
