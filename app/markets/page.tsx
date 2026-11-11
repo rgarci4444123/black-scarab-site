@@ -1,4 +1,5 @@
 import { SectionHero } from "@/components/section-hero";
+import { MarketNavigation } from "./market-navigation";
 import type { Metadata } from "next";
 import styles from "./markets.module.css";
 import Image from "next/image";
@@ -20,7 +21,7 @@ export default function MarketsPage() {
   const href = `/markets/${latest.slug}`;
   const previous = marketCommentaries.slice(1);
   return <><SectionHero section="markets" /><div className={styles.scope}>
-    <nav className="market-nav" aria-label="Markets sections"><a href="#index-title">Index</a><a href="#commentary">Commentary</a><Link href="/markets/earnings-calendar">Earnings calendar</Link></nav>
+    <MarketNavigation />
     <section className="index-section" aria-labelledby="index-title"><div className="index-intro"><div><p className="eyebrow">The index</p><h2 id="index-title">Black Scarab Physical AI 15</h2><p>Fifteen listed companies across robotics, sensing, motion control and industrial automation.</p></div><Link className="index-link" href="/indices/physical-ai-adoption-15">Explore the index <span aria-hidden="true">↗</span></Link></div><div className="live-chart"><PerformanceChart observations={physicalAiAdoptionPerformance} /></div></section>
     <section id="commentary" aria-labelledby="weekly-heading">
       <h2 id="weekly-heading" className="commentary-heading">Weekly Market Commentary</h2>

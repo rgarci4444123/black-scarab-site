@@ -49,11 +49,13 @@
 
 /* Shared hero and page frame remain unchanged. */
 .scope { padding-top: 0; }
-.scope :global(.market-nav) { max-width: 1152px; margin: 0 auto; padding: 30px 0 34px; display: flex; align-items: center; justify-content: center; gap: 36px; }
-.scope :global(.market-nav a) { display: inline-flex; align-items: center; justify-content: center; position: relative; min-height: 42px; padding: 9px 18px; color: #397c78; font-size: 13px; font-weight: 500; line-height: 1.5; text-decoration: none; white-space: nowrap; }
-.scope :global(.market-nav a + a)::before { content: ""; position: absolute; left: -18px; top: 50%; width: 1px; height: 14px; background: #c5d8d2; transform: translateY(-50%); }
-.scope :global(.market-nav a:hover) { text-decoration: underline; text-underline-offset: 4px; }
-.scope :global(.market-nav a:focus-visible) { outline: 2px solid #397c78; outline-offset: 5px; }
+.scope :global(.market-nav) { max-width: 1152px; margin: 0 auto; padding: 18px 0 22px; display: flex; align-items: center; justify-content: center; gap: 32px; }
+.scope :global(.market-nav a) { display: inline-flex; align-items: center; justify-content: center; position: relative; min-height: 44px; padding: 10px 0; border-bottom: 2px solid transparent; color: #6e6e73; font-size: 13px; font-weight: 500; line-height: 1.5; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; white-space: nowrap; transition: color .15s; }
+.scope :global(.market-nav a[aria-current="location"]) { color: #1d1d1f; border-bottom-color: #397c78; }
+.scope :global(.market-nav a:hover) { color: #1d1d1f; }
+.scope :global(.market-nav a:focus-visible) { outline: 2px solid #1d1d1f; outline-offset: 5px; }
 .scope :global(#commentary), .scope :global(#index-title) { scroll-margin-top: 110px; }
-@media(max-width: 767px) { .scope :global(.market-nav) { gap: 12px; padding: 24px 0 30px; } .scope :global(.market-nav a) { min-height: 40px; padding: 9px 10px; font-size: 12px; } .scope :global(.market-nav a + a)::before { left: -6px; } }
-@media(max-width: 359px) { .scope :global(.market-nav) { gap: 6px; } .scope :global(.market-nav a) { padding-inline: 8px; font-size: 11px; } .scope :global(.market-nav a + a)::before { left: -3px; } }
+@media(max-width: 767px) { .scope :global(.market-nav) { gap: 20px; padding: 14px 0 18px; } .scope :global(.market-nav a) { font-size: 12px; } }
+@media(max-width: 420px) { .scope :global(.market-nav) { gap: 12px; } .scope :global(.market-nav a) { letter-spacing: .04em; } }
+@media(max-width: 359px) { .scope :global(.market-nav) { flex-wrap: wrap; column-gap: 16px; row-gap: 4px; } }
+@media(prefers-reduced-motion: reduce) { .scope :global(.market-nav a) { transition: none; } }
