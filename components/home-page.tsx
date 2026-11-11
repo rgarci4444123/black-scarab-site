@@ -154,8 +154,8 @@ export default function HomePage() {
     },
     {
       eyebrow: "Latest podcast",
-      title: "Bedrock’s $600M Raise + SAP’s Robot Workflows + NVIDIA Inside Digit 5",
-      href: "https://open.spotify.com/episode/3X2GdYSiwmA8qpHr6IWkeP",
+      title: "Tutor’s $75M Raise + Foundry’s Robotic Factory + Stretch Gen 2",
+      href: "https://open.spotify.com/episode/7oCfEHY96HcM1vaGBEC1OH",
       image: "/images/podcast/black-scarab-physical-ai-weekly-homepage.jpg",
       imageAlt: "Black Scarab Physical AI Weekly podcast cover",
       cta: "Listen on Spotify",
