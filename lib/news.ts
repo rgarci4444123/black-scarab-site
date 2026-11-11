@@ -37,6 +37,179 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "path-robotics-300m-series-e-manufacturing",
+  "title": "Path Robotics raises $300 million to expand AI beyond welding",
+  "summary": "Valued at $2.45 billion, the industrial robotics company is betting that intelligence developed through autonomous welding can eventually power more of the factory floor.",
+  "category": "Capital",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "7 min read",
+  "image": "/images/news/path-robotics-300m-series-e-manufacturing.png",
+  "imageAlt": "Conceptual editorial illustration of a bright weld joining steel plates, with a fan of fabricated metal structures branching outward against a deep cobalt background.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "Path Robotics raised $300 million in Series E financing led by Georgian, bringing its valuation to $2.45 billion.",
+    "The company reports seventeenfold growth in annual recurring revenue over eighteen months, driven by demand for AI powered industrial automation.",
+    "New funding will support manufacturing deployments, mobile welding robots, and the development of AI systems for tasks beyond welding."
+  ],
+  "sections": [
+    {
+      "heading": "From welding robots to intelligent factories",
+      "paragraphs": [
+        "Path Robotics has raised $300 million in Series E financing at a $2.45 billion post money valuation to expand its autonomous welding business and develop AI for more manufacturing tasks.",
+        "The Columbus, Ohio based company announced the funding on November 10, with investment firm Georgian leading the round. Other participants included Tiger Global, Drive Capital, Addition, Yamaha Motor Ventures, IronArc Ventures, D. E. Shaw Ventures and NAVER Ventures. Georgian partner Emily Walsh will also join Path's board.",
+        "Founded in 2018, Path began with a relatively specific goal: build robots that can weld metal without requiring engineers to program every movement.",
+        "Today, the company's ambitions are considerably larger.",
+        "Path wants to use the artificial intelligence developed through welding to automate additional manufacturing processes. The long term vision is a factory where robots can perform multiple tasks, adapt to changing conditions and require less human intervention.",
+        "The expansion comes as manufacturers face pressure to increase production despite shortages of skilled workers. Path reports that its annual recurring revenue has grown seventeenfold over the past eighteen months.",
+        "The funding gives Path more capital to pursue that demand, but the more interesting story is how the company plans to turn expertise in one industrial process into a broader automation platform."
+      ]
+    },
+    {
+      "heading": "Why welding is a difficult problem for traditional robots",
+      "paragraphs": [
+        "Industrial robots have been welding cars and machinery for decades. So what makes Path's technology different?",
+        "The answer comes down to how robots handle unexpected changes.",
+        "Traditional industrial robots are particularly effective in controlled environments. An engineer programs the movements, parts arrive in predictable positions, and the machine repeats the same operation thousands of times.",
+        "But real manufacturing is not always that consistent.",
+        "Two metal components might arrive with slightly different dimensions. A joint might have a larger gap than expected. Heat from welding can distort the metal, changing the shape of the workpiece while the robot is still operating.",
+        "These variations can require adjustments, additional programming or human intervention.",
+        "Path is developing AI systems that respond to those conditions automatically.",
+        "According to Path, its flagship model, Obsidian, uses cameras and lasers to identify where a weld is needed, determine how to perform it and adjust the robot's movements as conditions change.",
+        "Behind Obsidian is another system called the Weld World Model, an AI based welding simulator trained on data collected from real production and testing.",
+        "The relationship is important. The simulator helps Obsidian learn how welding behaves across different conditions, while the deployed robot uses sensor data to make decisions during actual production.",
+        "Information collected before, during and after welding can then contribute to further improvements.",
+        "The potential advantage is how much variation the system can accommodate, and how little preparation and intervention it needs to do useful work."
+      ]
+    },
+    {
+      "heading": "Selling productivity instead of just robots",
+      "paragraphs": [
+        "Path's business model is another important part of the story.",
+        "Installing industrial robots can require substantial upfront investment. Manufacturers must purchase equipment, integrate it into production, train workers and maintain the systems.",
+        "Even after installation, an unexpected breakdown can interrupt an entire production line.",
+        "Path addresses some of these concerns through a robots as a service model. Rather than requiring customers to purchase its intelligent welding cells outright, the company offers them with no upfront capital expenditure, alongside software, maintenance and around the clock support.",
+        "For manufacturers, this changes the purchasing decision.",
+        "Instead of committing substantial capital to equipment that might become obsolete or fail to meet expectations, customers can access automation through an ongoing service arrangement.",
+        "For Path, the model creates recurring revenue and an opportunity to build long term customer relationships.",
+        "It also creates an important operational responsibility.",
+        "As the company installs more robots, it needs the people, software and infrastructure to keep those systems running. A machine that frequently requires repairs or technician visits can quickly become expensive to support.",
+        "Developing intelligent robots is only part of commercializing the technology. Deploying them efficiently, keeping them productive and demonstrating a financial return are equally important.",
+        "Path's rapid revenue growth suggests manufacturers are increasingly willing to adopt its approach. The next question is whether the company can scale its deployments and support operations just as effectively."
+      ]
+    },
+    {
+      "heading": "Shipbuilding offers a major opportunity",
+      "paragraphs": [
+        "One of Path's most significant commercial opportunities comes from the American shipbuilding industry.",
+        "In August, HII, the largest U.S. military shipbuilder, announced performance based agreements with Path Robotics and GrayMatter Robotics covering up to $900 million in potential work over seven years.",
+        "Path has described its portion as a $600 million performance based production agreement.",
+        "The initiative aims to introduce AI powered automation into the production of vessels for the U.S. Navy, including aircraft carriers, submarines and destroyers.",
+        "Shipbuilding presents an especially attractive opportunity for adaptive robots.",
+        "Unlike automotive factories, which produce large numbers of similar vehicles, shipyards frequently work with enormous structures, specialized components and complex assemblies that vary significantly from one project to another.",
+        "That makes traditional robotic automation more difficult.",
+        "The HII initiative is designed to address these challenges by developing autonomous production capabilities spanning welding, grinding, painting, inspection and other fabrication processes.",
+        "However, the announced amounts are not guaranteed revenue.",
+        "The program begins with a development stage in which the participating companies must demonstrate that their technologies meet demanding manufacturing and quality requirements. Production work follows only if the systems satisfy cost, schedule and performance targets.",
+        "For Path, the opportunity extends beyond selling additional welding robots.",
+        "A successful deployment could demonstrate how different intelligent machines work together to improve the output of an entire manufacturing operation.",
+        "That distinction matters. Faster welding has limited value if grinding, inspection or assembly cannot keep pace.",
+        "The larger opportunity is improving the flow of production across multiple stages."
+      ]
+    },
+    {
+      "heading": "Bringing the robot to the work",
+      "paragraphs": [
+        "Path is also extending its welding technology through Rove, a mobile robotic system introduced in April.",
+        "Unlike the company's fixed welding cells, Rove places its AI welding technology on a four legged robotic platform.",
+        "The concept is simple: instead of moving a large metal structure into a robotic welding station, bring the robot to the structure.",
+        "This could be particularly useful in shipyards, construction projects and heavy industrial facilities, where components may be too large or difficult to transport.",
+        "Rove moves to a designated location, scans the welding joint and uses Obsidian to adjust its welding parameters while performing the work.",
+        "Saronic, a manufacturer of autonomous maritime vessels, is among its early adopters. Path currently plans to ship 50 Rove units in 2027.",
+        "The product also demonstrates the flexibility of Path's software strategy.",
+        "The same underlying welding intelligence can be deployed through a stationary robotic arm or a mobile platform, potentially expanding the range of applications the company can address.",
+        "Still, mobility introduces new challenges. The robot must reach the work area, position itself accurately and operate safely alongside workers and other machinery.",
+        "The commercial test will be whether that additional flexibility translates into enough productive work to justify the added complexity."
+      ]
+    },
+    {
+      "heading": "Can welding intelligence extend across the factory?",
+      "paragraphs": [
+        "Path's longer term ambition is to apply its AI technology to manufacturing tasks beyond welding.",
+        "This is where the latest financing becomes particularly interesting.",
+        "The company has spent years collecting information about metal parts, industrial environments and the physical interactions involved in welding.",
+        "That experience could provide a foundation for other operations, including grinding, material preparation and inspection.",
+        "But performing a different task requires more than attaching a new tool to an existing robot.",
+        "Grinding involves controlling contact forces and material removal. Inspection requires identifying defects and determining whether a component meets quality standards. Assembly introduces different challenges involving alignment, positioning and manipulation.",
+        "Each application requires additional training, engineering and validation.",
+        "The opportunity is to reuse parts of the intelligence, data infrastructure and deployment experience Path has already developed rather than starting from scratch every time.",
+        "If successful, the company could expand from providing autonomous welding systems to supplying intelligence for multiple stages of industrial production.",
+        "There is also a potentially valuable feedback loop. As more robots operate in real factories, they generate additional production data that can help improve future models.",
+        "For Black Scarab, that combination of deployed machines, proprietary operating data and established customer relationships could become a competitive advantage. The next evidence to watch is progress through HII’s production milestones, Rove’s planned 2027 shipments and qualified applications beyond welding."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Path Robotics original financing announcement",
+      "url": "https://www.path-robotics.com/news/path-robotics-announces-300-million-series-e-led-by-georgian"
+    },
+    {
+      "label": "Original Business Wire distribution timestamp",
+      "url": "https://finance.yahoo.com/technology/ai/articles/path-robotics-announces-300-million-140500145.html"
+    },
+    {
+      "label": "Obsidian technology documentation",
+      "url": "https://www.path-robotics.com/obsidian"
+    },
+    {
+      "label": "Intelligent Welding Cells",
+      "url": "https://www.path-robotics.com/intelligent-welding-cells"
+    },
+    {
+      "label": "HII performance based agreements",
+      "url": "https://www.hii.com/news/hii-signs-performance-based-production-agreements-with-path-robotics-and-graymatter-robotics"
+    },
+    {
+      "label": "Rove product documentation",
+      "url": "https://www.path-robotics.com/rove"
+    },
+    {
+      "label": "Original Rove announcement",
+      "url": "https://www.path-robotics.com/news/path-robotics-launches-rove-bringing-mobility-to-welding-automation-powered-by-physical-ai"
+    },
+    {
+      "label": "Path Robotics service model",
+      "url": "https://www.path-robotics.com/resources?type=webinar"
+    },
+    {
+      "label": "Association for Advancing Automation reporting",
+      "url": "https://www.automate.org/robotics/industry-insights/path-robotics-raises-300m-at-2-25b-valuation/anc"
+    },
+    {
+      "label": "Quartz, reporting based on Bloomberg",
+      "url": "https://qz.com/path-robotics-300-million-series-e-valuation-111026"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [],
+    "technologies": [
+      "foundation-models",
+      "machine-vision",
+      "simulation"
+    ],
+    "applications": [
+      "welding"
+    ]
+  },
+  "publishedDate": "2026-11-11",
+  "publishedAt": "2026-11-11T09:47:34-05:00",
+  "publishedLabel": "November 11, 2026"
+},
+{
   "slug": "google-gemini-robotics-2-5-factory-kitting",
   "title": "Google brings Gemini Robotics 2.5 to a new factory test",
   "summary": "DeepMind’s latest robot action model combines broader dexterity with a reported 96% success rate in automotive parts kitting trials with Apptronik and Mercedes Benz.",
