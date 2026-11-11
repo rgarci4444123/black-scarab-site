@@ -21,3 +21,7 @@ Homepage commentary identity: replace the “Featured insight” label above the
 ## November 4, 2026
 
 Approved edition: `/markets/us-factories-expand-china-slows`, titled “U.S. Factories Expand as China Slows,” covering October 28 through November 3. Preserve the approved article, original factory cover and performance graphic. The two additional figures use charcoal headings, green positive figures, red negative figures and white panels. Teradyne’s $0.35 million robotics segment pretax profit is positive and green. The inline word “index” links to the Physical AI 15 page. Historical returns use October 27 through November 3 completed closes, with November 2 Japanese closes carried through the November 3 holiday.
+
+## November 11, 2026
+
+Approved edition: `/markets/ai-selloff-factory-stocks-earnings`, titled “The AI Selloff Hit Factory Stocks. The Earnings Told Another Story.”, covering November 4 through November 10. Preserve the approved compact optical cover, centered reading column, collapsible contents and four responsive SVG figures. The homepage Weekly Market Commentary feature and Markets lead select this newest published entry automatically. Prior editions remain in the archive. Price returns span November 3 through November 10 closes; Japanese listings start from November 2 because of the November 3 holiday. Publication approved in this chat; social publication is a separate request.

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getMarketCommentary, marketCommentaries } from "@/lib/market-commentaries";
 import styles from "../commentary.module.css";
 import issueThreeVisuals from "../commentary-2026-11-04.module.css";
+import issueFourVisuals from "../commentary-2026-11-11.module.css";
 
 type Props = { params: Promise<{ slug: string }> };
 export const dynamicParams = false;
@@ -18,5 +19,5 @@ export default async function CommentaryPage({ params }: Props) {
   const edition = getMarketCommentary((await params).slug);
   if (!edition) notFound();
   const schema = { "@context": "https://schema.org", "@type": "Article", headline: edition.title, description: edition.summary, datePublished: edition.publishedTime ?? edition.publishedAt, dateModified: edition.publishedTime ?? edition.publishedAt, image: `https://www.blackscarab.ai${edition.socialImage ?? edition.image}`, mainEntityOfPage: `https://www.blackscarab.ai/markets/${edition.slug}`, author: { "@type": "Person", name: "Rodolfo Garcia Calderoni", honorificSuffix: "CFA", url: "https://www.blackscarab.ai/about" }, publisher: { "@type": "Organization", name: "Black Scarab", url: "https://www.blackscarab.ai", logo: { "@type": "ImageObject", url: "https://www.blackscarab.ai/icon.png" } } };
-  return <div className={`${styles.scope} ${edition.slug === "us-factories-expand-china-slows" ? issueThreeVisuals.scope : ""}`}><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />{/* Static, reviewed editorial HTML maintained in the repository. */}<div dangerouslySetInnerHTML={{ __html: edition.html }} /></div>;
+  return <div className={`${styles.scope} ${edition.slug === "us-factories-expand-china-slows" ? issueThreeVisuals.scope : edition.slug === "ai-selloff-factory-stocks-earnings" ? issueFourVisuals.scope : ""}`}><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />{/* Static, reviewed editorial HTML maintained in the repository. */}<div dangerouslySetInnerHTML={{ __html: edition.html }} /></div>;
 }
