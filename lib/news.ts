@@ -37,6 +37,138 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "runway-praxis-public-release",
+  "title": "Runway releases Praxis weights and code for robot developers",
+  "summary": "Runway is opening its video trained robot model to a wider developer community, with commercial use permitted under Apache 2.0 and separate starting points for single arm and two arm systems.",
+  "category": "Robot Learning",
+  "publishedDate": "2026-11-12",
+  "publishedAt": "2026-11-12T18:37:50-05:00",
+  "publishedLabel": "November 12, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/runway-praxis-public-release.png",
+  "imageAlt": "Conceptual photographic sequence showing a human hand reaching for a red cube, overlapping motion exposures and a mechanical gripper lifting the cube.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "Runway has released model weights, inference code and training tools under Apache 2.0.",
+    "The package offers a base model for adaptation and versions trained for single arm and two arm robots.",
+    "Praxis predicts future video and robot actions together. Adapting it still requires robot data, computing resources and testing."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Runway has publicly released the weights and code for Praxis, its model for turning knowledge learned from video into robot movements.",
+        "The November 11 release gives developers access to the model, which has about 27 billion parameters, along with software to run and adapt it. Runway is releasing the assets under Apache 2.0, which permits commercial use.",
+        "Runway introduced Praxis in September and has been working with robotics partners. This week's release opens that work to a broader group of developers and researchers who can test the model on their own systems."
+      ]
+    },
+    {
+      "heading": "What video can teach a robot",
+      "paragraphs": [
+        "Runway is best known for generative video. Its robotics effort applies a related idea to a harder output: making something happen in the physical world.",
+        "Ordinary footage contains a great deal of information about movement. Hands reach for objects, containers open, items change position and tasks unfold in recognizable sequences. Runway's premise is that learning those patterns gives a robot model useful knowledge before it starts learning the controls of a particular machine.",
+        "Robot demonstrations supply a different kind of information. They connect what the cameras saw with the commands the robot received and the movement that followed. Collecting those demonstrations requires access to robots, operators and suitable environments.",
+        "The proposed advantage is to use abundant video to learn broadly useful patterns, then use robot data to connect those patterns to action. If that transfer works well, developers could spend less effort rebuilding basic knowledge for each new machine or task.",
+        "Runway's early partners include Noble Machines, Standard Bots and Ultra. The company says they have run Praxis on a legged humanoid, an industrial arm and a warehouse robot with two arms. Those examples span different machines, while the public package gives other teams a way to investigate the approach themselves."
+      ]
+    },
+    {
+      "heading": "Predicting the scene and the movement",
+      "paragraphs": [
+        "Runway calls Praxis a world action model because it predicts both what should happen next and the robot movements associated with that future.",
+        "The system takes a task instruction, camera observations and the robot's current pose. A video component predicts the upcoming scene. A smaller action component reads information inside that prediction and produces commands for the robot.",
+        "The reference software works in short sequences. After an initial sequence, each subsequent chunk contains 24 action steps at 15 steps per second, covering about 1.6 seconds. The robot executes the movements and supplies new observations for the next prediction.",
+        "That feedback matters. Objects can shift during contact, a grasp can fail and the scene can differ from the model's prediction. The next camera observations give the policy a chance to respond to what actually happened."
+      ]
+    },
+    {
+      "heading": "Three starting points",
+      "paragraphs": [
+        "The release provides different starting points for different development work.",
+        "The DROID version targets a single Franka arm with a Robotiq gripper, an exterior camera and a wrist camera. The YAM version targets two arms, with a camera above the work area and one at each wrist.",
+        "The base model is intended for further training. It contains the shared video and action components, but developers must add and train the interfaces that connect the model to their robot's observations and movements.",
+        "The repository also includes a policy server and a MuJoCo simulation. Together, these let developers work through the model's input and output requirements and evaluate behavior in a repeatable simulated setup.",
+        "The distinction between adapting a task and adapting a machine is important. Runway's training guide documents LoRA, a method that trains a relatively small set of added parameters, for teaching new tasks to the existing DROID setup. For a different arm, camera arrangement or command format, the guide directs developers toward fuller training from the base model and changes to the integration code."
+      ]
+    },
+    {
+      "heading": "A strong simulation result, with a defined scope",
+      "paragraphs": [
+        "NVIDIA's RoboLab leaderboard lists Praxis at 555 successful episodes out of 1,200, or 46.2%. The table records 42.9% for FLUX 3 Action and 36.8% for Cosmos3 Nano Policy.",
+        "Praxis leads the listed world action models in that evaluation. Several systems from other categories score higher on the overall table, which includes approaches with different inputs, architectures and training histories.",
+        "The result is useful evidence of how Praxis handles a defined set of simulated manipulation tasks. It gives researchers a common environment in which to compare systems and investigate failures.",
+        "It does not translate directly into a factory completion rate. A production task has its own objects, tolerances, interruptions and consequences when a movement goes wrong.",
+        "Runway's technical report identifies specific weaknesses on real robots. Praxis can reach for an object that resembles the intended target, struggle with vague instructions and have difficulty carrying out several steps from one prompt. Giving each step a separate instruction works better, according to the company.",
+        "Those limitations point to a continuing role for task planning, precise instructions and testing under varied conditions."
+      ]
+    },
+    {
+      "heading": "Access comes with an engineering bill",
+      "paragraphs": [
+        "The standard setup remains substantial. Runway's repository specifies an 80 GB GPU for the default inference configuration. It also describes reduced precision versions that shrink the model's memory requirements.",
+        "Training adds another cost. The published full training example uses eight GPUs with 80 GB each and takes about 15 hours. The documented LoRA example for an existing DROID setup uses one 80 GB GPU and takes about five hours. These are Runway's measured examples for particular configurations and datasets.",
+        "Developers also need demonstrations that match their robot's cameras, coordinate system and gripper behavior. A change in camera placement changes the observations. A change in the robot or tool changes what an action command means.",
+        "Commercial permission therefore makes the model available for a wider range of projects, while the practical work remains in collecting suitable data, adapting the software and establishing reliable behavior."
+      ]
+    },
+    {
+      "heading": "What public access changes",
+      "paragraphs": [
+        "For Black Scarab, the significant shift is who can now test Runway's proposition.",
+        "A partner demonstration shows what a development team has achieved in a particular setting. Released weights and code let other teams examine the same foundation, adapt it and report where it succeeds or fails.",
+        "That creates a path toward stronger evidence. Repeated results on new robots, clear descriptions of the training data and published failure cases will help establish how much useful knowledge transfers from general video into physical control.",
+        "Runway has put the tools for that investigation into developers' hands. The next milestone is seeing how well their results travel beyond the original demonstrations."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Runway public release announcement",
+      "url": "https://runway.com/news/company-news/praxis-1-is-now-available"
+    },
+    {
+      "label": "Runway's September introduction of Praxis",
+      "url": "https://runway.com/research/introducing-praxis-1"
+    },
+    {
+      "label": "Praxis technical report",
+      "url": "https://runway.com/research/praxis-1-video-pretraining-to-robot-control"
+    },
+    {
+      "label": "Official code repository and inference documentation",
+      "url": "https://github.com/runwayml/praxis-1-oss"
+    },
+    {
+      "label": "Official training and adaptation guide",
+      "url": "https://github.com/runwayml/praxis-1-oss/blob/main/praxis/train/README.md"
+    },
+    {
+      "label": "NVIDIA RoboLab leaderboard",
+      "url": "https://research.nvidia.com/labs/srl/projects/robolab/leaderboard.html"
+    },
+    {
+      "label": "GIGAZINE coverage of the public release",
+      "url": "https://gigazine.net/gsc_news/en/20261112-praxis-1/"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "technologies": [
+      "foundation-models",
+      "embodied-ai",
+      "robot-software",
+      "manipulation"
+    ],
+    "applications": [
+      "robot-training"
+    ]
+  }
+},
+{
   "slug": "path-robotics-300m-series-e-manufacturing",
   "title": "Path Robotics raises $300 million to expand AI beyond welding",
   "summary": "Valued at $2.45 billion, the industrial robotics company is betting that intelligence developed through autonomous welding can eventually power more of the factory floor.",
