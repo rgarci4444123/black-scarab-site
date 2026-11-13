@@ -59,9 +59,9 @@ function popupHarness({ desktop = true, stored = {}, pathname = "/resources/phys
     if (id === "@/components/newsletter-signup-form") return {__esModule:true,default:()=>null};
     return require(id);
   };
-  const module = {exports:{}};
-  new Function("require","module","exports","window","document","Date",code)(mockedRequire,module,module.exports,window,document,{now:()=>now});
-  module.exports.default();
+  const contentModule = {exports:{}};
+  new Function("require","module","exports","window","document","Date",code)(mockedRequire,contentModule,contentModule.exports,window,document,{now:()=>now});
+  contentModule.exports.default();
   effects.forEach((effect)=>effect());
   return { opened,events,storage,window, advance:(milliseconds)=>{now+=milliseconds;},
     exit:()=>documentListeners.get("mouseout")?.({clientY:0,relatedTarget:null}),
