@@ -1,6 +1,7 @@
 import { publishedCareerGuides, guidePath } from "@/lib/career-paths/guides";
 import { publishedFamilies } from "@/lib/career-paths/families";
 import type { MetadataRoute } from "next";
+import { getGlossarySitemapEntries, glossaryPublication } from "@/lib/glossary";
 import { caseStudies } from "@/lib/case-studies";
 import { newsUpdates } from "@/lib/news";
 
@@ -11,6 +12,7 @@ const currentDate = new Date();
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
+    ...getGlossarySitemapEntries(),
     { url: `${baseUrl}/career-paths`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/career-paths/assessment`, changeFrequency: "monthly", priority: 0.7 },
     ...publishedCareerGuides.map(guide => ({url: `${baseUrl}${guidePath(guide)}`, lastModified: new Date(guide.reviewedAt), changeFrequency: "monthly" as const, priority: 0.7})),
@@ -43,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/resources/physical-ai-glossary`,
-      lastModified: new Date("2026-09-25"),
+      lastModified: new Date(Object.values(glossaryPublication.terms).flatMap(term => term.modifiedAt ?? term.publishedAt ?? []).sort().at(-1) ?? "2026-09-25"),
       changeFrequency: "monthly",
       priority: 0.9,
     },

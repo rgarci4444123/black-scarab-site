@@ -1,0 +1,307 @@
+{
+  "id": "pilot-01",
+  "title": "Robot precision, sensing, and control",
+  "selectionBasis": "Connected reader questions, existing Black Scarab coverage, and supplied source availability. Keyword volumes and source accuracy have not yet been verified. Selection does not approve publication.",
+  "terms": [
+    {
+      "rank": 1,
+      "id": "BSG-317",
+      "term": "Repeatability",
+      "slug": "repeatability",
+      "cluster": "Positioning and measurement",
+      "selectionReason": "Lead page: distinguish repeatability from accuracy and interpret a manufacturer specification.",
+      "suggestedRelatedIds": [
+        "BSG-005",
+        "BSG-291",
+        "BSG-026",
+        "BSG-292"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 2,
+      "id": "BSG-005",
+      "term": "Accuracy",
+      "slug": "robot-accuracy",
+      "cluster": "Positioning and measurement",
+      "selectionReason": "Companion to Repeatability; distinguish target error from consistency.",
+      "suggestedRelatedIds": [
+        "BSG-317",
+        "BSG-359",
+        "BSG-291",
+        "BSG-292"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 3,
+      "id": "BSG-291",
+      "term": "Pose",
+      "slug": "pose",
+      "cluster": "Positioning and measurement",
+      "selectionReason": "Explain the position and orientation underlying robot positioning specifications.",
+      "suggestedRelatedIds": [
+        "BSG-292",
+        "BSG-118",
+        "BSG-005",
+        "BSG-359"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 4,
+      "id": "BSG-026",
+      "term": "Backlash",
+      "slug": "backlash",
+      "cluster": "Positioning and measurement",
+      "selectionReason": "Explain a mechanical source of lost motion when direction reverses.",
+      "suggestedRelatedIds": [
+        "BSG-317",
+        "BSG-005",
+        "BSG-363",
+        "BSG-387"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 5,
+      "id": "BSG-359",
+      "term": "Sensor Calibration",
+      "slug": "sensor-calibration",
+      "cluster": "Positioning and measurement",
+      "selectionReason": "Connect measurement references and calibration with robot positioning.",
+      "suggestedRelatedIds": [
+        "BSG-005",
+        "BSG-118",
+        "BSG-002",
+        "BSG-185"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 6,
+      "id": "BSG-118",
+      "term": "Encoder",
+      "slug": "encoder-robotics",
+      "cluster": "Sensing and actuation",
+      "selectionReason": "Disambiguate the robotics encoder from the machine learning encoder.",
+      "suggestedRelatedIds": [
+        "BSG-002",
+        "BSG-185",
+        "BSG-363",
+        "BSG-292"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 7,
+      "id": "BSG-002",
+      "term": "Absolute Encoder",
+      "slug": "absolute-encoder",
+      "cluster": "Sensing and actuation",
+      "selectionReason": "Explain absolute position sensing and its relationship to feedback control.",
+      "suggestedRelatedIds": [
+        "BSG-118",
+        "BSG-185",
+        "BSG-359",
+        "BSG-363"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 8,
+      "id": "BSG-185",
+      "term": "Incremental Encoder",
+      "slug": "incremental-encoder",
+      "cluster": "Sensing and actuation",
+      "selectionReason": "Explain relative position sensing and its difference from absolute encoders.",
+      "suggestedRelatedIds": [
+        "BSG-002",
+        "BSG-118",
+        "BSG-363",
+        "BSG-292"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 9,
+      "id": "BSG-363",
+      "term": "Servo Motor",
+      "slug": "servo-motor",
+      "cluster": "Sensing and actuation",
+      "selectionReason": "Connect motors and encoders to closed loop motion; check overlap with the actuator guide.",
+      "suggestedRelatedIds": [
+        "BSG-118",
+        "BSG-292",
+        "BSG-414",
+        "BSG-133"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 10,
+      "id": "BSG-133",
+      "term": "Feedback Loop",
+      "slug": "feedback-loop",
+      "cluster": "Feedback and response",
+      "selectionReason": "Foundational explanation supporting the control pages in this pilot.",
+      "suggestedRelatedIds": [
+        "BSG-284",
+        "BSG-364",
+        "BSG-292",
+        "BSG-365"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 11,
+      "id": "BSG-284",
+      "term": "PID Controller: Proportional Integral Derivative Controller",
+      "slug": "pid-controller",
+      "cluster": "Feedback and response",
+      "selectionReason": "Explain proportional, integral, and derivative control without turning the page into a tuning guide.",
+      "suggestedRelatedIds": [
+        "BSG-133",
+        "BSG-364",
+        "BSG-365",
+        "BSG-292"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 12,
+      "id": "BSG-364",
+      "term": "Setpoint",
+      "slug": "setpoint",
+      "cluster": "Feedback and response",
+      "selectionReason": "Define the target value used throughout feedback and motion control.",
+      "suggestedRelatedIds": [
+        "BSG-133",
+        "BSG-284",
+        "BSG-292",
+        "BSG-414"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 13,
+      "id": "BSG-365",
+      "term": "Settling Time",
+      "slug": "settling-time",
+      "cluster": "Feedback and response",
+      "selectionReason": "Explain response timing alongside accuracy and repeatability.",
+      "suggestedRelatedIds": [
+        "BSG-284",
+        "BSG-133",
+        "BSG-387",
+        "BSG-317"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 14,
+      "id": "BSG-292",
+      "term": "Position Control",
+      "slug": "position-control",
+      "cluster": "Feedback and response",
+      "selectionReason": "Explain how a controller reaches and holds a target position.",
+      "suggestedRelatedIds": [
+        "BSG-291",
+        "BSG-133",
+        "BSG-284",
+        "BSG-118"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 15,
+      "id": "BSG-414",
+      "term": "Torque Control",
+      "slug": "torque-control",
+      "cluster": "Feedback and response",
+      "selectionReason": "Distinguish torque regulation from position regulation and force control.",
+      "suggestedRelatedIds": [
+        "BSG-142",
+        "BSG-183",
+        "BSG-363",
+        "BSG-387"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 16,
+      "id": "BSG-387",
+      "term": "Stiffness",
+      "slug": "mechanical-stiffness",
+      "cluster": "Contact and mechanics",
+      "selectionReason": "Explain resistance to deformation and its relationship to compliance.",
+      "suggestedRelatedIds": [
+        "BSG-046",
+        "BSG-183",
+        "BSG-142",
+        "BSG-365"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 17,
+      "id": "BSG-046",
+      "term": "Compliance",
+      "slug": "compliance",
+      "cluster": "Contact and mechanics",
+      "selectionReason": "Explain compliant behavior alongside stiffness and contact control.",
+      "suggestedRelatedIds": [
+        "BSG-387",
+        "BSG-183",
+        "BSG-012",
+        "BSG-142"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 18,
+      "id": "BSG-142",
+      "term": "Force Control",
+      "slug": "force-control",
+      "cluster": "Contact and mechanics",
+      "selectionReason": "Explain regulated contact force and its difference from position control.",
+      "suggestedRelatedIds": [
+        "BSG-183",
+        "BSG-012",
+        "BSG-046",
+        "BSG-414"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 19,
+      "id": "BSG-183",
+      "term": "Impedance Control",
+      "slug": "impedance-control",
+      "cluster": "Contact and mechanics",
+      "selectionReason": "Distinguish impedance control from admittance control.",
+      "suggestedRelatedIds": [
+        "BSG-012",
+        "BSG-142",
+        "BSG-387",
+        "BSG-046"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "rank": 20,
+      "id": "BSG-012",
+      "term": "Admittance Control",
+      "slug": "admittance-control",
+      "cluster": "Contact and mechanics",
+      "selectionReason": "Companion comparison to impedance control and force control.",
+      "suggestedRelatedIds": [
+        "BSG-183",
+        "BSG-142",
+        "BSG-046",
+        "BSG-387"
+      ],
+      "reviewStatus": "pending"
+    }
+  ]
+}

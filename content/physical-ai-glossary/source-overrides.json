@@ -1,0 +1,1176 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-13T17:52:19.221943+00:00",
+  "reviewer": "Codex research audit",
+  "terms": {
+    "BSG-317": {
+      "submittedSha256": "ce8b0dc8b4a7a3777293bd9bb3ce0239fa83e7307b7460edb9a93273816ae84c",
+      "sources": [
+        {
+          "label": "Universal Robots: UR5e technical specifications",
+          "url": "https://www.universal-robots.com/manuals/EN/HTML/SW5_25/Content/prod-usr-man/complianceUR5e/H_g5_sections/appendix_g5/tech_spec_sheet.htm"
+        },
+        {
+          "label": "ISO 9283:1998: Robot performance criteria and test methods",
+          "url": "https://www.iso.org/standard/22244.html"
+        },
+        {
+          "label": "DENSO Robotics: Robot accuracy versus repeatability",
+          "url": "https://support.densorobotics.com/en/support/solutions/articles/60000697365-denso-robot-accuracy-vs-robot-repeatability-precision"
+        },
+        {
+          "label": "NISTIR 8093: Robot workcell calibration and registration",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=918708"
+        }
+      ]
+    },
+    "BSG-005": {
+      "submittedSha256": "48540bbdda38d522aeb10ae2e9ba58fd5a2165eaeb19ae8658a57b3346ee48eb",
+      "sources": [
+        {
+          "label": "DENSO Robotics: Robot accuracy versus repeatability",
+          "url": "https://support.densorobotics.com/en/support/solutions/articles/60000697365-denso-robot-accuracy-vs-robot-repeatability-precision"
+        },
+        {
+          "label": "NISTIR 8093: Robot workcell calibration and registration",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=918708"
+        }
+      ]
+    },
+    "BSG-291": {
+      "submittedSha256": "2685e5fa042b3e8b2a36b25252951a9dc777f201f9ef3b19c811e9d4651b6fcc",
+      "sources": [
+        {
+          "label": "Modern Robotics 3.3.1: Homogeneous transformation matrices",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/3-3-1-homogeneous-transformation-matrices/"
+        },
+        {
+          "label": "Modern Robotics 2.1: Degrees of freedom of a rigid body",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/2-1-degrees-of-freedom-of-a-rigid-body/"
+        },
+        {
+          "label": "OpenCV: Perspective-n-Point pose computation",
+          "url": "https://docs.opencv.org/4.x/d5/d1f/calib3d_solvePnP.html"
+        },
+        {
+          "label": "ROS 2: Pose message definition",
+          "url": "https://github.com/ros2/common_interfaces/blob/rolling/geometry_msgs/msg/Pose.msg"
+        }
+      ]
+    },
+    "BSG-026": {
+      "submittedSha256": "dc91347a44d17f7c86683f13b4eb497f98307b781137aff3ede08200881b3974",
+      "sources": [
+        {
+          "label": "KHK Gears: Gear backlash",
+          "url": "https://khkgears.net/new/gear_knowledge/gear_technical_reference/gear_backlash.html"
+        },
+        {
+          "label": "GAM: Backlash and torsional stiffness in motion couplings",
+          "url": "https://www.gamweb.com/flexible-coupling-considerations-for-motion-designs-in-oem-and-plant-setups.html"
+        }
+      ]
+    },
+    "BSG-359": {
+      "submittedSha256": "6735f457aaebd32e4f9701123256ad358a75adef27a1a2ab5f2f7406219cc0dd",
+      "sources": [
+        {
+          "label": "JCGM International Vocabulary of Metrology: Calibration",
+          "url": "https://jcgm.bipm.org/vim/en/2.39.html"
+        },
+        {
+          "label": "NIST: Metrological traceability and measurement uncertainty",
+          "url": "https://www.nist.gov/metrology/metrological-traceability"
+        },
+        {
+          "label": "OpenCV: Camera calibration",
+          "url": "https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html"
+        },
+        {
+          "label": "NISTIR 8093: Robot workcell calibration and registration",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=918708"
+        }
+      ]
+    },
+    "BSG-118": {
+      "submittedSha256": "a7921157347a9794405684cd347d93d728009764dddbaed2a5373099eda19898",
+      "sources": [
+        {
+          "label": "ifm: Rotary encoders",
+          "url": "https://www.ifm.com/us/en/us/learn-more/motion-control/encoders/encoders"
+        },
+        {
+          "label": "Renishaw: Introduction to encoder systems",
+          "url": "https://www.renishaw.com/en/introduction-to-encoder-systems--47256"
+        },
+        {
+          "label": "Renishaw: Encoder resolution, accuracy and quadrature",
+          "url": "https://www.renishaw.com/en/optical-encoders-frequently-asked-questions--34674"
+        },
+        {
+          "label": "Modern Robotics 13.4: Odometry",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/13-4-odometry/"
+        }
+      ]
+    },
+    "BSG-002": {
+      "submittedSha256": "5c8b06f66597552275bbf9ff5e37148734783ecb8755ccdba45fef541ba54d63",
+      "sources": [
+        {
+          "label": "Kollmorgen: Multi-turn absolute rotary encoders",
+          "url": "https://www.kollmorgen.com/en-us/resources/technologies-explained/encoders/multi-turn-absolute-rotary-encoder"
+        },
+        {
+          "label": "Nikon: Absolute encoder features",
+          "url": "https://www.nikon.com/business/encoder/features/"
+        }
+      ]
+    },
+    "BSG-185": {
+      "submittedSha256": "0d8548614ad01154101d63519541c975e3ebf18d19febd2aee23c5ac814a693f",
+      "sources": [
+        {
+          "label": "ifm: Incremental encoders and A/B/Z channels",
+          "url": "https://www.ifm.com/us/en/us/learn-more/motion-control/encoders/incremental-encoders"
+        },
+        {
+          "label": "Renishaw: Encoder resolution, accuracy and quadrature",
+          "url": "https://www.renishaw.com/en/optical-encoders-frequently-asked-questions--34674"
+        },
+        {
+          "label": "Timken: Incremental magnetic encoders",
+          "url": "https://www.timkenencoders.com/en-us/timken-magnetic-encoders"
+        }
+      ]
+    },
+    "BSG-363": {
+      "submittedSha256": "a1da584b094bb29f31a06b46573e2a828e34b196f22c63a3e260bb8b0f5d0a63",
+      "sources": [
+        {
+          "label": "Oriental Motor: Servo motor features and control modes",
+          "url": "https://www.orientalmotor.com/servo-motors/technology/servo-motors-features.html"
+        },
+        {
+          "label": "Kollmorgen: How servo motors work",
+          "url": "https://www.kollmorgen.com/en-us/resources/technologies-explained/motors/what-is-a-servo-motor"
+        },
+        {
+          "label": "Kollmorgen: Closed-loop servo systems",
+          "url": "https://www.kollmorgen.com/en-us/blogs/what-closed-loop-system"
+        }
+      ]
+    },
+    "BSG-133": {
+      "submittedSha256": "ee8e5073a5a3ac70c2c944d27bb54dbaf1c8992a134572d012eda8ff8f0b8554",
+      "sources": [
+        {
+          "label": "Modern Robotics 11.1: Control system overview",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-1-control-system-overview/"
+        },
+        {
+          "label": "MathWorks: Negative and positive feedback connections",
+          "url": "https://www.mathworks.com/help/control/ref/inputoutputmodel.feedback.html"
+        },
+        {
+          "label": "Modern Robotics 11.4: Model-based and feedback control",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-4-motion-control-with-torque-or-force-inputs-part-3-of-3/"
+        }
+      ]
+    },
+    "BSG-284": {
+      "submittedSha256": "356097d4e43601d9eaf7400c5bf40926e5c2f72555cdebcd41d40f504e9afdc7",
+      "sources": [
+        {
+          "label": "MathWorks: PID controller representations",
+          "url": "https://www.mathworks.com/help/control/ug/proportional-integral-derivative-pid-controllers.html"
+        },
+        {
+          "label": "MathWorks: PID filtering, saturation and anti-windup",
+          "url": "https://www.mathworks.com/help/simulink/slref/pidcontroller.html"
+        },
+        {
+          "label": "Modern Robotics 11.4: PID and steady-state error, part 2",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-4-motion-control-with-torque-or-force-inputs-part-2-of-3/"
+        },
+        {
+          "label": "MathWorks: Model predictive control",
+          "url": "https://www.mathworks.com/help/mpc/gs/what-is-mpc.html"
+        }
+      ]
+    },
+    "BSG-364": {
+      "submittedSha256": "4ad84b33ebbb0f66ff48cc5709c8baee7f6042e93c6666e91515edb1b5242f92",
+      "sources": [
+        {
+          "label": "Kollmorgen: Closed-loop servo systems",
+          "url": "https://www.kollmorgen.com/en-us/blogs/what-closed-loop-system"
+        },
+        {
+          "label": "Modern Robotics 11.3: Position control with velocity inputs",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-3-motion-control-with-velocity-inputs-part-1-of-3/"
+        },
+        {
+          "label": "Modern Robotics 9.1–9.2: Paths and trajectories",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/9-1-and-9-2-point-to-point-trajectories-part-1-of-2/"
+        }
+      ]
+    },
+    "BSG-365": {
+      "submittedSha256": "51023b92952f012b61984eb5e465b75c101470fc3a0fd1947afc770cde9ac72c",
+      "sources": [
+        {
+          "label": "MathWorks: Step-response characteristics and settling time",
+          "url": "https://www.mathworks.com/help/control/ref/dynamicsystem.stepinfo.html"
+        },
+        {
+          "label": "Modern Robotics 11.4: Joint control with torque inputs, part 1",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-4-motion-control-with-torque-or-force-inputs-part-1-of-3/"
+        }
+      ]
+    },
+    "BSG-292": {
+      "submittedSha256": "322b46328004571858c5a9483a1ef1c119fd941d9ec5697d0bdd9d4033559bdc",
+      "sources": [
+        {
+          "label": "Modern Robotics 11.3: Position control with velocity inputs",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-3-motion-control-with-velocity-inputs-part-1-of-3/"
+        },
+        {
+          "label": "Kollmorgen: Closed-loop servo systems",
+          "url": "https://www.kollmorgen.com/en-us/blogs/what-closed-loop-system"
+        },
+        {
+          "label": "ros2_control Jazzy: Joint trajectory controller",
+          "url": "https://control.ros.org/jazzy/doc/ros2_controllers/joint_trajectory_controller/doc/userdoc.html"
+        }
+      ]
+    },
+    "BSG-414": {
+      "submittedSha256": "673085872bcf9cf4e0c1abaf6624c1f2c4f9b870637ed3149a9fafe8a3a7df9e",
+      "sources": [
+        {
+          "label": "Modern Robotics 11.1: Control system overview",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-1-control-system-overview/"
+        },
+        {
+          "label": "Kollmorgen: Motor torque constant and operating ratings",
+          "url": "https://webhelp.kollmorgen.com/essentials/english/Content/Resources/_MOTORS-Common/EN-English/MOTORS-Technical-Data-Terminology.htm"
+        },
+        {
+          "label": "Modern Robotics 11.5: Force control",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-5-force-control/"
+        },
+        {
+          "label": "MIT Underactuated Robotics: Highly-articulated legged robots",
+          "url": "https://underactuated.mit.edu/humanoids.html"
+        }
+      ]
+    },
+    "BSG-387": {
+      "submittedSha256": "53b251316469ed890326c26d7cdb08abe0f80ae96e6846b8d497055f65be2c81",
+      "sources": [
+        {
+          "label": "OpenStax Physics 5.5: Hooke’s law",
+          "url": "https://openstax.org/books/physics/pages/5-5-simple-harmonic-motion"
+        },
+        {
+          "label": "GAM: Backlash and torsional stiffness in motion couplings",
+          "url": "https://www.gamweb.com/flexible-coupling-considerations-for-motion-designs-in-oem-and-plant-setups.html"
+        },
+        {
+          "label": "MIT Robotic Manipulation: Manipulator control",
+          "url": "https://manipulation.csail.mit.edu/force.html"
+        }
+      ]
+    },
+    "BSG-046": {
+      "submittedSha256": "62f1a0c65a4c84c9601db9b9ef5072cc5b7d075b4903b9fdb01fa700afa1b6d8",
+      "sources": [
+        {
+          "label": "Matthew T. Mason: Compliance and force control",
+          "url": "https://publications.ri.cmu.edu/compliance-and-force-control-for-computer-controlled-manipulators"
+        },
+        {
+          "label": "OpenStax Physics 5.5: Hooke’s law",
+          "url": "https://openstax.org/books/physics/pages/5-5-simple-harmonic-motion"
+        },
+        {
+          "label": "MIT Robotic Manipulation: Manipulator control",
+          "url": "https://manipulation.csail.mit.edu/force.html"
+        }
+      ]
+    },
+    "BSG-142": {
+      "submittedSha256": "dcc05afad9574e35b682c218ebb3d5606018e9ea4179a62c52c6fcba54682cf3",
+      "sources": [
+        {
+          "label": "Modern Robotics 11.5: Force control",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-5-force-control/"
+        },
+        {
+          "label": "Modern Robotics 11.6: Hybrid motion-force control",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-6-hybrid-motion-force-control/"
+        },
+        {
+          "label": "ATI Industrial Automation: Force/torque sensors",
+          "url": "https://www.ati-ia.com/products/ft/sensors.aspx"
+        }
+      ]
+    },
+    "BSG-183": {
+      "submittedSha256": "5fbef00d0d39c1d7acf63e85c14c16bde0e0d5e7a5b9ed72da56e2e37a387da8",
+      "sources": [
+        {
+          "label": "Neville Hogan: Impedance Control, Part II: Implementation",
+          "url": "https://bpb-us-e1.wpmucdn.com/sites.mit.edu/dist/5/1384/files/2025/02/1985-impedance-control-an-approach-to-manipulation-part-II-implementation.pdf"
+        },
+        {
+          "label": "MIT Robotic Manipulation: Manipulator control",
+          "url": "https://manipulation.csail.mit.edu/force.html"
+        },
+        {
+          "label": "Keemink, van der Kooij and Stienen: Admittance control for physical human–robot interaction",
+          "url": "https://journals.sagepub.com/doi/pdf/10.1177/0278364918768950"
+        }
+      ]
+    },
+    "BSG-012": {
+      "submittedSha256": "6b49ae04b0c4834074ae415525b9c074b4269c6959f0d923bd88e292add2b949",
+      "sources": [
+        {
+          "label": "Keemink, van der Kooij and Stienen: Admittance control for physical human–robot interaction",
+          "url": "https://journals.sagepub.com/doi/pdf/10.1177/0278364918768950"
+        },
+        {
+          "label": "ros2_control Jazzy: Admittance controller",
+          "url": "https://control.ros.org/jazzy/doc/ros2_controllers/admittance_controller/doc/userdoc.html"
+        }
+      ]
+    },
+    "BSG-008": {
+      "submittedSha256": "e4fb265b9b4b5f6f6f7b8738f01d65f279788618731c48ae38ebd73f2bb8ac7c",
+      "sources": [
+        {
+          "label": "IBM — Data Labeling and Active Learning",
+          "url": "https://www.ibm.com/think/topics/data-labeling"
+        },
+        {
+          "label": "IEEE Technology Navigator — Active Learning",
+          "url": "https://technav.ieee.org/topic/active-learning/"
+        }
+      ]
+    },
+    "BSG-011": {
+      "submittedSha256": "7e9e4d6134be4d7cad17931cfa4b82940b345ef802f21bf697c442605c4d74af",
+      "sources": [
+        {
+          "label": "MathWorks: Adaptive control design",
+          "url": "https://www.mathworks.com/help/slcontrol/adaptive-control-design.html"
+        }
+      ]
+    },
+    "BSG-029": {
+      "submittedSha256": "4c3e6cc7497e7401ffacd9e9a51abd1b75a57599015b81aa69c4ecae86a6e881",
+      "sources": [
+        {
+          "label": "SKF: Bearing features, friction and load support",
+          "url": "https://cdn.skfmediahub.skf.com/api/public/0901d196802809de/pdf_preview_medium/0901d196802809de_pdf_preview_medium.pdf"
+        }
+      ]
+    },
+    "BSG-032": {
+      "submittedSha256": "0ef9f57fcb85a0c5b53d258988802f191faca1f4f39f9503379b4b8abc724c07",
+      "sources": [
+        {
+          "label": "Siemens: Greenfield and brownfield industrial systems, PROFIenergy glossary",
+          "url": "https://cache.industry.siemens.com/dl/files/137/96837137/att_13273/v1/96837137_anwenderleitfaden_profienergy_v1_en.pdf"
+        },
+        {
+          "label": "Siemens — Adaptive Production and Brownfield Facilities",
+          "url": "https://www.siemens.com/en-us/company/insights/adaptive-production/"
+        }
+      ]
+    },
+    "BSG-033": {
+      "submittedSha256": "f8f75e80d3a907fe97a0afa050062efa60f5373c1fbaef3cbed08b3d0e1560a4",
+      "sources": [
+        {
+          "label": "Arm: CPU architecture, registers and cache",
+          "url": "https://www.arm.com/glossary/cpu"
+        },
+        {
+          "label": "Intel — CPU Cache Hierarchy and Performance",
+          "url": "https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/cache-allocation-technology-white-paper.pdf"
+        }
+      ]
+    },
+    "BSG-052": {
+      "submittedSha256": "102fb7be127966ba9843a718f65190f43a7c3882e95b5e22ce97d7d3adceb11a",
+      "sources": [
+        {
+          "label": "University of Toronto Continuum Robotics Lab: Continuum Robotics 101",
+          "url": "https://www.opencontinuumrobotics.com/101/2022/10/21/cr-intro.html"
+        }
+      ]
+    },
+    "BSG-053": {
+      "submittedSha256": "9fba7b3c053b2cd9bc7d9fe7579354731a02f82d8f5def4422242ddf1581bc92",
+      "sources": [
+        {
+          "label": "Modern Robotics 11.1: Control system overview",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-1-control-system-overview/"
+        }
+      ]
+    },
+    "BSG-054": {
+      "submittedSha256": "8a7e56035b0c7870eed1d75c7adc198e68fe73b941bce4c40b5cbcd91c187a6d",
+      "sources": [
+        {
+          "label": "Modern Robotics 11.3: Position feedback and open-loop control",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-3-motion-control-with-velocity-inputs-part-1-of-3/"
+        }
+      ]
+    },
+    "BSG-055": {
+      "submittedSha256": "f660425c795ee0d0948acbc679106d9ebd816a14f3e2a12406710392edccd4fa",
+      "sources": [
+        {
+          "label": "ros2_control Jazzy: Controller manager update rate",
+          "url": "https://control.ros.org/jazzy/doc/ros2_control/controller_manager/doc/userdoc.html"
+        }
+      ]
+    },
+    "BSG-063": {
+      "submittedSha256": "24e487c4de80dbe5d387304d5018a7e58c26c4362b849f9580c49f48784eeb2f",
+      "sources": [
+        {
+          "label": "Bengio, Louradour, Collobert and Weston: Curriculum Learning",
+          "url": "https://ronan.collobert.com/pub/matos/2009_curriculum_icml.pdf"
+        }
+      ]
+    },
+    "BSG-088": {
+      "submittedSha256": "b63ab08b8e74dd0e1920b2b315274deda5186e02e9ebd49c5b1f2d470f3ef984",
+      "sources": [
+        {
+          "label": "ROS 2 Jazzy: Real-time programming requirements and jitter",
+          "url": "https://github.com/ros2/ros2_documentation/blob/jazzy/source/Tutorials/Demos/Real-Time-Programming.rst"
+        }
+      ]
+    },
+    "BSG-095": {
+      "submittedSha256": "5df126fa1fbf00f90b993f84c9fe0854601b40e4c6bd33b4e8f7b846e0ead68d",
+      "sources": [
+        {
+          "label": "MIT Robotic Manipulation: Actuators, transmissions and robot hardware",
+          "url": "https://manipulation.csail.mit.edu/robot.html"
+        }
+      ]
+    },
+    "BSG-099": {
+      "submittedSha256": "b8fffd3eacb72eacc8289389ef3349a03db124f4cea5c9a8d73576420305e106",
+      "sources": [
+        {
+          "label": "Ganin et al.: Domain-Adversarial Training of Neural Networks",
+          "url": "https://jmlr.org/papers/v17/15-239.html"
+        },
+        {
+          "label": "NVIDIA — Bridging the Sim-to-Real Gap in Robotic Assembly",
+          "url": "https://developer.nvidia.com/blog/bridging-the-sim-to-real-gap-for-industrial-robotic-assembly-applications-using-nvidia-isaac-lab/"
+        }
+      ]
+    },
+    "BSG-113": {
+      "submittedSha256": "f295ec62f57759c766aea3c591c20e6b909394100009f96ee120c9c712ef9f51",
+      "sources": [
+        {
+          "label": "robot_localization: State estimation nodes and filter models",
+          "url": "https://github.com/cra-ros-pkg/robot_localization/blob/ros2/doc/state_estimation_nodes.rst"
+        },
+        {
+          "label": "ROS — A Generalized Extended Kalman Filter",
+          "url": "https://docs.ros.org/kinetic/api/robot_localization/html/_downloads/robot_localization_ias13_revised.pdf"
+        }
+      ]
+    },
+    "BSG-126": {
+      "submittedSha256": "805848961ba4b32b30681da192ad3727fd68c26bfff49769038517b1bf81b7c4",
+      "sources": [
+        {
+          "label": "University of Toronto Continuum Robotics Lab: Proprioceptive and exteroceptive sensing",
+          "url": "https://www.opencontinuumrobotics.com/101/2023/01/13/sensing-part1.html"
+        }
+      ]
+    },
+    "BSG-129": {
+      "submittedSha256": "8d0c3ce52f0dced8d45bfff6ae89316d685a53b9d9f4c1d001950423f2563388",
+      "sources": [
+        {
+          "label": "ISA: Commissioning, factory acceptance and site acceptance testing standards",
+          "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-105-standards"
+        }
+      ]
+    },
+    "BSG-134": {
+      "submittedSha256": "22d7f782f3a41b5906987a50e515c1521b8f658c49a3c58953f82a4d7e0beb89",
+      "sources": [
+        {
+          "label": "Modern Robotics 11.4: Model-based feedforward and feedback control",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-4-motion-control-with-torque-or-force-inputs-part-3-of-3/"
+        }
+      ]
+    },
+    "BSG-139": {
+      "submittedSha256": "ced2d0c3ab0c42d6f1281347fe3b84c7b569844c5d9ac7bf4ccac25069fd9691",
+      "sources": [
+        {
+          "label": "Micron: NAND flash memory",
+          "url": "https://www.micron.com/products/storage/nand-flash"
+        }
+      ]
+    },
+    "BSG-147": {
+      "submittedSha256": "3b505024cfce20fdbcc234fe6afbcdfcbfd74272bda29afe549979b726a031a7",
+      "sources": [
+        {
+          "label": "IBM: Field-programmable gate arrays and programmable logic",
+          "url": "https://www.ibm.com/think/topics/field-programmable-gate-arrays"
+        }
+      ]
+    },
+    "BSG-148": {
+      "submittedSha256": "aece472fdf78ccdff73ddc1cb180849b2c80948b97789ddd5b0f9064ecd87a27",
+      "sources": [
+        {
+          "label": "Basler: Acquisition frame rate",
+          "url": "https://docs.baslerweb.com/acquisition-frame-rate"
+        },
+        {
+          "label": "OpenCV — Video Capture Reference",
+          "url": "https://docs.opencv.org/4.x/d8/dfe/classcv_1_1VideoCapture.html"
+        }
+      ]
+    },
+    "BSG-155": {
+      "submittedSha256": "b8317b0449f49679c21a74985a2a3720bd010efbe4ea92cbff511fcda2f9ebfe",
+      "sources": [
+        {
+          "label": "Nav2: Navigating with keepout zones",
+          "url": "https://docs.nav2.org/rolling/tutorials/general_tutorials/navigation2_with_keepout_filter/navigation2_with_keepout_filter/"
+        }
+      ]
+    },
+    "BSG-161": {
+      "submittedSha256": "3b6cc0ce9d812e9c9a8cc2dbaf93e26a48539051597761d24871e43371c6ee25",
+      "sources": [
+        {
+          "label": "Siemens: Greenfield and brownfield industrial systems, PROFIenergy glossary",
+          "url": "https://cache.industry.siemens.com/dl/files/137/96837137/att_13273/v1/96837137_anwenderleitfaden_profienergy_v1_en.pdf"
+        }
+      ]
+    },
+    "BSG-174": {
+      "submittedSha256": "41a19dac6292c4148d4da766180fc6cb4bf59dde53751a49c470294a53b92678",
+      "sources": [
+        {
+          "label": "NIST: Human-machine interface definition",
+          "url": "https://csrc.nist.gov/glossary/term/human_machine_interface"
+        }
+      ]
+    },
+    "BSG-176": {
+      "submittedSha256": "f98c760173c713da45f0e210fc4d96318b551eb275047b88728fd410d55f37c1",
+      "sources": [
+        {
+          "label": "Human-Robot Interaction: An Introduction, textbook by Bartneck et al.",
+          "url": "https://www.human-robot-interaction.org/"
+        }
+      ]
+    },
+    "BSG-178": {
+      "submittedSha256": "1ca6a59ff1472fb62843541c7ca902734290216ccdac55445c99fe8235dda07a",
+      "sources": [
+        {
+          "label": "MIT Robotic Manipulation: Actuators, transmissions and robot hardware",
+          "url": "https://manipulation.csail.mit.edu/robot.html"
+        }
+      ]
+    },
+    "BSG-179": {
+      "submittedSha256": "cfb0173de09414c9ac69d7e72370303551ce91054e5f7daad78b0f9f8f4e00d4",
+      "sources": [
+        {
+          "label": "Modern Robotics: Inverse kinematics of open chains",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/inverse-kinematics-of-open-chains/"
+        },
+        {
+          "label": "MoveIt — Kinematics Solvers",
+          "url": "https://index.ros.org/p/moveit_kinematics/"
+        }
+      ]
+    },
+    "BSG-181": {
+      "submittedSha256": "54d734965e71b76c5205855ad0d1e95c704bbd9cdf8edc8064550b292099ab96",
+      "sources": [
+        {
+          "label": "Basler — Camera Selection Guide",
+          "url": "https://www.baslerweb.com/en/learning/camera-selection/"
+        }
+      ]
+    },
+    "BSG-184": {
+      "submittedSha256": "e496fbf522f847bffc5291134eac39f8082a81f76b175f2dca5c23d3638034e9",
+      "sources": [
+        {
+          "label": "ROS 2: IMU message definition",
+          "url": "https://github.com/ros2/common_interfaces/blob/rolling/sensor_msgs/msg/Imu.msg"
+        },
+        {
+          "label": "Analog Devices: Accelerometers, gyroscopes and inertial measurements",
+          "url": "https://www.analog.com/en/resources/product-faqs/adis16260.html"
+        }
+      ]
+    },
+    "BSG-195": {
+      "submittedSha256": "0a8878ddd7446ea46212531e54c161ba1bbdc2c578d9f70cac164438d54fe989",
+      "sources": [
+        {
+          "label": "ROS 2 Jazzy: Real-time programming requirements and jitter",
+          "url": "https://github.com/ros2/ros2_documentation/blob/jazzy/source/Tutorials/Demos/Real-Time-Programming.rst"
+        }
+      ]
+    },
+    "BSG-196": {
+      "submittedSha256": "5ae96726a8519d0b114071389524ffc0824949200a3b8eb1920031842befab53",
+      "sources": [
+        {
+          "label": "robot_localization: State estimation nodes and filter models",
+          "url": "https://github.com/cra-ros-pkg/robot_localization/blob/ros2/doc/state_estimation_nodes.rst"
+        }
+      ]
+    },
+    "BSG-197": {
+      "submittedSha256": "273b7d068f7485d98da2117b12ab28aa999a450b84dea075337c829ffa26554c",
+      "sources": [
+        {
+          "label": "Modern Robotics — Forward Kinematics",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/4-1-1-product-of-exponentials-formula-in-the-space-frame/"
+        }
+      ]
+    },
+    "BSG-202": {
+      "submittedSha256": "9cee912c5ba4ba95ba03eeadaeb100d269930b230f90d66afff7985e43720a17",
+      "sources": [
+        {
+          "label": "MIT Underactuated Robotics: Highly-articulated legged robots",
+          "url": "https://underactuated.mit.edu/humanoids.html"
+        },
+        {
+          "label": "International Federation of Robotics — Service Robots",
+          "url": "https://ifr.org/service-robots"
+        }
+      ]
+    },
+    "BSG-209": {
+      "submittedSha256": "588c9d20aff465baf0dac7822434bd44fe29e737e1b6959b5420d080b07d8f2d",
+      "sources": [
+        {
+          "label": "Nav2: Controller server and local trajectory control",
+          "url": "https://docs.nav2.org/rolling/configuration_and_development/configuration_guide/core_servers/controller_server/"
+        }
+      ]
+    },
+    "BSG-216": {
+      "submittedSha256": "f94ed6d23da1ede7d8e3b87d78cefc568c26a3ae21a436640075f015d39c1c4f",
+      "sources": [
+        {
+          "label": "Analog Devices AN-1157: Tuning the extended Kalman filter in the ADIS16480, magnetometer influences",
+          "url": "https://www.analog.com/en/resources/app-notes/an-1157.html"
+        }
+      ]
+    },
+    "BSG-217": {
+      "submittedSha256": "6e8c697499ffc687dc0d220fd45ec98afc7f1b2542cfc408bfb4e8cdd14c1f4a",
+      "sources": [
+        {
+          "label": "Modern Robotics 2.2: Robot joints and degrees of freedom",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/2-2-degrees-of-freedom-of-a-robot/"
+        }
+      ]
+    },
+    "BSG-224": {
+      "submittedSha256": "377ca53946616979e5490dc7e61ac99d5f3a87b6ceadc930448f50c201dc0ee8",
+      "sources": [
+        {
+          "label": "Kingston: Memory controller and DRAM terminology",
+          "url": "https://www.kingston.com/en/memory/kingston-glossary"
+        }
+      ]
+    },
+    "BSG-229": {
+      "submittedSha256": "62ee5246ea2c28813d633a077cca19cf8dc551bbfa361d8ffe6e0f24a0d005b8",
+      "sources": [
+        {
+          "label": "MathWorks: Acoustic beamforming using a microphone array",
+          "url": "https://www.mathworks.com/help/phased/ug/acoustic-beamforming-using-a-microphone-array.html"
+        }
+      ]
+    },
+    "BSG-234": {
+      "submittedSha256": "071992b1d7284a71361cbb91982c14214f6226b5cef447101c33663b8869de71",
+      "sources": [
+        {
+          "label": "Nav2: Mobile robot navigation framework",
+          "url": "https://docs.nav2.org/rolling/"
+        }
+      ]
+    },
+    "BSG-244": {
+      "submittedSha256": "a35eb0c57bd11535aa75e15444352b932f256d9b3d596e40f727d7084942cb9c",
+      "sources": [
+        {
+          "label": "Kollmorgen: Current, velocity and position feedback loops",
+          "url": "https://www.kollmorgen.com/en-us/blogs/what-closed-loop-system"
+        },
+        {
+          "label": "ROS 2 Control — Controller Architecture",
+          "url": "https://control.ros.org/master/doc/getting_started/getting_started.html"
+        },
+        {
+          "label": "Texas Instruments — BLDC Motor Drivers",
+          "url": "https://www.ti.com/en-us/product-category/motor-drivers/brushless-dc"
+        }
+      ]
+    },
+    "BSG-249": {
+      "submittedSha256": "d74b97b5e9870964bc23d2651e9ddb817702329136c478b086f070128630448a",
+      "sources": [
+        {
+          "label": "Nav2 — ROS 2 Navigation Documentation",
+          "url": "https://docs.nav2.org/rolling/"
+        },
+        {
+          "label": "Nav2 — Navigation System Architecture",
+          "url": "https://api.nav2.org/nav2-rolling/html/md_doc_requirements_requirements.html"
+        }
+      ]
+    },
+    "BSG-264": {
+      "submittedSha256": "da1eddf0369586244e21a4ed799aa088f63b7d716753e58e940feca83e0b3f0b",
+      "sources": [
+        {
+          "label": "Modern Robotics 11.3: Position feedback and open-loop control",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-3-motion-control-with-velocity-inputs-part-1-of-3/"
+        }
+      ]
+    },
+    "BSG-272": {
+      "submittedSha256": "9b1ed0961ade44a539b4a77c8e9ae37a8ac7a67aa3ada9affa447c9546da2168",
+      "sources": [
+        {
+          "label": "Nav2: Planner server",
+          "url": "https://docs.nav2.org/rolling/configuration_and_development/configuration_guide/core_servers/configuring_planner_server/"
+        }
+      ]
+    },
+    "BSG-274": {
+      "submittedSha256": "0475d8598cd9bae89d483cda3199dbf63cadf5fd1d4eb9c7a97191e4862e99f9",
+      "sources": [
+        {
+          "label": "Universal Robots: UR5e specifications and payload rating",
+          "url": "https://www.universal-robots.com/manuals/EN/HTML/SW5_25/Content/prod-usr-man/complianceUR5e/H_g5_sections/appendix_g5/tech_spec_sheet.htm"
+        }
+      ]
+    },
+    "BSG-282": {
+      "submittedSha256": "03a0676110032022682f078a982ebdf3ff8cc04f9a645c0de860592845e37b4f",
+      "sources": [
+        {
+          "label": "MuJoCo — Computation and Contact Modeling",
+          "url": "https://mujoco.readthedocs.io/en/stable/computation/"
+        },
+        {
+          "label": "NVIDIA — Isaac Sim",
+          "url": "https://developer.nvidia.com/isaac/sim/"
+        }
+      ]
+    },
+    "BSG-286": {
+      "submittedSha256": "446801772438299d5fc2c243f25f81bd1e561fb21b96276d6cee20688a003b91",
+      "sources": [
+        {
+          "label": "MoveIt — Motion Planning Framework",
+          "url": "https://moveit.picknik.ai/main/index.html"
+        },
+        {
+          "label": "Nav2 — Navigation Framework",
+          "url": "https://docs.nav2.org/rolling/"
+        }
+      ]
+    },
+    "BSG-287": {
+      "submittedSha256": "db46a8eda66656fac08158eb4bc41dce41ecf6a13811d226d5a01ff59ee37eb3",
+      "sources": [
+        {
+          "label": "NIST: Programmable logic controller definition",
+          "url": "https://csrc.nist.gov/glossary/term/programmable_logic_controller"
+        },
+        {
+          "label": "OPC Foundation — ISA-95 Industrial Systems",
+          "url": "https://opcfoundation.org/markets-collaboration/isa-95/"
+        }
+      ]
+    },
+    "BSG-289": {
+      "submittedSha256": "2fae4d8e7b4194cb7d1969a52c956a97903a419a8da3bc2958735717c4c7eb6a",
+      "sources": [
+        {
+          "label": "ROS 2: PointCloud2 message definition",
+          "url": "https://github.com/ros2/common_interfaces/blob/rolling/sensor_msgs/msg/PointCloud2.msg"
+        }
+      ]
+    },
+    "BSG-300": {
+      "submittedSha256": "cc1871632c6e1517bef62475b96b77c5e088218e5aea0e84e1c5fc9494dd5a66",
+      "sources": [
+        {
+          "label": "University of Toronto Continuum Robotics Lab: Proprioceptive and exteroceptive sensing",
+          "url": "https://www.opencontinuumrobotics.com/101/2023/01/13/sensing-part1.html"
+        },
+        {
+          "label": "ROS 2 Control — Joint State Broadcaster",
+          "url": "https://control.ros.org/master/doc/ros2_controllers/joint_state_broadcaster/doc/userdoc.html"
+        }
+      ]
+    },
+    "BSG-307": {
+      "submittedSha256": "b0eeaf5991944a37ec3faec7e74e11beca9260da7c891a6650a97679f50055ee",
+      "sources": [
+        {
+          "label": "ROS 2 Jazzy: Quality of Service settings",
+          "url": "https://github.com/ros2/ros2_documentation/blob/jazzy/source/Concepts/Intermediate/About-Quality-of-Service-Settings.rst"
+        },
+        {
+          "label": "OASIS — MQTT Quality of Service",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html"
+        }
+      ]
+    },
+    "BSG-314": {
+      "submittedSha256": "9e24e58da6a1c588f5a5cfe2018fe2164401a768cfc7f3fcef471b291a963298",
+      "sources": [
+        {
+          "label": "ROS 2 Jazzy: Real-time programming requirements and jitter",
+          "url": "https://github.com/ros2/ros2_documentation/blob/jazzy/source/Tutorials/Demos/Real-Time-Programming.rst"
+        }
+      ]
+    },
+    "BSG-327": {
+      "submittedSha256": "257c07bd3fe9db7f6824b8b47a05d0635e001efbbdadca9f0dd26df767bc4f2c",
+      "sources": [
+        {
+          "label": "NVIDIA Isaac Lab — Synthetic Data Generation and Imitation Learning",
+          "url": "https://docs.nvidia.com/isaaclab/features/synthetic-data-generation-and-imitation-learning-with-isaac-lab-mimic"
+        }
+      ]
+    },
+    "BSG-328": {
+      "submittedSha256": "f98197ad012739eba1a1e216412caa8f32c065fcfb472eb8f8a9b3a70b11be38",
+      "sources": [
+        {
+          "label": "Modern Robotics 2.2: Robot joints and degrees of freedom",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/2-2-degrees-of-freedom-of-a-robot/"
+        },
+        {
+          "label": "International Federation of Robotics — Industrial Robot Definitions",
+          "url": "https://ifr.org/industrial-robots"
+        }
+      ]
+    },
+    "BSG-340": {
+      "submittedSha256": "3d908b8163d6e94a5734bb554534fd8b00cabecc49ffe2662caa8b0ef3ad99d6",
+      "sources": [
+        {
+          "label": "Open Robotics: ROS 2 software libraries and tools",
+          "url": "https://github.com/ros2/ros2/blob/rolling/README.md"
+        },
+        {
+          "label": "ROS — Official Website",
+          "url": "https://www.ros.org/"
+        },
+        {
+          "label": "ROS 2 — Documentation",
+          "url": "https://docs.ros.org/en/rolling/"
+        }
+      ]
+    },
+    "BSG-342": {
+      "submittedSha256": "0e195093595ac8d985635b62ae0f05b2140e86beb76a3069b5a1964373428032",
+      "sources": [
+        {
+          "label": "Nav2: Route server configuration",
+          "url": "https://docs.nav2.org/rolling/configuration_and_development/configuration_guide/core_servers/route_server/configuring_route_server/"
+        }
+      ]
+    },
+    "BSG-348": {
+      "submittedSha256": "73f77349a1dd9e0c07e9579953aacfc8292d544e71a0a3a1d69f12c760125aaf",
+      "sources": [
+        {
+          "label": "ISA: Commissioning, factory acceptance and site acceptance testing standards",
+          "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-105-standards"
+        }
+      ]
+    },
+    "BSG-354": {
+      "submittedSha256": "268dd0b9b293f83164627eface61bc7901973b41a9aa0486997b5acffaabc114",
+      "sources": [
+        {
+          "label": "Pratt and Williamson: Series Elastic Actuators, IROS 1995",
+          "url": "https://fab.cba.mit.edu/classes/865.15/people/rebecca.kleinberger/assets/papers/SEA_Pratt.pdf"
+        }
+      ]
+    },
+    "BSG-355": {
+      "submittedSha256": "1332d52c155eef9b6ed5e3cc2f2a162d65d3b527298cadaec3cb3e24038ea2bb",
+      "sources": [
+        {
+          "label": "Meta AI: Self-supervised learning",
+          "url": "https://ai.meta.com/blog/self-supervised-learning-the-dark-matter-of-intelligence/"
+        }
+      ]
+    },
+    "BSG-358": {
+      "submittedSha256": "918af0b6705d84f2fde42578b2a32d08d7c7d995f06eb4823c8887df4581adb7",
+      "sources": [
+        {
+          "label": "NIST: Sensor definition",
+          "url": "https://csrc.nist.gov/glossary/term/sensor"
+        },
+        {
+          "label": "NIST — Metrological Traceability and Measurement Quality",
+          "url": "https://www.nist.gov/metrology/metrological-traceability"
+        }
+      ]
+    },
+    "BSG-360": {
+      "submittedSha256": "a666265faae9884b8e390192cefff7d20fe60aa5178feeff00cd0c5eaad63930",
+      "sources": [
+        {
+          "label": "robot_localization: State estimation nodes and filter models",
+          "url": "https://github.com/cra-ros-pkg/robot_localization/blob/ros2/doc/state_estimation_nodes.rst"
+        }
+      ]
+    },
+    "BSG-361": {
+      "submittedSha256": "387a06e8eecc11604d5a6b629cbd0cad5dabe3ab9ae9fc908532e57fbd8ede5d",
+      "sources": [
+        {
+          "label": "Analog Devices: Noise analysis for sensor signal chains",
+          "url": "https://www.analog.com/en/resources/technical-articles/low-frequency-noise-analysis-for-sensor-signal-chains.html"
+        },
+        {
+          "label": "ROS — robot_localization",
+          "url": "https://index.ros.org/p/robot_localization/"
+        }
+      ]
+    },
+    "BSG-373": {
+      "submittedSha256": "529d567363bc971e7088f1daf95a7f53f16cd072e8e1ed4b346103f6a1f19c7a",
+      "sources": [
+        {
+          "label": "ROS — SLAM Toolbox",
+          "url": "https://github.com/SteveMacenski/slam_toolbox"
+        },
+        {
+          "label": "Nav2 — Navigation Framework",
+          "url": "https://docs.nav2.org/rolling/"
+        }
+      ]
+    },
+    "BSG-377": {
+      "submittedSha256": "6314057d26eef452c108d68c7acfe29f1cc8dc05c1981848b02343ae3f6a72f4",
+      "sources": [
+        {
+          "label": "Texas Instruments: Solenoid operating principles and current sensing",
+          "url": "https://www.ti.com/document-viewer/lit/html/SBOA166D/GUID-6ADC5511-2B0F-48D1-89BB-E87562588F63"
+        }
+      ]
+    },
+    "BSG-379": {
+      "submittedSha256": "742bfd6611d9b260c073b4dfa365d14dcabbd3ee06a016b6ffed766ae5ef2876",
+      "sources": [
+        {
+          "label": "Google DeepMind — Gemini Robotics",
+          "url": "https://deepmind.google/models/gemini-robotics/"
+        }
+      ]
+    },
+    "BSG-380": {
+      "submittedSha256": "1bf7f8eaf1128cbbe76adf3f8bd1852b7ef37f8f7c5510331b3861e3e56198a2",
+      "sources": [
+        {
+          "label": "Texas Instruments: MOS memory glossary, static RAM and refresh",
+          "url": "https://www.ti.com/lit/ml/smyv001/smyv001.pdf"
+        },
+        {
+          "label": "NVIDIA — GPU Performance Background Guide",
+          "url": "https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html"
+        }
+      ]
+    },
+    "BSG-383": {
+      "submittedSha256": "690e7db1fb1adb209303f5d8c16a3655a4c6f8eaf8389d5bd546a93e160a13db",
+      "sources": [
+        {
+          "label": "MIT Underactuated Robotics: Lyapunov stability",
+          "url": "https://underactuated.mit.edu/lyapunov.html"
+        },
+        {
+          "label": "MathWorks: Gain and phase stability margins",
+          "url": "https://www.mathworks.com/help/control/stability-margins.html"
+        }
+      ]
+    },
+    "BSG-395": {
+      "submittedSha256": "4617d183fe77238d2ec490b6994f4bcbf483a026727e73b1dcc1af84d2edb791",
+      "sources": [
+        {
+          "label": "Association for Advancing Automation: Certified robot integrator program",
+          "url": "https://www.automate.org/robotics/robotic-integrator-certification-program"
+        }
+      ]
+    },
+    "BSG-408": {
+      "submittedSha256": "9233b925bd6f3139a8cede572e66641a03ee229aded95227f476cd0a3515df40",
+      "sources": [
+        {
+          "label": "NVIDIA TensorRT: Throughput and latency benchmarking",
+          "url": "https://docs.nvidia.com/deeplearning/tensorrt/latest/performance/benchmarking.html"
+        },
+        {
+          "label": "IBM — Understanding System Throughput",
+          "url": "https://www.ibm.com/docs/en/informix-servers/14.10.0?topic=performance-throughput"
+        },
+        {
+          "label": "Lean Enterprise Institute — Takt Time",
+          "url": "https://www.lean.org/lexicon-terms/takt-time/"
+        }
+      ]
+    },
+    "BSG-409": {
+      "submittedSha256": "339d01b4ed7a48502694c2a745e5b0c712ed15f99824e543ef4580df2831f7e2",
+      "sources": [
+        {
+          "label": "MathWorks: Time series data indexed by time",
+          "url": "https://www.mathworks.com/help/matlab/ref/timeseries.html"
+        },
+        {
+          "label": "MathWorks — Input-Output Measurement Data",
+          "url": "https://www.mathworks.com/help/ident/ref/iddata.html"
+        }
+      ]
+    },
+    "BSG-412": {
+      "submittedSha256": "f0c30549211725e01e9a60f72b7c6a4b015f2fe1a0f6d18daa0d552bb41c35d8",
+      "sources": [
+        {
+          "label": "Qualcomm: AI TOPS and NPU performance metrics",
+          "url": "https://www.qualcomm.com/news/onq/2024/04/a-guide-to-ai-tops-and-npu-performance-metrics"
+        },
+        {
+          "label": "NVIDIA — TensorRT Performance Benchmarking",
+          "url": "https://docs.nvidia.com/deeplearning/tensorrt/latest/performance/benchmarking.html"
+        }
+      ]
+    },
+    "BSG-413": {
+      "submittedSha256": "d89df8113f420117ea25952f0b4514384cdc03aec5b06a50a3c24399cbb62ca7",
+      "sources": [
+        {
+          "label": "OpenStax University Physics: Torque",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque"
+        }
+      ]
+    },
+    "BSG-423": {
+      "submittedSha256": "5e9b9ae600dea3264b58d47206f4513e6d76f62cfb500ab83b64ce40ca8e7fe7",
+      "sources": [
+        {
+          "label": "NASA — Mars 2020 Perseverance Rover",
+          "url": "https://science.nasa.gov/mission/mars-2020-perseverance/"
+        },
+        {
+          "label": "Nav2 — Mobile Robot Navigation",
+          "url": "https://docs.nav2.org/rolling/"
+        }
+      ]
+    },
+    "BSG-424": {
+      "submittedSha256": "a7d58cb3a1cef4d131c212ef455620718d4ba0767cc66a1065bc5f1da5dcb26a",
+      "sources": [
+        {
+          "label": "MaxBotix: How an ultrasonic sensor works",
+          "url": "https://maxbotix.com/blogs/basic-use/mb1240-ultrasonic-sensor-with-arduino-turorial-with-code-examples"
+        }
+      ]
+    },
+    "BSG-427": {
+      "submittedSha256": "c504e8ef1a79f3e603f7a71530c8bb5684e2a42cfd64404526d091b15306552d",
+      "sources": [
+        {
+          "label": "NIST: Validation definition",
+          "url": "https://csrc.nist.gov/glossary/term/validation"
+        }
+      ]
+    },
+    "BSG-429": {
+      "submittedSha256": "8c99f7c0776cb03c46c4e6fe0b799c8123a58736d84cf76d204e20ae7b6c5f82",
+      "sources": [
+        {
+          "label": "Spirax Sarco: Control valve characteristics and flow regulation",
+          "url": "https://www.spiraxsarco.com/learn-about-steam/control-hardware-electric-pneumatic-actuation/control-valve-characteristics"
+        }
+      ]
+    },
+    "BSG-430": {
+      "submittedSha256": "b87a382f0b26cc9425a12d85cc9e52fe2073c6ff505b1f10b481dced6ff8a56e",
+      "sources": [
+        {
+          "label": "Kollmorgen: Current, velocity and position feedback loops",
+          "url": "https://www.kollmorgen.com/en-us/blogs/what-closed-loop-system"
+        },
+        {
+          "label": "ROS 2 Control — Velocity Controllers",
+          "url": "https://control.ros.org/jazzy/doc/api/classvelocity__controllers_1_1JointGroupVelocityController.html"
+        }
+      ]
+    },
+    "BSG-440": {
+      "submittedSha256": "113ce409b1618128767c02dbfa7ef88d5992de9b5705c0789be4f46f94cb0b31",
+      "sources": [
+        {
+          "label": "Modern Robotics 13.4: Wheel odometry",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/13-4-odometry/"
+        },
+        {
+          "label": "Nav2 — Setting Up Odometry",
+          "url": "https://ros-navigation.github.io/mkdocs.nav2.org/rolling/configuration_and_development/first_time_robot_setup_guide/odom/setup_odom/"
+        }
+      ]
+    },
+    "BSG-441": {
+      "submittedSha256": "9d5ddc437b6e27cf45851b44f0d0490000d3122b14d93d58a12fc98c46beeb34",
+      "sources": [
+        {
+          "label": "Nav2 — Navigation Framework",
+          "url": "https://docs.nav2.org/rolling/"
+        },
+        {
+          "label": "ROS 2 Control — Differential Drive Controller",
+          "url": "https://control.ros.org/rolling/doc/ros2_controllers/diff_drive_controller/doc/userdoc.html"
+        }
+      ]
+    }
+  }
+}

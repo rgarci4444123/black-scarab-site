@@ -8,6 +8,7 @@ export default function robots(): MetadataRoute.Robots {
     },
     sitemap: [
       "https://www.blackscarab.ai/sitemap.xml",
+      "https://www.blackscarab.ai/glossary-sitemap.xml",
       "https://www.blackscarab.ai/news-sitemap.xml",
     ],
   };
