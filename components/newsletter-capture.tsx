@@ -24,7 +24,6 @@ export default function NewsletterCapture() {
   const openedRef = useRef(false);
   const promptRef = useRef<HTMLElement>(null);
   const excluded =
-    pathname.startsWith("/resources/physical-ai-glossary") ||
     pathname.startsWith("/career-paths") ||
     pathname.startsWith("/intake") ||
     pathname.startsWith("/robotics/partner") ||

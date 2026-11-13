@@ -8,6 +8,7 @@ import { getDraftGlossaryRelatedTerms, GLOSSARY_PREVIEW_PATH } from "@/lib/gloss
 import type { GlossaryArticle } from "@/lib/glossary-publication";
 import type { ReactNode } from "react";
 import { glossaryCategoryColor } from "@/lib/glossary-colors";
+import { PageEvent } from "@/components/engagement-analytics";
 
 // Supplied prose is rendered as text, never as executable HTML or MDX.
 function inline(text: string, renderText: (value: string) => ReactNode = (value) => value): ReactNode[] {
@@ -38,6 +39,7 @@ export default function GlossaryArticleView({ article, preview = false }: { arti
   const lastModified = control.modifiedAt ?? control.publishedAt;
   return (
     <main className="min-h-screen bg-white text-[#0b0d0b]">
+      {!preview && <PageEvent key={article.slug} name="Glossary Term View" properties={{ slug: article.slug, term: article.displayName, category: article.category }} />}
       <SiteHeader homeHref="/" />
       <div className="mx-auto max-w-6xl px-6 pb-16 pt-8 sm:px-10">
         <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-xs text-[#626a74]">
