@@ -37,6 +37,133 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "komatsu-tier-iv-autonomous-hauling",
+  "title": "Komatsu and TIER IV take autonomous hauling beyond the giant mine",
+  "summary": "Komatsu and TIER IV have begun developing autonomous systems for three dump truck models, targeting quarry and construction deployments in Japan and North America in 2027.",
+  "category": "Autonomous Systems",
+  "publishedDate": "2026-11-14",
+  "publishedAt": "2026-11-14T12:57:11-05:00",
+  "publishedLabel": "November 14, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/komatsu-tier-iv-autonomous-hauling.png",
+  "imageAlt": "Painted editorial interpretation of three yellow haul trucks following a winding limestone quarry road, with an excavator loading the nearest truck.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "readingTime": "5 min read",
+  "keyPoints": [
+    "The program covers the HD785, HD605 and articulated HM400/460, with verification and development preceding the intended rollout.",
+    "EARTHBRAIN, a Komatsu subsidiary, supplies the fleet management layer connecting vehicle autonomy with site operations.",
+    "A separate TIER IV collaboration with Shunan Bulk Terminal targets driverless fuel transportation by the end of 2028."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Komatsu and TIER IV have begun developing autonomous systems for three dump truck models, targeting quarry and construction deployments in Japan and North America in 2027.",
+        "The November 13 announcement advances an existing partnership into a more specific vehicle program. Its commercial significance lies less in making a truck move without a driver than in making that truck useful within the rhythm of an entire worksite."
+      ]
+    },
+    {
+      "heading": "A bigger assignment than driving",
+      "paragraphs": [
+        "According to the companies, Komatsu will contribute vehicle engineering, integration and control technology, while TIER IV brings autonomous driving capabilities. The intended work spans loading, hauling and dumping.",
+        "The challenge is easy to picture. A truck can navigate its route correctly and still leave a loading machine waiting, arrive at a congested tipping area or spend too much of its shift standing still. Successful movement is one part of successful production.",
+        "That is where the distinction between vehicle control and fleet coordination becomes commercially important. The first concerns how a machine executes a task. The second concerns which task it should execute, when it should move and how its movement fits everyone else's work.",
+        "Black Scarab's reading is that the integration layer could prove as consequential as the driving software. A demonstration can show that one truck follows a route. A productive system has to keep the whole sequence moving, including the moments when conditions change and the original plan stops being the best one."
+      ]
+    },
+    {
+      "heading": "From a partnership to a vehicle program",
+      "paragraphs": [
+        "The foundations were announced on September 18, 2025. That earlier Komatsu release focused on articulated and rigid dump trucks for Japanese civil engineering and quarry sites, with practical use targeted for fiscal 2027. It assigned autonomous system development to Komatsu and TIER IV and fleet management to EARTHBRAIN.",
+        "The original plan identified the HM400 and HD785 as the initial machines and envisaged expansion to other models and countries. The latest announcement therefore represents a more concrete development scope, including North America, rather than the beginning of the relationship.",
+        "For context on the machines involved, Komatsu lists maximum payloads of 93.9 metric tons for the HD785, 64.1 metric tons for the HD605 and 42 metric tons for the HM400/460 grouping in its new release.",
+        "The commercial attraction of a model program is repeatability. If an integration can be reproduced across a defined family of machines, each subsequent deployment has a clearer starting point. But repeatable hardware does not make every site identical. Layout, material flow and the work performed around the truck still shape the operating task."
+      ]
+    },
+    {
+      "heading": "Komatsu already has more than one route to autonomy",
+      "paragraphs": [
+        "This is not Komatsu's first autonomous haulage effort. In April, the manufacturer announced the commissioning of its 1,000th FrontRunner autonomous truck in the largest mining truck class. It identified the milestone vehicle as a 290 metric ton payload truck at Barrick's Nevada Gold Mines operation.",
+        "Komatsu traces commercial FrontRunner operation to 2008. That history establishes a substantial mining automation business, but it should not be mistaken for a deployment record for the new TIER IV program.",
+        "There is also an existing quarry offering. Komatsu describes Smart Quarry Autonomous as a collaboration with Pronto and Komatsu dealers. Its product page presents a retrofit approach for existing haul trucks, with onboard sensing, positioning and controls, managed through a web interface.",
+        "International Mining's November 13 coverage places the TIER IV announcement alongside that earlier Pronto relationship. Komatsu's own product material confirms that the Pronto offering is intended for quarry environments and smaller fleets, including operations using equipment from more than one manufacturer.",
+        "Taken together, the programs suggest a portfolio approach rather than a single autonomy product serving every haulage job.",
+        "For TIER IV, the opportunity is to become part of a machinery manufacturer's repeatable operating solution. For Komatsu, another development route broadens the ways it can address different sites. The eventual business value depends on execution in those settings, not simply the number of partnerships announced."
+      ]
+    },
+    {
+      "heading": "A separate route from the port to the plant",
+      "paragraphs": [
+        "TIER IV's November 12 announcement with Shunan Bulk Terminal gives a more geographically focused example of its industrial ambitions. With support from chemical manufacturer Tokuyama, the partners plan to automate a currently crewed dump truck route from the terminal's storage area to Tokuyama's power generation facilities.",
+        "The terminal operates at the Port of Tokuyama Kudamatsu in Japan's Yamaguchi Prefecture, handling energy resources including coal and biomass. TIER IV and Shunan Bulk Terminal aim for driverless operation by the end of 2028 and intend to develop both the technology and operating arrangements around that particular site.",
+        "The releases describe a separate collaboration, not a customer deployment of the newly announced Komatsu program.",
+        "The port example also sharpens the business logic. Transport is embedded in another company's production process. The useful outcome is dependable movement of material into that process, rather than autonomy as a standalone spectacle.",
+        "A bounded route can make the assignment easier to define. It does not remove the need to coordinate loading and receipt, manage changes to the work area or establish how people respond when a vehicle cannot continue. Those operational arrangements are part of the product's usefulness, even when they are less visible than the truck itself."
+      ]
+    },
+    {
+      "heading": "The next evidence comes from ordinary work",
+      "paragraphs": [
+        "The most revealing progress will be a shift from planned capability to repeated production activity. Named operating sites, sustained haulage cycles and evidence of how autonomous vehicles fit around other equipment would make the commercial case more tangible.",
+        "Safety and productivity also need to be considered together. A system that avoids every difficult situation by stopping may behave cautiously while delivering little useful throughput. Equally, a fast cycle has limited value if it cannot be repeated under the site's operating rules. The practical objective is dependable work within those constraints.",
+        "That is the larger question behind this week's announcements: whether autonomy can become a normal part of moving material, with enough coordination and operational support to be used routinely. Komatsu and TIER IV have now specified more of the machinery and geography for that effort. The next chapter will be written in the work those machines actually perform."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Komatsu, November 13 development announcement",
+      "url": "https://www.komatsu.jp/en/newsroom/2026/20261113"
+    },
+    {
+      "label": "TIER IV, November 13 development announcement",
+      "url": "https://tier4.co.jp/en/updates/press-release/20261113-tieriv-and-komatsu-begin-joint-development-of-autonomous-driving-systems"
+    },
+    {
+      "label": "Komatsu, September 18, 2025 collaboration",
+      "url": "https://www.komatsu.jp/en/newsroom/2025/20250918"
+    },
+    {
+      "label": "Komatsu, April 21 FrontRunner milestone",
+      "url": "https://www.komatsu.com/en-us/newsroom/2026/komatsu-becomes-first-oem-to-commission-1000-ultra-class-autonomous-haul-trucks"
+    },
+    {
+      "label": "Komatsu, Smart Quarry Autonomous",
+      "url": "https://www.komatsu.com/en-us/technology/smart-quarry/autonomous"
+    },
+    {
+      "label": "International Mining, November 13 coverage",
+      "url": "https://im-mining.com/2026/11/13/tier-iv-to-bring-autonomy-to-some-komatsu-quarry-class-rigid-trucks-and-adts-in-japan-and-north-america/"
+    },
+    {
+      "label": "TIER IV, November 12 Shunan collaboration",
+      "url": "https://tier4.co.jp/en/updates/press-release/20261112-tieriv-and-shunanbulkterminal-develop-autonomous-dump-truck"
+    },
+    {
+      "label": "Tokuyama, November 12 Shunan collaboration",
+      "url": "https://www.tokuyama.co.jp/eng/news/pdf/2026111201_Release_e.pdf"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "construction",
+    "relevantIndustries": [
+      "mining"
+    ],
+    "technologies": [
+      "autonomous-vehicles",
+      "robot-software"
+    ],
+    "applications": [
+      "autonomous-driving",
+      "fleet-coordination",
+      "material-handling"
+    ]
+  }
+},
+{
   "slug": "claude-enters-factory-manufacturing",
   "title": "Claude Enters the Factory: How Anthropic Is Bringing AI Into Manufacturing",
   "summary": "Anthropic's new manufacturing tools connect Claude to engineering software, production records, and business systems. The launch offers a glimpse of how AI agents could eventually help take a physical product from an initial idea through manufacturing.",
