@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Virtual event operation lock and atomic writes
+/data/virtual-events/.scan.lock
+/data/virtual-events/*.tmp

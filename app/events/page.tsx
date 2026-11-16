@@ -1,3 +1,4 @@
+import EventsTabs from "@/components/events-tabs";
 import { SectionHero } from "@/components/section-hero";
 import { SitePage, SiteSurface } from "@/components/site-frame";
 import type { Metadata } from "next";
@@ -204,6 +205,7 @@ export default async function EventsPage() {
         <SiteHeader homeHref="/" />
 
         <SectionHero section="events" />
+        <EventsTabs active="in-person" />
 
         <section id="calendar" className="scroll-mt-28 px-5 pb-10 sm:px-8 sm:pb-12 lg:px-14 lg:pb-14">
           <div className="mx-auto max-w-[1460px]">
