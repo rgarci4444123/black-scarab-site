@@ -154,8 +154,8 @@ export default function HomePage() {
     },
     {
       eyebrow: "Latest podcast",
-      title: "Tutor’s $75M Raise + Foundry’s Robotic Factory + Stretch Gen 2",
-      href: "https://open.spotify.com/episode/7oCfEHY96HcM1vaGBEC1OH",
+      title: "Path’s $300M Raise + Gemini’s Factory Test + Axon’s Skydio Deal",
+      href: "https://open.spotify.com/episode/5wXb3PKQnF9p5f1fQxh475",
       image: "/images/podcast/black-scarab-physical-ai-weekly-homepage.jpg",
       imageAlt: "Black Scarab Physical AI Weekly podcast cover",
       cta: "Listen on Spotify",
