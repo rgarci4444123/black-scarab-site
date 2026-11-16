@@ -37,6 +37,149 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "hadrian-kutztown-submarine-castings",
+  "title": "Hadrian buys a 160 year old foundry to tackle the submarine supply bottleneck",
+  "summary": "The automation company plans a $300 million expansion at Kutztown Foundry & Machine, putting established steelmaking expertise at the center of its push to supply America's submarine programs.",
+  "category": "Infrastructure",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "6 min read",
+  "image": "/images/news/hadrian-kutztown-submarine-castings.png",
+  "imageAlt": "Expressive oil painting of molten steel pouring into a dark mold with a submarine shaped cavity, a conceptual interpretation of the foundry supply chain behind submarine construction.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "Hadrian plans an additional $300 million investment in the Pennsylvania site, which becomes Factory 6.",
+    "Kutztown lists U.S. Navy approval to manufacture HY 80 and HY 100 steel castings.",
+    "The Navy's industrial goal is annual production of one Columbia class submarine and two Virginia class submarines."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Hadrian has acquired Kutztown Foundry & Machine, a Pennsylvania manufacturer founded in 1866, to expand the supply of steel castings for America's nuclear submarine programs.",
+        "Announced on November 16, the deal brings an established industrial operation into Hadrian's growing factory network. The company plans to modernize the foundry with software and automation and construct an additional Factory of the Future at the site.",
+        "The attraction is a specific manufacturing constraint. Submarine construction depends on specialized metal parts that must arrive in the right condition and sequence. Expanding shipyard activity works best when the suppliers behind it can keep pace."
+      ]
+    },
+    {
+      "heading": "An operating foundry with a long memory",
+      "paragraphs": [
+        "Stellex Capital Management and its portfolio company FerroWorks confirmed that the sale to Hadrian is complete. Their announcement describes Kutztown as a producer of specialty and high alloy steel castings and says investment since Stellex acquired the business in 2024 strengthened its operations and ability to make high alloy metals at scale.",
+        "Kutztown traces its founding to 1866. Its published history includes expansion alongside the railroad, decades of heavy casting work, acquisition by McConway & Torley in 1980, and development of an internal testing facility in 1997.",
+        "That history matters because Hadrian is taking over an operating manufacturing business with accumulated process knowledge. FerroWorks chief executive David Meyer identified military and rail applications as longstanding markets for Kutztown's output.",
+        "Black Scarab's reading is that the acquisition combines two kinds of capability: the foundry team's knowledge of how metal behaves through production, and Hadrian's approach to coordinating manufacturing through software. Making those capabilities work together is the central industrial task."
+      ]
+    },
+    {
+      "heading": "The bottleneck sits upstream",
+      "paragraphs": [
+        "The Navy has already described the problem in concrete terms. In a June report, Naval Supply Systems Command Weapon Systems Support said simultaneous construction of the Columbia and Virginia classes had stretched traditional casting and forging processes, alongside workforce shortages and supply delays.",
+        "That report also relayed a shipbuilding executive's assessment that slow production of large traditional castings had constrained progress in both programs. It explains why investment in an inland foundry can matter to submarine construction hundreds of miles away.",
+        "A casting takes shape when molten metal solidifies in a mold. The useful output is a part with the required material properties and geometry, supported by the necessary inspection and production records. Moving more metal through a furnace is only one part of that sequence.",
+        "A late component can complicate work elsewhere in the production chain. Conversely, a reliable supply of accepted castings can make downstream planning more dependable. That is the practical link between foundry performance and a shipbuilder's schedule."
+      ]
+    },
+    {
+      "heading": "What Kutztown brings to the process",
+      "paragraphs": [
+        "Kutztown's service list spans casting design and simulation, steel ingots and castings, heat treatment, grinding and finishing, CNC and manual machining, and metallurgical and chemical testing. It also lists nondestructive testing, which examines material or components without destroying the item being inspected.",
+        "Those operations form a connected production chain. Casting creates a shape; heat treatment controls material properties; machining brings selected surfaces to their required dimensions; testing helps establish whether the result meets the applicable requirements.",
+        "The foundry's certifications page lists Navy approval for HY 80 and HY 100 castings, ISO 9001, qualified welding and inspection personnel, and an American Society of Mechanical Engineers nuclear quality system certification. These are company published credentials and describe the technical setting in which the modernization will take place.",
+        "For Black Scarab, the existing combination of production and quality capabilities is a substantial part of the acquisition's appeal. Improving coordination across those steps could be as valuable as speeding up an individual machine, particularly when work must pass several checks before it can move forward."
+      ]
+    },
+    {
+      "heading": "Where Hadrian's software fits",
+      "paragraphs": [
+        "Hadrian calls its factory automation platform Opus. On its website, the company says Opus interprets legacy designs and automates manufacturing and inspection. Its business includes precision component production, dedicated manufacturing or inspection capacity, and entire factories designed and operated for customers.",
+        "That is a broader proposition than selling a robot or licensing a scheduling application. Hadrian offers production capability, with software and automation embedded in how the work is organized. Its public descriptions of speed, utilization and training benefits remain company claims.",
+        "Applied to a foundry, the analytical opportunity is to connect production decisions with evidence about the resulting material. Better information could help people identify where work waits, where a process varies and where rework consumes capacity. The value would come from making the entire sequence more consistent.",
+        "The execution challenge is equally physical. Software has to fit the behavior of the equipment, materials and people already doing the work. The strongest evidence of success would be repeatable improvements in accepted output and delivery reliability."
+      ]
+    },
+    {
+      "heading": "Part of a larger submarine manufacturing effort",
+      "paragraphs": [
+        "Hadrian already has a submarine component project in Cherokee, Alabama. The Navy announced the opening of Factory 4 there on March 20, describing a roughly 2.2 million square foot site intended to manufacture components for both submarine classes.",
+        "The Navy said that venture combined $900 million of Navy investment with $1.5 billion in private capital. Pennsylvania adds another manufacturing capability to Hadrian's footprint, with castings at the center of the new announcement.",
+        "There is a broader test for all this industrial investment. In April, the Government Accountability Office said the submarine industrial base had fallen short of construction goals and that the Defense Department needed a clearer assessment of the full investment required to reach its intended production rate.",
+        "GAO also called for stronger documented oversight of industrial base investments. Its finding makes delivery performance the relevant standard: spending and facility expansion need to translate into useful capacity across the supply chain."
+      ]
+    },
+    {
+      "heading": "The next milestone is accepted output",
+      "paragraphs": [
+        "The distinction to keep in view is between acquiring capability and expanding its proven output. The sale is complete. The modernization and added capacity are the next phase.",
+        "Useful signals will include equipment and construction milestones, workforce growth, the volume of castings that pass required checks, and delivery performance against customer schedules. Those measures would show whether the investment is relieving the constraint it targets.",
+        "Hadrian's move puts an old industrial asset inside a newer manufacturing model. The commercial test is whether that combination can turn existing expertise into a larger, more dependable flow of parts for the submarine production system."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Hadrian, November 16 acquisition announcement and investment plan",
+      "url": "https://www.prnewswire.com/news-releases/hadrian-acquires-kutztown-foundry--machine-plans-300-million-investment-to-expand-americas-submarine-production-capacity-302939809.html"
+    },
+    {
+      "label": "Stellex and FerroWorks, November 16 confirmation of the completed sale",
+      "url": "https://www.businesswire.com/news/home/20261116835415/en/"
+    },
+    {
+      "label": "Kutztown Foundry & Machine, company history",
+      "url": "https://kutztownfoundry.com/timeline/"
+    },
+    {
+      "label": "Kutztown Foundry & Machine, products and services",
+      "url": "https://kutztownfoundry.com/products-services/"
+    },
+    {
+      "label": "Kutztown Foundry & Machine, published certifications",
+      "url": "https://kutztownfoundry.com/certifications/"
+    },
+    {
+      "label": "Hadrian, Opus and manufacturing service model",
+      "url": "https://www.hadrian.co/"
+    },
+    {
+      "label": "NAVSUP Weapon Systems Support, June 30 submarine manufacturing bottlenecks",
+      "url": "https://www.dvidshub.net/news/569018/shattering-bottlenecks-navsup-wss-partners-with-dla-and-navsea-submarine-advanced-manufacturing"
+    },
+    {
+      "label": "U.S. Navy, March 20 Factory 4 opening and investment structure",
+      "url": "https://www.navy.mil/Press-Office/Press-Releases/display-pressreleases/Article/4439992/advanced-shipbuilding-factory-of-the-future-opens-in-alabama/"
+    },
+    {
+      "label": "Government Accountability Office, April 22 shipbuilding testimony and recommendations",
+      "url": "https://www.gao.gov/products/gao-26-109068"
+    },
+    {
+      "label": "Defense Daily, November 16 acquisition reporting by Rich Abott",
+      "url": "https://www.defensedaily.com/hadrian-acquires-kutztown-metal-manufacturer-plans-300-million-investment-to-support-sub-production-and-add-munitions-engine-support/business-financial/"
+    },
+    {
+      "label": "Tectonic, November 16 acquisition coverage by Barratt Dewey",
+      "url": "https://www.tectonicdefense.com/hadrian-buys-pennsylvania-foundry-plans-300m-investment-in-submarine-component-production/"
+    }
+  ],
+  "publishedAt": "2026-11-16T16:43:09-05:00",
+  "publishedDate": "2026-11-16",
+  "publishedLabel": "November 16, 2026",
+  "taxonomy": {
+    "primaryIndustry": "defense-aerospace",
+    "relevantIndustries": [
+      "manufacturing"
+    ],
+    "technologies": [
+      "industrial-automation"
+    ],
+    "applications": [
+      "quality-control"
+    ]
+  }
+},
+{
   "slug": "procon-port-canaveral-construction-record",
   "title": "Procon puts a robot on the construction record at Port Canaveral",
   "summary": "Sparky is making repeatable capture walks during a $78 million cruise terminal expansion, testing whether more frequent site imagery can give project teams a more useful record of the work.",
