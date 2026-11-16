@@ -37,6 +37,131 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "procon-port-canaveral-construction-record",
+  "title": "Procon puts a robot on the construction record at Port Canaveral",
+  "summary": "Sparky is making repeatable capture walks during a $78 million cruise terminal expansion, testing whether more frequent site imagery can give project teams a more useful record of the work.",
+  "category": "Deployment",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "5 min read",
+  "image": "/images/news/procon-port-canaveral-construction-record.png",
+  "imageAlt": "Conceptual overhead illustration of a camera carrying robot on a coastal construction site, with overlapping building outlines representing a visual record over time.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "Procon says robotic 360 degree capture has moved from a successful pilot into active monitoring at Cruise Terminal 5.",
+    "The terminal expansion will increase its footprint from 90,000 to approximately 170,000 square feet.",
+    "Teleworker AI contributed camera payload components and deployment setup. Procon is evaluating capture frequency, reliability and usefulness."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Procon Consulting is expanding robotic construction monitoring at Port Canaveral, using a four legged platform nicknamed Sparky to make repeatable 360 degree capture walks through the Cruise Terminal 5 project.",
+        "The November 13 announcement puts the robot inside a $78 million expansion and renovation that will take the terminal from 90,000 to approximately 170,000 square feet. Procon says the work follows a successful pilot with the Canaveral Port Authority and is now underway.",
+        "The assignment is specific: collect a more frequent visual record of changing site conditions while reducing the time people spend making routine documentation walks. Its usefulness will depend on how reliably that record supports the project team."
+      ]
+    },
+    {
+      "heading": "A busy terminal is a demanding test",
+      "paragraphs": [
+        "Port Canaveral's July project update described construction proceeding while Terminal 5 remained operational and supported multiple sailings each week. The port said the expanded building would accommodate ships carrying up to 5,600 passengers, with larger baggage, seating and security screening areas.",
+        "That update targeted completion in December 2026. It gives the robot a concrete operating context: substantial physical change inside a facility with an ongoing job to do.",
+        "For a construction team, the information problem is straightforward. A site visit records what was visible at that moment. The next visit may find an installation completed, materials moved or access changed. More frequent captures can narrow the interval between those observations.",
+        "Procon's technology director, Stephen DeVito, argues that daily capture can help teams establish what happened and when, resolve questions earlier and leave staff more time for work that needs their attention. That is the proposed workflow benefit being tested at the terminal."
+      ]
+    },
+    {
+      "heading": "The camera walk becomes a record",
+      "paragraphs": [
+        "Reality capture means collecting a digital representation of physical conditions. In this deployment, the announced method is repeated 360 degree visual documentation. Returning through a site gives the team a sequence of observations to compare.",
+        "Procon identifies progress checks, verification of completed work and questions about schedules, change orders or construction claims as uses for the record. It also sees potential value after construction, when facilities teams need to understand existing conditions and organize maintenance.",
+        "Black Scarab's reading is that repeatability is the central proposition. A useful archive must be easy to revisit and connected to the location and work under discussion. The robot's movement is valuable when it makes that evidence easier to obtain consistently.",
+        "A photograph can help establish that a condition was visible on a particular date. Deciding whether the work satisfies a specification or explains a schedule change still requires interpretation. Better collection strengthens that process by giving people a clearer starting point."
+      ]
+    },
+    {
+      "heading": "What Teleworker brings",
+      "paragraphs": [
+        "Teleworker AI developed components of the camera payload and supported assembly and setup, according to Procon. The collaboration combines the robotics supplier's field technology with Procon's construction management work.",
+        "Teleworker markets its Remote Field Presence System for construction and facilities documentation, inspections and verification. Its product proposition is to connect repeatable robotic activity with work that project teams already need to carry out.",
+        "Separately, Fieldwire's published integration guide shows how that broader approach can work. A task assigned to Teleworker AI triggers robot dispatch, the machine captures photos or video at the specified location, and the documentation returns to the originating Fieldwire task. The guide describes this as an inspection and documentation workflow.",
+        "That separate product example highlights an important part of the business case. An image returned to the task that requested it is easier to act on than an image sitting in an unrelated folder. Capture, organization and review have to fit together for the robot's output to become part of ordinary project work."
+      ]
+    },
+    {
+      "heading": "Research meets the changing worksite",
+      "paragraphs": [
+        "The terminal pilot grew out of Procon's work with Virginia Tech's Myers Lawson School of Construction through MARIO, the Multi Agent Robotic System for Inspection On Site initiative.",
+        "Virginia Tech described MARIO in March as research into coordinated robots, drones, sensing and computer vision for remote construction monitoring. Its researchers and Procon outlined a future in which field data keeps digital representations of buildings closer to their physical condition. The Sparky announcement describes a narrower assignment within that research lineage: repeated capture walks at one active project.",
+        "The challenge is that a route through a construction site can change with the work itself. Fieldwire's Teleworker guide identifies accessibility, temporary obstructions and network availability as conditions that can require operator intervention. It also says dynamic sites may need navigation route updates.",
+        "Those are practical constraints on the service. Someone has to keep missions useful as the environment changes, deal with interrupted walks and make sure the requested area is actually documented. A growing archive is most useful when the team can tell what each visit covered."
+      ]
+    },
+    {
+      "heading": "The useful result is repeatable work",
+      "paragraphs": [
+        "Procon says it is evaluating capture frequency, reliability and usefulness to the project team under real operating conditions. Those measures are well chosen. Frequent walks matter only when they produce a record that people can use.",
+        "The next evidence to watch is sustained capture as construction progresses, examples of the team using the record to resolve a project question, and subsequent deployments informed by the terminal's results. Together, those would make the operational and commercial case more tangible.",
+        "Procon also plans to feature Sparky at Port Canaveral's State of the Port presentation on November 19. The longer test will continue away from the stage, in the routine of capturing an evolving worksite and helping people understand it.",
+        "For Black Scarab, the significance is the connection between a mobile machine and a necessary information task. At Port Canaveral, the product being tested is a dependable construction record, produced often enough to be useful while the work is still happening."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Procon, November 13 deployment announcement",
+      "url": "https://www.procon.com/procon-brings-robotics-technology-to-port-canaverals-cruise-terminal-5-expansion/"
+    },
+    {
+      "label": "Procon via PR Newswire, release timestamp and deployment scope",
+      "url": "https://www.prnewswire.com/news-releases/procon-brings-robotics-technology-to-port-canaverals-cruise-terminal-5-expansion-302938986.html"
+    },
+    {
+      "label": "Canaveral Port Authority, July 14 terminal project update",
+      "url": "https://www.portcanaveral.com/media-center/latest-news/blog/2026/07/14/port-canaveral-offers-behind-the-scenes-look-at-reimagined-cruise-terminal-5--new-13-story-parking-garage-adjacent-to-cruise-terminal-6"
+    },
+    {
+      "label": "Teleworker AI, Remote Field Presence System",
+      "url": "https://www.teleworker.ai/"
+    },
+    {
+      "label": "Fieldwire, Teleworker AI integration and operating limitations",
+      "url": "https://help.fieldwire.com/hc/en-us/articles/49834363027985-Integrations-Tab-Setting-up-Teleworker-AI"
+    },
+    {
+      "label": "Virginia Tech, March 17 MARIO research overview",
+      "url": "https://news.vt.edu/articles/2026/03/eng-mlsoc-robots-and-ai-tackling-construction-challenges-mario.html"
+    },
+    {
+      "label": "Marine Log, November 13 coverage by Nick Blenkey",
+      "url": "https://www.marinelog.com/technology/procon-puts-four-legged-robot-to-work-on-port-canaverals-cruise-terminal-5-expansion/"
+    },
+    {
+      "label": "PortalPortuario, November 13 and 14 trade coverage",
+      "url": "https://portalportuario.cl/procon-incorpora-tecnologia-robotica-en-ampliacion-de-terminal-5-en-port-canaveral"
+    }
+  ],
+  "publishedAt": "2026-11-16T11:32:20-05:00",
+  "publishedDate": "2026-11-16",
+  "publishedLabel": "November 16, 2026",
+  "taxonomy": {
+    "primaryIndustry": "construction",
+    "relevantIndustries": [
+      "transportation-mobility"
+    ],
+    "technologies": [
+      "quadruped-robotics",
+      "robot-software"
+    ],
+    "applications": [
+      "progress-tracking",
+      "site-inspection"
+    ]
+  }
+},
+{
   "slug": "komatsu-tier-iv-autonomous-hauling",
   "title": "Komatsu and TIER IV take autonomous hauling beyond the giant mine",
   "summary": "Komatsu and TIER IV have begun developing autonomous systems for three dump truck models, targeting quarry and construction deployments in Japan and North America in 2027.",
