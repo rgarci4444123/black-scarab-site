@@ -670,7 +670,24 @@ Date,Ticker,Company,Marketstack Symbol,MIC,Currency,Type,Close,Adjusted Close,Di
 2026-11-13,Nasdaq Composite,Nasdaq Composite,IXIC.INDX,INDX,USD,Benchmark,25136.2695,25136.2695,0,1,v1
 2026-11-13,NXPI,NXP Semiconductors,NXPI,XNAS,USD,Constituent,265.09,265.09,0,1,v2
 2026-11-13,OUST,Ouster,OUST,XNYS,USD,Constituent,33.48,33.48,0,1,v2
-2026-11-13,ROK,Rockwell Automation,ROK,XNYS,USD,Constituent,402.46,402.46,0,1,v2
+2026-11-13,ROK,Rockwell Automation,ROK,XNYS,USD,Constituent,402.46,401.01,0,1,v2
 2026-11-13,S&P 500,S&P 500,GSPC.INDX,INDX,USD,Benchmark,7561.67,7561.67,0,1,v1
 2026-11-13,SIE,Siemens,SIE.DE,XETR,EUR,Constituent,279.4,279.4,0,1,v2
 2026-11-13,TER,Teradyne,TER,XNAS,USD,Constituent,249.55,249.55,0,1,v2
+2026-11-16,002747,Estun Automation,002747.SZ,XSHE,CNY,Constituent,27.46,27.46,0,1,v2
+2026-11-16,300124,Inovance,300124.SZ,XSHE,CNY,Constituent,52.96,52.96,0,1,v2
+2026-11-16,6268,Nabtesco,6268.T,XJPX,JPY,Constituent,3574,3574,0,1,v2
+2026-11-16,6383,Daifuku,6383.T,XJPX,JPY,Constituent,4561,4561,0,1,v2
+2026-11-16,6506,Yaskawa Electric,6506.T,XJPX,JPY,Constituent,3561,3561,0,1,v2
+2026-11-16,6861,Keyence,6861.T,XJPX,JPY,Constituent,73450,73450,0,1,v2
+2026-11-16,6954,FANUC,6954.T,XJPX,JPY,Constituent,5343,5343,0,1,v2
+2026-11-16,CGNX,Cognex,CGNX,XNAS,USD,Constituent,48.2,48.2,0,1,v2
+2026-11-16,HEXA B,Hexagon,HEXA-B.ST,XSTO,SEK,Constituent,106.45,106.45,0,1,v2
+2026-11-16,HSAI,Hesai,HSAI,XNAS,USD,Constituent,13.23,13.23,0,1,v2
+2026-11-16,Nasdaq Composite,Nasdaq Composite,IXIC.INDX,INDX,USD,Benchmark,24509.7578,24509.7578,0,1,v1
+2026-11-16,NXPI,NXP Semiconductors,NXPI,XNAS,USD,Constituent,254.19,254.19,0,1,v2
+2026-11-16,OUST,Ouster,OUST,XNYS,USD,Constituent,31.23,31.23,0,1,v2
+2026-11-16,ROK,Rockwell Automation,ROK,XNYS,USD,Constituent,384.9,384.9,1.45,1,v2
+2026-11-16,S&P 500,S&P 500,GSPC.INDX,INDX,USD,Benchmark,7416.59,7416.59,0,1,v1
+2026-11-16,SIE,Siemens,SIE.DE,XETR,EUR,Constituent,272.55,272.55,0,1,v2
+2026-11-16,TER,Teradyne,TER,XNAS,USD,Constituent,231.9,231.9,0,1,v2

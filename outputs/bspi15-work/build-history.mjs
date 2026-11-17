@@ -5,6 +5,7 @@ import os from 'node:os';
 import { createRequire } from 'node:module';
 import { pathToFileURL } from 'node:url';
 import { approvedProviderMicException } from '../../scripts/bspi15-provider-mic.mjs';
+import { reviewedCashDividend } from '../../scripts/bspi15-corporate-actions.mjs';
 
 const runtimeRequire = createRequire(path.join(os.homedir(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json'));
 const { Workbook, SpreadsheetFile } = await import(pathToFileURL(runtimeRequire.resolve('@oai/artifact-tool')).href);
@@ -21,6 +22,7 @@ const instruments = parse(await fs.readFile(path.join(root, 'data/bspi15/instrum
 const canonical = parse(await fs.readFile(path.join(root, 'data/bspi15/daily-closes.csv'), 'utf8'));
 const audit = JSON.parse(await fs.readFile(path.join(root, 'data/bspi15/marketstack-audit-latest.json'), 'utf8'));
 assert.equal(audit.status, 'passed', 'A strict, passing audit is required.');
+const corporateActionTreatments = JSON.parse(await fs.readFile(path.join(root, 'data/bspi15/corporate-action-treatments.json'), 'utf8'));
 const providerMicExceptions = JSON.parse(await fs.readFile(path.join(root, 'data/bspi15/provider-mic-exceptions.json'), 'utf8'));
 function micExceptionFor(ticker, symbol, mic, api, date) {
   const i = instruments.find(x => x.Ticker === ticker);
@@ -63,8 +65,10 @@ for (let d = 0; d < canonical.length; d++) {
     assert(close > 0 && canonicalClose > 0);
     assert(Math.abs(close - canonicalClose) <= Math.max(0.01, canonicalClose * 0.000001), 'Canonical close does not match receipt.');
     assert.equal(Number(s['Split Factor']), 1, 'Resolve split treatment before reviewing.');
-    assert.equal(Number(s.Dividend), 0, 'Review dividend flags before reviewing.');
+    const dividendReview = reviewedCashDividend({ticker:i.Ticker,date:s.Date,sourceSymbol:s['Marketstack Symbol'],expectedMic:i['Expected MIC'],currency:i.Currency,sourceApi:s['API Version'],dividend:Number(s.Dividend),splitFactor:Number(s['Split Factor'])}, corporateActionTreatments);
+    assert(Number(s.Dividend) === 0 || dividendReview, 'Review dividend flags before reviewing.');
     return { ticker: i.Ticker, sourceDate: s.Date, rawClose: close, adjustedClose: Number(s['Adjusted Close']), dividend: Number(s.Dividend), splitFactor: Number(s['Split Factor']), symbol: s['Marketstack Symbol'], mic: s.MIC, api: s['API Version'], closure, providerMicException: micException ? {id:micException.id, approvalRecord:'data/bspi15/provider-mic-exceptions.json'} : null,
+      ...(dividendReview ? {cashDividendReview:dividendReview} : {}),
       receipt: path.join(audit.receiptPath, i.Type === 'Benchmark' ? 'benchmarks-v1.json' : 'constituents-v2.json') };
   });
   ledger.days.push({ date: row.Date, prices: Object.fromEntries(instruments.map(i => [i.Ticker, Number(row[i.Ticker])])), fetchedAt: audit.fetchedAt, auditStatus: 'passed', entries });
@@ -124,6 +128,14 @@ for(let d=0;d<N;d++) {
     ca.getRange(`A${pr}:H${pr}`).values=[[excelDate(day.date),i.Company,i.Ticker,excelDate(e.sourceDate),null,null,null,'No continuity adjustment']];
     formula(ca,`E${pr}`,`='Source Audit'!E${pr}`);formula(ca,`F${pr}`,`='Source Audit'!F${pr}`);
     formula(ca,`G${pr}`,`=IF(AND(E${pr}=0,F${pr}=1,'Source Audit'!I${pr}<>"Mismatch"),"No provider flag","Review required")`);
+    if(e.cashDividendReview) {
+      const reviewed = reviewedCashDividend({ticker:i.Ticker,date:e.sourceDate,sourceSymbol:e.symbol,expectedMic:i['Expected MIC'],currency:i.Currency,sourceApi:e.api,dividend:e.dividend,splitFactor:e.splitFactor}, corporateActionTreatments);
+      assert(reviewed, 'Saved cash dividend treatment no longer matches its review.');
+      formula(ca,`G${pr}`,`=IF(AND(E${pr}=${reviewed.dividend},F${pr}=1,'Source Audit'!I${pr}<>"Mismatch"),"Reviewed cash dividend","Review required")`);
+      put(ca,`H${pr}`,'Cash dividend excluded; raw close unchanged');
+      ca.getRange(`H${pr}`).format.wrapText=true;
+      wb.notes.add({id:`dividend-${day.date}-${i.Ticker}`,target:{cell:{sheetName:ca.name,sheetId:ca.sheetId,address:`E${pr}`}},authorId:'',createdAt:'',body:{plainText:`Source: ${reviewed.sourceUrl}\n${reviewed.evidence}`}});
+    }
     if(micException) { put(ca,`H${pr}`,'Approved provider MIC exception; no price adjustment'); ca.getRange(`H${pr}`).format.wrapText=true; ca.getRange(`A${pr}:H${pr}`).format.rowHeight=44; }
     if(i.Ticker==='002747') {p.getRange(`C${pr}`).setNumberFormat('000000');a.getRange(`B${pr}`).setNumberFormat('000000');ca.getRange(`C${pr}`).setNumberFormat('000000');}
     if(k>=15) continue;
@@ -195,6 +207,13 @@ if(a.getRange(`I${exceptionRow}`).values[0][0]==='Approved MIC exception') {
   put(a,`H${exceptionRow}`,'XLON');wb.recalculate();assert.equal(a.getRange(`I${exceptionRow}`).values[0][0],'Mismatch');assert.equal(s.getRange(`P${N+5}`).values[0][0],'Failed');
   put(a,`H${exceptionRow}`,received);put(a,`M${exceptionRow}`,'');wb.recalculate();assert.equal(a.getRange(`I${exceptionRow}`).values[0][0],'Mismatch');
   put(a,`M${exceptionRow}`,approval);wb.recalculate();assert.equal(a.getRange(`I${exceptionRow}`).values[0][0],'Approved MIC exception');
+}
+for(let d=0;d<N;d++) for(let k=0;k<17;k++) if(ledger.days[d].entries[k].cashDividendReview) {
+  const pr=6+17*d+k, originalDividend=a.getRange(`E${pr}`).values[0][0], before=s.getRange(`B${N+5}`).values[0][0];
+  assert.equal(ca.getRange(`G${pr}`).values[0][0],'Reviewed cash dividend');
+  put(a,`E${pr}`,originalDividend+0.01);wb.recalculate();assert.equal(ca.getRange(`G${pr}`).values[0][0],'Review required');
+  assert.equal(s.getRange(`B${N+5}`).values[0][0],before,'Cash dividends must not enter price returns.');
+  put(a,`E${pr}`,originalDividend);wb.recalculate();assert.equal(ca.getRange(`G${pr}`).values[0][0],'Reviewed cash dividend');
 }
 await fs.mkdir(qaDir,{recursive:true});
 const errors=await wb.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A|#NUM!|#NULL!|#SPILL!|#CALC!',options:{useRegex:true,maxResults:30}});
