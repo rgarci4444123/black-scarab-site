@@ -24,6 +24,7 @@ async function main() {
       if (!Array.isArray(e.aliases) || !Array.isArray(e.rationale) || !e.evidence || !e.verification) throw new Error(`Incomplete record: ${e.id}`);
       if (['approved','published'].includes(e.status)) {
         if (e.approvedFingerprint !== core.fingerprint(e) || !e.reviewedBy || !e.reviewedAt) throw new Error(`Approval invalidated by unreviewed edit: ${e.id}`);
+        if (e.manualVerification && e.manualVerification.fingerprint !== core.fingerprint(e)) throw new Error(`Manual verification invalidated by unreviewed edit: ${e.id}`);
         if (e.status === 'published' && !e.publishedAt) throw new Error(`Published timestamp missing: ${e.id}`);
         const words = e.summary.trim().split(/\s+/).length;
         if (words < 12 || words > 24 || !e.sourceTimezone || !Number.isFinite(Date.parse(e.startUtc)) || (e.cost === 'paid' && !e.price)) throw new Error(`Approved record is incomplete: ${e.id}`);
@@ -50,6 +51,7 @@ async function main() {
     if (process.env.EVENT_DISPLAY_TITLE) event.displayTitle = process.env.EVENT_DISPLAY_TITLE;
     if (process.env.EVENT_OVERRIDE_REASON) event.overrideReason = process.env.EVENT_OVERRIDE_REASON;
     await verifyCandidate(event);
+    if (process.env.EVENT_MANUAL_VERIFIED === '1') core.verifyManually(event, process.env.EVENT_REVIEWER || args[1] || '', process.env.EVENT_VERIFICATION_NOTE || '', [event.sourceUrl,event.url]);
     core.approve(event, process.env.EVENT_REVIEWER || args[1] || '');
   } else if (command === 'reject') {
     event.status = 'rejected'; event.approvedFingerprint = null;

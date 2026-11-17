@@ -1,5 +1,5 @@
 import "server-only";
-import { upcomingVirtualEvents, fingerprint, DAY, type VirtualEvent } from "@/lib/virtual-events";
+import { upcomingVirtualEvents, fingerprint, manuallyVerified, DAY, type VirtualEvent } from "@/lib/virtual-events";
 import { verifyCandidate } from "@/scripts/virtual-events/evidence.mjs";
 import { fetchPage } from "@/scripts/virtual-events/network.mjs";
 
@@ -12,7 +12,7 @@ export async function verifiedPublicEvents(records: VirtualEvent[], now = new Da
     // Runtime health checks keep already-approved events fresh without daily editorial merges.
     const event = structuredClone(record);
     await verifyCandidate(event, url => fetchPage(url, { next: { revalidate: 300 } }), now);
-    if (event.verification.error) console.warn("Virtual event hidden", { id: event.id, reason: event.verification.error });
+    if (event.verification.error && !manuallyVerified(event, now)) console.warn("Virtual event hidden", { id: event.id, reason: event.verification.error });
     return event;
   }));
   return upcomingVirtualEvents(checked, now);

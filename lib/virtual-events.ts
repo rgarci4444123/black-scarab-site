@@ -31,6 +31,9 @@ export type VirtualEvent = {
   overrideReason: string | null;
   reviewNotifiedFingerprint: string | null;
   changes: string[];
+  manualVerification?: {
+    reviewer: string; reviewedAt: string; validUntil: string; fingerprint: string; note: string; sourceUrls: string[];
+  } | null;
 };
 
 export const DAY = 86_400_000;
@@ -63,13 +66,38 @@ export function fingerprint(event: VirtualEvent): string {
 
 export function verified(event: VirtualEvent, now = new Date()): boolean {
   const v = event.verification;
-  return Boolean(v && v.official && v.online && v.schedule && v.registration && v.live && !v.error
+  const automatic = Boolean(v && v.official && v.online && v.schedule && v.registration && v.live && !v.error
     && event.lastVerifiedAt && Date.parse(event.lastVerifiedAt) <= now.getTime()
-    && now.getTime() - Date.parse(event.lastVerifiedAt) < 36 * 60 * 60 * 1000
+    && now.getTime() - Date.parse(event.lastVerifiedAt) < 36 * 60 * 60 * 1000);
+  return Boolean((automatic || manuallyVerified(event, now))
     && event.sourceTimezone && /(?:Z|[+-]\d{2}:\d{2})$/.test(event.originalStart)
     && Date.parse(event.originalStart) === Date.parse(event.startUtc)
     && Number.isFinite(Date.parse(event.startUtc))
     && (!event.endUtc || Date.parse(event.endUtc) > Date.parse(event.startUtc)));
+}
+
+export function manuallyVerified(event: VirtualEvent, now = new Date()): boolean {
+  const review = event.manualVerification;
+  const error = event.verification?.error;
+  const extractionLimit = !error || /^HTTP (403|429): https:\/\//.test(error)
+    || ["Source access restricted", "Organizer requires browser rendering", "Schedule requires manual source verification", "Online attendance requires manual source verification"].includes(error);
+  return Boolean(review && review.reviewer.trim() && review.note.trim() && extractionLimit
+    && !["canceled", "expired", "rejected"].includes(event.status)
+    && review.fingerprint === fingerprint(event)
+    && Date.parse(review.reviewedAt) <= now.getTime() && Date.parse(review.validUntil) > now.getTime()
+    && Date.parse(review.validUntil) <= Date.parse(event.startUtc)
+    && Date.parse(review.validUntil) <= Date.parse(review.reviewedAt) + 30 * DAY
+    && review.sourceUrls.some(url => canonicalUrl(url) === canonicalUrl(event.sourceUrl)));
+}
+
+export function verifyManually(event: VirtualEvent, reviewer: string, note: string, sourceUrls: string[], now = new Date()) {
+  if (!reviewer.trim() || !note.trim()) throw new Error("Manual verification requires a named reviewer and an evidence note.");
+  if (!sourceUrls.some(url => canonicalUrl(url) === canonicalUrl(event.sourceUrl))) throw new Error("Manual verification must cite the official source.");
+  const validUntil = Math.min(Date.parse(event.startUtc), now.getTime() + 30 * DAY);
+  if (!Number.isFinite(validUntil) || validUntil <= now.getTime()) throw new Error("Manual verification requires a future start time.");
+  event.manualVerification = { reviewer: reviewer.trim(), reviewedAt: now.toISOString(), validUntil: new Date(validUntil).toISOString(),
+    fingerprint: fingerprint(event), note: note.trim(), sourceUrls: [...new Set(sourceUrls)] };
+  return event;
 }
 
 export function eligible(event: VirtualEvent, now = new Date()): boolean {
@@ -129,6 +157,7 @@ export function reconcile(records: VirtualEvent[], incoming: VirtualEvent): Virt
     reviewedBy: existing.reviewedBy, reviewedAt: existing.reviewedAt, publishedAt: existing.publishedAt,
     overrideReason: existing.overrideReason,
     reviewNotifiedFingerprint: existing.reviewNotifiedFingerprint,
+    manualVerification: changed ? null : existing.manualVerification,
     changes: changed ? [...existing.changes, `Material change detected ${incoming.verification.checkedAt}`] : existing.changes };
   Object.assign(existing, merged);
   return existing;

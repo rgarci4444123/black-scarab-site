@@ -33,6 +33,42 @@ async function candidate() {
 }
 async function approved() { return core.approve(await candidate(), 'Test editor', now); }
 
+test('a named human verification can approve blocked organizer pages without claiming automated success', async () => {
+  const e=await candidate(); await verifyCandidate(e,async()=>{throw new Error('HTTP 403: https://example.org/events/workshop');},now);
+  assert.throws(()=>core.approve(e,'Editor',now));
+  core.verifyManually(e,'Editor','Independently checked the official event page and registration.',[e.sourceUrl],now);
+  core.approve(e,'Editor',now); assert.equal(core.upcomingVirtualEvents([e],now).length,1);
+  assert.match(e.verification.error,/403/); assert.equal(e.verification.registration,false);
+  assert.equal(e.manualVerification.validUntil,e.startUtc);
+  assert.equal(core.upcomingVirtualEvents([e],new Date('2026-11-18T12:00:00Z')).length,1);
+});
+test('manual verification expires at start and factual or editorial edits require a new review', async () => {
+  const e=await candidate();core.verifyManually(e,'Editor','Verified the official source in a browser.',[e.sourceUrl],now);
+  assert.equal(core.manuallyVerified(e,now),true);
+  assert.equal(core.manuallyVerified(e,new Date(e.startUtc)),false);
+  const changed=structuredClone(e);changed.summary+=' Changed.'; assert.equal(core.manuallyVerified(changed,now),false);
+  const renewed=structuredClone(e);renewed.manualVerification.validUntil='2027-01-01T00:00:00Z';assert.equal(core.manuallyVerified(renewed,now),false);
+  assert.throws(()=>core.verifyManually(e,'','Checked source',[e.sourceUrl],now));
+  assert.throws(()=>core.verifyManually(e,'Editor','Checked source',['https://other.example.org'],now));
+});
+test('manual verification never masks cancellation, changed schedules, pricing or broken registration', async () => {
+  for(const error of ['HTTP 404: https://example.org/events/workshop','Organizer changed the start time','Organizer changed event pricing','Organizer programme changed; editorial review required','Event is now on demand or concluded']) {
+    const e=await candidate();core.verifyManually(e,'Editor','Verified official details.',[e.sourceUrl],now);e.verification.error=error;
+    assert.equal(core.verified(e,now),false);
+  }
+  const e=await candidate();core.verifyManually(e,'Editor','Verified official details.',[e.sourceUrl],now);core.approve(e,'Editor',now);
+  await verifyCandidate(e,async()=>pageFor({...detail,eventStatus:'https://schema.org/EventCancelled'}),now);
+  assert.equal(core.manuallyVerified(e,now),false);assert.equal(core.upcomingVirtualEvents([e],now).length,0);
+});
+test('browser-rendered shells require manual verification but a cancellation remains a hard stop', async () => {
+  const e=await candidate();const shell={url:e.sourceUrl,body:'<h1>Digital experience</h1><div id="app"></div>',text:'Digital experience'};
+  await verifyCandidate(e,async()=>shell,now);assert.equal(e.verification.error,'Organizer requires browser rendering');
+  core.verifyManually(e,'Editor','Verified title, schedule and registration in the rendered official program.',[e.sourceUrl],now);
+  assert.equal(core.eligible(e,now),true);
+  await verifyCandidate(e,async()=>({...shell,body:'<h1>Event canceled</h1>',text:'Event canceled'}),now);
+  assert.equal(core.eligible(e,now),false);
+});
+
 test('a verified future online event enters review but remains hidden until human approval', async () => {
   const e = await candidate(); assert.equal(e.status, 'candidate'); assert.equal(core.eligible(e, now), true);
   assert.deepEqual(core.upcomingVirtualEvents([e], now), []);
