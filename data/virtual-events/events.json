@@ -47,7 +47,7 @@
       "schedule": false,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": "Midnight calendar date needs an explicit source start-time quote"
     },
     "approvedFingerprint": null,
@@ -110,7 +110,7 @@
       "schedule": false,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": "Midnight calendar date needs an explicit source start-time quote"
     },
     "approvedFingerprint": null,
@@ -603,7 +603,7 @@
       "schedule": true,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": "HTTP 403: https://uk.mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html"
     },
     "approvedFingerprint": "[\"Development and Deployment of an AI-based Visual Inspection System to Minimize Plant Shutdowns\",\"Development and Deployment of an AI-based Visual Inspection System to Minimize Plant Shutdowns\",\"MathWorks / Plansee\",\"https://www.mathworks.com/\",\"Industrial AI\",\"Live webinar\",\"2026-11-18T09:00:00-05:00\",\"EST\",\"2026-11-18T14:00:00.000Z\",\"2026-11-18T15:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html\",\"https://mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html\",\"Plansee explains its factory inspection deployment, while MathWorks covers anomaly detection, ONNX export and integration with Beckhoff TwinCAT3.\",\"unknown\",null]",
@@ -673,7 +673,7 @@
       "schedule": true,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": "Schedule requires manual source verification"
     },
     "approvedFingerprint": "[\"Humanoid Robots: Machines as Teammates\",\"Humanoid Robots: Machines as Teammates\",\"University of Alaska Anchorage / Persona AI\",\"https://www.uaa.alaska.edu/\",\"Robotics & Humanoids\",\"Hybrid webinar\",\"2026-11-18T16:00:00-05:00\",\"America/New_York\",\"2026-11-18T21:00:00.000Z\",null,\"https://alaska.zoom.us/webinar/register/WN_6JWr3D_9R5GtCNiI9dqF_Q\",\"https://uaa.alaska.edu/news/archive/2026/10/cbpp-announces-ai-webinar.cshtml\",\"Persona AI’s Michael Perry discusses humanoid robots as workplace collaborators, including commercialization, practical capabilities and the challenges of adoption.\",\"free\",null]",
@@ -725,7 +725,7 @@
     ],
     "status": "approved",
     "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
-    "lastVerifiedAt": "2026-11-17T21:31:40.993Z",
+    "lastVerifiedAt": "2026-11-17T22:05:48.630Z",
     "publishedAt": null,
     "duplicateKey": "universal robots vention|getting palletizing right the first time how to design a system that fits|2026-11-18",
     "aliases": [
@@ -744,7 +744,7 @@
       "schedule": true,
       "registration": true,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": null
     },
     "approvedFingerprint": "[\"Getting Palletizing Right The First Time: How to Design a System That Fits\",\"Getting Palletizing Right The First Time: How to Design a System That Fits\",\"Universal Robots / Vention\",\"https://www.universal-robots.com/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-11-18T12:00:00-05:00\",\"UTC-05:00\",\"2026-11-18T17:00:00.000Z\",\"2026-11-18T18:00:00.000Z\",\"https://video.universal-robots.com/getting-palletizing-right-the-first\",\"https://universal-robots.com/learn-and-connect/events/online-events/vention-webinar-november-2026-palletizing\",\"Vention and Universal Robots examine palletizing design through a Produlith deployment, covering conveyors, gripper selection, layout and production integration.\",\"unknown\",null]",
@@ -795,7 +795,7 @@
     ],
     "status": "approved",
     "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
-    "lastVerifiedAt": "2026-11-17T21:31:40.993Z",
+    "lastVerifiedAt": "2026-11-17T22:05:48.630Z",
     "publishedAt": null,
     "duplicateKey": "codd ai bluett|beyond telemetry turning industrial equipment data into business value with ai|2026-11-18",
     "aliases": [],
@@ -812,7 +812,7 @@
       "schedule": true,
       "registration": true,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": null
     },
     "approvedFingerprint": "[\"Beyond Telemetry: Turning Industrial Equipment Data into Business Value with AI\",\"Beyond Telemetry: Turning Industrial Equipment Data into Business Value with AI\",\"Codd AI / BluETT\",\"https://www.codd.ai/\",\"Industrial AI\",\"Live webinar\",\"2026-11-18T12:00:00-05:00\",\"EST\",\"2026-11-18T17:00:00.000Z\",\"2026-11-18T18:00:00.000Z\",\"https://codd.ai/webinars/beyond-telemetry\",\"https://codd.ai/webinars/beyond-telemetry\",\"BluETT and Codd AI examine equipment telemetry through electric terminal trucks, covering fleet utilization, operational efficiency and ownership costs.\",\"free\",null]",
@@ -859,7 +859,7 @@
     ],
     "status": "approved",
     "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
-    "lastVerifiedAt": "2026-11-17T21:31:40.993Z",
+    "lastVerifiedAt": "2026-11-17T22:05:48.630Z",
     "publishedAt": null,
     "duplicateKey": "dbr77|digital twin 2 0 premiere|2026-11-19",
     "aliases": [],
@@ -876,7 +876,7 @@
       "schedule": true,
       "registration": true,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": null
     },
     "approvedFingerprint": "[\"Digital Twin 2.0 premiere\",\"Digital Twin 2.0 premiere\",\"DBR77\",\"https://dbr77.com/\",\"Simulation & Digital Twins\",\"Live webinar\",\"2026-11-19T09:00:00-05:00\",\"America/New_York\",\"2026-11-19T14:00:00.000Z\",\"2026-11-19T15:00:00.000Z\",\"https://dbr77.com/webinars/digital-twin-2-0\",\"https://dbr77.com/webinars/digital-twin-2-0\",\"DBR77 demonstrates how factory simulation reveals bottlenecks and queues, using an illustrative assembly line to compare layouts and robot options.\",\"free\",null]",
@@ -942,7 +942,7 @@
       "schedule": true,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": "Organizer requires browser rendering"
     },
     "approvedFingerprint": "[\"Beyond the Hype: Physical AI, Robotics and the Future of Manufacturing\",\"Beyond the Hype: Physical AI, Robotics and the Future of Manufacturing\",\"Siemens\",\"https://www.siemens.com/\",\"Robotics & Humanoids\",\"Live online conference session\",\"2026-11-24T16:30:00+01:00\",\"CET\",\"2026-11-24T15:30:00.000Z\",\"2026-11-24T15:45:00.000Z\",\"https://sps.virtualevent.siemens.com/en\",\"https://sps.virtualevent.siemens.com/en\",\"Siemens and Accenture discuss foundation models and industrial robotics, examining deployment challenges and the path toward practical manufacturing applications.\",\"unknown\",null]",
@@ -1011,7 +1011,7 @@
       "schedule": true,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": "Organizer requires browser rendering"
     },
     "approvedFingerprint": "[\"Agentic AI for Manufacturing: A modular platform approach with ICX based Cognitive Factory\",\"Agentic AI for Manufacturing: A modular platform approach with ICX based Cognitive Factory\",\"Siemens / Accenture\",\"https://www.siemens.com/\",\"Industrial AI\",\"Live online conference session\",\"2026-11-24T13:00:00+01:00\",\"CET\",\"2026-11-24T12:00:00.000Z\",\"2026-11-24T12:15:00.000Z\",\"https://sps.virtualevent.siemens.com/en\",\"https://sps.virtualevent.siemens.com/en\",\"Accenture and Siemens present Cognitive Factory workflows using AI agents and computer vision for maintenance, quality management and operator decisions.\",\"unknown\",null]",
@@ -1080,7 +1080,7 @@
       "schedule": true,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": "HTTP 403: https://www.automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble"
     },
     "approvedFingerprint": "[\"Visión Artificial hacia 2027: Tendencias y Aplicaciones 2D+3D para Manufactura y Logística\",\"Visión Artificial hacia 2027: Tendencias y Aplicaciones 2D+3D para Manufactura y Logística\",\"A3 / LMI Technologies\",\"https://www.automate.org/\",\"Industrial AI\",\"Live webinar\",\"2026-11-24T12:00:00-05:00\",\"America/New_York\",\"2026-11-24T17:00:00.000Z\",\"2026-11-24T18:00:00.000Z\",\"https://automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble\",\"https://automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble\",\"LMI Technologies demonstrates 2D and 3D vision for robot guidance and industrial inspection in a Spanish language webinar.\",\"unknown\",null]",
@@ -1147,7 +1147,7 @@
       "schedule": true,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": "Organizer requires browser rendering"
     },
     "approvedFingerprint": "[\"Can production see, think and act? Siemens and P&G on the path to an AI-powered, autonomous production\",\"Can production see, think and act? Siemens and P&G on the path to an AI-powered, autonomous production\",\"Siemens / Procter & Gamble\",\"https://www.siemens.com/\",\"Autonomous Systems\",\"Live online conference session\",\"2026-11-25T10:00:00+01:00\",\"CET\",\"2026-11-25T09:00:00.000Z\",\"2026-11-25T09:20:00.000Z\",\"https://sps.virtualevent.siemens.com/en\",\"https://sps.virtualevent.siemens.com/en\",\"Siemens and Procter & Gamble present visual inspection use cases and discuss the progression toward more autonomous manufacturing operations.\",\"unknown\",null]",
@@ -1218,7 +1218,7 @@
       "schedule": true,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": "HTTP 403: https://nl.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html"
     },
     "approvedFingerprint": "[\"Agentic AI with MATLAB: Connecting AI Agents to Engineering Workflows\",\"Agentic AI with MATLAB: Connecting AI Agents to Engineering Workflows\",\"MathWorks\",\"https://www.mathworks.com/\",\"Industrial AI\",\"Live webinar\",\"2026-11-25T20:00:00-05:00\",\"EST\",\"2026-11-26T01:00:00.000Z\",\"2026-11-26T02:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html\",\"https://mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html\",\"MathWorks demonstrates AI agents running MATLAB code, tests and engineering analysis, with experts guiding objectives and validating technical results.\",\"unknown\",null]",
@@ -1271,7 +1271,7 @@
     ],
     "status": "approved",
     "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
-    "lastVerifiedAt": "2026-11-17T21:31:40.993Z",
+    "lastVerifiedAt": "2026-11-17T22:05:48.630Z",
     "publishedAt": null,
     "duplicateKey": "ida hive robots|humanoids in manufacturing why now|2026-12-02",
     "aliases": [],
@@ -1288,7 +1288,7 @@
       "schedule": true,
       "registration": true,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": null
     },
     "approvedFingerprint": "[\"Humanoids in Manufacturing - Why Now?\",\"Humanoids in Manufacturing - Why Now?\",\"IDA / HIVE Robots\",\"https://ida.dk/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-12-02T16:00:00.000Z\",\"UTC\",\"2026-12-02T16:00:00.000Z\",\"2026-12-02T18:00:00.000Z\",\"https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544\",\"https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544\",\"IDA and HIVE Robots discuss early humanoid manufacturing pilots, practical adoption challenges and commercial applications, with a live robot demonstration.\",\"paid\",\"DKK 195\"]",
@@ -1357,7 +1357,7 @@
       "schedule": true,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": "HTTP 403: https://se.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html"
     },
     "approvedFingerprint": "[\"Smart Steering: Replacing Legacy Lookup Tables with Neural Networks\",\"Smart Steering: Replacing Legacy Lookup Tables with Neural Networks\",\"MathWorks\",\"https://www.mathworks.com/\",\"Autonomous Systems\",\"Live webinar\",\"2026-12-02T04:30:00-05:00\",\"EST\",\"2026-12-02T09:30:00.000Z\",\"2026-12-02T10:30:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html\",\"https://mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html\",\"MathWorks presents neural networks for automotive steering, covering generated C code, TI C2000 deployment and hardware timing and memory measurements.\",\"unknown\",null]",
@@ -1426,7 +1426,7 @@
       "schedule": true,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": "Online attendance requires manual source verification"
     },
     "approvedFingerprint": "[\"COMSOL Day: AI for Modeling and Simulation\",\"COMSOL Day: AI for Modeling and Simulation\",\"COMSOL\",\"https://www.comsol.com/\",\"Simulation & Digital Twins\",\"Multi-session technical event\",\"2026-12-03T11:00:00-05:00\",\"EST\",\"2026-12-03T16:00:00.000Z\",null,\"https://comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922\",\"https://comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922\",\"COMSOL’s technical program covers synthetic training data, surrogate models, digital twins and generative and agentic AI workflows for engineering simulation.\",\"unknown\",null]",
@@ -1478,7 +1478,7 @@
     ],
     "status": "approved",
     "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
-    "lastVerifiedAt": "2026-11-17T21:31:40.993Z",
+    "lastVerifiedAt": "2026-11-17T22:05:48.630Z",
     "publishedAt": null,
     "duplicateKey": "universal robots nvidia cambrian|putting physical ai to work on your line|2026-12-08",
     "aliases": [
@@ -1497,7 +1497,7 @@
       "schedule": true,
       "registration": true,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": null
     },
     "approvedFingerprint": "[\"Putting physical AI to work on your line\",\"Putting physical AI to work on your line\",\"Universal Robots / NVIDIA / Cambrian\",\"https://www.universal-robots.com/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-12-08T16:00:00+01:00\",\"UTC+01:00\",\"2026-12-08T15:00:00.000Z\",\"2026-12-08T15:40:00.000Z\",\"https://video.universal-robots.com/putting-physical-ai-to-work-on-your\",\"https://universal-robots.com/learn-and-connect/events/online-events/putting-physical-ai-to-work-on-your-line\",\"Universal Robots, NVIDIA and Cambrian examine AI powered manufacturing robotics, with production examples and practical considerations for factory integration.\",\"unknown\",null]",
@@ -1565,7 +1565,7 @@
       "schedule": true,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": "HTTP 403: https://www.automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year"
     },
     "approvedFingerprint": "[\"2027 Industrial Automation Trends: What to Expect in the Coming Year\",\"2027 Industrial Automation Trends: What to Expect in the Coming Year\",\"A3 / LMI Technologies / OnLogic\",\"https://www.automate.org/\",\"Industrial AI\",\"Live webinar\",\"2026-12-08T12:00:00-05:00\",\"America/New_York\",\"2026-12-08T17:00:00.000Z\",\"2026-12-08T18:00:00.000Z\",\"https://automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year\",\"https://automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year\",\"A3, LMI Technologies and OnLogic examine 2027 automation trends across robotics, machine vision, sensing and industrial AI with Jim Beretta.\",\"unknown\",null]",
@@ -1632,7 +1632,7 @@
       "schedule": true,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": "Organizer requires browser rendering"
     },
     "approvedFingerprint": "[\"Modeling Soft Actuators and Devices\",\"Modeling Soft Actuators and Devices\",\"Robotics 247 / COMSOL\",\"https://www.comsol.com/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-12-09T11:00:00-05:00\",\"EST\",\"2026-12-09T16:00:00.000Z\",null,\"https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com\",\"https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com\",\"COMSOL and Robotics247 explore soft actuator simulation, covering compliant materials, large deformation, contact and coupled physics before physical prototyping.\",\"unknown\",null]",
@@ -1703,7 +1703,7 @@
       "schedule": true,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T21:31:40.993Z",
+      "checkedAt": "2026-11-17T22:05:48.630Z",
       "error": "HTTP 403: https://la.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html"
     },
     "approvedFingerprint": "[\"Reinforcement Learning from Simulation to Embedded AI Control: Bridging the Sim-to-Real Gap and Accelerating Workflows with Agentic AI\",\"Reinforcement Learning from Simulation to Embedded AI Control: Bridging the Sim-to-Real Gap and Accelerating Workflows with Agentic AI\",\"MathWorks\",\"https://www.mathworks.com/\",\"Simulation & Digital Twins\",\"Live webinar\",\"2026-12-10T09:00:00-05:00\",\"EST\",\"2026-12-10T14:00:00.000Z\",\"2026-12-10T15:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html\",\"https://mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html\",\"MathWorks follows reinforcement learning from simulation to Quanser QUBE hardware using Raspberry Pi, including code generation and agentic AI assistance.\",\"unknown\",null]",

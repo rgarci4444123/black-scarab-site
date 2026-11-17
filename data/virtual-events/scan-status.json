@@ -1,6 +1,6 @@
 {
-  "startedAt": "2026-11-17T21:31:40.993Z",
-  "mode": "daily",
+  "startedAt": "2026-11-17T22:05:48.630Z",
+  "mode": "broad",
   "sourceChecks": [
     {
       "source": "nvidia",
@@ -17,18 +17,6 @@
     {
       "source": "siemens",
       "url": "https://www.siemens.com/en-us/content/automation-news-and-webinars/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "universal-robots",
-      "url": "https://video.universal-robots.com/webinars",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "universal-robots",
-      "url": "https://video.universal-robots.com/resources/um/script/libraries/feed-1.0.js",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -75,18 +63,6 @@
       "eventsExtracted": 0
     },
     {
-      "source": "siemens",
-      "url": "https://sps.virtualevent.siemens.com/en/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "siemens",
-      "url": "https://www.siemens.com/en-us/events/sps-fair/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
       "source": "nvidia",
       "url": "https://www.nvidia.com/it-it/about-nvidia/webinar-portal/",
       "status": "ok",
@@ -101,6 +77,30 @@
     {
       "source": "nvidia",
       "url": "https://www.nvidia.com/en-eu/events/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "siemens",
+      "url": "https://sps.virtualevent.siemens.com/en/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "universal-robots",
+      "url": "https://video.universal-robots.com/webinars",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "universal-robots",
+      "url": "https://video.universal-robots.com/resources/um/script/libraries/feed-1.0.js",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "siemens",
+      "url": "https://www.siemens.com/en-us/events/sps-fair/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -159,6 +159,12 @@
       "error": "HTTP 403: https://www.rockwellautomation.com/en-us/events/webinars.html"
     },
     {
+      "source": "boston-dynamics",
+      "url": "https://bostondynamics.com/",
+      "status": "failed",
+      "error": "HTTP 403: https://bostondynamics.com/"
+    },
+    {
       "source": "fanuc",
       "url": "https://www.fanucamerica.com/",
       "status": "ok",
@@ -177,12 +183,6 @@
       "eventsExtracted": 0
     },
     {
-      "source": "fanuc",
-      "url": "https://www.fanucamerica.com/events/acte-2026",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
       "source": "teradyne",
       "url": "https://www.teradyne.com/feed/",
       "status": "ok",
@@ -190,7 +190,7 @@
     },
     {
       "source": "fanuc",
-      "url": "https://www.fanucamerica.com/uploads/events/logos/FANUC-North-Carolina-Open-House_EmailHeaderGraphic.jpg?fit=contain&format=auto&width=280&s=xenRsQhzSJysDiCn5-BAdEfwKPVbzlb2l6uCI_29qsI",
+      "url": "https://www.fanucamerica.com/events/acte-2026",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -201,20 +201,26 @@
       "eventsExtracted": 0
     },
     {
-      "source": "boston-dynamics",
-      "url": "https://bostondynamics.com/",
+      "source": "teradyne",
+      "url": "https://investors.teradyne.com/news-events/press-releases/detail/443/teradyne-introduces-integrated-test-solution-for-ai-and-data-center-devices-in-collaboration-with-tokyo-electron",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "teradyne",
+      "url": "https://investors.teradyne.com/news-events/press-releases/detail/456/teradyne-introduces-omnyx-edge-inline-board-test-for-physical-and-edge-ai",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "fanuc",
+      "url": "https://www.fanucamerica.com/uploads/events/logos/FANUC-North-Carolina-Open-House_EmailHeaderGraphic.jpg?fit=contain&format=auto&width=280&s=xenRsQhzSJysDiCn5-BAdEfwKPVbzlb2l6uCI_29qsI",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
       "source": "fanuc",
       "url": "https://www.fanucamerica.com/events/north-carolina-open-house",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "boston-dynamics",
-      "url": "https://bostondynamics.com/webinars/what-to-expect-when-automating-your-dock/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -231,46 +237,22 @@
       "eventsExtracted": 0
     },
     {
-      "source": "boston-dynamics",
-      "url": "https://bostondynamics.com/events/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
       "source": "fanuc",
       "url": "https://www.fanucamerica.com/events",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
-      "source": "teradyne",
-      "url": "https://investors.teradyne.com/news-events/press-releases/detail/443/teradyne-introduces-integrated-test-solution-for-ai-and-data-center-devices-in-collaboration-with-tokyo-electron",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "boston-dynamics",
-      "url": "https://bostondynamics.com/resources/webinars/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "teradyne",
-      "url": "https://investors.teradyne.com/news-events/press-releases/detail/456/teradyne-introduces-omnyx-edge-inline-board-test-for-physical-and-edge-ai",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "mathworks",
-      "url": "https://www.mathworks.com/",
-      "status": "failed",
-      "error": "HTTP 403: https://www.mathworks.com/"
-    },
-    {
       "source": "ptc",
       "url": "https://www.ptc.com/",
       "status": "failed",
       "error": "HTTP 403: https://www.ptc.com/"
+    },
+    {
+      "source": "intrinsic",
+      "url": "https://www.intrinsic.ai/",
+      "status": "ok",
+      "eventsExtracted": 0
     },
     {
       "source": "a3",
@@ -280,33 +262,9 @@
     },
     {
       "source": "mathworks",
-      "url": "https://www.mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html",
+      "url": "https://www.mathworks.com/",
       "status": "failed",
-      "error": "HTTP 403: https://www.mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html"
-    },
-    {
-      "source": "mathworks",
-      "url": "https://nl.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html",
-      "status": "failed",
-      "error": "HTTP 403: https://nl.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html"
-    },
-    {
-      "source": "mathworks",
-      "url": "https://se.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html",
-      "status": "failed",
-      "error": "HTTP 403: https://se.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html"
-    },
-    {
-      "source": "intrinsic",
-      "url": "https://www.intrinsic.ai/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "mathworks",
-      "url": "https://la.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html",
-      "status": "failed",
-      "error": "HTTP 403: https://la.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html"
+      "error": "HTTP 403: https://www.mathworks.com/"
     },
     {
       "source": "intrinsic",
@@ -327,6 +285,24 @@
       "eventsExtracted": 0
     },
     {
+      "source": "mathworks",
+      "url": "https://nl.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html",
+      "status": "failed",
+      "error": "HTTP 403: https://nl.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html"
+    },
+    {
+      "source": "mathworks",
+      "url": "https://se.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html",
+      "status": "failed",
+      "error": "HTTP 403: https://se.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html"
+    },
+    {
+      "source": "mathworks",
+      "url": "https://la.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html",
+      "status": "failed",
+      "error": "HTTP 403: https://la.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html"
+    },
+    {
       "source": "ieee-ras",
       "url": "https://www.ieee-ras.org/",
       "status": "ok",
@@ -345,14 +321,26 @@
       "eventsExtracted": 0
     },
     {
+      "source": "ros-industrial",
+      "url": "https://rosindustrial.org/events",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
       "source": "massrobotics",
       "url": "https://www.massrobotics.org/",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
-      "source": "ros-industrial",
-      "url": "https://rosindustrial.org/events",
+      "source": "massrobotics",
+      "url": "https://www.massrobotics.org/wp-json/tribe/events/v1/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "massrobotics",
+      "url": "https://www.massrobotics.org/events/form-to-post-event-on-the-shared-calendar/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -364,7 +352,7 @@
     },
     {
       "source": "massrobotics",
-      "url": "https://www.massrobotics.org/wp-json/tribe/events/v1/",
+      "url": "https://www.massrobotics.org/massrobotics/feed/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -382,24 +370,6 @@
     },
     {
       "source": "massrobotics",
-      "url": "https://www.massrobotics.org/events/form-to-post-event-on-the-shared-calendar/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "massrobotics",
-      "url": "https://www.massrobotics.org/massrobotics/feed/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "ros-industrial",
-      "url": "https://rosindustrial.org/events/2026/12/3/ros-industrial-conference-europe-2026?format=ical",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "massrobotics",
       "url": "https://www.massrobotics.org/wp-content/plugins/events-calendar-pro/build/css/tribe-events-pro-mini-calendar-block.css?ver=7.8.5",
       "status": "ok",
       "eventsExtracted": 0
@@ -411,10 +381,10 @@
       "eventsExtracted": 0
     },
     {
-      "source": "ieee-ras",
-      "url": "https://www.ieee-ras.org/events/category/conferences/",
+      "source": "ros-industrial",
+      "url": "https://rosindustrial.org/events/2026/12/3/ros-industrial-conference-europe-2026?format=ical",
       "status": "ok",
-      "eventsExtracted": 2
+      "eventsExtracted": 0
     },
     {
       "source": "massrobotics",
@@ -454,6 +424,12 @@
     },
     {
       "source": "ieee-ras",
+      "url": "https://www.ieee-ras.org/events/category/conferences/",
+      "status": "ok",
+      "eventsExtracted": 2
+    },
+    {
+      "source": "ieee-ras",
       "url": "https://www.ieee-ras.org/events/category/important-dates/deadlines/",
       "status": "ok",
       "eventsExtracted": 0
@@ -489,8 +465,20 @@
       "eventsExtracted": 0
     },
     {
+      "source": "mit-csail",
+      "url": "https://www.csail.mit.edu/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
       "source": "berkeley-bair",
       "url": "https://bair.berkeley.edu/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "mit-csail",
+      "url": "https://www.csail.mit.edu/events",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -507,20 +495,8 @@
       "eventsExtracted": 0
     },
     {
-      "source": "cmu-ri",
-      "url": "https://www.ri.cmu.edu/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
       "source": "fraunhofer-ipa",
       "url": "https://www.ipa.fraunhofer.de/de/presse/rss-feeds/rss-roboter.rss",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "cmu-ri",
-      "url": "https://www.ri.cmu.edu/wp-json/tribe/events/v1/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -544,15 +520,21 @@
     },
     {
       "source": "cmu-ri",
-      "url": "https://www.ri.cmu.edu/events/category/seminar",
+      "url": "https://www.ri.cmu.edu/",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
-      "source": "mit-csail",
-      "url": "https://www.csail.mit.edu/",
-      "status": "failed",
-      "error": "fetch failed"
+      "source": "cmu-ri",
+      "url": "https://www.ri.cmu.edu/wp-json/tribe/events/v1/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "cmu-ri",
+      "url": "https://www.ri.cmu.edu/events/category/seminar",
+      "status": "ok",
+      "eventsExtracted": 0
     },
     {
       "source": "cmu-ri",
@@ -597,10 +579,10 @@
       "eventsExtracted": 0
     },
     {
-      "source": "physical-intelligence",
-      "url": "https://www.physicalintelligence.company/",
-      "status": "failed",
-      "error": "HTTP 429: https://www.physicalintelligence.company/"
+      "source": "agility",
+      "url": "https://www.agilityrobotics.com/",
+      "status": "ok",
+      "eventsExtracted": 0
     },
     {
       "source": "covariant",
@@ -609,10 +591,10 @@
       "eventsExtracted": 0
     },
     {
-      "source": "agility",
-      "url": "https://www.agilityrobotics.com/",
-      "status": "ok",
-      "eventsExtracted": 0
+      "source": "physical-intelligence",
+      "url": "https://www.physicalintelligence.company/",
+      "status": "failed",
+      "error": "HTTP 429: https://www.physicalintelligence.company/"
     },
     {
       "source": "fieldai",
@@ -627,14 +609,14 @@
       "eventsExtracted": 0
     },
     {
-      "source": "skild",
-      "url": "https://www.skild.ai/",
+      "source": "foxglove",
+      "url": "https://foxglove.dev/rss.xml",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
-      "source": "foxglove",
-      "url": "https://foxglove.dev/rss.xml",
+      "source": "skild",
+      "url": "https://www.skild.ai/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -651,14 +633,14 @@
       "eventsExtracted": 0
     },
     {
-      "source": "rerun",
-      "url": "https://rerun.io/",
+      "source": "moveit",
+      "url": "https://picknik.ai/events",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
-      "source": "moveit",
-      "url": "https://picknik.ai/events",
+      "source": "rerun",
+      "url": "https://rerun.io/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -783,6 +765,18 @@
       "eventsExtracted": 0
     },
     {
+      "source": "beckhoff",
+      "url": "https://www.beckhoff.com/en-en/support/webinars/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "ansys",
+      "url": "https://ansys.synopsys.com/events/industrial-equipment-webinar-series",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
       "source": "infineon",
       "url": "https://www.infineon.com/ja/event/webinar/2026/robotics-webinar-series",
       "status": "failed",
@@ -790,7 +784,19 @@
     },
     {
       "source": "beckhoff",
-      "url": "https://www.beckhoff.com/en-en/support/webinars/",
+      "url": "https://www.beckhoff.com/de-de/support/webinare/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "beckhoff",
+      "url": "https://www.beckhoff.com/de-at/support/webinare/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "beckhoff",
+      "url": "https://www.beckhoff.com/de-ch/support/webinare/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -803,6 +809,12 @@
     {
       "source": "infineon",
       "url": "https://www.infineon.com/event/oktobertech",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "beckhoff",
+      "url": "https://www.beckhoff.com/en-gb/support/webinars/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -820,7 +832,13 @@
     },
     {
       "source": "beckhoff",
-      "url": "https://www.beckhoff.com/de-de/support/webinare/",
+      "url": "https://www.beckhoff.com/en-us/support/webinars/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "beckhoff",
+      "url": "https://www.beckhoff.com/en-au/support/webinars/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -831,56 +849,14 @@
       "eventsExtracted": 0
     },
     {
-      "source": "beckhoff",
-      "url": "https://www.beckhoff.com/de-at/support/webinare/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
       "source": "infineon",
       "url": "https://www.infineon.com/event/webinar/2026",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
-      "source": "ansys",
-      "url": "https://ansys.synopsys.com/events/industrial-equipment-webinar-series",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
       "source": "infineon",
       "url": "https://www.infineon.com/event/webinar/2026/barometric_absolute_pressure_sensors_drones?intc=202610_glob_en_es.p.pressure&type=virtualeventplatformreferral&intcid=intc0159760001&aid=ai015976",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "beckhoff",
-      "url": "https://www.beckhoff.com/de-ch/support/webinare/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "beckhoff",
-      "url": "https://www.beckhoff.com/en-gb/support/webinars/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "ansys",
-      "url": "https://ansys.synopsys.com/en-gb/events/industrial-equipment-webinar-series",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "beckhoff",
-      "url": "https://www.beckhoff.com/en-us/support/webinars/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "beckhoff",
-      "url": "https://www.beckhoff.com/en-au/support/webinars/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -893,6 +869,12 @@
     {
       "source": "beckhoff",
       "url": "https://www.beckhoff.com/en-za/support/webinars/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "ansys",
+      "url": "https://ansys.synopsys.com/en-gb/events/industrial-equipment-webinar-series",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -940,21 +922,6 @@
     }
   ],
   "eventChecks": [
-    {
-      "id": "933b642ee8931e48",
-      "verified": false,
-      "error": "Title or schedule changed; fresh extraction and approval required"
-    },
-    {
-      "id": "606176be648561f1",
-      "verified": false,
-      "error": "HTTP 403: https://www.automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship"
-    },
-    {
-      "id": "57df9c74cb774a4d",
-      "verified": false,
-      "error": "HTTP 403: https://www.mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html"
-    },
     {
       "id": "be2c70adc4fb81c6",
       "verified": true,
@@ -1042,7 +1009,7 @@
     }
   ],
   "search": {
-    "status": "not-requested",
+    "status": "not-configured",
     "queries": 0
   },
   "extraction": "not-configured",
