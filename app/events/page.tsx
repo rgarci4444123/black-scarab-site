@@ -1,11 +1,5 @@
-import EventsTabs from "@/components/events-tabs";
-import { SectionHero } from "@/components/section-hero";
-import { SitePage, SiteSurface } from "@/components/site-frame";
 import type { Metadata } from "next";
 import { connection } from "next/server";
-import EmailSignupCard from "@/components/email-signup-card";
-import SiteHeader from "@/components/site-header";
-import SiteFooter from "@/components/site-footer";
 import { getUpcomingPhysicalAiEvents, type PhysicalAiEvent } from "@/lib/events";
 
 const baseUrl = "https://www.blackscarab.ai";
@@ -13,7 +7,7 @@ const baseUrl = "https://www.blackscarab.ai";
 export const metadata: Metadata = {
   title: "Physical AI Events",
   description:
-    "A curated calendar of the conferences, exhibitions, and industry gatherings shaping robotics, embodied intelligence, and autonomous systems.",
+    "Conferences, webinars and workshops shaping Physical AI.",
   alternates: {
     canonical: "/events",
   },
@@ -193,19 +187,13 @@ export default async function EventsPage() {
   };
 
   return (
-    <SitePage>
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(eventListSchema).replace(/</g, "\\u003c"),
         }}
       />
-
-      <SiteSurface>
-        <SiteHeader homeHref="/" />
-
-        <SectionHero section="events" />
-        <EventsTabs active="in-person" />
 
         <section id="calendar" className="scroll-mt-28 px-5 pb-10 sm:px-8 sm:pb-12 lg:px-14 lg:pb-14">
           <div className="mx-auto max-w-[1460px]">
@@ -234,16 +222,6 @@ export default async function EventsPage() {
           </div>
         </section>
 
-        <section id="subscribe" className="scroll-mt-28 border-t border-[#e2e2e5] px-5 py-12 sm:px-8 sm:py-16 lg:px-14">
-          <div className="mx-auto max-w-5xl">
-            <EmailSignupCard
-              source="events-index"
-            />
-          </div>
-        </section>
-
-        <SiteFooter />
-      </SiteSurface>
-    </SitePage>
+    </>
   );
 }

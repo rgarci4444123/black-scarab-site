@@ -7,6 +7,7 @@ import { normalizeText, isPublicAddress, linkedPages } from './virtual-events/ne
 import { braveSearch, extractWithOpenAI, discoveryQueries } from './virtual-events/providers.mjs';
 import { parseSchedule, zonedIso } from './virtual-events/schedule.mjs';
 const core = createContentLoader()('lib/virtual-events.ts');
+const { allowsLocalVirtualEventsPreview } = createContentLoader()('lib/virtual-events-preview.ts');
 const now = new Date('2026-11-16T12:00:00Z');
 // Synthetic fixtures are isolated to tests and never imported by public pages.
 const source = { id: 'test', name: 'Fixture Robotics Lab', website: 'https://example.org', domains: ['example.org'], tier: 2 };
@@ -17,6 +18,13 @@ const detail = { name: 'Robot Simulation Technical Workshop', startDate: '2026-1
 const pageFor = data => { const body = `<h1>${data.name}</h1><script type="application/ld+json">${JSON.stringify({ '@type':'Event', ...data })}</script>`; return { url:'https://example.org/events/workshop', body, text:normalizeText(body) }; };
 const page = pageFor(detail);
 const getPage = async () => page;
+test('curated preview requires development, an explicit flag and a loopback host', () => {
+  const settings={nodeEnv:'development',enabled:'1',host:'127.0.0.1:3107'};
+  assert.equal(allowsLocalVirtualEventsPreview(settings),true);
+  for (const other of [{nodeEnv:'production'},{enabled:undefined},{vercel:'1'},{host:'www.blackscarab.ai'},{host:'localhost.example.org'},{host:null}]) {
+    assert.equal(allowsLocalVirtualEventsPreview({...settings,...other}),false);
+  }
+});
 async function candidate() {
   const e = toCandidate(detail, source, page, now);
   assert.ok(e);
