@@ -26,7 +26,7 @@ Eastern: Nov 17, 11:00 AM EST to Nov 17, 12:00 PM EST. UTC: 2026-11-17T16:00:00.
 
 Status: Passed automated checks; awaiting editorial approval. Fee: unknown.
 
-Anthropic introduces the Model Hardware Standard research preview and shows Claude workflows for manufacturing records. Infor demonstrates its connector through plant use cases, while plant teams retain approval of quotes, quality reports and other outputs.
+Anthropic introduces Claude manufacturing workflows and the Model Hardware Standard research preview, with Infor demonstrating two plant use cases.
 
 Official source: https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work
 
@@ -44,7 +44,7 @@ Eastern: Nov 17, 11:00 AM EST to Nov 17, 12:00 PM EST. UTC: 2026-11-17T16:00:00.
 
 Status: Awaiting verification and editorial approval. Fee: unknown.
 
-Roboflow builds a PCB inspection system that detects components and converts model outputs into pass or fail decisions. The live demonstration covers defect examples, camera conditions and the choice between edge and cloud inference.
+Roboflow builds a live PCB inspection system, covering defect detection, pass or fail decisions, camera conditions and deployment choices.
 
 Official source: https://www.automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship
 
@@ -64,7 +64,7 @@ Eastern: Nov 17, 9:00 AM EST to Nov 17, 10:00 AM EST. UTC: 2026-11-17T14:00:00.0
 
 Status: Awaiting verification and editorial approval. Fee: unknown.
 
-MathWorks demonstrates how MATLAB and Simulink move AI models onto constrained automotive hardware. The session covers hardware support packages, integration with controls, memory and timing optimization, and validation on production targets.
+MathWorks demonstrates automotive AI deployment with MATLAB and Simulink, covering hardware support packages, memory constraints and performance validation.
 
 Official source: https://www.mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html
 
@@ -87,7 +87,7 @@ Eastern: Nov 18, 9:00 AM EST to Nov 18, 10:00 AM EST. UTC: 2026-11-18T14:00:00.0
 
 Status: Awaiting verification and editorial approval. Fee: unknown.
 
-Plansee explains its deployment of visual anomaly detection in molybdenum powder production, including factory challenges and scaling lessons. MathWorks covers the supporting MATLAB workflow, model selection, ONNX export and deployment to Beckhoff TwinCAT3 systems.
+Plansee explains its factory inspection deployment, while MathWorks covers anomaly detection, ONNX export and integration with Beckhoff TwinCAT3.
 
 Official source: https://uk.mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html
 
@@ -110,7 +110,7 @@ Eastern: Nov 18, 4:00 PM EST. UTC: 2026-11-18T21:00:00.000Z. Source zone: Americ
 
 Status: Awaiting verification and editorial approval. Fee: free.
 
-Persona AI’s Michael Perry discusses humanoid robots as workplace collaborators, including commercialization, capabilities and adoption challenges. UAA hosts the presentation with Zoom attendance for participants joining remotely and an in person audience in Anchorage.
+Persona AI’s Michael Perry discusses humanoid robots as workplace collaborators, including commercialization, practical capabilities and the challenges of adoption.
 
 Official source: https://www.uaa.alaska.edu/news/archive/2026/10/cbpp-announces-ai-webinar.cshtml
 
@@ -129,7 +129,7 @@ Eastern: Nov 18, 12:00 PM EST to Nov 18, 1:00 PM EST. UTC: 2026-11-18T17:00:00.0
 
 Status: Passed automated checks; awaiting editorial approval. Fee: unknown.
 
-Vention and Universal Robots explain how production requirements shape robotic palletizing design. A Produlith deployment illustrates conveyor integration and slip sheet handling, alongside practical decisions about grippers, robot reach, layout and surrounding equipment.
+Vention and Universal Robots examine palletizing design through a Produlith deployment, covering conveyors, gripper selection, layout and production integration.
 
 Official source: https://www.universal-robots.com/learn-and-connect/events/online-events/vention-webinar-november-2026-palletizing/
 
@@ -148,7 +148,7 @@ Eastern: Nov 18, 12:00 PM EST to Nov 18, 1:00 PM EST. UTC: 2026-11-18T17:00:00.0
 
 Status: Passed automated checks; awaiting editorial approval. Fee: free.
 
-BluETT and Codd AI examine how connected equipment data can inform fleet utilization, operating efficiency and ownership costs. The discussion uses electric terminal trucks to explore conversational analytics and the choice between building and buying an AI platform.
+BluETT and Codd AI examine equipment telemetry through electric terminal trucks, covering fleet utilization, operational efficiency and ownership costs.
 
 Official source: https://www.codd.ai/webinars/beyond-telemetry
 
@@ -165,7 +165,7 @@ Eastern: Nov 19, 9:00 AM EST to Nov 19, 10:00 AM EST. UTC: 2026-11-19T14:00:00.0
 
 Status: Passed automated checks; awaiting editorial approval. Fee: free.
 
-DBR77 demonstrates how production simulation reveals queues and bottlenecks that average cycle times can miss. An illustrative assembly line supports comparisons of layouts, robot options and flow changes before teams alter a physical factory.
+DBR77 demonstrates how factory simulation reveals bottlenecks and queues, using an illustrative assembly line to compare layouts and robot options.
 
 Official source: https://dbr77.com/webinars/digital-twin-2-0/
 
@@ -183,7 +183,7 @@ Eastern: Nov 24, 10:30 AM EST to Nov 24, 10:45 AM EST. UTC: 2026-11-24T15:30:00.
 
 Status: Awaiting verification and editorial approval. Fee: unknown.
 
-Siemens and Accenture discuss how foundation models are changing industrial robotics and automation. The SPS session examines recent advances, unresolved deployment challenges and the path from research capabilities to practical manufacturing applications.
+Siemens and Accenture discuss foundation models and industrial robotics, examining deployment challenges and the path toward practical manufacturing applications.
 
 Official source: https://sps.virtualevent.siemens.com/en/
 
@@ -203,7 +203,7 @@ Eastern: Nov 24, 7:00 AM EST to Nov 24, 7:15 AM EST. UTC: 2026-11-24T12:00:00.00
 
 Status: Awaiting verification and editorial approval. Fee: unknown.
 
-Accenture and Siemens present a Cognitive Factory approach built on Siemens Intelligence Center X. The session examines how industrial AI, computer vision and agents support maintenance, quality management, operator decisions and more autonomous operations.
+Accenture and Siemens present Cognitive Factory workflows using AI agents and computer vision for maintenance, quality management and operator decisions.
 
 Official source: https://sps.virtualevent.siemens.com/en/
 
@@ -223,7 +223,7 @@ Eastern: Nov 24, 12:00 PM EST to Nov 24, 1:00 PM EST. UTC: 2026-11-24T17:00:00.0
 
 Status: Awaiting verification and editorial approval. Fee: unknown.
 
-LMI Technologies presents industrial applications of 2D and 3D vision, including robot guidance, weld inspection and production quality checks. This Spanish language webinar also examines how manufacturers can evaluate vision projects and select suitable sensing approaches.
+LMI Technologies demonstrates 2D and 3D vision for robot guidance and industrial inspection in a Spanish language webinar.
 
 Official source: https://www.automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble
 
@@ -242,7 +242,7 @@ Eastern: Nov 25, 4:00 AM EST to Nov 25, 4:20 AM EST. UTC: 2026-11-25T09:00:00.00
 
 Status: Awaiting verification and editorial approval. Fee: unknown.
 
-Siemens and Procter & Gamble discuss visual quality inspection as a step toward more autonomous production. Rainer Brehm and Jörg Becker present manufacturing use cases and examine the progression from sensing defects to supporting decisions and action.
+Siemens and Procter & Gamble present visual inspection use cases and discuss the progression toward more autonomous manufacturing operations.
 
 Official source: https://sps.virtualevent.siemens.com/en/
 
@@ -262,7 +262,7 @@ Eastern: Nov 25, 8:00 PM EST to Nov 25, 9:00 PM EST. UTC: 2026-11-26T01:00:00.00
 
 Status: Awaiting verification and editorial approval. Fee: unknown.
 
-MathWorks demonstrates AI agents using MATLAB to run code, execute tests, analyze results and diagnose engineering problems. The webinar also covers how domain experts define objectives, review intermediate work and validate the resulting technical outputs.
+MathWorks demonstrates AI agents running MATLAB code, tests and engineering analysis, with experts guiding objectives and validating technical results.
 
 Official source: https://nl.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html
 
@@ -283,7 +283,7 @@ Eastern: Dec 2, 11:00 AM EST to Dec 2, 1:00 PM EST. UTC: 2026-12-02T16:00:00.000
 
 Status: Passed automated checks; awaiting editorial approval. Fee: paid (DKK 195; nonmember rate).
 
-IDA and HIVE Robots examine early humanoid applications in manufacturing and the practical lessons from commercial pilots. The webinar includes examples of adoption challenges and a live robot demonstration, with online participation available.
+IDA and HIVE Robots discuss early humanoid manufacturing pilots, practical adoption challenges and commercial applications, with a live robot demonstration.
 
 Official source: https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544
 
@@ -302,7 +302,7 @@ Eastern: Dec 2, 4:30 AM EST to Dec 2, 5:30 AM EST. UTC: 2026-12-02T09:30:00.000Z
 
 Status: Awaiting verification and editorial approval. Fee: unknown.
 
-MathWorks presents a workflow for replacing automotive steering lookup tables with neural networks. The session follows model training, generated C code and deployment to a TI C2000 microcontroller, including measurement of execution time and memory use.
+MathWorks presents neural networks for automotive steering, covering generated C code, TI C2000 deployment and hardware timing and memory measurements.
 
 Official source: https://se.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html
 
@@ -322,7 +322,7 @@ Eastern: Dec 3, 11:00 AM EST. UTC: 2026-12-03T16:00:00.000Z. Source zone: EST.
 
 Status: Awaiting verification and editorial approval. Fee: unknown.
 
-COMSOL’s technical program covers synthetic simulation data, surrogate models, uncertainty quantification and digital twins. Additional sessions explore generative and agentic AI workflows, with keynote demonstrations and a panel on integrating AI into modeling and simulation.
+COMSOL’s technical program covers synthetic training data, surrogate models, digital twins and generative and agentic AI workflows for engineering simulation.
 
 Official source: https://www.comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922
 
@@ -342,7 +342,7 @@ Eastern: Dec 8, 10:00 AM EST to Dec 8, 10:40 AM EST. UTC: 2026-12-08T15:00:00.00
 
 Status: Passed automated checks; awaiting editorial approval. Fee: unknown.
 
-Universal Robots, NVIDIA and Cambrian examine how AI, simulation and vision are reaching manufacturing applications. The webinar presents production examples and discusses the integration work required to turn AI capabilities into robotic systems on the factory floor.
+Universal Robots, NVIDIA and Cambrian examine AI powered manufacturing robotics, with production examples and practical considerations for factory integration.
 
 Official source: https://www.universal-robots.com/learn-and-connect/events/online-events/putting-physical-ai-to-work-on-your-line/
 
@@ -361,7 +361,7 @@ Eastern: Dec 8, 12:00 PM EST to Dec 8, 1:00 PM EST. UTC: 2026-12-08T17:00:00.000
 
 Status: Awaiting verification and editorial approval. Fee: unknown.
 
-A3 brings together LMI Technologies, OnLogic and moderator Jim Beretta to examine industrial automation trends for 2027. The panel discusses robotics, machine vision, sensing and AI alongside changing manufacturing needs and adoption challenges.
+A3, LMI Technologies and OnLogic examine 2027 automation trends across robotics, machine vision, sensing and industrial AI with Jim Beretta.
 
 Official source: https://www.automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year
 
@@ -380,7 +380,7 @@ Eastern: Dec 9, 11:00 AM EST. UTC: 2026-12-09T16:00:00.000Z. Source zone: EST.
 
 Status: Awaiting verification and editorial approval. Fee: unknown.
 
-COMSOL and Robotics247 explore simulation as a design tool for soft actuators. The webinar examines compliant materials, large deformation, contact and coupled physics, using examples to show how virtual evaluation can guide designs before physical prototyping.
+COMSOL and Robotics247 explore soft actuator simulation, covering compliant materials, large deformation, contact and coupled physics before physical prototyping.
 
 Official source: https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com
 
@@ -400,7 +400,7 @@ Eastern: Dec 10, 9:00 AM EST to Dec 10, 10:00 AM EST. UTC: 2026-12-10T14:00:00.0
 
 Status: Awaiting verification and editorial approval. Fee: unknown.
 
-MathWorks follows reinforcement learning from simulated training to embedded control using a Quanser QUBE and Raspberry Pi. The session covers environment design, generated code, hardware evaluation and agentic AI assistance across the development workflow.
+MathWorks follows reinforcement learning from simulation to Quanser QUBE hardware using Raspberry Pi, including code generation and agentic AI assistance.
 
 Official source: https://la.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html
 

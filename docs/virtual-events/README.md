@@ -42,7 +42,7 @@ Review batches contain at most 20 new or materially changed candidates. Their no
 
 ## Approving, rejecting and editing
 
-After activation, open **GitHub → Actions → Virtual events discovery and review → Run workflow**. Choose `review` to prepare a batch, or `approve`/`reject` with an event ID from the batch. The optional summary and display-title inputs edit those fields before approval. Your GitHub identity is recorded as reviewer. Approval reruns live verification and checks a 25–45 word editorial summary before setting an approval fingerprint.
+After activation, open **GitHub → Actions → Virtual events discovery and review → Run workflow**. Choose `review` to prepare a batch, or `approve`/`reject` with an event ID from the batch. The optional summary and display-title inputs edit those fields before approval. Your GitHub identity is recorded as reviewer. Approval reruns live verification and checks a 12–24 word editorial description before setting an approval fingerprint. Descriptions use one short sentence; official titles remain complete. The user's Very High curated priorities use the same red Priority badge as in-person anchor events.
 
 For factual edits beyond title/summary, check out the review branch and edit the JSON, then use the commands below. Match every field to the linked authoritative source and rerun approval. Directly changing approved content invalidates its fingerprint and hides it.
 

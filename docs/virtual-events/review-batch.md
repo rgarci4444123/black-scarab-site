@@ -8,7 +8,7 @@ ID: `933b642ee8931e48` · Score: 96/100 · Anthropic / Claude, with Infor
 
 2026-11-17T16:00:00.000Z · Source zone: America/Los_Angeles · unknown
 
-Anthropic introduces the Model Hardware Standard research preview and shows Claude workflows for manufacturing records. Infor demonstrates its connector through plant use cases, while plant teams retain approval of quotes, quality reports and other outputs.
+Anthropic introduces Claude manufacturing workflows and the Model Hardware Standard research preview, with Infor demonstrating two plant use cases.
 
 Official source: https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work
 
@@ -30,7 +30,7 @@ ID: `1e11bd40430fef00` · Score: 96/100 · Universal Robots / Vention
 
 2026-11-18T17:00:00.000Z · Source zone: UTC-05:00 · unknown
 
-Vention and Universal Robots explain how production requirements shape robotic palletizing design. A Produlith deployment illustrates conveyor integration and slip sheet handling, alongside practical decisions about grippers, robot reach, layout and surrounding equipment.
+Vention and Universal Robots examine palletizing design through a Produlith deployment, covering conveyors, gripper selection, layout and production integration.
 
 Official source: https://www.universal-robots.com/learn-and-connect/events/online-events/vention-webinar-november-2026-palletizing/
 
@@ -52,7 +52,7 @@ ID: `f2940c54cf6d93f1` · Score: 96/100 · Siemens / Procter & Gamble
 
 2026-11-25T09:00:00.000Z · Source zone: CET · unknown
 
-Siemens and Procter & Gamble discuss visual quality inspection as a step toward more autonomous production. Rainer Brehm and Jörg Becker present manufacturing use cases and examine the progression from sensing defects to supporting decisions and action.
+Siemens and Procter & Gamble present visual inspection use cases and discuss the progression toward more autonomous manufacturing operations.
 
 Official source: https://sps.virtualevent.siemens.com/en/
 
@@ -74,7 +74,7 @@ ID: `f14a8cc43f88d84b` · Score: 96/100 · Universal Robots / NVIDIA / Cambrian
 
 2026-12-08T15:00:00.000Z · Source zone: UTC+01:00 · unknown
 
-Universal Robots, NVIDIA and Cambrian examine how AI, simulation and vision are reaching manufacturing applications. The webinar presents production examples and discusses the integration work required to turn AI capabilities into robotic systems on the factory floor.
+Universal Robots, NVIDIA and Cambrian examine AI powered manufacturing robotics, with production examples and practical considerations for factory integration.
 
 Official source: https://www.universal-robots.com/learn-and-connect/events/online-events/putting-physical-ai-to-work-on-your-line/
 
@@ -96,7 +96,7 @@ ID: `606176be648561f1` · Score: 94/100 · A3 / Roboflow
 
 2026-11-17T16:00:00.000Z · Source zone: America/New_York · unknown
 
-Roboflow builds a PCB inspection system that detects components and converts model outputs into pass or fail decisions. The live demonstration covers defect examples, camera conditions and the choice between edge and cloud inference.
+Roboflow builds a live PCB inspection system, covering defect detection, pass or fail decisions, camera conditions and deployment choices.
 
 Official source: https://www.automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship
 
@@ -118,7 +118,7 @@ ID: `be2c70adc4fb81c6` · Score: 94/100 · MathWorks / Plansee
 
 2026-11-18T14:00:00.000Z · Source zone: EST · unknown
 
-Plansee explains its deployment of visual anomaly detection in molybdenum powder production, including factory challenges and scaling lessons. MathWorks covers the supporting MATLAB workflow, model selection, ONNX export and deployment to Beckhoff TwinCAT3 systems.
+Plansee explains its factory inspection deployment, while MathWorks covers anomaly detection, ONNX export and integration with Beckhoff TwinCAT3.
 
 Official source: https://uk.mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html
 
@@ -140,7 +140,7 @@ ID: `a646e7b0fbed87a9` · Score: 94/100 · A3 / LMI Technologies
 
 2026-11-24T17:00:00.000Z · Source zone: America/New_York · unknown
 
-LMI Technologies presents industrial applications of 2D and 3D vision, including robot guidance, weld inspection and production quality checks. This Spanish language webinar also examines how manufacturers can evaluate vision projects and select suitable sensing approaches.
+LMI Technologies demonstrates 2D and 3D vision for robot guidance and industrial inspection in a Spanish language webinar.
 
 Official source: https://www.automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble
 
@@ -162,7 +162,7 @@ ID: `09216480457b1a8f` · Score: 94/100 · COMSOL
 
 2026-12-03T16:00:00.000Z · Source zone: EST · unknown
 
-COMSOL’s technical program covers synthetic simulation data, surrogate models, uncertainty quantification and digital twins. Additional sessions explore generative and agentic AI workflows, with keynote demonstrations and a panel on integrating AI into modeling and simulation.
+COMSOL’s technical program covers synthetic training data, surrogate models, digital twins and generative and agentic AI workflows for engineering simulation.
 
 Official source: https://www.comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922
 
@@ -184,7 +184,7 @@ ID: `78a49bf48f42ccf5` · Score: 94/100 · Robotics 247 / COMSOL
 
 2026-12-09T16:00:00.000Z · Source zone: EST · unknown
 
-COMSOL and Robotics247 explore simulation as a design tool for soft actuators. The webinar examines compliant materials, large deformation, contact and coupled physics, using examples to show how virtual evaluation can guide designs before physical prototyping.
+COMSOL and Robotics247 explore soft actuator simulation, covering compliant materials, large deformation, contact and coupled physics before physical prototyping.
 
 Official source: https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com
 
@@ -206,7 +206,7 @@ ID: `3e9f6e3845da9b1b` · Score: 94/100 · MathWorks
 
 2026-12-10T14:00:00.000Z · Source zone: EST · unknown
 
-MathWorks follows reinforcement learning from simulated training to embedded control using a Quanser QUBE and Raspberry Pi. The session covers environment design, generated code, hardware evaluation and agentic AI assistance across the development workflow.
+MathWorks follows reinforcement learning from simulation to Quanser QUBE hardware using Raspberry Pi, including code generation and agentic AI assistance.
 
 Official source: https://la.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html
 
@@ -228,7 +228,7 @@ ID: `270df8996904a32c` · Score: 93/100 · University of Alaska Anchorage / Pers
 
 2026-11-18T21:00:00.000Z · Source zone: America/New_York · free
 
-Persona AI’s Michael Perry discusses humanoid robots as workplace collaborators, including commercialization, capabilities and adoption challenges. UAA hosts the presentation with Zoom attendance for participants joining remotely and an in person audience in Anchorage.
+Persona AI’s Michael Perry discusses humanoid robots as workplace collaborators, including commercialization, practical capabilities and the challenges of adoption.
 
 Official source: https://www.uaa.alaska.edu/news/archive/2026/10/cbpp-announces-ai-webinar.cshtml
 
@@ -250,7 +250,7 @@ ID: `8131e178c20d3f20` · Score: 93/100 · DBR77
 
 2026-11-19T14:00:00.000Z · Source zone: America/New_York · free
 
-DBR77 demonstrates how production simulation reveals queues and bottlenecks that average cycle times can miss. An illustrative assembly line supports comparisons of layouts, robot options and flow changes before teams alter a physical factory.
+DBR77 demonstrates how factory simulation reveals bottlenecks and queues, using an illustrative assembly line to compare layouts and robot options.
 
 Official source: https://dbr77.com/webinars/digital-twin-2-0/
 
@@ -272,7 +272,7 @@ ID: `2efad01279e9259d` · Score: 92/100 · IDA / HIVE Robots
 
 2026-12-02T16:00:00.000Z · Source zone: UTC · paid: DKK 195
 
-IDA and HIVE Robots examine early humanoid applications in manufacturing and the practical lessons from commercial pilots. The webinar includes examples of adoption challenges and a live robot demonstration, with online participation available.
+IDA and HIVE Robots discuss early humanoid manufacturing pilots, practical adoption challenges and commercial applications, with a live robot demonstration.
 
 Official source: https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544
 
@@ -294,7 +294,7 @@ ID: `ef6fc78de00356fb` · Score: 91/100 · Siemens / Accenture
 
 2026-11-24T12:00:00.000Z · Source zone: CET · unknown
 
-Accenture and Siemens present a Cognitive Factory approach built on Siemens Intelligence Center X. The session examines how industrial AI, computer vision and agents support maintenance, quality management, operator decisions and more autonomous operations.
+Accenture and Siemens present Cognitive Factory workflows using AI agents and computer vision for maintenance, quality management and operator decisions.
 
 Official source: https://sps.virtualevent.siemens.com/en/
 
@@ -316,7 +316,7 @@ ID: `ba4dcb4f71cad190` · Score: 91/100 · Siemens
 
 2026-11-24T15:30:00.000Z · Source zone: CET · unknown
 
-Siemens and Accenture discuss how foundation models are changing industrial robotics and automation. The SPS session examines recent advances, unresolved deployment challenges and the path from research capabilities to practical manufacturing applications.
+Siemens and Accenture discuss foundation models and industrial robotics, examining deployment challenges and the path toward practical manufacturing applications.
 
 Official source: https://sps.virtualevent.siemens.com/en/
 
@@ -338,7 +338,7 @@ ID: `be4aced967673be7` · Score: 89/100 · A3 / LMI Technologies / OnLogic
 
 2026-12-08T17:00:00.000Z · Source zone: America/New_York · unknown
 
-A3 brings together LMI Technologies, OnLogic and moderator Jim Beretta to examine industrial automation trends for 2027. The panel discusses robotics, machine vision, sensing and AI alongside changing manufacturing needs and adoption challenges.
+A3, LMI Technologies and OnLogic examine 2027 automation trends across robotics, machine vision, sensing and industrial AI with Jim Beretta.
 
 Official source: https://www.automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year
 
@@ -360,7 +360,7 @@ ID: `57df9c74cb774a4d` · Score: 87/100 · MathWorks
 
 2026-11-17T14:00:00.000Z · Source zone: EST · unknown
 
-MathWorks demonstrates how MATLAB and Simulink move AI models onto constrained automotive hardware. The session covers hardware support packages, integration with controls, memory and timing optimization, and validation on production targets.
+MathWorks demonstrates automotive AI deployment with MATLAB and Simulink, covering hardware support packages, memory constraints and performance validation.
 
 Official source: https://www.mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html
 
@@ -382,7 +382,7 @@ ID: `3f12bcfac5f6efe2` · Score: 87/100 · MathWorks
 
 2026-12-02T09:30:00.000Z · Source zone: EST · unknown
 
-MathWorks presents a workflow for replacing automotive steering lookup tables with neural networks. The session follows model training, generated C code and deployment to a TI C2000 microcontroller, including measurement of execution time and memory use.
+MathWorks presents neural networks for automotive steering, covering generated C code, TI C2000 deployment and hardware timing and memory measurements.
 
 Official source: https://se.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html
 
@@ -404,7 +404,7 @@ ID: `4760938ed4728d6e` · Score: 81/100 · Codd AI / BluETT
 
 2026-11-18T17:00:00.000Z · Source zone: EST · free
 
-BluETT and Codd AI examine how connected equipment data can inform fleet utilization, operating efficiency and ownership costs. The discussion uses electric terminal trucks to explore conversational analytics and the choice between building and buying an AI platform.
+BluETT and Codd AI examine equipment telemetry through electric terminal trucks, covering fleet utilization, operational efficiency and ownership costs.
 
 Official source: https://www.codd.ai/webinars/beyond-telemetry
 
@@ -426,7 +426,7 @@ ID: `67ab2615cf1b28db` · Score: 79/100 · MathWorks
 
 2026-11-26T01:00:00.000Z · Source zone: EST · unknown
 
-MathWorks demonstrates AI agents using MATLAB to run code, execute tests, analyze results and diagnose engineering problems. The webinar also covers how domain experts define objectives, review intermediate work and validate the resulting technical outputs.
+MathWorks demonstrates AI agents running MATLAB code, tests and engineering analysis, with experts guiding objectives and validating technical results.
 
 Official source: https://nl.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html
 

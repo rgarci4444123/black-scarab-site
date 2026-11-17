@@ -26,7 +26,7 @@ async function main() {
         if (e.approvedFingerprint !== core.fingerprint(e) || !e.reviewedBy || !e.reviewedAt) throw new Error(`Approval invalidated by unreviewed edit: ${e.id}`);
         if (e.status === 'published' && !e.publishedAt) throw new Error(`Published timestamp missing: ${e.id}`);
         const words = e.summary.trim().split(/\s+/).length;
-        if (words < 25 || words > 45 || !e.sourceTimezone || !Number.isFinite(Date.parse(e.startUtc)) || (e.cost === 'paid' && !e.price)) throw new Error(`Approved record is incomplete: ${e.id}`);
+        if (words < 12 || words > 24 || !e.sourceTimezone || !Number.isFinite(Date.parse(e.startUtc)) || (e.cost === 'paid' && !e.price)) throw new Error(`Approved record is incomplete: ${e.id}`);
         if (approvedKeys.has(e.duplicateKey)) throw new Error(`Duplicate approved event: ${e.id}`);
         approvedKeys.add(e.duplicateKey);
       }

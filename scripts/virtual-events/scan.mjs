@@ -120,7 +120,7 @@ export async function reviewBatch(now = new Date()) {
   for (const event of batch) {
     lines.push(`## ${escape(event.displayTitle)}`, '', `ID: \`${event.id}\` · Score: ${event.score}/100 · ${escape(event.organizer)}`, '',
       `${event.startUtc} · Source zone: ${escape(event.sourceTimezone)} · ${event.cost}${event.price ? `: ${escape(event.price)}` : ''}`, '',
-      event.summary ? escape(event.summary) : 'Editorial summary required before approval (25 to 45 original words, two sentences).', '',
+      event.summary ? escape(event.summary) : 'Editorial description required before approval (one short sentence, 12 to 24 original words).', '',
       `Official source: ${event.sourceUrl}`, '', `Event details: ${event.url}`, '',
       `Verification: ${core.verified(event, now) ? 'passed' : event.verification.error ?? 'incomplete'}`, '',
       ...event.rationale.map(r => `- ${escape(r)}`), '', `Source programme: ${escape(event.evidence.description)}`, '');

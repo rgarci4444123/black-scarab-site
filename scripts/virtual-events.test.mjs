@@ -28,7 +28,7 @@ test('curated preview requires development, an explicit flag and a loopback host
 async function candidate() {
   const e = toCandidate(detail, source, page, now);
   assert.ok(e);
-  e.summary = 'Engineers explore robot simulation and machine vision through a technical workshop from Fixture Robotics Lab. The session covers industrial deployment, digital twins and autonomous robot training through a practical demonstration.';
+  e.summary = 'Engineers explore robot simulation, machine vision and hardware deployment through practical demonstrations.';
   return verifyCandidate(e, getPage, now);
 }
 async function approved() { return core.approve(await candidate(), 'Test editor', now); }
@@ -108,7 +108,7 @@ test('the curated intake preserves 20 identities and reimport keeps approval and
   const candidates=structuredClone(records.filter(e=>ids.has(e.id))).map(e=>({...e,status:'candidate',approvedFingerprint:null})); assert.equal(candidates.length,20);
   assert.deepEqual(core.upcomingVirtualEvents(candidates,now),[]);
   for(const e of candidates) {
-    const words=e.summary.split(/\s+/).length; assert.ok(words>=25 && words<=45);
+    const words=e.summary.split(/\s+/).length; assert.ok(words>=12 && words<=24);
     assert.equal(e.status,'candidate'); assert.equal(e.approvedFingerprint,null);
     assert.equal(Date.parse(e.originalStart),Date.parse(e.startUtc));
   }

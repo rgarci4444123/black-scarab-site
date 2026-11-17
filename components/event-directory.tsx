@@ -6,6 +6,13 @@ export function ArrowUpRight() {
   </svg>;
 }
 
+export function EventPriorityBadge() {
+  return <span className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#c64c3b]">
+    <span className="h-1.5 w-1.5 rounded-full bg-[#c64c3b]" />
+    Priority
+  </span>;
+}
+
 export function EventMonthGroup({ monthKey, month, children }: {
   monthKey: string; month: string; children: ReactNode;
 }) {

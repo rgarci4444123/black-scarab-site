@@ -17,7 +17,7 @@ on:
       event_id:
         description: Event ID from the review batch (for approve/reject)
       summary:
-        description: Two original factual sentences, 25 to 45 words (optional edit)
+        description: One short factual description, 12 to 24 words (optional edit)
       display_title:
         description: Optional display title edit
       override_reason:

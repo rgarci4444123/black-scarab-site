@@ -2,11 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { track } from "@vercel/analytics/react";
-import { EventDirectoryRow, EventMonthGroup } from "@/components/event-directory";
+import { EventDirectoryRow, EventMonthGroup, EventPriorityBadge } from "@/components/event-directory";
 
 export type PublicVirtualEvent = {
   id: string; displayTitle: string; organizer: string; category: string; format: string;
   startUtc: string; endUtc: string | null; url: string; summary: string; cost: string; price: string | null;
+  priority?: boolean;
 };
 
 export function eventDateParts(start: string, zone: string) {
@@ -53,10 +54,11 @@ export default function VirtualEventsList({ events, renderedAt }: { events: Publ
     {[...groups].map(([monthKey, group]) => <EventMonthGroup key={monthKey} monthKey={monthKey} month={group.month}>
       {group.events.map(({ event, date }) => <EventDirectoryRow key={event.id}
         dateLabel={<time dateTime={event.startUtc} aria-label={date.full}>{date.label}</time>}
-        dateDetails={<><time dateTime={event.startUtc}>{date.clock}</time><br />{event.format}
+        dateDetails={<><time dateTime={event.startUtc}>{date.clock}</time>
+          {event.format === "Hybrid webinar" ? <><br />Hybrid</> : null}
           {event.cost === "paid" ? <><br />{event.price}</> : event.cost === "free" ? <><br />Free</> : null}</>}
-        meta={<><span className="text-[10px] font-semibold uppercase tracking-[0.17em] text-[#6e6e73]">{event.category}</span>
-          <span className="text-xs text-[#747c84]">{event.organizer}</span></>}
+        meta={<><span className="text-[10px] font-semibold uppercase tracking-[0.17em] text-[#6e6e73]">{event.organizer}</span>
+          {event.priority ? <EventPriorityBadge /> : null}</>}
         title={event.displayTitle} summary={event.summary} url={event.url} actionLabel="Event Details"
         onClick={() => track("Virtual Event Registration Click", { event_id: event.id, organizer: event.organizer })}
         onAuxClick={eventClick => { if (eventClick.button === 1) track("Virtual Event Registration Click", { event_id: event.id, organizer: event.organizer }); }} />)}

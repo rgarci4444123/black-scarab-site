@@ -23,13 +23,14 @@ export default async function VirtualEventsPage() {
   const preview = allowsLocalVirtualEventsPreview({ nodeEnv: process.env.NODE_ENV,
     enabled: process.env.BLACK_SCARAB_VIRTUAL_EVENTS_PREVIEW, host: (await headers()).get("host"), vercel: process.env.VERCEL });
   const previewIds = new Set(intake.map(event => event.eventId));
+  const priorityIds = new Set(intake.filter(event => event.priority === "Very High").map(event => event.eventId));
   const events = preview ? (records as VirtualEvent[]).filter(event => previewIds.has(event.id)
     && !["rejected", "expired", "canceled"].includes(event.status)
     && Date.parse(event.startUtc) > now.getTime() && Date.parse(event.startUtc) <= now.getTime() + 30 * DAY)
     .sort((a, b) => Date.parse(a.startUtc) - Date.parse(b.startUtc))
     : await verifiedPublicEvents(records as VirtualEvent[], now);
   const publicEvents = events.map(({ id, displayTitle, organizer, category, format, startUtc, endUtc, url, summary, cost, price }) =>
-    ({ id, displayTitle, organizer, category, format, startUtc, endUtc, url, summary, cost, price }));
+    ({ id, displayTitle, organizer, category, format, startUtc, endUtc, url, summary, cost, price, priority: priorityIds.has(id) }));
   const schema = preview ? [] : events.map(event => ({
     "@context": "https://schema.org", "@type": "Event", name: event.displayTitle,
     description: event.summary, startDate: event.startUtc, ...(event.endUtc ? { endDate: event.endUtc } : {}),

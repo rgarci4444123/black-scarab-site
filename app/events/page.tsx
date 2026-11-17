@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { connection } from "next/server";
 import { getUpcomingPhysicalAiEvents, type PhysicalAiEvent } from "@/lib/events";
-import { ArrowUpRight, EventDirectoryRow, EventMonthGroup } from "@/components/event-directory";
+import { ArrowUpRight, EventDirectoryRow, EventMonthGroup, EventPriorityBadge } from "@/components/event-directory";
 
 const baseUrl = "https://www.blackscarab.ai";
 
@@ -91,12 +91,7 @@ function EventCard({ event }: { event: PhysicalAiEvent }) {
           <span className="text-[10px] font-semibold uppercase tracking-[0.17em] text-[#6e6e73]">
             {event.focus}
           </span>
-          {event.tier === "Anchor" ? (
-            <span className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#c64c3b]">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#c64c3b]" />
-              Priority
-            </span>
-          ) : null}
+          {event.tier === "Anchor" ? <EventPriorityBadge /> : null}
       </>}>
       <WorkshopPanel event={event} />
     </EventDirectoryRow>

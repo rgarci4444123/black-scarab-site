@@ -77,7 +77,7 @@ export function eligible(event: VirtualEvent, now = new Date()): boolean {
   return verified(event, now) && Date.parse(event.startUtc) > now.getTime()
     && Boolean(event.organizer && event.officialTitle && event.displayTitle && event.category && event.format)
     && /^https:\/\//.test(event.url) && /^https:\/\//.test(event.sourceUrl)
-    && words >= 25 && words <= 45 && (event.cost !== "paid" || Boolean(event.price))
+    && words >= 12 && words <= 24 && (event.cost !== "paid" || Boolean(event.price))
     && (event.score >= 65 || Boolean(event.overrideReason));
 }
 
