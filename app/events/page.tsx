@@ -1,18 +1,14 @@
-import { SectionHero } from "@/components/section-hero";
-import { SitePage, SiteSurface } from "@/components/site-frame";
 import type { Metadata } from "next";
 import { connection } from "next/server";
-import EmailSignupCard from "@/components/email-signup-card";
-import SiteHeader from "@/components/site-header";
-import SiteFooter from "@/components/site-footer";
 import { getUpcomingPhysicalAiEvents, type PhysicalAiEvent } from "@/lib/events";
+import { ArrowUpRight, EventDirectoryRow, EventMonthGroup, EventPriorityBadge } from "@/components/event-directory";
 
 const baseUrl = "https://www.blackscarab.ai";
 
 export const metadata: Metadata = {
   title: "Physical AI Events",
   description:
-    "A curated calendar of the conferences, exhibitions, and industry gatherings shaping robotics, embodied intelligence, and autonomous systems.",
+    "Conferences, webinars and workshops shaping Physical AI.",
   alternates: {
     canonical: "/events",
   },
@@ -26,19 +22,6 @@ export const metadata: Metadata = {
 };
 
 
-
-function ArrowUpRight() {
-  return (
-    <svg
-      viewBox="0 0 16 16"
-      aria-hidden="true"
-      className="h-4 w-4"
-      fill="none"
-    >
-      <path d="M4 12 12 4M6 4h6v6" stroke="currentColor" strokeWidth="1.4" />
-    </svg>
-  );
-}
 
 function ChevronDown() {
   return (
@@ -101,50 +84,17 @@ function WorkshopPanel({ event }: { event: PhysicalAiEvent }) {
 
 function EventCard({ event }: { event: PhysicalAiEvent }) {
   return (
-    <article className="group grid gap-5 border-t border-[#e2e2e5] py-7 first:border-t-0 sm:grid-cols-[140px_minmax(0,1fr)_auto] sm:items-start sm:gap-8 sm:py-8">
-      <div>
-        <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-[#687263]">
-          {event.dateLabel}
-        </p>
-        <p className="mt-2 text-sm text-[#747c84]">
-          {event.city}
-          <br />
-          {event.country}
-        </p>
-      </div>
-
-      <div>
-        <div className="flex flex-wrap items-center gap-3">
+    <EventDirectoryRow dateLabel={event.dateLabel} dateDetails={<>{event.city}<br />{event.country}</>}
+      title={event.shortName} summary={event.summary} url={event.url} actionLabel="Event site"
+      actionAriaLabel={`Visit the official ${event.shortName} website`}
+      meta={<>
           <span className="text-[10px] font-semibold uppercase tracking-[0.17em] text-[#6e6e73]">
             {event.focus}
           </span>
-          {event.tier === "Anchor" ? (
-            <span className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#c64c3b]">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#c64c3b]" />
-              Priority
-            </span>
-          ) : null}
-        </div>
-        <h3 className="mt-3 text-[1.65rem] font-semibold leading-[1.03] tracking-[-0.04em] text-[#111611] sm:text-[1.9rem]">
-          {event.shortName}
-        </h3>
-        <p className="mt-2 max-w-2xl text-sm leading-6 text-[#626b75]">
-          {event.summary}
-        </p>
-      </div>
-
-      <a
-        href={event.url}
-        target="_blank"
-        rel="noreferrer"
-        className="inline-flex min-h-11 items-center justify-center gap-2 self-start rounded-full border border-[#e2e2e5] px-5 py-2.5 text-sm font-medium text-[#0071e3] transition hover:border-[#0071e3] hover:bg-[#f0f7ff] sm:mt-1"
-        aria-label={`Visit the official ${event.shortName} website`}
-      >
-        Event site <ArrowUpRight />
-      </a>
-
+          {event.tier === "Anchor" ? <EventPriorityBadge /> : null}
+      </>}>
       <WorkshopPanel event={event} />
-    </article>
+    </EventDirectoryRow>
   );
 }
 
@@ -192,7 +142,7 @@ export default async function EventsPage() {
   };
 
   return (
-    <SitePage>
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -200,48 +150,22 @@ export default async function EventsPage() {
         }}
       />
 
-      <SiteSurface>
-        <SiteHeader homeHref="/" />
-
-        <SectionHero section="events" />
-
         <section id="calendar" className="scroll-mt-28 px-5 pb-10 sm:px-8 sm:pb-12 lg:px-14 lg:pb-14">
           <div className="mx-auto max-w-[1460px]">
             {groupedEvents.map((group) => (
-              <section
+              <EventMonthGroup
                 key={group.monthKey}
-                id={group.monthKey}
-                className="scroll-mt-28 grid gap-4 border-b border-[#e2e2e5] py-8 first:pt-10 last:border-b-0 lg:grid-cols-[190px_minmax(0,1fr)] lg:gap-10 lg:py-10 lg:first:pt-12"
-                aria-labelledby={`${group.monthKey}-heading`}
+                monthKey={group.monthKey}
+                month={group.month}
               >
-                <div>
-                  <h2
-                    id={`${group.monthKey}-heading`}
-                    className="text-xl font-semibold tracking-[-0.025em] text-[#273126] lg:sticky lg:top-28"
-                  >
-                    {group.month}
-                  </h2>
-                </div>
-                <div>
                   {group.events.map((event) => (
                     <EventCard key={event.shortName} event={event} />
                   ))}
-                </div>
-              </section>
+              </EventMonthGroup>
             ))}
           </div>
         </section>
 
-        <section id="subscribe" className="scroll-mt-28 border-t border-[#e2e2e5] px-5 py-12 sm:px-8 sm:py-16 lg:px-14">
-          <div className="mx-auto max-w-5xl">
-            <EmailSignupCard
-              source="events-index"
-            />
-          </div>
-        </section>
-
-        <SiteFooter />
-      </SiteSurface>
-    </SitePage>
+    </>
   );
 }

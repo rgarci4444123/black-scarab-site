@@ -1,0 +1,543 @@
+[
+  {
+    "id": "nvidia",
+    "name": "NVIDIA",
+    "tier": 1,
+    "website": "https://www.nvidia.com/",
+    "domains": [
+      "nvidia.com"
+    ],
+    "sources": [
+      "https://www.nvidia.com/en-us/about-nvidia/webinar-portal/",
+      "https://www.nvidia.com/en-us/events/",
+      "https://www.nvidia.com/en-us/events/events-robotics-virtual-learning-series/"
+    ],
+    "monitorHomepage": false,
+    "timezoneAliases": {},
+    "note": "Official event source located 2026-11-16."
+  },
+  {
+    "id": "siemens",
+    "name": "Siemens",
+    "tier": 1,
+    "website": "https://www.siemens.com/",
+    "domains": [
+      "siemens.com"
+    ],
+    "sources": [
+      "https://www.siemens.com/en-us/content/automation-news-and-webinars/"
+    ],
+    "monitorHomepage": false,
+    "timezoneAliases": {},
+    "note": "Official event source located 2026-11-16."
+  },
+  {
+    "id": "abb",
+    "name": "ABB Robotics",
+    "tier": 1,
+    "website": "https://www.abb.com/",
+    "domains": [
+      "abb.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "universal-robots",
+    "name": "Universal Robots",
+    "tier": 1,
+    "website": "https://www.universal-robots.com/",
+    "domains": [
+      "universal-robots.com",
+      "video.universal-robots.com"
+    ],
+    "sources": [
+      "https://video.universal-robots.com/webinars"
+    ],
+    "monitorHomepage": false,
+    "timezoneAliases": {},
+    "note": "Official event source located 2026-11-16."
+  },
+  {
+    "id": "rockwell",
+    "name": "Rockwell Automation",
+    "tier": 1,
+    "website": "https://www.rockwellautomation.com/",
+    "domains": [
+      "rockwellautomation.com"
+    ],
+    "sources": [
+      "https://www.rockwellautomation.com/en-us/events/webinars.html"
+    ],
+    "monitorHomepage": false,
+    "timezoneAliases": {},
+    "note": "Official event source located 2026-11-16."
+  },
+  {
+    "id": "fanuc",
+    "name": "FANUC",
+    "tier": 1,
+    "website": "https://www.fanucamerica.com/",
+    "domains": [
+      "fanucamerica.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "boston-dynamics",
+    "name": "Boston Dynamics",
+    "tier": 1,
+    "website": "https://bostondynamics.com/",
+    "domains": [
+      "bostondynamics.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "teradyne",
+    "name": "Teradyne Robotics",
+    "tier": 1,
+    "website": "https://www.teradyne.com/",
+    "domains": [
+      "teradyne.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "intrinsic",
+    "name": "Intrinsic",
+    "tier": 1,
+    "website": "https://www.intrinsic.ai/",
+    "domains": [
+      "intrinsic.ai"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "mathworks",
+    "name": "MathWorks",
+    "tier": 1,
+    "website": "https://www.mathworks.com/",
+    "domains": [
+      "mathworks.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "ptc",
+    "name": "PTC",
+    "tier": 1,
+    "website": "https://www.ptc.com/",
+    "domains": [
+      "ptc.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "a3",
+    "name": "Association for Advancing Automation (A3)",
+    "tier": 2,
+    "website": "https://www.automate.org/",
+    "domains": [
+      "automate.org"
+    ],
+    "sources": [
+      "https://www.automate.org/webinars/upcoming-webinars"
+    ],
+    "monitorHomepage": false,
+    "timezoneAliases": {},
+    "note": "Official event source located 2026-11-16."
+  },
+  {
+    "id": "ieee-ras",
+    "name": "IEEE Robotics & Automation Society",
+    "tier": 2,
+    "website": "https://www.ieee-ras.org/",
+    "domains": [
+      "ieee-ras.org"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "ros-industrial",
+    "name": "ROS-Industrial",
+    "tier": 2,
+    "website": "https://rosindustrial.org/",
+    "domains": [
+      "rosindustrial.org"
+    ],
+    "sources": [
+      "https://rosindustrial.org/events"
+    ],
+    "monitorHomepage": false,
+    "timezoneAliases": {},
+    "note": "Official event source located 2026-11-16."
+  },
+  {
+    "id": "robot-report",
+    "name": "The Robot Report",
+    "tier": 2,
+    "website": "https://www.therobotreport.com/",
+    "domains": [
+      "therobotreport.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "massrobotics",
+    "name": "MassRobotics",
+    "tier": 2,
+    "website": "https://www.massrobotics.org/",
+    "domains": [
+      "massrobotics.org"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "cmu-ri",
+    "name": "Carnegie Mellon Robotics Institute",
+    "tier": 2,
+    "website": "https://www.ri.cmu.edu/",
+    "domains": [
+      "ri.cmu.edu"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "mit-csail",
+    "name": "MIT CSAIL",
+    "tier": 2,
+    "website": "https://www.csail.mit.edu/",
+    "domains": [
+      "csail.mit.edu"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "berkeley-bair",
+    "name": "Berkeley Artificial Intelligence Research",
+    "tier": 2,
+    "website": "https://bair.berkeley.edu/",
+    "domains": [
+      "bair.berkeley.edu"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "fraunhofer-ipa",
+    "name": "Fraunhofer IPA",
+    "tier": 2,
+    "website": "https://www.ipa.fraunhofer.de/",
+    "domains": [
+      "ipa.fraunhofer.de"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "figure",
+    "name": "Figure AI",
+    "tier": 3,
+    "website": "https://www.figure.ai/",
+    "domains": [
+      "figure.ai"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "agility",
+    "name": "Agility Robotics",
+    "tier": 3,
+    "website": "https://www.agilityrobotics.com/",
+    "domains": [
+      "agilityrobotics.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "physical-intelligence",
+    "name": "Physical Intelligence",
+    "tier": 3,
+    "website": "https://www.physicalintelligence.company/",
+    "domains": [
+      "physicalintelligence.company"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "covariant",
+    "name": "Covariant",
+    "tier": 3,
+    "website": "https://covariant.ai/",
+    "domains": [
+      "covariant.ai"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "skild",
+    "name": "Skild AI",
+    "tier": 3,
+    "website": "https://www.skild.ai/",
+    "domains": [
+      "skild.ai"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "fieldai",
+    "name": "FieldAI",
+    "tier": 3,
+    "website": "https://www.fieldai.com/",
+    "domains": [
+      "fieldai.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "anybotics",
+    "name": "ANYbotics",
+    "tier": 3,
+    "website": "https://www.anybotics.com/",
+    "domains": [
+      "anybotics.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "foxglove",
+    "name": "Foxglove",
+    "tier": 3,
+    "website": "https://foxglove.dev/",
+    "domains": [
+      "foxglove.dev"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "rerun",
+    "name": "Rerun",
+    "tier": 3,
+    "website": "https://rerun.io/",
+    "domains": [
+      "rerun.io"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "roboflow",
+    "name": "Roboflow",
+    "tier": 3,
+    "website": "https://roboflow.com/",
+    "domains": [
+      "roboflow.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "moveit",
+    "name": "PickNik Robotics",
+    "tier": 3,
+    "website": "https://picknik.ai/",
+    "domains": [
+      "picknik.ai"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "clearpath",
+    "name": "Clearpath Robotics",
+    "tier": 1,
+    "website": "https://clearpathrobotics.com/",
+    "domains": [
+      "clearpathrobotics.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "kuka",
+    "name": "KUKA",
+    "tier": 1,
+    "website": "https://www.kuka.com/",
+    "domains": [
+      "kuka.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "yaskawa",
+    "name": "Yaskawa Motoman",
+    "tier": 1,
+    "website": "https://www.motoman.com/",
+    "domains": [
+      "motoman.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "cognex",
+    "name": "Cognex",
+    "tier": 1,
+    "website": "https://www.cognex.com/",
+    "domains": [
+      "cognex.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "basler",
+    "name": "Basler",
+    "tier": 1,
+    "website": "https://www.baslerweb.com/",
+    "domains": [
+      "baslerweb.com"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  },
+  {
+    "id": "beckhoff",
+    "name": "Beckhoff",
+    "tier": 1,
+    "website": "https://www.beckhoff.com/",
+    "domains": [
+      "beckhoff.com"
+    ],
+    "sources": [
+      "https://www.beckhoff.com/en-en/support/webinars/"
+    ],
+    "monitorHomepage": false,
+    "timezoneAliases": {},
+    "note": "Official event source located 2026-11-16."
+  },
+  {
+    "id": "infineon",
+    "name": "Infineon",
+    "tier": 1,
+    "website": "https://www.infineon.com/",
+    "domains": [
+      "infineon.com"
+    ],
+    "sources": [
+      "https://www.infineon.com/event/webinar/2026/robotics-webinar-series"
+    ],
+    "monitorHomepage": false,
+    "timezoneAliases": {},
+    "note": "Official event source located 2026-11-16."
+  },
+  {
+    "id": "ansys",
+    "name": "Ansys",
+    "tier": 1,
+    "website": "https://ansys.synopsys.com/",
+    "domains": [
+      "ansys.synopsys.com"
+    ],
+    "sources": [
+      "https://ansys.synopsys.com/events/industrial-equipment-webinar-series"
+    ],
+    "monitorHomepage": false,
+    "timezoneAliases": {},
+    "note": "Official event source located 2026-11-16."
+  },
+  {
+    "id": "open-robotics",
+    "name": "Open Robotics",
+    "tier": 2,
+    "website": "https://www.openrobotics.org/",
+    "domains": [
+      "openrobotics.org"
+    ],
+    "sources": [],
+    "monitorHomepage": true,
+    "timezoneAliases": {},
+    "note": "Monitor official homepage and event links; no separate event endpoint claimed."
+  }
+]

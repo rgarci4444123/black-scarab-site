@@ -1,0 +1,7 @@
+# GitHub Actions repository secrets (not frontend environment variables)
+BRAVE_SEARCH_API_KEY=
+# Optional: extract unstructured HTML and draft original summaries
+OPENAI_API_KEY=
+# GitHub Actions repository variable: choose a Responses API model supporting structured outputs
+VIRTUAL_EVENTS_OPENAI_MODEL=
+# GITHUB_TOKEN is supplied by Actions; no token goes into website source.

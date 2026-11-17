@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run validate:glossary && npm run build:bspi15-performance && npm run build:insight-social-images && npm run validate:news-social-images && npm run validate:content-taxonomy && next build && npm run validate:article-previews",
+    "build": "npm run validate:virtual-events && npm run validate:glossary && npm run build:bspi15-performance && npm run build:insight-social-images && npm run validate:news-social-images && npm run validate:content-taxonomy && next build && npm run validate:article-previews",
     "audit:bspi15-marketstack": "node scripts/audit-bspi15-marketstack.mjs",
     "build:bspi15-performance": "node scripts/build-bspi15-performance.mjs",
     "build:insight-social-images": "node scripts/build-insight-social-images.mjs",
@@ -20,7 +20,15 @@
     "test:glossary": "node --test scripts/glossary-publication.test.mjs scripts/glossary-preview.test.mjs scripts/glossary-linking.test.mjs scripts/glossary-analytics.test.mjs",
     "report:glossary": "node scripts/validate-glossary.mjs --report",
     "review:glossary": "node scripts/review-glossary.mjs",
-    "dev:glossary-preview": "BLACK_SCARAB_GLOSSARY_PREVIEW=1 next dev --webpack --hostname 127.0.0.1 --port 3099"
+    "dev:glossary-preview": "BLACK_SCARAB_GLOSSARY_PREVIEW=1 next dev --webpack --hostname 127.0.0.1 --port 3099",
+    "events:scan": "node scripts/virtual-events.mjs daily",
+    "events:discover": "node scripts/virtual-events.mjs broad",
+    "events:review": "node scripts/virtual-events.mjs review",
+    "events:approve": "node scripts/virtual-events.mjs approve",
+    "events:reject": "node scripts/virtual-events.mjs reject",
+    "events:import": "node scripts/virtual-events.mjs import",
+    "validate:virtual-events": "node scripts/virtual-events.mjs validate",
+    "test:virtual-events": "node --test scripts/virtual-events.test.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

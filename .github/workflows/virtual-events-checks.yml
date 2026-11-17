@@ -1,0 +1,30 @@
+name: Virtual events checks
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/virtual-events*.yml'
+      - 'app/events/**'
+      - 'components/events-tabs.tsx'
+      - 'components/virtual-events-list.tsx'
+      - 'lib/virtual-events*.ts'
+      - 'data/virtual-events/**'
+      - 'scripts/virtual-events*'
+      - 'scripts/virtual-events/**'
+      - 'package.json'
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run test:virtual-events
+      - run: npm run validate:virtual-events
+      - run: npx eslint app/events components/events-tabs.tsx components/virtual-events-list.tsx lib/virtual-events.ts lib/virtual-events-server.ts scripts/virtual-events.mjs scripts/virtual-events.test.mjs scripts/virtual-events
+      - run: npm run build

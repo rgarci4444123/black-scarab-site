@@ -1,0 +1,1733 @@
+[
+  {
+    "id": "d2ea68f4b8742ab3",
+    "officialTitle": "2026 11th International Conference on Robotics and Automation Engineering (ICRAE)",
+    "displayTitle": "2026 11th International Conference on Robotics and Automation Engineering (ICRAE)",
+    "organizer": "IEEE Robotics & Automation Society",
+    "organizerWebsite": "https://www.ieee-ras.org/",
+    "category": "Robotics & Humanoids",
+    "format": "Live webinar",
+    "originalStart": "2026-11-20T00:00:00-05:00",
+    "sourceTimezone": "-05:00",
+    "startUtc": "2026-11-20T05:00:00.000Z",
+    "endUtc": "2026-11-23T04:59:00.000Z",
+    "url": "https://www.ieee-ras.org/event/2026-11th-international-conference-on-robotics-and-automation-engineering-icrae-72721/",
+    "sourceUrl": "https://www.ieee-ras.org/events/category/conferences/",
+    "summary": "",
+    "cost": "unknown",
+    "price": null,
+    "score": 62,
+    "rationale": [
+      "Relevance 18/35: robotics, robots.",
+      "Credibility 23/25: registered Tier 2 organizer.",
+      "Education 5/20: explicit technical, practical or research terms.",
+      "Topic and speakers 10/10: named presenter in official programme.",
+      "Accessibility 6/10: price unconfirmed.",
+      "Rejected: conference calendar metadata does not establish a verified online session start time."
+    ],
+    "status": "rejected",
+    "firstDiscoveredAt": "2026-11-16T22:08:12.999Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "ieee robotics automation society|2026 11th international conference on robotics and automation engineering icrae|2026-11-20",
+    "aliases": [
+      "https://www.ieee-ras.org/event/2026-11th-international-conference-on-robotics-and-automation-engineering-icrae-72721/",
+      "https://www.ieee-ras.org/events/category/conferences/",
+      "https://www.ieee-ras.org/events/?ical=1"
+    ],
+    "evidence": {
+      "title": "2026 11th International Conference on Robotics and Automation Engineering (ICRAE)",
+      "schedule": "2026-11-20T00:00:00-05:00",
+      "attendance": "https://schema.org/MixedEventAttendanceMode",
+      "description": "&lt;p&gt;As the world rapidly moves towards the widespread implementation of automated machines, particularly smart robots, advances in technologies such as sensing, planning, perception, control, machine intelligence, and cloud computing are enabling the next generation of robots to excel at handling various tasks across industry and society. Consequently, it is essential to stay abreast of the [&hellip;]&lt;/p&gt;\\n",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": false,
+      "registration": true,
+      "live": true,
+      "checkedAt": "2026-11-16T22:16:03.017Z",
+      "error": "Midnight calendar date lacks an explicit verified session start time."
+    },
+    "approvedFingerprint": null,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": null,
+    "changes": [
+      "Title or schedule changed; fresh extraction and approval required",
+      "Material change detected 2026-11-16T22:08:12.999Z",
+      "Online attendance evidence no longer present",
+      "Material change detected 2026-11-16T22:16:03.017Z"
+    ]
+  },
+  {
+    "id": "b73c39fbca8528b3",
+    "officialTitle": "2026 8th International Conference on Control and Robotics (ICCR)",
+    "displayTitle": "2026 8th International Conference on Control and Robotics (ICCR)",
+    "organizer": "IEEE Robotics & Automation Society",
+    "organizerWebsite": "https://www.ieee-ras.org/",
+    "category": "Autonomous Systems",
+    "format": "Live webinar",
+    "originalStart": "2026-12-03T00:00:00-05:00",
+    "sourceTimezone": "-05:00",
+    "startUtc": "2026-12-03T05:00:00.000Z",
+    "endUtc": "2026-12-06T04:59:00.000Z",
+    "url": "https://www.ieee-ras.org/event/2026-8th-international-conference-on-control-and-robotics-iccr-72055/",
+    "sourceUrl": "https://www.ieee-ras.org/events/category/conferences/",
+    "summary": "",
+    "cost": "unknown",
+    "price": null,
+    "score": 74,
+    "rationale": [
+      "Relevance 35/35: robotics, autonomous, manufacturing, robot.",
+      "Credibility 23/25: registered Tier 2 organizer.",
+      "Education 0/20: explicit technical, practical or research terms.",
+      "Topic and speakers 10/10: named presenter in official programme.",
+      "Accessibility 6/10: price unconfirmed.",
+      "Rejected: conference calendar metadata does not establish a verified online session start time."
+    ],
+    "status": "rejected",
+    "firstDiscoveredAt": "2026-11-16T22:08:12.999Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "ieee robotics automation society|2026 8th international conference on control and robotics iccr|2026-12-03",
+    "aliases": [
+      "https://www.ieee-ras.org/event/2026-8th-international-conference-on-control-and-robotics-iccr-72055/",
+      "https://www.ieee-ras.org/events/category/conferences/",
+      "https://www.ieee-ras.org/events/?ical=1"
+    ],
+    "evidence": {
+      "title": "2026 8th International Conference on Control and Robotics (ICCR)",
+      "schedule": "2026-12-03T00:00:00-05:00",
+      "attendance": "https://schema.org/MixedEventAttendanceMode",
+      "description": "&lt;p&gt;Smart robotics combines diverse concepts and techniques to create devices, manipulators, and autonomous systems that serve various human communities - from manufacturing to medical and remote manipulators in complex environments. Control technologies are essential to these systems, enabling robot creators to develop effective strategies to meet their goals. This conference is a great opportunity to [&hellip;]&lt;/p&gt;\\n",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": false,
+      "registration": true,
+      "live": true,
+      "checkedAt": "2026-11-16T22:16:03.017Z",
+      "error": "Midnight calendar date lacks an explicit verified session start time."
+    },
+    "approvedFingerprint": null,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"2026 8th International Conference on Control and Robotics (ICCR)\",\"2026 8th International Conference on Control and Robotics (ICCR)\",\"IEEE Robotics & Automation Society\",\"https://www.ieee-ras.org/\",\"Autonomous Systems\",\"Live webinar\",\"2026-12-03T00:00:00-05:00\",\"-05:00\",\"2026-12-03T05:00:00.000Z\",\"2026-12-06T04:59:00.000Z\",\"https://ieee-ras.org/event/2026-8th-international-conference-on-control-and-robotics-iccr-72055\",\"https://ieee-ras.org/events/category/conferences\",\"\",\"unknown\",null]",
+    "changes": [
+      "Title or schedule changed; fresh extraction and approval required",
+      "Material change detected 2026-11-16T22:08:12.999Z",
+      "Online attendance evidence no longer present",
+      "Material change detected 2026-11-16T22:16:03.017Z"
+    ]
+  },
+  {
+    "id": "d7e9410929f4685f",
+    "officialTitle": "2026 9th Iberian Robotics Conference (ROBOT)",
+    "displayTitle": "2026 9th Iberian Robotics Conference (ROBOT)",
+    "organizer": "IEEE Robotics & Automation Society",
+    "organizerWebsite": "https://www.ieee-ras.org/",
+    "category": "Robotics & Humanoids",
+    "format": "Live webinar",
+    "originalStart": "2026-11-18T05:00:00.000Z",
+    "sourceTimezone": "America/New_York",
+    "startUtc": "2026-11-18T05:00:00.000Z",
+    "endUtc": "2026-11-21T04:59:00.000Z",
+    "url": "https://www.ieee-ras.org/event/2026-9th-iberian-robotics-conference-robot-71646/",
+    "sourceUrl": "https://www.ieee-ras.org/events/?ical=1",
+    "summary": "",
+    "cost": "unknown",
+    "price": null,
+    "score": 49,
+    "rationale": [
+      "Relevance 18/35: robotics, robot.",
+      "Credibility 23/25: registered Tier 2 organizer.",
+      "Education 0/20: explicit technical, practical or research terms.",
+      "Topic and speakers 2/10: topic specificity only.",
+      "Accessibility 6/10: price unconfirmed.",
+      "Rejected: calendar description did not establish online attendance for this conference."
+    ],
+    "status": "rejected",
+    "firstDiscoveredAt": "2026-11-16T22:08:12.999Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "ieee robotics automation society|2026 9th iberian robotics conference robot|2026-11-18",
+    "aliases": [],
+    "evidence": {
+      "title": "2026 9th Iberian Robotics Conference (ROBOT)",
+      "schedule": "20261118T000000",
+      "attendance": "VirtualLocation",
+      "description": "The conference focuses on robotics applications and serves as a meeting point of the robotics community in the Iberian peninsula, open internationally.",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-16T22:08:12.999Z",
+      "error": "Online attendance evidence no longer present"
+    },
+    "approvedFingerprint": null,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": null,
+    "changes": [
+      "Online attendance evidence no longer present"
+    ]
+  },
+  {
+    "id": "3580adf8371a48c3",
+    "officialTitle": "2026 IEEE International Conference on Intelligence and Safety for Robotics/Safety of Industrial Automated Systems (ISR/SIAS)",
+    "displayTitle": "2026 IEEE International Conference on Intelligence and Safety for Robotics/Safety of Industrial Automated Systems (ISR/SIAS)",
+    "organizer": "IEEE Robotics & Automation Society",
+    "organizerWebsite": "https://www.ieee-ras.org/",
+    "category": "Autonomous Systems",
+    "format": "Live webinar",
+    "originalStart": "2026-12-02T05:00:00.000Z",
+    "sourceTimezone": "America/New_York",
+    "startUtc": "2026-12-02T05:00:00.000Z",
+    "endUtc": "2026-12-05T04:59:00.000Z",
+    "url": "https://www.ieee-ras.org/event/2026-ieee-international-conference-on-intelligence-and-safety-for-robotics-safety-of-industrial-automated-systems-isr-sias-70464/",
+    "sourceUrl": "https://www.ieee-ras.org/events/?ical=1",
+    "summary": "",
+    "cost": "unknown",
+    "price": null,
+    "score": 76,
+    "rationale": [
+      "Relevance 35/35: robotics, industrial, robot, robots, autonomously.",
+      "Credibility 23/25: registered Tier 2 organizer.",
+      "Education 10/20: explicit technical, practical or research terms.",
+      "Topic and speakers 2/10: topic specificity only.",
+      "Accessibility 6/10: price unconfirmed.",
+      "Rejected: calendar description did not establish online attendance for this conference."
+    ],
+    "status": "rejected",
+    "firstDiscoveredAt": "2026-11-16T22:08:12.999Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "ieee robotics automation society|2026 ieee international conference on intelligence and safety for robotics safety of industrial automated systems isr sias|2026-12-02",
+    "aliases": [],
+    "evidence": {
+      "title": "2026 IEEE International Conference on Intelligence and Safety for Robotics/Safety of Industrial Automated Systems (ISR/SIAS)",
+      "schedule": "20261202T000000",
+      "attendance": "VirtualLocation",
+      "description": "Humans and robot systems now coexist in various fields, from transportation to personal assistance. For robots to operate autonomously and safely in human environments, they must accurately recognize and respond to people and surroundings. Intelligence and safety are thus essential and must be integrated. The idea of safety has evolved from simply preventing accidents to promoting human health, productivity, and satisfaction—connecting safety with well-being. This new perspective views safety not only as protection from harm but also as a means to enhance quality of life. Accordingly, research and development now focus on technologies that link safety to well-being. The IEEE ISR brings together global experts to discuss intelligent and safe robot systems, share new research and future perspectives, and promote social implementation that advances safety, security, and human well-being in human–robot coexistence.",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-16T22:08:12.999Z",
+      "error": "Online attendance evidence no longer present"
+    },
+    "approvedFingerprint": null,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": null,
+    "changes": [
+      "Online attendance evidence no longer present"
+    ]
+  },
+  {
+    "id": "089cb82919f204fe",
+    "officialTitle": "2026 IEEE-RAS 25th International Conference on Humanoid Robots (Humanoids)",
+    "displayTitle": "2026 IEEE-RAS 25th International Conference on Humanoid Robots (Humanoids)",
+    "organizer": "IEEE Robotics & Automation Society",
+    "organizerWebsite": "https://www.ieee-ras.org/",
+    "category": "Robotics & Humanoids",
+    "format": "Live webinar",
+    "originalStart": "2026-12-07T05:00:00.000Z",
+    "sourceTimezone": "America/New_York",
+    "startUtc": "2026-12-07T05:00:00.000Z",
+    "endUtc": "2026-12-10T04:59:00.000Z",
+    "url": "https://www.ieee-ras.org/event/2026-ieee-ras-25th-international-conference-on-humanoid-robots-humanoids-68892/",
+    "sourceUrl": "https://www.ieee-ras.org/events/?ical=1",
+    "summary": "",
+    "cost": "unknown",
+    "price": null,
+    "score": 76,
+    "rationale": [
+      "Relevance 35/35: humanoid, robots, robotics, robot.",
+      "Credibility 23/25: registered Tier 2 organizer.",
+      "Education 10/20: explicit technical, practical or research terms.",
+      "Topic and speakers 2/10: topic specificity only.",
+      "Accessibility 6/10: price unconfirmed.",
+      "Rejected: calendar description did not establish online attendance for this conference."
+    ],
+    "status": "rejected",
+    "firstDiscoveredAt": "2026-11-16T22:08:12.999Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "ieee robotics automation society|2026 ieee ras 25th international conference on humanoid robots humanoids|2026-12-07",
+    "aliases": [],
+    "evidence": {
+      "title": "2026 IEEE-RAS 25th International Conference on Humanoid Robots (Humanoids)",
+      "schedule": "20261207T000000",
+      "attendance": "VirtualLocation",
+      "description": "The IEEE-RAS International Conference on Humanoid Robots is the internationally recognized prime event of the humanoid robotics community. Established in 2000 and held annually, the Humanoids Conference is a forum for researcher working in the area of humanoid robots including mechatronics, control, perception, planning, learning, human-robot interaction, biomechanics, artificial intelligence, cognition, and neuroscience. The IEEE International Conference on Humanoid Robots is sponsored by the IEEE Robotics & Automation Society.",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-16T22:08:12.999Z",
+      "error": "Online attendance evidence no longer present"
+    },
+    "approvedFingerprint": null,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": null,
+    "changes": [
+      "Online attendance evidence no longer present"
+    ]
+  },
+  {
+    "id": "a3fa43fe6a7f19fc",
+    "officialTitle": "2026 IEEE International Conference on Robotics and Biomimetics (ROBIO)",
+    "displayTitle": "2026 IEEE International Conference on Robotics and Biomimetics (ROBIO)",
+    "organizer": "IEEE Robotics & Automation Society",
+    "organizerWebsite": "https://www.ieee-ras.org/",
+    "category": "Robotics & Humanoids",
+    "format": "Live webinar",
+    "originalStart": "2026-12-16T05:00:00.000Z",
+    "sourceTimezone": "America/New_York",
+    "startUtc": "2026-12-16T05:00:00.000Z",
+    "endUtc": "2026-12-21T04:59:00.000Z",
+    "url": "https://www.ieee-ras.org/event/2026-ieee-international-conference-on-robotics-and-biomimetics-robio-70439/",
+    "sourceUrl": "https://www.ieee-ras.org/events/?ical=1",
+    "summary": "",
+    "cost": "unknown",
+    "price": null,
+    "score": 59,
+    "rationale": [
+      "Relevance 18/35: robotics, robotic.",
+      "Credibility 23/25: registered Tier 2 organizer.",
+      "Education 10/20: explicit technical, practical or research terms.",
+      "Topic and speakers 2/10: topic specificity only.",
+      "Accessibility 6/10: price unconfirmed.",
+      "Rejected: calendar description did not establish online attendance for this conference."
+    ],
+    "status": "rejected",
+    "firstDiscoveredAt": "2026-11-16T22:08:12.999Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "ieee robotics automation society|2026 ieee international conference on robotics and biomimetics robio|2026-12-16",
+    "aliases": [],
+    "evidence": {
+      "title": "2026 IEEE International Conference on Robotics and Biomimetics (ROBIO)",
+      "schedule": "20261216T000000",
+      "attendance": "VirtualLocation",
+      "description": "IEEE ROBIO 2026 will serve as an international forum for researchers, engineers, and practitioners to present and discuss the latest advancements in robotics, biomimetics, and their convergence with AI, biological sciences, and human-centered technologies. The theme of the conference will be Bioinspired Intelligence for a Sustainable Robotic Future. The conference will cover foundational theories, enabling technologies, systems development, and emerging applications that draw inspiration from biological principles or that contribute back to understanding living systems.",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-16T22:08:12.999Z",
+      "error": "Online attendance evidence no longer present"
+    },
+    "approvedFingerprint": null,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": null,
+    "changes": [
+      "Online attendance evidence no longer present"
+    ]
+  },
+  {
+    "id": "933b642ee8931e48",
+    "officialTitle": "Claude for Manufacturing: Put Your Plant’s Know-How to Work",
+    "displayTitle": "Claude for Manufacturing: Put Your Plant’s Know-How to Work",
+    "organizer": "Anthropic / Claude, with Infor",
+    "organizerWebsite": "https://www.anthropic.com/",
+    "category": "Industrial AI",
+    "format": "Live webinar",
+    "originalStart": "2026-11-17T08:00:00-08:00",
+    "sourceTimezone": "America/Los_Angeles",
+    "startUtc": "2026-11-17T16:00:00.000Z",
+    "endUtc": "2026-11-17T17:00:00.000Z",
+    "url": "https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work",
+    "sourceUrl": "https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work",
+    "summary": "Anthropic introduces Claude manufacturing workflows and the Model Hardware Standard research preview, with Infor demonstrating two plant use cases.",
+    "cost": "unknown",
+    "price": null,
+    "score": 96,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 25/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": "2026-11-17T12:51:24.760Z",
+    "publishedAt": null,
+    "duplicateKey": "anthropic claude with infor|claude for manufacturing put your plant s know how to work|2026-11-17",
+    "aliases": [],
+    "evidence": {
+      "title": "Claude for Manufacturing: Put Your Plant’s Know-How to Work",
+      "schedule": "Nov 17, 2026 — 8:00 – 9:00 AM PT",
+      "attendance": "Register for the webinar",
+      "description": "Fresh off the announcement of Infor Industry AI for Claude, Infor will join us to demo two plant use cases",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": true,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.760Z",
+      "error": null
+    },
+    "approvedFingerprint": "[\"Claude for Manufacturing: Put Your Plant’s Know-How to Work\",\"Claude for Manufacturing: Put Your Plant’s Know-How to Work\",\"Anthropic / Claude, with Infor\",\"https://www.anthropic.com/\",\"Industrial AI\",\"Live webinar\",\"2026-11-17T08:00:00-08:00\",\"America/Los_Angeles\",\"2026-11-17T16:00:00.000Z\",\"2026-11-17T17:00:00.000Z\",\"https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work\",\"https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work\",\"Anthropic introduces Claude manufacturing workflows and the Model Hardware Standard research preview, with Infor demonstrating two plant use cases.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Claude for Manufacturing: Put Your Plant’s Know-How to Work\",\"Claude for Manufacturing: Put Your Plant’s Know-How to Work\",\"Anthropic / Claude, with Infor\",\"https://www.anthropic.com/\",\"Industrial AI\",\"Live webinar\",\"2026-11-17T08:00:00-08:00\",\"America/Los_Angeles\",\"2026-11-17T16:00:00.000Z\",\"2026-11-17T17:00:00.000Z\",\"https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work\",\"https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work\",\"Anthropic introduces Claude manufacturing workflows and the Model Hardware Standard research preview, with Infor demonstrating two plant use cases.\",\"unknown\",null]",
+    "changes": [
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-11-17T16:00:00.000Z",
+      "fingerprint": "[\"Claude for Manufacturing: Put Your Plant’s Know-How to Work\",\"Claude for Manufacturing: Put Your Plant’s Know-How to Work\",\"Anthropic / Claude, with Infor\",\"https://www.anthropic.com/\",\"Industrial AI\",\"Live webinar\",\"2026-11-17T08:00:00-08:00\",\"America/Los_Angeles\",\"2026-11-17T16:00:00.000Z\",\"2026-11-17T17:00:00.000Z\",\"https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work\",\"https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work\",\"Anthropic introduces Claude manufacturing workflows and the Model Hardware Standard research preview, with Infor demonstrating two plant use cases.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work"
+      ]
+    }
+  },
+  {
+    "id": "606176be648561f1",
+    "officialTitle": "Live Demo: AI-Powered Visual Inspection That Gives Defects Nowhere to Hide",
+    "displayTitle": "Live Demo: AI-Powered Visual Inspection That Gives Defects Nowhere to Hide",
+    "organizer": "A3 / Roboflow",
+    "organizerWebsite": "https://www.automate.org/",
+    "category": "Industrial AI",
+    "format": "Live demonstration",
+    "originalStart": "2026-11-17T11:00:00-05:00",
+    "sourceTimezone": "America/New_York",
+    "startUtc": "2026-11-17T16:00:00.000Z",
+    "endUtc": "2026-11-17T17:00:00.000Z",
+    "url": "https://www.automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship",
+    "sourceUrl": "https://www.automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship",
+    "summary": "Roboflow builds a live PCB inspection system, covering defect detection, pass or fail decisions, camera conditions and deployment choices.",
+    "cost": "unknown",
+    "price": null,
+    "score": 94,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 23/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "a3 roboflow|live demo ai powered visual inspection that gives defects nowhere to hide|2026-11-17",
+    "aliases": [],
+    "evidence": {
+      "title": "Live Demo: AI-Powered Visual Inspection That Gives Defects Nowhere to Hide",
+      "schedule": "November 17, 2026 | 11 AM - 12 PM ET",
+      "attendance": "live, hands-on webinar",
+      "description": "will build a working AI-powered visual inspection system from scratch",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": "HTTP 403: https://www.automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship"
+    },
+    "approvedFingerprint": "[\"Live Demo: AI-Powered Visual Inspection That Gives Defects Nowhere to Hide\",\"Live Demo: AI-Powered Visual Inspection That Gives Defects Nowhere to Hide\",\"A3 / Roboflow\",\"https://www.automate.org/\",\"Industrial AI\",\"Live demonstration\",\"2026-11-17T11:00:00-05:00\",\"America/New_York\",\"2026-11-17T16:00:00.000Z\",\"2026-11-17T17:00:00.000Z\",\"https://automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship\",\"https://automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship\",\"Roboflow builds a live PCB inspection system, covering defect detection, pass or fail decisions, camera conditions and deployment choices.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Live Demo: AI-Powered Visual Inspection That Gives Defects Nowhere to Hide\",\"Live Demo: AI-Powered Visual Inspection That Gives Defects Nowhere to Hide\",\"A3 / Roboflow\",\"https://www.automate.org/\",\"Industrial AI\",\"Live demonstration\",\"2026-11-17T11:00:00-05:00\",\"America/New_York\",\"2026-11-17T16:00:00.000Z\",\"2026-11-17T17:00:00.000Z\",\"https://automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship\",\"https://automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship\",\"Roboflow builds a live PCB inspection system, covering defect detection, pass or fail decisions, camera conditions and deployment choices.\",\"unknown\",null]",
+    "changes": [
+      "Official page is readable through OpenAI web search; direct verification returned HTTP 403. Confirm registration and attendance fee before approval.",
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "HTTP 403: https://www.automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship"
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-11-17T16:00:00.000Z",
+      "fingerprint": "[\"Live Demo: AI-Powered Visual Inspection That Gives Defects Nowhere to Hide\",\"Live Demo: AI-Powered Visual Inspection That Gives Defects Nowhere to Hide\",\"A3 / Roboflow\",\"https://www.automate.org/\",\"Industrial AI\",\"Live demonstration\",\"2026-11-17T11:00:00-05:00\",\"America/New_York\",\"2026-11-17T16:00:00.000Z\",\"2026-11-17T17:00:00.000Z\",\"https://automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship\",\"https://automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship\",\"Roboflow builds a live PCB inspection system, covering defect detection, pass or fail decisions, camera conditions and deployment choices.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://www.automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship"
+      ]
+    }
+  },
+  {
+    "id": "57df9c74cb774a4d",
+    "officialTitle": "Embedded AI: From Algorithm to Automotive ECUs using Simulink and Hardware Support Packages",
+    "displayTitle": "Embedded AI: From Algorithm to Automotive ECUs using Simulink and Hardware Support Packages",
+    "organizer": "MathWorks",
+    "organizerWebsite": "https://www.mathworks.com/",
+    "category": "Autonomous Systems",
+    "format": "Live webinar",
+    "originalStart": "2026-11-17T09:00:00-05:00",
+    "sourceTimezone": "EST",
+    "startUtc": "2026-11-17T14:00:00.000Z",
+    "endUtc": "2026-11-17T15:00:00.000Z",
+    "url": "https://www.mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html",
+    "sourceUrl": "https://www.mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html",
+    "summary": "MathWorks demonstrates automotive AI deployment with MATLAB and Simulink, covering hardware support packages, memory constraints and performance validation.",
+    "cost": "unknown",
+    "price": null,
+    "score": 87,
+    "rationale": [
+      "Relevance 28/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 23/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "mathworks|embedded ai from algorithm to automotive ecus using simulink and hardware support packages|2026-11-17",
+    "aliases": [],
+    "evidence": {
+      "title": "Embedded AI: From Algorithm to Automotive ECUs using Simulink and Hardware Support Packages",
+      "schedule": "17 Nov 2026, 9:00 AM EST",
+      "attendance": "In this webinar",
+      "description": "Embedding AI into real‑world products is about deploying AI models reliably on constrained hardware",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": "HTTP 403: https://www.mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html"
+    },
+    "approvedFingerprint": "[\"Embedded AI: From Algorithm to Automotive ECUs using Simulink and Hardware Support Packages\",\"Embedded AI: From Algorithm to Automotive ECUs using Simulink and Hardware Support Packages\",\"MathWorks\",\"https://www.mathworks.com/\",\"Autonomous Systems\",\"Live webinar\",\"2026-11-17T09:00:00-05:00\",\"EST\",\"2026-11-17T14:00:00.000Z\",\"2026-11-17T15:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html\",\"https://mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html\",\"MathWorks demonstrates automotive AI deployment with MATLAB and Simulink, covering hardware support packages, memory constraints and performance validation.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Embedded AI: From Algorithm to Automotive ECUs using Simulink and Hardware Support Packages\",\"Embedded AI: From Algorithm to Automotive ECUs using Simulink and Hardware Support Packages\",\"MathWorks\",\"https://www.mathworks.com/\",\"Autonomous Systems\",\"Live webinar\",\"2026-11-17T09:00:00-05:00\",\"EST\",\"2026-11-17T14:00:00.000Z\",\"2026-11-17T15:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html\",\"https://mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html\",\"MathWorks demonstrates automotive AI deployment with MATLAB and Simulink, covering hardware support packages, memory constraints and performance validation.\",\"unknown\",null]",
+    "changes": [
+      "Official primary page found with the listed schedule via OpenAI web search. Direct organizer fetch returned HTTP 403; registration and price need a fresh manual check.",
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "Two official time options exist. The earliest is stored in the single-start event model; the later option is retained in this intake without adding another listing.",
+      "HTTP 403: https://www.mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html"
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-11-17T14:00:00.000Z",
+      "fingerprint": "[\"Embedded AI: From Algorithm to Automotive ECUs using Simulink and Hardware Support Packages\",\"Embedded AI: From Algorithm to Automotive ECUs using Simulink and Hardware Support Packages\",\"MathWorks\",\"https://www.mathworks.com/\",\"Autonomous Systems\",\"Live webinar\",\"2026-11-17T09:00:00-05:00\",\"EST\",\"2026-11-17T14:00:00.000Z\",\"2026-11-17T15:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html\",\"https://mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html\",\"MathWorks demonstrates automotive AI deployment with MATLAB and Simulink, covering hardware support packages, memory constraints and performance validation.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://www.mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html"
+      ]
+    }
+  },
+  {
+    "id": "be2c70adc4fb81c6",
+    "officialTitle": "Development and Deployment of an AI-based Visual Inspection System to Minimize Plant Shutdowns",
+    "displayTitle": "Development and Deployment of an AI-based Visual Inspection System to Minimize Plant Shutdowns",
+    "organizer": "MathWorks / Plansee",
+    "organizerWebsite": "https://www.mathworks.com/",
+    "category": "Industrial AI",
+    "format": "Live webinar",
+    "originalStart": "2026-11-18T09:00:00-05:00",
+    "sourceTimezone": "EST",
+    "startUtc": "2026-11-18T14:00:00.000Z",
+    "endUtc": "2026-11-18T15:00:00.000Z",
+    "url": "https://uk.mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html",
+    "sourceUrl": "https://uk.mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html",
+    "summary": "Plansee explains its factory inspection deployment, while MathWorks covers anomaly detection, ONNX export and integration with Beckhoff TwinCAT3.",
+    "cost": "unknown",
+    "price": null,
+    "score": 94,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 23/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "mathworks plansee|development and deployment of an ai based visual inspection system to minimize plant shutdowns|2026-11-18",
+    "aliases": [
+      "https://www.mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html"
+    ],
+    "evidence": {
+      "title": "Development and Deployment of an AI-based Visual Inspection System to Minimize Plant Shutdowns",
+      "schedule": "18 Nov 2026, 9:00 AM EST",
+      "attendance": "In this session",
+      "description": "Plansee, a leading high-performance materials manufacturer in Austria, will share their real-world experience",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": "HTTP 403: https://uk.mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html"
+    },
+    "approvedFingerprint": "[\"Development and Deployment of an AI-based Visual Inspection System to Minimize Plant Shutdowns\",\"Development and Deployment of an AI-based Visual Inspection System to Minimize Plant Shutdowns\",\"MathWorks / Plansee\",\"https://www.mathworks.com/\",\"Industrial AI\",\"Live webinar\",\"2026-11-18T09:00:00-05:00\",\"EST\",\"2026-11-18T14:00:00.000Z\",\"2026-11-18T15:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html\",\"https://mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html\",\"Plansee explains its factory inspection deployment, while MathWorks covers anomaly detection, ONNX export and integration with Beckhoff TwinCAT3.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Development and Deployment of an AI-based Visual Inspection System to Minimize Plant Shutdowns\",\"Development and Deployment of an AI-based Visual Inspection System to Minimize Plant Shutdowns\",\"MathWorks / Plansee\",\"https://www.mathworks.com/\",\"Industrial AI\",\"Live webinar\",\"2026-11-18T09:00:00-05:00\",\"EST\",\"2026-11-18T14:00:00.000Z\",\"2026-11-18T15:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html\",\"https://mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html\",\"Plansee explains its factory inspection deployment, while MathWorks covers anomaly detection, ONNX export and integration with Beckhoff TwinCAT3.\",\"unknown\",null]",
+    "changes": [
+      "Official primary page found with the listed schedule via OpenAI web search. Direct organizer fetch returned HTTP 403; registration and price need a fresh manual check.",
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "Two official time options exist. The earliest is stored in the single-start event model; the later option is retained in this intake without adding another listing.",
+      "HTTP 403: https://uk.mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html"
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-11-18T14:00:00.000Z",
+      "fingerprint": "[\"Development and Deployment of an AI-based Visual Inspection System to Minimize Plant Shutdowns\",\"Development and Deployment of an AI-based Visual Inspection System to Minimize Plant Shutdowns\",\"MathWorks / Plansee\",\"https://www.mathworks.com/\",\"Industrial AI\",\"Live webinar\",\"2026-11-18T09:00:00-05:00\",\"EST\",\"2026-11-18T14:00:00.000Z\",\"2026-11-18T15:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html\",\"https://mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html\",\"Plansee explains its factory inspection deployment, while MathWorks covers anomaly detection, ONNX export and integration with Beckhoff TwinCAT3.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://uk.mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html",
+        "https://www.mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html"
+      ]
+    }
+  },
+  {
+    "id": "270df8996904a32c",
+    "officialTitle": "Humanoid Robots: Machines as Teammates",
+    "displayTitle": "Humanoid Robots: Machines as Teammates",
+    "organizer": "University of Alaska Anchorage / Persona AI",
+    "organizerWebsite": "https://www.uaa.alaska.edu/",
+    "category": "Robotics & Humanoids",
+    "format": "Hybrid webinar",
+    "originalStart": "2026-11-18T16:00:00-05:00",
+    "sourceTimezone": "America/New_York",
+    "startUtc": "2026-11-18T21:00:00.000Z",
+    "endUtc": null,
+    "url": "https://alaska.zoom.us/webinar/register/WN_6JWr3D_9R5GtCNiI9dqF_Q",
+    "sourceUrl": "https://www.uaa.alaska.edu/news/archive/2026/10/cbpp-announces-ai-webinar.cshtml",
+    "summary": "Persona AI’s Michael Perry discusses humanoid robots as workplace collaborators, including commercialization, practical capabilities and the challenges of adoption.",
+    "cost": "free",
+    "price": null,
+    "score": 93,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 23/25: official organizer programme and presenter context.",
+      "Education 15/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 10/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "university of alaska anchorage persona ai|humanoid robots machines as teammates|2026-11-18",
+    "aliases": [],
+    "evidence": {
+      "title": "Humanoid Robots: Machines as Teammates",
+      "schedule": "Wednesday, Nov. 18, 2026 Time: 11:30 a.m.",
+      "attendance": "Virtual attendance: via Zoom",
+      "description": "the webinar will explore how humanoid robots are moving beyond research laboratories and into the workplace",
+      "cost": "Free and open to all; registration required"
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": "Schedule requires manual source verification"
+    },
+    "approvedFingerprint": "[\"Humanoid Robots: Machines as Teammates\",\"Humanoid Robots: Machines as Teammates\",\"University of Alaska Anchorage / Persona AI\",\"https://www.uaa.alaska.edu/\",\"Robotics & Humanoids\",\"Hybrid webinar\",\"2026-11-18T16:00:00-05:00\",\"America/New_York\",\"2026-11-18T21:00:00.000Z\",null,\"https://alaska.zoom.us/webinar/register/WN_6JWr3D_9R5GtCNiI9dqF_Q\",\"https://uaa.alaska.edu/news/archive/2026/10/cbpp-announces-ai-webinar.cshtml\",\"Persona AI’s Michael Perry discusses humanoid robots as workplace collaborators, including commercialization, practical capabilities and the challenges of adoption.\",\"free\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Humanoid Robots: Machines as Teammates\",\"Humanoid Robots: Machines as Teammates\",\"University of Alaska Anchorage / Persona AI\",\"https://www.uaa.alaska.edu/\",\"Robotics & Humanoids\",\"Hybrid webinar\",\"2026-11-18T16:00:00-05:00\",\"America/New_York\",\"2026-11-18T21:00:00.000Z\",null,\"https://alaska.zoom.us/webinar/register/WN_6JWr3D_9R5GtCNiI9dqF_Q\",\"https://uaa.alaska.edu/news/archive/2026/10/cbpp-announces-ai-webinar.cshtml\",\"Persona AI’s Michael Perry discusses humanoid robots as workplace collaborators, including commercialization, practical capabilities and the challenges of adoption.\",\"free\",null]",
+    "changes": [
+      "Zoom registration explicitly displays November 18 at 4:00 PM Eastern Time. The UAA article gives noon without a zone; automated verification cannot combine these two pages. End time remains unset because the registration page does not confirm it.",
+      "Organizer changed the start time or source time is unverified",
+      "Schedule requires manual source verification"
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-11-18T21:00:00.000Z",
+      "fingerprint": "[\"Humanoid Robots: Machines as Teammates\",\"Humanoid Robots: Machines as Teammates\",\"University of Alaska Anchorage / Persona AI\",\"https://www.uaa.alaska.edu/\",\"Robotics & Humanoids\",\"Hybrid webinar\",\"2026-11-18T16:00:00-05:00\",\"America/New_York\",\"2026-11-18T21:00:00.000Z\",null,\"https://alaska.zoom.us/webinar/register/WN_6JWr3D_9R5GtCNiI9dqF_Q\",\"https://uaa.alaska.edu/news/archive/2026/10/cbpp-announces-ai-webinar.cshtml\",\"Persona AI’s Michael Perry discusses humanoid robots as workplace collaborators, including commercialization, practical capabilities and the challenges of adoption.\",\"free\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://www.uaa.alaska.edu/news/archive/2026/10/cbpp-announces-ai-webinar.cshtml",
+        "https://alaska.zoom.us/webinar/register/WN_6JWr3D_9R5GtCNiI9dqF_Q"
+      ]
+    }
+  },
+  {
+    "id": "1e11bd40430fef00",
+    "officialTitle": "Getting Palletizing Right The First Time: How to Design a System That Fits",
+    "displayTitle": "Getting Palletizing Right The First Time: How to Design a System That Fits",
+    "organizer": "Universal Robots / Vention",
+    "organizerWebsite": "https://www.universal-robots.com/",
+    "category": "Robotics & Humanoids",
+    "format": "Live webinar",
+    "originalStart": "2026-11-18T12:00:00-05:00",
+    "sourceTimezone": "UTC-05:00",
+    "startUtc": "2026-11-18T17:00:00.000Z",
+    "endUtc": "2026-11-18T18:00:00.000Z",
+    "url": "https://video.universal-robots.com/getting-palletizing-right-the-first",
+    "sourceUrl": "https://www.universal-robots.com/learn-and-connect/events/online-events/vention-webinar-november-2026-palletizing/",
+    "summary": "Vention and Universal Robots examine palletizing design through a Produlith deployment, covering conveyors, gripper selection, layout and production integration.",
+    "cost": "unknown",
+    "price": null,
+    "score": 96,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 25/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": "2026-11-17T12:51:24.765Z",
+    "publishedAt": null,
+    "duplicateKey": "universal robots vention|getting palletizing right the first time how to design a system that fits|2026-11-18",
+    "aliases": [
+      "https://video.universal-robots.com/getting-palletizing-right-the-first"
+    ],
+    "evidence": {
+      "title": "Getting Palletizing Right The First Time: How to Design a System That Fits",
+      "schedule": "November 18, 2026 12:00 - 13:00 UTC-05:00",
+      "attendance": "Event Information Online",
+      "description": "Through a real-world deployment at Produlith, discover how Vention addressed specific production requirements",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": true,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": null
+    },
+    "approvedFingerprint": "[\"Getting Palletizing Right The First Time: How to Design a System That Fits\",\"Getting Palletizing Right The First Time: How to Design a System That Fits\",\"Universal Robots / Vention\",\"https://www.universal-robots.com/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-11-18T12:00:00-05:00\",\"UTC-05:00\",\"2026-11-18T17:00:00.000Z\",\"2026-11-18T18:00:00.000Z\",\"https://video.universal-robots.com/getting-palletizing-right-the-first\",\"https://universal-robots.com/learn-and-connect/events/online-events/vention-webinar-november-2026-palletizing\",\"Vention and Universal Robots examine palletizing design through a Produlith deployment, covering conveyors, gripper selection, layout and production integration.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Getting Palletizing Right The First Time: How to Design a System That Fits\",\"Getting Palletizing Right The First Time: How to Design a System That Fits\",\"Universal Robots / Vention\",\"https://www.universal-robots.com/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-11-18T12:00:00-05:00\",\"UTC-05:00\",\"2026-11-18T17:00:00.000Z\",\"2026-11-18T18:00:00.000Z\",\"https://video.universal-robots.com/getting-palletizing-right-the-first\",\"https://universal-robots.com/learn-and-connect/events/online-events/vention-webinar-november-2026-palletizing\",\"Vention and Universal Robots examine palletizing design through a Produlith deployment, covering conveyors, gripper selection, layout and production integration.\",\"unknown\",null]",
+    "changes": [
+      "Use the main organizer page: noon to 1 PM UTC−05:00. Its start agrees with the video page calendar link; the video page microdata incorrectly says 12:00Z and a 45 minute duration.",
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-11-18T17:00:00.000Z",
+      "fingerprint": "[\"Getting Palletizing Right The First Time: How to Design a System That Fits\",\"Getting Palletizing Right The First Time: How to Design a System That Fits\",\"Universal Robots / Vention\",\"https://www.universal-robots.com/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-11-18T12:00:00-05:00\",\"UTC-05:00\",\"2026-11-18T17:00:00.000Z\",\"2026-11-18T18:00:00.000Z\",\"https://video.universal-robots.com/getting-palletizing-right-the-first\",\"https://universal-robots.com/learn-and-connect/events/online-events/vention-webinar-november-2026-palletizing\",\"Vention and Universal Robots examine palletizing design through a Produlith deployment, covering conveyors, gripper selection, layout and production integration.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://www.universal-robots.com/learn-and-connect/events/online-events/vention-webinar-november-2026-palletizing/",
+        "https://video.universal-robots.com/getting-palletizing-right-the-first"
+      ]
+    }
+  },
+  {
+    "id": "4760938ed4728d6e",
+    "officialTitle": "Beyond Telemetry: Turning Industrial Equipment Data into Business Value with AI",
+    "displayTitle": "Beyond Telemetry: Turning Industrial Equipment Data into Business Value with AI",
+    "organizer": "Codd AI / BluETT",
+    "organizerWebsite": "https://www.codd.ai/",
+    "category": "Industrial AI",
+    "format": "Live webinar",
+    "originalStart": "2026-11-18T12:00:00-05:00",
+    "sourceTimezone": "EST",
+    "startUtc": "2026-11-18T17:00:00.000Z",
+    "endUtc": "2026-11-18T18:00:00.000Z",
+    "url": "https://www.codd.ai/webinars/beyond-telemetry",
+    "sourceUrl": "https://www.codd.ai/webinars/beyond-telemetry",
+    "summary": "BluETT and Codd AI examine equipment telemetry through electric terminal trucks, covering fleet utilization, operational efficiency and ownership costs.",
+    "cost": "free",
+    "price": null,
+    "score": 81,
+    "rationale": [
+      "Relevance 28/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 18/25: official organizer programme and presenter context.",
+      "Education 15/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 10/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": "2026-11-17T12:51:24.765Z",
+    "publishedAt": null,
+    "duplicateKey": "codd ai bluett|beyond telemetry turning industrial equipment data into business value with ai|2026-11-18",
+    "aliases": [],
+    "evidence": {
+      "title": "Beyond Telemetry: Turning Industrial Equipment Data into Business Value with AI",
+      "schedule": "2026-11-18T17:00:00Z",
+      "attendance": "Exclusive Live Webinar",
+      "description": "Industrial equipment generates enormous volumes of telemetry data.",
+      "cost": "Register for Free"
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": true,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": null
+    },
+    "approvedFingerprint": "[\"Beyond Telemetry: Turning Industrial Equipment Data into Business Value with AI\",\"Beyond Telemetry: Turning Industrial Equipment Data into Business Value with AI\",\"Codd AI / BluETT\",\"https://www.codd.ai/\",\"Industrial AI\",\"Live webinar\",\"2026-11-18T12:00:00-05:00\",\"EST\",\"2026-11-18T17:00:00.000Z\",\"2026-11-18T18:00:00.000Z\",\"https://codd.ai/webinars/beyond-telemetry\",\"https://codd.ai/webinars/beyond-telemetry\",\"BluETT and Codd AI examine equipment telemetry through electric terminal trucks, covering fleet utilization, operational efficiency and ownership costs.\",\"free\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Beyond Telemetry: Turning Industrial Equipment Data into Business Value with AI\",\"Beyond Telemetry: Turning Industrial Equipment Data into Business Value with AI\",\"Codd AI / BluETT\",\"https://www.codd.ai/\",\"Industrial AI\",\"Live webinar\",\"2026-11-18T12:00:00-05:00\",\"EST\",\"2026-11-18T17:00:00.000Z\",\"2026-11-18T18:00:00.000Z\",\"https://codd.ai/webinars/beyond-telemetry\",\"https://codd.ai/webinars/beyond-telemetry\",\"BluETT and Codd AI examine equipment telemetry through electric terminal trucks, covering fleet utilization, operational efficiency and ownership costs.\",\"free\",null]",
+    "changes": [],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-11-18T17:00:00.000Z",
+      "fingerprint": "[\"Beyond Telemetry: Turning Industrial Equipment Data into Business Value with AI\",\"Beyond Telemetry: Turning Industrial Equipment Data into Business Value with AI\",\"Codd AI / BluETT\",\"https://www.codd.ai/\",\"Industrial AI\",\"Live webinar\",\"2026-11-18T12:00:00-05:00\",\"EST\",\"2026-11-18T17:00:00.000Z\",\"2026-11-18T18:00:00.000Z\",\"https://codd.ai/webinars/beyond-telemetry\",\"https://codd.ai/webinars/beyond-telemetry\",\"BluETT and Codd AI examine equipment telemetry through electric terminal trucks, covering fleet utilization, operational efficiency and ownership costs.\",\"free\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://www.codd.ai/webinars/beyond-telemetry"
+      ]
+    }
+  },
+  {
+    "id": "8131e178c20d3f20",
+    "officialTitle": "Digital Twin 2.0 premiere",
+    "displayTitle": "Digital Twin 2.0 premiere",
+    "organizer": "DBR77",
+    "organizerWebsite": "https://dbr77.com/",
+    "category": "Simulation & Digital Twins",
+    "format": "Live webinar",
+    "originalStart": "2026-11-19T09:00:00-05:00",
+    "sourceTimezone": "America/New_York",
+    "startUtc": "2026-11-19T14:00:00.000Z",
+    "endUtc": "2026-11-19T15:00:00.000Z",
+    "url": "https://dbr77.com/webinars/digital-twin-2-0/",
+    "sourceUrl": "https://dbr77.com/webinars/digital-twin-2-0/",
+    "summary": "DBR77 demonstrates how factory simulation reveals bottlenecks and queues, using an illustrative assembly line to compare layouts and robot options.",
+    "cost": "free",
+    "price": null,
+    "score": 93,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 18/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 10/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": "2026-11-17T12:51:24.765Z",
+    "publishedAt": null,
+    "duplicateKey": "dbr77|digital twin 2 0 premiere|2026-11-19",
+    "aliases": [],
+    "evidence": {
+      "title": "Digital Twin 2.0 premiere",
+      "schedule": "November 19, 2026 9:00 AM ET",
+      "attendance": "Free · Online",
+      "description": "At the Digital Twin 2.0 premiere we",
+      "cost": "Free · Online"
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": true,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": null
+    },
+    "approvedFingerprint": "[\"Digital Twin 2.0 premiere\",\"Digital Twin 2.0 premiere\",\"DBR77\",\"https://dbr77.com/\",\"Simulation & Digital Twins\",\"Live webinar\",\"2026-11-19T09:00:00-05:00\",\"America/New_York\",\"2026-11-19T14:00:00.000Z\",\"2026-11-19T15:00:00.000Z\",\"https://dbr77.com/webinars/digital-twin-2-0\",\"https://dbr77.com/webinars/digital-twin-2-0\",\"DBR77 demonstrates how factory simulation reveals bottlenecks and queues, using an illustrative assembly line to compare layouts and robot options.\",\"free\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Digital Twin 2.0 premiere\",\"Digital Twin 2.0 premiere\",\"DBR77\",\"https://dbr77.com/\",\"Simulation & Digital Twins\",\"Live webinar\",\"2026-11-19T09:00:00-05:00\",\"America/New_York\",\"2026-11-19T14:00:00.000Z\",\"2026-11-19T15:00:00.000Z\",\"https://dbr77.com/webinars/digital-twin-2-0\",\"https://dbr77.com/webinars/digital-twin-2-0\",\"DBR77 demonstrates how factory simulation reveals bottlenecks and queues, using an illustrative assembly line to compare layouts and robot options.\",\"free\",null]",
+    "changes": [
+      "The assembly line is an illustrative demonstration, not a claimed customer deployment. This record is the English November 19 session; the separate Polish November 17 session is outside the submitted list."
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-11-19T14:00:00.000Z",
+      "fingerprint": "[\"Digital Twin 2.0 premiere\",\"Digital Twin 2.0 premiere\",\"DBR77\",\"https://dbr77.com/\",\"Simulation & Digital Twins\",\"Live webinar\",\"2026-11-19T09:00:00-05:00\",\"America/New_York\",\"2026-11-19T14:00:00.000Z\",\"2026-11-19T15:00:00.000Z\",\"https://dbr77.com/webinars/digital-twin-2-0\",\"https://dbr77.com/webinars/digital-twin-2-0\",\"DBR77 demonstrates how factory simulation reveals bottlenecks and queues, using an illustrative assembly line to compare layouts and robot options.\",\"free\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://dbr77.com/webinars/digital-twin-2-0/"
+      ]
+    }
+  },
+  {
+    "id": "ba4dcb4f71cad190",
+    "officialTitle": "Beyond the Hype: Physical AI, Robotics and the Future of Manufacturing",
+    "displayTitle": "Beyond the Hype: Physical AI, Robotics and the Future of Manufacturing",
+    "organizer": "Siemens",
+    "organizerWebsite": "https://www.siemens.com/",
+    "category": "Robotics & Humanoids",
+    "format": "Live online conference session",
+    "originalStart": "2026-11-24T16:30:00+01:00",
+    "sourceTimezone": "CET",
+    "startUtc": "2026-11-24T15:30:00.000Z",
+    "endUtc": "2026-11-24T15:45:00.000Z",
+    "url": "https://sps.virtualevent.siemens.com/en/",
+    "sourceUrl": "https://sps.virtualevent.siemens.com/en/",
+    "summary": "Siemens and Accenture discuss foundation models and industrial robotics, examining deployment challenges and the path toward practical manufacturing applications.",
+    "cost": "unknown",
+    "price": null,
+    "score": 91,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 25/25: official organizer programme and presenter context.",
+      "Education 15/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "siemens|beyond the hype physical ai robotics and the future of manufacturing|2026-11-24",
+    "aliases": [],
+    "evidence": {
+      "title": "Beyond the Hype: Physical AI, Robotics and the Future of Manufacturing",
+      "schedule": "24th November | 16:30 - 16:45 CET",
+      "attendance": "Join us on site or online",
+      "description": "Advances in AI and foundation models are unlocking new possibilities, but major challenges remain.",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": "Organizer requires browser rendering"
+    },
+    "approvedFingerprint": "[\"Beyond the Hype: Physical AI, Robotics and the Future of Manufacturing\",\"Beyond the Hype: Physical AI, Robotics and the Future of Manufacturing\",\"Siemens\",\"https://www.siemens.com/\",\"Robotics & Humanoids\",\"Live online conference session\",\"2026-11-24T16:30:00+01:00\",\"CET\",\"2026-11-24T15:30:00.000Z\",\"2026-11-24T15:45:00.000Z\",\"https://sps.virtualevent.siemens.com/en\",\"https://sps.virtualevent.siemens.com/en\",\"Siemens and Accenture discuss foundation models and industrial robotics, examining deployment challenges and the path toward practical manufacturing applications.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Beyond the Hype: Physical AI, Robotics and the Future of Manufacturing\",\"Beyond the Hype: Physical AI, Robotics and the Future of Manufacturing\",\"Siemens\",\"https://www.siemens.com/\",\"Robotics & Humanoids\",\"Live online conference session\",\"2026-11-24T16:30:00+01:00\",\"CET\",\"2026-11-24T15:30:00.000Z\",\"2026-11-24T15:45:00.000Z\",\"https://sps.virtualevent.siemens.com/en\",\"https://sps.virtualevent.siemens.com/en\",\"Siemens and Accenture discuss foundation models and industrial robotics, examining deployment challenges and the path toward practical manufacturing applications.\",\"unknown\",null]",
+    "changes": [
+      "Official rendered program confirms title, schedule and online attendance. Automated fetch returns an empty program shell; confirm registration and price manually before approval. Keep this session separate from the other two Siemens entries.",
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "Title or schedule changed; fresh extraction and approval required",
+      "Organizer requires browser rendering"
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-11-24T15:30:00.000Z",
+      "fingerprint": "[\"Beyond the Hype: Physical AI, Robotics and the Future of Manufacturing\",\"Beyond the Hype: Physical AI, Robotics and the Future of Manufacturing\",\"Siemens\",\"https://www.siemens.com/\",\"Robotics & Humanoids\",\"Live online conference session\",\"2026-11-24T16:30:00+01:00\",\"CET\",\"2026-11-24T15:30:00.000Z\",\"2026-11-24T15:45:00.000Z\",\"https://sps.virtualevent.siemens.com/en\",\"https://sps.virtualevent.siemens.com/en\",\"Siemens and Accenture discuss foundation models and industrial robotics, examining deployment challenges and the path toward practical manufacturing applications.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://sps.virtualevent.siemens.com/en/"
+      ]
+    }
+  },
+  {
+    "id": "ef6fc78de00356fb",
+    "officialTitle": "Agentic AI for Manufacturing: A modular platform approach with ICX based Cognitive Factory",
+    "displayTitle": "Agentic AI for Manufacturing: A modular platform approach with ICX based Cognitive Factory",
+    "organizer": "Siemens / Accenture",
+    "organizerWebsite": "https://www.siemens.com/",
+    "category": "Industrial AI",
+    "format": "Live online conference session",
+    "originalStart": "2026-11-24T13:00:00+01:00",
+    "sourceTimezone": "CET",
+    "startUtc": "2026-11-24T12:00:00.000Z",
+    "endUtc": "2026-11-24T12:15:00.000Z",
+    "url": "https://sps.virtualevent.siemens.com/en/",
+    "sourceUrl": "https://sps.virtualevent.siemens.com/en/",
+    "summary": "Accenture and Siemens present Cognitive Factory workflows using AI agents and computer vision for maintenance, quality management and operator decisions.",
+    "cost": "unknown",
+    "price": null,
+    "score": 91,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 25/25: official organizer programme and presenter context.",
+      "Education 15/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "siemens accenture|agentic ai for manufacturing a modular platform approach with icx based cognitive factory|2026-11-24",
+    "aliases": [],
+    "evidence": {
+      "title": "Agentic AI for Manufacturing: A modular platform approach with ICX based Cognitive Factory",
+      "schedule": "24th November | 13:00 - 13:15 CET",
+      "attendance": "Join us on site or online",
+      "description": "uses industrial AI, computer vision, and AI agents to improve maintenance, quality, and deviation management",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": "Organizer requires browser rendering"
+    },
+    "approvedFingerprint": "[\"Agentic AI for Manufacturing: A modular platform approach with ICX based Cognitive Factory\",\"Agentic AI for Manufacturing: A modular platform approach with ICX based Cognitive Factory\",\"Siemens / Accenture\",\"https://www.siemens.com/\",\"Industrial AI\",\"Live online conference session\",\"2026-11-24T13:00:00+01:00\",\"CET\",\"2026-11-24T12:00:00.000Z\",\"2026-11-24T12:15:00.000Z\",\"https://sps.virtualevent.siemens.com/en\",\"https://sps.virtualevent.siemens.com/en\",\"Accenture and Siemens present Cognitive Factory workflows using AI agents and computer vision for maintenance, quality management and operator decisions.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Agentic AI for Manufacturing: A modular platform approach with ICX based Cognitive Factory\",\"Agentic AI for Manufacturing: A modular platform approach with ICX based Cognitive Factory\",\"Siemens / Accenture\",\"https://www.siemens.com/\",\"Industrial AI\",\"Live online conference session\",\"2026-11-24T13:00:00+01:00\",\"CET\",\"2026-11-24T12:00:00.000Z\",\"2026-11-24T12:15:00.000Z\",\"https://sps.virtualevent.siemens.com/en\",\"https://sps.virtualevent.siemens.com/en\",\"Accenture and Siemens present Cognitive Factory workflows using AI agents and computer vision for maintenance, quality management and operator decisions.\",\"unknown\",null]",
+    "changes": [
+      "Official rendered program confirms title, schedule and online attendance. Automated fetch returns an empty program shell; confirm registration and price manually before approval. Keep this session separate from the other two Siemens entries.",
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "Title or schedule changed; fresh extraction and approval required",
+      "Organizer requires browser rendering"
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-11-24T12:00:00.000Z",
+      "fingerprint": "[\"Agentic AI for Manufacturing: A modular platform approach with ICX based Cognitive Factory\",\"Agentic AI for Manufacturing: A modular platform approach with ICX based Cognitive Factory\",\"Siemens / Accenture\",\"https://www.siemens.com/\",\"Industrial AI\",\"Live online conference session\",\"2026-11-24T13:00:00+01:00\",\"CET\",\"2026-11-24T12:00:00.000Z\",\"2026-11-24T12:15:00.000Z\",\"https://sps.virtualevent.siemens.com/en\",\"https://sps.virtualevent.siemens.com/en\",\"Accenture and Siemens present Cognitive Factory workflows using AI agents and computer vision for maintenance, quality management and operator decisions.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://sps.virtualevent.siemens.com/en/"
+      ]
+    }
+  },
+  {
+    "id": "a646e7b0fbed87a9",
+    "officialTitle": "Visión Artificial hacia 2027: Tendencias y Aplicaciones 2D+3D para Manufactura y Logística",
+    "displayTitle": "Visión Artificial hacia 2027: Tendencias y Aplicaciones 2D+3D para Manufactura y Logística",
+    "organizer": "A3 / LMI Technologies",
+    "organizerWebsite": "https://www.automate.org/",
+    "category": "Industrial AI",
+    "format": "Live webinar",
+    "originalStart": "2026-11-24T12:00:00-05:00",
+    "sourceTimezone": "America/New_York",
+    "startUtc": "2026-11-24T17:00:00.000Z",
+    "endUtc": "2026-11-24T18:00:00.000Z",
+    "url": "https://www.automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble",
+    "sourceUrl": "https://www.automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble",
+    "summary": "LMI Technologies demonstrates 2D and 3D vision for robot guidance and industrial inspection in a Spanish language webinar.",
+    "cost": "unknown",
+    "price": null,
+    "score": 94,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 23/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "a3 lmi technologies|visio n artificial hacia 2027 tendencias y aplicaciones 2d 3d para manufactura y logi stica|2026-11-24",
+    "aliases": [],
+    "evidence": {
+      "title": "Visión Artificial hacia 2027: Tendencias y Aplicaciones 2D+3D para Manufactura y Logística",
+      "schedule": "November 24, 2026 | 12-1 PM ET",
+      "attendance": "ABOUT THIS WEBINAR",
+      "description": "La sesi&oacute;n cubre cuatro aplicaciones cr&iacute;ticas",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": "HTTP 403: https://www.automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble"
+    },
+    "approvedFingerprint": "[\"Visión Artificial hacia 2027: Tendencias y Aplicaciones 2D+3D para Manufactura y Logística\",\"Visión Artificial hacia 2027: Tendencias y Aplicaciones 2D+3D para Manufactura y Logística\",\"A3 / LMI Technologies\",\"https://www.automate.org/\",\"Industrial AI\",\"Live webinar\",\"2026-11-24T12:00:00-05:00\",\"America/New_York\",\"2026-11-24T17:00:00.000Z\",\"2026-11-24T18:00:00.000Z\",\"https://automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble\",\"https://automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble\",\"LMI Technologies demonstrates 2D and 3D vision for robot guidance and industrial inspection in a Spanish language webinar.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Visión Artificial hacia 2027: Tendencias y Aplicaciones 2D+3D para Manufactura y Logística\",\"Visión Artificial hacia 2027: Tendencias y Aplicaciones 2D+3D para Manufactura y Logística\",\"A3 / LMI Technologies\",\"https://www.automate.org/\",\"Industrial AI\",\"Live webinar\",\"2026-11-24T12:00:00-05:00\",\"America/New_York\",\"2026-11-24T17:00:00.000Z\",\"2026-11-24T18:00:00.000Z\",\"https://automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble\",\"https://automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble\",\"LMI Technologies demonstrates 2D and 3D vision for robot guidance and industrial inspection in a Spanish language webinar.\",\"unknown\",null]",
+    "changes": [
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "HTTP 403: https://www.automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble"
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-11-24T17:00:00.000Z",
+      "fingerprint": "[\"Visión Artificial hacia 2027: Tendencias y Aplicaciones 2D+3D para Manufactura y Logística\",\"Visión Artificial hacia 2027: Tendencias y Aplicaciones 2D+3D para Manufactura y Logística\",\"A3 / LMI Technologies\",\"https://www.automate.org/\",\"Industrial AI\",\"Live webinar\",\"2026-11-24T12:00:00-05:00\",\"America/New_York\",\"2026-11-24T17:00:00.000Z\",\"2026-11-24T18:00:00.000Z\",\"https://automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble\",\"https://automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble\",\"LMI Technologies demonstrates 2D and 3D vision for robot guidance and industrial inspection in a Spanish language webinar.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://www.automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble"
+      ]
+    }
+  },
+  {
+    "id": "f2940c54cf6d93f1",
+    "officialTitle": "Can production see, think and act? Siemens and P&G on the path to an AI-powered, autonomous production",
+    "displayTitle": "Can production see, think and act? Siemens and P&G on the path to an AI-powered, autonomous production",
+    "organizer": "Siemens / Procter & Gamble",
+    "organizerWebsite": "https://www.siemens.com/",
+    "category": "Autonomous Systems",
+    "format": "Live online conference session",
+    "originalStart": "2026-11-25T10:00:00+01:00",
+    "sourceTimezone": "CET",
+    "startUtc": "2026-11-25T09:00:00.000Z",
+    "endUtc": "2026-11-25T09:20:00.000Z",
+    "url": "https://sps.virtualevent.siemens.com/en/",
+    "sourceUrl": "https://sps.virtualevent.siemens.com/en/",
+    "summary": "Siemens and Procter & Gamble present visual inspection use cases and discuss the progression toward more autonomous manufacturing operations.",
+    "cost": "unknown",
+    "price": null,
+    "score": 96,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 25/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "siemens procter gamble|can production see think and act siemens and p g on the path to an ai powered autonomous production|2026-11-25",
+    "aliases": [],
+    "evidence": {
+      "title": "Can production see, think and act? Siemens and P&G on the path to an AI-powered, autonomous production",
+      "schedule": "25th November | 10:00 - 10:20 CET",
+      "attendance": "Join us on site or online",
+      "description": "AI-powered visual quality inspection is creating tangible value in manufacturing today",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": "Organizer requires browser rendering"
+    },
+    "approvedFingerprint": "[\"Can production see, think and act? Siemens and P&G on the path to an AI-powered, autonomous production\",\"Can production see, think and act? Siemens and P&G on the path to an AI-powered, autonomous production\",\"Siemens / Procter & Gamble\",\"https://www.siemens.com/\",\"Autonomous Systems\",\"Live online conference session\",\"2026-11-25T10:00:00+01:00\",\"CET\",\"2026-11-25T09:00:00.000Z\",\"2026-11-25T09:20:00.000Z\",\"https://sps.virtualevent.siemens.com/en\",\"https://sps.virtualevent.siemens.com/en\",\"Siemens and Procter & Gamble present visual inspection use cases and discuss the progression toward more autonomous manufacturing operations.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Can production see, think and act? Siemens and P&G on the path to an AI-powered, autonomous production\",\"Can production see, think and act? Siemens and P&G on the path to an AI-powered, autonomous production\",\"Siemens / Procter & Gamble\",\"https://www.siemens.com/\",\"Autonomous Systems\",\"Live online conference session\",\"2026-11-25T10:00:00+01:00\",\"CET\",\"2026-11-25T09:00:00.000Z\",\"2026-11-25T09:20:00.000Z\",\"https://sps.virtualevent.siemens.com/en\",\"https://sps.virtualevent.siemens.com/en\",\"Siemens and Procter & Gamble present visual inspection use cases and discuss the progression toward more autonomous manufacturing operations.\",\"unknown\",null]",
+    "changes": [
+      "Official rendered program confirms title, schedule and online attendance. Automated fetch returns an empty program shell; confirm registration and price manually before approval. Keep this session separate from the other two Siemens entries.",
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "Title or schedule changed; fresh extraction and approval required",
+      "Organizer requires browser rendering"
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-11-25T09:00:00.000Z",
+      "fingerprint": "[\"Can production see, think and act? Siemens and P&G on the path to an AI-powered, autonomous production\",\"Can production see, think and act? Siemens and P&G on the path to an AI-powered, autonomous production\",\"Siemens / Procter & Gamble\",\"https://www.siemens.com/\",\"Autonomous Systems\",\"Live online conference session\",\"2026-11-25T10:00:00+01:00\",\"CET\",\"2026-11-25T09:00:00.000Z\",\"2026-11-25T09:20:00.000Z\",\"https://sps.virtualevent.siemens.com/en\",\"https://sps.virtualevent.siemens.com/en\",\"Siemens and Procter & Gamble present visual inspection use cases and discuss the progression toward more autonomous manufacturing operations.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://sps.virtualevent.siemens.com/en/"
+      ]
+    }
+  },
+  {
+    "id": "67ab2615cf1b28db",
+    "officialTitle": "Agentic AI with MATLAB: Connecting AI Agents to Engineering Workflows",
+    "displayTitle": "Agentic AI with MATLAB: Connecting AI Agents to Engineering Workflows",
+    "organizer": "MathWorks",
+    "organizerWebsite": "https://www.mathworks.com/",
+    "category": "Industrial AI",
+    "format": "Live webinar",
+    "originalStart": "2026-11-25T20:00:00-05:00",
+    "sourceTimezone": "EST",
+    "startUtc": "2026-11-26T01:00:00.000Z",
+    "endUtc": "2026-11-26T02:00:00.000Z",
+    "url": "https://nl.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html",
+    "sourceUrl": "https://nl.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html",
+    "summary": "MathWorks demonstrates AI agents running MATLAB code, tests and engineering analysis, with experts guiding objectives and validating technical results.",
+    "cost": "unknown",
+    "price": null,
+    "score": 79,
+    "rationale": [
+      "Relevance 20/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 23/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "mathworks|agentic ai with matlab connecting ai agents to engineering workflows|2026-11-26",
+    "aliases": [
+      "https://www.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html"
+    ],
+    "evidence": {
+      "title": "Agentic AI with MATLAB: Connecting AI Agents to Engineering Workflows",
+      "schedule": "25 Nov 2026, 8:00 PM EST",
+      "attendance": "In this webinar",
+      "description": "AI agents can use MATLAB to run code, execute tests, analyze results, and diagnose issues",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": "HTTP 403: https://nl.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html"
+    },
+    "approvedFingerprint": "[\"Agentic AI with MATLAB: Connecting AI Agents to Engineering Workflows\",\"Agentic AI with MATLAB: Connecting AI Agents to Engineering Workflows\",\"MathWorks\",\"https://www.mathworks.com/\",\"Industrial AI\",\"Live webinar\",\"2026-11-25T20:00:00-05:00\",\"EST\",\"2026-11-26T01:00:00.000Z\",\"2026-11-26T02:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html\",\"https://mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html\",\"MathWorks demonstrates AI agents running MATLAB code, tests and engineering analysis, with experts guiding objectives and validating technical results.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Agentic AI with MATLAB: Connecting AI Agents to Engineering Workflows\",\"Agentic AI with MATLAB: Connecting AI Agents to Engineering Workflows\",\"MathWorks\",\"https://www.mathworks.com/\",\"Industrial AI\",\"Live webinar\",\"2026-11-25T20:00:00-05:00\",\"EST\",\"2026-11-26T01:00:00.000Z\",\"2026-11-26T02:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html\",\"https://mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html\",\"MathWorks demonstrates AI agents running MATLAB code, tests and engineering analysis, with experts guiding objectives and validating technical results.\",\"unknown\",null]",
+    "changes": [
+      "Engineering workflow content has indirect Physical AI relevance; editorial review should assess fit. The listed start is 8 PM EST, which is November 26 at 01:00 UTC.",
+      "Official primary page found with the listed schedule via OpenAI web search. Direct organizer fetch returned HTTP 403; registration and price need a fresh manual check.",
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "HTTP 403: https://nl.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html"
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-11-26T01:00:00.000Z",
+      "fingerprint": "[\"Agentic AI with MATLAB: Connecting AI Agents to Engineering Workflows\",\"Agentic AI with MATLAB: Connecting AI Agents to Engineering Workflows\",\"MathWorks\",\"https://www.mathworks.com/\",\"Industrial AI\",\"Live webinar\",\"2026-11-25T20:00:00-05:00\",\"EST\",\"2026-11-26T01:00:00.000Z\",\"2026-11-26T02:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html\",\"https://mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html\",\"MathWorks demonstrates AI agents running MATLAB code, tests and engineering analysis, with experts guiding objectives and validating technical results.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://nl.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html",
+        "https://www.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html"
+      ]
+    }
+  },
+  {
+    "id": "2efad01279e9259d",
+    "officialTitle": "Humanoids in Manufacturing - Why Now?",
+    "displayTitle": "Humanoids in Manufacturing - Why Now?",
+    "organizer": "IDA / HIVE Robots",
+    "organizerWebsite": "https://ida.dk/",
+    "category": "Robotics & Humanoids",
+    "format": "Live webinar",
+    "originalStart": "2026-12-02T16:00:00.000Z",
+    "sourceTimezone": "UTC",
+    "startUtc": "2026-12-02T16:00:00.000Z",
+    "endUtc": "2026-12-02T18:00:00.000Z",
+    "url": "https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544",
+    "sourceUrl": "https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544",
+    "summary": "IDA and HIVE Robots discuss early humanoid manufacturing pilots, practical adoption challenges and commercial applications, with a live robot demonstration.",
+    "cost": "paid",
+    "price": "DKK 195",
+    "score": 92,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 23/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 4/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": "2026-11-17T12:51:24.765Z",
+    "publishedAt": null,
+    "duplicateKey": "ida hive robots|humanoids in manufacturing why now|2026-12-02",
+    "aliases": [],
+    "evidence": {
+      "title": "Humanoids in Manufacturing - Why Now?",
+      "schedule": "2026-12-02T16:00:00.000Z",
+      "attendance": "Online Event",
+      "description": "The evening rounds off with a live demonstration of a humanoid robot in action",
+      "cost": "Participant, not a member of IDA 195 kr."
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": true,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": null
+    },
+    "approvedFingerprint": "[\"Humanoids in Manufacturing - Why Now?\",\"Humanoids in Manufacturing - Why Now?\",\"IDA / HIVE Robots\",\"https://ida.dk/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-12-02T16:00:00.000Z\",\"UTC\",\"2026-12-02T16:00:00.000Z\",\"2026-12-02T18:00:00.000Z\",\"https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544\",\"https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544\",\"IDA and HIVE Robots discuss early humanoid manufacturing pilots, practical adoption challenges and commercial applications, with a live robot demonstration.\",\"paid\",\"DKK 195\"]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Humanoids in Manufacturing - Why Now?\",\"Humanoids in Manufacturing - Why Now?\",\"IDA / HIVE Robots\",\"https://ida.dk/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-12-02T16:00:00.000Z\",\"UTC\",\"2026-12-02T16:00:00.000Z\",\"2026-12-02T18:00:00.000Z\",\"https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544\",\"https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544\",\"IDA and HIVE Robots discuss early humanoid manufacturing pilots, practical adoption challenges and commercial applications, with a live robot demonstration.\",\"paid\",\"DKK 195\"]",
+    "changes": [
+      "General admission is DKK 195. Member categories range from DKK 0 to 75; an IDA user profile is required. Online attendance is explicit despite offline attendance metadata in the page schema. Source JSON-LD specifies UTC; the page displays 17:00–19:00 without a named zone.",
+      "The official page labels attendance Online Event / Webinar; in person access was not confirmed."
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-12-02T16:00:00.000Z",
+      "fingerprint": "[\"Humanoids in Manufacturing - Why Now?\",\"Humanoids in Manufacturing - Why Now?\",\"IDA / HIVE Robots\",\"https://ida.dk/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-12-02T16:00:00.000Z\",\"UTC\",\"2026-12-02T16:00:00.000Z\",\"2026-12-02T18:00:00.000Z\",\"https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544\",\"https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544\",\"IDA and HIVE Robots discuss early humanoid manufacturing pilots, practical adoption challenges and commercial applications, with a live robot demonstration.\",\"paid\",\"DKK 195\"]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544"
+      ]
+    }
+  },
+  {
+    "id": "3f12bcfac5f6efe2",
+    "officialTitle": "Smart Steering: Replacing Legacy Lookup Tables with Neural Networks",
+    "displayTitle": "Smart Steering: Replacing Legacy Lookup Tables with Neural Networks",
+    "organizer": "MathWorks",
+    "organizerWebsite": "https://www.mathworks.com/",
+    "category": "Autonomous Systems",
+    "format": "Live webinar",
+    "originalStart": "2026-12-02T04:30:00-05:00",
+    "sourceTimezone": "EST",
+    "startUtc": "2026-12-02T09:30:00.000Z",
+    "endUtc": "2026-12-02T10:30:00.000Z",
+    "url": "https://se.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html",
+    "sourceUrl": "https://se.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html",
+    "summary": "MathWorks presents neural networks for automotive steering, covering generated C code, TI C2000 deployment and hardware timing and memory measurements.",
+    "cost": "unknown",
+    "price": null,
+    "score": 87,
+    "rationale": [
+      "Relevance 28/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 23/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "mathworks|smart steering replacing legacy lookup tables with neural networks|2026-12-02",
+    "aliases": [
+      "https://www.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html"
+    ],
+    "evidence": {
+      "title": "Smart Steering: Replacing Legacy Lookup Tables with Neural Networks",
+      "schedule": "2 Dec 2026, 04:30 EST",
+      "attendance": "In this webinar",
+      "description": "replacing legacy, high-dimensional lookup tables in automotive steering control systems with compact, adaptive Artificial Neural Networks",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": "HTTP 403: https://se.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html"
+    },
+    "approvedFingerprint": "[\"Smart Steering: Replacing Legacy Lookup Tables with Neural Networks\",\"Smart Steering: Replacing Legacy Lookup Tables with Neural Networks\",\"MathWorks\",\"https://www.mathworks.com/\",\"Autonomous Systems\",\"Live webinar\",\"2026-12-02T04:30:00-05:00\",\"EST\",\"2026-12-02T09:30:00.000Z\",\"2026-12-02T10:30:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html\",\"https://mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html\",\"MathWorks presents neural networks for automotive steering, covering generated C code, TI C2000 deployment and hardware timing and memory measurements.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Smart Steering: Replacing Legacy Lookup Tables with Neural Networks\",\"Smart Steering: Replacing Legacy Lookup Tables with Neural Networks\",\"MathWorks\",\"https://www.mathworks.com/\",\"Autonomous Systems\",\"Live webinar\",\"2026-12-02T04:30:00-05:00\",\"EST\",\"2026-12-02T09:30:00.000Z\",\"2026-12-02T10:30:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html\",\"https://mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html\",\"MathWorks presents neural networks for automotive steering, covering generated C code, TI C2000 deployment and hardware timing and memory measurements.\",\"unknown\",null]",
+    "changes": [
+      "Official primary page found with the listed schedule via OpenAI web search. Direct organizer fetch returned HTTP 403; registration and price need a fresh manual check.",
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "HTTP 403: https://se.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html"
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-12-02T09:30:00.000Z",
+      "fingerprint": "[\"Smart Steering: Replacing Legacy Lookup Tables with Neural Networks\",\"Smart Steering: Replacing Legacy Lookup Tables with Neural Networks\",\"MathWorks\",\"https://www.mathworks.com/\",\"Autonomous Systems\",\"Live webinar\",\"2026-12-02T04:30:00-05:00\",\"EST\",\"2026-12-02T09:30:00.000Z\",\"2026-12-02T10:30:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html\",\"https://mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html\",\"MathWorks presents neural networks for automotive steering, covering generated C code, TI C2000 deployment and hardware timing and memory measurements.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://se.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html",
+        "https://www.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html"
+      ]
+    }
+  },
+  {
+    "id": "09216480457b1a8f",
+    "officialTitle": "COMSOL Day: AI for Modeling and Simulation",
+    "displayTitle": "COMSOL Day: AI for Modeling and Simulation",
+    "organizer": "COMSOL",
+    "organizerWebsite": "https://www.comsol.com/",
+    "category": "Simulation & Digital Twins",
+    "format": "Multi-session technical event",
+    "originalStart": "2026-12-03T11:00:00-05:00",
+    "sourceTimezone": "EST",
+    "startUtc": "2026-12-03T16:00:00.000Z",
+    "endUtc": null,
+    "url": "https://www.comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922",
+    "sourceUrl": "https://www.comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922",
+    "summary": "COMSOL’s technical program covers synthetic training data, surrogate models, digital twins and generative and agentic AI workflows for engineering simulation.",
+    "cost": "unknown",
+    "price": null,
+    "score": 94,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 23/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "comsol|comsol day ai for modeling and simulation|2026-12-03",
+    "aliases": [],
+    "evidence": {
+      "title": "COMSOL Day: AI for Modeling and Simulation",
+      "schedule": "December 3, 2026 | 11:00 a.m. EST (UTC-05:00)",
+      "attendance": "",
+      "description": "create surrogate models, analyze models using uncertainty quantification, and develop simulation apps and digital twins",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": false,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": "Online attendance requires manual source verification"
+    },
+    "approvedFingerprint": "[\"COMSOL Day: AI for Modeling and Simulation\",\"COMSOL Day: AI for Modeling and Simulation\",\"COMSOL\",\"https://www.comsol.com/\",\"Simulation & Digital Twins\",\"Multi-session technical event\",\"2026-12-03T11:00:00-05:00\",\"EST\",\"2026-12-03T16:00:00.000Z\",null,\"https://comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922\",\"https://comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922\",\"COMSOL’s technical program covers synthetic training data, surrogate models, digital twins and generative and agentic AI workflows for engineering simulation.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"COMSOL Day: AI for Modeling and Simulation\",\"COMSOL Day: AI for Modeling and Simulation\",\"COMSOL\",\"https://www.comsol.com/\",\"Simulation & Digital Twins\",\"Multi-session technical event\",\"2026-12-03T11:00:00-05:00\",\"EST\",\"2026-12-03T16:00:00.000Z\",null,\"https://comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922\",\"https://comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922\",\"COMSOL’s technical program covers synthetic training data, surrogate models, digital twins and generative and agentic AI workflows for engineering simulation.\",\"unknown\",null]",
+    "changes": [
+      "Start is confirmed at 11 AM EST. The last agenda item starts at 4:15 PM; it is not an authoritative event end, so endUtc is unset. Confirm online attendance and fee: the inspected page requires COMSOL Access but does not explicitly state either.",
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "Online attendance evidence no longer present",
+      "Online attendance requires manual source verification"
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-12-03T16:00:00.000Z",
+      "fingerprint": "[\"COMSOL Day: AI for Modeling and Simulation\",\"COMSOL Day: AI for Modeling and Simulation\",\"COMSOL\",\"https://www.comsol.com/\",\"Simulation & Digital Twins\",\"Multi-session technical event\",\"2026-12-03T11:00:00-05:00\",\"EST\",\"2026-12-03T16:00:00.000Z\",null,\"https://comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922\",\"https://comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922\",\"COMSOL’s technical program covers synthetic training data, surrogate models, digital twins and generative and agentic AI workflows for engineering simulation.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://www.comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922"
+      ]
+    }
+  },
+  {
+    "id": "f14a8cc43f88d84b",
+    "officialTitle": "Putting physical AI to work on your line",
+    "displayTitle": "Putting physical AI to work on your line",
+    "organizer": "Universal Robots / NVIDIA / Cambrian",
+    "organizerWebsite": "https://www.universal-robots.com/",
+    "category": "Robotics & Humanoids",
+    "format": "Live webinar",
+    "originalStart": "2026-12-08T16:00:00+01:00",
+    "sourceTimezone": "UTC+01:00",
+    "startUtc": "2026-12-08T15:00:00.000Z",
+    "endUtc": "2026-12-08T15:40:00.000Z",
+    "url": "https://video.universal-robots.com/putting-physical-ai-to-work-on-your",
+    "sourceUrl": "https://www.universal-robots.com/learn-and-connect/events/online-events/putting-physical-ai-to-work-on-your-line/",
+    "summary": "Universal Robots, NVIDIA and Cambrian examine AI powered manufacturing robotics, with production examples and practical considerations for factory integration.",
+    "cost": "unknown",
+    "price": null,
+    "score": 96,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 25/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": "2026-11-17T12:51:24.765Z",
+    "publishedAt": null,
+    "duplicateKey": "universal robots nvidia cambrian|putting physical ai to work on your line|2026-12-08",
+    "aliases": [
+      "https://video.universal-robots.com/putting-physical-ai-to-work-on-your"
+    ],
+    "evidence": {
+      "title": "Putting physical AI to work on your line",
+      "schedule": "December 8, 2026 16:00 - 16:40 UTC+01:00",
+      "attendance": "Event Information Online",
+      "description": "Join NVIDIA, Cambrian and Universal Robots on December 8 to explore how physical AI is being deployed",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": true,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": null
+    },
+    "approvedFingerprint": "[\"Putting physical AI to work on your line\",\"Putting physical AI to work on your line\",\"Universal Robots / NVIDIA / Cambrian\",\"https://www.universal-robots.com/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-12-08T16:00:00+01:00\",\"UTC+01:00\",\"2026-12-08T15:00:00.000Z\",\"2026-12-08T15:40:00.000Z\",\"https://video.universal-robots.com/putting-physical-ai-to-work-on-your\",\"https://universal-robots.com/learn-and-connect/events/online-events/putting-physical-ai-to-work-on-your-line\",\"Universal Robots, NVIDIA and Cambrian examine AI powered manufacturing robotics, with production examples and practical considerations for factory integration.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Putting physical AI to work on your line\",\"Putting physical AI to work on your line\",\"Universal Robots / NVIDIA / Cambrian\",\"https://www.universal-robots.com/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-12-08T16:00:00+01:00\",\"UTC+01:00\",\"2026-12-08T15:00:00.000Z\",\"2026-12-08T15:40:00.000Z\",\"https://video.universal-robots.com/putting-physical-ai-to-work-on-your\",\"https://universal-robots.com/learn-and-connect/events/online-events/putting-physical-ai-to-work-on-your-line\",\"Universal Robots, NVIDIA and Cambrian examine AI powered manufacturing robotics, with production examples and practical considerations for factory integration.\",\"unknown\",null]",
+    "changes": [
+      "Use the main organizer page: 16:00–16:40 UTC+01:00, or 10:00–10:40 AM EST. Its start agrees with the video page calendar link; video microdata incorrectly says 16:00Z and a 45 minute duration.",
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-12-08T15:00:00.000Z",
+      "fingerprint": "[\"Putting physical AI to work on your line\",\"Putting physical AI to work on your line\",\"Universal Robots / NVIDIA / Cambrian\",\"https://www.universal-robots.com/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-12-08T16:00:00+01:00\",\"UTC+01:00\",\"2026-12-08T15:00:00.000Z\",\"2026-12-08T15:40:00.000Z\",\"https://video.universal-robots.com/putting-physical-ai-to-work-on-your\",\"https://universal-robots.com/learn-and-connect/events/online-events/putting-physical-ai-to-work-on-your-line\",\"Universal Robots, NVIDIA and Cambrian examine AI powered manufacturing robotics, with production examples and practical considerations for factory integration.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://www.universal-robots.com/learn-and-connect/events/online-events/putting-physical-ai-to-work-on-your-line/",
+        "https://video.universal-robots.com/putting-physical-ai-to-work-on-your"
+      ]
+    }
+  },
+  {
+    "id": "be4aced967673be7",
+    "officialTitle": "2027 Industrial Automation Trends: What to Expect in the Coming Year",
+    "displayTitle": "2027 Industrial Automation Trends: What to Expect in the Coming Year",
+    "organizer": "A3 / LMI Technologies / OnLogic",
+    "organizerWebsite": "https://www.automate.org/",
+    "category": "Industrial AI",
+    "format": "Live webinar",
+    "originalStart": "2026-12-08T12:00:00-05:00",
+    "sourceTimezone": "America/New_York",
+    "startUtc": "2026-12-08T17:00:00.000Z",
+    "endUtc": "2026-12-08T18:00:00.000Z",
+    "url": "https://www.automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year",
+    "sourceUrl": "https://www.automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year",
+    "summary": "A3, LMI Technologies and OnLogic examine 2027 automation trends across robotics, machine vision, sensing and industrial AI with Jim Beretta.",
+    "cost": "unknown",
+    "price": null,
+    "score": 89,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 23/25: official organizer programme and presenter context.",
+      "Education 15/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "a3 lmi technologies onlogic|2027 industrial automation trends what to expect in the coming year|2026-12-08",
+    "aliases": [],
+    "evidence": {
+      "title": "2027 Industrial Automation Trends: What to Expect in the Coming Year",
+      "schedule": "December 08, 2026 | 12-1 PM ET",
+      "attendance": "ABOUT THIS WEBINAR",
+      "description": "a panel of industry experts takes a look at what",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": "HTTP 403: https://www.automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year"
+    },
+    "approvedFingerprint": "[\"2027 Industrial Automation Trends: What to Expect in the Coming Year\",\"2027 Industrial Automation Trends: What to Expect in the Coming Year\",\"A3 / LMI Technologies / OnLogic\",\"https://www.automate.org/\",\"Industrial AI\",\"Live webinar\",\"2026-12-08T12:00:00-05:00\",\"America/New_York\",\"2026-12-08T17:00:00.000Z\",\"2026-12-08T18:00:00.000Z\",\"https://automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year\",\"https://automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year\",\"A3, LMI Technologies and OnLogic examine 2027 automation trends across robotics, machine vision, sensing and industrial AI with Jim Beretta.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"2027 Industrial Automation Trends: What to Expect in the Coming Year\",\"2027 Industrial Automation Trends: What to Expect in the Coming Year\",\"A3 / LMI Technologies / OnLogic\",\"https://www.automate.org/\",\"Industrial AI\",\"Live webinar\",\"2026-12-08T12:00:00-05:00\",\"America/New_York\",\"2026-12-08T17:00:00.000Z\",\"2026-12-08T18:00:00.000Z\",\"https://automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year\",\"https://automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year\",\"A3, LMI Technologies and OnLogic examine 2027 automation trends across robotics, machine vision, sensing and industrial AI with Jim Beretta.\",\"unknown\",null]",
+    "changes": [
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "HTTP 403: https://www.automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year"
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-12-08T17:00:00.000Z",
+      "fingerprint": "[\"2027 Industrial Automation Trends: What to Expect in the Coming Year\",\"2027 Industrial Automation Trends: What to Expect in the Coming Year\",\"A3 / LMI Technologies / OnLogic\",\"https://www.automate.org/\",\"Industrial AI\",\"Live webinar\",\"2026-12-08T12:00:00-05:00\",\"America/New_York\",\"2026-12-08T17:00:00.000Z\",\"2026-12-08T18:00:00.000Z\",\"https://automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year\",\"https://automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year\",\"A3, LMI Technologies and OnLogic examine 2027 automation trends across robotics, machine vision, sensing and industrial AI with Jim Beretta.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://www.automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year"
+      ]
+    }
+  },
+  {
+    "id": "78a49bf48f42ccf5",
+    "officialTitle": "Modeling Soft Actuators and Devices",
+    "displayTitle": "Modeling Soft Actuators and Devices",
+    "organizer": "Robotics 247 / COMSOL",
+    "organizerWebsite": "https://www.comsol.com/",
+    "category": "Robotics & Humanoids",
+    "format": "Live webinar",
+    "originalStart": "2026-12-09T11:00:00-05:00",
+    "sourceTimezone": "EST",
+    "startUtc": "2026-12-09T16:00:00.000Z",
+    "endUtc": null,
+    "url": "https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com",
+    "sourceUrl": "https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com",
+    "summary": "COMSOL and Robotics247 explore soft actuator simulation, covering compliant materials, large deformation, contact and coupled physics before physical prototyping.",
+    "cost": "unknown",
+    "price": null,
+    "score": 94,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 23/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "robotics 247 comsol|modeling soft actuators and devices|2026-12-09",
+    "aliases": [],
+    "evidence": {
+      "title": "Modeling Soft Actuators and Devices",
+      "schedule": "December 09, 2026 TIME: 11:00 AM EST/ 8:00 AM PST",
+      "attendance": "live broadcast",
+      "description": "capturing material behavior, handling large deformations and contact, and coupling multiple physics interfaces",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": "Organizer requires browser rendering"
+    },
+    "approvedFingerprint": "[\"Modeling Soft Actuators and Devices\",\"Modeling Soft Actuators and Devices\",\"Robotics 247 / COMSOL\",\"https://www.comsol.com/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-12-09T11:00:00-05:00\",\"EST\",\"2026-12-09T16:00:00.000Z\",null,\"https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com\",\"https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com\",\"COMSOL and Robotics247 explore soft actuator simulation, covering compliant materials, large deformation, contact and coupled physics before physical prototyping.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Modeling Soft Actuators and Devices\",\"Modeling Soft Actuators and Devices\",\"Robotics 247 / COMSOL\",\"https://www.comsol.com/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-12-09T11:00:00-05:00\",\"EST\",\"2026-12-09T16:00:00.000Z\",null,\"https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com\",\"https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com\",\"COMSOL and Robotics247 explore soft actuator simulation, covering compliant materials, large deformation, contact and coupled physics before physical prototyping.\",\"unknown\",null]",
+    "changes": [
+      "ON24 renders the registration form, title, December 9 date and 11 AM EST start. Automated fetch receives only its JavaScript shell, so registration/programme evidence requires manual verification. No authoritative end time or attendance fee was found.",
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "Title or schedule changed; fresh extraction and approval required",
+      "Organizer requires browser rendering"
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-12-09T16:00:00.000Z",
+      "fingerprint": "[\"Modeling Soft Actuators and Devices\",\"Modeling Soft Actuators and Devices\",\"Robotics 247 / COMSOL\",\"https://www.comsol.com/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-12-09T11:00:00-05:00\",\"EST\",\"2026-12-09T16:00:00.000Z\",null,\"https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com\",\"https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com\",\"COMSOL and Robotics247 explore soft actuator simulation, covering compliant materials, large deformation, contact and coupled physics before physical prototyping.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com"
+      ]
+    }
+  },
+  {
+    "id": "3e9f6e3845da9b1b",
+    "officialTitle": "Reinforcement Learning from Simulation to Embedded AI Control: Bridging the Sim-to-Real Gap and Accelerating Workflows with Agentic AI",
+    "displayTitle": "Reinforcement Learning from Simulation to Embedded AI Control: Bridging the Sim-to-Real Gap and Accelerating Workflows with Agentic AI",
+    "organizer": "MathWorks",
+    "organizerWebsite": "https://www.mathworks.com/",
+    "category": "Simulation & Digital Twins",
+    "format": "Live webinar",
+    "originalStart": "2026-12-10T09:00:00-05:00",
+    "sourceTimezone": "EST",
+    "startUtc": "2026-12-10T14:00:00.000Z",
+    "endUtc": "2026-12-10T15:00:00.000Z",
+    "url": "https://la.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html",
+    "sourceUrl": "https://la.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html",
+    "summary": "MathWorks follows reinforcement learning from simulation to Quanser QUBE hardware using Raspberry Pi, including code generation and agentic AI assistance.",
+    "cost": "unknown",
+    "price": null,
+    "score": 94,
+    "rationale": [
+      "Relevance 35/35: direct technical application; engineering-only content scored lower.",
+      "Credibility 23/25: official organizer programme and presenter context.",
+      "Education 20/20: practical workflow, deployment or research content.",
+      "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
+      "Accessibility 6/10: confirmed free, paid or unconfirmed price."
+    ],
+    "status": "approved",
+    "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "mathworks|reinforcement learning from simulation to embedded ai control bridging the sim to real gap and accelerating workflows with agentic ai|2026-12-10",
+    "aliases": [
+      "https://www.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html"
+    ],
+    "evidence": {
+      "title": "Reinforcement Learning from Simulation to Embedded AI Control: Bridging the Sim-to-Real Gap and Accelerating Workflows with Agentic AI",
+      "schedule": "10 Dec 2026, 9:00 AM EST",
+      "attendance": "live broadcast",
+      "description": "Using a Quanser QUBE inverted pendulum controlled via Raspberry Pi as a practical example",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": true,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-17T12:51:24.765Z",
+      "error": "HTTP 403: https://la.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html"
+    },
+    "approvedFingerprint": "[\"Reinforcement Learning from Simulation to Embedded AI Control: Bridging the Sim-to-Real Gap and Accelerating Workflows with Agentic AI\",\"Reinforcement Learning from Simulation to Embedded AI Control: Bridging the Sim-to-Real Gap and Accelerating Workflows with Agentic AI\",\"MathWorks\",\"https://www.mathworks.com/\",\"Simulation & Digital Twins\",\"Live webinar\",\"2026-12-10T09:00:00-05:00\",\"EST\",\"2026-12-10T14:00:00.000Z\",\"2026-12-10T15:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html\",\"https://mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html\",\"MathWorks follows reinforcement learning from simulation to Quanser QUBE hardware using Raspberry Pi, including code generation and agentic AI assistance.\",\"unknown\",null]",
+    "reviewedBy": "Rodolfo Garcia Calderoni",
+    "reviewedAt": "2026-11-17T12:51:24.760Z",
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": "[\"Reinforcement Learning from Simulation to Embedded AI Control: Bridging the Sim-to-Real Gap and Accelerating Workflows with Agentic AI\",\"Reinforcement Learning from Simulation to Embedded AI Control: Bridging the Sim-to-Real Gap and Accelerating Workflows with Agentic AI\",\"MathWorks\",\"https://www.mathworks.com/\",\"Simulation & Digital Twins\",\"Live webinar\",\"2026-12-10T09:00:00-05:00\",\"EST\",\"2026-12-10T14:00:00.000Z\",\"2026-12-10T15:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html\",\"https://mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html\",\"MathWorks follows reinforcement learning from simulation to Quanser QUBE hardware using Raspberry Pi, including code generation and agentic AI assistance.\",\"unknown\",null]",
+    "changes": [
+      "Official primary page found with the listed schedule via OpenAI web search. Direct organizer fetch returned HTTP 403; registration and price need a fresh manual check.",
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "Two official time options exist. The earliest is stored in the single-start event model; the later option is retained in this intake without adding another listing.",
+      "HTTP 403: https://la.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html"
+    ],
+    "manualVerification": {
+      "reviewer": "Rodolfo Garcia Calderoni",
+      "reviewedAt": "2026-11-17T12:51:24.760Z",
+      "validUntil": "2026-12-10T14:00:00.000Z",
+      "fingerprint": "[\"Reinforcement Learning from Simulation to Embedded AI Control: Bridging the Sim-to-Real Gap and Accelerating Workflows with Agentic AI\",\"Reinforcement Learning from Simulation to Embedded AI Control: Bridging the Sim-to-Real Gap and Accelerating Workflows with Agentic AI\",\"MathWorks\",\"https://www.mathworks.com/\",\"Simulation & Digital Twins\",\"Live webinar\",\"2026-12-10T09:00:00-05:00\",\"EST\",\"2026-12-10T14:00:00.000Z\",\"2026-12-10T15:00:00.000Z\",\"https://mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html\",\"https://mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html\",\"MathWorks follows reinforcement learning from simulation to Quanser QUBE hardware using Raspberry Pi, including code generation and agentic AI assistance.\",\"unknown\",null]",
+      "note": "Rodolfo confirmed independent verification of the remaining curated events in this chat and explicitly approved publishing the complete latest 20-event list on November 17, 2026. Official browser verification and source details are recorded in the curated intake audit.",
+      "sourceUrls": [
+        "https://la.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html",
+        "https://www.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html"
+      ]
+    }
+  }
+]

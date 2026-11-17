@@ -1,0 +1,500 @@
+[
+  {
+    "number": 1,
+    "title": "Claude for Manufacturing: Put Your Plant's Know-How to Work",
+    "reportedDate": "November 17 2026",
+    "organizer": "Anthropic / Claude, with Infor",
+    "url": "https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work",
+    "priority": "Very High",
+    "focus": "Model Hardware Standard, AI interaction with factory equipment, manufacturing workflows, ERP integration, and Infor Industry AI for Claude.",
+    "format": null,
+    "note": null,
+    "language": null,
+    "eventId": "933b642ee8931e48",
+    "officialTitle": "Claude for Manufacturing: Put Your Plant’s Know-How to Work",
+    "sourceUrls": [
+      "https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Direct official public page",
+    "notes": [
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ]
+  },
+  {
+    "number": 2,
+    "title": "Live Demo: AI-Powered Visual Inspection That Gives Defects Nowhere to Hide",
+    "reportedDate": "November 17 2026",
+    "organizer": "A3 / Roboflow",
+    "url": "https://www.automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship",
+    "priority": "High",
+    "focus": "Building a functioning AI-powered PCB inspection system, detecting defects and making pass/fail decisions.",
+    "format": null,
+    "note": null,
+    "language": null,
+    "eventId": "606176be648561f1",
+    "officialTitle": "Live Demo: AI-Powered Visual Inspection That Gives Defects Nowhere to Hide",
+    "sourceUrls": [
+      "https://www.automate.org/ai/webinars/live-demo-build-an-ai-visual-inspection-that-catches-defects-before-they-ship"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Official primary page through OpenAI web search; automated HTTP 403",
+    "notes": [
+      "Official page is readable through OpenAI web search; direct verification returned HTTP 403. Confirm registration and attendance fee before approval.",
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ]
+  },
+  {
+    "number": 3,
+    "title": "Embedded AI: From Algorithm to Automotive ECUs",
+    "reportedDate": "November 17 2026",
+    "organizer": "MathWorks",
+    "url": "https://www.mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html",
+    "priority": "Medium",
+    "focus": "Deploying AI models on constrained automotive hardware with MATLAB, Simulink, and hardware support packages.",
+    "format": null,
+    "note": null,
+    "language": null,
+    "eventId": "57df9c74cb774a4d",
+    "officialTitle": "Embedded AI: From Algorithm to Automotive ECUs using Simulink and Hardware Support Packages",
+    "sourceUrls": [
+      "https://www.mathworks.com/company/events/webinars/upcoming/from-algorithm-to-automotive-ecus-using-simulink-embedded-ai-5464200.html"
+    ],
+    "alternativeSessions": [
+      {
+        "start": "2026-11-17T14:00:00-05:00",
+        "end": "2026-11-17T20:00:00Z"
+      }
+    ],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Official primary page through OpenAI web search; automated HTTP 403",
+    "notes": [
+      "Official primary page found with the listed schedule via OpenAI web search. Direct organizer fetch returned HTTP 403; registration and price need a fresh manual check.",
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "Two official time options exist. The earliest is stored in the single-start event model; the later option is retained in this intake without adding another listing."
+    ]
+  },
+  {
+    "number": 4,
+    "title": "Development and Deployment of an AI-Based Visual Inspection System to Minimize Plant Shutdowns",
+    "reportedDate": "November 18 2026",
+    "organizer": "MathWorks / Plansee",
+    "url": "https://uk.mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html",
+    "priority": "Very High",
+    "focus": "Real-world manufacturing deployment, anomaly detection, ONNX model export, and integration with Beckhoff control systems.",
+    "format": null,
+    "note": null,
+    "language": null,
+    "eventId": "be2c70adc4fb81c6",
+    "officialTitle": "Development and Deployment of an AI-based Visual Inspection System to Minimize Plant Shutdowns",
+    "sourceUrls": [
+      "https://uk.mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html",
+      "https://www.mathworks.com/company/events/webinars/upcoming/development-and-deployment-of-an-ai-based-visual-inspection-system-5467986.html"
+    ],
+    "alternativeSessions": [
+      {
+        "start": "2026-11-18T14:00:00-05:00",
+        "end": "2026-11-18T20:00:00Z"
+      }
+    ],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Official primary page through OpenAI web search; automated HTTP 403",
+    "notes": [
+      "Official primary page found with the listed schedule via OpenAI web search. Direct organizer fetch returned HTTP 403; registration and price need a fresh manual check.",
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "Two official time options exist. The earliest is stored in the single-start event model; the later option is retained in this intake without adding another listing."
+    ]
+  },
+  {
+    "number": 5,
+    "title": "Humanoid Robots: Machines as Teammates",
+    "reportedDate": "November 18 2026",
+    "organizer": "University of Alaska Anchorage / Persona AI",
+    "url": "https://www.uaa.alaska.edu/news/archive/2026/10/cbpp-announces-ai-webinar.cshtml",
+    "priority": "High",
+    "focus": "Commercialization of humanoid robots, workplace applications, human-robot collaboration, and deployment challenges.",
+    "format": "Hybrid with online Zoom attendance",
+    "note": null,
+    "language": null,
+    "eventId": "270df8996904a32c",
+    "officialTitle": "Humanoid Robots: Machines as Teammates",
+    "sourceUrls": [
+      "https://www.uaa.alaska.edu/news/archive/2026/10/cbpp-announces-ai-webinar.cshtml",
+      "https://alaska.zoom.us/webinar/register/WN_6JWr3D_9R5GtCNiI9dqF_Q"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Official rendered browser page; automated evidence incomplete",
+    "notes": [
+      "Zoom registration explicitly displays November 18 at 4:00 PM Eastern Time. The UAA article gives noon without a zone; automated verification cannot combine these two pages. End time remains unset because the registration page does not confirm it."
+    ]
+  },
+  {
+    "number": 6,
+    "title": "Getting Palletizing Right the First Time: How to Design a System That Fits",
+    "reportedDate": "November 18 2026",
+    "organizer": "Universal Robots / Vention",
+    "url": "https://video.universal-robots.com/getting-palletizing-right-the-first",
+    "priority": "High",
+    "focus": "Robotic palletizing design, real deployment experience, gripper selection, production integration, and throughput improvements.",
+    "format": null,
+    "note": null,
+    "language": null,
+    "eventId": "1e11bd40430fef00",
+    "officialTitle": "Getting Palletizing Right The First Time: How to Design a System That Fits",
+    "sourceUrls": [
+      "https://www.universal-robots.com/learn-and-connect/events/online-events/vention-webinar-november-2026-palletizing/",
+      "https://video.universal-robots.com/getting-palletizing-right-the-first"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Direct official public page",
+    "notes": [
+      "Use the main organizer page: noon to 1 PM UTC−05:00. Its start agrees with the video page calendar link; the video page microdata incorrectly says 12:00Z and a 45 minute duration.",
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ]
+  },
+  {
+    "number": 7,
+    "title": "Beyond Telemetry: Turning Industrial Equipment Data into Business Value with AI",
+    "reportedDate": "November 18 2026",
+    "organizer": "Codd AI / BluETT",
+    "url": "https://www.codd.ai/webinars/beyond-telemetry",
+    "priority": "Medium",
+    "focus": "Connected equipment telemetry, operational analytics, fleet utilization, and AI-driven industrial intelligence.",
+    "format": null,
+    "note": null,
+    "language": null,
+    "eventId": "4760938ed4728d6e",
+    "officialTitle": "Beyond Telemetry: Turning Industrial Equipment Data into Business Value with AI",
+    "sourceUrls": [
+      "https://www.codd.ai/webinars/beyond-telemetry"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Direct official public page",
+    "notes": []
+  },
+  {
+    "number": 8,
+    "title": "Digital Twin 2.0 Premiere",
+    "reportedDate": "November 19 2026",
+    "organizer": "DBR77",
+    "url": "https://dbr77.com/webinars/digital-twin-2-0/",
+    "priority": "High",
+    "focus": "Manufacturing simulation, production bottlenecks, alternative robot layouts, ERP/MES data, and AI-assisted factory modeling.",
+    "format": null,
+    "note": null,
+    "language": null,
+    "eventId": "8131e178c20d3f20",
+    "officialTitle": "Digital Twin 2.0 premiere",
+    "sourceUrls": [
+      "https://dbr77.com/webinars/digital-twin-2-0/"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Direct official public page",
+    "notes": [
+      "The assembly line is an illustrative demonstration, not a claimed customer deployment. This record is the English November 19 session; the separate Polish November 17 session is outside the submitted list."
+    ]
+  },
+  {
+    "number": 9,
+    "title": "Beyond the Hype: Physical AI, Robotics and the Future of Manufacturing",
+    "reportedDate": "November 24 2026",
+    "organizer": "Siemens",
+    "url": "https://sps.virtualevent.siemens.com/en/",
+    "priority": "Very High",
+    "focus": "Foundation models, industrial robotics, manufacturing applications, and barriers to real-world deployment.",
+    "format": "Individual online-accessible session within Siemens SPS 2026",
+    "note": null,
+    "language": null,
+    "eventId": "ba4dcb4f71cad190",
+    "officialTitle": "Beyond the Hype: Physical AI, Robotics and the Future of Manufacturing",
+    "sourceUrls": [
+      "https://sps.virtualevent.siemens.com/en/"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Official rendered browser page; automated evidence incomplete",
+    "notes": [
+      "Official rendered program confirms title, schedule and online attendance. Automated fetch returns an empty program shell; confirm registration and price manually before approval. Keep this session separate from the other two Siemens entries.",
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ]
+  },
+  {
+    "number": 10,
+    "title": "Agentic AI for Manufacturing: A Modular Platform Approach with ICX-Based Cognitive Factory",
+    "reportedDate": "November 24 2026",
+    "organizer": "Siemens / Accenture",
+    "url": "https://sps.virtualevent.siemens.com/en/",
+    "priority": "High",
+    "focus": "AI agents, cognitive factories, manufacturing platforms, and industrial intelligence.",
+    "format": "Siemens SPS 2026 digital program session",
+    "note": null,
+    "language": null,
+    "eventId": "ef6fc78de00356fb",
+    "officialTitle": "Agentic AI for Manufacturing: A modular platform approach with ICX based Cognitive Factory",
+    "sourceUrls": [
+      "https://sps.virtualevent.siemens.com/en/"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Official rendered browser page; automated evidence incomplete",
+    "notes": [
+      "Official rendered program confirms title, schedule and online attendance. Automated fetch returns an empty program shell; confirm registration and price manually before approval. Keep this session separate from the other two Siemens entries.",
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ]
+  },
+  {
+    "number": 11,
+    "title": "Visión Artificial hacia 2027: Tendencias y Aplicaciones 2D+3D para Manufactura y Logística",
+    "reportedDate": "November 24 2026",
+    "organizer": "A3 / LMI Technologies",
+    "url": "https://www.automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble",
+    "priority": "High",
+    "focus": "2D/3D industrial vision, robot guidance, automated inspection, and manufacturing applications.",
+    "format": null,
+    "note": null,
+    "language": "Spanish",
+    "eventId": "a646e7b0fbed87a9",
+    "officialTitle": "Visión Artificial hacia 2027: Tendencias y Aplicaciones 2D+3D para Manufactura y Logística",
+    "sourceUrls": [
+      "https://www.automate.org/vision/webinars/vision-artificial-en-la-industria-automotriz-del-componente-al-ensamble"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Direct official public page",
+    "notes": [
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ]
+  },
+  {
+    "number": 12,
+    "title": "Siemens and Procter & Gamble Move Towards an AI-Powered, Autonomous Production",
+    "reportedDate": "November 25 2026",
+    "organizer": "Siemens / Procter & Gamble",
+    "url": "https://sps.virtualevent.siemens.com/en/",
+    "priority": "Very High",
+    "focus": "Industrial AI, autonomous production, and manufacturing applications from a major consumer-goods manufacturer.",
+    "format": "Siemens SPS 2026 digital program session",
+    "note": null,
+    "language": null,
+    "eventId": "f2940c54cf6d93f1",
+    "officialTitle": "Can production see, think and act? Siemens and P&G on the path to an AI-powered, autonomous production",
+    "sourceUrls": [
+      "https://sps.virtualevent.siemens.com/en/"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Official rendered browser page; automated evidence incomplete",
+    "notes": [
+      "Official rendered program confirms title, schedule and online attendance. Automated fetch returns an empty program shell; confirm registration and price manually before approval. Keep this session separate from the other two Siemens entries.",
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ]
+  },
+  {
+    "number": 13,
+    "title": "Agentic AI with MATLAB: Connecting AI Agents to Engineering Workflows",
+    "reportedDate": "November 25 2026",
+    "organizer": "MathWorks",
+    "url": "https://nl.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html",
+    "priority": "High",
+    "focus": "AI agents running MATLAB code, executing tests, diagnosing problems, and automating engineering workflows.",
+    "format": null,
+    "note": null,
+    "language": null,
+    "eventId": "67ab2615cf1b28db",
+    "officialTitle": "Agentic AI with MATLAB: Connecting AI Agents to Engineering Workflows",
+    "sourceUrls": [
+      "https://nl.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html",
+      "https://www.mathworks.com/company/events/webinars/upcoming/agentic-ai-with-matlab-connecting-ai-agents-to-engineering-workflows-5575300.html"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Official primary page through OpenAI web search; automated HTTP 403",
+    "notes": [
+      "Engineering workflow content has indirect Physical AI relevance; editorial review should assess fit. The listed start is 8 PM EST, which is November 26 at 01:00 UTC.",
+      "Official primary page found with the listed schedule via OpenAI web search. Direct organizer fetch returned HTTP 403; registration and price need a fresh manual check.",
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ]
+  },
+  {
+    "number": 14,
+    "title": "Humanoids in Manufacturing: Why Now?",
+    "reportedDate": "December 2 2026",
+    "organizer": "IDA / HIVE Robots",
+    "url": "https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544",
+    "priority": "Very High",
+    "focus": "Early humanoid manufacturing deployments, commercial applications, industry challenges, and a live humanoid demonstration.",
+    "format": "Hybrid with online participation",
+    "note": "Paid for some attendees, including DKK 195 for nonmembers.",
+    "language": null,
+    "eventId": "2efad01279e9259d",
+    "officialTitle": "Humanoids in Manufacturing - Why Now?",
+    "sourceUrls": [
+      "https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Direct official public page",
+    "notes": [
+      "General admission is DKK 195. Member categories range from DKK 0 to 75; an IDA user profile is required. Online attendance is explicit despite offline attendance metadata in the page schema. Source JSON-LD specifies UTC; the page displays 17:00–19:00 without a named zone.",
+      "The official page labels attendance Online Event / Webinar; in person access was not confirmed, so the imported format is Live webinar."
+    ]
+  },
+  {
+    "number": 15,
+    "title": "Smart Steering: Replacing Legacy Lookup Tables with Neural Networks",
+    "reportedDate": "December 2 2026",
+    "organizer": "MathWorks",
+    "url": "https://se.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html",
+    "priority": "Medium",
+    "focus": "Deploying neural networks into automotive steering control systems, real-time hardware constraints, and embedded implementation.",
+    "format": null,
+    "note": null,
+    "language": null,
+    "eventId": "3f12bcfac5f6efe2",
+    "officialTitle": "Smart Steering: Replacing Legacy Lookup Tables with Neural Networks",
+    "sourceUrls": [
+      "https://se.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html",
+      "https://www.mathworks.com/company/events/webinars/upcoming/smart-steering-replacing-legacy-lookup-tables-with-neural-networks-5562250.html"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Official primary page through OpenAI web search; automated HTTP 403",
+    "notes": [
+      "Official primary page found with the listed schedule via OpenAI web search. Direct organizer fetch returned HTTP 403; registration and price need a fresh manual check.",
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ]
+  },
+  {
+    "number": 16,
+    "title": "COMSOL Day: AI for Modeling and Simulation",
+    "reportedDate": "December 3 2026",
+    "organizer": "COMSOL",
+    "url": "https://www.comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922",
+    "priority": "High",
+    "focus": "Synthetic training data, physics-based AI, surrogate models, digital twins, generative AI, and autonomous engineering workflows.",
+    "format": "Multi-session online technical event",
+    "note": null,
+    "language": null,
+    "eventId": "09216480457b1a8f",
+    "officialTitle": "COMSOL Day: AI for Modeling and Simulation",
+    "sourceUrls": [
+      "https://www.comsol.com/events/comsol-days/comsol-day-ai-for-modeling-and-simulation-139922"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Direct official public page",
+    "notes": [
+      "Start is confirmed at 11 AM EST. The last agenda item starts at 4:15 PM; it is not an authoritative event end, so endUtc is unset. Confirm online attendance and fee: the inspected page requires COMSOL Access but does not explicitly state either.",
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ]
+  },
+  {
+    "number": 17,
+    "title": "Putting Physical AI to Work on Your Line",
+    "reportedDate": "December 8 2026",
+    "organizer": "Universal Robots / NVIDIA / Cambrian",
+    "url": "https://video.universal-robots.com/putting-physical-ai-to-work-on-your",
+    "priority": "Very High",
+    "focus": "Real-world Physical AI applications, AI-powered robotics, industrial vision, deployment considerations, and manufacturing use cases.",
+    "format": null,
+    "note": null,
+    "language": null,
+    "eventId": "f14a8cc43f88d84b",
+    "officialTitle": "Putting physical AI to work on your line",
+    "sourceUrls": [
+      "https://www.universal-robots.com/learn-and-connect/events/online-events/putting-physical-ai-to-work-on-your-line/",
+      "https://video.universal-robots.com/putting-physical-ai-to-work-on-your"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Direct official public page",
+    "notes": [
+      "Use the main organizer page: 16:00–16:40 UTC+01:00, or 10:00–10:40 AM EST. Its start agrees with the video page calendar link; video microdata incorrectly says 16:00Z and a 45 minute duration.",
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ]
+  },
+  {
+    "number": 18,
+    "title": "2027 Industrial Automation Trends: What to Expect in the Coming Year",
+    "reportedDate": "December 8 2026",
+    "organizer": "A3 / LMI Technologies / OnLogic",
+    "url": "https://www.automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year",
+    "priority": "High",
+    "focus": "Trends across robotics, machine vision, industrial AI, sensing, and manufacturing automation.",
+    "format": null,
+    "note": null,
+    "language": null,
+    "eventId": "be4aced967673be7",
+    "officialTitle": "2027 Industrial Automation Trends: What to Expect in the Coming Year",
+    "sourceUrls": [
+      "https://www.automate.org/robotics/webinars/2027-industrial-automation-trends-what-to-expect-in-the-coming-year"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Direct official public page",
+    "notes": [
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ]
+  },
+  {
+    "number": 19,
+    "title": "Modeling and Simulation of Soft Actuators for Robotics",
+    "reportedDate": "December 9 2026",
+    "organizer": "Robotics 247 / COMSOL",
+    "url": "https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com",
+    "priority": "High",
+    "focus": "Modeling soft robotic actuators and physical actuation systems.",
+    "format": null,
+    "note": "The registration platform may use the shorter title \"Modeling Soft Actuators and Devices.\"",
+    "language": null,
+    "eventId": "78a49bf48f42ccf5",
+    "officialTitle": "Modeling Soft Actuators and Devices",
+    "sourceUrls": [
+      "https://event.on24.com/wcc/r/5541068/EE69EBA40A5183EB64CA7CACCBB83662?partnerref=com"
+    ],
+    "alternativeSessions": [],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Official rendered browser page; automated evidence incomplete",
+    "notes": [
+      "ON24 renders the registration form, title, December 9 date and 11 AM EST start. Automated fetch receives only its JavaScript shell, so registration/programme evidence requires manual verification. No authoritative end time or attendance fee was found.",
+      "Attendance fee was not explicitly confirmed; stored as unknown."
+    ]
+  },
+  {
+    "number": 20,
+    "title": "Reinforcement Learning from Simulation to Embedded AI Control: Bridging the Sim-to-Real Gap and Accelerating Workflows with Agentic AI",
+    "reportedDate": "December 10 2026",
+    "organizer": "MathWorks",
+    "url": "https://la.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html",
+    "priority": "Very High",
+    "focus": "Sim-to-real reinforcement learning, training control policies in simulation, deploying them to embedded hardware, and agentic AI-assisted development.",
+    "format": null,
+    "note": null,
+    "language": null,
+    "eventId": "3e9f6e3845da9b1b",
+    "officialTitle": "Reinforcement Learning from Simulation to Embedded AI Control: Bridging the Sim-to-Real Gap and Accelerating Workflows with Agentic AI",
+    "sourceUrls": [
+      "https://la.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html",
+      "https://www.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html"
+    ],
+    "alternativeSessions": [
+      {
+        "start": "2026-12-10T14:00:00-05:00",
+        "end": "2026-12-10T20:00:00Z"
+      }
+    ],
+    "checkedAt": "2026-11-17T01:14:40.607Z",
+    "verificationMethod": "Official primary page through OpenAI web search; automated HTTP 403",
+    "notes": [
+      "Official primary page found with the listed schedule via OpenAI web search. Direct organizer fetch returned HTTP 403; registration and price need a fresh manual check.",
+      "Attendance fee was not explicitly confirmed; stored as unknown.",
+      "Two official time options exist. The earliest is stored in the single-start event model; the later option is retained in this intake without adding another listing."
+    ]
+  }
+]

@@ -17,7 +17,7 @@ export const sections = [
   {
     id: 'events', label: 'Events', href: '/events',
     title: 'Physical AI Events',
-    description: 'Conferences shaping robotics, autonomy, and embodied intelligence.',
+    description: 'Conferences, webinars and workshops shaping Physical AI.',
   },
   {
     id: 'career-paths', label: 'Career Paths', href: '/career-paths',
