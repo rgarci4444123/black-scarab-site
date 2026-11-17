@@ -1,6 +1,6 @@
 # Curated virtual events import
 
-Checked 2026-11-17T01:20:42.623Z.
+Checked 2026-11-17T01:21:56.389Z.
 
 Only the latest submitted 20-event list was imported. No event has been approved or published.
 
@@ -283,7 +283,7 @@ Eastern: Dec 2, 11:00 AM EST to Dec 2, 1:00 PM EST. UTC: 2026-12-02T16:00:00.000
 
 Status: Passed automated checks; awaiting editorial approval. Fee: paid (DKK 195; nonmember rate).
 
-IDA and HIVE Robots examine early humanoid applications in manufacturing and the practical lessons from commercial pilots. The hybrid event includes examples of adoption challenges and a live robot demonstration, with online participation available.
+IDA and HIVE Robots examine early humanoid applications in manufacturing and the practical lessons from commercial pilots. The webinar includes examples of adoption challenges and a live robot demonstration, with online participation available.
 
 Official source: https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544
 
@@ -292,6 +292,7 @@ Event details / registration: https://ida.dk/en/arrangementer-og-kurser/arrangem
 Evidence method: Direct official public page.
 
 - General admission is DKK 195. Member categories range from DKK 0 to 75; an IDA user profile is required. Online attendance is explicit despite offline attendance metadata in the page schema. Source JSON-LD specifies UTC; the page displays 17:00–19:00 without a named zone.
+- The official page labels attendance Online Event / Webinar; in person access was not confirmed, so the imported format is Live webinar.
 
 ### 15. Smart Steering: Replacing Legacy Lookup Tables with Neural Networks
 

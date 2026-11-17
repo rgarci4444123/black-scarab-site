@@ -272,7 +272,7 @@ ID: `2efad01279e9259d` · Score: 92/100 · IDA / HIVE Robots
 
 2026-12-02T16:00:00.000Z · Source zone: UTC · paid: DKK 195
 
-IDA and HIVE Robots examine early humanoid applications in manufacturing and the practical lessons from commercial pilots. The hybrid event includes examples of adoption challenges and a live robot demonstration, with online participation available.
+IDA and HIVE Robots examine early humanoid applications in manufacturing and the practical lessons from commercial pilots. The webinar includes examples of adoption challenges and a live robot demonstration, with online participation available.
 
 Official source: https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544
 

@@ -1114,14 +1114,14 @@
     "organizer": "IDA / HIVE Robots",
     "organizerWebsite": "https://ida.dk/",
     "category": "Robotics & Humanoids",
-    "format": "Hybrid webinar",
+    "format": "Live webinar",
     "originalStart": "2026-12-02T16:00:00.000Z",
     "sourceTimezone": "UTC",
     "startUtc": "2026-12-02T16:00:00.000Z",
     "endUtc": "2026-12-02T18:00:00.000Z",
     "url": "https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544",
     "sourceUrl": "https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544",
-    "summary": "IDA and HIVE Robots examine early humanoid applications in manufacturing and the practical lessons from commercial pilots. The hybrid event includes examples of adoption challenges and a live robot demonstration, with online participation available.",
+    "summary": "IDA and HIVE Robots examine early humanoid applications in manufacturing and the practical lessons from commercial pilots. The webinar includes examples of adoption challenges and a live robot demonstration, with online participation available.",
     "cost": "paid",
     "price": "DKK 195",
     "score": 92,
@@ -1158,9 +1158,10 @@
     "reviewedBy": null,
     "reviewedAt": null,
     "overrideReason": null,
-    "reviewNotifiedFingerprint": "[\"Humanoids in Manufacturing - Why Now?\",\"Humanoids in Manufacturing - Why Now?\",\"IDA / HIVE Robots\",\"https://ida.dk/\",\"Robotics & Humanoids\",\"Hybrid webinar\",\"2026-12-02T16:00:00.000Z\",\"UTC\",\"2026-12-02T16:00:00.000Z\",\"2026-12-02T18:00:00.000Z\",\"https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544\",\"https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544\",\"IDA and HIVE Robots examine early humanoid applications in manufacturing and the practical lessons from commercial pilots. The hybrid event includes examples of adoption challenges and a live robot demonstration, with online participation available.\",\"paid\",\"DKK 195\"]",
+    "reviewNotifiedFingerprint": "[\"Humanoids in Manufacturing - Why Now?\",\"Humanoids in Manufacturing - Why Now?\",\"IDA / HIVE Robots\",\"https://ida.dk/\",\"Robotics & Humanoids\",\"Live webinar\",\"2026-12-02T16:00:00.000Z\",\"UTC\",\"2026-12-02T16:00:00.000Z\",\"2026-12-02T18:00:00.000Z\",\"https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544\",\"https://ida.dk/en/arrangementer-og-kurser/arrangementer/humanoids-in-manufacturing-why-now-368544\",\"IDA and HIVE Robots examine early humanoid applications in manufacturing and the practical lessons from commercial pilots. The webinar includes examples of adoption challenges and a live robot demonstration, with online participation available.\",\"paid\",\"DKK 195\"]",
     "changes": [
-      "General admission is DKK 195. Member categories range from DKK 0 to 75; an IDA user profile is required. Online attendance is explicit despite offline attendance metadata in the page schema. Source JSON-LD specifies UTC; the page displays 17:00–19:00 without a named zone."
+      "General admission is DKK 195. Member categories range from DKK 0 to 75; an IDA user profile is required. Online attendance is explicit despite offline attendance metadata in the page schema. Source JSON-LD specifies UTC; the page displays 17:00–19:00 without a named zone.",
+      "The official page labels attendance Online Event / Webinar; in person access was not confirmed."
     ]
   },
   {

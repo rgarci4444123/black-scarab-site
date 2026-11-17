@@ -341,7 +341,8 @@
     "checkedAt": "2026-11-17T01:14:40.607Z",
     "verificationMethod": "Direct official public page",
     "notes": [
-      "General admission is DKK 195. Member categories range from DKK 0 to 75; an IDA user profile is required. Online attendance is explicit despite offline attendance metadata in the page schema. Source JSON-LD specifies UTC; the page displays 17:00–19:00 without a named zone."
+      "General admission is DKK 195. Member categories range from DKK 0 to 75; an IDA user profile is required. Online attendance is explicit despite offline attendance metadata in the page schema. Source JSON-LD specifies UTC; the page displays 17:00–19:00 without a named zone.",
+      "The official page labels attendance Online Event / Webinar; in person access was not confirmed, so the imported format is Live webinar."
     ]
   },
   {
