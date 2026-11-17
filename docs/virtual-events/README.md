@@ -72,6 +72,10 @@ No database, CMS, separate cron service or new analytics dependency is required.
 
 ## Validation and known limits
 
+The November 16 curated intake adds only the latest 20 submitted events as candidates. Six passed the import's automated checks; 14 need further verification because of restricted retrieval, JavaScript-only programmes, combined-page schedule evidence or unconfirmed online attendance. No candidate is approved or published. See [the intake audit](curated-import-2026-11-16.md) for Eastern/UTC schedules, prices, alternate MathWorks sessions and registration issues, and [the editorial batch](review-batch.md) for the existing review workflow. Verification is refreshed at approval and runtime, so these counts are a dated snapshot.
+
+The suite now contains 34 event tests, including regional URL aliases, separate Siemens sessions, source schedule formats, date-only schema, member pricing and curated reimport/expiration behavior.
+
 The final live source scan made 152 checks across the 40-organizer registry: 139 successful fetches and 13 failed checks. Successful retrieval is not event verification. Several conferences in an IEEE calendar lacked explicit online-attendance evidence or a verified session start time and were rejected. Midnight-only calendar metadata requires an explicit source time quote. Their records are retained as rejection history. No event has been approved or published by this implementation.
 
 The 29-test suite covers verified review intake, approval gates, alternate URLs, multiple events in one calendar, rescheduling, cancellation, expiration, inaccessible sources, broken registration, on-demand recordings, the 30/60-day windows, daylight-saving boundaries, empty states, paid-event disclosure, explicit overrides, private-network exclusions, missing providers, repeated scans, review deduplication and overlapping operations.

@@ -52,6 +52,63 @@ test('two events on one calendar page remain separate', async () => {
   const next = structuredClone(first); next.officialTitle = 'Another workshop'; next.displayTitle = next.officialTitle; next.id = 'another'; next.url = 'https://example.org/events/another'; next.duplicateKey = core.duplicateKey(next.organizer,next.officialTitle,next.startUtc);
   core.reconcile(records,next); assert.equal(records.length,2);
 });
+test('regional MathWorks URLs deduplicate while distinct Siemens sessions sharing a program URL survive reimport', async () => {
+  assert.equal(core.canonicalUrl('https://uk.mathworks.com/company/events/test?utm_source=mail'), core.canonicalUrl('https://www.mathworks.com/company/events/test'));
+  const records=[];
+  for (const [i,title] of ['Physical AI session','Agentic factory session','Autonomous production session'].entries()) {
+    const e=await candidate(); e.id=`siemens-${i}`; e.organizer='Siemens'; e.officialTitle=title; e.displayTitle=title;
+    e.sourceUrl=e.url='https://sps.virtualevent.siemens.com/en/'; e.duplicateKey=core.duplicateKey(e.organizer,title,e.startUtc);
+    core.reconcile(records,e); core.reconcile(records,structuredClone(e));
+  }
+  assert.equal(records.length,3);
+  assert.equal(new Set(records.map(e=>e.id)).size,3);
+});
+test('official shared meridiem, abbreviated month and explicit offset schedules parse without assuming a zone', () => {
+  for (const [quote,utc] of [
+    ['November 24, 2026 | 12-1 PM ET','2026-11-24T17:00:00.000Z'],
+    ['Nov 17, 2026 — 8:00 – 9:00 AM PT','2026-11-17T16:00:00.000Z'],
+    ['December 3, 2026 | 11:00 a.m. EST (UTC-05:00)','2026-12-03T16:00:00.000Z'],
+    ['December 8, 2026 16:00 - 16:40 UTC+01:00','2026-12-08T15:00:00.000Z'],
+    ['November 18, 2026 12:00 - 13:00 UTC-05:00','2026-11-18T17:00:00.000Z'],
+  ]) assert.equal(new Date(parseSchedule(quote).startDate).toISOString(),utc);
+  assert.equal(parseSchedule('November 18, 2026 12:00 - 13:00'),null);
+  assert.equal(parseSchedule('February 30, 2026 12:00 UTC-05:00'),null);
+});
+test('date-only schema uses an explicit source time and still detects date changes', async () => {
+  const e=await candidate();
+  e.evidence.schedule='November 24, 2026 10 AM EST';
+  const p=pageFor({...detail,startDate:'2026-11-24'}); p.text+=` ${e.evidence.schedule}`;
+  await verifyCandidate(e,async()=>p,now); assert.equal(core.verified(e,now),true);
+  const changed=pageFor({...detail,startDate:'2026-11-25'}); changed.text+=` ${e.evidence.schedule}`;
+  await verifyCandidate(e,async()=>changed,now); assert.match(e.verification.error,/changed the event date/);
+});
+test('aggregate member pricing uses disclosed general admission and catches fee changes', async () => {
+  const e=await candidate(); e.cost='paid'; e.price='DKK 195';
+  const priced={...detail,isAccessibleForFree:undefined,offers:{'@type':'AggregateOffer',priceCurrency:'DKK',offers:[{price:'0.00',priceCurrency:'DKK'},{price:'195.00',priceCurrency:'DKK'}]}};
+  await verifyCandidate(e,async()=>pageFor(priced),now); assert.equal(core.verified(e,now),true);
+  const free=structuredClone(e); free.cost='free'; free.price=null;
+  await verifyCandidate(free,async()=>pageFor(priced),now); assert.match(free.verification.error,/member pricing/);
+  priced.offers.offers[1].price='225.00'; await verifyCandidate(e,async()=>pageFor(priced),now);
+  assert.match(e.verification.error,/changed event pricing/);
+});
+test('the curated intake preserves 20 identities and reimport keeps approval and expiration gates', async () => {
+  const { readFile }=await import('node:fs/promises');
+  const intake=JSON.parse(await readFile(new URL('../data/virtual-events/intakes/2026-11-16-curated.json',import.meta.url),'utf8'));
+  const records=JSON.parse(await readFile(new URL('../data/virtual-events/events.json',import.meta.url),'utf8'));
+  assert.deepEqual(intake.map(e=>e.number),Array.from({length:20},(_,i)=>i+1));
+  const ids=new Set(intake.map(e=>e.eventId)); assert.equal(ids.size,20);
+  const candidates=structuredClone(records.filter(e=>ids.has(e.id))).map(e=>({...e,status:'candidate',approvedFingerprint:null})); assert.equal(candidates.length,20);
+  assert.deepEqual(core.upcomingVirtualEvents(candidates,now),[]);
+  for(const e of candidates) {
+    const words=e.summary.split(/\s+/).length; assert.ok(words>=25 && words<=45);
+    assert.equal(e.status,'candidate'); assert.equal(e.approvedFingerprint,null);
+    assert.equal(Date.parse(e.originalStart),Date.parse(e.startUtc));
+  }
+  const again=structuredClone(records); candidates.forEach(e=>core.reconcile(again,structuredClone(e)));
+  assert.equal(again.length,records.length);
+  core.expireEvents(again,new Date('2026-12-11T12:00:00Z'));
+  assert.equal(again.filter(e=>ids.has(e.id) && e.status==='expired').length,20);
+});
 test('a rescheduled event keeps its identity and loses approval', async () => {
   const first = await approved(); const records = [first]; const updated = structuredClone(first);
   updated.startUtc = '2026-11-25T15:00:00.000Z'; updated.originalStart = '2026-11-25T10:00:00-05:00'; updated.endUtc = '2026-11-25T16:00:00.000Z';

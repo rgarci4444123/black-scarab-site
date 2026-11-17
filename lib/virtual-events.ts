@@ -44,6 +44,7 @@ export function canonicalUrl(raw: string): string {
   }
   url.searchParams.sort();
   url.hostname = url.hostname.replace(/^www\./, "");
+  if (/^(?:uk|nl|se|la|de|es|fr|it|ch|au|in|jp|kr|ca)\.mathworks\.com$/.test(url.hostname)) url.hostname = "mathworks.com";
   url.pathname = url.pathname.replace(/\/$/, "") || "/";
   return url.toString();
 }

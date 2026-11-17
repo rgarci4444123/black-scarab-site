@@ -32,13 +32,26 @@ export async function verifyCandidate(event, getPage = fetchPage, now = new Date
     if (target && /EventCancelled/.test(target.eventStatus ?? '')) {
       event.status = 'canceled'; throw new Error('Organizer canceled this event');
     }
-    const parsedStart = target?.startDate || parseSchedule(event.evidence.schedule)?.startDate;
+    const explicitStart = target?.startDate && /(?:Z|[+-]\d{2}:\d{2})$/.test(target.startDate) ? target.startDate : null;
+    const parsedStart = explicitStart || parseSchedule(event.evidence.schedule)?.startDate;
+    if (target?.startDate && /^\d{4}-\d{2}-\d{2}$/.test(target.startDate)
+      && !event.originalStart.startsWith(target.startDate)) throw new Error('Organizer changed the event date');
     if (!parsedStart || Date.parse(parsedStart) !== Date.parse(event.startUtc)) throw new Error('Organizer changed the start time or source time is unverified');
     if (target && (target.offers || target.isAccessibleForFree !== undefined || event.cost !== 'unknown')) {
-      const offer = [].concat(target.offers ?? [])[0];
+      let offer = [].concat(target.offers ?? [])[0];
+      // Recheck the editor's disclosed rate without treating member-only access as universally free.
+      if (offer?.['@type'] === 'AggregateOffer') {
+        const currency = offer.priceCurrency;
+        const offers = [].concat(offer.offers ?? []).map(o => ({ ...o, priceCurrency: o.priceCurrency ?? currency }));
+        if (event.cost === 'free' && offers.some(o => Number(o.price) > 0)) throw new Error('Organizer member pricing requires a disclosed attendance fee');
+        offer = offers.find(o => event.cost === 'paid'
+          ? `${o.priceCurrency ?? ''} ${Number(o.price)}`.trim() === event.price
+          : event.cost === 'free' && Number(o.price) === 0);
+        if (!offer) throw new Error('Organizer changed event pricing or pricing requires manual verification');
+      }
       const free = target.isAccessibleForFree === true || (offer?.price !== undefined && Number(offer.price) === 0);
       const cost = free ? 'free' : offer?.price !== undefined ? 'paid' : 'unknown';
-      const price = cost === 'paid' ? `${offer.priceCurrency ?? ''} ${offer.price}`.trim() : null;
+      const price = cost === 'paid' ? `${offer.priceCurrency ?? ''} ${Number(offer.price)}`.trim() : null;
       if (cost !== event.cost || price !== event.price) throw new Error('Organizer changed event pricing');
     }
     if (target?.endDate && Date.parse(target.endDate) !== Date.parse(event.endUtc)) throw new Error('Organizer changed the end time');
