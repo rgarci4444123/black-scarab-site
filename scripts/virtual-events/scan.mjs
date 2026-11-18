@@ -23,6 +23,12 @@ export async function scan({ mode = 'daily', sourceId, getPage = fetchPage, env 
   try {
     const sources = await readJson(`${dataDirectory}/sources.json`);
     const records = await readJson(`${dataDirectory}/events.json`);
+    // Discovery can encounter the same session again. Keep approved identities
+    // unchanged; new sessions on a shared programme page can still enter review.
+    const approved = records.filter(e => ['approved', 'published'].includes(e.status));
+    const approvedKeys = new Set(approved.map(e => e.duplicateKey));
+    const approvedUrls = new Set(approved.flatMap(e => [e.sourceUrl, e.url, ...e.aliases]
+      .map(url => `${e.officialTitle}|${core.canonicalUrl(url)}`)));
     const organizerLeads = await readJson(`${dataDirectory}/organizer-leads.json`);
     const report = { startedAt: now.toISOString(), mode, sourceChecks: [], eventChecks: [], search: { status: 'not-requested', queries: 0 }, extraction: env.OPENAI_API_KEY && env.VIRTUAL_EVENTS_OPENAI_MODEL ? 'configured' : 'not-configured', errors: [] };
     let modelCalls = 0;
@@ -49,7 +55,7 @@ export async function scan({ mode = 'daily', sourceId, getPage = fetchPage, env 
     async function scanSource(source) {
       const roots = source.sources.length ? source.sources : [source.website];
       const queue = [...new Set([...roots, ...[...extraPages].filter(([,id]) => id === source.id).map(([url]) => url),
-        ...records.filter(e => e.organizer === source.name && !['rejected','expired','canceled'].includes(e.status)).map(e => e.sourceUrl)])];
+        ...records.filter(e => e.organizer === source.name && e.status === 'candidate').map(e => e.sourceUrl)])];
       const visited = new Set();
       // Bounded depth and count keep the daily scan predictable. Registry URLs are checked first.
       for (let index = 0; index < queue.length && index < 12; index++) {
@@ -77,6 +83,8 @@ export async function scan({ mode = 'daily', sourceId, getPage = fetchPage, env 
           for (const detail of details) {
             const event = toCandidate(detail, source, page, now);
             if (!event) continue;
+            if (approvedKeys.has(event.duplicateKey) || [event.sourceUrl, event.url, ...event.aliases]
+              .some(url => approvedUrls.has(`${event.officialTitle}|${core.canonicalUrl(url)}`))) continue;
             const previous = records.find(e => e.duplicateKey === event.duplicateKey || e.sourceUrl === event.sourceUrl || e.aliases.includes(event.sourceUrl));
             // Preserve human editorial fields when organizer facts have not changed.
             if (previous && previous.officialTitle === event.officialTitle && previous.startUtc === event.startUtc
@@ -97,7 +105,7 @@ export async function scan({ mode = 'daily', sourceId, getPage = fetchPage, env 
     for (let i = 0; i < selectedSources.length; i += 4) {
       await Promise.all(selectedSources.slice(i, i + 4).map(scanSource));
     }
-    for (const event of records.filter(e => (!sourceId || sources.find(s => s.id === sourceId)?.name === e.organizer) && !['expired','rejected','canceled'].includes(e.status))) {
+    for (const event of records.filter(e => (!sourceId || sources.find(s => s.id === sourceId)?.name === e.organizer) && e.status === 'candidate')) {
       await verifyCandidate(event, retrieve, now);
       report.eventChecks.push({ id: event.id, verified: core.verified(event, now), error: event.verification.error });
     }
