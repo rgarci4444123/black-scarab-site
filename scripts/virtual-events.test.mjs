@@ -170,10 +170,10 @@ test('concluded events expire; missing end times do not acquire invented duratio
   const e = await approved(); core.expireEvents([e],new Date('2026-11-24T16:00:00Z')); assert.equal(e.status,'expired');
   const noEnd = await candidate(); noEnd.endUtc=null; core.expireEvents([noEnd], new Date(noEnd.startUtc)); assert.equal(noEnd.status,'expired');
 });
-test('inaccessible sources do not advance last verified time or remain visible', async () => {
+test('later source failures do not advance verification time or remove an approved listing', async () => {
   const e = await approved(); const old=e.lastVerifiedAt;
   await verifyCandidate(e,async()=>{throw new Error('HTTP 403');}, new Date('2026-11-16T13:00:00Z'));
-  assert.equal(e.lastVerifiedAt,old); assert.match(e.verification.error,/403/); assert.deepEqual(core.upcomingVirtualEvents([e],now),[]);
+  assert.equal(e.lastVerifiedAt,old); assert.match(e.verification.error,/403/); assert.equal(core.upcomingVirtualEvents([e],now).length,1);
 });
 test('broken registration URLs prevent approval and publication', async () => {
   const e=await candidate(); e.url='https://example.org/broken';
@@ -256,9 +256,68 @@ test('scans are idempotent, review batches suppress repeats, and overlap is reje
   } finally {process.chdir(original);await rm(directory,{recursive:true,force:true});}
 });
 
-test('an approved programme or price change is hidden immediately', async () => {
-  const e=await approved();const changed=pageFor({...detail,description:'The workshop now covers a different subject.'});
-  await verifyCandidate(e,async()=>changed,now);assert.match(e.verification.error,/programme changed/);assert.deepEqual(core.upcomingVirtualEvents([e],now),[]);
+test('discovery leaves approved sessions unchanged and still verifies new sessions on a shared page', async () => {
+  const { mkdtemp, mkdir, writeFile, readFile, rm } = await import('node:fs/promises');
+  const { tmpdir } = await import('node:os');
+  const { join } = await import('node:path');
+  const { scan } = await import('./virtual-events/scan.mjs');
+  const original = process.cwd();
+  const directory = await mkdtemp(join(tmpdir(), 'virtual-events-approved-'));
+  const first = await approved();
+  const root = 'https://example.org/events';
+  first.sourceUrl = root; first.url = 'https://example.org/approved-registration';
+  first.approvedFingerprint = core.fingerprint(first);
+  const second = structuredClone(first);
+  second.id = 'another-approved'; second.officialTitle = 'Another approved workshop'; second.displayTitle = second.officialTitle;
+  second.sourceUrl = 'https://example.org/events/another-approved'; second.url = second.sourceUrl;
+  second.duplicateKey = core.duplicateKey(second.organizer, second.officialTitle, second.startUtc);
+  second.approvedFingerprint = core.fingerprint(second);
+  const approvedRecords = [first, second];
+  const fresh = { ...detail, name: 'New Robot Integration Workshop', url: 'https://example.org/new-registration' };
+  // Rediscovery changes an existing session's date, but approval remains the saved snapshot.
+  const changed = { ...detail, startDate: '2026-11-25T10:00:00-05:00', endDate: '2026-11-25T11:00:00-05:00', url: first.url };
+  const body = `<h1>Upcoming workshops</h1><script type="application/ld+json">${JSON.stringify([changed, fresh].map(e => ({ '@type': 'Event', ...e })))}</script>`;
+  const rootPage = { url: root, body, text: normalizeText(body) };
+  const calls = [];
+  try {
+    await mkdir(join(directory, 'data/virtual-events'), { recursive: true });
+    await writeFile(join(directory, 'data/virtual-events/events.json'), JSON.stringify(approvedRecords));
+    await writeFile(join(directory, 'data/virtual-events/organizer-leads.json'), '[]');
+    await writeFile(join(directory, 'data/virtual-events/sources.json'), JSON.stringify([{ ...source, sources: [root] }]));
+    process.chdir(directory);
+    const report = await scan({ now: new Date('2026-11-18T12:00:00Z'), env: {}, getPage: async url => {
+      calls.push(url);
+      if (url === root) return rootPage;
+      if (url === fresh.url) return { ...pageFor(fresh), url };
+      throw new Error(`Unexpected follow-up request: ${url}`);
+    } });
+    const records = JSON.parse(await readFile('data/virtual-events/events.json', 'utf8'));
+    assert.deepEqual(records.slice(0, 2), approvedRecords);
+    assert.equal(records.length, 3);
+    assert.equal(records[2].officialTitle, fresh.name);
+    assert.equal(records[2].status, 'candidate');
+    assert.equal(records[2].verification.registration, true);
+    assert.deepEqual(new Set(calls), new Set([root, fresh.url]));
+    assert.deepEqual(report.eventChecks.map(e => e.id), [records[2].id]);
+  } finally { process.chdir(original); await rm(directory, { recursive: true, force: true }); }
+});
+
+test('programme and price checks remain mandatory before approval', async () => {
+  const e=await candidate();const changed=pageFor({...detail,description:'The workshop now covers a different subject.'});
+  await verifyCandidate(e,async()=>changed,now);assert.match(e.verification.error,/programme changed/);
+  assert.throws(()=>core.approve(e,'Editor',now));assert.deepEqual(core.upcomingVirtualEvents([e],now),[]);
+});
+
+test('approved listings survive old verification and disappear exactly at start', async () => {
+  const e=await approved();const later=new Date('2026-11-23T12:00:00Z');
+  assert.equal(core.verified(e,later),false);
+  assert.throws(()=>core.approve({...e,status:'candidate',approvedFingerprint:null},'Editor',later));
+  assert.equal(core.upcomingVirtualEvents([e],later).length,1);
+  assert.equal(core.upcomingVirtualEvents([e],new Date(Date.parse(e.startUtc)-1)).length,1);
+  assert.deepEqual(core.upcomingVirtualEvents([e],new Date(e.startUtc)),[]);
+  for (const missing of [{reviewedBy:null},{reviewedAt:null},{reviewedAt:'2027-01-01T00:00:00Z'},{approvedFingerprint:null}]) {
+    assert.deepEqual(core.upcomingVirtualEvents([{...e,...missing}],later),[]);
+  }
 });
 
 test('calendar boilerplate about online submission does not imply online attendance', () => {

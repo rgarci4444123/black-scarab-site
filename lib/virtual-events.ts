@@ -100,19 +100,30 @@ export function verifyManually(event: VirtualEvent, reviewer: string, note: stri
   return event;
 }
 
-export function eligible(event: VirtualEvent, now = new Date()): boolean {
+function hasPublishableDetails(event: VirtualEvent, now: Date): boolean {
   const words = event.summary.trim().split(/\s+/).length;
-  return verified(event, now) && Date.parse(event.startUtc) > now.getTime()
+  return Boolean(event.sourceTimezone && /(?:Z|[+-]\d{2}:\d{2})$/.test(event.originalStart)
+    && Date.parse(event.originalStart) === Date.parse(event.startUtc)
+    && (!event.endUtc || Date.parse(event.endUtc) > Date.parse(event.startUtc)))
+    && Date.parse(event.startUtc) > now.getTime()
     && Boolean(event.organizer && event.officialTitle && event.displayTitle && event.category && event.format)
     && /^https:\/\//.test(event.url) && /^https:\/\//.test(event.sourceUrl)
     && words >= 12 && words <= 24 && (event.cost !== "paid" || Boolean(event.price))
     && (event.score >= 65 || Boolean(event.overrideReason));
 }
 
+export function eligible(event: VirtualEvent, now = new Date()): boolean {
+  return verified(event, now) && hasPublishableDetails(event, now);
+}
+
 export function upcomingVirtualEvents(records: VirtualEvent[], now = new Date()): VirtualEvent[] {
   const seen = new Set<string>();
   return records.filter(event => {
-    const allowed = ["approved", "published"].includes(event.status) && eligible(event, now)
+    // Verification is an admission check. Approved listings do not age out of
+    // verification or contact organizers again; only their attendance window expires.
+    const allowed = ["approved", "published"].includes(event.status)
+      && Boolean(event.reviewedBy?.trim()) && Date.parse(event.reviewedAt ?? "") <= now.getTime()
+      && hasPublishableDetails(event, now)
       && event.approvedFingerprint === fingerprint(event)
       && Date.parse(event.startUtc) <= now.getTime() + 30 * DAY && !seen.has(event.duplicateKey);
     if (allowed) seen.add(event.duplicateKey);
