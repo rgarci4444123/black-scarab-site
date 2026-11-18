@@ -37,6 +37,131 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "zipline-uber-eats-houston",
+  "title": "Zipline brings drone delivery to Uber Eats in Houston",
+  "summary": "The service is live in Spring, north of Houston, with Dallas next. The launch connects Zipline’s aircraft network to an established ordering app as the companies pursue a much larger delivery target.",
+  "category": "Deployment",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "6 min read",
+  "image": "/images/news/zipline-uber-eats-houston.png",
+  "imageAlt": "Conceptual editorial illustration of a coral delivery pod descending outside an open blue front door, with a winged delivery drone above a sunny suburban neighborhood.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "Zipline launched Uber Eats delivery in Spring in the Houston area on November 17. Dallas is the next planned market.",
+    "ABC News reports initial service hours of 8 a.m. to 10 p.m. for eligible addresses and participating restaurants.",
+    "The companies aim for one million daily Uber deliveries with Zipline by 2029."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Zipline began delivering Uber Eats orders in the Houston area on November 17, bringing its autonomous aircraft network into the ordering app people already use for dinner.",
+        "The initial service is in Spring, north of Houston. Eligible customers can choose the drone option in Uber Eats, browse participating restaurants and identify a clear delivery spot at home. Dallas is the next planned market.",
+        "The companies announced their partnership in August. This week's launch gives that agreement an operating footprint inside Uber Eats, with a familiar purchasing flow connected to a different way of moving the order.",
+        "For Black Scarab, the interesting change is the connection between demand and physical capacity. A drone network needs orders as well as aircraft. Putting the two together creates a more useful commercial test of autonomous delivery than a flight demonstration alone."
+      ]
+    },
+    {
+      "heading": "What customers can use today",
+      "paragraphs": [
+        "ABC News reported that service in Spring initially runs from 8 a.m. to 10 p.m. Customers can follow the order in the app and choose a location with enough clear space for the handoff. Availability depends on the delivery address and the restaurants shown in the app.",
+        "During its reporting, ABC's Gio Benitez ordered a meal to a home in Spring. After the restaurant prepared the food, the aircraft lowered a pod onto the lawn while remaining more than 300 feet overhead. That observed delivery puts a concrete customer interaction behind the launch announcement.",
+        "The ordering experience matters because an unfamiliar delivery method can otherwise require a new app, another account and a change in habit. Here, the customer encounters the option within an existing meal purchase. The opportunity is to make trying a drone delivery feel like choosing a fulfillment method."
+      ]
+    },
+    {
+      "heading": "An existing network gains another storefront",
+      "paragraphs": [
+        "Zipline and Uber announced the commercial partnership and a strategic Uber investment on August 17. Their original plan named Houston and Dallas, where Zipline already operated, as the first markets for the integration, followed by additional American cities.",
+        "That chronology explains what has changed. Zipline is adding an ordering channel to an existing delivery network. The Houston rollout is the first operating step under this partnership, and Dallas is still ahead.",
+        "A marketplace can help concentrate demand where an aircraft network has capacity. For merchants, the attraction is another delivery method within a channel customers already recognize. For Zipline, it is a route to orders that can complement its own consumer service.",
+        "Our assessment is that the business value depends on the pattern of those orders. Aircraft serving nearby destinations at useful times can be more productive than capacity waiting for scattered demand. A large app audience creates an opportunity; the local mix of orders determines how much of it the network can use."
+      ]
+    },
+    {
+      "heading": "The aircraft stays above the doorstep",
+      "paragraphs": [
+        "Zipline describes a system in which the aircraft remains roughly 330 feet above the ground while a tethered pod descends to place the order. The journey and the final handoff are handled by different parts of the system.",
+        "The company lists aircraft speeds of up to 70 mph, loads of up to eight pounds and a delivery range of ten miles. Those capabilities frame the kinds of orders and distances the service can address. They are manufacturer specifications, rather than a promise about the time every customer will wait.",
+        "The final placement is a substantial part of the robotics task. A home has trees, buildings, people and changing conditions around it. The requirement for a clear delivery spot connects the aircraft's automated operation to the customer's immediate surroundings.",
+        "This division of work also explains the unusual shape of the experience: the aircraft can remain high overhead while the smaller pod approaches the delivery location. The customer receives a package without the main aircraft landing beside the house."
+      ]
+    },
+    {
+      "heading": "Flight speed is only part of dinner",
+      "paragraphs": [
+        "In its November 5 business update, Zipline reported that its median October order arrived 19 minutes after checkout. Bakery orders, which can have shorter preparation times, had a reported median of ten minutes. Those figures describe Zipline's existing service before this Uber Eats launch.",
+        "The comparison is useful because a meal's journey begins before takeoff. A restaurant must prepare and package the order, the delivery system must dispatch it, and the final handoff must succeed. Faster flight changes one portion of that sequence.",
+        "For a restaurant, good coordination could help food leave promptly once it is ready. For a customer, the meaningful measure is the full wait after ordering. The commercial test is whether the combined service can make that experience consistently useful during ordinary demand and busy periods.",
+        "A successful demonstration establishes that the sequence can work at a particular location. Repeat use will reveal how well the service fits everyday ordering, including the times and places where people actually want it."
+      ]
+    },
+    {
+      "heading": "The investment behind the rollout",
+      "paragraphs": [
+        "The launch follows Zipline's November 5 announcement of $1.5 billion in financing at a $21.5 billion valuation after the investment. The company said it would expand U.S. manufacturing and hiring as it built a national delivery network.",
+        "The same update described a multiyear agreement with Walmart to launch 300 additional sites. Those planned sites and the Uber Eats relationship represent different commercial routes into the network: one anchored in a retailer's locations, the other in an ordering marketplace.",
+        "Salesforce Ventures, an investor in Zipline, argues that the company benefits from owning its hardware and software together. Its investment account describes aircraft, charging infrastructure, delivery mechanisms and fleet management as parts of the same system.",
+        "That is an investor's thesis, and it helps explain the industrial work behind an app launch. Manufacturing more aircraft is one task. Installing infrastructure, coordinating flights, maintaining equipment and serving orders are connected tasks that must expand together.",
+        "Black Scarab's reading is that integration gives Zipline more control over how those pieces evolve. It also concentrates responsibility for making them work reliably. Capital and commercial agreements give the company room to build; operating results will show what that capacity delivers."
+      ]
+    },
+    {
+      "heading": "What comes after Houston",
+      "paragraphs": [
+        "The companies aim to reach one million daily Uber deliveries with Zipline by 2029. That is an expansion target. The immediate milestone is a live ordering option in Spring, with Dallas next and further cities planned.",
+        "The most useful signals from here will be the pace of local expansion, repeat customer demand and the reliability of completed deliveries. Geographic reach and productive capacity are related, but they do not grow automatically at the same rate.",
+        "Houston gives Zipline a way to test its delivery network inside another company's purchasing flow. Dallas will show whether that integration can be repeated. The larger opportunity is to turn an autonomous flight into a service customers choose often enough to support a durable network."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Zipline, November 17 Houston launch announcement",
+      "url": "https://www.zipline.com/newsroom/zipline-is-now-delivering-to-uber-eats-customers-in-houston"
+    },
+    {
+      "label": "ABC News, November 17 launch reporting and delivery demonstration",
+      "url": "https://www.goodmorningamerica.com/news/story/uber-eats-launches-1st-drone-delivery-services-138193914"
+    },
+    {
+      "label": "Axios Houston, November 17 local launch coverage",
+      "url": "https://www.axios.com/local/houston/2026/11/17/uber-eats-zipline-drone-delivery-houston"
+    },
+    {
+      "label": "Zipline, August 17 partnership and strategic investment announcement",
+      "url": "https://www.zipline.com/newsroom/zipline-will-make-1-million-deliveries-per-day-through-new-uber-partnership"
+    },
+    {
+      "label": "Zipline, November 5 financing and network expansion announcement",
+      "url": "https://www.zipline.com/newsroom/zipline-raises-1-5-billion-to-build-nationwide-drone-delivery-network"
+    },
+    {
+      "label": "Salesforce Ventures, November 5 investment perspective",
+      "url": "https://salesforceventures.com/perspectives/autonomous-delivery-has-liftoff/"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "warehousing-logistics",
+    "relevantIndustries": [
+      "retail",
+      "consumer-home"
+    ],
+    "technologies": [
+      "drones"
+    ],
+    "applications": [
+      "autonomous-delivery"
+    ]
+  },
+  "publishedAt": "2026-11-18T10:36:48-05:00",
+  "publishedDate": "2026-11-18",
+  "publishedLabel": "November 18, 2026"
+},
+{
   "slug": "hadrian-kutztown-submarine-castings",
   "title": "Hadrian buys a 160 year old foundry to tackle the submarine supply bottleneck",
   "summary": "The automation company plans a $300 million expansion at Kutztown Foundry & Machine, putting established steelmaking expertise at the center of its push to supply America's submarine programs.",
