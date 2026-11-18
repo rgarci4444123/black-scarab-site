@@ -47,7 +47,7 @@
       "schedule": false,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T22:05:48.630Z",
+      "checkedAt": "2026-11-18T21:00:16.357Z",
       "error": "Midnight calendar date needs an explicit source start-time quote"
     },
     "approvedFingerprint": null,
@@ -110,7 +110,7 @@
       "schedule": false,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-17T22:05:48.630Z",
+      "checkedAt": "2026-11-18T21:00:16.357Z",
       "error": "Midnight calendar date needs an explicit source start-time quote"
     },
     "approvedFingerprint": null,
@@ -582,7 +582,7 @@
       "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
       "Accessibility 6/10: confirmed free, paid or unconfirmed price."
     ],
-    "status": "approved",
+    "status": "expired",
     "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
     "lastVerifiedAt": null,
     "publishedAt": null,
@@ -654,7 +654,7 @@
       "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
       "Accessibility 10/10: confirmed free, paid or unconfirmed price."
     ],
-    "status": "approved",
+    "status": "expired",
     "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
     "lastVerifiedAt": null,
     "publishedAt": null,
@@ -723,7 +723,7 @@
       "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
       "Accessibility 6/10: confirmed free, paid or unconfirmed price."
     ],
-    "status": "approved",
+    "status": "expired",
     "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
     "lastVerifiedAt": "2026-11-17T22:05:48.630Z",
     "publishedAt": null,
@@ -793,7 +793,7 @@
       "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
       "Accessibility 10/10: confirmed free, paid or unconfirmed price."
     ],
-    "status": "approved",
+    "status": "expired",
     "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
     "lastVerifiedAt": "2026-11-17T22:05:48.630Z",
     "publishedAt": null,
