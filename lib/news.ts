@@ -37,6 +37,137 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "humyn-labs-robot-data-deployment",
+  "title": "Humyn Labs raises $47 million for robot data and deployment testing",
+  "summary": "The package combines $26 million in equity led by Accel with $21 million in venture debt as Humyn expands from recording human work toward testing how robots perform it.",
+  "category": "Capital",
+  "readingTime": "6 min read",
+  "imageAlt": "Conceptual violet and chartreuse illustration of a hand placing a metal cylinder into a fixture, with layered motion contours representing a captured work action.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "Accel led the $26 million equity round. Lighthouse Canton led $21 million in venture debt, with Trifecta Capital participating.",
+    "Humyn says it exceeded $50 million in annualized revenue within six months and operates capture and enrichment programs across more than 20 countries.",
+    "The funding will support robot testing infrastructure in Brazil, South Korea and India, alongside capture hardware, data processing and international teams."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Humyn Labs announced $47 million in Series A financing on November 18 to expand the data collection, processing and testing infrastructure that connects robot development with real work.",
+        "The company, based in Bengaluru, records people doing jobs in factories, warehouses, farms and homes, then turns those recordings into training material for AI developers. Its next ambition is to help labs test robots in those environments and use the results to guide further training.",
+        "That puts Humyn between two businesses that need each other: developers building more capable models and organizations whose work changes from one shift to the next. Its proposition is to connect the human example, the training dataset and the robot's eventual performance."
+      ]
+    },
+    {
+      "heading": "Two kinds of capital",
+      "paragraphs": [
+        "The financing consists of $26 million in equity led by Accel and $21 million in venture debt led by Lighthouse Canton, with Trifecta Capital participating in the debt portion.",
+        "The company names Prosus Ventures, BeeGlobal, Finserv Intelligence through Bajaj Finance, Bajaj Alts AI Opportunities Fund, Dallas Venture Capital, Lighthouse Canton, Jump Trading LLC and Anita Pramoda, former CFO of Epic, among the equity participants.",
+        "Humyn plans to spend the funding on deployment readiness infrastructure in Brazil, South Korea and India, its capture devices and enrichment engine, and teams in San Francisco, London and Seoul. The investment therefore supports both the operation supplying data today and the research capacity needed for a broader testing business."
+      ]
+    },
+    {
+      "heading": "From a recording to a training example",
+      "paragraphs": [
+        "Humyn describes an enrichment engine that validates, processes, synchronizes and labels captured activity. The purpose is to make the material useful to a model developer, with its origin and processing history preserved.",
+        "Its website illustrates the range of outputs: hand keypoints, object locations, action segments, depth information and motion trajectories. It also lists a corpus of more than 200,000 hours of egocentric video, meaning footage recorded from the person's viewpoint.",
+        "Humyn's engine page describes egoS1, a 127 gram stereo capture device worn on a cap. It specifies 1080p video at 30 frames per second and an inertial sensor. The same page describes checks during capture for problems such as poor lighting, obstructed views and unusable motion signals.",
+        "Moving those checks closer to the person recording can make an error easier to fix. If a camera misses the relevant action, the most useful response may be another recording while the task and setting are still available. Cleaning the file later cannot recover an action that never appeared in view.",
+        "The company lists robotics delivery formats including MCAP, RLDS, LeRobot v3 and ROS bag files. That is a practical part of the proposition: data must reach a lab in a form its existing tools can use. Its detailed output list places tactile sensor data on the roadmap, a distinction from the broader ambition to capture sight, sound, motion and touch."
+      ]
+    },
+    {
+      "heading": "What the revenue figure measures",
+      "paragraphs": [
+        "Humyn says it surpassed $50 million in annualized revenue within six months of operations. Cofounder Manish Agarwal told The Times of India that the figure projects the average monthly revenue of September and October across a year.",
+        "That describes the recent pace of the business. It should be read as a run rate, rather than revenue earned over a completed twelve month period.",
+        "The same interview gives a useful picture of how that revenue is generated. Agarwal said Humyn has 12 paying customers and charges by the hour of video supplied, with pricing depending on the processing and quality required. Projects can last weeks or months, with subsequent work depending on delivery.",
+        "The commercial implication is that volume and quality have to advance together. More captured hours create value when they meet a customer's requirements and arrive in usable form. Collecting material that needs extensive repair or cannot be accepted would add activity without the same economic benefit."
+      ]
+    },
+    {
+      "heading": "Testing the job after learning the example",
+      "paragraphs": [
+        "Deployment readiness is the larger expansion behind the financing. Humyn wants to work with model labs and site operators to identify where a robot falls short, then feed those observations into the next round of development.",
+        "Mint reported that the company plans environments resembling warehouses, dark stores and factories. Agarwal described a Bengaluru starting point for a deployment playbook, with facilities of 5,000 to 10,000 square feet or testing at enterprise premises. Those are plans for the next phase of the business.",
+        "For Black Scarab, the useful connection would be between a failure and the next training decision. An evaluation program could distinguish a missed object from an unsuccessful grasp or a recovery problem, then help a lab decide what additional examples or changes to test.",
+        "Our assessment is that the quality of the comparison will be central. Repeating a task under known conditions helps establish whether a change improved the system. Varying those conditions then tests how far the improvement travels. A program needs both to turn field experience into something a developer can act on.",
+        "Success also has to be defined at the level of the job. Completing one action, finishing a sequence and operating through a shift answer different questions. Evaluation becomes more useful when it records interruptions and recovery alongside successful attempts, rather than compressing them into a single favorable demonstration."
+      ]
+    },
+    {
+      "heading": "Geography changes the training problem",
+      "paragraphs": [
+        "Humyn says its capture and enrichment operations span more than 20 countries in Latin America and Asia. That network offers access to a wider range of environments and ways of doing work.",
+        "In an interview with SiliconANGLE, Agarwal emphasized how household equipment, layouts and routines vary across countries. His argument is that training material needs to reflect the settings in which robots are expected to operate.",
+        "For Black Scarab, geographic reach is most useful when it becomes relevant variation in the data. Adding a country is an operating milestone; recording the conditions a model struggles with is a learning opportunity. The two can reinforce each other when collection is guided by actual evaluation results.",
+        "The same logic applies within a location. A testing program earns its value by making the differences between conditions understandable, so a lab can connect a change in performance to the circumstances around it."
+      ]
+    },
+    {
+      "heading": "What to watch next",
+      "paragraphs": [
+        "The immediate milestones are the testing infrastructure Humyn plans to establish, the capture and enrichment capacity it adds, and the international teams it builds. The longer term evidence will come from how those pieces work together.",
+        "Our view is that Humyn's strongest opportunity is a repeatable process linking field observations to better robot behavior. The data business gives it a commercial starting point. The deployment program will test whether it can also help developers measure progress on complete jobs under changing conditions."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Humyn Labs: November 18 Series A announcement",
+      "url": "https://humynlabs.ai/blog/humyn-labs-raises-usd-47m-in-series-a"
+    },
+    {
+      "label": "Humyn Labs: research and data platform",
+      "url": "https://humynlabs.ai/"
+    },
+    {
+      "label": "Humyn Labs: engine, outputs and egoS1 capture hardware",
+      "url": "https://humynlabs.ai/engine"
+    },
+    {
+      "label": "The Times of India: founder interview on revenue and the data business",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/humyn-labs-raises-47-mn-for-robot-training/articleshow/135964647.cms"
+    },
+    {
+      "label": "Mint: founder interview on planned deployment facilities",
+      "url": "https://www.livemint.com/ai/artificial-intelligence/humyn-labs-raises-47-million-physical-ai-data-platform-11794980153757.html"
+    },
+    {
+      "label": "SiliconANGLE: founder interview on geographic variation and evaluation",
+      "url": "https://siliconangle.com/2026/11/18/humyn-labs-raises-47m-to-bridge-the-gap-between-ai-training-and-real-world-robotics/"
+    }
+  ],
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/humyn-labs-robot-data-deployment.png",
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [
+      "manufacturing",
+      "warehousing-logistics",
+      "agriculture",
+      "consumer-home"
+    ],
+    "technologies": [
+      "robot-training-data",
+      "embodied-ai",
+      "computer-vision",
+      "sensors"
+    ],
+    "applications": [
+      "robot-training",
+      "data-labeling",
+      "robot-testing"
+    ]
+  },
+  "publishedAt": "2026-11-18T13:06:38-05:00",
+  "publishedDate": "2026-11-18",
+  "publishedLabel": "November 18, 2026"
+},
+{
   "slug": "zipline-uber-eats-houston",
   "title": "Zipline brings drone delivery to Uber Eats in Houston",
   "summary": "The service is live in Spring, north of Houston, with Dallas next. The launch connects Zipline’s aircraft network to an established ordering app as the companies pursue a much larger delivery target.",
