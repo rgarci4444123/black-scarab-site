@@ -25,3 +25,7 @@ Approved edition: `/markets/us-factories-expand-china-slows`, titled “U.S. Fac
 ## November 11, 2026
 
 Approved edition: `/markets/ai-selloff-factory-stocks-earnings`, titled “Factory automation faces a more skeptical market”, covering November 4 through November 10. Preserve the approved compact optical cover, centered reading column, collapsible contents and four responsive SVG figures. The homepage Weekly Market Commentary feature and Markets lead select this newest published entry automatically. Prior editions remain in the archive. Price returns span November 3 through November 10 closes; Japanese listings start from November 2 because of the November 3 holiday. Publication approved in this chat; social publication is a separate request.
+
+## November 18, 2026
+
+Approved edition #5: `/markets/ai-boom-industrial-bottlenecks`, titled “The AI Boom Is Creating Its Own Bottlenecks,” covering November 11 through November 17. Preserve the approved article, white factory cover with small cyan details, compact hero, centered reading column and four responsive SVG figures. Keep the simplified references and omit the removed breadth label from the performance figure. Returns use November 10 through November 17 completed closes and reconcile to the canonical index feed. The homepage feature and Markets lead follow the newest entry; all four earlier editions remain available. Website publication approved in this chat.

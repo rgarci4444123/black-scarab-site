@@ -37,6 +37,262 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "humyn-labs-robot-data-deployment",
+  "title": "Humyn Labs raises $47 million for robot data and deployment testing",
+  "summary": "The package combines $26 million in equity led by Accel with $21 million in venture debt as Humyn expands from recording human work toward testing how robots perform it.",
+  "category": "Capital",
+  "readingTime": "6 min read",
+  "imageAlt": "Conceptual violet and chartreuse illustration of a hand placing a metal cylinder into a fixture, with layered motion contours representing a captured work action.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "Accel led the $26 million equity round. Lighthouse Canton led $21 million in venture debt, with Trifecta Capital participating.",
+    "Humyn says it exceeded $50 million in annualized revenue within six months and operates capture and enrichment programs across more than 20 countries.",
+    "The funding will support robot testing infrastructure in Brazil, South Korea and India, alongside capture hardware, data processing and international teams."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Humyn Labs announced $47 million in Series A financing on November 18 to expand the data collection, processing and testing infrastructure that connects robot development with real work.",
+        "The company, based in Bengaluru, records people doing jobs in factories, warehouses, farms and homes, then turns those recordings into training material for AI developers. Its next ambition is to help labs test robots in those environments and use the results to guide further training.",
+        "That puts Humyn between two businesses that need each other: developers building more capable models and organizations whose work changes from one shift to the next. Its proposition is to connect the human example, the training dataset and the robot's eventual performance."
+      ]
+    },
+    {
+      "heading": "Two kinds of capital",
+      "paragraphs": [
+        "The financing consists of $26 million in equity led by Accel and $21 million in venture debt led by Lighthouse Canton, with Trifecta Capital participating in the debt portion.",
+        "The company names Prosus Ventures, BeeGlobal, Finserv Intelligence through Bajaj Finance, Bajaj Alts AI Opportunities Fund, Dallas Venture Capital, Lighthouse Canton, Jump Trading LLC and Anita Pramoda, former CFO of Epic, among the equity participants.",
+        "Humyn plans to spend the funding on deployment readiness infrastructure in Brazil, South Korea and India, its capture devices and enrichment engine, and teams in San Francisco, London and Seoul. The investment therefore supports both the operation supplying data today and the research capacity needed for a broader testing business."
+      ]
+    },
+    {
+      "heading": "From a recording to a training example",
+      "paragraphs": [
+        "Humyn describes an enrichment engine that validates, processes, synchronizes and labels captured activity. The purpose is to make the material useful to a model developer, with its origin and processing history preserved.",
+        "Its website illustrates the range of outputs: hand keypoints, object locations, action segments, depth information and motion trajectories. It also lists a corpus of more than 200,000 hours of egocentric video, meaning footage recorded from the person's viewpoint.",
+        "Humyn's engine page describes egoS1, a 127 gram stereo capture device worn on a cap. It specifies 1080p video at 30 frames per second and an inertial sensor. The same page describes checks during capture for problems such as poor lighting, obstructed views and unusable motion signals.",
+        "Moving those checks closer to the person recording can make an error easier to fix. If a camera misses the relevant action, the most useful response may be another recording while the task and setting are still available. Cleaning the file later cannot recover an action that never appeared in view.",
+        "The company lists robotics delivery formats including MCAP, RLDS, LeRobot v3 and ROS bag files. That is a practical part of the proposition: data must reach a lab in a form its existing tools can use. Its detailed output list places tactile sensor data on the roadmap, a distinction from the broader ambition to capture sight, sound, motion and touch."
+      ]
+    },
+    {
+      "heading": "What the revenue figure measures",
+      "paragraphs": [
+        "Humyn says it surpassed $50 million in annualized revenue within six months of operations. Cofounder Manish Agarwal told The Times of India that the figure projects the average monthly revenue of September and October across a year.",
+        "That describes the recent pace of the business. It should be read as a run rate, rather than revenue earned over a completed twelve month period.",
+        "The same interview gives a useful picture of how that revenue is generated. Agarwal said Humyn has 12 paying customers and charges by the hour of video supplied, with pricing depending on the processing and quality required. Projects can last weeks or months, with subsequent work depending on delivery.",
+        "The commercial implication is that volume and quality have to advance together. More captured hours create value when they meet a customer's requirements and arrive in usable form. Collecting material that needs extensive repair or cannot be accepted would add activity without the same economic benefit."
+      ]
+    },
+    {
+      "heading": "Testing the job after learning the example",
+      "paragraphs": [
+        "Deployment readiness is the larger expansion behind the financing. Humyn wants to work with model labs and site operators to identify where a robot falls short, then feed those observations into the next round of development.",
+        "Mint reported that the company plans environments resembling warehouses, dark stores and factories. Agarwal described a Bengaluru starting point for a deployment playbook, with facilities of 5,000 to 10,000 square feet or testing at enterprise premises. Those are plans for the next phase of the business.",
+        "For Black Scarab, the useful connection would be between a failure and the next training decision. An evaluation program could distinguish a missed object from an unsuccessful grasp or a recovery problem, then help a lab decide what additional examples or changes to test.",
+        "Our assessment is that the quality of the comparison will be central. Repeating a task under known conditions helps establish whether a change improved the system. Varying those conditions then tests how far the improvement travels. A program needs both to turn field experience into something a developer can act on.",
+        "Success also has to be defined at the level of the job. Completing one action, finishing a sequence and operating through a shift answer different questions. Evaluation becomes more useful when it records interruptions and recovery alongside successful attempts, rather than compressing them into a single favorable demonstration."
+      ]
+    },
+    {
+      "heading": "Geography changes the training problem",
+      "paragraphs": [
+        "Humyn says its capture and enrichment operations span more than 20 countries in Latin America and Asia. That network offers access to a wider range of environments and ways of doing work.",
+        "In an interview with SiliconANGLE, Agarwal emphasized how household equipment, layouts and routines vary across countries. His argument is that training material needs to reflect the settings in which robots are expected to operate.",
+        "For Black Scarab, geographic reach is most useful when it becomes relevant variation in the data. Adding a country is an operating milestone; recording the conditions a model struggles with is a learning opportunity. The two can reinforce each other when collection is guided by actual evaluation results.",
+        "The same logic applies within a location. A testing program earns its value by making the differences between conditions understandable, so a lab can connect a change in performance to the circumstances around it."
+      ]
+    },
+    {
+      "heading": "What to watch next",
+      "paragraphs": [
+        "The immediate milestones are the testing infrastructure Humyn plans to establish, the capture and enrichment capacity it adds, and the international teams it builds. The longer term evidence will come from how those pieces work together.",
+        "Our view is that Humyn's strongest opportunity is a repeatable process linking field observations to better robot behavior. The data business gives it a commercial starting point. The deployment program will test whether it can also help developers measure progress on complete jobs under changing conditions."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Humyn Labs: November 18 Series A announcement",
+      "url": "https://humynlabs.ai/blog/humyn-labs-raises-usd-47m-in-series-a"
+    },
+    {
+      "label": "Humyn Labs: research and data platform",
+      "url": "https://humynlabs.ai/"
+    },
+    {
+      "label": "Humyn Labs: engine, outputs and egoS1 capture hardware",
+      "url": "https://humynlabs.ai/engine"
+    },
+    {
+      "label": "The Times of India: founder interview on revenue and the data business",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/humyn-labs-raises-47-mn-for-robot-training/articleshow/135964647.cms"
+    },
+    {
+      "label": "Mint: founder interview on planned deployment facilities",
+      "url": "https://www.livemint.com/ai/artificial-intelligence/humyn-labs-raises-47-million-physical-ai-data-platform-11794980153757.html"
+    },
+    {
+      "label": "SiliconANGLE: founder interview on geographic variation and evaluation",
+      "url": "https://siliconangle.com/2026/11/18/humyn-labs-raises-47m-to-bridge-the-gap-between-ai-training-and-real-world-robotics/"
+    }
+  ],
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/humyn-labs-robot-data-deployment.png",
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [
+      "manufacturing",
+      "warehousing-logistics",
+      "agriculture",
+      "consumer-home"
+    ],
+    "technologies": [
+      "robot-training-data",
+      "embodied-ai",
+      "computer-vision",
+      "sensors"
+    ],
+    "applications": [
+      "robot-training",
+      "data-labeling",
+      "robot-testing"
+    ]
+  },
+  "publishedAt": "2026-11-18T13:06:38-05:00",
+  "publishedDate": "2026-11-18",
+  "publishedLabel": "November 18, 2026"
+},
+{
+  "slug": "zipline-uber-eats-houston",
+  "title": "Zipline brings drone delivery to Uber Eats in Houston",
+  "summary": "The service is live in Spring, north of Houston, with Dallas next. The launch connects Zipline’s aircraft network to an established ordering app as the companies pursue a much larger delivery target.",
+  "category": "Deployment",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "6 min read",
+  "image": "/images/news/zipline-uber-eats-houston.png",
+  "imageAlt": "Conceptual editorial illustration of a coral delivery pod descending outside an open blue front door, with a winged delivery drone above a sunny suburban neighborhood.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "Zipline launched Uber Eats delivery in Spring in the Houston area on November 17. Dallas is the next planned market.",
+    "ABC News reports initial service hours of 8 a.m. to 10 p.m. for eligible addresses and participating restaurants.",
+    "The companies aim for one million daily Uber deliveries with Zipline by 2029."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Zipline began delivering Uber Eats orders in the Houston area on November 17, bringing its autonomous aircraft network into the ordering app people already use for dinner.",
+        "The initial service is in Spring, north of Houston. Eligible customers can choose the drone option in Uber Eats, browse participating restaurants and identify a clear delivery spot at home. Dallas is the next planned market.",
+        "The companies announced their partnership in August. This week's launch gives that agreement an operating footprint inside Uber Eats, with a familiar purchasing flow connected to a different way of moving the order.",
+        "For Black Scarab, the interesting change is the connection between demand and physical capacity. A drone network needs orders as well as aircraft. Putting the two together creates a more useful commercial test of autonomous delivery than a flight demonstration alone."
+      ]
+    },
+    {
+      "heading": "What customers can use today",
+      "paragraphs": [
+        "ABC News reported that service in Spring initially runs from 8 a.m. to 10 p.m. Customers can follow the order in the app and choose a location with enough clear space for the handoff. Availability depends on the delivery address and the restaurants shown in the app.",
+        "During its reporting, ABC's Gio Benitez ordered a meal to a home in Spring. After the restaurant prepared the food, the aircraft lowered a pod onto the lawn while remaining more than 300 feet overhead. That observed delivery puts a concrete customer interaction behind the launch announcement.",
+        "The ordering experience matters because an unfamiliar delivery method can otherwise require a new app, another account and a change in habit. Here, the customer encounters the option within an existing meal purchase. The opportunity is to make trying a drone delivery feel like choosing a fulfillment method."
+      ]
+    },
+    {
+      "heading": "An existing network gains another storefront",
+      "paragraphs": [
+        "Zipline and Uber announced the commercial partnership and a strategic Uber investment on August 17. Their original plan named Houston and Dallas, where Zipline already operated, as the first markets for the integration, followed by additional American cities.",
+        "That chronology explains what has changed. Zipline is adding an ordering channel to an existing delivery network. The Houston rollout is the first operating step under this partnership, and Dallas is still ahead.",
+        "A marketplace can help concentrate demand where an aircraft network has capacity. For merchants, the attraction is another delivery method within a channel customers already recognize. For Zipline, it is a route to orders that can complement its own consumer service.",
+        "Our assessment is that the business value depends on the pattern of those orders. Aircraft serving nearby destinations at useful times can be more productive than capacity waiting for scattered demand. A large app audience creates an opportunity; the local mix of orders determines how much of it the network can use."
+      ]
+    },
+    {
+      "heading": "The aircraft stays above the doorstep",
+      "paragraphs": [
+        "Zipline describes a system in which the aircraft remains roughly 330 feet above the ground while a tethered pod descends to place the order. The journey and the final handoff are handled by different parts of the system.",
+        "The company lists aircraft speeds of up to 70 mph, loads of up to eight pounds and a delivery range of ten miles. Those capabilities frame the kinds of orders and distances the service can address. They are manufacturer specifications, rather than a promise about the time every customer will wait.",
+        "The final placement is a substantial part of the robotics task. A home has trees, buildings, people and changing conditions around it. The requirement for a clear delivery spot connects the aircraft's automated operation to the customer's immediate surroundings.",
+        "This division of work also explains the unusual shape of the experience: the aircraft can remain high overhead while the smaller pod approaches the delivery location. The customer receives a package without the main aircraft landing beside the house."
+      ]
+    },
+    {
+      "heading": "Flight speed is only part of dinner",
+      "paragraphs": [
+        "In its November 5 business update, Zipline reported that its median October order arrived 19 minutes after checkout. Bakery orders, which can have shorter preparation times, had a reported median of ten minutes. Those figures describe Zipline's existing service before this Uber Eats launch.",
+        "The comparison is useful because a meal's journey begins before takeoff. A restaurant must prepare and package the order, the delivery system must dispatch it, and the final handoff must succeed. Faster flight changes one portion of that sequence.",
+        "For a restaurant, good coordination could help food leave promptly once it is ready. For a customer, the meaningful measure is the full wait after ordering. The commercial test is whether the combined service can make that experience consistently useful during ordinary demand and busy periods.",
+        "A successful demonstration establishes that the sequence can work at a particular location. Repeat use will reveal how well the service fits everyday ordering, including the times and places where people actually want it."
+      ]
+    },
+    {
+      "heading": "The investment behind the rollout",
+      "paragraphs": [
+        "The launch follows Zipline's November 5 announcement of $1.5 billion in financing at a $21.5 billion valuation after the investment. The company said it would expand U.S. manufacturing and hiring as it built a national delivery network.",
+        "The same update described a multiyear agreement with Walmart to launch 300 additional sites. Those planned sites and the Uber Eats relationship represent different commercial routes into the network: one anchored in a retailer's locations, the other in an ordering marketplace.",
+        "Salesforce Ventures, an investor in Zipline, argues that the company benefits from owning its hardware and software together. Its investment account describes aircraft, charging infrastructure, delivery mechanisms and fleet management as parts of the same system.",
+        "That is an investor's thesis, and it helps explain the industrial work behind an app launch. Manufacturing more aircraft is one task. Installing infrastructure, coordinating flights, maintaining equipment and serving orders are connected tasks that must expand together.",
+        "Black Scarab's reading is that integration gives Zipline more control over how those pieces evolve. It also concentrates responsibility for making them work reliably. Capital and commercial agreements give the company room to build; operating results will show what that capacity delivers."
+      ]
+    },
+    {
+      "heading": "What comes after Houston",
+      "paragraphs": [
+        "The companies aim to reach one million daily Uber deliveries with Zipline by 2029. That is an expansion target. The immediate milestone is a live ordering option in Spring, with Dallas next and further cities planned.",
+        "The most useful signals from here will be the pace of local expansion, repeat customer demand and the reliability of completed deliveries. Geographic reach and productive capacity are related, but they do not grow automatically at the same rate.",
+        "Houston gives Zipline a way to test its delivery network inside another company's purchasing flow. Dallas will show whether that integration can be repeated. The larger opportunity is to turn an autonomous flight into a service customers choose often enough to support a durable network."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Zipline, November 17 Houston launch announcement",
+      "url": "https://www.zipline.com/newsroom/zipline-is-now-delivering-to-uber-eats-customers-in-houston"
+    },
+    {
+      "label": "ABC News, November 17 launch reporting and delivery demonstration",
+      "url": "https://www.goodmorningamerica.com/news/story/uber-eats-launches-1st-drone-delivery-services-138193914"
+    },
+    {
+      "label": "Axios Houston, November 17 local launch coverage",
+      "url": "https://www.axios.com/local/houston/2026/11/17/uber-eats-zipline-drone-delivery-houston"
+    },
+    {
+      "label": "Zipline, August 17 partnership and strategic investment announcement",
+      "url": "https://www.zipline.com/newsroom/zipline-will-make-1-million-deliveries-per-day-through-new-uber-partnership"
+    },
+    {
+      "label": "Zipline, November 5 financing and network expansion announcement",
+      "url": "https://www.zipline.com/newsroom/zipline-raises-1-5-billion-to-build-nationwide-drone-delivery-network"
+    },
+    {
+      "label": "Salesforce Ventures, November 5 investment perspective",
+      "url": "https://salesforceventures.com/perspectives/autonomous-delivery-has-liftoff/"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "warehousing-logistics",
+    "relevantIndustries": [
+      "retail",
+      "consumer-home"
+    ],
+    "technologies": [
+      "drones"
+    ],
+    "applications": [
+      "autonomous-delivery"
+    ]
+  },
+  "publishedAt": "2026-11-18T10:36:48-05:00",
+  "publishedDate": "2026-11-18",
+  "publishedLabel": "November 18, 2026"
+},
+{
   "slug": "hadrian-kutztown-submarine-castings",
   "title": "Hadrian buys a 160 year old foundry to tackle the submarine supply bottleneck",
   "summary": "The automation company plans a $300 million expansion at Kutztown Foundry & Machine, putting established steelmaking expertise at the center of its push to supply America's submarine programs.",

@@ -1,26 +1,26 @@
 {
-  "fetchedAt": "2026-11-17T12:31:25.381Z",
+  "fetchedAt": "2026-11-18T12:30:22.852Z",
   "period": {
     "from": "2026-10-01",
-    "through": "2026-11-16",
+    "through": "2026-11-17",
     "sourceFrom": "2026-09-17"
   },
   "provider": "Marketstack",
   "methodology": "Unadjusted local-currency closes for the price-return index",
   "requests": [
-    "https://api.marketstack.com/v2/eod?symbols=6954.T%2C6506.T%2C002747.SZ%2CTER%2C6268.T%2C300124.SZ%2C6861.T%2CCGNX%2COUST%2CHSAI%2CROK%2CSIE.DE%2CNXPI%2C6383.T%2CHEXA-B.ST&date_from=2026-09-17&date_to=2026-11-16&limit=1000&sort=ASC",
-    "https://api.marketstack.com/v1/eod?symbols=GSPC.INDX%2CIXIC.INDX&date_from=2026-09-17&date_to=2026-11-16&limit=1000&sort=ASC"
+    "https://api.marketstack.com/v2/eod?symbols=6954.T%2C6506.T%2C002747.SZ%2CTER%2C6268.T%2C300124.SZ%2C6861.T%2CCGNX%2COUST%2CHSAI%2CROK%2CSIE.DE%2CNXPI%2C6383.T%2CHEXA-B.ST&date_from=2026-09-17&date_to=2026-11-17&limit=1000&sort=ASC",
+    "https://api.marketstack.com/v1/eod?symbols=GSPC.INDX%2CIXIC.INDX&date_from=2026-09-17&date_to=2026-11-17&limit=1000&sort=ASC"
   ],
-  "receiptPath": "data/bspi15/raw/marketstack/2026-11-17T12-31-25-381Z",
+  "receiptPath": "data/bspi15/raw/marketstack/2026-11-18T12-30-22-852Z",
   "status": "passed",
   "counts": {
     "instruments": 17,
-    "sourceObservations": 692,
-    "comparedObservations": 524,
-    "matches": 524,
+    "sourceObservations": 709,
+    "comparedObservations": 541,
+    "matches": 541,
     "mismatches": 0,
     "identityErrors": 0,
-    "approvedProviderMicObservations": 43,
+    "approvedProviderMicObservations": 44,
     "missingSourceObservations": 0,
     "verifiedClosureObservations": 20,
     "requiredDateObservations": 17,
@@ -589,6 +589,19 @@
       "exceptionId": "ouster-marketstack-legacy-nyse-tag",
       "approvalRecord": "data/bspi15/provider-mic-exceptions.json",
       "status": "approved-provider-MIC-exception"
+    },
+    {
+      "date": "2026-11-17",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "sourceName": "Ouster Inc - Class A",
+      "sourceCurrency": "USD",
+      "expectedMic": "XNAS",
+      "receivedMic": "XNYS",
+      "sourceApi": "v2",
+      "exceptionId": "ouster-marketstack-legacy-nyse-tag",
+      "approvalRecord": "data/bspi15/provider-mic-exceptions.json",
+      "status": "approved-provider-MIC-exception"
     }
   ],
   "providerMicExceptionRecords": [
@@ -882,7 +895,7 @@
   ],
   "requiredDateObservations": [
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "002747",
       "company": "Estun Automation",
       "sourceSymbol": "002747.SZ",
@@ -892,14 +905,14 @@
       "expectedMic": "XSHE",
       "currency": "CNY",
       "type": "Constituent",
-      "close": 27.46,
-      "adjustedClose": 27.46,
+      "close": 26.2,
+      "adjustedClose": 26.2,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "300124",
       "company": "Inovance",
       "sourceSymbol": "300124.SZ",
@@ -909,14 +922,14 @@
       "expectedMic": "XSHE",
       "currency": "CNY",
       "type": "Constituent",
-      "close": 52.96,
-      "adjustedClose": 52.96,
+      "close": 52.8,
+      "adjustedClose": 52.8,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "6268",
       "company": "Nabtesco",
       "sourceSymbol": "6268.T",
@@ -926,14 +939,14 @@
       "expectedMic": "XJPX",
       "currency": "JPY",
       "type": "Constituent",
-      "close": 3574,
-      "adjustedClose": 3574,
+      "close": 3436,
+      "adjustedClose": 3436,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "6383",
       "company": "Daifuku",
       "sourceSymbol": "6383.T",
@@ -943,14 +956,14 @@
       "expectedMic": "XJPX",
       "currency": "JPY",
       "type": "Constituent",
-      "close": 4561,
-      "adjustedClose": 4561,
+      "close": 4414,
+      "adjustedClose": 4414,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "6506",
       "company": "Yaskawa Electric",
       "sourceSymbol": "6506.T",
@@ -960,14 +973,14 @@
       "expectedMic": "XJPX",
       "currency": "JPY",
       "type": "Constituent",
-      "close": 3561,
-      "adjustedClose": 3561,
+      "close": 3472,
+      "adjustedClose": 3472,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "6861",
       "company": "Keyence",
       "sourceSymbol": "6861.T",
@@ -977,14 +990,14 @@
       "expectedMic": "XJPX",
       "currency": "JPY",
       "type": "Constituent",
-      "close": 73450,
-      "adjustedClose": 73450,
+      "close": 72510,
+      "adjustedClose": 72510,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "6954",
       "company": "FANUC",
       "sourceSymbol": "6954.T",
@@ -994,14 +1007,14 @@
       "expectedMic": "XJPX",
       "currency": "JPY",
       "type": "Constituent",
-      "close": 5343,
-      "adjustedClose": 5343,
+      "close": 5232,
+      "adjustedClose": 5232,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "CGNX",
       "company": "Cognex",
       "sourceSymbol": "CGNX",
@@ -1011,14 +1024,14 @@
       "expectedMic": "XNAS",
       "currency": "USD",
       "type": "Constituent",
-      "close": 48.2,
-      "adjustedClose": 48.2,
+      "close": 48.5,
+      "adjustedClose": 48.5,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "HEXA B",
       "company": "Hexagon",
       "sourceSymbol": "HEXA-B.ST",
@@ -1028,14 +1041,14 @@
       "expectedMic": "XSTO",
       "currency": "SEK",
       "type": "Constituent",
-      "close": 106.45,
-      "adjustedClose": 106.45,
+      "close": 104.35,
+      "adjustedClose": 104.35,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "HSAI",
       "company": "Hesai",
       "sourceSymbol": "HSAI",
@@ -1045,14 +1058,14 @@
       "expectedMic": "XNAS",
       "currency": "USD",
       "type": "Constituent",
-      "close": 13.23,
-      "adjustedClose": 13.23,
+      "close": 12.59,
+      "adjustedClose": 12.59,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "NXPI",
       "company": "NXP Semiconductors",
       "sourceSymbol": "NXPI",
@@ -1062,14 +1075,14 @@
       "expectedMic": "XNAS",
       "currency": "USD",
       "type": "Constituent",
-      "close": 254.19,
-      "adjustedClose": 254.19,
+      "close": 252.51,
+      "adjustedClose": 252.51,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "OUST",
       "company": "Ouster",
       "sourceSymbol": "OUST",
@@ -1079,14 +1092,14 @@
       "expectedMic": "XNAS",
       "currency": "USD",
       "type": "Constituent",
-      "close": 31.23,
-      "adjustedClose": 31.23,
+      "close": 30.48,
+      "adjustedClose": 30.48,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "ROK",
       "company": "Rockwell Automation",
       "sourceSymbol": "ROK",
@@ -1096,14 +1109,14 @@
       "expectedMic": "XNYS",
       "currency": "USD",
       "type": "Constituent",
-      "close": 384.9,
-      "adjustedClose": 384.9,
-      "dividend": 1.45,
+      "close": 391.26,
+      "adjustedClose": 391.26,
+      "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "SIE",
       "company": "Siemens",
       "sourceSymbol": "SIE.DE",
@@ -1113,14 +1126,14 @@
       "expectedMic": "XETR",
       "currency": "EUR",
       "type": "Constituent",
-      "close": 272.55,
-      "adjustedClose": 272.55,
+      "close": 269.8,
+      "adjustedClose": 269.8,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "TER",
       "company": "Teradyne",
       "sourceSymbol": "TER",
@@ -1130,14 +1143,14 @@
       "expectedMic": "XNAS",
       "currency": "USD",
       "type": "Constituent",
-      "close": 231.9,
-      "adjustedClose": 231.9,
+      "close": 234.18,
+      "adjustedClose": 234.18,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v2"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "S&P 500",
       "company": "S&P 500",
       "sourceSymbol": "GSPC.INDX",
@@ -1147,14 +1160,14 @@
       "expectedMic": "INDX",
       "currency": "USD",
       "type": "Benchmark",
-      "close": 7416.59,
-      "adjustedClose": 7416.59,
+      "close": 7340.53,
+      "adjustedClose": 7340.53,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v1"
     },
     {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "ticker": "Nasdaq Composite",
       "company": "Nasdaq Composite",
       "sourceSymbol": "IXIC.INDX",
@@ -1164,8 +1177,8 @@
       "expectedMic": "INDX",
       "currency": "USD",
       "type": "Benchmark",
-      "close": 24509.7578,
-      "adjustedClose": 24509.7578,
+      "close": 24328.3828,
+      "adjustedClose": 24328.3828,
       "dividend": 0,
       "splitFactor": 1,
       "sourceApi": "v1"
@@ -5316,6 +5329,141 @@
       "status": "match"
     },
     {
+      "date": "2026-11-16",
+      "ticker": "002747",
+      "sourceSymbol": "002747.SZ",
+      "recordedClose": 27.46,
+      "marketstackClose": 27.46,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "300124",
+      "sourceSymbol": "300124.SZ",
+      "recordedClose": 52.96,
+      "marketstackClose": 52.96,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "6268",
+      "sourceSymbol": "6268.T",
+      "recordedClose": 3574,
+      "marketstackClose": 3574,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "6383",
+      "sourceSymbol": "6383.T",
+      "recordedClose": 4561,
+      "marketstackClose": 4561,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "6506",
+      "sourceSymbol": "6506.T",
+      "recordedClose": 3561,
+      "marketstackClose": 3561,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "6861",
+      "sourceSymbol": "6861.T",
+      "recordedClose": 73450,
+      "marketstackClose": 73450,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "6954",
+      "sourceSymbol": "6954.T",
+      "recordedClose": 5343,
+      "marketstackClose": 5343,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "CGNX",
+      "sourceSymbol": "CGNX",
+      "recordedClose": 48.2,
+      "marketstackClose": 48.2,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "HEXA B",
+      "sourceSymbol": "HEXA-B.ST",
+      "recordedClose": 106.45,
+      "marketstackClose": 106.45,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "HSAI",
+      "sourceSymbol": "HSAI",
+      "recordedClose": 13.23,
+      "marketstackClose": 13.23,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "NXPI",
+      "sourceSymbol": "NXPI",
+      "recordedClose": 254.19,
+      "marketstackClose": 254.19,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "recordedClose": 31.23,
+      "marketstackClose": 31.23,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "ROK",
+      "sourceSymbol": "ROK",
+      "recordedClose": 384.9,
+      "marketstackClose": 384.9,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "SIE",
+      "sourceSymbol": "SIE.DE",
+      "recordedClose": 272.55,
+      "marketstackClose": 272.55,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "TER",
+      "sourceSymbol": "TER",
+      "recordedClose": 231.9,
+      "marketstackClose": 231.9,
+      "difference": 0,
+      "status": "match"
+    },
+    {
       "date": "2026-10-01",
       "ticker": "Nasdaq Composite",
       "sourceSymbol": "IXIC.INDX",
@@ -5425,19 +5573,19 @@
     },
     {
       "date": "2026-10-09",
-      "ticker": "Nasdaq Composite",
-      "sourceSymbol": "IXIC.INDX",
-      "recordedClose": 27366.1699,
-      "marketstackClose": 27366.1699,
+      "ticker": "S&P 500",
+      "sourceSymbol": "GSPC.INDX",
+      "recordedClose": 7811.54,
+      "marketstackClose": 7811.54,
       "difference": 0,
       "status": "match"
     },
     {
       "date": "2026-10-09",
-      "ticker": "S&P 500",
-      "sourceSymbol": "GSPC.INDX",
-      "recordedClose": 7811.54,
-      "marketstackClose": 7811.54,
+      "ticker": "Nasdaq Composite",
+      "sourceSymbol": "IXIC.INDX",
+      "recordedClose": 27366.1699,
+      "marketstackClose": 27366.1699,
       "difference": 0,
       "status": "match"
     },
@@ -5479,19 +5627,19 @@
     },
     {
       "date": "2026-10-14",
-      "ticker": "Nasdaq Composite",
-      "sourceSymbol": "IXIC.INDX",
-      "recordedClose": 26692.8691,
-      "marketstackClose": 26692.8691,
+      "ticker": "S&P 500",
+      "sourceSymbol": "GSPC.INDX",
+      "recordedClose": 7718.94,
+      "marketstackClose": 7718.94,
       "difference": 0,
       "status": "match"
     },
     {
       "date": "2026-10-14",
-      "ticker": "S&P 500",
-      "sourceSymbol": "GSPC.INDX",
-      "recordedClose": 7718.94,
-      "marketstackClose": 7718.94,
+      "ticker": "Nasdaq Composite",
+      "sourceSymbol": "IXIC.INDX",
+      "recordedClose": 26692.8691,
+      "marketstackClose": 26692.8691,
       "difference": 0,
       "status": "match"
     },
@@ -5677,15 +5825,6 @@
     },
     {
       "date": "2026-10-29",
-      "ticker": "S&P 500",
-      "sourceSymbol": "GSPC.INDX",
-      "recordedClose": 7720.39,
-      "marketstackClose": 7720.39,
-      "difference": 0,
-      "status": "match"
-    },
-    {
-      "date": "2026-10-29",
       "ticker": "Nasdaq Composite",
       "sourceSymbol": "IXIC.INDX",
       "recordedClose": 26184.7246,
@@ -5694,11 +5833,11 @@
       "status": "match"
     },
     {
-      "date": "2026-10-30",
+      "date": "2026-10-29",
       "ticker": "S&P 500",
       "sourceSymbol": "GSPC.INDX",
-      "recordedClose": 7580.07,
-      "marketstackClose": 7580.07,
+      "recordedClose": 7720.39,
+      "marketstackClose": 7720.39,
       "difference": 0,
       "status": "match"
     },
@@ -5708,6 +5847,15 @@
       "sourceSymbol": "IXIC.INDX",
       "recordedClose": 25437,
       "marketstackClose": 25437,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-10-30",
+      "ticker": "S&P 500",
+      "sourceSymbol": "GSPC.INDX",
+      "recordedClose": 7580.07,
+      "marketstackClose": 7580.07,
       "difference": 0,
       "status": "match"
     },
@@ -5767,15 +5915,6 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "Nasdaq Composite",
-      "sourceSymbol": "IXIC.INDX",
-      "recordedClose": 24314.998,
-      "marketstackClose": 24314.998,
-      "difference": 0,
-      "status": "match"
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "S&P 500",
       "sourceSymbol": "GSPC.INDX",
       "recordedClose": 7353.73,
@@ -5784,11 +5923,11 @@
       "status": "match"
     },
     {
-      "date": "2026-11-06",
+      "date": "2026-11-05",
       "ticker": "Nasdaq Composite",
       "sourceSymbol": "IXIC.INDX",
-      "recordedClose": 24579.4297,
-      "marketstackClose": 24579.4297,
+      "recordedClose": 24314.998,
+      "marketstackClose": 24314.998,
       "difference": 0,
       "status": "match"
     },
@@ -5802,11 +5941,11 @@
       "status": "match"
     },
     {
-      "date": "2026-11-09",
+      "date": "2026-11-06",
       "ticker": "Nasdaq Composite",
       "sourceSymbol": "IXIC.INDX",
-      "recordedClose": 25253.1387,
-      "marketstackClose": 25253.1387,
+      "recordedClose": 24579.4297,
+      "marketstackClose": 24579.4297,
       "difference": 0,
       "status": "match"
     },
@@ -5820,11 +5959,11 @@
       "status": "match"
     },
     {
-      "date": "2026-11-10",
-      "ticker": "S&P 500",
-      "sourceSymbol": "GSPC.INDX",
-      "recordedClose": 7520.93,
-      "marketstackClose": 7520.93,
+      "date": "2026-11-09",
+      "ticker": "Nasdaq Composite",
+      "sourceSymbol": "IXIC.INDX",
+      "recordedClose": 25253.1387,
+      "marketstackClose": 25253.1387,
       "difference": 0,
       "status": "match"
     },
@@ -5834,6 +5973,15 @@
       "sourceSymbol": "IXIC.INDX",
       "recordedClose": 25065.875,
       "marketstackClose": 25065.875,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-10",
+      "ticker": "S&P 500",
+      "sourceSymbol": "GSPC.INDX",
+      "recordedClose": 7520.93,
+      "marketstackClose": 7520.93,
       "difference": 0,
       "status": "match"
     },
@@ -5857,19 +6005,19 @@
     },
     {
       "date": "2026-11-12",
-      "ticker": "Nasdaq Composite",
-      "sourceSymbol": "IXIC.INDX",
-      "recordedClose": 25366.0938,
-      "marketstackClose": 25366.0938,
+      "ticker": "S&P 500",
+      "sourceSymbol": "GSPC.INDX",
+      "recordedClose": 7592.4,
+      "marketstackClose": 7592.4,
       "difference": 0,
       "status": "match"
     },
     {
       "date": "2026-11-12",
-      "ticker": "S&P 500",
-      "sourceSymbol": "GSPC.INDX",
-      "recordedClose": 7592.4,
-      "marketstackClose": 7592.4,
+      "ticker": "Nasdaq Composite",
+      "sourceSymbol": "IXIC.INDX",
+      "recordedClose": 25366.0938,
+      "marketstackClose": 25366.0938,
       "difference": 0,
       "status": "match"
     },
@@ -5888,6 +6036,24 @@
       "sourceSymbol": "GSPC.INDX",
       "recordedClose": 7561.67,
       "marketstackClose": 7561.67,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "Nasdaq Composite",
+      "sourceSymbol": "IXIC.INDX",
+      "recordedClose": 24509.7578,
+      "marketstackClose": 24509.7578,
+      "difference": 0,
+      "status": "match"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "S&P 500",
+      "sourceSymbol": "GSPC.INDX",
+      "recordedClose": 7416.59,
+      "marketstackClose": 7416.59,
       "difference": 0,
       "status": "match"
     }
