@@ -1,0 +1,452 @@
+{
+  "date": "2026-11-17",
+  "baseDate": "2026-10-01",
+  "previousDate": "2026-11-16",
+  "level": 848.7737615918654,
+  "previousLevel": 863.5194329618373,
+  "dailyReturn": -0.017076247281887835,
+  "sinceLaunch": -0.15122623840813454,
+  "benchmarks": {
+    "S&P 500": {
+      "close": 7340.53,
+      "rebased": 957.487494211793,
+      "dailyReturn": -0.010255386909617581,
+      "sinceLaunch": -0.04251250578820709
+    },
+    "Nasdaq Composite": {
+      "close": 24328.3828,
+      "rebased": 905.3568337216386,
+      "dailyReturn": -0.007400113925238427,
+      "sinceLaunch": -0.09464316627836145
+    }
+  },
+  "excessReturns": {
+    "S&P 500": {
+      "daily": -0.006820860372270254,
+      "sinceLaunch": -0.10871373261992745
+    },
+    "Nasdaq Composite": {
+      "daily": -0.009676133356649408,
+      "sinceLaunch": -0.05658307212977309
+    }
+  },
+  "constituents": [
+    {
+      "ticker": "6954",
+      "company": "FANUC",
+      "baseClose": 6127,
+      "previousClose": 5343,
+      "close": 5232,
+      "relative": 0.8539252488983189,
+      "previousWeight": 0.06732462131042084,
+      "dailyReturn": -0.020774845592363866,
+      "contribution": -0.001398658612288363,
+      "weight": 0.06707128860791611,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "6506",
+      "company": "Yaskawa Electric",
+      "baseClose": 4779,
+      "previousClose": 3561,
+      "close": 3472,
+      "relative": 0.7265118225570203,
+      "previousWeight": 0.05752697909130354,
+      "dailyReturn": -0.024992979500140455,
+      "contribution": -0.001437770609133958,
+      "weight": 0.05706364133236602,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "002747",
+      "company": "Estun Automation",
+      "baseClose": 28.22,
+      "previousClose": 27.46,
+      "close": 26.2,
+      "relative": 0.9284195605953225,
+      "previousWeight": 0.07512424993401175,
+      "dailyReturn": -0.04588492352512752,
+      "contribution": -0.003447070463104695,
+      "weight": 0.07292242076020213,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "TER",
+      "company": "Teradyne",
+      "baseClose": 415.79,
+      "previousClose": 231.9,
+      "close": 234.18,
+      "relative": 0.563217008586065,
+      "previousWeight": 0.04305893995617837,
+      "dailyReturn": 0.009831824062095817,
+      "contribution": 0.0004233479219494935,
+      "weight": 0.04423770181347721,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "6268",
+      "company": "Nabtesco",
+      "baseClose": 4975,
+      "previousClose": 3574,
+      "close": 3436,
+      "relative": 0.6906532663316582,
+      "previousWeight": 0.055462327183144686,
+      "dailyReturn": -0.038612199216564114,
+      "contribution": -0.0021415224262098416,
+      "weight": 0.054247142374456846,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "300124",
+      "company": "Inovance",
+      "baseClose": 51.9,
+      "previousClose": 52.96,
+      "close": 52.8,
+      "relative": 1.0173410404624277,
+      "previousWeight": 0.07878022992489231,
+      "dailyReturn": -0.0030211480362538623,
+      "contribution": -0.00023800673693321616,
+      "weight": 0.07990673027359818,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "6861",
+      "company": "Keyence",
+      "baseClose": 81200,
+      "previousClose": 73450,
+      "close": 72510,
+      "relative": 0.8929802955665025,
+      "previousWeight": 0.06983488081588098,
+      "dailyReturn": -0.012797821647379193,
+      "contribution": -0.0008937343494476275,
+      "weight": 0.07013885489671816,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "CGNX",
+      "company": "Cognex",
+      "baseClose": 62.22,
+      "previousClose": 48.2,
+      "close": 48.5,
+      "relative": 0.77949212471874,
+      "previousWeight": 0.05980722566873373,
+      "dailyReturn": 0.006224066390041472,
+      "contribution": 0.00037224414316639116,
+      "weight": 0.06122496240983474,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "OUST",
+      "company": "Ouster",
+      "baseClose": 40.87,
+      "previousClose": 31.23,
+      "close": 30.48,
+      "relative": 0.7457793002202104,
+      "previousWeight": 0.05899347404431924,
+      "dailyReturn": -0.0240153698366955,
+      "contribution": -0.001416750097125823,
+      "weight": 0.05857699927178946,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "HSAI",
+      "company": "Hesai",
+      "baseClose": 15.93,
+      "previousClose": 13.23,
+      "close": 12.59,
+      "relative": 0.7903327055869429,
+      "previousWeight": 0.06411810727699628,
+      "dailyReturn": -0.04837490551776269,
+      "contribution": -0.0031017073815024676,
+      "weight": 0.062076432405629746,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "ROK",
+      "company": "Rockwell Automation",
+      "baseClose": 442.45,
+      "previousClose": 384.9,
+      "close": 391.26,
+      "relative": 0.8843033111085998,
+      "previousWeight": 0.06716149224582213,
+      "dailyReturn": 0.016523772408417736,
+      "contribution": 0.0011097612124796774,
+      "weight": 0.06945732389670004,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "SIE",
+      "company": "Siemens",
+      "baseClose": 271.9,
+      "previousClose": 272.55,
+      "close": 269.8,
+      "relative": 0.9922765722692167,
+      "previousWeight": 0.07738799664960669,
+      "dailyReturn": -0.010089891762979253,
+      "contribution": -0.0007808365099483325,
+      "weight": 0.07793804954638038,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "NXPI",
+      "company": "NXP Semiconductors",
+      "baseClose": 239.19,
+      "previousClose": 254.19,
+      "close": 252.51,
+      "relative": 1.0556879468205191,
+      "previousWeight": 0.08204499024647312,
+      "dailyReturn": -0.006609229316652976,
+      "contribution": -0.0005422541548214976,
+      "weight": 0.08291867590570413,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "6383",
+      "company": "Daifuku",
+      "baseClose": 5832,
+      "previousClose": 4561,
+      "close": 4414,
+      "relative": 0.7568587105624143,
+      "previousWeight": 0.060378063849459776,
+      "dailyReturn": -0.03222977417233064,
+      "contribution": -0.0019459713628306489,
+      "weight": 0.05944722805308641,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "HEXA B",
+      "company": "Hexagon",
+      "baseClose": 99.02,
+      "previousClose": 106.45,
+      "close": 104.35,
+      "relative": 1.0538275095940215,
+      "previousWeight": 0.0829964218027566,
+      "dailyReturn": -0.019727571629873264,
+      "contribution": -0.001637317856137056,
+      "weight": 0.08277254845214035,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    }
+  ],
+  "weightTotal": 0.9999999999999999,
+  "contributionTotal": -0.017076247281887964,
+  "reconciliationDifference": -1.2836953722228372e-16,
+  "topPositive": [
+    {
+      "ticker": "ROK",
+      "company": "Rockwell Automation",
+      "baseClose": 442.45,
+      "previousClose": 384.9,
+      "close": 391.26,
+      "relative": 0.8843033111085998,
+      "previousWeight": 0.06716149224582213,
+      "dailyReturn": 0.016523772408417736,
+      "contribution": 0.0011097612124796774,
+      "weight": 0.06945732389670004,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "TER",
+      "company": "Teradyne",
+      "baseClose": 415.79,
+      "previousClose": 231.9,
+      "close": 234.18,
+      "relative": 0.563217008586065,
+      "previousWeight": 0.04305893995617837,
+      "dailyReturn": 0.009831824062095817,
+      "contribution": 0.0004233479219494935,
+      "weight": 0.04423770181347721,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "CGNX",
+      "company": "Cognex",
+      "baseClose": 62.22,
+      "previousClose": 48.2,
+      "close": 48.5,
+      "relative": 0.77949212471874,
+      "previousWeight": 0.05980722566873373,
+      "dailyReturn": 0.006224066390041472,
+      "contribution": 0.00037224414316639116,
+      "weight": 0.06122496240983474,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    }
+  ],
+  "topNegative": [
+    {
+      "ticker": "002747",
+      "company": "Estun Automation",
+      "baseClose": 28.22,
+      "previousClose": 27.46,
+      "close": 26.2,
+      "relative": 0.9284195605953225,
+      "previousWeight": 0.07512424993401175,
+      "dailyReturn": -0.04588492352512752,
+      "contribution": -0.003447070463104695,
+      "weight": 0.07292242076020213,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "HSAI",
+      "company": "Hesai",
+      "baseClose": 15.93,
+      "previousClose": 13.23,
+      "close": 12.59,
+      "relative": 0.7903327055869429,
+      "previousWeight": 0.06411810727699628,
+      "dailyReturn": -0.04837490551776269,
+      "contribution": -0.0031017073815024676,
+      "weight": 0.062076432405629746,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    },
+    {
+      "ticker": "6268",
+      "company": "Nabtesco",
+      "baseClose": 4975,
+      "previousClose": 3574,
+      "close": 3436,
+      "relative": 0.6906532663316582,
+      "previousWeight": 0.055462327183144686,
+      "dailyReturn": -0.038612199216564114,
+      "contribution": -0.0021415224262098416,
+      "weight": 0.054247142374456846,
+      "sourceDate": "2026-11-17",
+      "carriedForward": false
+    }
+  ],
+  "receiptPath": "data/bspi15/raw/marketstack/2026-11-18T12-30-22-852Z",
+  "auditStatus": "passed",
+  "marketHolidays": [],
+  "carriedForward": [],
+  "approvedProviderMicExceptions": [
+    {
+      "date": "2026-11-17",
+      "ticker": "OUST",
+      "sourceSymbol": "OUST",
+      "sourceName": "Ouster Inc - Class A",
+      "sourceCurrency": "USD",
+      "expectedMic": "XNAS",
+      "receivedMic": "XNYS",
+      "sourceApi": "v2",
+      "exceptionId": "ouster-marketstack-legacy-nyse-tag",
+      "approvalRecord": "data/bspi15/provider-mic-exceptions.json",
+      "status": "approved-provider-MIC-exception"
+    }
+  ],
+  "corporateActions": {
+    "providerDividends": 0,
+    "providerSplitFlags": 0,
+    "relevantEffectiveDateEventsIdentified": [],
+    "review": "Provider identity, split/dividend flags, unadjusted and adjusted closes, price changes and date-specific corporate-action searches reviewed.",
+    "upcomingEvents": [
+      {
+        "ticker": "6861",
+        "type": "stock-split",
+        "ratio": 5,
+        "recordDate": "2026-11-20",
+        "legalEffectiveDate": "2026-11-21",
+        "exchangeExDate": "2026-11-19",
+        "status": "confirmed-ex-date-pending-effective-split-continuity-validation",
+        "currentDateImpact": "none",
+        "record": "data/bspi15/raw/corporate-actions/2026-10-29-keyence/sources.json",
+        "optionsAdjustmentDate": "2026-11-19",
+        "optionsAdjustmentSource": "https://www.jpx.co.jp/news/2020/20261105-01.html",
+        "reviewNote": "JPX states November 19 starts trading in split shares; Nikkei confirms the same ex-right date. Reconcile split continuity before the first split-priced cash close. No November 16 adjustment.",
+        "exchangeExDateSource": "https://www.jpx.co.jp/english/news/2020/20260105-01.html",
+        "indexProviderConfirmation": "https://indexes.nikkei.co.jp/nkave/archives/news/20261106E_1.pdf"
+      },
+      {
+        "ticker": "CGNX",
+        "type": "cash-dividend",
+        "amountPerShare": 0.09,
+        "currency": "USD",
+        "announcementDate": "2026-11-04",
+        "recordDate": "2026-11-19",
+        "paymentDate": "2026-12-03",
+        "exchangeExDate": null,
+        "currentDateImpact": "none",
+        "treatment": "Cash dividends excluded from the price-return index.",
+        "source": "https://www.prnewswire.com/news-releases/cognex-reports-third-quarter-2026-results-302929644.html"
+      },
+      {
+        "ticker": "TER",
+        "type": "cash-dividend",
+        "amountPerShare": 0.13,
+        "currency": "USD",
+        "announcementDate": "2026-11-09",
+        "recordDate": "2026-11-23",
+        "paymentDate": "2026-12-16",
+        "exchangeExDate": null,
+        "currentDateImpact": "none",
+        "treatment": "Cash dividends excluded from the price-return index.",
+        "source": "https://investors.teradyne.com/news-events/press-releases/detail/457/teradyne-declares-quarterly-cash-dividend"
+      },
+      {
+        "ticker": "SIE",
+        "type": "planned-spin-off",
+        "announcementDate": "2026-11-12",
+        "plannedPeriod": "fiscal 2027",
+        "distributionRatio": "one Siemens Healthineers share per two Siemens shares",
+        "stakeToBeTransferredPercent": 34.1,
+        "exchangeExDate": null,
+        "currentDateImpact": "none",
+        "status": "future-spin-off-awaiting-effective-date-and-methodology-treatment",
+        "treatment": "No November 12 index adjustment. Verify approvals, ex-date and methodology continuity before the distribution takes effect.",
+        "source": "https://press.siemens.com/global/en/pressrelease/outstanding-fiscal-2026-performance-industrial-ai-drive-future-growth"
+      },
+      {
+        "ticker": "SIE",
+        "type": "proposed-cash-dividend",
+        "amountPerShare": 5.5,
+        "currency": "EUR",
+        "announcementDate": "2026-11-12",
+        "exchangeExDate": null,
+        "currentDateImpact": "none",
+        "treatment": "Proposed for shareholder approval. Cash dividends excluded from the price-return index.",
+        "source": "https://press.siemens.com/global/en/pressrelease/outstanding-fiscal-2026-performance-industrial-ai-drive-future-growth"
+      }
+    ],
+    "announcementsReviewed": [
+      {
+        "ticker": "6861",
+        "announcementDate": "2026-11-05",
+        "source": "https://www.keyence.co.jp/pdf/PressRelease_20261105.pdf",
+        "event": "Follow-up of the formal record-date notice for the announced 5-for-1 split.",
+        "treatment": "No November 17 adjustment. The confirmed exchange ex-date is November 19; reconcile continuity before the first split-priced session."
+      },
+      {
+        "ticker": "CGNX",
+        "announcementDate": "2026-11-04",
+        "source": "https://www.prnewswire.com/news-releases/cognex-reports-third-quarter-2026-results-302929644.html",
+        "event": "Follow-up of the announced future cash dividend and all-cash RealSense acquisition agreement.",
+        "treatment": "Cash dividends excluded. No current listing or index-unit continuity adjustment."
+      }
+    ]
+  },
+  "calendarNotes": [
+    {
+      "date": "2026-11-17",
+      "status": "all-tracked-exchanges-open",
+      "note": "All 17 requested-date observations received. No current holiday carry."
+    }
+  ]
+}
