@@ -229,6 +229,12 @@ export default async function NewsArticlePage({ params }: Props) {
                           </Fragment>
                         ))}
                       </div>
+                      {section.image ? (
+                        <figure className="mt-8">
+                          <Image src={section.image.src} alt={section.image.alt} width={section.image.width} height={section.image.height} sizes="(min-width: 1024px) 896px, calc(100vw - 80px)" className="h-auto w-full rounded-[20px]" />
+                          <figcaption className="mt-3 text-sm leading-6 text-[#727a84]">{section.image.caption}</figcaption>
+                        </figure>
+                      ) : null}
                     </section>
                     {index === 1 ? (
                       <EmailSignupCard
