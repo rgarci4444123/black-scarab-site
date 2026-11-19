@@ -7,6 +7,7 @@ export type NewsSource = {
 export type NewsSection = {
   heading: string;
   paragraphs: string[];
+  image?: { src: string; alt: string; caption: string; width: number; height: number; };
   visual?: "agility-financials" | "agility-revenue-applications";
   visualAfterParagraph?: number;
 };
@@ -36,6 +37,172 @@ export type NewsUpdate = {
 };
 
 export const newsUpdates: NewsUpdate[] = [
+{
+  "slug": "tesla-optimus-mining-refining",
+  "title": "Tesla Optimus could enter mining and refining before homes, Musk says",
+  "summary": "Elon Musk expects Optimus to handle household chores within 12 to 18 months, but sees heavy industry as its most valuable initial use. Tesla’s factory hiring offers clues about how early deployments could work.",
+  "category": "Humanoids",
+  "publishedDate": "2026-11-19",
+  "publishedAt": "2026-11-19T12:20:32-05:00",
+  "publishedLabel": "November 19, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/tesla-optimus-mining-refining-cover.png",
+  "imageAlt": "Conceptual rendering of a white and black humanoid beside ore conveyors, a processing drum and an industrial robotic arm, with cyan and magenta accents.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "readingTime": "6 min read",
+  "keyPoints": [
+    "Musk named mining and ore refining as potentially valuable early uses for Optimus at the November 18 TomorrowX Summit.",
+    "Tesla reports an early Optimus production ramp in Fremont. Its hiring connects deployment with factory layouts, fleet software and training data.",
+    "Black Scarab’s industrial examples explore possible use cases. Productive hours, reliability and integration will determine the economics."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Elon Musk said mining and ore refining could be among the most economically valuable early uses for Tesla Optimus, even as he forecast household capabilities within 12 to 18 months.",
+        "Speaking remotely at the TomorrowX Summit in Austin on November 18, Musk said Optimus could eventually wash dishes, cook meals, maintain homes and supervise children. Asked about clearing dishes and taking out the trash, he estimated 12 to 18 months and said that no humanoid currently performs the complete dishwashing sequence he described.",
+        "Musk also suggested Tesla could demonstrate Optimus performing unscripted tasks within one or two months, emphasizing the importance of robots responding to unfamiliar situations rather than executing predetermined routines.",
+        "But when discussing where Optimus would initially deliver the greatest economic value, Musk identified heavy industry, particularly mining and ore refining.",
+        "His reasoning centered on utilization. Industrial facilities can operate 24 hours a day, seven days a week, creating opportunities for robots to perform productive work across multiple shifts.",
+        "For a robot operating in an environment with up to 168 working hours available each week, the potential economic return could be substantially greater than in a home where it might spend most of the day idle.",
+        "Musk also connected the opportunity to domestic mineral production, citing the United States' dependence on other countries for mining and refining critical materials."
+      ]
+    },
+    {
+      "heading": "Tesla's hiring plans offer clues about industrial deployment",
+      "paragraphs": [
+        "Tesla has begun taking concrete steps toward industrializing Optimus.",
+        "In its third quarter 2026 update, Tesla confirmed that the first production quality Optimus robots had begun coming off its Fremont manufacturing line. Production remains in an early ramp.",
+        "More revealing are two engineering positions that describe how Tesla intends to integrate humanoids into existing industrial operations.",
+        "An Optimus Integration Engineer position calls for identifying high return manufacturing tasks, preparing production lines for deployment, redesigning station layouts and material flows, and collecting operational data to improve robot models.",
+        "A separate Robotics Integrations Engineer position focuses on software coordinating Optimus with autonomous mobile robots, automated storage systems and conveyors across Tesla's factories.",
+        "Taken together, the postings suggest an integration strategy built around existing factory infrastructure rather than deploying humanoids as independent, general purpose workers from the outset.",
+        "They also highlight an important commercial requirement: a robot's capabilities alone are insufficient. Manufacturing processes, supporting equipment and software systems must be prepared to use those capabilities productively."
+      ]
+    },
+    {
+      "heading": "Where could the first Optimus deployments happen?",
+      "paragraphs": [
+        "Musk did not name potential customers in mining or refining. However, existing Tesla relationships and North American industrial operations provide a starting point for identifying plausible deployment environments.",
+        "**Tesla itself may be the most immediate candidate.** The company is ramping lithium refining operations in Texas, alongside its existing vehicle and battery manufacturing facilities.",
+        "These operations could eventually provide opportunities for Optimus to perform repetitive material handling, sample transportation, machine tending and routine equipment inspections. There is no public confirmation of Optimus operating at Tesla's lithium refinery.",
+        "Outside Tesla, **Vale offers an interesting possibility** because of its established nickel supply relationship with the automaker. The company signed a long term agreement to supply Tesla with Class 1 nickel from its Canadian operations, which include refining facilities.",
+        "Other potential environments include **Rio Tinto's Kennecott copper operation in Utah**, which combines mining, smelting and refining, and **MP Materials' Mountain Pass facility in California**, which processes and refines rare earth materials.",
+        "**Freeport McMoRan** provides another example. The company recently approved a $4.5 billion modernization and expansion of its Bagdad copper and molybdenum operation in Arizona, with automation among the technologies expected to support improved efficiency.",
+        "These companies are examples identified through Black Scarab's assessment of their industrial operations and, in Vale's case, an existing Tesla commercial relationship. None has been publicly identified as a prospective Optimus customer."
+      ]
+    },
+    {
+      "heading": "Black Scarab analysis: What the first industrial humanoids might actually do",
+      "paragraphs": [
+        "We see several possibilities emerging from Tesla's hiring activity, existing industrial automation practices and early humanoid deployments elsewhere.",
+        "**The first opportunity may be the work between automated machines.**",
+        "Modern mines, refineries and factories already use conveyors, robotic arms, automated vehicles and specialized processing equipment. Yet many operations still require people to transport smaller materials, manipulate tools, load equipment or complete tasks that are difficult to justify automating individually.",
+        "A humanoid capable of moving between workstations and manipulating different objects could address some of these gaps without requiring a dedicated machine for every task.",
+        "For example, an Optimus robot might transport sealed material samples from a processing station to a laboratory, replenish consumables, load suitable components into machinery or conduct visual inspection rounds.",
+        "These are hypothetical tasks, not capabilities Tesla has demonstrated at industrial scale. Their feasibility would depend on environmental conditions, manipulation reliability and safety requirements.",
+        "**The first customers may be the factories that are already highly automated.**",
+        "Although labor shortages might seem like the strongest reason to adopt humanoids, facilities with sophisticated automation infrastructure could be better positioned for initial deployments.",
+        "Existing industrial software, established safety procedures and experienced integration teams can simplify the process of introducing another robotic system.",
+        "BMW's experience provides a useful precedent.",
+        "BMW reports that Figure AI’s Figure 02 handled more than 90,000 sheet metal components over approximately 1,250 operating hours during its 2025 Spartanburg pilot, supporting production of more than 30,000 BMW X3 vehicles.",
+        "BMW deliberately selected an already highly automated body shop, where employees had experience integrating robotic equipment.",
+        "The robot primarily performed a repetitive component handling operation rather than moving freely between dozens of unrelated tasks.",
+        "That suggests another possibility: **early customers may deploy general purpose humanoid hardware to perform narrowly defined jobs**, expanding their responsibilities as reliability and manipulation capabilities improve.",
+        "**Industrial deployments could also become training environments.**",
+        "Tesla's Optimus Integration Engineer position explicitly connects factory deployments with data collection and model improvement.",
+        "This raises the possibility that early industrial customers could serve two purposes: generating economic value through useful work while producing real world experience that improves future robot capabilities.",
+        "Repeatedly handling different objects, encountering variations in factory environments and recovering from mistakes could provide valuable training information, particularly when paired with human supervision and reliable performance feedback.",
+        "In this scenario, the first industrial Optimus robots would not simply be products deployed into the market. They could also become part of the development process for more capable generations.",
+        "These are Black Scarab's hypotheses based on available evidence, not confirmed Tesla deployment strategies."
+      ],
+      "image": {
+        "src": "/images/news/tesla-optimus-mining-refining.png",
+        "alt": "Conceptual charcoal and graphite illustration of an articulated robotic hand placing a sealed mineral sample in a metal rack, with refinery pipes in the background and cyan highlights.",
+        "caption": "Editorial illustration by Black Scarab.",
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "heading": "The economics will ultimately determine adoption",
+      "paragraphs": [
+        "Musk's argument that industrial robots could work within an operating week of 168 hours is compelling, but available operating hours are not the same as productive robot hours.",
+        "Charging, maintenance, human intervention, task completion speed and equipment reliability will determine actual utilization.",
+        "Industrial customers will also need to compare humanoids against existing automation technologies. An autonomous mobile robot or specialized robotic arm may remain more economical for a narrowly defined application.",
+        "The potential advantage of a humanoid is flexibility: the possibility of using the same hardware across different tasks, particularly in environments built around human workers.",
+        "That advantage becomes commercially meaningful only when the robot can complete those tasks reliably and at a competitive cost.",
+        "Tesla's next proposed demonstration may reveal how much progress Optimus has made in responding to unfamiliar objects and instructions. But sustained performance in working factories will provide a more meaningful test of commercial readiness.",
+        "The first major breakthrough for Optimus may not be a robot that can cook dinner or clean an entire house.",
+        "It may be a robot that can complete one valuable industrial task, thousands of times, with minimal intervention."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "iConnections: TomorrowX Summit interview with Elon Musk, Optimus discussion from 22:46 to 28:41",
+      "url": "https://www.youtube.com/watch?v=DY8clym2-jQ"
+    },
+    {
+      "label": "iConnections: November 17 and 18 TomorrowX Summit event details",
+      "url": "https://iconnections.io/tomorrowx-summit/"
+    },
+    {
+      "label": "Tesla: third quarter 2026 update, Optimus production and lithium refining",
+      "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf"
+    },
+    {
+      "label": "Tesla: Optimus Integration Engineer, requisition 276674",
+      "url": "https://www.tesla.com/careers/search/job/optimus-integration-engineer-276674"
+    },
+    {
+      "label": "Tesla: Robotics Integrations Engineer, requisition 268131",
+      "url": "https://www.tesla.com/careers/search/job/robotics-integrations-engineer-268131"
+    },
+    {
+      "label": "Vale: nickel supply agreement with Tesla",
+      "url": "https://www.vale.com/pt/w/vale-confirma-acordo-com-a-tesla-para-fornecimento-de-niquel-de-baixa-emissao-de-carbono"
+    },
+    {
+      "label": "Reuters: Vale’s Canadian nickel supply agreement with Tesla",
+      "url": "https://www.investing.com/news/stock-market-news/brazils-vale-signs-longterm-deal-to-supply-tesla-with-nickel-2819403"
+    },
+    {
+      "label": "Rio Tinto: Kennecott’s integrated mining, smelting and refining operations",
+      "url": "https://www.riotinto.com/en/operations/us/kennecott"
+    },
+    {
+      "label": "MP Materials: Mountain Pass mine and processing facility",
+      "url": "https://www.mpmaterials.com/mountain-pass"
+    },
+    {
+      "label": "Freeport McMoRan: November 4 Bagdad expansion approval",
+      "url": "https://investors.fcx.com/investors/news-releases/news-release-details/2026/Freeport-Announces-Plans-to-Boost-U-S--Copper--Molybdenum-Production/default.aspx"
+    },
+    {
+      "label": "BMW Group: Figure 02 pilot results and factory integration",
+      "url": "https://newsroom.bmwgroup.com/global/bmw-group-to-deploy-humanoid-robots-in-production-in-germany-for-the-first-time"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "mining",
+    "relevantIndustries": [
+      "manufacturing",
+      "consumer-home"
+    ],
+    "technologies": [
+      "humanoid-robotics",
+      "embodied-ai"
+    ],
+    "applications": [
+      "material-handling",
+      "robot-training"
+    ]
+  }
+},
 {
   "slug": "humyn-labs-robot-data-deployment",
   "title": "Humyn Labs raises $47 million for robot data and deployment testing",
