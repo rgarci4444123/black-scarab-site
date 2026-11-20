@@ -38,6 +38,122 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "familymart-telexistence-january-rollout",
+  "title": "FamilyMart plans nationwide drink stocking robot rollout from January",
+  "summary": "FamilyMart will begin a phased Japanese rollout of Telexistence’s TX GHOST and Smart Shelf in January 2027. The retailer reports roughly 70% less beverage replenishment work at early stores.",
+  "category": "Deployment",
+  "publishedDate": "2026-11-20",
+  "publishedAt": "2026-11-20T09:19:39-05:00",
+  "publishedLabel": "November 20, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/familymart-telexistence-january-rollout.png",
+  "imageAlt": "Paper sculpture of a silver robot arm moving a blue drink bottle between cooler shelves filled with blue and pale yellow bottles. A conceptual illustration of automated replenishment.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "readingTime": "5 min read",
+  "keyPoints": [
+    "The phased nationwide rollout in Japan is planned to start in January 2027.",
+    "FamilyMart reports approximately 70% less time spent on beverage replenishment at early stores.",
+    "Staff load Smart Shelf, TX GHOST stocks the display, and remote operators assist with difficult situations."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "FamilyMart plans to begin a phased nationwide rollout of Telexistence’s drink stocking robots in Japan in January 2027, expanding a collaboration that began with store trials in 2020.",
+        "The convenience store operator announced the introduction of TX GHOST and Smart Shelf on November 19. FamilyMart says early installations reduced the daily time spent on beverage replenishment by approximately 70%.",
+        "The system divides the job between staff, a digital inventory shelf and a robot working inside the beverage cooler. Employees load reserve stock onto Smart Shelf. TX GHOST transfers drinks to the display shelves that customers shop from.",
+        "The proposition is straightforward: spend less of a shift checking drinks and moving bottles, while keeping popular products available. Making that work across a national retail network will test the machinery, inventory software and human support behind it."
+      ]
+    },
+    {
+      "heading": "The inventory shelf does part of the work",
+      "paragraphs": [
+        "Beverage replenishment starts before a bottle reaches the display. Staff need to organize deliveries, locate reserve stock and check what is running low. Automating the final movement is useful only if the rest of that process keeps up.",
+        "FamilyMart describes Smart Shelf as a way to simplify those earlier steps. An employee scans the first unit of a product and places the drinks on the shelf. The system tracks the item’s location and quantity, and calculates suggested replenishment quantities.",
+        "Different products can share the inventory shelf, reducing the sorting that employees otherwise perform. The robot then draws from that stock to refill the customer display.",
+        "For the retailer, this makes the shelf an important part of the installation. Inventory information connects what employees load with what the machine needs to move. That coordination is central to turning repeated bottle handling into a usable store process."
+      ]
+    },
+    {
+      "heading": "Stocking the drinks that sell",
+      "paragraphs": [
+        "According to Telexistence, TX GHOST can stock up to approximately 1,800 drinks a day and is designed to replenish displays around the clock. Its software analyzes each store’s sales data and gives priority to products that sell well.",
+        "The distinction between moving drinks and choosing which drinks to move matters commercially. A robot could complete many successful transfers while leaving the product customers want unavailable. Prioritizing demand connects the handling task to the store’s sales opportunity.",
+        "The 1,800 figure describes maximum stocking capacity. Actual useful output will depend on the replenishment a store needs and how reliably the system handles it.",
+        "Black Scarab sees the strongest part of the proposal in the combination: inventory tracking supplies the location of the stock, sales information sets the priorities, and the robot performs the physical replenishment. The value comes from those parts working together throughout a shift."
+      ]
+    },
+    {
+      "heading": "A rollout years in the making",
+      "paragraphs": [
+        "The January introduction builds on an established relationship. FamilyMart and Telexistence say they have been testing and refining robotic stocking in stores since 2020.",
+        "In August 2022, they announced plans to introduce an earlier robot, TX SCARA, with expansion to 300 stores. That announcement also paired robotic replenishment with software for analyzing store work and improving staff schedules.",
+        "The 2022 target belongs to that earlier program. The current announcement opens a new phase around TX GHOST and Smart Shelf, with nationwide deployment scheduled to proceed in stages from January 2027.",
+        "The history helps explain the focus on the surrounding workflow. A store is already serving customers while the equipment works. Stock needs replenishing at different rates, and employees must fit deliveries and inventory loading around their other duties. Years of testing offer a route to adapting the system to that routine.",
+        "The next stage will show how well those refinements travel between locations. Repeatable installation, dependable service and an inventory process employees can use every day will matter alongside the robot’s individual movements."
+      ]
+    },
+    {
+      "heading": "Remote operators remain part of the operation",
+      "paragraphs": [
+        "Telexistence says TX GHOST performs most stocking autonomously. When it encounters a difficult situation, such as a bottle that has fallen over, its remote operators can assist through teleoperation.",
+        "That arrangement gives the machine access to human judgment without requiring every exception to be resolved by someone working in the store. Remote assistance is part of the operating system supporting the rollout.",
+        "Telexistence also says it collects motion data during those interventions to train its own robot foundation models. Its aim is to improve autonomous performance as the machines accumulate experience in the field.",
+        "The learning proposition and the current service need to be assessed on their own terms. Training data may help improve future behavior. The immediate job is to restore stocking promptly when the robot needs help.",
+        "As installations expand, a useful signal will be the amount of assistance required per store. If autonomous handling improves, a support team could oversee more useful work. If exceptions remain frequent, the human effort behind the fleet will remain an important part of the economics. That is Black Scarab’s operating analysis of the model."
+      ]
+    },
+    {
+      "heading": "What the 70% saving would change",
+      "paragraphs": [
+        "FamilyMart’s reported reduction concerns beverage replenishment work at early stores. It gives a concrete indication of the task the system is intended to improve.",
+        "The retailer says reducing that workload can help optimize shifts and allow employees to spend more time on customer service and improving the sales floor. Those outcomes depend on how stores use the time released.",
+        "For example, a store could redirect attention toward customers during a busy period while the robot continues stocking drinks. That is a possible operational benefit, distinct from an automatic reduction in paid hours.",
+        "ITmedia and Impress Watch corroborate the rollout announcement and the companies’ description of the system. Their reports repeat the claimed labor saving rather than providing an independent measurement of store performance.",
+        "From January, the signals to watch are the pace of installations, beverage availability during busy periods, sustained reductions in staff replenishment time and the support effort needed to keep the robots working.",
+        "The planned expansion puts a familiar retail chore at the center of a larger robotics test: whether a focused machine, connected to inventory and human support, can make an everyday operation more dependable across many stores."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "FamilyMart, November 19 rollout announcement",
+      "url": "https://www.family.co.jp/company/news_releases/2026/20261119_02.html"
+    },
+    {
+      "label": "Telexistence, November 19 TX GHOST and Smart Shelf announcement",
+      "url": "https://tx-inc.com/en/blog/2026/11/19/12836/"
+    },
+    {
+      "label": "ITmedia AI+, November 19 reporting",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2611/19/2000003329/"
+    },
+    {
+      "label": "Impress Watch, November 19 reporting",
+      "url": "https://www.watch.impress.co.jp/docs/news/2157937.html"
+    },
+    {
+      "label": "Telexistence, August 10, 2022 TX SCARA rollout announcement",
+      "url": "https://tx-inc.com/ja/blog/2022/08/10/11740/"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "retail",
+    "relevantIndustries": [],
+    "technologies": [
+      "manipulation",
+      "teleoperation"
+    ],
+    "applications": [
+      "material-handling",
+      "inventory-monitoring"
+    ]
+  }
+},
+{
   "slug": "tesla-optimus-mining-refining",
   "title": "Tesla Optimus could enter mining and refining before homes, Musk says",
   "summary": "Elon Musk expects Optimus to handle household chores within 12 to 18 months, but sees heavy industry as its most valuable initial use. Tesla’s factory hiring offers clues about how early deployments could work.",

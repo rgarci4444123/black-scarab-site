@@ -1,0 +1,17 @@
+{
+  "verifiedAt": "2026-11-20T14:34:37.173799+00:00",
+  "id": "bspi15-morning-update",
+  "status": "ACTIVE",
+  "timeZone": "America/New_York",
+  "schedule": "Daily 07:30",
+  "targetThreadId": "01a11da0-2b28-76f0-a0fb-c9333ae9837f",
+  "promptSha256": "e6f3f0410639349d4c686d1e44c068bfe46ca19d81798090bad3574d7b716011",
+  "changes": [
+    "Use maintained update:bspi15-daily command",
+    "Apply verified split records to every historical calculation comparison",
+    "Honor exact authorized November 18 Keyence source correction",
+    "Preserve strict corporate-action, identity, history and price checks",
+    "Keep existing automatic verified pushes"
+  ],
+  "verification": "Updated through Codex automation tool; saved prompt and existing schedule reread and verified"
+}
