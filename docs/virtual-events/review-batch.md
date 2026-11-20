@@ -1,4 +1,4 @@
 # Virtual events review
 
-Prepared 2026-11-17T22:50:31.154Z. 0 new or materially changed candidates.
+Prepared 2026-11-20T22:13:08.703Z. 0 new or materially changed candidates.
 
