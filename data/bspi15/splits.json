@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "methodologyVersion": "1.0",
+  "events": [
+    {
+      "id": "keyence-2026-11-19-five-for-one",
+      "ticker": "6861",
+      "sourceSymbol": "6861.T",
+      "mic": "XJPX",
+      "currency": "JPY",
+      "sourceApi": "v2",
+      "ratio": 5,
+      "effectiveTradingDate": "2026-11-19",
+      "legalEffectiveDate": "2026-11-21",
+      "methodologyVersion": "1.0",
+      "sourceUrl": "https://www.jpx.co.jp/english/news/2020/20260105-01.html",
+      "additionalSourceUrl": "https://indexes.nikkei.co.jp/nkave/archives/news/20261106E_1.pdf",
+      "issuerReceipt": "data/bspi15/raw/corporate-actions/2026-10-29-keyence/split-notice.pdf",
+      "reviewedAt": "2026-11-20T14:21:55.461860+00:00",
+      "authorization": {
+        "date": "2026-11-20",
+        "by": "Rodolfo Garcia Calderoni",
+        "record": "User approved the recommended Keyence November 18 verified price exception, 5-for-1 split handling, pending-date catch-up and recurring automation in this chat.",
+        "quote": "correct lets update that and set it up so that it becomes smooth automation moving forward"
+      }
+    }
+  ]
+}

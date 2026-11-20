@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "methodologyVersion": "1.0",
+  "corrections": [
+    {
+      "id": "keyence-2026-11-18-unadjusted-close",
+      "ticker": "6861",
+      "date": "2026-11-18",
+      "sourceSymbol": "6861.T",
+      "sourceName": "Keyence Corporation",
+      "mic": "XJPX",
+      "currency": "JPY",
+      "sourceApi": "v2",
+      "providerClose": 14722,
+      "providerAdjustedClose": 14722,
+      "providerSplitFactor": 1,
+      "correctedClose": 73610,
+      "sourceUrl": "https://www.jpx.co.jp/automation/markets/statistics-equities/daily/files/202611/stq_20261118.pdf",
+      "sourcePage": 26,
+      "secondarySourceUrl": "https://finance.yahoo.co.jp/quote/6861.T/history",
+      "receipt": "data/bspi15/raw/corporate-actions/2026-11-19-keyence-validation/jpx-daily-20261118.pdf",
+      "receiptSha256": "35cf420073172f819b559a94623aa68d550be56aea1a686a93ce6b33ea912d12",
+      "reason": "Marketstack returns the split-scaled close in its raw field one session before the split. Official JPX report and Yahoo distinguish the actual JPY 73,610 close from the JPY 14,722 adjusted close.",
+      "approvedAt": "2026-11-20T14:21:55.461860+00:00",
+      "authorization": {
+        "date": "2026-11-20",
+        "by": "Rodolfo Garcia Calderoni",
+        "record": "User approved the recommended Keyence November 18 verified price exception, 5-for-1 split handling, pending-date catch-up and recurring automation in this chat.",
+        "quote": "correct lets update that and set it up so that it becomes smooth automation moving forward"
+      }
+    }
+  ]
+}

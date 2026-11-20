@@ -13,14 +13,14 @@ For every BSPI15 constituent:
 1. Record the explicit requested trading date’s unadjusted closing price in its listing currency.
 2. Compare it with the previous available closing price.
 3. Carry forward the previous canonical price and assign a zero return only when an official exchange calendar verifies the closure. Retain the calendar URL and date.
-4. Apply split adjustments when necessary.
+4. Use verified `splits.json` events to express every historical comparison on one share basis. Original closes remain in canonical/audit inputs; calculation prices include the cumulative split factor. Register future routine splits only after verifying the exact trading ex-date and ratio against official evidence. Unverified or complex actions remain blocked.
 5. Exclude dividends because BSPI15 is a price return index.
 6. Calculate its local currency price return.
 7. Calculate its drifted weight from the previous effective weight.
 
 Calculate the new BSPI15 level as the previous index level multiplied by one plus the sum of each previous effective weight multiplied by its constituent return.
 
-Record the official closing levels for the S&P 500 Price Return Index and Nasdaq Composite Price Return Index using the Marketstack index mappings in `data/bspi15/instruments.csv`. Add one complete row to `data/bspi15/daily-closes.csv`. Update their rebased series using 1,000 on October 1, 2026 as the common baseline.
+Record the official closing levels for the S&P 500 Price Return Index and Nasdaq Composite Price Return Index using the Marketstack index mappings in `data/bspi15/instruments.csv`. Run `npm run update:bspi15-daily -- --through=YYYY-MM-DD` to audit and append each pending complete row to `data/bspi15/daily-closes.csv` in chronological order. The command uses the previous completed Eastern date by default and preserves earlier rows. Update their rebased series using 1,000 on October 1, 2026 as the common baseline.
 
 Retain the generated Marketstack receipt and `data/bspi15/marketstack-audit-latest.json` as the source paper trail. Do not use `adj_close` for the price-return index. Compare every available source observation with the canonical close and resolve any mismatch before continuing.
 
@@ -45,3 +45,5 @@ Run type checking, linting, the production build, and desktop and mobile visual 
 Report the BSPI15 closing level, daily change, since launch return, benchmark returns, excess returns, missing prices, market holidays, corporate actions, and changed files.
 
 Ouster provider metadata exception, approved October 14, 2026: retain Nasdaq/XNAS in `instruments.csv`, constituent metadata and holdings CSV, but use Marketstack's OUST unadjusted closes carrying the legacy XNYS tag. Apply only the exact authorized exception in `data/bspi15/provider-mic-exceptions.json`. Keep raw MICs and receipts unchanged, and show the exception in the audit and review workbook. This exception does not authorize any other identity mismatch, missing observation, price substitution or corporate-action adjustment.
+
+Keyence continuity and source exception, approved November 20, 2026: apply the verified 5-for-1 split from November 19 using `splits.json`. Honor only the exact November 18 official JPY 73,610 unadjusted close correction under `price-corrections.json`, retaining Marketstack’s received JPY 14,722 field and immutable receipts. The strict audit validates the authorization, identity, original provider value and official receipt hash. Show the exception separately in the audit and cumulative workbook. Do not extrapolate this exception to other dates, securities or values. All prior canonical prices and reviewed ledger entries remain unchanged. Verify the November 12 comparison and split-day continuity; neither daily nor since-launch returns, weights, benchmarks or contributions may contain a mechanical split loss. The strict audit also blocks unknown split flags, unreviewed dividend flags and split-neutral changes of 50% or more.

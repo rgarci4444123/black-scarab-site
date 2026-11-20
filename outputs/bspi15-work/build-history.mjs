@@ -6,6 +6,7 @@ import { createRequire } from 'node:module';
 import { pathToFileURL } from 'node:url';
 import { approvedProviderMicException } from '../../scripts/bspi15-provider-mic.mjs';
 import { reviewedCashDividend } from '../../scripts/bspi15-corporate-actions.mjs';
+import {splitFactor,splitOn,validateSplits} from '../../scripts/bspi15-price-policy.mjs';
 
 const runtimeRequire = createRequire(path.join(os.homedir(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json'));
 const { Workbook, SpreadsheetFile } = await import(pathToFileURL(runtimeRequire.resolve('@oai/artifact-tool')).href);
@@ -23,6 +24,7 @@ const canonical = parse(await fs.readFile(path.join(root, 'data/bspi15/daily-clo
 const audit = JSON.parse(await fs.readFile(path.join(root, 'data/bspi15/marketstack-audit-latest.json'), 'utf8'));
 assert.equal(audit.status, 'passed', 'A strict, passing audit is required.');
 const corporateActionTreatments = JSON.parse(await fs.readFile(path.join(root, 'data/bspi15/corporate-action-treatments.json'), 'utf8'));
+const splits=validateSplits(JSON.parse(await fs.readFile(path.join(root,'data/bspi15/splits.json'),'utf8')));
 const providerMicExceptions = JSON.parse(await fs.readFile(path.join(root, 'data/bspi15/provider-mic-exceptions.json'), 'utf8'));
 function micExceptionFor(ticker, symbol, mic, api, date) {
   const i = instruments.find(x => x.Ticker === ticker);
@@ -31,7 +33,7 @@ function micExceptionFor(ticker, symbol, mic, api, date) {
 }
 assert.equal(instruments.length, 17);
 assert.equal(canonical[0].Date, '2026-10-01');
-const observations = parse(await fs.readFile(path.join(root, 'data/bspi15/marketstack-observations.csv'), 'utf8'));
+const observations = audit.validatedObservations.map(o=>({Date:o.date,Ticker:o.ticker,'Marketstack Symbol':o.sourceSymbol,MIC:o.mic,'API Version':o.sourceApi,Close:o.close,'Validated Close':o.validatedClose,'Adjusted Close':o.adjustedClose,Dividend:o.dividend,'Split Factor':o.splitFactor}));
 const source = new Map(observations.map(row => [row.Date + ':' + row.Ticker, row]));
 let ledger;
 try { ledger = JSON.parse(await fs.readFile(ledgerPath, 'utf8')); }
@@ -61,14 +63,17 @@ for (let d = 0; d < canonical.length; d++) {
     assert.equal(s['Marketstack Symbol'], i['Marketstack Symbol']);
     const micException = micExceptionFor(i.Ticker, s['Marketstack Symbol'], s.MIC, s['API Version'], s.Date);
     assert(s.MIC === i['Expected MIC'] || micException, 'Unapproved provider exchange MIC.');
-    const close = Number(s.Close), canonicalClose = Number(row[i.Ticker]);
+    const close = Number(s['Validated Close']), canonicalClose = Number(row[i.Ticker]);
     assert(close > 0 && canonicalClose > 0);
     assert(Math.abs(close - canonicalClose) <= Math.max(0.01, canonicalClose * 0.000001), 'Canonical close does not match receipt.');
-    assert.equal(Number(s['Split Factor']), 1, 'Resolve split treatment before reviewing.');
+    const splitReview=splitOn(i.Ticker,s.Date,splits);
+    assert(Number(s['Split Factor'])===1 || (splitReview && Number(s['Split Factor'])===splitReview.ratio),'Resolve split treatment before reviewing.');
+    const sourceCorrection=audit.approvedPriceCorrections.find(o=>o.date===s.Date&&o.ticker===i.Ticker)?.correction;
     const dividendReview = reviewedCashDividend({ticker:i.Ticker,date:s.Date,sourceSymbol:s['Marketstack Symbol'],expectedMic:i['Expected MIC'],currency:i.Currency,sourceApi:s['API Version'],dividend:Number(s.Dividend),splitFactor:Number(s['Split Factor'])}, corporateActionTreatments);
     assert(Number(s.Dividend) === 0 || dividendReview, 'Review dividend flags before reviewing.');
-    return { ticker: i.Ticker, sourceDate: s.Date, rawClose: close, adjustedClose: Number(s['Adjusted Close']), dividend: Number(s.Dividend), splitFactor: Number(s['Split Factor']), symbol: s['Marketstack Symbol'], mic: s.MIC, api: s['API Version'], closure, providerMicException: micException ? {id:micException.id, approvalRecord:'data/bspi15/provider-mic-exceptions.json'} : null,
+    return { ticker: i.Ticker, sourceDate: s.Date, rawClose: Number(s.Close), adjustedClose: Number(s['Adjusted Close']), dividend: Number(s.Dividend), splitFactor: Number(s['Split Factor']), symbol: s['Marketstack Symbol'], mic: s.MIC, api: s['API Version'], closure, providerMicException: micException ? {id:micException.id, approvalRecord:'data/bspi15/provider-mic-exceptions.json'} : null,
       ...(dividendReview ? {cashDividendReview:dividendReview} : {}),
+      ...(sourceCorrection?{sourceCorrection}:{}),...(splitReview?{splitReview}:{}),
       receipt: path.join(audit.receiptPath, i.Type === 'Benchmark' ? 'benchmarks-v1.json' : 'constituents-v2.json') };
   });
   ledger.days.push({ date: row.Date, prices: Object.fromEntries(instruments.map(i => [i.Ticker, Number(row[i.Ticker])])), fetchedAt: audit.fetchedAt, auditStatus: 'passed', entries });
@@ -102,10 +107,10 @@ function setup(s, title, widths, headers, count, note) {
   for (let i=0;i<count;i++) if (i%2===1) s.getRangeByIndexes(i+5,0,1,widths.length).format.fill=colors.pale;
 }
 const N = ledger.days.length, total = N*17;
-setup(sh.Prices,'Closing price history',[14,27,17,18,13,12,18,18,18,14,20],['Date','Company','Ticker','Marketstack symbol','MIC','Currency','Previous close','Close','Launch close','Source date','Market status'],total,'Unadjusted prices in listing currency. Sources and exchange calendars are in Source Audit.');
+setup(sh.Prices,'Closing price history',[14,27,17,18,13,12,18,18,18,14,20,19,20,22],['Date','Company','Ticker','Marketstack symbol','MIC','Currency','Previous close','Close','Launch close','Source date','Market status','Cumulative split factor','Calculation close','Calculation launch close'],total,'Original closes retained. Calculation prices use the latest share basis, with verified splits applied to every historical date.');
 setup(sh['Returns and Contributions'],'Daily returns and contributions',[14,27,16,21,20,20,20,20],['Date','Company','Ticker','Previous weight','Daily price return','Contribution','Closing weight','Since launch return'],N*15,'Contributions use previous effective weights. Weights reset equally at quarterly reviews.');
-setup(sh['Source Audit'],'Marketstack source history',[14,17,18,18,14,13,14,14,24,60,60,25,56],['Date','Ticker','Raw close','Adjusted close','Dividend','Split factor','Expected MIC','Received MIC','Validation','Raw receipt','Exchange calendar','Fetched at (UTC)','Approved exception'],total,'Raw receipts are immutable. Closed-market rows retain the date and evidence for their earlier source close.');
-setup(sh['Corporate Actions'],'Corporate action history',[14,27,17,17,16,16,31,46],['Date','Company','Ticker','Source date','Dividend','Split factor','Provider review','Treatment'],total,'Provider split, dividend and security identity checks for each reviewed observation.');
+setup(sh['Source Audit'],'Marketstack source history',[14,17,18,18,14,13,14,14,24,60,60,25,56,19,46,60],['Date','Ticker','Raw close','Adjusted close','Dividend','Split factor','Expected MIC','Received MIC','Validation','Raw receipt','Exchange calendar','Fetched at (UTC)','Approved MIC exception','Validated close','Price correction','Official evidence'],total,'Raw receipts are immutable. Closed-market rows retain the date and evidence for their earlier source close.');
+setup(sh['Corporate Actions'],'Corporate action history',[14,27,17,17,16,16,31,46,19,60],['Date','Company','Ticker','Source date','Dividend','Provider split factor','Provider review','Treatment','Verified split ratio','Official evidence'],total,'Provider split, dividend and security identity checks for each reviewed observation.');
 setup(sh.Summary,'BSPI15 daily review',[14,19,19,19,19,19,19,19,19,19,19,19,17,20,16,19,25,18,22,22],['Date','BSPI15 level','Daily return','Since launch','S&P 500 level','S&P daily','S&P since launch','Nasdaq level','Nasdaq daily','Nasdaq since launch','Daily excess / S&P','Daily excess / Nasdaq','Weight total','Contribution difference','Holiday carries','Source audit','Fetched at (UTC)','Level difference','Since launch excess / S&P','Since launch excess / Nasdaq'],N,'Launch: October 1, 2026 = 1,000. Benchmark levels are rebased. Excess returns are percentage points.');
 const p=sh.Prices,c=sh['Returns and Contributions'],a=sh['Source Audit'],ca=sh['Corporate Actions'],s=sh.Summary;
 s.tabColor=colors.header;
@@ -119,10 +124,20 @@ for(let d=0;d<N;d++) {
     assert.equal(e.ticker,i.Ticker,'Instrument mapping changed.');
     p.getRange(`A${pr}:K${pr}`).values=[[excelDate(day.date),i.Company,i.Ticker,i['Marketstack Symbol'],i['Expected MIC'],i.Currency,null,day.prices[i.Ticker],ledger.days[0].prices[i.Ticker],excelDate(e.sourceDate),e.closure?'Verified closure':'Open']];
     if(d) formula(p,`G${pr}`,`=H${pr-17}`);
+    const lastTickerRow=6+17*(N-1)+k,baseTickerRow=6+k;
+    put(p,`L${pr}`,splitFactor(i.Ticker,day.date,splits));
+    formula(p,`M${pr}`,`=H${pr}*L${pr}/$L$${lastTickerRow}`);
+    formula(p,`N${pr}`,`=I${pr}*$L$${baseTickerRow}/$L$${lastTickerRow}`);
+
     a.getRange(`A${pr}:L${pr}`).values=[[excelDate(day.date),i.Ticker,e.rawClose,e.adjustedClose,e.dividend,e.splitFactor,i['Expected MIC'],e.mic,null,e.receipt,e.closure?.sourceUrl??'',excelTimestamp(day.fetchedAt)]];
     const micException = micExceptionFor(i.Ticker, e.symbol, e.mic, e.api, e.sourceDate);
     const identityCondition = micException ? `OR(G${pr}=H${pr},AND(B${pr}="OUST",G${pr}="XNAS",H${pr}="XNYS",LEFT(M${pr},${micException.id.length})="${micException.id}"))` : `G${pr}=H${pr}`;
-    formula(a,`I${pr}`,`=IF(AND(${identityCondition},C${pr}>0,ABS(C${pr}-'Prices'!H${pr})<=MAX(0.01,'Prices'!H${pr}*0.000001)),"${e.closure?'Verified closure':micException?'Approved MIC exception':'Match'}","Mismatch")`);
+    const correction=e.sourceCorrection;
+    put(a,`N${pr}`,correction?correction.correctedClose:e.rawClose);
+    put(a,`O${pr}`,correction?correction.id:'');put(a,`P${pr}`,correction?correction.sourceUrl:'');
+    const sourceCondition=correction?`AND(B${pr}="${i.Ticker}",A${pr}=${excelDate(day.date)},C${pr}=${correction.providerClose},N${pr}=${correction.correctedClose},O${pr}="${correction.id}")`:`C${pr}=N${pr}`;
+    formula(a,`I${pr}`,`=IF(AND(${identityCondition},${sourceCondition},C${pr}>0,ABS(N${pr}-'Prices'!H${pr})<=MAX(0.01,'Prices'!H${pr}*0.000001)),"${e.closure?'Verified closure':correction?'Approved price correction':micException?'Approved MIC exception':'Match'}","Mismatch")`);
+
     put(a,`M${pr}`,micException ? micException.id+'; approved '+micException.approvedAt.slice(0,10)+'; data/bspi15/provider-mic-exceptions.json' : '');
 
     ca.getRange(`A${pr}:H${pr}`).values=[[excelDate(day.date),i.Company,i.Ticker,excelDate(e.sourceDate),null,null,null,'No continuity adjustment']];
@@ -136,6 +151,17 @@ for(let d=0;d<N;d++) {
       ca.getRange(`H${pr}`).format.wrapText=true;
       wb.notes.add({id:`dividend-${day.date}-${i.Ticker}`,target:{cell:{sheetName:ca.name,sheetId:ca.sheetId,address:`E${pr}`}},authorId:'',createdAt:'',body:{plainText:`Source: ${reviewed.sourceUrl}\n${reviewed.evidence}`}});
     }
+    if(e.sourceCorrection) {
+      formula(ca,`G${pr}`,`=IF('Source Audit'!I${pr}="Approved price correction","Reviewed price correction","Review required")`);
+      put(ca,`H${pr}`,'Official unadjusted close used; raw receipt retained');put(ca,`J${pr}`,e.sourceCorrection.sourceUrl);
+      ca.getRange(`H${pr}:J${pr}`).format.wrapText=true;ca.getRange(`A${pr}:J${pr}`).format.rowHeight=44;
+    }
+    if(e.splitReview) {
+      put(ca,`I${pr}`,e.splitReview.ratio);put(ca,`J${pr}`,e.splitReview.sourceUrl);
+      formula(ca,`G${pr}`,`=IF(AND(F${pr}=${e.splitFactor},I${pr}=${e.splitReview.ratio},'Source Audit'!I${pr}<>"Mismatch"),"Reviewed split","Review required")`);
+      put(ca,`H${pr}`,`${e.splitReview.ratio}-for-1 split; calculation share basis adjusted`);
+      ca.getRange(`H${pr}:J${pr}`).format.wrapText=true;ca.getRange(`A${pr}:J${pr}`).format.rowHeight=44;
+    }
     if(micException) { put(ca,`H${pr}`,'Approved provider MIC exception; no price adjustment'); ca.getRange(`H${pr}`).format.wrapText=true; ca.getRange(`A${pr}:H${pr}`).format.rowHeight=44; }
     if(i.Ticker==='002747') {p.getRange(`C${pr}`).setNumberFormat('000000');a.getRange(`B${pr}`).setNumberFormat('000000');ca.getRange(`C${pr}`).setNumberFormat('000000');}
     if(k>=15) continue;
@@ -143,9 +169,9 @@ for(let d=0;d<N;d++) {
     c.getRange(`A${cr}:C${cr}`).values=[[excelDate(day.date),i.Company,i.Ticker]];
     if(i.Ticker==='002747') c.getRange(`C${cr}`).setNumberFormat('000000');
     formula(c,`D${cr}`,reset?'=1/15':`=G${cr-15}`);
-    if(d) {formula(c,`E${cr}`,`='Prices'!H${pr}/'Prices'!G${pr}-1`);formula(c,`F${cr}`,`=D${cr}*E${cr}`);}
+    if(d) {formula(c,`E${cr}`,`='Prices'!M${pr}/'Prices'!M${pr-17}-1`);formula(c,`F${cr}`,`=D${cr}*E${cr}`);}
     formula(c,`G${cr}`,d?`=D${cr}*(1+E${cr})/(1+SUM($F$${retStart}:$F$${retEnd}))`:'=1/15');
-    formula(c,`H${cr}`,`='Prices'!H${pr}/'Prices'!I${pr}-1`);
+    formula(c,`H${cr}`,`='Prices'!M${pr}/'Prices'!N${pr}-1`);
   }
   put(s,`A${sr}`,excelDate(day.date));
   formula(s,`B${sr}`,d?`=B${sr-1}*(1+SUM('Returns and Contributions'!F${retStart}:F${retEnd}))`:'=1000');
@@ -170,21 +196,21 @@ for(let d=0;d<N;d++) {
   const quarterStart=ledger.days.findIndex(x=>quarter(x.date)===quarter(day.date));
   const anchorDay=quarterStart===0?0:quarterStart-1, anchorRow=6+17*anchorDay;
   const anchorSummary=6+anchorDay;
-  formula(s,`R${sr}`,`=B${sr}-${quarterStart===0?'1000':`B${anchorSummary}`}*(${Array.from({length:15},(_,k)=>`'Prices'!H${priceStart+k}/'Prices'!H${anchorRow+k}`).join('+')})/15`);
+  formula(s,`R${sr}`,`=B${sr}-${quarterStart===0?'1000':`B${anchorSummary}`}*(${Array.from({length:15},(_,k)=>`'Prices'!M${priceStart+k}/'Prices'!M${anchorRow+k}`).join('+')})/15`);
 }
 for(const col of ['B','E','H'])s.getRange(`${col}6:${col}${N+5}`).setNumberFormat(num);
 for(const col of ['C','D','F','G','I','J','M'])s.getRange(`${col}6:${col}${N+5}`).setNumberFormat(pct);
 s.getRange(`K6:L${N+5}`).setNumberFormat('0.00" pp";(0.00)" pp";"-"');
 s.getRange(`N6:N${N+5}`).setNumberFormat('0.000000000000');s.getRange(`R6:R${N+5}`).setNumberFormat('0.000000000000');
 s.getRange(`Q6:Q${N+5}`).setNumberFormat('yyyy-mm-dd hh:mm:ss');s.getRange(`S6:T${N+5}`).setNumberFormat('0.00" pp";(0.00)" pp";"-"');s.getRange(`A6:R${N+5}`).format.rowHeight=40;s.getRange(`P6:P${N+5}`).format.wrapText=true;
-p.getRange(`G6:I${total+5}`).setNumberFormat(num);p.getRange(`H6:I${total+5}`).format.font.color=colors.blue;p.getRange(`J6:J${total+5}`).setNumberFormat('mm/dd/yy');
+p.getRange(`G6:I${total+5}`).setNumberFormat(num);p.getRange(`H6:I${total+5}`).format.font.color=colors.blue;p.getRange(`J6:J${total+5}`).setNumberFormat('mm/dd/yy');p.getRange(`L6:L${total+5}`).setNumberFormat('0.0000');p.getRange(`M6:N${total+5}`).setNumberFormat(num);
 c.getRange(`D6:H${N*15+5}`).setNumberFormat(pct);
 a.getRange(`C6:E${total+5}`).setNumberFormat(num);a.getRange(`F6:F${total+5}`).setNumberFormat('0.0000');
-a.getRange(`L6:L${total+5}`).setNumberFormat('yyyy-mm-dd hh:mm:ss');a.getRange(`I6:M${total+5}`).format.wrapText=true;a.getRange(`A6:L${total+5}`).format.rowHeight=50;
+a.getRange(`L6:L${total+5}`).setNumberFormat('yyyy-mm-dd hh:mm:ss');a.getRange(`I6:P${total+5}`).format.wrapText=true;a.getRange(`N6:N${total+5}`).setNumberFormat(num);a.getRange(`A6:L${total+5}`).format.rowHeight=50;
 ca.getRange(`D6:D${total+5}`).setNumberFormat('mm/dd/yy');ca.getRange(`E6:E${total+5}`).setNumberFormat(num);
 ca.getRange(`F6:F${total+5}`).setNumberFormat('0.0000');
 // Native filtered tables make all dates and companies easy to review.
-for(const [sheet,lastCol,count] of [[s,'T',N],[p,'K',total],[c,'H',N*15],[a,'M',total],[ca,'H',total]]) { const table=sheet.tables.add(`A5:${lastCol}${count+5}`,true,`${sheet.name.replaceAll(' ','')}History`);table.style='TableStyleLight1'; }
+for(const [sheet,lastCol,count] of [[s,'T',N],[p,'N',total],[c,'H',N*15],[a,'P',total],[ca,'J',total]]) { const table=sheet.tables.add(`A5:${lastCol}${count+5}`,true,`${sheet.name.replaceAll(' ','')}History`);table.style='TableStyleLight1'; }
 wb.recalculate();
 const website=JSON.parse(await fs.readFile(path.join(root,'public/data/bspi15-performance.json'),'utf8'));
 assert.equal(website.length,N);
@@ -214,6 +240,19 @@ for(let d=0;d<N;d++) for(let k=0;k<17;k++) if(ledger.days[d].entries[k].cashDivi
   put(a,`E${pr}`,originalDividend+0.01);wb.recalculate();assert.equal(ca.getRange(`G${pr}`).values[0][0],'Review required');
   assert.equal(s.getRange(`B${N+5}`).values[0][0],before,'Cash dividends must not enter price returns.');
   put(a,`E${pr}`,originalDividend);wb.recalculate();assert.equal(ca.getRange(`G${pr}`).values[0][0],'Reviewed cash dividend');
+}
+for(let d=0;d<N;d++) for(let k=0;k<17;k++) if(ledger.days[d].entries[k].sourceCorrection) {
+  const pr=6+17*d+k,raw=a.getRange(`C${pr}`).values[0][0],id=a.getRange(`O${pr}`).values[0][0];
+  assert.equal(a.getRange(`I${pr}`).values[0][0],'Approved price correction');
+  put(a,`C${pr}`,raw+0.1);wb.recalculate();assert.equal(a.getRange(`I${pr}`).values[0][0],'Mismatch');
+  put(a,`C${pr}`,raw);put(a,`O${pr}`,'');wb.recalculate();assert.equal(a.getRange(`I${pr}`).values[0][0],'Mismatch');
+  put(a,`O${pr}`,id);wb.recalculate();assert.equal(a.getRange(`I${pr}`).values[0][0],'Approved price correction');
+}
+const splitTicker=instruments.findIndex(i=>i.Ticker==='6861'),splitLast=6+17*(N-1)+splitTicker;
+if(p.getRange(`L${splitLast}`).values[0][0]===5) {
+  const indexBefore=s.getRange(`B${N+5}`).values[0][0];
+  put(p,`L${splitLast}`,1);wb.recalculate();assert(s.getRange(`B${N+5}`).values[0][0]<indexBefore-20,'Split factor must affect linked performance');
+  put(p,`L${splitLast}`,5);wb.recalculate();assert(Math.abs(s.getRange(`B${N+5}`).values[0][0]-indexBefore)<1e-8);
 }
 await fs.mkdir(qaDir,{recursive:true});
 const errors=await wb.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A|#NUM!|#NULL!|#SPILL!|#CALC!',options:{useRegex:true,maxResults:30}});

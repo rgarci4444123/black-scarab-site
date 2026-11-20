@@ -1,0 +1,16 @@
+{
+  "retrievedAt": "2026-11-19T12:28:12.274180+00:00",
+  "priceDate": "2026-11-18",
+  "sourceUrl": "https://www.jpx.co.jp/automation/markets/statistics-equities/daily/files/202611/stq_20261118.pdf",
+  "path": "data/bspi15/raw/corporate-actions/2026-11-19-keyence-validation/jpx-daily-20261118.pdf",
+  "sha256": "35cf420073172f819b559a94623aa68d550be56aea1a686a93ce6b33ea912d12",
+  "page": 26,
+  "ticker": "6861",
+  "company": "KEYENCE CORPORATION",
+  "officialUnadjustedClose": 73610,
+  "currency": "JPY",
+  "exchangeExDate": "2026-11-19",
+  "splitRatio": 5,
+  "exchangeExDateSource": "https://www.jpx.co.jp/english/news/2020/20260105-01.html",
+  "indexProviderConfirmation": "https://indexes.nikkei.co.jp/nkave/archives/news/20261106E_1.pdf"
+}

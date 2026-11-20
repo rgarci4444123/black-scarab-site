@@ -1,6 +1,10 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import nextEnv from "@next/env";
+import {createHash} from "node:crypto";
+import {collectMarketstackPages} from "./bspi15-marketstack-pages.mjs";
+import {resolvePrice,validateSplits,priceContinuityIssues} from "./bspi15-price-policy.mjs";
+import {reviewedCashDividend} from "./bspi15-corporate-actions.mjs";
 import { approvedProviderMicException } from "./bspi15-provider-mic.mjs";
 
 const { loadEnvConfig } = nextEnv;
@@ -87,20 +91,14 @@ async function fetchMarketstack(apiVersion, symbols, dateFrom, dateTo) {
   url.searchParams.set("limit", "1000");
   url.searchParams.set("sort", "ASC");
 
-  const response = await fetch(url, {
-    headers: { Accept: "application/json" },
+  const result=await collectMarketstackPages(async offset=>{
+    url.searchParams.set("offset",String(offset));
+    const response=await fetch(url,{headers:{Accept:"application/json"},signal:AbortSignal.timeout(45000)});
+    const body=await response.json();
+    if(!response.ok || body.error) throw new Error(`Marketstack ${apiVersion} request failed: ${body.error?.message??`HTTP ${response.status}`}`);
+    return body;
   });
-  const body = await response.json();
-
-  if (!response.ok || body.error) {
-    const detail = body.error?.message ?? `HTTP ${response.status}`;
-    throw new Error(`Marketstack ${apiVersion} request failed: ${detail}`);
-  }
-
-  return {
-    requestUrl: publicUrl(url),
-    response: body,
-  };
+  return {requestUrl:publicUrl(url),response:result.response,pages:result.pages};
 }
 
 const [instrumentsCsv, closesCsv] = await Promise.all([
@@ -164,6 +162,23 @@ await Promise.all([
   ),
 ]);
 
+for (const [label,result] of [["constituents-v2",constituentResult],["benchmarks-v1",benchmarkResult]]) {
+  if(result.pages.length>1) for(let index=0;index<result.pages.length;index++) {
+    await fs.writeFile(path.join(receiptPath,`${label}-page-${String(index).padStart(4,"0")}.json`),JSON.stringify(result.pages[index],null,2)+"\n");
+  }
+}
+
+const splits = validateSplits(JSON.parse(await fs.readFile(path.join(root,"data/bspi15/splits.json"),"utf8")));
+for (const event of splits.events) {
+  const instrument=instruments.find(i=>i.Ticker===event.ticker);
+  if (!instrument || event.sourceSymbol!==instrument["Marketstack Symbol"] || event.mic!==instrument["Expected MIC"] || event.currency!==instrument.Currency || event.sourceApi!==(instrument.Type==="Benchmark"?"v1":"v2")) throw new Error("Split security mapping mismatch");
+}
+const priceCorrections = JSON.parse(await fs.readFile(path.join(root,"data/bspi15/price-corrections.json"),"utf8"));
+const cashTreatments = JSON.parse(await fs.readFile(path.join(root,"data/bspi15/corporate-action-treatments.json"),"utf8"));
+for (const correction of priceCorrections.corrections) {
+  const content = await fs.readFile(path.join(root,correction.receipt));
+  if (createHash("sha256").update(content).digest("hex") !== correction.receiptSha256) throw new Error("Price-correction evidence hash mismatch");
+}
 const instrumentBySourceSymbol = new Map(
   instruments.map((instrument) => [instrument["Marketstack Symbol"], instrument]),
 );
@@ -196,6 +211,26 @@ const sourceRows = [
   };
 });
 
+const priceValidationErrors = [];
+const approvedPriceCorrections = [];
+for (const row of sourceRows) {
+  try {
+    const result = resolvePrice(row,priceCorrections);
+    row.validatedClose = result.close;
+    if (result.correction) {
+      row.priceCorrectionId = result.correction.id;
+      approvedPriceCorrections.push({...row,correction:result.correction});
+    }
+  } catch (error) {
+    row.validatedClose = row.close;
+    priceValidationErrors.push({date:row.date,ticker:row.ticker,reason:error.message});
+  }
+}
+const corporateActionErrors = priceContinuityIssues(sourceRows.filter(row=>row.date>=closes[0].Date),splits);
+for (const row of sourceRows.filter(row=>row.date>=closes[0].Date && row.dividend!==0)) {
+  if (!reviewedCashDividend(row,cashTreatments)) corporateActionErrors.push({date:row.date,ticker:row.ticker,reason:"Unreviewed cash dividend",dividend:row.dividend});
+}
+
 const approvedMicObservations = sourceRows.flatMap(row => {
   const exception = approvedProviderMicException(row, providerMicExceptions);
   return exception ? [{ date: row.date, ticker: row.ticker, sourceSymbol: row.sourceSymbol, sourceName: row.sourceName, sourceCurrency: row.sourceCurrency, expectedMic: row.expectedMic, receivedMic: row.mic, sourceApi: row.sourceApi, exceptionId: exception.id, approvalRecord: "data/bspi15/provider-mic-exceptions.json", status: "approved-provider-MIC-exception" }] : [];
@@ -224,7 +259,7 @@ const comparisons = sourceRows
   .filter((row) => closeByDateAndTicker.has(`${row.date}|${row.ticker}`))
   .map((row) => {
     const recordedClose = closeByDateAndTicker.get(`${row.date}|${row.ticker}`);
-    const difference = row.close - recordedClose;
+    const difference = row.validatedClose - recordedClose;
     const tolerance = Math.max(0.01, Math.abs(recordedClose) * 0.000001);
 
     return {
@@ -233,6 +268,8 @@ const comparisons = sourceRows
       sourceSymbol: row.sourceSymbol,
       recordedClose,
       marketstackClose: row.close,
+      validatedClose: row.validatedClose,
+      priceCorrectionId: row.priceCorrectionId ?? null,
       difference,
       status: Math.abs(difference) <= tolerance ? "match" : "mismatch",
     };
@@ -258,13 +295,13 @@ function checkMissing(date, instrument, canonicalClose = null) {
   const validCarry = closure && previous
     && (previous.mic === instrument["Expected MIC"] || approvedProviderMicException(previous, providerMicExceptions))
     && Number.isFinite(previous.close) && previous.close > 0
-    && (canonicalClose === null || canonicalClose === previous.close);
+    && (canonicalClose === null || canonicalClose === previous.validatedClose);
   const detail = {
     date, ticker: instrument.Ticker,
     sourceSymbol: instrument["Marketstack Symbol"],
     expectedMic: instrument["Expected MIC"],
     previousAvailableDate: previous?.date ?? null,
-    previousAvailableClose: previous?.close ?? null,
+    previousAvailableClose: previous?.validatedClose ?? null,
   };
   if (validCarry) {
     verifiedClosures.push({ ...detail, holiday: closure.name,
@@ -299,7 +336,8 @@ const paginationErrors = [constituentResult, benchmarkResult]
   .filter((result) => result.response.pagination?.total > result.response.data.length)
   .map((result) => ({ requestUrl: result.requestUrl, pagination: result.response.pagination }));
 const requiredDateObservations = sourceRows.filter((row) => row.date === dateTo);
-const passed = identityErrors.length === 0 && mismatches.length === 0
+const passed = priceValidationErrors.length === 0 && corporateActionErrors.length === 0
+  && identityErrors.length === 0 && mismatches.length === 0
   && missingSourceObservations.length === 0 && missingRequiredObservations.length === 0
   && invalidObservations.length === 0 && duplicateObservations.length === 0
   && paginationErrors.length === 0;
@@ -346,6 +384,7 @@ const audit = {
   provider: "Marketstack",
   methodology: "Unadjusted local-currency closes for the price-return index",
   requests: [constituentResult.requestUrl, benchmarkResult.requestUrl],
+  sourcePageCounts: {constituents:constituentResult.pages.length,benchmarks:benchmarkResult.pages.length},
   receiptPath: path.relative(root, receiptPath),
   status: passed ? "passed" : "failed",
   counts: {
@@ -363,7 +402,15 @@ const audit = {
     invalidObservations: invalidObservations.length,
     duplicateObservations: duplicateObservations.length,
     paginationErrors: paginationErrors.length,
+    priceValidationErrors: priceValidationErrors.length,
+    corporateActionErrors: corporateActionErrors.length,
+    approvedPriceCorrections: approvedPriceCorrections.length,
   },
+  priceValidationErrors,
+  corporateActionErrors,
+  approvedPriceCorrections,
+  validatedObservations: sourceRows,
+  splitRecords: splits,
   identityErrors,
   approvedMicObservations,
   providerMicExceptionRecords: providerMicExceptions,
@@ -387,7 +434,8 @@ console.log(`Requested date ${dateTo}: ${requiredDateObservations.length}/17 sou
 console.log(`Receipt: ${audit.receiptPath}`);
 
 if (
-  identityErrors.length > 0
+  priceValidationErrors.length > 0 || corporateActionErrors.length > 0
+  || identityErrors.length > 0
   || mismatches.length > 0
   || invalidObservations.length > 0 || duplicateObservations.length > 0
   || paginationErrors.length > 0

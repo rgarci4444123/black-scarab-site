@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-19",
+  "updatedAt": "2026-11-20T12:45:19.242126+00:00",
+  "status": "blocked-by-earlier-required-date",
+  "latestCompletedDate": "2026-11-17",
+  "pendingDates": [
+    "2026-11-18",
+    "2026-11-19"
+  ],
+  "earliestBlockedDate": "2026-11-18",
+  "blockingStatusReport": "outputs/bspi15-daily-status-2026-11-18.json",
+  "blockingIssues": [
+    {
+      "code": "KEYENCE_PRE_EX_DATE_SPLIT_ADJUSTED_PRICE_IN_RAW_FIELD",
+      "ticker": "6861",
+      "sourceSymbol": "6861.T",
+      "expectedMic": "XJPX",
+      "date": "2026-11-18",
+      "providerClose": 14722,
+      "providerAdjustedClose": 14722,
+      "providerSplitFactor": 1,
+      "providerDividend": 0,
+      "officialUnadjustedClose": 73610,
+      "currency": "JPY",
+      "providerToOfficialRatio": 0.2,
+      "previousCanonicalDate": "2026-11-17",
+      "previousCanonicalClose": 72510,
+      "officialExchangeExDate": "2026-11-19",
+      "splitRatio": 5,
+      "explanation": "November 18 is before the verified first split-priced trading session. Marketstack supplies split-scaled OHLC and volume in its nominal raw fields for November 18 while earlier returned prices remain on the original scale, and does not flag the split. The nominal raw close is exactly one fifth of the official JPX unadjusted close. It cannot be accepted as an unadjusted November 18 observation.",
+      "rawReceipt": "data/bspi15/raw/marketstack/2026-11-20T12-44-34-518Z/constituents-v2.json",
+      "rawRecordSelector": {
+        "symbol": "6861.T",
+        "date": "2026-11-18T00:00:00+0000"
+      },
+      "officialReceipt": "data/bspi15/raw/corporate-actions/2026-11-19-keyence-validation/jpx-daily-20261118.pdf",
+      "officialSourceUrl": "https://www.jpx.co.jp/automation/markets/statistics-equities/daily/files/202611/stq_20261118.pdf",
+      "officialPage": 26,
+      "resolutionRequired": "Corrected and verified Marketstack unadjusted November 18 observation. Separately reconcile methodology 1.0 split continuity before accepting November 19 split-priced observations. Preserve earlier canonical prices; no inferred multiplication, substitution or carry-forward."
+    }
+  ],
+  "audit": {
+    "requestedDate": "2026-11-19",
+    "scriptStatus": "not-run; stopped at earlier blocked required date",
+    "latestRetriedThrough": "2026-11-18",
+    "latestReceiptPath": "data/bspi15/raw/marketstack/2026-11-20T12-44-34-518Z",
+    "rawReceipts": [
+      "data/bspi15/raw/marketstack/2026-11-20T12-44-34-518Z/constituents-v2.json",
+      "data/bspi15/raw/marketstack/2026-11-20T12-44-34-518Z/benchmarks-v1.json"
+    ]
+  },
+  "preservationChecks": {
+    "data/bspi15/daily-closes.csv": {
+      "status": "unchanged; matches origin/main",
+      "sha256": "e15ca6b1e9e1edcb3061192537e622f91b74d99853b3379ec6e1ca0549142611"
+    },
+    "data/bspi15/review-history.json": {
+      "status": "unchanged; matches origin/main",
+      "sha256": "165d9f3c50b4c53e726e7f01ba2b1f8e2adc97e11f95f303308bc39b1f2bdcea"
+    },
+    "outputs/bspi15-daily-review.xlsx": {
+      "status": "unchanged; matches origin/main",
+      "sha256": "173eaa5442685ebbddd734265af82dc4491952e238bd685b023d627380eca4e4"
+    },
+    "public/data/bspi15-performance.json": {
+      "status": "unchanged; matches origin/main",
+      "sha256": "356275eda05de8afb5bc5949d313959b892eda37a700addfdb1b05f79f187d6f"
+    }
+  },
+  "canonicalUpdated": false,
+  "workbookUpdated": false,
+  "websiteDataUpdated": false,
+  "committed": false,
+  "pushed": false,
+  "requiredUserAction": null,
+  "nextAction": "Retry November 18 first on the next scheduled run. November 19 remains queued and must not be skipped; split continuity must be reconciled before its split-priced row can be accepted."
+}

@@ -1,0 +1,334 @@
+{
+  "date": "2026-11-18",
+  "updatedAt": "2026-11-20T12:45:19.242126+00:00",
+  "status": "blocked-provider-price-basis-and-corporate-action-review",
+  "latestCompletedDate": "2026-11-17",
+  "pendingDates": [
+    "2026-11-18",
+    "2026-11-19"
+  ],
+  "priceDateConvention": "Exchange-local trading dates; UTC retrieval timestamps",
+  "audit": {
+    "scriptStatus": "passed",
+    "dailyAcceptanceStatus": "blocked",
+    "fetchedAt": "2026-11-20T12:44:34.518Z",
+    "counts": {
+      "instruments": 17,
+      "sourceObservations": 726,
+      "comparedObservations": 558,
+      "matches": 558,
+      "mismatches": 0,
+      "identityErrors": 0,
+      "approvedProviderMicObservations": 45,
+      "missingSourceObservations": 0,
+      "verifiedClosureObservations": 20,
+      "requiredDateObservations": 17,
+      "missingRequiredObservations": 0,
+      "invalidObservations": 0,
+      "duplicateObservations": 0,
+      "paginationErrors": 0
+    },
+    "receiptPath": "data/bspi15/raw/marketstack/2026-11-20T12-44-34-518Z",
+    "rawReceipts": [
+      "data/bspi15/raw/marketstack/2026-11-20T12-44-34-518Z/constituents-v2.json",
+      "data/bspi15/raw/marketstack/2026-11-20T12-44-34-518Z/benchmarks-v1.json"
+    ],
+    "approvedProviderMicExceptions": [
+      {
+        "date": "2026-11-18",
+        "ticker": "OUST",
+        "sourceSymbol": "OUST",
+        "sourceName": "Ouster Inc - Class A",
+        "sourceCurrency": "USD",
+        "expectedMic": "XNAS",
+        "receivedMic": "XNYS",
+        "sourceApi": "v2",
+        "exceptionId": "ouster-marketstack-legacy-nyse-tag",
+        "approvalRecord": "data/bspi15/provider-mic-exceptions.json",
+        "status": "approved-provider-MIC-exception"
+      }
+    ],
+    "unresolvedIssues": [
+      {
+        "code": "KEYENCE_PRE_EX_DATE_SPLIT_ADJUSTED_PRICE_IN_RAW_FIELD",
+        "ticker": "6861",
+        "sourceSymbol": "6861.T",
+        "expectedMic": "XJPX",
+        "date": "2026-11-18",
+        "providerClose": 14722,
+        "providerAdjustedClose": 14722,
+        "providerSplitFactor": 1,
+        "providerDividend": 0,
+        "officialUnadjustedClose": 73610,
+        "currency": "JPY",
+        "providerToOfficialRatio": 0.2,
+        "previousCanonicalDate": "2026-11-17",
+        "previousCanonicalClose": 72510,
+        "officialExchangeExDate": "2026-11-19",
+        "splitRatio": 5,
+        "explanation": "November 18 is before the verified first split-priced trading session. Marketstack supplies split-scaled OHLC and volume in its nominal raw fields for November 18 while earlier returned prices remain on the original scale, and does not flag the split. The nominal raw close is exactly one fifth of the official JPX unadjusted close. It cannot be accepted as an unadjusted November 18 observation.",
+        "rawReceipt": "data/bspi15/raw/marketstack/2026-11-20T12-44-34-518Z/constituents-v2.json",
+        "rawRecordSelector": {
+          "symbol": "6861.T",
+          "date": "2026-11-18T00:00:00+0000"
+        },
+        "officialReceipt": "data/bspi15/raw/corporate-actions/2026-11-19-keyence-validation/jpx-daily-20261118.pdf",
+        "officialSourceUrl": "https://www.jpx.co.jp/automation/markets/statistics-equities/daily/files/202611/stq_20261118.pdf",
+        "officialPage": 26,
+        "resolutionRequired": "Corrected and verified Marketstack unadjusted November 18 observation. Separately reconcile methodology 1.0 split continuity before accepting November 19 split-priced observations. Preserve earlier canonical prices; no inferred multiplication, substitution or carry-forward."
+      }
+    ],
+    "note": "The API identity/history/coverage audit passes; independent exchange evidence rejects the Keyence raw-price basis for the requested date."
+  },
+  "calendarReview": [
+    {
+      "mic": "XJPX",
+      "timeZone": "Asia/Tokyo",
+      "source": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "date": "2026-11-18",
+      "status": "open",
+      "reviewedAt": "2026-11-20T12:45:19.242126+00:00",
+      "evidence": "Wednesday November 18 is outside the listed exchange closure schedule. All date-specific mapped observations were returned. No exchange closure permits a carry-forward for this date."
+    },
+    {
+      "mic": "XSHE",
+      "timeZone": "Asia/Shanghai",
+      "source": "https://dataclouds.cninfo.com.cn/sjother2/regulatory/2025/20251222/50b258f0d89b4076b459eb746a7e100d.pdf",
+      "date": "2026-11-18",
+      "status": "open",
+      "reviewedAt": "2026-11-20T12:45:19.242126+00:00",
+      "evidence": "Wednesday November 18 is outside the listed exchange closure schedule. All date-specific mapped observations were returned. No exchange closure permits a carry-forward for this date."
+    },
+    {
+      "mic": "XNAS",
+      "timeZone": "America/New_York",
+      "source": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+      "date": "2026-11-18",
+      "status": "open",
+      "reviewedAt": "2026-11-20T12:45:19.242126+00:00",
+      "evidence": "Wednesday November 18 is outside the listed exchange closure schedule. All date-specific mapped observations were returned. No exchange closure permits a carry-forward for this date."
+    },
+    {
+      "mic": "XNYS",
+      "timeZone": "America/New_York",
+      "source": "https://www.nyse.com/trade/hours-calendars",
+      "date": "2026-11-18",
+      "status": "open",
+      "reviewedAt": "2026-11-20T12:45:19.242126+00:00",
+      "evidence": "Wednesday November 18 is outside the listed exchange closure schedule. All date-specific mapped observations were returned. No exchange closure permits a carry-forward for this date."
+    },
+    {
+      "mic": "XETR",
+      "timeZone": "Europe/Berlin",
+      "source": "https://cashmarket.deutsche-boerse.com/cash-en/trading/trading-calendar-and-trading-hours",
+      "date": "2026-11-18",
+      "status": "open",
+      "reviewedAt": "2026-11-20T12:45:19.242126+00:00",
+      "evidence": "Wednesday November 18 is outside the listed exchange closure schedule. All date-specific mapped observations were returned. No exchange closure permits a carry-forward for this date."
+    },
+    {
+      "mic": "XSTO",
+      "timeZone": "Europe/Stockholm",
+      "source": "https://www.nasdaq.com/european-market-activity/trading-hours",
+      "date": "2026-11-18",
+      "status": "open",
+      "reviewedAt": "2026-11-20T12:45:19.242126+00:00",
+      "evidence": "Wednesday November 18 is outside the listed exchange closure schedule. All date-specific mapped observations were returned. No exchange closure permits a carry-forward for this date."
+    }
+  ],
+  "marketHolidays": [],
+  "carriedForward": [],
+  "corporateActions": {
+    "blocking": [
+      {
+        "code": "KEYENCE_PRE_EX_DATE_SPLIT_ADJUSTED_PRICE_IN_RAW_FIELD",
+        "ticker": "6861",
+        "sourceSymbol": "6861.T",
+        "expectedMic": "XJPX",
+        "date": "2026-11-18",
+        "providerClose": 14722,
+        "providerAdjustedClose": 14722,
+        "providerSplitFactor": 1,
+        "providerDividend": 0,
+        "officialUnadjustedClose": 73610,
+        "currency": "JPY",
+        "providerToOfficialRatio": 0.2,
+        "previousCanonicalDate": "2026-11-17",
+        "previousCanonicalClose": 72510,
+        "officialExchangeExDate": "2026-11-19",
+        "splitRatio": 5,
+        "explanation": "November 18 is before the verified first split-priced trading session. Marketstack supplies split-scaled OHLC and volume in its nominal raw fields for November 18 while earlier returned prices remain on the original scale, and does not flag the split. The nominal raw close is exactly one fifth of the official JPX unadjusted close. It cannot be accepted as an unadjusted November 18 observation.",
+        "rawReceipt": "data/bspi15/raw/marketstack/2026-11-20T12-44-34-518Z/constituents-v2.json",
+        "rawRecordSelector": {
+          "symbol": "6861.T",
+          "date": "2026-11-18T00:00:00+0000"
+        },
+        "officialReceipt": "data/bspi15/raw/corporate-actions/2026-11-19-keyence-validation/jpx-daily-20261118.pdf",
+        "officialSourceUrl": "https://www.jpx.co.jp/automation/markets/statistics-equities/daily/files/202611/stq_20261118.pdf",
+        "officialPage": 26,
+        "resolutionRequired": "Corrected and verified Marketstack unadjusted November 18 observation. Separately reconcile methodology 1.0 split continuity before accepting November 19 split-priced observations. Preserve earlier canonical prices; no inferred multiplication, substitution or carry-forward."
+      }
+    ],
+    "otherProviderDifferencesForReview": [
+      {
+        "date": "2026-11-18",
+        "ticker": "CGNX",
+        "company": "Cognex",
+        "sourceSymbol": "CGNX",
+        "sourceName": "Cognex Corp",
+        "sourceCurrency": "USD",
+        "mic": "XNAS",
+        "expectedMic": "XNAS",
+        "currency": "USD",
+        "type": "Constituent",
+        "close": 49.13,
+        "adjustedClose": 49.04,
+        "dividend": 0,
+        "splitFactor": 1,
+        "sourceApi": "v2"
+      }
+    ],
+    "otherProviderDifferencesNote": "Cognex raw close 49.13 differs from adjusted close 49.04 by the announced USD 0.09 cash dividend. Cash dividends remain excluded; adjusted closes are not index inputs. No date was appended.",
+    "upcomingEvents": [
+      {
+        "ticker": "6861",
+        "type": "stock-split",
+        "ratio": 5,
+        "recordDate": "2026-11-20",
+        "legalEffectiveDate": "2026-11-21",
+        "exchangeExDate": "2026-11-19",
+        "status": "confirmed-ex-date-pending-effective-split-continuity-validation",
+        "currentDateImpact": "none",
+        "record": "data/bspi15/raw/corporate-actions/2026-10-29-keyence/sources.json",
+        "optionsAdjustmentDate": "2026-11-19",
+        "optionsAdjustmentSource": "https://www.jpx.co.jp/news/2020/20261105-01.html",
+        "reviewNote": "JPX states November 19 starts trading in split shares; Nikkei confirms the same ex-right date. Reconcile split continuity before the first split-priced cash close. No November 16 adjustment.",
+        "exchangeExDateSource": "https://www.jpx.co.jp/english/news/2020/20260105-01.html",
+        "indexProviderConfirmation": "https://indexes.nikkei.co.jp/nkave/archives/news/20261106E_1.pdf"
+      },
+      {
+        "ticker": "CGNX",
+        "type": "cash-dividend",
+        "amountPerShare": 0.09,
+        "currency": "USD",
+        "announcementDate": "2026-11-04",
+        "recordDate": "2026-11-19",
+        "paymentDate": "2026-12-03",
+        "exchangeExDate": null,
+        "currentDateImpact": "none",
+        "treatment": "Cash dividends excluded from the price-return index.",
+        "source": "https://www.prnewswire.com/news-releases/cognex-reports-third-quarter-2026-results-302929644.html"
+      },
+      {
+        "ticker": "TER",
+        "type": "cash-dividend",
+        "amountPerShare": 0.13,
+        "currency": "USD",
+        "announcementDate": "2026-11-09",
+        "recordDate": "2026-11-23",
+        "paymentDate": "2026-12-16",
+        "exchangeExDate": null,
+        "currentDateImpact": "none",
+        "treatment": "Cash dividends excluded from the price-return index.",
+        "source": "https://investors.teradyne.com/news-events/press-releases/detail/457/teradyne-declares-quarterly-cash-dividend"
+      },
+      {
+        "ticker": "SIE",
+        "type": "planned-spin-off",
+        "announcementDate": "2026-11-12",
+        "plannedPeriod": "fiscal 2027",
+        "distributionRatio": "one Siemens Healthineers share per two Siemens shares",
+        "stakeToBeTransferredPercent": 34.1,
+        "exchangeExDate": null,
+        "currentDateImpact": "none",
+        "status": "future-spin-off-awaiting-effective-date-and-methodology-treatment",
+        "treatment": "No November 12 index adjustment. Verify approvals, ex-date and methodology continuity before the distribution takes effect.",
+        "source": "https://press.siemens.com/global/en/pressrelease/outstanding-fiscal-2026-performance-industrial-ai-drive-future-growth"
+      },
+      {
+        "ticker": "SIE",
+        "type": "proposed-cash-dividend",
+        "amountPerShare": 5.5,
+        "currency": "EUR",
+        "announcementDate": "2026-11-12",
+        "exchangeExDate": null,
+        "currentDateImpact": "none",
+        "treatment": "Proposed for shareholder approval. Cash dividends excluded from the price-return index.",
+        "source": "https://press.siemens.com/global/en/pressrelease/outstanding-fiscal-2026-performance-industrial-ai-drive-future-growth"
+      }
+    ]
+  },
+  "officialEvidence": [
+    {
+      "retrievedAt": "2026-11-19T12:28:12.274180+00:00",
+      "priceDate": "2026-11-18",
+      "sourceUrl": "https://www.jpx.co.jp/automation/markets/statistics-equities/daily/files/202611/stq_20261118.pdf",
+      "path": "data/bspi15/raw/corporate-actions/2026-11-19-keyence-validation/jpx-daily-20261118.pdf",
+      "sha256": "35cf420073172f819b559a94623aa68d550be56aea1a686a93ce6b33ea912d12",
+      "page": 26,
+      "ticker": "6861",
+      "company": "KEYENCE CORPORATION",
+      "officialUnadjustedClose": 73610,
+      "currency": "JPY",
+      "exchangeExDate": "2026-11-19",
+      "splitRatio": 5,
+      "exchangeExDateSource": "https://www.jpx.co.jp/english/news/2020/20260105-01.html",
+      "indexProviderConfirmation": "https://indexes.nikkei.co.jp/nkave/archives/news/20261106E_1.pdf"
+    }
+  ],
+  "preservationChecks": {
+    "data/bspi15/daily-closes.csv": {
+      "status": "unchanged; matches origin/main",
+      "sha256": "e15ca6b1e9e1edcb3061192537e622f91b74d99853b3379ec6e1ca0549142611"
+    },
+    "data/bspi15/review-history.json": {
+      "status": "unchanged; matches origin/main",
+      "sha256": "165d9f3c50b4c53e726e7f01ba2b1f8e2adc97e11f95f303308bc39b1f2bdcea"
+    },
+    "outputs/bspi15-daily-review.xlsx": {
+      "status": "unchanged; matches origin/main",
+      "sha256": "173eaa5442685ebbddd734265af82dc4491952e238bd685b023d627380eca4e4"
+    },
+    "public/data/bspi15-performance.json": {
+      "status": "unchanged; matches origin/main",
+      "sha256": "356275eda05de8afb5bc5949d313959b892eda37a700addfdb1b05f79f187d6f"
+    }
+  },
+  "canonicalUpdated": false,
+  "workbookUpdated": false,
+  "websiteDataUpdated": false,
+  "buildAndRendering": "not run; stopped at data-validation gate",
+  "committed": false,
+  "pushed": false,
+  "nextAction": "Retry November 18 first on the next scheduled run. November 19 remains queued and must not be skipped; split continuity must be reconciled before its split-priced row can be accepted.",
+  "requiredUserAction": null,
+  "reviewFiles": {
+    "sourceAudit": "outputs/bspi15-work/2026-11-18/audit.json",
+    "officialEvidence": "data/bspi15/raw/corporate-actions/2026-11-19-keyence-validation/sources.json"
+  },
+  "filesChanged": [
+    "data/bspi15/marketstack-audit-latest.json",
+    "data/bspi15/marketstack-observations.csv",
+    "data/bspi15/raw/corporate-actions/2026-11-19-keyence-validation/jpx-daily-20261118.pdf",
+    "data/bspi15/raw/corporate-actions/2026-11-19-keyence-validation/sources.json",
+    "outputs/bspi15-work/2026-11-18/audit.json",
+    "outputs/bspi15-daily-status-2026-11-18.json",
+    "data/bspi15/raw/marketstack/2026-11-20T12-44-34-518Z/constituents-v2.json",
+    "data/bspi15/raw/marketstack/2026-11-20T12-44-34-518Z/benchmarks-v1.json",
+    "outputs/bspi15-daily-status-2026-11-19.json"
+  ],
+  "previousAttempts": [
+    {
+      "checkedAt": "2026-11-19T12:28:12.274180+00:00",
+      "fetchedAt": "2026-11-19T12:25:51.343Z",
+      "receiptPath": "data/bspi15/raw/marketstack/2026-11-19T12-25-51-343Z",
+      "result": "blocked-provider-price-basis-and-corporate-action-review"
+    }
+  ],
+  "latestEligibleCompletedDate": "2026-11-19",
+  "remoteMainChecked": "258158b1ff7d8f72ee02a158abc796e3ac8df94d",
+  "notificationComparison": {
+    "meaningfulChange": false,
+    "reason": "Same Keyence November 18 raw-price-basis discrepancy. No new missing observations, identity errors or canonical-history mismatch. November 19 is queued behind the unresolved required date."
+  }
+}

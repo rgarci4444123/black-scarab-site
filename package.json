@@ -28,7 +28,9 @@
     "events:reject": "node scripts/virtual-events.mjs reject",
     "events:import": "node scripts/virtual-events.mjs import",
     "validate:virtual-events": "node scripts/virtual-events.mjs validate",
-    "test:virtual-events": "node --test scripts/virtual-events.test.mjs"
+    "test:virtual-events": "node --test scripts/virtual-events.test.mjs",
+    "update:bspi15-daily": "node scripts/update-bspi15-daily.mjs",
+    "test:bspi15": "node --test scripts/bspi15-splits.test.mjs scripts/bspi15-corporate-actions.test.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
