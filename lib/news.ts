@@ -38,6 +38,128 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "mountain-7-3m-seed-edge-vision",
+  "title": "MountAIn raises €7.3 million to put computer vision on cheaper chips",
+  "summary": "The Grenoble startup is commercializing software that fits vision applications onto inexpensive microcontrollers. Partnerships with Alif Semiconductor and Roboflow show how the approach reaches cameras and other embedded devices.",
+  "category": "Capital",
+  "publishedDate": "2026-11-21",
+  "publishedAt": "2026-11-21T10:38:08-05:00",
+  "publishedLabel": "November 21, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/mountain-7-3m-seed-edge-vision.png",
+  "imageAlt": "Conceptual glass lens concentrating coral light onto a tiny black microcontroller on an ultramarine surface, illustrating computer vision brought onto constrained chips.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "readingTime": "5 min read",
+  "keyPoints": [
+    "MountAIn announced €7.3 million in seed financing on November 17, backed by 360 Capital, Supernova Invest and Crédit Agricole Alpes Développement.",
+    "Its software targets complete vision applications on microcontrollers the company says can cost less than $10.",
+    "Alif Semiconductor supplies a disclosed hardware platform, while Roboflow provides a model training and export workflow for IBEX."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "MountAIn has raised €7.3 million in seed financing to commercialize software that puts computer vision applications on inexpensive, low power processors.",
+        "The Grenoble company announced the round on November 17, naming 360 Capital, Supernova Invest and Crédit Agricole Alpes Développement as backers, with additional support from Bpifrance. It plans to expand its engineering team and strengthen its presence in Europe and Silicon Valley.",
+        "The proposition starts with a practical constraint. A camera or a piece of industrial equipment may need to recognize an event without the power supply, cooling or network connection that a larger computer would require. MountAIn is trying to make more capable vision software fit within that smaller device.",
+        "Its platform, MountainCore, addresses the application around an AI model as well as the model itself. The financing is intended to move that work toward broader commercial deployment."
+      ]
+    },
+    {
+      "heading": "The model is only part of the job",
+      "paragraphs": [
+        "A trained vision model still needs an application to feed it images, interpret its output and decide what happens next. Those steps consume memory, computing time and energy alongside the model.",
+        "MountAIn describes its technical foundation as a developer workflow, compiler and middleware. The workflow connects the processing stages, the compiler prepares the trained model for the chosen hardware, and the runtime coordinates execution and data movement on the device.",
+        "That distinction explains the commercial ambition. Making one model small enough to run is useful. Giving an equipment maker a repeatable route from a trained model to a working product could be more valuable, because it reduces the engineering that has to be repeated for each application.",
+        "The company offers that foundation through MountAIn Ready for hardware evaluation, MountAIn Onboard for teams adding AI to existing products, and IBEX for remote vision. The common thread is adapting software to the constraints of a selected target."
+      ]
+    },
+    {
+      "heading": "What a cheaper chip changes",
+      "paragraphs": [
+        "MountAIn says MountainCore can run complete vision applications on microcontrollers costing less than $10. It also claims up to a threefold reduction in model memory requirements and shorter deployment work, from months to hours.",
+        "Those figures describe different parts of the proposition. The chip figure concerns a component. The memory claim concerns software execution. The engineering claim concerns development time. They should not be combined into a price or performance guarantee for a complete camera installation.",
+        "Black Scarab sees the more interesting opportunity in the combination of hardware and engineering economics. An inexpensive processor is easier to justify in a product built in volume. A less demanding power budget can also change the battery, communications and enclosure decisions around it.",
+        "The resulting advantage depends on the whole application. If a task still needs a larger model, more image detail or more frequent processing than the device can support, the surrounding system has to accommodate that demand. Small silicon does not make those tradeoffs disappear."
+      ]
+    },
+    {
+      "heading": "An existing route onto Alif hardware",
+      "paragraphs": [
+        "The hardware relationship predates this financing. In May, Alif Semiconductor announced a partnership connecting MountAIn’s software with its Ensemble and Balletto processor families.",
+        "Alif described the software as coordinating the processors inside its chips to improve vision execution while reducing memory use. Its announcement reported support for image inputs of 640 by 640 pixels and above, operation within a power envelope below 100 milliwatts, and preserved model accuracy. These are claims from the partners about their implementation.",
+        "This is a concrete example of the strategy: use the computing resources already available inside a small processor more effectively. MountAIn supplies the software path, while Alif supplies the disclosed hardware platform.",
+        "A meaningful comparison still needs the particular model, input resolution, precision, frame rate and measured power boundary. A result for one combination should travel with those conditions when it is discussed elsewhere."
+      ]
+    },
+    {
+      "heading": "A camera that sends the event",
+      "paragraphs": [
+        "IBEX makes the idea easier to picture. The autonomous vision sensor processes images locally and can send a short satellite alert when it detects the event it was trained to recognize. Solar power and a battery support operation away from grid electricity.",
+        "Roboflow’s October 21 integration account describes a workflow in which developers train supported YOLO nano models, export their weights to MountAIn Studio, compile them for the camera and deploy over USB. At that time, Roboflow identified RF DETR Nano support as forthcoming.",
+        "Roboflow reported MountAIn’s early test result of up to 22 frames per second for a YOLO nano model on IBEX. It also described accuracy reporting during compilation, giving developers a way to inspect the effect of quantization before deployment.",
+        "The same account described a wildfire smoke detection pilot in southern France dating to July 2024. MountAIn’s stated goal of 1,000 IBEX units in the field by the end of 2027 is a deployment target.",
+        "For a remote sensor, sending an alert instead of a continuous video stream changes the communications task. The device does the first interpretation locally, then transmits the information that requires attention. The usefulness of that arrangement depends on whether it identifies the right events reliably."
+      ]
+    },
+    {
+      "heading": "From a working model to a repeatable product",
+      "paragraphs": [
+        "MountAIn also cited a Teledyne e2v demonstration at VISION Stuttgart as evidence of industrial activity. Together with the Alif partnership and Roboflow workflow, it shows several routes through which the software can reach equipment developers.",
+        "Each route addresses a different part of adoption. A semiconductor partnership connects the software to a hardware ecosystem. A training platform integration reaches developers working with their own images. An imaging demonstration places the technology in an industrial application context.",
+        "Black Scarab’s assessment is that repeatability will determine how much of this opportunity MountAIn captures. A successful demonstration becomes commercially more useful when another team can reproduce it, maintain it and update it without rebuilding the application around every model change.",
+        "The next signals to watch are production integrations, sustained field results and the conversion of IBEX plans into deployed units. Those outcomes would show whether the software can turn constrained computing into a dependable product advantage."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "MountAIn, November 17 financing announcement via GlobeNewswire",
+      "url": "https://www.globenewswire.com/fr/news-release/2026/11/17/3404553/0/en/mountain-secures-7-3-million-in-seed-funding-to-run-advanced-ai-on-chips-costing-less-than-10.html"
+    },
+    {
+      "label": "MountAIn, technology and software architecture",
+      "url": "https://www.mountainedge.ai/technology"
+    },
+    {
+      "label": "Alif Semiconductor, May 10 partnership announcement",
+      "url": "https://alifsemi.com/press-release/mountain-disrupts-edge-ai-landscape-to-deliver-cloud-grade-computer-vision-stack-on-alif-semiconductors-processors/"
+    },
+    {
+      "label": "Roboflow, October 21 IBEX integration and early test account",
+      "url": "https://roboflow.com/blog/mountain-brings-always-on-vision-ai-to-solar-powered-cameras-with-roboflow"
+    },
+    {
+      "label": "MountAIn, IBEX product and deployment description",
+      "url": "https://www.mountainedge.ai/products/mountain-ibex"
+    },
+    {
+      "label": "Startup.eu, November 18 financing coverage",
+      "url": "https://www.startup.eu/investments/mountain-7-3-m-seed-11-2026"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [
+      "manufacturing",
+      "energy-utilities",
+      "public-safety-government"
+    ],
+    "technologies": [
+      "computer-vision",
+      "edge-ai",
+      "machine-vision"
+    ],
+    "applications": [
+      "inspection",
+      "operational-monitoring"
+    ]
+  }
+},
+{
   "slug": "familymart-telexistence-january-rollout",
   "title": "FamilyMart plans nationwide drink stocking robot rollout from January",
   "summary": "FamilyMart will begin a phased Japanese rollout of Telexistence’s TX GHOST and Smart Shelf in January 2027. The retailer reports roughly 70% less beverage replenishment work at early stores.",
