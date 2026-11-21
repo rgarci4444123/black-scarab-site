@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-20",
+  "verifiedAt": "2026-11-21T12:37:44.048883+00:00",
+  "markets": [
+    {
+      "mic": "XJPX",
+      "timeZone": "Asia/Tokyo",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "The 2026 holidays list November 3 and 23; November 20 is a normal Friday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XSHE",
+      "timeZone": "Asia/Shanghai",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+      "evidence": "Official 2026 holiday notice lists no November closure; November 20 is a normal Friday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XNAS",
+      "timeZone": "America/New_York",
+      "sourceUrl": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+      "evidence": "November closures are Thanksgiving November 26 and early close November 27; November 20 is a normal Friday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XNYS",
+      "timeZone": "America/New_York",
+      "sourceUrl": "https://www.nyse.com/trade/hours-calendars",
+      "evidence": "November holiday is Thanksgiving November 26; November 20 is a normal Friday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XETR",
+      "timeZone": "Europe/Berlin",
+      "sourceUrl": "https://www.cashmarket.deutsche-boerse.com/cash-en/trading/trading-calendar-and-trading-hours",
+      "evidence": "Official 2026 non-trading days list no November closure; November 20 is a normal Friday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XSTO",
+      "timeZone": "Europe/Stockholm",
+      "sourceUrl": "https://www.nasdaq.com/european-market-activity/trading-hours",
+      "evidence": "Stockholm 2026 holiday and half-day list has no November 20 closure.",
+      "session": "open",
+      "carryForward": false
+    }
+  ],
+  "allRequiredDateObservationsReceived": 17,
+  "verifiedClosureCarries": 0
+}
