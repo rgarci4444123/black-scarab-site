@@ -110,7 +110,7 @@
       "schedule": false,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-21T19:53:30.980Z",
+      "checkedAt": "2026-11-22T20:04:00.886Z",
       "error": "Midnight calendar date needs an explicit source start-time quote"
     },
     "approvedFingerprint": null,
@@ -1728,5 +1728,61 @@
         "https://www.mathworks.com/company/events/webinars/upcoming/reinforcement-learning-from-simulation-to-embedded-ai-control-5488985.html"
       ]
     }
+  },
+  {
+    "id": "642e1b5e25d9db0e",
+    "officialTitle": "2027 World Conference on Autonomous Intelligent Systems & Robotics (WcAISR)",
+    "displayTitle": "2027 World Conference on Autonomous Intelligent Systems & Robotics (WcAISR)",
+    "organizer": "IEEE Robotics & Automation Society",
+    "organizerWebsite": "https://www.ieee-ras.org/",
+    "category": "Autonomous Systems",
+    "format": "Live webinar",
+    "originalStart": "2027-01-21T00:00:00-05:00",
+    "sourceTimezone": "-05:00",
+    "startUtc": "2027-01-21T05:00:00.000Z",
+    "endUtc": "2027-01-23T04:59:00.000Z",
+    "url": "https://www.ieee-ras.org/event/2027-world-conference-on-autonomous-intelligent-systems-robotics-wcaisr-72076/",
+    "sourceUrl": "https://www.ieee-ras.org/events/category/conferences/",
+    "summary": "",
+    "cost": "unknown",
+    "price": null,
+    "score": 81,
+    "rationale": [
+      "Relevance 27/35: autonomous, robotics, robots.",
+      "Credibility 23/25: registered Tier 2 organizer.",
+      "Education 15/20: explicit technical, practical or research terms.",
+      "Topic and speakers 10/10: named presenter in official programme.",
+      "Accessibility 6/10: price unconfirmed."
+    ],
+    "status": "candidate",
+    "firstDiscoveredAt": "2026-11-22T20:04:00.886Z",
+    "lastVerifiedAt": null,
+    "publishedAt": null,
+    "duplicateKey": "ieee robotics automation society|2027 world conference on autonomous intelligent systems amp robotics wcaisr|2027-01-21",
+    "aliases": [],
+    "evidence": {
+      "title": "2027 World Conference on Autonomous Intelligent Systems & Robotics (WcAISR)",
+      "schedule": "2027-01-21T00:00:00-05:00",
+      "attendance": "https://schema.org/MixedEventAttendanceMode",
+      "description": "&lt;p&gt;The conference invites original/unpublished research contributions from researchers, academicians, developers and industry practitioners working in the broad domain of artificial intelligence, robotics, and autonomous systems. The areas of interest include, but are not limited to, • AI-Driven Robotics and Intelligent Agents • Learning-Based Control and Adaptive Systems • Large Language Models (LLMs) • Autonomous Robots [&hellip;]&lt;/p&gt;\\n",
+      "cost": null
+    },
+    "verification": {
+      "official": true,
+      "online": true,
+      "schedule": false,
+      "registration": false,
+      "live": true,
+      "checkedAt": "2026-11-22T20:04:00.886Z",
+      "error": "Midnight calendar date needs an explicit source start-time quote"
+    },
+    "approvedFingerprint": null,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "overrideReason": null,
+    "reviewNotifiedFingerprint": null,
+    "changes": [
+      "Midnight calendar date needs an explicit source start-time quote"
+    ]
   }
 ]
