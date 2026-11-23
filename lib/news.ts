@@ -38,6 +38,133 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "antropi-autonomous-cnc-factory",
+  "title": "How Antropi Robotics Is Building an Autonomous CNC Factory",
+  "summary": "In Bengaluru, Antropi is connecting software, robot arms and inspection so machining can keep moving through the night. Its progress offers a look at how factories could run with fewer people managing every step.",
+  "category": "Factory automation",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "6 min read",
+  "image": "/images/news/antropi-autonomous-cnc-factory.png",
+  "imageAlt": "Conceptual engraved illustration of a machined metal crescent containing a CNC machine, loading robot and inspection light beneath orbiting finished parts.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "Antropi says its first Bengaluru factory is operating and shipping precision metal parts.",
+    "Factory OS links job planning, robotic loading, machining and inspection, helping an approved job continue overnight.",
+    "Engineers still approve programs, prepare new setups and handle exceptions as the company works toward greater autonomy."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Antropi Robotics says its first autonomous CNC factory in Bengaluru is making and shipping metal parts, with robots loading machines, cameras inspecting the output and its Factory OS connecting the work.",
+        "The company came out of stealth on October 20, reporting lead times under seven days. Its automation effort reaches into the work between the cuts, where people have traditionally kept production moving.",
+        "A CNC machine can already cut a complicated shape without someone guiding every movement. Keeping an entire job moving is harder. Someone has to prepare it, get material into the machine, check the result and decide what happens next.",
+        "Antropi is bringing those tasks into a connected process. Once people have prepared and approved a job, the company says its automated cell can keep working overnight."
+      ]
+    },
+    {
+      "heading": "The problem the founders knew firsthand",
+      "paragraphs": [
+        "Founders Naman Gupta and Shubh Agarwal met in college in 2017, where they built Mars rovers together. They knew the frustration of changing a design quickly, then waiting much longer for the part that would let them test it.",
+        "Gupta later spent six months running his father’s CNC machining business in India. That put him on the other side of the delay, inside the operation responsible for turning a drawing into something that could be shipped.",
+        "Their experience helps explain the company’s direction. Faster cutting alone leaves plenty of work untouched. A machine can finish one operation and sit idle while the next piece, program or decision is still waiting for a person.",
+        "For a hardware team, that waiting can determine which ideas get tested. A revised component that misses the next build may push an improvement into another development cycle. Antropi’s founders are trying to remove more of that delay by changing how the factory operates."
+      ]
+    },
+    {
+      "heading": "Connecting the work around the machine",
+      "paragraphs": [
+        "Antropi describes Factory OS as the software joining the process together. It starts with a digital part design, creates the instructions for machining it and checks the planned cuts in simulation. An engineer reviews the program before production starts.",
+        "From there, robots take over loading and unloading the CNC machines. The machines cut the parts, and inspection checks what they have made. The results return to the production system, helping it decide whether work should continue or something needs attention.",
+        "Think of the difference between automating a task and keeping a job moving. A loading robot can feed a machine repeatedly. A more connected operation also needs to know whether the finished part is right and what to do when it is not.",
+        "Unattended machining and robotic loading already exist across the industry. Antropi’s ambition is to bring planning, handling, machining and inspection under the same software, reducing the handoffs that would otherwise interrupt production."
+      ]
+    },
+    {
+      "heading": "Inspection becomes part of running the factory",
+      "paragraphs": [
+        "The inspection step is central to Antropi’s approach. According to the founders, measurements feed back into machining so the system can correct a problem it knows how to handle, or stop the machine for someone to investigate.",
+        "That changes the role of a quality check. It can help determine what the factory does next, rather than simply recording what came out at the end.",
+        "This matters more when production continues after people leave. Repeating a movement is useful only while the process keeps producing acceptable parts. A cell that notices a developing problem can contain it before the same mistake spreads through the rest of a run.",
+        "Black Scarab’s view is that this connection between making, checking and responding is the most consequential part of the story. It moves the automation beyond physical repetition and into some of the routine decisions that keep production on track."
+      ]
+    },
+    {
+      "heading": "People prepare the job, then the cell keeps going",
+      "paragraphs": [
+        "Antropi’s progress is easiest to understand through the work people still do. Engineers approve machining programs. The team prepares fixtures, the equipment that holds a new part in place, and handles exceptions. After that preparation, the company says the cell can continue running overnight.",
+        "The human role shifts toward getting the process ready and dealing with situations the system cannot resolve. That can give a prepared job more productive hours without requiring someone to load and check every part by hand.",
+        "A new design can still create fresh work. Different shapes may need different gripping arrangements, fixtures and machining instructions. Making an established part repeatedly is a useful first step; moving smoothly between unfamiliar jobs is a larger challenge."
+      ]
+    },
+    {
+      "heading": "Why an operating factory matters",
+      "paragraphs": [
+        "Antropi is putting this approach to work on customer orders. In its latest company description, the founders say they machined a complicated component for a space company in 17 hours and shipped it, with more orders following from the same customer.",
+        "The example gives the automation effort a commercial setting. A working factory has to deal with drawings, deadlines and the quality of the parts it sends out. The value of its software shows up in how well the operation handles that work repeatedly.",
+        "Short delivery times by themselves are already available in parts of the machining market. Protolabs, for example, advertises machined parts in as fast as one day. Antropi’s longer term case rests on how much of the production process it can coordinate automatically, and how easily that approach can be repeated elsewhere.",
+        "Its founders want a network of factories close to the hardware teams they serve, with local delivery in as little as 24 hours for supported parts. That remains a target. The logic is straightforward: automation reduces waiting inside the factory, while nearby production reduces the journey after a part is finished.",
+        "For engineers, those two changes could make it easier to test a design, learn from it and try again within the same week. For factory operators, the broader implication is a different relationship between staffing and output: more production could continue between the moments when human judgment is needed.",
+        "Antropi’s first factory is an early step in that direction. The next chapter will be how much new work it can absorb while keeping the machines running and the parts right."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Antropi’s original launch and founder background on Y Combinator",
+      "url": "https://www.ycombinator.com/launches/W49-antropi-robotics-cnc-parts-in-days-from-autonomous-factories"
+    },
+    {
+      "label": "Antropi’s Factory OS workflow and operating update",
+      "url": "https://www.ycombinator.com/companies/antropi-robotics"
+    },
+    {
+      "label": "Antropi’s ordering site and factory description",
+      "url": "https://antropi.shop/"
+    },
+    {
+      "label": "Antropi’s company updates and Bengaluru factory announcement",
+      "url": "https://www.linkedin.com/company/antropi-robotics"
+    },
+    {
+      "label": "Haas documentation on robotic loading and unattended machining",
+      "url": "https://www.haascnc.com/machines/automation-systems/automation-models/robot-redirect-2/robot-package-2.html"
+    },
+    {
+      "label": "Protolabs CNC machining service",
+      "url": "https://www.protolabs.com/services/cnc-machining/"
+    },
+    {
+      "label": "The American Industrialist on Antropi’s October 20 announcement",
+      "url": "https://www.theamericanindustrialist.com/feed/antropi-robotics-comes-out-of-stealth-with-an-autonomous"
+    },
+    {
+      "label": "Inc42 company profile",
+      "url": "https://inc42.com/company/antropi/"
+    }
+  ],
+  "publishedDate": "2026-11-23",
+  "publishedAt": "2026-11-23T12:45:17-05:00",
+  "publishedLabel": "November 23, 2026",
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [],
+    "technologies": [
+      "industrial-robotics",
+      "machine-vision",
+      "robot-software"
+    ],
+    "applications": [
+      "machine-tending",
+      "inspection",
+      "quality-control"
+    ]
+  }
+},
+{
   "slug": "x-square-wall-oss-1-312-tasks",
   "title": "What WALL-OSS-1.0’s 312 task test says about teaching robots new jobs",
   "summary": "X Square Robot reports broader capability before task specific training. Its warehouse example makes a separate case for faster adaptation, with operating performance still the deciding test.",
