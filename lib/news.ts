@@ -38,6 +38,152 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "marubun-realman-japan",
+  "title": "Marubun adds RealMan’s lightweight robot arms to its Japan lineup",
+  "summary": "The Japanese distributor will handle RealMan arms, joint modules, humanoids and teleoperation tools. Planned combinations with DEEP Robotics quadrupeds aim to extend inspection robots into physical maintenance tasks.",
+  "category": "Companies",
+  "publishedDate": "2026-11-22",
+  "publishedAt": "2026-11-22T21:06:12-05:00",
+  "publishedLabel": "November 22, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/marubun-realman-japan.png",
+  "imageAlt": "Conceptual close view of a compact silver robot gripper holding the rim of an oversized red industrial valve against a deep green background.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "readingTime": "5 min read",
+  "keyPoints": [
+    "Marubun announced a domestic distribution agreement with RealMan Robotics on November 19.",
+    "Representative RM arms carry 5 kilograms while weighing about 7.2 to 7.9 kilograms, according to the companies.",
+    "The portfolio combines manipulation hardware with teleoperation and training data tools, with quadruped integrations planned."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Marubun is adding RealMan Robotics’ lightweight arms, joint modules and robot training tools to its Japanese lineup under a domestic distribution agreement announced on November 19.",
+        "The electronics distributor will also handle humanoid platforms and support customization and system building. Its plans include mounting RealMan arms on quadrupeds from its existing robotics portfolio, extending the machines’ role from reaching and inspecting equipment to physically operating it.",
+        "The arms provide the clearest starting point. Marubun lists a 5 kilogram payload for representative RM models weighing about 7.2 to 7.9 kilograms. That combination makes the arm’s own weight a central part of the pitch, particularly when it has to travel on another robot.",
+        "For RealMan, the agreement adds a Japanese sales and integration channel. For Marubun, it connects its mobile robot business with manipulation hardware and the tools used to record human demonstrations."
+      ]
+    },
+    {
+      "heading": "A lighter arm leaves room for the job",
+      "paragraphs": [
+        "RealMan’s own specifications distinguish the models behind the headline range. The standard RM65 has six moving joints, weighs 7.2 kilograms and reaches 610 millimeters. The standard RM75 adds a seventh joint and weighs 7.8 kilograms, with the same stated payload and reach.",
+        "The seventh joint gives the arm another way to arrange itself while placing its tool at the required position. That can help it approach a task around an obstacle or within a constrained workspace. The useful configuration still depends on the equipment around it.",
+        "RealMan also offers versions with a force and torque sensor at the wrist. Its documentation lists a 627 millimeter reach and slightly higher weight for those variants. These are manufacturer specifications for the arms, rather than measured results for a complete mobile system.",
+        "An arm carried by a mobile base competes for capacity with the mounting hardware, gripper, sensors and load. Lower arm weight leaves more of that capacity available for the rest of the machine. It can also make the mechanical integration less demanding.",
+        "Weight is only one part of the problem. Extending an arm moves the load away from the base, changing the forces on the machine. A stable platform, suitable mounting and coordinated motion remain essential when a robot has to manipulate equipment after crossing a slope or climbing steps."
+      ]
+    },
+    {
+      "heading": "From inspection to intervention",
+      "paragraphs": [
+        "Marubun already handles quadrupeds from DEEP Robotics. It says it will develop combinations that mount RealMan arms on those machines for remote inspection and maintenance in difficult terrain and hazardous areas.",
+        "The attraction is easy to picture. A camera can show the position of a valve or the state of a control panel. Manipulation hardware can add the ability to turn the valve or operate a control, provided the combined system can reach it, apply the required force and remain stable.",
+        "That is an intended application of the new portfolio. Marubun’s next commercial step is to make the combination useful on a defined job, with the mobile base, arm, controls and tool working together.",
+        "Black Scarab sees the integration work as the important business opportunity. Selling an arm gives a customer a component. Delivering a repeatable way to reach equipment, perform an action and recover from an interrupted task can give the distributor a larger role in a project."
+      ]
+    },
+    {
+      "heading": "The catalog goes beyond arms",
+      "paragraphs": [
+        "Marubun’s RealMan catalog includes mobile lifting platforms, wheeled humanoids and joint modules. These serve different engineering needs, even though they share parts of the same hardware ecosystem.",
+        "RealMan’s dual arm lifting platform combines a mobile base with a 900 millimeter lifting stroke. The manufacturer specifies a vertical working reach from floor level to 2.4 meters and a 5 kilogram payload for each arm. Marubun presents warehouse racks and server cabinets as target applications.",
+        "The RealBot range adds a different form of mobile manipulation. RealMan describes its S2 as a wheeled, folding humanoid with two arms and 20 active degrees of freedom. The wheeled base is a meaningful distinction for readers imagining a walking humanoid.",
+        "The WHJ joint modules address teams building their own hardware. RealMan lists integrated harmonic joints with encoders and a CAN FD communications interface, offering a component route alongside its complete arms and mobile platforms.",
+        "That breadth gives the agreement several possible entry points. An equipment developer may need a joint, an integration team an arm, and a research group a mobile platform. Their engineering requirements differ, so one successful application would establish a foothold rather than validate the entire catalog."
+      ]
+    },
+    {
+      "heading": "Remote work can also produce training data",
+      "paragraphs": [
+        "The software and teleoperation tools are the other part of the proposition. Marubun describes a system that synchronizes operating data such as joint torque and position while a person controls the robot, then structures that data for model training.",
+        "RealMan’s teleoperation catalog includes remote kits with force feedback as well as a local Aloha configuration. The remote kits let an operator receive information about contact forces while controlling the machine. Its product material describes coordinated capture across arms, grippers and other moving parts.",
+        "This creates a useful connection between doing a task and teaching it. Demonstrations can preserve how the operator moved and what the robot experienced, giving developers examples from the hardware they want to automate.",
+        "The quality of those examples matters. A training set needs consistent timing, useful camera views and enough variation to represent the task. Repeating a motion successfully under remote control does not, by itself, establish that a trained model will recover from a changed object or an unexpected obstruction.",
+        "For Marubun, combining hardware and data tools could keep it involved through evaluation and development. The value would come from helping a team move from demonstrations to dependable operation, with the appropriate controls and support around the machine."
+      ]
+    },
+    {
+      "heading": "The next test is a defined task",
+      "paragraphs": [
+        "Marubun says it will work with customers on customization and system construction across manufacturing, logistics, infrastructure and research. Robosta and LNEWS also reported the agreement, drawing on the company’s announcement.",
+        "A distribution channel can make specialized hardware easier to source and integrate locally. Its commercial value grows when that access produces systems that complete useful work consistently.",
+        "The next signals to watch are Japanese installations with a named task, operating conditions and results that can be assessed over time. For the planned quadruped combinations, the telling evidence will connect mobility with manipulation: reaching the equipment, performing the action and handling interruptions safely.",
+        "Black Scarab’s assessment is that Marubun has added the pieces for a broader robotics offering. The opportunity now rests on turning those pieces into repeatable applications that its Japanese customers can put to work."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Marubun, November 19 distribution announcement and original posting time",
+      "url": "https://prtimes.jp/main/html/rd/p/000000160.000166754.html"
+    },
+    {
+      "label": "Marubun, RealMan product portfolio and integration services",
+      "url": "https://www.marubun.co.jp/products/91667/"
+    },
+    {
+      "label": "Marubun, RM series specifications",
+      "url": "https://www.marubun.co.jp/products/91720/"
+    },
+    {
+      "label": "RealMan, RM65 model specifications",
+      "url": "https://www.realman-robotics.com/en/products/rm65.html"
+    },
+    {
+      "label": "RealMan, RM75 model specifications",
+      "url": "https://www.realman-robotics.com/en/products/rm75.html"
+    },
+    {
+      "label": "RealMan, dual arm lifting platform",
+      "url": "https://www.realman-robotics.com/en/products/dual-arm-lift.html"
+    },
+    {
+      "label": "RealMan, RealBot S2 configuration",
+      "url": "https://www.realman-robotics.com/en/products/realbot-s2.html"
+    },
+    {
+      "label": "RealMan, WHJ joint modules",
+      "url": "https://www.realman-robotics.com/en/products/whj-joint-modules.html"
+    },
+    {
+      "label": "RealMan, teleoperation configurations",
+      "url": "https://www.realman-robotics.com/en/products/teleop-kit.html"
+    },
+    {
+      "label": "Robosta, November 19 coverage of the agreement",
+      "url": "https://robotstart.info/article/2026/11/19/382650.html"
+    },
+    {
+      "label": "LNEWS, November 19 logistics coverage",
+      "url": "https://www.lnews.jp/2026/11/s1119503.html"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [
+      "manufacturing",
+      "warehousing-logistics",
+      "energy-utilities",
+      "data-centers"
+    ],
+    "technologies": [
+      "industrial-robotics",
+      "humanoid-robotics",
+      "embodied-ai",
+      "actuators"
+    ],
+    "applications": [
+      "inspection",
+      "material-handling"
+    ]
+  }
+},
+{
   "slug": "mountain-7-3m-seed-edge-vision",
   "title": "MountAIn raises €7.3 million to put computer vision on cheaper chips",
   "summary": "The Grenoble startup is commercializing software that fits vision applications onto inexpensive microcontrollers. Partnerships with Alif Semiconductor and Roboflow show how the approach reaches cameras and other embedded devices.",
