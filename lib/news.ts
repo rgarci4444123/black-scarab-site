@@ -38,6 +38,135 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "x-square-wall-oss-1-312-tasks",
+  "title": "What WALL-OSS-1.0’s 312 task test says about teaching robots new jobs",
+  "summary": "X Square Robot reports broader capability before task specific training. Its warehouse example makes a separate case for faster adaptation, with operating performance still the deciding test.",
+  "category": "Robot intelligence",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "7 min read",
+  "image": "/images/news/x-square-wall-oss-1-312-tasks.png",
+  "imageAlt": "An imagined cast metal practice course branches through object handling exercises before joining a conveyor carrying parcels.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "X Square reports 55.1% success across 312 distinct real robot tasks without task specific demonstrations or fine tuning.",
+    "Its parcel sorting application uses an adapted policy built on the pretrained model.",
+    "The commercial proposition is less repeated training work as robots move between jobs and sites."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "X Square Robot introduced WALL-OSS-1.0 on November 23, reporting that a single pretrained robot policy achieved a 55.1% success rate across 312 tasks selected by evaluators.",
+        "A policy is the software that chooses a robot’s actions. The Shenzhen company is testing an appealing proposition: teach a model broadly enough that useful skills carry into a new job, instead of collecting a fresh set of demonstrations for every assignment. For a warehouse operator, that could eventually mean less work commissioning a system and less rebuilding when the parcel mix or facility changes.",
+        "The announcement supplies evidence about both broad capability and industrial adaptation. Those are different achievements, and the distinction matters more than any one headline percentage."
+      ]
+    },
+    {
+      "heading": "What the 312 tasks actually measure",
+      "paragraphs": [
+        "According to X Square’s technical blog, the open evaluation comprised 377 evaluations, with results for identical instructions averaged into 312 unique tasks. These were grouped into 47 task clusters. The overall mean score was 6.45 out of 10, alongside the separate 55.1% success rate.",
+        "That makes 312 a count of distinct tasks after consolidation. It is not 312 repeated trials of the same warehouse operation. Nor does the mean score mean that 64.5% of tasks were completed successfully.",
+        "The company describes evaluators choosing tasks freely and using the same pretrained policy without task specific fine tuning. That tests whether a broad foundation can produce useful behavior beyond a fixed assignment. It does not mean the model learned without robot demonstrations, or that every object and motion was absent from pretraining.",
+        "A varied task set can expose capabilities that a narrow repetitive test misses. It can also produce an aggregate that says little about any particular workload. A warehouse’s daily mix might be dominated by actions that were a small part of the evaluation.",
+        "The appropriate reading is a capability survey under the company’s protocol. Evaluator choice by itself does not make the result an independent audit or a statistically representative sample of warehouse work."
+      ]
+    },
+    {
+      "heading": "The training bet is reusable experience",
+      "paragraphs": [
+        "WALL-OSS-1.0 is a vision language action model: it connects what a robot sees, the instruction it receives and the movements it should make. X Square starts from Qwen3.5 and jointly trains on language, visual and robot action data.",
+        "The practical idea is straightforward. Knowing what an object is should help the robot decide what to do with it, while experience manipulating objects should make that understanding more useful in the physical world.",
+        "X Square’s training process also uses human corrections when an executing policy struggles. Selected corrective segments feed back into the broader training corpus. Generalization is being pursued through more varied, better targeted experience, rather than through the removal of teaching.",
+        "For developers, that changes where effort might pay off. An example that improves a reusable skill could help several future applications. The business benefit would come when that reuse reduces the amount of application work needed to reach a dependable result.",
+        "It remains possible for a broadly capable model to need substantial work on a narrow task. A parcel slipping from a gripper, a transparent wrapper obscuring an edge and a barcode facing the conveyor are distinct physical problems. Understanding the instruction is one part of solving them."
+      ]
+    },
+    {
+      "heading": "The warehouse result uses adaptation",
+      "paragraphs": [
+        "X Square says it has applied the model to parcel sorting for a logistics customer. The work includes orienting barcodes, aligning parcel edges and feeding individual packages into sorting equipment.",
+        "For this application, WALL-OSS-1.0 provides the foundation for a task specific policy. X Square reports that adaptation takes approximately 10 hours of task data to reach a usable level, compared with more than 1,000 hours without pretraining.",
+        "That is a claim about the amount of task data used. It is not a promise that a warehouse can commission an installation in 10 hours. Data preparation, model training, tooling, controls and acceptance testing belong to the larger delivery process.",
+        "The company also reports that its adapted policy retained more than 90% of its original site sorting speed and success rate in a comparison across sites with different lighting, tables, conveyors and parcel distributions.",
+        "Retention is relative to the original result. It does not establish an absolute success rate above 90%. Hypothetically, retaining 90% of a 1,000 parcel per hour baseline would mean 900 parcels per hour. That arithmetic illustrates the distinction; those are not X Square’s reported production rates.",
+        "The opportunity is economically meaningful if the effect holds. A second installation that reuses useful skills and needs fewer new demonstrations could be cheaper to deliver. It could also make changes to an existing operation less disruptive. Independent reporting by 42HOW describes the same adapted sorting application, drawing on the company’s disclosures rather than supplying an independent performance measurement."
+      ]
+    },
+    {
+      "heading": "A benchmark score and a working shift answer different questions",
+      "paragraphs": [
+        "X Square also reports a 50.67% overall success rate on ManipArena, its separate test of 15 tabletop tasks with 10 trials per task. That result belongs to a different task set and protocol from the 312 task evaluation.",
+        "The distinction helps explain what a warehouse test should establish. A general model is interesting when it can attempt many unfamiliar instructions. A sorting installation earns its place by completing a defined flow of work repeatedly, at the required pace and quality.",
+        "For a prospective installation, a useful trial would use the facility’s actual parcel distribution and count accepted outputs over elapsed operating time. That connects successful manipulation with the work the conveyor and downstream process can use.",
+        "Interventions matter because their cost extends beyond the failed attempt. A worker may have to approach the cell, clear an obstruction, inspect a parcel and restart the process. A system can look capable in individual trials while consuming too much attention during a shift.",
+        "The same applies to recovery. Detecting a bad grasp, retrying it and correctly recording the result can be more valuable than attempting a wider range of loosely related tasks. Speed, quality and intervention time should therefore be assessed together."
+      ]
+    },
+    {
+      "heading": "Planning software still needs a physical interface",
+      "paragraphs": [
+        "Alongside the model, X Square released XR Harness as an open source developer preview. Its repository describes a planning layer, an execution layer and a runtime connecting robot controllers and sensors through the Robot Agent Protocol.",
+        "The separation reflects the work around an action model. Someone has to translate the overall goal into steps, observe the scene, check completion and decide what follows. The robot also needs an action interface compatible with the model and its hardware.",
+        "XR Harness’s documentation explicitly makes compatible model services and completion checking part of setup. Access to a model is therefore one component of an operating system for physical work, with integration effort still relevant to the deployment decision.",
+        "Public model artifacts require the same precision. X Square’s available WALL-OSS-1.0-Lite RoboDojo checkpoint is described on its model card as fine tuned for that simulation benchmark and not validated on real robots. It should not be treated as a downloadable reproduction of the 312 task real robot evaluation."
+      ]
+    },
+    {
+      "heading": "What would make this commercially persuasive",
+      "paragraphs": [
+        "Black Scarab’s assessment is that the strongest business case is reusable learning: a model that reaches a defined job with fewer demonstrations, then carries more of that capability into the next site.",
+        "The next evidence to watch is a measured progression from a first installation to another one, using comparable workloads. Reduced task data should be connected to commissioning effort, accepted throughput and the human attention required to keep the system running.",
+        "If those measures improve together, broad pretraining could change the economics of deploying robots across a customer’s network. The 312 task result offers a reason to investigate that possibility. A repeatable warehouse workflow is where its commercial value will be decided."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "X Square Robot, November 23 technical blog, evaluation methodology, training and parcel sorting",
+      "url": "https://x2robot.com/en/blog/wall-oss-1"
+    },
+    {
+      "label": "X Square Robot, November 23 announcement distributed through GlobeNewswire, syndicated by WBOC",
+      "url": "https://www.wboc.com/online_features/press_releases/x-square-robot-introduces-wall-oss-1-0-understand-more-act-better-a-native-foundation/article_ddc06701-7c27-50b3-a7f1-d55fa52babe3.html"
+    },
+    {
+      "label": "XR Harness, official developer preview and integration documentation",
+      "url": "https://github.com/X-Square-Robot/xr-harness"
+    },
+    {
+      "label": "X Square Robot, WALL-OSS-1.0-Lite RoboDojo model card",
+      "url": "https://huggingface.co/x-square-robot/wall-oss-1.0-lite-robodojo"
+    },
+    {
+      "label": "42HOW Robotics, November 23 coverage of the model release and adapted sorting application",
+      "url": "https://ai.42how.com/en/article/zibianliang-wall-oss-1-0-embodied-model-release"
+    }
+  ],
+  "publishedDate": "2026-11-23",
+  "publishedAt": "2026-11-23T10:47:54-05:00",
+  "publishedLabel": "November 23, 2026",
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [
+      "warehousing-logistics"
+    ],
+    "technologies": [
+      "embodied-ai",
+      "foundation-models",
+      "manipulation",
+      "robot-training-data",
+      "robot-software"
+    ],
+    "applications": [
+      "robot-training",
+      "parcel-sorting"
+    ]
+  }
+},
+{
   "slug": "marubun-realman-japan",
   "title": "Marubun adds RealMan’s lightweight robot arms to its Japan lineup",
   "summary": "The Japanese distributor will handle RealMan arms, joint modules, humanoids and teleoperation tools. Planned combinations with DEEP Robotics quadrupeds aim to extend inspection robots into physical maintenance tasks.",
