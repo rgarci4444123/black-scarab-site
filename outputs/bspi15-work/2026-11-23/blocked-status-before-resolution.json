@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-23",
+  "updatedAt": "2026-11-24T12:34:06.115Z",
+  "status": "blocked-strict-audit",
+  "latestCompletedDate": "2026-11-20",
+  "pendingDates": [
+    "2026-11-23"
+  ],
+  "audit": {
+    "scriptStatus": "failed",
+    "lastSavedAuditPeriod": {
+      "from": "2026-10-01",
+      "through": "2026-11-23",
+      "sourceFrom": "2026-09-17"
+    },
+    "counts": {
+      "instruments": 17,
+      "sourceObservations": 772,
+      "comparedObservations": 609,
+      "matches": 609,
+      "mismatches": 0,
+      "identityErrors": 0,
+      "approvedProviderMicObservations": 48,
+      "missingSourceObservations": 0,
+      "verifiedClosureObservations": 25,
+      "requiredDateObservations": 12,
+      "missingRequiredObservations": 0,
+      "invalidObservations": 0,
+      "duplicateObservations": 0,
+      "paginationErrors": 0,
+      "priceValidationErrors": 0,
+      "corporateActionErrors": 2,
+      "approvedPriceCorrections": 1
+    },
+    "receiptPath": "data/bspi15/raw/marketstack/2026-11-24T12-34-06-084Z",
+    "unresolvedIssues": [
+      {
+        "reason": "Audit command failed",
+        "exitCode": 1,
+        "error": ""
+      },
+      {
+        "date": "2026-11-19",
+        "ticker": "CGNX",
+        "reason": "Unreviewed cash dividend",
+        "dividend": 0.09
+      },
+      {
+        "date": "2026-11-23",
+        "ticker": "TER",
+        "reason": "Unreviewed cash dividend",
+        "dividend": 0.13
+      }
+    ]
+  },
+  "canonicalUpdated": false,
+  "pushed": false
+}

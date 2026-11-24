@@ -29,5 +29,15 @@
     "evidence": "JPX official 2026 Market Holidays lists November 3, Tuesday, as Culture Day. Tokyo cash equities were closed. Carry the November 2 canonical close with zero daily return.",
     "verifiedAt": "2026-11-04T12:35:24.731427+00:00",
     "verificationMethod": "Official JPX cash-market holiday calendar retrieved and checked for the exact exchange-local date."
+  },
+  {
+    "mic": "XJPX",
+    "name": "Labor Thanksgiving Day",
+    "from": "2026-11-23",
+    "through": "2026-11-23",
+    "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+    "evidence": "JPX official 2026 cash-market holiday calendar lists Monday November 23 as Labor Thanksgiving Day. Carry the November 20 canonical close with zero local price return for the five Japanese constituents.",
+    "verifiedAt": "2026-11-24T12:34:03.770875+00:00",
+    "verificationMethod": "Official JPX cash-market holiday calendar retrieved and checked for the exact exchange-local date."
   }
 ]

@@ -1,0 +1,42 @@
+{
+  "reviewedAt": "2026-11-24T12:35:22.369108+00:00",
+  "methodologyVersion": "1.0",
+  "newlyReviewedEvents": [
+    {
+      "id": "CGNX-2026-11-19-cash-dividend",
+      "ticker": "CGNX",
+      "date": "2026-11-19",
+      "sourceSymbol": "CGNX",
+      "expectedMic": "XNAS",
+      "currency": "USD",
+      "sourceApi": "v2",
+      "dividend": 0.09,
+      "splitFactor": 1,
+      "kind": "cash-dividend",
+      "treatment": "exclude-cash-dividend",
+      "methodologyVersion": "1.0",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/cognex-reports-third-quarter-2026-results-302929644.html",
+      "reviewedAt": "2026-11-24T12:35:22.369108+00:00",
+      "evidence": "Issuer declared USD 0.09 per common share, November 19 record date, payable December 3, 2026. Marketstack first reports this November 19 flag in the November 24 retrieval; earlier reviewed receipt and ledger reported zero and remain unchanged. Preserve both receipts. Use the raw close and exclude cash under methodology 1.0; no index-unit adjustment."
+    },
+    {
+      "id": "TER-2026-11-23-cash-dividend",
+      "ticker": "TER",
+      "date": "2026-11-23",
+      "sourceSymbol": "TER",
+      "expectedMic": "XNAS",
+      "currency": "USD",
+      "sourceApi": "v2",
+      "dividend": 0.13,
+      "splitFactor": 1,
+      "kind": "cash-dividend",
+      "treatment": "exclude-cash-dividend",
+      "methodologyVersion": "1.0",
+      "sourceUrl": "https://investors.teradyne.com/news-events/press-releases/detail/457/teradyne-declares-quarterly-cash-dividend",
+      "reviewedAt": "2026-11-24T12:35:22.369108+00:00",
+      "evidence": "Issuer declared USD 0.13 per common share, November 23 record date, payable December 16, 2026. Marketstack flags USD 0.13 on November 23. Use the raw close and exclude cash under methodology 1.0; no index-unit adjustment."
+    }
+  ],
+  "initialReceipt": "data/bspi15/raw/marketstack/2026-11-24T12-34-06-084Z",
+  "priorLedgerPolicy": "All prior entries retained exactly as received; the newly reported historical Cognex flag is documented in this supplemental review and the new immutable receipt."
+}
