@@ -1,4 +1,5 @@
 .report{color:#202625;--teal:#007f78;--warm:#7851a9}
+.newsletter{margin:48px 0}.body .newsletter h2{font-size:24px;line-height:1.25;font-weight:600;letter-spacing:-.03em;margin:12px 0 0}
 .hero{padding:44px clamp(24px,5vw,80px) 64px;border-bottom:1px solid #e5e7e7}
 .hero nav{display:flex;gap:12px;color:#727979;font-size:14px;margin-bottom:44px}
 .hero nav a:hover{color:var(--teal)}
