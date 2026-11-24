@@ -5,6 +5,7 @@ import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import { SitePage, SiteSurface } from "@/components/site-frame";
 import AuthorLinkedIn from "@/components/author-linkedin";
+import EmailSignupCard from "@/components/email-signup-card";
 import { InsightReadTracker } from "@/components/engagement-analytics";
 import { authorLinkedInUrl, authorPortraitSrc } from "@/lib/site-author";
 import type { CaseStudyArticle } from "@/lib/case-studies";
@@ -74,7 +75,12 @@ export default function WorkforceArticle({ article, schemas }: { article: CaseSt
           <Link href="/career-paths" className={styles.guideLink}>Explore the 20 career guides</Link>
         </aside>
         <div className={styles.body}>
-          {content.blocks.slice(2,methodIndex).map(block => <Block key={block.id} {...block} />)}
+          {content.blocks.slice(2,methodIndex).map(block => <Fragment key={block.id}>
+            {block.markdown === "# What employers are willing to pay" ? <div className={styles.newsletter}>
+              <EmailSignupCard source={`insight-inline:${article.slug}`} compact />
+            </div> : null}
+            <Block {...block} />
+          </Fragment>)}
           <div className={styles.appendix}>
             <details id="methodology"><summary>Methodology</summary><div>{content.blocks.slice(methodIndex+1,sourcesIndex).map(block => <Block key={block.id} {...block} />)}</div></details>
             <details id="sources"><summary>Sources and the twenty career guides</summary><div>{content.blocks.slice(sourcesIndex+1).map(block => <Block key={block.id} id="sources" markdown={block.markdown} />)}<h3>Employer advertisements</h3>{article.sourceLinks?.filter(source => !content.blocks.slice(sourcesIndex+1).some(block => block.markdown.includes(source.url))).map(source => <p key={source.url}><a href={source.url}>{source.label}</a></p>)}</div></details>
@@ -84,6 +90,11 @@ export default function WorkforceArticle({ article, schemas }: { article: CaseSt
         </div>
       </div>
     </article>
+    <section className="px-6 pb-14 md:px-10">
+      <div className="mx-auto max-w-6xl">
+        <EmailSignupCard source={`insight:${article.slug}`} />
+      </div>
+    </section>
     <SiteFooter />
   </SiteSurface></SitePage>;
 }
