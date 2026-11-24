@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-23",
+  "verifiedAt": "2026-11-24T13:15:17.109704+00:00",
+  "markets": [
+    {
+      "mic": "XJPX",
+      "timeZone": "Asia/Tokyo",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "JPX official 2026 calendar lists November 23 as Labor Thanksgiving Day. The five Japanese holdings use their November 20 canonical closes with zero local returns.",
+      "session": "closed",
+      "carryForward": true
+    },
+    {
+      "mic": "XSHE",
+      "timeZone": "Asia/Shanghai",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+      "evidence": "The official 2026 annual holiday notice, verified November 21 and retained in the preceding calendar review, lists no November closure. Both date-specific Shenzhen observations were received. The official notice timed out during the November 24 recheck.",
+      "session": "open",
+      "carryForward": false,
+      "priorCalendarReview": "outputs/bspi15-work/2026-11-20/exchange-calendar-review.json",
+      "sourceAvailability": "timed-out-on-recheck"
+    },
+    {
+      "mic": "XNAS",
+      "timeZone": "America/New_York",
+      "sourceUrl": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+      "evidence": "November closures are Thanksgiving November 26 and early close November 27; November 23 is a normal Monday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XNYS",
+      "timeZone": "America/New_York",
+      "sourceUrl": "https://www.nyse.com/trade/hours-calendars",
+      "evidence": "November holiday is Thanksgiving November 26; November 23 is a normal Monday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XETR",
+      "timeZone": "Europe/Berlin",
+      "sourceUrl": "https://www.cashmarket.deutsche-boerse.com/cash-en/trading/trading-calendar-and-trading-hours",
+      "evidence": "Official 2026 non-trading days list no November closure; November 23 is a normal Monday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XSTO",
+      "timeZone": "Europe/Stockholm",
+      "sourceUrl": "https://www.nasdaq.com/european-market-activity/trading-hours",
+      "evidence": "Stockholm 2026 holiday and half-day list has no November 23 closure.",
+      "session": "open",
+      "carryForward": false
+    }
+  ],
+  "requiredDateObservationsReceived": 12,
+  "verifiedClosureCarries": 5
+}

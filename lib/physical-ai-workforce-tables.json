@@ -1,0 +1,181 @@
+{
+  "bda8028d-a837-470b-af59-3dd9d95c47ba": {
+    "name": "hiring",
+    "title": "Hiring across the system",
+    "scope": "Share of the multi employer sample",
+    "columns": [
+      "Career family",
+      "Share"
+    ],
+    "rows": [
+      [
+        "Hardware and Manufacturing",
+        "39%"
+      ],
+      [
+        "Intelligence and Autonomy",
+        "22%"
+      ],
+      [
+        "Integration and Operations",
+        "21%"
+      ],
+      [
+        "Platforms and Simulation",
+        "19%"
+      ]
+    ]
+  },
+  "f1f28e73-18ff-4738-910e-13544bcb62c6": {
+    "name": "skills",
+    "title": "Skills named in qualifications",
+    "scope": "Required or accepted as an option \u00b7 share of reviewed postings",
+    "columns": [
+      "Skill",
+      "Share"
+    ],
+    "rows": [
+      [
+        "Python",
+        "32%"
+      ],
+      [
+        "C++",
+        "29%"
+      ],
+      [
+        "Linux",
+        "11%"
+      ],
+      [
+        "Computer-aided design (CAD)",
+        "11%"
+      ],
+      [
+        "Electronic measurement and instrumentation",
+        "9%"
+      ],
+      [
+        "Machining and fabrication",
+        "8%"
+      ],
+      [
+        "PyTorch",
+        "8%"
+      ],
+      [
+        "Networking and communication protocols",
+        "8%"
+      ],
+      [
+        "C",
+        "7%"
+      ],
+      [
+        "CAN bus",
+        "7%"
+      ]
+    ]
+  },
+  "43120bc9-ec1d-4f45-8f8c-1a2607d07db2": {
+    "name": "entry-routes",
+    "title": "Preparation employers recognize",
+    "scope": "Selected archived advertisements",
+    "columns": [
+      "Employer and position",
+      "What the advertisement tells us"
+    ],
+    "rows": [
+      [
+        "[Applied Intuition, new graduate embedded software engineer](https://jobs.ashbyhq.com/applied/6971d533-1536-448b-96b8-544ad5383f44)",
+        "Accepted bachelor's, master's or doctoral education in relevant computing fields, plus one year of experience or an equivalent combination of education and experience."
+      ],
+      [
+        "[Applied Intuition, new graduate mechanical engineer](https://jobs.ashbyhq.com/applied/6e57a97e-62bb-46fb-92ec-dd12831fd6f9)",
+        "Valued experience from student engineering teams, such as Formula SAE, robotics or rocketry, and projects involving physical hardware."
+      ],
+      [
+        "[Serve Robotics, field development test associate](https://jobs.ashbyhq.com/serverobotics/28bbd767-93f5-4df1-8917-ca3cc339041b)",
+        "Required a high school diploma or equivalent; an associate or bachelor's degree was preferred, not mandatory."
+      ]
+    ]
+  },
+  "63fc960c-a38a-4d97-9b1e-889e8c5874cf": {
+    "name": "compensation",
+    "title": "Advertised pay by specialty",
+    "scope": "Median annual salary range midpoint \u00b7 US dollars",
+    "columns": [
+      "Career category",
+      "Annual USD"
+    ],
+    "rows": [
+      [
+        "Robot Learning Engineer",
+        "$274,500"
+      ],
+      [
+        "Machine Learning Infrastructure Engineer",
+        "$262,250"
+      ],
+      [
+        "Localization and Mapping Engineer",
+        "$250,000"
+      ],
+      [
+        "Robotics Controls Engineer",
+        "$219,000"
+      ],
+      [
+        "Perception Engineer",
+        "$215,000"
+      ],
+      [
+        "Simulation Engineer",
+        "$214,250"
+      ],
+      [
+        "Embedded Software Engineer",
+        "$193,500"
+      ],
+      [
+        "Mechanical Engineer",
+        "$192,500"
+      ],
+      [
+        "Electrical Engineer",
+        "$173,750"
+      ],
+      [
+        "Manufacturing Engineer",
+        "$164,500"
+      ],
+      [
+        "Systems Integration Engineer",
+        "$161,250"
+      ]
+    ]
+  },
+  "ec941093-6e2d-44d5-8b76-a82bf829bf60": {
+    "name": "locations",
+    "title": "Locations and specialties",
+    "scope": "Tesla Optimus sample",
+    "columns": [
+      "Location",
+      "Leading role"
+    ],
+    "rows": [
+      [
+        "Palo Alto, California",
+        "Mechanical engineering"
+      ],
+      [
+        "Fremont, California",
+        "Manufacturing and engineering technicians"
+      ],
+      [
+        "Austin, Texas",
+        "Manufacturing engineering"
+      ]
+    ]
+  }
+}

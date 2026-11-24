@@ -1,0 +1,417 @@
+{
+  "title": "The Physical AI Workforce: What Hiring and Compensation Reveal About the Future of Robotics",
+  "blocks": [
+    {
+      "id": "09619f9c-98c8-4bea-9f0a-6b8bb14cf64c",
+      "markdown": "**BLACK SCARAB · RESEARCH**"
+    },
+    {
+      "id": "1b922d4c-f7fa-464d-abac-4716c9bbcbc4",
+      "markdown": "*By Rodolfo Garcia Calderoni, CFA | Black Scarab | Updated November 24, 2026*"
+    },
+    {
+      "id": "c4dcaf1e-3ded-472f-8af5-4acff312fcb9",
+      "markdown": "A product announcement tells us what a company hopes to sell. Its job descriptions reveal some of the problems it is trying to solve."
+    },
+    {
+      "id": "171f4929-8e10-41a4-be6c-822eccdcd0ad",
+      "markdown": "Black Scarab analyzed 1,000+ advertised positions across 40+ employers, covering twenty career paths in Physical AI, alongside a separate study of 300+ Tesla postings associated with its physical Optimus program. The findings offer a perspective on where companies are committing human capital, which skills they value and what it will take to turn autonomous machines into a commercially viable industry."
+    },
+    {
+      "id": "76b57bd3-bbac-46f8-b12f-e3ff5293d81a",
+      "markdown": "One finding stands out: for a sector so closely associated with artificial intelligence, its workforce looks remarkably industrial."
+    },
+    {
+      "id": "5e322d9b-92b1-4adf-a0c4-77f2136455f7",
+      "markdown": "# Where the demand is concentrated"
+    },
+    {
+      "id": "63d88eb8-34f9-4060-a92f-cbbd90e6e2f2",
+      "markdown": "Hardware and manufacturing account for the largest share of our multi-employer sample. Mechanical and electrical engineering alone represent nearly a quarter of the advertised positions."
+    },
+    {
+      "id": "bda8028d-a837-470b-af59-3dd9d95c47ba",
+      "markdown": "![Hiring across the system](visualize:fde1_bGliZmlsZV9WSWZqdUVleEd5d2lLNzJ3d0owV2p3_FileDrive_083319ee15b48191a9b03e55d2844a5e)"
+    },
+    {
+      "id": "0396a1ee-a792-4a32-b5e8-eeffe2576055",
+      "markdown": "*Black Scarab Intelligence, November 2, 2026. Percentages rounded independently.*"
+    },
+    {
+      "id": "a281a245-651e-41fb-bb9a-c1015ed36e6a",
+      "markdown": "The largest individual categories included mechanical engineering, electrical engineering, perception, systems integration, manufacturing engineering and embedded software. Robot learning formed one part of this broader hiring picture."
+    },
+    {
+      "id": "7676e783-5ea5-413f-b6d2-a569d8dfa211",
+      "markdown": "Our sample includes significant representation from defense autonomy companies, particularly Anduril and Shield AI. Hardware and manufacturing remains the largest career family even after excluding those two employers."
+    },
+    {
+      "id": "a78761ac-9921-457a-86d1-39a1d8f8126e",
+      "markdown": "The result is relevant beyond the hiring market. The same industry attracting investment in robot foundation models is also recruiting people to solve problems involving motors, electronics, materials and manufacturing. For someone deciding what to study, traditional engineering disciplines provide credible routes into Physical AI. For employers and investors, industrial expertise is a capability worth examining alongside AI research."
+    },
+    {
+      "id": "cc5c496b-ea82-4254-a8d9-d9b06900573c",
+      "markdown": "# The skills that travel across industries"
+    },
+    {
+      "id": "a80dfb23-5637-49e8-b04a-6a4580145617",
+      "markdown": "Programming remains central to the industry, but not all programming languages serve the same purpose."
+    },
+    {
+      "id": "f1f28e73-18ff-4738-910e-13544bcb62c6",
+      "markdown": "![Skills named in qualifications](visualize:fde1_bGliZmlsZV8zcWhTWjhUQ0FIWTRBZ05TQVNZYUJn_FileDrive_083319ee15b48191a9b03e55d2844a5e)"
+    },
+    {
+      "id": "bdf88819-e150-4e28-acef-1639c0574fed",
+      "markdown": "*Machine-coded mentions across 1,000+ postings. Shares are rounded to whole percentages. Alternatives named in qualification clauses count as mentions; they are not all mandatory requirements.*"
+    },
+    {
+      "id": "55549ad6-da5a-4248-820d-300d0bd25fd9",
+      "markdown": "Python and C++ appear across all four career families. Python is especially prominent in platforms and simulation, while C++ features strongly in intelligence and autonomy. CAD, fabrication and measurement tools are concentrated in hardware and manufacturing."
+    },
+    {
+      "id": "fef15683-2d60-4583-a44d-de11fce11ad4",
+      "markdown": "This is useful when thinking about the durability of a skill. Learning Python or C++ can open doors across software, autonomy, simulation and testing. Mechanical design and electronics have similarly transferable applications in automotive, aerospace, industrial equipment and robotics. The more specialized tools can follow as an individual's interests become clearer."
+    },
+    {
+      "id": "c2edd207-2372-45d8-a297-a9e965cd34bb",
+      "markdown": "An unexpected example comes from [1X's principal simulation tools engineering advertisement](https://jobs.ashbyhq.com/1x/a7e8ba31-8369-4b44-ae26-efd4a23f7118). The company sought experienced developers familiar with game engines such as Unreal and Unity and accepted a degree in game development among its educational alternatives. The advertised annual salary was $190,000 to $280,000. Skills developed building virtual worlds can also help train and test machines in simulated environments."
+    },
+    {
+      "id": "bb018bcb-287a-43f2-b774-a2f29f90b78f",
+      "markdown": "# Education, experience and the entry-level market"
+    },
+    {
+      "id": "be15a23f-751d-4778-a7d2-86c5f4be806f",
+      "markdown": "Early career advertisements form a small part of the classified sample."
+    },
+    {
+      "id": "e55c4c85-0c9b-4c92-bceb-70762675550d",
+      "markdown": "Nearly half the sample explicitly targets senior or higher-level specialists. This is an important reality check for anyone entering the workforce. Companies may need years of engineering experience before an individual can solve their most difficult problems, but that experience need not come from a robotics company."
+    },
+    {
+      "id": "67a3f381-a237-4db8-a718-a401fe3786bb",
+      "markdown": "Consider three archived advertisements:"
+    },
+    {
+      "id": "43120bc9-ec1d-4f45-8f8c-1a2607d07db2",
+      "markdown": "![Preparation employers recognize](visualize:fde1_bGliZmlsZV9EYUNxYmZiaUFqbUFBQkNpakE4dm9B_FileDrive_083319ee15b48191a9b03e55d2844a5e)"
+    },
+    {
+      "id": "09b23159-87a2-4169-aae6-6cf2ee74e601",
+      "markdown": "Education clauses frequently mention several degree levels or equivalent experience. These overlapping, machine-extracted mentions are not mutually exclusive requirements. A doctorate may be preferred or one of several alternatives."
+    },
+    {
+      "id": "d85f59bf-d00b-4f69-8a41-e70e2eb33c37",
+      "markdown": "The distinction matters when choosing an education. A research-oriented career in robot learning may justify graduate study, while mechanical engineering, electrical engineering and computer science provide broader starting points. Mechatronics and technical education offer additional paths into manufacturing, automation and service. There is no single degree that unlocks the entire industry."
+    },
+    {
+      "id": "3f311890-76f1-4076-afe9-79bd905fbdd4",
+      "markdown": "---"
+    },
+    {
+      "id": "5a04701b-5bd6-446c-bdb3-77a3c367a871",
+      "markdown": "# What employers are willing to pay"
+    },
+    {
+      "id": "24bb2718-1ecc-49ec-867a-4734c9d67dd7",
+      "markdown": "Salary advertisements offer another window into where companies are prepared to commit resources. The following are medians of advertised annual salary-range midpoints in our November 2 cohort, restricted to records identifying the United States with exactly one valid annual USD compensation band."
+    },
+    {
+      "id": "63fc960c-a38a-4d97-9b1e-889e8c5874cf",
+      "markdown": "![Advertised pay by specialty](visualize:fde1_bGliZmlsZV83Z3JVLWlXX2Z6N3daUTZCVG02cFFB_FileDrive_083319ee15b48191a9b03e55d2844a5e)"
+    },
+    {
+      "id": "f8dd93ac-422f-46a1-bfe6-287241ffade2",
+      "markdown": "These are mixed-experience advertised salary figures, not typical starting pay or estimates of total compensation. Some samples are particularly small. They differ from the individual Black Scarab guide estimates because this table uses a uniform, single-range filter."
+    },
+    {
+      "id": "2de166ae-f266-4cbc-b48a-a22b75e76d74",
+      "markdown": "Actual new graduate advertisements give a better idea of the distinction. Applied Intuition's Sunnyvale mechanical engineering role advertised $110,000 to $148,000; its embedded software role advertised $123,000 to $168,000; and its new graduate research engineering role advertised $140,000 to $200,000 but was designed for recent master's or doctoral graduates."
+    },
+    {
+      "id": "2917c9eb-ba06-4b52-9f3e-076427d43a4a",
+      "markdown": "Salary also depends on geography. A high-paying position in Silicon Valley may have very different purchasing power from a position elsewhere. And the willingness of companies to pay for particular specialties in 2026 does not guarantee that the same compensation hierarchy will persist in 2030."
+    },
+    {
+      "id": "ec21dd66-a0c1-476e-818c-21f37ee43943",
+      "markdown": "# The geography of opportunity"
+    },
+    {
+      "id": "8c437987-8e8d-4ac4-b964-dbac5e5a2b89",
+      "markdown": "Physical AI is a geographically uneven industry. US locations dominate the original collection, with California especially prominent and Texas and Massachusetts also represented. Some listings identify multiple locations, while others name cities without states, so the geographic groupings are not mutually exclusive or exhaustive."
+    },
+    {
+      "id": "d0df0f15-efb5-4e1f-8afb-8e8fed37ed0d",
+      "markdown": "The separate Tesla study provides a more specific example of how talent can be distributed within one company."
+    },
+    {
+      "id": "ec941093-6e2d-44d5-8b76-a82bf829bf60",
+      "markdown": "![Locations and specialties](visualize:fde1_bGliZmlsZV9KRmE2Nk54WW44UTFEQWtrUUZCaEpR_FileDrive_083319ee15b48191a9b03e55d2844a5e)"
+    },
+    {
+      "id": "51b607b4-3648-42af-8836-7568517a656a",
+      "markdown": "Austin’s reviewed roles concentrate on manufacturing and industrial automation. Palo Alto includes a broader mix of design, testing, software and cross-functional work."
+    },
+    {
+      "id": "37e7bfa4-f809-4e10-959c-08a29e4740bc",
+      "markdown": "The distinction is worth following. The locations where robot intelligence and products are developed may not be the same locations where manufacturing scales or customer installations take place. Communities with industrial suppliers, technical schools and experienced manufacturing workers could participate in the industry without becoming another Silicon Valley."
+    },
+    {
+      "id": "9a3c5bf2-b807-4ea5-b729-1a41f86598eb",
+      "markdown": "---"
+    },
+    {
+      "id": "9c586ade-5148-47b7-a0d7-7f38d54104fa",
+      "markdown": "# From building robots to building an industry"
+    },
+    {
+      "id": "033fdf4c-3c56-44f7-a42b-1052c46fe980",
+      "markdown": "Roughly half of Tesla’s reviewed physical Optimus postings concern hardware and manufacturing. The collection also includes integration and operations, cross-functional support, platforms, simulation and autonomy. The employer-specific classification is broader than our twenty-career study and should be interpreted separately."
+    },
+    {
+      "id": "622a245e-21a1-4256-a567-3bf0c69f19d5",
+      "markdown": "Among the advertisements are roles covering supplier qualification, production engineering, factory automation and repair workflows. Tesla's [supplier industrialization opening](https://www.tesla.com/careers/search/job/supplier-industrialization-engineer-optimus-276466) concerns the production readiness of actuator components. That is a different problem from training a robot to move."
+    },
+    {
+      "id": "ea79d32f-d190-4336-bf63-0d55fdef44ab",
+      "markdown": "Why does this matter? A machine capable of moving boxes in a demonstration still has to work with a customer's equipment, software and physical layout. If it regularly breaks down or requires expensive on-site engineering support, the economics of the deployment change."
+    },
+    {
+      "id": "29f50971-4d16-4531-bc6f-dd49ea12709d",
+      "markdown": "The International Federation of Robotics reported five million industrial robots in operation in 2025. [1] That installed base represents decades of accumulated expertise in machinery, maintenance and integration. Physical AI companies can draw on that knowledge rather than starting from zero."
+    },
+    {
+      "id": "82685b53-bbc4-482f-b96b-aced747a5441",
+      "markdown": "We see an opportunity for established industries to become suppliers of talent. Automotive and aerospace engineers bring experience building complex electromechanical products. Software and gaming companies provide computing and simulation expertise. Industrial automation specialists understand how machines fit into production environments. As deployment grows, maintenance, diagnostics and fleet operations may become increasingly important."
+    },
+    {
+      "id": "43d58e38-8c2a-46e7-ac28-7c4aac28dfdd",
+      "markdown": "# Investing in human capital"
+    },
+    {
+      "id": "4a59741a-996d-46c6-9ec9-53df049345f7",
+      "markdown": "The industry's future workforce will depend on which technologies succeed commercially. The hiring data cannot tell us exactly what jobs will be available when today's high school students graduate. It can, however, identify capabilities that employers are already valuing and that have applications beyond any individual robotics company."
+    },
+    {
+      "id": "59000c12-a8ab-45ac-b71b-1db23f29e810",
+      "markdown": "For students and career changers, this argues for building a foundation in transferable disciplines and developing specialized skills as interests and opportunities become clearer. For employers, it suggests looking beyond the existing robotics talent pool. For investors, hiring patterns can help distinguish investments in research, production readiness and deployment infrastructure when considered alongside actual commercial results."
+    },
+    {
+      "id": "661e6e90-af02-419d-89ce-d6fb07436208",
+      "markdown": "The workforce is not simply a consequence of Physical AI's growth. It is one of the factors determining how quickly that growth can occur."
+    },
+    {
+      "id": "02d8959d-11e1-4425-93db-f67f846c6d46",
+      "markdown": "For readers exploring individual opportunities, Black Scarab's [twenty Physical AI career guides](https://www.blackscarab.ai/career-paths) provide more detail on the disciplines, skills and qualifications behind this research."
+    },
+    {
+      "id": "0cd84c03-fc8d-4dc6-86bb-30c6e1a122af",
+      "markdown": "# Methodology"
+    },
+    {
+      "id": "0f22af41-70c5-4096-89b2-dae2c1a954ea",
+      "markdown": "This report uses 1,000+ structured multi-employer advertisements observed November 2, 2026 and separately analyzes 300+ physical Optimus postings observed November 21. Digital Optimus software agent roles and earlier records with varying detail are excluded from the aggregate comparisons. Successive Tesla snapshots are not counted as distinct jobs. Exact counts and original records remain in the underlying research."
+    },
+    {
+      "id": "b49dc1d4-4378-4a2e-ae71-1302d7625a23",
+      "markdown": "The sample is purposive, with unequal employer coverage; it is not a representative survey of the labor market. Advertisements are dated observations, not hires, headcount or confirmed current vacancies. Primary role assignments and seniority classifications have different review states. Skills are machine-coded and counted once per advertisement at the strongest identified wording. Education figures use keyword matching on extracted clauses, with overlapping categories and possible extraction omissions. Geographic figures count postings with explicit state names or abbreviations and identified US locations; multi-location records may appear in more than one geography. The compensation table uses one valid annual USD range per US-identified posting; midpoints are calculated per record and summarized by median, excluding separate equity and bonus information. Archived postings were not refreshed on the export date. Individual examples link to the original employer advertisement where available."
+    },
+    {
+      "id": "804027ce-d8fb-42f2-9645-1b8e92fd686f",
+      "markdown": "# Sources and the twenty career guides"
+    },
+    {
+      "id": "00217315-1b66-4638-a766-ba725228059d",
+      "markdown": "## Economic data and analyst research"
+    },
+    {
+      "id": "b38d20c1-d94a-4edf-b8f9-32666ef66f67",
+      "markdown": "1. [International Federation of Robotics, Five Million Robots now Operate in Factories Globally](https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally), September 24, 2026. Industrial installed stock, installations and outlook."
+    },
+    {
+      "id": "c20d0679-ea95-48de-b7bc-07de7c9922b1",
+      "markdown": "2. [International Federation of Robotics, Global Sales of Professional Service Robots Surge 24 Percent](https://ifr.org/ifr-press-releases/news/global-sales-of-professional-service-robots-surge-24-percent), September 30, 2026. Professional service robot shipments and transportation and logistics."
+    },
+    {
+      "id": "a7165b69-a7ae-46b0-bd0e-080ce4012dbb",
+      "markdown": "3. [Barclays Research, Humanoid Robotics On Track to Become a $200 Billion Market by 2035](https://www.businesswire.com/news/home/20260114100182/en/), January 14, 2026. Issuer release; the $200 billion figure is its most optimistic scenario."
+    },
+    {
+      "id": "6753ced3-b798-48a6-81ad-7fcb6f9a9d2f",
+      "markdown": "4. [Reuters reporting on J.P. Morgan’s humanoid production forecasts](https://ca.investing.com/news/stock-market-news/us-humanoid-robot-production-could-hit-400000-by-2030-as-deployment-ramps-jp-morgan-says-4951895), November 12, 2026. Reported analyst production forecast and bottleneck quotation; the underlying bank note was not directly reviewed."
+    },
+    {
+      "id": "8d6cbd93-0de6-490d-b79b-77b51736e49b",
+      "markdown": "5. [Morgan Stanley, The Robot Almanac](https://www.morganstanley.com/insights/videos/robot-almanac), accessed November 18, 2026. Broad AI robotics product revenue forecast, with 2026 episodes and transcripts. Its scope differs from humanoids alone."
+    },
+    {
+      "id": "69b10e70-be36-4779-bae8-800ac7affd47",
+      "markdown": "6. [Capgemini Research Institute, Physical AI Taking human robot collaboration to the next level](https://www.capgemini.com/wp-content/uploads/2026/04/CRI_Physical-AI-Report-web-version.pdf), 2026. PDF pages 57 and 105 for adoption stage and research methodology, using one based page numbers."
+    },
+    {
+      "id": "1ff2bcda-1b9c-48e3-9918-410ba4da6195",
+      "markdown": "7. [Physical Intelligence, company and research](https://www.pi.website/), and [FieldAI, company](https://www.fieldai.com/). Primary references supporting the model developer examples; cross referenced against retained Intelligence profiles."
+    },
+    {
+      "id": "293b6b3d-70cc-450f-875e-21e4c6138c96",
+      "markdown": "8. [Zipline, company](https://www.zipline.com/). Primary reference for aerial delivery services; cross referenced against the retained Intelligence profile."
+    },
+    {
+      "id": "49fac1c2-1f86-4ebd-a8bb-cd6071bd47ad",
+      "markdown": "9. [BLS, Electro mechanical and Mechatronics Technologists and Technicians](https://www.bls.gov/ooh/architecture-and-engineering/electro-mechanical-technicians.htm). May 2025 wages and typical entry education."
+    },
+    {
+      "id": "02e682c5-140a-464e-8ebf-c153f2c1f709",
+      "markdown": "10. [BLS, Mechanical Engineers](https://www.bls.gov/ooh/architecture-and-engineering/mechanical-engineers.htm). May 2025 wages and 2025 to 2035 outlook."
+    },
+    {
+      "id": "ac1937fe-d415-434d-9d79-1a0036547947",
+      "markdown": "11. [BLS, Electrical and Electronics Engineers](https://www.bls.gov/ooh/architecture-and-engineering/electrical-and-electronics-engineers.htm). May 2025 wages and occupation specific 2025 to 2035 outlook."
+    },
+    {
+      "id": "6d219ce5-3b56-453e-9edc-c4e13151c324",
+      "markdown": "12. [BLS, Industrial Engineers](https://www.bls.gov/ooh/architecture-and-engineering/industrial-engineers.htm). May 2025 wages."
+    },
+    {
+      "id": "bbc788b3-199e-43a0-80df-d2bdd68bdc73",
+      "markdown": "13. [BLS, Software Developers, Quality Assurance Analysts, and Testers](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm). Software developer May 2025 wage and 2025 to 2035 outlook."
+    },
+    {
+      "id": "d6e6acf7-41b8-4245-90f3-8b46c6a14219",
+      "markdown": "14. [Tesla Optimus US careers search](https://www.tesla.com/careers/search/?site=US&query=optimus), collected November 21, 2026. Black Scarab Intelligence retains the employer descriptions and separate workstream analysis."
+    },
+    {
+      "id": "a685dfdb-3bd7-4f54-9380-59e52bb78b33",
+      "markdown": "15. [Tesla, Supplier Industrialization Engineer for Optimus](https://www.tesla.com/careers/search/job/supplier-industrialization-engineer-optimus-276466). November 21 description covering actuator suppliers, qualification, audits and corrective actions."
+    },
+    {
+      "id": "bc1fce9c-1c5b-4c0a-993a-6a3668155cd4",
+      "markdown": "16. [Tesla, Optimus Robot Design Validation](https://www.tesla.com/careers/search/job/systems-engineer-optimus-robot-design-validation-279212). November 21 description covering metrology, calibration and feedback to design and simulation."
+    },
+    {
+      "id": "e20bf181-d9dc-4d9d-b38e-a082e4a450c1",
+      "markdown": "17. [Tesla, Optimus Production and Service Diagnostics](https://www.tesla.com/careers/search/job/software-engineer-optimus-production-service-diagnostics-278105). November 21 description covering diagnostic software and operational incident ownership."
+    },
+    {
+      "id": "379e2eb5-e027-427d-8b4c-56d2e14d7860",
+      "markdown": "18. [Tesla, Optimus Data Operations Program Management](https://www.tesla.com/careers/search/job/sr-technical-program-manager-data-operations-optimus-281592). November 21 description covering collection sites, staffing, equipment and data validation."
+    },
+    {
+      "id": "b7ed4d3d-39f9-4c68-8200-2cedfe645599",
+      "markdown": "## Black Scarab career library"
+    },
+    {
+      "id": "95e2bc9d-f550-4114-b754-e057af54c29e",
+      "markdown": "The twenty guides provide detailed responsibilities, qualifications, employer examples, projects, learning resources and their underlying evidence. The guide directory and assessment are available at [Black Scarab Career Paths](https://www.blackscarab.ai/career-paths)."
+    },
+    {
+      "id": "50a378f5-f2d3-4764-bd1a-7c73eb8aca86",
+      "markdown": "### Hardware and Manufacturing"
+    },
+    {
+      "id": "7313f67f-5ed2-4ce6-a78d-0ece7622ba11",
+      "markdown": "* [Electrical Engineer](https://www.blackscarab.ai/career-paths/hardware-manufacturing/electrical-engineer)"
+    },
+    {
+      "id": "2849c4d3-cda7-4c8e-aad0-b7fb05c2bf57",
+      "markdown": "* [Embedded Software Engineer](https://www.blackscarab.ai/career-paths/hardware-manufacturing/embedded-software-engineer)"
+    },
+    {
+      "id": "b32489fc-7f5d-4405-af3a-68763b3f3a4a",
+      "markdown": "* [Hardware Test Engineer](https://www.blackscarab.ai/career-paths/hardware-manufacturing/hardware-test-engineer)"
+    },
+    {
+      "id": "a2a243bc-5239-4595-8654-65e59a3ef0b2",
+      "markdown": "* [Manufacturing Engineer](https://www.blackscarab.ai/career-paths/hardware-manufacturing/manufacturing-engineer)"
+    },
+    {
+      "id": "bd78e4d4-4e89-4bfa-abb6-ea5578d77c6a",
+      "markdown": "* [Mechanical Engineer](https://www.blackscarab.ai/career-paths/hardware-manufacturing/mechanical-engineer)"
+    },
+    {
+      "id": "d56114da-5398-426e-bd09-f5ed1498ce3d",
+      "markdown": "### Intelligence and Autonomy"
+    },
+    {
+      "id": "6b903a9d-494a-4da7-82ab-6e045b392edb",
+      "markdown": "* [Localization & Mapping Engineer](https://www.blackscarab.ai/career-paths/intelligence-autonomy/localization-and-mapping-engineer)"
+    },
+    {
+      "id": "3d81c1ae-cd2f-47fe-9b43-0028baa2e0e3",
+      "markdown": "* [Motion Planning Engineer](https://www.blackscarab.ai/career-paths/intelligence-autonomy/motion-planning-engineer)"
+    },
+    {
+      "id": "88bb6d4f-e776-4ac4-ac98-5aa3c2988f92",
+      "markdown": "* [Perception Engineer](https://www.blackscarab.ai/career-paths/intelligence-autonomy/perception-engineer)"
+    },
+    {
+      "id": "c12ddf5b-e240-4b79-ba5a-5e916f9b8e0f",
+      "markdown": "* [Robot Learning Engineer](https://www.blackscarab.ai/career-paths/intelligence-autonomy/robot-learning-engineer)"
+    },
+    {
+      "id": "dd99caae-776a-4c36-b213-e8ee36f80a2e",
+      "markdown": "* [Robotics Controls Engineer](https://www.blackscarab.ai/career-paths/intelligence-autonomy/robotics-controls-engineer)"
+    },
+    {
+      "id": "8f1c3196-0b11-43d4-8e97-5182e9c19163",
+      "markdown": "### Platforms and Simulation"
+    },
+    {
+      "id": "83abb1de-53cf-421f-980d-85c1c21ecefb",
+      "markdown": "* [Machine Learning Infrastructure Engineer](https://www.blackscarab.ai/career-paths/platforms-simulation/machine-learning-infrastructure-engineer)"
+    },
+    {
+      "id": "704bcf63-a1bb-491b-bde2-2f5ae63eb088",
+      "markdown": "* [Robotics Data Engineer](https://www.blackscarab.ai/career-paths/platforms-simulation/robotics-data-engineer)"
+    },
+    {
+      "id": "43cea654-b43a-4c87-a62c-2a9301c5f4d1",
+      "markdown": "* [Robotics Platform Engineer](https://www.blackscarab.ai/career-paths/platforms-simulation/robotics-platform-engineer)"
+    },
+    {
+      "id": "46e394a3-1e64-44ea-a0e3-4185e19f39fc",
+      "markdown": "* [Robotics Simulation Engineer](https://www.blackscarab.ai/career-paths/platforms-simulation/robotics-simulation-engineer)"
+    },
+    {
+      "id": "6dc9f8d2-e03d-46bc-ad30-022aad8c014f",
+      "markdown": "* [Verification & Validation Engineer](https://www.blackscarab.ai/career-paths/platforms-simulation/verification-and-validation-engineer)"
+    },
+    {
+      "id": "a62bd974-59e8-43db-b618-9ed84c25909b",
+      "markdown": "### Integration and Operations"
+    },
+    {
+      "id": "f6ff2344-82af-4fda-bbe2-23210d0f85b7",
+      "markdown": "* [Field Service Engineer](https://www.blackscarab.ai/career-paths/integration-operations/field-service-engineer)"
+    },
+    {
+      "id": "1331d4d9-192d-4078-b336-a8b8920c6458",
+      "markdown": "* [Industrial Automation Engineer](https://www.blackscarab.ai/career-paths/integration-operations/industrial-automation-engineer)"
+    },
+    {
+      "id": "c7877c8e-3e5e-47ae-b8c4-deb5d461ae12",
+      "markdown": "* [Robot Operations Specialist](https://www.blackscarab.ai/career-paths/integration-operations/robot-operations-specialist)"
+    },
+    {
+      "id": "9692523e-6306-43b3-846e-040ca5e7384f",
+      "markdown": "* [Robotics Integration Engineer](https://www.blackscarab.ai/career-paths/integration-operations/robotics-integration-engineer)"
+    },
+    {
+      "id": "1096e201-0a2c-4b5e-a6ff-87260c68eb79",
+      "markdown": "* [Systems Safety Engineer](https://www.blackscarab.ai/career-paths/integration-operations/systems-safety-engineer)"
+    },
+    {
+      "id": "734912ae-f18d-4858-8ae4-22523da68fec",
+      "markdown": "## Hiring evidence and compensation calculations"
+    },
+    {
+      "id": "07abfe69-64d8-4fa5-b199-e1787f3a39c8",
+      "markdown": "[Black Scarab November 2 hiring research](https://www.blackscarab.ai/research/physical-ai-careers-2026-11-02.json) preserves the published factual snapshot. The native Intelligence export used for this analysis is pinned to the same completed snapshot."
+    },
+    {
+      "id": "d837deb0-9f6b-4e32-9918-6d57098c3e5c",
+      "markdown": "Calculation files for every guide with a published midpoint estimate: [Electrical Engineer](https://www.blackscarab.ai/research/electrical-engineer-compensation-2026-11-02.json); [Embedded Software Engineer](https://www.blackscarab.ai/research/embedded-software-engineer-compensation-2026-11-02.json); [Field Service Engineer](https://www.blackscarab.ai/research/field-service-engineer-compensation-2026-11-02.json); [Hardware Test Engineer](https://www.blackscarab.ai/research/hardware-test-engineer-compensation-2026-11-02.json); [Industrial Automation Engineer](https://www.blackscarab.ai/research/industrial-automation-engineer-compensation-2026-11-02.json); [Localization Mapping Engineer](https://www.blackscarab.ai/research/localization-mapping-engineer-compensation-2026-11-02.json); [Manufacturing Engineer](https://www.blackscarab.ai/research/manufacturing-engineer-compensation-2026-11-02.json); [Ml Infrastructure Engineer](https://www.blackscarab.ai/research/ml-infrastructure-engineer-compensation-2026-11-02.json); [Motion Planning Engineer](https://www.blackscarab.ai/research/motion-planning-engineer-compensation-2026-11-02.json); [Perception Engineer](https://www.blackscarab.ai/research/perception-engineer-compensation-2026-11-02.json); [Robot Learning](https://www.blackscarab.ai/research/robot-learning-compensation-2026-11-02.json); [Robot Operations Specialist](https://www.blackscarab.ai/research/robot-operations-specialist-compensation-2026-11-02.json); [Robotics Controls Engineer](https://www.blackscarab.ai/research/robotics-controls-engineer-compensation-2026-11-02.json); [Robotics Data Engineer](https://www.blackscarab.ai/research/robotics-data-engineer-compensation-2026-11-02.json); [Robotics Integration](https://www.blackscarab.ai/research/robotics-integration-compensation-2026-11-02.json); [Robotics Platform Engineer](https://www.blackscarab.ai/research/robotics-platform-engineer-compensation-2026-11-02.json); [Robotics Simulation](https://www.blackscarab.ai/research/robotics-simulation-compensation-2026-11-02.json); [Systems Safety Engineer](https://www.blackscarab.ai/research/systems-safety-engineer-compensation-2026-11-02.json); [Verification Validation Engineer](https://www.blackscarab.ai/research/verification-validation-engineer-compensation-2026-11-02.json)."
+    }
+  ]
+}

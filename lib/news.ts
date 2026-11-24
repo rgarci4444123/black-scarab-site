@@ -38,6 +38,255 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "robouniverse-10k-video-robotics-simulation",
+  "title": "RoboUniverse 10K Opens 10,807 Robotics Simulations Built from Real Videos",
+  "summary": "The release turns recorded robot tasks into programmable practice environments, giving researchers a larger testing ground for agents that learn to act through code.",
+  "category": "Robotics research",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "6 min read",
+  "image": "/images/news/robouniverse-10k-video-robotics-simulation.png",
+  "imageAlt": "Graphic editorial illustration of a film ribbon opening into a field of robot manipulation scenes in cyan, citron and coral.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "The public catalog lists 10,807 reconstructed manipulation environments, spanning single arm Franka and dual arm AgileX robots.",
+    "The paper reports a model improvement from 0.8% to 21.2% success after supervised fine tuning. The released evaluation set carries qualifications about how tasks were selected.",
+    "Environment packages, evaluation code and model weights are available. The released model card describes simulation testing, while the paper also presents a physical robot demonstration."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Einsia and university collaborators have released RoboUniverse 10K, a collection of 10,807 interactive robotics simulations constructed from videos of real manipulation tasks.",
+        "The paper was submitted to arXiv on November 23. The public catalog contains 4,132 Franka environments and 6,675 AgileX environments, covering actions such as moving objects, fitting parts, handling materials and coordinating two arms. A separate file identifies 500 tasks for evaluation.",
+        "The proposition is straightforward: a video shows what a robot did once; an executable environment lets a model try its own approach and have the outcome checked. The release also exposes the details behind that proposition, including important qualifications on its benchmark and model claims."
+      ]
+    },
+    {
+      "heading": "From watching an action to attempting it",
+      "paragraphs": [
+        "A useful practice environment needs more than a convincing picture. Objects must collide, a gripper must make contact, and the system must recognize whether the intended task actually finished.",
+        "RoboUniverse packages an instruction, simulated scene, control interface, reference solution and scoring logic for each task. The dataset documentation says each archive represents one reconstructed simulation. The source video collection is separate from this release.",
+        "That changes what researchers can do with recorded demonstrations. Instead of judging whether a generated answer sounds plausible, they can execute a proposed controller, inspect what happens and score the physical result inside the simulator.",
+        "The distinction is especially useful for tasks where a good plan can still end badly. Recognizing that a lid belongs on a pot does not determine the exact motion that will seat it. A simulation makes that execution problem available for repeated experiments."
+      ]
+    },
+    {
+      "heading": "How the scenes are built",
+      "paragraphs": [
+        "The project describes a construction agent that extracts a task from a demonstration and assembles a corresponding Isaac Sim environment. It uses perception tools, an asset library and guidance on physical properties to build the scene, a reference controller and a verifier.",
+        "A separate quality checking agent examines fidelity to the source, whether the reference solution works again after a reset, and whether the scoring logic accepts valid outcomes while rejecting shortcuts. Failed environments return for revision.",
+        "This makes the verifier part of the research contribution. A robot could appear to complete a task because an object passed through another object, or because a fleeting contact triggered success. Checking the final physical outcome is essential if the environment is going to teach useful behavior.",
+        "The authors count distinct concrete tasks rather than treating every camera angle or minor layout change as a new task. Black Scarab’s view is that this counting discipline matters: the value of a large collection depends on how much distinct interaction it contains."
+      ]
+    },
+    {
+      "heading": "A coding agent takes the controls",
+      "paragraphs": [
+        "The released model works by reading a task, examining camera images and writing Python controllers that send actions to the simulated robot. It can observe the result and revise its program over several turns.",
+        "Harbor, the evaluation framework used here, organizes tasks, agent execution and verification. In RoboUniverse, the agent’s workspace is separated from the simulator’s privileged state and scoring logic. The public task archive includes reference material for reproducibility, so researchers must preserve that separation when evaluating an agent.",
+        "The paper’s protocol also pauses simulation while the model reasons or writes code. Physical time advances when it sends actions. This helps isolate control ability, but it leaves response speed as a separate question for a robot operating in a moving world.",
+        "For readers, the important distinction is between knowing a sequence and adjusting it. A controller that looks again after moving has an opportunity to notice a missed grasp. Whether it can turn that observation into a better movement is what the environment tests."
+      ]
+    },
+    {
+      "heading": "What the reported improvement shows",
+      "paragraphs": [
+        "The paper reports that supervised fine tuning raised the base model’s overall success from 0.8% to 21.2%, an increase of 20.4 percentage points. The figures are reported by the research team.",
+        "The model card describes 16,952 successful interaction trajectories across 6,327 tasks. Training updated the language component of Qwen3.6 35B A3B while freezing its vision encoder and visual alignment component. The resulting checkpoint is called RoboUniverse 35B A3B.",
+        "The experiment uses successful examples to teach behavior. The environments are also intended to support reinforcement learning, where a model improves through attempts and rewards, but that is a different training method from the supervised experiment reported here.",
+        "The paper’s failure analysis points toward physical execution: grasping, cloth manipulation and precise control after contact remain difficult. Its limitations section also acknowledges simplified dynamics, including resistance and friction in articulated objects, and a focus on relatively short tasks.",
+        "For Black Scarab, the useful implication is a more specific research agenda. If a model repeatedly understands the goal but misses the contact, improving the verbal plan alone may have limited effect. Better observations, control and simulation fidelity become central to progress."
+      ]
+    },
+    {
+      "heading": "Read the evaluation documentation alongside the scores",
+      "paragraphs": [
+        "The public dataset documentation adds a consequential qualification. It says the final 500 task selection replaced 68 entries using previously observed successful cases, and warns that the selection should not be treated as a blind random sample or an unbiased estimate for the model involved in selection.",
+        "The dataset page also makes no guarantee that training and test tasks are disjoint. Separately, the model card says its 6,327 training tasks are excluded from the 2,000 tasks used for evaluation, including the final 500. Those statements have different scopes; the checkpoint’s stated separation does not remove the selection bias warning.",
+        "The release further records 38 revised graders. That makes the exact dataset revision important when comparing a new run with a published score. A fixed task count alone does not establish that two experiments used the same test.",
+        "There is another distinction around hardware transfer. The paper describes a Franka arm drawing on a whiteboard, while the released model card says the checkpoint has been trained and evaluated only in simulation and has not been tested on real robots. The paper’s demonstration should therefore remain a paper level claim rather than a verified capability of the downloadable checkpoint.",
+        "These details affect what the numbers establish. A stronger independent test would use tasks chosen without observing the evaluated model’s successes and document both the training separation and scoring version."
+      ]
+    },
+    {
+      "heading": "The next test is reproducibility",
+      "paragraphs": [
+        "The public release gives researchers a substantial collection to inspect, extend and challenge. Its value can grow through independently reproduced runs and corrections to scenes or graders, as well as through better model scores.",
+        "Running it requires meaningful computing resources. The evaluation repository specifies an RTX capable simulation host, substantial memory per running scene and a separate model serving setup where needed. Open access makes the materials available; experiment capacity still depends on hardware and engineering work.",
+        "The most informative next results would combine independently selected tasks, clearly identified release versions and physical robot trials tied to a named checkpoint. Longer sequences would also test whether local corrections accumulate into reliable completion when several actions depend on one another.",
+        "RoboUniverse’s immediate contribution is a larger, inspectable practice ground for robot coding agents. The next advance will come from showing which improvements survive a new task, a different evaluator and contact with the physical world."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "RoboUniverse research paper and submission history",
+      "url": "https://arxiv.org/abs/2611.31002"
+    },
+    {
+      "label": "RoboUniverse project page and construction overview",
+      "url": "https://lab.einsia.ai/robo-universe/"
+    },
+    {
+      "label": "Public environment release and evaluation qualifications",
+      "url": "https://huggingface.co/datasets/Einsia/RoboUniverse-10K/blob/adf9993f6617290c2395704a868875d5c0d47daa/README.md"
+    },
+    {
+      "label": "Released model card, training setup and limitations",
+      "url": "https://huggingface.co/Einsia/RoboUniverse-35B-A3B/blob/262f2640480b004a453915ce8240fdc5e092738b/README.md"
+    },
+    {
+      "label": "Evaluation repository and computing requirements",
+      "url": "https://github.com/Einsia/RoboUniverse-10K/tree/b1c596665e210552af599c870bb5e6b0495cb43b"
+    },
+    {
+      "label": "Harbor evaluation framework documentation",
+      "url": "https://docs.harborframework.com/"
+    }
+  ],
+  "publishedDate": "2026-11-24",
+  "publishedAt": "2026-11-24T11:43:32-05:00",
+  "publishedLabel": "November 24, 2026",
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [],
+    "technologies": [
+      "simulation",
+      "embodied-ai",
+      "foundation-models",
+      "manipulation",
+      "robot-software"
+    ],
+    "applications": [
+      "simulation-validation"
+    ]
+  }
+},
+{
+  "slug": "atom-japan-bank-facilities",
+  "title": "Japan’s ATOM Signs ¥4.5 Billion in Bank Facilities to Build Humanoid Capacity",
+  "summary": "Three Japanese banks are backing ATOM’s preparations for an internal GPU cluster and robot production, connecting its learning infrastructure with plans for annual deliveries of 200 humanoids in 2027.",
+  "category": "Funding",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "5 min read",
+  "image": "/images/news/atom-japan-bank-facilities.png",
+  "imageAlt": "Painterly editorial interpretation of three monumental copper supports carrying a computing lattice that extends into an open mechanical hand against an aubergine sky.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "ATOM signed credit facilities with a combined ¥4.5 billion borrowing ceiling across Sumitomo Mitsui Banking Corporation, Mizuho Bank and MUFG Bank.",
+    "The financing supports an internal GPU cluster and manufacturing preparation. Mizuho’s ¥1.5 billion agreement replaces its August facility.",
+    "ATOM targets annual deliveries of 200 humanoids in 2027 and 10,000 in 2030."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Japan’s ATOM said on November 24 that it has signed agreements for ¥4.5 billion in bank credit facilities to build its own computing cluster and prepare for humanoid robot manufacturing.",
+        "The Tokyo startup is bringing together three things it will need to deliver useful machines: data from physical work, computing to train the software, and a production system that can make the hardware consistently. Its latest financing supports the latter two.",
+        "ATOM is targeting annual deliveries of 200 robots in 2027 and 10,000 in 2030. Those company targets put a timetable on the work ahead, with a fiftyfold increase between the two years."
+      ]
+    },
+    {
+      "heading": "Three banks and one important distinction",
+      "paragraphs": [
+        "Sumitomo Mitsui Banking Corporation accounts for ¥2 billion of the facilities, Mizuho Bank for ¥1.5 billion and MUFG Bank for ¥1 billion. ATOM says borrowing will take place under the conditions of each agreement.",
+        "The ¥4.5 billion is the combined borrowing ceiling. It is not a statement that the company has received that much cash. Mizuho’s portion also replaces the ¥1.5 billion agreement announced in August, with revised terms. Counting that earlier agreement again would overstate the package.",
+        "The facilities follow a separate ¥3 billion seed equity round announced in May. Equity helped ATOM begin building its development organization; the latest announcement describes credit for the infrastructure that supports training and production.",
+        "That combination is consequential for a young hardware company. Engineers need equipment before a product generates regular sales. Manufacturing preparation also consumes money before each finished machine can be delivered. Access to credit gives ATOM another financing tool as it works through that interval."
+      ]
+    },
+    {
+      "heading": "Building the robot and its software together",
+      "paragraphs": [
+        "Founded in November 2025 and led by Shunsuke Aoki, ATOM develops a humanoid with two arms and two legs alongside the AI models intended to control it. The company describes a development process that connects hardware design, learning from physical tasks and testing on the machine.",
+        "The planned GPU cluster would give ATOM computing equipment at its own premises for model training and validation. GPUs are processors used to carry out many calculations at once. Here, their role is to help develop the software behind a robot’s perception, decisions and movement.",
+        "For this approach to pay off, the computing has to stay connected to what happens on the robot. A better model can change how the machine attempts a task. Testing that behavior can reveal another weakness in the software, the hand or the joint. The useful result is a development cycle in which each round informs the next.",
+        "Black Scarab’s view is that the pairing of computing and manufacturing is the more revealing part of this announcement. ATOM is allocating financing to the systems around the robot, where the ability to improve a prototype has to meet the ability to reproduce it."
+      ]
+    },
+    {
+      "heading": "The data foundry supplies the other part of the loop",
+      "paragraphs": [
+        "ATOM opened its Physical AI Foundry in Tokyo’s Toyosu district in August. The approximately 1,700 square meter development space is intended to bring data collection, model evaluation and hardware improvement together.",
+        "People can remotely operate the company’s robots to demonstrate work, recording visual information alongside touch and force data. The aim is to capture more than where an object sits. When a robot grasps a part or fits it into place, how contact develops matters too.",
+        "At the opening, ATOM said it aimed to have 200 humanoids operating continuously at the foundry by the end of 2027 and to produce a cumulative 300,000 hours of training data. That research fleet goal is separate from the annual customer delivery targets in the new financing announcement.",
+        "The distinction matters because data generation and commercial production serve different jobs. Machines in a development center can help teach and test behavior. Customer deliveries require a repeatable product and a process for getting it into use. Progress in one supports the other, but does not automatically complete it."
+      ]
+    },
+    {
+      "heading": "Japan’s component industry enters the development cycle",
+      "paragraphs": [
+        "One concrete example of ATOM’s hardware work is its August memorandum of understanding with NSK, the Japanese precision components manufacturer. The companies agreed to jointly evaluate NSK’s humanoid actuators on ATOM robots and work on collecting data at NSK manufacturing sites.",
+        "Actuators turn control instructions into physical movement. Evaluating them on the robot lets the component developer see how a joint behaves as part of a larger machine. The memorandum describes development cooperation, rather than a volume supply order.",
+        "The proposed data work addresses a different problem. A laboratory can make a task repeatable; a production environment introduces the layout, equipment and operating constraints that the robot eventually has to handle. The agreement gives the partners a route to study those conditions together.",
+        "This is where Japan’s manufacturing experience could become useful to a new humanoid developer. Precision components and production knowledge have to be integrated with the software controlling the machine. ATOM’s approach puts that exchange inside the development process instead of treating hardware as a finished platform on which AI is added later."
+      ]
+    },
+    {
+      "heading": "From an annual target to repeatable deliveries",
+      "paragraphs": [
+        "In the latest release, ATOM says it will work with component makers and manufacturing partners on design, procurement, assembly and inspection. It plans to expand production and deliveries in stages while confirming the safety and quality required at customer sites.",
+        "That sequence is a sensible way to read the 2027 and 2030 ambitions. The first challenge is getting an initial series of machines built and accepted. Growing from there requires components that arrive reliably, assemblies that behave consistently and inspection that catches problems before shipment.",
+        "The delivery targets remain company goals. The financing strengthens ATOM’s ability to prepare; evidence of execution will come from the computing entering service, manufacturing arrangements becoming concrete and robots reaching customers.",
+        "For now, the announcement marks a step in building the industrial base behind ATOM’s humanoid. The next chapter is whether those investments let the company move smoothly between learning on a robot and delivering another one."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "ATOM’s November 24 credit facilities announcement",
+      "url": "https://prtimes.jp/main/html/rd/p/000000008.000172692.html"
+    },
+    {
+      "label": "ATOM’s August Mizuho agreement",
+      "url": "https://prtimes.jp/main/html/rd/p/000000003.000172692.html"
+    },
+    {
+      "label": "ATOM’s May seed financing announcement",
+      "url": "https://prtimes.jp/main/html/rd/p/000000001.000172692.html"
+    },
+    {
+      "label": "ATOM company profile and development history",
+      "url": "https://atom-humanoid.com/about/"
+    },
+    {
+      "label": "ATOM Physical AI Foundry opening and research targets",
+      "url": "https://prtimes.jp/main/html/rd/p/000000007.000172692.html"
+    },
+    {
+      "label": "ATOM and NSK development memorandum",
+      "url": "https://prtimes.jp/main/html/rd/p/000000002.000172692.html"
+    },
+    {
+      "label": "The AI Insider’s reporting on the bank facilities",
+      "url": "https://theaiinsider.tech/2026/11/24/japans-atom-secures-28-3m-in-bank-credit-to-expand-humanoid-robot-production/"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [
+      "manufacturing",
+      "warehousing-logistics"
+    ],
+    "technologies": [
+      "humanoid-robotics",
+      "embodied-ai",
+      "foundation-models",
+      "robot-software"
+    ],
+    "applications": []
+  },
+  "publishedDate": "2026-11-24",
+  "publishedAt": "2026-11-24T09:28:19-05:00",
+  "publishedLabel": "November 24, 2026"
+},
+{
   "slug": "antropi-autonomous-cnc-factory",
   "title": "How Antropi Robotics Is Building an Autonomous CNC Factory",
   "summary": "In Bengaluru, Antropi is connecting software, robot arms and inspection so machining can keep moving through the night. Its progress offers a look at how factories could run with fewer people managing every step.",

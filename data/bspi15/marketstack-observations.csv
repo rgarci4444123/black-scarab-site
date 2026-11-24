@@ -732,7 +732,7 @@ Date,Ticker,Company,Marketstack Symbol,MIC,Currency,Type,Close,Adjusted Close,Di
 2026-11-19,6506,Yaskawa Electric,6506.T,XJPX,JPY,Constituent,3475,3475,0,1,v2
 2026-11-19,6861,Keyence,6861.T,XJPX,JPY,Constituent,14690,14690,0,5,v2
 2026-11-19,6954,FANUC,6954.T,XJPX,JPY,Constituent,5331,5331,0,1,v2
-2026-11-19,CGNX,Cognex,CGNX,XNAS,USD,Constituent,47.66,47.66,0,1,v2
+2026-11-19,CGNX,Cognex,CGNX,XNAS,USD,Constituent,47.66,47.66,0.09,1,v2
 2026-11-19,HEXA B,Hexagon,HEXA-B.ST,XSTO,SEK,Constituent,103.65,103.65,0,1,v2
 2026-11-19,HSAI,Hesai,HSAI,XNAS,USD,Constituent,12.77,12.77,0,1,v2
 2026-11-19,Nasdaq Composite,Nasdaq Composite,IXIC.INDX,INDX,USD,Benchmark,23879.1992,23879.1992,0,1,v1
@@ -758,4 +758,16 @@ Date,Ticker,Company,Marketstack Symbol,MIC,Currency,Type,Close,Adjusted Close,Di
 2026-11-20,ROK,Rockwell Automation,ROK,XNYS,USD,Constituent,361.93,361.93,0,1,v2
 2026-11-20,S&P 500,S&P 500,GSPC.INDX,INDX,USD,Benchmark,6910.39,6910.39,0,1,v1
 2026-11-20,SIE,Siemens,SIE.DE,XETR,EUR,Constituent,254.65,254.65,0,1,v2
-2026-11-20,TER,Teradyne,TER,XNAS,USD,Constituent,204.775,204.775,0,1,v2
+2026-11-20,TER,Teradyne,TER,XNAS,USD,Constituent,204.78,204.65,0,1,v2
+2026-11-23,002747,Estun Automation,002747.SZ,XSHE,CNY,Constituent,26.68,26.68,0,1,v2
+2026-11-23,300124,Inovance,300124.SZ,XSHE,CNY,Constituent,54.63,54.63,0,1,v2
+2026-11-23,CGNX,Cognex,CGNX,XNAS,USD,Constituent,48.47,48.47,0,1,v2
+2026-11-23,HEXA B,Hexagon,HEXA-B.ST,XSTO,SEK,Constituent,101.65,101.65,0,1,v2
+2026-11-23,HSAI,Hesai,HSAI,XNAS,USD,Constituent,12.63,12.63,0,1,v2
+2026-11-23,Nasdaq Composite,Nasdaq Composite,IXIC.INDX,INDX,USD,Benchmark,24089.5586,24089.5586,0,1,v1
+2026-11-23,NXPI,NXP Semiconductors,NXPI,XNAS,USD,Constituent,256.03,256.03,0,1,v2
+2026-11-23,OUST,Ouster,OUST,XNYS,USD,Constituent,27.9,27.9,0,1,v2
+2026-11-23,ROK,Rockwell Automation,ROK,XNYS,USD,Constituent,382.47,382.47,0,1,v2
+2026-11-23,S&P 500,S&P 500,GSPC.INDX,INDX,USD,Benchmark,7237.17,7237.17,0,1,v1
+2026-11-23,SIE,Siemens,SIE.DE,XETR,EUR,Constituent,265.15,265.15,0,1,v2
+2026-11-23,TER,Teradyne,TER,XNAS,USD,Constituent,233.51,233.51,0.13,1,v2
