@@ -110,7 +110,7 @@
       "schedule": false,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-24T00:29:34.872Z",
+      "checkedAt": "2026-11-24T22:51:54.022Z",
       "error": "Midnight calendar date needs an explicit source start-time quote"
     },
     "approvedFingerprint": null,
@@ -923,7 +923,7 @@
       "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
       "Accessibility 6/10: confirmed free, paid or unconfirmed price."
     ],
-    "status": "approved",
+    "status": "expired",
     "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
     "lastVerifiedAt": null,
     "publishedAt": null,
@@ -992,7 +992,7 @@
       "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
       "Accessibility 6/10: confirmed free, paid or unconfirmed price."
     ],
-    "status": "approved",
+    "status": "expired",
     "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
     "lastVerifiedAt": null,
     "publishedAt": null,
@@ -1061,7 +1061,7 @@
       "Topic and speakers 10/10: specific technical agenda with identifiable presenters.",
       "Accessibility 6/10: confirmed free, paid or unconfirmed price."
     ],
-    "status": "approved",
+    "status": "expired",
     "firstDiscoveredAt": "2026-11-17T01:14:40.607Z",
     "lastVerifiedAt": null,
     "publishedAt": null,
@@ -1776,7 +1776,7 @@
       "schedule": false,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-24T00:29:34.872Z",
+      "checkedAt": "2026-11-24T22:51:54.022Z",
       "error": "Midnight calendar date needs an explicit source start-time quote"
     },
     "approvedFingerprint": null,
