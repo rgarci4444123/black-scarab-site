@@ -110,7 +110,7 @@
       "schedule": false,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-22T20:04:00.886Z",
+      "checkedAt": "2026-11-24T00:29:34.872Z",
       "error": "Midnight calendar date needs an explicit source start-time quote"
     },
     "approvedFingerprint": null,
@@ -1759,7 +1759,10 @@
     "lastVerifiedAt": null,
     "publishedAt": null,
     "duplicateKey": "ieee robotics automation society|2027 world conference on autonomous intelligent systems amp robotics wcaisr|2027-01-21",
-    "aliases": [],
+    "aliases": [
+      "https://www.ieee-ras.org/event/2027-world-conference-on-autonomous-intelligent-systems-robotics-wcaisr-72076/",
+      "https://www.ieee-ras.org/events/category/conferences/"
+    ],
     "evidence": {
       "title": "2027 World Conference on Autonomous Intelligent Systems & Robotics (WcAISR)",
       "schedule": "2027-01-21T00:00:00-05:00",
@@ -1773,7 +1776,7 @@
       "schedule": false,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-22T20:04:00.886Z",
+      "checkedAt": "2026-11-24T00:29:34.872Z",
       "error": "Midnight calendar date needs an explicit source start-time quote"
     },
     "approvedFingerprint": null,
