@@ -38,6 +38,127 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "atom-japan-bank-facilities",
+  "title": "Japan’s ATOM Signs ¥4.5 Billion in Bank Facilities to Build Humanoid Capacity",
+  "summary": "Three Japanese banks are backing ATOM’s preparations for an internal GPU cluster and robot production, connecting its learning infrastructure with plans for annual deliveries of 200 humanoids in 2027.",
+  "category": "Funding",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "5 min read",
+  "image": "/images/news/atom-japan-bank-facilities.png",
+  "imageAlt": "Painterly editorial interpretation of three monumental copper supports carrying a computing lattice that extends into an open mechanical hand against an aubergine sky.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "ATOM signed credit facilities with a combined ¥4.5 billion borrowing ceiling across Sumitomo Mitsui Banking Corporation, Mizuho Bank and MUFG Bank.",
+    "The financing supports an internal GPU cluster and manufacturing preparation. Mizuho’s ¥1.5 billion agreement replaces its August facility.",
+    "ATOM targets annual deliveries of 200 humanoids in 2027 and 10,000 in 2030."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Japan’s ATOM said on November 24 that it has signed agreements for ¥4.5 billion in bank credit facilities to build its own computing cluster and prepare for humanoid robot manufacturing.",
+        "The Tokyo startup is bringing together three things it will need to deliver useful machines: data from physical work, computing to train the software, and a production system that can make the hardware consistently. Its latest financing supports the latter two.",
+        "ATOM is targeting annual deliveries of 200 robots in 2027 and 10,000 in 2030. Those company targets put a timetable on the work ahead, with a fiftyfold increase between the two years."
+      ]
+    },
+    {
+      "heading": "Three banks and one important distinction",
+      "paragraphs": [
+        "Sumitomo Mitsui Banking Corporation accounts for ¥2 billion of the facilities, Mizuho Bank for ¥1.5 billion and MUFG Bank for ¥1 billion. ATOM says borrowing will take place under the conditions of each agreement.",
+        "The ¥4.5 billion is the combined borrowing ceiling. It is not a statement that the company has received that much cash. Mizuho’s portion also replaces the ¥1.5 billion agreement announced in August, with revised terms. Counting that earlier agreement again would overstate the package.",
+        "The facilities follow a separate ¥3 billion seed equity round announced in May. Equity helped ATOM begin building its development organization; the latest announcement describes credit for the infrastructure that supports training and production.",
+        "That combination is consequential for a young hardware company. Engineers need equipment before a product generates regular sales. Manufacturing preparation also consumes money before each finished machine can be delivered. Access to credit gives ATOM another financing tool as it works through that interval."
+      ]
+    },
+    {
+      "heading": "Building the robot and its software together",
+      "paragraphs": [
+        "Founded in November 2025 and led by Shunsuke Aoki, ATOM develops a humanoid with two arms and two legs alongside the AI models intended to control it. The company describes a development process that connects hardware design, learning from physical tasks and testing on the machine.",
+        "The planned GPU cluster would give ATOM computing equipment at its own premises for model training and validation. GPUs are processors used to carry out many calculations at once. Here, their role is to help develop the software behind a robot’s perception, decisions and movement.",
+        "For this approach to pay off, the computing has to stay connected to what happens on the robot. A better model can change how the machine attempts a task. Testing that behavior can reveal another weakness in the software, the hand or the joint. The useful result is a development cycle in which each round informs the next.",
+        "Black Scarab’s view is that the pairing of computing and manufacturing is the more revealing part of this announcement. ATOM is allocating financing to the systems around the robot, where the ability to improve a prototype has to meet the ability to reproduce it."
+      ]
+    },
+    {
+      "heading": "The data foundry supplies the other part of the loop",
+      "paragraphs": [
+        "ATOM opened its Physical AI Foundry in Tokyo’s Toyosu district in August. The approximately 1,700 square meter development space is intended to bring data collection, model evaluation and hardware improvement together.",
+        "People can remotely operate the company’s robots to demonstrate work, recording visual information alongside touch and force data. The aim is to capture more than where an object sits. When a robot grasps a part or fits it into place, how contact develops matters too.",
+        "At the opening, ATOM said it aimed to have 200 humanoids operating continuously at the foundry by the end of 2027 and to produce a cumulative 300,000 hours of training data. That research fleet goal is separate from the annual customer delivery targets in the new financing announcement.",
+        "The distinction matters because data generation and commercial production serve different jobs. Machines in a development center can help teach and test behavior. Customer deliveries require a repeatable product and a process for getting it into use. Progress in one supports the other, but does not automatically complete it."
+      ]
+    },
+    {
+      "heading": "Japan’s component industry enters the development cycle",
+      "paragraphs": [
+        "One concrete example of ATOM’s hardware work is its August memorandum of understanding with NSK, the Japanese precision components manufacturer. The companies agreed to jointly evaluate NSK’s humanoid actuators on ATOM robots and work on collecting data at NSK manufacturing sites.",
+        "Actuators turn control instructions into physical movement. Evaluating them on the robot lets the component developer see how a joint behaves as part of a larger machine. The memorandum describes development cooperation, rather than a volume supply order.",
+        "The proposed data work addresses a different problem. A laboratory can make a task repeatable; a production environment introduces the layout, equipment and operating constraints that the robot eventually has to handle. The agreement gives the partners a route to study those conditions together.",
+        "This is where Japan’s manufacturing experience could become useful to a new humanoid developer. Precision components and production knowledge have to be integrated with the software controlling the machine. ATOM’s approach puts that exchange inside the development process instead of treating hardware as a finished platform on which AI is added later."
+      ]
+    },
+    {
+      "heading": "From an annual target to repeatable deliveries",
+      "paragraphs": [
+        "In the latest release, ATOM says it will work with component makers and manufacturing partners on design, procurement, assembly and inspection. It plans to expand production and deliveries in stages while confirming the safety and quality required at customer sites.",
+        "That sequence is a sensible way to read the 2027 and 2030 ambitions. The first challenge is getting an initial series of machines built and accepted. Growing from there requires components that arrive reliably, assemblies that behave consistently and inspection that catches problems before shipment.",
+        "The delivery targets remain company goals. The financing strengthens ATOM’s ability to prepare; evidence of execution will come from the computing entering service, manufacturing arrangements becoming concrete and robots reaching customers.",
+        "For now, the announcement marks a step in building the industrial base behind ATOM’s humanoid. The next chapter is whether those investments let the company move smoothly between learning on a robot and delivering another one."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "ATOM’s November 24 credit facilities announcement",
+      "url": "https://prtimes.jp/main/html/rd/p/000000008.000172692.html"
+    },
+    {
+      "label": "ATOM’s August Mizuho agreement",
+      "url": "https://prtimes.jp/main/html/rd/p/000000003.000172692.html"
+    },
+    {
+      "label": "ATOM’s May seed financing announcement",
+      "url": "https://prtimes.jp/main/html/rd/p/000000001.000172692.html"
+    },
+    {
+      "label": "ATOM company profile and development history",
+      "url": "https://atom-humanoid.com/about/"
+    },
+    {
+      "label": "ATOM Physical AI Foundry opening and research targets",
+      "url": "https://prtimes.jp/main/html/rd/p/000000007.000172692.html"
+    },
+    {
+      "label": "ATOM and NSK development memorandum",
+      "url": "https://prtimes.jp/main/html/rd/p/000000002.000172692.html"
+    },
+    {
+      "label": "The AI Insider’s reporting on the bank facilities",
+      "url": "https://theaiinsider.tech/2026/11/24/japans-atom-secures-28-3m-in-bank-credit-to-expand-humanoid-robot-production/"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [
+      "manufacturing",
+      "warehousing-logistics"
+    ],
+    "technologies": [
+      "humanoid-robotics",
+      "embodied-ai",
+      "foundation-models",
+      "robot-software"
+    ],
+    "applications": []
+  },
+  "publishedDate": "2026-11-24",
+  "publishedAt": "2026-11-24T09:28:19-05:00",
+  "publishedLabel": "November 24, 2026"
+},
+{
   "slug": "antropi-autonomous-cnc-factory",
   "title": "How Antropi Robotics Is Building an Autonomous CNC Factory",
   "summary": "In Bengaluru, Antropi is connecting software, robot arms and inspection so machining can keep moving through the night. Its progress offers a look at how factories could run with fewer people managing every step.",
