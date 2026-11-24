@@ -52,6 +52,9 @@ const insightSlugs = new Set(
 );
 
 insightSlugs.add(robotGuideArticle.slug);
+const workforceSource = await readFile(new URL("../lib/physical-ai-workforce.ts", import.meta.url), "utf8");
+const workforceSlug = workforceSource.match(/export const workforceSlug = "([^"]+)";/)?.[1];
+if (workforceSlug) insightSlugs.add(workforceSlug);
 
 function resolvePaths(entry) {
   if (!entry) {

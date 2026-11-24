@@ -1,4 +1,6 @@
 import { robotGuideSlug } from "@/lib/nvidia-robot-guide";
+import WorkforceArticle from "@/components/physical-ai-workforce/article";
+import { workforceSlug } from "@/lib/physical-ai-workforce";
 import RobotGuideContents from "@/components/nvidia-robot-guide/contents";
 import RobotGuideBody from "@/components/nvidia-robot-guide/body";
 import type { Metadata } from "next";
@@ -252,6 +254,10 @@ export default async function CaseStudyPage({ params }: Props) {
     ],
     citation: article.sourceLinks?.map((source) => source.url) ?? [],
   };
+
+  if (article.slug === workforceSlug) {
+    return <WorkforceArticle article={article} schemas={[articleSchema, breadcrumbSchema]} />;
+  }
 
   return (
     <main className="min-h-screen bg-[#f5f5f7] px-4 py-4 text-[#111827] sm:px-6 lg:px-8">

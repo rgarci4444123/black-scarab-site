@@ -1,3 +1,4 @@
+import { physicalAiWorkforceDeepDive } from "@/lib/physical-ai-workforce";
 import { nvidiaRobotGuideDeepDive } from "@/lib/nvidia-robot-guide";
 import { encordDeepDive } from "@/lib/encord";
 import { roboticWeldingDeepDive } from "@/lib/robotic-welding";
@@ -16788,6 +16789,7 @@ const flockSafetyDeepDive = (): CaseStudyArticle => ({
 });
 
 export const caseStudies: CaseStudyArticle[] = [
+  physicalAiWorkforceDeepDive(),
   roboticWeldingDeepDive(),
   nvidiaRobotGuideDeepDive(),
   encordDeepDive(),
