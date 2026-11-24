@@ -226,3 +226,14 @@ Officialwebsite links and matchingliveXprofiles verified @zipline,@Walmart,@para
 Website https://www.blackscarab.ai/news/axon-skydio-investment-public-safety and company LinkedIn https://www.linkedin.com/feed/update/urn:li:share:7524888340546908162/?actorCompanyId=111898269 verified in order, including exact Axon/Skydio tags and visible first company canonical link comment. Rodolfo selected original artwork; manual X image is byte identical. Three BREAKING bullets,246 weighted characters including canonical URL, preserve November5announcement, closedprimary purchase and expected37%stake.
 
 Official website links and matching live X identities verified @axon_enterprise, @SkydioHQ and @Dedrone. Dedrone is context omitted from shortcopy. No unresolved handles. Recent BlackScarabAIprofile and local log checked, no duplicate observed. Copy,alttext and companylist: output/x/axon-skydio-investment-public-safety/publication.txt andcompany-handles.json. Exact image /Users/rodolfogarcia/Desktop/black-scarab-site/output/x/axon-skydio-investment-public-safety/axon-skydio-x-original.png . Rodolfo publishes and verifies X manually. No X mutations.
+
+
+## Physical AI Workforce manual X edition, November 24, 2026
+
+* Website published and verified: https://www.blackscarab.ai/insights/physical-ai-workforce-hiring-compensation-careers. Production commit 293e76ce41199dce9d297f2d3af86cd2cdc447a5. IndexNow accepted both article and Insights index URLs with status 200.
+* Black Scarab company LinkedIn post published and verified: https://www.linkedin.com/feed/update/urn:li:share:7531034038346907648/?actorCompanyId=111898269. First canonical-link comment verified from Black Scarab, comment ID 7531034337857716225. Approved robot illustration and descriptive alt text retained.
+* Original editorial title retained. Separate search title: Physical AI Careers: Robotics Jobs, Salaries and Skills.
+* Manual X package prepared after website and company LinkedIn verification. Full native Article text and HTML preserve all five analytical figures as native text, including every visible table value; a 228 character launch post and uncropped 5:2 cover are included.
+* Package: /Users/rodolfogarcia/Documents/ChatGPT/Black Scarab Career Paths/research/physical-ai-careers/2026-11-24/social-package/. Square image: physical-ai-workforce-x.png. Native cover: physical-ai-workforce-x-article-cover.png. Rodolfo publishes and verifies X manually. No X mutations.
+* Current repository log and an exact-title web search showed no matching publication. The public X profile fetch returned 403, so its recent feed was not directly verified. Check the profile before manual publication.
+* Reddit text draft, moderator message and current community-rule references saved in the same package. No Reddit publication performed.
