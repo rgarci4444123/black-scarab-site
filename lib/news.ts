@@ -38,6 +38,408 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "antropi-autonomous-cnc-factory",
+  "title": "How Antropi Robotics Is Building an Autonomous CNC Factory",
+  "summary": "In Bengaluru, Antropi is connecting software, robot arms and inspection so machining can keep moving through the night. Its progress offers a look at how factories could run with fewer people managing every step.",
+  "category": "Factory automation",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "6 min read",
+  "image": "/images/news/antropi-autonomous-cnc-factory.png",
+  "imageAlt": "Conceptual engraved illustration of a machined metal crescent containing a CNC machine, loading robot and inspection light beneath orbiting finished parts.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "Antropi says its first Bengaluru factory is operating and shipping precision metal parts.",
+    "Factory OS links job planning, robotic loading, machining and inspection, helping an approved job continue overnight.",
+    "Engineers still approve programs, prepare new setups and handle exceptions as the company works toward greater autonomy."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Antropi Robotics says its first autonomous CNC factory in Bengaluru is making and shipping metal parts, with robots loading machines, cameras inspecting the output and its Factory OS connecting the work.",
+        "The company came out of stealth on October 20, reporting lead times under seven days. Its automation effort reaches into the work between the cuts, where people have traditionally kept production moving.",
+        "A CNC machine can already cut a complicated shape without someone guiding every movement. Keeping an entire job moving is harder. Someone has to prepare it, get material into the machine, check the result and decide what happens next.",
+        "Antropi is bringing those tasks into a connected process. Once people have prepared and approved a job, the company says its automated cell can keep working overnight."
+      ]
+    },
+    {
+      "heading": "The problem the founders knew firsthand",
+      "paragraphs": [
+        "Founders Naman Gupta and Shubh Agarwal met in college in 2017, where they built Mars rovers together. They knew the frustration of changing a design quickly, then waiting much longer for the part that would let them test it.",
+        "Gupta later spent six months running his father’s CNC machining business in India. That put him on the other side of the delay, inside the operation responsible for turning a drawing into something that could be shipped.",
+        "Their experience helps explain the company’s direction. Faster cutting alone leaves plenty of work untouched. A machine can finish one operation and sit idle while the next piece, program or decision is still waiting for a person.",
+        "For a hardware team, that waiting can determine which ideas get tested. A revised component that misses the next build may push an improvement into another development cycle. Antropi’s founders are trying to remove more of that delay by changing how the factory operates."
+      ]
+    },
+    {
+      "heading": "Connecting the work around the machine",
+      "paragraphs": [
+        "Antropi describes Factory OS as the software joining the process together. It starts with a digital part design, creates the instructions for machining it and checks the planned cuts in simulation. An engineer reviews the program before production starts.",
+        "From there, robots take over loading and unloading the CNC machines. The machines cut the parts, and inspection checks what they have made. The results return to the production system, helping it decide whether work should continue or something needs attention.",
+        "Think of the difference between automating a task and keeping a job moving. A loading robot can feed a machine repeatedly. A more connected operation also needs to know whether the finished part is right and what to do when it is not.",
+        "Unattended machining and robotic loading already exist across the industry. Antropi’s ambition is to bring planning, handling, machining and inspection under the same software, reducing the handoffs that would otherwise interrupt production."
+      ]
+    },
+    {
+      "heading": "Inspection becomes part of running the factory",
+      "paragraphs": [
+        "The inspection step is central to Antropi’s approach. According to the founders, measurements feed back into machining so the system can correct a problem it knows how to handle, or stop the machine for someone to investigate.",
+        "That changes the role of a quality check. It can help determine what the factory does next, rather than simply recording what came out at the end.",
+        "This matters more when production continues after people leave. Repeating a movement is useful only while the process keeps producing acceptable parts. A cell that notices a developing problem can contain it before the same mistake spreads through the rest of a run.",
+        "Black Scarab’s view is that this connection between making, checking and responding is the most consequential part of the story. It moves the automation beyond physical repetition and into some of the routine decisions that keep production on track."
+      ]
+    },
+    {
+      "heading": "People prepare the job, then the cell keeps going",
+      "paragraphs": [
+        "Antropi’s progress is easiest to understand through the work people still do. Engineers approve machining programs. The team prepares fixtures, the equipment that holds a new part in place, and handles exceptions. After that preparation, the company says the cell can continue running overnight.",
+        "The human role shifts toward getting the process ready and dealing with situations the system cannot resolve. That can give a prepared job more productive hours without requiring someone to load and check every part by hand.",
+        "A new design can still create fresh work. Different shapes may need different gripping arrangements, fixtures and machining instructions. Making an established part repeatedly is a useful first step; moving smoothly between unfamiliar jobs is a larger challenge."
+      ]
+    },
+    {
+      "heading": "Why an operating factory matters",
+      "paragraphs": [
+        "Antropi is putting this approach to work on customer orders. In its latest company description, the founders say they machined a complicated component for a space company in 17 hours and shipped it, with more orders following from the same customer.",
+        "The example gives the automation effort a commercial setting. A working factory has to deal with drawings, deadlines and the quality of the parts it sends out. The value of its software shows up in how well the operation handles that work repeatedly.",
+        "Short delivery times by themselves are already available in parts of the machining market. Protolabs, for example, advertises machined parts in as fast as one day. Antropi’s longer term case rests on how much of the production process it can coordinate automatically, and how easily that approach can be repeated elsewhere.",
+        "Its founders want a network of factories close to the hardware teams they serve, with local delivery in as little as 24 hours for supported parts. That remains a target. The logic is straightforward: automation reduces waiting inside the factory, while nearby production reduces the journey after a part is finished.",
+        "For engineers, those two changes could make it easier to test a design, learn from it and try again within the same week. For factory operators, the broader implication is a different relationship between staffing and output: more production could continue between the moments when human judgment is needed.",
+        "Antropi’s first factory is an early step in that direction. The next chapter will be how much new work it can absorb while keeping the machines running and the parts right."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Antropi’s original launch and founder background on Y Combinator",
+      "url": "https://www.ycombinator.com/launches/W49-antropi-robotics-cnc-parts-in-days-from-autonomous-factories"
+    },
+    {
+      "label": "Antropi’s Factory OS workflow and operating update",
+      "url": "https://www.ycombinator.com/companies/antropi-robotics"
+    },
+    {
+      "label": "Antropi’s ordering site and factory description",
+      "url": "https://antropi.shop/"
+    },
+    {
+      "label": "Antropi’s company updates and Bengaluru factory announcement",
+      "url": "https://www.linkedin.com/company/antropi-robotics"
+    },
+    {
+      "label": "Haas documentation on robotic loading and unattended machining",
+      "url": "https://www.haascnc.com/machines/automation-systems/automation-models/robot-redirect-2/robot-package-2.html"
+    },
+    {
+      "label": "Protolabs CNC machining service",
+      "url": "https://www.protolabs.com/services/cnc-machining/"
+    },
+    {
+      "label": "The American Industrialist on Antropi’s October 20 announcement",
+      "url": "https://www.theamericanindustrialist.com/feed/antropi-robotics-comes-out-of-stealth-with-an-autonomous"
+    },
+    {
+      "label": "Inc42 company profile",
+      "url": "https://inc42.com/company/antropi/"
+    }
+  ],
+  "publishedDate": "2026-11-23",
+  "publishedAt": "2026-11-23T12:45:17-05:00",
+  "publishedLabel": "November 23, 2026",
+  "taxonomy": {
+    "primaryIndustry": "manufacturing",
+    "relevantIndustries": [],
+    "technologies": [
+      "industrial-robotics",
+      "machine-vision",
+      "robot-software"
+    ],
+    "applications": [
+      "machine-tending",
+      "inspection",
+      "quality-control"
+    ]
+  }
+},
+{
+  "slug": "x-square-wall-oss-1-312-tasks",
+  "title": "What WALL-OSS-1.0’s 312 task test says about teaching robots new jobs",
+  "summary": "X Square Robot reports broader capability before task specific training. Its warehouse example makes a separate case for faster adaptation, with operating performance still the deciding test.",
+  "category": "Robot intelligence",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "7 min read",
+  "image": "/images/news/x-square-wall-oss-1-312-tasks.png",
+  "imageAlt": "An imagined cast metal practice course branches through object handling exercises before joining a conveyor carrying parcels.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "X Square reports 55.1% success across 312 distinct real robot tasks without task specific demonstrations or fine tuning.",
+    "Its parcel sorting application uses an adapted policy built on the pretrained model.",
+    "The commercial proposition is less repeated training work as robots move between jobs and sites."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "X Square Robot introduced WALL-OSS-1.0 on November 23, reporting that a single pretrained robot policy achieved a 55.1% success rate across 312 tasks selected by evaluators.",
+        "A policy is the software that chooses a robot’s actions. The Shenzhen company is testing an appealing proposition: teach a model broadly enough that useful skills carry into a new job, instead of collecting a fresh set of demonstrations for every assignment. For a warehouse operator, that could eventually mean less work commissioning a system and less rebuilding when the parcel mix or facility changes.",
+        "The announcement supplies evidence about both broad capability and industrial adaptation. Those are different achievements, and the distinction matters more than any one headline percentage."
+      ]
+    },
+    {
+      "heading": "What the 312 tasks actually measure",
+      "paragraphs": [
+        "According to X Square’s technical blog, the open evaluation comprised 377 evaluations, with results for identical instructions averaged into 312 unique tasks. These were grouped into 47 task clusters. The overall mean score was 6.45 out of 10, alongside the separate 55.1% success rate.",
+        "That makes 312 a count of distinct tasks after consolidation. It is not 312 repeated trials of the same warehouse operation. Nor does the mean score mean that 64.5% of tasks were completed successfully.",
+        "The company describes evaluators choosing tasks freely and using the same pretrained policy without task specific fine tuning. That tests whether a broad foundation can produce useful behavior beyond a fixed assignment. It does not mean the model learned without robot demonstrations, or that every object and motion was absent from pretraining.",
+        "A varied task set can expose capabilities that a narrow repetitive test misses. It can also produce an aggregate that says little about any particular workload. A warehouse’s daily mix might be dominated by actions that were a small part of the evaluation.",
+        "The appropriate reading is a capability survey under the company’s protocol. Evaluator choice by itself does not make the result an independent audit or a statistically representative sample of warehouse work."
+      ]
+    },
+    {
+      "heading": "The training bet is reusable experience",
+      "paragraphs": [
+        "WALL-OSS-1.0 is a vision language action model: it connects what a robot sees, the instruction it receives and the movements it should make. X Square starts from Qwen3.5 and jointly trains on language, visual and robot action data.",
+        "The practical idea is straightforward. Knowing what an object is should help the robot decide what to do with it, while experience manipulating objects should make that understanding more useful in the physical world.",
+        "X Square’s training process also uses human corrections when an executing policy struggles. Selected corrective segments feed back into the broader training corpus. Generalization is being pursued through more varied, better targeted experience, rather than through the removal of teaching.",
+        "For developers, that changes where effort might pay off. An example that improves a reusable skill could help several future applications. The business benefit would come when that reuse reduces the amount of application work needed to reach a dependable result.",
+        "It remains possible for a broadly capable model to need substantial work on a narrow task. A parcel slipping from a gripper, a transparent wrapper obscuring an edge and a barcode facing the conveyor are distinct physical problems. Understanding the instruction is one part of solving them."
+      ]
+    },
+    {
+      "heading": "The warehouse result uses adaptation",
+      "paragraphs": [
+        "X Square says it has applied the model to parcel sorting for a logistics customer. The work includes orienting barcodes, aligning parcel edges and feeding individual packages into sorting equipment.",
+        "For this application, WALL-OSS-1.0 provides the foundation for a task specific policy. X Square reports that adaptation takes approximately 10 hours of task data to reach a usable level, compared with more than 1,000 hours without pretraining.",
+        "That is a claim about the amount of task data used. It is not a promise that a warehouse can commission an installation in 10 hours. Data preparation, model training, tooling, controls and acceptance testing belong to the larger delivery process.",
+        "The company also reports that its adapted policy retained more than 90% of its original site sorting speed and success rate in a comparison across sites with different lighting, tables, conveyors and parcel distributions.",
+        "Retention is relative to the original result. It does not establish an absolute success rate above 90%. Hypothetically, retaining 90% of a 1,000 parcel per hour baseline would mean 900 parcels per hour. That arithmetic illustrates the distinction; those are not X Square’s reported production rates.",
+        "The opportunity is economically meaningful if the effect holds. A second installation that reuses useful skills and needs fewer new demonstrations could be cheaper to deliver. It could also make changes to an existing operation less disruptive. Independent reporting by 42HOW describes the same adapted sorting application, drawing on the company’s disclosures rather than supplying an independent performance measurement."
+      ]
+    },
+    {
+      "heading": "A benchmark score and a working shift answer different questions",
+      "paragraphs": [
+        "X Square also reports a 50.67% overall success rate on ManipArena, its separate test of 15 tabletop tasks with 10 trials per task. That result belongs to a different task set and protocol from the 312 task evaluation.",
+        "The distinction helps explain what a warehouse test should establish. A general model is interesting when it can attempt many unfamiliar instructions. A sorting installation earns its place by completing a defined flow of work repeatedly, at the required pace and quality.",
+        "For a prospective installation, a useful trial would use the facility’s actual parcel distribution and count accepted outputs over elapsed operating time. That connects successful manipulation with the work the conveyor and downstream process can use.",
+        "Interventions matter because their cost extends beyond the failed attempt. A worker may have to approach the cell, clear an obstruction, inspect a parcel and restart the process. A system can look capable in individual trials while consuming too much attention during a shift.",
+        "The same applies to recovery. Detecting a bad grasp, retrying it and correctly recording the result can be more valuable than attempting a wider range of loosely related tasks. Speed, quality and intervention time should therefore be assessed together."
+      ]
+    },
+    {
+      "heading": "Planning software still needs a physical interface",
+      "paragraphs": [
+        "Alongside the model, X Square released XR Harness as an open source developer preview. Its repository describes a planning layer, an execution layer and a runtime connecting robot controllers and sensors through the Robot Agent Protocol.",
+        "The separation reflects the work around an action model. Someone has to translate the overall goal into steps, observe the scene, check completion and decide what follows. The robot also needs an action interface compatible with the model and its hardware.",
+        "XR Harness’s documentation explicitly makes compatible model services and completion checking part of setup. Access to a model is therefore one component of an operating system for physical work, with integration effort still relevant to the deployment decision.",
+        "Public model artifacts require the same precision. X Square’s available WALL-OSS-1.0-Lite RoboDojo checkpoint is described on its model card as fine tuned for that simulation benchmark and not validated on real robots. It should not be treated as a downloadable reproduction of the 312 task real robot evaluation."
+      ]
+    },
+    {
+      "heading": "What would make this commercially persuasive",
+      "paragraphs": [
+        "Black Scarab’s assessment is that the strongest business case is reusable learning: a model that reaches a defined job with fewer demonstrations, then carries more of that capability into the next site.",
+        "The next evidence to watch is a measured progression from a first installation to another one, using comparable workloads. Reduced task data should be connected to commissioning effort, accepted throughput and the human attention required to keep the system running.",
+        "If those measures improve together, broad pretraining could change the economics of deploying robots across a customer’s network. The 312 task result offers a reason to investigate that possibility. A repeatable warehouse workflow is where its commercial value will be decided."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "X Square Robot, November 23 technical blog, evaluation methodology, training and parcel sorting",
+      "url": "https://x2robot.com/en/blog/wall-oss-1"
+    },
+    {
+      "label": "X Square Robot, November 23 announcement distributed through GlobeNewswire, syndicated by WBOC",
+      "url": "https://www.wboc.com/online_features/press_releases/x-square-robot-introduces-wall-oss-1-0-understand-more-act-better-a-native-foundation/article_ddc06701-7c27-50b3-a7f1-d55fa52babe3.html"
+    },
+    {
+      "label": "XR Harness, official developer preview and integration documentation",
+      "url": "https://github.com/X-Square-Robot/xr-harness"
+    },
+    {
+      "label": "X Square Robot, WALL-OSS-1.0-Lite RoboDojo model card",
+      "url": "https://huggingface.co/x-square-robot/wall-oss-1.0-lite-robodojo"
+    },
+    {
+      "label": "42HOW Robotics, November 23 coverage of the model release and adapted sorting application",
+      "url": "https://ai.42how.com/en/article/zibianliang-wall-oss-1-0-embodied-model-release"
+    }
+  ],
+  "publishedDate": "2026-11-23",
+  "publishedAt": "2026-11-23T10:47:54-05:00",
+  "publishedLabel": "November 23, 2026",
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [
+      "warehousing-logistics"
+    ],
+    "technologies": [
+      "embodied-ai",
+      "foundation-models",
+      "manipulation",
+      "robot-training-data",
+      "robot-software"
+    ],
+    "applications": [
+      "robot-training",
+      "parcel-sorting"
+    ]
+  }
+},
+{
+  "slug": "marubun-realman-japan",
+  "title": "Marubun adds RealMan’s lightweight robot arms to its Japan lineup",
+  "summary": "The Japanese distributor will handle RealMan arms, joint modules, humanoids and teleoperation tools. Planned combinations with DEEP Robotics quadrupeds aim to extend inspection robots into physical maintenance tasks.",
+  "category": "Companies",
+  "publishedDate": "2026-11-22",
+  "publishedAt": "2026-11-22T21:06:12-05:00",
+  "publishedLabel": "November 22, 2026",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "image": "/images/news/marubun-realman-japan.png",
+  "imageAlt": "Conceptual close view of a compact silver robot gripper holding the rim of an oversized red industrial valve against a deep green background.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "readingTime": "5 min read",
+  "keyPoints": [
+    "Marubun announced a domestic distribution agreement with RealMan Robotics on November 19.",
+    "Representative RM arms carry 5 kilograms while weighing about 7.2 to 7.9 kilograms, according to the companies.",
+    "The portfolio combines manipulation hardware with teleoperation and training data tools, with quadruped integrations planned."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Marubun is adding RealMan Robotics’ lightweight arms, joint modules and robot training tools to its Japanese lineup under a domestic distribution agreement announced on November 19.",
+        "The electronics distributor will also handle humanoid platforms and support customization and system building. Its plans include mounting RealMan arms on quadrupeds from its existing robotics portfolio, extending the machines’ role from reaching and inspecting equipment to physically operating it.",
+        "The arms provide the clearest starting point. Marubun lists a 5 kilogram payload for representative RM models weighing about 7.2 to 7.9 kilograms. That combination makes the arm’s own weight a central part of the pitch, particularly when it has to travel on another robot.",
+        "For RealMan, the agreement adds a Japanese sales and integration channel. For Marubun, it connects its mobile robot business with manipulation hardware and the tools used to record human demonstrations."
+      ]
+    },
+    {
+      "heading": "A lighter arm leaves room for the job",
+      "paragraphs": [
+        "RealMan’s own specifications distinguish the models behind the headline range. The standard RM65 has six moving joints, weighs 7.2 kilograms and reaches 610 millimeters. The standard RM75 adds a seventh joint and weighs 7.8 kilograms, with the same stated payload and reach.",
+        "The seventh joint gives the arm another way to arrange itself while placing its tool at the required position. That can help it approach a task around an obstacle or within a constrained workspace. The useful configuration still depends on the equipment around it.",
+        "RealMan also offers versions with a force and torque sensor at the wrist. Its documentation lists a 627 millimeter reach and slightly higher weight for those variants. These are manufacturer specifications for the arms, rather than measured results for a complete mobile system.",
+        "An arm carried by a mobile base competes for capacity with the mounting hardware, gripper, sensors and load. Lower arm weight leaves more of that capacity available for the rest of the machine. It can also make the mechanical integration less demanding.",
+        "Weight is only one part of the problem. Extending an arm moves the load away from the base, changing the forces on the machine. A stable platform, suitable mounting and coordinated motion remain essential when a robot has to manipulate equipment after crossing a slope or climbing steps."
+      ]
+    },
+    {
+      "heading": "From inspection to intervention",
+      "paragraphs": [
+        "Marubun already handles quadrupeds from DEEP Robotics. It says it will develop combinations that mount RealMan arms on those machines for remote inspection and maintenance in difficult terrain and hazardous areas.",
+        "The attraction is easy to picture. A camera can show the position of a valve or the state of a control panel. Manipulation hardware can add the ability to turn the valve or operate a control, provided the combined system can reach it, apply the required force and remain stable.",
+        "That is an intended application of the new portfolio. Marubun’s next commercial step is to make the combination useful on a defined job, with the mobile base, arm, controls and tool working together.",
+        "Black Scarab sees the integration work as the important business opportunity. Selling an arm gives a customer a component. Delivering a repeatable way to reach equipment, perform an action and recover from an interrupted task can give the distributor a larger role in a project."
+      ]
+    },
+    {
+      "heading": "The catalog goes beyond arms",
+      "paragraphs": [
+        "Marubun’s RealMan catalog includes mobile lifting platforms, wheeled humanoids and joint modules. These serve different engineering needs, even though they share parts of the same hardware ecosystem.",
+        "RealMan’s dual arm lifting platform combines a mobile base with a 900 millimeter lifting stroke. The manufacturer specifies a vertical working reach from floor level to 2.4 meters and a 5 kilogram payload for each arm. Marubun presents warehouse racks and server cabinets as target applications.",
+        "The RealBot range adds a different form of mobile manipulation. RealMan describes its S2 as a wheeled, folding humanoid with two arms and 20 active degrees of freedom. The wheeled base is a meaningful distinction for readers imagining a walking humanoid.",
+        "The WHJ joint modules address teams building their own hardware. RealMan lists integrated harmonic joints with encoders and a CAN FD communications interface, offering a component route alongside its complete arms and mobile platforms.",
+        "That breadth gives the agreement several possible entry points. An equipment developer may need a joint, an integration team an arm, and a research group a mobile platform. Their engineering requirements differ, so one successful application would establish a foothold rather than validate the entire catalog."
+      ]
+    },
+    {
+      "heading": "Remote work can also produce training data",
+      "paragraphs": [
+        "The software and teleoperation tools are the other part of the proposition. Marubun describes a system that synchronizes operating data such as joint torque and position while a person controls the robot, then structures that data for model training.",
+        "RealMan’s teleoperation catalog includes remote kits with force feedback as well as a local Aloha configuration. The remote kits let an operator receive information about contact forces while controlling the machine. Its product material describes coordinated capture across arms, grippers and other moving parts.",
+        "This creates a useful connection between doing a task and teaching it. Demonstrations can preserve how the operator moved and what the robot experienced, giving developers examples from the hardware they want to automate.",
+        "The quality of those examples matters. A training set needs consistent timing, useful camera views and enough variation to represent the task. Repeating a motion successfully under remote control does not, by itself, establish that a trained model will recover from a changed object or an unexpected obstruction.",
+        "For Marubun, combining hardware and data tools could keep it involved through evaluation and development. The value would come from helping a team move from demonstrations to dependable operation, with the appropriate controls and support around the machine."
+      ]
+    },
+    {
+      "heading": "The next test is a defined task",
+      "paragraphs": [
+        "Marubun says it will work with customers on customization and system construction across manufacturing, logistics, infrastructure and research. Robosta and LNEWS also reported the agreement, drawing on the company’s announcement.",
+        "A distribution channel can make specialized hardware easier to source and integrate locally. Its commercial value grows when that access produces systems that complete useful work consistently.",
+        "The next signals to watch are Japanese installations with a named task, operating conditions and results that can be assessed over time. For the planned quadruped combinations, the telling evidence will connect mobility with manipulation: reaching the equipment, performing the action and handling interruptions safely.",
+        "Black Scarab’s assessment is that Marubun has added the pieces for a broader robotics offering. The opportunity now rests on turning those pieces into repeatable applications that its Japanese customers can put to work."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Marubun, November 19 distribution announcement and original posting time",
+      "url": "https://prtimes.jp/main/html/rd/p/000000160.000166754.html"
+    },
+    {
+      "label": "Marubun, RealMan product portfolio and integration services",
+      "url": "https://www.marubun.co.jp/products/91667/"
+    },
+    {
+      "label": "Marubun, RM series specifications",
+      "url": "https://www.marubun.co.jp/products/91720/"
+    },
+    {
+      "label": "RealMan, RM65 model specifications",
+      "url": "https://www.realman-robotics.com/en/products/rm65.html"
+    },
+    {
+      "label": "RealMan, RM75 model specifications",
+      "url": "https://www.realman-robotics.com/en/products/rm75.html"
+    },
+    {
+      "label": "RealMan, dual arm lifting platform",
+      "url": "https://www.realman-robotics.com/en/products/dual-arm-lift.html"
+    },
+    {
+      "label": "RealMan, RealBot S2 configuration",
+      "url": "https://www.realman-robotics.com/en/products/realbot-s2.html"
+    },
+    {
+      "label": "RealMan, WHJ joint modules",
+      "url": "https://www.realman-robotics.com/en/products/whj-joint-modules.html"
+    },
+    {
+      "label": "RealMan, teleoperation configurations",
+      "url": "https://www.realman-robotics.com/en/products/teleop-kit.html"
+    },
+    {
+      "label": "Robosta, November 19 coverage of the agreement",
+      "url": "https://robotstart.info/article/2026/11/19/382650.html"
+    },
+    {
+      "label": "LNEWS, November 19 logistics coverage",
+      "url": "https://www.lnews.jp/2026/11/s1119503.html"
+    }
+  ],
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [
+      "manufacturing",
+      "warehousing-logistics",
+      "energy-utilities",
+      "data-centers"
+    ],
+    "technologies": [
+      "industrial-robotics",
+      "humanoid-robotics",
+      "embodied-ai",
+      "actuators"
+    ],
+    "applications": [
+      "inspection",
+      "material-handling"
+    ]
+  }
+},
+{
   "slug": "mountain-7-3m-seed-edge-vision",
   "title": "MountAIn raises €7.3 million to put computer vision on cheaper chips",
   "summary": "The Grenoble startup is commercializing software that fits vision applications onto inexpensive microcontrollers. Partnerships with Alif Semiconductor and Roboflow show how the approach reaches cameras and other embedded devices.",
