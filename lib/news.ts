@@ -38,6 +38,134 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "robouniverse-10k-video-robotics-simulation",
+  "title": "RoboUniverse 10K Opens 10,807 Robotics Simulations Built from Real Videos",
+  "summary": "The release turns recorded robot tasks into programmable practice environments, giving researchers a larger testing ground for agents that learn to act through code.",
+  "category": "Robotics research",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "6 min read",
+  "image": "/images/news/robouniverse-10k-video-robotics-simulation.png",
+  "imageAlt": "Graphic editorial illustration of a film ribbon opening into a field of robot manipulation scenes in cyan, citron and coral.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "The public catalog lists 10,807 reconstructed manipulation environments, spanning single arm Franka and dual arm AgileX robots.",
+    "The paper reports a model improvement from 0.8% to 21.2% success after supervised fine tuning. The released evaluation set carries qualifications about how tasks were selected.",
+    "Environment packages, evaluation code and model weights are available. The released model card describes simulation testing, while the paper also presents a physical robot demonstration."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Einsia and university collaborators have released RoboUniverse 10K, a collection of 10,807 interactive robotics simulations constructed from videos of real manipulation tasks.",
+        "The paper was submitted to arXiv on November 23. The public catalog contains 4,132 Franka environments and 6,675 AgileX environments, covering actions such as moving objects, fitting parts, handling materials and coordinating two arms. A separate file identifies 500 tasks for evaluation.",
+        "The proposition is straightforward: a video shows what a robot did once; an executable environment lets a model try its own approach and have the outcome checked. The release also exposes the details behind that proposition, including important qualifications on its benchmark and model claims."
+      ]
+    },
+    {
+      "heading": "From watching an action to attempting it",
+      "paragraphs": [
+        "A useful practice environment needs more than a convincing picture. Objects must collide, a gripper must make contact, and the system must recognize whether the intended task actually finished.",
+        "RoboUniverse packages an instruction, simulated scene, control interface, reference solution and scoring logic for each task. The dataset documentation says each archive represents one reconstructed simulation. The source video collection is separate from this release.",
+        "That changes what researchers can do with recorded demonstrations. Instead of judging whether a generated answer sounds plausible, they can execute a proposed controller, inspect what happens and score the physical result inside the simulator.",
+        "The distinction is especially useful for tasks where a good plan can still end badly. Recognizing that a lid belongs on a pot does not determine the exact motion that will seat it. A simulation makes that execution problem available for repeated experiments."
+      ]
+    },
+    {
+      "heading": "How the scenes are built",
+      "paragraphs": [
+        "The project describes a construction agent that extracts a task from a demonstration and assembles a corresponding Isaac Sim environment. It uses perception tools, an asset library and guidance on physical properties to build the scene, a reference controller and a verifier.",
+        "A separate quality checking agent examines fidelity to the source, whether the reference solution works again after a reset, and whether the scoring logic accepts valid outcomes while rejecting shortcuts. Failed environments return for revision.",
+        "This makes the verifier part of the research contribution. A robot could appear to complete a task because an object passed through another object, or because a fleeting contact triggered success. Checking the final physical outcome is essential if the environment is going to teach useful behavior.",
+        "The authors count distinct concrete tasks rather than treating every camera angle or minor layout change as a new task. Black Scarab’s view is that this counting discipline matters: the value of a large collection depends on how much distinct interaction it contains."
+      ]
+    },
+    {
+      "heading": "A coding agent takes the controls",
+      "paragraphs": [
+        "The released model works by reading a task, examining camera images and writing Python controllers that send actions to the simulated robot. It can observe the result and revise its program over several turns.",
+        "Harbor, the evaluation framework used here, organizes tasks, agent execution and verification. In RoboUniverse, the agent’s workspace is separated from the simulator’s privileged state and scoring logic. The public task archive includes reference material for reproducibility, so researchers must preserve that separation when evaluating an agent.",
+        "The paper’s protocol also pauses simulation while the model reasons or writes code. Physical time advances when it sends actions. This helps isolate control ability, but it leaves response speed as a separate question for a robot operating in a moving world.",
+        "For readers, the important distinction is between knowing a sequence and adjusting it. A controller that looks again after moving has an opportunity to notice a missed grasp. Whether it can turn that observation into a better movement is what the environment tests."
+      ]
+    },
+    {
+      "heading": "What the reported improvement shows",
+      "paragraphs": [
+        "The paper reports that supervised fine tuning raised the base model’s overall success from 0.8% to 21.2%, an increase of 20.4 percentage points. The figures are reported by the research team.",
+        "The model card describes 16,952 successful interaction trajectories across 6,327 tasks. Training updated the language component of Qwen3.6 35B A3B while freezing its vision encoder and visual alignment component. The resulting checkpoint is called RoboUniverse 35B A3B.",
+        "The experiment uses successful examples to teach behavior. The environments are also intended to support reinforcement learning, where a model improves through attempts and rewards, but that is a different training method from the supervised experiment reported here.",
+        "The paper’s failure analysis points toward physical execution: grasping, cloth manipulation and precise control after contact remain difficult. Its limitations section also acknowledges simplified dynamics, including resistance and friction in articulated objects, and a focus on relatively short tasks.",
+        "For Black Scarab, the useful implication is a more specific research agenda. If a model repeatedly understands the goal but misses the contact, improving the verbal plan alone may have limited effect. Better observations, control and simulation fidelity become central to progress."
+      ]
+    },
+    {
+      "heading": "Read the evaluation documentation alongside the scores",
+      "paragraphs": [
+        "The public dataset documentation adds a consequential qualification. It says the final 500 task selection replaced 68 entries using previously observed successful cases, and warns that the selection should not be treated as a blind random sample or an unbiased estimate for the model involved in selection.",
+        "The dataset page also makes no guarantee that training and test tasks are disjoint. Separately, the model card says its 6,327 training tasks are excluded from the 2,000 tasks used for evaluation, including the final 500. Those statements have different scopes; the checkpoint’s stated separation does not remove the selection bias warning.",
+        "The release further records 38 revised graders. That makes the exact dataset revision important when comparing a new run with a published score. A fixed task count alone does not establish that two experiments used the same test.",
+        "There is another distinction around hardware transfer. The paper describes a Franka arm drawing on a whiteboard, while the released model card says the checkpoint has been trained and evaluated only in simulation and has not been tested on real robots. The paper’s demonstration should therefore remain a paper level claim rather than a verified capability of the downloadable checkpoint.",
+        "These details affect what the numbers establish. A stronger independent test would use tasks chosen without observing the evaluated model’s successes and document both the training separation and scoring version."
+      ]
+    },
+    {
+      "heading": "The next test is reproducibility",
+      "paragraphs": [
+        "The public release gives researchers a substantial collection to inspect, extend and challenge. Its value can grow through independently reproduced runs and corrections to scenes or graders, as well as through better model scores.",
+        "Running it requires meaningful computing resources. The evaluation repository specifies an RTX capable simulation host, substantial memory per running scene and a separate model serving setup where needed. Open access makes the materials available; experiment capacity still depends on hardware and engineering work.",
+        "The most informative next results would combine independently selected tasks, clearly identified release versions and physical robot trials tied to a named checkpoint. Longer sequences would also test whether local corrections accumulate into reliable completion when several actions depend on one another.",
+        "RoboUniverse’s immediate contribution is a larger, inspectable practice ground for robot coding agents. The next advance will come from showing which improvements survive a new task, a different evaluator and contact with the physical world."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "RoboUniverse research paper and submission history",
+      "url": "https://arxiv.org/abs/2611.31002"
+    },
+    {
+      "label": "RoboUniverse project page and construction overview",
+      "url": "https://lab.einsia.ai/robo-universe/"
+    },
+    {
+      "label": "Public environment release and evaluation qualifications",
+      "url": "https://huggingface.co/datasets/Einsia/RoboUniverse-10K/blob/adf9993f6617290c2395704a868875d5c0d47daa/README.md"
+    },
+    {
+      "label": "Released model card, training setup and limitations",
+      "url": "https://huggingface.co/Einsia/RoboUniverse-35B-A3B/blob/262f2640480b004a453915ce8240fdc5e092738b/README.md"
+    },
+    {
+      "label": "Evaluation repository and computing requirements",
+      "url": "https://github.com/Einsia/RoboUniverse-10K/tree/b1c596665e210552af599c870bb5e6b0495cb43b"
+    },
+    {
+      "label": "Harbor evaluation framework documentation",
+      "url": "https://docs.harborframework.com/"
+    }
+  ],
+  "publishedDate": "2026-11-24",
+  "publishedAt": "2026-11-24T11:43:32-05:00",
+  "publishedLabel": "November 24, 2026",
+  "taxonomy": {
+    "primaryIndustry": "cross-industry",
+    "relevantIndustries": [],
+    "technologies": [
+      "simulation",
+      "embodied-ai",
+      "foundation-models",
+      "manipulation",
+      "robot-software"
+    ],
+    "applications": [
+      "simulation-validation"
+    ]
+  }
+},
+{
   "slug": "atom-japan-bank-facilities",
   "title": "Japan’s ATOM Signs ¥4.5 Billion in Bank Facilities to Build Humanoid Capacity",
   "summary": "Three Japanese banks are backing ATOM’s preparations for an internal GPU cluster and robot production, connecting its learning infrastructure with plans for annual deliveries of 200 humanoids in 2027.",
