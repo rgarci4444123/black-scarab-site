@@ -1783,7 +1783,7 @@
     "reviewedBy": null,
     "reviewedAt": null,
     "overrideReason": null,
-    "reviewNotifiedFingerprint": null,
+    "reviewNotifiedFingerprint": "[\"2027 World Conference on Autonomous Intelligent Systems & Robotics (WcAISR)\",\"2027 World Conference on Autonomous Intelligent Systems & Robotics (WcAISR)\",\"IEEE Robotics & Automation Society\",\"https://www.ieee-ras.org/\",\"Autonomous Systems\",\"Live webinar\",\"2027-01-21T00:00:00-05:00\",\"-05:00\",\"2027-01-21T05:00:00.000Z\",\"2027-01-23T04:59:00.000Z\",\"https://ieee-ras.org/event/2027-world-conference-on-autonomous-intelligent-systems-robotics-wcaisr-72076\",\"https://ieee-ras.org/events/category/conferences\",\"\",\"unknown\",null]",
     "changes": [
       "Midnight calendar date needs an explicit source start-time quote"
     ]
