@@ -1,0 +1,127 @@
+[
+  {
+    "width": 320,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 15",
+      "Oct 29",
+      "Nov 24"
+    ],
+    "minimumGap": 16.406768798828125
+  },
+  {
+    "width": 360,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 15",
+      "Oct 29",
+      "Nov 24"
+    ],
+    "minimumGap": 19.209815979003906
+  },
+  {
+    "width": 390,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 15",
+      "Oct 29",
+      "Nov 24"
+    ],
+    "minimumGap": 21.294525146484375
+  },
+  {
+    "width": 540,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 9",
+      "Oct 19",
+      "Oct 27",
+      "Nov 4",
+      "Nov 12",
+      "Nov 24"
+    ],
+    "minimumGap": 21.750213623046875
+  },
+  {
+    "width": 560,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 9",
+      "Oct 19",
+      "Oct 27",
+      "Nov 4",
+      "Nov 12",
+      "Nov 24"
+    ],
+    "minimumGap": 24.89958953857422
+  },
+  {
+    "width": 768,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 7",
+      "Oct 13",
+      "Oct 19",
+      "Oct 23",
+      "Oct 29",
+      "Nov 4",
+      "Nov 10",
+      "Nov 16",
+      "Nov 24"
+    ],
+    "minimumGap": 19.540695190429688
+  },
+  {
+    "width": 1024,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 6",
+      "Oct 9",
+      "Oct 14",
+      "Oct 19",
+      "Oct 22",
+      "Oct 27",
+      "Oct 30",
+      "Nov 4",
+      "Nov 9",
+      "Nov 12",
+      "Nov 17",
+      "Nov 24"
+    ],
+    "minimumGap": 23.615234375
+  },
+  {
+    "width": 1440,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 5",
+      "Oct 7",
+      "Oct 9",
+      "Oct 13",
+      "Oct 15",
+      "Oct 19",
+      "Oct 21",
+      "Oct 23",
+      "Oct 27",
+      "Oct 29",
+      "Nov 2",
+      "Nov 4",
+      "Nov 6",
+      "Nov 10",
+      "Nov 12",
+      "Nov 16",
+      "Nov 18",
+      "Nov 20",
+      "Nov 24"
+    ],
+    "minimumGap": 10.302490234375
+  }
+]

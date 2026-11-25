@@ -2,6 +2,7 @@
 import entries from "@/content/physical-ai-glossary/entries.json";
 import controls from "@/content/physical-ai-glossary/publication.json";
 import { glossaryTargetPhrases } from "@/lib/glossary-linking";
+import { getGlossaryVideo, getGlossaryVideoSchema } from "@/lib/glossary-video";
 import {
   GLOSSARY_PATH, glossaryEditorialIssues, glossaryReleaseIssues, glossaryRevision,
   publishedGlossaryArticles, validateGlossary,
@@ -74,6 +75,7 @@ export function getGlossarySchema(article: GlossaryArticle) {
   const hubUrl = `${origin}${GLOSSARY_PATH}`;
   const url = `${origin}${glossaryArticlePath(article)}`;
   const control = glossaryPublication.terms[article.id];
+  const video = getGlossaryVideo(article, control);
   return { "@context": "https://schema.org", "@graph": [
     { "@type": "DefinedTerm", "@id": `${url}#term`, name: article.term,
       description: article.definition, ...(article.aliases.length ? { alternateName: article.aliases } : {}),
@@ -83,11 +85,13 @@ export function getGlossarySchema(article: GlossaryArticle) {
       author: { "@type": "Person", name: control.authorName, url: `${origin}/about` },
       publisher: { "@type": "Organization", name: "Black Scarab", url: origin },
       datePublished: control.publishedAt, dateModified: control.modifiedAt ?? control.publishedAt,
-      citation: article.sources.map((source) => source.url) },
+      citation: article.sources.map((source) => source.url),
+      ...(video ? { video: { "@id": `${url}#video` } } : {}) },
     { "@type": "BreadcrumbList", itemListElement: [
       { "@type": "ListItem", position: 1, name: "Physical AI Glossary", item: hubUrl },
       { "@type": "ListItem", position: 2, name: article.displayName, item: url },
     ] },
+    ...(video ? [getGlossaryVideoSchema(video, url)] : []),
   ] };
 }
 

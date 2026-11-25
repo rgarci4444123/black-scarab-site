@@ -38,6 +38,107 @@ export type NewsUpdate = {
 
 export const newsUpdates: NewsUpdate[] = [
 {
+  "slug": "eacon-xcmg-cabless-mining-truck",
+  "title": "EACON and XCMG plan a mining truck built without a cab",
+  "summary": "The partners will develop a cabless electric haul truck together. EACON says its autonomous driving system already runs on more than 400 XCMG trucks at Chinese open pit mines.",
+  "category": "Autonomous Systems",
+  "author": {
+    "name": "Rodolfo Garcia Calderoni, CFA",
+    "href": "/about"
+  },
+  "readingTime": "5 min read",
+  "image": "/images/news/eacon-xcmg-cabless-mining-truck.png",
+  "imageAlt": "Overhead editorial illustration of a cabless mining truck carrying ore along a pale road through terraced rock.",
+  "imageCaption": "Editorial illustration by Black Scarab.",
+  "keyPoints": [
+    "EACON and XCMG signed a strategic agreement at bauma CHINA in Shanghai on November 24 to develop Level 4 mining trucks and expand their existing haulage partnership.",
+    "EACON says more than 400 XCMG trucks equipped with its system are in routine operation across more than 10 open pit mines.",
+    "The collaboration aims to bring joint deployments to the scale of 1,000 trucks across the partnership."
+  ],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "EACON and XCMG have agreed to design a mining truck around the assumption that no driver will sit inside it. The companies signed the agreement on November 24 at bauma CHINA in Shanghai, extending a partnership that already combines XCMG vehicles with EACON’s autonomous haulage software.",
+        "Under the agreement, the companies will develop vehicles and controls together for Level 4 operation in mines. EACON’s Chinese announcement describes the proposed truck as fully electric. The partners also plan to fit EACON’s system to more models and pursue more projects overseas. The partners can expand with established trucks while developing a vehicle designed for autonomous operation from the start."
+      ]
+    },
+    {
+      "heading": "The work behind removing the cab",
+      "paragraphs": [
+        "On a conventional truck, an autonomy supplier has to work with a vehicle whose controls and layout were designed around a human driver. Starting with a new design gives EACON and XCMG more freedom to decide how the chassis, powertrain and driving system work together.",
+        "EACON identifies traction and control under heavy loads as design priorities. Consider a truck pulling away on a grade after loading. Detecting wheel slip is one part of the job. The truck also has to regulate how much power reaches the wheels, decide whether it can proceed and come to a controlled stop if necessary. How quickly and predictably the vehicle responds depends in part on how the driving software and the truck’s controls were engineered together.",
+        "The partners also want the truck to recover from difficult conditions on its own. For a mine, the commercial value of recovery shows up at fleet level. A stopped truck can block a haul route or leave loading equipment waiting. Getting that truck moving again, or moving other trucks around it safely, matters to how much rock the fleet can move in a shift."
+      ]
+    },
+    {
+      "heading": "A partnership with trucks already at work",
+      "paragraphs": [
+        "EACON says more than 400 XCMG trucks equipped with its system now operate routinely at more than 10 open pit mines in China. Those deployments include wide body dump trucks and rigid mining trucks. In August, when the companies’ Australian businesses signed a memorandum of understanding, EACON reported more than 260 XCMG trucks using its system in China. The two announcements give a sense of the installed base at different points in the year.",
+        "EACON’s Chinese account describes moving the collaboration toward the scale of 1,000 trucks. That ambition covers the wider partnership, including work to bring the autonomy system to more existing models. It helps explain why the companies signed the new agreement at group level. Both can expand their current business while engineers develop the next vehicle.",
+        "XCMG also brings its own experience building cabless mining trucks. It reported in 2023 that an upgraded ZNK model had rolled off the production line and said in 2025 that 100 ZNK95 electric autonomous trucks entered service at the Yimin open pit coal mine. The Shanghai agreement brings EACON into a new joint vehicle design. The existing Yimin fleet belongs to a separate program."
+      ]
+    },
+    {
+      "heading": "Where the design will have to prove itself",
+      "paragraphs": [
+        "The August memorandum gave the Australian businesses a framework to explore local cooperation. The Shanghai agreement broadens that approach to other international markets. Every site still has its own mix of grades, road surfaces, loading equipment and traffic. An existing truck and software combination can give the partners a starting point, while commissioning at each mine establishes how the system fits the local operation.",
+        "For the cabless program, the first meaningful milestone will be a named truck doing regular work at a named mine. Then the comparison becomes practical. How much material does it move per shift? How often does it need an intervention? How much energy and maintenance does it take to keep the fleet moving? A new design earns its place when those results improve on what the partners can already achieve with the trucks in service."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "EACON’s November 24 agreement announcement",
+      "url": "https://www.eaconmining.com.au/content/details125_915.html"
+    },
+    {
+      "label": "EACON’s Chinese announcement via the China Mining Association, including the electric drive design and fleet ambition",
+      "url": "https://chinamining.org.cn/index.php/news/11/16353"
+    },
+    {
+      "label": "XCMG’s bauma CHINA opening and cooperation announcement",
+      "url": "https://www.xcmg.com/aboutus/news-detail-1129030.htm"
+    },
+    {
+      "label": "EACON’s August Australian cooperation announcement",
+      "url": "https://www.eaconmining.com.au/content/details125_761.html"
+    },
+    {
+      "label": "XCMG’s earlier ZNK cabless truck development",
+      "url": "https://www.xcmg.com/aboutus/news-detail-1127197.htm"
+    },
+    {
+      "label": "XCMG’s announcement of the ZNK95 deployment at Yimin",
+      "url": "https://www.xcmg.com/aboutus/news-detail-1128430.htm"
+    },
+    {
+      "label": "InvestMETS coverage",
+      "url": "https://www.investmets.com/picks-shovels-and-robots-eacon-xcmg-confirm-global-ties/"
+    },
+    {
+      "label": "The Construction Index coverage",
+      "url": "https://www.theconstructionindex.co.uk/news/view/xcmg-and-eacon-expand-autonomous-truck-deal"
+    }
+  ],
+  "publishedDate": "2026-11-25",
+  "publishedAt": "2026-11-25T11:06:04-05:00",
+  "publishedLabel": "November 25, 2026",
+  "taxonomy": {
+    "primaryIndustry": "mining",
+    "relevantIndustries": [],
+    "technologies": [
+      "autonomous-vehicles",
+      "robot-software"
+    ],
+    "applications": [
+      "autonomous-driving",
+      "fleet-coordination",
+      "material-handling"
+    ]
+  }
+},
+{
   "slug": "robouniverse-10k-video-robotics-simulation",
   "title": "RoboUniverse 10K Opens 10,807 Robotics Simulations Built from Real Videos",
   "summary": "The release turns recorded robot tasks into programmable practice environments, giving researchers a larger testing ground for agents that learn to act through code.",

@@ -9,6 +9,9 @@ import type { GlossaryArticle } from "@/lib/glossary-publication";
 import type { ReactNode } from "react";
 import { glossaryCategoryColor } from "@/lib/glossary-colors";
 import { PageEvent } from "@/components/engagement-analytics";
+import GlossaryVideoPlayer from "@/components/glossary-video";
+import { getGlossaryVideo } from "@/lib/glossary-video";
+import { Fragment } from "react";
 
 // Supplied prose is rendered as text, never as executable HTML or MDX.
 function inline(text: string, renderText: (value: string) => ReactNode = (value) => value): ReactNode[] {
@@ -24,6 +27,7 @@ function inline(text: string, renderText: (value: string) => ReactNode = (value)
 
 export default function GlossaryArticleView({ article, preview = false }: { article: GlossaryArticle; preview?: boolean }) {
   const control = glossaryPublication.terms[article.id];
+  const video = getGlossaryVideo(article, control);
   const related = preview ? getDraftGlossaryRelatedTerms(article.slug) : getGlossaryRelatedTerms(article);
   const hubPath = preview ? GLOSSARY_PREVIEW_PATH : "/resources/physical-ai-glossary";
   const blocks = article.bodyMarkdown.split(/\n\s*\n/);
@@ -65,7 +69,7 @@ export default function GlossaryArticleView({ article, preview = false }: { arti
               const lines = block.split("\n");
               if (lines.every((line) => /^[-*] /.test(line))) return <ul key={index} className="mb-6 list-disc space-y-2 pl-5">{lines.map((line, n) => <li key={n}>{inline(line.slice(2), renderLinkedText)}</li>)}</ul>;
               if (lines.every((line) => /^\d+\. /.test(line))) return <ol key={index} className="mb-6 list-decimal space-y-2 pl-5">{lines.map((line, n) => <li key={n}>{inline(line.replace(/^\d+\. /, ""), renderLinkedText)}</li>)}</ol>;
-              return <p key={index} className={index === firstParagraph ? "mb-7 border-l-[3px] border-[#00a98f] pl-5 text-xl leading-8 text-[#0b0d0b]" : "mb-4"}>{inline(block, index === firstParagraph ? undefined : renderLinkedText)}</p>;
+              return <Fragment key={index}><p className={index === firstParagraph ? "mb-7 border-l-[3px] border-[#00a98f] pl-5 text-xl leading-8 text-[#0b0d0b]" : "mb-4"}>{inline(block, index === firstParagraph ? undefined : renderLinkedText)}</p>{index === firstParagraph && video ? <GlossaryVideoPlayer video={video} /> : null}</Fragment>;
             })}
             <section id="sources" className="mt-9 scroll-mt-6 border-t border-[#dedfe4] pt-6"><h2 className="text-xl font-semibold tracking-tight text-[#0b0d0b]">Sources</h2><ol className="mt-4 list-decimal space-y-3 pl-5 text-sm leading-6">{article.sources.map((source) => <li key={`${source.label}-${source.url}`}><a href={source.url} className="text-[#0075ff] underline underline-offset-4" rel="noopener noreferrer">{source.label}</a></li>)}</ol></section>
             {related.length > 0 && <section id="related-terms" className="mt-9 scroll-mt-6"><h2 className="text-xl font-semibold tracking-tight text-[#0b0d0b]">Related terms</h2><div className="mt-3 grid gap-x-6 sm:grid-cols-2">{related.map((term) => term.href ? <Link key={term.id} href={term.href} className="block border-b border-[#dedfe4] py-4 text-sm text-[#0b0d0b] underline decoration-[#b8bec7] decoration-1 underline-offset-[5px] transition-colors hover:text-[#0075ff] hover:decoration-[#0075ff] focus-visible:text-[#0075ff] focus-visible:decoration-[#0075ff]">{term.name}</Link> : <span key={term.id} className="border-b border-[#dedfe4] py-4 text-sm text-[#0b0d0b]">{term.name}</span>)}</div></section>}

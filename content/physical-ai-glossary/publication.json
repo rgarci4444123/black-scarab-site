@@ -532,7 +532,7 @@
         }
       },
       "publishedAt": "2026-11-13T18:29:33.182Z",
-      "modifiedAt": null,
+      "modifiedAt": "2026-11-25T16:13:32.472Z",
       "relatedLinks": [
         {
           "label": "Edge Computing",
@@ -550,7 +550,8 @@
           "label": "Private Network",
           "targetId": null
         }
-      ]
+      ],
+      "youtube_video_id": "aHv7Ks-i1k0"
     },
     "BSG-002": {
       "status": "published",
@@ -726,7 +727,7 @@
         }
       },
       "publishedAt": "2026-11-13T18:29:33.182Z",
-      "modifiedAt": null,
+      "modifiedAt": "2026-11-25T16:13:32.472Z",
       "relatedLinks": [
         {
           "label": "Commissioning",
@@ -744,7 +745,8 @@
           "label": "Risk Assessment",
           "targetId": "BSG-322"
         }
-      ]
+      ],
+      "youtube_video_id": "KDPw0WCJDOw"
     },
     "BSG-005": {
       "status": "published",
@@ -794,7 +796,7 @@
         }
       },
       "publishedAt": "2026-11-13T18:29:33.182Z",
-      "modifiedAt": null,
+      "modifiedAt": "2026-11-25T16:13:32.472Z",
       "relatedLinks": [
         {
           "label": "Repeatability",
@@ -812,7 +814,8 @@
           "label": "Position Sensor",
           "targetId": null
         }
-      ]
+      ],
+      "youtube_video_id": "Xyxu3Kj1IvE"
     },
     "BSG-006": {
       "status": "published",
@@ -920,7 +923,7 @@
         }
       },
       "publishedAt": "2026-11-13T18:29:33.182Z",
-      "modifiedAt": null,
+      "modifiedAt": "2026-11-25T16:13:32.472Z",
       "relatedLinks": [
         {
           "label": "Vision-Language-Action Model",
@@ -938,7 +941,8 @@
           "label": "Behavior Cloning",
           "targetId": "BSG-028"
         }
-      ]
+      ],
+      "youtube_video_id": "dblDTL6mnss"
     },
     "BSG-008": {
       "status": "published",
@@ -1181,7 +1185,7 @@
         }
       },
       "publishedAt": "2026-11-13T18:29:33.182Z",
-      "modifiedAt": null,
+      "modifiedAt": "2026-11-25T16:13:32.472Z",
       "relatedLinks": [
         {
           "label": "Generalization",
@@ -1199,7 +1203,8 @@
           "label": "Autonomy",
           "targetId": "BSG-024"
         }
-      ]
+      ],
+      "youtube_video_id": "2yYzGVyt448"
     },
     "BSG-012": {
       "status": "published",
@@ -14415,7 +14420,7 @@
         }
       },
       "publishedAt": "2026-11-13T18:29:33.182Z",
-      "modifiedAt": null,
+      "modifiedAt": "2026-11-25T16:13:32.472Z",
       "relatedLinks": [
         {
           "label": "Point Cloud",
@@ -14441,7 +14446,8 @@
           "label": "Depth Camera",
           "targetId": "BSG-086"
         }
-      ]
+      ],
+      "youtube_video_id": "_atmZvHI9X8"
     },
     "BSG-205": {
       "status": "published",

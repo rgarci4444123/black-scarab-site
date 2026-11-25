@@ -55,3 +55,7 @@ For a future split or reverse split, verify the exact security, exchange-local f
 `corporate-action-treatments.json` records evidence for each reviewed provider dividend flag. The cumulative workbook accepts only an exact date, security, currency, API and amount match, retains the flag and source, and excludes cash from the price-return calculation. Unreviewed dividend flags and unresolved split treatment still block updates.
 
 The audit follows all Marketstack pages as history grows. It retains each original page response when pagination is needed, plus an aggregate of the unchanged observations. Inconsistent totals, duplicate observations and stalled pagination remain failures.
+
+## Temporary validation copies
+
+Before creating an isolated production-build copy, check available disk space. Retain the latest review preview. Remove obsolete generated BSPI15 validation copies after a successful push, or when space is needed, only when their exact directories are recorded in older verified push receipts and lie under `/private/tmp/bspi15-`. Verify that a copy is not the current preview; if stopping its server, require its process working directory to match that exact copy. Keep canonical data, source receipts, review workbooks, project working files and unrelated temporary directories intact. Record reclaimed space and any cleanup in the daily report.

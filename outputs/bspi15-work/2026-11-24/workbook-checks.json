@@ -1,0 +1,33 @@
+{
+  "workbook": "/Users/rodolfogarcia/Desktop/black-scarab-site/outputs/bspi15-daily-review.xlsx",
+  "dates": 39,
+  "firstDate": "2026-10-01",
+  "lastDate": "2026-11-24",
+  "prices": 663,
+  "contributionRows": 585,
+  "sheets": [
+    "Summary",
+    "Prices",
+    "Returns and Contributions",
+    "Source Audit",
+    "Corporate Actions"
+  ],
+  "formulaRecalculation": "passed",
+  "websiteReconciliation": "passed",
+  "inputChangeAndAuditFailure": "passed",
+  "historicalInputs": "preserved",
+  "savedWorkbookRecalculation": "passed",
+  "priorReviewedLedger": "deep-equality preserved",
+  "formulaErrors": 0,
+  "splitContinuity": {
+    "status": "passed",
+    "november12Raw": 75030,
+    "november12CalculationPrice": 15006,
+    "november18Raw": 73610,
+    "november18CalculationPrice": 14722,
+    "november19Close": 14690,
+    "splitDayReturn": -0.002173617714984366,
+    "november12Return": -0.02105824336931894
+  },
+  "cashDividendReview": "passed; excluded from price returns; changed amount requires review"
+}

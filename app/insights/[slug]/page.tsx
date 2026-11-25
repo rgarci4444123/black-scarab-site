@@ -26,6 +26,7 @@ import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import {
   caseStudies,
+  type CaseStudyArticle,
   type CaseStudyParagraph,
   getCaseStudyBySlug,
 } from "@/lib/case-studies";
@@ -33,7 +34,7 @@ import {
   localAiArticlePlacements,
   type LocalAiArticleSlug,
 } from "@/lib/local-ai-deployment";
-import { authorLinkedInUrl, authorPortraitSrc } from "@/lib/site-author";
+import { authorLinkedInUrl, authorPortraitSrc, siteAuthorByline } from "@/lib/site-author";
 import { getInsightSocialImage } from "@/lib/insight-social-image";
 
 import FccTool from "@/components/fcc-supply-chain/tools";
@@ -46,6 +47,11 @@ const baseUrl = "https://www.blackscarab.ai";
 const publisherName = "Black Scarab";
 const publisherLogoUrl = `${baseUrl}/icon.png`;
 const authorUrl = `${baseUrl}/about`;
+
+function getInsightAuthor(article: CaseStudyArticle) {
+  const isDeepDive = /\bdeep dive\b/i.test(`${article.typeLabel ?? ""} ${article.formatLabel ?? ""}`);
+  return article.author ?? (isDeepDive ? siteAuthorByline : undefined);
+}
 
 function getArticleUrl(slug: string) {
   return `${baseUrl}/insights/${slug}`;
@@ -120,9 +126,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const articleUrl = getArticleUrl(article.slug);
   const socialImage = getInsightSocialImage(article.image, article.imageAlt);
-  const articleAuthor = article.author?.name ?? publisherName;
-  const articleAuthorUrl = article.author?.href
-    ? `${baseUrl}${article.author.href}`
+  const author = getInsightAuthor(article);
+  const articleAuthor = author?.name ?? publisherName;
+  const articleAuthorUrl = author?.href
+    ? `${baseUrl}${author.href}`
     : authorUrl;
   const typeLabel = article.typeLabel ?? "Case Study";
   return {
@@ -192,9 +199,10 @@ export default async function CaseStudyPage({ params }: Props) {
     : null;
   const articleUrl = getArticleUrl(article.slug);
   const imageUrl = `${baseUrl}${article.image}`;
-  const articleAuthor = article.author?.name ?? publisherName;
-  const articleAuthorUrl = article.author?.href
-    ? `${baseUrl}${article.author.href}`
+  const author = getInsightAuthor(article);
+  const articleAuthor = author?.name ?? publisherName;
+  const articleAuthorUrl = author?.href
+    ? `${baseUrl}${author.href}`
     : authorUrl;
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -230,11 +238,11 @@ export default async function CaseStudyPage({ params }: Props) {
     datePublished: article.publishedAt ?? `${article.publishedDate}T12:00:00.000Z`,
     dateModified: article.modifiedAt ?? article.publishedAt ?? `${article.publishedDate}T12:00:00.000Z`,
     author: {
-      "@type": article.author ? "Person" : "Organization",
+      "@type": author ? "Person" : "Organization",
       name: articleAuthor.replace(/,\s*CFA$/, ""),
       ...(articleAuthor.endsWith(", CFA") ? { honorificSuffix: "CFA" } : {}),
       url: articleAuthorUrl,
-      ...(article.author ? { sameAs: [authorLinkedInUrl] } : {}),
+      ...(author ? { sameAs: [authorLinkedInUrl] } : {}),
     },
     publisher: {
       "@type": "Organization",
@@ -305,15 +313,15 @@ export default async function CaseStudyPage({ params }: Props) {
                   {article.summary}
                 </p>
                 <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-[#6b7280]">
-                  {article.author ? (
+                  {author ? (
                     <>
                       <div className="inline-flex max-w-full items-center gap-1">
                         <Link
-                          href={article.author.href}
+                          href={author.href}
                           className="inline-flex items-center gap-3 font-medium text-[#111827] transition hover:text-[#526147]"
                         >
                           <Image src={authorPortraitSrc} alt="" width={40} height={40} sizes="40px" className="h-10 w-10 rounded-full object-cover ring-1 ring-[#ded9cf]" />
-                          <span>By {article.author.name}</span>
+                          <span>By {author.name}</span>
                         </Link>
                         <AuthorLinkedIn href={authorLinkedInUrl} />
                       </div>
@@ -740,17 +748,17 @@ export default async function CaseStudyPage({ params }: Props) {
                     </ol></details>
                   </section>
                 ) : null}
-                {article.author ? (
+                {author ? (
                   <section className="mt-12 grid gap-6 rounded-[24px] border border-[#e3ded5] bg-[#faf8f3] p-6 sm:grid-cols-[112px_minmax(0,1fr)] sm:p-8">
                     <Image src={authorPortraitSrc} alt="Rodolfo Garcia Calderoni" width={112} height={112} sizes="112px" className="h-28 w-28 rounded-full object-cover" />
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#647456]">About the author</p>
                       <div className="mt-3 flex items-center gap-1">
-                        <h2 className="text-xl font-semibold">{article.author.name}</h2>
+                        <h2 className="text-xl font-semibold">{author.name}</h2>
                         <AuthorLinkedIn href={authorLinkedInUrl} />
                       </div>
                       <p className="mt-3 text-sm leading-7 text-[#606975]">Rodolfo is the founder of Black Scarab, where he covers the technologies and commercial signals shaping physical AI adoption.</p>
-                      <Link href={article.author.href} className="mt-4 inline-block text-sm font-medium text-[#3f5137] underline decoration-[#b9c7b2] underline-offset-4">Meet Rodolfo</Link>
+                      <Link href={author.href} className="mt-4 inline-block text-sm font-medium text-[#3f5137] underline decoration-[#b9c7b2] underline-offset-4">Meet Rodolfo</Link>
                     </div>
                   </section>
                 ) : null}

@@ -1,0 +1,68 @@
+.edition :global(.article-header) header:global(.article-masthead) {
+  padding-bottom: 8px;
+}
+
+.edition :global(.article-header .article-masthead) h1 {
+  font-size: clamp(30px, 3.7vw, 38px);
+  line-height: 1.19;
+  letter-spacing: -1.1px;
+  text-wrap: balance;
+}
+
+.edition :global(.article-header .hero.weekly-cover) > img {
+  aspect-ratio: auto;
+}
+
+@media (max-width: 640px) {
+  .edition :global(.article-header .article-masthead) h1 {
+    font-size: 30px;
+    letter-spacing: -0.8px;
+  }
+}
+
+.edition :global(.article-section),
+.edition :global(.sources) {
+  scroll-margin-top: 1.75rem;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #e2e2e5;
+}
+
+.edition :global(.sources) {
+  margin-top: 2rem;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.edition :global(.sources) h3 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+.edition :global(.sources) ol {
+  display: block;
+  list-style: decimal;
+  padding-inline-start: 1.6em;
+}
+
+.edition :global(.sources) li {
+  display: list-item;
+  overflow-wrap: anywhere;
+  line-height: 1.55;
+}
+
+.edition :global(.sources) a {
+  color: #005c90;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.edition .note {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  font-style: italic;
+  color: #525b62;
+}

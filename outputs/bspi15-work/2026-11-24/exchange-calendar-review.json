@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-24",
+  "verifiedAt": "2026-11-25T12:51:08.791106+00:00",
+  "markets": [
+    {
+      "mic": "XJPX",
+      "timeZone": "Asia/Tokyo",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "The 2026 holidays list November 3 and 23; November 24 is a normal Tuesday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XSHE",
+      "timeZone": "Asia/Shanghai",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+      "evidence": "The official 2026 annual holiday notice, verified November 21 and retained in the preceding calendar review, lists no November closure. Both date-specific Shenzhen observations were received. The official notice timed out during the November 25 recheck.",
+      "session": "open",
+      "carryForward": false,
+      "priorCalendarReview": "outputs/bspi15-work/2026-11-20/exchange-calendar-review.json",
+      "sourceAvailability": "timed-out-on-recheck"
+    },
+    {
+      "mic": "XNAS",
+      "timeZone": "America/New_York",
+      "sourceUrl": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+      "evidence": "November closures are Thanksgiving November 26 and early close November 27; November 24 is a normal Tuesday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XNYS",
+      "timeZone": "America/New_York",
+      "sourceUrl": "https://www.nyse.com/trade/hours-calendars",
+      "evidence": "November holiday is Thanksgiving November 26; November 24 is a normal Tuesday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XETR",
+      "timeZone": "Europe/Berlin",
+      "sourceUrl": "https://www.cashmarket.deutsche-boerse.com/cash-en/trading/trading-calendar-and-trading-hours",
+      "evidence": "Official 2026 non-trading days list no November closure; November 24 is a normal Tuesday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XSTO",
+      "timeZone": "Europe/Stockholm",
+      "sourceUrl": "https://www.nasdaq.com/european-market-activity/trading-hours",
+      "evidence": "Stockholm 2026 holiday and half-day list has no November 24 closure.",
+      "session": "open",
+      "carryForward": false
+    }
+  ],
+  "requiredDateObservationsReceived": 17,
+  "verifiedClosureCarries": 0
+}
