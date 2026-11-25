@@ -17,7 +17,7 @@
     "test:content-taxonomy": "node --test scripts/content-taxonomy.test.mjs",
     "test:referral-analytics": "node --test scripts/referral-analytics.test.mjs",
     "validate:glossary": "node scripts/validate-glossary.mjs",
-    "test:glossary": "node --test scripts/glossary-publication.test.mjs scripts/glossary-preview.test.mjs scripts/glossary-linking.test.mjs scripts/glossary-analytics.test.mjs",
+    "test:glossary": "node --test scripts/glossary-publication.test.mjs scripts/glossary-preview.test.mjs scripts/glossary-linking.test.mjs scripts/glossary-analytics.test.mjs scripts/glossary-video.test.mjs",
     "report:glossary": "node scripts/validate-glossary.mjs --report",
     "review:glossary": "node scripts/review-glossary.mjs",
     "dev:glossary-preview": "BLACK_SCARAB_GLOSSARY_PREVIEW=1 next dev --webpack --hostname 127.0.0.1 --port 3099",
@@ -30,7 +30,8 @@
     "validate:virtual-events": "node scripts/virtual-events.mjs validate",
     "test:virtual-events": "node --test scripts/virtual-events.test.mjs",
     "update:bspi15-daily": "node scripts/update-bspi15-daily.mjs",
-    "test:bspi15": "node --test scripts/bspi15-splits.test.mjs scripts/bspi15-corporate-actions.test.mjs"
+    "test:bspi15": "node --test scripts/bspi15-splits.test.mjs scripts/bspi15-corporate-actions.test.mjs",
+    "sync:glossary-videos": "node scripts/sync-glossary-videos.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

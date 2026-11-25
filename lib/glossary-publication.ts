@@ -30,6 +30,7 @@ export type GlossaryControl = {
   authorName: string;
   metaDescription: string;
   seoTitle?: string;
+  youtube_video_id?: string | null;
   relatedIds: string[];
   relatedLinks?: { label: string; targetId: string | null }[];
   coveragePaths: string[];

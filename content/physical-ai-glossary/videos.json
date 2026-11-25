@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "videos": {
+    "aHv7Ks-i1k0": {
+      "youtube_video_id": "aHv7Ks-i1k0",
+      "channel_id": "UCYoG0I-DRTh7L643YZeVRyQ",
+      "privacyStatus": "public",
+      "embeddable": true,
+      "title": "Do Robots Need 5G? How Wireless Robot Fleets Work",
+      "description": "https://www.blackscarab.ai/resources/physical-ai-glossary/5g\n\n5G is the fifth generation of cellular network technology, designed to support faster data transmission, greater network capacity, and lower communication delays than previous generations.\n\nChapters\n00:00 Connect the fleet\n00:27 Radio links\n00:51 A private network\n01:16 Communication and control\n01:44 Choose for the application\n02:13 The useful question\n\nSources\nNIST — Software-based 5G Industrial Wireless Private Networks\nhttps://www.nist.gov/publications/software-based-5g-industrial-wireless-private-networks-challenges-and-opportunities",
+      "thumbnail_url": "https://i.ytimg.com/vi/aHv7Ks-i1k0/maxresdefault.jpg",
+      "upload_date": "2026-11-25T07:12:22-08:00",
+      "duration_seconds": 159,
+      "glossary_url": "https://www.blackscarab.ai/resources/physical-ai-glossary/5g"
+    },
+    "KDPw0WCJDOw": {
+      "youtube_video_id": "KDPw0WCJDOw",
+      "channel_id": "UCYoG0I-DRTh7L643YZeVRyQ",
+      "privacyStatus": "public",
+      "embeddable": true,
+      "title": "Acceptance Testing: Does the Robot Deliver What You Bought?",
+      "description": "https://www.blackscarab.ai/resources/physical-ai-glossary/acceptance-testing\n\nAcceptance testing is the process of verifying that a machine, robot, or automation system meets the requirements agreed upon between a supplier and its customer.\n\nChapters\n00:00 From promise to evidence\n00:24 Define the test\n00:53 Measure and correct\n01:18 Factory, then site\n01:45 Why the site matters\n02:14 Acceptance in context\n\nSources\nInternational Society of Automation — ISA-105 Standards\nhttps://www.isa.org/standards-and-publications/isa-standards/isa-105-standards",
+      "thumbnail_url": "https://i.ytimg.com/vi/KDPw0WCJDOw/maxresdefault.jpg",
+      "upload_date": "2026-11-25T07:15:35-08:00",
+      "duration_seconds": 165,
+      "glossary_url": "https://www.blackscarab.ai/resources/physical-ai-glossary/acceptance-testing"
+    },
+    "Xyxu3Kj1IvE": {
+      "youtube_video_id": "Xyxu3Kj1IvE",
+      "channel_id": "UCYoG0I-DRTh7L643YZeVRyQ",
+      "privacyStatus": "public",
+      "embeddable": true,
+      "title": "Accuracy vs. Repeatability: Why Robots Can Be Consistently Wrong",
+      "description": "https://www.blackscarab.ai/resources/physical-ai-glossary/robot-accuracy\n\nRobot accuracy measures how closely a robot reaches its intended or commanded position.\n\nChapters\n00:00 Where did the tool arrive?\n00:25 Consistent can still be wrong\n00:50 Two different questions\n01:17 The reference matters\n01:42 Conditions change the result\n02:11 Match the measurement to the task\n\nSources\nDENSO Robotics: Robot accuracy versus repeatability\nhttps://support.densorobotics.com/en/support/solutions/articles/60000697365-denso-robot-accuracy-vs-robot-repeatability-precision\nNISTIR 8093: Robot workcell calibration and registration\nhttps://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=918708",
+      "thumbnail_url": "https://i.ytimg.com/vi/Xyxu3Kj1IvE/maxresdefault.jpg",
+      "upload_date": "2026-11-25T07:18:13-08:00",
+      "duration_seconds": 160,
+      "glossary_url": "https://www.blackscarab.ai/resources/physical-ai-glossary/robot-accuracy"
+    },
+    "dblDTL6mnss": {
+      "youtube_video_id": "dblDTL6mnss",
+      "channel_id": "UCYoG0I-DRTh7L643YZeVRyQ",
+      "privacyStatus": "public",
+      "embeddable": true,
+      "title": "Action Tokens: From AI Predictions to Robot Movements",
+      "description": "https://www.blackscarab.ai/resources/physical-ai-glossary/action-token\n\nAn action token is a unit of information used by certain artificial intelligence models to represent part of a physical action.\n\nChapters\n00:00 Representing an action\n00:22 From images and words\n00:48 Encode and decode\n01:13 A published example\n01:39 The controller still has a job\n02:05 One design choice\n\nSources\nGoogle DeepMind — RT-2: New Model Translates Vision and Language Into Action\nhttps://deepmind.google/blog/rt-2-new-model-translates-vision-and-language-into-action/\nGoogle Research — RT-1\nhttps://research.google/blog/rt-1-robotics-transformer-for-real-world-control-at-scale/",
+      "thumbnail_url": "https://i.ytimg.com/vi/dblDTL6mnss/maxresdefault.jpg",
+      "upload_date": "2026-11-25T07:20:34-08:00",
+      "duration_seconds": 156,
+      "glossary_url": "https://www.blackscarab.ai/resources/physical-ai-glossary/action-token"
+    },
+    "2yYzGVyt448": {
+      "youtube_video_id": "2yYzGVyt448",
+      "channel_id": "UCYoG0I-DRTh7L643YZeVRyQ",
+      "privacyStatus": "public",
+      "embeddable": true,
+      "title": "How Robots Adapt When the World Changes",
+      "description": "https://www.blackscarab.ai/resources/physical-ai-glossary/adaptation\n\nAdaptation is the ability of a system to adjust its behavior or operation when conditions change.\n\nChapters\n00:00 When the world changes\n00:24 Adapt through planning\n00:46 Adapt through feedback\n01:11 Adapt through learning\n01:38 Behavior and capability\n02:05 Different timescales\n\nSources\nMathWorks: Adaptive control design\nhttps://www.mathworks.com/help/slcontrol/adaptive-control-design.html",
+      "thumbnail_url": "https://i.ytimg.com/vi/2yYzGVyt448/maxresdefault.jpg",
+      "upload_date": "2026-11-25T07:23:43-08:00",
+      "duration_seconds": 155,
+      "glossary_url": "https://www.blackscarab.ai/resources/physical-ai-glossary/adaptation"
+    },
+    "_atmZvHI9X8": {
+      "youtube_video_id": "_atmZvHI9X8",
+      "channel_id": "UCYoG0I-DRTh7L643YZeVRyQ",
+      "privacyStatus": "public",
+      "embeddable": true,
+      "title": "What Is LiDAR? How Robots Measure the World",
+      "description": "Explore LiDAR in the Black Scarab Physical AI Glossary:\nhttps://www.blackscarab.ai/resources/physical-ai-glossary/lidar\n\nHow does a robot measure the distance to a wall, turn laser returns into a point cloud, and use those measurements to navigate? This animated explainer walks through LiDAR, time of flight, 2D scans, 3D point clouds, and the role of navigation software.\n\nChapters\n0:00 How robots measure the world\n0:14 One pulse. Two journeys.\n0:35 A scan builds a picture of space\n0:52 From a slice to a point cloud\n1:16 Measurements guide movement\n1:39 Distance and appearance work together\n2:01 Light becomes spatial information\n\nSources from the glossary entry\nOuster: What Is LiDAR? https://ouster.com/insights/what-is-lidar\nNav2: Setting Up Robot Sensors https://docs.nav2.org/rolling/configuration_and_development/first_time_robot_setup_guide/\n\n#LiDAR #Robotics #PhysicalAI",
+      "thumbnail_url": "https://i.ytimg.com/vi/_atmZvHI9X8/maxresdefault.jpg",
+      "upload_date": "2026-11-24T22:41:29-08:00",
+      "duration_seconds": 141,
+      "glossary_url": "https://www.blackscarab.ai/resources/physical-ai-glossary/lidar"
+    }
+  }
+}
