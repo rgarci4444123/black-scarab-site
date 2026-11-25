@@ -28,6 +28,10 @@
 .scope :global(.reading-layout){max-width:790px;}
 
 .scope :global(.byline img){width:42px;height:42px;flex-shrink:0;}
+.scope :global(.byline-author){display:flex;align-items:center;gap:4px;}
+.scope :global(.byline-author .author-linkedin){width:24px;height:24px;color:#647456;}
+.scope :global(.byline-author .author-linkedin:hover){color:#0a66c2;}
+.scope :global(.byline-author + span){margin-top:3px;}
 
 .scope :global(.edition-line),.scope :global(.edition-contents summary),.scope :global(.contents-index-link){color:#6e6e73;}
 .scope :global(.edition-line a:hover),.scope :global(.edition-contents nav a:hover),.scope :global(.contents-index-link:hover){color:#0071e3;}
