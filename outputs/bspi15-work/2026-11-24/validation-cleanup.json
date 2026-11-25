@@ -1,0 +1,19 @@
+{
+  "performedAt": "2026-11-25T13:34:49.349858+00:00",
+  "reason": "Dependency install stopped with ENOSPC; no BSPI15 validation gate bypassed.",
+  "obsoleteValidationCopiesRemoved": [
+    {
+      "directory": "/private/tmp/bspi15-split-fix-rrvoiobl/validation",
+      "verifiedPushReceipt": "outputs/bspi15-push-2026-11-20.json"
+    },
+    {
+      "directory": "/private/tmp/bspi15-20261120-wnz73ulh/validation",
+      "verifiedPushReceipt": "outputs/bspi15-push-2026-11-21.json"
+    }
+  ],
+  "stoppedServers": [],
+  "latestPriorPreviewRetained": "/private/tmp/bspi15-20261123-yuxbeu44/validation",
+  "freeSpaceImmediatelyAfterCleanup": "2.0 GiB as reported by df",
+  "retry": "Locked dependency installation and production build passed",
+  "futureRunGuidance": "data/bspi15/README.md#temporary-validation-copies"
+}
