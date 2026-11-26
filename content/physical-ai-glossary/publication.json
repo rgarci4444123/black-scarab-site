@@ -19904,7 +19904,7 @@
         }
       },
       "publishedAt": "2026-11-13T18:29:33.182Z",
-      "modifiedAt": null,
+      "modifiedAt": "2026-11-26T15:54:54.221Z",
       "relatedLinks": [
         {
           "label": "Embodied AI",
@@ -19930,7 +19930,8 @@
           "label": "Sim-to-Real Transfer",
           "targetId": "BSG-369"
         }
-      ]
+      ],
+      "youtube_video_id": "6u24GApU6EU"
     },
     "BSG-281": {
       "status": "published",
