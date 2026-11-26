@@ -1,0 +1,168 @@
+{
+  "repositoryErrors": 40,
+  "repositoryWarnings": 5093,
+  "errors": [
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/audit/reader-engagement-2026-11-02/evidence/bundle-d8b6127b1c1f.js",
+      "message": "1:24343   error    Unexpected aliasing of 'this' to local variable                        @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/audit/reader-engagement-2026-11-02/evidence/bundle-d8b6127b1c1f.js",
+      "message": "1:32078   error    Unexpected aliasing of 'this' to local variable                        @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/audit/reader-engagement-2026-11-02/evidence/bundle-d8b6127b1c1f.js",
+      "message": "1:46535   error    Unexpected aliasing of 'this' to local variable                        @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/audit/reader-engagement-2026-11-02/evidence/bundle-d8b6127b1c1f.js",
+      "message": "1:81805   error    Unexpected aliasing of 'this' to local variable                        @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/audit/reader-engagement-2026-11-02/evidence/bundle-d8b6127b1c1f.js",
+      "message": "1:88512   error    Unexpected aliasing of 'this' to local variable                        @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/audit/reader-engagement-2026-11-02/evidence/bundle-d8b6127b1c1f.js",
+      "message": "1:100889  error    Unexpected aliasing of 'this' to local variable                        @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/audit/reader-engagement-2026-11-02/evidence/bundle-d8b6127b1c1f.js",
+      "message": "1:101232  error    Unexpected aliasing of 'this' to local variable                        @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/audit/reader-engagement-2026-11-02/evidence/bundle-d8b6127b1c1f.js",
+      "message": "1:101754  error    Unexpected aliasing of 'this' to local variable                        @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/audit/reader-engagement-2026-11-02/evidence/bundle-d8b6127b1c1f.js",
+      "message": "1:102302  error    Unexpected aliasing of 'this' to local variable                        @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/audit/reader-engagement-2026-11-02/evidence/bundle-d8b6127b1c1f.js",
+      "message": "1:102723  error    Unexpected aliasing of 'this' to local variable                        @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/agco-digit-hesston-factory-pilot-2027/responsive-qa.cjs",
+      "message": "1:10  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/agco-digit-hesston-factory-pilot-2027/responsive-qa.cjs",
+      "message": "1:29  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/agco-digit-hesston-factory-pilot-2027/responsive-qa.cjs",
+      "message": "2:18  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/candidates/2026-10-21/agco-digit-factory-pilot/visual-qa.cjs",
+      "message": "1:10  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/candidates/2026-10-21/agco-digit-factory-pilot/visual-qa.cjs",
+      "message": "2:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/candidates/2026-10-21/agco-digit-factory-pilot/visual-qa.cjs",
+      "message": "3:18  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "10:685     error    Unexpected aliasing of 'this' to local variable                                                                                                  @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "10:752     error    Unexpected aliasing of 'this' to local variable                                                                                                  @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "10:1880    error    Unexpected aliasing of 'this' to local variable                                                                                                  @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "10:10823   error    Unexpected aliasing of 'this' to local variable                                                                                                  @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "40:22659   error    Unexpected aliasing of 'this' to local variable                                                                                                  @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "44:7183    error    React Hook \"VS.use\" cannot be called at the top level. React Hooks must be called in a React function component or a custom React Hook function  react-hooks/rules-of-hooks"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "44:32055   error    Unexpected aliasing of 'this' to local variable                                                                                                  @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "44:181523  error    Unexpected aliasing of 'this' to local variable                                                                                                  @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "44:182734  error    Unexpected aliasing of 'this' to local variable                                                                                                  @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "44:183125  error    Unexpected aliasing of 'this' to local variable                                                                                                  @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "44:184421  error    Unexpected aliasing of 'this' to local variable                                                                                                  @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "44:187394  error    Unexpected aliasing of 'this' to local variable                                                                                                  @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "50:79841   error    Unexpected aliasing of 'this' to local variable                                                                                                  @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "61:7848    error    Unexpected aliasing of 'this' to local variable                                                                                                  @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "61:8208    error    Unexpected aliasing of 'this' to local variable                                                                                                  @typescript-eslint/no-this-alias"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "61:12705   error    Component definition is missing display name                                                                                                     react/display-name"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/qiyuan-10000-personal-robots/official-cn-script.js",
+      "message": "61:98359   error    Component definition is missing display name                                                                                                     react/display-name"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/volvo-waabi-warp-customer-operations/headless-qa.cjs",
+      "message": "1:22  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/volvo-waabi-warp-customer-operations/headless-qa.cjs",
+      "message": "2:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/volvo-waabi-warp-customer-operations/headless-qa.cjs",
+      "message": "3:16  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/news/volvo-waabi-warp-customer-operations/headless-qa.cjs",
+      "message": "4:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/x/plus-one/render.cjs",
+      "message": "1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/x/plus-one/render.cjs",
+      "message": "2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports"
+    },
+    {
+      "file": "/Users/rodolfogarcia/Desktop/black-scarab-site/output/x/plus-one/render.cjs",
+      "message": "3:15  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports"
+    }
+  ],
+  "bspi15Errors": 0,
+  "bspi15ScopedLint": "passed"
+}

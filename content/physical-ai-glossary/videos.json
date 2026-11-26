@@ -72,6 +72,18 @@
       "upload_date": "2026-11-24T22:41:29-08:00",
       "duration_seconds": 141,
       "glossary_url": "https://www.blackscarab.ai/resources/physical-ai-glossary/lidar"
+    },
+    "6u24GApU6EU": {
+      "youtube_video_id": "6u24GApU6EU",
+      "channel_id": "UCYoG0I-DRTh7L643YZeVRyQ",
+      "privacyStatus": "public",
+      "embeddable": true,
+      "title": "What Is Physical AI? How Robots Turn Perception Into Action",
+      "description": "https://www.blackscarab.ai/resources/physical-ai-glossary/physical-ai\n\nPhysical AI refers to artificial intelligence systems that perceive, reason about, or act within the physical world through machines, sensors, and other connected technologies.\n\nChapters\n00:00 Intelligence meets the world\n00:24 Sense and interpret\n00:48 Plan, act, observe again\n01:14 Digital output and physical action\n01:40 Why the real world is difficult\n02:08 One system working together\n\nSources\nNVIDIA — What Is Physical AI?\nhttps://www.nvidia.com/en-us/glossary/generative-physical-ai/\nNVIDIA — Physical AI Learning\nhttps://docs.nvidia.com/learning/physical-ai/index.html",
+      "thumbnail_url": "https://i.ytimg.com/vi/6u24GApU6EU/maxresdefault.jpg",
+      "upload_date": "2026-11-26T10:51:01.506137-05:00",
+      "duration_seconds": 157.066667,
+      "glossary_url": "https://www.blackscarab.ai/resources/physical-ai-glossary/physical-ai"
     }
   }
 }
