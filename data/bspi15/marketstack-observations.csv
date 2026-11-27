@@ -805,3 +805,12 @@ Date,Ticker,Company,Marketstack Symbol,MIC,Currency,Type,Close,Adjusted Close,Di
 2026-11-25,S&P 500,S&P 500,GSPC.INDX,INDX,USD,Benchmark,7182.78,7182.78,0,1,v1
 2026-11-25,SIE,Siemens,SIE.DE,XETR,EUR,Constituent,245.5,245.5,0,1,v2
 2026-11-25,TER,Teradyne,TER,XNAS,USD,Constituent,212.15,212.15,0,1,v2
+2026-11-26,002747,Estun Automation,002747.SZ,XSHE,CNY,Constituent,25.43,25.43,0,1,v2
+2026-11-26,300124,Inovance,300124.SZ,XSHE,CNY,Constituent,51.8,51.8,0,1,v2
+2026-11-26,6268,Nabtesco,6268.T,XJPX,JPY,Constituent,3268,3268,0,1,v2
+2026-11-26,6383,Daifuku,6383.T,XJPX,JPY,Constituent,4138,4138,0,1,v2
+2026-11-26,6506,Yaskawa Electric,6506.T,XJPX,JPY,Constituent,3219,3219,0,1,v2
+2026-11-26,6861,Keyence,6861.T,XJPX,JPY,Constituent,14310,14310,0,1,v2
+2026-11-26,6954,FANUC,6954.T,XJPX,JPY,Constituent,5094,5094,0,1,v2
+2026-11-26,HEXA B,Hexagon,HEXA-B.ST,XSTO,SEK,Constituent,104.5,104.5,0,1,v2
+2026-11-26,SIE,Siemens,SIE.DE,XETR,EUR,Constituent,250.3,250.3,0,1,v2
