@@ -1,22 +1,10 @@
 {
-  "startedAt": "2026-11-26T22:02:45.723Z",
+  "startedAt": "2026-11-27T21:45:26.048Z",
   "mode": "daily",
   "sourceChecks": [
     {
       "source": "nvidia",
       "url": "https://www.nvidia.com/en-us/about-nvidia/webinar-portal/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "nvidia",
-      "url": "https://www.nvidia.com/en-us/events/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "nvidia",
-      "url": "https://www.nvidia.com/en-us/events/events-robotics-virtual-learning-series/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -34,6 +22,30 @@
     },
     {
       "source": "nvidia",
+      "url": "https://www.nvidia.com/en-us/events/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "siemens",
+      "url": "https://www.siemens.com/de-de/content/automation-news-and-webinars/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "nvidia",
+      "url": "https://www.nvidia.com/en-us/events/events-robotics-virtual-learning-series/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "siemens",
+      "url": "https://www.siemens.com/cs-cz/content/automation-news-and-webinars/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "nvidia",
       "url": "https://www.nvidia.com/en-us/about-nvidia/webinar-portal.json",
       "status": "ok",
       "eventsExtracted": 0
@@ -45,8 +57,26 @@
       "eventsExtracted": 0
     },
     {
+      "source": "siemens",
+      "url": "https://www.siemens.com/da-dk/content/automation-news-and-webinars/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "siemens",
+      "url": "https://www.siemens.com/et-ee/content/automation-news-and-webinars/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
       "source": "nvidia",
       "url": "https://www.nvidia.com/pt-br/about-nvidia/webinar-portal/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "siemens",
+      "url": "https://www.siemens.com/en-gb/content/automation-news-and-webinars/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -63,8 +93,26 @@
       "eventsExtracted": 0
     },
     {
+      "source": "siemens",
+      "url": "https://www.siemens.com/es-es/content/automation-news-and-webinars/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
       "source": "nvidia",
       "url": "https://www.nvidia.com/en-gb/about-nvidia/webinar-portal/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "universal-robots",
+      "url": "https://video.universal-robots.com/webinars",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "siemens",
+      "url": "https://www.siemens.com/es-mx/content/automation-news-and-webinars/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -87,56 +135,8 @@
       "eventsExtracted": 0
     },
     {
-      "source": "siemens",
-      "url": "https://www.siemens.com/de-de/content/automation-news-and-webinars/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "universal-robots",
-      "url": "https://video.universal-robots.com/webinars",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "siemens",
-      "url": "https://www.siemens.com/cs-cz/content/automation-news-and-webinars/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
       "source": "universal-robots",
       "url": "https://video.universal-robots.com/resources/um/script/libraries/feed-1.0.js",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "siemens",
-      "url": "https://www.siemens.com/da-dk/content/automation-news-and-webinars/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "siemens",
-      "url": "https://www.siemens.com/et-ee/content/automation-news-and-webinars/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "siemens",
-      "url": "https://www.siemens.com/en-gb/content/automation-news-and-webinars/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "siemens",
-      "url": "https://www.siemens.com/es-es/content/automation-news-and-webinars/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "siemens",
-      "url": "https://www.siemens.com/es-mx/content/automation-news-and-webinars/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -153,8 +153,20 @@
       "eventsExtracted": 0
     },
     {
+      "source": "rockwell",
+      "url": "https://www.rockwellautomation.com/en-us/events/webinars.html",
+      "status": "failed",
+      "error": "HTTP 403: https://www.rockwellautomation.com/en-us/events/webinars.html"
+    },
+    {
       "source": "boston-dynamics",
       "url": "https://bostondynamics.com/",
+      "status": "failed",
+      "error": "HTTP 403: https://bostondynamics.com/"
+    },
+    {
+      "source": "teradyne",
+      "url": "https://www.teradyne.com/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -165,62 +177,20 @@
       "eventsExtracted": 0
     },
     {
-      "source": "rockwell",
-      "url": "https://www.rockwellautomation.com/en-us/events/webinars.html",
-      "status": "failed",
-      "error": "HTTP 403: https://www.rockwellautomation.com/en-us/events/webinars.html"
-    },
-    {
-      "source": "teradyne",
-      "url": "https://www.teradyne.com/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "boston-dynamics",
-      "url": "https://bostondynamics.com/webinars/what-to-expect-when-automating-your-dock/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
       "source": "teradyne",
       "url": "https://www.teradyne.com/feed/",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
-      "source": "boston-dynamics",
-      "url": "https://bostondynamics.com/events/",
+      "source": "fanuc",
+      "url": "https://www.fanucamerica.com/events/acte-2026",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
       "source": "teradyne",
       "url": "https://www.teradyne.com/comments/feed/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "boston-dynamics",
-      "url": "https://bostondynamics.com/resources/webinars/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "teradyne",
-      "url": "https://investors.teradyne.com/news-events/press-releases/detail/443/teradyne-introduces-integrated-test-solution-for-ai-and-data-center-devices-in-collaboration-with-tokyo-electron",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "teradyne",
-      "url": "https://investors.teradyne.com/news-events/press-releases/detail/456/teradyne-introduces-omnyx-edge-inline-board-test-for-physical-and-edge-ai",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "fanuc",
-      "url": "https://www.fanucamerica.com/events/acte-2026",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -249,8 +219,20 @@
       "eventsExtracted": 0
     },
     {
+      "source": "teradyne",
+      "url": "https://investors.teradyne.com/news-events/press-releases/detail/443/teradyne-introduces-integrated-test-solution-for-ai-and-data-center-devices-in-collaboration-with-tokyo-electron",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
       "source": "fanuc",
       "url": "https://www.fanucamerica.com/uploads/events/logos/semicon-west-logo.webp?fit=contain&format=auto&quality=78&width=280&s=FsPUio0ZGUcTtTPamVwGSLg9kdug56hJ9tlaDmAoKGo",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "teradyne",
+      "url": "https://investors.teradyne.com/news-events/press-releases/detail/456/teradyne-introduces-omnyx-edge-inline-board-test-for-physical-and-edge-ai",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -261,10 +243,10 @@
       "eventsExtracted": 0
     },
     {
-      "source": "ptc",
-      "url": "https://www.ptc.com/",
+      "source": "a3",
+      "url": "https://www.automate.org/webinars/upcoming-webinars",
       "status": "failed",
-      "error": "HTTP 403: https://www.ptc.com/"
+      "error": "HTTP 403: https://www.automate.org/webinars/upcoming-webinars"
     },
     {
       "source": "intrinsic",
@@ -273,22 +255,22 @@
       "eventsExtracted": 0
     },
     {
-      "source": "mathworks",
-      "url": "https://www.mathworks.com/",
-      "status": "failed",
-      "error": "HTTP 403: https://www.mathworks.com/"
-    },
-    {
-      "source": "a3",
-      "url": "https://www.automate.org/webinars/upcoming-webinars",
-      "status": "failed",
-      "error": "HTTP 403: https://www.automate.org/webinars/upcoming-webinars"
-    },
-    {
       "source": "intrinsic",
       "url": "https://www.intrinsic.ai/events/ai-for-industry-challenge",
       "status": "ok",
       "eventsExtracted": 0
+    },
+    {
+      "source": "ptc",
+      "url": "https://www.ptc.com/",
+      "status": "failed",
+      "error": "HTTP 403: https://www.ptc.com/"
+    },
+    {
+      "source": "mathworks",
+      "url": "https://www.mathworks.com/",
+      "status": "failed",
+      "error": "HTTP 403: https://www.mathworks.com/"
     },
     {
       "source": "intrinsic",
@@ -327,32 +309,14 @@
       "eventsExtracted": 0
     },
     {
-      "source": "ros-industrial",
-      "url": "https://rosindustrial.org/events/2026/12/2/ros-i-eu-workshops-dec-2026",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
       "source": "massrobotics",
       "url": "https://www.massrobotics.org/wp-json/tribe/events/v1/",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
-      "source": "ros-industrial",
-      "url": "https://rosindustrial.org/events/2026/12/2/ros-i-eu-workshops-dec-2026?format=ical",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
       "source": "massrobotics",
       "url": "https://www.massrobotics.org/events/form-to-post-event-on-the-shared-calendar/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "ros-industrial",
-      "url": "https://rosindustrial.org/events/2026/12/3/ros-industrial-conference-europe-2026",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -376,13 +340,19 @@
     },
     {
       "source": "ros-industrial",
-      "url": "https://rosindustrial.org/events/2026/12/3/ros-industrial-conference-europe-2026?format=ical",
+      "url": "https://rosindustrial.org/events/2026/12/2/ros-i-eu-workshops-dec-2026",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
       "source": "ros-industrial",
-      "url": "https://rosindustrial.org/events/2024/ros-industrial-conference-2024",
+      "url": "https://rosindustrial.org/events/2026/12/2/ros-i-eu-workshops-dec-2026?format=ical",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "ros-industrial",
+      "url": "https://rosindustrial.org/events/2026/12/3/ros-industrial-conference-europe-2026",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -393,14 +363,14 @@
       "eventsExtracted": 0
     },
     {
-      "source": "massrobotics",
-      "url": "https://www.massrobotics.org/wp-content/plugins/event-tickets/common/build/js/user-agent.js?ver=da75d0bdea6dde3898df",
+      "source": "ros-industrial",
+      "url": "https://rosindustrial.org/events/2026/12/3/ros-industrial-conference-europe-2026?format=ical",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
-      "source": "ros-industrial",
-      "url": "https://rosindustrial.org/events/2025/11/17/ros-industrial-conference-europe-2025",
+      "source": "massrobotics",
+      "url": "https://www.massrobotics.org/wp-content/plugins/event-tickets/common/build/js/user-agent.js?ver=da75d0bdea6dde3898df",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -412,6 +382,24 @@
     },
     {
       "source": "ros-industrial",
+      "url": "https://rosindustrial.org/events/2024/ros-industrial-conference-2024",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "ieee-ras",
+      "url": "https://www.ieee-ras.org/wp-json/tribe/events/v1/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "ros-industrial",
+      "url": "https://rosindustrial.org/events/2025/11/17/ros-industrial-conference-europe-2025",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "ros-industrial",
       "url": "https://rosindustrial.org/events/2026/10/27/ros-i-apac-summit-amp-switch-beyond-2026-r8ysx-cb4hm",
       "status": "ok",
       "eventsExtracted": 0
@@ -419,12 +407,6 @@
     {
       "source": "ros-industrial",
       "url": "https://rosindustrial.org/events/2026/10/27/ros-i-apac-summit-amp-switch-beyond-2026-r8ysx-cb4hm?format=ical",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "ieee-ras",
-      "url": "https://www.ieee-ras.org/wp-json/tribe/events/v1/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -466,19 +448,19 @@
     },
     {
       "source": "ieee-ras",
-      "url": "https://www.ieee-ras.org/wp-content/plugins/the-events-calendar/common/build/css/variables-skeleton.css?ver=6.14.1.1",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "mit-csail",
-      "url": "https://www.csail.mit.edu/",
+      "url": "https://www.ieee-ras.org/wp-content/plugins/the-events-calendar/common/build/css/variables-skeleton.css?ver=6.14.2",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
       "source": "berkeley-bair",
       "url": "https://bair.berkeley.edu/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "mit-csail",
+      "url": "https://www.csail.mit.edu/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -502,31 +484,13 @@
     },
     {
       "source": "fraunhofer-ipa",
-      "url": "https://www.ipa.fraunhofer.de/de/presse/rss-feeds/rss-roboter.rss",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "fraunhofer-ipa",
-      "url": "https://www.ipa.fraunhofer.de/de/presse/rss-feeds/rss-presse.rss",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "fraunhofer-ipa",
-      "url": "https://www.ipa.fraunhofer.de/de/presse/rss-feeds/rss-veranstaltungen.rss",
+      "url": "https://www.ipa.fraunhofer.de/en/Events/2026/biointelligence_insights.html",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
       "source": "cmu-ri",
       "url": "https://www.ri.cmu.edu/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "fraunhofer-ipa",
-      "url": "https://www.ipa.fraunhofer.de/en/Events/2026/biointelligence_insights.html",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -585,12 +549,6 @@
       "eventsExtracted": 0
     },
     {
-      "source": "figure",
-      "url": "https://www.figure.ai/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
       "source": "covariant",
       "url": "https://covariant.ai/",
       "status": "ok",
@@ -603,14 +561,8 @@
       "error": "HTTP 429: https://www.physicalintelligence.company/"
     },
     {
-      "source": "fieldai",
-      "url": "https://www.fieldai.com/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "skild",
-      "url": "https://www.skild.ai/",
+      "source": "figure",
+      "url": "https://www.figure.ai/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -621,8 +573,20 @@
       "eventsExtracted": 0
     },
     {
+      "source": "fieldai",
+      "url": "https://www.fieldai.com/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
       "source": "foxglove",
       "url": "https://foxglove.dev/rss.xml",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "skild",
+      "url": "https://www.skild.ai/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -639,6 +603,12 @@
       "eventsExtracted": 0
     },
     {
+      "source": "rerun",
+      "url": "https://rerun.io/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
       "source": "moveit",
       "url": "https://picknik.ai/events",
       "status": "ok",
@@ -651,20 +621,14 @@
       "eventsExtracted": 0
     },
     {
-      "source": "moveit",
-      "url": "https://picknik.ai/webinars",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "rerun",
-      "url": "https://rerun.io/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
       "source": "rerun",
       "url": "https://rerun.io/blog/rss.xml",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "moveit",
+      "url": "https://picknik.ai/webinars",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -711,26 +675,26 @@
       "eventsExtracted": 0
     },
     {
-      "source": "yaskawa",
-      "url": "https://www.motoman.com/about/media-center/events/archive",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "yaskawa",
-      "url": "https://www.motoman.com/about/media-center/events",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
       "source": "kuka",
       "url": "https://www.kuka.com/",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
+      "source": "yaskawa",
+      "url": "https://www.motoman.com/about/media-center/events/archive",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
       "source": "kuka",
       "url": "https://www.kuka.com/-/media/kuka-corporate/images/press/events/orange-week/kuka-orange-week-robots-spare-parts.jpg?rev=e48270120c0740a3ba113da5dc59568e&w=1900&hash=A2149F8D1DA7F86D4A4F3351F5ADD935",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "yaskawa",
+      "url": "https://www.motoman.com/about/media-center/events",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -759,24 +723,6 @@
       "eventsExtracted": 0
     },
     {
-      "source": "ansys",
-      "url": "https://ansys.synopsys.com/events/industrial-equipment-webinar-series",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "beckhoff",
-      "url": "https://www.beckhoff.com/en-en/support/webinars/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "beckhoff",
-      "url": "https://www.beckhoff.com/de-de/support/webinare/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
       "source": "infineon",
       "url": "https://www.infineon.com/event/webinar/2026/robotics-webinar-series",
       "status": "ok",
@@ -790,7 +736,13 @@
     },
     {
       "source": "ansys",
-      "url": "https://ansys.synopsys.com/en-gb/events/industrial-equipment-webinar-series",
+      "url": "https://ansys.synopsys.com/events/industrial-equipment-webinar-series",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "beckhoff",
+      "url": "https://www.beckhoff.com/en-en/support/webinars/",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -803,6 +755,12 @@
     {
       "source": "infineon",
       "url": "https://www.infineon.com/event/oktobertech",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "ansys",
+      "url": "https://ansys.synopsys.com/en-gb/events/industrial-equipment-webinar-series",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -820,13 +778,19 @@
     },
     {
       "source": "beckhoff",
-      "url": "https://www.beckhoff.com/de-at/support/webinare/",
+      "url": "https://www.beckhoff.com/de-de/support/webinare/",
       "status": "ok",
       "eventsExtracted": 0
     },
     {
       "source": "infineon",
       "url": "https://www.infineon.com/event/webinar",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "ansys",
+      "url": "https://ansys.synopsys.com/fr-fr/events/industrial-equipment-webinar-series",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -844,19 +808,13 @@
     },
     {
       "source": "beckhoff",
+      "url": "https://www.beckhoff.com/de-at/support/webinare/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "beckhoff",
       "url": "https://www.beckhoff.com/de-ch/support/webinare/",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "ansys",
-      "url": "https://ansys.synopsys.com/fr-fr/events/industrial-equipment-webinar-series",
-      "status": "ok",
-      "eventsExtracted": 0
-    },
-    {
-      "source": "ansys",
-      "url": "https://ansys.synopsys.com/de-de/events/industrial-equipment-webinar-series",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -874,7 +832,7 @@
     },
     {
       "source": "ansys",
-      "url": "https://ansys.synopsys.com/it-it/events/industrial-equipment-webinar-series",
+      "url": "https://ansys.synopsys.com/de-de/events/industrial-equipment-webinar-series",
       "status": "ok",
       "eventsExtracted": 0
     },
@@ -893,6 +851,12 @@
     {
       "source": "beckhoff",
       "url": "https://www.beckhoff.com/en-za/support/webinars/",
+      "status": "ok",
+      "eventsExtracted": 0
+    },
+    {
+      "source": "ansys",
+      "url": "https://ansys.synopsys.com/it-it/events/industrial-equipment-webinar-series",
       "status": "ok",
       "eventsExtracted": 0
     },

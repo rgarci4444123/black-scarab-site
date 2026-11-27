@@ -110,7 +110,7 @@
       "schedule": false,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-26T22:02:45.723Z",
+      "checkedAt": "2026-11-27T21:45:26.048Z",
       "error": "Midnight calendar date needs an explicit source start-time quote"
     },
     "approvedFingerprint": null,
@@ -1776,7 +1776,7 @@
       "schedule": false,
       "registration": false,
       "live": true,
-      "checkedAt": "2026-11-26T22:02:45.723Z",
+      "checkedAt": "2026-11-27T21:45:26.048Z",
       "error": "Midnight calendar date needs an explicit source start-time quote"
     },
     "approvedFingerprint": null,
