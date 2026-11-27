@@ -39,5 +39,36 @@
     "evidence": "JPX official 2026 cash-market holiday calendar lists Monday November 23 as Labor Thanksgiving Day. Carry the November 20 canonical close with zero local price return for the five Japanese constituents.",
     "verifiedAt": "2026-11-24T12:34:03.770875+00:00",
     "verificationMethod": "Official JPX cash-market holiday calendar retrieved and checked for the exact exchange-local date."
+  },
+  {
+    "mic": "XNAS",
+    "name": "Thanksgiving Day",
+    "from": "2026-11-26",
+    "through": "2026-11-26",
+    "sourceUrl": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+    "evidence": "Nasdaq official 2026 US holiday schedule lists Thursday November 26 as Thanksgiving Day, fully closed. Carry the November 25 canonical closes with zero local price return for the five Nasdaq constituents.",
+    "verifiedAt": "2026-11-27T12:35:10.729627+00:00",
+    "verificationMethod": "Official exchange calendars independently retrieved and checked for the exact exchange-local date."
+  },
+  {
+    "mic": "XNYS",
+    "name": "Thanksgiving Day",
+    "from": "2026-11-26",
+    "through": "2026-11-26",
+    "sourceUrl": "https://www.nyse.com/trade/hours-calendars",
+    "evidence": "NYSE official 2026 holiday calendar lists Thursday November 26 as Thanksgiving Day, fully closed. Carry the November 25 canonical close with zero local price return for Rockwell Automation.",
+    "verifiedAt": "2026-11-27T12:35:10.729627+00:00",
+    "verificationMethod": "Official exchange calendars independently retrieved and checked for the exact exchange-local date."
+  },
+  {
+    "mic": "INDX",
+    "name": "Thanksgiving Day",
+    "from": "2026-11-26",
+    "through": "2026-11-26",
+    "sourceUrl": "https://www.nyse.com/trade/hours-calendars",
+    "evidence": "NYSE and Nasdaq official 2026 calendars independently confirm the November 26 full US cash-market closure. The S&P 500 and Nasdaq Composite have no November 26 cash-market session; carry both November 25 canonical benchmark levels with zero return.",
+    "verifiedAt": "2026-11-27T12:35:10.729627+00:00",
+    "verificationMethod": "Official exchange calendars independently retrieved and checked for the exact exchange-local date.",
+    "additionalSourceUrl": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule"
   }
 ]

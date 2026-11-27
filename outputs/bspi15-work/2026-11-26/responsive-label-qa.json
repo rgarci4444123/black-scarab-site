@@ -1,0 +1,115 @@
+[
+  {
+    "width": 320,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 15",
+      "Oct 29",
+      "Nov 12",
+      "Nov 26"
+    ]
+  },
+  {
+    "width": 360,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 15",
+      "Oct 29",
+      "Nov 12",
+      "Nov 26"
+    ]
+  },
+  {
+    "width": 390,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 15",
+      "Oct 29",
+      "Nov 12",
+      "Nov 26"
+    ]
+  },
+  {
+    "width": 540,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 12",
+      "Oct 21",
+      "Oct 30",
+      "Nov 10",
+      "Nov 26"
+    ]
+  },
+  {
+    "width": 560,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 9",
+      "Oct 19",
+      "Oct 27",
+      "Nov 4",
+      "Nov 12",
+      "Nov 26"
+    ]
+  },
+  {
+    "width": 768,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 8",
+      "Oct 15",
+      "Oct 22",
+      "Oct 29",
+      "Nov 5",
+      "Nov 12",
+      "Nov 19",
+      "Nov 26"
+    ]
+  },
+  {
+    "width": 1024,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 6",
+      "Oct 9",
+      "Oct 14",
+      "Oct 19",
+      "Oct 22",
+      "Oct 27",
+      "Oct 30",
+      "Nov 4",
+      "Nov 9",
+      "Nov 12",
+      "Nov 17",
+      "Nov 20",
+      "Nov 26"
+    ]
+  },
+  {
+    "width": 1440,
+    "status": "passed",
+    "visibleAxisDates": [
+      "Oct 1",
+      "Oct 6",
+      "Oct 9",
+      "Oct 14",
+      "Oct 19",
+      "Oct 22",
+      "Oct 27",
+      "Oct 30",
+      "Nov 4",
+      "Nov 9",
+      "Nov 12",
+      "Nov 17",
+      "Nov 20",
+      "Nov 26"
+    ]
+  }
+]

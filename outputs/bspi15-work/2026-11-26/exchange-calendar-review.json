@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-26",
+  "verifiedAt": "2026-11-27T12:37:39.856787+00:00",
+  "markets": [
+    {
+      "mic": "XJPX",
+      "timeZone": "Asia/Tokyo",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "The 2026 holidays list November 3 and 23; November 26 is a normal Thursday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XSHE",
+      "timeZone": "Asia/Shanghai",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/t20251222_618087.html",
+      "evidence": "The official 2026 annual holiday notice, verified November 21 and retained in the prior calendar review, lists no November closure. Both date-specific Shenzhen observations were received. The official notice timed out during the November 27 recheck.",
+      "session": "open",
+      "carryForward": false,
+      "priorCalendarReview": "outputs/bspi15-work/2026-11-20/exchange-calendar-review.json",
+      "sourceAvailability": "timed-out-on-recheck"
+    },
+    {
+      "mic": "XNAS",
+      "timeZone": "America/New_York",
+      "sourceUrl": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+      "evidence": "Official 2026 exchange calendar lists Thursday November 26 as Thanksgiving Day, fully closed. Carry the November 25 canonical closes with zero local return.",
+      "session": "closed",
+      "carryForward": true
+    },
+    {
+      "mic": "XNYS",
+      "timeZone": "America/New_York",
+      "sourceUrl": "https://www.nyse.com/trade/hours-calendars",
+      "evidence": "Official 2026 exchange calendar lists Thursday November 26 as Thanksgiving Day, fully closed. Carry the November 25 canonical closes with zero local return.",
+      "session": "closed",
+      "carryForward": true
+    },
+    {
+      "mic": "XETR",
+      "timeZone": "Europe/Berlin",
+      "sourceUrl": "https://www.cashmarket.deutsche-boerse.com/cash-en/trading/trading-calendar-and-trading-hours",
+      "evidence": "Official 2026 non-trading days list no November closure; November 26 is a normal Thursday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XSTO",
+      "timeZone": "Europe/Stockholm",
+      "sourceUrl": "https://www.nasdaq.com/european-market-activity/trading-hours",
+      "evidence": "Stockholm 2026 holiday and half-day list has no November 26 closure.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "INDX",
+      "timeZone": "America/New_York",
+      "sourceUrl": "https://www.nyse.com/trade/hours-calendars",
+      "additionalSourceUrl": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+      "session": "closed",
+      "carryForward": true,
+      "evidence": "Both official US cash-market calendars confirm the Thanksgiving closure. The S&P 500 and Nasdaq Composite benchmarks carry their November 25 levels with zero daily return."
+    }
+  ],
+  "requiredDateObservationsReceived": 9,
+  "verifiedClosureCarries": 8
+}
