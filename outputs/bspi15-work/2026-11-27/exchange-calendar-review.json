@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-27",
+  "verifiedAt": "2026-11-28T12:37:56.507211+00:00",
+  "markets": [
+    {
+      "mic": "XJPX",
+      "timeZone": "Asia/Tokyo",
+      "sourceUrl": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/index.html",
+      "evidence": "The official 2026 calendar lists November 3 and 23 as holidays; November 27 is a normal Friday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XSHE",
+      "timeZone": "Asia/Shanghai",
+      "sourceUrl": "https://www.szse.cn/disclosure/notice/general/t20251222_618087.html",
+      "evidence": "Official 2026 annual holiday notice retained from prior review lists no November closure. Recheck timed out; the indexed official result was retrieved and both November 27 Shenzhen closes were received.",
+      "session": "open",
+      "carryForward": false,
+      "priorCalendarReview": "outputs/bspi15-work/2026-11-20/exchange-calendar-review.json",
+      "sourceAvailability": "timed-out-on-recheck"
+    },
+    {
+      "mic": "XNAS",
+      "timeZone": "America/New_York",
+      "sourceUrl": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+      "evidence": "Official US cash-market calendar lists November 27, 2026 as an early-close trading day, closing at 13:00 Eastern. Date-specific closes received; no carry-forward.",
+      "session": "early-close",
+      "carryForward": false,
+      "closeLocalTime": "13:00"
+    },
+    {
+      "mic": "XNYS",
+      "timeZone": "America/New_York",
+      "sourceUrl": "https://www.nyse.com/trade/hours-calendars",
+      "evidence": "Official US cash-market calendar lists November 27, 2026 as an early-close trading day, closing at 13:00 Eastern. Date-specific closes received; no carry-forward.",
+      "session": "early-close",
+      "carryForward": false,
+      "closeLocalTime": "13:00"
+    },
+    {
+      "mic": "XETR",
+      "timeZone": "Europe/Berlin",
+      "sourceUrl": "https://www.cashmarket.deutsche-boerse.com/cash-en/trading/trading-calendar-and-trading-hours",
+      "evidence": "Official 2026 non-trading-day list has no November closure. November 27 is a normal Friday.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "XSTO",
+      "timeZone": "Europe/Stockholm",
+      "sourceUrl": "https://www.nasdaq.com/european-market-activity/trading-hours",
+      "evidence": "Official Stockholm 2026 closure and half-day lists have no November 27 exception.",
+      "session": "open",
+      "carryForward": false
+    },
+    {
+      "mic": "INDX",
+      "timeZone": "America/New_York",
+      "sourceUrl": "https://www.nyse.com/trade/hours-calendars",
+      "additionalSourceUrl": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+      "session": "early-close",
+      "carryForward": false,
+      "evidence": "Official US cash-market calendar lists November 27, 2026 as an early-close trading day, closing at 13:00 Eastern. Date-specific closes received; no carry-forward.",
+      "closeLocalTime": "13:00"
+    }
+  ],
+  "requiredDateObservationsReceived": 17,
+  "verifiedClosureCarries": 0
+}

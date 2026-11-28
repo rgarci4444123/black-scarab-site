@@ -814,3 +814,20 @@ Date,Ticker,Company,Marketstack Symbol,MIC,Currency,Type,Close,Adjusted Close,Di
 2026-11-26,6954,FANUC,6954.T,XJPX,JPY,Constituent,5094,5094,0,1,v2
 2026-11-26,HEXA B,Hexagon,HEXA-B.ST,XSTO,SEK,Constituent,104.5,104.5,0,1,v2
 2026-11-26,SIE,Siemens,SIE.DE,XETR,EUR,Constituent,250.3,250.3,0,1,v2
+2026-11-27,002747,Estun Automation,002747.SZ,XSHE,CNY,Constituent,27.6,27.6,0,1,v2
+2026-11-27,300124,Inovance,300124.SZ,XSHE,CNY,Constituent,55.2,55.2,0,1,v2
+2026-11-27,6268,Nabtesco,6268.T,XJPX,JPY,Constituent,3438,3438,0,1,v2
+2026-11-27,6383,Daifuku,6383.T,XJPX,JPY,Constituent,4309,4309,0,1,v2
+2026-11-27,6506,Yaskawa Electric,6506.T,XJPX,JPY,Constituent,3380,3380,0,1,v2
+2026-11-27,6861,Keyence,6861.T,XJPX,JPY,Constituent,14845,14845,0,1,v2
+2026-11-27,6954,FANUC,6954.T,XJPX,JPY,Constituent,5339,5339,0,1,v2
+2026-11-27,CGNX,Cognex,CGNX,XNAS,USD,Constituent,48.41,48.41,0,1,v2
+2026-11-27,HEXA B,Hexagon,HEXA-B.ST,XSTO,SEK,Constituent,106.9,106.9,0,1,v2
+2026-11-27,HSAI,Hesai,HSAI,XNAS,USD,Constituent,13.19,13.19,0,1,v2
+2026-11-27,Nasdaq Composite,Nasdaq Composite,IXIC.INDX,INDX,USD,Benchmark,24129.5,24129.5,0,1,v1
+2026-11-27,NXPI,NXP Semiconductors,NXPI,XNAS,USD,Constituent,253.19,253.19,0,1,v2
+2026-11-27,OUST,Ouster,OUST,XNYS,USD,Constituent,28.23,28.23,0,1,v2
+2026-11-27,ROK,Rockwell Automation,ROK,XNYS,USD,Constituent,394.25,394.25,0,1,v2
+2026-11-27,S&P 500,S&P 500,GSPC.INDX,INDX,USD,Benchmark,7297.49,7297.49,0,1,v1
+2026-11-27,SIE,Siemens,SIE.DE,XETR,EUR,Constituent,252.6,252.6,0,1,v2
+2026-11-27,TER,Teradyne,TER,XNAS,USD,Constituent,222.96,222.96,0,1,v2

@@ -1,0 +1,28 @@
+[
+  {
+    "viewport": "desktop",
+    "date": "2026-11-27",
+    "levels": "verified",
+    "weights": 15,
+    "holdings": "verified",
+    "targetAllocation": "unchanged",
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "tradingObservations": 42,
+    "actualCloseHover": "42 dates verified",
+    "seriesToggle": "verified"
+  },
+  {
+    "viewport": "mobile",
+    "date": "2026-11-27",
+    "levels": "verified",
+    "weights": 15,
+    "holdings": "verified",
+    "targetAllocation": "unchanged",
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "tradingObservations": 42,
+    "actualCloseHover": "42 dates verified",
+    "seriesToggle": "verified"
+  }
+]

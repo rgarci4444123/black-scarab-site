@@ -1,0 +1,71 @@
+{
+  "status": "pushed-and-verified",
+  "pushedAt": "2026-11-27T12:42:00.346625+00:00",
+  "priceDates": [
+    "2026-11-26"
+  ],
+  "latestCompletedDate": "2026-11-26",
+  "branch": "main",
+  "remote": "origin",
+  "commit": "906ecd120edf78754b050a1506dab747b373d163",
+  "verifiedRemoteMain": "906ecd120edf78754b050a1506dab747b373d163",
+  "validatedParent": "5ecaca4baf9cd90097b72acadae11003324661ac",
+  "commitUrl": "https://github.com/rgarci4444123/black-scarab-site/commit/906ecd120edf78754b050a1506dab747b373d163",
+  "files": [
+    "data/bspi15/daily-closes.csv",
+    "data/bspi15/marketstack-audit-latest.json",
+    "data/bspi15/marketstack-observations.csv",
+    "data/bspi15/review-history.json",
+    "public/data/bspi15-performance.json",
+    "outputs/bspi15-daily-review.xlsx",
+    "outputs/bspi15-daily-metrics-2026-11-26.json",
+    "outputs/bspi15-work/2026-11-26/audit.json",
+    "outputs/bspi15-push-2026-11-26.json",
+    "data/bspi15/raw/marketstack/2026-11-27T12-35-12-040Z/constituents-v2.json",
+    "data/bspi15/raw/marketstack/2026-11-27T12-35-12-040Z/benchmarks-v1.json",
+    "data/bspi15/verified-market-closures.json",
+    "outputs/bspi15-daily-status-2026-11-26.json",
+    "outputs/bspi15-work/2026-11-26/workbook-checks.json",
+    "outputs/bspi15-work/2026-11-26/website-qa.json",
+    "outputs/bspi15-work/2026-11-26/responsive-label-qa.json",
+    "outputs/bspi15-work/2026-11-26/exchange-calendar-review.json",
+    "outputs/bspi15-work/2026-11-26/lint-review.json"
+  ],
+  "standingPushAuthorization": "Rodolfo October 20, 2026",
+  "dailyStatus": "outputs/bspi15-daily-status-2026-11-26.json",
+  "workbook": "outputs/bspi15-daily-review.xlsx",
+  "localPreview": "http://127.0.0.1:50790/indices/physical-ai-adoption-15#performance",
+  "previewDirectory": "/private/tmp/bspi15-20261126-lbmxyd8k/validation",
+  "previewSession": 75068,
+  "checks": {
+    "strictAudit": "655/655 history; 9 source observations plus 8 verified Thanksgiving carries; no unresolved issues",
+    "priorCanonicalRowsPreserved": 40,
+    "priorWebsiteAndLedgerEntriesPreserved": 40,
+    "reviewedDates": 41,
+    "regressionsPassed": 21,
+    "workbookFormulaErrors": 0,
+    "independentCalculationsWeightsContributions": "passed",
+    "typecheck": "passed",
+    "bspi15Lint": "passed",
+    "productionBuild": "passed; 195 article previews",
+    "desktopMobileHoldings": "passed",
+    "responsiveSizesPassed": 8,
+    "repositoryLintErrors": 40,
+    "repositoryLintWarnings": 5093,
+    "repositoryLintErrorsAllUnrelated": true
+  },
+  "temporaryGitObjectReuse": "Read existing root objects through a temporary alternate; new commit and blobs written only to isolated bare repository. Root fetch verified before cleanup.",
+  "sharedCheckoutPreserved": true,
+  "postPushTemporaryCleanup": {
+    "completedAt": "2026-11-27T12:42:27.325937+00:00",
+    "priorValidationDirectory": "/private/tmp/bspi15-20261125-7kia0hjq/validation",
+    "obsoleteValidationCopyRemoved": true,
+    "stoppedObsoletePreviewPids": [
+      40148
+    ],
+    "temporaryGitIndexAndPrivateObjectsRemoved": true,
+    "latestPreviewRetained": "/private/tmp/bspi15-20261126-lbmxyd8k/validation",
+    "freeSpaceGiB": 15.18,
+    "reclaimedGiB": 1.37
+  }
+}
